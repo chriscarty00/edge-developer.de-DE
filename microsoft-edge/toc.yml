@@ -5,7 +5,7 @@
     - name: Barrierefreiheit
       href: accessibility.md
       items:
-        - name: Entwerfen
+        - name: Entwurf
           href: accessibility/design.md
         - name: Erstellen
           href: accessibility/build.md
@@ -411,7 +411,7 @@
               href: extensions/guides/creating-an-extension.md
             - name: Debuggen von Erweiterungen
               href: extensions/guides/debugging-extensions.md
-            - name: Entwerfen
+            - name: Entwurf
               href: extensions/guides/design.md
             - name: Internationalisierung
               href: extensions/guides/internationalization.md
@@ -486,25 +486,5 @@
     - name: WebVR-Entwicklerhandbuch
       href: 'https://docs.microsoft.com/microsoft-edge/webvr/'
     - name: Windows-Runtime (WinRT)
-      href: windows-runtime.md
-      items:
-        - name: Verwenden der Windows-Laufzeit in JavaScript
-          href: windows-runtime/using-the-windows-runtime-in-javascript.md
-          items:
-            - name: Überlegungen zur Verwendung der Windows-Runtime-API
-              href: windows-runtime/considerations-when-using-the-windows-runtime-api.md
-            - name: Verwenden von asynchronen Windows Runtime-Methoden
-              href: windows-runtime/using-windows-runtime-asynchronous-methods.md
-              items:
-                - name: Spezielle Fehlereigenschaften von asynchronen Windows-Laufzeitmethoden
-                  href: windows-runtime/special-error-properties-from-asynchronous-windows-runtime-methods.md
-            - name: Behandeln von Windows-Laufzeitereignissen in JavaScript
-              href: windows-runtime/handling-windows-runtime-events-in-javascript.md
-            - name: JavaScript-Darstellung von Windows-Laufzeittypen
-              href: windows-runtime/javascript-representation-of-windows-runtime-types.md
-            - name: Windows Runtime-DateTime-und TimeSpan-Darstellungen
-              href: windows-runtime/windows-runtime-datetime-and-timespan-representations.md
-            - name: Fehler Codes für Windows-Runtime-apps mit JavaScript
-              href: windows-runtime/error-codes-for-windows-runtime-apps-using-javascript.md
-        - name: Referenz
-          href: windows-runtime/reference/toc.md
+      href: windows-runtime/toc.yml
+      topicHref: windows-runtime/index.md

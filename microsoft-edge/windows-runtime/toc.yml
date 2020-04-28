@@ -1,0 +1,22 @@
+- name: Verwenden der Windows-Laufzeit in JavaScript
+  href: using-the-windows-runtime-in-javascript.md
+  items:
+    - name: Überlegungen zur Verwendung der Windows-Runtime-API
+      href: considerations-when-using-the-windows-runtime-api.md
+    - name: Verwenden von asynchronen Windows Runtime-Methoden
+      href: using-windows-runtime-asynchronous-methods.md
+      items:
+        - name: Spezielle Fehlereigenschaften von asynchronen Windows-Laufzeitmethoden
+          href: special-error-properties-from-asynchronous-windows-runtime-methods.md
+    - name: Behandeln von Windows-Laufzeitereignissen in JavaScript
+      href: handling-windows-runtime-events-in-javascript.md
+    - name: JavaScript-Darstellung von Windows-Laufzeittypen
+      href: javascript-representation-of-windows-runtime-types.md
+    - name: Windows Runtime-DateTime-und TimeSpan-Darstellungen
+      href: windows-runtime-datetime-and-timespan-representations.md
+    - name: Fehler Codes für Windows-Runtime-apps mit JavaScript
+      href: error-codes-for-windows-runtime-apps-using-javascript.md
+- name: Referenz (WinRT)
+  items:
+    - name: MSApp
+      href: reference/msapp.md
