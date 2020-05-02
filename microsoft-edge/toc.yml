@@ -206,6 +206,8 @@
               href: devtools-guide-chromium/remote-debugging/index.md
             - name: Zugreifen auf lokale Server
               href: devtools-guide-chromium/remote-debugging/local-server.md
+            - name: Surface Duo-Emulatoren
+              href: devtools-guide-chromium/remote-debugging/surface-duo-emulator.md
             - name: Windows 10-Geräte
               href: devtools-guide-chromium/remote-debugging/windows.md
         - name: Arbeitsspeicher
