@@ -3,7 +3,7 @@ description: Kennenlernen der Microsoft Edge-Entwickler Tools (EdgeHTML)
 title: Microsoft Edge (EdgeHTML)-Entwickler Tools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/03/2020
+ms.date: 05/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -11,12 +11,12 @@ keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
 experimental: true
 experiment_id: 51fe4b97-3e55-41
 localization_priority: Priority
-ms.openlocfilehash: 1abc01af5c1b058687d9ba1402911d4367b6e2b3
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 56edfa3aa39fc20d37d95fb8fde029a702732336
+ms.sourcegitcommit: 985cfb79a64951afd5beb7981b26afbed30a8972
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10567653"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "10629504"
 ---
 # Microsoft Edge (EdgeHTML)-Entwickler Tools  
 
@@ -28,7 +28,11 @@ Weitere Informationen zu den neuesten Features finden Sie unter [devtools im neu
 
 ## Kern Tools  
 
-![Microsoft Edge \ (EdgeHTML \) devtools][ImageDevtoolsEdgehtml]  
+:::image type="complex" source="./devtools-guide/media/devtools.png" alt-text="Microsoft Edge (EdgeHTML) devtools":::
+   Microsoft Edge (EdgeHTML) devtools
+:::image-end:::
+
+<!--![Microsoft Edge \(EdgeHTML\) DevTools][ImageDevtoolsEdgehtml]  -->  
 
 Zu den Microsoft Edge \ (EdgeHTML \) devtools gehören:  
 
@@ -45,8 +49,8 @@ Zu den Microsoft Edge \ (EdgeHTML \) devtools gehören:
 Bitte senden Sie Ihr [Feedback und ihre Funktionswünsche](#feedback)weiter!  
 
 > [!TIP]
-> [Testen Sie Microsoft Edge \ (EdgeHTML \) kostenlos in einem beliebigen Browser][BrowserstackEdgehtml]:  
-> Wir haben uns mit [BrowserStack][BrowserstackEdgehtml] zusammengearbeitet, um ﻿kostenlose Live-und automatisierte Tests auf Microsoft Edge zu ermöglichen. \ (EdgeHTML \).  
+> [Testen Sie Microsoft Edge \ (EdgeHTML \) kostenlos in einem beliebigen Browser][BrowserstackEdgehtml].  
+> Das Microsoft Edge-Team hat sich mit [BrowserStack][BrowserstackEdgehtml] zusammengetan, um ﻿kostenlose Live-und automatisierte Tests für Microsoft Edge (EdgeHTML \) bereitzustellen.  
 
 ## Microsoft Store-App  
 
@@ -54,9 +58,13 @@ Die **Microsoft Edge \ (EdgeHTML \)-devtools** sind nun als eigenständige [Wind
 
 ### Lokales Debuggen  
 
-Wenn Sie eine Seite lokal debuggen möchten, starten Sie einfach die Microsoft Edge devtools-app.  Im **lokalen** Fenster des Auswahlfelds werden alle aktiven EdgeHTML-Inhalts Prozesse angezeigt, einschließlich der geöffneten Edge-Browser-Registerkarten [PWAs][PwasEdgehtmlIndex] , auf denen`WWAHost.exe` PWAs \ (Prozesse \) und [WebView][HostingWebview] -Steuerelemente ausgeführt werden.  Klicken Sie auf das gewünschte Ziel, um eine neue Registerkarten Instanz des devtools anzufügen und zu öffnen.  
+Wenn Sie eine Seite lokal debuggen möchten, starten Sie einfach die Microsoft Edge devtools-app.  Der **lokale** Teil des Auswahlfelds zeigt alle aktiven EdgeHTML-Inhalts Prozesse an, einschließlich der geöffneten Edge-Browser-Register [PWAs][PwasEdgehtmlIndex] Karten, mit`WWAHost.exe` PWAs \ (Prozesse \) und [WebView][HostingWebview] -Steuerelementen.  Wählen Sie das gewünschte Ziel aus, um eine neue Registerkarten Instanz des devtools anzufügen und zu öffnen.  
 
-![Lokales Panel der devtools-App][ImageDevtoolsGuideEdgehtmlChooselocal]  
+:::image type="complex" source="./devtools-guide/media/chooser_local.png" alt-text="Lokales Panel der devtools-App":::
+   Lokales Panel der devtools-App
+:::image-end:::
+
+<!--![DevTools app Local panel][ImageDevtoolsGuideEdgehtmlChooselocal]  -->  
 
 ### Remote Debuggen  
 
@@ -64,15 +72,17 @@ Die Microsoft Edge devtools-App bietet grundlegende Unterstützung für das Debu
 
 Um zu beginnen, lesen Sie den Abschnitt [*Microsoft Edge devtools*][DevtoolsProtocolEdgehtmlClientsEdgePreview] der [devtools-Protokoll][DevtoolsProtocolEdgehtmlIndex] Dokumentation.  
 
-![DevTools-App-Remote Panel][DevtoolsGuideEdgehtmlRemote]  
+:::image type="complex" source="./devtools-guide/media/chooser_remote.png" alt-text="DevTools-App-Remote Panel":::
+   DevTools-App-Remote Panel
+:::image-end:::
 
-## Feedback senden  
-
-Bitte senden Sie uns Ihr Feedback, damit wir die Microsoft Edge \ (EdgeHTML \) devtools für Sie weiter verbessern können.  Öffnen Sie einfach die Tools`F12`() und klicken Sie auf die Schaltfläche [Feedback senden](#microsoft-edge-edgehtml-developer-tools) .  
-
-Werden Sie [Windows-Insider][WindowsInsiderProgram] , um eine Vorschau der [neuesten Features in devtools][DevtoolsGuideEdgehtmlWhatsnew]anzuzeigen.  Verwenden Sie die Windows-Feedback-Hub-App zum Posten, nach oben abstimmen, Nachverfolgung und Support für allgemeine Windows-Vorschläge und-Probleme.  
+<!--![DevTools app Remote panel][ImageDevtoolsGuideEdgehtmlRemote]  -->  
 
 ## Allgemeine Tastenkombinationen  
+
+> [!IMPORTANT]
+> Alle Tastenkombinationen wurden in der neuesten Version von Windows überprüft.  
+> Wenn Sie eine Verknüpfung nicht verwenden können, aktualisieren Sie Ihre Kopie von Windows.  
 
 Diese Tastenkombinationen steuern das Hauptfenster von devtools und sollten über alle Tools hinweg funktionieren.  
 
@@ -105,13 +115,19 @@ Diese Tastenkombinationen steuern das Hauptfenster von devtools und sollten übe
 | Seite aktualisieren | `Ctrl`+`Shift`+`F5`, `Ctrl`+`R` |  
 
 > [!NOTE]
-> Wenn Sie Debuggen und an einem Haltepunkt angehalten haben, setzt die Aktion **Seite aktualisieren** die Laufzeit zuerst fort.
+> Wenn Sie das Debuggen durchgeführt und an einem Haltepunkt angehalten haben, setzt die Aktion **Seite aktualisieren** die Laufzeit zuerst fort.  
+
+## Feedback senden  
+
+Bitte senden Sie Ihr Feedback, damit Sie die Microsoft Edge \ (EdgeHTML \) devtools für Sie verbessern können.  Öffnen Sie einfach die Tools \`F12`(\), und wählen Sie die Schaltfläche [Feedback senden](#microsoft-edge-edgehtml-developer-tools) aus.  
+
+Werden Sie [Windows-Insider][WindowsInsiderProgram] , um eine Vorschau der [neuesten Features in devtools][DevtoolsGuideEdgehtmlWhatsnew]anzuzeigen.  Verwenden Sie die Windows-Feedback-Hub-App zum Posten, nach oben abstimmen, Nachverfolgung und Support für allgemeine Windows-Vorschläge und-Probleme.  
 
 <!-- image links  -->  
 
-[ImageDevtoolsEdgehtml]: /microsoft-edge/devtools-guide/media/devtools.png "Microsoft Edge (EdgeHTML) devtools"  
-[ImageDevtoolsGuideEdgehtmlChooselocal]: /microsoft-edge/devtools-guide/media/chooser_local.png "Lokales Panel der devtools-App"  
-[DevtoolsGuideEdgehtmlRemote]: /microsoft-edge/devtools-guide/media/chooser_remote.png "DevTools-App-Remote Panel"  
+<!--[ImageDevtoolsEdgehtml]: /microsoft-edge/devtools-guide/media/devtools.png "Microsoft Edge (EdgeHTML) DevTools"  -->  
+<!--[ImageDevtoolsGuideEdgehtmlChooselocal]: /microsoft-edge/devtools-guide/media/chooser_local.png "DevTools app Local panel"  -->  
+<!--[ImageDevtoolsGuideEdgehtmlRemote]: /microsoft-edge/devtools-guide/media/chooser_remote.png "DevTools app Remote panel"  -->  
 
 <!-- links  -->  
 
