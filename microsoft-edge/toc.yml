@@ -487,6 +487,8 @@
           href: web-platform/tracking-prevention.md
         - name: Microsoft Edge User Agent-Zeichenfolge
           href: web-platform/user-agent-string.md
+    - name: WebView2 (Chrom) (Vorschau)
+      href: webview2/toc.yml
     - name: WebVR-Entwicklerhandbuch
       href: /microsoft-edge/webvr/index
     - name: Windows-Runtime (WinRT)
