@@ -257,7 +257,7 @@
               href: devtools-guide/elements/styles.md
             - name: Berechnet
               href: devtools-guide/elements/computed.md
-            - name: Veranstaltungen
+            - name: Ereignisse
               href: devtools-guide/elements/events.md
             - name: Dom-Haltepunkte
               href: devtools-guide/elements/dom-breakpoints.md
@@ -450,6 +450,9 @@
       href: privacy-whitepaper.md
     - name: Progressive-Webanwendungen (Chrom)
       href: progressive-web-apps-chromium/index.md
+      items:
+        - name: Erste Schritte mit PWAs (Chrom)
+          href: progressive-web-apps-chromium/get-started.md
     - name: Progressive-Webanwendungen (EdgeHTML)
       href: progressive-web-apps-edgehtml/index.md
       items:
