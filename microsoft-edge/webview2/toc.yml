@@ -8,6 +8,10 @@
       href: gettingstarted/wpf.md
     - name: Windows Forms
       href: gettingstarted/winforms.md
+- name: Konzepte
+  items:
+    - name: Versionsverwaltung
+      href: concepts/versioning.md
 - name: Anmerkungen zu dieser Version
   href: releasenotes.md
 - name: Tools
