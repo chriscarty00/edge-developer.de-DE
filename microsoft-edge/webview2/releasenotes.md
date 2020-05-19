@@ -3,17 +3,17 @@ description: Hosten von Webinhalten in ihrer Win32-App mit dem Steuerelement "Mi
 title: Anmerkungen zu dieser Version von Microsoft Edge WebView2 für Win32, WPF und WinForms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/14/2020
+ms.date: 05/19/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: 14030d3dde8c4e68c0790073dc38e5c856e2a091
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 255f8d56ae1a4b77a87697b9cd3814380dd06994
+ms.sourcegitcommit: 5bdffe91a6594f77eeffa4e864fda90a02784771
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10654108"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "10659664"
 ---
 # Anmerkungen zu dieser Version von WebView2 SDK  
 
@@ -39,8 +39,8 @@ Anmerkungen zu dieser Version von [WebView2 SDK][WebView2NuGetGallery].
 
 **Kompilieren Sie Ihre APP nach dem Aktualisieren des NuGet-Pakets erneut.**
 
-* **Ankündigung:** Beginnend mit der bevorstehenden Microsoft Edge-Version 83 wird Evergreen WebView nicht mehr auf den stabilen Browser Kanal ausgerichtet. Stattdessen wird Sie auf einen anderen Satz von Binärdateien (Branded [Microsoft Edge WebView2 Runtime](./index.md#microsoft-edge-webview2-runtime)) ausgerichtet, die über ein Installationsprogramm, das wir derzeit entwickeln, verkettet werden können. Weitere Informationen finden Sie unter [App-Verteilung](./index.md#app-distribution).
-* **Ankündigung:** Wir werden zwei Pakete veröffentlichen: ein Pre-Release-Paket mit experimentellen APIs (das Sie ausprobieren können) und ein stabiles Release-Paket mit stabilen APIs (von dem Sie abhängig sind). Checkout [Microsoft Edge WebView2 SDK](./index.md#microsoft-edge-webview2-sdk) , um mehr über die Unterschiede zu erfahren.
+* **Ankündigung:** Beginnend mit der bevorstehenden Microsoft Edge-Version 83 wird Evergreen WebView nicht mehr auf den stabilen Browser Kanal ausgerichtet. Stattdessen wird Sie auf einen anderen Satz von Binärdateien (Branded [Microsoft Edge WebView2 Runtime](./concepts/distribution.md#microsoft-edge-webview2-runtime)) ausgerichtet, die über ein Installationsprogramm, das wir derzeit entwickeln, verkettet werden können. Weitere Informationen finden Sie unter [App-Verteilung](./concepts/distribution.md).
+* **Ankündigung:** Wir werden zwei Pakete veröffentlichen: ein Pre-Release-Paket mit experimentellen APIs (das Sie ausprobieren können) und ein stabiles Release-Paket mit stabilen APIs (von dem Sie abhängig sind). Checkout [Microsoft Edge WebView2 SDK](./concepts/versioning.md) , um mehr über die Unterschiede zu erfahren.
 * **Aktuelle Änderung:** Um sicherzustellen, dass unsere API mit den Windows-API-Benennungskonventionen übereinstimmt, haben wir die Namen der folgenden Schnittstellen aktualisiert:
   * CORE_WEBVIEW2_ * prefix ist nun COREWEBVIEW2_ *.
   * [GetCoreWebView2BrowserVersionInfo](reference/win32/0-9-430/webview2-idl.md#getcorewebview2browserversioninfo) ist jetzt [GetAvailableCoreWebView2BrowserVersionString](reference/win32/0-9-488/webview2-idl.md#getavailablecorewebview2browserversionstring)
