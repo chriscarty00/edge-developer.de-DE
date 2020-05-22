@@ -3,17 +3,17 @@ description: Hosten von Webinhalten in ihrer Win32-App mit dem Steuerelement "Mi
 title: Microsoft Edge-WebView2-Steuerelement
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/19/2020
+ms.date: 05/21/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, CoreWebView2, ICoreWebView2Host, Browser-Steuerelement, Edge-HTML, Windows Forms, WinForms, WPF, .net
-ms.openlocfilehash: 184a64fde28345cd52dd6d772284f0393114ec02
-ms.sourcegitcommit: 5bdffe91a6594f77eeffa4e864fda90a02784771
+ms.openlocfilehash: 4f28ef64bb2936bc6c9a089ea2574070738fc79d
+ms.sourcegitcommit: 8f5c9255dadc2a9bb22c3201d15b57d84851fe64
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "10659636"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "10671638"
 ---
 # Einführung in Microsoft Edge WebView2 (Preview)  
 
@@ -104,7 +104,7 @@ Eine Entwicklervorschau steht in den folgenden Programmierumgebungen zur Verfüg
 *   .Net Core 3,0 oder höher  
 *   [WinUI 3,0](/uwp/toolkits/winui3/)  
 
-Sie Mun führen Windows 10, Windows 8,1, Windows 8, Windows 7, Windows Server 2016, Windows Server 2012/2012R2 oder Windows Server 2008 R2 aus.   
+Sie müssen Windows 10, Windows 8,1, Windows 8, Windows 7, Windows Server 2016, Windows Server 2012/2012R2 oder Windows Server 2008 R2 ausführen.   
 
 ## Nächste Schritte  
 
