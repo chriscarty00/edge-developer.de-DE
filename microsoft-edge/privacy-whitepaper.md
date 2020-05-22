@@ -3,18 +3,18 @@ description: Whitepaper zum Microsoft Edge-Datenschutz
 title: Whitepaper zum Microsoft Edge-Datenschutz
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/14/2020
+ms.date: 05/21/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: browser
 keywords: Microsoft Edge, Datenschutz, Whitepaper, Vertrauen
 localization_priority: Priority
-ms.openlocfilehash: 0849d51c14be78a9e261ea0fad426e126a1eea93
-ms.sourcegitcommit: c5f98907ccff78e0c615f6d664febce74cda8b68
+ms.openlocfilehash: 02b2dc0e65211224e8bf75568b7c81d5becd1006
+ms.sourcegitcommit: f79387aa9b4c382b3d6637dfa8fc96bcc34fdbf3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "10658812"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "10673779"
 ---
 # Whitepaper zum Microsoft Edge-Datenschutz  
 
@@ -70,9 +70,7 @@ Alle 24 Stunden Microsoft Edge downloadet eine Liste unterstützter Websites, f�
 
 Die auf dem Gerät gespeicherten Vorlagen werden möglicherweise gelöscht, indem die Cachedaten unter der Einstellung **Browserdaten löschen** in deaktiviert werden `edge://settings/privacy` .
 
-<!--  
-If you turn on **Show suggestions from Pinterest in Collections**, Collections perform a Microsoft Bing search using the title of your collection to find relevant Pinterest Topic pages.  Microsoft Edge does not send data about your collections to Pinterest.  You may remove the suggestions and stop searches for Pinterest Topic pages by going to `edge://settings/privacy` and turning off **Show suggestions from Pinterest in Collections**.  
--->  
+Wenn Sie **Vorschläge von pinterest in Sammlungen anzeigen**aktivieren, führen Auflistungen eine Microsoft Bing-Suche unter Verwendung des Titels Ihrer Sammlung durch, um relevante Pinterest-Themenseiten zu finden.  Microsoft Edge sendet keine Daten über Ihre Sammlungen an Pinterest.  Sie können die Vorschläge entfernen und die Suche nach Pinterest-Themenseiten beenden, indem Sie `edge://settings/privacy` **in Sammlungen die Option Vorschläge von pinterest anzeigen**deaktivieren.  
 
 Auflistungen steht nicht zur Verfügung, wenn Sie den InPrivate-Browser oder Gastmodus verwenden.  
 
@@ -187,9 +185,9 @@ Microsoft Edge unterstützt die [Geolocation-API](https://w3.org/TR/geolocation-
 
 Auf der rechten Seite der Adressleiste zeigt Microsoft Edge an, ob Ihr Standort freigegeben wurde oder nicht.  
 
-![Standort](./media/whitepaper-media/geolocation2.png)  
+![Speicherort](./media/whitepaper-media/geolocation2.png)  
 
-Wenn Sie die Freigabe Ihres Standorts für eine Website zulassen, sendet Microsoft Edge lokale Netzwerkinformationen wie Ihre IP-Adresse und die WLAN-Zugriffspunkte in der Nähe des Microsoft-Standort Diensts.  Der Microsoft-Dienst verwendet die Informationen, um Ihre Geolokations Koordinaten zu schätzen.  Diese Geolokations-Schätzung wird dann für die Website freigegeben, mit der Sie sich für die Freigabe Ihres Standorts einverstanden erklärt haben.  Unter Windows 10 verwendet Microsoft Edge nur dann den Microsoft-Standortdienst, wenn Sie die [Windows-Standorteinstellung](https://support.microsoft.com/help/4468240/windows-10-location-service-and-privacy)aktiviert haben.  
+Wenn Sie die Freigabe Ihres Standorts für eine Website zulassen, sendet Microsoft Edge lokale Netzwerkinformationen wie Ihre IP-Adresse und die WLAN-Zugriffspunkte in der Nähe des Microsoft-Standort Diensts.  Der Microsoft-Dienst verwendet die Informationen, um Ihre Geolokations Koordinaten zu schätzen.  Die Geolokations-Schätzung wird für die Website freigegeben, mit der Sie sich für die Freigabe Ihres Standorts einverstanden erklärt haben.  Wenn Sie unter Windows 10 die Option **Zugriff auf Standort auf diesem Gerät zulassen** aktivieren und **apps den Zugriff auf Ihren Standort** in den **Standort** Einstellungen in den **Windows** -Einstellungen gestatten, bietet Microsoft Edge Websites einen genaueren Standort.  Wenn Sie den Zugriff auf den **Standort auf diesem Gerät zulassen** deaktivieren und **apps den Zugriff auf Ihren Standort gestatten**, wird ein ungefährer Standort für Websites bereitgestellt.  Die Informationen werden nur für Websites freigegeben, für die Sie zuvor ihren Standort sehen durften.  [Einstellung für Windows-Standort](https://support.microsoft.com/help/4468240/windows-10-location-service-and-privacy).  
 
 Bei Anfragen an den Microsoft-Standortdienst wird eine neue, nach dem Zufallsprinzip generierte ID verwendet.  Der Microsoft Edge-Standortdienst speichert Ihre Geolocation-Koordinaten nicht für eine bestimmte Zeitspanne.  
 
@@ -219,7 +217,7 @@ Automatische Updates sind standardmäßig für alle Microsoft Edge-Benutzer akti
 
 Microsoft Edge bietet eine vereinfachte Benutzeroberfläche mit der Integration von Internet Explorer \ (IE \).  Microsoft Edge unterstützt nur IE 11 und IE-Modus und steht nur unter Windows zur Verfügung.  Dieses Feature steht Organisationen über Gruppenrichtlinien zur Verfügung.  Der Administrator entscheidet sich, eine Liste der Websites im IE-Modus in Microsoft Edge zu öffnen.  
 
-![Standort](./media/whitepaper-media/ie-mode.png)  
+![Speicherort](./media/whitepaper-media/ie-mode.png)  
 
 Microsoft Edge downloadet die Liste der Websites von einem vom Administrator definierten Speicherort über eine Richtlinie und speichert die Datei, um zu ermitteln, welche Websites im IE-Modus geöffnet werden müssen.  Je nach Ihren Windows-oder IE 11-Einstellungen sammelt Microsoft Edge Diagnosedaten zur Verwendung des IE-Modus, beispielsweise die Websites, zu denen Benutzer wechseln, Leistungsdaten, Zuverlässigkeitsdaten und Funktions Nutzungsdaten.  Unter Windows 10 werden die Diagnosedaten gemäß Ihrer Windows-Diagnosedaten Einstellung erfasst.  Unter Windows 8,1 werden Website Informationen gesammelt, wenn sich der Benutzer in IE auf das Feature "nachschlagen" oder "vorgeschlagene Websites" entschieden hat.  Der IE-Modus folgt möglicherweise nicht den gleichen Daten Sammlungs Umschaltern in den Microsoft Edge-Datenschutz-und-Diensteinstellungen.  
 
