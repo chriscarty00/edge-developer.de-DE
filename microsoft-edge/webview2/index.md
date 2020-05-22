@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, CoreWebView2, ICoreWebView2Host, Browser-Steuerelement, Edge-HTML, Windows Forms, WinForms, WPF, .net
-ms.openlocfilehash: 4f28ef64bb2936bc6c9a089ea2574070738fc79d
-ms.sourcegitcommit: 8f5c9255dadc2a9bb22c3201d15b57d84851fe64
+ms.openlocfilehash: f17de3bcb7459375617f00aec0cd2897f0859c1d
+ms.sourcegitcommit: c579181af051e2855b785263faa4001c672a929b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "10671638"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "10673853"
 ---
 # Einführung in Microsoft Edge WebView2 (Preview)  
 
@@ -104,11 +104,20 @@ Eine Entwicklervorschau steht in den folgenden Programmierumgebungen zur Verfüg
 *   .Net Core 3,0 oder höher  
 *   [WinUI 3,0](/uwp/toolkits/winui3/)  
 
-Sie müssen Windows 10, Windows 8,1, Windows 8, Windows 7, Windows Server 2016, Windows Server 2012/2012R2 oder Windows Server 2008 R2 ausführen.   
+Sie können WebView2-Anwendungen unter den folgenden Windows-Versionen ausführen.  
+
+*   Windows 10  
+*   Windows8.1  
+*   Windows 8  
+*   Windows 7  
+*   Windows Server 2016  
+*   Windows Server 2012  
+*   Windows Server-2012R2  
+*   Windows Server 2008 R2  
 
 ## Nächste Schritte  
 
-Ausführlichere Informationen zum Erstellen und Bereitstellen von WebView2-Anwendungen finden Sie in unserer konzeptionellen Dokumentation.<!-- and how-to guides-->.  
+Ausführlichere Informationen zum Erstellen und Bereitstellen von WebView2-Anwendungen finden Sie in den konzeptionellen Dokumentationen und Anleitungen.  
 
 #### Konzepte  
 
