@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, WinForms-apps, WinForms, Edge, CoreWebView2, Browser Control, Edge HTML, erste Schritte, erste Schritte, .net, Windows Forms
-ms.openlocfilehash: b2616eeed2a8e896889e2cc1a395c401a8aad435
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: e17139d9d2b556d8048fb0043b88b56430c93091
+ms.sourcegitcommit: e00e783926877090116e650da25242498173a7fc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10653848"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "10673950"
 ---
 # Erste Schritte mit WebView2 in Windows Forms-Apps (Preview)  
 
@@ -23,7 +23,7 @@ In diesem Artikel erfahren Sie, wie Sie Ihre erste WebView2-app erstellen und di
 
 Stellen Sie sicher, dass Sie die folgende Liste der Voraussetzungen installiert haben, bevor Sie fortfahren:  
 
-* [Microsoft Edge (Chrom)](https://www.microsoftedgeinsider.com/download/) wird unter Windows 10, Windows 8,1 oder Windows 7 installiert.  Das Microsoft Edge-WebView-Team empfiehlt die Verwendung des Canary-Kanals.  
+* [Microsoft Edge (Chrom) Canary Channel](https://www.microsoftedgeinsider.com/download/) , installiert unter Windows 10, Windows 8,1 oder Windows 7. 
 * [Visual Studio](https://visualstudio.microsoft.com/) 2015 oder höher
 
 > [!NOTE]
