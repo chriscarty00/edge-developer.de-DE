@@ -3,18 +3,18 @@ description: Whitepaper zum Microsoft Edge-Datenschutz
 title: Whitepaper zum Microsoft Edge-Datenschutz
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/21/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: browser
 keywords: Microsoft Edge, Datenschutz, Whitepaper, Vertrauen
 localization_priority: Priority
-ms.openlocfilehash: 02b2dc0e65211224e8bf75568b7c81d5becd1006
-ms.sourcegitcommit: f79387aa9b4c382b3d6637dfa8fc96bcc34fdbf3
+ms.openlocfilehash: 6aba8f6c1ae7212d5af702bcf13ff9dde6b8659b
+ms.sourcegitcommit: 3f625231067df343d5afbb3f47c1063982067bcb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "10673779"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "10678225"
 ---
 # Whitepaper zum Microsoft Edge-Datenschutz  
 
@@ -86,7 +86,7 @@ Absturzabbilder werden an Microsoft gesendet und bis zu 30 Tage lang auf sichere
 
 Absturz Diagnosedaten, die lokal auf dem Gerät gespeichert sind, werden möglicherweise aus dem Dateisystem in gelöscht `edge://crashes` .  
 
-Wenn Sie die Sammlung der Absturz diagnostischen Daten unter Windows 10 deaktivieren möchten, wechseln Sie zu **Diagnose \ & Feedback** in Windows Diagnostics \ & Feedback Einstellungen.  Für Versionen von Microsoft Edge auf allen anderen Plattformen wechseln Sie zu `edge://settings/privacy` und deaktivieren Sie die Option **Microsoft-Produkte verbessern, indem Sie Absturzberichte und Daten zur Verwendung der Browsereinstellung senden** .  Diese diagnostische Datensammlung kann auch für Unternehmen über [von Ihrer Organisation verwaltete Gruppenrichtlinien](/deployedge/microsoft-edge-privacy-policy)deaktiviert werden.  
+Wenn Sie die Sammlung der Absturz diagnostischen Daten unter Windows 10 deaktivieren möchten, wechseln Sie zu **Diagnose \ & Feedback** in Windows Diagnostics \ & Feedback Einstellungen.  Für Versionen von Microsoft Edge auf allen anderen Plattformen wechseln Sie zu `edge://settings/privacy` und deaktivieren Sie die Option **Microsoft-Produkte verbessern, indem Sie Absturzberichte und Daten zur Verwendung der Browsereinstellung senden** .  Diese diagnostische Datensammlung kann auch für Unternehmen über [von Ihrer Organisation verwaltete Gruppenrichtlinien](/deployedge/microsoft-edge-enterprise-privacy-settings)deaktiviert werden.  
 
 ## Diagnosedaten zur Verwendung des Browsers  
 
