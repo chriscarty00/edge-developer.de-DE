@@ -54,11 +54,11 @@ Bitte senden Sie Ihr [Feedback und ihre Funktionswünsche](#feedback)weiter!
 
 ## Microsoft Store-App  
 
-Die **Microsoft Edge \ (EdgeHTML \)-devtools** sind nun als eigenständige [Windows 10-App aus dem Microsoft Store][MicrosoftStoreEdgeDevtoolsPreview]sowie über die in-Browser`F12`-Tooling-Umgebung [verfügbar][DevtoolsGuideEdgehtmlWhatsnew] .  Bei der Store-Version wird ein **Auswahl** Bereich für das Anfügen zum Öffnen von lokalen und Remote Seiten Zielen sowie ein Layout mit Registerkarten zum einfachen Umschalten zwischen devtools-Instanzen geliefert.  
+Die **Microsoft Edge \ (EdgeHTML \)-devtools** sind [nun][DevtoolsGuideEdgehtmlWhatsnew] als eigenständige [Windows 10-App aus dem Microsoft Store][MicrosoftStoreEdgeDevtoolsPreview]sowie über die in-Browser- `F12` Tooling-Umgebung verfügbar.  Bei der Store-Version wird ein **Auswahl** Bereich für das Anfügen zum Öffnen von lokalen und Remote Seiten Zielen sowie ein Layout mit Registerkarten zum einfachen Umschalten zwischen devtools-Instanzen geliefert.  
 
 ### Lokales Debuggen  
 
-Wenn Sie eine Seite lokal debuggen möchten, starten Sie einfach die Microsoft Edge devtools-app.  Der **lokale** Teil des Auswahlfelds zeigt alle aktiven EdgeHTML-Inhalts Prozesse an, einschließlich der geöffneten Edge-Browser-Register [PWAs][PwasEdgehtmlIndex] Karten, mit`WWAHost.exe` PWAs \ (Prozesse \) und [WebView][HostingWebview] -Steuerelementen.  Wählen Sie das gewünschte Ziel aus, um eine neue Registerkarten Instanz des devtools anzufügen und zu öffnen.  
+Wenn Sie eine Seite lokal debuggen möchten, starten Sie einfach die Microsoft Edge devtools-app.  Der **lokale** Teil des Auswahlfelds zeigt alle aktiven EdgeHTML-Inhalts Prozesse an, einschließlich der geöffneten Edge-Browser-Registerkarten, mit [PWAs][PwasEdgehtmlIndex] \ ( `WWAHost.exe` Prozesse \) und [WebView][HostingWebview] -Steuerelementen.  Wählen Sie das gewünschte Ziel aus, um eine neue Registerkarten Instanz des devtools anzufügen und zu öffnen.  
 
 :::image type="complex" source="./devtools-guide/media/chooser_local.png" alt-text="Lokales Panel der devtools-App":::
    Lokales Panel der devtools-App
@@ -119,7 +119,7 @@ Diese Tastenkombinationen steuern das Hauptfenster von devtools und sollten übe
 
 ## Feedback senden  
 
-Bitte senden Sie Ihr Feedback, damit Sie die Microsoft Edge \ (EdgeHTML \) devtools für Sie verbessern können.  Öffnen Sie einfach die Tools \`F12`(\), und wählen Sie die Schaltfläche [Feedback senden](#microsoft-edge-edgehtml-developer-tools) aus.  
+Bitte senden Sie Ihr Feedback, damit Sie die Microsoft Edge \ (EdgeHTML \) devtools für Sie verbessern können.  Öffnen Sie einfach die Tools \ ( `F12` \), und wählen Sie die Schaltfläche [Feedback senden](#microsoft-edge-edgehtml-developer-tools) aus.  
 
 Werden Sie [Windows-Insider][WindowsInsiderProgram] , um eine Vorschau der [neuesten Features in devtools][DevtoolsGuideEdgehtmlWhatsnew]anzuzeigen.  Verwenden Sie die Windows-Feedback-Hub-App zum Posten, nach oben abstimmen, Nachverfolgung und Support für allgemeine Windows-Vorschläge und-Probleme.  
 
