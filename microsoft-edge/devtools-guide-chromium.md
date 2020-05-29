@@ -3,17 +3,17 @@ description: Kennenlernen der Microsoft Edge (Chrom)-Entwickler Tools
 title: Microsoft Edge (Chrom)-Entwickler Tools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/11/2019
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: 178f72fbc47f712882de6f9564478953f4834890
-ms.sourcegitcommit: 24430258f363b7dd85f7067afd4565bf102b4a1f
+ms.openlocfilehash: 0034e23885020aae5047c69219bd51235a5882b0
+ms.sourcegitcommit: a5392ab44133d742c0e1fa500ad9a872989b7c3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "10645308"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "10684685"
 ---
 # Microsoft Edge (Chrom)-Entwickler Tools  
 
@@ -26,8 +26,6 @@ Wenn Sie Microsoft Edge Auschecken und sich hauptsächlich in einem Chrom basier
 :::image type="complex" source="./devtools-guide-chromium/media/devtools.png" alt-text="Microsoft Edge (Chrom) devtools":::
    Microsoft Edge (Chrom) devtools
 :::image-end:::
-
-<!--![Microsoft Edge (Chromium) DevTools](./devtools-guide-chromium/media/devtools.png)  -->  
 
 Wenn Sie die nächste Version von Microsoft Edge Auschecken und zuvor in Microsoft Edge \ (EdgeHTML \) entwickelt haben, verfügen Sie nun über einige hervorragende neue Tools, die es einfacher und schneller machen, ihre Websites in Microsoft Edge zu erstellen und zu testen!  
 
@@ -54,8 +52,6 @@ Wenn Sie die Protokolle aus Ihrem Front-End-JavaScript-Code anzeigen oder schnel
 :::image type="complex" source="./devtools-guide-chromium/media/devtools-core-tools.png" alt-text="Microsoft Edge (Chrom) devtools-Kern Tools":::
    Microsoft Edge (Chrom) devtools-Kern Tools
 :::image-end:::
-
-<!--![Microsoft Edge \(Chromium\) DevTools core tools](./devtools-guide-chromium/media/devtools-core-tools.png)  -->  
 
 Zu den Microsoft Edge \ (Chromium \) devtools gehören die folgenden Panels.  
 *   Ein **Element** Panel zum Bearbeiten von HTML und CSS, untersuchen von Barrierefreiheitseigenschaften, Anzeigen von ereignislistern und Festlegen von Haltepunkten für DOM-Mutationen  
@@ -85,8 +81,6 @@ Sie können auch Erweiterungen aus dem [Chrome Web Store][GoogleChromeWebstoreEx
    Chrome Web Store in Microsoft Edge
 :::image-end:::
 
-<!--![Chrome Web Store in Microsoft Edge](./devtools-guide-chromium/media/allow-extensions-from-stores.png)  -->
-
 Wählen Sie oben im Dialogfeld, das angezeigt wird, die Option **Erweiterungen von anderen speichern zulassen aus** , und wählen Sie dann **zulassen** aus.  
 
 > [!NOTE]
@@ -97,8 +91,6 @@ Wählen Sie **zu Chrome hinzufügen** aus, um Ihre devtools-Erweiterung zu Micro
 :::image type="complex" source="./devtools-guide-chromium/media/install-extension-from-chrome-store.png" alt-text="Hinzufügen einer Erweiterung von Chrome Web Store zu Microsoft Edge":::
    Hinzufügen einer Erweiterung von Chrome Web Store zu Microsoft Edge
 :::image-end:::
-
-<!--![Adding extension from Chrome Web Store to Microsoft Edge](./devtools-guide-chromium/media/install-extension-from-chrome-store.png)  -->  
 
 ## Kombinationen  
 
@@ -144,8 +136,6 @@ Bitte senden Sie Ihr Feedback, damit das Microsoft Edge-Team die Microsoft Edge-
    Feedback zu Microsoft Edge geben
 :::image-end:::
 
-<!--![Give feedback on Microsoft Edge](./devtools-guide-chromium/media/devtools-feedback.png)  -->  
-
 Wenn Sie eine Vorschau der [neuesten Features in devtools][DevtoolsGuideChromiumWhatsNewIndex]anzeigen möchten, laden Sie [Microsoft Edge Canary][MicrosoftedgeinsiderDownload]herunter, das nächtlich erstellt wird.  
 
 <!-- image links -->  
@@ -153,7 +143,7 @@ Wenn Sie eine Vorschau der [neuesten Features in devtools][DevtoolsGuideChromium
 <!-- links -->  
 
 [DevtoolsGuideChromiumBeginnersHtml]: /microsoft-edge/devtools-guide-chromium/beginners/html "DevTools für Anfänger: Erste Schritte mit HTML und dem Dom | Microsoft docs"  
-[DevtoolsGuideChromiumWhatsNewIndex]: ./devtools-guide-chromium/whats-new.md "Neuerungen in Microsoft Edge (Chrom) devtools | Microsoft docs"  
+[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/05/devtools "Neuerungen in Microsoft Edge (Chrom) devtools | Microsoft docs"  
 [DevtoolsProtocolChromiumIndex]: /microsoft-edge/devtools-protocol-chromium "Microsoft Edge (Chrom) devtools-Protokoll | Microsoft docs"  
 
 [MicrosoftEdgeAddonsExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions "Microsoft Edge-Add-ons"  

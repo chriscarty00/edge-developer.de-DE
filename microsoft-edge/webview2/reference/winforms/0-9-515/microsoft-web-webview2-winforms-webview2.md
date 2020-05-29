@@ -3,17 +3,17 @@ description: Hosten von Webinhalten in ihrer Win32-App mit dem Microsoft Edge We
 title: Microsoft Edge-WebView2 für Win32-apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/12/2020
+ms.date: 05/27/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: 25ea8367aa9d64d0a1066cf8c1564f4d9c9f05ed
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 532c898845125564ad5af6460dc8d1ff6464abfb
+ms.sourcegitcommit: 83efa259be89cc773a82751242495a0a919d54cd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10653714"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "10687804"
 ---
 # Microsoft. Web. WebView2. WinForms. WebView2 Klasse 
 
@@ -50,9 +50,6 @@ Steuerelement zum Einbetten von WebView2 in WinForms
 [Laden](#reload) | Laden Sie das Dokument der obersten Ebene des WebView2.
 [Stop](#stop) | Beenden Sie die Navigation in Progress in der WebView2.
 [WebView2](#webview2) | Erstellen Sie ein neues WebView2 WinForms-Steuerelement.
-[OnEnter](#onenter) | Geschützter Fokus Handler.
-[OnSizeChanged](#onsizechanged) | Geschützter SizeChanged-Handler.
-[OnVisibleChanged](#onvisiblechanged) | Geschützter Sichtbarkeits Handler.
 
 ## Member
 
@@ -216,22 +213,4 @@ Erstellen Sie ein neues WebView2 WinForms-Steuerelement.
 > Public [WebView2](#webview2)()
 
 Nach der Erstellung ist die CoreWebView2-Eigenschaft NULL. Rufen Sie [EnsureCoreWebView2Async](#ensurecorewebview2async) auf, um die zugrunde liegende CoreWebView2 zu initialisieren.
-
-#### OnEnter 
-
-Geschützter Fokus Handler.
-
-> protected override void [OnEnter](#onenter)(EventArgs e)
-
-#### OnSizeChanged 
-
-Geschützter SizeChanged-Handler.
-
-> protected override void [onsized](#onsizechanged)(EventArgs e)
-
-#### OnVisibleChanged 
-
-Geschützter Sichtbarkeits Handler.
-
-> protected override void [onvisibled](#onvisiblechanged)(EventArgs e)
 

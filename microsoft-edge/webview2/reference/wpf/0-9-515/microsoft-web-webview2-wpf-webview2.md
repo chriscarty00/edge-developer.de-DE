@@ -3,17 +3,17 @@ description: Hosten von Webinhalten in ihrer Win32-App mit dem Microsoft Edge We
 title: Microsoft Edge-WebView2 für Win32-apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/13/2020
+ms.date: 05/27/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: f2c3bcb5334abc907a838971ebc1773b6485194f
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: a0030e1a2a77d65963bd8333f2071485ab2fe308
+ms.sourcegitcommit: 83efa259be89cc773a82751242495a0a919d54cd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10653787"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "10687797"
 ---
 # Microsoft. Web. WebView2. WPF. WebView2 Klasse 
 
@@ -50,16 +50,6 @@ Ein Steuerelement zum Einbetten von Webinhalten in eine WPF-Anwendung.
 [Laden](#reload) | Lädt die aktuelle Seite neu.
 [Stop](#stop) | Stoppt alle Navigations-und ausstehenden Ressourcen Abrufe.
 [WebView2](#webview2) | Erstellt eine neue Instanz eines WebView2-Steuerelements.
-[BuildWindowCore](#buildwindowcore) | Dies wird von HwndHost überschrieben und aufgerufen, um uns zu beauftragen, unser HWND zu erstellen.
-[DestroyWindowCore](#destroywindowcore) | Dies wird von HwndHost überschrieben und aufgerufen, um uns anzuweisen, unser HWND zu zerstören.
-[Löschen](#dispose) | Dies wird von unserer Basisklasse entsprechend der typischen Implementierung des IDispose-Musters aufgerufen.
-[HasFocusWithinCore](#hasfocuswithincore) | Dies wird von HwndHost überschrieben und aufgerufen, wenn WPF wissen muss, ob sich der Fokus in unserem Steuerelement/Fenster befindet.
-[OnKeyDown](#onkeydown) | Dies wird von UIElement überschrieben und aufgerufen, damit wir die Eingabe von Tasten drücken verarbeiten können.
-[OnKeyUp](#onkeyup) | Siehe OnKeyDown.
-[OnPreviewKeyDown](#onpreviewkeydown) | Dies ist die "Vorschau" (also
-[OnPreviewKeyUp](#onpreviewkeyup) | Siehe OnPreviewKeyDown.
-[OnWindowPositionChanged](#onwindowpositionchanged) | Dieser wird von HwndHost überschrieben und aufgerufen, wenn sich der Standort des Steuerelements geändert hat.
-[TabIntoCore](#tabintocore) | Dies wird von HwndHost überschrieben und wird aufgerufen, um uns mitzuteilen, dass die Tab-Taste dazu geführt hat, dass der Fokus in unser Control/Window verschoben wurde.
 
 Dieses Steuerelement ist effektiv ein Wrapper um die WebView2-com-API, in dem Sie die Dokumentation finden können: [https://aka.ms/webview2](https://aka.ms/webview2) Sie können direkt auf die zugrunde liegende ICoreWebView2-Schnittstelle und ihre gesamte Funktionalität zugreifen, indem Sie auf die CoreWebView2-Eigenschaft zugreifen. Einige der gängigsten com-Funktionen können auch direkt über Wrappermethoden/Eigenschaften/Ereignisse für das Steuerelement aufgerufen werden.
 
@@ -288,97 +278,4 @@ Erstellt eine neue Instanz eines WebView2-Steuerelements.
 > Public [WebView2](#webview2)()
 
 Beachten Sie, dass der CoreWebView2 des Steuerelements bis zur Initialisierung NULL ist. Eine Initialisierungs Übersicht finden Sie in der Dokumentation zur WebView2-Klasse.
-
-#### BuildWindowCore 
-
-Dies wird von HwndHost überschrieben und aufgerufen, um uns zu beauftragen, unser HWND zu erstellen.
-
-> protected override HandleRef [BuildWindowCore](#buildwindowcore)(HandleRef hwndParent)
-
-##### Parameter
-* `hwndParent` Das HWND, das wir als übergeordnetes Element des erstellten verwenden sollen.
-
-##### Gibt
-Das von uns erstellte HWND.
-
-#### DestroyWindowCore 
-
-Dies wird von HwndHost überschrieben und aufgerufen, um uns anzuweisen, unser HWND zu zerstören.
-
-> protected override void [DestroyWindowCore](#destroywindowcore)(HandleRef HWND)
-
-##### Parameter
-* `hwnd` Unser HWND, das wir zerstören müssen.
-
-#### Löschen 
-
-Dies wird von unserer Basisklasse entsprechend der typischen Implementierung des IDispose-Musters aufgerufen.
-
-> protected override void [Dispose](#dispose)(bool disposing)
-
-Wir implementieren es durch die Freigabe aller zugrunde liegenden com-Ressourcen, einschließlich unserer CoreWebView2.
-
-##### Parameter
-* `disposing` True, wenn ein Aufrufer explizit Dispose aufruft, false, wenn wir finalisiert werden.
-
-#### HasFocusWithinCore 
-
-Dies wird von HwndHost überschrieben und aufgerufen, wenn WPF wissen muss, ob sich der Fokus in unserem Steuerelement/Fenster befindet.
-
-> protected override bool [HasFocusWithinCore](#hasfocuswithincore)()
-
-WPF kann nicht alleine wissen, da wir ein nicht-WPF-Fenster hosten, stattdessen fragt es uns, indem wir dies aufrufen. Zur Beantwortung wird der Zustand auf der Grundlage von CoreWebView2-Ereignissen, die ausgelöst werden, wenn er den Fokus erhält oder verliert, einfach nach vollführt.
-
-##### Gibt
-True, wenn sich der Fokus in unserem Control/Window befindet, andernfalls false.
-
-#### OnKeyDown 
-
-Dies wird von UIElement überschrieben und aufgerufen, damit wir die Eingabe von Tasten drücken verarbeiten können.
-
-> protected override void [OnKeyDown](#onkeydown)(KeyEventArgs e)
-
-WPF sollte diesen Anruf eigentlich nie als Antwort auf Tastaturereignisse aufrufen, da wir ein nicht-WPF-Fenster hosten. Wenn unser Fenster den Fokus hat, sendet Windows die Eingabe direkt an Sie, anstatt an das WPF-Fenster auf oberster Ebene und an das Eingabesystem. Diese Außerkraftsetzung sollte nur aufgerufen werden, wenn wir die Zugriffstasten Eingabe aus dem CoreWebView2 explizit an WPF (in CoreWebView2Controller_AcceleratorKeyPressed) weiterleiten. Selbst dann wird diese KeyDownEvent nur ausgelöst, weil Sie von unserer PreviewKeyDownEvent-Implementierung explizit ausgelöst wird, die dem normalen WPF-System entspricht. Der Prozess lautet also: CoreWebView2Controller_AcceleratorKeyPressed > Raise PreviewKeyDownEvent-> OnPreviewKeyDown-> Raise KeyDownEvent-> OnKeyDown
-
-#### OnKeyUp 
-
-Siehe OnKeyDown.
-
-> protected override void [onkeyup](#onkeyup)(KeyEventArgs e)
-
-#### OnPreviewKeyDown 
-
-Dies ist die "Vorschau" (also
-
-> protected override void [OnPreviewKeyDown](#onpreviewkeydown)(KeyEventArgs e)
-
-Tunneling)-Version von OnKeyDown aus, sodass dies zunächst geschieht. Wie OnKeyDown wird dies immer nur aufgerufen, wenn wir die Schlüsselpressen explizit aus dem CoreWebView2 weiterleiten. Um die Standardeingabe Behandlung von WPF nachzuahmen, wenn wir dies erhalten, drehen wir den standardmäßigen sprudelnden KeyDownEvent um und zünden ihn an. Auf diese Weise sehen andere in der WPF-Struktur dasselbe Standardpaar von Eingabeereignissen, die von WPF selbst ausgelöst wurden, wenn Sie die Tastenkombination verarbeiten.
-
-#### OnPreviewKeyUp 
-
-Siehe OnPreviewKeyDown.
-
-> protected override void [OnPreviewKeyUp](#onpreviewkeyup)(KeyEventArgs e)
-
-#### OnWindowPositionChanged 
-
-Dieser wird von HwndHost überschrieben und aufgerufen, wenn sich der Standort des Steuerelements geändert hat.
-
-> protected override void [OnWindowPositionChanged](#onwindowpositionchanged)(Rect rcBoundingBox)
-
-HwndHost sorgt für die Aktualisierung des von uns erstellten HWNDs. Wir müssen unsere CoreWebView2 so verschieben, dass Sie dem neuen Standort entspricht.
-
-#### TabIntoCore 
-
-Dies wird von HwndHost überschrieben und wird aufgerufen, um uns mitzuteilen, dass die Tab-Taste dazu geführt hat, dass der Fokus in unser Control/Window verschoben wurde.
-
-> protected override bool [TabIntoCore](#tabintocore)(TraversalRequest Request)
-
-Da WPF den Übergang des Fokus nicht in ein nicht-WPF-HWND verwalten kann, wird hier der Übergang an uns delegiert. Unsere Aufgabe ist es also, den Fokus auf unser externes HWND zu legen.
-
-##### Parameter
-* `request` Informationen dazu, wie der Fokus verschoben wird.
-
-##### Gibt
-"True", um anzugeben, dass die Navigation gehandhabt wurde, oder "false", um anzugeben, dass dies nicht der Fall ist.
 
