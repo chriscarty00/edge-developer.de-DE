@@ -1,0 +1,64 @@
+---
+description: Verwenden Sie das Konsolen Tool für interaktives Debuggen und Ad-hoc-Tests.
+title: DevTools-Console
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 01/15/2020
+ms.topic: article
+ms.prod: microsoft-edge
+keywords: Microsoft Edge, Web Development, F12 Tools, devtools, Console
+ms.custom: seodec18
+ms.openlocfilehash: f2733cac57ed5f2364747ee64e669fa83aae41f4
+ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "10567646"
+---
+# <span data-ttu-id="e2c27-104">Console</span><span class="sxs-lookup"><span data-stu-id="e2c27-104">Console</span></span>
+
+<span data-ttu-id="e2c27-105">Das Konsolen Entwicklertool in Microsoft Edge protokolliert Informationen, die einer Webseite zugeordnet sind, wie JavaScript, Netzwerkanforderungen und Sicherheitsfehler.</span><span class="sxs-lookup"><span data-stu-id="e2c27-105">The Console developer tool in Microsoft Edge logs information that's associated with a webpage, such as JavaScript, network requests, and security errors.</span></span> <span data-ttu-id="e2c27-106">Sie können die Konsole für interaktives Debuggen und Ad-hoc-Tests verwenden.</span><span class="sxs-lookup"><span data-stu-id="e2c27-106">You can use the Console for interactive debugging and ad hoc testing.</span></span> 
+
+<span data-ttu-id="e2c27-107">Zum Öffnen des Konsolentools in Microsoft Edge drücken Sie die Taste F12, um auf das Entwicklertool Fenster zuzugreifen (oder klicken Sie mit der rechten Maustaste auf die Seite, und wählen Sie dann **Element überprüfen**aus) aus.</span><span class="sxs-lookup"><span data-stu-id="e2c27-107">To open the Console tool in Microsoft Edge, press the F12 key to access the developer tool window (or right-click on the page, and then select **Inspect Element**).</span></span> <span data-ttu-id="e2c27-108">Wählen Sie dann oben im Fenster die Registerkarte **Konsole** aus.</span><span class="sxs-lookup"><span data-stu-id="e2c27-108">Then, select the **Console** tab at the top of the window.</span></span> 
+
+<span data-ttu-id="e2c27-109">Sie können auch das Konsolen Tool verwenden, um zu und von einer ausgeführten Webseite zu kommunizieren.</span><span class="sxs-lookup"><span data-stu-id="e2c27-109">You can also use the Console tool to communicate to and from a running webpage.</span></span> <span data-ttu-id="e2c27-110">Sie können die Konsole für folgende Zwecke verwenden:</span><span class="sxs-lookup"><span data-stu-id="e2c27-110">You can use the Console to:</span></span>
+
+- <span data-ttu-id="e2c27-111">Posten Sie Standard [Fehler-und Statuscodes](./console/error-and-status-codes.md) sowie Informationsmeldungen, während der Code ausgeführt wird.</span><span class="sxs-lookup"><span data-stu-id="e2c27-111">Post standard [error and status codes](./console/error-and-status-codes.md) and informational messages as your code runs.</span></span>
+- <span data-ttu-id="e2c27-112">Generieren Sie benutzerdefinierte Debug-Protokolle über die [Konsolen-API-](./console/console-api.md) Aufrufe, die Sie in Ihren Code einbeziehen.</span><span class="sxs-lookup"><span data-stu-id="e2c27-112">Generate custom debug logs from the [Console API](./console/console-api.md) calls you include in your code.</span></span>
+- <span data-ttu-id="e2c27-113">Stellen Sie eine [Befehlszeile](./console/command-line.md) und eine interaktive Strukturansicht zum Überprüfen der aktuellen Rückgabewerte von Schlüsselvariablen und Funktionen bereit.</span><span class="sxs-lookup"><span data-stu-id="e2c27-113">Provide a [command line](./console/command-line.md) and interactive tree view for inspecting current return values of key variables and functions.</span></span>
+
+## <span data-ttu-id="e2c27-114">Teile der Konsole</span><span class="sxs-lookup"><span data-stu-id="e2c27-114">Parts of the Console</span></span>
+
+<span data-ttu-id="e2c27-115">Die folgende Abbildung zeigt die wichtigsten Elemente der Konsole:</span><span class="sxs-lookup"><span data-stu-id="e2c27-115">The following image shows the key parts of the Console:</span></span>
+
+![Die Microsoft Edge devtools-Konsole](./media/console.png)
+
+1. <span data-ttu-id="e2c27-117">**Fehlermeldungen**  /  **Warnungen**  /  Weitere **Informationen**  /  Schaltflächen für **Protokolle** : Filtern der Konsolenausgabe nach dem angegebenen Typ</span><span class="sxs-lookup"><span data-stu-id="e2c27-117">**Errors** / **Warnings** / **Info** / **Logs** buttons: Filter console output by the specified type.</span></span> <span data-ttu-id="e2c27-118">Sie können Schaltflächen mehrfach auswählen, indem Sie die **STRG** -Taste gedrückt halten.</span><span class="sxs-lookup"><span data-stu-id="e2c27-118">You can multi-select buttons by holding down the **Ctrl** key.</span></span> <span data-ttu-id="e2c27-119">Die Schaltfläche **alle** löscht alle Filter.</span><span class="sxs-lookup"><span data-stu-id="e2c27-119">The **All** button clears all filters.</span></span>
+
+2. <span data-ttu-id="e2c27-120">Schaltfläche " **Löschen** " (**STRG + L**): die Schaltfläche " **Löschen** " löscht die aktuelle Konsolenanzeige.</span><span class="sxs-lookup"><span data-stu-id="e2c27-120">**Clear** button (**Ctrl+L**): The **Clear** button clears the current console display.</span></span>
+
+3. <span data-ttu-id="e2c27-121">Kontrollkästchen " **Protokoll beibehalten** ": durch Aktivieren des Kontrollkästchens **Protokoll beibehalten** wird die Konsolenausgabe während der Seitenaktualisierung und dem Schließen und erneuten Öffnen von devtools beibehalten.</span><span class="sxs-lookup"><span data-stu-id="e2c27-121">**Preserve Log** check box: Selecting the **Preserve Log** check box persists your console output across page refreshes and closing and reopening DevTools.</span></span> <span data-ttu-id="e2c27-122">Der Konsolen Verlauf wird nur gelöscht, wenn die Registerkarte geschlossen ist, oder Sie können die Konsole manuell löschen.</span><span class="sxs-lookup"><span data-stu-id="e2c27-122">The Console history clears only when the tab is closed or you manually clear the Console.</span></span>
+
+4. <span data-ttu-id="e2c27-123">**Ziel**: Verwenden Sie das Dropdownmenü **Ziel** , um zu einem anderen Ausführungskontext zu wechseln, beispielsweise `<iframe>` in einer Seite oder in einer ausgeführten Erweiterung.</span><span class="sxs-lookup"><span data-stu-id="e2c27-123">**Target**: Use the **Target** drop-down menu to switch to a different execution context, such as an `<iframe>` in your page or a running extension.</span></span> <span data-ttu-id="e2c27-124">Standardmäßig ist der Frame auf oberster Ebene der Seite ausgewählt.</span><span class="sxs-lookup"><span data-stu-id="e2c27-124">By default, the top-level frame of your page is selected.</span></span> <span data-ttu-id="e2c27-125">Wenn Sie auf einen markierten Frame zeigen, wird eine QuickInfo mit der vollständigen URL für diese Ressource angezeigt.</span><span class="sxs-lookup"><span data-stu-id="e2c27-125">Hovering over a selected frame displays a tooltip that shows the full URL for that resource.</span></span>
+
+5. <span data-ttu-id="e2c27-126">**Konsole anzeigen**  /  Schaltfläche " **Konsole ausblenden** " (**STRG** +  **&grave;** ): Zusätzlich zum Konsolenbereich können Sie die Konsole vom unteren Rand eines anderen devtools-Panels aus verwenden, **Show Console**indem Sie die  /  Schaltfläche Konsole**Ausblenden** Console anzeigen drücken.</span><span class="sxs-lookup"><span data-stu-id="e2c27-126">**Show Console** / **Hide Console** button (**Ctrl**+ **&grave;** ): In addition to the Console panel, you can use the console from the bottom of any other DevTools panel by pressing the **Show Console** / **Hide Console** button.</span></span> <span data-ttu-id="e2c27-127">Die Schaltfläche hat keine Auswirkungen, wenn devtools im Konsolen Panel geöffnet ist.</span><span class="sxs-lookup"><span data-stu-id="e2c27-127">The button has no effect when DevTools is open to the Console panel.</span></span>
+ 
+6. <span data-ttu-id="e2c27-128">**Filter Protokolle** (**STRG + F**): Sie können auch Protokolle filtern, indem Sie eine bestimmte Textzeichenfolge im Suchfeld verwenden.</span><span class="sxs-lookup"><span data-stu-id="e2c27-128">**Filter logs** (**Ctrl+F**) : You can also filter logs by using a specific text string in the search box.</span></span>
+
+7. <span data-ttu-id="e2c27-129">**Debugger**: Wählen Sie einen beliebigen blauen Quell Link aus, um den devtools-Debugger für diese bestimmte Codezeile zu öffnen, um Sie zu überprüfen.</span><span class="sxs-lookup"><span data-stu-id="e2c27-129">**Debugger**: Select any blue source link to open the DevTools Debugger to that particular line of code for further inspection.</span></span>
+
+## <span data-ttu-id="e2c27-130">Kombinationen</span><span class="sxs-lookup"><span data-stu-id="e2c27-130">Shortcuts</span></span>
+
+<span data-ttu-id="e2c27-131">Aktion</span><span class="sxs-lookup"><span data-stu-id="e2c27-131">Action</span></span>                                            | <span data-ttu-id="e2c27-132">Tastenkombination</span><span class="sxs-lookup"><span data-stu-id="e2c27-132">Shortcut</span></span>               
+:-------------------------------------------------| :----------------------
+<span data-ttu-id="e2c27-133">Starten von devtools mit Konsole im Fokus</span><span class="sxs-lookup"><span data-stu-id="e2c27-133">Launch DevTools with Console in focus</span></span>             | <span data-ttu-id="e2c27-134">**STRG**  +  **UMSCHALT**  +  **J**</span><span class="sxs-lookup"><span data-stu-id="e2c27-134">**Ctrl** + **Shift** + **J**</span></span> 
+<span data-ttu-id="e2c27-135">Wechseln zur Konsole</span><span class="sxs-lookup"><span data-stu-id="e2c27-135">Switch to the Console</span></span>                                 | <span data-ttu-id="e2c27-136">**STRG**  +  **2**</span><span class="sxs-lookup"><span data-stu-id="e2c27-136">**Ctrl** + **2**</span></span>           
+<span data-ttu-id="e2c27-137">Anzeigen/Ausblenden der Konsole auf einer anderen devtools-Registerkarte</span><span class="sxs-lookup"><span data-stu-id="e2c27-137">Show/hide the Console from another DevTools tab</span></span>       | <span data-ttu-id="e2c27-138">**Ctrl**  +  STRG **&grave;** (zurück markieren)</span><span class="sxs-lookup"><span data-stu-id="e2c27-138">**Ctrl** + **&grave;** (back tick)</span></span>  
+<span data-ttu-id="e2c27-139">Ausführen (Befehl mit einer Zeile)</span><span class="sxs-lookup"><span data-stu-id="e2c27-139">Execute (single-line command)</span></span>                     | **<span data-ttu-id="e2c27-140">Eingabe</span><span class="sxs-lookup"><span data-stu-id="e2c27-140">Enter</span></span>**                
+<span data-ttu-id="e2c27-141">Zeilenumbruch ohne Ausführung (mehrzeiligen Befehl)</span><span class="sxs-lookup"><span data-stu-id="e2c27-141">Line break without executing (multi-line command)</span></span> | <span data-ttu-id="e2c27-142">**UMSCHALT**  +  **EINGABETASTE oder** **STRG**  +  **Enter** -Taste</span><span class="sxs-lookup"><span data-stu-id="e2c27-142">**Shift** + **Enter** or **Ctrl** + **Enter**</span></span>      
+<span data-ttu-id="e2c27-143">Deaktivieren der Konsole aller Nachrichten</span><span class="sxs-lookup"><span data-stu-id="e2c27-143">Clear the Console of all messages</span></span>                 | <span data-ttu-id="e2c27-144">**STRG**  +  **L**</span><span class="sxs-lookup"><span data-stu-id="e2c27-144">**Ctrl** + **L**</span></span>           
+<span data-ttu-id="e2c27-145">Filtern von Protokollen (Fokus auf Suchfeld setzen)</span><span class="sxs-lookup"><span data-stu-id="e2c27-145">Filter logs (set focus to search box)</span></span>             | <span data-ttu-id="e2c27-146">**STRG**  +  **F**</span><span class="sxs-lookup"><span data-stu-id="e2c27-146">**Ctrl** + **F**</span></span>           
+<span data-ttu-id="e2c27-147">Vorschlag zur automatischen Vervollständigung annehmen (im Fokus)</span><span class="sxs-lookup"><span data-stu-id="e2c27-147">Accept auto-completion suggestion (when in focus)</span></span> | <span data-ttu-id="e2c27-148">**EINGABETASTE** oder **Tab**</span><span class="sxs-lookup"><span data-stu-id="e2c27-148">**Enter** or **Tab**</span></span>       
+<span data-ttu-id="e2c27-149">Vorheriger/Nächster Vorschlag zur automatischen Vervollständigung</span><span class="sxs-lookup"><span data-stu-id="e2c27-149">Previous/next auto-completion suggestion</span></span>          | <span data-ttu-id="e2c27-150">Nach- **oben-Taste** / **Nach-unten-Taste**</span><span class="sxs-lookup"><span data-stu-id="e2c27-150">**Up arrow key**/**Down arrow key**</span></span>   
+
+
