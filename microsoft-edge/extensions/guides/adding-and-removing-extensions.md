@@ -54,7 +54,7 @@ Darüber hinaus finden Sie Informationen dazu, wie Sie die Position Ihres Erweit
 ![Erweiterung im Erweiterungsbereich](./../media/sideload-extension-installed.png)
 
 > [!NOTE]
-> Nicht signierte Erweiterungen werden bei nachfolgenden Starts von Microsoft Edge automatisch deaktiviert. Wenn der Browser in einen Ruhezustand wechselt (nach ungefähr 10 Sekunden Inaktivität), wird unten im Fenster die folgende Benachrichtigung angezeigt. ![riskante Benachrichtigung](./../media/riskynotification.png) Wenn Sie die nicht signierten Erweiterungen aktivieren möchten, klicken Sie auf "trotzdem einschalten".
+> Nicht signierte Erweiterungen werden bei nachfolgenden Starts von Microsoft Edge automatisch deaktiviert. Wenn der Browser in einen Ruhezustand wechselt (nach ungefähr 10 Sekunden Inaktivität), wird unten im Fenster die folgende Benachrichtigung angezeigt. ![riskante Benachrichtigung wenn ](./../media/riskynotification.png) Sie die nicht signierten Erweiterungen aktivieren möchten, klicken Sie auf "trotzdem einschalten".
 
 
 
