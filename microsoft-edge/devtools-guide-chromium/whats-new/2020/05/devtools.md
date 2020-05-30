@@ -6,12 +6,12 @@ ms.date: 05/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: f07639d3c5cd246704f3d489c0e59714a938f13d
-ms.sourcegitcommit: a5392ab44133d742c0e1fa500ad9a872989b7c3f
+ms.openlocfilehash: fc5dcc10ba3a79bd3f073e0e3504e551d7e23d70
+ms.sourcegitcommit: ba9f0ed77e84174b03262b17e62c6a7e26cfeb3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "10684839"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "10688178"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -114,7 +114,7 @@ Beim Remotedebuggen eines [Android-Geräts][DevToolsRemoteDebugAndroid], eines [
 
 Chrom Problem [#1081486][CR1081486]  
 
-### Der Detailbereich des Netzwerkbereichs nimmt den Fokus  
+### Der Bereich "Details zum Netzwerkbereich" ist jetzt verfügbar  
 
 In Microsoft Edge 84 nimmt der [Bereich "Details" im Bereich][DevToolsNetworkDetails] " **Netzwerk** " nun den Fokus, wenn Sie ihn für eine Ressource im [Netzwerkprotokoll][DevToolsNetworkLog]öffnen.  Diese Änderung ermöglicht es Bildschirmsprachausgaben, den Inhalt des **Detail** Bereichs zu lesen und mit Ihnen zu interagieren.  
 
