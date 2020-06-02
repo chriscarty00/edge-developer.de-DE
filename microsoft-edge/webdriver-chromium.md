@@ -3,17 +3,17 @@ description: Erfahren Sie, wie Sie Ihre Website oder app in Microsoft Edge teste
 title: WebDriver (Chrom)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/20/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: Microsoft Edge, Web-Entwicklung, HTML, CSS, JavaScript, Entwickler, WebDriver, Selen, testen, Tools, Automatisierung, Test
-ms.openlocfilehash: 1ce30ec13a4def2da67cffc80b0cc7c92845f22b
-ms.sourcegitcommit: a78e285e8d0d9c570169b4e86bc4a2c2bb17871d
+ms.openlocfilehash: 52d1a92df1a0faa21a1f8caa780fe203ad27856e
+ms.sourcegitcommit: d39c64e0d439eb0643950248cdf2282383779225
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "10668186"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "10689675"
 ---
 # WebDriver (Chrom)  
 
@@ -79,7 +79,7 @@ Um mit Microsoft Edge \ (EdgeHTML \) zu verwenden, erstellen Sie einfach eine St
 
 #### [C#](#tab/c-sharp/)  
 
-<a id="basic-usage-code" />  
+<a id="basic-usage-code"></a>  
 
 ```csharp
 var driver = new EdgeDriver();
@@ -87,7 +87,7 @@ var driver = new EdgeDriver();
 
 #### [Python](#tab/python/)  
 
-<a id="basic-usage-code" />  
+<a id="basic-usage-code"></a>  
 
 ```python
 driver = Edge()
@@ -95,7 +95,7 @@ driver = Edge()
 
 #### [JavaScript](#tab/javascript/)  
 
-<a id="basic-usage-code" />  
+<a id="basic-usage-code"></a>  
 
 ```javascript
 let driver = edge.Driver.createSession();
@@ -109,7 +109,7 @@ Wenn Sie stattdessen mit Microsoft Edge \ (Chrom \) verwenden möchten, erstelle
 
 #### [C#](#tab/c-sharp/)  
 
-<a id="driving-microsoft-edge-chromium-code" />  
+<a id="driving-microsoft-edge-chromium-code"></a>  
 
 ```csharp
 var options = new EdgeOptions();
@@ -120,7 +120,7 @@ var driver = new EdgeDriver(options);
 
 #### [Python](#tab/python/)  
 
-<a id="driving-microsoft-edge-chromium-code" />  
+<a id="driving-microsoft-edge-chromium-code"></a>  
 
 ```python
 options = EdgeOptions()
@@ -131,7 +131,7 @@ driver = Edge(options)
 
 #### [JavaScript](#tab/javascript/)  
 
-<a id="driving-microsoft-edge-chromium-code" />  
+<a id="driving-microsoft-edge-chromium-code"></a>  
 
 ```javascript
 let options = new edge.Options();
@@ -148,7 +148,7 @@ Verwenden `EdgeOptions` Sie die Klasse, um eine bestimmte Binärdatei zu wählen
 
 #### [C#](#tab/c-sharp/)  
 
-<a id="choosing-specific-browser-binaries-chrome-only-code" />  
+<a id="choosing-specific-browser-binaries-chrome-only-code"></a>  
 
 ```csharp
 var options = new EdgeOptions();
@@ -160,7 +160,7 @@ var driver = new EdgeDriver(options);
 
 #### [Python](#tab/python/)  
 
-<a id="choosing-specific-browser-binaries-chrome-only-code" />  
+<a id="choosing-specific-browser-binaries-chrome-only-code"></a>  
 
 ```python
 options = EdgeOptions()
@@ -172,7 +172,7 @@ driver = Edge(options)
 
 #### [JavaScript](#tab/javascript/)  
 
-<a id="choosing-specific-browser-binaries-chrome-only-code" />  
+<a id="choosing-specific-browser-binaries-chrome-only-code"></a>  
 
 ```javascript
 let options = new edge.Options();
@@ -188,7 +188,7 @@ let driver = edge.Driver.createSession(options);
 
 #### [C#](#tab/c-sharp/)  
 
-<a id="customizing-microsoft-edge-driver-services-code" />  
+<a id="customizing-microsoft-edge-driver-services-code"></a>  
 
 Wenn eine `EdgeDriver` Klasseninstanz mithilfe von Class erstellt wird `EdgeOptions` , wird automatisch die geeignete `EdgeDriverService` Klasse für Microsoft Edge \ (EdgeHTML \) oder Microsoft Edge \ (Chrom \) erstellt und gestartet.  
 
@@ -210,7 +210,7 @@ using (var service = EdgeDriverService.CreateChromiumService())
 
 #### [Python](#tab/python/)  
 
-<a id="customizing-microsoft-edge-driver-services-code" />  
+<a id="customizing-microsoft-edge-driver-services-code"></a>  
 
 Bei Verwendung von Python `Edge` erstellt und verwaltet das Objekt die `EdgeService` .  Um das zu konfigurieren `EdgeService` , übergeben Sie zusätzliche Argumente an das `Edge` Objekt:
 
@@ -221,7 +221,7 @@ driver = Edge(service_args = service_args)
 
 #### [JavaScript](#tab/javascript/)  
 
-<a id="customizing-microsoft-edge-driver-services-code" />  
+<a id="customizing-microsoft-edge-driver-services-code"></a>  
 
 Wenn Sie JavaScript verwenden, erstellen und konfigurieren Sie a `Service` mit der `ServiceBuilder` Klasse.  Sie können das Objekt optional `Service` an das Objekt übergeben, das `Driver` den Dienst für Sie startet und beendet.  
 
@@ -240,7 +240,7 @@ Mithilfe der `EdgeOptions` Klasse mit dem `UseChromium` festgelegten Eigenschaft
 
 #### [C#](#tab/c-sharp/)  
 
-<a id="using-chromium-specific-options-code" />  
+<a id="using-chromium-specific-options-code"></a>  
 
 ```csharp
 var options = new EdgeOptions();
@@ -251,7 +251,7 @@ options.AddArgument("disable-gpu");
 
 #### [Python](#tab/python/)  
 
-<a id="using-chromium-specific-options-code" />  
+<a id="using-chromium-specific-options-code"></a>  
 
 ```python
 options = EdgeOptions()
@@ -262,7 +262,7 @@ options.add_argument("disable-gpu")
 
 #### [JavaScript](#tab/javascript/)  
 
-<a id="using-chromium-specific-options-code" />  
+<a id="using-chromium-specific-options-code"></a>  
 
 ```javascript
 let options = new edge.Options();
