@@ -1,4 +1,4 @@
-- name: WebView2 (Chrom) (Vorschau)
+- name: WebView2 (Chromium) (Vorschau)
   href: index.md
 - name: Erste Schritte
   items:
@@ -10,21 +10,21 @@
       href: gettingstarted/winforms.md
 - name: Konzepte
   items:
-    - name: Verteilen meiner app
+    - name: Verteilen meiner App
       href: concepts/distribution.md
     - name: Versionsverwaltung
       href: concepts/versioning.md
-- name: Anmerkungen zu dieser Version
+- name: Freigabehinweise
   href: releasenotes.md
 - name: Roadmap
   href: roadmap.md
-- name: Vorgehensweise
+- name: Anleitung
   items:
     - name: Debug-WebView2
       href: howto/Debug.md
-    - name: Automatisieren mit Edge-Treiber
+    - name: Automatisieren mit dem Edge-Treiber
       href: howto/webdriver.md
-- name: Referenz
+- name: Verweis
   href: webview2-api-reference.md
   items:
     - name: Win32 C++
@@ -84,7 +84,7 @@
               href: reference/win32/0-9-488/icorewebview2webmessagereceivedeventargs.md
             - name: ICoreWebView2WebResourceRequestedEventArgs
               href: reference/win32/0-9-488/icorewebview2webresourcerequestedeventargs.md
-        - name: Stellvertretungen
+        - name: Delegaten
           items:
             - name: ICoreWebView2AcceleratorKeyPressedEventHandler
               href: reference/win32/0-9-488/icorewebview2acceleratorkeypressedeventhandler.md
@@ -138,7 +138,7 @@
               href: reference/win32/0-9-488/icorewebview2windowcloserequestedeventhandler.md
             - name: ICoreWebView2ZoomFactorChangedEventHandler
               href: reference/win32/0-9-488/icorewebview2zoomfactorchangedeventhandler.md
-        - name: Experimental
+        - name: Experimentell
           items:
             - name: ICoreWebView2ExperimentalCompositionController
               href: reference/win32/0-9-488/icorewebview2experimentalcompositioncontroller.md
@@ -152,7 +152,7 @@
               href: reference/win32/0-9-488/icorewebview2experimentalpointerinfo.md
         - name: Archiviert
           items:
-            - name: 0.9.430-Reference (WebView2)
+            - name: 0.9.430 - Referenz (WebView2)
               href: reference/win32/0-9-430-reference-webview2.md
               items:
                 - name: ICoreWebView2
@@ -209,7 +209,7 @@
                       href: reference/win32/0-9-430/icorewebview2webmessagereceivedeventargs.md
                     - name: ICoreWebView2WebResourceRequestedEventArgs
                       href: reference/win32/0-9-430/icorewebview2webresourcerequestedeventargs.md
-                - name: Stellvertretungen
+                - name: Delegaten
                   items:
                     - name: ICoreWebView2AcceleratorKeyPressedEventHandler
                       href: reference/win32/0-9-430/icorewebview2acceleratorkeypressedeventhandler.md
@@ -263,7 +263,7 @@
                       href: reference/win32/0-9-430/icorewebview2windowcloserequestedeventhandler.md
                     - name: ICoreWebView2ZoomFactorChangedEventHandler
                       href: reference/win32/0-9-430/icorewebview2zoomfactorchangedeventhandler.md
-            - name: 0.8.190-Reference (WebView2)
+            - name: 0.8.190 - Referenz (WebView2)
               href: reference/win32/0-8-190-reference-webview2.md
               items:
                 - name: IWebView2Deferral
@@ -330,7 +330,7 @@
                       href: reference/win32/0-8-190/iwebview2webmessagereceivedeventargs.md
                     - name: IWebView2WebResourceRequestedEventArgs
                       href: reference/win32/0-8-190/iwebview2webresourcerequestedeventargs.md
-                - name: Stellvertretungen
+                - name: Delegaten
                   items:
                     - name: IWebView2AcceleratorKeyPressedEventHandler
                       href: reference/win32/0-8-190/iwebview2acceleratorkeypressedeventhandler.md
@@ -383,7 +383,7 @@
         - name: Core
           href: reference/dotnet/0-9-515-reference-webview2.md
           items:
-            - name: Microsoft. Internet. WebView2. Core-Namespace
+            - name: Microsoft.Web.WebView2.Core namespace
               href: reference/dotnet/0-9-515/namespace-microsoft-web-webview2-core.md
             - name: CoreWebView2
               href: reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2.md
