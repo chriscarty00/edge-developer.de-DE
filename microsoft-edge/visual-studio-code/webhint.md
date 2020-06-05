@@ -1,30 +1,34 @@
 ---
 description: Verwenden von webhint in Visual Studio-Code
 title: webhint vs-Code Erweiterung
-author: hxlnt
-ms.author: raweil
-ms.date: 03/26/2020
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 05/07/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Web-Entwicklung, vs-Code, Visual Studio-Code, webhint
-ms.openlocfilehash: d3102bf4d8d4a8bba9225d8d3f68432197f775ac
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: ec218fab8cbfb8181a0416c8e0eadc0e00412529
+ms.sourcegitcommit: c1b5fdd48d39d874a76c9b8f68309eb1b507fd0b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10568656"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "10695859"
 ---
-# webhint vs-Code Erweiterung
+# Webhint vs-Code Erweiterung  
 
-Verwenden Sie [webhint](https://webhint.io), ein anpassbares linting-Tool, um die Barrierefreiheit, die Leistung, die browserübergreifende Kompatibilität, die PWA-Kompatibilität und die Sicherheit Ihrer Website zu verbessern. Sie überprüft Ihren Code auf bewährte Methoden und häufige Fehler. Dieses Open-Source-Projekt, das ursprünglich vom Microsoft Edge-Team entwickelt wurde, ist jetzt Teil der [OpenJS-Foundation](https://openjsf.org/). Das Microsoft Edge-Team trägt weiterhin zu webhint neben Webentwicklern in der Community bei.
+Verwenden Sie [webhint][WebhintMain], ein anpassbares linting-Tool, um die Barrierefreiheit, die Leistung, die browserübergreifende Kompatibilität, die PWA-Kompatibilität und die Sicherheit Ihrer Website zu verbessern.  Sie überprüft Ihren Code auf bewährte Methoden und häufige Fehler. Dieses Open-Source-Projekt, das ursprünglich vom Microsoft Edge-Team entwickelt wurde, ist jetzt Teil der [OpenJS-Foundation][OpenjsFoundation].  Das Microsoft Edge-Team trägt weiterhin zu webhint neben Webentwicklern in der Community bei.  
 
-![Screenshot der webhint vs-Code Erweiterung](./media/webhint-extension.png)
+:::image type="complex" source="./media/webhint-extension.png" alt-text="Screenshot der webhint vs-Code Erweiterung":::
+   Screenshot der webhint vs-Code Erweiterung  
+:::image-end:::
 
-Identifizieren und beheben Sie Probleme in HTML, CSS, JavaScript, Manuskript und mehr, indem Sie die [webhint-Erweiterung für vs-Code](https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint)hinzufügen. Hinweise werden als Inline Unterstriche angezeigt und im Problembereich zusammengefasst.
+<!--![Screenshot of webhint VS Code extension][ImageWebhintExtension]  -->  
 
-## Konfiguration
+Identifizieren und beheben Sie Probleme in HTML, CSS, JavaScript, Manuskript und mehr, indem Sie die [webhint-Erweiterung für vs-Code][VisualstudioMarketplaceWebhint]hinzufügen.  Hinweise werden als Inline Unterstriche angezeigt und im **Problem** Bereich zusammengefasst.  
 
-Bei dieser Erweiterung wird eine JSON- [Standard](https://github.com/webhintio/hint/blob/master/packages/configuration-development/index.json) Datei verwendet, die Hinweise und Parser für HTML, CSS, Vorlagen Systeme (jsx/TSX, eckig usw.), JavaScript/schreibscript und vieles mehr aktiviert.
+## Konfiguration  
+
+Diese Erweiterung verwendet eine JSON- [Standard][GithubWebhintioIndexjson] Datei, die Hinweise und Parser für HTML, CSS, Vorlagen Systeme \ (jsx/TSX, eckig usw. \), JavaScript/schreibscript und vieles mehr aktiviert.  
 
 ```json
 {
@@ -74,16 +78,39 @@ Bei dieser Erweiterung wird eine JSON- [Standard](https://github.com/webhintio/h
         "webpack-config"
     ]
 }
-```
+```  
 
-Wenn Sie mehr Kontrolle über die zu aktivierenden Hinweise und Parser erhalten möchten, erstellen Sie eine lokale `.hintrc` Datei, um webhint zu konfigurieren. Hilfe zur Ausgabe spezifischer Hinweise finden Sie im [webhint-Nutzerleitfaden](https://webhint.io/docs/user-guide/configuring-webhint/summary/).
+Wenn Sie mehr Kontrolle über die zu aktivierenden Hinweise und Parser erhalten möchten, erstellen Sie eine lokale `.hintrc` Datei, um webhint zu konfigurieren.  Hilfe zur Ausgabe spezifischer Hinweise finden Sie im [webhint-Nutzerleitfaden][WebhintDocsUserguideConfiguringSummary].  
 
-## Feedback senden
+## Mit dem webhint-Team in Kontakt treten  
 
-Senden Sie uns Ihr Feedback, indem Sie [ein Problem](https://github.com/webhintio/hint/issues/new) im [webhint GitHub Repo](https://github.com/webhintio/hint)einreichen. 
+Senden Sie Ihr Feedback, indem Sie [ein Problem][GithubWebhintioIssuesNew] in [webhint GitHub Repo][GithubWebhintio]einreichen.  
 
-Wenn Sie zur Erweiterung beitragen möchten, lesen Sie den [Leitfaden zur Beitrags-und Code Erweiterung webhint vs](https://github.com/webhintio/hint/blob/master/packages/extension-vscode/CONTRIBUTING.md).
+Wenn Sie zur Erweiterung beitragen möchten, lesen Sie [webhint vs Code Extension Contribution Guide][GithubWebhintioExtensionVscodeContributing].  
 
-## Weitere Informationen
-  - [Bedienungshilfen](/microsoft-edge/accessibility)
-  - [Visual Studio Code](/microsoft-edge/visual-studio-code/)
+## Weitere Informationen  
+
+*   [Bedienungshilfen][AccessibilityIndex]  
+*   [Visual Studio Code][VisualstudiocodeIndex]  
+
+<!-- image links -->  
+
+<!--[ImageWebhintExtension]: ./media/webhint-extension.png "Screenshot of webhint VS Code extension"  -->  
+
+<!--links -->  
+
+[AccessibilityIndex]: /microsoft-edge/accessibility "Barrierefreiheit | Microsoft docs"  
+
+[VisualstudiocodeIndex]: /microsoft-edge/visual-studio-code/index "Visual Studio-Code | Microsoft docs"  
+
+[GithubWebhintio]: https://github.com/webhintio/hint "webhint | GitHub"  
+[GithubWebhintioExtensionVscodeContributing]: https://github.com/webhintio/hint/blob/master/packages/extension-vscode/CONTRIBUTING.md "Beitrag-webhint | GitHub"  
+[GithubWebhintioIndexjson]: https://github.com/webhintio/hint/blob/master/packages/configuration-development/index.json "Index. JSON-webhintio/Hint | GitHub"
+[GithubWebhintioIssuesNew]: https://github.com/webhintio/hint/issues/new "Neue Probleme-webhintio/Hint | GitHub"  
+
+[VisualstudioMarketplaceWebhint]: https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint "webhint | Visual Studio Marketplace"  
+
+[OpenjsFoundation]:  https://openjsf.org "OpenJS Foundation"  
+
+[WebhintDocsUserguideConfiguringSummary]: https://webhint.io/docs/user-guide/configuring-webhint/summary "Konfigurieren von webhint | webhint-Dokumentation"  
+[WebhintMain]:  https://webhint.io "webhint"  
