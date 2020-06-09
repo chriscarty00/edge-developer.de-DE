@@ -3,29 +3,26 @@ description: Hosten von Webinhalten in ihrer Win32-App mit dem Microsoft Edge We
 title: Microsoft Edge-WebView2 für Win32-apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2020
+ms.date: 06/05/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: 2f9647cd25c88808456854c7c8b29abc8cbfed05
+ms.openlocfilehash: dbc1a3e05f9cdc5b5ced2e0b7d489b06392e6100
 ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/08/2020
-ms.locfileid: "10698211"
+ms.locfileid: "10698829"
 ---
-# Schnittstellen ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler 
-
-> [!NOTE]
-> Dieser Verweis kann für Versionen nach der SDK-Version 0.9.515 geändert oder nicht mehr zur Verfügung stehen. Die neueste API-Referenz finden Sie in der [WebView2-API-Referenz](../../../webview2-api-reference.md) .
+# Schnittstellen ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler 
 
 ```
-interface ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler
+interface ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler
   : public IUnknown
 ```
 
-Der Aufrufer implementiert diese Schnittstelle, um das Ergebnis der AddScriptToExecuteOnDocumentCreated-Methode zu empfangen.
+Der Aufrufer implementiert diese Schnittstelle, um die über CreateCoreWebView2Environment erstellte WebView2Environment zu empfangen.
 
 ## Zusammenfassung
 
@@ -39,5 +36,5 @@ Der Aufrufer implementiert diese Schnittstelle, um das Ergebnis der AddScriptToE
 
 Wird aufgerufen, um dem Implementierer den Fertigstellungsstatus und das Ergebnis des entsprechenden asynchronen Methodenaufrufs bereitzustellen.
 
-> öffentlicher HRESULT- [Aufruf](#invoke)(HRESULT-ErrorCode, LPCWSTR-ID)
+> öffentlicher HRESULT- [Aufruf](#invoke)(HRESULT-Ergebnis, [ICoreWebView2Environment](icorewebview2environment.md) * created_environment)
 

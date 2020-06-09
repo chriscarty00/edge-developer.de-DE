@@ -3,29 +3,26 @@ description: Hosten von Webinhalten in ihrer Win32-App mit dem Microsoft Edge We
 title: Microsoft Edge-WebView2 für Win32-apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/07/2020
+ms.date: 06/05/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: 9135ba6bce6b5260413f47531062ea4c96d196cc
+ms.openlocfilehash: faeafdb0f2da5fa5037f41faab0d0b5ee8434eb4
 ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/08/2020
-ms.locfileid: "10698134"
+ms.locfileid: "10698864"
 ---
-# Schnittstellen ICoreWebView2SourceChangedEventHandler 
-
-> [!NOTE]
-> Dieser Verweis kann für Versionen nach der SDK-Version 0.9.515 geändert oder nicht mehr zur Verfügung stehen. Die neueste API-Referenz finden Sie in der [WebView2-API-Referenz](../../../webview2-api-reference.md) .
+# Schnittstellen ICoreWebView2NavigationStartingEventHandler 
 
 ```
-interface ICoreWebView2SourceChangedEventHandler
+interface ICoreWebView2NavigationStartingEventHandler
   : public IUnknown
 ```
 
-Der Aufrufer implementiert diese Schnittstelle, um das Quellpfad-Ereignis zu empfangen.
+Der Aufrufer implementiert diese Schnittstelle, um das NavigationStarting-Ereignis zu empfangen.
 
 ## Zusammenfassung
 
@@ -39,5 +36,5 @@ Der Aufrufer implementiert diese Schnittstelle, um das Quellpfad-Ereignis zu emp
 
 Wird aufgerufen, um dem Implementierer die Ereignis args für das entsprechende Ereignis bereitzustellen.
 
-> öffentlicher HRESULT- [Aufruf](#invoke)([ICoreWebView2](icorewebview2.md) * WebView, [ICoreWebView2SourceChangedEventArgs](icorewebview2sourcechangedeventargs.md) * args)
+> Public HRESULT [Invoke](#invoke)([ICoreWebView2](icorewebview2.md) * Sender; [ICoreWebView2NavigationStartingEventArgs](icorewebview2navigationstartingeventargs.md) * args)
 
