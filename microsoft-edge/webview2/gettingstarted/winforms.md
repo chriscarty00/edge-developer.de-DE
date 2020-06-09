@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, WinForms-apps, WinForms, Edge, CoreWebView2, Browser Control, Edge HTML, erste Schritte, erste Schritte, .net, Windows Forms
-ms.openlocfilehash: 1e23c96cee1e577560c2d26b96a53454533867dd
-ms.sourcegitcommit: c1b5fdd48d39d874a76c9b8f68309eb1b507fd0b
+ms.openlocfilehash: 20e3d152c8384e33551d75b5baa265fa7cb7f1ec
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "10695894"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10698225"
 ---
 # Erste Schritte mit WebView2 in Windows Forms-Apps (Preview)  
 

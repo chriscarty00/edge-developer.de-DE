@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, WPF-apps, WPF, Edge, CoreWebView2, Browser-Steuerelement, Edge-HTML, erste Schritte, erste Schritte, .net
-ms.openlocfilehash: ebff559a940c54dcea18dec58170bdee1e030e9b
-ms.sourcegitcommit: 799fe63d961a37ada455bb36ef3ef0d8076e70bb
+ms.openlocfilehash: a38af67e4ac9f7d70c698231882a6b479994fbfd
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "10685694"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10697973"
 ---
 # Erste Schritte mit WebView2 in WPF (Preview)  
 
@@ -328,7 +328,7 @@ Herzlichen Glückwunsch, Sie haben ihre erste WebView2-App erstellt!
 ## Nächste Schritte  
 
 * Auschecken des [WebView2Samples Repo](https://github.com/MicrosoftEdge/WebView2Samples) für ein umfassendes Beispiel für WebView2's-Funktionen
-* Checkout [-API-Referenz](../reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2) für detailliertere Informationen zu unseren APIs
+* Checkout [-API-Referenz](../reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2.md) für detailliertere Informationen zu unseren APIs
 * Auschecken einer Liste mit [WebView2-Ressourcen](../index.md#next-steps) , um mehr über WebView2 zu erfahren
 
 ## Kontakt mit dem Microsoft Edge WebView-Team  

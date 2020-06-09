@@ -8,14 +8,17 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: 5cbf358780d196168976fc0812c9845d0ec59b24
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 5f568c10f98a5375ffb0d0444b2b74b8a4e8c4c2
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10653824"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10697210"
 ---
 # Schnittstellen ICoreWebView2AcceleratorKeyPressedEventHandler 
+
+> [!NOTE]
+> Dieser Verweis kann für Versionen nach der SDK-Version 0.9.515 geändert oder nicht mehr zur Verfügung stehen. Die neueste API-Referenz finden Sie in der [WebView2-API-Referenz](../../../webview2-api-reference.md) .
 
 ```
 interface ICoreWebView2AcceleratorKeyPressedEventHandler
