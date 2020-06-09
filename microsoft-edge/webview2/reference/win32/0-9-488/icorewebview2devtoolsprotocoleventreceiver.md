@@ -8,40 +8,43 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: c83123876747cb085efd65ff013db87a501b189c
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 760919ba215f725cac10ad03d278d0a3e994286e
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10653978"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10698057"
 ---
-# <span data-ttu-id="788aa-104">Schnittstellen ICoreWebView2DevToolsProtocolEventReceiver</span><span class="sxs-lookup"><span data-stu-id="788aa-104">interface ICoreWebView2DevToolsProtocolEventReceiver</span></span> 
+# <span data-ttu-id="ff50a-104">Schnittstellen ICoreWebView2DevToolsProtocolEventReceiver</span><span class="sxs-lookup"><span data-stu-id="ff50a-104">interface ICoreWebView2DevToolsProtocolEventReceiver</span></span> 
+
+> [!NOTE]
+> <span data-ttu-id="ff50a-105">Dieser Verweis kann für Versionen nach der SDK-Version 0.9.515 geändert oder nicht mehr zur Verfügung stehen.</span><span class="sxs-lookup"><span data-stu-id="ff50a-105">This reference may be altered or unavailable for releases after SDK version 0.9.515.</span></span> <span data-ttu-id="ff50a-106">Die neueste API-Referenz finden Sie in der [WebView2-API-Referenz](../../../webview2-api-reference.md) .</span><span class="sxs-lookup"><span data-stu-id="ff50a-106">Please refer to [WebView2 API reference](../../../webview2-api-reference.md) for the latest API reference.</span></span>
 
 ```
 interface ICoreWebView2DevToolsProtocolEventReceiver
   : public IUnknown
 ```
 
-<span data-ttu-id="788aa-105">Ein Empfänger wird für ein bestimmtes devtools-Protokollereignis erstellt und ermöglicht Ihnen, dieses Ereignis zu abonnieren und abzubestellen.</span><span class="sxs-lookup"><span data-stu-id="788aa-105">A Receiver is created for a particular DevTools Protocol event and allows you to subscribe and unsubscribe from that event.</span></span>
+<span data-ttu-id="ff50a-107">Ein Empfänger wird für ein bestimmtes devtools-Protokollereignis erstellt und ermöglicht Ihnen, dieses Ereignis zu abonnieren und abzubestellen.</span><span class="sxs-lookup"><span data-stu-id="ff50a-107">A Receiver is created for a particular DevTools Protocol event and allows you to subscribe and unsubscribe from that event.</span></span>
 
-## <span data-ttu-id="788aa-106">Zusammenfassung</span><span class="sxs-lookup"><span data-stu-id="788aa-106">Summary</span></span>
+## <span data-ttu-id="ff50a-108">Zusammenfassung</span><span class="sxs-lookup"><span data-stu-id="ff50a-108">Summary</span></span>
 
- <span data-ttu-id="788aa-107">Member</span><span class="sxs-lookup"><span data-stu-id="788aa-107">Members</span></span>                        | <span data-ttu-id="788aa-108">Beschreibungen</span><span class="sxs-lookup"><span data-stu-id="788aa-108">Descriptions</span></span>
+ <span data-ttu-id="ff50a-109">Member</span><span class="sxs-lookup"><span data-stu-id="ff50a-109">Members</span></span>                        | <span data-ttu-id="ff50a-110">Beschreibungen</span><span class="sxs-lookup"><span data-stu-id="ff50a-110">Descriptions</span></span>
 --------------------------------|---------------------------------------------
-[<span data-ttu-id="788aa-109">add_DevToolsProtocolEventReceived</span><span class="sxs-lookup"><span data-stu-id="788aa-109">add_DevToolsProtocolEventReceived</span></span>](#add_devtoolsprotocoleventreceived) | <span data-ttu-id="788aa-110">Abonnieren eines DevToolsProtocol-Ereignisses</span><span class="sxs-lookup"><span data-stu-id="788aa-110">Subscribe to a DevToolsProtocol event.</span></span>
-[<span data-ttu-id="788aa-111">remove_DevToolsProtocolEventReceived</span><span class="sxs-lookup"><span data-stu-id="788aa-111">remove_DevToolsProtocolEventReceived</span></span>](#remove_devtoolsprotocoleventreceived) | <span data-ttu-id="788aa-112">Entfernen Sie einen Ereignishandler, der zuvor mit add_DevToolsProtocolEventReceived hinzugefügt wurde.</span><span class="sxs-lookup"><span data-stu-id="788aa-112">Remove an event handler previously added with add_DevToolsProtocolEventReceived.</span></span>
+[<span data-ttu-id="ff50a-111">add_DevToolsProtocolEventReceived</span><span class="sxs-lookup"><span data-stu-id="ff50a-111">add_DevToolsProtocolEventReceived</span></span>](#add_devtoolsprotocoleventreceived) | <span data-ttu-id="ff50a-112">Abonnieren eines DevToolsProtocol-Ereignisses</span><span class="sxs-lookup"><span data-stu-id="ff50a-112">Subscribe to a DevToolsProtocol event.</span></span>
+[<span data-ttu-id="ff50a-113">remove_DevToolsProtocolEventReceived</span><span class="sxs-lookup"><span data-stu-id="ff50a-113">remove_DevToolsProtocolEventReceived</span></span>](#remove_devtoolsprotocoleventreceived) | <span data-ttu-id="ff50a-114">Entfernen Sie einen Ereignishandler, der zuvor mit add_DevToolsProtocolEventReceived hinzugefügt wurde.</span><span class="sxs-lookup"><span data-stu-id="ff50a-114">Remove an event handler previously added with add_DevToolsProtocolEventReceived.</span></span>
 
-<span data-ttu-id="788aa-113">Abgerufen aus dem WebView-Objekt über GetDevToolsProtocolEventReceiver.</span><span class="sxs-lookup"><span data-stu-id="788aa-113">Obtained from the WebView object via GetDevToolsProtocolEventReceiver.</span></span>
+<span data-ttu-id="ff50a-115">Abgerufen aus dem WebView-Objekt über GetDevToolsProtocolEventReceiver.</span><span class="sxs-lookup"><span data-stu-id="ff50a-115">Obtained from the WebView object via GetDevToolsProtocolEventReceiver.</span></span>
 
-## <span data-ttu-id="788aa-114">Member</span><span class="sxs-lookup"><span data-stu-id="788aa-114">Members</span></span>
+## <span data-ttu-id="ff50a-116">Member</span><span class="sxs-lookup"><span data-stu-id="ff50a-116">Members</span></span>
 
-#### <span data-ttu-id="788aa-115">add_DevToolsProtocolEventReceived</span><span class="sxs-lookup"><span data-stu-id="788aa-115">add_DevToolsProtocolEventReceived</span></span> 
+#### <span data-ttu-id="ff50a-117">add_DevToolsProtocolEventReceived</span><span class="sxs-lookup"><span data-stu-id="ff50a-117">add_DevToolsProtocolEventReceived</span></span> 
 
-<span data-ttu-id="788aa-116">Abonnieren eines DevToolsProtocol-Ereignisses</span><span class="sxs-lookup"><span data-stu-id="788aa-116">Subscribe to a DevToolsProtocol event.</span></span>
+<span data-ttu-id="ff50a-118">Abonnieren eines DevToolsProtocol-Ereignisses</span><span class="sxs-lookup"><span data-stu-id="ff50a-118">Subscribe to a DevToolsProtocol event.</span></span>
 
-> <span data-ttu-id="788aa-117">öffentliche HRESULT- [add_DevToolsProtocolEventReceived](#add_devtoolsprotocoleventreceived)([ICoreWebView2DevToolsProtocolEventReceivedEventHandler](icorewebview2devtoolsprotocoleventreceivedeventhandler.md) \*-Handler, EventRegistrationToken \*-Token)</span><span class="sxs-lookup"><span data-stu-id="788aa-117">public HRESULT [add_DevToolsProtocolEventReceived](#add_devtoolsprotocoleventreceived)([ICoreWebView2DevToolsProtocolEventReceivedEventHandler](icorewebview2devtoolsprotocoleventreceivedeventhandler.md) \* handler, EventRegistrationToken \* token)</span></span>
+> <span data-ttu-id="ff50a-119">öffentliche HRESULT- [add_DevToolsProtocolEventReceived](#add_devtoolsprotocoleventreceived)([ICoreWebView2DevToolsProtocolEventReceivedEventHandler](icorewebview2devtoolsprotocoleventreceivedeventhandler.md) \*-Handler, EventRegistrationToken \*-Token)</span><span class="sxs-lookup"><span data-stu-id="ff50a-119">public HRESULT [add_DevToolsProtocolEventReceived](#add_devtoolsprotocoleventreceived)([ICoreWebView2DevToolsProtocolEventReceivedEventHandler](icorewebview2devtoolsprotocoleventreceivedeventhandler.md) \* handler, EventRegistrationToken \* token)</span></span>
 
-<span data-ttu-id="788aa-118">Die Invoke-Methode des Handlers wird aufgerufen, wenn das entsprechende DevToolsProtocol-Ereignis ausgelöst wird.</span><span class="sxs-lookup"><span data-stu-id="788aa-118">The handler's Invoke method will be called whenever the corresponding DevToolsProtocol event fires.</span></span> <span data-ttu-id="788aa-119">Invoke wird mit dem Ereignis args-Objekt aufgerufen, das das Parameter Objekt des devtools-Protokollereignisses als JSON-Zeichenfolge enthält.</span><span class="sxs-lookup"><span data-stu-id="788aa-119">Invoke will be called with the an event args object containing the DevTools Protocol event's parameter object as a JSON string.</span></span>
+<span data-ttu-id="ff50a-120">Die Invoke-Methode des Handlers wird aufgerufen, wenn das entsprechende DevToolsProtocol-Ereignis ausgelöst wird.</span><span class="sxs-lookup"><span data-stu-id="ff50a-120">The handler's Invoke method will be called whenever the corresponding DevToolsProtocol event fires.</span></span> <span data-ttu-id="ff50a-121">Invoke wird mit dem Ereignis args-Objekt aufgerufen, das das Parameter Objekt des devtools-Protokollereignisses als JSON-Zeichenfolge enthält.</span><span class="sxs-lookup"><span data-stu-id="ff50a-121">Invoke will be called with the an event args object containing the DevTools Protocol event's parameter object as a JSON string.</span></span>
 
 ```cpp
 // Prompt the user to name a CDP event, and then subscribe to that event.
@@ -88,9 +91,9 @@ void ScriptComponent::SubscribeToCdpEvent()
 }
 ```
 
-#### <span data-ttu-id="788aa-120">remove_DevToolsProtocolEventReceived</span><span class="sxs-lookup"><span data-stu-id="788aa-120">remove_DevToolsProtocolEventReceived</span></span> 
+#### <span data-ttu-id="ff50a-122">remove_DevToolsProtocolEventReceived</span><span class="sxs-lookup"><span data-stu-id="ff50a-122">remove_DevToolsProtocolEventReceived</span></span> 
 
-<span data-ttu-id="788aa-121">Entfernen Sie einen Ereignishandler, der zuvor mit add_DevToolsProtocolEventReceived hinzugefügt wurde.</span><span class="sxs-lookup"><span data-stu-id="788aa-121">Remove an event handler previously added with add_DevToolsProtocolEventReceived.</span></span>
+<span data-ttu-id="ff50a-123">Entfernen Sie einen Ereignishandler, der zuvor mit add_DevToolsProtocolEventReceived hinzugefügt wurde.</span><span class="sxs-lookup"><span data-stu-id="ff50a-123">Remove an event handler previously added with add_DevToolsProtocolEventReceived.</span></span>
 
-> <span data-ttu-id="788aa-122">Public HRESULT [remove_DevToolsProtocolEventReceived](#remove_devtoolsprotocoleventreceived)(EventRegistrationToken-Token)</span><span class="sxs-lookup"><span data-stu-id="788aa-122">public HRESULT [remove_DevToolsProtocolEventReceived](#remove_devtoolsprotocoleventreceived)(EventRegistrationToken token)</span></span>
+> <span data-ttu-id="ff50a-124">Public HRESULT [remove_DevToolsProtocolEventReceived](#remove_devtoolsprotocoleventreceived)(EventRegistrationToken-Token)</span><span class="sxs-lookup"><span data-stu-id="ff50a-124">public HRESULT [remove_DevToolsProtocolEventReceived](#remove_devtoolsprotocoleventreceived)(EventRegistrationToken token)</span></span>
 

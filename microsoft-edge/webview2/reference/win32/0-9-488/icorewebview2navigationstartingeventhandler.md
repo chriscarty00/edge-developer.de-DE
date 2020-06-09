@@ -8,33 +8,36 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: 81d3fe4620dcb439933d661d7b061819b5e07a00
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 719d3b170d26494282bcbdd2e3b870c4d9fd98a4
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10654018"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10697840"
 ---
-# <span data-ttu-id="37775-104">Schnittstellen ICoreWebView2NavigationStartingEventHandler</span><span class="sxs-lookup"><span data-stu-id="37775-104">interface ICoreWebView2NavigationStartingEventHandler</span></span> 
+# <span data-ttu-id="1e0b3-104">Schnittstellen ICoreWebView2NavigationStartingEventHandler</span><span class="sxs-lookup"><span data-stu-id="1e0b3-104">interface ICoreWebView2NavigationStartingEventHandler</span></span> 
+
+> [!NOTE]
+> <span data-ttu-id="1e0b3-105">Dieser Verweis kann für Versionen nach der SDK-Version 0.9.515 geändert oder nicht mehr zur Verfügung stehen.</span><span class="sxs-lookup"><span data-stu-id="1e0b3-105">This reference may be altered or unavailable for releases after SDK version 0.9.515.</span></span> <span data-ttu-id="1e0b3-106">Die neueste API-Referenz finden Sie in der [WebView2-API-Referenz](../../../webview2-api-reference.md) .</span><span class="sxs-lookup"><span data-stu-id="1e0b3-106">Please refer to [WebView2 API reference](../../../webview2-api-reference.md) for the latest API reference.</span></span>
 
 ```
 interface ICoreWebView2NavigationStartingEventHandler
   : public IUnknown
 ```
 
-<span data-ttu-id="37775-105">Der Aufrufer implementiert diese Schnittstelle, um das NavigationStarting-Ereignis zu empfangen.</span><span class="sxs-lookup"><span data-stu-id="37775-105">The caller implements this interface to receive the NavigationStarting event.</span></span>
+<span data-ttu-id="1e0b3-107">Der Aufrufer implementiert diese Schnittstelle, um das NavigationStarting-Ereignis zu empfangen.</span><span class="sxs-lookup"><span data-stu-id="1e0b3-107">The caller implements this interface to receive the NavigationStarting event.</span></span>
 
-## <span data-ttu-id="37775-106">Zusammenfassung</span><span class="sxs-lookup"><span data-stu-id="37775-106">Summary</span></span>
+## <span data-ttu-id="1e0b3-108">Zusammenfassung</span><span class="sxs-lookup"><span data-stu-id="1e0b3-108">Summary</span></span>
 
- <span data-ttu-id="37775-107">Member</span><span class="sxs-lookup"><span data-stu-id="37775-107">Members</span></span>                        | <span data-ttu-id="37775-108">Beschreibungen</span><span class="sxs-lookup"><span data-stu-id="37775-108">Descriptions</span></span>
+ <span data-ttu-id="1e0b3-109">Member</span><span class="sxs-lookup"><span data-stu-id="1e0b3-109">Members</span></span>                        | <span data-ttu-id="1e0b3-110">Beschreibungen</span><span class="sxs-lookup"><span data-stu-id="1e0b3-110">Descriptions</span></span>
 --------------------------------|---------------------------------------------
-[<span data-ttu-id="37775-109">Invoke</span><span class="sxs-lookup"><span data-stu-id="37775-109">Invoke</span></span>](#invoke) | <span data-ttu-id="37775-110">Wird aufgerufen, um dem Implementierer die Ereignis args für das entsprechende Ereignis bereitzustellen.</span><span class="sxs-lookup"><span data-stu-id="37775-110">Called to provide the implementer with the event args for the corresponding event.</span></span>
+[<span data-ttu-id="1e0b3-111">Invoke</span><span class="sxs-lookup"><span data-stu-id="1e0b3-111">Invoke</span></span>](#invoke) | <span data-ttu-id="1e0b3-112">Wird aufgerufen, um dem Implementierer die Ereignis args für das entsprechende Ereignis bereitzustellen.</span><span class="sxs-lookup"><span data-stu-id="1e0b3-112">Called to provide the implementer with the event args for the corresponding event.</span></span>
 
-## <span data-ttu-id="37775-111">Member</span><span class="sxs-lookup"><span data-stu-id="37775-111">Members</span></span>
+## <span data-ttu-id="1e0b3-113">Member</span><span class="sxs-lookup"><span data-stu-id="1e0b3-113">Members</span></span>
 
-#### <span data-ttu-id="37775-112">Invoke</span><span class="sxs-lookup"><span data-stu-id="37775-112">Invoke</span></span> 
+#### <span data-ttu-id="1e0b3-114">Invoke</span><span class="sxs-lookup"><span data-stu-id="1e0b3-114">Invoke</span></span> 
 
-<span data-ttu-id="37775-113">Wird aufgerufen, um dem Implementierer die Ereignis args für das entsprechende Ereignis bereitzustellen.</span><span class="sxs-lookup"><span data-stu-id="37775-113">Called to provide the implementer with the event args for the corresponding event.</span></span>
+<span data-ttu-id="1e0b3-115">Wird aufgerufen, um dem Implementierer die Ereignis args für das entsprechende Ereignis bereitzustellen.</span><span class="sxs-lookup"><span data-stu-id="1e0b3-115">Called to provide the implementer with the event args for the corresponding event.</span></span>
 
-> <span data-ttu-id="37775-114">Public HRESULT [Invoke](#invoke)([ICoreWebView2](icorewebview2.md) \* Sender; [ICoreWebView2NavigationStartingEventArgs](icorewebview2navigationstartingeventargs.md) \* args)</span><span class="sxs-lookup"><span data-stu-id="37775-114">public HRESULT [Invoke](#invoke)([ICoreWebView2](icorewebview2.md) \* sender, [ICoreWebView2NavigationStartingEventArgs](icorewebview2navigationstartingeventargs.md) \* args)</span></span>
+> <span data-ttu-id="1e0b3-116">Public HRESULT [Invoke](#invoke)([ICoreWebView2](icorewebview2.md) \* Sender; [ICoreWebView2NavigationStartingEventArgs](icorewebview2navigationstartingeventargs.md) \* args)</span><span class="sxs-lookup"><span data-stu-id="1e0b3-116">public HRESULT [Invoke](#invoke)([ICoreWebView2](icorewebview2.md) \* sender, [ICoreWebView2NavigationStartingEventArgs](icorewebview2navigationstartingeventargs.md) \* args)</span></span>
 
