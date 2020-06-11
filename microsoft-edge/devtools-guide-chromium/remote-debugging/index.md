@@ -2,16 +2,16 @@
 title: Erste Schritte mit dem Remote Debuggen von Android-Geräten
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/28/2020
+ms.date: 06/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: fc7450ba2b088eee8f4005216374980096cbb067
-ms.sourcegitcommit: ba9f0ed77e84174b03262b17e62c6a7e26cfeb3d
+ms.openlocfilehash: c77633c4844f0e576b7dff6574000a78c8c083da
+ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "10688155"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "10708536"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -29,7 +29,7 @@ ms.locfileid: "10688155"
 
 # Erste Schritte mit dem Remotedebuggen von Android-Geräten  
 
-Remote Debuggen von Liveinhalten auf einem Android-Gerät von Ihrem Windows-oder macOS-Computer aus.  Auf dieser Lernprogramm Seite Lernen Sie, wie Sie die folgenden Aktionen ausführen.  
+Remote Debuggen von Liveinhalten auf einem Android-Gerät von Ihrem Windows-oder macOS-Computer aus.  Auf der folgenden Lernprogramm Seite Lernen Sie, wie Sie die folgenden Aktionen ausführen.  
 
 *   Richten Sie Ihr Android-Gerät für das Remotedebuggen ein, und entdecken Sie es von Ihrem Entwicklungscomputer.  
 *   Überprüfen und Debuggen Sie Liveinhalte auf Ihrem Android-Gerät von Ihrem Entwicklungscomputer.  
@@ -41,11 +41,15 @@ Remote Debuggen von Liveinhalten auf einem Android-Gerät von Ihrem Windows-oder
 :::image-end:::  
 -->  
 
+> [!NOTE]
+> Remote Debuggen die Microsoft Edge-App auf IOS-Geräten wird derzeit nicht unterstützt.  Das folgende Handbuch ist speziell auf das Remotedebuggen von Microsoft Edge auf Android-Geräten ausgerichtet.
+> Wenn Sie über ein macOS-Gerät verfügen, folgen Sie dem [Brightcove-Debugging-Leitfaden][BrightcoveSupportDebuggingMobileDevices] , um Microsoft Edge auf einem IOS-Gerät mithilfe von Safari Remote zu debuggen.  Weitere Informationen zum Tool Web Inspector in Safari finden Sie unter [Safari-Webentwicklungstools][AppleDeveloperSafariTools].  
+
 ## Schritt 1: entdecken Ihres Android-Geräts  
 
-Der folgende Workflow funktioniert für die meisten Benutzer.  Informationen finden Sie unter [Problembehandlung: devtools erkennt das Android-Gerät nicht](#troubleshooting-devtools-is-not-detecting-the-android-device) , um weitere Hilfe zu erhalten.  
+Der folgende Workflow funktioniert für die meisten Benutzer.  Weitere Hilfe finden Sie unter [Problembehandlung: devtools erkennt den Abschnitt für Android-Geräte nicht](#troubleshooting-devtools-is-not-detecting-the-android-device) .  
 
-1.  Öffnen Sie den Bildschirm " **Entwickler Optionen** " auf Ihrem Android-Gerät.  Weitere Informationen finden Sie unter [Konfigurieren von Optionen für Entwickler auf einem Gerät](https://developer.android.com/studio/debug/dev-options.html).  
+1.  Öffnen Sie den Bildschirm " **Entwickler Optionen** " auf Ihrem Android-Gerät.  Weitere Informationen finden Sie unter [Konfigurieren von Optionen für Entwickler auf einem Gerät][AndroidDeveloperStudioDevOptions].  
 1.  Wählen Sie **USB-Debugging aktivieren**aus.  
 1.  Öffnen Sie auf Ihrem Entwicklungscomputer Microsoft Edge.  
 1.  Navigieren Sie zu der `edge://inspect` Seite in Microsoft Edge.  
@@ -60,7 +64,7 @@ Der folgende Workflow funktioniert für die meisten Benutzer.  Informationen fin
        Abbildung2.  Die Eingabeaufforderung " **USB-Debugging-Berechtigung zulassen** " auf einem Android-Gerät  
     :::image-end:::  
     
-1.  Wenn der Modellname Ihres Android-Geräts angezeigt wird, hat Microsoft Edge die Verbindung zu Ihrem Gerät erfolgreich hergestellt.  Fahren Sie mit [Schritt 2](#step-2-debug-content-on-your-android-device-from-your-development-machine)fort.  
+1.  Wenn der Modellname Ihres Android-Geräts angezeigt wird, hat Microsoft Edge die Verbindung zu Ihrem Gerät erfolgreich hergestellt.  Fahren Sie mit dem Abschnitt [Schritt 2](#step-2-debug-content-on-your-android-device-from-your-development-machine) fort.  
     
     <!--  
     :::image type="complex" source="../media/remote-debugging--unknown-device.msft.png" alt-text="The Remote Devices tab has successfully detected an unknown device that is pending authorization" lightbox="../media/remote-debugging--unknown-device.msft.png":::
@@ -78,8 +82,8 @@ Verwenden Sie die folgenden Tipps, um Ihnen bei der Problembehandlung der richti
 
 Verwenden Sie die folgenden Tipps, um zu überprüfen, ob die Software ordnungsgemäß eingerichtet ist.  
 
-*   Wenn auf Ihrem Entwicklungscomputer Windows ausgeführt wird, versuchen Sie, die USB-Treiber für Ihr Android-Gerät manuell zu installieren.  Weitere Informationen finden Sie unter [Installieren von OEM-USB-Treibern][AndroidUSBDrivers].  
-*   Einige Kombinationen von Windows-und Android-Geräten \ (insbesondere Samsung \) erfordern zusätzliche Einstellungen.  Weitere Informationen finden Sie unter [devtools Devices erkennt Device nicht, wenn es angeschlossen wird] [StackOverflowDevicesNotDetected].  
+*   Wenn auf Ihrem Entwicklungscomputer Windows ausgeführt wird, versuchen Sie, die USB-Treiber für Ihr Android-Gerät manuell zu installieren.  Weitere Informationen finden Sie unter [Installieren von OEM-USB-Treibern][AndroidDeveloperToolsOemUsb].  
+*   Einige Kombinationen von Windows-und Android-Geräten \ (insbesondere Samsung \) erfordern zusätzliche Einstellungen.  Weitere Informationen finden Sie unter [devtools Geräte erkennen das Gerät nicht, wenn es angeschlossen][Stackoverflow21925992]ist.  
 
 Verwenden Sie die folgenden Tipps, um Sie bei der Problembehandlung zu unterstützen, wenn Sie die Aufforderung zum **USB-Debugging** auf Ihrem Android-Gerät nicht anzeigen.  
 
@@ -89,10 +93,10 @@ Verwenden Sie die folgenden Tipps, um Sie bei der Problembehandlung zu unterstü
     > Möglicherweise wird die Eingabeaufforderung nicht angezeigt, wenn Ihre Android-oder Entwicklungscomputer Bildschirme gesperrt sind.  
 
 *   Aktualisieren der Anzeigeeinstellungen für Ihr Android-Gerät und Ihren Entwicklungscomputer, damit jeder nie in den Ruhezustand wechselt  
-*   Festlegen des USB-Modus für Android auf PTP  Weitere Informationen finden Sie unter [Galaxy S4 zeigt das Dialogfeld Autorisierungs-USB-Debugging nicht][StackExchangeGalaxyS4DoesNotShowDialogBox]an.  
+*   Festlegen des USB-Modus für Android auf PTP  Weitere Informationen finden Sie unter [Galaxy S4 zeigt das Dialogfeld Autorisierungs-USB-Debugging nicht][StackexchangeAndroid101933]an.  
 *   Wählen Sie auf Ihrem Android-Gerät auf dem Bildschirm **Entwickler Optionen** die Option **USB-Debugging-Berechtigungen widerrufen** aus, um den Status auf "neu" zurückzusetzen.  
 
-Wenn Sie eine Lösung finden, die auf dieser Seite nicht aufgeführt ist, oder wenn [devtools Devices Device nicht erkennt, wenn Sie angeschlossen werden] [StackOverflowDevicesNotDetected] beim Stapelüberlauf, fügen Sie Ihre Lösung zur Stapelüberlauf Frage hinzu.<!--, or [open an issue in the webfundamentals repository][GitHubWebFundamentalsNewIssue]-->!  
+Wenn Sie eine Lösung finden, die auf dieser Seite nicht aufgeführt ist, oder wenn in [devtools-Geräten das Gerät nicht erkannt][Stackoverflow21925992] wird, wenn es sich beim Stapelüberlauf befindet, fügen Sie Ihre Lösung zur Stapelüberlauf Frage hinzu.<!--, or [open an issue in the webfundamentals repository][GitHubWebFundamentalsNewIssue]-->!  
 
 ## Schritt 2: Debuggen von Inhalten auf Ihrem Android-Gerät auf dem Entwicklungscomputer  
 
@@ -149,21 +153,20 @@ Sie können mit dem Screencast wie folgt interagieren:
 [ImageSelectElementIcon]: /microsoft-edge/devtools-guide-chromium/media/select-element-icon.msft.png  
 [ImageToggleScreencastIcon]: /microsoft-edge/devtools-guide-chromium/media/toggle-screencast-icon.msft.png  
 
-<!--[ImageRemoteDebugging]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging--remote-debugging.msft.png "old Figure 1:  Remote Debugging lets you inspect a page running on an Android device from your development machine"  -->  
-<!--[ImageEdgeInspect]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging-edge-inspect-no-targets.msft.png "Figure 1: The edge://inspect page in Microsoft Edge"  -->  
-<!--[ImageAndroidPermissionPrompt]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging-android-permissions-prompt.msft.png "Figure 2: The Allow USB Debugging permission prompt on an Android device"  -->  
-<!--[ImageConnectedRemoteDevice]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging-edge-inspect-with-targets.msft.png "Figure 3: A connected remote device"  -->  
-<!-- [ImageReload]:  /microsoft-edge/devtools-guide-chromium/media/remote-debugging-edge-inspect-with-targets-buttons.msft.png "Figure 4: The buttons for focusing, reloading, or closing a tab"  -->  
-<!--[ImageUnknownDevice]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging--unknown-device.msft.png "old Figure 4:  The Remote Devices tab has successfully detected an unknown device that is pending authorization"  -->  
-
 <!-- links -->  
 
-[AndroidUSBDrivers]: https://developer.android.com/tools/extras/oem-usb.html "Installieren von OEM-USB-Treibern | Android-Entwickler"  
+[AndroidDeveloperStudioDevOptions]: https://developer.android.com/studio/debug/dev-options "Konfigurieren von Optionen für Entwickler auf einem Gerät | Android-Entwickler"  
+[AndroidDeveloperToolsOemUsb]: https://developer.android.com/tools/extras/oem-usb.html "Installieren von OEM-USB-Treibern | Android-Entwickler"  
+
+[AppleDeveloperSafariTools]: https://developer.apple.com/safari/tools "Safari-Webentwicklungs Tools | Apple-Entwickler"  
+
+[BrightcoveSupportDebuggingMobileDevices]: https://support.brightcove.com/debugging-mobile-devices "Debuggen auf mobilen Geräten | Brightcove-Support"  
 
 <!-- [GitHubWebFundamentalsNewIssue]: https://github.com/Alphabet/webfundamentals/issues/new?title=[Remote%20Debugging] "GitHub - Web Fundamentals - New Issue"  -->  
-[StackOverflowDevicesNotDetected]: https://stackoverflow.com/questions/21925992 "devtools-Geräte erkennen das Gerät nicht, wenn ein Stapelüberlauf eingesteckt wird"  
 
-[StackExchangeGalaxyS4DoesNotShowDialogBox]: https://android.stackexchange.com/questions/101933 "ADB-Android-Enthusiast Stack Exchange"  
+[StackexchangeAndroid101933]: https://android.stackexchange.com/questions/101933 "ADB-Android-Enthusiast Stack Exchange"  
+
+[Stackoverflow21925992]: https://stackoverflow.com/questions/21925992 "DevTools-Geräte erkennen das Gerät nicht, wenn ein eingesteckter Stapelüberlauf vorliegt"  
 
 > [!NOTE]
 > Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  

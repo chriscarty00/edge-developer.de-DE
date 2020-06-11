@@ -1,17 +1,17 @@
 ---
-title: Erste Schritte beim Anzeigen und Ändern von CSS
+title: Erste Schritte mit dem Anzeigen und Ändern von CSS
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/27/2020
+ms.date: 06/10/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: 85fceaa44b0143a82ca8f66ef8c63e1a9275dcd8
-ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+ms.openlocfilehash: 1780e80259d3ed28f6735e11099ad5796c381a95
+ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601817"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "10708583"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,39 +27,32 @@ ms.locfileid: "10601817"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Erste Schritte beim Anzeigen und Ändern von CSS   
-
-
+# Erste Schritte mit dem Anzeigen und Ändern von CSS  
 
 Führen Sie diese interaktiven Lernprogramme aus, um die Grundlagen für das Anzeigen und Ändern des CSS für eine Seite mit Microsoft Edge devtools zu erlernen.  
 
 ## Öffnen von CSS-Beispielen  
 
-1.  Halten `Control` Sie \ (Windows \) oder `Command` \ (macOS \) gedrückt, und klicken Sie auf **CSS-Beispiele** , um Sie in einem neuen Fenster zu öffnen.  
+1.  Halten `Control` Sie \ (Windows \) oder `Command` \ (macOS \) gedrückt, und wählen Sie **CSS-Beispiele** aus, um Sie in einem neuen Fenster zu öffnen.  
     
     [CSS-Beispiele][GlitchDevToolsCssExamples]  
-
-> [!NOTE]
-> Wenn Sie Ihr devtools-Fenster auf der rechten Seite Ihres Viewports [Andocken][DevToolsCustomizePlacement] möchten (wird in [Abbildung 1](#figure-1)angezeigt), klicken Sie auf **anpassen, und Steuern Sie devtools** `...` .  Wählen Sie im Dropdownmenü **anpassen und Steuern des devtools** im Abschnitt **Docking Seite** die Option **Dock to right**aus.  
     
-## Anzeigen des CSS für ein Element   
+    > [!NOTE]
+    > Wenn Sie Ihr devtools-Fenster auf der rechten Seite Ihres Viewports [Andocken][DevToolsCustomizePlacement] möchten (wird in der folgenden Abbildung angezeigt \), wählen Sie **anpassen und Steuern von devtools** aus `...` .  Wählen Sie im Dropdownmenü **anpassen und Steuern des devtools** im Abschnitt **Docking Seite** die Option **Dock to right**aus.  
+    
+## Anzeigen des CSS für ein Element  
 
 1.  [Öffnen Sie CSS-Beispiele](#open-css-examples).  
-1.  Klicken Sie mit der rechten Maustaste auf den `Inspect Me!` Text, und wählen Sie **prüfen**aus.  
+1.  Zeigen Sie auf den `Inspect Me!` Text, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie über **prüfen**aus.  
     1.  In devtools wird das Element im Panel **Elemente** auf der Registerkarte **DOM** -Struktur `Inspect Me!` hervorgehoben.  
         
-        > ##### Abbildung1  
-        > Das geprüfte Element ist in der **DOM-Struktur** hervorgehoben.  
-        > ![Das geprüfte Element ist in der DOM-Struktur hervorgehoben.][ImageInspect]  
+        :::image type="complex" source="../media/css-elements-inspect-me.msft.png" alt-text="Das geprüfte Element ist in der DOM-Struktur hervorgehoben." lightbox="../media/css-elements-inspect-me.msft.png":::
+           Abbildung 1: das geprüfte Element ist in der **DOM-Struktur** hervorgehoben  
+        :::image-end:::  
         
     1.  `Inspect Me!`Suchen Sie im Element den Wert des Attributs, `data-message` und kopieren Sie ihn.  
 1.  Geben Sie auf der Seite im **Wert von `data-message` :** TextBox den Wert ein.  
-1.  Klicken Sie mit der rechten Maustaste auf den `Inspect Me!` Text, und wählen Sie **prüfen**aus.  
-    
+1.  Zeigen Sie auf den `Inspect Me!` Text, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie über **prüfen**aus.  
     1.  Wählen Sie in devtools im Panel **Elemente** die Registerkarte **Formatvorlagen** aus.  
     1.  Auf der Registerkarte **Formatvorlagen** `Inspect Me!` ist das Element hervorgehoben.  
     1.  `Inspect Me!`Suchen Sie im Element die `aloha` Klassen Regel.  
@@ -69,13 +62,13 @@ Führen Sie diese interaktiven Lernprogramme aus, um die Grundlagen für das Anz
         
     1.  `aloha`Suchen Sie in der Klasse den Wert für die `padding` Formatvorlage, und kopieren Sie Sie.  
         
-        > ##### Abbildung2  
-        > Auf das ausgewählte Element angewendete CSS-Klassen wie `aloha` "werden auf der Registerkarte" **Formatvorlagen** "angezeigt  
-        > ![Auf das geprüfte Element angewendete CSS-Klassen werden auf der Registerkarte "Formatvorlagen" hervorgehoben.][ImageAloha]  
+        :::image type="complex" source="../media/css-elements-inspect-me-styles.msft.png" alt-text="Auf das geprüfte Element angewendete CSS-Klassen werden auf der Registerkarte "Formatvorlagen" hervorgehoben." lightbox="../media/css-elements-inspect-me-styles.msft.png":::
+           Abbildung 2: CSS-Klassen, die auf das ausgewählte Element angewendet werden, wie etwa `aloha` , werden auf der Registerkarte " **Formatvorlagen** " angezeigt  
+        :::image-end:::  
         
 1.  Geben Sie auf der Seite im **Wert von `padding` :** TextBox den Wert ein.  
 
-## Hinzufügen einer CSS-Deklaration zu einem Element   
+## Hinzufügen einer CSS-Deklaration zu einem Element  
 
 Verwenden Sie die Registerkarte **Formatvorlagen** , wenn Sie einem Element CSS-Deklarationen ändern oder hinzufügen möchten.  
 
@@ -83,16 +76,16 @@ Verwenden Sie die Registerkarte **Formatvorlagen** , wenn Sie einem Element CSS-
 > Führen Sie die [Ansicht CSS für ein Element](#view-the-css-for-an-element) -Lernprogramm aus, bevor Sie diesen Vorgang ausführen.  
 
 1.  [Öffnen Sie CSS-Beispiele](#open-css-examples).  
-1.  Klicken Sie mit der rechten Maustaste auf den `Add A Background Color To Me!` Text, und wählen Sie **prüfen**aus.  
-1.  Klicken Sie oben auf der `element.style` Registerkarte **Formatvorlagen** auf oben.  
+1.  Zeigen Sie auf den `Add A Background Color To Me!` Text, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie über **prüfen**aus.  
+1.  Wählen Sie am `element.style` oberen Rand der Registerkarte **Formatvorlagen** aus.  
 1.  Geben `background-color` Sie ein, und drücken Sie `Enter` .  
 1.  Geben `honeydew` Sie ein, und drücken Sie `Enter` .  In der **DOM-Struktur** sollten Sie sehen, dass eine Inlineformatvorlagen Deklaration auf das Element angewendet wurde.  
-
-> ##### Abbildung 3  
-> Die `background-color:honeydew` Deklaration wurde auf das Element über den `element.style` Abschnitt auf der Registerkarte " **Formatvorlagen** " angewendet.  
-> ![Hinzufügen einer CSS-Deklaration zum Element mithilfe der Registerkarte "Formatvorlagen"][ImageDeclaration]  
-
-## Hinzufügen einer CSS-Klasse zu einem Element   
+    
+    :::image type="complex" source="../media/css-elements-add-background-color-to-me-styles-p.msft.png" alt-text="Hinzufügen einer CSS-Deklaration zum Element mithilfe der Registerkarte "Formatvorlagen"" lightbox="../media/css-elements-add-background-color-to-me-styles-p.msft.png":::
+       Abbildung 3: die `background-color:honeydew` Deklaration wurde auf das Element über den `element.style` Abschnitt der Registerkarte " **Formatvorlagen** " angewendet  
+    :::image-end:::  
+    
+## Hinzufügen einer CSS-Klasse zu einem Element  
 
 Verwenden Sie die Registerkarte **Formatvorlagen** , um zu sehen, wie ein Element aussieht, wenn eine CSS-Klasse auf ein Element angewendet oder daraus entfernt wurde.  
 
@@ -100,15 +93,15 @@ Verwenden Sie die Registerkarte **Formatvorlagen** , um zu sehen, wie ein Elemen
 > Führen Sie die [Ansicht CSS für ein Element](#view-the-css-for-an-element) -Lernprogramm aus, bevor Sie diesen Vorgang ausführen.  
 
 1.  [Öffnen Sie CSS-Beispiele](#open-css-examples).  
-1.  Klicken Sie mit der rechten Maustaste auf das `Add A Class To Me!` Element, und wählen Sie **prüfen**aus.  
-1.  Klicken Sie auf **. CLS**.  DevTools zeigt ein Textfeld an, in dem Sie dem ausgewählten Elementklassen hinzufügen können.  
+1.  Zeigen Sie auf den `Add A Class To Me!` Text, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie über **prüfen**aus.  
+1.  Wählen Sie **CLS**aus.  DevTools zeigt ein Textfeld an, in dem Sie dem ausgewählten Elementklassen hinzufügen können.  
 1.  Geben `color_me` Sie in das Textfeld **neue Klasse hinzufügen** ein, und drücken Sie dann `Enter` .  Unterhalb des Textfelds **neue Klasse hinzufügen** wird ein Kontrollkästchen eingeblendet, in dem Sie die Klasse ein-und ausblenden können.  Wenn `Add A Class To Me!` auf das Element andere Klassen angewendet werden, können Sie auch von hier aus umschalten.  
-
-> ##### Abbildung4  
-> Die `color_me` Klasse wurde auf das Element mit dem Abschnitt " **. CLS** " auf der Registerkarte " **Formatvorlagen** " angewendet.  
-> ![Anwenden der color_me Klasse auf das Element][ImageApplyClass]  
-
-## Hinzufügen eines PseudoState zu einer Klasse   
+    
+    :::image type="complex" source="../media/css-elements-add-a-class-to-me-styles-cls.msft.png" alt-text="Anwenden der color_me Klasse auf das Element" lightbox="../media/css-elements-add-a-class-to-me-styles-cls.msft.png":::
+       Abbildung 4: die `color_me` Klasse wurde auf das Element mit dem Abschnitt " **. CLS** " auf der Registerkarte " **Formatvorlagen** " angewendet.  
+    :::image-end:::  
+    
+## Hinzufügen eines PseudoState zu einer Klasse  
 
 Verwenden Sie die Registerkarte **Formatvorlagen** , um eine CSS-PseudoState dauerhaft auf ein Element anzuwenden.  DevTools unterstützt `:active` , `:focus` , `:hover` und `:visited` .  
 
@@ -117,15 +110,15 @@ Verwenden Sie die Registerkarte **Formatvorlagen** , um eine CSS-PseudoState dau
 
 1.  [Öffnen Sie CSS-Beispiele](#open-css-examples).  
 1.  Zeigen Sie mit der Maus auf den `Hover Over Me!` Text.  Die Hintergrundfarbe ändert sich.  
-1.  Klicken Sie mit der rechten Maustaste auf den `Hover Over Me!` Text, und wählen Sie **prüfen**aus.  
-1.  Klicken Sie auf der Registerkarte **Formatvorlagen** auf **: Hov**.  
+1.  Zeigen Sie auf den `Hover Over Me!` Text, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie über **prüfen**aus.  
+1.  Wählen Sie auf der Registerkarte **Formatvorlagen** die Option **: Hov**aus.  
 1.  Aktivieren Sie das Kontrollkästchen **Hover** .  Die Hintergrundfarbe ändert sich wie zuvor, auch wenn Sie nicht tatsächlich auf das Element zeigen.  
-
-> ##### Abbildung5  
-> Umschalten des `:hover` PseudoState für ein Element  
-> ![Umschalten des Hover-PseudoState für ein Element][ImageSetHover]  
-
-## Ändern der Abmessungen eines Elements   
+    
+    :::image type="complex" source="../media/css-elements-hover-over-me-styles-hov-hover.msft.png" alt-text="Umschalten des Hover-PseudoState für ein Element" lightbox="../media/css-elements-hover-over-me-styles-hov-hover.msft.png":::
+       Abbildung 5: `:hover` Umschalten des PseudoState für ein Element  
+    :::image-end:::  
+    
+## Ändern der Abmessungen eines Elements  
 
 Verwenden Sie das interaktive Diagramm des **Feld Modells** auf der Registerkarte **Formatvorlagen** , um die Breite, Höhe, Abstand, Seitenrand oder die Rahmenlänge eines Elements zu ändern.  
 
@@ -133,7 +126,7 @@ Verwenden Sie das interaktive Diagramm des **Feld Modells** auf der Registerkart
 > Führen Sie die [Ansicht CSS für ein Element](#view-the-css-for-an-element) -Lernprogramm aus, bevor Sie diesen Vorgang ausführen.  
 
 1.  [Öffnen Sie CSS-Beispiele](#open-css-examples).  
-1.  Klicken Sie mit der rechten Maustaste auf das `Change My Margin!` Element, und wählen Sie **prüfen**aus.  
+1.  Zeigen Sie auf den `Change My Margin!` Text, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie über **prüfen**aus.  
 1.  Zeigen Sie im Diagramm **Feld Modell** auf der Registerkarte **Formatvorlagen** auf **Abstand**.  Der Abstand eines Elements wird im Viewport hervorgehoben.  
 
     > [!NOTE]
@@ -141,34 +134,57 @@ Verwenden Sie das interaktive Diagramm des **Feld Modells** auf der Registerkart
 
 1.  Doppelklicken Sie auf den linken Rand im **Feld Modell**, das derzeit den Wert Bedeutung hat, `-` dass das Element keinen linken Rand aufweist.  
 1.  Geben `100px` Sie ein, und drücken Sie `Enter` .  Das **Feld Modell** ist standardmäßig Pixel, akzeptiert aber auch andere Werte wie " `25%` oder" `10vw` .  
+    
+    :::row:::
+       :::column span="":::
+          :::image type="complex" source="../media/css-elements-change-my-margin-styles-padding.msft.png" alt-text="Bewegen des Mauszeigers über den Abstand des Elements" lightbox="../media/css-elements-change-my-margin-styles-padding.msft.png":::
+             Abbildung 6: Bewegen des Mauszeigers über den Abstand des Elements  
+          :::image-end:::  
+       :::column-end:::
+       :::column span="":::
+          :::image type="complex" source="../media/css-elements-change-my-margin-styles-margin-edit.msft.png" alt-text="Ändern des linken Rands des Elements" lightbox="../media/css-elements-change-my-margin-styles-margin-edit.msft.png":::
+             Abbildung 7: Ändern des linken Rands des Elements  
+          :::image-end:::  
+       :::column-end:::
+    :::row-end:::  
+    
+## Debuggen von medienabfragen  
 
-> ##### Abbildung6  
-> Bewegen des Mauszeigers über den Abstand des Elements  
-> ![Bewegen des Mauszeigers über den Abstand des Elements][ImageShowPadding]  
+[Medienabfragen][MDNUsingMediaGueries] stellen eine Möglichkeit dar, damit Ihr Web-Produkt auf Änderungen in den Konfigurationseinstellungen für jeden Benutzer reagiert.  Der bedeutendste Anwendungsfall besteht darin, dem Produkt je nach Größe des Viewports ein anderes CSS-Layout bereitzustellen.  Das Verwenden separater Layouts ermöglicht ein Layout mit einer Spalte für mobile Geräte und mehrspaltige Layouts, wenn mehr Bildschirm Auflagen zur Verfügung stehen.  
 
-> ##### Abbildung7  
-> Ändern des linken Rands des Elements  
-> ![Ändern des linken Rands des Elements][ImageChangeMargin]  
+Führen Sie die folgenden Schritte aus, wenn Sie die medienabfragen, die Sie in Ihrem CSS definiert haben, Debuggen oder testen möchten.  
 
- 
-
-
-
-<!-- image links -->  
-
-[ImageInspect]: /microsoft-edge/devtools-guide-chromium/media/css-elements-inspect-me.msft.png "Abbildung 1: das geprüfte Element ist in der DOM-Struktur hervorgehoben"  
-[ImageAloha]: /microsoft-edge/devtools-guide-chromium/media/css-elements-inspect-me-styles.msft.png "Abbildung 2: CSS-Klassen, die auf das geprüfte Element angewendet werden, werden auf der Registerkarte "Formatvorlagen" hervorgehoben."  
-[ImageDeclaration]: /microsoft-edge/devtools-guide-chromium/media/css-elements-add-background-color-to-me-styles-p.msft.png "Abbildung 3: Hinzufügen einer CSS-Deklaration zum Element mithilfe der Registerkarte "Formatvorlagen""  
-[ImageApplyClass]: /microsoft-edge/devtools-guide-chromium/media/css-elements-add-a-class-to-me-styles-cls.msft.png "Abbildung 4: Anwenden der color_me Klasse auf das Element"  
-[ImageSetHover]: /microsoft-edge/devtools-guide-chromium/media/css-elements-hover-over-me-styles-hov-hover.msft.png "Abbildung 5: Umschalten des Hover-PseudoState für ein Element"  
-[ImageShowPadding]: /microsoft-edge/devtools-guide-chromium/media/css-elements-change-my-margin-styles-padding.msft.png "Abbildung 6: Bewegen des Mauszeigers über den Abstand des Elements"  
-[ImageChangeMargin]: /microsoft-edge/devtools-guide-chromium/media/css-elements-change-my-margin-styles-margin-edit.msft.png "Abbildung 7: Ändern des linken Rands des Elements"  
-
+1.  Öffnen Sie die Entwicklertools, und wählen Sie in der oberen linken Ecke das Symbol " **Gerätesymbolleiste umschalten** " aus, oder drücken Sie `Ctrl` + `Shift` + `M` \ ( `Cmd` + `Shift` + `M` unter macOS \).  
+    
+    :::image type="complex" source="../media/css-elements-media-queries-open-device-toolbar.msft.png" alt-text="Öffnen der Gerätesymbolleiste" lightbox="../media/css-elements-media-queries-open-device-toolbar.msft.png":::
+       Abbildung 8: Öffnen der Gerätesymbolleiste  
+    :::image-end:::  
+    
+1.  Wenn die Gerätesymbolleiste geöffnet ist, wählen Sie das `...` Menü oben rechts aus, und wählen Sie **medienabfragen anzeigen**aus.  Oberhalb der Anzeige der Seite sollten farbige Balken angezeigt werden, die die verschiedenen medienabfragen darstellen.  
+    
+    :::image type="complex" source="../media/css-elements-media-queries-showing-mq.msft.png" alt-text="Anzeigen von medienabfragen in der Gerätesymbolleiste" lightbox="../media/css-elements-media-queries-showing-mq.msft.png":::
+       Abbildung 9: Anzeigen von medienabfragen in der Gerätesymbolleiste  
+    :::image-end:::  
+    
+1.  Zeigen Sie mit der Maus auf die Begrenzungen in den Balken, um die Werte der verschiedenen medienabfragen anzuzeigen. Wählen Sie die einzelnen Seiten aus, um die Größe der Webseite anzupassen.  
+    
+    :::image type="complex" source="../media/css-elements-media-queries-select-bar.msft.png" alt-text="Auswählen der medienabfrage aus der Vorschauleiste" lightbox="../media/css-elements-media-queries-select-bar.msft.png":::
+       Abbildung 10: Auswählen der medienabfrage aus der Vorschauleiste  
+    :::image-end:::  
+    
+1.  Um medienabfragen zu Debuggen und die CSS-Datei im Editor zu öffnen, bewegen Sie den `Sources` Mauszeiger auf einem beliebigen Balkensegment, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie aus `reveal in source code` .  
+    
+    :::image type="complex" source="../media/css-elements-media-queries-reveal-in-sources.msft.png" alt-text="Anzeigen von medienabfragen im Quellen-Editor" lightbox="../media/css-elements-media-queries-reveal-in-sources.msft.png":::
+       Abbildung 11: Anzeigen von medienabfragen im Quellen-Editor  
+    :::image-end:::  
+    
 <!-- links -->  
 
 [DevToolsCustomizePlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement "Ändern der Platzierung von Microsoft Edge devtools (abdocken, docken an den unteren Rand, docken nach links)"  
 
 [GlitchDevToolsCssExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/css/examples/ecma.html "CSS-Beispiele – Microsoft Edge (Chrom) devtools | Glitch"  
+
+[MDNUsingMediaGueries]: https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries "Verwenden von medienabfragen | MDN"  
 
 > [!NOTE]
 > Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
