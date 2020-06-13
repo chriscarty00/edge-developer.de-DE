@@ -2,16 +2,16 @@
 title: Anzeigen, bearbeiten und Löschen von Cookies mit Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/10/2020
+ms.date: 06/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: 4bfd99a36a6a3f8fdf8dbd7787bd54cde87d79da
-ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
+ms.openlocfilehash: ecd8df7058bca4535d1f7da15ce1d500ef85aefe
+ms.sourcegitcommit: a34858dd3260967ba9699842fa839c7a94775fe4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "10708939"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "10710371"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -59,7 +59,7 @@ Die Tabelle " **Cookies** " enthält die folgenden Felder.
 *   **Http**.  Ist "true", gibt dieses Feld an, dass das Cookie nur über HTTP verwendet und JavaScript-Änderungen nicht zulässig sind.  Siehe [HttpOnly-Cookies][MDNHTTPCookiesSecure].  
 *   **Sicher**.  Ist "true", gibt dieses Feld an, dass das Cookie nur über eine sichere HTTPS-Verbindung an den Server gesendet werden muss.  Siehe [sichere Cookies][MDNHTTPCookiesSecure].  
 *   **SameSite**.  Enthält `strict` oder `lax` Wenn das Cookie das experimentelle [SameSite][MDNHTTPCookiesSamesite] -Attribut verwendet.  
-*   **Priorität**.  Contains `low` , `medium` \ (Standard \) oder `high` Wenn das Cookie das Attribut "abgewertete [Cookies][ChromiumIssue232693] " verwendet.
+*   **Priorität**.  Contains `low` , `medium` \ (Standard \) oder `high` Wenn das Cookie das veraltete [Cookie Priority][ChromiumIssue232693] -Attribut verwendet.
 
 ## Filtern von Cookies  
 

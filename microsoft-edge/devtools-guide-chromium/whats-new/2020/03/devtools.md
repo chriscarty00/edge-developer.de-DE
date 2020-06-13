@@ -2,16 +2,16 @@
 title: Neuerungen in devtools (Microsoft Edge 83)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/10/2020
+ms.date: 06/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: 7651430c581346d1f140f0a5974b8aa9bb809204
-ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
+ms.openlocfilehash: ab3df52708febd4928c7e4ac41a77713370b9fa1
+ms.sourcegitcommit: a34858dd3260967ba9699842fa839c7a94775fe4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "10709024"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "10710378"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -157,7 +157,7 @@ Emulieren Sie Gebietsschemas, indem Sie einen Speicherort im **Sensor**  >  **St
 *   Der [`Accept-Language`][MDNAcceptLanguage] HTTP-Anforderungsheader  
 
 > [!NOTE]
-> Updates für `navigator.language` und `navigator.languages` werden nicht sofort angezeigt, sondern erst nach der nächsten Navigation oder beim erneuten Laden der Seite.  Änderungen am `Accept-Language` http-Header werden nur für nachfolgende Anforderungen wiedergegeben.  
+> Updates für `navigator.language` und `navigator.languages` werden nicht sofort, sondern nur nach der nächsten Navigation oder Seitenaktualisierung angezeigt.  Änderungen am `Accept-Language` http-Header werden nur für nachfolgende Anforderungen wiedergegeben.  
 
 :::image type="complex" source="../../media/2020/03/locale.msft.png" alt-text="Emulieren eines Gebietsschemas" lightbox="../../media/2020/03/locale.msft.png":::
    Abbildung 10: Emulieren eines Gebietsschemas  

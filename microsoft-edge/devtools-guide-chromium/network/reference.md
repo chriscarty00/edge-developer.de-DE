@@ -2,16 +2,16 @@
 title: Netzwerkanalyse Referenz
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/10/2020
+ms.date: 06/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: 7e7ac287e116e28773a42456c21ec4ba07647f04
-ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
+ms.openlocfilehash: c9d205fb2cc478e9c3f20458f461f004035e85e8
+ms.sourcegitcommit: a34858dd3260967ba9699842fa839c7a94775fe4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "10709263"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "10710399"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -73,7 +73,7 @@ Erfassen Sie Screenshots, um zu analysieren, was die Benutzer sehen, während Si
 
 Wenn Sie Screenshots aktivieren möchten, wählen Sie **Netzwerkeinstellungen** und dann auf der Registerkarte **Netzwerk** das Kontrollkästchen **Screenshots aufzeichnen** aus.  
 
-Laden Sie die Seite neu, während sich das **Netzwerk** Panel im Fokus befindet, um Screenshots zu erfassen.  
+Aktualisieren Sie die Seite, während sich das **Netzwerk** Panel im Fokus befindet, um Screenshots zu erfassen.  
 
 Nachdem Sie einen Screenshot aufgezeichnet haben, interagieren Sie mit ihm auf die folgende Weise.  
 
@@ -470,7 +470,8 @@ Weitere Informationen zu den einzelnen Phasen, die auf der Registerkarte **Anzei
 *   **Anfrage gesendet**.  Die Anfrage wird gesendet.  
 *   **ServiceWorker-Vorbereitung**.  Der Browser startet den Dienstmitarbeiter.  
 *   **Anforderung an ServiceWorker**.  Die Anforderung wird an den Dienstmitarbeiter gesendet.  
-*   **Waiting \ (TTFB \)**.  Der Browser wartet auf das erste Byte einer Antwort.  TTFB steht für Time to First Byte.  Diese Anzeigedauer umfasst eine Roundtrip-Wartezeit und den Zeitpunkt, zu dem der Server die Antwort vorbereitet hat.  
+*   **Waiting \ (TTFB \)**.  Der Browser wartet auf das erste Byte einer Antwort.  
+  TTFB steht für Time to First Byte.  Diese Anzeigedauer umfasst eine Roundtrip-Wartezeit und den Zeitpunkt, zu dem der Server die Antwort vorbereitet hat.  
 *   **Inhalt herunterladen**.  Der Browser empfängt die Antwort.  
 *   **Push wird empfangen**.  Der Browser empfängt Daten für diese Antwort über http/2 Server Push.  
 *   **Lese Push**.  Der Browser liest die zuvor empfangenen lokalen Daten.  

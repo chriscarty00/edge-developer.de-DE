@@ -2,16 +2,16 @@
 title: Erste Schritte mit dem Anzeigen und Ändern von CSS
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/10/2020
+ms.date: 06/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: 1780e80259d3ed28f6735e11099ad5796c381a95
-ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
+ms.openlocfilehash: 346145a7deb9e8ac951ed0578a5060da72817463
+ms.sourcegitcommit: a34858dd3260967ba9699842fa839c7a94775fe4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "10708583"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "10710385"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -38,7 +38,7 @@ Führen Sie diese interaktiven Lernprogramme aus, um die Grundlagen für das Anz
     [CSS-Beispiele][GlitchDevToolsCssExamples]  
     
     > [!NOTE]
-    > Wenn Sie Ihr devtools-Fenster auf der rechten Seite Ihres Viewports [Andocken][DevToolsCustomizePlacement] möchten (wird in der folgenden Abbildung angezeigt \), wählen Sie **anpassen und Steuern von devtools** aus `...` .  Wählen Sie im Dropdownmenü **anpassen und Steuern des devtools** im Abschnitt **Docking Seite** die Option **Dock to right**aus.  
+    > Wenn Sie Ihr devtools-Fenster auf der rechten Seite Ihres Viewports [Andocken][DevToolsCustomizePlacement] möchten (in der folgenden Abbildung dargestellt \), wählen Sie **anpassen und Steuer devtools** `...` .  Wählen Sie im Dropdownmenü **anpassen und Steuern des devtools** im Abschnitt **Docking Seite** die Option **Dock to right**aus.  
     
 ## Anzeigen des CSS für ein Element  
 
