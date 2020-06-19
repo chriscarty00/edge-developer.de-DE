@@ -3,17 +3,17 @@ description: Hosten von Webinhalten in ihrer Win32-App mit dem Microsoft Edge We
 title: Microsoft Edge-WebView2 für Win32-apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/05/2020
+ms.date: 06/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: af8df8ff67a0fbe7fd4ec9308b1562b9ef987933
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.openlocfilehash: 03c943c87f07344ab4e3d1a7c707a993a795cdba
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10698929"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10751849"
 ---
 # Schnittstellen ICoreWebView2NewWindowRequestedEventArgs 
 
@@ -52,6 +52,8 @@ IsUserInitiated ist wahr, wenn die neue Fenster Anforderung durch eine Benutzerg
 
 > Public HRESULT [get_IsUserInitiated](#get_isuserinitiated)(bool * IsUserInitiated)
 
+WebView2-Steuerelemente können Popupfenster anzeigen, da der Popupblocker deaktiviert ist. Wenn Sie verhindern möchten, dass nicht vom Benutzer initiierte Popup-Fenster angezeigt werden, verwenden Sie `get_IsUserInitiated` .
+
 #### get_NewWindow 
 
 Ruft das neue Fenster ab.
@@ -87,4 +89,3 @@ Legt eine WebView als Ergebnis des NewWindowRequest fest.
 > öffentliche HRESULT- [put_NewWindow](#put_newwindow)([ICoreWebView2](icorewebview2.md) *-Fenster)
 
 Die Ziel-WebView sollte nicht navigiert werden. Wenn das Fenster "Fenster" eingestellt ist, wird das Fenster der obersten Ebene als geöffnetes WindowProxy zurückgegeben.
-

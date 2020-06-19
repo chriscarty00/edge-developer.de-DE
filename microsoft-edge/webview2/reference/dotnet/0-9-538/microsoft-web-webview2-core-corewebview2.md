@@ -3,22 +3,22 @@ description: Hosten von Webinhalten in ihrer Win32-App mit dem Microsoft Edge We
 title: Microsoft Edge-WebView2 für Win32-apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/05/2020
+ms.date: 06/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: 4512c382afaa1bd5e44489f9512e94b5db1de82a
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.openlocfilehash: 7d3c568c62475adb42589100c3fb6ccec6fecd49
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10698910"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10751877"
 ---
 # Microsoft. Web. WebView2. Core. CoreWebView2 Klasse 
 
 Namespace: Microsoft. Web. WebView2. Core \
-Assembly: Microsoft. Web. WebView2. Core. dll
+Assembly: Microsoft.Web.WebView2.Core.dll
 
 WebView2 ermöglicht Ihnen das Hosten von Webinhalten mithilfe der neuesten Edge-Webbrowser Technologie.
 
@@ -66,7 +66,7 @@ WebView2 ermöglicht Ihnen das Hosten von Webinhalten mithilfe der neuesten Edge
 [PostWebMessageAsString](#postwebmessageasstring) | Dies ist ein Helfer zum Posten einer Nachricht, bei der es sich um eine einfache Zeichenfolge und nicht um eine JSON-Zeichenfolgendarstellung eines JavaScript-Objekts handelt.
 [Laden](#reload) | Laden Sie die aktuelle Seite neu.
 [RemoveHostObjectFromScript](#removehostobjectfromscript) | Entfernen Sie das vom Namen angegebene Hostobjekt, damit es nicht mehr über JavaScript-Code in der WebView zugänglich ist.
-[RemoveScriptToExecuteOnDocumentCreated](#removescripttoexecuteondocumentcreated) | Entfernen Sie das entsprechende JavaScript, das über AddScriptToExecuteOnDocumentCreated hinzugefügt wurde.
+[RemoveScriptToExecuteOnDocumentCreated](#removescripttoexecuteondocumentcreated) | Entfernen Sie das entsprechende JavaScript, das über AddScriptToExecuteOnDocumentCreated mit der angegebenen Skript-ID hinzugefügt wurde.
 [RemoveWebResourceRequestedFilter](#removewebresourcerequestedfilter) | Entfernt einen übereinstimmenden Webressourcen Filter, der zuvor für das WebResourceRequested-Ereignis hinzugefügt wurde.
 [Stop](#stop) | Beenden Sie alle Navigations-und ausstehenden Ressourcen Abrufe.
 
@@ -286,6 +286,9 @@ Fügen Sie das bereitgestellte JavaScript einer Liste von Skripts hinzu, die aus
 
 > Public Async Task< String > [AddScriptToExecuteOnDocumentCreatedAsync](#addscripttoexecuteondocumentcreatedasync)(String javaScript)
 
+##### Gibt
+Gibt eine Skript-ID zurück, die beim Aufrufen von [RemoveScriptToExecuteOnDocumentCreated](#removescripttoexecuteondocumentcreated)übergeben werden kann. 
+
 Das eingefügte Skript gilt für alle zukünftigen Dokumente und untergeordneten Frame-Navigationselemente auf oberster Ebene, bis Sie mit RemoveScriptToExecuteOnDocumentCreated entfernt werden. Diese wird asynchron angewendet, und Sie müssen warten, bis der vervollständigungshandler ausgeführt wird, bevor Sie sicher sein können, dass das Skript für zukünftige Navigationen ausgeführt werden kann.
 
 Beachten Sie, dass sich dies auf das hier ausgeführte Skript auswirkt, wenn ein HTML-Dokument über Sandbox [-Eigenschaften oder über den](https://developer.mozilla.org/docs/Web/HTML/Element/iframe#attr-sandbox) [Content-Security-Policy-HTTP-Header](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy) eine Art Sandbox hat. Wenn also beispielsweise das Schlüsselwort "Allow-modals" nicht festgesetzt ist, werden Aufrufe der `alert` Funktion ignoriert.
@@ -304,6 +307,9 @@ Rufen Sie eine asynchrone DevToolsProtocol-Methode auf.
 
 > Public Async Task< String > [CallDevToolsProtocolMethodAsync](#calldevtoolsprotocolmethodasync)(String MethodName, String parametersAsJson)
 
+##### Gibt
+Eine JSON-Zeichenfolge, die das Rückgabeobjekt der Methode darstellt.
+
 Eine Liste und eine Beschreibung der verfügbaren Methoden finden Sie im [devtools-Protokoll-Viewer](https://aka.ms/DevToolsProtocolDocs) . Der MethodName-Parameter ist der vollständige Name der Methode im Format `{domain}.{method}` . Der parametersAsJson-Parameter ist eine JSON-formatierte Zeichenfolge, die die Parameter für die entsprechende Methode enthält. Die Invoke-Methode des Handlers wird aufgerufen, wenn die Methode asynchron abgeschlossen wird. Invoke wird mit dem Rückgabeobjekt der Methode als JSON-Zeichenfolge aufgerufen.
 
 #### CapturePreviewAsync 
@@ -320,7 +326,10 @@ Führen Sie JavaScript-Code aus dem JavaScript-Parameter im aktuellen Dokument d
 
 > Public Async Task< String > [ExecuteScriptAsync](#executescriptasync)(String javaScript)
 
-Dies wird asynchron ausgeführt, und wenn ein Handler im ExecuteScriptCompletedHandler-Parameter bereitgestellt wird, wird die Invoke-Methode mit dem Ergebnis der Auswertung des bereitgestellten JavaScript aufgerufen. Der Ergebniswert ist eine JSON-codierte Zeichenfolge. Wenn das Ergebnis undefiniert ist, einen Referenz Zyklus enthält oder in JSON nicht codiert werden kann, wird der JSON-NULL-Wert als Zeichenfolge "Null" zurückgegeben. Beachten Sie, dass eine Funktion, die keinen expliziten Rückgabewert aufweist, undefined zurückgibt. Wenn das ausgeführte Skript eine nicht behandelte Ausnahme auslöst, ist das Ergebnis auch "Null". Diese Methode wird asynchron angewendet. Wenn die Methode nach dem NavigationStarting-Ereignis während einer Navigation aufgerufen wird, wird das Skript beim Laden des Skripts im neuen Dokument ausgeführt, und zwar um den Zeitpunkt, zu dem ContentLoading ausgelöst wird. ExecuteScript funktioniert auch dann, wenn IsScriptEnabled auf "false" festgelegt ist.
+##### Gibt
+Gibt eine JSON-codierte Zeichenfolge zurück, die das Ergebnis der Ausführung des bereitgestellten JavaScript darstellt. 
+
+Diese Methode führt das bereitgestellte JavaScript asynchron aus und gibt das Ergebnis des bereitgestellten JavaScript zurück. Wenn das Ergebnis des bereitgestellten Javascripts `undefined` einen Referenz Zyklus enthält oder in JSON nicht codiert werden kann, wird die Zeichenfolge "Null" zurückgegeben. Wenn eine aufgerufene Funktion im bereitgestellten JavaScript keinen expliziten Rückgabewert aufweist, `undefined` wird zurückgegeben. Wenn das bereitgestellte JavaScript eine nicht behandelte Ausnahme auslöst, wird "Null" zurückgegeben. Wenn diese Methode nach einem Ereignis aufgerufen wird `NavigationStarting` , wird das bereitgestellte JavaScript beim Laden des neuen Dokuments um die gleiche Zeit ausgeführt, die `ContentLoading` ausgelöst wird. `ExecuteScript` funktioniert auch dann, wenn " `IsScriptEnabled` auf" gesetzt ist `FALSE` .
 
 #### GetDevToolsProtocolEventReceiver 
 
@@ -408,7 +417,7 @@ Während neue Zugriffsversuche verweigert werden, wenn das Objekt bereits durch 
 
 #### RemoveScriptToExecuteOnDocumentCreated 
 
-Entfernen Sie das entsprechende JavaScript, das über AddScriptToExecuteOnDocumentCreated hinzugefügt wurde.
+Entfernen Sie das entsprechende JavaScript, das über AddScriptToExecuteOnDocumentCreated mit der angegebenen Skript-ID hinzugefügt wurde.
 
 > publicvoid [RemoveScriptToExecuteOnDocumentCreated](#removescripttoexecuteondocumentcreated)(String-ID)
 
@@ -427,4 +436,3 @@ Beenden Sie alle Navigations-und ausstehenden Ressourcen Abrufe.
 > öffentlicher void- [Stopp](#stop)()
 
 Skripts werden nicht angehalten.
-

@@ -3,17 +3,17 @@ description: Hosten von Webinhalten in ihrer Win32-App mit dem Microsoft Edge We
 title: Microsoft Edge-WebView2 für Win32-apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/05/2020
+ms.date: 06/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: 4f920b5faf79532e81728675bf56218549914e3d
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.openlocfilehash: 2fdd047068ec761e1fcd3d3031d4c6c911a5b1ef
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10698933"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752255"
 ---
 # Globals 
 
@@ -50,7 +50,7 @@ Dies entspricht dem Aufruf von CreateCoreWebView2EnvironmentWithOptions mit null
 
 DLL-Export zum Erstellen einer WebView2-Umgebung mit einer benutzerdefinierten Version von Edge, Benutzerdatenverzeichnis und/oder zusätzlichen Optionen.
 
-browserExecutableFolder ist der relative Pfad zu dem Ordner, der den eingebetteten Edge enthält. Der eingebettete Edge kann abgerufen werden, indem die Version mit dem Namen Folder eines installierten Edge-Ordners wie 73.0.52.0-Unterordner eines installierten 73.0.52.0-Edge kopiert wird. Der Ordner sollte über msedge. exe, msedge. dll usw. verfügen. Verwenden Sie NULL oder eine leere Zeichenfolge für browserExecutableFolder, um WebView mithilfe von Edge auf dem Computer zu erstellen, in diesem Fall versucht die API, eine kompatible Version von Edge zu finden, die auf dem Computer installiert ist, entsprechend der Kanaleinstellung, die versucht, die erste pro Benutzerinstallation und dann pro Computerinstallation zu finden.
+Verwenden Sie `browserExecutableFolder` diese Option, um anzugeben, ob WebView2-Steuerelemente eine eingebettete Version von Edge oder die installierte Version von Edge verwenden, die auf einem Clientcomputer vorhanden ist. Wenn Sie eine eingebettete Version von Edge verwenden möchten, übergeben Sie den relativen Pfad des Ordners, in dem sich die eingebettete Version von Edge befindet `browserExecutableFolder` . Wenn Sie die eingebettete Version von Edge abrufen möchten, kopieren Sie den Namen der Version des Ordners aus Ihrer installierten Edge-Version auf einem Clientcomputer. Kopieren Sie beispielsweise den `73.0.52.0` Ordner aus dem Ordner, in dem Edge Version 73.0.52.0 installiert war. Stellen Sie sicher, dass der Ordner sowohl die **msedgewebview2.exe** als auch **msedge.dll** Dateien enthält. Zum Erstellen von WebView2-Steuerelementen, die die installierte Version von Edge verwenden, die auf Clientcomputern vorhanden ist, übergeben Sie eine NULL oder eine leere Zeichenfolge an `browserExecutableFolder` . In diesem Szenario versucht die API, eine kompatible Version von Edge zu finden, die auf dem Clientcomputer (zuerst auf Computerebene und dann pro Benutzer) unter Verwendung der ausgewählten Kanaleinstellung installiert ist. 
 
 Die standardmäßige Kanal Suchreihenfolge ist stable, Beta, dev und Canary. Wenn eine WEBVIEW2_RELEASE_CHANNEL_PREFERENCE Umgebungsvariable oder ein anwendbarer releaseChannelPreference-Registrierungswert mit dem Wert 1 überschrieben wird, wird die Kanal Suchreihenfolge umgekehrt.
 
@@ -87,7 +87,7 @@ WEBVIEW2_PIPE_FOR_SCRIPT_DEBUGGER
 
 Wenn Sie mit einem nicht leeren Wert gefunden wird, deutet dies darauf hin, dass die WebView unter einem Skriptdebugger gestartet wird, der auch Hostanwendungen unterstützt, die mehrere Webansichten verwenden. Der Wert wird als Bezeichner für eine Named Pipe verwendet, die geöffnet und geschrieben wird, wenn eine neue WebView von der Hostanwendung erstellt wird. Die Nutzlast entspricht der des JSON-Ziels "Remotedebuggen-Port" und kann vom externen Debugger zum Anfügen an eine bestimmte WebView-Instanz verwendet werden. Das Format der vom Debugger erstellten Pipe sollte wie folgt lauten: `\\.\pipe\WebView2\Debugger\{app_name}\{pipe_name}`
 
-* `{app_name}` ist der Dateiname der Host-Anwendung exe, beispielsweise WebView2Example. exe.
+* `{app_name}` ist der Dateiname der Host-Anwendung exe, beispielsweise WebView2Example.exe
 
 * `{pipe_name}` ist der Wert, der für WEBVIEW2_PIPE_FOR_SCRIPT_DEBUGGER gesetzt ist.
 
@@ -138,4 +138,3 @@ Als erstes überprüfen wir root als HKLM und dann HKCU. Die Anwendungs-ID des a
 Rufen Sie die Browser Versionsinformationen einschließlich des Kanal namens ab, wenn es sich nicht um den stabilen Kanal oder den eingebetteten Edge handelt.
 
 Kanalnamen sind Beta, dev und Canary. Wenn für die browserExecutableFolder oder die Kanaleinstellung eine Überschreibung vorhanden ist, wird die Außerkraftsetzung verwendet. Wenn keine Überschreibung vorhanden ist, wird der an GetAvailableCoreWebView2BrowserVersionString übergebene Parameter verwendet.
-

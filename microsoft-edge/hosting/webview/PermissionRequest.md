@@ -3,22 +3,24 @@ description: Enthält Informationen zu einer Berechtigungsanforderung
 title: PermissionRequest-Objekt
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/15/2018
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: WebView, Windows 10-apps, UWP, Edge
-ms.openlocfilehash: 023f19170e7b5cdb52a1de9d5d4d7c755c89edbe
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: c769bf122c3ca116d5783b73d0ff4f183d2cd52d
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10567156"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752116"
 ---
-# PermissionRequest-Objekt
+# PermissionRequest-Objekt  
 
-Enthält Informationen zu einer Berechtigungsanforderung. Dieses Objekt ist über die permissionRequest-Eigenschaft der Ereignisargumente aus dem [MSWebViewPermissionRequested](../webview.md#mswebviewpermissionrequested) -WebView-Ereignis verfügbar.
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-```js
+Enthält Informationen zu einer Berechtigungsanforderung. Dieses Objekt ist über die permissionRequest-Eigenschaft der Ereignisargumente aus dem [MSWebViewPermissionRequested](../webview.md#mswebviewpermissionrequested) -WebView-Ereignis verfügbar.  
+
+```javascript
 webview.addEventListener("MSWebViewPermissionRequested", permissionRequestedEventArgs => {
     const permissionRequest = permissionRequestedEventArgs.permissionRequest;
     switch (permissionRequest.type) {
@@ -54,92 +56,92 @@ webview.addEventListener("MSWebViewPermissionRequested", permissionRequestedEven
             break;
     }
 });
-```
+```  
 
-## Methoden
+## Methoden  
 
-### ermöglichen
+### ermöglichen  
 
-Ermöglicht die Genehmigungsanforderung.
+Ermöglicht die Genehmigungsanforderung.  
 
-#### Parameter
+#### Parameter  
 
-Diese Methode hat keine Parameter.
+Diese Methode hat keine Parameter.  
 
-#### Rückgabewert
+#### Rückgabewert  
 
-Diese Methode gibt keinen Wert zurück.
+Diese Methode gibt keinen Wert zurück.  
 
-### zurückstellen
+### zurückstellen  
 
-Wenn Sie eine PermissionRequest nicht synchron zulassen oder ablehnen möchten, benötigen Sie Zeit für die Interaktion mit dem Benutzer oder das Ausführen einer anderen asynchronen Aktion, indem Sie auf der PermissionRequest den Wert zurücksetzen () aufrufen. Das PermissionRequest wird nun als DeferredPermissionRequest von getDeferredPermissionRequests und getDeferredPermissionRequestById zur Verfügung stehen. Sie können den aktuellen PermissionRequest mit dem entsprechenden DeferredPermissionRequest über die entsprechende ID-Eigenschaft korrelieren.
+Wenn Sie eine PermissionRequest nicht synchron zulassen oder ablehnen möchten, benötigen Sie Zeit für die Interaktion mit dem Benutzer oder das Ausführen einer anderen asynchronen Aktion, indem Sie auf der PermissionRequest den Wert zurücksetzen () aufrufen.  Das PermissionRequest wird nun als DeferredPermissionRequest von getDeferredPermissionRequests und getDeferredPermissionRequestById zur Verfügung stehen.  Sie können den aktuellen PermissionRequest mit dem entsprechenden DeferredPermissionRequest über die entsprechende ID-Eigenschaft korrelieren.  
 
-#### Parameter
+#### Parameter  
 
-Diese Methode hat keine Parameter.
+Diese Methode hat keine Parameter.  
 
-#### Rückgabewert
+#### Rückgabewert  
 
-Diese Methode gibt keinen Wert zurück.
+Diese Methode gibt keinen Wert zurück.  
 
-### verweigern
+### verweigern  
 
-Verweigert die Genehmigungsanforderung.
+Verweigert die Genehmigungsanforderung.  
 
-#### Parameter
+#### Parameter  
 
-Diese Methode hat keine Parameter.
+Diese Methode hat keine Parameter.  
 
-#### Rückgabewert
+#### Rückgabewert  
 
-Diese Methode gibt keinen Wert zurück.
+Diese Methode gibt keinen Wert zurück.  
 
-## Eigenschaften
+## Eigenschaften  
 
-### id
+### id  
 
-Eine eindeutige ID, die verwendet werden kann, um die aktuelle PermissionRequest mit einem entsprechenden DeferredPermissionRequest zu korrelieren, wenn die Verzögerungsmethode verwendet wird. Weitere Informationen finden Sie unter verzögerte Methode.
+Eine eindeutige ID, die verwendet werden kann, um die aktuelle PermissionRequest mit einem entsprechenden DeferredPermissionRequest zu korrelieren, wenn die Verzögerungsmethode verwendet wird.  Weitere Informationen finden Sie unter verzögerte Methode.  
 
-Diese Eigenschaft ist schreibgeschützt.
+Diese Eigenschaft ist schreibgeschützt.  
 
-##### Eigenschaftenwert
+##### Eigenschaftenwert  
 
-Typ: **unsigned long**
+Typ: **unsigned long**  
 
-### Zustand
+### Zustand  
 
-Gibt "unknown", "verzögern", "zulassen" oder "verweigern" zurück, um den aktuellen Status der Berechtigungsanforderung anzugeben. Die Zustands Zeichenfolge entspricht der Methode allow, Deny oder reverzögerung wurde als "zuletzt" oder "unbekannt" bezeichnet, wenn keine der Methoden aufgerufen wurde.
+Gibt "unknown", "verzögern", "zulassen" oder "verweigern" zurück, um den aktuellen Status der Berechtigungsanforderung anzugeben.  Die Zustands Zeichenfolge entspricht der Methode allow, Deny oder reverzögerung wurde als "zuletzt" oder "unbekannt" bezeichnet, wenn keine der Methoden aufgerufen wurde.  
 
-Diese Eigenschaft ist schreibgeschützt.
+Diese Eigenschaft ist schreibgeschützt.  
 
-#### Eigenschaftenwert
+#### Eigenschaftenwert  
 
-Typ: **Zeichenfolge**
+Typ: **Zeichenfolge**  
 
-### Typ
+### Typ  
 
-Der Typ der anzufordernden Berechtigung. Hierbei kann es sich um einen der folgenden Zeichenfolgenwerte handeln:
+Der Typ der anzufordernden Berechtigung. Hierbei kann es sich um einen der folgenden Zeichenfolgenwerte handeln:  
 
-- **Geolocation**: Zugriff auf Standortdaten über Navigator. Geolocation.
-- **unlimitedIndexedDBQuota**: zulassen, dass IndexedDB-APIs die übliche Größenbeschränkung für gespeicherte Daten ignorieren.
-- **Medien**: Zugriff auf Mikrofon und Kamera über Navigator. getUserMedia.
-- **pointerlock**: Möglichkeit zum Sperren und Steuern des Mauszeigers über Element. requestPointerLock.
-- **webbenachrichtigungen**: Möglichkeit zum Anzeigen von Desktopbenachrichtigungen über Fenster. Benachrichtigung.
-- **Bildschirm**: Möglichkeit zum Aufnehmen von Screenshots über die Media Capture-API.
-- **immersiveview**: Möglichkeit zum Steuern einer VR-Anzeige.
+*   **Geolocation**: Zugriff auf Standortdaten über Navigator. Geolocation.  
+*   **unlimitedIndexedDBQuota**: zulassen, dass IndexedDB-APIs die übliche Größenbeschränkung für gespeicherte Daten ignorieren.  
+*   **Medien**: Zugriff auf Mikrofon und Kamera über Navigator. getUserMedia.  
+*   **pointerlock**: Möglichkeit zum Sperren und Steuern des Mauszeigers über Element. requestPointerLock.  
+*   **webbenachrichtigungen**: Möglichkeit zum Anzeigen von Desktopbenachrichtigungen über Fenster. Benachrichtigung.  
+*   **Bildschirm**: Möglichkeit zum Aufnehmen von Screenshots über die Media Capture-API.  
+*   **immersiveview**: Möglichkeit zum Steuern einer VR-Anzeige.  
 
-Diese Eigenschaft ist schreibgeschützt.
+Diese Eigenschaft ist schreibgeschützt.  
 
-#### Eigenschaftenwert
+#### Eigenschaftenwert  
 
-Typ: **Zeichenfolge**
+Typ: **Zeichenfolge**  
 
-### Uri
+### Uri  
 
-Der Uniform Resource Identifier (URI) des Dokuments, das die Berechtigung anfordert.
+Der Uniform Resource Identifier (URI) des Dokuments, das die Berechtigung anfordert.  
 
-Diese Eigenschaft ist schreibgeschützt.
+Diese Eigenschaft ist schreibgeschützt.  
 
-#### Eigenschaftenwert
+#### Eigenschaftenwert  
 
-Typ: **Zeichenfolge**
+Typ: **Zeichenfolge**  

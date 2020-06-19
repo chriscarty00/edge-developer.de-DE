@@ -3,99 +3,105 @@ description: Das gesendete Objekt aus einem fokusereignis, das den Grund und die
 title: FocusNavigationEvent-Objekt
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2018
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: WebView, Windows 10-apps, UWP, Edge
-ms.openlocfilehash: b988bcd7ff252b9972bef9a31339a34b4b58d9ee
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 88f0a4ef8834c6e851f81ee10bf4202a0429f969
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10567177"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752164"
 ---
-# FocusNavigationEvent-Objekt
+# FocusNavigationEvent-Objekt  
 
-Das gesendete Objekt aus [**NavigateFocus**](../webview.md#navigatefocus) / [**DepartingFocus**](../webview.md#departingfocus) mit dem [**NavigationReason**](#navigationreason) und dem Speicherort. 
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-## Methoden
+Das gesendete Objekt aus [**NavigateFocus**](../webview.md#navigatefocus) / [**DepartingFocus**](../webview.md#departingfocus) mit dem [**NavigationReason**](#navigationreason) und dem Speicherort.  
 
-### requestFocus "
+## Methoden  
 
-Wird aufgerufen, um den Fokus von der APP auf die WebView zu verschieben.
+### requestFocus "  
 
-### Parameter
+Wird aufgerufen, um den Fokus von der APP auf die WebView zu verschieben.  
 
-Diese Methode hat keine Parameter.
+### Parameter  
 
-### Rückgabewert
+Diese Methode hat keine Parameter.  
 
-Diese Methode gibt keinen Wert zurück.
+### Rückgabewert  
 
-## Eigenschaften
-    
-### navigationReason
+Diese Methode gibt keinen Wert zurück.  
 
-Aufgezählter Typ **NavigationReason**, entweder "Links", "oben", "rechts" oder "unten". 
+## Eigenschaften  
 
-Diese Eigenschaft ist schreibgeschützt.
+### navigationReason  
 
-```js
+Aufgezählter Typ **NavigationReason**, entweder "Links", "oben", "rechts" oder "unten".  
+
+Diese Eigenschaft ist schreibgeschützt.  
+
+```javascript
 var navigationReason = FocusNavigationEvent.navigationReason;
-```
+```  
 
-#### Eigenschaftenwert
-Geben Sie Folgendes ein: **NavigationReason**
+#### Eigenschaftenwert  
 
-### originHeight
+Geben Sie Folgendes ein: **NavigationReason**  
 
-Die Position der Ursprungs Höhe des Elements, dem der Fokus zugewiesen werden soll.
+### originHeight  
 
-Diese Eigenschaft ist schreibgeschützt.
+Die Position der Ursprungs Höhe des Elements, dem der Fokus zugewiesen werden soll.  
 
-```js
+Diese Eigenschaft ist schreibgeschützt.  
+
+```javascript
 var originWoriginHeightidth = FocusNavigationEvent.originHeight;
-```
+```  
 
-#### Eigenschaftenwert
-Typ: **float**
+#### Eigenschaftenwert  
 
-### originLeft
+Typ: **float**  
 
-Die Position des Ausgangs Links des Elements, dem der Fokus zugewiesen werden soll.
+### originLeft  
 
-Diese Eigenschaft ist schreibgeschützt.
+Die Position des Ausgangs Links des Elements, dem der Fokus zugewiesen werden soll.  
 
-```js
+Diese Eigenschaft ist schreibgeschützt.  
+
+```javascript
 var originLeft = FocusNavigationEvent.originLeft;
-```
+```  
 
-#### Eigenschaftenwert
-Typ: **float**
+#### Eigenschaftenwert  
 
-### originTop
+Typ: **float**  
 
-Die ursprüngliche oberste Position des Elements, dem der Fokus zugewiesen werden soll.
+### originTop  
 
-Diese Eigenschaft ist schreibgeschützt.
+Die ursprüngliche oberste Position des Elements, dem der Fokus zugewiesen werden soll.  
 
-```js
+Diese Eigenschaft ist schreibgeschützt.  
+
+```javascript
 var originTop = FocusNavigationEvent.originTop;
-```
+```  
 
-#### Eigenschaftenwert
-Typ: **float**
+#### Eigenschaftenwert  
 
-### originWidth
+Typ: **float**  
 
-Die Position der Ursprungs Breite des Elements, dem der Fokus zugewiesen werden soll.
+### originWidth  
 
-Diese Eigenschaft ist schreibgeschützt.
+Die Position der Ursprungs Breite des Elements, dem der Fokus zugewiesen werden soll.  
 
-```js
+Diese Eigenschaft ist schreibgeschützt.  
+
+```javascript
 var originWidth = FocusNavigationEvent.originWidth;
-```
+```  
 
-#### Eigenschaftenwert
-Typ: **float**
+#### Eigenschaftenwert  
 
+Typ: **float**  

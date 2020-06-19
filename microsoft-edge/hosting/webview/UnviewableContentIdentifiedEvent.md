@@ -3,59 +3,63 @@ description: Gibt an, dass die WebView versucht, eine nicht unterstützte Datei 
 title: UnviewableContentIdentifiedEvent-Objekt
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/25/2018
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: WebView, Windows 10-apps, UWP, Edge
-ms.openlocfilehash: cec85ca2d5458a05cfd88210907523f25fb4af95
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 0179522f3eaf0813531084eb996ee9d392e8249d
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10566692"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752013"
 ---
-# UnviewableContentIdentifiedEvent-Objekt
+# UnviewableContentIdentifiedEvent-Objekt  
 
-Gibt an, dass die [WebView](../webview.md) versucht, zu einer Datei mit einem nicht unterstützten Inhaltstyp zu navigieren. 
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-## Eigenschaften
+Gibt an, dass die [WebView](../webview.md) versucht, zu einer Datei mit einem nicht unterstützten Inhaltstyp zu navigieren.  
 
-### MediaType
+## Eigenschaften  
 
-Ruft den Inhaltstyp des nicht sichtbar-Inhalts ab.
+### MediaType  
 
-Diese Eigenschaft ist schreibgeschützt
+Ruft den Inhaltstyp des nicht sichtbar-Inhalts ab.  
 
-```js
+Diese Eigenschaft ist schreibgeschützt  
+
+```javascript
 var mediaType = UnviewableContentIdentifiedEvent.mediaType;
-```
+```  
 
-#### Eigenschaftenwert
-Geben Sie Folgendes ein: **DOM**
+#### Eigenschaftenwert  
 
-### Referer
+Geben Sie Folgendes ein: **DOM**  
 
-Der URI (Uniform Resource Identifier) der Seite im [WebView](../webview.md) , der die Navigation anfordert.
+### Referer  
 
-Diese Eigenschaft ist schreibgeschützt.
+Der URI (Uniform Resource Identifier) der Seite im [WebView](../webview.md) , der die Navigation anfordert.  
 
+Diese Eigenschaft ist schreibgeschützt.  
 
-```js
+```javascript
 var referer = NavigationEventWithReferrer.referer;
-```
+```  
 
-#### Eigenschaftenwert
-Geben Sie Folgendes ein: **DOM**
+#### Eigenschaftenwert  
 
-### Uri
+Geben Sie Folgendes ein: **DOM**  
 
-Der URI (Uniform Resource Identifier) des Ziels der Navigation.
+### Uri  
 
-Diese Eigenschaft ist schreibgeschützt.
+Der URI (Uniform Resource Identifier) des Ziels der Navigation.  
 
-```js
+Diese Eigenschaft ist schreibgeschützt.  
+
+```javascript
 var uri = NavigationEventWithReferrer.uri;
-```
+```  
 
-#### Eigenschaftenwert
-Geben Sie Folgendes ein: **DOM**
+#### Eigenschaftenwert  
+
+Geben Sie Folgendes ein: **DOM**  

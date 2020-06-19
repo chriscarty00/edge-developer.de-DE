@@ -3,58 +3,63 @@ description: Enthält Informationen zur abgeschlossenen WebView-Navigation
 title: NavigationCompletedEvent-Objekt
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/26/2018
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: WebView, Windows 10-apps, UWP, Edge
-ms.openlocfilehash: 11974f0c66d48569ee63c592bdd3b0153db075b1
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: eb5727ab59dbaf056f05ab4b19450c70f85d595f
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10567166"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752138"
 ---
-# NavigationCompletedEvent-Objekt
+# NavigationCompletedEvent-Objekt  
 
-Ein Objekt, das ein Ereignis darstellt, das ausgelöst wird, wenn die [WebView](../webview.md) das Laden des aktuellen Inhalts durchgeführt hat oder die Navigation fehlgeschlagen ist.
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-## Eigenschaften
-    
-### Uri
+Ein Objekt, das ein Ereignis darstellt, das ausgelöst wird, wenn die [WebView](../webview.md) das Laden des aktuellen Inhalts durchgeführt hat oder die Navigation fehlgeschlagen ist.  
 
-Der Uniform Resource Identifier (URI) der Navigation.
+## Eigenschaften  
 
-Diese Eigenschaft ist schreibgeschützt.
+### Uri  
 
-```js
+Der Uniform Resource Identifier (URI) der Navigation.  
+
+Diese Eigenschaft ist schreibgeschützt.  
+
+```javascript
 var uri = NavigationCompletedEvent.uri;
-```
+```  
 
-#### Eigenschaftenwert
-Geben Sie Folgendes ein: **DOM**
+#### Eigenschaftenwert  
 
-### issuccess
+Geben Sie Folgendes ein: **DOM**  
 
-Ruft einen Wert ab, der angibt, ob die Navigation erfolgreich abgeschlossen wurde.
+### issuccess  
 
-Diese Eigenschaft ist schreibgeschützt
+Ruft einen Wert ab, der angibt, ob die Navigation erfolgreich abgeschlossen wurde.  
 
-```js
+Diese Eigenschaft ist schreibgeschützt.  
+
+```javascript
 var isSuccess = NavigationCompletedEvent.isSuccess;
-```
+```  
 
-#### Eigenschaftenwert
-Typ: **boolescher Wert**
+#### Eigenschaftenwert  
 
-### webErrorStatus
+Typ: **boolescher Wert**  
 
-Wenn die Navigation nicht erfolgreich war, Ruft einen Wert ab, der angibt, warum.
+### webErrorStatus  
 
-Diese Eigenschaft ist schreibgeschützt
+Wenn die Navigation nicht erfolgreich war, Ruft einen Wert ab, der angibt, warum.  
 
-```js
+Diese Eigenschaft ist schreibgeschützt.  
+
+```javascript
 var webErrorStatus = NavigationCompletedEvent.webErrorStatus;
-```
+```  
 
-#### Eigenschaftenwert
-Typ: **unsigned long**
+#### Eigenschaftenwert  
+
+Typ: **unsigned long**  

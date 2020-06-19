@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, WPF-apps, WPF, Edge, CoreWebView2, Browser-Steuerelement, Edge-HTML, erste Schritte, erste Schritte, .net
-ms.openlocfilehash: fad5e7ce7be58ea9992dffee75da0d59aed471e7
-ms.sourcegitcommit: a34858dd3260967ba9699842fa839c7a94775fe4
+ms.openlocfilehash: 0dd4b5b0d336f4107352754e0c23e74bc83e8a5f
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "10710392"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752234"
 ---
-# Erste Schritte mit WebView2 in WPF (Preview)  
+# Erste Schritte mit WebView2 in WPF (Preview)
 
 In diesem Artikel erfahren Sie, wie Sie Ihre erste WebView2-app erstellen und die wichtigsten Features von [WebView2 (Preview)](../index.md)kennenlernen.  Weitere Informationen zu einzelnen APIs finden Sie unter [API-Referenz](../reference/dotnet/0-9-515-reference-webview2.md).  
 

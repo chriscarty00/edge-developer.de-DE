@@ -3,61 +3,66 @@ description: Definiert Eigenschaften, die WebView-Features aktivieren oder deakt
 title: MSWebViewSettings-Objekt
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/10/2018
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: WebView, Windows 10-apps, UWP, Edge
-ms.openlocfilehash: 0e164e7eb44edc636201f283ec4bbe866a122b8e
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 147f852f8fbcb2a748c00b472814e9cc45b9c9da
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10567167"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752178"
 ---
-# MSWebViewSettings-Objekt
+# MSWebViewSettings-Objekt  
 
-Definiert Eigenschaften, die [WebView](../webview.md) -Features aktivieren oder deaktivieren.
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-## Eigenschaften
+Definiert Eigenschaften, die [WebView](../webview.md) -Features aktivieren oder deaktivieren.  
 
-### isIndexedDBEnabled
+## Eigenschaften  
 
-Ruft einen Wert ab, der angibt, ob die Verwendung von IndexedDB in der [WebView](../webview.md)zulässig ist, oder legt diesen fest.
+### isIndexedDBEnabled  
 
-```js
+Ruft einen Wert ab, der angibt, ob die Verwendung von IndexedDB in der [WebView](../webview.md)zulässig ist, oder legt diesen fest.  
+
+```javascript
 var isIndexedDBEnabled = MSWebViewSettings.isIndexedDBEnabled;
 MSWebViewSettings.isIndexedDBEnabled = isIndexedDBEnabled;
-```
+```  
 
-#### Eigenschaftenwert
-Typ: **boolescher Wert**
+#### Eigenschaftenwert  
 
-**True** , wenn IndexedDB in der **WebView**zulässig ist, andernfalls false. andernfalls **false**. 
+Typ: **boolescher Wert**  
 
-### isJavaScriptEnabled
+**True** , wenn IndexedDB in der **WebView**zulässig ist, andernfalls false. andernfalls **false**.  
 
-Ruft einen Wert ab, der angibt, ob die Verwendung von JavaScript in der [WebView](../webview.md)zulässig ist, oder legt diesen fest.
+### isJavaScriptEnabled  
 
-```js
+Ruft einen Wert ab, der angibt, ob die Verwendung von JavaScript in der [WebView](../webview.md)zulässig ist, oder legt diesen fest.  
+
+```javascript
 var isJavaScriptEnabled = MSWebViewSettings.isJavaScriptEnabled;
 MSWebViewSettings.isJavaScriptEnabled = isJavaScriptEnabled;
-```
+```  
 
-#### Eigenschaftenwert
-Typ: **boolescher Wert**
+#### Eigenschaftenwert  
 
-**True** JavaScript ist in der [WebView](../webview.md)zulässig; andernfalls **false**. 
+Typ: **boolescher Wert**  
 
-### isScriptNotifyAllowed
+**True** JavaScript ist in der [WebView](../webview.md)zulässig; andernfalls **false**.  
 
-Ruft einen Wert ab, der angibt, ob die Verwendung von [ScriptNotifyEvent](ScriptNotifyEvent.md) in der [WebView](../webview.md)zulässig ist, oder legt diesen fest.
+### isScriptNotifyAllowed  
 
-```js
+Ruft einen Wert ab, der angibt, ob die Verwendung von [ScriptNotifyEvent](ScriptNotifyEvent.md) in der [WebView](../webview.md)zulässig ist, oder legt diesen fest.  
+
+```javascript
 var isScriptNotifyAllowed = MSWebViewSettings.isScriptNotifyAllowed;
 MSWebViewSettings.isScriptNotifyAllowed = isScriptNotifyAllowed;
-```
+```  
 
-#### Eigenschaftenwert
-Typ: **boolescher Wert**
+#### Eigenschaftenwert  
 
-**True** [ScriptNotifyEvent](ScriptNotifyEvent.md) ist in der [WebView](../webview.md)zulässig; andernfalls **false**. 
+Typ: **boolescher Wert**  
+
+**True** [ScriptNotifyEvent](ScriptNotifyEvent.md) ist in der [WebView](../webview.md)zulässig; andernfalls **false**.  

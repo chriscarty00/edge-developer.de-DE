@@ -6,12 +6,12 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: 87fee5484bbd535ee5692acfce273ed6edff5da2
-ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
+ms.openlocfilehash: b9e6e2af333257f0cbe0a4a354dcd1d7b862af9c
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "10708683"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10751989"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -163,7 +163,7 @@ Erweitern Sie die Karat, um eine frei gelöste Struktur zu untersuchen.
 
 <!--Nodes highlighted yellow have direct references to them from the JavaScript code.  Nodes highlighted red do not have direct references.  They are only alive because they are part of the tree for the yellow node.  In general, you want to focus on the yellow nodes.  Fix your code so that the yellow node is not alive for longer than it needs to be, and you also get rid of the red nodes that are part of the tree for the yellow node.  -->
 
-Wählen Sie einen Knoten aus, um ihn weiter zu untersuchen.  Im **Objekt** Bereich können Sie weitere Informationen zu dem Code anzeigen, der darauf verweist.  In der folgenden Abbildung können Sie beispielsweise feststellen, dass die `detachedNodes` Variable auf den Knoten verweist.  Um diesen bestimmten Speicherverlust zu beheben, sollten Sie den Code untersuchen, der die Variable verwendet, `detachedUNode` und sicherstellen, dass der Verweis auf den Knoten entfernt wird, wenn er nicht mehr benötigt wird.  
+Wählen Sie einen Knoten aus, um ihn weiter zu untersuchen.  Im **Objekt** Bereich können Sie weitere Informationen zu dem Code anzeigen, der darauf verweist.  In der folgenden Abbildung können Sie beispielsweise feststellen, dass die `detachedNodes` Variable auf den Knoten verweist.  Um diesen bestimmten Speicherverlust zu beheben, sollten Sie den Code untersuchen, der die Variable verwendet, `detachedNodes` und sicherstellen, dass der Verweis auf den Knoten entfernt wird, wenn er nicht mehr benötigt wird.  
 
 :::image type="complex" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded-selected.msft.png" alt-text="Untersuchen eines Knotens" lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded-selected.msft.png":::
    Abbildung 7: Untersuchen eines Knotens  

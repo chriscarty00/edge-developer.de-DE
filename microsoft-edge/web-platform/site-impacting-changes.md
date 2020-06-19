@@ -1,20 +1,20 @@
 ---
 description: Auf dieser Seite finden Sie eine Zusammenfassung der Änderungen mit hoher Auswirkung, die sich auf die Website Kompatibilität auswirken könnten.
-title: Website Kompatibilität – Auswirkungen auf Änderungen an Microsoft Edge
+title: Website Kompatibilität – Auswirkungen von Änderungen an Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/13/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Kompatibilität, Web-Plattform
-ms.openlocfilehash: c35f38bd43255ab9a8c965c8fa9f3b1c8a95bff6
-ms.sourcegitcommit: 1760ea15e83045168aec6bf507bc4fe7dfb5568f
+ms.openlocfilehash: 6a57ffb4a2c36420d1abe4ec151342e5b77d4c7c
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10652300"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752192"
 ---
-# Website Kompatibilität – Auswirkungen auf Änderungen an Microsoft Edge  
+# Website Kompatibilität – Auswirkungen von Änderungen an Microsoft Edge  
 
 Das Web entwickelt sich ständig weiter, um die Benutzerfreundlichkeit, die Sicherheit und den Datenschutz zu verbessern.  In einigen Fällen können Änderungen erheblich genug sein, um die Funktionalität vorhandener Seiten zu beeinflussen.  In der nachstehenden Tabelle werden besonders stark wirkende Änderungen zusammengefasst, die vom Microsoft Edge-Team zurzeit nachverfolgt werden.  Bitte schauen Sie häufig zurück. das Microsoft Edge-Team aktualisiert diese Seite, wenn sich das Denken entwickelt, Zeitpläne verfestigen und neue Änderungen angekündigt werden.  
 
@@ -26,7 +26,7 @@ Das Web entwickelt sich ständig weiter, um die Benutzerfreundlichkeit, die Sich
 | Subtile Aufforderung zur Anzeige von Benachrichtigungs Berechtigungsanforderungen |  | Canary v83, dev v83 | Benutzer können jetzt in ruhige Benachrichtigungsanforderungen einwählen `edge://settings/content/notifications` .  Wenn diese Einstellung aktiviert ist, zeigt Microsoft Edge ein Symbol für subtile Anforderungen in der Adressleiste für Websites an, die zum Senden von Benutzern in Zukunft Benachrichtigungen über die `Notifications` oder `Push` -API anfordern.  Dieses subtile Symbol ersetzt die Eingabeaufforderung für das Flyout.  Ein Experiment in Canary und dev macht dieses Verhalten für einige Benutzer auf allen Websites, die Benachrichtigungen anfordern, standardmäßig aktiviert.  Benutzer können sich in entscheiden `edge://settings/content/notifications` .  In Zukunft kann das Microsoft Edge-Team die Anzeige der Flyout-Aufforderung in bestimmten Situationen basierend auf Benutzerverhalten und anderen Eingaben untersuchen.  |  
 | Standardmäßiges Deaktivieren von TLS/1.0 und TLS/1.1 | Edge-v84 |  | Um die Auswirkungen auf Websites zu ermitteln, können Sie die `edge://flags/#display-legacy-tls-warnings` Kennzeichnung festlegen, damit Microsoft Edge beim Laden von Seiten, für die Legacy-TLS-Protokolle erforderlich sind, eine nicht blockierende "nicht sichere" Benachrichtigung anzeigt.  Die [SSLMinVersion][DeployedEdgePoliciesSSLMinVersion] -Gruppenrichtlinie ermöglicht die erneute Aktivierung von TLS/1.0 und TLS/1.1; die Richtlinie bleibt verfügbar, bis Edge 88.  |  
 | Blockieren von Downloads für gemischten Inhalt | [Chrome + 1](#release-comments) \ (Edge V85 \)  |  | Diese Änderung findet im Chromium-Projekt statt, auf dem Microsoft Edge basiert.  Weitere Informationen, einschließlich der geplanten Zeitachse von Google für diese Änderung, finden Sie im [Google Security-Blogeintrag][GoogleBlogSecurity20200206].  Der Microsoft-Rollout-Zeitplan für Dateitypen, die gewarnt oder blockiert werden sollen, ist für eine Version nach Chrome geplant.  |  
-
+| Entfernen von Adobe Flash | Edge-V88  |  | Diese Änderung findet im Chromium-Projekt statt, auf dem Microsoft Edge basiert.  Weitere Informationen finden Sie in der [Roadmap für Adobe Flash Chrom](https://www.chromium.org/flash-roadmap#TOC-Flash-Support-Removed-from-Chromium-Target:-Chrome-88---Jan-2021-).  | 
 ##### Kommentare freigeben  
 
 :::row:::

@@ -3,17 +3,17 @@ description: Hosten von Webinhalten in ihrer Win32-App mit dem Microsoft Edge We
 title: Microsoft Edge-WebView2 für Win32-apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/05/2020
+ms.date: 06/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: 1824c0f626f77e1fb566a361eac6f0358e6a754c
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.openlocfilehash: c69e9cb725bc96115d323770e3803599eee1de91
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10698871"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10751947"
 ---
 # Schnittstellen ICoreWebView2 
 
@@ -102,7 +102,7 @@ WebView2 ermöglicht Ihnen das Hosten von Webinhalten mithilfe der neuesten Edge
 
 Die normale Abfolge von Navigations Ereignissen lautet NavigationStarting, sourced, ContentLoading und dann NavigationCompleted. Die folgenden Ereignisse beschreiben den Zustand von WebView während jeder Navigation: NavigationStarting: WebView beginnt zu navigieren, und die Navigation führt zu einer Netzwerkanforderung. Der Host kann die Anforderung zurzeit nicht zulassen. Quelle: die Quelle von WebView wird in eine neue URL geändert. Dies kann auch an einer Navigation liegen, die keine Netzwerkanforderung wie eine Fragment-Navigation verursacht. History: WebView-Protokoll wurde aufgrund der Navigation aktualisiert. ContentLoading: WebView hat mit dem Laden neuer Inhalte begonnen. NavigationCompleted: WebView hat das Laden von Inhalten auf der neuen Seite abgeschlossen. Entwickler können die Navigation zu jedem neuen Dokument mithilfe der Navigations-ID nachvollziehen. Die Navigations-ID von WebView ändert sich jedes Mal, wenn eine erfolgreiche Navigation zu einem neuen Dokument vorliegt.
 
-![dot-Inline-dotgraph-1. png](media/dot-inline-dotgraph-1.png)
+![dot-inline-dotgraph-1.png](media/dot-inline-dotgraph-1.png)
 
 Beachten Sie, dass dies für Navigationsereignisse mit dem gleichen Navigations-Event-arg gilt. Navigationsereignisse mit unterschiedlichen Navigations-Event-args können sich überlappen. Wenn Sie beispielsweise eine Navigation auf das NavigationStarting-Ereignis warten und dann eine andere Navigation starten, sehen Sie die NavigationStarting für die erste Navigation, gefolgt von der NavigationStarting der zweiten Navigation, gefolgt von der NavigationCompleted für die erste Navigation und dann allen anderen geeigneten Navigations Ereignissen für die zweite Navigation. In Fehlerfällen kann es sich um ein ContentLoading-Ereignis handeln, das davon abhängt, ob die Navigation auf einer Fehlerseite fortgesetzt wird. Im Fall einer HTTP-Umleitung gibt es mehrere NavigationStarting-Ereignisse in einer Zeile, wobei für diejenigen, die dem ersten Folgen, das isredirect-Flag festgesetzt wird, die Navigations-ID jedoch unverändert bleibt. Gleiche Dokument Navigationen führen nicht zu NavigationStarting-Ereignis und erhöhen auch nicht die Navigations-ID.
 
@@ -112,11 +112,11 @@ Verwenden Sie FrameNavigationStarting, um die Navigation innerhalb von unter Fra
 
 WebView2 verwendet das gleiche Prozessmodell wie der Edge-Webbrowser. Es gibt einen Edge-Browserprozess pro angegebenen Benutzerdatenverzeichnis in einer Benutzersitzung, die jedem WebView2-Aufrufprozess dient, der das Benutzerdatenverzeichnis angibt. Dies bedeutet, dass ein Edge-Browser-Prozess möglicherweise mehrere Anruf Prozesse bedient, und ein Aufrufprozess möglicherweise mehrere Edge-Browser-Prozesse verwendet.
 
-![dot-Inline-dotgraph-2. png](media/dot-inline-dotgraph-2.png)
+![dot-inline-dotgraph-2.png](media/dot-inline-dotgraph-2.png)
 
 In einem Browserprozess gibt es eine Reihe von Renderer-Prozessen. Diese werden nach Bedarf erstellt, um potenziell mehrere Frames in verschiedenen Webansichten zu bedienen. Die Anzahl der Renderer-Prozesse variiert basierend auf dem Feature "Website Isolierungs Browser" und der Anzahl der unterschiedlichen getrennten Ursprünge, die in verknüpften Webansichten gerendert werden.
 
-![dot-Inline-dotgraph-3. png](media/dot-inline-dotgraph-3.png)
+![dot-inline-dotgraph-3.png](media/dot-inline-dotgraph-3.png)
 
 Mithilfe des ProcessFailure-Ereignisses können Sie auf Abstürze reagieren und in diesen Browser-und Renderer-Prozessen hängen bleiben.
 
@@ -975,7 +975,7 @@ Fügen Sie das bereitgestellte JavaScript einer Liste von Skripts hinzu, die aus
 
 > Public HRESULT [AddScriptToExecuteOnDocumentCreated](#addscripttoexecuteondocumentcreated)(LPCWSTR javaScript, [ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler](icorewebview2addscripttoexecuteondocumentcreatedcompletedhandler.md) * Handler)
 
-Das eingefügte Skript gilt für alle zukünftigen Dokumente und untergeordneten Frame-Navigationselemente auf oberster Ebene, bis Sie mit RemoveScriptToExecuteOnDocumentCreated entfernt werden. Diese wird asynchron angewendet, und Sie müssen warten, bis der vervollständigungshandler ausgeführt wird, bevor Sie sicher sein können, dass das Skript für zukünftige Navigationen ausgeführt werden kann.
+Mit dieser Methode wird ein Skript eingefügt, das auf allen Dokument-und untergeordneten Frameseiten Navigationen auf oberster Ebene ausgeführt wird. Diese Methode wird asynchron ausgeführt, und Sie müssen warten, bis der vervollständigungshandler fertig ist, bevor das eingefügte Skript ausgeführt werden kann. Nach Abschluss dieser Methode wird die Methode des Handlers `Invoke` mit dem `id` injizierten Skript aufgerufen. `id` ist eine Zeichenfolge. Wenn Sie das eingefügte Skript entfernen möchten, verwenden Sie `RemoveScriptToExecuteOnDocumentCreated` .
 
 Beachten Sie, dass sich dies auf das hier ausgeführte Skript auswirkt, wenn ein HTML-Dokument über Sandbox [-Eigenschaften oder über den](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-sandbox) [Content-Security-Policy-HTTP-Header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) eine Art Sandbox hat. Wenn also beispielsweise das Schlüsselwort "Allow-modals" nicht festgesetzt ist, werden Aufrufe der `alert` Funktion ignoriert.
 
@@ -1516,7 +1516,7 @@ Während neue Zugriffsversuche verweigert werden, wenn das Objekt bereits durch 
 
 #### RemoveScriptToExecuteOnDocumentCreated 
 
-Entfernen Sie das entsprechende JavaScript, das über AddScriptToExecuteOnDocumentCreated hinzugefügt wurde.
+Entfernen Sie das entsprechende JavaScript `AddScriptToExecuteOnDocumentCreated` , das mit der angegebenen Skript-ID hinzugefügt wurde.
 
 > Public HRESULT [RemoveScriptToExecuteOnDocumentCreated](#removescripttoexecuteondocumentcreated)(LPCWSTR-ID)
 
@@ -1684,4 +1684,3 @@ COREWEBVIEW2_WEB_RESOURCE_CONTEXT_SIGNED_EXCHANGE            | Signierte http-Ex
 COREWEBVIEW2_WEB_RESOURCE_CONTEXT_PING            | Ping-Anforderungen.
 COREWEBVIEW2_WEB_RESOURCE_CONTEXT_CSP_VIOLATION_REPORT            | Berichte zu CSP-Verstößen
 COREWEBVIEW2_WEB_RESOURCE_CONTEXT_OTHER            | Andere Ressourcen.
-

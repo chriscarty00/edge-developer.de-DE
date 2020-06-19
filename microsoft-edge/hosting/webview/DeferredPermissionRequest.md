@@ -3,22 +3,24 @@ description: Stellt eine verzögerte Anforderung für die Benutzerberechtigung f
 title: DeferredPermissionRequest-Objekt
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/15/2018
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: WebView, Windows 10-apps, UWP, Edge
-ms.openlocfilehash: 6013f20195fc0f5d4f33b871a9c1b01392bf023e
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: dc1f0753f879f511fdc380c806eb88b6be358016
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10567179"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752141"
 ---
-# DeferredPermissionRequest-Objekt
+# DeferredPermissionRequest-Objekt  
 
-Stellt eine verzögerte Anforderung vom Inhalt der [WebView](../webview.md) für die Endbenutzer Berechtigung für den Zugriff auf spezielle Gerätefunktionen (wie Geolocation oder Zeiger Sperre) dar.
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-```js
+Stellt eine verzögerte Anforderung vom Inhalt der [WebView](../webview.md) für die Endbenutzer Berechtigung für den Zugriff auf spezielle Gerätefunktionen (wie Geolocation oder Zeiger Sperre) dar.  
+
+```javascript
 // In this sample, when we receive a permission request we construct some basic UI to ask the
 // user if they want to give permission.
 webview.addEventListener("MSWebViewPermissionRequested", permissionRequestedEventArgs => {
@@ -58,98 +60,98 @@ webview.addEventListener("MSWebViewPermissionRequested", permissionRequestedEven
 
     permissionRequest.defer();
 });
-```
+```  
 
-## Methoden
+## Methoden  
 
-### ermöglichen
+### ermöglichen  
 
-Ermöglicht die Genehmigungsanforderung.
+Ermöglicht die Genehmigungsanforderung.  
 
-```js
+```javascript
 deferredPermissionRequest.allow();
-```
+```  
 
-#### Parameter
+#### Parameter  
 
-Diese Methode hat keine Parameter.
+Diese Methode hat keine Parameter.  
 
-#### Rückgabewert
+#### Rückgabewert  
 
-Diese Methode gibt keinen Wert zurück.
+Diese Methode gibt keinen Wert zurück.  
 
-### verweigern
+### verweigern  
 
-Verweigert die Genehmigungsanforderung.
+Verweigert die Genehmigungsanforderung.  
 
-```js
+```javascript
 deferredPermissionRequest.deny();
-```
+```  
 
-#### Parameter
+#### Parameter  
 
-Diese Methode hat keine Parameter.
+Diese Methode hat keine Parameter.  
 
-#### Rückgabewert
+#### Rückgabewert  
 
-Diese Methode gibt keinen Wert zurück.
+Diese Methode gibt keinen Wert zurück.  
 
-## Eigenschaften
+## Eigenschaften  
 
-### id
+### id  
 
-Eine eindeutige ID, die verwendet werden kann, um die aktuelle DeferredPermissionRequest mit einem PermissionRequest-Objekt aus einem vorherigen MSWebViewPermissionRequested-Ereignis zu korrelieren. Weitere Informationen finden Sie unter der **PermissionRequested. verzögert** -Methode.
+Eine eindeutige ID, die verwendet werden kann, um die aktuelle DeferredPermissionRequest mit einem PermissionRequest-Objekt aus einem vorherigen MSWebViewPermissionRequested-Ereignis zu korrelieren. Weitere Informationen finden Sie unter der **PermissionRequested. verzögert** -Methode.  
 
-Diese Eigenschaft ist schreibgeschützt.
+Diese Eigenschaft ist schreibgeschützt.  
 
-```js
+```javascript
 var id = deferredPermissionRequest.id;
-```
+```  
 
-##### Eigenschaftenwert
+##### Eigenschaftenwert  
 
-Typ: **unsigned long**
+Typ: **unsigned long**  
 
-### Typ
+### Typ  
 
-Der Typ der anzufordernden Berechtigung. Hierbei kann es sich um einen der folgenden Zeichenfolgenwerte handeln:
+Der Typ der anzufordernden Berechtigung. Hierbei kann es sich um einen der folgenden Zeichenfolgenwerte handeln:  
 
-- **Geolocation**: Zugriff auf Standortdaten über Navigator. Geolocation.
-- **unlimitedIndexedDBQuota**: zulassen, dass IndexedDB-APIs die übliche Größenbeschränkung für gespeicherte Daten ignorieren.
-- **Medien**: Zugriff auf Mikrofon und Kamera über Navigator. getUserMedia.
-- **pointerlock**: Möglichkeit zum Sperren und Steuern des Mauszeigers über Element. requestPointerLock.
-- **webbenachrichtigungen**: Möglichkeit zum Anzeigen von Desktopbenachrichtigungen über Fenster. Benachrichtigung.
-- **Bildschirm**: Möglichkeit zum Aufnehmen von Screenshots über die Media Capture-API.
-- **immersiveview**: Möglichkeit zum Steuern einer VR-Anzeige.
+*   **Geolocation**: Zugriff auf Standortdaten über Navigator. Geolocation.  
+*   **unlimitedIndexedDBQuota**: zulassen, dass IndexedDB-APIs die übliche Größenbeschränkung für gespeicherte Daten ignorieren.  
+*   **Medien**: Zugriff auf Mikrofon und Kamera über Navigator. getUserMedia.  
+*   **pointerlock**: Möglichkeit zum Sperren und Steuern des Mauszeigers über Element. requestPointerLock.  
+*   **webbenachrichtigungen**: Möglichkeit zum Anzeigen von Desktopbenachrichtigungen über Fenster. Benachrichtigung.  
+*   **Bildschirm**: Möglichkeit zum Aufnehmen von Screenshots über die Media Capture-API.  
+*   **immersiveview**: Möglichkeit zum Steuern einer VR-Anzeige.  
 
-Diese Eigenschaft ist schreibgeschützt.
+Diese Eigenschaft ist schreibgeschützt.  
 
-```js
+```javascript
 var type = deferredPermissionRequest.type;
-```
+```  
 
-#### Eigenschaftenwert
+#### Eigenschaftenwert  
 
-Typ: **Zeichenfolge**
+Typ: **Zeichenfolge**  
 
-### Uri
+### Uri  
 
-Der Uniform Resource Identifier (URI) des Dokuments, das die Berechtigung anfordert.
+Der Uniform Resource Identifier (URI) des Dokuments, das die Berechtigung anfordert.  
 
-Diese Eigenschaft ist schreibgeschützt.
+Diese Eigenschaft ist schreibgeschützt.  
 
-```js
+```javascript
 var uri = deferredPermissionRequest.uri;
-```
+```  
 
-##### Eigenschaftenwert
+##### Eigenschaftenwert  
 
-Typ: **Zeichenfolge**
+Typ: **Zeichenfolge**  
 
-## Anforderungen
+## Anforderungen  
 
-|                                           |                                      |
-|-------------------------------------------|--------------------------------------|
-| <strong>Unterstützte Mindestversion (Client)</strong> | Windows 10 [nur Windows Store-Apps] |
-| <strong>Unterstützte Mindestversion (Server)</strong> |            Nicht unterstützt.             |
-| <strong>Unterstützte Mindestversion (Telefon)</strong>  |            Nicht unterstützt.             |
+|  |  |  
+|:--- |:--- |  
+| **Unterstützte Mindestversion (Client)** | Windows 10 [nur Windows Store-Apps] |  
+| **Unterstützte Mindestversion (Server)** | Nicht unterstützt. |  
+| **Unterstützte Mindestversion (Telefon)** | Nicht unterstützt. |  
