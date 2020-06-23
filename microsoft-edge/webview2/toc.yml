@@ -12,6 +12,10 @@
   items:
     - name: Verteilen meiner App
       href: concepts/distribution.md
+    - name: Verwaltung von Benutzerdatenordnern
+      href: concepts/userdatafolder.md
+    - name: Bewährte Sicherheitsmethoden
+      href: concepts/security.md
     - name: Versionsverwaltung
       href: concepts/versioning.md
 - name: Freigabehinweise
