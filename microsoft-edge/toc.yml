@@ -204,6 +204,12 @@
               items:
                 - name: 'Nachverfolgen, welches Element den Fokus hat'
                   href: devtools-guide-chromium/accessibility/focus.md
+                - name: Simulation des dunklen/hellen Farbschemas
+                  href: devtools-guide-chromium/accessibility/preferred-color-scheme-simulation.md
+                - name: Simulation der reduzierten Bewegung
+                  href: devtools-guide-chromium/accessibility/reduced-motion-simulation.md
+                - name: Emulieren von Sehstörungen
+                  href: devtools-guide-chromium/accessibility/emulate-vision-deficiencies.md
         - name: Remotedebugging
           items:
             - name: Android-Geräte
