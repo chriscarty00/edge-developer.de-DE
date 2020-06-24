@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: Microsoft Edge, Web-Entwicklung, HTML, CSS, JavaScript, Entwickler, WebDriver, Selen, testen, Tools, Automatisierung, Test
-ms.openlocfilehash: 14537943351db144bb4839d6befbfaa62894cd85
-ms.sourcegitcommit: 3f8c8a5643e416b0851254833f9771192883ec45
+ms.openlocfilehash: c60095373be337307225f28d320cae19174531a7
+ms.sourcegitcommit: 1b5dfc5a2c7130b3abc6b4545fcaaae0b0897148
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10699507"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "10757580"
 ---
 # Verwenden von WebDriver (Chrom) für die Testautomatisierung  
 
@@ -60,6 +60,36 @@ Die letzte Komponente, die Sie herunterladen müssen, ist ein sprachspezifischer
 ### Verwenden von Selen 3  
 
 Wenn Sie bereits [Selen 3][|::ref1::|]verwenden, verfügen Sie möglicherweise über vorhandene Browser Tests und möchten eine Abdeckung für Microsoft Edge \ (Chrom \) hinzufügen, ohne Ihre Version von Selen zu ändern.  Wenn Sie [Selen 3][|::ref2::|] zum Schreiben automatisierter Tests für Microsoft Edge \ (EdgeHTML \) und Microsoft Edge \ (Chrom \) verwenden möchten, installieren Sie das [Selen Tools für Microsoft Edge][GithubMicrosoftEdgeSeleniumTools] -Paket, um den aktualisierten Treiber zu verwenden.  Die `EdgeDriver` `EdgeDriverService` in den Tools enthaltenen und-Klassen sind vollständig mit den integrierten äquivalenten in Selenium 4 kompatibel.  
+
+Führen Sie die folgenden Schritte aus, um Ihrem Projekt die [Selenium-Tools für Microsoft Edge][GithubMicrosoftEdgeSeleniumTools] und [Selen 3][|::ref3::|] hinzuzufügen.
+
+#### [C#](#tab/c-sharp/)  
+
+<a id="selenium-tools-install"></a>  
+
+Fügen Sie die [Microsoft. Edge. SeleniumTools][NugetPackagesMicrosoftEdgeSeleniumtools] -und [Selen. WebDriver][NugetPackagesSeleniumWebdriver31410] -Pakete mithilfe der [NuGet-CLI][NugetCLI] oder [Visual Studio][VisualStudio]zu Ihrem .net-Projekt hinzu.
+
+#### [Python](#tab/python/)  
+
+<a id="selenium-tools-install"></a>  
+
+Verwenden Sie [PIP][PythonPip] , um die [msedge-Selenium-Tools][PythonSeleniumTools] und [Selen][PythonSelenium] -Pakete zu installieren:
+
+```python
+pip install msedge-selenium-tools selenium==3.141
+```  
+
+#### [JavaScript](#tab/javascript/)  
+
+<a id="selenium-tools-install"></a>  
+
+Verwenden Sie [NPM][JavaScript|::ref4::|] , um die [Edge-Selenium-Tools][JavaScriptSeleniumTools] und [Selen-WebDriver][JavaScriptSelenium] -Pakete zu installieren:
+
+```javascript
+npm install @microsoft/edge-selenium-tools selenium-webdriver
+```  
+
+* * *  
 
 ## Verwenden von Microsoft Edge (Chrom) mit WebDriver
 
@@ -317,6 +347,10 @@ Das Microsoft Edge-Team ist begierig, Ihr Feedback zur Verwendung von WebDriver,
 [GithubMicrosoftEdgeSeleniumTools]: https://github.com/microsoft/edge-selenium-tools "Microsoft/Edge-Selenium-Tools | GitHub"  
 [GithubSeleniumHq]: https://github.com/SeleniumHQ/selenium "SeleniumHQ/Selen | GitHub"  
 
+[JavaScriptnpm]: https://www.npmjs.com/ "NPM"
+[JavaScriptSeleniumTools]: https://www.npmjs.com/package/@microsoft/edge-selenium-tools "@Microsoft/Edge-Selenium-Tools | NPM"
+[JavaScriptSelenium]: https://www.npmjs.com/package/selenium-webdriver "Selen-WebDriver | NPM"
+
 [MicrosoftDeveloperEdgeToolsWebdriver]: https://developer.microsoft.com/microsoft-edge/tools/webdriver "WebDriver | Microsoft-Entwickler"
 [MicrosoftDeveloperEdgeToolsWebdriverDownloads]: https://developer.microsoft.com/microsoft-edge/tools/webdriver/#downloads "Downloads-WebDriver | Microsoft-Entwickler"  
 
@@ -324,15 +358,22 @@ Das Microsoft Edge-Team ist begierig, Ihr Feedback zur Verwendung von WebDriver,
 
 [MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Herunterladen von Microsoft Edge-Insider Kanälen"  
 
+[NugetCLI]:https://www.nuget.org/packages/NuGet.CommandLine/ "NuGet. CommandLine | NuGet-Katalog"
 [NugetPackagesMicrosoftEdgeSeleniumtools]: https://www.nuget.org/packages/Microsoft.Edge.SeleniumTools "Microsoft. Edge. SeleniumTools | NuGet-Katalog"  
 [NugetPackagesSeleniumWebdriver31410]: https://www.nuget.org/packages/Selenium.WebDriver/3.141.0 "Selen. WebDriver 3.141.0 | NuGet-Katalog"  
 [NugetPackagesSeleniumWebdriver400alpha05]: https://www.nuget.org/packages/Selenium.WebDriver/4.0.0-alpha05 "Selen. WebDriver 4.0.0-alpha05 | NuGet-Katalog"  
+
+[PythonPip]: https://pypi.org/project/pip/ "PIP | PyPI"
+[PythonSeleniumTools]: https://pypi.org/project/msedge-selenium-tools/ "msedge-Selenium-Tools | PyPI"
+[PythonSelenium]: https://pypi.org/project/selenium/ "Selen | PyPI"
 
 [SeleniumHQ]: https://www.selenium.dev "SeleniumHQ"  
 [SeleniumDownloads]: https://selenium.dev/downloads "Downloads | Selen"  
 [SeleniumWebDriverChromeoptionsClass]: https://www.selenium.dev/selenium/docs/api/dotnet/?topic=html/T_OpenQA_Selenium_Chrome_ChromeOptions.htm "Chromeoptions-Klasse-WebDriver | Selen"  
 
 [TwitterTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | Einen Tweet Posten"  
+
+[VisualStudio]: https://visualstudio.microsoft.com/ "Visual Studio"
 
 [W3CWebdriver]: https://w3.org/TR/webdriver2 "WebDriver"  
 

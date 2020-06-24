@@ -8,19 +8,22 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: 4a1eb48270e062838fee9223d0a6e0e59505278e
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.openlocfilehash: 68a32b8e7175f2e52960e7c3a7fe16b66e5a043d
+ms.sourcegitcommit: de171a8e7ccd9f23846f3cd06519e4a0104f1c52
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10697322"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "10757613"
 ---
 # Anmerkungen zu dieser Version von WebView2 SDK  
 
 Das WebView2-Team wird über eine 6-wöchige Kadenz Updates für das [WebView2-SDK][WebView2NuGetGallery] bereitstellen. Auf dieser Seite können Sie auf dem Laufenden bleiben: Produktankündigungen, Ergänzungen und Änderungen an der API-Oberfläche sowie wichtige Änderungen.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Kompilieren Sie Ihre APP nach dem Aktualisieren des NuGet-Pakets erneut.
+
+> [!IMPORTANT]
+> Während sich WebView2 in der Vorschau befindet, befinden sich .NET-APIs im **Pre-Release-Paket**.
 
 ## 0.9.538
 
@@ -39,7 +42,7 @@ Das WebView2-Team wird über eine 6-wöchige Kadenz Updates für das [WebView2-S
   * [AreRemoteObjectsAllowed](reference/win32/0-9-488/icorewebview2settings.md#get_areremoteobjectsallowed) ist jetzt [AreHostObjectsAllowed](reference/win32/0-9-538/icorewebview2settings.md#get_arehostobjectsallowed)
 * [AddHostObjectToScript](reference/win32/0-9-538/icorewebview2.md#addhostobjecttoscript) aktualisiert, um sicherzustellen, dass die ursprünglichen Hostobjekt-Serialisierungsprogramm-Marker auf die Proxyobjekte gesetzt und als Hostobjekt zurück serialisiert werden, wenn Sie als Parameter im JavaScript-Rückruf übergeben werden. ([#148](https://github.com/MicrosoftEdge/WebViewFeedback/issues/148))
 
-#### .NET
+#### .Net (0.9.538 Pre-Release)
 
 * Freigegebene WinForms-und WPF-WebView2API-Beispiele, die umfassende Leitfäden für unser SDK sind. Schauen Sie sich das [WebView2 Samples Repo](https://github.com/MicrosoftEdge/WebView2Samples)an.
 * Unterstützung für visuelles Hosting und Fenster Features, [experimentelle APIs](./concepts/versioning.md#experimental-apis) , hinzugefügt
