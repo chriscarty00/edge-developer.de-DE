@@ -3,18 +3,18 @@ description: Whitepaper zum Microsoft Edge-Datenschutz
 title: Whitepaper zum Microsoft Edge-Datenschutz
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/05/2020
+ms.date: 06/22/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: browser
 keywords: Microsoft Edge, Datenschutz, Whitepaper, Vertrauen
 localization_priority: Priority
-ms.openlocfilehash: 2fee66a81309ee61d41959ae6992e2fe991ca649
-ms.sourcegitcommit: ffc0eb7bedf6e79326103a78c003f1cb2a2f70b2
+ms.openlocfilehash: 26267f471bbbfdf078beb5d9a51b8e0dfa09a416
+ms.sourcegitcommit: a886f0b1aa558435353649515588756fe82e252a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "10696736"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "10758872"
 ---
 # Whitepaper zum Microsoft Edge-Datenschutz  
 
@@ -62,7 +62,9 @@ Wenn Sie den Gastmodus verwenden, ist AutoFill nicht verfügbar, und es werden k
 
 ## Cast  
 
-Cast in Microsoft Edge ermöglicht Ihnen, Ihre Medien auf einem anderen Bildschirm mit Google Cast anzuzeigen.  Sie können auf das Feature über **Einstellungen und mehr (...)**  >  zugreifen. **Weitere Tools**  >  **Medien in Gerät umwandeln**  Cast verwendet keine Microsoft-oder Google-Dienste. 
+Cast in Microsoft Edge ermöglicht Ihnen, Ihre Medien auf einem anderen Bildschirm mit Google Cast anzuzeigen.  Sie können auf das Feature über **Einstellungen und mehr (...)**  >  zugreifen. **Weitere Tools**  >  **Medien in Gerät umwandeln**  Cast basiert auf der Media Router-Erweiterung, die standardmäßig nicht in Microsoft Edge enthalten ist.  Wenn Sie die Umwandlung zum ersten Mal verwenden, fordert Microsoft Edge zur Genehmigung auf, die Media Router-Erweiterung zu installieren.  
+
+Wählen Sie **neu starten** aus, um die Media Router-Erweiterungen aus dem Chrome Web Store zu installieren.  Um die Erweiterung des Medien-Routers auf dem neuesten Stand zu halten, senden Microsoft Edge beim Start von Microsoft Edge und in regelmäßigen Abständen Aktualisierungsanforderungen an den Chrome-Webstore, in dem grundlegende Daten zu Ihrer Version von Microsoft Edge enthalten sind.  Google kann einige Daten sammeln, die mit der Erweiterung des Media-Routers verbunden sind.  Wenn Sie die Media Router-Erweiterung deinstallieren möchten, wechseln Sie zu `edge://flags` und deaktivieren Sie den **Edge-on-Demand-Media-Router**.  Dadurch werden auch die Updates aus dem Chrome Web Store angehalten.  Die Erweiterung ist ausgeblendet und wird in der Liste der **installierten Erweiterungen** nicht angezeigt.  Wechseln Sie für die Liste **installierte Erweiterungen** zu `edge://extensions` .  
 
 ## Sammlungen  
 
@@ -191,8 +193,8 @@ Microsoft Edge unterstützt die [Geolocation-API][W3cGeolocationApiMain], die es
 
 Auf der rechten Seite der Adressleiste zeigt Microsoft Edge an, ob Ihr Standort freigegeben wurde oder nicht.  
 
-:::image type="complex" source="./media/whitepaper-media/geolocation2.png" alt-text="Standort" lightbox="./media/whitepaper-media/geolocation2.png":::
-   Standort  
+:::image type="complex" source="./media/whitepaper-media/geolocation2.png" alt-text="Pfad" lightbox="./media/whitepaper-media/geolocation2.png":::
+   Pfad  
 :::image-end:::  
 
 Wenn Sie die Freigabe Ihres Standorts für eine Website zulassen, sendet Microsoft Edge lokale Netzwerkinformationen wie Ihre IP-Adresse und die WLAN-Zugriffspunkte in der Nähe des Microsoft-Standort Diensts.  Der Microsoft-Dienst verwendet die Informationen, um Ihre Geolokations Koordinaten zu schätzen.  Die Geolokations-Schätzung wird für die Website freigegeben, mit der Sie sich für die Freigabe Ihres Standorts einverstanden erklärt haben.  Wenn Sie angeben möchten, dass Microsoft Edge die anfordernde Website mit einem genaueren Standort unter Windows 10 bereitstellt, wechseln Sie zu **Einstellungen**  >  **Datenschutz**  >  **Standort** , und aktivieren Sie den Zugriff auf den Speicherort **auf diesem Gerät zulassen** , und **ermöglichen Sie apps den Zugriff auf Ihre Standort** Einstellungen.  Wenn Sie den Zugriff auf den **Standort auf diesem Gerät zulassen** deaktivieren und **apps den Zugriff auf Ihre Standorteinstellungen gestatten** , stellt Microsoft Edge einen ungefähren Ort für die anfordernde Website bereit.  Die Informationen werden nur für eine anfordernde Website freigegeben, wenn Sie zuvor ihren Standort sehen durften.  Weitere Informationen zu den Windows-Standorteinstellungen finden Sie unter [Windows 10-Standortdienst und Datenschutz][MicrosoftSupport4468240].  
