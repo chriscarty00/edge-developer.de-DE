@@ -6,12 +6,12 @@ ms.date: 06/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: c9d205fb2cc478e9c3f20458f461f004035e85e8
-ms.sourcegitcommit: a34858dd3260967ba9699842fa839c7a94775fe4
+ms.openlocfilehash: ec8969fbf7b54512f00120ac4a253b952c55768f
+ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "10710399"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "10844019"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -470,8 +470,7 @@ Weitere Informationen zu den einzelnen Phasen, die auf der Registerkarte **Anzei
 *   **Anfrage gesendet**.  Die Anfrage wird gesendet.  
 *   **ServiceWorker-Vorbereitung**.  Der Browser startet den Dienstmitarbeiter.  
 *   **Anforderung an ServiceWorker**.  Die Anforderung wird an den Dienstmitarbeiter gesendet.  
-*   **Waiting \ (TTFB \)**.  Der Browser wartet auf das erste Byte einer Antwort.  
-  TTFB steht für Time to First Byte.  Diese Anzeigedauer umfasst eine Roundtrip-Wartezeit und den Zeitpunkt, zu dem der Server die Antwort vorbereitet hat.  
+*   **Waiting \ (TTFB \)**.  Der Browser wartet auf das erste Byte einer Antwort.  TTFB steht für Time to First Byte.  Diese Anzeigedauer umfasst eine Roundtrip-Wartezeit und den Zeitpunkt, zu dem der Server die Antwort vorbereitet hat.  
 *   **Inhalt herunterladen**.  Der Browser empfängt die Antwort.  
 *   **Push wird empfangen**.  Der Browser empfängt Daten für diese Antwort über http/2 Server Push.  
 *   **Lese Push**.  Der Browser liest die zuvor empfangenen lokalen Daten.  

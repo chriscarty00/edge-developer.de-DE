@@ -6,12 +6,12 @@ ms.date: 03/24/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: d3dbec41bc1e53b5e9001551c796e5a495dd331e
-ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+ms.openlocfilehash: 4c930caf60af2b5e276e003378546e147c249548
+ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601733"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "10843965"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -89,11 +89,11 @@ Die meisten Nachrichten, die Sie in der Konsole sehen, stammen von den Web-Entwi
     > Die Konsole nach dem Klicken auf " **Protokollinformationen** "  
     > ! [Die Konsole nach dem Klicken auf ' Protokollinformationen '] [ImageLogInfo]  
     
-1.  `Hello, Console!`Klicken Sie neben der Nachricht in der Konsole auf **Log. js: 2**.  Das Fenster "Quellen" wird geöffnet, und die Codezeile wird hervorgehoben, die dazu geführt hat, dass die Nachricht in der Konsole protokolliert wird.  Die Nachricht wurde protokolliert, als das JavaScript der Seite ausgeführt wurde `console.log('Hello, Console!')` .
+1.  `Hello, Console!`Klicken Sie neben der Nachricht in der Konsole auf **log.js:2**.  Das Fenster "Quellen" wird geöffnet, und die Codezeile wird hervorgehoben, die dazu geführt hat, dass die Nachricht in der Konsole protokolliert wird.  Die Nachricht wurde protokolliert, als das JavaScript der Seite ausgeführt wurde `console.log('Hello, Console!')` .
     
     > ##### Abbildung7  
-    > DevTools öffnet das Quellen Panel, nachdem Sie auf " **Log. js" klicken: 2**  
-    > ! [Devtools öffnet das Quellen Panel, nachdem Sie auf "Log. js" klicken: 2] [ImageSourceLog]  
+    > DevTools öffnet das Quellen Panel, nachdem Sie auf **log.js:2** klicken  
+    > ! [Devtools öffnet das Quellen Panel, nachdem Sie auf log.js:2] [ImageSourceLog]  
     
 1.  Navigieren Sie mit einem der folgenden Workflows zurück zur Konsole:  
     
@@ -166,6 +166,7 @@ Der Browser protokolliert auch Nachrichten an der Konsole.  Dies geschieht in de
     > ! [Ein TypeError in der Konsole] [ImageConsoleLogTypeError]  
     
 1.  Klicken Sie auf die Dropdownliste **Protokollebenen** , und aktivieren Sie die Option **verbose** , wenn Sie deaktiviert ist.  Weitere Informationen zum Filtern finden Sie im nächsten Abschnitt.  Sie müssen dies tun, um sicherzustellen, dass die nächste Nachricht, die Sie protokollieren, sichtbar ist.  
+    **Hinweis:** Wenn die Dropdownliste Standardebenen deaktiviert ist, müssen Sie möglicherweise die Sidebar der Konsole schließen. Filtern nach Nachrichtenquelle unten, um weitere Informationen zur Sidebar der Konsole zu erhalten.
     
     > ##### Abbildung 16  
     > Aktivieren der **ausführlichen** Protokollebene  
@@ -274,29 +275,29 @@ Was passiert, wenn Sie Formatvorlagen bearbeiten, aber Sie müssen das Konsolenp
 
 [ImageLogExample]: /microsoft-edge/devtools-guide-chromium/media/console-ars-technica-console-onload.msft.png "Abbildung 1: Nachrichten in der Konsole"  
 <!--[ImageLogSetUp1]: /microsoft-edge/devtools-guide-chromium/media/log-set-up-1.msft.png "old Figure 2: The tutorial on the left, and the demo on the right"  -->  
-[ImageDevToolsRight]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Console-example-devtools-right-Console.msft.png "Abbildung 2: devtools wird rechts neben der Demo angezeigt"  
-[ImageDevToolsBottom]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Console-example-devtools-Bottom-Console.msft.png "Abbildung 3: devtools angedockt am Ende der Demo"  
-[ImageDevToolsSeparateBrowse]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Console-example-devtools-separate-Console-Browse.msft.png "Abbildung 4: Browser in einem separaten Fenster"  
-[ImageDevToolsSeparateDevTools]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Console-example-devtools-separate-Console-devtools.msft.png "Abbildung 5: devtools in einem separaten Fenster Abdocken"  
-[ImageLogInfo]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Console-log-info.msft.png "Abbildung 6: die Konsole nach dem Klicken auf" Protokollinformationen "  
-[ImageSourceLog]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Console-sources-logjs.msft.png "Abbildung 7: devtools öffnet das Quellen Panel, nachdem Sie auf" Log. js "klicken: 2"  
-[ImageConsoleLogWarning]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Console-Log-Warning.msft.png "Abbildung 8: die Konsole nach dem Klicken auf Protokoll Warnung"  
-[Imagestacktrace]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Console-Log-Warning-Expanded.msft.png "Abbildung 9: eine Stapelüberwachung"  
-[ImageLogError]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Console-Log-Error.msft.png "Abbildung 10: eine Fehlermeldung"  
-[Imageconsoleable]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Console-log-table.msft.png "Abbildung 11: eine Tabelle in der Konsole"  
-[ImageConsoleLogGroup]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Console-Log-Group.msft.png "Abbildung 12: eine Gruppe von Nachrichten in der Konsole"  
-[ImageConsoleLogCustomFormatting]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Console-Log-Custom.msft.png "Abbildung 13: eine Nachricht mit benutzerdefinierter Formatierung in der Konsole"  
-[ImageConsoleLogError]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Console-cause-404.msft.png "Abbildung 14: ein 404-Fehler in der Konsole"  
-[ImageConsoleLogTypeError]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Console-cause-Error.msft.png "Abbildung 15: ein TypeError in der Konsole"  
-[ImageVerboseLogLevel]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Console-cause-Error-Log-Levels.msft.png "Abbildung 16: Aktivieren der ausführlichen Protokollebene"  
-[ImageConsoleLogViolation]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Console-cause-Violation.msft.png "Abbildung 17: ein Verstoß in der Konsole"  
-[ImageConsoleDisablingLogError]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Console-cause-Violation-Log-Levels.msft.png "Abbildung 18: Deaktivieren von Nachrichten auf Fehlerebene in der Konsole"  
-[ImageLogTextFiltering]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Console-all-messages-Text-Filter.msft.png "Abbildung 19: Filtern einer Nachricht, die Dave nicht enthält"  
-[ImageLogRegExFiltering]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Console-all-messages-Regex-Filter.msft.png "Abbildung 20: Filtern von Nachrichten, die nicht mit einem Muster übereinstimmen"  
-[ImageConsoleSidebar]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Console-Sidebar-all-messages.msft.png "Abbildung 21: die Seitenleiste"  
-[ImageConsoleSidebarLogSource]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Console-Sidebar-Expanded-all-messages.msft.png "Abbildung 22: Anzeigen der Quelle von Nachrichten in der Seitenleiste"  
-[ImageConsoleLogBrowserFiltering]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Console-Sidebar-user-messages.msft.png "Abbildung 23: Filtern von Browser Nachrichten"  
-[ImageDrawerConsole]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Console-Elements-drawer-Console-Sidebar-all-messages.msft.png "Abbildung 24: die Registerkarte" Konsole "im Einzug"  
+[ImageDevToolsRight]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-example-devtools-right-console.msft.png "Abbildung 2: devtools wird rechts neben der Demo angezeigt."  
+[ImageDevToolsBottom]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-example-devtools-bottom-console.msft.png "Abbildung 3: devtools angedockt am Ende der Demo"  
+[ImageDevToolsSeparateBrowse]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-example-devtools-separate-console-browse.msft.png "Abbildung 4: Browser in einem separaten Fenster"  
+[ImageDevToolsSeparateDevTools]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-example-devtools-separate-console-devtools.msft.png "Abbildung 5: devtools in einem separaten Fenster Abdocken"  
+[ImageLogInfo]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-log-info.msft.png "Abbildung 6: die Konsole nach dem Klicken auf" Protokollinformationen "  
+[ImageSourceLog]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-sources-logjs.msft.png "Abbildung 7: devtools öffnet das Quellen Panel, nachdem Sie auf log.js klicken: 2"  
+[ImageConsoleLogWarning]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-log-warning.msft.png "Abbildung 8: die Konsole nach dem Klicken auf Protokoll Warnung"  
+[Imagestacktrace]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-log-warning-expanded.msft.png "Abbildung 9: eine Stapelüberwachung"  
+[ImageLogError]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-log-error.msft.png "Abbildung 10: eine Fehlermeldung"  
+[Imageconsoleable]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-log-table.msft.png "Abbildung 11: eine Tabelle in der Konsole"  
+[ImageConsoleLogGroup]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-log-group.msft.png "Abbildung 12: eine Gruppe von Nachrichten in der Konsole"  
+[ImageConsoleLogCustomFormatting]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-log-custom.msft.png "Abbildung 13: eine Nachricht mit benutzerdefinierter Formatierung in der Konsole"  
+[ImageConsoleLogError]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-cause-404.msft.png "Abbildung 14: ein 404-Fehler in der Konsole"  
+[ImageConsoleLogTypeError]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-cause-error.msft.png "Abbildung 15: ein TypeError in der Konsole"  
+[ImageVerboseLogLevel]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-cause-error-log-levels.msft.png "Abbildung 16: Aktivieren der ausführlichen Protokollebene"  
+[ImageConsoleLogViolation]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-cause-violation.msft.png "Abbildung 17: ein Verstoß in der Konsole"  
+[ImageConsoleDisablingLogError]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-cause-violation-log-levels.msft.png "Abbildung 18: Deaktivieren von Nachrichten auf Fehlerebene in der Konsole"  
+[ImageLogTextFiltering]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-all-messages-text-filter.msft.png "Abbildung 19: Filtern einer Nachricht, die Dave nicht enthält"  
+[ImageLogRegExFiltering]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-all-messages-regex-filter.msft.png "Abbildung 20: Filtern einer Nachricht, die nicht mit einem Muster übereinstimmt"  
+[ImageConsoleSidebar]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-sidebar-all-messages.msft.png "Abbildung 21: die Seitenleiste"  
+[ImageConsoleSidebarLogSource]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-sidebar-expanded-all-messages.msft.png "Abbildung 22: Anzeigen der Quelle von Nachrichten in der Seitenleiste"  
+[ImageConsoleLogBrowserFiltering]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-sidebar-user-messages.msft.png "Abbildung 23: Filtern von Browser Nachrichten"  
+[ImageDrawerConsole]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-elements-drawer-console-sidebar-all-messages.msft.png "Abbildung 24: die Registerkarte" Konsole "im Einzug"  
 
 <!-- links -->  
 

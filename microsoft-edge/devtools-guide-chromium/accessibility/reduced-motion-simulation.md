@@ -1,17 +1,17 @@
 ---
-title: Erzwingen des Microsoft Edge-devtools in den Vorschaumodus für Farbschemas (CSS bevorzugt Farbschema)
+title: Simulieren von reduzierter Bewegung mithilfe von Entwicklertools (CSS bevorzugt reduzierte Bewegung)
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 06/18/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: 94c5369f0eb35059933be7f6202a4f64450629cd
-ms.sourcegitcommit: d7fdb67df0fe73fa5ae96e5a69a847d07941d0a7
+ms.openlocfilehash: f1bf90de4ac1832fff07e9ac963c26f92adeea2c
+ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "10758078"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "10843984"
 ---
 # Reduzierte Bewegungs Simulation  
 
@@ -21,7 +21,7 @@ Animationen in Webprodukten sind möglicherweise ein Problem mit der Barrierefre
 @media (prefers-reduced-motion: reduce) {
   /* in case the .header element has an animation, turn it off */
   .header {
-  animation: none;
+    animation: none;
   }
 }
 ```  
