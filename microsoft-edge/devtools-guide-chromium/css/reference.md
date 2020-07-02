@@ -6,12 +6,12 @@ ms.date: 04/27/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: 005d2650a1633d49a8c6c2550c4b2c0c2e3f3be6
-ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+ms.openlocfilehash: 4f0370b83d8c939476a1ed378dbdf750101c9527
+ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601846"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "10843967"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -155,7 +155,6 @@ Weitere Informationen finden Sie unter [Hinzufügen eines PseudoState zu einer K
 ### Anzeigen einer Seite im Druckmodus   
 
 So zeigen Sie eine Seite im Druckmodus an:  
-
 1.  [Öffnen des Befehlsmenüs][DevToolsCommandMenu]  
 1.  Beginnen `Rendering` Sie mit der Eingabe, und wählen Sie aus `Show Rendering` .  
 1.  Wählen Sie für die Dropdownliste **CSS-Medien emulieren** die Option **Drucken**aus.  
