@@ -1,20 +1,19 @@
 ---
 description: Die neuesten experimentellen Features in Microsoft Edge devtools
-title: Experimentelle Features
+title: Experimentelle Funktionen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/26/2020
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools, Experiment
-ms.openlocfilehash: 731a289f555870eeff9cdc160965b59925b70c4d
-ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
-ms.translationtype: MT
+ms.openlocfilehash: 19fd59c5dd9f18a681c69250fdcddb22e2796565
+ms.sourcegitcommit: f92bf0b50812b43228990b794611daa2144e431c
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "10843950"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10858053"
 ---
-# Experimentelle Features  
+# Experimentelle Funktionen  
 
 Sie können die experimentellen Features, die noch in der Entwicklung sind, in der Microsoft Edge-devtools verwenden, um zu testen und [Feedback bereitzustellen](#providing-feedback-on-experimental-features) , bevor diese im allgemeinen veröffentlicht werden.  
 
@@ -26,7 +25,7 @@ Führen Sie die folgenden Schritte aus, um die experimentellen Features von \ (o
 
 1.  [Öffnen Sie devtools][DevtoolsOpen].  
      *   Drücken Sie `Control` + `Shift` + `I` \ (Windows \) oder `Command` + `Option` + `I` \ (macOS \).  Weitere Informationen finden Sie unter [Tastenkombinationen für Microsoft Edge devtools][DevToolsShortcuts].  
-1.  Öffnen Sie den Bereich " **Einstellungen** ".  
+1.  Öffnen Sie den Bereich " [Einstellungen][DevToolsCustomizeSettings] ".  
     *   Drücken Sie `Shift` + `?` .  Weitere Informationen finden Sie unter [Tastenkombinationen für Microsoft Edge devtools][DevToolsShortcuts].  
 1.  Wählen Sie auf der linken Seite des Bereichs **Einstellungen** den Abschnitt **Experimente** aus.  
     
@@ -46,9 +45,22 @@ In den folgenden Abschnitten werden die neuen experimentellen Features beschrieb
 
 | Experimentelle Funktion | Microsoft Edge-Version |  
 |:--- |:--- |  
+| [Aktivieren der Registerkarte "Benutzerdefinierte Tastenkombinationen"](#enable-custom-keyboard-shortcuts-settings-tab) | 84 oder höher |
 | [Debuggen von neuen CSS-Raster Features aktivieren](#enable-new-css-grid-debugging-features) | 85 oder höher |  
 | [Aktivieren der Unterstützung für das Verschieben von Tabstopps zwischen Bereichen](#enable-support-to-move-tabs-between-panels) | 85 oder höher |  
 | [Webhint aktivieren](#enable-webhint) | 85 oder höher |  
+
+### Aktivieren der Registerkarte "Benutzerdefinierte Tastenkombinationen"
+
+Enthält eine neue **Verknüpfungs** Seite in [devtools-Einstellungen][DevToolsCustomizeSettings] , die das Zuordnen von [Tastenkombinationen][DevToolsShortcuts] im devtools zu [vs-Code][VisualstudioCode]ermöglicht.  
+
+Nachdem Sie dieses Experiment aktiviert haben, öffnen Sie die [devtools-Einstellungen][DevToolsCustomizeSettings] erneut, indem Sie auf klicken `Shift` + `?` .  Navigieren Sie zur Seite neue **Verknüpfungen** .  Wählen Sie im Dropdownmenü **Tastenkombinationen von Voreinstellungen** **devtools (Standard)** aus, und wählen Sie **Visual Studio-Code**aus.  Die Tastenkombinationen im devtools entsprechen nun den Tastenkombinationen für äquivalente Aktionen in vs-Code.  
+
+:::image type="complex" source="./media/experiments-keyboard-shortcut.png" alt-text="Anpassen von Tastenkombinationen im devtools an vs-Code" lightbox="./media/experiments-keyboard-shortcut.png":::
+   Anpassen von Tastenkombinationen im devtools an vs-Code
+:::image-end:::  
+
+Beispielsweise ist unter Windows die Tastenkombination zum Anhalten oder Fortsetzen der Ausführung eines Skripts im [vs-Code][VisualstudioCodeShortcutsKeyboardWindows] `F5` .  Wenn die **devtools (Standardeinstellung)** voreingestellt ist, ist die gleiche Verknüpfung in der devtools, `F8` aber mit der **Visual Studio-Code** Vorgabe, diese Verknüpfung nun auch `F5` .  
 
 ### Debuggen von neuen CSS-Raster Features aktivieren  
 
@@ -82,11 +94,11 @@ In der Regel können Tools, wie **Elemente** und **Netzwerke** , nur im Hauptber
 
 ## Frühere experimentelle Features  
 
-*   die [3D-Ansicht][Devtools3DView] ist jetzt in Microsoft Edge, Version 83 oder höher, standardmäßig verfügbar und aktiviert.  
+*   die [3D-Ansicht][Devtools3dViewIndex] ist jetzt in Microsoft Edge, Version 83 oder höher, standardmäßig verfügbar und aktiviert.  
 
 ## Bereitstellen von Feedback zu experimentellen Features  
 
-So geben Sie Feedback zu Microsoft Edge devtools-Experimenten oder zu allem anderen devtools:  
+Sie können Feedback zu Microsoft Edge devtools-Experimenten oder zu allem anderen, was mit devtools zu tun hat.  
 
 *   Senden Sie Ihr Feedback über das Feedback-Symbol im devtools  
 *   Tweet bei [@EdgeDevTools][TwitterEdgedevtools]  
@@ -97,11 +109,15 @@ So geben Sie Feedback zu Microsoft Edge devtools-Experimenten oder zu allem ande
 
 <!-- links -->  
 
-[Devtools3DView]: ./3D-view.md "3D-Ansicht | Microsoft docs"  
+[Devtools3dViewIndex]: ./3d-view/index.md "3D-Ansicht | Microsoft docs"  
 [DevtoolsIssues]: ./issues/index.md "Suchen und Beheben von Problemen mit dem Microsoft Edge devtools Issues Tool | Microsoft docs"  
-[DevToolsShortcuts]: ./shortcuts.md "Microsoft Edge devtools-Tastenkombinationen – Microsoft docs"  
+[DevToolsCustomizeSettings]: ./customize/index.md#settings "Einstellungen – anpassen von Microsoft Edge devtools | Microsoft docs"  
+[DevToolsShortcuts]: ./shortcuts.md "Microsoft Edge devtools-Tastenkombinationen | Microsoft docs"  
 [DevtoolsOpen]: ./open.md "Öffnen Sie Microsoft Edge devtools | Microsoft docs"  
 
 [TwitterEdgedevtools]: https://www.twitter.com/EdgeDevTools "Microsoft Edge-devtools | Twitter"  
+
+[VisualstudioCode]: https://code.visualstudio.com "Visual Studio-Code"  
+[VisualstudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Visual Studio-Code Tastenkombinationen für Windows | Visual Studio-Code"  
 
 [WebhintMain]: https://webhint.io "webhint" 
