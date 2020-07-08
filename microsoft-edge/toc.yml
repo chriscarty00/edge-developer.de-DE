@@ -75,7 +75,7 @@
         - name: IE-Modus
           href: devtools-guide-chromium/ie-mode.md
         - name: 3D View
-          href: devtools-guide-chromium/3D-view.md
+          href: devtools-guide-chromium/3d-view/index.md
         - name: DevTools für Anfänger
           items:
             - name: HTML und das DOM
