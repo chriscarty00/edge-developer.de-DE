@@ -3,18 +3,21 @@ description: Whitepaper zum Microsoft Edge-Datenschutz
 title: Whitepaper zum Microsoft Edge-Datenschutz
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/22/2020
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: browser
 keywords: Microsoft Edge, Datenschutz, Whitepaper, Vertrauen
 localization_priority: Priority
-ms.openlocfilehash: 26267f471bbbfdf078beb5d9a51b8e0dfa09a416
-ms.sourcegitcommit: a886f0b1aa558435353649515588756fe82e252a
+no-loc:
+- Cast
+- Google Cast
+ms.openlocfilehash: 4dc6b21a885438e8ddc0b2164386ec8d819b14af
+ms.sourcegitcommit: ec1d73e3addc47ed28ac5f9d61e4e1ee26b9e40d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "10758872"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "10860430"
 ---
 # Whitepaper zum Microsoft Edge-Datenschutz  
 
@@ -62,7 +65,7 @@ Wenn Sie den Gastmodus verwenden, ist AutoFill nicht verfügbar, und es werden k
 
 ## Cast  
 
-Cast in Microsoft Edge ermöglicht Ihnen, Ihre Medien auf einem anderen Bildschirm mit Google Cast anzuzeigen.  Sie können auf das Feature über **Einstellungen und mehr (...)**  >  zugreifen. **Weitere Tools**  >  **Medien in Gerät umwandeln**  Cast basiert auf der Media Router-Erweiterung, die standardmäßig nicht in Microsoft Edge enthalten ist.  Wenn Sie die Umwandlung zum ersten Mal verwenden, fordert Microsoft Edge zur Genehmigung auf, die Media Router-Erweiterung zu installieren.  
+Cast in Microsoft Edge können Sie Ihre Medien auf einem anderen Bildschirm mithilfe von anzeigen Google Cast .  Sie können auf das Feature über **Einstellungen und mehr (...)**  >  zugreifen. **Weitere Tools**  >  ** Cast Medien auf Gerät**.  Cast basiert auf der Media Router-Erweiterung, die standardmäßig nicht in Microsoft Edge enthalten ist.  Bei der ersten Verwendung Cast fordert Microsoft Edge zur Genehmigung auf, die Media Router-Erweiterung zu installieren.  
 
 Wählen Sie **neu starten** aus, um die Media Router-Erweiterungen aus dem Chrome Web Store zu installieren.  Um die Erweiterung des Medien-Routers auf dem neuesten Stand zu halten, senden Microsoft Edge beim Start von Microsoft Edge und in regelmäßigen Abständen Aktualisierungsanforderungen an den Chrome-Webstore, in dem grundlegende Daten zu Ihrer Version von Microsoft Edge enthalten sind.  Google kann einige Daten sammeln, die mit der Erweiterung des Media-Routers verbunden sind.  Wenn Sie die Media Router-Erweiterung deinstallieren möchten, wechseln Sie zu `edge://flags` und deaktivieren Sie den **Edge-on-Demand-Media-Router**.  Dadurch werden auch die Updates aus dem Chrome Web Store angehalten.  Die Erweiterung ist ausgeblendet und wird in der Liste der **installierten Erweiterungen** nicht angezeigt.  Wechseln Sie für die Liste **installierte Erweiterungen** zu `edge://extensions` .  
 
