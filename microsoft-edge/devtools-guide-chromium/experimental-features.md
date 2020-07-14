@@ -7,11 +7,12 @@ ms.date: 07/07/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools, Experiment
-ms.openlocfilehash: 19fd59c5dd9f18a681c69250fdcddb22e2796565
-ms.sourcegitcommit: f92bf0b50812b43228990b794611daa2144e431c
+ms.openlocfilehash: 6824b09ffc3c1f00c4a2f3000d84bf2c1be743d0
+ms.sourcegitcommit: 1e33cd41e5afb2e6dbdc19353011ff6c2b019f9c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10858053"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "10866043"
 ---
 # <span data-ttu-id="d057f-104">Experimentelle Funktionen</span><span class="sxs-lookup"><span data-stu-id="d057f-104">Experimental features</span></span>  
 
@@ -48,7 +49,7 @@ ms.locfileid: "10858053"
 | [<span data-ttu-id="d057f-126">Aktivieren der Registerkarte "Benutzerdefinierte Tastenkombinationen"</span><span class="sxs-lookup"><span data-stu-id="d057f-126">Enable custom keyboard shortcuts settings tab</span></span>](#enable-custom-keyboard-shortcuts-settings-tab) | <span data-ttu-id="d057f-127">84 oder höher</span><span class="sxs-lookup"><span data-stu-id="d057f-127">84 or later</span></span> |
 | [<span data-ttu-id="d057f-128">Debuggen von neuen CSS-Raster Features aktivieren</span><span class="sxs-lookup"><span data-stu-id="d057f-128">Enable new CSS grid debugging features</span></span>](#enable-new-css-grid-debugging-features) | <span data-ttu-id="d057f-129">85 oder höher</span><span class="sxs-lookup"><span data-stu-id="d057f-129">85 or later</span></span> |  
 | [<span data-ttu-id="d057f-130">Aktivieren der Unterstützung für das Verschieben von Tabstopps zwischen Bereichen</span><span class="sxs-lookup"><span data-stu-id="d057f-130">Enable support to move tabs between panels</span></span>](#enable-support-to-move-tabs-between-panels) | <span data-ttu-id="d057f-131">85 oder höher</span><span class="sxs-lookup"><span data-stu-id="d057f-131">85 or later</span></span> |  
-| [<span data-ttu-id="d057f-132">Webhint aktivieren</span><span class="sxs-lookup"><span data-stu-id="d057f-132">Enable webhint</span></span>](#enable-webhint) | <span data-ttu-id="d057f-133">85 oder höher</span><span class="sxs-lookup"><span data-stu-id="d057f-133">85 or later</span></span> |  
+| [<span data-ttu-id="d057f-132">Webhint aktivieren</span><span class="sxs-lookup"><span data-stu-id="d057f-132">Enable webhint</span></span>](#enable-webhint) | <span data-ttu-id="d057f-133">85 oder höher</span><span class="sxs-lookup"><span data-stu-id="d057f-133">85 or later</span></span> | 
 
 ### <span data-ttu-id="d057f-134">Aktivieren der Registerkarte "Benutzerdefinierte Tastenkombinationen"</span><span class="sxs-lookup"><span data-stu-id="d057f-134">Enable custom keyboard shortcuts settings tab</span></span>
 
