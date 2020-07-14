@@ -8,14 +8,14 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 04/23/2020
-  localization_priority: Priority
-  ms.openlocfilehash: 52f768582f25f35f8b0b188cfc1a38edc7aac6c8
-  ms.sourcegitcommit: 3f625231067df343d5afbb3f47c1063982067bcb
+  ms.date: 07/10/2020
+  ms.localizationpriority: high
+  ms.openlocfilehash: 979a1a67291e7d0859b8978f32bdbe1e17bf27f6
+  ms.sourcegitcommit: 1e33cd41e5afb2e6dbdc19353011ff6c2b019f9c
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 05/26/2020
-  ms.locfileid: "10678218"
+  ms.lasthandoff: 07/13/2020
+  ms.locfileid: "10866057"
 highlightedContent:
   items:
   - title: Herunterladen von Microsoft Edge (Official stable Channel)
@@ -72,13 +72,13 @@ productDirectory:
     links:
     - url: https://techcommunity.microsoft.com/t5/Enterprise/bd-p/EdgeInsiderEnterprise
       text: Enterprise-Tech-Community (Insider-Fokus)
-  - title: Erweiterungen für Enterprise
+  - title: Erweiterungen für Unternehmen
     imageSrc: /media/common/i_extensions.svg
     links:
     - url: /microsoft-edge/extensions-chromium/enterprise/match-patterns
       text: Übereinstimmungsmuster
     - url: /microsoft-edge/extensions-chromium/enterprise/hosting-and-updating
-      text: Hosten und aktualisieren
+      text: Hosten und Aktualisieren
 conceptualContent:
   title: Microsoft Edge für Entwickler
   summary: Plattformübergreifende devtools, Erweiterungen und Web-Apps
@@ -93,7 +93,7 @@ conceptualContent:
       text: Neuigkeiten
     - url: /microsoft-edge/devtools-guide-chromium/open
       itemType: reference
-      text: Öffnen von devtools
+      text: Open DevTools
     - url: /microsoft-edge/devtools-guide-chromium/beginners/html
       itemType: reference
       text: DevTools für Anfänger
@@ -113,13 +113,13 @@ conceptualContent:
       text: Console
     - url: /microsoft-edge/devtools-guide-chromium/network/index
       itemType: reference
-      text: Netzwerk
+      text: Network
     - url: /microsoft-edge/devtools-guide-chromium/storage/cookies
       itemType: reference
       text: Speicher
     - url: /microsoft-edge/devtools-guide-chromium/command-menu/index
       itemType: reference
-      text: Befehlsmenü
+      text: Befehlszeile
     - url: /microsoft-edge/devtools-guide-chromium/javascript/index
       itemType: reference
       text: JavaScript
@@ -128,7 +128,7 @@ conceptualContent:
       text: Leistung
     - url: /microsoft-edge/devtools-guide-chromium/remote-debugging/index
       itemType: reference
-      text: Remote Debuggen
+      text: Remotedebugging
     - url: /microsoft-edge/devtools-guide-chromium/security/index
       itemType: reference
       text: Sicherheit
@@ -142,7 +142,7 @@ conceptualContent:
       text: Dunkles Design
     - url: /microsoft-edge/devtools-guide-chromium/workspaces/index
       itemType: reference
-      text: Workspaces
+      text: Arbeitsbereiche
     - url: /microsoft-edge/devtools-guide-chromium/shortcuts
       itemType: reference
       text: Tastenkombinationen
@@ -151,10 +151,10 @@ conceptualContent:
     - text: Bedienungshilfen
       itemType: reference
       url: /microsoft-edge/accessibility
-    - text: DevTools-Protokoll (Chrom)
+    - text: DevTools Protocol (Chromium)
       itemType: reference
       url: /microsoft-edge/devtools-protocol-chromium
-    - text: WebDriver (Chrom)
+    - text: WebDriver (Chromium)
       itemType: reference
       url: /microsoft-edge/webdriver-chromium
     - text: Puppeteer
@@ -163,7 +163,7 @@ conceptualContent:
     - text: Interoperabilität (Website Kompatibilität)
       itemType: reference
       url: /microsoft-edge/web-platform/site-impacting-changes
-    - text: webhint
+    - text: Webhint
       itemType: reference
       url: https://webhint.io/docs/user-guide
     - text: Leistungsanalyse
@@ -209,7 +209,7 @@ conceptualContent:
       text: YouTube-Video hochladen
     - url: /microsoft-edge/extensions-chromium/publish/update
       itemType: reference
-      text: Update-Erweiterungs Eintrag
+      text: Aktualisieren der Erweiterungsliste
     - url: /microsoft-edge/extensions-chromium/publish/manage-settings
       itemType: reference
       text: Verwalten von Kontoeinstellungen
@@ -217,11 +217,11 @@ conceptualContent:
     links:
     - url: /microsoft-edge/extensions-chromium/store-policies/csp
       itemType: reference
-      text: Inhalts Sicherheitsrichtlinie
+      text: Sicherheitsrichtlinie für Inhalte
     - url: /microsoft-edge/extensions-chromium/store-policies/developer-policies
       itemType: reference
-      text: Microsoft Edge Addons-Katalog-Entwicklerrichtlinien
-  - title: Progressive Web-Apps
+      text: Entwicklerrichtlinien für den Katalog für Microsoft Edge-Add-Ons
+  - title: Progressive Web Apps
     links:
     - url: /microsoft-edge/progressive-web-apps-chromium/index
       itemType: reference
@@ -245,7 +245,7 @@ additionalContent:
   - items:
     - title: Verweis
       links:
-      - text: Microsoft Edge-Benutzer-Agent-Zeichenfolge
+      - text: Benutzer-Agent-Zeichenfolge für Microsoft Edge
         url: /microsoft-edge/web-platform/user-agent-string
       - text: Plattformstatus
         url: https://developer.microsoft.com/microsoft-edge/platform/status
@@ -259,17 +259,17 @@ additionalContent:
         url: /microsoft-edge/dev-guide
       - text: DevTools (EdgeHTML)
         url: /microsoft-edge/devtools-guide
-      - text: DevTools-Protokoll (EdgeHTML)
+      - text: DevTools Protocol (EdgeHTML)
         url: /microsoft-edge/devtools-protocol/index
       - text: Erweiterungen (EdgeHTML)
         url: /microsoft-edge/extensions/index
       - text: Erste Schritte mit PWAs (EdgeHTML)
         url: /microsoft-edge/progressive-web-apps-edgehtml/get-started
-      - text: JavaScript-Runtime-Hosting
+      - text: JavaScript-Laufzeit-Hosten
         url: /microsoft-edge/hosting/javascript-runtime-hosting
       - text: WebVR-Entwicklerhandbuch
         url: /microsoft-edge/webvr/index
-      - text: Windows-Runtime (WinRT)
+      - text: Windows Runtime (WinRT)
         url: /microsoft-edge/windows-runtime
   - title: Hilfe & Support
     items:
