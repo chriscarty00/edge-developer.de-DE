@@ -1,40 +1,40 @@
 ---
-description: Hosten von Webinhalten in ihrer Win32-App mit dem Microsoft Edge WebView2-Steuerelement
-title: Microsoft Edge-WebView2 für Win32-apps
+description: Einbetten von Webtechnologien (HTML, CSS und JavaScript) in ihre systemeigenen Anwendungen mit dem Microsoft Edge WebView2-Steuerelement
+title: Microsoft. Web. WebView2. Core. CoreWebView2Deferral
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/05/2020
+ms.date: 07/08/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: 935e8edb4db54e7bbb707cb2dc704ba312ed3196
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+keywords: Microsoft. Web. WebView2, Core, WebView2, WebView, DotNet, WPF, WinForms, APP, Edge, CoreWebView2, CoreWebView2Controller, Browser Control, Edge HTML, Microsoft. Web. WebView2. Core. CoreWebView2Deferral
+ms.openlocfilehash: 77a3540a64c9894f10cb0c03998dafda90e4f15b
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10698788"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10878932"
 ---
-# <span data-ttu-id="ca427-104">Microsoft. Web. WebView2. Core. CoreWebView2Deferral Klasse</span><span class="sxs-lookup"><span data-stu-id="ca427-104">Microsoft.Web.WebView2.Core.CoreWebView2Deferral class</span></span> 
+# <span data-ttu-id="4d8ca-104">Microsoft. Web. WebView2. Core. CoreWebView2Deferral Klasse</span><span class="sxs-lookup"><span data-stu-id="4d8ca-104">Microsoft.Web.WebView2.Core.CoreWebView2Deferral class</span></span> 
 
-<span data-ttu-id="ca427-105">Namespace: Microsoft. Web. WebView2. Core </span><span class="sxs-lookup"><span data-stu-id="ca427-105">Namespace: Microsoft.Web.WebView2.Core</span></span>\
-<span data-ttu-id="ca427-106">Assembly: Microsoft. Web. WebView2. Core. dll</span><span class="sxs-lookup"><span data-stu-id="ca427-106">Assembly: Microsoft.Web.WebView2.Core.dll</span></span>
+<span data-ttu-id="4d8ca-105">Namespace: Microsoft. Web. WebView2. Core </span><span class="sxs-lookup"><span data-stu-id="4d8ca-105">Namespace: Microsoft.Web.WebView2.Core</span></span>\
+<span data-ttu-id="4d8ca-106">Assembly: Microsoft.Web.WebView2.Core.dll</span><span class="sxs-lookup"><span data-stu-id="4d8ca-106">Assembly: Microsoft.Web.WebView2.Core.dll</span></span>
 
-<span data-ttu-id="ca427-107">Diese Klasse wird verwendet, um Verzögerungen für Ereignis-args abzuschließen, die das Abrufen von Verzögerungen über Ihre getstundung-Methode unterstützen.</span><span class="sxs-lookup"><span data-stu-id="ca427-107">This class is used to complete deferrals on event args that support getting deferrals via their GetDeferral method.</span></span>
+<span data-ttu-id="4d8ca-107">Diese Klasse wird verwendet, um Verzögerungen für Ereignis-args abzuschließen, die das Abrufen von Verzögerungen über Ihre getstundung-Methode unterstützen.</span><span class="sxs-lookup"><span data-stu-id="4d8ca-107">This class is used to complete deferrals on event args that support getting deferrals via their GetDeferral method.</span></span>
 
-## <span data-ttu-id="ca427-108">Zusammenfassung</span><span class="sxs-lookup"><span data-stu-id="ca427-108">Summary</span></span>
+## <span data-ttu-id="4d8ca-108">Zusammenfassung</span><span class="sxs-lookup"><span data-stu-id="4d8ca-108">Summary</span></span>
 
- <span data-ttu-id="ca427-109">Member</span><span class="sxs-lookup"><span data-stu-id="ca427-109">Members</span></span>                        | <span data-ttu-id="ca427-110">Beschreibungen</span><span class="sxs-lookup"><span data-stu-id="ca427-110">Descriptions</span></span>
+ <span data-ttu-id="4d8ca-109">Member</span><span class="sxs-lookup"><span data-stu-id="4d8ca-109">Members</span></span>                        | <span data-ttu-id="4d8ca-110">Beschreibungen</span><span class="sxs-lookup"><span data-stu-id="4d8ca-110">Descriptions</span></span>
 --------------------------------|---------------------------------------------
-[<span data-ttu-id="ca427-111">Complete</span><span class="sxs-lookup"><span data-stu-id="ca427-111">Complete</span></span>](#complete) | <span data-ttu-id="ca427-112">Schließt das zugeordnete verzögerte Ereignis ab.</span><span class="sxs-lookup"><span data-stu-id="ca427-112">Completes the associated deferred event.</span></span>
+[<span data-ttu-id="4d8ca-111">Complete</span><span class="sxs-lookup"><span data-stu-id="4d8ca-111">Complete</span></span>](#complete) | <span data-ttu-id="4d8ca-112">Schließt das zugeordnete verzögerte Ereignis ab.</span><span class="sxs-lookup"><span data-stu-id="4d8ca-112">Completes the associated deferred event.</span></span>
 
-## <span data-ttu-id="ca427-113">Member</span><span class="sxs-lookup"><span data-stu-id="ca427-113">Members</span></span>
+## <span data-ttu-id="4d8ca-113">Member</span><span class="sxs-lookup"><span data-stu-id="4d8ca-113">Members</span></span>
 
-#### <span data-ttu-id="ca427-114">Complete</span><span class="sxs-lookup"><span data-stu-id="ca427-114">Complete</span></span> 
+#### <span data-ttu-id="4d8ca-114">Complete</span><span class="sxs-lookup"><span data-stu-id="4d8ca-114">Complete</span></span> 
 
-<span data-ttu-id="ca427-115">Schließt das zugeordnete verzögerte Ereignis ab.</span><span class="sxs-lookup"><span data-stu-id="ca427-115">Completes the associated deferred event.</span></span>
+<span data-ttu-id="4d8ca-115">Schließt das zugeordnete verzögerte Ereignis ab.</span><span class="sxs-lookup"><span data-stu-id="4d8ca-115">Completes the associated deferred event.</span></span>
 
-> <span data-ttu-id="ca427-116">publicvoid [Complete](#complete)()</span><span class="sxs-lookup"><span data-stu-id="ca427-116">public void [Complete](#complete)()</span></span>
+> <span data-ttu-id="4d8ca-116">publicvoid [Complete](#complete)()</span><span class="sxs-lookup"><span data-stu-id="4d8ca-116">public void [Complete](#complete)()</span></span>
 
-<span data-ttu-id="ca427-117">Complete sollte nur einmal für jede verzögerte Verzögerung aufgerufen werden.</span><span class="sxs-lookup"><span data-stu-id="ca427-117">Complete should only be called once for each deferral taken.</span></span>
+<span data-ttu-id="4d8ca-117">Complete sollte nur einmal für jede verzögerte Verzögerung aufgerufen werden.</span><span class="sxs-lookup"><span data-stu-id="4d8ca-117">Complete should only be called once for each deferral taken.</span></span>
 

@@ -1,38 +1,38 @@
 ---
-description: Hosten von Webinhalten in ihrer Win32-App mit dem Microsoft Edge WebView2-Steuerelement
-title: Microsoft Edge-WebView2 für Win32-apps
+description: Einbetten von Webtechnologien (HTML, CSS und JavaScript) in ihre systemeigenen Anwendungen mit dem Microsoft Edge WebView2-Steuerelement
+title: WebView2 Win32 C++ ICoreWebView2HttpHeadersCollectionIterator
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/05/2020
+ms.date: 07/08/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: 5230e4b4c7529924a958779665dd304ec9e6dd45
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, Browser-Steuerelement, Edge-HTML, ICoreWebView2HttpHeadersCollectionIterator
+ms.openlocfilehash: 56eacc7b06a3de5b29d316df032448b076b33e8f
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10698867"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10879037"
 ---
-# <span data-ttu-id="cd70c-104">Schnittstellen ICoreWebView2HttpHeadersCollectionIterator</span><span class="sxs-lookup"><span data-stu-id="cd70c-104">interface ICoreWebView2HttpHeadersCollectionIterator</span></span> 
+# <span data-ttu-id="14a3a-104">Schnittstellen ICoreWebView2HttpHeadersCollectionIterator</span><span class="sxs-lookup"><span data-stu-id="14a3a-104">interface ICoreWebView2HttpHeadersCollectionIterator</span></span> 
 
 ```
 interface ICoreWebView2HttpHeadersCollectionIterator
   : public IUnknown
 ```
 
-<span data-ttu-id="cd70c-105">Iterator für eine Sammlung von HTTP-Headern.</span><span class="sxs-lookup"><span data-stu-id="cd70c-105">Iterator for a collection of HTTP headers.</span></span>
+<span data-ttu-id="14a3a-105">Iterator für eine Sammlung von HTTP-Headern.</span><span class="sxs-lookup"><span data-stu-id="14a3a-105">Iterator for a collection of HTTP headers.</span></span>
 
-## <span data-ttu-id="cd70c-106">Zusammenfassung</span><span class="sxs-lookup"><span data-stu-id="cd70c-106">Summary</span></span>
+## <span data-ttu-id="14a3a-106">Zusammenfassung</span><span class="sxs-lookup"><span data-stu-id="14a3a-106">Summary</span></span>
 
- <span data-ttu-id="cd70c-107">Member</span><span class="sxs-lookup"><span data-stu-id="cd70c-107">Members</span></span>                        | <span data-ttu-id="cd70c-108">Beschreibungen</span><span class="sxs-lookup"><span data-stu-id="cd70c-108">Descriptions</span></span>
+ <span data-ttu-id="14a3a-107">Member</span><span class="sxs-lookup"><span data-stu-id="14a3a-107">Members</span></span>                        | <span data-ttu-id="14a3a-108">Beschreibungen</span><span class="sxs-lookup"><span data-stu-id="14a3a-108">Descriptions</span></span>
 --------------------------------|---------------------------------------------
-[<span data-ttu-id="cd70c-109">get_HasCurrentHeader</span><span class="sxs-lookup"><span data-stu-id="cd70c-109">get_HasCurrentHeader</span></span>](#get_hascurrentheader) | <span data-ttu-id="cd70c-110">"True", wenn der Iterator keine Überschriften mehr ausgeführt hat.</span><span class="sxs-lookup"><span data-stu-id="cd70c-110">True when the iterator hasn't run out of headers.</span></span>
-[<span data-ttu-id="cd70c-111">GetCurrentHeader</span><span class="sxs-lookup"><span data-stu-id="cd70c-111">GetCurrentHeader</span></span>](#getcurrentheader) | <span data-ttu-id="cd70c-112">Rufen Sie den Namen und den Wert des aktuellen HTTP-Headers des Iterators ab.</span><span class="sxs-lookup"><span data-stu-id="cd70c-112">Get the name and value of the current HTTP header of the iterator.</span></span>
-[<span data-ttu-id="cd70c-113">MoveNext</span><span class="sxs-lookup"><span data-stu-id="cd70c-113">MoveNext</span></span>](#movenext) | <span data-ttu-id="cd70c-114">Verschieben Sie den Iterator in den nächsten HTTP-Header in der Sammlung.</span><span class="sxs-lookup"><span data-stu-id="cd70c-114">Move the iterator to the next HTTP header in the collection.</span></span>
+[<span data-ttu-id="14a3a-109">get_HasCurrentHeader</span><span class="sxs-lookup"><span data-stu-id="14a3a-109">get_HasCurrentHeader</span></span>](#get_hascurrentheader) | <span data-ttu-id="14a3a-110">"True", wenn der Iterator keine Überschriften mehr ausgeführt hat.</span><span class="sxs-lookup"><span data-stu-id="14a3a-110">True when the iterator hasn't run out of headers.</span></span>
+[<span data-ttu-id="14a3a-111">GetCurrentHeader</span><span class="sxs-lookup"><span data-stu-id="14a3a-111">GetCurrentHeader</span></span>](#getcurrentheader) | <span data-ttu-id="14a3a-112">Rufen Sie den Namen und den Wert des aktuellen HTTP-Headers des Iterators ab.</span><span class="sxs-lookup"><span data-stu-id="14a3a-112">Get the name and value of the current HTTP header of the iterator.</span></span>
+[<span data-ttu-id="14a3a-113">MoveNext</span><span class="sxs-lookup"><span data-stu-id="14a3a-113">MoveNext</span></span>](#movenext) | <span data-ttu-id="14a3a-114">Verschieben Sie den Iterator in den nächsten HTTP-Header in der Sammlung.</span><span class="sxs-lookup"><span data-stu-id="14a3a-114">Move the iterator to the next HTTP header in the collection.</span></span>
 
-<span data-ttu-id="cd70c-115">Siehe [ICoreWebView2HttpRequestHeaders](icorewebview2httprequestheaders.md) und [ICoreWebView2HttpResponseHeaders](icorewebview2httpresponseheaders.md).</span><span class="sxs-lookup"><span data-stu-id="cd70c-115">See [ICoreWebView2HttpRequestHeaders](icorewebview2httprequestheaders.md) and [ICoreWebView2HttpResponseHeaders](icorewebview2httpresponseheaders.md).</span></span> 
+<span data-ttu-id="14a3a-115">Siehe [ICoreWebView2HttpRequestHeaders](icorewebview2httprequestheaders.md) und [ICoreWebView2HttpResponseHeaders](icorewebview2httpresponseheaders.md).</span><span class="sxs-lookup"><span data-stu-id="14a3a-115">See [ICoreWebView2HttpRequestHeaders](icorewebview2httprequestheaders.md) and [ICoreWebView2HttpResponseHeaders](icorewebview2httpresponseheaders.md).</span></span> 
 ```cpp
 std::wstring RequestHeadersToJsonString(ICoreWebView2HttpRequestHeaders* requestHeaders)
 {
@@ -62,29 +62,29 @@ std::wstring RequestHeadersToJsonString(ICoreWebView2HttpRequestHeaders* request
 }
 ```
 
-## <span data-ttu-id="cd70c-116">Member</span><span class="sxs-lookup"><span data-stu-id="cd70c-116">Members</span></span>
+## <span data-ttu-id="14a3a-116">Member</span><span class="sxs-lookup"><span data-stu-id="14a3a-116">Members</span></span>
 
-#### <span data-ttu-id="cd70c-117">get_HasCurrentHeader</span><span class="sxs-lookup"><span data-stu-id="cd70c-117">get_HasCurrentHeader</span></span> 
+#### <span data-ttu-id="14a3a-117">get_HasCurrentHeader</span><span class="sxs-lookup"><span data-stu-id="14a3a-117">get_HasCurrentHeader</span></span> 
 
-<span data-ttu-id="cd70c-118">"True", wenn der Iterator keine Überschriften mehr ausgeführt hat.</span><span class="sxs-lookup"><span data-stu-id="cd70c-118">True when the iterator hasn't run out of headers.</span></span>
+<span data-ttu-id="14a3a-118">"True", wenn der Iterator keine Überschriften mehr ausgeführt hat.</span><span class="sxs-lookup"><span data-stu-id="14a3a-118">True when the iterator hasn't run out of headers.</span></span>
 
-> <span data-ttu-id="cd70c-119">Public HRESULT [get_HasCurrentHeader](#get_hascurrentheader)(bool \* hasCurrent)</span><span class="sxs-lookup"><span data-stu-id="cd70c-119">public HRESULT [get_HasCurrentHeader](#get_hascurrentheader)(BOOL \* hasCurrent)</span></span>
+> <span data-ttu-id="14a3a-119">Public HRESULT [get_HasCurrentHeader](#get_hascurrentheader)(bool \* hasCurrent)</span><span class="sxs-lookup"><span data-stu-id="14a3a-119">public HRESULT [get_HasCurrentHeader](#get_hascurrentheader)(BOOL \* hasCurrent)</span></span>
 
-<span data-ttu-id="cd70c-120">Wenn die Sammlung, über die der Iterator durchlaufen wird, leer ist oder der Iterator über das Ende der Auflistung hinausgegangen ist, ist dies false.</span><span class="sxs-lookup"><span data-stu-id="cd70c-120">If the collection over which the iterator is iterating is empty or if the iterator has gone past the end of the collection then this is false.</span></span>
+<span data-ttu-id="14a3a-120">Wenn die Sammlung, über die der Iterator durchlaufen wird, leer ist oder der Iterator über das Ende der Auflistung hinausgegangen ist, ist dies false.</span><span class="sxs-lookup"><span data-stu-id="14a3a-120">If the collection over which the iterator is iterating is empty or if the iterator has gone past the end of the collection then this is false.</span></span>
 
-#### <span data-ttu-id="cd70c-121">GetCurrentHeader</span><span class="sxs-lookup"><span data-stu-id="cd70c-121">GetCurrentHeader</span></span> 
+#### <span data-ttu-id="14a3a-121">GetCurrentHeader</span><span class="sxs-lookup"><span data-stu-id="14a3a-121">GetCurrentHeader</span></span> 
 
-<span data-ttu-id="cd70c-122">Rufen Sie den Namen und den Wert des aktuellen HTTP-Headers des Iterators ab.</span><span class="sxs-lookup"><span data-stu-id="cd70c-122">Get the name and value of the current HTTP header of the iterator.</span></span>
+<span data-ttu-id="14a3a-122">Rufen Sie den Namen und den Wert des aktuellen HTTP-Headers des Iterators ab.</span><span class="sxs-lookup"><span data-stu-id="14a3a-122">Get the name and value of the current HTTP header of the iterator.</span></span>
 
-> <span data-ttu-id="cd70c-123">Public HRESULT [GetCurrentHeader](#getcurrentheader)(LPWSTR \* Name, LPWSTR \*-Wert)</span><span class="sxs-lookup"><span data-stu-id="cd70c-123">public HRESULT [GetCurrentHeader](#getcurrentheader)(LPWSTR \* name, LPWSTR \* value)</span></span>
+> <span data-ttu-id="14a3a-123">Public HRESULT [GetCurrentHeader](#getcurrentheader)(LPWSTR \* Name, LPWSTR \*-Wert)</span><span class="sxs-lookup"><span data-stu-id="14a3a-123">public HRESULT [GetCurrentHeader](#getcurrentheader)(LPWSTR \* name, LPWSTR \* value)</span></span>
 
-<span data-ttu-id="cd70c-124">Diese Methode schlägt fehl, wenn der letzte Aufruf von MoveNext has_next auf "false" festgelegt hat.</span><span class="sxs-lookup"><span data-stu-id="cd70c-124">This method will fail if the last call to MoveNext set has_next to FALSE.</span></span>
+<span data-ttu-id="14a3a-124">Diese Methode schlägt fehl, wenn der letzte Aufruf von MoveNext has_next auf "false" festgelegt hat.</span><span class="sxs-lookup"><span data-stu-id="14a3a-124">This method will fail if the last call to MoveNext set has_next to FALSE.</span></span>
 
-#### <span data-ttu-id="cd70c-125">MoveNext</span><span class="sxs-lookup"><span data-stu-id="cd70c-125">MoveNext</span></span> 
+#### <span data-ttu-id="14a3a-125">MoveNext</span><span class="sxs-lookup"><span data-stu-id="14a3a-125">MoveNext</span></span> 
 
-<span data-ttu-id="cd70c-126">Verschieben Sie den Iterator in den nächsten HTTP-Header in der Sammlung.</span><span class="sxs-lookup"><span data-stu-id="cd70c-126">Move the iterator to the next HTTP header in the collection.</span></span>
+<span data-ttu-id="14a3a-126">Verschieben Sie den Iterator in den nächsten HTTP-Header in der Sammlung.</span><span class="sxs-lookup"><span data-stu-id="14a3a-126">Move the iterator to the next HTTP header in the collection.</span></span>
 
-> <span data-ttu-id="cd70c-127">Public HRESULT [MoveNext](#movenext)(bool \* hasNext ")</span><span class="sxs-lookup"><span data-stu-id="cd70c-127">public HRESULT [MoveNext](#movenext)(BOOL \* hasNext)</span></span>
+> <span data-ttu-id="14a3a-127">Public HRESULT [MoveNext](#movenext)(bool \* hasNext ")</span><span class="sxs-lookup"><span data-stu-id="14a3a-127">public HRESULT [MoveNext](#movenext)(BOOL \* hasNext)</span></span>
 
-<span data-ttu-id="cd70c-128">Der hasNext "-Parameter wird auf" false "festgelegt, wenn keine weiteren HTTP-Header vorhanden sind.</span><span class="sxs-lookup"><span data-stu-id="cd70c-128">The hasNext parameter will be set to FALSE if there are no more HTTP headers.</span></span> <span data-ttu-id="cd70c-129">Nachdem dies erfolgt ist, schlägt die GetCurrentHeader-Methode fehl, wenn Sie aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="cd70c-129">After this occurs the GetCurrentHeader method will fail if called.</span></span>
+<span data-ttu-id="14a3a-128">Der hasNext "-Parameter wird auf" false "festgelegt, wenn keine weiteren HTTP-Header vorhanden sind.</span><span class="sxs-lookup"><span data-stu-id="14a3a-128">The hasNext parameter will be set to FALSE if there are no more HTTP headers.</span></span> <span data-ttu-id="14a3a-129">Nachdem dies erfolgt ist, schlägt die GetCurrentHeader-Methode fehl, wenn Sie aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="14a3a-129">After this occurs the GetCurrentHeader method will fail if called.</span></span>
 

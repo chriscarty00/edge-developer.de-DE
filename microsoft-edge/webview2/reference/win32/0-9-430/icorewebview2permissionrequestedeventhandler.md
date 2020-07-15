@@ -1,43 +1,43 @@
 ---
 description: Hosten von Webinhalten in ihrer Win32-App mit dem Microsoft Edge WebView2-Steuerelement
-title: Microsoft Edge-WebView2 für Win32-apps
+title: 0.9.430-WebView2 Win32 C++ ICoreWebView2PermissionRequestedEventHandler
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/26/2020
+ms.date: 07/14/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Host, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: 89c080bffbcb416b6ca611df28d518b01ecb3448
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: d8703ee6bd985d276688901534dadd836aa6c7fc
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10653931"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10877786"
 ---
-# <span data-ttu-id="c26b8-104">Schnittstellen ICoreWebView2PermissionRequestedEventHandler</span><span class="sxs-lookup"><span data-stu-id="c26b8-104">interface ICoreWebView2PermissionRequestedEventHandler</span></span> 
+# <span data-ttu-id="9b9c4-104">0.9.430-Interface-ICoreWebView2PermissionRequestedEventHandler</span><span class="sxs-lookup"><span data-stu-id="9b9c4-104">0.9.430 - interface ICoreWebView2PermissionRequestedEventHandler</span></span> 
 
 > [!NOTE]
-> <span data-ttu-id="c26b8-105">Diese Schnittstelle kann nach der SDK-Version 0.9.430 geändert oder für Versionen nicht verfügbar sein.</span><span class="sxs-lookup"><span data-stu-id="c26b8-105">This interface may be altered or unavailable for releases after SDK version 0.9.430.</span></span> <span data-ttu-id="c26b8-106">Die neueste API-Referenz finden Sie unter [Referenz](../../../webview2-api-reference.md) .</span><span class="sxs-lookup"><span data-stu-id="c26b8-106">Please refer to [Reference](../../../webview2-api-reference.md) for the latest API reference.</span></span>
+> <span data-ttu-id="9b9c4-105">Diese Schnittstelle kann nach der SDK-Version 0.9.430 geändert oder für Versionen nicht verfügbar sein.</span><span class="sxs-lookup"><span data-stu-id="9b9c4-105">This interface may be altered or unavailable for releases after SDK version 0.9.430.</span></span> <span data-ttu-id="9b9c4-106">Die neueste API-Referenz finden Sie unter [Referenz](../../../webview2-api-reference.md) .</span><span class="sxs-lookup"><span data-stu-id="9b9c4-106">Please refer to [Reference](../../../webview2-api-reference.md) for the latest API reference.</span></span>
 
 ```
 interface ICoreWebView2PermissionRequestedEventHandler
   : public IUnknown
 ```
 
-<span data-ttu-id="c26b8-107">Der Aufrufer implementiert diese Schnittstelle, um das PermissionRequested-Ereignis zu empfangen.</span><span class="sxs-lookup"><span data-stu-id="c26b8-107">The caller implements this interface to receive the PermissionRequested event.</span></span>
+<span data-ttu-id="9b9c4-107">Der Aufrufer implementiert diese Schnittstelle, um das PermissionRequested-Ereignis zu empfangen.</span><span class="sxs-lookup"><span data-stu-id="9b9c4-107">The caller implements this interface to receive the PermissionRequested event.</span></span>
 
-## <span data-ttu-id="c26b8-108">Zusammenfassung</span><span class="sxs-lookup"><span data-stu-id="c26b8-108">Summary</span></span>
+## <span data-ttu-id="9b9c4-108">Zusammenfassung</span><span class="sxs-lookup"><span data-stu-id="9b9c4-108">Summary</span></span>
 
- <span data-ttu-id="c26b8-109">Member</span><span class="sxs-lookup"><span data-stu-id="c26b8-109">Members</span></span>                        | <span data-ttu-id="c26b8-110">Beschreibungen</span><span class="sxs-lookup"><span data-stu-id="c26b8-110">Descriptions</span></span>
+ <span data-ttu-id="9b9c4-109">Member</span><span class="sxs-lookup"><span data-stu-id="9b9c4-109">Members</span></span>                        | <span data-ttu-id="9b9c4-110">Beschreibungen</span><span class="sxs-lookup"><span data-stu-id="9b9c4-110">Descriptions</span></span>
 --------------------------------|---------------------------------------------
-[<span data-ttu-id="c26b8-111">Invoke</span><span class="sxs-lookup"><span data-stu-id="c26b8-111">Invoke</span></span>](#invoke) | <span data-ttu-id="c26b8-112">Wird aufgerufen, um dem Implementierer die Ereignis args für das entsprechende Ereignis bereitzustellen.</span><span class="sxs-lookup"><span data-stu-id="c26b8-112">Called to provide the implementer with the event args for the corresponding event.</span></span>
+[<span data-ttu-id="9b9c4-111">Invoke</span><span class="sxs-lookup"><span data-stu-id="9b9c4-111">Invoke</span></span>](#invoke) | <span data-ttu-id="9b9c4-112">Wird aufgerufen, um dem Implementierer die Ereignis args für das entsprechende Ereignis bereitzustellen.</span><span class="sxs-lookup"><span data-stu-id="9b9c4-112">Called to provide the implementer with the event args for the corresponding event.</span></span>
 
-## <span data-ttu-id="c26b8-113">Member</span><span class="sxs-lookup"><span data-stu-id="c26b8-113">Members</span></span>
+## <span data-ttu-id="9b9c4-113">Member</span><span class="sxs-lookup"><span data-stu-id="9b9c4-113">Members</span></span>
 
-#### <span data-ttu-id="c26b8-114">Invoke</span><span class="sxs-lookup"><span data-stu-id="c26b8-114">Invoke</span></span> 
+#### <span data-ttu-id="9b9c4-114">Invoke</span><span class="sxs-lookup"><span data-stu-id="9b9c4-114">Invoke</span></span> 
 
-<span data-ttu-id="c26b8-115">Wird aufgerufen, um dem Implementierer die Ereignis args für das entsprechende Ereignis bereitzustellen.</span><span class="sxs-lookup"><span data-stu-id="c26b8-115">Called to provide the implementer with the event args for the corresponding event.</span></span>
+<span data-ttu-id="9b9c4-115">Wird aufgerufen, um dem Implementierer die Ereignis args für das entsprechende Ereignis bereitzustellen.</span><span class="sxs-lookup"><span data-stu-id="9b9c4-115">Called to provide the implementer with the event args for the corresponding event.</span></span>
 
-> <span data-ttu-id="c26b8-116">Public HRESULT [Invoke](#invoke)([ICoreWebView2](ICoreWebView2.md) \* Sender;[ICoreWebView2PermissionRequestedEventArgs](ICoreWebView2PermissionRequestedEventArgs.md) \* args)</span><span class="sxs-lookup"><span data-stu-id="c26b8-116">public HRESULT [Invoke](#invoke)([ICoreWebView2](ICoreWebView2.md) \* sender,[ICoreWebView2PermissionRequestedEventArgs](ICoreWebView2PermissionRequestedEventArgs.md) \* args)</span></span>
+> <span data-ttu-id="9b9c4-116">Public HRESULT [Invoke](#invoke)([ICoreWebView2](ICoreWebView2.md) \* Sender;[ICoreWebView2PermissionRequestedEventArgs](ICoreWebView2PermissionRequestedEventArgs.md) \* args)</span><span class="sxs-lookup"><span data-stu-id="9b9c4-116">public HRESULT [Invoke](#invoke)([ICoreWebView2](ICoreWebView2.md) \* sender,[ICoreWebView2PermissionRequestedEventArgs](ICoreWebView2PermissionRequestedEventArgs.md) \* args)</span></span>
 
