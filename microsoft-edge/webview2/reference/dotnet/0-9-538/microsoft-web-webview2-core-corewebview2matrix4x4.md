@@ -1,19 +1,19 @@
 ---
-description: Hosten von Webinhalten in ihrer Win32-App mit dem Microsoft Edge WebView2-Steuerelement
-title: Microsoft Edge-WebView2 für Win32-apps
+description: Einbetten von Webtechnologien (HTML, CSS und JavaScript) in ihre systemeigenen Anwendungen mit dem Microsoft Edge WebView2-Steuerelement
+title: Microsoft. Web. WebView2. Core. CoreWebView2Matrix4x4
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/05/2020
+ms.date: 07/08/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: e8563bdd77972945a1e4b81662071d07d1efeb02
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+keywords: Microsoft. Web. WebView2, Core, WebView2, WebView, DotNet, WPF, WinForms, APP, Edge, CoreWebView2, CoreWebView2Controller, Browser Control, Edge HTML, Microsoft. Web. WebView2. Core. CoreWebView2Matrix4x4
+ms.openlocfilehash: bac470b29b08357d27ba77e986f19739acaaa05d
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10698802"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10878876"
 ---
 # Microsoft. Web. WebView2. Core. CoreWebView2Matrix4x4-Struktur 
 
@@ -21,7 +21,7 @@ ms.locfileid: "10698802"
 > Hierbei handelt es sich um eine [experimentelle API](../../../concepts/versioning.md#experimental-apis) , die mit unserer SDK [-Version 0.9.538-Prerelease](../../../releasenotes.md#09538)ausgeliefert wurde.
 
 Namespace: Microsoft. Web. WebView2. Core \
-Assembly: Microsoft. Web. WebView2. Core. dll
+Assembly: Microsoft.Web.WebView2.Core.dll
 
 Diese Transformation wird verwendet, um korrekte Koordinaten beim Aufrufen von CreateCoreWebView2PointerInfoFromPointerId zu berechnen.
 

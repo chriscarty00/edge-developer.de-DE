@@ -1,24 +1,24 @@
 ---
-description: Hosten von Webinhalten in ihrer Win32-App mit dem Microsoft Edge WebView2-Steuerelement
-title: Microsoft Edge-WebView2 für Win32-apps
+description: Einbetten von Webtechnologien (HTML, CSS und JavaScript) in ihre systemeigenen Anwendungen mit dem Microsoft Edge WebView2-Steuerelement
+title: Microsoft. Web. WebView2. Core. CoreWebView2Controller
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/05/2020
+ms.date: 07/08/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: 1e316c0315a8852574ea8b44cc98b11126155492
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+keywords: Microsoft. Web. WebView2, Core, WebView2, WebView, DotNet, WPF, WinForms, APP, Edge, CoreWebView2, CoreWebView2Controller, Browser Control, Edge HTML, Microsoft. Web. WebView2. Core. CoreWebView2Controller
+ms.openlocfilehash: 581343b2373dac43dd89582f7ea6e551507f3a6c
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10698789"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10878960"
 ---
 # Microsoft. Web. WebView2. Core. CoreWebView2Controller Klasse 
 
 Namespace: Microsoft. Web. WebView2. Core \
-Assembly: Microsoft. Web. WebView2. Core. dll
+Assembly: Microsoft.Web.WebView2.Core.dll
 
 Diese Klasse ist der Besitzer des CoreWebView2-Objekts und bietet Unterstützung für die Größenänderung, das ein-und ausblenden, die Fokussierung und andere Funktionen im Zusammenhang mit Fenster und Komposition.
 

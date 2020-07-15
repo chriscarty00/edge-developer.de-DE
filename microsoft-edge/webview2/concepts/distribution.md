@@ -3,17 +3,17 @@ description: Verteilungsoptionen beim Freigeben einer APP mit Microsoft Edge Web
 title: Verteilung der Microsoft Edge WebView2-Anwendung
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/01/2020
+ms.date: 07/14/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, WPF-apps, WPF, Edge, ICoreWebView2, ICoreWebView2Host, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: b76ebcd4ebc30e30083e742a5e84075a5c6ef779
-ms.sourcegitcommit: bb62099215e4f610f8561250fa943f58a0f836b0
+ms.openlocfilehash: 1b7ebf9dde594b7cdac3b41915fa9d9187d09da1
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "10846017"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10879177"
 ---
 # Verteilung von Anwendungen mithilfe von WebView2  
 
@@ -54,7 +54,7 @@ Entwickler werden empfohlen, um sicherzustellen, dass die Evergreen WebView2-Lau
 
 1.  Laden Sie das neueste [Evergreen WebView2 Runtime-Installationsprogramm][Webview2Installer]herunter.  
 1.  Fügen Sie das Installationsprogramm in ihr Anwendungs Installationsprogramm oder Updater ein.  
-1.  Überprüfen Sie während der Anwendungsinstallation oder-Aktualisierung, ob die Evergreen WebView2-Laufzeit bereits auf dem Benutzer Computer installiert ist, indem Sie die [GetAvailableCoreWebView2BrowserVersionString](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/0-9-538/webview2-idl#getavailablecorewebview2browserversionstring) -API verwenden und überprüfen, ob der VERSIONINFO NULL ist. Wenn Sie nicht installiert ist, kann das Installationsprogramm/Updater des Programms das Runtime-Installationsprogramm aus einem erhöhten Prozess oder einer Eingabeaufforderung mit `MicrosoftEdgeWebView2RuntimeInstallerX64.exe /silent /install` . 
+1.  Überprüfen Sie während der Anwendungsinstallation oder-Aktualisierung, ob die Evergreen WebView2-Laufzeit bereits auf dem Benutzer Computer installiert ist, indem Sie die [GetAvailableCoreWebView2BrowserVersionString](../reference/win32/0-9-538/webview2-idl.md#getavailablecorewebview2browserversionstring) -API verwenden und überprüfen, ob der VERSIONINFO NULL ist. Wenn Sie nicht installiert ist, kann das Installationsprogramm/Updater des Programms das Runtime-Installationsprogramm aus einem erhöhten Prozess oder einer Eingabeaufforderung mit `MicrosoftEdgeWebView2RuntimeInstallerX64.exe /silent /install` . 
 
 Je nach Szenario müssen Sie möglicherweise den oben genannten Workflow ändern.  Beispielsweise kann ihr Anwendungs Installationsprogramm das Evergreen-WebView2-Runtime-Installationsprogramm herunterladen, anstatt es in Ihr Anwendungspaket einzubinden.  
 

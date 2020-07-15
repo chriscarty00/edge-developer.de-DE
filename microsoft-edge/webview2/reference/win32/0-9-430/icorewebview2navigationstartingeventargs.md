@@ -1,21 +1,21 @@
 ---
 description: Hosten von Webinhalten in ihrer Win32-App mit dem Microsoft Edge WebView2-Steuerelement
-title: Microsoft Edge-WebView2 für Win32-apps
+title: 0.9.430-WebView2 Win32 C++ ICoreWebView2NavigationStartingEventArgs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/26/2020
+ms.date: 07/14/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Host, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: b0b868b99d3f77679b3684a20e7744d7a22fd715
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: c2ac2e499e6bbd49f411a001e061af72fda524b5
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10653900"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10877882"
 ---
-# Schnittstellen ICoreWebView2NavigationStartingEventArgs 
+# 0.9.430-Interface-ICoreWebView2NavigationStartingEventArgs 
 
 > [!NOTE]
 > Diese Schnittstelle kann nach der SDK-Version 0.9.430 geändert oder für Versionen nicht verfügbar sein. Die neueste API-Referenz finden Sie unter [Referenz](../../../webview2-api-reference.md) .

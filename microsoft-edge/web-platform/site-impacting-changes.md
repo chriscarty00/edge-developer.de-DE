@@ -1,18 +1,18 @@
 ---
-description: Auf dieser Seite finden Sie eine Zusammenfassung der Änderungen mit hoher Auswirkung, die sich auf die Website Kompatibilität auswirken könnten.
+description: Enthält eine Zusammenfassung der Änderungen mit hoher Auswirkung, die sich auf die Website Kompatibilität auswirken können.
 title: Website Kompatibilität – Auswirkungen von Änderungen an Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/29/2020
+ms.date: 07/14/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Kompatibilität, Web-Plattform
-ms.openlocfilehash: 7a443b36c554439c70017aeee52c92f591c566b8
-ms.sourcegitcommit: 1e33cd41e5afb2e6dbdc19353011ff6c2b019f9c
+ms.openlocfilehash: 0785544d0245827f58f3f7c71edd5a18a3d12404
+ms.sourcegitcommit: d982699ee25e8704fcaad7a15b4d8d015aef2f12
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "10866050"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "10868765"
 ---
 # Website Kompatibilität – Auswirkungen von Änderungen an Microsoft Edge  
 
@@ -22,11 +22,11 @@ Das Web entwickelt sich ständig weiter, um die Benutzerfreundlichkeit, die Sich
 |:--- |:--- |:--- |:--- |
 | Cookies standardmäßig auf `SameSite=Lax` | [Chrom oder Chrom + 1](#release-comments)  | Canary V82, dev V82 | Diese Änderung findet im Chromium-Projekt statt, auf dem Microsoft Edge basiert.  Weitere Informationen, einschließlich der geplanten Zeitachse von Google für diese Änderung, finden Sie unter [Chrome Platform-Status Eintrag][ChromePlatformStatus5088147346030592].  |  
 | Referrer-Richtlinie: standardmäßig `strict-origin-when-cross-origin` | [Chrom oder Chrom + 1](#release-comments)  | Canary V79, dev V79 | Diese Änderung findet im Chromium-Projekt statt, auf dem Microsoft Edge basiert.  Weitere Informationen, einschließlich der geplanten Zeitachse von Google für diese Änderung, finden Sie unter [Chrome Platform-Status Eintrag][ChromePlatformStatus6251880185331712].  |  
-| Synchrones XmlHttpRequest bei Seitenbeendigung nicht zulassen | [Chrome + 1](#release-comments) \ (Edge v83 \) |  | Diese Änderung findet im Chromium-Projekt statt, auf dem Microsoft Edge basiert.  Passend zu Chrome bietet Microsoft Edge eine Gruppenrichtlinie, um diese Änderung bis zum Edge 88 zu deaktivieren.  Weitere Informationen, einschließlich der geplanten Zeitachse von Google für diese Änderung, finden Sie unter [Chrome Platform-Status Eintrag][ChromePlatformStatus4664843055398912].  |  
-| Subtile Aufforderung zur Anzeige von Benachrichtigungs Berechtigungsanforderungen |  | Canary v83, dev v83 | Benutzer können jetzt in ruhige Benachrichtigungsanforderungen einwählen `edge://settings/content/notifications` .  Wenn diese Einstellung aktiviert ist, zeigt Microsoft Edge ein Symbol für subtile Anforderungen in der Adressleiste für Websites an, die zum Senden von Benutzern in Zukunft Benachrichtigungen über die `Notifications` oder `Push` -API anfordern.  Dieses subtile Symbol ersetzt die Eingabeaufforderung für das Flyout.  Ein Experiment in Canary und dev macht dieses Verhalten für einige Benutzer auf allen Websites, die Benachrichtigungen anfordern, standardmäßig aktiviert.  Benutzer können sich in entscheiden `edge://settings/content/notifications` .  In Zukunft kann das Microsoft Edge-Team die Anzeige der Flyout-Aufforderung in bestimmten Situationen basierend auf Benutzerverhalten und anderen Eingaben untersuchen.  |  
+| Synchrones XmlHttpRequest bei Seitenbeendigung nicht zulassen | [Chrome + 1](#release-comments) \ (Edge v83 \) |  | Diese Änderung findet im Chromium-Projekt statt, auf dem Microsoft Edge basiert.  Passend zu Chrome bietet Microsoft Edge eine Gruppenrichtlinie, um diese Änderung bis zum Edge-V88 zu deaktivieren.  Weitere Informationen, einschließlich der geplanten Zeitachse von Google für diese Änderung, finden Sie unter [Chrome Platform-Status Eintrag][ChromePlatformStatus4664843055398912].  |  
+| Subtile Aufforderung zur Anzeige von Benachrichtigungs Berechtigungsanforderungen | Edge-v84 |  | Für ruhige Benachrichtigungsanforderungen wird in der Adressleiste für Website Benachrichtigungs Berechtigungen, die mit der oder-API angefordert werden, ein Symbol für subtile Anforderung angezeigt `Notifications` `Push` , das die Benutzeroberfläche für das vollständige oder standardmäßige Berechtigungs Flyout  Dieses Feature ist derzeit für alle Benutzer aktiviert.  Wenn Sie ruhige Benachrichtigungsanforderungen ablehnen möchten, wechseln Sie zu `edge://settings/content/notifications` .  In Zukunft kann das Microsoft Edge-Team in einigen Szenarien das erneute Aktivieren der vollständigen Eingabeaufforderung für Flyout-Benachrichtigungen untersuchen.  |  
 | Standardmäßiges Deaktivieren von TLS/1.0 und TLS/1.1 | Edge-v84 |  | Um die Auswirkungen auf Websites zu ermitteln, können Sie die `edge://flags/#display-legacy-tls-warnings` Kennzeichnung festlegen, damit Microsoft Edge beim Laden von Seiten, für die Legacy-TLS-Protokolle erforderlich sind, eine nicht blockierende "nicht sichere" Benachrichtigung anzeigt.  Die [SSLMinVersion][DeployedEdgePoliciesSSLMinVersion] -Gruppenrichtlinie ermöglicht die erneute Aktivierung von TLS/1.0 und TLS/1.1; die Richtlinie bleibt verfügbar, bis Edge 88.  |  
 | Blockieren von Downloads für gemischten Inhalt | [Chrome + 1](#release-comments) \ (Edge V86 \)  |  | Diese Änderung findet im Chromium-Projekt statt, auf dem Microsoft Edge basiert.  Weitere Informationen, einschließlich der geplanten Zeitachse von Google für diese Änderung, finden Sie im [Google Security-Blogeintrag][GoogleBlogSecurity20200206].  Der Microsoft-Rollout-Zeitplan für Dateitypen, die gewarnt oder blockiert werden sollen, ist für eine Version nach Chrome geplant.  |  
-| Deprecated AppCache | [Chrome + 1](#release-comments) \ (Edge V86 \)  |  | Diese Änderung findet im Chromium-Projekt statt, auf dem Microsoft Edge basiert.  Weitere Informationen finden Sie in der [WebDev-Dokumentation][WebDevAppCacheRemoval].  Der Microsoft-Rollout-Zeitplan für die deprecated-Version ist für eine Version nach Chrome geplant.  Durch Anfordern eines [AppCache-OriginTrial-Tokens][AppCacheOriginTrial] können Websites die veraltete API weiter verwenden, bis Edge-V90. |  
+| Deprecated AppCache | [Chrome + 1](#release-comments) \ (Edge V86 \)  |  | Diese Änderung findet im Chromium-Projekt statt, auf dem Microsoft Edge basiert.  Weitere Informationen finden Sie in der [WebDev-Dokumentation][WebDevAppCacheRemoval].  Der Microsoft-Rollout-Zeitplan für die deprecated-Version ist für eine Version nach Chrome geplant.  Durch Anfordern eines [AppCache-OriginTrial-Tokens][AppCacheOriginTrial] können Websites die veraltete API weiter verwenden, bis Edge-V90.  |  
 | Entfernen von Adobe Flash | Edge-V88  |  | Diese Änderung findet im Chromium-Projekt statt, auf dem Microsoft Edge basiert.  Weitere Informationen finden Sie in der [Roadmap für Adobe Flash Chrom][ChromiumFlashRoadmapSupportRemoved].  | 
 ##### Kommentare freigeben  
 
@@ -47,16 +47,13 @@ Das Web entwickelt sich ständig weiter, um die Benutzerfreundlichkeit, die Sich
    :::column-end:::
 :::row-end:::
 
-
-<!-- image links -->  
-
 <!-- links -->  
 
-[DeployedEdgePoliciesSSLMinVersion]: /deployedge/microsoft-edge-policies#sslversionmin "SSLVersionMin – Microsoft Edge – Richtlinien"  
+[DeployedEdgePoliciesSSLMinVersion]: /deployedge/microsoft-edge-policies#sslversionmin "SSLVersionMin – Microsoft Edge – Richtlinien | Microsoft docs"  
 
-[ChromePlatformStatus4664843055398912]: https://www.chromestatus.com/feature/4664843055398912 "Synchronisierungs-XMLHttpRequest in Seite Entlassung deaktivieren JavaScript – Chrome-Platt Form Status"  
-[ChromePlatformStatus5088147346030592]: https://www.chromestatus.com/feature/5088147346030592 "Cookies standardmäßig auf SameSite = Lax-Chrome Platform-Status"  
-[ChromePlatformStatus6251880185331712]: https://www.chromestatus.com/feature/6251880185331712 "Referrer-Richtlinie: standardmäßig zu Strict-Origin-when-Cross-Origin-Chrome-Platt Form Status"  
+[ChromePlatformStatus4664843055398912]: https://www.chromestatus.com/feature/4664843055398912 "Synchronisierungs-XMLHttpRequest in Seite Entlassung deaktivieren JavaScript | Chrome-Platt Form Status"  
+[ChromePlatformStatus5088147346030592]: https://www.chromestatus.com/feature/5088147346030592 "Cookies sind standardmäßig SameSite = Lax | Chrome-Platt Form Status"  
+[ChromePlatformStatus6251880185331712]: https://www.chromestatus.com/feature/6251880185331712 "Referrer-Richtlinie: standardmäßig auf Strict-Origin-wann-Cross-Origin | Chrome-Platt Form Status"  
 
 [ChromiumFlashRoadmapSupportRemoved]: https://www.chromium.org/flash-roadmap#TOC-Flash-Support-Removed-from-Chromium-Target:-Chrome-88---Jan-2021- "Flash-Unterstützung aus Chrom entfernt (Ziel: Chrom 88 +-Jan 2021) – Flash-Roadmap | Chromium-Projekte"  
 

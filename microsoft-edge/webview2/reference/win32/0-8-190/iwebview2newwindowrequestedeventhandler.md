@@ -1,21 +1,21 @@
 ---
 description: Hosten von Webinhalten in ihrer Win32-App mit dem Microsoft Edge WebView2-Steuerelement
-title: Microsoft Edge-WebView2 für Win32-apps
+title: 0.8.355-WebView2 Win32 C++ IWebView2NewWindowRequestedEventHandler
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/09/2019
+ms.date: 07/14/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge
-ms.openlocfilehash: 77047aaf812552ef3b0462d48e7b7b57174dafd4
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: bacd1cff4406caffd4d7c3e1ca4c3e320c051443
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10654107"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10878323"
 ---
-# Schnittstellen IWebView2NewWindowRequestedEventHandler 
+# 0.8.355-Interface-IWebView2NewWindowRequestedEventHandler 
 
 > [!NOTE]
 > Diese Schnittstelle kann nach der SDK-Version 0.8.355 geändert oder für Versionen nicht verfügbar sein. Die neueste API-Referenz finden Sie unter [Referenz](../../../webview2-api-reference.md) .

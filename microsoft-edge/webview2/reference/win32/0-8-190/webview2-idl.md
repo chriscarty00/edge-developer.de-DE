@@ -1,21 +1,21 @@
 ---
 description: Hosten von Webinhalten in ihrer Win32-App mit dem Microsoft Edge WebView2-Steuerelement
-title: Microsoft Edge-WebView2 für Win32-apps
+title: 0.8.355-WebView2 Win32 C++ Globals
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/09/2019
+ms.date: 07/14/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge
-ms.openlocfilehash: 58b32c1fe46183e55b8ac0bb4f4264b1f38e6eeb
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 5ee2461ca1b0aeb0a5f0d23f0918561065570523
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10653711"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10877987"
 ---
-# Globals 
+# 0.8.355-Globals 
 
 > [!NOTE]
 > Diese Schnittstelle kann nach der SDK-Version 0.8.355 geändert oder für Versionen nicht verfügbar sein. Die neueste API-Referenz finden Sie unter [Referenz](../../../webview2-api-reference.md) .
@@ -37,7 +37,7 @@ ms.locfileid: "10653711"
 
 DLL-Export zum Erstellen einer WebView2-Umgebung mit einer benutzerdefinierten Version von Edge, Benutzerdatenverzeichnis und/oder zusätzlichen Browser-Switches.
 
-browserExecutableFolder ist der relative Pfad zu dem Ordner, der den eingebetteten Edge enthält. Der eingebettete Edge kann abgerufen werden, indem die Version mit dem Namen Folder eines installierten Edge-Ordners wie 73.0.52.0-Unterordner eines installierten 73.0.52.0-Edge kopiert wird. Der Ordner sollte msedge. exe, msedge. dll usw. aufweisen. Verwenden Sie NULL oder eine leere Zeichenfolge für browserExecutableFolder, um WebView mithilfe von Edge auf dem Computer zu erstellen, in diesem Fall versucht die API, eine kompatible Version von Edge zu finden, die auf dem Computer installiert ist, entsprechend der Kanaleinstellung, die versucht, die erste pro Benutzerinstallation und dann pro Computerinstallation zu finden.
+browserExecutableFolder ist der relative Pfad zu dem Ordner, der den eingebetteten Edge enthält. Der eingebettete Edge kann abgerufen werden, indem die Version mit dem Namen Folder eines installierten Edge-Ordners wie 73.0.52.0-Unterordner eines installierten 73.0.52.0-Edge kopiert wird. Der Ordner sollte msedge.exe, msedge.dll usw. aufweisen. Verwenden Sie NULL oder eine leere Zeichenfolge für browserExecutableFolder, um WebView mithilfe von Edge auf dem Computer zu erstellen, in diesem Fall versucht die API, eine kompatible Version von Edge zu finden, die auf dem Computer installiert ist, entsprechend der Kanaleinstellung, die versucht, die erste pro Benutzerinstallation und dann pro Computerinstallation zu finden.
 
 Die standardmäßige Kanal Suchreihenfolge ist stable, Beta, dev und Canary. Wenn eine WEBVIEW2_RELEASE_CHANNEL_PREFERENCE Umgebungsvariable oder ein anwendbarer releaseChannelPreference-Registrierungswert mit dem Wert 1 überschrieben wird, wird die Kanal Suchreihenfolge umgekehrt.
 
@@ -74,7 +74,7 @@ WEBVIEW2_PIPE_FOR_SCRIPT_DEBUGGER
 
 Wenn Sie mit einem nicht leeren Wert gefunden wird, deutet dies darauf hin, dass die WebView unter einem Skriptdebugger gestartet wird, der auch Hostanwendungen unterstützt, die mehrere Webansichten verwenden. Der Wert wird als Bezeichner für eine Named Pipe verwendet, die geöffnet und geschrieben wird, wenn eine neue WebView von der Hostanwendung erstellt wird. Die Nutzlast entspricht der des JSON-Ziels "Remotedebuggen-Port" und kann vom externen Debugger zum Anfügen an eine bestimmte WebView-Instanz verwendet werden. Das Format der vom Debugger erstellten Pipe sollte wie folgt lauten: `\\.\pipe\WebView2\Debugger\{app_name}\{pipe_name}`
 
-* `{app_name}` ist der Dateiname der Host-Anwendung exe, beispielsweise WebView2Example. exe.
+* `{app_name}` ist der Dateiname der Host-Anwendung exe, beispielsweise WebView2Example.exe
 
 * `{pipe_name}` ist der Wert, der für WEBVIEW2_PIPE_FOR_SCRIPT_DEBUGGER gesetzt ist.
 

@@ -1,24 +1,24 @@
 ---
-description: Hosten von Webinhalten in ihrer Win32-App mit dem Microsoft Edge WebView2-Steuerelement
-title: Microsoft Edge-WebView2 für Win32-apps
+description: Einbetten von Webtechnologien (HTML, CSS und JavaScript) in ihre systemeigenen Anwendungen mit dem Microsoft Edge WebView2-Steuerelement
+title: Microsoft. Web. WebView2. Core. CoreWebView2PermissionRequestedEventArgs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/05/2020
+ms.date: 07/08/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: 58d87d1815b81969c4424eacfcec26ffe425192e
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+keywords: Microsoft. Web. WebView2, Core, WebView2, WebView, DotNet, WPF, WinForms, APP, Edge, CoreWebView2, CoreWebView2Controller, Browser Control, Edge HTML, Microsoft. Web. WebView2. Core. CoreWebView2PermissionRequestedEventArgs
+ms.openlocfilehash: ede6cef20a1a0f5fcd0780376b5ddec07bf05d26
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10698776"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10878799"
 ---
 # Microsoft. Web. WebView2. Core. CoreWebView2PermissionRequestedEventArgs Klasse 
 
 Namespace: Microsoft. Web. WebView2. Core \
-Assembly: Microsoft. Web. WebView2. Core. dll
+Assembly: Microsoft.Web.WebView2.Core.dll
 
 Ereignis-args für das PermissionRequested-Ereignis.
 
