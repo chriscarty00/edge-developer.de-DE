@@ -1,21 +1,21 @@
 ---
 description: Hosten von Webinhalten in ihrer Win32-App mit dem Steuerelement "Microsoft Edge WebView 2"
-title: Microsoft Edge WebView 2 für Win32-apps
+title: 0.9.515-Microsoft. Web. WebView2. Core-Referenz
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/08/2020
+ms.date: 07/14/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: b6131245a550da54545478c9c19e0e9e45d7f7d3
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.openlocfilehash: 32092f4b434506229ffdd3612a68725b67f566a8
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10697245"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10879975"
 ---
-# 0-9-515-Reference (WebView2)  
+# 0-9-515 –⁠ Referenz (WebView2)  
 
 > [!NOTE]
 > Dieser Verweis kann für Versionen nach der SDK-Version 0.9.515 geändert oder nicht mehr zur Verfügung stehen. Die neueste API-Referenz finden Sie in der [WebView2-API-Referenz](../../webview2-api-reference.md) .

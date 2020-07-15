@@ -1,19 +1,19 @@
 ---
-description: Hosten von Webinhalten in ihrer Win32-App mit dem Microsoft Edge WebView2-Steuerelement
-title: Microsoft Edge-WebView2 für Win32-apps
+description: Einbetten von Webtechnologien (HTML, CSS und JavaScript) in ihre systemeigenen Anwendungen mit dem Microsoft Edge WebView2-Steuerelement
+title: WebView2 Win32 C++ ICoreWebView2NewWindowRequestedEventArgs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/16/2020
+ms.date: 07/08/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: 03c943c87f07344ab4e3d1a7c707a993a795cdba
-ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
+keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, Browser-Steuerelement, Edge-HTML, ICoreWebView2NewWindowRequestedEventArgs
+ms.openlocfilehash: bb18b6662fd5921406e19b3c333c97f8a1cd0dbc
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "10751849"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10879436"
 ---
 # Schnittstellen ICoreWebView2NewWindowRequestedEventArgs 
 
@@ -52,7 +52,7 @@ IsUserInitiated ist wahr, wenn die neue Fenster Anforderung durch eine Benutzerg
 
 > Public HRESULT [get_IsUserInitiated](#get_isuserinitiated)(bool * IsUserInitiated)
 
-WebView2-Steuerelemente können Popupfenster anzeigen, da der Popupblocker deaktiviert ist. Wenn Sie verhindern möchten, dass nicht vom Benutzer initiierte Popup-Fenster angezeigt werden, verwenden Sie `get_IsUserInitiated` .
+Der Edge-Popupblocker ist für WebView deaktiviert, damit die APP dieses Flag verwenden kann, um nicht vom Benutzer initiierte Popups zu blockieren.
 
 #### get_NewWindow 
 
@@ -89,3 +89,4 @@ Legt eine WebView als Ergebnis des NewWindowRequest fest.
 > öffentliche HRESULT- [put_NewWindow](#put_newwindow)([ICoreWebView2](icorewebview2.md) *-Fenster)
 
 Die Ziel-WebView sollte nicht navigiert werden. Wenn das Fenster "Fenster" eingestellt ist, wird das Fenster der obersten Ebene als geöffnetes WindowProxy zurückgegeben.
+

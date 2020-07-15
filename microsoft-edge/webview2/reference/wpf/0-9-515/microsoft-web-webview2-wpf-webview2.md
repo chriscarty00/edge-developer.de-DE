@@ -1,24 +1,24 @@
 ---
-description: Hosten von Webinhalten in ihrer Win32-App mit dem Microsoft Edge WebView2-Steuerelement
-title: Microsoft Edge-WebView2 für Win32-apps
+description: Einbetten von Webtechnologien (HTML, CSS und JavaScript) in ihre systemeigenen Anwendungen mit dem Microsoft Edge WebView2-Steuerelement
+title: Microsoft. Web. WebView2. WPF. WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/27/2020
+ms.date: 07/08/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: a0030e1a2a77d65963bd8333f2071485ab2fe308
-ms.sourcegitcommit: 83efa259be89cc773a82751242495a0a919d54cd
+keywords: Microsoft. Web. WebView2, Core, WebView2, WebView, DotNet, WPF, WinForms, APP, Edge, CoreWebView2, CoreWebView2Controller, Browser Control, Edge HTML, Microsoft. Web. WebView2. WPF. WebView2
+ms.openlocfilehash: 2dd7bf1035cf5254f4668070d56d2bd2405f1276
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "10687797"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10880262"
 ---
 # Microsoft. Web. WebView2. WPF. WebView2 Klasse 
 
 Namespace: Microsoft. Web. WebView2. WPF \
-Assembly: Microsoft. Web. WebView2. WPF. dll
+Assembly: Microsoft.Web.WebView2.Wpf.dll
 
 ```
 class Microsoft.Web.WebView2.Wpf.WebView2
@@ -194,7 +194,7 @@ Führt JavaScript-Code aus dem JavaScript-Parameter im aktuellen Dokument der ob
 
 > Public Async Task< String > [ExecuteScriptAsync](#executescriptasync)(String javaScript)
 
-Entspricht dem Aufrufen von CoreWebView2. ExecuteScriptAsync auf CoreWebView2
+Entspricht dem Aufrufen CoreWebView2.ExecuteScriptAsync auf CoreWebView2
 
 ##### Ausnahmen
 * `InvalidOperationException` Wird ausgelöst, wenn CoreWebView2 noch nicht initialisiert wurde.

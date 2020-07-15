@@ -1,21 +1,21 @@
 ---
 description: Hosten von Webinhalten in ihrer Win32-App mit dem Microsoft Edge WebView2-Steuerelement
-title: Microsoft Edge-WebView2 für Win32-apps
+title: 0.9.430-WebView2 Win32 C++ ICoreWebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 07/14/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Host, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: 77eb48773a963775e00d4dec50368564af5678b0
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 6fce29c2df69abc8d55d91c267b282702e567453
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10654133"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10881207"
 ---
-# Schnittstellen ICoreWebView2 
+# 0.9.430-Interface-ICoreWebView2 
 
 > [!NOTE]
 > Diese Schnittstelle kann nach der SDK-Version 0.9.430 geändert oder für Versionen nicht verfügbar sein. Die neueste API-Referenz finden Sie unter [Referenz](../../../webview2-api-reference.md) .
@@ -100,7 +100,7 @@ WebView2 ermöglicht Ihnen das Hosten von Webinhalten mithilfe der neuesten Edge
 
 Die normale Abfolge von Navigations Ereignissen lautet NavigationStarting, sourced, ContentLoading und dann NavigationCompleted.
 
-![dot-Inline-dotgraph-1. png](media/dot-inline-dotgraph-1.png)
+![dot-inline-dotgraph-1.png](media/dot-inline-dotgraph-1.png)
 
 Beachten Sie, dass dies für Navigationsereignisse mit dem gleichen Navigations-Event-arg gilt. Navigationsereignisse mit unterschiedlichen Navigations-Event-args können sich überlappen. Wenn Sie beispielsweise eine Navigation auf das NavigationStarting-Ereignis warten und dann eine andere Navigation starten, sehen Sie die NavigationStarting für die erste Navigation, gefolgt von der NavigationStarting der zweiten Navigation, gefolgt von der NavigationCompleted für die erste Navigation und dann allen anderen geeigneten Navigations Ereignissen für die zweite Navigation. In Fehlerfällen kann es sich um ein ContentLoading-Ereignis handeln, das davon abhängt, ob die Navigation auf einer Fehlerseite fortgesetzt wird. Im Fall einer HTTP-Umleitung gibt es mehrere NavigationStarting-Ereignisse in einer Zeile, wobei für diejenigen, die dem ersten Folgen, das isredirect-Flag festzulegen ist.
 
@@ -110,11 +110,11 @@ Verwenden Sie FrameNavigationStarting, um die Navigation innerhalb von unter Fra
 
 WebView2 verwendet das gleiche Prozessmodell wie der Edge-Webbrowser. Es gibt einen Edge-Browserprozess pro angegebenen Benutzerdatenverzeichnis in einer Benutzersitzung, die jedem WebView2-Aufrufprozess dient, der das Benutzerdatenverzeichnis angibt. Dies bedeutet, dass ein Edge-Browser-Prozess möglicherweise mehrere Anruf Prozesse bedient, und ein Aufrufprozess möglicherweise mehrere Edge-Browser-Prozesse verwendet.
 
-![dot-Inline-dotgraph-2. png](media/dot-inline-dotgraph-2.png)
+![dot-inline-dotgraph-2.png](media/dot-inline-dotgraph-2.png)
 
 In einem Browserprozess gibt es eine Reihe von Renderer-Prozessen. Diese werden nach Bedarf erstellt, um potenziell mehrere Frames in verschiedenen Webansichten zu bedienen. Die Anzahl der Renderer-Prozesse variiert basierend auf dem Feature "Website Isolierungs Browser" und der Anzahl der unterschiedlichen getrennten Ursprünge, die in verknüpften Webansichten gerendert werden.
 
-![dot-Inline-dotgraph-3. png](media/dot-inline-dotgraph-3.png)
+![dot-inline-dotgraph-3.png](media/dot-inline-dotgraph-3.png)
 
 Mithilfe des ProcessFailure-Ereignisses können Sie auf Abstürze reagieren und in diesen Browser-und Renderer-Prozessen hängen bleiben.
 
