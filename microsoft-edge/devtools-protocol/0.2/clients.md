@@ -1,20 +1,20 @@
 ---
 description: Microsoft Edge devtools Protocol, Version 0,2, unterstützt die folgenden Tooling-Clients.
-title: Microsoft Edge devtools-Protokoll Version 0,2-Clients
+title: Microsoft Edge devtools-Protokoll Version 0,2-Clients (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
-ms.openlocfilehash: 657d594b85c47cc1d5c80b8f2ac3ecc4bd4e4502
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 92976de257a73fd7206205622a4c79d1277b3950
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10567548"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882891"
 ---
-# DevTools-Protokoll Clients
+# Microsoft Edge devtools-Protokoll Version 0,2-Clients (EdgeHTML)  
 
 > [!NOTE]
 > Version 0,2 des Microsoft Edge devtools-Protokolls funktioniert nur auf dem [Windows 10 October 2018-Update](/windows/uwp/whats-new/windows-10-build-17763) und später in [Windows Insider Preview](https://insider.windows.com/en-us/getting-started/) -Builds.  

@@ -1,28 +1,29 @@
 ---
 description: Verweis für die Debugger-Domäne. Die Debugger-Domäne macht JavaScript-Debugfunktionen verfügbar. Sie ermöglicht das Festlegen und Entfernen von Haltepunkten, durchlaufen der Ausführung, Durchsuchen von Stapelablaufverfolgungen usw.
-title: Debugger-Domäne – devtools-Protokoll, Version 0,1
-author: pelavall
-ms.author: pelavall
-ms.date: 12/15/2017
+title: Debugger-Domäne – devtools-Protokoll Version 0,1 (EdgeHTML)
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
-ms.openlocfilehash: 6c5d668f943a731e5ba86ed5aa2294007a432ce6
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 1e76d17e5dfbe39ba61c7cb45a4e88b9fd223068
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10567561"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882954"
 ---
-# Debugger
+# Debugger-Domäne – devtools-Protokoll Version 0,1 (EdgeHTML)  
+  
 Die Debugger-Domäne macht JavaScript-Debugfunktionen verfügbar. Sie ermöglicht das Festlegen und Entfernen von Haltepunkten, durchlaufen der Ausführung, Durchsuchen von Stapelablaufverfolgungen usw.
 
 | | |
 |-|-|
 | [**Methoden**](#methods) | [aktivieren](#enable), [Deaktivieren](#disable), [getPossibleBreakpoints](#getpossiblebreakpoints), [setBreakpointsActive](#setbreakpointsactive), [setBreakpointByUrl](#setbreakpointbyurl), [setbreak Point](#setbreakpoint), [removeBreakpoint](#removebreakpoint), [Zustellung](#stepover), [stepInto](#stepinto), [aussteigen](#stepout), [Anhalten](#pause), [fortsetzen](#resume), [getScriptSource](#getscriptsource), [setPauseOnExceptions](#setpauseonexceptions), [evaluateOnCallFrame](#evaluateoncallframe), [setvariablevalue](#setvariablevalue), [setBlackboxPatterns](#setblackboxpatterns), [msSetDebuggerPropertyValue](#mssetdebuggerpropertyvalue) |
-| [**Ereignisse**](#events) | [scriptParsed](#scriptparsed), [breakpointResolved](#breakpointresolved), [angehalten](#paused), [fortgesetzt](#resumed) |
+| [**Veranstaltungen**](#events) | [scriptParsed](#scriptparsed), [breakpointResolved](#breakpointresolved), [angehalten](#paused), [fortgesetzt](#resumed) |
 | [**Typen**](#types) | [Breakpoint](#breakpointid), [CallFrameId](#callframeid), [Location](#location), [BreakLocation](#breaklocation), [CallFrame](#callframe), [Scope](#scope) |
-| [**Abhängigkeiten**](#dependencies) | [Runtime](runtime.md) |
+| [**Abhängigkeiten**](#dependencies) | [Laufzeit](runtime.md) |
 ## Methoden
 
 ### Aktivieren
@@ -454,7 +455,7 @@ Wertet den Ausdruck für einen angegebenen Aufruf Frame aus.
 
 ---
 
-## Ereignisse
+## Veranstaltungen
 
 ### scriptParsed
 Wird ausgelöst, wenn das Skript analysiert wird. Dieses Ereignis wird beim Aktivieren des Debuggers auch für alle bekannten und nicht gesammelten Skripts ausgelöst.
@@ -813,4 +814,4 @@ Beschreibung des Bereichs
 
 ## Abhängigkeiten
 
-[Runtime](runtime.md)
+[Laufzeit](runtime.md)

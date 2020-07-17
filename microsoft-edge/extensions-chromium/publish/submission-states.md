@@ -1,18 +1,18 @@
 ---
 description: Die Schritte zum Erstellen des Microsoft Edge Addons-entwicklerkontos im Partner Center.
-title: Öffnen eines neuen entwicklerkontos
+title: Status der Erweiterungs Übermittlung und Übersicht
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/26/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge-chromium
 keywords: Edge-Chromium, Erweiterungen-Entwicklung, Browser-Erweiterungen, Addons, Partner Center, Entwickler
-ms.openlocfilehash: 008691d80d6dfcb7a199a326a8c94aa5571712c5
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 3bb648ee9db062bcb12f7592df752ab25d8322b5
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10567484"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882646"
 ---
 # Status der Erweiterungs Übermittlung und Übersicht  
 

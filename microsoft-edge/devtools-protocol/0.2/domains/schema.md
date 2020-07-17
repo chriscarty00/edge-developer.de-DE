@@ -1,19 +1,20 @@
 ---
 description: Referenz für die Schema Domäne. Enthält Informationen zum Protokollschema.
-title: Schema Domäne – devtools-Protokoll Version 0,2
-author: pelavall
-ms.author: pelavall
-ms.date: 8/17/2018
+title: Schema Domain-devtools Protocol Version 0,2 (EdgeHTML)
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
-ms.openlocfilehash: df86e6669956c14b7c905514fc44376f71eaa993
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: d0fbe9cde742d255797a2460b940732ffa5b8f27
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10567527"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882877"
 ---
-# Schema
+# Schema Domain-devtools Protocol Version 0,2 (EdgeHTML)  
+
 Enthält Informationen zum Protokollschema.
 
 | | |

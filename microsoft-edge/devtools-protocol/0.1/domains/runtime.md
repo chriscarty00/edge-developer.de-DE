@@ -1,26 +1,27 @@
 ---
 description: Referenz für die Runtime-Domäne. Runtime-Domäne macht JavaScript-Runtime mithilfe von Remote Auswertungs-und Spiegel Objekten verfügbar. Evaluierungsergebnisse werden als Spiegelungs Objekt zurückgegeben, die den Objekttyp, die Zeichenfolgendarstellung und den eindeutigen Bezeichner verfügbar machen, die für weitere Objektverweise verwendet werden können. Ursprüngliche Objekte werden im Arbeitsspeicher verwaltet, sofern Sie nicht explizit freigegeben werden.
-title: Runtime Domain-devtools Protocol Version 0,1
-author: pelavall
-ms.author: pelavall
-ms.date: 12/15/2017
+title: Runtime Domain-devtools Protocol Version 0,1 (EdgeHTML)
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
-ms.openlocfilehash: 33bc98b272aaa8831e908207b97ea7d3d0842976
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 15d6cd254ddbe2337e3db850620dc3eb20a5ea67
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10567555"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882933"
 ---
-# Runtime
+# Runtime Domain-devtools Protocol Version 0,1 (EdgeHTML)  
+
 Runtime-Domäne macht JavaScript-Runtime mithilfe von Remote Auswertungs-und Spiegel Objekten verfügbar. Evaluierungsergebnisse werden als Spiegelungs Objekt zurückgegeben, die den Objekttyp, die Zeichenfolgendarstellung und den eindeutigen Bezeichner verfügbar machen, die für weitere Objektverweise verwendet werden können. Ursprüngliche Objekte werden im Arbeitsspeicher verwaltet, sofern Sie nicht explizit freigegeben werden.
 
 | | |
 |-|-|
 | [**Methoden**](#methods) | [aktivieren](#enable), [Deaktivieren](#disable), [Auswerten](#evaluate), [callFunctionOn](#callfunctionon), [GetProperties](#getproperties) |
-| [**Ereignisse**](#events) | [executionContextsCleared](#executioncontextscleared), [exceptionThrown](#exceptionthrown) |
+| [**Veranstaltungen**](#events) | [executionContextsCleared](#executioncontextscleared), [exceptionThrown](#exceptionthrown) |
 | [**Typen**](#types) | [Skript](#scriptid)- [RemoteObjectId](#remoteobjectid), [unserializablevalue](#unserializablevalue), [RemoteObject](#remoteobject), [PropertyDescriptor](#propertydescriptor), [CallArgument](#callargument), [ExecutionContextId](#executioncontextid), [ExceptionDetails](#exceptiondetails), [timestamp](#timestamp), [CallFrame](#callframe), [StackTrace](#stacktrace) |
 ## Methoden
 
@@ -205,7 +206,7 @@ Gibt Eigenschaften eines angegebenen Objekts zurück. Die Objektgruppe des Ergeb
 
 ---
 
-## Ereignisse
+## Veranstaltungen
 
 ### executionContextsCleared
 Wird ausgegeben, wenn alle executionContexts im Browser gelöscht wurden

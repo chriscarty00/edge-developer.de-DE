@@ -1,18 +1,18 @@
 ---
 description: Progressives verbessern ihrer PWA für Windows mit nativen App-Features
-title: Anpassen von PWA für Windows
+title: Anpassen der PWA-EdgeHTML für Windows
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/22/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Progressive Web-Apps, PWA, Edge, Windows, WinRT, UWP, EdgeHTML
-ms.openlocfilehash: 5bad708db5b13517fd1887214a5e1d5457796ee2
-ms.sourcegitcommit: e07de36ee9fbe20422ffc2c62b98839851e1b02b
+ms.openlocfilehash: 8ba682b03182194a773568254b66c3616bf4c3e2
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "10604011"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882786"
 ---
 # Anpassen der PWA-EdgeHTML für Windows  
 
@@ -47,7 +47,7 @@ Richten Sie Ihre Entwicklungsumgebung für die Windows-app in Visual Studio ein.
     ![Visual Studio-Auswahldialogfeld für UWP-Projektziel-Builds](media/vs-target-min-version.png)  
 
     Das neue Projekt wird geladen, wenn der Paket-appxmanifest-Designer geöffnet wird.  Hier konfigurieren Sie die Details Ihrer APP, einschließlich Paketidentität, Paketabhängigkeiten, erforderliche Funktionen, visuelle Elemente und Erweiterbarkeitspunkte.  Hierbei handelt es sich um eine leicht konfigurierbare, temporäre Version des App-paketmanifests, das während der APP-Entwicklung verwendet wird.  
-    Wenn Sie Ihr App-Projekt erstellen, [generiert Visual Studio eine AppxManifest. XML-][UwpSchemasAppxpackageUapmanifestschemaGeneratePackageManifest] Datei aus diesen Metadaten, die zum Installieren und Ausführen der APP verwendet wird.  Wenn Sie Ihre Datei aktualisieren, müssen Sie `package.appxmanifest` das Projekt neu erstellen, damit beide in ihrer zur Laufzeit wiedergegeben werden `AppxManifest.xml` .  
+    Wenn Sie Ihr App-Projekt erstellen, [generiert Visual Studio eine AppxManifest.xml][UwpSchemasAppxpackageUapmanifestschemaGeneratePackageManifest] -Datei aus diesen Metadaten, die zum Installieren und Ausführen der APP verwendet wird.  Wenn Sie Ihre Datei aktualisieren, müssen Sie `package.appxmanifest` das Projekt neu erstellen, damit beide in ihrer zur Laufzeit wiedergegeben werden `AppxManifest.xml` .  
 
 1.  Geben Sie im Manifest-Designer- **Anwendungs** Bereich die URL ihrer PWA als `Start page` .
 
@@ -69,7 +69,7 @@ Richten Sie Ihre Entwicklungsumgebung für die Windows-app in Visual Studio ein.
     Sie können Ihre PWA als Windows 10-app ausführen und Debuggen.  Wenn Sie eine localhost-Website verwenden, um diesen Leitfaden zu durchlaufen, stellen Sie sicher, dass Sie ausgeführt wird.  Dann  
 1.  Erstellen Sie \ ( `Ctrl` + `Shift` + `F5` \), und führen `F5` Sie das PWA-Projekt aus.  Ihre Website sollte nun in einem eigenständigen App-Fenster gestartet werden.  Es handelt sich nicht nur um eine gehostete Web-App; Sie wird als Progressive Web-App auf Windows 10 ausgeführt.  
 
-    ![PWA wird in einem WWAHost. exe-Fenster ausgeführt](media/wwahost.png)  
+    ![PWA wird in einem WWAHost.exe Fenster ausgeführt](media/wwahost.png)  
 
 ## Debuggen Ihrer PWA \ (EdgeHTML \) als Windows-App  
 

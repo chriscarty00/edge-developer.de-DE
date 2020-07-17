@@ -1,25 +1,26 @@
 ---
 description: Verweis auf die Seiten Domäne Aktionen und Ereignisse im Zusammenhang mit der geprüften Seite gehören der Seiten Domäne an.
-title: Page Domain-devtools Protocol Version 0,2
-author: pelavall
-ms.author: pelavall
-ms.date: 8/17/2018
+title: Page Domain-devtools Protocol Version 0,2 (EdgeHTML)
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
-ms.openlocfilehash: 688cc1fcfce0b81c5eed0c858a4a60b4754c49a4
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 864515eefbcb809e280f2ab1d81015018272c398
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10567534"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882842"
 ---
-# Seite
+# Page Domain-devtools Protocol Version 0,2 (EdgeHTML)  
+
 Aktionen und Ereignisse im Zusammenhang mit der geprüften Seite gehören der Seiten Domäne an.
 
 | | |
 |-|-|
 | [**Methoden**](#methods) | [aktivieren](#enable), [Deaktivieren](#disable), [Navigieren](#navigate), [getFrameTree](#getframetree) |
-| [**Ereignisse**](#events) | [frameAttached](#frameattached), [frameDetached](#framedetached), [frameNavigated](#framenavigated), [loadEventFired](#loadeventfired), [domContentEventFired](#domcontenteventfired) |
+| [**Veranstaltungen**](#events) | [frameAttached](#frameattached), [frameDetached](#framedetached), [frameNavigated](#framenavigated), [loadEventFired](#loadeventfired), [domContentEventFired](#domcontenteventfired) |
 | [**Typen**](#types) | [Frame](#frameid)-Nr, [Frame](#frame), [FrameTree](#frametree) |
 ## Methoden
 
@@ -104,7 +105,7 @@ Gibt die aktuelle Frame Struktur zurück.
 
 ---
 
-## Ereignisse
+## Veranstaltungen
 
 ### frameAttached
 Wird ausgelöst, wenn Frame dem übergeordneten Element angefügt wurde.

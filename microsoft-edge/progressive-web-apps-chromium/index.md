@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: Progressive Web-Apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft Store
-ms.openlocfilehash: 482f498e246ee265424f7b80ff3cd67f78501ee2
-ms.sourcegitcommit: 9169d784485e3cb0b1987a8f395c4bb688bd9b2e
+ms.openlocfilehash: 90740bac07ebfd74f89e2524e6955621e1b09b05
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "10583035"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882807"
 ---
 # Progressive Web-Apps unter Windows  
 
@@ -86,33 +86,31 @@ Wenn Sie eine progressive Web App für Webstandard-APIs erstellen, kann Ihre Anw
 > [!IMPORTANT]
 > Informationen zum Anpassen von PWAs speziell für Windows 10, die WinRT-API-Anforderungen mithilfe von JavaScript erstellen, finden Sie in der [Dokumentation zu den EdgeHTML-PWA-Features][PwaEdgehtmlIndex].  Erfahren Sie mehr über das Testen ihrer PWA unter Windows 10 und deren Verteilung im Microsoft Store.  
 
+> [!NOTE]
+> Schauen Sie sich die [Build 2020 PWA-Sitzung][BuildVideo] an, um einen Überblick über die Vorteile von PWA, bevorstehende Features und kurze Demos zu finden. 
+
 ## Anforderungen  
 
 Damit Sie als PWA ausgeführt werden kann, sollte Ihre vom Server gehostete Web-App die folgenden Mindestanforderungen erfüllen:  
 
-|  | Anforderung | Details | 
-|:--- |:--- |:--- |  
-| X | [HTTPS][WikiHttps] | Schützen Sie Ihre Benutzer, indem Sie eine sichere Verbindung für die Server-oder App-Kommunikation bereitstellen.  Dienstmitarbeiter und andere PWA-Technologien funktionieren nur mit Webressourcen, die über eine sichere Verbindung bereitgestellt werden \ (oder `localhost` zu Debugging-Zwecken \).  |  
-| X | [Dienstmitarbeiter][MDNServiceWorkerApi] | Verwenden Sie Dienst Arbeitsthreads, um als Netzwerk Proxys zwischen Ihrem Server und der Client-App zu fungieren, um Offline-Unterstützung, Zwischenspeicherung von Ressourcen, Push-Benachrichtigungen, Synchronisierung von Hintergrunddaten und Optimierungen beim Laden von Seiten zu ermöglichen.  |  
-| X | [Web App-Manifest][MDNWebAppManifest] | Stellen Sie eine JSON-basierte Metadatendatei bereit, die wichtige Informationen zu Ihrer Web-App beschreibt \ (wie Symbole, Sprache und URL-Einstiegspunkt \), damit Windows 10 und andere Hostplattformen ihren PWA-Benutzern eine installierbare, systemeigene App-ähnliche Benutzeroberfläche bereitstellen können.  |  
+| Anforderung | Details | 
+|:--- |:--- |  
+| [HTTPS][WikiHttps] | Schützen Sie Ihre Benutzer, indem Sie eine sichere Verbindung für die Server-oder App-Kommunikation bereitstellen.  Dienstmitarbeiter und andere PWA-Technologien funktionieren nur mit Webressourcen, die über eine sichere Verbindung bereitgestellt werden \ (oder `localhost` zu Debugging-Zwecken \).  |  
+| [Service Workers][MDNServiceWorkerApi] | Verwenden Sie Dienst Arbeitsthreads, um als Netzwerk Proxys zwischen Ihrem Server und der Client-App zu fungieren, um Offline-Unterstützung, Zwischenspeicherung von Ressourcen, Push-Benachrichtigungen, Synchronisierung von Hintergrunddaten und Optimierungen beim Laden von Seiten zu ermöglichen.  |  
+| [Web App-Manifest][MDNWebAppManifest] | Stellen Sie eine JSON-basierte Metadatendatei bereit, die wichtige Informationen zu Ihrer Web-App beschreibt \ (wie Symbole, Sprache und URL-Einstiegspunkt \), damit Windows 10 und andere Hostplattformen ihren PWA-Benutzern eine installierbare, systemeigene App-ähnliche Benutzeroberfläche bereitstellen können.  |  
 
 Um eine tolle PWA zu sein, muss Ihre APP auch die folgenden Voraussetzungen erfüllen.  
 
-|  | Anforderung | Details | 
-|:--- |:--- |:--- |  
-| X | [Browserübergreifende Kompatibilität][MDNCrossBrowserTesting] | Stellen Sie sicher, dass Ihre PWA-Funktion in verschiedenen Browsern und Umgebungen [getestet][MicrosoftDeveloperEdgeToolsRemote] wird.  |  
-| X | [Dynamisches Design][WikiResponsiveWebDesign] | Verwenden Sie flüssige Layouts und flexible Bilder mit CSS- [Raster][MDNCssGridLayout], [Flexbox][MDNCssFlexibleBoxLayout], CSS- [Raster][MDNCssGridLayout] und [Flexbox][MDNCssFlexibleBoxLayout] , [medienabfragen][MDNMediaQueries]und reaktionsfähigen [Bildern][MDNResponsiveImages] , um Ihre UX an das Gerät Ihres Benutzers anzupassen.  Verwenden Sie die [Geräte-Emulations Tools][DevToolsGuide|::ref1::|] Ihres Browsers, um lokal zu testen, oder richten Sie eine [Remote Debugsitzung][DevToolsProtocolClientsEdgeDevToolsPreview] ein, um direkt auf einem Zielgerät zu testen.  |  
-| X | [Deep-Linking][WikiDeepLinking] | Leiten Sie jede Seite Ihrer Website an eine eindeutige URL weiter, damit vorhandene Benutzer Ihnen helfen können, ein noch größeres Publikum durch Social Media Sharing zu engagieren.  |  
-| X | [Bewährte Verfahren][Webhint] | Verwenden Sie Code Quality Tools wie [webhint][Webhint] Linter, um die Effizienz, Robustheit, Sicherheit und Barrierefreiheit Ihrer APP zu optimieren.  |  
-| X | [Chrome PWA-Checkliste][WebDevGoodPwaChecklist] | Überprüfen Sie Ihre PWA mit der Google-Baseline-PWA-Checkliste.  |  
+| Anforderung | Details | 
+|:--- |:--- |  
+| [Browserübergreifende Kompatibilität][MDNCrossBrowserTesting] | Stellen Sie sicher, dass Ihre PWA-Funktion in verschiedenen Browsern und Umgebungen [getestet][MicrosoftDeveloperEdgeToolsRemote] wird.  |  
+| [Dynamisches Design][WikiResponsiveWebDesign] | Verwenden Sie flüssige Layouts und flexible Bilder mit CSS- [Raster][MDNCssGridLayout], [Flexbox][MDNCssFlexibleBoxLayout], CSS- [Raster][MDNCssGridLayout] und [Flexbox][MDNCssFlexibleBoxLayout] , [medienabfragen][MDNMediaQueries]und reaktionsfähigen [Bildern][MDNResponsiveImages] , um Ihre UX an das Gerät Ihres Benutzers anzupassen.  Verwenden Sie die [Geräte-Emulations Tools][DevToolsGuide|::ref1::|] Ihres Browsers, um lokal zu testen, oder richten Sie eine [Remote Debugsitzung][DevToolsProtocolClientsEdgeDevToolsPreview] ein, um direkt auf einem Zielgerät zu testen.  |  
+| [Deep-Linking][WikiDeepLinking] | Leiten Sie jede Seite Ihrer Website an eine eindeutige URL weiter, damit vorhandene Benutzer Ihnen helfen können, ein noch größeres Publikum durch Social Media Sharing zu engagieren.  |  
+| [Bewährte Verfahren][Webhint] | Verwenden Sie Code Quality Tools wie [webhint][Webhint] Linter, um die Effizienz, Robustheit, Sicherheit und Barrierefreiheit Ihrer APP zu optimieren.  |  
+| [Chrome PWA-Checkliste][WebDevGoodPwaChecklist] | Überprüfen Sie Ihre PWA mit der Google-Baseline-PWA-Checkliste.  |  
 
 Wenn Sie Ihre PWA in eine [Microsoft Store][MicrosoftDeveloperStore] -Anwendung umwandeln möchten, wechseln Sie zur Dokumentation zur [Progressive Web Apps (EdgeHTML)][PwaEdgehtmlMicrosoftStore] .  
-
-## Aktuelle Verfügbarkeit  
-
-Browser Modul-Unterstützung für Progressive Web App-Anforderungen für eine Reihe von Architekturkomponenten, wobei die Netzwerkinfrastruktur, die der [Fetch-API][MDNFetchApi]zugrunde liegt, am bedeutendsten ist.  
-
-Für Microsoft Edge \ (Chromium \) enthält die Browser Plattform vollständige Unterstützung für diese Features, die auf allen Geräten funktionieren, auf denen Microsoft Edge \ (Chrom \) unterstützt wird.  
+  
 
 <!-- image links -->  
 
@@ -181,6 +179,8 @@ Für Microsoft Edge \ (Chromium \) enthält die Browser Plattform vollständige 
 [MDNServiceWorkerApi]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API "Service Worker-API | MDN"  
 [MDNSyncManager]: https://developer.mozilla.org/docs/Web/API/SyncManager "Synchronisierungs-Manager | MDN"  
 [MDNWebAppManifest]: https://developer.mozilla.org/docs/Web/Manifest "Web App-Manifest | MDN"  
+
+[BuildVideo]: https://www.youtube.com/watch?v=y4p_QHZtMKM "PWA-Video"
 
 [PWABuilder]: https://www.pwabuilder.com "PWABuilder"  
 

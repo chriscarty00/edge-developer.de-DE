@@ -1,21 +1,21 @@
 ---
 description: Verwenden Sie den Debugger, um den Code zu durchlaufen und zu behandeln.
-title: DevTools-Debugger
+title: Debugger-devtools (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools, Debugger, Debuggen, Haltepunkte, Uhren, Dienstmitarbeiter, Cache-API, Web-Speicher, Cookies
 ms.custom: seodec18
-ms.openlocfilehash: f82fbb057a3ad1027309d89db1a15dbcbea31292
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 722277618cd8d6d5d6dba4f2a8bd3a28b6466f77
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10568441"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882919"
 ---
-# Debugger
+# Debugger-devtools (EdgeHTML)
 
 Verwenden Sie den **Debugger** , um Code zu durchlaufen, Uhren und Haltepunkte einzurichten, Live den Code zu bearbeiten und ihre Caches zu überprüfen. Testen und Problembehandlung für Ihren Code durch:
 
@@ -97,7 +97,7 @@ Zum Nachverfolgen von Bibliotheken in Debug-Sitzungen können Sie diese Dateien 
 
 Sie sehen die Schaltfläche " **Quell Karten umschalten** " für Code, der in einer Sprache geschrieben ist, die in JavaScript oder CSS kompiliert wird und eine *Quell Karte* (eine Zwischendatei Zuordnung zur ursprünglichen Quelle) bereitstellt. Mit dieser Option wird der Debugger anweisen, die ursprüngliche Quelle zur Verwendung für das Debuggen darzustellen (und nicht die kompilierte Datei, die im Browser *tatsächlich* ausgeführt wird).
 
-Der devtools überprüft, ob der Compiler, der die JavaScript-Datei generiert hat, einen Kommentar mit dem Namen der Zuordnungsdatei enthielt. Wenn beispielsweise ein Compiler " *MyFile. js* " in " *MyFile. min. js*" komprimiert hat, wird möglicherweise auch eine Zuordnungsdatei " *MyFile. min. js. map* " generiert, und in der komprimierten Datei wird wie folgt ein Kommentar eingefügt:
+Der devtools überprüft, ob der Compiler, der die JavaScript-Datei generiert hat, einen Kommentar mit dem Namen der Zuordnungsdatei enthielt. Wenn beispielsweise ein Compiler *myfile.js* auf *myfile.min.js*komprimiert hat, wird möglicherweise auch eine Zuordnungsdatei, *myfile.min.js. map* , generiert und ein Kommentar in der komprimierten Datei wie folgt eingefügt:
 
 ```JavaScript
 //# sourceMappingURL=myfile.min.js.map
@@ -186,7 +186,7 @@ Breakpoint-Typ | Beschreibung | So wird es gemacht
 
 Bedingte Haltepunkte und Ablaufverfolgungspunkte haben Zugriff auf alle lokalen und globalen Variablen, die sich derzeit im Bereich befinden, wenn Sie in den Debugger einbrechen.
 
-### Dom-Haltepunkte
+### DOM-Haltepunkte
 
 Verwalten Sie Ihre Dom-mutations Haltepunkte auf der Registerkarte **DOM-Haltepunkte** , einschließlich Deaktivierung, löschen und erneute Bindung.  [DOM-Haltepunkte können](./elements/dom-breakpoints.md) über die *HTML-Strukturansicht* im **Element** Panel gesetzt werden.
 

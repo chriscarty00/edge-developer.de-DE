@@ -1,17 +1,17 @@
 ---
-title: DevTools für Anfänger
+title: 'DevTools für Anfänger: Erste Schritte mit HTML und dem Dom'
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/16/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: 8695fe1b2c5d78bd074447acd26a1f01a5833b2d
-ms.sourcegitcommit: 8bfa239274e7a4856b961b9cf163b08d96463c10
+ms.openlocfilehash: d992a6ca68de07c879ca8e319ee6c22782924a6b
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "10581587"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882730"
 ---
 <!-- Copyright Katherine Jackson 
 
@@ -180,7 +180,7 @@ Bevor Sie mit der Bearbeitung Ihrer Inhalte von Microsoft Edge devtools beginnen
     
     > ##### Abbildung 12  
     > Der mysteriöse Text `A new element!?!` ist nirgendwo zu finden `index.html`  
-    > ![Der mysteriöse Text ein neues Element!?! ist in Index. html nirgendwo zu finden][ImageHtmlDom2]  
+    > ![Der mysteriöse Text ein neues Element!?! ist nirgendwo in index.html zu finden][ImageHtmlDom2]  
     
 1.  Wechseln Sie zurück zur **Registerkarte Live**, klicken Sie mit der rechten Maustaste `A new element!?!` , und wählen Sie über **prüfen**aus.  
     
@@ -318,7 +318,7 @@ Sie haben es fast geschafft.  Sie haben in devtools einige Änderungen an Ihrer 
     
     > ##### Abbildung 24  
     > Aussehen der `index.html` Datei  
-    > ![Aussehen der Datei "index. html"][ImageHtmlCopy2]  
+    > ![So sollte Ihre index.html-Datei aussehen][ImageHtmlCopy2]  
     
 ## Nächste Schritte   
 
@@ -339,7 +339,7 @@ Sie haben es fast geschafft.  Sie haben in devtools einige Änderungen an Ihrer 
 [ImageHtmlAdd4]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-add4.msft.png "Abbildung 9: der neue Code ist auf der Registerkarte "Editor" hervorgehoben"  
 [ImageHtmlAdd5]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-add5.msft.png "Abbildung 10: die neue Liste wird auf der Registerkarte "Live" angezeigt"  
 [ImageHtmlDom1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-dom1.msft.png "Abbildung 11: am unteren Rand der Seite der Text ein neues Element!?! kann angezeigt werden"  
-[ImageHtmlDom2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-dom2.msft.png "Abbildung 12: der mysteriöse Text ein neues Element!?! ist in Index. html nirgendwo zu finden"  
+[ImageHtmlDom2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-dom2.msft.png "Abbildung 12: der mysteriöse Text ein neues Element!?! ist nirgendwo in index.html zu finden"  
 [ImageHtmlDom3]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-dom3.msft.png "Abbildung 13: Überprüfen von Text"  
 [ImageHtmlDom4]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-dom4.msft.png "Abbildung 14: devtools ist neben der Seite geöffnet"  
 [ImageHtmlEdit1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-edit1.msft.png "Abbildung 15: Bearbeiten des Knotens als HTML"  
@@ -351,7 +351,7 @@ Sie haben es fast geschafft.  Sie haben in devtools einige Änderungen an Ihrer 
 [ImageHtmlDelete1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-delete1.msft.png "Abbildung 21: Auswählen des zu löschenden Knotens"  
 [ImageHtmlDelete2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-delete2.msft.png "Abbildung 22: der Knoten wurde gelöscht"  
 [ImageHtmlCopy1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-copy1.msft.png "Abbildung 23: die von Ihnen vorgenommenen Änderungen sind nicht mehr vorhanden"  
-[ImageHtmlCopy2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-copy2.msft.png "Abbildung 24: Aussehen der Datei "index. html""  
+[ImageHtmlCopy2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-copy2.msft.png "Abbildung 24: Aussehen Ihrer index.html-Datei"  
 
 <!--- links --->  
 
@@ -361,7 +361,7 @@ Sie haben es fast geschafft.  Sie haben in devtools einige Änderungen an Ihrer 
 
 [CourseraIntroductionToWebDevelopment]: https://www.coursera.org/learn/web-development "Einführung in die Web-Entwicklung | Coursera"  
 
-[GlitchAlluringShockIndex]: https://glitch.com/edit/#!/alluring-shock?path=index.html "Index. html-verführerisch-Schock | Glitch"  
+[GlitchAlluringShockIndex]: https://glitch.com/edit/#!/alluring-shock?path=index.html "index.html-verführerisch-Schock | Glitch"  
 
 [MDNGettingStartedHtml]: https://developer.mozilla.org/docs/Learn/HTML/Introduction_to_HTML/Getting_started "Erste Schritte mit HTML | MDN"  
 [MDNIntroductionDom]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction "Einführung in das DOM | MDN"  

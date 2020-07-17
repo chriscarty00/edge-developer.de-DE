@@ -1,20 +1,20 @@
 ---
 description: Sicherstellen, dass Ihre PWA eine hervorragende Funktionalität für Xbox bietet
-title: Anpassen von PWA für Windows
+title: Progressive Web-Apps für Xbox One
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Progressive Web-Apps, PWA, Edge, Windows, UWP, Xbox, Xbox One, TVJS
-ms.openlocfilehash: 8c2660c8821826660d2030f832ae449ff4a061ad
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: dfa2b2d252bb788c0010017de57ab147d407c5f7
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10568697"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882853"
 ---
-# Progressive Web-Apps für Xbox One
+# Progressive Web-Apps für Xbox One  
 
 Sie können eine Webanwendung erweitern und als Xbox One-App über den Microsoft Store verfügbar machen, während Sie weiterhin Ihre vorhandenen Frameworks, CDN und das Server-Back-End verwenden.  Und wie alle apps für die universelle Windows-Plattform (UWP) können Progressive Web Apps (PWAs), die auf Xbox One ausgeführt werden, auch Native Windows 10-APIs aufrufen.  Es gibt bereits eine Reihe von PWAs, die für die Xbox One verfügbar sind, insbesondere in der Kategorie der [Medienwiedergabe-apps](#media-pwas-on-xbox).  
 
@@ -28,10 +28,10 @@ Nun können Sie Ihre APP für Tests mit *PWA Builder* oder *Visual Studio*bereit
 
 ### Option 1: PWA-Generator
 
-Der [PWA-Generator](https://www.pwabuilder.com/) ist eine Node. js-APP, die Sie über den Knoten Paket-Manager (NPM) installieren können. Sie verwendet die Metadaten Ihrer Website, um systemeigene gehostete Apps für Android, IOS und Windows zu generieren. Wenn Ihre Website bereits über ein [Web App-Manifest](https://developer.mozilla.org/docs/Web/Manifest)verfügt, wird Sie von PWA Builder zum Generieren plattformspezifischer Installationspakete verwendet. Andernfalls generiert der PWA-Generator eine grundlegende *Manifest. JSON* -Datei auf der Grundlage der Merkmale ihrer Website.
+Der [PWA-Generator](https://www.pwabuilder.com/) ist eine Node.js-APP, die Sie über den Knoten Paket-Manager (NPM) installieren können. Sie verwendet die Metadaten Ihrer Website, um systemeigene gehostete Apps für Android, IOS und Windows zu generieren. Wenn Ihre Website bereits über ein [Web App-Manifest](https://developer.mozilla.org/docs/Web/Manifest)verfügt, wird Sie von PWA Builder zum Generieren plattformspezifischer Installationspakete verwendet. Andernfalls generiert PWA Builder basierend auf den Eigenschaften Ihrer Website eine grundlegende *manifest.jsfür* die Datei.
 
 #### Anforderungen
- - [Node. js](https://nodejs.org/en/), das NPM umfasst.
+ - [Node.js](https://nodejs.org/en/), das NPM umfasst.
 
 #### Setup
 
@@ -154,7 +154,7 @@ Zum Zeitpunkt der Erstellung dieses Artikels [ `cbcs` ist die Codierungsunterst�
 
 
 ## Weitere Informationen
-[South Ridge Video](https://github.com/Microsoft/uwp-experiences/tree/master/apps/video): eine Beispiel-Video-App für Xbox, die mit "reagieren. js" erstellt und auf einem Webserver gehostet wird.
+[South Ridge Video](https://github.com/Microsoft/uwp-experiences/tree/master/apps/video): eine Beispiel-Video-App für Xbox, die mit React.js erstellt und auf einem Webserver gehostet wird.
 
 [Entwerfen für Xbox und TV](/windows/uwp/design/devices/designing-for-tv): Entwerfen Sie Ihre APP für die universelle Windows-Plattform (UWP) so, dass Sie gut aussieht und auf Xbox One-und Fernsehbildschirmen gut funktioniert.
 

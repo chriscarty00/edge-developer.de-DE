@@ -1,19 +1,19 @@
 ---
 description: Microsoft Edge devtools Protocol, Version 0,2, unterstützt die folgenden HTTP-Endpunkte.
-title: Microsoft Edge devtools Protocol, Version 0,2, HTTP-Endpunkte
+title: Microsoft Edge devtools Protocol, Version 0,2, HTTP-Endpunkte (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
-ms.openlocfilehash: cc3d0156d92ab479168e0b588ae2b7c9faa7e58f
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: eb5b29e4d8149f511d8a7cbca3da72391a13e449
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10567523"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882858"
 ---
-# HTTP-Endpunkte des devtools-Protokolls
+# Microsoft Edge devtools Protocol, Version 0,2, HTTP-Endpunkte (EdgeHTML)  
 
 > [!NOTE]
 > Version 0,2 des Microsoft Edge devtools-Protokolls funktioniert nur auf dem [Windows 10 October 2018-Update]() und später in [Windows Insider Preview](https://insider.windows.com/en-us/getting-started/) -Builds.

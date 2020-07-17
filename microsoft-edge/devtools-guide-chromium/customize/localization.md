@@ -1,19 +1,19 @@
 ---
-title: Anpassen von Microsoft Edge devtools
+title: Ändern der devtools-Spracheinstellungen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools, Lokalisierung, Loc, Sprache
-ms.openlocfilehash: cd95e965e14d5214842a74e798d9d3a8ae90c193
-ms.sourcegitcommit: 738a012a2e0edfc63315c2df77b170e26ad9169b
+ms.openlocfilehash: 83b536c1699b4052857d206456895ac568cf4faa
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "10604159"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882723"
 ---
-# Browser Sprache vergleichen  
+# Ändern der devtools-Spracheinstellungen  
 
 Ihre Entwickler Tools entsprechen standardmäßig ihrer Browsersprache, wenn es sich um eine der zehn derzeit unterstützten Sprachen handelt (zusätzlich zu Englisch \).  
 
@@ -58,16 +58,12 @@ Ihre Entwickler Tools entsprechen standardmäßig ihrer Browsersprache, wenn es 
    :::column-end:::
 :::row-end:::  
 
-> #### Abbildung1  
-> DevTools in Japanisch  
-> ![DevTools in Japanisch][ImageJpDevTools]  
+:::image type="complex" source="./media/localization-jp.png" alt-text="DevTools in Japanisch" lightbox="./media/localization-jp.png":::
+   DevTools in Japanisch  
+:::image-end:::  
 
 Wenn Sie devtools auf Englisch zurücksetzen möchten, wechseln Sie zu [devtools-Einstellungen][DevtoolschromiumCustomizeIndexSettings] , oder drücken Sie `F1`  >  **Einstellungen** , und deaktivieren Sie das Kontrollkästchen **Browsersprache vergleichen** .  
 
-<!-- image links -->
-
-[ImageJpDevTools]: ./media/localization-jp.png "Abbildung 1: devtools in Japanisch"  
-
 <!-- links -->  
 
-[DevtoolschromiumCustomizeIndexSettings]: ./index.md#settings "Einstellungen – anpassen der Microsoft Edge-devtools"  
+[DevtoolschromiumCustomizeIndexSettings]: ./index.md#settings "Einstellungen – anpassen von Microsoft Edge devtools | Microsoft docs"  
