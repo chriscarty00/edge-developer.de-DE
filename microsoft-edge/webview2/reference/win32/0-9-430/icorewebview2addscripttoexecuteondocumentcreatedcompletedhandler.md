@@ -3,41 +3,40 @@ description: Hosten von Webinhalten in ihrer Win32-App mit dem Microsoft Edge We
 title: 0.9.430-WebView2 Win32 C++ ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Host, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: 03b9b229517023421b25f1f14917813a1e8af193
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 3c34c75e62fd73530d338e618469e071648f2fcb
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10881172"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10884344"
 ---
-# <span data-ttu-id="13793-104">0.9.430-Interface-ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler</span><span class="sxs-lookup"><span data-stu-id="13793-104">0.9.430 - interface ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler</span></span> 
+# <span data-ttu-id="b898e-104">0.9.430-Interface-ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler</span><span class="sxs-lookup"><span data-stu-id="b898e-104">0.9.430 - interface ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler</span></span> 
 
-> [!NOTE]
-> <span data-ttu-id="13793-105">Diese Schnittstelle kann nach der SDK-Version 0.9.430 geändert oder für Versionen nicht verfügbar sein.</span><span class="sxs-lookup"><span data-stu-id="13793-105">This interface may be altered or unavailable for releases after SDK version 0.9.430.</span></span> <span data-ttu-id="13793-106">Die neueste API-Referenz finden Sie unter [Referenz](../../../webview2-api-reference.md) .</span><span class="sxs-lookup"><span data-stu-id="13793-106">Please refer to [Reference](../../../webview2-api-reference.md) for the latest API reference.</span></span>
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler
   : public IUnknown
 ```
 
-<span data-ttu-id="13793-107">Der Aufrufer implementiert diese Schnittstelle, um das Ergebnis der AddScriptToExecuteOnDocumentCreated-Methode zu empfangen.</span><span class="sxs-lookup"><span data-stu-id="13793-107">The caller implements this interface to receive the result of the AddScriptToExecuteOnDocumentCreated method.</span></span>
+<span data-ttu-id="b898e-105">Der Aufrufer implementiert diese Schnittstelle, um das Ergebnis der AddScriptToExecuteOnDocumentCreated-Methode zu empfangen.</span><span class="sxs-lookup"><span data-stu-id="b898e-105">The caller implements this interface to receive the result of the AddScriptToExecuteOnDocumentCreated method.</span></span>
 
-## <span data-ttu-id="13793-108">Zusammenfassung</span><span class="sxs-lookup"><span data-stu-id="13793-108">Summary</span></span>
+## <span data-ttu-id="b898e-106">Zusammenfassung</span><span class="sxs-lookup"><span data-stu-id="b898e-106">Summary</span></span>
 
- <span data-ttu-id="13793-109">Member</span><span class="sxs-lookup"><span data-stu-id="13793-109">Members</span></span>                        | <span data-ttu-id="13793-110">Beschreibungen</span><span class="sxs-lookup"><span data-stu-id="13793-110">Descriptions</span></span>
+ <span data-ttu-id="b898e-107">Member</span><span class="sxs-lookup"><span data-stu-id="b898e-107">Members</span></span>                        | <span data-ttu-id="b898e-108">Beschreibungen</span><span class="sxs-lookup"><span data-stu-id="b898e-108">Descriptions</span></span>
 --------------------------------|---------------------------------------------
-[<span data-ttu-id="13793-111">Invoke</span><span class="sxs-lookup"><span data-stu-id="13793-111">Invoke</span></span>](#invoke) | <span data-ttu-id="13793-112">Wird aufgerufen, um dem Implementierer den Fertigstellungsstatus und das Ergebnis des entsprechenden asynchronen Methodenaufrufs bereitzustellen.</span><span class="sxs-lookup"><span data-stu-id="13793-112">Called to provide the implementer with the completion status and result of the corresponding asynchronous method call.</span></span>
+[<span data-ttu-id="b898e-109">Invoke</span><span class="sxs-lookup"><span data-stu-id="b898e-109">Invoke</span></span>](#invoke) | <span data-ttu-id="b898e-110">Wird aufgerufen, um dem Implementierer den Fertigstellungsstatus und das Ergebnis des entsprechenden asynchronen Methodenaufrufs bereitzustellen.</span><span class="sxs-lookup"><span data-stu-id="b898e-110">Called to provide the implementer with the completion status and result of the corresponding asynchronous method call.</span></span>
 
-## <span data-ttu-id="13793-113">Member</span><span class="sxs-lookup"><span data-stu-id="13793-113">Members</span></span>
+## <span data-ttu-id="b898e-111">Member</span><span class="sxs-lookup"><span data-stu-id="b898e-111">Members</span></span>
 
-#### <span data-ttu-id="13793-114">Invoke</span><span class="sxs-lookup"><span data-stu-id="13793-114">Invoke</span></span> 
+#### <span data-ttu-id="b898e-112">Invoke</span><span class="sxs-lookup"><span data-stu-id="b898e-112">Invoke</span></span> 
 
-<span data-ttu-id="13793-115">Wird aufgerufen, um dem Implementierer den Fertigstellungsstatus und das Ergebnis des entsprechenden asynchronen Methodenaufrufs bereitzustellen.</span><span class="sxs-lookup"><span data-stu-id="13793-115">Called to provide the implementer with the completion status and result of the corresponding asynchronous method call.</span></span>
+<span data-ttu-id="b898e-113">Wird aufgerufen, um dem Implementierer den Fertigstellungsstatus und das Ergebnis des entsprechenden asynchronen Methodenaufrufs bereitzustellen.</span><span class="sxs-lookup"><span data-stu-id="b898e-113">Called to provide the implementer with the completion status and result of the corresponding asynchronous method call.</span></span>
 
-> <span data-ttu-id="13793-116">öffentlicher HRESULT- [Aufruf](#invoke)(HRESULT-ErrorCode, LPCWSTR-ID)</span><span class="sxs-lookup"><span data-stu-id="13793-116">public HRESULT [Invoke](#invoke)(HRESULT errorCode,LPCWSTR id)</span></span>
+> <span data-ttu-id="b898e-114">öffentlicher HRESULT- [Aufruf](#invoke)(HRESULT-ErrorCode, LPCWSTR-ID)</span><span class="sxs-lookup"><span data-stu-id="b898e-114">public HRESULT [Invoke](#invoke)(HRESULT errorCode,LPCWSTR id)</span></span>
 

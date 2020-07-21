@@ -3,48 +3,47 @@ description: Hosten von Webinhalten in ihrer Win32-App mit dem Microsoft Edge We
 title: 0.9.430-WebView2 Win32 C++ ICoreWebView2ContentLoadingEventArgs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Host, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: 95fa97268fb5695aebf5c1414752cf12cf1da57b
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 7bccd93aeec2c5cfbc181ce5ab1cf58e29da48ce
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10881144"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10884295"
 ---
-# <span data-ttu-id="17776-104">0.9.430-Interface-ICoreWebView2ContentLoadingEventArgs</span><span class="sxs-lookup"><span data-stu-id="17776-104">0.9.430 - interface ICoreWebView2ContentLoadingEventArgs</span></span> 
+# <span data-ttu-id="625a5-104">0.9.430-Interface-ICoreWebView2ContentLoadingEventArgs</span><span class="sxs-lookup"><span data-stu-id="625a5-104">0.9.430 - interface ICoreWebView2ContentLoadingEventArgs</span></span> 
 
-> [!NOTE]
-> <span data-ttu-id="17776-105">Diese Schnittstelle kann nach der SDK-Version 0.9.430 geändert oder für Versionen nicht verfügbar sein.</span><span class="sxs-lookup"><span data-stu-id="17776-105">This interface may be altered or unavailable for releases after SDK version 0.9.430.</span></span> <span data-ttu-id="17776-106">Die neueste API-Referenz finden Sie unter [Referenz](../../../webview2-api-reference.md) .</span><span class="sxs-lookup"><span data-stu-id="17776-106">Please refer to [Reference](../../../webview2-api-reference.md) for the latest API reference.</span></span>
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface ICoreWebView2ContentLoadingEventArgs
   : public IUnknown
 ```
 
-<span data-ttu-id="17776-107">Ereignis-args für das ContentLoading-Ereignis.</span><span class="sxs-lookup"><span data-stu-id="17776-107">Event args for the ContentLoading event.</span></span>
+<span data-ttu-id="625a5-105">Ereignis-args für das ContentLoading-Ereignis.</span><span class="sxs-lookup"><span data-stu-id="625a5-105">Event args for the ContentLoading event.</span></span>
 
-## <span data-ttu-id="17776-108">Zusammenfassung</span><span class="sxs-lookup"><span data-stu-id="17776-108">Summary</span></span>
+## <span data-ttu-id="625a5-106">Zusammenfassung</span><span class="sxs-lookup"><span data-stu-id="625a5-106">Summary</span></span>
 
- <span data-ttu-id="17776-109">Member</span><span class="sxs-lookup"><span data-stu-id="17776-109">Members</span></span>                        | <span data-ttu-id="17776-110">Beschreibungen</span><span class="sxs-lookup"><span data-stu-id="17776-110">Descriptions</span></span>
+ <span data-ttu-id="625a5-107">Member</span><span class="sxs-lookup"><span data-stu-id="625a5-107">Members</span></span>                        | <span data-ttu-id="625a5-108">Beschreibungen</span><span class="sxs-lookup"><span data-stu-id="625a5-108">Descriptions</span></span>
 --------------------------------|---------------------------------------------
-[<span data-ttu-id="17776-111">get_IsErrorPage</span><span class="sxs-lookup"><span data-stu-id="17776-111">get_IsErrorPage</span></span>](#get_iserrorpage) | <span data-ttu-id="17776-112">"True", wenn der geladene Inhalt eine Fehlerseite ist.</span><span class="sxs-lookup"><span data-stu-id="17776-112">True if the loaded content is an error page.</span></span>
-[<span data-ttu-id="17776-113">get_NavigationId</span><span class="sxs-lookup"><span data-stu-id="17776-113">get_NavigationId</span></span>](#get_navigationid) | <span data-ttu-id="17776-114">Die ID der Navigation.</span><span class="sxs-lookup"><span data-stu-id="17776-114">The ID of the navigation.</span></span>
+[<span data-ttu-id="625a5-109">get_IsErrorPage</span><span class="sxs-lookup"><span data-stu-id="625a5-109">get_IsErrorPage</span></span>](#get_iserrorpage) | <span data-ttu-id="625a5-110">"True", wenn der geladene Inhalt eine Fehlerseite ist.</span><span class="sxs-lookup"><span data-stu-id="625a5-110">True if the loaded content is an error page.</span></span>
+[<span data-ttu-id="625a5-111">get_NavigationId</span><span class="sxs-lookup"><span data-stu-id="625a5-111">get_NavigationId</span></span>](#get_navigationid) | <span data-ttu-id="625a5-112">Die ID der Navigation.</span><span class="sxs-lookup"><span data-stu-id="625a5-112">The ID of the navigation.</span></span>
 
-## <span data-ttu-id="17776-115">Member</span><span class="sxs-lookup"><span data-stu-id="17776-115">Members</span></span>
+## <span data-ttu-id="625a5-113">Member</span><span class="sxs-lookup"><span data-stu-id="625a5-113">Members</span></span>
 
-#### <span data-ttu-id="17776-116">get_IsErrorPage</span><span class="sxs-lookup"><span data-stu-id="17776-116">get_IsErrorPage</span></span> 
+#### <span data-ttu-id="625a5-114">get_IsErrorPage</span><span class="sxs-lookup"><span data-stu-id="625a5-114">get_IsErrorPage</span></span> 
 
-<span data-ttu-id="17776-117">"True", wenn der geladene Inhalt eine Fehlerseite ist.</span><span class="sxs-lookup"><span data-stu-id="17776-117">True if the loaded content is an error page.</span></span>
+<span data-ttu-id="625a5-115">"True", wenn der geladene Inhalt eine Fehlerseite ist.</span><span class="sxs-lookup"><span data-stu-id="625a5-115">True if the loaded content is an error page.</span></span>
 
-> <span data-ttu-id="17776-118">Public HRESULT [get_IsErrorPage](#get_iserrorpage)(bool \* IsErrorPage)</span><span class="sxs-lookup"><span data-stu-id="17776-118">public HRESULT [get_IsErrorPage](#get_iserrorpage)(BOOL \* isErrorPage)</span></span>
+> <span data-ttu-id="625a5-116">Public HRESULT [get_IsErrorPage](#get_iserrorpage)(bool \* IsErrorPage)</span><span class="sxs-lookup"><span data-stu-id="625a5-116">public HRESULT [get_IsErrorPage](#get_iserrorpage)(BOOL \* isErrorPage)</span></span>
 
-#### <span data-ttu-id="17776-119">get_NavigationId</span><span class="sxs-lookup"><span data-stu-id="17776-119">get_NavigationId</span></span> 
+#### <span data-ttu-id="625a5-117">get_NavigationId</span><span class="sxs-lookup"><span data-stu-id="625a5-117">get_NavigationId</span></span> 
 
-<span data-ttu-id="17776-120">Die ID der Navigation.</span><span class="sxs-lookup"><span data-stu-id="17776-120">The ID of the navigation.</span></span>
+<span data-ttu-id="625a5-118">Die ID der Navigation.</span><span class="sxs-lookup"><span data-stu-id="625a5-118">The ID of the navigation.</span></span>
 
-> <span data-ttu-id="17776-121">Public HRESULT [get_NavigationId](#get_navigationid)(UINT64 \* navigation_id)</span><span class="sxs-lookup"><span data-stu-id="17776-121">public HRESULT [get_NavigationId](#get_navigationid)(UINT64 \* navigation_id)</span></span>
+> <span data-ttu-id="625a5-119">Public HRESULT [get_NavigationId](#get_navigationid)(UINT64 \* navigation_id)</span><span class="sxs-lookup"><span data-stu-id="625a5-119">public HRESULT [get_NavigationId](#get_navigationid)(UINT64 \* navigation_id)</span></span>
 
