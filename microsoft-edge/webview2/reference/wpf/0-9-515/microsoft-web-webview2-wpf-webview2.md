@@ -3,17 +3,17 @@ description: Einbetten von Webtechnologien (HTML, CSS und JavaScript) in ihre sy
 title: Microsoft. Web. WebView2. WPF. WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/17/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: Microsoft. Web. WebView2, Core, WebView2, WebView, DotNet, WPF, WinForms, APP, Edge, CoreWebView2, CoreWebView2Controller, Browser Control, Edge HTML, Microsoft. Web. WebView2. WPF. WebView2
-ms.openlocfilehash: 2dd7bf1035cf5254f4668070d56d2bd2405f1276
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: e7f5d11b540d1d7ad9630aa674ef5bc0073195c2
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10880262"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10885296"
 ---
 # Microsoft. Web. WebView2. WPF. WebView2 Klasse 
 
@@ -37,11 +37,13 @@ Ein Steuerelement zum Einbetten von Webinhalten in eine WPF-Anwendung.
 [NavigationStarting](#navigationstarting) | Ein Wrapper um das CoreWebView2. NavigationStarting-Ereignis von CoreWebView2.
 [SourceChanged](#sourcechanged) | Ein Wrapper um das CoreWebView2. Sourcecode-Ereignis von CoreWebView2.
 [WebMessageReceived](#webmessagereceived) | Ein Wrapper um das CoreWebView2. WebMessageReceived-Ereignis von CoreWebView2.
+[ZoomFactorChanged](#zoomfactorchanged) | Das Ereignis wird ausgelöst, wenn die ZoomFactor-Eigenschaft des WebView geändert wird.
 [CanGoBack](#cangoback) | Gibt "true" zurück, wenn die WebView zu einer vorherigen Seite im Navigationsverlauf navigieren kann.
 [CanGoForward](#cangoforward) | Gibt "true" zurück, wenn die WebView zu einer nächsten Seite im Navigationsverlauf navigieren kann.
 [CoreWebView2](#corewebview2) | Greifen Sie auf die vollständige Funktionalität der zugrunde liegenden Core. CoreWebView2-com-API zu.
 [CreationProperties](#creationproperties) | Ruft eine Sammlung von Optionen ab, die während der Initialisierung des CoreWebView2 des Steuerelements verwendet werden, oder legt diese fest.
 [Source](#source) | Der URI der obersten Ebene, den die WebView aktuell anzeigt (oder wird angezeigt, sobald die Initialisierung des CoreWebView2-Endgeräts endet).
+[ZoomFactor](#zoomfactor) | Der Zoomfaktor für die WebView.
 [EnsureCoreWebView2Async](#ensurecorewebview2async) | Initialisierung der CoreWebView2 des Steuerelements explizit auslösen.
 [ExecuteScriptAsync](#executescriptasync) | Führt JavaScript-Code aus dem JavaScript-Parameter im aktuellen Dokument der obersten Ebene aus, das in der WebView gerendert wird.
 [GoBack](#goback) | Navigiert die WebView zur vorherigen Seite im Navigationsverlauf.
@@ -119,6 +121,14 @@ Ein Wrapper um das CoreWebView2. WebMessageReceived-Ereignis von CoreWebView2.
 
 Der einzige Unterschied zwischen diesem Ereignis und CoreWebView2. WebMessageReceived ist der erste Parameter, der an Handler übergeben wird. Handler dieses Ereignisses empfangen das WebView2-Steuerelement, während Handler von CoreWebView2. WebMessageReceived die CoreWebView2-Instanz empfangen.
 
+#### ZoomFactorChanged 
+
+Das Ereignis wird ausgelöst, wenn die ZoomFactor-Eigenschaft des WebView geändert wird.
+
+> public event EventHandler< EventArgs > [ZoomFactorChanged](#zoomfactorchanged)
+
+Dieses Ereignis macht direkt CoreWebView2Controller. ZoomFactorChanged verfügbar, in der zugehörigen Dokumentation finden Sie weitere Informationen.
+
 #### CanGoBack 
 
 Gibt "true" zurück, wenn die WebView zu einer vorherigen Seite im Navigationsverlauf navigieren kann.
@@ -162,10 +172,20 @@ Der URI der obersten Ebene, den die WebView aktuell anzeigt (oder wird angezeigt
 
 > öffentliche URI- [Quelle](#source)
 
-Im Allgemeinen entspricht das Abrufen dieser Eigenschaft dem Abrufen der CoreWebView2. Source-Eigenschaft von CoreWebView2, und das Festlegen dieser Eigenschaft entspricht dem Aufrufen der CoreWebView2. Navigate-Methode für CoreWebView2. Wenn Sie diese Eigenschaft abrufen, bevor die CoreWebView2 initialisiert wurde, wird der letzte URI abgerufen, der auf ihn gesetzt wurde. Wenn diese Eigenschaft vor dem Initialisieren der CoreWebView2-Eigenschaft festgelegt wurde, wird die Initialisierung im Hintergrund gestartet (falls Sie noch nicht ausgeführt wird), nachdem die WebView2 zum angegebenen URI navigiert. Eine Initialisierungs Übersicht finden Sie in der Dokumentation zur WebView2-Klasse.
+Im Allgemeinen entspricht das Abrufen dieser Eigenschaft dem Abrufen der CoreWebView2. Source-Eigenschaft von CoreWebView2, und das Festlegen dieser Eigenschaft (auf einen anderen Wert) entspricht dem Aufrufen der CoreWebView2. Navigate-Methode für CoreWebView2. Der Wert NULL hat die gleiche Bedeutung wie "about: blank" (Weitere Informationen finden Sie unter Hinweise). Wenn Sie diese Eigenschaft abrufen, bevor die CoreWebView2 initialisiert wurde, ruft Sie den letzten URI ab, der auf Sie festgesetzt wurde, oder NULL (die Standardeinstellung), wenn keine vorhanden war. Wenn diese Eigenschaft vor dem Initialisieren der CoreWebView2-Eigenschaft festgelegt wurde, wird die Initialisierung im Hintergrund gestartet (falls Sie noch nicht ausgeführt wird), nachdem die WebView2 zum angegebenen URI navigiert. Eine Initialisierungs Übersicht finden Sie in der Dokumentation zur WebView2-Klasse.
+
+Wenn diese Eigenschaft NULL ist, wird in der CoreWebView2 "about: blank" angezeigt (oder wenn Sie auf NULL gesetzt ist, wird der CoreWebView2 zu "about: blank" navigiert). Es ist auch möglich, dass diese Eigenschaft den expliziten Wert "about: blank" hat (oder auf diesen festlegen), der die gleiche Auswirkung auf die CoreWebView2 hat. Anders ausgedrückt: Wenn in der CoreWebView2 "about: blank" angezeigt wird, kann der Wert dieser Eigenschaft entweder NULL oder "about: blank" sein. NULL und "about: blank" sind jedoch unterschiedliche Werte dieser Eigenschaft, die nicht als gleichwertig behandelt werden. Dies ist für die Initialisierung des Steuerelements wichtig, da dies bedeutet, dass die Änderung des Werts von NULL (dessen Standard) in "about: blank" immer noch eine Änderung ist und weiterhin implizite Initialisierungen auslösen wird. 
 
 ##### Ausnahmen
 * `ObjectDisposedException` Wird ausgelöst, wenn Dispose bereits für das Steuerelement aufgerufen wurde.
+
+#### ZoomFactor 
+
+Der Zoomfaktor für die WebView.
+
+> öffentliches Doppel [ZoomFactor](#zoomfactor)
+
+Diese Eigenschaft macht direkt CoreWebView2Controller. ZoomFactor verfügbar, lesen Sie die zugehörige Dokumentation, um weitere Informationen zu erhalten. Wenn Sie diese Eigenschaft abrufen, bevor die CoreWebView2 initialisiert wurde, wird der letzte Wert abgerufen, der auf Sie gesetzt wurde, oder 1,0 (Standard), falls keine vorhanden war. Der letzte Wert, der auf diese Eigenschaft vor dem Initialisieren des CoreWebView2-Werts gesetzt wurde, wird nach der Initialisierung für das Objekt eingestellt.
 
 #### EnsureCoreWebView2Async 
 

@@ -3,22 +3,21 @@ description: Einbetten von Webtechnologien (HTML, CSS und JavaScript) in ihre sy
 title: Microsoft. Web. WebView2. Core. CoreWebView2CompositionController
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: Microsoft. Web. WebView2, Core, WebView2, WebView, DotNet, WPF, WinForms, APP, Edge, CoreWebView2, CoreWebView2Controller, Browser Control, Edge HTML, Microsoft. Web. WebView2. Core. CoreWebView2CompositionController
-ms.openlocfilehash: 45ac5406cea804aa5b5db748cecaae7104dccb00
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 1eb2498e05e2ec9fafa317f6108d022f7354c249
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10878988"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10885282"
 ---
 # Microsoft. Web. WebView2. Core. CoreWebView2CompositionController Klasse 
 
-> [!NOTE]
-> Hierbei handelt es sich um eine [experimentelle API](../../../concepts/versioning.md#experimental-apis) , die mit unserer SDK [-Version 0.9.538-Prerelease](../../../releasenotes.md#09538)ausgeliefert wurde.
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 Namespace: Microsoft. Web. WebView2. Core \
 Assembly: Microsoft.Web.WebView2.Core.dll
@@ -33,7 +32,7 @@ Diese Klasse ist eine Erweiterung der CoreWebView2Controller-Klasse, um das visu
 [CursorChanged](#cursorchanged) | Das Ereignis wird ausgelöst, wenn WebView glaubt, dass der Cursor geändert werden soll.
 [RootVisualTarget](#rootvisualtarget) | Die RootVisualTarget ist ein visuelles Element in der visuellen Struktur der Host-app.
 [UIAProvider](#uiaprovider) | Gibt den Benutzeroberflächenautomatisierungs-Anbieter für die WebView zurück.
-[CreateCoreWebView2PointerInfoFromPointerId](#createcorewebview2pointerinfofrompointerid) | Eine Hilfsfunktion zum Konvertieren einer vom System empfangenen Zeiger-Nr in eine CoreWebView2ExperimentalPointerInfo.
+[CreateCoreWebView2PointerInfoFromPointerId](#createcorewebview2pointerinfofrompointerid) | Eine Hilfsfunktion zum Konvertieren einer vom System empfangenen Zeiger-Nr in eine CoreWebView2PointerInfo.
 [SendMouseInput](#sendmouseinput) | Wenn eventKind CoreWebView2MouseEventKind. HorizontalWheel oder CoreWebView2MouseEventKind. Wheel ist, gibt mouseData den Umfang der Mausradbewegung an.
 [SendPointerInput](#sendpointerinput) | SendPointerInput akzeptiert Fingereingabe-oder Stiftzeiger Eingaben von Typen, die in CoreWebView2PointerEventKind definiert sind.
 
@@ -71,11 +70,11 @@ Gibt den Benutzeroberflächenautomatisierungs-Anbieter für die WebView zurück.
 
 #### CreateCoreWebView2PointerInfoFromPointerId 
 
-Eine Hilfsfunktion zum Konvertieren einer vom System empfangenen Zeiger-Nr in eine CoreWebView2ExperimentalPointerInfo.
+Eine Hilfsfunktion zum Konvertieren einer vom System empfangenen Zeiger-Nr in eine CoreWebView2PointerInfo.
 
 > öffentliche [CoreWebView2PointerInfo](microsoft-web-webview2-core-corewebview2pointerinfo.md) - [CreateCoreWebView2PointerInfoFromPointerId](#createcorewebview2pointerinfofrompointerid)(uint-Zeiger-Nr., IntPtr-ParentWindow, Matrix4x4-Transformation)
 
-ParentWindow ist das HWND, das die WebView enthält. Dies kann ein beliebiges HWND in der HWND-Struktur sein, das die WebView enthält. Die CoreWebView2Matrix4x4 ist die Transformation aus diesem HWND in die WebView-Ansicht. Der zurückgegebene CoreWebView2ExperimentalPointerInfo wird in SendPointerInfo verwendet. Der Zeigertyp muss entweder Stift oder Fingereingabe sein, oder die Funktion schlägt fehl.
+ParentWindow ist das HWND, das die WebView enthält. Dies kann ein beliebiges HWND in der HWND-Struktur sein, das die WebView enthält. Die CoreWebView2Matrix4x4 ist die Transformation aus diesem HWND in die WebView-Ansicht. Der zurückgegebene CoreWebView2PointerInfo wird in SendPointerInfo verwendet. Der Zeigertyp muss entweder Stift oder Fingereingabe sein, oder die Funktion schlägt fehl.
 
 #### SendMouseInput 
 
@@ -91,5 +90,5 @@ SendPointerInput akzeptiert Fingereingabe-oder Stiftzeiger Eingaben von Typen, d
 
 > publicvoid [SendPointerInput](#sendpointerinput)([CoreWebView2PointerEventKind](./namespace-microsoft-web-webview2-core.md) EventType, [CoreWebView2PointerInfo](microsoft-web-webview2-core-corewebview2pointerinfo.md) pointerInfo)
 
-Alle zeigereingaben aus dem System müssen zuerst in eine CoreWebView2ExperimentalPointerInfo konvertiert werden.
+Alle zeigereingaben aus dem System müssen zuerst in eine CoreWebView2PointerInfo konvertiert werden.
 

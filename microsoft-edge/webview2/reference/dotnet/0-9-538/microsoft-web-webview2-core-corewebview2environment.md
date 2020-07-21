@@ -3,17 +3,17 @@ description: Einbetten von Webtechnologien (HTML, CSS und JavaScript) in ihre sy
 title: Microsoft. Web. WebView2. Core. CoreWebView2Environment
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: Microsoft. Web. WebView2, Core, WebView2, WebView, DotNet, WPF, WinForms, APP, Edge, CoreWebView2, CoreWebView2Controller, Browser Control, Edge HTML, Microsoft. Web. WebView2. Core. CoreWebView2Environment
-ms.openlocfilehash: 79bc9908d0fd12d4606311b959cbc6bc0c384c2d
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 6b03997c8bd76137b20bb71edfd0d57b3686914a
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10878918"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10885289"
 ---
 # Microsoft. Web. WebView2. Core. CoreWebView2Environment Klasse 
 
@@ -32,7 +32,7 @@ Dies stellt die WebView2-Umgebung dar.
 [CreateAsync](#createasync) | Erstellt eine immergrüne WebView2-Umgebung unter Verwendung der installierten Edge-Version.
 [CreateCoreWebView2CompositionControllerAsync](#createcorewebview2compositioncontrollerasync) | Erstellen Sie ein neues WebView-Element für die Verwendung mit Visual Hosting asynchron.
 [CreateCoreWebView2ControllerAsync](#createcorewebview2controllerasync) | Erstellen Sie einen neuen WebView asynchron.
-[CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo) | Erstellen Sie ein leeres CoreWebView2ExperimentalPointerInfo.
+[CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo) | Erstellen Sie ein leeres CoreWebView2PointerInfo.
 [CreateWebResourceResponse](#createwebresourceresponse) | Erstellen Sie ein neues Webressourcen-Antwortobjekt.
 [GetAvailableBrowserVersionString](#getavailablebrowserversionstring) | Rufen Sie die Browser Versionsinformationen einschließlich des Kanal namens ab, wenn es sich nicht um den stabilen Kanal oder den eingebetteten Edge handelt.
 [GetProviderForHwnd](#getproviderforhwnd) | Gibt den Benutzeroberflächenautomatisierungs-Anbieter für die CoreWebView2CompositionController zurück, die dem angegebenen HWND entspricht.
@@ -87,8 +87,7 @@ Erstellt eine immergrüne WebView2-Umgebung unter Verwendung der installierten E
 
 #### CreateCoreWebView2CompositionControllerAsync 
 
-> [!NOTE]
-> Hierbei handelt es sich um eine [experimentelle API](../../../concepts/versioning.md#experimental-apis) , die mit unserer SDK [-Version 0.9.538-Prerelease](../../../releasenotes.md#09538)ausgeliefert wurde.
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 Erstellen Sie ein neues WebView-Element für die Verwendung mit Visual Hosting asynchron.
 
@@ -112,14 +111,13 @@ Es wird empfohlen, die Anwendungsbenutzer Modell-ID für den Prozess oder das An
 
 #### CreateCoreWebView2PointerInfo 
 
-> [!NOTE]
-> Hierbei handelt es sich um eine [experimentelle API](../../../concepts/versioning.md#experimental-apis) , die mit unserer SDK [-Version 0.9.538-Prerelease](../../../releasenotes.md#09538)ausgeliefert wurde.
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
-Erstellen Sie ein leeres CoreWebView2ExperimentalPointerInfo.
+Erstellen Sie ein leeres CoreWebView2PointerInfo.
 
 > Public [CoreWebView2PointerInfo](microsoft-web-webview2-core-corewebview2pointerinfo.md) [CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo)()
 
-Der zurückgegebene CoreWebView2ExperimentalPointerInfo muss mit allen relevanten Informationen gefüllt werden, bevor SendPointerInput aufgerufen wird.
+Der zurückgegebene CoreWebView2PointerInfo muss mit allen relevanten Informationen gefüllt werden, bevor SendPointerInput aufgerufen wird.
 
 #### CreateWebResourceResponse 
 
@@ -140,8 +138,7 @@ Rufen Sie die Browser Versionsinformationen einschließlich des Kanal namens ab,
 
 #### GetProviderForHwnd 
 
-> [!NOTE]
-> Hierbei handelt es sich um eine [experimentelle API](../../../concepts/versioning.md#experimental-apis) , die mit unserer SDK [-Version 0.9.538-Prerelease](../../../releasenotes.md#09538)ausgeliefert wurde.
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 Gibt den Benutzeroberflächenautomatisierungs-Anbieter für die CoreWebView2CompositionController zurück, die dem angegebenen HWND entspricht.
 

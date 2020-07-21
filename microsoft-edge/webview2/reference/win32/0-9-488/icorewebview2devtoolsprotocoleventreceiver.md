@@ -3,22 +3,21 @@ description: Hosten von Webinhalten in ihrer Win32-App mit dem Microsoft Edge We
 title: 0.9.515-WebView2 Win32 C++ ICoreWebView2DevToolsProtocolEventReceiver
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: 8aa715990b24c8364abae39b5c7abd2f148dc2c5
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 6d97bf5edbf7c874e56ce16a7597ea2266d1b466
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10880836"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10883840"
 ---
 # 0.9.515-Interface-ICoreWebView2DevToolsProtocolEventReceiver 
 
-> [!NOTE]
-> Dieser Verweis kann für Versionen nach der SDK-Version 0.9.515 geändert oder nicht mehr zur Verfügung stehen. Die neueste API-Referenz finden Sie in der [WebView2-API-Referenz](../../../webview2-api-reference.md) .
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface ICoreWebView2DevToolsProtocolEventReceiver

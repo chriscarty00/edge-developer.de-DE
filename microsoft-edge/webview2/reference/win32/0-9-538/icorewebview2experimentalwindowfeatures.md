@@ -3,22 +3,21 @@ description: Einbetten von Webtechnologien (HTML, CSS und JavaScript) in ihre sy
 title: WebView2 Win32 C++ ICoreWebView2ExperimentalWindowFeatures
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, Browser-Steuerelement, Edge-HTML, ICoreWebView2ExperimentalWindowFeatures
-ms.openlocfilehash: 8b56d16e9c78738e9aa61e8c4c5b841b7fe4932f
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 2672f2aac842fd475f6148c439dbecdacd7793ee
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10879905"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10885403"
 ---
 # Schnittstellen ICoreWebView2ExperimentalWindowFeatures 
 
-> [!NOTE]
-> Dies ist eine experimentelle API, die mit unserer Vorabversion SDK-Version 0.9.538 ausgeliefert wird.
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 ```
 interface ICoreWebView2ExperimentalWindowFeatures

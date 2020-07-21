@@ -3,22 +3,21 @@ description: Hosten von Webinhalten in ihrer Win32-App mit dem Microsoft Edge We
 title: 0.9.515-Microsoft. Web. WebView2. Core. CoreWebView2EnvironmentOptions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: e5b5392ef4b681f3aec3b7850f4ad9e2d9b595e8
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 8378c6388f0bc7cda26ef4a34b8ef5e8d5c95f4d
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10877672"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10885044"
 ---
 # 0.9.515-Microsoft. Web. WebView2. Core. CoreWebView2EnvironmentOptions Klasse 
 
-> [!NOTE]
-> Dieser Verweis kann für Versionen nach der SDK-Version 0.9.515 geändert oder nicht mehr zur Verfügung stehen. Die neueste API-Referenz finden Sie in der [WebView2-API-Referenz](../../../webview2-api-reference.md) .
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 Namespace: Microsoft. Web. WebView2. Core \
 Assembly: Microsoft.Web.WebView2.Core.dll

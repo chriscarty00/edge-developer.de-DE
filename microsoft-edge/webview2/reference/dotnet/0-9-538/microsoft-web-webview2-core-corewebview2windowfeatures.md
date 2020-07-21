@@ -3,22 +3,21 @@ description: Einbetten von Webtechnologien (HTML, CSS und JavaScript) in ihre sy
 title: Microsoft. Web. WebView2. Core. CoreWebView2WindowFeatures
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: Microsoft. Web. WebView2, Core, WebView2, WebView, DotNet, WPF, WinForms, APP, Edge, CoreWebView2, CoreWebView2Controller, Browser Control, Edge HTML, Microsoft. Web. WebView2. Core. CoreWebView2WindowFeatures
-ms.openlocfilehash: 4866626111908eae9800da0baabec0356d5d4bf8
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: d6d6f52456823488c07288c8ed07b9655a29883a
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10879653"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10884437"
 ---
 # Microsoft. Web. WebView2. Core. CoreWebView2WindowFeatures Klasse 
 
-> [!NOTE]
-> Hierbei handelt es sich um eine [experimentelle API](../../../concepts/versioning.md#experimental-apis) , die mit unserer SDK [-Version 0.9.538-Prerelease](../../../releasenotes.md#09538)ausgeliefert wurde.
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 Namespace: Microsoft. Web. WebView2. Core \
 Assembly: Microsoft.Web.WebView2.Core.dll

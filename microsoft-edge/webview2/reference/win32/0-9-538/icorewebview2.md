@@ -3,17 +3,17 @@ description: Einbetten von Webtechnologien (HTML, CSS und JavaScript) in ihre sy
 title: WebView2 Win32 C++ ICoreWebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, Browser-Steuerelement, Edge-HTML, ICoreWebView2
-ms.openlocfilehash: a482dd4e06e6899b7be64adc53e848ed6b7067d3
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 889924c996e030a0abe2a6a34036a881dcb26db5
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10877560"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10884575"
 ---
 # Schnittstellen ICoreWebView2 
 
@@ -84,7 +84,7 @@ WebView2 ermöglicht Ihnen das Hosten von Webinhalten mithilfe der neuesten Edge
 [remove_WebResourceRequested](#remove_webresourcerequested) | Entfernen Sie einen Ereignishandler, der zuvor mit add_WebResourceRequested hinzugefügt wurde.
 [remove_WindowCloseRequested](#remove_windowcloserequested) | Entfernen Sie einen Ereignishandler, der zuvor mit add_WindowCloseRequested hinzugefügt wurde.
 [RemoveHostObjectFromScript](#removehostobjectfromscript) | Entfernen Sie das vom Namen angegebene Hostobjekt, damit es nicht mehr über JavaScript-Code in der WebView zugänglich ist.
-[RemoveScriptToExecuteOnDocumentCreated](#removescripttoexecuteondocumentcreated) | Entfernen Sie das entsprechende JavaScript, das über AddScriptToExecuteOnDocumentCreated hinzugefügt wurde.
+[RemoveScriptToExecuteOnDocumentCreated](#removescripttoexecuteondocumentcreated) | Entfernen Sie das entsprechende JavaScript `AddScriptToExecuteOnDocumentCreated` , das mit der angegebenen Skript-ID hinzugefügt wurde.
 [RemoveWebResourceRequestedFilter](#removewebresourcerequestedfilter) | Entfernt einen übereinstimmenden Webressourcen Filter, der zuvor für das WebResourceRequested-Ereignis hinzugefügt wurde.
 [Stop](#stop) | Beenden Sie alle Navigations-und ausstehenden Ressourcen Abrufe.
 [COREWEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT](#corewebview2_capture_preview_image_format) | Bildformat, das von der ICoreWebView2:: CapturePreview-Methode verwendet wird.
@@ -312,8 +312,8 @@ Verwenden Sie abrechnungshistorieändern, um zu überprüfen, ob sich CanGoBack/
                 BOOL canGoForward;
                 sender->get_CanGoBack(&canGoBack);
                 sender->get_CanGoForward(&canGoForward);
-                EnableWindow(m_toolbar->backWindow, canGoBack);
-                EnableWindow(m_toolbar->forwardWindow, canGoForward);
+                m_toolbar->SetItemEnabled(Toolbar::Item_BackButton, canGoBack);
+                m_toolbar->SetItemEnabled(Toolbar::Item_ForwardButton, canGoForward);
 
                 return S_OK;
             })
@@ -350,7 +350,8 @@ Das NavigationCompleted-Ereignis wird ausgelöst, wenn die WebView vollständig 
                         // display its own error page automatically.
                     }
                 }
-                EnableWindow(m_toolbar->cancelWindow, FALSE);
+                m_toolbar->SetItemEnabled(Toolbar::Item_CancelButton, false);
+                m_toolbar->SetItemEnabled(Toolbar::Item_ReloadButton, true);
                 return S_OK;
             })
             .Get(),
@@ -458,9 +459,9 @@ Wird ausgelöst, wenn der Inhalt in der WebView zum Öffnen eines neuen Fensters
                 CHECK_FAILURE(windowFeatures->get_Toolbar(&shouldHaveToolbar));
 
                 windowRect.left = left;
-                windowRect.right = left + (width < s_minNewWindowSize  s_minNewWindowSize : width);
+                windowRect.right = left + (width < s_minNewWindowSize ? s_minNewWindowSize : width);
                 windowRect.top = top;
-                windowRect.bottom = top + (height < s_minNewWindowSize  s_minNewWindowSize : height);
+                windowRect.bottom = top + (height < s_minNewWindowSize ? s_minNewWindowSize : height);
 
                 if (!useDefaultWindow)
                 {
@@ -514,15 +515,15 @@ Wird ausgelöst, wenn Inhalt in einer WebView-Anforderung die Berechtigung für 
         message += uri.get();
         message += L"?\n\n";
         message += (userInitiated
-             L"This request came from a user gesture."
+            ? L"This request came from a user gesture."
             : L"This request did not come from a user gesture.");
 
         int response = MessageBox(nullptr, message.c_str(), L"Permission Request",
                                    MB_YESNOCANCEL | MB_ICONWARNING);
 
         COREWEBVIEW2_PERMISSION_STATE state =
-              response == IDYES  COREWEBVIEW2_PERMISSION_STATE_ALLOW
-            : response == IDNO   COREWEBVIEW2_PERMISSION_STATE_DENY
+              response == IDYES ? COREWEBVIEW2_PERMISSION_STATE_ALLOW
+            : response == IDNO  ? COREWEBVIEW2_PERMISSION_STATE_DENY
             :                     COREWEBVIEW2_PERMISSION_STATE_DEFAULT;
         CHECK_FAILURE(args->put_State(state));
 
@@ -674,7 +675,7 @@ Die Quelle wird ausgelöst, um zu einer anderen Website oder zu einer anderen Fr
                 {
                     uri = wil::make_cotaskmem_string(L"");
                 }
-                SetWindowText(m_toolbar->addressBarWindow, uri.get());
+                SetWindowText(GetAddressBar(), uri.get());
 
                 return S_OK;
             })
@@ -754,7 +755,7 @@ Fügen Sie einen Ereignishandler für das WebResourceRequested-Ereignis hinzu.
 
 > Public HRESULT [add_WebResourceRequested](#add_webresourcerequested)([ICoreWebView2WebResourceRequestedEventHandler](icorewebview2webresourcerequestedeventhandler.md) * EventHandler, EventRegistrationToken * Token)
 
-Wird ausgelöst, wenn die WebView eine HTTP-Anforderung an einen übereinstimmenden URL-und Ressourcenkontext Filter ausführt, der mit AddWebResourceRequestedFilter hinzugefügt wurde. Es muss mindestens ein Filter hinzugefügt werden, damit das Ereignis ausgelöst wird.
+Wird ausgelöst, wenn die WebView eine URL-Anforderung für einen übereinstimmenden URL-und Ressourcenkontext Filter ausführt, der mit AddWebResourceRequestedFilter hinzugefügt wurde. Es muss mindestens ein Filter hinzugefügt werden, damit das Ereignis ausgelöst wird.
 
 ```cpp
         if (m_blockImages)
@@ -968,6 +969,7 @@ Angenommen, Sie verfügen über ein COM-Objekt mit der folgenden Schnittstelle.
         });
         });
 ```
+Das verfügbar machen von Host Objekten für Skripts hat ein Sicherheitsrisiko. Befolgen Sie die [bewährten Methoden](https://docs.microsoft.com/microsoft-edge/webview2/concepts/security).
 
 #### AddScriptToExecuteOnDocumentCreated 
 
@@ -1044,7 +1046,7 @@ void ScriptComponent::CallCdpMethod()
         std::wstring methodName = dialog.input.substr(0, delimiterPos);
         std::wstring methodParams =
             (delimiterPos < dialog.input.size()
-                 dialog.input.substr(delimiterPos + 1)
+                ? dialog.input.substr(delimiterPos + 1)
                 : L"{}");
 
         m_webView->CallDevToolsProtocolMethod(
@@ -1204,7 +1206,7 @@ Dieser Wert ändert sich möglicherweise als Teil der Ereignis Befeuerungs Quell
                 {
                     uri = wil::make_cotaskmem_string(L"");
                 }
-                SetWindowText(m_toolbar->addressBarWindow, uri.get());
+                SetWindowText(GetAddressBar(), uri.get());
 
                 return S_OK;
             })
@@ -1289,10 +1291,10 @@ Weitere Informationen finden Sie in den Navigations Ereignissen. Beachten Sie, d
 ```cpp
 void ControlComponent::NavigateToAddressBar()
 {
-    int length = GetWindowTextLength(m_toolbar->addressBarWindow);
+    int length = GetWindowTextLength(GetAddressBar());
     std::wstring uri(length, 0);
     PWSTR buffer = const_cast<PWSTR>(uri.data());
-    GetWindowText(m_toolbar->addressBarWindow, buffer, length + 1);
+    GetWindowText(GetAddressBar(), buffer, length + 1);
 
     HRESULT hr = m_webView->Navigate(uri.c_str());
     if (hr == E_INVALIDARG)
@@ -1684,3 +1686,4 @@ COREWEBVIEW2_WEB_RESOURCE_CONTEXT_SIGNED_EXCHANGE            | Signierte http-Ex
 COREWEBVIEW2_WEB_RESOURCE_CONTEXT_PING            | Ping-Anforderungen.
 COREWEBVIEW2_WEB_RESOURCE_CONTEXT_CSP_VIOLATION_REPORT            | Berichte zu CSP-Verstößen
 COREWEBVIEW2_WEB_RESOURCE_CONTEXT_OTHER            | Andere Ressourcen.
+

@@ -3,22 +3,21 @@ description: Hosten von Webinhalten in ihrer Win32-App mit dem Microsoft Edge We
 title: 0.9.515-WebView2 Win32 C++ ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: 0bbd1f79e4ecd9e0816ec144149f2e66f20fc5fe
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 1082ea61b98b953277219d78a2944a2487b47a4d
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10880815"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10884442"
 ---
 # 0.9.515-Interface-ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler 
 
-> [!NOTE]
-> Dieser Verweis kann für Versionen nach der SDK-Version 0.9.515 geändert oder nicht mehr zur Verfügung stehen. Die neueste API-Referenz finden Sie in der [WebView2-API-Referenz](../../../webview2-api-reference.md) .
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler
