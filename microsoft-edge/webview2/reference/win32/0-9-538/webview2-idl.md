@@ -3,17 +3,17 @@ description: Einbetten von Webtechnologien (HTML, CSS und JavaScript) in ihre sy
 title: Globals
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: d291a4973656d106f803382ee985f0006bf5d68d
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 12a730a07945d5f099cd2a0f45a9f2ec5ed02f8c
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10877623"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10885548"
 ---
 # Globals 
 
@@ -50,7 +50,7 @@ Dies entspricht dem Aufruf von CreateCoreWebView2EnvironmentWithOptions mit null
 
 DLL-Export zum Erstellen einer WebView2-Umgebung mit einer benutzerdefinierten Version von Edge, Benutzerdatenverzeichnis und/oder zusätzlichen Optionen.
 
-Verwenden Sie `browserExecutableFolder` diese Option, um anzugeben, ob WebView2-Steuerelemente eine eingebettete Version von Edge oder die installierte Version von Edge verwenden, die auf einem Clientcomputer vorhanden ist. Wenn Sie eine eingebettete Version von Edge verwenden möchten, übergeben Sie den relativen Pfad des Ordners, in dem sich die eingebettete Version von Edge befindet `browserExecutableFolder` . Wenn Sie die eingebettete Version von Edge abrufen möchten, kopieren Sie den Namen der Version des Ordners aus Ihrer installierten Edge-Version auf einem Clientcomputer. Kopieren Sie beispielsweise den `73.0.52.0` Ordner aus dem Ordner, in dem Edge Version 73.0.52.0 installiert war. Stellen Sie sicher, dass der Ordner sowohl die **msedgewebview2.exe** als auch **msedge.dll** Dateien enthält. Zum Erstellen von WebView2-Steuerelementen, die die installierte Version von Edge verwenden, die auf Clientcomputern vorhanden ist, übergeben Sie eine NULL oder eine leere Zeichenfolge an `browserExecutableFolder` . In diesem Szenario versucht die API, eine kompatible Version von Edge zu finden, die auf dem Clientcomputer (zuerst auf Computerebene und dann pro Benutzer) unter Verwendung der ausgewählten Kanaleinstellung installiert ist. 
+Verwenden Sie `browserExecutableFolder` diese Option, um anzugeben, ob WebView2-Steuerelemente eine eingebettete Version von Edge oder die installierte Version von Edge verwenden, die auf einem Clientcomputer vorhanden ist. Wenn Sie eine eingebettete Version von Edge verwenden möchten, übergeben Sie den relativen Pfad des Ordners, in dem sich die eingebettete Version von Edge befindet `browserExecutableFolder` . Wenn Sie die eingebettete Version von Edge abrufen möchten, kopieren Sie den Namen der Version des Ordners aus Ihrer installierten Edge-Version auf einem Clientcomputer. Kopieren Sie beispielsweise den `73.0.52.0` Ordner aus dem Ordner, in dem Edge Version 73.0.52.0 installiert war. Stellen Sie sicher, dass der Ordner sowohl die **msedgewebview2.exe** als auch **msedge.dll** Dateien enthält. Zum Erstellen von WebView2-Steuerelementen, die die installierte Version von Edge verwenden, die auf Clientcomputern vorhanden ist, übergeben Sie eine NULL oder eine leere Zeichenfolge an `browserExecutableFolder` . In diesem Szenario versucht die API, eine kompatible Version von Edge zu finden, die auf dem Clientcomputer (zuerst auf Computerebene und dann pro Benutzer) unter Verwendung der ausgewählten Kanaleinstellung installiert ist.
 
 Die standardmäßige Kanal Suchreihenfolge ist stable, Beta, dev und Canary. Wenn eine WEBVIEW2_RELEASE_CHANNEL_PREFERENCE Umgebungsvariable oder ein anwendbarer releaseChannelPreference-Registrierungswert mit dem Wert 1 überschrieben wird, wird die Kanal Suchreihenfolge umgekehrt.
 
@@ -138,3 +138,4 @@ Als erstes überprüfen wir root als HKLM und dann HKCU. Die Anwendungs-ID des a
 Rufen Sie die Browser Versionsinformationen einschließlich des Kanal namens ab, wenn es sich nicht um den stabilen Kanal oder den eingebetteten Edge handelt.
 
 Kanalnamen sind Beta, dev und Canary. Wenn für die browserExecutableFolder oder die Kanaleinstellung eine Überschreibung vorhanden ist, wird die Außerkraftsetzung verwendet. Wenn keine Überschreibung vorhanden ist, wird der an GetAvailableCoreWebView2BrowserVersionString übergebene Parameter verwendet.
+

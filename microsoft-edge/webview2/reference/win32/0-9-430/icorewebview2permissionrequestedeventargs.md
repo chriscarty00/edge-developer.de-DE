@@ -3,22 +3,21 @@ description: Hosten von Webinhalten in ihrer Win32-App mit dem Microsoft Edge We
 title: 0.9.430-WebView2 Win32 C++ ICoreWebView2PermissionRequestedEventArgs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Host, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: 75f88a08f5a94df85a471658704fcd77a5926417
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: e29765a4b8a3e620b8c627c7b05b9f0b4ff63f95
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10877791"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10886416"
 ---
 # 0.9.430-Interface-ICoreWebView2PermissionRequestedEventArgs 
 
-> [!NOTE]
-> Diese Schnittstelle kann nach der SDK-Version 0.9.430 geändert oder für Versionen nicht verfügbar sein. Die neueste API-Referenz finden Sie unter [Referenz](../../../webview2-api-reference.md) .
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface ICoreWebView2PermissionRequestedEventArgs
