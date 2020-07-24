@@ -3,17 +3,17 @@ description: Hosten von Webinhalten in ihrer WinUI-App mit dem Steuerelement "Mi
 title: Microsoft Edge-WebView2 für WinUI-apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/20/2020
+ms.date: 07/23/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, WinUI-apps, WinUI, Edge, CoreWebView2, Browser-Steuerelement, Edge-HTML, erste Schritte, erste Schritte, .net
-ms.openlocfilehash: 76bf2e7dc0ef54da4203f186ce0356cfbcbc130d
-ms.sourcegitcommit: a82aa5fc1ada35cd8274490fbff3c0a850785835
+ms.openlocfilehash: 9960a4411e69f0232ae2d202a61a9beb01c0a631
+ms.sourcegitcommit: 553957c101f83681b363103cb6af56bf20173f23
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "10888620"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "10895511"
 ---
 # Erste Schritte mit WebView2 in WinUI3 (Preview)  
 
@@ -192,7 +192,7 @@ Anwendungen, die WebView2-Steuerelemente hosten, lauschen den folgenden Ereignis
 *   `NavigationCompleted`  
 > [!NOTE]
 > HTTP-Umleitungen lösen mehrere `NavigationStarting` Ereignisse aus.  
-Weitere Informationen finden Sie unter [Navigationsereignisse][Webviews2ReferenceWin3209488Icorewebview2NavigationEvents].  
+Weitere Informationen finden Sie unter [Navigationsereignisse][Webviews2ConceptsNavigationEvents].  
 
 Wenn Fehler auftreten, werden die folgenden Ereignisse ausgelöst und möglicherweise zu einer Fehlerseite navigiert.  
 
@@ -274,7 +274,7 @@ Helfen Sie beim Aufbau einer reicheren WebView2-Erfahrung, indem Sie Ihr Feedbac
 
 [Webview2Index]: ../index.md "Einführung in Microsoft Edge WebView2 (Preview) | Microsoft docs"  
 [Webview2IndexNextSteps]: ../index.md#next-steps "Nächste Schritte – Einführung in Microsoft Edge WebView2 (Preview) | Microsoft docs"  
-[Webviews2ReferenceWin3209488Icorewebview2NavigationEvents]: ../reference/win32/0-9-488/icorewebview2.md#navigation-events "Navigationsereignisse-Schnittstelle ICoreWebView2 | Microsoft docs"  
+[Webviews2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Navigationsereignisse | Microsoft docs"  
 [Webviews2ReferenceWpf09515MicrosoftWebExecutescriptasync]: ../reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2.md#executescriptasync "ExecuteScriptAsync-Microsoft. Web. WebView2. WPF. WebView2 Klasse | Microsoft docs"  
 
 [UwpSchemasAppxpackageUapmanifestRoot]: /uwp/schemas/appxpackage/uapmanifestschema/schema-root "Paketmanifest-Schemareferenz für Windows 10 | Microsoft docs"  

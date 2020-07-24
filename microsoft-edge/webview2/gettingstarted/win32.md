@@ -3,17 +3,17 @@ description: Hosten von Webinhalten in ihrer Win32-App mit dem Steuerelement "Mi
 title: Erste Schritte mit WebView2 für Win32-apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/15/2020
+ms.date: 07/07/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: e184eaeb28a1e6e7aacf2917094149092d2fb6ee
-ms.sourcegitcommit: ae0257f8fb9832296ee6a196ded7bad2aacd3208
+ms.openlocfilehash: 7e35dc6ab84a32cfa7e020fa34ddfaa63818eda1
+ms.sourcegitcommit: 553957c101f83681b363103cb6af56bf20173f23
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "10846549"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "10895518"
 ---
 # Erste Schritte mit WebView2 (Entwicklervorschau)  
 
@@ -124,7 +124,7 @@ CreateCoreWebView2EnvironmentWithOptions(nullptr, nullptr, nullptr,
                 }
                 
                 // Add a few settings for the webview
-                // this is a redundant demo step as the values are the default settings
+                // The demo step is redundant since the values are the default settings
                 ICoreWebView2Settings* Settings;
                 webviewWindow->get_Settings(&Settings);
                 Settings->put_IsScriptEnabled(TRUE);
@@ -170,7 +170,7 @@ Das WebView-Team hat bereits die Navigation zur URL unter Verwendung der `ICoreW
 1.  `HistoryChanged`   
 1.  `NavigationCompleted`   
 
-Weitere Informationen finden Sie unter [Navigationsereignisse][Webview2ReferenceWin3209538Icorewebview2NavigationEvents].  
+Weitere Informationen finden Sie unter [Navigationsereignisse][Webview2ConceptsNavigationEvents].  
 
 :::image type="complex" source="../media/navigation-events.png" alt-text="Navigationsereignisse":::
    Navigationsereignisse  
@@ -206,7 +206,7 @@ Jetzt wird die APP nicht zu allen nicht-HTTPS-Websites navigiert.  Sie können e
 
 ## Schritt 5 – Skripting  
 
-Die Host-App kann auch JavaScript in WebView einfügen.  Sie können Aufgaben-WebView ausführen, um beliebiges JavaScript auszuführen oder Initialisierungsskripts hinzuzufügen.  Hinzugefügte Initialisierungsskripts gelten für alle zukünftigen Dokument-und untergeordneten Frame-Navigationselemente auf oberster Ebene, bis Sie entfernt werden, und führen Sie nach dem Erstellen des globalen Objekts und vor dem Ausführen anderer Skripts, die im HTML-Dokument enthalten sind.  
+Die Host-App kann auch JavaScript in WebView einfügen.  Sie können mit der Aufgabe WebView beliebiges JavaScript ausführen oder Initialisierungsskripts hinzufügen.  Hinzugefügte Initialisierungsskripts gelten für alle zukünftigen Dokument-und untergeordneten Frame-Navigationselemente auf oberster Ebene, bis Sie entfernt werden, und werden nach dem Erstellen des globalen Objekts und vor dem Ausführen anderer Skripts ausgeführt, die im HTML-Dokument enthalten sind.  
 
 Kopieren Sie den folgenden Codeausschnitt, und fügen Sie ihn in ein `HelloWebView.cpp` .  
 
@@ -290,7 +290,7 @@ Helfen Sie, ein reicheres WebView2-Erlebnis zu schaffen, indem Sie Ihr Feedback 
 
 [Webview2Index]: ../index.md "Einführung in Microsoft Edge WebView2 (Preview) | Microsoft docs"  
 [Webview2ReferenceWin3209538]: ../reference/win32/0-9-538-reference-webview2.md "Referenz (WebView2) | Microsoft docs"  
-[Webview2ReferenceWin3209538Icorewebview2NavigationEvents]: ../reference/win32/0-9-538/ICoreWebView2.md#navigation-events "Navigationsereignisse-Schnittstelle ICoreWebView2 | Microsoft docs"  
+[Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Navigationsereignisse | Microsoft docs"  
 
 [CppCxWrlTemplateLibraryVS2019]: /cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019 "Windows-Runtime C++-Vorlagenbibliothek (WRL) | Microsoft docs"  
 [CppWindowsWalkthroughCreatingDesktopApplication]: /cpp/windows/walkthrough-creating-windows-desktop-applications-cpp?view=vs-2019 "Exemplarische Vorgehensweise: Erstellen einer herkömmlichen Windows-Desktop Anwendung (C++) | Microsoft docs"  

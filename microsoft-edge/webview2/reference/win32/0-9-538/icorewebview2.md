@@ -3,17 +3,17 @@ description: Einbetten von Webtechnologien (HTML, CSS und JavaScript) in ihre sy
 title: WebView2 Win32 C++ ICoreWebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 07/23/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, Browser-Steuerelement, Edge-HTML, ICoreWebView2
-ms.openlocfilehash: 81bc222324db9649439afa2a7c3c84f715fa2ae3
-ms.sourcegitcommit: b3555043e9d5aefa5a9e36ba4d73934d41559f49
+ms.openlocfilehash: a1da6789027234130c58078871d7da23b4e285ba
+ms.sourcegitcommit: 553957c101f83681b363103cb6af56bf20173f23
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "10894326"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "10895497"
 ---
 # Schnittstellen ICoreWebView2 
 
@@ -97,50 +97,6 @@ WebView2 ermöglicht Ihnen das Hosten von Webinhalten mithilfe der neuesten Edge
 [COREWEBVIEW2_SCRIPT_DIALOG_KIND](#corewebview2_script_dialog_kind) | Art des in der ICoreWebView2ScriptDialogOpeningEventHandler-Schnittstelle verwendeten JavaScript-Dialogfelds.
 [COREWEBVIEW2_WEB_ERROR_STATUS](#corewebview2_web_error_status) | Fehlerstatus Werte für Web-Navigationselemente.
 [COREWEBVIEW2_WEB_RESOURCE_CONTEXT](#corewebview2_web_resource_context) | Enum für Webressourcen-anforderungskontexte.
-
-## Navigationsereignisse
-
-Die normale Abfolge von Navigations Ereignissen lautet NavigationStarting, sourced, ContentLoading und dann NavigationCompleted. Die folgenden Ereignisse beschreiben den Zustand von WebView während jeder Navigation: NavigationStarting: WebView beginnt zu navigieren, und die Navigation führt zu einer Netzwerkanforderung. Der Host kann die Anforderung zurzeit nicht zulassen. Quelle: die Quelle von WebView wird in eine neue URL geändert. Dies kann auch an einer Navigation liegen, die keine Netzwerkanforderung wie eine Fragment-Navigation verursacht. History: WebView-Protokoll wurde aufgrund der Navigation aktualisiert. ContentLoading: WebView hat mit dem Laden neuer Inhalte begonnen. NavigationCompleted: WebView hat das Laden von Inhalten auf der neuen Seite abgeschlossen. Entwickler können die Navigation zu jedem neuen Dokument mithilfe der Navigations-ID nachvollziehen. Die Navigations-ID von WebView ändert sich jedes Mal, wenn eine erfolgreiche Navigation zu einem neuen Dokument vorliegt.
-
-![dot-inline-dotgraph-1.png](media/dot-inline-dotgraph-1.png)
-
-Beachten Sie, dass dies für Navigationsereignisse mit dem gleichen Navigations-Event-arg gilt. Navigationsereignisse mit unterschiedlichen Navigations-Event-args können sich überlappen. Wenn Sie beispielsweise eine Navigation auf das NavigationStarting-Ereignis warten und dann eine andere Navigation starten, sehen Sie die NavigationStarting für die erste Navigation, gefolgt von der NavigationStarting der zweiten Navigation, gefolgt von der NavigationCompleted für die erste Navigation und dann allen anderen geeigneten Navigations Ereignissen für die zweite Navigation. In Fehlerfällen kann es sich um ein ContentLoading-Ereignis handeln, das davon abhängt, ob die Navigation auf einer Fehlerseite fortgesetzt wird. Im Fall einer HTTP-Umleitung gibt es mehrere NavigationStarting-Ereignisse in einer Zeile, wobei für diejenigen, die dem ersten Folgen, das isredirect-Flag festgesetzt wird, die Navigations-ID jedoch unverändert bleibt. Gleiche Dokument Navigationen führen nicht zu NavigationStarting-Ereignis und erhöhen auch nicht die Navigations-ID.
-
-Verwenden Sie FrameNavigationStarting, um die Navigation innerhalb von unter Frames in der WebView zu überwachen oder abzubrechen.
-
-## Prozessmodell
-
-WebView2 verwendet das gleiche Prozessmodell wie der Edge-Webbrowser. Es gibt einen Edge-Browserprozess pro angegebenen Benutzerdatenverzeichnis in einer Benutzersitzung, die jedem WebView2-Aufrufprozess dient, der das Benutzerdatenverzeichnis angibt. Dies bedeutet, dass ein Edge-Browser-Prozess möglicherweise mehrere Anruf Prozesse bedient, und ein Aufrufprozess möglicherweise mehrere Edge-Browser-Prozesse verwendet.
-
-![dot-inline-dotgraph-2.png](media/dot-inline-dotgraph-2.png)
-
-In einem Browserprozess gibt es eine Reihe von Renderer-Prozessen. Diese werden nach Bedarf erstellt, um potenziell mehrere Frames in verschiedenen Webansichten zu bedienen. Die Anzahl der Renderer-Prozesse variiert basierend auf dem Feature "Website Isolierungs Browser" und der Anzahl der unterschiedlichen getrennten Ursprünge, die in verknüpften Webansichten gerendert werden.
-
-![dot-inline-dotgraph-3.png](media/dot-inline-dotgraph-3.png)
-
-Mithilfe des ProcessFailure-Ereignisses können Sie auf Abstürze reagieren und in diesen Browser-und Renderer-Prozessen hängen bleiben.
-
-Sie können zugeordnete Browser-und Renderer-Prozesse mit der Close-Methode sicher Herunterfahren.
-
-## Threadingmodell
-
-Der WebView2 muss in einem UI-Thread erstellt werden. Insbesondere ein Thread mit einer Nachrichten Pumpe. Alle Rückrufe werden in diesem Thread ausgeführt, und Aufrufe an die WebView müssen in diesem Thread ausgeführt werden. Es ist nicht sicher, die WebView aus einem anderen Thread zu verwenden.
-
-Rückrufe, einschließlich Ereignishandlern und Vervollständigungs Handlern, werden seriell ausgeführt. Das heißt, wenn Sie einen Ereignishandler ausführen und eine Nachrichtenschleife beginnen, werden keine anderen Ereignishandler oder Abschluss Rückrufe erneut ausgeführt.
-
-## Zeichenfolgentypen
-
-Zeichenfolgenparameter sind LPWSTR NULL-terminierte Zeichenfolgen. Der aufgerufene ordnet die Zeichenfolge mithilfe von CoTaskMemAlloc zu. Der Besitz wird an den Anrufer übertragen, und es ist dem Anrufer überlassen, den Speicher mit CoTaskMemFree zu befreien.
-
-Zeichenfolge in Parametern sind LPCWSTR NULL-terminierte Zeichenfolgen. Der Aufrufer stellt sicher, dass die Zeichenfolge für die Dauer des synchronen Funktionsaufrufs gültig ist. Wenn der aufgerufene diesen Wert nach Abschluss des Funktionsaufrufs bis zu einem gewissen Punkt beibehalten muss, muss der aufgerufene eine eigene Kopie des Zeichenfolgenwerts zuweisen.
-
-## URI-und JSON-Analyse
-
-Verschiedene Methoden stellen URIs und JSON als Zeichenfolgen bereit oder akzeptieren Sie. Verwenden Sie für die Analyse und Generierung dieser Zeichenfolgen ihre eigene bevorzugte Bibliothek.
-
-Wenn WinRT für Ihre app verfügbar ist, können Sie `RuntimeClass_Windows_Data_Json_JsonObject` JSON-Zeichenfolgen verwenden und erstellen oder URIs analysieren und `IJsonObjectStatics` `RuntimeClass_Windows_Foundation_Uri` `IUriRuntimeClassFactory` erstellen. Beide arbeiten in Win32-apps.
-
-Wenn Sie IUri und CreateUri zum Analysieren von URIs verwenden, sollten Sie möglicherweise die folgenden URI-Erstellungs Flags verwenden, damit CreateUri-Verhalten der URI-Analyse in der WebView genauer entspricht: `Uri_CREATE_ALLOW_IMPLICIT_FILE_SCHEME | Uri_CREATE_NO_DECODE_EXTRA_INFO`
 
 ## Member
 

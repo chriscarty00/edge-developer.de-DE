@@ -3,17 +3,17 @@ description: Hosten von Webinhalten in Ihrer WPF-App mit dem Steuerelement "Micr
 title: Microsoft Edge WebView 2 für WPF-apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/11/2020
+ms.date: 07/23/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, WPF-apps, WPF, Edge, CoreWebView2, Browser-Steuerelement, Edge-HTML, erste Schritte, erste Schritte, .net
-ms.openlocfilehash: 9ecb80050d52d1d3b888027a728456a881d8c5ad
-ms.sourcegitcommit: 8f2badc98ea7b7d1861dabfaf0e4dd8677e89bea
+ms.openlocfilehash: 304d79640bdf789eb0b822dc7ab8f260df637624
+ms.sourcegitcommit: 553957c101f83681b363103cb6af56bf20173f23
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "10767016"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "10895490"
 ---
 # Erste Schritte mit WebView2 in WPF (Preview)
 
@@ -24,7 +24,7 @@ In diesem Artikel erfahren Sie, wie Sie Ihre erste WebView2-app erstellen und di
 Stellen Sie sicher, dass Sie die folgende Liste der Voraussetzungen installiert haben, bevor Sie fortfahren:  
 
 * [Microsoft Edge (Chrom) Canary Channel](https://www.microsoftedgeinsider.com/download) , installiert unter Windows 10, Windows 8,1 oder Windows 7.  
-* [Visual Studio](https://visualstudio.microsoft.com/) 2017 oder höher  
+* [Visual Studio](https://visualstudio.microsoft.com) 2017 oder höher  
 
 ## Schritt 1 – Erstellen einer einzelnen Fenster Anwendung  
 
@@ -69,16 +69,18 @@ Fügen Sie als nächstes das WebView2-SDK zum Projekt hinzu.  Installieren Sie f
        Nuget
     :::image-end:::
     
-2.  Geben Sie `Microsoft.Web.WebView2` in die Suchleiste ein.  Wählen Sie in den Suchergebnissen **Microsoft. Web. WebView2** aus.  
+1.  Geben Sie `Microsoft.Web.WebView2` in die Suchleiste ein.  Wählen Sie in den Suchergebnissen **Microsoft. Web. WebView2** aus.  
 
-3. Aktivieren Sie **Vorabversion einbeziehen**, wählen Sie eine **vorab** Version des Pakets aus, und wählen Sie dann **Installieren**aus.  
+    > [!IMPORTANT]
+    > Stellen Sie sicher, dass Sie die **Vorabversion einbeziehen**, wählen Sie ein Vorabversion-Paket in **Version**aus, und wählen Sie dann **Installieren**aus.  
   
      ![nuget](./media/installnuget.PNG)
     
-    Sie können mit der WebView2-API beginnen, Anwendungen zu entwickeln.  Drücken Sie `F5` , um das Projekt zu erstellen und auszuführen.  Im laufenden Projekt wird ein leeres Fenster angezeigt.  
+    Sie können mit der WebView2-API beginnen, Anwendungen zu entwickeln.  Wählen Sie aus `F5` , um das Projekt zu erstellen und auszuführen.  Im laufenden Projekt wird ein leeres Fenster angezeigt.  
     
     :::image type="complex" source="./media/wpf-gettingstarted-blank.png" alt-text="Leere App":::
-       Leere App :::image-end:::  
+       Leere App
+    :::image-end:::  
     
 ## Schritt 3 – Erstellen einer einzelnen WebView in "" "" ". XAML"  
 
@@ -195,7 +197,7 @@ Die Anwendung, die WebView2-Steuerelemente hostet, überwacht die folgenden Erei
 *   `HistoryChanged`  
 *   `NavigationCompleted`  
 
-Weitere Informationen finden Sie unter [Navigationsereignisse](../reference/win32/0-9-488/icorewebview2.md#navigation-events).  
+Weitere Informationen finden Sie unter [Navigationsereignisse](../concepts/navigation-events.md).  
 
 :::image type="complex" source="../media/navigation-events.png" alt-text="Navigationsereignisse":::
    Navigationsereignisse

@@ -3,16 +3,16 @@ description: Dieser Leitfaden enthält eine Übersicht über die Grundlagen und 
 title: Erste Schritte mit Progressive Web-Apps (Chrom)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/15/2020
+ms.date: 07/23/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: Progressive Web-Apps, PWA, Edge, Windows, PWABuilder, Web-Manifest, Service Worker, Push
-ms.openlocfilehash: 6c5fa5d6af8494f33e11a545d5dde1264604c787
-ms.sourcegitcommit: 136642396bb8094a535e203067ee429e60d31d25
+ms.openlocfilehash: a9a0cad2d771e52b783053e36f0f23dec5d8e70c
+ms.sourcegitcommit: 515522959f517e194f93a27f5d360690600edd9d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "10659209"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "10894710"
 ---
 # Erste Schritte mit Progressive Web-Apps (Chrom)  
 
@@ -26,7 +26,7 @@ Das folgende Handbuch bietet Ihnen einen Überblick über die Grundlagen von PWA
 ## Voraussetzungen  
 
 *   Verwenden Sie [vs-Code][VisualstudioCodeMain] zum Bearbeiten Ihres PWA-Quellcodes.  
-*   Verwenden Sie " [node. js][NodejsMain] " als lokalen Webserver.  
+*   Verwenden Sie [Node.js][NodejsMain] als lokalen Webserver.  
 
 ## Einrichten einer einfachen Web-App  
 
@@ -125,7 +125,7 @@ Um einen Dienstmitarbeiter in Ihrem Projekt zu erstellen, verwenden Sie das **Ca
 1.  Öffnen Sie im vs-Code `/public/index.html` den folgenden Codeausschnitt, und fügen Sie ihn in das `<head>` Tag ein.  
     
     ```html
-    <script src="/pwabuilder-sw-register.js"></script>
+    <script type="module" src="/pwabuilder-sw-register.js"></script>
     ```  
     
 Ihre Web-App verfügt nun über einen Dienstmitarbeiter, der die Cache-First-Strategie verwendet, die Ressourcen wie Bilder, JS, CSS und HTML zuerst aus dem Cache abruft und nach Bedarf zurück zum Netzwerk fällt.  
@@ -319,7 +319,7 @@ Im folgenden finden Sie eine Liste weiterer Aufgaben, die Sie beim Erstellen von
 
 <!--[PwaEdgehtmlIndexRequirements]: ../progressive-web-apps-edgehtml/index.md#requirements "Requirements - Progressive Web Apps \(EdgeHTML\) on Windows | Microsoft Docs"  -->  
 
-[VisualStudioNodejsTutorialPublishAzureAppService]: /visualstudio/nodejs/tutorial-nodejs#optional-publish-to-azure-app-service "Veröffentlichen im Azure-App-Dienst – erstellen einer Node. js-und Express-app in Visual Studio | Microsoft docs"  
+[VisualStudioNodejsTutorialPublishAzureAppService]: /azure/javascript/tutorial-vscode-azure-app-service-node-03 "Bereitstelleneiner Node.js-App für Azure mit vs-Code | Microsoft docs"  
 
 [AzureCreateFreeAccount]: https://azure.microsoft.com/free "Erstellen eines Azure Free-Kontos | Microsoft Azure"  
 [AzureWebApps]: https://azure.microsoft.com/services/app-service/web "Web-Apps | Microsoft Azure"  
@@ -345,7 +345,7 @@ Im folgenden finden Sie eine Liste weiterer Aufgaben, die Sie beim Erstellen von
 
 [MozillaServicesSendingVapidWebPushNotificationsPush]: https://blog.mozilla.org/services/2016/08/23/sending-vapid-identified-webpush-notifications-via-mozillas-push-service "Senden von VAPID identifizierten webpush-Benachrichtigungen über den Push-Dienst von Mozilla | Mozilla-Dienste"  
 
-[NodejsMain]: https://nodejs.org "Node. js"  
+[NodejsMain]: https://nodejs.org "Node.js"  
 
 [NPMWebPush]: https://www.npmjs.com/package/web-push "Web-Push | NPM"  
 [NPMWebPushEncrypt]: https://www.npmjs.com/package/web-push#encryptuserpublickey-userauth-payload-contentencoding "Encrypt (userPublicKey, userAuth, Payload, contentEncoding)-Web-Push | NPM"  
