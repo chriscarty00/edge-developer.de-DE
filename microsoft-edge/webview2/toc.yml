@@ -16,10 +16,18 @@
       href: concepts/distribution.md
     - name: Verwaltung von Benutzerdatenordnern
       href: concepts/userdatafolder.md
+    - name: Navigationsereignisse
+      href: concepts/navigation-events.md
+    - name: Prozessmodell
+      href: concepts/process-model.md
     - name: Bewährte Sicherheitsmethoden
       href: concepts/security.md
     - name: Versionsverwaltung
       href: concepts/versioning.md
+    - name: Threadingmodell
+      href: concepts/threading-model.md
+    - name: Win32-API-Konventionen
+      href: concepts/win32-api-conventions.md
 - name: Freigabehinweise
   href: releasenotes.md
 - name: Roadmap
