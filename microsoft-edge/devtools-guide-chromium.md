@@ -7,13 +7,13 @@ ms.date: 05/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
-keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: 0034e23885020aae5047c69219bd51235a5882b0
-ms.sourcegitcommit: a5392ab44133d742c0e1fa500ad9a872989b7c3f
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+ms.openlocfilehash: b565f441ea6e6b3f2ae01ab251d7b9cae1aa815b
+ms.sourcegitcommit: ad5eb43172280974b8c063867c2097f7c5c0e77d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "10684685"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "10898221"
 ---
 # Microsoft Edge (Chrom)-Entwickler Tools  
 
@@ -47,19 +47,19 @@ Wenn Sie den HTML-oder CSS-Code für ein Element auf Ihrer Website anzeigen möc
 
 Wenn Sie die Protokolle aus Ihrem Front-End-JavaScript-Code anzeigen oder schnell ein Skript ausführen möchten, drücken Sie `Ctrl` + `Shift` + `J` auf Windows \ ( `Command` + `Option` + `J` unter macOS \), um den Konsolenbereich im devtools zu starten.  
 
-## Kern Tools  
+## Grundlegende Tools  
 
 :::image type="complex" source="./devtools-guide-chromium/media/devtools-core-tools.png" alt-text="Microsoft Edge (Chrom) devtools-Kern Tools":::
    Microsoft Edge (Chrom) devtools-Kern Tools
 :::image-end:::
 
 Zu den Microsoft Edge \ (Chromium \) devtools gehören die folgenden Panels.  
-*   Ein **Element** Panel zum Bearbeiten von HTML und CSS, untersuchen von Barrierefreiheitseigenschaften, Anzeigen von ereignislistern und Festlegen von Haltepunkten für DOM-Mutationen  
+*   Einen Bereich **Elemente** zum Bearbeiten von HTML und CSS, Untersuchen von Barrierefreiheitseigenschaften, Anzeigen von Ereignis-Listenern und Festlegen von Haltepunkten für DOM-Mutationen  
 *   Eine **Konsole** zum Anzeigen und Filtern von Protokollmeldungen, zum Überprüfen von JavaScript-Objekten und DOM-Knoten sowie zum Ausführen von JavaScript im Kontext des ausgewählten Fensters oder Rahmens  
 *   Ein **Quellen** Panel zum Öffnen und Live Bearbeiten Ihres Codes, Festlegen von Haltepunkten, durchlaufen des Codes und Anzeigen des Zustands Ihrer Website in einer Zeile mit JavaScript gleichzeitig  
-*   **Netzwerk** Fenster zum Überwachen und prüfen von Anforderungen und Antworten aus dem Netzwerk-und Browsercache   
-*   Ein **Leistungs** Panel, in dem die von Ihrer Website benötigten Zeit-und Systemressourcen angezeigt werden  
-*   Ein **Speicher** Panel zum Messen der Verwendung von Speicherressourcen und zum Vergleichen von Heap-Snapshots in verschiedenen Zuständen der Code Laufzeit  
+*   Einen Bereich **Netzwerk** zum Überwachen und Überprüfen von Anforderungen und Antworten aus dem Netzwerk- und Browsercache   
+*   Einen Bereich **Leistung**, um die Zeit und Systemressourcen zu ermitteln, die für Ihre Website erforderlich sind  
+*   Einen Bereich **Arbeitsspeicher** zum Messen der Nutzung von Speicherressourcen und Vergleichen von Heap-Momentaufnahmen in unterschiedlichen Zuständen der Code-Runtime  
 *   Ein **Anwendungs** Panel zum Überprüfen, ändern und Debuggen von Web App-Manifesten, Servicemitarbeitern und Service Worker-Caches.  Sie können auch Speicher, Datenbanken und Caches über den **Anwendungs** Panel prüfen und verwalten.  
 *   Ein **Sicherheits** Bereich, um Sicherheitsprobleme zu Debuggen und sicherzustellen, dass Sie HTTPS auf Ihrer Website richtig implementiert haben.  HTTPS bietet kritische Sicherheit und Datenintegrität sowohl für Ihre Website als auch für Ihre Benutzer, die persönliche Informationen auf Ihrer Website bereitstellen.  
 *   Ein **Überwachungs** Panel \ (jetzt **Lighthouse**umbenannt), um eine Überprüfung Ihrer Website durchzuführen.  Die Ergebnisse der Prüfung helfen Ihnen, die Qualität Ihrer Website auf folgende Weise zu verbessern.  
@@ -98,7 +98,7 @@ Diese Tastenkombinationen steuern das Hauptfenster von devtools, arbeiten über 
 
 | Aktion | Windows | macOS |  
 |:--- |:--- | :--- |  
-| DevTools anzeigen/ausblenden \ (wird zum zuletzt angezeigten Fenster geöffnet) | `F12` oder`Ctrl`+`Shift`+`I` | `Command`+`Option`+`I` |  
+| DevTools ein-/ausblenden\(zuletzt angezeigter Bereich wird geöffnet\) | `F12` oder`Ctrl`+`Shift`+`I` | `Command`+`Option`+`I` |  
 | Anzeigen des Konsolen Panels | `Ctrl`+`Shift`+`J` | `Command`+`Option`+`J` |  
 | Anzeigen der devtools im **Element Modus überprüfen** , mit dem Sie ein Element auf der Website auswählen und den HTML-und CSS-Code im **Element Panel anzeigen** können | `Ctrl`+`Shift`+`C` | `Command`+`Option`+`C` |  
 | Einstellungen anzeigen | `?` oder`Fn`+`F1` | `?` oder`Fn`+`F1` |  
@@ -118,7 +118,7 @@ Diese Tastenkombinationen steuern das Hauptfenster von devtools, arbeiten über 
 | Verkleinern | `Ctrl`+`-` | `Command`+`-` |  
 | Standardzoom Stufe wiederherstellen | `Ctrl`+`0` | `Command`+`0` |  
 | Ausführen eines Snippets | `Ctrl`+`O`oder `Ctrl` + `P` geben `!` Sie gefolgt vom Namen des Skripts ein, und drücken Sie dann `Enter` | Drücken Sie `Command` + `O` oder `Command` + `P` , geben Sie `!` gefolgt vom Namen des Skripts ein, und drücken Sie dann `Enter` |  
-| Anzeigen des nicht bearbeitbaren HTML-Quellcodes auf einer neuen Registerkarte | `Ctrl`+`U` | n.v. |  
+| Anzeigen des nicht bearbeitbaren HTML-Quellcodes auf einer neuen Registerkarte | `Ctrl`+`U` | n.a. |  
 
 > [!NOTE]
 > Wenn Sie das Debugging durchgeführt und an einem Haltepunkt angehalten haben, wird die Laufzeit zuerst mit der **Aktualisierungs**Verknüpfung fortgesetzt.  
@@ -143,7 +143,7 @@ Wenn Sie eine Vorschau der [neuesten Features in devtools][DevtoolsGuideChromium
 <!-- links -->  
 
 [DevtoolsGuideChromiumBeginnersHtml]: /microsoft-edge/devtools-guide-chromium/beginners/html "DevTools für Anfänger: Erste Schritte mit HTML und dem Dom | Microsoft docs"  
-[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/05/devtools "Neuerungen in Microsoft Edge (Chrom) devtools | Microsoft docs"  
+[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/06/devtools "Neuerungen in Microsoft Edge (Chrom) devtools | Microsoft docs"  
 [DevtoolsProtocolChromiumIndex]: /microsoft-edge/devtools-protocol-chromium "Microsoft Edge (Chrom) devtools-Protokoll | Microsoft docs"  
 
 [MicrosoftEdgeAddonsExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions "Microsoft Edge-Add-ons"  
