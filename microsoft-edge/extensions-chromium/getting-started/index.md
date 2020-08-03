@@ -3,16 +3,16 @@ description: Erfahren Sie, was eine Chrom-Erweiterung ist, und erstellen Sie ein
 title: Erste Schritte mit Microsoft Edge (Chrom)-Erweiterungen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/05/2019
+ms.date: 07/29/2020
 ms.topic: article
 ms.prod: microsoft-edge-chromium
 keywords: Edge-Chromium, Web-Entwicklung, HTML, CSS, JavaScript, Entwickler, Erweiterungen
-ms.openlocfilehash: a271514f39ed8bbe379116c33e23c973d3eb6adb
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: c2b24dc3d5535beeef6a4255b6fe2439fb67b77d
+ms.sourcegitcommit: 19ef1422733ef1fd051d2b4f0263ce191e8d67bc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10567509"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "10902836"
 ---
 # Erste Schritte mit Microsoft Edge \ (Chrom \)-Erweiterungen  
 
@@ -51,7 +51,7 @@ Auf jeder Registerkarte wird im Wesentlichen die URL \ (auch als Uniform Resourc
 
 ### Die gesamte Kommunikation von jeder Registerkarte erfolgt an Remoteserver.  
 
-Wenn Sie wissen, dass jede Registerkarte in einer isolierten Umgebung ausgeführt wird, bedeutet dies, dass diese Registerkarten voneinander isoliert sind, nicht aber das größere Internet.  In der Regel werden diese Registerkarten, auf denen JavaScript als Programmiersprache ausgeführt wird, an den Server zurückgegeben, der als Ursprungsserver für die erste Get-Anforderung gedacht ist, die in die URL-Leiste oben auf der Registerkarte Browser eingegeben wurde.  
+Wenn Sie wissen, dass jede Registerkarte in einer isolierten Umgebung ausgeführt wird, bedeutet dies, dass diese Registerkarten voneinander isoliert sind, nicht aber das größere Internet.  In der Regel werden diese Registerkarten, auf denen JavaScript als definierte Programmiersprache ausgeführt wird, an den Server zurückgegeben, der als ursprünglicher Server für die erste Get-Anforderung gedacht ist, die in die URL-Leiste oben auf der Registerkarte Browser eingegeben wurde.  
 
 ## Das Erweiterungsmodell dreht alles auf den Kopf  
 
@@ -71,7 +71,7 @@ Diese ZIP-Datei enthält HTML, CSS, JavaScript, Bilder und alle erforderlichen R
 
 ### Starten des Erweiterungs Servers  
 
-Wenn Sie die Bereitstellung auf einem Webserver vornehmen, enthält dieser Webserver, ob Apache, IIS, NGINX oder andere, Ihr Webpaket.  Wenn ein Browser zu einer URL auf einem Server navigiert, `index.html` wird die Datei auf dem Webserver heruntergeladen.  Der Browser navigiert mithilfe von Zertifikaten, Konfigurationsdateien und mehr.  Die `index.html` Datei, die an einem bestimmten Speicherort auf dem Webserver gespeichert ist.   Wie funktioniert Ihre Erweiterung?  Wie können die Registerkarten Ihres Browsers insbesondere auf diese ZIP-Datei \ (Ihre Erweiterung \) zugreifen?  So funktioniert die Erweiterungs Laufzeit für Sie.  
+Wenn Sie die Bereitstellung auf einem Webserver vornehmen, enthält dieser Webserver, ob Apache, IIS, NGINX oder andere, Ihr Webpaket.  Wenn ein Browser zu einer URL auf einem Server navigiert, `index.html` wird die Datei auf dem Webserver heruntergeladen.  Der Browser navigiert mithilfe von Zertifikaten, Konfigurationsdateien und mehr.  Die `index.html` Datei wird an einem bestimmten Speicherort auf dem Webserver gespeichert.   Wie funktioniert Ihre Erweiterung?  Wie wird die Registerkarte Ihres Browsers in der Lage sein, diese ZIP-Datei (Ihre Erweiterung \) zu erhalten?  So funktioniert die Erweiterungs Laufzeit für Sie.  
 
 Die Erweiterung dient für alle Dateien aus der URL \ (Uniform Resource Locator \) unter dem Namen `extension://{some-long-unique-identifier}/index.html` .  Der Name, den ich in eckige Klammern gesetzt habe, `{some-long-unique-identifier}` ist eine eindeutige Kennung, die der von Ihnen installierten Erweiterung zugewiesen ist.  Das bedeutet: Wenn in Ihrem Browser 10 eindeutige Erweiterungen installiert sind, weist jede Erweiterung einen eindeutigen Bezeichner auf, der auf die ZIP-Datei \ (oder das Erweiterungspaket \) verweist, die innerhalb Ihres Browsers installiert ist.  
 
@@ -81,7 +81,7 @@ Die Erweiterung dient für alle Dateien aus der URL \ (Uniform Resource Locator 
 
 ### Erweiterungen verwalten und kommunizieren mit Registerkarten und der Browsersymbolleiste  
 
-Erweiterungen interagieren mit der Browsersymbolleiste, jeder kann alle anderen ausgeführten Registerkarten auf sichere Weise verwalten sowie das DOM aller Registerkartenseiten manipulieren.  Integriert in den Chromium-Browser ist eine Nachrichten-API, die die Kommunikation zwischen den Erweiterungen und den Registerkarten ermöglicht, damit dies problemlos erfolgen kann.  Diese API, auch als Erweiterungen-API bekannt, bietet zahlreiche Funktionen wie Benachrichtigungsverwaltung, Speicherverwaltung und vieles mehr.  
+Erweiterungen interagieren mit der Toolbar des Browsers, jeder kann alle anderen ausgeführten Registerkarten auf sichere Weise verwalten sowie das DOM aller Registerkartenseiten manipulieren.  Integriert in den Chromium-Browser ist eine Nachrichten-API, die die Kommunikation zwischen den Erweiterungen und den Registerkarten ermöglicht, damit dies problemlos erfolgen kann.  Diese API, auch als Erweiterungen-API bekannt, bietet zahlreiche Funktionen wie Benachrichtigungsverwaltung, Speicherverwaltung und vieles mehr.  
 
 Wie bei Webservern können Erweiterungen kontinuierlich \ (oder Sleep Waiting for Notifications \) ausgeführt werden, wenn der Browser ausgeführt wird.  Sie können sich eine Erweiterung als Orchestrator für den Browser vorstellen.  Auch hier wird die Erweiterung vollständig von den Registerkartenseiten isoliert, aber durch die Erweiterungen-API und die der Erweiterung gewährten Opt-in-Berechtigungen kann jede Erweiterung alle Registerkarten, die im Browser ausgeführt werden, virtuell steuern.  
 

@@ -3,19 +3,22 @@ description: Erfahren Sie, wie thePayment Request APIenables Microsoft Edge als 
 title: Dev Guide-API für Zahlungsanforderungen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 07/30/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: windows-integration
 keywords: Edge, Web-Entwicklung, HTML, CSS, JavaScript, Entwickler
-ms.openlocfilehash: 75c596570a222336a4ba0c371acb8770f97804ee
-ms.sourcegitcommit: e690bb4d1cb9e73c93b468c9f55d91ea6fb6c654
+ms.openlocfilehash: b082e311dcbe5cff3101f084e7ff2c145e6e83df
+ms.sourcegitcommit: 19ef1422733ef1fd051d2b4f0263ce191e8d67bc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "10568745"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "10902864"
 ---
-# API für Zahlungsanforderungen
+# API für Zahlungsanforderungen (EdgeHTML)
+
+> [!NOTE]
+> In diesem Artikel wird der Workflow beschrieben, der in der [Legacy Version von Microsoft Edge][MicrosoftSupport44533505]unterstützt wird.  Microsoft Edge \ (Chrom \) unterstützt die Zahlungs Anforderungs-API mit einer anderen Implementierung basierend auf dem Chromium-Projekt.  
 
 E-Commerce-Umsätze wachsen weiterhin rasant. Laut [eMarketer](https://www.emarketer.com/)wird der digitale Umsatz von 2018 um 23% auf die in 2013 gemessenen Werte steigen.  Während Verbraucher und Unternehmen den Vorteil von e-Commerce-Verkäufen genießen, bestehen weiterhin Herausforderungen.  Heute muss jeder e-Commerce-Websitebesitzer Zeit investieren, um qualitativ hochwertige Zahlungs Checkout-Abläufe und Gültigkeitsprüfungsregeln zu entwickeln.  Verbraucher müssen in verschiedenen Zahlungs Auszahlungs strömen navigieren und die gleichen Zahlungs-und Versandinformationen auf jeder Website, auf der Sie einkaufen, erneut eingeben.  Dies kann für die Verbraucher zeitaufwendig und frustrierend sein, was zu einer großen Anzahl von Einkaufswagen und verminderten Verkäufen für Händler führt. Händler [schätzen](http://baymard.com/lists/cart-abandonment-rate) , dass zwischen 60% und 70% der Einkaufswagen aufgegeben werden.      
 
@@ -205,7 +208,13 @@ var options = {
 ```
 
 ## API-Referenz
-[API für Zahlungsanforderungen](https://msdn.microsoft.com/library/mt790447)
+[Payments Request-API](https://msdn.microsoft.com/library/mt790447)
 
 ## Spezifikation
-[API für Zahlungsanforderungen](https://w3.org/TR/payment-request/)
+[Payments Request-API](https://w3.org/TR/payment-request/)
+
+<!-- links -->  
+
+[DevtoolsGuideChromium]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chrom)-Entwickler Tools | Microsoft docs"  
+
+[MicrosoftSupport44533505]: https://support.microsoft.com/help/4533505 "Was ist Microsoft Edge Legacy?"  
