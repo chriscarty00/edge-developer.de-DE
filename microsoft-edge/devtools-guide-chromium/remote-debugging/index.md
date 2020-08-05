@@ -54,13 +54,13 @@ Der folgende Workflow funktioniert für die meisten Benutzer.  Weitere Hilfe fin
 1.  Öffnen Sie auf Ihrem Entwicklungscomputer Microsoft Edge.  
 1.  Navigieren Sie zu der `edge://inspect` Seite in Microsoft Edge.  
     
-    :::image type="complex" source="../media/remote-debugging-edge-inspect-no-targets.msft.png" alt-text="Die Seite "Edge://Inspect" in Microsoft Edge" lightbox="../media/remote-debugging-edge-inspect-no-targets.msft.png":::
+    :::image type="complex" source="../media/remote-debugging-edge-inspect-no-targets.msft.png" alt-text="Die Seite Edge://Inspect in Microsoft Edge" lightbox="../media/remote-debugging-edge-inspect-no-targets.msft.png":::
        Abbildung1.  Die `edge://inspect` Seite in Microsoft Edge  
     :::image-end:::  
     
 1.  Verbinden Sie Ihr Android-Gerät mit einem USB-Kabel direkt mit Ihrem Entwicklungscomputer.  Wenn Sie das erste Mal eine Verbindung herstellen, sehen Sie in der Regel eine Aufforderung zu devtools, um ein unbekanntes Gerät zu erkennen.  Akzeptieren Sie die Eingabeaufforderung **USB-Debugging-Berechtigung zulassen** auf Ihrem Android-Gerät.  
     
-    :::image type="complex" source="../media/remote-debugging-android-permissions-prompt.msft.png" alt-text="Die Eingabeaufforderung "USB-Debugging-Berechtigung zulassen" auf einem Android-Gerät" lightbox="../media/remote-debugging-android-permissions-prompt.msft.png":::
+    :::image type="complex" source="../media/remote-debugging-android-permissions-prompt.msft.png" alt-text="Die Eingabeaufforderung USB-Debugging-Berechtigung zulassen auf einem Android-Gerät" lightbox="../media/remote-debugging-android-permissions-prompt.msft.png":::
        Abbildung2.  Die Eingabeaufforderung " **USB-Debugging-Berechtigung zulassen** " auf einem Android-Gerät  
     :::image-end:::  
     
