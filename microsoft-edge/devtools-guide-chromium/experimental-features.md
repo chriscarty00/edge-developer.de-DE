@@ -88,7 +88,7 @@ In der Regel können Tools, wie **Elemente** und **Netzwerke** , nur im Hauptber
 
 [webhint][WebhintMain] ist ein Open-Source-Tool, das in Echtzeit Feedback zur Barrierefreiheit, browserübergreifenden Kompatibilität, Sicherheit, Leistung, PWAs und anderen gängigen Webentwicklungs Problemen von Websites bietet.  Das [webhint-Experiment führt][WebhintMain] das webhint-Feedback in devtools im Bereich [Probleme][DevtoolsIssues] .  Sie können das Problem auswählen, um die Dokumentation zur Behebung des Problems und eine Liste der betroffenen Ressourcen auf Ihrer Website anzuzeigen.  Wählen Sie einen Ressourcen Link aus, um den entsprechenden Bereich für **Netzwerke**, **Quellen**oder **Elemente** in devtools zu öffnen.  
 
-:::image type="complex" source="./media/experiments-webhint.png" alt-text="webhint-Feedback im Bereich "Probleme"" lightbox="./media/experiments-webhint.png":::
+:::image type="complex" source="./media/experiments-webhint.png" alt-text="webhint-Feedback im Bereich Probleme" lightbox="./media/experiments-webhint.png":::
    webhint-Feedback im Bereich "Probleme"  
 :::image-end:::      
 
@@ -122,7 +122,7 @@ Sie können Feedback zu Microsoft Edge devtools-Experimenten oder zu allem ander
 *   Senden Sie Ihr Feedback über das Feedback-Symbol im devtools  
 *   Tweet bei [@EdgeDevTools][TwitterEdgedevtools]  
 
-:::image type="complex" source="./media/devtools-feedback.png" alt-text="Symbol "Feedback" im Microsoft Edge-devtools" lightbox="./media/devtools-feedback.png":::
+:::image type="complex" source="./media/devtools-feedback.png" alt-text="Symbol Feedback im Microsoft Edge-devtools" lightbox="./media/devtools-feedback.png":::
    Symbol "Feedback" im Microsoft Edge-devtools  
 :::image-end:::  
 
