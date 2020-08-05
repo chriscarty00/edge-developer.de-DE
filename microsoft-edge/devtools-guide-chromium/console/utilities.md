@@ -360,7 +360,7 @@ keys(player1)
 values(player1)
 ```  
 
-:::image type="complex" source="../media/console-keys-values.msft.png" alt-text="Die Befehle "Keys ()" und "Values ()"" lightbox="../media/console-keys-values.msft.png":::
+:::image type="complex" source="../media/console-keys-values.msft.png" alt-text="Die Befehle Keys () und Values ()" lightbox="../media/console-keys-values.msft.png":::
    Abbildung 19: die `keys()` `values()` Befehle und  
 :::image-end:::  
 
