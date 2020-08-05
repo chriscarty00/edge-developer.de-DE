@@ -78,7 +78,7 @@ Mit dem [Surface Duo-Emulator][DualScreensAndroidEmulator]können Sie testen, wi
 
 Die `edge://inspect` Seite in einer Desktop Instanz von [Microsoft Edge][DesktopEdge] zeigt die **SurfaceDuoEmulator** mit einer Liste der geöffneten Registerkarten oder [PWAs][PwaIndex] , die auf dem [Surface Duo-Emulator][DualScreensAndroidEmulator]ausgeführt werden.  
 
-:::image type="complex" source="../../media/2020/05/edge-inspect.msft.png" alt-text="Auf der Seite "Edge://Inspect" wird eine Liste der geöffneten Registerkarten in der Microsoft Edge-App angezeigt, die auf dem Emulator ausgeführt wird." lightbox="../../media/2020/05/edge-inspect.msft.png":::
+:::image type="complex" source="../../media/2020/05/edge-inspect.msft.png" alt-text="Auf der Seite Edge://Inspect wird eine Liste der geöffneten Registerkarten in der Microsoft Edge-App angezeigt, die auf dem Emulator ausgeführt wird." lightbox="../../media/2020/05/edge-inspect.msft.png":::
    `edge://inspect`Auf der Seite wird eine Liste der geöffneten Registerkarten in der Microsoft Edge-App angezeigt, die auf dem Emulator ausgeführt wird.
 :::image-end:::  
 
@@ -118,7 +118,7 @@ Chrom Problem [#1081486][CR1081486]
 
 In Microsoft Edge 84 nimmt der [Bereich "Details" im Bereich][DevToolsNetworkDetails] " **Netzwerk** " nun den Fokus, wenn Sie ihn für eine Ressource im [Netzwerkprotokoll][DevToolsNetworkLog]öffnen.  Diese Änderung ermöglicht es Bildschirmsprachausgaben, den Inhalt des **Detail** Bereichs zu lesen und mit Ihnen zu interagieren.  
 
-:::image type="complex" source="../../media/2020/05/network-details.msft.png" alt-text="Der Bereich "Details" im Netzwerkbereich nimmt beim Öffnen den Fokus auf" lightbox="../../media/2020/05/network-details.msft.png":::
+:::image type="complex" source="../../media/2020/05/network-details.msft.png" alt-text="Der Bereich Details im Netzwerkbereich nimmt beim Öffnen den Fokus auf" lightbox="../../media/2020/05/network-details.msft.png":::
    Der Bereich " **Details** " im **Netzwerk** Bereich nimmt beim Öffnen den Fokus auf
 :::image-end:::  
 
@@ -134,7 +134,7 @@ Das Tool "neue **Probleme** " im devtools-Einzug wurde entwickelt, um die Ermüd
 
 Informationen zu den ersten Schritten finden Sie unter [Suchen und Beheben von Problemen mit dem Microsoft Edge devtools Issues-Tool][DevtoolsIssuesIndex].  
 
-:::image type="complex" source="../../media/2020/05/issues.msft.png" alt-text="Das Tool "Probleme" im devtools-Einzug" lightbox="../../media/2020/05/issues.msft.png":::
+:::image type="complex" source="../../media/2020/05/issues.msft.png" alt-text="Das Tool Probleme im devtools-Einzug" lightbox="../../media/2020/05/issues.msft.png":::
    Das Tool " **Probleme** " im devtools-Einzug  
 :::image-end:::  
 
@@ -211,7 +211,7 @@ V8-Problem [#6751][CRV86751]
 
 Die AutoVervollständigen-Benutzeroberfläche des Bereichs " **Formatvorlagen** " erkennt nun das [Revert][MDNRevert] CSS-Schlüsselwort, das den kaskadierten Wert einer Eigenschaft auf den vorherigen Wert zurücksetzt, der auf das Styling des Elements angewendet wurde.  
 
-:::image type="complex" source="../../media/2020/05/revert.msft.png" alt-text="Festlegen des Werts einer Eigenschaft auf "Zurücksetzen"" lightbox="../../media/2020/05/revert.msft.png":::
+:::image type="complex" source="../../media/2020/05/revert.msft.png" alt-text="Festlegen des Werts einer Eigenschaft auf Zurücksetzen" lightbox="../../media/2020/05/revert.msft.png":::
   Festlegen des Werts einer Eigenschaft auf "Zurücksetzen"  
 :::image-end:::  
 
@@ -233,7 +233,7 @@ Chrom Problem [#1040019][CR1040019]
 
 Wenn Sie Farben mit der [Farbauswahl][DevtoolsCssReferenceColorPicker] auswählen oder zwischen Farbdarstellungen im **Formatvorlagen** Bereich wechseln, indem Sie `Shift` den Wert halten und auswählen `background-color` , wird die Argumentsyntax mit Leerzeichengetrennt angezeigt.  
 
-:::image type="complex" source="../../media/2020/05/color.msft.png" alt-text="Verwenden von durch Leerzeichen getrennten Argumenten im Bereich "Formatvorlagen"" lightbox="../../media/2020/05/color.msft.png":::
+:::image type="complex" source="../../media/2020/05/color.msft.png" alt-text="Verwenden von durch Leerzeichen getrennten Argumenten im Bereich Formatvorlagen" lightbox="../../media/2020/05/color.msft.png":::
   Verwenden von durch Leerzeichen getrennten Argumenten im Bereich " **Formatvorlagen** "  
 :::image-end:::  
 
@@ -266,7 +266,7 @@ App-Tastenkombinationen helfen Benutzern, häufige oder empfohlene Aufgaben in e
 
 <!--todo:  add link Get things done quickly with app shortcuts (WebdevAppShortcuts) when section is live -->  
 
-:::image type="complex" source="../../media/2020/05/app-shortcuts.msft.png" alt-text="App-Verknüpfungen im Bereich "Manifest"" lightbox="../../media/2020/05/app-shortcuts.msft.png":::
+:::image type="complex" source="../../media/2020/05/app-shortcuts.msft.png" alt-text="App-Verknüpfungen im Bereich Manifest" lightbox="../../media/2020/05/app-shortcuts.msft.png":::
   App-Verknüpfungen im Bereich " **Manifest** "  
 :::image-end:::  
 
