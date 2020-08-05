@@ -311,7 +311,7 @@ Anfragen, die weiter Links sind, wurden früher als die weiter rechts eingegange
 
 Sehen Sie sich die verschiedenen Arten an, wie Sie den Wasserfall sortieren können, [indem Sie nach Aktivitätsphase sortieren](#sort-by-activity-phase) .  
 
-:::image type="complex" source="../media/network-network-requests-waterfall.msft.png" alt-text="Spalte Wasserfall im Bereich "Anforderungen"" lightbox="../media/network-network-requests-waterfall.msft.png":::
+:::image type="complex" source="../media/network-network-requests-waterfall.msft.png" alt-text="Spalte Wasserfall im Bereich Anforderungen" lightbox="../media/network-network-requests-waterfall.msft.png":::
    Abbildung 18: Spalte "Wasserfall" im Bereich " **Anforderungen** "  
 :::image-end:::  
 
@@ -607,7 +607,7 @@ Verwenden Sie große Zeilen, wenn in Ihrer Netzwerk Anforderungstabelle mehr Lee
 
 Aktivieren Sie das Kontrollkästchen **große Anforderungs Zeilen verwenden** , um große Zeilen zu aktivieren.  
 
-:::image type="complex" source="../media/network-network-requests-use-large-request-rows-on.msft.png" alt-text="Das Kontrollkästchen "große Anforderungs Zeilen verwenden"" lightbox="../media/network-network-requests-use-large-request-rows-on.msft.png":::
+:::image type="complex" source="../media/network-network-requests-use-large-request-rows-on.msft.png" alt-text="Das Kontrollkästchen große Anforderungs Zeilen verwenden" lightbox="../media/network-network-requests-use-large-request-rows-on.msft.png":::
    Abbildung 36: Kontrollkästchen " **große Anforderungs Zeilen verwenden** "  
 :::image-end:::  
 
