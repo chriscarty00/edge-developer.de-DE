@@ -62,7 +62,7 @@ Führen Sie diese interaktiven Lernprogramme aus, um die Grundlagen für das Anz
         
     1.  `aloha`Suchen Sie in der Klasse den Wert für die `padding` Formatvorlage, und kopieren Sie Sie.  
         
-        :::image type="complex" source="../media/css-elements-inspect-me-styles.msft.png" alt-text="Auf das geprüfte Element angewendete CSS-Klassen werden auf der Registerkarte "Formatvorlagen" hervorgehoben." lightbox="../media/css-elements-inspect-me-styles.msft.png":::
+        :::image type="complex" source="../media/css-elements-inspect-me-styles.msft.png" alt-text="Auf das geprüfte Element angewendete CSS-Klassen werden auf der Registerkarte Formatvorlagen hervorgehoben." lightbox="../media/css-elements-inspect-me-styles.msft.png":::
            Abbildung 2: CSS-Klassen, die auf das ausgewählte Element angewendet werden, wie etwa `aloha` , werden auf der Registerkarte " **Formatvorlagen** " angezeigt  
         :::image-end:::  
         
@@ -81,7 +81,7 @@ Verwenden Sie die Registerkarte **Formatvorlagen** , wenn Sie einem Element CSS-
 1.  Geben `background-color` Sie ein, und drücken Sie `Enter` .  
 1.  Geben `honeydew` Sie ein, und drücken Sie `Enter` .  In der **DOM-Struktur** sollten Sie sehen, dass eine Inlineformatvorlagen Deklaration auf das Element angewendet wurde.  
     
-    :::image type="complex" source="../media/css-elements-add-background-color-to-me-styles-p.msft.png" alt-text="Hinzufügen einer CSS-Deklaration zum Element mithilfe der Registerkarte "Formatvorlagen"" lightbox="../media/css-elements-add-background-color-to-me-styles-p.msft.png":::
+    :::image type="complex" source="../media/css-elements-add-background-color-to-me-styles-p.msft.png" alt-text="Hinzufügen einer CSS-Deklaration zum Element mithilfe der Registerkarte Formatvorlagen" lightbox="../media/css-elements-add-background-color-to-me-styles-p.msft.png":::
        Abbildung 3: die `background-color:honeydew` Deklaration wurde auf das Element über den `element.style` Abschnitt der Registerkarte " **Formatvorlagen** " angewendet  
     :::image-end:::  
     
