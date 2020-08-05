@@ -259,7 +259,7 @@ Microsoft Edge verwendet einen Microsoft-Netzwerkzeitdienst zum Nachverfolgen de
 
 Microsoft Edge bietet eine ansprechende und anwenderorientierte "Neuer Tab"-Seite mit einem Suchfeld von [Bing][|::ref2::|Main], Direktlink-Kacheln für die von Ihnen am häufigsten besuchten Websites sowie relevanten Inhalten von Microsoft News oder Office 365.  Sie können das Erscheinungsbilds der "Neuer Tab"-Seite durch Auswählen der Schaltfläche "Anpassen" ändern.  Die Einstellungen für die "Neuer Tab"-Seite werden für jedes Profil festgelegt, lokal auf Ihrem Gerät gespeichert und nicht unter Geräten synchronisiert.  
 
-:::image type="complex" source="./media/whitepaper-media/n-t-p1.png" alt-text=""Neuer Tab"-Seite" lightbox="./media/whitepaper-media/n-t-p1.png":::
+:::image type="complex" source="./media/whitepaper-media/n-t-p1.png" alt-text="Neuer Tab -Seite" lightbox="./media/whitepaper-media/n-t-p1.png":::
    "Neuer Tab"-Seite  
 :::image-end:::  
 
