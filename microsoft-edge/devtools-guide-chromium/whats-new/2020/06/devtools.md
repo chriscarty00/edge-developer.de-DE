@@ -72,7 +72,7 @@ Chrom Problem [#1093687][CR1093687]
 
 Die Registerkarte " **Anzeige** Dauer" des **Netzwerk** Panels enthält jetzt `respondWith` Service Worker-Ereignisse.  Das `respondWith` Dienst Arbeitskraft-Ereignis zeigt die Dauer ab dem Zeitpunkt an, zu dem der Service Worker- `fetch` Ereignishandler mit dem Zeitpunkt beginnt, zu dem das `respondWith` Versprechen des `fetch` Handlers abgerechnet wird.  
 
-:::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text="Das respondWith-Dienst Arbeitskraft Ereignis auf der Registerkarte "Anzeigedauer" des Netzwerk Panels" lightbox="../../media/2020/06/timing-tab.msft.png":::
+:::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text="Das respondWith-Dienst Arbeitskraft Ereignis auf der Registerkarte Anzeigedauer des Netzwerk Panels" lightbox="../../media/2020/06/timing-tab.msft.png":::
    Das `respondWith` Service Worker-Ereignis auf der Registerkarte " **Anzeige** Dauer" des **Netzwerk** Panels  
 :::image-end:::  
 
@@ -92,7 +92,7 @@ Chrom Problem [#1066579][CR1066579]
 
 [webhint][WebhintMain] ist ein Open-Source-Tool, das in Echtzeit Feedback zur Barrierefreiheit, browserübergreifenden Kompatibilität, Sicherheit, Leistung, PWAs und anderen gängigen Webentwicklungs Problemen von Websites bietet.  Sie können jetzt webhint-Feedback im [Problem][DevtoolsIssues] Bereich anzeigen.  
 
-:::image type="complex" source="../../media/2020/06/experiments-webhint.msft.png" alt-text="webhint-Feedback im Bereich "Probleme"" lightbox="../../media/2020/06/experiments-webhint.msft.png":::
+:::image type="complex" source="../../media/2020/06/experiments-webhint.msft.png" alt-text="webhint-Feedback im Bereich Probleme" lightbox="../../media/2020/06/experiments-webhint.msft.png":::
    webhint-Feedback im Bereich "Probleme"  
 :::image-end:::  
 
