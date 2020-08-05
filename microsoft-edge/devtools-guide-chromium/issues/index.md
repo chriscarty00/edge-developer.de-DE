@@ -74,7 +74,7 @@ Das **Problem** Tool in Microsoft Edge devtools verringert die Ermüdung der Ben
 
     Die in der **Konsole** gemeldeten Probleme sind schwer verständlich, wie etwa die Cookie-Warnungen in der folgenden Abbildung.  Basierend auf den gemeldeten Problemen ist es möglicherweise nicht klar, was Sie tun müssen.  
     
-    :::image type="complex" source="../media/issues-tab-after-refresh.msft.png" alt-text="Tool "Probleme" im devtools-Einzug mit drei Problemen mit Cookies" lightbox="../media/issues-tab-after-refresh.msft.png":::
+    :::image type="complex" source="../media/issues-tab-after-refresh.msft.png" alt-text="Tool Probleme im devtools-Einzug mit drei Problemen mit Cookies" lightbox="../media/issues-tab-after-refresh.msft.png":::
        Abbildung 4.  Tool " **Probleme** " im devtools-Einzug mit drei Problemen mit Cookies  
     :::image-end:::  
     
@@ -84,7 +84,7 @@ Das Tool " **Probleme** " im devtools-Einzug zeigt Warnungen auf strukturierter,
 
 1.  Wählen Sie ein Element im **Issues** -Tool aus, um Anleitungen zur Behebung des Problems und zum Auffinden betroffener Ressourcen zu erhalten.  
     
-    :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="Markieren von websiteübergreifenden Cookies als sicheres Problem im Tool "Probleme"" lightbox="../media/issues-tab-issue-open.msft.png":::
+    :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="Markieren von websiteübergreifenden Cookies als sicheres Problem im Tool Probleme" lightbox="../media/issues-tab-issue-open.msft.png":::
        Abbildung5.  **Markieren von websiteübergreifenden Cookies als sicheres** Problem im Tool " **Probleme** "  
     :::image-end:::  
     
@@ -97,7 +97,7 @@ Das Tool " **Probleme** " im devtools-Einzug zeigt Warnungen auf strukturierter,
     
 1.  Wählen Sie Elemente in **betroffenen Ressourcen** aus, um Details anzuzeigen.  Im folgenden Beispiel wirkt sich das **kennzeichnen von websiteübergreifenden Cookies als sicheres** Problem auf ein Cookie und zwei Anforderungen aus.  
     
-    :::image type="complex" source="../media/issues-tab-affected-resources.msft.png" alt-text="Auf der Registerkarte "Issues Drawer" geöffnete betroffene Ressourcen" lightbox="../media/issues-tab-affected-resources.msft.png":::
+    :::image type="complex" source="../media/issues-tab-affected-resources.msft.png" alt-text="Auf der Registerkarte Issues Drawer geöffnete betroffene Ressourcen" lightbox="../media/issues-tab-affected-resources.msft.png":::
        Abbildung6.  Im Tool " **Probleme** " im devtools-Einzug geöffnete betroffene Ressourcen  
     :::image-end:::  
     
@@ -111,7 +111,7 @@ Das Tool " **Probleme** " im devtools-Einzug zeigt Warnungen auf strukturierter,
 
 1.  Scrollen Sie, um das Element mit einem Problem anzuzeigen: im folgenden Beispiel wird das `ck02` Cookie angezeigt.  Zeigen Sie mit der Maus auf die Spalte **SameSite** , um den `None` Wert anzuzeigen, der vom Problem erkannt wurde.  
     
-    :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="Kein Wert in der Spalte "SameSite" für das ck02-Cookie im devtools-Netzwerk Panel" lightbox="../media/issues-tab-view-issue.msft.png":::
+    :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="Kein Wert in der Spalte SameSite für das ck02-Cookie im devtools-Netzwerk Panel" lightbox="../media/issues-tab-view-issue.msft.png":::
        Abbildung8.  `None` Wert in der Spalte " **SameSite** " für das `ck02` Cookie im devtools- **Netzwerk** Panel  
     :::image-end:::  
 
