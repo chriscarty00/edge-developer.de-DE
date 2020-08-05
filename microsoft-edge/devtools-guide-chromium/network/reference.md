@@ -311,7 +311,7 @@ Anfragen, die weiter Links sind, wurden früher als die weiter rechts eingegange
 
 Sehen Sie sich die verschiedenen Arten an, wie Sie den Wasserfall sortieren können, [indem Sie nach Aktivitätsphase sortieren](#sort-by-activity-phase) .  
 
-:::image type="complex" source="../media/network-network-requests-waterfall.msft.png" alt-text="Spalte "Wasserfall" im Bereich "Anforderungen"" lightbox="../media/network-network-requests-waterfall.msft.png":::
+:::image type="complex" source="../media/network-network-requests-waterfall.msft.png" alt-text="Spalte Wasserfall im Bereich "Anforderungen"" lightbox="../media/network-network-requests-waterfall.msft.png":::
    Abbildung 18: Spalte "Wasserfall" im Bereich " **Anforderungen** "  
 :::image-end:::  
 
@@ -352,7 +352,7 @@ So zeigen Sie eine Vorschau eines Antworttexts an:
 
 Diese Registerkarte ist hauptsächlich für die Anzeige von Bildern hilfreich.  
 
-:::image type="complex" source="../media/network-network-resources-preview.msft.png" alt-text="Registerkarte "Vorschau"" lightbox="../media/network-network-resources-preview.msft.png":::
+:::image type="complex" source="../media/network-network-resources-preview.msft.png" alt-text="Registerkarte Vorschau" lightbox="../media/network-network-resources-preview.msft.png":::
    Abbildung 19: Registerkarte " **Vorschau** "  
 :::image-end:::  
 
@@ -363,7 +363,7 @@ So zeigen Sie den Antworttext auf eine Anforderung an:
 1.  Wählen Sie die URL der Anforderung unter der Spalte **Name** der Tabelle Anforderungen aus.  
 1.  Wählen Sie die Registerkarte **Antwort** aus.  
 
-:::image type="complex" source="../media/network-network-resources-response.msft.png" alt-text="Die Registerkarte "Antwort"" lightbox="../media/network-network-resources-response.msft.png":::
+:::image type="complex" source="../media/network-network-resources-response.msft.png" alt-text="Die Registerkarte Antwort" lightbox="../media/network-network-resources-response.msft.png":::
    Abbildung 20: die Registerkarte " **Antwort** "  
 :::image-end:::  
 
@@ -374,7 +374,7 @@ So zeigen Sie HTTP-Header Daten zu einer Anforderung an:
 1.  Wählen Sie die URL der Anforderung unter der Spalte **Name** der Tabelle Anforderungen aus.  
 1.  Wählen Sie die Registerkarte über **Schriften** aus.  
 
-:::image type="complex" source="../media/network-resources-headers.msft.png" alt-text="Die Registerkarte "Überschriften"" lightbox="../media/network-resources-headers.msft.png":::
+:::image type="complex" source="../media/network-resources-headers.msft.png" alt-text="Die Registerkarte Überschriften" lightbox="../media/network-resources-headers.msft.png":::
    Abbildung 21: Registerkarte "über **Schriften** "  
 :::image-end:::  
 
@@ -422,7 +422,7 @@ So zeigen Sie die im HTTP-Header einer Anforderung gesendeten Cookies an:
 <!--[ManageDataCookiesFields]: manage-data/cookies#fields  -->
 <!--TODO: add link when section is available -->
 
-:::image type="complex" source="../media/network-network-resources-cookies.msft.png" alt-text="Die Registerkarte "Cookies"" lightbox="../media/network-network-resources-cookies.msft.png":::
+:::image type="complex" source="../media/network-network-resources-cookies.msft.png" alt-text="Die Registerkarte Cookies" lightbox="../media/network-network-resources-cookies.msft.png":::
    Abbildung 23: die Registerkarte "Cookies"  
 :::image-end:::  
 
@@ -437,7 +437,7 @@ Eine schnellere Möglichkeit für den Zugriff auf diese Daten finden Sie unter [
 
 Weitere Informationen zu den einzelnen Phasen, die auf der Registerkarte "Anzeigedauer" angezeigt werden, finden Sie unter [erläuterte Phasen der zeitlichen Verteilung](#timing-breakdown-phases-explained) .  
 
-:::image type="complex" source="../media/network-network-resources-timing.msft.png" alt-text="Registerkarte "Anzeigedauer"" lightbox="../media/network-network-resources-timing.msft.png":::
+:::image type="complex" source="../media/network-network-resources-timing.msft.png" alt-text="Registerkarte Anzeigedauer" lightbox="../media/network-network-resources-timing.msft.png":::
    Abbildung 24: Registerkarte " **Anzeige** Dauer"  
 :::image-end:::  
 
@@ -564,7 +564,7 @@ Nachdem Sie eine har-Datei gespeichert haben, können Sie Sie für die Analyse w
 <!--[HARAnalyzer]: https://toolbox.alphabetapps.com/apps/har_analyzer  -->  
 <!--Todo: add section link when content is available  -->  
 
-:::image type="complex" source="../media/network-network-requests-save-har-content.msft.png" alt-text="Auswählen von "als har mit Inhalt speichern"" lightbox="../media/network-network-requests-save-har-content.msft.png":::
+:::image type="complex" source="../media/network-network-requests-save-har-content.msft.png" alt-text="Auswählen von als har mit Inhalt speichern" lightbox="../media/network-network-requests-save-har-content.msft.png":::
    Abbildung 32: auswählen **von "als har mit Inhalt speichern** "  
 :::image-end:::  
 
@@ -580,7 +580,7 @@ Zeigen Sie unter der Spalte **Name** der Tabelle Anforderungen auf eine Anforder
 *   **Kopieren Sie alle als curl**.  Kopieren Sie alle Anforderungen als eine Kette von curl-Befehlen.  
 *   **Kopieren Sie alle als har**.  Kopieren Sie alle Anforderungen als har-Daten.  
 
-:::image type="complex" source="../media/network-network-requests-copy-response.msft.png" alt-text="Auswählen von "Antwort kopieren"" lightbox="../media/network-network-requests-copy-response.msft.png":::
+:::image type="complex" source="../media/network-network-requests-copy-response.msft.png" alt-text="Auswählen von Antwort kopieren" lightbox="../media/network-network-requests-copy-response.msft.png":::
    Abbildung 33: Auswählen von " **Antwort kopieren** "  
 :::image-end:::  
 
@@ -593,7 +593,7 @@ Sie können Abschnitte der Netzwerk Panel-UI erweitern oder reduzieren, um wicht
 Standardmäßig zeigt devtools den **Bereich "Filter"** an.  
 Wählen Sie **Filter** ![ Filter aus ][ImageFilterIcon] , um sie auszublenden.  
 
-:::image type="complex" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text="Schaltfläche "Filter ausblenden"" lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
+:::image type="complex" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text="Schaltfläche Filter ausblenden" lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
    Abbildung 34: die Schaltfläche "Filter ausblenden"  
 :::image-end:::  
 
@@ -601,7 +601,7 @@ Wählen Sie **Filter** ![ Filter aus ][ImageFilterIcon] , um sie auszublenden.
 
 Verwenden Sie große Zeilen, wenn in Ihrer Netzwerk Anforderungstabelle mehr Leerzeichen verwendet werden sollen.  Einige Spalten liefern auch ein wenig mehr Informationen, wenn Sie große Zeilen verwenden.  Der untere Wert der Spalte **size** entspricht beispielsweise der unkomprimierten Größe einer Anforderung.  
 
-:::image type="complex" source="../media/network-network-requests-large-request-rows.msft.png" alt-text="Ein Beispiel für große Anforderungs Zeilen im Bereich "Anforderungen"" lightbox="../media/network-network-requests-large-request-rows.msft.png":::
+:::image type="complex" source="../media/network-network-requests-large-request-rows.msft.png" alt-text="Ein Beispiel für große Anforderungs Zeilen im Bereich Anforderungen" lightbox="../media/network-network-requests-large-request-rows.msft.png":::
    Abbildung 35: ein Beispiel für große Anforderungs Zeilen im Bereich " **Anforderungen** "  
 :::image-end:::  
 
