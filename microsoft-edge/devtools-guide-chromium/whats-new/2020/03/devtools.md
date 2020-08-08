@@ -2,16 +2,16 @@
 title: Neuerungen in devtools (Microsoft Edge 83)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/11/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: ab3df52708febd4928c7e4ac41a77713370b9fa1
-ms.sourcegitcommit: a34858dd3260967ba9699842fa839c7a94775fe4
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+ms.openlocfilehash: f90bbde9b2b220cd8a333a81d520d4c6e56eaa90
+ms.sourcegitcommit: 4e6c0959bc01eb0ceb4b85dce791670916fb5b48
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "10710378"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "10918634"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -39,29 +39,29 @@ In den folgenden Abschnitten finden Sie eine Liste der Ankündigungen, die Sie m
 
 ### Remotedebuggen von Microsoft Edge auf Windows 10-Geräten  
 
-Die [Remote Tools für Microsoft Edge \ (Beta \)-][RemoteTools] APP ist jetzt im [Microsoft Store][MicrosoftStore]verfügbar.  Mit dieser APP, die das [Windows-Geräte Portal][WindowsDevicePortal]erweitert, können Sie eine Verbindung von der Instanz von Microsoft Edge, die auf Ihrem Entwicklungscomputer ausgeführt wird, mit einem Windows 10-Remotegerät herstellen, eine Liste der Ziele anzeigen (alle Registerkarten in Microsoft Edge und [PWAs][PWADoc] werden auf dem Windows 10-Gerät geöffnet), und die devtools auf dem Entwicklungscomputer für ein Ziel verwenden, das auf dem Remote  
+Die [Remote Tools für Microsoft Edge \ (Beta \)-][RemoteTools] APP ist jetzt im [Microsoft Store][MicrosoftStore]verfügbar.  Mit dieser APP, die das [Windows-Geräte Portal][WindowsUwpDebugTestPerfDevicePortal]erweitert, können Sie eine Verbindung von der Instanz von Microsoft Edge, die auf Ihrem Entwicklungscomputer ausgeführt wird, mit einem Windows 10-Remotegerät herstellen, eine Liste der Ziele anzeigen (alle Registerkarten in Microsoft Edge und [PWAs][PprgressiveWebAppsChromiumIndex] werden auf dem Windows 10-Gerät geöffnet), und die devtools auf dem Entwicklungscomputer für ein Ziel verwenden, das auf dem Remote  
 
 :::image type="complex" source="../../media/2020/03/remote-tools.msft.png" alt-text="Die im Microsoft Store verfügbare Remote Tools für Microsoft Edge (Beta)-app" lightbox="../../media/2020/03/remote-tools.msft.png":::
    Abbildung 1: die APP [Remote Tools für Microsoft Edge (Beta)][RemoteTools] , die im [Microsoft Store][MicrosoftStore] verfügbar ist  
 :::image-end:::  
 
-[Lesen Sie unseren Leitfaden zum Einrichten Ihres Windows 10-Geräts und ihres Entwicklungscomputers für das Remotedebuggen][RemoteDebuggingWin10].  Informieren Sie uns über Ihre Remote Debugging-Erfahrung, indem Sie [tweeten][PostTweetEdgeDevTools] oder auf das [Feedback](#feedback) -Symbol klicken.  
+[Lesen Sie unseren Leitfaden zum Einrichten Ihres Windows 10-Geräts und ihres Entwicklungscomputers für das Remotedebuggen][DevtoolsRemoteDebuggingWindows].  Informieren Sie uns über Ihre Remote Debugging-Erfahrung, indem Sie [tweeten][PostTweetEdgeDevTools] oder auf das [Feedback](#feedback) -Symbol klicken.  
 
 ### Neue Möglichkeiten für den Zugriff auf Einstellungen  
 
-Es gibt Unmengen von Einstellungen für die devtools, die Sie anpassen können, um die devtools aussehen zu lassen, zu fühlen und zu arbeiten, wie Sie es benötigen. In Microsoft Edge 83 ist der Zugriff auf die [Einstellungen][OverviewSettings] im devtools jetzt viel einfacher. Öffnen Sie die Einstellungen mit dem Zahnradsymbol neben "Console Alerts" und dem Hauptmenü.  
+Es gibt Unmengen von Einstellungen für die devtools, die Sie anpassen können, um die devtools aussehen zu lassen, zu fühlen und zu arbeiten, wie Sie es benötigen. In Microsoft Edge 83 ist der Zugriff auf die [Einstellungen][DevtoolsCustomizeIndexSettings] im devtools jetzt viel einfacher. Öffnen Sie die Einstellungen mit dem Zahnradsymbol neben "Console Alerts" und dem Hauptmenü.  
 
 :::image type="complex" source="../../media/2020/03/settings.msft.png" alt-text="Das Zahnradsymbol öffnet die Einstellungen im devtools" lightbox="../../media/2020/03/settings.msft.png":::
    Abbildung 2: das Zahnradsymbol öffnet die **Einstellungen** im devtools  
 :::image-end:::  
 
-Sie können die [Einstellungen][OverviewSettings] auch über das Hauptmenü unter **"** **Weitere Tools**" öffnen.
+Sie können die [Einstellungen][DevtoolsCustomizeIndexSettings] auch über das Hauptmenü unter **"** **Weitere Tools**" öffnen.
 
 :::image type="complex" source="../../media/2020/03/settings2.msft.png" alt-text="Hauptmenü > weitere Tools > Einstellungen" lightbox="../../media/2020/03/settings2.msft.png":::
    Abbildung 3: **Hauptmenü**  >  **Weitere**  >  **Einstellungen** für Tools  
 :::image-end:::  
 
-Chrom Problem [#1050855][crbug1050855]
+Chrom Problem [#1050855][CR1050855]
 
 ### Neue und verbesserte infobars
 
@@ -71,35 +71,35 @@ Informations Benachrichtigungs leisten \ (Infoleisten \) in devtools haben nun e
    Abbildung 4: Infoleiste für das schöne Drucken einer minimierte-Datei in Microsoft Edge, Version 83  
 :::image-end:::  
 
-Chrom Problem [#1056348][crbug1056348]
+Chrom Problem [#1056348][CR1056348]
 
 ### Navigieren in der Farbauswahl mit der Tastatur  
 
-Bei der [Farbauswahl][ColorPicker] handelt es sich um eine Benutzeroberfläche für Änderungen und Deklarationen im [Element Panel][ElementsDoc] `color` `background-color` .  In früheren Versionen von Microsoft Edge konnten Sie nicht über die Tastatur in der [Farbauswahl][ColorPicker] im Bereich " **Schattierungen** " navigieren.  
+Bei der [Farbauswahl][DevtoolsCssReferenceColorPicker] handelt es sich um eine Benutzeroberfläche für Änderungen und Deklarationen im [Element Panel][DevtoolsCssIndex] `color` `background-color` .  In früheren Versionen von Microsoft Edge konnten Sie nicht über die Tastatur in der [Farbauswahl][DevtoolsCssReferenceColorPicker] im Bereich " **Schattierungen** " navigieren.  
 
-:::image type="complex" source="../../media/2020/03/color-picker.msft.png" alt-text="Sie können jetzt Ihre Tastatur verwenden, um die Auswahl im Bereich Schattierungen der Farbauswahl zu verschieben." lightbox="../../media/2020/03/color-picker.msft.png":::
-   Abbildung 5: Sie können nun Ihre Tastatur verwenden, um die Auswahl im Bereich " **Schattierungen** " der [Farbauswahl][ColorPicker] zu verschieben.  
+:::image type="complex" source="../../media/2020/03/color-picker.msft.png" alt-text="Sie können jetzt Ihre Tastatur verwenden, um die Auswahl im Bereich "Schattierungen" der Farbauswahl zu verschieben." lightbox="../../media/2020/03/color-picker.msft.png":::
+   Abbildung 5: Sie können nun Ihre Tastatur verwenden, um die Auswahl im Bereich " **Schattierungen** " der [Farbauswahl][DevtoolsCssReferenceColorPicker] zu verschieben.  
 :::image-end:::  
 
 In Microsoft Edge 83 können Sie nun die Tastatur verwenden, um den Auswahlbereich im Abschnitt **Schattierungen** der Farbauswahl zu verschieben.  
 
-Chrom Problem [#963183][crbug963183]  
+Chrom Problem [#963183][CR963183]  
 
 ### Die Registerkarte "Eigenschaften" wird nun nach einer Seitenaktualisierung gefüllt  
 
-In Microsoft Edge 81 und früheren Versionen wurde die **Registerkarte Eigenschaften** im [Element Panel][ElementsDoc] durch Seitenaktualisierungen unterbrochen.  Wenn Sie die Seite aktualisiert haben, wurden die Eigenschaften des aktuell ausgewählten Elements auf der **Registerkarte Eigenschaften** nicht aufgefüllt.  
+In Microsoft Edge 81 und früheren Versionen wurde die **Registerkarte Eigenschaften** im [Element Panel][DevtoolsCssIndex] durch Seitenaktualisierungen unterbrochen.  Wenn Sie die Seite aktualisiert haben, wurden die Eigenschaften des aktuell ausgewählten Elements auf der **Registerkarte Eigenschaften** nicht aufgefüllt.  
 
-:::image type="complex" source="../../media/2020/03/properties-in-81.msft.png" alt-text="In Microsoft Edge 81 und früher war die Registerkarte Eigenschaften nach einer Seitenaktualisierung leer" lightbox="../../media/2020/03/properties-in-81.msft.png":::
+:::image type="complex" source="../../media/2020/03/properties-in-81.msft.png" alt-text="In Microsoft Edge 81 und früher war die Registerkarte "Eigenschaften" nach einer Seitenaktualisierung leer" lightbox="../../media/2020/03/properties-in-81.msft.png":::
    Abbildung 6: in Microsoft Edge 81 und früher war die **Registerkarte "Eigenschaften"** nach einer Seitenaktualisierung leer  
 :::image-end:::  
 
 In Microsoft Edge 83 können Sie nun die Eigenschaften des aktuell ausgewählten Elements nach einer Seitenaktualisierung auf der **Registerkarte Eigenschaften**anzeigen.  
 
-:::image type="complex" source="../../media/2020/03/properties-in-82.msft.png" alt-text="In Microsoft Edge 83 werden auf der Registerkarte Eigenschaften die Eigenschaften des aktuell ausgewählten Elements nach einer Seitenaktualisierung angezeigt." lightbox="../../media/2020/03/properties-in-82.msft.png":::
+:::image type="complex" source="../../media/2020/03/properties-in-82.msft.png" alt-text="In Microsoft Edge 83 werden auf der Registerkarte "Eigenschaften" die Eigenschaften des aktuell ausgewählten Elements nach einer Seitenaktualisierung angezeigt." lightbox="../../media/2020/03/properties-in-82.msft.png":::
    Abbildung 7: in Microsoft Edge 83 werden auf der **Registerkarte "Eigenschaften"** die Eigenschaften des aktuell ausgewählten Elements nach einer Seitenaktualisierung angezeigt.  
 :::image-end:::  
 
-Chrom Problem [#1050999][crbug1050999]  
+Chrom Problem [#1050999][CR1050999]  
 
 ### Verwenden Sie die Pfeiltasten, um im Tool "Änderungen" zu scrollen.  
 
@@ -109,13 +109,13 @@ Das **Tool "Änderungen"** verfolgt alle Änderungen, die Sie an CSS oder JavaSc
 
 Wenn Sie eine Änderung an einer minimierte-Datei vorgenommen haben, können Sie mit dem **Tool "Änderungen"** horizontal scrollen, um den gesamten minimierte-Code anzuzeigen.  Ab Microsoft Edge 83 können Sie jetzt mit den Pfeiltasten auf der Tastatur horizontal scrollen.  
 
-:::image type="complex" source="../../media/2020/03/changes.msft.png" alt-text="In Microsoft Edge 83 können Sie mit den Pfeiltasten horizontal scrollen, um Ihren minimierte-Code im Tool Änderungen anzuzeigen." lightbox="../../media/2020/03/changes.msft.png":::
+:::image type="complex" source="../../media/2020/03/changes.msft.png" alt-text="In Microsoft Edge 83 können Sie mit den Pfeiltasten horizontal scrollen, um Ihren minimierte-Code im Tool "Änderungen" anzuzeigen." lightbox="../../media/2020/03/changes.msft.png":::
    Abbildung 8: in Microsoft Edge 83 können Sie mit den Pfeiltasten horizontal scrollen, um die am minimierte-Code vorgenommenen Änderungen im **Tool "Änderungen"** anzuzeigen.  
 :::image-end:::  
 
 Wenn Sie Bildschirmsprachausgaben oder die Tastatur verwenden, um in der devtools zu navigieren, senden Sie uns Ihr Feedback, indem Sie uns [tweeten][PostTweetEdgeDevTools] oder auf das [Feedback](#feedback) -Symbol klicken.  
 
-Chrom Problem [#963183][crbug963183]  
+Chrom Problem [#963183][CR963183]  
 
 ## Ankündigungen aus dem Chromium-Projekt  
 
@@ -123,7 +123,7 @@ In den folgenden Abschnitten werden weitere in Microsoft Edge 83 verfügbare Fea
 
 ### Emulieren von Sehstörungen  
 
-Öffnen Sie die [Registerkarte "Rendering"][RenderingDoc] , und verwenden Sie das neue Feature "nach **eifern des Sehvermögens** ", um eine bessere Vorstellung davon zu erhalten, wie Personen mit unterschiedlichen Arten von Sehstörungen Ihre Website erleben.  
+Öffnen Sie die [Registerkarte "Rendering"][DevtoolsEvaluatePreformanceReferenceAnalyzeRenderingTab] , und verwenden Sie das neue Feature "nach **eifern des Sehvermögens** ", um eine bessere Vorstellung davon zu erhalten, wie Personen mit unterschiedlichen Arten von Sehstörungen Ihre Website erleben.  
 
 :::image type="complex" source="../../media/2020/03/vision.msft.png" alt-text="Emulieren verschwommener Sehkraft" lightbox="../../media/2020/03/vision.msft.png":::
    Abbildung 9: emulieren verschwommener Visionen  
@@ -145,7 +145,7 @@ Wenn Sie für die extremeren Simulationen in devtools entwerfen, sind Ihre Web-A
 
 Senden Sie Ihr Feedback, indem Sie [tweeten][PostTweetEdgeDevTools] oder auf das [Feedback](#feedback) -Symbol klicken.  
 
-Chrom Problem [#1003700][crbug1003700]  
+Chrom Problem [#1003700][CR1003700]  
 
 ### Emulieren von Gebietsschemas  
 
@@ -165,7 +165,7 @@ Emulieren Sie Gebietsschemas, indem Sie einen Speicherort im **Sensor**  >  **St
 
 Informationen zum Testen einer Demo finden Sie unter [Beispiel für gebietsschemaabhängigen Code][MathiasByensLocaleDemo].
 
-Chrom Problem [#1051822][crbug1051822]
+Chrom Problem [#1051822][CR1051822]
 
 ### Debuggen von Richtlinien für die übergreifende Einbettungs Richtlinie (COEP)  
 
@@ -179,19 +179,31 @@ Die Spalte **Status** bietet nun eine kurze Erläuterung dazu, warum eine Anford
 
 Im Abschnitt " **Antwort Kopfzeilen** " auf der Registerkarte " **Kopfzeilen** " finden Sie weitere Anleitungen zur Behebung der Probleme:  
 
-:::image type="complex" source="../../media/2020/03/guidance.msft.png" alt-text="Weitere Anleitungen im Abschnitt Antwort Kopfzeilen" lightbox="../../media/2020/03/guidance.msft.png":::
+:::image type="complex" source="../../media/2020/03/guidance.msft.png" alt-text="Weitere Anleitungen im Abschnitt "Antwort Kopfzeilen"" lightbox="../../media/2020/03/guidance.msft.png":::
    Abbildung 12: Weitere Anleitungen im Abschnitt "Antwort Kopfzeilen"  
 :::image-end:::  
 
 Senden Sie Ihr Feedback, indem Sie [tweeten][PostTweetEdgeDevTools] oder auf das [Feedback](#feedback) -Symbol klicken.  
 
-Chrom Problem [#1051466][crbug1051466]  
+Chrom Problem [#1051466][CR1051466]  
+
+### Neue Symbole für Haltepunkte, bedingte Haltepunkte und logpoints  
+
+Das Quellen Panel enthält neue Symbole für Haltepunkte, bedingte Haltepunkte und logpoints:  
+
+*   Haltepunkte \ (![Haltepunkt](../../media/2020/03/breakpoint.msft.png)\) werden durch rote Kreise dargestellt.  
+*   Bedingte Haltepunkte \ (![Bedingter Haltepunkt](../../media/2020/03/conditional.msft.png)\) werden durch halb rote halb weiße Kreise dargestellt.  
+*   Logpoints \(![Logpoint](../../media/2020/03/logpoint.msft.png)\) werden durch rote Kreise mit Konsolen Symbolen dargestellt.  
+
+Die Motivation für die neuen Symbole bestand darin, die Benutzeroberfläche mit anderen GUI-Debugging-Tools konsistenter zu gestalten \ (die normalerweise Farb Haltepunkte rot \) und die Unterscheidung zwischen den drei Features auf einen Blick zu erleichtern.  
+
+Chrom Problem [#1041830][CR1041830]  
 
 ### Anzeigen von Netzwerkanforderungen, die einen bestimmten Cookie-Pfad festzulegen  
 
 Verwenden Sie das `cookie-path` Schlüsselwort New Filter in der Gruppe **Netzwerk** , um sich auf die Netzwerkanforderungen zu konzentrieren, die einen bestimmten [Cookie-Pfad][MDNCookiePath]festzulegen.  
 
-Schauen Sie sich [Filter Anforderungen nach Eigenschaften][NetworkProperties] an, um weitere Stichwörter wie zu entdecken `cookie-path` .
+Schauen Sie sich [Filter Anforderungen nach Eigenschaften][DevtoolsNetworkReferenceFilterRequestsProperties] an, um weitere Stichwörter wie zu entdecken `cookie-path` .
 
 ### Andocken von Links über das Befehlsmenü  
 
@@ -202,11 +214,11 @@ Schauen Sie sich [Filter Anforderungen nach Eigenschaften][NetworkProperties] an
 :::image-end:::  
 
 > [!NOTE]
-> Das Feature " **Dock to Left** " wurde seit Microsoft Edge 75 zur Verfügung gestellt, war aber zuvor nur über das [**Hauptmenü**][MainMenuDoc]zugänglich.  Das neue Feature in Microsoft Edge 83 ist, dass Sie nun über das Befehlsmenü auf dieses Feature zugreifen können.  
+> Das Feature " **Dock to Left** " wurde seit Microsoft Edge 75 zur Verfügung gestellt, war aber zuvor nur über das [**Hauptmenü**][DevtoolsCustomizePlacementsChangeMainMenu]zugänglich.  Das neue Feature in Microsoft Edge 83 ist, dass Sie nun über das Befehlsmenü auf dieses Feature zugreifen können.  
 
 Senden Sie Ihr Feedback, indem Sie [tweeten][PostTweetEdgeDevTools] oder auf das [Feedback](#feedback) -Symbol klicken.  
 
-Chrom Problem [#1011679][crbug1011679]  
+Chrom Problem [#1011679][CR1011679]  
 
 ### Das Panel "Audits" ist jetzt das Leuchtturm-Panel  
 
@@ -229,13 +241,13 @@ Nachdem Sie **lokale Überschreibungen** eingerichtet haben, können Sie mit der
 
 Senden Sie Ihr Feedback, indem Sie [tweeten][PostTweetEdgeDevTools] oder auf das [Feedback](#feedback) -Symbol klicken.  
 
-Chrom Problem [#1016501][crbug1016501]  
+Chrom Problem [#1016501][CR1016501]  
 
 ### Benutzeroberfläche für lange Aufgaben aktualisiert  
 
 Eine **lange Aufgabe** ist JavaScript-Code, der den Hauptthread lange Zeit monopolisiert, wodurch eine Webseite blockiert wird.  
 
-Sie haben in der Lage sein, [lange Aufgaben im Leistungs Panel][LongTasksInPerformancePanel] für eine Weile zu visualisieren, doch in Microsoft Edge 83 wurde die Benutzeroberfläche für die lange Aufgaben Visualisierung im Leistungs Panel aktualisiert.  Der lange Aufgabenbereich eines Vorgangs wird nun mit einem gestreiften roten Hintergrund eingefärbt.  
+Sie haben in der Lage sein, [lange Aufgaben im Leistungs Panel][DevtoolsEvaluatePerformanceReferenceViewMainThreadActivity] für eine Weile zu visualisieren, doch in Microsoft Edge 83 wurde die Benutzeroberfläche für die lange Aufgaben Visualisierung im Leistungs Panel aktualisiert.  Der lange Aufgabenbereich eines Vorgangs wird nun mit einem gestreiften roten Hintergrund eingefärbt.  
 
 :::image type="complex" source="../../media/2020/03/long-task.msft.png" alt-text="Die neue Benutzeroberfläche für lange Aufgaben" lightbox="../../media/2020/03/long-task.msft.png":::
    Abbildung 16: die neue Benutzeroberfläche für lange Aufgaben  
@@ -243,17 +255,17 @@ Sie haben in der Lage sein, [lange Aufgaben im Leistungs Panel][LongTasksInPerfo
 
 Senden Sie Ihr Feedback, indem Sie [tweeten][PostTweetEdgeDevTools] oder auf das [Feedback](#feedback) -Symbol klicken.  
 
-Chrom Problem [#1054447][crbug1054447]  
+Chrom Problem [#1054447][CR1054447]  
 
 ### Unterstützung für Maskierungs Symbole im Bereich "Manifest"  
 
-Android Oreo hat Adaptive Symbole eingeführt, die APP-Symbole in einer Vielzahl von Formen in verschiedenen Gerätemodellen anzeigen.  **Maskierungs Symbole** sind ein neues Symbol Format, das adaptive Symbole unterstützt, mit denen Sie sicherstellen können, dass Ihr [PWA][PWADoc] -Symbol auf Geräten gut aussieht, die den Standard für Maskierungs fähige Symbole unterstützen.  
+Android Oreo hat Adaptive Symbole eingeführt, die APP-Symbole in einer Vielzahl von Formen in verschiedenen Gerätemodellen anzeigen.  **Maskierungs Symbole** sind ein neues Symbol Format, das adaptive Symbole unterstützt, mit denen Sie sicherstellen können, dass Ihr [PWA][PprgressiveWebAppsChromiumIndex] -Symbol auf Geräten gut aussieht, die den Standard für Maskierungs fähige Symbole unterstützen.  
 
 Aktivieren Sie das Kontrollkästchen **nur den Mindestbereich für abgesicherten Bereich für maskierte Symbole anzeigen** im Bereich **Manifest** , um zu überprüfen, ob Ihr Maskierungs Symbol auf Android Oreo-Geräten gut aussieht.  
 
 <!-- Check out [Are my current icons ready?] to learn more.  -->  
 
-:::image type="complex" source="../../media/2020/03/maskable-icons.msft.png" alt-text="Kontrollkästchen nur den kleinsten sicheren Bereich für maskierte Symbole anzeigen" lightbox="../../media/2020/03/maskable-icons.msft.png":::
+:::image type="complex" source="../../media/2020/03/maskable-icons.msft.png" alt-text="Kontrollkästchen "nur den kleinsten sicheren Bereich für maskierte Symbole anzeigen"" lightbox="../../media/2020/03/maskable-icons.msft.png":::
    Abbildung 17: Kontrollkästchen **nur den kleinsten sicheren Bereich für Maskierungs Symbole anzeigen**  
 :::image-end:::  
 
@@ -279,48 +291,53 @@ Wenn Sie unter Windows oder macOS arbeiten, sollten Sie die [Microsoft Edge Prev
 
 <!-- links -->  
 
-[PostTweetEdgeDevTools]: https://aka.ms/tweet/edgedevtools "@EdgeDevTools | Einen Tweet Posten"  
-[EdgeDevToolsTwitterAccount]: https://aka.ms/twitter/edgedevtools "@EdgeDevTools Twitter-Konto"  
-[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://aka.ms/edgedevtoolsdocs/feedback "Neues Problem – MicrosoftDocs/Edge – Entwickler"  
-[MicrosoftEdgePreviewChannels]: https://aka.ms/microsoftedge "Microsoft Edge Preview-Kanäle"  
-[TheWebWeWant]: https://aka.ms/webwewant "Das gewünschte Web"  
+[PostTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | Einen Tweet Posten"  
+[EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools Twitter-Konto"  
+[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback] "Neues Problem-MicrosoftDocs/Edge-Developer-GitHub"  
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge Preview-Kanäle"  
+[TheWebWeWant]: https://webwewant.fyi "Das gewünschte Web"  
 
-[WhatsNew81]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/01/devtools "Neuerungen in devtools (Microsoft Edge 81)"  
+[WhatsNew81]: ../01/devtools.md "Neuerungen in devtools (Microsoft Edge 81) | Microsoft docs"  
 
-[DevToolsCommandMenuIndex]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Ausführen von Befehlen mit dem Befehlsmenü von Microsoft Edge devtools"  
-[ColorPicker]: /microsoft-edge/devtools-guide-chromium/css/reference#change-colors-with-the-color-picker "Ändern von Farben mit der Farbauswahl"  
-[ElementsDoc]: /microsoft-edge/devtools-guide-chromium/css/index "Erste Schritte beim Anzeigen und Ändern von CSS"  
-[MainMenuDoc]: /microsoft-edge/devtools-guide-chromium/customize/placement#change-placement-from-the-main-menu "Ändern der Platzierung aus dem Hauptmenü"  
-[LongTasksInPerformancePanel]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#view-main-thread-activity "Hauptthread Aktivität anzeigen"  
-[RenderingDoc]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "Analysieren der Renderingleistung mit der Registerkarte "Rendern""  
-[PWADoc]: /microsoft-edge/progressive-web-apps-chromium/index "Progressive Web-Apps unter Windows"  
-[RemoteDebuggingWin10]: /microsoft-edge/devtools-guide-chromium/remote-debugging/windows "Erste Schritte mit dem Remote Debuggen von Windows 10-Geräten"  
-[LineOfCodeBreakpoints]: /microsoft-edge/devtools-guide-chromium/javascript/breakpoints#line-of-code-breakpoints "Haltepunkte für die Code Zeile"
-[NetworkProperties]: /microsoft-edge/devtools-guide-chromium/network/reference#filter-requests-by-properties
-[OverviewSettings]: /microsoft-edge/devtools-guide-chromium/customize/#settings
+[DevToolsCommandMenuIndex]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Ausführen von Befehlen mit dem Befehlsmenü von Microsoft Edge devtools | Microsoft docs"  
+[DevtoolsCssReferenceColorPicker]: /microsoft-edge/devtools-guide-chromium/css/reference#change-colors-with-the-color-picker "Ändern von Farben mit der Farbauswahl | Microsoft docs"  
+[DevtoolsCssIndex]: /microsoft-edge/devtools-guide-chromium/css/index "Erste Schritte mit dem anzeigen und Ändern von CSS | Microsoft docs"  
+[DevtoolsCustomizePlacementsChangeMainMenu]: /microsoft-edge/devtools-guide-chromium/customize/placement#change-placement-from-the-main-menu "Ändern der Platzierung aus dem Hauptmenü | Microsoft docs"  
+[DevtoolsEvaluatePerformanceReferenceViewMainThreadActivity]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#view-main-thread-activity "Hauptthread Aktivität anzeigen | Microsoft docs"  
+[DevtoolsEvaluatePreformanceReferenceAnalyzeRenderingTab]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "Analysieren der Renderingleistung mit der Registerkarte "Rendering" | Microsoft docs"  
+[PprgressiveWebAppsChromiumIndex]: /microsoft-edge/progressive-web-apps-chromium/index "Progressive Web-Apps unter Windows | Microsoft docs"  
+[DevtoolsRemoteDebuggingWindows]: /microsoft-edge/devtools-guide-chromium/remote-debugging/windows "Erste Schritte mit dem Remote Debuggen von Windows 10-Geräten | Microsoft docs"  
+[DevtoolsJavascriptBreakpointsLineCode]: /microsoft-edge/devtools-guide-chromium/javascript/breakpoints#line-of-code-breakpoints "Code Haltepunkte – Anleitung zum Anhalten des Codes mit Haltepunkten in Microsoft Edge devtools | Microsoft docs"
+[DevtoolsNetworkReferenceFilterRequestsProperties]: /microsoft-edge/devtools-guide-chromium/network/reference#filter-requests-by-properties "Filtern von Anforderungen nach Eigenschaften-Netzwerkanalyse Referenz | Microsoft docs"  
+[DevtoolsCustomizeIndexSettings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "Einstellungen – anpassen von Microsoft Edge devtools | Microsoft docs"  
 
-[WindowsDevicePortal]: /windows/uwp/debug-test-perf/device-portal "Übersicht über das Windows-Geräte Portal"  
+[WindowsUwpDebugTestPerfDevicePortal]: /windows/uwp/debug-test-perf/device-portal "Übersicht über das Windows-Geräte Portal"  
 
 [RemoteTools]: https://www.microsoft.com/store/apps/9P6CMFV44ZLT "Remote Tools für Microsoft Edge (Beta)"  
 [MicrosoftStore]: https://www.microsoft.com/store/apps/windows "Microsoft Store"  
-[WindowsBlogStableRelease]: https://blogs.windows.com/msedgedev/2020/03/20/update-stable-channel-releases/ "Update für stabile Kanal Versionen für Microsoft Edge"
 
-[ColorBlindnessTypes]: http://www.colourblindawareness.org/colour-blindness/types-of-colour-blindness/ "Arten der Farbenblindheit"  
+[WindowsBlogStableRelease]: https://blogs.windows.com/msedgedev/2020/03/20 "Update für stabile Kanal Versionen für Microsoft Edge"
+
+[MicrosoftVisualstudio]: https://visualstudio.microsoft.com "Visual Studio"  
+
+[VisualstudioCode]: https://code.visualstudio.com "Visual Studio-Code"  
+
+[ColorBlindnessTypes]: http://www.colourblindawareness.org/colour-blindness/types-of-colour-blindness "Arten der Farbenblindheit"  
 [MDNAcceptLanguage]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Accept-Language "Akzeptieren – Sprache"
 [MathiasByensLocaleDemo]: https://mathiasbynens.be/demo/locale "Beispiel für gebietsschemaabhängigen Code"
 [MDNCookiePath]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie#Directives
 
-[crbug963183]: https://crbug.com/963183 "Problem 963183: devtools sind nicht WCAG-kompatibel"  
-[crbug1003700]: https://crbug.com/1003700 "Problem 1003700: Hinzufügen von devtools-Unterstützung für farbsehstörungen-Fehlersimulation"  
-[crbug1011679]: https://crbug.com/1011679 "Problem 1011679: Einführung von "Dock to Left" über das Befehlsmenü"  
-[crbug1016501]: https://crbug.com/1016501 "Problem 1016501: Feature Request: Schaltfläche zum Löschen aller lokalen Außerkraftsetzungen"  
-[crbug1050999]: https://crbug.com/1050999 "Problem 1050999: Registerkarte "Eigenschaften""  
-[crbug1051466]: https://crbug.com/1051466 "Problem 1051466: unterstützen des Coop/COEP-Debuggens in devtools"  
-[crbug1054447]: https://crbug.com/1054447 "Problem 1054447: Aktualisieren von Leistungs Metriken in der devtools-Zeitachse"  
-[crbug1051822]: https://crbug.com/1051822 "Problem 1051822: devtools: Hinzufügen einer Benutzeroberfläche zum Emulieren des Gebietsschemas"
-[crbug1041830]: https://crbug.com/1041830 "Problem 1041830: verbessern der Farben für Haltepunkte"
-[crbug1050855]: https://crbug.com/1050855 "Problem 1050855: die Ansicht "Einstellungen" ist schwer zu erkennen"
-[crbug1056348]: https://crbug.com/1056348 "Problem 1056348: Infoleiste-Komponentenaktualisierung"
+[CR963183]: https://crbug.com/963183 "Problem 963183: devtools sind nicht WCAG-kompatibel"  
+[CR1003700]: https://crbug.com/1003700 "Problem 1003700: Hinzufügen von devtools-Unterstützung für farbsehstörungen-Fehlersimulation"  
+[CR1011679]: https://crbug.com/1011679 "Problem 1011679: Einführung von "Dock to Left" über das Befehlsmenü"  
+[CR1016501]: https://crbug.com/1016501 "Problem 1016501: Feature Request: Schaltfläche zum Löschen aller lokalen Außerkraftsetzungen"  
+[CR1050999]: https://crbug.com/1050999 "Problem 1050999: Registerkarte "Eigenschaften""  
+[CR1051466]: https://crbug.com/1051466 "Problem 1051466: unterstützen des Coop/COEP-Debuggens in devtools"  
+[CR1054447]: https://crbug.com/1054447 "Problem 1054447: Aktualisieren von Leistungs Metriken in der devtools-Zeitachse"  
+[CR1051822]: https://crbug.com/1051822 "Problem 1051822: devtools: Hinzufügen einer Benutzeroberfläche zum Emulieren des Gebietsschemas"
+[CR1041830]: https://crbug.com/1041830 "Problem 1041830: verbessern der Farben für Haltepunkte"
+[CR1050855]: https://crbug.com/1050855 "Problem 1050855: die Ansicht "Einstellungen" ist schwer zu erkennen"
+[CR1056348]: https://crbug.com/1056348 "Problem 1056348: Infoleiste-Komponentenaktualisierung"
 
 [COOP]: https://docs.google.com/document/d/1zDlfvfTJ_9e8Jdc8ehuV4zMEu9ySMCiTGMS9y0GU92k/edit#bookmark=id.tu4hyy6v12wn "Erläuterte Coop-und COEP-Cross-Origin-Opener-Richtlinie"  
 [COEP]: https://docs.google.com/document/d/1zDlfvfTJ_9e8Jdc8ehuV4zMEu9ySMCiTGMS9y0GU92k/edit#bookmark=id.uo6kivyh0ge2 "Erläuterte Coop-und COEP-Richtlinien für die Ursprungs Einbettung"  
