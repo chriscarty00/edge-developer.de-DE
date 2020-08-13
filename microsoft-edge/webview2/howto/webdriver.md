@@ -3,17 +3,17 @@ description: Automatisieren und Testen des WebView2-Steuerelements mit Microsoft
 title: Automatisieren und Testen von WebView2 mit Microsoft Edge Driver
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/11/2020
+ms.date: 08/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Edge, ICoreWebView2, ICoreWebView2Controller, Selenium, Microsoft Edge Driver
-ms.openlocfilehash: 15e9a0957047569a0832fbb6ea6e8bf280905b8d
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.openlocfilehash: a91c01d1ad765dae45061e382daedc2295d70bb8
+ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10697259"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926446"
 ---
 # Automatisieren und Testen von WebView2 mit Microsoft Edge Driver
 
@@ -139,6 +139,6 @@ Weitere Informationen finden Sie unter:
 - Weitere Informationen zum [WebView2](https://docs.microsoft.com/microsoft-edge/hosting/webview2) -Steuerelement und zur Verwendung beim Einbetten von Webinhalten in Ihre systemeigene App
 - Lesen Sie [Dokumentation zu Microsoft Edge Driver](https://docs.microsoft.com/microsoft-edge/webdriver-chromium) , um mehr über die Automatisierung von Microsoft Edge (Chrom) zu erfahren.
 
-## Kontakt mit dem WebView2-Team  
+## Kontakt mit dem Microsoft Edge WebView-Team  
 
-Helfen Sie uns, ein reicheres WebView2-Erlebnis zu schaffen, indem Sie Ihr Feedback austauschen! Besuchen Sie unser [Feedback-Repo](https://github.com/MicrosoftEdge/WebViewFeedback) , um Funktionsanforderungen oder Fehlerberichte zu übermitteln oder nach bekannten Problemen zu suchen.
+[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  

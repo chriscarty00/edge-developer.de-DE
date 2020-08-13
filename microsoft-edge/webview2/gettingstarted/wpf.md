@@ -3,17 +3,17 @@ description: Hosten von Webinhalten in Ihrer WPF-App mit dem Steuerelement "Micr
 title: Microsoft Edge WebView 2 für WPF-apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/23/2020
+ms.date: 08/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, WPF-apps, WPF, Edge, CoreWebView2, Browser-Steuerelement, Edge-HTML, erste Schritte, erste Schritte, .net
-ms.openlocfilehash: 304d79640bdf789eb0b822dc7ab8f260df637624
-ms.sourcegitcommit: 553957c101f83681b363103cb6af56bf20173f23
+ms.openlocfilehash: bfddfff03363b5149db3f7e9741730c8e8de2de0
+ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "10895490"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926582"
 ---
 # Erste Schritte mit WebView2 in WPF (Preview)
 
@@ -338,4 +338,4 @@ Herzlichen Glückwunsch, Sie haben ihre erste WebView2-App erstellt!
 
 ## Kontakt mit dem Microsoft Edge WebView-Team  
 
-Helfen Sie, ein reicheres WebView2-Erlebnis zu schaffen, indem Sie Ihr Feedback austauschen!  Besuchen Sie das Feedback- [Repo](https://github.com/MicrosoftEdge/WebViewFeedback) von Microsoft Edge WebView, um Funktionsanforderungen oder Fehlerberichte zu übermitteln oder nach bekannten Problemen zu suchen.  
+[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  

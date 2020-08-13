@@ -3,17 +3,17 @@ description: Hosten von Webinhalten in ihrer Win32-App mit dem Steuerelement "Mi
 title: Erste Schritte mit WebView2 für Win32-apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/30/2020
+ms.date: 08/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: 03c6f20b59dd6de2aa95e402f82ac3e2a3940839
-ms.sourcegitcommit: 19ef1422733ef1fd051d2b4f0263ce191e8d67bc
+ms.openlocfilehash: ec5144f911d5bf00f141d1e8e53718154f1cbb24
+ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "10902843"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926484"
 ---
 # Erste Schritte mit WebView2 (Entwicklervorschau)  
 
@@ -282,9 +282,9 @@ Viele der WebView2-Funktionen, die auf dieser Seite nicht behandelt werden, im f
 *   Eine Beispielanwendung, die mit WebView2 erstellt wurde, finden Sie unter [WebView2Browser][GithubMicrosoftedgeWebview2browser].  
 *   Ausführliche Informationen zur WebView2-API finden Sie unter [API-Referenz][Webview2ReferenceWin3209538].  
 
-## Kontakt mit dem WebView2-Team  
+## Kontakt mit dem Microsoft Edge WebView-Team  
 
-Helfen Sie, ein reicheres WebView2-Erlebnis zu schaffen, indem Sie Ihr Feedback austauschen!  Besuchen Sie das [Feedback-Repo][GithubMicrosoftedgeWebviewfeedback] auf GitHub, um Funktionsanforderungen oder Fehlerberichte zu übermitteln oder nach bekannten Problemen zu suchen.  
+[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!-- links -->  
 

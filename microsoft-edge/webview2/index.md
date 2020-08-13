@@ -3,17 +3,17 @@ description: Hosten von Webinhalten in ihrer Win32-App mit dem Steuerelement "Mi
 title: Microsoft Edge-WebView2-Steuerelement
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/20/2020
+ms.date: 08/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, CoreWebView2, ICoreWebView2Host, Browser-Steuerelement, Edge-HTML, Windows Forms, WinForms, WPF, .net
-ms.openlocfilehash: ea3d25d16aa9e8c182d564c68615b9643c9993b4
-ms.sourcegitcommit: a82aa5fc1ada35cd8274490fbff3c0a850785835
+ms.openlocfilehash: bb2287ca854372d9592a3b90c7df6f9a8abf620e
+ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "10888598"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926470"
 ---
 # Einführung in Microsoft Edge WebView2 (Preview)  
 
@@ -103,7 +103,7 @@ Eine Entwicklervorschau steht in den folgenden Programmierumgebungen zur Verfüg
 *   Win32 C/C++  
 *   .NET Framework 4.6.2 oder höher  
 *   .Net Core 3,0 oder höher  
-*   [WinUI 3,0][UwpToolkitsWinui3]  
+*   [WinUI 3.0][UwpToolkitsWinui3]  
 
 Sie können WebView2-Anwendungen unter den folgenden Windows-Versionen ausführen.  
 
@@ -132,12 +132,12 @@ Weitere Informationen zum Erstellen und Bereitstellen von WebView2-Anwendungen f
 *   [Debuggen mit WebView2][Webview2HowtoDebug]  
 *   [Automatisieren und Testen von WebView2 mit Microsoft Edge Driver][Webview2HowtoWebdriver]  
 
-## Kontakt mit dem WebView2-Team  
+## Kontakt mit dem Microsoft Edge WebView-Team  
 
-Helfen Sie beim Aufbau einer reicheren WebView2-Erfahrung, indem Sie Ihr Feedback freigeben.  Informationen zum Senden von Funktionsanforderungen oder Fehler Berichten finden Sie unter [WebView Feedback Repo][GithubMicrosoftedgeWebviewfeddback] .  Es ist auch ein guter Ort, um nach bekannten Problemen zu suchen.  
+[!INCLUDE [contact WebView team note](./includes/contact-webview-team-note.md)]  
 
 > [!NOTE]
-> Während der Vorschau sammeln wir Daten, die zum Aufbau eines besseren Produkts beitragen.  Wenn Sie die WebView2-Datensammlung deaktivieren möchten, wechseln Sie zu `edge://settings/privacy` und deaktivieren Sie die Browserdaten Sammlung.  
+> Während der Vorschau unterstützt die gesammelten Daten das Erstellen eines besseren Produkts.  Wenn Sie die WebView2-Datensammlung deaktivieren möchten, wechseln Sie zu `edge://settings/privacy` und deaktivieren Sie die Browserdaten Sammlung.  
 
 <!-- links -->  
 

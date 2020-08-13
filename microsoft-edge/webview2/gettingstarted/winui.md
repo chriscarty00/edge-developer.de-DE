@@ -3,17 +3,17 @@ description: Hosten von Webinhalten in ihrer WinUI-App mit dem Steuerelement "Mi
 title: Microsoft Edge-WebView2 für WinUI-apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/23/2020
+ms.date: 08/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, WinUI-apps, WinUI, Edge, CoreWebView2, Browser-Steuerelement, Edge-HTML, erste Schritte, erste Schritte, .net
-ms.openlocfilehash: 9960a4411e69f0232ae2d202a61a9beb01c0a631
-ms.sourcegitcommit: 553957c101f83681b363103cb6af56bf20173f23
+ms.openlocfilehash: 5b9bbb4578fc580ddc77680a57b481501e48cda7
+ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "10895511"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926491"
 ---
 # Erste Schritte mit WebView2 in WinUI3 (Preview)  
 
@@ -47,7 +47,7 @@ Beginnen Sie mit einem einfachen Desktopprojekt, das ein einzelnes Hauptfenster 
     *   Zielversion: **Windows 10, Version 1903 (Build 18362)** oder höher  
     *   Minimale Version: **Windows 10, Version 1803 (Build 17134)**.  
     
-    :::image type="complex" source="./media/winui-gettingstarted-projecttype.png" alt-text="Das neue Dialogfeld universelle Windows-Plattform mit ausgewählten Werten für Zielversion und Mindestversion." lightbox="./media/winui-gettingstarted-projecttype.png":::
+    :::image type="complex" source="./media/winui-gettingstarted-projecttype.png" alt-text="Das neue Dialogfeld "universelle Windows-Plattform" mit ausgewählten Werten für Zielversion und Mindestversion." lightbox="./media/winui-gettingstarted-projecttype.png":::
        Das neue Dialogfeld "universelle Windows-Plattform" mit ausgewählten Werten für Zielversion und Mindestversion.
     :::image-end:::  
     
@@ -268,7 +268,7 @@ Weitere Informationen zu den WebView2-Funktionen finden Sie unter [WebView2-Konz
 
 ## Kontakt mit dem Microsoft Edge WebView-Team  
 
-Helfen Sie beim Aufbau einer reicheren WebView2-Erfahrung, indem Sie Ihr Feedback freigeben.  Besuchen Sie das Feedback- [Repo][GithubMicrosoftedgeWebviewfeedback] von Microsoft Edge WebView, um Funktionsanforderungen oder Fehlerberichte zu übermitteln oder nach bekannten Problemen zu suchen.  
+[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!-- links -->  
 

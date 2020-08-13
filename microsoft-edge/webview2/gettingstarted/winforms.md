@@ -3,17 +3,17 @@ description: Hosten von Webinhalten in Ihrer Windows Forms-App mit dem Steuerele
 title: Microsoft Edge WebView 2 für Windows Forms-apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/23/2020
+ms.date: 08/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, WinForms-apps, WinForms, Edge, CoreWebView2, Browser Control, Edge HTML, erste Schritte, erste Schritte, .net, Windows Forms
-ms.openlocfilehash: 634fbd74a94ea990bc3eb9c150760522a5c13ce1
-ms.sourcegitcommit: 553957c101f83681b363103cb6af56bf20173f23
+ms.openlocfilehash: 7d7ddf445adee7b3d20d268ab1d53c0999fd54ce
+ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "10895525"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926456"
 ---
 # Erste Schritte mit WebView2 in Windows Forms-Apps (Preview)  
 
@@ -302,4 +302,4 @@ Herzlichen Glückwunsch, Sie haben ihre erste WebView2-App erstellt!
 
 ## Kontakt mit dem Microsoft Edge WebView-Team  
 
-Helfen Sie, ein reicheres WebView2-Erlebnis zu schaffen, indem Sie Ihr Feedback austauschen!  Besuchen Sie das Feedback- [Repo](https://aka.ms/webviewfeedback) von Microsoft Edge WebView, um Funktionsanforderungen oder Fehlerberichte zu übermitteln oder nach bekannten Problemen zu suchen.  
+[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  

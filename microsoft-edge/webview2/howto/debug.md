@@ -3,17 +3,17 @@ description: Erfahren Sie, wie Sie WebView2-Steuerelemente Debuggen.
 title: Debuggen von WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/22/2020
+ms.date: 08/10/2020
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Host, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: ad6f334e5796d2f22146f2853ae1ef1d854e329c
-ms.sourcegitcommit: b3555043e9d5aefa5a9e36ba4d73934d41559f49
+ms.openlocfilehash: 6b2cc65e5cb368c29efec2eb3638f0c1772000d9
+ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "10894319"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926477"
 ---
 # Debuggen mit WebView2  
 
@@ -83,7 +83,7 @@ Sie können Visual Studio-Code verwenden, um Skripts zu debuggen, die in WebView
 
 ## Kontakt mit dem Microsoft Edge WebView-Team  
 
-Helfen Sie beim Aufbau einer reicheren WebView2-Erfahrung, indem Sie Ihr Feedback freigeben.  Besuchen Sie das [Feedback-Repo][GithubMicrosoftedgeWebviewfeedbackMain] , um Funktionsanforderungen oder Fehlerberichte einzureichen.  
+[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!--## Debugging  
 
