@@ -3,141 +3,141 @@ description: Hosten von Webinhalten in ihrer Win32-App mit dem Steuerelement "Mi
 title: Microsoft Edge-WebView2-Steuerelement
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/20/2020
+ms.date: 08/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, CoreWebView2, ICoreWebView2Host, Browser-Steuerelement, Edge-HTML, Windows Forms, WinForms, WPF, .net
-ms.openlocfilehash: ea3d25d16aa9e8c182d564c68615b9643c9993b4
-ms.sourcegitcommit: a82aa5fc1ada35cd8274490fbff3c0a850785835
+ms.openlocfilehash: bb2287ca854372d9592a3b90c7df6f9a8abf620e
+ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "10888598"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926470"
 ---
-# <span data-ttu-id="894c0-104">Einführung in Microsoft Edge WebView2 (Preview)</span><span class="sxs-lookup"><span data-stu-id="894c0-104">Introduction to Microsoft Edge WebView2 (Preview)</span></span>  
+# <span data-ttu-id="7351a-104">Einführung in Microsoft Edge WebView2 (Preview)</span><span class="sxs-lookup"><span data-stu-id="7351a-104">Introduction to Microsoft Edge WebView2 (Preview)</span></span>  
 
-<span data-ttu-id="894c0-105">Mit dem Microsoft Edge WebView2-Steuerelement können Sie Webtechnologien (HTML, CSS und JavaScript \) in ihre systemeigenen Anwendungen einbetten.</span><span class="sxs-lookup"><span data-stu-id="894c0-105">The Microsoft Edge WebView2 control enables you to embed web technologies \(HTML, CSS, and JavaScript\) in your native applications.</span></span>  <span data-ttu-id="894c0-106">Das WebView2-Steuerelement verwendet [Microsoft Edge (Chrom)][MicrosoftedgeinsiderMain] als Rendering-Modul, um die Webinhalte in systemeigenen Anwendungen anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="894c0-106">The WebView2 control uses [Microsoft Edge (Chromium)][MicrosoftedgeinsiderMain] as the rendering engine to display the web content in native applications.</span></span>  <span data-ttu-id="894c0-107">Mit WebView2 können Sie Webcode in verschiedenen Teilen der systemeigenen Anwendung einbetten oder die gesamte systemeigene Anwendung in einem einzigen WebView-Webpart erstellen.</span><span class="sxs-lookup"><span data-stu-id="894c0-107">With WebView2, you may embed web code in different parts of your native application, or build the entire native application within a single WebView.</span></span>  <span data-ttu-id="894c0-108">Informationen zum Erstellen einer WebView2-Anwendung finden Sie unter [Erste Schritte](#getting-started).</span><span class="sxs-lookup"><span data-stu-id="894c0-108">For information on how to start building a WebView2 application, see [Get Started](#getting-started).</span></span>  
+<span data-ttu-id="7351a-105">Mit dem Microsoft Edge WebView2-Steuerelement können Sie Webtechnologien (HTML, CSS und JavaScript \) in ihre systemeigenen Anwendungen einbetten.</span><span class="sxs-lookup"><span data-stu-id="7351a-105">The Microsoft Edge WebView2 control enables you to embed web technologies \(HTML, CSS, and JavaScript\) in your native applications.</span></span>  <span data-ttu-id="7351a-106">Das WebView2-Steuerelement verwendet [Microsoft Edge (Chrom)][MicrosoftedgeinsiderMain] als Rendering-Modul, um die Webinhalte in systemeigenen Anwendungen anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="7351a-106">The WebView2 control uses [Microsoft Edge (Chromium)][MicrosoftedgeinsiderMain] as the rendering engine to display the web content in native applications.</span></span>  <span data-ttu-id="7351a-107">Mit WebView2 können Sie Webcode in verschiedenen Teilen der systemeigenen Anwendung einbetten oder die gesamte systemeigene Anwendung in einem einzigen WebView-Webpart erstellen.</span><span class="sxs-lookup"><span data-stu-id="7351a-107">With WebView2, you may embed web code in different parts of your native application, or build the entire native application within a single WebView.</span></span>  <span data-ttu-id="7351a-108">Informationen zum Erstellen einer WebView2-Anwendung finden Sie unter [Erste Schritte](#getting-started).</span><span class="sxs-lookup"><span data-stu-id="7351a-108">For information on how to start building a WebView2 application, see [Get Started](#getting-started).</span></span>  
 
 :::image type="complex" source="./media/WebView2/whatwebview.png" alt-text="Was ist WebView" lightbox="./media/WebView2/whatwebview.png":::
-   <span data-ttu-id="894c0-110">Was ist WebView</span><span class="sxs-lookup"><span data-stu-id="894c0-110">What is WebView</span></span>  
+   <span data-ttu-id="7351a-110">Was ist WebView</span><span class="sxs-lookup"><span data-stu-id="7351a-110">What is WebView</span></span>  
 :::image-end:::  
 
 > [!NOTE]
-> <span data-ttu-id="894c0-111">Die WebView2 Preview ist für frühzeitiges Prototyping vorgesehen, um Feedback zu sammeln, um die API zu gestalten.</span><span class="sxs-lookup"><span data-stu-id="894c0-111">The WebView2 Preview is intended for early prototyping and to gather feedback to help shape the API.</span></span>  <span data-ttu-id="894c0-112">Sie sollten die Vorschau in ihren Produktions-apps nicht verwenden, da möglicherweise wichtige Änderungen auftreten.</span><span class="sxs-lookup"><span data-stu-id="894c0-112">You should not use the preview in your production apps because there may be breaking changes.</span></span>  <span data-ttu-id="894c0-113">Weitere Informationen finden Sie unter [Webview2Releasenotes].</span><span class="sxs-lookup"><span data-stu-id="894c0-113">For more information, see [Webview2Releasenotes].</span></span>  
+> <span data-ttu-id="7351a-111">Die WebView2 Preview ist für frühzeitiges Prototyping vorgesehen, um Feedback zu sammeln, um die API zu gestalten.</span><span class="sxs-lookup"><span data-stu-id="7351a-111">The WebView2 Preview is intended for early prototyping and to gather feedback to help shape the API.</span></span>  <span data-ttu-id="7351a-112">Sie sollten die Vorschau in ihren Produktions-apps nicht verwenden, da möglicherweise wichtige Änderungen auftreten.</span><span class="sxs-lookup"><span data-stu-id="7351a-112">You should not use the preview in your production apps because there may be breaking changes.</span></span>  <span data-ttu-id="7351a-113">Weitere Informationen finden Sie unter [Webview2Releasenotes].</span><span class="sxs-lookup"><span data-stu-id="7351a-113">For more information, see [Webview2Releasenotes].</span></span>  
 
-## <span data-ttu-id="894c0-114">Ansatz der Hybrid Anwendung</span><span class="sxs-lookup"><span data-stu-id="894c0-114">Hybrid application approach</span></span>  
+## <span data-ttu-id="7351a-114">Ansatz der Hybrid Anwendung</span><span class="sxs-lookup"><span data-stu-id="7351a-114">Hybrid application approach</span></span>  
 
-<span data-ttu-id="894c0-115">Entwickler müssen sich häufig zwischen dem Erstellen einer Webanwendung oder einer systemeigenen Anwendung entscheiden.</span><span class="sxs-lookup"><span data-stu-id="894c0-115">Developers often have to decide between building a web application or a native application.</span></span>  <span data-ttu-id="894c0-116">Die Entscheidung hängt vom Kompromiss zwischen Reichweite und macht ab.</span><span class="sxs-lookup"><span data-stu-id="894c0-116">The decision hinges on the trade-off between reach and power.</span></span>  <span data-ttu-id="894c0-117">Web-Anwendungen ermöglichen eine breite Reichweite.</span><span class="sxs-lookup"><span data-stu-id="894c0-117">Web applications allow for a broad reach.</span></span>  <span data-ttu-id="894c0-118">Als Web-Entwickler können Sie die meisten, wenn nicht alle Ihren Code, auf allen verschiedenen Plattformen wieder verwenden.</span><span class="sxs-lookup"><span data-stu-id="894c0-118">As a Web developer, you may reuse most, if not all of your code, across all different platforms.</span></span>  <span data-ttu-id="894c0-119">Systemeigene Anwendungen nutzen jedoch die Funktionen der gesamten systemeigenen Plattform.</span><span class="sxs-lookup"><span data-stu-id="894c0-119">Native applications, however, utilize the capabilities of the entire native platform.</span></span>  
+<span data-ttu-id="7351a-115">Entwickler müssen sich häufig zwischen dem Erstellen einer Webanwendung oder einer systemeigenen Anwendung entscheiden.</span><span class="sxs-lookup"><span data-stu-id="7351a-115">Developers often have to decide between building a web application or a native application.</span></span>  <span data-ttu-id="7351a-116">Die Entscheidung hängt vom Kompromiss zwischen Reichweite und macht ab.</span><span class="sxs-lookup"><span data-stu-id="7351a-116">The decision hinges on the trade-off between reach and power.</span></span>  <span data-ttu-id="7351a-117">Web-Anwendungen ermöglichen eine breite Reichweite.</span><span class="sxs-lookup"><span data-stu-id="7351a-117">Web applications allow for a broad reach.</span></span>  <span data-ttu-id="7351a-118">Als Web-Entwickler können Sie die meisten, wenn nicht alle Ihren Code, auf allen verschiedenen Plattformen wieder verwenden.</span><span class="sxs-lookup"><span data-stu-id="7351a-118">As a Web developer, you may reuse most, if not all of your code, across all different platforms.</span></span>  <span data-ttu-id="7351a-119">Systemeigene Anwendungen nutzen jedoch die Funktionen der gesamten systemeigenen Plattform.</span><span class="sxs-lookup"><span data-stu-id="7351a-119">Native applications, however, utilize the capabilities of the entire native platform.</span></span>  
 
 :::image type="complex" source="./media/WebView2/webnative.png" alt-text="Web Native" lightbox="./media/WebView2/webnative.png":::
-   <span data-ttu-id="894c0-121">Web Native</span><span class="sxs-lookup"><span data-stu-id="894c0-121">Web native</span></span>  
+   <span data-ttu-id="7351a-121">Web Native</span><span class="sxs-lookup"><span data-stu-id="7351a-121">Web native</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="894c0-122">Hybrid Anwendungen ermöglichen Entwicklern, das Beste aus beiden Welten zu genießen.</span><span class="sxs-lookup"><span data-stu-id="894c0-122">Hybrid applications allow developers to enjoy the best of both worlds.</span></span>  <span data-ttu-id="894c0-123">Entwickler von Hybrid Anwendungen profitieren von der Allgegenwart und Stärke der Web-Plattform sowie von der Leistungsfähigkeit und den vollständigen Funktionen der systemeigenen Plattform.</span><span class="sxs-lookup"><span data-stu-id="894c0-123">Hybrid application developers benefit from the ubiquity and strength of the web platform, and the power and full capabilities of the native platform.</span></span>  
+<span data-ttu-id="7351a-122">Hybrid Anwendungen ermöglichen Entwicklern, das Beste aus beiden Welten zu genießen.</span><span class="sxs-lookup"><span data-stu-id="7351a-122">Hybrid applications allow developers to enjoy the best of both worlds.</span></span>  <span data-ttu-id="7351a-123">Entwickler von Hybrid Anwendungen profitieren von der Allgegenwart und Stärke der Web-Plattform sowie von der Leistungsfähigkeit und den vollständigen Funktionen der systemeigenen Plattform.</span><span class="sxs-lookup"><span data-stu-id="7351a-123">Hybrid application developers benefit from the ubiquity and strength of the web platform, and the power and full capabilities of the native platform.</span></span>  
 
-## <span data-ttu-id="894c0-124">WebView2-Vorteile</span><span class="sxs-lookup"><span data-stu-id="894c0-124">WebView2 benefits</span></span>   
+## <span data-ttu-id="7351a-124">WebView2-Vorteile</span><span class="sxs-lookup"><span data-stu-id="7351a-124">WebView2 benefits</span></span>   
 
 :::image type="complex" source="./media/WebView2/webviewreasons.png" alt-text="WebView-Gründe" lightbox="./media/WebView2/webviewreasons.png":::
-   <span data-ttu-id="894c0-126">WebView-Gründe</span><span class="sxs-lookup"><span data-stu-id="894c0-126">WebView reasons</span></span>  
+   <span data-ttu-id="7351a-126">WebView-Gründe</span><span class="sxs-lookup"><span data-stu-id="7351a-126">WebView reasons</span></span>  
 :::image-end:::  
 
 :::row:::
    :::column span="1":::
-      **<span data-ttu-id="894c0-127">Web-Ökosystem \ & skillset</span><span class="sxs-lookup"><span data-stu-id="894c0-127">Web ecosystem \& skillset</span></span>**  
-      <span data-ttu-id="894c0-128">Verwenden Sie die gesamte Web-Plattform, Bibliotheken, Tools und Talente, die im Web-Ökosystem vorhanden sind.</span><span class="sxs-lookup"><span data-stu-id="894c0-128">Utilize the entire web platform, libraries, tooling, and talent that exists within the web ecosystem.</span></span>  
+      **<span data-ttu-id="7351a-127">Web-Ökosystem \ & skillset</span><span class="sxs-lookup"><span data-stu-id="7351a-127">Web ecosystem \& skillset</span></span>**  
+      <span data-ttu-id="7351a-128">Verwenden Sie die gesamte Web-Plattform, Bibliotheken, Tools und Talente, die im Web-Ökosystem vorhanden sind.</span><span class="sxs-lookup"><span data-stu-id="7351a-128">Utilize the entire web platform, libraries, tooling, and talent that exists within the web ecosystem.</span></span>  
    :::column-end:::
    :::column span="1":::
-      **<span data-ttu-id="894c0-129">Schnelle Innovation</span><span class="sxs-lookup"><span data-stu-id="894c0-129">Rapid innovation</span></span>**  
-      <span data-ttu-id="894c0-130">Web-Entwicklung ermöglicht schnellere Bereitstellung und Iteration.</span><span class="sxs-lookup"><span data-stu-id="894c0-130">Web development allows for faster deployment and iteration.</span></span>  
+      **<span data-ttu-id="7351a-129">Schnelle Innovation</span><span class="sxs-lookup"><span data-stu-id="7351a-129">Rapid innovation</span></span>**  
+      <span data-ttu-id="7351a-130">Web-Entwicklung ermöglicht schnellere Bereitstellung und Iteration.</span><span class="sxs-lookup"><span data-stu-id="7351a-130">Web development allows for faster deployment and iteration.</span></span>  
    :::column-end:::
    :::column span="1":::
-      **<span data-ttu-id="894c0-131">Windows 7, 8, 10 Support</span><span class="sxs-lookup"><span data-stu-id="894c0-131">Windows 7, 8, 10 support</span></span>**  
-      <span data-ttu-id="894c0-132">Unterstützung für eine konsistente Benutzeroberfläche in Windows 7, 8 und 10.</span><span class="sxs-lookup"><span data-stu-id="894c0-132">Support for a consistent user experience across Windows 7, 8, and 10.</span></span>  
+      **<span data-ttu-id="7351a-131">Windows 7, 8, 10 Support</span><span class="sxs-lookup"><span data-stu-id="7351a-131">Windows 7, 8, 10 support</span></span>**  
+      <span data-ttu-id="7351a-132">Unterstützung für eine konsistente Benutzeroberfläche in Windows 7, 8 und 10.</span><span class="sxs-lookup"><span data-stu-id="7351a-132">Support for a consistent user experience across Windows 7, 8, and 10.</span></span>  
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-      **<span data-ttu-id="894c0-133">Systemeigene Funktionen</span><span class="sxs-lookup"><span data-stu-id="894c0-133">Native capabilities</span></span>**  
-      <span data-ttu-id="894c0-134">Greifen Sie auf den vollständigen Satz nativer APIs zu.</span><span class="sxs-lookup"><span data-stu-id="894c0-134">Access the full set of Native APIs.</span></span>  
+      **<span data-ttu-id="7351a-133">Systemeigene Funktionen</span><span class="sxs-lookup"><span data-stu-id="7351a-133">Native capabilities</span></span>**  
+      <span data-ttu-id="7351a-134">Greifen Sie auf den vollständigen Satz nativer APIs zu.</span><span class="sxs-lookup"><span data-stu-id="7351a-134">Access the full set of Native APIs.</span></span>  
    :::column-end:::
    :::column span="1":::
-      **<span data-ttu-id="894c0-135">Code Freigabe</span><span class="sxs-lookup"><span data-stu-id="894c0-135">Code-sharing</span></span>**  
-      <span data-ttu-id="894c0-136">Durch Hinzufügen von Webcode zu ihrer CodeBase können Sie die Wiederverwendung auf mehreren Plattformen erhöhen.</span><span class="sxs-lookup"><span data-stu-id="894c0-136">Add web code to your codebase allows for increased re-use across multiple platforms.</span></span>  
+      **<span data-ttu-id="7351a-135">Code Freigabe</span><span class="sxs-lookup"><span data-stu-id="7351a-135">Code-sharing</span></span>**  
+      <span data-ttu-id="7351a-136">Durch Hinzufügen von Webcode zu ihrer CodeBase können Sie die Wiederverwendung auf mehreren Plattformen erhöhen.</span><span class="sxs-lookup"><span data-stu-id="7351a-136">Add web code to your codebase allows for increased re-use across multiple platforms.</span></span>  
    :::column-end:::
    :::column span="1":::
-      **<span data-ttu-id="894c0-137">Microsoft-Support</span><span class="sxs-lookup"><span data-stu-id="894c0-137">Microsoft support</span></span>**  
-      <span data-ttu-id="894c0-138">Microsoft bietet Support und fügt neue Funktionsanforderungen hinzu, wenn WebView2 als "ga" veröffentlicht wird.</span><span class="sxs-lookup"><span data-stu-id="894c0-138">Microsoft provides support and adds new feature requests when WebView2 is release as GA.</span></span>  
+      **<span data-ttu-id="7351a-137">Microsoft-Support</span><span class="sxs-lookup"><span data-stu-id="7351a-137">Microsoft support</span></span>**  
+      <span data-ttu-id="7351a-138">Microsoft bietet Support und fügt neue Funktionsanforderungen hinzu, wenn WebView2 als "ga" veröffentlicht wird.</span><span class="sxs-lookup"><span data-stu-id="7351a-138">Microsoft provides support and adds new feature requests when WebView2 is release as GA.</span></span>  
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-      **<span data-ttu-id="894c0-139">Immergrüne Verteilung</span><span class="sxs-lookup"><span data-stu-id="894c0-139">Evergreen distribution</span></span>**  
-      <span data-ttu-id="894c0-140">Verlassen Sie sich auf eine aktuelle Version von Chromium mit regulären Plattformupdates und Sicherheitspatches.</span><span class="sxs-lookup"><span data-stu-id="894c0-140">Rely on an up-to-date version of Chromium with regular platform updates and security patches.</span></span>  
+      **<span data-ttu-id="7351a-139">Immergrüne Verteilung</span><span class="sxs-lookup"><span data-stu-id="7351a-139">Evergreen distribution</span></span>**  
+      <span data-ttu-id="7351a-140">Verlassen Sie sich auf eine aktuelle Version von Chromium mit regulären Plattformupdates und Sicherheitspatches.</span><span class="sxs-lookup"><span data-stu-id="7351a-140">Rely on an up-to-date version of Chromium with regular platform updates and security patches.</span></span>  
    :::column-end:::
    :::column span="1":::
-      <span data-ttu-id="894c0-141">**Behoben** \ (in Kürze verfügbar)</span><span class="sxs-lookup"><span data-stu-id="894c0-141">**Fixed** \(coming soon\)</span></span>  
-      <span data-ttu-id="894c0-142">Wählen Sie aus, um die Chrom Bits in Ihrer Anwendung zu verpacken.</span><span class="sxs-lookup"><span data-stu-id="894c0-142">Choose to package the Chromium bits in your application.</span></span>  
+      <span data-ttu-id="7351a-141">**Behoben** \ (in Kürze verfügbar)</span><span class="sxs-lookup"><span data-stu-id="7351a-141">**Fixed** \(coming soon\)</span></span>  
+      <span data-ttu-id="7351a-142">Wählen Sie aus, um die Chrom Bits in Ihrer Anwendung zu verpacken.</span><span class="sxs-lookup"><span data-stu-id="7351a-142">Choose to package the Chromium bits in your application.</span></span>  
    :::column-end:::
    :::column span="1":::
-      **<span data-ttu-id="894c0-143">Inkrementelle Einführung</span><span class="sxs-lookup"><span data-stu-id="894c0-143">Incremental adoption</span></span>**  
-      <span data-ttu-id="894c0-144">Fügen Sie Ihrer Anwendung Stück für Stück Webkomponenten hinzu.</span><span class="sxs-lookup"><span data-stu-id="894c0-144">Add web components piece by piece to your application.</span></span>  
+      **<span data-ttu-id="7351a-143">Inkrementelle Einführung</span><span class="sxs-lookup"><span data-stu-id="7351a-143">Incremental adoption</span></span>**  
+      <span data-ttu-id="7351a-144">Fügen Sie Ihrer Anwendung Stück für Stück Webkomponenten hinzu.</span><span class="sxs-lookup"><span data-stu-id="7351a-144">Add web components piece by piece to your application.</span></span>  
    :::column-end:::
 :::row-end:::
 
-## <span data-ttu-id="894c0-145">Erste Schritte</span><span class="sxs-lookup"><span data-stu-id="894c0-145">Getting started</span></span>  
+## <span data-ttu-id="7351a-145">Erste Schritte</span><span class="sxs-lookup"><span data-stu-id="7351a-145">Getting started</span></span>  
 
-<span data-ttu-id="894c0-146">Wenn Sie Ihre Anwendung mithilfe des WebView2-Steuerelements erstellen und testen möchten, müssen Sie sowohl [Microsoft Edge (Chrom)][MicrosoftedgeinsiderDownload] als auch das [WebView2-SDK][NugetPackagesMicrosoftWebWebView2] installiert haben.</span><span class="sxs-lookup"><span data-stu-id="894c0-146">To build and test your application using the WebView2 control, you need to have both [Microsoft Edge (Chromium)][MicrosoftedgeinsiderDownload] and the [WebView2 SDK][NugetPackagesMicrosoftWebWebView2] installed.</span></span>  <span data-ttu-id="894c0-147">Wählen Sie eine der folgenden Optionen aus, um loszulegen.</span><span class="sxs-lookup"><span data-stu-id="894c0-147">Select one of the following options to get started.</span></span>  
+<span data-ttu-id="7351a-146">Wenn Sie Ihre Anwendung mithilfe des WebView2-Steuerelements erstellen und testen möchten, müssen Sie sowohl [Microsoft Edge (Chrom)][MicrosoftedgeinsiderDownload] als auch das [WebView2-SDK][NugetPackagesMicrosoftWebWebView2] installiert haben.</span><span class="sxs-lookup"><span data-stu-id="7351a-146">To build and test your application using the WebView2 control, you need to have both [Microsoft Edge (Chromium)][MicrosoftedgeinsiderDownload] and the [WebView2 SDK][NugetPackagesMicrosoftWebWebView2] installed.</span></span>  <span data-ttu-id="7351a-147">Wählen Sie eine der folgenden Optionen aus, um loszulegen.</span><span class="sxs-lookup"><span data-stu-id="7351a-147">Select one of the following options to get started.</span></span>  
 
-*   [<span data-ttu-id="894c0-148">Erste Schritte mit Win32 C/C++</span><span class="sxs-lookup"><span data-stu-id="894c0-148">Getting Started with Win32 C/C++</span></span>][Webview2GettingstartedWin32]  
-*   [<span data-ttu-id="894c0-149">Erste Schritte mit WPF</span><span class="sxs-lookup"><span data-stu-id="894c0-149">Getting Started with WPF</span></span>][Webview2GettingstartedWpf]  
-*   [<span data-ttu-id="894c0-150">Erste Schritte mit WinForms</span><span class="sxs-lookup"><span data-stu-id="894c0-150">Getting Started with WinForms</span></span>][Webview2GettingstartedWinforms]  
-*   [<span data-ttu-id="894c0-151">Erste Schritte mit WinUI3</span><span class="sxs-lookup"><span data-stu-id="894c0-151">Getting Started with WinUI3</span></span>][Webview2GettingstartedWinui]  
+*   [<span data-ttu-id="7351a-148">Erste Schritte mit Win32 C/C++</span><span class="sxs-lookup"><span data-stu-id="7351a-148">Getting Started with Win32 C/C++</span></span>][Webview2GettingstartedWin32]  
+*   [<span data-ttu-id="7351a-149">Erste Schritte mit WPF</span><span class="sxs-lookup"><span data-stu-id="7351a-149">Getting Started with WPF</span></span>][Webview2GettingstartedWpf]  
+*   [<span data-ttu-id="7351a-150">Erste Schritte mit WinForms</span><span class="sxs-lookup"><span data-stu-id="7351a-150">Getting Started with WinForms</span></span>][Webview2GettingstartedWinforms]  
+*   [<span data-ttu-id="7351a-151">Erste Schritte mit WinUI3</span><span class="sxs-lookup"><span data-stu-id="7351a-151">Getting Started with WinUI3</span></span>][Webview2GettingstartedWinui]  
 
-<span data-ttu-id="894c0-152">Das [WebView2-Beispiel][GithubMicrosoftedgeWebview2samples] -Repository enthält Beispiele, die alle WebView2-SDK-Features und API-Verwendungsmuster veranschaulichen.</span><span class="sxs-lookup"><span data-stu-id="894c0-152">The [WebView2 Samples][GithubMicrosoftedgeWebview2samples] repository contains samples that demonstrate all of the WebView2 SDK features and API usage patterns.</span></span>  <span data-ttu-id="894c0-153">Wenn dem WebView2-SDK weitere Features hinzugefügt werden, werden die Beispielanwendungen aktualisiert.</span><span class="sxs-lookup"><span data-stu-id="894c0-153">As more features are added to the WebView2 SDK, the sample applications will be updated.</span></span>  
+<span data-ttu-id="7351a-152">Das [WebView2-Beispiel][GithubMicrosoftedgeWebview2samples] -Repository enthält Beispiele, die alle WebView2-SDK-Features und API-Verwendungsmuster veranschaulichen.</span><span class="sxs-lookup"><span data-stu-id="7351a-152">The [WebView2 Samples][GithubMicrosoftedgeWebview2samples] repository contains samples that demonstrate all of the WebView2 SDK features and API usage patterns.</span></span>  <span data-ttu-id="7351a-153">Wenn dem WebView2-SDK weitere Features hinzugefügt werden, werden die Beispielanwendungen aktualisiert.</span><span class="sxs-lookup"><span data-stu-id="7351a-153">As more features are added to the WebView2 SDK, the sample applications will be updated.</span></span>  
 
-## <span data-ttu-id="894c0-154">Unterstützte Plattformen</span><span class="sxs-lookup"><span data-stu-id="894c0-154">Supported platforms</span></span>  
+## <span data-ttu-id="7351a-154">Unterstützte Plattformen</span><span class="sxs-lookup"><span data-stu-id="7351a-154">Supported platforms</span></span>  
 
-<span data-ttu-id="894c0-155">Eine Entwicklervorschau steht in den folgenden Programmierumgebungen zur Verfügung.</span><span class="sxs-lookup"><span data-stu-id="894c0-155">A developer preview is available on the following programming environments.</span></span>  
+<span data-ttu-id="7351a-155">Eine Entwicklervorschau steht in den folgenden Programmierumgebungen zur Verfügung.</span><span class="sxs-lookup"><span data-stu-id="7351a-155">A developer preview is available on the following programming environments.</span></span>  
 
-*   <span data-ttu-id="894c0-156">Win32 C/C++</span><span class="sxs-lookup"><span data-stu-id="894c0-156">Win32 C/C++</span></span>  
-*   <span data-ttu-id="894c0-157">.NET Framework 4.6.2 oder höher</span><span class="sxs-lookup"><span data-stu-id="894c0-157">.NET Framework 4.6.2 or later</span></span>  
-*   <span data-ttu-id="894c0-158">.Net Core 3,0 oder höher</span><span class="sxs-lookup"><span data-stu-id="894c0-158">.NET Core 3.0 or later</span></span>  
-*   [<span data-ttu-id="894c0-159">WinUI 3,0</span><span class="sxs-lookup"><span data-stu-id="894c0-159">WinUI 3.0</span></span>][UwpToolkitsWinui3]  
+*   <span data-ttu-id="7351a-156">Win32 C/C++</span><span class="sxs-lookup"><span data-stu-id="7351a-156">Win32 C/C++</span></span>  
+*   <span data-ttu-id="7351a-157">.NET Framework 4.6.2 oder höher</span><span class="sxs-lookup"><span data-stu-id="7351a-157">.NET Framework 4.6.2 or later</span></span>  
+*   <span data-ttu-id="7351a-158">.Net Core 3,0 oder höher</span><span class="sxs-lookup"><span data-stu-id="7351a-158">.NET Core 3.0 or later</span></span>  
+*   [<span data-ttu-id="7351a-159">WinUI 3.0</span><span class="sxs-lookup"><span data-stu-id="7351a-159">WinUI 3.0</span></span>][UwpToolkitsWinui3]  
 
-<span data-ttu-id="894c0-160">Sie können WebView2-Anwendungen unter den folgenden Windows-Versionen ausführen.</span><span class="sxs-lookup"><span data-stu-id="894c0-160">You are able to run WebView2 applications on the following versions of Windows.</span></span>  
+<span data-ttu-id="7351a-160">Sie können WebView2-Anwendungen unter den folgenden Windows-Versionen ausführen.</span><span class="sxs-lookup"><span data-stu-id="7351a-160">You are able to run WebView2 applications on the following versions of Windows.</span></span>  
 
-*   <span data-ttu-id="894c0-161">Windows 10</span><span class="sxs-lookup"><span data-stu-id="894c0-161">Windows 10</span></span>  
-*   <span data-ttu-id="894c0-162">Windows8.1</span><span class="sxs-lookup"><span data-stu-id="894c0-162">Windows 8.1</span></span>  
-*   <span data-ttu-id="894c0-163">Windows 8</span><span class="sxs-lookup"><span data-stu-id="894c0-163">Windows 8</span></span>  
-*   <span data-ttu-id="894c0-164">Windows 7</span><span class="sxs-lookup"><span data-stu-id="894c0-164">Windows 7</span></span>  
-*   <span data-ttu-id="894c0-165">Windows Server 2016</span><span class="sxs-lookup"><span data-stu-id="894c0-165">Windows Server 2016</span></span>  
-*   <span data-ttu-id="894c0-166">Windows Server 2012</span><span class="sxs-lookup"><span data-stu-id="894c0-166">Windows Server 2012</span></span>  
-*   <span data-ttu-id="894c0-167">Windows Server-2012R2</span><span class="sxs-lookup"><span data-stu-id="894c0-167">Windows Server 2012R2</span></span>  
-*   <span data-ttu-id="894c0-168">Windows Server 2008 R2</span><span class="sxs-lookup"><span data-stu-id="894c0-168">Windows Server 2008 R2</span></span>  
+*   <span data-ttu-id="7351a-161">Windows 10</span><span class="sxs-lookup"><span data-stu-id="7351a-161">Windows 10</span></span>  
+*   <span data-ttu-id="7351a-162">Windows8.1</span><span class="sxs-lookup"><span data-stu-id="7351a-162">Windows 8.1</span></span>  
+*   <span data-ttu-id="7351a-163">Windows 8</span><span class="sxs-lookup"><span data-stu-id="7351a-163">Windows 8</span></span>  
+*   <span data-ttu-id="7351a-164">Windows 7</span><span class="sxs-lookup"><span data-stu-id="7351a-164">Windows 7</span></span>  
+*   <span data-ttu-id="7351a-165">Windows Server 2016</span><span class="sxs-lookup"><span data-stu-id="7351a-165">Windows Server 2016</span></span>  
+*   <span data-ttu-id="7351a-166">Windows Server 2012</span><span class="sxs-lookup"><span data-stu-id="7351a-166">Windows Server 2012</span></span>  
+*   <span data-ttu-id="7351a-167">Windows Server-2012R2</span><span class="sxs-lookup"><span data-stu-id="7351a-167">Windows Server 2012R2</span></span>  
+*   <span data-ttu-id="7351a-168">Windows Server 2008 R2</span><span class="sxs-lookup"><span data-stu-id="7351a-168">Windows Server 2008 R2</span></span>  
 
-## <span data-ttu-id="894c0-169">Nächste Schritte</span><span class="sxs-lookup"><span data-stu-id="894c0-169">Next steps</span></span>  
+## <span data-ttu-id="7351a-169">Nächste Schritte</span><span class="sxs-lookup"><span data-stu-id="7351a-169">Next steps</span></span>  
 
-<span data-ttu-id="894c0-170">Weitere Informationen zum Erstellen und Bereitstellen von WebView2-Anwendungen finden Sie in den konzeptionellen Dokumentationen und Anleitungen.</span><span class="sxs-lookup"><span data-stu-id="894c0-170">For more information on how to build and deploy WebView2 applications, review the conceptual documentation and how-to guides.</span></span>  
+<span data-ttu-id="7351a-170">Weitere Informationen zum Erstellen und Bereitstellen von WebView2-Anwendungen finden Sie in den konzeptionellen Dokumentationen und Anleitungen.</span><span class="sxs-lookup"><span data-stu-id="7351a-170">For more information on how to build and deploy WebView2 applications, review the conceptual documentation and how-to guides.</span></span>  
 
-#### <span data-ttu-id="894c0-171">Konzepte</span><span class="sxs-lookup"><span data-stu-id="894c0-171">Concepts</span></span>  
+#### <span data-ttu-id="7351a-171">Konzepte</span><span class="sxs-lookup"><span data-stu-id="7351a-171">Concepts</span></span>  
 
-*   [<span data-ttu-id="894c0-172">Grundlegendes zu WebView2 SDK-Versionen</span><span class="sxs-lookup"><span data-stu-id="894c0-172">Understand WebView2 SDK versions</span></span>][Webview2ConceptsVersioning]
-*   [<span data-ttu-id="894c0-173">Verteilung von Anwendungen mithilfe von WebView2</span><span class="sxs-lookup"><span data-stu-id="894c0-173">Distribution of applications using WebView2</span></span>][Webview2ConceptsDistribution]  
-*   [<span data-ttu-id="894c0-174">Bewährte Methoden für die Entwicklung sicherer WebView2-Anwendungen</span><span class="sxs-lookup"><span data-stu-id="894c0-174">Best practices for developing secure WebView2 applications</span></span>][Webview2ConceptsSecurity]
-*   [<span data-ttu-id="894c0-175">Verwalten von benutzerdatenordnern in WebView2-Anwendungen</span><span class="sxs-lookup"><span data-stu-id="894c0-175">Manage User Data Folder in WebView2 Applications</span></span>][Webview2ConceptsUserdatafolder]
+*   [<span data-ttu-id="7351a-172">Grundlegendes zu WebView2 SDK-Versionen</span><span class="sxs-lookup"><span data-stu-id="7351a-172">Understand WebView2 SDK versions</span></span>][Webview2ConceptsVersioning]
+*   [<span data-ttu-id="7351a-173">Verteilung von Anwendungen mithilfe von WebView2</span><span class="sxs-lookup"><span data-stu-id="7351a-173">Distribution of applications using WebView2</span></span>][Webview2ConceptsDistribution]  
+*   [<span data-ttu-id="7351a-174">Bewährte Methoden für die Entwicklung sicherer WebView2-Anwendungen</span><span class="sxs-lookup"><span data-stu-id="7351a-174">Best practices for developing secure WebView2 applications</span></span>][Webview2ConceptsSecurity]
+*   [<span data-ttu-id="7351a-175">Verwalten von benutzerdatenordnern in WebView2-Anwendungen</span><span class="sxs-lookup"><span data-stu-id="7351a-175">Manage User Data Folder in WebView2 Applications</span></span>][Webview2ConceptsUserdatafolder]
  
-#### <span data-ttu-id="894c0-176">Anleitungen</span><span class="sxs-lookup"><span data-stu-id="894c0-176">How-To guides</span></span>  
+#### <span data-ttu-id="7351a-176">Anleitungen</span><span class="sxs-lookup"><span data-stu-id="7351a-176">How-To guides</span></span>  
 
-*   [<span data-ttu-id="894c0-177">Debuggen mit WebView2</span><span class="sxs-lookup"><span data-stu-id="894c0-177">How to Debug with WebView2</span></span>][Webview2HowtoDebug]  
-*   [<span data-ttu-id="894c0-178">Automatisieren und Testen von WebView2 mit Microsoft Edge Driver</span><span class="sxs-lookup"><span data-stu-id="894c0-178">Automating and testing WebView2 with Microsoft Edge Driver</span></span>][Webview2HowtoWebdriver]  
+*   [<span data-ttu-id="7351a-177">Debuggen mit WebView2</span><span class="sxs-lookup"><span data-stu-id="7351a-177">How to Debug with WebView2</span></span>][Webview2HowtoDebug]  
+*   [<span data-ttu-id="7351a-178">Automatisieren und Testen von WebView2 mit Microsoft Edge Driver</span><span class="sxs-lookup"><span data-stu-id="7351a-178">Automating and testing WebView2 with Microsoft Edge Driver</span></span>][Webview2HowtoWebdriver]  
 
-## <span data-ttu-id="894c0-179">Kontakt mit dem WebView2-Team</span><span class="sxs-lookup"><span data-stu-id="894c0-179">Getting in touch with the WebView2 team</span></span>  
+## <span data-ttu-id="7351a-179">Kontakt mit dem Microsoft Edge WebView-Team</span><span class="sxs-lookup"><span data-stu-id="7351a-179">Getting in touch with the Microsoft Edge WebView team</span></span>  
 
-<span data-ttu-id="894c0-180">Helfen Sie beim Aufbau einer reicheren WebView2-Erfahrung, indem Sie Ihr Feedback freigeben.</span><span class="sxs-lookup"><span data-stu-id="894c0-180">Help build a richer WebView2 experience by sharing your feedback.</span></span>  <span data-ttu-id="894c0-181">Informationen zum Senden von Funktionsanforderungen oder Fehler Berichten finden Sie unter [WebView Feedback Repo][GithubMicrosoftedgeWebviewfeddback] .</span><span class="sxs-lookup"><span data-stu-id="894c0-181">To submit feature requests or bug reports, see [WebView feedback repo][GithubMicrosoftedgeWebviewfeddback] .</span></span>  <span data-ttu-id="894c0-182">Es ist auch ein guter Ort, um nach bekannten Problemen zu suchen.</span><span class="sxs-lookup"><span data-stu-id="894c0-182">It's also a good place to search for known issues.</span></span>  
+[!INCLUDE [contact WebView team note](./includes/contact-webview-team-note.md)]  
 
 > [!NOTE]
-> <span data-ttu-id="894c0-183">Während der Vorschau sammeln wir Daten, die zum Aufbau eines besseren Produkts beitragen.</span><span class="sxs-lookup"><span data-stu-id="894c0-183">During the preview, we collect data to help build a better product.</span></span>  <span data-ttu-id="894c0-184">Wenn Sie die WebView2-Datensammlung deaktivieren möchten, wechseln Sie zu `edge://settings/privacy` und deaktivieren Sie die Browserdaten Sammlung.</span><span class="sxs-lookup"><span data-stu-id="894c0-184">To turn off WebView2 data collection, go to `edge://settings/privacy` and turn off browser data collection.</span></span>  
+> <span data-ttu-id="7351a-180">Während der Vorschau unterstützt die gesammelten Daten das Erstellen eines besseren Produkts.</span><span class="sxs-lookup"><span data-stu-id="7351a-180">During the preview, the collected data helps build a better product.</span></span>  <span data-ttu-id="7351a-181">Wenn Sie die WebView2-Datensammlung deaktivieren möchten, wechseln Sie zu `edge://settings/privacy` und deaktivieren Sie die Browserdaten Sammlung.</span><span class="sxs-lookup"><span data-stu-id="7351a-181">To turn off WebView2 data collection, go to `edge://settings/privacy` and turn off browser data collection.</span></span>  
 
 <!-- links -->  
 
