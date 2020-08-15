@@ -2,16 +2,16 @@
 title: CSS-Referenz
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/27/2020
+ms.date: 08/14/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: 4f0370b83d8c939476a1ed378dbdf750101c9527
-ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+ms.openlocfilehash: 908e32140d9deb89489089442055e188cd2d9378
+ms.sourcegitcommit: 054ad92f0b8f9a15da1e3aed32e8f4379b10860f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "10843967"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "10931386"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,54 +27,48 @@ ms.locfileid: "10843967"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
+# CSS-Referenz  
 
-
-
-
-
-
-# CSS-Referenz   
-
-
-
-Entdecken Sie neue Workflows in dieser umfassenden Referenz zu den Microsoft Edge devtools-Features, die sich auf das Anzeigen und Ändern von CSS beziehen.  
+Entdecken Sie neue Workflows in der folgenden umfassenden Referenz zu den Microsoft Edge devtools-Features, die sich auf das Anzeigen und Ändern von CSS beziehen.  
 
 Informationen zu den Grundlagen finden Sie unter [Erste Schritte beim Anzeigen und Ändern von CSS][DevToolsCSSGetStarted] .  
 
-## Auswählen eines Elements   
+## Auswählen eines Elements  
 
 Mit dem Element Panel von devtools können **Sie das CSS** eines Elements gleichzeitig anzeigen oder ändern.  Das ausgewählte Element ist in der **DOM-Struktur**hervorgehoben.  Die Formatvorlagen des Elements werden im Bereich **Formatvorlagen** angezeigt.  Weitere Informationen finden Sie unter [Anzeigen des CSS für ein Element][DevToolsCSSGetStartedTutorial] für ein Lernprogramm.  
 
 > [!NOTE]
-> In [Abbildung 1](#figure-1)ist das `h1` Element, das in der **DOM-Struktur** hervorgehoben wird, das ausgewählte Element.  Auf der rechten Seite werden die Formatvorlagen des Elements im Bereich **Formatvorlagen** angezeigt.  Auf der linken Seite ist das Element im Viewport hervorgehoben, allerdings nur, weil die Maus gerade in der DOM- **Struktur**darüber schwebt.  
+> In der folgenden Abbildung ist das `h1` in der **DOM-Struktur** hervorgehobene Element das ausgewählte Element.  Auf der rechten Seite werden die Formatvorlagen des Elements im Bereich **Formatvorlagen** angezeigt.  Auf der linken Seite ist das Element im Viewport hervorgehoben, allerdings nur, weil die Maus gerade in der DOM- **Struktur**darüber schwebt.  
 
-> ##### Abbildung1  
-> Ein Beispiel für ein ausgewähltes Element  
-> ![Ein Beispiel für ein ausgewähltes Element][ImageSelectedElement]  
+:::image type="complex" source="../media/css-elements-styles-h1.msft.png" alt-text="Ein Beispiel für ein ausgewähltes Element" lightbox="../media/css-elements-styles-h1.msft.png":::
+   Ein Beispiel für ein ausgewähltes Element  
+:::image-end:::  
 
-Es gibt viele Möglichkeiten zum Auswählen eines Elements:  
+Verwenden Sie eine der folgenden Aktionen, um ein Element auszuwählen.  
 
-*   Klicken Sie im Viewport mit der rechten Maustaste auf das Element, und wählen Sie über **prüfen**aus.  
-*   Klicken Sie in devtools auf **Element auswählen** , ![ Wählen Sie ein Element aus, ][ImageSelectAnElementIcon] oder drücken Sie \ ( `Control` + `Shift` + `C` Windows \) oder `Command` + `Shift` + `C` \ (macOS \), und klicken Sie dann auf das Element im Viewport.  
-*   Klicken Sie in devtools auf das Element in der **DOM-Struktur**.  
-*   Führen Sie in devtools eine Abfrage wie `document.querySelector('p')` in der **Konsole**aus, klicken Sie mit der rechten Maustaste auf das Ergebnis, und wählen Sie dann **im Dialogfeldelemente**anzeigen aus.  
+*   Zeigen Sie im Viewport auf das Element, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie über **prüfen**aus.  
+*   Wählen Sie in devtools **Element auswählen** \ ( ![ Element auswählen ][ImageSelectAnElementIcon] \) aus, oder wählen Sie `Control` + `Shift` + `C` \ (Windows \) oder `Command` + `Shift` + `C` \ (macOS \) aus, und wählen Sie dann das Element im Viewport aus.  
+*   Wählen Sie in devtools das Element in der **DOM-Struktur**aus.  
+*   Führen Sie in devtools eine Abfrage wie `document.querySelector('p')` in der **Konsole**aus, zeigen Sie auf das Ergebnis, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie **im Dialogfeldelemente**anzeigen aus.  
 
-## CSS anzeigen   
+## CSS anzeigen  
 
-### Anzeigen des externen Stylesheets, in dem eine Regel definiert ist   
+### Anzeigen des externen Stylesheets, in dem eine Regel definiert ist  
 
-Klicken Sie im Bereich **Formatvorlagen** auf den Link neben einer CSS-Regel, um das externe Stylesheet zu öffnen, das die Regel definiert.  
+Wählen Sie im Bereich **Formatvorlagen** den Link neben einer CSS-Regel aus, um das externe Stylesheet zu öffnen, das die Regel definiert.  
 
 Wenn das Stylesheet minimierte ist, lesen Sie [Erstellen einer minimierte-Datei][DevToolsJavascriptReferenceFormat].  
 
 > [!NOTE]
-> Klicken Sie in [Abbildung 2](#figure-2) `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2` auf die Zeile 2 von, in der `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css` die `.content h1:first-of-type` CSS-Regel definiert ist.  
+> In der folgenden Abbildung werden Sie nach der Auswahl `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2` an Zeile 2 von `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css` , in der die `.content h1:first-of-type` CSS-Regel definiert ist, weitergeleitet.  
 
-> ##### Abbildung2  
-> Anzeigen des Stylesheets, in dem eine Regel definiert ist  
-> ![Anzeigen des Stylesheets, in dem eine Regel definiert ist][ImageViewRuleStylesheet]  
+<!--todo:  replace "Master" phrasing in code snippet, if possible.  -->  
 
-### Anzeigen nur des CSS, das tatsächlich auf ein Element angewendet wird   
+:::image type="complex" source="../media/css-elements-styles-h1-highlight.msft.png" alt-text="Anzeigen des Stylesheets, in dem eine Regel definiert ist" lightbox="../media/css-elements-styles-h1-highlight.msft.png":::
+  Anzeigen des Stylesheets, in dem eine Regel definiert ist  
+:::image-end:::  
+
+### Anzeigen nur des CSS, das tatsächlich auf ein Element angewendet wird  
 
 Auf der Registerkarte **Formatvorlagen** werden alle Regeln angezeigt, die für ein Element gelten, einschließlich Deklarationen, die überschrieben wurden.  Wenn Sie nicht an überschriebenen Deklarationen interessiert sind, verwenden Sie die Registerkarte **berechnet** , um nur das CSS anzuzeigen, das tatsächlich auf ein Element angewendet wird.  
 
@@ -87,425 +81,487 @@ Auf der Registerkarte **Formatvorlagen** werden alle Regeln angezeigt, die für 
 Geerbte Eigenschaften sind nicht transparent.  Aktivieren Sie das Kontrollkästchen **Alle anzeigen** , um alle geerbten Werte anzuzeigen.  
 
 > [!NOTE]
-> In [Abbildung 3](#figure-3)werden auf der Registerkarte **berechnet** die CSS-Eigenschaften angezeigt, die auf das aktuell ausgewählte Element angewendet werden `h1` .  
+> In der folgenden Abbildung werden auf der Registerkarte **berechnet** die CSS-Eigenschaften angezeigt, die auf das aktuell ausgewählte Element angewendet werden `h1` .  
 
-> ##### Abbildung 3  
-> Die Registerkarte " **berechnet** "  
-> ![Die Registerkarte "berechnet"][ImageComputedTab]  
+:::image type="complex" source="../media/css-elements-computed-h1.msft.png" alt-text="Die Registerkarte "berechnet"" lightbox="../media/css-elements-computed-h1.msft.png":::
+   Die Registerkarte " **berechnet** "  
+:::image-end:::  
 
-### Anzeigen von CSS-Eigenschaften in alphabetischer Reihenfolge   
+### Anzeigen von CSS-Eigenschaften in alphabetischer Reihenfolge  
 
 Verwenden Sie die Registerkarte **berechnet** .  Informationen finden Sie unter [Anzeigen der CSS, die tatsächlich auf ein Element angewendet](#view-only-the-css-that-is-actually-applied-to-an-element)werden.  
 
-### Anzeigen von geerbten CSS-Eigenschaften   
+### Anzeigen von geerbten CSS-Eigenschaften  
 
 Aktivieren Sie das Kontrollkästchen **Alle anzeigen** auf der Registerkarte **berechnet** .  Informationen finden Sie unter [Anzeigen der CSS, die tatsächlich auf ein Element angewendet](#view-only-the-css-that-is-actually-applied-to-an-element)werden.  
 
-### Anzeigen des Box-Modells für ein Element   
+### Anzeigen des Box-Modells für ein Element  
 
 Wenn Sie [das Feld Modell][MDNBoxModel] eines Elements anzeigen möchten, wechseln Sie zur Registerkarte **Formatvorlagen** .  Wenn Ihr devtools-Fenster schmal ist, befindet sich das **Feld Modell** Diagramm unten auf der Registerkarte.  
 
-Um einen Wert zu ändern, doppelklicken Sie darauf.  
+Wählen Sie einen Wert aus, und bearbeiten Sie ihn, um einen Wert zu ändern.  
 
 > [!NOTE]
-> In [Abbildung 4](#figure-4)zeigt das **Diagramm auf** der Registerkarte **Formatvorlagen** das Feld Modell für das aktuell ausgewählte `h1` Element.  
+> In der folgenden Abbildung wird im **Feld Modell** Diagramm auf der Registerkarte **Formatvorlagen** das Feld Modell für das aktuell ausgewählte `h1` Element angezeigt.  
 
-> ##### Abbildung4  
-> Das Diagramm des **Feld Modells**  
-> ![Das Diagramm des Feld Modells][ImageBoxModel]  
+:::image type="complex" source="../media/css-elements-styles-h1-2.msft.png" alt-text="Das Diagramm des Feld Modells" lightbox="../media/css-elements-styles-h1-2.msft.png":::
+   Das Diagramm des **Feld Modells**  
+:::image-end:::  
 
-### Suchen und Filtern des CSS eines Elements   
+### Suchen und Filtern des CSS eines Elements  
 
 Verwenden Sie das Textfeld " **Filter** " auf den Registerkarten " **Formatvorlagen** " und " **berechnet** ", um nach bestimmten CSS-Eigenschaften oder-Werten zu suchen.  
 
 Wenn Sie auch geerbte Eigenschaften auf der Registerkarte **berechnet** durchsuchen möchten, aktivieren Sie das Kontrollkästchen **Alle anzeigen** .  
 
 > [!NOTE]
-> In [Abbildung 5](#figure-5)wird die Registerkarte **Formatvorlagen** so gefiltert, dass nur Regeln angezeigt werden, die die Suchabfrage enthalten `color` .  
+> In der folgenden Abbildung wird die Registerkarte **Formatvorlagen** so gefiltert, dass nur Regeln angezeigt werden, die die Suchabfrage enthalten `color` .  
 
-> ##### Abbildung5  
-> Filtern der Registerkarte " **Formatvorlagen** "  
-> ![Filtern der Registerkarte "Formatvorlagen"][ImageStylesFilter]  
+:::image type="complex" source="../media/css-elements-styles-filter-color.msft.png" alt-text="Filtern der Registerkarte "Formatvorlagen"" lightbox="../media/css-elements-styles-filter-color.msft.png":::
+   Filtern der Registerkarte " **Formatvorlagen** "  
+:::image-end:::  
 
 > [!NOTE]
-> In [Abbildung 6](#figure-6)wird die Registerkarte **berechnet** so gefiltert, dass nur Deklarationen angezeigt werden, die die Suchabfrage enthalten `100%` .  
+> In der folgenden Abbildung wird die Registerkarte **berechnet** so gefiltert, dass nur Deklarationen angezeigt werden, die die Suchabfrage enthalten `100%` .  
 
-> ##### Abbildung6  
-> Filtern der **berechneten** Registerkarte  
-> ![Filtern der berechneten Registerkarte][ImageComputerFilter]  
+:::image type="complex" source="../media/css-elements-computed-filter-100.msft.png" alt-text="Filtern der berechneten Registerkarte" lightbox="../media/css-elements-computed-filter-100.msft.png":::
+   Filtern der **berechneten** Registerkarte  
+:::image-end:::  
 
-### Umschalten einer Pseudoklasse   
+### Umschalten einer Pseudoklasse  
 
-So wechseln Sie eine Pseudoklasse wie `:active` , `:focus` , `:hover` oder `:visited` :  
+Führen Sie die folgenden Aktionen aus, um eine Pseudoklasse wie, `:active` `:focus` , oder zu wechseln `:hover` `:visited` .  
 
 1.  [Wählen Sie ein Element aus](#select-an-element).  
 1.  Wechseln Sie im **Element** Fenster zur Registerkarte **Formatvorlagen** .  
-1.  Klicken Sie auf **: Hov**.  
+1.  Wählen Sie **: Hov**aus.  
 1.  Überprüfen Sie die Pseudoklasse, die Sie aktivieren möchten.  
 
 > [!NOTE]
-> Wechseln Sie in [Abbildung 7](#figure-7)zur `:hover` Pseudoklasse.  Überprüfen Sie im Viewport, ob die `background-color: cornflowerblue` Deklaration auf das Element angewendet wird, obwohl das Element nicht tatsächlich über den Zeiger bewegt wird.  
+> Wechseln Sie in der folgenden Abbildung zur `:hover` Pseudoklasse.  Überprüfen Sie im Viewport, ob die `background-color: cornflowerblue` Deklaration auf das Element angewendet wird, obwohl das Element nicht tatsächlich über den Zeiger bewegt wird.  
 
-> ##### Abbildung7  
-> Umschalten der `:hover` Pseudoklasse  
-> ![Umschalten der: hover-Pseudoklasse][ImagePseudoClass]  
+:::image type="complex" source="../media/css-elements-styles-hov-hover.msft.png" alt-text="Umschalten der: hover-Pseudoklasse" lightbox="../media/css-elements-styles-hov-hover.msft.png":::
+   Umschalten der `:hover` Pseudoklasse  
+:::image-end:::  
 
-Weitere Informationen finden Sie unter [Hinzufügen eines PseudoState zu einer Klasse][DevToolsCSSGetStartedAddPseudoState] für ein interaktives Lernprogramm. 
+Ein interaktives Lernprogramm finden Sie unter [Hinzufügen eines PseudoState zu einer Klasse][DevToolsCSSGetStartedAddPseudoState].  
 
-### Anzeigen einer Seite im Druckmodus   
+### Anzeigen einer Seite im Druckmodus  
 
-So zeigen Sie eine Seite im Druckmodus an:  
+Führen Sie die folgenden Aktionen aus, um eine Seite im Druckmodus anzuzeigen.  
+
 1.  [Öffnen des Befehlsmenüs][DevToolsCommandMenu]  
 1.  Beginnen `Rendering` Sie mit der Eingabe, und wählen Sie aus `Show Rendering` .  
 1.  Wählen Sie für die Dropdownliste **CSS-Medien emulieren** die Option **Drucken**aus.  
 
-### Anzeigen der verwendeten und nicht verwendeten CSS mit der Registerkarte "Coverage"   
+### Anzeigen der verwendeten und nicht verwendeten CSS mit der Registerkarte "Coverage"  
 
 Auf der Registerkarte Coverage wird angezeigt, welche CSS-Seiten tatsächlich verwendet werden.  
 
-1.  Drücken Sie `Control` + `Shift` + `P` \ (Windows \) oder `Command` + `Shift` + `P` \ (macOS \), während sich devtools im Fokus befindet, um das Befehlsmenü zu öffnen.  
+1.  Wählen Sie `Control` + `Shift` + `P` \ (Windows \) oder `Command` + `Shift` + `P` \ (macOS \) aus, während sich devtools im Fokus befindet, um [das Befehlsmenü zu öffnen][DevToolsCommandMenu].  
 1.  Beginnen `coverage` Sie mit der Eingabe, und wählen Sie **Berichterstattung anzeigen**aus.  Die Registerkarte Coverage wird angezeigt.  
     
-    > ##### Abbildung8  
-    > Öffnen der Registerkarte "Abdeckung" über das Befehlsmenü  
-    > ![Öffnen der Registerkarte "Abdeckung" über das Befehlsmenü][ImageCommandMenu]  
+    :::row:::
+       :::column span="":::
+          :::image type="complex" source="../media/css-console-command-menu-coverage.msft.png" alt-text="Öffnen der Registerkarte "Abdeckung" über das Befehlsmenü" lightbox="../media/css-console-command-menu-coverage.msft.png":::
+             Öffnen der Registerkarte " **Abdeckung** " über das **Befehlsmenü**  
+          :::image-end:::  
+       :::column-end:::
+       :::column span="":::
+          :::image type="complex" source="../media/css-console-qs-coverage-empty.msft.png" alt-text="Die Registerkarte "Coverage"" lightbox="../media/css-console-qs-coverage-empty.msft.png":::
+             Die Registerkarte " **Coverage** "  
+          :::image-end:::  
+       :::column-end:::
+    :::row-end:::  
     
-    > ##### Abbildung 9  
-    > Die Registerkarte "Coverage"  
-    > ![Die Registerkarte "Coverage"][ImageCoverageEmpty]  
+1.  Wählen Sie **Instrumentations Abdeckung starten und aktualisieren Sie die Seite** aus, und aktualisieren Sie die Seite ![ mit der Instrumentations Abdeckung und aktualisieren Sie die Seite ][ImageRefreshIcon] .  Die Seite wird aktualisiert, und die Registerkarte Coverage bietet eine Übersicht darüber, wie viel CSS \ (und JavaScript \) aus jeder Datei, die der Browser lädt, verwendet wird.  Grün steht für verwendetes CSS.  Rot steht für nicht verwendetes CSS.  
     
-1.  Klicken Sie auf **Instrumentations Abdeckung starten, und aktualisieren Sie die Abdeckung für die Seiten** ![ Anfang Instrumentation, und aktualisieren Sie die Seite ][ImageRefreshIcon] .  Die Seite wird aktualisiert, und die Registerkarte Coverage bietet eine Übersicht darüber, wie viel CSS \ (und JavaScript \) aus jeder Datei, die der Browser lädt, verwendet wird.  Grün steht für verwendetes CSS.  Rot steht für nicht verwendetes CSS.  
-    
-    > ##### Abbildung 10  
-    > Eine Übersicht darüber, wie viel CSS (und JavaScript) verwendet und nicht verwendet wird  
-    > ![Eine Übersicht darüber, wie viel CSS (und JavaScript) verwendet und nicht verwendet wird][ImageCoverageOverview]  
+    :::image type="complex" source="../media/css-console-qs-coverage-run.msft.png" alt-text="Eine Übersicht darüber, wie viel CSS (und JavaScript) verwendet und nicht verwendet wird" lightbox="../media/css-console-qs-coverage-run.msft.png":::
+       Eine Übersicht darüber, wie viel CSS \ (und JavaScript \) verwendet und nicht verwendet wird  
+    :::image-end:::  
 
-1.  Klicken Sie auf eine CSS-Datei, um eine Zeile für Zeile zu sehen, welche CSS-Datei verwendet wird.  
+1.  Wählen Sie eine CSS-Datei aus, um eine Zeile für Zeile aufzuschlüsseln, was CSS verwendet.  
     
     > [!NOTE]
-    > In [Abbildung 11](#figure-11)werden die Zeilen 145 bis 147 und 149 bis 151 nicht `b66bc881.site-ltr.css` verwendet, während Zeilen 163 bis 166 verwendet werden.  
+    > In der folgenden Abbildung werden die Zeilen 145 bis 147 und 149 bis 151 nicht `b66bc881.site-ltr.css` verwendet, während Zeilen 163 bis 166 verwendet werden.  
     
-    > ##### Abbildung 11  
-    > Eine Zeile-für-Zeile-Aufteilung der verwendeten und nicht verwendeten CSS  
-    > ![Eine Zeile-für-Zeile-Aufteilung der verwendeten und nicht verwendeten CSS][ImageCoverageDetail]  
+    :::image type="complex" source="../media/css-sources-css-coverage.msft.png" alt-text="Eine Zeile-für-Zeile-Aufteilung der verwendeten und nicht verwendeten CSS" lightbox="../media/css-sources-css-coverage.msft.png":::
+       Eine Zeile-für-Zeile-Aufteilung der verwendeten und nicht verwendeten CSS  
+    :::image-end:::  
     
-### Erzwingen des Druckvorschau Modus   
+### Erzwingen des Druckvorschau Modus  
 
 Siehe [Erzwingen von devtools in den Druckvorschau Modus][DevToolsCssPrintPreview].  
 
-## CSS ändern   
+## CSS ändern  
 
 <!-- todo s/CSS declaration/declaration/ -->  
 
-### Hinzufügen einer CSS-Deklaration zu einem Element   
+### Hinzufügen einer CSS-Deklaration zu einem Element  
 
-Da die Reihenfolge der Deklarationen beeinflusst, wie ein Element formatiert wird, können Sie Deklarationen auf unterschiedliche Weise hinzufügen:  
+Die Reihenfolge der Deklarationen wirkt sich darauf aus, wie ein Element formatiert wird, indem Sie die folgende Liste verwenden, um Deklarationen auf unterschiedliche Weise hinzuzufügen.  
 
 *   [Fügen Sie eine Inline Deklaration hinzu](#add-an-inline-declaration).  Entspricht dem Hinzufügen eines `style` Attributs zum HTML-Code eines Elements.  
 *   [Hinzufügen einer Deklaration zu einer Formatvorlagenregel](#add-a-declaration-to-a-style-rule)  
 
-**Welchen Workflow sollten Sie verwenden?** In den meisten Fällen möchten Sie wahrscheinlich den Inline Deklarations Workflow verwenden.  Inline Deklarationen haben eine höhere Spezifität als externe, sodass der Inline-Workflow sicherstellt, dass die Änderungen in dem Element wie erwartet wirksam werden.  Weitere Informationen zur Spezifität finden Sie unter [Selektor-Typen][MDNSelectorTypes] .  
+**Welchen Workflow sollten Sie verwenden?** In den meisten Fällen möchten Sie wahrscheinlich den Inline Deklarations Workflow verwenden.  Inline Deklarationen haben eine höhere Spezifität als externe, sodass der Inline-Workflow sicherstellt, dass die Änderungen in Ihrem erwarteten Element wirksam werden.  Weitere Informationen zur Spezifität finden Sie unter [Selector-Typen][MDNSelectorTypes].  
 
 Wenn Sie alle Formatvorlagen des Elements Debuggen und insbesondere testen möchten, was geschieht, wenn eine Deklaration an verschiedenen Stellen definiert ist, verwenden Sie den anderen Workflow.  
 
-#### Hinzufügen einer Inline Deklaration   
+#### Hinzufügen einer Inline Deklaration  
 
-So fügen Sie eine Inline Deklaration hinzu:  
+Führen Sie die folgenden Aktionen aus, um eine Inline Deklaration hinzuzufügen.  
 
 1.  [Wählen Sie ein Element aus](#select-an-element).  
-1.  Klicken Sie im Bereich " **Formatvorlagen** " zwischen den Klammern des Abschnitts " **Element. Format** ".  Der Cursor konzentriert sich, sodass Sie Text eingeben können.  
-1.  Geben Sie einen Eigenschaftsnamen ein, und drücken Sie `Enter` .  
-1.  Geben Sie einen gültigen Wert für diese Eigenschaft ein, und drücken Sie `Enter` .  Überprüfen Sie in der **DOM-Struktur**, ob `style` dem Element ein Attribut hinzugefügt wurde.  
+1.  Wählen Sie im Bereich **Formatvorlagen** zwischen den Klammern des Abschnitts **Element. Format** aus.  Der Cursor konzentriert sich, sodass Sie Text eingeben können.  
+1.  Geben Sie einen Eigenschaftsnamen ein, und wählen Sie aus `Enter` .  
+1.  Geben Sie einen gültigen Wert für diese Eigenschaft ein, und wählen Sie aus `Enter` .  Überprüfen Sie in der **DOM-Struktur**, ob `style` dem Element ein Attribut hinzugefügt wurde.  
 
 > [!NOTE]
-> In [Abbildung 12](#figure-12)wurden die `margin-top` `background-color` Eigenschaften und auf das ausgewählte Element angewendet.  Überprüfen Sie in der **DOM-Struktur** , ob die Deklarationen im `style` Attribut für ein Element widergespiegelt werden.  
+> In der folgenden Abbildung wurden die `margin-top` `background-color` Eigenschaften und auf das ausgewählte Element angewendet.  Überprüfen Sie in der **DOM-Struktur** , ob die Deklarationen im `style` Attribut für ein Element widergespiegelt werden.  
 
-> ##### Abbildung 12  
-> Hinzufügen von Inline Deklarationen  
-> ![Hinzufügen von Inline Deklarationen][ImageInlineDeclarations]  
+:::image type="complex" source="../media/css-elements-styles-margin-top-background-color.msft.png" alt-text="Hinzufügen von Inline Deklarationen" lightbox="../media/css-elements-styles-margin-top-background-color.msft.png":::
+   Hinzufügen von Inline Deklarationen  
+:::image-end:::  
 
-#### Hinzufügen einer Deklaration zu einer Stilregel   
+#### Hinzufügen einer Deklaration zu einer Stilregel  
 
-So fügen Sie einer vorhandenen Stilregel eine Deklaration hinzu:  
+Führen Sie die folgenden Aktionen aus, um eine Deklaration zu einer vorhandenen Stilregel hinzuzufügen.  
 
 1.  [Wählen Sie ein Element aus](#select-an-element).  
-1.  Klicken Sie im Bereich **Formatvorlagen** auf die eckigen Klammern der Stilregel, der Sie die Deklaration hinzufügen möchten.  Der Cursor konzentriert sich, sodass Sie Text eingeben können.  
-1.  Geben Sie einen Eigenschaftsnamen ein, und drücken Sie `Enter` .  
-1.  Geben Sie einen gültigen Wert für diese Eigenschaft ein, und drücken Sie `Enter` .  
+1.  Wählen Sie im Bereich **Formatvorlagen** zwischen den Klammern der Stilregel aus, der Sie die Deklaration hinzufügen möchten.  Der Cursor konzentriert sich, sodass Sie Text eingeben können.  
+1.  Geben Sie einen Eigenschaftsnamen ein, und wählen Sie aus `Enter` .  
+1.  Geben Sie einen gültigen Wert für diese Eigenschaft ein, und wählen Sie aus `Enter` .  
 
-> ##### Abbildung 13  
-> Hinzufügen der `border-bottom-style:groove` Deklaration zu einer Stilregel  
-> ![Hinzufügen einer Deklaration zu einer Formatvorlagenregel][ImageAddDeclarationExistingRule]  
+:::image type="complex" source="../media/css-elements-styles-border-bottom-style.msft.png" alt-text="Hinzufügen einer Deklaration zu einer Formatvorlagenregel" lightbox="../media/css-elements-styles-border-bottom-style.msft.png":::
+   Hinzufügen der `border-bottom-style:groove` Deklaration zu einer Stilregel  
+:::image-end:::  
 
-### Ändern des Namens oder Werts einer Deklaration   
+### Ändern des Namens oder Werts einer Deklaration  
 
-Doppelklicken Sie auf den Namen oder Wert einer Deklaration, um Sie zu ändern.  Informationen dazu finden Sie unter [Ändern von Deklarations Werten mit Tastenkombinationen](#change-declaration-values-with-keyboard-shortcuts) für Tastenkombinationen, um einen Wert schnell zu erhöhen oder zu verringern `0.1` `1` `10` `100` .  
+Wählen Sie den Namen oder den Wert einer Deklaration aus, und bearbeiten Sie ihn, um ihn zu ändern.  Informationen dazu finden Sie unter [Ändern von Deklarations Werten mit Tastenkombinationen](#change-declaration-values-with-keyboard-shortcuts) für Tastenkombinationen, um einen Wert schnell zu erhöhen oder zu verringern `0.1` `1` `10` `100` .  
 
-> ##### Abbildung 14  
-> Ändern des Werts der `border-bottom-style`  
-> ![Ändern des Werts einer Deklaration][ImageAddDeclarationExistingRule2]  
+:::image type="complex" source="../media/css-elements-styles-border-bottom-style-dropdown.msft.png" alt-text="Ändern des Werts einer Deklaration" lightbox="../media/css-elements-styles-border-bottom-style-dropdown.msft.png":::
+   Ändern des Werts der `border-bottom-style` Deklaration  
+:::image-end:::  
 
-### Ändern von Deklarations Werten mit Tastenkombinationen   
+### Ändern von Deklarations Werten mit Tastenkombinationen  
 
-Wenn Sie den Wert einer Deklaration bearbeiten, können Sie die folgenden Tastenkombinationen verwenden, um den Wert um einen festen Betrag zu erhöhen:  
+Wenn Sie den Wert einer Deklaration bearbeiten, können Sie die folgenden Tastenkombinationen verwenden, um den Wert um einen bestimmten Betrag zu erhöhen.  
 
-*   Drücken Sie `Alt` + `Up` \ (Windows \) oder `Option` + `Up` \ (macOS \), um den Wert zu erhöhen `0.1` .  
-*   Drücken Sie, `Up` um den Wert nach `1` oder nach zu ändern, `0.1` Wenn der aktuelle Wert zwischen `-1` und ist `1` .  
-*   Drücken Sie `Shift` + `Up` , um den Wert zu erhöhen `10` .  
-*   Drücken Sie `Shift` + `Page Up` \ (Windows \) oder `Shift` + `Command` + `Up` \ (macOS \), um den Wert um zu erhöhen `100` .  
+*   Wählen Sie `Alt` + `Up` \ (Windows \) oder `Option` + `Up` \ (macOS \) aus, um den Wert zu erhöhen `0.1` .  
+*   Wählen Sie aus, `Up` um den Wert nach `1` oder nach zu ändern, `0.1` Wenn der aktuelle Wert zwischen `-1` und ist `1` .  
+*   Wählen Sie aus `Shift` + `Up` , um zu inkrementieren `10` .  
+*   Wählen Sie `Shift` + `Page Up` \ (Windows \) oder `Shift` + `Command` + `Up` \ (macOS \) aus, um den Wert zu erhöhen `100` .  
 
 Das Dekrementieren funktioniert auch.  Ersetzen Sie einfach alle `Up` oben genannten Instanzen durch `Down` .  
 
-### Hinzufügen einer Klasse zu einem Element   
+### Hinzufügen einer Klasse zu einem Element  
 
-So fügen Sie einem Element eine Klasse hinzu:  
+Führen Sie die folgenden Aktionen aus, um einem Element eine Klasse hinzuzufügen.  
 
 1.  [Wählen Sie das Element](#select-an-element) in der **DOM-Struktur**aus.  
-1.  Klicken Sie auf **. CLS**.  
+1.  Wählen Sie **CLS**aus.  
 1.  Geben Sie den Namen der Klasse in das Textfeld **neue Klasse hinzufügen** ein.  
-1.  Drücken Sie `Enter` .  
+1.  Wählen Sie aus `Enter` .  
 
-> ##### Abbildung 15  
-> Der Bereich " **Element Klassen** "  
-> ![Der Bereich "Element Klassen"][ImageElementClasses]  
+:::image type="complex" source="../media/css-elements-styles-filter-classes.msft.png" alt-text="Der Bereich "Element Klassen"" lightbox="../media/css-elements-styles-filter-classes.msft.png":::
+   Der Bereich " **Element Klassen** "  
+:::image-end:::  
 
-### Umschalten einer Klasse   
+### Umschalten einer Klasse  
 
-So aktivieren oder deaktivieren Sie eine Klasse für ein Element:  
+Führen Sie die folgenden Aktionen aus, um eine Klasse für ein Element zu aktivieren oder zu deaktivieren.  
 
 1.  [Wählen Sie das Element](#select-an-element) in der **DOM-Struktur**aus.  
-1.  Öffnen Sie den Bereich **Element Klassen** .  Weitere Informationen finden Sie unter [Hinzufügen einer Klasse zu einem Element](#add-a-class-to-an-element).  Unter dem Textfeld " **neue Klasse hinzufügen** " befinden sich alle Klassen, die auf dieses Element angewendet werden.  
+1.  Öffnen Sie den Bereich **Element Klassen** .  Weitere Informationen finden Sie unter [Hinzufügen einer Klasse zu einem Element](#add-a-class-to-an-element).  Unter dem Textfeld " **neue Klasse hinzufügen** " befinden sich alle Klassen, die auf das jeweilige Element angewendet werden.  
 1.  Aktivieren oder deaktivieren Sie das Kontrollkästchen neben der Klasse, die Sie aktivieren oder deaktivieren möchten.  
 
-### Hinzufügen einer Stilregel   
+### Hinzufügen einer Stilregel  
 
-So fügen Sie eine neue Stilregel hinzu:  
+Führen Sie die folgenden Aktionen aus, um eine neue Stilregel hinzuzufügen.  
 
 1.  [Wählen Sie ein Element aus](#select-an-element).  
-1.  Klicken Sie auf **neue** Stilregel Regel ![ ][ImageNewStyleRuleIcon] .  DevTools fügt eine neue Regel unterhalb der **Element. Style** -Regel ein.  
+1.  Wählen Sie **neue Formatvorlagenregel** \ ( ![ neue Stilregel ][ImageNewStyleRuleIcon] \) aus.  DevTools fügt eine neue Regel unterhalb der **Element. Style** -Regel ein.  
 
 > [!NOTE]
-> In [Abbildung 16](#figure-16)fügt devtools die Stilregel hinzu, `h1.devsite-page-title` nachdem Sie **auf neue Stilregel**geklickt haben.  
+> In der folgenden Abbildung fügt devtools die Stilregel hinzu, `h1.devsite-page-title` nachdem Sie eine **neue Stilregel**ausgewählt haben.  
 
-> ##### Abbildung 16  
-> Hinzufügen einer neuen Stilregel  
-> ![Hinzufügen einer neuen Stilregel][ImageStyleRule]  
+:::image type="complex" source="../media/css-elements-styles-style-new.msft.png" alt-text="Hinzufügen einer neuen Stilregel" lightbox="../media/css-elements-styles-style-new.msft.png":::
+   Hinzufügen einer neuen Stilregel  
+:::image-end:::  
 
-#### Auswählen des Stylesheets, dem eine Regel hinzugefügt werden soll   
+#### Auswählen des Stylesheets, dem eine Regel hinzugefügt werden soll  
 
-Wenn Sie [eine neue Stilregel hinzufügen](#add-a-style-rule), klicken und **halten Sie** die neue Stilregel Regel neu, um ![ auszuwählen, ][ImageNewStyleRuleIcon] welchem Stylesheet die Stilregel hinzugefügt werden soll.  
+Wenn Sie [eine neue Stilregel hinzufügen](#add-a-style-rule)möchten, wählen Sie **neue** Stilregel aus, und halten Sie die Regel \ (neue Stilregel \) gedrückt, um ![ auszuwählen, ][ImageNewStyleRuleIcon] welchem Stylesheet die Stilregel hinzugefügt werden soll.  
 
-> ##### Abbildung 17  
-> Auswählen eines Stylesheets  
-> ![Auswählen eines Stylesheets][ImageChooseStylesheet]  
+:::image type="complex" source="../media/css-elements-styles-style-new-select-existing.msft.png" alt-text="Auswählen eines Stylesheets" lightbox="../media/css-elements-styles-style-new-select-existing.msft.png":::
+   Auswählen eines Stylesheets  
+:::image-end:::  
 
-#### Hinzufügen einer Stilregel zu einem bestimmten Speicherort   
+#### Hinzufügen einer Stilregel zu einem bestimmten Speicherort  
 
-So fügen Sie auf der Registerkarte **Formatvorlagen** eine Stilregel zu einer bestimmten Position hinzu:  
+Führen Sie die folgenden Aktionen aus, um einer bestimmten Position auf der Registerkarte **Formatvorlagen** eine Stilregel hinzuzufügen.  
 
 1.  Zeigen Sie mit der Maus auf die Stilregel, die sich direkt darüber befindet, wo Sie die neue Stilregel hinzufügen möchten.  
 1.  [Blenden Sie die Symbolleiste " **Weitere Aktionen** " ein](#reveal-the-more-actions-toolbar).  
-1.  Klicken Sie unter Formatvorlagenregel einfügen auf **Stil Regel einfügen** ![ ][ImageNewStyleRuleIcon] .  
+1.  Wählen Sie **unter** \ (Stilregel ![ Einfügen unter \) die Option Stilregel einfügen aus ][ImageNewStyleRuleIcon] .  
 
-> ##### Abbildung 18  
-> **Einfügen einer Stilregel unten**  
-> ![Einfügen einer Stilregel unten][ImageInsertStyleRuleBelow]  
+:::image type="complex" source="../media/css-elements-styles-insert-style-rule-below.msft.png" alt-text="Einfügen einer Stilregel unten" lightbox="../media/css-elements-styles-insert-style-rule-below.msft.png":::
+   **Einfügen einer Stilregel unten**  
+:::image-end:::  
 
-### Anzeigen der Symbolleiste "Weitere Aktionen"   
+### Anzeigen der Symbolleiste "Weitere Aktionen"  
 
-Auf der Symbolleiste **Weitere Aktionen** können Sie Folgendes ausführen:  
+Auf der Symbolleiste **Weitere Aktionen** können Sie die folgenden Aktionen ausführen:  
 
 *   Fügen Sie eine Stilregel direkt unter die Regel ein, auf die Sie sich konzentrieren möchten.  
 *   Fügen `background-color` `color` `box-shadow` `text-shadow` Sie der Stilregel, auf die Sie sich konzentrieren, eine,-oder-Deklaration hinzu.  
 
-So zeigen Sie die Symbolleiste " **Weitere Aktionen** " an:  
+Führen Sie die folgenden Aktionen aus, um die Symbolleiste **Weitere Aktionen** anzuzeigen.  
 
-1.  Zeigen Sie auf der Registerkarte **Formatvorlagen** auf eine Stilregel.  **Weitere Aktionen** `...` wird in der unteren rechten Ecke des Abschnitts Stilregel angezeigt.  
+1.  Zeigen Sie auf der Registerkarte **Formatvorlagen** auf eine Stilregel.  **More Actions** `...` In der unteren rechten Ecke des Abschnitts Stilregel werden weitere Aktionen angezeigt.  
     
     > [!NOTE]
-    > Zeigen Sie in [Abbildung 19](#figure-19)auf die `.header-holder.has-default-focus` Stilregel, und klicken Sie unten rechts im Abschnitt Stilregel auf **Weitere Aktionen** .  
+    > Zeigen Sie in der folgenden Abbildung auf die `.header-holder.has-default-focus` Stilregel, und **Weitere Aktionen** werden in der unteren rechten Ecke des Abschnitts Stilregel eingeblendet.  
     
-    > ##### Abbildung 19  
-    > Aufdecken **weiterer Aktionen**  
-    > ![Aufdecken weiterer Aktionen][ImageRevealMore]  
+    :::image type="complex" source="../media/css-elements-styles-new-rule-styles.msft.png" alt-text="Weitere Aktionen anzeigen" lightbox="../media/css-elements-styles-new-rule-styles.msft.png":::
+       **Weitere Aktionen** anzeigen \ ( `...` \)  
+    :::image-end:::  
     
-1.  Zeigen Sie auf **Weitere Aktionen** `...` , um die oben genannten Aktionen anzuzeigen.  
+1.  Zeigen Sie auf **Weitere Aktionen** \ ( `...` \), um die oben genannten Aktionen anzuzeigen.  
     
     > [!NOTE]
     > Die **Regel "Stil einfügen" unterhalb** der Aktion wird nach dem Hovern auf **Weitere Aktionen**angezeigt.  
     
-    > ##### Abbildung 20  
-    > Die Symbolleiste " **Weitere Aktionen** "  
-    > ![Die Symbolleiste "Weitere Aktionen"][ImageInsertStyleRuleBelow2]  
+    :::image type="complex" source="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png" alt-text="Die Symbolleiste "Weitere Aktionen"" lightbox="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png":::
+       Die Symbolleiste " **Weitere Aktionen** "  
+    :::image-end:::  
     
-### Umschalten einer Deklaration   
+### Umschalten einer Deklaration  
 
-So aktivieren oder deaktivieren Sie eine einzelne Deklaration:  
+Führen Sie die folllwoing-Aktionen aus, um eine einzelne Deklaration auf \ (oder aus \) umzuschalten.  
 
 1.  [Wählen Sie ein Element aus](#select-an-element).  
-1.  Zeigen Sie im Bereich **Formatvorlagen** auf die Regel, die die Deklaration definiert.  Kontrollkästchen werden neben jeder Deklaration angezeigt.  
-1.  Aktivieren oder deaktivieren Sie das Kontrollkästchen neben der Deklaration.  Wenn Sie eine Deklaration deaktivieren, wird Sie von devtools durchgestrichen, um anzugeben, dass Sie nicht mehr aktiv ist.  
+1.  Zeigen Sie im Bereich **Formatvorlagen** auf die Regel, die die Deklaration definiert.  Neben jeder Deklaration wird ein Kontrollkästchen angezeigt.  
+1.  Aktivieren Sie das Kontrollkästchen neben der Deklaration.  Wenn Sie eine Deklaration deaktivieren, wird Sie von devtools durchgestrichen, um anzugeben, dass Sie nicht mehr aktiv ist.  
 
 > [!NOTE]
-> In [Abbildung 21](#figure-21)wurde die `margin-top` Eigenschaft für das aktuell ausgewählte Element deaktiviert.  
+> In der folgenden Abbildung wurde die `margin-top` Eigenschaft für das aktuell ausgewählte Element deaktiviert.  
 
-> ##### Abbildung 21  
-> Umschalten einer Deklaration  
-> ![Umschalten einer Deklaration][ImageToggleDeclaration]  
+:::image type="complex" source="../media/css-elements-styles-rule-deactivated.msft.png" alt-text="Umschalten einer Deklaration" lightbox="../media/css-elements-styles-rule-deactivated.msft.png":::
+   Umschalten einer Deklaration  
+:::image-end:::  
 
-### Hinzufügen einer Hintergrundfarben Deklaration   
+### Hinzufügen einer Hintergrundfarben Deklaration  
 
-So fügen Sie einem `background-color` Element eine Deklaration hinzu:  
+Führen Sie die folgenden Aktionen aus, um einem Element eine Deklaration hinzuzufügen `background-color` .  
 
 1.  Zeigen Sie mit der Maus auf die Stilregel, der Sie die Deklaration hinzufügen möchten `background-color` .  
 1.  [Blenden Sie die Symbolleiste " **Weitere Aktionen** " ein](#reveal-the-more-actions-toolbar).  
-1.  Klicken Sie auf **Hintergrundfarbe hinzu** fügen ![ , um Hintergrundfarbe hinzuzufügen ][ImageAddBackgroundColorIcon] .  
+1.  Wählen Sie **Hintergrundfarbe hinzufügen** \ ( ![ Hintergrundfarbe hinzufügen ][ImageAddBackgroundColorIcon] \) aus.  
 
-> ##### Abbildung 22  
-> **Hinzufügen einer Hintergrundfarbe**  
-> ![Hinzufügen einer Hintergrundfarbe][ImageAddBackgroundColor]  
+:::image type="complex" source="../media/css-elements-styles-rule-add-background-color.msft.png" alt-text="Hinzufügen einer Hintergrundfarbe" lightbox="../media/css-elements-styles-rule-add-background-color.msft.png":::
+   **Hinzufügen einer Hintergrundfarbe**  
+:::image-end:::  
 
-### Hinzufügen einer Farb Deklaration   
+### Hinzufügen einer Farb Deklaration  
 
-So fügen Sie einem `color` Element eine Deklaration hinzu:  
+Führen Sie die folgenden Aktionen aus, um einem Element eine Deklaration hinzuzufügen `color` .  
 
 1.  Zeigen Sie mit der Maus auf die Stilregel, der Sie die Deklaration hinzufügen möchten `color` .  
 1.  [Blenden Sie die Symbolleiste " **Weitere Aktionen** " ein](#reveal-the-more-actions-toolbar).  
-1.  Klicken Sie auf **Farbe** hinzufügen ![ ][ImageAddColorIcon] .  
+1.  Wählen Sie **Farbe hinzufügen** ( ![ Farbe hinzufügen ][ImageAddColorIcon] ) aus.  
 
-> ##### Abbildung 23  
-> **Farbe hinzufügen**  
-> ![Farbe hinzufügen][ImageAddColor]  
+:::image type="complex" source="../media/css-elements-styles-rule-add-color.msft.png" alt-text="Farbe hinzufügen" lightbox="../media/css-elements-styles-rule-add-color.msft.png":::
+   **Farbe hinzufügen**  
+:::image-end:::  
 
-### Hinzufügen einer Box-Shadow-Deklaration   
+### Hinzufügen einer Box-Shadow-Deklaration  
 
-So fügen Sie einem `box-shadow` Element eine Deklaration hinzu:  
+Führen Sie die folgenden Aktionen aus, um einem Element eine Deklaration hinzuzufügen `box-shadow` .  
 
 1.  Zeigen Sie mit der Maus auf die Stilregel, der Sie die Deklaration hinzufügen möchten `box-shadow` .  
 1.  [Blenden Sie die Symbolleiste " **Weitere Aktionen** " ein](#reveal-the-more-actions-toolbar).  
-1.  Klicken Sie auf **Feld** Schatten hinzufügen ![ ][ImageAddBoxShadowIcon] .  
+1.  Wählen Sie " **Feld Schatten hinzufügen** " aus ![ ][ImageAddBoxShadowIcon] .  
 
-> ##### Abbildung 24  
-> **Feld Schatten hinzufügen**  
-> ![Feld Schatten hinzufügen][ImageAddBoxShadow]  
+:::image type="complex" source="../media/css-elements-styles-rule-add-box-shadow.msft.png" alt-text="Feld Schatten hinzufügen" lightbox="../media/css-elements-styles-rule-add-box-shadow.msft.png":::
+   **Feld Schatten hinzufügen**  
+:::image-end:::  
 
-### Hinzufügen einer Text-Shadow-Deklaration   
+### Hinzufügen einer Text-Shadow-Deklaration  
 
-So fügen Sie einem `text-shadow` Element eine Deklaration hinzu:  
+Führen Sie die folgenden Aktionen aus, um einem Element eine Deklaration hinzuzufügen `text-shadow` .  
 
 1.  Zeigen Sie mit der Maus auf die Stilregel, der Sie die Deklaration hinzufügen möchten `text-shadow` .  
 1.  [Blenden Sie die Symbolleiste " **Weitere Aktionen** " ein](#reveal-the-more-actions-toolbar).  
-1.  Klicken Sie auf **Text** Schatten hinzufügen ![ , um Text Schatten hinzuzufügen ][ImageAddTextShadowIcon] .  
+1.  Wählen Sie **Text Schatten hinzufügen** \ ( ![ Text Schatten hinzufügen ][ImageAddTextShadowIcon] ) aus.  
 
-> ##### Abbildung 25  
-> **Hinzufügen von Text Schatten**  
-> ![Hinzufügen von Text Schatten][ImageAddTextShadow]  
+:::image type="complex" source="../media/css-elements-styles-rule-add-text-shadow.msft.png" alt-text="Hinzufügen von Text Schatten" lightbox="../media/css-elements-styles-rule-add-text-shadow.msft.png":::
+   **Hinzufügen von Text Schatten**  
+:::image-end:::  
 
-### Ändern von Farben mit der Farbauswahl   
+### Ändern von Farben mit der Farbauswahl  
 
 Die **Farbauswahl** bietet eine GUI für Änderungen `color` und `background-color` Deklarationen.  
 
-So öffnen Sie die **Farbauswahl**:  
+Führen Sie die folgenden Aktionen aus, um die **Farbauswahl**zu öffnen.  
 
 1.  [Wählen Sie ein Element aus](#select-an-element).  
 1.  Suchen Sie auf der Registerkarte **Formatvorlagen** nach der `color` `background-color` oder ähnlichen Deklaration, die Sie ändern möchten.  Links vom `color` `background-color` oder ähnlichen Wert befindet sich ein kleines Quadrat, das eine Vorschau der Farbe ist.  
     
     > [!NOTE]
-    > In [Abbildung 26](#figure-26)ist das kleine Quadrat links von `rgba(0, 0, 0, 0.7)` einer Vorschau dieser Farbe.  
+    > In der folgenden Abbildung ist das kleine Quadrat links von `rgba(0, 0, 0, 0.7)` einer Vorschau dieser Farbe.  
     
-    > ##### Abbildung 26  
-    > Farbvorschau  
-    > ![Farbvorschau][ImageColorPreview]  
+    :::image type="complex" source="../media/css-elements-styles-rule-overlay-color-box.msft.png" alt-text="Farbvorschau" lightbox="../media/css-elements-styles-rule-overlay-color-box.msft.png":::
+       Farbvorschau  
+    :::image-end:::  
     
-1.  Klicken Sie auf die Vorschau, um die **Farbauswahl**zu öffnen.  
+1.  Wählen Sie die Vorschau aus, um die **Farbauswahl**zu öffnen.  
     
-    > ##### Abbildung 27  
-    > Die **Farbauswahl**  
-    > ![Die Farbauswahl][ImageColorPicker]  
+    :::image type="complex" source="../media/css-elements-styles-rule-color-picker.msft.png" alt-text="Die Farbauswahl" lightbox="../media/css-elements-styles-rule-color-picker.msft.png":::
+       Die **Farbauswahl**  
+    :::image-end:::  
     
-Nachfolgend finden Sie eine Beschreibung der einzelnen UI-Elemente der **Farbauswahl**:  
+Die folgende Abbildung und Listen beschreibt der einzelnen UI-Elemente der **Farbauswahl**.  
 
-> ##### Abbildung 28  
-> Die Farbauswahl mit Anmerkungen  
-> ![Die Farbauswahl mit Anmerkungen][ImageColorPickerAnnotated]  
+:::image type="complex" source="../media/css-elements-styles-rule-color-picker-annotated.msft.png" alt-text="Die Farbauswahl mit Anmerkungen" lightbox="../media/css-elements-styles-rule-color-picker-annotated.msft.png":::
+   Die **Farbauswahl**mit Anmerkungen  
+:::image-end:::  
 
-1.  **Schattierungen**.  
-1.  **Pipette**.  Sehen Sie sich das [Beispiel einer Farbe auf der Seite mit der Pipette an](#sample-a-color-off-the-page-with-the-eyedropper).  
-1.  **In die Zwischenablage kopieren**  Kopieren Sie den **Anzeigewert** in Ihre Zwischenablage.  
-1.  **Anzeigewert**.  Die RGBA-, HSLA-oder Hex-Darstellung der Farbe.  
-1.  **Farb Palette**  Klicken Sie auf eines dieser Quadrate, um die Farbe in das Quadrat zu ändern.  
-1.  **Farbton**aus.  
-1.  **Deckkraft**.  
-1.  **Anzeigen des Wert Umschalters**  Wechseln zwischen den RGBA-, HSLA-und Hex-Darstellungen der aktuellen Farbe  
-1.  **Farbpaletten-Switcher**  Wechseln zwischen der [Material Design Palette][MaterialDesignColorSystem], einer benutzerdefinierten Palette oder einer Seitenfarben-Palette  DevTools generiert die Seiten Farbpalette basierend auf den Farben, die in ihren Stylesheets gefunden werden.  
+:::row:::
+   :::column span="1":::
+      1  
+   :::column-end:::
+   :::column span="1":::
+      **Schattierungen**  
+   :::column-end:::
+   :::column span="2":::
+      &nbsp;  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      2  
+   :::column-end:::
+   :::column span="1":::
+      **Pipette**  
+   :::column-end:::
+   :::column span="2":::
+      Weitere Informationen finden Sie unter [Beispiel für eine Farbe außerhalb der Seite mit der Pipette](#sample-a-color-off-the-page-with-the-eyedropper).  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      3  
+   :::column-end:::
+   :::column span="1":::
+      **In Zwischenablage kopieren**  
+   :::column-end:::
+   :::column span="2":::
+      Kopieren Sie den **Anzeigewert** in Ihre Zwischenablage.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      4  
+   :::column-end:::
+   :::column span="1":::
+      **Anzeigewert**  
+   :::column-end:::
+   :::column span="2":::
+      Die RGBA-, HSLA-oder Hex-Darstellung der Farbe.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      5  
+   :::column-end:::
+   :::column span="1":::
+      **Farb Palette**  
+   :::column-end:::
+   :::column span="2":::
+      Wählen Sie eines der Quadrate aus, um die Farbe in das Quadrat zu ändern.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      6  
+   :::column-end:::
+   :::column span="1":::
+      **Farbton**  
+   :::column-end:::
+   :::column span="2":::
+      &nbsp;  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      7  
+   :::column-end:::
+   :::column span="1":::
+      **Opacity**  
+   :::column-end:::
+   :::column span="2":::
+      &nbsp;  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      8  
+   :::column-end:::
+   :::column span="1":::
+      **Anzeigewert-Umschalter**  
+   :::column-end:::
+   :::column span="2":::
+      Wechseln zwischen den RGBA-, HSLA-und Hex-Darstellungen der aktuellen Farbe  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      9  
+   :::column-end:::
+   :::column span="1":::
+      **Farbpaletten-Umschalter**  
+   :::column-end:::
+   :::column span="2":::
+      Wechseln zwischen der [Material Design Palette][MaterialDesignColorSystem], einer benutzerdefinierten Palette oder einer Seitenfarben-Palette  DevTools generiert die Seiten Farbpalette basierend auf den Farben, die in ihren Stylesheets gefunden werden.  
+   :::column-end:::
+:::row-end:::  
 
-#### Beispiel für eine Farbe auf der Seite mit der Pipette   
+#### Beispiel für eine Farbe auf der Seite mit der Pipette  
 
-Wenn Sie die **Farbauswahl**öffnen, ist **die Pipette** ![ ][ImageEyedropperIcon] standardmäßig aktiviert.  So ändern Sie die ausgewählte Farbe auf eine andere Farbe auf der Seite:  
+Wenn Sie die **Farbauswahl**öffnen, ist die **Pipette** (Pipette ![ ][ImageEyedropperIcon] ) standardmäßig aktiviert.  Führen Sie die folgenden Aktionen aus, um die ausgewählte Farbe auf eine andere Farbe auf der Seite zu ändern.  
 
 1.  Zeigen Sie mit der Maus auf die Zielfarbe im Viewport.  
-1.  Klicken Sie, um zu bestätigen.  
+1.  Wählen Sie aus, um zu bestätigen.  
     
     > [!NOTE]
-    > In [Abbildung 29](#figure-29)zeigt die **Farbauswahl** einen aktuellen Farbwert von, der sich in der `rgba(0,0,0,0.7)` Nähe von schwarz befindet.  Diese Farbe sollte auf das Schwarz geändert werden, das aktuell im Viewport hervorgehoben ist, nachdem auf das schwarze geklickt wurde.  
+    > In der folgenden Abbildung zeigt die **Farbauswahl** einen aktuellen Farbwert von, der sich in der `rgba(0,0,0,0.7)` Nähe von schwarz befindet.  Die spezifische Farbe sollte auf die Version von Schwarz geändert werden, die aktuell im Viewport hervorgehoben ist, nachdem Sie Sie ausgewählt haben.  
     
-    > ##### Abbildung 29  
-    > Verwenden der Pipette  
-    > ![Verwenden der Pipette][ImageUsingEyedropper]  
+    :::image type="complex" source="../media/css-color-picker-eye-dropper.msft.png" alt-text="Verwenden der Pipette" lightbox="../media/css-color-picker-eye-dropper.msft.png":::
+       Verwenden der Pipette  
+    :::image-end:::  
     
- 
-
-
-
 <!-- image links -->  
 
-[ImageAddBackgroundColorIcon]: /microsoft-edge/devtools-guide-chromium/media/add-background-color-icon.msft.png  
-[ImageAddBoxShadowIcon]: /microsoft-edge/devtools-guide-chromium/media/add-box-shadow-icon.msft.png  
-[ImageAddColorIcon]: /microsoft-edge/devtools-guide-chromium/media/add-color-icon.msft.png  
-[ImageAddTextShadowIcon]: /microsoft-edge/devtools-guide-chromium/media/add-text-shadow-icon.msft.png  
-[ImageEyedropperIcon]: /microsoft-edge/devtools-guide-chromium/media/eyedropper-icon.msft.png  
-[ImageNewStyleRuleIcon]: /microsoft-edge/devtools-guide-chromium/media/new-style-rule-icon.msft.png  
-[ImageRefreshIcon]: /microsoft-edge/devtools-guide-chromium/media/refresh-icon.msft.png  
-[ImageSelectAnElementIcon]: /microsoft-edge/devtools-guide-chromium/media/select-an-element-icon.msft.png  
-
-[ImageSelectedElement]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-h1.msft.png "Abbildung 1: ein Beispiel für ein ausgewähltes Element"  
-[ImageViewRuleStylesheet]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-h1-highlight.msft.png "Abbildung 2: Anzeigen des Stylesheets, in dem eine Regel definiert ist"  
-[ImageComputedTab]: /microsoft-edge/devtools-guide-chromium/media/css-elements-computed-h1.msft.png "Abbildung 3: die Registerkarte "berechnet""  
-[ImageBoxModel]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-h1-2.msft.png "Abbildung 4: das Diagramm des Feld Modells"  
-[ImageStylesFilter]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-filter-color.msft.png "Abbildung 5: Filtern der Registerkarte "Formatvorlagen""  
-[ImageComputerFilter]: /microsoft-edge/devtools-guide-chromium/media/css-elements-computed-filter-100.msft.png "Abbildung 6: Filtern der berechneten Registerkarte"  
-[ImagePseudoClass]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-hov-hover.msft.png "Abbildung 7: Umschalten der: hover-Pseudoklasse"  
-[ImageCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/css-console-command-menu-coverage.msft.png "Abbildung 8: Öffnen der Registerkarte Coverage über das Befehlsmenü"  
-[ImageCoverageEmpty]: /microsoft-edge/devtools-guide-chromium/media/css-console-qs-coverage-empty.msft.png "Abbildung 9: Registerkarte "Coverage""  
-[ImageCoverageOverview]: /microsoft-edge/devtools-guide-chromium/media/css-console-qs-coverage-run.msft.png "Abbildung 10: eine Übersicht darüber, wie viel CSS (und JavaScript) verwendet und nicht verwendet wird"  
-[ImageCoverageDetail]: /microsoft-edge/devtools-guide-chromium/media/css-sources-css-coverage.msft.png "Abbildung 11: eine Zeile-für-Zeile-Aufteilung der verwendeten und nicht verwendeten CSS"  
-[ImageInlineDeclarations]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-margin-top-background-color.msft.png "Abbildung 12: Hinzufügen von Inline Deklarationen"  
-[ImageAddDeclarationExistingRule]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-border-bottom-style.msft.png "Abbildung 13: Hinzufügen einer Deklaration zu einer Formatvorlagenregel"  
-[ImageAddDeclarationExistingRule2]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-border-bottom-style-dropdown.msft.png "Abbildung 14: Ändern des Werts einer Deklaration"  
-[ImageElementClasses]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-filter-classes.msft.png "Abbildung 15: Bereich "Element Klassen""  
-[ImageStyleRule]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-style-new.msft.png "Abbildung 16: Hinzufügen einer neuen Stilregel"  
-[ImageChooseStylesheet]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-style-new-select-exisiting.msft.png "Abbildung 17: Auswählen eines Stylesheets"  
-[ImageInsertStyleRuleBelow]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-insert-style-rule-below.msft.png "Abbildung 18: Einfügen einer Stilregel nach unten"  
-[ImageRevealMore]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-new-rule-styles.msft.png "Abbildung 19: aufdecken weiterer Aktionen"  
-[ImageInsertStyleRuleBelow2]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png "Abbildung 20: die Symbolleiste "Weitere Aktionen""  
-[ImageToggleDeclaration]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-rule-deactivated.msft.png "Abbildung 21: Umschalten einer Deklaration"  
-[ImageAddBackgroundColor]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-rule-add-background-color.msft.png "Abbildung 22: Hinzufügen einer Hintergrundfarbe"  
-[ImageAddColor]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-rule-add-color.msft.png "Abbildung 23: Hinzufügen von Farben"  
-[ImageAddBoxShadow]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-rule-add-box-shadow.msft.png "Abbildung 24: Hinzufügen eines Feld Schattens"  
-[ImageAddTextShadow]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-rule-add-text-shadow.msft.png "Abbildung 25: Hinzufügen von Text Schatten"  
-[ImageColorPreview]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-rule-overlay-color-box.msft.png "Abbildung 26: Farbvorschau"  
-[ImageColorPicker]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-rule-color-picker.msft.png "Abbildung 27: die Farbauswahl"  
-[ImageColorPickerAnnotated]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-rule-color-picker-annotated.msft.png "Abbildung 28: die Farbauswahl mit Anmerkungen"  
-[ImageUsingEyedropper]: /microsoft-edge/devtools-guide-chromium/media/css-color-picker-eye-dropper.msft.png "Abbildung 29: Verwenden der Pipette"  
+[ImageAddBackgroundColorIcon]: ../media/add-background-color-icon.msft.png  
+[ImageAddBoxShadowIcon]: ../media/add-box-shadow-icon.msft.png  
+[ImageAddColorIcon]: ../media/add-color-icon.msft.png  
+[ImageAddTextShadowIcon]: ../media/add-text-shadow-icon.msft.png  
+[ImageEyedropperIcon]: ../media/eyedropper-icon.msft.png  
+[ImageNewStyleRuleIcon]: ../media/new-style-rule-icon.msft.png  
+[ImageRefreshIcon]: ../media/refresh-icon.msft.png  
+[ImageSelectAnElementIcon]: ../media/select-an-element-icon.msft.png  
 
 <!-- links -->  
 
-[DevToolsCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Ausführen von Befehlen mit dem Befehlsmenü von Microsoft Edge devtools"  
-[DevToolsCSSGetStarted]: /microsoft-edge/devtools-guide-chromium/css/index "Erste Schritte beim Anzeigen und Ändern von CSS"  
-[DevToolsCSSGetStartedAddPseudoState]: /microsoft-edge/devtools-guide-chromium/css/index#add-a-pseudostate-to-a-class "Hinzufügen eines PseudoState zu einer Klasse – erste Schritte mit dem anzeigen und Ändern von CSS"  
-[DevToolsCSSGetStartedTutorial]: /microsoft-edge/devtools-guide-chromium/css/index#view-the-css-for-an-element "Anzeigen der CSS für ein Element – erste Schritte mit dem anzeigen und Ändern von CSS"  
-[DevToolsCssPrintPreview]: /microsoft-edge/devtools-guide-chromium/css/print-preview "Erzwingen von Microsoft Edge devtools in den Druckvorschau Modus (CSS-Druckmedientyp)"  
-[DevToolsJavascriptReferenceFormat]: /microsoft-edge/devtools-guide-chromium/javascript/reference#make-a-minified-file-readable "Erstellen einer minimierte-Datei lesbar-JavaScript-Debug-Referenz"  
+[DevToolsCommandMenu]: ../command-menu/index.md "Ausführen von Befehlen mit dem Befehlsmenü von Microsoft Edge devtools | Microsoft docs"  
+[DevToolsCSSGetStarted]: ../css/index.md "Erste Schritte mit dem anzeigen und Ändern von CSS | Microsoft docs"  
+[DevToolsCSSGetStartedAddPseudoState]: ../css/index.md#add-a-pseudostate-to-a-class "Hinzufügen eines PseudoState zu einer Klasse – erste Schritte mit dem anzeigen und Ändern von CSS | Microsoft docs"  
+[DevToolsCSSGetStartedTutorial]: ../css/index.md#view-the-css-for-an-element "Anzeigen der CSS für ein Element – erste Schritte mit dem anzeigen und Ändern von CSS | Microsoft docs"  
+[DevToolsCssPrintPreview]: ../css/print-preview.md "Erzwingen von Microsoft Edge devtools in den Druckvorschau Modus (CSS-Druckmedientyp) | Microsoft docs"  
+[DevToolsJavascriptReferenceFormat]: ../javascript/reference.md#make-a-minified-file-readable "Erstellen einer minimierte-Datei lesbar – JavaScript-Debug-Referenz | Microsoft docs"  
 
 [MaterialDesignColorSystem]: https://material.io/guidelines/style/color.html#color-color-palette "Das Farbsystem – Material Design"  
 [MDNBoxModel]: https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS/Box_model "Das Feld Modell | MDN"  

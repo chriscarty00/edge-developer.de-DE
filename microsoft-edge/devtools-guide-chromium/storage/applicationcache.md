@@ -2,16 +2,16 @@
 title: Anzeigen von Anwendungs Cache Daten mit Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/30/2020
+ms.date: 08/14/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: 6ce3087e9c719efbcf4d9ebceb860edd0ed0c3b6
-ms.sourcegitcommit: ad68bfbb355f6cfdaaf6612b77ea3985d4d6a58b
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+ms.openlocfilehash: fc1800fc54e5fb0d7998c62ce163ece7a461dd82
+ms.sourcegitcommit: 054ad92f0b8f9a15da1e3aed32e8f4379b10860f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "10612095"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "10931211"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,32 +27,26 @@ ms.locfileid: "10612095"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Anzeigen von Anwendungs Cache Daten mit Microsoft Edge devtools   
-
-
+# Anzeigen von Anwendungs Cache Daten mit Microsoft Edge devtools  
 
 > [!WARNING]
 > Die Anwendungs Cache-API wird [aus der Web-Plattform entfernt][HTMLStandardOfflineWebApplications].  
 
 Dieser Leitfaden zeigt Ihnen, wie Sie [Microsoft Edge devtools][MicrosoftEdgeDevTools] verwenden, um [Anwendungs Cache][MDNWebAPIsWindowApplicationCache] Ressourcen zu überprüfen.  
 
-## Anzeigen von Anwendungs Cache Daten   
+## Anzeigen von Anwendungs Cache Daten  
 
 1.  Wählen Sie die Registerkarte **Quellen** aus, um das **Quellen** Panel zu öffnen.  Der Bereich **Manifest** wird normalerweise standardmäßig geöffnet.  
     
-    > ##### Abbildung1  
-    > Bereich ' Manifest '  
-    > ![Bereich ' Manifest '][ImageManifestPane]  
+    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="Bereich ' Manifest '" lightbox="../media/storage-application-manifest.msft.png":::
+       Bereich ' **Manifest** '  
+    :::image-end:::  
 
-1.  Erweitern Sie den Abschnitt **Anwendungscache** , und klicken Sie auf einen Cache, um die Ressourcen anzuzeigen.  
+1.  Erweitern Sie den Abschnitt **Anwendungscache** , und wählen Sie einen Cache aus, um die Ressourcen anzuzeigen.  
     
-    > ##### Abbildung2  
-    > Der Anwendungs Cache Bereich  
-    > ![Der Anwendungs Cache Bereich][ImageApplicationCachePane]  
+    :::image type="complex" source="../media/storage-cache-pane-cache-storage-resources.msft.png" alt-text="Der Anwendungs Cache Bereich" lightbox="../media/storage-cache-pane-cache-storage-resources.msft.png":::
+       Der **Anwendungs Cache** Bereich  
+    :::image-end:::  
 
 Jede Zeile der Tabelle stellt eine zwischengespeicherte Ressource dar.  
 
@@ -62,10 +56,12 @@ Die Spalte **Typ** steht [für die Kategorie der Ressource][MDNHTMLResourcesInAn
 |:--- |:--- |  
 | `Explicit` | Diese Ressource wurde explizit im Manifest aufgeführt. |  
 | `Fallback` | Die URL ist ein Fallback für eine andere Ressource.  Die URL der anderen Ressource ist in devtools nicht aufgeführt. |  
-| `Master` | Das `manifest` Attribut für die Ressource hat angegeben, dass dieser Cache das übergeordnete Element der Ressource ist. |  
-| `Network` | Das Manifest hat angegeben, dass diese Ressource aus dem Netzwerk stammen muss. |  
+| `Master` | Das `manifest` Attribut der Ressource gibt an, dass der Cache das übergeordnete Element der Ressource ist. |  
+| `Network` | Das Manifest hat angegeben, dass die Ressource aus dem Netzwerk stammen muss. |  
 
-Am unteren Rand der Tabelle befinden sich Statussymbole, die Ihre Netzwerkverbindung und den Status des Anwendungscaches angeben.  Der Anwendungs Cache kann die folgenden Zustände aufweisen.  
+<!--todo:  replace "Master" phrasing if possible.  -->  
+
+Am unteren Rand der Tabelle befinden sich Statussymbole, die Ihre Netzwerkverbindung und den Status des **Anwendungscaches**angeben.  Der **Anwendungs Cache** kann die folgenden Zustände aufweisen.  
 
 | Status | Details |  
 |:--- |:--- |  
@@ -75,18 +71,9 @@ Am unteren Rand der Tabelle befinden sich Statussymbole, die Ihre Netzwerkverbin
 | `OBSOLETE` | Der Cache wird gelöscht. |  
 | `UPDATEREADY` |  Eine neue Version des Caches ist verfügbar. |  
 
-<!--   -->  
-
-
-
-<!-- image links -->  
-
-[ImageManifestPane]: /microsoft-edge/devtools-guide-chromium/media/storage-application-manifest.msft.png "Abbildung 1: der Bereich "Manifest""  
-[ImageApplicationCachePane]: /microsoft-edge/devtools-guide-chromium/media/storage-cache-pane-cache-storage-resources.msft.png "Abbildung 2: Anwendungs Cache Bereich"  
-
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chrom)-Entwickler Tools"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chrom)-Entwickler Tools | Microsoft docs"  
 
 [HTMLStandardOfflineWebApplications]: https://html.spec.whatwg.org/multipage/offline.html#offline "Offline-Webanwendungen – HTML-Standard"  
 

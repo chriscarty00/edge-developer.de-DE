@@ -2,16 +2,16 @@
 title: Bearbeiten von Dateien mit Arbeitsbereichen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/31/2020
+ms.date: 08/14/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 7cafa2b186d151a478fa532cdac49ae46f2120c3
-ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
+ms.openlocfilehash: 6971dd96a0d2f32700a8d791f7debfc816887387
+ms.sourcegitcommit: 054ad92f0b8f9a15da1e3aed32e8f4379b10860f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "10926542"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "10931231"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -32,15 +32,16 @@ ms.locfileid: "10926542"
 > [!NOTE]
 > Das Ziel dieses Lernprogramms ist es, praktische Übungen beim Einrichten und Verwenden von Arbeitsbereichen bereitzustellen, damit Sie Arbeitsbereiche in ihren eigenen Projekten verwenden können.  Sie können die Änderungen am Quellcode auf dem lokalen Computer, den Sie in devtools vorgenommen haben, nach dem Aktivieren von Arbeitsbereichen speichern.  
 
-> [!CAUTION]
-> **Voraussetzungen**: bevor Sie dieses Lernprogramm starten, sollten Sie wissen, wie Sie:  
+> [!IMPORTANT]
+> **Voraussetzungen**: bevor Sie dieses Lernprogramm starten, sollten Sie wissen, wie die folgenden Aktionen ausgeführt werden.  
+> 
 > *   [Verwenden von HTML, CSS und JavaScript zum Erstellen einer Webseite][MDNWebGettingStarted]  
 > *   [Verwenden von devtools zum vornehmen grundlegender Änderungen an CSS][DevToolsCssIndex]  
 > *   [Ausführen eines lokalen http-Webservers][MDNSimpleLocalHTTPServer]  
 
 ## Übersicht  
 
-Mit Arbeitsbereichen können Sie eine in devtools vorgenommene Änderung auf eine lokale Kopie der gleichen Datei auf Ihrem Computer speichern.  Nehmen wir beispielsweise an:  
+Mit Arbeitsbereichen können Sie eine in devtools vorgenommene Änderung auf eine lokale Kopie der gleichen Datei auf Ihrem Computer speichern.  In diesem Lernprogramm sollten Sie über die folgenden Einstellungen auf Ihrem Computer verfügen.  
 
 *   Sie haben den Quellcode für Ihre Website auf dem Desktop.  
 *   Sie führen einen lokalen Webserver aus dem Quellcodeverzeichnis aus, damit auf die Website zugegriffen werden kann `localhost:8080` .  
@@ -51,9 +52,10 @@ Wenn Arbeitsbereiche aktiviert sind, werden die CSS-Änderungen, die Sie in devt
 ## Einschränkungen  
 
 Wenn Sie ein modernes Framework verwenden, wird der Quellcode wahrscheinlich aus einem Format umgewandelt, das in einem für die Ausführung so schnell wie möglich optimierten Format verwaltet werden kann.  
-Arbeitsbereiche können den optimierten Code normalerweise mit Hilfe von [Quell Karten][TreehouseBlogSourceMaps]Ihrem ursprünglichen Quellcode wieder zuordnen.  Es gibt jedoch viele Unterschiede zwischen Frameworks darüber, wie Sie Quell Karten verwenden.  Devtools unterstützt einfach nicht alle Variationen.  
 
-Arbeitsbereiche funktionieren in diesen Frameworks bekanntermaßen nicht:  
+Arbeitsbereiche können den optimierten Code normalerweise mit Hilfe von [Quell Karten][TreehouseBlogSourceMaps]Ihrem ursprünglichen Quellcode wieder zuordnen.  Es gibt jedoch viele Unterschiede zwischen Frameworks darüber, wie die einzelnen Quell Karten verwendet werden.  Devtools unterstützt einfach alle Variationen.  
+
+Arbeitsbereiche funktionieren bekanntermaßen nicht mit dem folgenden Framework.  
 
 *   Erstellen einer Reaktions-App  
     
@@ -61,13 +63,13 @@ Arbeitsbereiche funktionieren in diesen Frameworks bekanntermaßen nicht:
     
 ## Verwandtes Feature: lokale Überschreibungen  
 
-**Lokale Außerkraftsetzungen** ist ein weiteres devtools-Feature, das mit Arbeitsbereichen vergleichbar ist.  Verwenden Sie lokale Außerkraftsetzungen, wenn Sie mit Änderungen an einer Seite experimentieren möchten, und Sie diese Änderungen über die Seitenlasten hinweg anzeigen müssen, es Ihnen aber nicht wichtig ist, Ihre Änderungen dem Quellcode der Seite zuzuordnen.  
+**Lokale Außerkraftsetzungen** ist ein weiteres devtools-Feature, das mit Arbeitsbereichen vergleichbar ist.  Verwenden Sie lokale Außerkraftsetzungen, wenn Sie mit Änderungen an einer Seite experimentieren möchten, und Sie müssen die Änderungen über die Seitenlasten hinweg anzeigen, aber es ist Ihnen nicht wichtig, Ihre Änderungen dem Quellcode der Seite zuzuordnen.  
 
 <!--Todo: add section when content is ready  -->  
 
 ## Schritt 1: Einrichten  
 
-Führen Sie dieses Lernprogramm aus, um praktische Erfahrungen mit Arbeitsbereichen zu erhalten.  
+Führen Sie die folgenden Aktionen aus, um praktische Erfahrungen mit Arbeitsbereichen zu erhalten.  
 
 ### Einrichten der Demo  
 
@@ -77,17 +79,18 @@ Führen Sie dieses Lernprogramm aus, um praktische Erfahrungen mit Arbeitsbereic
        Ein glitch-Projekt  
     :::image-end:::  
     
-    <!--1.  Choose the project name.  -->
+    <!--1.  Choose the project name.  -->  
     <!--1.  Select **Advanced Options** > **Download Project**.  
     
     :::image type="complex" source="../media/workspaces-glitch-advanced-options-download-project.msft.png" alt-text="The Download Project button" lightbox="../media/workspaces-glitch-advanced-options-download-project.msft.png":::
        The Download Project button  
     :::image-end:::  
-    -->
-    <!--1.  Close the tab.  -->
-    <!--1.  Unzip the source code and move the unzipped `app` directory to your desktop.  For the rest of this tutorial this directory is referred to as `~/Desktop/app`.  -->  
+
+    -->  
+    <!--1.  Close the tab.  -->  
+    <!--1.  Unzip the source code and move the unzipped `app` directory to your desktop.  For the rest of this tutorial the unzipped  directory is referred to as `~/Desktop/app`.  -->  
     
-1.  Erstellen `app` Sie ein Verzeichnis auf dem Desktop.  Speichern Sie Kopien der Dateien im `workspaces-demo` Verzeichnis.  Im weiteren Verlauf dieses Lernprogramms wird dieses Verzeichnis als bezeichnet `~/Desktop/app` .  
+1.  Erstellen `app` Sie ein Verzeichnis auf dem Desktop.  Speichern Sie Kopien der Dateien aus dem `workspaces-demo` Verzeichnis im `app` Verzeichnis.  Für den restlichen Teil des Lernprogramms wird das Verzeichnis als bezeichnet `~/Desktop/app` .  
 1.  Starten Sie einen lokalen Webserver in `~/Desktop/app` .  Nachfolgend finden Sie einige Beispielcodes zum Starten `SimpleHTTPServer` , aber Sie können den von Ihnen bevorzugten Server verwenden.  
     
     :::row:::
@@ -155,13 +158,14 @@ Führen Sie dieses Lernprogramm aus, um praktische Erfahrungen mit Arbeitsbereic
     :::image-end:::  
     
 1.  `styles.css`In einem Text-Editor erneut öffnen.  Die `color` Eigenschaft ist nun auf Ihre Lieblingsfarbe eingestellt.  
-1.  Laden Sie die Seite neu.  Die Farbe des `<h1>` Elements wird weiterhin auf Ihre bevorzugte Farbe festgelegt.  Das funktioniert, weil devtools die Änderung auf dem Datenträger gespeichert hat, wenn Sie die Änderung vorgenommen haben.  Und dann, als Sie die Seite neu geladen haben, diente der lokale Server der geänderten Kopie der Datei vom Datenträger.  
+1.  Aktualisieren Sie die Seite.  Die Farbe des `<h1>` Elements wird weiterhin auf Ihre bevorzugte Farbe festgelegt.  Die Änderung über eine Aktualisierung, denn wenn Sie die Änderung vorgenommen haben, devtools die Änderung auf dem Datenträger gespeichert.  Und dann, wenn Sie die Seite aktualisiert haben, hat der lokale Server die geänderte Kopie der Datei vom Datenträger bereitgestellt.  
     
 ## Schritt 3: Speichern einer HTML-Änderung auf einem Datenträger  
 
 ### Ändern von HTML über das Panel "Elemente"  
 
 Sie können Änderungen am HTML-Code über das Element Panel vornehmen, Ihre Änderungen an der DOM-Struktur werden aber nicht auf dem Datenträger gespeichert und wirken sich nur auf die aktuelle Browsersitzung aus.  
+
 Die DOM-Struktur ist kein HTML-Code.  
 
 <!--### Try changing HTML from the Elements panel  
@@ -170,25 +174,25 @@ Die DOM-Struktur ist kein HTML-Code.
 > The workflow that you are about to try does not work.  You are trying it now so that you do not waste time later trying to figure out why it is not working.  
 
 1.  Choose the **Elements** tab.  
-1.  Double-click the text content of the `h1` element, which says `Workspaces Demo`, and replace it with `I ❤️  Cake`.  
+1.  Choose and edit the text content of the `h1` element, which says `Workspaces Demo`, and replace it with `I ❤️  Cake`.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-change-h1.msft.png" alt-text="Attempting to change HTML from the DOM Tree of the Elements panel" lightbox="../media/workspaces-workspaces-demo-change-h1.msft.png":::
-       Attempting to change HTML from the **DOM Tree** of the **Elements** panel  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-change-h1.msft.png" alt-text="Attempt to change html from the DOM Tree of the Elements panel" lightbox="../media/workspaces-workspaces-demo-change-h1.msft.png":::
+       Attempt to change html from the DOM Tree of the **Elements** panel  
     :::image-end:::  
     
 1.  Open `~/Desktop/app/index.html` in a text editor.  The change that you just made does not appear.  
-1.  Reload the page.  The page reverts to its original title.  
+1.  Refresh the page.  The page reverts to the original title.  
     
 #### Optional: Why it is not working  
 
 > [!NOTE]
-> This section describes why the workflow from [Try changing HTML from the Elements panel](#try-changing-html-from-the-elements-panel) does not work.  You should skip this section if you do not care why.  
+> This section describes why the workflow from [Try changing html from the Elements panel](#try-changing-html-from-the-elements-panel) does not work.  You should skip this section if you do not care why.  
 
 *   The tree of nodes that you see on the **Elements** panel represents the [DOM][MDNWebAPIsDOM] of the page.  
-*   To display a page, a browser fetches HTML over the network, parses the HTML, and then converts it into a tree of DOM nodes.  
+*   To display a page, a browser fetches html over the network, parses the html, and then converts it into a tree of DOM nodes.  
 *   If the page has any JavaScript, that JavaScript may add, delete, or change DOM nodes.  CSS may change the DOM, too, using the [`content`][MDNCSSContent] property.  
 *   The browser eventually uses the DOM to determine what content it should present to browser users.  
-*   Therefore, the final state of the page that users see may be very different from the HTML that the browser fetched.  
+*   Therefore, the final state of the page that users see may be very different from the html that the browser fetched.  
 *   This makes it difficult for DevTools to resolve where a change made in the **Elements** panel should be saved, because the DOM is affected by HTML, JavaScript, and CSS.  
 
 In short, the **DOM Tree** `!==` HTML.  
@@ -203,10 +207,10 @@ Wenn Sie eine Änderung am HTML-Code der Seite speichern möchten, verwenden Sie
 1.  Wählen Sie **(Index)** aus.  Der HTML-Code für die Seite wird geöffnet.  
 1.  Ersetzen Sie `<h1>Workspaces Demo</h1>` durch `<h1>I ❤️  Cake</h1>`.  Sehen Sie sich die folgende Abbildung an.  
 1.  Wählen Sie `Control` + `S` \ (Windows \) oder `Command` + `S` \ (macOS \) aus, um die Änderung zu speichern.  
-1.  Laden Sie die Seite neu.  Das `<h1>` Element zeigt weiterhin den neuen Text an.  
+1.  Aktualisieren Sie die Seite.  Das `<h1>` Element zeigt weiterhin den neuen Text an.  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Ändern von HTML aus dem Quellen Panel" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
-       Zeile 12 wurde auf `I ❤️  Cake`  
+       Zeile 12 ist auf `I ❤️  Cake`  
     :::image-end:::  
     
 1.  Öffnen Sie `~/Desktop/app/index.html`.  Das `<h1>` Element enthält den neuen Text.  
@@ -220,13 +224,13 @@ Der Bereich " **Quellen** " ist auch der Ort, an dem Sie Änderungen an JavaScri
 1.  Geben `QS` Sie ein, und wählen Sie dann **schnell Quelle anzeigen**aus.  Am unteren Rand des devtools-Fensters befindet sich nun eine **schnell Ausgangs** Registerkarte.  Auf der Registerkarte wird der Inhalt von angezeigt `index.html` , die letzte Datei, die Sie im **Quellen** Panel bearbeitet haben.  Auf der Registerkarte " **schnell Quelle** " finden Sie den Editor im **Quellen** Panel, sodass Sie Dateien bearbeiten können, während andere Panels geöffnet sind.  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="Öffnen der Registerkarte "Schnellstart" mithilfe des Befehlsmenüs" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
-       Öffnen der Registerkarte " **schnell** Start" über das **Befehlsmenü**  
+       Öffnen der Registerkarte " **schnell** Start" mithilfe des **Befehlsmenüs**  
     :::image-end:::  
     
 1.  Wählen Sie `Control` + `P` \ (Windows \) oder `Command` + `P` \ (macOS \) aus, um das Dialogfeld **Datei öffnen** zu öffnen.  Sehen Sie sich die folgende Abbildung an.  
 1.  Geben `script` Sie ein, und wählen Sie dann **App/#b0 **aus.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="Öffnen von script.js mit dem Dialogfeld "Datei öffnen"" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="Öffnen von script.js im Dialogfeld "Datei öffnen"" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
        Öffnen `script.js` mithilfe des Dialogfelds " **Datei öffnen** "  
     :::image-end:::  
     
@@ -241,7 +245,7 @@ Der Bereich " **Quellen** " ist auch der Ort, an dem Sie Änderungen an JavaScri
     ```  
     
 1.  Wählen Sie `Control` + `S` \ (Windows \) oder `Command` + `S` \ (macOS \) aus, um die Änderung zu speichern.  
-1.  Laden Sie die Seite neu.  
+1.  Aktualisieren Sie die Seite.  
     
     > [!NOTE]
     > Der Link auf der Seite ist jetzt kursiv formatiert.  
@@ -255,15 +259,15 @@ Der Bereich " **Quellen** " ist auch der Ort, an dem Sie Änderungen an JavaScri
 Verwenden Sie das gelernte in diesem Lernprogramm, um Arbeitsbereiche in Ihrem eigenen Projekt einzurichten.  <!-- If you run into any issues or are able to get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->  
 
 <!--  
-If you have more feedback on these topics or anything else, please use any of the channels below:  
+If you have more feedback on the topics or anything else, please use any of the channels below:  
 
 *   [Mailing List][AlphabetGroupsAlphabetBrowserDevTools]  
 *   [Twitter][TwitterAlphabetBrowserDevTools]  
--->  
+    -->  
 
 <!-- links -->  
 
-[DevToolsCssIndex]: ../css/index.md# "Erste Schritte mit dem anzeigen und Ändern von CSS | Microsoft docs"  
+[DevToolsCssIndex]: ../css/index.md "Erste Schritte mit dem anzeigen und Ändern von CSS | Microsoft docs"  
 
 <!--[LocalOverrides]: ../whats-new/2018/01/devtools#overrides -->  
 
