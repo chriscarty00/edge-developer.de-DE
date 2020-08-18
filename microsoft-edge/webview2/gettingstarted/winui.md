@@ -3,17 +3,17 @@ description: Hosten von Webinhalten in ihrer WinUI-App mit dem Steuerelement "Mi
 title: Microsoft Edge-WebView2 für WinUI-apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2020
+ms.date: 08/17/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, WinUI-apps, WinUI, Edge, CoreWebView2, Browser-Steuerelement, Edge-HTML, erste Schritte, erste Schritte, .net
-ms.openlocfilehash: 5b9bbb4578fc580ddc77680a57b481501e48cda7
-ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
+ms.openlocfilehash: 805655fd27c0b654e1ccb41c615aa21797d6ddf7
+ms.sourcegitcommit: ef6d6adae1f4d18a219fa3e17f91b95b40367a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "10926491"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "10934898"
 ---
 # Erste Schritte mit WebView2 in WinUI3 (Preview)  
 
@@ -26,7 +26,7 @@ Stellen Sie sicher, dass Sie die folgende Liste der Voraussetzungen installieren
 *   Windows 10-Version 1803 \ (Build 17134 \) oder höher  Weitere Informationen finden Sie unter [Windows Update: häufig gestellte Fragen (FAQ][MicrosoftSupport12373]).  
 *   [Microsoft Edge (Chrom) Canary Channel][MicrosoftedgeinsiderDownload] unter Windows 10, Windows 8,1 oder Windows 7.  
 *   Visual Studio 2019, Version 16,7 Preview 1  Weitere Informationen finden Sie unter [Windows-UI-Bibliothek 3 Preview 2 (Juli 2020)][WindowsAppsWinui3ConfigureYourDevEnvironment].  
-*   Sowohl die [x64][WindowsDotnetcliBlobCoreSdk50100Preview4202681X86] -als auch die [x86][WindowsDotnetcliBlobCoreSdk50100Preview4202681X64] -Version von .net 5 Preview 4.  
+*   Sowohl die [x64][WindowsDotnetcliBlobCoreSdk50100Preview4202681X64] -als auch die [x86][WindowsDotnetcliBlobCoreSdk50100Preview4202681X86] -Version von .net 5 Preview 4.  
 *   [WinUI 3-Projektvorlagen][VisualstudioMarketplaceWinUiprojecttemplates] Erweiterung für Visual Studio 2019.  
 Stellen Sie sicher, dass Sie den [Entwicklermodus aktivieren][WindowsUwpGetStartedEnableYourDeviceForDevelopment] , um sicherzustellen, dass Sie auf alle Features von Visual Studio zugreifen können.  
 
@@ -190,8 +190,10 @@ Anwendungen, die WebView2-Steuerelemente hosten, lauschen den folgenden Ereignis
 *   `ContentLoading`  
 *   `HistoryChanged`  
 *   `NavigationCompleted`  
+
 > [!NOTE]
 > HTTP-Umleitungen lösen mehrere `NavigationStarting` Ereignisse aus.  
+
 Weitere Informationen finden Sie unter [Navigationsereignisse][Webviews2ConceptsNavigationEvents].  
 
 Wenn Fehler auftreten, werden die folgenden Ereignisse ausgelöst und möglicherweise zu einer Fehlerseite navigiert.  
@@ -199,10 +201,8 @@ Wenn Fehler auftreten, werden die folgenden Ereignisse ausgelöst und möglicher
 *   `SourceChanged`  
 *   `ContentLoading`  
 *   `HistoryChanged`  
-    
-
+     
 Als ein Beispiel für die Verwendung der Ereignisse registrieren Sie einen Handler, der `NavigationStarting` alle Anforderungen abbricht, die kein HTTPS verwenden. Ändern Sie in `MainWindow.xaml.cs` den Konstruktor, um `EnsureHttps` ihn zu registrieren, und fügen Sie die `EnsureHttps` Funktion so hinzu, dass Sie dem folgenden Codeausschnitt entspricht.  
-
 
 ```csharp
 public MainWindow()
@@ -294,8 +294,8 @@ Weitere Informationen zu den WebView2-Funktionen finden Sie unter [WebView2-Konz
 
 [MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Herunterladen von Microsoft Edge-Insider Kanälen"  
 
-[WindowsDotnetcliBlobCoreSdk50100Preview4202681X86]: https://dotnetcli.blob.core.windows.net/dotnet/Sdk/5.0.100-preview.4.20268.1/dotnet-sdk-5.0.100-preview.4.20268.1-win-x86.exe "dotnet-sdk-5.0.100-preview.4.20268.1-win-x86.exeherunterladen"  
+[WindowsDotnetcliBlobCoreSdk50100Preview4202681X86]: https://dotnetcli.blob.core.windows.net/dotnet/Sdk/5.0.100-preview.4.20268.1/dotnet-sdk-5.0.100-preview.4.20268.1-win-x86.exe "dotnet-sdk-5.0.100-preview.4.20268.1-win-x86.exeherunterladen "  
 
-[WindowsDotnetcliBlobCoreSdk50100Preview4202681X64]: https://dotnetcli.blob.core.windows.net/dotnet/Sdk/5.0.100-preview.4.20268.1/dotnet-sdk-5.0.100-preview.4.20268.1-win-x64.exe "dotnet-sdk-5.0.100-preview.4.20268.1-win-x64.exe"  
+[WindowsDotnetcliBlobCoreSdk50100Preview4202681X64]: https://dotnetcli.blob.core.windows.net/dotnet/Sdk/5.0.100-preview.4.20268.1/dotnet-sdk-5.0.100-preview.4.20268.1-win-x64.exe " dotnet-sdk-5.0.100-preview.4.20268.1-win-x64.exe"  
 
 [VisualstudioMarketplaceWinUiprojecttemplates]: https://marketplace.visualstudio.com/items?itemName=Microsoft-WinUI.WinUIProjectTemplates "WinUI 3-Projektvorlagen"  
