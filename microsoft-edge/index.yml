@@ -8,14 +8,14 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 07/10/2020
+  ms.date: 08/20/2020
   ms.localizationpriority: high
-  ms.openlocfilehash: 979a1a67291e7d0859b8978f32bdbe1e17bf27f6
-  ms.sourcegitcommit: 1e33cd41e5afb2e6dbdc19353011ff6c2b019f9c
+  ms.openlocfilehash: 90d7547ebe6bde883a10826ea132d5d2050e3066
+  ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 07/13/2020
-  ms.locfileid: "10866057"
+  ms.lasthandoff: 08/20/2020
+  ms.locfileid: "10942204"
 highlightedContent:
   items:
   - title: Herunterladen von Microsoft Edge (Official stable Channel)
@@ -148,7 +148,7 @@ conceptualContent:
       text: Tastenkombinationen
   - title: Testen der & Automatisierung
     links:
-    - text: Bedienungshilfen
+    - text: Barrierefreiheit
       itemType: reference
       url: /microsoft-edge/accessibility
     - text: DevTools Protocol (Chromium)
@@ -273,9 +273,9 @@ additionalContent:
         url: /microsoft-edge/windows-runtime
   - title: Hilfe & Support
     items:
-    - title: Community-Support
-      summary: Holen Sie sich Ratschläge und Antworten von einer Experten-Community über StackOverflow.
-      url: https://stackoverflow.com/questions/tagged/microsoft-edge+Microsoft-edge-extension
+    - title: Community-Unterstützung für Microsoft Q&A
+      summary: Erhalten von Ratschlägen und Antworten von Community-Experten zu Microsoft Q&A
+      url: /answers/topics/ms-edge.html
     - title: Erhalten Sie kostengünstige Hilfe über die APP-Gewährleistung
       summary: Microsoft verpflichtet sich, sicherzustellen, dass Ihre apps auf Microsoft Edge funktionieren.  Wenn Sie Probleme mit Ihren Geschäftsanwendungen oder Websites in der neuesten Version von Edge haben, hilft Microsoft Ihnen, diese ohne zusätzliche Kosten zu beheben. Informationen zu den Teilnahmebedingungen finden Sie unter Angebotsdetails.
       url: https://aka.ms/AppAssureEdge
