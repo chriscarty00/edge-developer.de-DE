@@ -1,7 +1,7 @@
 ---
-title: Windows-Runtime-DateTime-und TimeSpan-Darstellungen
+title: DateTime- und TimeSpan-Darstellungen in Windows Runtime
 ms.custom: ''
-ms.date: 04/01/2020
+ms.date: 07/29/2020
 ms.prod: microsoft-edge
 ms.reviewer: ''
 ms.suite: ''
@@ -17,30 +17,30 @@ caps.latest.revision: 9
 author: MSEdgeTeam
 ms.author: msedgedevrel
 manager: ''
-ms.openlocfilehash: d3e138493b80face1238118a99c03f6015a6a8ef
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 1c51bba74bb7e5182eb25342badcae848eeba339
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10568708"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10942056"
 ---
-# <span data-ttu-id="68188-102">Windows-Runtime-DateTime-und TimeSpan-Darstellungen</span><span class="sxs-lookup"><span data-stu-id="68188-102">Windows Runtime DateTime and TimeSpan Representations</span></span>  
+# <span data-ttu-id="4a22c-102">Windows-Runtime-DateTime-und TimeSpan-Darstellungen</span><span class="sxs-lookup"><span data-stu-id="4a22c-102">Windows Runtime DateTime and TimeSpan representations</span></span>  
 
-<span data-ttu-id="68188-103">Die JavaScript-Darstellung von Datums-und Uhrzeitangaben unterscheidet sich von der Windows-Runtime-Version.</span><span class="sxs-lookup"><span data-stu-id="68188-103">The JavaScript representation of dates and times is different from the Windows Runtime version.</span></span>  <span data-ttu-id="68188-104">Die Windows-Runtime- [DateTime][UwpWindowsFoundationDatetime] -Struktur wird in JavaScript als ein [Datum][MDNDate] mit einem Sicherungsspeicher dargestellt, der den `DateTime` Daten entspricht \ (und hat einen anderen Bereich und eine andere Genauigkeit als JavaScript `Date` \).</span><span class="sxs-lookup"><span data-stu-id="68188-104">The Windows Runtime [DateTime][UwpWindowsFoundationDatetime] structure is represented in JavaScript as a [Date][MDNDate] that has a backing store that matches the `DateTime` data \(and has a different range and precision from the JavaScript `Date`\).</span></span>  <span data-ttu-id="68188-105">Wenn Sie dieses benutzerdefinierte `Date` Objekt ändern, wird es zu einem Standard `Date` -JavaScript und verliert die Genauigkeit.</span><span class="sxs-lookup"><span data-stu-id="68188-105">If you modify this custom `Date` object, it becomes a standard JavaScript `Date` and loses precision.</span></span>  <span data-ttu-id="68188-106">JavaScript `Date` -Werte können an eine Windows-Runtime übergeben werden `DateTime` und werden bereichsübergreifend überprüft, was zum Marshalling von Ausnahmen führen kann.</span><span class="sxs-lookup"><span data-stu-id="68188-106">JavaScript `Date` values can be passed to a Windows Runtime `DateTime` and will be range-checked, which might result in marshaling exceptions.</span></span>  
+[!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
 
- <span data-ttu-id="68188-107">Die Windows-Runtime- [TimeSpan][UwpWindowsFoundationTimespan] -Struktur wird in Millisekunden konvertiert und als JavaScript-Zahl zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="68188-107">The Windows Runtime [TimeSpan][UwpWindowsFoundationTimespan] structure is converted to milliseconds and returned as a JavaScript number.</span></span>  
+<span data-ttu-id="4a22c-103">Die JavaScript-Darstellung von Datums-und Uhrzeitangaben unterscheidet sich von der Windows-Runtime-Version.</span><span class="sxs-lookup"><span data-stu-id="4a22c-103">The JavaScript representation of dates and times is different from the Windows Runtime version.</span></span>  <span data-ttu-id="4a22c-104">Die Windows-Runtime- [DateTime][UwpWindowsFoundationDatetime] -Struktur wird in JavaScript als ein [Datum][MDNDate] mit einem Sicherungsspeicher dargestellt, der den `DateTime` Daten entspricht \ (und hat einen anderen Bereich und eine andere Genauigkeit als JavaScript `Date` \).</span><span class="sxs-lookup"><span data-stu-id="4a22c-104">The Windows Runtime [DateTime][UwpWindowsFoundationDatetime] structure is represented in JavaScript as a [Date][MDNDate] that has a backing store that matches the `DateTime` data \(and has a different range and precision from the JavaScript `Date`\).</span></span>  <span data-ttu-id="4a22c-105">Wenn Sie dieses benutzerdefinierte `Date` Objekt ändern, wird es zu einem Standard `Date` -JavaScript und verliert die Genauigkeit.</span><span class="sxs-lookup"><span data-stu-id="4a22c-105">If you modify this custom `Date` object, it becomes a standard JavaScript `Date` and loses precision.</span></span>  <span data-ttu-id="4a22c-106">JavaScript `Date` -Werte können an eine Windows-Runtime übergeben werden `DateTime` und werden bereichsübergreifend überprüft, was zum Marshalling von Ausnahmen führen kann.</span><span class="sxs-lookup"><span data-stu-id="4a22c-106">JavaScript `Date` values can be passed to a Windows Runtime `DateTime` and will be range-checked, which might result in marshaling exceptions.</span></span>  
 
-## <span data-ttu-id="68188-108">Weitere Informationen</span><span class="sxs-lookup"><span data-stu-id="68188-108">See Also</span></span>  
+ <span data-ttu-id="4a22c-107">Die Windows-Runtime- [TimeSpan][UwpWindowsFoundationTimespan] -Struktur wird in Millisekunden konvertiert und als JavaScript-Zahl zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="4a22c-107">The Windows Runtime [TimeSpan][UwpWindowsFoundationTimespan] structure is converted to milliseconds and returned as a JavaScript number.</span></span>  
 
-[<span data-ttu-id="68188-109">Verwenden der Windows-Runtime in JavaScript</span><span class="sxs-lookup"><span data-stu-id="68188-109">Using the Windows Runtime in JavaScript</span></span>][WindowsRuntimeJavascript]  
+## <span data-ttu-id="4a22c-108">Weitere Informationen</span><span class="sxs-lookup"><span data-stu-id="4a22c-108">See also</span></span>  
 
-<!-- image links -->  
+[<span data-ttu-id="4a22c-109">Verwenden der Windows-Runtime in JavaScript</span><span class="sxs-lookup"><span data-stu-id="4a22c-109">Using the Windows Runtime in JavaScript</span></span>][WindowsRuntimeJavascript]  
 
 <!-- links -->  
 
-[WindowsRuntimeJavascript]: /microsoft-edge/windows-runtime/using-the-windows-runtime-in-javascript "Verwenden der Windows-Runtime in JavaScript"  
+[WindowsRuntimeJavascript]: ./using-the-windows-runtime-in-javascript.md "Verwenden der Windows-Runtime in JavaScript | Microsoft docs"  
 
-[UwpWindowsFoundationDatetime]: /uwp/api/Windows.Foundation.DateTime "DateTime-Struktur"  
-[UwpWindowsFoundationTimespan]: /uwp/api/windows.foundation.timespan "TimeSpan-Struktur"  
+[UwpWindowsFoundationDatetime]: /uwp/api/Windows.Foundation.DateTime "DateTime-Struktur | Microsoft docs"  
+[UwpWindowsFoundationTimespan]: /uwp/api/windows.foundation.timespan "TimeSpan-Struktur | Microsoft docs"  
 
 [MDNDate]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date "Datum | MDN"  
