@@ -2,16 +2,16 @@
 title: Neuerungen in devtools (Microsoft Edge 80)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/20/2020
+ms.date: 07/30/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: ac85f0d9f8a5f112e702968b9c0aeceb05312ac1
-ms.sourcegitcommit: 7e3a876ccb1f0ff3d50d4e32f03af98f780e2930
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+ms.openlocfilehash: 03fd78eddf54b68d072ba11401a897ad9f109058
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "10591391"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10942146"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,16 +27,7 @@ ms.locfileid: "10591391"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-
-
-
-# Neuerungen in devtools (Microsoft Edge 80)   
-
-
+# Neuerungen in devtools (Microsoft Edge 80)  
 
 ## Ankündigungen des Microsoft Edge devtools-Teams  
 
@@ -52,7 +43,7 @@ Das devtools-Team hat 170-Änderungen zu chromium beigetragen, um Probleme mit d
 
 Möchten Sie erfahren, wie Sie Ihre Webseite für alle Benutzer barrierefrei gestalten können?  Laden Sie die [Barrierefreiheits Einblicke][AccessibilityInsights] und [webhint][WebhintBrowserExtension] -Erweiterungen für Microsoft Edge herunter, um zu beginnen.  
 
-Wenn Sie Bildschirmsprachausgaben oder die Tastatur verwenden, um in der devtools zu navigieren, senden Sie uns Ihr Feedback, indem Sie uns [tweeten][PostTweetEdgeDevTools] oder auf das [Feedback](#feedback) -Symbol klicken.  
+Wenn Sie Bildschirmsprachausgaben oder die Tastatur verwenden, um in der devtools zu navigieren, senden Sie uns Ihr Feedback, indem Sie uns [tweeten][PostTweetEdgeDevTools] oder auf das Symbol [Feedback senden](#getting-in-touch-with-microsoft-edge-devtools-team) klicken.  
 
 Chrom Problem [#963183][crbug963183]  
 
@@ -117,7 +108,7 @@ Navigieren Sie zu `edge://flags` und setzen Sie das Kennzeichen **lokalisierte E
 > Das devtools in Deutsch  
 > ![Das devtools in Deutsch][ImageLocalizedGerman]  
 
-Wenn Sie das devtools in einer anderen Sprache als den verfügbaren verwenden möchten, senden Sie uns eine [Tweet][PostTweetEdgeDevTools] oder klicken Sie auf das [Feedback](#feedback) -Symbol.  
+Wenn Sie das devtools in einer anderen Sprache als den verfügbaren verwenden möchten, senden Sie uns eine [Tweet][PostTweetEdgeDevTools] oder klicken Sie auf das Symbol [Feedback senden](#getting-in-touch-with-microsoft-edge-devtools-team) .  
 
 Chrom Problem [#941561][crbug941561]  
 
@@ -141,7 +132,7 @@ Verwenden Sie die **3D-Ansicht** , um Ihre Webanwendung zu debuggen, indem Sie d
 
 Wenn Sie auf die 3D-Ansicht zugreifen möchten, navigieren Sie zu `edge://flags` und stellen Sie sicher, dass das Kennzeichen **Entwickler Tools Experimente** auf **aktiviert**festgesetzt ist.  Starten Sie Microsoft Edge neu, und öffnen Sie das devtools.  Drücken Sie `F1` im devtools oder wechseln Sie zu **Einstellungen**, navigieren Sie zu **Experimenten** , und aktivieren Sie das Kontrollkästchen **3D-Ansicht aktivieren** .  Drücken Sie jetzt `Ctrl`  +  `Shift`  +  `P` , geben Sie in **3D-Ansicht** ein, und wählen Sie **3D-Ansicht**anzeigen aus.  
 
-Wir arbeiten an der Benutzeroberfläche und fügen der 3D-Ansicht Weitere Funktionen hinzu, damit Sie uns Ihr [Feedback](#feedback)senden können.  
+Wir arbeiten an der Benutzeroberfläche und fügen der 3D-Ansicht Weitere Funktionen hinzu, damit Sie uns Ihr [Feedback](#getting-in-touch-with-microsoft-edge-devtools-team)senden können.  
 
 Chrom Problem [#987787][crbug987787]
 
@@ -169,7 +160,7 @@ Debuggen Sie mit dem [Debugger für Microsoft Edge][VisualStudioMarketplaceDebug
 
 Weitere Informationen finden Sie unter [Debuggen von Microsoft Edge aus vs-Code][VisualStudioCodeDebuggerEdgeExtension].  
 
-#### webhint  
+#### Webhint  
 
 Die [webhint][VisualStudioMarketplaceWebhintExtension] vs-Code Erweiterung verwendet `webhint` , um Ihre Webseite zu verbessern, während Sie Sie schreiben! Mit dieser Erweiterung wird die Diagnose für Ihre Arbeitsbereichsdateien basierend auf der Analyse ausgeführt und gemeldet `webhint` .  
 
@@ -202,7 +193,7 @@ Die nach Verfolgungs Verhinderung ist ein einzigartiges Feature in Microsoft Edg
 
 In den folgenden Abschnitten werden weitere in Microsoft Edge 80 verfügbare Features angekündigt, die zum Open-Source-Projekt Chromium beigetragen haben.  
 
-### Unterstützung für Let-und Class-Deklarationen in der Konsole   
+### Unterstützung für Let-und Class-Deklarationen in der Konsole  
 
 Die Konsole unterstützt jetzt erneute Deklarationen von `let` und- `class` Anweisungen.  Die Unfähigkeit, erneut zu deklarieren, war ein häufiges Ärgernis für Webentwickler, die die Konsole zum Experimentieren mit neuem JavaScript-Code verwenden.  
 
@@ -223,7 +214,7 @@ Die Konsole ermöglicht nun die erneute Deklaration:
 
 Chrom Problem [#1004193][crbug1004193]  
 
-### Verbessertes Webassembly-Debugging   
+### Verbessertes Webassembly-Debugging  
 
 DevTools hat mit der Unterstützung des [Dwarf-Debugging-Standards][DwarfHome]begonnen, was mehr Unterstützung für die schrittweise Codierung, das Festlegen von Haltepunkten und das Auflösen von Stapelablaufverfolgungen in ihren Quellsprachen in devtools bedeutet.  
 
@@ -237,9 +228,9 @@ DevTools hat mit der Unterstützung des [Dwarf-Debugging-Standards][DwarfHome]be
 > ![The new DWARF-powered WebAssembly debugging][ImageDwarfPoweredWebAssemblyDebugging]  
 -->  
 
-### Netzwerk Panel-Updates   
+### Netzwerk Panel-Updates  
 
-#### Anfordern von Initiator-Chains auf der Registerkarte "Initiator"   
+#### Anfordern von Initiator-Chains auf der Registerkarte "Initiator"  
 
 Sie können nun die Initiatoren und Abhängigkeiten einer Netzwerkanforderung als geschachtelte Liste anzeigen.  Dies kann Ihnen helfen zu verstehen, warum eine Ressource angefordert wurde, oder welche Netzwerkaktivität eine bestimmte Ressource (wie ein Skript \) verursacht hat.  
 
@@ -258,7 +249,7 @@ Klicken Sie nach dem [Protokollieren der Netzwerkaktivität in der Netzwerksteue
 
 Chrom Problem [#842488][crbug842488]  
 
-#### Markieren der ausgewählten Netzwerkanforderung in der Übersicht   
+#### Markieren der ausgewählten Netzwerkanforderung in der Übersicht  
 
 Nachdem Sie auf eine Netzwerkressource klicken, um Sie zu überprüfen, fügt das Netzwerk Panel nun einen blauen Rahmen um die Ressource in der **Übersicht**ein.  Dies kann Ihnen helfen zu erkennen, ob die Netzwerkanforderung früher oder später als erwartet ausgeführt wird.  
 
@@ -268,7 +259,7 @@ Nachdem Sie auf eine Netzwerkressource klicken, um Sie zu überprüfen, fügt da
 
 Chrom Problem [#988253][crbug988253]  
 
-#### URL-und Pfad Spalten im Netzwerk Panel   
+#### URL-und Pfad Spalten im Netzwerk Panel  
 
 Verwenden Sie die Spalten neuer **Pfad** und **URL** im **Netzwerk** Panel, um den absoluten Pfad oder die vollständige URL der einzelnen Netzwerkressourcen anzuzeigen.  
 
@@ -280,7 +271,7 @@ Klicken Sie mit der rechten Maustaste auf die Tabelle Überschrift **Wasserfall*
 
 Chrom Problem [#993366][crbug993366]  
 
-#### Aktualisierte Benutzer-Agent-Zeichenfolgen   
+#### Aktualisierte Benutzer-Agent-Zeichenfolgen  
 
 DevTools unterstützt das Festlegen einer benutzerdefinierten Benutzer-Agent-Zeichenfolge über die Registerkarte **Netzwerkbedingungen** .  Die Benutzer-Agent-Zeichenfolge wirkt `User-Agent` sich auf den an Netzwerkressourcen angefügten HTTP-Header und auch auf den Wert von aus `navigator.userAgent` .  
 
@@ -297,9 +288,9 @@ Um auf **Netzwerkbedingungen**zuzugreifen, [Öffnen Sie das Befehlsmenü][DevToo
 
 Chrom Problem [#1029031][crbug1029031]  
 
-### Audits-Panel-Updates   
+### Audits-Panel-Updates  
 
-#### Neue Konfigurations-UI   
+#### Neue Konfigurations-UI  
 
 Die Benutzeroberfläche der Konfiguration verfügt über ein neues, reaktionsfähiges Design, und die Optionen für die Einschränkungs Konfiguration wurden vereinfacht.  Weitere Informationen zu den Änderungen beim Einschränken der Benutzeroberfläche finden Sie unter [Drosselung des Überwachungs Panels][GitHubGoogleChromeDevToolsAuditsPanelThrottling] .  
 
@@ -307,9 +298,9 @@ Die Benutzeroberfläche der Konfiguration verfügt über ein neues, reaktionsfä
 > Die neue Benutzeroberfläche für die Konfiguration  
 > ![Die neue Benutzeroberfläche für die Konfiguration][ImageConfigurationUI]  
 
-### Updates für Coverage-Registerkarten   
+### Updates für Coverage-Registerkarten  
 
-#### Pro-Funktion-oder pro-Block-Abdeckungs Modi   
+#### Pro-Funktion-oder pro-Block-Abdeckungs Modi  
 
 Die [Registerkarte Coverage][DevToolsCoverageIndex] enthält ein neues Dropdownmenü, in dem Sie angeben können, ob Codeabdeckungsdaten **pro Funktion** oder **pro Block**erfasst werden sollen.  **Pro-Block** -Abdeckung ist detaillierter, aber auch weitaus teurer zu sammeln.  DevTools verwendet jetzt standardmäßig **pro Funktion** Coverage.  
 
@@ -320,39 +311,25 @@ Die [Registerkarte Coverage][DevToolsCoverageIndex] enthält ein neues Dropdownm
 > Dropdownmenü "Coverage-Modus"  
 > ![Dropdownmenü "Coverage-Modus"][ImageCoverageMode]  
 
-#### Coverage muss nun durch ein Seiten-Reload initiiert werden   
+#### Coverage muss nun durch ein Seiten-Reload initiiert werden  
 
 Das Umschalten der Codeabdeckung ohne das erneute Laden einer Seite wurde entfernt, da die Abdeckungsdaten unzuverlässig waren.  Beispielsweise kann eine Funktion als unbenutzt gemeldet werden, wenn die Laufzeit vor langer Zeit war und der V8-Garbage Collector Sie bereinigt hat.  
 
 Chrom Problem [#1004203][crbug1004203]  
 
-## Feedback senden   
-
-
-
-So besprechen Sie die neuen Features und Änderungen in diesem Beitrag oder alles, was mit devtools zu tun hat:  
-
-*   Senden Sie Ihr Feedback über das **Feedback** -Symbol im devtools  
-
-> ##### Abbildung 18
-> Das **Feedback** Symbol in der Microsoft Edge-devtools  
-> ![Das * * Feedback * *-Symbol in der Microsoft Edge-devtools][ImageFeedbackIcon]  
-
-*   Tweet bei [@EdgeDevTools][PostTweetEdgeDevTools]  
-*   Einen Vorschlag an [das gewünschte Web][TheWebWeWant] senden  
-*   Datei Fehler in diesem Dokument im [Edge-Entwickler-][GitHubMicrosoftDocsEdgeDeveloperNewIssue] Repository  
-
-## Herunterladen der Microsoft Edge Preview-Kanäle   
+## Herunterladen der Microsoft Edge Preview-Kanäle  
 
 Wenn Sie unter Windows oder macOS arbeiten, sollten Sie die [Microsoft Edge Preview-Kanäle][MicrosoftEdgePreviewChannels] als Standard Entwicklungsbrowser verwenden.  Über die Vorschau Kanäle erhalten Sie Zugriff auf die neuesten devtools-Funktionen.  
+
+## Kontakt mit dem Microsoft Edge devtools-Team  
+
+[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
 <!--<<../../_shared/devtools-feedback.md>> -->
 
 <!--<<../../_shared/canary.md>> -->
 
 <!--<<../../_shared/discover.md>> -->
-
-
 
 <!-- image links -->  
 
@@ -373,7 +350,6 @@ Wenn Sie unter Windows oder macOS arbeiten, sollten Sie die [Microsoft Edge Prev
 [ImageUserAgentNetworkConditionsTab]: ../../images/2019/12/useragent.msft.png "Abbildung 15: das Menü "Benutzer-Agent" auf der Registerkarte "Netzwerkbedingungen""  
 [ImageConfigurationUI]: ../../images/2019/12/start.msft.png "Abbildung 16: die neue Benutzeroberfläche für die Konfiguration"  
 [ImageCoverageMode]: ../../images/2019/12/modes.msft.png "Abbildung 17: das Dropdownmenü "Coverage Mode""  
-[ImageFeedbackIcon]: ../../images/2019/12/feedback-icon.msft.png "Abbildung 18: das * * Feedback * *-Symbol in der Microsoft Edge-devtools"
 
 <!--[ImageDwarfPoweredWebAssemblyDebugging]: ../../images/2019/12/wasm.msft.png "Figure: The new DWARF-powered WebAssembly debugging"  -->
 

@@ -2,16 +2,16 @@
 title: Neuerungen in devtools (Microsoft Edge 84)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/28/2020
+ms.date: 08/17/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: fc5dcc10ba3a79bd3f073e0e3504e551d7e23d70
-ms.sourcegitcommit: ba9f0ed77e84174b03262b17e62c6a7e26cfeb3d
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+ms.openlocfilehash: aa39e5d7811d4a614e055a8e0479c74278efbefd
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "10688178"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10942188"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -78,7 +78,7 @@ Mit dem [Surface Duo-Emulator][DualScreensAndroidEmulator]können Sie testen, wi
 
 Die `edge://inspect` Seite in einer Desktop Instanz von [Microsoft Edge][DesktopEdge] zeigt die **SurfaceDuoEmulator** mit einer Liste der geöffneten Registerkarten oder [PWAs][PwaIndex] , die auf dem [Surface Duo-Emulator][DualScreensAndroidEmulator]ausgeführt werden.  
 
-:::image type="complex" source="../../media/2020/05/edge-inspect.msft.png" alt-text="Auf der Seite Edge://Inspect wird eine Liste der geöffneten Registerkarten in der Microsoft Edge-App angezeigt, die auf dem Emulator ausgeführt wird." lightbox="../../media/2020/05/edge-inspect.msft.png":::
+:::image type="complex" source="../../media/2020/05/edge-inspect.msft.png" alt-text="Auf der Seite "Edge://Inspect" wird eine Liste der geöffneten Registerkarten in der Microsoft Edge-App angezeigt, die auf dem Emulator ausgeführt wird." lightbox="../../media/2020/05/edge-inspect.msft.png":::
    `edge://inspect`Auf der Seite wird eine Liste der geöffneten Registerkarten in der Microsoft Edge-App angezeigt, die auf dem Emulator ausgeführt wird.
 :::image-end:::  
 
@@ -118,7 +118,7 @@ Chrom Problem [#1081486][CR1081486]
 
 In Microsoft Edge 84 nimmt der [Bereich "Details" im Bereich][DevToolsNetworkDetails] " **Netzwerk** " nun den Fokus, wenn Sie ihn für eine Ressource im [Netzwerkprotokoll][DevToolsNetworkLog]öffnen.  Diese Änderung ermöglicht es Bildschirmsprachausgaben, den Inhalt des **Detail** Bereichs zu lesen und mit Ihnen zu interagieren.  
 
-:::image type="complex" source="../../media/2020/05/network-details.msft.png" alt-text="Der Bereich Details im Netzwerkbereich nimmt beim Öffnen den Fokus auf" lightbox="../../media/2020/05/network-details.msft.png":::
+:::image type="complex" source="../../media/2020/05/network-details.msft.png" alt-text="Der Bereich "Details" im Netzwerkbereich nimmt beim Öffnen den Fokus auf" lightbox="../../media/2020/05/network-details.msft.png":::
    Der Bereich " **Details** " im **Netzwerk** Bereich nimmt beim Öffnen den Fokus auf
 :::image-end:::  
 
@@ -134,7 +134,7 @@ Das Tool "neue **Probleme** " im devtools-Einzug wurde entwickelt, um die Ermüd
 
 Informationen zu den ersten Schritten finden Sie unter [Suchen und Beheben von Problemen mit dem Microsoft Edge devtools Issues-Tool][DevtoolsIssuesIndex].  
 
-:::image type="complex" source="../../media/2020/05/issues.msft.png" alt-text="Das Tool Probleme im devtools-Einzug" lightbox="../../media/2020/05/issues.msft.png":::
+:::image type="complex" source="../../media/2020/05/issues.msft.png" alt-text="Das Tool "Probleme" im devtools-Einzug" lightbox="../../media/2020/05/issues.msft.png":::
    Das Tool " **Probleme** " im devtools-Einzug  
 :::image-end:::  
 
@@ -211,7 +211,7 @@ V8-Problem [#6751][CRV86751]
 
 Die AutoVervollständigen-Benutzeroberfläche des Bereichs " **Formatvorlagen** " erkennt nun das [Revert][MDNRevert] CSS-Schlüsselwort, das den kaskadierten Wert einer Eigenschaft auf den vorherigen Wert zurücksetzt, der auf das Styling des Elements angewendet wurde.  
 
-:::image type="complex" source="../../media/2020/05/revert.msft.png" alt-text="Festlegen des Werts einer Eigenschaft auf Zurücksetzen" lightbox="../../media/2020/05/revert.msft.png":::
+:::image type="complex" source="../../media/2020/05/revert.msft.png" alt-text="Festlegen des Werts einer Eigenschaft auf "Zurücksetzen"" lightbox="../../media/2020/05/revert.msft.png":::
   Festlegen des Werts einer Eigenschaft auf "Zurücksetzen"  
 :::image-end:::  
 
@@ -233,7 +233,7 @@ Chrom Problem [#1040019][CR1040019]
 
 Wenn Sie Farben mit der [Farbauswahl][DevtoolsCssReferenceColorPicker] auswählen oder zwischen Farbdarstellungen im **Formatvorlagen** Bereich wechseln, indem Sie `Shift` den Wert halten und auswählen `background-color` , wird die Argumentsyntax mit Leerzeichengetrennt angezeigt.  
 
-:::image type="complex" source="../../media/2020/05/color.msft.png" alt-text="Verwenden von durch Leerzeichen getrennten Argumenten im Bereich Formatvorlagen" lightbox="../../media/2020/05/color.msft.png":::
+:::image type="complex" source="../../media/2020/05/color.msft.png" alt-text="Verwenden von durch Leerzeichen getrennten Argumenten im Bereich "Formatvorlagen"" lightbox="../../media/2020/05/color.msft.png":::
   Verwenden von durch Leerzeichen getrennten Argumenten im Bereich " **Formatvorlagen** "  
 :::image-end:::  
 
@@ -266,28 +266,17 @@ App-Tastenkombinationen helfen Benutzern, häufige oder empfohlene Aufgaben in e
 
 <!--todo:  add link Get things done quickly with app shortcuts (WebdevAppShortcuts) when section is live -->  
 
-:::image type="complex" source="../../media/2020/05/app-shortcuts.msft.png" alt-text="App-Verknüpfungen im Bereich Manifest" lightbox="../../media/2020/05/app-shortcuts.msft.png":::
+:::image type="complex" source="../../media/2020/05/app-shortcuts.msft.png" alt-text="App-Verknüpfungen im Bereich "Manifest"" lightbox="../../media/2020/05/app-shortcuts.msft.png":::
   App-Verknüpfungen im Bereich " **Manifest** "  
 :::image-end:::  
 
-## Herunterladen der Microsoft Edge Preview-Kanäle   
+## Herunterladen der Microsoft Edge Preview-Kanäle  
 
 Wenn Sie unter Windows oder macOS arbeiten, sollten Sie die [Microsoft Edge Preview-Kanäle][MicrosoftEdgePreviewChannels] als Standard Entwicklungsbrowser verwenden.  Über die Vorschau Kanäle erhalten Sie Zugriff auf die neuesten devtools-Funktionen.  
 
 ## Kontakt mit dem Microsoft Edge devtools-Team  
 
-  
-
-So besprechen Sie die neuen Features und Änderungen im Beitrag oder alles, was mit devtools zu tun hat:  
-
-*   Senden Sie Ihr Feedback über das **Feedback** -Symbol im devtools  
-*   Tweet bei [@EdgeDevTools][PostTweetEdgeDevTools]  
-*   Einen Vorschlag an [das gewünschte Web][TheWebWeWant] senden  
-*   Datei Fehler auf dieser Seite im [Edge-Entwickler-][GitHubMicrosoftDocsEdgeDeveloperNewIssue] Repository  
-
-:::image type="complex" source="../../media/2020/05/feedback-icon.msft.png" alt-text="Das Feedback Symbol in der Microsoft Edge-devtools" lightbox="../../media/2020/05/feedback-icon.msft.png":::
-  Das **Feedback** Symbol in der Microsoft Edge-devtools  
-:::image-end:::  
+[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
 <!-- image links -->  
 

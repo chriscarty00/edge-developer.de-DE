@@ -1,27 +1,32 @@
 ---
 description: Leitfäden für Windows-Integrationsfeatures in Microsoft Edge
-title: Dev-Leitfaden – Windows-Integrationsfeatures
+title: Windows-Integrationsfeatures – dev-Leitfaden
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/15/2020
+ms.date: 07/28/2020
 ms.topic: article
 ms.technology: windows-integration
 ms.prod: microsoft-edge
 keywords: Edge, Web-Entwicklung, HTML, CSS, JavaScript, Entwickler
-ms.openlocfilehash: b94f09e7161856acec9a55488c10e5fc6fd6fc4d
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: ba69d971c6a5006bc00f9e67517b40be1ab5692d
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10567130"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10941838"
 ---
-# Windows-Integrationsfeatures
+# Windows-Integrationsfunktionen  
 
-## API für Zahlungsanforderungen
-Die [Zahlungs Anforderungs-API](./windows-integration/Payment-Request-API.md) ist ein offener, browserübergreifender Standard, der es Browsern ermöglicht, als Vermittler zwischen Händlern, Verbrauchern und den Zahlungsmethoden (z.b. Kreditkarten) zu fungieren, die Verbraucher in der Cloud gespeichert haben.
+[!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
 
-## Web-Authentifizierung und Windows Hello
-Mit der [Webauthentifizierungs-API](./windows-integration/web-authentication.md) in Microsoft Edge können Webanwendungen [Windows Hello](https://go.microsoft.com/fwlink/p/?LinkID=624961) Biometrie für die Benutzerauthentifizierung verwenden.
+## Payments Request-API  
 
-## Web-Benachrichtigungs-API
-Mit der [Web-Benachrichtigungs-API](./windows-integration/web-Notifications-API.md) können Websites Benutzer Benachrichtigungen außerhalb des Kontexts des Microsoft Edge-Browsers senden.
+Die [Zahlungs Anforderungs-API](./windows-integration/payment-request-api.md) ist ein offener, browserübergreifender Standard, der es Browsern ermöglicht, als Vermittler zwischen Händlern, Verbrauchern und Zahlungsmethoden zu fungieren (wie Kreditkarten \), die von Verbrauchern in der Cloud gespeichert wurden.  
+
+## Web-Authentifizierung und Windows Hello  
+
+Mit der [Webauthentifizierungs-API](./windows-integration/web-authentication.md) in Microsoft Edge können Webanwendungen [Windows Hello](https://www.microsoft.com/windows/comprehensive-security) Biometrie für die Benutzerauthentifizierung verwenden.  
+
+## Webbenachrichtigungs-API  
+
+Mit der [Web-Benachrichtigungs-API](./windows-integration/web-notifications-api.md) können Websites Benutzer Benachrichtigungen außerhalb des Kontexts des Microsoft Edge-Browsers senden.  

@@ -2,16 +2,16 @@
 title: Bearbeiten von Dateien mit Arbeitsbereichen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/14/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 6971dd96a0d2f32700a8d791f7debfc816887387
-ms.sourcegitcommit: 054ad92f0b8f9a15da1e3aed32e8f4379b10860f
+ms.openlocfilehash: 8a31dd9fbfe492cf8eaacc654f7d501925f730f2
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "10931231"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10942177"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -58,7 +58,7 @@ Arbeitsbereiche können den optimierten Code normalerweise mit Hilfe von [Quell 
 Arbeitsbereiche funktionieren bekanntermaßen nicht mit dem folgenden Framework.  
 
 *   Erstellen einer Reaktions-App  
-    
+
     <!-- If you run into issues while using Workspaces with your framework of choice, or you get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->  
     
 ## Verwandtes Feature: lokale Überschreibungen  
@@ -88,7 +88,7 @@ Führen Sie die folgenden Aktionen aus, um praktische Erfahrungen mit Arbeitsber
 
     -->  
     <!--1.  Close the tab.  -->  
-    <!--1.  Unzip the source code and move the unzipped `app` directory to your desktop.  For the rest of this tutorial the unzipped  directory is referred to as `~/Desktop/app`.  -->  
+    <!--1.  Unzip the source code and move the unzipped `app` directory to your desktop.  For the rest of this tutorial the unzipped directory is referred to as `~/Desktop/app`.  -->  
     
 1.  Erstellen `app` Sie ein Verzeichnis auf dem Desktop.  Speichern Sie Kopien der Dateien aus dem `workspaces-demo` Verzeichnis im `app` Verzeichnis.  Für den restlichen Teil des Lernprogramms wird das Verzeichnis als bezeichnet `~/Desktop/app` .  
 1.  Starten Sie einen lokalen Webserver in `~/Desktop/app` .  Nachfolgend finden Sie einige Beispielcodes zum Starten `SimpleHTTPServer` , aber Sie können den von Ihnen bevorzugten Server verwenden.  
@@ -99,7 +99,7 @@ Führen Sie die folgenden Aktionen aus, um praktische Erfahrungen mit Arbeitsber
           cd ~/Desktop/app
           python -m SimpleHTTPServer # Python 2
           ```  
-       :::column-end:::
+       :::column-end:::  
        :::column span="":::
           ```bash
           cd ~/Desktop/app
@@ -130,7 +130,7 @@ Führen Sie die folgenden Aktionen aus, um praktische Erfahrungen mit Arbeitsber
     :::image-end:::  
     
 1.  Wählen Sie **Ordner zum Arbeitsbereich hinzufügen**aus.  
-1.  Geben Sie `~/Desktop/app` .  
+1.  Geben Sie `~/Desktop/app` ein.  
 1.  Wählen Sie **zulassen** aus, um devtools die Berechtigung zum Lesen und Schreiben in das Verzeichnis zu erteilen.  
     Auf der Registerkarte **Dateisystem** befindet sich nun ein grüner Punkt neben `index.html` , `script.js` und `styles.css` .  Diese grünen Punkte bedeuten, dass devtools eine Zuordnung zwischen den Netzwerkressourcen der Seite und den Dateien in erstellt hat `~/Desktop/app` .  
     
@@ -158,7 +158,7 @@ Führen Sie die folgenden Aktionen aus, um praktische Erfahrungen mit Arbeitsber
     :::image-end:::  
     
 1.  `styles.css`In einem Text-Editor erneut öffnen.  Die `color` Eigenschaft ist nun auf Ihre Lieblingsfarbe eingestellt.  
-1.  Aktualisieren Sie die Seite.  Die Farbe des `<h1>` Elements wird weiterhin auf Ihre bevorzugte Farbe festgelegt.  Die Änderung über eine Aktualisierung, denn wenn Sie die Änderung vorgenommen haben, devtools die Änderung auf dem Datenträger gespeichert.  Und dann, wenn Sie die Seite aktualisiert haben, hat der lokale Server die geänderte Kopie der Datei vom Datenträger bereitgestellt.  
+1.  Aktualisieren Sie die Seite.  Die Farbe des `<h1>` Elements wird weiterhin auf Ihre bevorzugte Farbe festgelegt.  Die Änderung bleibt über eine Aktualisierung bestehen, denn wenn Sie die Änderung vorgenommen haben, devtools die Änderung auf dem Datenträger gespeichert.  Und dann, wenn Sie die Seite aktualisiert haben, hat der lokale Server die geänderte Kopie der Datei vom Datenträger bereitgestellt.  
     
 ## Schritt 3: Speichern einer HTML-Änderung auf einem Datenträger  
 
@@ -210,7 +210,7 @@ Wenn Sie eine Änderung am HTML-Code der Seite speichern möchten, verwenden Sie
 1.  Aktualisieren Sie die Seite.  Das `<h1>` Element zeigt weiterhin den neuen Text an.  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Ändern von HTML aus dem Quellen Panel" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
-       Zeile 12 ist auf `I ❤️  Cake`  
+       Ändern von HTML aus dem **Quellen** Panel  
     :::image-end:::  
     
 1.  Öffnen Sie `~/Desktop/app/index.html`.  Das `<h1>` Element enthält den neuen Text.  

@@ -1,67 +1,82 @@
 ---
 description: Auf dieser Seite finden Sie eine Übersicht über die Neuerungen in EdgeHTML 13.
-title: Neuerungen in EdgeHTML 13
+title: Neue Features und APIs in EdgeHTML 13
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 07/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Edge, Web-Entwicklung, HTML, CSS, JavaScript, Entwickler
-ms.openlocfilehash: 8fb9d6bd78af5d595e217fa2bf210632f4c1a61f
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 033b8dacb107492624f3b8c7775a47285c9893dd
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10566749"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10941911"
 ---
-# Neuerungen in EdgeHTML 13
-Hier sind die Änderungen, die mit EdgeHTML 13 ausgeliefert wurden, dem Modul, das den Microsoft Edge-Browser im [ersten wichtigen Update](https://blogs.windows.com/windowsexperience/2015/11/12/first-major-update-for-windows-10-available-today/) für Windows 10 (11/2015, Build 10586) einmacht. Eine Übersicht über Änderungen am gesamten Microsoft Edge-Browser finden Sie unter [Introducing EdgeHTML 13, unser erstes Platt Form Update für Microsoft Edge](https://blogs.windows.com/msedgedev/2015/11/16/introducing-edgehtml-13-our-first-platform-update-for-microsoft-edge/).
+# Neuerungen in EdgeHTML 13  
 
-Hier ist der Permalink für die folgende Liste der [https://aka.ms/devguide_edgehtml_13](https://aka.ms/devguide_edgehtml_13) Änderungen:
+[!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
-## Features
+Hier sind die Änderungen, die im Lieferumfang von EdgeHTML 13 enthalten sind, dem Modul, das den Microsoft Edge-Browser im [ersten wichtigen Update](https://blogs.windows.com/windowsexperience/2015/11/12) für Windows 10 (11/2015, Build 10586 \) einmacht.  Eine Übersicht über Änderungen am gesamten Microsoft Edge-Browser finden Sie unter [Introducing EdgeHTML 13, unser erstes Platt Form Update für Microsoft Edge](https://blogs.windows.com/msedgedev/2015/11/16).  
 
-### CSS
-' ' EdgeHTML 13 unterstützt neue CSS-Features, einschließlich:
-* [Pseudo Klassen für CSS-Veränderlichkeit](https://developer.microsoft.com/microsoft-edge/platform/status/cssmutabilitypseudoclasses/)
-* [Pseudo Klassen für CSS-Bereich](https://developer.microsoft.com/microsoft-edge/platform/status/cssrangepseudoclasses/)
-* CSS- [anfangs](https://developer.microsoft.com/microsoft-edge/platform/status/cssinitialvalue/) -und [unset](https://developer.microsoft.com/microsoft-edge/platform/status/cssunsetvalue/) -Schlüsselwörter
+Hier ist der Permalink für die folgende Liste der  [https://aka.ms/devguide_edgehtml_13](./edgehtml-13.md) Änderungen:  
 
-### Verschlüsselte Medienerweiterungen
-Microsoft Edge unterstützt jetzt die neuen APIs für [verschlüsselte Medienerweiterungen](https://w3.org/TR/encrypted-media/) mit unpräfixen. Mit verschlüsselten Medienerweiterungen (EME) werden die Video-und Audioelemente erweitert, um DRM-geschützte Inhalte (Digital Rights Management) zu aktivieren, ohne Plug-ins zu verwenden. Weitere Informationen finden Sie unter eme: [verschlüsselte Medienerweiterungen](https://docs.microsoft.com/microsoft-edge/dev-guide/multimedia/encrypted-media-extensions).
+## Features  
 
-### Grafiken
+### CSS  
 
-EdgeHTML 13 stellt die folgenden Grafik Updates vor:
-* [Canvas-Ellipse](https://developer.microsoft.com/microsoft-edge/platform/status/canvas2dellipse/)
-* [Füllmethoden für Leinwand](https://developer.microsoft.com/microsoft-edge/platform/status/compositingandblendingincanvas2d/)
-* [`<picture>` Element ](https://developer.microsoft.com/microsoft-edge/platform/status/pictureelement/)
-* [SVG-externer Inhalt](https://developer.microsoft.com/microsoft-edge/platform/status/svgexternalcontent/)
+EdgeHTML 13 unterstützt neue CSS-Features, einschließlich:  
 
-### JavaScript
-EdgeHTML 13 umfasst [wichtige Verbesserungen und die Unterstützung neuer Features in Chakra](https://blogs.windows.com/msedgedev/2015/09/30/asynchronous-code-gets-easier-with-es2016-async-function-support-in-chakra-and-microsoft-edge/), dem JavaScript-Modul, das Microsoft Edge anbietet, einschließlich:
+*   [Pseudo Klassen für CSS-Veränderlichkeit](https://developer.microsoft.com/microsoft-edge/platform/status/cssmutabilitypseudoclasses)  
+*   [Pseudo Klassen für CSS-Bereich](https://developer.microsoft.com/microsoft-edge/platform/status/cssrangepseudoclasses)  
+*   CSS- [anfangs](https://developer.microsoft.com/microsoft-edge/platform/status/cssinitialvalue) -und [unset](https://developer.microsoft.com/microsoft-edge/platform/status/cssunsetvalue) -Schlüsselwörter  
 
-#### Neue Features (standardmäßig aktiviert)
+### Verschlüsselte Medienerweiterungen  
 
-* [ASM. js](https://developer.microsoft.com/microsoft-edge/platform/status/asmjs/?q=asm.js) standardmäßig aktiviert ([Blogbeitrag](https://blogs.windows.com/msedgedev/2015/11/10/supercharging-javascript-performance-with-asm-js/), [Demo](https://dev.windows.com/microsoft-edge/testdrive/demos/chess/))
-* [Klassen](https://developer.microsoft.com/microsoft-edge/platform/status/asmjs/?q=classes) (ES2015)
+Microsoft Edge unterstützt jetzt die neuen APIs für [verschlüsselte Medienerweiterungen](https://w3.org/TR/encrypted-media) mit unpräfixen.  Verschlüsselte Medienerweiterungen \ (EME \) erweitert die Video-und Audioelemente, um DRM-geschützte Inhalte (Digital Rights Management) zu aktivieren, ohne Plug-ins zu verwenden.  Weitere Informationen finden Sie unter eme:  [verschlüsselte Medienerweiterungen](https://developer.mozilla.org/docs/Web/API/Encrypted_Media_Extensions_API).  
 
-#### Experimentelle JavaScript-Features (aktiviert mit *about: Flags*)
+### Grafiken  
 
-* [Asynchrone Funktionen](https://developer.microsoft.com/microsoft-edge/platform/status/asyncfunctions/?q=async%20functions) (ES2016)
-* [Exponentialwert-Operator](https://developer.microsoft.com/microsoft-edge/platform/status/exponentiationoperatores2016/?q=exponentiation%20operator) (ES2016)
-* [Destrukturierung](https://developer.microsoft.com/microsoft-edge/platform/status/destructuringES2015/?q=destructuring) (ES2015)
+EdgeHTML 13 stellt die folgenden Grafik Updates vor:  
 
-### Benutzereingabe
-Die folgenden in EdgeHTML 13 eingeführten Features verbessern die Benutzereingabe:
-* [`<meter>` Element ](https://developer.microsoft.com/microsoft-edge/platform/status/meterelement/)
-* [`oninvalid` Ereignishandler für das Element Dokument und-Fenster](https://developer.microsoft.com/microsoft-edge/platform/status/oninvalideventhandler/)
+*   [Canvas-Ellipse](https://developer.microsoft.com/microsoft-edge/platform/status/canvas2dellipse)  
+*   [Füllmethoden für Leinwand](https://developer.microsoft.com/microsoft-edge/platform/status/compositingandblendingincanvas2d)  
+*   [<picture> Element ](https://developer.microsoft.com/microsoft-edge/platform/status/pictureelement)  
+*   [SVG-externer Inhalt](https://developer.microsoft.com/microsoft-edge/platform/status/svgexternalcontent)  
 
-### Zeiger Sperre
-Microsoft Edge unterstützt jetzt die Pointer Lock-API (zuvor als "Maus Sperre" bezeichnet) für den Zugriff auf unformatierte Mausbewegungen, wobei das Ziel von Mausereignissen auf ein einzelnes Element gesperrt wird, wodurch Grenzwerte für die Mausbewegung in einer einzigen Richtung beseitigt werden, und der Cursor aus der Ansicht entfernt wird. 
+### JavaScript  
 
+EdgeHTML 13 umfasst [wichtige Verbesserungen und die Unterstützung neuer Features in Chakra](https://blogs.windows.com/msedgedev/2015/09/30), dem JavaScript-Modul, das Microsoft Edge anbietet, einschließlich:  
 
-## Neue APIs in EdgeHTML 13 "" ""
+#### Neue Funktionen  
 
-Hier finden Sie die vollständige Liste der neuen APIs in EdgeHTML 13. Sie werden im Format **[Schnittstellenname] aufgeführt. [ API-Name]**.
-<iframe height='584' scrolling='no' title='Neue APIs in EdgeHTML 13' src='//codepen.io/MicrosoftEdgeDocumentation/embed/vmzxEY/?height=584&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>Weitere Informationen finden Sie in den neuen APIs für Stifte <a href='https://codepen.io/MicrosoftEdgeDocumentation/pen/vmzxEY/'> in EdgeHTML 13 </a> von Microsoft Edge docs ( <a href='http://codepen.io/MicrosoftEdgeDocumentation'> @MicrosoftEdgeDocumentation </a> ) auf <a href='http://codepen.io'> CodePen </a> .</iframe>""''""''""
+Standardmäßig aktiviert  
+
+*   Standardmäßig aktiviert [asm.js](https://developer.microsoft.com/microsoft-edge/platform/status/asmjs/?q=asm.js) \ ([Blogbeitrag](https://blogs.windows.com/msedgedev/2015/11/10), [Demo](https://dev.windows.com/microsoft-edge/testdrive/demos/chess)\)  
+*   [Classes](https://developer.microsoft.com/microsoft-edge/platform/status/asmjs/?q=classes) \ (ES2015 \)  
+
+#### Experimentelle JavaScript-Features  
+
+Aktiviert mit `about:flags`  
+
+*   [Asynchrone Funktionen](https://developer.microsoft.com/microsoft-edge/platform/status/asyncfunctions/?q=async%20functions) \ (ES2016 \)  
+*   [Potenz Operator](https://developer.microsoft.com/microsoft-edge/platform/status/exponentiationoperatores2016/?q=exponentiation%20operator) \ (ES2016 \)  
+*   [Destrukturierung](https://developer.microsoft.com/microsoft-edge/platform/status/destructuringES2015/?q=destructuring) \ (ES2015 \)  
+
+### Benutzereingabe  
+
+Die folgenden in EdgeHTML 13 eingeführten Features verbessern die Benutzereingabe:  
+
+*   [<meter> Element ](https://developer.microsoft.com/microsoft-edge/platform/status/meterelement)  
+*   [oninvalid-Ereignishandler für das Element Dokument und-Fenster](https://developer.microsoft.com/microsoft-edge/platform/status/oninvalideventhandler)  
+
+### Zeiger Sperre  
+
+Microsoft Edge unterstützt jetzt die Pointer Lock-API \ (zuvor als "Maus Sperre" bezeichnet) für den Zugriff auf rohe Mausbewegungen, das Ziel von Mausereignissen auf ein einzelnes Element sperren, wodurch Grenzwerte für die Mausbewegung in einer einzelnen Richtung beseitigt werden und der Cursor aus der Ansicht entfernt werden kann.  
+
+## Neue APIs in EdgeHTML 13  
+
+Hier finden Sie die vollständige Liste der neuen APIs in EdgeHTML 13.  Sie werden im Format von angezeigt `[interface name].[api name]` .  
+
+<iframe height='584' scrolling='no' title='Neue APIs in EdgeHTML 13' src='//codepen.io/MicrosoftEdgeDocumentation/embed/vmzxEY/?height=584&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width:  100%;'>Weitere Informationen finden Sie in den neuen APIs für Stifte <a href='https://codepen.io/MicrosoftEdgeDocumentation/pen/vmzxEY/'> in EdgeHTML 13 </a> von Microsoft Edge docs ( <a href='http://codepen.io/MicrosoftEdgeDocumentation'> @MicrosoftEdgeDocumentation </a> ) auf <a href='http://codepen.io'> CodePen </a> .</iframe>  

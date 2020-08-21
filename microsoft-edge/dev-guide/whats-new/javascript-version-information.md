@@ -1,30 +1,32 @@
 ---
 title: JavaScript-Versionsinformationen
 description: Vergleich von JavaScript-Unterstützung über Microsoft Edge, Microsoft Store-Apps und Internet Explorer
-ms.date: 03/05/2020
+ms.date: 07/28/2020
 ms.prod: microsoft-edge
 ms.topic: language-reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
 keywords: Edge, IE, Chakra, JScript, WWA, Store-Apps
 ms.custom: seodec18
-ms.openlocfilehash: 0edc5769cf80ae9a7ac741c0f478f9ca639d935f
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 6041cd538c55303e68cadf3f740716b3c3637898
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10567137"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10941888"
 ---
 # JavaScript-Versionsinformationen  
 
-Die JavaScript-Unterstützung variiert in Microsoft Edge, Microsoft Store-Apps und unterschiedlichen Dokumentmodi von Internet Explorer. Weitere Informationen zur Versionsverwaltung von IE-Dokumenten Codes finden Sie unter [*Definieren der Kompatibilität von Dokumenten*](https://go.microsoft.com/fwlink/p/?LinkId=208537).  
+[!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
+
+Die JavaScript-Unterstützung variiert in Microsoft Edge, Microsoft Store-Apps und unterschiedlichen Dokumentmodi von Internet Explorer \ (IE \). Weitere Informationen zur Versionsverwaltung von IE-Dokumenten Codes finden Sie unter [Definieren der Kompatibilität von Dokumenten](/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85)).  
 
 Die folgende Tabelle enthält eine Zusammenfassung der JavaScript-Unterstützung für Internet Explorer, Microsoft Edge und Microsoft Store-Apps.  
   
 > [!IMPORTANT]
-> Experimentelle Features \ (aktiviert von *about: Flags*\) werden durch "EXP" angezeigt. In einigen Fällen variiert die Unterstützung von *Store-Apps* zwischen Windows 8 \ (V8 \) und Windows 10 \ (v10 \)-apps und Windows-Desktop \ (Win \) und Windows Phone \ (Telefon \), wie angegeben.  
+> Experimentelle Funktionen \ (aktiviert von `about:flags` \) sind `Exp.` in einigen Fällen unterscheidet sich der Support für Store-Apps zwischen Windows 8 \ (V8 \) und Windows 10 \ (v10 \)-apps und Windows-Desktop \ (Win \) und Windows Phone \ (Telefon \) wie angegeben.  
   
- | Language-Element | Eigenheiten, Internet Explorer 6-Standards, Internet Explorer 7-Standards | Internet Explorer 8-Standards | Internet Explorer 9-Standards | Internet Explorer 10-Standards | Internet Explorer 11-Standards | Microsoft Edge | Store-Apps |  
+ | Language-Element | Macken, IE 6-Standards, IE 7-Standards | IE 8-Standards | IE 9-Standards | IE 10-Standards | IE 11-Standards | Microsoft Edge | Store-Apps |  
  |:--- |:--- |:--- |:--- |:--- |:--- |:--- |:--- |  
 | [__proto \ _ \ _ Property (Objekt)](/scripting/javascript/reference/proto-property-object-javascript) | N | N | N | N | Y | Y | V8 (Win): N <br /> v 8.1 (Win): Y <br /> v 8.1 (Telefon): Y |  
 | [$1... $9-Eigenschaften (regexp)](/scripting/javascript/reference/dollar-1-dot-dot-dot-dollar-9-properties-regexp-javascript) | Y | Y | Y | Y | Y | Y | Y |  

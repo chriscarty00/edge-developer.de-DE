@@ -2,16 +2,16 @@
 title: Neuerungen in devtools (Microsoft Edge 83)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/31/2020
+ms.date: 08/17/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: f90bbde9b2b220cd8a333a81d520d4c6e56eaa90
-ms.sourcegitcommit: 4e6c0959bc01eb0ceb4b85dce791670916fb5b48
+ms.openlocfilehash: f1b5d147aac1b8b527cc7365f9f91a2a7974863e
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "10918634"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10942223"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -45,7 +45,7 @@ Die [Remote Tools für Microsoft Edge \ (Beta \)-][RemoteTools] APP ist jetzt im
    Abbildung 1: die APP [Remote Tools für Microsoft Edge (Beta)][RemoteTools] , die im [Microsoft Store][MicrosoftStore] verfügbar ist  
 :::image-end:::  
 
-[Lesen Sie unseren Leitfaden zum Einrichten Ihres Windows 10-Geräts und ihres Entwicklungscomputers für das Remotedebuggen][DevtoolsRemoteDebuggingWindows].  Informieren Sie uns über Ihre Remote Debugging-Erfahrung, indem Sie [tweeten][PostTweetEdgeDevTools] oder auf das [Feedback](#feedback) -Symbol klicken.  
+[Lesen Sie unseren Leitfaden zum Einrichten Ihres Windows 10-Geräts und ihres Entwicklungscomputers für das Remotedebuggen][DevtoolsRemoteDebuggingWindows].  Informieren Sie uns über Ihre Remote Debugging-Erfahrung, indem Sie [tweeten][PostTweetEdgeDevTools] oder auf das Symbol [Feedback senden](#getting-in-touch-with-microsoft-edge-devtools-team) klicken.  
 
 ### Neue Möglichkeiten für den Zugriff auf Einstellungen  
 
@@ -113,7 +113,7 @@ Wenn Sie eine Änderung an einer minimierte-Datei vorgenommen haben, können Sie
    Abbildung 8: in Microsoft Edge 83 können Sie mit den Pfeiltasten horizontal scrollen, um die am minimierte-Code vorgenommenen Änderungen im **Tool "Änderungen"** anzuzeigen.  
 :::image-end:::  
 
-Wenn Sie Bildschirmsprachausgaben oder die Tastatur verwenden, um in der devtools zu navigieren, senden Sie uns Ihr Feedback, indem Sie uns [tweeten][PostTweetEdgeDevTools] oder auf das [Feedback](#feedback) -Symbol klicken.  
+Wenn Sie Bildschirmsprachausgaben oder die Tastatur verwenden, um in der devtools zu navigieren, senden Sie uns Ihr Feedback, indem Sie uns [tweeten][PostTweetEdgeDevTools] oder auf das Symbol [Feedback senden](#getting-in-touch-with-microsoft-edge-devtools-team) klicken.  
 
 Chrom Problem [#963183][CR963183]  
 
@@ -143,7 +143,7 @@ Bei Protanomalie handelt es sich beispielsweise um eine reduzierte Empfindlichke
 
 Wenn Sie für die extremeren Simulationen in devtools entwerfen, sind Ihre Web-Apps garantiert auch für Personen mit Protanomalie, Deuteranomalie, Tritanomaly und achromatomaly zugänglich.  
 
-Senden Sie Ihr Feedback, indem Sie [tweeten][PostTweetEdgeDevTools] oder auf das [Feedback](#feedback) -Symbol klicken.  
+Senden Sie Ihr Feedback per [Tweet][PostTweetEdgeDevTools] oder klicken Sie auf das Symbol [Feedback senden](#getting-in-touch-with-microsoft-edge-devtools-team) !  
 
 Chrom Problem [#1003700][CR1003700]  
 
@@ -183,7 +183,7 @@ Im Abschnitt " **Antwort Kopfzeilen** " auf der Registerkarte " **Kopfzeilen** "
    Abbildung 12: Weitere Anleitungen im Abschnitt "Antwort Kopfzeilen"  
 :::image-end:::  
 
-Senden Sie Ihr Feedback, indem Sie [tweeten][PostTweetEdgeDevTools] oder auf das [Feedback](#feedback) -Symbol klicken.  
+Senden Sie Ihr Feedback per [Tweet][PostTweetEdgeDevTools] oder klicken Sie auf das Symbol [Feedback senden](#getting-in-touch-with-microsoft-edge-devtools-team) !  
 
 Chrom Problem [#1051466][CR1051466]  
 
@@ -216,7 +216,7 @@ Schauen Sie sich [Filter Anforderungen nach Eigenschaften][DevtoolsNetworkRefere
 > [!NOTE]
 > Das Feature " **Dock to Left** " wurde seit Microsoft Edge 75 zur Verfügung gestellt, war aber zuvor nur über das [**Hauptmenü**][DevtoolsCustomizePlacementsChangeMainMenu]zugänglich.  Das neue Feature in Microsoft Edge 83 ist, dass Sie nun über das Befehlsmenü auf dieses Feature zugreifen können.  
 
-Senden Sie Ihr Feedback, indem Sie [tweeten][PostTweetEdgeDevTools] oder auf das [Feedback](#feedback) -Symbol klicken.  
+Senden Sie Ihr Feedback per [Tweet][PostTweetEdgeDevTools] oder klicken Sie auf das Symbol [Feedback senden](#getting-in-touch-with-microsoft-edge-devtools-team) !  
 
 Chrom Problem [#1011679][CR1011679]  
 
@@ -239,7 +239,7 @@ Nachdem Sie **lokale Überschreibungen** eingerichtet haben, können Sie mit der
    Abbildung 15: Löschen aller Außerkraftsetzungen  
 :::image-end:::  
 
-Senden Sie Ihr Feedback, indem Sie [tweeten][PostTweetEdgeDevTools] oder auf das [Feedback](#feedback) -Symbol klicken.  
+Senden Sie Ihr Feedback per [Tweet][PostTweetEdgeDevTools] oder klicken Sie auf das Symbol [Feedback senden](#getting-in-touch-with-microsoft-edge-devtools-team) !  
 
 Chrom Problem [#1016501][CR1016501]  
 
@@ -253,7 +253,7 @@ Sie haben in der Lage sein, [lange Aufgaben im Leistungs Panel][DevtoolsEvaluate
    Abbildung 16: die neue Benutzeroberfläche für lange Aufgaben  
 :::image-end:::  
 
-Senden Sie Ihr Feedback, indem Sie [tweeten][PostTweetEdgeDevTools] oder auf das [Feedback](#feedback) -Symbol klicken.  
+Senden Sie Ihr Feedback per [Tweet][PostTweetEdgeDevTools] oder klicken Sie auf das Symbol [Feedback senden](#getting-in-touch-with-microsoft-edge-devtools-team) !  
 
 Chrom Problem [#1054447][CR1054447]  
 
@@ -272,22 +272,13 @@ Aktivieren Sie das Kontrollkästchen **nur den Mindestbereich für abgesicherten
 > [!NOTE]
 > Dieses Feature wurde in Microsoft Edge 81 gestartet.  Die hier in Microsoft Edge 83 behandelten Updates wurden nicht in [Neuerungen in devtools (Microsoft Edge 81)][WhatsNew81]behandelt.  
 
-## Feedback senden  
-
-So besprechen Sie die neuen Features und Änderungen in diesem Beitrag oder alles, was mit devtools zu tun hat:  
-
-*   Senden Sie Ihr Feedback über das **Feedback** -Symbol im devtools  
-*   Tweet bei [@EdgeDevTools][PostTweetEdgeDevTools]  
-*   Einen Vorschlag an [das gewünschte Web][TheWebWeWant] senden  
-*   Datei Fehler in diesem Dokument im [Edge-Entwickler-][GitHubMicrosoftDocsEdgeDeveloperNewIssue] Repository  
-
-:::image type="complex" source="../../media/2020/03/feedback-icon.msft.png" alt-text="Das * * Feedback * *-Symbol in der Microsoft Edge-devtools" lightbox="../../media/2020/03/feedback-icon.msft.png":::
-   Abbildung 18: das Symbol " **Feedback** " in der Microsoft Edge-devtools  
-:::image-end:::  
-
 ## Herunterladen der Microsoft Edge Preview-Kanäle  
 
 Wenn Sie unter Windows oder macOS arbeiten, sollten Sie die [Microsoft Edge Preview-Kanäle][MicrosoftEdgePreviewChannels] als Standard Entwicklungsbrowser verwenden.  Über die Vorschau Kanäle erhalten Sie Zugriff auf die neuesten devtools-Funktionen.  
+
+## Kontakt mit dem Microsoft Edge devtools-Team  
+
+[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
 <!-- links -->  
 

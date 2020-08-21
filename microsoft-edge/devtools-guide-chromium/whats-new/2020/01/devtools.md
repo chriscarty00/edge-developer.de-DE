@@ -2,16 +2,16 @@
 title: Neuerungen in devtools (Microsoft Edge 81)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/20/2020
+ms.date: 08/17/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: 6de8f7b11edb476f2656dd6f16e02413b1873ed8
-ms.sourcegitcommit: a5392ab44133d742c0e1fa500ad9a872989b7c3f
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+ms.openlocfilehash: 8e9e6885d04c7ad15a688b51cee4c16440d3ca1e
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "10684713"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10942101"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,15 +27,7 @@ ms.locfileid: "10684713"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-
-
-# Neuerungen in devtools (Microsoft Edge 81)   
-
-
+# Neuerungen in devtools (Microsoft Edge 81)  
 
 ## Ankündigungen des Microsoft Edge devtools-Teams  
 
@@ -51,7 +43,7 @@ Das devtools-Team hat 170-Änderungen zu chromium beigetragen, um Probleme mit d
 
 Möchten Sie erfahren, wie Sie Ihre Webseite für alle Benutzer barrierefrei gestalten können?  Laden Sie die [Barrierefreiheits Einblicke][AccessibilityInsights] und [webhint][WebhintBrowserExtension] -Erweiterungen für Microsoft Edge herunter, um zu beginnen.  
 
-Wenn Sie Bildschirmsprachausgaben oder die Tastatur verwenden, um in der devtools zu navigieren, senden Sie uns Ihr Feedback, indem Sie uns [tweeten][PostTweetEdgeDevTools] oder auf das [Feedback](#feedback) -Symbol klicken.  
+Wenn Sie Bildschirmsprachausgaben oder die Tastatur verwenden, um in der devtools zu navigieren, senden Sie uns Ihr Feedback, indem Sie uns [tweeten][PostTweetEdgeDevTools] oder auf das Symbol [Feedback senden](#getting-in-touch-with-microsoft-edge-devtools-team) klicken.  
 
 Chrom Problem [#963183][crbug963183]  
 
@@ -120,7 +112,7 @@ Wenn Sie möchten, dass Microsoft Edge eine Sprache hat und Ihr devtools in Engl
 
 **Konsolen** Nachrichten werden nicht lokalisiert.  In der Sprache, die Sie für Microsoft Edge verwenden, werden nur die Zeichenfolgen angezeigt, die in der devtools-Benutzeroberfläche verwendet werden.  
 
-Wenn Sie das devtools in einer anderen Sprache als den verfügbaren verwenden möchten, senden Sie uns eine [Tweet][PostTweetEdgeDevTools] oder klicken Sie auf das [Feedback](#feedback) -Symbol.  
+Wenn Sie das devtools in einer anderen Sprache als den verfügbaren verwenden möchten, senden Sie uns eine [Tweet][PostTweetEdgeDevTools] oder klicken Sie auf das Symbol [Feedback senden](#getting-in-touch-with-microsoft-edge-devtools-team) .  
 
 Chrom Problem [#941561][crbug941561]  
 
@@ -144,7 +136,7 @@ Verwenden Sie die **3D-Ansicht** , um Ihre Webanwendung zu debuggen, indem Sie d
 
 Um auf die 3D-Ansicht zuzugreifen, drücken Sie `Ctrl`  +  `Shift`  +  `P` , geben Sie in **3D-** Ansicht ein, und wählen Sie **3D-Ansicht**anzeigen aus.  
 
-Wir arbeiten an der Benutzeroberfläche und fügen der 3D-Ansicht Weitere Funktionen hinzu, also senden Sie uns Ihr [Feedback](#feedback).  
+Wir arbeiten an der Benutzeroberfläche und fügen der 3D-Ansicht Weitere Funktionen hinzu, also senden Sie uns Ihr [Feedback](#getting-in-touch-with-microsoft-edge-devtools-team).  
 
 Chrom Problem [#987787][crbug987787]  
 
@@ -171,7 +163,7 @@ Debuggen Sie mit dem [Debugger für Microsoft Edge][VisualStudioMarketplaceDebug
 
 Weitere Informationen finden Sie unter [Debuggen von Microsoft Edge aus vs-Code][VisualStudioCodeDebuggerEdgeExtension].  
 
-#### webhint  
+#### Webhint  
 
 Die [webhint][VisualStudioMarketplaceWebhintExtension] vs-Code Erweiterung verwendet `webhint` , um Ihre Webseite zu verbessern, während Sie Sie schreiben! Mit dieser Erweiterung wird die Diagnose für Ihre Arbeitsbereichsdateien basierend auf der Analyse ausgeführt und gemeldet `webhint` .  
 
@@ -199,15 +191,13 @@ Die nach Verfolgungs Verhinderung ist ein einzigartiges Feature in Microsoft Edg
 > Nachrichten in der Konsole, wenn die nach Verfolgungs Prävention den Zugriff auf den Speicher für einen Tracker blockiert  
 > ![Nachrichten in der Konsole, wenn die nach Verfolgungs Prävention den Zugriff auf den Speicher für einen Tracker blockiert][ImageTrackingPrevention]  
 
-[Weitere Informationen finden Sie unter Verhinderung von Nachverfolgung und dem Gleichgewichtzwischen Datenschutz und Web-Kompatibilität][TrackingPrevention].
-
-
+[Weitere Informationen finden Sie unter Verhinderung von Nachverfolgung und dem Gleichgewichtzwischen Datenschutz und Web-Kompatibilität][TrackingPrevention].  
 
 ## Ankündigungen aus dem Chromium-Projekt  
 
 In den folgenden Abschnitten werden weitere in Microsoft Edge 81 verfügbare Features angekündigt, die zum Open-Source-Projekt Chromium beigetragen haben.  
 
-### Moto G4-Unterstützung im Gerätemodus 
+### Moto G4-Unterstützung im Gerätemodus  
 
 Nachdem Sie [die Gerätesymbolleiste aktiviert][DeviceToolbar]haben, simulieren Sie die Abmessungen eines Moto G4-Viewports in der **Geräte** Liste.  
 
@@ -228,9 +218,9 @@ Verwandte Funktionen:
 
 Chrom Problem [#924693][crbug924693]  
 
-### Updates für Cookies   
+### Updates für Cookies  
 
-#### Blockierte Cookies im Bereich "Cookies"   
+#### Blockierte Cookies im Bereich "Cookies"  
 
 Im Bereich "Cookies" im Bereich "Anwendung" werden nun blockierte Cookies mit gelbem Hintergrund angezeigt.  
 
@@ -240,7 +230,7 @@ Im Bereich "Cookies" im Bereich "Anwendung" werden nun blockierte Cookies mit ge
 
 Chrom Problem [#1030258][crbug|::ref1::|]  
 
-#### Cookie-Priorität im Bereich "Cookie"   
+#### Cookie-Priorität im Bereich "Cookie"  
 
 Die Cookies-Tabellen in den Bereichen Netzwerk und Anwendung beinhalten nun eine **Prioritäts** Spalte.  
 
@@ -249,7 +239,7 @@ Die Cookies-Tabellen in den Bereichen Netzwerk und Anwendung beinhalten nun eine
 
 Chrom Problem [#1026879][crbug1026879]  
 
-#### Bearbeiten aller Cookiewerte   
+#### Bearbeiten aller Cookiewerte  
 
 Alle Zellen in den Cookie-Tabellen können jetzt bearbeitet werden, mit Ausnahme der Zellen in der Spalte **size** , da diese Spalte die Netzwerkgröße des Cookies in Byte darstellt.  In den [Feldern][CookiesFields] finden Sie eine Erläuterung der einzelnen Spalten.  
 
@@ -257,27 +247,27 @@ Alle Zellen in den Cookie-Tabellen können jetzt bearbeitet werden, mit Ausnahme
 > Bearbeiten eines Cookie-Werts  
 > ![Bearbeiten eines Cookie-Werts][ImageEditCookie]  
 
-#### Kopieren als Node. js FETCH, um Cookiedaten einzubeziehen   
+#### Kopieren als Node.js FETCH, um Cookiedaten einzubeziehen  
 
-Klicken Sie mit der rechten Maustaste auf eine **Copy**Netzwerkanforderung, und wählen Sie Kopie  >  **als Node. js FETCH** kopieren aus, um einen `fetch` Ausdruck abzurufen, der Cookiedaten enthält.  
+Klicken Sie mit der rechten Maustaste auf eine **Copy**Netzwerkanforderung, und wählen Sie Kopie  >  **als Node.js FETCH** kopieren aus, um einen `fetch` Ausdruck abzurufen, der Cookiedaten enthält.  
 
 > ##### Abbildung 14  
-> Kopieren als Node. js FETCH  
-> ![Kopieren als Node. js FETCH][ImageCopyFetch]  
+> Kopieren als Node.js FETCH  
+> ![Kopieren als Node.js FETCH][ImageCopyFetch]  
 
 Chrom Problem [#1029826][crbug1029826]  
 
-### Genauere Symbole für Web App-Manifeste   
+### Genauere Symbole für Web App-Manifeste  
 
 Zuvor hat der Bereich Manifest im Bereich Anwendung eigene Anforderungen gesendet, um Symbole für das Web App-Manifest anzuzeigen.  DevTools zeigt nun genau dasselbe Manifest-Symbol an, das von Microsoft Edge verwendet wird.  
 
 > ##### Abbildung 15  
 > Symbole im Bereich "Manifest"  
-> ![Symbole im Bereich "Manifest"][ImageManifestIcon]   
+> ![Symbole im Bereich "Manifest"][ImageManifestIcon]  
 
 Chrom Problem [#985402][crbug985402]  
 
-### Zeigen Sie auf CSS-Inhaltseigenschaften, um nicht maskierte Werte anzuzeigen.   
+### Zeigen Sie auf CSS-Inhaltseigenschaften, um nicht maskierte Werte anzuzeigen.  
 
 Zeigen Sie mit der Maus auf den Wert einer `content` Eigenschaft, um die nicht maskierte Version des Werts anzuzeigen.  
 
@@ -285,15 +275,15 @@ Wenn Sie beispielsweise in dieser [Demo][CSSContentDemo] das `p::after` Pseudoel
 
 > ##### Abbildung 16  
 > Die maskierte Zeichenfolge  
-> ![Die maskierte Zeichenfolge][ImageEscapedString]   
+> ![Die maskierte Zeichenfolge][ImageEscapedString]  
 
 Wenn Sie mit dem Mauszeiger auf den Wert zeigen, wird `content` der Wert "nicht maskiert" angezeigt:  
 
 > ##### Abbildung 17  
 > Der Wert "nicht maskiert"  
-> ![Der Wert "nicht maskiert"][ImageUnescapedString]   
+> ![Der Wert "nicht maskiert"][ImageUnescapedString]  
 
-### Detailliertere Quellen Zuordnungsfehler in der Konsole   
+### Detailliertere Quellen Zuordnungsfehler in der Konsole  
 
 Die Konsole bietet nun ausführlichere Informationen dazu, warum eine Quell Karte nicht geladen oder analysiert werden konnte.  Zuvor wurde nur ein Fehler bereitgestellt, ohne zu erklären, was schief gelaufen ist.  
 
@@ -301,7 +291,7 @@ Die Konsole bietet nun ausführlichere Informationen dazu, warum eine Quell Kart
 > Fehler beim Laden der Quell Karte in der Konsole  
 > ![Fehler beim Laden der Quell Karte in der Konsole][ImageSourcemapError]  
 
-### Einstellung zum Deaktivieren des Scrollens hinter dem Ende einer Datei   
+### Einstellung zum Deaktivieren des Scrollens hinter dem Ende einer Datei  
 
 Öffnen Sie [Einstellungen][Settings] , und deaktivieren Sie dann die Einstellungen für **"Einstellungen"**,  >  **Sources**  >  **Allow scrolling past end of file** um das standardmäßige UI-Verhalten zu deaktivieren, mit dem Sie über das Ende einer Datei im **Quellen** Panel hinaus scrollen können.  
 
@@ -313,33 +303,19 @@ Die Konsole bietet nun ausführlichere Informationen dazu, warum eine Quell Kart
 > Das Scrollen hinter dem Ende einer Datei ist jetzt im Quellen Panel deaktiviert  
 > ![Das Scrollen hinter dem Ende einer Datei ist jetzt im Quellen Panel deaktiviert][ImageScroll]  
 
-## Feedback senden   
-
-
-
-So besprechen Sie die neuen Features und Änderungen in diesem Beitrag oder alles, was mit devtools zu tun hat:  
-
-*   Senden Sie Ihr Feedback über das **Feedback** -Symbol im devtools  
-
-> ##### Abbildung 21  
-> Das **Feedback** Symbol in der Microsoft Edge-devtools  
-> ![Das * * Feedback * *-Symbol in der Microsoft Edge-devtools][ImageFeedbackIcon]  
-
-*   Tweet bei [@EdgeDevTools][PostTweetEdgeDevTools]  
-*   Einen Vorschlag an [das gewünschte Web][TheWebWeWant] senden  
-*   Datei Fehler in diesem Dokument im [Edge-Entwickler-][GitHubMicrosoftDocsEdgeDeveloperNewIssue] Repository  
-
-## Herunterladen der Microsoft Edge Preview-Kanäle   
+## Herunterladen der Microsoft Edge Preview-Kanäle  
 
 Wenn Sie unter Windows oder macOS arbeiten, sollten Sie die [Microsoft Edge Preview-Kanäle][MicrosoftEdgePreviewChannels] als Standard Entwicklungsbrowser verwenden.  Über die Vorschau Kanäle erhalten Sie Zugriff auf die neuesten devtools-Funktionen.  
 
-<!-- <<../../_shared/devtools-feedback.md>>
+## Kontakt mit dem Microsoft Edge devtools-Team  
 
-<<../../_shared/canary.md>>
+[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
-<<../../_shared/discover.md>> -->
+<!-- <<../../_shared/devtools-feedback.md>>  
 
+<<../../_shared/canary.md>>  
 
+<<../../_shared/discover.md>> -->  
 
 <!-- image links -->  
 
@@ -356,15 +332,13 @@ Wenn Sie unter Windows oder macOS arbeiten, sollten Sie die [Microsoft Edge Prev
 [ImageMotoG4Frame]: ../../images/2020/01/motog4frame.msft.png "Abbildung 11: Anzeigen der Moto G4-Hardware" 
 [ImageBlockedCookies]: ../../images/2020/01/blockedcookies.msft.png "Abbildung 12: blockierte Cookies im Bereich "Cookies" des Anwendungsbereichs"
 [ImageEditCookie]: ../../images/2020/01/editcookie.msft.png "Abbildung 13: Bearbeiten eines Cookie-Werts"
-[ImageCopyFetch]: ../../images/2020/01/fetchcookies.msft.png "Abbildung 14: Kopieren als Node. js FETCH"
+[ImageCopyFetch]: ../../images/2020/01/fetchcookies.msft.png "Abbildung 14: Kopieren als Node.js FETCH"
 [ImageManifestIcon]: ../../images/2020/01/manifesticons.msft.png "Abbildung 15: Symbole im Bereich "Manifest""
 [ImageEscapedString]: ../../images/2020/01/escapedstring.msft.png "Abbildung 16: die maskierte Zeichenfolge"
 [ImageUnescapedString]: ../../images/2020/01/unescapedstring.msft.png "Abbildung 17: der Wert "nicht maskiert""
 [ImageSourcemapError]: ../../images/2020/01/sourcemap.msft.png "Abbildung 18: Fehler beim Laden der Quell Karte in der Konsole"
 [ImageSettings]: ../../images/2020/01/settings.msft.png "Abbildung 19: Deaktivieren des gescrollten Bild Laufs am Ende einer Datei in den Einstellungen"
 [ImageScroll]: ../../images/2020/01/scrollingsources.msft.png "Abbildung 20: das Scrollen hinter dem Ende einer Datei ist jetzt im Quellen Panel deaktiviert"
-[ImageFeedbackIcon]: ../../images/2020/01/feedback-icon.msft.png "Abbildung 21: das * * Feedback * *-Symbol in der Microsoft Edge-devtools"
-
 
 <!-- links -->  
 

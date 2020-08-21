@@ -2,16 +2,16 @@
 title: Neuerungen in devtools (Microsoft Edge 85)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/24/2020
+ms.date: 08/17/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 7b0193d25fb1d081e5746ec1271ca7b9f4e60c23
-ms.sourcegitcommit: ad5eb43172280974b8c063867c2097f7c5c0e77d
+ms.openlocfilehash: f569414a95336278c93b1bbafd57153ca902df12
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "10898311"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10942194"
 ---
 # Neuerungen in devtools (Microsoft Edge 85)  
 
@@ -72,7 +72,7 @@ Chrom Problem [#1093687][CR1093687]
 
 Die Registerkarte " **Anzeige** Dauer" des **Netzwerk** Panels enthält jetzt `respondWith` Service Worker-Ereignisse.  Das `respondWith` Dienst Arbeitskraft-Ereignis zeigt die Dauer ab dem Zeitpunkt an, zu dem der Service Worker- `fetch` Ereignishandler mit dem Zeitpunkt beginnt, zu dem das `respondWith` Versprechen des `fetch` Handlers abgerechnet wird.  
 
-:::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text="Das respondWith-Dienst Arbeitskraft Ereignis auf der Registerkarte Anzeigedauer des Netzwerk Panels" lightbox="../../media/2020/06/timing-tab.msft.png":::
+:::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text="Das respondWith-Dienst Arbeitskraft Ereignis auf der Registerkarte "Anzeigedauer" des Netzwerk Panels" lightbox="../../media/2020/06/timing-tab.msft.png":::
    Das `respondWith` Service Worker-Ereignis auf der Registerkarte " **Anzeige** Dauer" des **Netzwerk** Panels  
 :::image-end:::  
 
@@ -92,7 +92,7 @@ Chrom Problem [#1066579][CR1066579]
 
 [webhint][WebhintMain] ist ein Open-Source-Tool, das in Echtzeit Feedback zur Barrierefreiheit, browserübergreifenden Kompatibilität, Sicherheit, Leistung, PWAs und anderen gängigen Webentwicklungs Problemen von Websites bietet.  Sie können jetzt webhint-Feedback im [Problem][DevtoolsIssues] Bereich anzeigen.  
 
-:::image type="complex" source="../../media/2020/06/experiments-webhint.msft.png" alt-text="webhint-Feedback im Bereich Probleme" lightbox="../../media/2020/06/experiments-webhint.msft.png":::
+:::image type="complex" source="../../media/2020/06/experiments-webhint.msft.png" alt-text="webhint-Feedback im Bereich "Probleme"" lightbox="../../media/2020/06/experiments-webhint.msft.png":::
    webhint-Feedback im Bereich "Probleme"  
 :::image-end:::  
 
@@ -184,7 +184,7 @@ DevTools bietet nun eine bessere Unterstützung für einige der neuesten JavaScr
       [Optionale Verkettungs][V8DevOptionalChaining] Syntax Autovervollständigung  
    :::column-end:::
    :::column span="2":::
-      Die automatische Vervollständigung von Eigenschaften in der **Konsole** unterstützt jetzt optionale Verkettungs Syntax, beispielsweise `name?.` jetzt zusätzlich zu `name.` und `name[` .  
+      Die automatische Vervollständigung von Eigenschaften in der **Konsole** unterstützt jetzt optionale Verkettungs Syntax, beispielsweise  `name?.` jetzt zusätzlich zu `name.` und `name[` .  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -316,16 +316,7 @@ Wenn Sie unter Windows oder macOS arbeiten, sollten Sie die [Microsoft Edge Prev
 
 ## Kontakt mit dem Microsoft Edge devtools-Team  
 
-Verwenden Sie die folgenden Optionen, um die neuen Features und Änderungen im Beitrag zu besprechen, oder alles, was mit devtools zu tun hat.  
-
-* Senden Sie Ihr Feedback über das **Feedback** -Symbol im devtools  
-* Tweet bei [@EdgeDevTools][PostTweetEdgeDevTools]  
-* Einen Vorschlag an [das gewünschte Web][TheWebWeWant] senden  
-* Datei Fehler auf dieser Seite im [Edge-Entwickler-][GitHubMicrosoftDocsEdgeDeveloperNewIssue] Repository  
-
-:::image type="complex" source="../../media/2020/05/feedback-icon.msft.png" alt-text="Das Feedback Symbol in der Microsoft Edge-devtools" lightbox="../../media/2020/05/feedback-icon.msft.png":::
-  Das **Feedback** Symbol in der Microsoft Edge-devtools  
-:::image-end:::  
+[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
 <!-- links -->  
 

@@ -1,68 +1,73 @@
 ---
 description: Sicherstellen, dass sich der Medieninhalt auf Ihrer Website wie vorgesehen verhält
-title: Dev Guide – Richtlinien für die automatische Wiedergabe
+title: Richtlinien zur automatischen Wiedergabe – dev-Leitfaden
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 9/17/2018
+ms.date: 07/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Edge, Medien, Video, Audio, automatische Wiedergabe
 ms.custom: seodec18
-ms.openlocfilehash: 397c6f0a22359dbfab7c44370b0429147b7c9834
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 39c9bd8e9921167dfc3a9ab1a4cc12b2157f0f6f
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10566768"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10942063"
 ---
-# Richtlinien für die automatische Wiedergabe
+# Richtlinien für die automatische Wiedergabe  
 
-Microsoft Edge bietet Kunden die Möglichkeit, Ihre Browsereinstellungen auf Websites zu personalisieren, die Medien mit Sound wiedergeben, um Ablenkungen im Internet zu minimieren und die Bandbreite zu sparen. Darüber hinaus unterdrückt Microsoft Edge automatisch die automatische Wiedergabe von Medien in Hintergrundregisterkarten.
+[!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
-Benutzer können das Medienverhalten mit den Steuerelementen für die automatische Wiedergabe auf [globaler](#global-media-autoplay-settings) und [pro Website](#per-site-media-autoplay-settings) anpassen, die die folgenden Optionen bieten:
+Microsoft Edge bietet Kunden die Möglichkeit, Ihre Browsereinstellungen auf Websites zu personalisieren, die Medien mit Sound wiedergeben, um Ablenkungen im Internet zu minimieren und die Bandbreite zu sparen.  Darüber hinaus unterdrückt Microsoft Edge automatisch die automatische Wiedergabe von Medien in Hintergrundregisterkarten.  
 
-- " **Zulassen** " ist die Standardeinstellung, und die Wiedergabe von Videos wird fortgesetzt, wenn eine Registerkarte zuerst im Vordergrund angezeigt wird, nach Ermessen der Website.
+Benutzer können das Medienverhalten mit den Steuerelementen für die automatische Wiedergabe auf [globaler](#global-media-autoplay-settings) und [pro Website](#per-site-media-autoplay-settings) anpassen, die die folgenden Optionen bieten:  
 
-- **Limit** schränkt die automatische Wiedergabe nur dann ein, wenn Videos stumm geschaltet sind, sodass die Benutzer nie von Sound überrascht werden. Nachdem der Benutzer auf eine beliebige Stelle auf der Seite geklickt hat, ist die automatische Wiedergabe wieder aktiviert und wird weiterhin innerhalb dieser Domäne auf dieser Registerkarte zugelassen.
+*   `Allow`  Die Standardeinstellung, und die Wiedergabe von Videos erfolgt weiterhin, wenn eine Registerkarte zuerst im Vordergrund angezeigt wird, nach Ermessen der Website.  
 
-- **Blockieren** verhindert die automatische Wiedergabe auf allen Websites, bis Benutzer direkt mit dem Medieninhalt interagieren.
+*   `Limit`  Schränkt die automatische Wiedergabe ein, wenn Videos stumm geschaltet sind, sodass die Benutzer nie von Sound überrascht werden.  Nachdem der Benutzer auf eine beliebige Stelle auf der Seite geklickt hat, ist die automatische Wiedergabe wieder aktiviert und wird weiterhin innerhalb dieser Domäne auf dieser Registerkarte zugelassen.  
 
-## Einstellungen für die automatische Wiedergabe globaler Medien
+*   `Block`  Verhindern Sie sautoplay auf allen Websites, bis Benutzer direkt mit dem Medieninhalt interagieren.  
 
-Benutzer können das Standardverhalten für die automatische Wiedergabe für alle Websites unter **Erweiterte Einstellung**  >  **Medien Automatik**steuern.
+## Einstellungen für die automatische Wiedergabe globaler Medien  
 
-![Einstellungen für die automatische Wiedergabe globaler Medien](../media/autoplay_global.png)
+Benutzer können das Standardverhalten für die automatische Wiedergabe für alle Websites unter **Erweiterte Einstellung**  >  **Medien Automatik**steuern.  
 
-## Einstellungen für die automatische Wiedergabe von Medien pro Website
+:::image type="complex" source="../media/autoplay_global.png" alt-text="Einstellungen für die automatische Wiedergabe globaler Medien" lightbox="../media/autoplay_global.png":::
+   Einstellungen für die automatische Wiedergabe globaler Medien  
+:::image-end:::  
 
-Benutzer können das Verhalten der automatischen Wiedergabe pro Website unter dem Abschnitt " **Websiteberechtigungen** " im Bereich "Website Informationen" steuern. Diese Einstellung finden Sie, indem Sie auf das Symbol "Informationen" oder das Symbol "Sperren" auf der linken Seite der Adressleiste klicken und dann auf "Einstellungen für die Wiedergabe von Medien" klicken, um zu beginnen.
+## Einstellungen für die automatische Wiedergabe von Medien pro Website  
 
-Einstellungen pro Website überschreiben die globale Einstellung. Wenn ein Benutzer beispielsweise seine globale Einstellung auf "zulassen" festgelegt hat, aber eine Einstellung pro Website auf "blockieren" ändert, wird die automatische Wiedergabe für diese Website blockiert.
+Benutzer können das Verhalten der automatischen Wiedergabe pro Website unter dem Abschnitt " **Websiteberechtigungen** " im Bereich "Website Informationen" steuern.  Diese Einstellung finden Sie, indem Sie auf das Symbol "Informationen" oder das Symbol "Sperren" auf der linken Seite der Adressleiste klicken und dann auf "Einstellungen für die **Medienwiedergabe** " klicken, um zu beginnen.  
 
-![Einstellungen für die automatische Wiedergabe von Medien pro Website](../media/autoplay_per-site.png)
- 
-## Bewährte Methoden für Web-Entwickler
+Einstellungen pro Website überschreiben die globale Einstellung.  Wenn ein Benutzer beispielsweise die globale Einstellung auf `Allow` eine Einstellung pro Website festgelegt hat `Block` , wird die automatische Wiedergabe für diese Website blockiert.  
 
-Hier erfahren Sie, wie Sie eine gute Benutzerfreundlichkeit mit auf Ihrer Website gehosteten Medien gewährleisten:
+:::image type="complex" source="../media/autoplay_per-site.png" alt-text="Einstellungen für die automatische Wiedergabe von Medien pro Website" lightbox="../media/autoplay_per-site.png":::
+   Einstellungen für die automatische Wiedergabe von Medien pro Website  
+:::image-end:::  
 
-- Davon ausgehen, dass für jede Verwendung eines Medienelements Wil eine Benutzergeste erforderlich ist, um die Wiedergabe zu starten (da Benutzer die automatische Wiedergabe zu einem beliebigen Zeitpunkt blockieren können) und entsprechend planen.  Global-und pro-Site-AutoPlay-Richtlinien gelten für alle `<audio>` und `<video>` Elemente, unabhängig davon, wie Sie auf Ihrer Website verwendet werden.
+## Bewährte Methoden für Web-Entwickler  
 
-- Stellen Sie sicher, dass mediensteuerelemente immer auf dem Website Medium und dem Anzeigeninhalt vorhanden sind. Dadurch können Benutzer die Wiedergabe neu starten, wenn die automatische Wiedergabe auf der Seite blockiert ist.
+Hier erfahren Sie, wie Sie eine gute Benutzerfreundlichkeit mit auf Ihrer Website gehosteten Medien gewährleisten:  
 
-- Bewerten Sie, wie die automatische Wiedergabe die Benutzerfreundlichkeit auf Ihrer Website beeinträchtigen kann, und verwenden Sie die automatische Wiedergabe auf eine Weise, die unerwünschte Medienwiedergabe minimiert. Wenn die automatische Wiedergabe ein entscheidender Bestandteil ihrer Erfahrung ist, sollten Sie die Verwendung von stummgeschaltetem Inhalt verwenden, damit der Benutzer die Stummschaltung aufheben kann. Für stummgeschaltete Inhalte muss die Audioquelle entweder explizit stumm geschaltet oder nicht eingestellt sein. Andernfalls wird das Element nicht als stumm geschaltet angesehen.
+*   Davon ausgehen, dass für jede Verwendung eines Medienelements Wil eine Benutzergeste erforderlich ist, um die Wiedergabe zu starten \ (da Benutzer die automatische Wiedergabe zu einem beliebigen Zeitpunkt blockieren können \) und entsprechend planen.  Global-und pro-Site-AutoPlay-Richtlinien gelten für alle `<audio>` und `<video>` Elemente, unabhängig davon, wie Sie auf Ihrer Website verwendet werden.  
 
-- Verwenden Sie die systemeigenen Browsersteuerelemente für die Medienwiedergabe, sofern dies nicht unbedingt erforderlich ist. Dadurch wird eine konsistente Benutzeroberfläche gewährleistet. Wenn Sie stattdessen benutzerdefinierte Steuerelemente erstellen, stellen Sie sicher, dass die mediensteuerelemente immer vorhanden sind und dass Ihre Steuerelemente auf die Unterdrückung der automatischen Wiedergabe reagieren.
+*   Stellen Sie sicher, dass mediensteuerelemente immer auf dem Website Medium und dem Anzeigeninhalt vorhanden sind.  Dadurch können Benutzer die Wiedergabe neu starten, wenn die automatische Wiedergabe auf der Seite blockiert ist.  
 
-### Iframe-Delegierung
+*   Bewerten Sie, wie die automatische Wiedergabe die Benutzerfreundlichkeit auf Ihrer Website beeinträchtigen kann, und verwenden Sie die automatische Wiedergabe auf eine Weise, die unerwünschte Medienwiedergabe minimiert.  Wenn die automatische Wiedergabe ein entscheidender Bestandteil ihrer Erfahrung ist, sollten Sie die Verwendung von stummgeschaltetem Inhalt verwenden, damit der Benutzer die Stummschaltung aufheben kann.  Für stummgeschaltete Inhalte muss die Audioquelle entweder explizit stumm geschaltet oder nicht eingestellt sein.  Andernfalls wird das Element nicht als stumm geschaltet angesehen.  
 
-Die automatische Wiedergabe in einer `<iframe>` erbt die Berechtigung "AutoPlay" von der übergeordneten Seite unabhängig vom Inhalts Ursprung. In einem Wiedergabelisten Szenario, in dem jede Mediendatei von einem separaten IFrame gehostet wird, muss der Benutzer die Wiedergabe nur einmal für die gesamte Wiedergabeliste initiieren.
+*   Verwenden Sie die systemeigenen Browsersteuerelemente für die Medienwiedergabe, sofern dies nicht unbedingt erforderlich ist.  Dadurch wird eine konsistente Benutzeroberfläche gewährleistet.  Wenn Sie stattdessen benutzerdefinierte Steuerelemente erstellen, stellen Sie sicher, dass die mediensteuerelemente immer vorhanden sind und dass Ihre Steuerelemente auf die Unterdrückung der automatischen Wiedergabe reagieren.  
 
-### Erkennen, wenn die automatische Wiedergabe zulässig ist
+### Iframe-Delegierung  
 
-Sie können die Wiedergabesteuerelemente so anpassen, dass der richtige Zustand angezeigt wird, wenn die automatische Wiedergabe blockiert wird, indem Sie die von der `play()` Funktion für das Medienelement zurückgegebene Versprechung untersuchen:
+Die automatische Wiedergabe in einer `<iframe>` erbt die Berechtigung "AutoPlay" von der übergeordneten Seite unabhängig vom Inhalts Ursprung.  In einem Wiedergabelisten Szenario, in dem jede Mediendatei von einem separaten IFrame gehostet wird, muss der Benutzer die Wiedergabe nur einmal für die gesamte Wiedergabeliste initiieren.  
 
-```Javascript
+### Erkennen, wenn die automatische Wiedergabe zulässig ist  
 
+Sie können die Wiedergabesteuerelemente so anpassen, dass der richtige Zustand angezeigt wird, wenn die automatische Wiedergabe blockiert wird, indem Sie die von der `play()` Funktion für das Medienelement zurückgegebene Versprechung untersuchen:  
+
+```javascript
 var promise = document.querySelector('video').play();
 
 if (promise !== undefined) { 
@@ -73,5 +78,4 @@ if (promise !== undefined) {
         // Autoplay started
     }); 
 }
-
-```
+```  
