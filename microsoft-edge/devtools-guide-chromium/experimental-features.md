@@ -3,16 +3,16 @@ description: Die neuesten experimentellen Features in Microsoft Edge devtools
 title: Experimentelle Funktionen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/21/2020
+ms.date: 08/25/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools, Experiment
-ms.openlocfilehash: 6b3e1c06d6b8ed79054c28df483fcca93e5751d6
-ms.sourcegitcommit: 19ef1422733ef1fd051d2b4f0263ce191e8d67bc
+ms.openlocfilehash: 4c2541615700f2c637f293ee6a3fbacd9ccbc43a
+ms.sourcegitcommit: 5ed791ed5423a3a4b03e8a1c7927f026307a6673
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "10902860"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "10960719"
 ---
 # Experimentelle Funktionen  
 
@@ -49,20 +49,21 @@ In den folgenden Abschnitten werden die neuen experimentellen Features beschrieb
 | [Aktivieren der Registerkarte "Benutzerdefinierte Tastenkombinationen"](#enable-custom-keyboard-shortcuts-settings-tab) | 84 oder höher |
 | [Debuggen von neuen CSS-Raster Features aktivieren](#enable-new-css-grid-debugging-features) | 85 oder höher |  
 | [Aktivieren der Unterstützung für das Verschieben von Tabstopps zwischen Bereichen](#enable-support-to-move-tabs-between-panels) | 85 oder höher |  
-| [Webhint aktivieren](#enable-webhint) | 85 oder höher | 
-| [Aktivieren der Netzwerk Konsole](#enable-network-console) | 85 oder höher |
+| [Webhint aktivieren](#enable-webhint) | 85 oder höher |  
+| [Aktivieren der Netzwerk Konsole](#enable-network-console) | 85 oder höher |  
+| [Quellauftrags Anzeige aktivieren](#enable-source-order-viewer) | 86 oder höher |  
 
-### Aktivieren der Registerkarte "Benutzerdefinierte Tastenkombinationen"
+### Aktivieren der Registerkarte "Benutzerdefinierte Tastenkombinationen"  
 
-Enthält eine neue **Verknüpfungs** Seite in [devtools-Einstellungen][DevToolsCustomizeSettings] , die das Zuordnen von [Tastenkombinationen][DevToolsShortcuts] im devtools zu [vs-Code][VisualstudioCode]ermöglicht.  
+Stellt eine neue **Verknüpfungs** Seite in [devtools-Einstellungen][DevToolsCustomizeSettings] bereit, die das Zuordnen von [Tastenkombinationen][DevToolsShortcuts] im devtools zu [Microsoft Visual Studio-Code][VisualstudioCode]ermöglicht.  
 
-Nachdem Sie das Experiment aktiviert haben, öffnen Sie die [devtools-Einstellungen][DevToolsCustomizeSettings] mithilfe von SELECT erneut `Shift` + `?` .  Navigieren Sie zur Seite neue **Verknüpfungen** .  Wählen Sie im Dropdownmenü **Tastenkombinationen von Voreinstellungen** **devtools (Standard)** aus, und wählen Sie **Visual Studio-Code**aus.  Die Tastenkombinationen im devtools entsprechen nun den Tastenkombinationen für äquivalente Aktionen in vs-Code.  
+Nachdem Sie das Experiment aktiviert haben, öffnen Sie die [devtools-Einstellungen][DevToolsCustomizeSettings] mithilfe von SELECT erneut `Shift` + `?` .  Navigieren Sie zur Seite neue **Verknüpfungen** .  Wählen Sie im Dropdownmenü **Tastenkombinationen von Voreinstellungen** **devtools (Standard)** aus, und wählen Sie **Visual Studio-Code**aus.  Die Tastenkombinationen im devtools entsprechen nun den Tastenkombinationen für entsprechende Aktionen in Visual Studio-Code.  
 
-:::image type="complex" source="./media/experiments-keyboard-shortcut.png" alt-text="Anpassen von Tastenkombinationen im devtools an vs-Code" lightbox="./media/experiments-keyboard-shortcut.png":::
-   Anpassen von Tastenkombinationen im devtools an vs-Code
+:::image type="complex" source="./media/experiments-keyboard-shortcut.png" alt-text="Zuordnen von Tastenkombinationen im devtools zu Visual Studio-Code" lightbox="./media/experiments-keyboard-shortcut.png":::
+   Zuordnen von Tastenkombinationen im devtools zu Visual Studio-Code  
 :::image-end:::  
 
-Beispielsweise ist unter Windows die Tastenkombination zum Anhalten oder Fortsetzen der Ausführung eines Skripts im [vs-Code][VisualstudioCodeShortcutsKeyboardWindows] `F5` .  Mit der **devtools (Standardeinstellung)** ist die gleiche Verknüpfung in der devtools `F8` .  Mit der **Visual Studio-Code** Vorgabe ist auch die Verknüpfung `F5` .  
+Unter Windows wird beispielsweise die Tastenkombination zum Anhalten oder Fortsetzen der Ausführung eines Skripts in [Visual Studio-Code][VisualstudioCodeShortcutsKeyboardWindows] bereitgestellt `F5` .  Mit der **devtools (Standardeinstellung)** ist die gleiche Verknüpfung in der devtools `F8` .  Mit der **Visual Studio-Code** Vorgabe ist auch die Verknüpfung `F5` .  
 
 ### Debuggen von neuen CSS-Raster Features aktivieren  
 
@@ -88,28 +89,46 @@ In der Regel können Tools, wie **Elemente** und **Netzwerke** , nur im Hauptber
 
 [webhint][WebhintMain] ist ein Open-Source-Tool, das in Echtzeit Feedback zur Barrierefreiheit, browserübergreifenden Kompatibilität, Sicherheit, Leistung, PWAs und anderen gängigen Webentwicklungs Problemen von Websites bietet.  Das [webhint-Experiment führt][WebhintMain] das webhint-Feedback in devtools im Bereich [Probleme][DevtoolsIssues] .  Sie können das Problem auswählen, um die Dokumentation zur Behebung des Problems und eine Liste der betroffenen Ressourcen auf Ihrer Website anzuzeigen.  Wählen Sie einen Ressourcen Link aus, um den entsprechenden Bereich für **Netzwerke**, **Quellen**oder **Elemente** in devtools zu öffnen.  
 
-:::image type="complex" source="./media/experiments-webhint.png" alt-text="webhint-Feedback im Bereich Probleme" lightbox="./media/experiments-webhint.png":::
-   webhint-Feedback im Bereich "Probleme"  
-:::image-end:::      
+:::image type="complex" source="./media/experiments-webhint.png" alt-text="webhint-Feedback im Bereich "Probleme"" lightbox="./media/experiments-webhint.png":::
+   webhint-Feedback im Bereich " **Probleme** "  
+:::image-end:::  
 
 <!--Available in Microsoft Edge version 85 and later.  -->  
 
-### Aktivieren der Netzwerk Konsole
+### Aktivieren der Netzwerk Konsole  
 
 **Netzwerk Konsole** ist der Arbeitstitel eines Experiments, um synthetische Netzwerkanforderungen über HTTP zu stellen.  Sie können das **Netzwerkkonsolen** Experiment verwenden, um Web-API-Anforderungen zu senden.  
 
-Nachdem Sie das Experiment aktiviert haben, stellen Sie sicher, dass Sie das devtools erneut starten. So verwenden Sie die Netzwerk Konsole:
-1.  Öffnen Sie den Bereich **Netzwerk** .
-1.  Suchen Sie die Netzwerkanforderung, die Sie ändern möchten, und senden Sie Sie erneut.
-1.  Öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie **Bearbeiten und wiedergeben**aus. 
-1.  Wenn die **Netzwerk Konsole** geöffnet wird, bearbeiten Sie die Netzwerk Anforderungsinformationen.
+Nachdem Sie das Experiment aktiviert haben, stellen Sie sicher, dass Sie das devtools erneut starten.  So verwenden Sie die Netzwerk Konsole:  
+
+1.  Öffnen Sie den Bereich **Netzwerk** .  
+1.  Suchen Sie die Netzwerkanforderung, die Sie ändern möchten, und senden Sie Sie erneut.  
+1.  Öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie **Bearbeiten und wiedergeben**aus.  
+1.  Wenn die **Netzwerk Konsole** geöffnet wird, bearbeiten Sie die Netzwerk Anforderungsinformationen.  
 1.  Wählen Sie **senden**aus.  
 
 :::image type="complex" source="./media/network-network-console.png" alt-text="Netzwerk Konsole im Konsolen Einzug" lightbox="./media/network-network-console.png":::
-Netzwerk Konsole im Konsolen Einzug
-:::image-end::: 
+   **Netzwerk Konsole** im **Konsolen** Einzug  
+:::image-end:::  
 
 <!--Available in Microsoft Edge version 85 and later.  --> 
+
+### Quellauftrags Anzeige aktivieren  
+
+Die **Ansicht "Quellreihenfolge** " ist der Arbeitstitel eines Experiments, um die Reihenfolge der Elemente in der Seitenquelle anzuzeigen.  Sie können das Experiment der **Quellauftrags Anzeige** verwenden, um Barrierefreiheitsprobleme in Ihren Seiten zu finden, da sich die Anzeigereihenfolge auf dem Bildschirm von der Reihenfolge der Quelle unterscheiden kann, die die Benutzer der Bildschirmsprachausgabe verwirrt.  
+
+Nachdem Sie das Experiment aktiviert haben, stellen Sie sicher, dass Sie das devtools erneut starten.  So verwenden Sie die Quellauftrags Anzeige:  
+
+1.  Öffnen Sie den Bereich **Elemente** .  
+1.  Öffnen Sie den Bereich " **Barrierefreiheit** " im Bereich "Schublade \" (unten).  
+1.  Aktivieren Sie im Abschnitt **Quellauftrags Anzeige** das Kontrollkästchen **Quellreihenfolge anzeigen** .  
+1.  Markieren Sie ein beliebiges HTML-Element, um ein Overlay anzuzeigen, das die Reihenfolge in der Seitenquelle enthält.  
+
+:::image type="complex" source="./media/experiments-source-order-viewer.msft.png" alt-text="Viewer für Quellreihenfolge im Bereich "Barrierefreiheit"" lightbox="./media/experiments-source-order-viewer.msft.png":::
+   **Viewer für Quellreihenfolge** im Bereich " **Barrierefreiheit** "  
+:::image-end:::  
+
+<!--Available in Microsoft Edge version 86 and later.  -->  
 
 ## Frühere experimentelle Features  
 
@@ -119,11 +138,11 @@ Netzwerk Konsole im Konsolen Einzug
 
 Sie können Feedback zu Microsoft Edge devtools-Experimenten oder zu allem anderen, was mit devtools zu tun hat.  
 
-*   Senden Sie Ihr Feedback über das Feedback-Symbol im devtools  
+*   Senden Sie Ihr Feedback über das Symbol " **Feedback senden** " im devtools  
 *   Tweet bei [@EdgeDevTools][TwitterEdgedevtools]  
 
-:::image type="complex" source="./media/devtools-feedback.png" alt-text="Symbol Feedback im Microsoft Edge-devtools" lightbox="./media/devtools-feedback.png":::
-   Symbol "Feedback" im Microsoft Edge-devtools  
+:::image type="complex" source="./media/devtools-feedback.png" alt-text="Symbol "Feedback senden" im Microsoft Edge-devtools" lightbox="./media/devtools-feedback.png":::
+   Symbol " **Feedback senden** " im Microsoft Edge-devtools  
 :::image-end:::  
 
 <!-- links -->  
@@ -136,7 +155,7 @@ Sie können Feedback zu Microsoft Edge devtools-Experimenten oder zu allem ander
 
 [TwitterEdgedevtools]: https://www.twitter.com/EdgeDevTools "Microsoft Edge-devtools | Twitter"  
 
-[VisualstudioCode]: https://code.visualstudio.com "Visual Studio-Code"  
-[VisualstudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Visual Studio-Code Tastenkombinationen für Windows | Visual Studio-Code"  
+[VisualstudioCode]: https://code.visualstudio.com "Microsoft Visual Studio-Code"  
+[VisualstudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Visual Studio-Code Tastenkombinationen für Windows | Microsoft Visual Studio-Code"  
 
 [WebhintMain]: https://webhint.io "webhint" 
