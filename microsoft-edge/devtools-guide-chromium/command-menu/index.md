@@ -2,16 +2,16 @@
 title: Ausführen von Befehlen mit dem Befehlsmenü von Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/24/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: 748008b347a3498008748b9c3f9ecc1445c47f12
-ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+ms.openlocfilehash: 09adaadd6f62710b219911f69fbe39ba8edfb61a
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601747"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10982549"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -31,61 +31,54 @@ ms.locfileid: "10601747"
 
 
 
-# <span data-ttu-id="1cdc8-103">Ausführen von Befehlen mit dem Befehlsmenü von Microsoft Edge devtools</span><span class="sxs-lookup"><span data-stu-id="1cdc8-103">Run Commands With The Microsoft Edge DevTools Command Menu</span></span>   
+# <span data-ttu-id="4763d-103">Ausführen von Befehlen mit dem Befehlsmenü von Microsoft Edge devtools</span><span class="sxs-lookup"><span data-stu-id="4763d-103">Run Commands With The Microsoft Edge DevTools Command Menu</span></span>   
 
   
 
-<span data-ttu-id="1cdc8-104">Das Befehlsmenü bietet eine schnelle Möglichkeit, auf der Benutzeroberfläche von Microsoft Edge devtools zu navigieren und häufige Aufgaben wie das [Deaktivieren von JavaScript][JavascriptDisable]durchzuführen.</span><span class="sxs-lookup"><span data-stu-id="1cdc8-104">The Command Menu provides a fast way to navigate the Microsoft Edge DevTools UI and accomplish common tasks, such as [disabling JavaScript][JavascriptDisable].</span></span>  <span data-ttu-id="1cdc8-105">Möglicherweise sind Sie mit einem ähnlichen Feature in Visual Studio-Code vertraut, der als [Befehls Palette][VisualStudioCodeUICommandPalette]bezeichnet wird, was die ursprüngliche Inspiration für das Befehlsmenü war.</span><span class="sxs-lookup"><span data-stu-id="1cdc8-105">You may be familiar with a similar feature in Visual Studio Code called the [Command Palette][VisualStudioCodeUICommandPalette], which was the original inspiration for the Command Menu.</span></span>  
+<span data-ttu-id="4763d-104">Das Befehlsmenü bietet eine schnelle Möglichkeit, auf der Benutzeroberfläche von Microsoft Edge devtools zu navigieren und häufige Aufgaben wie das [Deaktivieren von JavaScript][JavascriptDisable]durchzuführen.</span><span class="sxs-lookup"><span data-stu-id="4763d-104">The Command Menu provides a fast way to navigate the Microsoft Edge DevTools UI and accomplish common tasks, such as [disabling JavaScript][JavascriptDisable].</span></span>  <span data-ttu-id="4763d-105">Möglicherweise sind Sie mit einem ähnlichen Feature in Visual Studio-Code vertraut, der als [Befehls Palette][VisualStudioCodeUICommandPalette]bezeichnet wird, was die ursprüngliche Inspiration für das Befehlsmenü war.</span><span class="sxs-lookup"><span data-stu-id="4763d-105">You may be familiar with a similar feature in Visual Studio Code called the [Command Palette][VisualStudioCodeUICommandPalette], which was the original inspiration for the Command Menu.</span></span>  
 
-> ##### <span data-ttu-id="1cdc8-106">Abbildung1</span><span class="sxs-lookup"><span data-stu-id="1cdc8-106">Figure 1</span></span>  
-> <span data-ttu-id="1cdc8-107">Verwenden des Befehlsmenüs zum Deaktivieren von JavaScript</span><span class="sxs-lookup"><span data-stu-id="1cdc8-107">Using the Command Menu to disable JavaScript</span></span>  
-> ![Verwenden des Befehlsmenüs zum Deaktivieren von JavaScript][ImageDisableJS]  
+:::image type="complex" source="../media/command-menu-run-command-java.msft.png" alt-text="Verwenden des Befehlsmenüs zum Deaktivieren von JavaScript" lightbox="../media/command-menu-run-command-java.msft.png":::
+   <span data-ttu-id="4763d-107">Verwenden des Befehlsmenüs zum Deaktivieren von JavaScript</span><span class="sxs-lookup"><span data-stu-id="4763d-107">Using the Command Menu to disable JavaScript</span></span>  
+:::image-end:::  
 
-## <span data-ttu-id="1cdc8-109">Öffnen des Befehlsmenüs</span><span class="sxs-lookup"><span data-stu-id="1cdc8-109">Open the Command Menu</span></span>   
+## <span data-ttu-id="4763d-108">Öffnen des Befehlsmenüs</span><span class="sxs-lookup"><span data-stu-id="4763d-108">Open the Command Menu</span></span>   
 
-<span data-ttu-id="1cdc8-110">Drücken Sie `Control` + `Shift` + `P` \ (Windows \) oder `Command` + `Shift` + `P` \ (macOS \).</span><span class="sxs-lookup"><span data-stu-id="1cdc8-110">Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\).</span></span> <span data-ttu-id="1cdc8-111">Oder klicken Sie auf **anpassen und Steuern von devtools** `...` , und wählen Sie dann **Befehl ausführen**aus.</span><span class="sxs-lookup"><span data-stu-id="1cdc8-111">Or click **Customize And Control DevTools** `...` and then select **Run Command**.</span></span>  
+<span data-ttu-id="4763d-109">Drücken Sie `Control` + `Shift` + `P` \ (Windows \) oder `Command` + `Shift` + `P` \ (macOS \).</span><span class="sxs-lookup"><span data-stu-id="4763d-109">Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\).</span></span> <span data-ttu-id="4763d-110">Oder klicken Sie auf **anpassen und Steuern von devtools** `...` , und wählen Sie dann **Befehl ausführen**aus.</span><span class="sxs-lookup"><span data-stu-id="4763d-110">Or click **Customize And Control DevTools** `...` and then select **Run Command**.</span></span>  
 
-> ##### <span data-ttu-id="1cdc8-112">Abbildung2</span><span class="sxs-lookup"><span data-stu-id="1cdc8-112">Figure 2</span></span>  
-> <span data-ttu-id="1cdc8-113">Befehl "ausführen"</span><span class="sxs-lookup"><span data-stu-id="1cdc8-113">Run Command</span></span>  
-> ![Befehl "ausführen"][ImageRunCommand]  
+:::image type="complex" source="../media/command-menu-options-run-command.msft.png" alt-text="Befehl "ausführen"" lightbox="../media/command-menu-options-run-command.msft.png":::
+   <span data-ttu-id="4763d-112">Befehl "ausführen"</span><span class="sxs-lookup"><span data-stu-id="4763d-112">Run Command</span></span>  
+:::image-end:::  
 
-## <span data-ttu-id="1cdc8-115">Anzeigen der anderen verfügbaren Aktionen</span><span class="sxs-lookup"><span data-stu-id="1cdc8-115">See other available actions</span></span>   
+## <span data-ttu-id="4763d-113">Anzeigen der anderen verfügbaren Aktionen</span><span class="sxs-lookup"><span data-stu-id="4763d-113">See other available actions</span></span>   
 
-<span data-ttu-id="1cdc8-116">Wenn Sie den Workflow verwenden, der unter [Öffnen des Befehls](#open-the-command-menu)Menüs erläutert wird, wird das Befehl-Menü mit einem `>` Zeichen, das dem Befehlsmenü-Textfeld vorangestellt wird, geöffnet.</span><span class="sxs-lookup"><span data-stu-id="1cdc8-116">If you use the workflow outlined in [Open the Command Menu](#open-the-command-menu), the Command Menu opens with a `>` character prepended to the Command Menu text box.</span></span>  
+<span data-ttu-id="4763d-114">Wenn Sie den Workflow verwenden, der unter [Öffnen des Befehls](#open-the-command-menu)Menüs erläutert wird, wird das Befehl-Menü mit einem `>` Zeichen vor der vorangestellt des Befehlsmenü-Textfelds geöffnet.</span><span class="sxs-lookup"><span data-stu-id="4763d-114">If you use the workflow outlined in [Open the Command Menu](#open-the-command-menu), the Command Menu opens with a `>` character pre-pended to the Command Menu text box.</span></span>  
 
-> ##### <span data-ttu-id="1cdc8-117">Abbildung 3</span><span class="sxs-lookup"><span data-stu-id="1cdc8-117">Figure 3</span></span>  
-> <span data-ttu-id="1cdc8-118">Das Befehlszeichen</span><span class="sxs-lookup"><span data-stu-id="1cdc8-118">The command character</span></span>  
-> ![Das Befehlszeichen][ImageCommandCharacter]  
+:::image type="complex" source="../media/command-menu-run-command.msft.png" alt-text="Das Befehlszeichen" lightbox="../media/command-menu-run-command.msft.png":::
+   <span data-ttu-id="4763d-116">Das Befehlszeichen</span><span class="sxs-lookup"><span data-stu-id="4763d-116">The command character</span></span>  
+:::image-end:::  
 
-<span data-ttu-id="1cdc8-120">Löschen `>` Sie das Zeichen und den Typ `?` , um andere Aktionen anzuzeigen, die über das Befehlsmenü verfügbar sind.</span><span class="sxs-lookup"><span data-stu-id="1cdc8-120">Delete the `>` character and type `?` to see other actions that are available from the Command Menu.</span></span>  
+<span data-ttu-id="4763d-117">Löschen `>` Sie das Zeichen und den Typ `?` , um andere Aktionen anzuzeigen, die über das Befehlsmenü verfügbar sind.</span><span class="sxs-lookup"><span data-stu-id="4763d-117">Delete the `>` character and type `?` to see other actions that are available from the Command Menu.</span></span>  
 
-> ##### <span data-ttu-id="1cdc8-121">Abbildung4</span><span class="sxs-lookup"><span data-stu-id="1cdc8-121">Figure 4</span></span>  
-> <span data-ttu-id="1cdc8-122">Andere verfügbare Aktionen</span><span class="sxs-lookup"><span data-stu-id="1cdc8-122">Other available actions</span></span>  
-> ![Andere verfügbare Aktionen][ImageActions]  
+:::image type="complex" source="../media/command-menu-help.msft.png" alt-text="Andere verfügbare Aktionen" lightbox="../media/command-menu-help.msft.png":::
+   <span data-ttu-id="4763d-119">Andere verfügbare Aktionen</span><span class="sxs-lookup"><span data-stu-id="4763d-119">Other available actions</span></span>  
+:::image-end:::  
 
  
 
 
 
-<!-- image links -->  
-
-[ImageDisableJS]: /microsoft-edge/devtools-guide-chromium/media/command-menu-run-command-java.msft.png "Abbildung 1: Verwenden des Befehlsmenüs zum Deaktivieren von JavaScript"  
-[ImageRunCommand]: /microsoft-edge/devtools-guide-chromium/media/command-menu-options-run-command.msft.png "Abbildung 2: Befehl "ausführen""  
-[ImageCommandCharacter]: /microsoft-edge/devtools-guide-chromium/media/command-menu-run-command.msft.png "Abbildung 3: das Befehlszeichen"  
-[ImageActions]: /microsoft-edge/devtools-guide-chromium/media/command-menu-help.msft.png "Abbildung 4: Weitere verfügbare Aktionen"  
-
 <!-- links -->  
 
-[JavascriptDisable]: /microsoft-edge/devtools-guide-chromium/javascript/disable "Deaktivieren von JavaScript mit Microsoft Edge devtools"  
+[JavascriptDisable]: ../javascript/disable.md "Deaktivieren von JavaScript mit Microsoft Edge devtools | Microsoft docs"  
 
 [VisualStudioCodeUICommandPalette]: https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette "Befehlspalette – Visual Studio-Code-UI"  
 
 > [!NOTE]
-> <span data-ttu-id="1cdc8-130">Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="1cdc8-130">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="1cdc8-131">Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/command-menu/index) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.</span><span class="sxs-lookup"><span data-stu-id="1cdc8-131">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/command-menu/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
+> <span data-ttu-id="4763d-122">Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="4763d-122">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="4763d-123">Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/command-menu/index) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.</span><span class="sxs-lookup"><span data-stu-id="4763d-123">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/command-menu/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
 
 [![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
-<span data-ttu-id="1cdc8-133">Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="1cdc8-133">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+<span data-ttu-id="4763d-125">Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="4763d-125">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
