@@ -2,16 +2,16 @@
 title: Ausführen von Befehlen mit dem Befehlsmenü von Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/24/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: 748008b347a3498008748b9c3f9ecc1445c47f12
-ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+ms.openlocfilehash: 09adaadd6f62710b219911f69fbe39ba8edfb61a
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601747"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10982549"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -37,46 +37,39 @@ ms.locfileid: "10601747"
 
 Das Befehlsmenü bietet eine schnelle Möglichkeit, auf der Benutzeroberfläche von Microsoft Edge devtools zu navigieren und häufige Aufgaben wie das [Deaktivieren von JavaScript][JavascriptDisable]durchzuführen.  Möglicherweise sind Sie mit einem ähnlichen Feature in Visual Studio-Code vertraut, der als [Befehls Palette][VisualStudioCodeUICommandPalette]bezeichnet wird, was die ursprüngliche Inspiration für das Befehlsmenü war.  
 
-> ##### Abbildung1  
-> Verwenden des Befehlsmenüs zum Deaktivieren von JavaScript  
-> ![Verwenden des Befehlsmenüs zum Deaktivieren von JavaScript][ImageDisableJS]  
+:::image type="complex" source="../media/command-menu-run-command-java.msft.png" alt-text="Verwenden des Befehlsmenüs zum Deaktivieren von JavaScript" lightbox="../media/command-menu-run-command-java.msft.png":::
+   Verwenden des Befehlsmenüs zum Deaktivieren von JavaScript  
+:::image-end:::  
 
 ## Öffnen des Befehlsmenüs   
 
 Drücken Sie `Control` + `Shift` + `P` \ (Windows \) oder `Command` + `Shift` + `P` \ (macOS \). Oder klicken Sie auf **anpassen und Steuern von devtools** `...` , und wählen Sie dann **Befehl ausführen**aus.  
 
-> ##### Abbildung2  
-> Befehl "ausführen"  
-> ![Befehl "ausführen"][ImageRunCommand]  
+:::image type="complex" source="../media/command-menu-options-run-command.msft.png" alt-text="Befehl "ausführen"" lightbox="../media/command-menu-options-run-command.msft.png":::
+   Befehl "ausführen"  
+:::image-end:::  
 
 ## Anzeigen der anderen verfügbaren Aktionen   
 
-Wenn Sie den Workflow verwenden, der unter [Öffnen des Befehls](#open-the-command-menu)Menüs erläutert wird, wird das Befehl-Menü mit einem `>` Zeichen, das dem Befehlsmenü-Textfeld vorangestellt wird, geöffnet.  
+Wenn Sie den Workflow verwenden, der unter [Öffnen des Befehls](#open-the-command-menu)Menüs erläutert wird, wird das Befehl-Menü mit einem `>` Zeichen vor der vorangestellt des Befehlsmenü-Textfelds geöffnet.  
 
-> ##### Abbildung 3  
-> Das Befehlszeichen  
-> ![Das Befehlszeichen][ImageCommandCharacter]  
+:::image type="complex" source="../media/command-menu-run-command.msft.png" alt-text="Das Befehlszeichen" lightbox="../media/command-menu-run-command.msft.png":::
+   Das Befehlszeichen  
+:::image-end:::  
 
 Löschen `>` Sie das Zeichen und den Typ `?` , um andere Aktionen anzuzeigen, die über das Befehlsmenü verfügbar sind.  
 
-> ##### Abbildung4  
-> Andere verfügbare Aktionen  
-> ![Andere verfügbare Aktionen][ImageActions]  
+:::image type="complex" source="../media/command-menu-help.msft.png" alt-text="Andere verfügbare Aktionen" lightbox="../media/command-menu-help.msft.png":::
+   Andere verfügbare Aktionen  
+:::image-end:::  
 
  
 
 
 
-<!-- image links -->  
-
-[ImageDisableJS]: /microsoft-edge/devtools-guide-chromium/media/command-menu-run-command-java.msft.png "Abbildung 1: Verwenden des Befehlsmenüs zum Deaktivieren von JavaScript"  
-[ImageRunCommand]: /microsoft-edge/devtools-guide-chromium/media/command-menu-options-run-command.msft.png "Abbildung 2: Befehl "ausführen""  
-[ImageCommandCharacter]: /microsoft-edge/devtools-guide-chromium/media/command-menu-run-command.msft.png "Abbildung 3: das Befehlszeichen"  
-[ImageActions]: /microsoft-edge/devtools-guide-chromium/media/command-menu-help.msft.png "Abbildung 4: Weitere verfügbare Aktionen"  
-
 <!-- links -->  
 
-[JavascriptDisable]: /microsoft-edge/devtools-guide-chromium/javascript/disable "Deaktivieren von JavaScript mit Microsoft Edge devtools"  
+[JavascriptDisable]: ../javascript/disable.md "Deaktivieren von JavaScript mit Microsoft Edge devtools | Microsoft docs"  
 
 [VisualStudioCodeUICommandPalette]: https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette "Befehlspalette – Visual Studio-Code-UI"  
 

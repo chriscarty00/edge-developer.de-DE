@@ -2,16 +2,16 @@
 title: Erste Schritte mit der Protokollierung von Nachrichten in der Konsole
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/24/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: 4c930caf60af2b5e276e003378546e147c249548
-ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+ms.openlocfilehash: c2cf868e6daaf9dd45c7acc90a71c2154261b9c3
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "10843965"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10982668"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -37,9 +37,9 @@ ms.locfileid: "10843965"
 
 In diesem interaktiven Lernprogramm erfahren Sie, wie Sie Nachrichten in der [Microsoft Edge devtools][MicrosoftEdgeDevTools] -Konsole protokollieren und filtern.  
 
-> ##### Abbildung1  
-> Nachrichten in der Konsole  
-> ![Nachrichten in der Konsole][ImageLogExample]  
+:::image type="complex" source="../media/console-ars-technica-console-onload.msft.png" alt-text="Nachrichten in der Konsole" lightbox="../media/console-ars-technica-console-onload.msft.png":::
+   Nachrichten in der **Konsole**  
+:::image-end:::  
 
 Dieses Lernprogramm soll in der entsprechenden Reihenfolge ausgeführt werden.  Es wird davon ausgegangen, dass Sie die Grundlagen der Webentwicklung verstehen, beispielsweise die Verwendung von JavaScript zum Hinzufügen von Interaktivität zu einer Seite.  
 
@@ -51,33 +51,50 @@ Dieses Lernprogramm ist so konzipiert, dass Sie die Demo öffnen und alle Workfl
     
     [Beispiele für Konsolen Protokolle][GlitchDevToolsConsoleLogExamples]
     
-    <!-- > [!TIP]
+    <!--
+    > [!TIP]
     > Move the demo to a separate window.  
     > 
-    > > ##### old Figure 2  
-    > > The tutorial on the left, and the demo on the right  
-    > > ![The tutorial on the left, and the demo on the right][ImageLogSetUp1]  -->
+    > :::image type="complex" source="../media/log-set-up-1.msft.png" alt-text="The tutorial on the left, and the demo on the right" lightbox="../media/log-set-up-1.msft.png":::
+    >    The tutorial on the left, and the demo on the right  
+    > :::image-end:::  
+    -->
     
 1.  Konzentrieren Sie die Demo, und drücken Sie dann `Control` + `Shift` + `J` \ (Windows \) oder `Command` + `Option` + `J` \ (macOS \), um devtools zu öffnen.  Standardmäßig wird devtools rechts neben der Demo geöffnet.  
     
-    > ##### Abbildung2  
-    > DevTools wird rechts neben der Demo geöffnet  
-    > ! [Devtools wird rechts neben der Demo geöffnet] [ImageDevToolsRight]  
-    
-    > [!TIP]
-    > [Docken Sie devtools an den unteren Rand des Fensters an, oder Entdocken Sie es in einem separaten Fenster][DevToolsCustomizePlacement].  
-    
-    > ##### Abbildung 3  
-    > DevTools angedockt am Ende der Demo  
-    > ! [Devtools angedockt am Ende der Demo] [ImageDevToolsBottom]  
-    
-    > ##### Abbildung4  
-    > Browser in einem separaten Fenster  
-    > ! [Browser in einem separaten Fenster] [ImageDevToolsSeparateBrowse]  
-    
-    > ##### Abbildung5  
-    > DevTools Abdocken in einem separaten Fenster  
-    > ! [Devtools in einem separaten Fenster Abdocken] [ImageDevToolsSeparateDevTools]  
+    :::row:::
+       :::column span="":::
+          :::image type="complex" source="../media/console-example-devtools-right-console.msft.png" alt-text="DevTools wird rechts neben der Demo geöffnet" lightbox="../media/console-example-devtools-right-console.msft.png":::
+             DevTools wird rechts neben der Demo geöffnet  
+          :::image-end:::  
+       :::column-end:::
+       :::column span="":::
+          > [!TIP]
+          > [Docken Sie devtools an den unteren Rand des Fensters an][DevToolsCustomizePlacement].  
+          
+          :::image type="complex" source="../media/console-example-devtools-bottom-console.msft.png" alt-text="DevTools angedockt am Ende der Demo" lightbox="../media/console-example-devtools-bottom-console.msft.png":::
+             DevTools angedockt am Ende der Demo  
+          :::image-end:::  
+       :::column-end:::
+    :::row-end:::  
+    :::row:::
+       :::column span="":::
+          > [!TIP]
+          > [Docken Sie devtools in einem separaten Fenster][DevToolsCustomizePlacement]ab.  
+          
+          :::image type="complex" source="../media/console-example-devtools-separate-console-browse.msft.png" alt-text="Browser in einem separaten Fenster" lightbox="../media/console-example-devtools-separate-console-browse.msft.png":::
+             Browser in einem separaten Fenster  
+          :::image-end:::  
+       :::column-end:::
+       :::column span="":::
+          > [!TIP]
+          > [Docken Sie devtools in einem separaten Fenster][DevToolsCustomizePlacement]ab.  
+          
+          :::image type="complex" source="../media/console-example-devtools-separate-console-devtools.msft.png" alt-text="DevTools Abdocken in einem separaten Fenster" lightbox="../media/console-example-devtools-separate-console-devtools.msft.png":::
+             DevTools Abdocken in einem separaten Fenster  
+          :::image-end:::  
+       :::column-end:::
+    :::row-end:::  
     
 ## Anzeigen von Nachrichten, die von JavaScript protokolliert wurden   
 
@@ -85,17 +102,17 @@ Die meisten Nachrichten, die Sie in der Konsole sehen, stammen von den Web-Entwi
 
 1.  Klicken Sie in der Demo auf die Schaltfläche **Log-Informationen** .  `Hello, Console!` wird in der Konsole protokolliert.
     
-    > ##### Abbildung6  
-    > Die Konsole nach dem Klicken auf " **Protokollinformationen** "  
-    > ! [Die Konsole nach dem Klicken auf ' Protokollinformationen '] [ImageLogInfo]  
+    :::image type="complex" source="../media/console-log-info.msft.png" alt-text="Die Konsole nach dem Klicken auf "Protokollinformationen"" lightbox="../media/console-log-info.msft.png":::
+       Die **Konsole** nach dem Klicken auf " **Protokollinformationen** "  
+    :::image-end:::  
     
 1.  `Hello, Console!`Klicken Sie neben der Nachricht in der Konsole auf **log.js:2**.  Das Fenster "Quellen" wird geöffnet, und die Codezeile wird hervorgehoben, die dazu geführt hat, dass die Nachricht in der Konsole protokolliert wird.  Die Nachricht wurde protokolliert, als das JavaScript der Seite ausgeführt wurde `console.log('Hello, Console!')` .
     
-    > ##### Abbildung7  
-    > DevTools öffnet das Quellen Panel, nachdem Sie auf **log.js:2** klicken  
-    > ! [Devtools öffnet das Quellen Panel, nachdem Sie auf log.js:2] [ImageSourceLog]  
+    :::image type="complex" source="../media/console-sources-logjs.msft.png" alt-text="DevTools öffnet das Quellen Panel, nachdem Sie auf log.js:2 Klicken" lightbox="../media/console-sources-logjs.msft.png":::
+       DevTools öffnet das **Quellen** Panel, nachdem Sie auf `log.js:2`  
+    :::image-end:::  
     
-1.  Navigieren Sie mit einem der folgenden Workflows zurück zur Konsole:  
+1.  Navigieren Sie mit einem der folgenden Workflows zurück zur **Konsole** :  
     
     *   Klicken Sie auf die Registerkarte **Konsole** .  
     *   Drücken Sie `Control` + `[` \ (Windows \) oder `Command` + `[` \ (macOS \), bis die Konsole den Fokus hat.  
@@ -103,47 +120,47 @@ Die meisten Nachrichten, die Sie in der Konsole sehen, stammen von den Web-Entwi
     
 1.  Klicken Sie in der Demo auf die Schaltfläche **Warnungsprotokoll** .  `Abandon Hope All Ye Who Enter` wird in der Konsole protokolliert.  So formatierte Nachrichten sind Warnungen.  
     
-    > ##### Abbildung8  
-    > Die Konsole nach dem Klicken auf " **Protokoll Warnung** "  
-    > ! [Die Konsole nach dem Klicken auf ' Protokoll Warnung] [ImageConsoleLogWarning]  
+    :::image type="complex" source="../media/console-log-warning.msft.png" alt-text="Die Konsole, nachdem Sie auf "Protokoll Warnung" klicken" lightbox="../media/console-log-warning.msft.png":::
+       Die **Konsole** , nachdem Sie auf " **Protokoll Warnung** " klicken  
+    :::image-end:::  
     
     > [!TIP]
     > Wenn Sie den Code anzeigen möchten, der dazu geführt hat, dass eine Nachricht protokolliert wird, klicken Sie auf ein Skript \ (beispielsweise `log.js:12` \), um den Code anzuzeigen, der dazu geführt hat, dass die Nachricht formatiert wurde.  
 
-1.  Klicken Sie auf das Erweiterungssymbol **erweitern** ![ ][ImageExpandIcon] vor `Abandon Hope All Ye Who Enter` .  DevTools zeigt die [Stapelüberwachung][WikiStackTrace] an, die zum Aufruf führt.  
+1.  Klicken Sie auf das Symbol **erweitern** \ ( ![ Erweitern ][ImageExpandIcon] \) vor `Abandon Hope All Ye Who Enter` .  DevTools zeigt die [Stapelüberwachung][WikiStackTrace] an, die zum Aufruf führt.  
     
-    > ##### Abbildung 9  
-    > Eine Stapelüberwachung  
-    > ! [Eine Stapelüberwachung] [Imagestacktrace]  
+    :::image type="complex" source="../media/console-log-warning-expanded.msft.png" alt-text="Eine Stapelüberwachung" lightbox="../media/console-log-warning-expanded.msft.png":::
+       Eine Stapelüberwachung  
+    :::image-end:::  
     
     In der Stapelüberwachung wird Ihnen mitgeteilt, dass eine Funktion namens `logWarning` aufgerufen wurde, die wiederum eine Funktion mit dem Namen genannt wird `quoteDante` .  Anders ausgedrückt: der Aufruf, der sich zuerst ereignet hat, befindet sich am Ende der Stapelüberwachung.  Sie können Stack-Ablaufverfolgungen jederzeit durch Aufrufen protokollieren `console.trace()` .  
 
 1.  Klicken Sie auf **Fehler protokollieren**.  Die folgende Fehlermeldung wird protokolliert: `I'm sorry, Dave.  I'm afraid I can't do that.`  
     
-    > ##### Abbildung 10  
-    > Eine Fehlermeldung  
-    > ! [Eine Fehlermeldung] [ImageLogError]  
+    :::image type="complex" source="../media/console-log-error.msft.png" alt-text="Eine Fehlermeldung" lightbox="../media/console-log-error.msft.png":::
+       Eine Fehlermeldung  
+    :::image-end:::  
     
 1.  Klicken Sie auf **Protokolltabelle**.  Eine Tabelle über berühmte Interpreten wird an der Konsole angemeldet.  
     
     > [!NOTE]
-    > Die `birthday` Spalte wird nur für eine Zeile ausgefüllt.  Überprüfen Sie den Code, um herauszufinden, warum das der Fall ist.
+    > Die `birthday` Spalte wird nur für eine Zeile ausgefüllt.  Überprüfen Sie den Code, um zu ermitteln, warum dies der Grund ist.
     
-    > ##### Abbildung 11  
-    > Eine Tabelle in der Konsole  
-    > ! [Eine Tabelle in der Konsole] [Imageconsoleable]  
+    :::image type="complex" source="../media/console-log-table.msft.png" alt-text="Eine Tabelle in der Konsole" lightbox="../media/console-log-table.msft.png":::
+       Eine Tabelle in der **Konsole**  
+    :::image-end:::  
     
 1.  Klicken Sie auf **Protokollgruppe**.  Unter dem Label sind die Namen von vier berühmten, kriminalisch bekämpften Schildkröten gruppiert `Adolescent Irradiated Espionage Tortoises` .  
     
-    > ##### Abbildung 12  
-    > Eine Gruppe von Nachrichten in der Konsole  
-    > ! [Eine Gruppe von Nachrichten in der Konsole] [ImageConsoleLogGroup]  
+    :::image type="complex" source="../media/console-log-group.msft.png" alt-text="Eine Gruppe von Nachrichten in der Konsole" lightbox="../media/console-log-group.msft.png":::
+       Eine Gruppe von Nachrichten in der **Konsole**  
+    :::image-end:::  
     
 1.  Klicken Sie auf **Benutzerdefiniert protokollieren**.  Eine Nachricht mit rotem Rahmen und blauem Hintergrund wird in der Konsole protokolliert.  
     
-    > ##### Abbildung 13  
-    > Eine Nachricht mit benutzerdefinierter Formatierung in der Konsole  
-    > ! [Eine Nachricht mit benutzerdefinierter Formatierung in der Konsole] [ImageConsoleLogCustomFormatting]  
+    :::image type="complex" source="../media/console-log-custom.msft.png" alt-text="Eine Nachricht mit benutzerdefinierter Formatierung in der Konsole" lightbox="../media/console-log-custom.msft.png":::
+       Eine Nachricht mit benutzerdefinierter Formatierung in der **Konsole**  
+    :::image-end:::  
     
 Der Grundgedanke hierbei ist, dass Sie eine der Methoden verwenden, wenn Sie Nachrichten von Ihrem JavaScript-Konto in der Konsole protokollieren möchten `console` .  Jede Methode formatiert Nachrichten unterschiedlich.  
 
@@ -153,30 +170,32 @@ Es gibt noch mehr Methoden als das, was in diesem Abschnitt gezeigt wurde.  In d
 
 Der Browser protokolliert auch Nachrichten an der Konsole.  Dies geschieht in der Regel, wenn ein Problem mit der Seite vorliegt.  
 
-1.  Klicken Sie auf **Ursache 404**.  Der Browser protokolliert einen `404` Netzwerkfehler, da das JavaScript der Seite versucht hat, eine Datei abzurufen, die nicht vorhanden ist.  
+1.  Klicken Sie auf **Ursache 404**.  Der Browser protokolliert einen HTTP-Statuscode des `404` Netzwerkfehlers, weil das JavaScript der Seite versucht hat, eine Datei abzurufen, die nicht vorhanden ist.  
     
-    > ##### Abbildung 14  
-    > Ein 404-Fehler in der Konsole  
-    > ! [Ein 404-Fehler in der Konsole] [ImageConsoleLogError]  
+    :::image type="complex" source="../media/console-cause-404.msft.png" alt-text="Ein 404-Fehler in der Konsole" lightbox="../media/console-cause-404.msft.png":::
+       `404`Fehler in der **Konsole**  
+    :::image-end:::  
     
 1.  Klicken Sie auf **Fehler verursachen**.  Der Browser protokolliert eine nicht abgefangene `TypeError` , da JavaScript versucht, einen nicht vorhandenen DOM-Knoten zu aktualisieren.  
     
-    > ##### Abbildung 15  
-    > Ein TypeError in der Konsole  
-    > ! [Ein TypeError in der Konsole] [ImageConsoleLogTypeError]  
+    :::image type="complex" source="../media/console-cause-error.msft.png" alt-text="Ein TypeError in der Konsole" lightbox="../media/console-cause-error.msft.png":::
+       A `TypeError` in der **Konsole**  
+    :::image-end:::  
     
 1.  Klicken Sie auf die Dropdownliste **Protokollebenen** , und aktivieren Sie die Option **verbose** , wenn Sie deaktiviert ist.  Weitere Informationen zum Filtern finden Sie im nächsten Abschnitt.  Sie müssen dies tun, um sicherzustellen, dass die nächste Nachricht, die Sie protokollieren, sichtbar ist.  
-    **Hinweis:** Wenn die Dropdownliste Standardebenen deaktiviert ist, müssen Sie möglicherweise die Sidebar der Konsole schließen. Filtern nach Nachrichtenquelle unten, um weitere Informationen zur Sidebar der Konsole zu erhalten.
     
-    > ##### Abbildung 16  
-    > Aktivieren der **ausführlichen** Protokollebene  
-    > ! [Aktivieren der ausführlichen Protokollebene] [ImageVerboseLogLevel]  
+    > [!NOTE]
+    > Wenn die Dropdownliste Standardebenen deaktiviert ist, müssen Sie möglicherweise die Sidebar der **Konsole** schließen.  Filtern nach Nachrichtenquelle unten, um weitere Informationen zur Sidebar der **Konsole** zu erhalten.
+    
+    :::image type="complex" source="../media/console-cause-error-log-levels.msft.png" alt-text="Aktivieren der ausführlichen Protokollebene" lightbox="../media/console-cause-error-log-levels.msft.png":::
+       Aktivieren der ausführlichen Protokollebene  
+    :::image-end:::  
     
 1.  Klicken Sie auf **Verletzung verursachen**.  Die Seite reagiert für ein paar Sekunden nicht mehr, und dann protokolliert der Browser die Nachricht `[Violation] 'click' handler took 3000ms` auf der Konsole.  Die genaue Dauer kann variieren.  
     
-    > ##### Abbildung 17  
-    > Eine Verletzung in der Konsole  
-    > ! [Eine Verletzung in der Konsole] [ImageConsoleLogViolation]  
+    :::image type="complex" source="../media/console-cause-violation.msft.png" alt-text="Eine Verletzung in der Konsole" lightbox="../media/console-cause-violation.msft.png":::
+       Eine Verletzung in der **Konsole**  
+    :::image-end:::  
     
 ## Filtern von Nachrichten   
 
@@ -188,9 +207,9 @@ Jeder `console` Methode wird ein Schweregrad zugewiesen: `Verbose` , `Info` , `W
 
 1.  Klicken Sie auf die Dropdownliste **Protokollebenen** , und deaktivieren Sie **Fehler**.  Eine Ebene ist deaktiviert, wenn daneben kein Häkchen mehr vorhanden ist.  Die `Error` Nachrichten auf der Ebene verschwinden.  
     
-    > ##### Abbildung 18  
-    > Deaktivieren `Error` von Nachrichten auf der Konsole  
-    > ! [Deaktivieren von Nachrichten auf Fehlerebene in der Konsole] [ImageConsoleDisablingLogError]  
+    :::image type="complex" source="../media/console-cause-violation-log-levels.msft.png" alt-text="Deaktivieren von Nachrichten auf Fehlerebene in der Konsole" lightbox="../media/console-cause-violation-log-levels.msft.png":::
+       Deaktivieren von Nachrichten auf Fehlerebene in der **Konsole**  
+    :::image-end:::  
     
 1.  Klicken Sie erneut auf die Dropdownliste **Protokollebenen** , und aktivieren Sie dann **Fehler**erneut.  Die `Error` Nachrichten auf der Ebene werden erneut angezeigt.  
 
@@ -200,9 +219,9 @@ Wenn Sie nur Nachrichten anzeigen möchten, die eine exakte Zeichenfolge enthalt
 
 1.  Geben Sie `Dave` in das Textfeld **Filter** ein.  Alle Nachrichten, die die Zeichenfolge nicht enthalten, `Dave` werden ausgeblendet.  Möglicherweise wird auch die `Adolescent Irradiated Espionage Tortoises` Beschriftung angezeigt.  Das ist ein Fehler.  
     
-    > ##### Abbildung 19  
-    > Filtern von Nachrichten, die nicht enthalten sind `Dave`  
-    > ! [Filtert alle Nachrichten, die Dave nicht enthalten] [ImageLogTextFiltering]  
+    :::image type="complex" source="../media/console-all-messages-text-filter.msft.png" alt-text="Filtern von Nachrichten, die Dave nicht enthalten" lightbox="../media/console-all-messages-text-filter.msft.png":::
+       Filtern von Nachrichten, die nicht enthalten sind `Dave`  
+    :::image-end:::  
     
 1.  Löschen `Dave` aus dem Textfeld " **Filter** "  Alle Nachrichten werden wieder angezeigt.  
 
@@ -212,9 +231,9 @@ Wenn Sie alle Nachrichten anzeigen möchten, die anstelle einer bestimmten Zeich
 
 1.  Geben Sie `/^[AH]/` in das Textfeld **Filter** ein.  Geben Sie dieses Muster in [regexr][|::ref1::|Main] ein, um zu erläutern, was es tut.  
     
-    > ##### Abbildung 20  
-    > Filtern von Nachrichten, die nicht dem Muster entsprechen `/^[AH]/`  
-    > ! [Filtern von Nachrichten, die nicht mit einem Muster übereinstimmen] [ImageLogRegExFiltering]  
+    :::image type="complex" source="../media/console-all-messages-regex-filter.msft.png" alt-text="Filtern von Nachrichten, die nicht mit einem Muster übereinstimmen" lightbox="../media/console-all-messages-regex-filter.msft.png":::
+       Filtern von Nachrichten, die nicht dem Muster entsprechen `/^[AH]/`  
+    :::image-end:::  
     
 1.  Löschen `/^[AH]/` aus dem Textfeld " **Filter** "  Alle Nachrichten sind wieder sichtbar.  
 
@@ -222,17 +241,17 @@ Wenn Sie alle Nachrichten anzeigen möchten, die anstelle einer bestimmten Zeich
 
 Wenn Sie nur die Nachrichten anzeigen möchten, die von einer bestimmten URL stammen, verwenden Sie die **Seitenleiste**.  
 
-1.  Klicken Sie auf **Konsolen** -Seitenleiste anzeigen ![ ][ImageShowConsoleSidebarIcon] .  
+1.  Klicken Sie auf **Console Sidebar anzeigen** \ ( ![ Konsolen ][ImageShowConsoleSidebarIcon] -Sidebar anzeigen \).  
     
-    > ##### Abbildung 21  
-    > Die Seitenleiste  
-    > ! [Die Seitenleiste] [ImageConsoleSidebar]  
+    :::image type="complex" source="../media/console-sidebar-all-messages.msft.png" alt-text="Die Seitenleiste" lightbox="../media/console-sidebar-all-messages.msft.png":::
+       Die Seitenleiste  
+    :::image-end:::  
     
-1.  Klicken Sie auf das Erweiterungssymbol **erweitern** ![ ][ImageExpandIcon] neben der Anzahl der Nachrichten.  In [Abbildung 21](#figure-21)wird die Anzahl der Nachrichten als **13 Nachrichten**angezeigt.  Die **Seitenleiste** zeigt eine Liste der URLs, die dazu geführt haben, dass Nachrichten protokolliert werden.  Beispielsweise `log.js` verursachte 11 Nachrichten.  
+1.  Klicken Sie auf das Symbol **erweitern** \ ( ![ Erweitern ][ImageExpandIcon] \) neben der Anzahl der Nachrichten.  In der folgenden Abbildung wird die Anzahl der Nachrichten als **13 Nachrichten**angezeigt.  Die **Seitenleiste** zeigt eine Liste der URLs, die dazu geführt haben, dass Nachrichten protokolliert werden.  Beispielsweise `log.js` verursachte 11 Nachrichten.  
     
-    > ##### Abbildung 22  
-    > Anzeigen der Quelle von Nachrichten in der Seitenleiste  
-    > ! [Anzeigen der Quelle von Nachrichten in der Seitenleiste] [ImageConsoleSidebarLogSource]  
+    :::image type="complex" source="../media/console-sidebar-expanded-all-messages.msft.png" alt-text="Anzeigen der Quelle von Nachrichten in der Seitenleiste" lightbox="../media/console-sidebar-expanded-all-messages.msft.png":::
+       Anzeigen der Quelle von Nachrichten in der Seitenleiste  
+    :::image-end:::  
     
 ### Nach Benutzer Nachrichten filtern   
 
@@ -240,9 +259,9 @@ Wenn Sie zuvor auf **Protokollinformationen**geklickt haben, wurde ein Skript au
 
 1.  Klicken Sie auf **9 Benutzer Nachrichten**.  Die Browser Nachrichten werden ausgeblendet.  
     
-    > ##### Abbildung 23  
-    > Filtern von Browser Nachrichten  
-    > ! [Filtern von Browser Nachrichten] [ImageConsoleLogBrowserFiltering]  
+    :::image type="complex" source="../media/console-sidebar-user-messages.msft.png" alt-text="Filtern von Browser Nachrichten" lightbox="../media/console-sidebar-user-messages.msft.png":::
+       Filtern von Browser Nachrichten  
+    :::image-end:::  
     
 1.  Klicken Sie auf **13 Nachrichten** , um alle Nachrichten erneut anzuzeigen.  
 
@@ -253,9 +272,9 @@ Was passiert, wenn Sie Formatvorlagen bearbeiten, aber Sie müssen das Konsolenp
 1.  Klicken Sie auf die Registerkarte **Elemente** .  
 1.  Drücken Sie `Escape` .  Die Registerkarte "Konsole" des **Fachs** wird geöffnet.  Es enthält alle Features des Konsolen Panels, die Sie in diesem Lernprogramm verwendet haben.  
     
-    > ##### Abbildung 24  
-    > Die Registerkarte ' Konsole ' im Einzug  
-    > ! [Registerkarte ' Konsole ' im Einzug] [ImageDrawerConsole]  
+    :::image type="complex" source="../media/console-elements-drawer-console-sidebar-all-messages.msft.png" alt-text="Die Registerkarte ' Konsole ' im Einzug" lightbox="../media/console-elements-drawer-console-sidebar-all-messages.msft.png":::
+         Die Registerkarte ' **Konsole** ' im **Einzug**  
+    :::image-end:::  
     
 <!--## Next steps  -->
 
@@ -264,48 +283,24 @@ Was passiert, wenn Sie Formatvorlagen bearbeiten, aber Sie müssen das Konsolenp
 *   See [Console API Reference][DevToolsConsoleReference] to learn more about all of the `console` methods that were demonstrated in [View messages logged from JavaScript(#view-messages-logged-from-javascript) and explore the other `console` methods that were not covered in this tutorial.  
 *   See [Get Started](/microsoft-edge/devtools-guide-chromium/#start) to explore what else you are able to do with DevTools.  -->  
 
+<!--
  
 
 
+-->  
 
 <!-- image links -->  
 
-[ImageExpandIcon]: /microsoft-edge/devtools-guide-chromium/media/expand-icon.msft.png  
-[ImageShowConsoleSidebarIcon]: /microsoft-edge/devtools-guide-chromium/media/show-console-sidebar-icon.msft.png  
-
-[ImageLogExample]: /microsoft-edge/devtools-guide-chromium/media/console-ars-technica-console-onload.msft.png "Abbildung 1: Nachrichten in der Konsole"  
-<!--[ImageLogSetUp1]: /microsoft-edge/devtools-guide-chromium/media/log-set-up-1.msft.png "old Figure 2: The tutorial on the left, and the demo on the right"  -->  
-[ImageDevToolsRight]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-example-devtools-right-console.msft.png "Abbildung 2: devtools wird rechts neben der Demo angezeigt."  
-[ImageDevToolsBottom]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-example-devtools-bottom-console.msft.png "Abbildung 3: devtools angedockt am Ende der Demo"  
-[ImageDevToolsSeparateBrowse]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-example-devtools-separate-console-browse.msft.png "Abbildung 4: Browser in einem separaten Fenster"  
-[ImageDevToolsSeparateDevTools]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-example-devtools-separate-console-devtools.msft.png "Abbildung 5: devtools in einem separaten Fenster Abdocken"  
-[ImageLogInfo]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-log-info.msft.png "Abbildung 6: die Konsole nach dem Klicken auf" Protokollinformationen "  
-[ImageSourceLog]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-sources-logjs.msft.png "Abbildung 7: devtools öffnet das Quellen Panel, nachdem Sie auf log.js klicken: 2"  
-[ImageConsoleLogWarning]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-log-warning.msft.png "Abbildung 8: die Konsole nach dem Klicken auf Protokoll Warnung"  
-[Imagestacktrace]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-log-warning-expanded.msft.png "Abbildung 9: eine Stapelüberwachung"  
-[ImageLogError]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-log-error.msft.png "Abbildung 10: eine Fehlermeldung"  
-[Imageconsoleable]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-log-table.msft.png "Abbildung 11: eine Tabelle in der Konsole"  
-[ImageConsoleLogGroup]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-log-group.msft.png "Abbildung 12: eine Gruppe von Nachrichten in der Konsole"  
-[ImageConsoleLogCustomFormatting]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-log-custom.msft.png "Abbildung 13: eine Nachricht mit benutzerdefinierter Formatierung in der Konsole"  
-[ImageConsoleLogError]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-cause-404.msft.png "Abbildung 14: ein 404-Fehler in der Konsole"  
-[ImageConsoleLogTypeError]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-cause-error.msft.png "Abbildung 15: ein TypeError in der Konsole"  
-[ImageVerboseLogLevel]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-cause-error-log-levels.msft.png "Abbildung 16: Aktivieren der ausführlichen Protokollebene"  
-[ImageConsoleLogViolation]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-cause-violation.msft.png "Abbildung 17: ein Verstoß in der Konsole"  
-[ImageConsoleDisablingLogError]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-cause-violation-log-levels.msft.png "Abbildung 18: Deaktivieren von Nachrichten auf Fehlerebene in der Konsole"  
-[ImageLogTextFiltering]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-all-messages-text-filter.msft.png "Abbildung 19: Filtern einer Nachricht, die Dave nicht enthält"  
-[ImageLogRegExFiltering]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-all-messages-regex-filter.msft.png "Abbildung 20: Filtern einer Nachricht, die nicht mit einem Muster übereinstimmt"  
-[ImageConsoleSidebar]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-sidebar-all-messages.msft.png "Abbildung 21: die Seitenleiste"  
-[ImageConsoleSidebarLogSource]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-sidebar-expanded-all-messages.msft.png "Abbildung 22: Anzeigen der Quelle von Nachrichten in der Seitenleiste"  
-[ImageConsoleLogBrowserFiltering]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-sidebar-user-messages.msft.png "Abbildung 23: Filtern von Browser Nachrichten"  
-[ImageDrawerConsole]:/Microsoft-Edge/devtools-Guide-Chromium/Media/console-elements-drawer-console-sidebar-all-messages.msft.png "Abbildung 24: die Registerkarte" Konsole "im Einzug"  
+[ImageExpandIcon]: ../media/expand-icon.msft.png  
+[ImageShowConsoleSidebarIcon]: ../media/show-console-sidebar-icon.msft.png  
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge \ (Chrom \)-Entwickler Tools"  
-[DevToolsCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Ausführen von Befehlen mit dem Befehlsmenü von Microsoft Edge devtools"  
-[DevToolsCustomizePlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement "Ändern der Platzierung von Microsoft Edge devtools (abdocken, docken an den unteren Rand, docken nach links)"  
-[DevToolsConsoleApi]: /microsoft-edge/devtools-guide-chromium/console/api "Konsolen-API-Referenz"  
-[DevToolsConsoleReference]: /microsoft-edge/devtools-guide-chromium/console/reference "Konsolen Referenz"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge \ (Chrom \) Developer Tools | Microsoft docs"  
+[DevToolsCommandMenu]: ../command-menu/index.md "Ausführen von Befehlen mit dem Befehlsmenü von Microsoft Edge devtools | Microsoft docs"  
+[DevToolsCustomizePlacement]: ../customize/placement.md "Ändern der Position von Microsoft Edge devtools | Microsoft docs"  
+[DevToolsConsoleApi]: ./api.md "Konsolen-API-Referenz | Microsoft docs"  
+[DevToolsConsoleReference]: ./reference.md "Konsolen Referenz | Microsoft docs"  
 
 [GlitchDevToolsConsoleLogExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/console/log.html "Erste Schritte mit der Protokollierung von Nachrichten | Glitch"  
 

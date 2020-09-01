@@ -2,16 +2,16 @@
 title: Anzeigen und Bearbeiten des lokalen Speichers mit Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/30/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: f7e187662aec8231f2cc4e99baab1b4b8e2048ad
-ms.sourcegitcommit: ad68bfbb355f6cfdaaf6612b77ea3985d4d6a58b
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+ms.openlocfilehash: 72aee823d3a3143ae7399c7057f3b606bd1078c3
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "10612011"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10983513"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -35,102 +35,93 @@ ms.locfileid: "10612011"
 
 
 
-In diesem Leitfaden wird gezeigt, wie Sie mit [Microsoft Edge devtools][MicrosoftEdgeDevTools] [`localStorage`][MDNWindowsLocalStorage] Schlüssel-Wert-Paare anzeigen, bearbeiten und löschen können.  
+In diesem Leitfaden wird gezeigt, wie Sie [localStorage][MDNWindowsLocalStorage] -Schlüssel-Wert-Paare mithilfe von [Microsoft Edge devtools][MicrosoftEdgeDevTools] anzeigen, bearbeiten und löschen.  
 
 ## Anzeigen von localStorage-Schlüsseln und-Werten   
 
 1.  Wählen Sie die Registerkarte **Anwendung** aus, um den **Anwendungs** Panel zu öffnen.  Standardmäßig wird der Bereich **Manifest** angezeigt.  
     
-    > ##### Abbildung1  
-    > Bereich ' Manifest '  
-    > ![Bereich ' Manifest '][ImageManifest]  
-
+    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="Bereich ' Manifest '" lightbox="../media/storage-application-manifest.msft.png":::
+       Bereich ' **Manifest** '  
+    :::image-end:::  
+    
 1.  Erweitern Sie das Menü **lokaler Speicher** .  
     
-    > ##### Abbildung2  
-    > Das Menü " **lokaler Speicher** " zeigt zwei Domänen an: `https://business.bing.com` und `https://www.bing.com`  
-    > ![Das Menü "lokaler Speicher"][ImageLocalStorageMenu]  
-
+    :::image type="complex" source="../media/storage-application-local-storage.msft.png" alt-text="Das Menü "lokaler Speicher"" lightbox="../media/storage-application-local-storage.msft.png":::
+       Das Menü " **lokaler Speicher** "  
+    :::image-end:::  
+    
 1.  Wählen Sie eine Domäne aus, um die Schlüssel-Wert-Paare anzuzeigen.  
     
-    > ##### Abbildung 3  
-    > Die `localStorage` Schlüssel-Wert-Paare für die `https://www.bing.com` Domäne  
-    > ![Die localStorage-Schlüssel-Wert-Paare für die https://www.bing.com Domäne][ImageLocalStorage]  
-
+    :::image type="complex" source="../media/storage-application-local-storage-view-key-value.msft.png" alt-text="Die localStorage-Schlüssel-Wert-Paare für die https://www.bing.com Domäne" lightbox="../media/storage-application-local-storage-view-key-value.msft.png":::
+       Die `localStorage` Schlüssel-Wert-Paare für die `https://www.bing.com` Domäne  
+    :::image-end:::  
+    
 1.  Wählen Sie eine Zeile der Tabelle aus, um den Wert im Viewer unter der Tabelle anzuzeigen.  
     
-    > ##### Abbildung4  
-    > Anzeigen des Werts des `eventLogQueue_Online` Schlüssels  
-    > ![Anzeigen des Werts des eventLogQueue_Online Schlüssels][ImageLocalStorageViewer]  
-
-## Erstellen eines neuen `localStorage` Schlüssel-Wert-Paars   
+    :::image type="complex" source="../media/storage-application-local-storage-view-key-value-selected.msft.png" alt-text="Anzeigen des Werts des eventLogQueue_Online Schlüssels" lightbox="../media/storage-application-local-storage-view-key-value-selected.msft.png":::
+       Anzeigen des Werts des `eventLogQueue_Online` Schlüssels  
+    :::image-end:::  
+    
+## Erstellen eines neuen localStorage-Schlüssel-Wert-Paars   
 
 1.  [Anzeigen der `localStorage` Schlüssel-Wert-Paare einer Domäne](#view-localstorage-keys-and-values)  
 1.  Doppelklicken Sie auf den leeren Teil der Tabelle.  DevTools erstellt eine neue Zeile und fokussiert den Cursor in der **Schlüssel** Spalte.  
     
-    > ##### Abbildung5  
-    > Der leere Teil der Tabelle zum doppelklicken, um ein neues Schlüssel-Wert-Paar zu erstellen  
-    > ![Der leere Teil der Tabelle zum doppelklicken, um ein neues Schlüssel-Wert-Paar zu erstellen][ImageLocalStorageCreate]  
-
-## Bearbeiten von `localStorage` Schlüsseln oder Werten   
+    :::image type="complex" source="../media/storage-application-local-storage-new-key-value.msft.png" alt-text="Der leere Teil der Tabelle zum doppelklicken, um ein neues Schlüssel-Wert-Paar zu erstellen" lightbox="../media/storage-application-local-storage-new-key-value.msft.png":::
+       Der leere Teil der Tabelle zum doppelklicken, um ein neues Schlüssel-Wert-Paar zu erstellen  
+    :::image-end:::  
+    
+## Bearbeiten von localStorage-Schlüsseln oder-Werten   
 
 1.  [Anzeigen der `localStorage` Schlüssel-Wert-Paare einer Domäne](#view-localstorage-keys-and-values)  
 1.  Doppelklicken Sie auf eine Zelle in der Spalte **Schlüssel** oder **Wert** , um diesen Schlüssel oder Wert zu bearbeiten.  
     
-    > ##### Abbildung6  
-    > Bearbeiten eines `localStorage` Schlüssels  
-    > ![Bearbeiten eines localStorage-Schlüssels][ImageLocalStorageEdit]  
-
-## Löschen von `localStorage` Schlüssel-Wert-Paaren   
+    :::image type="complex" source="../media/storage-application-local-storage-edit-key-value.msft.png" alt-text="Bearbeiten eines localStorage-Schlüssels" lightbox="../media/storage-application-local-storage-edit-key-value.msft.png":::
+       Bearbeiten eines `localStorage` Schlüssels  
+    :::image-end:::  
+    
+## Löschen von localStorage-Schlüssel-Wert-Paaren   
 
 1.  [Anzeigen der `localStorage` Schlüssel-Wert-Paare einer Domäne](#view-localstorage-keys-and-values)  
 1.  Wählen Sie das Schlüssel-Wert-Paar aus, das Sie löschen möchten.  DevTools hebt das Blau hervor, um anzugeben, dass es markiert ist.  
-
-1.  Drücken Sie die Eingabe `Delete` Taste, oder klicken Sie auf **Ausgewählte löschen Löschen** ![ ][ImageDeleteIcon] .  
-
+1.  Drücken Sie die Eingabe `Delete` Taste, oder klicken Sie auf **Ausgewählte löschen** \ ( ![ Auswahl löschen ][ImageDeleteIcon] \).  
+    
 ## Löschen aller `localStorage` Schlüssel-Wert-Paare für eine Domäne   
 
 1.  [Anzeigen der `localStorage` Schlüssel-Wert-Paare einer Domäne](#view-localstorage-keys-and-values)  
-
-1.  Wählen Sie **alle** löschen aus ![ ][ImageClearIcon] .  
-
-## Interagieren mit `localStorage` der Konsole   
+1.  Wählen Sie **Alle löschen** \ ( ![ Alle löschen ][ImageClearIcon] \) aus.  
+    
+## Interagieren mit localStorage über die Konsole   
 
 Da sie JavaScript in der **Konsole**ausführen können und die **Konsole** Zugriff auf die JavaScript-Kontexte der Seite hat, ist es möglich, mit `localStorage` der **Konsole**zu interagieren.  
 
 1.  Verwenden Sie das **JavaScript** -Kontextmenü, um den JavaScript-Kontext der **Konsole** zu ändern, wenn Sie auf die `localStorage` Schlüssel-Wert-Paare einer anderen Domäne als auf die angezeigte Seite zugreifen möchten.  
     
-    > ##### Abbildung7  
-    > Ändern des JavaScript-Kontexts der **Konsole**  
-    > ![Ändern des JavaScript-Kontexts der Konsole][ImageJSContext]  
-
+    :::image type="complex" source="../media/storage-console-local-storage.msft.png" alt-text="Ändern des JavaScript-Kontexts der Konsole" lightbox="../media/storage-console-local-storage.msft.png":::
+       Ändern des JavaScript-Kontexts der Konsole  
+    :::image-end:::  
+    
 1.  Führen Sie Ihre `localStorage` Ausdrücke in der Konsole wie in Ihrem JavaScript aus.  
     
-    > ##### Abbildung8  
-    > Interagieren mit `localStorage` der **Konsole**  
-    > ![Interagieren mit localStorage über die Konsole][ImageLocalStorageConsole]  
-
+    :::image type="complex" source="../media/storage-console-local-storage-interaction.msft.png" alt-text="Interagieren mit localStorage über die Konsole" lightbox="../media/storage-console-local-storage-interaction.msft.png":::
+       Interagieren mit `localStorage` der **Konsole**  
+    :::image-end:::  
+    
+<!--  
  
 
 
+-->  
 
 <!-- image links -->  
 
-[ImageClearIcon]: /microsoft-edge/devtools-guide-chromium/media/clear-icon.msft.png  
-[ImageDeleteIcon]: /microsoft-edge/devtools-guide-chromium/media/delete-icon.msft.png  
-
-[ImageManifest]: /microsoft-edge/devtools-guide-chromium/media/storage-application-manifest.msft.png "Abbildung 1: der Bereich "Manifest""  
-[ImageLocalStorageMenu]: /microsoft-edge/devtools-guide-chromium/media/storage-application-local-storage.msft.png "Abbildung 2: lokales Speicher-Menü"  
-[ImageLocalStorage]: /microsoft-edge/devtools-guide-chromium/media/storage-application-local-storage-view-key-value.msft.png "Abbildung 3: die localStorage-Schlüssel-Wert-Paare für die https://www.bing.com Domäne"  
-[ImageLocalStorageViewer]: /microsoft-edge/devtools-guide-chromium/media/storage-application-local-storage-view-key-value-selected.msft.png "Abbildung 4: Anzeigen des Werts des eventLogQueue_Online Schlüssels"  
-[ImageLocalStorageCreate]: /microsoft-edge/devtools-guide-chromium/media/storage-application-local-storage-new-key-value.msft.png "Abbildung 5: der leere Teil der Tabelle, doppelklicken Sie, um ein neues Schlüssel-Wert-Paar zu erstellen"  
-[ImageLocalStorageEdit]: /microsoft-edge/devtools-guide-chromium/media/storage-application-local-storage-edit-key-value.msft.png "Abbildung 6: Bearbeiten eines localStorage-Schlüssels"  
-[ImageJSContext]: /microsoft-edge/devtools-guide-chromium/media/storage-console-local-storage.msft.png "Abbildung 7: Ändern des JavaScript-Kontexts der Konsole"  
-[ImageLocalStorageConsole]: /microsoft-edge/devtools-guide-chromium/media/storage-console-local-storage-interaction.msft.png "Abbildung 8: interagieren mit localStorage über die Konsole"  
+[ImageClearIcon]: ../media/clear-icon.msft.png  
+[ImageDeleteIcon]: ../media/delete-icon.msft.png  
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chrom)-Entwickler Tools"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chrom)-Entwicklertools | Microsoft docs"  
 
 [MDNWindowsLocalStorage]: https://developer.mozilla.org/docs/Web/API/Window/localStorage "Window. localStorage | MDN"  
 

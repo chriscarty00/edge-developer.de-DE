@@ -2,16 +2,16 @@
 title: 'DevTools für Anfänger: Erste Schritte mit HTML und dem Dom'
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: d992a6ca68de07c879ca8e319ee6c22782924a6b
-ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
+ms.openlocfilehash: 50dfd8595c270a2532f55b71307b42c3636bba3c
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "10882730"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10983028"
 ---
 <!-- Copyright Katherine Jackson 
 
@@ -35,11 +35,11 @@ In diesem speziellen Lernprogramm erfahren Sie mehr über HTML und das DOM.  HTM
 
 ## Ziele   
 
-Sie werden Web-Entwicklung lernen, indem Sie Ihre eigene Website erstellen.  Wenn Sie alle Lernprogramme in der *devtools für Anfänger* -Serie abgeschlossen haben, sieht Ihre fertige Website wie in **Abbildung 1**aus.  
+Sie werden Web-Entwicklung lernen, indem Sie Ihre eigene Website erstellen.  Wenn Sie alle Lernprogramme in der *devtools für Anfänger* -Serie abgeschlossen haben, sieht die fertige Website wie in der folgenden Abbildung aus.  
 
-> ##### Abbildung1  
-> Die fertige Website  
-> ![Die fertige Website][ImageHtmlFinished]  
+:::image type="complex" source="../media/beginners-html-finished.msft.png" alt-text="Die fertige Website" lightbox="../media/beginners-html-finished.msft.png":::
+   Die fertige Website  
+:::image-end:::  
 
 Am Ende dieses Lernprogramms können Sie Folgendes verstehen:  
 
@@ -61,28 +61,29 @@ Bevor Sie dieses Lernprogramm ausführen, führen Sie die folgenden Voraussetzun
 Sie werden Ihre Website in einem Online Code-Editor mit dem Namen glitch erstellen.  
 
 1.  Öffnen Sie den [Quellcode][GlitchAlluringShockIndex].  Diese Registerkarte wird in diesem Lernprogramm als **Registerkarte "Editor** " bezeichnet.  
-    > ##### Abbildung2  
-    > Die Registerkarte "Editor"  
-    > ![Die Registerkarte "Editor"][ImageHtmlSetup1]  
-
+    
+    :::image type="complex" source="../media/beginners-html-setup1.msft.png" alt-text="Die Registerkarte "Editor"" lightbox="../media/beginners-html-setup1.msft.png":::
+       Die Registerkarte "Editor"  
+    :::image-end:::  
+    
 1.  Klicken Sie auf **verführerisch – Schock**.  Das Menü Projektoptionen wird in der oberen linken Ecke geöffnet.  
     
-    > #### Abbildung 3  
-    > Das Menü "Projektoptionen"  
-    > ![Das Menü "Projektoptionen"][ImageHtmlSetup2]  
+    :::image type="complex" source="../media/beginners-html-setup2.msft.png" alt-text="Das Menü "Projektoptionen"" lightbox="../media/beginners-html-setup2.msft.png":::
+       Das Menü "Projektoptionen"  
+    :::image-end:::  
     
 1.  Klicken Sie auf **Remix Project**.  Glitch erstellt eine Kopie des Projekts, die Sie bearbeiten können, und generiert nach dem Zufallsprinzip einen neuen Namen für das Projekt.  Der Inhalt ist derselbe wie zuvor.  
     
-    > ##### Abbildung4  
-    > Das Remix-Projekt  
-    > ![Das Remix-Projekt][ImageHtmlSetup3]  
+    :::image type="complex" source="../media/beginners-html-setup3.msft.png" alt-text="Das Remix-Projekt" lightbox="../media/beginners-html-setup3.msft.png":::
+       Das Remix-Projekt  
+    :::image-end:::  
     
 1.  Wenn Sie beabsichtigen, das nächste Lernprogramm in dieser Serie abzuschließen, klicken Sie auf **Anmelden** , und registrieren Sie sich bei glitch mit Ihrem GitHub-oder Facebook-Konto.  Wenn Sie sich nicht anmelden, verlieren Sie die Möglichkeit, dieses Projekt zu bearbeiten, wenn Sie die Registerkarte "Bearbeiten" schließen.  
 1.  Klicken Sie auf **anzeigen** , und wählen Sie **in einem neuen Fenster**aus.  Daraufhin wird eine neue Registerkarte geöffnet, auf der Sie die Live Seite anzeigen können.  Diese Registerkarte wird in diesem Lernprogramm als **"Live"-Registerkarte** bezeichnet.  
     
-    > ##### Abbildung5  
-    > Die Registerkarte "Live"  
-    > ![Die Registerkarte "Live"][ImageHtmlSetup4]  
+    :::image type="complex" source="../media/beginners-html-setup4.msft.png" alt-text="Die Registerkarte "Live"" lightbox="../media/beginners-html-setup4.msft.png":::
+       Die Registerkarte "Live"  
+    :::image-end:::  
     
 ## Hinzufügen von Inhalten   
 
@@ -90,77 +91,92 @@ Ihre Website ist ziemlich leer.  Führen Sie die folgenden Schritte aus, um Inha
 
 1.  Ersetzen Sie auf der **Registerkarte Editor** `<!-- You're "About Me" will go here.  -->` durch `<h1>About Me</h1>` .  
     
-    ```html
-    ...
-        ...
-        <body>
-            <p> Your site!</p>
-            <main>
-                <h1>About Me</h1>
-            </main>
-            ...
-        ...
-    ...
-    ```  
-    
-    > ##### Abbildung6  
-    > Der neue Code ist auf der Registerkarte "Editor" hervorgehoben.  
-    > ![Der neue Code ist auf der Registerkarte "Editor" hervorgehoben.][ImageHtmlAdd1]  
+    :::row:::
+       :::column span="":::
+          ```html
+          ...
+              ...
+              <body>
+                  <p> Your site!</p>
+                  <main>
+                      <h1>About Me</h1>
+                  </main>
+                  ...
+              ...
+          ...
+          ```  
+       :::column-end:::
+       :::column span="":::
+          :::image type="complex" source="../media/beginners-html-add1.msft.png" alt-text="Der neue Code ist auf der Registerkarte "Editor" hervorgehoben." lightbox="../media/beginners-html-add1.msft.png":::
+             Der neue Code ist auf der Registerkarte "Editor" hervorgehoben.  
+          :::image-end:::  
+       :::column-end:::
+    :::row-end:::
     
 1.  Zeigen Sie Ihre Änderungen auf der **Registerkarte "Live"** an.  Der Text `About Me` wird auf der Seite angezeigt.  Sie ist größer als der restliche Text, da das `<h1>` Element eine Abschnittsüberschrift darstellt.  Ihr Webbrowserformat Vorlagen für Überschriften in größeren Schriftgraden automatisch.  
     
-    > ##### Abbildung7  
-    > Die neue Überschrift wird auf der Registerkarte "Live" angezeigt  
-    > ![Die neue Überschrift wird auf der Registerkarte "Live" angezeigt][ImageHtmlAdd2]  
+    :::image type="complex" source="../media/beginners-html-add2.msft.png" alt-text="Die neue Überschrift wird auf der Registerkarte "Live" angezeigt" lightbox="../media/beginners-html-add2.msft.png":::
+       Die neue Überschrift wird auf der Registerkarte "Live" angezeigt  
+    :::image-end:::  
     
 1.  Klicken Sie auf der **Registerkarte Editor** `<p>I am learning HTML.  Recent accomplishments:</p>` auf die Zeile, die Sie gerade eingefügt haben `<h1>About Me</h1>` .  
     
-    ```html
-    ...
-        ...
-        <body>
-            <p> Your site!</p>
-            <main>
-                <h1>About Me</h1>
-                <p>I am learning web development.  Recent accomplishments:</p>
-            </main>
-            ...
-        ...
-    ...
-    ```  
-
-    > ##### Abbildung8  
-    > Der neue Code ist auf der Registerkarte "Editor" hervorgehoben.  
-    > ![Der neue Code ist auf der Registerkarte "Editor" hervorgehoben.][ImageHtmlAdd3]  
+    :::row:::
+       :::column span="":::
+          ```html
+          ...
+              ...
+              <body>
+                  <p> Your site!</p>
+                  <main>
+                      <h1>About Me</h1>
+                      <p>I am learning web development.  Recent accomplishments:</p>
+                  </main>
+                  ...
+              ...
+          ...
+          ```  
+       :::column-end:::
+       :::column span="":::
+          :::image type="complex" source="../media/beginners-html-add3.msft.png" alt-text="Der neue Code ist auf der Registerkarte "Editor" hervorgehoben." lightbox="../media/beginners-html-add3.msft.png":::
+             Der neue Code ist auf der Registerkarte "Editor" hervorgehoben.  
+          :::image-end:::  
+       :::column-end:::
+    :::row-end:::
     
 1.  Zeigen Sie Ihre Änderungen auf der **Registerkarte "Live"** an.  
 1.  Zurück auf der **Registerkarte "Editor"** fügen Sie eine Liste ihrer Leistungen hinzu:  
     
-    ```html
-    ...
-        ...
-            ...
-            <p>I am learning web development.  Recent accomplishments:</p>
-            <ul>
-                <li>Learned how to set up my code in Glitch.</li>
-                <li>Added content to my HTML.</li>
-                <li>TODO: Learn how to use Microsoft Edge DevTools to experiment with content changes.</li>
-                <li>TODO: Learn the difference between HTML and the DOM.</li>
-            </ul>
-            ...
-        ...
-    ...
-    ```  
-    
-    > ##### Abbildung 9  
-    > Der neue Code ist auf der Registerkarte "Editor" hervorgehoben.  
-    > ![Der neue Code ist auf der Registerkarte "Editor" hervorgehoben.][ImageHtmlAdd4]  
+    :::row:::
+       :::column span="":::
+          ```html
+          ...
+              ...
+                  ...
+                  <p>I am learning web development.  Recent accomplishments:</p>
+                  <ul>
+                      <li>Learned how to set up my code in Glitch.</li>
+                      <li>Added content to my HTML.</li>
+                      <li>TODO: Learn how to use Microsoft Edge DevTools to experiment with content changes.</li>
+                      <li>TODO: Learn the difference between HTML and the DOM.</li>
+                  </ul>
+                  ...
+              ...
+          ...
+          ```  
+       :::column-end:::
+       :::column span="":::
+          :::image type="complex" source="../media/beginners-html-add4.msft.png" alt-text="Der neue Code ist auf der Registerkarte "Editor" hervorgehoben." lightbox="../media/beginners-html-add4.msft.png":::
+             Der neue Code ist auf der Registerkarte "Editor" hervorgehoben.  
+          :::image-end:::  
+       :::column-end:::
+    :::row-end:::  
     
 1.  Wiederkehren Sie zur **Registerkarte Live** zurück, um sicherzustellen, dass der neue Inhalt richtig angezeigt wird.  
     
-    > ##### Abbildung 10  
-    > Die neue Liste wird auf der Registerkarte "Live" angezeigt  
-    > ![Die neue Liste wird auf der Registerkarte "Live" angezeigt][ImageHtmlAdd5]  
+    :::image type="complex" source="../media/beginners-html-add5.msft.png" alt-text="Die neue Liste wird auf der Registerkarte "Live" angezeigt" lightbox="../media/beginners-html-add5.msft.png":::
+       Die neue Liste wird auf der Registerkarte "Live" angezeigt  
+    :::image-end:::  
     
 ## Experimentieren mit Inhaltsänderungen in Microsoft Edge devtools   
 
@@ -172,27 +188,27 @@ Bevor Sie mit der Bearbeitung Ihrer Inhalte von Microsoft Edge devtools beginnen
 
 1.  Wechseln Sie zur **Registerkarte Live**.  Am unteren Rand der Seite wird der Text angezeigt `A new element!?!` .  
     
-    > ###### Abbildung 11  
-    > Unten auf der Seite kann der Text `A new element!?!` angezeigt werden  
-    > ![Am unteren Rand der Seite wird der Text ein neues Element!?! kann angezeigt werden][ImageHtmlDom1]  
+    :::image type="complex" source="../media/beginners-html-dom1.msft.png" alt-text="Am unteren Rand der Seite wird der Text ein neues Element!?! kann angezeigt werden" lightbox="../media/beginners-html-dom1.msft.png":::
+       Am unteren Rand der Seite wird der Text ein neues Element!?! kann angezeigt werden  
+    :::image-end:::  
     
 1.  Wechseln Sie zurück zur **Registerkarte Editor** , und versuchen Sie, diesen Text zu finden `index.html` .  Es ist nicht da!  
     
-    > ##### Abbildung 12  
-    > Der mysteriöse Text `A new element!?!` ist nirgendwo zu finden `index.html`  
-    > ![Der mysteriöse Text ein neues Element!?! ist nirgendwo in index.html zu finden][ImageHtmlDom2]  
+    :::image type="complex" source="../media/beginners-html-dom2.msft.png" alt-text="Der mysteriöse Text ein neues Element!?! ist nirgendwo in index.html zu finden" lightbox="../media/beginners-html-dom2.msft.png":::
+       Der mysteriöse Text `A new element!?!` ist nirgendwo zu finden `index.html`  
+    :::image-end:::  
     
 1.  Wechseln Sie zurück zur **Registerkarte Live**, klicken Sie mit der rechten Maustaste `A new element!?!` , und wählen Sie über **prüfen**aus.  
     
-    > ##### Abbildung 13  
-    > Überprüfen von Text  
-    > ![Überprüfen von Text][ImageHtmlDom3]  
+    :::image type="complex" source="../media/beginners-html-dom3.msft.png" alt-text="Überprüfen von Text" lightbox="../media/beginners-html-dom3.msft.png":::
+       Überprüfen von Text  
+    :::image-end:::  
     
     DevTools wird neben ihrer Seite geöffnet.  `<div>A new element!?!</div>` ist blau hervorgehoben.  Obwohl diese Struktur in devtools wie Ihr HTML-Code aussieht, handelt es sich tatsächlich um die **DOM-Struktur**.  
     
-    > ##### Abbildung 14  
-    > DevTools ist neben der Seite geöffnet.  
-    > ![DevTools ist neben der Seite geöffnet.][ImageHtmlDom4]  
+    :::image type="complex" source="../media/beginners-html-dom4.msft.png" alt-text="DevTools ist neben der Seite geöffnet." lightbox="../media/beginners-html-dom4.msft.png":::
+       DevTools ist neben der Seite geöffnet.  
+    :::image-end:::  
     
 Wenn Ihre Seite geladen wird, verwendet der Browser Ihren HTML-Code, um den *anfänglichen* Inhalt der Seite zu erstellen.  Das Dom steht für den *aktuellen* Inhalt der Seite, der sich im Laufe der Zeit ändern kann.  Der mysteriöse `<div>A new element!?!</div>` Inhalt wird Ihrer Seite hinzugefügt, weil das `<script src="new.js"></script>` Tag am unteren Rand des HTML-Tags liegt.  Dieses Tag bewirkt, dass JavaScript-Code ausgeführt wird.  Sie werden in einem späteren Lernprogramm mehr über JavaScript erfahren, aber betrachten Sie es jetzt als Programmiersprache, mit der der Inhalt Ihrer Seite geändert werden kann.  In diesem speziellen Fall fügt JavaScript-Code `<div>A new element!?!</div>` zu Ihrer Seite hinzu.  Deshalb ist dieser mysteriöse Text auf Ihrer Live-Seite sichtbar, aber nicht in Ihrem HTML-Code.  
 
@@ -201,35 +217,40 @@ Wenn Ihre Seite geladen wird, verwendet der Browser Ihren HTML-Code, um den *anf
 Wenn Sie schnell mit Inhaltsänderungen experimentieren möchten, ohne die Registerkarte "Live" zu verlassen, probieren Sie devtools aus.  
 
 1.  Klicken Sie in devtools mit der rechten Maustaste, `Your site!` und wählen Sie **als HTML bearbeiten**aus.  
-
-    > ##### Abbildung 15  
-    > Bearbeiten des Knotens als HTML  
-    > ![Bearbeiten des Knotens als HTML][ImageHtmlEdit1]  
+    
+    :::image type="complex" source="../media/beginners-html-edit1.msft.png" alt-text="Bearbeiten des Knotens als HTML" lightbox="../media/beginners-html-edit1.msft.png":::
+       Bearbeiten des Knotens als HTML  
+    :::image-end:::  
     
 1.  Ersetzen Sie dies `<p>Your site!</p>` durch den folgenden Code.  
     
-    ```html
-    ...
-        ...
-            ...
-            <header>
-                <p><b>Welcome to my site!</b></p>
-                <button>Download my resume</button>
-            </header>
-            ...
-        ...
-    ...
-    ```  
-    
-    > ##### Abbildung 16  
-    > Bearbeiten des Knotens als HTML  
-    > ![Bearbeiten des Knotens als HTML][ImageHtmlEdit2]  
+    :::row:::
+       :::column span="":::
+          ```html
+          ...
+              ...
+                  ...
+                  <header>
+                      <p><b>Welcome to my site!</b></p>
+                      <button>Download my resume</button>
+                  </header>
+                  ...
+              ...
+          ...
+          ```  
+       :::column-end:::
+       :::column span="":::
+          :::image type="complex" source="../media/beginners-html-edit2.msft.png" alt-text="Bearbeiten des Knotens als HTML" lightbox="../media/beginners-html-edit2.msft.png":::
+             Bearbeiten des Knotens als HTML  
+          :::image-end:::  
+       :::column-end:::
+    :::row-end:::  
     
 1.  Drücken Sie `Control` + `Enter` \ (Windows \) oder `Command` + `Enter` \ (macOS \), um die Änderungen zu speichern, oder klicken Sie auf eine Stelle außerhalb des Felds.  Ihre Änderungen werden automatisch in der Live Ansicht Ihrer Seite angezeigt.  Der Text `Your site!` wurde durch den neuen Inhalt ersetzt.  
     
-    > ##### Abbildung 17  
-    > Der neue Inhalt wird sofort auf der Seite angezeigt.  
-    > ![Der neue Inhalt wird sofort auf der Seite angezeigt.][ImageHtmlEdit3]  
+    :::image type="complex" source="../media/beginners-html-edit3.msft.png" alt-text="Der neue Inhalt wird sofort auf der Seite angezeigt." lightbox="../media/beginners-html-edit3.msft.png":::
+       Der neue Inhalt wird sofort auf der Seite angezeigt.  
+    :::image-end:::  
     
 Dieser Workflow eignet sich gut zum Experimentieren mit Inhaltsänderungen.  Wenn Sie die Seite neu laden oder die Registerkarte schließen, sind Ihre Änderungen für immer verschwunden.  Wenn Sie diesen Workflow verwenden und Ihre Änderungen speichern möchten, müssen Sie diese Änderungen manuell in Ihr HTML-Code kopieren.  In den nächsten Abschnitten werden weitere Möglichkeiten zum Ändern von Inhalten aus der DOM-Struktur angezeigt.  
 
@@ -239,20 +260,26 @@ Sie können auch die Reihenfolge der DOM-Knoten ändern.  Auf Ihrer Webseite bef
 
 1.  Suchen Sie den `<nav>` Knoten in der **DOM-Struktur** von devtools.  
     
-    > ##### Abbildung 18  
-    > Der Navigationsknoten ist in devtools blau hervorgehoben.  
-    > ![Der Navigationsknoten ist in devtools blau hervorgehoben.][ImageHtmlReorder1]  
+    :::image type="complex" source="../media/beginners-html-reorder1.msft.png" alt-text="Der Navigationsknoten ist in devtools blau hervorgehoben." lightbox="../media/beginners-html-reorder1.msft.png":::
+       Der Navigationsknoten ist in devtools blau hervorgehoben.  
+    :::image-end:::  
     
 1.  Ziehen Sie den `<nav>` Knoten an den Anfang, sodass er das erste untergeordnete Element unterhalb des `<body>` Knotens ist.  
-    > ##### Abbildung 19  
-    > Ziehen des Navigationsknotens nach oben  
-    > ![Ziehen des Navigationsknotens nach oben][ImageHtmlReorder2]  
     
-    Der `<nav>` Knoten wird jetzt oben auf der Seite angezeigt.  
-    
-    > ##### Abbildung 20  
-    > Der Navigationsknoten befindet sich am oberen Rand der Seite.  
-    > ![Der Navigationsknoten befindet sich am oberen Rand der Seite.][ImageHtmlReorder3]  
+    :::row:::
+       :::column span="":::
+          :::image type="complex" source="../media/beginners-html-reorder2.msft.png" alt-text="Ziehen des Navigationsknotens nach oben" lightbox="../media/beginners-html-reorder2.msft.png":::
+             Ziehen des Navigationsknotens nach oben  
+          :::image-end:::  
+       :::column-end:::
+       :::column span="":::
+          Der `<nav>` Knoten wird jetzt oben auf der Seite angezeigt.  
+          
+          :::image type="complex" source="../media/beginners-html-reorder3.msft.png" alt-text="Der Navigationsknoten befindet sich am oberen Rand der Seite." lightbox="../media/beginners-html-reorder3.msft.png":::
+             Der Navigationsknoten befindet sich am oberen Rand der Seite.  
+          :::image-end:::  
+       :::column-end:::
+   :::row-end:::  
     
 ### Löschen eines Knotens   
 
@@ -260,15 +287,15 @@ Sie können auch Knoten aus der DOM-Struktur entfernen.
 
 1.  Klicken Sie in der **DOM-Struktur**auf `<div>A new element!?!</div>` .  DevTools hebt den Knoten Blau hervor.  
     
-    > ##### Abbildung 21  
-    > Auswählen des zu löschenden Knotens  
-    > ![Auswählen des zu löschenden Knotens][ImageHtmlDelete1]  
+    :::image type="complex" source="../media/beginners-html-delete1.msft.png" alt-text="Auswählen des zu löschenden Knotens" lightbox="../media/beginners-html-delete1.msft.png":::
+       Auswählen des zu löschenden Knotens  
+    :::image-end:::  
     
 1.  Drücken Sie die `Delete` Taste auf der Tastatur.  Der `<div>A new element!?!</div>` Knoten wird aus ihrer DOM-Struktur entfernt.  
     
-    > ##### Abbildung 22  
-    > Der Knoten wurde gelöscht  
-    > ![Der Knoten wurde gelöscht][ImageHtmlDelete2]  
+    :::image type="complex" source="../media/beginners-html-delete2.msft.png" alt-text="Der Knoten wurde gelöscht" lightbox="../media/beginners-html-delete2.msft.png":::
+       Der Knoten wurde gelöscht  
+    :::image-end:::  
     
 ## Kopieren der Änderungen   
 
@@ -276,10 +303,10 @@ Sie haben es fast geschafft.  Sie haben in devtools einige Änderungen an Ihrer 
 
 1.  Aktualisieren Sie Ihren **Live-Reiter**.  Die Änderungen, die Sie in der DOM-Struktur vorgenommen haben, werden ausgeblendet.  Insbesondere kehrt der Text `Your site!` zum Anfang der Seite zurück, und der Text `A new element!?!` kehrt nach unten zurück.  
     
-    > ##### Abbildung 23  
-    > Die von Ihnen vorgenommenen Änderungen sind nicht mehr vorhanden  
-    > ![Die von Ihnen vorgenommenen Änderungen sind nicht mehr vorhanden][ImageHtmlCopy1]  
-
+    :::image type="complex" source="../media/beginners-html-copy1.msft.png" alt-text="Die von Ihnen vorgenommenen Änderungen sind nicht mehr vorhanden" lightbox="../media/beginners-html-copy1.msft.png":::
+       Die von Ihnen vorgenommenen Änderungen sind nicht mehr vorhanden  
+    :::image-end:::  
+    
 1.  Kopieren Sie den folgenden Code.  
     
     ```html
@@ -313,12 +340,12 @@ Sie haben es fast geschafft.  Sie haben in devtools einige Änderungen an Ihrer 
         </body>
     </html>
     ```  
-      
+    
 1.  Wechseln Sie zurück zur **Registerkarte Editor** , und ersetzen Sie den Inhalt Ihrer `index.html` Datei durch den Code, den Sie soeben kopiert haben.  
     
-    > ##### Abbildung 24  
-    > Aussehen der `index.html` Datei  
-    > ![So sollte Ihre index.html-Datei aussehen][ImageHtmlCopy2]  
+    :::image type="complex" source="../media/beginners-html-copy2.msft.png" alt-text="So sollte Ihre index.html-Datei aussehen" lightbox="../media/beginners-html-copy2.msft.png":::
+       Aussehen der `index.html` Datei  
+    :::image-end:::  
     
 ## Nächste Schritte   
 
@@ -326,36 +353,9 @@ Sie haben es fast geschafft.  Sie haben in devtools einige Änderungen an Ihrer 
 *   Lesen Sie [Einführung in das DOM][MDNIntroductionDom] , um mehr über das DOM zu erfahren.  
 *   Schauen Sie sich einen Kurs wie [Einführung in die Webentwicklung][CourseraIntroductionToWebDevelopment] an, um mehr praktische Erfahrungen mit der Webentwicklung zu erhalten.  
 
-<!--- image links --->  
-
-[ImageHtmlFinished]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-finished.msft.png "Abbildung 1: die fertige Website"  
-[ImageHtmlSetup1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-setup1.msft.png "Abbildung 2: die Registerkarte "Editor""  
-[ImageHtmlSetup2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-setup2.msft.png "Abbildung 3: das Menü "Projektoptionen""  
-[ImageHtmlSetup3]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-setup3.msft.png "Abbildung 4: das Remix-Projekt"  
-[ImageHtmlSetup4]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-setup4.msft.png "Abbildung 5: die Registerkarte "Live""  
-[ImageHtmlAdd1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-add1.msft.png "Abbildung 6: der neue Code ist auf der Registerkarte "Editor" hervorgehoben"  
-[ImageHtmlAdd2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-add2.msft.png "Abbildung 7: die neue Überschrift wird auf der Registerkarte "Live" angezeigt"  
-[ImageHtmlAdd3]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-add3.msft.png "Abbildung 8: der neue Code ist auf der Registerkarte "Editor" hervorgehoben"  
-[ImageHtmlAdd4]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-add4.msft.png "Abbildung 9: der neue Code ist auf der Registerkarte "Editor" hervorgehoben"  
-[ImageHtmlAdd5]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-add5.msft.png "Abbildung 10: die neue Liste wird auf der Registerkarte "Live" angezeigt"  
-[ImageHtmlDom1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-dom1.msft.png "Abbildung 11: am unteren Rand der Seite der Text ein neues Element!?! kann angezeigt werden"  
-[ImageHtmlDom2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-dom2.msft.png "Abbildung 12: der mysteriöse Text ein neues Element!?! ist nirgendwo in index.html zu finden"  
-[ImageHtmlDom3]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-dom3.msft.png "Abbildung 13: Überprüfen von Text"  
-[ImageHtmlDom4]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-dom4.msft.png "Abbildung 14: devtools ist neben der Seite geöffnet"  
-[ImageHtmlEdit1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-edit1.msft.png "Abbildung 15: Bearbeiten des Knotens als HTML"  
-[ImageHtmlEdit2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-edit2.msft.png "Abbildung 16: Bearbeiten des Knotens als HTML"  
-[ImageHtmlEdit3]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-edit3.msft.png "Abbildung 17: der neue Inhalt wird sofort auf der Seite angezeigt."  
-[ImageHtmlReorder1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-reorder1.msft.png "Abbildung 18: der Navigationsknoten ist in devtools blau hervorgehoben"  
-[ImageHtmlReorder2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-reorder2.msft.png "Abbildung 19: Ziehen des Navigationsknotens nach oben"  
-[ImageHtmlReorder3]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-reorder3.msft.png "Abbildung 20: der Navigationsknoten befindet sich am oberen Rand der Seite."  
-[ImageHtmlDelete1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-delete1.msft.png "Abbildung 21: Auswählen des zu löschenden Knotens"  
-[ImageHtmlDelete2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-delete2.msft.png "Abbildung 22: der Knoten wurde gelöscht"  
-[ImageHtmlCopy1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-copy1.msft.png "Abbildung 23: die von Ihnen vorgenommenen Änderungen sind nicht mehr vorhanden"  
-[ImageHtmlCopy2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-copy2.msft.png "Abbildung 24: Aussehen Ihrer index.html-Datei"  
-
 <!--- links --->  
 
-[DevToolsBeginnersCss]: /microsoft-edge/devtools-guide-chromium/beginners/css "DevTools für Anfänger: Erste Schritte mit CSS"  
+[DevToolsBeginnersCss]: ./css.md "DevTools für Anfänger: Erste Schritte mit CSS | Microsoft docs"  
 
 [MicrosoftEdgeInsider]: https://www.microsoftedgeinsider.com "Microsoft Edge-Insider"  
 

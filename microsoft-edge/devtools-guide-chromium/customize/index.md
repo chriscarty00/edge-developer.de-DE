@@ -2,16 +2,16 @@
 title: Anpassen von Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: f34f2e3c02b0c66ee02f4810827f3adb51a60abc
-ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+ms.openlocfilehash: e726b7f3f6245cb6f6798669c73fb14718542baa
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "10882744"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10982381"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -45,57 +45,57 @@ Führen Sie eine der folgenden Aktionen aus, um die Einstellungen zu öffnen:
 
 *   Drücken Sie `F1` , während devtools den Fokus hat.  
 *   Öffnen Sie das **Hauptmenü** , und wählen Sie dann **Einstellungen**aus.  
-
-> ##### Abbildung1  
-> Einstellungen  
-> ![Einstellungen][ImageSettings]  
-
+    
+    :::image type="complex" source="../media/customize-settings-preferences.msft.png" alt-text="Einstellungen" lightbox="../media/customize-settings-preferences.msft.png":::
+       **Einstellungen**  
+    :::image-end:::  
+    
 ## Schublade   
 
 Die **Schublade** enthält viele versteckte Features.  
 
-Drücken Sie `Escape` , um die Schublade zu öffnen oder zu schließen.  
+Drücken Sie `Escape` , um die **Schublade**zu öffnen oder zu schließen.  
 
-> ##### Abbildung2  
-> Die Schublade  
-> ![Die Schublade][ImageDrawerExample]  
+:::image type="complex" source="../media/customize-drawer-open.msft.png" alt-text="Die Schublade" lightbox="../media/customize-drawer-open.msft.png":::
+   Die **Schublade**  
+:::image-end:::  
 
-Klicken Sie auf **mehr** ![ ][ImageMoreIcon] , um weitere Registerkarten zu öffnen.  
+Klicken Sie auf **mehr** \ ( ![ mehr ][ImageMoreIcon] \), um weitere Registerkarten für die **Schublade** zu öffnen.  
 
-> ##### Abbildung 3  
-> Die Schaltfläche zum Öffnen von Schubladen Registern  
-> ![Die Schaltfläche zum Öffnen von Schubladen Registern][ImageMoreDrawerTabs]  
+:::image type="complex" source="../media/customize-drawer-open-more-tools.msft.png" alt-text="Schaltfläche zum Öffnen der Registerkarten für die Schublade" lightbox="../media/customize-drawer-open-more-tools.msft.png":::
+   Schaltfläche zum Öffnen der Registerkarten für die **Schublade**  
+:::image-end:::  
 
 ## Neuanordnen von Bereichen   
 
 Klicken Sie auf die Registerkarte, und ziehen Sie Sie, um die Reihenfolge zu ändern.  Ihre benutzerdefinierte Aktivierreihenfolge bleibt in devtools-Sitzungen erhalten.  
 
 > [!NOTE]
-> Standardmäßig ist die Registerkarte Netzwerk Panel in der Regel die vierte von Links.  In [Abbildung 4](#figure-4)handelt es sich um die erste von Links.  
+> Standardmäßig ist die Registerkarte **Netzwerk** Panel in der Regel die vierte von Links.  In der folgenden Abbildung ist das **Netzwerk** Panel die erste von Links.  
 
-> ##### Abbildung4  
-> Ein devtools-Fenster mit einer benutzerdefinierten Registerkartenreihenfolge    
-> ![Ein devtools-Fenster mit einer benutzerdefinierten Registerkartenreihenfolge][ImageCustomTabOrdering]  
+:::image type="complex" source="../media/customize-network-first-position.msft.png" alt-text="Ein devtools-Fenster mit einer benutzerdefinierten Registerkartenreihenfolge" lightbox="../media/customize-network-first-position.msft.png":::
+   Ein devtools-Fenster mit einer benutzerdefinierten Registerkartenreihenfolge  
+:::image-end:::  
 
 ## Ändern der devtools-Platzierung   
 
 Weitere Informationen finden Sie unter [Platzierung von Microsoft Edge devtools][DevToolsPlacement].  
 
-> ##### Abbildung5  
-> Nicht angedockte devtools  
-> ![Nicht angedockte devtools][ImageUndock]  
+:::image type="complex" source="../media/customize-dev-tools-dock-side.msft.png" alt-text="Nicht angedockte devtools" lightbox="../media/customize-dev-tools-dock-side.msft.png":::
+   Nicht angedockte devtools  
+:::image-end:::  
 
 ## Dunkles Design   
 
 Siehe [Aktivieren eines dunklen Designs][DarkTheme].  
 
-> ##### Abbildung6  
-> Das dunkle Design  
-> ![Das dunkle Design][ImageDarkTheme]  
+:::image type="complex" source="../media/customize-settings-appearance-theme.msft.png" alt-text="Das dunkle Design" lightbox="../media/customize-settings-appearance-theme.msft.png":::
+   Das dunkle Design  
+:::image-end:::  
 
 ## Versuche   
 
-So aktivieren Sie devtools-Experimente:  
+Führen Sie die folgenden Aktionen aus, um devtools-Experimente zu aktivieren.  
 
 1.  Wechseln Sie zu `edge://flags/#enable-devtools-experiments` .  
 1.  Klicken Sie auf **Aktivieren**.  
@@ -103,25 +103,20 @@ So aktivieren Sie devtools-Experimente:
 
 Wenn Sie devtools das nächste Mal öffnen, wird eine neue Seite mit dem Namen **Experimente** in [Einstellungen](#settings)angezeigt.  
 
+<!--  
    
 
   
+-->  
 
 <!-- image links -->  
 
-[ImageMoreIcon]: /microsoft-edge/devtools-guide-chromium/media/more-icon.msft.png  
-
-[ImageSettings]: /microsoft-edge/devtools-guide-chromium/media/customize-settings-preferences.msft.png "Abbildung 1: Einstellungen"  
-[ImageDrawerExample]: /microsoft-edge/devtools-guide-chromium/media/customize-drawer-open.msft.png "Abbildung 2: die Schublade"  
-[ImageMoreDrawerTabs]: /microsoft-edge/devtools-guide-chromium/media/customize-drawer-open-more-tools.msft.png "Abbildung 3: die Schaltfläche zum Öffnen von Schubladen Registern"  
-[ImageCustomTabOrdering]: /microsoft-edge/devtools-guide-chromium/media/customize-network-first-position.msft.png "Abbildung 4: ein devtools-Fenster mit einer benutzerdefinierten Registerkartenreihenfolge"  
-[ImageUndock]: /microsoft-edge/devtools-guide-chromium/media/customize-dev-tools-dock-side.msft.png "Abbildung 5: nicht angedockte devtools"  
-[ImageDarkTheme]: /microsoft-edge/devtools-guide-chromium/media/customize-settings-appearance-theme.msft.png "Abbildung 6: das dunkle Design"  
+[ImageMoreIcon]: ../media/more-icon.msft.png  
 
 <!-- links -->  
 
-[DevToolsPlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement "Ändern der Platzierung von Microsoft Edge devtools (abdocken, docken an den unteren Rand, docken nach links)"  
-[DarkTheme]: /microsoft-edge/devtools-guide-chromium/customize/dark-theme "Aktivieren des dunklen Designs in Microsoft Edge devtools"  
+[DevToolsPlacement]: ./placement.md "Ändern der Position von Microsoft Edge devtools | Microsoft docs"  
+[DarkTheme]: ./dark-theme.md "Aktivieren des dunklen Designs in Microsoft Edge devtools | Microsoft docs"  
 
 > [!NOTE]
 > Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  

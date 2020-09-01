@@ -2,16 +2,16 @@
 title: Zuordnen von vorverarbeitetem Code zu Quellcode
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/18/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: b48c67584b3f3253ada99e32c5dabfdccb2fa4de
-ms.sourcegitcommit: ecdc4287fa25a18cb4ddcaf43fcce3b396c3314c
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+ms.openlocfilehash: c791a4af4446a1209d6db77ca4787fee80d45e5c
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "10581796"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10981771"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -41,9 +41,9 @@ Halten Sie den clientseitigen Code lesbar und debugfähigen, selbst nachdem Sie 
 ### Zusammenfassung  
 
 *   Verwenden Sie Quell Karten, um Quellcode minimierte-Code zuzuordnen. Sie können dann kompilierten Code in der ursprünglichen Quelle lesen und Debuggen.  
-*   Verwenden Sie nur Präprozessoren, die Quell Karten erstellen können.  
+*   Verwenden Sie nur Pre-Processors, die Quell Karten erstellen können.  
 *   Überprüfen Sie, ob Ihr Webserver Quell Karten bereitstellen kann.  
-
+    
 <!--todo: add link to preprocessors capable of producing Source Maps when section is available -->  
 <!--[]: /web/tools/setup/setup-preprocessors?#supported_preprocessors ""  -->  
 
@@ -66,7 +66,7 @@ Die folgenden Typen von Präprozessoren werden häufig in Kombination mit Quell 
 *   Transpilers \ ([Babel][BabelJS], [Traceur][GitHubWikiGoogleTraceurCompiler]\)  
 *   Compiler \ ([Closure-Compiler][GitHubGoogleClosureCompiler], [Manuskript][|::ref1::|Main], [CoffeeScript][|::ref2::|Main], [Dart][DartMain]\)  
 *   Minifiers \ ([UglifyJS][GitHubMishooUglifyJS]\)  
-
+    
 ## Quell Karten im devtools-Quellen Panel  
 
 Quell Karten von Präprozessoren führen dazu, dass devtools Ihre Originaldateien zusätzlich zu ihren minimierte lädt.  Anschließend verwenden Sie die originale, um Haltepunkte und schrittweise Code zu definieren.  In der Zwischenzeit wird von Microsoft Edge tatsächlich der minimierte-Code ausgeführt. Dies gibt Ihnen die Illusion, eine Entwicklungswebsite in Production zu betreiben.  
@@ -75,11 +75,11 @@ Beim Ausführen von Quell Karten in devtools sollten Sie feststellen, dass das J
 
 ### Aktivieren von Quell Karten in den Einstellungen  
 
-Quell Karten sind standardmäßig aktiviert. <!--\(as of Microsoft Edge 39\)-->, aber wenn Sie diese überprüfen oder aktivieren möchten, Öffnen Sie zuerst devtools, klicken Sie auf die Schaltfläche **anpassen und Steuern devtools** `...` , und wählen Sie **Einstellungen**aus.  Aktivieren Sie im Bereich **Einstellungen** unter **Quellen**die **Option JavaScript-Quell Karten aktivieren**.  Sie können auch die **Option "CSS-Quell Karten aktivieren" aktivieren**.  
+Quell Karten sind standardmäßig aktiviert. <!--\(as of Microsoft Edge 39\)-->, aber wenn Sie diese überprüfen oder aktivieren möchten, Öffnen Sie zuerst devtools, klicken Sie auf die Schaltfläche **anpassen und Steuern devtools** \ ( `...` \), und wählen Sie **Einstellungen**aus.  Aktivieren Sie im Bereich **Einstellungen** unter **Quellen**die **Option JavaScript-Quell Karten aktivieren**.  Sie können auch die **Option "CSS-Quell Karten aktivieren" aktivieren**.  
 
-> ##### Abbildung1  
-> Quell Karten aktivieren  
-> ![Quell Karten aktivieren][ImageSourceMaps]  
+:::image type="complex" source="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png" alt-text="Quell Karten aktivieren" lightbox="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png":::
+   Quell Karten aktivieren  
+:::image-end:::  
 
 ### Debuggen mit Quell Karten  
 
@@ -87,7 +87,7 @@ Wenn Sie Ihren Code und die Quell Karten Debuggen aktiviert haben, werden Quell 
 
 1.  In der Konsole \ (der Link zur Quelle sollte die ursprüngliche Datei und nicht die generierte sein. \)  
 1.  Wenn Sie Code durchlaufen \ (die Links in der Aufrufliste sollten die ursprüngliche Quelldatei öffnen \)  
-
+    
 <!--todo: add link to debugging your code when section is available -->  
 <!--[DebugBreakpointsStepCode]: https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/debug/breakpoints/step-code ""  -->  
 
@@ -104,28 +104,25 @@ Indem Sie den folgenden speziellen Kommentar in Ihren Code einbeziehen, der EVAL
 Navigieren Sie zur folgenden Seite.  
 
 *   [Demo][CssNinjaDemoSourceMapping]
-
+    
 Führen Sie die folgenden Schritte aus.  
 
 1.  Öffnen Sie das devtools, und wechseln Sie zum **Quellen** Panel.  
-1.  Geben Sie einen Dateinamen in das Eingabefeld " **_Name Your Code:_** " ein.  
+1.  Geben Sie einen Dateinamen in das Eingabefeld " **Name Your Code:** " ein.  
 1.  Klicken Sie auf die Schaltfläche **Kompilieren** .  
 1.  Eine Benachrichtigung mit der ausgewerteten Summe aus der CoffeeScript-Quelle wird angezeigt.  
+    
+Wenn Sie die Untergruppe " **Quellen** " erweitern, wird nun eine neue Datei mit dem benutzerdefinierten Dateinamen angezeigt, den Sie zuvor eingegeben haben.  Wenn Sie zum Anzeigen dieser Datei doppelklicken, enthält Sie das kompilierte JavaScript für die ursprüngliche Quelle.  In der letzten Zeile ist jedoch ein Kommentar, `// @sourceURL` der die ursprüngliche Quelldatei angibt.  Dies kann Ihnen beim Debuggen beim Arbeiten mit sprach Abstraktionen helfen.  
 
-Wenn Sie die Untergruppe " **_Quellen_** " erweitern, wird nun eine neue Datei mit dem benutzerdefinierten Dateinamen angezeigt, den Sie zuvor eingegeben haben.  Wenn Sie zum Anzeigen dieser Datei doppelklicken, enthält Sie das kompilierte JavaScript für die ursprüngliche Quelle.  In der letzten Zeile ist jedoch ein Kommentar, `// @sourceURL` der die ursprüngliche Quelldatei angibt.  Dies kann Ihnen beim Debuggen beim Arbeiten mit sprach Abstraktionen helfen.  
+:::image type="complex" source="../media/javascript-sources-page-coffeeeeeeee.msft.png" alt-text="Arbeiten mit sourceURL" lightbox="../media/javascript-sources-page-coffeeeeeeee.msft.png":::
+   Arbeiten mit sourceURL  
+:::image-end:::  
 
-> ##### Abbildung2
-> Arbeiten mit sourceURL  
-> ![Arbeiten mit sourceURL][ImageCoffeeScript]  
-
-<!--## Feedback   -->  
-
+<!--  
+## Feedback   
 
 
-<!-- image links -->  
-
-[ImageSourceMaps]: /microsoft-edge/devtools-guide-chromium/media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png "Abbildung 1: Aktivieren von Quell Karten"  
-[ImageCoffeeScript]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-page-coffeeeeeeee.msft.png "Abbildung 2: Arbeiten mit sourceURL"  
+-->  
 
 <!-- links -->  
 

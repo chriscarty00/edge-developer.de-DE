@@ -2,16 +2,16 @@
 title: Aktivieren des dunklen Designs in Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/24/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: 46a6d1aab30689a0d4b1f3fb20bf3521abd2017a
-ms.sourcegitcommit: 67ce64f810afdb304844bae0f3918d4e9108dcec
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+ms.openlocfilehash: cb5404ea088fa74890a6cb5027745cf59f4b2eac
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "10601339"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10981800"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -37,47 +37,42 @@ ms.locfileid: "10601339"
 
 Sie können ein dunkles Design in den [Einstellungen](#set-up-dark-theme-from-settings) oder im [Befehlsmenü](#set-up-dark-theme-from-the-command-menu)aktivieren.  
 
-> ##### Abbildung1  
-> Das dunkle Design  
-> ![Das dunkle Design][ImageDarkTheme]  
+:::image type="complex" source="../media/customize-elements-styles-console-dark-theme.msft.png" alt-text="Das dunkle Design" lightbox="../media/customize-elements-styles-console-dark-theme.msft.png":::
+   Das dunkle Design  
+:::image-end:::  
 
 ## Einrichten eines dunklen Designs aus Einstellungen   
 
 1.  Klicken Sie auf **anpassen und Steuern von devtools** `...` , und wählen Sie dann **Einstellungen**aus.  Sie können die **Einstellungen** auch öffnen, indem Sie auf klicken `F1` .  
-
-> ##### Abbildung2  
-> Öffnungseinstellungen  
-> ![Öffnungseinstellungen][ImageOpenSettings]  
+    
+    :::image type="complex" source="../media/customize-options-settings.msft.png" alt-text="Einstellungen öffnen" lightbox="../media/customize-options-settings.msft.png":::
+       **Einstellungen** öffnen  
+    :::image-end:::  
 
 1.  Klicken Sie im Bereich **Einstellungen** unter **Darstellung**auf die Dropdownliste **Design** , und wählen Sie **dunkel**aus.  
-
-> ##### Abbildung 3  
-> Voreinstellungen  
-> ![Voreinstellungen][ImagePreferences]  
+    
+    :::image type="complex" source="../media/customize-settings-preferences-appearance-theme-dark.msft.png" alt-text="Voreinstellungen" lightbox="../media/customize-settings-preferences-appearance-theme-dark.msft.png":::
+       **Voreinstellungen**  
+    :::image-end:::  
 
 ## Einrichten eines dunklen Designs über das Befehlsmenü   
 
-1.  [Öffnen des Befehlsmenüs][CommandMenu]  
+1.  [Öffnen des Befehlsmenüs][DevtoolsCommandMenu]  
 1.  Beginnen `dark` Sie mit der Eingabe, wählen Sie den Befehl **zum dunklen Design wechseln** aus, und drücken Sie dann `Enter` , um den Befehl auszuführen.  
-
-> ##### Abbildung4  
-> Der Befehl ' dunkler Design '  
-> ![Der Befehl ' dunkler Design '][ImageDarkThemeCommand]  
-
+    
+    :::image type="complex" source="../media/customize-command-menu-dark.msft.png" alt-text="Der Befehl ' dunkler Design '" lightbox="../media/customize-command-menu-dark.msft.png":::
+       Der Befehl ' dunkler Design '  
+    :::image-end:::  
+    
+<!--  
    
 
 
-
-<!-- image links -->  
-
-[ImageDarkTheme]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-console-dark-theme.msft.png "Abbildung 1: das dunkle Design"  
-[ImageOpenSettings]: /microsoft-edge/devtools-guide-chromium/media/customize-options-settings.msft.png "Abbildung 2: Öffnen von Einstellungen"  
-[ImagePreferences]: /microsoft-edge/devtools-guide-chromium/media/customize-settings-preferences-appearance-theme-dark.msft.png "Abbildung 3: Einstellungen"  
-[ImageDarkThemeCommand]: /microsoft-edge/devtools-guide-chromium/media/customize-command-menu-dark.msft.png "Abbildung 4: Befehl ' dunkler Design '"  
+-->  
 
 <!-- links -->  
 
-[CommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Befehlsmenü"  
+[DevtoolsCommandMenu]: ../command-menu/index.md "Befehlsmenü | Microsoft docs"  
 
 > [!NOTE]
 > Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  

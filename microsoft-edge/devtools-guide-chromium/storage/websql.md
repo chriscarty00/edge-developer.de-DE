@@ -2,16 +2,16 @@
 title: Anzeigen von WebSQL-Daten mit Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/30/2019
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: 7a1e3e47f6761cfdb23488683107ed0df6a8f4e2
-ms.sourcegitcommit: ad68bfbb355f6cfdaaf6612b77ea3985d4d6a58b
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+ms.openlocfilehash: 8b2e6d1a117e401f9e579cb28f81da9676eea979
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "10612060"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10983460"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -44,22 +44,22 @@ Dieser Leitfaden zeigt, wie Sie [Microsoft Edge devtools][MicrosoftEdgeDevTools]
 
 1.  Wählen Sie die Registerkarte **Quellen** aus, um das **Quellen** Panel zu öffnen.  Der Bereich **Manifest** wird normalerweise standardmäßig geöffnet.  
     
-    > ##### Abbildung1  
-    > Bereich ' Manifest '  
-    > ![Bereich ' Manifest '][ImageManifestPane]  
+    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="Bereich ' Manifest '" lightbox="../media/storage-application-manifest.msft.png":::
+       Bereich ' **Manifest** '  
+    :::image-end:::  
     
-1.  Erweitern Sie den Abschnitt **Web SQL** , um Datenbanken und Tabellen anzuzeigen.  In [Abbildung 2](#figure-2) unten ist **html5meetup** eine Datenbank, und **rooms** ist eine Tabelle.  
+1.  Erweitern Sie den Abschnitt **Web SQL** , um Datenbanken und Tabellen anzuzeigen.  In der folgenden Abbildung ist unter **html5meetup** eine Datenbank, und **rooms** ist eine Tabelle.  
     
-    > ##### Abbildung2  
-    > Der Web SQL-Bereich  
-    > ![Der Web SQL-Bereich][ImageWebSQLPane]  
-
+    :::image type="complex" source="../media/storage-application-storage-web-sql.msft.png" alt-text="Der Web SQL-Bereich" lightbox="../media/storage-application-storage-web-sql.msft.png":::
+       Der **Web SQL-** Bereich  
+    :::image-end:::  
+    
 1.  Wählen Sie eine Tabelle aus, um die Daten für diese Tabelle anzuzeigen.  
     
-    > ##### Abbildung 3  
-    > Anzeigen der Daten der **rooms** Web SQL-Tabelle  
-    > ![Anzeigen der Daten einer Web SQL-Tabelle][ImageWebSQLTable]  
-
+    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-rooms-1.msft.png" alt-text="Anzeigen der Daten einer Web SQL-Tabelle" lightbox="../media/storage-application-storage-web-sql-html5meetup-rooms-1.msft.png":::
+       Anzeigen der Daten einer Web SQL-Tabelle  
+    :::image-end:::  
+    
 ## Bearbeiten von Web SQL-Daten   
 
 Sie können keine Web SQL-Daten bearbeiten, wenn Sie eine Web SQL-Tabelle anzeigen, wie in **Abbildung 3 oben dargestellt** .  Sie können jedoch in der Web SQL-Konsole Anweisungen zum Bearbeiten oder Löschen von Tabellen ausführen.  Weitere Informationen finden Sie unter [Ausführen von WebSQL-Abfragen](#run-web-sql-queries).  
@@ -67,63 +67,56 @@ Sie können keine Web SQL-Daten bearbeiten, wenn Sie eine Web SQL-Tabelle anzeig
 ## Ausführen von Web SQL-Abfragen   
 
 1.  Wählen Sie eine Datenbank aus, um eine Konsole für diese Datenbank zu öffnen.  
-
 1.  Geben Sie eine Web SQL-Anweisung ein, und drücken Sie dann `Enter` , um Sie auszuführen.  
     
-    > ##### Abbildung4  
-    > Verwenden der Web SQL-Konsole zum Löschen einer Zeile aus der Tabelle " **Räume** "  
-    > ![Verwenden der Web SQL-Konsole zum Löschen einer Zeile aus einer Tabelle][ImageWebSQLEdit]  
-
+    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png" alt-text="Verwenden der Web SQL-Konsole zum Löschen einer Zeile aus einer Tabelle" lightbox="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png":::
+       Verwenden der Web SQL-Konsole zum Löschen einer Zeile aus einer Tabelle  
+    :::image-end:::  
+    
 ## Aktualisieren einer Web SQL-Tabelle   
 
 DevTools aktualisiert Tabellen nicht in Echtzeit.  So aktualisieren Sie die Daten in einer Tabelle:  
 
 1.  [Anzeigen der Daten in einer SQL-Webtabelle](#view-web-sql-data)  
-1.  Wählen **Sie Aktualisierung aktualisieren aus** ![ ][ImageRefreshIcon] .  
-
+1.  Wählen Sie **Aktualisieren** \ ( ![ aktualisieren ][ImageRefreshIcon] \) aus.  
+    
 ## Filtern von Spalten in einer SQL-Webtabelle   
 
 1.  [Anzeigen der Daten in einer SQL-Webtabelle](#view-web-sql-data)  
 1.  Verwenden Sie das Textfeld **sichtbare Spalten** , um anzugeben, welche Spalten angezeigt werden sollen.  Geben Sie die Spaltennamen als CSV-Liste an.  
     
-    > ##### Abbildung5  
-    > Verwenden des Textfelds " **sichtbare Spalten** ", um nur die `room_name` und `last_updated` Spalten anzuzeigen  
-    > ![Verwenden des Textfelds "sichtbare Spalten", um die Anzahl der angezeigten Spalten zu verringern][ImageWebSQLFilter]  
-
+    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png" alt-text="Verwenden Sie das Textfeld "sichtbare Spalten", um die Anzahl der angezeigten Spalten zu verringern." lightbox="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png":::
+       Verwenden Sie das Textfeld " **sichtbare Spalten** ", um die Anzahl der angezeigten Spalten zu verringern.  
+    :::image-end:::  
+    
 ## Löschen aller Web SQL-Daten   
 
 1.  Öffnen Sie den Bereich **Speicher löschen** .  
 1.  Stellen Sie sicher, dass das Kontrollkästchen **Web SQL** aktiviert ist.  
     
-    > ##### Abbildung6  
-    > Das **Web SQL-** Kontrollkästchen  
-    > ![Das Web SQL-Kontrollkästchen][ImageWebSQLCheckbox]  
-
+    :::image type="complex" source="../media/storage-application-clear-storage-web-sql.msft.png" alt-text="Das Web SQL-Kontrollkästchen" lightbox="../media/storage-application-clear-storage-web-sql.msft.png":::
+       Das **Web SQL-** Kontrollkästchen  
+    :::image-end:::  
+    
 1.  Wählen Sie **Website Daten löschen**aus.  
     
-    > ##### Abbildung7  
-    > Schaltfläche " **Website Daten löschen** "  
-    > ![Schaltfläche "Website Daten löschen"][ImageClearWebSQL]  
-
+    :::image type="complex" source="../media/storage-application-clear-storage-clear-site-data-button.msft.png" alt-text="Schaltfläche "Website Daten löschen"" lightbox="../media/storage-application-clear-storage-clear-site-data-button.msft.png":::
+       Schaltfläche " **Website Daten löschen** "  
+    :::image-end:::  
+    
+<!--  
  
 
 
+-->  
 
 <!-- image links -->  
 
-[ImageRefreshIcon]: /microsoft-edge/devtools-guide-chromium/media/refresh-icon.msft.png  
-
-[ImageManifestPane]: /microsoft-edge/devtools-guide-chromium/media/storage-application-manifest.msft.png "Abbildung 1: der Bereich "Manifest""  
-[ImageWebSQLPane]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-web-sql.msft.png "Abbildung 2: der Web SQL-Bereich"  
-[ImageWebSQLTable]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-web-sql-html5meetup-rooms-1.msft.png "Abbildung 3: Anzeigen der Daten einer Web SQL-Tabelle"  
-[ImageWebSQLEdit]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-web-sql-html5meetup-commands.msft.png "Abbildung 4: Verwenden der Web SQL-Konsole zum Löschen einer Zeile aus einer Tabelle"  
-[ImageWebSQLFilter]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png "Abbildung 5: Verwenden des Textfelds "sichtbare Spalten", um die Anzahl der angezeigten Spalten zu verringern"  
-[ImageWebSQLCheckbox]: /microsoft-edge/devtools-guide-chromium/media/storage-application-clear-storage-web-sql.msft.png "Abbildung 6: das Kontrollkästchen "Web SQL""  
-[ImageClearWebSQL]: /microsoft-edge/devtools-guide-chromium/media/storage-application-clear-storage-clear-site-data-button.msft.png "Abbildung 7: die Schaltfläche "Website Daten löschen""  
+[ImageRefreshIcon]: ../media/refresh-icon.msft.png  
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chrom)-Entwickler Tools"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chrom)-Entwickler Tools | Microsoft docs"  
 
 [W3CWebSQLStatus]: https://w3.org/TR/webdatabase/#status-of-this-document "Web SQL-Datenbank | W3C"  
 

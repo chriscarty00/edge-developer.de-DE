@@ -1,17 +1,17 @@
 ---
-title: Nachvollziehen, welches Element den Fokus hat
+title: Nachverfolgen, welches Element den Fokus hat
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/18/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: a1bcb7e97357d1348b363ecd4842d1b6a78feb45
-ms.sourcegitcommit: 8bfa239274e7a4856b961b9cf163b08d96463c10
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+ms.openlocfilehash: 04091ddf7986b8554e4f615a92e0303446048eaa
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "10581531"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10981750"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -31,38 +31,36 @@ ms.locfileid: "10581531"
 
 
 
-# Nachvollziehen, welches Element den Fokus hat   
+# Nachverfolgen, welches Element den Fokus hat   
 
 
 
 Angenommen, Sie testen die Barrierefreiheit der Tastaturnavigation auf einer Seite.  Beim Navigieren auf der Seite mit dem `Tab` Schlüssel verschwindet der Fokus Ring manchmal, da das Element mit dem Fokus ausgeblendet ist.  So überwachen Sie das Focused-Element in devtools:  
 
 1.  Öffnen Sie die **Konsole**.  
-1.  Klicken Sie auf **Live** Ausdruck erstellen ![ , um Live Ausdruck erstellen ][ImageCreateIcon] .  
-
-    > ##### Abbildung1  
-    > Erstellen eines **Live Ausdrucks**  
-    > ![Erstellen eines Live Ausdrucks][ImageLiveExpression]  
+1.  Klicken Sie auf **Live Ausdruck erstellen** \ ( ![ Live Ausdruck erstellen ][ImageCreateIcon] \).  
+    
+    :::image type="complex" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="Erstellen eines Live Ausdrucks" lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
+       Erstellen eines Live Ausdrucks  
+    :::image-end:::  
     
 1.  Geben Sie `document.activeElement` ein.
 1.  Klicken Sie auf eine Stelle außerhalb der **Live Ausdruck** -Benutzeroberfläche, um Sie zu speichern.
-
+    
 Der unten angezeigte Wert `document.activeElement` ist das Ergebnis des Ausdrucks.  
 Da dieser Ausdruck immer das Focused-Element darstellt, haben Sie jetzt die Möglichkeit, immer nachzuverfolgen, welches Element den Fokus hat.  
 
 *   Zeigen Sie mit der Maus auf das Ergebnis, um das fokussierte Element im Viewport zu markieren.  
 *   Klicken Sie mit der rechten Maustaste auf das Ergebnis, und wählen Sie **im Element Fenster** anzeigen aus, um das Element in der DOM- **Struktur im Element Panel anzuzeigen** .  
 *   Klicken Sie mit der rechten Maustaste auf das Ergebnis, und wählen Sie **als globale Variable speichern** aus, um einen Variablen Bezug auf den Knoten zu erstellen, den Sie in der **Konsole**verwenden können.  
-
+    
 <!--## Feedback   -->  
 
 
 
 <!-- image links -->  
 
-[ImageCreateIcon]: /microsoft-edge/devtools-guide-chromium/media/create-live-expression-icon.msft.png  
-
-[ImageLiveExpression]: /microsoft-edge/devtools-guide-chromium/media/accessibility-console-create-live-expression-empty.msft.png "Abbildung 1: Erstellen eines Live Ausdrucks"  
+[ImageCreateIcon]: ../media/create-live-expression-icon.msft.png  
 
 <!-- links -->  
 

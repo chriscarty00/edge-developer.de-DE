@@ -2,16 +2,16 @@
 title: Ändern der Platzierung von Microsoft Edge devtools (abdocken, docken an den unteren Rand, docken nach links)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/24/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: f0be6243d4780e4ed49428ebaf2b6b37d9da323e
-ms.sourcegitcommit: 67ce64f810afdb304844bae0f3918d4e9108dcec
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+ms.openlocfilehash: aaa6ef03f6abea27c84fb46db3d2a2f0f894339c
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "10601346"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10981925"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -37,59 +37,63 @@ ms.locfileid: "10601346"
 
 Standardmäßig ist devtools an der rechten Seite des Viewports verankert.  Sie können auch an der Unterseite andocken, an der linken Seite andocken oder das devtools in einem separaten Fenster Abdocken.  
 
-> ##### Abbildung1  
-> An Links Andocken  
-> ![An Links Andocken][ImageDockLeft]  
-
-> ##### Abbildung2  
-> An den unteren Rand Andocken  
-> ![An den unteren Rand Andocken][ImageDockBottom]  
-
-> ##### Abbildung 3  
-> Browser in einem separaten Fenster  
-> ![Browser in einem separaten Fenster][ImageUndockBrowser]  
-
-> ##### Abbildung4  
-> Abdocken von devtools in einem separaten Fenster  
-> ![Abdocken von devtools in einem separaten Fenster][ImageUndockDevTools]  
+:::row:::
+   :::column span="":::
+      :::image type="complex" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="Wählen Sie Dock an Links aus." lightbox="../media/customize-elements-styles-right-docked.msft.png":::
+         Auswählen `Dock To Left`  
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+      :::image type="complex" source="../media/customize-elements-styles-bottom-docked.msft.png" alt-text="Wählen Sie am unteren Rand Andocken" lightbox="../media/customize-elements-styles-bottom-docked.msft.png":::
+         Auswählen `Dock To Bottom`  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::
+      :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png" alt-text="Browser in einem separaten Fenster" lightbox="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png":::
+         Browser in einem separaten Fenster  
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+      :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png" alt-text="Abdocken von devtools in einem separaten Fenster" lightbox="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png":::
+         Abdocken von devtools in einem separaten Fenster  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::  
 
 ## Ändern der Platzierung aus dem Hauptmenü   
 
-1.  Klicken Sie auf **anpassen und Steuern von devtools** , `...` und wählen Sie **Abdocken in separates Fenster** ![ Abdocken aus ][ImageUndockIcon] , **docken** Sie an die untere ![ Docking-Station an den unteren Rand an ][ImageBottomIcon] , oder **docken** ![ ][ImageLeftIcon] Sie nach links  
+1.  Klicken Sie auf **anpassen und Steuern von devtools** \ ( `...` \), und wählen Sie **Abdocken in separates Fenster** aus. \ ( ![ Abdocken ][ImageUndockIcon] \), **an unten Andocken** \ ( ![ Dock to Bottom ][ImageBottomIcon] \) oder **Dock to Left** \ ( ![ Dock to Left \ ][ImageLeftIcon] ).  
     
-    > ##### Abbildung5  
-    > Auswählen der Option **"Abdocken" in separates Fenster**  
-    > ![Auswählen der Option "Abdocken" in separates Fenster][ImageUndockSettings]  
+    :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="Auswählen der Option "Abdocken" in separates Fenster" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
+       Auswählen der Option " **Abdocken" in separates Fenster**  
+    :::image-end:::  
     
 ## Ändern der Platzierung über das Befehlsmenü   
 
 1.  [Öffnen des Befehlsmenüs][DevtoolsCommandMenu]  
 1.  Führen Sie einen der folgenden Befehle aus: `Dock To Bottom` , `Undock Into Separate Window` .  Derzeit gibt es keinen Befehl zum Andocken an Left, aber Sie können über das [Hauptmenü](#change-placement-from-the-main-menu)darauf zugreifen.  
     
-    > ##### Abbildung6  
-    > Befehl "Abdocken"  
-    > ![Befehl "Abdocken"][ImageUndockCommand]  
-
+    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="Befehl "Abdocken"" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
+       Befehl "Abdocken"  
+    :::image-end:::  
+    
+<!--  
  
 
 
+-->  
 
 <!-- image links -->  
 
-[ImageUndockIcon]: /microsoft-edge/devtools-guide-chromium/media/undock-icon.msft.png  
-[ImageBottomIcon]: /microsoft-edge/devtools-guide-chromium/media/bottom-icon.msft.png  
-[ImageLeftIcon]: /microsoft-edge/devtools-guide-chromium/media/left-icon.msft.png  
-
-[ImageDockLeft]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-right-docked.msft.png "Abbildung 1: Andocken nach links"  
-[ImageDockBottom]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-bottom-docked.msft.png "Abbildung 2: Andocken an den unteren Rand"  
-[ImageUndockBrowser]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-options-dock-side-highlight-browser.msft.png "Abbildung 3: Browser in einem separaten Fenster"  
-[ImageUndockDevTools]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png "Abbildung 4: Abdocken von devtools in einem separaten Fenster"  
-[ImageUndockSettings]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-options-dock-side-highlight.msft.png "Abbildung 5: Auswählen der Option "Abdocken" in separates Fenster"  
-[ImageUndockCommand]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-command-menu-undo.msft.png "Abbildung 6: Befehl "Abdocken""  
+[ImageUndockIcon]: ../media/undock-icon.msft.png  
+[ImageBottomIcon]: ../media/bottom-icon.msft.png  
+[ImageLeftIcon]: ../media/left-icon.msft.png  
 
 <!-- links -->  
 
-[DevtoolsCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Ausführen von Befehlen mit dem Befehlsmenü von Microsoft Edge devtools"  
+[DevtoolsCommandMenu]: ../command-menu/index.md "Ausführen von Befehlen mit dem Befehlsmenü von Microsoft Edge devtools | Microsoft docs"  
 
 > [!NOTE]
 > Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  

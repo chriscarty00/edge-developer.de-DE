@@ -2,16 +2,16 @@
 title: Suchen von nicht verwendetem Javascript und CSS-Code mit der Registerkarte "Coverage" in Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/25/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: ebb8ae15a6888ce2227ec1dc18f307b03ddf9319
-ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+ms.openlocfilehash: 1c03140199b26bca39e69cdfbe33cd1c524257fe
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601719"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10981864"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -37,9 +37,9 @@ ms.locfileid: "10601719"
 
 Die Registerkarte Coverage in Microsoft Edge devtools hilft Ihnen, ungenutzte JavaScript-und CSS-Codes zu finden.  Wenn Sie nicht verwendeten Code entfernen, können Sie das Laden der Seite beschleunigen und Ihre mobilen Benutzer mobil Daten speichern.  
 
-> ##### Abbildung1  
-> Analysieren der Codeabdeckung  
-> ![Analysieren der Codeabdeckung][ImageExample]  
+:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage.msft.png" alt-text="Analysieren der Codeabdeckung" lightbox="../media/coverage-sources-resource-drawer-coverage.msft.png":::
+   Analysieren der Codeabdeckung  
+:::image-end:::  
 
 > [!WARNING]
 > Das Auffinden unbenutzten Codes ist relativ einfach.  Das Umgestalten einer CodeBase, damit jede Seite nur das JavaScript und das CSS liefert, die Sie benötigt, ist möglicherweise schwierig.  In diesem Leitfaden wird nicht behandelt, wie Sie eine CodeBase umgestalten, um nicht verwendeten Code zu vermeiden, da diese umgestalten in hohem Maße von Ihrem Technologiestapel abhängen.  
@@ -62,7 +62,7 @@ Dieses Stylesheet enthält nicht nur den Code für die Schaltflächenkomponente.
 
 *   Der zusätzliche Code verlangsamt das Laden der Seite.  <!--See [Render-Blocking CSS][render].  -->  
 *   Wenn ein Benutzer auf die Seite auf einem mobilen Gerät zugreift, verwendet der zusätzliche Code Ihre zellularen Daten.  
-
+    
 <!--[render]: /web/fundamentals/performance/critical-rendering-path/render-blocking-css  -->  
 
 ## Öffnen der Registerkarte "Abdeckung"   
@@ -70,48 +70,46 @@ Dieses Stylesheet enthält nicht nur den Code für die Schaltflächenkomponente.
 1.  [Öffnen des Befehlsmenüs][DevToolsCommandMenu]  
 1.  Beginnen `coverage` Sie mit der Eingabe, wählen Sie den Befehl **Coverage anzeigen** aus, und drücken Sie dann `Enter` , um den Befehl auszuführen.  Die Registerkarte **Coverage** wird im **Einzug**geöffnet.  
 
-    > ##### Abbildung2  
-    > Die Registerkarte " **Coverage** "  
-    > ![Die Registerkarte "Coverage"][ImageCoverage]  
-
+    :::image type="complex" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="Die Registerkarte "Coverage"" lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
+       Die Registerkarte " **Coverage** "  
+    :::image-end:::  
+    
 ## Aufzeichnen von Codeabdeckung   
 
 1.  Klicken Sie auf der Registerkarte **Coverage** auf eine der folgenden Schaltflächen:  
-    *   Klicken Sie auf **Instrumentations Abdeckung starten und Seiten** ![ Anfang Instrumentations Abdeckung und Reload erneut laden, ][ImageReloadIcon] Wenn Sie sehen möchten, welcher Code zum Laden der Seite erforderlich ist.  
-    *   Klicken Sie auf **Instrument** Coverage ![ Instrumentation Coverage ][ImageRecordIcon] , wenn Sie sehen möchten, welcher Code nach der Interaktion mit der Seite verwendet wird.  
-1.  Klicken Sie auf **Instrumentations Abdeckung beenden und Ergebnisse anzeigen** , ![ um die Abdeckung der Instrumentation zu beenden und Ergebnisse anzuzeigen, ][ImageStopIcon] Wenn Sie die Aufzeichnung der Codeabdeckung beenden möchten.  
-
+    *   Klicken Sie auf **Instrumentations Abdeckung starten und Seite neu laden** ( ![ Start Instrumentation Coverage and Reload Page ][ImageReloadIcon] \), wenn Sie sehen möchten, welcher Code zum Laden der Seite erforderlich ist.  
+    *   Klicken Sie auf **Instrument Coverage** \ ( ![ Instrument Coverage ][ImageRecordIcon] \), wenn Sie sehen möchten, welcher Code nach der Interaktion mit der Seite verwendet wird.  
+1.  Klicken Sie auf **Instrumentations Abdeckung beenden und Ergebnisse anzeigen** \ ( ![ Instrumentations Abdeckung beenden und Ergebnisse anzeigen ][ImageStopIcon] \), wenn Sie die Aufzeichnung der Codeabdeckung beenden möchten.  
+    
 ## Analysieren der Codeabdeckung   
 
-Die Tabelle auf der Registerkarte **Coverage** zeigt Ihnen, welche Ressourcen analysiert wurden und wie viel Code innerhalb der einzelnen Ressourcen verwendet wird. Klicken Sie auf eine Zeile, um diese Ressource im **Quellen** Panel zu öffnen, und sehen Sie eine zeilenweise Aufschlüsselung von verwendetem Code und nicht verwendetem Code.  
+Die Tabelle auf der Registerkarte **Coverage** zeigt Ihnen, welche Ressourcen analysiert wurden und wie viel Code innerhalb der einzelnen Ressourcen verwendet wird.  Klicken Sie auf eine Zeile, um diese Ressource im **Quellen** Panel zu öffnen, und sehen Sie eine zeilenweise Aufschlüsselung von verwendetem Code und nicht verwendetem Code.  
 
-> ##### Abbildung 3  
-> Code Coverage-Bericht  
-> ![Code Coverage-Bericht][ImageExample]  
+:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage-selected.msft.png" alt-text="Code Coverage-Bericht" lightbox="../media/coverage-sources-resource-drawer-coverage-selected.msft.png":::
+   Code Coverage-Bericht  
+:::image-end:::  
 
 *   Die **URL** -Spalte ist die URL der Ressource, die analysiert wurde.  
 *   In der Spalte **Typ** wird angegeben, ob die Ressource CSS, JavaScript oder beides enthält.  
 *   Die Spalte " **Gesamt Bytes** " gibt die Gesamtgröße der Ressource in Bytes an.  
 *   Die Spalte "nicht **verwendete Bytes** " gibt die Anzahl der Bytes an, die nicht verwendet wurden.  
 *   Die letzte, unbenannte Spalte ist eine Visualisierung der Spalten **Gesamt Bytes** und **nicht verwendete Bytes** .  Der Rote Bereich der Leiste ist nicht verwendete Bytes.  Der grüne Abschnitt wird in Bytes verwendet.  
-
+    
+<!--  
  
 
 
+-->  
 
 <!-- image links -->  
 
-[ImageReloadIcon]: /microsoft-edge/devtools-guide-chromium/media/reload-icon.msft.png  
-[ImageRecordIcon]: /microsoft-edge/devtools-guide-chromium/media/record-icon.msft.png  
-[ImageStopIcon]: /microsoft-edge/devtools-guide-chromium/media/stop-icon.msft.png  
-
-[ImageExample]: /microsoft-edge/devtools-guide-chromium/media/coverage-sources-resource-drawer-coverage.msft.png "Abbildung 1: Analysieren der Codeabdeckung"  
-[ImageCoverage]: /microsoft-edge/devtools-guide-chromium/media/coverage-console-drawer-coverage-empty.msft.png "Abbildung 2: Registerkarte "Coverage""  
-[ImageExample]: /microsoft-edge/devtools-guide-chromium/media/coverage-sources-resource-drawer-coverage-selected.msft.png "Abbildung 3: ein Code Coverage-Bericht"  
+[ImageReloadIcon]: ../media/reload-icon.msft.png  
+[ImageRecordIcon]: ../media/record-icon.msft.png  
+[ImageStopIcon]: ../media/stop-icon.msft.png  
 
 <!-- links -->  
 
-[DevToolsCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Ausführen von Befehlen mit dem Befehlsmenü von Microsoft Edge devtools"  
+[DevToolsCommandMenu]: ../command-menu/index.md "Ausführen von Befehlen mit dem Befehlsmenü von Microsoft Edge devtools | Microsoft docs"  
 
 [BootstrapButtons]: https://getbootstrap.com/docs/4.3/components/buttons "Schaltflächen – Bootstrap"  
 

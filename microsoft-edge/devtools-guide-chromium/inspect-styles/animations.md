@@ -2,16 +2,16 @@
 title: Überprüfen von Animationen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/01/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: 6466c7f0e1f8680a2429b565e8022d152d05d733
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+ms.openlocfilehash: a6970d76f4ff70031ef4cc8c6de119a41d1a5b80
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10568277"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10983387"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -37,9 +37,9 @@ ms.locfileid: "10568277"
 
 Überprüfen und Ändern von Animationen mit dem Animations Inspektor für Microsoft Edge devtools  
 
-> ##### Abbildung1  
-> Animations Inspektor  
-> ![Animations Inspektor][ImageAnimationInspector]  
+:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations-completed.msft.png" alt-text="Animations Inspektor" lightbox="../media/inspect-styles-elements-styles-drawer-animations-completed.msft.png":::
+   Animations Inspektor  
+:::image-end:::  
 
 ### Zusammenfassung  
 
@@ -69,18 +69,18 @@ Es gibt zwei Möglichkeiten, den Animations Inspektor zu öffnen:
     1.  Navigieren Sie zum unter Menü **Weitere Tools** .  
     1.  Wählen Sie **Animationen**aus:  
         
-        > ##### Abbildung2  
-        > Animationen über das Hauptmenü  
-        > ![Animationen über das Hauptmenü][ImageAnimationsViaMainMenu]  
+        :::image type="complex" source="../media/inspect-styles-elements-styles-more-tools-animations.msft.png" alt-text="Animationen mithilfe des Hauptmenüs" lightbox="../media/inspect-styles-elements-styles-more-tools-animations.msft.png":::
+           **Animationen** mithilfe des Hauptmenüs  
+    :::image-end:::  
         
 *   Öffnen des **Befehlsmenüs**  
     1.  Geben Sie `Drawer: Show Animations` ein.  
 
 Der Animations Inspektor wird als Registerkarte neben dem Konsolen Einzug geöffnet.  Da es sich bei dem Animations Inspektor um eine Schublade handelt, können Sie den Animations Inspektor in einem beliebigen devtools-Fenster verwenden.  
 
-> ##### Abbildung 3  
-> Animations Inspektor leeren  
-> ![Animations Inspektor leeren][ImageEmptyAnimationInspector]  
+:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations.msft.png" alt-text="Animations Inspektor leeren" lightbox="../media/inspect-styles-elements-styles-drawer-animations.msft.png":::
+   Animations Inspektor leeren  
+:::image-end:::  
 
 Der Animations Inspektor ist in vier Hauptabschnitte unterteilt \ (oder Bereiche \).  Dieser Leitfaden bezieht sich auf jeden Bereich wie folgt:  
 
@@ -91,9 +91,9 @@ Der Animations Inspektor ist in vier Hauptabschnitte unterteilt \ (oder Bereiche
 | 3 | **Zeitachse** | Pausieren und starten Sie eine Animation von hier aus, oder springen Sie zu einer bestimmten Stelle in der Animation. |  
 | 4 | **Details** | Überprüfen und Ändern der aktuell ausgewählten Animationsgruppe |  
 
-> ##### Abbildung4  
-> Animations Inspektor mit Anmerkungen  
-> ![Animations Inspektor mit Anmerkungen][ImageAnnotatedAnimationInspector]  
+:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations-selected-paused.msft.png" alt-text="Animations Inspektor mit Anmerkungen" lightbox="../media/inspect-styles-elements-styles-drawer-animations-selected-paused.msft.png":::
+   Animations Inspektor mit Anmerkungen  
+:::image-end:::  
 
 Wenn Sie eine Animation aufzeichnen möchten, führen Sie einfach die Interaktion aus, mit der die Animation ausgelöst wird, während der Animations Inspektor geöffnet ist.  Wenn beim Laden einer Seite eine Animation ausgelöst wird, laden Sie die Seite neu, wobei der Animations Inspektor geöffnet wird, um die Animation zu erkennen.  
 
@@ -108,88 +108,77 @@ Wenn Sie eine Animation aufzeichnen möchten, führen Sie einfach die Interaktio
 Nachdem Sie eine Animation aufgenommen haben, gibt es verschiedene Möglichkeiten, Sie wiederzugeben:  
 
 *   Zeigen Sie **mit der Maus** auf die Miniaturansicht im Übersichtsbereich, um eine Vorschau davon anzuzeigen.  
-*   Wählen Sie im Bereich " **Übersicht** " die Gruppe "Animation" aus, damit Sie im **Detail** Bereich angezeigt wird, und drücken Sie dann das Symbol Symbol **Wiedergabe wieder** geben ![ ][ImageReplayButtonIcon] .  Die Animation wird im Viewport wiedergegeben.  Klicken Sie auf **die Symbole für Animations** Geschwindigkeits ![ Geschwindigkeits Symbole ][ImageAnimationSpeedButtonsIcon] , um die Vorschau Geschwindigkeit der aktuell ausgewählten Animationsgruppe zu ändern.  Sie können die rote vertikale Leiste verwenden, um Ihre aktuelle Position zu ändern.  
+*   Wählen **Sie im Übersichtsbereich die** Gruppe Animation aus, damit Sie im **Detail** Bereich angezeigt wird, und drücken Sie dann das Symbol **Wiedergabe** \ ( ![ Wiedergabe ][ImageReplayButtonIcon] -Symbol).  Die Animation wird im Viewport wiedergegeben.  Klicken Sie auf die Symbole **Animationsgeschwindigkeit** \ ( ![ Animations Geschwindigkeits Symbole ][ImageAnimationSpeedButtonsIcon] \), um die Vorschau Geschwindigkeit der aktuell ausgewählten Animationsgruppe zu ändern.  Sie können die rote vertikale Leiste verwenden, um Ihre aktuelle Position zu ändern.  
 *   Klicken Sie, und ziehen Sie den roten vertikalen Balken, um die Animation des Viewports zu schrubben.  
-
+    
 ### Anzeigen von Animations Details  
 
 Nachdem Sie eine Animationsgruppe erfasst haben, klicken **Sie im Übersichtsbereich darauf** , um die Details anzuzeigen.  Im **Detail** Bereich wird jeder einzelnen Animation die Zeile a zugewiesen.  
 
-> ##### Abbildung5  
-> Animationsgruppen Details  
-> ![Animationsgruppen Details][ImageAnimationGroupDetails]  
+:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations-selected-completed.msft.png" alt-text="Animationsgruppen Details" lightbox="../media/inspect-styles-elements-styles-drawer-animations-selected-completed.msft.png":::
+   Animationsgruppen Details  
+:::image-end:::  
 
 Zeigen Sie mit der Maus auf eine Animation, um Sie im Viewport zu markieren.  Klicken Sie auf die Animation, um Sie im **Element** Panel zu markieren.  
 
-> ##### Abbildung6  
-> Zeigen Sie mit der Maus auf die Animation, um Sie im Viewport hervorzuheben  
-> ![Zeigen Sie mit der Maus auf die Animation, um Sie im Viewport hervorzuheben][ImageHoverOverAnimationHighlightViewport]  
+:::image type="complex" source="../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png" alt-text="Zeigen Sie mit der Maus auf die Animation, um Sie im Viewport hervorzuheben" lightbox="../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png":::
+   Zeigen Sie mit der Maus auf die Animation, um Sie im Viewport hervorzuheben  
+:::image-end:::  
 
-Der linke, dunklere Abschnitt einer Animation ist die Definition.  Der Rechte, verblasstere Abschnitt stellt Iterationen dar.  In [Abbildung 7](#figure-7)stellen beispielsweise Abschnitte zwei und drei Iterationen von Abschnitt eins dar.  
+Der linke, dunklere Abschnitt einer Animation ist die Definition.  Der Rechte, verblasstere Abschnitt stellt Iterationen dar.  In der folgenden Abbildung stellen die Abschnitte zwei und drei beispielsweise Iterationen von Abschnitt eins dar.  
 
-> ##### Abbildung7  
-> Diagramm der Animations Iterationen  
-> ![Diagramm der Animations Iterationen][ImageDiagramAnimationIterations]  
+:::image type="complex" source="../media/inspect-styles-glitch-display-animations-highlight.msft.png" alt-text="Diagramm der Animations Iterationen" lightbox="../media/inspect-styles-glitch-display-animations-highlight.msft.png":::
+   Diagramm der Animations Iterationen  
+:::image-end:::  
 
-Wenn für zwei Elemente dieselbe Animation angewendet wurde, weist der Animations Inspektor den Elementen dieselbe Farbe zu.  Die Farbe ist zufällig und hat keine Bedeutung.  In [Abbildung 8](#figure-8) sind beispielsweise die beiden Elemente `div.cwccw.earlier` `div.cwccw.later` enthalten, und es wird dieselbe Animation `spinrightleft` wie für die `div.ccwcw.earlier` Elemente und verwendet `div.ccwcw.later` .  
+Wenn für zwei Elemente dieselbe Animation angewendet wurde, weist der Animations Inspektor den Elementen dieselbe Farbe zu.  Die Farbe ist zufällig und hat keine Bedeutung.  In der folgenden Abbildung finden Sie beispielsweise die beiden Elemente, `div.cwccw.earlier` und es werden die `div.cwccw.later` gleichen Animationen `spinrightleft` wie die `div.ccwcw.earlier` und- `div.ccwcw.later` Elemente angewendet.  
 
-> ##### Abbildung8  
-> Farbcodierte Animationen  
-> ![Farbcodierte Animationen][ImageColorCodedAnimations]  
+:::image type="complex" source="../media/inspect-styles-glitch-display-animations.msft.png" alt-text="Farbcodierte Animationen" lightbox="../media/inspect-styles-glitch-display-animations.msft.png":::
+   Farbcodierte Animationen  
+:::image-end:::  
 
 ## Ändern von Animationen   
 
-Es gibt drei Möglichkeiten, wie Sie eine Animation mit dem Animations Inspektor ändern können:  
+Es gibt drei Möglichkeiten, wie Sie eine Animation mit dem Animations Inspektor ändern können.  
 
 *   Animationsdauer.  
 *   Keyframe-Anzeigedauern.  
 *   Anfangszeit Verzögerung.  
+    
+In der folgenden Abbildung wird die ursprüngliche Animation dargestellt.  
 
-In diesem Abschnitt wird angenommen, dass [Abbildung 9](#figure-9) die ursprüngliche Animation darstellt:  
-
-> ##### Abbildung 9  
-> Ursprüngliche Animation vor der Änderung  
-> ![Ursprüngliche Animation vor der Änderung][ImageOriginalAnimationBeforeModification]  
+:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations.msft.png" alt-text="Ursprüngliche Animation vor der Änderung" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations.msft.png":::
+   Ursprüngliche Animation vor der Änderung  
+:::image-end:::  
 
 Wenn Sie die Dauer einer Animation ändern möchten, klicken Sie auf den ersten oder letzten Kreis, und ziehen Sie ihn.  
 
-> ##### Abbildung 10  
-> Geänderte Dauer  
-> ![Geänderte Dauer][ImageModifiedDuration]  
+:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-shorter.msft.png" alt-text="Geänderte Dauer" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-shorter.msft.png":::
+   Geänderte Dauer  
+:::image-end:::  
 
 Wenn die Animation Keyframe-Regeln definiert, werden diese als weiße innere Kreise dargestellt.  Klicken Sie, und ziehen Sie eine der folgenden Schritte, um die Anzeigedauer des Keyframes zu ändern.  
 
-> ##### Abbildung 11  
-> Geänderter Keyframe  
-> ![Geänderter Keyframe][ImageModifiedKeyframe]  
+:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png" alt-text="Geänderter Keyframe" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png":::
+   Geänderter Keyframe  
+:::image-end:::  
 
 Wenn Sie einer Animation eine Verzögerung hinzufügen möchten, klicken Sie darauf, und ziehen Sie Sie mit Ausnahme der Kreise an eine beliebige Stelle.  
 
-> ##### Abbildung 12  
-> Geänderte Verzögerung  
-> ![Geänderte Verzögerung][ImageModifiedDelay]  
+:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-delay.msft.png" alt-text="Geänderte Verzögerung" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-delay.msft.png":::
+   Geänderte Verzögerung  
+:::image-end:::  
 
-<!--   -->  
+<!--  
+  
 
 
+-->  
 
 <!-- image links -->  
 
-[ImageAnimationSpeedButtonsIcon]: /microsoft-edge/devtools-guide-chromium/media/animation-speed-buttons-icon.msft.png  
-[ImageReplayButtonIcon]: /microsoft-edge/devtools-guide-chromium/media/replay-button-icon.msft.png  
-
-[ImageAnimationInspector]: /microsoft-edge/devtools-guide-chromium/media/inspect-styles-elements-styles-drawer-animations-completed.msft.png "Abbildung 1: Animations Inspektor"  
-[ImageAnimationsViaMainMenu]: /microsoft-edge/devtools-guide-chromium/media/inspect-styles-elements-styles-more-tools-animations.msft.png "Abbildung 2: Animationen über das Hauptmenü"  
-[ImageEmptyAnimationInspector]: /microsoft-edge/devtools-guide-chromium/media/inspect-styles-elements-styles-drawer-animations.msft.png "Abbildung 3: leeres Animations Inspektor"  
-[ImageAnnotatedAnimationInspector]: /microsoft-edge/devtools-guide-chromium/media/inspect-styles-elements-styles-drawer-animations-selected-paused.msft.png "Abbildung 4: Inspektor für kommentierte Animationen"  
-[ImageAnimationGroupDetails]: /microsoft-edge/devtools-guide-chromium/media/inspect-styles-elements-styles-drawer-animations-selected-completed.msft.png "Abbildung 5: Details zur Animationsgruppe"  
-[ImageHoverOverAnimationHighlightViewport]: /microsoft-edge/devtools-guide-chromium/media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png "Abbildung 6: zeigen Sie mit der Maus auf die Animation, um Sie im Viewport zu markieren."  
-[ImageDiagramAnimationIterations]: /microsoft-edge/devtools-guide-chromium/media/inspect-styles-glitch-display-animations-highlight.msft.png "Abbildung 7: Diagramm der Animations Iterationen"  
-[ImageColorCodedAnimations]: /microsoft-edge/devtools-guide-chromium/media/inspect-styles-glitch-display-animations.msft.png "Abbildung 8: farbcodierte Animationen"  
-[ImageOriginalAnimationBeforeModification]: /microsoft-edge/devtools-guide-chromium/media/inspect-styles-glitch-spin-animations-console-animations.msft.png "Abbildung 9: ursprüngliche Animation vor der Änderung"  
-[ImageModifiedDuration]: /microsoft-edge/devtools-guide-chromium/media/inspect-styles-glitch-spin-animations-console-animations-shorter.msft.png "Abbildung 10: geänderte Dauer"  
-[ImageModifiedKeyframe]: /microsoft-edge/devtools-guide-chromium/media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png "Abbildung 11: Geänderter Keyframe"  
-[ImageModifiedDelay]: /microsoft-edge/devtools-guide-chromium/media/inspect-styles-glitch-spin-animations-console-animations-delay.msft.png "Abbildung 12: geänderte Verzögerung"  
+[ImageAnimationSpeedButtonsIcon]: ../media/animation-speed-buttons-icon.msft.png  
+[ImageReplayButtonIcon]: ../media/replay-button-icon.msft.png  
 
 <!-- links -->  
 
