@@ -2,16 +2,16 @@
 title: Anzeigen und Ändern von IndexedDB-Daten mit Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/30/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: 4eca78dcd92048d75f8488fddc7b210da68690df
-ms.sourcegitcommit: ad68bfbb355f6cfdaaf6612b77ea3985d4d6a58b
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+ms.openlocfilehash: 890e20f65c3b70193a38783f3c9ca5d879d5ac48
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "10612088"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10983758"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -41,18 +41,18 @@ Dieser Leitfaden zeigt, wie Sie [Microsoft Edge devtools][MicrosoftEdgeDevTools]
 
 1.  Wählen Sie die Registerkarte **Anwendung** aus, um den **Anwendungs** Panel zu öffnen.  Der Bereich **Manifest** wird normalerweise standardmäßig geöffnet.  
     
-    > ##### Abbildung1  
-    > Bereich ' Manifest '  
-    > ![Bereich ' Manifest '][ImageManifest]  
-
+    :::image type="complex" source="../media/storage-application-manifest-empty.msft.png" alt-text="Bereich ' Manifest '" lightbox="../media/storage-application-manifest-empty.msft.png":::
+       Bereich ' **Manifest** '  
+    :::image-end:::  
+    
 1.  Erweitern Sie das **IndexedDB** -Menü, um zu sehen, welche Datenbanken verfügbar sind.  
     
-    > ##### Abbildung2  
-    > Das **IndexedDB** -Menü  
-    > ![Das IndexedDB-Menü][ImageIndexedDBMenu]  
+    :::image type="complex" source="../media/storage-application-storage-indexeddb.msft.png" alt-text="Das IndexedDB-Menü" lightbox="../media/storage-application-storage-indexeddb.msft.png":::
+       Das **IndexedDB** -Menü  
+    :::image-end:::  
     
-    *   ![Das Datenbanksymbol ][ImageDatabaseIcon] `notes - https://mdn.github.io` stellt eine Datenbank dar, wobei `notes` der Name der Datenbank und `https://mdn.github.io` der Ursprung für den Zugriff auf die Datenbank ist.  
-    *   ![Das Objektspeicher Symbol ][ImageObjectStoreIcon] `notes` ist ein Objektspeicher.  
+    *   \ ( ![ Datenbanksymbol ][ImageDatabaseIcon] \) `notes - https://mdn.github.io` stellt eine Datenbank dar, wobei `notes` der Name der Datenbank und `https://mdn.github.io` der Ursprung ist, der auf die Datenbank zugreift.  
+    *   \ ( ![ Objektspeicher Symbol ][ImageObjectStoreIcon] \) `notes` ist ein Objektspeicher.  
     *   **Titel** und **Text** sind [Indizes][MDNUsingIndexedDBUsingIndex].  
     
     > [!NOTE]
@@ -60,41 +60,41 @@ Dieser Leitfaden zeigt, wie Sie [Microsoft Edge devtools][MicrosoftEdgeDevTools]
     
 1.  Wählen Sie eine Datenbank aus, um den Ursprung und die Versionsnummer anzuzeigen.  
     
-    > ##### Abbildung 3  
-    > Die **Notes** -Datenbank  
-    > ![Die Notes-Datenbank][ImageIndexedDBDatabase]  
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db.msft.png" alt-text="Die Notes-Datenbank" lightbox="../media/storage-application-storage-indexeddb-notes_db.msft.png":::
+       Die **Notes** -Datenbank  
+    :::image-end:::  
     
 1.  Wählen Sie einen Objektspeicher aus, um die Schlüssel-Wert-Paare anzuzeigen.  
     
     > [!NOTE]
     > IndexedDB-Daten werden in Echtzeit nicht aktualisiert.  Siehe [Aktualisieren von IndexedDB-Daten](#refresh-indexeddb-data).  
     
-    > ##### Abbildung4  
-    > Der **Notizen** Objektspeicher  
-    > ![Der Notizen Objektspeicher][ImageIndexedDBObjectStore]  
-
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os.msft.png" alt-text="Der Notizen Objektspeicher" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os.msft.png":::
+       Der **Notizen** Objektspeicher  
+    :::image-end:::  
+    
     *   **Gesamt** Anzahl der Einträge ist die Gesamtzahl der Schlüssel-Wert-Paare im Objektspeicher.  
     *   Der **Schlüsselgenerator Wert** ist der nächste verfügbare Schlüssel.  Dieses Feld wird nur angezeigt, wenn [Schlüsselgeneratoren][MDNBasicConceptsKeyGenerator]verwendet werden.  
-
+    
 1.  Wählen Sie in der Spalte **Wert** eine Zelle aus, um diesen Wert zu erweitern.  
     
-    > ##### Abbildung5  
-    > Anzeigen eines IndexedDB-Werts  
-    > ![Anzeigen eines IndexedDB-Werts][ImageIndexedBDValue]  
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-edge-chromium.msft.png" alt-text="Anzeigen eines IndexedDB-Werts" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-edge-chromium.msft.png":::
+       Anzeigen eines **IndexedDB** -Werts  
+    :::image-end:::  
     
-1.  Wählen Sie einen Index wie **Titel** oder **Textkörper** in [Abbildung 6](#figure-6)aus, um den Objektspeicher entsprechend den Werten dieses Indexes zu sortieren.  
+1.  Wählen Sie in der folgenden Abbildung einen Index wie **Titel** oder **Text** aus, um den Objektspeicher entsprechend den Werten dieses Indexes zu sortieren.  
    
-    > ##### Abbildung6  
-    > Ein Objektspeicher, der alphabetisch nach dem **Titel** Schlüssel sortiert ist  
-    > ![Sortieren eines Objektspeichers anhand eines Indexes][ImageIndexedDBIndex]  
-
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-title.msft.png" alt-text="Sortieren eines Objektspeichers anhand eines Indexes" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-title.msft.png":::
+       Sortieren eines Objektspeichers anhand eines Indexes  
+    :::image-end:::  
+    
 ## Aktualisieren von IndexedDB-Daten   
 
-IndexedDB-Werte im **Anwendungs** Panel werden nicht in Echtzeit aktualisiert.  Wählen **Sie Aktualisierung aktualisieren** aus, ![ Wenn Sie ][ImageReloadIcon] einen Objektspeicher anzeigen, um die Daten zu aktualisieren, oder zeigen Sie eine Datenbank an, und klicken Sie auf **Datenbank aktualisieren** , um alle Daten zu aktualisieren.  
+IndexedDB-Werte im **Anwendungs** Panel werden nicht in Echtzeit aktualisiert.  Wählen Sie **Aktualisieren** \ ( ![ Aktualisieren \) aus, wenn Sie ][ImageReloadIcon] einen Objektspeicher anzeigen, um die Daten zu aktualisieren, oder zeigen Sie eine Datenbank an, und klicken Sie auf **Datenbank aktualisieren** , um alle Daten zu aktualisieren.  
 
-> ##### Abbildung7  
-> Anzeigen einer Datenbank  
-> ![Anzeigen einer Datenbank][ImageIndexedDBDatabase2]  
+:::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png" alt-text="Anzeigen einer Datenbank" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png":::
+   Anzeigen einer Datenbank  
+:::image-end:::  
 
 ## Bearbeiten von IndexedDB-Daten   
 
@@ -104,9 +104,9 @@ IndexedDB-Schlüssel und-Werte können im **Anwendungs** Panel nicht bearbeitet 
 
 [Snippets][DevtoolsJavascriptSnippets] sind eine Möglichkeit zum Speichern und Ausführen von JavaScript-Codeblöcken in devtools.  Wenn Sie einen Ausschnitt ausführen, wird das Ergebnis in der **Konsole**protokolliert.  Sie können einen Ausschnitt zum Ausführen von JavaScript-Code zum Bearbeiten einer IndexedDB-Datenbank verwenden.  
 
-> ##### Abbildung8  
-> Verwenden eines Snippets für die Interaktion mit IndexedDB  
-> ![Verwenden eines Snippets für die Interaktion mit IndexedDB][ImageIndexedDBSnippet]  
+:::image type="complex" source="../media/storage-sources-snippets-indexeddb-output.msft.png" alt-text="Verwenden eines Snippets für die Interaktion mit IndexedDB" lightbox="../media/storage-sources-snippets-indexeddb-output.msft.png":::
+   Verwenden eines Snippets für die Interaktion mit IndexedDB  
+:::image-end:::  
 
 ## Löschen von IndexedDB-Daten   
 
@@ -115,76 +115,63 @@ IndexedDB-Schlüssel und-Werte können im **Anwendungs** Panel nicht bearbeitet 
 1.  [Anzeigen eines IndexedDB-Objektspeichers](#view-indexeddb-data)  
 1.  Wählen Sie das Schlüssel-Wert-Paar aus, das Sie löschen möchten.  DevTools hebt die Markierung hervor, um anzugeben, dass Sie markiert ist.  
     
-    > ##### Abbildung 9  
-    > Auswählen eines Schlüssel-Wert-Paars, um es zu löschen  
-    > ![Auswählen eines Schlüssel-Wert-Paars, um es zu löschen][ImageIndexedDBKeyValuePair]  
-
-1.  Drücken Sie die Eingabe `Delete` Taste, oder klicken Sie auf **Ausgewählte löschen Löschen** ![ ][ImageDeleteIcon] .  
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png" alt-text="Wählen Sie ein Schlüssel-Wert-Paar aus, um es zu löschen." lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png":::
+       Wählen Sie ein Schlüssel-Wert-Paar aus, um es zu löschen.  
+    :::image-end:::  
     
-    > ##### Abbildung 10  
-    > Wie der Objektspeicher aussieht, nachdem das Schlüssel-Wert-Paar gelöscht wurde  
-    > ![Wie der Objektspeicher aussieht, nachdem das Schlüssel-Wert-Paar gelöscht wurde][ImageIndexedDBKeyValuePairDeleted]  
-
+1.  Drücken Sie die Eingabe `Delete` Taste, oder klicken Sie auf **Ausgewählte löschen** \ ( ![ Auswahl löschen ][ImageDeleteIcon] \).  
+    
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png" alt-text="Wie der Objektspeicher aussieht, nachdem das Schlüssel-Wert-Paar gelöscht wurde" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png":::
+       Wie der Objektspeicher aussieht, nachdem das Schlüssel-Wert-Paar gelöscht wurde  
+    :::image-end:::  
+    
 ### Löschen aller Schlüssel-Wert-Paare in einem Objektspeicher   
 
 1.  [Anzeigen eines IndexedDB-Objektspeichers](#view-indexeddb-data)  
     
-    > ##### Abbildung 11  
-    > Anzeigen eines Objektspeichers  
-    > ![Anzeigen eines Objektspeichers][ImageIndexedDBObjectStore]  
-
-1.  Wählen Sie **Objektspeicher löschen** ![ , Objektspeicher löschen aus ][ImageClearIcon] .  
-
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-clear-object-store.msft.png" alt-text="Anzeigen eines Objektspeichers" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-clear-object-store.msft.png":::
+       Anzeigen eines Objektspeichers  
+    :::image-end:::  
+    
+1.  Wählen Sie **Objektspeicher löschen** \ ( ![ Objektspeicher löschen ][ImageClearIcon] \) aus.  
+    
 ### Löschen einer IndexedDB-Datenbank   
 
 1.  [Zeigen Sie die IndexedDB-Datenbank](#view-indexeddb-data) an, die Sie löschen möchten.  
 1.  Wählen Sie **Datenbank löschen**aus.  
     
-    > ##### Abbildung 12  
-    > Schaltfläche " **Datenbank löschen** "  
-    > ![Schaltfläche "Datenbank löschen"][ImageIndexedDBDatabase]  
-
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png" alt-text="Schaltfläche "Datenbank löschen"" lightbox="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png":::
+       Schaltfläche " **Datenbank löschen** "  
+    :::image-end:::  
+    
 ### Löschen des gesamten IndexedDB-Speichers   
 
 1.  Öffnen Sie den Bereich **Speicher löschen** .  
-
 1.  Stellen Sie sicher, dass das Kontrollkästchen **IndexedDB** aktiviert ist.  
-
 1.  Wählen Sie **Website Daten löschen**aus.  
     
-    > ##### Abbildung 13  
-    > Der Bereich " **Speicher löschen** " ![ im Bereich "Speicher löschen"][ImageIndexedDBClearStorage]  
-
+    :::image type="complex" source="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png" alt-text="Der Bereich "Speicher löschen"" lightbox="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png":::
+       Der Bereich " **Speicher löschen** "  
+    :::image-end:::  
+    
+<!--  
  
 
 
+-->  
 
 <!-- image links -->  
 
-[ImageClearIcon]: /microsoft-edge/devtools-guide-chromium/media/clear-icon.msft.png  
-[ImageDatabaseIcon]: /microsoft-edge/devtools-guide-chromium/media/database-icon.msft.png  
-[ImageDeleteIcon]: /microsoft-edge/devtools-guide-chromium/media/delete-icon.msft.png  
-[ImageObjectStoreIcon]: /microsoft-edge/devtools-guide-chromium/media/object-store-icon.msft.png  
-[ImageReloadIcon]: /microsoft-edge/devtools-guide-chromium/media/reload-icon.msft.png  
-
-[ImageManifest]: /microsoft-edge/devtools-guide-chromium/media/storage-application-manifest-empty.msft.png "Abbildung 1: der Bereich "Manifest""  
-[ImageIndexedDBMenu]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-indexeddb.msft.png "Abbildung 2: das IndexedDB-Menü"  
-[ImageIndexedDBDatabase]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-indexeddb-notes_db.msft.png "Abbildung 3: die notes_db-Datenbank"  
-[ImageIndexedDBObjectStore]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-indexeddb-notes_db-notes_os.msft.png "Abbildung 4: der notes_os Objektspeicher"  
-[ImageIndexedBDValue]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-indexeddb-notes_db-notes_os-edge-chromium.msft.png "Abbildung 5: Anzeigen eines IndexedDB-Werts"  
-[ImageIndexedDBIndex]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-indexeddb-notes_db-notes_os-title.msft.png "Abbildung 6: Sortieren eines Objektspeichers anhand eines Indexes"  
-[ImageIndexedDBDatabase2]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png "Abbildung 7: Anzeigen einer Datenbank"  
-[ImageIndexedDBSnippet]: /microsoft-edge/devtools-guide-chromium/media/storage-sources-snippets-indexeddb-output.msft.png "Abbildung 8: Verwenden eines Ausschnitts für die Interaktion mit IndexedDB"  
-[ImageIndexedDBKeyValuePair]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png "Abbildung 9: Auswählen eines Schlüssel-Wert-Paars, um es zu löschen"  
-[ImageIndexedDBKeyValuePairDeleted]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png "Abbildung 10: Aussehen des Objektspeichers, nachdem das Schlüssel-Wert-Paar gelöscht wurde"  
-[ImageIndexedDBObjectStore]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-indexeddb-notes_db-notes_os-clear-object-store.msft.png "Abbildung 11: Anzeigen eines Objektspeichers"  
-[ImageIndexedDBDatabase]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png "Abbildung 12: die Schaltfläche "Datenbank löschen""  
-[ImageIndexedDBClearStorage]: /microsoft-edge/devtools-guide-chromium/media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png "Abbildung 13: der Bereich "Speicher löschen""  
+[ImageClearIcon]: ../media/clear-icon.msft.png  
+[ImageDatabaseIcon]: ../media/database-icon.msft.png  
+[ImageDeleteIcon]: ../media/delete-icon.msft.png  
+[ImageObjectStoreIcon]: ../media/object-store-icon.msft.png  
+[ImageReloadIcon]: ../media/reload-icon.msft.png  
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chrom)-Entwickler Tools"  
-[DevtoolsJavascriptSnippets]: /microsoft-edge/devtools-guide-chromium/javascript/snippets "Ausführen von JavaScript-Codeausschnitten auf einer beliebigen Seite mit Microsoft Edge devtools"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chrom)-Entwicklertools | Microsoft docs"  
+[DevtoolsJavascriptSnippets]: ../javascript/snippets.md "Ausführen von JavaScript-Codeausschnitten auf einer beliebigen Seite mit Microsoft Edge devtools | Microsoft docs"  
 
 [ChromiumIssue943770]: https://crbug.com/943770 "943770-devtools: Anzeigen von IFRAME-IndexedDB-Datenbanken – Chrom-Monorail"  
 

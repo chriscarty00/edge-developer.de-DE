@@ -2,16 +2,16 @@
 title: Debuggen von progressiven Web-Apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/24/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: ce389ad10073efd318e5fa4df59d78fd40b7ebeb
-ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+ms.openlocfilehash: 6733d7823348bc02dd6f29ec218a33ab4073dbfc
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601880"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10984957"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -53,7 +53,7 @@ In diesem Leitfaden werden nur die fortschrittlichen Web App-Features des **Anwe
 *   Verwenden Sie den Bereich " **Dienstmitarbeiter** " für eine ganze Reihe von Dienstmitarbeiter bezogenen Aufgaben, wie das Aufheben der Registrierung oder Aktualisierung eines Diensts, das Emulieren von Push-Ereignissen, das offline schalten oder Beenden eines Dienst Mitarbeiters.  
 *   Zeigen Sie den Service Worker-Cache im **Cachespeicher** Bereich an.  
 *   Heben Sie die Registrierung eines Dienstmitarbeiter auf, und löschen Sie alle Speicher und Caches mit einem einzigen Mausklick aus dem Bereich " **Speicher löschen** ".  
-
+    
 ## Web App-Manifest   
 
 Wenn Sie möchten, dass Ihre Benutzer Ihre APP ihren mobilen Homescreens hinzufügen können, benötigen Sie ein Web App-Manifest.  Das Manifest definiert, wie die APP auf dem Homescreen angezeigt wird, wo der Benutzer beim Start von Homescreen weitergeleitet wird und wie die APP beim Start aussieht.  
@@ -67,15 +67,15 @@ Wenn Sie möchten, dass Ihre Benutzer Ihre APP ihren mobilen Homescreens hinzuf�
 
 Nachdem Sie Ihr Manifest eingerichtet haben, können Sie es über den Bereich **Manifest** des **Anwendungs** Bereichs überprüfen.  
 
-> ##### Abbildung1  
-> Bereich ' **Manifest** '  
-> ![Bereich ' Manifest '][ImageManifest]  
+:::image type="complex" source="./media/manifest-pane.msft.png" alt-text="Bereich ' Manifest '" lightbox="./media/manifest-pane.msft.png":::
+   Bereich ' **Manifest** '  
+:::image-end:::  
 
-*   Wenn Sie sich die Manifest-Quelle ansehen möchten, klicken Sie auf den Link unter **App-Manifest** -Beschriftung \ ( `https://airhorner.com/manifest.json` in [**Abbildung 1**](#figure-1)] \).  
+*   Wenn Sie sich die Manifest-Quelle ansehen möchten, klicken Sie auf den Link unter **App-Manifest** -Beschriftung \ ( `https://airhorner.com/manifest.json` in der vorhergehenden Abbildung).  
 <!-- *   Press the **Add to homescreen** button to simulate an Add to Homescreen event.  Check out the next section for more information.  -->  
 *   In den Abschnitten **Identität** und **Präsentation** werden nur Felder aus der Manifestdatei in einer benutzerfreundlicheren Anzeige angezeigt.  
 *   Im Abschnitt "Symbole" werden alle von Ihnen angegebenen **Symbole** angezeigt.  
-
+    
 <!--### Simulate Add to Homescreen events   -->
 
 <!--A web app can only be added to a homescreen when the site is visited at least twice, with at least five minutes between visits.  While developing or debugging your Add to Homescreen workflow, this criteria can be inconvenient.  
@@ -83,7 +83,11 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 
 <!--You can test out this feature with the [Microsoft I/O 2016 progressive web app](https://events.alpahabet.com/io2016/), which has proper support for Add to Homescreen.  Clicking on **Add to Homescreen** while the app is open prompts Microsoft Edge to display the "add this site to your shelf" banner, which is the desktop equivalent of the "add to homescreen" banner for mobile devices.  -->
 
-<!--![add to desktop shelf][ImageDesktopShelf]  -->
+<!--  
+:::image type="complex" source="./media/io.msft.png" alt-text="Add to desktop shelf" lightbox="./media/io.msft.png":::
+   Add to desktop shelf  
+:::image-end:::
+-->  
 
 <!--
 > [!Tip]
@@ -105,16 +109,16 @@ Service Mitarbeiter sind eine grundlegende Technologie in der zukünftigen Web-P
 
 *   [Intro to Service Workers](/web/fundamentals/primers/service-worker)  
 *   [Push Notifications: Timely, Relevant, and Precise](/web/fundamentals/push-notifications)  -->  
-
+    
 <!--TODO:  Link to sections when available. -->  
 
 Der Bereich " **Dienstmitarbeiter** " im Bereich " **Anwendung** " ist der wichtigste Ort in devtools zum Überprüfen und Debuggen von Dienst Mitarbeitern.  
 
-> ##### Abbildung2  
-> Der Bereich " **Dienstmitarbeiter** "  
-> ! [Der Bereich "Dienstmitarbeiter"] [ImageServiceWorkersPane]  
+:::image type="complex" source="./media/service-workers-pane.msft.png" alt-text="Der Bereich "Dienstmitarbeiter"" lightbox="./media/service-workers-pane.msft.png":::
+   Der Bereich " **Dienstmitarbeiter** "  
+:::image-end:::  
 
-*   Wenn ein Dienstmitarbeiter auf der aktuell geöffneten Seite installiert ist, wird er in diesem Bereich aufgelistet.  In [**Abbildung 2**](#figure-2) gibt es beispielsweise einen Dienstmitarbeiter, der für den Bereich von installiert ist `https://weather-pwa-sample.firebaseapp.com` .  
+*   Wenn ein Dienstmitarbeiter auf der aktuell geöffneten Seite installiert ist, wird er in diesem Bereich aufgelistet.  In der vorherigen Abbildung ist beispielsweise ein Dienstmitarbeiter für den Bereich von installiert `https://weather-pwa-sample.firebaseapp.com` .  
 *   Mit dem Kontrollkästchen **Offline** wird devtools in den Offlinemodus versetzt.  Dies entspricht dem Offlinemodus, der über das **Netzwerk** Panel zur Verfügung steht, oder die `Go offline` Option im [Menübefehl][DevtoolsCommandMenuIndex].  
 *   Das Kontrollkästchen " **beim erneuten Laden aktualisieren** " zwingt den Dienstmitarbeiter, bei jeder Seitenauslastung zu aktualisieren.  
 *   Das Kontrollkästchen " **für Netzwerk umgehen** " umgeht den Dienstmitarbeiter und zwingt den Browser, für angeforderte Ressourcen zum Netzwerk zu wechseln.  
@@ -123,12 +127,16 @@ Der Bereich " **Dienstmitarbeiter** " im Bereich " **Anwendung** " ist der wicht
 *   Die Schaltfläche " **Synchronisieren** " emuliert ein Hintergrund Synchronisierungsereignis.  
 *   Mit der Schaltfläche zum **aufheben** der Registrierung wird der angegebene Dienstmitarbeiter aufgehoben.  Schauen Sie sich das Kontrollkästchen [Speicher löschen](#clear-storage) an, um eine Möglichkeit zum Aufheben der Registrierung eines Dienstmitarbeiter und zum Löschen von Speicher und Zwischenspeichern mit einem einzigen Mausklick zu finden.  
 *   Die **Quell** Zeile zeigt an, wann der aktuell ausgeführte Dienstmitarbeiter installiert wurde.  Bei dem Link handelt es sich um den Namen der Quelldatei des Dienst Mitarbeiters.  Wenn Sie auf den Link klicken, werden Sie an die Quelle des Dienst Mitarbeiters gesendet.  
-*   In der **Status** Zeile wird der Status der Dienstmitarbeiter angezeigt.  Die ID-Nummer neben dem grünen Statusindikator \ ( `#36` in [**Abbildung 2**](#figure-2)\) ist für den aktuell aktiven Dienstmitarbeiter.  Neben dem Status wird die Schaltfläche **Start** \ (wenn der Dienstmitarbeiter angehalten wird) oder eine Schaltfläche " **Beenden** " \ (wenn der Dienstmitarbeiter ausgeführt wird) angezeigt.  Dienstmitarbeiter sind so konzipiert, dass Sie jederzeit angehalten und vom Browser gestartet werden können.  Das explizite beenden Ihrer Dienstmitarbeiter mithilfe der Schaltfläche " **Beenden** " kann dies simulieren.  Das Beenden Ihrer Dienstmitarbeiter stellt eine hervorragende Möglichkeit dar, zu testen, wie sich der Code verhält, wenn der Dienstmitarbeiter wieder startet.  Sie zeigt häufig Fehler aufgrund fehlerhafter Annahmen über den persistenten globalen Zustand.  
+*   In der **Status** Zeile wird der Status der Dienstmitarbeiter angezeigt.  Die ID-Nummer neben dem grünen Statusindikator \ ( `#36` in der vorherigen Abbildung \) ist für den aktuell aktiven Dienstmitarbeiter.  Neben dem Status wird die Schaltfläche **Start** \ (wenn der Dienstmitarbeiter angehalten wird) oder eine Schaltfläche " **Beenden** " \ (wenn der Dienstmitarbeiter ausgeführt wird) angezeigt.  Dienstmitarbeiter sind so konzipiert, dass Sie jederzeit angehalten und vom Browser gestartet werden können.  Das explizite beenden Ihrer Dienstmitarbeiter mithilfe der Schaltfläche " **Beenden** " kann dies simulieren.  Das Beenden Ihrer Dienstmitarbeiter stellt eine hervorragende Möglichkeit dar, zu testen, wie sich der Code verhält, wenn der Dienstmitarbeiter wieder startet.  Sie zeigt häufig Fehler aufgrund fehlerhafter Annahmen über den persistenten globalen Zustand.  
 *   Die Zeile " **Clients** " gibt den Ursprung an, auf den sich der Dienstmitarbeiter beläuft.  Die Schaltfläche " **Fokus** " ist meist hilfreich, wenn Sie das Kontrollkästchen " **Alle anzeigen** " aktiviert haben.  Wenn dieses Kontrollkästchen aktiviert ist, werden alle registrierten Dienstmitarbeiter aufgelistet.  Wenn Sie auf die Schaltfläche **Fokus** neben einem Dienstmitarbeiter klicken, der auf einer anderen Registerkarte ausgeführt wird, konzentriert sich Microsoft Edge auf die Registerkarte.  
-
+    
 Wenn der Dienstmitarbeiter Fehler verursacht, wird eine neue Bezeichnung mit dem Namen **Fehler** angezeigt.  
 
-<!--![service worker with errors][ImageServiceWorkerErrors]  -->
+<!--  
+:::image type="complex" source="./media/sw-error.msft.png" alt-text="Service worker with errors" lightbox="./media/sw-error.msft.png":::
+   Service worker with errors  
+:::image-end:::
+-->  
 
 <!--TODO:  Capture Service Worker Errors sample when available. -->
 <!--TODO:  Link Web "How tickle works" sections when available. -->
@@ -137,27 +145,27 @@ Wenn der Dienstmitarbeiter Fehler verursacht, wird eine neue Bezeichnung mit dem
 
 Der Bereich **Cache-Speicher** bietet eine schreibgeschützte Liste der Ressourcen, die mit der [Cache-API][MDNWebCacheAPI]\ (Service Worker \) zwischengespeichert wurden.  
 
-> ##### Abbildung 3  
-> Der **Cache Speicher** Bereich  
-> ! [Der Cache-Speicherbereich] [ImageServiceWorkersCachePane]  
+:::image type="complex" source="./media/cache-pane-cache-storage-resources.msft.png" alt-text="Der Cache Speicherbereich" lightbox="./media/cache-pane-cache-storage-resources.msft.png":::
+   Der **Cache Speicher** Bereich  
+:::image-end:::  
 
 > [!NOTE]
 > Wenn Sie zum ersten Mal einen Cache öffnen und ihm eine Ressource hinzufügen, erkennt devtools die Änderung möglicherweise nicht.  Laden Sie die Seite neu, und Sie sollten den Cache sehen.  
 
-Wenn Sie zwei oder mehr Caches geöffnet haben, werden Sie unter der Dropdownliste **Cachespeicher** aufgelistet.  
+Wenn zwei oder mehr Caches geöffnet sind, werden Sie unter der Dropdownliste **Cachespeicher** aufgelistet.  
 
-> ##### Abbildung4  
-> Die Dropdownliste " **Cache Speicher** "  
-> ! [Die Dropdownliste des Cache Speichers] [ImageMultipleCaches]  
+:::image type="complex" source="./media/cache-pane-cache-storage.msft.png" alt-text="Die Dropdownliste "Cache Speicher"" lightbox="./media/cache-pane-cache-storage.msft.png":::
+   Die Dropdownliste " **Cache Speicher** "  
+:::image-end:::  
 
 ## Kontingent Verwendung 
 
-Einige Antworten innerhalb des Cache Speicherbereichs werden möglicherweise als "**undurchsichtig**" gekennzeichnet.  Dies bezieht sich auf eine Antwort, die von einem anderen Ursprung abgerufen wurde, wie etwa von einem **CDN** oder einer Remote-API, wenn [CORS][FetchHttpCorsProtocol] nicht aktiviert ist.  
+Einige Antworten innerhalb des **Cache Speicher** Bereichs werden möglicherweise als "undurchsichtig" gekennzeichnet.  Dies bezieht sich auf eine Antwort, die von einem anderen Ursprung abgerufen wurde, wie etwa von einem **CDN** oder einer Remote-API, wenn [CORS][FetchHttpCorsProtocol] nicht aktiviert ist.  
 
 <!--TODO:  Link Web "CDN" section when available. -->  
 <!--TODO:  Link Web "opaque" section when available. -->
 
-Um das Auslaufen von domänenübergreifenden Informationen zu vermeiden, wird die Größe einer undurchsichtigen Antwort, die für die Berechnung von Speicherkontingent Grenzwerten verwendet wird, erheblich erweitert (beispielsweise, ob eine `QuotaExceeded` Ausnahme ausgelöst wird \) und von der **`navigator.storage`** API gemeldet.  
+Um das Auslaufen von domänenübergreifenden Informationen zu vermeiden, wird die Größe einer undurchsichtigen Antwort, die für die Berechnung von Speicherkontingent Grenzwerten verwendet wird, erheblich erweitert (beispielsweise, ob eine `QuotaExceeded` Ausnahme ausgelöst wird \) und von der `navigator.storage` API gemeldet.  
 
 <!--TODO:  Link Estimating "`navigator.storage` API" sections when available. -->
 
@@ -167,7 +175,7 @@ Verwandte Leitfäden:
 
 *   [Stapelüberlauf: Welche Einschränkungen gelten für undurchsichtige Antworten?][StackOverflowLimitationsForOpaqueResponses]  
 <!--*   [Alphabet work container: Understanding Storage Quota](/web/tools/Alphabet-work-container/guides/storage-quota#beware_of_opaque_responses)  -->
-
+    
 <!--TODO:  Link Work container storage quota for opaque responses section when available. -->
 
 ## Speicher löschen 
@@ -177,7 +185,7 @@ Der Bereich " **Speicher löschen** " ist eine sehr nützliche Funktion, wenn Si
 <!--Related Guides:  
 
 *   [Clear Storage](/iterate/manage-data/local-storage#clear-storage)  -->
-
+    
 <!--TODO:  Link to sections when available. -->
 
 <!--## Other Application panel guides 
@@ -188,25 +196,18 @@ Related Guides:
 
 *   [Inspect page resources](/iterate/manage-data/page-resources)  
 *   [Inspect and manage local storage and caches](/iterate/manage-data/local-storage)  -->
-
+    
 <!--TODO  -->
 
+<!--  
  
 
 
-
-<!-- image links -->  
-
-[ImageManifest]: /microsoft-edge/devtools-guide-chromium/media/manifest-pane.msft.png "Abbildung 1: der Bereich "Manifest""  
-<!--[ImageDesktopShelf]: /microsoft-edge/devtools-guide-chromium/media/io.msft.png "Add to desktop shelf"  -->
-[ImageServiceWorkersPane]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Service-Workers-Pane.msft.png "Abbildung 2: der Bereich" Dienstmitarbeiter "  
-<!--[ImageServiceWorkerErrors]: /microsoft-edge/devtools-guide-chromium/media/sw-error.msft.png "Service worker with errors"  -->
-[ImageServiceWorkersCachePane]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Cache-Pane-Cache-Storage-Resources.msft.png "Abbildung 3: der Cachespeicher Bereich"  
-[ImageMultipleCaches]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Cache-Pane-Cache-Storage.msft.png "Abbildung 4: die Dropdownliste" **Cachespeicher** "  
+-->  
 
 <!-- links -->  
 
-[DevtoolsCommandMenuIndex]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Ausführen von Befehlen mit dem Befehlsmenü von Microsoft Edge devtools"  
+[DevtoolsCommandMenuIndex]: ./command-menu/index.md "Ausführen von Befehlen mit dem Befehlsmenü von Microsoft Edge devtools | Microsoft docs"  
 
 [ChromiumIssues796060#c17]: https://bugs.chromium.org/p/chromium/issues/detail?id=796060#c17 "Chrom Problem 796060: der Cache Speicherwert steigt bei jeder Aktualisierung, wenn sich der Analysecode im HTML-Code befindet"  
 

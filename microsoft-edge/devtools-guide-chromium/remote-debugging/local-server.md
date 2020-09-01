@@ -2,16 +2,16 @@
 title: Zugreifen auf lokale Server
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/30/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: daa96b604d5ad48a9de49dd24dc38eab79de9c9b
-ms.sourcegitcommit: ad5eb43172280974b8c063867c2097f7c5c0e77d
+ms.openlocfilehash: fb8f8aabaf426685417f90e25295f3e8e7b08994
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "10898214"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10984907"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -55,19 +55,19 @@ So aktivieren Sie die Portweiterleitung:
 1.  Aktivieren Sie im Dialogfeld **Geräte prüfen** in devtools die **Port Weiterleitung**.  
 1.  Wählen Sie **Regel hinzufügen**aus.  
     
-    > ##### Abbildung1  
-    > Hinzufügen einer Port Weiterleitungsregel  
-    > ![Hinzufügen einer Port Weiterleitungsregel][ImageAddRule]  
+    :::image type="complex" source="../media/remote-debugging-remote-devices-devices-port-forwarding-add-rule.msft.png" alt-text="Hinzufügen einer Port Weiterleitungsregel" lightbox="../media/remote-debugging-remote-devices-devices-port-forwarding-add-rule.msft.png":::
+       Hinzufügen einer Port Weiterleitungsregel  
+    :::image-end:::  
     
 1.  Geben Sie im Textfeld **Device Port** auf der linken Seite die Portnummer ein, auf der `localhost` Sie auf Ihrem Android-Gerät auf die Website zugreifen können möchten.  Wenn Sie beispielsweise auf die Website von Enter aus zugreifen `localhost:5000` möchten `5000` .  
 1.  Geben Sie im Textfeld **lokale Adresse** auf der rechten Seite die IP-Adresse oder den Hostnamen ein, auf dem Ihre Website auf dem Webserver gehostet wird, der auf Ihrem Entwicklungscomputer ausgeführt wird, gefolgt von der Portnummer.  Beispiel: Wenn Ihre Website auf Enter ausgeführt wird `localhost:7331` `localhost:7331` .  
 1.  Wählen Sie **Hinzufügen** aus.  
-
+    
 Die Port Weiterleitung ist nun eingerichtet.  Sehen Sie sich die Statusanzeige für den Port Forward auf der Registerkarte auf Ihrem Gerät im Dialogfeld " **Geräte überprüfen** " an.  
 
-> ##### Abbildung2  
-> Port Weiterleitungsstatus  
-> ![Port Weiterleitungsstatus][ImagePortForwardingStatus]  
+:::image type="complex" source="../media/remote-debugging-remote-devices-devices-port-forwarding-5000-edge-user-agent.msft.png" alt-text="Port Weiterleitungsstatus" lightbox="../media/remote-debugging-remote-devices-devices-port-forwarding-5000-edge-user-agent.msft.png":::
+   Port Weiterleitungsstatus  
+:::image-end:::  
 
 Wenn Sie den Inhalt anzeigen möchten, öffnen Sie Microsoft Edge auf Ihrem Android-Gerät, und wechseln Sie zu dem `localhost` Port, den Sie im Feld **Device Port** festgelegt haben.  Wenn Sie beispielsweise `5000` in das Feld eingegeben haben, besuchen Sie `localhost:5000` .  
 
@@ -89,7 +89,7 @@ So richten Sie die Portweiterleitung an einen Proxy ein:
     > Der Proxy Server und Ihr Webserver müssen auf unterschiedlichen Ports ausgeführt werden.  
     
 1.  Richten Sie die [Portweiterleitung](#set-up-port-forwarding) auf Ihr Android-Gerät ein.  Geben Sie für das Feld **lokale Adresse** `localhost:` den Port ein, auf dem Ihr Proxy Server ausgeführt wird.  Wenn Sie beispielsweise auf Port ausgeführt wird `8000` , besuchen Sie `localhost:8000` .  Geben Sie im Feld **Device Port** die Nummer ein, die Ihr Android-Gerät hören soll, beispielsweise `3333` .  
-
+    
 ### Konfigurieren von Proxyeinstellungen auf Ihrem Gerät  
 
 Als nächstes müssen Sie Ihr Android-Gerät für die Kommunikation mit dem Proxy Server konfigurieren.  
@@ -106,7 +106,7 @@ Als nächstes müssen Sie Ihr Android-Gerät für die Kommunikation mit dem Prox
 1.  Geben Sie für das Feld **Proxy Hostname** ein `localhost` .  
 1.  Geben Sie im Feld **Proxy Port** die Portnummer ein, die Sie im vorherigen Abschnitt für den **Geräteanschluss** eingegeben haben.  
 1.  Wählen Sie **Speichern**.  
-
+    
 Mit diesen Einstellungen leitet Ihr Gerät alle seine Anforderungen an den Proxy auf dem Entwicklungscomputer weiter.  Der Proxy stellt Anforderungen für Ihr Gerät, damit Anforderungen an Ihre angepasste lokale Domäne ordnungsgemäß aufgelöst werden.  
 
 Auf Ihrem Android-Gerät können Sie nun auf benutzerdefinierte Domänen zugreifen, genau wie auf dem Entwicklungscomputer.  
@@ -116,18 +116,14 @@ Wenn Ihr Webserver von einem nicht standardmäßigen Port ausgeführt wird, denk
 > [!TIP]
 > Wenn Sie das normale Browsen fortsetzen möchten, denken Sie daran, die Proxyeinstellungen auf Ihrem Android-Gerät zurückzusetzen, nachdem Sie die Verbindung mit dem Entwicklungscomputer getrennt haben.  
 
-<!--  -->  
+<!--  
+  
 
 
-
-<!-- image links -->  
-
-[ImageAddRule]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging-remote-devices-devices-port-forwarding-add-rule.msft.png "Abbildung 1: Hinzufügen einer Port Weiterleitungsregel"  
-[ImagePortForwardingStatus]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging-remote-devices-devices-port-forwarding-5000-edge-user-agent.msft.png "Abbildung 2: Port Weiterleitungsstatus"  
-
+-->  
 <!-- links -->  
 
-[RemoteDebuggingGettingStarted]: /microsoft-edge/devtools-guide-chromium/remote-debugging/index "Erste Schritte mit dem Remote Debuggen von Android-Geräten"  
+[RemoteDebuggingGettingStarted]: ./index.md "Erste Schritte mit dem Remotedebuggen von Android-Geräten | Microsoft docs"  
 
 [CharlesWebDebuggingProxy]: https://www.charlesproxy.com "Charles Web Debugging-Proxy"  
 
