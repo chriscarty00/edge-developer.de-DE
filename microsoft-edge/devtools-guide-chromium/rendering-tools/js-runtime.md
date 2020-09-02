@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 2f05ef2911c855df39d60fa732ff5f784ab49473
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 801de4beeec29010ef63b2bcda950b57d4e544f7
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10984865"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986185"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -27,19 +27,12 @@ ms.locfileid: "10984865"
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-
-
-
-
-# Beschleunigen der JavaScript-Laufzeit   
-
-
-
+# Beschleunigen der JavaScript-Laufzeit  
 
 Ermitteln Sie mit dem **Speicher** Panel kostspielige Funktionen.  
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="Sampling-profile" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
-   Sampling-profile  
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="Beispielprofile" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
+   Beispielprofile  
 :::image-end:::  
 
 ### Zusammenfassung  
@@ -66,7 +59,7 @@ Wenn Sie die Aufzeichnung abgeschlossen haben, füllt devtools den **Speicher** 
 
 Die Standardansicht ist **schwer. \ (Bottom up \)**.  In dieser Ansicht können Sie sehen, welche Funktionen die meisten Auswirkungen auf die Leistung haben, und die Aufruf Pfade für diese Funktionen untersuchen.  
 
-### Ändern der Sortierreihenfolge   
+### Ändern der Sortierreihenfolge  
 
 Wenn Sie die Sortierreihenfolge ändern möchten, wählen Sie das Dropdownmenü neben dem Symbol **Fokus ausgewählte** Funktion \ ( ![ ausgewählte Funktion auswählen ][ImageFocusIcon] \) aus, und wählen Sie dann eine der folgenden Optionen aus.
 
@@ -88,13 +81,13 @@ Wenn Sie die Sortierreihenfolge ändern möchten, wählen Sie das Dropdownmenü 
    Strukturdiagramm  
 :::image-end:::  
 
-### Ausschließen von Funktionen   
+### Ausschließen von Funktionen  
 
-Wenn Sie eine Funktion aus Ihrem Stichproben Profil ausschließen möchten, wählen Sie Sie aus, und wählen Sie dann das Symbol **ausgewählte Funktion ausschließen** ( ![ ausgewählte Funktion ausschließen ][ImageExcludeIcon] \) aus.  Die anfordernde Funktion \ (übergeordnete \) der ausgeschlossenen Funktion \ (untergeordnete \) wird mit dem zugewiesenen Arbeitsspeicher belastet, der der ausgeschlossenen Funktion zugeordnet ist (untergeordnete \).  
+Wenn Sie eine Funktion aus Ihrem Stichproben Profil ausschließen möchten, wählen Sie Sie aus, und wählen Sie dann die Schaltfläche **ausgewählte Funktion ausschließen** \ ( ![ ausgewählte Funktion ausschließen ][ImageExcludeIcon] \) aus.  Die anfordernde Funktion \ (übergeordnete \) der ausgeschlossenen Funktion \ (untergeordnete \) wird mit dem zugewiesenen Arbeitsspeicher belastet, der der ausgeschlossenen Funktion zugeordnet ist (untergeordnete \).  
 
-Wählen Sie das Symbol **alle Funktionen wiederherstellen** \ ( ![ alle Funktionen wiederherstellen ][ImageRestoreIcon] \) aus, um alle ausgeschlossenen Funktionen wieder in die Aufzeichnung zurückzusetzen.  
+Wählen Sie die Schaltfläche **alle Funktionen wieder** herstellen \ ( ![ alle Funktionen wiederherstellen ][ImageRestoreIcon] \) aus, um alle ausgeschlossenen Funktionen wieder in die Aufzeichnung zurückzusetzen.  
 
-## Sampling-Profil als Diagramm anzeigen   
+## Sampling-Profil als Diagramm anzeigen  
 
 Die Diagrammansicht bietet eine visuelle Darstellung des Sampling-Profils über einen Zeitraum.  
 
@@ -106,7 +99,7 @@ Nachdem Sie [ein Stichproben Profil aufgezeichnet](#record-a-sampling-profile)ha
 
 Das Flammen Diagramm ist in zwei Teile aufgeteilt.  
 
-| | Bestandteil | Beschreibung |  
+| Index | Bestandteil | Beschreibung |  
 | --- |:--- |:--- |  
 | 1 | Übersicht | Eine Vogelperspektive der gesamten Aufzeichnung  Die Höhe der Balken entspricht der Tiefe der Aufrufliste.  Je höher die Leiste, desto tiefer die Aufrufliste.  |  
 | 2 | Anruflisten | Hierbei handelt es sich um eine detaillierte Ansicht der Funktionen, die während der Aufzeichnung aufgerufen wurden.  Die horizontale Achse ist Zeit, und die vertikale Achse ist die Aufrufliste.  Die Stapel werden oben nach unten angeordnet.  So nennt sich die Funktion oben die untere und so weiter.  |  
@@ -119,7 +112,7 @@ Funktionen werden nach dem Zufallsprinzip eingefärbt.  Es gibt keine Korrelatio
 
 Eine hohe Aufrufliste ist nicht unbedingt wichtig, Sie bedeutet nur, dass viele Funktionen aufgerufen wurden.  Eine breite Leiste bedeutet aber, dass eine Funktion lange Zeit in Anspruch genommen hat.  Diese sind Kandidaten für die Optimierung.  
 
-### Vergrößern bestimmter Teile der Aufzeichnung   
+### Vergrößern bestimmter Teile der Aufzeichnung  
 
 Wählen, halten und ziehen Sie die Maus nach links und rechts über die Übersicht, um bestimmte Teile der Anrufliste zu vergrößern.  Nachdem Sie die Ansicht gezoomt haben, wird in der Aufrufliste automatisch der Teil der Aufzeichnung angezeigt, den Sie ausgewählt haben.  
 
@@ -127,7 +120,7 @@ Wählen, halten und ziehen Sie die Maus nach links und rechts über die Übersic
    Diagramm vergrößert  
 :::image-end:::  
 
-### Anzeigen von Funktionsdetails   
+### Anzeigen von Funktionsdetails  
 
 Wählen Sie eine Funktion aus, um die Definition im **Quellen** Panel anzuzeigen.  
 
@@ -147,11 +140,9 @@ Zeigen Sie mit der Maus auf eine Funktion, um die Namen-und Anzeigedauer Daten a
    Anzeigen von Funktionsdetails in einem Diagramm  
 :::image-end:::  
 
-<!--  
-## Feedback   
+## Kontakt mit dem Microsoft Edge devtools-Team  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

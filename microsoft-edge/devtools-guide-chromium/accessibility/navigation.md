@@ -2,16 +2,16 @@
 title: Navigieren in Microsoft Edge devtools mit Hilfstechnologien
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/14/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 4bd910fabaab02a632bdc51ade29c5ad6502432a
-ms.sourcegitcommit: 054ad92f0b8f9a15da1e3aed32e8f4379b10860f
+ms.openlocfilehash: 544d6a6ecb8dabe262e7c28aa7fc072610604be0
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "10931196"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986059"
 ---
 <!-- Copyright Rob Dodson 
 
@@ -235,11 +235,14 @@ Der Überwachungsbericht ist in Abschnitte gegliedert, die den einzelnen Überwa
 
 Verwenden Sie zum Ausführen einer neuen Überwachung `Shift` + `Tab` den Bericht, und suchen Sie nach der Schaltfläche **Audit durchführen** .  
 
+## Kontakt mit dem Microsoft Edge devtools-Team
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+
 <!-- links -->  
 
 [DevtoolsAccessibilityReference]: ./reference.md "Barrierefreiheits Referenz | Microsoft docs"  
-<!--[DevtoolsAccessibilityReferencePane]: reference.md#the-accessibility-pane "The Accessibility pane - Accessibility Reference | Microsoft Docs"  -->  
-
+[DevtoolsAccessibilityReferencePane]: reference.md#the-accessibility-pane "Der Bereich Barrierefreiheit – Referenz zu Barrierefreiheit | Microsoft docs"  
 [MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium.md "Microsoft Edge (Chrom)-Entwickler Tools | Microsoft docs"  
 [DevtoolsCommandMenuIndex]: ../command-menu/index.md "Ausführen von Befehlen mit dem Befehlsmenü von Microsoft Edge devtools | Microsoft docs"  
 [DevtoolsConsoleIndex]: ../console/index.md "Übersicht über die Konsole | Microsoft docs"  

@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 1bd6da8d0e4c170fa94fed995a26e77b119992f1
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 6cc690e7f2f93448c2facb01f0ca2f9b679a473a
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10981827"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986101"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,13 +27,7 @@ ms.locfileid: "10981827"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Überschreiben von Geolocation mit Microsoft Edge devtools   
-
-
+# Überschreiben von Geolocation mit Microsoft Edge devtools  
 
 Viele Websites nutzen den Standort des Benutzers, um den Benutzern eine wichtigere Benutzererfahrung zu bieten.  So kann beispielsweise eine Wetter Website die lokale Prognose im Bereich eines Benutzers anzeigen, nachdem der Benutzer der Website die Berechtigung für den Zugriff auf den aktuellen Nutzerstandort erteilt hat.  
 
@@ -54,11 +48,9 @@ Wenn Sie eine Benutzeroberfläche erstellen, die je nachdem, wo sich der Benutze
        Wählen Sie `Tokyo` aus der Liste **Geolocation** aus.  
     :::image-end:::  
     
-<!--  
-## Feedback   
+## Kontakt mit dem Microsoft Edge devtools-Team
 
-  
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

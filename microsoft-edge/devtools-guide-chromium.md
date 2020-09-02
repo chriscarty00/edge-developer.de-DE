@@ -3,17 +3,17 @@ description: Kennenlernen der Microsoft Edge (Chrom)-Entwickler Tools
 title: Microsoft Edge (Chrom)-Entwickler Tools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/14/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: cb51e16083e4798478817910e54c571721d094f8
-ms.sourcegitcommit: 054ad92f0b8f9a15da1e3aed32e8f4379b10860f
+ms.openlocfilehash: c1168e25c99302a9d195c756c6049881b5dfe91f
+ms.sourcegitcommit: 2fa65cca74c5214601900579c0ce9f946ad8a27e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "10931224"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10991181"
 ---
 # Microsoft Edge (Chrom)-Entwickler Tools  
 
@@ -133,15 +133,9 @@ Diese Tastenkombinationen steuern das Hauptfenster von devtools, arbeiten über 
 
 ## Kontakt mit dem Microsoft Edge devtools-Team  
 
-Bitte senden Sie Ihr Feedback, damit das Microsoft Edge-Team die Microsoft Edge-devtools für Sie weiter verbessert.  Wählen Sie einfach das **Feedback** -Symbol im devtools aus, oder drücken Sie `Alt` + `Shift` + `I` unter Windows \ ( `Option` + `Shift` + `I` unter macOS \), und geben Sie Feedback-oder Funktionsanforderungen für das devtools ein.  
-
-:::image type="complex" source="./devtools-guide-chromium/media/devtools-feedback.png" alt-text="Feedback zu Microsoft Edge geben":::
-   Feedback zu Microsoft Edge geben  
-:::image-end:::  
+[!INCLUDE [contact DevTools team note](./devtools-guide-chromium/includes/contact-devtools-team-note.md)]  
 
 Wenn Sie eine Vorschau der [neuesten Features in devtools][DevtoolsGuideChromiumWhatsNewIndex]anzeigen möchten, laden Sie [Microsoft Edge Canary][MicrosoftedgeinsiderDownload]herunter, das nächtlich erstellt wird.  
-
-<!-- image links -->  
 
 <!-- links -->  
 

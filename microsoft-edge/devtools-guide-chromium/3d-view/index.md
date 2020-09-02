@@ -3,15 +3,16 @@ description: Alles zur 3D-Ansicht und deren Verwendung.
 title: 3D View
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/07/2019
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: ce9f8a26ef991f141f1ee888e79bfbf3a93f2eca
-ms.sourcegitcommit: f92bf0b50812b43228990b794611daa2144e431c
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+ms.openlocfilehash: ba1125654c46be6ef4da99efc9ba027ba5e40672
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10858067"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986080"
 ---
 # 3D View  
 
@@ -107,9 +108,9 @@ Ein Schieberegler im Steuerbereich mit dem Titel " **Schachtelungsebene für Sei
 
 ### Dom-Farbtyp  
 
-Zusätzlich zur **heatmapfarbgebung-lila-zu-weiß**-, **heatmapfarbgebung-blau-zu-gelb**-, **heatmapfarbgebung-Rainbow-** und der **use-Hintergrundfarbe** , gibt es die **Verwendung der Bildschirm Textur**.  Die Bildschirm Textur fügt dem Debugvorgang Kontext hinzu, indem der Inhalt der Webseite direkt auf die Elemente angezeigt wird.  Im **3D-Dom-** Bereich ist die **Farbtyp** Einstellung immer noch ein work in Progress, da einige Websites in der 3D-Ansicht eine schwierigere Darstellung der Bildschirm Struktur aufweisen.  
+Zusätzlich zur **heatmapfarbgebung-lila-zu-weiß**-, **heatmapfarbgebung-blau-zu-gelb**-, **heatmapfarbgebung-Rainbow-** und der **use-Hintergrundfarbe** , gibt es die **Verwendung der Bildschirm Textur**.  Die Bildschirm Textur fügt dem Debugvorgang Kontext hinzu, indem der Inhalt der Webseite direkt auf die Elemente angezeigt wird.  Im **3D-Dom-** Bereich ist die  **Farbtyp** Einstellung immer noch ein work in Progress, da einige Websites in der 3D-Ansicht eine schwierigere Darstellung der Bildschirm Struktur aufweisen.  
 
-## Kontakt mit dem Microsoft Edge devtools-Team  
+## Kontakt mit dem Microsoft Edge devtools-Team
 
 Das Microsoft Edge devtools-Team arbeitet auf der Benutzeroberfläche und fügt der 3D-Ansicht basierend auf den Fragen von Benutzern wie Ihnen weitere Funktionen hinzu.  Bitte senden Sie Ihr Feedback, um die Microsoft Edge-devtools zu verbessern.  Wählen Sie einfach das Feedback-Symbol im devtools aus, oder drücken Sie `Alt` + `Shift` + `I` \ (Windows \), oder drücken Sie `Option` + `Shift` + `I` \ (macOS \), und geben Sie alle Feedback-oder Funktionsanforderungen für das devtools ein.  
 

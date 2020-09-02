@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: d0a7a66a9f061d1a5d98e57269ffbcc0a0afefa4
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 4dd4d5eefd91e07ccd578547210b53c37386178f
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10985748"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986164"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -27,13 +27,7 @@ ms.locfileid: "10985748"
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-
-
-
-
 # Verwenden der Zuordnungs Instrumentation auf der Zeitachse  
-
-
 
 Verwenden Sie die **Zuweisungs Instrumentation auf der Zeitachse** , um Objekte zu finden, die nicht ordnungsgemäß von der Garbage Collection erfasst werden, und den Speicher weiterhin beizubehalten.  
 
@@ -44,7 +38,7 @@ Die **Zuweisungs Instrumentation auf Zeitachse** kombiniert die detaillierten Sc
 <!--todo: add profile memory problems (heap profiler) section when available  -->  
 <!--todo: add profile evaluate performance (Performance panel) section when available  -->  
 
-Bei der **Zuweisungs Instrumentation auf der Zeitachse** werden Heap-Snapshots in der gesamten Aufzeichnung (so häufig wie alle 50-ms! \) und ein letzter Snapshot am Ende der Aufzeichnung regelmäßig verwendet.  
+Die **Zuweisungs Instrumentation auf der Zeitachse** nimmt in regelmäßigen Abständen Heap-Snapshots (so häufig wie alle 50-ms \) und einen letzten Snapshot am Ende der Aufzeichnung an.  
 
 :::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png" alt-text="Zuordnungs Instrumentation auf Zeitachse" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png":::
    **Zuordnungs Instrumentation auf Zeitachse**  
@@ -55,7 +49,7 @@ Bei der **Zuweisungs Instrumentation auf der Zeitachse** werden Heap-Snapshots i
 
 ## Aktivieren der Zuordnungs Instrumentation auf der Zeitachse  
 
-Führen Sie die folgenden Schritte aus, um die **Zuweisungs Instrumentation auf Zeitachse**zu verwenden.  
+Führen Sie die folgenden Aktionen aus, um die **Zuweisungs Instrumentation auf der Zeitachse**zu verwenden.  
 
 1.  [Öffnen Sie das devtools][DevtoolsOpenIndex].  
 1.  Öffnen Sie den Bereich " **Speicher** ", und aktivieren Sie das Optionsfeld **Zuweisungs Instrumentation auf Zeitachse** .  
@@ -86,15 +80,13 @@ Sie können die Schieberegler in der obigen Zeitachse verwenden, um den jeweilig
 
 Wenn Sie auf ein bestimmtes Objekt im Heap klicken, wird im unteren Teil des Heap-Snapshots die Beibehaltungs Struktur angezeigt.  Wenn Sie den Beibehaltungs Pfad für das Objekt untersuchen, sollten Sie genügend Informationen erhalten, um zu verstehen, warum das Objekt nicht erfasst wurde, und Sie sollten die erforderlichen Codeänderungen vornehmen, um den unnötigen Verweis zu entfernen.  
 
-## Anzeigen der Speicherzuweisung nach Funktion   
+## Anzeigen der Speicherzuweisung nach Funktion  
 
-Sie können die Speicherzuweisung nach JavaScript-Funktion anzeigen.  Weitere Informationen finden Sie unter [untersuchen der Speicherzuweisung nach Funktion][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction] .  
+Sie können die Speicherzuweisung nach JavaScript-Funktion anzeigen.  Weitere Informationen finden Sie unter [untersuchen der Speicherzuweisung nach Funktion][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction].  
 
-<!--
-## Feedback   
+## Kontakt mit dem Microsoft Edge devtools-Team  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

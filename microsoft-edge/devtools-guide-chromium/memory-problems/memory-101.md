@@ -2,16 +2,16 @@
 title: Speicher Terminologie
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/03/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: e3373cf1475ec0eeaabcebf1a7f49505c7a3c1bb
-ms.sourcegitcommit: 50991a04c18283a8890ae33fcc3491c0476c7684
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+ms.openlocfilehash: cb258135b7b3c931116d84b1e9b7a548a2b58a6d
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "10611727"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986251"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -27,13 +27,7 @@ ms.locfileid: "10611727"
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-
-
-
-
-# Speicher Terminologie   
-
-
+# Speicher Terminologie  
 
 In diesem Abschnitt werden allgemeine Ausdrücke beschrieben, die in der Speicheranalyse verwendet werden, und Sie gelten für eine Vielzahl von Arbeitsspeicherprofil Tools für verschiedene Sprachen.  
 
@@ -43,20 +37,20 @@ Die hier beschriebenen Begriffe und Begriffe beziehen sich auf das [Speicher Pan
 
 Denken Sie an Arbeitsspeicher als ein Diagramm mit primitiven Typen \ (wie Zahlen und Zeichenfolgen \) und Objekten \ (assoziative Arrays \).  Sie wird möglicherweise visuell als Diagramm mit einer Reihe von miteinander verbundenen Punkten wie folgt dargestellt:  
 
-> ##### Abbildung1  
-> Visuelle Darstellung des Arbeitsspeichers  
->![Visuelle Darstellung des Arbeitsspeichers][ImageThinkGraph]  
+:::image type="complex" source="../media/memory-problems-thinkgraph.msft.png" alt-text="Visuelle Darstellung des Arbeitsspeichers" lightbox="../media/memory-problems-thinkgraph.msft.png":::
+   Visuelle Darstellung des Arbeitsspeichers  
+:::image-end:::  
 
 Ein Objekt kann Speicher auf zwei Arten enthalten:  
 
 *   Direkt vom Objekt.  
 *   Implizit durch Speichern von Verweisen auf andere Objekte, wodurch verhindert wird, dass diese Objekte automatisch von einem Garbage Collector entfernt werden \ (**GC** für Short \).  
 
-Bei der Arbeit mit dem [Speicherbereich][DevtoolsMemoryProblemsHeapSnapshots] in devtools \ (ein Tool zur Untersuchung von Speicherproblemen unter "Arbeitsspeicher" \) finden Sie möglicherweise einige verschiedene Informationsspalten.  Zwei, die sich hervorheben, sind eine **flache Größe** und eine **Beibehaltungs Größe**, doch was stellen diese dar?  
+Bei der Arbeit mit dem [Speicher][DevtoolsMemoryProblemsHeapSnapshots] Bereich in devtools \ (ein Tool zur Untersuchung von Speicherproblemen, die unter " **Arbeits**Speicher" gefunden wurden) finden Sie möglicherweise einige verschiedene Informationsspalten.  Zwei, die sich hervorheben, sind eine **flache Größe** und eine **Beibehaltungs Größe**, doch was stellen diese dar?  
 
-> ##### Abbildung2  
-> Flache und gespeicherte Größe  
->![Flache und gespeicherte Größe][ImageShallowRetained]  
+:::image type="complex" source="../media/memory-problems-shallow-retained.msft.png" alt-text="Flache und gespeicherte Größe" lightbox="../media/memory-problems-shallow-retained.msft.png":::
+   Flache und gespeicherte Größe  
+:::image-end:::  
 
 ### Flache Größe  
 
@@ -81,11 +75,11 @@ Es gibt viele interne GC-Stämme, von denen die meisten nicht für die Benutzer 
 >[!TIP]
 > Deaktivieren Sie die **Konsolen** Leiste, indem Sie die `clear()` Haltepunkte im **Quellen** Panel ausführen und deaktivieren, bevor Sie einen Heap-Schnappschuss im [Speicher Panel][DevtoolsMemoryProblemsHeapSnapshots]aufnehmen.
 
-Der Speicher Graph beginnt mit einem Stamm, der möglicherweise das `window` Objekt des Browsers oder das `Global` Objekt eines Node. js-Moduls ist.  Sie steuern nicht, wie dieses Stammobjekt Garbage Collection (GGT) ist.  
+Der Speicher Graph beginnt mit einem Stamm, der das Objekt des `window` Browsers oder das `Global` Objekt eines Node.js Moduls sein kann.  Sie steuern nicht, wie dieses Stammobjekt Garbage Collection (GGT) ist.  
 
-> ##### Abbildung 3  
-> Sie können nicht steuern, wie das Stammobjekt Garbage Collection ist \ (GGT \).  
->![Sie können nicht steuern, wie das Stammobjekt Garbage Collection (GGT) ist.][ImageDontControl]  
+:::image type="complex" source="../media/memory-problems-dontcontrol.msft.png" alt-text="Sie können nicht steuern, wie das Stammobjekt als Garbage Collection erfasst wird." lightbox="../media/memory-problems-dontcontrol.msft.png":::
+   Sie können nicht steuern, wie das Stammobjekt als Garbage Collection erfasst wird.  
+:::image-end:::  
 
 Was nicht über den Stamm erreichbar ist, erhält Garbage Collection \ (GGT \).  
 
@@ -99,17 +93,17 @@ Der Heap ist ein Netzwerk von miteinander verbundenen Objekten.  In der mathemat
 *   **Knoten** \ (oder **Objekte**\) werden mit dem Namen der **Konstruktorfunktion** gekennzeichnet, die zum Erstellen verwendet wurde.  
 *   **Kanten** werden mit den Namen der **Eigenschaften**gekennzeichnet.  
 
-Erfahren Sie [, wie Sie ein Profil mit dem Heap Profiler aufzeichnen][DevtoolsMemoryProblemsHeapSnapshots].  Einige der auffälligen Elemente, die in der Heap-Snapshot-Aufzeichnung im [Speicher Panel][DevtoolsMemoryProblemsHeapSnapshots] in [Abbildung 4](#figure-4) angezeigt werden, umfassen Abstand: die Entfernung vom Garbage Collector \ (GC \)-Stamm.  Wenn sich fast alle Objekte desselben Typs im gleichen Abstand befinden und einige wenige in größerer Entfernung sind, ist das eine Untersuchung Wert.  
+Erfahren Sie [, wie Sie ein Profil mit dem Heap Profiler aufzeichnen][DevtoolsMemoryProblemsHeapSnapshots].  In der folgenden Abbildung sind einige der auffälligen Dinge, die bei der Aufzeichnung des Heap-Schnappschusses im [Speicher Panel][DevtoolsMemoryProblemsHeapSnapshots] angezeigt werden können, Distance: der Abstand vom Garbage Collector \ (GC \)-Stammverzeichnis.  Wenn sich fast alle Objekte desselben Typs im gleichen Abstand befinden und einige wenige in größerer Entfernung sind, ist das eine Untersuchung Wert.  
 
-> ##### Abbildung4  
-> Abstand vom Stamm  
->![Abstand vom Stamm][ImageRoot]  
+:::image type="complex" source="../media/memory-problems-root.msft.png" alt-text="Abstand vom Stamm" lightbox="../media/memory-problems-root.msft.png":::
+   Abstand vom Stamm  
+:::image-end:::  
 
 ## Dominators  
 
 Dominator-Objekte bestehen aus einer Struktur, da jedes Objekt genau einen Dominator hat.  Ein Dominator eines Objekts kann keine direkten Bezüge auf ein Objekt aufweisen, das es dominiert; Das bedeutet, dass die Struktur des Dominators keine Spanning-Struktur des Diagramms ist.  
 
-[Abbildung 5](#figure-5):  
+In der folgenden Abbildung ist die folgende Anweisung wahr.  
 
 *   Knoten 1 dominiert Knoten 2  
 *   Knoten 2 dominiert die Knoten 3, 4 und 6  
@@ -117,15 +111,15 @@ Dominator-Objekte bestehen aus einer Struktur, da jedes Objekt genau einen Domin
 *   Knoten 5 dominiert Knoten 8  
 *   Knoten 6 dominiert Knoten 7  
 
-> ##### Abbildung5  
-> Struktur des Dominators  
->![Struktur des Dominators][ImageDominatorsSpanning]  
+:::image type="complex" source="../media/memory-problems-dominatorsspanning.msft.png" alt-text="Struktur des Dominators" lightbox="../media/memory-problems-dominatorsspanning.msft.png":::
+   Struktur des Dominators  
+:::image-end:::  
 
-In [Abbildung 6](#figure-6)ist Knoten `#3` der Dominator von `#10` , aber `#7` es gibt auch in jedem einfachen Pfad vom Garbage Collector \ (GC \) bis `#10` .  Daher ist ein Objekt b ein Dominator eines Objekts a, wenn b in jedem einfachen Pfad vom Stamm zum Objekt a vorhanden ist.  
+In der folgenden Abbildung `#3` ist der Knoten der Dominator von `#10` , aber er ist `#7` auch in jedem einfachen Pfad vom Garbage Collector \ (GC \) bis `#10` .  Daher ist ein Objekt b ein Dominator eines Objekts a, wenn b in jedem einfachen Pfad vom Stamm zum Objekt a vorhanden ist.  
 
-> ##### Abbildung6  
-> Animierte Dominator-Illustration  
->![Animierte Dominator-Illustration][ImageDominators]  
+:::image type="complex" source="../media/memory-problems-dominators.msft.gif" alt-text="Animierte Dominator-Illustration" lightbox="../media/memory-problems-dominators.msft.gif":::
+   Animierte Dominator-Illustration  
+:::image-end:::  
 
 ## V8-Besonderheiten  
 
@@ -170,29 +164,22 @@ Wenn eine geringe Anzahl von Eigenschaften vorhanden ist, werden die Eigenschaft
 
 **Map** ist ein Objekt, das sowohl die Art des Objekts als auch das Layout beschreibt. Karten werden beispielsweise verwendet, um implizite Objekthierarchien für den [schnellen Eigenschaftenzugriff][V8FastProperties]zu beschreiben.  
 
-
 ### Objektgruppen  
 
-Jede Gruppe **systemeigene Objekte** besteht aus Objekten, die gegenseitige Bezüge aufeinander abhalten.  Nehmen Sie beispielsweise eine DOM-Unterstruktur in Frage, bei der jeder Knoten über einen Link zum relativen übergeordneten Element und Links zum nächsten untergeordneten Element und zum nächsten nebengeordneten Element verfügt, wodurch ein verbundenes Diagramm entsteht.  Beachten Sie, dass systemeigene Objekte nicht im JavaScript-Heap dargestellt werden, daher haben systemeigene Objekte die Größe 0 (null). Stattdessen werden Wrapper Objekte erstellt.  
+Jede Gruppe **systemeigene Objekte** besteht aus Objekten, die gegenseitige Bezüge aufeinander abhalten.  Nehmen Sie beispielsweise eine DOM-Unterstruktur in Frage, bei der jeder Knoten über einen Link zum relativen übergeordneten Element und Links zum nächsten untergeordneten Element und zum nächsten nebengeordneten Element verfügt, wodurch ein verbundenes Diagramm entsteht.  
+
+> [!NOTE]
+> Systemeigene Objekte werden nicht im JavaScript-Heap dargestellt.  Das Fehlen einer Darstellung ist der Grund dafür, dass systemeigene Objekte die Größe 0 aufweisen. Stattdessen werden Wrapper Objekte erstellt.  
 
 Jedes Wrapperobjekt enthält einen Verweis auf das entsprechende systemeigene Objekt für die Umleitung von Befehlen an ihn.  Eine Objektgruppe enthält wiederum Wrapper Objekte.  Dadurch wird jedoch kein nicht sammelbarer Zyklus erstellt, da der Garbage Collector \ (GC \) intelligent genug ist, Objektgruppen freizugeben, deren Wrapper nicht mehr referenziert werden. Aber zu vergessen, einen einzelnen Wrapper freizugeben, enthält die gesamte Gruppe und zugehörige Wrapper.  
 
-<!--## Feedback   -->  
+## Kontakt mit dem Microsoft Edge devtools-Team  
 
-
-
-<!-- image links -->  
-
-[ImageThinkGraph]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-thinkgraph.msft.png "Abbildung 1: visuelle Darstellung des Arbeitsspeichers"  
-[ImageShallowRetained]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-shallow-retained.msft.png "Abbildung 2: flache und gespeicherte Größe"  
-[ImageDontControl]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-dontcontrol.msft.png "Abbildung 3: Sie können nicht steuern, wie das Stammobjekt als Garbage Collection (GGT) festgestellt wird."  
-[ImageRoot]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-root.msft.png "Abbildung 4: Abstand vom Stamm"  
-[ImageDominatorsSpanning]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-dominatorsspanning.msft.png "Abbildung 5: Dominator-Struktur"  
-[ImageDominators]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-dominators.msft.gif "Abbildung 6: animierte Dominator-Abbildung"  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsMemoryProblemsHeapSnapshots]: /microsoft-edge/devtools-guide-chromium/media/memory-problems/heap-snapshots "/microsoft-edge/devtools-guide-chromium/media/memory-problems"  
+[DevtoolsMemoryProblemsHeapSnapshots]: ./heap-snapshots.md "Aufzeichnen von Heap-Snapshots | Microsoft docs"  
 
 [V8FastProperties]: https://v8.dev/blog/fast-properties "Fast-Eigenschaften in V8 | V8"  
 

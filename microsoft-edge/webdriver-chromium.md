@@ -3,17 +3,17 @@ description: Erfahren Sie, wie Sie Ihre Website oder app in Microsoft Edge teste
 title: WebDriver (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/08/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: Microsoft Edge, Web-Entwicklung, HTML, CSS, JavaScript, Entwickler, WebDriver, Selen, testen, Tools, Automatisierung, Test
-ms.openlocfilehash: c60095373be337307225f28d320cae19174531a7
-ms.sourcegitcommit: 1b5dfc5a2c7130b3abc6b4545fcaaae0b0897148
+ms.openlocfilehash: 8170820d7809f7c4c07f21c815f17a9438016305
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "10757580"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986213"
 ---
 # Verwenden von WebDriver (Chrom) für die Testautomatisierung  
 
@@ -41,7 +41,7 @@ Führen Sie die folgenden Schritte aus, um mit der Automatisierung von Tests zu 
     
 1.  Navigieren Sie zur Seite [Microsoft Edge Driver Downloads][MicrosoftDeveloperEdgeToolsWebdriverDownloads] , und laden Sie den Treiber herunter, der der Edge-Versionsnummer entspricht.  
     
-    :::image type="complex" source="./media/webdriver-chromium/edge-driver-install.png" alt-text="Der Abschnitt Downloads auf der Seite Microsoft Edge-Treiber":::
+    :::image type="complex" source="./media/webdriver-chromium/edge-driver-install.png" alt-text="Der Abschnitt "Downloads" auf der Seite "Microsoft Edge-Treiber"":::
        Abbildung2.  Der Abschnitt "Downloads" auf der Seite " [Microsoft Edge-Treiber][MicrosoftDeveloperEdgeToolsWebdriver] "
     :::image-end:::  
     
@@ -325,8 +325,8 @@ Weitere Informationen finden Sie unter [Container im docker-Hub][DockerHubMsedge
 Das Microsoft Edge-Team ist begierig, Ihr Feedback zur Verwendung von WebDriver, Selen und Microsoft Edge zu hören.  Verwenden Sie das **Feedback** -Symbol in der Microsoft Edge devtools-oder Tweet- [@EdgeDevTools][TwitterTweetEdgeDevTools] , damit das Team weiß, was Sie denken.  
 
 
-:::image type="complex" source="./devtools-guide-chromium/media/devtools-feedback.png" alt-text="Das Feedback Symbol in der Microsoft Edge-devtools":::
-   Das **Feedback** Symbol in der Microsoft Edge-devtools  
+:::image type="complex" source="./devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="Das Symbol "Feedback senden" im Microsoft Edge-devtools":::
+   Das Symbol " **Feedback senden** " im Microsoft Edge-devtools  
 :::image-end:::  
 
 <!-- image links -->  

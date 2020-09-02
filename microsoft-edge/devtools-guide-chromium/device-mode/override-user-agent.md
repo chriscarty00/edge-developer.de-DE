@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 0ffea8f515a2d4ba0fa16b447a7d204c335dc7bb
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 0dedfcd8d00035ed1c4c02ef8a2ec0f1643d0687
+ms.sourcegitcommit: 2fa65cca74c5214601900579c0ce9f946ad8a27e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10984994"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10991163"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,13 +27,7 @@ ms.locfileid: "10984994"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Überschreiben der Benutzer-Agent-Zeichenfolge von Microsoft Edge devtools   
-
-
+# Überschreiben der Benutzer-Agent-Zeichenfolge von Microsoft Edge devtools  
 
 So überschreiben Sie die Zeichenfolge des [Benutzer-Agents][MDNUserAgent] von Microsoft Edge devtools:  
 
@@ -51,12 +45,10 @@ So überschreiben Sie die Zeichenfolge des [Benutzer-Agents][MDNUserAgent] von M
     :::image-end:::  
     
 1.  Wählen Sie eine Benutzer-Agent-Zeichenfolge aus der Liste aus, oder geben Sie eine eigene benutzerdefinierte Zeichenfolge ein.  
-    
-<!--  
-## Feedback   
 
+## Kontakt mit dem Microsoft Edge devtools-Team  
 
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

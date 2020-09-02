@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 190890b43cff97ae0f379426b68a688534ebda95
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: a338e78957d664a4552e5882f1ae7882f0eee89a
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10983649"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986087"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,13 +27,7 @@ ms.locfileid: "10983649"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Barrierefreiheits Referenz   
-
-
+# Barrierefreiheits Referenz  
 
 Diese Seite ist eine umfassende Referenz zu Barrierefreiheitsfeatures in Microsoft Edge devtools.  Sie ist für Web-Entwickler gedacht, die:  
 
@@ -44,7 +38,7 @@ Dieser Bezug soll Ihnen helfen, alle in devtools verfügbaren Tools zu finden, d
 
 Weitere Informationen finden Sie unter [Navigieren in Microsoft Edge devtools mit Hilfstechnologien][DevtoolsAccessibilityNavigation] , wenn Sie Hilfe beim Navigieren in devtools mit einer Hilfstechnologie wie einer Bildschirmsprachausgabe suchen.  
 
-## Übersicht über Barrierefreiheitsfeatures in Microsoft Edge devtools   
+## Übersicht über Barrierefreiheitsfeatures in Microsoft Edge devtools  
 
 In diesem Abschnitt wird erläutert, wie sich devtools in Ihr gesamtes Barrierefreiheits-Toolkit einfügt.  
 
@@ -57,7 +51,7 @@ Im Allgemeinen sollte devtools Sie bei der Behebung von Fehlern in Bezug auf Fra
 
 <!--[AccessibilityReview]: /web/fundamentals/accessibility/how-to-review  -->  
 
-## Überwachen der Barrierefreiheit einer Seite   
+## Überwachen der Barrierefreiheit einer Seite  
 
 > [!NOTE]
 > Das **Überwachungs** Panel enthält Links zu Inhalten, die auf Websites von Drittanbietern gehostet werden.  Microsoft ist nicht verantwortlich und hat keine Kontrolle über den Inhalt dieser Websites und alle Daten, die möglicherweise erfasst werden.  
@@ -65,8 +59,8 @@ Im Allgemeinen sollte devtools Sie bei der Behebung von Fehlern in Bezug auf Fra
 Im Allgemeinen können Sie mithilfe des Überwachungs Panels feststellen, ob:  
 
 *   Eine Seite ist für Bildschirmsprachausgaben richtig markiert.  
-*   Die Textelemente auf einer Seite verfügen über ein ausreichendes Kontrastverhältnis. Siehe auch [Anzeigen des Kontrastverhältnisses eines Textelements in der Farbauswahl](#view-the-contrast-ratio-of-a-text-element-in-the-color-picker).  
-    
+*   Die Textelemente auf einer Seite verfügen über ein ausreichendes Kontrastverhältnis.  Weitere Informationen finden Sie unter [Anzeigen des Kontrastverhältnisses eines Textelements in der Farbauswahl](#view-the-contrast-ratio-of-a-text-element-in-the-color-picker).  
+
 So überprüfen Sie eine Seite:  
 
 1.  Wechseln Sie zu der URL, die Sie überwachen möchten.  
@@ -95,13 +89,13 @@ So überprüfen Sie eine Seite:
        Weitere Informationen zu einer Überwachung  
     :::image-end:::  
     
-1.  Klicken Sie auf **Weitere Informationen** , um die Dokumentation dieser Überwachung anzuzeigen.
+1.  Klicken Sie auf **Weitere Informationen** , um die Dokumentation dieser Überwachung anzuzeigen.  
     
     :::image type="complex" source="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png" alt-text="Anzeigen der Dokumentation einer Überwachung" lightbox="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png":::
        Anzeigen der Dokumentation einer Überwachung  
     :::image-end:::  
     
-### Siehe auch: aXe Extension   
+### Siehe auch: aXe Extension  
 
 Möglicherweise bevorzugen Sie die [Axt-Erweiterung][ChromeWebStoreAxe] anstelle des **Überwachungs** Panels.  
 Die aXe-Erweiterung bietet im Allgemeinen dieselben Informationen, da es sich um das zugrunde liegende Modul handelt, das das Überwachungs Panel ausmacht.  Die aXe-Erweiterung hat eine andere Benutzeroberfläche und beschreibt die Überwachungen etwas anders.  
@@ -111,7 +105,7 @@ Ein Vorteil, den die Axt-Erweiterung über das **Überwachungs** Panel hat, best
    Die Axt-Erweiterung  
 :::image-end:::  
 
-## Der Bereich "Barrierefreiheit"   
+## Der Bereich "Barrierefreiheit"  
 
 Im Bereich " **Barrierefreiheit** " werden die Barrierefreiheits Struktur, Aria-Attribute und berechnete Barrierefreiheitseigenschaften von DOM-Knoten angezeigt.  
 
@@ -119,13 +113,13 @@ So öffnen Sie den Bereich **Barrierefreiheit** :
 
 1.  Klicken Sie auf die Registerkarte **Elemente** .  
 1.  Wählen Sie in der **DOM-Struktur**das Element aus, das Sie überprüfen möchten.  
-1.  Klicken Sie auf die Registerkarte **Barrierefreiheit** .  Diese Registerkarte ist möglicherweise **More Tabs** hinter der ![ Schaltfläche weitere Registerkarten weitere Tabstopps verborgen ][ImageMoreTabsIcon] .  
+1.  Klicken Sie auf die Registerkarte **Barrierefreiheit** .  Diese Registerkarte ist möglicherweise hinter der Schaltfläche **weitere Registerkarten** \ ( ![ weitere Registerkarten ][ImageMoreTabsIcon] \) verborgen.  
 
 :::image type="complex" source="../media/accessibility-elements-accessibility.msft.png" alt-text="Überprüfen des H1-Elements der devtools-Homepage im Bereich "Barrierefreiheit"" lightbox="../media/accessibility-elements-accessibility.msft.png":::
    Überprüfen des `h1` Elements der devtools-Homepage im Bereich " **Barrierefreiheit** "  
 :::image-end:::  
 
-### Anzeigen der Position eines Elements in der Barrierefreiheits Struktur   
+### Anzeigen der Position eines Elements in der Barrierefreiheits Struktur  
 
 Die [Barrierefreiheits Struktur][MDNAccessibilityTree] ist eine Teilmenge der DOM-Struktur.  Sie enthält nur Elemente aus der DOM-Struktur, die für die Anzeige des Inhalts einer Seite in einer Sprachausgabe relevant und nützlich sind.  
 
@@ -135,7 +129,7 @@ Die [Barrierefreiheits Struktur][MDNAccessibilityTree] ist eine Teilmenge der DO
    Abschnitt " **Barrierefreiheits Struktur** "  
 :::image-end:::  
 
-### Anzeigen der Aria-Attribute eines Elements   
+### Anzeigen der Aria-Attribute eines Elements  
 
 Aria-Attribute stellen sicher, dass Bildschirmsprachausgaben alle Informationen enthalten, die Sie benötigen, um den Inhalt einer Seite ordnungsgemäß darzustellen.  
 
@@ -145,7 +139,7 @@ Zeigen Sie die Aria-Attribute eines Elements im [Bereich "Barrierefreiheit"](#th
    Der Abschnitt " **Aria-Attribute** "  
 :::image-end:::  
 
-### Anzeigen der berechneten Barrierefreiheitseigenschaften eines Elements   
+### Anzeigen der berechneten Barrierefreiheitseigenschaften eines Elements  
 
 > [!NOTE]
 > Wenn Sie nach berechneten CSS-Eigenschaften suchen, lesen Sie die [Registerkarte berechnet][DevtoolsCssReferenceViewActuallyAppliedElements].  
@@ -158,9 +152,10 @@ Zeigen Sie die berechneten Barrierefreiheitseigenschaften eines Elements im [Ber
    Abschnitt " **berechnete Eigenschaften** " im Bereich " **Barrierefreiheit** "  
 :::image-end:::  
 
-## Anzeigen des Kontrastverhältnisses eines Textelements in der Farbauswahl   
+## Anzeigen des Kontrastverhältnisses eines Textelements in der Farbauswahl  
 
 Einige Personen mit Sehbehinderungen sehen keine Bereiche als sehr hell oder sehr dunkel.  Alles neigt dazu, bei ungefähr der gleichen Helligkeit zu erscheinen, wodurch es schwierig ist, Konturen und Kanten zu unterscheiden.  
+
 Das Kontrastverhältnis misst den Helligkeitsunterschied zwischen Vordergrund und Hintergrund des Texts.  Wenn Ihr Text ein kontrastarmes Verhältnis hat, können diese sehbehinderten Benutzer Ihre Website buchstäblich als einen leeren Bildschirm sehen.  
 
 Mit der Farbauswahl können Sie überprüfen, ob Ihr Text die empfohlenen Kontrast Raten erfüllt:  
@@ -169,7 +164,7 @@ Mit der Farbauswahl können Sie überprüfen, ob Ihr Text die empfohlenen Kontra
 1.  Wählen Sie in der **DOM-Struktur**das Textelement aus, das Sie überprüfen möchten.  
     
     :::image type="complex" source="../media/accessibility-elements-paragraph-highlight.msft.png" alt-text="Überprüfen eines Absatzes in der DOM-Struktur" lightbox="../media/accessibility-elements-paragraph-highlight.msft.png":::
-       Überprüfen eines Absatzes in der DOM-Struktur  
+       Überprüfen eines Absatzes in der **DOM-Struktur**  
     :::image-end:::  
     
 1.  Klicken Sie im Bereich **Formatvorlagen** auf das Farbquadrat neben dem `color` Wert des Elements.  
@@ -178,7 +173,7 @@ Mit der Farbauswahl können Sie überprüfen, ob Ihr Text die empfohlenen Kontra
        Die `color` Eigenschaft des Elements  
     :::image-end:::  
     
-1.  Überprüfen Sie den Abschnitt **Kontrastverhältnis** der Farbauswahl.  Ein Häkchen bedeutet, dass das Element die [minimale Empfehlung][W3CContrastMinimum]erfüllt.  Zwei Kontrollkästchen bedeuten, dass die [Erweiterte Empfehlung][W3CContrastEnhanced]erfüllt ist.
+1.  Überprüfen Sie den Abschnitt **Kontrastverhältnis** der Farbauswahl.  Ein Häkchen bedeutet, dass das Element die [minimale Empfehlung][W3CContrastMinimum]erfüllt.  Zwei Kontrollkästchen bedeuten, dass die [Erweiterte Empfehlung][W3CContrastEnhanced]erfüllt ist.  
     
     :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png" alt-text="Der Abschnitt "Kontrastverhältnis" der Farbauswahl zeigt zwei Häkchen und einen Wert von 13,97." lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png":::
        Der Abschnitt " **Kontrastverhältnis** " der Farbauswahl zeigt zwei Häkchen und einen Wert von `13.97`  
@@ -187,12 +182,12 @@ Mit der Farbauswahl können Sie überprüfen, ob Ihr Text die empfohlenen Kontra
 1.  Klicken Sie auf den Abschnitt **Kontrastverhältnis** , um weitere Informationen anzuzeigen.  Eine Zeile wird in der visuellen Auswahl oben in der Farbauswahl angezeigt.  Wenn die aktuelle Farbe Empfehlungen erfüllt, entspricht alles, was auf der gleichen Seite der Zeile steht, auch Empfehlungen.  Wenn die aktuelle Farbe keine Empfehlungen erfüllt, entspricht alles auf der gleichen Seite auch nicht den Empfehlungen.  
     
     :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png" alt-text="Die Zeile "Kontrastverhältnis" in der visuellen Auswahl" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png":::
-       Die Zeile "Kontrastverhältnis" in der visuellen Auswahl  
+       Die Zeile " **Kontrastverhältnis** " in der visuellen Auswahl  
     :::image-end:::  
     
 <!--## Feedback   -->  
 
-
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 
@@ -200,7 +195,7 @@ Mit der Farbauswahl können Sie überprüfen, ob Ihr Text die empfohlenen Kontra
 
 <!-- links -->  
 
-[DevtoolsAccessibilityNavigation]: ./navigation.md "Navigieren in Microsoft Edge devtools mit Hilfstechnologien | Microsft-Dokumente"  
+[DevtoolsAccessibilityNavigation]: ./navigation.md "Navigieren in Microsoft Edge devtools mit Hilfstechnologien | Microsoft docs"  
 [DevtoolsCssReferenceViewActuallyAppliedElements]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "Anzeigen nur des CSS, das tatsächlich auf ein Element angewendet wird-CSS-Referenz | Microsoft docs"  
 
 [ChromeWebStoreAxe]: https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US "Axe – Web-Barrierefreiheits Tests – Chrome Web Store"  

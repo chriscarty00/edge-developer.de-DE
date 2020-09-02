@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: c791a4af4446a1209d6db77ca4787fee80d45e5c
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 35aa864c20def5f5cd11979d6239e8316c1acbca
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10981771"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986143"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -27,14 +27,7 @@ ms.locfileid: "10981771"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Zuordnen von vorverarbeitetem Code zu Quellcode   
-
-
-
+# Zuordnen von vorverarbeitetem Code zu Quellcode  
 
 Halten Sie den clientseitigen Code lesbar und debugfähigen, selbst nachdem Sie ihn kombiniert, minify oder kompiliert haben.  Verwenden Sie Quell Karten, um Ihren Quellcode dem kompilierten Code zuzuordnen.  
 
@@ -78,7 +71,7 @@ Beim Ausführen von Quell Karten in devtools sollten Sie feststellen, dass das J
 Quell Karten sind standardmäßig aktiviert. <!--\(as of Microsoft Edge 39\)-->, aber wenn Sie diese überprüfen oder aktivieren möchten, Öffnen Sie zuerst devtools, klicken Sie auf die Schaltfläche **anpassen und Steuern devtools** \ ( `...` \), und wählen Sie **Einstellungen**aus.  Aktivieren Sie im Bereich **Einstellungen** unter **Quellen**die **Option JavaScript-Quell Karten aktivieren**.  Sie können auch die **Option "CSS-Quell Karten aktivieren" aktivieren**.  
 
 :::image type="complex" source="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png" alt-text="Quell Karten aktivieren" lightbox="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png":::
-   Quell Karten aktivieren  
+   **Aktivieren von JavaScript-Quell Karten**  
 :::image-end:::  
 
 ### Debuggen mit Quell Karten  
@@ -89,7 +82,7 @@ Wenn Sie Ihren Code und die Quell Karten Debuggen aktiviert haben, werden Quell 
 1.  Wenn Sie Code durchlaufen \ (die Links in der Aufrufliste sollten die ursprüngliche Quelldatei öffnen \)  
     
 <!--todo: add link to debugging your code when section is available -->  
-<!--[DebugBreakpointsStepCode]: https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/debug/breakpoints/step-code ""  -->  
+<!--[DebugBreakpointsStepCode]: ../debug/breakpoints/step-code.md ""  -->  
 
 ## @sourceURL und DisplayName  
 
@@ -104,8 +97,8 @@ Indem Sie den folgenden speziellen Kommentar in Ihren Code einbeziehen, der EVAL
 Navigieren Sie zur folgenden Seite.  
 
 *   [Demo][CssNinjaDemoSourceMapping]
-    
-Führen Sie die folgenden Schritte aus.  
+
+Führen Sie die folgenden Aktionen aus.  
 
 1.  Öffnen Sie das devtools, und wechseln Sie zum **Quellen** Panel.  
 1.  Geben Sie einen Dateinamen in das Eingabefeld " **Name Your Code:** " ein.  
@@ -115,25 +108,31 @@ Führen Sie die folgenden Schritte aus.
 Wenn Sie die Untergruppe " **Quellen** " erweitern, wird nun eine neue Datei mit dem benutzerdefinierten Dateinamen angezeigt, den Sie zuvor eingegeben haben.  Wenn Sie zum Anzeigen dieser Datei doppelklicken, enthält Sie das kompilierte JavaScript für die ursprüngliche Quelle.  In der letzten Zeile ist jedoch ein Kommentar, `// @sourceURL` der die ursprüngliche Quelldatei angibt.  Dies kann Ihnen beim Debuggen beim Arbeiten mit sprach Abstraktionen helfen.  
 
 :::image type="complex" source="../media/javascript-sources-page-coffeeeeeeee.msft.png" alt-text="Arbeiten mit sourceURL" lightbox="../media/javascript-sources-page-coffeeeeeeee.msft.png":::
-   Arbeiten mit sourceURL  
+   Arbeiten mit `sourceURL`  
 :::image-end:::  
 
-<!--  
-## Feedback   
+## Kontakt mit dem Microsoft Edge devtools-Team
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
 [BabelJS]: https://babeljs.io "Babel ist ein JavaScript-Compiler"  
+
 [CoffeeScriptMain]: https://coffeescript.org "CoffeeScript"  
+
 [CssNinjaDemoSourceMapping]: https://www.thecssninja.com/demo/source_mapping/compile.html "Ein einfaches Beispiel für//# sourceURL eval Naming"  
+
 [DartMain]: https://www.dartlang.org "Dart-Programmiersprache"  
+
 [GitHubGoogleClosureCompiler]: https://github.com/google/closure-compiler "Google/Closure-Compiler | GitHub"  
+
 [GitHubMishooUglifyJS]: https://github.com/mishoo/UglifyJS "mishoo/UglifyJS | GitHub"  
+
 [GitHubWikiSourceMapsLanguagesTools]: https://github.com/ryanseddon/source-map/wiki/Source-maps:-languages,-tools-and-other-info "Quell Karten: Sprachen, Tools und andere Informationen | GitHub-wiki"  
+
 [GitHubWikiGoogleTraceurCompiler]: https://github.com/google/traceur-compiler/wiki/Getting-Started "Erste Schritte-Google/Traceur-Compiler | GitHub-wiki"  
+
 [TypeScriptMain]: https://www.typescriptlang.org "TypeScript"  
 
 > [!NOTE]

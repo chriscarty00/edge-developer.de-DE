@@ -2,16 +2,16 @@
 title: Nachverfolgen, welches Element den Fokus hat
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 04091ddf7986b8554e4f615a92e0303446048eaa
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 5261824b725384240453f216071255494e88e98d
+ms.sourcegitcommit: 2fa65cca74c5214601900579c0ce9f946ad8a27e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10981750"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10991175"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,15 +27,11 @@ ms.locfileid: "10981750"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
+# Nachverfolgen, welches Element den Fokus hat  
 
+Angenommen, Sie testen die Barrierefreiheit der Tastaturnavigation auf einer Seite.  Beim Navigieren auf der Seite mit dem `Tab` Schlüssel verschwindet der Fokus Ring manchmal, da das Element mit dem Fokus ausgeblendet ist.  
 
-
-
-# Nachverfolgen, welches Element den Fokus hat   
-
-
-
-Angenommen, Sie testen die Barrierefreiheit der Tastaturnavigation auf einer Seite.  Beim Navigieren auf der Seite mit dem `Tab` Schlüssel verschwindet der Fokus Ring manchmal, da das Element mit dem Fokus ausgeblendet ist.  So überwachen Sie das Focused-Element in devtools:  
+Führen Sie die folgenden Aktionen aus, um das fokussierte Element in devtools zu verfolgen.  
 
 1.  Öffnen Sie die **Konsole**.  
 1.  Klicken Sie auf **Live Ausdruck erstellen** \ ( ![ Live Ausdruck erstellen ][ImageCreateIcon] \).  
@@ -44,19 +40,20 @@ Angenommen, Sie testen die Barrierefreiheit der Tastaturnavigation auf einer Sei
        Erstellen eines Live Ausdrucks  
     :::image-end:::  
     
-1.  Geben Sie `document.activeElement` ein.
-1.  Klicken Sie auf eine Stelle außerhalb der **Live Ausdruck** -Benutzeroberfläche, um Sie zu speichern.
+1.  Geben Sie `document.activeElement` ein.  
+1.  Klicken Sie auf eine Stelle außerhalb der **Live Ausdruck** -Benutzeroberfläche, um Sie zu speichern.  
     
 Der unten angezeigte Wert `document.activeElement` ist das Ergebnis des Ausdrucks.  
+
 Da dieser Ausdruck immer das Focused-Element darstellt, haben Sie jetzt die Möglichkeit, immer nachzuverfolgen, welches Element den Fokus hat.  
 
 *   Zeigen Sie mit der Maus auf das Ergebnis, um das fokussierte Element im Viewport zu markieren.  
 *   Klicken Sie mit der rechten Maustaste auf das Ergebnis, und wählen Sie **im Element Fenster** anzeigen aus, um das Element in der DOM- **Struktur im Element Panel anzuzeigen** .  
 *   Klicken Sie mit der rechten Maustaste auf das Ergebnis, und wählen Sie **als globale Variable speichern** aus, um einen Variablen Bezug auf den Knoten zu erstellen, den Sie in der **Konsole**verwenden können.  
-    
-<!--## Feedback   -->  
 
+## Kontakt mit dem Microsoft Edge devtools-Team  
 
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 
@@ -66,7 +63,7 @@ Da dieser Ausdruck immer das Focused-Element darstellt, haben Sie jetzt die Mög
 
 > [!NOTE]
 > Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
-> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/accessibility/focus) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools & Lighthouse) erstellt.  
+> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/accessibility/focus) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
 
 [![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  

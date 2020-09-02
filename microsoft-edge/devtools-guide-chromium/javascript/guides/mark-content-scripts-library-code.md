@@ -2,16 +2,16 @@
 title: Markieren von Inhaltsskripts als Bibliothekscode
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 410a74b906e3b1ff7ff98b6d1791e057e4fa89c4
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: a5101cb8561a49ce6c271398f4c1a828984da9e3
+ms.sourcegitcommit: 2fa65cca74c5214601900579c0ce9f946ad8a27e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10982803"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10991161"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,17 +27,11 @@ ms.locfileid: "10982803"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Markieren von Inhalts Skripts als Bibliothekscode   
-
-
+# Markieren von Inhalts Skripts als Bibliothekscode  
 
 Wenn Sie den Quellcode **-Panel von** Microsoft Edge devtools verwenden, um Code zu [durchlaufen][DevToolsJavascriptStepThroughCode], können Sie manchmal auf Code pausieren, den Sie nicht erkennen.  Wahrscheinlich haben Sie den Code für eine der installierten Microsoft-Edge-Erweiterungen angehalten.  Führen Sie die folgenden Schritte aus, um den Erweiterungscode nicht zu unterbrechen.  
 
-1.  Öffnen Sie devtools, wählen Sie **anpassen und Steuern von devtools** \ ( `...` \) aus, und klicken Sie auf **Einstellungen**.  Sie können die **Einstellungen** auch öffnen, indem Sie auf klicken `F1` .  
+1.  Öffnen Sie devtools, wählen Sie **anpassen und Steuern von devtools** \ ( `...` \) aus, und wählen Sie **Einstellungen**aus.  Sie können die **Einstellungen** auch öffnen, indem Sie auswählen `F1` .  
 
 1.  Wählen Sie die Registerkarte " **Bibliothekscode** " aus, um den Abschnitt " **Framework Library Code** " von **Settings**zu öffnen.  
 1.  Aktivieren Sie das Kontrollkästchen **Inhalts Skripts als Bibliothekscode markieren** .  
@@ -46,11 +40,9 @@ Wenn Sie den Quellcode **-Panel von** Microsoft Edge devtools verwenden, um Code
        Aktivieren des Kontrollkästchens " **Inhalts Skripts als Bibliothekscode markieren** "  
     :::image-end:::  
     
-<!--  
-## Feedback   
+## Kontakt mit dem Microsoft Edge devtools-Team  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
@@ -58,7 +50,7 @@ Wenn Sie den Quellcode **-Panel von** Microsoft Edge devtools verwenden, um Code
 
 > [!NOTE]
 > Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
-> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/javascript/guides/blackbox-chrome-extension-scripts) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools & Lighthouse) erstellt.  
+> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/javascript/guides/blackbox-chrome-extension-scripts) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
 
 [![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  

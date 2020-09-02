@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: bd46489d8a8a3fddbff60618b4997784294cccff
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 183482660ed5fc50862dfd2cce7209384fee93e3
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10985439"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986171"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -27,13 +27,7 @@ ms.locfileid: "10985439"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Aufzeichnen von Heap-Snapshots   
-
-
+# Aufzeichnen von Heap-Snapshots  
 
 Erfahren Sie, wie Sie Heap-Snapshots mit dem Microsoft Edge devtools-Heap Profiler aufzeichnen und Speicherverluste finden.  
 
@@ -97,7 +91,7 @@ Um zwischen den Ansichten zu wechseln, verwenden Sie die Auswahl oben in der Ans
 Zunächst wird in der Zusammenfassungsansicht eine Momentaufnahme geöffnet, in der die Objektergebnisse angezeigt werden, die möglicherweise erweitert werden, um Instanzen anzuzeigen:  
 
 :::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png" alt-text="Zusammenfassungsansicht" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png":::
-   Zusammenfassungsansicht  
+   **Zusammenfassungs** Ansicht  
 :::image-end:::  
 
 Einträge auf oberster Ebene sind "Total"-Zeilen.  
@@ -118,7 +112,7 @@ Beachten Sie, dass gelbe Objekte JavaScript-Bezüge aufweisen und rote Objekte g
 **Was entsprechen die verschiedenen Konstruktoren \ (Group \)-Einträge im Heap Profiler?**  
 
 :::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png" alt-text="Konstruktorgruppen" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png":::
-   Konstruktorgruppen  
+   **Konstruktorgruppen**  
 :::image-end:::  
 
 | Konstruktor \ (Gruppe \) Eintrag | Beschreibung |  
@@ -256,11 +250,9 @@ Weitere Informationen zu Dom-Lecks und Grundlagen der Speicheranalyse finden Sie
 
 <!--todo: add heap profiling dom leaks section when available  -->  
 
-<!--  
-## Feedback   
+## Kontakt mit dem Microsoft Edge devtools-Team  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

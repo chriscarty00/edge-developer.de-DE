@@ -3,17 +3,17 @@ description: Verwenden von Puppenspieler zum Automatisieren und testen in Micros
 title: Puppeteer
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/27/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: Microsoft Edge, Web-Entwicklung, Entwickler, Tools, Automatisierung, Test
-ms.openlocfilehash: ccca46426a006651a417a22e54c8b528834b5f81
-ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
+ms.openlocfilehash: bef3f0d7472f7bc595998829546fb540041f20fc
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "10844012"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986157"
 ---
 # Puppeteer  
 
@@ -100,13 +100,13 @@ node example.js
 
 Dies ist nur ein einfaches Beispiel für die Automatisierungs-und Testszenarien, die von Marionetten und `puppeteer-core` .  Weitere Informationen zu Puppenspielern und deren Funktionsweise finden Sie unter [Puppenspieler][|::ref2::|Main].  
 
-## Feedback senden  
+## Kontakt mit dem Microsoft Edge devtools-Team  
 
-Das Edge-Entwicklerteam ist begierig, Ihr Feedback zur Verwendung von Puppenspieler `puppeteer-core` und Microsoft Edge zu hören.  Verwenden Sie das Symbol " **Feedback senden** " im Microsoft Edge devtools-oder Tweet- [@EdgeDevTools][TwitterIntentTweetEdgedevtools] , damit das Microsoft Edge-Team wissen kann, was Sie denken.  
+Das Microsoft Edge-Entwicklerteam freut sich, Ihr Feedback zur Verwendung von Puppenspieler `puppeteer-core` und Microsoft Edge zu hören.  Verwenden Sie das Symbol " **Feedback senden** " im Microsoft Edge devtools-oder Tweet- [@EdgeDevTools][TwitterIntentTweetEdgedevtools] , damit das Microsoft Edge-Team wissen kann, was Sie denken.  
 
 
-:::image type="complex" source="./devtools-guide-chromium/media/devtools-feedback.png" alt-text="Das Feedback Symbol in der Microsoft Edge-devtools":::
-   Abbildung 2: das Symbol " **Feedback** " in der Microsoft Edge-devtools  
+:::image type="complex" source="./devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="Das Symbol "Feedback senden" im Microsoft Edge-devtools":::
+   Das Symbol " **Feedback senden** " im Microsoft Edge-devtools  
 :::image-end:::  
 
 <!--  
