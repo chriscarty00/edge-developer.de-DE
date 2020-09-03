@@ -1,17 +1,18 @@
 ---
+description: Eine umfassende Referenz zu Barrierefreiheitsfeatures in Microsoft Edge devtools
 title: Barrierefreiheits Referenz
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: a338e78957d664a4552e5882f1ae7882f0eee89a
-ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
+ms.openlocfilehash: 39b0b8c36cea017b9976ea4e80e92ea93896a671
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10986087"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993268"
 ---
 <!-- Copyright Kayce Basques 
 

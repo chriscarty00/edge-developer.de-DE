@@ -1,17 +1,18 @@
 ---
+description: Informationen zum Anzeigen von WebSQL-Daten aus dem Anwendungs Panel von Microsoft Edge devtools
 title: Anzeigen von WebSQL-Daten mit Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 8b2e6d1a117e401f9e579cb28f81da9676eea979
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: cc2f726c80fbf0c943b43ff6c131e9479db75b78
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10983460"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993534"
 ---
 <!-- Copyright Kayce Basques 
 

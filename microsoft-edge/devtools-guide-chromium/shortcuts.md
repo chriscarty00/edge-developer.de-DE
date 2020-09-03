@@ -1,17 +1,18 @@
 ---
+description: Die kanonische Dokumentation für Microsoft Edge devtools-Tastenkombinationen.
 title: Tastenkombinationen für Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/24/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: 031457d33bf3cf102380c01d9084619313612124
-ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+ms.openlocfilehash: 8900b58cfaaa6cdab18e0979867348434a213cd0
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601894"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993569"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -47,9 +48,9 @@ Um devtools zu öffnen, drücken Sie die folgenden Tastenkombinationen, während
 
 | Aktion | Windows | macOS |  
 |:--- |:--- |:--- |  
-| Öffnen eines beliebigen Panels, das Sie zuletzt verwendet haben | `F12` oder`Control`+`Shift`+`I` | `Command`+`Option`+`I` |  
+| Öffnen eines beliebigen Panels, das Sie zuletzt verwendet haben | `F12` oder `Control`+`Shift`+`I` | `Command`+`Option`+`I` |  
 | Öffnen des **Konsolen** Panels | `Control`+`Shift`+`J` | `Command`+`Option`+`J` |  
-| Öffnen des **Elements** -Panels | `Control`+`Shift`+`C` | `Command`+`Shift`+`C`oder`Command`+`Option`+`C` |  
+| Öffnen des **Elements** -Panels | `Control`+`Shift`+`C` | `Command`+`Shift`+`C` oder `Command`+`Option`+`C` |  
 
 ## Globale Tastenkombinationen   
 
@@ -57,7 +58,7 @@ Die folgenden Tastenkombinationen stehen in den meisten, wenn nicht allen devtoo
 
 | Aktion | Windows | macOS |  
 |:--- |:--- |:--- |  
-| **Einstellungen** anzeigen | `?` oder `F1` | `?` oder`Function`+`F1` |  
+| **Einstellungen** anzeigen | `?` oder `F1` | `?` oder `Function`+`F1` |  
 | Fokussieren des nächsten Panels | `Control`+`]` | `Command`+`]` |  
 | Fokussieren des vorherigen Panels | `Control`+`[` | `Command`+`[` |  
 | Wechseln Sie zu der zuletzt verwendeten [Docking-Position][DevtoolsCustomizeIndexPlacement] zurück.  Wenn sich devtools in der Standardposition für die gesamte Sitzung befindet, wird diese Verknüpfung devtools in einem separaten Fenster Abdocken. | `Control`+`Shift`+`D` | `Command`+`Shift`+`D` |  
@@ -65,11 +66,11 @@ Die folgenden Tastenkombinationen stehen in den meisten, wenn nicht allen devtoo
 | Umschalten des **Element Modus prüfen** | `Control`+`Shift`+`C` | `Command`+`Shift`+`C` |  
 | Öffnen des [Befehlsmenüs][DevtoolsCommandMenuIndex] | `Control`+`Shift`+`P` | `Command`+`Shift`+`P` |  
 | Umschalten der [Schublade][DevtoolsCustomizeIndexDrawer] | `Escape` | `Escape` |  
-| Normales Reload | `F5` oder`Control`+`R` | `Command`+`R` |  
-| Hard Reload | `Control`+`F5`oder`Control`+`Shift`+`R` | `Command`+`Shift`+`R` |  
+| Normales Reload | `F5` oder `Control`+`R` | `Command`+`R` |  
+| Hard Reload | `Control`+`F5` oder `Control`+`Shift`+`R` | `Command`+`Shift`+`R` |  
 | Suchen nach Text im aktuellen Bereich  Wird in den Bereichen **Audits**, **Anwendung**und **Sicherheit** nicht unterstützt | `Control`+`F` | `Command`+`F` |  
 | Öffnet die Registerkarte " **Suchen** " in der [Schublade][DevtoolsCustomizeIndexDrawer], in der Sie nach Text über alle geladenen Ressourcen suchen können. | `Control`+`Shift`+`F` | `Command`+`Option`+`F` |  
-| Öffnen einer Datei im **Quellen** Panel | `Control`+`O`oder`Control`+`P` | `Command`+`O`oder`Command`+`P` |  
+| Öffnen einer Datei im **Quellen** Panel | `Control`+`O` oder `Control`+`P` | `Command`+`O` oder `Command`+`P` |  
 | Heranzoomen | `Control`+`Shift`+`+` | `Command`+`Shift`+`+` |  
 | Verkleinern | `Control`+`-` | `Command`+`-` |  
 | Standardzoom Stufe wiederherstellen | `Control`+`0` | `Command`+`0` |  
@@ -99,20 +100,20 @@ Die folgenden Tastenkombinationen stehen in den meisten, wenn nicht allen devtoo
 |:--- |:--- |:--- |  
 | Wechseln zu der Zeile, in der ein Eigenschaftswert deklariert ist | Halten `Control` und dann auf den Eigenschaftswert klicken | Halten `Command` und dann auf den Eigenschaftswert klicken |  
 | Durchlaufen der RBGA-, HSLA-und Hex-Darstellungen eines Color-Werts | Halten `Shift` Sie die Maustaste gedrückt, und klicken Sie dann neben dem Wert auf das Feld **Farbvorschau** . | Halten `Shift` Sie die Maustaste gedrückt, und klicken Sie dann neben dem Wert auf das Feld **Farbvorschau** . |  
-| Auswählen der nächsten/vorherigen Eigenschaft oder des nächsten Werts | Klicken Sie auf einen Eigenschaftsnamen oder-Wert, und drücken Sie dann`Tab` / `Shift`+`Tab` | Klicken Sie auf einen Eigenschaftsnamen oder-Wert, und drücken Sie dann`Tab` / `Shift`+`Tab` |  
-| Inkrementieren/Dekrementieren eines Eigenschaftswerts durch 0,1 | Klicken Sie auf einen Wert, und drücken Sie dann alt + nach-oben-Taste/`Alt`+`Down Arrow` | Klicken Sie auf einen Wert, und drücken Sie dann `Option` + `Up Arrow` /Wahl + nach-unten-Taste. |  
-| Inkrementieren/Dekrementieren eines Eigenschaftswerts um 1 | Klicken Sie auf einen Wert, und drücken Sie dann`Up Arrow` / `Down Arrow` | Klicken Sie auf einen Wert, und drücken Sie dann`Up Arrow` / `Down Arrow` |  
-| Inkrementieren/Dekrementieren eines Eigenschaftswerts um 10 | Klicken Sie auf einen Wert, und drücken Sie dann`Shift`+`Up Arrow` / `Shift`+`Down Arrow` | Klicken Sie auf einen Wert, und drücken Sie dann`Shift`+`Up Arrow` / `Shift`+`Down Arrow` |  
-| Inkrementieren/Dekrementieren eines Eigenschaftswerts durch 100 | Klicken Sie auf einen Wert, und drücken Sie dann`Control`+`Up Arrow` / `Control`+`Down Arrow` | Klicken Sie auf einen Wert, und drücken Sie dann`Command`+`Up Arrow` / `Command`+`Down Arrow` |  
+| Auswählen der nächsten/vorherigen Eigenschaft oder des nächsten Werts | Klicken Sie auf einen Eigenschaftsnamen oder-Wert, und drücken Sie dann `Tab` / `Shift`+`Tab` | Klicken Sie auf einen Eigenschaftsnamen oder-Wert, und drücken Sie dann `Tab` / `Shift`+`Tab` |  
+| Inkrementieren/Dekrementieren eines Eigenschaftswerts durch 0,1 | Klicken Sie auf einen Wert, und drücken Sie dann alt + nach-oben-Taste/ `Alt`+`Down Arrow` | Klicken Sie auf einen Wert, und drücken Sie dann `Option` + `Up Arrow` /Wahl + nach-unten-Taste. |  
+| Inkrementieren/Dekrementieren eines Eigenschaftswerts um 1 | Klicken Sie auf einen Wert, und drücken Sie dann `Up Arrow` / `Down Arrow` | Klicken Sie auf einen Wert, und drücken Sie dann `Up Arrow` / `Down Arrow` |  
+| Inkrementieren/Dekrementieren eines Eigenschaftswerts um 10 | Klicken Sie auf einen Wert, und drücken Sie dann `Shift`+`Up Arrow` / `Shift`+`Down Arrow` | Klicken Sie auf einen Wert, und drücken Sie dann `Shift`+`Up Arrow` / `Shift`+`Down Arrow` |  
+| Inkrementieren/Dekrementieren eines Eigenschaftswerts durch 100 | Klicken Sie auf einen Wert, und drücken Sie dann `Control`+`Up Arrow` / `Control`+`Down Arrow` | Klicken Sie auf einen Wert, und drücken Sie dann `Command`+`Up Arrow` / `Command`+`Down Arrow` |  
 
 ## Tastenkombinationen für das Quellen Panel   
 
 | Aktion | Windows | macOS |  
 |:--- |:--- |:--- |  
-| Unterbrechen der Skriptlaufzeit \ (sofern zurzeit ausgeführt wird \) oder fortsetzen \ (Wenn aktuell angehalten \) | `F8` oder`Control`+`\` | `F8` oder`Command`+`\` |  
-| Schritt zum nächsten Funktionsaufruf | `F10` oder`Control`+`'` | `F10` oder`Command`+`'` |  
-| Schritt in den nächsten Funktionsaufruf | `F11` oder`Control`+`;` | `F11` oder`Command`+`;` |  
-| Schritt aus der aktuellen Funktion | `Shift`+`F11`oder`Control`+`Shift`+`;` | `Shift`+`F11`oder`Command`+`Shift`+`;` |  
+| Unterbrechen der Skriptlaufzeit \ (sofern zurzeit ausgeführt wird \) oder fortsetzen \ (Wenn aktuell angehalten \) | `F8` oder `Control`+`\` | `F8` oder `Command`+`\` |  
+| Schritt zum nächsten Funktionsaufruf | `F10` oder `Control`+`'` | `F10` oder `Command`+`'` |  
+| Schritt in den nächsten Funktionsaufruf | `F11` oder `Control`+`;` | `F11` oder `Command`+`;` |  
+| Schritt aus der aktuellen Funktion | `Shift`+`F11` oder `Control`+`Shift`+`;` | `Shift`+`F11` oder `Command`+`Shift`+`;` |  
 | Fortsetzen einer [bestimmten Codezeile während der Pause][DevtoolsJavascriptBreakpointsLOC] | Halten `Control` und dann auf die Codezeile klicken | Halten `Command` und dann auf die Codezeile klicken |  
 | Auswählen des Anruf Rahmens unterhalb/oberhalb des aktuell ausgewählten Frames | `Control`+`.` / `Control`+`,` | `Control`+`.` / `Control`+`,` |  
 | Speichern von Änderungen an lokalen Änderungen | `Control`+`S` | `Command`+`S` |  
@@ -128,7 +129,7 @@ Die folgenden Tastenkombinationen stehen in den meisten, wenn nicht allen devtoo
 | Aktion | Windows | macOS |  
 |:--- |:--- |:--- |  
 | Löschen aller Zeichen im letzten Wort bis zum Cursor | `Control`+`Delete` | `Option`+`Delete` |  
-| Hinzufügen oder Entfernen eines [Haltepunkts für die Codezeile][DevtoolsJavascriptBreakpointsLOC] | Fokussieren Sie den Cursor auf die Linie, und drücken Sie dann`Control`+`B` | Fokussieren Sie den Cursor auf die Linie, und drücken Sie dann`Command`+`B` |  
+| Hinzufügen oder Entfernen eines [Haltepunkts für die Codezeile][DevtoolsJavascriptBreakpointsLOC] | Fokussieren Sie den Cursor auf die Linie, und drücken Sie dann `Control`+`B` | Fokussieren Sie den Cursor auf die Linie, und drücken Sie dann `Command`+`B` |  
 | Zur passenden Klammer wechseln | `Control`+`M` | `Control`+`M` |  
 | Einzeilen-Kommentar umschalten Wenn mehrere Zeilen markiert sind, fügt devtools am Anfang jeder Zeile einen Kommentar ein. | `Control`+`/` | `Command`+`/` |  
 | Wählen/deaktivieren Sie das nächste Vorkommen des Worts, auf dem sich der Cursor befindet. Jedes Vorkommen wird gleichzeitig hervorgehoben. | `Control`+`D` / `Control`+`U` | `Command`+`D` / `Command`+`U` |  
@@ -156,7 +157,7 @@ Die folgenden Tastenkombinationen stehen in den meisten, wenn nicht allen devtoo
 | Vorherige Anweisung abrufen | `Up Arrow` | `Up Arrow` |  
 | Nächste Anweisung abrufen | `Down Arrow` | `Down Arrow` |  
 | Fokussieren der **Konsole** | `Control`+ `` ` `` | `Control`+`` ` `` |  
-| Deaktivieren der **Konsole** | `Control`+`L` | `Command`+`K`oder`Option`+`L` |  
+| Deaktivieren der **Konsole** | `Control`+`L` | `Command`+`K` oder `Option`+`L` |  
 | Erzwingen eines mehrzeiligen Eintrags Beachten Sie, dass devtools mehrzeilige Szenarien standardmäßig erkennen sollte, sodass diese Verknüpfung in der Regel nicht erforderlich ist. | `Shift`+`Enter` | `Command`+`Return` |  
 | Ausführen | `Enter` | `Return` |  
 | Erweitern aller untergeordneten Eigenschaften eines Objekts, das auf der Konsole protokolliert wird | Halten `Alt` Sie die Maustaste **Expand**gedrückt, und klicken Sie auf erweitern. ![][ImageExpandIcon] | Halten `Alt` Sie die Maustaste **Expand**gedrückt, und klicken Sie auf erweitern. ![][ImageExpandIcon] |  

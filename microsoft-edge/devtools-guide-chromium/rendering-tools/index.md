@@ -1,17 +1,18 @@
 ---
+description: Benutzer erwartet interaktive und glatte Seiten.  Jede Phase in der pixelpipeline stellt eine Möglichkeit dar, Jank einzuführen.  Erfahren Sie mehr über Tools und Strategien, um häufige Probleme zu erkennen und zu beheben, die die Runtime-Leistung verlangsamen.
 title: Analysieren der Laufzeitleistung
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 0fc576703a9760a3306e74da3521f93bf2d5d9cd
-ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
+ms.openlocfilehash: f7ca848712268110700fac2c5fb75fe1751812bf
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10986178"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10992705"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 

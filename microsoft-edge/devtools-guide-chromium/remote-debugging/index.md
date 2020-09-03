@@ -1,17 +1,18 @@
 ---
+description: Remote Debuggen von Liveinhalten auf einem Android-Gerät von einem Windows-oder macOS-Computer aus.
 title: Erste Schritte mit dem Remote Debuggen von Android-Geräten
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/05/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: c77633c4844f0e576b7dff6574000a78c8c083da
-ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+ms.openlocfilehash: f1ed7c698f588bb4e438d1b85a0cd0d1aba42647
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "10708536"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993499"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -54,13 +55,13 @@ Der folgende Workflow funktioniert für die meisten Benutzer.  Weitere Hilfe fin
 1.  Öffnen Sie auf Ihrem Entwicklungscomputer Microsoft Edge.  
 1.  Navigieren Sie zu der `edge://inspect` Seite in Microsoft Edge.  
     
-    :::image type="complex" source="../media/remote-debugging-edge-inspect-no-targets.msft.png" alt-text="Die Seite Edge://Inspect in Microsoft Edge" lightbox="../media/remote-debugging-edge-inspect-no-targets.msft.png":::
+    :::image type="complex" source="../media/remote-debugging-edge-inspect-no-targets.msft.png" alt-text="Die Seite "Edge://Inspect" in Microsoft Edge" lightbox="../media/remote-debugging-edge-inspect-no-targets.msft.png":::
        Abbildung1.  Die `edge://inspect` Seite in Microsoft Edge  
     :::image-end:::  
     
 1.  Verbinden Sie Ihr Android-Gerät mit einem USB-Kabel direkt mit Ihrem Entwicklungscomputer.  Wenn Sie das erste Mal eine Verbindung herstellen, sehen Sie in der Regel eine Aufforderung zu devtools, um ein unbekanntes Gerät zu erkennen.  Akzeptieren Sie die Eingabeaufforderung **USB-Debugging-Berechtigung zulassen** auf Ihrem Android-Gerät.  
     
-    :::image type="complex" source="../media/remote-debugging-android-permissions-prompt.msft.png" alt-text="Die Eingabeaufforderung USB-Debugging-Berechtigung zulassen auf einem Android-Gerät" lightbox="../media/remote-debugging-android-permissions-prompt.msft.png":::
+    :::image type="complex" source="../media/remote-debugging-android-permissions-prompt.msft.png" alt-text="Die Eingabeaufforderung "USB-Debugging-Berechtigung zulassen" auf einem Android-Gerät" lightbox="../media/remote-debugging-android-permissions-prompt.msft.png":::
        Abbildung2.  Die Eingabeaufforderung " **USB-Debugging-Berechtigung zulassen** " auf einem Android-Gerät  
     :::image-end:::  
     

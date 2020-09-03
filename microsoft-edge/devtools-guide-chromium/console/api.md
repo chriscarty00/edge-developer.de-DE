@@ -1,17 +1,18 @@
 ---
+description: Verwenden Sie die Konsolen-API, um Nachrichten in die Konsole zu schreiben.
 title: Konsolen-API-Referenz
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/09/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: 19545759ede4252f2e7ba21329d482f4eb96f0c6
-ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+ms.openlocfilehash: 684c0a1e42357ceca0a0295859e64447251f191a
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "10708490"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993254"
 ---
 <!-- Copyright Kayce Basques 
 

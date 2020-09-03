@@ -1,17 +1,18 @@
 ---
+description: Öffnen Sie die Registerkarte Sensoren, und wählen Sie in der Liste Geolocation die Option Koordinaten aus.
 title: Überschreiben von Geolocation mit Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 6cc690e7f2f93448c2facb01f0ca2f9b679a473a
-ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
+ms.openlocfilehash: 269e7ca4bf259aa168c06ac0fd915604731463c4
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10986101"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10992988"
 ---
 <!-- Copyright Kayce Basques 
 

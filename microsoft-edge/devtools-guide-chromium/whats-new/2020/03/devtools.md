@@ -1,17 +1,18 @@
 ---
+description: Remotedebuggen von Microsoft Edge auf Windows 10-Geräten, neue Möglichkeiten für den Zugriff auf Einstellungen und vieles mehr.
 title: Neuerungen in devtools (Microsoft Edge 83)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/17/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: f1b5d147aac1b8b527cc7365f9f91a2a7974863e
-ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
+ms.openlocfilehash: 94b8d067738a1749f136edf2a562652bece183a9
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "10942223"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993429"
 ---
 <!-- Copyright Kayce Basques 
 

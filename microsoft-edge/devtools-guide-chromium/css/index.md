@@ -1,17 +1,18 @@
 ---
+description: Erfahren Sie, wie Sie Microsoft Edge devtools verwenden, um das CSS einer Seite anzuzeigen und zu ändern.
 title: Erste Schritte mit dem Anzeigen und Ändern von CSS
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/11/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: 346145a7deb9e8ac951ed0578a5060da72817463
-ms.sourcegitcommit: a34858dd3260967ba9699842fa839c7a94775fe4
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+ms.openlocfilehash: f055606ff6140652341627097e7fe7b270dc929c
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "10710385"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993065"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -62,7 +63,7 @@ Führen Sie diese interaktiven Lernprogramme aus, um die Grundlagen für das Anz
         
     1.  `aloha`Suchen Sie in der Klasse den Wert für die `padding` Formatvorlage, und kopieren Sie Sie.  
         
-        :::image type="complex" source="../media/css-elements-inspect-me-styles.msft.png" alt-text="Auf das geprüfte Element angewendete CSS-Klassen werden auf der Registerkarte Formatvorlagen hervorgehoben." lightbox="../media/css-elements-inspect-me-styles.msft.png":::
+        :::image type="complex" source="../media/css-elements-inspect-me-styles.msft.png" alt-text="Auf das geprüfte Element angewendete CSS-Klassen werden auf der Registerkarte "Formatvorlagen" hervorgehoben." lightbox="../media/css-elements-inspect-me-styles.msft.png":::
            Abbildung 2: CSS-Klassen, die auf das ausgewählte Element angewendet werden, wie etwa `aloha` , werden auf der Registerkarte " **Formatvorlagen** " angezeigt  
         :::image-end:::  
         
@@ -81,7 +82,7 @@ Verwenden Sie die Registerkarte **Formatvorlagen** , wenn Sie einem Element CSS-
 1.  Geben `background-color` Sie ein, und drücken Sie `Enter` .  
 1.  Geben `honeydew` Sie ein, und drücken Sie `Enter` .  In der **DOM-Struktur** sollten Sie sehen, dass eine Inlineformatvorlagen Deklaration auf das Element angewendet wurde.  
     
-    :::image type="complex" source="../media/css-elements-add-background-color-to-me-styles-p.msft.png" alt-text="Hinzufügen einer CSS-Deklaration zum Element mithilfe der Registerkarte Formatvorlagen" lightbox="../media/css-elements-add-background-color-to-me-styles-p.msft.png":::
+    :::image type="complex" source="../media/css-elements-add-background-color-to-me-styles-p.msft.png" alt-text="Hinzufügen einer CSS-Deklaration zum Element mithilfe der Registerkarte "Formatvorlagen"" lightbox="../media/css-elements-add-background-color-to-me-styles-p.msft.png":::
        Abbildung 3: die `background-color:honeydew` Deklaration wurde auf das Element über den `element.style` Abschnitt der Registerkarte " **Formatvorlagen** " angewendet  
     :::image-end:::  
     

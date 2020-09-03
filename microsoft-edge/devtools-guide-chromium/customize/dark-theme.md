@@ -1,17 +1,18 @@
 ---
+description: So aktivieren Sie das dunkle Design in Microsoft Edge devtools
 title: Aktivieren des dunklen Designs in Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: cb5404ea088fa74890a6cb5027745cf59f4b2eac
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 4369d06fff8372677910e2807daa3b23c2c0e333
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10981800"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993023"
 ---
 <!-- Copyright Kayce Basques 
 

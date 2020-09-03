@@ -1,4 +1,5 @@
 ---
+description: Aktivieren Sie "Inhalts Skripts als Bibliothekscode markieren" aus Einstellungen > Framework-Bibliothekscode.
 title: Markieren von Inhaltsskripts als Bibliothekscode
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -6,12 +7,12 @@ ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: a5101cb8561a49ce6c271398f4c1a828984da9e3
-ms.sourcegitcommit: 2fa65cca74c5214601900579c0ce9f946ad8a27e
+ms.openlocfilehash: 517e0a4e944f32d41451a0a5d9d7baa91ff97212
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10991161"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10992792"
 ---
 <!-- Copyright Kayce Basques 
 

@@ -1,17 +1,18 @@
 ---
+description: Hier erfahren Sie, wie Sie die HTTP-Cookies für eine Seite mit Microsoft Edge devtools anzeigen, bearbeiten und löschen.
 title: Anzeigen, bearbeiten und Löschen von Cookies mit Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/11/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: ecd8df7058bca4535d1f7da15ce1d500ef85aefe
-ms.sourcegitcommit: a34858dd3260967ba9699842fa839c7a94775fe4
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+ms.openlocfilehash: eaaf4663504fc674fd70dc1ca9e0357febb529e0
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "10710371"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993240"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -42,7 +43,7 @@ ms.locfileid: "10710371"
 
 1.  Erweitern Sie unter **Speicher** den Eintrag **Cookies**, und wählen Sie dann einen Ursprung aus.  
     
-    :::image type="complex" source="../media/storage-application-storage-cookies-selected.msft.png" alt-text="Der Bereich Cookies" lightbox="../media/storage-application-storage-cookies-selected.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-cookies-selected.msft.png" alt-text="Der Bereich "Cookies"" lightbox="../media/storage-application-storage-cookies-selected.msft.png":::
        Abbildung 2: der Bereich "Cookies"  
     :::image-end:::  
 
@@ -80,13 +81,13 @@ Doppelklicken Sie auf ein Feld, um es zu bearbeiten.
 
 ## Löschen von Cookies  
 
-Wählen Sie ein Cookie aus, **und wählen Sie ausgewählte** löschen ausgewählt löschen aus ![ ][ImageDeleteIcon] , um das bestimmte Cookie zu löschen.  
+Wählen Sie ein Cookie aus, **und wählen Sie ausgewählte** löschen ausgewählt löschen aus ![ ][ImageDeleteIcon]  , um das bestimmte Cookie zu löschen.  
 
 :::image type="complex" source="../media/storage-application-storage-cookies-delete-selected.msft.png" alt-text="Löschen eines bestimmten Cookies" lightbox="../media/storage-application-storage-cookies-delete-selected.msft.png":::
    Abbildung 5: Löschen eines bestimmten Cookies  
 :::image-end:::  
 
-Wählen **Sie alle löschen** ![ aus ][ImageClearIcon] , um alle Cookies zu löschen.  
+Wählen **Sie alle löschen** ![ aus ][ImageClearIcon]  , um alle Cookies zu löschen.  
 
 :::image type="complex" source="../media/storage-application-storage-cookies-clear-all.msft.png" alt-text="Löschen aller Cookies" lightbox="../media/storage-application-storage-cookies-clear-all.msft.png":::
    Abbildung 6: Löschen aller Cookies  

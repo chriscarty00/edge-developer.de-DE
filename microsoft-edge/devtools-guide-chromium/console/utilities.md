@@ -1,17 +1,18 @@
 ---
+description: Eine Referenz zu den in der Microsoft Edge devtools-Konsole verfügbaren Convenience-Befehlen.
 title: API-Referenz für Konsolen Dienstprogramme
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/10/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: efa03e02813d718514f73445bc0dceb3a1a83f39
-ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+ms.openlocfilehash: 2882d980e6da45072cab4b028ceb1838a9078064
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "10708828"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993107"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -47,13 +48,13 @@ Gibt den Wert des zuletzt ausgewerteten Ausdrucks zurück.
 In der folgenden Abbildung wird ein einfacher Ausdruck \ ( `2 + 2` \) ausgewertet.  `$_`Anschließend wird die Eigenschaft ausgewertet, die den gleichen Wert enthält.  
 
 :::image type="complex" source="../media/console-arithmatic.msft.png" alt-text="$ _ ist der zuletzt ausgewertete Ausdruck" lightbox="../media/console-arithmatic.msft.png":::
-   Abbildung 1: `$_` ist der zuletzt ausgewertete Ausdruck  
+   Abbildung 1:  `$_` ist der zuletzt ausgewertete Ausdruck  
 :::image-end:::  
 
 In der folgenden Abbildung enthält der ausgewertete Ausdruck zunächst ein Array von Namen.  Auswerten, `$_.length` um die Länge des Arrays zu ermitteln, wird der Wert, der in Änderungen gespeichert wird, `$_` zum neuesten ausgewerteten Ausdruck `4` .  
 
 :::image type="complex" source="../media/console-array-length.msft.png" alt-text="$ _ ändert sich, wenn neue Befehle ausgewertet werden" lightbox="../media/console-array-length.msft.png":::
-   Abbildung 2: `$_` Änderungen, wenn neue Befehle ausgewertet werden  
+   Abbildung 2:  `$_` Änderungen, wenn neue Befehle ausgewertet werden  
 :::image-end:::  
 
 ## Zuletzt ausgewähltes Element oder JavaScript-Objekt  
@@ -360,7 +361,7 @@ keys(player1)
 values(player1)
 ```  
 
-:::image type="complex" source="../media/console-keys-values.msft.png" alt-text="Die Befehle Keys () und Values ()" lightbox="../media/console-keys-values.msft.png":::
+:::image type="complex" source="../media/console-keys-values.msft.png" alt-text="Die Befehle "Keys ()" und "Values ()"" lightbox="../media/console-keys-values.msft.png":::
    Abbildung 19: die `keys()` `values()` Befehle und  
 :::image-end:::  
 

@@ -1,17 +1,18 @@
 ---
-title: Zeitachsenereignis Referenz
+description: Im Modus Zeitachsenereignisse werden alle Ereignisse angezeigt, die während der Aufzeichnung ausgelöst werden.  Verwenden Sie den Zeitachsen-Ereignisverweis, um mehr über die einzelnen Zeitachse-Ereignistypen zu erfahren.
+title: Ereignisreferenz der Zeitachse
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/29/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: e5f0807204877ce034fd52ea4535795ea80ba394
-ms.sourcegitcommit: 50991a04c18283a8890ae33fcc3491c0476c7684
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+ms.openlocfilehash: 624035636e2231cf1f3cd1e2ba0fdda7e2e4fa00
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "10611720"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10992848"
 ---
 <!-- Copyright Meggin Kearney and Flavio Copes
 
@@ -31,7 +32,7 @@ ms.locfileid: "10611720"
 
 
 
-# Zeitachsenereignis Referenz   
+# Ereignisreferenz der Zeitachse   
 
 
 
@@ -145,7 +146,7 @@ In diesem Abschnitt werden Ereignisse aufgelistet, die zur Kategorie "Malerei" u
 
 | Eigenschaft | Beschreibung |  
 |:--- |:--- |  
-| Speicherort | Für Paint-Ereignisse die x-und y-Koordinaten des Paint-Rechtecks. |  
+| Pfad | Für Paint-Ereignisse die x-und y-Koordinaten des Paint-Rechtecks. |  
 | Dimensionen | Für Paint-Ereignisse die Höhe und Breite des bemalten Bereichs. |  
 
  
