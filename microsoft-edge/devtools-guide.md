@@ -3,7 +3,7 @@ description: Einführung in die Microsoft Edge-Entwicklertools (EdgeHTML)
 title: Microsoft Edge-Entwicklertools (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/10/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -11,12 +11,12 @@ keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
 experimental: true
 experiment_id: 51fe4b97-3e55-41
 ms.localizationpriority: high
-ms.openlocfilehash: cba59764805c0be0e9d2c57c1a3d87ca4d14943e
-ms.sourcegitcommit: 1e33cd41e5afb2e6dbdc19353011ff6c2b019f9c
+ms.openlocfilehash: 0c01b761d1aa1fb645b15b0be5d5d6e4265e646e
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "10866071"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10985968"
 ---
 # Microsoft Edge-Entwicklertools (EdgeHTML)  
 
@@ -46,7 +46,7 @@ Die Microsoft Edge \(EdgeHTML\) DevTools umfassen:
 *   Einen Bereich [Dienstmitarbeiter][DevtoolsGuideEdgehtmlServiceworkers] zum Verwalten und Debuggen Ihrer Servicemitarbeiter  
 *   Einen Bereich [Emulation][DevtoolsGuideEdgehtml|::ref9::|] zum Testen Ihrer Website mit unterschiedlichen Browserprofilen, Bildschirmauflösungen und GPS-Positionskoordinaten  
 
-Bitte senden Sie weiterhin [Feedback und Feature-Anfragen](#feedback)!  
+Bitte senden Sie weiterhin [Feedback und Feature-Anfragen](#getting-in-touch-with-the-microsoft-edge-devtools-team)!  
 
 > [!TIP]
 > [Testen Sie auf Microsoft Edge \(EdgeHTML\) kostenlos mit jedem Browser][BrowserstackEdgehtml].  
@@ -60,7 +60,7 @@ Die **Microsoft Edge \(EdgeHTML\) DevTools** sind [jetzt][DevtoolsGuideEdgehtmlW
 
 Um eine Seite lokal zu debuggen, starten Sie einfach die Microsoft Edge DevTools-App.  Im Bereich **Lokal** der Auswahl werden alle aktiven EdgeHTML-Inhaltsprozesse angezeigt, einschließlich der geöffneten Edge-Browser-Registerkarten, in denen [PWAs][PwasEdgehtmlIndex] \(`WWAHost.exe`-Prozesse\) und [WebView][HostingWebview]-Steuerelemente ausgeführt werden.  Wählen Sie das Ziel, das angehängt werden soll, und öffnen Sie eine neue Registerkarten-Instanz der DevTools.  
 
-:::image type="complex" source="./devtools-guide/media/chooser_local.png" alt-text="DevTools-App, Bereich Lokal":::
+:::image type="complex" source="./devtools-guide/media/chooser_local.png" alt-text="DevTools-App, Bereich "Lokal"":::
    DevTools-App, Bereich "Lokal"
 :::image-end:::
 
@@ -72,7 +72,7 @@ Die Microsoft Edge DevTools-App bietet grundlegende Unterstützung beim Debuggen
 
 Lesen Sie zu Beginn den Abschnitt [*Microsoft Edge DevTools*][DevtoolsProtocolEdgehtmlClientsEdgePreview] der Dokumente [DevTools-Protokoll][DevtoolsProtocolEdgehtmlIndex].  
 
-:::image type="complex" source="./devtools-guide/media/chooser_remote.png" alt-text="DevTools-App, Bereich Remote":::
+:::image type="complex" source="./devtools-guide/media/chooser_remote.png" alt-text="DevTools-App, Bereich "Remote"":::
    DevTools-App, Bereich "Remote"
 :::image-end:::
 
@@ -117,7 +117,7 @@ Mit diesen Tastenkombinationen wird das DevTools-Hauptfenster gesteuert, und sie
 > [!NOTE]
 > Wenn Sie Debuggen und an einem Haltepunkt angehalten werden, setzen Sie zuerst mit der Aktion **Seite aktualisieren** die Laufzeit fort.  
 
-## Feedback senden  
+## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 Bitte senden Sie uns Ihr Feedback, damit wir die Microsoft Edge \(EdgeHTML \) DevTools für Sie verbessern können!  Öffnen Sie einfach die Tools \(`F12`\), und wählen Sie die Schaltfläche [Feedback senden](#microsoft-edge-edgehtml-developer-tools) aus.  
 
