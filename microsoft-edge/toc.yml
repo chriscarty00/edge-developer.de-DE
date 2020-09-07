@@ -373,12 +373,10 @@
               href: extensions-chromium/developer-guide/native-messaging.md
         - name: Im Microsoft Store veröffentlichen
           items:
-            - name: Schrittweiser Veröffentlichungsprozess
+            - name: Veröffentlichen Sie die Erweiterung
               href: extensions-chromium/publish/publish-extension.md
-            - name: Entwicklerkonto öffnen
+            - name: Registrierung für Entwickler
               href: extensions-chromium/publish/create-dev-account.md
-            - name: YouTube-Video hochladen
-              href: extensions-chromium/publish/upload-video.md
             - name: Aktualisieren der Erweiterungsliste
               href: extensions-chromium/publish/update.md
             - name: Übermittlungsstatus
