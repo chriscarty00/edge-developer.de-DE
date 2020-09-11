@@ -3,17 +3,17 @@ description: Informationen zum Verwalten von benutzerdatenordnern in WebView2-An
 title: Verwalten von benutzerdatenordnern in WebView2-Anwendungen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/23/2020
+ms.date: 09/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Host, Browser-Steuerelement, Edge-HTML, benutzerdatenordner
-ms.openlocfilehash: 4e10f589bc7866cd06e007d70c0dff941afc35cb
-ms.sourcegitcommit: 553957c101f83681b363103cb6af56bf20173f23
+ms.openlocfilehash: 5f341458a85bfab93bd2618b4d274ad6a1edefa2
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "10895504"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010740"
 ---
 # Verwalten des Benutzerdatenordners  
 
@@ -28,7 +28,7 @@ Benutzerdatenordner werden automatisch von WebView2 erstellt.  WebView2-Entwickl
 
 ## Erstellen von benutzerdatenordnern  
 
-Wenn Sie den Speicherort des Benutzerdatenordners angeben möchten, schließen Sie den Parameter ein, `userDataFolder` Wenn Sie [ICoreWebView2Environment](../reference/win32/0-9-538/icorewebview2environment.md) \ (Win32 \) oder [CoreWebView2Environment](../reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2environment.md) \ (.net \) aufrufen.  Nach der Erstellung werden Browserdaten aus Ihrem WebView2-Steuerelement in einem Unterordner von gespeichert `userDataFolder` .  Wenn `userDataFolder` nicht angegeben, erstellt WebView2 benutzerdatenordner an Standardspeicherorten wie folgt:  
+Wenn Sie den Speicherort des Benutzerdatenordners angeben möchten, schließen Sie den Parameter ein, `userDataFolder` Wenn Sie [ICoreWebView2Environment](../reference/win32/0-9-622/icorewebview2environment.md) \ (Win32 \) oder [CoreWebView2Environment](../reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2environment.md) \ (.net \) aufrufen.  Nach der Erstellung werden Browserdaten aus Ihrem WebView2-Steuerelement in einem Unterordner von gespeichert `userDataFolder` .  Wenn `userDataFolder` nicht angegeben, erstellt WebView2 benutzerdatenordner an Standardspeicherorten wie folgt:  
 
 *   Für verpackte Windows Store-Apps ist der Standardbenutzerordner der Unterordner `ApplicationData\LocalFolder` im Paketordner.  
 *   Bei vorhandenen Desktop-Apps ist der standardmäßige benutzerdatenordner der exe-Pfad Ihrer Anwendung + `.WebView2` .  Anstatt die Standardeinstellung zu verwenden, empfiehlt es sich, einen benutzerdatenordner anzugeben und ihn im gleichen Ordner zu erstellen, in dem alle anderen APP-Daten gespeichert sind.  
@@ -54,9 +54,9 @@ WebView2-Steuerelemente können dieselben benutzerdatenordner für folgende Pers
 
 Beim Freigeben von benutzerdatenordnern sollten Sie Folgendes bedenken:  
 
-1.  Stellen Sie beim erneuten Erstellen von WebView2-Steuerelementen zum Aktualisieren von Browserversionen mit [add_NewBrowserVersionAvailable](../reference/win32/0-9-538/icorewebview2environment.md#add_newbrowserversionavailable) \ (Win32 \)-oder [NewBrowserVersionAvailable](../reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2environment.md#newbrowserversionavailable) \ (.net \)-Ereignissen sicher, dass Browserprozesse Exit und WebView2-Steuerelemente schließen, die denselben benutzerdatenordner verwenden.  Um die Prozess-ID des Browser Prozesses abzurufen, verwenden Sie die `BrowserProcessId` -Eigenschaft des WebView2-Steuerelements.  
+1.  Stellen Sie beim erneuten Erstellen von WebView2-Steuerelementen zum Aktualisieren von Browserversionen mit [add_NewBrowserVersionAvailable](../reference/win32/0-9-622/icorewebview2environment.md#add_newbrowserversionavailable) \ (Win32 \)-oder [NewBrowserVersionAvailable](../reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2environment.md#newbrowserversionavailable) \ (.net \)-Ereignissen sicher, dass Browserprozesse Exit und WebView2-Steuerelemente schließen, die denselben benutzerdatenordner verwenden.  Um die Prozess-ID des Browser Prozesses abzurufen, verwenden Sie die `BrowserProcessId` -Eigenschaft des WebView2-Steuerelements.  
 
-2.  WebView2-Steuerelemente, für die derselbe benutzerdatenordner freigegeben ist, müssen die gleichen Optionen für [ICoreWebView2Environment](../reference/win32/0-9-538/icorewebview2environment.md) \ (Win32 \) oder [CoreWebView2Environment](../reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2environment.md) \ (.net \) verwenden.  Wenn dies nicht der Fall ist, schlägt die WebView2-Erstellung fehl `HRESULT_FROM_WIN32(ERROR_INVALID_STATE)` .  
+2.  WebView2-Steuerelemente, für die derselbe benutzerdatenordner freigegeben ist, müssen die gleichen Optionen für [ICoreWebView2Environment](../reference/win32/0-9-622/icorewebview2environment.md) \ (Win32 \) oder [CoreWebView2Environment](../reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2environment.md) \ (.net \) verwenden.  Wenn dies nicht der Fall ist, schlägt die WebView2-Erstellung fehl `HRESULT_FROM_WIN32(ERROR_INVALID_STATE)` .  
 
 Wenn Sie verschiedene Teile der Anwendung isolieren oder Daten zwischen WebView2-Steuerelementen freigeben möchten, ist es möglich, dass Sie unterschiedliche benutzerdatenordner verwenden.  Eine Anwendung kann beispielsweise aus zwei WebView2-Steuerelementen bestehen, einer für die Anzeige einer Werbung und der anderen zum Anzeigen von Anwendungsinhalten.  In diesem Szenario können Entwickler entscheiden, für jedes WebView2-Steuerelement unterschiedliche benutzerdatenordner zu verwenden.  
 

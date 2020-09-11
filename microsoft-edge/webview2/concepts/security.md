@@ -3,17 +3,17 @@ description: Grundlegendes zur Entwicklung sicherer WebView2-Anwendungen
 title: Bewährte Methoden für die Entwicklung sicherer WebView2-Anwendungen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/22/2020
+ms.date: 09/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Host, Browser-Steuerelement, Edge HTML, Sicherheit
-ms.openlocfilehash: f30163954f1906f71afa520b87d58c7647a5250a
-ms.sourcegitcommit: b3555043e9d5aefa5a9e36ba4d73934d41559f49
+ms.openlocfilehash: 774c812789bea4936611c41915e0c34f93205dba
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "10894305"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010761"
 ---
 # Bewährte Methoden für die Entwicklung sicherer WebView2-Anwendungen  
 
@@ -23,14 +23,14 @@ Das [WebView2-Steuerelement][Webview2Main] ermöglicht Entwicklern das Hosten vo
     *   Überprüfen Sie Web-Nachrichten und Hostobjekt Parameter, bevor Sie Sie verwenden, da Webnachrichten und Parameterfehler Haft sein können (unbeabsichtigt oder böswillig) und die APP unerwartet verhält.
     *   Überprüfen Sie immer die Herkunft des in WebView2 ausgeführten Dokuments, und bewerten Sie die Vertrauenswürdigkeit des Inhalts.  
 1.  Entwerfen Sie bestimmte webnachrichts-und Hostobjekt Interaktionen, anstatt generische Proxys zu verwenden.  
-1.  Setzen Sie die folgenden Optionen, um die Webinhalts Funktionalität durch Ändern von [ICoreWebView2Settings (Win32)][Webview2ReferenceWin3209538Icorewebview2settings] oder [CoreWebView2Settings (.net)][Webview2ReferenceWin3209538MicrosoftWebWebview2CoreCorewebview2settings]zu beschränken.  
+1.  Setzen Sie die folgenden Optionen, um die Webinhalts Funktionalität durch Ändern von [ICoreWebView2Settings (Win32)][Webview2ReferenceWin3209622Icorewebview2settings] oder [CoreWebView2Settings (.net)][Webview2ReferenceWin3209628MicrosoftWebWebview2CoreCorewebview2settings]zu beschränken.  
     *   `AreHostObjectsAllowed`Auf `false` , wenn Sie nicht erwarten, dass die Webinhalte auf Hostobjekte zugreifen.  
     *   `IsWebMessageEnabled`Auf `false` , wenn Sie nicht erwarten, dass die Webinhalte Webnachrichten in ihrer systemeigenen Anwendung bereitstellen.  
     *   Legen `IsScriptEnabled` `false` Sie auf, wenn Sie nicht erwarten, dass die Webinhalte Skripts ausführen \ (beispielsweise, wenn statischer HTML-Inhalt angezeigt wird).  
     *   `AreDefaultScriptDialogsEnabled`Auf `false` , wenn Sie nicht erwarten, dass die Webinhalte angezeigt werden `alert` oder `prompt` Dialogfelder angezeigt werden.  
 1.  Verwenden Sie in den folgenden Schritten die `NavigationStarting` Ereignisse und, `FrameNavigationStarting` um die Einstellungen basierend auf dem Ursprung der neuen Seite zu aktualisieren.  
     1.  Um zu verhindern, dass Ihre Anwendung zu bestimmten Seiten navigiert, verwenden Sie die Ereignisse, um die Seiten-oder Frame Navigation zu überprüfen und dann zu blockieren.  
-    1.  Wenn Sie zu einer neuen Seite navigieren, müssen Sie möglicherweise die Eigenschaftswerte in [ICoreWebView2Settings (Win32)][Webview2ReferenceWin3209538Icorewebview2settings] oder [CoreWebView2Settings (.net)][Webview2ReferenceWin3209538MicrosoftWebWebview2CoreCorewebview2settings] wie zuvor beschrieben anpassen.  
+    1.  Wenn Sie zu einer neuen Seite navigieren, müssen Sie möglicherweise die Eigenschaftswerte in [ICoreWebView2Settings (Win32)][Webview2ReferenceWin3209622Icorewebview2settings] oder [CoreWebView2Settings (.net)][Webview2ReferenceWin3209628MicrosoftWebWebview2CoreCorewebview2settings] wie zuvor beschrieben anpassen.  
 1.  Verwenden Sie beim Navigieren zu einem neuen Dokument das `ContentLoading` Ereignis, um verfügbar gemachte Hostobjekte mit zu entfernen `RemoveHostObjectFromScript` .  
 
 <!--## Security
@@ -45,6 +45,6 @@ When constructing a message to send into a WebView, prefer using `PostWebMessage
 
 [Webview2Main]: ../index.md "Einführung in Microsoft Edge WebView2 (Preview) | Microsoft docs"  
 
-[Webview2ReferenceWin3209538Icorewebview2settings]: ../reference/win32/0-9-538/icorewebview2settings.md "Schnittstelle ICoreWebView2Settings | Microsoft docs"  
+[Webview2ReferenceWin3209622Icorewebview2settings]: ../reference/win32/0-9-622/icorewebview2settings.md "Schnittstelle ICoreWebView2Settings | Microsoft docs"  
 
-[Webview2ReferenceWin3209538MicrosoftWebWebview2CoreCorewebview2settings]: ../reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2settings.md "Microsoft. Web. WebView2. Core. CoreWebView2Settings Klasse | Microsoft docs"  
+[Webview2ReferenceWin3209628MicrosoftWebWebview2CoreCorewebview2settings]: ../reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2settings.md "Microsoft. Web. WebView2. Core. CoreWebView2Settings Klasse | Microsoft docs"  

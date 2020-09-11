@@ -3,17 +3,17 @@ description: Hosten von Webinhalten in ihrer Win32-App mit dem Steuerelement "Mi
 title: Microsoft Edge WebView2-API-Referenz
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, Browser-Steuerelement
-ms.openlocfilehash: 261bf55bf868c77ecd3db3c1e6302271c211f1ce
-ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
+ms.openlocfilehash: f6417b543191c923c89af2e17a59f4505cc82a7d
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "10882758"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010138"
 ---
 # Microsoft Edge WebView2-API-Referenz  
 
@@ -23,8 +23,8 @@ Wählen Sie die Sprachen und das Framework von WebView2 aus, die Sie in der folg
 
 ## Sprachen und Frameworks  
 
-*   [Win32 C++](reference/win32/0-9-538-reference-webview2.md)  
+*   [Win32 C++](reference/win32/0-9-622-reference-webview2.md)  
 *   .NET  
-    *   [Core](reference/dotnet/0-9-538-reference-webview2.md)  
+    *   [Core](reference/dotnet/0-9-628-reference-webview2.md)  
     *   [Windows Forms](reference/winforms/0-9-515-reference-webview2.md)  
     *   [WPF](reference/wpf/0-9-515-reference-webview2.md)  

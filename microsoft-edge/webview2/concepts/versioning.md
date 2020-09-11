@@ -3,48 +3,59 @@ description: Für Microsoft Edge-WebView2 verwendete Versions Verwaltungsmodelle
 title: Versionsverwaltung von Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/22/2020
+ms.date: 09/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, WPF-apps, WPF, Edge, ICoreWebView2, ICoreWebView2Host, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: acf3103f39d33586ee0614aeb0f10de0ab71c89a
-ms.sourcegitcommit: b3555043e9d5aefa5a9e36ba4d73934d41559f49
+ms.openlocfilehash: 3ce1f0653a14d92571f1365cbfebc8bb2215ecbe
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "10894312"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010677"
 ---
 # Grundlegendes zu WebView2 SDK-Versionen  
 
-WebView2 hängt von der Funktion von Microsoft Edge ab.  Für jedes WebView2-SDK muss mindestens eine Browserversion installiert sein.  Die Mindestversion wird in der Paketversion des SDK widergespiegelt.  Wenn Sie beispielsweise das verwenden `SDK package version 0.9.488` , müssen Sie Microsoft Edge mit einer Buildnummer von 488 oder höher installieren.  Die Browserversion ist auch in den WebView2- [Versions][Releasenotes]hinweisen angegeben.  Weitere Informationen zu den neuesten Versionen des Browsers finden Sie unter [Browser Kanäle][DeployedgeChannels].  
+WebView2 hängt von der Funktion von Microsoft Edge ab.  Für jedes WebView2-SDK muss mindestens eine Browserversion installiert sein.  Die Mindestversion wird in der Paketversion des SDK widergespiegelt.  Wenn Sie beispielsweise das verwenden `SDK package version 0.9.488` , müssen Sie Microsoft Edge mit einer Buildnummer von 488 oder höher installieren.  Die Browserversion ist auch in den WebView2- [Versions][Releasenotes]hinweisen angegeben.  Wenn Sie weitere Informationen zur neuesten Version des Microsoft Edge-Browsers erhalten möchten, navigieren Sie zu [Browser Kanälen][DeployedgeChannels].  
 
 > [!NOTE]
-> WebView2 befindet sich derzeit in der Vorschau.  Während das WebView-Team versucht, die Abwärtskompatibilität zwischen Browserversionen und SDKs zu gewährleisten, ist dies nicht gewährleistet, da neuere Versionen des Browsers möglicherweise frühere SDK-Versionen nicht unterstützen.  Wenn es zu Unterbrechungen zwischen Browserversionen und SDKs kommt, geben wir die Änderungen in den [Versions][Releasenotes]hinweisen an.  
+> WebView2 befindet sich derzeit in der Vorschau.  Während das WebView-Team versucht, die Abwärtskompatibilität zwischen Browserversionen und SDKs zu gewährleisten, ist dies nicht gewährleistet, da neuere Versionen des Browsers möglicherweise frühere SDK-Versionen nicht unterstützen.  Wenn sich zwischen Browserversionen und SDKs Unterbrechungen ändern, werden die Änderungen in den [Versions][Releasenotes]hinweisen angegeben.  
 
-In Zukunft planen wir, das Verteilungsmodell für WebView2-Anwendungen zu ändern.  Weitere Informationen finden Sie unter [Evergreen-Verteilungsmodus][DistributionEvergreenMode].  
- 
-## Release-und Pre-Release-Paket  
+In Zukunft plant das WebView-Team, das Verteilungsmodell für WebView2-apps zu ändern.  Wenn Sie weitere Informationen erhalten möchten, navigieren Sie zu [Evergreen-Verteilungsmodus][DistributionEvergreenMode].  
+
+## Release-und Vorabversion-Paket  
 
 In Preview enthält das Release-Paket Folgendes.  
 
-*   [Win32 C/C++-APIs][ReferenceWin3209538]: APIs im SDK, die bei GA unverändert bleiben sollen.  
+*   [Win32 C/C++-APIs][ReferenceWin3209622]: APIs im SDK, die bei GA unverändert bleiben sollen.  
 
-In Preview enthält das Pre-Release-Paket die folgenden Komponenten.  
+In Preview enthält das Vorabversion-Paket die folgenden Komponenten.  
 
-*   .NET-APIs: [WPF][ReferenceWpf09515], [WinForms][ReferenceWinforms09515]und [Core][ReferenceDotnet09538]  
+*   .NET-APIs: [WPF][ReferenceWpf09515], [WinForms][ReferenceWinforms09515]und [Core][ReferenceDotnet09628]  
 *   Experimentelle APIs.  Weitere Informationen finden Sie im Abschnitt [experimentelle APIs](#experimental-apis) .  
 
 ## Experimentelle APIs  
 
-Wir testen experimentelle APIs, die möglicherweise zukünftige Funktionen darstellen.  Die experimentellen APIs sind wie `experimental` im SDK markiert.  Experimentelle APIs können als vollständig stabile APIs im Release-Paket ausgeliefert werden.  Sie sollten davon ausgehen, dass alle experimentellen APIs vor der Veröffentlichung geändert werden.  Bitte bewerten Sie die experimentellen APIs und geben Sie Feedback über das [WebView Feedback Repo][GithubMicrosoftedgeWebviewfeedback]frei.   
+Das WebView-Team testet experimentelle APIs, die möglicherweise zukünftige Funktionen darstellen.  Die experimentellen APIs sind wie `experimental` im SDK markiert.  Experimentelle APIs können als vollständig stabile APIs im Release-Paket ausgeliefert werden.  Sie sollten davon ausgehen, dass alle experimentellen APIs vor der Veröffentlichung geändert werden.  Bitte bewerten Sie die experimentellen APIs und geben Sie Feedback über das [WebView Feedback Repo][GithubMicrosoftedgeWebviewfeedback]frei.  
 
 > [!CAUTION]
-> Vermeiden Sie es, die experimentellen APIs in Produktionsanwendungen zu verwenden.  
+> Vermeiden Sie die Verwendung der experimentellen APIs in Produktions-apps.  
+
+## Übereinstimmende WebView2-Laufzeitversionen  
+
+Wenn Sie eine WebView2-App mit einer bestimmten SDK-Version schreiben, kann Ihre APP von den Benutzern für Sie mit verschiedenen kompatiblen Versionen der WebView2-Laufzeit ausgeführt werden.  In Zukunft enthält eine neuere kompatible WebView2-Laufzeitversion alle nicht experimentellen APIs einer älteren kompatiblen WebView2-Laufzeitversion sowie zusätzliche neue nicht-experimentelle APIs.  
+
+*   **Win32 C/C++** -Entwickler sollten bei der Verwendung `QueryInterface` zum Abrufen einer neuen Schnittstellenach einem Rückgabewert von überprüfen, der `E_NOINTERFACE` möglicherweise darauf hinweist, dass die WebView2-Laufzeit älter ist und diese bestimmte Schnittstelle nicht unterstützt.  
+*   **.Net-und WinUI-** Entwickler sollten auf eine Ausnahme überprüfen, `No such interface supported` Wenn Sie Methoden, Eigenschaften und Ereignisse verwenden, die in späteren SDKs hinzugefügt wurden, die möglicherweise auftreten, wenn die WebView2-Laufzeit älter ist und diese speziellen APIs nicht unterstützt.  
+
+Wenn eine API nicht zur Verfügung steht, sollten Sie das zugeordnete Feature nach Möglichkeit deaktivieren oder den Endbenutzer anderweitig darüber informieren, dass Sie die WebView2-Laufzeitversion aktualisieren müssen.  
+
+Experimentelle APIs werden möglicherweise eingeführt, geändert und aus SDK in SDK entfernt.  Wenn Sie versuchen, eine experimentelle API zu verwenden, die in der WebView2-Laufzeit nicht zur Verfügung steht, können Sie dasselbe zuvor beschriebene Verhalten beobachten.  
 
 ## Roadmap  
 
-Nachdem WebView2 einen stabilen allgemeinen verfügbaren Zustand erreicht hat, enthält das Release-Paket alle stabilen, unterstützten Win32 C/C++-und .NET-APIs.  Das Pre-Release-Paket enthält experimentelle APIs, die basierend auf Entwickler Feedback und geteilten Einblicken geändert werden können.  
+Nachdem WebView2 einen stabilen allgemeinen verfügbaren Zustand erreicht hat, enthält das Release-Paket alle stabilen, unterstützten Win32 C/C++-und .NET-APIs.  Das Vorabversion-Paket enthält experimentelle APIs, die sich aufgrund Ihres Feedbacks und der geteilten Einblicke ändern können.  
 
 <!--## Versioning  
 
@@ -58,9 +69,9 @@ After you have used a particular version of the SDK to build your app, your app 
 <!--links -->
 
 [DistributionEvergreenMode]: ./distribution.md#evergreen-distribution-mode "Evergreen-Verteilungsmodus – Verteilung von Anwendungen mit WebView2 | Microsoft docs"  
-[ReferenceDotnet09538]: ../reference/dotnet/0-9-538-reference-webview2.md "Referenz (WebView2) | Microsoft docs"  
+[ReferenceDotnet09628]: ../reference/dotnet/0-9-628-reference-webview2.md "Referenz (WebView2) | Microsoft docs"  
 [ReferenceWinforms09515]: ../reference/winforms/0-9-515-reference-webview2.md "Referenz (WebView2) | Microsoft docs"  
-[ReferenceWin3209538]: ../reference/win32/0-9-538-reference-webview2.md "Referenz (WebView2) | Microsoft docs"  
+[ReferenceWin3209622]: ../reference/win32/0-9-622-reference-webview2.md "Referenz (WebView2) | Microsoft docs"  
 [ReferenceWpf09515]: ../reference/wpf/0-9-515-reference-webview2.md "Referenz (WebView2) | Microsoft docs"  
 [Releasenotes]: ../releasenotes.md "Anmerkungen zu dieser Version von WebView2 SDK | Microsoft docs"  
 

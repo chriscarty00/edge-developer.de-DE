@@ -1,21 +1,23 @@
 ---
 description: Einbetten von Webtechnologien (HTML, CSS und JavaScript) in ihre systemeigenen Anwendungen mit dem Microsoft Edge WebView2-Steuerelement
-title: WebView2 Win32 C++-Referenz
+title: 0.9.579-WebView2 Win32 C++-Referenz
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 09/09/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: e6e921ca1cae586bef89962c5eb98668a655ad22
-ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
+ms.openlocfilehash: 92fad0c93e4942a92f5940834b0057043491b539
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "10883777"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010208"
 ---
-# Referenz (WebView2 Win32 C++)  
+# 0.9.579-Reference (WebView2 Win32 C++)  
+
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]
 
 Mit dem Microsoft Edge WebView2-Steuerelement können Sie Webinhalte in Ihrer Anwendung unter Verwendung von [Microsoft Edge \ (Chrom \)](https://www.microsoftedgeinsider.com) als Rendering-Modul hosten.  Weitere Informationen finden Sie unter [Übersicht über Microsoft Edge WebView2](../../index.md)) und [Erste Schritte mit WebView2](../../gettingstarted/win32.md).  [ICoreWebView2](0-9-538/ICoreWebView2.md) ist ein großartiger Ort, um mit dem Erlernen der Details der API zu beginnen.  
 

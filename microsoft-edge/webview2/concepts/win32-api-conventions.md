@@ -3,17 +3,17 @@ description: Win32 C++ WebView2-API-Konventionen
 title: Win32 C++ WebView2-API-Konventionen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/23/2020
+ms.date: 09/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, WPF-apps, WPF, Edge, ICoreWebView2, ICoreWebView2Host, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: c8792133da2b858cfaa456df5a7dce26c3c65154
-ms.sourcegitcommit: 553957c101f83681b363103cb6af56bf20173f23
+ms.openlocfilehash: 6c596b038e871caa5a364991351636f51ef7d685
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "10895566"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010684"
 ---
 # Win32 C++ WebView2-API-Konventionen  
 
@@ -21,7 +21,7 @@ ms.locfileid: "10895566"
 
 Asynchrone Methoden in der WebView2 Win32 C++-API verwenden eine Delegate-Schnittstelle, um Ihnen einen Rückruf zu senden, um anzugeben, wann die Async-Methode abgeschlossen wurde, den Erfolgs-oder Fehlercode und für einige das Ergebnis der asynchronen Methode.  Der letzte Parameter für alle asynchronen Methoden ist ein Zeiger auf eine Delegat-Schnittstelle, von der Sie eine Implementierung bereitstellen.  
 
-Die Delegat-Schnittstelle verfügt über eine einzelne `Invoke` Methode, die als erster Parameter eine `HRESULT` des Erfolgs-oder Fehlercodes akzeptiert.  Darüber hinaus gibt es möglicherweise einen zweiten Parameter, der das Ergebnis der Methode ist, wenn die Methode ein Ergebnis hat.  Beispielsweise übernimmt die [ICoreWebView2:: CapturePreview][Webview2ReferenceWin3209538Icorewebview2CapturePreview] -Methode als letzten Parameter einen `ICoreWebView2CapturePreviewCompletedHandler` Zeiger.  Um eine `CapturePreview` Methoden Anforderung zu senden, geben Sie eine Instanz des `ICoreWebView2CapturePreviewCompletedHandler` Zeigers an, den Sie implementieren.  Im folgenden Codeausschnitt wird eine Methode zum Implementieren verwendet.  
+Die Delegat-Schnittstelle verfügt über eine einzelne `Invoke` Methode, die als erster Parameter eine `HRESULT` des Erfolgs-oder Fehlercodes akzeptiert.  Darüber hinaus gibt es möglicherweise einen zweiten Parameter, der das Ergebnis der Methode ist, wenn die Methode ein Ergebnis hat.  Beispielsweise nimmt die [ICoreWebView2:: CapturePreview] [Webview2ReferenceWin3209538Icorewebview2CapturePreview]-Methode als letzten Parameter einen `ICoreWebView2CapturePreviewCompletedHandler` Zeiger ein.  Um eine `CapturePreview` Methoden Anforderung zu senden, geben Sie eine Instanz des `ICoreWebView2CapturePreviewCompletedHandler` Zeigers an, den Sie implementieren.  Im folgenden Codeausschnitt wird eine Methode zum Implementieren verwendet.  
 
 ```cpp
 HRESULT Invoke(HRESULT result)
@@ -117,6 +117,6 @@ Uri_CREATE_ALLOW_IMPLICIT_FILE_SCHEME | Uri_CREATE_NO_DECODE_EXTRA_INFO
 
 <!-- links -->  
 
-[Webview2ReferenceWin3209538Icorewebview2CapturePreview]: ../reference/win32/0-9-538/icorewebview2.md#capturepreview "CapturePreview-Interface-ICoreWebView2 | Microsoft docs"  
+[Webview2ReferenceWin3209622Icorewebview2CapturePreview]: ../reference/win32/0-9-622/icorewebview2.md#capturepreview "CapturePreview-Interface-ICoreWebView2 | Microsoft docs"  
 
 [CppCxWrlCallbackFunction]: /cpp/cppcx/wrl/callback-function-wrl "Callback-Funktion (WRL) | Microsoft docs"  
