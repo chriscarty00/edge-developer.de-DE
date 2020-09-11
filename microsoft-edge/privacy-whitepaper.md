@@ -3,21 +3,20 @@ description: Whitepaper zum Microsoft Edge-Datenschutz
 title: Whitepaper zum Microsoft Edge-Datenschutz
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/03/2020
+ms.date: 09/09/2020
 ms.topic: article
 ms.prod: microsoft-edge
-ms.technology: browser
 keywords: Microsoft Edge, Datenschutz, Whitepaper, Vertrauen
 ms.localizationpriority: high
 no-loc:
 - Cast
 - Google Cast
-ms.openlocfilehash: ff4d2b9a10e225478aaacbe0b70604a730172187
-ms.sourcegitcommit: 01940d5708339b03debc14001596f560cc9ab75a
+ms.openlocfilehash: 35227178a909ae6b378c4a17f578bac364f551c7
+ms.sourcegitcommit: ad02b0a3159eb9f111a580d1c229cb4297467210
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "10903873"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009245"
 ---
 # Whitepaper zum Microsoft Edge-Datenschutz  
 
@@ -76,6 +75,8 @@ Sie können Websites, Texte und Bilder im Internet sammeln und Inhalte mithilfe 
 Alle 24 Stunden lädt Microsoft Edge eine Liste unterstützter Websites herunter, für die spezielle Entitäten-Extraktionsvorlagen vorhanden sind.  Die Vorlagen sind spezifisch für die jeweilige Website.  Wenn Sie in Ihrer Sammlung ein neues Element erstellen, überprüft Microsoft Edge, ob sich die Website, von der aus Sie das neue Sammlungselement erstellen, in der Liste der unterstützten Websites befindet.  Wenn die Website in der Liste enthalten ist, pingt Microsoft Edge den Entitäten-Extraktionsdienst für die Vorlage der jeweiligen Website an.  Der Anfrage an den Dienst sind keine Benutzer-IDs zugeordnet.  Die Vorlage versucht, den Namen, den Preis, die Bewertungen, das Hauptbild und andere Daten über das zu sammelnde Element zu ermitteln.  Wenn die Website, von der aus Sie ein neues Sammlungselement erstellen, nicht auf der Liste der unterstützten Websites ist, lädt Microsoft Edge keine Vorlage herunter.  Die Vorlagen ermöglichen die lokale Erstellung aller Sammlungselemente auf dem Gerät.  Für die Erstellung der Sammlung werden keine Daten zu den Sammlungselementen an den Dienst gesendet.  
 
 Wenn Sie die auf dem Gerät gespeicherten Vorlagen sowie die Cachedaten löschen möchten, wechseln Sie zu `edge://settings/privacy`, und wählen Sie unter **Browserdaten löschen** neben **Jetzt Browserdaten löschen** die Schaltfläche **Zu löschende Elemente auswählen** aus, wählen Sie den gewünschten Zeitraum und Datentyp und anschließend die Schaltfläche **Jetzt löschen** aus.  Eine weitere Möglichkeit zum Löschen von zwischengespeicherten Daten ist folgende: Gehen Sie zu `edge://settings/clearBrowserData`, wählen Sie den gewünschten Zeitraum und Datentyp und anschließend die Schaltfläche **Jetzt löschen** aus.  
+
+Wenn Sie Ihren Sammlungen Produkte hinzufügen, bietet Ihnen Microsoft Edge die Möglichkeit, den Preis des Produkts mit anderen Händlern zu vergleichen, damit Sie, wenn Sie beim Einkaufen Sammlungen verwenden, den besten Preis erlangen.  Wenn Sie "Preis vergleichen für andere Einzelhändler" auswählen, sendet Microsoft Edge den Produktnamen, die Einkaufsdomäne, den Preis und andere Produktdetails an Bing, um die Preise mit anderen Händlern zu vergleichen.  Die Produktinformationen in Sammlungen werden über HTTPS gesendet. Diese HTTPS-Aufrufe beinhalten keine Benutzer-IDs.  
 
 Aktivieren Sie die Option **Vorschläge aus Pinterest in Sammlungen anzeigen**, wenn Sie möchten, dass "Sammlungen" eine Microsoft Bing-Suche mit dem Titel Ihrer Sammlung durchführt, um entsprechende relevante Pinterest-Themenseiten zu finden.  Microsoft Edge sendet keine Daten über Ihre Sammlungen an Pinterest.  Um die Vorschläge zu entfernen und die Suche nach Pinterest-Themenseiten zu deaktivieren, wechseln Sie zu `edge://settings/privacy`, und deaktivieren Sie die Einstellung **Vorschläge aus Pinterest in Sammlungen anzeigen**.  
 
@@ -257,9 +258,11 @@ Microsoft Edge verwendet einen Microsoft-Netzwerkzeitdienst zum Nachverfolgen de
 
 ## "Neuer Tab"-Seite  
 
-Microsoft Edge bietet eine ansprechende und anwenderorientierte "Neuer Tab"-Seite mit einem Suchfeld von [Bing][|::ref2::|Main], Direktlink-Kacheln für die von Ihnen am häufigsten besuchten Websites sowie relevanten Inhalten von Microsoft News oder Office 365.  Sie können das Erscheinungsbilds der "Neuer Tab"-Seite durch Auswählen der Schaltfläche "Anpassen" ändern.  Die Einstellungen für die "Neuer Tab"-Seite werden für jedes Profil festgelegt, lokal auf Ihrem Gerät gespeichert und nicht unter Geräten synchronisiert.  
+Microsoft Edge bietet eine ansprechende und anwenderorientierte "Neuer Tab"-Seite mit einem Suchfeld von [Bing][|::ref2::|Main], Direktlink-Kacheln für die von Ihnen am häufigsten besuchten Websites sowie relevanten Inhalten von Microsoft News oder Office 365.  Sie können das Erscheinungsbilds der "Neuer Tab"-Seite durch Auswählen der Schaltfläche "Anpassen" ändern.  Die Einstellungen für die "Neuer Tab"-Seite werden für jedes Profil festgelegt, lokal auf Ihrem Gerät gespeichert und nicht unter Geräten synchronisiert.
 
-:::image type="complex" source="./media/whitepaper-media/n-t-p1.png" alt-text="Neuer Tab -Seite" lightbox="./media/whitepaper-media/n-t-p1.png":::
+Um die Ladezeiten der "Neuer Tab"-Seite zu verbessern, kann die Microsoft "Neuer Tab"-Seite im Hintergrund geladen werden, um sie zu beschleunigen. Die geladenen Inhalte können Cookies enthalten, falls Sie Cookies zulassen. Um das Laden der Microsoft "Neuer Tab"-Seite im Hintergrund zu deaktivieren, gehen Sie zu `edge://settings/newTabPage` und deaktivieren Sie die Einstellung ** für das Vorladen der "Neuer Tab"-Seite, um die Erfahrung zu beschleunigen**. 
+
+:::image type="complex" source="./media/whitepaper-media/n-t-p1.png" alt-text=""Neuer Tab"-Seite" lightbox="./media/whitepaper-media/n-t-p1.png":::
    "Neuer Tab"-Seite  
 :::image-end:::  
 
@@ -417,8 +420,8 @@ Um Tippfehler in der URL in der Adressleiste zu beheben, die zu einem Websitefeh
 
 Wenn Sie sich mit einem Microsoft-Konto bei Microsoft Edge anmelden, können Sie die Browserdaten über alle Versionen von Microsoft Edge hinweg, bei denen Sie angemeldet sind, synchronisieren.  Sie können Ihre Favoriten, Einstellungen, Formularfelddaten (Adressen etc.), Kennwörter, Erweiterungen und Sammlungen synchronisieren.  Sie müssen das Aktivieren der Synchronisierung in Microsoft Edge zulassen, und die zu synchronisierenden Datentypen müssen evtl. einzeln aktiviert oder deaktiviert werden.  Zu den "Favoriten" zählen alle Tabs, die Sie in der älteren Version von Microsoft Edge für später gespeichert haben. Diese werden zusammen mit den restlichen Favoriten synchronisiert.  Gelöschte oder geänderte Favoriten oder andere Daten aus einer Microsoft Edge-Version, bei der Sie angemeldet sind, werden mit allen anderen Versionen von Microsoft Edge synchronisiert, in denen die Synchronisierung aktiviert ist und bei denen Sie angemeldet sind.  Um die Konfigurationen für die Synchronisierung zu verwalten, wechseln Sie zu `edge://settings/profiles/sync`.  Ihre Synchronisierungseinstellungen werden u. U. von Ihrer Organisation verwaltet.
 
-:::image type="complex" source="./media/whitepaper-media/sync.png" alt-text="Sync" lightbox="./media/whitepaper-media/sync.png":::
-   Sync  
+:::image type="complex" source="./media/whitepaper-media/sync.png" alt-text="Bild der Synchronisierungseinstellung auf "aktiviert" festgelegt" lightbox="./media/whitepaper-media/sync.png":::
+   Die Synchronisierungseinstellung ist aktiviert
 :::image-end:::  
 
 Damit die Synchronisierung durchgeführt werden kann, werden zusätzliche Informationen zu Gerätekonnektivität und Konfiguration, die zum Bereitstellen der Synchronisierungsfunktion erforderlich sind (z. B. Name, Marke und Modell Ihres Geräts), gesendet.  Die Daten können aus dem [Microsoft Gerätedashboard][MicrosoftAccountDevices] gelöscht werden.  Um die Favoriten zu verwalten, die synchronisiert werden sollen, wechseln Sie zu `edge://favorites`.  Alle anderen Datentypen können unter `edge://settings/profiles` verwaltet werden.  
@@ -426,6 +429,12 @@ Damit die Synchronisierung durchgeführt werden kann, werden zusätzliche Inform
 Alle synchronisierten Daten werden während der Übertragung über HTTPS zwischen Browser und Microsoft-Servern verschlüsselt.  Die synchronisierten Daten werden außerdem in verschlüsselter Form auf Microsoft-Servern gespeichert.  Vertrauliche Datentypen wie z. B. Adressen und Kennwörter werden auf dem Gerät vor der Synchronisierung zusätzlich verschlüsselt.  Wenn Sie ein Geschäfts- oder Uni-/Schulkonto verwenden, werden alle Datentypen zusätzlich verschlüsselt, bevor sie mithilfe von Microsoft Information Protection synchronisiert werden.  Alle übrigen synchronisierten Datentypen werden so lange gespeichert, bis Sie sie löschen, das Konto gelöscht oder inaktiv wird.  Alle synchronisierten Daten sind mit einer Konto-ID verknüpft, da diese erforderlich ist, um eine Synchronisierung über mehrere Geräte hinweg durchzuführen. 
 
 InPrivate- und Gastmodus-Browserdaten werden nicht mit Ihrem Microsoft-Konto synchronisiert.  Favoriten, die während InPrivate-Sitzungen erstellt wurden, werden jedoch mit Microsoft Edge-Versionen, in denen die Synchronisierung aktiviert ist und bei denen Sie angemeldet sind, synchronisiert.  
+
+## Tipps und Empfehlungen
+
+Microsoft Edge möchte Ihnen relevante Tipps und Empfehlungen bereitstellen, um die optimale Nutzung des Browsers zu erzielen.  Microsoft Edge verwendet verfügbare Gerätekonnektivitäts-und-Konfigurationsdaten, um relevante Tipps und Empfehlungen bereitzustellen.  Diese Daten werden aus Ihrem Betriebssystem, dem Gebietsschema, den Browsereinstellungen und anderen Gerätekonnektivitäts-und-Konfigurationsdaten bestehen.  Diese Daten werden über eine sichere HTTPS-Verbindung mit einer für Ihren Browser eindeutigen rücksetzbaren ID gesendet.  Für Windows 10-Geräte, während Microsoft Edge eingerichtet wird, legen wir auf maßgeschneiderte Erfahrungen in Windows wert.  [Weitere Informationen zu maßgeschneiderten Erfahrungen in Windows] [https://support.microsoft.com/help/4468236/diagnostics-feedback-and-privacy-in-windows-10-microsoft-privacy].  
+
+Diese Daten werden nicht während des InPrivate-Browsen oder im Gastmodus gesendet.  
 
 ## Tracking verhindern  
 
