@@ -1,5 +1,5 @@
 ---
-description: Hosten von Webinhalten in ihrer Win32-App mit dem Steuerelement "Microsoft Edge WebView 2"
+description: Hosten von Webinhalten in ihren Win32-, .net-UWP-Anwendungen mit dem Microsoft Edge WebView2-Steuerelement
 title: Microsoft Edge-WebView2-Steuerelement
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,13 +7,13 @@ ms.date: 08/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, CoreWebView2, ICoreWebView2Host, Browser-Steuerelement, Edge-HTML, Windows Forms, WinForms, WPF, .net
-ms.openlocfilehash: bb2287ca854372d9592a3b90c7df6f9a8abf620e
-ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
+keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, CoreWebView2, ICoreWebView2Host, Browser-Steuerelement, Edge-HTML, Windows Forms, WinForms, WPF, .net, WinUI, Projekt-Wiedervereinigung
+ms.openlocfilehash: d3294ce72237a323113ed9f7c8f31e37af43f5e6
+ms.sourcegitcommit: efdc6369c48942bfa39e45c713300ed70f0e3655
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "10926470"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "11013744"
 ---
 # Einführung in Microsoft Edge WebView2 (Preview)  
 
@@ -110,7 +110,8 @@ Sie können WebView2-Anwendungen unter den folgenden Windows-Versionen ausführe
 *   Windows 10  
 *   Windows8.1  
 *   Windows 8  
-*   Windows 7  
+*   Windows7  
+*   Windows Server 2019  
 *   Windows Server 2016  
 *   Windows Server 2012  
 *   Windows Server-2012R2  
