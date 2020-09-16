@@ -1,18 +1,18 @@
 ---
 description: Erweiterungen Enterprise-Dokumentation für Edge (Chrom)-Erweiterungen.
-title: Hosten und aktualisieren
+title: Hosten und Aktualisieren
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/05/2019
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: Edge-Chromium, Erweiterungen-Entwicklung, Browser-Erweiterungen, Addons, Partner Center, Entwickler
-ms.openlocfilehash: eb1f9921d503d25557fc9efb1517537e7a90f4aa
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: d918aec12e56daf66d13488d360a454d736031e8
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10567515"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015702"
 ---
 # Web Store-Hosting und-Aktualisierung  
 

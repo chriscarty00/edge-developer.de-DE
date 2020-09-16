@@ -3,16 +3,16 @@ description: Überprüfen und Ändern von Animationen mit dem Animations Inspekt
 title: Überprüfen von Animationen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: a74a401edf5331f2dd3c1bf574110241f616d9f6
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: e867cc373286666f73bee3b8fb886f60fa1b94f6
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992827"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015772"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,13 +28,7 @@ ms.locfileid: "10992827"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Überprüfen von Animationen   
-
-
+# Überprüfen von Animationen  
 
 Überprüfen und Ändern von Animationen mit dem Animations Inspektor für Microsoft Edge devtools  
 
@@ -48,7 +42,7 @@ ms.locfileid: "10992827"
 *   Überprüfen Sie Animationen, indem Sie Sie verlangsamen, jede einzelne wiedergeben oder den Quellcode anzeigen.  
 *   Sie können Animationen ändern, indem Sie den Offset für Anzeigedauer, Verzögerung, Dauer oder Keyframe ändern.  
 
-## Übersicht   
+## Übersicht  
 
 Der Microsoft Edge devtools-Animations Inspektor hat zwei Hauptaufgaben.  
 
@@ -85,8 +79,8 @@ Der Animations Inspektor wird als Registerkarte neben dem Konsolen Einzug geöff
 
 Der Animations Inspektor ist in vier Hauptabschnitte unterteilt \ (oder Bereiche \).  Dieser Leitfaden bezieht sich auf jeden Bereich wie folgt:  
 
-| | Bereich | Beschreibung |  
-| --- |:--- |:--- |  
+| Index | Bereich | Beschreibung |  
+|:--- |:--- |:--- |  
 | 1 | **Steuerelemente** | Hier können Sie alle aktuell aufgenommenen Animationsgruppen löschen oder die Geschwindigkeit der aktuell ausgewählten Animationsgruppe ändern. |  
 | 2 | **Übersicht** | Wählen Sie hier eine Animationsgruppe aus, um Sie im **Detail** Bereich zu überprüfen und zu ändern. |  
 | 3 | **Zeitachse** | Pausieren und starten Sie eine Animation von hier aus, oder springen Sie zu einer bestimmten Stelle in der Animation. |  
@@ -104,7 +98,7 @@ Wenn Sie eine Animation aufzeichnen möchten, führen Sie einfach die Interaktio
 
 <!--  > [!VIDEO animations/capture-animations.mp4]  -->  
 
-## Überprüfen von Animationen   
+## Überprüfen von Animationen  
 
 Nachdem Sie eine Animation aufgenommen haben, gibt es verschiedene Möglichkeiten, Sie wiederzugeben:  
 
@@ -138,7 +132,7 @@ Wenn für zwei Elemente dieselbe Animation angewendet wurde, weist der Animation
    Farbcodierte Animationen  
 :::image-end:::  
 
-## Ändern von Animationen   
+## Ändern von Animationen  
 
 Es gibt drei Möglichkeiten, wie Sie eine Animation mit dem Animations Inspektor ändern können.  
 
@@ -170,11 +164,9 @@ Wenn Sie einer Animation eine Verzögerung hinzufügen möchten, klicken Sie dar
    Geänderte Verzögerung  
 :::image-end:::  
 
-<!--  
-  
+## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

@@ -1,22 +1,24 @@
 ---
-description: Erweiterungen erste Schritte Teil 1
+description: Erweiterungen erste Schritte Teil 2
 title: Dynamisches Einfügen eines NASA-Bilds unter dem Body-Tag der Seite mithilfe von Inhalts Skripts
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/08/2020
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: Edge-Chromium, Web-Entwicklung, HTML, CSS, JavaScript, Entwickler, Erweiterungen
-ms.openlocfilehash: b37184f0188b72ec868ab3de3f2341c0694ee42c
-ms.sourcegitcommit: 0bc1312a1e6a0ac37cf385201db4361fc05184fc
+ms.openlocfilehash: 586f0427241e5f01b63a22ce204484dc5e8cf154
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "10683644"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015758"
 ---
 # Dynamisches Einfügen eines NASA-Bilds unter dem Body-Tag der Seite mithilfe von Inhalts Skripts  
-  
-[Abgeschlossene Erweiterungspaket Quelle für diesen Teil][ArchiveExtensionGettingStartedPart2]  
+
+<!--  
+[Completed Extension Package Source for This Part][ArchiveExtensionGettingStartedPart2]  
+-->  
 
 ## Übersicht  
 
@@ -61,8 +63,8 @@ Aktualisieren Sie zunächst die `popup.html` Datei mit einem geraden Markup, in 
 
 Nachdem Sie Ihre Erweiterung aktualisiert und das Symbol für die Erweiterungs Einführung ausgewählt haben, enthält das Popupfenster die Schaltfläche Anzeige.  
 
-:::image type="complex" source="./media/part2-popupdialog.png" alt-text="Popup. HTML-Anzeige nach dem Drücken des Erweiterungssymbols":::
-   Popup. HTML-Anzeige nach dem Drücken des Erweiterungssymbols
+:::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.html-Anzeige nach dem Drücken des Erweiterungssymbols":::
+   popup.html-Anzeige nach dem Drücken des Erweiterungssymbols
 :::image-end:::
 
 <!--![popup.html display after pressing the Extension icon][ImagePart2Popupdialog]  -->  
@@ -139,7 +141,7 @@ Dazu müssen Sie einen weiteren Eintrag in der Datei hinzufügen `manifest.json`
 
 Sie haben nun den Code in Ihre Datei geschrieben, `popup.js` um eine Nachricht an die Inhaltsseite zu senden, die auf der aktuellen aktiven Registerkarte eingebettet ist, aber Sie haben diese Inhaltsseite nicht erstellt und eingefügt.  Tun Sie das jetzt.  
 
-## Aktualisieren ihres Manifests. JSON für Content und Web Access  
+## Aktualisieren Ihrer manifest.jsfür Inhalte und Web Access  
 
 Das aktualisierte `manifest.json` , das das `content-scripts` und enthält, `web_accessible_resources` ist wie folgt.  
 
@@ -219,8 +221,8 @@ Wenn ein Ereignis vom Listener verarbeitet wird, wird die Funktion, die der erst
 
 Wenn Sie nun zu einer beliebigen Seite navigieren und das Symbol für die **Erweiterung** auswählen, wird das Popupmenü wie folgt angezeigt:  
 
-:::image type="complex" source="./media/part2-popupdialog.png" alt-text="Popup. HTML-Anzeige nach dem Drücken des Erweiterungssymbols":::
-   Popup. HTML-Anzeige nach dem Drücken des Erweiterungssymbols
+:::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.html-Anzeige nach dem Drücken des Erweiterungssymbols":::
+   popup.html-Anzeige nach dem Drücken des Erweiterungssymbols
 :::image-end:::
 
 <!--![popup.html display after pressing the Extension icon][ImagePart2Popupdialog]  -->  

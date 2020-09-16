@@ -1,18 +1,18 @@
 ---
 description: Erfahren Sie, was eine Chrom-Erweiterung ist, und erstellen Sie eine vollständige Bildanzeige Erweiterung, die Optionen, Inhalts Injektion, hintergrundskripts, Speicher und vieles mehr umfasst.
-title: Erste Schritte mit Microsoft Edge (Chrom)-Erweiterungen
+title: Erste Schritte mit Microsoft Edge-Erweiterungen (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/29/2020
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: Edge-Chromium, Web-Entwicklung, HTML, CSS, JavaScript, Entwickler, Erweiterungen
-ms.openlocfilehash: c2b24dc3d5535beeef6a4255b6fe2439fb67b77d
-ms.sourcegitcommit: 19ef1422733ef1fd051d2b4f0263ce191e8d67bc
+ms.openlocfilehash: 31bb970201e8fe66c9996938fe8461d503d9c6a1
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "10902836"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015723"
 ---
 # Erste Schritte mit Microsoft Edge \ (Chrom \)-Erweiterungen  
 

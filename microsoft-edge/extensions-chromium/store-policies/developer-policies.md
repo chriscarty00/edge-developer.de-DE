@@ -1,20 +1,20 @@
 ---
 description: Microsoft Edge Addons-Katalog-Entwicklerrichtlinien.
-title: Microsoft Edge Addons-Katalog-Entwicklerrichtlinien
+title: Entwicklerrichtlinien für den Katalog für Microsoft Edge-Add-Ons
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/21/2020
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: Edge-Chromium, Erweiterungen-Entwicklung, Browser-Erweiterungen, Addons, Partner Center, Entwickler
-ms.openlocfilehash: be159491d892c176a8439393573dc23680fac377
-ms.sourcegitcommit: 531ec8aa1f89b28bc4d271e8e995f846f2392bc3
+ms.openlocfilehash: f71767cc4cd887ce9351202dd06732760299816d
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "10607433"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015709"
 ---
-# Microsoft Edge Addons-Katalog-Entwicklerrichtlinien  
+# Entwicklerrichtlinien für den Katalog für Microsoft Edge-Add-Ons  
 
 ## Einführung und Ziel dieses Dokuments  
 

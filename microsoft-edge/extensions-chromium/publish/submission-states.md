@@ -3,16 +3,16 @@ description: Die Schritte zum Erstellen des Microsoft Edge Addons-entwicklerkont
 title: Status der Erweiterungs Übermittlung und Übersicht
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: Edge-Chromium, Erweiterungen-Entwicklung, Browser-Erweiterungen, Addons, Partner Center, Entwickler
-ms.openlocfilehash: 3bb648ee9db062bcb12f7592df752ab25d8322b5
-ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
+ms.openlocfilehash: 028112f958656a705c7b52fa3a7bbfa49a1a0f79
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "10882646"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015731"
 ---
 # Status der Erweiterungs Übermittlung und Übersicht  
 
@@ -26,7 +26,7 @@ Auf der Übersichtsseite im Partner Center wird der Status Ihrer Erweiterung im 
 | 4|  Im Laden |  Nachdem die Überprüfung abgeschlossen und ihre Erweiterung im Microsoft Store veröffentlicht wurde, ändert sich der Status in diesen Zustand.  <br />  Ihre Erweiterung steht im Microsoft Store in den von Ihnen angegebenen Märkten zur Verfügung.  |  
 | 5 |  Im Laden.  Update in Review |  Ihre Erweiterung wird im Microsoft Store veröffentlicht, und Sie haben ein Update übermittelt, das von Microsoft überprüft wird.  |  
 | 6 |  Überprüfung fehlgeschlagen |  Wenn Ihre Erweiterung eine Überprüfung fehlschlägt, ändert sich der Status in diesen Zustand.  <br />  Eine fehlgeschlagene Überprüfung kann während der ersten Überprüfung oder während eines Updates erfolgen.  <br />  Es wird davon ausgegangen, dass Sie Korrekturmaßnahmen ergreifen und ihre Erweiterung für die Veröffentlichung im Microsoft Store erneut übermitteln.  |  
-| 7 |  Im Store nicht verfügbar |  Es gibt drei mögliche Szenarien, in denen die Erweiterung diesen Zustand anzeigt: **unveröffentlicht vom Speicher** , **aus dem Speicher entfernt**und **blockiert**.  Die Beschreibung jeder dieser drei ist unten angegeben.  |  
+| 7 |  Im Store nicht verfügbar |  Es gibt drei mögliche Szenarien, in denen die Erweiterung diesen Zustand anzeigt:  **unveröffentlicht vom Speicher** , **aus dem Speicher entfernt**und **blockiert**.  Die Beschreibung jeder dieser drei ist unten angegeben.  |  
 | 8 |  Im Store nicht veröffentlicht |  Sie haben ihre Erweiterung vom Microsoft Store im Partner Center unveröffentlicht.  <br />  Klicken Sie im Partner Center auf der Seite für die Übermittlung von Erweiterungen auf die Schaltfläche Veröffentlichung aufheben.  <br />  Nach dem Aufheben der Veröffentlichung steht Ihre Erweiterung im Microsoft Store nicht mehr zur Verfügung, damit Sie von neuen Benutzern heruntergeladen werden kann, doch vorhandene Benutzer können ihre Kopien ihrer Erweiterung weiterhin verwenden.  |  
 | 9 |  Aus dem Store entfernt |  Wenn Ihre Erweiterung festgestellt wird, dass Sie gegen die allgemeinen Geschäftsbedingungen von Microsoft Store verstößt, kann Microsoft diese aus dem Microsoft Store entfernen, und der Zustand ändert sich in diesem Zustand.  <br />  Nachdem Sie Ihre Erweiterung von Microsoft entfernt haben, steht Ihre Erweiterung im Microsoft Store nicht mehr zur Verfügung, damit Sie von neuen Benutzern heruntergeladen werden kann, aber vorhandene Benutzer können ihre Kopien ihrer Erweiterung weiterhin verwenden.  |  
 | 10 |  Blockiert |  Wenn Sie feststellen, dass Ihre Erweiterung bösartig ist und die Sicherheit und den Datenschutz von Benutzern beeinträchtigt, hat Microsoft das Recht, ihre Erweiterung vom Microsoft Store zu blockieren, und der Zustand ändert sich in diesem Zustand.  <br />  Wenn Ihre Erweiterung blockiert ist, wird Ihre Durchwahl aus dem Microsoft Store entfernt, und die Erweiterung wird auch von den Benutzergeräten entfernt.  |  

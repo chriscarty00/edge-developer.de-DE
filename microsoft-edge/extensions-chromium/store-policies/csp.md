@@ -3,16 +3,16 @@ description: Inhalts Sicherheitsrichtlinie für Edge (Chrom)-Erweiterungen.
 title: Inhalts Sicherheitsrichtlinie (CSP)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/09/2019
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: Edge-Chromium, Erweiterungen-Entwicklung, Browser-Erweiterungen, Addons, Partner Center, Entwickler
-ms.openlocfilehash: 52d6d0afb38401250183788726013d521a269f06
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: f3769639465d048c42ad0705f74598fbd1db8a20
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10567473"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015716"
 ---
 # Inhalts Sicherheitsrichtlinie \ (CSP \)  
 
@@ -194,7 +194,7 @@ Laden Sie die Datei herunter, fügen Sie Sie in Ihr Paket ein, und schreiben Sie
 
 As of Chrome 46, -->  
 
-Inline Skripts können durch Angabe des Base64-codierten Hashs des Quellcodes in der Richtlinie zugelassen werden.  Dieser Hash muss vom verwendeten Hashalgorithmus (SHA256, SHA384 oder SHA512 \) vorangestellt werden.  Ein Beispiel finden Sie unter [Hash Verwendung für \ <Skript \ > Elemente][W3CContentSecurityPolicyLevel2ScriptSrcHashUsage] .  
+Inline Skripts können durch Angabe des Base64-codierten Hashs des Quellcodes in der Richtlinie zugelassen werden.  Dieser Hash muss vom verwendeten Hashalgorithmus (SHA256, SHA384 oder SHA512 \) vorangestellt werden.  Ein Beispiel finden Sie unter [Hash Verwendung für \<script\> Elemente][W3CContentSecurityPolicyLevel2ScriptSrcHashUsage] .  
 
 **Remote Skript**  
 

@@ -3,20 +3,22 @@ description: Erweiterungen erste Schritte Teil 1
 title: Erstellen einer einfachen Erweiterung, die das NASA-Bild des Tages öffnet
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/08/2020
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: Edge-Chromium, Web-Entwicklung, HTML, CSS, JavaScript, Entwickler, Erweiterungen
-ms.openlocfilehash: dd5c1dab0cb9b54b79be7d2728cb9bfde0945185
-ms.sourcegitcommit: 0bc1312a1e6a0ac37cf385201db4361fc05184fc
+ms.openlocfilehash: 826401869b98d339e9b156a3727d94bd1182063d
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "10683623"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015765"
 ---
-# Erstellen einer einfachen Erweiterung, die das NASA-Bild des Tages öffnet  
-
-[Abgeschlossene Erweiterungspaket Quelle für diesen Teil][ArchiveExtensionGettingStartedPart1]  
+# Erstellen einer einfachen Erweiterung, die das NASA-Bild des Tages öffnet 
+ 
+<!--  
+[Completed Extension Package Source for This Part][ArchiveExtensionGettingStartedPart1]  
+-->  
 
 ## Übersicht  
 
@@ -161,10 +163,12 @@ Die Verzeichnisstruktur für die Beispielerweiterung wird im folgenden Diagramm 
         └── popup.html
 ```  
 
+<!--  
 > [!NOTE]
-> Die `images/stars.jpeg` im vorherigen Bild aufgelistete Datei steht im [ZIP-Download][ArchiveExtensionGettingStartedPart1]zur Verfügung.  
+> The `images/stars.jpeg` file listed in the previous image is available in the [zip download][ArchiveExtensionGettingStartedPart1].  
+-->  
 
-Das ist alles, was Sie zum Erstellen einer Arbeits Erweiterung benötigen.  Alles, was übrig bleibt, ist es zu testen.  
+Das ist alles, was Sie zum Erstellen einer Arbeits Erweiterung benötigen.  Alles, was noch zu tun ist, ist es zu testen.  
 
 Im nächsten Abschnitt wird erläutert, wie Sie die Erweiterung \ (manchmal auch als Seite ladend bezeichnet) in den Microsoft Edge \ (Chromium \)-Browser laden, um Sie zu testen.  
 

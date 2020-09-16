@@ -3,22 +3,22 @@ description: Debuggen von CSS-Raster Features, bearbeiten und Wiedergeben von An
 title: Neuerungen in devtools (Microsoft Edge 85)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 96ad9a4f21c36135013033fa4de31281fe6c4e83
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 01651bdf0f36f7c175f843655c275695a680b6c1
+ms.sourcegitcommit: b337717957529239434b4e8e1e167aebf0543518
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993611"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015461"
 ---
 # Neuerungen in devtools (Microsoft Edge 85)  
 
 ## Ankündigungen des Microsoft Edge devtools-Teams  
 
-In den folgenden Abschnitten finden Sie eine Liste der Ankündigungen, die Sie möglicherweise im Microsoft Edge devtools-Team verpasst haben.  Schauen Sie sich die Ankündigungen an, um neue Features in den devtools, vs-Code Erweiterungen und vielem mehr auszuprobieren.  Wenn Sie über die neuesten und besten Funktionen Ihrer Entwicklertools auf dem Laufenden bleiben möchten, laden Sie die [Microsoft Edge Preview-Kanäle][MicrosoftEdgePreviewChannels] herunter, und [folgen Sie dem Microsoft Edge devtools-Team auf Twitter][EdgeDevToolsTwitterAccount].  
+In den folgenden Abschnitten finden Sie eine Liste der Ankündigungen, die Sie möglicherweise im Microsoft Edge devtools-Team verpasst haben.  Schauen Sie sich die Ankündigungen an, um neue Features im devtools, Visual Studio-Code Erweiterungen und vieles mehr zu testen.  Wenn Sie über die neuesten und besten Funktionen Ihrer Entwicklertools auf dem Laufenden bleiben möchten, laden Sie die [Microsoft Edge Preview-Kanäle][MicrosoftEdgePreviewChannels] herunter, und [folgen Sie dem Microsoft Edge devtools-Team auf Twitter][EdgeDevToolsTwitterAccount].  
 
 ### Debuggen von CSS-Raster Features  
 
@@ -245,8 +245,8 @@ Chrom Problem [#1071432][CR1071432]
 
 Beim Ausführen von kopieren oder Ausschneiden ohne Auswahl im [Quellcode-Panel-Editor][DevtoolsSourcesEditCssJavascript]kopiert devtools die aktuelle Inhaltszeile oder schneidet sie aus.  
 
-:::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="Mit dem Cursor am Ende der Zeile 5, Kopieren der gesamten Zeile aus pen.js im devtools und Einfügen in vs-Code" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
-   Mit dem Cursor am Ende der Zeile 5, kopieren Sie die gesamte Zeile aus **pen.js** im devtools, und fügen Sie Sie in [vs-Code][VSCode]ein.
+:::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="Mit dem Cursor am Ende der Zeile 5, Kopieren der gesamten Zeile aus pen.js im devtools und Einfügen in Visual Studio-Code" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
+   Mit dem Cursor am Ende der Zeile 5, kopieren Sie die gesamte Zeile aus **pen.js** im devtools, und fügen Sie Sie in [Visual Studio-Code][VSCode]ein.
 :::image-end:::  
 
 Chrom Problem [#800028][CR800028]
@@ -260,7 +260,7 @@ Die **Gruppe ähnliche** Umschalter in den Konsoleneinstellungen gilt jetzt für
 Zuvor hat devtools die Gruppierung der Nachrichten nicht aufheben, obwohl `hello` **Gruppe ähnlich** deaktiviert ist.  Nun werden die `hello` Nachrichten nicht gruppiert.  
 
 :::image type="complex" source="../../media/2020/06/ungroup-similar.msft.png" alt-text="Wenn Gruppe ähnlich deaktiviert ist, werden die Hello-Nachrichten nicht gruppiert" lightbox="../../media/2020/06/ungroup-similar.msft.png":::
-   Wenn **Gruppe ähnlich** deaktiviert ist, `hello` werden die Nachrichten nicht gruppiert.
+   Wenn **"Gruppe ähnlich"** deaktiviert ist, `hello` werden die Nachrichten nicht gruppiert
 :::image-end:::  
 
 Geben Sie diesem Feature einen Versuch mit einem [Beispiel, mit dem doppelte Nachrichten an die Konsole gesendet werden][CodepenZoherghadyaliZyrjgdJ].  
@@ -303,7 +303,7 @@ Chrom Problem [#974550][CR974550]
 
 ### Neue Symbole für Haltepunkte, bedingte Haltepunkte und logpoints  
 
-Das **Quellen** Panel enthält neue Designs für Haltepunkte, bedingte Haltepunkte und logpoints.  Haltepunkte werden durch einen roten Kreis dargestellt, genau wie [vs-Code][VSCode] und [Visual Studio][VS].  Symbole werden hinzugefügt, um bedingte Haltepunkte und logpoints zu unterscheiden.  
+Das **Quellen** Panel enthält neue Designs für Haltepunkte, bedingte Haltepunkte und logpoints.  Haltepunkte werden durch einen roten Kreis dargestellt, genau wie [Visual Studio-Code][VSCode] und [Visual Studio][VS].  Symbole werden hinzugefügt, um bedingte Haltepunkte und logpoints zu unterscheiden.  
 
 :::image type="complex" source="../../media/2020/06/breakpoints.msft.png" alt-text="Breakpoints" lightbox="../../media/2020/06/breakpoints.msft.png":::
    Breakpoints  

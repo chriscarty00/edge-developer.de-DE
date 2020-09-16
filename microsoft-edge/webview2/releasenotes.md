@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: 81855e3caa899f777a0db7bf3789dfa66aa6f267
-ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
+ms.openlocfilehash: 2e5676870ecfb4c02130d61e94e762625a8d903a
+ms.sourcegitcommit: 65db518273b3cd69f1b3c528809600719b9b70aa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11010194"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "11016319"
 ---
 # Anmerkungen zu dieser Version von WebView2 SDK  
 
@@ -367,7 +367,7 @@ Erste Entwickler-Preview-Version.
 
 [DeployedgeMicrosoftEdgePolicies]: /deployedge/microsoft-edge-policies "Microsoft Edge – Richtlinien | Microsoft docs"  
 
-[DotnetStandardAssemblyStrongNamed]: /dotnet/standard/assembly/strong-named.md "Assemblys mit starkem Namen | Microsoft docs"  
+[DotnetStandardAssemblyStrongNamed]: /dotnet/standard/assembly/strong-named "Assemblys mit starkem Namen | Microsoft docs"  
 
 [GithubMicrosoftedgeWebviewfeedbackIssue1]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/1 "Feedback Repo für MicrosoftEdge/WebViewFeedback Issue 1"  
 [GithubMicrosoftedgeWebviewfeedbackIssue12]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/12 "Feedback Repo für MicrosoftEdge/WebViewFeedback Issue 12"  
