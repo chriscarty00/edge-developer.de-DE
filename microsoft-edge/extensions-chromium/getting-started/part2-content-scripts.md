@@ -7,12 +7,12 @@ ms.date: 09/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Edge-Chromium, Web-Entwicklung, HTML, CSS, JavaScript, Entwickler, Erweiterungen
-ms.openlocfilehash: 586f0427241e5f01b63a22ce204484dc5e8cf154
-ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
+ms.openlocfilehash: fd2276c069116a7f69f06ae50f201e284b60f3ea
+ms.sourcegitcommit: 744e2ecf42bcc427ae33e5dadbf6cd48ee0ab6a5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015758"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "11016729"
 ---
 # Dynamisches Einfügen eines NASA-Bilds unter dem Body-Tag der Seite mithilfe von Inhalts Skripts  
 
@@ -32,7 +32,7 @@ In Teil 2 erfahren Sie, wie Sie das Popup-Menü aktualisieren können, damit das
 
 ## Entfernen des Bilds aus dem Popup und ersetzen durch eine Schaltfläche  
 
-Aktualisieren Sie zunächst die `popup.html` Datei mit einem geraden Markup, in dem ein Titel und eine Schaltfläche angezeigt werden.  Sie programmieren die Schaltfläche in Kürze, aber im Moment fügen Sie einfach einen Verweis auf eine leere JavaScript-Datei hinzu `popup.js` .  Hier ist Update HTML.  
+Aktualisieren Sie zunächst die `popup.html` Datei mit einem geraden Markup, in dem ein Titel und eine Schaltfläche angezeigt werden.  Sie werden die Schaltfläche in Kürze programmieren, aber im Moment fügen Sie einfach einen Verweis auf eine leere JavaScript-Datei hinzu `popup.js` .  Hier ist Update HTML.  
 
 ```html
 <html>
