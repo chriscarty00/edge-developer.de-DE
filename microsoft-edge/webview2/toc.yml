@@ -16,6 +16,8 @@
       href: concepts/distribution.md
     - name: Verwaltung von Benutzerdatenordnern
       href: concepts/userdatafolder.md
+    - name: WebView2-Anwendungen verwalten
+      href: concepts/enterprise.md
     - name: Navigationsereignisse
       href: concepts/navigation-events.md
     - name: Prozessmodell
