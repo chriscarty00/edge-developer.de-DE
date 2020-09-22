@@ -1,80 +1,90 @@
 ---
 description: Verteilungsoptionen beim Freigeben einer APP mit Microsoft Edge WebView2
-title: Verteilung der Microsoft Edge WebView2-Anwendung
+title: Verteilung von Microsoft Edge WebView2-Anwendungen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/10/2020
+ms.date: 09/21/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, WPF-apps, WPF, Edge, ICoreWebView2, ICoreWebView2Host, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: 3536b749c8a3389b5e247e42f53abf74a9e3281e
-ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
+ms.openlocfilehash: 7db610ff1133b1b5b380372422f1f2f10981e583
+ms.sourcegitcommit: 24151cc65bad92d751a8e7a868c102e1121456e3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11010768"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11052186"
 ---
 # Verteilung von Anwendungen mithilfe von WebView2  
 
-Das WebView2-Steuerelement verwendet die Microsoft Edge \ (Chromium \)-Plattform.  Wenn Sie Ihre APP Verpacken und verteilen, stellen Sie sicher, dass eine Kopie der Plattform oder der WebView2-Laufzeit vorhanden ist, bevor die APP gestartet wird.  Auf der folgenden Seite wird beschrieben, wie Sie \ (der Entwickler \) sicherstellen können, dass die WebView2-Laufzeit installiert ist, und die beiden Verteilungs Modi für Ihre WebView2-Anwendung verwenden:  [Evergreen](#evergreen-distribution-mode) und [Feste Version](#fixed-version-distribution-mode).  
+Stellen Sie beim Verteilen Ihrer WebView2-Anwendung sicher, dass die Backing-Webplattform-die [WebView2-Runtime](#understanding-the-webview2-runtime) vorhanden ist, bevor die APP gestartet wird.  In diesem Artikel wird beschrieben, wie Entwickler die WebView2-Laufzeit installieren können, und wie Sie die beiden Verteilungs Modi für Ihre WebView2-Anwendung verwenden:  [Evergreen](#evergreen-distribution-mode) und [Feste Version](#fixed-version-distribution-mode).  
 
 ## Immergrüner Verteilungsmodus  
 
-Der immergrüne Verteilungsmodus sorgt dafür, dass Ihre APP die neuesten Funktionen und Sicherheitsupdates nutzt.  Der immergrüne Verteilungsmodus weist die folgenden Merkmale auf:  
-
-*   Die Web-Plattform wird automatisch ohne zusätzlichen Aufwand von Ihnen aktualisiert.  
-*   Alle Anwendungen, die den immergrünen Verteilungsmodus nutzen, verwenden eine freigegebene Kopie der Platt Form Binärdateien, wodurch Speicherplatz gespart wird.  
-
-Es gibt mehrere Kanäle, WebView2 die Anwendungen als Web-Plattform verwenden können.  Standardmäßig zielt WebView2 auf den stabilsten auf dem Gerät verfügbaren Kanal, der die Mindestanforderungen für die Version des WebView2-SDK erfüllt.  Die folgenden Kanäle sind in der Reihenfolge von Most zu least stable-Kanal aufgelistet.  
-
-1.  WebView2-Laufzeit \ (Vorschau \)  
-1.  Microsoft Edge Beta Channel  
-1.  Microsoft Edge Dev Channel  
-1.  Microsoft Edge Canary Channel    
-
 > [!NOTE]
-> Das Evergreen-Verteilungsmodell wird für die meisten Entwickler empfohlen.  
+> Der immergrüne Verteilungsmodus wird für die meisten Entwickler empfohlen.  
 
-> [!IMPORTANT]
-> Microsoft Edge stable-Kanal ist kein gültiges Ziel für WebView2, und die Gründe werden später beschrieben.  
+Der immergrüne Verteilungsmodus sorgt dafür, dass Ihre APP die neuesten Funktionen und Sicherheitsupdates nutzt.  Sie weist die folgenden Merkmale auf:  
 
-Weitere Informationen zur Versionsverwaltung finden Sie unter [Versionsverwaltung][ConceptsVersioning] und [Globals][ReferenceWin3209622WebviewIdl].  
+*   Die zugrunde liegende Web-Plattform \ (WebView2 Runtime \) wird automatisch ohne zusätzlichen Aufwand von Entwicklern aktualisiert.  
+*   Alle Anwendungen, die den immergrünen Verteilungsmodus verwenden, verwenden eine freigegebene Kopie der immergrünen WebView2-Laufzeit, wodurch Speicherplatz gespart wird.  
 
-### Grundlegendes zur WebView2-Laufzeit und zum Installationsprogramm (Preview)  
+### Grundlegendes zur WebView2-Laufzeit  
 
-Microsoft Edge stable-Kanal ist auf allen Benutzercomputern, auf denen die Anwendung ausgeführt wird, möglicherweise nicht installiert.  Anstatt zu verlangen, dass Benutzer Microsoft Edge installieren, verwendet Ihre Anwendung möglicherweise die Evergreen-WebView2-Laufzeit und das Installationsprogramm \ (Preview \).  Die WebView2-Laufzeit ist eine angepasste Kopie der Microsoft Edge-Binärdateien, mit denen Ihre WebView2-Anwendungen ausgeführt werden.  Wenn die WebView2-Laufzeit installiert ist, können Benutzer Sie nicht als normalen Browser verwenden.  Beispielsweise gibt es keine Desktopverknüpfung, Startmenüeintrag, Benutzer können ein Browserfenster nicht unter Verwendung der Runtime-Binärdateien öffnen usw.  Alle Evergreen-WebView2-Anwendungen auf dem Gerät verwenden möglicherweise eine einzelne immergrüne WebView2-Laufzeitinstallation.  
+Die WebView2-Laufzeit ist eine erneut verteilbare Laufzeit und dient als unterstützte Webplattform für WebView2-Anwendungen.  Dieses Konzept ähnelt der VC + + oder .NET Runtime für C++-/.net-apps.  Unter der Haube werden die Common Language Runtime Microsoft Edge \ (Chromium \)-Binärdateien geändert, die fein abgestimmt und für Anwendungen getestet wurden.  Die Common Language Runtime wird bei der Installation nicht als Benutzersicht barer Browser angezeigt, beispielsweise haben Benutzer keinen Browser-Desktop-Verknüpfung oder Menüeintrag im Startmenü.  
 
-Während der Vorschau werden die Evergreen-WebView2-Laufzeit und der Microsoft Edge dev-Kanal zur gleichen Zeit aktualisiert und verfügen über denselben Build.  Während der Vorschau plant das WebView2-Team in Zukunft, die WebView2-Laufzeit zu aktualisieren und dem gleichen Build wie dem Microsoft Edge-Beta Kanal zu entsprechen.  Wenn WebView2 in Zukunft die allgemeine Verfügbarkeit erreicht \ (GA \), plant das WebView2-Team, die WebView2-Laufzeit zu aktualisieren und dem gleichen Build wie dem Microsoft Edge stable-Kanal zu entsprechen.  Nach GA sollten Anwendungen die WebView2-Laufzeit in Production verwenden.  
+Für die Entwicklung und das Testen können Entwickler die Laufzeit oder einen beliebigen, nicht stabilen Microsoft Edge \ (Chromium \)-Browser Kanal für die Sicherungs-Webplattform verwenden.  In Produktionsumgebungen müssen Entwickler sicherstellen, dass die Laufzeit auf Benutzergeräten vorhanden ist, bevor die Anwendung gestartet wird.  Der Microsoft Edge stable-Kanal steht für die WebView2-Verwendung nicht zur Verfügung, um zu verhindern, dass apps eine Abhängigkeit vom Browser in der Produktion übernehmen.  
 
-> [!IMPORTANT]
-> Senden Sie während der Vorschau keine WebView2-Anwendungen in der Produktion.  
+Entwickler dürfen keine Abhängigkeit vom Browser übernehmen, weil:  
 
-Entwickler werden empfohlen, um sicherzustellen, dass die Evergreen WebView2-Laufzeit installiert ist, bevor die Anwendung gestartet wird. Nachfolgend finden Sie einen Beispiel Workflow.  
+*   Microsoft Edge \ (Chrom \) ist auf allen Benutzergeräten nicht garantiert vorhanden.  Geräte, die nicht mit Windows Update verbunden sind oder nicht direkt von Microsoft verwaltet werden \ (ein großer Teil des Enterprise/edu-Marktes), haben möglicherweise nicht den Browser.  Das zulassen, dass Entwickler die WebView2-Laufzeit verteilen können, vermeidet eine Abhängigkeit vom Browser als Voraussetzung für apps.
+*   In Browsern und apps gibt es unterschiedliche Anwendungsfälle, und daher kann es vorkommen, dass eine Abhängigkeit von einem Browser unbeabsichtigte Nebeneffekte für Ihre apps hat.  So können IT-Administratoren beispielsweise den Browser für die interne Website Kompatibilität steuern.  Mit der WebView2-Laufzeit können apps immergrün bleiben, während Browser Updates aktiv verwaltet werden.  
+*   Im Gegensatz zum Browser wird die Common Language Runtime für Anwendungsszenarien entwickelt und getestet und kann in einigen Fällen Fehlerkorrekturen beinhalten, die im Browser noch nicht verfügbar sind.  
 
-1.  Laden Sie das neueste [Evergreen WebView2 Runtime-Installationsprogramm][Webview2Installer]herunter.  
-1.  Fügen Sie das Installationsprogramm in ihr Anwendungs Installationsprogramm oder Updater ein.  
-1.  Überprüfen Sie während der Anwendungsinstallation oder-Aktualisierung, ob die Evergreen WebView2-Laufzeit bereits auf dem Benutzer Computer installiert ist, indem Sie die [GetAvailableCoreWebView2BrowserVersionString](../reference/win32/0-9-622/webview2-idl.md#getavailablecorewebview2browserversionstring) -API verwenden und überprüfen, ob der VERSIONINFO NULL ist. Wenn Sie nicht installiert ist, kann das Installationsprogramm/Updater des Programms das Runtime-Installationsprogramm aus einem erhöhten Prozess oder einer Eingabeaufforderung mit `MicrosoftEdgeWebView2RuntimeInstallerX64.exe /silent /install` . 
+Die Evergreen WebView2-Laufzeit ist für den Versand von Posteingang in zukünftigen Versionen von Windows vorgesehen.  Bevor die Laufzeit universeller verfügbar wird, wird Entwicklern empfohlen, die Laufzeit zusammen mit der Produktionsanwendung bereitzustellen.  
 
-Je nach Szenario müssen Sie möglicherweise den oben genannten Workflow ändern.  Beispielsweise kann ihr Anwendungs Installationsprogramm das Evergreen-WebView2-Runtime-Installationsprogramm herunterladen, anstatt es in Ihr Anwendungspaket einzubinden.  
+### Bereitstellen der immergrünen WebView2-Laufzeit  
 
-> [!NOTE]
-> Sowohl das WebView2-Runtime-als auch das WebView2-Runtime-Installationsprogramm befinden sich in Preview.  Die Vorschau hat einen beschränkten anfänglichen Umfang und ist nur als eigenständige Installation pro Computer unter Windows 10 auf x64 verfügbar.  In Zukunft ist die Unterstützung für Windows 7, x86 und ARM64 geplant.  
+Für alle Evergreen-apps auf dem Gerät ist nur eine Installation der Evergreen WebView2-Laufzeit erforderlich.  Auf der [Download Seite der WebView2-Runtime][Webview2Installer] stehen eine Reihe von Tools zur Verfügung, mit denen Entwickler die Evergreen-Laufzeit bereitstellen können, beispielsweise:  
 
-### Bewährte Methoden für die Verwendung von WebView2-Runtime und nicht stabilen Microsoft Edge-Kanälen  
+*   WebView2-Runtime-Bootstrapper \ (in Kürze freigegeben werden \) ist ein kleines \ (ca. 2 MB \)-Installationsprogramm.  Dieses Installationsprogramm lädt die Evergreen-Laufzeit von Microsoft-Servern herunter und installiert Sie, die der Gerätearchitektur des Benutzers entspricht.  
+*   Link zum Herunterladen des Bootstrappers \ (in Kürze verfügbar) ist ein Link für Entwickler, um den Bootstrapper programmgesteuert herunterzuladen.
+*   Das Standalone-Installationsprogramm von WebView2 Runtime ist ein vollständiges Installationsprogramm, das die immergrüne WebView2-Runtime in Offlineumgebungen installieren kann.  
 
-Betrachten Sie die folgenden Empfehlungen während der Vorschau.  
+Derzeit unterstützen sowohl der Bootstrapper als auch das Standalone-Installationsprogramm nur die Installation pro Computer, für die eine Anhebung erforderlich ist.  Wenn Sie ohne Elevation ausführen, wird eine Aufforderung zur Windows-Benutzerkontensteuerung angezeigt, um Benutzer zu bitten, Berechtigungen zu erhöhen.  
 
-*   Stellen Sie sicher, dass Sie die [Evergreen WebView2-Laufzeit und das Installationsprogramm][Webview2Installer] verwenden, um ihre Verpackungs-und Verteilungs Pipeline zu entwickeln oder zu testen.  In Zukunft sollte Ihre Produktionsanwendung das Installationsprogramm beinhalten.  
-*   Für die Entwicklung ihrer Anwendung können Sie die Evergreen WebView2-Laufzeit verwenden.  Da sich die Laufzeit jedoch vom dev-Kanal zum Beta Kanal oder zum stabilen Kanal verlagert, entspricht die Buildnummer des Laufzeitmoduls möglicherweise nicht den neuesten Versionsanforderungen für das neueste Preview WebView2 SDK.  Wenn Sie das neueste SDK verwenden möchten, installieren Sie den Canary-Kanal von Microsoft Edge, um sicherzustellen, dass ein kompatibler Build auf dem Gerät verfügbar ist.  Weitere Informationen zur Versionsverwaltung finden Sie unter [Versionsverwaltung][ConceptsVersioning].  
-*   Wenn Sie Ihre Webinhalte auf Kompatibilität mit Änderungen an der Plattform testen möchten, die nicht im stable-Kanal verfügbar sind, verwenden Sie den entsprechenden nicht stabilen Kanal nach Bedarf.  
+Wir empfehlen die folgenden Workflows, um sicherzustellen, dass die Laufzeit bereits installiert ist, bevor die Anwendung gestartet wird.  Sie können Ihren Workflow je nach Szenario anpassen.  Wir werden auch in Zukunft Beispielcode bereitstellen.  
+
+#### Nur Online Bereitstellung  
+
+Führen Sie die folgenden Schritte aus, wenn Sie über ein Szenario für die Onlinebereitstellung verfügen, in dem Endbenutzer davon ausgegangen werden, dass Sie über einen Internetzugriff verfügen:  
+
+*   Überprüfen Sie während der Anwendungseinrichtung, ob die Laufzeit bereits installiert ist, indem Sie eine der folgenden Aktionen ausführen:  
+    *   Überprüfen, ob `pv (REG_SZ)` unter der Registrierungsschlüssel vorhanden ist `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\ClientState\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}` , oder  
+    *   Rufen Sie die WebView2-API- [GetAvailableCoreWebView2BrowserVersionString](../reference/win32/0-9-622/webview2-idl.md#getavailablecorewebview2browserversionstring) auf, und überprüfen Sie, ob VERSIONINFO NULL ist.  
+*   Wenn die Common Language Runtime nicht installiert ist, verwenden Sie den Link zum programmgesteuerten Download des Bootstrappers.  
+*   Rufen Sie den Bootstrapper über einen erhöhten Prozess oder eine Eingabeaufforderung mit `MicrosoftEdgeWebview2Setup.exe /silent /install` für die unbeaufsichtigte Installation auf.  
+
+Dieser Workflow stellt sicher, dass Sie die Laufzeit nur dann installieren, wenn Sie benötigt wird, dass Sie keine Installationsprogramme Verpacken oder die Architektur von Benutzergeräten nicht ermitteln müssen, und die Laufzeit im Hintergrund installieren können.  Sie können den Bootstrapper auch mit Ihrer Anwendung Verpacken, anstatt ihn bei Bedarf programmgesteuert herunterzuladen.  
+
+#### Offline Bereitstellung  
+
+Wenn Sie über ein Offline Bereitstellungsszenario verfügen, in dem die APP-Bereitstellung vollständig Offline funktionieren muss, führen Sie die folgenden Schritte aus:  
+
+*   Laden Sie das [Standalone-Installationsprogramm][Webview2Installer]herunter.  
+*   Fügen Sie das Installationsprogramm in ihr Anwendungs Installationsprogramm oder Updater ein.  
+*   Überprüfen Sie während der Anwendungseinrichtung, ob die Laufzeit bereits installiert ist, indem Sie eine der folgenden Aktionen ausführen:  
+    *   Überprüfen, ob `pv (REG_SZ)` unter der Registrierungsschlüssel vorhanden ist `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\ClientState\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}` , oder  
+    *   Rufen Sie die WebView2-API- [GetAvailableCoreWebView2BrowserVersionString](../reference/win32/0-9-622/webview2-idl.md#getavailablecorewebview2browserversionstring) auf, und überprüfen Sie, ob VERSIONINFO NULL ist.  
+*   Wenn die Common Language Runtime nicht installiert ist, rufen Sie das eigenständige Installationsprogramm von einem erhöhten Prozess oder einer Eingabeaufforderung mit `MicrosoftEdgeWebView2RuntimeInstaller{X64/X86/ARM64}.exe /silent /install` für die unbeaufsichtigte Installation auf.  
 
 ## Modus für feste Versions Verteilung  
 
 > [!NOTE]
-> Das Modell für die feste Versions Verteilung steht zurzeit nicht zur Verfügung.  
+> Der Verteilungsmodus für feste Versionen steht noch nicht zur Verfügung.  
 
-Für abhängige Umgebungen gibt es Pläne zur Unterstützung einer festen Version \ (zuvor als "Bring-your-own \" bezeichnet)-Verteilungsmodus.  Mit dem Modus für die feste Versions Verteilung können Sie eine bestimmte Version der WebView2-Laufzeit auswählen und Verpacken.  Mit dem Modus für die feste Versions Verteilung können Sie steuern, welche Version der WebView2-Laufzeit von Ihrer Anwendung verwendet wird und wann Benutzer Computer aktualisiert werden.  Der Modus für die feste Versions Verteilung erhält keine automatischen Updates, und Sie sollten planen, Updates manuell anzuwenden.  
+Für abhängige Umgebungen sind Pläne zur Unterstützung einer festen Version vorgesehen, die zuvor den Distributions Modus "Bring-eigene" genannt hat.  Der Modus für die feste Versions Verteilung ermöglicht Entwicklern das auswählen und Verpacken einer bestimmten Version der WebView2-Laufzeit.  Mit dem Modus für die feste Versions Verteilung können Sie steuern, welche Version der WebView2-Laufzeit von Ihrer Anwendung verwendet wird und wann Benutzer Computer aktualisiert werden.  Der Modus für die feste Versions Verteilung erhält keine automatischen Updates, und Entwickler sollten selbst Updates anwenden.  
+
 
 <!-- links -->  
 

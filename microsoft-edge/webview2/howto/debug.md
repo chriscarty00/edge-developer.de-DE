@@ -3,17 +3,17 @@ description: Erfahren Sie, wie Sie WebView2-Steuerelemente Debuggen.
 title: Erste Schritte beim Debuggen von WebView2-Anwendungen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/13/2020
+ms.date: 08/21/2020
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Host, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: 15171147b847b1d41cd603efed1b8ee42185dc29
-ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
+ms.openlocfilehash: 78c0fb982de8ccce71a8df2b59447b55f64fdc2f
+ms.sourcegitcommit: 24151cc65bad92d751a8e7a868c102e1121456e3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11010698"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11052148"
 ---
 # Erste Schritte beim Debuggen von WebView2-Anwendungen  
 
@@ -96,6 +96,151 @@ Führen Sie die folgenden Aktionen aus, um Ihre WebView2-Anwendung zu debuggen.
        Visual Studio- **Debug-Konsole**  
     :::image-end:::  
     
+## [Visual Studio Code](#tab/visualstudiocode)  
+
+Verwenden Sie Microsoft Visual Studio-Code zum Debuggen von Skripts, die in WebView2-Steuerelementen ausgeführt werden.  <!--Ensure that you're using Visual Studio Code version [insert build here] or later.  -->  
+
+Führen Sie in Visual Studio-Code die folgenden Aktionen aus, um den Code zu debuggen. 
+
+1.  Für Ihr Projekt ist eine Datei erforderlich `launch.json` .  Wenn Ihr Projekt keine Datei enthält `launch.json` , kopieren Sie den folgenden Codeausschnitt, und erstellen Sie eine neue `launch.json` Datei.  
+        
+    ```json
+        "name": "Hello debug world",
+        "type": "pwa-msedge",
+        "port": 9222, // The port value is optional, and the default value is 9222.
+        "request": "launch",
+        "runtimeExecutable": "C:/path/to/your/webview2/application.exe",
+        "env": {
+            // Customize for your application location if needed
+            "Path": "%path%;e:/path/to/your/application/location; "
+        },
+        "useWebView": true,
+    ```  
+        
+1.  Wenn Sie einen Haltepunkt im Quellcode festlegen möchten, zeigen Sie auf die Zeile, und wählen Sie `F9`
+    
+    :::image type="complex" source="./media/breakpointvs.png" alt-text="Der Haltepunkt wird in Visual Studio-Code gesetzt" lightbox="./media/breakpointvs.png":::
+       Der Haltepunkt wird in Visual Studio-Code gesetzt  
+    :::image-end:::
+    
+    > [!NOTE]
+    > Da Visual Studio-Code keine Quell Zuordnung ausführt, stellen Sie sicher, dass Sie Haltepunkte in derselben Datei festlegen, die von WebView2 verwendet wird.  Wenn die Pfade nicht übereinstimmen, wird der ausgeführte Code nicht vom Visual Studio-Code am Haltepunkt angehalten.  
+    
+1.  Führen Sie den Code aus.  
+    1.  Wählen Sie auf der Registerkarte **Ausführen** im Dropdownmenü die Option Startkonfiguration aus.  
+    1.  Wenn Sie mit dem Debuggen der Anwendung beginnen möchten, wählen Sie Debuggen starten (das grüne Dreieck neben der Dropdownliste Startkonfiguration) aus.  
+        
+        :::image type="complex" source="./media/runvs.png" alt-text=" Visual Studio-Registerkarte "Code ausführen"" lightbox="./media/runvs.png":::
+           Visual Studio-Registerkarte "Code ausführen"  
+        :::image-end:::  
+        
+1.  Öffnen Sie die **Debug-Konsole** , um die Debug-Ausgabe und die Fehler anzuzeigen.  
+    
+    :::image type="complex" source="./media/resultsvs.png" alt-text=" Visual Studio-Code Debug-Konsole" lightbox="./media/resultsvs.png":::
+       Visual Studio-Code Debug-Konsole  
+    :::image-end:::  
+    
+**Erweiterte Einstellungen**:  
+
+*   Gezieltes WebView Debuggen 
+
+    In einigen WebView2-Anwendungen können Sie mehr als ein WebView2-Steuerelement verwenden. So wählen Sie das WebView2-Steuerelement aus, das in dieser Situation gedebuggt werden soll Sie können das gezielte WebView2 Debuggen verwenden. 
+    
+    Öffnen `launch.json` und führen Sie die folgenden Aktionen aus, um ein gezieltes WebView-Debugging zu verwenden.  
+    
+    1.  Überprüfen Sie, ob der `useWebview` Parameter auf festgesetzt ist `true` .  
+    1.  Fügen Sie den `urlFilter` Parameter hinzu.  Wenn das WebView2-Steuerelement zu einer URL navigiert, `urlFilter` wird der Parameterwert verwendet, um Zeichenfolgen zu vergleichen, die in der URL angezeigt werden.  
+    
+    ```json
+    "useWebview": "true",
+    "urlFilter": "*index.ts",
+    
+    // Other urlFilter options.
+    
+    urlFilter="*index.ts"    // Match any url that ends with index.ts, and ignore all leading characters. 
+    urlFilter="*index*"      // Match any url that contains the string index anywhere in the URL.  
+    urlFilter="file://C:/path/to/my/index.ts," // To match explicit file called index.ts.  
+    ```  
+    
+    Wenn Sie Ihre Anwendung debuggen, müssen Sie möglicherweise den Code vom Anfang des Rendering Prozesses aus durchlaufen. Wenn Sie Webseiten auf Websites Rendern und keinen Zugriff auf den Quellcode haben, können Sie die Option verwenden, da Webseiten nicht `?=value`  erkannte Parameter ignorieren.   
+    
+    > [!IMPORTANT]
+    > Nachdem die erste Übereinstimmung in der URL gefunden wurde, wird der Debugger angehalten.  Zwei WebView2-Steuerelemente können nicht gleichzeitig gedebuggt werden, da der CDP-Port von allen WebView2-Steuerelementen freigegeben wird und eine einzelne Portnummer verwendet wird.  
+    
+*   Debuggen von ausgeführten Prozessen  
+    
+    Möglicherweise müssen Sie den Debugger an die ausgeführten WebView2-Prozesse anfügen. Aktualisieren Sie dazu `launch.json` den `request` Parameter in `attach` .
+        
+    ```json
+        "name": "Hello debugging world",
+        "type": "pwa-msedge",
+        "port": 9222, 
+        "request": "attach",
+        "runtimeExecutable": "C:/path/to/your/webview2/application.exe",  
+        "env": {
+            "Path": "%path%;e:/path/to/your/build/location; "  
+        },
+        "useWebView": true
+    ```  
+        
+    Das WebView2-Steuerelement muss den CDP-Port öffnen, um das Debuggen des WebView2-Steuerelements zu ermöglichen.  Ihr Code muss erstellt werden, um sicherzustellen, dass nur ein WebView2-Steuerelement einen CDP-Port (Chrome Developer Protocol) geöffnet hat, bevor der Debugger gestartet wird.  
+    
+*   Debug-Ablaufverfolgungsoptionen  
+    
+    Fügen Sie den zu `trace` launch.jsden Parameter hinzu, um die Debug-Ablaufverfolgung zu aktivieren.  
+    
+    1.  Parameter hinzufügen `trace` .  
+        
+ 
+        
+        :::row:::
+           :::column span="":::
+              ```json
+                "name": "Hello debugging world",
+                "type": "pwa-msedge",
+                "port": 9222, 
+                "request": "attach",
+                "runtimeExecutable": "C:/path/to/your/webview2/application.exe",  
+                "env": {
+                "Path": "%path%;e:/path/to/your/build/location; "  
+                },
+                "useWebView": true
+                ,"trace": true  // Turn on  debug tracing, and save the output to a log file.
+              ```  
+              
+              :::image type="complex" source="./media/tracelog.png" alt-text=" Speichern Sie die Debug-Ausgabe in einer Protokolldatei." lightbox="./media/tracelog.png":::
+                 Speichern der Debug-Ausgabe in einer Protokolldatei  
+              :::image-end:::  
+           :::column-end:::
+           :::column span="":::
+              ```json
+              ,"trace": "verbose"  // Turn on verbose tracing in the Debug Output pane.
+              ```  
+              
+              :::image type="complex" source="./media/verbose.png" alt-text=" Ausführliche Ausgabe" lightbox="./media/verbose.png":::
+                 Visual Studio-Code Debug-Ausgabe mit aktivierter ausführlicher Ablaufverfolgung  
+              :::image-end:::  
+           :::column-end:::
+        :::row-end:::  
+        
+*   Debuggen von Office-Add-ins
+    
+    Wenn Sie Office-Add-ins Debuggen, öffnen Sie den Add-in-Quellcode in einer separaten Instanz von Visual Studio-Code.  Öffnen Sie launch.jsin ihrer WebView2-Anwendung, und fügen Sie den folgenden Codeausschnitt hinzu, um den Debugger an das Office-Add-in anzufügen.
+    
+    ```json
+    ,"debugServer": 4711
+    ```  
+    
+*   Problembehandlung des Debuggers  
+    
+    Bei Verwendung des Debuggers können die folgenden Szenarien auftreten.  
+
+    *   Der Debugger wird nicht am Haltepunkt angehalten, und Sie haben die Debug-Ausgabe.  Um das Problem zu beheben, stellen Sie sicher, dass die Datei mit dem Haltepunkt dieselbe Datei ist, die vom WebView2-Steuerelement verwendet wird.  Der Debugger führt keine Quell Pfadzuordnung aus.  
+    *   Sie können nicht an einen ausgeführten Prozess anfügen, und Sie erhalten einen Timeoutfehler.  Um das Problem zu beheben, stellen Sie sicher, dass das WebView2-Steuerelement den CDP-Port geöffnet hat.  Stellen Sie sicher, dass Ihr  `additionalBrowserArguments`  Wert in der Registrierung richtig ist, oder die Optionen richtig sind.  Weitere Informationen finden Sie unter [additionalBrowserArguments for dotnet] [Webview2ReferenceDotnet09515MicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments] und [additionalBrowserArguments für Win32] [Webview2ReferenceWin3209538Webview2IdlParameters].  
+    
+* * *  
+
+
 * * *  
 
 ## Weitere Informationen  
