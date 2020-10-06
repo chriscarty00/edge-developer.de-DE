@@ -1,239 +1,239 @@
 ---
-description: Die neuesten experimentellen Features in Microsoft Edge devtools
-title: Experimentelle Funktionen
+description: The latest experimental features in Microsoft Edge DevTools
+title: Experimental features
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/29/2020
+ms.date: 10/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools, Experiment
-ms.openlocfilehash: ae2058ad2beb2d8d3b19061e0935b92173392f23
-ms.sourcegitcommit: c24884cc154d6c4809e05ae37d170cb674c408b9
+keywords: microsoft edge, web development, f12 tools, devtools, experiment
+ms.openlocfilehash: f885201ddfb7553a2b9c58a07dd52b7a77c4137a
+ms.sourcegitcommit: 0326a4082064e9cdfa602736f3f9ce7d8d294604
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "11091528"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "11094931"
 ---
-# Experimentelle Funktionen  
+# Experimental features  
 
-Microsoft Edge-devtools bieten Zugriff auf experimentelle Features, die sich noch in der Entwicklung befinden.  Sie können testen und p[Feedback geben](#providing-feedback-on-experimental-features) , bevor die einzelnen Funktionen freigegeben werden.  
+Microsoft Edge DevTools provide access to experimental features that are still in development.  You may test and [provide feedback](#providing-feedback-on-experimental-features) before each feature is released.  
 
-Während experimentelle Features in allen Kanälen von Microsoft Edge verfügbar sind, erhalten Sie möglicherweise die neuesten experimentellen Features mithilfe des Canary-Kanals von Microsoft Edge.  
+While experimental features are available in all channels of Microsoft Edge, you may get the latest experimental features using the Microsoft Edge Canary channel.  
 
-## Aktivieren von experimentellen Features  
+## Turn on experimental features  
 
-Führen Sie die folgenden Schritte aus, um die experimentellen Features von \ (oder Off \) in Microsoft Edge zu aktivieren.  
+To turn on \(or off\) experimental features in Microsoft Edge, use the following steps.  
 
-1.  [Öffnen Sie devtools][DevtoolsOpen].  
-     *   Wählen Sie `Control` + `Shift` + `I` \ (Windows \) oder `Command` + `Option` + `I` \ (macOS \) aus.  Weitere Informationen finden Sie unter [Tastenkombinationen für Microsoft Edge devtools][DevToolsShortcuts].  
-1.  Öffnen Sie den Bereich " [Einstellungen][DevToolsCustomizeSettings] ".  
-    *   Wählen Sie aus `Shift` + `?` .  Weitere Informationen finden Sie unter [Tastenkombinationen für Microsoft Edge devtools][DevToolsShortcuts].  
-1.  Wählen Sie auf der linken Seite des Bereichs **Einstellungen** den Abschnitt **Experimente** aus.  
+1.  [Open DevTools][DevtoolsOpen].  
+     *   Select `Control`+`Shift`+`I` \(Windows\) or `Command`+`Option`+`I` \(macOS\).  For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevToolsShortcuts].  
+1.  Open the [Settings][DevToolsCustomizeSettings] pane.  
+    *   Select `Shift`+`?`.  For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevToolsShortcuts].  
+1.  On the left side of the **Settings** pane, choose the **Experiments** section.  
     
-    :::image type="complex" source="./media/experiments-devtools.msft.png" alt-text="Liste der Experimente in den devtools-Einstellungen" lightbox="./media/experiments-devtools.msft.png":::
-       Liste der Experimente in den devtools-Einstellungen  
+    :::image type="complex" source="./media/experiments-devtools.msft.png" alt-text="List of experiments in DevTools Settings" lightbox="./media/experiments-devtools.msft.png":::
+       List of experiments in DevTools Settings  
     :::image-end:::  
     
-1.  Scrollen Sie auf der Seite **Experimente** durch die Liste aller verfügbaren experimentellen Features, und aktivieren Sie das Kontrollkästchen neben den einzelnen Features, die Sie testen möchten.  
-1.  Schließen Sie die Microsoft Edge-devtools, und öffnen Sie Sie erneut.  
+1.  On the **Experiments** page, scroll through the list of all available experimental features and choose the checkbox next to each feature that you want to test.  
+1.  Close and reopen Microsoft Edge DevTools.  
 
 > [!NOTE]
-> Experimentelle Features werden ständig aktualisiert, was zu Leistungsproblemen führen kann.  Wenn Sie ein experimentelles Feature deaktivieren möchten, öffnen Sie die Seite **Experimente** , und deaktivieren Sie das Kontrollkästchen des experimentellen Features, das Sie deaktivieren möchten.  
+> Experimental features are constantly being updated and may cause performance issues.  To turn off an experimental feature, open the **Experiments** page and clear the checkbox of the experimental feature that you want to turn off.  
 
-## Hervorgehobene experimentelle Features  
+## Highlighted experimental features  
 
-In den folgenden Abschnitten werden die neuen experimentellen Features beschrieben, die in Microsoft Edge zur Verfügung stehen.  
+The following sections describe the new experimental features that are available in Microsoft Edge.  
 
-| Experimentelle Funktion | Microsoft Edge-Version |  
+| Experimental feature | Microsoft Edge version |  
 |:--- |:--- |  
-| [Emulation: Unterstützung des Dual-Screen-Modus](#emulation-support-dual-screen-mode) | 84 oder höher |  
-| [Debuggen von neuen CSS-Raster Features aktivieren](#enable-new-css-grid-debugging-features) | 85 oder höher |  
-| [Aktivieren der Unterstützung für das Verschieben von Tabstopps zwischen Bereichen](#enable-support-to-move-tabs-between-panels) | 85 oder höher |  
-| [Webhint aktivieren](#enable-webhint) | 85 oder höher |  
-| [Aktivieren der Netzwerk Konsole](#enable-network-console) | 85 oder höher |  
-| [Viewer für Quellreihenfolge](#source-order-viewer) | 86 oder höher |  
+| [Emulation: Support dual screen mode](#emulation-support-dual-screen-mode) | 84 or later |  
+| [Enable new CSS grid debugging features](#enable-new-css-grid-debugging-features) | 85 or later |  
+| [Enable support to move tabs between panels](#enable-support-to-move-tabs-between-panels) | 85 or later |  
+| [Enable webhint](#enable-webhint) | 85 or later |  
+| [Enable Network Console](#enable-network-console) | 85 or later |  
+| [Source Order Viewer](#source-order-viewer) | 86 or later |  
 
-### Emulation: Unterstützung des Dual-Screen-Modus  
+### Emulation: Support dual screen mode  
 
-Bietet zusätzliche Features zum Emulieren von zwei neuen Dual-Screen-und faltbaren Geräten in Microsoft Edge.  
+Provides additional features for emulating two new dual-screen and foldable devices in Microsoft Edge.  
 
 *   [Surface Duo][SurfaceDevicesDuo]  
 *   [Samsung Galaxy Fold][SamsungMobileGalaxyFold]  
 
-Emulieren Sie die Geräte, und wechseln Sie zwischen den folgenden Haltungen.  
+Emulate the devices and toggle between the following postures.  
 
-*   Einzelbild-oder gefaltete Haltung  
-*   Dual-Screen-oder entfaltete Haltung  
+*   single-screen or folded posture  
+*   dual-screen or unfolded posture  
     
-[Aktivieren Sie experimentelle Webplattform-APIs](#enable-experimental-apis) , und verwenden Sie das [Feature "CSS-Medien Bildschirm übergreifend"][DualScreenDocsCssMedia] und die [JavaScript-getWindowSegments-API][DualScreenDocsJSAPI] , um Ihre Website \ (oder App \) für Dual-Screen-und faltbare Geräte zu verbessern.  
+[Enable experimental Web Platform APIs](#enable-experimental-apis) and use the [CSS media screen-spanning feature][DualScreenDocsCssMedia] and [JavaScript getWindowSegments API][DualScreenDocsJSAPI] to enhance your website \(or app\) for dual-screen and foldable devices.  
 
-:::image type="complex" source="./media/experiments-surface-duo-emulation.msft.png" alt-text="Liste der Experimente in den devtools-Einstellungen" lightbox="./media/experiments-surface-duo-emulation.msft.png":::  
-   Emulieren von Surface Duo in Microsoft Edge  
+:::image type="complex" source="./media/experiments-surface-duo-emulation.msft.png" alt-text="List of experiments in DevTools Settings" lightbox="./media/experiments-surface-duo-emulation.msft.png":::  
+   Emulate Surface Duo in Microsoft Edge  
 :::image-end:::  
 
-#### Aktivieren von experimentellen APIs  
+#### Enable experimental APIs  
 
-Aktivieren Sie das Kennzeichen in Microsoft Edge, um das [Feature "CSS-Medien Bildschirm übergreifend"][DualScreenDocsCssMedia] und die [JavaScript-getWindowSegments-API][DualScreenDocsJSAPI]zu verwenden `Experimental Web Platform features` .  Führen Sie die folgenden Schritte aus.  
+To use the [CSS media screen-spanning feature][DualScreenDocsCssMedia] and [JavaScript getWindowSegments API][DualScreenDocsJSAPI], turn on the `Experimental Web Platform features` flag in Microsoft Edge.  Complete the following steps.  
 
-1.  Navigieren Sie zu `edge://flags` .  
-1.  Geben Sie im Textfeld **Such Kennzeichnungen** `Experimental Web Platform features` das Flag **experimental Web Platform Features** ein, und ändern Sie **deaktiviert** in **aktiviert**.  
-1.  Starten Sie Microsoft Edge neu.  
+1.  Navigate to `edge://flags`.  
+1.  In the **Search flags** textbox, enter `Experimental Web Platform features`, choose the **Experimental Web Platform features** flag, and change **Disabled** to **Enabled**.  
+1.  Restart Microsoft Edge.  
 
-:::image type="complex" source="./media/experiments-dual-screen-emulation-edge-flags.msft.png" alt-text="Liste der Experimente in den devtools-Einstellungen" lightbox="./media/experiments-dual-screen-emulation.msft.png":::
-   Aktivieren des Kennzeichens "experimentelle Webplattform-Features"  
+:::image type="complex" source="./media/experiments-dual-screen-emulation-edge-flags.msft.png" alt-text="List of experiments in DevTools Settings" lightbox="./media/experiments-dual-screen-emulation.msft.png":::
+   Enable the Experimental Web Platform features flag  
 :::image-end:::  
 
 > [!NOTE]
-> Wenn Sie CSS- [medienabfragen][DualScreenDocsCssMedia] oder die [JavaScript Windows-Segment Aufzählungs-API][DualScreenDocsJSAPI] verwenden, um Ihre Website oder App für das [Surface Duo][SurfaceDevicesDuo]zu verbessern, müssen Sie auch das Kennzeichen **experimentelle Webplattform-Features** in der [Android-App für Microsoft Edge][GooglePlayMicrosoftEdge] auf Ihrem [Surface Duo][SurfaceDevicesDuo] -Gerät aktivieren.  
+> If you are using [CSS media queries][DualScreenDocsCssMedia] or the [JavaScript Windows Segment Enumeration API][DualScreenDocsJSAPI] to enhance your website or app for the [Surface Duo][SurfaceDevicesDuo], you must also enable the **Experimental Web Platform features** flag in the [Android Microsoft Edge app][GooglePlayMicrosoftEdge] on your [Surface Duo][SurfaceDevicesDuo] device.  
 > 
-> Wenn das Flag für **experimentelle Webplattform-Features** in der Microsoft Edge-App für [Desktops][MicrosoftEdge] aktiviert ist und in der [Android-App für Microsoft Edge][GooglePlayMicrosoftEdge]deaktiviert ist, entspricht das Verhalten Ihrer Website oder App im Surface Duo-Emulator in Desktop Microsoft Edge nicht der [Android-App "Microsoft Edge][GooglePlayMicrosoftEdge] " auf [Surface Duo][SurfaceDevicesDuo].  Stellen Sie sicher, dass die Flags für Android und Desktop Microsoft Edge übereinstimmen, um den Surface Duo-Emulator erfolgreich im [Desktop Microsoft Edge][MicrosoftEdge]zu verwenden.  
+> If the **Experimental Web Platform features** flag is enabled in [desktop Microsoft Edge][MicrosoftEdge] and disabled in the [Android Microsoft Edge app][GooglePlayMicrosoftEdge], the behavior of your website or app in the Surface Duo emulator in desktop Microsoft Edge does not match with the [Android Microsoft Edge app][GooglePlayMicrosoftEdge] on [Surface Duo][SurfaceDevicesDuo].  Ensure that the flags are matching across Android and desktop Microsoft Edge to successfully use the Surface Duo emulator in [desktop Microsoft Edge][MicrosoftEdge].  
 
-#### Testen auf faltbaren und Dual-Screen-Geräten  
+#### Testing on foldable and dual-screen devices  
 
-Wenn Sie das [Surface Duo][SurfaceDevicesDuo] in einer Haltung mit zwei Bildschirmen in Microsoft Edge emulieren, wird die Naht \ (der Abstand zwischen den beiden Bildschirmen \) über Ihre Website oder App gezeichnet.  
+When you emulate the [Surface Duo][SurfaceDevicesDuo] in a dual-screen posture in Microsoft Edge, the seam \(the space between the two screens\) is drawn over your website or app.  
 
-Die emulierte Anzeige entspricht der Art, in der Ihre Website \ (oder App \) in der [Microsoft Edge Android-App][GooglePlayMicrosoftEdge] auf [Surface Duo][SurfaceDevicesDuo]gerendert wird.  Möglicherweise müssen Sie Ihre Website aktualisieren \ (oder App \), damit Sie besser entlang der Naht angezeigt werden.  Weitere Informationen zum Anpassen Ihrer Website \ (oder App \) an die Naht finden Sie unter [Arbeiten mit der Naht][DualScreenIntroductionHowWorkSeam] in der Surface Duo-Dokumentation.  
+The emulated display matches the way your website \(or app\) renders in the [Microsoft Edge Android app][GooglePlayMicrosoftEdge] on [Surface Duo][SurfaceDevicesDuo].  You may have to update your website \(or app\) to display better along the seam.  For more information about adapting your website \(or app\) to the seam, navigate to [How to work with the seam][DualScreenIntroductionHowWorkSeam] in the Surface Duo documentation.  
 
-Die [Gerätesymbolleiste][DevtoolsDeviceModeIndexSimulateMobileViewport] verfügt über zusätzliche Features, die Sie beim Testen Ihrer Website oder app in verschiedenen Haltungen und Ausrichtungen unterstützen.  Wählen Sie **drehen** \ ( ![ drehen ][ImageRotateIcon] \) aus, um das Ansichtsfenster in Querformat zu drehen. Kombinieren Sie das Feature mit **Span** \ ( ![ Span ][ImageSpanIcon] \), um zwischen Einzelbildschirm-oder gefalteten und Dual-Screen-oder entfalteten Haltungen umzuschalten.  Zusammen können die Features das Testen Ihrer Website oder app in allen vier möglichen Haltungen und Ausrichtungen ermöglichen.  
+The [Device Toolbar][DevtoolsDeviceModeIndexSimulateMobileViewport] has additional features to help you test your website or app in multiple postures and orientations.  Choose **Rotate** \(![Rotate][ImageRotateIcon]\) to rotate the viewport to landscape orientation. Combine the feature with **Span** \(![Span][ImageSpanIcon]\) to toggle between single-screen or folded and dual-screen or unfolded postures.  Together, the features enable testing your website or app in all four possible postures and orientations.  
 
-:::image type="complex" source="./media/experiments-dual-screen-emulation-rotate-span.msft.png" alt-text="Liste der Experimente in den devtools-Einstellungen" lightbox="./media/experiments-dual-screen-emulation-rotate-span.msft.png":::
-   Matrix von Haltungen und Ausrichtungen für Dual-Screen-und faltbare Geräte  
+:::image type="complex" source="./media/experiments-dual-screen-emulation-rotate-span.msft.png" alt-text="List of experiments in DevTools Settings" lightbox="./media/experiments-dual-screen-emulation-rotate-span.msft.png":::
+   Matrix of postures and orientations for dual-screen and foldable devices  
 :::image-end:::  
 
-Das **Feature "experimentelle Webplattform-Features** \ ( ![ ExperimentalApis ][ImageExperimentalApisIcon] \)" zeigt den Zustand des Kennzeichens " **experimentelle Web Platform Features** " an.  Wenn die Kennzeichnung aktiviert ist, ist das Symbol hervorgehoben.  Wenn die Kennzeichnung deaktiviert ist, wird das Symbol nicht hervorgehoben.  Um die Kennzeichnung zu aktivieren oder zu deaktivieren, navigieren Sie zu `edge://flags` der Kennzeichnung, und aktivieren Sie Sie.  
+The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperimentalApisIcon]\) icon displays the state of the **Experimental Web Platform features** flag.  If the flag is turned on, the icon is highlighted.  If the flag is turned off, the icon is not highlighted.  To turn on \(or off\) the flag, navigate to `edge://flags` and toggle the flag.  
 
 <!-- Commenting out until the icon issue is fixed in Edge Canary
 The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperimentalApisIcon]\) icon displays the state of the **Experimental Web Platform features** flag.  If the flag is turned on, the icon is highlighted.  If the flag is turned off, the icon is not highlighted.  To turn on \(or off\) the flag, either choose the icon or navigate to `edge://flags` and toggle the flag.   -->  
 
-Hier sind weitere Ressourcen, die Ihnen bei der Optimierung Ihrer Website (oder App \) für Dual-Screen-Geräte helfen können:
-*   Weitere Informationen zur Web-Entwicklung auf Dual-Screen-Geräten finden Sie unter [Dual-Screen-Web-Erlebnisse][DualScreenWebIndex].  
-*   Installieren Sie den [Surface Duo-Emulator][DualScreenAndroidUseEmulator].  Sie unterscheidet sich vom Emulator in Microsoft Edge, emuliert das Surface Duo mit Android und ist in [Android Studio][AndroidDeveloperStudio]integriert.  Wenn Sie weitere Informationen erhalten möchten, navigieren Sie zu [Surface Duo SDK][DualScreenAndroidGetDuoSdk].  
+Here are additional resources that may help you enhance your website \(or app\) for dual-screen devices:
+*   For more information about web development on dual-screen devices, navigate to [Dual-screen web experiences][DualScreenWebIndex].  
+*   Install the [Surface Duo emulator][DualScreenAndroidUseEmulator].  It is different from the emulator in Microsoft Edge, emulates the Surface Duo running Android, and integrates with [Android Studio][AndroidDeveloperStudio].  For more information, navigate to [Get the Surface Duo SDK][DualScreenAndroidGetDuoSdk].  
 
 > [!NOTE]
-> Die folgende Liste enthält aktuelle bekannte Probleme.  
+> The following is a list of current known issues.  
 > 
-> *   Wenn Sie einen [Microsoft Remote Desktop-Client][RemoteDesktopClientDocs] verwenden, um eine Verbindung mit einem Remote-PC herzustellen und das [Surface Duo][SurfaceDevicesDuo] oder [Samsung Galaxy Fold][SamsungMobileGalaxyFold]zu emulieren, kann der Mauszeiger wackeln oder Stottern.  Wenn das Problem auftritt, senden Sie [uns Feedback](#providing-feedback-on-experimental-features).  
+> *   When using a [Microsoft Remote Desktop client][RemoteDesktopClientDocs] to connect to a remote PC and emulate the [Surface Duo][SurfaceDevicesDuo] or [Samsung Galaxy Fold][SamsungMobileGalaxyFold], the pointer may shake or stutter.  If you run into the issue, [send feedback](#providing-feedback-on-experimental-features).  
 
-### Debuggen von neuen CSS-Raster Features aktivieren  
+### Enable new CSS grid debugging features  
 
-Dieses experimentelle Feature bietet eine Reihe neuer Visualisierungen, die Ihnen beim Debuggen von CSS-Rasterlayouts helfen.  Wenn Sie eine Vorschau der neuesten experimentellen Features anzeigen möchten, [Aktivieren Sie dieses Experiment](#turn-on-experimental-features) , und laden Sie devtools.  Dieses Experiment ist in Edge 87 und höher standardmäßig aktiviert.  
+This experimental feature provides a number of new visualizations to help you debug CSS grid layouts.  To preview the latest experimental features, [enable this experiment](#turn-on-experimental-features) and reload DevTools.  This experiment is on by default in Edge 87 and later.  
 
-#### Anzeigen von in-Hover-Raster Überlagerungen mit dem Tool "überprüfen"  
+#### Viewing on-hover grid overlays with the Inspect tool  
 
-Das Tool "über **prüfen** " bietet eine schnelle Möglichkeit, CSS-Rasterlayouts in einer Website zu erkennen und zu visualisieren, indem Sie mit der Maus darauf zeigen.  Klicken Sie **Inspect** ![ ](./media/inspect-icon.msft.png) in der oberen linken Ecke von devtools auf das Symbol inspizieren \ (Inspect \).  Zeigen Sie dann auf der Website, die Sie Debuggen, auf ein Grid-Element.  Umrisse werden um das Raster herum angezeigt, und Schattierung zeigt die Position von Raster Lücken an, sofern vorhanden.  
+The **Inspect** tool provides a quick way to identify and visualize CSS Grid layouts in a website by hovering over them with the mouse.  Choose the **Inspect** \(![Inspect](./media/inspect-icon.msft.png)\) icon in the top-left corner of DevTools.  Then, hover over a Grid element on the website you are debugging.  Outlines are displayed around the grid, and shading indicates the location of grid gaps if present.  
 
-:::image type="complex" source="./media/grid-inspect.msft.png" alt-text="Liste der Experimente in den devtools-Einstellungen" lightbox="./media/grid-inspect.msft.png":::
-   Anzeigen von Rastern mit dem Tool "überprüfen"  
+:::image type="complex" source="./media/grid-inspect.msft.png" alt-text="List of experiments in DevTools Settings" lightbox="./media/grid-inspect.msft.png":::
+   Viewing grids with the Inspect tool  
 :::image-end:::  
 
-#### Anzeigen beständiger Raster Überlagerungen  
+#### Viewing persistent grid overlays  
 
-In Edge 86 und höher bietet das experimentelle CSS-Raster Feature auch die Option zum Aktivieren beständiger Raster Überlagerungen.  Die persistenten Overlays bieten mehrere Vorteile.  
+In Edge 86 and later, the experimental CSS grid feature also offers the option to enable persistent Grid overlays.  The persistent overlays provide several benefits.  
 
-*   Die beständigen Overlays bleiben auf der Seite sichtbar, während Sie scrollen, die Maus bewegen und andere Features des devtools verwenden.  
-*   Mehrere persistente Overlays können gleichzeitig aktiviert werden, sodass Sie zahlreiche Rasterlayouts auf einmal überprüfen können.  
-*   Beständige Overlays bieten viele Konfigurationsoptionen, wie beispielsweise das Ausblenden oder Anzeigen von Rasterbereichs Namen, Rasterabständen, nach Titel Größen und mehr.  
+*   The persistent overlays remain visible on the page as you scroll, move your mouse, and use other features of the DevTools.  
+*   Multiple persistent overlays can be enabled at the same time, allowing you to review numerous grid layouts at once.  
+*   Persistent overlays offer many configuration options, such as hiding or showing grid area names, grid gaps, track sizes, and more.  
 
-Zwei Möglichkeiten zum Umschalten einer beständigen Raster Überlagerung  
+The two ways to toggle a persistent grid overlay.  
 
-*   Wählen Sie die **Raster** Raute neben einem beliebigen Rasterelement aus, das in der DOM-Struktur des **Elements** -Tools angezeigt wird.  
+*   Choose the **Grid** lozenge next to any Grid element shown in the DOM tree of the **Elements** tool.  
     
-    :::image type="complex" source="./media/grid-adorner.msft.png" alt-text="Liste der Experimente in den devtools-Einstellungen" lightbox="./media/grid-adorner.msft.png":::
-       Raster Rauten im elementtool  
+    :::image type="complex" source="./media/grid-adorner.msft.png" alt-text="List of experiments in DevTools Settings" lightbox="./media/grid-adorner.msft.png":::
+       Grid lozenge in Elements tool  
     :::image-end:::  
     
-*   Öffnen Sie den neuen **LayoutPanel** -Bereich, der sich im Tool Elemente befindet, und aktivieren Sie das Kontrollkästchen neben den einzelnen Rasterelementen, die Sie markieren möchten.  
+*   Open the new **Layout** panel located in the Elements tool, and choose the checkbox next to each Grid element you want to highlight.  
     
-    :::image type="complex" source="./media/grid-layout-zoom.msft.png" alt-text="Liste der Experimente in den devtools-Einstellungen" lightbox="./media/grid-layout-zoom.msft.png":::
-       Layoutpanel  
+    :::image type="complex" source="./media/grid-layout-zoom.msft.png" alt-text="List of experiments in DevTools Settings" lightbox="./media/grid-layout-zoom.msft.png":::
+       Layout panel  
     :::image-end:::  
     
-#### Konfigurieren von persistenten Overlays  
+#### Configuring persistent overlays  
 
-Das neue **LayoutPanel** -Element, das sich neben den **Formatvorlagen** und **berechneten** Registerkarten in Edge 86 und höher im Tool **Elemente** befindet, Oberflächen-Konfigurationsoptionen für persistente Overlays.  
+The new **Layout** panel, located in the **Elements** tool alongside the **Styles** and **Computed** tabs in Edge 86 and later, surfaces configuration options for persistent overlays.  
 
-:::image type="complex" source="./media/experiments-grid.msft.png" alt-text="Liste der Experimente in den devtools-Einstellungen" lightbox="./media/experiments-grid.msft.png":::
-   CSS-Raster Debugging-Feature  
+:::image type="complex" source="./media/experiments-grid.msft.png" alt-text="List of experiments in DevTools Settings" lightbox="./media/experiments-grid.msft.png":::
+   CSS grid debugging feature  
 :::image-end:::  
 
-### Aktivieren der Unterstützung für das Verschieben von Tabstopps zwischen Bereichen  
+### Enable support to move tabs between panels  
 
-Normalerweise werden Tools wie **Elemente** und **Netzwerke** nur im Hauptbereich geöffnet, der sich am oberen Rand des devtools befindet.  Tools wie **3D-Ansicht** und **Probleme** , die normalerweise nur in der **Schublade** angezeigt werden, die sich am unteren Rand des devtools befindet.  Nachdem Sie das Experiment ausgewählt haben, können Sie die Tools zwischen dem oberen und unteren Bereich verschieben.  Wenn Sie ein Tool verschieben möchten, zeigen Sie auf die Registerkarte, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie **nach oben** oder **nach unten**verschieben aus.   Mit diesem Experiment können Sie Ihr devtools-Layout anpassen.  Zum ein-oder Ausblenden des **Einschub** Panels wählen Sie `Escape` .  
+Normally, tools such as **Elements** and **Network** may only open in the main panel that is located at the top of the DevTools.  Tools like **3D View** and **Issues** which normally only open in the **Drawer** panel that is located at the bottom of the DevTools.  After you choose the experiment, you may move tools between the top and bottom panels.  To move a tool, hover on the tab, open the contextual menu \(right-click\), and choose **Move to top** or **Move to bottom**.   This experiment allows you to customize your DevTools layout.  To show or hide the **Drawer** panel, select `Escape`.  
 
-:::image type="complex" source="./media/experiments-move-panels.msft.png" alt-text="Liste der Experimente in den devtools-Einstellungen" lightbox="./media/experiments-move-panels.msft.png":::
-   Verschieben von Tabstopps zwischen Bereichen  
+:::image type="complex" source="./media/experiments-move-panels.msft.png" alt-text="List of experiments in DevTools Settings" lightbox="./media/experiments-move-panels.msft.png":::
+   Moving tabs between panels  
 :::image-end:::  
 
 <!--Available in Microsoft Edge version 85 and later.  -->  
 
-### Webhint aktivieren  
+### Enable webhint  
 
-[webhint][WebhintMain] ist ein Open-Source-Tool, das Echtzeitfeedback für Websites und lokale Webseiten bietet.  Der Typ des Feedbacks, das von [webhint][WebhintMain]bereitgestellt wird.  
+[webhint][WebhintMain] is an open-source tool that provides real-time feedback for websites and local web pages.  The type of feedback provided by [webhint][WebhintMain].  
 
-*   Bedienungshilfen  
-*   browserübergreifende Kompatibilität  
-*   Sicherheit  
-*   Leistung  
+*   accessibility  
+*   cross-browser compatibility  
+*   security  
+*   performance  
 *   PWAs  
-*   andere häufig auftretende Probleme mit der Web-Entwicklung  
+*   other common web development issues  
 
-Das [webhint][WebhintMain] -Experiment zeigt das webhint-Feedback im Bereich " [Probleme][DevtoolsIssues] " an.  Wählen Sie ein Problem aus, um die Lösungsdokumentation und eine Liste der betroffenen Ressourcen auf Ihrer Website anzuzeigen.  Wählen Sie einen Ressourcen Link aus, um den entsprechenden Bereich für **Netzwerke**, **Quellen**oder **Elemente** in devtools zu öffnen.  
+The [webhint][WebhintMain] experiment displays the webhint feedback in the [Issues][DevtoolsIssues] panel.  Select an issue to display solution documentation and a list of the affected resources on your website.  Select a resource link to open the relevant **Network**, **Sources**, or **Elements** pane in DevTools.  
 
-:::image type="complex" source="./media/experiments-webhint.msft.png" alt-text="Liste der Experimente in den devtools-Einstellungen" lightbox="./media/experiments-webhint.msft.png":::
-   webhint-Feedback im Bereich " **Probleme** "  
+:::image type="complex" source="./media/experiments-webhint.msft.png" alt-text="List of experiments in DevTools Settings" lightbox="./media/experiments-webhint.msft.png":::
+   webhint feedback in the **Issues** panel  
 :::image-end:::  
 
 <!--Available in Microsoft Edge version 85 and later.  -->  
 
-### Aktivieren der Netzwerk Konsole  
+### Enable Network Console  
 
-**Netzwerk Konsole** ist der Arbeitstitel eines Experiments, um synthetische Netzwerkanforderungen über HTTP zu stellen.  Sie können das **Netzwerkkonsolen** Experiment verwenden, um Web-API-Anforderungen zu senden.  
+**Network Console** is the working title of an experiment to make synthetic network requests over HTTP.  You may use the **Network Console** experiment to send web API requests.  
 
-Nachdem Sie das Experiment aktiviert haben, stellen Sie sicher, dass Sie das devtools erneut starten.  Führen Sie die folgenden Schritte aus, um die **Netzwerk Konsole**zu verwenden.  
+After enabling the experiment, ensure you restart the DevTools.  To use the **Network Console**, use the following steps.  
 
-1.  Öffnen Sie den Bereich **Netzwerk** .  
-1.  Suchen Sie die Netzwerkanforderung, die Sie ändern möchten, und senden Sie Sie erneut.  
-1.  Öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie **Bearbeiten und wiedergeben**aus.  
-1.  Wenn die **Netzwerk Konsole** geöffnet wird, bearbeiten Sie die Netzwerk Anforderungsinformationen.  
-1.  Wählen Sie **senden**aus.  
+1.  Open the **Network** pane.  
+1.  Find the network request that you want to change and resend.  
+1.  Open the contextual menu \(right-click\), and choose **Edit and Replay**.  
+1.  When the **Network Console** opens, edit the network request information.  
+1.  Select **Send**.  
 
-:::image type="complex" source="./media/network-network-console.msft.png" alt-text="Liste der Experimente in den devtools-Einstellungen" lightbox="./media/network-network-console.msft.png":::
-   **Netzwerk Konsole** im **Konsolen** Einzug  
+:::image type="complex" source="./media/network-network-console.msft.png" alt-text="List of experiments in DevTools Settings" lightbox="./media/network-network-console.msft.png":::
+   **Network Console** in the **Console** drawer  
 :::image-end:::  
 
 <!--Available in Microsoft Edge version 85 and later.  -->  
 
-### Viewer für Quellreihenfolge  
+### Source Order Viewer  
 
-Die **Quellauftrags Anzeige** ist ein Experiment, das die Reihenfolge der Elemente in der Seitenquelle anzeigt.  Die Anzeigereihenfolge auf dem Bildschirm kann von der Reihenfolge der Quelle abweichen, die die Bildschirmsprachausgabe und die Tastatur Benutzer verwirrt.  Verwenden Sie das Experiment der **Quellauftrags Anzeige** , um die Unterschiede zwischen der Anzeigereihenfolge auf dem Bildschirm und der Reihenfolge der Quelle zu finden.  
+**Source Order Viewer** is an experiment that displays the order of elements in the page source.  The on-screen display order may differ from the order of the source, which confuses screen reader and keyboard users.  Use the **Source Order Viewer** experiment to find the differences between on-screen display order and the order of the source.  
 
-Nachdem Sie das Experiment aktiviert haben, stellen Sie sicher, dass Sie das devtools erneut starten.  Führen Sie die folgenden Schritte aus, um die **Quellauftrags Anzeige**zu verwenden.  
+After enabling the experiment, ensure you restart the DevTools.  To use **Source Order Viewer**, use the following steps.  
 
-1.  Öffnen Sie den Bereich **Elemente** .  
-1.  Öffnen Sie den Bereich " **Barrierefreiheit** " im Bereich "Schublade \" (unten).  
-1.  Aktivieren Sie im Abschnitt **Quellauftrags Anzeige** das Kontrollkästchen **Quellreihenfolge anzeigen** .  
-1.  Markieren Sie ein beliebiges HTML-Element, um ein Overlay anzuzeigen, das die Reihenfolge in der Seitenquelle enthält.  
+1.  Open the **Elements** pane.  
+1.  Open the **Accessibility** pane in the drawer \(bottom\) panel.  
+1.  Under the **Source Order Viewer** section, select the **Show Source Order** checkbox.  
+1.  Highlight any HTML element to display an overlay that the order in the page source.  
 
-:::image type="complex" source="./media/experiments-source-order-viewer.msft.png" alt-text="Liste der Experimente in den devtools-Einstellungen" lightbox="./media/experiments-source-order-viewer.msft.png":::
-   **Viewer für Quellreihenfolge** im Bereich " **Barrierefreiheit** "  
+:::image type="complex" source="./media/experiments-source-order-viewer.msft.png" alt-text="List of experiments in DevTools Settings" lightbox="./media/experiments-source-order-viewer.msft.png":::
+   **Source Order Viewer** in the **Accessibility** pane  
 :::image-end:::  
 
 <!--Available in Microsoft Edge version 86 and later.  -->  
 
-## Frühere experimentelle Features  
+## Previous experimental features  
 
-*   die [3D-Ansicht][Devtools3dViewIndex] ist jetzt in Microsoft Edge, Version 83 oder höher, standardmäßig verfügbar und aktiviert.  
-*   [Anpassen von Tastenkombinationen][DevtoolsCustomKeyboardShortcuts] ist jetzt in Microsoft Edge, Version 86 oder höher, standardmäßig verfügbar und aktiviert.  
+*   [3D View][Devtools3dViewIndex] is now available and turned on by default in Microsoft Edge version 83 or later.  
+*   [Customize Keyboard Shortcuts][DevtoolsCustomKeyboardShortcuts] is now available and turned on by default in Microsoft Edge version 86 or later.  
 
-## Bereitstellen von Feedback zu experimentellen Features  
+## Providing feedback on experimental features  
 
-Sie können Feedback zu Microsoft Edge devtools-Experimenten oder zu allem anderen, was mit devtools zu tun hat.  
+To provide feedback on Microsoft Edge DevTools experiments, or anything else related to DevTools.  
 
-*   Senden Sie Ihr Feedback über das Symbol " **Feedback senden** " im devtools  
-*   Tweet bei [@EdgeDevTools][TwitterEdgedevtools]  
+*   Send your feedback using the **Send Feedback** icon in the DevTools  
+*   Tweet at [@EdgeDevTools][TwitterEdgedevtools]  
 
-:::image type="complex" source="./media/bing-devtools-send-feedback.msft.png" alt-text="Liste der Experimente in den devtools-Einstellungen" lightbox="./media/bing-devtools-send-feedback.msft.png":::
-   Das Symbol " **Feedback senden** " in Microsoft Edge devtools  
+:::image type="complex" source="./media/bing-devtools-send-feedback.msft.png" alt-text="List of experiments in DevTools Settings" lightbox="./media/bing-devtools-send-feedback.msft.png":::
+   The **Send Feedback** icon in Microsoft Edge DevTools  
 :::image-end:::  
 
 <!--  
@@ -250,22 +250,22 @@ Sie können Feedback zu Microsoft Edge devtools-Experimenten oder zu allem ander
 
 <!-- links -->  
 
-[Devtools3dViewIndex]: ./3d-view/index.md "3D-Ansicht | Microsoft docs"  
-[DevToolsCustomizeSettings]: ./customize/index.md#settings "Einstellungen – anpassen von Microsoft Edge devtools | Microsoft docs"  
-[DevtoolsDeviceModeIndexSimulateMobileViewport]: ./device-mode/index.md#simulate-a-mobile-viewport "Simulieren von mobilen Geräten mit dem Gerätemodus in Microsoft Edge devtools | Microsoft Edge"  
-[DevtoolsIssues]: ./issues/index.md "Suchen und Beheben von Problemen mit dem Microsoft Edge devtools Issues Tool | Microsoft docs"  
-[DevToolsShortcuts]: ./shortcuts.md "Microsoft Edge devtools-Tastenkombinationen | Microsoft docs"  
-[DevtoolsOpen]: ./open.md "Öffnen Sie Microsoft Edge devtools | Microsoft docs"  
-[DevtoolsCustomKeyboardShortcuts]: ./customize/shortcuts.md "Anpassen von Tastenkombinationen in Microsoft Edge devtools | Microsoft docs"
+[Devtools3dViewIndex]: ./3d-view/index.md "3D View | Microsoft Docs"  
+[DevToolsCustomizeSettings]: ./customize/index.md#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsDeviceModeIndexSimulateMobileViewport]: ./device-mode/index.md#simulate-a-mobile-viewport "Simulate Mobile Devices with Device Mode in Microsoft Edge DevTools | Microsoft Edge"  
+[DevtoolsIssues]: ./issues/index.md "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"  
+[DevToolsShortcuts]: ./shortcuts.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"  
+[DevtoolsOpen]: ./open.md "Open Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomKeyboardShortcuts]: ./customize/shortcuts.md "Customize keyboard shortcuts in the Microsoft Edge DevTools | Microsoft Docs"
 
-[DualScreenWebIndex]: /dual-screen/web/index "Dual-Screen Web Experiences | Microsoft docs"  
-[DualScreenAndroidGetDuoSdk]: /dual-screen/android/get-duo-sdk "Abrufen des Surface Duo-Emulators | Microsoft docs"  
-[DualScreenIntroductionHowWorkSeam]: /dual-screen/introduction#how-to-work-with-the-seam "Arbeiten mit der Naht – Einführung in Dual-Screen-Geräte | Microsoft docs"  
-[DualScreenAndroidUseEmulator]: /dual-screen/android/use-emulator "Verwenden des Surface Duo-Emulators | Microsoft docs"  
-[DualScreenDocsCssMedia]: /dual-screen/web/css-media-spanning "CSS mediascreen-Spanning-Funktion für Dual-Screen-Erkennung | Microsoft docs"  
-[DualScreenDocsJSAPI]: /dual-screen/web/javascript-getwindowsegments "Die getWindowSegments-JavaScript-API für Dual-Screen-Geräte | Microsoft docs"  
+[DualScreenWebIndex]: /dual-screen/web/index "Dual-screen web experiences | Microsoft Docs"  
+[DualScreenAndroidGetDuoSdk]: /dual-screen/android/get-duo-sdk "Get the Surface Duo emulator | Microsoft Docs"  
+[DualScreenIntroductionHowWorkSeam]: /dual-screen/introduction#how-to-work-with-the-seam "How to work with the seam - Introduction to dual-screen devices | Microsoft Docs"  
+[DualScreenAndroidUseEmulator]: /dual-screen/android/use-emulator "Use the Surface Duo emulator | Microsoft Docs"  
+[DualScreenDocsCssMedia]: /dual-screen/web/css-media-spanning "CSS media screen-spanning feature for dual-screen detection | Microsoft Docs"  
+[DualScreenDocsJSAPI]: /dual-screen/web/javascript-getwindowsegments "The getWindowSegments JavaScript API for dual-screen devices | Microsoft Docs"  
 
-[RemoteDesktopClientDocs]: /windows-server/remote/remote-desktop-services/clients/remote-desktop-clients "Remote Desktop-Clients | Microsoft docs"
+[RemoteDesktopClientDocs]: /windows-server/remote/remote-desktop-services/clients/remote-desktop-clients "Remote Desktop clients | Microsoft Docs"
 
 [MicrosoftEdge]: https://www.microsoft.com/edge "Microsoft Edge"  
 
@@ -277,6 +277,6 @@ Sie können Feedback zu Microsoft Edge devtools-Experimenten oder zu allem ander
 
 [SamsungMobileGalaxyFold]: https://www.samsung.com/mobile/galaxy-fold/ "Galaxy Fold | Samsung"  
 
-[TwitterEdgedevtools]: https://www.twitter.com/EdgeDevTools "Microsoft Edge-devtools | Twitter"  
+[TwitterEdgedevtools]: https://www.twitter.com/EdgeDevTools "Microsoft Edge DevTools | Twitter"  
 
 [WebhintMain]: https://webhint.io "webhint"  
