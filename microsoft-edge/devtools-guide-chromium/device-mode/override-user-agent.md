@@ -1,12 +1,12 @@
 ---
-description: Öffnen Sie die Registerkarte Netzwerkbedingungen, deaktivieren Sie automatisch auswählen, und wählen Sie aus der Liste aus, oder geben Sie eine benutzerdefinierte Zeichenfolge ein.
-title: Überschreiben der Benutzer-Agent-Zeichenfolge von Microsoft Edge devtools
+description: Open the Network conditions tab, disable Select automatically, and choose from the list or enter a custom string.
+title: Override The User Agent String From Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+keywords: microsoft edge, web development, f12 tools, devtools
 ms.openlocfilehash: ecaa1247824e5c3acb07a2c631feab30d25aba8d
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -28,39 +28,39 @@ ms.locfileid: "10992925"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# <span data-ttu-id="a0c4b-104">Überschreiben der Benutzer-Agent-Zeichenfolge von Microsoft Edge devtools</span><span class="sxs-lookup"><span data-stu-id="a0c4b-104">Override the user agent string from Microsoft Edge DevTools</span></span>  
+# <span data-ttu-id="59a60-104">Override the user agent string from Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="59a60-104">Override the user agent string from Microsoft Edge DevTools</span></span>  
 
-<span data-ttu-id="a0c4b-105">So überschreiben Sie die Zeichenfolge des [Benutzer-Agents][MDNUserAgent] von Microsoft Edge devtools:</span><span class="sxs-lookup"><span data-stu-id="a0c4b-105">To override the [user agent][MDNUserAgent] string from Microsoft Edge DevTools:</span></span>  
+<span data-ttu-id="59a60-105">To override the [user agent][MDNUserAgent] string from Microsoft Edge DevTools:</span><span class="sxs-lookup"><span data-stu-id="59a60-105">To override the [user agent][MDNUserAgent] string from Microsoft Edge DevTools:</span></span>  
 
-1.  <span data-ttu-id="a0c4b-106">Drücken Sie `Control` + `Shift` + `P` \ (Windows \) oder `Command` + `Shift` + `P` \ (macOS \), um das **Befehlsmenü**zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="a0c4b-106">Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.</span></span>  
+1.  <span data-ttu-id="59a60-106">Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.</span><span class="sxs-lookup"><span data-stu-id="59a60-106">Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.</span></span>  
     
-    :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="Das Befehlsmenü" lightbox="../media/device-mode-console-command-menu.msft.png":::
-       <span data-ttu-id="a0c4b-108">Das **Befehlsmenü**</span><span class="sxs-lookup"><span data-stu-id="a0c4b-108">The **Command Menu**</span></span>  
+    :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="The Command Menu" lightbox="../media/device-mode-console-command-menu.msft.png":::
+       <span data-ttu-id="59a60-108">The **Command Menu**</span><span class="sxs-lookup"><span data-stu-id="59a60-108">The **Command Menu**</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="a0c4b-109">Geben `network conditions` Sie **Netzwerkbedingungen anzeigen**ein, und drücken Sie, `Enter` um die Registerkarte **Netzwerkbedingungen** zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="a0c4b-109">Type `network conditions`, select **Show Network conditions**, and press `Enter` to open the **Network conditions** tab.</span></span>  
-1.  <span data-ttu-id="a0c4b-110">Deaktivieren Sie im Abschnitt **Benutzer-Agent** das Kontrollkästchen **automatisch auswählen** .</span><span class="sxs-lookup"><span data-stu-id="a0c4b-110">In the **User agent** section, disable the **Select automatically** checkbox.</span></span>  
+1.  <span data-ttu-id="59a60-109">Type `network conditions`, select **Show Network conditions**, and press `Enter` to open the **Network conditions** tab.</span><span class="sxs-lookup"><span data-stu-id="59a60-109">Type `network conditions`, select **Show Network conditions**, and press `Enter` to open the **Network conditions** tab.</span></span>  
+1.  <span data-ttu-id="59a60-110">In the **User agent** section, disable the **Select automatically** checkbox.</span><span class="sxs-lookup"><span data-stu-id="59a60-110">In the **User agent** section, disable the **Select automatically** checkbox.</span></span>  
     
-    :::image type="complex" source="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png" alt-text="Automatisches auswählen deaktivieren" lightbox="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png":::
-       <span data-ttu-id="a0c4b-112">**Automatisches auswählen** deaktivieren</span><span class="sxs-lookup"><span data-stu-id="a0c4b-112">Disable **Select automatically**</span></span>  
+    :::image type="complex" source="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png" alt-text="The Command Menu" lightbox="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png":::
+       <span data-ttu-id="59a60-112">Disable **Select automatically**</span><span class="sxs-lookup"><span data-stu-id="59a60-112">Disable **Select automatically**</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="a0c4b-113">Wählen Sie eine Benutzer-Agent-Zeichenfolge aus der Liste aus, oder geben Sie eine eigene benutzerdefinierte Zeichenfolge ein.</span><span class="sxs-lookup"><span data-stu-id="a0c4b-113">Select a user agent string from the list, or enter your own custom string.</span></span>  
+1.  <span data-ttu-id="59a60-113">Select a user agent string from the list, or enter your own custom string.</span><span class="sxs-lookup"><span data-stu-id="59a60-113">Select a user agent string from the list, or enter your own custom string.</span></span>  
 
-## <span data-ttu-id="a0c4b-114">Kontakt mit dem Microsoft Edge devtools-Team</span><span class="sxs-lookup"><span data-stu-id="a0c4b-114">Getting in touch with the Microsoft Edge DevTools team</span></span>  
+## <span data-ttu-id="59a60-114">Getting in touch with the Microsoft Edge DevTools team</span><span class="sxs-lookup"><span data-stu-id="59a60-114">Getting in touch with the Microsoft Edge DevTools team</span></span>  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[MDNUserAgent]: https://developer.mozilla.org/docs/Glossary/User_agent "Benutzer-Agent | MDN"  
+[MDNUserAgent]: https://developer.mozilla.org/docs/Glossary/User_agent "User agent | MDN"  
 
 > [!NOTE]
-> <span data-ttu-id="a0c4b-116">Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="a0c4b-116">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="a0c4b-117">Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/device-mode/override-user-agent) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.</span><span class="sxs-lookup"><span data-stu-id="a0c4b-117">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/device-mode/override-user-agent) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
+> <span data-ttu-id="59a60-116">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="59a60-116">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="59a60-117">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/device-mode/override-user-agent) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span><span class="sxs-lookup"><span data-stu-id="59a60-117">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/device-mode/override-user-agent) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
-<span data-ttu-id="a0c4b-119">Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="a0c4b-119">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
+<span data-ttu-id="59a60-119">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="59a60-119">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

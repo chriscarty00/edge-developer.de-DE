@@ -60,7 +60,7 @@ ms.locfileid: "10985968"
 
 <span data-ttu-id="97be1-127">Um eine Seite lokal zu debuggen, starten Sie einfach die Microsoft Edge DevTools-App.</span><span class="sxs-lookup"><span data-stu-id="97be1-127">To debug a page locally, simply launch the Microsoft Edge DevTools app.</span></span>  <span data-ttu-id="97be1-128">Im Bereich **Lokal** der Auswahl werden alle aktiven EdgeHTML-Inhaltsprozesse angezeigt, einschließlich der geöffneten Edge-Browser-Registerkarten, in denen [PWAs][PwasEdgehtmlIndex] \(`WWAHost.exe`-Prozesse\) und [WebView][HostingWebview]-Steuerelemente ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="97be1-128">The **Local** panel of the chooser displays all of the active EdgeHTML content processes, including open Edge browser tabs, running [PWAs][PwasEdgehtmlIndex] \(`WWAHost.exe` processes\), and [webview][HostingWebview] controls.</span></span>  <span data-ttu-id="97be1-129">Wählen Sie das Ziel, das angehängt werden soll, und öffnen Sie eine neue Registerkarten-Instanz der DevTools.</span><span class="sxs-lookup"><span data-stu-id="97be1-129">Select your desired target to attach and open a new tab instance of the DevTools.</span></span>  
 
-:::image type="complex" source="./devtools-guide/media/chooser_local.png" alt-text="DevTools-App, Bereich "Lokal"":::
+:::image type="complex" source="./devtools-guide/media/chooser_local.png" alt-text="Microsoft Edge (EdgeHTML) DevTools":::
    <span data-ttu-id="97be1-131">DevTools-App, Bereich "Lokal"</span><span class="sxs-lookup"><span data-stu-id="97be1-131">DevTools app Local panel</span></span>
 :::image-end:::
 
@@ -72,7 +72,7 @@ ms.locfileid: "10985968"
 
 <span data-ttu-id="97be1-136">Lesen Sie zu Beginn den Abschnitt [*Microsoft Edge DevTools*][DevtoolsProtocolEdgehtmlClientsEdgePreview] der Dokumente [DevTools-Protokoll][DevtoolsProtocolEdgehtmlIndex].</span><span class="sxs-lookup"><span data-stu-id="97be1-136">To get started, check out the [*Microsoft Edge DevTools*][DevtoolsProtocolEdgehtmlClientsEdgePreview] section of the [DevTools Protocol][DevtoolsProtocolEdgehtmlIndex] docs.</span></span>  
 
-:::image type="complex" source="./devtools-guide/media/chooser_remote.png" alt-text="DevTools-App, Bereich "Remote"":::
+:::image type="complex" source="./devtools-guide/media/chooser_remote.png" alt-text="Microsoft Edge (EdgeHTML) DevTools":::
    <span data-ttu-id="97be1-138">DevTools-App, Bereich "Remote"</span><span class="sxs-lookup"><span data-stu-id="97be1-138">DevTools app Remote panel</span></span>
 :::image-end:::
 
