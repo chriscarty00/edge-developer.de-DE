@@ -36,8 +36,10 @@
   href: roadmap.md
 - name: So wird's gemacht
   items:
+    - name: Ladeprogramm für statische Links
+      href: howto/static.md
     - name: Debug-WebView2
-      href: howto/Debug.md
+      href: howto/debug.md
     - name: Automatisieren mit dem Edge-Treiber
       href: howto/webdriver.md
 - name: Verweis
