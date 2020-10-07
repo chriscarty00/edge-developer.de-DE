@@ -1,6 +1,6 @@
 ---
-description: Ruft den Skriptkontext ab, zu dem das Objekt gehört.
-title: JsGetContextOfObject-Funktion | Microsoft docs
+description: Gets the script context that the object belongs to.
+title: JsGetContextOfObject Function | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: microsoft-edge
@@ -20,10 +20,10 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "10567266"
 ---
-# <span data-ttu-id="c4f12-103">JsGetContextOfObject-Funktion</span><span class="sxs-lookup"><span data-stu-id="c4f12-103">JsGetContextOfObject Function</span></span>
-<span data-ttu-id="c4f12-104">Ruft den Skriptkontext ab, zu dem das Objekt gehört.</span><span class="sxs-lookup"><span data-stu-id="c4f12-104">Gets the script context that the object belongs to.</span></span>  
+# <span data-ttu-id="d3d96-103">JsGetContextOfObject Function</span><span class="sxs-lookup"><span data-stu-id="d3d96-103">JsGetContextOfObject Function</span></span>
+<span data-ttu-id="d3d96-104">Gets the script context that the object belongs to.</span><span class="sxs-lookup"><span data-stu-id="d3d96-104">Gets the script context that the object belongs to.</span></span>  
   
-## <span data-ttu-id="c4f12-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="c4f12-105">Syntax</span></span>  
+## <span data-ttu-id="d3d96-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="d3d96-105">Syntax</span></span>  
   
 ```cpp  
 STDAPI_(JsErrorCode) JsGetContextOfObject(  
@@ -32,21 +32,21 @@ STDAPI_(JsErrorCode) JsGetContextOfObject(
 );  
 ```  
   
-#### <span data-ttu-id="c4f12-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="c4f12-106">Parameters</span></span>  
+#### <span data-ttu-id="d3d96-106">Parameters</span><span class="sxs-lookup"><span data-stu-id="d3d96-106">Parameters</span></span>  
  `object`  
- <span data-ttu-id="c4f12-107">Das Objekt, aus dem der Kontext abgerufen werden soll.</span><span class="sxs-lookup"><span data-stu-id="c4f12-107">The object to get the context from.</span></span>  
+ <span data-ttu-id="d3d96-107">The object to get the context from.</span><span class="sxs-lookup"><span data-stu-id="d3d96-107">The object to get the context from.</span></span>  
   
  `context`  
- <span data-ttu-id="c4f12-108">Der Kontext, zu dem das Objekt gehört.</span><span class="sxs-lookup"><span data-stu-id="c4f12-108">The context the object belongs to.</span></span>  
+ <span data-ttu-id="d3d96-108">The context the object belongs to.</span><span class="sxs-lookup"><span data-stu-id="d3d96-108">The context the object belongs to.</span></span>  
   
-## <span data-ttu-id="c4f12-109">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="c4f12-109">Return Value</span></span>  
- <span data-ttu-id="c4f12-110">Der Code `JsNoError` , wenn der Vorgang erfolgreich war, andernfalls ein Fehlercode.</span><span class="sxs-lookup"><span data-stu-id="c4f12-110">The code `JsNoError` if the operation succeeded, a failure code otherwise.</span></span>  
+## <span data-ttu-id="d3d96-109">Return Value</span><span class="sxs-lookup"><span data-stu-id="d3d96-109">Return Value</span></span>  
+ <span data-ttu-id="d3d96-110">The code `JsNoError` if the operation succeeded, a failure code otherwise.</span><span class="sxs-lookup"><span data-stu-id="d3d96-110">The code `JsNoError` if the operation succeeded, a failure code otherwise.</span></span>  
   
-## <span data-ttu-id="c4f12-111">Hinweise</span><span class="sxs-lookup"><span data-stu-id="c4f12-111">Remarks</span></span>  
- <span data-ttu-id="c4f12-112">Erfordert einen aktiven Skriptkontext.</span><span class="sxs-lookup"><span data-stu-id="c4f12-112">Requires an active script context.</span></span>  
+## <span data-ttu-id="d3d96-111">Remarks</span><span class="sxs-lookup"><span data-stu-id="d3d96-111">Remarks</span></span>  
+ <span data-ttu-id="d3d96-112">Requires an active script context.</span><span class="sxs-lookup"><span data-stu-id="d3d96-112">Requires an active script context.</span></span>  
   
-## <span data-ttu-id="c4f12-113">Anforderungen</span><span class="sxs-lookup"><span data-stu-id="c4f12-113">Requirements</span></span>  
- <span data-ttu-id="c4f12-114">**Kopfzeile:** jsrt. h</span><span class="sxs-lookup"><span data-stu-id="c4f12-114">**Header:** jsrt.h</span></span>  
+## <span data-ttu-id="d3d96-113">Requirements</span><span class="sxs-lookup"><span data-stu-id="d3d96-113">Requirements</span></span>  
+ <span data-ttu-id="d3d96-114">**Header:** jsrt.h</span><span class="sxs-lookup"><span data-stu-id="d3d96-114">**Header:** jsrt.h</span></span>  
   
-## <span data-ttu-id="c4f12-115">Weitere Informationen</span><span class="sxs-lookup"><span data-stu-id="c4f12-115">See Also</span></span>  
- [<span data-ttu-id="c4f12-116">Referenz (JavaScript-Laufzeit)</span><span class="sxs-lookup"><span data-stu-id="c4f12-116">Reference (JavaScript Runtime)</span></span>](../chakra-hosting/reference-javascript-runtime.md)
+## <span data-ttu-id="d3d96-115">See Also</span><span class="sxs-lookup"><span data-stu-id="d3d96-115">See Also</span></span>  
+ [<span data-ttu-id="d3d96-116">Reference (JavaScript Runtime)</span><span class="sxs-lookup"><span data-stu-id="d3d96-116">Reference (JavaScript Runtime)</span></span>](../chakra-hosting/reference-javascript-runtime.md)

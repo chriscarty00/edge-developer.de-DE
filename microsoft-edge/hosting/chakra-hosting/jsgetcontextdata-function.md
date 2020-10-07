@@ -1,6 +1,6 @@
 ---
-description: Ruft die interne Datengruppe in JsrtContext ab.
-title: JsGetContextData-Funktion | Microsoft docs
+description: Gets the internal data set on JsrtContext.
+title: JsGetContextData Function | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: microsoft-edge
@@ -20,10 +20,10 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "10567268"
 ---
-# <span data-ttu-id="dc30d-103">JsGetContextData-Funktion</span><span class="sxs-lookup"><span data-stu-id="dc30d-103">JsGetContextData Function</span></span>
-<span data-ttu-id="dc30d-104">Ruft die interne Datengruppe in JsrtContext ab.</span><span class="sxs-lookup"><span data-stu-id="dc30d-104">Gets the internal data set on JsrtContext.</span></span>  
+# <span data-ttu-id="0917f-103">JsGetContextData Function</span><span class="sxs-lookup"><span data-stu-id="0917f-103">JsGetContextData Function</span></span>
+<span data-ttu-id="0917f-104">Gets the internal data set on JsrtContext.</span><span class="sxs-lookup"><span data-stu-id="0917f-104">Gets the internal data set on JsrtContext.</span></span>  
   
-## <span data-ttu-id="dc30d-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="dc30d-105">Syntax</span></span>  
+## <span data-ttu-id="0917f-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="0917f-105">Syntax</span></span>  
   
 ```cpp  
 STDAPI_(JsErrorCode) JsGetContextData(  
@@ -32,21 +32,21 @@ STDAPI_(JsErrorCode) JsGetContextData(
 );  
 ```  
   
-#### <span data-ttu-id="dc30d-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="dc30d-106">Parameters</span></span>  
+#### <span data-ttu-id="0917f-106">Parameters</span><span class="sxs-lookup"><span data-stu-id="0917f-106">Parameters</span></span>  
  `context`  
- <span data-ttu-id="dc30d-107">Der Kontext, aus dem die Daten abgerufen werden sollen.</span><span class="sxs-lookup"><span data-stu-id="dc30d-107">The context to get the data from.</span></span>  
+ <span data-ttu-id="0917f-107">The context to get the data from.</span><span class="sxs-lookup"><span data-stu-id="0917f-107">The context to get the data from.</span></span>  
   
  `data`  
- <span data-ttu-id="dc30d-108">Der Zeiger auf die Daten, in die Daten zurückgegeben werden.</span><span class="sxs-lookup"><span data-stu-id="dc30d-108">The pointer to the data where data will be returned.</span></span>  
+ <span data-ttu-id="0917f-108">The pointer to the data where data will be returned.</span><span class="sxs-lookup"><span data-stu-id="0917f-108">The pointer to the data where data will be returned.</span></span>  
   
-## <span data-ttu-id="dc30d-109">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="dc30d-109">Return Value</span></span>  
- <span data-ttu-id="dc30d-110">Der Code `JsNoError` , wenn der Vorgang erfolgreich war, andernfalls ein Fehlercode.</span><span class="sxs-lookup"><span data-stu-id="dc30d-110">The code `JsNoError` if the operation succeeded, a failure code otherwise.</span></span>  
+## <span data-ttu-id="0917f-109">Return Value</span><span class="sxs-lookup"><span data-stu-id="0917f-109">Return Value</span></span>  
+ <span data-ttu-id="0917f-110">The code `JsNoError` if the operation succeeded, a failure code otherwise.</span><span class="sxs-lookup"><span data-stu-id="0917f-110">The code `JsNoError` if the operation succeeded, a failure code otherwise.</span></span>  
   
-## <span data-ttu-id="dc30d-111">Hinweise</span><span class="sxs-lookup"><span data-stu-id="dc30d-111">Remarks</span></span>  
- <span data-ttu-id="dc30d-112">Erfordert einen aktiven Skriptkontext.</span><span class="sxs-lookup"><span data-stu-id="dc30d-112">Requires an active script context.</span></span>  
+## <span data-ttu-id="0917f-111">Remarks</span><span class="sxs-lookup"><span data-stu-id="0917f-111">Remarks</span></span>  
+ <span data-ttu-id="0917f-112">Requires an active script context.</span><span class="sxs-lookup"><span data-stu-id="0917f-112">Requires an active script context.</span></span>  
   
-## <span data-ttu-id="dc30d-113">Anforderungen</span><span class="sxs-lookup"><span data-stu-id="dc30d-113">Requirements</span></span>  
- <span data-ttu-id="dc30d-114">**Kopfzeile:** jsrt. h</span><span class="sxs-lookup"><span data-stu-id="dc30d-114">**Header:** jsrt.h</span></span>  
+## <span data-ttu-id="0917f-113">Requirements</span><span class="sxs-lookup"><span data-stu-id="0917f-113">Requirements</span></span>  
+ <span data-ttu-id="0917f-114">**Header:** jsrt.h</span><span class="sxs-lookup"><span data-stu-id="0917f-114">**Header:** jsrt.h</span></span>  
   
-## <span data-ttu-id="dc30d-115">Weitere Informationen</span><span class="sxs-lookup"><span data-stu-id="dc30d-115">See Also</span></span>  
- [<span data-ttu-id="dc30d-116">Referenz (JavaScript-Laufzeit)</span><span class="sxs-lookup"><span data-stu-id="dc30d-116">Reference (JavaScript Runtime)</span></span>](../chakra-hosting/reference-javascript-runtime.md)
+## <span data-ttu-id="0917f-115">See Also</span><span class="sxs-lookup"><span data-stu-id="0917f-115">See Also</span></span>  
+ [<span data-ttu-id="0917f-116">Reference (JavaScript Runtime)</span><span class="sxs-lookup"><span data-stu-id="0917f-116">Reference (JavaScript Runtime)</span></span>](../chakra-hosting/reference-javascript-runtime.md)

@@ -12,10 +12,10 @@ ms.lasthandoff: 06/18/2020
 ms.locfileid: "10751957"
 ---
 > [!NOTE]
-> <span data-ttu-id="b2cea-101">Die in diesem Dokument beschriebenen Features werden nicht mehr verwaltet.</span><span class="sxs-lookup"><span data-stu-id="b2cea-101">The features described in this document are no longer being maintained.</span></span> <span data-ttu-id="b2cea-102">Weitere Informationen zum neuen WebView2-Steuerelement finden Sie unter [Einführung in Microsoft Edge WebView2 (Preview)][MicrosoftEdgeWebview2Index].</span><span class="sxs-lookup"><span data-stu-id="b2cea-102">For more information on the new WebView2 control, see [Introduction to Microsoft Edge WebView2 (Preview)][MicrosoftEdgeWebview2Index].</span></span>  
+> <span data-ttu-id="89c50-101">The features described in this document are no longer being maintained.</span><span class="sxs-lookup"><span data-stu-id="89c50-101">The features described in this document are no longer being maintained.</span></span> <span data-ttu-id="89c50-102">For more information on the new WebView2 control, see [Introduction to Microsoft Edge WebView2 (Preview)][MicrosoftEdgeWebview2Index].</span><span class="sxs-lookup"><span data-stu-id="89c50-102">For more information on the new WebView2 control, see [Introduction to Microsoft Edge WebView2 (Preview)][MicrosoftEdgeWebview2Index].</span></span>  
 
 <!-- image links -->  
 
 <!-- links -->  
 
-[MicrosoftEdgeWebview2Index]: /microsoft-edge/webview2/index "Microsoft Edge (Chrom) WebView2 (Preview)"
+[MicrosoftEdgeWebview2Index]: /microsoft-edge/webview2/index "Microsoft Edge (Chromium) WebView2 (Preview)"

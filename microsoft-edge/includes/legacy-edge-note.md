@@ -12,10 +12,10 @@ ms.lasthandoff: 08/20/2020
 ms.locfileid: "10941802"
 ---
 > [!NOTE]
-> <span data-ttu-id="ae445-101">Diese Dokumentation zielt [auf die Legacy Version von Microsoft Edge][MicrosoftSupport44533505]ab.</span><span class="sxs-lookup"><span data-stu-id="ae445-101">This documentation targets the [legacy version of Microsoft Edge][MicrosoftSupport44533505].</span></span>  <span data-ttu-id="ae445-102">Informationen zum neuen Microsoft Edge finden Sie unter [Microsoft Edge (Chrom)-devtools][DevtoolsGuideChromium].</span><span class="sxs-lookup"><span data-stu-id="ae445-102">For information on the new Microsoft Edge, see [Microsoft Edge (Chromium) DevTools][DevtoolsGuideChromium].</span></span>  
+> <span data-ttu-id="b4b32-101">This documentation targets the [legacy version of Microsoft Edge][MicrosoftSupport44533505].</span><span class="sxs-lookup"><span data-stu-id="b4b32-101">This documentation targets the [legacy version of Microsoft Edge][MicrosoftSupport44533505].</span></span>  <span data-ttu-id="b4b32-102">For information on the new Microsoft Edge, see [Microsoft Edge (Chromium) DevTools][DevtoolsGuideChromium].</span><span class="sxs-lookup"><span data-stu-id="b4b32-102">For information on the new Microsoft Edge, see [Microsoft Edge (Chromium) DevTools][DevtoolsGuideChromium].</span></span>  
 
 <!-- links -->  
 
-[DevtoolsGuideChromium]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chrom)-Entwickler Tools | Microsoft docs"  
+[DevtoolsGuideChromium]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 
-[MicrosoftSupport44533505]: https://support.microsoft.com/help/4533505 "Was ist Microsoft Edge Legacy?"  
+[MicrosoftSupport44533505]: https://support.microsoft.com/help/4533505 "What is Microsoft Edge Legacy?"  
