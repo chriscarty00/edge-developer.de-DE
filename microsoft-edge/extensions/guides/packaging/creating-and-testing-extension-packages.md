@@ -1,13 +1,13 @@
 ---
 ms.assetid: 5eefa3d8-8626-4486-bd90-1361400d6468
-description: Hier erfahren Sie, wie Sie Ihre Microsoft Edge-Erweiterung manuell Verpacken und testen, ob Sie richtig verpackt ist.
-title: Erstellen und Testen von Erweiterungspaketen
+description: Learn about how to package up your Microsoft Edge extension manually and test it to see if it's packaged correctly.
+title: Creating and testing extension packages
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge, Web-Entwicklung, HTML, CSS, JavaScript, Entwickler, Verpackung
+keywords: edge, web development, html, css, javascript, developer, packaging
 ms.custom: seodec18
 ms.openlocfilehash: a76737d76c8f08c8e79992f0804fdbd34d4ed970
 ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
@@ -16,36 +16,36 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "10567383"
 ---
-# Erstellen und Testen eines Microsoft Edge Extension AppX-Pakets  
+# Creating and testing a Microsoft Edge extension AppX package  
 
 [!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]  
 
-Microsoft Edge-Erweiterungen sind als AppX verpackt, ähnlich wie universelle Windows-apps verpackt sind. Ab Windows 10 Anniversary Update wurde ein neues Schema für AppX eingeführt, das es einem AppX ermöglicht, eine Microsoft Edge-Erweiterung als Inhalt einzubeziehen.
+Microsoft Edge extensions are packaged as AppX, similar to how Universal Windows Apps are packaged. As of Windows 10 Anniversary Update, a new schema has been introduced for AppX that allows an AppX to include a Microsoft Edge extension as its content.
 
-Wenn Sie bereits wissen, wie Microsoft Edge Extension-AppXs erstellt werden, können Sie die [Verwendung von ManifoldJS zur Paketerweiterung](./using-manifoldjs-to-package-extensions.md) überspringen, um zu erfahren, wie Sie ein auf Node. js basierendes Tool verwenden, um all dies für Sie zu erledigen!
+If you already know how Microsoft Edge extension AppXs are created, you can skip to [Using ManifoldJS to package extension](./using-manifoldjs-to-package-extensions.md) to learn how to use a Node.js based tool to do all of this for you!
 
 > [!NOTE]
-> Das Übermitteln einer Microsoft Edge-Erweiterung an den Microsoft Store ist derzeit eine eingeschränkte Funktion. Nachdem Sie Ihre Erweiterung erstellt, verpackt und getestet haben, senden Sie uns bitte eine Anfrage über unser [Extension-Übermittlungsformular](https://aka.ms/extension-request).
+> Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability. Once you've created, packaged and tested your extension, please submit a request on our [extension submission form](https://aka.ms/extension-request).
 
 
 
-## Vorbereiten des Übermittlungs Ordners
+## Preparing the submission folder
 
-Wenn Sie Ihre Erweiterung für die Übermittlung vorbereiten möchten, müssen Sie einen Ordner mit der folgenden Struktur erstellen:
+To prepare your extension for submission, you need to create a folder with the following structure:
 
-![Abbildung der Ordnerstruktur. In meinem Erweiterungsordner befindet sich der Ordner "AppxManifest. xml", "Erweiterungsordner" und "Objekte"](./../../media/packaging_folder-structure.png)
+![image of folder structure. Inside My Extension folder is AppxManifest.xml, Extension folder, and Assets folder](./../../media/packaging_folder-structure.png)
 
-Im Stammverzeichnis des Ordners sollten Sie eine AppXManifest. XML-Datei hinzufügen. Diese Datei wird verwendet, um den Inhalt und das Layout des Pakets anzugeben.
+At the root of the folder, you should include an AppXManifest.xml file. This file is used to specify the contents and layout of the package.
 
-Darüber hinaus sollten Sie über einen Ordner "Objekte" verfügen, der die im Microsoft Store zu verwendenden UI-Ressourcen enthält, sowie einen Erweiterungsordner, der die Dateien Ihrer Erweiterung enthält (Skripts, Symbole usw.).
+You should also have an Assets folder which contains the UI assets to be used in the Microsoft Store, and an Extension folder that contains your extension's files (scripts, icons, etc).
 
 > [!IMPORTANT]
-> Sie können eine andere Ordnerstruktur für Ihr Paket erstellen, die Ordnerstruktur muss aber den AppXManifest-Werten entsprechen.
+> You can create a different folder structure for your package, but the folder structure must match the AppXManifest values.
 
-### AppXManifest. XML
-Die AppXManifest-Datei ist ein XML-Dokument, das Informationen enthält, die das System benötigt, um eine Windows-App bereitzustellen, anzuzeigen oder zu aktualisieren. Diese Datei enthält auch Paketidentität, Funktionen und visuelle Elemente. Jedes app-Paket muss eine AppXManifest-Datei beinhalten.
+### AppXManifest.xml
+The AppXManifest file is an XML document that contains info the system needs to deploy, display, or update a Windows app. This file also includes package identity, capabilities, and visual elements. Every app package must include one AppXManifest file.
 
-Entwickler können die folgende Vorlage für Ihre AppXManifest. XML-Datei verwenden:
+Developers can use the following template for their AppXManifest.xml file:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -100,28 +100,28 @@ Entwickler können die folgende Vorlage für Ihre AppXManifest. XML-Datei verwen
 </Package>
 ```
 
-#### Werte der APP-Identitäts Vorlage
-Nachdem Sie [den Namen ihrer Erweiterung](./extensions-in-the-windows-dev-center.md#name-reservation) über das Windows dev Center reserviert haben, werden Sie in der Lage sein, die erforderlichen Paket Identitätsinformationen zu finden, die zum Ersetzen der folgenden Werte in AppXManifest. XML erforderlich sind:
+#### App identity template values
+Once you've [reserved the name of your extension](./extensions-in-the-windows-dev-center.md#name-reservation) through the Windows Dev Center, you'll be able to find the necessary package identity information needed to replace the following values in AppXManifest.xml:
 
 - `Name`
 - `Publisher`
 - `DisplayName`
 - `PublisherDisplayName`
 
-Mit den folgenden Schritten können Sie auf die Seite der APP-Identität zugreifen:
+You can access your App identity page using the following steps:
 
-1. Navigieren Sie zu [Windows dev Center](https://developer.microsoft.com/windows/).
-2. Registrieren Sie sich bei Ihrem Entwicklerkonto.
-3. Navigieren Sie zum Dashboard.
-4. Wählen Sie den Namen der Erweiterung aus.
+1. Navigate to [Windows Dev Center](https://developer.microsoft.com/windows/).
+2. Sign in to your developer account.
+3. Navigate to the Dashboard.
+4. Select the name of your extension.
 
-   ![Erweiterungsliste](./../../media/select-app.png)
-5. Navigieren Sie zur Seite App-Identität, die sich unter dem Abschnitt App-Verwaltung befindet (nachdem Sie Ihre APP registriert haben).
+   ![extension list](./../../media/select-app.png)
+5. Navigate to the App identity page which is under the App management section (after you've registered your app).
 
-   ![Seite für die APP-Identität](./../../media/app-identity.png)
+   ![app identity page](./../../media/app-identity.png)
 
 
-Sie können jetzt die AppXManifest-Vorlage mit Werten auf der Seite "App-Identität" füllen, wie in der Vorlage angegeben:
+You can now populate the AppXManifest template with values from the App identity page, as indicated in the template:
 
 
 ```xml
@@ -137,10 +137,10 @@ Sie können jetzt die AppXManifest-Vorlage mit Werten auf der Seite "App-Identit
 </Properties>
 ```
 
-#### JSON-Manifest-vorlagenwerte
-Einige Werte in der AppXManifest müssen mit denen übereinstimmen, die im JSON-Manifest definiert sind. Aktualisieren Sie die folgenden Werte in appxmanifest. XML auf der Grundlage Ihres JSON-Erweiterungs Manifests:
+#### JSON manifest template values
+Some values in the AppXManifest need to match those that are defined in the JSON manifest. Please update the following values in appxmanifest.xml based on your extension JSON manifest:
 
-- `Version` – Dies ist die Version, die im JSON-Manifest ihrer Erweiterung aufgeführt ist. Die Zeichenfolge muss mit dem x. x. x. x-Format übereinstimmen, wobei die letzte Ganzzahl 0 sein muss. z.B. 1.2.3.0
+- `Version` - This is the version listed in your extension's JSON manifest. The string needs to match the X.X.X.X format where the last integer has to be 0. E.g. 1.2.3.0
 
    ```xml
    <Identity
@@ -149,7 +149,7 @@ Einige Werte in der AppXManifest müssen mit denen übereinstimmen, die im JSON-
      Version="1.0.0.0" />
    ```
 
-- `Description` – Dies ist eine Kopie der Beschreibung im JSON-Manifest ihrer Erweiterung.
+- `Description` - This is a copy of the description in your extension's JSON manifest.
 
   ```xml
   <uap:VisualElements
@@ -163,15 +163,15 @@ Einige Werte in der AppXManifest müssen mit denen übereinstimmen, die im JSON-
   ```
 
 
-### Objektordner
+### Assets folder
 
-Im Ordner "Objekte" sind drei verschiedene Symbolgrößen erforderlich. Diese Symbole werden im Microsoft Store und in der Windows-Benutzeroberfläche verwendet. Weitere Informationen zu diesen Symbolen finden Sie im [Design](./../design.md#icons-for-packaging) Handbuch.
+Within the Assets folder you will need three different icon sizes. These icons will be used in the Microsoft Store and the Windows UI. For more information on these icons, see the [Design](./../design.md#icons-for-packaging) guide.
 
-![Ordner "Objekte" mit drei Symbolgrößen](./../../media/assets-folder.png)
+![assets folder with three icon sizes in it](./../../media/assets-folder.png)
 
-Nachdem Sie die erforderlichen UI-Ressourcen erstellt haben, aktualisieren Sie AppXManifest. XML so, dass Sie auf die richtigen Dateien verweisen:
+Once you've created the necessary UI assets, update AppXManifest.xml to point to the correct files:
 
-- 44 x 44
+- 44x44
 
    ```xml
    Square44x44Logo="Assets/icon_44.png"
@@ -190,37 +190,37 @@ Nachdem Sie die erforderlichen UI-Ressourcen erstellt haben, aktualisieren Sie A
   ```
 
 
-### Erweiterungsordner
-Kopieren Sie Ihre Erweiterungsdateien (wobei die Ordnerstruktur bleibt) in den Ordner "Erweiterung". Stellen Sie sicher, dass `manifest.json` sich der Ordner "root" befindet.
+### Extension folder
+Copy your extension files (keeping the folder structure) into the Extension folder. Make sure `manifest.json` is at the root your Extension folder.
 
-![Erweiterungsordner mit allen Erweiterungsdateien darin](./../../media/extension-folder.png)
+![extension folder with all extension files in it](./../../media/extension-folder.png)
 
 
-### Unterstützen von mehr als einem Gebietsschema
-Wenn Ihre Erweiterung mehr als eine Sprache unterstützt, möchten Sie möglicherweise das AppX-Paket mit allen benötigten Gebietsschemas konfigurieren, damit das richtige lokalisierte Symbol und die richtige Beschreibung im Microsoft Store angezeigt werden. Weitere Informationen finden Sie unter [Lokalisieren von Erweiterungspaketen](./localizing-extension-packages.md) .
+### Supporting more than one locale
+If your extension supports more than one language, you may want to configure the AppX package with all the locales that you need so that the correct localized icon and description appear in the Microsoft Store. See [Localizing extension packages](./localizing-extension-packages.md) for more information.
 
-### Erstellen eines AppX
+### Creating an Appx
 
-Um eine AppX zu erstellen, müssen Sie den Pfad für makeappx finden. Dieser befindet sich normalerweise am folgenden Speicherort, wenn Sie sich auf einem 64-Bit-Computer befinden.
+To create an Appx, you'll need to find the path for makeappx. This is usually located in the following location if you're on a 64-bit machine.
 
 `C:\Program Files (x86)\Windows Kits\10\bin\x64`
 
-Führen Sie den folgenden Befehl aus, um das AppX-Paket für Ihre Erweiterung zu erstellen:
+Execute the following command to create the AppX package for your extension:
 
 `[Path to makeappx] makeappx pack /h SHA256 /d [Path to package folder created in #1] /p [Path to the appx file that you want to create]`
 
-Dies sollte ungefähr wie folgt aussehen, nachdem Sie die Pfade ausgefüllt haben:
+This should look something like this once you've filled in the paths:
 
 `C:\Program Files (x86)\Windows Kits\10\bin\x64>makeappx.exe pack /h SHA256 /d "C:\Extension\My Extension" /p C:\Extension\MyExtension.appx`
 
-### Entpacken eines AppX
-Möglicherweise möchten Sie einen zuvor generierten AppX entpacken und als Ausgangspunkt für die nächste Iteration der Erweiterung verwenden oder bestätigen, dass der AppX richtig erstellt wurde.
+### Unpacking an Appx
+You may want to unpack a previously generated AppX and use it as a starting point for the next iteration of your extension or to confirm that the AppX was created correctly.
 
-Dazu können Sie den folgenden Befehl ausführen, um das AppX-Paket Ihrer Microsoft Edge-Erweiterung zu entpacken:
+To do this, you can execute the following command to unpack the AppX package of your Microsoft Edge extension:
 
 `[Path to makeappx] makeappx unpack /v /p [Path to appx file you want to unpack] /d [Path to the location where you want to create the package folder]`
 
-Dies sollte in etwa wie folgt aussehen, wenn ausgefüllt:
+This should look something like this when filled out:
 
 `C:\Program Files (x86)\Windows Kits\10\bin\x64>makeappx.exe unpack /v /p "C:\Extension\MyExtension.appx" /d "C:\Extension\My Extension"`
 
@@ -228,40 +228,40 @@ Dies sollte in etwa wie folgt aussehen, wenn ausgefüllt:
 
 
 
-## Testen eines AppX-Pakets
+## Testing an AppX package
 
-Sie können Ihr Microsoft Edge Extension AppX-Paket testen, indem Sie es in Microsoft Edge Sideloading. Sideloading das Erweiterungs AppX-Paket ist mit Sideloading einer universellen Windows-App vergleichbar. Sie müssen ein Zertifikat zum Signieren des Pakets erstellen und dann das Paket zu Windows hinzufügen.
+You can test your Microsoft Edge extension AppX package by sideloading it in Microsoft Edge. Sideloading the extension AppX package is similar to sideloading a Universal Windows app. You will need to create a certificate for signing the package, and then add the package to Windows.
 
-### Signatur
+### Signing
 
-Informationen zum Signieren und Zertifizierungsprozess für Pakete finden Sie unter [Erstellen eines App-Paketsignatur Zertifikats](https://msdn.microsoft.com/library/windows/desktop/jj835832.aspx) und unter [Signieren eines App-Pakets mit SignTool](https://msdn.microsoft.com/library/windows/desktop/jj835835.aspx) .
+See [How to create an app package signing certificate](https://msdn.microsoft.com/library/windows/desktop/jj835832.aspx) and [How to sign an app package using SignTool](https://msdn.microsoft.com/library/windows/desktop/jj835835.aspx) for info on the signing and certification process for packages.
 
 > [!NOTE]
-> Sie müssen kein Erweiterungspaket signieren, bevor Sie es an den Microsoft Store übermitteln. der Store-Aufnahmevorgang übernimmt das für Sie!
+> You do not need to sign an extension package before submitting it to the Microsoft Store; the Store ingestion process will take care of that for you!
 
-Nachdem Sie das Paket mit dem von Ihnen erstellten Zertifikat signiert haben, wird das Zertifikat für die Bereitstellung von App-Paketen nach wie vor nicht vom lokalen Computer als vertrauenswürdig eingestuft, bis Sie es im Speicher für vertrauenswürdige Zertifikate des lokalen Computers installieren. Dazu können Sie certutil. exe verwenden, das im Lieferumfang von Windows enthalten ist.
+After you've signed the package with the certificate that you created, the certificate is still not trusted by the local machine for deployment of app packages until you install it into the trusted certificates store of the local computer. You can use Certutil.exe, which comes with Windows to do this.
 
-Wenn Sie Zertifikate mit WindowsCertutil. exe installieren möchten, führen Sie "cmd. exe" als Administrator aus, und führen Sie den folgenden Befehl aus:
+To install certificates with WindowsCertutil.exe, run Cmd.exe as administrator and run the following command:
 
 `Certutil -addStore TrustedPeople MyKey.cer`
 
-Sobald die Zertifikate nicht mehr verwendet werden, sollten Sie Sie entfernen, indem Sie den folgenden Befehl an einer Eingabeaufforderung des Administrators ausführen:
+Once the certificates are no longer in use, it is recommended that you remove them by running the following command from an administrator command prompt:
 
 `Certutil -delStore TrustedPeople certID`
 
-Die CERT-ID ist die fortlaufende Nummer des Zertifikats. Führen Sie zum Ermitteln der Seriennummer des Zertifikats den folgenden Befehl aus:
+The certID is the serial number of the certificate. To determine the certificate serial number, run the following command:
 
 `Certutil -store TrustedPeople`
 
-### Bereitstellen
-Sie können das Microsoft Edge Extension AppX-Paket bereitstellen, indem Sie den folgenden Befehl in PowerShell (als Administrator) ausführen:
+### Deploying
+You can deploy the Microsoft Edge Extension AppX package by running the following command in PowerShell (as administrator):
 
 `Add-AppxPackage [path to AppX]`
 
-## Automatisiertes Testen mit WebDriver
+## Automated testing with WebDriver
 
-Ab dem Jubiläums Update können Sie Ihre Erweiterung in Microsoft Edge mit WebDriver programmgesteuert querladen und so automatisierte Erweiterungen testen, wenn Microsoft Edge im WebDriver-Modus gestartet wird. Auf diese Weise können Sie automatisierte Tests für alle Erweiterungen einrichten, die Inhalte auf einer Seite manipulieren, und sicherstellen, dass das richtige Verhalten gezeigt wird.
+As of the Anniversary Update, you can programmatically sideload your extension in Microsoft Edge with WebDriver, enabling automated testing of extensions when Microsoft Edge is launched in WebDriver mode. This will allow you to set up automated tests for any extension that manipulates content on a page and verify that the correct behavior is exhibited.
 
-Wenn Sie Ihre Erweiterung für automatisierte Tests querladen möchten, müssen Sie den Ordner der Erweiterung unter speichern `%LOCALAPPDATA%\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\LocalState\` . Nachdem sich Ihre Erweiterung im `LocalState` Verzeichnis befindet, müssen Sie ein [`EdgeOptions`](https://seleniumhq.github.io/selenium/docs/api/dotnet/html/T_OpenQA_Selenium_Edge_EdgeOptions.htm) Objekt erstellen und ihm die Funktion hinzufügen `extensionPaths` . Der Wert dieser Funktion ist eine Matrix von absoluten Pfaden zu den Erweiterungen (im `LocalState` Verzeichnis), die Sie beim Start von Microsoft Edge im WebDriver-Modus auf Seite laden möchten.
+To sideload your extension for automated testing, you'll need to store your extension's folder under `%LOCALAPPDATA%\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\LocalState\`. Once your extension is in the `LocalState` directory, you'll need to create an [`EdgeOptions`](https://seleniumhq.github.io/selenium/docs/api/dotnet/html/T_OpenQA_Selenium_Edge_EdgeOptions.htm) object, and add the `extensionPaths` capability to it. The value of this capability is an array of absolute paths to the extensions (in the `LocalState` directory) you wish to have side loaded when Microsoft Edge starts in WebDriver mode.
 
-Schauen Sie sich die folgende [C#-Datei](https://github.com/scottlow/Ignite2016/blob/master/Ignite%202016%20WebDriver%20Demo/IgniteWebDriverDemo/Program.cs) an, um ein vollständiges Beispiel für das Laden von Erweiterungen in Microsoft Edge mit WebDriver zu finden.
+Check out the following [C# file](https://github.com/scottlow/Ignite2016/blob/master/Ignite%202016%20WebDriver%20Demo/IgniteWebDriverDemo/Program.cs) for a complete sample on side loading extensions in Microsoft Edge with WebDriver.

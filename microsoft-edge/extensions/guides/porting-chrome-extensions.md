@@ -1,13 +1,13 @@
 ---
 ms.assetid: 1319a070-c6e3-4592-9f4b-40ce1575851f
-description: Hier erfahren Sie, wie Sie Ihre Chrome-Erweiterung mithilfe des Microsoft Edge Extension Toolkit zu Microsoft Edge portieren.
-title: Portieren von Chrome-Erweiterungen
+description: Learn how to port your Chrome extension to Microsoft Edge using the Microsoft Edge Extension Toolkit.
+title: Porting Chrome extensions
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge, Web-Entwicklung, HTML, CSS, JavaScript, Entwickler
+keywords: edge, web development, html, css, javascript, developer
 ms.custom: seodec18
 ms.openlocfilehash: 38bf1324c2e7e6f7754912177ce0e53d6c15a276
 ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
@@ -16,17 +16,17 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "10567371"
 ---
-# Portieren einer Erweiterung von Chrome zu Microsoft Edge  
+# Porting an extension from Chrome to Microsoft Edge  
 
 [!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-Das Portieren einer Erweiterung von Chrome zu Microsoft Edge wird mithilfe des [Microsoft Edge Extension Toolkit](https://www.microsoft.com/store/p/microsoft-edge-extension-toolkit/9nblggh4txvb)vereinfacht. Dieses Entwicklertool wandelt eine ungepackte Chrome-Erweiterung in eine ungepackte Microsoft-Edge-Erweiterung um, indem Sie APIs überbrückt und Fehler in Ihrer Datei aufweist `manifest.json` .
+Porting an extension from Chrome to Microsoft Edge is made easy with the help of the [Microsoft Edge Extension Toolkit](https://www.microsoft.com/store/p/microsoft-edge-extension-toolkit/9nblggh4txvb). This developer tool converts an unpacked Chrome extension to an unpacked Microsoft Edge extension by bridging APIs and surfacing any errors in your `manifest.json` file.
 
 
-### API-Bridges
-Um eine nahtlose Portierung von Chrome-APIs auf unterstützte Microsoft Edge-APIs zu ermöglichen, werden dem Ordner Ihrer Erweiterung zwei Skripts hinzugefügt. Diese Skripts überbrücken APIs (bei Bedarf polyfiling), was bedeutet, dass Sie sich keine Gedanken über das Ändern von Chrome-spezifischem Code in Ihrem Hintergrundskript oder in Inhalts Skripts machen müssen.
+### API bridges
+In order to allow for seamless porting of Chrome APIs to supported Microsoft Edge APIs, two scripts are added to your extension's folder. These scripts bridge APIs (polyfiling where necessary), meaning you won't have to worry about changing any Chrome specific code in your background script or content scripts.
 
-Nach der Konvertierung werden die Dateien in der Manifestdatei ihrer Erweiterung mit dem folgenden Schlüssel angezeigt `"-ms-preload"` :
+After conversion, you will see them included in the manifest file of your extension with the `"-ms-preload"` key:
 
 ```json
 "-ms-preload": {
@@ -35,18 +35,18 @@ Nach der Konvertierung werden die Dateien in der Manifestdatei ihrer Erweiterung
 }
 ```
 
-## Verwenden des Microsoft Edge Extension Toolkit
+## Using the Microsoft Edge Extension Toolkit
 
-Die folgenden Anweisungen erläutern, wie Sie Ihre Chrome-Erweiterung in Windows 10 Anniversary Update Edition auf Microsoft Edge konvertieren:
+The following instructions detail how to convert your Chrome extension to run on Microsoft Edge in the Windows 10 Anniversary Update edition:
 
-1. Installieren Sie das [Microsoft Edge Extension Toolkit](https://www.microsoft.com/store/p/microsoft-edge-extension-toolkit/9nblggh4txvb).
-2. Erstellen Sie eine Kopie des Ordners ihrer Chrome-Erweiterung, um eine sichere Aufbewahrung zu gewährleisten. Durch den Konvertierungsprozess wird der Code überschrieben. 
-3. Führen Sie das Microsoft Edge Extension Toolkit aus, und laden Sie die Kopie der Erweiterung.  
- ![Schaltfläche ' Erweiterung laden '](./../media/save-folder.png)
-4. Korrigieren Sie alle Fehler, die im Text-Editor des Tools gemeldet werden. Wählen Sie "erneut überprüfen" aus, um nach dem korrigieren auf Fehler zu überprüfen.  
- ![Erweiterungen-Toolkitfehler finden](./../media/extension-toolkit.png)
-5. Wählen Sie "Dateien speichern".
+1. Install the [Microsoft Edge Extension Toolkit](https://www.microsoft.com/store/p/microsoft-edge-extension-toolkit/9nblggh4txvb).
+2. Make a copy of your Chrome extension's folder for safe keeping. The conversion process will overwrite the code. 
+3. Run the Microsoft Edge Extension Toolkit and load the copy of your extension.  
+ ![load extension button](./../media/save-folder.png)
+4. Correct all the errors that are reported within the tool's text editor. Select "Re-validate" to check for errors after making corrections.  
+ ![extension-toolkit finding errors](./../media/extension-toolkit.png)
+5. Select "Save files".
 
-Sie können jetzt das Toolkit verlassen und ihre Erweiterung in Microsoft Edge laden! 
+You can now exit out of the toolkit and load your extension in Microsoft Edge! 
 
-Sie können mit dem [EdgeHTML Issue Tracker](http://issues.microsoftedge.com)nach bekannten Platt Form Problemen suchen. Wenn Sie der Meinung sind, dass Sie etwas neues gefunden haben, [Öffnen Sie ein Problem](https://developer.microsoft.com/microsoft-edge/platform/issues/new/)!
+You can search for known platform issues with the [EdgeHTML issue tracker](http://issues.microsoftedge.com). If you think you've found something new, [open an issue](https://developer.microsoft.com/microsoft-edge/platform/issues/new/)!

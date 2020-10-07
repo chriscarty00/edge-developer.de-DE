@@ -1,12 +1,12 @@
 ---
-description: Auf dieser Seite finden Sie eine Übersicht über die Neuerungen in EdgeHTML 14.
-title: Neue Features und APIs in EdgeHTML 14
+description: This page provides an overview of what's new in EdgeHTML 14.
+title: New features and APIs in EdgeHTML 14
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 07/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge, Web-Entwicklung, HTML, CSS, JavaScript, Entwickler
+keywords: edge, web development, html, css, javascript, developer
 ms.openlocfilehash: 7f3fcbbf84873fbf0851e1652bde48632e6c4378
 ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
@@ -14,60 +14,60 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "10941905"
 ---
-# Neuerungen in EdgeHTML 14  
+# What's new in EdgeHTML 14  
 
 [!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
-Hier sind die Änderungen, die mit EdgeHTML 14 ausgeliefert wurden, ab dem [Windows 10 Anniversary Update](https://blogs.windows.com/windowsexperience/2016/06/29) \ (08/2016, Build 14393 \).  Eine Übersicht über Änderungen am gesamten Microsoft Edge-Browser finden Sie unter [Einführung in EdgeHTML 14 mit dem Windows 10 Anniversary Update](https://blogs.windows.com/msedgedev/2016/08/04).  
+Here are the changes shipped with EdgeHTML 14, as of the [Windows 10 Anniversary Update](https://blogs.windows.com/windowsexperience/2016/06/29) \(08/2016, Build 14393\).  For an overview of changes to the overall Microsoft Edge browser, see [Introducing EdgeHTML 14 with the Windows 10 Anniversary Update](https://blogs.windows.com/msedgedev/2016/08/04).  
 
-Hier ist der Permalink für die folgende Liste der [https://aka.ms/devguide_edgehtml_14](./edgehtml-14.md) Änderungen:  
+Here's the permalink for the following list of changes: [https://aka.ms/devguide_edgehtml_14](./edgehtml-14.md).  
 
-## Neue Funktionen  
+## New Features  
 
 ### Extensions  
 
-Erweiterungen sind kleine Programme, die verwendet werden können, um Microsoft Edge neue Features hinzuzufügen oder die vorhandene Funktionalität zu ändern.  Erweiterungen dienen dazu, den Alltag des Nutzers zu verbessern, indem Sie Nischen Funktionen zur Verfügung stellen, die für Zielgruppen wichtig sind.  Microsoft Edge unterstützt ein neues HTML-, JavaScript-und CSS-basiertes Erweiterungsmodell.  Dieses neue Modell ist Chrome-kompatibel, was bedeutet, dass vorhandene Chrome Extension-Entwickler Ihre Erweiterungen zu Microsoft Edge mit minimalen Änderungen migrieren können.  Weitere Informationen finden Sie in den [Microsoft Edge Extensions](../../extensions/index.md) -Entwickler Dokumenten.  
+Extensions are small programs that can be used to add new features to Microsoft Edge or modify the existing functionality.  Extensions are intended to improve a user's day-to-day browsing experience by providing niche functionality that is important to targeted audiences.  Microsoft Edge supports a new HTML, JavaScript and CSS based extension model.  This new model is Chrome-compatible which means that existing Chrome extension developers will be able to migrate their extensions to Microsoft Edge with minimal changes.  For more information, check out [Microsoft Edge extensions](../../extensions/index.md) developer docs.  
 
-### FETCH-API  
-Die [Fetch-API](https://fetch.spec.whatwg.org#fetch-api) verwendet die `fetch` Methode zum Abrufen von Ressourcen.  In der Vergangenheit wurde dies erreicht `XMLHttpRequest` .  FETCH ist nicht nur einfacher zu verwenden, sondern bietet auch niedrigeren Zugriff auf Anfragen und Antworten.  Weitere Informationen zur FETCH-API finden Sie im Microsoft Edge-Blogbeitrag, [Fetch (oder die unbestreitbaren Einschränkungen von XMLHttpRequest)](https://blogs.windows.com/msedgedev/2016/05/24).  
+### Fetch API  
+The [Fetch API](https://fetch.spec.whatwg.org#fetch-api) utilizes the `fetch` method for fetching resources.  In the past this was achieved with `XMLHttpRequest`.  Not only is fetch simpler to use, it also provides lower level access to requests and responses.  Read more about the Fetch API in the Microsoft Edge blog post, [Fetch (or the undeniable limitations of XHR)](https://blogs.windows.com/msedgedev/2016/05/24).  
 
 ### JavaScript  
 
-EdgeHTML 14 bietet eine Reihe von neuen und experimentellen Features für Chakra, das JavaScript-Modul, das Microsoft Edge antreibt:  
+EdgeHTML 14 brings a number of new and experimental features to Chakra, the JavaScript engine powering Microsoft Edge:  
 
-#### Neue Funktionen  
+#### New features  
 
-Standardmäßig aktiviert  
+On by default  
 
-*   [Standardparameter](https://developer.microsoft.com/microsoft-edge/platform/status/defaultparameteres6) \ (ES2015 \)
-*   [Potenz Operator](https://developer.microsoft.com/microsoft-edge/platform/status/exponentiationoperatores2016) \ (ES2016 \)
-*   [Array. Prototype. includes](https://developer.microsoft.com/microsoft-edge/platform/status/arrayprototypeincludeses2016) \ (ES2016 \)
-*   [Object. Values](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/values) und [Object. Entries](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/entries) \ (ES2017 \)  
+*   [Default parameters](https://developer.microsoft.com/microsoft-edge/platform/status/defaultparameteres6) \(ES2015\)
+*   [Exponentiation operator](https://developer.microsoft.com/microsoft-edge/platform/status/exponentiationoperatores2016) \(ES2016\)
+*   [Array.prototype.includes](https://developer.microsoft.com/microsoft-edge/platform/status/arrayprototypeincludeses2016) \(ES2016\)
+*   [Object.values](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/values) and [object.entries](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/entries) \(ES2017\)  
 
-#### Experimentelle JavaScript-Features  
+#### Experimental JavaScript features  
 
-Aktiviert mit `about:flags`  
+Enabled with `about:flags`  
 
-*   [Modules](https://blogs.windows.com/msedgedev/2016/05/17) \ (ES2015 \)  
-*   [Async/await](https://developer.microsoft.com/microsoft-edge/platform/status/asyncfunctionses2016) \ (ES2017 \)  
-*   [Regex-Symbole](https://developer.microsoft.com/microsoft-edge/platform/status/regexpbuiltinses6) \ (ES2015 \)  
+*   [Modules](https://blogs.windows.com/msedgedev/2016/05/17) \(ES2015\)  
+*   [Async/await](https://developer.microsoft.com/microsoft-edge/platform/status/asyncfunctionses2016) \(ES2017\)  
+*   [Regex symbols](https://developer.microsoft.com/microsoft-edge/platform/status/regexpbuiltinses6) \(ES2015\)  
 
-Weitere Informationen finden Sie unter [Vorschau von ES6-Modulen und mehr von ES2015, ES2016 und darüber hinaus](https://blogs.windows.com/msedgedev/2016/05/17) und [asynchroner Code wird mit ES2016 Async-Funktionsunterstützung in Chakra und Microsoft Edge vereinfacht](https://blogs.windows.com/msedgedev/2015/09/30).  
+For further details, check out [Previewing ES6 Modules and more from ES2015, ES2016 and beyond](https://blogs.windows.com/msedgedev/2016/05/17) and [Asynchronous code gets easier with ES2016 Async Function support in Chakra and Microsoft Edge](https://blogs.windows.com/msedgedev/2015/09/30).  
 
-### Web-Authentifizierungs-API  
+### Web Authentication API  
 
-Fido 2,0 Web-API  
+FIDO 2.0 Web API  
 
-Die Webauthentifizierungs-(ehemals Fido 2,0 \)-API in Microsoft Edge ermöglicht Webanwendungen die Verwendung von [Windows Hello](https://www.microsoft.com/windows/comprehensive-security) Biometrie für die Benutzerauthentifizierung, damit Sie und Ihre Benutzer alle Probleme und Risiken der Kennwortverwaltung vermeiden können, einschließlich der Kenn Wort erraten, Phishing-und Keylogger-Angriffe.  Die aktuelle Microsoft Edge \ ( `ms-` prefix \)-Implementierung basiert auf einem früheren Entwurf der Webauthentifizierungs Spezifikation und wird sich wahrscheinlich in Zukunft ändern.  Weitere Informationen finden Sie unter Webauthentifizierung:  [Webauthentifizierung und Windows Hello](../windows-integration/web-authentication.md).
+The Web Authentication \(formerly FIDO 2.0\) API in Microsoft Edge enables web applications to use [Windows Hello](https://www.microsoft.com/windows/comprehensive-security) biometrics for user authentication so that you and your users can avoid all the hassles and risks of password management, including password guessing, phishing, and keylogging attacks.  The current Microsoft Edge \(`ms-` prefixed\) implementation is based on an earlier draft of the Web Authentication specification and is likely to change in the future.  Read more about Web Authentication:  [Web authentication and Windows Hello](../windows-integration/web-authentication.md).
 
-### Web-Benachrichtigungen
-Webbenachrichtigungen ermöglichen Websites das Anzeigen von Benachrichtigungen, um Benutzer außerhalb des Kontexts der Webseite und des Browsers zu benachrichtigen, um Benutzer über neue Nachrichten oder Benachrichtigungen auf dem Laufenden zu halten und Websites zu ermöglichen, die Benutzerbindung zu verbessern.  Webbenachrichtigungen in Microsoft Edge sind vollständig in die Benachrichtigungs Plattform und das Wartungs Center in Windows 10 integriert, sodass eine konsistente Benutzeroberfläche mit anderen apps im gesamten System und einfache Steuerungen über Berechtigungen und ruhige Stunden bereitgestellt werden.  Weitere Informationen finden Sie [unter Web-Benachrichtigungen in Microsoft Edge](https://blogs.windows.com/msedgedev/2016/05/16) .  
+### Web Notifications
+Web Notifications allow sites to display notifications to alert users outside the context of the webpage and the browser, keeping users informed of new messages or alerts and allowing sites to improve user engagement.  Web Notifications in Microsoft Edge are fully integrated with the notification platform and Action Center in Windows 10, providing a consistent experience with other apps across the system and easy controls over permissions and Quiet Hours.  Check out [Web Notifications in Microsoft Edge](https://blogs.windows.com/msedgedev/2016/05/16) for more information.  
 
-### Web Speech-API
-Die [Web Speech-API](https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html) ist eine JavaScript-API aus zwei Teilen: Spracherkennung und Sprachsynthese \ (oder Text zu Sprache \).  Zu diesem Zeitpunkt unterstützt Microsoft Edge nur die Sprachsynthese.  Die Sprachsynthese umfasst die Konvertierung von Text in Sprache, die ein Benutzer über seine Lautsprecher hört.  Weitere Informationen finden Sie im Artikel [Web Speech: Speech Synthesis](https://developer.mozilla.org/docs/Web/API/Web_Speech_API) Developer Guide.  
+### Web Speech API
+The [Web Speech API](https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html) is a JavaScript API made up of two parts: speech recognition and speech synthesis \(or text to speech\).  At this time Microsoft Edge supports only speech synthesis.  Speech synthesis involves the conversion of text to speech that a user hears through their speakers.  Check out the [Web Speech: Speech Synthesis](https://developer.mozilla.org/docs/Web/API/Web_Speech_API) Developer Guide article for more information.  
 
-## Neue APIs in EdgeHTML 14
+## New APIs in EdgeHTML 14
 
-Hier finden Sie die vollständige Liste der neuen APIs in EdgeHTML 14.  Sie werden im Format von angezeigt `[interface name].[api name]` .  
+Here's the full list of new APIs in EdgeHTML 14.  They are listed in the format of `[interface name].[api name]`.  
 
-<iframe height='585' scrolling='no' title='Neue APIs in EdgeHTML 14' src='//codepen.io/MSEdgeDev/embed/oWMEPE/?height=585&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>Weitere Informationen finden Sie in den neuen APIs für Stifte <a href='https://codepen.io/MSEdgeDev/pen/oWMEPE/'> in EdgeHTML 14 </a> von MSEdgeDev ( <a href='https://codepen.io/MSEdgeDev'> @MSEdgeDev </a> ) auf <a href='https://codepen.io'> CodePen </a> .</iframe>  
+<iframe height='585' scrolling='no' title='New APIs in EdgeHTML 14' src='//codepen.io/MSEdgeDev/embed/oWMEPE/?height=585&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/MSEdgeDev/pen/oWMEPE/'>New APIs in EdgeHTML 14</a>by MSEdgeDev (<a href='https://codepen.io/MSEdgeDev'>@MSEdgeDev</a>) on <a href='https://codepen.io'>CodePen</a>.</iframe>  

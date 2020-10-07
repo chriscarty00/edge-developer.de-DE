@@ -1,5 +1,5 @@
 ---
-title: JavaScript-Laufzeit-Hosten
+title: JavaScript Runtime Hosting
 ms.date: 06/08/2020
 ms.prod: microsoft-edge
 ms.topic: article
@@ -14,26 +14,26 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/18/2020
 ms.locfileid: "10751958"
 ---
-# JavaScript-Runtime-Hosting  
+# JavaScript runtime hosting  
 
 [!INCLUDE [deprecation-note](./includes/deprecation-note.md)]  
 
-Die APIs für JavaScript-Runtime (JsRT) bieten eine Möglichkeit für Desktop-, Windows Store-und serverseitige Anwendungen, die unter dem Windows-Betriebssystem ausgeführt werden, um einer App mithilfe des standardbasierten Chakra JavaScript-Moduls, das auch von Microsoft Edge und Internet Explorer verwendet wird, Skriptfunktionen hinzuzufügen.  Diese APIs sind unter Windows 10 und einer beliebigen Version des Windows-Betriebssystems verfügbar, auf dem Internet Explorer, Version 11,0, auf dem Computer installiert ist.  
+The JavaScript Runtime (JsRT) APIs provide a way for desktop, Windows Store, and server-side applications running on the Windows operating system to add scripting capabilities to an app by using the standards-based Chakra JavaScript engine that is also utilized by Microsoft Edge and Internet Explorer.  These APIs are available on Windows 10 and any version of the Windows operating system that has Internet Explorer version 11.0 installed on the machine.  
 
-## In diesem Abschnitt  
+## In this section  
 
-In den folgenden Abschnitten werden weitere Informationen zu JavaScript bereitgestellt.  
+The following sections provide more information about JavaScript.  
 
-[Hosten der JavaScript-Laufzeit](./chakra-hosting/hosting-the-javascript-runtime.md)  
-Beschreibt die JsRT-APIs.  
+[Hosting the JavaScript Runtime](./chakra-hosting/hosting-the-javascript-runtime.md)  
+Describes the JsRT APIs.  
 
-[Microsoft Edge vs. Vorgänger-Engines als Zielgruppe](./chakra-hosting/targeting-edge-vs-legacy-engines-in-jsrt-apis.md)  
-Beschreibt, wie die JsRT-APIs mit dem neuen JavaScript-Modul verwendet werden.  
+[Targeting Microsoft Edge vs. Legacy Engines](./chakra-hosting/targeting-edge-vs-legacy-engines-in-jsrt-apis.md)  
+Describes how to use the JsRT APIs with the new JavaScript engine.  
 
-[Referenz (JavaScript-Laufzeit)](./chakra-hosting/reference-javascript-runtime.md)  
-Erläutert die Elemente der JsRT-APIs.  
+[Reference (JavaScript Runtime)](./chakra-hosting/reference-javascript-runtime.md)  
+Explains the elements of the JsRT APIs.  
 
-## Weitere Informationen  
+## See also  
 
-*   [JavaScript-Runtime-Beispiel-App](https://go.microsoft.com/fwlink/p/?LinkID=306674&clcid=0x409)  
-*   [JavaScript-Referenz (MDN)](https://developer.mozilla.org/docs/Web/JavaScript/Reference)  
+*   [JavaScript Runtime Sample App](https://go.microsoft.com/fwlink/p/?LinkID=306674&clcid=0x409)  
+*   [JavaScript Reference (MDN)](https://developer.mozilla.org/docs/Web/JavaScript/Reference)  

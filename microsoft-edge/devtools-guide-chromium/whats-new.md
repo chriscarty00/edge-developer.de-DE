@@ -1,12 +1,12 @@
 ---
-description: Features, die dem Microsoft Edge (Chrom)-devtools im März 2019 hinzugefügt wurden
-title: Neuerungen in der Microsoft Edge-devtools (Chrom) im März 2019
+description: Features added to the Microsoft Edge (Chromium) DevTools in March 2019
+title: What's new in the Microsoft Edge (Chromium) DevTools in March 2019
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
+keywords: microsoft edge, web development, f12 tools, devtools
 ms.openlocfilehash: bf1919b0ab46df378880d664dd4e59aee96605e5
 ms.sourcegitcommit: 24430258f363b7dd85f7067afd4565bf102b4a1f
 ms.translationtype: MT
@@ -14,33 +14,33 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/12/2020
 ms.locfileid: "10645322"
 ---
-# Neuerungen in Microsoft Edge (Chrom) devtools
+# What's new in the Microsoft Edge (Chromium) DevTools
 
-Vielen Dank, dass Sie eine Vorschau der nächsten Version von Microsoft Edge ausprobiert haben! Mit dieser Version haben wir eine wichtige Schicht in der zugrunde liegenden Webplattform von Microsoft Edge durch die Übernahme des Open-Source-Projekts Chromium übernommen. Mit dieser Änderung ist es einfacher für Sie, ihre Websites in Microsoft Edge zu erstellen und zu testen und sicherzustellen, dass diese weiterhin wie erwartet funktionieren, auch wenn Ihre Benutzer in einem anderen Chrom basierten Browser wie Google Chrome, Vivaldi, Opera oder Brave Surfen.
+Thank you so much for trying out a preview of the next version of Microsoft Edge! With this release, we've undertaken a major shift in the underlying web platform of Microsoft Edge by adopting the Chromium open source project. With this change, it will be easier for you to build and test your web sites in Microsoft Edge and ensure they will still work as expected even if your users are browsing in a different Chromium-based browser, like Google Chrome, Vivaldi, Opera, or Brave.
 
-## Das neue Microsoft Edge (Chrom)-devtools
+## The new Microsoft Edge (Chromium) DevTools
 
-Wenn Sie Microsoft Edge Auschecken und sich hauptsächlich in einem Chrom basierten Browser entwickeln, sollten Sie sich wie zu Hause fühlen. Die Microsoft Edge (Chrom)-Entwicklertools sind genau wie die Entwicklertools, die Sie bereits kennen und verwenden!
+If you are checking out Microsoft Edge and you mainly develop in a Chromium-based browser, you should feel right at home. The Microsoft Edge (Chromium) Developer Tools are exactly like the developer tools you already know and use!
 
-![Microsoft Edge (Chrom) devtools](./media/devtools.png)
+![Microsoft Edge (Chromium) DevTools](./media/devtools.png)
 
-Wenn Sie die nächste Version von Microsoft Edge Auschecken und Sie hauptsächlich in Microsoft Edge (EdgeHTML) entwickelt haben, haben wir einige hervorragende neue Tools, mit denen wir hoffen, dass es Ihnen einfacher und schneller fällt, ihre Websites in Microsoft Edge zu erstellen und zu testen! Weitere Informationen zu diesen neuen Tools finden Sie [im devtools-Leitfaden zu Microsoft Edge (Chrom)](../devtools-guide-chromium.md).
+If you are checking out the next version of Microsoft Edge and you mainly developed in Microsoft Edge (EdgeHTML), we have got some great new tools that we hope will make it easier and faster for you to build and test your web sites in Microsoft Edge! To learn more about these new tools, check out [The Microsoft Edge (Chromium) DevTools Guide](../devtools-guide-chromium.md).
 
-## Neue dunkle und helle Designs für das devtools
+## New dark and light themes for the DevTools
 
-Wir haben einige neue düstere und helle Designs für die devtools entwickelt, die Ihnen gefallen werden. Standardmäßig verwendet die Microsoft Edge-devtools (Chrom) das dunkle Design. Wenn Sie das Design des devtools ändern möchten, drücken Sie `Fn`  +  `F1` Windows oder Mac, oder navigieren Sie mithilfe der `...` Schaltfläche in der oberen rechten Ecke des devtools zu Einstellungen.
+We've designed some new dark and light themes for the DevTools that we think you'll love! By default, the Microsoft Edge (Chromium) DevTools will use the Dark theme. To change the theme of the DevTools, press `Fn` + `F1` on Windows or Mac or navigate to Settings using the `...` button in the top right corner of the DevTools.
 
-![Hauptmenü von Microsoft Edge (Chrom) devtools](./media/devtools-main-menu.png)
+![Microsoft Edge (Chromium) DevTools Main Menu](./media/devtools-main-menu.png)
 
-In den Einstellungen können Sie das Design des devtools ändern. Wenn Ihnen die Darstellung des devtools in Ihrem Chrom basierten Browser gefallen hat, können Sie die Microsoft Edge (Chrom)-devtools genauso aussehen lassen, indem Sie die Designs " **dunkel (Chrom)** " oder " **hell (Chrom** )" auswählen. 
+From Settings, you can change the theme of the DevTools. If you liked the way the DevTools looked in your Chromium-based browser, you can make the Microsoft Edge (Chromium) DevTools look exactly like them by selecting the **Dark (Chromium)** or **Light (Chromium)** themes respectively. 
 
-## Debuggen von Microsoft Edge (Chrom) aus vs-Code
+## Debug Microsoft Edge (Chromium) from VS Code
 
-Mit dem [Debugger für Microsoft Edge](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge) vs Code Extension können Sie jetzt sowohl Microsoft Edge (EdgeHTML) als auch Microsoft Edge (Chrom) direkt aus vs-Code Debuggen!
+With the [Debugger for Microsoft Edge](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge) VS Code extension, you can now debug both Microsoft Edge (EdgeHTML) and Microsoft Edge (Chromium) directly from VS Code!
 
-![Debugger für Edge-vs-Code Erweiterung](./media/vscode-debugger.png)
+![Debugger for Edge VS Code extension](./media/vscode-debugger.png)
 
-Um Microsoft Edge (Chrom) anstelle von Microsoft Edge (EdgeHTML) aus vs-Code zu starten, müssen Sie `version` Ihrer vorhandenen **Launch. JSON** -Konfiguration ein Attribut mit der Version von Microsoft Edge (Chrom) hinzufügen, die Sie starten möchten (, `dev` `beta` oder `canary` ). Im folgenden finden Sie eine Beispiel- **Start. JSON** -Konfiguration, mit der die Canary-Version von Microsoft Edge (Chrom) auf [Bing.com](https://www.bing.com/)gestartet wird:
+To launch Microsoft Edge (Chromium) instead of Microsoft Edge (EdgeHTML) from VS Code, you need to add a `version` attribute to your existing **launch.json** configuration with the version of Microsoft Edge (Chromium) you want to launch (`dev`, `beta`, or `canary`). Here's a sample **launch.json** configuration that will launch the Canary version of Microsoft Edge (Chromium) to [bing.com](https://www.bing.com/):
 
 ```json
 {
@@ -52,19 +52,19 @@ Um Microsoft Edge (Chrom) anstelle von Microsoft Edge (EdgeHTML) aus vs-Code zu 
 }
 ```
 
-Weitere Informationen finden Sie unter [Debuggen von Microsoft Edge (Chrom) aus vs-Code](../visual-studio-code/debugger-for-edge.md).
+For more information, check out [how to debug Microsoft Edge (Chromium) from VS Code](../visual-studio-code/debugger-for-edge.md).
 
-## Aktualisierung des Edge devtools-Protokolls
+## Edge DevTools Protocol update
 
-Mit der Verschiebung in der zugrunde liegenden Webplattform von Microsoft Edge erhält das Edge devtools-Protokoll keine weiteren Updates. Die Microsoft Edge-devtools (Chrom) verwendet das Chrom-devtools-Protokoll oder CDP. Informationen zum Verweisen auf die Dokumentation zu den Domänen und Methoden in CDP finden Sie [im CDP-Viewer](https://chromedevtools.github.io/devtools-protocol/tot/Accessibility).
+With the shift in the underlying web platform of Microsoft Edge, the Edge DevTools Protocol will not be receiving any further updates. The Microsoft Edge (Chromium) DevTools will use the Chrome DevTools Protocol or CDP. To reference documentation on the domains and methods in CDP, please refer to [the CDP viewer](https://chromedevtools.github.io/devtools-protocol/tot/Accessibility).
 
-In der nächsten Version von Microsoft Edge werden alle Methoden, mit denen das Präfix vorangestellt wurde, `ms` nicht unterstützt. Weitere Informationen zur Verwendung von CDP in Microsoft Edge (Chrom) finden Sie unter [devtools-Protokoll (Chrom)](../devtools-protocol-chromium.md).
+In the next version of Microsoft Edge, any methods that are prefixed with `ms` will not be supported. To learn more about how to use CDP in Microsoft Edge (Chromium), please refer to [DevTools Protocol (Chromium)](../devtools-protocol-chromium.md).
 
-## Bekannte Probleme
+## Known issues
 
-Viele Links vom Microsoft Edge (Chrom)-devtools zu Inhalten, die auf Websites von Drittanbietern gehostet werden, wurden vorübergehend entfernt. Sobald wir diese Links ersetzen können, werden wir Sie wieder zum devtools hinzufügen.
+Many links from the Microsoft Edge (Chromium) DevTools to content hosted on third-party sites have been removed temporarily. As soon as we can replace these links, we will add them back to the DevTools.
 
 
-Beim Debuggen von Webinhalten auf einem Android-Gerät von Microsoft Edge (Chrom) ist die Version des devtools, die beim Klicken auf die Schaltfläche "über **prüfen** " vom Tool " **Remote Geräte** " gestartet wird, möglicherweise nicht mit der Version des Browsers auf Ihrem Android-Gerät identisch. Infolgedessen werden möglicherweise neue Features im devtools angezeigt, die nicht für den Browser auf Ihrem Android-Gerät funktionieren. Wenn Ihnen das auffallen sollte, würden wir uns freuen, darüber zu hören, bitte geben Sie uns [Feedback](../devtools-guide-chromium.md#getting-in-touch-with-the-microsoft-edge-devtools-team)!
+When debugging web content on an Android device from Microsoft Edge (Chromium), the version of the DevTools that launches when you click the **Inspect** button from the **Remote devices** tool may not match the version of the browser on your Android device. As a result, you may see new features in the DevTools that will not work against the browser on your Android device. If this is something you encounter, we'd love to hear about it so please [file feedback](../devtools-guide-chromium.md#getting-in-touch-with-the-microsoft-edge-devtools-team)!
 
-Schließlich unterstützt Visual Studio unter Windows und Mac noch nicht Microsoft Edge (Chrom). Melden Sie sich [hier](https://visualstudio.microsoft.com/vs/preview/) an, um als erster zu erfahren, wann wir eine Preview-Version von Visual Studio haben, die JavaScript-Debugging in Microsoft Edge (Chrom) für ASP.net-Projekte unterstützt.  
+Finally, Visual Studio on Windows and Mac does not yet support Microsoft Edge (Chromium). Sign up [here](https://visualstudio.microsoft.com/vs/preview/) to be the first to know when we have a preview version of Visual Studio that supports JavaScript debugging inside Microsoft Edge (Chromium) for ASP.NET projects!  

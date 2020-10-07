@@ -1,13 +1,13 @@
 ---
 ms.assetid: 2bc29371-4f2e-4b59-a588-30b107d751f6
-description: Schauen Sie sich an, wie Microsoft Edge eine Leseansicht für Webseiten bietet, um Add-Free-Lesefunktionen zu ermöglichen.
-title: Leseansicht – Entwicklerhandbuch
+description: See how Microsoft Edge provides a reading view for webpages to enable add-free reading.
+title: Reading view - Dev guide
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 07/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge, Web-Entwicklung, HTML, CSS, JavaScript, Entwickler
+keywords: edge, web development, html, css, javascript, developer
 ms.openlocfilehash: 0d2076a63f97ecf2b4699795b0036736d0f95c9c
 ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
@@ -15,39 +15,39 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "10941998"
 ---
-# Leseansicht  
+# Reading view  
 
 [!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
-Microsoft Edge bietet eine Leseansicht für eine optimierte, Buch ähnliche Leseerfahrung von Webseiten ohne Ablenkung von nicht miteinander verknüpften oder anderen sekundären Inhalten auf der Seite.  Die Leseansicht kann über die Schaltfläche " **Leseansicht** \ (Buchsymbol \)" auf der Adressleiste oder mit aktiviert oder deaktiviert werden `Ctrl` + `Shift` + `R` .  In der Leseansicht werden die folgenden Metadaten von einer Seite extrahiert:  
+Microsoft Edge provides a reading view for a more streamlined, book-like reading experience of webpages without the distraction of unrelated or other secondary content on the page.  Reading view can be toggled on or off from the **Reading view** \(book icon\) button on the address bar or with `Ctrl`+`Shift`+`R`.  Reading view extracts the following metadata from a page:  
 
 *   Title
-*   Autor
+*   Author
 *   Date
-*   Herausgeber
-*   Dominantes Bild \ (s \)
-*   Beschriftungen des dominanten Bilds \ (s \)
-*   Sekundäre Bilder
-*   Haupt Textinhalt der Seite
+*   Publisher
+*   Dominant image\(s\)
+*   Captions of dominant image\(s\)
+*   Secondary images
+*   Main text content of the page
 *   Copyright
 
-Benutzer können dann den Seiten Kontrast und den Schriftgrad im Microsoft Edge **Settings** -Panel anpassen.  
+Users can then adjust the page contrast and font size from the Microsoft Edge **Settings** panel.  
 
-## Extraktion von Metadaten  
+## Metadata extraction  
 
-Hier finden Sie Details zu den Seiten Metadaten, die von der Leseansicht gerendert werden.  
+Here are details of the page metadata rendered by reading view.  
 
 ### Title  
 
-So stellen Sie sicher, dass die Leseansicht den Titel Ihres Artikels rendert:  
+To ensure Reading view renders your article's title:  
 
-*   Einfügen eines `title` Elements in die Kopfzeile  
-*   Einfügen eines Meta-Tags `name="title"`  
-*   Vergleichen Sie den Titeltext in Ihrem Artikel Text mit der Inhaltszeichenfolge Ihres Meta-Tags.  Pipes \ ( `|` \) in der Inhaltszeichenfolge verhindern, dass die Leseransicht aktiv wird, versuchen Sie stattdessen, Bindestriche zu verwenden `-` .  
+*   Include a `title` element in your header  
+*   Include a meta tag with `name="title"`  
+*   Match the title text in your article body with the content string of your meta tag.  Pipes \(`|`\) in your content string prevent the reader view from becoming active, try using hyphens \(`-`\) instead.  
 
-### Autor  
+### Author  
 
-In der Leseansicht wird nach einem Element gesucht `class = "byline-name"` .  Bewährte Methode besteht darin, den Autorennamen hinter dem Titel und vor dem Artikel Text zu platzieren.  
+Reading View will look for an element with `class = "byline-name"`.  Best practice is to place the author name after the title and before the article body.  
 
 ```html
 <div class="byline-name">Author name</div>
@@ -55,23 +55,23 @@ In der Leseansicht wird nach einem Element gesucht `class = "byline-name"` .  Be
 
 ### Date  
 
-In der Leseansicht werden der Herausgeber und die Datumsinformationen in derselben Zeile zusammen mit zusätzlicher Formatierung gerendert, um diese Informationen hervorzuheben.  Das Veröffentlichungsdatum des Artikels wird exakt so gerendert, wie es in der Zeichenfolge angezeigt wird.  Die Leseansicht wird nicht in ein bestimmtes Datumsformat konvertiert.  
+Reading view will render the publisher and date information together on the same line, with additional styling to highlight this information.  The article's publishing date will render exactly as it appears in the string.  Reading view does not convert to a specific date format.  
 
-Wenn Sie über ein Datum in Ihrem Artikel Text verfügen und es in der Leseansicht rendern möchten, weisen Sie das Element mit dem Datum der Klasse zu `'dateline'` :  
+If you have a date in your article body and would like Reading view to render it, assign the element containing the date with the class `'dateline'`:  
 
 ```html
 <div class="dateline"> Wednesday, September 18, 2013 7:38 AM </div>
 ```  
 
-Verwenden Sie das Meta-Tag, wenn Sie nicht über ein Datum im Artikel Text verfügen, aber die Leseansicht zum Rendern des Datums verwenden möchten `name='displaydate'` :  
+If you don't have a date in the article body but would like Reading view to render the date, use the meta tag `name='displaydate'`:  
 
 ```html
 <meta name="displaydate" content=" Wednesday, September 18, 2013 7:38 AM ">
 ```  
 
-### Herausgeber  
+### Publisher  
 
-In der Leseansicht wird nach dem Open Graph `"og:site_name"` -Protokoll gesucht, um die Herausgeberinformationen zu rendern.  Darüber hinaus sucht Sie nach `source_organization` und `publisher` Attribute in einem beliebigen HTML-Tag als sekundärer Indikator für Herausgeberinformationen auf der Seite.  Der Text des Herausgebers wird mit der URL der Seite über den Hyperlink-Stil "Leseansicht" verknüpft.  
+Reading view will look for the Open Graph protocol `"og:site_name"` to render the publisher information.  It also looks for `source_organization` and `publisher` attributes in any html tag as a secondary indicator of publisher information on the page.  The publisher text will be hyperlinked to the URL of page using the Reading view page hyperlink style.  
 
 ```html
 <meta content="Name of organization source" property="og:site_name">
@@ -79,30 +79,30 @@ In der Leseansicht wird nach dem Open Graph `"og:site_name"` -Protokoll gesucht,
 
 ### Images  
 
-In der Leseansicht werden die meisten RAW-Bilder mit Breite >= 400px und Seitenverhältnis >= 1/3 und =< 3,0 erfasst.  Bilder, die diese Dimensionen nicht erfüllen, werden möglicherweise weiterhin extrahiert, wie Bilder, die kleiner als 400px sind, aber über Beschriftungen verfügen.  Das erste geeignete Bild wird zum dominanten Bild des Artikels.  Das dominante Bild wird als erster Teil des Inhalts gerendert und erhält die volle Spaltenbreite.  Alle folgenden Bilder werden als Inline Bilder innerhalb des Artikels gerendert.  
+Reading view captures most raw images with width >= 400px and aspect ratio >= 1/3 and =< 3.0.  Images that do not meet these dimensions may still be extracted, such as images that are smaller than 400px in width but have captions.  The first eligible image becomes the dominant image of the article.  The dominant image is rendered as the first piece of content and given full column width.  All following images are rendered as inline images within the article.  
 
-### Beschriftungen  
+### Captions  
 
-Bewährte Methode ist das Platzieren von Bildern in [Abbildungs](https://developer.mozilla.org/docs/Web/HTML/Element/figure) Tags mit nicht mehr als zwei geschachtelten [figcaption](https://developer.mozilla.org/docs/Web/HTML/Element/figcaption) -Tags.  
+Best practice is to place images in [figure](https://developer.mozilla.org/docs/Web/HTML/Element/figure) tags with no more than two nested [figcaption](https://developer.mozilla.org/docs/Web/HTML/Element/figcaption) tags.  
 
-### Textkörper  
+### Body  
 
-Um sicherzustellen, dass der gesamte Textkörper Ihrer Seite in der Leseansicht erfasst wird, hilft es, den größten Teil des Artikel Texts auf den gleichen Schriftgrad und die gleiche Dom-Tiefe zu beschränken.  Der Leseansicht-Algorithmus ermöglicht eine gewisse Abweichung von dieser Regel, damit Publisher die Freiheit haben, Zeilen oder Wörter hervorheben zu können.  
+To ensure that all the body text of your page is captured by Reading view, it helps to keep most of the article text the same font size and DOM depth.  The reading view algorithm allows for some deviation from this rule so publishers can have the freedom to add emphasis to lines or words.  
 
 ### Copyright  
 
-Leseansicht extrahiert und zeigt Copyright Informationen an, die durch Metatags gekennzeichnet `name = "copyright"` sind, oder wenn keine Meta-Tag-Informationen vorhanden sind, ein Textknoten, der das Copyright-Symbol "\ ( `©` \)" enthält.  In der Leseansicht werden die Copyright Informationen am Ende des Haupttexts des Artikels angezeigt, wobei ein kleinerer Schriftgrad als der Hauptteil des Texts formatiert ist.  
+Reading view extracts and displays copyright information denoted by meta tags with `name = "copyright"`, or if no meta tag information exists, a text node that contains the copyright \(`©`\) symbol.  Reading view displays copyright information at the end of the article main body, styled using a smaller font size than the main body text.  
 
 ```html
 <meta name="copyright" content="Your copyright information">
 ```  
 
-## Deaktivieren der Leseansicht  
+## Opting out of Reading View  
 
-Wenn Sie der Meinung sind, dass Ihre Inhalte für die Leseansicht nicht geeignet sind, können Sie das folgende Meta-Tag verwenden, um dieses Feature zu deaktivieren:  
+If you feel your content is not a good fit for Reading view, you can use the following meta tag to opt out of this feature:  
 
 ```html
 <meta name="IE_RM_OFF" content="true">
 ```  
 
-Mit dieser Kategorie wird die Schaltfläche " **Leseansicht** " in der Adressleiste nicht angezeigt, wenn die Benutzer Ihre Seite anzeigen.  
+With this tag, the **Reading view** button will not appear in the address bar when your users view your page.  

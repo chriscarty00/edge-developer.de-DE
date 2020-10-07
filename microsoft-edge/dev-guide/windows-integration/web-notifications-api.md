@@ -1,13 +1,13 @@
 ---
 ms.assetid: 2ecc762c-11a5-4b16-9aed-22606c1d4994
-description: Erfahren Sie, wie die Web-Benachrichtigungs-API verwendet werden kann, damit Websites Benutzer Benachrichtigungen außerhalb des Kontexts des Microsoft Edge-Browsers senden können.
-title: Web-Benachrichtigungs-API – dev-Leitfaden
+description: Learn how the Web Notifications API can be used to let websites send users notifications outside the context of the Microsoft Edge browser.
+title: Web Notifications API - Dev guide
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 07/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge, Web-Entwicklung, HTML, CSS, JavaScript, Entwickler
+keywords: edge, web development, html, css, javascript, developer
 ms.openlocfilehash: 24b8a7b25fb3e0f0221f6d81b105d5d0374ea423
 ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
@@ -15,34 +15,34 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "10941798"
 ---
-# Webbenachrichtigungs-API  
+# Web Notifications API  
 
 [!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
-Mit der Web-Benachrichtigungs-API können Websites Benutzer Benachrichtigungen außerhalb des Kontexts einer Webseite innerhalb des Microsoft Edge-Browsers senden.  Ein Beispiel für dieses Feature in Aktion wäre eine Messaging-Anwendung wie Skype.  Wenn ein Benutzer eine neue Nachricht erhalten würde, wird eine Benachrichtigung auf dem Desktop angezeigt, in der Sie über die Nachricht benachrichtigt werden.  Web-Benachrichtigungen sind vollständig in die Benachrichtigungs Plattform und das Wartungs Center in Windows 10 integriert.  
+The Web Notifications API allows websites to send users notifications outside the context of a webpage within the Microsoft Edge browser.  An example of this feature in action would be with a messaging application like Skype.  When a user would receive a new message, a notification would appear on their desktop, alerting them of the message.  Web Notifications are fully integrated with the Notification Platform and the Action Center within Windows 10.  
 
-## Erstellen einer Benachrichtigung  
+## Creating a notification  
 
-In der folgenden CodePen wird eine Pseudo-Skype-Benachrichtigung erstellt, indem ein [Benachrichtigungs](https://msdn.microsoft.com/library/mt710818) Objekt mit den Optionen [Titel](https://msdn.microsoft.com/library/mt710826), [Symbol](https://msdn.microsoft.com/library/mt710814)und [Textkörper](https://msdn.microsoft.com/library/mt710811) eingerichtet wird:  
+The CodePen below creates a mock Skype notification by making a [Notification](https://msdn.microsoft.com/library/mt710818) object with the [title](https://msdn.microsoft.com/library/mt710826), [icon](https://msdn.microsoft.com/library/mt710814), and [body](https://msdn.microsoft.com/library/mt710811) options set:  
 
-<iframe height='295' scrolling='no' title='Web-Benachrichtigungen' src='//codepen.io/MicrosoftEdgeDocumentation/embed/RGbxWW/?height=295&theme-id=23761&default-tab=result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>Lesen Sie die Stift <a href='https://codepen.io/MicrosoftEdgeDocumentation/pen/RGbxWW/'> -webbenachrichtigungen </a> von Microsoft Edge docs ( <a href='https://codepen.io/MicrosoftEdgeDocumentation'> @MicrosoftEdgeDocumentation </a> ) auf <a href='https://codepen.io'> CodePen </a> .</iframe>  
+<iframe height='295' scrolling='no' title='Web notifications' src='//codepen.io/MicrosoftEdgeDocumentation/embed/RGbxWW/?height=295&theme-id=23761&default-tab=result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/MicrosoftEdgeDocumentation/pen/RGbxWW/'>Web notifications</a> by Microsoft Edge Docs (<a href='https://codepen.io/MicrosoftEdgeDocumentation'>@MicrosoftEdgeDocumentation</a>) on <a href='https://codepen.io'>CodePen</a>.</iframe>  
 
-Es wird dringend empfohlen, für jede Benachrichtigung ein **Symbol** anzugeben.  Dies verbessert nicht nur eine Benachrichtigung aus Sicht einer Benutzeroberfläche, sondern hilft auch, Benutzer darüber zu informieren, von wo aus die Benachrichtigung gesendet wird.  
+It is strongly recommended that an **icon** be specified for each notification.  This not only improves a notification from a UI point of view, but also helps alert users of where the notification is being sent from.  
 
-Schauen Sie sich das folgende Video an, um eine exemplarische Vorgehensweise zum Erstellen einer webbenachrichtigung und zum Anzeigen des Verhaltens in Windows 10 zu sehen!  
+Watch the video below for a walkthrough on creating a web notification and to see it's behavior within Windows 10!  
 
 > [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/Implementing-Web-Notifications/player]  
 
-### Benachrichtigungseigenschaften  
+### Notification properties  
 
-Benachrichtigungen können mit den folgenden Eigenschaften eingerichtet werden:  
+Notifications can be set with the following properties:  
 
 :::row:::
    :::column span="1":::
       [body](https://developer.mozilla.org/docs/Web/API/Notification/body)  
    :::column-end:::
    :::column span="2":::
-      Der Textkörper der Benachrichtigung.  
+      The body text of the notification.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -50,7 +50,7 @@ Benachrichtigungen können mit den folgenden Eigenschaften eingerichtet werden:
       [dir](https://developer.mozilla.org/docs/Web/API/Notification/dir)  
    :::column-end:::
    :::column span="2":::
-      Die Richtung des Texts der Benachrichtigung.  
+      The direction of the notification's text.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -58,7 +58,7 @@ Benachrichtigungen können mit den folgenden Eigenschaften eingerichtet werden:
       [icon](https://developer.mozilla.org/docs/Web/API/Notification/icon)  
    :::column-end:::
    :::column span="2":::
-      Die URL der Benachrichtigung, die für das zugehörige Symbol verwendet wird.  
+      The notification's URL that is used for its icon.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -66,15 +66,15 @@ Benachrichtigungen können mit den folgenden Eigenschaften eingerichtet werden:
       [lang](https://developer.mozilla.org/docs/Web/API/Notification/lang)  
    :::column-end:::
    :::column span="2":::
-      Die Sprache der Benachrichtigung.  
+      The language of the notification.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      [Berechtigungs](https://developer.mozilla.org/docs/Web/API/Notification/permission)  
+      [permission](https://developer.mozilla.org/docs/Web/API/Notification/permission)  
    :::column-end:::
    :::column span="2":::
-      Die aktuelle benachrichtigungsanzeige Berechtigung, die der Benutzer für den aktuellen Ursprung gewährt hat.  
+      The current notification display permission the user has granted for the current origin.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -82,7 +82,7 @@ Benachrichtigungen können mit den folgenden Eigenschaften eingerichtet werden:
       [tag](https://developer.mozilla.org/docs/Web/API/Notification/tag)  
    :::column-end:::
    :::column span="2":::
-      Das Tag der Benachrichtigung.  
+      The tag of the notification.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -90,57 +90,57 @@ Benachrichtigungen können mit den folgenden Eigenschaften eingerichtet werden:
       [title](https://developer.mozilla.org/docs/Web/API/Notification/title)  
    :::column-end:::
    :::column span="2":::
-      Der Titel der Benachrichtigung.  
+      The title of the notification.  
    :::column-end:::
 :::row-end:::  
 
-### Benachrichtigungsereignisse  
+### Notification events  
 
-Die folgenden Ereignisse werden mit dem [Benachrichtigungs](https://developer.mozilla.org/docs/Web/API/Notification) Objekt verwendet:  
+The following events are used with the [Notification](https://developer.mozilla.org/docs/Web/API/Notification) object:  
 
 :::row:::
    :::column span="1":::
-      [OnClick](https://developer.mozilla.org/docs/Web/API/Element/click_event)  
+      [onclick](https://developer.mozilla.org/docs/Web/API/Element/click_event)  
    :::column-end:::
    :::column span="2":::
-      Wird ausgelöst, wenn der Benutzer auf eine Benachrichtigung klickt.  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="1":::
-      [OnClose](https://developer.mozilla.org/docs/Archive/Mozilla/XUL/Events/close_event)  
-   :::column-end:::
-   :::column span="2":::
-      Wird ausgelöst, wenn eine Benachrichtigung vom Benutzer geschlossen wird, oder ein automatisches Timeout.  
+      Fires when a notification is clicked by the user.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      [OnError](https://developer.mozilla.org/docs/Web/API/Element/error_event)  
+      [onclose](https://developer.mozilla.org/docs/Archive/Mozilla/XUL/Events/close_event)  
    :::column-end:::
    :::column span="2":::
-      Wird ausgelöst, wenn beim Behandeln einer Benachrichtigung ein Fehler auftritt.  
+      Fires when a notification is closed by the user or an auto timeout.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      [onShow](https://developer.mozilla.org/docs/Web/API/Element/show_event)  
+      [onerror](https://developer.mozilla.org/docs/Web/API/Element/error_event)  
    :::column-end:::
    :::column span="2":::
-      Wird ausgelöst, wenn eine Benachrichtigung angezeigt wird.  
+      Fires when an error occurs while handling a notification.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [onshow](https://developer.mozilla.org/docs/Web/API/Element/show_event)  
+   :::column-end:::
+   :::column span="2":::
+      Fires when a notification is displayed.  
    :::column-end:::
 :::row-end:::  
 
-### Benachrichtigungsmethoden  
+### Notification methods  
 
-Die folgenden Methoden werden mit dem [Benachrichtigungs](https://developer.mozilla.org/docs/Web/API/Notification) Objekt verwendet:  
+The following methods are used with the [Notification](https://developer.mozilla.org/docs/Web/API/Notification) object:  
 
 :::row:::
    :::column span="1":::
       [close](https://developer.mozilla.org/docs/Web/API/Notification/close)  
    :::column-end:::
    :::column span="2":::
-      Schließt eine angezeigte Benachrichtigung.  
+      Closes a displayed notification.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -148,18 +148,18 @@ Die folgenden Methoden werden mit dem [Benachrichtigungs](https://developer.mozi
       [requestPermission](https://developer.mozilla.org/docs/Web/API/Notification/requestPermission)  
    :::column-end:::
    :::column span="2":::
-      Fordert die Berechtigung des Benutzers an, Benachrichtigungen vom aktuellen Ursprung angezeigt werden zu lassen.  
+      Requests permission from the user to allow notifications to be displayed by the current origin.  
    :::column-end:::
 :::row-end:::  
 
-## Benachrichtigungs Berechtigungen  
+## Notification permissions  
 
-Microsoft Edge ermöglicht Benutzern das Verwalten von Benachrichtigungs Berechtigungen für jede bestimmte Website Domäne.  Der Benutzer muss entweder " **Ja** " oder " **Nein** " auswählen, wenn er von der Domäne gefragt wird, ob Benachrichtigungen angezeigt werden sollen.  Die [requestPermission](https://developer.mozilla.org/docs/Web/API/Notification/requestPermission) -Methode wird verwendet, um den Berechtigungszustand als entweder `granted` , oder zu signalisieren `denied` `default` .  Der Wert `default` "gibt an, dass der Benutzer keine Entscheidung getroffen hat, die als äquivalent zu sehen ist `denied` .  
+Microsoft Edge allows users to manage notifications permissions for each specific website domain.  It's up to the user to either select **Yes** or **No** when asked by the domain to let it show notifications.  The [requestPermission](https://developer.mozilla.org/docs/Web/API/Notification/requestPermission) method is used to signal the permission state as either `granted`, `denied`, or `default`.  A value of `default` indicates that the user hasn't made a decision, which is seen as the equivalent of `denied`.  
 
-## API-Referenz  
+## API reference  
 
-[Web-Benachrichtigungen](https://developer.mozilla.org/docs/Web/API/Notifications_API)  
+[Web Notifications](https://developer.mozilla.org/docs/Web/API/Notifications_API)  
 
-## Spezifikation  
+## Specification  
 
-[Web-Benachrichtigungen](https://notifications.spec.whatwg.org)  
+[Web Notifications](https://notifications.spec.whatwg.org)  

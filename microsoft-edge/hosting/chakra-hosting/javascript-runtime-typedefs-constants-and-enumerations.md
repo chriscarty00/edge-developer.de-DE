@@ -1,6 +1,6 @@
 ---
-description: Typedefs, Konstanten und Enumerationen für JavaScript-Runtime (JsRT) unterstützen das Hinzufügen von Skriptfunktionen zu Desktop-und serverseitigen Anwendungen, die unter Windows ausgeführt werden.
-title: JavaScript-Laufzeit-Typedefs, Konstanten und Enumerationen
+description: JavaScript Runtime (JsRT) typedefs, constants, and enumerations support adding scripting capabilities to desktop and server-side applications running on Windows.
+title: JavaScript Runtime Typedefs, Constants, and Enumerations
 ms.date: 06/08/2020
 ms.prod: microsoft-edge
 ms.topic: article
@@ -15,15 +15,15 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/18/2020
 ms.locfileid: "10752262"
 ---
-# JavaScript-Laufzeit-Typedefs, Konstanten und Enumerationen  
+# JavaScript Runtime Typedefs, Constants, and Enumerations  
 
 [!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-Typedefs, Konstanten und Enumerationen für JavaScript-Runtime (JsRT) unterstützen das Hinzufügen von Skriptfunktionen zu Desktop-und serverseitigen Anwendungen, die unter Windows ausgeführt werden.  
+JavaScript Runtime (JsRT) typedefs, constants, and enumerations support adding scripting capabilities to desktop and server-side applications running on Windows.  
 
-## In diesem Abschnitt  
+## In this section  
 
-Die folgenden globalen Typedefs unterstützen das JsRT-Hosting:  
+The following global typedefs support JsRT hosting:  
 
 *   [JsBackgroundWorkItemCallback Typedef](./jsbackgroundworkitemcallback-typedef.md)  
 *   [JsBeforeCollectCallback Typedef](./jsbeforecollectcallback-typedef.md)  
@@ -45,14 +45,14 @@ Die folgenden globalen Typedefs unterstützen das JsRT-Hosting:
 *   [JsThreadServiceCallback Typedef](./jsthreadservicecallback-typedef.md)  
 *   [JsValueRef Typedef](./jsvalueref-typedef.md)  
 
-Die folgenden Konstanten unterstützen das JsRT-Hosting:  
+The following constants support JsRT hosting:  
 
 *   [JS_INVALID_PROPERTYID Constant](./js-invalid-propertyid-constant.md)  
 *   [JS_INVALID_REFERENCE Constant](./js-invalid-reference-constant.md)  
 *   [JS_INVALID_RUNTIME_HANDLE Constant](./js-invalid-runtime-handle-constant.md)  
 *   [JS_SOURCE_CONTEXT_NONE Constant](./js-source-context-none-constant.md)  
 
-Die folgenden Enumerationen unterstützen das JsRT-Hosting:  
+The following enumerations support JsRT hosting:  
 
 *   [JsErrorCode Enumeration](./jserrorcode-enumeration.md)  
 *   [JsMemoryEventType Enumeration](./jsmemoryeventtype-enumeration.md)  
@@ -62,7 +62,7 @@ Die folgenden Enumerationen unterstützen das JsRT-Hosting:
 *   [JsTypedArrayType Enumeration](./jstypedarraytype-enumeration.md)  
 *   [JsValueType Enumeration](./jsvaluetype-enumeration.md)  
 
-## Weitere Informationen  
+## See also  
 
-*   [Hosten der JavaScript-Laufzeit](./hosting-the-javascript-runtime.md)  
-*   [JavaScript-Laufzeit-Hosten](../javascript-runtime-hosting.md)  
+*   [Hosting the JavaScript Runtime](./hosting-the-javascript-runtime.md)  
+*   [JavaScript Runtime Hosting](../javascript-runtime-hosting.md)  

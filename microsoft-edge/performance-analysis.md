@@ -1,13 +1,13 @@
 ---
 ms.assetid: 7a5f9fd0-90a9-43db-b271-178c06da5896
-description: Verwenden Sie F12-Entwicklertools, um die allgemeine Leistung von Websites zu analysieren.
-title: Leistungsanalyse
+description: Use F12 developer tools to analyze the general performance of websites.
+title: Performance analysis
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 02/08/2017
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge, Web-Entwicklung, HTML, CSS, JavaScript, Entwickler
+keywords: edge, web development, html, css, javascript, developer
 ms.openlocfilehash: 7bf71744298502c9edf8ee1262fceff5640bedf1
 ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
 ms.translationtype: MT
@@ -15,117 +15,117 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "10568682"
 ---
-# Leistungsanalyse
+# Performance Analysis
 
-Wenn Sie mit der Leistung noch nicht vertraut sind, sollten Sie sich das [F12-Handbuch für devtools](./devtools-guide.md).
-Die in Microsoft Edge integrierten [F12-Tools](./devtools-guide.md) können verwendet werden, um die allgemeine Leistung einer Website zu analysieren. Es bietet ähnliche (aber noch begrenzte) Funktionen für das [Windows Performance Toolkit](https://docs.microsoft.com/windows-hardware/test/wpt/index) direkt im Browser.
-
-
-
-Wenn Sie eine genauere Analyse der Browserleistung wünschen, verwendet das Microsoft Edge-Team das [Windows Performance Toolkit](https://docs.microsoft.com/windows-hardware/test/wpt/index) (WPT). WPT wurde vom Windows-Team erstellt, um eine detaillierte Programm Leistungsanalyse durchzuführen. Sie überspannt die Grenzen zwischen Website-JavaScript und Microsoft Edge-systemeigenem Code, sodass beide innerhalb desselben Tools angezeigt werden können. WPT kann verwendet werden, um:
- - Messen der CPU-Zeit, die für Software zum Abschließen der Arbeit genommen wurde
- - Berechnen des von der Software zugewiesenen Arbeitsspeichers
- - Anzeigen der Details zum Herunterladen von Dateien von Remoteservern
- - Frame-Rate Messen
+If you're new to performance, you should check out the [F12 DevTools guide](./devtools-guide.md).
+The [F12 tools](./devtools-guide.md) built into Microsoft Edge can be used to analyze the general performance of a web site. It provides similar (but more limited) capabilities to the [Windows Performance Toolkit](https://docs.microsoft.com/windows-hardware/test/wpt/index) from right within the browser.
 
 
-Um mit der Verwendung des Windows Performance Toolkit zum Analysieren Ihrer Website zu beginnen, müssen Sie zunächst das [Windows 10 Assessment and Deployment Kit (ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)herunterladen. Wählen Sie die Option *Windows Performance Toolkit* während der Installation aus:
 
-![ADK-Installationsoptionen](./media/adk-installoptions.png)
+If you want a deeper analysis of browser performance, the Microsoft Edge team uses the [Windows Performance Toolkit](https://docs.microsoft.com/windows-hardware/test/wpt/index) (WPT). WPT was created by the Windows team to conduct in-depth program performance analysis. It straddles the boundaries between website JavaScript and Microsoft Edge native code, allowing both to be viewed within the same tool. WPT can be used to:
+ - Measure CPU time taken for software to complete work
+ - Calculate the memory allocated by software
+ - Show the details of downloading files from remote servers
+ - Measure frame rate.
 
-Hier erfahren Sie, wie Sie eine Leistungsablaufverfolgung aufzeichnen und analysieren. Weitere Informationen zu den Funktionen, die im Windows Performance Toolkit enthalten sind, finden Sie in der vollständigen [WPT-Dokumentation](https://docs.microsoft.com/windows-hardware/test/wpt/index).
 
-## Aufzeichnen einer Ablaufverfolgung
-Richten Sie als nächstes Ihr Benutzerszenario ein, und bereiten Sie die Erfassung einer Ablaufverfolgung mithilfe der Windows-Leistungsaufzeichnung vor.
-Hier erfahren Sie, wie Sie Ihr Webszenario mit der *Windows-Leistungsaufzeichnung (WPR)* profilieren.
+To get started with using the Windows Performance Toolkit to analyze your website, you'll first need to download the [Windows 10 Assessment and Deployment Kit (ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit). Select the *Windows Performance Toolkit* option during installation:
 
-### 1. Vorbereiten Ihrer Umgebung zum Sammeln einer Leistungs Spur
-Beenden Sie so viele ausgeführte Programme wie möglich, um Rauschen in der Ablaufverfolgung zu vermeiden, die Sie aufzeichnen möchten. Im Idealfall handelt es sich bei der einzigen ausgeführten Software um Windows Performance Recorder (WPR) und den Browser.
+![ADK Installation Options](./media/adk-installoptions.png)
 
-### 2. Starten Sie Windows Performance Recorder (WPR), und wählen Sie Optionen aus.
-Starten Sie die Windows-Leistungsaufzeichnung, und stellen Sie sicher, dass die Umschaltfläche **Weitere Optionen** erweitert ist. Aktivieren Sie die Kontrollkästchen *Edge-Browser* und *HTML-Reaktions Szenarien-* Analyse.
+Here we'll cover how to record and analyze a performance trace. To learn more about what's included in the Windows Performance Toolkit, check out the full [WPT documentation](https://docs.microsoft.com/windows-hardware/test/wpt/index).
 
-![Windows-Leistungsdaten Satz Optionen](./media/wprui-options.png)
+## Recording a trace
+Next, set up your user scenario and prepare to gather a trace using Windows Performance Recorder.
+Here's how to profile your web scenario with the *Windows Performance Recorder (WPR)*.
 
-#### Tipps und Kniffe für das Sammeln von Ablaufverfolgungen
-- Versuchen Sie, Hintergrundaktivitäten auf ein absolut erforderliches Minimum zu beschränken. Hintergrundprozesse können sowohl die wahrgenommene Leistung als auch die tatsächlichen Leistungsmerkmale verzerren und die Ergebnisse beeinflussen. Im Idealfall gibt es keine anderen ausgeführten Anwendungen neben Browser-und WPR.
-- Ermitteln Sie die Szenarien, die Sie analysieren, und versuchen Sie, Sie so atomar wie möglich zu halten. Wenn Ihre Website beispielsweise Leistungsprobleme beim Laden der Seite, beim Scrollen und Auswählen von etwas in einer Tabelle aufweist, trennen Sie die Probleme in drei Szenarien:
-  - Seitenladevorgang (vom Anfang der Navigation bis zum Laden der Seite)
+### 1. Prepare your environment to gather a performance trace
+Shut down as many running programs as possible to avoid noise in the trace that you're about to record. Ideally, the only running software will be Windows Performance Recorder (WPR) and the browser.
+
+### 2. Launch Windows Performance Recorder (WPR) and select options
+Launch the Windows Performance Recorder and ensure that **More options** toggle is expanded. Select the *Edge Browser* and *HTML Responsiveness* scenario analysis checkboxes.
+
+![Windows Performance Record Options](./media/wprui-options.png)
+
+#### Tips and tricks for gathering traces
+- Try to keep background activity to an absolute required minimum. Background processes may skew both perceived performance and actual performance characteristics and affect the results. Ideally there are no other running applications beside browser and WPR.
+- Identify the scenarios you're analyzing and try to keep them as atomic as possible. For example, if your site has performance problems when loading the page, scrolling, and selecting something in a table, separate the issues into three scenarios:
+  - Page load (from start of navigation to page load complete)
   - Scroll
-  - Auswählen von etwas in der Tabelle
-- Wenn ein Szenario eine Navigation zu einer Website beinhaltet, sollten Sie das Szenario mit ungefähr: leer beginnen. Ab etwa: leer wird der Overhead der vorherigen Seite vermieden. Wenn Sie von einer Website entfernt navigieren möchten, navigieren Sie zu about: leer, um das Szenario abzuschließen. Dadurch wird das Rauschen anderer Websites außerhalb der Ablaufverfolgung beibehalten, es sei denn, die spezifische Interaktion zwischen Websites ist das untersuchte Problem.
+  - Selecting something in the table
+- If a scenario involves navigating to a site, consider beginning the scenario at about:blank. Starting at about:blank will avoid the overhead of the previous page. If it involves navigating away from a site, navigate to about:blank to complete the scenario. This will keep the noise of other sites out of the trace unless the specific interaction between sites is the issue under investigation.
 
-### 3. Aufzeichnen des Szenarios
-Klicken Sie auf **Start** , um mit der Aufzeichnung zu beginnen. Das Tool meldet die Größe des verwendeten Puffers, damit Sie die Größe der generierten Datei antizipieren können. Führen Sie das Benutzerszenario aus, das Sie messen möchten, und klicken Sie auf **Speichern** , um die Aufzeichnung zu beenden und die Ablaufverfolgung zu speichern. Wenn Sie das Szenario unmittelbar nach Abschluss Ihres Szenarios speichern, können Sie die Größe der Ablaufverfolgungsdatei minimieren.
+### 3. Record the scenario
+Click **Start** to begin recording. The tool will report the size of the buffer it is using to help you anticipate the size of the generated file. Perform the user scenario you want to measure, then click **Save** to stop the recording and save the trace. Saving immediately after finishing your scenario will help minimize the size of the trace file.
 
-![Windows-Leistungsdaten Satzanfang](./media/wprui-recording.png)
+![Windows Performance Record Start](./media/wprui-recording.png)
 
-Das WPR-Tool gibt an, dass Ihre Ablaufverfolgungsinformationen erfolgreich gespeichert wurden:
+The WPR tool will indicate that your trace information was saved successfully:
 
-![Windows-Leistungsdaten Satzanfang](./media/wprui-savecomplete.png)
+![Windows Performance Record Start](./media/wprui-savecomplete.png)
 
 
-## Analysieren einer Ablaufverfolgung
-Nachdem Sie nun Ihre Leistungsdaten gesammelt haben, können Sie die Ablaufverfolgung mithilfe von Windows Performance Analyzer analysieren, um zu sehen, welche Optimierungen vorgenommen werden können.
-Hier erfahren Sie, wie Sie die Performance-Daten Ihres Webszenarios analysieren.
+## Analyzing a trace
+Now that you've gathered your performance data, you can analyze the trace using Windows Performance Analyzer to see what optimizations can be made.
+Here's how to analyze your web scenario performance data.
 
-### 1. Öffnen Sie Windows Performance Analyzer (WPA).
-Starten Sie Windows Performance Analyzer, und öffnen `.etl` Sie die Datei, die analysiert werden soll (**Datei**  >  **Öffnen...**).
+### 1. Open Windows Performance Analyzer (WPA)
+Launch Windows Performance Analyzer and open the `.etl` file to be analyzed (**File** > **Open...**).
 
-### 2. Laden von Symbolen und Anwenden des *HTML-Analyse* Profils
+### 2. Load symbols and apply the *HTML analysis* profile
 
 >[!WARNING]
-> Wenn Sie Symbole zum ersten Mal laden, wird ein großer Download benötigt, und es dauert eine beträchtliche Zeitdauer für eine typische Internetverbindung.
+> Loading symbols for the first time will require a large download and will take a significant amount of time on a typical internet connection.
 
-Laden Sie Ihre Symbole, indem Sie im Menü die Option nach **Verfolgungs**  >  **Lade Symbole** auswählen. Die Symbole werden auf dem Datenträger zwischengespeichert, und in zukünftigen Ablaufverfolgungen werden Symbole wesentlich schneller geladen.
+Load your symbols by selecting **Trace** > **Load Symbols** from the menu. The symbols will be cached to disk and future traces will load symbols much faster.
 
-Sie können Symbole erheblich schneller laden, indem Sie das Laden von Microsoft Edge und dem Web-Apps-Host einschränken. Wählen Sie **Ablauf Verfolgungs**  >  **Symbole konfigurieren** aus, und beschränken Sie die **Auslastungs Einstellungen** auf nur `MicrosoftEdgeCP.exe` und `WWAHost.exe` .
+You can load symbols significantly faster by restricting the loading to Microsoft Edge and the web apps host. Select **Trace** > **Configure Symbols** and restrict the **Load Settings** to only `MicrosoftEdgeCP.exe` and `WWAHost.exe`.
 
-![Symbol Einschränkungen](./media/wpa-symbolrestrictions.png)
+![Symbol Restrictions](./media/wpa-symbolrestrictions.png)
 
-Nachdem Symbole mit dem Laden beginnen, wenden Sie das *HTML-Analyse Profil* an (**profile**  >  **gelten...**  >  **Katalog durchsuchen...**  >  **HtmlResponsivenessAnalysis. wpaProfile**) im Profil werden mehrere Diagramme und Tabellen für Ihre Analyse geladen. Für nahezu alle Website-Untersuchungen empfehlen wir, mit diesem Profil zu beginnen.
+After symbols begin loading, apply the *Html Analysis Profile* (**Profiles** > **Apply...** > **Browse Catalog...** > **HtmlResponsivenessAnalysis.wpaProfile**) The profile will load several graphs and tables for your analysis. For nearly all website investigations, we recommend starting with this profile.
 
-![Großes Bild](./media/wpa-bigpicture.png)
-
-
-#### Das HTML-Reaktionsanalyse Profil
-Das *HTML-* Analyse Profil für Reaktionsfähigkeit bietet vier Registerkarten:
-
-**Großes Bild** – Dies ist nützlich, um zu bestätigen, dass es keine unerwarteten Quellen für die CPU-Aktivität gibt und der Browser tatsächlich alle verfügbaren Ressourcen verwendet. Überprüfen Sie die CPU-Auslastung, und stellen Sie sicher, dass keine Prozesse erheblich zur CPU-Nutzung außer dem Browser beitragen.
-
-**Frame Analyse** – dieser Abschnitt wird für die grundlegende Analyse verwendet. Das Diagramm *CPU-Auslastung (attributiert)* ermöglicht einen schnellen Überblick über die für die CPU-Nutzung Verantwortlichen Subsysteme. Das Aufschlüsseln der Beispiele in der Tabelle *CPU-Auslastung (abgetastet)* im *HTML-UI-Thread* ist hilfreich, um kritische Leistungsengpässe zu identifizieren.
-
-**Ablauf Verfolgungs Markierungen** – in diesem Abschnitt werden alle nach Verfolgungs Marken angezeigt, die aus dem Browser (Microsoft Edge) kommen, einschließlich *msWriteProfilerMark*, das genaue Punkte für die Code Messung bietet. Um die *msWriteProfilerMark* -Ablaufverfolgung anzuzeigen, Scrollen Sie nach unten zum Diagramm *generische Ereignisse* , und wählen Sie im Dropdownmenü **HTML-msWriteProfilerMark** aus.
-
-**Analyse der Thread Verzögerung** -diese Registerkarte wird häufig von Microsoft Edge-Entwicklern verwendet, um zu untersuchen, ob ein Thread blockiert ist und auf einen anderen wartet. In seltenen Fällen kann es auch für Web-Entwickler nützlich sein.
+![Big Picture](./media/wpa-bigpicture.png)
 
 
-### 3. Zoom zum Entfernen der Ablaufverfolgung
-Sie können Ihre Analyse fokussieren, indem Sie die leeren nach *verfolgten Ablauf Verfolgungs* Abschnitte in Ihren Diagrammen entfernen. In einem der aktuell angezeigten Diagramme:
- - Klicken Sie mit der linken Maustaste auf den Anfang der Diagrammdaten, die Sie untersuchen möchten.
- - Halten, ziehen und loslassen, um die gewünschte Region auszuwählen
- - Klicken Sie mit der rechten Maustaste, und wählen Sie **Zoom** aus.
+#### The Html Responsiveness Analysis Profile
+The *Html Responsiveness* analysis profile provides four tabs:
 
-Der Zoom wird auf alle Diagramme und Diagramme auf der aktiven Registerkarte angewendet.
+**Big Picture** - This is useful for confirming that there are no unexpected sources of CPU activity and the browser is indeed using all available resources. Check your CPU usage and verify that no processes contribute significantly to CPU usage other than the browser.
 
-![Nach Zoom](./media/wpa-postzoom.png)
+**Frame Analysis** - This section is used for basic analysis. The *CPU Usage (Attributed)* graph enables a quick glance for understanding of the subsystems responsible for CPU usage. Breaking down the samples in the *CPU Usage (Sampled)* table on the *HTML UI Thread* is helpful for identifying critical performance bottlenecks.
+
+**Trace Markers** - This section shows all tracing markers coming from the browser (Microsoft Edge), including *msWriteProfilerMark*, which provides precise points for measuring code. To see *msWriteProfilerMark* tracing, scroll down to the  *Generic Events* graph and select **HTML msWriteProfilerMark** from the drop-down menu.
+
+**Thread Delay Analysis** - This tab is often used by Microsoft Edge developers to investigate when one thread is blocked and waiting on another. On rare occasions it might also be useful to web developers.
 
 
-### 4. untersuchen, was CPU-Zyklen beansprucht
- In der Tabelle " **CPU-Auslastung (abgetastet)** " auf der Registerkarte " **Frame Analyse** " werden die meisten ihrer Analysen wahrscheinlich vorkommen. Sie können die verschiedenen Prozesse erweitern, um die meisten rechenintensiven JavaScript-und Browser-Codes zu identifizieren. Oft ist ein einzelnes JavaScript-Bit für ein Leistungsproblem verantwortlich, und die Zeit für die Optimierung kann einen entscheidenden Unterschied ausmachen.
+### 3. Zoom to remove trace rundown
+You can focus your analysis by removing the empty trailing *Trace Rundown* sections of your graphs. From any of the graphs currently showing:
+ - Left-click at the start of the graph data you wish to investigate
+ - Hold, drag and release to select the desired region
+ - Right-click and select **Zoom**
 
-### 5. führen Sie einen Drilldown zu einem langsam ausgeführten JavaScript-Code durch.
-Bottom-up-Dom-anrufanalyse kann hilfreich sein, um das JavaScript zu identifizieren, das für den Großteil der Zeit während des Szenarios verantwortlich ist. Dies ist besonders hilfreich, wenn viele Anrufe auf oberster Ebene die gleichen JavaScript-Bibliotheken wieder verwenden.
+The zoom will apply to all graphs and charts on the active tab.
 
-Schauen Sie sich zunächst die *CPU-Auslastung (abgetastet) an, aufgeschlüsselt nach Prozess, Thread, Aktivität und Stack*. Klicken Sie auf eine beliebige Zelle in der **Stapel** Spalte. Drücken Sie *STRG + F* , und suchen Sie nach *ExternalFunctionThunk*.
+![Post Zoom](./media/wpa-postzoom.png)
+
+
+### 4. Investigate what's taking up CPU cycles
+ The **CPU Usage (Sampled)** table in the **Frame Analysis** tab is where most of your analysis will likely happen. You can expand the various processes to identify the most compute intensive JavaScript and browser code. Often a single bit of JavaScript is responsible for a performance issue, and taking the time to optimize it can make a significant difference.
+
+### 5. Drill into any slow-running JavaScript code
+Bottom up DOM call analysis can be useful for identifying the JavaScript responsible for taking up the majority of time during the scenario. This is especially helpful when many top level calls are re-using the same JavaScript libraries.
+
+Start by looking at *CPU Usage (Sampled) Breakdown by Process, Thread, Activity, Stack*. Click on any cell in **Stack** column. Press *Ctrl+F* and search for *ExternalFunctionThunk*.
 
 >[!NOTE] 
->Dies funktioniert nur, wenn Symbole erfolgreich geladen wurden.
+>This only works if you have successfully loaded symbols.
 
-![Suchen nach ExternalFunctionThunk](./media/wpa-externalfunctionthunk.png)
+![Search For ExternalFunctionThunk](./media/wpa-externalfunctionthunk.png)
 
-Untersuchen Sie alle Linien mit *ExternalFunctionThunk*. Hierbei handelt es sich um die Schnittstelle des Chakra JavaScript-Moduls zum Microsoft Edge-Modul. Sie zeigt an, wo Code Brücken vom Browser zur JavaScript-Ausführung sind. Klicken Sie mit der rechten Maustaste auf die Zeile, und wählen Sie " **aufgerufene**  >  **nach Modulen** anzeigen" aus, um eine gewichtete Liste der am längsten ausgeführten Browsermodul Funktionen anzuzeigen.
+Investigate any lines with *ExternalFunctionThunk*. This is the interface from the Chakra JavaScript engine to the Microsoft Edge engine. It shows where code bridges from the browser to JavaScript execution. Right-click on the line and select **View Callees** > **By Module** to see a weighted list of longest running browser engine functions.
 
-![Anzeigen von Anrufen](./media/wpa-viewcallees.png)
+![View Callees](./media/wpa-viewcallees.png)
 
-Um alle JavaScript-Aufrufe einer bestimmten API zu identifizieren, klicken Sie mit der rechten Maustaste darauf, und wählen Sie **Anrufer**  >  **nach Funktion** anzeigen aus, und erweitern Sie die Struktur, um die relativen Gewichtung anzuzeigen und zu vergleichen.
+To identify all the JavaScript calling a specific API, right-click on it and select **View Callers** > **By Function** and expand the tree to view and compare the relative weights.

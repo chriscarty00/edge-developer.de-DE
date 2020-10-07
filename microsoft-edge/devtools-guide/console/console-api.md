@@ -1,12 +1,12 @@
 ---
-description: Verwenden der Konsolen-API zum programmgesteuerten Debuggen und profilieren Ihres Codes
-title: DevTools-Console-Console-API
+description: Use the Console API to programmatically debug and profile your code
+title: DevTools - Console - Console API
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools, Konsolen-API
+keywords: microsoft edge, web development, f12 tools, devtools, console api
 ms.custom: seodec18
 ms.openlocfilehash: d722934c3694c3c23e367141158ad45f6d03b175
 ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
@@ -15,44 +15,44 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "10568462"
 ---
-# Konsolen-API
+# Console API
 
-Die *Konsolen-API* bietet Befehlszeilen-und programmgesteuerten Zugriff auf die devtools-Konsole über das globale `console` Objekt, sodass Sie:
+The *Console API* provides command-line and programmatic access to the  DevTools Console through the global `console` object, allowing you to:
 
- - [Protokollieren von benutzerdefinierten Nachrichten](#logging-custom-messages) von Ihrem Code
- - Über [Prüfen von Objekten und Elementen](#inspecting-objects-and-elements) und Protokollieren der zugehörigen Informationen
- - [Testen und Messen Ihres Codes](#testing-and-measuring) durch Festlegen von Assertionen, Timer und Leistungsindikatoren
- - Erstellen [Sie Schnappschüsse des Heaps](#taking-heap-snapshots) , um den Speicherverbrauch Ihres ausgeführten Codes zu bewerten und Speicherverluste zu identifizieren.
- - [Verfolgen Sie Ihre callstacks](#tracing-callstacks) , um zu verstehen, woher Ihr Code aufgerufen wird. 
- - [Organisieren der Protokollausgabe](#organizing-log-output) , um das Debuggen zu rationalisieren
+ - [Log custom messages](#logging-custom-messages) from you code
+ - [Inspect objects and elements](#inspecting-objects-and-elements) and log their information
+ - [Test and measure your code](#testing-and-measuring) by setting assertions, timers and counters
+ - [Take snapshots of the heap](#taking-heap-snapshots) to assess the memory consumption of your running code and identify memory leaks
+ - [Trace your callstacks](#tracing-callstacks) to understand where your code is being called from 
+ - [Organize your log output](#organizing-log-output) to streamline your debugging
 
-Im folgenden finden Sie die Befehle und Formatierungsparameter, die von Microsoft Edge zurzeit unterstützt werden. Sie funktionieren ähnlich wie bei wichtigen Browsern.
+The following are the commands and formatting parameters currently supported by Microsoft Edge. They work similarly on major browsers.
 
-## Protokollieren benutzerdefinierter Nachrichten
+## Logging custom messages
 
-Ihr Code kann verschiedene Typen von benutzerdefinierten Nachrichten an die Konsole senden, einschließlich:
+Your code can send several types of custom messages to the console, including:
 
-Nachrichtentyp  | &nbsp;   |
+Message type  | &nbsp;   |
 :------------------- | :------ |
-[**Error ()**](https://developer.mozilla.org/docs/Web/API/Console/error) und [ **Exception ()**](https://developer.mozilla.org/docs/Web/API/Console/error)| Kritische Fehler und Fehler
-[**Warnung ()**](https://developer.mozilla.org/docs/Web/API/Console/warn) | Mögliche Fehler oder unerwartetes Verhalten 
-[**Info ()**](https://developer.mozilla.org/docs/Web/API/Console/info) | Nützliche, aber nicht kritische Informationen
-[**Log ()**](https://developer.mozilla.org/docs/Web/API/Console/log) und [ **Debug ()**](https://developer.mozilla.org/docs/Web/API/Console/log) | Allgemeines Debuggen (ohne ein System Warnungssymbol in der Konsole zu generieren)
+[**error()**](https://developer.mozilla.org/docs/Web/API/Console/error) and [**exception()**](https://developer.mozilla.org/docs/Web/API/Console/error)| Critical errors and failures
+[**warn()**](https://developer.mozilla.org/docs/Web/API/Console/warn) | Possible errors or unexpected behavior 
+[**info()**](https://developer.mozilla.org/docs/Web/API/Console/info) | Useful, but non-critical information
+[**log()**](https://developer.mozilla.org/docs/Web/API/Console/log) and [**debug()**](https://developer.mozilla.org/docs/Web/API/Console/log) | General debugging (without generating a system alert icon in the console)
 
    
-Sie können diese zusammen mit den anderen Nachrichten, die von Microsoft Edge generiert wurden, aus dem Konsolenbereich gruppieren und filtern. Alle benutzerdefinierten Nachrichten Methoden erfordern einen Zeichenfolgenparameter (Message) und optionale Format Ersetzungsparameter. Microsoft Edge unterstützt die folgenden Formatierungsoptionen:
+You can group and filter these along with the other messages generated from Microsoft Edge from the  Console panel. All custom message methods require a string (message) parameter and optional format substitution parameters. Microsoft Edge supports the following formatting options:
 
-Format-Parameter | &nbsp;
+Format parameter | &nbsp;
 :------------------- | :--- |
-**% b** | Binär
-**% c** | Inline-CSS-Formatvorlage (siehe Beispiel unten)
-**% d**, **% i** | Ganze Zahl 
-**% f** | Gleitkomma  
-**% s** | Zeichenfolge 
-**% x** | Hexadezimal 
-**% e** | Exponent 
+**%b** | Binary
+**%c** | Inline CSS style (see example below)
+**%d**, **%i** | Integer 
+**%f** | Float  
+**%s** | String 
+**%x** | Hexadecimal 
+**%e** | Exponent 
 
-So können Sie beispielsweise Zeichenfolgen-und ganzzahlige Variablen in Ihre Protokollmeldung einbeziehen:
+For example, here's how you would include string and integer variables in your log message:
 
 ```javascript
 var myText = 'pieces';
@@ -62,81 +62,81 @@ console.log("The number of %s is %d.", myText, myVal);
 
 >`The number of pieces is 5.`
 
-Und so können Sie einer Protokollnachricht mit Inline-CSS () einen grünen Hervorhebungseffekt hinzufügen `%c` :
+And here's how you might add a green highlight effect to a log message with inline CSS (`%c`):
 
 ```javascript
 console.log("%cHighlight this log message in green", "background-color: #10ff00; text-transform: uppercase;");
 ```
 
-![Konsolenprotokoll mit Inlineformatvorlagen](../media/console_api_css.png)
+![Console log with inline styles](../media/console_api_css.png)
 
-## Untersuchen von Objekten und Elementen
+## Inspecting objects and elements
 
-Überprüfbare Objekte werden in der Konsole in einer reduzierten Strukturansicht mit erweiterbaren Knoten angezeigt. Die Konsole erkennt, ob Sie einen DOM-Knoten (wie ein div) oder ein JavaScript-Objekt (wie ein Ereignis) senden, und zeigt diese automatisch als erkannten Typ an.
+Inspectable objects appear in the console in a collapsed tree view with expandable nodes. The console detects whether you are sending a DOM node (like a div) or a JavaScript object (like an event) and displays them as the detected type automatically.
 
-Sie können auch eine bestimmte Ausgabe erzwingen:
+You can also force a specific output:
 
-Befehl | &nbsp;
+Command | &nbsp;
 :------------------- | :--- |
-[**dir ()**](https://developer.mozilla.org/docs/Web/API/Console/dir) | Wird als über JavaScript-Objekt angezeigt
-[**DirXML ()**](https://developer.mozilla.org/docs/Web/API/Console/dirxml) | Anzeige als über DOM-Knoten
+[**dir()**](https://developer.mozilla.org/docs/Web/API/Console/dir) | Displays as inspectable JavaScript object
+[**dirxml()**](https://developer.mozilla.org/docs/Web/API/Console/dirxml) | Displays as inspectable DOM node
 
-Versuchen Sie beispielsweise, die Konsole zu öffnen und die folgenden Ausgaben für das `<div id='main'>` Element auf dieser Seite zu vergleichen:
+For example, try opening the console and compare the following outputs for the `<div id='main'>` element on this page:
 
 ```javascript
 console.dir(document.querySelector('#main'));
 console.dirxml(document.querySelector('#main'));
 ```
 
-![Vergleich der Ausgabe "dir" versus "DirXML"](../media/console_api_dir.png)
+![Comparison of 'dir' versus 'dirxml' output](../media/console_api_dir.png)
 
-### Auswählen eines **Elements im Element Panel**
+### Selecting an element in the **Elements** panel
 
-Sie können ein Element innerhalb des HTML-Struktur Kontexts der Seite direkt aus der Konsole für das sofortige Layout und das Debuggen von Stilen auswählen.
+You can select an element within the HTML tree context of the page directly from the console for immediate layout and style debugging.
 
-Befehl | &nbsp;
+Command | &nbsp;
 :------------------- | :--- |
-**Select ()** | Wechselt zum Element **Panel und legt den Fokus** auf das angegebene Element fest.
+**select()** | Switches to the **Elements** panel and sets focus to the specified element.
 
-Wenn Sie beispielsweise die Konsole auf dieser Seite öffnen, geben Sie Folgendes ein:
+For example, if you open the console on this page and type:
 
 ```javascript
 console.select(document.querySelector("body"));
 ```
 
-Der devtools wechselt zum **Element Panel (** sofern es nicht bereits der aktuelle ist) und legt den Fokus in der [*HTML-Strukturansicht*](../elements.md#html-tree-view) auf das angegebene Element fest.
+The DevTools will switch to the **Elements** panel (if its not already the current) and set focus in the [*HTML tree view*](../elements.md#html-tree-view) to the specified element.
 
-![Beispiel für die "Select"-Methode](../media/console_api_select.png)
+![Example of the 'select' method](../media/console_api_select.png)
 
-## Testen und Messen
+## Testing and measuring
 
-### Testen des Codes
+### Testing your code
 
-Fügen Sie dem Code Konsolen-API-Test Assertionen hinzu, um Komponententests durchführen und den Code während der Ausführung im Browser Debuggen zu können.
+Add Console API test assertions to your code for unit testing and debugging your code as it runs in the browser.
 
-Befehl | &nbsp;
+Command | &nbsp;
 :------------ | :-------------
-[**Assert ()**](https://developer.mozilla.org/docs/Web/API/Console/assert) | Protokolliert eine Fehlermeldung einer Konsole, wenn der bereitgestellte Ausdruck *false*ergibt.
+[**assert()**](https://developer.mozilla.org/docs/Web/API/Console/assert) | Logs a console error message if the provided expression evaluates to *false*.
 
-Zusätzlich zum logischen Ausdruck, den Sie als testbare Assertion angeben, können Sie eine optionale Nachricht und Formatierungsparameter hinzufügen, wie Sie dies für andere [benutzerdefinierte Konsolen Nachrichten](#logging-custom-messages)verwenden würden. Beispiel:
+In addition to the logical expression you supply as the testable assertion, you can add an optional message and formatting parameters as you would use with other [custom console messages](#logging-custom-messages). For example:
 
 ```javascript
 var x = 26.8;
 console.assert(x < 25, 'The value of x is %f (it is NOT less than %i)', x, 25);
 ```
 
-![Beispiel für die "Assert"-Methode](../media/console_api_assert.png)
+![Example of the 'assert' method](../media/console_api_assert.png)
 
-### Zählen von Ausführungen im Code
+### Counting executions in your code
 
-Sie können Indikatoren in Ihrem Code so einstellen, dass Sie nachverfolgen, wie oft der umgebende Code ausgeführt wird. Durch das Festlegen von Indikatoren können Sie sicherstellen, dass Ihr Code wie erwartet ausgeführt wird, und Sie bei der Diagnose von Leistungsengpässen unterstützen.
+You can set counters in your code to keep track of how many times the surrounding code gets executed. Setting counters can help ensure your code is running as expected and assist you in diagnosing performance bottlenecks.
 
-Befehl | &nbsp;
+Command | &nbsp;
 :------------ | :-------------
-[**Anzahl ()**](https://developer.mozilla.org/docs/Web/API/Console/count) | Inkrementiert und protokolliert die Anzahl der Male, die *count ()* für die angegebene Bezeichnung ausgeführt wurde.
-[**countReset()**](https://developer.mozilla.org/docs/Web/API/Console/countReset) | Setzt die Anzahl für die angegebene Indikator Beschriftung auf NULL zurück.
+[**count()**](https://developer.mozilla.org/docs/Web/API/Console/count) | Increments and logs the number of times *count()* for the given label has been executed.
+[**countReset()**](https://developer.mozilla.org/docs/Web/API/Console/countReset) | Resets the count to zero for the given counter label.
 
-So können Sie beispielsweise die folgenden Zeilen in der Konsole ausführen:
+For example, executing the following lines in console:
 
 ```javascript
 console.count('My Counter');
@@ -145,45 +145,45 @@ console.countReset('My Counter');
 console.count('My Counter');
 ```
 
- . . . führt zu:
-> Mein Counter: 1
+ . . . will result in:
+> My Counter: 1
 
-### Timing Ihres Codes
+### Timing your code
 
-Instrumentieren Sie Ihren Code mit beschrifteten Timern, um zu messen, wie lange es dauert, einen bestimmten Vorgang abzuschließen.
+Instrument your code with labeled timers to measure how long it takes to complete a given operation.
 
-Befehl | &nbsp;
+Command | &nbsp;
 :------------ | :-------------
-[**Zeit ()**](https://developer.mozilla.org/docs/Web/API/Console/time) | Startet einen Zeitgeber mit der angegebenen Bezeichnung.
-[**timeEnd()**](https://developer.mozilla.org/docs/Web/API/Console/timeEnd) | Beendet den Zeitgeber mit der angegebenen Bezeichnung und meldet die verstrichene Zeit (in Millisekunden).
-[**Timestamp ()**](https://developer.mozilla.org/docs/Web/API/Console/timeStamp) | Meldet die aktuelle Systemzeit (in Millisekunden).
+[**time()**](https://developer.mozilla.org/docs/Web/API/Console/time) | Starts a timer with the given label.
+[**timeEnd()**](https://developer.mozilla.org/docs/Web/API/Console/timeEnd) | Ends the timer with the given label and reports the time elapsed (in milliseconds).
+[**timeStamp()**](https://developer.mozilla.org/docs/Web/API/Console/timeStamp) | Reports the current system time (in milliseconds).
 
-Versuchen Sie beispielsweise, die folgenden Zeilen in der Konsole auszuführen:
+For example, try executing the following lines in console:
 
 ```javascript
 console.time('My Timer');
 console.timeEnd('My Timer');
 ```
 
-### Erstellen von Heap-Schnappschüssen
+### Taking heap snapshots
 
-Erstellen Sie Schnappschüsse des Heaps, um den Speicherverbrauch Ihres ausgeführten Codes zu bewerten und Speicherverluste zu identifizieren.
+Take snapshots of the heap to assess the memory consumption of your running code and identify memory leaks.
 
-Befehl | &nbsp;
+Command | &nbsp;
 :------------ | :-------------
-**takeHeapSnapshot()** | Zeichnet Details über den aktuellen JavaScript-Heap und die zugeordneten Objekte auf.
+**takeHeapSnapshot()** | Captures details about the current JavaScript heap and its allocated objects.
 
-Der devtools- [Speicher Profiler](../memory.md#toolbar) muss ausgeführt werden, um Heap-Schnappschüsse aufnehmen zu können. Jeder Schnappschuss wird in der [*Zusammenfassung*](../memory.md#snapshot-summary) des [**Speicher**](../memory.md) Bereichs zur weiteren Überprüfung als Kachel angezeigt.
+The  DevTools [memory profiler](../memory.md#toolbar) must be running in order to take heap snapshots. Each snapshot will appear as a tile in the [*Snapshot summary*](../memory.md#snapshot-summary) of the [**Memory**](../memory.md) panel for further inspection.
 
-## Ablauf Verfolgungs callstacks
+## Tracing callstacks
 
-Verstehen, woher der Code aufgerufen wird, welcher Code ausgeführt wird und wie lange die Ausführung dauert, kann hilfreich sein, um Langsamkeit oder unerwartetes Verhalten zu analysieren. Eine Stapelüberwachung zeigt Ihnen den Ausführungspfad, den Ihr Code zum Erreichen des Codes benötigte, von der Ablaufverfolgungsanforderung aufwärts durch den Pfad. 
+Understanding where your code is being called from, what code is running, and how long that execution takes can be useful in analyzing slowness or unexpected behavior. A stack trace shows you the execution path your code took to reach it, from the trace request upward through the path. 
 
-Befehl | &nbsp;
+Command | &nbsp;
 :------------ | :-------------
-[**Trace ()**](https://developer.mozilla.org/docs/Web/API/Console/trace) | Gibt eine Ablaufverfolgung der aktuellen Skript Ausführungs callstack aus.
+[**trace()**](https://developer.mozilla.org/docs/Web/API/Console/trace) | Outputs a trace of the current script execution callstack.
 
-Führen Sie beispielsweise den folgenden Code in der Konsole aus:
+For example, running the following code in the console:
 
 ```javascript
 function a(){
@@ -203,28 +203,28 @@ a();
 d();
 ```
 
-. . . Gibt die folgenden Stapelablaufverfolgungen aus:
-> Console. Trace () bei c (eval Code: 8:3) at a (eval Code: 2:3) at eval Code (eval Code: 14:1)
+. . . will output the following stack traces:
+> console.trace() at c (eval code:8:3) at a (eval code:2:3) at eval code (eval code:14:1)
 > 
-> Console. Trace () bei c (eval Code: 8:3) at b (eval Code: 5:3) at d (eval Code: 11:3) at eval Code (eval Code: 15:1)
+> console.trace() at c (eval code:8:3) at b (eval code:5:3) at d (eval code:11:3) at eval code (eval code:15:1)
 
-## Organisieren der Protokollausgabe
+## Organizing log output
 
-Um die gesamte vorherige Konsolenausgabe einfach zu löschen, verwenden Sie *Console. Clear ()* (oder `CTRL + L` ). Dadurch wird der BackStack des befehlsverlaufs der Konsole nicht gelöscht (Sie können ihn weiterhin mit der nach-oben-und nach-unten-Taste durchlaufen).
+To simply clear all previous console output, use *console.clear()* (or `CTRL + L`). This does not clear the backstack of your console command history (you can still traverse it with the up and down arrow keys).
 
-Befehl | &nbsp;
+Command | &nbsp;
 :------------ | :-------------
-[**Clear ()**](https://developer.mozilla.org/docs/Web/API/Console/clear) | Löscht alle vorherigen Konsolenausgaben.
+[**clear()**](https://developer.mozilla.org/docs/Web/API/Console/clear) | Clears all previous console output.
 
-Wenn Ihr Code viele Konsolen Nachrichten ausgibt, können Sie ihn mit den folgenden Befehlen visuell in geschachtelte Blöcke organisieren:
+If your code outputs a lot of console messages, you can visually organize them into nested blocks with the following commands:
 
- Befehl | &nbsp;
+ Command | &nbsp;
 :------------ | :-------------
-[**Group ()**](https://developer.mozilla.org/docs/Web/API/Console/group) | Startet eine neue Schachtelungsebene für die Konsolenausgabe mit der angegebenen (optionalen) Beschriftung.
-[**groupCollapsed()**](https://developer.mozilla.org/docs/Web/API/Console/groupCollapsed) | Startet eine neue Schachtelungsebene für die Konsolenausgabe mit der angegebenen (optionalen) Bezeichnung, das Gruppierungssteuerelement wird jedoch standardmäßig reduziert und muss erweitert werden (durch Klicken auf das Pfeil-Steuerelement), um die untergeordnete Ausgabe anzuzeigen.
-[**groupEnd()**](https://developer.mozilla.org/docs/Web/API/Console/groupEnd) | Beendet die Schachtelungs Gruppe für die angegebene Beschriftung.
+[**group()**](https://developer.mozilla.org/docs/Web/API/Console/group) | Starts a new level of nesting for console output with the specified (optional) label.
+[**groupCollapsed()**](https://developer.mozilla.org/docs/Web/API/Console/groupCollapsed) | Starts a new level of nesting for console output with the specified (optional) label, however the grouping control is collapsed by default and must be expanded (by clicking on the arrow control) to display the child output.
+[**groupEnd()**](https://developer.mozilla.org/docs/Web/API/Console/groupEnd) | Ends the nesting group for the specified label.
 
-Versuchen Sie beispielsweise, die folgenden Befehle in der Konsole einzugeben:
+For example, try entering the following commands in the console:
 
 ```javascript
 console.groupCollapsed('Group 1');
@@ -236,23 +236,23 @@ console.groupEnd('Group 1');
 console.log('No longer in a group');
 ```
 
-. . . und erweitern Sie dann die Steuerelemente *Gruppe 1* und *Gruppe 1,1* , um zu sehen, wie die Protokoll Kommentare geschachtelt sind:
+. . . and then expand the *Group 1* and *Group 1.1* controls to see how the log comments are nested:
 
-![Gruppieren von Nachrichten in der Konsole](../media/console_api_group.png)
+![Grouping messages in the console](../media/console_api_group.png)
 
-Manchmal ist es einfacher, ein JavaScript-Objekt oder-Array in tabellarischer Form zu visualisieren, anstatt eine flache Liste zu erstellen. Dazu können Sie den Befehl *Console. Table ()* verwenden:
+Sometimes its easier to visualize a JavaScript object or array in tabular form, rather than a flat list. For that, you can use the *console.table()* command:
 
-Befehl | &nbsp;
+Command | &nbsp;
 :------------ | :-------------
-[**Tabelle ()**](https://developer.mozilla.org/docs/Web/API/Console/table) | Gibt das angegebene Array oder Objekt in tabellarischer Form an die Konsole aus.
+[**table()**](https://developer.mozilla.org/docs/Web/API/Console/table) | Outputs the supplied array or object to the console in tabular form.
 
-Beispielsweise das folgende Object-Array:
+For example, the following object array:
 
 ```javascript
 var orders = [{'Size':'XL', 'Quantity':1},{'Size':'M', 'Quantity':3}, {'Size':'L', 'Quantity':2}];
 console.table(orders);
 ```
 
-. . . wird als Tabelle in der Konsole gerendert:
+. . . will render as this table in the console:
 
-![Anzeigen eines Objektarrays als Tabelle in der Konsole](../media/console_api_table.png)
+![Display an object array as a table in the console](../media/console_api_table.png)

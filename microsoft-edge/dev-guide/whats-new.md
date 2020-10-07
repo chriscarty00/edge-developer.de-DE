@@ -1,12 +1,12 @@
 ---
-description: Diese Seite enthält eine Übersicht über die Neuerungen in EdgeHTML Preview-Builds für Entwickler.
-title: Neuerungen in EdgeHTML für Entwickler – dev Guide
+description: This page provides an overview of what's new in EdgeHTML preview builds for developers.
+title: What's new in EdgeHTML for developers - Dev guide
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 07/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge, Web-Entwicklung, HTML, CSS, JavaScript, Entwickler, Neuerungen in Edge, neue APIs in Edge, edgehtml, edgehtml Preview-Builds
+keywords: edge, web development, html, css, javascript, developer, what's new in edge, new APIs in edge, edgehtml, edgehtml preview builds
 ms.openlocfilehash: 81973d12f6e66b5e6f1c3cd6a12fee196c4495d7
 ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
@@ -14,41 +14,41 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "10941966"
 ---
-# Neuigkeiten in EdgeHTML  
+# What's new in EdgeHTML  
 
 [!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
 
-Holen Sie sich die neuesten EdgeHTML-Features und-APIs, indem Sie [Windows-Insider](https://insider.windows.com)werden!  Das [Windows-Insider-Programm](https://insider.windows.com) bietet die neuesten Windows 10-Builds, sobald diese verfügbar sind.  
+Get the latest EdgeHTML features and APIs by becoming a [Windows Insider](https://insider.windows.com)!  The [Windows Insider Program](https://insider.windows.com) provides the latest Windows 10 builds as soon as they're available.  
 
-Besuchen Sie die [dev-Anleitung](../dev-guide.md) , um die neuen Features und APIs anzuzeigen, die in der aktuellen Version der Microsoft Edge-Plattform EdgeHTML 18 \ (Build 17763 \) ausgeliefert wurden.  
+Head over to the [Dev Guide](../dev-guide.md) to see the new features and APIs shipped in the current release of the Microsoft Edge platform, EdgeHTML 18 \(Build 17763\).  
 
-Nachfolgend sind die neuen und aktualisierten EdgeHTML-APIs in Windows 10 Preview-Builds aufgeführt. Sie werden im Format von angezeigt `[interface name].[api name]` .  Eine vollständige Liste der neuen Microsoft Edge-und Platform-Features finden Sie unter [ChangeLog](https://developer.microsoft.com/microsoft-edge/platform/changelog) , oder wechseln Sie zur [dev-Anleitung](../dev-guide.md) , um die neuen Features und APIs anzuzeigen, die in der aktuellen stabilen Version der Microsoft Edge-Plattform EdgeHTML 18 ausgeliefert wurden.   
+Below are new and updated EdgeHTML APIs in Windows 10 Preview Builds. They are listed in the format of `[interface name].[api name]`.  For a full list of new Microsoft Edge and platform features, check out [Changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog) or head over to the [Dev Guide](../dev-guide.md) to see new features and APIs shipped in the current stable release of the Microsoft Edge platform, EdgeHTML 18.   
 
 > [!WARNING] 
-> Einige Informationen beziehen sich auf die Vorabversion, die vor der kommerziellen Freigabe grundlegend geändert werden kann.  Microsoft übernimmt keine Garantie, weder ausdrücklich noch stillschweigend, für die hier bereitgestellten Informationen.  
+> Some information relates to pre-released product which may be substantially modified before it's commercially released.  Microsoft makes no warranties, express or implied, with respect to the information provided here.  
 
-## Vorschau Build 18272  
+## Preview Build 18272  
 
-Keine API-Änderungen.  
+No API changes.  
 
-## Vorschau Build 18267  
+## Preview Build 18267  
 
-Keine API-Änderungen.  
+No API changes.  
 
-## Vorschau Build 18262  
+## Preview Build 18262  
 
-Neue API-Unterstützung hinzugefügt:  
+Added new API support:  
 
-<iframe height='341' scrolling='no' title='EdgeHTML Preview Build 17682' src='//codepen.io/MSEdgeDev/embed/5a691c1840690352f409d3788b8167fa/?height=341&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>Weitere Informationen finden Sie <a href='https://codepen.io/MSEdgeDev/pen/5a691c1840690352f409d3788b8167fa/'> in der EdgeHTML Preview Build 17682 </a> von MSEdgeDev ( <a href='https://codepen.io/MSEdgeDev'> @MSEdgeDev </a> ) auf <a href='https://codepen.io'> CodePen </a> .  </iframe>  
+<iframe height='341' scrolling='no' title='EdgeHTML Preview Build 17682' src='//codepen.io/MSEdgeDev/embed/5a691c1840690352f409d3788b8167fa/?height=341&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/MSEdgeDev/pen/5a691c1840690352f409d3788b8167fa/'>EdgeHTML Preview Build 17682</a> by MSEdgeDev (<a href='https://codepen.io/MSEdgeDev'>@MSEdgeDev</a>) on <a href='https://codepen.io'>CodePen</a>.  </iframe>  
 
-## Vorschau Build 18252  
+## Preview Build 18252  
 
-Keine API-Änderungen.  
+No API changes.  
 
-## Vorschau Build 18247  
+## Preview Build 18247  
 
-Keine API-Änderungen.  
+No API changes.  
 
-## Vorschau Build 18242  
+## Preview Build 18242  
 
-Keine API-Änderungen.  
+No API changes.  

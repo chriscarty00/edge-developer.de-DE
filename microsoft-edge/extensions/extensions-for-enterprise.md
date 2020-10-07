@@ -1,13 +1,13 @@
 ---
 ms.assetid: 8e2f75c4-fb7f-4892-a6c2-23bac081581a
-description: Informieren Sie sich über die unternehmensspezifischen Aspekte von Microsoft Edge-Erweiterungen, und schauen Sie sich an, wie Sie mit UWP-apps vergleichbar sind.
-title: Erweiterungen für Enterprise
+description: Find out about the enterprise specific aspects of Microsoft Edge Extensions, and see how they're similar to UWP apps.
+title: Extensions for enterprise
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge, Web-Entwicklung, HTML, CSS, JavaScript, Entwickler
+keywords: edge, web development, html, css, javascript, developer
 ms.custom: seodec18
 ms.openlocfilehash: 8f50c282fce11d2654f990bf135941e0616af3f3
 ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
@@ -16,60 +16,60 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "10567454"
 ---
-# Erweiterungen für Enterprise  
+# Extensions for Enterprise  
 
 [!INCLUDE [deprecation-note](includes/deprecation-note.md)]  
 
-Microsoft Edge-Erweiterungen weisen einen ähnlichen Workflow auf, wenn Sie mit anderen Enterprise-UWP-apps verglichen werden. In den nachstehenden Informationen werden unternehmensspezifische Aspekte von Microsoft Edge-Erweiterungen erläutert.
+Microsoft Edge extensions have a similar workflow when compared to other enterprise UWP apps. The information below details enterprise specific aspects of Microsoft Edge extensions.
 
-## Voraussetzungen
-Die folgenden Elemente werden vorgeschlagen, um eine Microsoft Edge-Erweiterung für Unternehmen zu entwickeln, zu verpacken und bereitzustellen:
+## Prerequisites
+The following items are suggested to develop, package, and deploy a Microsoft Edge extension for enterprise:
 
-+ Windows Developer Portal-Konto, um die Erweiterung für den Enterprise private Store zu signieren und freizugeben. Weitere Informationen finden Sie unter [Öffnen eines entwicklerkontos](/windows/uwp/publish/opening-a-developer-account) .
-+ Microsoft Store for Business oder Education, um die Anwendung an das Unternehmen zu verteilen. Weitere Informationen finden Sie in der [Microsoft Store for Business-und Education-Dokumentation](/microsoft-store/) .
-+ Ermitteln Sie, welche Versionen von Windows 10 die Microsoft Edge-Erweiterung ausführen werden. Eine Liste der vorhandenen Windows 10-Versionen finden Sie unter [Windows 10-Versionsinformationen](https://www.microsoft.com/itpro/windows-10/release-information) .
++ Windows Developer Portal account, to sign and release the extension to the enterprise private store. See [Opening a developer account](/windows/uwp/publish/opening-a-developer-account) for more details.
++ Microsoft Store for Business or Education, to distribute the application to the enterprise. See the [Microsoft Store for Business and Education documentation](/microsoft-store/) for more details.
++ Identify which versions of Windows 10 will be running the Microsoft Edge extension. See [Windows 10 release information](https://www.microsoft.com/itpro/windows-10/release-information) for a listing of existing Windows 10 releases.
 
 > [!NOTE]
-> Sideloading kann als Alternative zur Verwendung des Windows-Entwickler Portals angesehen werden, um das Release the extension zu signieren. Weitere Informationen finden Sie im folgenden Verhalten von Sideloading-Erweiterungen.
+> Sideloading can be considered an alternative to using the Windows Developer Portal to sign the release the extension. See the behaviour of sideloading extensions below for more details.
 
 ## Windows Information Protection
-Microsoft Edge-Erweiterungen berücksichtigen derzeit keine Windows Information Protection (WIP)-Einstellungen. Wenn ein Unternehmen sich um den Datenschutz sorgt, sollte die Unterstützung für Erweiterungen nicht für Microsoft Edge aktiviert sein.
+Microsoft Edge extensions currently don't honor Windows Information Protection (WIP) settings. If an enterprise is concerned about data protection, extensions support should not be enabled for Microsoft Edge.
 
-Konfigurieren Sie die Gruppenrichtlinien-und Microsoft InTune-Einstellungen, um die Erweiterungen für Mitarbeiter zu deaktivieren. Weitere Informationen zu den zu konfigurierenden Richtlinien finden Sie unter [Verfügbare Richtlinien für Microsoft Edge](https://technet.microsoft.com/itpro/microsoft-edge/available-policies).
+To disable extensions for employees, configure Group Policy and Microsoft Intune settings. For more info on which policies to configure, see [Available policies for Microsoft Edge](https://technet.microsoft.com/itpro/microsoft-edge/available-policies).
 
-## Verpackungs Erweiterungen
-Bevor ein Unternehmen eine Durchwahl an seine Mitarbeiter verteilen kann, muss es zuerst verpackt werden. Anleitungen zu Verpackungs Erweiterungen finden Sie im Leitfaden zur [Verpackung](./guides/packaging.md) .
+## Packaging Extensions
+Before an enterprise can distribute an extension to its employees, it must first be packaged. Instructions on packaging extensions are available in the [Packaging](./guides/packaging.md) guide.
 
 > [!TIP]
-> Testen Sie die Installation und Ausführung ihrer Erweiterung auf allen Versionen von Windows 10, um sicherzustellen, dass Sie wie erwartet funktioniert, bevor Sie verteilt werden.
+> Be sure to test installing and running your extension on all the versions of Windows 10 to ensure it will work as expected before distributing.
 
-## Verteilen von Erweiterungen
-Nachdem eine Erweiterung gepackt wurde, kann Sie über den Microsoft Store, Microsoft Store for Business oder Sideloading an Mitarbeiter verteilt werden.
+## Distributing Extensions
+Once an extension has been packaged, it can be distributed to employees through the Microsoft Store, Microsoft Store for Business, or by sideloading.
 
-Erweiterungen, die zwar vom Microsoft Store für Unternehmen verteilt werden, aber entweder Mitarbeitern zugewiesen oder einem privaten Speicher hinzugefügt werden, in dem alle Mitarbeiter darauf zugreifen können. Dies kann mithilfe des Leitfadens ["Branchen-Apps für Unternehmen"](https://msdn.microsoft.com/windows/uwp/publish/distribute-lob-apps-to-enterprises) durchgeführt werden.
+Extensions distributed though the Microsoft Store for Business can either be assigned to employees, or added to a private store where all employees can access them. This can be done by following the [Distribute "Line-of-Business" (LOB) apps to enterprises](https://msdn.microsoft.com/windows/uwp/publish/distribute-lob-apps-to-enterprises) guide.
 
-Für querladen-Erweiterungen müssen Geräte (nicht verwaltet oder verwaltet) für Sideloading freigegeben werden. Weitere Informationen dazu, wie Sie verpackte Erweiterungen querladen, finden Sie unter [querladen Branchen-apps in Windows 10](https://technet.microsoft.com/itpro/windows/deploy/sideload-apps-in-windows-10) .
+To sideload extensions, devices (unmanaged or managed) must be unlocked for sideloading. See [Sideload LOB apps in Windows 10](https://technet.microsoft.com/itpro/windows/deploy/sideload-apps-in-windows-10) for more info on how to sideload packaged extensions.
 
 > [!IMPORTANT]
-> Wenn das Unternehmen die Erweiterung sowohl intern entwickelt als auch verteilt, benötigt das Unternehmen sowohl den Microsoft Store for Business (oder Education) als auch ein Windows Developer Portal-Konto.
+> If the enterprise is both developing and distributing the extension internally, the enterprise will require both the Microsoft Store for Business (or Education) and a Windows Developer Portal account.
 
-### Verhalten von quer geladene-Erweiterungen
-Im Gegensatz zu Erweiterungen, die über den Microsoft Store (oder den Microsoft Store für Unternehmen) verteilt sind, werden quer geladene-Erweiterungen in Microsoft Edge anders behandelt.
+### Behavior of Sideloaded Extensions
+Unlike extensions distributed through the Microsoft Store (or the Microsoft Store for Business), sideloaded extensions are treated differently in Microsoft Edge.
 
-Der erste Unterschied wirkt sich auf die Verhaltensweise von quer geladene-Erweiterungen nach der Installation aus. Im Gegensatz zu Erweiterungen aus dem Microsoft Store zeigen quer geladene-Erweiterungen nicht sofort die Benachrichtigung "Sie haben eine neue Erweiterung" an und müssen vom Benutzer manuell aktiviert werden.
+The first difference affects how sideloaded extensions behave after installation. Unlike extensions from the Microsoft Store, sideloaded extensions do not immediately display the "You have a new extension" notification and need to be manually turned on by the user.
 
-Um die Erweiterung zu aktivieren, öffnen Sie das Menü **mehr (.** ..), wählen Sie **"Erweiterungen"** aus, und sehen Sie sich die quer geladene-Erweiterung in der Liste der installierten Erweiterungen an. Klicken Sie auf die Erweiterung, und aktivieren Sie Sie.
+To turn on the extension, open the **More (...)** menu, select **"Extensions"** and you should see the sideloaded extension in the list of installed extensions. Click on the extension and turn it on.
 
-Der zweite Unterschied wirkt sich darauf aus, wie quer geladene-Erweiterungen im Browser angezeigt werden. Beispielsweise enthalten sowohl die Benachrichtigung "Sie haben eine neue Durchwahl" als auch die Liste der installierten Erweiterungen eine zusätzliche Warnung, die besagt, dass die Erweiterung aus einer unbekannten Quelle stammt.
+The second difference affects how sideloaded extensions appear in the browser. For example, both the "You have a new extension" notification and the list of installed extensions include an additional warning stating that the extension is from an unknown source.
 
-![querladen-Warnung 1](./media/sideload-permissionflyout.PNG)
+![sideload warning 1](./media/sideload-permissionflyout.PNG)
 
-![querladen-Warnung 2](./media/sideload-l1warning.PNG)
+![sideload warning 2](./media/sideload-l1warning.PNG)
 
-Der dritte und letzte Unterschied wirkt sich auf die Verhaltensweise von quer geladene-Erweiterungen beim Start des Browsers aus. Quer geladene-Erweiterungen auf Geräten, die entweder mit der Domäne verbunden sind oder MDM aktiviert sind, Verhalten sich wie Erweiterungen aus dem Microsoft Store. Quer geladene-Erweiterungen auf Geräten, die nicht mit der Domäne verbunden oder MDM aktiviert sind, werden jedoch während des Browser Starts deaktiviert und erfordern, dass der Benutzer explizite Aktionen durchführt.
+The third and final difference affects how sideloaded extensions behave on browser startup. Sideloaded extensions on devices that are either domain-joined or MDM enabled will behave like extensions from the Microsoft Store. However, sideloaded extensions on devices that are not domain-joined or MDM enabled will be turned off during browser startup and require the user to take explicit action.
 
-Kurz nach dem Start des Browsers (nach ~ 10 Sekunden Inaktivität) wird die folgende Benachrichtigung am unteren Rand des Fensters angezeigt.
+Shortly after browser startup (after ~10 seconds of inactivity) the following notification will appear near the bottom of the window.
 
-![querladen-Benachrichtigung](./media/sideload-scareUI.PNG)
+![sideload notification](./media/sideload-scareUI.PNG)
 
-Jedes Mal, wenn Microsoft Edge gestartet wird, müssen Benutzer "trotzdem aktivieren" auswählen, um die Erweiterung verwenden zu können.
+Each time Microsoft Edge is launched, users will need to select "Turn on anyway" in order to use the extension.

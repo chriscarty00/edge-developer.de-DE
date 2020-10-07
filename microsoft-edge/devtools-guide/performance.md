@@ -1,12 +1,12 @@
 ---
-description: Verwenden des Leistungs Panels zum Analysieren der responsivenes Ihrer Seite während der Benutzerinteraktion
-title: DevTools-Leistung
+description: Use the Performance panel to analyze the responsivenes of your page during user interaction
+title: DevTools - Performance
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools, Leistung, Profil, Framerate, FPS, CPU-Auslastung, JavaScript-Ausführung
+keywords: microsoft edge, web development, f12 tools, devtools, performance, profile, frame rate, fps, CPU utilization, JavaScript execution
 ms.custom: seodec18
 ms.openlocfilehash: aecf3cf49592dbf1f24231e76f14ddc2ca1228c3
 ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
@@ -15,233 +15,233 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "10567609"
 ---
-# Leistung
+# Performance
 
-Der **Leistungs** Panel bietet Tools für die Profilerstellung und Analyse der Reaktionsfähigkeit der Benutzeroberfläche im Verlauf der Benutzerinteraktion. Damit haben Sie folgende Möglichkeiten:
+The **Performance** panel offers tools for profiling and analyzing the responsiveness of your UI during the course of user interaction. With it, you can:
 
- - [Messen der Ausführungszeiten](#recording-a-profile) der verschiedenen Komponenten Ihrer Seite 
- - Führen Sie einen Drilldown zu dem Ort durch, an [dem Sie die meisten CPU-Zyklen](#timeline-ruler) für Ihre Seite und die resultierende visuelle Wirkung für Ihre Benutzer ausgeben.
- - [Abrufen einer schrittweisen Aufschlüsselung der Prozesse, die die](#timeline-details) Ausführungszeit der Seite verbrauchen 
- - Führen [Sie Ihre JavaScript-Anruflisten](#javascript-call-stacks) durch, um kostspielige Vorgänge zu identifizieren, beispielsweise für solche, die eine Neuberechnung des Layouts erfordern. 
+ - [Measure execution times](#recording-a-profile) of the various components of your page 
+ - [Drill down to where you're spending the most CPU cycles](#timeline-ruler) to run your page and the resulting visual effect for your users
+ - [Get a step-by-step breakdown of the processes](#timeline-details) consuming page execution time 
+ - [Walk your JavaScript call stacks](#javascript-call-stacks) to identify costly operations, such as those requiring layout recalculations 
 
-![DevTools-Leistungs Leiste](./media/performance.png)
+![DevTools Performance panel](./media/performance.png)
 
-## Aufzeichnen eines Profils
+## Recording a profile
 
-Der erste Schritt zur Analyse der Leistung Ihrer Seite besteht darin, ein Profil zu erfassen, während Sie ein bestimmtes Benutzerszenario durchführen, beispielsweise die Repro Schritte eines Leistungs Fehlers, den Sie beheben möchten, oder einen typischen Anwendungsfall, den Sie für eine bessere Benutzererfahrung optimieren möchten. 
+The first step to analyzing the performance of your page is to capture a profile as you perform a particular user scenario, such as the repro steps of a performance bug you're trying to fix, or a typical use case you want to optimize for a better user experience. 
 
-### Symbolleiste
+### Toolbar
 
-Verwenden Sie **Start**die  /  Schaltflächen für Start**Stopp** auf der Symbolleiste (oder `Ctrl+E` ), um die Leistungsablaufverfolgung zu initiieren und abzuschließen. Auf der Registerkarte **Leistung** wird eine grüne Anzeige apear, um anzugeben, dass eine Aufzeichnung gerade ausgeführt wird. 
+Use the **Start** / **Stop** buttons on the toolbar (or `Ctrl+E`) to initiate and conclude your performance trace. A green indicator will apear on the **Performance** tab to indicate a recording is in progress. 
 
-![Symbolleiste des Leistungs Fensters](./media/performance_toolbar.png)
+![Performance panel toolbar](./media/performance_toolbar.png)
 
-Beim Beenden des Profils wird ein Leistungsbericht generiert. Sie können festlegen, dass die Datei zu einem späteren Zeitpunkt auf dem Datenträger ( `Ctrl+S` ) und Reload ( `Ctrl+O` ) in devtools gespeichert werden soll.  DevTools-Diagnose Sitzungen werden mit der Erweiterung *. diagsession* gespeichert.
+A performance report will generate upon stopping the profile. You can choose to save it to disk (`Ctrl+S`) and reload (`Ctrl+O`) in  DevTools at a later time.  DevTools diagnostic sessions are saved with the *.diagsession* extension.
 
-Hier sind einige Punkte, die Sie beim Aufzeichnen eines Profils beachten sollten:
+Here are some things to keep in mind when recording a profile:
 
-- Führen Sie die wenigsten Aktionen aus, die Sie zum Erfassen des Szenarios benötigen, das Sie analysieren möchten. Durch überflüssige Aktionen mit der Seite werden zusätzliche Daten erzeugt und ihre Ergebnisse überladen.
+- Perform the fewest actions you need to capture the scenario you're trying to analyze. Extraneous actions with the page will produce extra data and clutter your results.
 
-- Der Profiler kennzeichnet wichtige App-Lebenszyklusereignisse im Bericht automatisch, beispielsweise Seitennavigation, [DOMContentLoaded](https://developer.mozilla.org/docs/Web/Events/DOMContentLoaded)und Seiten [Ladevorgang](https://developer.mozilla.org/docs/Web/Events/load). Sie können benutzerdefinierte Marker hinzufügen, indem Sie die [Performance. Mark ()](https://developer.mozilla.org/docs/Web/API/Performance/mark) -Methode im Code oder in der Konsole aufrufen. 
+- The profiler will automatically mark major app lifecycle events in the report, such as page navigation, [DOMContentLoaded](https://developer.mozilla.org/docs/Web/Events/DOMContentLoaded), and page [load](https://developer.mozilla.org/docs/Web/Events/load). You can add custom markers by calling the [Performance.mark()](https://developer.mozilla.org/docs/Web/API/Performance/mark) method from within your code or the console. 
 
-- Wenn für Ihre Analyse anfängliche Seitenladezeiten wichtig sind, stellen Sie sicher, dass Sie den Browsercache (aus dem [Netzwerk](./network.md) Fenster) löschen, um sicherzustellen, dass alle Seitenressourcen aus dem Netzwerk geladen werden.
+- If initial page load times are important to your analysis, make sure to clear your browser cache (from the [Network](./network.md) panel) to ensure all page resources are loading from the network.
 
-- Manchmal hilft es, mehrere Sitzungen aufzuzeichnen und/oder das gleiche Szenario auf verschiedenen Computern zu testen, um das Leistungsproblem in der Wildnis besser zu verstehen.
+- Sometimes it helps to record multiple sessions and/or sample the same scenario across different machines to better understand the performance issue in the wild.
 
-## Zeitachsenlineal
+## Timeline ruler
 
-Die Zeitachse funktioniert als Schiebe Lineal. Verwenden Sie es, um den Umfang des Berichts auf den jeweiligen Zeitrahmen (oder die Spanne von Ereignissen) zu begrenzen, die von Interesse sind. Ziehen Sie die schwarzen **Schiebe** Regler, um den Zeitbereich zu begrenzen, den Sie untersuchen möchten, und Filtern Sie externe Profilerstellungsdaten aus der [Zeitachse](#timeline-details) und den [JavaScript-Aufruflisten](#javascript-call-stacks) Berichten im unteren *Detailbereich*. 
+The timeline works as a sliding ruler. Use it to limit the scope of the report to the particular timeframe (or span of events) of interest. Drag the black **slide controls** to limit the time range you wish to investigate and filter out extraneous profiling data from the [Timeline](#timeline-details) and [JavaScript call stacks](#javascript-call-stacks) reports in the lower *Details pane*. 
 
-Auf dem Lineal werden zwei Arten von Markierungen angezeigt:
+You will see two types of markers on the ruler:
 
- - **App-Lebenszyklus Markierungen** auf der Zeitachse (wie Seitennavigation, [DOMContentLoaded](https://developer.mozilla.org/docs/Web/Events/DOMContentLoaded)und Seiten [Laden](https://developer.mozilla.org/docs/Web/Events/load)) werden automatisch protokolliert, während Sie ein Profil aufzeichnen.
+ - **App lifecycle marks** on the timeline (such as page navigation, [DOMContentLoaded](https://developer.mozilla.org/docs/Web/Events/DOMContentLoaded), and page [load](https://developer.mozilla.org/docs/Web/Events/load)) are automatically logged as you record a profile.
 
- - **Benutzer Marken** sind benutzerdefinierte Marker, die Sie mit Aufrufen der [Performance. Mark ()](https://developer.mozilla.org/docs/Web/API/Performance/mark) -Methode im Code oder in der devtools- [**Konsole**](./console.md)hinzufügen können. Sie können *Start* -und *endmarks* zusammen als einzelnes, benanntes Measure mit der [Performance. Measure ()](https://developer.mozilla.org/docs/Web/API/Performance/measure) -Methode gruppieren. 
+ - **User marks** are custom markers you can choose to add  with calls to the [Performance.mark()](https://developer.mozilla.org/docs/Web/API/Performance/mark) method from within your code or the  DevTools [**Console**](./console.md). You can group *start* and *end* marks together as a single, named measure with the [Performance.measure()](https://developer.mozilla.org/docs/Web/API/Performance/measure) method. 
 
-Nachdem Sie einen Zeitbereich ausgewählt haben, können Sie von der Symbolleiste weiter **vergrößern** oder **Zoom zurücksetzen** und **Auswahl löschen** , um zur vollständigen Ansicht der Leistungsablaufverfolgung zurückzukehren (ohne Zeitbereich ausgewählt). Diese Steuerelemente sind auch über das Kontextmenü der rechten Maustaste verfügbar.
+Once you have selected a time range, you can further **Zoom in** from the toolbar, or **Reset zoom** and **Clear selection** to return to the full view of the performance trace (with no time range selected). These controls are also available from the right-click context menu.
 
-![Leistungsbereich-Zeitachse](./media/performance_timeline.png)
+![Performance panel timeline](./media/performance_timeline.png)
 
-### CPU-Auslastung
+### CPU utilization
 
-Das Diagramm **CPU-Auslastung%** Zeitachsen beschreibt die Verarbeitungsressourcen, die von den verschiedenen für die Ausführung der Seite erforderlichen Browser-Subsysteme verwendet werden, aufgeschlüsselt nach Kategorie:
+The **CPU utilization %** timeline graph describes the processing resources consumed by the various browser subsystems required to run the page, broken out by category:
 
-#### Laden
-Zeigt die Zeit an, die zum Abrufen von App-Ressourcen und zum Analysieren von HTML und CSS verwendet wurde. Dies kann Netzwerkanforderungen umfassen. Die folgenden zugehörigen Ereignisse werden in der [Zeitachse](#timeline-details)protokolliert:
+#### Loading
+Indicates time spent retrieving app resources and parsing HTML and CSS. This can include network requests. The following associated events are logged in the [Timeline](#timeline-details):
 
-Ereignis | Beschreibung
+Event | Description
 :------------ | :-------------
-CssParsing  | Es wurde ein neuer CSS-Inhalt gefunden, der analysiert werden musste.
-HtmlParsing | Es wurde ein neuer HTML-Inhalt gefunden, der in Knoten analysiert und in das DOM eingefügt werden musste.
-HttpRequest | Es wurde eine Remoteressource im Dom gefunden, oder es wurde ein XMLHttpRequest-Objekt erstellt, für das eine HTTP-Anforderung ausgeführt werden musste.
-HtmlSpeculativeDownloading | Der HTML-Inhalt der Seite wurde nach erforderlichen Ressourcen durchsucht, damit die HTTP-Anforderungen für Sie so schnell wie möglich geplant werden können.
+CssParsing  | New CSS content was encountered that needed to be parsed.
+HtmlParsing | New HTML content was encountered that needed to be parsed into nodes and inserted into the DOM.
+HttpRequest | A remote resource was encountered in the DOM or an XMLHttpRequest was created that required an HTTP request to be made.
+HtmlSpeculativeDownloading | The page's HTML content was being searched for required resources so that the HTTP requests for them could be scheduled as quickly as possible.
 
 
-#### Skripting
-Zeigt die Zeit an, die für die Analyse und Ausführung von JavaScript verwendet wurde Dazu gehören DOM-Ereignisse, Timer, Skript Auswertung und Animationsframe Rückrufe. Die folgenden zugehörigen Ereignisse werden in der [Zeitachse](#timeline-details)protokolliert:
+#### Scripting
+Indicates time spent parsing and executing JavaScript. This includes DOM events, timers, script evaluation, and animation frame callbacks. The following associated events are logged in the [Timeline](#timeline-details):
 
-Ereignis | Beschreibung
+Event | Description
 :------------ | :-------------
-DomEvent | Ein Ereignis wurde für ein DOM-Objekt ausgelöst.
-EvaluatingScript | `<script>`Es wurde ein neues Element im Dom gefunden, das analysiert und ausgeführt werden musste.
-EventHandler | Ein registrierter Ereignislistener wurde als Reaktion auf ein ausgelöstes DOM-Ereignis ausgelöst.
-Frame | Während ein neuer Frame vorbereitet wurde, wurde ein registrierter Rückruf ausgelöst, um visuelle Änderungen zu unterstützen.
-Messen | Ein App-spezifisches Szenario wurde mit der `performance.measure()` Methode gemessen.
-MediaQueryListener | Eine registrierte medienabfrage wurde ungültig, was zur Ausführung der zugehörigen Listener (s) führte.
-MutationObserver | Mindestens ein beobachtetes DOM-Element wurde geändert, was zur Ausführung des zugehörigen Rückrufs eines MutationObserver führte.
-TimerFired | Es wurde ein geplanter Zeitgeber verstrichen, der zur Ausführung des zugehörigen Rückrufs führte.
-WindowsRuntimeAsyncCallback | Ein asynchroner Vorgang wurde von einem Windows-Runtime-Objekt abgeschlossen, das einen Rückruf ausgelöst hat `Promise` .
-WindowsRuntimeEvent | Ein Ereignis wurde für ein Windows-Runtime-Objekt ausgelöst, das einen registrierten Listener ausgelöst hat.
+DomEvent | An event was fired on a DOM object.
+EvaluatingScript | A new `<script>` element was encountered in the DOM and needed to be parsed and executed.
+EventHandler | A registered event listener was triggered in response to a DOM event being fired.
+Frame | While a new frame was being prepared a registered callback was triggered so that it could contribute visual changes.
+Measure | An app-specific scenario was measured using the `performance.measure()` method.
+MediaQueryListener | A registered media query was invalidated which resulted in the execution of its associated listener(s).
+MutationObserver | One or more observed DOM elements were modified which resulted in the execution of a MutationObserver's associated callback.
+TimerFired | A scheduled timer elapsed which resulted in the execution of its associated callback.
+WindowsRuntimeAsyncCallback | An async operation was completed by a Windows Runtime object which triggered a `Promise` callback.
+WindowsRuntimeEvent | An event was fired on a Windows Runtime object which triggered a registered listener.
 
 #### GC
-Gibt an, dass Zeit für das Sammeln von Speicher für nicht mehr verwendete Objekte aufgewendet wird. Die folgenden zugehörigen Ereignisse werden in der [Zeitachse](#timeline-details)protokolliert:
+Indicates time spent collecting memory for objects that are no longer in use. The following associated events are logged in the [Timeline](#timeline-details):
 
-Ereignis | Beschreibung
+Event | Description
 :------------ | :-------------
-GarbageCollection | Die JavaScript-Laufzeit hat die aktuelle Speicherauslastung der APP überwacht, um festzustellen, welche Objekte nicht mehr referenziert werden und daher gesammelt werden können.
+GarbageCollection | The JavaScript runtime audited the app's current memory usage in order to determine which objects aren't being referenced anymore and could therefore be collected.
 
-#### Formatieren
-Zeigt die Zeit an, die für die Berechnung der Element Präsentation und des Layouts verwendet Die folgenden zugehörigen Ereignisse werden in der [Zeitachse](#timeline-details)protokolliert:
+#### Styling
+Indicates time spent calculating element presentation and layout. The following associated events are logged in the [Timeline](#timeline-details):
 
-Ereignis | Beschreibung
+Event | Description
 :------------ | :-------------
-AlignedBeat | Ausstehende visuelle Änderungen, die am Dom vorgenommen wurden, wurden verarbeitet, sodass die Anzeige der APP aktualisiert werden konnte.
-CssCalculation | Änderungen an der Dom-oder neuen CSS-Inhalte wurden hinzugefügt, sodass die Formateigenschaften aller betroffenen Elemente neu berechnet werden müssen.
-Layout | Am Dom wurden Änderungen vorgenommen, bei denen die Größe und/oder Position aller betroffenen Elemente berechnet werden musste.
+AlignedBeat | Pending visual changes that were made to the DOM were processed so that the app's display could be updated.
+CssCalculation | Changes were made to the DOM or new CSS content was added, requiring the style properties of all affected elements to be recalculated.
+Layout | Changes were made to the DOM that required the size and/or position of all affected elements to be computed.
 
-#### Rendern
-Zeigt die Zeit an, die beim Malen des Bildschirms ausgegeben wurde. Die folgenden zugehörigen Ereignisse werden in der [Zeitachse](#timeline-details)protokolliert:
+#### Rendering
+Indicates time spent in painting the screen. The following associated events are logged in the [Timeline](#timeline-details):
 
-Ereignis | Beschreibung
+Event | Description
 :------------ | :-------------
-Paint | Visuelle Änderungen wurden am Dom vorgenommen, bei denen alle betroffenen Teile der Seite neu gezeichnet werden mussten.
-RenderLayer | Visuelle Änderungen wurden an einem unabhängig gerenderten Fragment des DOM (ein Layer genannt) vorgenommen, in dem der jeweilige Teil der Seite neu gezeichnet werden musste.
+Paint | Visual changes were made to the DOM that required all affected portions of the page to be redrawn.
+RenderLayer | Visual changes were made to an independently rendered fragment of the DOM (called a layer) which required its respective portion of the page to be redrawn.
 
-#### Bild Decodierung
-Zeigt die Zeit an, die zum Dekomprimieren und Decodieren von Bildern verwendet wurde. Die folgenden zugehörigen Ereignisse werden in der [Zeitachse](#timeline-details)protokolliert:
+#### Image decoding
+Indicates time spent decompressing and decoding images. The following associated events are logged in the [Timeline](#timeline-details):
 
-Ereignis | Beschreibung
+Event | Description
 :------------ | :-------------
-Decodiert | Ein Bild wurde in das DOM aufgenommen und musste vom ursprünglichen Format in eine Bitmap dekomprimiert werden.
+ImageDecoded | An image was included into the DOM and needed be to decompressed from its original format into a bitmap.
 
-### Visueller Durchsatz
+### Visual throughput
 
-Der **visuelle Durchsatz (fps)** zeigt die geschätzten *Bilder pro Sekunde* (fps) im Verlauf des Profilerstellungs-Szenarios, wobei 60 fps die ideale Anzeigerate darstellt. Dips in der Framerate deuten auf Leistungsengpässe hin, und eine Frame Rate von NULL bedeutet, dass Frames vollständig gelöscht werden.
+The **Visual throughput (FPS)** graph shows the estimated *frames per second* (FPS) during the course of the profiling scenario, where 60 FPS is the ideal display rate. Dips in the frame rate indicate performance bottlenecks and a frame rate of zero means that frames are getting dropped entirely.
 
-## Zeitachsen Details
+## Timeline details
 
-Verwenden Sie den untersten-Detailbereich, um die vollständige Aufschlüsselung der Geschehnisse auf der Seite zu erhalten. Auf der Registerkarte **Details** finden Sie eine Aufschlüsselung der Ereignisse, die in den verschiedenen Browser-Subsysteme aufgetreten sind.
+Use the lowermost details pane to get the full breakdown of what happened on the page. The **Timeline details** tab provides a breakdown of events that occurred within the various browser subsystems.
 
-![Detailbereich der Leistungs Zeitachse](./media/performance_details_timeline.png)
+![Performance timeline details pane](./media/performance_details_timeline.png)
 
-1. **Sortierungssteuerelement für Ereignislisten**
+1. **Event list sort control**
 
-    Verwenden Sie das Dropdown-Steuerelement **Sortieren** nach, um die Reihenfolge der [Ereignislisten](#event-list) zwischen *Startzeit* oder *Dauer (einschließlich*) umzuschalten. Dadurch wird auch die Ansicht der [ausgewählten Zeitachsen Details](#selected-timeline-details)geändert.
+    Use the **Sort by** dropdown control to toggle the [Event list](#event-list) order between *Start time* or *Duration (inclusive*). This also changes the view of the [Selected timeline details](#selected-timeline-details).
 
-2. **Gruppieren von Ereignissen nach Frame**
+2. **Group events by frame**
 
-    Verwenden Sie die **Gruppen Ereignisse auf oberster Ebene nach Frames** umschalten, um Ereignisse der obersten Ebene (*HTML-Analyse, Layout, DOM-Ereignis* usw.) in der entsprechenden Arbeitseinheit (oder "Frame") in Zeiträumen zu gruppieren, in denen Animationen/visuelle Aktualisierungen stattgefunden haben. Die Frames werden wie andere Ereignisse behandelt, sodass Sie sortiert/gefiltert werden können und eine *inklusive Zeit* Zusammenfassung bereitstellen, wenn in der [Ereignisliste](#event-list)darauf geklickt wird.
+    Use the **Group top level events by frames** toggle to group top-level events (*HTML parsing, Layout, DOM event,* etc.) into their corresponding unit of work (or "frame") during periods of time where animations/visual updates were occurring. The frames are treated like other events, so they can be sorted/filtered and provide an *Inclusive time* summary when clicked in the [Event list](#event-list).
 
-3. **Filtersteuerelemente für Ereignislisten**
+3. **Event list filter controls**
 
-    Verwenden Sie das Menü **Ereignisse filtern** , um die Typen von Ereignissen zu konfigurieren, die in den [Zeitachsen Details](#timeline-details)angezeigt werden. 
+    Use the **Filter events** menu to configure the types of events shown in the [timeline details](#timeline-details). 
 
-    ![Steuerelement zum Filtern von Leistungs Ereignissen](./media/performance_filter_events.png) 
+    ![Control to filter performance events](./media/performance_filter_events.png) 
 
-    Die folgenden Filter stehen zur Verfügung:
+    The following filters are available:
 
-   - **Bild Decodierung**: zeigt Ereignisse an, die in einem Hintergrundthread aufgetreten sind (beispielsweise Bild Decodierung, GC). 
-   - **Netzwerkdatenverkehr**: zeigt HTTP-Anforderungen an, die Netzwerk gebunden sind.
-   - **UI-Aktivität**: zeigt Ereignisse an, die im UI-Thread und/oder Render-Thread aufgetreten sind (beispielsweise DOM-Ereignishandler, Layout).
-   - **Benutzer Measures**: zeigen Sie benutzerdefinierte Ereignisse an, die auf Aufrufe der Performance. Measure ()-Methode hinweisen.
+   - **Image decoding**: Show events which occurred on a background thread (e.g. Image decoding, GC). 
+   - **Network traffic**: Show HTTP requests which were network-bound.
+   - **UI activity**: Show events which occurred on the UI thread and/or render thread (e.g. DOM event handlers, Layout).
+   - **User measures**: Show custom events which indicate calls to the performance.measure() method.
 
-     Sie können Ereignisse auf oberster Ebene weiter nach deren inklusiver Dauer filtern.
+     You can further filter top-level events by their inclusive duration.
 
-### Ereignisliste
+### Event list
 
-Die *Ereignisliste* enthält eine chronologische Liste der [Ereignisse des Browser-Subsystems](#cpu-utilization) , die während der ausgewählten Zeitspanne aufgetreten sind. 
+The *Event list* gives you a chronological list of [browser subsystem events](#cpu-utilization) that occurred during the selected span of time. 
 
-Klicken Sie auf einen beliebigen Eintrag, um das **ausgewählte Ereignisdetail** Diagramm für dieses Element aufzufüllen. Einträge mit geschachtelten Ereignissen/Funktionen zeigen ihre **inklusiven** (Zeit, die die Ausführung der Funktion *und* alle anderen Funktionen, die Sie aufgerufen hat) und **Exclusive** (Zeit, die nur innerhalb des Texts der aufrufenden Funktion selbst verbracht wurde) Zeiten, die im Diagramm angezeigt werden.
+Click on any entry to populate the **Selected event details** chart for that item. Entries with nested events / functions will show their **inclusive** (time spent executing the function *and* any other functions it called) and **exclusive** (time spent only within the body of the calling function itself) times displayed in the chart.
 
-Klicken Sie mit der rechten Maustaste auf einen beliebigen Eintrag, um das Kontextmenü zu öffnen, um die Zeitachse auf dieses Ereignis zu filtern, und zeigen Sie den für [**Elements**](./elements.md) das Ereignis Verantwortlichen Quellcode im [**Debugger**](./debugger.md) an (falls zutreffend).
+Right-click on any entry to open the context menu to filter the timeline to only that event and view the source code responsible for the event in the [**Debugger**](./debugger.md) (or [**Elements**](./elements.md) panel, if applicable).
 
-### Ausgewählte Zeitachsen Details
+### Selected timeline details
 
-Die *Details der ausgewählten Zeitachse* enthalten eine detaillierte Balkengrafik der inklusiven/exklusiven Veranstaltungszeiten während der ausgewählten Zeitspanne. Wenn Sie nach *Dauer (einschließlich)* mithilfe des **Ereignislisten-Sortier Steuerelements**sortieren, werden die am längsten ausgeführten Ereignisse in diesem Diagramm visuell hervorgehoben. 
+The *Selected timeline details* provides a detailed bar graph of inclusive/exclusive event times during the selected time span. When you sort by *Duration (inclusive)* using the **Event list sort control**, the longest running events will visually stand out in this chart. 
 
-### Ausgewählte Ereignisdetails
+### Selected event details
 
-Dieser Bericht enthält weitere Informationen zu dem ausgewählten Ereignis, einschließlich *Startzeit*, dem ausgeführten Threadtyp (beispielsweise *Download*, *UI*, *Render*) und anderen kontextbezogenen Details, die für den jeweiligen Ereignistyp spezifisch sind. *Ereignislistener* -Typen bieten beispielsweise Debugger-Links zur *Rückruffunktion* und zur *Terminplan Aufrufliste*.
+This report provides further information about the selected event, including *Start time*, the executing thread type (for example, *Download*, *UI*, *Render*), and other contextual details specific to the specific event type. For example, *Event listener* types provide debugger links to the *Callback function* and *Scheduling call stack*.
 
-## JavaScript-Anruflisten
+## JavaScript call stacks
 
-![Leistungsanzeige dauern für JavaScript-Anruflisten](./media/performance_details_javascript.png)
+![Performance timings for JavaScript call stacks](./media/performance_details_javascript.png)
 
-Die Registerkarte " **JavaScript-Anruflisten** " bietet Informationen zur CPU-Nutzung und die Anzeigedauer für die Skriptfunktionen, die während des ausgewählten Zeitbereichs ausgeführt wurden:
+The **JavaScript call stacks** tab provides CPU usage information and timings for the script functions that ran during the selected time range:
 
- Spalte | Beschreibung
+ Column | Description
 :------------ | :-------------
-Funktionsname | Name des Browsers oder benutzerdefinierte Funktion.
-Inklusive CPU (%) | Prozentsatz der ausgewählten CPU-Aktivität in dieser Funktion und in Funktionen, die von dieser Funktion aufgerufen werden.
-Exklusive CPU (%) | Prozentsatz der ausgewählten CPU-Aktivität in dieser Funktion, ohne Aktivität in Funktionen, die von dieser Funktion aufgerufen werden.
-Inklusive CPU (MS) | CPU-Zeit für die Ausführung von Code in dieser Funktion und in Funktionen, die von dieser Funktion aufgerufen werden.
-Exklusive CPU (MS) | CPU-Zeit für die Ausführung von Code in dieser Funktion, mit Ausnahme der Zeit in Funktionen, die von dieser Funktion aufgerufen werden.
-URL | URL (s), in dem Stapelrahmen aufgetreten ist. Funktionsaufrufe, die vom Browser (auf Standards basierende Web-APIs) stammen, werden als *[DOM]* bezeichnet.
+Function name | Name of browser or user-defined function.
+Inclusive CPU (%) | Percentage of selected CPU activity in this function and in functions called by this function.
+Exclusive CPU (%) | Percentage of selected CPU activity in this function, excluding activity in functions called by this function.
+Inclusive CPU (ms) | CPU time spent executing code in this function and in functions called by this function.
+Exclusive CPU (ms) | CPU time spent executing code in this function, excluding time in functions called by this function.
+URL | URL(s) where stack frame occurred. Function calls originating from the browser (standards-based web APIs) are labeled as *[DOM]*.
 
-## Kombinationen
+## Shortcuts
 
-| Aktion                         | Tastenkombination     |
+| Action                         | Shortcut     |
 |:-------------------------------|:-------------|
-| Starten/Beenden der Profilerstellungssitzung | `Ctrl` + `E` |
-| Profilerstellungssitzung importieren       | `Ctrl` + `O` |
-| Profilerstellungssitzung exportieren       | `Ctrl` + `S` |
+| Start / Stop profiling session | `Ctrl` + `E` |
+| Import profiling session       | `Ctrl` + `O` |
+| Export profiling session       | `Ctrl` + `S` |
 
-## Bekannte Probleme
+## Known Issues
 
-### Beim Starten der Profilerstellungssitzung ist ein Fehler aufgetreten.
+### An error occurred while starting the profiling session
 
-Wenn diese Fehlermeldung angezeigt wird: **beim Starten der Profilerstellungssitzung im Leistungstool ist ein Fehler aufgetreten** , führen Sie die folgenden Schritte aus, um eine Problemumgehung zu erhalten.
+If you see this error message: **An error occurred while starting the profiling session** in the Performance tool, follow these steps for a workaround.
 
-1. Drücken Sie `Windows Key`  +  `R` .
+1. Press `Windows Key` + `R`.
 
-2. Geben Sie im Dialogfeld Ausführen den **Dienst "Services. msc**" ein.
-![Bekannte Probleme-1](./media/known_issues_1.PNG)
+2. In the Run dialog, enter **services.msc**.
+![known-issues-1](./media/known_issues_1.PNG)
 
-3. Suchen Sie den **Microsoft (R) Diagnostics Hub Standard-Kollektor Dienst** , und klicken Sie mit der rechten Maustaste darauf.
-![Bekannte Probleme-2](./media/known_issues_2.PNG)
+3. Locate the **Microsoft (R) Diagnostics Hub Standard Collector Service** and right-click it.
+![known-issues-2](./media/known_issues_2.PNG)
 
-4. Starten Sie den **Microsoft (R) Diagnostics Hub Standard-Kollektor Dienst**erneut.
-![Bekannte Probleme-3](./media/known_issues_3.PNG)
+4. Restart the **Microsoft (R) Diagnostics Hub Standard Collector Service**.
+![known-issues-3](./media/known_issues_3.PNG)
 
-5. Schließen Sie die Microsoft Edge-Entwickler Tools und die Registerkarte. Öffnen Sie eine neue Registerkarte, navigieren Sie zu Ihrer Seite, und drücken Sie `F12` .
+5. Close the Microsoft Edge Developer Tools and the tab. Open a new tab, navigate to your page, and press `F12`.
 
-6. Sie sollten jetzt in der Lage sein, mit der Profilerstellung zu beginnen.
-![Bekannte Probleme-4](./media/known_issues_4-performance.PNG)
+6. You should now be able to begin profiling.
+![known-issues-4](./media/known_issues_4-performance.PNG)
 
-Gibt es immer noch Probleme? Senden Sie uns Ihr Feedback über das Symbol **Feedback senden** ! 
+Still running into problems? Please send us your feedback using the **Send feedback** icon! 
 
-![Bekannte Probleme-5](./media/known_issues_5.PNG)
+![known-issues-5](./media/known_issues_5.PNG)
 
-### Beim Beenden der Profilerstellungssitzung ist ein Fehler aufgetreten.
+### An error occurred while stopping the profiling session.
 
-Wenn diese Fehlermeldung angezeigt wird: **beim Beenden der Profilerstellungssitzung im Leistungstool ist ein Fehler aufgetreten** , führen Sie die folgenden Schritte aus, um eine Problemumgehung zu erhalten.
+If you see this error message: **An error occurred while stopping the profiling session** in the Performance tool, follow these steps for a workaround.
 
-1. Drücken Sie `Windows Key`  +  `R` .
+1. Press `Windows Key` + `R`.
 
-2. Geben Sie im Dialogfeld Ausführen den **Dienst "Services. msc**" ein.
-![Bekannte Probleme-1](./media/known_issues_1.PNG)
+2. In the Run dialog, enter **services.msc**.
+![known-issues-1](./media/known_issues_1.PNG)
 
-3. Suchen Sie den **Microsoft (R) Diagnostics Hub Standard-Kollektor Dienst** , und klicken Sie mit der rechten Maustaste darauf.
-![Bekannte Probleme-2](./media/known_issues_2.PNG)
+3. Locate the **Microsoft (R) Diagnostics Hub Standard Collector Service** and right-click it.
+![known-issues-2](./media/known_issues_2.PNG)
 
-4. Starten Sie den **Microsoft (R) Diagnostics Hub Standard-Kollektor Dienst**erneut.
-![Bekannte Probleme-3](./media/known_issues_3.PNG)
+4. Restart the **Microsoft (R) Diagnostics Hub Standard Collector Service**.
+![known-issues-3](./media/known_issues_3.PNG)
 
-5. Schließen Sie die Microsoft Edge-Entwickler Tools und die Registerkarte. Öffnen Sie eine neue Registerkarte, navigieren Sie zu Ihrer Seite, und drücken Sie `F12` .
+5. Close the Microsoft Edge Developer Tools and the tab. Open a new tab, navigate to your page, and press `F12`.
 
-6. Sie sollten jetzt in der Lage sein, mit der Profilerstellung zu beginnen.
-![Bekannte Probleme-4](./media/known_issues_4-performance.PNG)
+6. You should now be able to begin profiling.
+![known-issues-4](./media/known_issues_4-performance.PNG)
 
-Gibt es immer noch Probleme? Senden Sie uns Ihr Feedback über das Symbol **Feedback senden** ! 
+Still running into problems? Please send us your feedback using the **Send feedback** icon! 
 
-![Bekannte Probleme-5](./media/known_issues_5.PNG)
+![known-issues-5](./media/known_issues_5.PNG)

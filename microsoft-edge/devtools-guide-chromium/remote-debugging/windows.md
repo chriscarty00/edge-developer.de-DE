@@ -1,11 +1,11 @@
 ---
-title: Erste Schritte mit dem Remote Debuggen von Windows 10-Geräten
+title: Get Started with Remote Debugging Windows 10 Devices
 author: zoherghadyali
 ms.author: zoghadya
 ms.date: 03/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools, Remote, Debuggen, Windows 10, Windows, Device Portal
+keywords: microsoft edge, web development, f12 tools, devtools, remote, debugging, windows 10, windows, device portal
 ms.openlocfilehash: b944e1f16d4c26f4db83e3eb131f1da8ea938c97
 ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
 ms.translationtype: MT
@@ -13,149 +13,149 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "10567696"
 ---
-# Erste Schritte mit dem Remote Debuggen von Windows 10-Geräten  
+# Get Started with Remote Debugging Windows 10 Devices  
 
-Remote Debuggen von Liveinhalten auf einem Windows 10-Gerät von Ihrem Windows-oder macOS-Computer aus.  In diesem Lernprogramm lernen Sie, wie Sie:  
+Remote debug live content on a Windows 10 device from your Windows or macOS computer.  This tutorial teaches you how to:  
 
-*   Richten Sie Ihr Windows 10-Gerät für das Remotedebuggen ein, und stellen Sie von Ihrem Entwicklungscomputer aus eine Verbindung her.  
-*   Überprüfen und Debuggen Sie Liveinhalte auf Ihrem Windows 10-Gerät von Ihrem Entwicklungscomputer.  
-*   Screencast-Inhalte von Ihrem Windows 10-Gerät auf eine devtools-Instanz auf Ihrem Entwicklungscomputer.  
+*   Set up your Windows 10 device for remote debugging and connect to it from your development machine.  
+*   Inspect and debug live content on your Windows 10 device from your development machine.  
+*   Screencast content from your Windows 10 device onto a DevTools instance on your development machine.  
 
-## Schritt 1: Einrichten des Hosts (zu debuggender Computer)  
+## Step 1: Set up the host (debuggee machine)  
 
-Der Host-oder zu debuggende Computer ist das Windows 10-Gerät, das gedebuggt werden soll.  Es kann sich um ein Remotegerät handeln, das für Sie schwer physisch zugänglich ist, oder es ist möglicherweise nicht mit Tastatur-und Maus Peripheriegeräten ausgestattet, wodurch es schwierig ist, mit dem Microsoft Edge-devtools auf diesem Gerät zu interagieren.  Zum Einrichten des Hostcomputers (zu debuggende Komponente) müssen Sie Folgendes ausführen:  
+The host or debuggee machine is the Windows 10 device that you want to debug.  It may be a remote device that is hard for you to physically access or it may not have keyboard and mouse peripherals, making it difficult to interact with the Microsoft Edge DevTools on that device.  To set up the host (debuggee) machine, you will need to:  
 
-*   Installieren und Konfigurieren von [Microsoft Edge (Chrom)](https://www.microsoft.com/edge)  
-*   Installieren der [Remote Tools für Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) aus dem [Microsoft Store](https://www.microsoft.com/store/apps/windows)  
-*   Aktivieren des [Entwicklermodus](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development) und Aktivieren des [Geräte Portals](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal)  
+*   Install and configure [Microsoft Edge (Chromium)](https://www.microsoft.com/edge)  
+*   Install the [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) from the [Microsoft Store](https://www.microsoft.com/store/apps/windows)  
+*   Activate [Developer Mode](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development) and enable [Device Portal](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal)  
 
-### Installieren und Konfigurieren von Microsoft Edge (Chrom)  
+### Install and configure Microsoft Edge (Chromium)  
 
-Wenn Sie dies noch nicht getan haben, installieren Sie Microsoft Edge (Chrom) auf [dieser Seite](https://www.microsoft.com/edge).  Wenn Sie eine vorinstallierte Version von Microsoft Edge auf dem Hostcomputer verwenden, überprüfen Sie, ob Microsoft Edge (Chrom) und nicht Microsoft Edge (EdgeHTML) installiert ist.  Eine schnelle Möglichkeit zur Überprüfung besteht darin, `edge://settings/help` im Browser zu laden und zu bestätigen, dass die Versionsnummer 75 oder höher ist.  
+If you haven't already, install Microsoft Edge (Chromium) from [this page](https://www.microsoft.com/edge).  If you are using a pre-installed version of Microsoft Edge on the host (debuggee) machine, verify that you have Microsoft Edge (Chromium) and not Microsoft Edge (EdgeHTML).  A quick way to check is to load `edge://settings/help` in the browser and confirm that the version number is 75 or higher.  
 
-Navigieren Sie nun zu `edge://flags` in Microsoft Edge (Chrom).  Geben Sie in **Such Kennzeichnungen**unter **Aktivieren des Remotedebuggens über das Windows Device Portal**ein.  Setzen Sie dieses Flag auf **Enabled**.  Klicken Sie dann auf die Schaltfläche **Neustart** , um Microsoft Edge (Chrom) neu zu starten.  
+Now navigate to `edge://flags` in Microsoft Edge (Chromium).  In **Search flags**, type in **Enable remote debugging through Windows Device Portal**.  Set that flag to **Enabled**.  Then, click the **Restart** button to restart Microsoft Edge (Chromium).  
 
-> ##### Abbildung1  
-> Festlegen des Flags " **Remotedebuggen über das Windows-Geräte Portal aktivieren** " auf " **aktiviert** "  
-> ![Festlegen des Flags "Remotedebuggen über das Windows-Geräte Portal aktivieren" auf "aktiviert"](./windows-media/edge-flags-on-host.png)  
+> ##### Figure 1  
+> Setting the **Enable remote debugging through Windows Device Portal** flag to **Enabled**  
+> ![Setting the Enable remote debugging through Windows Device Portal flag to Enabled](./windows-media/edge-flags-on-host.png)  
 
-### Installieren der Remote Tools für Microsoft Edge (Beta)  
+### Install the Remote Tools for Microsoft Edge (Beta)  
 
-Installieren Sie die [Remote Tools für Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) aus dem [Microsoft Store](https://www.microsoft.com/store/apps/windows).  
-
-> [!NOTE]
-> Die Schaltfläche " **Abrufen** " für die [Remote Tools für Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) ist möglicherweise deaktiviert, wenn Sie unter Windows 10, Version 1809 oder früher, arbeiten.  Zum Einrichten des Hostcomputers (zu Debuggen) muss Windows 10, Version 1903 oder höher, ausgeführt werden.  Aktualisieren Sie den Hostcomputer, um die [Remote Tools für Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT)zu erwerben.  
-
-> ##### Abbildung2  
-> [Remote Tools für Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) im [Microsoft Store](https://www.microsoft.com/store/apps/windows)  
-> ![Remote Tools für Microsoft Edge (Beta) im Microsoft Store](./windows-media/remote-tools-in-store.png)  
-
-Starten Sie die [Remote Tools für Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) , und akzeptieren Sie, wenn Sie dazu aufgefordert werden, das Dialogfeld Berechtigungen in der app. Sie können nun die [Remote Tools für Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) schließen, und Sie müssen Sie nicht für zukünftige Remote Debugging-Sitzungen öffnen.
-
-### Aktivieren des Entwicklermodus und Aktivieren des Geräte Portals  
-
-Wenn Sie ein WLAN-Netzwerk haben, stellen Sie sicher, dass das Netzwerk entweder als " **Domäne** " oder " **Privat**" gekennzeichnet ist.  Sie können dies überprüfen, indem Sie die **Windows-Sicherheits** -APP öffnen, auf **Firewall & Netzwerkschutz** klicken und überprüfen, ob Ihr Netzwerk als **Domänen** Netzwerk oder **privates** Netzwerk aufgeführt ist.  
-
-Wenn Sie als **öffentlich**aufgeführt ist, wechseln Sie zu **Einstellungen**  >  **Netzwerk & Internet**  >  **Wi-Fi**, klicken Sie auf Ihr Netzwerk und schalten Sie die Schaltfläche **Netzwerkprofil** auf **Privat**.  
-
-Öffnen Sie nun die **Einstellungs** -app.  Geben Sie unter **Suchen einer Einstellung die** **Entwicklereinstellungen** ein, und wählen Sie Sie aus.  Wechseln Sie im **Entwicklermodus**.  Sie können nun **Device Portal** aktivieren, indem Sie die **Remote Diagnose über lokale Netzwerkverbindungen** auf **ein**aktivieren.  Sie können die **Authentifizierung** dann optional aktivieren, damit das Client-Gerät (Debugger) die richtigen Anmeldeinformationen für die Verbindung mit diesem Gerät bereitstellen muss.  
+Install the [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) from the [Microsoft Store](https://www.microsoft.com/store/apps/windows).  
 
 > [!NOTE]
-> Wenn **Sie die Remote Diagnose über LAN-Netzwerkverbindungen aktivieren.** zuvor aktiviert war, müssen Sie Sie deaktivieren und wieder aktivieren, damit **Device Portal** mit den [Remote Tools für Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT)funktioniert. Wenn der Abschnitt " **für Entwickler** " in " **Einstellungen**" nicht angezeigt wird, ist das **Geräte Portal** möglicherweise bereits aktiviert, daher sollten Sie stattdessen das Windows 10-Gerät neu starten.
+> The **Get** button for the [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) may be disabled if you are on Windows 10 version 1809 or earlier.  To set up the host (debuggee) machine, it must be running Windows 10 version 1903 or later.  Update the host (debuggee) machine to acquire the [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT).  
 
-> ##### Abbildung 3  
-> Die **Einstellungs** -App mit dem **Entwicklermodus** und dem **Geräte Portal** konfiguriert  
-> ![Die Einstellungs-APP mit dem Entwicklermodus und dem Geräte Portal konfiguriert](./windows-media/host-settings.png)  
+> ##### Figure 2  
+> The [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) in the [Microsoft Store](https://www.microsoft.com/store/apps/windows)  
+> ![The Remote Tools for Microsoft Edge (Beta) in the Microsoft Store](./windows-media/remote-tools-in-store.png)  
 
-Notieren Sie sich die IP-Adresse des Computers und den Verbindungsanschluss, die unter **Connect using:** angezeigt werden.  Die IP-Adresse in der folgenden Abbildung ist `192.168.86.78` und der Verbindungsanschluss `50080` .  
+Launch the [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) and, if prompted, accept the permissions dialog in the app. You are now able to close the [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) and you do not need to have it open for future remote debugging sessions.
 
-> ##### Abbildung4  
-> Notieren Sie sich die IP-Adresse und den Verbindungsanschluss in den **Einstellungen** .  
-> ![Notieren Sie sich die IP-Adresse und den Verbindungsanschluss in den Einstellungen.](./windows-media/host-settings-ip-address.png)  
+### Activate Developer Mode and enable Device Portal  
 
-Diese Informationen werden im [nächsten Abschnitt](#step-2-set-up-the-client-debugger-machine)auf dem Clientgerät (Debugger) eingegeben.  Öffnen Sie Registerkarten in Microsoft Edge und [Progressive Web Apps (PWAs)](../progressive-web-apps.md) auf dem Hostcomputer, den Sie auf dem Clientcomputer (Debugger) debuggen möchten.  
+If you're on a WiFi network, ensure the network is marked as either **Domain** or **Private**.  You can verify this by opening the **Windows Security** app, clicking on **Firewall & network protection** and checking if your network is listed as a **Domain** network or **Private** network.  
 
-## Schritt 2: Einrichten des Clients (Debugger-Computer)  
+If it's listed as **Public**, go to **Settings** > **Network & Internet** > **Wi-Fi**, click on your network and toggle the **Network profile** button to **Private**.  
 
-Der Client-oder Debugger-Computer ist das Gerät, von dem Sie debuggen möchten.  Dieses Gerät kann Ihr täglicher Entwicklungscomputer sein, oder es kann nur Ihr PC oder MacBook sein, wenn Sie von zu Hause aus arbeiten.  
-
-Wenn Sie den Client-Computer (Debugger) einrichten möchten, installieren Sie Microsoft Edge (Chrom) auf [dieser Seite](https://www.microsoft.com/edge) , falls Sie dies noch nicht getan haben.  Wenn Sie eine vorinstallierte Version von Microsoft Edge auf dem Hostcomputer verwenden, überprüfen Sie, ob Microsoft Edge (Chrom) und nicht Microsoft Edge (EdgeHTML) installiert ist.  Eine schnelle Möglichkeit zur Überprüfung besteht darin, `edge://settings/help` im Browser zu laden und zu bestätigen, dass die Versionsnummer 75 oder höher ist.  
-
-Navigieren Sie nun zu `edge://flags` in Microsoft Edge (Chrom).  Geben Sie in **Such Kennzeichnungen**das **Debuggen von Remote-Windows-Geräten in Edge://Inspect aktivieren**ein.  Setzen Sie dieses Flag auf **Enabled**.  Klicken Sie dann auf die Schaltfläche **Neustart** , um Microsoft Edge (Chrom) neu zu starten.  
-
-> ##### Abbildung5  
-> Festlegen **der Option "** **Remote-Windows-Geräte Debuggen durch Edge://Inspect aktivieren** "  
-> ![Festlegen der Option "Remote-Windows-Geräte Debuggen durch Edge://Inspect aktivieren"](./windows-media/edge-flags-on-client.png)  
-
-Navigieren Sie nun zu der `edge://inspect` Seite in Microsoft Edge (Chrom).  Standardmäßig sollten Sie sich im Abschnitt **Devices** befinden.  Geben Sie unter **Herstellen einer Verbindung mit einem Windows-Remotegerät**die IP-Adresse und den Verbindungs Port des Rechners (zu debuggende Komponente) im Textfeld nach diesem Muster ein: http:// `IP address` : `connection port` .  Klicken Sie nun auf **mit Gerät verbinden**.  
-
-> ##### Abbildung6  
-> Die `edge://inspect` Seite auf dem Client  
-> ![Die Seite "Edge://Inspect" auf dem Client](./windows-media/edge-inspect.png)  
-
-Wenn Sie die Authentifizierung für den Computer "Host (gedebuggt)" einrichten, werden Sie aufgefordert, den **Benutzernamen** und das **Kennwort** für den Clientcomputer (Debugger) einzugeben, um eine Verbindung herzustellen.  
-
-### Verwenden von HTTPS anstelle von http  
-
-Wenn Sie eine Verbindung mit dem Host-Computer (gedebuggt) herstellen möchten `https` , der anstelle von verwendet `http` wird, müssen Sie `http://IP address:50080/config/rootcertificate` in Microsoft Edge auf dem Clientcomputer (Debugger) navgiate. Dadurch wird automatisch ein Sicherheitszertifikat mit dem Namen heruntergeladen `rootcertificate.cer` .
-
-Klicken Sie auf `rootcertificate.cer` . Dadurch wird das [Windows-Zertifikat-Manager-Tool](https://docs.microsoft.com/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in#view-certificates-with-the-certificate-manager-tool)geöffnet.
-
-Klicken Sie auf **Zertifikat installieren...**, stellen Sie sicher, dass der **aktuelle Benutzer** ausgewählt ist, und klicken Sie auf **weiter**. Wählen Sie jetzt **alle Zertifikate in folgendem Speicher speichern** aus, und klicken Sie auf **Durchsuchen.**... Wählen Sie den Speicher **vertrauenswürdiger Stammzertifizierungsstellen** aus, und klicken Sie auf **OK**. Klicken Sie auf **Weiter** und anschließend auf **Fertig stellen**. Wenn Sie dazu aufgefordert werden, vergewissern Sie sich, dass Sie das Zertifikat im Speicher der **vertrauenswürdigen Stammzertifizierungsstellen** installieren möchten.
-
-Beim Herstellen einer Verbindung mit dem Hostcomputer (Debuggen) vom Client (Debugger)-Computer, auf dem sich die `edge://inspect` Seite befindet, müssen Sie nun einen anderen `connection port` Wert verwenden.  Standardmäßig wird für Desktopfenster das Geräte Portal `50080` als `connection port` für verwendet `http` .  `https`Das Device-Portal verwendet also das folgende `50043` Muster: https:// `IP address` : `50043` auf der `edge://inspect` Seite.  [Weitere Informationen zu den Standardanschlüssen, die von Device Portal verwendet werden](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal#setup).  
+Now, open the **Settings** app.  In **Find a setting**, enter **Developer settings** and select it.  Toggle on **Developer Mode**.  You can now enable **Device Portal** by setting **Turn on remote diagnostics over local area network connections** to **On**.  You may then optionally turn **Authentication** on so that the client (debugger) device must provide the correct credentials to connect to this device.  
 
 > [!NOTE]
-> Der Standardport für `http` is `50080` und der Standardport für `https` ist, `50043` aber dies ist nicht immer der Fall, da Device Portal on Desktop Ansprüche an Ports im ephemeren Bereich (>50.000), um Kollisionen mit vorhandenen Port Ansprüchen auf dem Gerät zu verhindern.  Weitere Informationen finden Sie im Abschnitt [Port Einstellungen](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-desktop#registry-based-configuration-for-device-portal) für Device Portal auf dem Windows-Desktop.  
+> If **Turn on remote diagnostics over local area network connections.** was previously enabled, you must disable it and enable it again for **Device Portal** to work with the [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT). If you do not see a **For developers** section in **Settings**, **Device Portal** may already be enabled so try restarting the Windows 10 device instead.
 
-## Schritt 3: Debuggen des Inhalts auf dem Host vom Client  
+> ##### Figure 3  
+> The **Settings** app with **Developer Mode** and **Device Portal** configured  
+> ![The Settings app with Developer Mode and Device Portal configured](./windows-media/host-settings.png)  
 
-Wenn der Client (Debugger)-Computer erfolgreich eine Verbindung mit dem Hostcomputer herstellt (zu Debuggen), `edge://inspect` wird auf der Seite auf dem Client nun eine Liste der Registerkarten in Microsoft Edge und alle geöffneten PWAs auf dem Host angezeigt.  
+Note the machine IP address and connection port displayed under **Connect using:**.  The IP address in the image below is `192.168.86.78` and the connection port is `50080`.  
 
-> ##### Abbildung7  
-> Auf der `edge://inspect` Seite auf dem Client werden die Registerkarten in Microsoft Edge und PWAs auf dem Host angezeigt.  
-> ![Auf der Edge://Inspect-Seite auf dem Client werden die Registerkarten in Microsoft Edge und PWAs auf dem Host angezeigt.](./windows-media/edge-inspect-connected.png)  
+> ##### Figure 4  
+> Note the IP address and connection port in the **Settings**  
+> ![Note the IP address and connection port in the Settings](./windows-media/host-settings-ip-address.png)  
 
-Ermitteln Sie den Inhalt, den Sie debuggen möchten, und klicken Sie auf über **prüfen**.  Die Microsoft Edge-devtools wird auf einer neuen Registerkarte geöffnet, und der Inhalt wird vom Hostcomputer (gedebuggt) an den Clientcomputer (Debugger) überarbeitet.  Sie können jetzt die volle Leistung des Microsoft Edge-devtools auf dem Client für Inhalte verwenden, die auf dem Host ausgeführt werden.  Weitere Informationen zur Verwendung des Microsoft Edge-devtools [finden Sie hier](../../devtools-guide-chromium.md).  
+You will enter this information on the client (debugger) device in the [next section](#step-2-set-up-the-client-debugger-machine).  Open tabs in Microsoft Edge and [Progressive Web Apps (PWAs)](../progressive-web-apps.md) on the host (debuggee) machine that you would like to debug from the client (debugger) machine.  
 
-> ##### Abbildung8  
-> Die [Microsoft Edge-devtools](../../devtools-guide-chromium.md) auf dem Clientdebuggen einer Registerkarte in Microsoft Edge auf dem Host  
-> ![Die Microsoft Edge-devtools auf dem Clientdebuggen einer Registerkarte in Microsoft Edge auf dem Host](./windows-media/devtools-client.png)  
+## Step 2: Set up the client (debugger machine)  
 
-### Überprüfen von Elementen  
+The client or debugger machine is the device you want to debug from.  This device may be your daily development machine or it may just be your PC or MacBook when working from home.  
 
-Versuchen Sie beispielsweise, ein Element zu überprüfen.  Wechseln **Sie zum Element Panel der** devtools-Instanz auf dem Client, und zeigen Sie auf ein Element, um es im Viewport des Hostgeräts zu markieren.  
+To set up the client (debugger) machine, install Microsoft Edge (Chromium) from [this page](https://www.microsoft.com/edge) if you haven't already.  If you are using a pre-installed version of Microsoft Edge on the host (debuggee) machine, verify that you have Microsoft Edge (Chromium) and not Microsoft Edge (EdgeHTML).  A quick way to check is to load `edge://settings/help` in the browser and confirm that the version number is 75 or higher.  
 
-Sie können auch auf dem Bildschirm Ihres Hostgeräts auf ein Element tippen, um es im Bereich **Elemente** auszuwählen.  Klicken Sie auf der devtools-Instanz auf dem Client auf **Element auswählen** , und tippen Sie dann auf dem Bildschirm Ihres Hostgeräts auf das Element.  Beachten Sie, dass **SELECT-Element** nach dem ersten tippen deaktiviert ist, sodass Sie es jedes Mal wieder aktivieren müssen, wenn Sie dieses Feature verwenden möchten.  
+Now navigate to `edge://flags` in Microsoft Edge (Chromium).  In **Search flags**, type in **Enable remote Windows device debugging in edge://inspect**.  Set that flag to **Enabled**.  Then, click the **Restart** button to restart Microsoft Edge (Chromium).  
+
+> ##### Figure 5  
+> Setting the **Enable remote Windows device debugging through edge://inspect** flag to **Enabled**  
+> ![Setting the Enable remote Windows device debugging through edge://inspect flag to Enabled](./windows-media/edge-flags-on-client.png)  
+
+Now navigate to the `edge://inspect` page in Microsoft Edge (Chromium).  By default, you should be on the **Devices** section.  Under **Connect to a remote Windows device**, enter the IP address and the connection port of the host (debuggee) machine in the textbox following this pattern: http://`IP address`:`connection port`.  Now click **Connect to Device**.  
+
+> ##### Figure 6  
+> The `edge://inspect` page on the client  
+> ![The edge://inspect page on the client](./windows-media/edge-inspect.png)  
+
+If you set up authentication for the host (debuggee) machine, you will be prompted to enter the **Username** and **Password** for the client (debugger) machine to connect successfully.  
+
+### Using https instead of http  
+
+If you want to connect to the host (debuggee) machine using `https` instead of `http`, you must navgiate to `http://IP address:50080/config/rootcertificate` in Microsoft Edge on the client (debugger) machine. This will automatically download a security certificate named `rootcertificate.cer`.
+
+Click on `rootcertificate.cer`. This will open the [Windows Certificate Manager tool](https://docs.microsoft.com/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in#view-certificates-with-the-certificate-manager-tool).
+
+Click **Install certificate...**, ensure that **Current User** is selected, and click **Next**. Now select **Place all certificates in the following store** and click **Browse...**. Select the **Trusted Root Certification Authorities** store and click **OK**. Click **Next** and then click **Finish**. If prompted, confirm that you want to install this certificate to the **Trusted Root Certification Authorities** store.
+
+Now, when connecting to the host (debuggee) machine from the client (debugger) machine using the `edge://inspect` page, you must use a different `connection port` value.  By default, for desktop Windows, the Device Portal will use `50080` as the `connection port` for `http`.  For `https`, the Device Portal uses `50043` so follow this pattern: https://`IP address`:`50043` on the `edge://inspect` page.  [Read more about the default ports used by Device Portal](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal#setup).  
+
+> [!NOTE]
+> The default port for `http` is `50080` and the default port for `https` is `50043` but this is not always the case as Device Portal on desktop claims ports in the ephemeral range (>50,000) to prevent collisions with existing port claims on the device.  To learn more, see the [Port Settings](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-desktop#registry-based-configuration-for-device-portal) section for Device Portal on Windows desktop.  
+
+## Step 3: Debug content on the host from the client  
+
+If the client (debugger) machine successfully connects to the host (debuggee) machine, the `edge://inspect` page on the client will now display a list of the tabs in Microsoft Edge and any open PWAs on the host.  
+
+> ##### Figure 7  
+> The `edge://inspect` page on the client displays the tabs in Microsoft Edge and PWAs on the host  
+> ![The edge://inspect page on the client displays the tabs in Microsoft Edge and PWAs on the host](./windows-media/edge-inspect-connected.png)  
+
+Determine the content you want to debug and click **inspect**.  The Microsoft Edge DevTools will open in a new tab and screencast the content from the host (debuggee) machine to the client (debugger) machine.  You are now able to use the full power of the Microsoft Edge DevTools on the client for content running on the host.  Learn more about how to use the Microsoft Edge DevTools [here](../../devtools-guide-chromium.md).  
+
+> ##### Figure 8  
+> The [Microsoft Edge DevTools](../../devtools-guide-chromium.md) on the client debugging a tab in Microsoft Edge on the host  
+> ![The Microsoft Edge DevTools on the client debugging a tab in Microsoft Edge on the host](./windows-media/devtools-client.png)  
+
+### Inspect elements  
+
+For example, try inspecting an element.  Go to the **Elements** panel of your DevTools instance on the client, and hover over an element to highlight it in the viewport of the host device.  
+
+You may also tap an element on your host device screen to select it in the **Elements** panel.  Click **Select Element** on your DevTools instance on the client, and then tap the element on your host device screen.  Note that **Select Element** is disabled after the first touch, so you need to re-enable it every time you want to use this feature.  
 
 > [!IMPORTANT]
-> Der Bereich " **Ereignislistener** " im **Element** Bereich ist in Windows 10, Version 1903, leer.  Dies ist ein bekanntes Problem, und wir werden den Bereich **Ereignislistener** in einem Wartungsupdate auf Windows 10, Version 1903, beheben.  
+> The **Event Listeners** pane in the **Elements** panel is blank on Windows 10 version 1903.  This is a known issue and we will fix the **Event Listeners** pane in a servicing update to Windows 10 version 1903.  
 
-## Schritt 4: Screencast Ihres Host Bildschirms auf Ihr Clientgerät  
+## Step 4: Screencast your host screen to your client device  
 
-Standardmäßig wird für die devtools-Instanz auf dem Client Screencasting aktiviert, sodass Sie den Inhalt auf dem Host Gerät in ihrer devtools-Instanz auf dem Clientgerät anzeigen können.  Klicken Sie auf **Screencast umschalten** , um dieses Feature zu deaktivieren oder zu deaktivieren.  
+By default, the DevTools instance on the client will have screencasting toggled on, which enables you to view the content on the host device in your DevTools instance on your client device.  Click **Toggle Screencast** to turn off or on this feature.  
 
-> ##### Abbildung 9  
-> Die Schaltfläche " **Screencast umschalten** " im Microsoft Edge-devtools auf dem Client  
-> ![Die Schaltfläche "Screencast umschalten" im Microsoft Edge-devtools auf dem Client](./windows-media/toggle-screencast.png)  
+> ##### Figure 9  
+> The **Toggle Screencast** button in the Microsoft Edge DevTools on the client  
+> ![The Toggle Screencast button in the Microsoft Edge DevTools on the client](./windows-media/toggle-screencast.png)  
 
-Sie können mit dem Screencast auf verschiedene Arten interagieren:  
-*   Klicks werden in TAPS übersetzt, wobei die richtigen Touch-Ereignisse auf dem Gerät ausgelöst werden.  
-*   Tastenanschläge auf dem Computer werden an das Gerät gesendet.  
-*   Wenn Sie eine Pinch-Geste simulieren möchten, halten Sie `Shift` beim Ziehen gedrückt.  
-*   Verwenden Sie zum Scrollen das Trackpad oder Mausrad, oder werfen Sie den Mauszeiger auf.  
+You are able to interact with the screencast in multiple ways:  
+*   Clicks are translated into taps, firing proper touch events on the device.  
+*   Keystrokes on your computer are sent to the device.  
+*   To simulate a pinch gesture, hold `Shift` while dragging.  
+*   To scroll, use your trackpad or mouse wheel, or fling with your mouse pointer.  
 
-Einige Hinweise zu Screencasts:  
-*   Screencasts zeigen nur Seiteninhalte an.  Transparente Abschnitte des Screencasts stellen Geräteschnittstellen dar, beispielsweise die Microsoft Edge-Adressleiste, die Windows 10-Taskleiste oder die Windows 10-Tastatur.  
-*   Screencasts wirken sich negativ auf die Frame-Raten aus.  Deaktivieren Sie das Screencasting beim Messen von Scrolls oder Animationen, um eine genauere Vorstellung von der Leistung Ihrer Seite zu erhalten.  
-*   Wenn der Bildschirm Ihres Hostgeräts gesperrt wird, wird der Inhalt Ihres Screencasts nicht mehr angezeigt.  Entsperren Sie den Bildschirm Ihres Hostgeräts, um den Screencast automatisch fortzusetzen.  
+Some notes on screencasts:  
+*   Screencasts only display page content.  Transparent portions of the screencast represent device interfaces, such as the Microsoft Edge address bar, the Windows 10 taskbar, or the Windows 10 keyboard.  
+*   Screencasts negatively affect frame rates.  Disable screencasting while measuring scrolls or animations to get a more accurate picture of the performance of your page.  
+*   If your host device screen locks, the content of your screencast disappears.  Unlock your host device screen to automatically resume the screencast.  
 
-## Bekannte Probleme  
+## Known Issues  
 
-Der Bereich " **Ereignislistener** " im **Element** Bereich ist in Windows 10, Version 1903, leer.  Wir werden den Bereich **Ereignislistener** in einem Wartungsupdate auf Windows 10, Version 1903, beheben.  
+The **Event Listeners** pane in the **Elements** panel is blank on Windows 10 version 1903.  We will fix the **Event Listeners** pane in a servicing update to Windows 10 version 1903.  
 
-Der Bereich " **Cookies** " im **Anwendungs** Bereich ist in Windows 10, Version 1903, leer.  Wir werden den Bereich " **Cookies** " in einem Wartungsupdate auf Windows 10, Version 1903, beheben.  
+The **Cookies** pane in the **Application** panel is blank on Windows 10 version 1903.  We will fix the **Cookies** pane in a servicing update to Windows 10 version 1903.  
 
-Der Bereich " **Audits** ", der Bereich " **3D-Ansicht** ", der Abschnitt " **emulierte Geräte** " in " **Einstellungen**" und der Bereich " **Barrierefreiheits Struktur** " im **Element** Panel funktionieren derzeit nicht erwartungsgemäß.  Wir werden diese Tools in einem zukünftigen Update von Microsoft Edge beheben.  
+The **Audits** panel, the **3D View** panel, the **Emulated Devices** section in **Settings**, and the **Accessibility tree** pane in the **Elements** panel are not currently working as expected.  We will fix these tools in a future update of Microsoft Edge.  
 
-Der Datei-Explorer wird beim Remotedebuggen nicht über die devtools im Bereich " **Quellen** " oder im Bereich " **Sicherheit** " gestartet.  Wir werden diese Tools in einem zukünftigen Update von Microsoft Edge beheben.  
+The file explorer will not launch from the DevTools in the **Sources** panel or in the **Security** panel when remote debugging.  We will fix these tools in a future update of Microsoft Edge.  

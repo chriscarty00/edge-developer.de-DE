@@ -1,5 +1,5 @@
 ---
-title: Behandeln von Windows-Runtime-Ereignissen in JavaScript
+title: Handling Windows Runtime Events in JavaScript
 ms.custom: ''
 ms.date: 07/29/2020
 ms.prod: microsoft-edge
@@ -23,11 +23,11 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "10942156"
 ---
-# Behandeln von Windows-Runtime-Ereignissen in JavaScript  
+# Handling Windows Runtime events in JavaScript  
 
 [!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
 
-Windows-Runtime-Ereignisse werden in JavaScript nicht wie in C++ oder .NET Framework auf die gleiche Weise dargestellt.  Es handelt sich nicht um Klassen Eigenschaften, sondern um Zeichenfolgenbezeichner mit \ (Kleinbuchstaben), die an die Klassen `addEventListener` und Methoden übergeben werden `removeEventListener` .  Beispielsweise können Sie einen Ereignishandler für das [GeoLocator. positionelle][UwpWindowsGeolocationGeolocatorDevicesPositionChanged] -Ereignis hinzufügen, indem Sie die Zeichenfolge `positionchanged` an die `Geolocator.addEventListener` Methode übergeben:  
+Windows Runtime events are not represented in the same way in JavaScript as they are in C++ or the .NET Framework.  They are not class properties, but rather are represented as \(lowercase\) string identifiers that are passed to the class's `addEventListener` and `removeEventListener` methods.  For example, you can add an event handler for the [Geolocator.PositionChanged][UwpWindowsGeolocationGeolocatorDevicesPositionChanged] event by passing the string `positionchanged` to the `Geolocator.addEventListener` method:  
 
 ```javascript  
 var locator = new Windows.Devices.Geolocation.Geolocator();
@@ -38,7 +38,7 @@ locator.addEventListener(
     });
 ```  
 
-Sie können auch die `locator.onpositionchanged` Eigenschaft festlegen:  
+You can also set the `locator.onpositionchanged` property:  
 
 ```javascript
 locator.onpositionchanged =
@@ -47,7 +47,7 @@ locator.onpositionchanged =
     };
 ```  
 
-Ein weiterer Unterschied zwischen .NET/C++ und JavaScript ist die Anzahl von Parametern, die von einem Ereignishandler übernommen werden.  In .NET/C++ benötigt ein Handler zwei: den Ereignis Absender und die Ereignisdaten.  In JavaScript sind die beiden als einzelnes `Event` Objekt gebündelt.  Im folgenden Beispiel `ev` enthält der Parameter sowohl den Absender des Ereignisses \ (die `target` Eigenschaft \) als auch die ereignisdateneigenschaften \ (hier nur `position` \).  Die ereignisdateneigenschaften sind diejenigen, die für jedes Ereignis dokumentiert sind.  
+Another difference between .NET/C++ and JavaScript is the number of parameters taken by an event handler.  In .NET/C++, a handler takes two:  the event sender, and the event data.  In JavaScript, the two are bundled as a single `Event` object.  In the following example, the `ev` parameter contains both the sender of the event \(the `target` property\) and the event data properties \(here, just `position`\).  The event data properties are the ones that are documented for each event.  
 
 ```javascript
 function (ev) {
@@ -59,14 +59,14 @@ function (ev) {
 ```  
 
 > [!IMPORTANT]
-> Windows-Runtime-Features stehen für apps, die in Internet Explorer ausgeführt werden, nicht zur Verfügung.  
+> Windows Runtime features are not available for apps that run in Internet Explorer.  
 
-## Weitere Informationen  
+## See also  
 
-[Verwenden der Windows-Runtime in JavaScript][WindowsRuntimeJavascript]  
+[Using the Windows Runtime in JavaScript][WindowsRuntimeJavascript]  
 
  <!-- links -->  
 
-[WindowsRuntimeJavascript]: ./using-the-windows-runtime-in-javascript.md "Verwenden der Windows-Runtime in JavaScript | Microsoft docs"  
+[WindowsRuntimeJavascript]: ./using-the-windows-runtime-in-javascript.md "Using the Windows Runtime in JavaScript | Microsoft Docs"  
 
-[UwpWindowsGeolocationGeolocatorDevicesPositionChanged]: /uwp/api/Windows.Devices.Geolocation.Geolocator#Windows_Devices_Geolocation_Geolocator_PositionChanged "GeoLocator-Klasse | Microsoft docs"  
+[UwpWindowsGeolocationGeolocatorDevicesPositionChanged]: /uwp/api/Windows.Devices.Geolocation.Geolocator#Windows_Devices_Geolocation_Geolocator_PositionChanged "Geolocator Class | Microsoft Docs"  

@@ -1,12 +1,12 @@
 ---
-description: Verwenden Sie den berechneten Bereich, um zu verstehen, wie Ihr CSS auf Seitenelementen überlappt und berechnet.
-title: DevTools – berechnete Elemente
+description: Use the Computed pane to understand how your CSS cascades and computes on page elements
+title: DevTools - Elements - Computed
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 10/10/2017
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools, Elemente, CSS, berechneter Wert, Feld Modell
+keywords: microsoft edge, web development, f12 tools, devtools, elements, css, computed value, box model
 ms.custom: seodec18
 ms.openlocfilehash: c7b1b7c86f30e6947442c9b3d0e8856074ce4c8e
 ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
@@ -15,12 +15,12 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "10568415"
 ---
-# Berechnet
+# Computed
 
-Sehen Sie sich ein Feld Modell Diagramm (Breite, Abstand, Rahmen, Rand-und Versatzwerte) des ausgewählten Elements an. Wenn Sie das **Element Hervorhebungs** Tool () aktivieren `Ctrl+Shift+L` , werden die gleichen farbigen Bereiche im Diagramm (für Breite, Abstand usw.) angezeigt, die das gerenderte Element überlagern, wenn Sie es auf dem Zeichenblatt auswählen. Sie können einen beliebigen Wert im Diagramm bearbeiten, indem Sie darauf klicken. 
+See a box model diagram (width, padding, border, margin and offset values) of the selected element. If you turn on the **Element highlighting** tool (`Ctrl+Shift+L`), the same colored regions in the diagram (for width, padding, etc.) that will overlay the rendered element when you select it on the page. You can edit any value in the diagram by clicking it. 
 
-Unter dem Feld Modell Diagramm befindet sich eine filterbare und bearbeitbare Liste mit berechneten Formateigenschaften. Durch das Deaktivieren einer aktuell aktiven Eigenschaft wird die nächste Eigenschaft in der Überlappung aktiviert, sofern vorhanden. Sie können Ihre Änderungen im Bereich " [**Änderungen**](./changes.md) " anzeigen.
+Below the box model diagram is a filterable and editable list of computed style properties. Turning off a currently active property activates the next property in the cascade, if one exists. You can view your changes in the [**Changes**](./changes.md) pane.
 
-Die Schaltfläche " **nur Benutzer Stile anzeigen** " ist standardmäßig aktiviert. Beim Drücken der Schaltfläche werden Formatvorlagen aus dem *Standard-Stylesheet* von Microsoft Edge in der Liste berechnete Formatvorlagen eingefügt.
+The **Display user styles only** button is on by default. Depressing the button will include styles from the *default stylesheet* of Microsoft Edge in the computed styles list.
 
-![Berechneter Bereich](../media/elements_computed.png)
+![Computed pane](../media/elements_computed.png)
