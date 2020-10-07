@@ -1,12 +1,12 @@
 ---
-description: Alles zur 3D-Ansicht und deren Verwendung.
+description: All about 3D View and how to use it.
 title: 3D View
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+keywords: microsoft edge, web development, f12 tools, devtools
 ms.openlocfilehash: ba1125654c46be6ef4da99efc9ba027ba5e40672
 ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
@@ -16,107 +16,107 @@ ms.locfileid: "10986080"
 ---
 # 3D View  
 
-Verwenden Sie die **3D-Ansicht** , um Ihre Webanwendung zu debuggen, indem Sie durch das [Dokumentobjektmodell (DOM)][MDNDocumentObjectModel] oder den Stapel Kontext des [z-Index][MDNZIndex] navigieren.  Damit können Sie die folgenden Aufgaben ausführen:  
+Use the **3D View** to debug your web application by navigating through the [Document Object Model (DOM)][MDNDocumentObjectModel] or the [z-index][MDNZIndex] stacking context.  With it you are able to perform the following tasks.  
 
-*   [Erkunden der in eine 3D-Perspektive übersetzten Webseite](#3d-dom)  
-*   [Debuggen basierend auf dem Stapeln des z-Index-Kontexts](#z-index)  
-*   [Löschen eines Teils der Übersichtlichkeit im Dom-Bereich](#changing-your-view) oder im [Bereich "z-index"](#change-the-scope-of-your-exploration)  
-*   [Das Farbschema zum besten Debuggen von Dom](#dom-color-type) [-oder z-Index Problemen](#z-index-color-type) aussuchen  
+*   [Explore the web page translated into a 3D perspective](#3d-dom)  
+*   [Debug based on z-index stacking context](#z-index)  
+*   [Clear some of the clutter on the DOM pane](#changing-your-view) or the [z-index pane](#change-the-scope-of-your-exploration)  
+*   [Pick the color scheme to best debug your DOM problems](#dom-color-type) or [z-index problems](#z-index-color-type)  
 
-Wenn Sie einen frühen Prototyp eines 3D-Ansichts Projekts erkunden und den Code selbst ausführen möchten, lesen Sie [Beispiel für 3D-Ansicht][GithubMicrosoftedgeDevtoolssamples3dview].   
+If you want to explore an early prototype of 3D View project and run the code yourself, see [3D View Sample][GithubMicrosoftedgeDevtoolssamples3dview].   
 
-Auf der linken Seite gibt es zwei Bereiche, die Sie für Ihre Fehlerbehebung verwenden können.  
+On the left side, there are two panes that you are able to use for your debugging experience.  
 
-1.  Der Bereich " [Z-Index](#z-index) "  Navigieren Sie durch die verschiedenen Elemente in der Webanwendung, wobei der z-Index-Kontext berücksichtigt wird.  Der Bereich " **Z-Index** " ist der Standardbereich.  
-1.  Der [3D-Dom-](#3d-dom) Bereich.  Erkunden Sie das DOM als Ganzes mit allen Elementen, die Ihnen zur Verfügung stehen.  Um auf den Bereich zuzugreifen, wählen Sie im **DOM** -Bereich neben dem Bereich **Z-Index** aus.  
+1.  The [Z-index](#z-index) pane.  Navigate through the different elements in the web application with the z-index context in mind.  The **Z-index** pane is the default pane.  
+1.  The [3D DOM](#3d-dom) pane.  Explore the DOM as a whole with all the elements at your fingertips.  To access the pane, select on the **DOM** pane next to the **Z-index** pane.  
     
-Auf der rechten Seite zeigt die Leinwand Ihre Auswahl aus dem [Z-Index](#z-index) oder [3D-Dom](#3d-dom)an.  
+On the right side, the canvas displays your selections from the [Z-index](#z-index) or [3D DOM](#3d-dom).  
 
-## Navigieren im Arbeitsbereich  
+## Navigating the canvas  
 
-:::image type="complex" source="../media/canvas.png" alt-text="Leinwand der 3D-Ansicht" lightbox="../media/canvas.png":::
-   Leinwand der 3D-Ansicht  
+:::image type="complex" source="../media/canvas.png" alt-text="Canvas of 3D View" lightbox="../media/canvas.png":::
+   Canvas of 3D View  
 :::image-end:::  
 
-### Tastenkombinationen  
+### Keyboard shortcuts  
 
-*   Drehen des Dom: um horizontal zu drehen, drücken Sie die `left-arrow` Tastenkombination und `right-arrow` .  Um vertikal zu drehen, drücken Sie die `up-arrow` Tastenkombination und `down-arrow` .  
-*   Navigieren im Dom: um die benachbarten Elemente zu durchlaufen, wählen Sie ein Element aus, und drücken Sie die `up-arrow` Tastenkombination und `down-arrow` .  
+*   Rotate the DOM:  To rotate horizontally, press the `left-arrow` and `right-arrow` keys.  To rotate vertically, press the `up-arrow` and `down-arrow` keys.  
+*   Navigate the DOM:  To move through the adjacent elements, select an element and press the `up-arrow` and `down-arrow` keys.  
 
-### Maussteuerungen  
+### Mouse controls  
 
-*   Drehen des Dom: Wählen Sie den Bereich aus, und ziehen Sie ihn um den Zeichenbereich.  
-*   Schwenken um das DOM: Öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und ziehen Sie den Mauszeiger in die Richtung, in die das DOM verschoben werden soll.  
-*   Zoom: ziehen Sie zwei Finger über das Touchpad, oder verwenden Sie das Mausrad auf der Maus.  
+*   Rotate the DOM:  Select and drag around the canvas space.  
+*   Pan around the DOM:  Open the contextual menu \(right-click\) and drag in the direction you want the DOM to move.  
+*   Zoom:  Drag two fingers across the touchpad or use the scroll wheel on your mouse.  
 
-### Steuerelemente auf dem Bildschirm  
+### On-screen controls  
 
-:::image type="complex" source="../media/controls-small.png" alt-text="Steuerelemente auf dem Bildschirm" lightbox="../media/controls-small.png":::
-   Steuerelemente auf dem Bildschirm  
+:::image type="complex" source="../media/controls-small.png" alt-text="Canvas of 3D View" lightbox="../media/controls-small.png":::
+   On-screen controls  
 :::image-end:::  
 
-*   Zurücksetzen der Canvas-Ansicht auf die ursprüngliche Ansicht: Wählen Sie die Schaltfläche **Kamera zurücksetzen** aus, oder wählen Sie die Schaltfläche **Elemente zurücksetzen in Ansicht und Re-Center-Kamera** \ (seitliches Aktualisierungssymbol \) aus.  
-*   Aktualisieren des Arbeitsbereichs \ (beispielsweise, wenn sich der Browser geändert hat oder Sie zu einer Geräte emulatoransicht gewechselt sind \): Wählen Sie die Schaltfläche " **Snapshot** erneut erstellen" aus, oder klicken Sie auf die Schaltfläche " **neuen Schnappschuss aufnehmen** " \ (Symbol "Aktualisieren" \).  
+*   Reset the canvas view to the original view:  Select the **Reset camera** button, or select the **Reset elements in view and re-center camera** \(sideways refresh icon\) button.  
+*   Refresh the canvas \(for example, if the browser changed or you switched to a device emulator view\):  Select the **Retake snapshot** button or select the **Take new snapshot** button \(refresh icon\).  
 
-## Z-Index  
+## Z-index  
 
-:::image type="complex" source="../media/z-index-view-box.png" alt-text="Z-Indexansicht" lightbox="../media/z-index-view-box.png":::
-   Z-Indexansicht  
+:::image type="complex" source="../media/z-index-view-box.png" alt-text="Canvas of 3D View" lightbox="../media/z-index-view-box.png":::
+   Z-index view  
 :::image-end:::  
 
-Während der Bereich " **Z-Index** " über freigegebene Features mit dem **3D-Dom** -Bereich verfügt, verfügen die Bereiche weiterhin über Elemente, die für den Bereich eindeutig sind.  
+While the **Z-index** pane has shared features with the **3D DOM** pane, the panes still have elements that are unique to the pane.  
 
-### Markieren von Elementen mit Stapel Kontext  
+### Highlight elements with stacking context  
 
-Mit der Einstellung " **Highlight-Elemente mit Stapel Kontext** " können Sie die z-Index-Tags für die Elemente auf der Leinwand auf \ (und Off \) aktivieren.  Das Kontrollkästchen ist standardmäßig aktiviert.  
+The **Highlight elements with stacking context** setting allows you to turn on \(and off\) the z-index tags for the elements on the canvas.  The checkbox is selected by default.  
 
-### Ändern des Umfangs ihrer Exploration  
+### Change the scope of your exploration  
 
-Die Schaltfläche **alle Elemente anzeigen** ist die schnellste Möglichkeit, alle Elemente des DOM anzuzeigen, nachdem die Einstellungen unten geändert wurden.  
+The **Show all elements** button is the quickest way to display all the elements of the DOM after changing the settings below.  
 
-Mit der Schaltfläche **nur Elemente mit Stapel-Kontext anzeigen** werden Elemente ohne Stapel Kontext entfernt, und das DOM wird vereinfacht, um die Navigation zu vereinfachen.  
+The **Show only elements with stacking context** button removes elements without stacking context and flattens the DOM for easier navigation.  
 
-Die Schaltfläche " **ausgewähltes Element isolieren** " besteht im Wesentlichen aus drei Schaltflächen in einer.  Es gibt zwei Kontrollkästchen unter der Schaltfläche " **ausgewähltes Element isolieren** ": das Kontrollkästchen " **alle übergeordneten Elemente anzeigen** " und " **nur Eltern mit neuem Stapel-Kontext beibehalten** ".  
+The **Isolate selected element** button is essentially three buttons in one.  There are two checkboxes below the **Isolate selected element** button:  The **Show all parents** checkbox and **Keep only parents with new stacking context** checkbox.  
 
-Das Kontrollkästchen **alle übergeordneten Elemente anzeigen** ist standardmäßig aktiviert.  Wenn Sie ein Element im Bereich "Leinwand" auswählen und dann die Schaltfläche " **ausgewähltes Element isolieren** " auswählen, zeigt der Canvas nur das Element und alle übergeordneten Elemente an.  
+The **Show all parents** checkbox is selected by default.  If you select an element on the canvas pane and select **Isolate selected element** button, the canvas only displays the element and any parents.  
 
-Wenn Sie das Kontrollkästchen **nur übergeordnete Elemente mit neuem Stacking-Kontext beibehalten** aktivieren und die Schaltfläche **ausgewähltes Element isolieren** auswählen, werden im Canvas nur das Element und die übergeordneten Elemente angezeigt, die einen neuen Stapel Kontext aufweisen.  
+If you select the **Keep only parents with new stacking context** checkbox, and select **Isolate selected element** button, the canvas only displays the element and the parents that have a new stacking context.  
 
-Wenn Sie beide Kontrollkästchen deaktivieren und die Schaltfläche " **ausgewähltes Element isolieren** " auswählen, zeigt die Leinwand nur das Element an, das Sie an erster Stelle gewählt haben.  
+If you deselect both of the checkboxes and select **Isolate selected element** button, the canvas only displays the element you chose in the first place.  
 
-Suchen Sie am unteren Rand des **3D-Dom-** Panels das Kontrollkästchen **Elemente ausblenden mit der gleichen Farbreihenfolge wie das übergeordnete Element** .  Durch auswählen und Aufheben der Auswahl des Kontrollkästchens werden die Elemente basierend auf Ihrer Auswahl aktualisiert.  Wenn diese Option ausgewählt ist, werden Elemente, die die Farbreihenfolge freigeben, auf das übergeordnete Element reduziert.  
+At the very bottom of the **3D DOM** panel, locate the **Hide elements with the same paint order as their parent** checkbox.  Selecting and deselecting the checkbox refreshes the elements based on your selection.  If selected, elements that share paint order are flattened to the parent.  
 
-Die Optionen sollen einige der Übersichtlichkeit aufklären, die komplexere Webseiten in ihrer Leinwand erstellen.  
+The options are meant to clear up some of the clutter that more complex web pages create in your canvas.  
 
-### Z-Index-Farbtyp  
+### Z-index color type  
 
-Das sind die verschiedenen Visualisierungen, die Sie für das DOM in ihrer Leinwand verwenden können.  Unabhängig davon, ob Sie es zum Spaß verwenden oder weil die Visualisierungen Ihnen helfen, das DOM besser zu visualisieren, verfügt das devtools über drei verschiedene **Farben und eine Hintergrund Farb** Einstellung.  Über die Optionsfelder können Sie die Optionen durchlaufen und den Farbtyp wählen, der für Ihr Projekt am besten geeignet ist \ (oder das Sie am meisten möchten).  
+The are the different visualizations you may use for the DOM in your canvas.  Whether you use it for fun or because the visualizations help you visualize the DOM better, The DevTools has three different colorways as well as a **background color** setting.  The radio buttons allow you to toggle through the options and pick the color type most appropriate for your project \(or that you like the most\).  
 
-## 3D-Dom  
+## 3D DOM  
 
-:::image type="complex" source="../media/dom-purple-box.png" alt-text="DOM-Ansicht" lightbox="../media/dom-purple-box.png":::
-   DOM-Ansicht  
+:::image type="complex" source="../media/dom-purple-box.png" alt-text="Canvas of 3D View" lightbox="../media/dom-purple-box.png":::
+   DOM view  
 :::image-end:::  
 
-Wenn Sie eine allgemeine Debugansicht anstelle der z-Index-Oberfläche nutzen möchten, bietet das 3D- **DOM** eine Gesamtdarstellung des DOM.  Da der Kontext des z-Index entfernt wird, wird das DOM genauer und übersichtlicher gestapelt.  Der **3D-Dom-** Bereich hat eine ähnliche Funktionalität, aber es gibt ein paar Nuancen.  
+If you want to take more of a general debugging view, rather than the z-index experience, the **3D DOM** gives an overall look of the DOM.  Since the z-index context is removed, the DOM is stacked more closely and cleanly.  The **3D DOM** pane has similar functionality, but there are a few nuances.  
 
-### Ändern der Ansicht  
+### Changing your view  
 
-Im **3D-Dom-** Bereich enthält die Schaltfläche **ausgewählte Elemente isolieren** unter **geordnete** Kontrollkästchen und übergeordnete **Elemente einbeziehen.**  Standardmäßig sind beide Kontrollkästchen aktiviert, was bedeutet, dass durch Auswählen der Schaltfläche " **ausgewähltes Element isolieren** " nach dem Auswählen eines Elements auf der Leinwand das ausgewählte Element, die übergeordneten Elemente des Elements und die untergeordneten Elemente des Elements angezeigt werden sollen.  Wenn Sie das Kontrollkästchen unter **geordnete Elemente einbeziehen** deaktivieren und die Schaltfläche **ausgewählte Elemente isolieren** erneut auswählen, sollten das ausgewählte Element und die übergeordneten Elemente des Elements angezeigt werden.  Wenn Sie das Kontrollkästchen " **Kinder einbeziehen** " aktivieren und das Kontrollkästchen " **Eltern einbeziehen** " deaktivieren, bevor Sie die Schaltfläche " **ausgewähltes Element isolieren** " auswählen, werden im Canvas-Element und untergeordnete Elemente angezeigt.  Wenn Sie beide Kontrollkästchen deaktivieren und die Schaltfläche " **ausgewähltes Element isolieren** " auswählen, zeigt die Leinwand nur das zuvor ausgewählte Element an.  
+On the **3D DOM** pane, the **Isolate selected element** button has **Include children** and **Include parents** checkboxes.  By default both checkboxes are selected, which means that selecting the **Isolate selected element** button after selecting an element on the canvas should display the element chosen, the parents of the element, and the children of the element.  Deselecting the **Include children** checkbox and selecting the **Isolate selected element** button again should display the selected element and the parents of the element.  If you select the **Include children** checkbox and deselect the **Include parents** checkbox before selecting **Isolate selected element** button, the canvas then displays the element and any children.  If you deselect both checkboxes and select **Isolate selected element** button, the canvas only displays the element you previously selected.  
 
-Ein Schieberegler im Steuerbereich mit dem Titel " **Schachtelungsebene für Seite** mit einer Zahl daneben".  Die Zahl gibt die Anzahl der Layer für das Dokument an.  Wenn Sie den Schieberegler nach links ziehen, werden die äußersten Ebenen entfernt, bis Sie mit einer Schachtelungsebene, die auf 1 gesetzt ist, verbleibt, wodurch nur das am weitesten zurückliegende Element im DOM angezeigt wird.  Durch Ziehen des Schiebereglers können Sie einige der Unklarheiten entfernen, wenn Sie versuchen, sich genauer anzusehen, was in den unteren Ebenen geschieht.  
+A slider on the control pane titled **Nesting level for page** with a number next to it.  The number indicates the number of layers for the document.  Dragging the slider to the left causes the outermost layers to peel away until you are left with a nesting level set to 1, which displays only the furthest back element in the DOM.  Dragging the slider allows you to remove some of the clutter if you are trying to get a closer look at what is happening in the lower levels.  
 
-### Dom-Farbtyp  
+### DOM color type  
 
-Zusätzlich zur **heatmapfarbgebung-lila-zu-weiß**-, **heatmapfarbgebung-blau-zu-gelb**-, **heatmapfarbgebung-Rainbow-** und der **use-Hintergrundfarbe** , gibt es die **Verwendung der Bildschirm Textur**.  Die Bildschirm Textur fügt dem Debugvorgang Kontext hinzu, indem der Inhalt der Webseite direkt auf die Elemente angezeigt wird.  Im **3D-Dom-** Bereich ist die  **Farbtyp** Einstellung immer noch ein work in Progress, da einige Websites in der 3D-Ansicht eine schwierigere Darstellung der Bildschirm Struktur aufweisen.  
+In addition to the **Heatmap - Purple to White**, **Heatmap - Blue to Yellow**, **Heatmap - Rainbow**, and **Use background color** radio buttons, there is **Use screen texture**.  The screen texture adds context to your debugging experience by displaying the content from the web page directly onto the elements.  On the **3D DOM** pane, the  **color type** setting is still a work in progress, since some websites have a harder time rendering screen texture in the 3D View.  
 
-## Kontakt mit dem Microsoft Edge devtools-Team
+## Getting in touch with the Microsoft Edge DevTools team
 
-Das Microsoft Edge devtools-Team arbeitet auf der Benutzeroberfläche und fügt der 3D-Ansicht basierend auf den Fragen von Benutzern wie Ihnen weitere Funktionen hinzu.  Bitte senden Sie Ihr Feedback, um die Microsoft Edge-devtools zu verbessern.  Wählen Sie einfach das Feedback-Symbol im devtools aus, oder drücken Sie `Alt` + `Shift` + `I` \ (Windows \), oder drücken Sie `Option` + `Shift` + `I` \ (macOS \), und geben Sie alle Feedback-oder Funktionsanforderungen für das devtools ein.  
+The Microsoft Edge Devtools team is working on the UI and adding more functionality to the 3D View based on asks from users like you.  Please send your feedback to help improve the Microsoft Edge DevTools.  Simply select the feedback icon in the DevTools or press `Alt`+`Shift`+`I` \(Windows\) or press `Option`+`Shift`+`I` \(macOS\) and enter any feedback or feature requests you have for the DevTools.  
 
 <!-- links -->  
 
-[GithubMicrosoftedgeDevtoolssamples3dview]: https://github.com/MicrosoftEdge/DevToolsSamples/tree/master/3DView "Microsoft Edge devtools 3D-Ansicht – MicrosoftEdge/DevToolsSamples | GitHub"  
+[GithubMicrosoftedgeDevtoolssamples3dview]: https://github.com/MicrosoftEdge/DevToolsSamples/tree/master/3DView "Microsoft Edge DevTools 3D View - MicrosoftEdge/DevToolsSamples | GitHub"  
 
-[MDNDocumentObjectModel]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model "Dokumentobjektmodell (DOM) | MDN"  
+[MDNDocumentObjectModel]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model "Document Object Model (DOM) | MDN"  
 [MDNZIndex]: https://developer.mozilla.org/docs/Web/CSS/z-index "z-index | MDN"  

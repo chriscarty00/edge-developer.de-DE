@@ -86,7 +86,7 @@ Aktivieren Sie die Option **Vorschläge aus Pinterest in Sammlungen anzeigen**, 
 
 Wenn das Senden optionaler Diagnosedaten, einschließlich Absturzberichten, aktiviert ist, erfasst Microsoft Diagnosedaten zu Microsoft Edge-Abstürzen oder anderen Zuverlässigkeitsproblemen.  Die Diagnosedaten werden verwendet, um Zuverlässigkeitsprobleme von Microsoft Edge sowie anderer Microsoft-Produkte und -Dienste zu diagnostizieren und zu beheben.  
 
-:::image type="complex" source="./media/whitepaper-media/crashes2.png" alt-text="Abstürze" lightbox="./media/whitepaper-media/crashes2.png":::
+:::image type="complex" source="./media/whitepaper-media/crashes2.png" alt-text="Adressleiste" lightbox="./media/whitepaper-media/crashes2.png":::
    Abstürze  
 :::image-end:::  
 
@@ -108,7 +108,7 @@ Microsoft verwendet Diagnosedaten zur Verbesserung von Microsoft-Produkten und -
 
 Wenn Sie Features und Dienste in Microsoft Edge und anderen Anwendungen verwenden, die die Microsoft Edge-Webplattform nutzen, werden Diagnosedaten zur Verwendung dieser Features an Microsoft gesendet.  Die Diagnosedaten enthalten Informationen wie Ihre Version von Microsoft Edge, zu Funktionsnutzung, Leistung und Speicherauslastung.  Wenn Sie beispielsweise eine Website als Favorit speichern, erhält das Microsoft Edge-Team Informationen, dass auf die Schaltfläche "Favoriten" geklickt und ein Favorit erfolgreich hinzugefügt wurde, aber nicht dazu, welche Website als Favorit gespeichert wurde.  Die Diagnosedaten umfassen auch Leistungsinformationen wie z. B. wie viele Millisekunden das Öffnen einer neuen Registerkarte gedauert hat.  Die im Whitepaper erwähnten Features und Dienste erfassen Diagnosedaten.  
 
-:::image type="complex" source="./media/whitepaper-media/diagnostic-data2.png" alt-text="Diagnosedaten" lightbox="./media/whitepaper-media/diagnostic-data2.png":::
+:::image type="complex" source="./media/whitepaper-media/diagnostic-data2.png" alt-text="Adressleiste" lightbox="./media/whitepaper-media/diagnostic-data2.png":::
    Diagnosedaten  
 :::image-end:::  
 
@@ -195,7 +195,7 @@ Microsoft Edge unterstützt die [Geolocation-API][W3cGeolocationApiMain], die es
 
 Auf der rechten Seite der Adressleiste von Microsoft Edge wird angezeigt, ob Ihr Standort geteilt oder nicht geteilt wird.  
 
-:::image type="complex" source="./media/whitepaper-media/geolocation2.png" alt-text="Pfad" lightbox="./media/whitepaper-media/geolocation2.png":::
+:::image type="complex" source="./media/whitepaper-media/geolocation2.png" alt-text="Adressleiste" lightbox="./media/whitepaper-media/geolocation2.png":::
    Pfad  
 :::image-end:::  
 
@@ -209,7 +209,7 @@ Beim InPrivate-Browsen wird die Einstellung zur Ortungsberechtigung des Profils 
 
 Microsoft Edge bietet eine interaktive und nahtlose Umgebung, wenn Sie den Browser zum ersten Mal starten.  Dazu gehört die Möglichkeit, Ihre Browserdaten aus einem anderen Browser in Microsoft Edge zu importieren.  Während des Importvorgangs können Sie die importierten Daten beibehalten oder sie löschen und vollkommen neu beginnen.  Die Daten umfassen Favoriten, Browserverlauf, Daten für das automatische Ausfüllen, Erweiterungen, Einstellungen sowie weitere Browserdaten.  Ihre Browserdaten aus älteren Versionen von Microsoft Edge werden automatisch importiert, wenn Sie eine Aktualisierung auf den neuen Microsoft Edge durchführen.  Mit Ihrer Einwilligung importiert Microsoft Edge Browserdaten aus anderen Browsern, z. B. Google Chrome, Mozilla Firefox oder Internet Explorer. Aus welchem Browser der Import erfolgt, wird basierend auf Ihrem am häufigsten verwendeten Browser gemäß der Definition durch Ihr Betriebssystem ermittelt.  Das Importieren der Daten erfolgt lokal auf Ihrem Gerät. Sie werden lokal gespeichert und nicht an Microsoft gesendet, es sei denn, Sie stimmen zu, Ihre Browserdaten zu synchronisieren.  
 
-:::image type="complex" source="./media/whitepaper-media/migration.png" alt-text="Import" lightbox="./media/whitepaper-media/migration.png":::
+:::image type="complex" source="./media/whitepaper-media/migration.png" alt-text="Adressleiste" lightbox="./media/whitepaper-media/migration.png":::
    Import  
 :::image-end:::  
 
@@ -231,7 +231,7 @@ Automatische Updates sind für alle Microsoft Edge-Benutzer standardmäßig akti
 
 Microsoft Edge bietet eine vereinfachte Benutzererfahrung durch die Integration von Internet Explorer (IE).  Microsoft Edge unterstützt nur IE 11, und der IE-Modus steht nur unter Windows zur Verfügung.  Das IE-Modus-Feature ist für Organisationen über Gruppenrichtlinien verfügbar.  Der Administrator beschließt, dass bestimmte Websites im IE-Modus in Microsoft Edge geöffnet werden sollen.  
 
-:::image type="complex" source="./media/whitepaper-media/ie-mode.png" alt-text="IE-Modus" lightbox="./media/whitepaper-media/ie-mode.png":::
+:::image type="complex" source="./media/whitepaper-media/ie-mode.png" alt-text="Adressleiste" lightbox="./media/whitepaper-media/ie-mode.png":::
    IE-Modus  
 :::image-end:::  
 
@@ -262,7 +262,7 @@ Microsoft Edge bietet eine ansprechende und anwenderorientierte "Neuer Tab"-Seit
 
 Um die Ladezeiten der "Neuer Tab"-Seite zu verbessern, kann die Microsoft "Neuer Tab"-Seite im Hintergrund geladen werden, um sie zu beschleunigen. Die geladenen Inhalte können Cookies enthalten, falls Sie Cookies zulassen. Um das Laden der Microsoft "Neuer Tab"-Seite im Hintergrund zu deaktivieren, gehen Sie zu `edge://settings/newTabPage` und deaktivieren Sie die Einstellung ** für das Vorladen der "Neuer Tab"-Seite, um die Erfahrung zu beschleunigen**. 
 
-:::image type="complex" source="./media/whitepaper-media/n-t-p1.png" alt-text=""Neuer Tab"-Seite" lightbox="./media/whitepaper-media/n-t-p1.png":::
+:::image type="complex" source="./media/whitepaper-media/n-t-p1.png" alt-text="Adressleiste" lightbox="./media/whitepaper-media/n-t-p1.png":::
    "Neuer Tab"-Seite  
 :::image-end:::  
 
@@ -384,7 +384,7 @@ Wenn Sie den Gast- oder InPrivate-Modus verwenden, ist die Anmeldung bei Microso
 
 SmartScreen soll Ihnen dabei helfen, sicher im Internet zu surfen.  Wenn Sie Websites aufrufen oder Dateien herunterladen, überprüft SmartScreen die Zuverlässigkeit der URL oder Datei.  Wenn SmartScreen feststellt, dass die Website oder die Datei schädlich ist, werden Sie daran gehindert, sie aufzurufen bzw. sie herunterzuladen.  
 
-:::image type="complex" source="./media/whitepaper-media/smart-screen.png" alt-text="SmartScreen" lightbox="./media/whitepaper-media/smart-screen.png":::
+:::image type="complex" source="./media/whitepaper-media/smart-screen.png" alt-text="Adressleiste" lightbox="./media/whitepaper-media/smart-screen.png":::
    SmartScreen  
 :::image-end:::  
 
@@ -420,7 +420,7 @@ Um Tippfehler in der URL in der Adressleiste zu beheben, die zu einem Websitefeh
 
 Wenn Sie sich mit einem Microsoft-Konto bei Microsoft Edge anmelden, können Sie die Browserdaten über alle Versionen von Microsoft Edge hinweg, bei denen Sie angemeldet sind, synchronisieren.  Sie können Ihre Favoriten, Einstellungen, Formularfelddaten (Adressen etc.), Kennwörter, Erweiterungen und Sammlungen synchronisieren.  Sie müssen das Aktivieren der Synchronisierung in Microsoft Edge zulassen, und die zu synchronisierenden Datentypen müssen evtl. einzeln aktiviert oder deaktiviert werden.  Zu den "Favoriten" zählen alle Tabs, die Sie in der älteren Version von Microsoft Edge für später gespeichert haben. Diese werden zusammen mit den restlichen Favoriten synchronisiert.  Gelöschte oder geänderte Favoriten oder andere Daten aus einer Microsoft Edge-Version, bei der Sie angemeldet sind, werden mit allen anderen Versionen von Microsoft Edge synchronisiert, in denen die Synchronisierung aktiviert ist und bei denen Sie angemeldet sind.  Um die Konfigurationen für die Synchronisierung zu verwalten, wechseln Sie zu `edge://settings/profiles/sync`.  Ihre Synchronisierungseinstellungen werden u. U. von Ihrer Organisation verwaltet.
 
-:::image type="complex" source="./media/whitepaper-media/sync.png" alt-text="Bild der Synchronisierungseinstellung auf "aktiviert" festgelegt" lightbox="./media/whitepaper-media/sync.png":::
+:::image type="complex" source="./media/whitepaper-media/sync.png" alt-text="Adressleiste" lightbox="./media/whitepaper-media/sync.png":::
    Die Synchronisierungseinstellung ist aktiviert
 :::image-end:::  
 
@@ -442,7 +442,7 @@ Microsoft Edge ist so konzipiert, dass er bekannte Tracker erkennen und blockier
 
 Sie können Listenaktualisierungen mithilfe der Gruppenrichtlinie [Aktivieren von Komponentenupdates in Microsoft Edge][DeployedgePoliciesComponentupdatesenabled] deaktivieren.  
 
-:::image type="complex" source="./media/whitepaper-media/tracking-prevention.png" alt-text="Tracking verhindern" lightbox="./media/whitepaper-media/tracking-prevention.png":::
+:::image type="complex" source="./media/whitepaper-media/tracking-prevention.png" alt-text="Adressleiste" lightbox="./media/whitepaper-media/tracking-prevention.png":::
    Tracking verhindern  
 :::image-end:::  
 
@@ -484,7 +484,7 @@ Mit Ihrer Zustimmung erfasst WDAG auch Informationen zu Ihrer Verwendung des Bro
 
 Windows Information Protection (WIP) trägt dazu bei, den versehentlichen Verlust von Unternehmensinformationen zu verhindern.  Es ist nur für Organisationen über Gruppenrichtlinien verfügbar, die von Ihrer Organisation verwaltet werden.  WIP ist für Websites aktiviert, die als Unternehmensressourcen gekennzeichnet sind.  Über das Verwaltungssymbol in der Adressleiste können Sie ermitteln, welche Websites Unternehmensressourcen sind.  WIP erzwingt Funktionen wie das Verhindern des Kopierens und Einfügens aus dem Browser oder das Hochladen bestimmter Dateien zu Websites außerhalb Ihrer Organisation.  
 
-:::image type="complex" source="./media/whitepaper-media/w-i-p.png" alt-text="Windows Information Protection" lightbox="./media/whitepaper-media/w-i-p.png":::
+:::image type="complex" source="./media/whitepaper-media/w-i-p.png" alt-text="Adressleiste" lightbox="./media/whitepaper-media/w-i-p.png":::
    Windows Information Protection  
 :::image-end:::  
 

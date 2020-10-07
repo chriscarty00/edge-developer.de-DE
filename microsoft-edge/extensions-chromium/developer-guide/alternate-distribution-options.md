@@ -1,12 +1,12 @@
 ---
-description: Der Prozess der Verteilung der Erweiterung um einen anderen Mechanismus als überprüfte Speicher
-title: Alternative Methode zur Verteilung der Erweiterung
+description: The process of distributing extension by mechanism other than verified stores
+title: Alternate Method of Distributing Extension
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge-Chromium, Erweiterungen-Entwicklung, Browser-Erweiterungen, Addons, Partner Center, Entwickler
+keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
 ms.openlocfilehash: e28a84fd75ad1ac0be2000a22c26371ca73d0293
 ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
@@ -14,28 +14,28 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 09/15/2020
 ms.locfileid: "11015695"
 ---
-# Alternative Methode zur Verteilung der Erweiterung  
+# Alternate Method of Distributing Extension  
 
-Wenn Sie ein Entwickler sind, der eine Erweiterung als Teil des Installationsvorgangs für andere Software oder einen Netzwerkadministrator verteilen möchte, der eine Erweiterung in der gesamten Organisation verteilen möchte, unterstützt Microsoft Edge die folgenden Erweiterungs Installationsmethoden:  
+If you are a developer who wants to distribute an Extension as part of the installation process for other software, or a network admin that want to distribute an Extension throughout their organization, Microsoft Edge supports the following Extension installation methods:  
 
-*   **Verwenden der Windows-Registrierung \ (nur Windows \)**  
+*   **Using the Windows registry \(Windows only\)**  
 
-Microsoft Edge unterstützt die Installation einer Erweiterung, die auf einer `update_URL` .  Unter Windows muss der `update_URL` Verweis auf den Microsoft Edge Addons-Katalog (Microsoft Edge Addons \) verweisen, in dem die Erweiterung gehostet werden muss.  
+Microsoft Edge supports installing an Extension hosted at an `update_URL`.  On Windows, the `update_URL` must point to the Microsoft Edge Addons catalog \(Microsoft Edge Addons\) where the Extension must be hosted.  
 
 > [!NOTE]
-> Externe Installation der Erweiterung über eine JSON-Einstellungen-Datei für macOS <!--and Linux--> werden noch nicht unterstützt.  Dieser Funktions Support steht in Kürze zur Verfügung.
+> External installation of Extension via a preferences json file for macOS <!--and Linux--> are not supported yet.  This feature support will soon be available.
 
-## Verwenden der Windows-Registrierung  
+## Using the Windows registry  
 
-Veröffentlichen Sie zunächst die Erweiterung in den Microsoft Edge-Addons, oder Verpacken Sie eine. Wagon-Datei, und stellen Sie sicher, dass Sie erfolgreich installiert wird.  
+First, publish the Extension in the Microsoft Edge Addons, or package a .crx file and make sure that it installs successfully.  
 
-Die Schritte zum Installieren der Erweiterung über die Registrierung in Windows sind:  
+The steps to install Extension via registry in windows are:  
 
-*   Suchen oder erstellen Sie den folgenden Schlüssel in der Registrierung:  
-    *   32-Bit-Windows:  `HKEY_LOCAL_MACHINE\Software\Microsoft\Edge\Extensions`  
-    *   64-Bit-Windows:  `HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Edge\Extensions`  
-*   Erstellen Sie einen neuen Schlüssel \ (Ordner \) unter dem Erweiterungs Schlüssel mit dem gleichen Namen wie die ID der Erweiterung \ (beispielsweise `aaaaaaaaaabbbbbbbbbbcccccccccc` \).  
-*   Erstellen Sie in Ihrem Erweiterungs Schlüssel eine Eigenschaft, `update_url` und legen Sie Sie auf den Wert: `https://edge.microsoft.com/extensionwebstorebase/v1/crx` , \ (dieser verweist auf den Namen ihrer Erweiterung in Microsoft Edge-Addons). Wenn Sie eine Erweiterung aus dem Chrome Web Store installieren möchten, geben Sie die URL des Chrome Web Store-Updates an `https://clients2.google.com/service/update2/crx` .  
+*   Find or create the following key in the registry:  
+    *   32-bit Windows:  `HKEY_LOCAL_MACHINE\Software\Microsoft\Edge\Extensions`  
+    *   64-bit Windows:  `HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Edge\Extensions`  
+*   Create a new key \(folder\) under the Extensions key with the same name as the ID of your Extension \(for example, `aaaaaaaaaabbbbbbbbbbcccccccccc`\).  
+*   In your Extension key, create a property, `update_url`, and set it to the value: `https://edge.microsoft.com/extensionwebstorebase/v1/crx`,  \(this points to the crx of your extension in the Microsoft Edge Addons\). If you want to install an extension from the Chrome Web Store, please provide the Chrome Web Store update URL, `https://clients2.google.com/service/update2/crx`.  
     
     ```javascript
     {
@@ -43,26 +43,26 @@ Die Schritte zum Installieren der Erweiterung über die Registrierung in Windows
     }
     ```  
     
-*   Starten Sie den Browser, und wechseln `edge://extensions` Sie zu; die Erweiterung wird angezeigt.  
+*   Launch the browser and go to `edge://extensions`; you should see the extension listed.  
 
-## Aktualisieren und deinstallieren  
+## Updating and uninstalling  
 
-Microsoft Edge scannt die Metadaten-Einträge in der Registrierung jedes Mal, wenn der Browser gestartet wird, und nimmt alle erforderlichen Änderungen an den installierten externen Erweiterungen vor.  
+Microsoft Edge scans the metadata entries in the registry each time the browser starts, and makes any necessary changes to the installed external extensions.  
 
-Wenn Sie Ihre Erweiterung auf eine neue Version aktualisieren möchten, aktualisieren Sie die Datei, und aktualisieren Sie dann die Version in der Registrierung.  
+To update your extension to a new version, update the file, and then update the version in the registry.  
 
-Wenn Sie Ihre Erweiterung deinstallieren möchten (beispielsweise wenn Ihre Software deinstalliert wird), entfernen Sie Ihre Einstellungsdatei \ ( `aaaaaaaaaabbbbbbbbbbcccccccccc.json` \) oder die Metadaten aus der Registrierung.  
+To uninstall your extension \(for example, if your software is uninstalled\), remove your preference file \(`aaaaaaaaaabbbbbbbbbbcccccccccc.json`\) or the metadata from the registry.  
 
 <!-- image links -->  
 
 <!-- links -->  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
-> Die ursprüngliche Seite finden Sie [hier](https://developer.chrome.com/apps/external_extensions).  
+> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
+> The original page is found [here](https://developer.chrome.com/apps/external_extensions).  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
-Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
+This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

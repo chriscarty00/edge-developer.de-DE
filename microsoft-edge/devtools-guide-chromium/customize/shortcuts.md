@@ -1,12 +1,12 @@
 ---
-description: Zuordnen von Tastenkombinationen im devtools zu Visual Studio-Code
-title: Anpassen von Tastenkombinationen in der Microsoft Edge-devtools
+description: Match keyboard shortcuts in the DevTools to Visual Studio Code
+title: Customize keyboard shortcuts in the Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/04/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools, Benutzerdefiniert, Tastenkombinationen, Tastatur, Visual Studio-Code
+keywords: microsoft edge, web development, f12 tools, devtools, custom, shortcuts, keyboard, visual studio code
 ms.openlocfilehash: 65a54c343c043c30ad02ebdde53edb3e32e1e1df
 ms.sourcegitcommit: 6b577cb118f34f3ff2c65eab2908b65f155dc151
 ms.translationtype: MT
@@ -14,42 +14,42 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 09/09/2020
 ms.locfileid: "11003943"
 ---
-# Anpassen von Tastenkombinationen in der Microsoft Edge-devtools  
+# Customize keyboard shortcuts in the Microsoft Edge DevTools  
 
-Die Seite " **Verknüpfungen** " in " [Einstellungen][DevToolsCustomizeSettings] " enthält eine Liste der [Tastenkombinationen in den devtools][DevToolsShortcuts] und [Funktionen zum Anpassen der Tastenkombinationen](#match-keyboard-shortcuts-in-the-devtools-to-microsoft-visual-studio-code).  
+The **Shortcuts** page in [Settings][DevToolsCustomizeSettings] provides a list of [keyboard shortcuts in the DevTools][DevToolsShortcuts] and [features to customize the shortcuts](#match-keyboard-shortcuts-in-the-devtools-to-microsoft-visual-studio-code).  
 
-In diesem Artikel werden die aktuellen Tastenkombinationen im devtools und die ausgelösten Aktionen bereitgestellt.  
+This article provides the current keyboard shortcuts in the DevTools and the actions that are triggered.  
 
-1.  [Öffnen Sie devtools][DevtoolOpenMain].  
-1.  Öffnen Sie [Einstellungen][DevToolsCustomizeSettings].
-    *   Wählen Sie aus `Shift` + `?` .  
-1.  Navigieren Sie zur Seite **Verknüpfungen** .  
+1.  [Open DevTools][DevtoolOpenMain].  
+1.  Open [Settings][DevToolsCustomizeSettings].
+    *   Select `Shift`+`?`.  
+1.  Navigate to the **Shortcuts** page.  
     
-    :::image type="complex" source="../media/settings-shortcuts.msft.png" alt-text="Die Seite "Verknüpfungen" in "Einstellungen"" lightbox="../media/settings-shortcuts.msft.png":::
-       Die Seite " **Verknüpfungen** " in " **Einstellungen** "  
+    :::image type="complex" source="../media/settings-shortcuts.msft.png" alt-text="The Shortcuts page in Settings" lightbox="../media/settings-shortcuts.msft.png":::
+       The **Shortcuts** page in **Settings**  
     :::image-end:::  
     
-## Anpassen von Tastenkombinationen im devtools an Microsoft Visual Studio-Code  
+## Match keyboard shortcuts in the DevTools to Microsoft Visual Studio Code  
 
-Führen Sie die folgenden Schritte aus, um die Tastenkombinationen in der Microsoft Edge-devtools für entsprechende Aktionen in [Visual Studio-Code][VisualStudioCode]anzupassen.  
+To match the keyboard shortcuts in the Microsoft Edge DevTools for equivalent actions in [Visual Studio Code][VisualStudioCode], complete the following steps.  
 
-1.  Öffnen Sie die Seite **Verknüpfungen** .
-1.  Wählen Sie im Dropdownmenü die Option **Tastenkombinationen abgleichen aus** , und ändern Sie **devtools (Standard)** in **Visual Studio-Code**.  
+1.  Open the **Shortcuts** page.
+1.  Choose the **Match shortcuts from preset** dropdown and change **DevTools (Default)** to **Visual Studio Code**.  
     
-    :::image type="complex" source="../media/match-keyboard-shortcuts-visual-studio-code.msft.png" alt-text="Zuordnen von Tastenkombinationen im devtools zu Visual Studio-Code" lightbox="../media/match-keyboard-shortcuts-visual-studio-code.msft.png":::
-       Zuordnen von Tastenkombinationen im devtools zu Visual Studio-Code  
+    :::image type="complex" source="../media/match-keyboard-shortcuts-visual-studio-code.msft.png" alt-text="The Shortcuts page in Settings" lightbox="../media/match-keyboard-shortcuts-visual-studio-code.msft.png":::
+       Match keyboard shortcuts in the DevTools to Visual Studio Code  
     :::image-end:::  
 
-Wenn Sie beispielsweise ein Skript in [Visual Studio-Code][VisualStudioCodeShortcutsKeyboardWindows]anhalten oder weiter ausführen möchten, wählen Sie aus `F5` .  
-Wenn Sie keine Werte aus der **devtools (Standardeinstellung)** im Microsoft Edge-devtools ändern und ein Skript anhalten oder fortsetzen möchten, wählen Sie aus `F8` .  
-Wenn Sie den Wert **Visual Studio-Code** Voreinstellung in der Microsoft Edge-devtools ändern und ein Skript anhalten oder fortsetzen möchten, wählen Sie aus `F5` .  
+For example, to pause or continuing to run a script in [Visual Studio Code][VisualStudioCodeShortcutsKeyboardWindows], you select `F5`.  
+If you do not change values from the **DevTools (Default)** preset in the Microsoft Edge DevTools and you want to pause or continuing to run a script, you select `F8`.  
+If you change the value **Visual Studio Code** preset in the Microsoft Edge DevTools and you want to pause or continuing to run a script, you select `F5`.  
 
 <!-- ## Edit shortcuts for any action in the DevTools -->
 
 <!-- links -->  
 
-[DevToolsCustomizeSettings]: ./index.md#settings "Einstellungen – anpassen von Microsoft Edge devtools | Microsoft docs"  
-[DevtoolOpenMain]: ../open.md "Öffnen Sie Microsoft Edge devtools | Microsoft docs"  
-[DevToolsShortcuts]: ../shortcuts.md "Microsoft Edge devtools-Tastenkombinationen | Microsoft docs"  
-[VisualStudioCode]: https://code.visualstudio.com "Microsoft Visual Studio-Code"  
-[VisualStudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Visual Studio-Code Tastenkombinationen für Windows | Microsoft Visual Studio-Code"  
+[DevToolsCustomizeSettings]: ./index.md#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolOpenMain]: ../open.md "Open Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsShortcuts]: ../shortcuts.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"  
+[VisualStudioCode]: https://code.visualstudio.com "Microsoft Visual Studio Code"  
+[VisualStudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Visual Studio Code Keyboard shortcuts for Windows | Microsoft Visual Studio Code"  

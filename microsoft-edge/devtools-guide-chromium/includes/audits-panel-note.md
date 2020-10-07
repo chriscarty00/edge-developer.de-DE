@@ -12,7 +12,7 @@ ms.lasthandoff: 09/02/2020
 ms.locfileid: "10993439"
 ---
 > [!NOTE]
-> Das **Überwachungs** Panel enthält Links zu Inhalten, die auf Websites von Drittanbietern gehostet werden.  Microsoft ist nicht verantwortlich und hat keine Kontrolle über den Inhalt dieser Websites und die Daten, die Sie möglicherweise sammeln.  
+> The **Audits** panel provides links to content hosted on third-party websites.  Microsoft is not responsible for and has no control over the content of these sites and any data they might collect.  
 > 
 
 <!-- image links -->  

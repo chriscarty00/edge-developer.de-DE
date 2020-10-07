@@ -1,12 +1,12 @@
 ---
-description: Hier erfahren Sie, wie Sie die HTTP-Cookies für eine Seite mit Microsoft Edge devtools anzeigen, bearbeiten und löschen.
-title: Anzeigen, bearbeiten und Löschen von Cookies mit Microsoft Edge devtools
+description: Learn how to view, edit, and delete the HTTP cookies for a page using Microsoft Edge DevTools.
+title: View, Edit, And Delete Cookies With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+keywords: microsoft edge, web development, f12 tools, devtools
 ms.openlocfilehash: eaaf4663504fc674fd70dc1ca9e0357febb529e0
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -28,69 +28,69 @@ ms.locfileid: "10993240"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Anzeigen, bearbeiten und Löschen von Cookies mit Microsoft Edge devtools  
+# View, edit, and delete cookies with Microsoft Edge DevTools  
 
-[Http-Cookies][MDNHTTPCookies] werden hauptsächlich verwendet, um Benutzersitzungen zu verwalten, Benutzer Personalisierungseinstellungen zu speichern und das Benutzerverhalten nachvollziehen zu können.  Cookies sind auch die Ursache für alle ärgerlichen Einwilligungsformulare "Diese Seite verwendet Cookies", die Sie im gesamten Web sehen.  Im folgenden Leitfaden erfahren Sie, wie Sie die HTTP-Cookies für eine Seite mit [Microsoft Edge devtools][MicrosoftEdgeDevTools]anzeigen, bearbeiten und löschen.  
+[HTTP Cookies][MDNHTTPCookies] are mainly used to manage user sessions, store user personalization preferences, and track user behavior.  Cookies are also the cause of all of the annoying "this page uses cookies" consent forms that you see across the web.  The following guide teaches you how to view, edit, and delete the HTTP cookies for a page with [Microsoft Edge DevTools][MicrosoftEdgeDevTools].  
 
-## Öffnen des Bereichs "Cookies"  
+## Open the Cookies pane  
 
-1.  [Öffnen Sie devtools][DevToolsOpen].  
-1.  Wählen Sie die Registerkarte **Anwendung** aus, um den **Anwendungs** Panel zu öffnen.  Der Bereich **Manifest** sollte geöffnet sein.  
+1.  [Open DevTools][DevToolsOpen].  
+1.  Select the **Application** tab to open the **Application** panel.  The **Manifest** pane should open.  
     
-    :::image type="complex" source="../media/storage-application-manifest-empty.msft.png" alt-text="Bereich ' Manifest '" lightbox="../media/storage-application-manifest-empty.msft.png":::
-       Abbildung 1: der Bereich "Manifest"  
+    :::image type="complex" source="../media/storage-application-manifest-empty.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-manifest-empty.msft.png":::
+       Figure 1:  The Manifest pane  
     :::image-end:::  
 
-1.  Erweitern Sie unter **Speicher** den Eintrag **Cookies**, und wählen Sie dann einen Ursprung aus.  
+1.  Under **Storage** expand **Cookies**, then select an origin.  
     
-    :::image type="complex" source="../media/storage-application-storage-cookies-selected.msft.png" alt-text="Der Bereich "Cookies"" lightbox="../media/storage-application-storage-cookies-selected.msft.png":::
-       Abbildung 2: der Bereich "Cookies"  
+    :::image type="complex" source="../media/storage-application-storage-cookies-selected.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-storage-cookies-selected.msft.png":::
+       Figure 2:  The Cookies pane  
     :::image-end:::  
 
-## Felder  
+## Fields  
 
-Die Tabelle " **Cookies** " enthält die folgenden Felder.  
+The **Cookies** table contains the following fields.  
 
-*   **Name**  Der Name des Cookies.  
-*   **Value**aus.  Der Wert des Cookies.  
-*   **Domäne**aus.  Die Hosts, die das Cookie empfangen dürfen.  Siehe [Bereich der Cookies][MDNHTTPCookiesScope].  
-*   **Path**aus.  Die URL, die in der angeforderten URL vorhanden sein muss, um die Kopfzeile zu senden `Cookie` .  Siehe [Bereich der Cookies][MDNHTTPCookiesScope].  
-*   **Läuft ab/max-Alter**.  Das Ablaufdatum oder das maximale Alter des Cookies.  Weitere Informationen finden Sie unter [permanente Cookies][MDNHTTPCookiesPermanent].  Für [Sitzungscookies][MDNHTTPCookiesSession] ist dieser Wert immer `Session` .  
-*   **Größe**aus.  Die Größe des Cookies in Bytes.  
-*   **Http**.  Ist "true", gibt dieses Feld an, dass das Cookie nur über HTTP verwendet und JavaScript-Änderungen nicht zulässig sind.  Siehe [HttpOnly-Cookies][MDNHTTPCookiesSecure].  
-*   **Sicher**.  Ist "true", gibt dieses Feld an, dass das Cookie nur über eine sichere HTTPS-Verbindung an den Server gesendet werden muss.  Siehe [sichere Cookies][MDNHTTPCookiesSecure].  
-*   **SameSite**.  Enthält `strict` oder `lax` Wenn das Cookie das experimentelle [SameSite][MDNHTTPCookiesSamesite] -Attribut verwendet.  
-*   **Priorität**.  Contains `low` , `medium` \ (Standard \) oder `high` Wenn das Cookie das veraltete [Cookie Priority][ChromiumIssue232693] -Attribut verwendet.
+*   **Name**.  The name of the cookie.  
+*   **Value**.  The value of the cookie.  
+*   **Domain**.  The hosts that are allowed to receive the cookie.  See [Scope of cookies][MDNHTTPCookiesScope].  
+*   **Path**.  The URL that must exist in the requested URL in order to send the `Cookie` header.  See [Scope of cookies][MDNHTTPCookiesScope].  
+*   **Expires / Max-Age**.  The expiration date or maximum age of the cookie.  See [Permanent cookies][MDNHTTPCookiesPermanent].  For [session cookies][MDNHTTPCookiesSession] this value is always `Session`.  
+*   **Size**.  The size, in bytes, of the cookie.  
+*   **HTTP**.  If true, this field indicates that the cookie should only be used over HTTP and JavaScript modification is not allowed.  See [HttpOnly cookies][MDNHTTPCookiesSecure].  
+*   **Secure**.  If true, this field indicates that the cookie must be sent to the server only over a secure, HTTPS connection.  See [Secure cookies][MDNHTTPCookiesSecure].  
+*   **SameSite**.  Contains `strict` or `lax` if the cookie is using the experimental [Samesite][MDNHTTPCookiesSamesite] attribute.  
+*   **Priority**.  Contains `low`, `medium` \(default\), or `high` if the cookie is using the deprecated [cookie Priority][ChromiumIssue232693] attribute.
 
-## Filtern von Cookies  
+## Filter cookies  
 
-Verwenden Sie das Textfeld " **Filter** ", um Cookies nach **Name** oder **Wert**zu filtern.  Das Filtern nach anderen Feldern wird nicht unterstützt.  
+Use the **Filter** text box to filter cookies by **Name** or **Value**.  Filtering by other fields is not supported.  
 
-:::image type="complex" source="../media/storage-application-storage-cookies-filter-id.msft.png" alt-text="Filtern von Cookies, die nicht die Text-ID enthalten" lightbox="../media/storage-application-storage-cookies-filter-id.msft.png":::
-   Abbildung 3: Filtern von Cookies, die keinen Text enthalten `ID`  
+:::image type="complex" source="../media/storage-application-storage-cookies-filter-id.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-storage-cookies-filter-id.msft.png":::
+   Figure 3:  Filtering out any cookies that do not contain the text `ID`  
 :::image-end:::  
 
-## Bearbeiten eines Cookies  
+## Edit a cookie  
 
-Die Felder **Name**, **value**, **Domain**, **path**und **Expires/max-age** können bearbeitet werden.  
-Doppelklicken Sie auf ein Feld, um es zu bearbeiten.  
+The **Name**, **Value**, **Domain**, **Path**, and **Expires / Max-Age** fields are editable.  
+Double-click a field to edit it.  
 
-:::image type="complex" source="../media/storage-application-storage-cookies-rename.msft.png" alt-text="Festlegen des Namens eines Cookies auf DEVTOOLS!" lightbox="../media/storage-application-storage-cookies-rename.msft.png":::
-   Abbildung 4: Festlegen des Namens eines Cookies auf `DEVTOOLS!`  
+:::image type="complex" source="../media/storage-application-storage-cookies-rename.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-storage-cookies-rename.msft.png":::
+   Figure 4:  Setting the name of a cookie to `DEVTOOLS!`  
 :::image-end:::  
 
-## Löschen von Cookies  
+## Delete cookies  
 
-Wählen Sie ein Cookie aus, **und wählen Sie ausgewählte** löschen ausgewählt löschen aus ![ ][ImageDeleteIcon]  , um das bestimmte Cookie zu löschen.  
+Select a cookie and select **Delete Selected** ![Delete Selected][ImageDeleteIcon]  to delete the specific cookie.  
 
-:::image type="complex" source="../media/storage-application-storage-cookies-delete-selected.msft.png" alt-text="Löschen eines bestimmten Cookies" lightbox="../media/storage-application-storage-cookies-delete-selected.msft.png":::
-   Abbildung 5: Löschen eines bestimmten Cookies  
+:::image type="complex" source="../media/storage-application-storage-cookies-delete-selected.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-storage-cookies-delete-selected.msft.png":::
+   Figure 5:  Deleting a specific cookie  
 :::image-end:::  
 
-Wählen **Sie alle löschen** ![ aus ][ImageClearIcon]  , um alle Cookies zu löschen.  
+Select **Clear All** ![Clear All][ImageClearIcon]  to delete all cookies.  
 
-:::image type="complex" source="../media/storage-application-storage-cookies-clear-all.msft.png" alt-text="Löschen aller Cookies" lightbox="../media/storage-application-storage-cookies-clear-all.msft.png":::
-   Abbildung 6: Löschen aller Cookies  
+:::image type="complex" source="../media/storage-application-storage-cookies-clear-all.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-storage-cookies-clear-all.msft.png":::
+   Figure 6:  Clearing all cookies  
 :::image-end:::  
 
 <!-- image links -->  
@@ -100,24 +100,24 @@ Wählen **Sie alle löschen** ![ aus ][ImageClearIcon]  , um alle Cookies zu lö
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chrom)-Entwickler Tools"  
-[DevToolsOpen]: /microsoft-edge/devtools-guide-chromium/open "Öffnen von Microsoft Edge devtools"  
+[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools"  
+[DevToolsOpen]: /microsoft-edge/devtools-guide-chromium/open "Open Microsoft Edge DevTools"  
 
-[ChromiumIssue232693]: https://bugs.chromium.org/p/chromium/issues/detail?id=232693 "Chrom Problem 232693: Implementieren des Prioritäts Felds für Cookies | Chrom Fehler"  
+[ChromiumIssue232693]: https://bugs.chromium.org/p/chromium/issues/detail?id=232693 "Chromium Issue 232693: Implementing Priority Field for Cookies | Chromium Bugs"  
 
-[MDNHTTPCookies]: https://developer.mozilla.org/docs/Web/HTTP/Cookies "HTTP-Cookies | MDN"  
-[MDNHTTPCookiesPermanent]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Permanent_cookies "HTTP-Cookies – permanente Cookies | MDN"  
-[MDNHTTPCookiesSamesite]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#SameSite_cookies "HTTP-Cookies-SameSite Cookies | MDN"  
-[MDNHTTPCookiesScope]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Scope_of_cookies "HTTP-Cookies – Bereich von Cookies | MDN"  
-[MDNHTTPCookiesSecure]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Secure_and_HttpOnly_cookies "HTTP-Cookies – sichere und HttpOnly Cookies | MDN"  
-[MDNHTTPCookiesSession]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Session_cookies "HTTP-Cookies – Sitzungscookies | MDN"  
+[MDNHTTPCookies]: https://developer.mozilla.org/docs/Web/HTTP/Cookies "HTTP cookies | MDN"  
+[MDNHTTPCookiesPermanent]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Permanent_cookies "HTTP cookies - Permanent cookies | MDN"  
+[MDNHTTPCookiesSamesite]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#SameSite_cookies "HTTP cookies - SameSite cookies | MDN"  
+[MDNHTTPCookiesScope]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Scope_of_cookies "HTTP cookies - Scope of cookies | MDN"  
+[MDNHTTPCookiesSecure]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Secure_and_HttpOnly_cookies "HTTP cookies - Secure and HttpOnly cookies | MDN"  
+[MDNHTTPCookiesSession]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Session_cookies "HTTP cookies - Session cookies | MDN"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
-> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/storage/cookies) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
+> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/storage/cookies) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
-Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
+This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

@@ -1,12 +1,12 @@
 ---
-description: Veröffentlichen von Microsoft Edge (Chrom)-Erweiterungen im Microsoft Edge-Add-ons-Store.
-title: Veröffentlichen Sie die Erweiterung
+description: Publish Microsoft Edge (Chromium) extensions to Microsoft Edge add-ons Store.
+title: Publish your extension
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge-Chromium, Erweiterungen-Entwicklung, Browser-Erweiterungen, Addons, Partner Center, Entwickler
+keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
 ms.openlocfilehash: 4f8433e74c0fd6dab3278792b94cf3cbaac05d2c
 ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
@@ -14,162 +14,162 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 09/15/2020
 ms.locfileid: "11015751"
 ---
-# Veröffentlichen Sie die Erweiterung  
+# Publish your extension  
 
-Nachdem Sie Ihre Erweiterung entwickelt und getestet haben, sind Sie möglicherweise bereit, ihre Erweiterung mithilfe des Microsoft Edge-Add-ons-Katalogs zu verteilen.  Wenn Sie über eine vorhandene Chromium-Erweiterung verfügen, die Sie für Microsoft Edge-Benutzer verfügbar machen möchten, können Sie [Ihre vorhandene Chrom-Erweiterung][PortChromiumExtension] auch an Microsoft Edge portieren.  
+After completing development and testing of your extension, you may be ready to distribute your extension using the Microsoft Edge add-ons catalog.  Alternatively, if you have an existing chromium extension that you want to make available to Microsoft Edge users, you may [port your existing Chromium extension][PortChromiumExtension] to Microsoft Edge.  
 
-Durch das Veröffentlichen Ihrer Erweiterung im Microsoft Edge-Add-ons-Katalog wird die Reichweite ihrer Erweiterung erhöht und für Endbenutzer verfügbar.  Dieses Thema enthält eine exemplarische Vorgehensweise zum Übermitteln Ihrer Erweiterung an den Microsoft Edge-Add-ons-Katalog.  
+Publishing your extension to the Microsoft Edge add-ons catalog increases the reach of your extension and makes it available for end users.  This topic provides a walkthrough of the process to submit your extension to the Microsoft Edge add-ons catalog.  
 
-## Vorbemerkungen  
+## Before you begin  
 
-An diesem Punkt sollten Sie einen funktionierenden Prototyp ihrer Erweiterung bereit haben.  Informationen zum Erstellen einer Erweiterung finden Sie im [Lernprogramm "erste Schritte][ExtensionsGettingStarted]".  
+At this point, you should have a working prototype of your extension ready.  For information on how to create an extension, refer to the [Getting started tutorial][ExtensionsGettingStarted].  
 
-Wenn Sie Ihre Erweiterung auf der Microsoft Edge-Add-ons-Website veröffentlichen möchten, müssen Sie über ein aktives Entwicklerkonto im [Partner Center][MicrosoftPartnerCenter]verfügen.  Wenn Sie ein neues Entwicklerkonto öffnen und sich beim Microsoft Edge-Add-ons-Programm registrieren möchten, führen Sie den im [Entwickler Registrierungs][DeveloperRegistration] Handbuch erwähnten Vorgang aus.  
+To publish your extension to the Microsoft Edge add-ons website, you must have an active developer account on [Partner Center][MicrosoftPartnerCenter].  To open a new developer account and register to the Microsoft Edge add-ons program, follow the process mentioned in the [Developer registration][DeveloperRegistration] guide.  
 
-Erstellen Sie eine ZIP-Datei, die das Erweiterungspaket darstellt.  Ihr Erweiterungspaket muss die folgenden Dateien beinhalten.  
+Create a zip file that represents your extension package.  Your extension package must include the following files.  
 
-*   Das Erweiterungs Manifest, das Details wie den Namen der Erweiterung, Kurzbeschreibung, Berechtigungen und Standardsprache angibt.  
-*   Bilder und andere Dateien, die für Ihre Erweiterung erforderlich sind.  
+*   The extension manifest specifying details like the name of the extension, short description, permissions, and default language.  
+*   Images and other files required by your extension.  
 
-Die folgenden Felder im Manifest werden automatisch in die Details Ihres Store-Eintrags aufgenommen und können nicht über die Seite Store-Einträge geändert werden, die weiter unten in diesem Thema beschrieben wird.  Stellen Sie sicher, dass die Felder ausgefüllt sind, damit Sie Ihrer bevorzugten Anzeige auf der Seite Store Details entsprechen, bevor Sie Ihr Paket zum Partner Center hochladen.  Ein Beispiel für den Code, der für die Manifestdatei erforderlich ist, finden Sie Untergrund lagen der Manifestdatei.  
+The following fields in the manifest are automatically included in your store listing details and are not able to be modified from the store listings page, which is described later in this topic.  Ensure the fields are filled-out to match your preferred display on the store details page, before uploading your package to Partner Center.  For an example of the code required for the manifest file, review the manifest file basics.  
 
-*   `Name` Feld in der Manifestdatei, bei dem es sich um den **Anzeigenamen** auf der Seite Store Details handelt.  
-*   `Description` Feld in der Manifestdatei, das die **kurze Beschreibung** auf der Seite Store-Details ist.  Geben Sie eine kurze, einprägsame Beschreibung ein, die am oberen Rand des Eintrags für Ihre Erweiterung angezeigt werden soll.  Wenn enthalten, wird die in der Erweiterungs Manifestdatei angegebene kurze Beschreibung in Ihrem Store-Eintrag angezeigt.  Wenn in der Manifestdatei keine kurze Beschreibung enthalten ist, werden die ersten Zeilen der Beschreibung angezeigt.  Sie sollten eine kurze Beschreibung zur Vermeidung von inhaltlichen Wiederholungen auf Ihrer Store-Eintragsseite angeben.  
+*   `Name` field in the manifest file, which is the **Display name** on the store details page.  
+*   `Description` field in the manifest file, which is the **Short description** on the store details page.  Provide a short, catchy description to display at the top of the listing for your extension.  When included, the short description specified in the extension manifest file is displayed in your store listing.  If a short description is not included in the manifest file, the first few lines of Description are displayed.  You should provide a brief description to avoid content repetition on your store listing page.  
 
-## Übermitteln der Erweiterung an den Microsoft Edge-Add-ons-Store  
+## Submit your extension to Microsoft Edge add-ons store  
 
-Führen Sie die folgenden Schritte aus, um Ihre Durchwahl an das [Partner Center][MicrosoftPartnerCenter]zu übermitteln.  
+To submit your extension to [Partner Center][MicrosoftPartnerCenter], use the following steps.  
 
-#### Schritt 1: Starten einer neuen Übermittlung  
+#### Step 1:  Start a new submission  
 
-Wechseln Sie zum [entwicklerdashboard][MicrosoftPartnerCenter] , und wählen Sie auf der Übersichts **Seite** **neue Erweiterung erstellen** aus.  
+Go to the [developer dashboard][MicrosoftPartnerCenter] and select **Create new extension** on the **Overview** page.  
 
-#### Schritt 2: Hochladen des Erweiterungspakets  
+#### Step 2:  Upload the extension package  
 
-Verwenden Sie die Seite " **Pakete** ", um die ZIP-Datei Ihres Erweiterungspakets hochzuladen.  Sie können nur jeweils ein Paket hochladen.  Sie können die Übermittlung nicht fortsetzen, wenn der Paket Upload auf der Seite " **Pakete** " nicht erfolgreich ist.  
+Use the **Packages** page to upload the zip file of your extension package.  You are only able to upload one package at a time.  You are not able to continue with the submission if the package upload is not successful on the **Packages** page.  
 
-Laden Sie das Paket hoch, indem Sie entweder das Paket in das Feld Upload ziehen, oder indem Sie **Dateien durchsuchen**auswählen.  Nachdem das Paket hochgeladen wurde, wird Ihr Paket überprüft.  Nachdem die Validierung erfolgreich war, überprüfen Sie die Erweiterungs Details, und wählen Sie dann **weiter** aus, um fortzufahren.  Wenn es Validierungsfehler gibt, beheben Sie die Probleme, und versuchen Sie erneut, das Hochladen.  
+Upload the package by either dragging the package to the upload field, or by selecting **Browse your files**.  Once the package is uploaded, your package is validated.  Once validation succeeds, review the extension details, and then select **Next** to continue.  If there are validation errors, resolve the issues and try uploading again.  
 
-#### Schritt 3: Bereitstellen von Verfügbarkeits Details  
+#### Step 3:  Provide Availability details  
 
-Geben Sie auf der Seite **Verfügbarkeit** die folgenden Informationen zur Verfügbarkeit ihrer Erweiterung ein.  
+On the **Availability** page, enter the following information about the availability of your extension.  
 
-##### Sichtbarkeit  
+##### Visibility  
 
-Wählen Sie eine der folgenden Sichtbarkeitsoptionen aus, um zu definieren, ob Ihre Erweiterung im Microsoft Edge-Add-ons-Katalog auffindbar ist.  
+Choose one of the following visibility options to define if your extension is discoverable in the Microsoft Edge add-ons catalog.  
 
-*   `Public` \ (Standard \)  
-    Mit Public können Erweiterungen für alle Personen über die Suchfunktion, Durchsuchen im Microsoft Edge-Add-ons-Katalog oder mithilfe der Eintrags-URL für Ihre Erweiterung im Microsoft Edge-Add-on-Store erkannt werden.  Die Eintrags-URL ist auf der Seite mit der Erweiterungs **Übersicht** im Partner Center-Dashboard verfügbar.  
+*   `Public` \(default\)  
+    Public allows extensions to be discoverable to everyone through search, browsing in the Microsoft Edge add-ons catalog, or using the listing URL to your extension in the Microsoft Edge add-ons store.  The listing URL is available on your Partner Center dashboard on the Extension **Overview** page.  
 
 *   `Hidden`  
-    Ausgeblendet entfernt Erweiterungen aus Suchergebnissen oder Durchsuchen im Microsoft Edge-Add-ons-Katalog.  Wenn Sie versteckte Erweiterungen im Microsoft Edge-Add-ons-Store verteilen möchten, müssen Sie die Eintrags-URL für die Erweiterung für Ihre Kunden freigeben.  
+    Hidden removes extensions from search results or browsing in the Microsoft Edge add-ons catalog.  To distribute hidden extensions in the Microsoft Edge add-ons store, you must share the listing URL to the extension with your customers.  
 
 > [!NOTE]
-> Sie können die Sichtbarkeit ihrer Erweiterung von **Public** in **Hidden**ändern.  Benutzer, die ihre Erweiterung installiert haben, während die Sichtbarkeit auf öffentlich festgesetzt wurde, behalten den Zugriff auf Ihre Erweiterung und erhalten alle Updates, die Sie über die Microsoft Edge-Add-ons-Website zur Verfügung stellen.  
+> You may change the visibility of your extension from **Public** to **Hidden**.  Users who installed your extension while the visibility was set to public retain access to your extension and receive any updates you make available through the Microsoft Edge add-ons website.  
 
-##### Märkte  
+##### Markets  
 
-Definieren Sie die spezifischen Märkte, in denen Sie Ihre Erweiterung anbieten möchten.  Standardmäßig wurden alle Märkte ausgewählt, einschließlich aller zukünftigen Märkte, die später hinzugefügt werden.  Sie können aber auch bestimmte Märkte auswählen, indem Sie **Märkte ändern**auswählen.  Deaktivieren Sie einzelne Märkte, um Sie auszuschließen, oder wählen Sie **Alle auswählen** aus, und fügen Sie dann einzelne Märkte Ihrer Wahl hinzu.  
+Define the specific markets in which you plan to offer your extension.  By default, all markets have been selected including any future markets that are added later.  Alternatively, choose specific markets by selecting **Change markets**.  Deselect individual markets to exclude them, or select **Unselect all** and then add individual markets of your choice.  
 
 > [!NOTE]
-> Sie können die Märkte ändern, auf denen Ihre Durchwahl angeboten wird.  Benutzer, die ihre Erweiterung installiert haben, während Sie auf Ihrem Markt verfügbar waren, behalten den Zugriff auf Ihre Durchwahl.  Ihre Benutzer haben jedoch keinen Zugriff mehr auf zukünftige Updates, die an den Microsoft Edge-Add-ons-Katalog übermittelt wurden.  
+> You may change the markets where your extension is offered.  Users who installed your extension while it was available in their market retain access to your extension.  However, your users no longer have access to any future updates submitted to the Microsoft Edge add-ons catalog.  
 
-Wählen Sie **Speichern** aus, um mit dem Abschnitt **Eigenschaften** fortzufahren.  
+Select **Save** to continue to the **Properties** section.  
 
-#### Schritt 4: Auswählen von Eigenschaften für Ihre Erweiterung  
+#### Step 4: Select Properties for your extension  
 
-Geben Sie auf der **Seite Eigenschaften**die folgenden Informationen ein, um die Eigenschaften ihrer Erweiterung anzugeben.  Die Eigenschaften werden Benutzern im Microsoft Edge-Add-ons-Katalog angezeigt.  
+On the **Properties page**, enter the following information to specify properties of your extension.  The properties are displayed to users in the Microsoft Edge add-ons catalog.  
 
-| Name der Erweiterungseigenschaft | Beschreibung |  
+| Extension property name | Description |  
 |:--- |:--- |  
-| Kategorie \ (erforderlich \) | Die Kategorie, die ihre Erweiterung am besten beschreibt.  Wenn Sie Ihre Erweiterung in der richtigen Kategorie auflisten, können Benutzer ihre Erweiterung problemlos finden und mehr darüber erfahren.  |  
-| Datenschutzrichtlinien Anforderungen \ (erforderlich \) | Geben Sie an, ob Ihre Durchwahl personenbezogene Informationen zugreift, sammelt oder überträgt.  Ihre Erweiterung kann den Zertifizierungs Schritt nicht ausführen, wenn Sie " **Ja** " auswählen und keine angeben `Privacy policy URL` .  |  
-| URL zu den Datenschutzrichtlinien | Eine gültige Datenschutzrichtlinien-URL, um zu kommunizieren, wie Ihre Erweiterung den Datenschutzbestimmungen entspricht.  Sie sind dafür verantwortlich, sicherzustellen, dass Ihre Erweiterung den Datenschutzbestimmungen und-Vorschriften entspricht, und bei Bedarf eine gültige URL für die Datenschutzrichtlinie zur Verfügung stellen.  Geben Sie eine Datenschutzrichtlinien-URL an, wenn über Ihre Erweiterung auf persönliche Informationen zugegriffen, diese übertragen oder erfasst wird.  Wenn Sie feststellen möchten, ob für Ihre Erweiterung eine Datenschutzrichtlinie erforderlich ist, wechseln Sie zu [Microsoft Edge Developer Agreement][MicrosoftAppDeveloperAgreement] und [Microsoft Edge Add-ons Catalog-Entwicklerrichtlinien][MicrosoftEdgeAddonsCatalogDeveloperPolicies].  |  
-| Website-URL | Eine Webseite, die zusätzliche Informationen zu ihrer Erweiterung enthält.  Der `Website URL` Verweis muss auf eine Seite auf Ihrer eigenen Website verweisen, nicht auf den Webeintrag für Ihre Erweiterung im Microsoft Edge-Add-ons-Katalog.  Das `Website URL` hilft Benutzern, mehr über Ihre Erweiterung, ihre Features und alle anderen relevanten Informationen zu erfahren.  |  
-| Support-Kontaktdetails | Die URL Ihrer Support-Webseite oder die e-Mail-Adresse, an die Sie Ihr Support-Team wenden können.  |  
-| Ausgereifte Inhalte | Kontrollkästchen, um anzugeben, ob Ihre Erweiterung ausgereifte Inhalte enthält.  Mit der Erweiterungs Bewertung können Sie die geeignete Altersgruppe der Zielgruppe Ihrer Durchwahl ermitteln.  Wenn Sie feststellen möchten, ob Ihre Erweiterung über ausgereifte Inhalte verfügt, wechseln Sie zu [Microsoft Edge Add-ons Catalog-Entwicklerrichtlinien][MicrosoftEdgeAddonsCatalogDeveloperPolicies].  |  
+| Category \(required\) | The category that best describes your extension.  Listing your extension in the right category helps users find your extension easily and understand more about it.  |  
+| Privacy policy requirements \(required\) | Indicate if your extension accesses, collects, or transmits any personal information.  Your extension may fail the certification step if you choose **Yes** and you do not provide a `Privacy policy URL`.  |  
+| Privacy policy URL | A valid privacy policy URL to communicate how your extension complies with privacy laws and regulations.  You are responsible for ensuring your extension complies with privacy laws and regulations, and for providing a valid privacy policy URL, if necessary.  Provide a privacy policy URL if any personal information is being accessed, transmitted, or collected by your extension.  To determine if your extension requires a privacy policy, go to [Microsoft Edge Developer Agreement][MicrosoftAppDeveloperAgreement] and [Microsoft Edge add-ons catalog developer policies][MicrosoftEdgeAddonsCatalogDeveloperPolicies].  |  
+| Website URL | A web page that provides additional information about your extension.  The `Website URL` must point to a page on your own website, not the web listing for your extension in the Microsoft Edge add-ons catalog.  The `Website URL` helps users learn more about your extension, its features, and any other relevant information.  |  
+| Support contact details | The URL to your support webpage, or the email address to contact your support team.  |  
+| Mature content | Checkbox to specify if your extension includes mature content.  Extension rating helps determine the appropriate age group of the target audience of your extension.  To help determine if your extension has mature content, go to [Microsoft Edge add-ons catalog developer policies][MicrosoftEdgeAddonsCatalogDeveloperPolicies].  |  
 
-Wählen Sie **Speichern** aus, um zum Abschnitt **Store-Einträge** weiter zu gehen.  
+Select **Save** to continue to the **Store listings** section.  
 
-#### Schritt 5: Hinzufügen von Details zu Store-Einträgen für Ihre Erweiterung  
+#### Step 5: Add Store listing details for your extension  
 
-Die Informationen, die im folgenden Abschnitt bereitgestellt werden, werden Benutzern angezeigt, die Ihren Eintrag im Microsoft Edge-Add-ons-Katalog besuchen.  Obwohl einige Felder optional sind, sollten Sie so viele Informationen wie möglich angeben.  Die Mindestanforderungen für die Erweiterung für den Eintrag im Store für jede Sprache, die in Ihrem Erweiterungspaket angegeben ist, sind **Description** und das **Logo des Erweiterungsspeichers**.  
+The information provided in the following section is displayed to users that visit your listing on the Microsoft Edge add-ons catalog.  Even though some fields are optional, you should provide as much information as possible.  The minimum required details for your extension for listing in the store, for each language mentioned in your extension package, are **Description** and **Extension Store logo**.  
 
 > [!NOTE]
-> Die erforderlichen Mindestinformationen für den Store-Eintrag müssen für jede Sprache ausgefüllt werden, die in Ihrem ZIP-Erweiterungspaket angegeben ist.  Wenn Sie Sprachen in Ihrem Store-Eintrag im Microsoft Edge-Add-ons-Katalog hinzufügen oder entfernen möchten, müssen Sie die Liste der von der Erweiterung unterstützten Sprachen im Erweiterungspaket ändern, ein neues Erweiterungspaket erstellen und es erneut hochladen.  
+> The minimum required store listing details must be filled-out for each language mentioned in your extension zip package.  To add or remove languages in your store listing on the Microsoft Edge add-ons catalog, you must modify the list of languages supported by your extension in the extension package, create a new extension package, and re-upload it.  
 
-| Eigenschaftsname des Store-Eintrags | Beschreibung |  
+| Store listing property name | Description |  
 |:--- |:--- |  
-| Store Listing Languages \ (erforderlich \) | Wählen Sie im Dropdownmenü **Sprachen** eine Sprache aus, und geben Sie die Details für den Store-Eintrag für diese Sprache ein.  Erweiterungen, die mehrere Sprachen unterstützen, müssen eine Store-Eintragsseite für jede unterstützte Sprache bereitstellen.  |  
-| Anzeigename \ (erforderlich \) | Der Name der Erweiterung, die in der Manifestdatei der Erweiterung angegeben ist.  Wenn Sie den Store-Anzeigenamen nach der Übermittlung ändern möchten, können Sie den Namen in der Manifestdatei aktualisieren, ein neues Erweiterungspaket erstellen und es dann erneut hochladen.  |  
-| Beschreibung \ (erforderlich \) | Das Feld "Beschreibung" konzentriert sich darauf, zu erläutern, was Ihre Erweiterung tut, warum Benutzer Sie installieren sollten, oder andere relevante Informationen, die Benutzer wissen müssen.  Es sollte kleiner als 10.000 Zeichen sein.  |  
-| Erweiterungsspeicher-Logo \ (erforderlich \) | Ein Bild, das Ihr Firmen-oder Erweiterungs Logo mit einem Seitenverhältnis von 1 und einer empfohlenen Größe von 300 x 300 Pixel darstellt.  |  
-| Kleine Werbe Kachel \ (optional \) | Das `Small promotional tile` Bild wird verwendet, um Ihre Erweiterung neben anderen Erweiterungen im Store anzuzeigen.  Die Größe des Bilds sollte 440 x 280 Pixel aufweisen.  |  
-| Screenshots \ (optional \) | Sie können maximal 10 Screenshots einreichen, in denen die Funktionalität ihrer Erweiterung ausführlich beschrieben wird.  Die Größe der Screenshots muss entweder 640 x 480 Pixel oder 1280 x 800 Pixel sein.  |  
-| Große Werbe Kachel \ (optional \) | Große Absatz Förderungs Kacheln werden im Store verwendet, um Erweiterungen in der Microsoft Edge-Add-ons-Website hervorgehobener zu machen.  Die Bilder sind für die Benutzer sichtbar, wenn Sie übermittelt wurden.  Die Größe der PNG-Dateien muss 1400 x 560 Pixel sein.  |  
-| YouTube-Video-URL \ (optional \) | Sie können ein YouTube-Promo-Video Ihrer Durchwahl hinzufügen.  Das `YouTube video URL` Video wird auf der Store-Eintragsseite ihrer Durchwahl angezeigt.  |  
-| Kurzbeschreibung \ (erforderlich \) | Um die Kurzbeschreibung zu bearbeiten, müssen Sie das Feld Beschreibung in der Manifestdatei Ihres Erweiterungspakets aktualisieren und erneut hochladen.  |  
-| Suchbegriffe \ (optional \) | Suchbegriffe sind einzelne Wörter oder Ausdrücke, die Benutzern bei der Suche im Microsoft Edge-Add-ons-Katalog helfen, ihre Erweiterung zu entdecken.  Die Suchbegriffe werden Benutzern nicht angezeigt.  |  
+| Store listing languages \(required\) | Select a language from the **Languages** dropdown and enter the store listing details for that language.  Extensions that support multiple languages must provide a store listing page for each supported language.  |  
+| Display name \(required\) | The name of your extension specified in the manifest file of your extension.  To change the store display name after submission, you may update the name in the manifest file, create a new extension package, and then re-upload it.  |  
+| Description \(required\) | The description field focuses on explaining what your extension does, why users should install it, or other relevant information that users need to know.  It should be less than 10,000 characters.  |  
+| Extension Store logo \(required\) | An image that represents your company or extension logo with an aspect ratio of 1 and recommended size of 300 x 300 pixels.  |  
+| Small promotional tile \(optional\) | The `Small promotional tile` image is used to display your extension alongside other extensions in the store.  The size of the image should be 440 x 280 pixels.  |  
+| Screenshots \(optional\) | You may submit a maximum of 10 screenshots describing the functionality of your extension in detail.  The size of the screenshots must be either 640 x 480 pixels, or 1280 x 800 pixels.  |  
+| Large promotional tile \(optional\) | Large promotion tiles are used in the store to feature extensions more prominently in the Microsoft Edge add-ons website.  The images, if submitted, are visible to the users.  The size of the PNG files must be 1400 x 560 pixels.  |  
+| YouTube video URL \(optional\) | You may include a promotional YouTube video of your extension.  The `YouTube video URL` video is displayed on the store listing page of your extension.  |  
+| Short description \(required\) | To edit the short description, you must update the description field in your manifest file of your extension package and re-upload it.  |  
+| Search terms \(optional\) | Search terms are single words or phrases that help users discover your extension when searching in the Microsoft Edge Add-ons Catalog.  The search terms are not displayed to users.  |  
 
-##### YouTube-Video-URL-Anforderungen  
+##### YouTube video URL requirements  
 
-Stellen Sie sicher, dass Ihr Video die folgenden Anforderungen erfüllt.  
+Ensure your video meets the following requirements.  
 
-*   Überprüfen Sie, ob der Inhalt des YouTube-Videos dem [Microsoft Edge Addons Catalog Developer Policys][MicrosoftEdgeAddonsCatalogDeveloperPolicies] Topic entspricht.  
-*   Deaktivieren Sie Werbung für Ihr Video.  Weitere Informationen finden [Sie unter Festlegen der standardmäßigen Anzeigenformate][GoogleYoutubeAnswer2531367Topic7072227] und [anzeigen für eingebettete Videos][GoogleYoutubeAnswer132596].  
-*   Aktivieren Sie die Einbettung für Ihre Videos.  Weitere Informationen finden Sie unter [Einbetten von Videos & Wiedergabelisten][GoogleYoutubeAnswer171780].  
+*   Verify that the content of the YouTube video complies with the [Microsoft Edge Addons Catalog Developer Policies][MicrosoftEdgeAddonsCatalogDeveloperPolicies] topic.  
+*   Turn off advertisements on your video.  For more information, go to [Set your default ad formats][GoogleYoutubeAnswer2531367Topic7072227] and [Ads on embedded videos][GoogleYoutubeAnswer132596].  
+*   Turn on embedding for your videos.  For more information, go to [Embed videos & playlists][GoogleYoutubeAnswer171780].  
 
-Führen Sie die folgenden Schritte aus, um die YouTube-Video-URL Ihres Videos einzureichen.  
+Perform the following steps to submit the YouTube video URL of your video.  
 
-1.  Suchen Sie auf YouTube das Video, das Sie zu Ihrer Shop-Eintragsseite hinzufügen möchten.  
-1.  Wählen Sie unter dem Video **Share**die Option  >  **Einbettung**freigeben aus.  
-1.  Kopieren Sie den angezeigten HTML-Code.  
-1.  Fügen Sie auf der Seite Store Listing Details den HTML-Code in das `YouTube video URL` Feld ein.  
+1.  On YouTube, locate the video that you want to add to your store listing page.  
+1.  Under the video, choose **Share** > **Embed**.  
+1.  Copy the HTML code that is displayed.  
+1.  On the store listing details page, paste the HTML code in the `YouTube video URL` field.  
 
-##### Anforderungen für Suchbegriffe  
+##### Search terms requirements  
 
-Suchbegriffe müssen die folgenden Voraussetzungen erfüllen.  
+Search terms must meet the following requirements.  
 
-*   Sie können Suchbegriffe eingeben, um maximal 21 Wörter zu verwenden.  Unabhängig davon, ob Sie als einzelne Wörter, Phrasen oder eine Kombination aus beidem verwendet werden, dürfen maximal 21 Wörter verwendet werden.  
-*   Bis zu maximal sieben Suchbegriffe: einzelne Wörter oder Ausdrücke.  Jeder Suchbegriff hat eine Zeichen Grenze von 30 Zeichen.  
+*   You may enter search terms to use up to a maximum of 21 words.  Whether used as single words, phrases, or a combination of both, you are only allowed a maximum of 21 words.  
+*   Up to a maximum of seven search terms:  single word or phrases.  Each search term has a character limit of 30 characters.  
 
-#### Schritt 6: Abschließen der Übermittlung  
+#### Step 6: Complete your submission  
 
-Fügen Sie auf der Seite **Submit your extension** die Hinweise für die Zertifizierung hinzu, damit Sie Ihre Erweiterung testen können.  
+On the **Submit your extension** page, add notes for certification to help test your extension.  
 
-##### Hinweise zur Zertifizierung (optional)  
+##### Notes for certification (Optional)  
 
-Verwenden Sie beim übermitteln der Erweiterung die Seite **Hinweise für die Zertifizierung** , um den Zertifizierungs Prüfern zusätzliche Informationen zur Verfügung zu stellen.  Mit den zusätzlichen Informationen können Sie sicherstellen, dass Ihre Erweiterung richtig getestet wird.  Wenn Ihre Erweiterung nicht vollständig getestet wurde, kann Sie möglicherweise nicht zertifiziert werden.  
+When submitting your extension, use the **Notes for certification** page to provide additional information to the certification testers.  The additional information helps ensure that your extension is tested correctly.  If your extension is not fully tested, it may fail certification.  
 
-Stellen Sie sicher, dass Sie die folgenden Informationen bei Bedarf angeben.  
+Ensure you include the following information, as necessary.  
 
-*   Benutzernamen und Kennwörter für Testkonten.  
-*   Schritte für den Zugriff auf ausgeblendete oder gesperrte Features  
-*   Erwartete Unterschiede bei der Funktionalität basierend auf Regions-oder anderen Benutzereinstellungen.  
-*   Wenn es sich bei der Übermittlung um eine Aktualisierung einer vorhandenen Erweiterung handelt, fügen Sie Informationen zu den an der Erweiterung vorgenommenen Änderungen hinzu.  
-*   Alle weiteren Informationen, die Tester über ihre Übermittlung wissen müssen.  
+*   User names and passwords for test accounts.  
+*   Steps to access hidden or locked features.  
+*   Expected differences in functionality based on region or other user settings.  
+*   If your submission is an update to an existing extension, include information about the changes made to the extension.  
+*   Any additional information that testers must understand about your submission.  
 
-Nachdem Sie die Informationen bereitgestellt haben, wählen Sie **veröffentlichen** aus, um Ihre Erweiterung an den Microsoft Edge-Add-ons-Katalog zu übermitteln.  Ihre Übermittlung geht zum Zertifizierungs Schritt über.  Der Zertifizierungsprozess kann bis zu sieben arbeitstagenach ihrer Übermittlung dauern.  
+After providing the information, select **Publish** to submit your extension to the Microsoft Edge add-ons catalog.  Your submission proceeds to the certification step.  The certification process may take up to seven business days after your submission.  
 
-Wenn Ihre Übermittlung die Zertifizierung übergibt, wird Ihre Erweiterung im Microsoft Edge-Add-ons-Katalog veröffentlicht.  Der Status Ihrer Erweiterung im Partner Center-Dashboard wird in geändert `In the Store` .  
+When your submission passes certification, your extension is published in the Microsoft Edge add-ons catalog.  The status of your extension in the Partner Center dashboard changes to `In the Store`.  
 
 > [!NOTE]
-> Wenn Sie Probleme bei der Übermittlung oder Registrierung haben, geben Sie [hier][ExtensionsSupportForm] ein Support-Ticket ein oder senden Sie eine e-Mail an [ext_dev_support@Microsoft.com](mailto:ext_dev_support@microsoft.com).  
+> If you are facing any issues in the submission or registration process, file a support ticket [here][ExtensionsSupportForm] or send an email to [ext_dev_support@microsoft.com](mailto:ext_dev_support@microsoft.com).  
 
 <!-- links -->  
 
-[ExtensionsGettingStarted]: ../getting-started/index.md "Erste Schritte mit Microsoft Edge-Erweiterungen (Chromium) | Microsoft Docs"  
-[DeveloperRegistration]: ./create-dev-account.md "Registrieren als Microsoft Edge Extensions Developer | Microsoft docs"  
-[PortChromiumExtension]: ../developer-guide/port-chrome-extension.md "Portieren Sie Ihre Chrom-Erweiterung zu Microsoft Edge | Microsoft docs"  
-[MicrosoftEdgeAddonsCatalogDeveloperPolicies]: ../store-policies/developer-policies.md "Microsoft Edge Addons-Katalog-Entwicklerrichtlinien | Microsoft docs"  
+[ExtensionsGettingStarted]: ../getting-started/index.md "Getting Started With Microsoft Edge (Chromium) Extensions | Microsoft Docs"  
+[DeveloperRegistration]: ./create-dev-account.md "Register as a Microsoft Edge extensions developer | Microsoft Docs"  
+[PortChromiumExtension]: ../developer-guide/port-chrome-extension.md "Port your Chromium extension to Microsoft Edge | Microsoft Docs"  
+[MicrosoftEdgeAddonsCatalogDeveloperPolicies]: ../store-policies/developer-policies.md "Microsoft Edge Addons Catalog Developer Policies | Microsoft Docs"  
 
-[MicrosoftAppDeveloperAgreement]: /legal/windows/agreements/app-developer-agreement "Vereinbarung für App-Entwickler | Microsoft docs"  
+[MicrosoftAppDeveloperAgreement]: /legal/windows/agreements/app-developer-agreement "App Developer Agreement | Microsoft Docs"  
 
 [MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "Partner Center"  
 
-[ExtensionsSupportForm]: https://support.microsoft.com/supportrequestform/e7a381be-9c9a-fafb-ed76-262bc93fd9e4 "Erweiterungen neue Support Anfrage | Microsoft-Support"  
+[ExtensionsSupportForm]: https://support.microsoft.com/supportrequestform/e7a381be-9c9a-fafb-ed76-262bc93fd9e4 "Extensions New Support Request | Microsoft Support"  
 
-[GoogleYoutubeAnswer2531367Topic7072227]: https://support.google.com/youtube/answer/2531367?ref_topic=7072227 "Festlegen der standardmäßigen Anzeigenformate-YouTube-Hilfe"  
+[GoogleYoutubeAnswer2531367Topic7072227]: https://support.google.com/youtube/answer/2531367?ref_topic=7072227 "Set your default ad formats - YouTube Help"  
 
-[GoogleYoutubeAnswer132596]: https://support.google.com/youtube/answer/132596 "Anzeigen in eingebetteten Videos – YouTube-Hilfe"
-[GoogleYoutubeAnswer171780]: https://support.google.com/youtube/answer/171780 "Einbetten von Videos & Wiedergabelisten – YouTube-Hilfe"  
+[GoogleYoutubeAnswer132596]: https://support.google.com/youtube/answer/132596 "Ads on embedded videos - YouTube Help"
+[GoogleYoutubeAnswer171780]: https://support.google.com/youtube/answer/171780 "Embed videos & playlists - YouTube Help"  

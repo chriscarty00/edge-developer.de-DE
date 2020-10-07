@@ -1,12 +1,12 @@
 ---
-description: Eine umfassende Referenz zu Barrierefreiheitsfeatures in Microsoft Edge devtools
-title: Barrierefreiheits Referenz
+description: A comprehensive reference of accessibility features in Microsoft Edge DevTools.
+title: Accessibility Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+keywords: microsoft edge, web development, f12 tools, devtools
 ms.openlocfilehash: 39b0b8c36cea017b9976ea4e80e92ea93896a671
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -28,162 +28,162 @@ ms.locfileid: "10993268"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Barrierefreiheits Referenz  
+# Accessibility reference  
 
-Diese Seite ist eine umfassende Referenz zu Barrierefreiheitsfeatures in Microsoft Edge devtools.  Sie ist für Web-Entwickler gedacht, die:  
+This page is a comprehensive reference of accessibility features in Microsoft Edge DevTools.  It is intended for web developers who:  
 
-*   Grundlegende Kenntnisse in devtools, beispielsweise zum Öffnen.  
-*   Sind mit [Grundsätzen der Barrierefreiheit und bewährten Methoden][MDNAccessibility]vertraut.  
+*   Have a basic understanding of DevTools, such as how to open it.  
+*   Are familiar with [accessibility principles and best practices][MDNAccessibility].  
     
-Dieser Bezug soll Ihnen helfen, alle in devtools verfügbaren Tools zu finden, die Ihnen bei der Untersuchung der Barrierefreiheit einer Seite helfen.  
+The purpose of this reference is to help you discover all of the tools available in DevTools that help you examine the accessibility of a page.  
 
-Weitere Informationen finden Sie unter [Navigieren in Microsoft Edge devtools mit Hilfstechnologien][DevtoolsAccessibilityNavigation] , wenn Sie Hilfe beim Navigieren in devtools mit einer Hilfstechnologie wie einer Bildschirmsprachausgabe suchen.  
+See [Navigating Microsoft Edge DevTools With Assistive Technology][DevtoolsAccessibilityNavigation] if you are looking for help on navigating DevTools with an assistive technology like a screen reader.  
 
-## Übersicht über Barrierefreiheitsfeatures in Microsoft Edge devtools  
+## Overview of accessibility features in Microsoft Edge DevTools  
 
-In diesem Abschnitt wird erläutert, wie sich devtools in Ihr gesamtes Barrierefreiheits-Toolkit einfügt.  
+This section explains how DevTools fits into your overall accessibility toolkit.  
 
-Wenn Sie feststellen möchten, ob eine Seite barrierefrei ist, müssen Sie zwei allgemeine Fragen berücksichtigen:  
+When determining whether a page is accessible, you need to have 2 general questions in mind:  
 
-1.  Können Sie auf der Seite mit einer Tastatur oder einer [Sprachausgabe][MDNScreenReader]navigieren?  
-1.  Sind die Elemente der Seite für Bildschirmsprachausgaben richtig markiert?  
+1.  Are you able to navigate the page with a keyboard or [screen reader][MDNScreenReader]?  
+1.  Are the elements of the page properly marked up for screen readers?  
     
-Im Allgemeinen sollte devtools Sie bei der Behebung von Fehlern in Bezug auf Fragen #2 unterstützen, da diese Fehler in automatisierter Weise leicht zu erkennen sind.  Frage #1 ist genauso wichtig, aber leider hilft Ihnen devtools nicht.  Die einzige Möglichkeit, Fehler im Zusammenhang mit der Frage #1 zu finden, besteht darin, eine Seite mit einer Tastatur oder einer Bildschirmsprachausgabe selbst zu verwenden.  <!--See [How To Do An Accessibility Review][AccessibilityReview] to learn more.  -->  
+In general, DevTools should help you fix errors related to question #2, because these errors are easy to detect in an automated fashion.  Question #1 is just as important, but unfortunately DevTools does not help you there.  The only way to find errors related to question #1 is to try using a page with a keyboard or screen reader yourself.  <!--See [How To Do An Accessibility Review][AccessibilityReview] to learn more.  -->  
 
 <!--[AccessibilityReview]: /web/fundamentals/accessibility/how-to-review  -->  
 
-## Überwachen der Barrierefreiheit einer Seite  
+## Audit the accessibility of a page  
 
 > [!NOTE]
-> Das **Überwachungs** Panel enthält Links zu Inhalten, die auf Websites von Drittanbietern gehostet werden.  Microsoft ist nicht verantwortlich und hat keine Kontrolle über den Inhalt dieser Websites und alle Daten, die möglicherweise erfasst werden.  
+> The **Audits** panel provides links to content hosted on third-party websites.  Microsoft is not responsible for and has no control over the content of these sites and any data that may be collected.  
 
-Im Allgemeinen können Sie mithilfe des Überwachungs Panels feststellen, ob:  
+In general, use the Audits panel to determine if:  
 
-*   Eine Seite ist für Bildschirmsprachausgaben richtig markiert.  
-*   Die Textelemente auf einer Seite verfügen über ein ausreichendes Kontrastverhältnis.  Weitere Informationen finden Sie unter [Anzeigen des Kontrastverhältnisses eines Textelements in der Farbauswahl](#view-the-contrast-ratio-of-a-text-element-in-the-color-picker).  
+*   A page is properly marked up for screen readers.  
+*   The text elements on a page have sufficient contrast ratios.  See [View the contrast ratio of a text element in the Color Picker](#view-the-contrast-ratio-of-a-text-element-in-the-color-picker).  
 
-So überprüfen Sie eine Seite:  
+To audit a page:  
 
-1.  Wechseln Sie zu der URL, die Sie überwachen möchten.  
-1.  Klicken Sie in devtools auf die Registerkarte **Audits** .  DevTools zeigt Ihnen verschiedene Konfigurationsoptionen.  
+1.  Go to the URL that you want to audit.  
+1.  In DevTools, click the **Audits** tab.  DevTools shows you various configuration options.  
     
-    :::image type="complex" source="../media/accessibility-audits-pane.msft.png" alt-text="Konfigurieren von Audits" lightbox="../media/accessibility-audits-pane.msft.png":::
-       Konfigurieren von Audits  
+    :::image type="complex" source="../media/accessibility-audits-pane.msft.png" alt-text="Configure audits" lightbox="../media/accessibility-audits-pane.msft.png":::
+       Configure audits  
     :::image-end:::  
     
     > [!NOTE]
-    > Die Screenshots in diesem Abschnitt wurden mit Version 79 von Microsoft Edge übernommen.  Sie können überprüfen, welche Version Sie Ausführen `edge://version` .  Die Benutzeroberfläche des **Überwachungs** Panels sieht in früheren Versionen von Microsoft Edge anders aus, der allgemeine Workflow ist jedoch identisch.  
+    > The screenshots in this section were taken with version 79 of Microsoft Edge.  You may check what version you are running at `edge://version`.  The **Audits** panel UI looks different in earlier versions of Microsoft Edge, but the general workflow is the same.  
     
-1.  Wählen Sie für **Gerät**den Eintrag **Handy** aus, wenn Sie ein mobiles Gerät simulieren möchten.  Mit dieser Option wird die Zeichenfolge des Benutzer-Agents geändert und die Größe des Viewports geändert.  Wenn die Mobile Version der Seite anders als die Desktop Version angezeigt wird, kann sich diese Option erheblich auf die Ergebnisse ihrer Überwachung auswirken.  
-1.  Stellen Sie im Abschnitt **Audits** sicher, dass die **Barrierefreiheit** aktiviert ist.  Deaktivieren Sie die anderen Kategorien, wenn Sie Sie aus dem Bericht ausschließen möchten.  Lassen Sie sie aktiviert, wenn Sie andere Möglichkeiten entdecken möchten, um die Qualität Ihrer Seite zu verbessern.  
-1.  Im Abschnitt **Drosselung** können Sie das Netzwerk und die CPU Drosseln, was bei der Analyse der Auslastungs Leistung hilfreich ist.  Diese Option sollte für den Zugriff auf die Barrierefreiheit irrelevant sein, daher können Sie das, was Sie bevorzugen, verwenden.  
-1.  Mit dem Kontrollkästchen **Speicher löschen** können Sie den gesamten Speicher löschen, bevor Sie die Seite laden, oder den Speicherplatz zwischen den Seitenlasten bewahren.  Diese Option ist möglicherweise auch für das Ergebnis der Barrierefreiheit irrelevant, sodass Sie die von Ihnen bevorzugten Optionen verwenden können.  
-1.  Klicken Sie auf **Überwachungen ausführen**. Nach 10 bis 30 Sekunden bietet devtools einen Bericht.  Ihr Bericht gibt Ihnen verschiedene Tipps, wie Sie die Barrierefreiheit der Seite verbessern können.  
+1.  For **Device**, select **Mobile** if you want to simulate a mobile device.  This option changes your user agent string and resizes the viewport.  If the mobile version of the page displays differently than the desktop version, this option could have a significant effect on the results of your audit.  
+1.  In the **Audits** section, make sure that **Accessibility** is enabled.  Disable the other categories if you want to exclude them from your report.  Leave them enabled if you want to discover other ways to improve the quality of your page.  
+1.  The **Throttling** section lets you throttle the network and CPU, which is useful when analyzing load performance.  This option should be irrelevant to your accessibility score, so you may use whatever you prefer.  
+1.  The **Clear Storage** checkbox lets you clear all storage before loading the page, or preserve storage between page loads.  This option is also probably irrelevant to your accessibility score, so you may use whatever you prefer.  
+1.  Click **Run Audits**. After 10 to 30 seconds, DevTools provides a report.  Your report gives you various tips on how to improve the accessibility of the page.  
     
-    :::image type="complex" source="../media/accessibility-audits-run-audits-result.msft.png" alt-text="Einen Bericht" lightbox="../media/accessibility-audits-run-audits-result.msft.png":::
-       Einen Bericht  
+    :::image type="complex" source="../media/accessibility-audits-run-audits-result.msft.png" alt-text="Configure audits" lightbox="../media/accessibility-audits-run-audits-result.msft.png":::
+       A report  
     :::image-end:::  
     
-1.  Klicken Sie auf eine Überwachung, um mehr darüber zu erfahren.  
+1.  Click an audit to learn more about it.  
     
-    :::image type="complex" source="../media/accessibility-audits-run-audits-result-issues-expanded.msft.png" alt-text="Weitere Informationen zu einer Überwachung" lightbox="../media/accessibility-audits-run-audits-result-issues-expanded.msft.png":::
-       Weitere Informationen zu einer Überwachung  
+    :::image type="complex" source="../media/accessibility-audits-run-audits-result-issues-expanded.msft.png" alt-text="Configure audits" lightbox="../media/accessibility-audits-run-audits-result-issues-expanded.msft.png":::
+       More information about an audit  
     :::image-end:::  
     
-1.  Klicken Sie auf **Weitere Informationen** , um die Dokumentation dieser Überwachung anzuzeigen.  
+1.  Click **Learn More** to view the documentation of that audit.  
     
-    :::image type="complex" source="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png" alt-text="Anzeigen der Dokumentation einer Überwachung" lightbox="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png":::
-       Anzeigen der Dokumentation einer Überwachung  
+    :::image type="complex" source="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png" alt-text="Configure audits" lightbox="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png":::
+       View the documentation of an audit  
     :::image-end:::  
     
-### Siehe auch: aXe Extension  
+### See also: aXe extension  
 
-Möglicherweise bevorzugen Sie die [Axt-Erweiterung][ChromeWebStoreAxe] anstelle des **Überwachungs** Panels.  
-Die aXe-Erweiterung bietet im Allgemeinen dieselben Informationen, da es sich um das zugrunde liegende Modul handelt, das das Überwachungs Panel ausmacht.  Die aXe-Erweiterung hat eine andere Benutzeroberfläche und beschreibt die Überwachungen etwas anders.  
-Ein Vorteil, den die Axt-Erweiterung über das **Überwachungs** Panel hat, besteht darin, dass Sie fehlerhafte Knoten überprüfen und markieren können.  
+You may prefer to use the [aXe extension][ChromeWebStoreAxe] rather than the **Audits** panel.  
+The aXe extension generally provides the same information, since it is the underlying engine that powers the Audits panel.  The aXe extension has a different UI and describes audits slightly differently.  
+One advantage that the aXe extension has over the **Audits** panel is that it enables you to inspect and highlight failing nodes.  
 
-:::image type="complex" source="../media/accessibility-devtools-extension-axe-panel.msft.png" alt-text="Die Axt-Erweiterung" lightbox="../media/accessibility-devtools-extension-axe-panel.msft.png":::
-   Die Axt-Erweiterung  
+:::image type="complex" source="../media/accessibility-devtools-extension-axe-panel.msft.png" alt-text="Configure audits" lightbox="../media/accessibility-devtools-extension-axe-panel.msft.png":::
+   The aXe extension  
 :::image-end:::  
 
-## Der Bereich "Barrierefreiheit"  
+## The Accessibility pane  
 
-Im Bereich " **Barrierefreiheit** " werden die Barrierefreiheits Struktur, Aria-Attribute und berechnete Barrierefreiheitseigenschaften von DOM-Knoten angezeigt.  
+The **Accessibility** pane is where you view the accessibility tree, ARIA attributes, and computed accessibility properties of DOM nodes.  
 
-So öffnen Sie den Bereich **Barrierefreiheit** :  
+To open the **Accessibility** pane:  
 
-1.  Klicken Sie auf die Registerkarte **Elemente** .  
-1.  Wählen Sie in der **DOM-Struktur**das Element aus, das Sie überprüfen möchten.  
-1.  Klicken Sie auf die Registerkarte **Barrierefreiheit** .  Diese Registerkarte ist möglicherweise hinter der Schaltfläche **weitere Registerkarten** \ ( ![ weitere Registerkarten ][ImageMoreTabsIcon] \) verborgen.  
+1.  Click the **Elements** tab.  
+1.  In the **DOM Tree**, select the element which you want to inspect.  
+1.  Click the **Accessibility** tab.  This tab may be hidden behind the **More Tabs** \(![More Tabs][ImageMoreTabsIcon]\) button.  
 
-:::image type="complex" source="../media/accessibility-elements-accessibility.msft.png" alt-text="Überprüfen des H1-Elements der devtools-Homepage im Bereich "Barrierefreiheit"" lightbox="../media/accessibility-elements-accessibility.msft.png":::
-   Überprüfen des `h1` Elements der devtools-Homepage im Bereich " **Barrierefreiheit** "  
+:::image type="complex" source="../media/accessibility-elements-accessibility.msft.png" alt-text="Configure audits" lightbox="../media/accessibility-elements-accessibility.msft.png":::
+   Inspect the `h1` element of the DevTools homepage in the **Accessibility** pane  
 :::image-end:::  
 
-### Anzeigen der Position eines Elements in der Barrierefreiheits Struktur  
+### View the position of an element in the accessibility tree  
 
-Die [Barrierefreiheits Struktur][MDNAccessibilityTree] ist eine Teilmenge der DOM-Struktur.  Sie enthält nur Elemente aus der DOM-Struktur, die für die Anzeige des Inhalts einer Seite in einer Sprachausgabe relevant und nützlich sind.  
+The [accessibility tree][MDNAccessibilityTree] is a subset of the DOM tree.  It only contains elements from the DOM tree that are relevant and useful for displaying the contents of a page in a screen reader.  
 
-Überprüfen Sie die Position eines Elements in der Barrierefreiheits Struktur aus dem [Bereich Barrierefreiheit](#the-accessibility-pane).  
+Inspect the position of an element in the accessibility tree from the [Accessibility pane](#the-accessibility-pane).  
 
-:::image type="complex" source="../media/accessibility-elements-accessibility-tree.msft.png" alt-text="Abschnitt "Barrierefreiheits Struktur"" lightbox="../media/accessibility-elements-accessibility-tree.msft.png":::
-   Abschnitt " **Barrierefreiheits Struktur** "  
+:::image type="complex" source="../media/accessibility-elements-accessibility-tree.msft.png" alt-text="Configure audits" lightbox="../media/accessibility-elements-accessibility-tree.msft.png":::
+   The **Accessibility Tree** section  
 :::image-end:::  
 
-### Anzeigen der Aria-Attribute eines Elements  
+### View the ARIA attributes of an element  
 
-Aria-Attribute stellen sicher, dass Bildschirmsprachausgaben alle Informationen enthalten, die Sie benötigen, um den Inhalt einer Seite ordnungsgemäß darzustellen.  
+ARIA attributes ensure that screen readers have all of the information that they need in order to properly represent the contents of a page.  
 
-Zeigen Sie die Aria-Attribute eines Elements im [Bereich "Barrierefreiheit"](#the-accessibility-pane)an.  
+View the ARIA attributes of an element in the [Accessibility pane](#the-accessibility-pane).  
 
-:::image type="complex" source="../media/accessibility-elements-accessibility-aria-attributes.msft.png" alt-text="Der Abschnitt "Aria-Attribute"" lightbox="../media/accessibility-elements-accessibility-aria-attributes.msft.png":::
-   Der Abschnitt " **Aria-Attribute** "  
+:::image type="complex" source="../media/accessibility-elements-accessibility-aria-attributes.msft.png" alt-text="Configure audits" lightbox="../media/accessibility-elements-accessibility-aria-attributes.msft.png":::
+   The **ARIA Attributes** section  
 :::image-end:::  
 
-### Anzeigen der berechneten Barrierefreiheitseigenschaften eines Elements  
+### View the computed accessibility properties of an element  
 
 > [!NOTE]
-> Wenn Sie nach berechneten CSS-Eigenschaften suchen, lesen Sie die [Registerkarte berechnet][DevtoolsCssReferenceViewActuallyAppliedElements].  
+> If you are looking for computed CSS properties, see the [Computed tab][DevtoolsCssReferenceViewActuallyAppliedElements].  
 
-Einige Barrierefreiheitseigenschaften werden vom Browser dynamisch berechnet.  Diese Eigenschaften werden im Abschnitt " **berechnete Eigenschaften** " des **Barrierefreiheits** Bereichs angezeigt.  
+Some accessibility properties are dynamically calculated by the browser.  These properties are displayed in the **Computed Properties** section of the **Accessibility** pane.  
 
-Zeigen Sie die berechneten Barrierefreiheitseigenschaften eines Elements im [Bereich "Barrierefreiheit"](#the-accessibility-pane)an.  
+View the computed accessibility properties of an element in the [Accessibility pane](#the-accessibility-pane).  
 
-:::image type="complex" source="../media/accessibility-elements-accessibility-computed-properties.msft.png" alt-text="Abschnitt "berechnete Eigenschaften" im Bereich "Barrierefreiheit"" lightbox="../media/accessibility-elements-accessibility-computed-properties.msft.png":::
-   Abschnitt " **berechnete Eigenschaften** " im Bereich " **Barrierefreiheit** "  
+:::image type="complex" source="../media/accessibility-elements-accessibility-computed-properties.msft.png" alt-text="Configure audits" lightbox="../media/accessibility-elements-accessibility-computed-properties.msft.png":::
+   The **Computed Properties** section of the **Accessibility** pane  
 :::image-end:::  
 
-## Anzeigen des Kontrastverhältnisses eines Textelements in der Farbauswahl  
+## View the contrast ratio of a text element in the Color Picker  
 
-Einige Personen mit Sehbehinderungen sehen keine Bereiche als sehr hell oder sehr dunkel.  Alles neigt dazu, bei ungefähr der gleichen Helligkeit zu erscheinen, wodurch es schwierig ist, Konturen und Kanten zu unterscheiden.  
+Some people with low vision do not see areas as very bright or very dark.  Everything tends to appear at about the same brightness, which makes it hard to distinguish outlines and edges.  
 
-Das Kontrastverhältnis misst den Helligkeitsunterschied zwischen Vordergrund und Hintergrund des Texts.  Wenn Ihr Text ein kontrastarmes Verhältnis hat, können diese sehbehinderten Benutzer Ihre Website buchstäblich als einen leeren Bildschirm sehen.  
+Contrast ratio measures the difference in brightness between the foreground and background of text.  If your text has a low contrast ratio, then these low vision users may literally experience your site as a blank screen.  
 
-Mit der Farbauswahl können Sie überprüfen, ob Ihr Text die empfohlenen Kontrast Raten erfüllt:  
+The Color Picker helps you verify that your text meets recommended contrast ratio levels:  
 
-1.  Klicken Sie auf die Registerkarte **Elemente** .  
-1.  Wählen Sie in der **DOM-Struktur**das Textelement aus, das Sie überprüfen möchten.  
+1.  Click the **Elements** tab.  
+1.  In the **DOM Tree**, select the text element that you want to inspect.  
     
-    :::image type="complex" source="../media/accessibility-elements-paragraph-highlight.msft.png" alt-text="Überprüfen eines Absatzes in der DOM-Struktur" lightbox="../media/accessibility-elements-paragraph-highlight.msft.png":::
-       Überprüfen eines Absatzes in der **DOM-Struktur**  
+    :::image type="complex" source="../media/accessibility-elements-paragraph-highlight.msft.png" alt-text="Configure audits" lightbox="../media/accessibility-elements-paragraph-highlight.msft.png":::
+       Inspect a paragraph in the **DOM Tree**  
     :::image-end:::  
     
-1.  Klicken Sie im Bereich **Formatvorlagen** auf das Farbquadrat neben dem `color` Wert des Elements.  
+1.  In the **Styles** pane, click the color square next to the `color` value of the element.  
     
-    :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color.msft.png" alt-text="Die Color-Eigenschaft des Elements" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color.msft.png":::
-       Die `color` Eigenschaft des Elements  
+    :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color.msft.png" alt-text="Configure audits" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color.msft.png":::
+       The `color` property of the element  
     :::image-end:::  
     
-1.  Überprüfen Sie den Abschnitt **Kontrastverhältnis** der Farbauswahl.  Ein Häkchen bedeutet, dass das Element die [minimale Empfehlung][W3CContrastMinimum]erfüllt.  Zwei Kontrollkästchen bedeuten, dass die [Erweiterte Empfehlung][W3CContrastEnhanced]erfüllt ist.  
+1.  Check the **Contrast Ratio** section of the Color Picker.  One checkmark means that the element meets the [minimum recommendation][W3CContrastMinimum].  Two checkmarks means that it meets the [enhanced recommendation][W3CContrastEnhanced].  
     
-    :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png" alt-text="Der Abschnitt "Kontrastverhältnis" der Farbauswahl zeigt zwei Häkchen und einen Wert von 13,97." lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png":::
-       Der Abschnitt " **Kontrastverhältnis** " der Farbauswahl zeigt zwei Häkchen und einen Wert von `13.97`  
+    :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png" alt-text="Configure audits" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png":::
+       The **Contrast Ratio** section of the Color Picker shows 2 checkmarks and a value of `13.97`  
     :::image-end:::  
     
-1.  Klicken Sie auf den Abschnitt **Kontrastverhältnis** , um weitere Informationen anzuzeigen.  Eine Zeile wird in der visuellen Auswahl oben in der Farbauswahl angezeigt.  Wenn die aktuelle Farbe Empfehlungen erfüllt, entspricht alles, was auf der gleichen Seite der Zeile steht, auch Empfehlungen.  Wenn die aktuelle Farbe keine Empfehlungen erfüllt, entspricht alles auf der gleichen Seite auch nicht den Empfehlungen.  
+1.  Click the **Contrast Ratio** section to see more information.  A line appears in the visual picker at the top of the Color Picker.  If the current color meets recommendations, then anything on the same side of the line also meets recommendations.  If the current color does not meet recommendations, then anything on the same side also does not meet recommendations.  
     
-    :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png" alt-text="Die Zeile "Kontrastverhältnis" in der visuellen Auswahl" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png":::
-       Die Zeile " **Kontrastverhältnis** " in der visuellen Auswahl  
+    :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png" alt-text="Configure audits" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png":::
+       The **Contrast Ratio** Line in the visual picker  
     :::image-end:::  
     
 <!--## Feedback   -->  
@@ -196,24 +196,24 @@ Mit der Farbauswahl können Sie überprüfen, ob Ihr Text die empfohlenen Kontra
 
 <!-- links -->  
 
-[DevtoolsAccessibilityNavigation]: ./navigation.md "Navigieren in Microsoft Edge devtools mit Hilfstechnologien | Microsoft docs"  
-[DevtoolsCssReferenceViewActuallyAppliedElements]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "Anzeigen nur des CSS, das tatsächlich auf ein Element angewendet wird-CSS-Referenz | Microsoft docs"  
+[DevtoolsAccessibilityNavigation]: ./navigation.md "Navigate Microsoft Edge DevTools With Assistive Technology | Microsoft Docs"  
+[DevtoolsCssReferenceViewActuallyAppliedElements]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "View only the CSS that is actually applied to an element - CSS Reference | Microsoft Docs"  
 
-[ChromeWebStoreAxe]: https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US "Axe – Web-Barrierefreiheits Tests – Chrome Web Store"  
+[ChromeWebStoreAxe]: https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US "axe - Web Accessibility Testing - Chrome Web Store"  
 
-[MDNAccessibilityTree]: https://developer.mozilla.org/docs/Glossary/AOM "Barrierefreiheits Struktur (AOM) | MDN"  
-[MDNAccessibility]: https://developer.mozilla.org/docs/Web/Accessibility "Barrierefreiheit | MDN"  
-[MDNScreenReader]: https://developer.mozilla.org/docs/Glossary/Screen_reader "Sprachausgabe | MDN"  
+[MDNAccessibilityTree]: https://developer.mozilla.org/docs/Glossary/AOM "Accessibility tree (AOM) | MDN"  
+[MDNAccessibility]: https://developer.mozilla.org/docs/Web/Accessibility "Accessibility | MDN"  
+[MDNScreenReader]: https://developer.mozilla.org/docs/Glossary/Screen_reader "Screen reader | MDN"  
 
-[W3CContrastEnhanced]: https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced "Kontrast (erweitert) AAA-Ebene | W3C"  
-[W3CContrastMinimum]: https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum "Kontrast (Mindest) Ebene AA | W3C"  
+[W3CContrastEnhanced]: https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced "Contrast (Enhanced) Level AAA | W3C"  
+[W3CContrastMinimum]: https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum "Contrast (Minimum) Level AA | W3C"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
-> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
+> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
-Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
+This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

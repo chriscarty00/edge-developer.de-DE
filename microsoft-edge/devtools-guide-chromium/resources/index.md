@@ -1,12 +1,12 @@
 ---
-description: Organisieren Sie Ressourcen nach Frame, Domäne, Typ oder anderen Kriterien.
-title: Anzeigen von Seitenressourcen mit Microsoft Edge devtools
+description: Organize resources by frame, domain, type, or other criteria.
+title: View Page Resources With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+keywords: microsoft edge, web development, f12 tools, devtools
 ms.openlocfilehash: 4f90927cc4044c722d9a62ab4b0427aa2753e4c5
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -32,129 +32,129 @@ ms.locfileid: "10993590"
 
 
 
-# Anzeigen von Seitenressourcen mit Microsoft Edge devtools   
+# View page resources with Microsoft Edge DevTools   
 
   
 
-In diesem Leitfaden lernen Sie, wie Sie Microsoft Edge devtools verwenden, um die Ressourcen einer Webseite anzuzeigen.  Ressourcen sind die Dateien, die eine Seite benötigt, um ordnungsgemäß angezeigt zu werden.  Beispiele für Ressourcen sind CSS-, JavaScript-und HTML-Dateien sowie Bilder.  
+This guide teaches you how to use Microsoft Edge DevTools to view the resources of a web page.  Resources are the files that a page needs in order to display correctly.  Examples of resources include CSS, JavaScript, and HTML files, as well as images.  
 
-In diesem Leitfaden wird davon ausgegangen, dass Sie mit den Grundlagen der [Webentwicklung][MDNLearnWebDevelopment] und der [Microsoft Edge-devtools][MicrosoftEdgeDevTools]vertraut sind.  
+This guide assumes that you are familiar with the basics of [web development][MDNLearnWebDevelopment] and [Microsoft Edge DevTools][MicrosoftEdgeDevTools].  
 
-## Öffnen von Ressourcen   
+## Open resources   
 
-Wenn Sie den Namen der Ressource kennen, die Sie überprüfen möchten, bietet das **Befehlsmenü** eine schnelle Möglichkeit zum Öffnen der Ressource.  
+When you know the name of the resource that you want to inspect, the **Command Menu** provides a fast way of opening the resource.  
 
-1.  Drücken Sie `Control` + `P` \ (Windows \) oder `Command` + `P` \ (macOS \).  Das Dialogfeld **Datei öffnen** wird geöffnet.  
+1.  Press `Control`+`P` \(Windows\) or `Command`+`P` \(macOS\).  The **Open File** dialog opens.  
     
-    :::image type="complex" source="../media/resources-command-menu-empty.msft.png" alt-text="Dialogfeld ' Datei öffnen '" lightbox="../media/resources-command-menu-empty.msft.png":::
-       Dialogfeld ' **Datei öffnen** '  
+    :::image type="complex" source="../media/resources-command-menu-empty.msft.png" alt-text="The Open File dialog" lightbox="../media/resources-command-menu-empty.msft.png":::
+       The **Open File** dialog  
     :::image-end:::  
     
-1.  Wählen Sie die Datei aus der Dropdownliste aus, oder geben Sie den Dateinamen ein, und drücken Sie `Enter` im Feld AutoVervollständigen, sobald die richtige Datei hervorgehoben ist.  
+1.  Select the file from the dropdown, or start typing the filename and press `Enter` once the correct file is highlighted in the autocomplete box.  
     
-    :::image type="complex" source="../media/resources-command-menu-file-search.msft.png" alt-text="Geben Sie im Dialogfeld "Datei öffnen" einen Dateinamen ein." lightbox="../media/resources-command-menu-file-search.msft.png":::
-       Geben Sie im Dialogfeld " **Datei öffnen** " einen Dateinamen ein.  
+    :::image type="complex" source="../media/resources-command-menu-file-search.msft.png" alt-text="The Open File dialog" lightbox="../media/resources-command-menu-file-search.msft.png":::
+       Type a filename in the **Open File** dialog  
     :::image-end:::  
     
-### Öffnen von Ressourcen im Netzwerk Panel   
+### Open resources in the Network panel   
 
-Weitere Informationen finden Sie unter [Überprüfen der Details einer Ressource][DevtoolsNetworkInspectDetailsResource].  
+See [Inspect the details of a resource][DevtoolsNetworkInspectDetailsResource].  
 
-:::image type="complex" source="../media/resources-network-response.msft.png" alt-text="Überprüfen einer Ressource im Netzwerk Panel" lightbox="../media/resources-network-response.msft.png":::
-   Überprüfen einer Ressource im **Netzwerk** Panel  
+:::image type="complex" source="../media/resources-network-response.msft.png" alt-text="The Open File dialog" lightbox="../media/resources-network-response.msft.png":::
+   Inspect a resource in the **Network** panel  
 :::image-end:::  
 
-### Anzeigen von Ressourcen im Netzwerk Panel von anderen Panels   
+### Reveal resources in the Network panel from other panels   
 
-Im Abschnitt [Ressourcen durchsuchen](#browse-resources) wird gezeigt, wie Sie Ressourcen aus verschiedenen Teilen der devtools-Benutzeroberfläche anzeigen können.  Wenn Sie jemals eine Ressource im **Netzwerk** Panel überprüfen möchten, klicken Sie mit der rechten Maustaste auf die Ressource, und wählen Sie **in der Netzwerksteuerung**anzeigen aus.  
+The [Browse resources](#browse-resources) section below shows you how to view resources from various parts of the DevTools UI.  If you ever want to inspect a resource in the **Network** panel, right-click the resource and select **Reveal in Network panel**.  
 
-:::image type="complex" source="../media/resources-sources-page-reveal-in-network-panel.msft.png" alt-text="Im Netzwerk Panel anzeigen" lightbox="../media/resources-sources-page-reveal-in-network-panel.msft.png":::
-   **Im Netzwerk Panel anzeigen**  
+:::image type="complex" source="../media/resources-sources-page-reveal-in-network-panel.msft.png" alt-text="The Open File dialog" lightbox="../media/resources-sources-page-reveal-in-network-panel.msft.png":::
+   **Reveal in Network panel**  
 :::image-end:::  
 
-## Ressourcen durchsuchen   
+## Browse resources   
 
-### Durchsuchen von Ressourcen im Netzwerk Panel   
+### Browse resources in the Network panel   
 
-Siehe [Protokoll Netzwerkaktivität][DevtoolsNetworkLogActivity].  
+See [Log network activity][DevtoolsNetworkLogActivity].  
 
-:::image type="complex" source="../media/resources-network-resources.msft.png" alt-text="Seitenressourcen im Netzwerkprotokoll" lightbox="../media/resources-network-resources.msft.png":::
-   Seitenressourcen im **Netzwerk** Protokoll  
+:::image type="complex" source="../media/resources-network-resources.msft.png" alt-text="The Open File dialog" lightbox="../media/resources-network-resources.msft.png":::
+   Page resources in the **Network** Log  
 :::image-end:::  
 
-### Durchsuchen nach Verzeichnissen   
+### Browse by directory   
 
-So zeigen Sie die Ressourcen einer Seite an, die nach Verzeichnis geordnet ist:  
+To view the resources of a page organized by directory:  
 
-1.  Klicken Sie auf die Registerkarte **Quellen** , um das **Quellen** Panel zu öffnen.  
-1.  Klicken Sie auf das **Seiten** Register, um die Ressourcen der Seite anzuzeigen.  Der **Seiten** Bereich wird geöffnet.  
+1.  Click the **Sources** tab to open the **Sources** panel.  
+1.  Click the **Page** tab to show the resources of the page.  The **Page** pane opens.  
     
-    :::image type="complex" source="../media/resources-sources-page-empty.msft.png" alt-text="Seitenbereich" lightbox="../media/resources-sources-page-empty.msft.png":::
-       **Seiten** Bereich  
+    :::image type="complex" source="../media/resources-sources-page-empty.msft.png" alt-text="The Open File dialog" lightbox="../media/resources-sources-page-empty.msft.png":::
+       The **Page** pane  
     :::image-end:::  
     
-    Nachfolgend finden Sie eine Aufschlüsselung der nicht offensichtlichen Elemente in der vorherigen Abbildung.  
+    Here is a breakdown of the non-obvious items in the previous figure.  
     
-    | Seitenelement | Beschreibung |  
+    | Page item | Description |  
     |:--- |:--- |  
-    | `top` | Der Haupt Kontext des Dokument [Browsers][MDNInlineFrame] |  
-    | `airhorner.com` | Die Domäne.  Alle darunter geschachtelten Ressourcen stammen aus dieser Domäne.  Beispielsweise ist die vollständige URL der `comlink.global.j` Datei wahrscheinlich `https://airhorner.com/scripts/comlink.global.js` . |  
-    | `scripts` | Ein Verzeichnis. |  
-    | `(index)` | Das HTML-Hauptdokument. |  
-    | `sw.js` | Ein Service Worker-Laufzeitkontext. |  
+    | `top` | The main document [browsing context][MDNInlineFrame]. |  
+    | `airhorner.com` | The domain.  All resources nested under it come from that domain.  For example, the full URL of the `comlink.global.j` file is probably `https://airhorner.com/scripts/comlink.global.js`. |  
+    | `scripts` | A directory. |  
+    | `(index)` | The main HTML document. |  
+    | `sw.js` | A service worker runtime context. |  
     
-1.  Klicken Sie auf eine Ressource, um Sie im **Editor**anzuzeigen.  
+1.  Click a resource to view it in the **Editor**.  
     
-    :::image type="complex" source="../media/resources-sources-page-resource.msft.png" alt-text="Anzeigen einer Datei im Editor" lightbox="../media/resources-sources-page-resource.msft.png":::
-       Anzeigen einer Datei im **Editor**  
+    :::image type="complex" source="../media/resources-sources-page-resource.msft.png" alt-text="The Open File dialog" lightbox="../media/resources-sources-page-resource.msft.png":::
+       View a file in the **Editor**  
     :::image-end:::  
     
-### Nach Dateiname suchen   
+### Browse by filename   
 
-Standardmäßig werden im **Seiten** Bereich Ressourcen nach Verzeichnis gruppiert.  So deaktivieren Sie diese Gruppierung und zeigen die Ressourcen für jede Domäne als flache Liste an:  
+By default the **Page** pane groups resources by directory.  To disable this grouping and view the resources for each domain as a flat list:  
 
-1.  Öffnen des **Seiten** Bereichs  Siehe [Verzeichnis durchsuchen](#browse-by-directory).  
-1.  Klicken Sie auf **Weitere Optionen** `...` , und deaktivieren Sie " **Gruppieren nach"**.  
+1.  Open the **Page** pane.  See [Browse by directory](#browse-by-directory).  
+1.  Click **More Options** `...` and disable **Group By Folder**.  
     
-    :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text="Die Option "Gruppieren nach"" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
-       Die Option **"Gruppieren nach"**  
+    :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text="The Open File dialog" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
+       The **Group By Folder** option  
     :::image-end:::  
     
-    Ressourcen sind nach Dateityp geordnet.  Innerhalb der einzelnen Dateitypen werden die Ressourcen alphabetisch geordnet.  
+    Resources are organized by file type.  Within each file type the resources are organized alphabetically.  
     
-    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="Seitenbereich nach Deaktivierung des Ordners "Gruppieren nach"" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
-       **Seiten** Bereich nach Deaktivierung des **Ordners "Gruppieren nach"**  
+    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="The Open File dialog" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
+       The **Page** pane after disabling **Group By Folder**  
     :::image-end:::  
     
-### Nach Dateityp suchen   
+### Browse by file type   
 
-So gruppieren Sie Ressourcen basierend auf Ihrem Dateityp zusammen:  
+To group resources together based on their file type:  
 
-1.  Klicken Sie auf die Registerkarte **Anwendung** .  Das **Anwendungs** Fenster wird geöffnet.  Standardmäßig wird der Bereich **Manifest** in der Regel zuerst geöffnet.  
+1.  Click the **Application** tab.  The **Application** panel opens.  By default the **Manifest** pane usually opens first.  
     
-    :::image type="complex" source="../media/resources-application-mainfest-airhorner.msft.png" alt-text="Anwendungs Panel" lightbox="../media/resources-application-mainfest-airhorner.msft.png":::
-       **Anwendungs** Panel  
+    :::image type="complex" source="../media/resources-application-mainfest-airhorner.msft.png" alt-text="The Open File dialog" lightbox="../media/resources-application-mainfest-airhorner.msft.png":::
+       The **Application** panel  
     :::image-end:::  
     
-1.  Scrollen Sie nach unten zum Bereich **Frames** .  
+1.  Scroll down to the **Frames** pane.  
     
-    :::image type="complex" source="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png" alt-text="Der Bereich "Frames"" lightbox="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png":::
-       Der Bereich " **Frames** "  
+    :::image type="complex" source="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png" alt-text="The Open File dialog" lightbox="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png":::
+       The **Frames** pane  
     :::image-end:::  
     
-1.  Erweitern Sie die Abschnitte, an denen Sie interessiert sind.  
-1.  Klicken Sie auf eine Ressource, um Sie anzuzeigen.  
+1.  Expand the sections in which you are interested.  
+1.  Click a resource to view it.  
     
-    :::image type="complex" source="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png" alt-text="Anzeigen einer Ressource im Anwendungs Panel" lightbox="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png":::
-       Anzeigen einer Ressource im **Anwendungs** Panel  
+    :::image type="complex" source="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png" alt-text="The Open File dialog" lightbox="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png":::
+       View a resource in the **Application** panel  
     :::image-end:::  
     
-#### Dateien nach Typ im Netzwerk Panel durchsuchen   
+#### Browse files by type in the Network panel   
 
-Siehe [Filtern nach Ressourcentyp][DevtoolsNetworkFilterByResourceType].  
+See [Filter by resource type][DevtoolsNetworkFilterByResourceType].  
 
-:::image type="complex" source="../media/resources-network-resources-filter-css.msft.png" alt-text="Filtern nach CSS im Netzwerkprotokoll" lightbox="../media/resources-network-resources-filter-css.msft.png":::
-   Filtern nach CSS im **Netzwerk** Protokoll  
+:::image type="complex" source="../media/resources-network-resources-filter-css.msft.png" alt-text="The Open File dialog" lightbox="../media/resources-network-resources-filter-css.msft.png":::
+   Filter for CSS in the **Network** Log  
 :::image-end:::  
 
 <!--  
@@ -165,20 +165,20 @@ Siehe [Filtern nach Ressourcentyp][DevtoolsNetworkFilterByResourceType].
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chrom)-Entwicklertools | Microsoft docs"  
-[DevtoolsNetworkFilterByResourceType]: ../network/index.md#filter-by-resource-type "Nach Ressourcentyp Filtern – Überprüfen der Netzwerkaktivität in Microsoft Edge devtools | Microsoft docs"  
-[DevtoolsNetworkInspectDetailsResource]: ../network/index.md#inspect-the-details-of-the-resource "Überprüfen Sie die Details der Ressource – Überprüfen der Netzwerkaktivität in Microsoft Edge devtools | Microsoft docs"  
-[DevtoolsNetworkLogActivity]: ../network/index.md#log-network-activity "Protokollieren von Netzwerkaktivitäten – Überprüfen der Netzwerkaktivität in Microsoft Edge devtools | Microsoft docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"  
+[DevtoolsNetworkFilterByResourceType]: ../network/index.md#filter-by-resource-type "Filter by resource type - Inspect network activity in Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsNetworkInspectDetailsResource]: ../network/index.md#inspect-the-details-of-the-resource "Inspect the details of the resource - Inspect network activity in Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsNetworkLogActivity]: ../network/index.md#log-network-activity "Log network activity - Inspect network activity in Microsoft Edge DevTools | Microsoft Docs"  
 
-[MDNInlineFrame]: https://developer.mozilla.org/docs/Web/HTML/Element/iframe "<IFRAME->: das Inline Frame-Element | MDN"  
-[MDNLearnWebDevelopment]: https://developer.mozilla.org/docs/Learn "Web-Entwicklung kennenlernen | MDN"  
+[MDNInlineFrame]: https://developer.mozilla.org/docs/Web/HTML/Element/iframe "<iframe>: The Inline Frame element | MDN"  
+[MDNLearnWebDevelopment]: https://developer.mozilla.org/docs/Learn "Learn web development | MDN"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
-> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/resources/index) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
+> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/resources/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
-Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
+This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

@@ -1,12 +1,12 @@
 ---
-description: Informationen zum Anzeigen und Ändern von IndexedDB-Daten mit dem Anwendungs Panel und Snippets.
-title: Anzeigen und Ändern von IndexedDB-Daten mit Microsoft Edge devtools
+description: How to view and change IndexedDB data with the Application panel and Snippets.
+title: View And Change IndexedDB Data With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+keywords: microsoft edge, web development, f12 tools, devtools
 ms.openlocfilehash: 6b1209ddcbfac305535d9d61e001441dbf61b6ec
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -32,127 +32,127 @@ ms.locfileid: "10993562"
 
 
 
-# Anzeigen und Ändern von IndexedDB-Daten mit Microsoft Edge devtools   
+# View and change IndexedDB data with Microsoft Edge DevTools   
 
   
 
-Dieser Leitfaden zeigt, wie Sie [Microsoft Edge devtools][MicrosoftEdgeDevTools] verwenden, um [IndexedDB][MDNIndexedDBAPI] -Daten anzuzeigen und zu ändern.  Es wird davon ausgegangen, dass Sie mit devtools vertraut sind.  Außerdem wird davon ausgegangen, dass Sie mit IndexedDB vertraut sind.  Wenn dies nicht der Fall ist, lesen Sie [Verwenden von IndexedDB][MDNUsingIndexedDB].  
+This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to view and change [IndexedDB][MDNIndexedDBAPI] data.  It assumes you are familiar with DevTools.  It also assumes you are familiar with IndexedDB.  If not, see [Using IndexedDB][MDNUsingIndexedDB].  
 
-## Anzeigen von IndexedDB-Daten   
+## View IndexedDB data   
 
-1.  Wählen Sie die Registerkarte **Anwendung** aus, um den **Anwendungs** Panel zu öffnen.  Der Bereich **Manifest** wird normalerweise standardmäßig geöffnet.  
+1.  Select the **Application** tab to open the **Application** panel.  The **Manifest** pane usually opens by default.  
     
-    :::image type="complex" source="../media/storage-application-manifest-empty.msft.png" alt-text="Bereich ' Manifest '" lightbox="../media/storage-application-manifest-empty.msft.png":::
-       Bereich ' **Manifest** '  
+    :::image type="complex" source="../media/storage-application-manifest-empty.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-manifest-empty.msft.png":::
+       The **Manifest** pane  
     :::image-end:::  
     
-1.  Erweitern Sie das **IndexedDB** -Menü, um zu sehen, welche Datenbanken verfügbar sind.  
+1.  Expand the **IndexedDB** menu to see which databases are available.  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb.msft.png" alt-text="Das IndexedDB-Menü" lightbox="../media/storage-application-storage-indexeddb.msft.png":::
-       Das **IndexedDB** -Menü  
+    :::image type="complex" source="../media/storage-application-storage-indexeddb.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-storage-indexeddb.msft.png":::
+       The **IndexedDB** menu  
     :::image-end:::  
     
-    *   \ ( ![ Datenbanksymbol ][ImageDatabaseIcon] \) `notes - https://mdn.github.io` stellt eine Datenbank dar, wobei `notes` der Name der Datenbank und `https://mdn.github.io` der Ursprung ist, der auf die Datenbank zugreift.  
-    *   \ ( ![ Objektspeicher Symbol ][ImageObjectStoreIcon] \) `notes` ist ein Objektspeicher.  
-    *   **Titel** und **Text** sind [Indizes][MDNUsingIndexedDBUsingIndex].  
+    *   \(![Database icon][ImageDatabaseIcon]\) `notes - https://mdn.github.io` represents a database, where `notes` is the name of the database and `https://mdn.github.io` is the origin that accesses the database.  
+    *   \(![Object Store icon][ImageObjectStoreIcon]\) `notes` is an object store.  
+    *   **title** and **body** are [indexes][MDNUsingIndexedDBUsingIndex].  
     
     > [!NOTE]
-    > **Bekannte Einschränkung**  Datenbanken von Drittanbietern werden nicht angezeigt.  Wenn Sie beispielsweise eine Anzeige in `<iframe>` Ihre Seite einbetten und Ihr Anzeigennetzwerk IndexedDB verwendet, sind die IndexedDB-Daten für Ihr Anzeigennetzwerk nicht sichtbar.  Weitere Informationen finden Sie unter [Problem #943770][ChromiumIssue943770].  
+    > **Known Limitation**  Third-party databases are not visible.  For example, if you use an `<iframe>` to embed an ad on your page, and your ad network uses IndexedDB, the IndexedDB data for your ad network is not be visible.  See [issue #943770][ChromiumIssue943770].  
     
-1.  Wählen Sie eine Datenbank aus, um den Ursprung und die Versionsnummer anzuzeigen.  
+1.  Select a database to see the origin and version number.  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db.msft.png" alt-text="Die Notes-Datenbank" lightbox="../media/storage-application-storage-indexeddb-notes_db.msft.png":::
-       Die **Notes** -Datenbank  
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-storage-indexeddb-notes_db.msft.png":::
+       The **notes** database  
     :::image-end:::  
     
-1.  Wählen Sie einen Objektspeicher aus, um die Schlüssel-Wert-Paare anzuzeigen.  
+1.  Select an object store to see the key-value pairs.  
     
     > [!NOTE]
-    > IndexedDB-Daten werden in Echtzeit nicht aktualisiert.  Siehe [Aktualisieren von IndexedDB-Daten](#refresh-indexeddb-data).  
+    > IndexedDB data does not update in real-time.  See [Refresh IndexedDB data](#refresh-indexeddb-data).  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os.msft.png" alt-text="Der Notizen Objektspeicher" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os.msft.png":::
-       Der **Notizen** Objektspeicher  
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os.msft.png":::
+       The **notes** object store  
     :::image-end:::  
     
-    *   **Gesamt** Anzahl der Einträge ist die Gesamtzahl der Schlüssel-Wert-Paare im Objektspeicher.  
-    *   Der **Schlüsselgenerator Wert** ist der nächste verfügbare Schlüssel.  Dieses Feld wird nur angezeigt, wenn [Schlüsselgeneratoren][MDNBasicConceptsKeyGenerator]verwendet werden.  
+    *   **Total entries** is the total number of key-value pairs in the object store.  
+    *   **Key generator value** is the next available key.  This field is only shown when using [key generators][MDNBasicConceptsKeyGenerator].  
     
-1.  Wählen Sie in der Spalte **Wert** eine Zelle aus, um diesen Wert zu erweitern.  
+1.  Select a cell in the **Value** column to expand that value.  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-edge-chromium.msft.png" alt-text="Anzeigen eines IndexedDB-Werts" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-edge-chromium.msft.png":::
-       Anzeigen eines **IndexedDB** -Werts  
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-edge-chromium.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-edge-chromium.msft.png":::
+       View an **IndexedDB** value  
     :::image-end:::  
     
-1.  Wählen Sie in der folgenden Abbildung einen Index wie **Titel** oder **Text** aus, um den Objektspeicher entsprechend den Werten dieses Indexes zu sortieren.  
+1.  Select an index, such as **title** or **body** in the following figure, to sort the object store according to the values of that index.  
    
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-title.msft.png" alt-text="Sortieren eines Objektspeichers anhand eines Indexes" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-title.msft.png":::
-       Sortieren eines Objektspeichers anhand eines Indexes  
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-title.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-title.msft.png":::
+       Sort an object store by an index  
     :::image-end:::  
     
-## Aktualisieren von IndexedDB-Daten   
+## Refresh IndexedDB data   
 
-IndexedDB-Werte im **Anwendungs** Panel werden nicht in Echtzeit aktualisiert.  Wählen Sie **Aktualisieren** \ ( ![ Aktualisieren \) aus, wenn Sie ][ImageReloadIcon] einen Objektspeicher anzeigen, um die Daten zu aktualisieren, oder zeigen Sie eine Datenbank an, und klicken Sie auf **Datenbank aktualisieren** , um alle Daten zu aktualisieren.  
+IndexedDB values in the **Application** panel do not update in real-time.  Select **Refresh** \(![Refresh][ImageReloadIcon]\) when viewing an object store to refresh the data, or view a database and click **Refresh database** to refresh all data.  
 
-:::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png" alt-text="Anzeigen einer Datenbank" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png":::
-   Anzeigen einer Datenbank  
+:::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png":::
+   View a database  
 :::image-end:::  
 
-## Bearbeiten von IndexedDB-Daten   
+## Edit IndexedDB data   
 
-IndexedDB-Schlüssel und-Werte können im **Anwendungs** Panel nicht bearbeitet werden.  Da devtools jedoch Zugriff auf den Seitenkontext hat, können Sie JavaScript-Code in devtools ausführen, um IndexedDB-Daten zu bearbeiten.  
+IndexedDB keys and values are not editable from the **Application** panel.  Since DevTools has access to page context, however, you may run JavaScript code within DevTools to edit IndexedDB data.  
 
-### Bearbeiten von IndexedDB-Daten mit Ausschnitten   
+### Edit IndexedDB data with Snippets   
 
-[Snippets][DevtoolsJavascriptSnippets] sind eine Möglichkeit zum Speichern und Ausführen von JavaScript-Codeblöcken in devtools.  Wenn Sie einen Ausschnitt ausführen, wird das Ergebnis in der **Konsole**protokolliert.  Sie können einen Ausschnitt zum Ausführen von JavaScript-Code zum Bearbeiten einer IndexedDB-Datenbank verwenden.  
+[Snippets][DevtoolsJavascriptSnippets] are a way to store and run blocks of JavaScript code within DevTools.  When you run a Snippet, the result is logged to the **Console**.  You may use a Snippet to run JavaScript code to edit an IndexedDB database.  
 
-:::image type="complex" source="../media/storage-sources-snippets-indexeddb-output.msft.png" alt-text="Verwenden eines Snippets für die Interaktion mit IndexedDB" lightbox="../media/storage-sources-snippets-indexeddb-output.msft.png":::
-   Verwenden eines Snippets für die Interaktion mit IndexedDB  
+:::image type="complex" source="../media/storage-sources-snippets-indexeddb-output.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-sources-snippets-indexeddb-output.msft.png":::
+   Use a Snippet to interact with IndexedDB  
 :::image-end:::  
 
-## Löschen von IndexedDB-Daten   
+## Delete IndexedDB data   
 
-### Löschen eines IndexedDB-Schlüssel-Wert-Paars   
+### Delete an IndexedDB key-value pair   
 
-1.  [Anzeigen eines IndexedDB-Objektspeichers](#view-indexeddb-data)  
-1.  Wählen Sie das Schlüssel-Wert-Paar aus, das Sie löschen möchten.  DevTools hebt die Markierung hervor, um anzugeben, dass Sie markiert ist.  
+1.  [View an IndexedDB object store](#view-indexeddb-data).  
+1.  Select the key-value pair that you want to delete.  DevTools highlights it to indicate that it is selected.  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png" alt-text="Wählen Sie ein Schlüssel-Wert-Paar aus, um es zu löschen." lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png":::
-       Wählen Sie ein Schlüssel-Wert-Paar aus, um es zu löschen.  
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png":::
+       Select a key-value pair in order to delete it  
     :::image-end:::  
     
-1.  Drücken Sie die Eingabe `Delete` Taste, oder klicken Sie auf **Ausgewählte löschen** \ ( ![ Auswahl löschen ][ImageDeleteIcon] \).  
+1.  Press the `Delete` key or click **Delete Selected** \(![Delete Selected][ImageDeleteIcon]\).  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png" alt-text="Wie der Objektspeicher aussieht, nachdem das Schlüssel-Wert-Paar gelöscht wurde" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png":::
-       Wie der Objektspeicher aussieht, nachdem das Schlüssel-Wert-Paar gelöscht wurde  
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png":::
+       How the object store looks after the key-value pair has been deleted  
     :::image-end:::  
     
-### Löschen aller Schlüssel-Wert-Paare in einem Objektspeicher   
+### Delete all key-value pairs in an object store   
 
-1.  [Anzeigen eines IndexedDB-Objektspeichers](#view-indexeddb-data)  
+1.  [View an IndexedDB object store](#view-indexeddb-data).  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-clear-object-store.msft.png" alt-text="Anzeigen eines Objektspeichers" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-clear-object-store.msft.png":::
-       Anzeigen eines Objektspeichers  
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-clear-object-store.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-clear-object-store.msft.png":::
+       View an object store  
     :::image-end:::  
     
-1.  Wählen Sie **Objektspeicher löschen** \ ( ![ Objektspeicher löschen ][ImageClearIcon] \) aus.  
+1.  Select **Clear object store** \(![Clear object store][ImageClearIcon]\).  
     
-### Löschen einer IndexedDB-Datenbank   
+### Delete an IndexedDB database   
 
-1.  [Zeigen Sie die IndexedDB-Datenbank](#view-indexeddb-data) an, die Sie löschen möchten.  
-1.  Wählen Sie **Datenbank löschen**aus.  
+1.  [View the IndexedDB database](#view-indexeddb-data) that you want to delete.  
+1.  Select **Delete database**.  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png" alt-text="Schaltfläche "Datenbank löschen"" lightbox="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png":::
-       Schaltfläche " **Datenbank löschen** "  
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png":::
+       The **Delete database** button  
     :::image-end:::  
     
-### Löschen des gesamten IndexedDB-Speichers   
+### Delete all IndexedDB storage   
 
-1.  Öffnen Sie den Bereich **Speicher löschen** .  
-1.  Stellen Sie sicher, dass das Kontrollkästchen **IndexedDB** aktiviert ist.  
-1.  Wählen Sie **Website Daten löschen**aus.  
+1.  Open the **Clear storage** pane.  
+1.  Make sure that the **IndexedDB** checkbox is enabled.  
+1.  Select **Clear site data**.  
     
-    :::image type="complex" source="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png" alt-text="Der Bereich "Speicher löschen"" lightbox="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png":::
-       Der Bereich " **Speicher löschen** "  
+    :::image type="complex" source="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png":::
+       The **Clear storage** pane  
     :::image-end:::  
     
 <!--  
@@ -171,22 +171,22 @@ IndexedDB-Schlüssel und-Werte können im **Anwendungs** Panel nicht bearbeitet 
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chrom)-Entwicklertools | Microsoft docs"  
-[DevtoolsJavascriptSnippets]: ../javascript/snippets.md "Ausführen von JavaScript-Codeausschnitten auf einer beliebigen Seite mit Microsoft Edge devtools | Microsoft docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"  
+[DevtoolsJavascriptSnippets]: ../javascript/snippets.md "Run snippets of JavaScript on any page with Microsoft Edge DevTools | Microsoft Docs"  
 
-[ChromiumIssue943770]: https://crbug.com/943770 "943770-devtools: Anzeigen von IFRAME-IndexedDB-Datenbanken – Chrom-Monorail"  
+[ChromiumIssue943770]: https://crbug.com/943770 "943770 - DevTools: Show iframe IndexedDB databases - chromium - Monorail"  
 
-[MDNBasicConceptsKeyGenerator]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Basic_Concepts_Behind_IndexedDB#gloss_keygenerator "Schlüssel Generator – grundlegende Konzepte | MDN"  
-[MDNIndexedDBAPI]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API "IndexedDB-API | MDN"  
-[MDNUsingIndexedDB]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB "Verwenden von IndexedDB | MDN"  
-[MDNUsingIndexedDBUsingIndex]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB#Using_an_index "Verwenden eines Index-using IndexedDB | MDN"  
+[MDNBasicConceptsKeyGenerator]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Basic_Concepts_Behind_IndexedDB#gloss_keygenerator "Key Generator - Basic Concepts | MDN"  
+[MDNIndexedDBAPI]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API "IndexedDB API | MDN"  
+[MDNUsingIndexedDB]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB "Using IndexedDB | MDN"  
+[MDNUsingIndexedDBUsingIndex]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB#Using_an_index "Using an index - Using IndexedDB | MDN"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
-> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/storage/indexeddb) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
+> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/storage/indexeddb) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
-Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
+This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

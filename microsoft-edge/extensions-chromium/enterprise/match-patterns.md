@@ -1,12 +1,12 @@
 ---
-description: Unternehmensrichtlinien Dokumentation für Edge (Chrom)-Erweiterungen.
-title: Übereinstimmungsmuster
+description: Enterprise policy documentation for Edge (Chromium) Extensions.
+title: Match Patterns
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge-Chromium, Erweiterungen-Entwicklung, Browser-Erweiterungen, Addons, Partner Center, Entwickler
+keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
 ms.openlocfilehash: 59427769a010ca774833a809d3025e7594634202
 ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
@@ -14,19 +14,19 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 09/15/2020
 ms.locfileid: "11015660"
 ---
-# Übereinstimmungsmuster
+# Match Patterns
 
-Die Host Berechtigungen und die Inhalts Skript Übereinstimmung basieren auf einer Gruppe von URLs, die durch Übereinstimmungsmuster definiert werden.  Ein Übereinstimmungsmuster ist im Grunde eine URL, die mit einem zulässigen Schema beginnt (,,, `http` `https` oder, `file` `ftp` und das "Zeichen enthalten kann `*` .  Das besondere Muster `<all_urls>` entspricht einer beliebigen URL, die mit einem zulässigen Schema beginnt.  Jedes Übereinstimmungsmuster besteht aus drei Teilen:  
+Host permissions and content script matching are based on a set of URLs defined by match patterns.  A match pattern is essentially a URL that begins with a permitted scheme (`http`, `https`, `file`, or `ftp`, and that can contain '`*`' characters.  The special pattern `<all_urls>` matches any URL that starts with a permitted scheme.  Each match pattern has 3 parts:  
 
-*   _Schema_ – beispielsweise `http` oder `file` oder `*`  
+*   _scheme_ — for example, `http` or `file` or `*`  
 
 > [!NOTE]
-> Der Zugriff auf `file` URLs erfolgt nicht automatisch.  Der Benutzer muss die Seite "erweiterungenverwaltung" besuchen und sich `file` für jede Erweiterung, die ihn anfordert, für den Zugriff entscheiden.  
+> Access to `file` URLs is not automatic.  The user must visit the Extensions management page and opt in to `file` access for each Extension that requests it.  
 
-*   `_host_` – beispielsweise `www.google.com` oder `*.google.com` oder `*` ; Wenn es sich bei dem Schema um eine Datei handelt, gibt es kein Host-Part.  
-*   `_path_` – beispielsweise, `/*` , `/foo*` oder `/foo/bar` .  Der Pfad muss in einer Host Berechtigung vorhanden sein, wird aber immer als behandelt `/*` .  
+*   `_host_` — for example, `www.google.com` or `*.google.com` or `*`; if the scheme is file, there is no host part.  
+*   `_path_` — for example, `/*`, `/foo*`, or `/foo/bar`.  The path must be present in a host permission, but is always treated as `/*`.  
 
-Die grundlegende Syntax:  
+The basic syntax:  
 
 ```shell
 <url-pattern> := <scheme>://<host><path>
@@ -35,37 +35,37 @@ Die grundlegende Syntax:
 <path> := '/' <any chars>
 ```  
 
-Die Bedeutung von `*` hängt davon ab, ob Sie im Schema-, Host-oder Path-Webpart enthalten ist.  Wenn es sich um ein Schema handelt `*` , entspricht es entweder `http` oder `https` , und nicht `file` , oder `ftp` .  Wenn der Host gerade ist `*` , ist er mit jedem Host identisch. Wenn es sich um einen Host handelt `*.hostname` , entspricht er dem angegebenen Host oder einer der Unterdomänen.  Im Abschnitt Path werden jeweils `*` 0 oder mehr Zeichen abgleichen.  In der folgenden Tabelle sind einige gültige Muster dargestellt.  
+The meaning of `*` depends on whether it is in the scheme, host, or path part.  If the scheme is `*`, then it matches either `http` or `https`, and not `file`, or `ftp`.  If the host is just `*`, then it matches any host. If the host is `*.hostname`, then it matches the specified host or any of the subdomains.  In the path section, each `*` matches 0 or more characters.  The following table shows some valid patterns.  
 
-| Muster | Funktionsweise | Beispiele für übereinstimmende URLs |  
+| Pattern | What it does | Examples of matching URLs |  
 |:--- |:--- |:--- |  
-| `http://*/*` | Entspricht einer URL, die das http-Schema verwendet | `http://www.google.com` `http://example.org/foo/bar.html` |  
-| `http://*/foo*` | Entspricht einer URL, die das http-Schema verwendet, auf einem beliebigen Host, solange der Pfad beginnt mit `/foo` | `http://example.com/foo/bar.html` `http://www.google.com/foo` |  
-| `https://*.google.com/foo*bar` | Entspricht einer beliebigen URL, die das HTTPS-Schema verwendet, befindet sich auf einem `google.com` Host \ (wie `www.google.com` , `docs.google.com` oder `google.com` \), solange der Pfad mit beginnt `/foo` und endet mit `bar` | `https://www.google.com/foo/baz/bar` `https://docs.google.com/foobar` |  
-| `http://example.org/foo/bar.html` | Entspricht der angegebenen URL | `http://example.org/foo/bar.html` |  
-|`file:///foo*` | Entspricht einer beliebigen lokalen Datei, deren Pfad mit beginnt `/foo` | `file:///foo/bar.html` `file:///foo` |  
-| `http://127.0.0.1/*` | Entspricht einer URL, die das `http` Schema verwendet und sich auf dem Host befindet `127.0.0.1` | `http://127.0.0.1` `http://127.0.0.1/foo/bar.html` |  
-| `*://mail.google.com/*` | Entspricht einer URL, die mit "oder" beginnt `http://mail.google.com` `https://mail.google.com` . | `http://mail.google.com/foo/baz/bar` `https://mail.google.com/foobar` |  
-| `<all_urls>` | Entspricht einer URL, die ein zulässiges Schema verwendet. \ (Die Liste der zulässigen Schemas finden Sie am Anfang dieses Abschnitts. \) | `http://example.org/foo/bar.html` `file:///bar/baz.html` |  
+| `http://*/*` | Matches any URL that uses the http scheme | `http://www.google.com` `http://example.org/foo/bar.html` |  
+| `http://*/foo*` | Matches any URL that uses the http scheme, on any host, as long as the path starts with `/foo` | `http://example.com/foo/bar.html` `http://www.google.com/foo` |  
+| `https://*.google.com/foo*bar` | Matches any URL that uses the https scheme, is on a `google.com` host \(such as `www.google.com`, `docs.google.com`, or `google.com`\), as long as the path starts with `/foo` and ends with `bar` | `https://www.google.com/foo/baz/bar` `https://docs.google.com/foobar` |  
+| `http://example.org/foo/bar.html` | Matches the specified URL | `http://example.org/foo/bar.html` |  
+|`file:///foo*` | Matches any local file whose path starts with `/foo` | `file:///foo/bar.html` `file:///foo` |  
+| `http://127.0.0.1/*` | Matches any URL that uses the `http` scheme and is on the host `127.0.0.1` | `http://127.0.0.1` `http://127.0.0.1/foo/bar.html` |  
+| `*://mail.google.com/*` | Matches any URL that starts with `http://mail.google.com` or `https://mail.google.com`. | `http://mail.google.com/foo/baz/bar` `https://mail.google.com/foobar` |  
+| `<all_urls>` | Matches any URL that uses a permitted scheme. \(See the beginning of this section for the list of permitted schemes.\) | `http://example.org/foo/bar.html` `file:///bar/baz.html` |  
 
-Nachfolgend finden Sie einige Beispiele für `_invalid_` Musterübereinstimmungen:
+Here are some examples of `_invalid_` pattern matches:
 
-| Fehlerhaftes Muster | Warum es schlecht ist |  
+| Bad pattern | Why it is bad |  
 |:--- |:--- |  
-| `http://www.foo.com` | Nein `_path_` |  
-| `http://*foo/bar` | ' ' `*` im Host kann nur mit einem ' `.` ' oder ' ' verfolgt werden `/` . |  
-| `http://foo.*.bar/baz` | Wenn " `*` " in der ist `_host_` , muss es das erste Zeichen sein. |  
-| `http:/bar` | Fehlendes `_scheme_` Trennzeichen \ (' `/` ' sollte "sein" `//` \) |  
-| `foo://*` | Ungültig `_scheme_` |  
+| `http://www.foo.com` | No `_path_` |  
+| `http://*foo/bar` | '`*`' in the host can be followed only by a '`.`' or '`/`' |  
+| `http://foo.*.bar/baz` | If '`*`' is in the `_host_`, it must be the first character |  
+| `http:/bar` | Missing `_scheme_` separator \('`/`' should be "`//`"\) |  
+| `foo://*` | Invalid `_scheme_` |  
 
-Einige Schemas werden in allen Kontexten nicht unterstützt.
+Some schemes are not supported in all contexts.
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
-> Die ursprüngliche Seite finden Sie [hier](https://developer.chrome.com/extensions/match_patterns/).  
+> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
+> The original page is found [here](https://developer.chrome.com/extensions/match_patterns/).  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
-Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
+This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

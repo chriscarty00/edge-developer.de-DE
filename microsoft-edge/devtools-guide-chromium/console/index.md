@@ -1,12 +1,12 @@
 ---
-description: Die hauptsächliche Verwendung der Microsoft Edge devtools-Konsole sind das Protokollieren von Nachrichten und das Ausführen von JavaScript.
-title: Übersicht über die Konsole
+description: The main uses of the Microsoft Edge DevTools Console are logging messages and running JavaScript.
+title: Console Overview
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+keywords: microsoft edge, web development, f12 tools, devtools
 ms.openlocfilehash: 0cdce953b22d22f9a2bf8048a6eff89388aa6e2e
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -32,19 +32,19 @@ ms.locfileid: "10993156"
 
 
 
-# Übersicht über die Konsole   
+# Console Overview   
 
   
 
-Auf dieser Seite wird erläutert, wie die Microsoft Edge devtools-Konsole das Entwickeln von Webseiten vereinfacht.  Die Konsole hat zwei hauptsächliche Verwendungsmöglichkeiten: [Anzeigen von protokollierten Nachrichten](#viewing-logged-messages) und [Ausführen von JavaScript](#running-javascript).  
+This page explains how the Microsoft Edge DevTools Console makes it easier to develop web pages.  The Console has 2 main uses: [viewing logged messages](#viewing-logged-messages) and [running JavaScript](#running-javascript).  
 
-## Anzeigen von angemeldeten Nachrichten   
+## Viewing logged messages   
 
-Web-Entwickler protokollieren häufig Nachrichten an die Konsole, um sicherzustellen, dass Ihr JavaScript wie erwartet funktioniert.  Wenn Sie eine Nachricht protokollieren möchten, fügen Sie einen Ausdruck wie `console.log('Hello, Console!')` in Ihr JavaScript ein.  Wenn der Browser Ihr JavaScript ausführt und einen Ausdruck wie diesen sieht, wird die Nachricht in der Konsole protokolliert.  
+Web developers often log messages to the Console to make sure that their JavaScript is working as expected.  To log a message, you insert an expression like `console.log('Hello, Console!')` into your JavaScript.  When the browser runs your JavaScript and sees an expression like that, it logs the message to the Console.  
 
 :::row:::
    :::column span="":::
-      Das HTML und JavaScript für die Seite.  
+      The HTML and JavaScript for the page.  
       
       ```html
       <!doctype html>
@@ -75,50 +75,50 @@ Web-Entwickler protokollieren häufig Nachrichten an die Konsole, um sicherzuste
       ```  
    :::column-end:::
    :::column span="":::
-      In der folgenden Abbildung zeigt die **Konsole** die Ergebnisse des Ladens der Seite an und wartet 3 Sekunden.  
+      In the following figure, the **Console** displays the results of loading the page and waiting 3 seconds.  
       
-      :::image type="complex" source="../media/console-console-demo.msft.png" alt-text="Die Konsolen Leiste" lightbox="../media/console-console-demo.msft.png":::
-         Die **Konsolen** Leiste  
+      :::image type="complex" source="../media/console-console-demo.msft.png" alt-text="The Console panel" lightbox="../media/console-console-demo.msft.png":::
+         The **Console** panel  
       :::image-end:::  
       
-      Ermitteln Sie, welche Codezeilen der Browser veranlasst hat, die Nachrichten zu protokollieren.  
+      Try to determine which lines of code caused the browser to log the messages.  
    :::column-end:::
 :::row-end:::  
 
-Web-Entwickler protokollieren Nachrichten für die folgenden 2 allgemeinen Gründe.  
+Web developers log messages for the following 2 general reasons.  
 
-*   Sicherstellen, dass der Code in der richtigen Reihenfolge ausgeführt wird  
-*   Überprüfen der Werte von Variablen zu einem bestimmten Zeitpunkt  
+*   Making sure that code is running in the right order.  
+*   Inspecting the values of variables at a certain moment in time.  
 
-Lesen Sie [Erste Schritte mit der Protokollierung von Nachrichten][DevtoolsConsoleLoggingMessages] , um praktische Erfahrungen mit der Protokollierung zu erhalten.  Die vollständige Liste der Methoden finden Sie in der [API-Referenz][DevToolsConsoleAPI] für die Konsole `console` .  Der Hauptunterschied zwischen den Methoden besteht darin, wie die Daten, die protokolliert werden, angezeigt werden.  
+See [Get Started With Logging Messages][DevtoolsConsoleLoggingMessages] to get hands-on experience with logging.  See the [Console API Reference][DevToolsConsoleAPI] to browse the full list of `console` methods.  The main difference between the methods is how the data being logged is displayed.  
 
-## Ausführen von JavaScript   
+## Running JavaScript   
 
-Die **Konsole** ist auch ein [repl][WikiREPLoop].  Sie können JavaScript in der **Konsole** ausführen, um mit der geprüften Seite zu interagieren.   
+The **Console** is also a [REPL][WikiREPLoop].  You may run JavaScript in the **Console** to interact with the page being inspected.   
 
 :::row:::
    :::column span="":::
-      In der folgenden Abbildung wird die **Konsole** neben der devtools-Startseite angezeigt.  
+      In the following figure, the **Console** is shown next to the DevTools homepage.  
       
-      :::image type="complex" source="../media/devtools-console-empty.msft.png" alt-text="Das Konsolenfeld neben der devtools-Startseite" lightbox="../media/devtools-console-empty.msft.png":::
-         Das **Konsolen** Feld neben der devtools-Startseite  
+      :::image type="complex" source="../media/devtools-console-empty.msft.png" alt-text="The Console panel" lightbox="../media/devtools-console-empty.msft.png":::
+         The **Console** panel next to the DevTools homepage  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      In der folgenden Abbildung wird dieselbe Seite nach der Verwendung der **Konsole** angezeigt, um die obere Überschrift der Seite zu ändern.
+      In the following figure, the same page is shown after using the **Console** to change the top heading of the page.
       
-      :::image type="complex" source="../media/devtools-console-h1-changed.msft.png" alt-text="Verwenden der Konsole zum Ändern der obersten Überschrift der Seite" lightbox="../media/devtools-console-h1-changed.msft.png":::
-         Verwenden der **Konsole** zum Ändern der obersten Überschrift der Seite  
+      :::image type="complex" source="../media/devtools-console-h1-changed.msft.png" alt-text="The Console panel" lightbox="../media/devtools-console-h1-changed.msft.png":::
+         Use the **Console** to change the top heading of the page  
       :::image-end:::  
    :::column-end:::
 :::row-end:::
 
-Das Ändern der Seite über die **Konsole** ist möglich, da die **Konsole** Vollzugriff auf das [Fenster][MDNWindow] der Seite hat.  DevTools verfügt über einige komfortable Funktionen, mit denen Sie eine Seite leichter überprüfen können.  Nehmen wir beispielsweise an, dass Ihr JavaScript eine Funktion mit dem Namen `hideModal` .  Durch Ausführen wird der `debug(hideModal)` Code in der ersten Zeile des `hideModal` nächsten Ausführungszeitraums angehalten.  Weitere Informationen zur vollständigen Liste der Dienstprogrammfunktionen finden Sie unter [API-Referenz für Konsolen Dienstprogramme][DevtoolsConsoleUtilitiesDebug].  
+Modifying the page from the **Console** is possible because the **Console** has full access to the [window][MDNWindow] of the page.  DevTools has a few convenience functions that make it easier to inspect a page.  For example, suppose that your JavaScript contains a function called `hideModal`.  Running `debug(hideModal)` pauses your code on the first line of `hideModal` the next time that you run it.  For more information about the full list of utility functions, see [Console Utilities API Reference][DevtoolsConsoleUtilitiesDebug].  
 
-Wenn Sie JavaScript ausführen, müssen Sie nicht mit der Seite interagieren.  Sie können die **Konsole** verwenden, um neuen Code auszuprobieren, der sich nicht auf die Seite bezieht.  Angenommen, Sie haben soeben die integrierte JavaScript-Array [Zuordnungsmethode ()][MDNMap] kennengelernt, und Sie möchten damit experimentieren.  
-Die **Konsole** ist ein guter Ort, um die Funktion auszuprobieren.  
+When you run JavaScript you do not have to interact with the page.  You may use the **Console** to try out new code unrelated to the page.  For example, suppose you just learned about the built-in JavaScript Array [map()][MDNMap] method, and you want to experiment with it.  
+The **Console** is a good place to try out the function.  
 
-Weitere praktische Erfahrungen mit der Ausführung von JavaScript in der **Konsole**finden Sie unter [Erste Schritte mit der Ausführung von JavaScript][DevtoolsConsoleRunningJavascript].  
+For more hands-on experience with running JavaScript in the **Console**, see [Get Started With Running JavaScript][DevtoolsConsoleRunningJavascript].  
 
    
 
@@ -126,22 +126,22 @@ Weitere praktische Erfahrungen mit der Ausführung von JavaScript in der **Konso
 
 <!-- links -->  
 
-[DevToolsConsoleAPI]: ./api.md "Konsolen-API-Referenz | Microsoft docs"  
-[DevtoolsConsoleLoggingMessages]: ./log.md "Erste Schritte mit der Protokollierung von Nachrichten in der Konsole | Microsoft docs"  
-[DevtoolsConsoleRunningJavascript]: ./javascript.md "Erste Schritte mit der Ausführung von JavaScript in der Konsole | Microsoft docs"  
-[DevtoolsConsoleUtilitiesDebug]: ./utilities.md#debug "Debug-Console Utilities API Reference | Microsoft docs"  
+[DevToolsConsoleAPI]: ./api.md "Console API Reference | Microsoft Docs"  
+[DevtoolsConsoleLoggingMessages]: ./log.md "Get Started With Logging Messages In The Console | Microsoft Docs"  
+[DevtoolsConsoleRunningJavascript]: ./javascript.md "Get Started With Running JavaScript In The Console | Microsoft Docs"  
+[DevtoolsConsoleUtilitiesDebug]: ./utilities.md#debug "debug - Console Utilities API Reference | Microsoft Docs"  
 
-[MDNMap]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/map "Array. Prototype. map () | MDN"  
-[MDNWindow]: https://developer.mozilla.org/docs/Web/API/Window "Fenster | MDN"  
+[MDNMap]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/map "Array.prototype.map() | MDN"  
+[MDNWindow]: https://developer.mozilla.org/docs/Web/API/Window "Window | MDN"  
 
-[WikiREPLoop]: https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop "Lesen – eval – Print Loop – Wikipedia"  
+[WikiREPLoop]: https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop "Read–eval–print loop - Wikipedia"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
-> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/console/index) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
+> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/console/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
-Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
+This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

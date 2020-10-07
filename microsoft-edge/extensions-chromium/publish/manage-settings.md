@@ -1,12 +1,12 @@
 ---
-description: Leitfaden zum Verwalten des Microsoft Edge-Partner Center-Kontos
-title: Verwalten der Kontoeinstellungen
+description: Guide on managing Microsoft Edge Partner center account.
+title: Manage Account Settings
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge-Chromium, Erweiterungen-Entwicklung, Browser-Erweiterungen, Addons, Partner Center, Entwickler
+keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
 ms.openlocfilehash: 2d7bfa3c33bb7f32745fac13b8f5765c122e975d
 ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
@@ -14,33 +14,33 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 09/15/2020
 ms.locfileid: "11015736"
 ---
-# Verwalten der Kontoeinstellungen  
+# Manage Account Settings  
 
-Verwalten Sie die Einstellungen für Ihr Microsoft Edge-Entwicklerkonto.  Sie können Ihre Kontoeinstellungen und Profildetails im Abschnitt Kontoeinstellungen des [Partner Centers][MicrosoftPartnerCenter]anzeigen und aktualisieren.  
+Manage the setting for you Microsoft Edge Developer account.  You view and update your account settings and Profile details in the Account setting section of the [Partner Center][MicrosoftPartnerCenter].  
 
-## Kontoeinstellungen  
+## Account settings  
 
-Wenn Sie Ihre Kontoeinstellungen anzeigen möchten, klicken Sie in der oberen rechten Ecke des [Partner Centers][MicrosoftPartnerCenter] auf das Zahnradsymbol, und wählen Sie dann **Entwicklereinstellungen**aus.  Die **Entwicklereinstellungen** zeigt Details zu Ihrem Konto, Links zu anderen Seiten an, auf denen Sie Informationen anzeigen, und Sie können verschiedene kontobezogene Aufgaben ausführen.  
+To view your account settings, click the gear icon in the upper right-hand corner of [Partner Center][MicrosoftPartnerCenter] and then select **Developer settings**.  The **Developer settings** displays details about your account, links to other pages where you view information, and you may perform various account-related tasks.  
 
-Im Abschnitt **Kontodetails** werden der Status und der Typ Ihres Kontos angezeigt.  Sie können hier auch ihre Verkäufer-ID und weitere Informationen zu Publisher-IDs sehen.  Diese Werte werden von Microsoft zugewiesen, um Ihr Entwicklerkonto eindeutig zu identifizieren und sind schreibgeschützt.  
+In the **Account details** section, you see the status and type of your account.  You also see your Seller ID and other publisher ID info here.  These values are assigned by Microsoft to uniquely identify your developer account and are read-only.  
 
-## Kontaktdetails  
+## Contact Details  
 
-Der Abschnitt " **Kontaktinformationen** " zeigt die Details an, die Sie bei der Einrichtung Ihres Kontos angegeben haben.  Wir verwenden dieses Detail, um Sie über Ihr Konto zu kontaktieren.  Der Anzeigename des Herausgebers, den wir Ihren Benutzern im Microsoft Edge Addons-Katalog anzeigen (Edge-Addons \), wird hier ebenfalls angezeigt.  
+The **Contact info** section displays the details you provided when setting up your account.  We use this detail to contact you about your account.  The publisher display name that we show to your users in the Microsoft Edge Addons catalog \(Edge Addons\) also appears here.  
   
-Sie sollten diesen Abschnitt bearbeiten, wenn sich Ihre Kontaktinformationen geändert haben. Klicken Sie dazu auf **Aktualisieren** \ (oder wählen Sie im linken Navigationsmenü **Kontaktinformationen** aus), nehmen Sie die gewünschten Änderungen vor, und klicken Sie dann auf **Speichern**.  
+You should edit this section if any of your contact details has changed. To do so, click **Update** \(or select **Contact info** in the left navigation menu\), make your changes, and then click **Save**.  
 
-Eine Änderung Ihrer Kontaktdaten kann eine erneute Überprüfung Ihres Kontos erforderlich machen, insbesondere wenn Sie über ein Unternehmenskonto verfügen.  Ihr Verifizierungsstatus wird zurückgegeben, `Pending` während dieser Vorgang in Bearbeitung ist.  Die Dauer des Verifizierungsprozesses liegt zwischen wenigen Tagen und mehreren Wochen, und Ihr Unternehmen erhält möglicherweise einen Anruf von unserem Verifizierungspartner.  
+Changing any of your contact details may require us to verify your account again, especially if you have a company account.  Your verification status returns to `Pending` while this is in process.  The duration of the verification process ranges from a few days to a couple of weeks, and your company may receive a phone call from our verification partner.  
 
-## Andere Einstellungen  
+## Other settings  
 
-Überprüfen Sie die folgenden Einstellungen im Abschnitt Kontoeinstellungen.  
+Review the following settings in the Account settings section.  
 
-| Kontoeinstellungen | Beschreibung |  
+| Account Settings | Description |  
 |:--- |:--- |  
-| Überprüfungsstatus | Wenn Ihr Konto dem Verifizierungsprozess unterliegt \ (Beispiel: Wenn Sie sich zum ersten Mal registrieren oder wenn Sie Ihre Kontaktinformationen erheblich aktualisieren \), überprüfen Sie hier Ihren Verifizierungsstatus. |  
-| Programme | Zeigen Sie Details zu den Programmen an, an denen Sie teilnehmen, und informieren Sie sich zu anderen Programmen, die möglicherweise von Interesse sind.  
-| Vereinbarungen | Sehen Sie sich die Vereinbarungen an, die Ihr Konto akzeptiert hat. |  
+| Verification status | When your account is undergoing the verification process \(example, when you first sign up or after you significantly update your contact info\), you review your verification status here. |  
+| Programs | View details about the programs in which you are participating and learn about other programs that may be of interest.  
+| Agreements | View the agreements that your account has accepted. |  
 
 <!-- image links -->  
 

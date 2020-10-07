@@ -1,12 +1,12 @@
 ---
-description: Ihr Job endet nicht mit der Sicherstellung, dass Ihre Website über Microsoft Edge und Android hervorragend läuft.  Obwohl der Gerätemodus eine Reihe anderer Geräte wie iPhones simulieren kann, empfehlen wir Ihnen, Lösungen für die Emulation zu finden, die von anderen Browsern bereitgestellt wird.
-title: Emulieren und Testen anderer Browser
+description: Your job does not end with ensuring your site runs great across Microsoft Edge and Android.  Even though Device Mode is able to simulate a range of other devices like iPhones, we encourage you to check out solutions for emulation provided by other browsers.
+title: Emulate and Test Other Browsers
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+keywords: microsoft edge, web development, f12 tools, devtools
 ms.openlocfilehash: 1b76447aa86837abac88bc4727eb7f4ee082342a
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -32,38 +32,38 @@ ms.locfileid: "10992911"
 
 
 
-# Emulieren und Testen anderer Browser   
+# Emulate and test other browsers   
 
 
 
 
-Ihr Job endet nicht mit der Sicherstellung, dass Ihre Website über Microsoft Edge und Android hervorragend läuft.  Obwohl der Gerätemodus eine Reihe anderer Geräte wie iPhones simulieren kann, empfehlen wir Ihnen, Lösungen für die Emulation zu finden, die von anderen Browsern bereitgestellt wird.  
+Your job does not end with ensuring your site runs great across Microsoft Edge and Android.  Even though Device Mode is able to simulate a range of other devices like iPhones, we encourage you to check out solutions for emulation provided by other browsers.  
 
-### Zusammenfassung  
+### Summary  
 
-*   Wenn Sie nicht über ein bestimmtes Gerät verfügen oder eine Stichprobenprüfung durchführen möchten, besteht die beste Möglichkeit darin, das Gerät direkt in Ihrem Browser zu emulieren.  
-*   Geräteemulatoren und-Simulatoren ermöglichen Ihnen, ihre Entwicklungswebsite auf einer Reihe von Geräten von Ihrer Arbeitsstation zu imitieren.  
-*   Cloud-basierte Emulatoren ermöglichen es Ihnen, Komponententests für Ihre Website auf verschiedenen Plattformen zu automatisieren.  
+*   When you do not have a particular device, or want to do a spot check on something, the best option is to emulate the device right inside your browser.  
+*   Device emulators and simulators enable you to mimic your development site on a range of devices from your workstation.  
+*   Cloud-based emulators enable you to automate unit tests for your site across different platforms.  
 
-## Browser Emulatoren  
+## Browser emulators  
 
-Browser Emulatoren eignen sich hervorragend zum Testen der Reaktionsfähigkeit einer Website, aber jeder emuliert keine Unterschiede bei der API, der CSS-Unterstützung und bestimmten Verhaltensweisen, die in einem mobilen Browser angezeigt werden.  Testen Sie Ihre Website in Browsern, die auf realen Geräten ausgeführt werden, um sicherzustellen, dass sich alles wie erwartet verhält.  
+Browser emulators are great for testing the responsiveness of a site, but each does not emulate differences in API, CSS support, and certain behaviors that you see on a mobile browser.  Test your site on browsers running on real devices to be certain everything behaves as expected.  
 
-### Firefox-reaktionsfähige Entwurfsansicht  
+### Firefox Responsive Design View  
 
-Firefox verfügt über eine [reaktionsfähige Entwurfsansicht][MDNResponsiveDesignMode] , die Sie dazu ermutigt, das Denken in Bezug auf bestimmte Geräte zu beenden und stattdessen zu untersuchen, wie sich Ihr Design bei gängigen Bildschirmgrößen oder ihrer eigenen Größe ändert, indem Sie die Ränder ziehen.  
+Firefox has a [responsive design view][MDNResponsiveDesignMode] that encourages you to stop thinking in terms of specific devices and instead explore how your design changes at common screen sizes or your own size by dragging the edges.  
 
-### EdgeHTML-Emulation  
+### EdgeHTML emulation  
 
-Verwenden Sie zum Emulieren von Windows-Smartphones die [integrierte Emulation][DevToolsEdgeHtmlEmulation]Microsoft Edge \ (EdgeHTML \).  
+To emulate Windows Phones, use the Microsoft Edge \(EdgeHTML\) [built-in emulation][DevToolsEdgeHtmlEmulation].  
 
-Verwenden Sie die [IE 11-Emulation][Ie11DevToolsEmulation] , um zu simulieren, wie Ihre Seite in älteren Versionen von Internet Explorer aussehen kann.  
+Use [IE 11 Emulation][Ie11DevToolsEmulation] to simulate how your page may look in older versions of Internet Explorer.  
 
-## Geräteemulatoren und-Simulatoren  
+## Device emulators and simulators  
 
-Gerätesimulatoren und-Emulatoren simulieren nicht nur die Browserumgebung, sondern das gesamte Gerät.  Alle sind hilfreich, um Dinge zu testen, die die Betriebssystem Integration erfordern, beispielsweise Formulareingaben mit virtuellen Tastaturen.  
+Device simulators and emulators simulate not just the browser environment but the entire device.  Each are useful to test things that require OS integration, for example form input with virtual keyboards.  
 
-### Android-Emulator  
+### Android emulator  
 
 <!--  
 :::image type="complex" source="../media/device-mode-android-emulator-stock-browser.msft.png" alt-text="Stock Browser in Android Emulator" lightbox="../media/device-mode-android-emulator-stock-browser.msft.png":::
@@ -71,20 +71,20 @@ Gerätesimulatoren und-Emulatoren simulieren nicht nur die Browserumgebung, sond
 :::image-end:::  
 -->  
 
-Derzeit gibt es keine Möglichkeit, Microsoft Edge auf einem Android-Emulator zu installieren.  Sie können jedoch den Android-Browser, die Chrom-Inhalts-Shell und Firefox für Android verwenden, die wir später in diesem Leitfaden überprüfen.  Die Chrom-Inhalts-Shell führt dieselbe Chrom-Rendering-Engine wie Microsoft Edge aus, kommt aber ohne die browserspezifischen Features vor.  
+At the moment, there is no way to install Microsoft Edge on an Android emulator.  However, you may use the Android Browser, the Chromium Content Shell, and Firefox for Android which we review later in this guide.  Chromium Content Shell runs the same Chromium rendering engine as Microsoft Edge, but comes without any of the browser specific features.  
 
-Der Android-Emulator enthält das Android-SDK, das Sie im Rahmen von [Android Studio][AndroidStudioDownload]herunterladen müssen.  Folgen Sie dann den Anweisungen zum [Einrichten eines virtuellen Geräts][AndroidStudioCreateManageVirtualDevices] , und [Starten Sie den Emulator][AndroidStudioRunAppsAndroidEmulator].  
-Nachdem Ihr Emulator gestartet wurde, klicken Sie auf das Browser Symbol, und testen Sie Ihre Website auf dem alten Aktien Browser für Android.  
+The Android emulator comes with the Android SDK which you need to download as part of [Android Studio][AndroidStudioDownload].  Then follow the instructions to [set up a virtual device][AndroidStudioCreateManageVirtualDevices] and [start the emulator][AndroidStudioRunAppsAndroidEmulator].  
+Once your emulator is booted, click on the Browser icon, and test your site on the old Stock Browser for Android.  
 
-#### Chrom-Inhalts-Shell auf Android  
+#### Chromium content shell on Android  
 
 <!--  
-:::image type="complex" source="../media/device-mode-android-avd-contentshell.msft.png" alt-text="Android Emulator Content Shell" lightbox="../media/device-mode-android-avd-contentshell.msft.png":::
+:::image type="complex" source="../media/device-mode-android-avd-contentshell.msft.png" alt-text="Stock Browser in Android Emulator" lightbox="../media/device-mode-android-avd-contentshell.msft.png":::
    Android Emulator Content Shell  
 :::image-end:::  
 -->  
 
-Wenn Sie die Chrom-Inhalts-Shell für Android installieren möchten, lassen Sie den Emulator laufen, und führen Sie den folgenden Befehl aus.  
+To install the Chromium Content Shell for Android, leave your emulator running and run the following command.  
 
 ```shell
 git clone https://github.com/PaulKinlan/chromium-android-installer.git
@@ -92,50 +92,50 @@ chmod u+x ./chromium-android-installer/*.sh
 ./chromium-android-installer/install-chromeandroid.sh
 ```  
 
-Nun können Sie Ihre Website mit der Chrom-Inhalts-Shell testen.  
+Now you are able to test your site with the Chromium Content Shell.  
 
-#### Firefox auf Android  
+#### Firefox on Android  
 
 <!--  
-:::image type="complex" source="../media/device-mode-ff-on-android-emulator.msft.png" alt-text="Firefox Icon on Android Emulator" lightbox="../media/device-mode-ff-on-android-emulator.msft.png":::
+:::image type="complex" source="../media/device-mode-ff-on-android-emulator.msft.png" alt-text="Stock Browser in Android Emulator" lightbox="../media/device-mode-ff-on-android-emulator.msft.png":::
    Firefox Icon on Android Emulator  
 :::image-end:::  
 -->  
 
-Ähnlich wie bei der Chrom-Inhalts-Shell können Sie eine APK für die Installation von Firefox auf dem Emulator erhalten.  
+Similar to the Chromium Content Shell, you are able to get an APK to install Firefox onto the emulator.  
 
-[Laden Sie die richtige. apk-Datei herunter][MozillaFirefoxDownload].  
+[Download the correct .apk file][MozillaFirefoxDownload].  
 
-Führen Sie den folgenden Befehl aus, um die Datei auf einem geöffneten Emulator oder einem verbundenen Android-Gerät zu installieren.  
+To install the file onto an open emulator or connected Android device, run the following command.  
 
 ```shell
 adb install <path_to_APK>/fennec-XX.X.XX.android-arm.apk
 ```  
 
-### IOS-Simulator  
+### iOS simulator  
 
-Der IOS-Simulator für Mac OS X enthält Xcode, den Sie [aus dem App Store installieren][MacAppStoreXcode].  
+The iOS simulator for Mac OS X comes with Xcode, which you [install from the App Store][MacAppStoreXcode].  
 
-Wenn Sie fertig sind, erfahren Sie, wie Sie mit dem Simulator über die [Apple Developer-Dokumentation][AppleSimulatorHelp]arbeiten können.  
+When you are done, learn how to work with the simulator through [Apple Developer documentation][AppleSimulatorHelp].  
 
 > [!NOTE]
-> Um zu vermeiden, dass Xcode jedes Mal geöffnet wird, wenn Sie den IOS-Simulator verwenden möchten, öffnen Sie ihn, und klicken Sie dann mit der rechten Maustaste auf das IOS-Simulator-Symbol in Ihrem Dock, und wählen Sie **im Dock beibehalten**aus.  Klicken Sie jetzt einfach auf dieses Symbol, wenn Sie es benötigen.  
+> To avoid having to open Xcode every time you want to use the iOS Simulator, open it, then right-click the iOS Simulator icon in your dock and select **Keep in Dock**.  Now just click this icon whenever you need it.  
 
 ###  Microsoft Edge (EdgeHTML)  
 
-:::image type="complex" source="../media/device-mode-modern-ie-vm.msft.png" alt-text="Moderne IE-VM" lightbox="../media/device-mode-modern-ie-vm.msft.png":::
-   Moderne IE-VM  
+:::image type="complex" source="../media/device-mode-modern-ie-vm.msft.png" alt-text="Stock Browser in Android Emulator" lightbox="../media/device-mode-modern-ie-vm.msft.png":::
+   Modern IE VM  
 :::image-end:::  
 
-Microsoft Edge \ (EdgeHTML \) Virtual Machines \ (VMS \) ermöglichen Ihnen den Zugriff auf unterschiedliche Versionen von EdgeHTML und IE auf Ihrem Computer über VirtualBox \ (oder VMware \).  Wählen Sie [auf der Download Seite einen virtuellen Computer][MicrosoftDeveloperEdgeVms]aus.  
+Microsoft Edge \(EdgeHTML\) Virtual Machines \(VMs\) enable you to access different versions of EdgeHTML and IE on your computer via VirtualBox \(or VMWare\).  Choose a [virtual machine on the download page][MicrosoftDeveloperEdgeVms].  
 
-## Cloud-basierte Emulatoren und Simulatoren  
+## Cloud-based emulators and simulators  
 
-Wenn Sie nicht in der Lage sind, die Emulatoren zu verwenden und keinen Zugriff auf reale Geräte haben, sind Cloud-basierte Emulatoren die nächstbeste Methode.  Ein großer Vorteil von Cloud-basierten Emulatoren auf realen Geräten und lokalen Emulatoren besteht darin, dass Sie Komponententests für Ihre Website auf verschiedenen Plattformen automatisieren können.  
+If you are not able to use the emulators and do not have access to real devices, then cloud-based emulators are the next best thing.  A big advantage of cloud-based emulators over real devices and local emulators is that you are able to automate unit tests for your site across different platforms.  
 
-*   [BrowserStack (kommerziell)][|::ref1::|] ist für manuelle Tests am einfachsten zu verwenden.  Wählen Sie ein Betriebssystem aus, wählen Sie Ihre Browserversion und den Gerätetyp aus, wählen Sie eine URL zum Durchsuchen aus, und es wird ein gehosteter virtueller Computer, mit dem Sie interagieren können, verwendet.  Sie können auch mehrere Emulatoren auf demselben Bildschirm ausführen, sodass Sie das Aussehen und Verhalten Ihrer APP auf mehreren Geräten gleichzeitig testen können.  
-*   Mit [SauceLabs (Commercial)][SauceLabs] können Sie Komponententests innerhalb eines Emulators ausführen, was für das Skripting eines Flows über Ihre Website und die anschließende Videoaufzeichnung auf verschiedenen Geräten nützlich sein kann.  Außerdem können Sie mit Ihrer Website manuelle Tests durchführen.  
-*   [Device Anywhere (kommerziell)][AppExperience] verwendet keine Emulatoren, sondern echte Geräte, die Sie remote steuern können.  Dies ist sehr nützlich für den Fall, dass Sie ein Problem auf einem bestimmten Gerät reproduzieren müssen und nicht in der Lage sind, den Fehler unter Verwendung einer der Optionen in den vorherigen Leitfäden anzuzeigen.  
+*   [BrowserStack (commercial)][|::ref1::|] is the easiest to use for manual testing.  You select an operating system, select your browser version and device type, select a URL to browse, and it spins up a hosted virtual machine with which you may interact.  You are able to also run multiple emulators in the same screen, enabling you to test the look and feel of your app across multiple devices at the same time.  
+*   [SauceLabs (commercial)][SauceLabs] enables you to run unit tests inside of an emulator, which may be really useful for scripting a flow through your site and watching the video recording of this afterwards on various devices.  You are also able to do manual testing with your site.  
+*   [Device Anywhere (commercial)][AppExperience] does not use emulators but real devices which you are able to control remotely.  This is very useful in the event where you need to reproduce a problem on a specific device and are not able to see the bug using any of the options in the previous guides.  
 
 <!--  
  
@@ -145,30 +145,30 @@ Wenn Sie nicht in der Lage sind, die Emulatoren zu verwenden und keinen Zugriff 
 
 <!-- links -->  
 
-[DevToolsEdgeHtmlEmulation]: /microsoft-edge/devtools-guide/emulation "DevTools (EdgeHTML)-Emulation | Microsoft docs"  
+[DevToolsEdgeHtmlEmulation]: /microsoft-edge/devtools-guide/emulation "DevTools (EdgeHTML) - Emulation | Microsoft Docs"  
 
-[Ie11DevToolsEmulation]: /previous-versions/windows/internet-explorer/ie-developer/samples/dn255001(v=vs.85) "Emulieren von Browsern, Bildschirmgrößen und GPS-Speicherorten | Microsoft docs"  
+[Ie11DevToolsEmulation]: /previous-versions/windows/internet-explorer/ie-developer/samples/dn255001(v=vs.85) "Emulate browsers, screen sizes, and GPS locations | Microsoft Docs"  
 
-[MicrosoftDeveloperEdgeVms]: https://developer.microsoft.com/microsoft-edge/tools/vms "Herunterladen virtueller Computer"  
+[MicrosoftDeveloperEdgeVms]: https://developer.microsoft.com/microsoft-edge/tools/vms "Download virtual machines"  
 
-[AndroidStudioCreateManageVirtualDevices]: https://developer.android.com/tools/devices/managing-avds.html "Erstellen und Verwalten von virtuellen Geräten | Android-Entwickler"  
-[AndroidStudioDownload]:  https://developer.android.com/sdk/installing/studio.html "Android Studio-und SDK-Tools herunterladen | Android-Entwickler"  
-[AndroidStudioRunAppsAndroidEmulator]: https://developer.android.com/tools/devices/emulator.html "Ausführen von apps auf dem Android-Emulator | Android-Entwickler"  
+[AndroidStudioCreateManageVirtualDevices]: https://developer.android.com/tools/devices/managing-avds.html "Create and manage virtual devices | Android Developers"  
+[AndroidStudioDownload]:  https://developer.android.com/sdk/installing/studio.html "Download Android Studio and SDK tools | Android Developers"  
+[AndroidStudioRunAppsAndroidEmulator]: https://developer.android.com/tools/devices/emulator.html "Run apps on the Android Emulator | Android Developers"  
 
-[AppExperience]: https://www.sigos.com/app-experience/ "App-Erfahrung"  
-[AppleSimulatorHelp]: https://help.apple.com/simulator/mac/current "Simulator-Hilfe-aktuell | Apple"  
+[AppExperience]: https://www.sigos.com/app-experience/ "App Experience"  
+[AppleSimulatorHelp]: https://help.apple.com/simulator/mac/current "Simulator Help - current | Apple"  
 [BrowserStack]: https://www.browserstack.com/automate "BrowserStack"  
-[MacAppStoreXcode]: https://itunes.apple.com/app/xcode/id497799835 "Xcode im Mac App Store"  
-[MDNResponsiveDesignMode]: https://developer.mozilla.org/docs/Tools/Responsive_Design_View "Reaktionsfähiger Entwurfsmodus | MDN"  
-[MozillaFirefoxDownload]: https://www.mozilla.org/firefox/all/#product-android-beta "Herunterladen des Firefox-Browsers"  
+[MacAppStoreXcode]: https://itunes.apple.com/app/xcode/id497799835 "Xcode on the Mac App Store"  
+[MDNResponsiveDesignMode]: https://developer.mozilla.org/docs/Tools/Responsive_Design_View "Responsive Design Mode | MDN"  
+[MozillaFirefoxDownload]: https://www.mozilla.org/firefox/all/#product-android-beta "Download the Firefox Browser"  
 [SauceLabs]: https://saucelabs.com "Sauce Labs"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
-> Die ursprüngliche Seite wird [hier](https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers) gefunden und von [Meggin Kearney][MegginKearney] (Tech Writer \) und [Paul Bakaus][PaulBakaus] \ (Open Web Developer Advocate bei Google | Tools, Leistung, Animation, UX \).  
+> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers) and is authored by [Meggin Kearney][MegginKearney] \(Tech Writer\) and [Paul Bakaus][PaulBakaus] \(Open Web Developer Advocate at Google | Tools, Performance, Animation, UX\).  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
-Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
+This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

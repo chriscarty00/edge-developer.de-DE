@@ -1,12 +1,12 @@
 ---
-description: Hier erfahren Sie, wie Sie JavaScript in der Konsole ausführen.
-title: Erste Schritte mit der Ausführung von JavaScript in der Konsole
+description: Learn how to run JavaScript in the Console.
+title: Get Started With Running JavaScript In The Console
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+keywords: microsoft edge, web development, f12 tools, devtools
 ms.openlocfilehash: d31bcfbdf728e656c9a6fff882f939f8c24cd897
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -34,61 +34,61 @@ ms.locfileid: "10993121"
 
 
 
-# Erste Schritte mit der Ausführung von JavaScript in der Konsole   
+# Get Started With Running JavaScript In The Console   
 
 
 
-In diesem interaktiven Lernprogramm erfahren Sie, wie Sie JavaScript in der Microsoft Edge devtools- **Konsole**ausführen.  Weitere Informationen zum Protokollieren von Nachrichten an der **Konsole**finden Sie unter [Erste Schritte mit der Protokollierung von Nachrichten][DevToolsConsoleLoggingMessages].  Weitere Informationen dazu, wie Sie JavaScript-Code pausieren und eine Zeile gleichzeitig durchlaufen, finden Sie unter [Erste Schritte mit JavaScript-Debugging][DevToolsJavascriptIndex].  
+This interactive tutorial shows you how to run JavaScript in the Microsoft Edge DevTools **Console**.  For more information about how to log messages to the **Console**, see [Get Started With Logging Messages][DevToolsConsoleLoggingMessages].  For more information about how to pause JavaScript code and step through it one line at a time, see [Get Started With Debugging JavaScript][DevToolsJavascriptIndex].  
 
-:::image type="complex" source="../media/console-javascript-example-console-playground.msft.png" alt-text="Der Konsole" lightbox="../media/console-javascript-example-console-playground.msft.png":::
-   Der **Konsole**  
+:::image type="complex" source="../media/console-javascript-example-console-playground.msft.png" alt-text="The Console" lightbox="../media/console-javascript-example-console-playground.msft.png":::
+   The **Console**  
 :::image-end:::  
 
-## Übersicht   
+## Overview   
 
-Die **Konsole** ist ein [repl][WikiReadEvalPrintLoop], das für Read, Evaluate, Print und Loop steht.  Sie liest das JavaScript ein, das Sie eingeben, wertet den Code aus, druckt das Ergebnis des [Ausdrucks][2alityExpressionsVersusStatements]aus und führt dann eine Schleife zurück zum ersten Schritt aus.  
+The **Console** is a [REPL][WikiReadEvalPrintLoop], which stands for Read, Evaluate, Print, and Loop.  It reads the JavaScript that you type into it, evaluates your code, prints out the result of your [expression][2alityExpressionsVersusStatements], and then loops back to the first step.  
 
-## Einrichten von devtools   
+## Set up DevTools   
 
-Dieses Lernprogramm wurde entwickelt, um die Demo zu öffnen und alle Workflows selbst zu testen.  Wenn Sie physisch miteinander in Verbindung bleiben, können Sie die Workflows später wahrscheinlicher merken.
+This tutorial is designed for you to open up the demo and try all the workflows yourself.  When you physically follow along, you are more likely to remember the workflows later.
 
-1.  Drücken Sie `Control` + `Shift` + `J` \ (Windows \) oder `Command` + `Option` + `J` \ (macOS \), um die **Konsole**zu öffnen.  
-1.  Halten `Control` Sie \ (Windows \) oder `Command` \ (macOS \) gedrückt, und klicken Sie auf **Konsolen-JavaScript-Beispiel** , um es in einem neuen Fenster zu öffnen.  
+1.  Press `Control`+`Shift`+`J` \(Windows\) or `Command`+`Option`+`J` \(macOS\) to open the **Console**.  
+1.  Hold `Control` \(Windows\) or `Command` \(macOS\) and click **Console Javascript Example** to open in a new window.  
     
-    *   [Beispiel für eine Konsolen-JavaScript][GlitchConsoleJavascriptExample]  
+    *   [Console Javascript Example][GlitchConsoleJavascriptExample]  
     
-    :::image type="complex" source="../media/console-javascript-example-console-empty.msft.png" alt-text="Die JavaScript-Beispielseite der Konsole Links und DevTools auf der rechten Seite" lightbox="../media/console-javascript-example-console-empty.msft.png":::
-       Die JavaScript-Beispielseite der Konsole Links und DevTools auf der rechten Seite  
+    :::image type="complex" source="../media/console-javascript-example-console-empty.msft.png" alt-text="The Console" lightbox="../media/console-javascript-example-console-empty.msft.png":::
+       The Console JavaScript Example page on the left, and DevTools on the right  
     :::image-end:::  
     
-## Anzeigen und Ändern des JavaScript-oder Dom der Seite   
+## View and change the JavaScript or DOM of the page   
 
-Beim Erstellen oder Debuggen einer Seite ist es häufig hilfreich, Anweisungen in der **Konsole** auszuführen, um zu ändern, wie die Seite aussehen oder ausgeführt werden soll.  
+When building or debugging a page, it is often useful to run statements in the **Console** in order to change how the page looks or runs.  
     
-1.  Beachten Sie den Text in der Schaltfläche.  
-1.  Geben `document.getElementById('hello').textContent = 'Hello, Console!'` Sie die **Konsole** ein, und drücken Sie dann `Enter` , um den Ausdruck auszuwerten.  Beachten Sie, wie sich der Text in der Schaltfläche ändert.  
+1.  Notice the text in the button.  
+1.  Type `document.getElementById('hello').textContent = 'Hello, Console!'` in the **Console** and then press `Enter` to evaluate the expression.  Notice how the text inside the button changes.  
     
-    :::image type="complex" source="../media/console-javascript-example-console-change-button-text.msft.png" alt-text="So sieht die Konsole nach der Auswertung des Ausdrucks aus" lightbox="../media/console-javascript-example-console-change-button-text.msft.png":::
-       So sieht die **Konsole** nach der Auswertung des Ausdrucks aus  
+    :::image type="complex" source="../media/console-javascript-example-console-change-button-text.msft.png" alt-text="The Console" lightbox="../media/console-javascript-example-console-change-button-text.msft.png":::
+       How the **Console** looks after evaluating the expression  
     :::image-end:::  
     
-    Unter dem Code, den Sie ausgewertet haben, wird angezeigt `"Hello, Console!"` .  Rufen Sie die vier Schritte von repl: lesen, auswerten, drucken, Schleife zurück.  Nach dem Auswerten des Codes wird von einem repl das Ergebnis des Ausdrucks gedruckt.  Daher `"Hello, Console!"` muss das Ergebnis der Auswertung sein `document.getElementById('hello').textContent = 'Hello, Console!'` .  
+    Below the code that you evaluated you see `"Hello, Console!"`.  Recall the 4 steps of REPL: read, evaluate, print, loop.  After evaluating your code, a REPL prints the result of the expression.  So `"Hello, Console!"` must be the result of evaluating `document.getElementById('hello').textContent = 'Hello, Console!'`.  
     
-## Ausführen von beliebigem JavaScript, das nicht mit der Seite verbunden ist   
+## Run arbitrary JavaScript that is not related to the page   
 
-Manchmal möchten Sie einfach nur einen Code-Spielplatz, in dem Sie einige Codes testen oder neue JavaScript-Funktionen testen können, mit denen Sie nicht vertraut sind.  Die Konsole eignet sich hervorragend für Experimente dieser Art.  
+Sometimes, you just want a code playground where you are able to test some code, or try out new JavaScript features you are not familiar with.  The Console is a perfect place for these kinds of experiments.  
 
-1.  Geben `5 + 15` Sie die Konsole ein, und drücken Sie `Enter` , um den Ausdruck auszuwerten. Die Konsole druckt das Ergebnis des Ausdrucks unter dem Code aus.  In der folgenden Abbildung sollte Ihre **Konsole** das Ergebnis anzeigen, nachdem der Ausdruck ausgewertet wurde.  
+1.  Type `5 + 15` in the Console and press `Enter` to evaluate the expression. The Console prints out the result of the expression below your code.  In the following figure, your **Console** should display the result after evaluating the expression.  
 
-1.  Geben Sie den folgenden Code in die **Konsole**ein.  Versuchen Sie, das Zeichen-für-Zeichen-Zeichen zu schreiben, anstatt es zu kopieren.  
+1.  Type the following code into the **Console**.  Try typing it out, character-by-character, rather than copy-pasting it.  
     
     ```javascript
     function add(a, b=20) { return a + b; }
     ```  
     
-    Wenn Sie mit der Syntax nicht vertraut sind `b=20` , lesen Sie [Definieren von Standardwerten für Funktionsargumente][Esma6DefaultParameterValues].  
+    If you are unfamiliar with the `b=20` syntax, see [define default values for function arguments][Esma6DefaultParameterValues].  
     
-1.  Führen Sie nun die soeben definierte Funktion aus.  
+1.  Now, run the function that you just defined.  
     
     :::row:::
        :::column span="":::
@@ -97,27 +97,27 @@ Manchmal möchten Sie einfach nur einen Code-Spielplatz, in dem Sie einige Codes
           ```  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/console-javascript-example-console-playground.msft.png" alt-text="Die Konsole wird angezeigt, nachdem die Ausdrücke im Codeausschnitt ausgewertet wurden." lightbox="../media/console-javascript-example-console-playground.msft.png":::
-             Die **Konsole** wird angezeigt, nachdem die Ausdrücke im Codeausschnitt ausgewertet wurden.  
+          :::image type="complex" source="../media/console-javascript-example-console-playground.msft.png" alt-text="The Console" lightbox="../media/console-javascript-example-console-playground.msft.png":::
+             The **Console** displays after evaluating the expressions in the code snippet  
           :::image-end:::  
        :::column-end:::
     :::row-end:::
     
-    `add(25)` wird als Standardwert ausgewertet, `45` Wenn die `add` Funktion ohne ein zweites Argument aufgerufen wird `b` `20` .  
+    `add(25)` evaluates to `45` because when the `add` function is called without a second argument, `b` defaults to `20`.  
 
-## Nächste Schritte   
+## Next steps   
 
 <!--See [Run JavaScript][DevToolsConsoleReference] to explore more features related to running JavaScript in the Console.  -->  
 
 <!--todo: add console reference (run javascript) section when available  -->  
 
-Mit devtools können Sie ein Skript mitten in der Ausführung anhalten.  Während Sie angehalten werden, können Sie die **Konsole** verwenden, um die `window` oder `DOM` der Seite zu diesem Zeitpunkt anzuzeigen und zu ändern.  Der Workflow sorgt für einen leistungsfähigen Debugging-Workflow.  Ein interaktives Lernprogramm finden Sie unter [Erste Schritte mit dem Debuggen von JavaScript][DevToolsJavascriptIndex].  
+DevTools lets you pause a script in the middle of running.  While you are paused, you may use the **Console** to view and change the `window` or `DOM` of the page at that moment in time.  The workflow makes for a powerful debugging workflow.  For an interactive tutorial, see [Get Started With Debugging JavaScript][DevToolsJavascriptIndex].  
 
-Die **Konsole** verfügt auch über eine Reihe von Funktionen, mit denen Sie die Interaktion mit einer Seite vereinfachen können.  Zum Beispiel:  
+The **Console** also has a set of convenience functions that make it easier to interact with a page.  For example:  
 
-*   Anstatt `document.querySelector()` ein Element zu markieren, geben Sie Folgendes ein: `$()`  Diese Syntax wurde von jQuery inspiriert, ist aber nicht wirklich jQuery.  Es ist nur ein Alias für `document.querySelector()` .  
-*   `debug(function)` legt einen Haltepunkt in der ersten Zeile dieser Funktion effektiv fest.  
-*   `keys(object)` Gibt ein Array zurück, das die Schlüssel des angegebenen Objekts enthält.  
+*   Rather than typing `document.querySelector()` to select an element, type `$()`.  This syntax is inspired by jQuery, but it is not actually jQuery.  It is just an alias for `document.querySelector()`.  
+*   `debug(function)` effectively sets a breakpoint on the first line of that function.  
+*   `keys(object)` returns an array containing the keys of the specified object.  
 
 <!--See [Console Utilities API Reference][DevToolsConsoleUtilities] to explore all the convenience functions.  -->  
 
@@ -129,25 +129,25 @@ Die **Konsole** verfügt auch über eine Reihe von Funktionen, mit denen Sie die
 
 <!-- links -->  
 
-[DevToolsConsoleLoggingMessages]: ./log.md "Erste Schritte mit der Protokollierung von Nachrichten in der Konsole | Microsoft docs"  
-[DevToolsConsoleReference]: ./reference.md#run-javascript "Konsolen Referenz | Microsoft docs"  
-[DevToolsConsoleUtilities]: ./utilities.md "API-Referenz für Konsolen Dienstprogramme | Microsoft docs"  
-[DevToolsJavascriptIndex]: ../javascript/index.md "Erste Schritte mit dem Debuggen von JavaScript in Microsoft Edge devtools"  
+[DevToolsConsoleLoggingMessages]: ./log.md "Get started with logging messages in the Console | Microsoft Docs"  
+[DevToolsConsoleReference]: ./reference.md#run-javascript "Console reference | Microsoft Docs"  
+[DevToolsConsoleUtilities]: ./utilities.md "Console Utilities API reference | Microsoft Docs"  
+[DevToolsJavascriptIndex]: ../javascript/index.md "Get started with debugging JavaScript in Microsoft Edge DevTools"  
 
-[2alityExpressionsVersusStatements]: https://2ality.com/2012/09/expressions-vs-statements.html "Ausdrücke im Vergleich zu Anweisungen in JavaScript"  
+[2alityExpressionsVersusStatements]: https://2ality.com/2012/09/expressions-vs-statements.html "Expressions versus statements in JavaScript"  
 
-[Esma6DefaultParameterValues]: https://es6-features.org/index#DefaultParameterValues "Standardparameterwerte – erweiterte Parameterbehandlung – ECMAScript 6 – neue Features: Übersicht & Vergleich"  
+[Esma6DefaultParameterValues]: https://es6-features.org/index#DefaultParameterValues "Default Parameter Values - Extended Parameter Handling - ECMAScript 6 — New Features: Overview & Comparison"  
 
-[GlitchConsoleJavascriptExample]: https://microsoft-edge-chromium-devtools.glitch.me/static/console/javascript/index.html "Beispiel für eine Konsolen-JavaScript | Glitch"  
+[GlitchConsoleJavascriptExample]: https://microsoft-edge-chromium-devtools.glitch.me/static/console/javascript/index.html "Console Javascript Example | Glitch"  
 
-[WikiReadEvalPrintLoop]: https://en.wikipedia.org/wiki/Read–eval–print_loop "Lesen – eval – Print Loop – Wikipedia"  
+[WikiReadEvalPrintLoop]: https://en.wikipedia.org/wiki/Read–eval–print_loop "Read–eval–print loop - Wikipedia"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
-> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/console/javascript) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
+> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/console/javascript) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
-Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
+This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

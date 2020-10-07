@@ -1,12 +1,12 @@
 ---
-description: Die Schritte zum Erstellen des Microsoft Edge Addons-entwicklerkontos im Partner Center.
-title: Status der Erweiterungs Übermittlung und Übersicht
+description: The steps to create Microsoft Edge Addons developer account on Partner center.
+title: Extension submission states and overview
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge-Chromium, Erweiterungen-Entwicklung, Browser-Erweiterungen, Addons, Partner Center, Entwickler
+keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
 ms.openlocfilehash: 028112f958656a705c7b52fa3a7bbfa49a1a0f79
 ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
@@ -14,19 +14,19 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 09/15/2020
 ms.locfileid: "11015731"
 ---
-# Status der Erweiterungs Übermittlung und Übersicht  
+# Extension submission states and overview  
 
-Auf der Übersichtsseite im Partner Center wird der Status Ihrer Erweiterung im gesamten Übermittlungs Fluss angezeigt.  
+The overview page on the Partner Center displays the state of your extension in the overall submission flow.  
 
-| # |  Status |  Beschreibung/Details |  
+| # |  State |  Description / Details |  
 |:--- |:--- |:--- |  
-| 1 |  In Entwurf |  Nachdem Sie Ihre Übermittlung erstellt und in Ihrem Konto gespeichert haben, ändert sich der Status in diesen Zustand.  <br />  Sie haben Ihr Erweiterungspaket und ihre Übermittlungsformular Details nicht für die Veröffentlichung im Microsoft Store übermittelt.  <br />  Ihre Erweiterung steht Benutzern in diesem Zustand nicht zur Verfügung.  |  
-| 2|  In Überarbeitung |  Nachdem Sie Ihre Durchwahl übermittelt haben, ändert sich der Status in diesen Zustand.  <br />  Ihr Erweiterungspaket und ihre Übermittlungsformular Details werden von Microsoft überprüft.  <br />  Ihre Erweiterung steht Benutzern in diesem Zustand nicht zur Verfügung.  |  
-| 3|  Warten auf die Veröffentlichung |  Nachdem die Erweiterungs Überprüfung erfolgreich abgeschlossen wurde und ihre Erweiterung für die Veröffentlichung in Microsoft Store vorbereitet wurde, ändert sich der Status in diesen Zustand.  <br />  Hierbei handelt es sich um einen Zwischenzustand zwischen `In review` und `In the store` .  <br />  Dieser Status wird möglicherweise nicht für alle Übermittlungen angezeigt.  |  
-| 4|  Im Laden |  Nachdem die Überprüfung abgeschlossen und ihre Erweiterung im Microsoft Store veröffentlicht wurde, ändert sich der Status in diesen Zustand.  <br />  Ihre Erweiterung steht im Microsoft Store in den von Ihnen angegebenen Märkten zur Verfügung.  |  
-| 5 |  Im Laden.  Update in Review |  Ihre Erweiterung wird im Microsoft Store veröffentlicht, und Sie haben ein Update übermittelt, das von Microsoft überprüft wird.  |  
-| 6 |  Überprüfung fehlgeschlagen |  Wenn Ihre Erweiterung eine Überprüfung fehlschlägt, ändert sich der Status in diesen Zustand.  <br />  Eine fehlgeschlagene Überprüfung kann während der ersten Überprüfung oder während eines Updates erfolgen.  <br />  Es wird davon ausgegangen, dass Sie Korrekturmaßnahmen ergreifen und ihre Erweiterung für die Veröffentlichung im Microsoft Store erneut übermitteln.  |  
-| 7 |  Im Store nicht verfügbar |  Es gibt drei mögliche Szenarien, in denen die Erweiterung diesen Zustand anzeigt:  **unveröffentlicht vom Speicher** , **aus dem Speicher entfernt**und **blockiert**.  Die Beschreibung jeder dieser drei ist unten angegeben.  |  
-| 8 |  Im Store nicht veröffentlicht |  Sie haben ihre Erweiterung vom Microsoft Store im Partner Center unveröffentlicht.  <br />  Klicken Sie im Partner Center auf der Seite für die Übermittlung von Erweiterungen auf die Schaltfläche Veröffentlichung aufheben.  <br />  Nach dem Aufheben der Veröffentlichung steht Ihre Erweiterung im Microsoft Store nicht mehr zur Verfügung, damit Sie von neuen Benutzern heruntergeladen werden kann, doch vorhandene Benutzer können ihre Kopien ihrer Erweiterung weiterhin verwenden.  |  
-| 9 |  Aus dem Store entfernt |  Wenn Ihre Erweiterung festgestellt wird, dass Sie gegen die allgemeinen Geschäftsbedingungen von Microsoft Store verstößt, kann Microsoft diese aus dem Microsoft Store entfernen, und der Zustand ändert sich in diesem Zustand.  <br />  Nachdem Sie Ihre Erweiterung von Microsoft entfernt haben, steht Ihre Erweiterung im Microsoft Store nicht mehr zur Verfügung, damit Sie von neuen Benutzern heruntergeladen werden kann, aber vorhandene Benutzer können ihre Kopien ihrer Erweiterung weiterhin verwenden.  |  
-| 10 |  Blockiert |  Wenn Sie feststellen, dass Ihre Erweiterung bösartig ist und die Sicherheit und den Datenschutz von Benutzern beeinträchtigt, hat Microsoft das Recht, ihre Erweiterung vom Microsoft Store zu blockieren, und der Zustand ändert sich in diesem Zustand.  <br />  Wenn Ihre Erweiterung blockiert ist, wird Ihre Durchwahl aus dem Microsoft Store entfernt, und die Erweiterung wird auch von den Benutzergeräten entfernt.  |  
+| 1 |  In draft |  After you create your submission and save it to your account, the state changes to this state.  <br />  You have not submitted your extension package and your submission form details for publishing on Microsoft Store.  <br />  Your extension is not available to users in this state.  |  
+| 2|  In review |  After you submit your extension, the state changes to this state.  <br />  Your extension package and your submission form details are under review by Microsoft.  <br />  Your extension is not available to users in this state.  |  
+| 3|  Waiting to publish |  After your extension review is successfully completed and while your extension is being prepared for publishing to Microsoft Store, the state changes to this state.  <br />  This is an intermediate state between `In review` and `In the store`.  <br />  This state may not appear for all the submissions.  |  
+| 4|  In the store |  After the review completes and your extension is published to Microsoft Store, the state changes to this state.  <br />  Your extension is available on Microsoft Store in markets that you specified.  |  
+| 5 |  In the store.  Update in review |  Your extension is published on Microsoft Store and you have submitted an update that is under review by Microsoft.  |  
+| 6 |  Review failed |  If your extension fails a review, the state changes to this state.  <br />  A failed review may occur during initial review or during an update.  <br />  You are expected to take corrective action and re-submit your extension for publishing on Microsoft Store.  |  
+| 7 |  Unavailable in store |  There are three possible scenarios when your extension displays this state:  **Unpublished from store** , **Removed from store**, and **Blocked**.  The description of each of these three is specified below.  |  
+| 8 |  Unpublished from store |  You unpublished your extension from Microsoft Store in Partner Center.  <br />  In Partner Center, on your extension submission page, you clicked on unpublish button.  <br />  After unpublishing, your extension is no longer available on Microsoft Store for new users to download, but existing users may continue to use their copies of your extension.  |  
+| 9 |  Removed from store |  If your extension is found to violate the terms and conditions of Microsoft Store, Microsoft may remove it from Microsoft Store and the state changes to this state.  <br />  After removal of your extension by Microsoft, your extension is no longer available on Microsoft Store for new users to download, but existing users may continue to use their copies of your extension.  |  
+| 10 |  Blocked |  If your extension is found to be malicious and compromising security and privacy of users, Microsoft has the right to block your extension from Microsoft Store and the state changes to this state.  <br />  If your extension is blocked, your extension is removed from Microsoft Store, your extension is also removed from user devices.  |  

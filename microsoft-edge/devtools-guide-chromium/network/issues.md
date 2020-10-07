@@ -1,12 +1,12 @@
 ---
-description: Informationen zum Erkennen von Netzwerkproblemen finden Sie im Netzwerk Panel von Microsoft Edge devtools.
-title: Leitfaden zu Netzwerkproblemen
+description: Learn how to detect network issues in the Network panel of Microsoft Edge DevTools.
+title: Network Issues Guide
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+keywords: microsoft edge, web development, f12 tools, devtools
 ms.openlocfilehash: ccd78c34a50bf235416df58aad28df9253b1b24e
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -32,88 +32,88 @@ ms.locfileid: "10993373"
 
 
 
-# Leitfaden zu Netzwerkproblemen   
+# Network issues guide   
 
 
 
 
-Dieser Leitfaden zeigt Ihnen, wie Sie Netzwerkprobleme oder Optimierungsmöglichkeiten im Netzwerk Panel von Microsoft Edge devtools erkennen.  
+This guide shows you how to detect network issues or optimization opportunities in the Network panel of Microsoft Edge DevTools.  
 
-Informationen zu den Grundlagen der **Netzwerk** Steuerung finden Sie unter [Erste Schritte][NetworkPerformance] .  
+See [Get Started][NetworkPerformance] to learn the basics of the **Network** panel.  
 
-## Warteschlangen-oder verzögerte Anforderungen   
+## Queued or stalled requests   
 
-**Symptome**  
+**Symptoms**  
 
-Sechs Anforderungen werden gleichzeitig heruntergeladen.  Danach wird eine Reihe von Anforderungen in die Warteschlange gestellt oder angehalten.  Nachdem eine der ersten sechs Anforderungen beendet wurde, wird eine der Anforderungen in der Warteschlange gestartet.  
+Six requests are downloading simultaneously.  After that, a series of requests are queued or stalled.  Once one of the first six requests finishes, one of the requests in the queue starts.  
 
-Im **Wasserfall** in der folgenden Abbildung beginnen die ersten sechs Anforderungen für das `edge-iconx1024.msft.png` Objekt gleichzeitig.  Die nachfolgenden Anforderungen werden angehalten, bis eine der ursprünglichen sechs beendet ist.  
+In the **Waterfall** in the following figure, the first six requests for the `edge-iconx1024.msft.png` asset start simultaneously.  The subsequent requests are stalled until one of the original six finishes.  
 
-:::image type="complex" source="../media/network-network-disabled-cache-resources-queue.msft.png" alt-text="Ein Beispiel für eine Reihe von Warteschlangen oder verzögerten Datenreihen im Netzwerk Panel" lightbox="../media/network-network-disabled-cache-resources-queue.msft.png":::
-   Ein Beispiel für eine Reihe von Warteschlangen oder verzögerten Datenreihen im **Netzwerk** Panel  
+:::image type="complex" source="../media/network-network-disabled-cache-resources-queue.msft.png" alt-text="An example of a queued or stalled series in the Network panel" lightbox="../media/network-network-disabled-cache-resources-queue.msft.png":::
+   An example of a queued or stalled series in the **Network** panel  
 :::image-end:::  
 
-**Ursachen**  
+**Causes**  
 
-Es werden zu viele Anforderungen an eine einzelne Domäne gestellt.  Bei HTTP/1.0-oder http/1.1-Verbindungen können mit Microsoft Edge maximal sechs gleichzeitige TCP-Verbindungen pro Host ausgeführt werden.  
+Too many requests are being made on a single domain.  On HTTP/1.0 or HTTP/1.1 connections, Microsoft Edge allows a maximum of six simultaneous TCP connections per host.  
 
-**Korrekturen**  
+**Fixes**  
 
-*   Implementieren Sie Domänen Splitter, wenn Sie http/1.0 oder http/1.1 verwenden müssen.  
-*   Verwenden Sie http/2.  Verwenden Sie keine Domänen Splitterung mit http/2.  
-*   Entfernen oder aufschieben unnötiger Anforderungen, damit kritische Anforderungen früher heruntergeladen werden.  
+*   Implement domain sharding if you must use HTTP/1.0 or HTTP/1.1.  
+*   Use HTTP/2.  Do not use domain sharding with HTTP/2.  
+*   Remove or defer unnecessary requests so that critical requests download earlier.  
     
-## Langsame Zeit bis zum ersten Byte (TTFB)   
+## Slow Time To First Byte (TTFB)   
 
-**Symptome**  
+**Symptoms**  
 
-Eine Anforderung verbringt lange Zeit darauf, das erste Byte vom Server zu empfangen.  
+A request spends a long time waiting to receive the first byte from the server.  
 
-In der folgenden Abbildung zeigt der lange, grüne Balken im **Wasserfall** an, dass die Anforderung lange gewartet hat.  Dies wurde mithilfe eines Profils simuliert, um die Netzwerkgeschwindigkeit zu begrenzen und eine Verzögerung hinzuzufügen.  
+In the following figure, the long, green bar in the **Waterfall** indicates that the request was waiting a long time.  This was simulated using a profile to restrict network speed and add a delay.  
 
-:::image type="complex" source="../media/network-network-resources-using-dial-up-profile.msft.png" alt-text="Ein Beispiel für eine Anforderung mit einer langsamen Zeit bis zum ersten Byte" lightbox="../media/network-network-resources-using-dial-up-profile.msft.png":::
-   Ein Beispiel für eine Anforderung mit einer langsamen Zeit bis zum ersten Byte  
+:::image type="complex" source="../media/network-network-resources-using-dial-up-profile.msft.png" alt-text="An example of a queued or stalled series in the Network panel" lightbox="../media/network-network-resources-using-dial-up-profile.msft.png":::
+   An example of a request with a slow Time To First Byte  
 :::image-end:::  
 
-**Ursachen**  
+**Causes**  
 
-*   Die Verbindung zwischen dem Client und dem Server ist langsam.  
-*   Der Server reagiert langsam.  Hosten Sie den Server lokal, um festzustellen, ob es sich um eine langsame Verbindung oder einen Server handelt.  Wenn Sie beim Zugriff auf einen lokalen Server weiterhin langsam auf das erste Byte \ (TTFB \) zugreifen, ist der Server langsam.  
+*   The connection between the client and server is slow.  
+*   The server is slow to respond.  Host the server locally to determine if it is the connection or server that is slow.  If you still get a slow Time To First Byte \(TTFB\) when accessing a local server, then the server is slow.  
     
-**Korrekturen**  
+**Fixes**  
 
-*   Wenn die Verbindung langsam ist, sollten Sie das Hosten von Inhalten in einem CDN oder Ändern von Hostinganbieter in Frage stellen.  
-*   Wenn der Server langsam ist, empfiehlt es sich, Datenbankabfragen zu optimieren, einen Cache zu implementieren oder Ihre Serverkonfiguration zu ändern.  
+*   If the connection is slow, consider hosting your content on a CDN or changing hosting providers.  
+*   If the server is slow, consider optimizing database queries, implementing a cache, or modifying your server configuration.  
     
-## Langsamer Download von Inhalten   
+## Slow content download   
 
-**Symptome**  
+**Symptoms**  
 
-Eine Anforderung dauert lange zum herunterladen.  
+A request takes a long time to download.  
 
-In der folgenden Abbildung bedeutet der lange, blaue Balken im **Wasserfall** neben dem PNG, dass es lange dauert, bis der Download erfolgt ist.  
+In the following figure, the long, blue bar in the **Waterfall** next to the png means it took a long time to download.  
 
-:::image type="complex" source="../media/network-network-resources-edge-devtools.msft.png" alt-text="Ein Beispiel für eine Anforderung, deren Download viel Zeit in Anspruch nimmt" lightbox="../media/network-network-resources-edge-devtools.msft.png":::
-   Ein Beispiel für eine Anforderung, deren Download viel Zeit in Anspruch nimmt  
+:::image type="complex" source="../media/network-network-resources-edge-devtools.msft.png" alt-text="An example of a queued or stalled series in the Network panel" lightbox="../media/network-network-resources-edge-devtools.msft.png":::
+   An example of a request that takes a long time to download  
 :::image-end:::  
 
-**Ursachen**  
+**Causes**  
 
-*   Die Verbindung zwischen dem Client und dem Server ist langsam.  
-*   Viele Inhalte werden heruntergeladen.  
+*   The connection between the client and server is slow.  
+*   A lot of content is being downloaded.  
     
-**Korrekturen**  
+**Fixes**  
 
-*   Bedenken Sie, dass Sie Ihre Inhalte in einem CDN hosten oder Hosting-Anbieter ändern.  
-*   Senden Sie weniger Bytes, indem Sie Ihre Anforderungen optimieren.  
+*   Consider hosting your content on a CDN or changing hosting providers.  
+*   Send fewer bytes by optimizing your requests.  
     
-## Wissens Spenden  
+## Contribute knowledge  
 
-Haben Sie ein Netzwerkproblem, das diesem Leitfaden hinzugefügt werden sollte?  
+Do you have a network issue that should be added to this guide?  
 
-*   Senden Sie einen Tweet an [@EdgeDevTools][MicrosoftEdgeTweet].  
-*   Wählen Sie **Feedback senden** \ ( ![ Feedback senden ][ImageSendFeedbackIcon] \) im devtools aus, oder drücken Sie \ ( `Alt` + `Shift` + `I` Windows \) oder `Option` + `Shift` + `I` \ (macOS \), um Feedback-oder Funktionsanforderungen bereitzustellen.  
-*   [Öffnen Sie ein Problem][WebFundamentalsIssue] mit dem docs Repo.  
+*   Send a tweet to [@EdgeDevTools][MicrosoftEdgeTweet].  
+*   Select **Send Feedback** \(![Send Feedback][ImageSendFeedbackIcon]\) in the DevTools or press `Alt`+`Shift`+`I` \(Windows\) or `Option`+`Shift`+`I` \(macOS\) to provide feedback or feature requests.  
+*   [Open an issue][WebFundamentalsIssue] on the docs repo.  
     
 <!--  
   
@@ -127,18 +127,18 @@ Haben Sie ein Netzwerkproblem, das diesem Leitfaden hinzugefügt werden sollte?
 
 <!-- links -->  
 
-[NetworkPerformance]: ./index.md "Überprüfen der Netzwerkaktivität in Microsoft Edge devtools | Microsoft docs"  
+[NetworkPerformance]: ./index.md "Inspect network activity in Microsoft Edge DevTools | Microsoft Docs"  
 
 [MicrosoftEdgeTweet]: https://twitter.com/intent/tweet?text=@EdgeDevTools%20[Network%20Issues%20Guide%20Suggestion]  
 
-[WebFundamentalsIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=%5BDevTools%20Network%20Issues%20Guide%20Suggestion%5D "Neues Problem – MicrosoftDocs/Edge – Entwickler"  
+[WebFundamentalsIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=%5BDevTools%20Network%20Issues%20Guide%20Suggestion%5D "New Issue - MicrosoftDocs/edge-developer"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
-> Die ursprüngliche Seite wird [hier](https://developers.google.com/web/tools/chrome-devtools/network/issues) gefunden und von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) und [Jonathan Garber][JonathanGarbee] \ (Google Developer Expert für Web Technology) verfasst.  
+> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/network/issues) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) and [Jonathan Garbee][JonathanGarbee] \(Google Developer Expert for Web Technology\).  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
-Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
+This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

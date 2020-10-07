@@ -1,12 +1,12 @@
 ---
-description: Erste Schritte mit HTML und dem Dom
-title: 'DevTools für Anfänger: Erste Schritte mit HTML und dem Dom'
+description: Get Started with HTML and the DOM
+title: 'DevTools for beginners: Get started with HTML and the DOM'
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
+keywords: microsoft edge, web developement, f12 tools, devtools
 ms.openlocfilehash: 182885cb97dbd1672d33b257569b0d841466985b
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -28,69 +28,69 @@ ms.locfileid: "10993282"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# DevTools für Anfänger: Erste Schritte mit HTML und dem Dom   
+# DevTools for beginners: Get started with HTML and the DOM   
 
-Dies ist das erste in einer Reihe von Lernprogrammen, die Ihnen die Grundlagen der Webentwicklung beibringen.  Darüber hinaus erhalten Sie Informationen zu einer Reihe von Webentwickler Tools namens Microsoft Edge devtools, die Ihre Produktivität steigern können.  
+This is the first in a series of tutorials that teach you the basics of web development.  You will also learn about a set of web developer tools called Microsoft Edge DevTools that can increase your productivity.  
 
-In diesem speziellen Lernprogramm erfahren Sie mehr über HTML und das DOM.  HTML ist eine der Kerntechnologien der Web-Entwicklung.  Diese Sprache steuert die Struktur und den Inhalt von Webseiten.  Das Dom ist auch mit der Struktur und dem Inhalt von Webseiten verknüpft, aber Sie werden später mehr darüber erfahren.  
+In this particular tutorial, you learn about HTML and the DOM.  HTML is one of the core technologies of web development.  It is the language that controls the structure and content of webpages.  The DOM is also related to the structure and content of webpages, but you'll learn more about that later.  
 
-## Ziele   
+## Goals   
 
-Sie werden Web-Entwicklung lernen, indem Sie Ihre eigene Website erstellen.  Wenn Sie alle Lernprogramme in der *devtools für Anfänger* -Serie abgeschlossen haben, sieht die fertige Website wie in der folgenden Abbildung aus.  
+You are going to learn web development by actually building your own website.  By the time you complete all of the tutorials in the *DevTools for Beginners* series, your finished site will look like in the following figure.  
 
-:::image type="complex" source="../media/beginners-html-finished.msft.png" alt-text="Die fertige Website" lightbox="../media/beginners-html-finished.msft.png":::
-   Die fertige Website  
+:::image type="complex" source="../media/beginners-html-finished.msft.png" alt-text="The finished site" lightbox="../media/beginners-html-finished.msft.png":::
+   The finished site  
 :::image-end:::  
 
-Am Ende dieses Lernprogramms können Sie Folgendes verstehen:  
+By the end of this tutorial, you will understand:  
 
-*   So erstellen HTML und Dom die Inhalte, die auf Webseiten angezeigt werden.  
-*   So können Sie mithilfe von Microsoft Edge devtools mit HTML-und Dom-Änderungen experimentieren.  
-*   Der Unterschied zwischen HTML und dem Dom.  
+*   How HTML and the DOM create the content that you see on webpages.  
+*   How Microsoft Edge DevTools can help you experiment with HTML and DOM changes.  
+*   The difference between HTML and the DOM.  
 
-Sie haben auch eine echte Website!  Mit dieser Website können Sie Ihren Lebenslauf oder Ihren Blog hosten.  
+You'll also have a real website!  You can use this site to host your resume or blog.  
 
-## Voraussetzungen   
+## Prerequisites   
 
-Bevor Sie dieses Lernprogramm ausführen, führen Sie die folgenden Voraussetzungen aus:  
+Before attempting this tutorial, complete the following prerequisites:  
 
-*   Wenn Sie mit HTML nicht vertraut sind, lesen Sie [Erste Schritte mit HTML][MDNGettingStartedHtml].  
-*   Laden Sie den [Microsoft Edge][MicrosoftEdgeInsider] -Webbrowser herunter.  In diesem Lernprogramm wird eine Reihe von Webentwicklungstools, so genannte Microsoft Edge-devtools, verwendet, die in Microsoft Edge integriert sind.  
+*   If you are unfamiliar with HTML, read [Getting Started with HTML][MDNGettingStartedHtml].  
+*   Download the [Microsoft Edge][MicrosoftEdgeInsider] web browser.  This tutorial uses a set of web development tools, called the Microsoft Edge DevTools, that are built into Microsoft Edge.  
 
-## Einrichten Ihres Codes   
+## Set up your code   
 
-Sie werden Ihre Website in einem Online Code-Editor mit dem Namen glitch erstellen.  
+You are going to build your site in an online code editor called Glitch.  
 
-1.  Öffnen Sie den [Quellcode][GlitchAlluringShockIndex].  Diese Registerkarte wird in diesem Lernprogramm als **Registerkarte "Editor** " bezeichnet.  
+1.  Open the [source code][GlitchAlluringShockIndex].  This tab will be called the **editor tab** throughout this tutorial.  
     
-    :::image type="complex" source="../media/beginners-html-setup1.msft.png" alt-text="Die Registerkarte "Editor"" lightbox="../media/beginners-html-setup1.msft.png":::
-       Die Registerkarte "Editor"  
+    :::image type="complex" source="../media/beginners-html-setup1.msft.png" alt-text="The finished site" lightbox="../media/beginners-html-setup1.msft.png":::
+       The editor tab  
     :::image-end:::  
     
-1.  Klicken Sie auf **verführerisch – Schock**.  Das Menü Projektoptionen wird in der oberen linken Ecke geöffnet.  
+1.  Click **alluring-shock**.  The Project Options menu opens in the top-left corner.  
     
-    :::image type="complex" source="../media/beginners-html-setup2.msft.png" alt-text="Das Menü "Projektoptionen"" lightbox="../media/beginners-html-setup2.msft.png":::
-       Das Menü "Projektoptionen"  
+    :::image type="complex" source="../media/beginners-html-setup2.msft.png" alt-text="The finished site" lightbox="../media/beginners-html-setup2.msft.png":::
+       The Project Options menu  
     :::image-end:::  
     
-1.  Klicken Sie auf **Remix Project**.  Glitch erstellt eine Kopie des Projekts, die Sie bearbeiten können, und generiert nach dem Zufallsprinzip einen neuen Namen für das Projekt.  Der Inhalt ist derselbe wie zuvor.  
+1.  Click **Remix Project**.  Glitch creates a copy of the project that you can edit and randomly generates a new name for the project.  The content is the same as before.  
     
-    :::image type="complex" source="../media/beginners-html-setup3.msft.png" alt-text="Das Remix-Projekt" lightbox="../media/beginners-html-setup3.msft.png":::
-       Das Remix-Projekt  
+    :::image type="complex" source="../media/beginners-html-setup3.msft.png" alt-text="The finished site" lightbox="../media/beginners-html-setup3.msft.png":::
+       The remixed project  
     :::image-end:::  
     
-1.  Wenn Sie beabsichtigen, das nächste Lernprogramm in dieser Serie abzuschließen, klicken Sie auf **Anmelden** , und registrieren Sie sich bei glitch mit Ihrem GitHub-oder Facebook-Konto.  Wenn Sie sich nicht anmelden, verlieren Sie die Möglichkeit, dieses Projekt zu bearbeiten, wenn Sie die Registerkarte "Bearbeiten" schließen.  
-1.  Klicken Sie auf **anzeigen** , und wählen Sie **in einem neuen Fenster**aus.  Daraufhin wird eine neue Registerkarte geöffnet, auf der Sie die Live Seite anzeigen können.  Diese Registerkarte wird in diesem Lernprogramm als **"Live"-Registerkarte** bezeichnet.  
+1.  If you plan on completing the next tutorial in this series, click **Sign In** and sign in to Glitch with your GitHub or Facebook account.  If you don't sign in you will lose the ability to edit this project once you close the editing tab.  
+1.  Click **Show** and select **In a New Window**.  A new tab opens, showing you the live page.  This tab will be called the **live tab** throughout this tutorial.  
     
-    :::image type="complex" source="../media/beginners-html-setup4.msft.png" alt-text="Die Registerkarte "Live"" lightbox="../media/beginners-html-setup4.msft.png":::
-       Die Registerkarte "Live"  
+    :::image type="complex" source="../media/beginners-html-setup4.msft.png" alt-text="The finished site" lightbox="../media/beginners-html-setup4.msft.png":::
+       The live tab  
     :::image-end:::  
     
-## Hinzufügen von Inhalten   
+## Add content   
 
-Ihre Website ist ziemlich leer.  Führen Sie die folgenden Schritte aus, um Inhalte hinzuzufügen.  
+Your site is pretty empty.  Follow the steps below to add some content to it!  
 
-1.  Ersetzen Sie auf der **Registerkarte Editor** `<!-- You're "About Me" will go here.  -->` durch `<h1>About Me</h1>` .  
+1.  In the **editor tab**, replace `<!-- You're "About Me" will go here.  -->` with `<h1>About Me</h1>`.  
     
     :::row:::
        :::column span="":::
@@ -108,19 +108,19 @@ Ihre Website ist ziemlich leer.  Führen Sie die folgenden Schritte aus, um Inha
           ```  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/beginners-html-add1.msft.png" alt-text="Der neue Code ist auf der Registerkarte "Editor" hervorgehoben." lightbox="../media/beginners-html-add1.msft.png":::
-             Der neue Code ist auf der Registerkarte "Editor" hervorgehoben.  
+          :::image type="complex" source="../media/beginners-html-add1.msft.png" alt-text="The finished site" lightbox="../media/beginners-html-add1.msft.png":::
+             The new code is highlighted in the editor tab  
           :::image-end:::  
        :::column-end:::
     :::row-end:::
     
-1.  Zeigen Sie Ihre Änderungen auf der **Registerkarte "Live"** an.  Der Text `About Me` wird auf der Seite angezeigt.  Sie ist größer als der restliche Text, da das `<h1>` Element eine Abschnittsüberschrift darstellt.  Ihr Webbrowserformat Vorlagen für Überschriften in größeren Schriftgraden automatisch.  
+1.  View your changes in the **live tab**.  The text `About Me` is visible on the page.  It's larger than the rest of the text, because the `<h1>` element represents a section heading.  Your web browser automatically styles headings in larger font sizes.  
     
-    :::image type="complex" source="../media/beginners-html-add2.msft.png" alt-text="Die neue Überschrift wird auf der Registerkarte "Live" angezeigt" lightbox="../media/beginners-html-add2.msft.png":::
-       Die neue Überschrift wird auf der Registerkarte "Live" angezeigt  
+    :::image type="complex" source="../media/beginners-html-add2.msft.png" alt-text="The finished site" lightbox="../media/beginners-html-add2.msft.png":::
+       The new heading is visible in the live tab  
     :::image-end:::  
     
-1.  Klicken Sie auf der **Registerkarte Editor** `<p>I am learning HTML.  Recent accomplishments:</p>` auf die Zeile, die Sie gerade eingefügt haben `<h1>About Me</h1>` .  
+1.  Back in the **editor tab**, insert `<p>I am learning HTML.  Recent accomplishments:</p>` on the line below where you just put `<h1>About Me</h1>`.  
     
     :::row:::
        :::column span="":::
@@ -139,14 +139,14 @@ Ihre Website ist ziemlich leer.  Führen Sie die folgenden Schritte aus, um Inha
           ```  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/beginners-html-add3.msft.png" alt-text="Der neue Code ist auf der Registerkarte "Editor" hervorgehoben." lightbox="../media/beginners-html-add3.msft.png":::
-             Der neue Code ist auf der Registerkarte "Editor" hervorgehoben.  
+          :::image type="complex" source="../media/beginners-html-add3.msft.png" alt-text="The finished site" lightbox="../media/beginners-html-add3.msft.png":::
+             The new code is highlighted in the editor tab  
           :::image-end:::  
        :::column-end:::
     :::row-end:::
     
-1.  Zeigen Sie Ihre Änderungen auf der **Registerkarte "Live"** an.  
-1.  Zurück auf der **Registerkarte "Editor"** fügen Sie eine Liste ihrer Leistungen hinzu:  
+1.  View your change in the **live tab**.  
+1.  Back in the **editor tab**, add a list of your accomplishments:  
     
     :::row:::
        :::column span="":::
@@ -167,63 +167,63 @@ Ihre Website ist ziemlich leer.  Führen Sie die folgenden Schritte aus, um Inha
           ```  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/beginners-html-add4.msft.png" alt-text="Der neue Code ist auf der Registerkarte "Editor" hervorgehoben." lightbox="../media/beginners-html-add4.msft.png":::
-             Der neue Code ist auf der Registerkarte "Editor" hervorgehoben.  
+          :::image type="complex" source="../media/beginners-html-add4.msft.png" alt-text="The finished site" lightbox="../media/beginners-html-add4.msft.png":::
+             The new code is highlighted in the editor tab  
           :::image-end:::  
        :::column-end:::
     :::row-end:::  
     
-1.  Wiederkehren Sie zur **Registerkarte Live** zurück, um sicherzustellen, dass der neue Inhalt richtig angezeigt wird.  
+1.  Again, go back to the **live tab** to make sure that the new content is displaying correctly.  
     
-    :::image type="complex" source="../media/beginners-html-add5.msft.png" alt-text="Die neue Liste wird auf der Registerkarte "Live" angezeigt" lightbox="../media/beginners-html-add5.msft.png":::
-       Die neue Liste wird auf der Registerkarte "Live" angezeigt  
+    :::image type="complex" source="../media/beginners-html-add5.msft.png" alt-text="The finished site" lightbox="../media/beginners-html-add5.msft.png":::
+       The new list is visible in the live tab  
     :::image-end:::  
     
-## Experimentieren mit Inhaltsänderungen in Microsoft Edge devtools   
+## Experiment with content changes in Microsoft Edge DevTools   
 
-Wenn Sie eine große Seite mit viel HTML entwickelt haben, können Sie sich vorstellen, dass es möglicherweise etwas mühsam ist, zwischen der Registerkarte "Editor" und der Registerkarte "Live" hunderte Male hin-und herzugehen, um Ihre Änderungen zu sehen, insbesondere dann, wenn Sie nicht genau wissen, was auf der Seite eingefügt werden soll.  Microsoft Edge devtools kann Ihnen beim Experimentieren mit Inhaltsänderungen helfen, ohne die Live-Registerkarte verlassen zu müssen.  
+If you were developing a big page with a lot of HTML, you can imagine that it might be somewhat tedious to go back-and-forth between the editor tab and the live tab hundreds of times in order to see your changes, especially if you weren't sure what exactly to put on the page.  Microsoft Edge DevTools can help you experiment with content changes without ever leaving the live tab.  
 
-### Lernen Sie den Unterschied zwischen HTML und dem Dom kennen   
+### Learn the difference between HTML and the DOM   
 
-Bevor Sie mit der Bearbeitung Ihrer Inhalte von Microsoft Edge devtools beginnen, ist es hilfreich, den Unterschied zwischen HTML und dem Dom zu verstehen.  Am besten lernen Sie mit einem Beispiel:  
+Before you start editing your content from Microsoft Edge DevTools, it's helpful to understand the difference between HTML and the DOM.  The best way to learn is by example:  
 
-1.  Wechseln Sie zur **Registerkarte Live**.  Am unteren Rand der Seite wird der Text angezeigt `A new element!?!` .  
+1.  Go to the **live tab**.  At the bottom of your page you see the text `A new element!?!`.  
     
-    :::image type="complex" source="../media/beginners-html-dom1.msft.png" alt-text="Am unteren Rand der Seite wird der Text ein neues Element!?! kann angezeigt werden" lightbox="../media/beginners-html-dom1.msft.png":::
-       Am unteren Rand der Seite wird der Text ein neues Element!?! kann angezeigt werden  
+    :::image type="complex" source="../media/beginners-html-dom1.msft.png" alt-text="The finished site" lightbox="../media/beginners-html-dom1.msft.png":::
+       At the bottom of the page the text A new element!?! can be seen  
     :::image-end:::  
     
-1.  Wechseln Sie zurück zur **Registerkarte Editor** , und versuchen Sie, diesen Text zu finden `index.html` .  Es ist nicht da!  
+1.  Go back to the **editor tab** and try to find this text in `index.html`.  It's not there!  
     
-    :::image type="complex" source="../media/beginners-html-dom2.msft.png" alt-text="Der mysteriöse Text ein neues Element!?! ist nirgendwo in index.html zu finden" lightbox="../media/beginners-html-dom2.msft.png":::
-       Der mysteriöse Text `A new element!?!` ist nirgendwo zu finden `index.html`  
+    :::image type="complex" source="../media/beginners-html-dom2.msft.png" alt-text="The finished site" lightbox="../media/beginners-html-dom2.msft.png":::
+       The mystery text `A new element!?!` is nowhere to be found in `index.html`  
     :::image-end:::  
     
-1.  Wechseln Sie zurück zur **Registerkarte Live**, klicken Sie mit der rechten Maustaste `A new element!?!` , und wählen Sie über **prüfen**aus.  
+1.  Go back to the **live tab**, right-click `A new element!?!`, and select **Inspect**.  
     
-    :::image type="complex" source="../media/beginners-html-dom3.msft.png" alt-text="Überprüfen von Text" lightbox="../media/beginners-html-dom3.msft.png":::
-       Überprüfen von Text  
+    :::image type="complex" source="../media/beginners-html-dom3.msft.png" alt-text="The finished site" lightbox="../media/beginners-html-dom3.msft.png":::
+       Inspecting some text  
     :::image-end:::  
     
-    DevTools wird neben ihrer Seite geöffnet.  `<div>A new element!?!</div>` ist blau hervorgehoben.  Obwohl diese Struktur in devtools wie Ihr HTML-Code aussieht, handelt es sich tatsächlich um die **DOM-Struktur**.  
+    DevTools opens up alongside your page.  `<div>A new element!?!</div>` is highlighted blue.  Although this structure in DevTools looks like your HTML, it is actually the **DOM Tree**.  
     
-    :::image type="complex" source="../media/beginners-html-dom4.msft.png" alt-text="DevTools ist neben der Seite geöffnet." lightbox="../media/beginners-html-dom4.msft.png":::
-       DevTools ist neben der Seite geöffnet.  
+    :::image type="complex" source="../media/beginners-html-dom4.msft.png" alt-text="The finished site" lightbox="../media/beginners-html-dom4.msft.png":::
+       DevTools is open alongside the page  
     :::image-end:::  
     
-Wenn Ihre Seite geladen wird, verwendet der Browser Ihren HTML-Code, um den *anfänglichen* Inhalt der Seite zu erstellen.  Das Dom steht für den *aktuellen* Inhalt der Seite, der sich im Laufe der Zeit ändern kann.  Der mysteriöse `<div>A new element!?!</div>` Inhalt wird Ihrer Seite hinzugefügt, weil das `<script src="new.js"></script>` Tag am unteren Rand des HTML-Tags liegt.  Dieses Tag bewirkt, dass JavaScript-Code ausgeführt wird.  Sie werden in einem späteren Lernprogramm mehr über JavaScript erfahren, aber betrachten Sie es jetzt als Programmiersprache, mit der der Inhalt Ihrer Seite geändert werden kann.  In diesem speziellen Fall fügt JavaScript-Code `<div>A new element!?!</div>` zu Ihrer Seite hinzu.  Deshalb ist dieser mysteriöse Text auf Ihrer Live-Seite sichtbar, aber nicht in Ihrem HTML-Code.  
+When your page loads, the browser takes your HTML to create the *initial* content of the page.  The DOM represents the *current* content of the page, which can change over time.  The mysterious `<div>A new element!?!</div>` content is added to your page because of the `<script src="new.js"></script>` tag at the bottom of your HTML.  This tag causes some JavaScript code to run.  You'll learn more about JavaScript in a later tutorial, but for now think of it as a programming language that can change the content of your page.  In this particular case, JavaScript code adds `<div>A new element!?!</div>` to your page.  That is why this mystery text is visible on your live page, but not in your HTML.  
 
-### Bearbeiten des DOM   
+### Edit the DOM   
 
-Wenn Sie schnell mit Inhaltsänderungen experimentieren möchten, ohne die Registerkarte "Live" zu verlassen, probieren Sie devtools aus.  
+If you want to quickly experiment with content changes without ever leaving the live tab, try DevTools.  
 
-1.  Klicken Sie in devtools mit der rechten Maustaste, `Your site!` und wählen Sie **als HTML bearbeiten**aus.  
+1.  In DevTools, right-click `Your site!` and select **Edit as HTML**.  
     
-    :::image type="complex" source="../media/beginners-html-edit1.msft.png" alt-text="Bearbeiten des Knotens als HTML" lightbox="../media/beginners-html-edit1.msft.png":::
-       Bearbeiten des Knotens als HTML  
+    :::image type="complex" source="../media/beginners-html-edit1.msft.png" alt-text="The finished site" lightbox="../media/beginners-html-edit1.msft.png":::
+       Editing the node as HTML  
     :::image-end:::  
     
-1.  Ersetzen Sie dies `<p>Your site!</p>` durch den folgenden Code.  
+1.  Replace `<p>Your site!</p>` with the code below.  
     
     :::row:::
        :::column span="":::
@@ -241,74 +241,74 @@ Wenn Sie schnell mit Inhaltsänderungen experimentieren möchten, ohne die Regis
           ```  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/beginners-html-edit2.msft.png" alt-text="Bearbeiten des Knotens als HTML" lightbox="../media/beginners-html-edit2.msft.png":::
-             Bearbeiten des Knotens als HTML  
+          :::image type="complex" source="../media/beginners-html-edit2.msft.png" alt-text="The finished site" lightbox="../media/beginners-html-edit2.msft.png":::
+             Editing the node as HTML  
           :::image-end:::  
        :::column-end:::
     :::row-end:::  
     
-1.  Drücken Sie `Control` + `Enter` \ (Windows \) oder `Command` + `Enter` \ (macOS \), um die Änderungen zu speichern, oder klicken Sie auf eine Stelle außerhalb des Felds.  Ihre Änderungen werden automatisch in der Live Ansicht Ihrer Seite angezeigt.  Der Text `Your site!` wurde durch den neuen Inhalt ersetzt.  
+1.  Press `Control`+`Enter` \(Windows\) or `Command`+`Enter` \(macOS\) to save your changes, or click outside of the box.  Your changes automatically show up in the live view of your page.  The text `Your site!` has been replaced with the new content.  
     
-    :::image type="complex" source="../media/beginners-html-edit3.msft.png" alt-text="Der neue Inhalt wird sofort auf der Seite angezeigt." lightbox="../media/beginners-html-edit3.msft.png":::
-       Der neue Inhalt wird sofort auf der Seite angezeigt.  
+    :::image type="complex" source="../media/beginners-html-edit3.msft.png" alt-text="The finished site" lightbox="../media/beginners-html-edit3.msft.png":::
+       The new content shows up immediately on the page  
     :::image-end:::  
     
-Dieser Workflow eignet sich gut zum Experimentieren mit Inhaltsänderungen.  Wenn Sie die Seite neu laden oder die Registerkarte schließen, sind Ihre Änderungen für immer verschwunden.  Wenn Sie diesen Workflow verwenden und Ihre Änderungen speichern möchten, müssen Sie diese Änderungen manuell in Ihr HTML-Code kopieren.  In den nächsten Abschnitten werden weitere Möglichkeiten zum Ändern von Inhalten aus der DOM-Struktur angezeigt.  
+This workflow is only good for experimenting with content changes.  If you reload the page or close the tab, your changes will be gone forever.  If you're using this workflow and you want to save your changes, you need to manually copy those changes over to your HTML.  The next couple of sections show you some more ways that you can change content from the DOM Tree.  
 
-## Neuanordnen von Knoten   
+## Reorder nodes   
 
-Sie können auch die Reihenfolge der DOM-Knoten ändern.  Auf Ihrer Webseite befindet sich beispielsweise das Navigationsmenü in der Nähe des unteren Rands.  So verschieben Sie Sie an den Anfang:  
+You can also change the order of DOM nodes.  For example, on your web page the navigation menu is near the bottom.  To move it to the top:  
 
-1.  Suchen Sie den `<nav>` Knoten in der **DOM-Struktur** von devtools.  
+1.  Find the `<nav>` node in the **DOM Tree** of DevTools.  
     
-    :::image type="complex" source="../media/beginners-html-reorder1.msft.png" alt-text="Der Navigationsknoten ist in devtools blau hervorgehoben." lightbox="../media/beginners-html-reorder1.msft.png":::
-       Der Navigationsknoten ist in devtools blau hervorgehoben.  
+    :::image type="complex" source="../media/beginners-html-reorder1.msft.png" alt-text="The finished site" lightbox="../media/beginners-html-reorder1.msft.png":::
+       The nav node is highlighted blue in DevTools  
     :::image-end:::  
     
-1.  Ziehen Sie den `<nav>` Knoten an den Anfang, sodass er das erste untergeordnete Element unterhalb des `<body>` Knotens ist.  
+1.  Drag the `<nav>` node to the top, so that it's the first child below the `<body>` node.  
     
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/beginners-html-reorder2.msft.png" alt-text="Ziehen des Navigationsknotens nach oben" lightbox="../media/beginners-html-reorder2.msft.png":::
-             Ziehen des Navigationsknotens nach oben  
+          :::image type="complex" source="../media/beginners-html-reorder2.msft.png" alt-text="The finished site" lightbox="../media/beginners-html-reorder2.msft.png":::
+             Dragging the nav node to the top  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          Der `<nav>` Knoten wird jetzt oben auf der Seite angezeigt.  
+          The `<nav>` node is now displaying at the top of your page.  
           
-          :::image type="complex" source="../media/beginners-html-reorder3.msft.png" alt-text="Der Navigationsknoten befindet sich am oberen Rand der Seite." lightbox="../media/beginners-html-reorder3.msft.png":::
-             Der Navigationsknoten befindet sich am oberen Rand der Seite.  
+          :::image type="complex" source="../media/beginners-html-reorder3.msft.png" alt-text="The finished site" lightbox="../media/beginners-html-reorder3.msft.png":::
+             The nav node is at the top of the page  
           :::image-end:::  
        :::column-end:::
    :::row-end:::  
     
-### Löschen eines Knotens   
+### Delete a node   
 
-Sie können auch Knoten aus der DOM-Struktur entfernen.  
+You can also remove nodes from the DOM Tree.  
 
-1.  Klicken Sie in der **DOM-Struktur**auf `<div>A new element!?!</div>` .  DevTools hebt den Knoten Blau hervor.  
+1.  In the **DOM Tree**, click `<div>A new element!?!</div>`.  DevTools highlights the node blue.  
     
-    :::image type="complex" source="../media/beginners-html-delete1.msft.png" alt-text="Auswählen des zu löschenden Knotens" lightbox="../media/beginners-html-delete1.msft.png":::
-       Auswählen des zu löschenden Knotens  
+    :::image type="complex" source="../media/beginners-html-delete1.msft.png" alt-text="The finished site" lightbox="../media/beginners-html-delete1.msft.png":::
+       Selecting the node to be deleted  
     :::image-end:::  
     
-1.  Drücken Sie die `Delete` Taste auf der Tastatur.  Der `<div>A new element!?!</div>` Knoten wird aus ihrer DOM-Struktur entfernt.  
+1.  Press the `Delete` key on your keyboard.  The `<div>A new element!?!</div>` node is removed from your DOM Tree.  
     
-    :::image type="complex" source="../media/beginners-html-delete2.msft.png" alt-text="Der Knoten wurde gelöscht" lightbox="../media/beginners-html-delete2.msft.png":::
-       Der Knoten wurde gelöscht  
+    :::image type="complex" source="../media/beginners-html-delete2.msft.png" alt-text="The finished site" lightbox="../media/beginners-html-delete2.msft.png":::
+       The node has been deleted  
     :::image-end:::  
     
-## Kopieren der Änderungen   
+## Copy your changes   
 
-Sie haben es fast geschafft.  Sie haben in devtools einige Änderungen an Ihrer Seite vorgenommen, die aber noch nicht in Ihrem Quellcode gespeichert sind.  
+You're almost done.  You've made a few changes to your page in DevTools, but they're not yet saved to your source code.  
 
-1.  Aktualisieren Sie Ihren **Live-Reiter**.  Die Änderungen, die Sie in der DOM-Struktur vorgenommen haben, werden ausgeblendet.  Insbesondere kehrt der Text `Your site!` zum Anfang der Seite zurück, und der Text `A new element!?!` kehrt nach unten zurück.  
+1.  Refresh your **live tab**.  The changes that you made in the DOM Tree disappear.  In particular, the text `Your site!` returns to the top of the page, and the text `A new element!?!` returns to the bottom.  
     
-    :::image type="complex" source="../media/beginners-html-copy1.msft.png" alt-text="Die von Ihnen vorgenommenen Änderungen sind nicht mehr vorhanden" lightbox="../media/beginners-html-copy1.msft.png":::
-       Die von Ihnen vorgenommenen Änderungen sind nicht mehr vorhanden  
+    :::image type="complex" source="../media/beginners-html-copy1.msft.png" alt-text="The finished site" lightbox="../media/beginners-html-copy1.msft.png":::
+       The changes that you've made are gone  
     :::image-end:::  
     
-1.  Kopieren Sie den folgenden Code.  
+1.  Copy the code below.  
     
     ```html
     <!DOCTYPE html>
@@ -342,37 +342,37 @@ Sie haben es fast geschafft.  Sie haben in devtools einige Änderungen an Ihrer 
     </html>
     ```  
     
-1.  Wechseln Sie zurück zur **Registerkarte Editor** , und ersetzen Sie den Inhalt Ihrer `index.html` Datei durch den Code, den Sie soeben kopiert haben.  
+1.  Go back to the **editor tab** and replace the contents of your `index.html` file with the code that you just copied.  
     
-    :::image type="complex" source="../media/beginners-html-copy2.msft.png" alt-text="So sollte Ihre index.html-Datei aussehen" lightbox="../media/beginners-html-copy2.msft.png":::
-       Aussehen der `index.html` Datei  
+    :::image type="complex" source="../media/beginners-html-copy2.msft.png" alt-text="The finished site" lightbox="../media/beginners-html-copy2.msft.png":::
+       How your `index.html` file should look  
     :::image-end:::  
     
-## Nächste Schritte   
+## Next steps   
 
-*   Führen Sie das nächste Lernprogramm in dieser Serie, [Erste Schritte mit CSS][DevToolsBeginnersCss], aus, um zu erfahren, wie Sie Ihre Seite formatieren und mit Stiländerungen in Microsoft Edge devtools experimentieren.  
-*   Lesen Sie [Einführung in das DOM][MDNIntroductionDom] , um mehr über das DOM zu erfahren.  
-*   Schauen Sie sich einen Kurs wie [Einführung in die Webentwicklung][CourseraIntroductionToWebDevelopment] an, um mehr praktische Erfahrungen mit der Webentwicklung zu erhalten.  
+*   Complete the next tutorial in this series, [Get Started with CSS][DevToolsBeginnersCss], to learn how to style your page and experiment with style changes in Microsoft Edge DevTools.  
+*   Read [Introduction to the DOM][MDNIntroductionDom] to learn more about the DOM.  
+*   Check out a course like [Introduction to Web Development][CourseraIntroductionToWebDevelopment] to get more hands-on web development experience.  
 
 <!--- links --->  
 
-[DevToolsBeginnersCss]: ./css.md "DevTools für Anfänger: Erste Schritte mit CSS | Microsoft docs"  
+[DevToolsBeginnersCss]: ./css.md "DevTools For Beginners: Get Started with CSS | Microsoft Docs"  
 
-[MicrosoftEdgeInsider]: https://www.microsoftedgeinsider.com "Microsoft Edge-Insider"  
+[MicrosoftEdgeInsider]: https://www.microsoftedgeinsider.com "Microsoft Edge Insider"  
 
-[CourseraIntroductionToWebDevelopment]: https://www.coursera.org/learn/web-development "Einführung in die Web-Entwicklung | Coursera"  
+[CourseraIntroductionToWebDevelopment]: https://www.coursera.org/learn/web-development "Introduction to Web Development | Coursera"  
 
-[GlitchAlluringShockIndex]: https://glitch.com/edit/#!/alluring-shock?path=index.html "index.html-verführerisch-Schock | Glitch"  
+[GlitchAlluringShockIndex]: https://glitch.com/edit/#!/alluring-shock?path=index.html "index.html - alluring-shock | Glitch"  
 
-[MDNGettingStartedHtml]: https://developer.mozilla.org/docs/Learn/HTML/Introduction_to_HTML/Getting_started "Erste Schritte mit HTML | MDN"  
-[MDNIntroductionDom]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction "Einführung in das DOM | MDN"  
+[MDNGettingStartedHtml]: https://developer.mozilla.org/docs/Learn/HTML/Introduction_to_HTML/Getting_started "Getting started with HTML | MDN"  
+[MDNIntroductionDom]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction "Introduction to the DOM | MDN"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
-> Die ursprüngliche Seite wird [hier](https://developers.google.com/web/tools/chrome-devtools/beginners/html) gefunden und von [Katherine Jackson][KatherineJackson] (Technical Writer intern, Chrome devtools \) erstellt.  
+> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/beginners/html) and is authored by [Katherine Jackson][KatherineJackson] \(Technical Writer Intern, Chrome DevTools\).  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
-Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
+This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

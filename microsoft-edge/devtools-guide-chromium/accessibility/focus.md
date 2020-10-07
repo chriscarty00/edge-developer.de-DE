@@ -1,12 +1,12 @@
 ---
-description: Öffnen Sie die Konsole, erstellen Sie einen Live Ausdruck, und legen Sie den Ausdruck auf Document. activeElement.
-title: Nachverfolgen, welches Element den Fokus hat
+description: Open the Console, create a Live Expression, and set the expression to document.activeElement.
+title: Track Which Element Has Focus
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+keywords: microsoft edge, web development, f12 tools, devtools
 ms.openlocfilehash: 9000b8ca1fa52daf5257f201c65dcabd78298ec7
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -28,31 +28,31 @@ ms.locfileid: "10993205"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Nachverfolgen, welches Element den Fokus hat  
+# Track Which Element Has Focus  
 
-Angenommen, Sie testen die Barrierefreiheit der Tastaturnavigation auf einer Seite.  Beim Navigieren auf der Seite mit dem `Tab` Schlüssel verschwindet der Fokus Ring manchmal, da das Element mit dem Fokus ausgeblendet ist.  
+Suppose that you are testing the keyboard navigation accessibility of a page.  When navigating the page with the `Tab` key, the focus ring sometimes disappears because the element that has focus is hidden.  
 
-Führen Sie die folgenden Aktionen aus, um das fokussierte Element in devtools zu verfolgen.  
+Complete the following actions to track the focused element in DevTools.  
 
-1.  Öffnen Sie die **Konsole**.  
-1.  Klicken Sie auf **Live Ausdruck erstellen** \ ( ![ Live Ausdruck erstellen ][ImageCreateIcon] \).  
+1.  Open the **Console**.  
+1.  Click **Create Live Expression** \(![Create Live Expression][ImageCreateIcon]\).  
     
-    :::image type="complex" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="Erstellen eines Live Ausdrucks" lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
-       Erstellen eines Live Ausdrucks  
+    :::image type="complex" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="Create a Live Expression" lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
+       Create a Live Expression  
     :::image-end:::  
     
-1.  Geben Sie `document.activeElement` ein.  
-1.  Klicken Sie auf eine Stelle außerhalb der **Live Ausdruck** -Benutzeroberfläche, um Sie zu speichern.  
+1.  Type `document.activeElement`.  
+1.  Click outside of the **Live Expression** UI to save.  
     
-Der unten angezeigte Wert `document.activeElement` ist das Ergebnis des Ausdrucks.  
+The value that you see below `document.activeElement` is the result of the expression.  
 
-Da dieser Ausdruck immer das Focused-Element darstellt, haben Sie jetzt die Möglichkeit, immer nachzuverfolgen, welches Element den Fokus hat.  
+Since that expression always represents the focused element, you now have a way to always keep track of which element has focus.  
 
-*   Zeigen Sie mit der Maus auf das Ergebnis, um das fokussierte Element im Viewport zu markieren.  
-*   Klicken Sie mit der rechten Maustaste auf das Ergebnis, und wählen Sie **im Element Fenster** anzeigen aus, um das Element in der DOM- **Struktur im Element Panel anzuzeigen** .  
-*   Klicken Sie mit der rechten Maustaste auf das Ergebnis, und wählen Sie **als globale Variable speichern** aus, um einen Variablen Bezug auf den Knoten zu erstellen, den Sie in der **Konsole**verwenden können.  
+*   Hover over the result to highlight the focused element in the viewport.  
+*   Right-click the result and select **Reveal in Elements panel** to show the element in the DOM Tree on the **Elements** panel.  
+*   Right-click the result and select **Store as global variable** to create a variable reference to the node that you are able to use in the **Console**.  
 
-## Kontakt mit dem Microsoft Edge devtools-Team  
+## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -63,11 +63,11 @@ Da dieser Ausdruck immer das Focused-Element darstellt, haben Sie jetzt die Mög
 <!-- links -->  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
-> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/accessibility/focus) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
+> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/accessibility/focus) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
-Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
+This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

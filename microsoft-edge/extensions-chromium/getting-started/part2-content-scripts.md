@@ -1,12 +1,12 @@
 ---
-description: Erweiterungen erste Schritte Teil 2
-title: Dynamisches Einfügen eines NASA-Bilds unter dem Body-Tag der Seite mithilfe von Inhalts Skripts
+description: Extensions Getting Started Part 2
+title: Dynamically Insert NASA Picture Below The Page Body Tag Using Content Scripts
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge-Chromium, Web-Entwicklung, HTML, CSS, JavaScript, Entwickler, Erweiterungen
+keywords: edge-chromium, web development, html, css, javascript, developer, extensions
 ms.openlocfilehash: fd2276c069116a7f69f06ae50f201e284b60f3ea
 ms.sourcegitcommit: 744e2ecf42bcc427ae33e5dadbf6cd48ee0ab6a5
 ms.translationtype: MT
@@ -14,25 +14,25 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 09/17/2020
 ms.locfileid: "11016729"
 ---
-# Dynamisches Einfügen eines NASA-Bilds unter dem Body-Tag der Seite mithilfe von Inhalts Skripts  
+# Dynamically Insert NASA Picture Below The Page Body Tag Using Content Scripts  
 
 <!--  
 [Completed Extension Package Source for This Part][ArchiveExtensionGettingStartedPart2]  
 -->  
 
-## Übersicht  
+## Overview  
 
-In Teil 2 erfahren Sie, wie Sie das Popup-Menü aktualisieren können, damit das Bild, das Sie vorher hatten, nicht angezeigt wird, aber dieses Bild durch einen Titel und eine standardmäßige HTML-Schaltfläche ersetzt.  Wenn diese Schaltfläche ausgewählt ist, wird das in der Erweiterung eingebettete Sternchen-Bild an die Inhaltsseite weitergeleitet.  Das Bild wird in die Registerkarte aktiver Browser eingefügt.  
+In part 2, you learn to update your pop-up menu to not show the static stars image you had before, but to replace that image with a title and a standard HTML button.  That button, when selected, passes that stars image, which is embedded in the Extension, to the content page.  That image, is inserted into the active browser tab.  
 
-*   In diesem Leitfaden behandelte Erweiterungstechnologien  
-    *   Einfügen von JavaScript-Bibliotheken in die Erweiterung  
-    *   Verfügbar machen von Erweiterungs Ressourcen für browserregisterkarten  
-    *   Einschließen von Inhaltsseiten in vorhandene browserregisterkarten  
-    *   Wenn Inhaltsseiten auf Nachrichten von Popups abhören und Antworten  
+*   Extension technologies covered in this guide  
+    *   Injecting JavaScript libraries into Extension  
+    *   Exposing Extension assets to browser tabs  
+    *   Including content pages in existing browser tabs  
+    *   Having content pages listen for messages from pop-ups and respond  
 
-## Entfernen des Bilds aus dem Popup und ersetzen durch eine Schaltfläche  
+## Remove the image from the pop-up and replace it with a button  
 
-Aktualisieren Sie zunächst die `popup.html` Datei mit einem geraden Markup, in dem ein Titel und eine Schaltfläche angezeigt werden.  Sie werden die Schaltfläche in Kürze programmieren, aber im Moment fügen Sie einfach einen Verweis auf eine leere JavaScript-Datei hinzu `popup.js` .  Hier ist Update HTML.  
+First, update your `popup.html` file with some straight forward markup that displays a title and a button.  You will program that button shortly, but for now, just include a reference to an empty JavaScript file `popup.js`.  Here is update HTML.  
 
 ```html
 <html>
@@ -61,23 +61,23 @@ Aktualisieren Sie zunächst die `popup.html` Datei mit einem geraden Markup, in 
 </html>
 ```  
 
-Nachdem Sie Ihre Erweiterung aktualisiert und das Symbol für die Erweiterungs Einführung ausgewählt haben, enthält das Popupfenster die Schaltfläche Anzeige.  
+After updating your Extension and selecting the Extension launch icon, the have the following pop-up includes a display button.  
 
-:::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.html-Anzeige nach dem Drücken des Erweiterungssymbols":::
-   popup.html-Anzeige nach dem Drücken des Erweiterungssymbols
+:::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.html display after pressing the Extension icon":::
+   popup.html display after pressing the Extension icon
 :::image-end:::
 
 <!--![popup.html display after pressing the Extension icon][ImagePart2Popupdialog]  -->  
 
-## Aktualisierte Strategie zum Anzeigen des Bilds oben auf der Registerkarte "Browser"  
+## Updated strategy to display image at the top of the browser tab  
 
-Nachdem Sie die Schaltfläche hinzugefügt haben, besteht die nächste Aufgabe darin, die Bilddatei oben auf der `images/stars.jpeg` aktiven Registerkarte anzuzeigen.  
+After adding the button, the next task is to make it bring up the `images/stars.jpeg` image file at the top of the active tab page.  
 
-Beachten Sie, dass jede Registerkarte einen eigenen Thread hat und die Erweiterung einen separaten Thread aufweist.  Daher müssen Sie zuerst ein Inhalts Skript erstellen und dieses Inhalts Skript auf der Registerkartenseite einfügen.  Wenn Sie dies tun, müssen Sie eine Nachricht von Ihrem Popup an das Inhalts Skript senden, das auf der Registerkartenseite ausgeführt wird und dem Inhalts Skript mitteilt, welches Bild angezeigt werden soll und wie es angezeigt werden soll.  
+Remember, each tab page has a unique own thread and the Extension has a separate thread.  So, you must first create a content script and inject that content script into the tab page.  Once you do that, you must send a message from your pop-up to that content script running on the tab page telling that content script what image to show, and how to show it.  
 
-## Erstellen des Popup-Javascripts zum Senden einer Nachricht  
+## Creating the pop-up JavaScript to send a message  
 
-Erstellen Sie zunächst `popup/popup.js` Code, um eine Nachricht an ihr noch nicht erstelltes Inhalts Skript zu senden, das Sie im Moment erstellen und in Ihre Browserregister Karte einfügen müssen.  Dazu fügt der folgende Code der `onclick` Popup Anzeige Schaltfläche ein Ereignis hinzu.  
+First, create `popup/popup.js` and add code to send a message to your not-yet-created content script that you must momentarily create and inject into your browser tab.  To do that, the following code adds an `onclick` event to your pop-up display button.  
 
 ```javascript
 const sendMessageId = document.getElementById("sendmessageid");
@@ -88,11 +88,11 @@ if (sendMessageId) {
 }
 ```  
 
-Im `onclick` Fall, was Sie tun müssen, ist die aktuelle Browser-Registerkarte zu finden \ (wenn nur eine geöffnet ist, ist das eine \).  Nachdem Sie diese Registerkarte gefunden haben, verwenden Sie die `chrome.tabs.sendmessage` Erweiterungs-API, um eine Nachricht an diesen Reiter zu senden.  
+In the `onclick` event, what you must do is find the current browser tab \(if there is only one open it is that one\).  Then, once you find that tab, use the `chrome.tabs.sendmessage` Extension API to send a message to that tab.  
 
-In dieser Nachricht müssen Sie die URL zu dem Bild hinzufügen, das Sie anzeigen möchten, und Sie möchten eine eindeutige ID senden, die dem eingefügten Bild zugewiesen werden soll.  Sie können festlegen, dass die Inhalts Einfügung JavaScript generieren soll, aber aus Gründen, die später deutlich werden, generieren Sie diese eindeutige ID hier in `popup.js` und übergeben Sie an das noch nicht erstellte Inhalts Skript.  
+In that message you must include the URL to the image you want to display, and you want to send a unique ID that should be assigned to that inserted image.  You may choose to let the content insertion JavaScript generate that, but for reasons that become apparent later, generate that unique ID here in `popup.js` and pass it to the not-yet-created content script.  
 
-Hier ist Ihre aktualisierte `popup/popup.js` Datei.  Übergeben Sie auch die aktuelle Tab-ID, die Sie in einem späteren Abschnitt benötigen, aber für jetzt, wird nicht verwendet.  
+Here is your updated `popup/popup.js` file.  Also, pass in the current tab ID which you should need in a later section but for now, is not be used.  
 
 ```javascript
 const sendMessageId = document.getElementById("sendmessageid");
@@ -121,17 +121,17 @@ if (sendMessageId) {
 }
 ```  
 
-## So können Sie Ihre Stars. JPEG auf jeder Registerkarte des Browsers zur Verfügung stellen  
+## Making your stars.jpeg available from any browser tab  
 
-Sie Fragen sich wahrscheinlich, warum Sie die `images/stars.jpeg` `chrome.extension.getURL` Chrome-Erweiterungs-API verwenden müssen, anstatt einfach nur die relative URL ohne das zusätzliche Präfix zu übergeben, wie im vorherigen Abschnitt.  Übrigens sieht das zusätzliche Präfix, das `getUrl` mit dem angefügten Bild zurückgegeben wird, ungefähr wie folgt aus.  
+You are probably wondering why, when you pass the `images/stars.jpeg` must you use the `chrome.extension.getURL` chrome Extension API instead of just passing in the relative URL without the extra prefix like in the previous section.  By the way, that extra prefix, returned by `getUrl` with the image attached looks something like the following.  
 
 ```http
 extension://inigobacliaghocjiapeaaoemkjifjhp/images/stars.jpeg
 ```  
 
-Der Grund dafür ist, dass Sie das Bild mit dem `src` Attribut des `img` Elements in die Inhaltsseite einfügen.  Die Inhaltsseite wird in einem eindeutigen Thread ausgeführt, der nicht mit dem Thread identisch ist, auf dem die Erweiterung ausgeführt wird.  Sie müssen die statische Bilddatei als Web-Ressource verfügbar machen, damit Sie ordnungsgemäß funktioniert.  
+The reason is that you are injecting the image using the `src` attribute of the `img` element into the content page.  The content page is running on a unique thread that is not the same as the thread running the Extension.  You must expose the static image file as a web asset for it to work correctly.  
 
-Dazu müssen Sie einen weiteren Eintrag in der Datei hinzufügen `manifest.json` .  Sie müssen das Bild deklarieren, damit es über jede Registerkarte des Browsers zugänglich ist.  Dieser Eintrag sieht folgendermaßen aus: \ (Sie sollten ihn in der vollständigen `manifest.json` Datei unten sehen, wenn Sie die Inhalts Skript Deklaration hinzufügen).  
+To do that, you must add another entry in the `manifest.json` file.  You must declare the image to be accessible from any browser tab.  That entry is as follows \(you should see it in the full `manifest.json` file below when you add the content script declaration coming up\).  
 
 ```json
 "web_accessible_resources": [
@@ -139,11 +139,11 @@ Dazu müssen Sie einen weiteren Eintrag in der Datei hinzufügen `manifest.json`
 ]
 ```  
 
-Sie haben nun den Code in Ihre Datei geschrieben, `popup.js` um eine Nachricht an die Inhaltsseite zu senden, die auf der aktuellen aktiven Registerkarte eingebettet ist, aber Sie haben diese Inhaltsseite nicht erstellt und eingefügt.  Tun Sie das jetzt.  
+You have now written the code in your `popup.js` file to send a message to the content page that is embedded on the current active tab page, but you have not created and injected that content page.  Do that now.  
 
-## Aktualisieren Ihrer manifest.jsfür Inhalte und Web Access  
+## Updating your manifest.json for content and web access  
 
-Das aktualisierte `manifest.json` , das das `content-scripts` und enthält, `web_accessible_resources` ist wie folgt.  
+The updated `manifest.json` that includes the `content-scripts` and `web_accessible_resources` is as follows.  
 
 ```json
 {
@@ -174,17 +174,17 @@ Das aktualisierte `manifest.json` , das das `content-scripts` und enthält, `web
 }
 ```  
 
-Der von Ihnen hinzugefügte Abschnitt ist `content_scripts` .  Das Attribut `matches` auf `<all_urls>` bedeutet, dass alle Dateien, die im Abschnitt " **content_scripts** " erwähnt werden, bei jedem Laden in alle Registerkarten des Browsers eingefügt werden.  Die zulässigen Dateitypen, die hier injiziert werden können, sind JavaScript und CSS.  Sie haben auch hinzugefügt `libjquery.min.js` .  Sie können diese aus dem oben im Abschnitt angegebenen Download aufnehmen.  
+The section you added is `content_scripts`.  The attribute `matches` set to `<all_urls>` means that all the files mention in the **content_scripts** section is injected into all browser tab pages when each are loaded.  The allowable types of files that are able to be injected here are javascript and css.  You also added `libjquery.min.js`.  You are able to include that from the download mentioned at the top of the section.  
 
-## Hinzufügen von jQuery und Grundlegendes zum zugehörigen Thread  
+## Adding jQuery and understanding the associated thread  
 
-Planen Sie in den Inhalts Skripts, die Sie injizieren, die Verwendung von jQuery \ ( `$` \).  Sie haben eine minimierte-Version von jQuery hinzugefügt und in Ihr Erweiterungspaket als eingefügt `lib\jquery.min.js` .  Diese Inhalts Skripts werden in einer einzelnen Sandbox von Sortierungen ausgeführt, was bedeutet, dass die in die Seite eingefügte jQuery-Datei `popup.js` nicht für den Inhalt freigegeben wird.  
+In the content scripts you are injecting, plan on using jQuery \(`$`\).  You added a minified version of jQuery and put it in your Extension package as `lib\jquery.min.js`.  These content scripts run in an individual sandbox of sorts, which means that the jQuery injected into the `popup.js` page does not share with the content.  
 
-Beachten Sie, dass, selbst wenn auf der Registerkarte Browser auf der geladenen Webseite JavaScript ausgeführt wird, jeder eingefügte Inhalt keinen Zugriff darauf hat.  Das eingefügte JavaScript hat nur Zugriff auf das eigentliche Dom, das auf dieser Registerkarte des Browsers geladen wurde.  
+Keep in mind that even if the browser tab has JavaScript running on it on the loaded web page, any content injected does not have access to that.  That injected JavaScript just has access to the actual DOM loaded in that browser tab.  
 
-## Hinzufügen des Inhalts Skript-Nachrichten Listeners  
+## Adding the content script message listener  
 
-Hier sehen `content-scripts\content.js` Sie die Datei, die auf jeder Registerkarte des Browsers basierend auf Ihrem Abschnitt eingefügt wird `manifest.json` `content-scripts` .  
+Here is that `content-scripts\content.js` file that gets injected into every browser tab page based on your `manifest.json` `content-scripts` section.  
 
 ```javascript
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
@@ -207,41 +207,26 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 });
 ```  
 
-Beachten Sie, dass das obige JavaScript die `listener` Verwendung der `chrome.runtime.onMessage.addListener` Erweiterungs-API-Methode registriert.  Dieser Listener wartet auf Nachrichten wie diejenige, die Sie von der `popup.js` zuvor beschriebenen mit der `chrome.tabs.sendMessage` Erweiterungs-API-Methode gesendet haben.  
+Notice that all the above JavaScript does is to register a `listener` using the `chrome.runtime.onMessage.addListener` Extension API method.  This listener waits for messages like the one you sent from the `popup.js` described earlier with the `chrome.tabs.sendMessage` Extension API method.  
 
-Der erste Parameter der `addListener` Methode ist eine Funktion, deren erster Parameter Request die Details der übergebenen Nachricht ist.  Beachten Sie, `popup.js` dass die `sendMessage` Attribute des ersten Parameters, wenn Sie die Methode verwendet haben, `url` und sind `imageDivId` .  
+The first parameter of the `addListener` method is a function whose first parameter, request, is the details of the message being passed in.  Remember, from `popup.js`, when you used the `sendMessage` method, those attributes of the first parameter are `url` and `imageDivId`.  
 
-Wenn ein Ereignis vom Listener verarbeitet wird, wird die Funktion, die der erste Parameter ist, ausgeführt.  Der erste Parameter dieser Funktion ist ein Objekt, das Attribute wie zugewiesen von besitzt `sendMessage` .  Diese Funktion verarbeitet einfach die drei jQuery-Skriptzeilen.  
+When an event is processed by the listener, the function that is the first parameter is run.  The first parameter of that function is an object that has attributes as assigned by `sendMessage`.  That function simply processes the three jQuery script lines.  
 
-*   Der erste fügt dynamisch in die DOM-Kopfzeile einen **\<style\>** Abschnitt ein, den Sie `slide-image` dem Element als Klasse zuweisen müssen `img` .  
-*   Mit der zweiten wird ein `img` Element direkt unter der `body` Registerkarte Ihres Browsers angefügt, auf der die `slide-image` Klasse sowie die `imageDivId` ID des Bildelements zugewiesen ist.  
-*   Das dritte fügt ein `click` Ereignis ein, das das gesamte Bild abdeckt, sodass der Benutzer eine beliebige Stelle im Bild auswählen kann, und dieses Bild wird von der Seite entfernt \ (zusammen mit dem Ereignis-Listener \).  
+*   The first dynamically inserts into the DOM header a **\<style\>** section that you must assign as a `slide-image` class to your `img` element.  
+*   The second, appends an `img` element right below the `body` of your browser tab that has the `slide-image` class assigned as well as the `imageDivId` as the ID of that image element.  
+*   The third adds a `click` event that covers the entire image allowing the user to select any place on the image and that image is be removed from the page \(along with it is event listener\).  
 
-## Hinzufügen von Funktionen zum Entfernen des angezeigten Bilds bei Auswahl  
+## Adding functionality to remove the displayed image when selected  
 
-Wenn Sie nun zu einer beliebigen Seite navigieren und das Symbol für die **Erweiterung** auswählen, wird das Popupmenü wie folgt angezeigt:  
+Now, when you browse to any page and select your **Extension** icon, the pop-up menu is displayed as follows.  
 
-:::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.html-Anzeige nach dem Drücken des Erweiterungssymbols":::
-   popup.html-Anzeige nach dem Drücken des Erweiterungssymbols
+:::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.html display after pressing the Extension icon":::
+   popup.html display after pressing the Extension icon
 :::image-end:::
 
 <!--![popup.html display after pressing the Extension icon][ImagePart2Popupdialog]  -->  
 
-Wenn Sie die `Display` Schaltfläche auswählen, erhalten Sie die folgenden Elemente.  Wenn Sie eine beliebige Stelle im `stars.jpeg` Bild auswählen, wird das Bildelement entfernt, und die Registerkarten werden wieder auf die ursprüngliche Anzeige reduziert.  
+When you select the `Display` button, you get what is below.  If you select anywhere on the `stars.jpeg` image, that image element is removed and tab pages collapses back to what was originally displayed.  
 
-:::image type="complex" source="./media/part2-showingimage.png" alt-text="Das im Browser angezeigte Bild":::
-   Das im Browser angezeigte Bild
-:::image-end:::
-
-<!--![The image showing in browser][ImagePart2Showingimage]  -->  
-
-Sie haben jetzt eine Erweiterung erstellt, mit der eine Nachricht vom Popup Symbol für das Erweiterungssymbol erfolgreich an das dynamisch eingefügte JavaScript gesendet wird, das als Inhalt auf der Registerkarte Browser ausgeführt wird.  Durch diesen eingefügten Inhalt wird das Image-Element so festgesetzt, dass die statischen Sterne JPEG angezeigt werden.  
-
-<!-- image links -->  
-
-<!--[ImagePart2Popupdialog]: ./media/part2-popupdialog.png "popup.html display after pressing the Extension icon"  -->  
-<!--[ImagePart2Showingimage]: ./media/part2-showingimage.png "The image showing in browser"  -->
-
-<!-- links -->  
-
-[ArchiveExtensionGettingStartedPart2]: ./extension-source/extension-getting-started-part2.zip "Abgeschlossene Erweiterungspaket Quelle für diesen Teil | Microsoft docs"  
+:::image type="complex" source="./media/part2-showingimage.png" alt-text="popup.html display after pressing the Extension icon"  

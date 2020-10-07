@@ -1,12 +1,12 @@
 ---
-description: Verwenden Sie virtuelle Geräte in Microsoft Edge zum Erstellen von mobilen First-Websites.
-title: Emulieren von mobilen Geräten in Microsoft Edge devtools
+description: Use virtual devices in Microsoft Edge to build mobile-first websites.
+title: Emulate Mobile Devices in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/04/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web Development, F12 Tools, devtools, Emulation, Device, Simulation, Mobile
+keywords: microsoft edge, web development, f12 tools, devtools, emulation, device, simulation, mobile
 ms.openlocfilehash: c70b81eabb145461eac7d1b9a8f438d6a18fbc89
 ms.sourcegitcommit: cc96ada9679b23feb841e46f19d8077251c4a4df
 ms.translationtype: MT
@@ -28,314 +28,314 @@ ms.locfileid: "10997089"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Emulieren von mobilen Geräten in Microsoft Edge devtools  
+# Emulate mobile devices in Microsoft Edge DevTools  
 
-Verwenden Sie die **Geräteemulation** , um ungefähr zu sehen, wie Ihre Seite auf einem mobilen Gerät aussieht und reagiert.  Die Microsoft Edge-devtools bieten eine Sammlung von Features, die Ihnen beim emulieren mobiler Geräte helfen.  Die Sammlung umfasst die folgenden Features.  
+Use **Device emulation** to approximate how your page looks and responds on a mobile device.  The Microsoft Edge DevTools provide a collection of features to help you emulate mobile devices.  The collection includes the following features.  
 
-*   [Simulieren eines mobilen Viewports](#simulate-a-mobile-viewport)  
-*   [Netzwerk drosseln](#throttle-the-network-only)  
-*   [Drosseln der CPU](#throttle-the-cpu-only)  
-*   [Geolokation simulieren](#override-geolocation)  
-*   [Ausrichtung einstellen](#set-orientation)  
-*   [Benutzer-Agent-Zeichenfolge einrichten](#set-user-agent-string)  
+*   [Simulate a mobile viewport](#simulate-a-mobile-viewport)  
+*   [Throttle the network](#throttle-the-network-only)  
+*   [Throttle the CPU](#throttle-the-cpu-only)  
+*   [Simulate geolocation](#override-geolocation)  
+*   [Set orientation](#set-orientation)  
+*   [Set the user agent string](#set-user-agent-string)  
 
-## Einschränkungen  
+## Limitations  
 
-Die **Geräteemulation** ist eine Näherung des Erscheinungsbild Ihrer Seite auf einem mobilen Gerät in [erster Reihe][WikiApproximation] .  Die **Geräteemulation** führt Ihren Code nicht auf einem mobilen Gerät aus.  Stattdessen simulieren Sie die mobile Benutzeroberfläche auf Ihrem Laptop oder Desktop.  
+**Device emulation** is a [first-order approximation][WikiApproximation] of the look and feel of your page on a mobile device.  **Device emulation** does not actually run your code on a mobile device.  Instead you simulate the mobile user experience from your laptop or desktop.  
 
-Einige Aspekte von mobilen Geräten werden in devtools nie emuliert.  Die Architektur von mobilen CPUs unterscheidet sich beispielsweise von der Architektur von Laptop-oder Desktop-CPUs.  Im Zweifelsfall ist es am besten, wenn Sie Ihre Seite auf einem mobilen Gerät ausführen.  Verwenden Sie [Remote Debuggen] [DevToolsRemoteDebugging], um mit dem Code einer Seite von Ihrem Computer zu interagieren, während Ihre Seite auf einem mobilen Gerät ausgeführt wird.  Sie können anzeigen, ändern, Debuggen, Profil oder alle vier während der Interaktion mit dem Code.  Ihr Computer kann ein Notizbuch oder ein Desktopcomputer sein.  
+Some aspects of mobile devices are never emulated in DevTools.  For example, the architecture of mobile CPUs is different than the architecture of laptop or desktop CPUs.  When in doubt, your best bet is to actually run your page on a mobile device.  Use [Remote Debugging][DevToolsRemoteDebugging] to interact with the code of a page from your machine while your page actually runs on a mobile device.  You may view, change, debug, profile, or all four while you interact with the code.  Your machine may be a notebook or desktop computer.  
 
-## Simulieren eines mobilen Viewports  
+## Simulate a mobile viewport  
 
-Wählen Sie **Geräteemulation umschalten**  \ ( ![ Gerätesymbolleiste umschalten ][ImageDeviceToolbarIcon] \) aus, oder wählen Sie **anpassen und Steuern devtools** \ ( `...` \) > **Geräteemulation** aus, um die Benutzeroberfläche zu öffnen, mit der Sie ein mobiles Viewport simulieren können.  
+Choose **Toggle device emulation**  \(![Toggle Device Toolbar][ImageDeviceToolbarIcon]\) or choose **Customize and control DevTools** \(`...`\) > **Device emulation** to open the UI that enables you to simulate a mobile viewport.  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="Die Gerätesymbolleiste" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
-    Die Gerätesymbolleiste  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="The Device Toolbar" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
+    The Device Toolbar  
 :::image-end:::  
 
-Standardmäßig wird die Gerätesymbolleiste im reaktionsfähigen Ansichtsfenster Modus geöffnet.  
+By default the Device Toolbar opens in Responsive Viewport Mode.  
 
-### Reaktionsfähiger viewportmodus  
+### Responsive Viewport Mode  
 
-Ziehen Sie die Ziehpunkte, um das Aussehen und Verhalten Ihrer Seite über mehrere Bildschirmgrößen schnell zu testen, um die Größe des Viewports auf die gewünschten Abmessungen zu ändern.  Sie können auch bestimmte Werte in die Felder Breite und Höhe eingeben.  In der folgenden Abbildung ist die Breite auf festzulegen, `626` und die Höhe ist auf festzulegen `516` .  
+To quickly test the look and feel of your page across multiple screen sizes, drag the handles to resize the viewport to your required dimensions.  You may also enter specific values in the width and height boxes.  In the following figure, the width is set to `626` and the height is set to `516`.  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png" alt-text="Die Ziehpunkte zum Ändern der Bemaßungen des Viewports im reaktionsfähigen Ansichtsfenster Modus" lightbox="../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png":::
-    Die Ziehpunkte zum Ändern der Bemaßungen des Viewports im reaktionsfähigen Ansichtsfenster Modus  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png" alt-text="The Device Toolbar" lightbox="../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png":::
+    The handles for changing the dimensions of the viewport when in Responsive Viewport Mode  
 :::image-end:::  
 
-#### Anzeigen von medienabfragen  
+#### Show media queries  
 
-Wenn Sie medienabfragen auf der Seite definiert haben, wechseln Sie zu den Viewport-Dimensionen, in denen diese medienabfragen wirksam werden, indem Sie medienabfrage Haltepunkte oberhalb des Viewports anzeigen.  Wählen Sie **Weitere Optionen**  >  **Anzeigen von medienabfragen**aus.  
+If you have defined media queries on your page, jump to the viewport dimensions where those media queries take effect by showing media query breakpoints above your viewport.  Choose **More options** > **Show media queries**.  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-options-show-media-queries.msft.png" alt-text="Anzeigen von medienabfragen" lightbox="../media/device-mode-toggle-device-toolbar-more-options-show-media-queries.msft.png":::
-   **Anzeigen von medienabfragen**  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-options-show-media-queries.msft.png" alt-text="The Device Toolbar" lightbox="../media/device-mode-toggle-device-toolbar-more-options-show-media-queries.msft.png":::
+   **Show media queries**  
 :::image-end:::  
 
-Wählen Sie einen Haltepunkt aus, um die Breite des Viewports so zu ändern, dass die medienabfrage ausgelöst wird.  
+Choose a breakpoint to change the width of the viewport so that the media query gets triggered.  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-click-breakpoint.msft.png" alt-text="Wählen Sie einen Haltepunkt aus, um die Breite des Viewports zu ändern." lightbox="../media/device-mode-toggle-device-toolbar-click-breakpoint.msft.png":::
-   Wählen Sie einen Haltepunkt aus, um die Breite des Viewports zu ändern.  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-click-breakpoint.msft.png" alt-text="The Device Toolbar" lightbox="../media/device-mode-toggle-device-toolbar-click-breakpoint.msft.png":::
+   Choose a breakpoint to change the width of the viewport  
 :::image-end:::  
 
-#### Einrichten des Gerätetyps  
+#### Set the device type  
 
-Verwenden Sie die Liste **Gerätetyp** , um ein mobiles Gerät oder ein Desktop Gerät zu simulieren.  
+Use the **Device Type** list to simulate a mobile device or desktop device.  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png" alt-text="Liste der Gerätetypen" lightbox="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png":::
-   Liste der **Gerätetypen**  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png" alt-text="The Device Toolbar" lightbox="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png":::
+   The **Device Type** list  
 :::image-end:::  
 
-In der folgenden Tabelle werden die Unterschiede zwischen den verfügbaren Optionen für Gerätetypen beschrieben.  Die Spalte "Rendering-Methode" bezieht sich darauf, ob Microsoft Edge die Seite als mobiles oder Desktop-Viewport rendert.  Die Spalte Cursor Symbol bezieht sich auf den Typ des Cursors, den Sie sehen, wenn Sie auf der Seite zeigen.  Die Spalte "ausgelöste Ereignisse" bezieht sich darauf, ob die Seite ausgelöst `touch` `click` wird oder Ereignisse bei der Interaktion mit der Seite ausgelöst werden.  
+The following table describes the differences between the available device type options.  The Rendering method column refers to whether Microsoft Edge renders the page as a mobile or desktop viewport.  The Cursor icon column refers to what type of cursor you see when you hover on the page.  The Events triggered column refers to whether the page triggers `touch` or `click` events when you interact with the page.  
 
-| Option | Rendering-Methode | Cursor Symbol | Ausgelöste Ereignisse |  
+| Option | Rendering method | Cursor icon | Events triggered |  
 |:--- |:--- |:--- |:--- |  
-| Mobilgeräte | Mobilgeräte | Kreis | Toucheingabe |  
-| Mobil \ (kein Touch \) | Mobilgeräte | Normal |  auf  |  
-| Desktop | Desktop | Normal |  auf  |  
-| Desktop \ (tippen Sie auf \) | Desktop | Kreis | Toucheingabe |  
+| Mobile | Mobile | Circle | touch |  
+| Mobile \(no touch\) | Mobile | Normal | click |  
+| Desktop | Desktop | Normal | click |  
+| Desktop \(touch\) | Desktop | Circle | touch |  
 
 > [!NOTE]
-> Wenn die Liste **Gerätetyp** nicht angezeigt wird, wählen Sie **Weitere Optionen**  >  **Add Device Type**aus.  
+> If the **Device Type** list is not displayed, choose **More options** > **Add device type**.  
 
-### Ansichtsfenster Modus für mobile Geräte  
+### Mobile Device Viewport Mode  
 
-Wenn Sie die Abmessungen eines bestimmten mobilen Geräts simulieren möchten, wählen Sie das Gerät in der **Geräte** Liste aus.  
+To simulate the dimensions of a specific mobile device, select the device from the **Device** list.  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-list.msft.png" alt-text="Geräteliste" lightbox="../media/device-mode-toggle-device-toolbar-device-list.msft.png":::
-   **Geräte** Liste  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-list.msft.png" alt-text="The Device Toolbar" lightbox="../media/device-mode-toggle-device-toolbar-device-list.msft.png":::
+   The **Device** list  
 :::image-end:::  
 
-#### Drehen des Viewports in Querformat  
+#### Rotate the viewport to landscape orientation  
 
-Testen Sie Ihre Webseite im Querformat.  
+Test your webpage in landscape orientation.  
 
-*   Wenn Sie das Ansichtsfenster in Querformat drehen möchten, wählen Sie **drehen** \ ( ![ drehen ][ImageRotateIcon] \) aus.  
+*   To rotate the viewport to landscape orientation, choose **Rotate** \(![Rotate][ImageRotateIcon]\).  
     
-    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-landscape.msft.png" alt-text="Im Querformat angezeigte Seite" lightbox="../media/device-mode-toggle-device-toolbar-landscape.msft.png":::
-       Im Querformat angezeigte Seite  
+    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-landscape.msft.png" alt-text="The Device Toolbar" lightbox="../media/device-mode-toggle-device-toolbar-landscape.msft.png":::
+       Page displayed in landscape orientation  
     :::image-end:::  
     
 > [!NOTE]
-> Die Schaltfläche **drehen** verschwindet, wenn die **Gerätesymbolleiste** schmal ist.  
+> The **Rotate** button disappears if your **Device Toolbar** is narrow.  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="Die Gerätesymbolleiste" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
-   Die **Gerätesymbolleiste**  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="The Device Toolbar" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
+   The **Device Toolbar**  
 :::image-end:::  
 
-Weitere Informationen finden Sie unter [Ausrichtung einstellen](#set-orientation).  
+For more information, go to [Set orientation](#set-orientation).  
 
-#### Geräterahmen anzeigen  
+#### Show device frame  
 
-Zeigen Sie den Frame des physikalischen Geräts um das Viewport an, wenn Sie die Abmessungen eines bestimmten mobilen Geräts wie einem iPhone 6 simulieren.  
+Display the physical device frame around the viewport when you simulate the dimensions of a specific mobile device such as an iPhone 6.  
 
-1.  Öffnen Sie **Weitere Optionen**.  
-1.  Wählen Sie **Geräterahmen anzeigen**aus.  
+1.  Open **More options**.  
+1.  Choose **Show device frame**.  
 
 > [!NOTE]
-> Wenn ein Geräterahmen für ein bestimmtes Gerät nicht angezeigt wird, bedeutet dies, dass devtools keine Grafiken für diese Option besitzt.  
+> If you do not see a device frame for a particular device, it means that DevTools does not have art for that option.  
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png" alt-text="Geräterahmen anzeigen" lightbox="../media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png":::
-         Geräterahmen anzeigen  
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png" alt-text="The Device Toolbar" lightbox="../media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png":::
+         Show device frame  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png" alt-text="Der Geräterahmen für das iPhone 6" lightbox="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png":::
-         Der Geräterahmen für das iPhone 6  
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png" alt-text="The Device Toolbar" lightbox="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png":::
+         The device frame for the iPhone 6  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-#### Hinzufügen eines benutzerdefinierten mobilen Geräts  
+#### Add a custom mobile device  
 
-Wenn die von Ihnen benötigte Option für das Mobile Gerät nicht in der Standardliste enthalten ist, können Sie ein benutzerdefiniertes Gerät hinzufügen.  Führen Sie die folgenden Schritte aus, um ein benutzerdefiniertes Gerät hinzuzufügen.  
+If the mobile device option that you need is not included on the default list, you may add a custom device.  To add a custom device, complete the following steps.  
 
-1.  Wählen Sie die **Geräte** Liste > **Bearbeiten**aus.  
+1.  Choose the **Device** list > **Edit**.  
     
-    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png" alt-text="Wählen Sie bearbeiten aus." lightbox="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png":::
-       Wählen Sie **Bearbeiten** aus.  
+    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png" alt-text="The Device Toolbar" lightbox="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png":::
+       Select **Edit**  
     :::image-end:::  
     
-1.  Wählen Sie **Benutzerdefiniertes Gerät hinzufügen**aus.  
-1.  Geben Sie auf **emulierten Geräten**einen Gerätenamen, eine Bildschirmbreite und eine Bildschirmhöhe für das benutzerdefinierte Gerät ein.  Die Felder für das [Pixel Verhältnis des Geräts][MDNWindowDevicePixelRatio], die [Zeichenfolge des Benutzer-Agents][MDNUserAgent]und die [Gerätetypen](#set-the-device-type) sind optional.  Das Feld "Gerätetyp" ist standardmäßig auf " **Mobil**" eingestellt.  
+1.  Choose **Add custom device**.  
+1.  On **Emulated Devices**, enter a device name, screen width, and screen height for the custom device.  The [device pixel ratio][MDNWindowDevicePixelRatio], [user agent string][MDNUserAgent], and [device type](#set-the-device-type) fields are optional.  The device type field defaults to **Mobile**.  
     
-    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png" alt-text="Erstellen eines benutzerdefinierten Geräts" lightbox="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png":::
-       Erstellen eines benutzerdefinierten Geräts  
+    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png" alt-text="The Device Toolbar" lightbox="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png":::
+       Create a custom device  
     :::image-end:::  
     
-### Lineale anzeigen  
+### Show rulers  
 
-Wenn Sie Bildschirmdimensionen messen müssen, können Sie die Bildschirmgröße in Pixeln mithilfe von Linealen messen.  Wählen Sie **Weitere Optionen**  >  **Lineale anzeigen** aus, um die Lineale oberhalb und Links des Viewports anzuzeigen.  
+If you need to measure screen dimensions, you may use rulers to measure the screen size in pixels.  Choose **More options** > **Show rulers** to display rulers above and to the left of your viewport.  
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-options-show-rulers.msft.png" alt-text="Menüelement zum Anzeigen von Linealen" lightbox="../media/device-mode-toggle-device-toolbar-options-show-rulers.msft.png":::
-         Menüelement zum Anzeigen von Linealen  
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-options-show-rulers.msft.png" alt-text="The Device Toolbar" lightbox="../media/device-mode-toggle-device-toolbar-options-show-rulers.msft.png":::
+         Menu item to display rulers  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-rulers.msft.png" alt-text="Lineale oberhalb und Links des Viewports" lightbox="../media/device-mode-toggle-device-toolbar-rulers.msft.png":::
-         Lineale oberhalb und Links des Viewports  
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-rulers.msft.png" alt-text="The Device Toolbar" lightbox="../media/device-mode-toggle-device-toolbar-rulers.msft.png":::
+         Rulers above and to the left of the viewport  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-### Zoomen des Viewports  
+### Zoom the viewport  
 
-Wenn Sie das Aussehen und Verhalten Ihrer Seite mit mehreren Zoomstufen testen möchten, verwenden Sie die **zoomliste** , um die Ansicht zu vergrößern oder zu verkleinern.  
+To test the look and feel of your page at multiple zoom levels, use the **Zoom** list to zoom in or out.  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-zoom.msft.png" alt-text="Zoom" lightbox="../media/device-mode-toggle-device-toolbar-zoom.msft.png":::
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-zoom.msft.png" alt-text="The Device Toolbar" lightbox="../media/device-mode-toggle-device-toolbar-zoom.msft.png":::
    **Zoom**  
 :::image-end:::  
 
-## Netzwerk und CPU drosseln  
+## Throttle the network and CPU  
 
-Mobile Geräte verfügen häufig über Netzwerk-und CPU-Einschränkungen.  Stellen Sie sicher, dass Sie testen, wie schnell Ihre Seite geladen wird und wie Sie mit unterschiedlichen Internet-und CPU-Geschwindigkeiten reagiert.  
+Mobile devices often have network and CPU constraints.  Ensure you test how quickly your page loads and how it responds at different internet and CPU speeds.  
 
-Drosseln Sie das Netzwerk und die CPU.  
+Throttle the network and CPU.  
 
-1.  Wählen Sie **Drosselungs** Liste aus, und ändern Sie die voreingestellten auf **Mid-Tier-Handy** oder **Low-End-Mobiltelefon**.  
-    *   **Mid-Tier-Handy** simuliert `fast 3G` und drosselt Ihre CPU.  Sie ist viermal langsamer als normal.  
-    *   **Low-End Mobile** simuliert `slow 3G` und drosselt Ihre CPU.  Sie ist sechsmal langsamer als normal.  
+1.  Choose **Throttle** list and change the preset to **Mid-tier mobile** or **Low-end mobile**.  
+    *   **Mid-tier mobile** simulates `fast 3G` and throttles your CPU.  It is four times slower than normal.  
+    *   **Low-end mobile** simulates `slow 3G` and throttles your CPU.  It is six times slower than normal.  
     
-Die gesamte Drosselung basiert auf der normalen Funktion Ihres Laptops oder Desktops.  
+All of the throttling is based upon the normal capability of your laptop or desktop.  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-throttle.msft.png" alt-text="Die Drosselungs Liste auf der Gerätesymbolleiste" lightbox="../media/device-mode-toggle-device-toolbar-throttle.msft.png":::
-   Die **Drosselungs** Liste auf der Gerätesymbolleiste  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-throttle.msft.png" alt-text="The Device Toolbar" lightbox="../media/device-mode-toggle-device-toolbar-throttle.msft.png":::
+   The **Throttle** list in the Device Toolbar  
 :::image-end:::  
 
 > [!NOTE]
-> Wenn die **Drosselungs Liste** ausgeblendet ist, ist die **Gerätesymbolleiste** zu schmal.  Um auf die **Drosselungs Liste**zuzugreifen, vergrößern Sie die Breite der **Gerätesymbolleiste**.  
+> If the **Throttle list** is hidden, your **Device Toolbar** is too narrow.  To access the **Throttle list**, increase the width of the **Device Toolbar**.  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="Die Gerätesymbolleiste" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
-   Die **Gerätesymbolleiste**  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="The Device Toolbar" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
+   The **Device Toolbar**  
 :::image-end:::  
 
-### Nur die CPU drosseln  
+### Throttle the CPU only  
 
-Führen Sie die folgenden Schritte aus, um nur die CPU und nicht das Netzwerk zu drosseln.
+To throttle the CPU only and not the network, complete the following steps.
 
-1.  Wählen Sie das Panel **Leistung** aus, und wählen Sie **Aufnahmeeinstellungen** \ ( ![ Aufnahmeeinstellungen ][ImageCaptureIcon] \) aus.
-1.  Wählen Sie **CPU**  >  **4X Verlangsamung** oder **6x Verlangsamung**aus.
+1.  Choose the **Performance** panel, and choose **Capture Settings** \(![Capture Settings][ImageCaptureIcon]\).
+1.  Choose **CPU** > **4x slowdown** or **6x slowdown**.
     
-    :::image type="complex" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="Die CPU-Liste im Leistungs Panel" lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
-       Die **CPU** -Liste im **Leistungs** Panel  
+    :::image type="complex" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="The Device Toolbar" lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
+       The **CPU** list in the **Performance** panel  
     :::image-end:::  
     
-### Nur das Netzwerk drosseln  
+### Throttle the network only  
 
-Führen Sie die folgenden Schritte aus, um nur das Netzwerk zu drosseln:
+To throttle the network only, complete the following steps.
 
-1.  Wählen Sie das **Netzwerk** Panel aus.
-1.  Wählen Sie **Online**  >  **fast 3G** oder **Slow 3G**.
+1.  Choose the **Network** panel.
+1.  Choose **Online** > **Fast 3G** or **Slow 3G**.
     
-    :::image type="complex" source="../media/device-mode-network-throttle.msft.png" alt-text="Die Drosselungs Liste im Netzwerk Panel" lightbox="../media/device-mode-network-throttle.msft.png":::
-       Die **Drosselungs** Liste im Netzwerk Panel  
+    :::image type="complex" source="../media/device-mode-network-throttle.msft.png" alt-text="The Device Toolbar" lightbox="../media/device-mode-network-throttle.msft.png":::
+       The **Throttle** list in the Network panel  
     :::image-end:::  
     
-    Oder wählen Sie `Control` + `Shift` + `P` \ (Windows \) oder `Command` + `Shift` + `P` \ (macOS \) aus, um das **Befehlsmenü**zu öffnen, geben Sie ein `3G` , und wählen Sie **fast 3G-Drosselung aktivieren** oder **langsame 3G-Drosselung aktivieren**aus.  
+    Or select `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**, type `3G`, and choose **Enable fast 3G throttling** or **Enable slow 3G throttling**.  
     
-    :::image type="complex" source="../media/device-mode-command-menu-throttle.msft.png" alt-text="Das Befehlsmenü" lightbox="../media/device-mode-command-menu-throttle.msft.png":::
-       Das **Befehlsmenü**  
+    :::image type="complex" source="../media/device-mode-command-menu-throttle.msft.png" alt-text="The Device Toolbar" lightbox="../media/device-mode-command-menu-throttle.msft.png":::
+       The **Command Menu**  
     :::image-end:::  
     
-Sie können die Netzwerk Drosselung auch über das **Leistungs** Panel einstellen.  
+You may also set network throttling from the **Performance** panel.  
 
-1.  Wählen Sie **aufnahmeeinstellungen** \ ( ![ Aufnahme ][ImageCaptureIcon] Einstellungen \) aus, und wählen Sie die **Netzwerk** Liste aus, und ändern Sie die Voreinstellung auf **fast 3G** oder **Slow 3G**.  
+1.  Choose **Capture Settings** \(![Capture Settings][ImageCaptureIcon]\) and choose the **Network** list and change the preset to **Fast 3G** or **Slow 3G**.  
     
-    :::image type="complex" source="../media/device-mode-performance-network-throttle.msft.png" alt-text="Einrichten der Netzwerk Drosselung im Leistungs Panel" lightbox="../media/device-mode-performance-network-throttle.msft.png":::
-       Einrichten der Netzwerk Drosselung im **Leistungs** Panel  
+    :::image type="complex" source="../media/device-mode-performance-network-throttle.msft.png" alt-text="The Device Toolbar" lightbox="../media/device-mode-performance-network-throttle.msft.png":::
+       Set network throttling from the **Performance** panel  
     :::image-end:::  
     
-## Überschreiben von Geolocation  
+## Override geolocation  
 
 :::row:::
    :::column span="":::
-      Wenn Ihre Seite von Geolocation-Informationen eines mobilen Geräts abhängt, um Sie ordnungsgemäß zu rendern, stellen Sie unterschiedliche geolokationen mithilfe der Benutzeroberfläche Überschreiben von Geolocation bereit.  
+      If your page depends on geolocation information from a mobile device to render properly, provide different geolocations using the geolocation overriding UI.  
 
-      1.  Wählen Sie **anpassen und Steuern devtools** \ ( `...` \) > **Weitere Tools**-  >  **Sensoren**aus.  
+      1.  Choose **Customize and control DevTools** \(`...`\) > **More tools** > **Sensors**.  
       
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="Sensoren für geolocation" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
-         **Sensoren** für geolocation  
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="The Device Toolbar" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
+         **Sensors** for geolocation  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      1.  Öffnen des Befehlsmenüs  
-          *   Wählen Sie `Control` + `Shift` + `P` \ (Windows \) oder `Command` + `Shift` + `P` \ (macOS \) aus.  
-      1. Geben `Sensors` Sie ein, und wählen Sie **Sensoren anzeigen**aus.  
+      1.  Open the Command Menu.  
+          *   Select `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\).  
+      1. Type `Sensors`, and choose **Show Sensors**.  
       
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Sensoren für Geolocation anzeigen" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
-         **Sensoren** für Geolocation anzeigen  
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="The Device Toolbar" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
+         **Show Sensors** for geolocation  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-Im Bereich " **Sensoren** " können Sie mithilfe des Dropdownmenüs " **Standort** " einen der vordefinierten Speicherorte auswählen, die in devtools enthalten sind.  Wenn Sie einen benutzerdefinierten Speicherort eingeben möchten, wählen Sie **andere** aus. und geben Sie die Koordinaten des benutzerdefinierten Speicherorts ein.  Wenn Sie Ihre Seite in einem Fehlerzustand testen möchten, wenn Standortinformationen nicht verfügbar sind, wählen Sie **Speicherort nicht verfügbar**aus.  
+On the **Sensors** panel, you may select one of the preset locations included in DevTools using the **Location** drop-down menu.  To enter a custom location, choose **Other…** and enter the coordinates of your custom location.  To test your page in an error state when location information is unavailable, choose **Location unavailable**.  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png" alt-text="Sensorbereich mit ausgewähltem voreingestellten Speicherort" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png":::
-    Bereich " **Sensoren** " mit ausgewählter Vorwahl Position.  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png" alt-text="The Device Toolbar" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png":::
+    **Sensors** panel with a preset location selected.  
 :::image-end:::
 
-## Ausrichtung einstellen  
+## Set orientation  
 
 :::row:::
    :::column span="":::
-      Wenn Ihre Seite von den Orientierungs Informationen eines mobilen Geräts abhängt, um Sie ordnungsgemäß zu rendern, öffnen Sie die Benutzeroberfläche für die Ausrichtung.  
+      If your page depends on orientation information from a mobile device to render properly, open the orientation UI.  
 
-      1.  Wählen Sie **anpassen und Steuern devtools** \ ( `...` \) > **Weitere Tools**-  >  **Sensoren**aus.  
+      1.  Choose **Customize and control DevTools** \(`...`\) > **More tools** > **Sensors**.  
       
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="Sensoren zur Ausrichtung" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
-         **Sensoren** zur Ausrichtung  
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="The Device Toolbar" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
+         **Sensors** for orientation  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      1.  Öffnen des Befehlsmenüs  
-          *   Wählen Sie `Control` + `Shift` + `P` \ (Windows \) oder `Command` + `Shift` + `P` \ (macOS \) aus.  
-      1. Geben `Sensors` Sie ein, und wählen Sie **Sensoren anzeigen**aus.  
+      1.  Open the Command Menu.  
+          *   Select `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\).  
+      1. Type `Sensors`, and choose **Show Sensors**.  
       
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Anzeigen von Sensoren zur Ausrichtung" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
-         **Anzeigen von Sensoren** zur Ausrichtung  
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="The Device Toolbar" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
+         **Show Sensors** for orientation  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-Im **Sensor** Panel können Sie eine voreingestellte Ausrichtung aus dem Dropdownmenü **Ausrichtung** auswählen.  Wenn Sie eine eigene Ausrichtung eingeben möchten, wählen Sie **benutzerdefinierte Ausrichtung**aus, und geben Sie Ihre eigenen [Alpha][MDNDeviceOrientaitonAlpha]-, [Beta][MDNDeviceOrientaitonBeta]-und [Gammawerte][MDNDeviceOrientaitonGamma] ein.  
+On the **Sensors** panel, you may select a preset orientation from the **Orientation** drop-down menu.  To enter your own orientation, choose **Custom orientation**, and enter your own [alpha][MDNDeviceOrientaitonAlpha], [beta][MDNDeviceOrientaitonBeta], and [gamma][MDNDeviceOrientaitonGamma] values.  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png" alt-text="Ausrichtungsoptionen im Sensor Panel" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png":::
-    **Ausrichtungs** Optionen im **Sensor** Panel  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png" alt-text="The Device Toolbar" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png":::
+    **Orientation** options on the **Sensors** panel  
 :::image-end:::  
 
-## Benutzer-Agent-Zeichenfolge einrichten  
+## Set user agent string  
 
 :::row:::
    :::column span="":::
-      Wenn Ihre Seite davon abhängt, ob die Benutzer-Agent-Zeichenfolge von einem mobilen Gerät ordnungsgemäß gerendert wird, verwenden Sie den Panel **Netzwerkbedingungen** , um unterschiedliche Benutzer-Agent-Zeichenfolgen bereitzustellen  
+      If your page depends on the user agent string from a mobile device to render properly, use the **Network conditions** panel to provide different user agent strings.  
       
-      1.  Wählen Sie **anpassen und Steuern devtools** \ ( `...` \) > **Weitere Tools**  >  **Netzwerkbedingungen**aus.  
+      1.  Choose **Customize and control DevTools** \(`...`\) > **More tools** > **Network conditions**.  
       
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png" alt-text="Eintrag "Netzwerkbedingungen" im Menü "Weitere Tools"" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png":::
-         Eintrag " **Netzwerkbedingungen** " im Menü " **Weitere Tools** "  
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png" alt-text="The Device Toolbar" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png":::
+         **Network conditions** entry in the **More tools** menu  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      1.  Öffnen des Befehlsmenüs  
-          *   Wählen Sie `Control` + `Shift` + `P` \ (Windows \) oder `Command` + `Shift` + `P` \ (macOS \) aus.  
-      1. Geben `Network conditions` Sie ein, und wählen Sie **Netzwerkbedingungen anzeigen**aus.  
+      1.  Open the Command Menu.  
+          *   Select `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\).  
+      1. Type `Network conditions`, and choose **Show Network conditions**.  
       
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png" alt-text="Netzwerkbedingungen anzeigen" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png":::
-         **Netzwerkbedingungen anzeigen**  
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png" alt-text="The Device Toolbar" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png":::
+         **Show Network conditions**  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-Deaktivieren Sie neben **Benutzer-Agent**das Kontrollkästchen **automatisch auswählen** .  Wählen Sie dann **Benutzerdefiniert** aus, um aus einer Liste vordefinierter Benutzer-Agent-Zeichenfolgen auszuwählen.  Wenn Sie eine eigene Benutzer-Agent-Zeichenfolge eingeben möchten, geben Sie die Zeichenfolge in **Geben Sie einen benutzerdefinierten Benutzer-Agent ein**.  
+Next to **User agent**, clear the **Select automatically** checkbox.  Then, select **Custom...** to select from a list of predefined user agent strings.  To enter your own user agent string, enter the string in **Enter a custom user agent**.  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png" alt-text="Einrichten der Benutzer-Agent-Zeichenfolge auf Microsoft Edge unter macOS" lightbox="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png":::
-    Einrichten der Benutzer-Agent-Zeichenfolge auf Microsoft Edge unter macOS  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png" alt-text="The Device Toolbar" lightbox="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png":::
+    Set the user agent string to Microsoft Edge on macOS  
 :::image-end:::  
 
-## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -348,22 +348,22 @@ Deaktivieren Sie neben **Benutzer-Agent**das Kontrollkästchen **automatisch aus
 <!-- links -->  
 
 <!--[DevToolsCommunity]: ../index.md#community "Join the DevTools community | Microsoft Docs"  -->
-[DevToolsRemoteDebugging]: .. /Remote-Debugging/Index.MD "erste Schritte mit dem Remotedebuggen von Android-Geräten | Microsoft docs "  
+[DevToolsRemoteDebugging]: ../remote-debugging/index.md "Get started with remote debugging Android devices | Microsoft Docs"  
 
-[MDNWindowDevicePixelRatio]: https://developer.mozilla.org/docs/Web/API/Window/devicePixelRatio "Window. devicePixelRatio | MDN"  
-[MDNUserAgent]: https://developer.mozilla.org/docs/Glossary/User_agent "Benutzer-Agent | MDN"  
-[MDNDeviceOrientaitonAlpha]: https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/alpha "DeviceOrientationEvent. Alpha | MDN"  
-[MDNDeviceOrientaitonBeta]: https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/beta "DeviceOrientationEvent. Beta | MDN"  
-[MDNDeviceOrientaitonGamma]: https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/gamma "DeviceOrientationEvent. Gamma | MDN"  
+[MDNWindowDevicePixelRatio]: https://developer.mozilla.org/docs/Web/API/Window/devicePixelRatio "Window.devicePixelRatio | MDN"  
+[MDNUserAgent]: https://developer.mozilla.org/docs/Glossary/User_agent "User Agent | MDN"  
+[MDNDeviceOrientaitonAlpha]: https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/alpha "DeviceOrientationEvent.alpha | MDN"  
+[MDNDeviceOrientaitonBeta]: https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/beta "DeviceOrientationEvent.beta | MDN"  
+[MDNDeviceOrientaitonGamma]: https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/gamma "DeviceOrientationEvent.gamma | MDN"  
 
-[WikiApproximation]: https://en.wikipedia.org/wiki/Order_of_approximation#First-order "Reihenfolge der Näherung – First-Order – Wikipedia"  
+[WikiApproximation]: https://en.wikipedia.org/wiki/Order_of_approximation#First-order "Order of Approximation - First-order - Wikipedia"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
-> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/device-mode/index) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
+> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/device-mode/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
-Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
+This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

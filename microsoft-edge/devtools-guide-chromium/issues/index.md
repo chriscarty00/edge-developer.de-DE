@@ -1,11 +1,11 @@
 ---
-title: Suchen und Beheben von Problemen mit dem Microsoft Edge devtools Issues Tool
+title: Find and fix problems with the Microsoft Edge DevTools Issues tool
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+keywords: microsoft edge, web development, f12 tools, devtools
 ms.openlocfilehash: bad9e9d99f0d2f3179784920fc334823289b9f99
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -27,108 +27,108 @@ ms.locfileid: "10992820"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Suchen und Beheben von Problemen mit dem Microsoft Edge devtools Issues Tool  
+# Find and fix problems with the Microsoft Edge DevTools Issues tool  
 
-Das **Problem** Tool in Microsoft Edge devtools verringert die Ermüdung der Benachrichtigung und die unaufgeräumtheit der **Konsole**.  Verwenden Sie es, um Lösungen für vom Browser erkannte Probleme zu finden, wie etwa Cookie-Probleme und gemischte Inhalte.  
+The **Issues** tool in Microsoft Edge DevTools reduces the notification fatigue and clutter of the **Console**.  Use it to find solutions to problems detected by the browser, such as cookie issues and mixed content.  
 
 > [!NOTE]
-> In Microsoft Edge 84 unterstützt das **Issues** -Tool drei Arten von Problemen:  
-> *   [Cookie-Probleme][MDNSameSiteCookies]  
-> *   [Gemischter Inhalt][MDNMixedContent]  
-> *   [COEP-Probleme][W3CCOEPSpec]
+> In Microsoft Edge 84, the **Issues** tool supports three types of issue:  
+> *   [Cookie problems][MDNSameSiteCookies]  
+> *   [Mixed content][MDNMixedContent]  
+> *   [COEP issues][W3CCOEPSpec]
 > 
-> Das Microsoft Edge devtools-Team plant, weitere Problemtypen in zukünftigen Versionen von Microsoft Edge zu unterstützen.  
+> The Microsoft Edge DevTools team plans to support more issue types in future versions of Microsoft Edge.  
 
-## Öffnen des Tools "Probleme" im devtools-Einzug  
+## Open the Issues tool in the DevTools drawer  
 
-1.  Besuchen Sie eine Seite wie [SameSite-Sandbox.Glitch.me][GlitchSamesiteSandbox], die Probleme enthält, die behoben werden können.  
-1.  [Öffnen Sie devtools][DevtoolsOpen].  
+1.  Visit a page, such as [samesite-sandbox.glitch.me][GlitchSamesiteSandbox], that contains issues to fix.  
+1.  [Open DevTools][DevtoolsOpen].  
 1.  :::row:::
        :::column span="":::
-          Klicken Sie auf der gelben Warnleiste auf die Schaltfläche **Gehe zu Problemen** .  
+          Select the **Go to Issues** button in the yellow warning bar.  
           
-          :::image type="complex" source="../media/issues-open-issues-tab.msft.png" alt-text="Schaltfläche ' Probleme ' in der gelben Warnleiste, wenn Probleme erkannt werden" lightbox="../media/issues-open-issues-tab.msft.png":::
-             Die Schaltfläche " **Probleme wechseln** " in der gelben Warnleiste, wenn Probleme erkannt werden.  
+          :::image type="complex" source="../media/issues-open-issues-tab.msft.png" alt-text="Go to Issues button in yellow warning bar when Issues are detected" lightbox="../media/issues-open-issues-tab.msft.png":::
+             The **Go to Issues** button in the yellow warning bar when Issues are detected.  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          Sie können auch im Menü **Weitere Tools** die Option **Probleme** auswählen.  
+          Alternatively, select **Issues** from the **More tools** menu.  
           
-          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text="Tool ' Probleme ' im Menü ' Weitere Tools '" lightbox="../media//issues-more-tools-menu.msft.png":::
-             Tool ' **Probleme** ' im Menü ' **Weitere Tools** '  
+          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text="Go to Issues button in yellow warning bar when Issues are detected" lightbox="../media//issues-more-tools-menu.msft.png":::
+             **Issues** tool in **More tools** menu  
           :::image-end:::  
        :::column-end:::
     :::row-end:::
     
-1.  Wählen Sie bei Bedarf die Schaltfläche **Seite neu laden** aus.  
+1.  Select the **Reload page** button, if necessary.  
     
-    :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="Tool ' Probleme ' in der devtools-Schublade mit der Schaltfläche ' Seite neu laden '" lightbox="../media/issues-tab-before-refresh.msft.png":::
-       Tool ' **Probleme** ' in der devtools-Schublade mit der Schaltfläche ' **Seite neu laden** '  
+    :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="Go to Issues button in yellow warning bar when Issues are detected" lightbox="../media/issues-tab-before-refresh.msft.png":::
+       **Issues** tool in the DevTools Drawer with **Reload page** button  
     :::image-end:::  
 
-    Die in der **Konsole** gemeldeten Probleme sind schwer verständlich, wie etwa die Cookie-Warnungen in der folgenden Abbildung.  Basierend auf den gemeldeten Problemen ist es möglicherweise nicht klar, was Sie tun müssen.  
+    The issues reported in the **Console** are quite hard to understand, such as the cookie warnings in the following image.  Based upon the reported issues, it may not be clear what you must do.  
     
-    :::image type="complex" source="../media/issues-tab-after-refresh.msft.png" alt-text="Tool "Probleme" im devtools-Einzug mit drei Problemen mit Cookies" lightbox="../media/issues-tab-after-refresh.msft.png":::
-       Tool " **Probleme** " im devtools-Einzug mit drei Problemen mit Cookies  
+    :::image type="complex" source="../media/issues-tab-after-refresh.msft.png" alt-text="Go to Issues button in yellow warning bar when Issues are detected" lightbox="../media/issues-tab-after-refresh.msft.png":::
+       **Issues** tool in the DevTools Drawer with three cookie issues  
     :::image-end:::  
     
-## Anzeigen von Elementen im Tool "Probleme"  
+## View items in the Issues tool  
 
-Das Tool " **Probleme** " im devtools-Einzug zeigt Warnungen auf strukturierter, aggregierter und umsetzbarer Weise an.  
+The **Issues** tool in the DevTools Drawer presents warnings in a structured, aggregated, and actionable way.  
 
-1.  Wählen Sie ein Element im **Issues** -Tool aus, um Anleitungen zur Behebung des Problems und zum Auffinden betroffener Ressourcen zu erhalten.  
+1.  Select an item in the **Issues** tool to get guidance on how to fix the issue and find affected resources.  
     
-    :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="Markieren von websiteübergreifenden Cookies als sicheres Problem im Tool "Probleme"" lightbox="../media/issues-tab-issue-open.msft.png":::
-       **Markieren von websiteübergreifenden Cookies als sicheres** Problem im Tool " **Probleme** "  
+    :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="Go to Issues button in yellow warning bar when Issues are detected" lightbox="../media/issues-tab-issue-open.msft.png":::
+       **Mark cross-site cookies as Secure** issue open in the **Issues** tool  
     :::image-end:::  
     
-    Jedes Element verfügt über vier Komponenten:  
+    Each item has four components:  
     
-    *   Eine Überschrift, die das Problem beschreibt.  
-    *   Eine Beschreibung, die den Kontext und die Lösung bereitstellt.  
-    *   Ein Abschnitt " **betroffene Ressourcen** ", der Links zu Ressourcen im entsprechenden devtools-Kontext wie dem Netzwerk Panel enthält.  
-    *   Links zu weiteren Anleitungen.  
+    *   A headline describing the issue.  
+    *   A description providing the context and the solution.  
+    *   An **AFFECTED RESOURCES** section that links to resources within the appropriate DevTools context such as the Network panel.  
+    *   Links to further guidance.  
     
-1.  Wählen Sie Elemente in **betroffenen Ressourcen** aus, um Details anzuzeigen.  Im folgenden Beispiel wirkt sich das **kennzeichnen von websiteübergreifenden Cookies als sicheres** Problem auf ein Cookie und zwei Anforderungen aus.  
+1.  Select items in **AFFECTED RESOURCES** to view details.  In the following example, the **Mark cross-site cookies as Secure** issue affects one cookie and two requests.  
     
-    :::image type="complex" source="../media/issues-tab-affected-resources.msft.png" alt-text="Auf der Registerkarte "Issues Drawer" geöffnete betroffene Ressourcen" lightbox="../media/issues-tab-affected-resources.msft.png":::
-       Im Tool " **Probleme** " im devtools-Einzug geöffnete betroffene Ressourcen  
+    :::image type="complex" source="../media/issues-tab-affected-resources.msft.png" alt-text="Go to Issues button in yellow warning bar when Issues are detected" lightbox="../media/issues-tab-affected-resources.msft.png":::
+       Affected resources open in the **Issues** tool in the DevTools Drawer  
     :::image-end:::  
     
-## Anzeigen von Problemen im Kontext  
+## View issues in context  
 
-1.  Wählen Sie einen Ressourcen Link aus, um das Element im entsprechenden Kontext in devtools anzuzeigen.  Wählen Sie im folgenden Beispiel `samesite-sandbox.glitch.me` unter **Anforderungen** aus, um die Cookies anzuzeigen, die dieser Anforderung angefügt sind.  
+1.  Select a resource link to view the item in the appropriate context within DevTools.  In the following example, select `samesite-sandbox.glitch.me` under **Requests** to show the cookies attached to that request.  
     
-    :::image type="complex" source="../media/issues-tab-view-request.msft.png" alt-text="Anzeigen des betroffenen Cookies im devtools-Netzwerk Panel" lightbox="../media/issues-tab-view-request.msft.png":::
-       Anzeigen des betroffenen Cookies im devtools- **Netzwerk** Panel  
+    :::image type="complex" source="../media/issues-tab-view-request.msft.png" alt-text="Go to Issues button in yellow warning bar when Issues are detected" lightbox="../media/issues-tab-view-request.msft.png":::
+       View the affected cookie in the DevTools **Network** panel  
     :::image-end:::  
 
-1.  Scrollen Sie, um das Element mit einem Problem anzuzeigen: im folgenden Beispiel wird das `ck02` Cookie angezeigt.  Zeigen Sie mit der Maus auf die Spalte **SameSite** , um den `None` Wert anzuzeigen, der vom Problem erkannt wurde.  
+1.  Scroll to view the item with a problem: for the following example, the `ck02` cookie.  Hover over the **SameSite** column to see the `None` value that the issue detected.  
     
-    :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="Kein Wert in der Spalte "SameSite" für das ck02-Cookie im devtools-Netzwerk Panel" lightbox="../media/issues-tab-view-issue.msft.png":::
-       `None` Wert in der Spalte " **SameSite** " für das `ck02` Cookie im devtools- **Netzwerk** Panel  
+    :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="Go to Issues button in yellow warning bar when Issues are detected" lightbox="../media/issues-tab-view-issue.msft.png":::
+       `None` value in the **SameSite** column for the `ck02` cookie in the DevTools **Network** panel  
     :::image-end:::  
 
-## Kontakt mit dem Microsoft Edge devtools-Team  
+## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsOpen]: ../open.md "Öffnen Sie Microsoft Edge devtools | Microsoft docs"  
+[DevtoolsOpen]: ../open.md "Open Microsoft Edge DevTools | Microsoft Docs"  
 
-[GlitchSamesiteSandbox]: https://samesite-sandbox.glitch.me "SameSite-Cookie-Tests | Glitch"  
+[GlitchSamesiteSandbox]: https://samesite-sandbox.glitch.me "SameSite cookie tests | Glitch"  
 
-[MDNSameSiteCookies]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite "SameSite Cookies | MDN"  
-[MDNMixedContent]: https://developer.mozilla.org/docs/Web/Security/Mixed_content "Gemischter Inhalt | MDN"  
+[MDNSameSiteCookies]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite "SameSite cookies | MDN"  
+[MDNMixedContent]: https://developer.mozilla.org/docs/Web/Security/Mixed_content "Mixed content | MDN"  
 
-[W3CCOEPSpec]: https://wicg.github.io/cross-origin-embedder-policy "Richtlinien für die übergreifende Einbettung | Webinkubator-Community-Gruppe"  
+[W3CCOEPSpec]: https://wicg.github.io/cross-origin-embedder-policy "Cross-Origin Embedder Policy | Web Incubator Community Group"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
-> Die ursprüngliche Seite wird [hier](https://developers.google.com/web/tools/chrome-devtools/issues/index) gefunden und von [Sam Dutton][SamDutton] (Entwickler Anwalt \) erstellt.  
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
-Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
+> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/issues/index) and is authored by [Sam Dutton][SamDutton] \(Developer Advocate\).  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
+This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

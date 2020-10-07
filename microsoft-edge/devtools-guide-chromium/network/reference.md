@@ -1,12 +1,12 @@
 ---
-description: Eine umfassende Referenz zu den Features des Microsoft Edge devtools-Netzwerk Panels.
-title: Netzwerkanalyse Referenz
+description: A comprehensive reference of Microsoft Edge DevTools Network panel features.
+title: Network Analysis reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/30/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+keywords: microsoft edge, web development, f12 tools, devtools
 ms.openlocfilehash: 758623482ab2179987c6467f8e30c72d8893d710
 ms.sourcegitcommit: addfd27bb765c92880a59f259dc702f6e4e1bf28
 ms.translationtype: MT
@@ -28,62 +28,62 @@ ms.locfileid: "11092314"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Netzwerkanalyse Referenz  
+# Network Analysis reference  
 
-Entdecken Sie neue Möglichkeiten zur Analyse, wie Ihre Seite in dieser umfassenden Referenz der Microsoft Edge devtools-Netzwerkanalyse Features geladen werden kann.  
+Discover new ways to analyze how your page loads in this comprehensive reference of Microsoft Edge DevTools network analysis features.  
 
 <!--
 > [!NOTE]
 > This reference is based on Microsoft Edge 58.  If you use another version of Microsoft Edge, the UI, and features of DevTools may be different.  To verify which version of Microsoft Edge you are running, navigate to `edge://help`.  
 -->
 
-## Aufzeichnen von Netzwerkanforderungen  
+## Record network requests  
 
-Standardmäßig zeichnet devtools alle Netzwerkanforderungen im Netzwerk Panel auf, solange devtools geöffnet ist.  
+By default, DevTools record all network requests in the Network panel, so long as DevTools is open.  
 
-:::image type="complex" source="../media/network-network-panel.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-network-panel.msft.png":::
-   **Netzwerk** Panel  
+:::image type="complex" source="../media/network-network-panel.msft.png" alt-text="The Network panel" lightbox="../media/network-network-panel.msft.png":::
+   The **Network** panel  
 :::image-end:::  
 
-### Beenden der Aufzeichnung von Netzwerkanforderungen  
+### Stop recording network requests  
 
-Führen Sie die folgenden Schritte aus, um die Aufzeichnung von Anforderungen zu beenden.  
+To stop recording requests, complete the following steps.  
 
-1.  Wählen Sie auf der Registerkarte Netzwerk die Option Aufzeichnung des Netzwerk **Protokolls beenden** \ ( ![ Aufzeichnung des Netzwerkprotokolls beenden ][ImageRecordOnIcon] \) aus. **Network**  Es wird grau, um anzugeben, dass devtools keine Anforderungen mehr aufzeichnet.  
-1.  Drücken Sie `Control` + `E` \ (Windows \) oder `Command` + `E` \ (macOS \), während sich der Fokus des **Netzwerk** Panels befindet.  
+1.  Select **Stop recording network log** \(![Stop recording network log][ImageRecordOnIcon]\) on the **Network** panel.  It turns grey to indicate that DevTools is no longer recording requests.  
+1.  Press `Control`+`E` \(Windows\) or `Command`+`E` \(macOS\) while the **Network** panel is in focus.  
 
-### Löschen von Anforderungen  
+### Clear requests  
 
-Wählen Sie im Netzwerk Panel die Option **"Löschen"** ![ ][ImageClearIcon] aus, um alle Anforderungen aus der Tabelle "Anforderungen" zu löschen.  
+Select **Clear** \(![Clear][ImageClearIcon]\) on the Network panel to clear all requests from the Requests table.  
 
-:::image type="complex" source="../media/network-network-clear-button.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-network-clear-button.msft.png":::
-   Die Schaltfläche " **Löschen** "  
+:::image type="complex" source="../media/network-network-clear-button.msft.png" alt-text="The Network panel" lightbox="../media/network-network-clear-button.msft.png":::
+   The **Clear** button  
 :::image-end:::  
 
-### Speichern von Anforderungen über Seitenlasten hinweg  
+### Save requests across page loads  
 
-Aktivieren Sie das Kontrollkästchen **Protokoll beibehalten** auf der Registerkarte Netzwerk, um Anforderungen zwischen den Seitenlasten zu speichern.  DevTools speichert alle Anforderungen, bis Sie **Protokoll beibehalten**deaktivieren.  
+To save requests across page loads, check the **Preserve log** checkbox on the Network panel.  DevTools saves all requests until you disable **Preserve log**.  
 
-:::image type="complex" source="../media/network-network-preserve-log.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-network-preserve-log.msft.png":::
-   Kontrollkästchen " **Protokoll beibehalten** "  
+:::image type="complex" source="../media/network-network-preserve-log.msft.png" alt-text="The Network panel" lightbox="../media/network-network-preserve-log.msft.png":::
+   The **Preserve Log** checkbox  
 :::image-end:::  
 
-### Aufzeichnen von Screenshots beim Laden der Seite  
+### Capture screenshots during page load  
 
-Screenshots aufzeichnen, um zu analysieren, was für Benutzer angezeigt wird, während Sie darauf warten, dass Ihre Seite geladen wird.  
+Capture screenshots to analyze what displays for users while waiting for your page to load.  
 
-Wenn Sie Screenshots aktivieren möchten, wählen Sie **Netzwerkeinstellungen** und dann auf der Registerkarte **Netzwerk** das Kontrollkästchen **Screenshots aufzeichnen** aus.  
+To enable screenshots, select **Network settings** and select **Capture screenshots** checkbox on the **Network** panel.  
 
-Aktualisieren Sie die Seite, während sich das **Netzwerk** Panel im Fokus befindet, um Screenshots zu erfassen.  
+Refresh the page while the **Network** panel is in focus to capture screenshots.  
 
-Nachdem Sie einen Screenshot aufgezeichnet haben, interagieren Sie mit ihm auf die folgende Weise.  
+After capturing a screenshot, you interact with it in the following ways.  
 
-*   Zeigen Sie mit der Maus auf einen Screenshot, um den Punkt anzuzeigen, an dem dieser Screenshot aufgenommen wurde.  Im Bereich " **Übersicht** " wird eine gelbe Zeile angezeigt.  
-*   Wählen Sie die Miniaturansicht eines Bildschirms aus, um alle Anforderungen zu filtern, die nach dem Erfassen des Screenshots aufgetreten sind.  
-*   Doppelklicken Sie auf eine Miniaturansicht, um Sie zu vergrößern.  
+*   Hover over a screenshot to view the point at which that screenshot was captured.  A yellow line is displayed on the **Overview** pane.  
+*   Select the thumbnail of a screen to filter out any requests that occurred after the screenshot was captured.  
+*   Double-click a thumbnail to zoom into it.  
 
-:::image type="complex" source="../media/network-network-screenshot-hover.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-network-screenshot-hover.msft.png":::
-   Zeigen auf einen Screenshot  
+:::image type="complex" source="../media/network-network-screenshot-hover.msft.png" alt-text="The Network panel" lightbox="../media/network-network-screenshot-hover.msft.png":::
+   Hovering over a screenshot  
 :::image-end:::  
 
 <!--  ### Replay XHR request  -->
@@ -91,128 +91,128 @@ Nachdem Sie einen Screenshot aufgezeichnet haben, interagieren Sie mit ihm auf d
 <!--  To replay an XHR request, hover on the request in the Requests table, open the contextual menu \(right-click\), and select **Replay XHR**.  -->
 
 <!--  
-:::image type="complex" source="../media/network-replay-xhr.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-replay-xhr.msft.png":::
+:::image type="complex" source="../media/network-replay-xhr.msft.png" alt-text="The Network panel" lightbox="../media/network-replay-xhr.msft.png":::
    Selecting Replay XHR  
 :::image-end:::  
 -->  
 
-## Ändern des Ladeverhaltens  
+## Change loading behavior  
 
-### Emulieren eines erstmaligen Besuchers durch Deaktivieren des Browsercaches  
+### Emulate a first-time visitor by disabling the browser cache  
 
-Aktivieren Sie das Kontrollkästchen **Cache deaktivieren** , um zu emulieren, wie ein Erstbenutzer Ihre Website erlebt.  DevTools deaktiviert den Browsercache.  Dieses Feature emuliert die Benutzerfreundlichkeit des ersten Benutzers genauer, da Anforderungen im Browser-Cache für wiederholte Besuche bereitgestellt werden.  
+To emulate how a first-time user experiences your site, check the **Disable cache** checkbox.  DevTools disables the browser cache.  This feature more accurately emulates a first-time user's experience, because requests are served from the browser cache on repeat visits.  
 
-:::image type="complex" source="../media/network-network-disable-cache-checkbox.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-network-disable-cache-checkbox.msft.png":::
-   Kontrollkästchen " **Cache deaktivieren** "  
+:::image type="complex" source="../media/network-network-disable-cache-checkbox.msft.png" alt-text="The Network panel" lightbox="../media/network-network-disable-cache-checkbox.msft.png":::
+   The **Disable Cache** checkbox  
 :::image-end:::  
 
-#### Deaktivieren des Browser-Caches aus der Schublade "Netzwerkbedingungen"  
+#### Disable the browser cache from the Network Conditions drawer  
 
-Wenn Sie den Cache während der Arbeit in anderen devtools-Panels deaktivieren möchten, verwenden Sie die Schublade Netzwerkbedingungen.  
+If you want to disable the cache while working in other DevTools panels, use the Network Conditions drawer.  
 
-1.  Öffnen Sie die Schublade **Netzwerkbedingungen** .  
-1.  Aktivieren oder deaktivieren Sie das Kontrollkästchen **Cache deaktivieren** .  
+1.  Open the **Network Conditions** drawer.  
+1.  Check or uncheck the **Disable cache** checkbox.  
 
 <!--todo: add network condition section when available -->  
 
-### Manuelles Löschen des Browsercaches  
+### Manually clear the browser cache  
 
-Wenn Sie den Browser-Cache jederzeit manuell löschen möchten, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \) an einer beliebigen Stelle in der Tabelle Anforderungen, und wählen Sie **Browsercache löschen**aus.  
+To manually clear the browser cache at any time, open the contextual menu \(right-click\) anywhere in the Requests table and select **Clear Browser Cache**.  
 
-:::image type="complex" source="../media/network-network-clear-browser-cache.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-network-clear-browser-cache.msft.png":::
-   Auswählen des **Browser Cache löschen**  
+:::image type="complex" source="../media/network-network-clear-browser-cache.msft.png" alt-text="The Network panel" lightbox="../media/network-network-clear-browser-cache.msft.png":::
+   Selecting **Clear Browser Cache**  
 :::image-end:::  
 
-### Offline emulieren  
+### Emulate offline  
 
-Eine neue Klasse von Web-Apps mit dem Namen " [Progressive Web Apps][DevtoolsProgressiveWebApps]" funktioniert mit Hilfe von **Servicemitarbeitern**offline.  Möglicherweise ist es hilfreich, ein Gerät, das keine Datenverbindung aufweist, schnell zu simulieren, wenn Sie diese Art von App erstellen.  
+A new class of web apps, named [Progressive Web Apps][DevtoolsProgressiveWebApps], functions offline with the help of **service workers**.  You may find it useful to quickly simulate a device that has no data connection when you are building this type of app.  
 
 <!--[ServiceWorkers]: /web/fundamentals/getting-started/primers/service-workers  -->
 
-Wählen Sie das Dropdownmenü **Online** aus, suchen Sie unter **Voreinstellungen**, und wählen Sie **Offline** aus, um eine Offlinenetzwerk Umgebung zu simulieren.  
+Select the **Online** dropdown menu, search under **Presets**, and select **Offline** to simulate an offline network experience.  
 
-:::image type="complex" source="../media/network-network-offline-dropdown.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-network-offline-dropdown.msft.png":::
-   Das **Offline** -Dropdownmenü  
+:::image type="complex" source="../media/network-network-offline-dropdown.msft.png" alt-text="The Network panel" lightbox="../media/network-network-offline-dropdown.msft.png":::
+   The **Offline** dropdown menu  
 :::image-end:::  
 
-### Emulieren langsamer Netzwerkverbindungen  
+### Emulate slow network connections  
 
-Emulieren Sie langsames 3G, fast 3G und andere Verbindungsgeschwindigkeiten über das **Online-Dropdown-** Menü.  
+Emulate Slow 3G, Fast 3G, and other connection speeds from the **Online** dropdown menu.  
 
-:::image type="complex" source="../media/network-network-throttling-menu.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-network-throttling-menu.msft.png":::
-   Dropdownmenü " **Drosselung** "  
+:::image type="complex" source="../media/network-network-throttling-menu.msft.png" alt-text="The Network panel" lightbox="../media/network-network-throttling-menu.msft.png":::
+   The **Throttling** dropdown menu  
 :::image-end:::  
 
-Sie können aus unterschiedlichen Voreinstellungen wie Slow 3G oder fast 3G wählen.  Sie können auch eigene benutzerdefinierte Voreinstellungen hinzufügen, indem Sie das Menü Drosselung öffnen und **benutzerdefiniertes**  >  **Add**auswählen.  
+You may select from different presets, such as Slow 3G or Fast 3G.  You may also add your own custom presets by opening the Throttling menu and selecting **Custom** > **Add**.  
 
-DevTools zeigt ein Warnungssymbol neben der Registerkarte " **Netzwerk** " an, um Sie daran zu erinnern, dass die Drosselung aktiviert ist.  
+DevTools displays a warning icon next to the **Network** tab to remind you that throttling is enabled.  
 
-#### Emulieren von langsamen Netzwerkverbindungen über die Netzwerkbedingungen Schublade  
+#### Emulate slow network connections from the Network Conditions drawer  
 
-Wenn Sie die Netzwerkverbindung während der Arbeit in anderen devtools-Panels Drosseln möchten, verwenden Sie den Netzwerkbedingungen-Einzug.  
+If you want to throttle the network connection while working in other DevTools panels, use the Network Conditions drawer.  
 
-1.  Öffnen Sie die Schublade **Netzwerkbedingungen** .  
-1.  Wählen Sie im Menü **Drosselung** Ihre Verbindungsgeschwindigkeit aus.  
+1.  Open the **Network Conditions** drawer.  
+1.  Select your connection speed from the **Throttling** menu.  
 
 <!--todo: add network condition section when available -->  
 
-### Manuelles Löschen von Browser-Cookies  
+### Manually clear browser cookies  
 
-Wenn Sie Browser-Cookies jederzeit manuell löschen möchten, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \) an einer beliebigen Stelle in der Tabelle Anforderungen, und wählen Sie **Browser-Cookies löschen**aus.  
+To manually clear browser cookies at any time, open the contextual menu \(right-click\) anywhere in the Requests table and select **Clear Browser Cookies**.  
 
-:::image type="complex" source="../media/network-network-clear-browser-cookies.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-network-clear-browser-cookies.msft.png":::
-   Auswählen von **Browser-Cookies löschen**  
+:::image type="complex" source="../media/network-network-clear-browser-cookies.msft.png" alt-text="The Network panel" lightbox="../media/network-network-clear-browser-cookies.msft.png":::
+   Selecting **Clear Browser Cookies**  
 :::image-end:::  
 
-### Überschreiben des Benutzer-Agents  
+### Override the user agent  
 
-Führen Sie die folgenden Schritte aus, um den Benutzer-Agent manuell zu überschreiben.  
+To manually override the user agent, use the following steps.  
 
-1.  Öffnen Sie die Schublade **Netzwerkbedingungen** .  
-1.  Deaktivieren **Sie SELECT automatisch**.  
-1.  Wählen Sie eine Option für den Benutzer-Agent aus dem Menü aus, oder geben Sie eine benutzerdefinierte Option in das Textfeld ein.  
+1.  Open the **Network Conditions** drawer.  
+1.  Uncheck **Select automatically**.  
+1.  Choose a user agent option from the menu, or enter a custom one in the text box.  
 
 <!--todo: add network condition section when available -->  
 
-## Filter Anforderungen  
+## Filter requests  
 
-### Filtern von Anforderungen nach Eigenschaften  
+### Filter requests by properties  
 
-Verwenden Sie das Textfeld **Filtern** , um Anforderungen nach Eigenschaften wie der Domäne oder der Größe der Anforderung zu filtern.  
+Use the **Filter** text box to filter requests by properties, such as the domain or size of the request.  
 
-Wenn das Textfeld nicht angezeigt wird, ist der **Filter** Bereich wahrscheinlich ausgeblendet.  
-Wenn Sie weitere Informationen erhalten möchten, navigieren Sie zum [Ausblenden des Filters-Bereichs](#hide-the-filters-pane).  
+If the text box is not displayed, the **Filters** pane is probably hidden.  
+For more information, navigate to [Hide the Filters pane](#hide-the-filters-pane).  
 
-:::image type="complex" source="../media/network-network-filters-textbox.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-network-filters-textbox.msft.png":::
-   Das Textfeld " **Filter** "  
+:::image type="complex" source="../media/network-network-filters-textbox.msft.png" alt-text="The Network panel" lightbox="../media/network-network-filters-textbox.msft.png":::
+   The **Filter** text box  
 :::image-end:::  
 
-Sie können mehrere Eigenschaften gleichzeitig verwenden, indem Sie jede Eigenschaft mit einem Leerzeichen voneinander trennen.  Zeigt beispielsweise `mime-type:image/png larger-than:1K` alle PNGs an, die größer als 1 KB sind.  Die Filter für mehrere Eigenschaften sind äquivalent zu `AND` Vorgängen.  `OR` Vorgänge werden zurzeit nicht unterstützt.  
+You may use multiple properties simultaneously by separating each property with a space.  For example, `mime-type:image/png larger-than:1K` displays all PNGs that are larger than 1 kilobyte.  The multi-property filters are equivalent to `AND` operations.  `OR` operations are currently not supported.  
 
-Die vollständige Liste der unterstützten Eigenschaften.  
+The complete list of supported properties.  
 
-| Eigenschaft | Details |  
+| Property | Details |  
 |:--- | :--- |  
-| `domain` | Zeigt nur Ressourcen aus der angegebenen Domäne an.  Sie können ein Platzhalterzeichen \ ( `*` \) verwenden, um mehrere Domänen einzubeziehen.  Zeigt beispielsweise `*.com` Ressourcen aus allen Domänennamen an, die in endet `.com` .  DevTools füllen Sie das Dropdownmenü AutoVervollständigen mit allen gefundenen Domänen auf. |  
-| `has-response-header` | Zeigt die Ressourcen an, die den angegebenen HTTP-Antwortheader enthalten.  DevTools füllen Sie die Dropdownliste AutoVervollständigen mit allen gefundenen Antwortheadern auf. |  
-| `is` | Verwendet `is:running` , um `WebSocket` Ressourcen zu finden. |  
-| `larger-than` | Zeigt Ressourcen an, die größer als die angegebene Größe in Bytes sind.  Das Festlegen eines Werts von entspricht dem `1000` Festlegen eines Werts von `1k` . |  
-| `method` | Zeigt Ressourcen an, die über einen angegebenen http-Methodentyp abgerufen wurden.  DevTools füllen Sie die Dropdownliste mit allen gefundenen HTTP-Methoden auf. |  
-| `mime-type` | Zeigt Ressourcen eines angegebenen MIME-Typs an.  DevTools füllen Sie die Dropdownliste mit allen gefundenen MIME-Typen auf. |  
-| `mixed-content` | Alle gemischten Inhalts Ressourcen anzeigen \ ( `mixed-content:all` \) oder nur diejenigen, die aktuell angezeigt werden \ ( `mixed-content:displayed` \). |  
-| `scheme` | Zeigt Ressourcen an, die über ungeschützten http \ ( `scheme:http` \) oder geschütztes HTTPS \ ( `scheme:https` \) abgerufen wurden. |  
-| `set-cookie-domain` | Zeigt Ressourcen `Set-Cookie` mit einer Kopfzeile mit einem `Domain` Attribut an, das dem angegebenen Wert entspricht.  DevTools füllen Sie das AutoVervollständigen mit allen gefundenen Cookie-Domänen auf. |  
-| `set-cookie-name` | Zeigt Ressourcen `Set-Cookie` mit einer Kopfzeile mit einem Namen an, der dem angegebenen Wert entspricht.  DevTools füllen Sie die AutoVervollständigen-Datei mit allen gefundenen Cookienamen auf. |  
-| `set-cookie-value` | Zeigt Ressourcen `Set-Cookie` mit einer Kopfzeile mit einem Wert an, der dem angegebenen Wert entspricht.  DevTools füllen Sie das AutoVervollständigen mit allen gefundenen Cookie-Werten auf. |  
-| `status-code` | Zeigt Ressourcen an, die dem spezifischen HTTP-Statuscode entsprechen.  DevTools füllt das Dropdownmenü AutoVervollständigen mit allen gefundenen Statuscodes auf. |  
+| `domain` | Only display resources from the specified domain.  You may use a wildcard character \(`*`\) to include multiple domains.  For example, `*.com` displays resources from all domain names ending in `.com`.  DevTools populate the autocomplete dropdown menu with all of the domains that are found. |  
+| `has-response-header` | Displays the resources that contain the specified HTTP response header.  DevTools populate the autocomplete dropdown with all of the response headers that are found. |  
+| `is` | Use `is:running` to find `WebSocket` resources. |  
+| `larger-than` | Displays resources that are larger than the specified size, in bytes.  Setting a value of `1000` is equivalent to setting a value of `1k`. |  
+| `method` | Displays resources that were retrieved over a specified HTTP method type.  DevTools populate the dropdown with all of the HTTP methods  that are found. |  
+| `mime-type` | Displays resources of a specified MIME type.  DevTools populate the dropdown with all MIME types  that are found. |  
+| `mixed-content` | Show all mixed content resources \(`mixed-content:all`\) or just the ones that are currently displayed \(`mixed-content:displayed`\). |  
+| `scheme` | Displays resources retrieved over unprotected HTTP \(`scheme:http`\) or protected HTTPS \(`scheme:https`\). |  
+| `set-cookie-domain` | Displays resources that have a `Set-Cookie` header with a `Domain` attribute that matches the specified value.  DevTools populate the autocomplete with all of the cookie domains that are found. |  
+| `set-cookie-name` | Displays resources that have a `Set-Cookie` header with a name that matches the specified value.  DevTools populate the autocomplete with all of the cookie names that are found. |  
+| `set-cookie-value` | Displays resources that have a `Set-Cookie` header with a value that matches the specified value.  DevTools populate the autocomplete with all of the cookie values that are found. |  
+| `status-code` | Displays resources that match the specific HTTP status code.  DevTools populates the autocomplete dropdown menu with all of the status codes that are found. |  
 
-### Filtern von Anforderungen nach Typ  
+### Filter requests by type  
 
-Wenn Sie Anforderungen nach Anforderungsfiltern möchten, wählen Sie eine der folgenden Schaltflächen im **Netzwerk** Panel aus.  
+To filter requests by request type, select the one of the following buttons on the **Network** panel.  
 
 :::row:::
    :::column span="1":::
-      **XMLHttpRequest**  
+      **XHR**  
    :::column-end:::
    :::column span="2":::
       &nbsp;  
@@ -236,7 +236,7 @@ Wenn Sie Anforderungen nach Anforderungsfiltern möchten, wählen Sie eine der f
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **IMG**  
+      **Img**  
    :::column-end:::
    :::column span="2":::
       &nbsp;  
@@ -244,7 +244,7 @@ Wenn Sie Anforderungen nach Anforderungsfiltern möchten, wählen Sie eine der f
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Medien**  
+      **Media**  
    :::column-end:::
    :::column span="2":::
       &nbsp;  
@@ -287,117 +287,117 @@ Wenn Sie Anforderungen nach Anforderungsfiltern möchten, wählen Sie eine der f
       **Other**  
    :::column-end:::
    :::column span="2":::
-      Jeder andere Typ, der nicht aufgeführt ist.  
+      Any other type not listed.  
    :::column-end:::
 :::row-end:::  
 
-Wenn die Schaltflächen nicht angezeigt werden, ist der Bereich " **Filter** " möglicherweise ausgeblendet.  
-Wenn Sie weitere Informationen erhalten möchten, navigieren Sie zum [Ausblenden des Filters-Bereichs](#hide-the-filters-pane).  
+If the buttons do not display, the **Filters** pane may be hidden.  
+For more information, navigate to [Hide the Filters pane](#hide-the-filters-pane).  
 
-Wenn Sie mehrere Typfilter gleichzeitig aktivieren möchten, halten `Control` Sie \ (Windows \) oder `Command` \ (macOS \) gedrückt, und wählen Sie dann aus.  
+To enable multiple type filters simultaneously, hold `Control` \(Windows\) or `Command` \(macOS\) and then select.  
 
-:::image type="complex" source="../media/network-network-type-filters.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-network-type-filters.msft.png":::
-   Verwenden des Typs "Filter" zum Anzeigen von JS-, CSS-und Dokument Ressourcen  
+:::image type="complex" source="../media/network-network-type-filters.msft.png" alt-text="The Network panel" lightbox="../media/network-network-type-filters.msft.png":::
+   Using the Type filters to display JS, CSS, and Document resources  
 :::image-end:::  
 
-### Filtern von Anforderungen nach Zeit  
+### Filter requests by time  
 
-Wählen Sie aus, und ziehen Sie im Übersichtsbereich nach links oder rechts, um nur Anforderungen anzuzeigen, die während dieses Zeitrahmens aktiv waren.  Der Filter ist inklusive.  Jede Anforderung, die während der hervorgehobenen Zeit aktiv war, wird angezeigt.  
+Select and drag left or right on the Overview pane to only display requests that were active during that time frame.  The filter is inclusive.  Any request that was active during the highlighted time is shown.  
 
-:::image type="complex" source="../media/network-network-overview-filter.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-network-overview-filter.msft.png":::
-   Herausfiltern von Anforderungen, die um 300 ms inaktiv waren  
+:::image type="complex" source="../media/network-network-overview-filter.msft.png" alt-text="The Network panel" lightbox="../media/network-network-overview-filter.msft.png":::
+   Filtering out any requests that were inactive around 300 ms  
 :::image-end:::  
 
-### Ausblenden von Daten-URLs  
+### Hide data URLs  
 
-[Daten-URLs][MDNHTTPDataURIs] sind kleine Dateien, die in andere Dokumente eingebettet sind.  Jede Anforderung, die in der Tabelle "Anforderungen" angezeigt wird, beginnt mit `data:` einer Daten-URL.  
+[Data URLs][MDNHTTPDataURIs] are small files embedded into other documents.  Any request that displays in the Requests table that starts with `data:` is a data URL.  
 
-Aktivieren Sie das Kontrollkästchen **Daten-URLs ausblenden** , um die Anforderungen auszublenden.  
+Check the **Hide data URLs** checkbox to hide the requests.  
 
-:::image type="complex" source="../media/network-network-hide-data-urls.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-network-hide-data-urls.msft.png":::
-   Das Kontrollkästchen " **Daten-URLs ausblenden** "  
+:::image type="complex" source="../media/network-network-hide-data-urls.msft.png" alt-text="The Network panel" lightbox="../media/network-network-hide-data-urls.msft.png":::
+   The **Hide Data URLs** checkbox  
 :::image-end:::  
 
-## Sortieren von Anforderungen  
+## Sort requests  
 
-Standardmäßig werden die Anforderungen in der Tabelle Anforderungen nach Initiierungs Zeit sortiert, aber Sie können die Tabelle mit anderen Kriterien sortieren.  
+By default, the requests in the Requests table are sorted by initiation time, but you may sort the table using other criteria.  
 
-### Nach Spalte sortieren  
+### Sort by column  
 
-Wählen Sie die Kopfzeile einer beliebigen Spalte in den Anforderungen aus, um Anforderungen nach dieser Spalte zu sortieren.  
+Select the header of any column in the Requests to sort requests by that column.  
 
-### Nach Aktivitätsphase sortieren  
+### Sort by activity phase  
 
-Wenn Sie ändern möchten, wie der Wasserfall Anforderungen sortiert, zeigen Sie auf die Kopfzeile der Tabelle Anforderungen, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), zeigen Sie mit der Maus auf **Wasserfall**, und wählen Sie eine der folgenden Optionen aus.  
+To change how the Waterfall sorts requests, hover on the header of the Requests table, open the contextual menu \(right-click\), hover over **Waterfall**, and select one of the following options.  
 
 :::row:::
    :::column span="1":::
-      **Startzeit**  
+      **Start Time**  
    :::column-end:::
    :::column span="2":::
-      Die erste Anforderung, die initiiert wurde, ist oben.  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="1":::
-      **Antwortzeit**  
-   :::column-end:::
-   :::column span="2":::
-      Die erste Anforderung, die den Download begonnen hat, ist ganz oben.  
+      The first request that was initiated is at the top.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Endzeit**  
+      **Response Time**  
    :::column-end:::
    :::column span="2":::
-      Die erste abgeschlossene Anforderung ist oben.  
+      The first request that started downloading is at the top.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Gesamtdauer**  
+      **End Time**  
    :::column-end:::
    :::column span="2":::
-      Die Anforderung mit den kürzesten Verbindungseinstellungen und der Anforderung oder Antwort ist oben.  
+      The first request that finished is at the top.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Latenz**  
+      **Total Duration**  
    :::column-end:::
    :::column span="2":::
-      Die Anforderung, die die kürzeste Zeit für eine Antwort gewartet hat, ist oben.  
+      The request with the shortest connection settings and request or response is at the top.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      **Latency**  
+   :::column-end:::
+   :::column span="2":::
+      The request that waited the shortest time for a response is at the top.  
    :::column-end:::
 :::row-end:::  
 
-Bei diesen Beschreibungen wird davon ausgegangen, dass die jeweilige Option von kürzester bis längster Position bewertet wird.  Wenn Sie die Kopfzeile der Spalte **Wasserfall** auswählen, wird die Reihenfolge umgekehrt.  
+These descriptions assume that each respective option is ranked from shortest to longest.  Selecting the header of the **Waterfall** column reverses the order.  
 
-:::image type="complex" source="../media/network-network-waterfall-total-duration.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-network-waterfall-total-duration.msft.png":::
-   Sortieren des Wasserfalls nach Gesamtdauer \ (der leichtere Teil der einzelnen Balken ist die Zeit, die gewartet wird, und der dunklere Teil ist die Zeit, die zum Herunterladen von Bytes verwendet wird \)  
+:::image type="complex" source="../media/network-network-waterfall-total-duration.msft.png" alt-text="The Network panel" lightbox="../media/network-network-waterfall-total-duration.msft.png":::
+   Sorting the Waterfall by total duration  \(The lighter portion of each bar is time spent waiting and the darker portion is time spent downloading bytes\)  
 :::image-end:::  
 
-## Analysieren von Anforderungen  
+## Analyze requests  
 
-Solange devtools geöffnet sind, werden alle Anforderungen im Netzwerk Panel protokolliert.  
-Verwenden Sie das Netzwerk Panel, um Anforderungen zu analysieren.  
+So long as DevTools are open, it logs all requests in the Network panel.  
+Use the Network panel to analyze requests.  
 
-### Anzeigen eines Protokolls der Anforderungen  
+### View a log of requests  
 
-Verwenden Sie die Tabelle "Anforderungen", um ein Protokoll aller Anforderungen anzuzeigen, die während der devtools geöffnet wurden.  Wenn Sie über Anforderungen auswählen oder darauf zeigen, werden weitere Informationen zu den einzelnen Elementen eingeblendet.  
+Use the Requests table to view a log of all requests made while DevTools have been open.  Selecting or hovering over requests reveals more information about each item.  
 
-:::image type="complex" source="../media/network-network-requests-table.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-network-requests-table.msft.png":::
-   Die Tabelle "Anforderungen"  
+:::image type="complex" source="../media/network-network-requests-table.msft.png" alt-text="The Network panel" lightbox="../media/network-network-requests-table.msft.png":::
+   The Requests table  
 :::image-end:::  
 
-In der Tabelle Anforderungen werden standardmäßig die folgenden Spalten angezeigt.  
+The Requests table displays the following columns by default.  
 
 :::row:::
    :::column span="1":::
       **Name**  
    :::column-end:::
    :::column span="2":::
-      Der Dateiname von oder ein Bezeichner für die Ressource.  
+      The filename of, or an identifier for, the resource.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -405,15 +405,15 @@ In der Tabelle Anforderungen werden standardmäßig die folgenden Spalten angeze
       **Status**  
    :::column-end:::
    :::column span="2":::
-      Der HTTP-Statuscode.  
+      The HTTP status code.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Typ**  
+      **Type**  
    :::column-end:::
    :::column span="2":::
-      Der MIME-Typ der angeforderten Ressource.  
+      The MIME type of the requested resource.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -421,12 +421,12 @@ In der Tabelle Anforderungen werden standardmäßig die folgenden Spalten angeze
       **Initiator**  
    :::column-end:::
    :::column span="2":::
-      Die folgenden Objekte oder Prozesse initiieren Anforderungen.  
+      The following objects or processes initiate requests.  
       
-      *   **Parser**  Der HTML-Parser für Microsoft Edge.  
-      *   **Umleitung**  Eine HTTP-Umleitung.  
-      *   **Skript**  Eine JavaScript-Funktion.  
-      *   **Andere**  Personen  Einige andere Prozesse oder Aktionen, wie das Navigieren zu einer Seite mithilfe eines Links oder das Eingeben einer URL in der Adressleiste.  
+      *   **Parser**  The HTML parser for Microsoft Edge.  
+      *   **Redirect**  An HTTP redirect.  
+      *   **Script**  A JavaScript function.  
+      *   **Other**  Some other process or action, such as navigating to a page using a link or entering a URL in the address bar.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -434,52 +434,52 @@ In der Tabelle Anforderungen werden standardmäßig die folgenden Spalten angeze
       **Size**  
    :::column-end:::
    :::column span="2":::
-      Die kombinierte Größe der Antwortheader sowie des Antworttexts, wie vom Server bereitgestellt.  
+      The combined size of the response headers plus the response body, as delivered by the server.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Zeit**  
+      **Time**  
    :::column-end:::
    :::column span="2":::
-      Die Gesamtdauer vom Anfang der Anforderung bis zum Empfang des letzten Bytes in der Antwort.  
+      The total duration, from the start of the request to the receipt of the final byte in the response.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      [Wasserfall](#view-the-timing-relationship-of-requests)  
+      [Waterfall](#view-the-timing-relationship-of-requests)  
    :::column-end:::
    :::column span="2":::
-      Eine visuelle Gliederung der Aktivität für jede Anforderung.  
+      A visual breakdown of the activity for each request.  
    :::column-end:::
 :::row-end:::  
 
-#### Hinzufügen oder Entfernen von Spalten  
+#### Add or remove columns  
 
-Zeigen Sie auf die Kopfzeile der Tabelle Anforderungen, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie eine Option aus, um sie auszublenden oder anzuzeigen.  Die aktuell angezeigten Optionen verfügen über Kontrollkästchen neben den einzelnen Elementen.  
+Hover on the header of the Requests table, open the contextual menu \(right-click\), and select an option to hide or show it.  Currently displayed options have checkmarks next to each item.  
 
-:::image type="complex" source="../media/network-network-requests-add-column.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-network-requests-add-column.msft.png":::
-   Hinzufügen einer Spalte zur Tabelle "Anforderungen"  
+:::image type="complex" source="../media/network-network-requests-add-column.msft.png" alt-text="The Network panel" lightbox="../media/network-network-requests-add-column.msft.png":::
+   Adding a column to the Requests table  
 :::image-end:::  
 
-#### Hinzufügen benutzerdefinierter Spalten  
+#### Add custom columns  
 
-Wenn Sie der Tabelle Anforderungen eine benutzerdefinierte Spalte hinzufügen möchten, zeigen Sie auf die Kopfzeile der Tabelle Anforderungen, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie **Antwortheader**  >  **Verwalten von Kopfzeilen Spalten**aus.  
+To add a custom column to the Requests table, hover on the header of the Requests table, open the contextual menu \(right-click\), and select **Response Headers** > **Manage Header Columns**.  
 
-:::image type="complex" source="../media/network-network-requests-add-custom.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-network-requests-add-custom.msft.png":::
-   Hinzufügen einer benutzerdefinierten Spalte zur Tabelle "Anforderungen"  
+:::image type="complex" source="../media/network-network-requests-add-custom.msft.png" alt-text="The Network panel" lightbox="../media/network-network-requests-add-custom.msft.png":::
+   Adding a custom column to the Requests table  
 :::image-end:::  
 
-### Anzeigen der Zeit Steuerungsbeziehung von Anforderungen  
+### View the timing relationship of requests  
 
-Verwenden Sie den Wasserfall, um die Timing-Beziehungen von Anforderungen anzuzeigen.  
-Die Standardorganisation des Wasserfalls verwendet die Startzeit der Anforderungen.  
-Anforderungen, die weiter Links sind, wurden früher als die Anforderungen weiter rechts gestartet.  
+Use the Waterfall to view the timing relationships of requests.  
+The default organization of the Waterfall uses the start time of the requests.  
+So, requests that are farther to the left started earlier than the requests that are farther to the right.  
 
-Wenn Sie die verschiedenen Möglichkeiten zum Sortieren des Wasserfalls überprüfen möchten, navigieren Sie zu nach [Aktivitätsphase sortieren](#sort-by-activity-phase).  
+To review the different ways that you may sort the Waterfall, navigate to [Sort by activity phase](#sort-by-activity-phase).  
 
-:::image type="complex" source="../media/network-network-requests-waterfall.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-network-requests-waterfall.msft.png":::
-   Spalte "Wasserfall" im Bereich " **Anforderungen** "  
+:::image type="complex" source="../media/network-network-requests-waterfall.msft.png" alt-text="The Network panel" lightbox="../media/network-network-requests-waterfall.msft.png":::
+   The Waterfall column of the **Requests** pane  
 :::image-end:::  
 
 <!-- ### Analyze the frames of a WebSocket Connection  -->
@@ -492,7 +492,7 @@ Wenn Sie die verschiedenen Möglichkeiten zum Sortieren des Wasserfalls überpr�
 To refresh the table, re-select the name of the WebSocket connection under the **Name** column of the Requests table.  -->
 
 <!--
-:::image type="complex" source="../media/network-frames.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-frames.msft.png":::
+:::image type="complex" source="../media/network-frames.msft.png" alt-text="The Network panel" lightbox="../media/network-frames.msft.png":::
    The **Frames** tab  
 :::image-end:::  
 -->
@@ -510,267 +510,267 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 *   WebSocket opcodes are light-yellow.  
 *   Errors are light-red.  -->
 
-### Anzeigen einer Vorschau eines Antworttexts  
+### View a preview of a response body  
 
-Führen Sie die folgenden Schritte aus, um eine Vorschau eines Antworttexts anzuzeigen.  
+To view a preview of a response body, use the following steps.  
 
-1.  Wählen Sie die URL der Anforderung unter der Spalte **Name** der Tabelle Anforderungen aus.  
-1.  Wählen Sie die Registerkarte **Vorschau** aus.  
+1.  Select the URL of the request, under the **Name** column of the Requests table.  
+1.  Select the **Preview** tab.  
 
-Diese Registerkarte ist hauptsächlich für die Anzeige von Bildern hilfreich.  
+This tab is mostly useful for viewing images.  
 
-:::image type="complex" source="../media/network-network-resources-preview.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-network-resources-preview.msft.png":::
-   Registerkarte " **Vorschau** "  
+:::image type="complex" source="../media/network-network-resources-preview.msft.png" alt-text="The Network panel" lightbox="../media/network-network-resources-preview.msft.png":::
+   The **Preview** tab  
 :::image-end:::  
 
-### Anzeigen eines Antworttexts  
+### View a response body  
 
-Führen Sie die folgenden Schritte aus, um den Antworttext für eine Anforderung anzuzeigen.  
+To view the response body to a request, use the following steps.  
 
-1.  Wählen Sie die URL der Anforderung unter der Spalte **Name** der Tabelle Anforderungen aus.  
-1.  Wählen Sie die Registerkarte **Antwort** aus.  
+1.  Select the URL of the request, under the **Name** column of the Requests table.  
+1.  Select the **Response** tab.  
 
-:::image type="complex" source="../media/network-network-resources-response.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-network-resources-response.msft.png":::
-   Die Registerkarte " **Antwort** "  
+:::image type="complex" source="../media/network-network-resources-response.msft.png" alt-text="The Network panel" lightbox="../media/network-network-resources-response.msft.png":::
+   The **Response** tab  
 :::image-end:::  
 
-### Anzeigen von HTTP-Headern  
+### View HTTP headers  
 
-Führen Sie die folgenden Schritte aus, um die HTTP-Header Daten zu einer Anforderung anzuzeigen.  
+To view HTTP header data about a request, use the following steps.  
 
-1.  Wählen Sie die URL der Anforderung unter der Spalte **Name** der Tabelle Anforderungen aus.  
-1.  Wählen Sie die Registerkarte über **Schriften** aus.  
+1.  Select the URL of the request, under the **Name** column of the Requests table.  
+1.  Select the **Headers** tab.  
 
-:::image type="complex" source="../media/network-resources-headers.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-resources-headers.msft.png":::
-   Die Registerkarte "über **Schriften** "  
+:::image type="complex" source="../media/network-resources-headers.msft.png" alt-text="The Network panel" lightbox="../media/network-resources-headers.msft.png":::
+   The **Headers** tab  
 :::image-end:::  
 
-#### Anzeigen der HTTP-Header Quelle  
+#### View HTTP header source  
 
-Standardmäßig werden auf der Registerkarte Kopfzeilennamen in alphabetischer Reihenfolge angezeigt.  Führen Sie die folgenden Schritte aus, um die HTTP-Headernamen in der eingegangenen Reihenfolge anzuzeigen.  
+By default, the Headers tab shows header names alphabetically.  To view the HTTP header names in the order received, use the following steps.  
 
-1.  Öffnen Sie die Registerkarte über **Schriften** für die Anforderung, die Sie interessiert.  Weitere Informationen finden Sie unter [Anzeigen von HTTP-Kopfzeilen](#view-http-headers).  
-1.  Wählen Sie **Quelle anzeigen**neben dem Abschnitt **Anforderungs Kopfzeile** oder **Antwort Kopf** aus.  
+1.  Open the **Headers** tab for the request that interests you.  For more information, navigate to [View HTTP headers](#view-http-headers).  
+1.  Select **view source**, next to the **Request Header** or **Response Header** section.  
 
-### Anzeigen von Abfragezeichenfolgenparametern  
+### View query string parameters  
 
-Führen Sie die folgenden Schritte aus, um die Abfragezeichenfolgenparameter einer URL in einem menschlich lesbaren Format anzuzeigen.  
+To view the query string parameters of a URL in a human-readable format, use the following steps.  
 
-1.  Öffnen Sie die Registerkarte über **Schriften** für die Anforderung, die Sie interessiert.  Weitere Informationen finden Sie unter [Anzeigen von HTTP-Kopfzeilen](#view-http-headers).  
-1.  Wechseln Sie zum Abschnitt **Abfragezeichenfolgenparameter** .  
+1.  Open the **Headers** tab for the request that interests you.  For more information, navigate to [View HTTP headers](#view-http-headers).  
+1.  Go to the **Query String Parameters** section.  
 
-:::image type="complex" source="../media/network-network-resources-headers-query-string-parameters.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-network-resources-headers-query-string-parameters.msft.png":::
-   Der **Abfragezeichenfolgenparameter** Abschnitt  
+:::image type="complex" source="../media/network-network-resources-headers-query-string-parameters.msft.png" alt-text="The Network panel" lightbox="../media/network-network-resources-headers-query-string-parameters.msft.png":::
+   The **Query String Parameters** section  
 :::image-end:::  
 
-#### Anzeigen der Parameterquelle für Abfragezeichenfolgen  
+#### View query string parameters source  
 
-Führen Sie die folgenden Schritte aus, um die Abfragezeichenfolgenparameter Quelle einer Anforderung anzuzeigen.  
+To view the query string parameter source of a request, use the following steps.  
 
-1.  Wechseln Sie zum Abschnitt Abfragezeichenfolgenparameter.  Weitere Informationen finden Sie unter [Anzeigen von Abfragezeichenfolgenparametern](#view-query-string-parameters).  
-1.  Wählen Sie **Quelltext anzeigen**aus.  
+1.  Go to the Query String Parameters section.  For more information, navigate to [View query string parameters](#view-query-string-parameters).  
+1.  Select **view source**.  
 
-#### Anzeigen von URL-codierten Abfragezeichenfolgenparametern  
+#### View URL-encoded query string parameters  
 
-Führen Sie die folgenden Schritte aus, um Abfragezeichenfolgenparameter in einem menschlich lesbaren Format anzuzeigen, jedoch mit erhaltenen Codierungen.  
+To view query string parameters in a human-readable format, but with encodings preserved, use the following steps.  
 
-1.  Wechseln Sie zum Abschnitt Abfragezeichenfolgenparameter.  Weitere Informationen finden Sie unter [Anzeigen von Abfragezeichenfolgenparametern](#view-query-string-parameters).  
-1.  Wählen Sie **URL-codiert anzeigen**aus.  
+1.  Go to the Query String Parameters section.  For more information, navigate to [View query string parameters](#view-query-string-parameters).  
+1.  Select **view URL encoded**.  
 
-### Cookies anzeigen  
+### View cookies  
 
-Führen Sie die folgenden Schritte aus, um die im HTTP-Header einer Anforderung gesendeten Cookies anzuzeigen.  
+To view the cookies sent in the HTTP header of a request, use the following steps.  
 
-1.  Wählen Sie die URL der Anforderung unter der Spalte **Name** der Tabelle Anforderungen aus.  
-1.  Wählen Sie die Registerkarte **Cookies** aus.  
+1.  Select the URL of the request, under the **Name** column of the Requests table.  
+1.  Select the **Cookies** tab.  
 
 <!--For more information about each of the columns, navigate to [Fields][ManageDataCookiesFields].  -->  
 
 <!--[ManageDataCookiesFields]: manage-data/cookies#fields  -->  
 <!--TODO: add link when section is available -->  
 
-:::image type="complex" source="../media/network-network-resources-cookies.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-network-resources-cookies.msft.png":::
-   Die Registerkarte "Cookies"  
+:::image type="complex" source="../media/network-network-resources-cookies.msft.png" alt-text="The Network panel" lightbox="../media/network-network-resources-cookies.msft.png":::
+   The Cookies tab  
 :::image-end:::  
 
-### Anzeigen der Zeit Plan Aufteilung einer Anforderung  
+### View the timing breakdown of a request  
 
-Führen Sie die folgenden Schritte aus, um die Anzeigedauer einer Anforderung anzuzeigen.  
+To view the timing breakdown of a request, use the following steps.  
 
-1.  Wählen Sie die URL der Anforderung unter der Spalte **Name** der Tabelle Anforderungen aus.  
-1.  Wählen Sie die Registerkarte **Anzeige** Dauer aus.  
+1.  Select the URL of the request, under the **Name** column of the Requests table.  
+1.  Select the **Timing** tab.  
 
-Um eine schnellere Möglichkeit für den Zugriff auf die Daten zu erhalten, navigieren Sie zu [Vorschau einer Anzeige](#preview-a-timing-breakdown)Dauer.  
+For a faster way to access the data, navigate to [Preview a timing breakdown](#preview-a-timing-breakdown).  
 
-Weitere Informationen zu den einzelnen Phasen, die möglicherweise auf der Registerkarte **Anzeige** Dauer angezeigt werden, finden Sie unter [erläuterte](#timing-breakdown-phases-explained)Phasen der Anzeigedauer.  
+For more information about each of the phases that may be displayed in the **Timing** tab, navigate to [Timing breakdown phases explained](#timing-breakdown-phases-explained).  
 
-:::image type="complex" source="../media/network-network-resources-timing.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-network-resources-timing.msft.png":::
-   Registerkarte " **Anzeige** Dauer"  
+:::image type="complex" source="../media/network-network-resources-timing.msft.png" alt-text="The Network panel" lightbox="../media/network-network-resources-timing.msft.png":::
+   The **Timing** tab  
 :::image-end:::  
 
-Weitere Informationen zu den einzelnen Phasen.  
+More information about each of the phases.  
 
-Weitere Informationen zum Zugriff auf die Ansicht finden Sie unter [Aufschlüsselung](#view-the-timing-breakdown-of-a-request)der Anzeigedauer.  
+For more information about accessing the view, navigate to [View timing breakdown](#view-the-timing-breakdown-of-a-request).  
 
-#### Anzeigen einer Vorschau einer Anzeigedauer  
+#### Preview a timing breakdown  
 
-Wenn Sie eine Vorschau der Zeit Plan Aufteilung einer Anforderung anzeigen möchten, zeigen Sie in der Spalte **Wasserfall** der Tabelle Anforderungen auf den Eintrag für die Anforderung.  
+To view a preview of the timing breakdown of a request, in the **Waterfall** column of the Requests table, hover on the entry for the request.  
 
-Weitere Informationen dazu, wie Sie auf die Daten zugreifen können, ohne zu schweben, finden Sie unter [Anzeigen der Anzeigedauer einer Anforderung](#view-the-timing-breakdown-of-a-request).  
+For more information about how to access the data without hovering, navigate to [View the timing breakdown of a request](#view-the-timing-breakdown-of-a-request).  
 
-:::image type="complex" source="../media/network-network-resources-waterfall-hover.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-network-resources-waterfall-hover.msft.png":::
-   Anzeigen einer Vorschau der Anzeigedauer einer Anforderung  
+:::image type="complex" source="../media/network-network-resources-waterfall-hover.msft.png" alt-text="The Network panel" lightbox="../media/network-network-resources-waterfall-hover.msft.png":::
+   Previewing the timing breakdown of a request  
 :::image-end:::  
 
-#### Erläuterte Phasen Aufgliederungs Phasen  
+#### Timing breakdown phases explained  
 
-Weitere Informationen zu den einzelnen Phasen **, die auf der Registerkarte** Anzeigedauer angezeigt werden können.  
+More information about each of the phases that may display in the **Timing** tab.  
 
 :::row:::
    :::column span="1":::
       **Queueing**  
    :::column-end:::
    :::column span="2":::
-      Der Browser Warteschlangenanforderungen, wenn eine der folgenden Bedingungen erfüllt ist.  
-      *   Anforderungen mit höherer Priorität bestehen.  
-      *   Sechs TCP-Verbindungen sind für denselben Ursprung geöffnet, was die Grenze ist.  Gilt nur für HTTP/1.0 und HTTP/1.1.  
-      *   Der Browser reserviert kurzzeitig Speicherplatz im Datenträgercache.  
+      The browser queues requests when any of the following are true.  
+      *   Higher priority requests exist.  
+      *   Six TCP connections are open for the same origin, which is the limit.  Applies to HTTP/1.0 and HTTP/1.1 only.  
+      *   The browser is briefly allocating space in the disk cache.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Blockiert**  
+      **Stalled**  
    :::column-end:::
    :::column span="2":::
-      Die Anforderung wird aus den in der **Warteschlange**beschriebenen Gründen angehalten.  
+      The request is stalled for any of the reasons described in **Queueing**.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **DNS-Lookup**  
+      **DNS Lookup**  
    :::column-end:::
    :::column span="2":::
-      Der Browser löst die IP-Adresse für die Anforderung auf.  
+      The browser is resolving the IP address for the request.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Anfängliche Verbindung**  
+      **Initial connection**  
    :::column-end:::
    :::column span="2":::
-      Der Browser stellt eine Verbindung her, einschließlich TCP-Handshakes, TCP-Wiederholungen und verhandelt eine sichere Socketebene.
+      The browser establishes a connection including TCP handshakes, TCP retries, and negotiates a Secure Socket Layer.
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Proxy Verhandlung**  
+      **Proxy negotiation**  
    :::column-end:::
    :::column span="2":::
-      Der Browser verhandelt die Anforderung mit einem [Proxy Server][WikiProxyServer].  
+      The browser is negotiating the request with a [proxy server][WikiProxyServer].  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Anfrage gesendet**  
+      **Request sent**  
    :::column-end:::
    :::column span="2":::
-      Die Anfrage wird gesendet.  
+      The request is being sent.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **ServiceWorker-Vorbereitung**  
+      **ServiceWorker Preparation**  
    :::column-end:::
    :::column span="2":::
-      Der Browser startet den Dienstmitarbeiter.  
+      The browser is starting the service worker.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Anforderung an ServiceWorker**  
+      **Request to ServiceWorker**  
    :::column-end:::
    :::column span="2":::
-      Die Anforderung wird an den Dienstmitarbeiter gesendet.  
+      The request is being sent to the service worker.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Waiting \ (TTFB \)**  
+      **Waiting \(TTFB\)**  
    :::column-end:::
    :::column span="2":::
-      Der Browser wartet auf das erste Byte einer Antwort.  TTFB steht für Time to First Byte.  Dieser Zeitpunkt umfasst eine Roundtrip-Wartezeit und die Zeitdauer, die der Server zum Vorbereiten der Antwort benötigte.  
+      The browser is waiting for the first byte of a response.  TTFB stands for Time To First Byte.  This timing includes one round trip of latency and the time the server took to prepare the response.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Herunterladen von Inhalten**  
+      **Content Download**  
    :::column-end:::
    :::column span="2":::
-      Der Browser empfängt die Antwort.  
+      The browser is receiving the response.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Empfangen von Push**  
+      **Receiving Push**  
    :::column-end:::
    :::column span="2":::
-      Der Browser empfängt Daten für diese Antwort über http/2 Server Push.  
+      The browser is receiving data for this response via HTTP/2 Server Push.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Lese Push**  
+      **Reading Push**  
    :::column-end:::
    :::column span="2":::
-      Der Browser liest die zuvor empfangenen lokalen Daten.  
+      The browser is reading the local data previously received.  
    :::column-end:::
 :::row-end:::  
 
-### Anzeigen von Initiatoren und Abhängigkeiten  
+### View initiators and dependencies  
 
-Wenn Sie die Initiatoren und Abhängigkeiten einer Anforderung anzeigen möchten, halten Sie `Shift` die Anforderung in der Tabelle Anforderungen gedrückt, und zeigen Sie darauf.  DevTools Farben: Initiatoren werden in grün angezeigt, und Abhängigkeiten werden in rot angezeigt.  
+To view the initiators and dependencies of a request, hold `Shift`and hover over the request in the Requests table.  DevTools colors: initiators are shown in green and dependencies are shown in red.  
 
-:::image type="complex" source="../media/network-network-resources-initiators-dependencies.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-network-resources-initiators-dependencies.msft.png":::
-   Anzeigen der Initiatoren und Abhängigkeiten einer Anforderung  
+:::image type="complex" source="../media/network-network-resources-initiators-dependencies.msft.png" alt-text="The Network panel" lightbox="../media/network-network-resources-initiators-dependencies.msft.png":::
+   Viewing the initiators and dependencies of a request  
 :::image-end:::  
 
-Wenn die Anforderungstabelle chronologisch geordnet ist, wenn Sie auf eine Zeile zeigen, wird in der davor liegenden Zeile eine grüne Anforderung angezeigt.  Die grüne Anforderung ist der Initiator der Abhängigkeit.  Wenn zuvor eine andere grüne Anforderung in der Zeile angezeigt wird, ist diese höhere Anforderung der Initiator des Initiators.  Und so weiter.  
+When the Requests table is ordered chronologically, if you hover on a line, the line preceding it displays a green request.  The green request is the initiator of the dependency.  If another green request is displayed on the line before that, that higher request is the initiator of the initiator.  And so on.  
 
-### Laden Ereignisse anzeigen  
+### View load events  
 
-DevTools zeigt die Anzeigedauer der `DOMContentLoaded` `load` Ereignisse und Ereignisse an mehreren Stellen im Netzwerk Panel an.  Das `DOMContentLoaded` Ereignis ist blau gefärbt, und das `load` Ereignis ist rot.  
+DevTools displays the timing of the `DOMContentLoaded` and `load` events in multiple places on the Network panel.  The `DOMContentLoaded` event is colored blue, and the `load` event is red.  
 
-:::image type="complex" source="../media/network-network-requests-load-events.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-network-requests-load-events.msft.png":::
-   Die Speicherorte der `DOMContentLoaded` und- `load` Ereignisse im Netzwerk Panel  
+:::image type="complex" source="../media/network-network-requests-load-events.msft.png" alt-text="The Network panel" lightbox="../media/network-network-requests-load-events.msft.png":::
+   The locations of the `DOMContentLoaded` and `load` events on the Network panel  
 :::image-end:::  
 
-### Anzeigen der Gesamtzahl der Anforderungen  
+### View the total number of requests  
 
-Die Gesamtzahl der Anforderungen wird im Bereich "Zusammenfassung" unten im Netzwerkbereich aufgelistet.  
+The total number of requests is listed in the Summary pane, at the bottom of the Network panel.  
 
 > [!CAUTION]
-> Diese Nummer verfolgt nur Anforderungen, die seit dem Öffnen von devtools protokolliert wurden.  Wenn vor dem Öffnen von devtools andere Anforderungen aufgetreten sind, werden diese Anforderungen nicht gezählt.  
+> This number only tracks requests that have been logged since DevTools was opened.  If other requests occurred before DevTools was opened, those requests are not counted.  
 
-:::image type="complex" source="../media/network-network-total-requests.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-network-total-requests.msft.png":::
-   Die Gesamtzahl der Anforderungen seit dem Öffnen von devtools  
+:::image type="complex" source="../media/network-network-total-requests.msft.png" alt-text="The Network panel" lightbox="../media/network-network-total-requests.msft.png":::
+   The total number of requests since DevTools were opened  
 :::image-end:::  
 
-### Anzeigen der Gesamtgröße des Downloads  
+### View the total download size  
 
-Die Gesamtgröße der Downloadanforderungen wird im Bereich "Zusammenfassung" am unteren Rand des Netzwerkbereichs angezeigt.  
+The total download size of requests is listed in the Summary pane, at the bottom of the Network panel.  
 
 > [!CAUTION]
-> Diese Nummer verfolgt nur Anforderungen, die seit dem Öffnen von devtools protokolliert wurden.  Wenn vor dem Öffnen von devtools andere Anforderungen aufgetreten sind, werden die vorherigen Anforderungen nicht gezählt.  
+> This number only tracks requests that have been logged since DevTools was opened.  If other requests occurred before DevTools was opened, the previous requests are not counted.  
 
-:::image type="complex" source="../media/network-network-total-download-size.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-network-total-download-size.msft.png":::
-   Die Gesamtgröße der Downloads von Anforderungen  
+:::image type="complex" source="../media/network-network-total-download-size.msft.png" alt-text="The Network panel" lightbox="../media/network-network-total-download-size.msft.png":::
+   The total download size of requests  
 :::image-end:::  
 
-Navigieren Sie zum [Anzeigen der unkomprimierten Größe einer Ressource](#view-the-uncompressed-size-of-a-resource), um zu überprüfen, wie umfangreiche Ressourcen sind, nachdem der Browser die einzelnen Elemente dekomprimiert hat.  
+To verify how large resources are after the browser uncompresses each item, navigate to [View the uncompressed size of a resource](#view-the-uncompressed-size-of-a-resource).  
 
-### Anzeigen der Stapelüberwachung, die eine Anforderung verursacht hat  
+### View the stack trace that caused a request  
 
-Nachdem eine JavaScript-Anweisung eine Ressource angefordert hat, zeigen Sie mit der Maus auf die Spalte **Initiator** , um die Stapelüberwachung anzuzeigen, die zur Anforderung führt.  
+After a JavaScript statement requests a resource, hover over the **Initiator** column to view the stack trace leading up to the request.  
 
 <!-- [codepen.io/contoso/pen/yLBrOWa?editors=0010#0](https://codepen.io/contoso/pen/yLBrOWa?editors=0010#0) -->  
 
@@ -788,60 +788,60 @@ init();
 ```  
 -->  
 
-:::image type="complex" source="../media/network-network-requests-initiator-stack.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-network-requests-initiator-stack.msft.png":::
-   Die Stapelüberwachung, die zu einer Ressourcenanforderung führt  
+:::image type="complex" source="../media/network-network-requests-initiator-stack.msft.png" alt-text="The Network panel" lightbox="../media/network-network-requests-initiator-stack.msft.png":::
+   The stack trace leading up to a resource request  
 :::image-end:::  
 
-### Anzeigen der unkomprimierten Größe einer Ressource  
+### View the uncompressed size of a resource  
 
-Aktivieren Sie das Kontrollkästchen **große Anforderungs Zeilen verwenden** , und schauen Sie sich den niedrigsten Wert der Spalte **Größe** an.  
+Select the **Use large request rows** checkbox and then look at the bottom value of the **Size** column.  
 
-:::image type="complex" source="../media/network-network-requests-uncompressed-compare.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-network-requests-uncompressed-compare.msft.png":::
-   Ein Beispiel für unkomprimierte Ressourcen \ (die komprimierte Größe der `jquery-3.3.1.min.js` Datei, die über das Netzwerk gesendet wurde `29.9 KB` , während die unkomprimierte Größe `84.9 KB` \) war  
+:::image type="complex" source="../media/network-network-requests-uncompressed-compare.msft.png" alt-text="The Network panel" lightbox="../media/network-network-requests-uncompressed-compare.msft.png":::
+   An example of uncompressed resources  \(The compressed size of the `jquery-3.3.1.min.js` file that was sent over the network was `29.9 KB`, whereas the uncompressed size was `84.9 KB`\)  
 :::image-end:::  
 
-## Exportieren von Anforderungsdaten  
+## Export requests data  
 
-### Speichern aller Netzwerkanforderungen in einer har-Datei  
+### Save all network requests to a HAR file  
 
-Führen Sie die folgenden Schritte aus, um alle Netzwerkanforderungen in einer har-Datei zu speichern.  
+To save all network requests to a HAR file, complete the following steps.  
 
-1.  Zeigen Sie auf jede Anforderung in der Tabelle Anforderungen, und öffnen Sie das Kontextmenü \ (mit der rechten Maustaste auf \).  
-1.  Wählen Sie **als har mit Inhalt speichern**aus.  DevTools speichert alle Anforderungen, die seit dem Öffnen von devtools in der har-Datei aufgetreten sind.  Sie können keine Anforderungen filtern.  Sie können auch keine einzelne Anfrage speichern.  
+1.  Hover on any request in the Requests table and open the contextual menu \(right-click\).  
+1.  Select **Save as HAR with Content**.  DevTools saves all requests that have occurred since you opened DevTools to the HAR file.  You are not able to filter requests.  You are also not able to save a single request.  
 
-Nachdem Sie eine har-Datei gespeichert haben, können Sie Sie für die Analyse wieder in devtools importieren.  Ziehen Sie die har-Datei einfach per Drag & Drop in die Tabelle "Anforderungen".  
+Once you save a HAR file, you may import it back into DevTools for analysis.  Just drag-and-drop the HAR file into the Requests table.  
 <!--For more information, navigate to also [HAR Analyzer][HARAnalyzer].  -->  
 
 <!--[HARAnalyzer]: https://toolbox.alphabetapps.com/apps/har_analyzer  -->  
 <!--Todo: add section link when content is available  -->  
 
-:::image type="complex" source="../media/network-network-requests-save-har-content.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-network-requests-save-har-content.msft.png":::
-   Auswählen **von "als har mit Inhalt speichern** "  
+:::image type="complex" source="../media/network-network-requests-save-har-content.msft.png" alt-text="The Network panel" lightbox="../media/network-network-requests-save-har-content.msft.png":::
+   Selecting **Save as HAR with Content**  
 :::image-end:::  
 
-### Kopieren einer oder mehrerer Anforderungen in die Zwischenablage  
+### Copy one or more requests to the clipboard  
 
-Zeigen Sie unter der Spalte **Name** der Tabelle Anforderungen auf eine Anforderung, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), zeigen Sie auf **Kopieren**, und wählen Sie eine der folgenden Optionen aus.  
+Under the **Name** column of the Requests table, hover on a request, open the contextual menu \(right-click\), hover over **Copy**, and select one of the following options.  
 
 :::row:::
    :::column span="1":::
-      **Link Adresse kopieren**  
+      **Copy Link Address**  
    :::column-end:::
    :::column span="2":::
-      Kopieren Sie die URL der Anforderung in die Zwischenablage.  
+      Copy the URL of the request to the clipboard.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Antwort kopieren**  
+      **Copy Response**  
    :::column-end:::
    :::column span="2":::
-      Kopieren Sie den Antworttext in die Zwischenablage.  
+      Copy the response body to the clipboard.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Als FETCH kopieren**  
+      **Copy as Fetch**  
    :::column-end:::
    :::column span="2":::
       &nbsp;  
@@ -849,15 +849,15 @@ Zeigen Sie unter der Spalte **Name** der Tabelle Anforderungen auf eine Anforder
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Als curl kopieren**  
+      **Copy as cURL**  
    :::column-end:::
    :::column span="2":::
-      Kopieren Sie die Anforderung als curl-Befehl.  
+      Copy the request as a cURL command.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Alle als FETCH kopieren**  
+      **Copy All as Fetch**  
    :::column-end:::
    :::column span="2":::
       &nbsp;  
@@ -865,58 +865,58 @@ Zeigen Sie unter der Spalte **Name** der Tabelle Anforderungen auf eine Anforder
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Alle als curl kopieren**  
+      **Copy All as cURL**  
    :::column-end:::
    :::column span="2":::
-      Kopieren Sie alle Anforderungen als eine Kette von curl-Befehlen.  
+      Copy all requests as a chain of cURL commands.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Alle als har kopieren**  
+      **Copy All as HAR**  
    :::column-end:::
    :::column span="2":::
-      Kopieren Sie alle Anforderungen als har-Daten.  
+      Copy all requests as HAR data.  
    :::column-end:::
 :::row-end:::  
 
-:::image type="complex" source="../media/network-network-requests-copy-response.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-network-requests-copy-response.msft.png":::
-   Auswählen von " **Antwort kopieren** "  
+:::image type="complex" source="../media/network-network-requests-copy-response.msft.png" alt-text="The Network panel" lightbox="../media/network-network-requests-copy-response.msft.png":::
+   Selecting **Copy Response**  
 :::image-end:::  
 
-## Ändern des Layouts des Netzwerk Panels  
+## Change the layout of the Network panel  
 
-Sie können Abschnitte der Netzwerk Panel-UI erweitern oder reduzieren, um wichtige Informationen zu konzentrieren.  
+You may expand or collapse sections of the Network panel UI to focus important information.  
 
-### Ausblenden des Bereichs "Filter"  
+### Hide the Filters pane  
 
-Standardmäßig zeigt devtools den **Bereich "Filter"** an.  
-Wählen Sie **Filter** \ ( ![ Filter ][ImageFilterIcon] \) aus, um sie auszublenden.  
+By default, DevTools show the **Filters pane**.  
+Select **Filter** \(![Filter][ImageFilterIcon]\) to hide it.  
 
-:::image type="complex" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
-   Schaltfläche "Filter ausblenden"  
+:::image type="complex" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text="The Network panel" lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
+   The Hide Filters button  
 :::image-end:::  
 
-### Verwenden von umfangreichen Anforderungs Zeilen  
+### Use large request rows  
 
-Verwenden Sie große Zeilen, wenn in Ihrer Netzwerk Anforderungstabelle mehr Leerzeichen verwendet werden sollen.  Einige Spalten liefern auch ein wenig mehr Informationen, wenn Sie große Zeilen verwenden.  Der untere Wert der Spalte **size** entspricht beispielsweise der unkomprimierten Größe einer Anforderung.  
+Use large rows when you want more whitespace in your network requests table.  Some columns also provide a little more information when using large rows.  For example, the bottom value of the **Size** column is the uncompressed size of a request.  
 
-:::image type="complex" source="../media/network-network-requests-large-request-rows.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-network-requests-large-request-rows.msft.png":::
-   Ein Beispiel für große Anforderungs Zeilen im Bereich " **Anforderungen** "  
+:::image type="complex" source="../media/network-network-requests-large-request-rows.msft.png" alt-text="The Network panel" lightbox="../media/network-network-requests-large-request-rows.msft.png":::
+   An example of large request rows in the **Requests** pane  
 :::image-end:::  
 
-Aktivieren Sie das Kontrollkästchen **große Anforderungs Zeilen verwenden** , um große Zeilen zu aktivieren.  
+Select the **Use large request rows** checkbox to enable large rows.  
 
-:::image type="complex" source="../media/network-network-requests-use-large-request-rows-on.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-network-requests-use-large-request-rows-on.msft.png":::
-   Das Kontrollkästchen " **große Anforderungs Zeilen verwenden** "  
+:::image type="complex" source="../media/network-network-requests-use-large-request-rows-on.msft.png" alt-text="The Network panel" lightbox="../media/network-network-requests-use-large-request-rows-on.msft.png":::
+   The **Use large request rows** checkbox  
 :::image-end:::  
 
-### Ausblenden des Bereichs "Übersicht"  
+### Hide the Overview pane  
 
-Standardmäßig zeigt devtools den **Bereich "Übersicht"** an.  Deaktivieren Sie das Kontrollkästchen " **Übersicht anzeigen** ", um es auszublenden.  
+By default, DevTools show the **Overview pane**.  Deselect the **Show Overview** checkbox to hide it.  
 
-:::image type="complex" source="../media/network-network-requests-show-overview-off.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-network-requests-show-overview-off.msft.png":::
-   Kontrollkästchen ' **Übersicht anzeigen** '  
+:::image type="complex" source="../media/network-network-requests-show-overview-off.msft.png" alt-text="The Network panel" lightbox="../media/network-network-requests-show-overview-off.msft.png":::
+   The **Show Overview** checkbox  
 :::image-end:::  
 
 <!-- image links -->  
@@ -930,20 +930,20 @@ Standardmäßig zeigt devtools den **Bereich "Übersicht"** an.  Deaktivieren Si
 
 <!-- links -->  
 
-[DevtoolsProgressiveWebApps]: ../progressive-web-apps.md "Debuggen von progressiven Web-Apps | Microsoft docs"  
+[DevtoolsProgressiveWebApps]: ../progressive-web-apps.md "Debug Progressive Web Apps | Microsoft Docs"  
 
 <!--[NetworkConditions]: /microsoft-edge/devtools-guide-chromium/network/network-conditions "Optimize Performance Under Varying Network Conditions | Microsoft Docs"  -->  
 
-[MDNHTTPDataURIs]: https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/Data_URIs "Daten-URLs | MDN"  
+[MDNHTTPDataURIs]: https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/Data_URIs "Data URLs | MDN"  
 
-[WikiProxyServer]: https://en.wikipedia.org/wiki/Proxy_server "Proxy Server – Wikipedia"  
+[WikiProxyServer]: https://en.wikipedia.org/wiki/Proxy_server "Proxy server - Wikipedia"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
-> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/network/reference) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
+> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/network/reference) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
-Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
+This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
