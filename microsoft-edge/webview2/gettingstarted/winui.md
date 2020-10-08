@@ -47,7 +47,7 @@ ms.locfileid: "10934898"
     *   <span data-ttu-id="54760-126">Zielversion: **Windows 10, Version 1903 (Build 18362)** oder höher</span><span class="sxs-lookup"><span data-stu-id="54760-126">Target version: **Windows 10, version 1903 (build 18362)** or later.</span></span>  
     *   <span data-ttu-id="54760-127">Minimale Version: **Windows 10, Version 1803 (Build 17134)**.</span><span class="sxs-lookup"><span data-stu-id="54760-127">Minimum version: **Windows 10, version 1803 (build 17134)**.</span></span>  
     
-    :::image type="complex" source="./media/winui-gettingstarted-projecttype.png" alt-text="Das neue Dialogfeld "universelle Windows-Plattform" mit ausgewählten Werten für Zielversion und Mindestversion." lightbox="./media/winui-gettingstarted-projecttype.png":::
+    :::image type="complex" source="./media/winui-gettingstarted-projecttype.png" alt-text="Dialogfeld zum Erstellen von Visual Studio-Projekten für WinUI" lightbox="./media/winui-gettingstarted-projecttype.png":::
        <span data-ttu-id="54760-129">Das neue Dialogfeld "universelle Windows-Plattform" mit ausgewählten Werten für Zielversion und Mindestversion.</span><span class="sxs-lookup"><span data-stu-id="54760-129">The New Universal Windows Platform Project dialog with selected values for Target version and Minimum version.</span></span>
     :::image-end:::  
     
@@ -117,7 +117,7 @@ ms.locfileid: "10934898"
     
 1.  <span data-ttu-id="54760-150">Wählen Sie aus `F5` , um Ihr Projekt zu erstellen und auszuführen.</span><span class="sxs-lookup"><span data-stu-id="54760-150">Select `F5` to build and run your project.</span></span>  <span data-ttu-id="54760-151">Vergewissern Sie sich, dass Ihr WebView2-Steuerelement angezeigt wird [https://www.microsoft.com][|::ref1::|Main] .</span><span class="sxs-lookup"><span data-stu-id="54760-151">Confirm that your WebView2 control displays [https://www.microsoft.com][|::ref1::|Main].</span></span>  
     
-    :::image type="complex" source="./media/winui-gettingstarted-part3.png" alt-text="Ein WebView2-Steuerelement, das die Microsoft.com-Website anzeigt" lightbox="./media/winui-gettingstarted-part3.png":::
+    :::image type="complex" source="./media/winui-gettingstarted-part3.png" alt-text="Dialogfeld zum Erstellen von Visual Studio-Projekten für WinUI" lightbox="./media/winui-gettingstarted-part3.png":::
        <span data-ttu-id="54760-153">Ein WebView2-Steuerelement, das die Microsoft.com-Website anzeigt.</span><span class="sxs-lookup"><span data-stu-id="54760-153">A WebView2 control displaying the microsoft.com site.</span></span>  
     :::image-end:::  
     
@@ -177,7 +177,7 @@ ms.locfileid: "10934898"
     > [!NOTE]
     > <span data-ttu-id="54760-162">Stellen Sie sicher, dass Sie vollständige URLs in der Adressleiste verwenden.</span><span class="sxs-lookup"><span data-stu-id="54760-162">Ensure you use complete URLs in the address bar.</span></span> `ArgumentException` <span data-ttu-id="54760-163">Ausnahmen werden ausgelöst, wenn die URL nicht mit `http://` oder beginnt `https://` .</span><span class="sxs-lookup"><span data-stu-id="54760-163">exceptions are thrown if the URL does not start with `http://` or `https://`.</span></span>  
     
-    :::image type="complex" source="./media/winui-gettingstarted-bing.png" alt-text="„Bing.com“" lightbox="./media/winui-gettingstarted-bing.png":::
+    :::image type="complex" source="./media/winui-gettingstarted-bing.png" alt-text="Dialogfeld zum Erstellen von Visual Studio-Projekten für WinUI" lightbox="./media/winui-gettingstarted-bing.png":::
        <span data-ttu-id="54760-165">„Bing.com“</span><span class="sxs-lookup"><span data-stu-id="54760-165">Bing.com</span></span>  
     :::image-end:::  
     
@@ -251,7 +251,7 @@ private void EnsureHttps(WebView2 sender, WebView2NavigationStartingEventArgs ar
 
 <span data-ttu-id="54760-181">Wählen Sie aus `F5` , um Ihr Projekt zu erstellen und auszuführen.</span><span class="sxs-lookup"><span data-stu-id="54760-181">Select `F5` to build and run your project.</span></span>  <span data-ttu-id="54760-182">Vergewissern Sie sich, dass Ihre Anwendung eine Warnung anzeigt, wenn Sie zu einer Website navigieren, die kein HTTPS verwendet.</span><span class="sxs-lookup"><span data-stu-id="54760-182">Confirm that your application displays an alert when you navigate to a site that does not use HTTPS.</span></span>  
 
-:::image type="complex" source="./media/winui-gettingstarted-script.png" alt-text="WebView2-Steuerelement mit einem Warnungsdialogfeld" lightbox="./media/winui-gettingstarted-script.png":::
+:::image type="complex" source="./media/winui-gettingstarted-script.png" alt-text="Dialogfeld zum Erstellen von Visual Studio-Projekten für WinUI" lightbox="./media/winui-gettingstarted-script.png":::
    <span data-ttu-id="54760-184">WebView2-Steuerelement mit einem Warnungsdialogfeld</span><span class="sxs-lookup"><span data-stu-id="54760-184">WebView2 control showing an alert dialog</span></span>
 :::image-end:::  
 

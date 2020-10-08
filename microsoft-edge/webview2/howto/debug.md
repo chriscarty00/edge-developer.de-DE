@@ -55,7 +55,7 @@ ms.locfileid: "11052148"
     1. <span data-ttu-id="746bf-131">Wählen Sie im Visual Studio-Installationsprogramm in der installierten Version die Schaltfläche **mehr** aus, und wählen Sie dann **ändern**aus.</span><span class="sxs-lookup"><span data-stu-id="746bf-131">In the Visual Studio Installer, on the installed version, choose the **More** button, and then choose **Modify**.</span></span>  
     1. <span data-ttu-id="746bf-132">Wählen Sie in Visual Studio unter **Arbeits auslasten**die Einstellung **Desktop Entwicklung in C++** aus.</span><span class="sxs-lookup"><span data-stu-id="746bf-132">In Visual Studio, under **Workloads**, choose the **Desktop Development in C++** setting.</span></span>  
         
-        :::image type="complex" source="./media/workloads.png" alt-text="Bildschirm ' Ändern von Arbeitslasten ' in Visual Studio" lightbox="./media/workloads.png":::
+        :::image type="complex" source="./media/workloads.png" alt-text="DevTools-Debuggen" lightbox="./media/workloads.png":::
             <span data-ttu-id="746bf-134">Bildschirm ' Ändern von Arbeitslasten ' in Visual Studio</span><span class="sxs-lookup"><span data-stu-id="746bf-134">Visual Studio Modifying Workloads Screen</span></span> :::image-end:::  
         
     1.  <span data-ttu-id="746bf-135">Wählen Sie **einzelne Komponenten**aus.</span><span class="sxs-lookup"><span data-stu-id="746bf-135">Choose **Individual components**.</span></span>  
@@ -63,7 +63,7 @@ ms.locfileid: "11052148"
     1.  <span data-ttu-id="746bf-137">Wählen Sie die **JavaScript-Diagnose** Einstellung aus.</span><span class="sxs-lookup"><span data-stu-id="746bf-137">Choose the **JavaScript diagnostics** setting.</span></span>  
     1.  <span data-ttu-id="746bf-138">Wählen Sie **ändern**aus.</span><span class="sxs-lookup"><span data-stu-id="746bf-138">Choose **Modify**.</span></span> 
         
-        :::image type="complex" source="./media/indivcomp.png" alt-text="Visual Studio-Registerkarte ' einzelne Komponenten ändern '" lightbox="./media/indivcomp.png":::
+        :::image type="complex" source="./media/indivcomp.png" alt-text="DevTools-Debuggen" lightbox="./media/indivcomp.png":::
            <span data-ttu-id="746bf-140">Visual Studio-Registerkarte ' einzelne Komponenten ändern '</span><span class="sxs-lookup"><span data-stu-id="746bf-140">Visual Studio Modifying Individual Components Tab</span></span>  
         :::image-end:::  
         
@@ -72,7 +72,7 @@ ms.locfileid: "11052148"
     1.  <span data-ttu-id="746bf-143">Wählen Sie unter den **Konfigurationseigenschaften**die Option **Debuggen**aus.</span><span class="sxs-lookup"><span data-stu-id="746bf-143">Under the **Configuration Properties**, choose **Debugging**.</span></span>  
     1.  <span data-ttu-id="746bf-144">Wählen Sie unter dem **Debuggertyp**die Option **JavaScript (WebView2)** aus.</span><span class="sxs-lookup"><span data-stu-id="746bf-144">Under the **Debugger Type**, choose **JavaScript (WebView2)**.</span></span>  
         
-        :::image type="complex" source="./media/enbjs.png" alt-text="Visual Studio-Konfigurationseigenschaft "Debuggen"" lightbox="./media/enbjs.png":::
+        :::image type="complex" source="./media/enbjs.png" alt-text="DevTools-Debuggen" lightbox="./media/enbjs.png":::
            <span data-ttu-id="746bf-146">Visual Studio-Konfigurationseigenschaft " **Debuggen** "</span><span class="sxs-lookup"><span data-stu-id="746bf-146">Visual Studio **Debugging** Configuration Property</span></span>  
         :::image-end:::  
         
@@ -80,19 +80,19 @@ ms.locfileid: "11052148"
 
 1.  <span data-ttu-id="746bf-148">Wenn Sie einen Haltepunkt im Quellcode festlegen möchten, zeigen Sie auf die linke Seite der Zeile, und wählen Sie einen Haltepunkt aus.</span><span class="sxs-lookup"><span data-stu-id="746bf-148">To set a breakpoint in your source code, hover to the left of the line number, and choose to set a breakpoint.</span></span>  <span data-ttu-id="746bf-149">Der JS/TS-Debug-Adapter führt keine Quell Pfadzuordnung aus.</span><span class="sxs-lookup"><span data-stu-id="746bf-149">The JS/TS debug adapter does not perform source path mapping.</span></span>  <span data-ttu-id="746bf-150">Sie müssen exakt denselben Pfad öffnen, der Ihrem WebView2 zugeordnet ist.</span><span class="sxs-lookup"><span data-stu-id="746bf-150">You must open the exact same path associated with your WebView2.</span></span>  
     
-    :::image type="complex" source="./media/breakpoint.png" alt-text="Visual Studio-Haltepunkt hinzufügen" lightbox="./media/breakpoint.png"::: 
+    :::image type="complex" source="./media/breakpoint.png" alt-text="DevTools-Debuggen" lightbox="./media/breakpoint.png"::: 
        <span data-ttu-id="746bf-152">Visual Studio-Haltepunkt hinzufügen</span><span class="sxs-lookup"><span data-stu-id="746bf-152">Visual Studio add breakpoint</span></span>  
     :::image-end:::  
     
 1.  <span data-ttu-id="746bf-153">Zum Ausführen des Debuggers wählen Sie die Bit-Größe der Plattform aus, und wählen Sie dann die grüne Schaltfläche Wiedergabe neben dem **lokalen Windows-Debugger**aus.</span><span class="sxs-lookup"><span data-stu-id="746bf-153">To run the debugger, choose the bit size of the platform, and then choose the green play button next to **Local Windows Debugger**.</span></span>  <span data-ttu-id="746bf-154">Die Anwendung wird ausgeführt, und der Debugger stellt eine Verbindung mit dem ersten WebView2-Prozess her, der erstellt wird.</span><span class="sxs-lookup"><span data-stu-id="746bf-154">The application runs and the debugger connects to the first WebView2 process that is created.</span></span>  
     
-    :::image type="complex" source="./media/run.png" alt-text=" Lokaler Windows-Debugger in Visual Studio" lightbox="./media/run.png"::: 
+    :::image type="complex" source="./media/run.png" alt-text="DevTools-Debuggen" lightbox="./media/run.png"::: 
        <span data-ttu-id="746bf-156">**Lokaler Windows-Debugger** in Visual Studio</span><span class="sxs-lookup"><span data-stu-id="746bf-156">Visual Studio **Local Windows Debugger**</span></span>  
     :::image-end:::  
     
 1.  <span data-ttu-id="746bf-157">Suchen Sie in der **Debug-Konsole**die Ausgabe des Debuggers.</span><span class="sxs-lookup"><span data-stu-id="746bf-157">In the **Debug Console**, find the output from the debugger.</span></span>  
     
-    :::image type="complex" source="./media/console.png" alt-text=" Visual Studio-Debug-Konsole" lightbox="./media/console.png"::: 
+    :::image type="complex" source="./media/console.png" alt-text="DevTools-Debuggen" lightbox="./media/console.png"::: 
        <span data-ttu-id="746bf-159">Visual Studio- **Debug-Konsole**</span><span class="sxs-lookup"><span data-stu-id="746bf-159">Visual Studio **Debug Console**</span></span>  
     :::image-end:::  
     
@@ -119,7 +119,7 @@ ms.locfileid: "11052148"
         
 1.  <span data-ttu-id="746bf-165">Wenn Sie einen Haltepunkt im Quellcode festlegen möchten, zeigen Sie auf die Zeile, und wählen Sie</span><span class="sxs-lookup"><span data-stu-id="746bf-165">To set a breakpoint in your source code, hover on the line, and select</span></span> `F9`
     
-    :::image type="complex" source="./media/breakpointvs.png" alt-text="Der Haltepunkt wird in Visual Studio-Code gesetzt" lightbox="./media/breakpointvs.png":::
+    :::image type="complex" source="./media/breakpointvs.png" alt-text="DevTools-Debuggen" lightbox="./media/breakpointvs.png":::
        <span data-ttu-id="746bf-167">Der Haltepunkt wird in Visual Studio-Code gesetzt</span><span class="sxs-lookup"><span data-stu-id="746bf-167">Breakpoint is set in Visual Studio Code</span></span>  
     :::image-end:::
     
@@ -130,13 +130,13 @@ ms.locfileid: "11052148"
     1.  <span data-ttu-id="746bf-171">Wählen Sie auf der Registerkarte **Ausführen** im Dropdownmenü die Option Startkonfiguration aus.</span><span class="sxs-lookup"><span data-stu-id="746bf-171">On the **Run** tab, choose the launch configuration from the dropdown menu.</span></span>  
     1.  <span data-ttu-id="746bf-172">Wenn Sie mit dem Debuggen der Anwendung beginnen möchten, wählen Sie Debuggen starten (das grüne Dreieck neben der Dropdownliste Startkonfiguration) aus.</span><span class="sxs-lookup"><span data-stu-id="746bf-172">To start debugging your application, choose Start Debugging, which is the green triangle next to the launch configuration drop down.</span></span>  
         
-        :::image type="complex" source="./media/runvs.png" alt-text=" Visual Studio-Registerkarte "Code ausführen"" lightbox="./media/runvs.png":::
+        :::image type="complex" source="./media/runvs.png" alt-text="DevTools-Debuggen" lightbox="./media/runvs.png":::
            <span data-ttu-id="746bf-174">Visual Studio-Registerkarte "Code ausführen"</span><span class="sxs-lookup"><span data-stu-id="746bf-174">Visual Studio Code Run tab</span></span>  
         :::image-end:::  
         
 1.  <span data-ttu-id="746bf-175">Öffnen Sie die **Debug-Konsole** , um die Debug-Ausgabe und die Fehler anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="746bf-175">Open **Debug Console** to view the debug output and errors.</span></span>  
     
-    :::image type="complex" source="./media/resultsvs.png" alt-text=" Visual Studio-Code Debug-Konsole" lightbox="./media/resultsvs.png":::
+    :::image type="complex" source="./media/resultsvs.png" alt-text="DevTools-Debuggen" lightbox="./media/resultsvs.png":::
        <span data-ttu-id="746bf-177">Visual Studio-Code Debug-Konsole</span><span class="sxs-lookup"><span data-stu-id="746bf-177">Visual Studio Code Debug Console</span></span>  
     :::image-end:::  
     
@@ -208,7 +208,7 @@ ms.locfileid: "11052148"
                 ,"trace": true  // Turn on  debug tracing, and save the output to a log file.
               ```  
               
-              :::image type="complex" source="./media/tracelog.png" alt-text=" Speichern Sie die Debug-Ausgabe in einer Protokolldatei." lightbox="./media/tracelog.png":::
+              :::image type="complex" source="./media/tracelog.png" alt-text="DevTools-Debuggen" lightbox="./media/tracelog.png":::
                  <span data-ttu-id="746bf-199">Speichern der Debug-Ausgabe in einer Protokolldatei</span><span class="sxs-lookup"><span data-stu-id="746bf-199">Save debug output to a log file</span></span>  
               :::image-end:::  
            :::column-end:::
@@ -217,7 +217,7 @@ ms.locfileid: "11052148"
               ,"trace": "verbose"  // Turn on verbose tracing in the Debug Output pane.
               ```  
               
-              :::image type="complex" source="./media/verbose.png" alt-text=" Ausführliche Ausgabe" lightbox="./media/verbose.png":::
+              :::image type="complex" source="./media/verbose.png" alt-text="DevTools-Debuggen" lightbox="./media/verbose.png":::
                  <span data-ttu-id="746bf-201">Visual Studio-Code Debug-Ausgabe mit aktivierter ausführlicher Ablaufverfolgung</span><span class="sxs-lookup"><span data-stu-id="746bf-201">Visual Studio Code Debug Output with verbose tracing turned on</span></span>  
               :::image-end:::  
            :::column-end:::

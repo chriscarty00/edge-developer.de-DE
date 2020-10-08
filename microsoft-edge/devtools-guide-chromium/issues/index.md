@@ -1,11 +1,11 @@
 ---
-title: Find and fix problems with the Microsoft Edge DevTools Issues tool
+title: Suchen und Beheben von Problemen mit dem Microsoft Edge devtools Issues Tool
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
 ms.openlocfilehash: bad9e9d99f0d2f3179784920fc334823289b9f99
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -27,108 +27,108 @@ ms.locfileid: "10992820"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# <span data-ttu-id="18dc8-103">Find and fix problems with the Microsoft Edge DevTools Issues tool</span><span class="sxs-lookup"><span data-stu-id="18dc8-103">Find and fix problems with the Microsoft Edge DevTools Issues tool</span></span>  
+# <span data-ttu-id="9810f-103">Suchen und Beheben von Problemen mit dem Microsoft Edge devtools Issues Tool</span><span class="sxs-lookup"><span data-stu-id="9810f-103">Find and fix problems with the Microsoft Edge DevTools Issues tool</span></span>  
 
-<span data-ttu-id="18dc8-104">The **Issues** tool in Microsoft Edge DevTools reduces the notification fatigue and clutter of the **Console**.</span><span class="sxs-lookup"><span data-stu-id="18dc8-104">The **Issues** tool in Microsoft Edge DevTools reduces the notification fatigue and clutter of the **Console**.</span></span>  <span data-ttu-id="18dc8-105">Use it to find solutions to problems detected by the browser, such as cookie issues and mixed content.</span><span class="sxs-lookup"><span data-stu-id="18dc8-105">Use it to find solutions to problems detected by the browser, such as cookie issues and mixed content.</span></span>  
+<span data-ttu-id="9810f-104">Das **Problem** Tool in Microsoft Edge devtools verringert die Ermüdung der Benachrichtigung und die unaufgeräumtheit der **Konsole**.</span><span class="sxs-lookup"><span data-stu-id="9810f-104">The **Issues** tool in Microsoft Edge DevTools reduces the notification fatigue and clutter of the **Console**.</span></span>  <span data-ttu-id="9810f-105">Verwenden Sie es, um Lösungen für vom Browser erkannte Probleme zu finden, wie etwa Cookie-Probleme und gemischte Inhalte.</span><span class="sxs-lookup"><span data-stu-id="9810f-105">Use it to find solutions to problems detected by the browser, such as cookie issues and mixed content.</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="18dc8-106">In Microsoft Edge 84, the **Issues** tool supports three types of issue:</span><span class="sxs-lookup"><span data-stu-id="18dc8-106">In Microsoft Edge 84, the **Issues** tool supports three types of issue:</span></span>  
-> *   [<span data-ttu-id="18dc8-107">Cookie problems</span><span class="sxs-lookup"><span data-stu-id="18dc8-107">Cookie problems</span></span>][MDNSameSiteCookies]  
-> *   [<span data-ttu-id="18dc8-108">Mixed content</span><span class="sxs-lookup"><span data-stu-id="18dc8-108">Mixed content</span></span>][MDNMixedContent]  
-> *   [<span data-ttu-id="18dc8-109">COEP issues</span><span class="sxs-lookup"><span data-stu-id="18dc8-109">COEP issues</span></span>][W3CCOEPSpec]
+> <span data-ttu-id="9810f-106">In Microsoft Edge 84 unterstützt das **Issues** -Tool drei Arten von Problemen:</span><span class="sxs-lookup"><span data-stu-id="9810f-106">In Microsoft Edge 84, the **Issues** tool supports three types of issue:</span></span>  
+> *   [<span data-ttu-id="9810f-107">Cookie-Probleme</span><span class="sxs-lookup"><span data-stu-id="9810f-107">Cookie problems</span></span>][MDNSameSiteCookies]  
+> *   [<span data-ttu-id="9810f-108">Gemischter Inhalt</span><span class="sxs-lookup"><span data-stu-id="9810f-108">Mixed content</span></span>][MDNMixedContent]  
+> *   [<span data-ttu-id="9810f-109">COEP-Probleme</span><span class="sxs-lookup"><span data-stu-id="9810f-109">COEP issues</span></span>][W3CCOEPSpec]
 > 
-> <span data-ttu-id="18dc8-110">The Microsoft Edge DevTools team plans to support more issue types in future versions of Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="18dc8-110">The Microsoft Edge DevTools team plans to support more issue types in future versions of Microsoft Edge.</span></span>  
+> <span data-ttu-id="9810f-110">Das Microsoft Edge devtools-Team plant, weitere Problemtypen in zukünftigen Versionen von Microsoft Edge zu unterstützen.</span><span class="sxs-lookup"><span data-stu-id="9810f-110">The Microsoft Edge DevTools team plans to support more issue types in future versions of Microsoft Edge.</span></span>  
 
-## <span data-ttu-id="18dc8-111">Open the Issues tool in the DevTools drawer</span><span class="sxs-lookup"><span data-stu-id="18dc8-111">Open the Issues tool in the DevTools drawer</span></span>  
+## <span data-ttu-id="9810f-111">Öffnen des Tools "Probleme" im devtools-Einzug</span><span class="sxs-lookup"><span data-stu-id="9810f-111">Open the Issues tool in the DevTools drawer</span></span>  
 
-1.  <span data-ttu-id="18dc8-112">Visit a page, such as [samesite-sandbox.glitch.me][GlitchSamesiteSandbox], that contains issues to fix.</span><span class="sxs-lookup"><span data-stu-id="18dc8-112">Visit a page, such as [samesite-sandbox.glitch.me][GlitchSamesiteSandbox], that contains issues to fix.</span></span>  
-1.  <span data-ttu-id="18dc8-113">[Open DevTools][DevtoolsOpen].</span><span class="sxs-lookup"><span data-stu-id="18dc8-113">[Open DevTools][DevtoolsOpen].</span></span>  
+1.  <span data-ttu-id="9810f-112">Besuchen Sie eine Seite wie [SameSite-Sandbox.Glitch.me][GlitchSamesiteSandbox], die Probleme enthält, die behoben werden können.</span><span class="sxs-lookup"><span data-stu-id="9810f-112">Visit a page, such as [samesite-sandbox.glitch.me][GlitchSamesiteSandbox], that contains issues to fix.</span></span>  
+1.  <span data-ttu-id="9810f-113">[Öffnen Sie devtools][DevtoolsOpen].</span><span class="sxs-lookup"><span data-stu-id="9810f-113">[Open DevTools][DevtoolsOpen].</span></span>  
 1.  :::row:::
        :::column span="":::
-          <span data-ttu-id="18dc8-114">Select the **Go to Issues** button in the yellow warning bar.</span><span class="sxs-lookup"><span data-stu-id="18dc8-114">Select the **Go to Issues** button in the yellow warning bar.</span></span>  
+          <span data-ttu-id="9810f-114">Klicken Sie auf der gelben Warnleiste auf die Schaltfläche **Gehe zu Problemen** .</span><span class="sxs-lookup"><span data-stu-id="9810f-114">Select the **Go to Issues** button in the yellow warning bar.</span></span>  
           
-          :::image type="complex" source="../media/issues-open-issues-tab.msft.png" alt-text="Go to Issues button in yellow warning bar when Issues are detected" lightbox="../media/issues-open-issues-tab.msft.png":::
-             <span data-ttu-id="18dc8-116">The **Go to Issues** button in the yellow warning bar when Issues are detected.</span><span class="sxs-lookup"><span data-stu-id="18dc8-116">The **Go to Issues** button in the yellow warning bar when Issues are detected.</span></span>  
+          :::image type="complex" source="../media/issues-open-issues-tab.msft.png" alt-text="Schaltfläche ' Probleme ' in der gelben Warnleiste, wenn Probleme erkannt werden" lightbox="../media/issues-open-issues-tab.msft.png":::
+             <span data-ttu-id="9810f-116">Die Schaltfläche " **Probleme wechseln** " in der gelben Warnleiste, wenn Probleme erkannt werden.</span><span class="sxs-lookup"><span data-stu-id="9810f-116">The **Go to Issues** button in the yellow warning bar when Issues are detected.</span></span>  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          <span data-ttu-id="18dc8-117">Alternatively, select **Issues** from the **More tools** menu.</span><span class="sxs-lookup"><span data-stu-id="18dc8-117">Alternatively, select **Issues** from the **More tools** menu.</span></span>  
+          <span data-ttu-id="9810f-117">Sie können auch im Menü **Weitere Tools** die Option **Probleme** auswählen.</span><span class="sxs-lookup"><span data-stu-id="9810f-117">Alternatively, select **Issues** from the **More tools** menu.</span></span>  
           
-          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text="Go to Issues button in yellow warning bar when Issues are detected" lightbox="../media//issues-more-tools-menu.msft.png":::
-             <span data-ttu-id="18dc8-119">**Issues** tool in **More tools** menu</span><span class="sxs-lookup"><span data-stu-id="18dc8-119">**Issues** tool in **More tools** menu</span></span>  
+          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text="Schaltfläche ' Probleme ' in der gelben Warnleiste, wenn Probleme erkannt werden" lightbox="../media//issues-more-tools-menu.msft.png":::
+             <span data-ttu-id="9810f-119">Tool ' **Probleme** ' im Menü ' **Weitere Tools** '</span><span class="sxs-lookup"><span data-stu-id="9810f-119">**Issues** tool in **More tools** menu</span></span>  
           :::image-end:::  
        :::column-end:::
     :::row-end:::
     
-1.  <span data-ttu-id="18dc8-120">Select the **Reload page** button, if necessary.</span><span class="sxs-lookup"><span data-stu-id="18dc8-120">Select the **Reload page** button, if necessary.</span></span>  
+1.  <span data-ttu-id="9810f-120">Wählen Sie bei Bedarf die Schaltfläche **Seite neu laden** aus.</span><span class="sxs-lookup"><span data-stu-id="9810f-120">Select the **Reload page** button, if necessary.</span></span>  
     
-    :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="Go to Issues button in yellow warning bar when Issues are detected" lightbox="../media/issues-tab-before-refresh.msft.png":::
-       <span data-ttu-id="18dc8-122">**Issues** tool in the DevTools Drawer with **Reload page** button</span><span class="sxs-lookup"><span data-stu-id="18dc8-122">**Issues** tool in the DevTools Drawer with **Reload page** button</span></span>  
+    :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="Schaltfläche ' Probleme ' in der gelben Warnleiste, wenn Probleme erkannt werden" lightbox="../media/issues-tab-before-refresh.msft.png":::
+       <span data-ttu-id="9810f-122">Tool ' **Probleme** ' in der devtools-Schublade mit der Schaltfläche ' **Seite neu laden** '</span><span class="sxs-lookup"><span data-stu-id="9810f-122">**Issues** tool in the DevTools Drawer with **Reload page** button</span></span>  
     :::image-end:::  
 
-    <span data-ttu-id="18dc8-123">The issues reported in the **Console** are quite hard to understand, such as the cookie warnings in the following image.</span><span class="sxs-lookup"><span data-stu-id="18dc8-123">The issues reported in the **Console** are quite hard to understand, such as the cookie warnings in the following image.</span></span>  <span data-ttu-id="18dc8-124">Based upon the reported issues, it may not be clear what you must do.</span><span class="sxs-lookup"><span data-stu-id="18dc8-124">Based upon the reported issues, it may not be clear what you must do.</span></span>  
+    <span data-ttu-id="9810f-123">Die in der **Konsole** gemeldeten Probleme sind schwer verständlich, wie etwa die Cookie-Warnungen in der folgenden Abbildung.</span><span class="sxs-lookup"><span data-stu-id="9810f-123">The issues reported in the **Console** are quite hard to understand, such as the cookie warnings in the following image.</span></span>  <span data-ttu-id="9810f-124">Basierend auf den gemeldeten Problemen ist es möglicherweise nicht klar, was Sie tun müssen.</span><span class="sxs-lookup"><span data-stu-id="9810f-124">Based upon the reported issues, it may not be clear what you must do.</span></span>  
     
-    :::image type="complex" source="../media/issues-tab-after-refresh.msft.png" alt-text="Go to Issues button in yellow warning bar when Issues are detected" lightbox="../media/issues-tab-after-refresh.msft.png":::
-       <span data-ttu-id="18dc8-126">**Issues** tool in the DevTools Drawer with three cookie issues</span><span class="sxs-lookup"><span data-stu-id="18dc8-126">**Issues** tool in the DevTools Drawer with three cookie issues</span></span>  
+    :::image type="complex" source="../media/issues-tab-after-refresh.msft.png" alt-text="Schaltfläche ' Probleme ' in der gelben Warnleiste, wenn Probleme erkannt werden" lightbox="../media/issues-tab-after-refresh.msft.png":::
+       <span data-ttu-id="9810f-126">Tool " **Probleme** " im devtools-Einzug mit drei Problemen mit Cookies</span><span class="sxs-lookup"><span data-stu-id="9810f-126">**Issues** tool in the DevTools Drawer with three cookie issues</span></span>  
     :::image-end:::  
     
-## <span data-ttu-id="18dc8-127">View items in the Issues tool</span><span class="sxs-lookup"><span data-stu-id="18dc8-127">View items in the Issues tool</span></span>  
+## <span data-ttu-id="9810f-127">Anzeigen von Elementen im Tool "Probleme"</span><span class="sxs-lookup"><span data-stu-id="9810f-127">View items in the Issues tool</span></span>  
 
-<span data-ttu-id="18dc8-128">The **Issues** tool in the DevTools Drawer presents warnings in a structured, aggregated, and actionable way.</span><span class="sxs-lookup"><span data-stu-id="18dc8-128">The **Issues** tool in the DevTools Drawer presents warnings in a structured, aggregated, and actionable way.</span></span>  
+<span data-ttu-id="9810f-128">Das Tool " **Probleme** " im devtools-Einzug zeigt Warnungen auf strukturierter, aggregierter und umsetzbarer Weise an.</span><span class="sxs-lookup"><span data-stu-id="9810f-128">The **Issues** tool in the DevTools Drawer presents warnings in a structured, aggregated, and actionable way.</span></span>  
 
-1.  <span data-ttu-id="18dc8-129">Select an item in the **Issues** tool to get guidance on how to fix the issue and find affected resources.</span><span class="sxs-lookup"><span data-stu-id="18dc8-129">Select an item in the **Issues** tool to get guidance on how to fix the issue and find affected resources.</span></span>  
+1.  <span data-ttu-id="9810f-129">Wählen Sie ein Element im **Issues** -Tool aus, um Anleitungen zur Behebung des Problems und zum Auffinden betroffener Ressourcen zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="9810f-129">Select an item in the **Issues** tool to get guidance on how to fix the issue and find affected resources.</span></span>  
     
-    :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="Go to Issues button in yellow warning bar when Issues are detected" lightbox="../media/issues-tab-issue-open.msft.png":::
-       <span data-ttu-id="18dc8-131">**Mark cross-site cookies as Secure** issue open in the **Issues** tool</span><span class="sxs-lookup"><span data-stu-id="18dc8-131">**Mark cross-site cookies as Secure** issue open in the **Issues** tool</span></span>  
+    :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="Schaltfläche ' Probleme ' in der gelben Warnleiste, wenn Probleme erkannt werden" lightbox="../media/issues-tab-issue-open.msft.png":::
+       <span data-ttu-id="9810f-131">**Markieren von websiteübergreifenden Cookies als sicheres** Problem im Tool " **Probleme** "</span><span class="sxs-lookup"><span data-stu-id="9810f-131">**Mark cross-site cookies as Secure** issue open in the **Issues** tool</span></span>  
     :::image-end:::  
     
-    <span data-ttu-id="18dc8-132">Each item has four components:</span><span class="sxs-lookup"><span data-stu-id="18dc8-132">Each item has four components:</span></span>  
+    <span data-ttu-id="9810f-132">Jedes Element verfügt über vier Komponenten:</span><span class="sxs-lookup"><span data-stu-id="9810f-132">Each item has four components:</span></span>  
     
-    *   <span data-ttu-id="18dc8-133">A headline describing the issue.</span><span class="sxs-lookup"><span data-stu-id="18dc8-133">A headline describing the issue.</span></span>  
-    *   <span data-ttu-id="18dc8-134">A description providing the context and the solution.</span><span class="sxs-lookup"><span data-stu-id="18dc8-134">A description providing the context and the solution.</span></span>  
-    *   <span data-ttu-id="18dc8-135">An **AFFECTED RESOURCES** section that links to resources within the appropriate DevTools context such as the Network panel.</span><span class="sxs-lookup"><span data-stu-id="18dc8-135">An **AFFECTED RESOURCES** section that links to resources within the appropriate DevTools context such as the Network panel.</span></span>  
-    *   <span data-ttu-id="18dc8-136">Links to further guidance.</span><span class="sxs-lookup"><span data-stu-id="18dc8-136">Links to further guidance.</span></span>  
+    *   <span data-ttu-id="9810f-133">Eine Überschrift, die das Problem beschreibt.</span><span class="sxs-lookup"><span data-stu-id="9810f-133">A headline describing the issue.</span></span>  
+    *   <span data-ttu-id="9810f-134">Eine Beschreibung, die den Kontext und die Lösung bereitstellt.</span><span class="sxs-lookup"><span data-stu-id="9810f-134">A description providing the context and the solution.</span></span>  
+    *   <span data-ttu-id="9810f-135">Ein Abschnitt " **betroffene Ressourcen** ", der Links zu Ressourcen im entsprechenden devtools-Kontext wie dem Netzwerk Panel enthält.</span><span class="sxs-lookup"><span data-stu-id="9810f-135">An **AFFECTED RESOURCES** section that links to resources within the appropriate DevTools context such as the Network panel.</span></span>  
+    *   <span data-ttu-id="9810f-136">Links zu weiteren Anleitungen.</span><span class="sxs-lookup"><span data-stu-id="9810f-136">Links to further guidance.</span></span>  
     
-1.  <span data-ttu-id="18dc8-137">Select items in **AFFECTED RESOURCES** to view details.</span><span class="sxs-lookup"><span data-stu-id="18dc8-137">Select items in **AFFECTED RESOURCES** to view details.</span></span>  <span data-ttu-id="18dc8-138">In the following example, the **Mark cross-site cookies as Secure** issue affects one cookie and two requests.</span><span class="sxs-lookup"><span data-stu-id="18dc8-138">In the following example, the **Mark cross-site cookies as Secure** issue affects one cookie and two requests.</span></span>  
+1.  <span data-ttu-id="9810f-137">Wählen Sie Elemente in **betroffenen Ressourcen** aus, um Details anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="9810f-137">Select items in **AFFECTED RESOURCES** to view details.</span></span>  <span data-ttu-id="9810f-138">Im folgenden Beispiel wirkt sich das **kennzeichnen von websiteübergreifenden Cookies als sicheres** Problem auf ein Cookie und zwei Anforderungen aus.</span><span class="sxs-lookup"><span data-stu-id="9810f-138">In the following example, the **Mark cross-site cookies as Secure** issue affects one cookie and two requests.</span></span>  
     
-    :::image type="complex" source="../media/issues-tab-affected-resources.msft.png" alt-text="Go to Issues button in yellow warning bar when Issues are detected" lightbox="../media/issues-tab-affected-resources.msft.png":::
-       <span data-ttu-id="18dc8-140">Affected resources open in the **Issues** tool in the DevTools Drawer</span><span class="sxs-lookup"><span data-stu-id="18dc8-140">Affected resources open in the **Issues** tool in the DevTools Drawer</span></span>  
+    :::image type="complex" source="../media/issues-tab-affected-resources.msft.png" alt-text="Schaltfläche ' Probleme ' in der gelben Warnleiste, wenn Probleme erkannt werden" lightbox="../media/issues-tab-affected-resources.msft.png":::
+       <span data-ttu-id="9810f-140">Im Tool " **Probleme** " im devtools-Einzug geöffnete betroffene Ressourcen</span><span class="sxs-lookup"><span data-stu-id="9810f-140">Affected resources open in the **Issues** tool in the DevTools Drawer</span></span>  
     :::image-end:::  
     
-## <span data-ttu-id="18dc8-141">View issues in context</span><span class="sxs-lookup"><span data-stu-id="18dc8-141">View issues in context</span></span>  
+## <span data-ttu-id="9810f-141">Anzeigen von Problemen im Kontext</span><span class="sxs-lookup"><span data-stu-id="9810f-141">View issues in context</span></span>  
 
-1.  <span data-ttu-id="18dc8-142">Select a resource link to view the item in the appropriate context within DevTools.</span><span class="sxs-lookup"><span data-stu-id="18dc8-142">Select a resource link to view the item in the appropriate context within DevTools.</span></span>  <span data-ttu-id="18dc8-143">In the following example, select `samesite-sandbox.glitch.me` under **Requests** to show the cookies attached to that request.</span><span class="sxs-lookup"><span data-stu-id="18dc8-143">In the following example, select `samesite-sandbox.glitch.me` under **Requests** to show the cookies attached to that request.</span></span>  
+1.  <span data-ttu-id="9810f-142">Wählen Sie einen Ressourcen Link aus, um das Element im entsprechenden Kontext in devtools anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="9810f-142">Select a resource link to view the item in the appropriate context within DevTools.</span></span>  <span data-ttu-id="9810f-143">Wählen Sie im folgenden Beispiel `samesite-sandbox.glitch.me` unter **Anforderungen** aus, um die Cookies anzuzeigen, die dieser Anforderung angefügt sind.</span><span class="sxs-lookup"><span data-stu-id="9810f-143">In the following example, select `samesite-sandbox.glitch.me` under **Requests** to show the cookies attached to that request.</span></span>  
     
-    :::image type="complex" source="../media/issues-tab-view-request.msft.png" alt-text="Go to Issues button in yellow warning bar when Issues are detected" lightbox="../media/issues-tab-view-request.msft.png":::
-       <span data-ttu-id="18dc8-145">View the affected cookie in the DevTools **Network** panel</span><span class="sxs-lookup"><span data-stu-id="18dc8-145">View the affected cookie in the DevTools **Network** panel</span></span>  
+    :::image type="complex" source="../media/issues-tab-view-request.msft.png" alt-text="Schaltfläche ' Probleme ' in der gelben Warnleiste, wenn Probleme erkannt werden" lightbox="../media/issues-tab-view-request.msft.png":::
+       <span data-ttu-id="9810f-145">Anzeigen des betroffenen Cookies im devtools- **Netzwerk** Panel</span><span class="sxs-lookup"><span data-stu-id="9810f-145">View the affected cookie in the DevTools **Network** panel</span></span>  
     :::image-end:::  
 
-1.  <span data-ttu-id="18dc8-146">Scroll to view the item with a problem: for the following example, the `ck02` cookie.</span><span class="sxs-lookup"><span data-stu-id="18dc8-146">Scroll to view the item with a problem: for the following example, the `ck02` cookie.</span></span>  <span data-ttu-id="18dc8-147">Hover over the **SameSite** column to see the `None` value that the issue detected.</span><span class="sxs-lookup"><span data-stu-id="18dc8-147">Hover over the **SameSite** column to see the `None` value that the issue detected.</span></span>  
+1.  <span data-ttu-id="9810f-146">Scrollen Sie, um das Element mit einem Problem anzuzeigen: im folgenden Beispiel wird das `ck02` Cookie angezeigt.</span><span class="sxs-lookup"><span data-stu-id="9810f-146">Scroll to view the item with a problem: for the following example, the `ck02` cookie.</span></span>  <span data-ttu-id="9810f-147">Zeigen Sie mit der Maus auf die Spalte **SameSite** , um den `None` Wert anzuzeigen, der vom Problem erkannt wurde.</span><span class="sxs-lookup"><span data-stu-id="9810f-147">Hover over the **SameSite** column to see the `None` value that the issue detected.</span></span>  
     
-    :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="Go to Issues button in yellow warning bar when Issues are detected" lightbox="../media/issues-tab-view-issue.msft.png":::
-       `None` <span data-ttu-id="18dc8-149">value in the **SameSite** column for the `ck02` cookie in the DevTools **Network** panel</span><span class="sxs-lookup"><span data-stu-id="18dc8-149">value in the **SameSite** column for the `ck02` cookie in the DevTools **Network** panel</span></span>  
+    :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="Schaltfläche ' Probleme ' in der gelben Warnleiste, wenn Probleme erkannt werden" lightbox="../media/issues-tab-view-issue.msft.png":::
+       `None` <span data-ttu-id="9810f-149">Wert in der Spalte " **SameSite** " für das `ck02` Cookie im devtools- **Netzwerk** Panel</span><span class="sxs-lookup"><span data-stu-id="9810f-149">value in the **SameSite** column for the `ck02` cookie in the DevTools **Network** panel</span></span>  
     :::image-end:::  
 
-## <span data-ttu-id="18dc8-150">Getting in touch with the Microsoft Edge DevTools team</span><span class="sxs-lookup"><span data-stu-id="18dc8-150">Getting in touch with the Microsoft Edge DevTools team</span></span>  
+## <span data-ttu-id="9810f-150">Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen</span><span class="sxs-lookup"><span data-stu-id="9810f-150">Getting in touch with the Microsoft Edge DevTools team</span></span>  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsOpen]: ../open.md "Open Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsOpen]: ../open.md "Öffnen Sie Microsoft Edge devtools | Microsoft docs"  
 
-[GlitchSamesiteSandbox]: https://samesite-sandbox.glitch.me "SameSite cookie tests | Glitch"  
+[GlitchSamesiteSandbox]: https://samesite-sandbox.glitch.me "SameSite-Cookie-Tests | Glitch"  
 
-[MDNSameSiteCookies]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite "SameSite cookies | MDN"  
-[MDNMixedContent]: https://developer.mozilla.org/docs/Web/Security/Mixed_content "Mixed content | MDN"  
+[MDNSameSiteCookies]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite "SameSite Cookies | MDN"  
+[MDNMixedContent]: https://developer.mozilla.org/docs/Web/Security/Mixed_content "Gemischter Inhalt | MDN"  
 
-[W3CCOEPSpec]: https://wicg.github.io/cross-origin-embedder-policy "Cross-Origin Embedder Policy | Web Incubator Community Group"  
+[W3CCOEPSpec]: https://wicg.github.io/cross-origin-embedder-policy "Richtlinien für die übergreifende Einbettung | Webinkubator-Community-Gruppe"  
 
 > [!NOTE]
-> <span data-ttu-id="18dc8-156">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="18dc8-156">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="18dc8-157">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/issues/index) and is authored by [Sam Dutton][SamDutton] \(Developer Advocate\).</span><span class="sxs-lookup"><span data-stu-id="18dc8-157">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/issues/index) and is authored by [Sam Dutton][SamDutton] \(Developer Advocate\).</span></span>  
-[![Creative Commons License][CCby4Image]][CCA4IL]  
-<span data-ttu-id="18dc8-159">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="18dc8-159">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="9810f-156">Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="9810f-156">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="9810f-157">Die ursprüngliche Seite wird [hier](https://developers.google.com/web/tools/chrome-devtools/issues/index) gefunden und von [Sam Dutton][SamDutton] (Entwickler Anwalt \) erstellt.</span><span class="sxs-lookup"><span data-stu-id="9810f-157">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/issues/index) and is authored by [Sam Dutton][SamDutton] \(Developer Advocate\).</span></span>  
+[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+<span data-ttu-id="9810f-159">Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="9810f-159">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
