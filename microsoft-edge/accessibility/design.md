@@ -1,13 +1,13 @@
 ---
 ms.assetid: 8468f8e1-9f4a-426c-a969-76eab9419137
-description: Read up on resources for inclusive design tools and best practices.
-title: Accessibility - Design
+description: Informieren Sie sich über Ressourcen für inklusive Design Tools und bewährte Methoden.
+title: Barrierefreiheit – Entwurf
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: accessibility, accessibility for developers, accessible websites, edge, web development, ARIA, developer, UIA, UI Automation
+keywords: Barrierefreiheit, Barrierefreiheit für Entwickler, barrierefreie Websites, Edge, Web-Entwicklung, Aria, Developer, UIA, UI-Automatisierung
 ms.openlocfilehash: c9dfd6dfb9a45f7f8bb3f6d8ebad6c826f3f9e99
 ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
 ms.translationtype: MT
@@ -15,30 +15,30 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "10566740"
 ---
-# Designing Accessible Websites
+# Entwerfen barrierefreier Websites
 
-Creating an inclusive design makes technology usable by all people no matter their age, education, geographic location, language, or disability. People using technology and browsing the web have a wide range of abilities and preferences. As you design your website, keep in mind the following key accessibility scenarios:
+Durch die Erstellung eines integrativen Designs ist Technologie für alle Menschen unabhängig von Alter, Ausbildung, geographischem Standort, Sprache oder Behinderung nutzbar. Personen, die Technologie verwenden und das Internet durchsuchen, verfügen über eine breite Palette von Fähigkeiten und Einstellungen. Beachten Sie beim Entwerfen Ihrer Website die folgenden wichtigen Barrierefreiheits Szenarien:
 
-* Screen readers—Users who are blind or visually impaired rely on screen readers to interpret and interact with your app's UI. Interpreting involves reading the UI element names, roles, values, and so on, and interacting with the UI involves moving the focus from one element to another and invoking functionality.
-* Keyboard accessibility—Many accessibility users rely on the keyboard to navigate and operate the UI by:
-  * Moving focus among elements by using the Tab key.
+* Bildschirmsprachausgaben – Benutzer, die blind oder sehbehindert sind, verwenden Bildschirmsprachausgaben, um die Benutzeroberfläche Ihrer APP zu interpretieren und mit Ihnen zu interagieren. Bei der Interpretation werden die Benutzeroberflächenelement Namen, Rollen, Werte usw. gelesen, und die Interaktion mit der Benutzeroberfläche umfasst das Verschieben des Fokus von einem Element zu einem anderen und das Aufrufen von Funktionen.
+* Barrierefreiheit in der Tastatur – viele Benutzer von Barrierefreiheit Vertrauen auf die Tastatur, um die Benutzeroberfläche zu navigieren und zu verwenden:
+  * Bewegen des Fokus zwischen Elementen mithilfe der TAB-TASTE.
   * Navigieren in Containerelementen wie Listen, Rastern und Strukturansichten mithilfe der Pfeiltasten
   * Aktivieren der Funktionalität (Funktionsaufruf) mithilfe der EINGABETASTE oder der LEERTASTE
-  * Using shortcut keys to efficiently access other app functionality.
-* Accessible visual experience—Users who are visually impaired need a sufficient text contrast ratio for text content, and a good visual experience with high contrast themes overall. Users who are color blind need information to be conveyed in ways other than through color.
+  * Verwenden von Tastenkombinationen zum effektiven Zugreifen auf andere App-Funktionen
+* Barrierefreie visuelle Ober Leistung: Benutzer, die sehbehindert sind, benötigen ein ausreichendes Textkontrast Verhältnis für Textinhalte und eine gute visuelle Darstellung mit Designs mit hohem Kontrast insgesamt. Für farbenblinde Benutzer müssen Informationen auf andere Art als über Farbe vermittelt werden.
 
-Many common accessibility issues on the web can be solved through good coding practice.  The [Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/TR/WCAG20/) documentation provides techniques and best practices to help you design more accessible dynamic web applications. See [Building Accessible Websites](./build.md) for more information on building accessible websites.
+Viele häufige Probleme mit der Barrierefreiheit im Internet können durch eine gute Codierungspraxis gelöst werden.  Die [2,0-Dokumentation für Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/TR/WCAG20/) bietet Techniken und bewährte Methoden, mit denen Sie barrierefreiere dynamische Webanwendungen entwerfen können. Weitere Informationen zum Erstellen von barrierefreien Websites finden Sie unter [Erstellen von barrierefreien Websites](./build.md) .
 
-## Resources
+## Ressourcen
 
-#### [Designing for Inclusion](https://w3.org/WAI/users/Overview.html)
-Designing for Inclusion by the W3C's Web Accessibility Initiative provides resources to help you better understand users with disabilities and how to design your website with them in mind.
+#### [Entwerfen für Inklusion](https://w3.org/WAI/users/Overview.html)
+Das Entwerfen für die Integration durch die W3C Web Accessibility-Initiative bietet Ressourcen, die Ihnen helfen, Benutzer mit Behinderungen besser zu verstehen, und wie Sie Ihre Website mit Ihnen entwerfen.
 
-#### [Designing inclusive software](https://msdn.microsoft.com/windows/uwp/accessibility/designing-inclusive-software)
-Designing inclusive software discusses Microsoft design principles and practices for the Universal Windows Platform (UWP).
+#### [Entwerfen von barrierefreier Software](https://msdn.microsoft.com/windows/uwp/accessibility/designing-inclusive-software)
+Beim Entwerfen von inklusiver Software werden die Microsoft-Entwurfsgrundsätze und-Methoden für die universelle Windows-Plattform (UWP) erläutert.
 
-#### [How People with Disabilities Use the Web](https://www.w3.org/WAI/intro/people-use-web/Overview.html)
-This resource by the W3C introduces how people with disabilities, including people with age-related impairments, use the Web.
+#### [Verwenden von Personen mit Behinderungen im Web](https://www.w3.org/WAI/intro/people-use-web/Overview.html)
+Diese Ressource des W3C führt vor, wie Personen mit Behinderungen, einschließlich Personen mit altersbedingten Beeinträchtigungen, das Web verwenden.
 
-#### [Inclusive Design Toolkit](https://www.microsoft.com/design/practice#howwemake-section)
-Microsoft developed the Inclusive Design Toolkit to show how human diversity can create better design constraints and how to connect seemingly niche solutions to broader markets.
+#### [Inklusives Design-Toolkit](https://www.microsoft.com/design/practice#howwemake-section)
+Microsoft hat das inklusive Design-Toolkit entwickelt, um zu zeigen, wie die menschliche Vielfalt zu besseren Design Zwängen führen kann und wie scheinbar Nische Lösungen an breitere Märkte angeschlossen werden können.

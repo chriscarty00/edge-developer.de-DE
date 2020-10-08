@@ -1,13 +1,13 @@
 ---
-description: Get to know the Microsoft Edge (Chromium) Developer Tools
-title: Microsoft Edge (Chromium) Developer Tools
+description: Kennenlernen der Microsoft Edge (Chrom)-Entwickler Tools
+title: Microsoft Edge (Chrom)-Entwickler Tools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/08/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
-keywords: microsoft edge, web development, f12 tools, devtools
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
 ms.openlocfilehash: ba925c402d33ba75c558006c7c43c5dc05515911
 ms.sourcegitcommit: 6b577cb118f34f3ff2c65eab2908b65f155dc151
 ms.translationtype: MT
@@ -15,80 +15,80 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 09/09/2020
 ms.locfileid: "11003936"
 ---
-# Microsoft Edge (Chromium) Developer Tools  
+# Microsoft Edge (Chrom)-Entwickler Tools  
 
-Microsoft Edge has adopted the Chromium open source project to create better web compatibility and less fragmentation of different underlying web platforms.  This change should make it easier for you to build and test your websites in Microsoft Edge and ensure that each works as expected even while viewed in a different Chromium-based browser \(such as Google Chrome, Vivaldi, Opera, or Brave\).  
+Microsoft Edge hat das Chrom-Open-Source-Projekt angenommen, um eine bessere Web-Kompatibilität und geringere Fragmentierung unterschiedlicher zugrunde liegender Webplattformen zu schaffen.  Diese Änderung sollte es für Sie einfacher machen, ihre Websites in Microsoft Edge zu erstellen und zu testen und sicherzustellen, dass Sie auch in einem anderen Chrom basierten Browser wie erwartet funktionieren (wie Google Chrome, Vivaldi, Opera oder Brave \).  
 
-As the web has grown in usage across an ever-widening array of device types, the complexity and overhead involved in testing websites has exploded. Since web developers \(particularly those at small companies\) must test against so many different systems, you may find it nearly impossible to ensure that sites work well on all device types and all browsers.  Now that Microsoft Edge is based on Chromium, the Microsoft Edge team has simplified the matrix by aligning the Microsoft Edge web platform with other Chromium-based browsers and provided a best-in-class developer tooling experience, both inside the browser and with the other developer tools you use every day \(such as Visual Studio Code\).  
+Da das Web in einem immer größer werdenden Array von Gerätetypen in der Nutzung zugenommen hat, ist die Komplexität und der Overhead beim Testen von Websites explodiert. Da Webentwickler \ (insbesondere bei kleinen Unternehmen \) auf so vielen unterschiedlichen Systemen testen müssen, ist es möglicherweise nahezu unmöglich, sicherzustellen, dass Websites auf allen Gerätetypen und allen Browsern optimal funktionieren.  Nachdem Microsoft Edge nun auf Chrom basiert, hat das Microsoft Edge-Team die Matrix vereinfacht, indem die Microsoft Edge-Webplattform mit anderen Chrom basierten Browsern ausgerichtet und eine erstklassige Entwicklertools-Umgebung bereitgestellt wird, sowohl im Browser als auch mit den anderen Entwicklertools, die Sie täglich verwenden (beispielsweise Visual Studio-Code \).  
 
-If you are checking out Microsoft Edge and you mainly develop in a Chromium-based browser, you should feel right at home.  The Microsoft Edge \(Chromium\) Developer Tools function in the same way as the developer tools you already know and use.  For more information, see [What's new in the Microsoft Edge (Chromium) DevTools][DevtoolsGuideChromiumWhatsNewIndex].  
+Wenn Sie Microsoft Edge Auschecken und sich hauptsächlich in einem Chrom basierten Browser entwickeln, sollten Sie sich wie zu Hause fühlen.  Die Microsoft Edge \ (Chrom \)-Entwicklertools funktionieren auf die gleiche Weise wie die Entwicklertools, die Sie bereits kennen und verwenden.  Weitere Informationen finden Sie unter [Neuerungen in Microsoft Edge (Chrom) devtools][DevtoolsGuideChromiumWhatsNewIndex].  
 
-:::image type="complex" source="./devtools-guide-chromium/media/devtools.png" alt-text="Microsoft Edge (Chromium) DevTools":::
-   Microsoft Edge (Chromium) DevTools  
+:::image type="complex" source="./devtools-guide-chromium/media/devtools.png" alt-text="Microsoft Edge (Chrom) devtools":::
+   Microsoft Edge (Chrom) devtools  
 :::image-end:::  
 
-If you are checking out the next version of Microsoft Edge and you previously developed in Microsoft Edge \(EdgeHTML\), you now have some great new tools that should make it easier and faster to build and test your websites in Microsoft Edge!  
+Wenn Sie die nächste Version von Microsoft Edge Auschecken und zuvor in Microsoft Edge \ (EdgeHTML \) entwickelt haben, verfügen Sie nun über einige hervorragende neue Tools, die es einfacher und schneller machen, ihre Websites in Microsoft Edge zu erstellen und zu testen!  
 
-## Open the DevTools  
+## Öffnen des devtools  
 
-If you have never used the DevTools before, the Microsoft Edge Developer Tools are a set of tools built directly into the Microsoft Edge browser.  With these DevTools, you are able to do the following.  
+Wenn Sie das devtools noch nie zuvor verwendet haben, handelt es sich bei den Microsoft Edge-Entwicklertools um eine Reihe von Tools, die direkt in den Microsoft Edge-Browser integriert sind.  Mit diesen devtools können Sie die folgenden Aktionen ausführen:  
 
-*   Inspect and make changes to your HTML website  
-*   Edit CSS and instantly see preview how your website renders  
-*   See all the `console.log()` statements from your front-end JavaScript code  
-*   Debug your script by setting breakpoints and stepping through it line by line  
+*   Überprüfen und Ändern der HTML-Website  
+*   CSS bearbeiten und sofort anzeigen, wie Ihre Website gerendert wird  
+*   Anzeigen aller `console.log()` Anweisungen aus dem Front-End-JavaScript-Code  
+*   Debuggen des Skripts durch Festlegen von Haltepunkten und Durchführen einer Zeile für Zeile  
 
-all directly within the browser.  These are just examples of some of the features the DevTools provide to make it easier and faster for you to build and test your websites in Microsoft Edge.  
+alle direkt im Browser.  Dies sind nur einige Beispiele für einige der Features, die die devtools bereitstellen, damit Sie Ihre Websites in Microsoft Edge einfacher und schneller erstellen und testen können.  
 
-To open the DevTools  
+So öffnen Sie das devtools  
 
-*   press `F12` 
-*   press `Ctrl`+`Shift`+`I` on Windows \(`Command`+`Option`+`I` on macOS\)  
+*   drücken Sie `F12` 
+*   Drücken Sie `Ctrl` + `Shift` + `I` auf Windows \ ( `Command` + `Option` + `I` unter macOS \).  
 
-If you want to see the HTML or CSS for an element on your site, right-click the element and select **Inspect** to jump into the Elements panel.  You may also press `Ctrl`+`Shift`+`C` on Windows \(`Command`+`Option`+`C` on macOS\) to open the DevTools in **Inspect Element Mode** which lets you select an element on the site and see the HTML and CSS in the **Elements** panel.  
+Wenn Sie den HTML-oder CSS-Code für ein Element auf Ihrer Website anzeigen möchten, klicken Sie mit der rechten Maustaste auf das Element, und wählen Sie über **prüfen** aus, um in das Panel Elemente zu wechseln.  Sie können auch `Ctrl` + `Shift` + `C` auf Windows \ ( `Command` + `Option` + `C` unter macOS \) drücken, um das devtools im Kontroll **Element Modus** zu öffnen, in dem Sie ein Element auf der Website auswählen und den HTML-und **Elements** CSS-Code im Element Panel sehen können.  
 
-If you want to see logs from your front-end JavaScript code or quickly run some script, press `Ctrl`+`Shift`+`J` on Windows or `Command`+`Option`+`J` on macOS to launch the Console panel in the DevTools.  
+Wenn Sie die Protokolle aus Ihrem Front-End-JavaScript-Code anzeigen oder schnell ein Skript ausführen möchten, drücken Sie `Ctrl` + `Shift` + `J` auf Windows oder `Command` + `Option` + `J` auf macOS, um den Konsolenbereich im devtools zu starten.  
 
-## Core tools  
+## Grundlegende Tools  
 
-:::image type="complex" source="./devtools-guide-chromium/media/devtools-core-tools.png" alt-text="Microsoft Edge (Chromium) DevTools":::
-   Microsoft Edge (Chromium) DevTools core tools  
+:::image type="complex" source="./devtools-guide-chromium/media/devtools-core-tools.png" alt-text="Microsoft Edge (Chrom) devtools":::
+   Microsoft Edge (Chrom) devtools-Kern Tools  
 :::image-end::: 
 
-The Microsoft Edge \(Chromium\) DevTools include the following panels.  
+Zu den Microsoft Edge \ (Chromium \) devtools gehören die folgenden Panels.  
 
-*   An **Elements** panel to edit HTML and CSS, inspect accessibility properties, view event listeners, and set DOM mutation breakpoints  
+*   Einen Bereich **Elemente** zum Bearbeiten von HTML und CSS, Untersuchen von Barrierefreiheitseigenschaften, Anzeigen von Ereignis-Listenern und Festlegen von Haltepunkten für DOM-Mutationen  
 *   Eine **Konsole** zum Anzeigen und Filtern von Protokollmeldungen, zum Überprüfen von JavaScript-Objekten und DOM-Knoten sowie zum Ausführen von JavaScript im Kontext des ausgewählten Fensters oder Rahmens  
-*   A **Sources** panel to open and live edit your code, set breakpoints, step through code, and see the state of your website one line of JavaScript at a time  
-*   A **Network** panel to monitor and inspect requests and responses from the network and browser cache   
+*   Ein **Quellen** Panel zum Öffnen und Live Bearbeiten Ihres Codes, Festlegen von Haltepunkten, durchlaufen des Codes und Anzeigen des Zustands Ihrer Website in einer Zeile mit JavaScript gleichzeitig  
+*   Einen Bereich **Netzwerk** zum Überwachen und Überprüfen von Anforderungen und Antworten aus dem Netzwerk- und Browsercache   
 *   Einen Bereich **Leistung**, um die Zeit und Systemressourcen zu ermitteln, die für Ihre Website erforderlich sind  
-*   A **Memory** panel to measure your use of memory resources and compare heap snapshots at different states of code runtime  
-*   An **Application** panel to inspect, modify, and debug web app manifests, service workers, and service worker caches.  You may also inspect and manage storage, databases, and caches from the **Application** panel.  
-*   A **Security** panel to debug security issues and ensure that you have properly implemented HTTPS on your website.  HTTPS provides critical security and data integrity for both your site and your users that provide personal information on your site.  
-*   An **Audits** panel \(now renamed **Lighthouse**\) to run an audit of your website.  The results of the audit help you improve the quality of your site in the following ways.  
-    *   Catch common errors related to making your website accessible, secure, performant, and so on.  
-    *   Fix each error.  
-    *   Build a PWA.  
+*   Einen Bereich **Arbeitsspeicher** zum Messen der Nutzung von Speicherressourcen und Vergleichen von Heap-Momentaufnahmen in unterschiedlichen Zuständen der Code-Runtime  
+*   Ein **Anwendungs** Panel zum Überprüfen, ändern und Debuggen von Web App-Manifesten, Servicemitarbeitern und Service Worker-Caches.  Sie können auch Speicher, Datenbanken und Caches über den **Anwendungs** Panel prüfen und verwalten.  
+*   Ein **Sicherheits** Bereich, um Sicherheitsprobleme zu Debuggen und sicherzustellen, dass Sie HTTPS auf Ihrer Website richtig implementiert haben.  HTTPS bietet kritische Sicherheit und Datenintegrität sowohl für Ihre Website als auch für Ihre Benutzer, die persönliche Informationen auf Ihrer Website bereitstellen.  
+*   Ein **Überwachungs** Panel \ (jetzt **Lighthouse**umbenannt), um eine Überprüfung Ihrer Website durchzuführen.  Die Ergebnisse der Prüfung helfen Ihnen, die Qualität Ihrer Website auf folgende Weise zu verbessern.  
+    *   Häufig auftretende Fehler im Zusammenhang mit dem Erstellen einer barrierefreien, sicheren, leistungsfähigen Website usw.  
+    *   Beheben Sie die einzelnen Fehler.  
+    *   Erstellen Sie eine PWA.  
 
 [!INCLUDE [audits-panel-note](./devtools-guide-chromium/includes/audits-panel-note.md)]  
 
-Please send your [feedback and feature requests](#getting-in-touch-with-the-microsoft-edge-devtools-team).  
+Bitte senden Sie Ihre [Feedback-und Funktionswünsche](#getting-in-touch-with-the-microsoft-edge-devtools-team).  
 
 ## Extensions  
 
-You may have used extensions to the DevTools to help you diagnose and debug issues when building your websites or apps.  You may acquire extensions for Microsoft Edge from the [Microsoft Edge Addons][MicrosoftEdgeAddonsExtensions] page.  From the [Microsoft Edge Addons][MicrosoftEdgeAddonsExtensions] page, you may browse DevTools extensions from the **Developer tools** category or search for a specific extension.  
+Sie haben möglicherweise Erweiterungen des devtools verwendet, um Ihnen beim Erstellen von Websites oder apps beim Diagnostizieren und Debuggen von Problemen zu helfen.  Sie können Erweiterungen für Microsoft Edge über die [Microsoft Edge Addons][MicrosoftEdgeAddonsExtensions] -Seite erwerben.  Auf der [Microsoft Edge-Addons][MicrosoftEdgeAddonsExtensions] -Seite können Sie devtools-Erweiterungen aus der Kategorie **Entwicklertools** durchsuchen oder nach einer bestimmten Erweiterung suchen.  
 
-You may also add extensions from the [Chrome Web Store][GoogleChromeWebstoreExtensions].  
+Sie können auch Erweiterungen aus dem [Chrome Web Store][GoogleChromeWebstoreExtensions]hinzufügen.  
 
-:::image type="complex" source="./devtools-guide-chromium/media/allow-extensions-from-stores.png" alt-text="Microsoft Edge (Chromium) DevTools":::
+:::image type="complex" source="./devtools-guide-chromium/media/allow-extensions-from-stores.png" alt-text="Microsoft Edge (Chrom) devtools":::
    Chrome Web Store in Microsoft Edge  
 :::image-end:::  
 
-At the top, select **Allow extensions from other stores** and then select **Allow** in the dialog that appears.  
+Wählen Sie oben im Dialogfeld, das angezeigt wird, die Option **Erweiterungen von anderen speichern zulassen aus** , und wählen Sie dann **zulassen** aus.  
 
 > [!NOTE]
-> Extensions installed from sources other than the Microsoft Store are unverified, and may affect browser performance.  
+> Erweiterungen, die von anderen Quellen als dem Microsoft Store installiert wurden, werden nicht überprüft und können sich auf die Browserleistung auswirken.  
 
-Select **Add to Chrome** to add your DevTools extension to Microsoft Edge!  
+Wählen Sie **zu Chrome hinzufügen** aus, um Ihre devtools-Erweiterung zu Microsoft Edge hinzuzufügen!  
 
-:::image type="complex" source="./devtools-guide-chromium/media/install-extension-from-chrome-store.png" alt-text="Microsoft Edge (Chromium) DevTools"  
+:::image type="complex" source="./devtools-guide-chromium/media/install-extension-from-chrome-store.png" alt-text="Microsoft Edge (Chrom) devtools"  

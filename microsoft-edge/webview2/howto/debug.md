@@ -55,7 +55,7 @@ Installieren und Einrichten der Skriptdebugger Tools in Visual Studio.
     1. Wählen Sie im Visual Studio-Installationsprogramm in der installierten Version die Schaltfläche **mehr** aus, und wählen Sie dann **ändern**aus.  
     1. Wählen Sie in Visual Studio unter **Arbeits auslasten**die Einstellung **Desktop Entwicklung in C++** aus.  
         
-        :::image type="complex" source="./media/workloads.png" alt-text="Bildschirm ' Ändern von Arbeitslasten ' in Visual Studio" lightbox="./media/workloads.png":::
+        :::image type="complex" source="./media/workloads.png" alt-text="DevTools-Debuggen" lightbox="./media/workloads.png":::
             Bildschirm ' Ändern von Arbeitslasten ' in Visual Studio :::image-end:::  
         
     1.  Wählen Sie **einzelne Komponenten**aus.  
@@ -63,7 +63,7 @@ Installieren und Einrichten der Skriptdebugger Tools in Visual Studio.
     1.  Wählen Sie die **JavaScript-Diagnose** Einstellung aus.  
     1.  Wählen Sie **ändern**aus. 
         
-        :::image type="complex" source="./media/indivcomp.png" alt-text="Visual Studio-Registerkarte ' einzelne Komponenten ändern '" lightbox="./media/indivcomp.png":::
+        :::image type="complex" source="./media/indivcomp.png" alt-text="DevTools-Debuggen" lightbox="./media/indivcomp.png":::
            Visual Studio-Registerkarte ' einzelne Komponenten ändern '  
         :::image-end:::  
         
@@ -72,7 +72,7 @@ Installieren und Einrichten der Skriptdebugger Tools in Visual Studio.
     1.  Wählen Sie unter den **Konfigurationseigenschaften**die Option **Debuggen**aus.  
     1.  Wählen Sie unter dem **Debuggertyp**die Option **JavaScript (WebView2)** aus.  
         
-        :::image type="complex" source="./media/enbjs.png" alt-text="Visual Studio-Konfigurationseigenschaft "Debuggen"" lightbox="./media/enbjs.png":::
+        :::image type="complex" source="./media/enbjs.png" alt-text="DevTools-Debuggen" lightbox="./media/enbjs.png":::
            Visual Studio-Konfigurationseigenschaft " **Debuggen** "  
         :::image-end:::  
         
@@ -80,19 +80,19 @@ Führen Sie die folgenden Aktionen aus, um Ihre WebView2-Anwendung zu debuggen.
 
 1.  Wenn Sie einen Haltepunkt im Quellcode festlegen möchten, zeigen Sie auf die linke Seite der Zeile, und wählen Sie einen Haltepunkt aus.  Der JS/TS-Debug-Adapter führt keine Quell Pfadzuordnung aus.  Sie müssen exakt denselben Pfad öffnen, der Ihrem WebView2 zugeordnet ist.  
     
-    :::image type="complex" source="./media/breakpoint.png" alt-text="Visual Studio-Haltepunkt hinzufügen" lightbox="./media/breakpoint.png"::: 
+    :::image type="complex" source="./media/breakpoint.png" alt-text="DevTools-Debuggen" lightbox="./media/breakpoint.png"::: 
        Visual Studio-Haltepunkt hinzufügen  
     :::image-end:::  
     
 1.  Zum Ausführen des Debuggers wählen Sie die Bit-Größe der Plattform aus, und wählen Sie dann die grüne Schaltfläche Wiedergabe neben dem **lokalen Windows-Debugger**aus.  Die Anwendung wird ausgeführt, und der Debugger stellt eine Verbindung mit dem ersten WebView2-Prozess her, der erstellt wird.  
     
-    :::image type="complex" source="./media/run.png" alt-text=" Lokaler Windows-Debugger in Visual Studio" lightbox="./media/run.png"::: 
+    :::image type="complex" source="./media/run.png" alt-text="DevTools-Debuggen" lightbox="./media/run.png"::: 
        **Lokaler Windows-Debugger** in Visual Studio  
     :::image-end:::  
     
 1.  Suchen Sie in der **Debug-Konsole**die Ausgabe des Debuggers.  
     
-    :::image type="complex" source="./media/console.png" alt-text=" Visual Studio-Debug-Konsole" lightbox="./media/console.png"::: 
+    :::image type="complex" source="./media/console.png" alt-text="DevTools-Debuggen" lightbox="./media/console.png"::: 
        Visual Studio- **Debug-Konsole**  
     :::image-end:::  
     
@@ -119,7 +119,7 @@ Führen Sie in Visual Studio-Code die folgenden Aktionen aus, um den Code zu deb
         
 1.  Wenn Sie einen Haltepunkt im Quellcode festlegen möchten, zeigen Sie auf die Zeile, und wählen Sie `F9`
     
-    :::image type="complex" source="./media/breakpointvs.png" alt-text="Der Haltepunkt wird in Visual Studio-Code gesetzt" lightbox="./media/breakpointvs.png":::
+    :::image type="complex" source="./media/breakpointvs.png" alt-text="DevTools-Debuggen" lightbox="./media/breakpointvs.png":::
        Der Haltepunkt wird in Visual Studio-Code gesetzt  
     :::image-end:::
     
@@ -130,13 +130,13 @@ Führen Sie in Visual Studio-Code die folgenden Aktionen aus, um den Code zu deb
     1.  Wählen Sie auf der Registerkarte **Ausführen** im Dropdownmenü die Option Startkonfiguration aus.  
     1.  Wenn Sie mit dem Debuggen der Anwendung beginnen möchten, wählen Sie Debuggen starten (das grüne Dreieck neben der Dropdownliste Startkonfiguration) aus.  
         
-        :::image type="complex" source="./media/runvs.png" alt-text=" Visual Studio-Registerkarte "Code ausführen"" lightbox="./media/runvs.png":::
+        :::image type="complex" source="./media/runvs.png" alt-text="DevTools-Debuggen" lightbox="./media/runvs.png":::
            Visual Studio-Registerkarte "Code ausführen"  
         :::image-end:::  
         
 1.  Öffnen Sie die **Debug-Konsole** , um die Debug-Ausgabe und die Fehler anzuzeigen.  
     
-    :::image type="complex" source="./media/resultsvs.png" alt-text=" Visual Studio-Code Debug-Konsole" lightbox="./media/resultsvs.png":::
+    :::image type="complex" source="./media/resultsvs.png" alt-text="DevTools-Debuggen" lightbox="./media/resultsvs.png":::
        Visual Studio-Code Debug-Konsole  
     :::image-end:::  
     
@@ -208,7 +208,7 @@ Führen Sie in Visual Studio-Code die folgenden Aktionen aus, um den Code zu deb
                 ,"trace": true  // Turn on  debug tracing, and save the output to a log file.
               ```  
               
-              :::image type="complex" source="./media/tracelog.png" alt-text=" Speichern Sie die Debug-Ausgabe in einer Protokolldatei." lightbox="./media/tracelog.png":::
+              :::image type="complex" source="./media/tracelog.png" alt-text="DevTools-Debuggen" lightbox="./media/tracelog.png":::
                  Speichern der Debug-Ausgabe in einer Protokolldatei  
               :::image-end:::  
            :::column-end:::
@@ -217,7 +217,7 @@ Führen Sie in Visual Studio-Code die folgenden Aktionen aus, um den Code zu deb
               ,"trace": "verbose"  // Turn on verbose tracing in the Debug Output pane.
               ```  
               
-              :::image type="complex" source="./media/verbose.png" alt-text=" Ausführliche Ausgabe" lightbox="./media/verbose.png":::
+              :::image type="complex" source="./media/verbose.png" alt-text="DevTools-Debuggen" lightbox="./media/verbose.png":::
                  Visual Studio-Code Debug-Ausgabe mit aktivierter ausführlicher Ablaufverfolgung  
               :::image-end:::  
            :::column-end:::

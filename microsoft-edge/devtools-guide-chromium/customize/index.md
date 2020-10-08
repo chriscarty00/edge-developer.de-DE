@@ -1,12 +1,12 @@
 ---
-description: A list of ways to customize Microsoft Edge DevTools
-title: Customize Microsoft Edge DevTools
+description: Eine Liste der Möglichkeiten zum Anpassen der Microsoft Edge-devtools
+title: Anpassen von Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
 ms.openlocfilehash: 238ee27a75aa94bf986d41f00a98e5eacc806d7f
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -32,77 +32,77 @@ ms.locfileid: "10992995"
 
 
 
-# Customize Microsoft Edge DevTools   
+# Anpassen von Microsoft Edge devtools   
 
   
 
-This page lists the ways to customize Microsoft Edge DevTools.  
+Auf dieser Seite werden die Möglichkeiten zum Anpassen der Microsoft Edge-devtools.  
 
-## Settings   
+## Einstellungen   
 
-**Settings** > **Preferences** contains many options for customizing DevTools.  
+**Einstellungen**  >  **Einstellungen** enthält viele Optionen zum Anpassen von devtools.  
 
-To open Settings, do one of the following:  
+Führen Sie eine der folgenden Aktionen aus, um die Einstellungen zu öffnen:  
 
-*   Press `F1` while DevTools is in focus.  
-*   Open the **Main Menu** and then select **Settings**.  
+*   Drücken Sie `F1` , während devtools den Fokus hat.  
+*   Öffnen Sie das **Hauptmenü** , und wählen Sie dann **Einstellungen**aus.  
     
-    :::image type="complex" source="../media/customize-settings-preferences.msft.png" alt-text="Settings" lightbox="../media/customize-settings-preferences.msft.png":::
-       **Settings**  
+    :::image type="complex" source="../media/customize-settings-preferences.msft.png" alt-text="Einstellungen" lightbox="../media/customize-settings-preferences.msft.png":::
+       **Einstellungen**  
     :::image-end:::  
     
-## Drawer   
+## Schublade   
 
-The **Drawer** contains many hidden features.  
+Die **Schublade** enthält viele versteckte Features.  
 
-Press `Escape` to open or close the **Drawer**.  
+Drücken Sie `Escape` , um die **Schublade**zu öffnen oder zu schließen.  
 
-:::image type="complex" source="../media/customize-drawer-open.msft.png" alt-text="Settings" lightbox="../media/customize-drawer-open.msft.png":::
-   The **Drawer**  
+:::image type="complex" source="../media/customize-drawer-open.msft.png" alt-text="Einstellungen" lightbox="../media/customize-drawer-open.msft.png":::
+   Die **Schublade**  
 :::image-end:::  
 
-Click **More** \(![More][ImageMoreIcon]\) to open other **Drawer** tabs.  
+Klicken Sie auf **mehr** \ ( ![ mehr ][ImageMoreIcon] \), um weitere Registerkarten für die **Schublade** zu öffnen.  
 
-:::image type="complex" source="../media/customize-drawer-open-more-tools.msft.png" alt-text="Settings" lightbox="../media/customize-drawer-open-more-tools.msft.png":::
-   The button to open **Drawer** tabs  
+:::image type="complex" source="../media/customize-drawer-open-more-tools.msft.png" alt-text="Einstellungen" lightbox="../media/customize-drawer-open-more-tools.msft.png":::
+   Schaltfläche zum Öffnen der Registerkarten für die **Schublade**  
 :::image-end:::  
 
-## Reorder panels   
+## Neuanordnen von Bereichen   
 
-Click and drag a panel tab to change its ordering.  Your custom tab order persists across DevTools sessions.  
+Klicken Sie auf die Registerkarte, und ziehen Sie Sie, um die Reihenfolge zu ändern.  Ihre benutzerdefinierte Aktivierreihenfolge bleibt in devtools-Sitzungen erhalten.  
 
 > [!NOTE]
-> By default, the **Network** panel tab is usually the fourth from the left.  In the following figure, the **Network** panel is the first from the left.  
+> Standardmäßig ist die Registerkarte **Netzwerk** Panel in der Regel die vierte von Links.  In der folgenden Abbildung ist das **Netzwerk** Panel die erste von Links.  
 
-:::image type="complex" source="../media/customize-network-first-position.msft.png" alt-text="Settings" lightbox="../media/customize-network-first-position.msft.png":::
-   A DevTools window with a custom panel tab ordering  
+:::image type="complex" source="../media/customize-network-first-position.msft.png" alt-text="Einstellungen" lightbox="../media/customize-network-first-position.msft.png":::
+   Ein devtools-Fenster mit einer benutzerdefinierten Registerkartenreihenfolge  
 :::image-end:::  
 
-## Change DevTools placement   
+## Ändern der devtools-Platzierung   
 
-See [Microsoft Edge DevTools Placement][DevToolsPlacement].  
+Weitere Informationen finden Sie unter [Platzierung von Microsoft Edge devtools][DevToolsPlacement].  
 
-:::image type="complex" source="../media/customize-dev-tools-dock-side.msft.png" alt-text="Settings" lightbox="../media/customize-dev-tools-dock-side.msft.png":::
-   Undocked DevTools  
+:::image type="complex" source="../media/customize-dev-tools-dock-side.msft.png" alt-text="Einstellungen" lightbox="../media/customize-dev-tools-dock-side.msft.png":::
+   Nicht angedockte devtools  
 :::image-end:::  
 
-## Dark theme   
+## Dunkles Design   
 
-See [Enable Dark Theme][DarkTheme].  
+Siehe [Aktivieren eines dunklen Designs][DarkTheme].  
 
-:::image type="complex" source="../media/customize-settings-appearance-theme.msft.png" alt-text="Settings" lightbox="../media/customize-settings-appearance-theme.msft.png":::
-   The dark theme  
+:::image type="complex" source="../media/customize-settings-appearance-theme.msft.png" alt-text="Einstellungen" lightbox="../media/customize-settings-appearance-theme.msft.png":::
+   Das dunkle Design  
 :::image-end:::  
 
-## Experiments   
+## Versuche   
 
-To enable DevTools experiments, complete the following actions.  
+Führen Sie die folgenden Aktionen aus, um devtools-Experimente zu aktivieren.  
 
-1.  Go to `edge://flags/#enable-devtools-experiments`.  
-1.  Click **Enable**.  
-1.  Click **Relaunch Now**, at the bottom of the page.  
+1.  Wechseln Sie zu `edge://flags/#enable-devtools-experiments` .  
+1.  Klicken Sie auf **Aktivieren**.  
+1.  Klicken Sie unten auf der Seite auf **neu starten**.  
 
-The next time you open DevTools, a new page is displayed called **Experiments** in [Settings](#settings).  
+Wenn Sie devtools das nächste Mal öffnen, wird eine neue Seite mit dem Namen **Experimente** in [Einstellungen](#settings)angezeigt.  
 
 <!--  
    
@@ -116,15 +116,15 @@ The next time you open DevTools, a new page is displayed called **Experiments** 
 
 <!-- links -->  
 
-[DevToolsPlacement]: ./placement.md "Change Microsoft Edge DevTools placement | Microsoft Docs"  
-[DarkTheme]: ./dark-theme.md "Enable Dark Theme in Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsPlacement]: ./placement.md "Ändern der Position von Microsoft Edge devtools | Microsoft docs"  
+[DarkTheme]: ./dark-theme.md "Aktivieren des dunklen Designs in Microsoft Edge devtools | Microsoft docs"  
 
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/customize/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
+> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
+> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/customize/index) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
 
-[![Creative Commons License][CCby4Image]][CCA4IL]  
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
+[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

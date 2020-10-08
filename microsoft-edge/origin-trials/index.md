@@ -1,13 +1,13 @@
 ---
 ms.assetid: ''
-description: Safely experiment for a fixed period of time and provide feedback on new platform features.
-title: Origin Trials
+description: Experimentieren Sie sicher während eines bestimmten Zeitraums, und geben Sie Feedback zu neuen Plattformfeatures.
+title: Herkunfts Versuche
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 06/29/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge, web development, html, css, origin trials, developer
+keywords: Edge, Web-Entwicklung, HTML, CSS, Origin Trials, Entwickler
 ms.openlocfilehash: 470896435ab348419749a7de00adcdb83b784df3
 ms.sourcegitcommit: 5cbc9237363b3a8ba212ca128aa03c71a33ec86f
 ms.translationtype: MT
@@ -15,89 +15,89 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 07/02/2020
 ms.locfileid: "10846528"
 ---
-# Use Origin Trials in Microsoft Edge  
+# Verwenden von Ursprungs versuchen in Microsoft Edge  
 
-Developers may use Origin Trials to try out experimental APIs on live sites for a limited period of time.  When using Origin Trials, users of Microsoft Edge that visit your site may run code that uses experimental APIs.  To access the experimental APIs on each user machine, you do not need to go to `edge://flags` and turn on feature flags.  For more information, see [experimental APIs][DeveloperMicrsoftEdgeOriginTrials].  Additionally, you may provide feedback on the design of the API, your use cases, or your experience using the APIs to browser engineers and the web standard community.  
+Entwickler können mithilfe von Origin Trials experimentelle APIs auf Live-Websites für einen bestimmten Zeitraum testen.  Bei Verwendung von Ursprungs Testversionen können Benutzer von Microsoft Edge, die Ihre Website besuchen, Code ausführen, der experimentelle APIs verwendet.  Wenn Sie auf die experimentellen APIs auf jedem Benutzer Computer zugreifen möchten, müssen Sie nicht zu den `edge://flags` Feature-Flags wechseln und diese aktivieren.  Weitere Informationen finden Sie unter [experimentelle APIs][DeveloperMicrsoftEdgeOriginTrials].  Darüber hinaus können Sie Feedback über das Design der API, ihre Anwendungsfälle oder Ihre Erfahrungen mithilfe der APIs für Browser Ingenieure und die Web-Standard Community bereitstellen.  
 
-## Get started using Origin Trials  
+## Erste Schritte mit Origin-Testversionen  
 
-For more information about the experimental APIs available in Microsoft Edge, see [Microsoft Edge Origin Trials Developer Console][DeveloperMicrsoftEdgeOriginTrials].  Ensure that you review the minimum version requirements for Microsoft Edge, and the trial end date to assess suitability of using the experimental APIs on your website.  
+Weitere Informationen zu den in Microsoft Edge verfügbaren experimentellen APIs finden Sie unter [Entwicklerkonsole für Microsoft Edge Origin Trials][DeveloperMicrsoftEdgeOriginTrials].  Stellen Sie sicher, dass Sie die Mindestsystemanforderungen für Microsoft Edge und das Enddatum der Testversion überprüfen, um die Eignung der Verwendung der experimentellen APIs auf Ihrer Website zu bewerten.  
 
 > [!NOTE]
-> An experiment may end earlier than planned if any of the following situations occur.  
-> *   A major security incident.  
-> *   If sufficient feedback is collected that indicates a major redesign is needed to meet the needs of web developers.  
-> In either case, a notification email is sent to all developers currently enrolled in the experiment.  
+> Ein Experiment kann früher als geplant enden, wenn eine der folgenden Situationen eintritt.  
+> *   Ein wichtiger Sicherheitsvorfall.  
+> *   Wenn genügend Feedback erfasst wird, das darauf hinweist, dass eine größere Neugestaltung erforderlich ist, um die Anforderungen von Webentwicklern zu erfüllen.  
+> In beiden Fällen wird eine Benachrichtigungs-e-Mail an alle Entwickler gesendet, die zurzeit beim Experiment registriert sind.  
 
-### Register for a trial of an experimental API  
+### Registrieren für eine Testversion einer experimentellen API  
 
-Use the following steps to register for a trial of an experimental API.  
+Führen Sie die folgenden Schritte aus, um sich für eine Testversion einer experimentellen API zu registrieren.  
 
-1.  Visit the [Microsoft Edge Origin Trials Developer Console][DeveloperMicrsoftEdgeOriginTrials] page.  
-1.  Choose the Register button on any of the available experiments.  
-1.  Sign into the Developer Console using your GitHub username and password.  
-1.  Choose **Authorize MicrosoftEdge**.  
-1.  Complete the form.  
+1.  Besuchen Sie die [Microsoft Edge Origin Trials-Entwickler Konsolen][DeveloperMicrsoftEdgeOriginTrials] Seite.  
+1.  Wählen Sie die Schaltfläche Registrieren in einem der verfügbaren Experimente aus.  
+1.  Melden Sie sich mit Ihrem GitHub-Nutzernamen und Kennwort bei der Entwicklerkonsole an.  
+1.  Wählen Sie **MicrosoftEdge autorisieren**aus.  
+1.  Füllen Sie das Formular aus.  
     
     > [!NOTE]
-    > To enroll a single or all subdomains, choose set the `Do you need to match all subdomains for the provided origin?` setting to `Yes`.  For example, `https://dev.contoso.com` is a single domain, and `https://*.contoso.com` uses a wildcard to represent all subdomains.  
+    > Wenn Sie eine einzelne oder alle Unterdomänen registrieren möchten, wählen Sie `Do you need to match all subdomains for the provided origin?` Einstellung festlegen auf aus `Yes` .  Beispielsweise `https://dev.contoso.com` handelt es sich um eine einzelne Domäne, bei der `https://*.contoso.com` alle Unterdomänen als Platzhalter dargestellt werden.  
     
     > [!IMPORTANT]
-    > The following origin formats are not allowed.  
-    > *   Specifying a subfolder on the origin.  For example, `https://contoso.com/path/subfolder`  
+    > Die folgenden Ursprungs Formate sind nicht zulässig.  
+    > *   Angeben eines Unterordners für den Ursprung  Beispiel: `https://contoso.com/path/subfolder`  
     > 
-    > *   Using an origin with query string parameters.  For example, `https://contoso.com/path/feature?query_parameter=12345`  
+    > *   Verwenden eines Ursprungs mit Abfragezeichenfolgenparametern  Beispiel: `https://contoso.com/path/feature?query_parameter=12345`  
     
-1.  Choose **ACCEPT and REGISTER**.  
+1.  Wählen Sie **annehmen und registrieren**aus.  
 
-### Apply your token  
+### Anwenden des Tokens  
 
-A token is instantly generated and displayed on the [Microsoft Edge Origin Trials Developer Console][DeveloperMicrsoftEdgeOriginTrials] page.  To begin using the trial on your website, use either of the following methods to apply the token to your page.  
+Ein Token wird sofort generiert und auf der [Microsoft Edge Origin Trials-Entwickler Konsolen][DeveloperMicrsoftEdgeOriginTrials] Seite angezeigt.  Wenn Sie die Testversion auf Ihrer Website verwenden möchten, verwenden Sie eine der folgenden Methoden, um das Token auf Ihre Seite anzuwenden.  
 
-*   Add the `origin-trial` attribute value and your token to the `meta` tag on every page that uses the experimental API.  
+*   Fügen Sie dem `origin-trial` `meta` Tag auf jeder Seite, die die experimental-API verwendet, den Attributwert und das Token hinzu.  
     
     ```html
     <meta http-equiv="origin-trial" content="replace-with-your-token">
     ```  
     
-*   Add `Origin-Trial` to the HTTP response header of your server.  
+*   Fügen Sie `Origin-Trial` den HTTP-Antwortheader Ihres Servers hinzu.  
     
     ```json
     Origin-Trial: replace-with-your-token
     ```  
     
 > [!NOTE]
-> Your token is valid for 6 weeks.  Before your trial ends, reminder emails are sent to you that ask for your feedback and ask you to consider renewing your trial before your token expires.  
+> Ihr Token ist für 6 Wochen gültig.  Bevor Ihr Testabonnement endet, werden Erinnerungs-e-Mails an Sie gesendet, die nach Ihrem Feedback Fragen, und Sie bitten, Ihre Testversion zu erneuern, bevor Ihr Token abläuft.  
 
-### Opt out of an experiment  
+### Deaktivieren eines Experiments  
 
-To opt out of an experiment, use one of the following methods to remove your token.  
+Wenn Sie ein Experiment deaktivieren möchten, verwenden Sie eine der folgenden Methoden, um Ihr Token zu entfernen.  
 
-*   Remove the `meta` tag from every page that used the experimental API.  
+*   Entfernen Sie die `meta` Kategorie von jeder Seite, die die experimental-API verwendet hat.  
     
     ```html
     <meta http-equiv="origin-trial" content="your-token">
     ```  
     
-*   Remove `Origin-Trial` from the HTTP response header of your server.  
+*   Entfernen Sie `Origin-Trial` aus dem HTTP-Antwortheader Ihres Servers.  
     
     ```json
     Origin-Trial: your-token
     ```  
     
-### Detect experimental features and provide a fallback  
+### Erkennen experimenteller Features und Bereitstellen eines Fallbacks  
 
-When using experimental APIs, ensure you provide a working experience to all visitors of your website.  Visitors may use browsers that do not support the experimental APIs that you added to your code.  Additionally, if your token expires before you renew it, the experimental API is no longer available which may result in errors.  To avoid this situation, ensure you detect features available in your browser.  For more information, see [Implementing feature detection][MDNImplementingFeatureDetection].
+Stellen Sie bei der Verwendung von experimentellen APIs sicher, dass Sie allen Besuchern Ihrer Website ein Arbeitserlebnis bieten.  Besucher können Browser verwenden, die die experimentellen APIs, die Sie Ihrem Code hinzugefügt haben, nicht unterstützen.  Wenn Ihr Token abläuft, bevor Sie es erneuern, ist die experimentelle API nicht mehr verfügbar, was zu Fehlern führen kann.  Um dies zu vermeiden, stellen Sie sicher, dass Sie die in Ihrem Browser verfügbaren Funktionen erkennen.  Weitere Informationen finden Sie unter [Implementieren der Feature-Erkennung][MDNImplementingFeatureDetection].
 
-### Roadmap for Allowed Origins  
+### Roadmap für zulässige Ursprünge  
 
-The Microsoft Edge Origin Trials portal today only supports SSL Enabled Origins, which means that websites must have HTTPS properly implemented to register for an experiment.  In the future, the following secure origins are planned.  
+Das Microsoft Edge-Ursprungs testportal unterstützt heute nur SSL-aktivierte Ursprünge, was bedeutet, dass für Websites https richtig implementiert sein muss, damit Sie sich für ein Experiment registrieren können.  In Zukunft sind die folgenden sicheren Ursprünge geplant.  
 
-*   Register `http://localhost` as the origin for your experiments.  To use `http://localhost` today, go to `edge://flags` and set the experiment to **Enabled**.  
-*   Use extensions with `extensions://` prefixed origins to enroll in experiments.  
+*   Registrieren `http://localhost` Sie sich als Ursprung für ihre Experimente.  Um heute zu verwenden `http://localhost` , wechseln Sie zu, `edge://flags` und legen Sie das Experiment auf **aktiviert**.  
+*   Verwenden Sie Erweiterungen mit `extensions://` vorfesten Ursprüngen, um sich bei Experimenten zu registrieren.  
     
 <!-- links -->  
 
-[DeveloperMicrsoftEdgeOriginTrials]: https://developer.microsoft.com/microsoft-edge/origin-trials "Microsoft Edge Origin Trials Developer Console | Microsoft Docs"  
+[DeveloperMicrsoftEdgeOriginTrials]: https://developer.microsoft.com/microsoft-edge/origin-trials "Microsoft Edge Origin Trials-Entwicklerkonsole | Microsoft docs"  
 
-[MDNImplementingFeatureDetection]: https://developer.mozilla.org/docs/learn/tools_and_testing/cross_browser_testing/feature_detection "Implementing feature detection | MDN"  
+[MDNImplementingFeatureDetection]: https://developer.mozilla.org/docs/learn/tools_and_testing/cross_browser_testing/feature_detection "Implementieren der Feature-Erkennung | MDN"  

@@ -1,5 +1,5 @@
 ---
-title: Using Windows Runtime Asynchronous Methods
+title: Verwenden von den asynchronen Methoden von Windows Runtime
 ms.custom: ''
 ms.date: 07/29/2020
 ms.prod: microsoft-edge
@@ -22,18 +22,18 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "10942076"
 ---
-# Using Windows Runtime asynchronous methods  
+# Asynchrone Methoden von Windows-Runtime verwenden  
 
 [!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
 
-Many Windows Runtime methods, especially methods that might take a long time to complete, are asynchronous.  These methods generally return an asynchronous action or operation \(for example, `Windows.Foundation.IAsyncAction`, `Windows.Foundation.IAsyncOperation`, `Windows.Foundation.IAsyncActionWithProgress`, or `Windows.Foundation.IAsyncOperationWithProgress`\).  These methods are represented in JavaScript by the [CommonJS/Promises/A pattern][CommonjsWikiPromises].  That is, they return a Promise object that has a [then function][PreviousVersionsWindowsAppsBr229728], for which you must provide a `completed` function that handles the result if the operation succeeds.  If you don't want to provide an error handler, you should use the [done function][PreviousVersionsWindowsAppsHr701079] instead of the `then` function.  
+Viele Windows-Runtime-Methoden, insbesondere Methoden, die möglicherweise eine lange Zeit in Anspruch nehmen, sind asynchron.  Diese Methoden geben in der Regel eine asynchrone Aktion oder Operation zurück (z. b.,,, `Windows.Foundation.IAsyncAction` `Windows.Foundation.IAsyncOperation` `Windows.Foundation.IAsyncActionWithProgress` oder `Windows.Foundation.IAsyncOperationWithProgress` \).  Diese Methoden werden in JavaScript anhand des [CommonJS/Promises/A-Musters][CommonjsWikiPromises]dargestellt.  Das heißt, Sie geben ein Promise-Objekt zurück, das über eine [Then-Funktion][PreviousVersionsWindowsAppsBr229728]verfügt, für die Sie eine Funktion bereitstellen müssen `completed` , die das Ergebnis behandelt, wenn der Vorgang erfolgreich ausgeführt wurde.  Wenn Sie keinen Fehlerhandler bereitstellen möchten, sollten Sie die Funktion [done][PreviousVersionsWindowsAppsHr701079] anstelle der `then` Funktion verwenden.  
 
 > [!IMPORTANT]
-> Windows Runtime features are not available for apps that run in Internet Explorer.  
+> Windows-Runtime-Features stehen für apps, die in Internet Explorer ausgeführt werden, nicht zur Verfügung.  
 
-## Examples of asynchronous methods  
+## Beispiele für asynchrone Methoden  
 
-In the following example, the `then` function takes a parameter that represents the completed value of the `createResourceAsync` method.  
+Im folgenden Beispiel `then` akzeptiert die Funktion einen Parameter, der den abgeschlossenen Wert der Methode darstellt `createResourceAsync` .  
 
 ```javascript
 client.createResourceAsync(uri, description, item)
@@ -43,7 +43,7 @@ client.createResourceAsync(uri, description, item)
             });
 ```  
 
-In this case, if the `createResourceAsync` method fails, it returns a promise in the error state, but does not throw an exception.  You can handle an error by using the `then` function as follows.  
+In diesem Fall wird bei einer `createResourceAsync` fehlgeschlagenen Methode eine Zusage im Fehlerzustand zurückgegeben, jedoch keine Ausnahme ausgelöst.  Sie können einen Fehler behandeln, indem Sie die `then` Funktion wie folgt verwenden.  
 
 ```javascript
 client.createResourceAsync(uri, description, item)
@@ -56,7 +56,7 @@ client.createResourceAsync(uri, description, item)
           });
 ```  
 
-If you don't want to handle the error explicitly, but do want it to throw an exception, you can use the `done` function instead.  
+Wenn Sie den Fehler nicht explizit behandeln, aber eine Ausnahme auslösen möchten, können Sie `done` stattdessen die Funktion verwenden.  
 
 ```javascript
 client.createResourceAsync(uri, description, item)
@@ -66,7 +66,7 @@ client.createResourceAsync(uri, description, item)
             });
 ```  
 
-You can also display the progress made towards completion by using a third function.  
+Mit einer dritten Funktion können Sie auch den Fortschritt zur Vervollständigung anzeigen.  
 
 ```javascript
 client.createResourceAsync(uri, description, item)
@@ -84,18 +84,18 @@ client.createResourceAsync(uri, description, item)
             });
 ```  
 
-For more information about asynchronous programming, see [Asynchronous Programming in JavaScript][PreviousVersionsWindowsAppsHh700330].  
+Weitere Informationen zur asynchronen Programmierung finden Sie unter [asynchrone Programmierung in JavaScript][PreviousVersionsWindowsAppsHh700330].  
 
-## See also  
+## Weitere Informationen  
 
-[Using the Windows Runtime in JavaScript][WindowsRuntimeJavascript]  
+[Verwenden der Windows-Runtime in JavaScript][WindowsRuntimeJavascript]  
 
 <!-- links -->  
 
-[WindowsRuntimeJavascript]: ./using-the-windows-runtime-in-javascript.md "Using the Windows Runtime in JavaScript | Microsoft Docs"  
+[WindowsRuntimeJavascript]: ./using-the-windows-runtime-in-javascript.md "Verwenden der Windows-Runtime in JavaScript | Microsoft docs"  
 
-[PreviousVersionsWindowsAppsBr229728]: /previous-versions/windows/apps/br229728(v=win.10) "Promise.then method | Microsoft Docs"  
-[PreviousVersionsWindowsAppsHh700330]: /previous-versions/windows/apps/hh700330(v=win.10) "Asynchronous programming in JavaScript (HTML) | Microsoft Docs"
-[PreviousVersionsWindowsAppsHr701079]: /previous-versions/windows/apps/hh701079(v=win.10) "Promise.done method | Microsoft Docs"  
+[PreviousVersionsWindowsAppsBr229728]: /previous-versions/windows/apps/br229728(v=win.10) "Promise. then-Methode | Microsoft docs"  
+[PreviousVersionsWindowsAppsHh700330]: /previous-versions/windows/apps/hh700330(v=win.10) "Asynchrone Programmierung in JavaScript (HTML) | Microsoft docs"
+[PreviousVersionsWindowsAppsHr701079]: /previous-versions/windows/apps/hh701079(v=win.10) "Promise. Done-Methode | Microsoft docs"  
 
-[CommonjsWikiPromises]: http://wiki.commonjs.org/wiki/Promises "Promises | CommonJS Spec Wiki"  
+[CommonjsWikiPromises]: http://wiki.commonjs.org/wiki/Promises "Versprechungen | CommonJS spec-wiki"  

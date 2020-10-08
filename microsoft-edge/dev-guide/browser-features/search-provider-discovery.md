@@ -1,13 +1,13 @@
 ---
 ms.assetid: f74760f5-061c-494d-b096-9fb6ecb71a16
-description: If you are a search provider, see how to ensure that Microsoft Edge supports your service.
-title: Search provider discovery - Dev guide
+description: Wenn Sie ein Suchanbieter sind, finden Sie Informationen dazu, wie Sie sicherstellen können, dass Microsoft Edge ihren Dienst unterstützt.
+title: Suchanbieter Ermittlung – dev-Leitfaden
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 07/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge, web development, html, css, javascript, developer
+keywords: Edge, Web-Entwicklung, HTML, CSS, JavaScript, Entwickler
 ms.openlocfilehash: 4ac8ea966e9c4736834a0be1130a8c2a8dfb2614
 ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
@@ -15,21 +15,21 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "10941969"
 ---
-# Search provider discovery  
+# Suchanbieterermittlung  
 
 [!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
-Rich search integration is built into the Microsoft Edge address bar, including search suggestions, results from the web, your browsing history, and favorites.  Microsoft Edge follows the [OpenSearch 1.1](https://github.com/dewitt/opensearch/blob/master/opensearch-1-1-draft-6.md) specification to discover and use web search providers.  If you are a search provider, here's how to ensure that Microsoft Edge supports your service.  
+Die Rich-Search-Integration ist in die Microsoft Edge-Adressleiste integriert, einschließlich Suchvorschlägen, Ergebnissen aus dem Internet, dem Browserverlauf und Favoriten.  Microsoft Edge folgt der [OpenSearch 1,1](https://github.com/dewitt/opensearch/blob/master/opensearch-1-1-draft-6.md) -Spezifikation, um Anbieter von Websuchen zu ermitteln und zu verwenden.  Wenn Sie ein Suchanbieter sind, gehen Sie wie folgt vor, um sicherzustellen, dass Microsoft Edge ihren Dienst unterstützt.  
 
-> [IMPORTANT] For user security and privacy, Microsoft Edge requires all searches be conducted over SSL.  
+> Wichtig Für Benutzersicherheit und Datenschutz erfordert Microsoft Edge, dass alle Suchvorgänge über SSL durchgeführt werden.  
 
-The following resources must be specified as `https` URLs to enable Microsoft Edge integration of your search engine:  
+Die folgenden Ressourcen müssen als URLs angegeben werden, damit die `https` Microsoft Edge-Integration Ihrer Suchmaschine möglich ist:  
 
-*   The site that contains the reference to the description document  
-*   The URL to the description document itself  
-*   The search query template  
+*   Die Website, die den Verweis auf das Beschreibungs Dokument enthält  
+*   Die URL des Beschreibungs Dokuments selbst  
+*   Die Suchabfrage Vorlage  
 
-1.  Provide an OpenSearch description file, which contains the name of the search provider, and the template to use to construct the search.  Here is an example document:  
+1.  Stellen Sie eine OpenSearch-Beschreibungsdatei bereit, die den Namen des Suchanbieters enthält, und die Vorlage, mit der die Suche erstellt werden soll.  Hier ist ein Beispieldokument:  
     
     ```html
     <?xml version="1.0" encoding="UTF-8"?> 
@@ -39,7 +39,7 @@ The following resources must be specified as `https` URLs to enable Microsoft Ed
     </OpenSearchDescription>
     ```  
     
-1.  Include a reference to your OpenSearch description file in the header section of your pages (typically this would include your site home page and search result pages), for example:  
+1.  Fügen Sie einen Verweis auf Ihre OpenSearch-Beschreibungsdatei in den Kopfzeilenbereich Ihrer Seiten ein (in der Regel würde dies die Startseite Ihrer Website und die Suchergebnisseiten umfassen), beispielsweise:  
     
     ```html
     <html>
@@ -53,6 +53,6 @@ The following resources must be specified as `https` URLs to enable Microsoft Ed
         ...
     ```  
     
-When a user browses to your search service, your OpenSearch description will be automatically picked up and saved for later use.  The user will then be able to go to Microsoft Edge settings and choose to add your search service to his or her list of search providers for the Microsoft Edge address bar.  
+Wenn ein Benutzer zu Ihrem Suchdienst durchsucht, wird Ihre OpenSearch-Beschreibung automatisch aufgenommen und zur späteren Verwendung gespeichert.  Der Benutzer kann dann zu den Microsoft Edge-Einstellungen wechseln und den Suchdienst zur Liste der Suchanbieter für die Microsoft Edge-Adressleiste hinzufügen.  
 
-See the [OpenSearch 1.1](https://github.com/dewitt/opensearch/blob/master/opensearch-1-1-draft-6.md) specification for further details on creating your OpenSearch description document.  
+Weitere Informationen zum Erstellen Ihres OpenSearch-Beschreibungs Dokuments finden Sie in der [OpenSearch 1,1](https://github.com/dewitt/opensearch/blob/master/opensearch-1-1-draft-6.md) -Spezifikation.  

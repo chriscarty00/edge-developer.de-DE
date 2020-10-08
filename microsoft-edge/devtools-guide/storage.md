@@ -1,12 +1,12 @@
 ---
-description: Use the Storage panel to inspect your web storage, IndexedDB, cookies, and request/response caches
-title: DevTools - Storage
+description: Überprüfen Ihres Webspeichers, IndexedDB, Cookies und Anforderungs-/Antwort-Caches mithilfe des Speicher Panels
+title: DevTools-Speicher
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools, web storage, local storage, session storage, indexeddb, cookies, service worker, cache
+keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools, Web Storage, lokaler Speicher, Sitzungsspeicher, indexeddb, Cookies, Service Worker, Cache
 ms.custom: seodec18
 ms.openlocfilehash: 8de6e1f90f86fa09b116646918c6be1d8cfb0a72
 ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
@@ -15,180 +15,180 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "10567588"
 ---
-# Storage
+# Speicher
 
-Use the **Storage** panel to inspect and manage various locally cached data, including:
+Verwenden Sie den **Speicher** Panel, um verschiedene lokal zwischengespeicherte Daten zu überprüfen und zu verwalten, einschließlich:
 
- - [Web storage](#local-and-session-storage-managers) (*Local* and *Session* storage) key/values pairs
- - [Indexed DB](#indexeddb-manager) structured data
- - [Cookies](#cookies-list) for the domain
- - [Cache](#cache-manager) (request/response pairs) for service worker debugging
+ - Schlüssel-Wert-Paare für [Webspeicher](#local-and-session-storage-managers) (*lokaler* und *Sitzungs* Speicher)
+ - [Indizierte DB](#indexeddb-manager) -strukturierte Daten
+ - [Cookies](#cookies-list) für die Domäne
+ - [Cache](#cache-manager) (Anforderung/Antwort-Paare) für das Debuggen von Service Worker
 
-Expand any of those categories and click on a child entry to open its resource manager tab.
+Erweitern Sie eine dieser Kategorien, und klicken Sie auf einen untergeordneten Eintrag, um die Registerkarte Ressourcen-Manager zu öffnen.
 
-## Local and Session storage managers
+## Lokale und Sitzungsspeicher-Manager
 
-Use the *Local Storage manager* and *Session Storage manager* to inspect and manage the web storage for  your page. 
+Verwenden Sie den *lokalen Speicher-Manager* und den *Sitzungsspeicher-Manager* , um den Webspeicher für Ihre Seite zu überprüfen und zu verwalten. 
 
-The **Local Storage** and **Session Storage** folders inside the Storage panel's [*Resource picker*](./debugger.md#resource-picker) display a list of origins for the page. Selecting one of these frames opens up an editable table of the current key/value pairs set via [Window.localStorage](https://developer.mozilla.org/docs/Web/API/Window/localStorage) or [Window.sessionStorage](https://developer.mozilla.org/docs/Web/API/Window/sessionStorage), respectively (and/or set directly from the  DevTools [Storage list](#storage-list)).
+In den **lokalen Speicher** -und **Sitzungsspeicher** Ordnern in der [*Ressourcenauswahl*](./debugger.md#resource-picker) des Speicher Panels wird eine Liste der Ursprünge für die Seite angezeigt. Wenn Sie einen dieser Frames auswählen, wird eine bearbeitbare Tabelle mit den aktuellen Schlüssel-Wert-Paaren geöffnet, die über [Window. localStorage](https://developer.mozilla.org/docs/Web/API/Window/localStorage) oder [Window. sessionStorage](https://developer.mozilla.org/docs/Web/API/Window/sessionStorage)(und/oder direkt aus der devtools- [Speicherliste](#storage-list)) gesetzt werden.
 
-![DevTools Cookies manager](./media/storage_web_storage.png)
+![DevTools-Cookies-Manager](./media/storage_web_storage.png)
 
-From the *Local Storage* and *Session Storage* tabs you can:
+Auf den Registerkarten *lokaler Speicher* und *Sitzungsspeicher* können Sie Folgendes ausführen:
 
- - **Refresh** (`Ctrl+F5`) the [storage list](#cookies-list) to see the current set of key/values pairs for the given domain. (The list does not auto-refresh upon script updates.)
- - **Simulate reaching the storage limit** for Microsoft Edge web storage. Each domain and subdomain has its own storage area, however there is a combined limit:
-    - **Subdomains:** up to 5 MBs of space
-    - **Domains:** up to 10 MBs of space
-    - **Total for all domains:** up to 50 MBs of space
+ - **Aktualisieren** ( `Ctrl+F5` ) die [Speicherliste](#cookies-list) , um die aktuelle Gruppe von Schlüssel-Wert-Paaren für die angegebene Domäne anzuzeigen. (Die Liste wird bei Skript Aktualisierungen nicht automatisch aktualisiert.)
+ - **Simulieren Sie das Erreichen der Speichergrenze** für Microsoft Edge Web Storage. Jede Domäne und Unterdomäne verfügt über einen eigenen Speicherbereich, es gibt jedoch eine kombinierte Grenze:
+    - Unter **Domänen:** bis zu 5 MBS Speicherplatz
+    - **Domänen:** bis zu 10 MBS Speicherplatz
+    - **Gesamtzahl für alle Domänen:** bis zu 50 MBS Speicherplatz
 
-   Session storage is cleared as soon as the last browser tab referencing its origin is closed. Local storage entries persist indefinitely until cleared programmatically by the page or manually by the user:
+   Der Sitzungsspeicher wird gelöscht, sobald der letzte Browser Reiter, der auf seinen Ursprung verweist, geschlossen ist. Lokale Speichereinträge bleiben unbegrenzt bestehen, bis Sie programmgesteuert von der Seite oder manuell vom Benutzer gelöscht werden:
 
-   **Settings** > **Clear browsing data** > **Cookies and saved website data**
+   **Einstellungen**  >  **Löschen von Browserdaten**  >  **Cookies und gespeicherte Website Daten**
 
-![Clear browsing data from the Microsoft Edge Settings panel](./media/settings_clear_browsing_data.png)
+![Löschen von Daten aus dem Microsoft Edge Settings-Panel](./media/settings_clear_browsing_data.png)
 
-### Storage list
+### Speicherliste
 
-From the *Storage list* table you can:
+In der Tabelle " *Speicherliste* " können Sie Folgendes ausführen:
 
- - **Inspect and sort** your key/value pairs by clicking on either column name in the table.
- - **Edit** the *Key* and *Value* of an existing entry by clicking in the cell.
- - **Delete** (`Del`) an entry from the right-click context menu option, *Delete item*.
- - **Add** a new key/value pair by clicking on the empty row at the bottom of the table.
+ - Überprüfen Sie Ihre Schlüssel-Wert-Paare **, und Sortieren** Sie Sie, indem Sie in der Tabelle auf einen der Spaltennamen klicken.
+ - **Bearbeiten** Sie den *Schlüssel* und *Wert* eines vorhandenen Eintrags, indem Sie in die Zelle klicken.
+ - **Löschen** `Del` Sie einen Eintrag aus der Kontextmenüoption, und löschen Sie das *Element*.
+ - **Fügen Sie** ein neues Schlüssel-Wert-Paar hinzu, indem Sie auf die leere Zeile am Ende der Tabelle klicken.
 
 
-### Shortcuts
+### Verknüpfungen
 
-| Action              | Shortcut      |
+| Aktion              | Tastenkombination      |
 |:--------------------|:--------------|
-| Refresh             | `Ctrl` + `F5` |
-| Delete item         | `Del`         |
-| Copy selected items | `Ctrl` + `C`  |
-| Select all          | `Ctrl` + `A`  |
+| Aktualisieren             | `Ctrl` + `F5` |
+| Element löschen         | `Del`         |
+| Kopieren der markierten Elemente | `Ctrl` + `C`  |
+| Alle auswählen          | `Ctrl` + `A`  |
 
 
-## IndexedDB manager
+## IndexedDB-Manager
 
-Use the **IndexedDB** tab to inspect and manage the structured data stored locally on a client machine. Specifically, you can inspect/sort and refresh your object stores and indices, and also delete individual key-value entries.
+Verwenden Sie die Registerkarte **IndexedDB** , um die strukturierten Daten, die lokal auf einem Clientcomputer gespeichert sind, zu überprüfen und zu verwalten. Insbesondere können Sie Ihre Objektspeicher und Indizes prüfen/sortieren und aktualisieren sowie einzelne Schlüssel-Wert-Einträge löschen.
 
 > [!TIP]
-> You can use our [Audio Mixer](https://developer.microsoft.com/microsoft-edge/testdrive/demos/audiomixer/) demo to test drive the *IndexedDB manager* in Microsoft Edge DevTools.
+> Sie können unsere [Audiomixer-](https://developer.microsoft.com/microsoft-edge/testdrive/demos/audiomixer/) Demo verwenden, um den *IndexedDB-Manager* in Microsoft Edge devtools zu testen.
 
-To delete all the IndexedDB data stored for the current user in Microsoft Edge, use the Microsoft Edge *Settings* menu:
+Wenn Sie alle IndexedDB-Daten löschen möchten, die für den aktuellen Benutzer in Microsoft Edge gespeichert sind, verwenden Sie das Menü Microsoft Edge *Settings (Einstellungen* ):
 
-**...** > **Settings** > **Clear browsing data** > **Cookies and saved website data**
+**...** >  **Einstellungen**  >  **Löschen von Browserdaten**  >  **Cookies und gespeicherte Website Daten**
 
-The **IndexedDB** folder inside the Debugger's [*Resource picker*](./debugger.md#resource-picker) displays a list of origins from the resources loaded by the page. Any IndexedDB (IDB) databases will be listed under the origin, along with their object stores. 
+Der **IndexedDB** -Ordner in der [*Ressourcenauswahl*](./debugger.md#resource-picker) des Debuggers zeigt eine Liste der Ursprünge der Ressourcen an, die von der Seite geladen werden. Alle IndexedDB-Datenbanken (IDB) werden unter dem Ursprung zusammen mit den Objekt speichern aufgelistet. 
 
-![DevTools IndexedDB manager](./media/storage_indexeddb.png)
+![DevTools-IndexedDB-Manager](./media/storage_indexeddb.png)
 
-### IndexedDB Toolbar
+### IndexedDB-Symbolleiste
 
-From the *IndexedDB* toolbar you can:
+Auf der *IndexedDB* -Symbolleiste können Sie Folgendes ausführen:
 
- - **Refresh** (`Ctrl+F5`) to see the current entries in the object store or index of your database. The IndexedDB manager does not auto-refresh when changes are made to your database.
+ - **Refresh** ( `Ctrl+F5` ), um die aktuellen Einträge im Objektspeicher oder Index der Datenbank anzuzeigen. Der IndexedDB-Manager wird nicht automatisch aktualisiert, wenn Änderungen an der Datenbank vorgenommen wurden.
 
-### Object store entries list
+### Liste der Objektspeicher Einträge
 
-From the *Object store* or *Index* table you can:
+In der *Objektspeicher* -oder *Index* Tabelle können Sie Folgendes ausführen:
 
- - **Inspect and sort** your key-value pairs by clicking on any column name in the table.
- - **Refresh** (`Ctrl+F5`)
- - **Delete item** (`Del`) to remove the selected entry in your object store or index. You can also do this from the right-click [context menu](#context-menu) option, *Delete item*.
- - **Copy selected items** (`Ctrl+C`) to copy the selected item to your clipboard. You can also do this from the right-click [context menu](#context-menu) option, *Copy selected item*.
- - **Select all** (`Ctrl+A`) to select all the entries in your object store or index. You can also do this from the right-click [context menu](#context-menu) option, *Select all*.
+ - Überprüfen Sie Ihre Schlüssel-Wert-Paare **, und Sortieren** Sie Sie, indem Sie in der Tabelle auf einen beliebigen Spaltennamen klicken.
+ - **Refresh** ( `Ctrl+F5` )
+ - **Element löschen** ( `Del` ), um den ausgewählten Eintrag im Objektspeicher oder-Index zu entfernen. Sie können dies auch über die [Kontextmenü](#context-menu) Option " *Element löschen*" ausführen.
+ - **Ausgewählte Elemente kopieren** ( `Ctrl+C` ), um das ausgewählte Element in die Zwischenablage zu kopieren. Sie können dies auch über die [Kontextmenü](#context-menu) Option mit der rechten Maustaste ausführen, um das *ausgewählte Element zu kopieren*.
+ - **Wählen Sie alle** ( `Ctrl+A` ) aus, um alle Einträge in Ihrem Objektspeicher oder-Index auszuwählen. Sie können dies auch über die [Kontextmenü](#context-menu) Option mit der rechten Maustaste und dann auf *Alle auswählen*.
 
-The columns of the *Object store* or *Index* table are sortable:
+Die Spalten der *Objektspeicher* -oder *Index* Tabelle sind sortierbar:
 
-Column | Description
+Spalte | Beschreibung
 :------------ | :-------------
-Key | Name of the key-value pair (same as *Primary Key*) when iterating over an object store; Name of the index key (cursor's current key) when iterating over an index
-Primary Key | Name of the key-value pair (see *MDN web docs* for more on IDB [keys](https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB#Structuring_the_database))
-Value | Value of the key-value pair
+Schlüssel | Name des Schlüssel-Wert-Paars (identisch mit dem *Primärschlüssel*) beim Durchlaufen eines Objektspeichers; Name des Indexschlüssels (aktuelle Taste des Cursors) beim Durchlaufen eines Indexes
+Primärschlüssel | Name des Schlüssel-Wert-Paars (Weitere Informationen zu den IDB- [Schlüsseln](https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB#Structuring_the_database)finden Sie unter *MDN Web docs* )
+Wert | Wert des Schlüssel-Wert-Paars
 
-Check out *MDN web docs* for more on [IndexedDB concepts and usage](https://developer.mozilla.org/docs/Web/API/IndexedDB_API).
+Weitere Informationen zu [IndexedDB-Konzepten und-Verwendung](https://developer.mozilla.org/docs/Web/API/IndexedDB_API)finden Sie unter *MDN Web docs* .
 
-### Context menu
+### Kontextmenü
 
-In addition to the [*IndexedDB* toolbar](#indexeddb-toolbar), you can also manage your data in object stores or indices from the right-click **Context menu** and/or the keyboard [shortcuts](#shortcuts).
+Neben der [ *IndexedDB* -Symbolleiste](#indexeddb-toolbar)können Sie auch Ihre Daten in Objekt speichern oder Indizes über das **Kontextmenü** mit der rechten Maustaste und/oder die Tasten [Kombinationen](#shortcuts)verwalten.
 
-### Shortcuts
+### Verknüpfungen
 
-Action | Shortcut
+Aktion | Tastenkombination
 :------------ | :-------------
-Refresh | `Ctrl` + `F5`
-Delete key-value pair | `Del`
-Copy selected items | `Ctrl` + `C`
-Select all | `Ctrl` + `A`
+Aktualisieren | `Ctrl` + `F5`
+Schlüssel-Wert-Paar löschen | `Del`
+Kopieren der markierten Elemente | `Ctrl` + `C`
+Alle auswählen | `Ctrl` + `A`
 
-## Cookies manager
+## Cookies-Manager
 
-Use the *Cookies manager* to inspect and manage the cookies for the given domain. 
+Verwenden Sie den *Cookies-Manager* , um die Cookies für die angegebene Domäne zu überprüfen und zu verwalten. 
 
-The **Cookies** folder inside the Debugger's [*Resource picker*](./debugger.md#resource-picker) displays a list of origins from the resources loaded by the page. Selecting one of these frames opens up a table representing the current cookies set by either [HTTP](https://developer.mozilla.org/docs/Web/HTTP/Cookies) header or via script with [Document.cookie](https://developer.mozilla.org/docs/Web/API/Document/cookie).
+Der Ordner " **Cookies** " in der [*Ressourcenauswahl*](./debugger.md#resource-picker) des Debuggers zeigt eine Liste der Ursprünge der Ressourcen an, die von der Seite geladen werden. Wenn Sie einen dieser Frames auswählen, wird eine Tabelle geöffnet, die die aktuellen Cookies darstellt, die entweder über den [http](https://developer.mozilla.org/docs/Web/HTTP/Cookies) -Header oder über ein Skript mit [Document. Cookie](https://developer.mozilla.org/docs/Web/API/Document/cookie)gesetzt sind.
 
-![DevTools Cookies manager](./media/storage_cookies.png)
+![DevTools-Cookies-Manager](./media/storage_cookies.png)
 
-From the *Cookies* tab toolbar you can:
+Über die Registerkarte " *Cookies* " können Sie Folgendes tun:
 
- - **Refresh** (`Ctrl+F5`) the [Cookies list](#cookies-list) to see the current set of cookies for the given domain. (The list does not auto-refresh.)
- - **Delete all cookies** (`Ctrl+Shift+Del`) (session and permanent) for the path of the current page.
- - **Delete all session cookies** (`Ctrl+Del`) for the path of the current page.
+ - **Aktualisieren** `Ctrl+F5` Sie die [Liste der Cookies](#cookies-list) , um die aktuelle Gruppe von Cookies für die angegebene Domäne anzuzeigen. (Die Liste wird nicht automatisch aktualisiert.)
+ - **Löschen Sie alle Cookies** ( `Ctrl+Shift+Del` ) (Session und permanent) für den Pfad der aktuellen Seite.
+ - **Löschen Sie alle Sitzungscookies** ( `Ctrl+Del` ) für den Pfad der aktuellen Seite.
 
-To completely clear your *Cookies list*, you might need to **Clear all cookies for the domain** from the [**Network**](./network.md#toolbar) panel toolbar.
+Um die Liste der *Cookies*vollständig zu löschen, müssen Sie möglicherweise **alle Cookies für die Domäne** über die Symbolleiste des [**Netzwerk**](./network.md#toolbar) Panels löschen.
 
-### Cookies list
+### Liste der Cookies
 
-From the *Cookies list* table you can:
+In der Tabelle " *Cookies-Liste* " können Sie Folgendes ausführen:
 
- - **Inspect and sort** your cookies by clicking on any column name in the table.
- - **Edit** the *Name* and *Value* of an existing cookie by clicking in the cell.
- - **Delete** (`Del`) a cookie from the right-click [context menu](#context-menu) option, *Delete cookie*.
- - **Add** a new session cookie for the given *Domain/Path* by clicking on the empty row at the bottom of the table. This only works for session cookies; permanent cookies (with specific expiry dates) must be set with traditional methods. The *Domain* and *Path* values are auto-filled according to the location of the page.
+ - Über **prüfen und Sortieren** Sie Ihre Cookies, indem Sie in der Tabelle auf einen beliebigen Spaltennamen klicken.
+ - **Bearbeiten** Sie den *Namen* und den *Wert* eines vorhandenen Cookies, indem Sie in die Zelle klicken.
+ - **Löschen** ( `Del` ) eines Cookies aus der [Kontextmenü](#context-menu) Option " *Cookie löschen*"
+ - **Fügen Sie** ein neues Sitzungscookie für die angegebene *Domäne/* den angegebenen Pfad hinzu, indem Sie auf die leere Zeile am Ende der Tabelle klicken. Dies funktioniert nur bei Sitzungscookies; permanente Cookies (mit bestimmten Ablaufdaten) müssen mit traditionellen Methoden festgesetzt werden. Die Werte für *Domäne* und *Pfad* werden automatisch entsprechend dem Speicherort der Seite ausgefüllt.
 
-The columns of the *Cookies list* are sortable:
+Die Spalten der *Liste "Cookies* " sind sortierbar:
 
-Column | Beschreibung
+Spalte | Beschreibung
 :------------ | :-------------
-Name | Name of the cookie
-Value | Value of the cookie
-Domain | Host name of the cookie (may be empty)
-Path | URL path for the cookie (may be empty)
-Expires | Maximum lifetime of the cookie as an HTTP-date timestamp. If no `Expires` or `Max-Age` was set, the entry is considered a *Session* cookie.
-HTTP only | Indicates if the cookie was set with `HttpOnly` directive, indicating that it is inaccessible from JavaScript
-Secure | Indicates if the cookie was set with the `Secure` directive, indicating it will only be sent to the server from a request using SSL and the HTTPS protocol.
+Name | Name des Cookies
+Wert | Wert des Cookies
+Domäne | Hostname des Cookies (möglicherweise leer)
+Pfad | URL-Pfad für das Cookie (möglicherweise leer)
+Läuft ab | Maximale Lebensdauer des Cookies als http-Datumsstempel. `Expires` `Max-Age` Ist "Nein" oder "wurde" gesetzt, gilt der Eintrag als *Sitzungs* Cookie.
+Nur http | Gibt an, ob das Cookie mit Directive festgesetzt wurde `HttpOnly` , was darauf hinweist, dass von JavaScript aus kein Zugriff möglich ist.
+Sicherheit | Gibt an, ob das Cookie mit der `Secure` Direktive gesetzt wurde, was angibt, dass es nur von einer Anforderung mit SSL und dem HTTPS-Protokoll an den Server gesendet wird.
 
-See the **MDN web docs** [Set-Cookie](https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie) reference for further details on cookie properties.
+Weitere Informationen zu Cookie-Eigenschaften finden Sie im **MDN Web docs** [-Satz-Cookie-](https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie) Referenz.
 
-### Context menu
+### Kontextmenü
 
-In addition to the *Cookies* tab [toolbar](#cookies-manager), you can also manage your cookies from the right-click **Context menu** and/or the keyboard [shortcuts](#shortcuts).
+Neben der [Symbolleiste](#cookies-manager)" *Cookies* " können Sie Ihre Cookies auch über das **Kontextmenü** der rechten Maustaste und/oder die Tasten [Kombinationen](#shortcuts)verwalten.
 
-### Shortcuts
+### Verknüpfungen
 
-| Action                     | Shortcut                 |
+| Aktion                     | Tastenkombination                 |
 |:---------------------------|:-------------------------|
-| Refresh                    | `Ctrl` + `F5`            |
-| Delete cookie              | `Del`                    |
-| Delete all cookies         | `Ctrl` + `Shift` + `Del` |
-| Delete all session cookies | `Ctrl` + `Del`           |
-| Copy selected items        | `Ctrl` + `C`             |
-| Select all                 | `Ctrl` + `A`             |
+| Aktualisieren                    | `Ctrl` + `F5`            |
+| Löschen eines Cookies              | `Del`                    |
+| Alle Cookies löschen         | `Ctrl` + `Shift` + `Del` |
+| Löschen aller Sitzungscookies | `Ctrl` + `Del`           |
+| Kopieren der markierten Elemente        | `Ctrl` + `C`             |
+| Alle auswählen                 | `Ctrl` + `A`             |
 
-### Cache manager
+### Cache-Manager
 
-Clicking on a specific cache entry will open up the service worker **Cache** manager, where you can inspect and optionally delete cache entries (*Request* and *Response* key/value pairs):
+Wenn Sie auf einen bestimmten Cacheeintrag klicken, wird der Service Worker- **Cache** -Manager geöffnet, in dem Sie Cacheeinträge (*Anforderungs* -und *Antwort* Schlüssel-Wert-Paare) überprüfen und optional löschen können:
 
-![Cache manager](./media/storage_cache.png)
+![Cache-Manager](./media/storage_cache.png)
 
-### Shortcuts
+### Verknüpfungen
 
-#### Cache manager
+#### Cache-Manager
 
-| Action              | Shortcut      |
+| Aktion              | Tastenkombination      |
 |:--------------------|:--------------|
-| Refresh             | `Ctrl` + `F5` |
-| Delete item         | `Del`         |
-| Copy selected items | `Ctrl` + `C`  |
-| Select all          | `Ctrl` + `A`  |
+| Aktualisieren             | `Ctrl` + `F5` |
+| Element löschen         | `Del`         |
+| Kopieren der markierten Elemente | `Ctrl` + `C`  |
+| Alle auswählen          | `Ctrl` + `A`  |

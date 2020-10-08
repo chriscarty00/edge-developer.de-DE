@@ -1,12 +1,12 @@
 ---
-description: Learn about the various design aspects and UI behavior to consider when creating Microsoft Edge extensions.
-title: Extensions - Design
+description: Informieren Sie sich über die verschiedenen Entwurfsaspekte und das Benutzeroberflächenverhalten, die beim Erstellen von Microsoft Edge-Erweiterungen zu berücksichtigen sind.
+title: Erweiterungen – Entwurf
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/08/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge, web development, javascript, design, icons, developer
+keywords: Edge, Web-Entwicklung, JavaScript, Design, Symbole, Entwickler
 ms.openlocfilehash: 622d72453ea3ecd2897efcf8f67e1b2aa7a0937c
 ms.sourcegitcommit: da768193c7ae7b611f4fbb1746f16d9818e42bac
 ms.translationtype: MT
@@ -14,31 +14,31 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/28/2020
 ms.locfileid: "10684064"
 ---
-# Design Guidelines For Microsoft Edge Extensions  
+# Entwurfsrichtlinien für Microsoft Edge-Erweiterungen  
 
 [!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-The following page contains various design aspects and UI behavior to consider when creating Microsoft Edge extensions.  
+Die folgende Seite enthält verschiedene Entwurfsaspekte und Benutzeroberflächenverhalten, die beim Erstellen von Microsoft Edge-Erweiterungen zu berücksichtigen sind.  
 
-## Icons  
+## Symbole  
 
-You should make the icons of your extension using a vector graphic.  You must create a few different sizes of your icon for your extension, and three additional sizes if you want to package your extension.  Microsoft Edge extensions do not support .svg icons.  
+Sie sollten die Symbole ihrer Erweiterung mithilfe einer Vektorgrafik erstellen.  Sie müssen ein paar unterschiedliche Größen Ihres Symbols für Ihre Erweiterung und drei zusätzliche Größen erstellen, wenn Sie Ihre Erweiterung verpacken möchten.  Microsoft Edge-Erweiterungen unterstützen keine SVG-Symbole.  
 
-Before you create your extension icons, you should review the [accessibility][ExtensionsGuidesAccessibility] guide to ensure that your icons have high enough contrast and are visible in both the light and dark themes of Microsoft Edge.  
+Bevor Sie Ihre Erweiterungssymbole erstellen, sollten Sie den Leitfaden zur [Barrierefreiheit][ExtensionsGuidesAccessibility] überprüfen, um sicherzustellen, dass Ihre Symbole einen hohen Kontrast aufweisen und sowohl in hellen als auch in dunklen Designs von Microsoft Edge sichtbar sind.  
 
-While any webkit image format is supported, .png icons are recommended for transparency support.  
+Während ein WebKit-Bildformat unterstützt wird, werden PNG-Symbole für die Transparenz Unterstützung empfohlen.  
 
-### Icons for your extension  
+### Symbole für Ihre Erweiterung  
 
-For your extension, you must create one icon size for the browser action or page action, and one icon size for the **Extensions** pane.  More than one size for each may be provided to support high resolution displays.  
+Für Ihre Erweiterung müssen Sie eine Symbolgröße für die Browser Aktion oder Seiten Aktion und eine Symbolgröße für den Bereich " **Erweiterungen** " erstellen.  Es können mehr als eine Größe für die einzelnen Größen zur Unterstützung von Displays mit höherer Auflösung bereitgestellt werden.  
 
-An extension should have a browser action or page action icon.  The browser action and page action icons may be changed at runtime using the [browserAction.setIcon][MSDApiBrowseractionSeticon] method or [pageAction.setIcon][MDNApiPageactionSeticon] method.  
+Eine Erweiterung sollte über eine Browser Aktion oder ein Symbol für eine Seiten Aktion verfügen.  Die Browser Aktion-und Seiten Aktionssymbole können zur Laufzeit mithilfe der [BrowserAction. SetIcon][MSDApiBrowseractionSeticon] -Methode oder der [PageAction. SetIcon][MDNApiPageactionSeticon] -Methode geändert werden.  
 
-#### Browser action  
+#### Browser Aktion  
 
-The preferred sizes for browser action and page action icons are `20px`, `25px`, `30px`, and `40px`.  Other supported sizes include `19px`, `35px`, and `38px`.  
+Die bevorzugten Größen für Browser Aktion und Seiten Aktionssymbole sind `20px` , `25px` , `30px` und `40px` .  Zu den anderen unterstützten Größen gehören `19px` , `35px` und `38px` .  
 
-The following [manifest.json][ExtensionsApisupportManifestkeys] file snippet shows a standard and high definition browser action icon being specified using the [browser_action][MDNManifestjsonBrowserAction] key.  The same syntax applies for the [page_action][MDNManifestjsonPageAction] key.  
+Die folgende [manifest.jsim][ExtensionsApisupportManifestkeys] Datei-Snippet zeigt ein Standard-und HD-Browser-Aktionssymbol, das mit dem [browser_action][MDNManifestjsonBrowserAction] -Schlüssel angegeben wird.  Für den [page_action][MDNManifestjsonPageAction] -Schlüssel gilt dieselbe Syntax.  
 
 ```json
 "browser_action": {
@@ -51,64 +51,53 @@ The following [manifest.json][ExtensionsApisupportManifestkeys] file snippet sho
 }
 ```  
 
-If the browser action has been set by the extension, it appears either in the Actions menu after selecting **More(...)**,  or to the right of the address bar if **Show button next to the address bar** has been toggled on by the user.  
+Wenn die Browser Aktion durch die Erweiterung eingestellt wurde, wird Sie entweder im Menü Aktionen nach dem Auswählen von **mehr (...)** oder rechts neben der Adressleiste angezeigt, wenn der Benutzer die **Schaltfläche "anzeigen" neben der Adressleiste** aktiviert hat.  
 
 :::row:::
    :::column span="1":::
-      :::image type="complex" source="../media/actionmenu-browseraction.png" alt-text="Browser action in action menu":::
-         Browser action in action menu :::image-end:::
+      :::image type="complex" source="../media/actionmenu-browseraction.png" alt-text="Browser Aktion im Menü ' Aktion '":::
+         Browser Aktion im Menü ' Aktion ' :::image-end:::
       
       <!--![browser action in action menu][ImageActionmenuBrowseraction]  -->  
    :::column-end:::
    :::column span="1":::
-      :::image type="complex" source="../media/browseractionicon.png" alt-text="Browser action in action menu":::
-         Browser action :::image-end:::
-      
-      <!--![browser action][ImageBrowserActionIcon]  -->  
-   :::column-end:::
-:::row-end:::
+      :::image type="complex" source="../media/browseractionicon.png" alt-text="Browser Aktion im Menü ' Aktion '" angegeben ist, wird Sie in der Adressleiste angezeigt, wenn die [PageAction. Show][MDNApiPageactionShow] -Methode verwendet wird.  
 
-#### Page action  
-
-The [page_action][MDNManifestjsonPageAction] key has the same JSON manifest syntax as the [browser_action][MDNManifestjsonBrowserAction] key.  Page action also has the same icon size requirements as browser action.  
-
-If page action is specified in the [manifest.json][ExtensionsApisupportManifestkeys] file, it appears within the address bar whenever the [pageAction.show][MDNApiPageactionShow] method is used.  
-
-:::image type="complex" source="../media/pageaction.png" alt-text="Browser action in action menu"
+:::image type="complex" source="../media/pageaction.png" alt-text="Browser Aktion im Menü ' Aktion '"
 },
 ```  
 
-:::image type="complex" source="../media/management-ui.png" alt-text="Browser action in action menu":::
-   Management UI
+:::image type="complex" source="../media/management-ui.png" alt-text="Browser Aktion im Menü ' Aktion '":::
+   Verwaltungsoberfläche
 :::image-end:::
 
 <!--![management UI][ImageManagementUi]  -->  
 
-### Icons for packaging  
+### Symbole für Verpackungen  
 
-Once your extension is ready for packaging, you must have three additional icon sizes ready.  
+Sobald Ihre Erweiterung für die Verpackung bereit ist, müssen Sie drei weitere Symbolgrößen bereithalten.  
 
 | Size | Details |  
 |:--- |:--- |  
-| 44px | Used in the Windows UI \(**App List**, **Settings** \> **System** \> **Apps & features**\). |  
-| 50px | Packaging requirement \(not visible anywhere\). |  
-| 150px | Used as the icon for the Microsoft Store. |  
+| 44px | Wird in der Windows-Benutzeroberfläche verwendet \ (**App-Liste**, **Einstellungen**  \>  **System**-  \>  **apps & Funktionen**\). |  
+| 50px | Verpackungsanforderung \ (nirgendwo sichtbar \). |  
+| 150px | Wird als Symbol für den Microsoft Store verwendet. |  
 
 
-See either the [manual packaging guide][ExtensionsGuidesPackagingCreatingTestingPackagesAssetsFolder] or the [ManifoldJS packaging guide][ExtensionsGuidesPackagingUsingManifoldjsPackagePackagingManifoldjs] to determine where these icons is placed.  This depends upon which packaging method you choose.  
+Sehen Sie sich entweder den Leitfaden für [Manuelle Verpackungen][ExtensionsGuidesPackagingCreatingTestingPackagesAssetsFolder] oder das [ManifoldJS-verpackungshandbuch][ExtensionsGuidesPackagingUsingManifoldjsPackagePackagingManifoldjs] an, um festzustellen, wo diese Symbole plaziert sind.  Dies hängt davon ab, welche Verpackungsmethode Sie auswählen.  
 
-#### Microsoft Store icon  
+#### Symbol für Microsoft Store  
 
-If the 150px icon for the Microsoft Store has a transparent background, the accent color of the user's device appears as the background color of the icon.  
+Wenn das 150px-Symbol für den Microsoft Store über einen transparenten Hintergrund verfügt, wird die Akzentfarbe des Geräts des Benutzers als Hintergrundfarbe des Symbols angezeigt.  
 
-For example, if a user has selected pink as the accent color, the transparent background of your store icon is displayed as pink.  
+Wenn ein Benutzer beispielsweise Rosa als Akzentfarbe ausgewählt hat, wird der transparente Hintergrund des Store-Symbols als Rosa angezeigt.  
 
 :::row:::
    :::column span="1":::
-       :::image type="complex" source="../media/windows-accent-color.png" alt-text="Browser action in action menu":::
-          Windows accent color :::image-end:::
+       :::image type="complex" source="../media/windows-accent-color.png" alt-text="Browser Aktion im Menü ' Aktion '":::
+          Windows-Akzentfarbe :::image-end:::
        
        <!--![Windows accent color][ImageWindowsAccentColor]  -->  
    :::column-end:::
    :::column span="1":::
-      :::image type="complex" source="../media/store-icon-with-transparent-background.png" alt-text="Browser action in action menu"  
+      :::image type="complex" source="../media/store-icon-with-transparent-background.png" alt-text="Browser Aktion im Menü ' Aktion '"  

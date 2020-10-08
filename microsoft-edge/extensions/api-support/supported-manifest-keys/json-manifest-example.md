@@ -1,13 +1,13 @@
 ---
 ms.assetid: 89ac711a-78ff-4219-8dc3-2bad2099cf49
-description: See an example of a Microsoft Edge JSON manifest to see possible field values.
-title: Extensions - JSON manifest example
+description: Sehen Sie sich ein Beispiel für ein Microsoft Edge-JSON-Manifest an, um mögliche Feldwerte anzuzeigen.
+title: Erweiterungen – Beispiel für ein JSON-Manifest
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 01/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge, web development, html, css, javascript, developer
+keywords: Edge, Web-Entwicklung, HTML, CSS, JavaScript, Entwickler
 ms.custom: seodec18
 ms.openlocfilehash: b4055524201821e3051f704b3bc9894de370c76d
 ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
@@ -16,11 +16,11 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "10567466"
 ---
-# JSON manifest file example  
+# Beispiel für eine JSON-Manifestdatei  
 
 [!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]  
 
-The following snippet provides an example of a Microsoft Edge JSON manifest file.
+Der folgende Codeausschnitt enthält ein Beispiel für eine Microsoft Edge JSON-Manifestdatei.
 
 ```json
 {

@@ -11,23 +11,23 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 09/02/2020
 ms.locfileid: "10992886"
 ---
-Use the following options to discuss the new features and changes in the post, or anything else related to DevTools.  
+Verwenden Sie die folgenden Optionen, um die neuen Features und Änderungen im Beitrag zu besprechen, oder alles, was mit devtools zu tun hat.  
 
-*   Send your feedback using the **Send Feedback** icon in DevTools.  
-*   Tweet at [@EdgeDevTools][PostTweetEdgeDevTools].  
-*   Submit a suggestion to [The Web We Want][TheWebWeWant].  
-*   File bugs on this article using the [Feedback](#feedback) section.  
+*   Senden Sie Ihr Feedback über das Symbol **Feedback senden** in devtools.  
+*   Tweet auf [@EdgeDevTools][PostTweetEdgeDevTools].  
+*   Senden Sie einen Vorschlag an [das gewünschte Web][TheWebWeWant].  
+*   Datei-Bugs in diesem Artikel mit dem [Feedback](#feedback) -Abschnitt.  
 
-:::image type="complex" source="../media/bing-devtools-send-feedback.msft.png" alt-text="The Send Feedback icon in the Microsoft Edge DevTools" lightbox="../media/bing-devtools-send-feedback.msft.png":::
-   The **Send Feedback** icon in Microsoft Edge DevTools  
+:::image type="complex" source="../media/bing-devtools-send-feedback.msft.png" alt-text="Das Symbol &quot;Feedback senden&quot; im Microsoft Edge-devtools" lightbox="../media/bing-devtools-send-feedback.msft.png":::
+   Das Symbol " **Feedback senden** " in Microsoft Edge devtools  
 :::image-end:::  
 
 <!-- links -->  
 
-[PostTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | Post a Tweet"  
+[PostTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | Einen Tweet Posten"  
 
-[EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools Twitter account"  
+[EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools Twitter-Konto"  
 
-[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback] "New Issue - MicrosoftDocs/edge-developer - GitHub"  
+[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback] "Neues Problem-MicrosoftDocs/Edge-Developer-GitHub"  
 
-[TheWebWeWant]: https://webwewant.fyi "The Web We Want"  
+[TheWebWeWant]: https://webwewant.fyi "Das gewünschte Web"  

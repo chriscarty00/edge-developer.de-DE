@@ -1,12 +1,12 @@
 ---
-description: Accessibility improvements, using the DevTools in other languages, and more.
-title: What's new in DevTools (Microsoft Edge 80)
+description: Verbesserungen der Barrierefreiheit, Verwendung des devtools in anderen Sprachen und vieles mehr.
+title: Neuerungen in devtools (Microsoft Edge 80)
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
 ms.openlocfilehash: 8f82f46cd683433a37614bcf15745e1de9f31ffb
 ms.sourcegitcommit: b337717957529239434b4e8e1e167aebf0543518
 ms.translationtype: MT
@@ -28,68 +28,68 @@ ms.locfileid: "11015468"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# What's new in DevTools (Microsoft Edge 80)  
+# Neuerungen in devtools (Microsoft Edge 80)  
 
-## Announcements from the Microsoft Edge DevTools team  
+## Ankündigungen des Microsoft Edge devtools-Teams  
 
-The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team! Check them out to try new features in the DevTools, Visual Studio Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow us on Twitter][EdgeDevToolsTwitterAccount].  
+In den folgenden Abschnitten finden Sie eine Liste der Ankündigungen, die Sie möglicherweise im Microsoft Edge devtools-Team verpasst haben. Schauen Sie sich diese an, um neue Features in den devtools, Visual Studio-Code Erweiterungen und vieles mehr zu testen.  Wenn Sie über die neuesten und besten Funktionen Ihrer Entwicklertools auf dem Laufenden bleiben möchten, laden Sie die [Microsoft Edge Preview-Kanäle][MicrosoftEdgePreviewChannels] herunter und [folgen Sie uns auf Twitter][EdgeDevToolsTwitterAccount].  
 
-### Accessibility improvements to the DevTools  
+### Verbesserungen der Barrierefreiheit für devtools  
 
-The DevTools team has contributed 170 changes to Chromium to address high-impact color contrast, keyboard, and screen reader issues in the DevTools.  Every developer building the web should be able to use the DevTools.  
+Das devtools-Team hat 170-Änderungen zu chromium beigetragen, um Probleme mit der Farbkontrast-, Tastatur-und Bildschirmsprachausgabe in devtools zu beheben.  Jeder Entwickler, der das Web erstellt, sollte in der Lage sein, das devtools zu verwenden.  
 
-:::image type="complex" source="../../images/2019/12/a11y-performance-tool.msft.gif" alt-text="The Performance tool in the DevTools with the keyboard navigation and screen reader improvements" lightbox="../../images/2019/12/a11y-performance-tool.msft.gif":::
-   The **Performance** tool in the DevTools with the keyboard navigation and screen reader improvements  
+:::image type="complex" source="../../images/2019/12/a11y-performance-tool.msft.gif" alt-text="Das Tool &quot;Leistung&quot; im devtools mit den Verbesserungen der Tastaturnavigation und der Bildschirmsprachausgabe" lightbox="../../images/2019/12/a11y-performance-tool.msft.gif":::
+   Das Tool " **Leistung** " im devtools mit den Verbesserungen der Tastaturnavigation und der Bildschirmsprachausgabe  
 :::image-end:::  
 
-Want to learn how to make your web page accessible to all of your users?  Download the [Accessibility Insights][AccessibilityInsights] and [webhint][WebhintBrowserExtension] extensions for Microsoft Edge to get started.  
+Möchten Sie erfahren, wie Sie Ihre Webseite für alle Benutzer barrierefrei gestalten können?  Laden Sie die [Barrierefreiheits Einblicke][AccessibilityInsights] und [webhint][WebhintBrowserExtension] -Erweiterungen für Microsoft Edge herunter, um zu beginnen.  
 
-If you use screen readers or the keyboard to navigate around the DevTools, send your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!  
+Wenn Sie Bildschirmsprachausgaben oder die Tastatur verwenden, um in der devtools zu navigieren, senden Sie Ihr Feedback, indem Sie uns über [tweeten][PostTweetEdgeDevTools] oder auf das Symbol [Feedback senden](#getting-in-touch-with-microsoft-edge-devtools-team) klicken.  
 
-Chromium issue [#963183][CR963183]  
+Chrom Problem [#963183][CR963183]  
 
-### Using the DevTools in other languages  
+### Verwenden des devtools in anderen Sprachen  
 
-Many developers use other developer tools, like StackOverflow and Visual Studio Code, in their native language, not just in English.  We’re excited to announce localization for the DevTools, which you are now able to use in one of 10 languages besides English:  
+Viele Entwickler verwenden andere Entwicklertools wie StackOverflow und Visual Studio-Code in ihrer Muttersprache, nicht nur in Englisch.  Wir freuen uns, die Lokalisierung für das devtools bekannt zu geben, das Sie nun in einer von 10 Sprachen außer Englisch verwenden können:  
 
 :::row:::
    :::column span="":::
-      Chinese \(Simplified\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;
+      Chinesisch (vereinfacht \) –  &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;
    :::column-end:::
    :::column span="":::
-      Chinese \(Traditional\) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;
+      Chinesisch (traditionell \) –  &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      French – fran&#231;ais
+      Französisch – Fran&#231;AIS
    :::column-end:::
    :::column span="":::
-      German - deutsch
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      Italian - italiano
-   :::column-end:::
-   :::column span="":::
-      Japanese - &#26085;&#26412;&#35486;
+      Deutsch-Deutsch
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      Korean - &#54620;&#44397;&#50612;
+      Italienisch-Italiano
    :::column-end:::
    :::column span="":::
-      Portuguese - portugu&#234;s
+      Japanisch –  &#26085;&#26412;&#35486;
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      Russian – &#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;
+      Koreanisch –  &#54620;&#44397;&#50612;
    :::column-end:::
    :::column span="":::
-      Spanish - espa&#241;ol
+      Portugiesisch-Portugu&#234;s
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Russisch –  &#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;
+   :::column-end:::
+   :::column span="":::
+      Spanisch-ESPA&#241;OL
    :::column-end:::
 :::row-end:::
 
@@ -103,226 +103,226 @@ Many developers use other developer tools, like StackOverflow and Visual Studio 
 | Russian – русский | Spanish - español |  
 -->  
 
-Navigate to `edge://flags` and set the **Enable localized Developer Tools** flag to **Enabled**.  Also set the **Developer Tools experiments** flag to **Enabled**.  Restart Microsoft Edge and open the DevTools.  <!-- Press `F1` in the DevTools or go to Settings > Experiments and check the **Match browser language** checkbox.  -->  The DevTools match the language you use for Microsoft Edge in `edge://settings/languages`.  
+Navigieren Sie zu `edge://flags` und setzen Sie das Kennzeichen **lokalisierte Entwickler Tools aktivieren** auf **aktiviert**.  Setzen Sie auch das Kennzeichen **Entwickler Tools Experimente** auf **aktiviert**.  Starten Sie Microsoft Edge neu, und öffnen Sie das devtools.  <!-- Press `F1` in the DevTools or go to Settings > Experiments and check the **Match browser language** checkbox.  -->  Die devtools entsprechen der Sprache, in der Sie Microsoft Edge verwenden `edge://settings/languages` .  
 
-:::image type="complex" source="../../images/2019/12/localized-devtools.msft.png" alt-text="The Performance tool in the DevTools with the keyboard navigation and screen reader improvements" lightbox="../../images/2019/12/localized-devtools.msft.png":::
-   The DevTools in German  
+:::image type="complex" source="../../images/2019/12/localized-devtools.msft.png" alt-text="Das Tool &quot;Leistung&quot; im devtools mit den Verbesserungen der Tastaturnavigation und der Bildschirmsprachausgabe" lightbox="../../images/2019/12/localized-devtools.msft.png":::
+   Das devtools in Deutsch  
 :::image-end:::  
 
-If you want to use the DevTools in a different language than the ones that are available, [tweet][PostTweetEdgeDevTools] at us or click the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon.  
+Wenn Sie das devtools in einer anderen Sprache als den verfügbaren verwenden möchten, senden Sie uns eine [Tweet][PostTweetEdgeDevTools] oder klicken Sie auf das Symbol [Feedback senden](#getting-in-touch-with-microsoft-edge-devtools-team) .  
 
-Chromium issue [#941561][CR941561]  
+Chrom Problem [#941561][CR941561]  
 
-### webhint Microsoft Edge extension  
+### webhint Microsoft Edge-Erweiterung  
 
-The webhint Microsoft Edge extension allows you to easily scan your web page and get feedback on accessibility, browser compatibility, security, performance, and more within the DevTools.  Read more at [https://webhint.io][Webhint].  
+Mit der webhint Microsoft Edge-Erweiterung können Sie Ihre Webseite auf einfache Weise überprüfen und Feedback zu Barrierefreiheit, Browserkompatibilität, Sicherheit, Leistung und vielem mehr in der devtools erhalten.  Weitere Informationen finden Sie unter [https://webhint.io][Webhint] .  
 
-:::image type="complex" source="../../images/2019/12/webhint-browser-extension.msft.png" alt-text="The Performance tool in the DevTools with the keyboard navigation and screen reader improvements" lightbox="../../images/2019/12/webhint-browser-extension.msft.png":::
-   The **Hints** tab in the DevTools when the webhint browser extension is installed  
+:::image type="complex" source="../../images/2019/12/webhint-browser-extension.msft.png" alt-text="Das Tool &quot;Leistung&quot; im devtools mit den Verbesserungen der Tastaturnavigation und der Bildschirmsprachausgabe" lightbox="../../images/2019/12/webhint-browser-extension.msft.png":::
+   Die Registerkarte " **Hinweise** " im devtools, wenn die webhint-Browser Erweiterung installiert ist  
 :::image-end:::  
 
-[Try the webhint browser extension in Microsoft Edge][MicrosoftEdgeInsiderAddons].  Once you install the extension, open the DevTools and select the Hints tab.  From here, run a customizable site scan.  Head over to [webhint.io][WebhintBrowserExtension] to learn more.
+[Testen Sie die webhint-Browser Erweiterung in Microsoft Edge][MicrosoftEdgeInsiderAddons].  Nachdem Sie die Erweiterung installiert haben, öffnen Sie das devtools, und wählen Sie die Registerkarte Hinweise aus.  Führen Sie von hier aus eine anpassbare Website Überprüfung aus.  Besuchen Sie [webhint.IO][WebhintBrowserExtension] , um weitere Informationen zu erhalten.
 
 ### 3D View  
 
-Use the **3D View** to debug your web application by navigating through the [Document Object Model \(DOM\)][MDNDocumentObjectModel] or the [z-index][MDNZIndex] stacking context.  
+Verwenden Sie die **3D-Ansicht** , um Ihre Webanwendung zu debuggen, indem Sie durch das [Dokumentobjektmodell \ (DOM \)][MDNDocumentObjectModel] oder den Stapel Kontext des [z-Index][MDNZIndex] navigieren.  
 
-:::image type="complex" source="../../images/2019/12/3dview.msft.png" alt-text="The Performance tool in the DevTools with the keyboard navigation and screen reader improvements" lightbox="../../images/2019/12/3dview.msft.png":::
-   The **3D View** in the DevTools  
+:::image type="complex" source="../../images/2019/12/3dview.msft.png" alt-text="Das Tool &quot;Leistung&quot; im devtools mit den Verbesserungen der Tastaturnavigation und der Bildschirmsprachausgabe" lightbox="../../images/2019/12/3dview.msft.png":::
+   Die **3D-Ansicht** im devtools  
 :::image-end:::  
 
-To access the 3D View, navigate to `edge://flags` and ensure that the **Developer Tools experiments** flag is set to **Enabled**.  Restart Microsoft Edge and open the DevTools.  Press `F1` in the DevTools or go to **Settings**, navigate to **Experiments** section, and check the **Enable 3D View** checkbox.  Now, press `Ctrl` + `Shift` + `P`, type in **3D View** and select **Show 3D View**.  
+Wenn Sie auf die 3D-Ansicht zugreifen möchten, navigieren Sie zu `edge://flags` und stellen Sie sicher, dass das Kennzeichen **Entwickler Tools Experimente** auf **aktiviert**festgesetzt ist.  Starten Sie Microsoft Edge neu, und öffnen Sie das devtools.  Drücken Sie `F1` im devtools oder wechseln Sie zu **Einstellungen**, navigieren Sie zu **Experimenten** , und aktivieren Sie das Kontrollkästchen **3D-Ansicht aktivieren** .  Drücken Sie jetzt `Ctrl`  +  `Shift`  +  `P` , geben Sie in **3D-Ansicht** ein, und wählen Sie **3D-Ansicht**anzeigen aus.  
 
-We're working on the UI and adding more functionality to the 3D View so please send us your [feedback](#getting-in-touch-with-microsoft-edge-devtools-team).  
+Wir arbeiten an der Benutzeroberfläche und fügen der 3D-Ansicht Weitere Funktionen hinzu, damit Sie uns Ihr [Feedback](#getting-in-touch-with-microsoft-edge-devtools-team)senden können.  
 
-Chromium issue [#987787][CR987787]
+Chrom Problem [#987787][CR987787]
 
-### Visual Studio Code extensions  
+### Visual Studio-Code Erweiterungen  
 
-The DevTools team has also released some extensions for [Visual Studio Code][VisualStudioCode] that let you use the power of the DevTools directly from your text editor. Check out the following extensions.  
+Das devtools-Team hat auch einige Erweiterungen für [Visual Studio-Code][VisualStudioCode] veröffentlicht, mit denen Sie die Leistung des devtools direkt aus Ihrem Text-Editor verwenden können. Schauen Sie sich die folgenden Erweiterungen an.  
 
-#### Elements for Microsoft Edge  
+#### Elemente für Microsoft Edge  
 
-Use the Elements tool from within Visual Studio Code by adding the [Elements for Microsoft Edge (Chromium)][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] Visual Studio Code extension.  
+Verwenden Sie das elementtool in Visual Studio-Code, indem Sie die Visual Studio-Code Erweiterung " [Elemente für Microsoft Edge (Chrom)][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] " hinzufügen.  
 
-:::image type="complex" source="../../images/2019/12/elements-for-edge.msft.png" alt-text="The Performance tool in the DevTools with the keyboard navigation and screen reader improvements" lightbox="../../images/2019/12/elements-for-edge.msft.png":::
-   The **Elements** tool in Visual Studio Code using the Elements for Microsoft Edge extension  
+:::image type="complex" source="../../images/2019/12/elements-for-edge.msft.png" alt-text="Das Tool &quot;Leistung&quot; im devtools mit den Verbesserungen der Tastaturnavigation und der Bildschirmsprachausgabe" lightbox="../../images/2019/12/elements-for-edge.msft.png":::
+   Das Tool ' **Elemente** ' in Visual Studio-Code mit den Elementen für Microsoft Edge Extension  
 :::image-end:::  
 
-For more information, check out [Elements for Microsoft Edge Visual Studio Code extension][VisualStudioCodeElementEdgeExtension].  
+Weitere Informationen finden Sie unter [Elemente für die Microsoft Edge Visual Studio-Code Erweiterung][VisualStudioCodeElementEdgeExtension].  
 
-#### Debugger for Microsoft Edge  
+#### Debugger für Microsoft Edge  
 
-With the [Debugger for Microsoft Edge][VisualStudioMarketplaceDebuggerEdge] Visual Studio Code extension, debug JavaScript running in Microsoft Edge directly from Visual Studio Code.  
+Debuggen Sie JavaScript in Microsoft Edge direkt aus Visual Studio-Code, wenn Sie den [Debugger für Microsoft Edge][VisualStudioMarketplaceDebuggerEdge] Visual Studio-Code Erweiterung ausführen.  
 
-:::image type="complex" source="../../images/2019/12/vscode-debugger.msft.png" alt-text="The Performance tool in the DevTools with the keyboard navigation and screen reader improvements" lightbox="../../images/2019/12/vscode-debugger.msft.png":::
-   The Debugger for Microsoft Edge Extension in Visual Studio Code  
+:::image type="complex" source="../../images/2019/12/vscode-debugger.msft.png" alt-text="Das Tool &quot;Leistung&quot; im devtools mit den Verbesserungen der Tastaturnavigation und der Bildschirmsprachausgabe" lightbox="../../images/2019/12/vscode-debugger.msft.png":::
+   Der Debugger für Microsoft Edge Extension in Visual Studio-Code  
 :::image-end:::  
 
-For more information, check out [how to debug Microsoft Edge from Visual Studio Code][VisualStudioCodeDebuggerEdgeExtension].  
+Weitere Informationen finden Sie unter [Debuggen von Microsoft Edge aus Visual Studio-Code][VisualStudioCodeDebuggerEdgeExtension].  
 
-#### webhint  
+#### Webhint  
 
-The [webhint][VisualStudioMarketplaceWebhintExtension] Visual Studio Code extension uses `webhint` to improve your web page while you're writing it! This extension runs and reports diagnostics on your workspace files based on `webhint` analysis.  
+Die [webhint][VisualStudioMarketplaceWebhintExtension] Visual Studio-Code Erweiterung verwendet `webhint` , um Ihre Webseite zu verbessern, während Sie Sie schreiben! Mit dieser Erweiterung wird die Diagnose für Ihre Arbeitsbereichsdateien basierend auf der Analyse ausgeführt und gemeldet `webhint` .  
 
-:::image type="complex" source="../../images/2019/12/webhint-vscode-extension.msft.png" alt-text="The Performance tool in the DevTools with the keyboard navigation and screen reader improvements" lightbox="../../images/2019/12/webhint-vscode-extension.msft.png":::
-   The webhint Visual Studio Code extension analyzing a `.tsx` file in Visual Studio Code  
+:::image type="complex" source="../../images/2019/12/webhint-vscode-extension.msft.png" alt-text="Das Tool &quot;Leistung&quot; im devtools mit den Verbesserungen der Tastaturnavigation und der Bildschirmsprachausgabe" lightbox="../../images/2019/12/webhint-vscode-extension.msft.png":::
+   Die webhint Visual Studio-Code Erweiterung, die eine `.tsx` Datei in Visual Studio-Code analysiert  
 :::image-end:::  
 
-[Learn more about the Visual Studio Code webhint extension][WebhintVisualStudioCodeExtension].  
+[Erfahren Sie mehr über die Visual Studio-Code webhint-Erweiterung][WebhintVisualStudioCodeExtension].  
 
-### Visual Studio integration
-In Visual Studio 2019 version 16.2 or later, use the Visual Studio debugger to debug JavaScript running in Microsoft Edge.  [Download Visual Studio 2019][MicrosoftVisualStudioDownloads] to try this feature out!  
+### Integration von Visual Studio
+Verwenden Sie in Visual Studio 2019, Version 16,2 oder höher, den Visual Studio-Debugger zum Debuggen von JavaScript, das in Microsoft Edge ausgeführt wird.  [Laden Sie Visual Studio 2019 herunter][MicrosoftVisualStudioDownloads] , um dieses Feature auszuprobieren!  
 
-:::image type="complex" source="../../images/2019/12/vs.msft.png" alt-text="The Performance tool in the DevTools with the keyboard navigation and screen reader improvements" lightbox="../../images/2019/12/vs.msft.png":::
-   Visual Studio with the option to launch your web app in Microsoft Edge Canary, Dev, or Beta  
+:::image type="complex" source="../../images/2019/12/vs.msft.png" alt-text="Das Tool &quot;Leistung&quot; im devtools mit den Verbesserungen der Tastaturnavigation und der Bildschirmsprachausgabe" lightbox="../../images/2019/12/vs.msft.png":::
+   Visual Studio mit der Option zum Starten Ihrer Web-App in Microsoft Edge Canary, dev oder Beta  
 :::image-end:::  
 
-[Read our blog post to learn how to debug Microsoft Edge from Visual Studio][MicrosoftVisualStudioBlogDebugJavascript].  
+[Lesen Sie unseren Blogbeitrag, um zu erfahren, wie Sie Microsoft Edge in Visual Studio debuggen][MicrosoftVisualStudioBlogDebugJavascript]können.  
 
-### Tracking prevention Console messages  
+### Nachrichten zur Präventions Konsole  
 
-Tracking prevention is a unique feature in Microsoft Edge that protects you from being tracked by websites you haven't visited before.  The default tracking prevention setting is Balanced mode, which blocks 3rd party trackers and known malicious trackers for an experience that balances privacy and web compatibility.  To give you more insight into the compatibility of your web page when certain trackers are blocked, we've also added warning messages in the Console when a tracker is blocked.  
+Die nach Verfolgungs Verhinderung ist ein einzigartiges Feature in Microsoft Edge, das Sie davor schützt, von Websites, die Sie noch nicht besucht haben, nachverfolgt  Die Standardeinstellung für die nach Verfolgungs Verhinderung ist der Modus "ausgeglichen", der Drittanbieter-Tracker und bekannte bösartige Tracker für eine Erfahrung blockiert, die Datenschutz und Web-Kompatibilität abgleicht.  Damit Sie mehr über die Kompatibilität Ihrer Webseite erfahren, wenn bestimmte Tracker blockiert sind, haben wir auch Warnmeldungen in der Konsole hinzugefügt, wenn ein Tracker blockiert ist.  
 
-:::image type="complex" source="../../images/2019/12/tracking-prevention.msft.png" alt-text="The Performance tool in the DevTools with the keyboard navigation and screen reader improvements" lightbox="../../images/2019/12/tracking-prevention.msft.png":::
-   Messages in the **Console** when tracking prevention blocks access to storage for a tracker  
+:::image type="complex" source="../../images/2019/12/tracking-prevention.msft.png" alt-text="Das Tool &quot;Leistung&quot; im devtools mit den Verbesserungen der Tastaturnavigation und der Bildschirmsprachausgabe" lightbox="../../images/2019/12/tracking-prevention.msft.png":::
+   Nachrichten in der **Konsole** , wenn die nach Verfolgungs Prävention den Zugriff auf den Speicher für einen Tracker blockiert  
 :::image-end:::  
 
-[Read more about tracking prevention and the balance between privacy and web compatibility][TrackingPrevention].  
+[Weitere Informationen finden Sie unter Verhinderung von Nachverfolgung und dem Gleichgewichtzwischen Datenschutz und Web-Kompatibilität][TrackingPrevention].  
 
-## Announcements from the Chromium project  
+## Ankündigungen aus dem Chromium-Projekt  
 
-The following sections announce additional features available in Microsoft Edge 80 that were contributed to the open source Chromium project.  
+In den folgenden Abschnitten werden weitere in Microsoft Edge 80 verfügbare Features angekündigt, die zum Open-Source-Projekt Chromium beigetragen haben.  
 
-### Support for let and class redeclarations in the Console  
+### Unterstützung für Let-und Class-Deklarationen in der Konsole  
 
-The **Console** now supports redeclarations of `let` and `class` statements.  The inability to redeclare was a common annoyance for web developers who use the Console to experiment with new JavaScript code.  
+Die **Konsole** unterstützt jetzt erneute Deklarationen von `let` und- `class` Anweisungen.  Die Unfähigkeit, erneut zu deklarieren, war ein häufiges Ärgernis für Webentwickler, die die Konsole zum Experimentieren mit neuem JavaScript-Code verwenden.  
 
 > [!WARNING]
-> Redeclaring a `let` or `class` statement in a script outside of the Console or within a single Console input still causes a `SyntaxError`.  
+> Das erneute Deklarieren einer `let` oder `class` -Anweisung in einem Skript außerhalb der Konsole oder in einer einzelnen Konsoleneingabe führt weiterhin zu einer `SyntaxError` .  
 
-For example, previously, when re-declaring a local variable with `let`, the Console threw an error:  
+Bei der erneuten Deklaration einer lokalen Variablen mit `let` hat die Konsole beispielsweise einen Fehler ausgelöst:  
 
-:::image type="complex" source="../../images/2019/12/letbefore.msft.png" alt-text="The Performance tool in the DevTools with the keyboard navigation and screen reader improvements" lightbox="../../images/2019/12/letbefore.msft.png":::
-   The **Console** in Microsoft Edge 79 showing that the let re-declaration fails  
+:::image type="complex" source="../../images/2019/12/letbefore.msft.png" alt-text="Das Tool &quot;Leistung&quot; im devtools mit den Verbesserungen der Tastaturnavigation und der Bildschirmsprachausgabe" lightbox="../../images/2019/12/letbefore.msft.png":::
+   Die **Konsole** in Microsoft Edge 79, die zeigt, dass die Let-erneute Deklaration fehlschlägt  
 :::image-end:::  
 
-Now, the Console allows the redeclaration:  
+Die Konsole ermöglicht nun die erneute Deklaration:  
 
-:::image type="complex" source="../../images/2019/12/letafter.msft.png" alt-text="The Performance tool in the DevTools with the keyboard navigation and screen reader improvements" lightbox="../../images/2019/12/letafter.msft.png":::
-   The **Console** in Microsoft Edge 80 showing that the let re-declaration succeeds  
+:::image type="complex" source="../../images/2019/12/letafter.msft.png" alt-text="Das Tool &quot;Leistung&quot; im devtools mit den Verbesserungen der Tastaturnavigation und der Bildschirmsprachausgabe" lightbox="../../images/2019/12/letafter.msft.png":::
+   Die **Konsole** in Microsoft Edge 80 zeigt, dass die Let-erneute Deklaration erfolgreich ist  
 :::image-end:::  
 
-Chromium issue [#1004193][CR1004193]  
+Chrom Problem [#1004193][CR1004193]  
 
-### Improved WebAssembly debugging  
+### Verbessertes Webassembly-Debugging  
 
-DevTools has started to support the [DWARF Debugging Standard][DwarfHome], which means increased support for stepping over code, setting breakpoints, and resolving stack traces in your source languages within DevTools.  
+DevTools hat mit der Unterstützung des [Dwarf-Debugging-Standards][DwarfHome]begonnen, was mehr Unterstützung für die schrittweise Codierung, das Festlegen von Haltepunkten und das Auflösen von Stapelablaufverfolgungen in ihren Quellsprachen in devtools bedeutet.  
 
 <!-- [TODO: Add this link back] -->  
 <!--Check out [Improved WebAssembly debugging in Microsoft Edge DevTools][201912Webassembly] for the full story.  -->  
 
 <!-- [TODO: Replace this image with screenshot in Edge] -->  
 <!--
-:::image type="complex" source="../../images/2019/12/wasm.msft.png" alt-text="The Performance tool in the DevTools with the keyboard navigation and screen reader improvements" lightbox="../../images/2019/12/wasm.msft.png":::
+:::image type="complex" source="../../images/2019/12/wasm.msft.png" alt-text="Das Tool &quot;Leistung&quot; im devtools mit den Verbesserungen der Tastaturnavigation und der Bildschirmsprachausgabe" lightbox="../../images/2019/12/wasm.msft.png":::
    The new DWARF-powered WebAssembly debugging  
 :::image-end:::  
 -->  
 
-### Network panel updates  
+### Netzwerk Panel-Updates  
 
-#### Request Initiator Chains in the Initiator tab  
+#### Anfordern von Initiator-Chains auf der Registerkarte "Initiator"  
 
-You are now able to view the initiators and dependencies of a network request as a nested list.  This may help you understand why a resource was requested, or what network activity a certain resource \(such as a script\) caused.  
+Sie können nun die Initiatoren und Abhängigkeiten einer Netzwerkanforderung als geschachtelte Liste anzeigen.  Dies kann Ihnen helfen zu verstehen, warum eine Ressource angefordert wurde, oder welche Netzwerkaktivität eine bestimmte Ressource (wie ein Skript \) verursacht hat.  
 
-:::image type="complex" source="../../images/2019/12/initiators.msft.png" alt-text="The Performance tool in the DevTools with the keyboard navigation and screen reader improvements" lightbox="../../images/2019/12/initiators.msft.png":::
-   A Request Initiator Chain in the **Initiator** tab  
+:::image type="complex" source="../../images/2019/12/initiators.msft.png" alt-text="Das Tool &quot;Leistung&quot; im devtools mit den Verbesserungen der Tastaturnavigation und der Bildschirmsprachausgabe" lightbox="../../images/2019/12/initiators.msft.png":::
+   Eine Anforderungs Initiator-Kette auf der Registerkarte " **Initiator** "  
 :::image-end:::  
 
-After [logging network activity in the Network panel][DevToolsNetworkIndex], click a resource and then go to the **Initiator** tab to view the **Request Initiator Chain**:  
+Klicken Sie nach dem [Protokollieren der Netzwerkaktivität in der Netzwerksteuerung][DevToolsNetworkIndex]auf eine Ressource, und wechseln Sie dann zur Registerkarte **Initiator** , um die **Anforderungs initiatorkette**anzuzeigen:  
 
-*   The **inspected resource** is bold.  In the screenshot above, `ai.2.min.js` is the inspected resource.  
-*   The resources above the inspected resource are the **initiators**.  In the screenshot above, `https://www.microsoftedgeinsider.com` is the initiator of `ai.2.min.js`.  In other words, `https://www.microsoftedgeinsider.com` caused the network request for `ai.2.min.js`.  
-*   The resources below the inspected resource are the **dependencies**.  In the screenshot above, `https://dc.services.visualstudio.com/v2/track` is a dependency of `ai.2.min.js`.  In other words, `ai.2.min.js` caused the network request for `https://dc.services.visualstudio.com/v2/track`.  
+*   Die **geprüfte Ressource** ist fett formatiert.  Im obigen Screenshot `ai.2.min.js` befindet sich die geprüfte Ressource.  
+*   Die Ressourcen oberhalb der geprüften Ressource sind die **Initiatoren**.  Im obigen Screenshot `https://www.microsoftedgeinsider.com` ist der Initiator von `ai.2.min.js` .  Mit anderen Worten: `https://www.microsoftedgeinsider.com` Ursache für die Netzwerkanforderung `ai.2.min.js` .  
+*   Die Ressourcen unterhalb der geprüften Ressource sind die **Abhängigkeiten**.  Im obigen Screenshot `https://dc.services.visualstudio.com/v2/track` ist eine Abhängigkeit von `ai.2.min.js` .  Mit anderen Worten: `ai.2.min.js` Ursache für die Netzwerkanforderung `https://dc.services.visualstudio.com/v2/track` .  
 
 > [!NOTE]
-> Initiator and dependency information may also be accessed by holding `Shift` and then hovering over network resources.  See [View initiators and dependencies][DevToolsNetworkReferenceViewInitiatorsDependencies].  
+> Auf Initiator-und Abhängigkeitsinformationen kann auch zugegriffen werden, indem Sie `Shift` auf Netzwerkressourcen halten und dann darauf zeigen.  Weitere Informationen finden Sie unter [Anzeigen von Initiatoren und Abhängigkeiten][DevToolsNetworkReferenceViewInitiatorsDependencies].  
 
-Chromium issue [#842488][CR842488]  
+Chrom Problem [#842488][CR842488]  
 
-#### Highlight the selected network request in the Overview  
+#### Markieren der ausgewählten Netzwerkanforderung in der Übersicht  
 
-After you click a network resource in order to inspect it, the Network panel now puts a blue border around that resource in the **Overview**.  This is able to help you detect if the network request is happening earlier or later than expected.  
+Nachdem Sie auf eine Netzwerkressource klicken, um Sie zu überprüfen, fügt das Netzwerk Panel nun einen blauen Rahmen um die Ressource in der **Übersicht**ein.  Dies kann Ihnen helfen zu erkennen, ob die Netzwerkanforderung früher oder später als erwartet ausgeführt wird.  
 
-:::image type="complex" source="../../images/2019/12/overview.msft.png" alt-text="The Performance tool in the DevTools with the keyboard navigation and screen reader improvements" lightbox="../../images/2019/12/overview.msft.png":::
-   The **Overview** pane highlighting the inspected resource  
+:::image type="complex" source="../../images/2019/12/overview.msft.png" alt-text="Das Tool &quot;Leistung&quot; im devtools mit den Verbesserungen der Tastaturnavigation und der Bildschirmsprachausgabe" lightbox="../../images/2019/12/overview.msft.png":::
+   Der Übersichtsbereich, der die **über** prüfte Ressource markiert  
 :::image-end:::  
 
-Chromium issue [#988253][CR988253]  
+Chrom Problem [#988253][CR988253]  
 
-#### URL and path columns in the Network panel  
+#### URL-und Pfad Spalten im Netzwerk Panel  
 
-Use the new **Path** and **URL** columns in the **Network** panel to see the absolute path or full URL of each network resource.  
+Verwenden Sie die Spalten neuer **Pfad** und **URL** im **Netzwerk** Panel, um den absoluten Pfad oder die vollständige URL der einzelnen Netzwerkressourcen anzuzeigen.  
 
-:::image type="complex" source="../../images/2019/12/columns.msft.png" alt-text="The Performance tool in the DevTools with the keyboard navigation and screen reader improvements" lightbox="../../images/2019/12/columns.msft.png":::
-   The new Path and URL columns in the **Network** panel  
+:::image type="complex" source="../../images/2019/12/columns.msft.png" alt-text="Das Tool &quot;Leistung&quot; im devtools mit den Verbesserungen der Tastaturnavigation und der Bildschirmsprachausgabe" lightbox="../../images/2019/12/columns.msft.png":::
+   Die Spalten ' neuer Pfad ' und ' URL ' im **Netzwerk** Panel  
 :::image-end:::  
 
-Right-click the **Waterfall** table header and select **Path** or **URL** to show the new columns.  
+Klicken Sie mit der rechten Maustaste auf die Tabelle Überschrift **Wasserfall** , und wählen Sie **Pfad** oder **URL** aus, um die neuen Spalten anzuzeigen.  
 
-Chromium issue [#993366][CR993366]  
+Chrom Problem [#993366][CR993366]  
 
-#### Updated User-Agent strings  
+#### Aktualisierte Benutzer-Agent-Zeichenfolgen  
 
-DevTools supports setting a custom User-Agent string through the **Network Conditions** tab.  The User-Agent string affects the `User-Agent` HTTP header attached to network resources, and also the value of `navigator.userAgent`.  
+DevTools unterstützt das Festlegen einer benutzerdefinierten Benutzer-Agent-Zeichenfolge über die Registerkarte **Netzwerkbedingungen** .  Die Benutzer-Agent-Zeichenfolge wirkt `User-Agent` sich auf den an Netzwerkressourcen angefügten HTTP-Header und auch auf den Wert von aus `navigator.userAgent` .  
 
-The predefined User-Agent strings have been updated to reflect modern browser versions.  
+Die vordefinierten Benutzer-Agent-Zeichenfolgen wurden so aktualisiert, dass Sie den modernen Browserversionen entsprechen.  
 
-:::image type="complex" source="../../images/2019/12/useragent.msft.png" alt-text="The Performance tool in the DevTools with the keyboard navigation and screen reader improvements" lightbox="../../images/2019/12/useragent.msft.png":::
-   The User Agent menu in the **Network Conditions** tab  
+:::image type="complex" source="../../images/2019/12/useragent.msft.png" alt-text="Das Tool &quot;Leistung&quot; im devtools mit den Verbesserungen der Tastaturnavigation und der Bildschirmsprachausgabe" lightbox="../../images/2019/12/useragent.msft.png":::
+   Das Menü "Benutzer-Agent" auf der Registerkarte " **Netzwerkbedingungen** "  
 :::image-end:::  
 
-To access **Network Conditions**, [open the Command Menu][DevToolsCommandMenuIndex] and run the `Show Network Conditions` command.  
+Um auf **Netzwerkbedingungen**zuzugreifen, [Öffnen Sie das Befehlsmenü][DevToolsCommandMenuIndex] , und führen Sie den `Show Network Conditions` Befehl aus.  
 
 > [!NOTE]
-> You may also [set User-Agent strings in Device Mode][DevToolsDeviceModeIndex].  
+> Sie können auch [Benutzer-Agent-Zeichenfolgen im Gerätemodus einrichten][DevToolsDeviceModeIndex].  
 
-Chromium issue [#1029031][CR1029031]  
+Chrom Problem [#1029031][CR1029031]  
 
-### Audits panel updates  
+### Audits-Panel-Updates  
 
-#### New configuration UI  
+#### Neue Konfigurations-UI  
 
-The configuration UI has a new, responsive design, and the throttling configuration options have been simplified.  See [Audits Panel Throttling][GitHubGoogleChromeDevToolsAuditsPanelThrottling] for more information on the throttling UI changes.  
+Die Benutzeroberfläche der Konfiguration verfügt über ein neues, reaktionsfähiges Design, und die Optionen für die Einschränkungs Konfiguration wurden vereinfacht.  Weitere Informationen zu den Änderungen beim Einschränken der Benutzeroberfläche finden Sie unter [Drosselung des Überwachungs Panels][GitHubGoogleChromeDevToolsAuditsPanelThrottling] .  
 
-:::image type="complex" source="../../images/2019/12/start.msft.png" alt-text="The Performance tool in the DevTools with the keyboard navigation and screen reader improvements" lightbox="../../images/2019/12/start.msft.png":::
-   The new configuration UI  
+:::image type="complex" source="../../images/2019/12/start.msft.png" alt-text="Das Tool &quot;Leistung&quot; im devtools mit den Verbesserungen der Tastaturnavigation und der Bildschirmsprachausgabe" lightbox="../../images/2019/12/start.msft.png":::
+   Die neue Benutzeroberfläche für die Konfiguration  
 :::image-end:::  
 
-### Coverage tab updates  
+### Updates für Coverage-Registerkarten  
 
-#### Per-function or per-block coverage modes  
+#### Pro-Funktion-oder pro-Block-Abdeckungs Modi  
 
-The [Coverage tab][DevToolsCoverageIndex] has a new dropdown menu that lets you specify whether code coverage data should be collected **per function** or **per block**.  **Per block** coverage is more detailed but also far more expensive to collect.  DevTools uses **per function** coverage by default now.  
+Die [Registerkarte Coverage][DevToolsCoverageIndex] enthält ein neues Dropdownmenü, in dem Sie angeben können, ob Codeabdeckungsdaten **pro Funktion** oder **pro Block**erfasst werden sollen.  **Pro-Block** -Abdeckung ist detaillierter, aber auch weitaus teurer zu sammeln.  DevTools verwendet jetzt standardmäßig **pro Funktion** Coverage.  
 
 > [!CAUTION]
-> You may see large code coverage differences in HTML files depending on whether you use **per function** or **per block** mode.  When using **per function** mode, inline scripts in HTML files are treated as functions.  If the script runs at all then DevTools marks the entire script as used code.  Only if the script does not run at all does DevTools mark the script as unused code.  
+> Je nachdem, ob Sie **pro Funktion** oder **pro Block** Modus verwenden, werden möglicherweise große Unterschiede bei der Codeabdeckung in HTML-Dateien angezeigt.  Bei Verwendung des **pro-Funktions** Modus werden Inlineskripts in HTML-Dateien als Funktionen behandelt.  Wenn das Skript überhaupt ausgeführt wird, markiert devtools das gesamte Skript als verwendeten Code.  Nur wenn das Skript überhaupt nicht ausgeführt wird, kennzeichnet devtools das Skript als unbenutzten Code.  
 
-:::image type="complex" source="../../images/2019/12/modes.msft.png" alt-text="The Performance tool in the DevTools with the keyboard navigation and screen reader improvements" lightbox="../../images/2019/12/modes.msft.png":::
-   The coverage mode dropdown menu  
+:::image type="complex" source="../../images/2019/12/modes.msft.png" alt-text="Das Tool &quot;Leistung&quot; im devtools mit den Verbesserungen der Tastaturnavigation und der Bildschirmsprachausgabe" lightbox="../../images/2019/12/modes.msft.png":::
+   Dropdownmenü "Coverage-Modus"  
 :::image-end:::  
 
-#### Coverage must now be initiated by a page reload  
+#### Coverage muss nun durch ein Seiten-Reload initiiert werden  
 
-Toggling code coverage without a page reload has been removed because the coverage data was unreliable.  For example, a function may be reported as unused if the runtime was a long time ago and the V8 garbage collector has cleaned it up.  
+Das Umschalten der Codeabdeckung ohne das erneute Laden einer Seite wurde entfernt, da die Abdeckungsdaten unzuverlässig waren.  Beispielsweise kann eine Funktion als unbenutzt gemeldet werden, wenn die Laufzeit vor langer Zeit war und der V8-Garbage Collector Sie bereinigt hat.  
 
-Chromium issue [#1004203][CR1004203]  
+Chrom Problem [#1004203][CR1004203]  
 
-## Download the Microsoft Edge preview channels  
+## Herunterladen der Microsoft Edge Preview-Kanäle  
 
-If you are on Windows or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.  
+Wenn Sie unter Windows oder macOS arbeiten, sollten Sie die [Microsoft Edge Preview-Kanäle][MicrosoftEdgePreviewChannels] als Standard Entwicklungsbrowser verwenden.  Über die Vorschau Kanäle erhalten Sie Zugriff auf die neuesten devtools-Funktionen.  
 
-## Getting in touch with Microsoft Edge DevTools team  
+## Kontakt mit dem Microsoft Edge devtools-Team  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
@@ -338,57 +338,57 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 
 <!-- links -->  
 
-[DevToolsCommandMenuIndex]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Run commands with the Microsoft Edge DevTools Command Menu | Microsoft Docs"  
-[DevToolsCoverageIndex]: /microsoft-edge/devtools-guide-chromium/coverage/index "Find unused JavaScript and CSS code with the Coverage tab in Microsoft Edge DevTools | Microsoft Docs"  
-[DevToolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index#simulate-a-mobile-viewport "Simulate a mobile viewport - Simulate mobile devices with Device Mode in Microsoft Edge DevTools | Microsoft Docs"  
-[DevToolsNetworkIndex]: /microsoft-edge/devtools-guide-chromium/network/index "Inspect network activity in Microsoft Edge DevTools | Microsoft Docs"  
-[DevToolsNetworkReferenceViewInitiatorsDependencies]: /microsoft-edge/devtools-guide-chromium/network/reference#view-initiators-and-dependencies "View initiators and dependencies - Network Analysis Reference | Microsoft Docs"  
-[DevGuideEdgeHtmlWhatsNew]: /microsoft-edge/dev-guide/whats-new "What's New in EdgeHTML | Microsoft Docs"  
-[VisualStudioCodeDebuggerEdgeExtension]: /microsoft-edge/visual-studio-code/debugger-for-edge "Debugger for Microsoft Edge Visual Studio Code extension | Microsoft Docs"  
-[VisualStudioCodeElementEdgeExtension]: /microsoft-edge/visual-studio-code/elements-for-edge "Elements for Microsoft Edge Visual Studio Code extension | Microsoft Docs"  
+[DevToolsCommandMenuIndex]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Ausführen von Befehlen mit dem Befehlsmenü von Microsoft Edge devtools | Microsoft docs"  
+[DevToolsCoverageIndex]: /microsoft-edge/devtools-guide-chromium/coverage/index "Suchen Sie ungenutzten JavaScript-und CSS-Code mit der Registerkarte Coverage in Microsoft Edge devtools | Microsoft docs"  
+[DevToolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index#simulate-a-mobile-viewport "Simulieren eines mobilen Viewports – simulieren von mobilen Geräten mit dem Gerätemodus in Microsoft Edge devtools | Microsoft docs"  
+[DevToolsNetworkIndex]: /microsoft-edge/devtools-guide-chromium/network/index "Überprüfen der Netzwerkaktivität in Microsoft Edge devtools | Microsoft docs"  
+[DevToolsNetworkReferenceViewInitiatorsDependencies]: /microsoft-edge/devtools-guide-chromium/network/reference#view-initiators-and-dependencies "Anzeigen von Initiatoren und Abhängigkeiten – Netzwerkanalyse Referenz | Microsoft docs"  
+[DevGuideEdgeHtmlWhatsNew]: /microsoft-edge/dev-guide/whats-new "Neuerungen in EdgeHTML | Microsoft docs"  
+[VisualStudioCodeDebuggerEdgeExtension]: /microsoft-edge/visual-studio-code/debugger-for-edge "Debugger für Microsoft Edge Visual Studio-Code Erweiterung | Microsoft docs"  
+[VisualStudioCodeElementEdgeExtension]: /microsoft-edge/visual-studio-code/elements-for-edge "Elemente für Microsoft Edge Visual Studio-Code Erweiterung | Microsoft docs"  
 
 <!--  [201912Webassembly]: webassembly.md "Improved WebAssembly debugging in Microsoft Edge DevTools"  -->  
 
-[CR842488]: https://crbug.com/842488 "Add the Initiator field to the Headers tab | Chromium Bugs"  
-[CR988253]: https://crbug.com/988253 "Bug DevTools - No Association between Network request and the Timeline Graph | Chromium Bugs"  
-[CR993366]: https://crbug.com/993366 "Please show path part of URL in network panel requests list | Chromium Bugs"  
-[CR1004193]: https://crbug.com/1004193 "REPL mode for V8 | Chromium Bugs"  
-[CR1004203]: https://crbug.com/1004203 "Make Code Coverage awesome | Chromium Bugs"  
-[CR1029031]: https://crbug.com/1029031 "UA Strings are getting outdated | Chromium Bugs" 
-[CR963183]: https://crbug.com/963183 "DevTools are not WCAG compliant | Chromium Bugs"
-[CR941561]: https://crbug.com/941561 "Localizability of the DevTools | Chromium Bugs"
-[CR987787]: https://crbug.com/987787 "Dom 3D View | Chromium Bugs"
+[CR842488]: https://crbug.com/842488 "Hinzufügen des Felds "Initiator" zur Registerkarte "Überschriften" | Chrom Fehler"  
+[CR988253]: https://crbug.com/988253 "Fehler devtools-keine Zuordnung zwischen Netzwerkanforderung und Zeitachsendiagramm | Chrom Fehler"  
+[CR993366]: https://crbug.com/993366 "Bitte zeigen Sie den Pfad Teil der URL in der Liste der Netzwerk Panel-Anfragen an | Chrom Fehler"  
+[CR1004193]: https://crbug.com/1004193 "REPL-Modus für V8 | Chrom Fehler"  
+[CR1004203]: https://crbug.com/1004203 "Erstellen von Code Coverage awesome | Chrom Fehler"  
+[CR1029031]: https://crbug.com/1029031 "UA-Zeichenfolgen werden veraltet | Chrom Fehler" 
+[CR963183]: https://crbug.com/963183 "DevTools sind nicht WCAG-kompatibel | Chrom Fehler"
+[CR941561]: https://crbug.com/941561 "Lokalisierbarkeit der devtools | Chrom Fehler"
+[CR987787]: https://crbug.com/987787 "Dom 3D-Ansicht | Chrom Fehler"
 
-[AccessibilityInsights]: https://aka.ms/a11yinsights "Accessibility Insights"  
+[AccessibilityInsights]: https://aka.ms/a11yinsights "Einblicke in die Barrierefreiheit"  
 
-[DwarfHome]: https://dwarfstd.org "Dwarf Home"  
-[GitHubGoogleChromeDevToolsAuditsPanelThrottling]: https://github.com/GoogleChrome/lighthouse/blob/master/docs/throttling.md#devtools-audits-panel-throttling "DevTools' Audits Panel Throttling - GoogleChrome/lighthouse | GitHub"  
-[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://aka.ms/edgedevtoolsdocs/feedback "New Issue - MicrosoftDocs/edge-developer"  
-[MicrosoftEdgePreviewChannels]: https://aka.ms/microsoftedge "Microsoft Edge Preview Channels"  
-[MicrosoftEdgeInsiderAddons]: https://aka.ms/webhint/edge-extension "Microsoft Edge Insider Addons"  
+[DwarfHome]: https://dwarfstd.org "Zwerge-Startseite"  
+[GitHubGoogleChromeDevToolsAuditsPanelThrottling]: https://github.com/GoogleChrome/lighthouse/blob/master/docs/throttling.md#devtools-audits-panel-throttling "DevTools ' Audits Panel Drosselung-GoogleChrome/Lighthouse | GitHub"  
+[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://aka.ms/edgedevtoolsdocs/feedback "Neues Problem – MicrosoftDocs/Edge – Entwickler"  
+[MicrosoftEdgePreviewChannels]: https://aka.ms/microsoftedge "Microsoft Edge Preview-Kanäle"  
+[MicrosoftEdgeInsiderAddons]: https://aka.ms/webhint/edge-extension "Microsoft Edge Insider-Addons"  
 [MicrosoftVisualStudio]: https://aka.ms/vs "Visual Studio"  
-[MicrosoftVisualStudioBlogDebugJavascript]: https://aka.ms/vs/debug-edge "Debug JavaScript in Microsoft Edge from Visual Studio | Visual Studio Blog"  
-[MicrosoftVisualStudioDownloads]: https://aka.ms/vs/download "Download Visual Studio 2019 for Windows \& Mac"  
-[MDNDocumentObjectModel]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model "Document Object Model (DOM) | MDN"  
+[MicrosoftVisualStudioBlogDebugJavascript]: https://aka.ms/vs/debug-edge "Debuggen von JavaScript in Microsoft Edge in Visual Studio | Visual Studio-Blog"  
+[MicrosoftVisualStudioDownloads]: https://aka.ms/vs/download "Herunterladen von Visual Studio 2019 für Windows \ & Mac"  
+[MDNDocumentObjectModel]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model "Dokumentobjektmodell (DOM) | MDN"  
 [MDNZIndex]: https://developer.mozilla.org/docs/Web/CSS/z-index "z-index | MDN"  
-[PostTweetEdgeDevTools]: https://aka.ms/tweet/edgedevtools "@EdgeDevTools | Post a Tweet"  
-[EdgeDevToolsTwitterAccount]: https://aka.ms/twitter/edgedevtools "@EdgeDevTools Twitter account"
-[VisualStudioCode]: https://aka.ms/vscode "Visual Studio Code"  
-[VisualStudioMarketplaceDebuggerEdge]: https://aka.ms/debugger4code "Debugger for Microsoft Edge - Visual Studio Marketplace"  
-[VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension]: https://aka.ms/elements4code "Elements for Microsoft Edge \(Chromium\) - Visual Studio Marketplace"  
-[VisualStudioMarketplaceWebhintExtension]: https://aka.ms/webhint4code "webhint - Visual Studio Marketplace"
+[PostTweetEdgeDevTools]: https://aka.ms/tweet/edgedevtools "@EdgeDevTools | Einen Tweet Posten"  
+[EdgeDevToolsTwitterAccount]: https://aka.ms/twitter/edgedevtools "@EdgeDevTools Twitter-Konto"
+[VisualStudioCode]: https://aka.ms/vscode "Visual Studio-Code"  
+[VisualStudioMarketplaceDebuggerEdge]: https://aka.ms/debugger4code "Debugger für Microsoft Edge – Visual Studio Marketplace"  
+[VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension]: https://aka.ms/elements4code "Elemente für Microsoft Edge \ (Chrom \) – Visual Studio Marketplace"  
+[VisualStudioMarketplaceWebhintExtension]: https://aka.ms/webhint4code "webhint – Visual Studio Marketplace"
 [Webhint]: https://aka.ms/webhint "webhint"  
-[WebhintBrowserExtension]: https://aka.ms/webhint/browser-extension "Webhint Browser Extension | webhint documentation"  
-[WebhintVisualStudioCodeExtension]: https://aka.ms/webhint/code-extension "Webhint Visual Studio Code Extension | webhint documentation"  
-[TrackingPrevention]: https://aka.ms/microsoftedge/tracking-prevention-blog "Improving Tracking Prevention in Microsoft Edge blog post"
-[TheWebWeWant]: https://aka.ms/webwewant "The Web We Want"
+[WebhintBrowserExtension]: https://aka.ms/webhint/browser-extension "Webhint-Browser Erweiterung | webhint-Dokumentation"  
+[WebhintVisualStudioCodeExtension]: https://aka.ms/webhint/code-extension "Webhint Visual Studio-Code Erweiterung | webhint-Dokumentation"  
+[TrackingPrevention]: https://aka.ms/microsoftedge/tracking-prevention-blog "Verbessern der nach Verfolgungs Vorbeugung in Microsoft Edge-Blogbeitrag"
+[TheWebWeWant]: https://aka.ms/webwewant "Das gewünschte Web"
 
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/updates/2019/12/devtools/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
+> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
+> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/updates/2019/12/devtools/index) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
 
-[![Creative Commons License][CCby4Image]][CCA4IL]  
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
+[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

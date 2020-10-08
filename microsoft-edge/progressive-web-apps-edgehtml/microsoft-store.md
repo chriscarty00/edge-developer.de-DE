@@ -1,12 +1,12 @@
 ---
-description: Reach the world of Windows 10 customers by distributing your PWA through the Microsoft Store
-title: Progressive Web Apps in the Microsoft Store
+description: Erreichen Sie die Welt von Windows 10-Kunden, indem Sie Ihre PWA über den Microsoft Store verteilen.
+title: Progressive Web-Apps im Microsoft Store
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: progressive web apps, PWA, Edge, Windows, Microsoft Store, Bing PWA index
+keywords: Progressive Web-Apps, PWA, Edge, Windows, Microsoft Store, Bing PWA-Index
 ms.openlocfilehash: a4491f19b89e8b0f6fa511f146744499e2074f22
 ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
 ms.translationtype: MT
@@ -14,118 +14,118 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "10568694"
 ---
-# Progressive Web Apps in the Microsoft Store
+# Progressive Web-Apps im Microsoft Store
 
-When you publish your Progressive Web App (PWA) to the [Microsoft Store](https://developer.microsoft.com/store), your potential app audience expands to the entire Windows 10 install base of nearly 700 million active monthly users! 
+Wenn Sie Ihre Progressive Web App (PWA) im [Microsoft Store](https://developer.microsoft.com/store)veröffentlichen, wird Ihre potenzielle App-Zielgruppe auf die gesamte Windows 10-Installationsbasis von fast 700 Millionen aktiven monatlichen Benutzern erweitert! 
 
-PWAs in the Microsoft Store enjoy a number of advantages:
+PWAs im Microsoft Store bieten eine Reihe von Vorteilen:
 
-- **Discoverability** - Apps in the Microsoft Store are showcased through different categories, curated collections, and search filters, providing an easy browsing and shopping experience for potential customers of your app. You can even [enhance your Store listing](/windows/uwp/publish/app-screenshots-and-images) with screenshots, a hero image, and video trailers!
+- **Auffindbarkeit** – apps im Microsoft Store werden über verschiedene Kategorien, kuratierte Sammlungen und Suchfilter bereitgestellt, die eine einfache Browsing-und Einkaufserfahrung für potenzielle Kunden Ihrer APP bieten. Sie können Ihren Store-Eintrag sogar mit Screenshots, einem heldenbild und Video Trailern [verbessern](/windows/uwp/publish/app-screenshots-and-images) !
 
-- **Trustworthiness** - Windows customers know they can trust their Microsoft Store purchases and downloads because they adhere to Microsoft's rigorous [quality and safety standards](/legal/windows/agreements/store-policies).
+- **Vertrauenswürdigkeit** – Windows-Kunden wissen, dass Sie Ihren Microsoft Store-Käufen und-Downloads vertrauen können, da Sie den strengen [Qualitäts-und Sicherheitsstandards](/legal/windows/agreements/store-policies)von Microsoft entsprechen.
 
-- **Easy install** - The Microsoft Store provides a consistent and user friendly install experience across [all Windows 10 apps](https://www.microsoft.com/store/apps/windows?icid=CNavAppsWindowsApps), making it easy for all customers to install your PWA, regardless of technical comfort level.
+- **Einfache Installation** – der Microsoft Store bietet eine konsistente und benutzerfreundliche Installationsumgebung für [alle Windows 10-apps](https://www.microsoft.com/store/apps/windows?icid=CNavAppsWindowsApps), was es allen Kunden ermöglicht, ihre PWA unabhängig vom technischen Komfort zu installieren.
 
-- **Business insights** - The [Windows Dev Center dashboard](/windows/uwp/publish/using-the-windows-dev-center-dashboard) for the Microsoft Store provides you with [detailed analytics](/windows/uwp/publish/analytics) about everything from how many Windows customers your PWA has reached to how they're using it and what they have to say. You can also find metrics and telemetry data on app health, ad usage, and more.
+- **Business Insights** – das [Windows dev Center-Dashboard](/windows/uwp/publish/using-the-windows-dev-center-dashboard) für den Microsoft Store bietet Ihnen [detaillierte Analysen](/windows/uwp/publish/analytics) zu allem, was davon abgeht, wie viele Windows-Kunden ihre PWA-Anwendung erreicht hat und was Sie zu sagen haben. Sie können auch Metriken und Telemetrie-Daten zu app-Integrität, anzeigen Nutzung und vieles mehr finden.
 
-There are two options for getting your PWA into the Microsoft Store:
+Es gibt zwei Möglichkeiten zum Abrufen ihrer PWA in den Microsoft Store:
 
-1. You can [manually submit it](#submitting-your-pwa-manually), or
+1. Sie können [es manuell übermitteln](#submitting-your-pwa-manually)oder
 
-2. If your PWA meets [certain criteria](#criteria-for-automatic-submission), it can be [automatically indexed](#automatic-pwa-importing-with-bing) by the Bing web crawler. (You also have the option to [opt-out](#opting-out-of-automatic-microsoft-store-import) of auto-submission.)
+2. Wenn Ihre PWA [bestimmte Kriterien](#criteria-for-automatic-submission)erfüllt, kann Sie automatisch vom Bing Web Crawler [indiziert](#automatic-pwa-importing-with-bing) werden. (Sie haben auch die Möglichkeit, die automatische Übermittlung [abzulehnen](#opting-out-of-automatic-microsoft-store-import) .)
 
-Regardless of submission method, once your PWA is accepted to the Microsoft Store you'll gain access to all the benefits outlined above.
+Unabhängig von der Übermittlungsmethode erhalten Sie Zugriff auf alle oben beschriebenen Vorteile, sobald Ihre PWA im Microsoft Store angenommen wurde.
 
-## Submitting your PWA manually
+## Manuelles übermitteln ihrer PWA
 
-In order to distribute and promote an app through the Microsoft Store, you'll need to submit it as a Windows app package (*.appx* file).  For server-hosted web apps such as PWAs, this package simply contains app metadata and home screen icons (and none of the actual application code). With this, your web app can be installed and launched from the home screen alongside other [Windows 10 apps](/windows/uwp/get-started/whats-a-uwp) by running in a lightweight native app wrapper (*WWAHost.exe* process), independent from the Microsoft Edge browser window.  
+Um eine APP über den Microsoft Store zu verteilen und zu bewerben, müssen Sie Sie als Windows-App-Paket (*AppX* -Datei) übermitteln.  Für Server gehostete Web-Apps wie PWAs enthält dieses Paket einfach App-Metadaten und Symbole für den Startbildschirm (und keinen eigentlichen Anwendungscode). Damit kann Ihre Web-App zusammen mit anderen [Windows 10-apps](/windows/uwp/get-started/whats-a-uwp) auf dem Startbildschirm installiert und gestartet werden, indem Sie in einem einfachen, systemeigenen App-Wrapper (*WWAHost.exe* Prozess) ausgeführt wird, unabhängig vom Microsoft Edge-Browserfenster.  
 
 > [!IMPORTANT]
-> The EdgeHTML web platform engine is used by the WWAHost app wrapper which could introduce compatibility differences for your Microsoft Edge (Chromium) based PWA.  Be sure to do a full test pass on your application using Microsoft Edge (EdgeHTML) before submitting your app to the Microsoft store as the EdgeHTML engine is no longer being updated with newer web standards.  
+> Das EdgeHTML Web Platform-Modul wird vom WWAHost-App-Wrapper verwendet, der Kompatibilitätsunterschiede für Ihre auf Chrom basierende Microsoft Edge-basierte PWA-Anwendung einführen kann.  Stellen Sie sicher, dass Sie einen vollständigen TestPass für Ihre Anwendung mit Microsoft Edge (EdgeHTML) durchführen, bevor Sie Ihre APP an den Microsoft Store übermitteln, da das EdgeHTML-Modul nicht mehr mit neueren Webstandards aktualisiert wird.  
 
-Here's how to do it.
+Gehen Sie dazu wie folgt vor:
 
-### Prerequisites
+### Voraussetzungen
 
-- **An existing PWA**. Here's how to [convert your web app to a PWA](./get-started.md) if it isn't one already. 
-- **A Windows APPX packaging tool for PWAs**. Here's how to [build and run your PWA on Windows](./windows-features.md) using Visual Studio. You can also use [PWA Builder](https://www.pwabuilder.com/) to build a Windows package.
-- [**Microsoft Store app developer account**](/windows/uwp/publish/opening-a-developer-account). There is a [one-time fee](/windows/uwp/publish/account-types-locations-and-fees) depending on your chosen account type and location, and registration requires a valid [Microsoft Account](https://account.microsoft.com/).
+- **Eine vorhandene PWA**. Hier erfahren Sie, wie Sie [Ihre Web-App in eine PWA-Datei umwandeln,](./get-started.md) Wenn Sie noch nicht vorhanden ist. 
+- **Ein Windows APPX-Paket Tool für PWAs**. Hier erfahren Sie, wie [Sie Ihre PWA unter Windows mit Visual Studio erstellen und ausführen](./windows-features.md) . Sie können auch den [PWA-Generator](https://www.pwabuilder.com/) verwenden, um ein Windows-Paket zu erstellen.
+- [**Microsoft Store-App-Entwicklerkonto**](/windows/uwp/publish/opening-a-developer-account) Je nach gewähltem Kontotyp und Standort gibt es eine [einmalige Gebühr](/windows/uwp/publish/account-types-locations-and-fees) , und für die Registrierung ist ein gültiges [Microsoft-Konto](https://account.microsoft.com/)erforderlich.
 
 
-### Store submission through *Visual Studio* 
+### Speichern der Übermittlung über *Visual Studio* 
 
-Follow these steps to [create an app package upload file](/windows/uwp/packaging/packaging-uwp-apps#create-an-app-package-upload-file) for your PWA in Visual Studio. See [*Package a UWP app with Visual Studio*](/windows/uwp/packaging/packaging-uwp-apps) for a more general overview of this process.
+Führen Sie die folgenden Schritte aus, um [eine APP-Paket-Uploaddatei](/windows/uwp/packaging/packaging-uwp-apps#create-an-app-package-upload-file) für Ihre PWA-Datei in Visual Studio zu erstellen. Eine allgemeinere Übersicht über diesen Prozess finden Sie unter [*Verpacken einer UWP-App mit Visual Studio*](/windows/uwp/packaging/packaging-uwp-apps) .
 
-The instructions will also guide you through running the [**Windows App Certification Kit**](https://developer.microsoft.com/windows/develop/app-certification-kit) to test your app for compliance with Microsoft Store requirements. This is optional, but highly recommended.
+Die Anweisungen führen Sie auch durch Ausführen des [**Windows-App-zertifizierungskits**](https://developer.microsoft.com/windows/develop/app-certification-kit) , um Ihre APP auf die Einhaltung der Microsoft Store-Anforderungen zu testen. Dies ist optional, wird aber dringend empfohlen.
 
-### Store submission through *Windows Dev Center*
+### Speichern der Übermittlung über das *Windows dev Center*
 
-Here's how to use *PWA Builder* to generate an app package for upload to the Windows Dev Center.
+Hier erfahren Sie, wie Sie mithilfe des *PWA-Generators* ein App-Paket für den Upload in das Windows dev Center erstellen.
 
-1. Generate your Windows 10 app. Here's how to run your [PWA as a Windows app with Visual Studio](./windows-features.md). You can also use [PWA Builder](https://www.pwabuilder.com/) to generate your Windows 10 app.
+1. Generieren Sie Ihre Windows 10-app. Hier erfahren Sie, wie Sie Ihre [PWA als Windows-App mit Visual Studio](./windows-features.md)ausführen. Sie können auch den [PWA-Generator](https://www.pwabuilder.com/) verwenden, um Ihre Windows 10-APP zu generieren.
 
-2. Reserve your app name for the Microsoft Store by logging into the [Windows Dev Center dashboard](https://developer.microsoft.com/dashboard/windows/overview) with your account info and following the steps to [create your app by reserving a name](/windows/uwp/publish/create-your-app-by-reserving-a-name). Each reserved name must be unique throughout the Microsoft Store.
+2. Reservieren Sie Ihren APP-Namen für den Microsoft Store, indem Sie sich beim [Windows dev Center-Dashboard](https://developer.microsoft.com/dashboard/windows/overview) mit Ihren Kontoinformationen anmelden und die Schritte zum Erstellen der app ausführen, [indem Sie einen Namen](/windows/uwp/publish/create-your-app-by-reserving-a-name)reservieren. Jeder reservierter Name muss im gesamten Microsoft Store eindeutig sein.
 
-3. When you upload your app's packages, the *DisplayName*, *Name*, *Publisher*, and *PublisherDisplayName* values in your *.appxmanifest* file must match the values assigned to your app in the Windows Dev Center dashboard upon reserving its name. 
+3. Wenn Sie die Pakete Ihrer APP hochladen, müssen die Werte für *Display*Name, *Name*, *Publisher*und *PublisherDisplayName* in Ihrer *appxmanifest* -Datei mit den Werten übereinstimmen, die Ihrer APP im Windows dev Center-Dashboard bei der Beibehaltung des Namens zugewiesen sind. 
 
-    Log into the [Windows Dev Center dashboard](https://developer.microsoft.com/dashboard/windows/overview), and locate your app identity values under **App management** > **App identity**:
+    Melden Sie sich beim [Windows dev Center-Dashboard](https://developer.microsoft.com/dashboard/windows/overview)an, und suchen Sie die APP-Identitätswerte unter **App-Verwaltungs**-  >  **App-Identität**:
 
-    ![Windows Dev Center dashboard, App identity settings](./media/dashboard-app-identity.png)
+    ![Windows dev Center-Dashboard, Einstellungen für die APP-Identität](./media/dashboard-app-identity.png)
 
-    Then, locate your `appxmanifest.xml` file and replace the following values with the ones assigned in the Windows Dev Center dashboard:
+    Suchen Sie dann `appxmanifest.xml` die Datei, und ersetzen Sie die folgenden Werte durch diejenigen, die im Windows dev Center-Dashboard zugewiesen sind:
 
-    - **<Identity Name="** *Package/Identity/Name*
-    - **<Identity Publisher="** *Package/Identity/Publisher*
-    - **<DisplayName** **>** *Name you reserved for your app* 
-    - **<PublisherDisplayName** **>** *Package/Properties/PublisherDisplayName* **</PublisherDisplayName>**
+    - **<Identity Name = "** *Paket/Identität/Name*
+    - **<Identity Publisher = "** *Paket/Identität/Herausgeber*
+    - **<DisplayName** **>** *Der Name, den Sie für Ihre APP reserviert haben* 
+    - **<PublisherDisplayName** **>** *Paket/Eigenschaften/PublisherDisplayName***</PublisherDisplayName>**
 
-4. Now you're ready to compile all your PWA resources into a single `.appx` file you can upload to the Microsoft Store. From a command prompt, navigate to the directory of your web manifest and create a Windows 10 package (specified below w/ optional debug logging):
+4. Jetzt sind Sie bereit, alle Ihre PWA-Ressourcen in einer einzigen `.appx` Datei zu kompilieren, die Sie in den Microsoft Store hochladen können. Navigieren Sie an einer Eingabeaufforderung zum Verzeichnis Ihres webmanifests, und erstellen Sie ein Windows 10-Paket (angegeben unter w/optionale Debug-Protokollierung):
 
     ```
     pwabuilder package -p windows10 -l debug
     ```
 
-    Your .appx file will be generated to this location: `PWA\Store packages\windows10\package\windows.appx`.
+    Ihre AppX-Datei wird an diesem Speicherort generiert: `PWA\Store packages\windows10\package\windows.appx` .
 
-5. Before you upload your app for submisison to the Microsoft Store, its a good idea to test your app for compliance with Microsoft Store policies. You can do this by downloading the [**Windows App Certification Kit**](https://developer.microsoft.com/windows/develop/app-certification-kit), launching it, and then selecting your app's *.appx* file for testing. You will receive a report of areas to address once all the tests are complete.
+5. Bevor Sie Ihre APP für submisison in den Microsoft Store hochladen, empfiehlt es sich, Ihre APP auf die Einhaltung der Microsoft Store-Richtlinien zu testen. Sie können dies tun, indem Sie das [**Windows-App-Zertifizierungs Kit**](https://developer.microsoft.com/windows/develop/app-certification-kit)herunterladen, es starten und dann die *AppX* -Datei Ihrer APP zum Testen auswählen. Sobald alle Tests abgeschlossen sind, erhalten Sie einen Bericht über die anzuwendenden Bereiche.
 
-6. Upload your package and complete the submission by logging back into the [Windows Dev Center dashboard](https://developer.microsoft.com/dashboard/windows/overview) and expanding the **Submissions** > **Submisison 1** panel. Follow the checklist to complete the [required store listing information](/windows/uwp/publish/app-submissions) and [upload your app package](/windows/uwp/publish/upload-app-packages).
+6. Laden Sie Ihr Paket hoch, und führen Sie die Übermittlung durch, indem Sie sich wieder im [Windows dev Center-Dashboard](https://developer.microsoft.com/dashboard/windows/overview) anmelden und den Bereich über **mittlungen**  >  **Submisison 1** erweitern. Befolgen Sie die Checkliste, um die [erforderlichen Informationen zum Store-Eintrag](/windows/uwp/publish/app-submissions) abzuschließen und [Ihr App-Paket hochzuladen](/windows/uwp/publish/upload-app-packages).
 
-For more on the all the features and services available to Microsoft Store app developers, see [*Publish Windows apps*](https://developer.microsoft.com/store/publish-apps) on the [Windows Dev Center](https://developer.microsoft.com/windows).
+Weitere Informationen zu allen Features und Diensten, die Microsoft Store-App-Entwicklern zur Verfügung stehen, finden Sie unter [*Veröffentlichen von Windows-apps*](https://developer.microsoft.com/store/publish-apps) im [Windows dev Center](https://developer.microsoft.com/windows).
 
-## Automatic PWA importing with Bing
+## Automatischer PWA-Import mit Bing
 
-Just as your PWA's [web app manifest](https://developer.mozilla.org/docs/Web/Manifest) is a signal to supporting platforms that your app is offline-capable and ready to be presented as a fully integrated app experience, it's also a hint to the Bing web crawler that your PWA should be considered for automatic inclusion in the Microsoft Store. 
+Ebenso wie das Web- [App-Manifest](https://developer.mozilla.org/docs/Web/Manifest) ihrer PWA ein Signal für unterstützende Plattformen ist, dass Ihre APP offline ist und bereit ist, als vollständig integrierte App-Umgebung dargestellt zu werden, ist dies auch ein Hinweis für den Bing-Webcrawler, dass Ihre PWA für die automatische Inklusion in den Microsoft Store berücksichtigt werden sollte. 
 
-If your PWA meets the requirements below, the Bing indexing service will automatically package your PWA in the [*.appx*](#submitting-your-pwa-manually) format required for installation on Windows 10 and assemble your app's store product page based on the metadata in its web app manifest. After claiming your PWA, you'll be able to further customize your store page and gain access to user analytics and other app management tools through the Windows Dev Center dashboard.
+Wenn Ihre PWA die folgenden Anforderungen erfüllt, wird der Bing-Indizierungsdienst ihre PWA automatisch im [*AppX*](#submitting-your-pwa-manually) -Format Verpacken, das für die Installation unter Windows 10 erforderlich ist, und die Store-Produktseite ihrer App basierend auf den Metadaten in Ihrem Web App-Manifest zusammenstellen. Nachdem Sie Ihre PWA-Anwendung beansprucht haben, können Sie Ihre Store-Seite weiter anpassen und über das Windows dev Center-Dashboard Zugriff auf die Benutzeranalyse und andere APP-Verwaltungstools erhalten.
 
-### Criteria for automatic submission
+### Kriterien für die automatische Übermittlung
 
-To be automatically packaged and listed for the Microsoft Store, your PWA will need:
+Um automatisch verpackt und für den Microsoft Store aufgelistet zu werden, benötigt Ihre PWA:
 
-- [X] A non-empty web app manifest file, with at minimum:
+- [X] eine nicht leere Web-App-Manifestdatei mit mindestens:
 
   - Name
-  - Description
-  - App icon that is at least 512 x 512 pixels
+  - Beschreibung
+  - App-Symbol mit mindestens 512 x 512 Pixeln
 
-- [X] Unique core logic (not minimally modified code from an [app boilerplate](https://en.wikipedia.org/wiki/Boilerplate_code) template)
+- [X] eindeutige Kern Logik (nicht minimal geänderter Code aus einer [App-Standard](https://en.wikipedia.org/wiki/Boilerplate_code) Vorlage)
 
-- [X] To be served over a secure connection (HTTPS)
+- [X] wird über eine sichere Verbindung (HTTPS) bereitgestellt.
 
-- [X] Service worker script(s)
+- [X] Service Worker-Skript (s)
 
-- [X] To not violate any laws or [Microsoft Store policies](/legal/windows/agreements/store-policies).
+- [X], um keine Gesetze oder [Microsoft Store-Richtlinien](/legal/windows/agreements/store-policies)zu verletzen.
 
-We won't ingest every app that meets these criteria, but will be including them in our considerations for candidates as we gradually expand our program.
+Wir werden nicht jede APP, die diese Kriterien erfüllt, aufnehmen, sondern Sie in unsere Überlegungen für Kandidaten einbeziehen, während wir unser Programm sukzessive erweitern.
 
-### Opting out of automatic Microsoft Store import
+### Deaktivieren des automatischen Microsoft Store-Imports
 
-Your PWA can opt out of automatic import to the Microsoft Store by serving a `robots.txt` file containing the following:
+Ihre PWA kann den automatischen Import in den Microsoft Store deaktivieren, indem Sie eine `robots.txt` Datei, die Folgendes enthält:
 
 ```
 User-agent: bingbot
 Disallow: /manifest.json
 ```
 
-This directs the Bing web crawler (Bingbot) to disregard your web manifest file for PWA indexing purposes. This will not affect your site's search ranking in Bing's regular [web indexing process](https://www.bing.com/webmaster/help/help-center-661b2d18).
+Dadurch wird der Bing Web Crawler (Bingbot) dazu verleitet, Ihre Web-Manifestdatei für PWA-Indizierungs Zwecke zu ignorieren. Dies hat keinen Einfluss auf die Such Rangfolge Ihrer Website in Bings regulärem [webindizierungs Prozess](https://www.bing.com/webmaster/help/help-center-661b2d18).

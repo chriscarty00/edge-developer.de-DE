@@ -1,13 +1,13 @@
 ---
 ms.assetid: 737ac54c-ad89-4b3f-bbe2-4e4169d3f364
-description: Check out tools and testing procedures that help evaluate a website's accessibility.
-title: Accessibility - Test
+description: Schauen Sie sich die Tools und Testverfahren an, mit denen Sie die Barrierefreiheit einer Website bewerten können.
+title: Barrierefreiheit – Test
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: accessibility, accessibility for developers, accessible websites, edge, web development, ARIA, developer, UIA, UI Automation
+keywords: Barrierefreiheit, Barrierefreiheit für Entwickler, barrierefreie Websites, Edge, Web-Entwicklung, Aria, Developer, UIA, UI-Automatisierung
 ms.openlocfilehash: 66b511b09be1ae16caa9ed0bbbae823a27cefea2
 ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
 ms.translationtype: MT
@@ -15,31 +15,31 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "10566739"
 ---
-# Accessibility Testing
-Accessibility testing is a form of usability testing to verify your website is usable by all people. Check out the W3C's [Accessibility Testing](https://www.w3.org/wiki/Accessibility_testing) page for information on when testing should be done, testing requirements, who should test your site, etc.
+# Barrierefreiheits Tests
+Barrierefreiheits Tests sind eine Form von Usability-Tests, um zu überprüfen, ob Ihre Website für alle Personen nutzbar ist. Schauen Sie sich die W3C-Seite für [Barrierefreiheits Tests](https://www.w3.org/wiki/Accessibility_testing) an, um zu erfahren, wann Tests durchgeführt werden sollten, welche Anforderungen getestet werden sollten, wer Ihre Website testen soll usw.
 
-Use the following tools and testing producers to evaluate your website for accessibility:
+Verwenden Sie die folgenden Tools und Test Hersteller, um Ihre Website für Barrierefreiheit auszuwerten:
 
-#### [Accessibility Evaluation Resources](https://www.w3.org/WAI/eval/Overview.html)
-Accessibility Evaluation Resources is a multi-page resource by the W3C that outlines different approaches for evaluating websites for accessibility.
+#### [Ressourcen zur Auswertung der Barrierefreiheit](https://www.w3.org/WAI/eval/Overview.html)
+Barrierefreiheits Auswertungs Ressourcen ist eine mehrseitige Ressource des W3C, in der verschiedene Ansätze für die Auswertung von Websites für Barrierefreiheit erläutert werden.
 
-#### [Assistive technology compatibility tests](http://www.powermapper.com/tests/)
-Test results showing how different content types and standards behave in assistive technologies (AT) like screen readers.
+#### [Kompatibilitätstests für Hilfstechnologien](http://www.powermapper.com/tests/)
+Test Ergebnisse, die zeigen, wie sich unterschiedliche Inhaltstypen und Standards in Hilfstechnologien (at) wie Bildschirmsprachausgaben Verhalten.
 
-#### [Easy Checks – A First Review of Web Accessibility](https://www.w3.org/WAI/eval/preliminary.html)
-A series of quick checks by the WAI that help you asses the accessibility of a web page.
+#### [Einfache Überprüfungen – eine erste Überprüfung der Barrierefreiheit im Web](https://www.w3.org/WAI/eval/preliminary.html)
+Eine Reihe von schnellen Überprüfungen durch Wai, die Ihnen helfen, die Barrierefreiheit einer Webseite zu beurteilen.
 
-#### [How to Meet WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref/)
-A quick reference to Web Content Accessibility Guidelines (WCAG) 2.0 requirements (success criteria) and techniques.
+#### [So treffen Sie die WCAG 2,0](https://www.w3.org/WAI/WCAG20/quickref/)
+Eine Kurzübersicht über Web Content Accessibility Guidelines (WCAG) 2,0-Anforderungen (Erfolgskriterien) und Techniken.
 
 #### [HTML5Accessibility](https://html5accessibility.com)
-This site tests which new HTML5 features are accessibly supported by major browsers. 
+Diese Website testet, welche neuen HTML5-Features von wichtigen Browsern zugänglich unterstützt werden. 
 
-#### [webhint](https://webhint.io/)
-Use [webhint](https://webhint.io/) to check for out-of-date libraries, security improvements, performance problems, accessibility issues and more.
+#### [Webhint](https://webhint.io/)
+Verwenden Sie [webhint](https://webhint.io/) , um nach veralteten Bibliotheken, Sicherheitsverbesserungen, Leistungsproblemen, Barrierefreiheits Problemen und vielem mehr zu suchen.
 
-#### [Web Accessibility Checker](https://visualstudiogallery.msdn.microsoft.com/3aabefab-1681-4fea-8f95-6a62e2f0f1ec)
-A Visual Studio extension that performs accessibility checks on any ASP.NET web application.
+#### [Web-barrierefreiheitsprüfung](https://visualstudiogallery.msdn.microsoft.com/3aabefab-1681-4fea-8f95-6a62e2f0f1ec)
+Eine Visual Studio-Erweiterung, die Barrierefreiheits Prüfungen für jede ASP.NET-Webanwendung ausführt.
 
-#### [Web Accessibility Evaluation Tools List](https://www.w3.org/WAI/ER/tools/index.html)
-A list of web accessibility evaluation tools to help determine if websites meet accessibility guidelines.
+#### [Liste der Evaluierungs Tools für Web-Barrierefreiheit](https://www.w3.org/WAI/ER/tools/index.html)
+Eine Liste der Tools zur Bewertung der Barrierefreiheit im Web, um festzustellen, ob Websites den Richtlinien für Barrierefreiheit entsprechen.

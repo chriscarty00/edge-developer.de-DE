@@ -1,12 +1,12 @@
 ---
-description: Use the Service Workers panel for managing and debugging your service workers
-title: DevTools - Debugger - Service Workers
+description: Verwenden des Service Worker-Panels zum Verwalten und Debuggen Ihrer Dienstmitarbeiter
+title: DevTools-Debugger – Dienstmitarbeiter
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools, debugger, debugging, pwa, service worker, cache api
+keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools, Debugger, Debuggen, PWA, Service Worker, Cache-API
 ms.custom: seodec18
 ms.openlocfilehash: 8e1fa62358657a47ce40d0742f95a76f2586d0c8
 ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
@@ -17,22 +17,22 @@ ms.locfileid: "10567592"
 ---
 # Service Workers
 
-The **Service Workers** panel has tools for managing and debugging the service workers for your site, to help you:
+Das **Dienstpersonal** -Panel enthält Tools zum Verwalten und Debuggen der Dienstmitarbeiter für Ihre Website, um Ihnen zu helfen:
 
- - Get an overview of all the service workers associated with your site and details of their scope and status
- - **Update** and manage (**Unregister**) the service worker registration for the given scope
- - **Push** a test notification
- - **Stop**/**Start** individual service workers, and
- - **Inspect** the selected service worker in a separate debugger window
+ - Verschaffen Sie sich einen Überblick über alle Servicemitarbeiter, die Ihrer Website zugeordnet sind, sowie Einzelheiten zu deren Umfang und Status.
+ - **Aktualisieren** und verwalten (**aufheben**der Registrierung) der Service Worker-Registrierung für den angegebenen Bereich
+ - **Pushen** einer testbenachrichtigung
+ - **Stopp** / **Starten** einzelner Servicemitarbeiter und
+ - Über **prüfen** der ausgewählten Dienstmitarbeiter in einem separaten Debuggerfenster
 
-![Service Worker Overview pane](./media/service_worker.png)
+![Bereich ' Dienstmitarbeiter Übersicht '](./media/service_worker.png)
 
-Please note the following about service worker debugging in Edge DevTools:
+Beachten Sie die folgenden Informationen zum Service Worker-Debuggen in Edge devtools:
 
- - Debugging a service worker will launch a new instance of the  DevTools separate from the page's tools because service workers can be shared across multiple tabs.
- - The [**Elements**](./elements.md) and [**Emulation**](./emulation.md) panels are absent from the service worker debugger, given that service workers run in the background and do not directly control the front-end of your app.
- - Currently network traffic for a service worker is only reported from the  DevTools debugging instance for that worker, and not from the debugger instance for the page itself.
- - To simulate a **Push** from the DevTools, you'll need to add a *push* event listener to your service worker in order to observe its effect. The following example will print "Test push message from DevTools" in your service worker **Console**.
+ - Beim Debuggen eines Dienst Arbeitsthreads wird eine neue Instanz des devtools, die sich von den Tools der Seite trennt, gestartet, da Dienstmitarbeiter auf mehreren Registerkarten freigegeben werden können.
+ - Die [**Elemente**](./elements.md) und [**Emulations**](./emulation.md) Panels fehlen im Service Worker-Debugger, da Dienstmitarbeiter im Hintergrund ausgeführt werden und das Front-End Ihrer APP nicht direkt steuern.
+ - Zurzeit wird der Netzwerkdatenverkehr für einen Dienstmitarbeiter nur von der devtools-Debugsitzung für diesen Worker und nicht von der Debugger-Instanz für die Seite selbst gemeldet.
+ - Wenn Sie einen **Push** aus dem devtools simulieren möchten, müssen Sie einen *Push* -Ereignis-Listener zu Ihrem Dienstmitarbeiter hinzufügen, um dessen Wirkung zu beobachten. Im folgenden Beispiel wird "Test Push Message from devtools" in Ihrer Service Worker- **Konsole**gedruckt.
 
    ```JavaScript
    self.addEventListener('push', function(event){
@@ -40,20 +40,20 @@ Please note the following about service worker debugging in Edge DevTools:
    });
    ```
 
-Here are some general things to keep in mind when using service workers:
+Im folgenden finden Sie einige allgemeine Punkte, die Sie bei der Verwendung von Servicemitarbeitern beachten sollten:
 
-- **HTTPS-only.** Service workers will not work in HTTP; you will need to use HTTPS. However, you can register service workers on `localhost` for testing purposes.
+- **Nur HTTPS.** Dienstmitarbeiter funktionieren nicht in http; Sie müssen HTTPS verwenden. Sie können Dienstmitarbeiter jedoch zu `localhost` Testzwecken registrieren.
 
-- **No DOM access allowed.** As with web workers, you don't get access to the page's object model. This means that if you need to change something about the page, you'll need to use [`postMessage`](https://developer.mozilla.org/docs/Web/API/Worker/postMessage) from the service worker to the page so that you can handle it DOM changes from the page.
+- **Kein DOM-Zugriff zulässig.** Wie bei Web Workern erhalten Sie keinen Zugriff auf das Objektmodell der Seite. Das bedeutet, dass Sie, wenn Sie etwas über die Seite ändern müssen, [`postMessage`](https://developer.mozilla.org/docs/Web/API/Worker/postMessage) von der Dienstmitarbeiter auf die Seite verwenden müssen, damit Sie DOM-Änderungen auf der Seite behandeln können.
 
-- **Executes separate from page.** Because these scripts are not tied to the lifetime of a page, it's important to understand that they do not share the same context as the page. Aside from not having access to the DOM (as stated earlier), they won't have access to the same variables available on the page.
+- **Führt eine separate Seite aus.** Da diese Skripts nicht an die Lebensdauer einer Seite gebunden sind, ist es wichtig zu verstehen, dass Sie nicht den gleichen Kontext wie die Seite aufweisen. Abgesehen davon, dass Sie keinen Zugriff auf das DOM haben (wie bereits erwähnt), haben Sie keinen Zugriff auf die gleichen Variablen, die auf der Seite verfügbar sind.
 
-- **Overrides *App Cache*.** App Cache will be ignored when service workers are in use. The Service Worker API is intended to entirely supplant App Cache  by giving more granular control to the web developer.
+- **Überschreibt den *App-Cache*.** Der APP-Cache wird ignoriert, wenn Dienstmitarbeiter verwendet werden. Die Service Worker-API soll den App-Cache vollständig verdrängen, indem Sie dem Web-Entwickler eine genauere Steuerung bietet.
 
-  - **Script can't be on CDN.** The JavaScript file for the service worker can't be hosted on a Content Distribution Network (CDN), it must be on the same domain as the page. However, if you like, you can import scripts from your CDN.
+  - **Das Skript kann nicht auf CDN lauten.** Die JavaScript-Datei für den Dienstmitarbeiter kann nicht in einem Inhalts Verteilungsnetzwerk (CDN) gehostet werden, sondern muss sich in der gleichen Domäne wie die Seite befinden. Wenn Sie möchten, können Sie jedoch Skripts aus Ihrem CDN importieren.
 
-- **Can be terminated any time.** Service workers are meant to be short-lived and their lifetime is tied to events. In particular, service workers have a time limit in which they must finish executing their event handlers. In other cases, the browser or the operating system may choose to terminate a service worker that impacts the battery, CPU, or memory consumption. In either case, avoid relying on global variables in the service worker script in case a different service worker instance is used on a subsequent event that's being handled.
+- **Kann jederzeit gekündigt werden.** Dienstmitarbeiter sollen kurzlebig sein und ihre Lebenszeit ist an Ereignisse gebunden. Insbesondere können Servicemitarbeiter ein Zeitlimit angeben, in dem Sie die Ausführung ihrer Ereignishandler beenden müssen. In anderen Fällen kann es vorkommen, dass der Browser oder das Betriebssystem einen Dienstmitarbeiter beendet, der sich auf die Akku-, CPU-oder Speicherauslastung auswirkt. Vermeiden Sie in beiden Fällen die Verwendung globaler Variablen im Service Worker-Skript, wenn für ein nachfolgendes Ereignis, das verarbeitet wird, eine andere Dienst Arbeitskraft-Instanz verwendet wird.
 
-- **Only asynchronous requests allowed.** Synchronous XHR is not allowed here! Neither is localStorage, so it's best to make use of IndexedDB and the new Caches API described earlier.
+- **Nur asynchrone Anforderungen zulässig.** Synchrone XMLHttpRequest ist hier nicht zulässig! Weder ist localStorage, daher empfiehlt es sich, IndexedDB und die zuvor beschriebene neue Caches-API zu verwenden.
 
-- **Service worker to scope is 1:1.** You'll only be able to have one service worker per scope. That means if you try to register a different service worker for a scope that already has a service worker, that service worker will be updated.
+- **Der Dienstmitarbeiter für den Bereich ist 1:1.** Sie können nur einen Dienstmitarbeiter pro Bereich haben. Das bedeutet, wenn Sie versuchen, einen anderen Dienstmitarbeiter für einen Bereich zu registrieren, der bereits über einen Dienstmitarbeiter verfügt, wird dieser Dienstmitarbeiter aktualisiert.

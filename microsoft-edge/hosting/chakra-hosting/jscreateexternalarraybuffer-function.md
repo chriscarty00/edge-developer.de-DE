@@ -1,6 +1,6 @@
 ---
-description: Creates a Javascript `ArrayBuffer` object to access external memory.
-title: JsCreateExternalArrayBuffer Function | Microsoft Docs
+description: Erstellt ein JavaScript `ArrayBuffer` -Objekt für den Zugriff auf externen Speicher.
+title: JsCreateExternalArrayBuffer-Funktion | Microsoft docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: microsoft-edge
@@ -20,8 +20,8 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "10567300"
 ---
-# JsCreateExternalArrayBuffer Function
-Creates a Javascript `ArrayBuffer` object to access external memory.
+# JsCreateExternalArrayBuffer Funktion
+Erstellt ein JavaScript `ArrayBuffer` -Objekt für den Zugriff auf externen Speicher.
   
 ## Syntax  
   
@@ -36,30 +36,30 @@ STDAPI_(JsErrorCode) JsCreateExternalArrayBuffer(
   
 ```  
   
-#### Parameters  
+#### Parameter  
  `data`  
- A pointer to the external memory.  
+ Ein Zeiger auf den externen Speicher.  
   
  `byteLength`  
- The number of bytes in the external memory.  
+ Die Anzahl der Bytes im externen Speicher.  
   
  `finalizeCallback`  
- A callback for when the object is finalized. May be null.  
+ Ein Rückruf für den Zeitpunkt, zu dem das Objekt finalisiert wurde. Kann NULL sein.  
   
  `callbackState`  
- User provided state that will be passed back to finalizeCallback.  
+ Der Benutzer hat den Zustand bereitgestellt, der an finalizeCallback zurückgegeben wird.  
   
  `result`  
- The new `ArrayBuffer` object.  
+ Das neue `ArrayBuffer` Objekt.  
   
-## Return Value  
- The code `JsNoError` if the operation succeeded, a failure code otherwise.  
+## Rückgabewert  
+ Der Code `JsNoError` , wenn der Vorgang erfolgreich war, andernfalls ein Fehlercode.  
   
-## Remarks  
- Requires an active script context.  
+## Hinweise  
+ Erfordert einen aktiven Skriptkontext.  
   
-## Requirements  
- **Header:** jsrt.h  
+## Anforderungen  
+ **Kopfzeile:** jsrt. h  
   
-## See Also  
- [Reference (JavaScript Runtime)](../chakra-hosting/reference-javascript-runtime.md)
+## Weitere Informationen  
+ [Referenz (JavaScript-Laufzeit)](../chakra-hosting/reference-javascript-runtime.md)

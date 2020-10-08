@@ -1,6 +1,6 @@
 ---
-description: Gets the script context that the object belongs to.
-title: JsGetContextOfObject Function | Microsoft Docs
+description: Ruft den Skriptkontext ab, zu dem das Objekt gehört.
+title: JsGetContextOfObject-Funktion | Microsoft docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: microsoft-edge
@@ -20,8 +20,8 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "10567266"
 ---
-# JsGetContextOfObject Function
-Gets the script context that the object belongs to.  
+# JsGetContextOfObject Funktion
+Ruft den Skriptkontext ab, zu dem das Objekt gehört.  
   
 ## Syntax  
   
@@ -32,21 +32,21 @@ STDAPI_(JsErrorCode) JsGetContextOfObject(
 );  
 ```  
   
-#### Parameters  
+#### Parameter  
  `object`  
- The object to get the context from.  
+ Das Objekt, aus dem der Kontext abgerufen werden soll.  
   
  `context`  
- The context the object belongs to.  
+ Der Kontext, zu dem das Objekt gehört.  
   
-## Return Value  
- The code `JsNoError` if the operation succeeded, a failure code otherwise.  
+## Rückgabewert  
+ Der Code `JsNoError` , wenn der Vorgang erfolgreich war, andernfalls ein Fehlercode.  
   
-## Remarks  
- Requires an active script context.  
+## Hinweise  
+ Erfordert einen aktiven Skriptkontext.  
   
-## Requirements  
- **Header:** jsrt.h  
+## Anforderungen  
+ **Kopfzeile:** jsrt. h  
   
-## See Also  
- [Reference (JavaScript Runtime)](../chakra-hosting/reference-javascript-runtime.md)
+## Weitere Informationen  
+ [Referenz (JavaScript-Laufzeit)](../chakra-hosting/reference-javascript-runtime.md)

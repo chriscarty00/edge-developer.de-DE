@@ -1,12 +1,12 @@
 ---
-description: Learn about how you can use native messaging to have your extension communicate with a companion UWP app.
-title: Extensions - Native messaging
+description: Erfahren Sie, wie Sie mithilfe von systemeigenem Messaging ihre Erweiterung mit einer Begleit UWP-App kommunizieren können.
+title: Erweiterungen – systemeigenes Messaging
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge, web development, html, css, javascript, developer, native, messaging, uwp
+keywords: Edge, Web-Entwicklung, HTML, CSS, JavaScript, Entwickler, Native, Messaging, UWP
 ms.openlocfilehash: 83f80e112180317c38763225c1cdd015da4238b0
 ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
 ms.translationtype: MT
@@ -14,63 +14,63 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "10567410"
 ---
-# Native messaging in Microsoft Edge  
+# Systemeigenes Messaging in Microsoft Edge  
 
 [!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-## Native messaging architecture overview
+## Übersicht über die native Messaging-Architektur
 
-With the Windows 10 Creators Update, Microsoft Edge extensions are able to use native messaging to communicate with a companion Universal Windows Platform (UWP) app.  At a high level, Microsoft Edge extensions use the same APIs for native messaging as Chrome and Firefox extensions. However, the native messaging host will need to be implemented using the Universal Windows Platform.
+Mit dem Windows 10 Creators-Update können Microsoft Edge-Erweiterungen natives Messaging verwenden, um mit einer Companion-App für die universelle Windows-Plattform (UWP) zu kommunizieren.  Auf hoher Ebene verwenden Microsoft Edge-Erweiterungen dieselben APIs für natives Messaging wie Chrome-und Firefox-Erweiterungen. Der systemeigene Messaging-Host muss jedoch mithilfe der universellen Windows-Plattform implementiert werden.
 
 > [!NOTE]
-> The method outlined below (connecting to a UWP app via AppService) is the only supported mechanism for enabling communication between Microsoft Edge extensions and native components. Please see the [Adding a Desktop Bridge component](#adding-a-desktop-bridge-component) section of this guide for more information on how to enable communication with legacy Win32 components. 
+> Die nachstehende Methode (Herstellen einer Verbindung mit einer UWP-App über AppService) ist der einzige unterstützte Mechanismus zum Aktivieren der Kommunikation zwischen Microsoft-Edge-Erweiterungen und systemeigenen Komponenten. Weitere Informationen dazu, wie Sie die Kommunikation mit Legacy-Win32-Komponenten aktivieren, finden Sie im Abschnitt [Hinzufügen einer Desktop Brücken Komponente](#adding-a-desktop-bridge-component) dieses Handbuchs. 
 
- Microsoft Edge's native messaging architecture leverages the existing [`AppService`](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.appservice.aspx) API as the underlying inter-process communication (IPC) infrastructure. UWP apps use the `AppService` API to communicate with one another. Because of this, Microsoft Edge extensions can now communicate with UWP apps.
+ Die native Messaging-Architektur von Microsoft Edge nutzt die vorhandene [`AppService`](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.appservice.aspx) API als zugrunde liegende Infrastruktur für die Inter-Process Communication (IPC). UWP-Apps verwenden die `AppService` API, um miteinander zu kommunizieren. Aus diesem Grund können Microsoft Edge-Erweiterungen nun mit UWP-apps kommunizieren.
 
-![native messaging architecture](./../media/native-messaging-architecture.png)
+![systemeigene Messaging Architektur](./../media/native-messaging-architecture.png)
 
 
-### When and when not to use native messaging
+### Zeitpunkt und Zeitpunkt der Verwendung von systemeigenem Messaging
 
-Native messaging adds a whole new layer to your extension. By implementing a UWP companion app for your extension, the following possibilities become available to you:
+Systemeigene Nachrichten fügen ihrer Erweiterung eine ganz neue Ebene hinzu. Wenn Sie eine UWP-Begleit-App für Ihre Erweiterung implementieren, stehen Ihnen die folgenden Möglichkeiten zur Verfügung:
 
-* Synchronize data (e.g. credentials) with a companion UWP app.
-* Implement stronger encryption/decryption algorithms not available in web APIs.
-* Access resources that are not accessible through web APIs, e.g. hardware or USB devices
+* Synchronisieren Sie Daten (z. b. Anmeldeinformationen) mit einer Begleit UWP-app.
+* Implementieren Sie stärkere Verschlüsselungs-/Entschlüsselungsalgorithmen, die in Web-APIs nicht verfügbar sind.
+* Zugriff auf Ressourcen, auf die über Web-APIs nicht zugegriffen werden kann, beispielsweise Hardware-oder USB-Geräte
 
-There are a few instances where native messaging can't be used due to security or policy restrictions:
+Es gibt ein paar Fälle, in denen systemeigenes Messaging aufgrund von Sicherheits-oder Richtlinieneinschränkungen nicht verwendet werden kann:
 
-* Modifying user settings in either Microsoft Edge or Windows, e.g. changing the default browser or search provider.
-* Actions that violate Microsoft Store policies for both apps and extensions.
-* Transferring data to remote endpoint via native message host.
-* Allowing other apps to download content that changes extension behavior.
+* Ändern von Benutzereinstellungen in Microsoft Edge oder Windows, beispielsweise Ändern des Standardbrowsers oder Suchanbieters.
+* Aktionen, die gegen die Microsoft Store-Richtlinien für apps und Erweiterungen verstoßen.
+* Übertragen von Daten an den Remoteendpunkt über den systemeigenen Nachrichten Host
+* Zulassen, dass andere apps Inhalte herunterladen, die das Erweiterungs Verhalten ändern.
 
 ## Demos
 
-To get a feel for what an Microsoft Edge native messaging extension that has both a companion UWP app and a Desktop Bridge looks like, check out the [SecureInput](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/SecureInput) and [DigitalSigning (C++)](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/DigitalSigning) examples on GitHub.
+Wenn Sie sich ein Bild davon machen möchten, wie eine Microsoft Edge Native Messaging-Erweiterung mit einer Begleit UWP-APP und einer Desktop Brücke aussieht, lesen Sie die Beispiele für [SecureInput](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/SecureInput) und [DigitalSigning (C++)](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/DigitalSigning) auf GitHub.
 
-### How it works
+### Funktionsweise
 
-The Microsoft Edge extension component of the sample uses its content script to detect when a user is typing in information that should be encrypted. The extension communicates this to the Desktop Bridge component via native messaging. When the user is ready to submit the data, the extension will return an encrypted value back to the website.
+Die Microsoft-Komponente "Edge Extension" des Beispiels verwendet das Inhalts Skript, um zu erkennen, wenn ein Benutzerinformationen eingibt, die verschlüsselt werden sollen. Mit der Erweiterung wird diese über systemeigene Nachrichten an die Desktop-Bridge-Komponente kommuniziert. Wenn der Benutzer bereit ist, die Daten zu übermitteln, gibt die Erweiterung einen verschlüsselten Wert zurück an die Website zurück.
 
 > [!NOTE]
-> This sample will only work on a webpage that uses custom events to communicate with the extension's content script. The sample folder includes a [.html file](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/blob/master/SecureInput/SecureInput.html) to test the extension with.
+> Dieses Beispiel funktioniert nur auf einer Webseite, die benutzerdefinierte Ereignisse verwendet, um mit dem Inhalts Skript der Erweiterung zu kommunizieren. Der Beispielordner enthält eine [HTML-Datei](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/blob/master/SecureInput/SecureInput.html) , mit der die Erweiterung getestet werden soll.
 
-In this example, the UWP app is used to pass responses from the Desktop Bridge to Microsoft Edge, which then gets sent to the Microsoft Edge extension via callback. While this example has the native messaging host run in the main app, it's also able to run as a background task. Switching between the two requires editing the extension's background script, changing the string within `port = browser.runtime.connectNative("NativeMessagingHostInProcessService");` to `"NativeMessagingHostOutOfProcess"`.
+In diesem Beispiel wird die UWP-App verwendet, um Antworten von der Desktop Brücke an Microsoft Edge zu übergeben, die dann per Rückruf an die Microsoft Edge-Erweiterung gesendet wird. Während in diesem Beispiel der systemeigene Messaging-Host in der Haupt-app ausgeführt wird, kann er auch als Hintergrundaufgabe ausgeführt werden. Für den Wechsel zwischen den beiden muss das Hintergrundskript der Erweiterung bearbeitet werden, wobei die Zeichenfolge in in geändert wird `port = browser.runtime.connectNative("NativeMessagingHostInProcessService");` `"NativeMessagingHostOutOfProcess"` .
 
-## Chrome vs Microsoft Edge implementation
+## Chrome vs Microsoft Edge-Implementierung
 
-While Chrome goes the route of using message passing APIs for their extensions to communicate with apps, Microsoft Edge utilizes the [`AppService`](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.appservice.aspx) API which now enables Microsoft Edge extensions and UWP apps to communicate.
+Während Chrome die Route für die Verwendung von APIs für die Nachrichtenübergabe für Ihre Erweiterungen für die Kommunikation mit Apps verwendet, nutzt Microsoft Edge die [`AppService`](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.appservice.aspx) API, die jetzt Microsoft Edge Extensions-und UWP-Apps für die Kommunikation ermöglicht.
 
-This section details the differences between how Chrome and Microsoft Edge handle native messaging implementation.
+In diesem Abschnitt werden die Unterschiede zwischen der Implementierung von systemeigenem Messaging durch Chrome und Microsoft Edge erläutert.
 
-### Registration and host manifest
-In order for your app to be recognized by your extension as a native messaging host, it will need to be registered.
+### Registrierung und Host Manifest
+Damit Ihre APP von ihrer Erweiterung als systemeigener Messaging-Host erkannt wird, muss Sie registriert sein.
 
 
-For [Chrome native messaging](https://developer.chrome.com/extensions/nativeMessaging) host registration, your app needs to install a manifest file anywhere in the Windows file system that defines the native messaging host configuration.
+Bei der [nativen Messaging](https://developer.chrome.com/extensions/nativeMessaging) -Host Registrierung von Chrome muss Ihre APP eine Manifestdatei an einer beliebigen Stelle im Windows-Dateisystem installieren, die die systemeigene Messaginghost Konfiguration definiert.
 
-The following JSON is an example of how the config file can be set up:
+Das folgende JSON-Beispiel zeigt, wie die Konfigurationsdatei eingerichtet werden kann:
 
 ```json
 {
@@ -84,20 +84,20 @@ The following JSON is an example of how the config file can be set up:
 }
 ```
 
-To install this file, the app would need to:
+Um diese Datei zu installieren, muss die APP:
 
-1. Register the manifest file in a predefined location in the registry that defines the host configuration:
+1. Registrieren Sie die Manifestdatei an einem vordefinierten Speicherort in der Registrierung, in dem die Hostkonfiguration definiert ist:
    - `HKEY_LOCAL_MACHINE\SOFTWARE\Google\Chrome\NativeMessagingHosts\com.my_company.my_application`
 
-     or
+     oder
    - `HKEY_CURRENT_USER\SOFTWARE\Google\Chrome\NativeMessagingHosts\com.my_company.my_application`
 
-2. Set the default value of that key to the full path to the manifest file, e.g.  `[HKEY_CURRENT_USER\Software\Google\Chrome\NativeMessagingHosts\com.my_company.my_application] @="C:\\path\\to\\nmh-manifest.json"`
+2. Legen Sie den Standardwert für diesen Schlüssel auf den vollständigen Pfad zur Manifestdatei fest, beispielsweise  `[HKEY_CURRENT_USER\Software\Google\Chrome\NativeMessagingHosts\com.my_company.my_application] @="C:\\path\\to\\nmh-manifest.json"`
 
 
 
 
-For Microsoft Edge, in order to register an [`AppService`](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.appservice.aspx)(native messaging host) you'll need to include the UWP companion app in the same package as your extension and specify the [AppService extension](https://msdn.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service) in your project's `Package.appxmanifest` file. The `EntryPoint` and `Name` attributes can be configured by you:
+Für Microsoft Edge [`AppService`](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.appservice.aspx) müssen Sie die UWP-Begleit-app in das gleiche Paket wie Ihre Erweiterung einbeziehen und die [AppService-Erweiterung](https://msdn.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service) in der Projektdatei angeben, um einen (nativen Messaging-Host) registrieren zu können `Package.appxmanifest` . Die `EntryPoint` `Name` Attribute und können von Ihnen konfiguriert werden:
 
 ```xml
 ...
@@ -114,7 +114,7 @@ For Microsoft Edge, in order to register an [`AppService`](https://msdn.microsof
 ```
 
 
-You'll also need to set which extension(s) are allowed to connect to the service. Because Microsoft Edge doesn't have an equivalent `"allowed_origins"` manifest property in its AppxManifest, this will need to be determined and enforced at runtime by your UWP app. Since Microsoft Edge will be establishing the connection on behalf of the extension, the app can look up the caller's Package Family Name to determine if they're being connected by Microsoft Edge to control or authenticate the caller. E.g. 
+Darüber hinaus müssen Sie die Durchwahl (n) für die Verbindung mit dem Dienst einstellen. Da Microsoft Edge `"allowed_origins"` in seinen AppxManifest keine entsprechende Manifest-Eigenschaft aufweist, muss dies zur Laufzeit von der UWP-App bestimmt und erzwungen werden. Da Microsoft Edge die Verbindung für die Erweiterung herstellt, kann die APP den Namen der paketfamilie des Anrufers nachschlagen, um festzustellen, ob Sie mit Microsoft Edge verbunden sind, um den Anrufer zu kontrollieren oder zu authentifizieren. z.B. 
 
 ```csharp
 protected async override void
@@ -138,37 +138,37 @@ OnBackgroundActivated(BackgroundActivatedEventArgs args)
 
 
 
-### Message sending
+### Nachrichtenversand
 
-For an app and an extension to communicate with one another, messages need to be sent to and from them.
+Damit eine APP und eine Erweiterung miteinander kommunizieren können, müssen Nachrichten an und von Ihnen gesendet werden.
 
-Chrome extensions initiate a message using the [`runtime.sendNativeMessage`](https://developer.mozilla.org/Add-ons/WebExtensions/API/runtime/sendNativeMessage) API to deliver a message to the native host using a non-persistent channel. 
+Chrome-Erweiterungen initiieren eine Nachricht mithilfe der [`runtime.sendNativeMessage`](https://developer.mozilla.org/Add-ons/WebExtensions/API/runtime/sendNativeMessage) API, um eine Nachricht mit einem nicht persistenten Kanal an den systemeigenen Host zu übermitteln. 
 
 ```javascript
 chrome.runtime.sendNativeMessage(string application, object message, function responseCallback)
 ```
 
-The first parameter is the name of the native host, which Chrome looks up in the registry for the manifest. The manifest specifies the .exe that Chrome will launch in a sandbox, and the message is sent using std i/o. Extensions can also establish a persistent channel using the `runtime.connectNative` API, which takes the name of the native host as the only parameter. 
+Der erste Parameter ist der Name des systemeigenen Hosts, in dem Chrome in der Registrierung für das Manifest nachschlägt. Das Manifest gibt die exe-Nachricht an, die von Chrome in einem Sandkasten gestartet wird, und die Nachricht wird mithilfe von Std-i/o gesendet. Erweiterungen können auch einen beständigen Kanal mithilfe der `runtime.connectNative` API einrichten, die den Namen des systemeigenen Hosts als einzigen Parameter übernimmt. 
 
-Microsoft Edge uses the same construct as Chrome's native messaging API to allow Microsoft Edge extensions to specify which app service to connect to. The first parameter in `runtime.sendNativeMessage` specifies the app service name. In the [Registration and host manifest](#registration-and-host-manifest) section, this is `"com.microsoft.inventory"`. The Microsoft Edge extension platform restricts the native messaging host to being a UWP app that is packaged in the same AppX as the extension. This mitigates any security risks associated with malicious attacks that try to connect Microsoft Edge with another Package Family Name by tampering with manifest entries. 
+Microsoft Edge verwendet das gleiche Konstrukt wie die native Messaging-API von Chrome, damit Microsoft Edge-Erweiterungen angeben können, mit welchem App-Dienst eine Verbindung hergestellt werden soll. Der erste Parameter in `runtime.sendNativeMessage` gibt den Namen des App-Diensts an. Im Abschnitt [Registrierung und Host Manifest](#registration-and-host-manifest) ist dies `"com.microsoft.inventory"` . Die Microsoft Edge-Erweiterungs Plattform schränkt den systemeigenen Messaging-Host auf eine UWP-App ein, die im gleichen AppX wie die Erweiterung verpackt ist. Dadurch werden alle Sicherheitsrisiken verringert, die mit böswilligen Angriffen einhergehen, die versuchen, Microsoft Edge mit einem anderen Paket Familiennamen zu verbinden, indem Sie Manifest-Einträge manipulieren. 
 
-This means that Microsoft Edge will use the same Package Family Name as the extension, in addition to the `AppService` name specified in the API, to uniquely identify the provider of the app service.  
+Dies bedeutet, dass Microsoft Edge neben dem in der API angegebenen Namen denselben Paket Familiennamen wie die Erweiterung verwendet, `AppService` um den Anbieter des App-Diensts eindeutig zu identifizieren.  
 
 > [!NOTE]
-> This will not be easily converted by the [Microsoft Edge Extension Toolkit](./porting-chrome-extensions.md). Any extensions that specifies the `"nativeMessaging"` permission will be flagged as requiring manual conversion for this component.
+> Dies kann nicht einfach vom [Microsoft Edge Extension Toolkit](./porting-chrome-extensions.md)konvertiert werden. Alle Erweiterungen, die die Berechtigung angeben, werden `"nativeMessaging"` als obligatorische manuelle Konvertierung für diese Komponente gekennzeichnet.
 
 
 
 
 
-### Communication protocol
+### Kommunikationsprotokoll
 
-Communication protocol for native messaging determines how messages are formatted before sending.
+Das Kommunikationsprotokoll für systemeigene Messaging bestimmt, wie Nachrichten vor dem Senden formatiert werden.
 
-Chrome starts each native messaging host in a separate process and communicates with it using standard input and standard output. The same format is used to send messages in both directions: each message is serialized using JSON, UTF-8 encoded and is preceded with 32-bit message length in native byte order.
+Chrome startet jeden systemeigenen Messaging-Host in einem separaten Prozess und kommuniziert mit ihm über die Standardeingabe und die Standardausgabe. Das gleiche Format wird verwendet, um Nachrichten in beide Richtungen zu senden: jede Nachricht wird mit JSON, UTF-8-codiert und mit der 32-Bit-Nachrichtenlänge in der systemeigenen Bytereihenfolge vorangestellt.
 
 
-For Microsoft Edge, the background task/main app that implements the app service will be started by the platform. On startup, the background task's `Run` method will be invoked:  
+Für Microsoft Edge wird die Hintergrundaufgabe/Haupt-APP, die den App-Dienst implementiert, von der Plattform gestartet. Beim Start wird die Methode der Hintergrundaufgabe `Run` aufgerufen:  
 
 ```csharp
 public void Run(IBackgroundTaskInstance taskInstance)    
@@ -184,7 +184,7 @@ public void Run(IBackgroundTaskInstance taskInstance)
 }
 ```
 
-When your extension sends a message to your UWP app, the [`onRequestReceived`](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.appservice.appserviceconnection.requestreceived) event will be raised. This JSON formatted message will then be stringified into the first KeyValue pair of a [`ValueSet`](https://msdn.microsoft.com/library/windows/apps/dn636131) object. :
+Wenn Ihre Erweiterung eine Nachricht an Ihre UWP-App sendet, [`onRequestReceived`](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.appservice.appserviceconnection.requestreceived) wird das Ereignis ausgelöst. Diese JSON-formatierte Nachricht wird dann in das erste keywert-Paar eines [`ValueSet`](https://msdn.microsoft.com/library/windows/apps/dn636131) Objekts stringified. :
 
 ```csharp
 private async void OnRequestReceived(
@@ -195,38 +195,38 @@ AppServiceRequestReceivedEventArgs args)
 }
 ```
 
-When your UWP app sends a response back to your extension, a [`KeyValuePair`](https://msdn.microsoft.com/library/windows/apps/5tbh8a42) will be added to the `ValueSet` object. The `Key` property will be ignored by Microsoft Edge, but the `Value` property will contain a valid JSON string.
+Wenn Ihre UWP-App eine Antwort an Ihre Durchwahl zurücksendet, [`KeyValuePair`](https://msdn.microsoft.com/library/windows/apps/5tbh8a42) wird Sie dem Objekt hinzugefügt `ValueSet` . Die `Key` Eigenschaft wird von Microsoft Edge ignoriert, die `Value` Eigenschaft enthält jedoch eine gültige JSON-Zeichenfolge.
 
-### Callback
+### Rückruf
 
-For callbacks, Chrome uses [`runtime.sendNativeMessage`](https://developer.mozilla.org/Add-ons/WebExtensions/API/runtime/sendNativeMessage) which allows a callback function to handle any asynchronous response from sending a message.
+Für Rückrufe verwendet Chrome [`runtime.sendNativeMessage`](https://developer.mozilla.org/Add-ons/WebExtensions/API/runtime/sendNativeMessage) eine Rückruffunktion, mit der jede asynchrone Antwort vom Senden einer Nachricht verarbeitet werden kann.
 
-Microsoft Edge uses the [`AppServiceRequest`](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.appservice.appservicerequest) object's [`SendResponseAsync`](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.appservice.appservicerequest.sendresponseasync) method to let the app send a [`ValueSet`](https://msdn.microsoft.com/library/windows/apps/dn636131) object back to the extension.
-
-
-### Message size limit
-Messages that are sent back and forth between an extension and an app have different message size limitations in place for Chrome and Microsoft Edge.
-
-Chrome has the following message size limitations:
-- Single message limit from native messaging host: 1 MB
-- Single message limit sent to native messaging host: 4 GB
-
-For Microsoft Edge, while `AppService` has no limit on message size (dependent on memory), Microsoft Edge protects itself against misbehaving native apps by imposing the following message size limits:
-- Single message limit from UWP app to extension: 1 MB
-- Single message limit from extension to UWP app: 100 MB
+Microsoft Edge verwendet die [`AppServiceRequest`](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.appservice.appservicerequest) Methode des Objekts [`SendResponseAsync`](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.appservice.appservicerequest.sendresponseasync) , damit die APP ein [`ValueSet`](https://msdn.microsoft.com/library/windows/apps/dn636131) Objekt wieder an die Erweiterung senden kann.
 
 
+### Beschränkung der Nachrichtengröße
+Nachrichten, die zwischen einer Erweiterung und einer APP hin-und hergesendet werden, weisen für Chrome und Microsoft Edge unterschiedliche Einschränkungen für die Nachrichtengröße auf.
 
-### Native messaging connections
+Chrome weist die folgenden Einschränkungen für die Nachrichtengröße auf:
+- Grenzwert für einzelne Nachrichten vom systemeigenen Messaging-Host: 1 MB
+- Einzige Nachrichtengrenze, die an den systemeigenen Messaging-Host gesendet wird: 4 GB
 
-There are two types of connections for native messaging; persistent and non-persistent.
-A **persistent** connection is a connection that is kept running until the port is destroyed. A **non-persistent** connection is a connection that is opened for one message at a time and closes after delivery.
+Für Microsoft Edge ist zwar `AppService` keine Beschränkung der Nachrichtengröße (abhängig vom Arbeitsspeicher) vorhanden, doch Microsoft Edge schützt sich selbst vor Fehlverhalten von systemeigenen apps, indem die folgenden Einschränkungen für die Nachrichtengröße auferlegt werden:
+- Beschränkung einzelner Nachrichten von der UWP-App zur Erweiterung: 1 MB
+- Beschränkung einzelner Nachrichten von der Erweiterung auf die UWP-App: 100 MB
 
-#### Persistent
 
-For Chrome, a persistent connection is made by creating a messaging port using [`runtime.connectNative`](https://developer.mozilla.org/Add-ons/WebExtensions/API/runtime/connectNative). Once the port is made, Chrome starts a native messaging host process that keeps running until the port it destroyed.
 
-For Microsoft Edge, once a messaging port is created using `runtime.connectNative`, Microsoft Edge starts the [`AppServiceConnection`](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.appservice.appserviceconnection) and keeps it running until the port is destroyed. The following snippet shows how a persistent connection is established from within a UWP app. 
+### Systemeigene Messagingverbindungen
+
+Es gibt zwei Arten von Verbindungen für systemeigene Nachrichten. persistent und nicht persistent.
+Eine **dauerhafte** Verbindung ist eine Verbindung, die weiterhin ausgeführt wird, bis der Port zerstört wird. Eine **nicht persistente** Verbindung ist eine Verbindung, die für eine Nachricht gleichzeitig geöffnet und nach der Zustellung geschlossen wird.
+
+#### Permanent
+
+Bei Chrome wird eine dauerhafte Verbindung hergestellt, indem ein Messagingport mithilfe von erstellt wird [`runtime.connectNative`](https://developer.mozilla.org/Add-ons/WebExtensions/API/runtime/connectNative) . Sobald der Port erstellt wurde, startet Chrome einen systemeigenen Messaging-Hostprozess, der bis zum zerstörten Port weiter ausgeführt wird.
+
+Für Microsoft Edge wird nach dem Erstellen eines Messagingports mit `runtime.connectNative` Microsoft Edge das Programm gestartet, [`AppServiceConnection`](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.appservice.appserviceconnection) und es wird weiterhin ausgeführt, bis der Port zerstört wird. Der folgende Codeausschnitt zeigt, wie eine dauerhafte Verbindung in einer UWP-App hergestellt wird. 
 
 ```csharp
 this.inventoryService = new AppServiceConnection();  
@@ -238,11 +238,11 @@ var status = await
 this.inventoryService.OpenAsync();
 ```
 
-#### Non-persistent
+#### Nicht persistent
 
-When a message is sent using [`runtime.sendNativeMessage`](https://developer.mozilla.org/Add-ons/WebExtensions/API/runtime/sendNativeMessage) in Chrome, without creating a messaging port, Chrome starts a new native messaging host process for each message. The first message generated by the host process is handled as a response to the original request, and all other messages after it are ignored.
+Wenn eine Nachricht mit [`runtime.sendNativeMessage`](https://developer.mozilla.org/Add-ons/WebExtensions/API/runtime/sendNativeMessage) in Chrome gesendet wird, ohne einen Messagingport zu erstellen, startet Chrome einen neuen systemeigenen Messaging-Hostprozess für jede Nachricht. Die erste vom Hostprozess generierte Nachricht wird als Antwort auf die ursprüngliche Anforderung verarbeitet, und alle anderen Nachrichten werden ignoriert.
 
-Microsoft Edge will terminate the connection after every messages' response has been received. The following snippet shows a non-persistent connection that is established with `AppServiceConnection` that will then be terminated within the UWP app after a request has been received and stored as an [`AppServiceResponse`](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.appservice.appserviceresponse).
+Microsoft Edge beendet die Verbindung, nachdem die Antwort jeder Nachricht empfangen wurde. Der folgende Codeausschnitt zeigt eine nicht persistente Verbindung, die dadurch hergestellt wird `AppServiceConnection` , dass Sie in der UWP-App beendet wird, nachdem eine Anforderung empfangen und als eine gespeichert wurde [`AppServiceResponse`](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.appservice.appserviceresponse) .
 
 ```csharp
 using (var connection = new AppServiceConnection())
@@ -255,39 +255,39 @@ using (var connection = new AppServiceConnection())
 }
 ```
 
-### Permission
+### Berechtigung
 
-In order to enable native messaging use with your extension, for both Chrome and Microsoft Edge you'll need to declare the `"nativeMessaging"` permission in you `manifest.json` file.
-
-
-## App services
-This section details the impact app services has on Microsoft Edge native messaging performance and memory.
-
-### Performance
-
-App services are "sponsored" by the foreground app that calls them which for native messaging purposes is Microsoft Edge. This means that app services can run as long as Microsoft Edge is running.
-
-In regards to latency, app services use named pipes that, after initial connection, allow two apps to directly communicate. This method of communication produces low latency. Devices with slow CPUs will experience some initial latency after starting up the process that hosts the app service (~80ms to startup the background task on some devices). After start-up, performance on slow CPU devices should be good. 
+Um die Verwendung der systemeigenen Messagingfunktion mit ihrer Erweiterung zu aktivieren, müssen Sie für Chrome und Microsoft Edge die `"nativeMessaging"` Berechtigung in Ihrer `manifest.json` Datei deklarieren.
 
 
-### Memory
-The memory allocated to an app service is taken out of the quota allocated to Microsoft Edge. This means that if Microsoft Edge starts too many app services there is a possibility that they could run out of memory. The usual background task memory caps are enforced on app services. For instance, on a 512MB device an app service background task can be no larger than 16MB. This number goes up as the devices scale up.
+## App-Dienste
+In diesem Abschnitt werden die Auswirkungen von App-Diensten auf die Microsoft Edge-systemeigene Messagingleistung und den Arbeitsspeicher erläutert.
+
+### Leistung
+
+App-Dienste werden von der Vordergrund-APP, die Sie anruft, "gesponsert", was für systemeigene Messagingzwecke Microsoft Edge ist. Dies bedeutet, dass APP-Dienste ausgeführt werden können, solange Microsoft Edge ausgeführt wird.
+
+In Bezug auf Latenz verwenden App-Dienste Named Pipes, die nach der ersten Verbindung zwei apps direkt kommunizieren lassen. Diese Methode der Kommunikation erzeugt eine niedrige Latenzzeit. Bei Geräten mit langsamen CPUs wird nach dem Starten des Prozesses, der den App-Dienst hostet (~ 80ms zum Starten der Hintergrundaufgabe auf einigen Geräten), eine anfängliche Latenzzeit auftreten. Nach dem Start sollte die Leistung auf langsamen CPU-Geräten gut sein. 
 
 
-## Creating an extension with native messaging
+### Arbeitsspeicher
+Der einem App-Dienst zugewiesene Arbeitsspeicher wird aus dem für Microsoft Edge zugewiesenen Kontingent herausgenommen. Wenn Microsoft Edge also zu viele APP-Dienste startet, besteht die Möglichkeit, dass Ihnen der Arbeitsspeicher ausgeht. Die üblichen Speicher Caps für Hintergrundaufgaben werden für App-Dienste erzwungen. Auf einem 512 MB-Gerät kann eine APP-Dienst Hintergrundaufgabe beispielsweise nicht größer als 16MB sein. Diese Nummer steigt, wenn die Geräte skaliert werden.
 
-In order to test native messaging, your extension needs a Package Family Name. Microsoft Edge uses this to determine the native message host identity, which means your extension should be packaged. 
+
+## Erstellen einer Erweiterung mit systemeigenem Messaging
+
+Damit systemeigene Nachrichten getestet werden können, benötigt Ihre Erweiterung einen Paket Familiennamen. Microsoft Edge ermittelt mithilfe dieser Methode die Identität des systemeigenen Nachrichten Hosts, was bedeutet, dass Ihre Erweiterung verpackt werden sollte. 
 
 
-To create your extension with native messaging in Visual Studio:
+So erstellen Sie Ihre Erweiterung mit systemeigenem Messaging in Visual Studio:
 
-1. Create a UWP project in Visual Studio.
-2. [Add `AppService` to your UWP app](https://msdn.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service).
-   - You can optionally [configure `AppService` to be hosted in the main app](https://msdn.microsoft.com/windows/uwp/launch-resume/convert-app-service-in-process) instead of as a background task at this point.
-3. Build and test your UWP project.
-   - You can optionally add a [Desktop Bridge component](#adding-a-desktop-bridge-component).
-4. Create a Microsoft Edge extension that uses native messaging to communicate with the UWP companion app. The extension files can be added into a folder named `Extension` in the UWP project. All of the files underneath this folder, including subfolders, need to have their properties configured such that `Build Action=Content` and `Copy to Output Directory=Copy Always`. Make sure `manifest.json` is also configured with these properties.
-5. Modify the `package.manifest.xml` file in the project to include extension metadata and convert it to a headless app by adding `AppListEntry="none"`:
+1. Erstellen Sie ein UWP-Projekt in Visual Studio.
+2. [ `AppService` Zu ihrer UWP-app hinzufügen](https://msdn.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service).
+   - Sie können an dieser Stelle optional [konfigurieren `AppService` , dass Sie in der Haupt-App](https://msdn.microsoft.com/windows/uwp/launch-resume/convert-app-service-in-process) statt als Hintergrundaufgabe gehostet werden.
+3. Erstellen und testen Sie Ihr UWP-Projekt.
+   - Optional können Sie eine [Desktop Brücken Komponente](#adding-a-desktop-bridge-component)hinzufügen.
+4. Erstellen Sie eine Microsoft Edge-Erweiterung, die systemeigene Nachrichten für die Kommunikation mit der UWP-Begleit-App verwendet. Die Erweiterungsdateien können einem `Extension` im UWP-Projekt benannten Ordner hinzugefügt werden. Alle Dateien unterhalb dieses Ordners, einschließlich Unterordnern, müssen ihre Eigenschaften so konfiguriert haben, dass `Build Action=Content` und `Copy to Output Directory=Copy Always` . Stellen Sie sicher, dass `manifest.json` auch diese Eigenschaften konfiguriert sind.
+5. Ändern `package.manifest.xml` Sie die Datei im Projekt so, dass Sie Erweiterungs Metadaten enthält, und konvertieren Sie Sie in eine headless-APP, indem Sie Folgendes hinzufügen `AppListEntry="none"` :
 
     ```xml
     <Package
@@ -324,28 +324,28 @@ To create your extension with native messaging in Visual Studio:
     </Application>
     ```
 
-6. Use the `AppService` name configured for the UWP in the native messaging APIs.
-7. Build and [deploy](#deploying) the UWP project (with the optional Desktop Bridge component).
-8. [Package](#packaging) your native messaging extension once it's ready for Store submission
+6. Verwenden Sie den `AppService` für UWP konfigurierten Namen in den systemeigenen Messaging-APIs.
+7. Erstellen und [Bereitstellen](#deploying) des UWP-Projekts (mit der optionalen Desktop Brücken Komponente)
+8. [Verpacken](#packaging) der nativen Messaging-Erweiterung, sobald Sie für die Übermittlung an den Store bereit ist
 
 > [!NOTE]
-> Reference the [Demos](#demos) section for an example of a complete native messaging extension.
+> Verweisen Sie auf den Abschnitt [Demos](#demos) , um ein Beispiel für eine vollständige Native Messaging-Erweiterung zu finden.
 
 
-## Adding a Desktop Bridge component 
-If you want to add a Desktop Bridge component to your package, you'll need to create and build your Win32 project in Visual Studio. For info on how to convert your win32 app to UWP, see [Porting apps to Windows 10 via Desktop Bridge](/windows/uwp/porting/desktop-to-uwp-root). Once built in Visual Studio, you can add the Win32 executable to the package by doing the following steps:
+## Hinzufügen einer Desktop Brücken Komponente 
+Wenn Sie dem Paket eine Desktop Brücken Komponente hinzufügen möchten, müssen Sie Ihr Win32-Projekt in Visual Studio erstellen und erstellen. Informationen dazu, wie Sie Ihre Win32-app in UWP konvertieren, finden Sie unter [Portieren von apps auf Windows 10 über die Desktop-Brücke](/windows/uwp/porting/desktop-to-uwp-root). Nachdem Sie in Visual Studio erstellt haben, können Sie die ausführbare Win32-Datei zum Paket hinzufügen, indem Sie die folgenden Schritte ausführen:
 
-1. Add the Win32 project to the same solution as the UWP project. 
+1. Fügen Sie das Win32-Projekt der gleichen Projektmappe wie das UWP-Projekt hinzu. 
 
-2. Set the Win32 project as a dependent project for the UWP project:
+2. Das Win32-Projekt als abhängiges Projekt für das UWP-Projekt einrichten:
 
-    ![setting up project dependencies](./../media/project-dependencies.PNG)
+    ![Einrichten von Projektabhängigkeiten](./../media/project-dependencies.PNG)
 
-3. Create a `Win32` folder within the UWP project. Copy the necessary binaries for the `Win32` project to this folder. Configure the properties of all the binaries such that `Build Action=Content` and `Copy to Output Directory=Copy Always`.
+3. Erstellen Sie einen `Win32` Ordner im UWP-Projekt. Kopieren Sie die erforderlichen Binärdateien für das `Win32` Projekt in diesen Ordner. Konfigurieren Sie die Eigenschaften aller Binärdateien wie `Build Action=Content` und `Copy to Output Directory=Copy Always` .
 
-    ![folder with win32 and UWP app files in it](./../media/desktop-bridge.png)
+    ![Ordner mit Win32-und UWP-APP-Dateien](./../media/desktop-bridge.png)
 
-4. Modify the UWP project file to copy all the necessary binaries for the `Win32` project into this folder using PostBuild event command. This ensures that the updated binaries are being copied to the folder every time the solution is rebuilt.
+4. Ändern Sie die UWP-Projektdatei, um alle erforderlichen Binärdateien für das `Win32` Projekt in diesen Ordner mit dem Befehl Postbuild-Ereignis zu kopieren. Dadurch wird sichergestellt, dass die aktualisierten Binärdateien jedes Mal in den Ordner kopiert werden, wenn die Projektmappe neu erstellt wird.
 
     ```xml
     <Target Name="AfterBuild">
@@ -356,7 +356,7 @@ If you want to add a Desktop Bridge component to your package, you'll need to cr
     ```
 
 
-5. Modify `package.manifest.xml` by adding the `<desktop:Extension>` element to the `<Extensions>` element:
+5. Ändern `package.manifest.xml` `<desktop:Extension>` Sie, indem Sie das Element zum Element hinzufügen `<Extensions>` :
 
     ```xml
     <Extensions>
@@ -365,44 +365,44 @@ If you want to add a Desktop Bridge component to your package, you'll need to cr
     </Extensions>
     ```
 
-## Deploying
-Once you have configured your UWP project (and optionally Win32 project) as outlined above, you are ready to deploy the solution using Visual Studio.
+## Bereitstellen
+Nachdem Sie Ihr UWP-Projekt (und optional Win32-Projekt) wie oben beschrieben konfiguriert haben, können Sie die Projektmappe mit Visual Studio bereitstellen.
 
-![build inprocess project](../media/native-message-uwp-debug.PNG)
+![Erstellen eines InProcess-Projekts](../media/native-message-uwp-debug.PNG)
 
-Once the solution is correctly deployed, you should see your extension in Microsoft Edge.
+Nachdem die Lösung richtig bereitgestellt wurde, sollte Ihre Erweiterung in Microsoft Edge angezeigt werden.
 
-![extension showing in Microsoft Edge](../media/secureextension.png)
+![in Microsoft Edge angezeigte Erweiterung](../media/secureextension.png)
 
-## Packaging
+## Verpacken
 
 > [!NOTE]
-> Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability. [Reach out to us](https://aka.ms/extension-request) with your requests to be a part of the Microsoft Store, and we'll consider you for a future update.
+> Das Übermitteln einer Microsoft Edge-Erweiterung an den Microsoft Store ist derzeit eine eingeschränkte Funktion. Wenden Sie sich mit Ihren Anforderungen an den Microsoft Store an [uns](https://aka.ms/extension-request) , und wir werden Sie für ein zukünftiges Update in Erwägung ziehen.
 
 
-You can generate a Store package for submission to the Windows Dev Center using built-in Visual Studio functionality:
+Mit der integrierten Funktionalität von Visual Studio können Sie ein Store-Paket für die Übermittlung an das Windows dev Center generieren:
 
 
-![Creating Store package](../media/create-store-package.PNG)
+![Erstellen eines Store-Pakets](../media/create-store-package.PNG)
 
-## Debugging
-The instructions for debugging vary depending on which component you want to test out:
+## Debuggen
+Die Anweisungen für das Debuggen variieren je nachdem, welche Komponente Sie testen möchten:
 
-### Debugging the extension
-Once the solution is deployed, the extension will be installed in Microsoft Edge. Check out the [Debugging](./debugging-extensions.md) guide for info on how to debug an extension.
-
-
-### Debugging the UWP app
-The UWP app will launch when the extension tries to connect to it using [native messaging APIs](https://developer.mozilla.org/Add-ons/WebExtensions/API/runtime/connectNative). You'll need to debug the UWP app only once the process starts. This can be configured via the project's Property page:
-
-1.  In Visual Studio, right click your UWP app project
-2.  Select Properties
-3.  Check "Do not launch, but debug my code when it starts"
-
-    ![selecting do not launch box](../media/native-message-do-not-launch.png)
-
-In Visual Studio you can now set breakpoints in the code where you want to debug, then launch the debugger by pressing F5. Once you interact with the extension to connect to the UWP app, Visual Studio will automatically attach to the process.
+### Debuggen der Erweiterung
+Nachdem die Lösung bereitgestellt wurde, wird die Erweiterung in Microsoft Edge installiert. Informationen zum Debuggen einer Erweiterung finden Sie im Leitfaden zur [Fehlerbehebung](./debugging-extensions.md) .
 
 
-### Debugging the Desktop Bridge
-Even though there are various [methods for debugging a Desktop Bridge](https://msdn.microsoft.com/windows/uwp/porting/desktop-to-uwp-debug) (converted Win32 app), the only one applicable for this scenarios is the PLMDebug option. You could also add debugging code to the startup function to perform a wait for a specific time, allowing you to attach Visual Studio to the process.
+### Debuggen der UWP-App
+Die UWP-APP wird gestartet, wenn die Erweiterung versucht, eine Verbindung mit der [systemeigenen Messaging-API](https://developer.mozilla.org/Add-ons/WebExtensions/API/runtime/connectNative)herzustellen. Sie müssen die UWP-app nur Debuggen, nachdem der Prozess gestartet wurde. Dies kann über die Eigenschaftenseite des Projekts konfiguriert werden:
+
+1.  Klicken Sie in Visual Studio mit der rechten Maustaste auf das UWP-App-Projekt.
+2.  Eigenschaften auswählen
+3.  Aktivieren Sie "nicht starten, aber meinen Code beim Starten Debuggen"
+
+    ![Feld "nicht starten" auswählen](../media/native-message-do-not-launch.png)
+
+In Visual Studio können Sie jetzt Haltepunkte im Code festlegen, in dem Sie debuggen möchten, und dann den Debugger starten, indem Sie F5 drücken. Sobald Sie mit der Erweiterung interagieren, um eine Verbindung mit der UWP-App herzustellen, wird Visual Studio automatisch an den Prozess angefügt.
+
+
+### Debuggen der Desktop Brücke
+Obwohl es verschiedene [Methoden zum Debuggen einer Desktop Brücke](https://msdn.microsoft.com/windows/uwp/porting/desktop-to-uwp-debug) (konvertierte Win32-APP) gibt, ist die einzige Anwendung für diese Szenarien die PLMDebug-Option. Sie können der Startfunktion auch Debugcode hinzufügen, um eine Wartezeit für eine bestimmte Zeit durchzuführen, sodass Sie Visual Studio an den Prozess anfügen können.

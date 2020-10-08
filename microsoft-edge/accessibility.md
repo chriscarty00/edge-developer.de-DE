@@ -1,13 +1,13 @@
 ---
 ms.assetid: 1e5c42a7-4604-46ac-ad7b-a65390e5b36a
-description: Learn how to build, design, and test accessible websites within Microsoft Edge.
-title: Accessibility
+description: Erfahren Sie, wie Sie barrierefreie Websites in Microsoft Edge erstellen, entwerfen und testen können.
+title: Bedienungshilfen
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: accessibility, accessibility for developers, accessible websites, edge, web development, ARIA, developer, UIA, UI Automation
+keywords: Barrierefreiheit, Barrierefreiheit für Entwickler, barrierefreie Websites, Edge, Web-Entwicklung, Aria, Developer, UIA, UI-Automatisierung
 ms.openlocfilehash: 6ad95e9c250aa6a4a61ca09470cea86efd715427
 ms.sourcegitcommit: 9169d784485e3cb0b1987a8f395c4bb688bd9b2e
 ms.translationtype: MT
@@ -15,41 +15,41 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/21/2020
 ms.locfileid: "10583105"
 ---
-# Accessibility  
+# Bedienungshilfen  
 
-> "\[T\]he impact of disability is radically changed on the Web because the Web removes barriers to communication and interaction that many people face in the physical world." [(Accessibility | W3C)][W3CAccessibility]  
+> "\ [T \] die Auswirkungen einer Behinderung werden im Internet grundlegend geändert, weil das Internet Hindernisse für Kommunikation und Interaktion entfernt, die viele Menschen in der physischen Welt sehen." [(Barrierefreiheit | W3C][W3CAccessibility]  
 
-The [World Health Organization][WHODisabilities] defines disability as "a mismatch in interaction between the features of a person's body and the features of the environment in which they live".  Disabilities range from situational disabilities, like limited mobility while holding a baby or bright sunlight on a phone, to other physical, auditory, visual, or age-related impairments.  
+Die [Weltgesundheitsorganisation][WHODisabilities] definiert Behinderung als "ein Missverhältnis zwischen den Funktionen des Körpers einer Person und den Eigenschaften der Umgebung, in der Sie leben".  Behinderungen reichern von situationsbedingten Behinderungen wie eingeschränkter Mobilität, während Sie ein Baby oder ein helles Sonnenlicht auf einem Telefon halten, bis zu anderen körperlichen, auditiven, visuellen oder altersbedingten Beeinträchtigungen.  
 
-Designing websites and other technologies for inclusion creates an experience enjoyable by every person.  Inclusive design and web accessibility empowers and assists everyone to use the web.  
+Das Entwerfen von Websites und anderen Technologien für die Integration sorgt für ein angenehmes Erlebnis jeder Person.  Inklusive Design und Barrierefreiheit im Web ermöglicht und unterstützt jeden, das Internet zu nutzen.  
 
-Here are some best practices, code samples, and further resources for you to learn more about [Designing][AccessibilityDesign], [Building][AccessibilityBuild], and [Testing][AccessibilityTest] accessible websites in Microsoft Edge.  
+Im folgenden finden Sie einige bewährte Methoden, Codebeispiele und weitere Ressourcen, mit denen Sie mehr über das [entwerfen][AccessibilityDesign], [Erstellen][AccessibilityBuild]und [Testen][AccessibilityTest] von barrierefreien Websites in Microsoft Edge erfahren.  
 
-## Accessibility in Microsoft Edge  
+## Barrierefreiheit in Microsoft Edge  
 
-In Microsoft Edge, we introduced modern [UI Automation API][WindowsWin32AutoEntryui] \(UIA API\).  The change to UIA was a major investment in browser accessibility, and it lays the foundation for a more inclusive web experience for users who depend on assistive technology in Windows 10.  Users also benefit from the evergreen nature of the Chromium engine.  
+In Microsoft Edge haben wir eine moderne [UI-Automatisierung-API][WindowsWin32AutoEntryui] (UIA-API \) eingeführt.  Die Änderung an UIA war eine wichtige Investition in die Barrierefreiheit des Browsers und bildet die Grundlage für ein umfassenderes Weberlebnis für Benutzer, die von Hilfstechnologien in Windows 10 abhängig sind.  Benutzer profitieren auch vom immergrünen Charakter der Chrom Maschine.  
 
-The accessibility system in Microsoft Edge inherently supports modern web standards including ARIA, HTML5, and CSS3.  The following diagram of the simplified browser pipeline follows webpage content into an accessible presentation layer.  
+Das Barrierefreiheits System in Microsoft Edge unterstützt inhärent moderne Web-Standards wie Aria, HTML5 und CSS3.  Das folgende Diagramm der vereinfachten Browser Pipeline folgt dem Inhalt einer Webseite in einer barrierefreien Präsentationsschicht.  
 
-:::image type="complex" source="./media/accessibilityarchitecture.png" alt-text="Content transformed to the engine model is projected into visual and accessibility views that are presented either as visual or accessible presentation&quot;:::
-   Figure 1.  Content transformed to the engine model is projected into visual and accessibility views that are presented either as visual or accessible presentation
+:::image type="complex" source="./media/accessibilityarchitecture.png" alt-text="Inhalte, die in das Modul Modell umgewandelt werden, werden in visuelle und Barrierefreiheits Ansichten projiziert, die entweder als visuelle oder barrierefreie Präsentation dargestellt werden.&quot;:::
+   Abbildung1.  Inhalte, die in das Modul Modell umgewandelt werden, werden in visuelle und Barrierefreiheits Ansichten projiziert, die entweder als visuelle oder barrierefreie Präsentation dargestellt werden.
 :::image-end:::
 
 <!--![Figure 1.  Content transformed to the engine model is projected into visual and accessibility views that are presented either as visual or accessible presentation][ImageAccessibilityArchitecture]  -->  
 
-The Microsoft Edge team works with the W3C and other browser vendors on an ongoing basis to ensure that new web platform features have sufficient built-in accessibility.  
+Das Microsoft Edge-Team arbeitet kontinuierlich mit dem W3C und anderen Browser Anbietern zusammen, um sicherzustellen, dass die Features der neuen Webplattform genügend integrierte Barrierefreiheit aufweisen.  
 
-For information on which new HTML5 features are accessibly supported by Microsoft Edge, visit [HTML5Accessibility][HTML5Accessibility].  
+Informationen zu den neuen HTML5-Features, die von Microsoft Edge zugänglich unterstützt werden, finden Sie unter [HTML5Accessibility][HTML5Accessibility].  
 
-## Resources  
+## Ressourcen  
 
-#### Microsoft Windows UI Automation Blog  
+#### Microsoft Windows-Benutzeroberflächen Automatisierungs Blog  
 
-The [Microsoft Windows UI Automation blog][ArchiveBlogsWinuiautomation] covers topics related to the Windows Automation API.  
+Der [Microsoft Windows-Benutzeroberflächen Automatisierungs Blog][ArchiveBlogsWinuiautomation] behandelt Themen im Zusammenhang mit der Windows-Automatisierungs-API.  
 
 #### Web Accessibility Initiative (WAI)  
 
-The [Web Accessibility Initiative (WAI)][W3CWaiHome] provided bt the W3C is an effort to help improve the accessibility of the web.  The site provides a variety of resources for [Getting Started with Web Accessibility][W3CWaiGettingstartedOverview], [Designing for Inclusion][W3CWaiFundamentals], [tutorials and presentations][W3CWaiTeachAdvocate], and more.  
+Die [Web Accessibility Initiative (WAI)][W3CWaiHome] , die BT im W3C zur Verfügung stellt, ist eine Bemühung, die Barrierefreiheit im Internet zu verbessern.  Die Website bietet eine Reihe von Ressourcen für den Einstieg [in die Barrierefreiheit im Web][W3CWaiGettingstartedOverview], das [Entwerfen für Inklusion][W3CWaiFundamentals], [Tutorials und Präsentationen][W3CWaiTeachAdvocate]und vieles mehr.  
 
 
 <!-- image links -->  
@@ -58,21 +58,21 @@ The [Web Accessibility Initiative (WAI)][W3CWaiHome] provided bt the W3C is an e
 
 <!-- links -->  
 
-[AccessibilityBuild]: ./accessibility/build.md &quot;Building Accessible Websites&quot;  
-[AccessibilityDesign]: ./accessibility/design.md &quot;Designing Accessible Websites&quot;  
-[AccessibilityTest]: ./accessibility/test.md &quot;Accessibility Testing&quot;  
+[AccessibilityBuild]: ./accessibility/build.md &quot;Erstellen von barrierefreien Websites&quot;  
+[AccessibilityDesign]: ./accessibility/design.md &quot;Entwerfen barrierefreier Websites&quot;  
+[AccessibilityTest]: ./accessibility/test.md &quot;Barrierefreiheits Tests&quot;  
 
-[WindowsWin32AutoEntryui]: /windows/win32/winauto/entry-uiauto-win32 &quot;UI Automation&quot;  
+[WindowsWin32AutoEntryui]: /windows/win32/winauto/entry-uiauto-win32 &quot;Benutzeroberflächenautomatisierungs&quot;  
 
-[ArchiveBlogsWinuiautomation]: /archive/blogs/winuiautomation/ &quot;Microsoft Windows UI Automation Blog&quot;  
+[ArchiveBlogsWinuiautomation]: /archive/blogs/winuiautomation/ &quot;Microsoft Windows-Benutzeroberflächen Automatisierungs Blog&quot;  
 
-[HTML5Accessibility]: https://html5accessibility.com &quot;HTML5 Accessibility&quot;  
+[HTML5Accessibility]: https://html5accessibility.com &quot;Barrierefreiheit in HTML5&quot;  
 
-[W3CAccessibility]: https://w3.org/standards/webdesign/accessibility &quot;Accessibility | W3C&quot;  
-[W3CWaiFundamentals]: https://w3.org/wai/fundamentals/accessibility-intro &quot;Introduction to Web Accessibility | Web Accessibility Initiative (WAI) | W3C&quot;  
-[W3CWaiGettingstartedOverview]: https://w3.org/wai/gettingstarted/Overview &quot;Getting Started: Making a Web Site Accessible | Web Accessibility Initiative (WAI) | W3C&quot;  
+[W3CAccessibility]: https://w3.org/standards/webdesign/accessibility &quot;Barrierefreiheit | W3C&quot;  
+[W3CWaiFundamentals]: https://w3.org/wai/fundamentals/accessibility-intro &quot;Einführung in Barrierefreiheit im Web | Web Accessibility Initiative (WAI) | W3C&quot;  
+[W3CWaiGettingstartedOverview]: https://w3.org/wai/gettingstarted/Overview &quot;Erste Schritte: Erstellen einer Website für Barrierefreiheit | Web Accessibility Initiative (WAI) | W3C&quot;  
 [W3CWaiHome]: https://w3.org/wai &quot;Web Accessibility Initiative (WAI) | W3C&quot;  
-[W3CWaiTeachAdvocate]: https://w3.org/wai/teach-advocate &quot;Teach and Advocate Overview | Web Accessibility Initiative (WAI) | W3C&quot;  
+[W3CWaiTeachAdvocate]: https://w3.org/wai/teach-advocate &quot;Übersicht über unterrichten und Fürsprecher | Web Accessibility Initiative (WAI) | W3C&quot;  
 
-[WHODisabilities]: https://who.int/topics/disabilities &quot;Disabilities | WHO"  
+[WHODisabilities]: https://who.int/topics/disabilities &quot;Behinderungen | Wer"  
 

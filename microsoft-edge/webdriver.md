@@ -1,6 +1,6 @@
 ---
 ms.assetid: e56172c0-b635-4c02-8e0c-56bf8cb4c164
-description: Learn how to get started with WebDriver, a wire protocol that allows programs and scripts to control web browser behavior.
+description: Hier erfahren Sie, wie Sie mit WebDriver beginnen, einem Draht Protokoll, mit dem Programme und Skripts das Verhalten des Webbrowsers steuern können.
 title: WebDriver (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
-keywords: edge, web development, html, css, javascript, developer, webdriver, selenium, testing
+keywords: Edge, Web-Entwicklung, HTML, CSS, JavaScript, Entwickler, WebDriver, Selen, testen
 ms.openlocfilehash: 0a6ef78103852234a6b52dfe88e60273cc3bd3d0
 ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
 ms.translationtype: MT
@@ -17,230 +17,230 @@ ms.lasthandoff: 04/09/2020
 ms.locfileid: "10568732"
 ---
 # WebDriver (EdgeHTML)
-The W3C [WebDriver](https://www.w3.org/TR/webdriver/) API is a platform and language-neutral interface and wire protocol allowing programs or scripts to control the behavior of a web browser.
+Bei der W3C- [WebDriver](https://www.w3.org/TR/webdriver/) -API handelt es sich um eine Plattform-und sprachneutrale Schnittstelle und ein Draht Protokoll, mit der Programme oder Skripts das Verhalten eines Webbrowsers steuern können.
 
-WebDriver enables developers to create automated tests that simulate user interaction. This is different from JavaScript unit tests because WebDriver has access to functionality and information that JavaScript running in the browser doesn't, and it can more accurately simulate user events or OS-level events. WebDriver can also manage testing across multiple windows, tabs and webpages in a single test session.
+WebDriver ermöglicht Entwicklern das Erstellen automatisierter Tests, die die Benutzerinteraktion simulieren. Dies unterscheidet sich von JavaScript-Komponententests, da WebDriver Zugriff auf Funktionen und Informationen hat, die JavaScript im Browser nicht ausführt, und es können Benutzerereignisse oder Ereignisse auf Betriebssystemebene genauer simuliert werden. WebDriver kann auch Tests über mehrere Fenster, Registerkarten und Webseiten in einer einzigen Testsitzung verwalten.
 
-Here's how to get started with WebDriver for Microsoft Edge (EdgeHTML).
+Hier erfahren Sie, wie Sie mit WebDriver für Microsoft Edge (EdgeHTML) beginnen.
 
-The Microsoft Edge (EdgeHTML) implementation of WebDriver supports both the W3C [WebDriver](https://www.w3.org/TR/webdriver/) specification and the [JSON Wire Protocol](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol) for backwards compatibility with existing tests.
+Die Microsoft Edge-Implementierung (EdgeHTML) von WebDriver unterstützt sowohl die W3C- [WebDriver](https://www.w3.org/TR/webdriver/) -Spezifikation als auch das [JSON-Wire-Protokoll](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol) für die Abwärtskompatibilität mit vorhandenen Tests.
 
-## Getting started with WebDriver for Microsoft Edge (EdgeHTML)
-* Install Windows 10.
-* Download the appropriate [Microsoft WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver/) server for your build of Windows and Microsoft Edge (EdgeHTML).
-* Download the WebDriver language binding of your choice. [All Selenium language bindings support Microsoft Edge (EdgeHTML)](https://docs.seleniumhq.org/download/).
+## Erste Schritte mit WebDriver für Microsoft Edge (EdgeHTML)
+* Installieren Sie Windows 10.
+* Laden Sie den entsprechenden [Microsoft WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver/) -Server für Ihren Build von Windows und Microsoft Edge (EdgeHTML) herunter.
+* Laden Sie die WebDriver-Sprachbindung Ihrer Wahl herunter. [Alle Selenium-Sprachbindungen unterstützen Microsoft Edge (EdgeHTML)](https://docs.seleniumhq.org/download/).
 
 > [!NOTE]
-> You can find help, report issues, and file feature requests at [Microsoft Edge (EdgeHTML) Feedback & Support](https://developer.microsoft.com/microsoft-edge/support/).
+> Hilfe, Berichts Probleme und Datei Funktionsanforderungen finden Sie unter [Microsoft Edge (EdgeHTML) Feedback &-Support](https://developer.microsoft.com/microsoft-edge/support/).
 
 
-## Using WebDriver
-To get started using WebDriver with Microsoft Edge (EdgeHTML), check out these samples:
+## Verwenden von WebDriver
+Die ersten Schritte mit WebDriver mit Microsoft Edge (EdgeHTML) finden Sie in den folgenden Beispielen:
 
-* [C\# code sample](https://gist.github.com/InstyleVII/baf25274c55e891076d5#file-webdriver-cs) for opening a browser window, navigating to bing.com and searching for 'webdriver' (GitHub Gist).
+* [C \ # Codebeispiel](https://gist.github.com/InstyleVII/baf25274c55e891076d5#file-webdriver-cs) zum Öffnen eines Browserfensters, navigieren zu Bing.com und suchen nach "WebDriver" (GitHub GIST).
 
-## WebDriver server command line flags
-List of command line flags for the WebDriver server.
+## Befehlszeilen Attribute für WebDriver Server
+Liste der Befehlszeilen Kennzeichen für den WebDriver-Server.
 
-| Name    | Description                                                                                                      | Available Release |
+| Name    | Beschreibung                                                                                                      | Verfügbare Version |
 |:--------|:-----------------------------------------------------------------------------------------------------------------|:------------------|
-| host    | Host IP to use for the WebDriver server (default: localhost)                                                     | 14393             |
-| port    | Port to use for the WebDriver server (default: 17556)                                                            | 14393             |
-| package | ApplicationUserModelId (AUMID) for the application to be launched by the WebDriver server                        | 14393             |
-| verbose | Outputs requests received and responses sent by the WebDriver server                                             | 14393             |
-| silent  | Outputs nothing                                                                                                  | 15063             |
-| version | Outputs the version of MicrosoftWebDriver.exe                                                                    | 17763             |
-| w3c     | Use W3C WebDriver protocol (default option)                                                                      | 17763             |
-| jwp     | Use JSON Wire protocol                                                                                           | 17763             |
-| cleanup | Cleanup temporary data and registry keys set by the WebDriver server for --package. Other parameters are ignored | 17763             |
+| Host    | Host-IP für den WebDriver-Server (Standard: localhost)                                                     | 14393             |
+| Anschluss    | Zu verwendender Port für den WebDriver-Server (Standard: 17556)                                                            | 14393             |
+| package | ApplicationUserModelId (AUMID) für die Anwendung, die vom WebDriver-Server gestartet werden soll                        | 14393             |
+| Ausführliche | Ausgänge empfangene Anfragen und Antworten, die vom WebDriver-Server gesendet wurden                                             | 14393             |
+| lautlos  | Gibt nichts aus                                                                                                  | 15063             |
+| version | Gibt die Version von MicrosoftWebDriver.exe aus.                                                                    | 17763             |
+| W3C     | Verwenden des W3C-weblaufwerks Protokolls (Standardoption)                                                                      | 17763             |
+| JWP     | Verwenden des JSON-Draht Protokolls                                                                                           | 17763             |
+| Bereinigung | Bereinigen von temporären Daten und Registrierungsschlüsseln, die vom WebDriver-Server für-Paket festgelegten sind. Andere Parameter werden ignoriert | 17763             |
 
-## W3C WebDriver
-The support on a per command basis for the [W3C WebDriver Specification](https://www.w3.org/TR/webdriver/).
+## W3C-WebDriver
+Die Unterstützung für die [W3C-WebDriver-Spezifikation](https://www.w3.org/TR/webdriver/)pro Befehl.
 
-### Capabilities
-| Capability                       | Key                       | Status                   | Available Release |
+### Funktionen
+| Funktion                       | Schlüssel                       | Status                   | Verfügbare Version |
 |:---------------------------------|:--------------------------|:-------------------------|:------------------|
-| Browser Name                     | "browserName"             | Supported                | 17763             |
-| Browser Version                  | "browserVersion"          | Supported                | 17763             |
-| Platform Name                    | "platformName"            | Supported                | 17763             |
-| Accept Insecure TLS Certificates | "acceptInsecureCerts"     | Not&nbsp;Supported       | N/A               |
-| Page Load Strategy               | "pageLoadStrategy"        | Supported                | 17763             |
-| Proxy Configuration              | "proxy"                   | Not&nbsp;Supported       | N/A               |
-| Window Dimensioning/Positioning  | "setWindowRect"           | Supported                | 17763             |
-| Session Timeouts Configuration   | "timeouts"                | Supported                | 17763             |
-| Unhandled Prompt Behavior        | "unhandledPromptBehavior" | Partially&nbsp;Supported | 17763             |
-| InPrivate                        | "ms:inPrivate"            | Supported                | 17763             |
-| Extension Paths                  | "ms:extensionPaths"       | Supported                | 17763             |
-| Start Page                       | "ms:startPage"            | Supported                | 17763             |
+| Browser Name                     | Browser Name             | Unterstützt                | 17763             |
+| Browser Version                  | Browserversion          | Unterstützt                | 17763             |
+| Platt Form Name                    | platformName            | Unterstützt                | 17763             |
+| Akzeptieren von unsicheren TLS-Zertifikaten | "acceptInsecureCerts"     | Nicht &nbsp; unterstützt       | n.a.               |
+| Seiten Lade Strategie               | "pageLoadStrategy"        | Unterstützt                | 17763             |
+| Proxykonfiguration              | Proxy                   | Nicht &nbsp; unterstützt       | n.a.               |
+| Fenster Bemaßung/-Positionierung  | setWindowRect           | Unterstützt                | 17763             |
+| Konfiguration der Sitzungstimeouts   | Timeouts                | Unterstützt                | 17763             |
+| Unbehandeltes Eingabe Aufforderungsverhalten        | "unhandledPromptBehavior" | Teilweise &nbsp; unterstützt | 17763             |
+| InPrivate                        | "MS: InPrivate"            | Unterstützt                | 17763             |
+| Erweiterungs Pfade                  | "MS: extensionPaths"       | Unterstützt                | 17763             |
+| Startseite                       | "MS: Startpage"            | Unterstützt                | 17763             |
 
-### Locator Strategies
-| Locator Strategy                                                        | Status    | Available Release |
+### Locator-Strategien
+| Locator-Strategie                                                        | Status    | Verfügbare Version |
 |:------------------------------------------------------------------------|:----------|:------------------|
-| [CSS Selectors](https://www.w3.org/TR/webdriver/#css-selectors)         | Supported | 17763             |
-| [Link Text](https://www.w3.org/TR/webdriver/#link-text)                 | Supported | 17763             |
-| [Partial Link Text](https://www.w3.org/TR/webdriver/#partial-link-text) | Supported | 17763             |
-| [Tag Name](https://www.w3.org/TR/webdriver/#tag-name)                   | Supported | 17763             |
-| [XPath](https://www.w3.org/TR/webdriver/#xpath)                         | Supported | 17763             |
+| [CSS-Auswahlen](https://www.w3.org/TR/webdriver/#css-selectors)         | Unterstützt | 17763             |
+| [Verknüpfen von Text](https://www.w3.org/TR/webdriver/#link-text)                 | Unterstützt | 17763             |
+| [Text für teilweise Verknüpfung](https://www.w3.org/TR/webdriver/#partial-link-text) | Unterstützt | 17763             |
+| [Tag-Name](https://www.w3.org/TR/webdriver/#tag-name)                   | Unterstützt | 17763             |
+| [XPath](https://www.w3.org/TR/webdriver/#xpath)                         | Unterstützt | 17763             |
 
-### Commands
-| HTTP Method | URI Template                                                   | Command                                                                                   | Status             | Available Release |
+### Befehle
+| HTTP Method | URI-Vorlage                                                   | Befehl                                                                                   | Status             | Verfügbare Version |
 |:------------|:---------------------------------------------------------------|:------------------------------------------------------------------------------------------|:-------------------|:----------------  |
-| POST        | /session                                                       | [New Session](https://www.w3.org/TR/webdriver/#new-session)                               | Supported          | 17763             |
-| DELETE      | /session/{session id}                                          | [Delete Session](https://www.w3.org/TR/webdriver/#delete-session)                         | Supported          | 17763             |
-| GET         | /status                                                        | [Status](https://www.w3.org/TR/webdriver/#status)                                         | Supported          | 17763             |
-| GET         | /session/{session id}/timeouts                                 | [Get Timeouts](https://www.w3.org/TR/webdriver/#get-timeouts)                             | Supported          | 17763             |
-| POST        | /session/{session id}/timeouts                                 | [Set Timeouts](https://www.w3.org/TR/webdriver/#set-timeouts)                             | Supported          | 17763             |
-| POST        | /session/{session id}/url                                      | [Navigate To](https://www.w3.org/TR/webdriver/#navigate-to)                               | Supported          | 17763             |
-| GET         | /session/{session id}/url                                      | [Get Current URL](https://www.w3.org/TR/webdriver/#get-current-url)                       | Supported          | 17763             |
-| POST        | /session/{session id}/back                                     | [Back](https://www.w3.org/TR/webdriver/#back)                                             | Supported          | 17763             |
-| POST        | /session/{session id}/forward                                  | [Forward](https://www.w3.org/TR/webdriver/#forward)                                       | Supported          | 17763             |
-| POST        | /session/{session id}/refresh                                  | [Refresh](https://www.w3.org/TR/webdriver/#refresh)                                       | Supported          | 17763             |
-| GET         | /session/{session id}/title                                    | [Get Title](https://www.w3.org/TR/webdriver/#get-title)                                   | Supported          | 17763             |
-| GET         | /session/{session id}/window                                   | [Get Window Handle](https://www.w3.org/TR/webdriver/#get-window-handle)                   | Supported          | 17763             |
-| DELETE      | /session/{session id}/window                                   | [Close Window](https://www.w3.org/TR/webdriver/#close-window)                             | Supported          | 17763             |
-| POST        | /session/{session id}/window                                   | [Switch to Window](https://www.w3.org/TR/webdriver/#switch-to-window)                     | Supported          | 17763             |
-| GET         | /session/{session id}/window/handles                           | [Get Window Handles](https://www.w3.org/TR/webdriver/#get-window-handles)                 | Supported          | 17763             |
-| POST        | /session/{session id}/frame                                    | [Switch To Frame](https://www.w3.org/TR/webdriver/#switch-to-frame)                       | Supported          | 17763             |
-| POST        | /session/{session id}/frame/parent                             | [Switch to Parent Frame](https://www.w3.org/TR/webdriver/#switch-to-parent-frame)         | Supported          | 17763             |
-| GET         | /session/{session id}/window/rect                              | [Get Window Rect](https://www.w3.org/TR/webdriver/#get-window-rect)                       | Supported          | 17763             |
-| POST        | /session/{session id}/window/rect                              | [Set Window Rect](https://www.w3.org/TR/webdriver/#set-window-rect)                       | Supported          | 17763             |
-| POST        | /session/{session id}/window/maximize                          | [Maximize Window](https://www.w3.org/TR/webdriver/#maximize-window)                       | Supported          | 17763             |
-| POST        | /session/{session id}/window/minimize                          | [Minimize Window](https://www.w3.org/TR/webdriver/#minimize-window)                       | Supported          | 17763             |
-| POST        | /session/{session id}/window/fullscreen                        | [Fullscreen Window](https://www.w3.org/TR/webdriver/#fullscreen-window)                   | Not&nbsp;Supported | N/A               |
-| GET         | /session/{session id}/element/active                           | [Get Active Element](https://www.w3.org/TR/webdriver/#get-active-element)                 | Supported          | 17763             |
-| POST        | /session/{session id}/element                                  | [Find Element](https://www.w3.org/TR/webdriver/#find-element)                             | Supported          | 17763             |
-| POST        | /session/{session id}/elements                                 | [Find Elements](https://www.w3.org/TR/webdriver/#find-elements)                           | Supported          | 17763             |
-| POST        | /session/{session id}/element/{element id}/element             | [Find Element From Element](https://www.w3.org/TR/webdriver/#find-element-from-element)   | Supported          | 17763             |
-| POST        | /session/{session id}/element/{element id}/elements            | [Find Elements From Element](https://www.w3.org/TR/webdriver/#find-elements-from-element) | Supported          | 17763             |
-| GET         | /session/{session id}/element/{element id}/selected            | [Is Element Selected](https://www.w3.org/TR/webdriver/#is-element-selected)               | Supported          | 17763             |
-| GET         | /session/{session id}/element/{element id}/attribute/{name}    | [Get Element Attribute](https://www.w3.org/TR/webdriver/#get-element-attribute)           | Supported          | 17763             |
-| GET         | /session/{session id}/element/{element id}/property/{name}     | [Get Element Property](https://www.w3.org/TR/webdriver/#get-element-property)             | Supported          | 17763             |
-| GET         | /session/{session id}/element/{element id}/css/{property name} | [Get Element CSS Value](https://www.w3.org/TR/webdriver/#get-element-css-value)           | Supported          | 17763             |
-| GET         | /session/{session id}/element/{element id}/text                | [Get Element Text](https://www.w3.org/TR/webdriver/#get-element-text)                     | Supported          | 17763             |
-| GET         | /session/{session id}/element/{element id}/name                | [Get Element Tag Name](https://www.w3.org/TR/webdriver/#get-element-tag-name)             | Supported          | 17763             |
-| GET         | /session/{session id}/element/{element id}/rect                | [Get Element Rect](https://www.w3.org/TR/webdriver/#get-element-rect)                     | Supported          | 17763             |
-| GET         | /session/{session id}/element/{element id}/enabled             | [Is Element Enabled](https://www.w3.org/TR/webdriver/#is-element-enabled)                 | Supported          | 17763             |
-| POST        | /session/{session id}/element/{element id}/click               | [Element Click](https://www.w3.org/TR/webdriver/#element-click)                           | Supported          | 17763             |
-| POST        | /session/{session id}/element/{element id}/clear               | [Element Clear](https://www.w3.org/TR/webdriver/#element-clear)                           | Supported          | 17763             |
-| POST        | /session/{session id}/element/{element id}/sendKeys            | [Element Send Keys](https://www.w3.org/TR/webdriver/#element-send-keys)                   | Supported          | 17763             |
-| GET         | /session/{session id}/source                                   | [Get Page Source](https://www.w3.org/TR/webdriver/#get-page-source)                       | Supported          | 17763             |
-| POST        | /session/{session id}/execute/sync                             | [Execute Script](https://www.w3.org/TR/webdriver/#execute-script)                         | Supported          | 17763             |
-| POST        | /session/{session id}/execute/async                            | [Execute Async Script](https://www.w3.org/TR/webdriver/#execute-async-script)             | Supported          | 17763             |
-| GET         | /session/{session id}/cookie                                   | [Get All Cookies](https://www.w3.org/TR/webdriver/#get-all-cookies)                       | Supported          | 17763             |
-| GET         | /session/{session id}/cookie/{name}                            | [Get Named Cookie](https://www.w3.org/TR/webdriver/#get-named-cookie)                     | Supported          | 17763             |
-| POST        | /session/{session id}/cookie                                   | [Add Cookie](https://www.w3.org/TR/webdriver/#add-cookie)                                 | Supported          | 17763             |
-| DELETE      | /session/{session id}/cookie/{name}                            | [Delete Cookie](https://www.w3.org/TR/webdriver/#delete-cookie)                           | Supported          | 17763             |
-| DELETE      | /session/{session id}/cookie                                   | [Delete All Cookies](https://www.w3.org/TR/webdriver/#delete-all-cookies)                 | Supported          | 17763             |
-| POST        | /session/{session id}/actions                                  | [Perform Actions](https://www.w3.org/TR/webdriver/#perform-actions)                       | Supported          | 17763             |
-| DELETE      | /session/{session id}/actions                                  | [Release Actions](https://www.w3.org/TR/webdriver/#release-actions)                       | Supported          | 17763             |
-| POST        | /session/{session id}/alert/dismiss                            | [Dismiss Alert](https://www.w3.org/TR/webdriver/#dismiss-alert)                           | Supported          | 17763             |
-| POST        | /session/{session id}/alert/accept                             | [Accept Alert](https://www.w3.org/TR/webdriver/#accept-alert)                             | Supported          | 17763             |
-| GET         | /session/{session id}/alert/text                               | [Get Alert Text](https://www.w3.org/TR/webdriver/#get-alert-text)                         | Supported          | 17763             |
-| POST        | /session/{session id}/alert/text                               | [Send Alert Text](https://www.w3.org/TR/webdriver/#send-alert-text)                       | Supported          | 17763             |
-| GET         | /session/{session id}/screenshot                               | [Take Screenshot](https://www.w3.org/TR/webdriver/#take-screenshot)                       | Supported          | 17763             |
-| GET         | /session/{session id}/screenshot/{element id}                  | [Take Element Screenshot](https://www.w3.org/TR/webdriver/#take-element-screenshot)       | Supported          | 17763             |
+| POST        | /session                                                       | [Neue Sitzung](https://www.w3.org/TR/webdriver/#new-session)                               | Unterstützt          | 17763             |
+| DELETE      | /Session/{Session-ID}                                          | [Sitzung löschen](https://www.w3.org/TR/webdriver/#delete-session)                         | Unterstützt          | 17763             |
+| GET         | /Status                                                        | [Status](https://www.w3.org/TR/webdriver/#status)                                         | Unterstützt          | 17763             |
+| GET         | /Session/{Session-ID}/Timeouts                                 | [Timeouts abrufen](https://www.w3.org/TR/webdriver/#get-timeouts)                             | Unterstützt          | 17763             |
+| POST        | /Session/{Session-ID}/Timeouts                                 | [Timeouts einstellen](https://www.w3.org/TR/webdriver/#set-timeouts)                             | Unterstützt          | 17763             |
+| POST        | /Session/{Session-ID}/URL                                      | [Navigieren Sie zu](https://www.w3.org/TR/webdriver/#navigate-to)                               | Unterstützt          | 17763             |
+| GET         | /Session/{Session-ID}/URL                                      | [Aktuelle URL abrufen](https://www.w3.org/TR/webdriver/#get-current-url)                       | Unterstützt          | 17763             |
+| POST        | /Session/{Session-ID}/Back                                     | [Zurück](https://www.w3.org/TR/webdriver/#back)                                             | Unterstützt          | 17763             |
+| POST        | /Session/{Session-ID}/Forward                                  | [Vorwärts](https://www.w3.org/TR/webdriver/#forward)                                       | Unterstützt          | 17763             |
+| POST        | /Session/{Session-ID}/Refresh                                  | [Aktualisieren](https://www.w3.org/TR/webdriver/#refresh)                                       | Unterstützt          | 17763             |
+| GET         | /Session/{Session-ID}/Titel                                    | [Titel abrufen](https://www.w3.org/TR/webdriver/#get-title)                                   | Unterstützt          | 17763             |
+| GET         | /Session/{Session-ID}/Window                                   | [Fenster Handle abrufen](https://www.w3.org/TR/webdriver/#get-window-handle)                   | Unterstützt          | 17763             |
+| DELETE      | /Session/{Session-ID}/Window                                   | [Fenster schließen](https://www.w3.org/TR/webdriver/#close-window)                             | Unterstützt          | 17763             |
+| POST        | /Session/{Session-ID}/Window                                   | [Zu Fenster wechseln](https://www.w3.org/TR/webdriver/#switch-to-window)                     | Unterstützt          | 17763             |
+| GET         | /Session/{Session-ID}/Window/Handles                           | [Abrufen von Fensterhandles](https://www.w3.org/TR/webdriver/#get-window-handles)                 | Unterstützt          | 17763             |
+| POST        | /Session/{Session-ID}/Frame                                    | [Zu Frame wechseln](https://www.w3.org/TR/webdriver/#switch-to-frame)                       | Unterstützt          | 17763             |
+| POST        | /Session/{Session-ID}/Frame/Parent                             | [Zum übergeordneten Frame wechseln](https://www.w3.org/TR/webdriver/#switch-to-parent-frame)         | Unterstützt          | 17763             |
+| GET         | /Session/{Session-ID}/Window/Rect                              | [Abrufen des Fensterrechtecks](https://www.w3.org/TR/webdriver/#get-window-rect)                       | Unterstützt          | 17763             |
+| POST        | /Session/{Session-ID}/Window/Rect                              | [Fensterrechteck einrichten](https://www.w3.org/TR/webdriver/#set-window-rect)                       | Unterstützt          | 17763             |
+| POST        | /Session/{Session-ID}/Window/Maximize                          | [Fenster maximieren](https://www.w3.org/TR/webdriver/#maximize-window)                       | Unterstützt          | 17763             |
+| POST        | /Session/{Session-ID}/Window/Minimize                          | [Fenster minimieren](https://www.w3.org/TR/webdriver/#minimize-window)                       | Unterstützt          | 17763             |
+| POST        | /Session/{Session-ID}/Window/Fullscreen                        | [Vollbild-Fenster](https://www.w3.org/TR/webdriver/#fullscreen-window)                   | Nicht &nbsp; unterstützt | n.a.               |
+| GET         | /Session/{Session-ID}/Element/Active                           | [Abrufen des aktiven Elements](https://www.w3.org/TR/webdriver/#get-active-element)                 | Unterstützt          | 17763             |
+| POST        | /Session/{Session-ID}/normales Element                                  | [Element suchen](https://www.w3.org/TR/webdriver/#find-element)                             | Unterstützt          | 17763             |
+| POST        | /Session/{Session-ID}/Elements                                 | [Suchen von Elementen](https://www.w3.org/TR/webdriver/#find-elements)                           | Unterstützt          | 17763             |
+| POST        | /Session/{Session-ID}/Element/{Element-ID}/normales Element             | [Element aus Element suchen](https://www.w3.org/TR/webdriver/#find-element-from-element)   | Unterstützt          | 17763             |
+| POST        | /Session/{Session-ID}/Element/{Element-ID}/Elements            | [Suchen von Elementen aus einem Element](https://www.w3.org/TR/webdriver/#find-elements-from-element) | Unterstützt          | 17763             |
+| GET         | /Session/{Session-ID}/Element/{Element-ID}/Selected            | [Ist-Element markiert](https://www.w3.org/TR/webdriver/#is-element-selected)               | Unterstützt          | 17763             |
+| GET         | /Session/{Session-ID}/Element/{Element-ID}/Attribute/{Name}    | [Get-Element Attribut](https://www.w3.org/TR/webdriver/#get-element-attribute)           | Unterstützt          | 17763             |
+| GET         | /Session/{Session-ID}/Element/{Element-ID}/Property/{Name}     | [Get-Element Eigenschaft](https://www.w3.org/TR/webdriver/#get-element-property)             | Unterstützt          | 17763             |
+| GET         | /Session/{Session ID}/Element/{Element ID}/CSS/{Property Name} | [Element-CSS-Wert abrufen](https://www.w3.org/TR/webdriver/#get-element-css-value)           | Unterstützt          | 17763             |
+| GET         | /Session/{Session-ID}/Element/{Element-ID}/Text                | [Abrufen von Element Text](https://www.w3.org/TR/webdriver/#get-element-text)                     | Unterstützt          | 17763             |
+| GET         | /Session/{Session-ID}/Element/{Element-ID}/Name                | [Element-Tag-Name abrufen](https://www.w3.org/TR/webdriver/#get-element-tag-name)             | Unterstützt          | 17763             |
+| GET         | /Session/{Session-ID}/Element/{Element-ID}/Rect                | [Element Rect abrufen](https://www.w3.org/TR/webdriver/#get-element-rect)                     | Unterstützt          | 17763             |
+| GET         | /Session/{Session-ID}/Element/{Element-ID}/Enabled             | [Ist-Element aktiviert](https://www.w3.org/TR/webdriver/#is-element-enabled)                 | Unterstützt          | 17763             |
+| POST        | /Session/{Session-ID}/Element/{Element-ID}/Klick funktioniert               | [Element klicken](https://www.w3.org/TR/webdriver/#element-click)                           | Unterstützt          | 17763             |
+| POST        | /Session/{Session-ID}/Element/{Element-ID}/Clear               | [Element löschen](https://www.w3.org/TR/webdriver/#element-clear)                           | Unterstützt          | 17763             |
+| POST        | /Session/{Session-ID}/Element/{Element-ID}/sendKeys            | [Schlüssel "Element senden"](https://www.w3.org/TR/webdriver/#element-send-keys)                   | Unterstützt          | 17763             |
+| GET         | /Session/{Session-ID}/Source                                   | [Abrufen der Seitenquelle](https://www.w3.org/TR/webdriver/#get-page-source)                       | Unterstützt          | 17763             |
+| POST        | /Session/{Session-ID}/Execute/Sync                             | [Skript ausführen](https://www.w3.org/TR/webdriver/#execute-script)                         | Unterstützt          | 17763             |
+| POST        | /Session/{Session-ID}/Execute/Async                            | [Ausführen eines asynchronen Skripts](https://www.w3.org/TR/webdriver/#execute-async-script)             | Unterstützt          | 17763             |
+| GET         | /Session/{Session-ID}/Cookie                                   | [Abrufen aller Cookies](https://www.w3.org/TR/webdriver/#get-all-cookies)                       | Unterstützt          | 17763             |
+| GET         | /Session/{Session-ID}/Cookie/{Name}                            | [Erhalten des benannten Cookies](https://www.w3.org/TR/webdriver/#get-named-cookie)                     | Unterstützt          | 17763             |
+| POST        | /Session/{Session-ID}/Cookie                                   | [Cookie hinzufügen](https://www.w3.org/TR/webdriver/#add-cookie)                                 | Unterstützt          | 17763             |
+| DELETE      | /Session/{Session-ID}/Cookie/{Name}                            | [Löschen eines Cookies](https://www.w3.org/TR/webdriver/#delete-cookie)                           | Unterstützt          | 17763             |
+| DELETE      | /Session/{Session-ID}/Cookie                                   | [Alle Cookies löschen](https://www.w3.org/TR/webdriver/#delete-all-cookies)                 | Unterstützt          | 17763             |
+| POST        | /Session/{Session-ID}/Actions                                  | [Ausführen von Aktionen](https://www.w3.org/TR/webdriver/#perform-actions)                       | Unterstützt          | 17763             |
+| DELETE      | /Session/{Session-ID}/Actions                                  | [Freigabe Aktionen](https://www.w3.org/TR/webdriver/#release-actions)                       | Unterstützt          | 17763             |
+| POST        | /Session/{Session-ID}/Alert/Dismiss                            | [Benachrichtigung ablehnen](https://www.w3.org/TR/webdriver/#dismiss-alert)                           | Unterstützt          | 17763             |
+| POST        | /Session/{Session-ID}/Alert/Accept                             | [Benachrichtigung annehmen](https://www.w3.org/TR/webdriver/#accept-alert)                             | Unterstützt          | 17763             |
+| GET         | /Session/{Session-ID}/Alert/Text                               | [Abrufen von Warnungs Text](https://www.w3.org/TR/webdriver/#get-alert-text)                         | Unterstützt          | 17763             |
+| POST        | /Session/{Session-ID}/Alert/Text                               | [Benachrichtigungs Text senden](https://www.w3.org/TR/webdriver/#send-alert-text)                       | Unterstützt          | 17763             |
+| GET         | /Session/{Session-ID}/Screenshot                               | [Screenshot aufnehmen](https://www.w3.org/TR/webdriver/#take-screenshot)                       | Unterstützt          | 17763             |
+| GET         | /Session/{Session-ID}/Screenshot/{Element-ID}                  | [Screenshot des Take-Elements](https://www.w3.org/TR/webdriver/#take-element-screenshot)       | Unterstützt          | 17763             |
 
-## JSON Wire Protocol
-The support on a per command basis for the [JSON Wire Protocol](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol).
+## JSON-Wire-Protokoll
+Die Unterstützung für das [JSON Wire-Protokoll](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol)pro Befehl.
 
-### Commands
-| HTTP Method | Path                                                                                                                                                         | Status             | Available Release |
+### Befehle
+| HTTP Method | Pfad                                                                                                                                                         | Status             | Verfügbare Version |
 |:------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------|:------------------|
-| GET         | [/status](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#status)                                                                               | Supported          | 10240             |
-| POST        | [/session](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#session-1)                                                                           | Supported          | 10240             |
-| GET         | [/sessions](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessions)                                                                           | Supported          | 10240             |
-| GET         | [/session/:sessionId](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionid)                                                         | Supported          | 10240             |
-| DELETE      | [/session/:sessionId](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionid)                                                         | Supported          | 10240             |
-| POST        | [/session/:sessionId/timeouts](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtimeouts)                                        | Supported          | 10240             |
-| POST        | [/session/:sessionId/timeouts/async_script](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtimeoutsasync_script)               | Not&nbsp;Supported | N/A               |
-| POST        | [/session/:sessionId/timeouts/implicit_wait](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtimeoutsimplicit_wait)             | Supported          | 10586             |
-| GET         | [/session/:sessionId/window_handle](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidwindow_handle)                              | Supported          | 10586             |
-| GET         | [/session/:sessionId/window_handles](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidwindow_handles)                            | Supported          | 10586             |
-| GET         | [/session/:sessionId/url](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidurl)                                                  | Supported          | 10240             |
-| POST        | [/session/:sessionId/url](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidurl)                                                  | Supported          | 10240             |
-| POST        | [/session/:sessionId/forward](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidforward)                                          | Supported          | 10240             |
-| POST        | [/session/:sessionId/back](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidback)                                                | Supported          | 10240             |
-| POST        | [/session/:sessionId/refresh](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidrefresh)                                          | Supported          | 10240             |
-| POST        | [/session/:sessionId/execute](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidexecute)                                          | Supported          | 10240             |
-| POST        | [/session/:sessionId/execute_async](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidexecute_async)                              | Supported          | 10586             |
-| GET         | [/session/:sessionId/screenshot](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidscreenshot)                                    | Supported          | 10240             |
-| GET         | [/session/:sessionId/ime/available_engines](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidimeavailable_engines)               | Not&nbsp;Supported | N/A               |
-| GET         | [/session/:sessionId/ime/active_engine](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidimeactive_engine)                       | Not&nbsp;Supported | N/A               |
-| GET         | [/session/:sessionId/ime/activated](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidimeactivated)                               | Not&nbsp;Supported | N/A               |
-| POST        | [/session/:sessionId/ime/deactivate](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidimedeactivate)                             | Not&nbsp;Supported | N/A               |
-| POST        | [/session/:sessionId/ime/activate](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidimeactivate)                                 | Not&nbsp;Supported | N/A               |
-| POST        | [/session/:sessionId/frame](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidframe)                                              | Supported          | 10586             |
-| POST        | [/session/:sessionId/frame/parent](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidframeparent)                                 | Supported          | 10586             |
-| POST        | [/session/:sessionId/window](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidwindow)                                            | Supported          | 10586             |
-| DELETE      | [/session/:sessionId/window](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidwindow)                                            | Supported          | 10586             |
-| POST        | [/session/:sessionId/window/:windowHandle/size](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidwindowwindowhandlesize)         | Supported          | 10586             |
-| GET         | [/session/:sessionId/window/:windowHandle/size](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidwindowwindowhandlesize)         | Supported          | 10586             |
-| POST        | [/session/:sessionId/window/:windowHandle/position](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidwindowwindowhandleposition) | Supported          | 10586             |
-| GET         | [/session/:sessionId/window/:windowHandle/position](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidwindowwindowhandleposition) | Supported          | 10586             |
-| GET         | [/session/:sessionId/window/:windowHandle/maximize](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidwindowwindowhandlemaximize) | Supported          | 10586             |
-| GET         | [/session/:sessionId/cookie](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidcookie)                                            | Supported          | 10586             |
-| POST        | [/session/:sessionId/cookie](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidcookie)                                            | Supported          | 10240             |
-| DELETE      | [/session/:sessionId/cookie](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidcookie)                                            | Supported          | 10586             |
-| DELETE      | [/session/:sessionId/cookie/:name](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidcookiename)                                  | Supported          | 10240             |
-| GET         | [/session/:sessionId/source](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidsource)                                            | Supported          | 10586             |
-| GET         | [/session/:sessionId}/title](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtitle)                                             | Supported          | 10240             |
-| POST        | [/session/:sessionId/element](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelement)                                          | Supported          | 10586             |
-| POST        | [/session/:sessionId/elements](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelements)                                        | Supported          | 10586             |
-| POST        | [/session/:sessionId/element/active](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementactive)                             | Supported          | 10586             |
-| GET         | [/session/:sessionId/element/:id](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementid)                                    | Not&nbsp;Supported | N/A               |
-| POST        | [/session/:sessionId/element/:id/element](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidelement)                     | Supported          | 10586             |
-| POST        | [/session/:sessionId/element/:id/elements](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidelements)                   | Supported          | 10586             |
-| POST        | [/session/:sessionId/element/:id/click](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidclick)                         | Supported          | 10240             |
-| POST        | [/session/:sessionId/element/:id/submit](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidsubmit)                       | Supported          | 10586             |
-| GET         | [/session/:sessionId/element/:id/text](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidtext)                           | Supported          | 10240             |
-| POST        | [/session/:sessionId/element/:id/value](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidvalue)                         | Supported          | 10240             |
-| POST        | [/session/:sessionId/keys](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidkeys)                                                | Supported          | 10586             |
-| GET         | [/session/:sessionId/element/:id/name](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidname)                           | Supported          | 10240             |
-| POST        | [/session/:sessionId/element/:id/clear](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidclear)                         | Supported          | 10240             |
-| GET         | [/session/:sessionId/element/:id/selected](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidselected)                   | Supported          | 10240             |
-| GET         | [/session/:sessionId/element/:id/enabled](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidenabled)                     | Supported          | 10240             |
-| GET         | [/session/:sessionId/element/:id/attribute/:name](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidattribute/:name)     | Supported          | 10240             |
-| GET         | [/session/:sessionId/element/:id/equals/:other](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidequals/:other)         | Supported          | 10586             |
-| GET         | [/session/:sessionId/element/:id/displayed](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementiddisplayed)                 | Supported          | 10240             |
-| GET         | [/session/:sessionId/element/:id/location](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidlocation)                   | Supported          | 10586             |
-| GET         | [/session/:sessionId/element/:id/location_in_view](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidlocation_in_view)   | Supported          | 10586             |
-| GET         | [/session/:sessionId/element/:id/size](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidsize)                           | Supported          | 10586             |
-| GET         | [/session/:sessionId/element/:id/css/:propertyName](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidcss/:propertyName) | Supported          | 10240             |
-| GET         | [/session/:sessionId/orientation](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidorientation)                                  | Not&nbsp;Supported | N/A               |
-| POST        | [/session/:sessionId/orientation](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidorientation)                                  | Not&nbsp;Supported | N/A               |
-| GET         | [/session/:sessionId/alert_text](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidalert_text)                                    | Supported          | 10240             |
-| POST        | [/session/:sessionId/alert_text](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidalert_text)                                    | Supported          | 10586             |
-| POST        | [/session/:sessionId/accept_alert](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidaccept_alert)                                | Supported          | 10240             |
-| POST        | [/session/:sessionId/dismiss_alert](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessioniddismiss_alert)                              | Supported          | 10240             |
-| POST        | [/session/:sessionId/moveto](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidmoveto)                                            | Supported          | 10586             |
-| POST        | [/session/:sessionId/click](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidclick)                                              | Supported          | 10240             |
-| POST        | [/session/:sessionId/buttondown](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidbuttondown)                                    | Supported          | 10586             |
-| POST        | [/session/:sessionId/buttonup](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidbuttonup)                                        | Supported          | 10586             |
-| POST        | [/session/:sessionId/doubleclick](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessioniddoubleclick)                                  | Supported          | 10586             |
-| POST        | [/session/:sessionId/touch/click](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtouchclick)                                   | Not&nbsp;Supported | N/A               |
-| POST        | [/session/:sessionId/touch/down](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtouchdown)                                     | Not&nbsp;Supported | N/A               |
-| POST        | [/session/:sessionId/touch/up](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtouchup)                                         | Not&nbsp;Supported | N/A               |
-| POST        | [/session/:sessionId/touch/move](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtouchmove)                                     | Not&nbsp;Supported | N/A               |
-| POST        | [/session/:sessionId/touch/scroll](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtouchscroll)                                 | Not&nbsp;Supported | N/A               |
-| POST        | [/session/:sessionId/touch/scroll](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtouchscroll-1)                               | Not&nbsp;Supported | N/A               |
-| POST        | [/session/:sessionId/touch/doubleclick](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtouchdoubleclick)                       | Not&nbsp;Supported | N/A               |
-| POST        | [/session/:sessionId/touch/longclick](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtouchlongclick)                           | Not&nbsp;Supported | N/A               |
-| POST        | [/session/:sessionId/touch/flick](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtouchflick)                                   | Not&nbsp;Supported | N/A               |
-| POST        | [/session/:sessionId/touch/flick](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtouchflick-1)                                 | Not&nbsp;Supported | N/A               |
-| GET         | [/session/:sessionId/location](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidlocation)                                        | Supported          | 10586             |
-| POST        | [/session/:sessionId/location](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidlocation)                                        | Supported          | 10586             |
-| GET         | [/session/:sessionId/local_storage](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidlocal_storage)                              | Supported          | 10586             |
-| POST        | [/session/:sessionId/local_storage](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidlocal_storage)                              | Supported          | 10586             |
-| DELETE      | [/session/:sessionId/local_storage](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidlocal_storage)                              | Supported          | 10586             |
-| GET         | [/session/:sessionId/local_storage/key/:key](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidlocal_storagekeykey)               | Supported          | 10586             |
-| DELETE      | [/session/:sessionId/local_storage/key/:key](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidlocal_storagekeykey)               | Supported          | 10586             |
-| GET         | [/session/:sessionId/local_storage/size](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidlocal_storagesize)                     | Supported          | 10586             |
-| GET         | [/session/:sessionId/session_storage](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidsession_storage)                          | Supported          | 10586             |
-| POST        | [/session/:sessionId/session_storage](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidsession_storage)                          | Supported          | 10586             |
-| DELETE      | [/session/:sessionId/session_storage](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidsession_storage)                          | Supported          | 10586             |
-| GET         | [/session/:sessionId/session_storage/key/:key](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidsession_storagekeykey)           | Supported          | 10586             |
-| DELETE      | [/session/:sessionId/session_storage/key/:key](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidsession_storagekeykey)           | Supported          | 10586             |
-| GET         | [/session/:sessionId/session_storage/size](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidsession_storagesize)                 | Supported          | 10586             |
-| GET         | [/session/:sessionId/log](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidlog)                                                  | Not&nbsp;Supported | N/A               |
-| GET         | [/session/:sessionId/log/types](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidlogtypes)                                       | Not&nbsp;Supported | N/A               |
-| GET         | [/session/:sessionId/application_cache/status](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidapplication_cachestatus)         | Supported          | 10586             |  
+| GET         | [/Status](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#status)                                                                               | Unterstützt          | 10240             |
+| POST        | [/session](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#session-1)                                                                           | Unterstützt          | 10240             |
+| GET         | [/sessions](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessions)                                                                           | Unterstützt          | 10240             |
+| GET         | [/Session/: SessionID](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionid)                                                         | Unterstützt          | 10240             |
+| DELETE      | [/Session/: SessionID](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionid)                                                         | Unterstützt          | 10240             |
+| POST        | [/Session/: SessionID/Timeouts](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtimeouts)                                        | Unterstützt          | 10240             |
+| POST        | [/Session/: SessionID/Timeouts/async_script](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtimeoutsasync_script)               | Nicht &nbsp; unterstützt | n.a.               |
+| POST        | [/Session/: SessionID/Timeouts/implicit_wait](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtimeoutsimplicit_wait)             | Unterstützt          | 10586             |
+| GET         | [/Session/: SessionID/window_handle](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidwindow_handle)                              | Unterstützt          | 10586             |
+| GET         | [/Session/: SessionID/window_handles](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidwindow_handles)                            | Unterstützt          | 10586             |
+| GET         | [/Session/: SessionID/URL](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidurl)                                                  | Unterstützt          | 10240             |
+| POST        | [/Session/: SessionID/URL](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidurl)                                                  | Unterstützt          | 10240             |
+| POST        | [/Session/: SessionID/Forward](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidforward)                                          | Unterstützt          | 10240             |
+| POST        | [/Session/: SessionID/zurück](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidback)                                                | Unterstützt          | 10240             |
+| POST        | [/Session/: SessionID/Refresh](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidrefresh)                                          | Unterstützt          | 10240             |
+| POST        | [/Session/: SessionID/Execute](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidexecute)                                          | Unterstützt          | 10240             |
+| POST        | [/Session/: SessionID/execute_async](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidexecute_async)                              | Unterstützt          | 10586             |
+| GET         | [/Session/: SessionID/Screenshot](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidscreenshot)                                    | Unterstützt          | 10240             |
+| GET         | [/Session/: SessionID/IME/available_engines](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidimeavailable_engines)               | Nicht &nbsp; unterstützt | n.a.               |
+| GET         | [/Session/: SessionID/IME/active_engine](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidimeactive_engine)                       | Nicht &nbsp; unterstützt | n.a.               |
+| GET         | [/Session/: SessionID/IME/aktiviert](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidimeactivated)                               | Nicht &nbsp; unterstützt | n.a.               |
+| POST        | [/Session/: SessionID/IME/Deactivate](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidimedeactivate)                             | Nicht &nbsp; unterstützt | n.a.               |
+| POST        | [/Session/: SessionID/IME/Activate](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidimeactivate)                                 | Nicht &nbsp; unterstützt | n.a.               |
+| POST        | [/Session/: SessionID/Frame](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidframe)                                              | Unterstützt          | 10586             |
+| POST        | [/Session/: SessionID/Frame/übergeordnetes Element](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidframeparent)                                 | Unterstützt          | 10586             |
+| POST        | [/Session/: SessionID/Fenster](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidwindow)                                            | Unterstützt          | 10586             |
+| DELETE      | [/Session/: SessionID/Fenster](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidwindow)                                            | Unterstützt          | 10586             |
+| POST        | [/Session/: SessionID/Window/: windowHandle/Größe](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidwindowwindowhandlesize)         | Unterstützt          | 10586             |
+| GET         | [/Session/: SessionID/Window/: windowHandle/Größe](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidwindowwindowhandlesize)         | Unterstützt          | 10586             |
+| POST        | [/Session/: SessionID/Window/: windowHandle/Position](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidwindowwindowhandleposition) | Unterstützt          | 10586             |
+| GET         | [/Session/: SessionID/Window/: windowHandle/Position](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidwindowwindowhandleposition) | Unterstützt          | 10586             |
+| GET         | [/Session/: SessionID/Window/: windowHandle/maximieren](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidwindowwindowhandlemaximize) | Unterstützt          | 10586             |
+| GET         | [/Session/: SessionID/Cookie](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidcookie)                                            | Unterstützt          | 10586             |
+| POST        | [/Session/: SessionID/Cookie](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidcookie)                                            | Unterstützt          | 10240             |
+| DELETE      | [/Session/: SessionID/Cookie](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidcookie)                                            | Unterstützt          | 10586             |
+| DELETE      | [/Session/: SessionID/Cookie/: Name](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidcookiename)                                  | Unterstützt          | 10240             |
+| GET         | [/Session/: SessionID/Quelle](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidsource)                                            | Unterstützt          | 10586             |
+| GET         | [/Session/: SessionID}/Titel](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtitle)                                             | Unterstützt          | 10240             |
+| POST        | [/Session/: SessionID/Element](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelement)                                          | Unterstützt          | 10586             |
+| POST        | [/Session/: SessionID/Elemente](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelements)                                        | Unterstützt          | 10586             |
+| POST        | [/Session/: SessionID/Element/aktiv](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementactive)                             | Unterstützt          | 10586             |
+| GET         | [/Session/: SessionID/Element/: ID](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementid)                                    | Nicht &nbsp; unterstützt | n.a.               |
+| POST        | [/Session/: SessionID/Element/: ID/Element](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidelement)                     | Unterstützt          | 10586             |
+| POST        | [/Session/: SessionID/Element/: ID/Elemente](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidelements)                   | Unterstützt          | 10586             |
+| POST        | [/Session/: SessionID/Element/: ID/Click](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidclick)                         | Unterstützt          | 10240             |
+| POST        | [/Session/: SessionID/Element/: ID/Submit](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidsubmit)                       | Unterstützt          | 10586             |
+| GET         | [/Session/: SessionID/Element/: ID/Text](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidtext)                           | Unterstützt          | 10240             |
+| POST        | [/Session/: SessionID/Element/: ID/Wert](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidvalue)                         | Unterstützt          | 10240             |
+| POST        | [/Session/: SessionID/Keys](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidkeys)                                                | Unterstützt          | 10586             |
+| GET         | [/Session/: SessionID/Element/: ID/Name](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidname)                           | Unterstützt          | 10240             |
+| POST        | [/Session/: SessionID/Element/: ID/Clear](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidclear)                         | Unterstützt          | 10240             |
+| GET         | [/Session/: SessionID/Element/: ID/ausgewählt](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidselected)                   | Unterstützt          | 10240             |
+| GET         | [/Session/: SessionID/Element/: ID/aktiviert](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidenabled)                     | Unterstützt          | 10240             |
+| GET         | [/Session/: SessionID/Element/: ID/Attribut/: Name](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidattribute/:name)     | Unterstützt          | 10240             |
+| GET         | [/Session/: SessionID/Element/: ID/entspricht/: anderes](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidequals/:other)         | Unterstützt          | 10586             |
+| GET         | [/Session/: SessionID/Element/: ID/angezeigt](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementiddisplayed)                 | Unterstützt          | 10240             |
+| GET         | [/Session/: SessionID/Element/: ID/Ort](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidlocation)                   | Unterstützt          | 10586             |
+| GET         | [/Session/: SessionID/Element/: ID/location_in_view](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidlocation_in_view)   | Unterstützt          | 10586             |
+| GET         | [/Session/: SessionID/Element/: ID/Größe](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidsize)                           | Unterstützt          | 10586             |
+| GET         | [/Session/: SessionID/Element/: ID/CSS/:p ropertyname](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidcss/:propertyName) | Unterstützt          | 10240             |
+| GET         | [/Session/: SessionID/Ausrichtung](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidorientation)                                  | Nicht &nbsp; unterstützt | n.a.               |
+| POST        | [/Session/: SessionID/Ausrichtung](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidorientation)                                  | Nicht &nbsp; unterstützt | n.a.               |
+| GET         | [/Session/: SessionID/alert_text](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidalert_text)                                    | Unterstützt          | 10240             |
+| POST        | [/Session/: SessionID/alert_text](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidalert_text)                                    | Unterstützt          | 10586             |
+| POST        | [/Session/: SessionID/accept_alert](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidaccept_alert)                                | Unterstützt          | 10240             |
+| POST        | [/Session/: SessionID/dismiss_alert](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessioniddismiss_alert)                              | Unterstützt          | 10240             |
+| POST        | [/Session/: SessionID/Schalt](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidmoveto)                                            | Unterstützt          | 10586             |
+| POST        | [/Session/: SessionID/klicken](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidclick)                                              | Unterstützt          | 10240             |
+| POST        | [/Session/: SessionID/Button down](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidbuttondown)                                    | Unterstützt          | 10586             |
+| POST        | [/Session/: SessionID/BUTTONUP](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidbuttonup)                                        | Unterstützt          | 10586             |
+| POST        | [/Session/: SessionID/DoubleClick](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessioniddoubleclick)                                  | Unterstützt          | 10586             |
+| POST        | [/Session/: SessionID/tippen/klicken](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtouchclick)                                   | Nicht &nbsp; unterstützt | n.a.               |
+| POST        | [/Session/: SessionID/Touch/Down](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtouchdown)                                     | Nicht &nbsp; unterstützt | n.a.               |
+| POST        | [/Session/: SessionID/Touch/up](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtouchup)                                         | Nicht &nbsp; unterstützt | n.a.               |
+| POST        | [/Session/: SessionID/Touch/Move](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtouchmove)                                     | Nicht &nbsp; unterstützt | n.a.               |
+| POST        | [/Session/: SessionID/Touch/Scroll](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtouchscroll)                                 | Nicht &nbsp; unterstützt | n.a.               |
+| POST        | [/Session/: SessionID/Touch/Scroll](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtouchscroll-1)                               | Nicht &nbsp; unterstützt | n.a.               |
+| POST        | [/Session/: SessionID/Touch/DoubleClick](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtouchdoubleclick)                       | Nicht &nbsp; unterstützt | n.a.               |
+| POST        | [/Session/: SessionID/Touch/longclick](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtouchlongclick)                           | Nicht &nbsp; unterstützt | n.a.               |
+| POST        | [/Session/: SessionID/Touch/Flick](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtouchflick)                                   | Nicht &nbsp; unterstützt | n.a.               |
+| POST        | [/Session/: SessionID/Touch/Flick](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtouchflick-1)                                 | Nicht &nbsp; unterstützt | n.a.               |
+| GET         | [/Session/: SessionID/Ort](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidlocation)                                        | Unterstützt          | 10586             |
+| POST        | [/Session/: SessionID/Ort](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidlocation)                                        | Unterstützt          | 10586             |
+| GET         | [/Session/: SessionID/local_storage](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidlocal_storage)                              | Unterstützt          | 10586             |
+| POST        | [/Session/: SessionID/local_storage](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidlocal_storage)                              | Unterstützt          | 10586             |
+| DELETE      | [/Session/: SessionID/local_storage](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidlocal_storage)                              | Unterstützt          | 10586             |
+| GET         | [/Session/: SessionID/local_storage/Key/: Key](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidlocal_storagekeykey)               | Unterstützt          | 10586             |
+| DELETE      | [/Session/: SessionID/local_storage/Key/: Key](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidlocal_storagekeykey)               | Unterstützt          | 10586             |
+| GET         | [/Session/: SessionID/local_storage/size](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidlocal_storagesize)                     | Unterstützt          | 10586             |
+| GET         | [/Session/: SessionID/session_storage](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidsession_storage)                          | Unterstützt          | 10586             |
+| POST        | [/Session/: SessionID/session_storage](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidsession_storage)                          | Unterstützt          | 10586             |
+| DELETE      | [/Session/: SessionID/session_storage](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidsession_storage)                          | Unterstützt          | 10586             |
+| GET         | [/Session/: SessionID/session_storage/Key/: Key](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidsession_storagekeykey)           | Unterstützt          | 10586             |
+| DELETE      | [/Session/: SessionID/session_storage/Key/: Key](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidsession_storagekeykey)           | Unterstützt          | 10586             |
+| GET         | [/Session/: SessionID/session_storage/size](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidsession_storagesize)                 | Unterstützt          | 10586             |
+| GET         | [/Session/: SessionID/Log](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidlog)                                                  | Nicht &nbsp; unterstützt | n.a.               |
+| GET         | [/Session/: SessionID/Log/Typen](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidlogtypes)                                       | Nicht &nbsp; unterstützt | n.a.               |
+| GET         | [/Session/: SessionID/application_cache/Status](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidapplication_cachestatus)         | Unterstützt          | 10586             |  

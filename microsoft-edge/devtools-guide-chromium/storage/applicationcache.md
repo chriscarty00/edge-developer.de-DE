@@ -1,12 +1,12 @@
 ---
-description: How to view Application Cache data from the Application panel of Microsoft Edge DevTools.
-title: View Application Cache Data With Microsoft Edge DevTools
+description: Informationen zum Anzeigen von Anwendungs Cache Daten aus dem Anwendungs Panel von Microsoft Edge devtools
+title: Anzeigen von Anwendungs Cache Daten mit Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
 ms.openlocfilehash: ed742f24900786c3c5b31ec2a026ddbf9d16ccb6
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -28,65 +28,65 @@ ms.locfileid: "10993324"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# View Application Cache data with Microsoft Edge DevTools  
+# Anzeigen von Anwendungs Cache Daten mit Microsoft Edge devtools  
 
 > [!WARNING]
-> The Application Cache API is [being removed from the web platform][HTMLStandardOfflineWebApplications].  
+> Die Anwendungs Cache-API wird [aus der Web-Plattform entfernt][HTMLStandardOfflineWebApplications].  
 
-This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to inspect [Application Cache][MDNWebAPIsWindowApplicationCache] resources.  
+Dieser Leitfaden zeigt Ihnen, wie Sie [Microsoft Edge devtools][MicrosoftEdgeDevTools] verwenden, um [Anwendungs Cache][MDNWebAPIsWindowApplicationCache] Ressourcen zu überprüfen.  
 
-## View Application Cache data  
+## Anzeigen von Anwendungs Cache Daten  
 
-1.  Select the **Sources** tab to open the **Sources** panel.  The **Manifest** pane usually opens by default.  
+1.  Wählen Sie die Registerkarte **Quellen** aus, um das **Quellen** Panel zu öffnen.  Der Bereich **Manifest** wird normalerweise standardmäßig geöffnet.  
     
-    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-manifest.msft.png":::
-       The **Manifest** pane  
+    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="Bereich ' Manifest '" lightbox="../media/storage-application-manifest.msft.png":::
+       Bereich ' **Manifest** '  
     :::image-end:::  
 
-1.  Expand the **Application Cache** section and choose a cache to view the resources.  
+1.  Erweitern Sie den Abschnitt **Anwendungscache** , und wählen Sie einen Cache aus, um die Ressourcen anzuzeigen.  
     
-    :::image type="complex" source="../media/storage-cache-pane-cache-storage-resources.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-cache-pane-cache-storage-resources.msft.png":::
-       The **Application Cache** pane  
+    :::image type="complex" source="../media/storage-cache-pane-cache-storage-resources.msft.png" alt-text="Bereich ' Manifest '" lightbox="../media/storage-cache-pane-cache-storage-resources.msft.png":::
+       Der **Anwendungs Cache** Bereich  
     :::image-end:::  
 
-Each row of the table represents a cached resource.  
+Jede Zeile der Tabelle stellt eine zwischengespeicherte Ressource dar.  
 
-The **Type** column represents the [category of the resource][MDNHTMLResourcesInAnApplicationCache].  
+Die Spalte **Typ** steht [für die Kategorie der Ressource][MDNHTMLResourcesInAnApplicationCache].  
 
-| Category | Details |  
+| Kategorie | Details |  
 |:--- |:--- |  
-| `Explicit` | This resource was explicitly listed in the manifest. |  
-| `Fallback` | The URL is a fallback for another resource.  The URL of the other resource is not listed in DevTools. |  
-| `Master` | The `manifest` attribute on the resource indicates that the cache is the parent of the resource. |  
-| `Network` | The manifest specified that the resource must come from the network. |  
+| `Explicit` | Diese Ressource wurde explizit im Manifest aufgeführt. |  
+| `Fallback` | Die URL ist ein Fallback für eine andere Ressource.  Die URL der anderen Ressource ist in devtools nicht aufgeführt. |  
+| `Master` | Das `manifest` Attribut der Ressource gibt an, dass der Cache das übergeordnete Element der Ressource ist. |  
+| `Network` | Das Manifest hat angegeben, dass die Ressource aus dem Netzwerk stammen muss. |  
 
 <!--todo:  replace "Master" phrasing if possible.  -->  
 
-At the bottom of the table there are status icons indicating your network connection and the status of the **Application Cache**.  The **Application Cache** may have the following states.  
+Am unteren Rand der Tabelle befinden sich Statussymbole, die Ihre Netzwerkverbindung und den Status des **Anwendungscaches**angeben.  Der **Anwendungs Cache** kann die folgenden Zustände aufweisen.  
 
-| State | Details |  
+| Status | Details |  
 |:--- |:--- |  
-| `CHECKING` | The manifest is being fetched and checked for updates. |  
-| `DOWNLOADING` | Resources are being added to the cache. |  
-| `IDLE` | The cache has no new changes. |  
-| `OBSOLETE` | The cache is being deleted. |  
-| `UPDATEREADY` |  A new version of the cache is available. |  
+| `CHECKING` | Das Manifest wird abgerufen und auf Updates überprüft. |  
+| `DOWNLOADING` | Ressourcen werden dem Cache hinzugefügt. |  
+| `IDLE` | Der Cache hat keine neuen Änderungen. |  
+| `OBSOLETE` | Der Cache wird gelöscht. |  
+| `UPDATEREADY` |  Eine neue Version des Caches ist verfügbar. |  
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chrom)-Entwickler Tools | Microsoft docs"  
 
-[HTMLStandardOfflineWebApplications]: https://html.spec.whatwg.org/multipage/offline.html#offline "Offline Web applications - HTML Standard"  
+[HTMLStandardOfflineWebApplications]: https://html.spec.whatwg.org/multipage/offline.html#offline "Offline-Webanwendungen – HTML-Standard"  
 
-[MDNHTMLResourcesInAnApplicationCache]: https://developer.mozilla.org/docs/Web/HTML/Using_the_application_cache#Resources_in_an_application_cache "Resources in an application cache | MDN"  
-[MDNWebAPIsWindowApplicationCache]: https://developer.mozilla.org/docs/Web/API/Window/applicationCache "Window.applicationCache - Web APIs | MDN"  
+[MDNHTMLResourcesInAnApplicationCache]: https://developer.mozilla.org/docs/Web/HTML/Using_the_application_cache#Resources_in_an_application_cache "Ressourcen in einem Anwendungscache | MDN"  
+[MDNWebAPIsWindowApplicationCache]: https://developer.mozilla.org/docs/Web/API/Window/applicationCache "Window. applicationCache-Web-APIs | MDN"  
 
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/storage/applicationcache) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
+> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
+> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/storage/applicationcache) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
 
-[![Creative Commons License][CCby4Image]][CCA4IL]  
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
+[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

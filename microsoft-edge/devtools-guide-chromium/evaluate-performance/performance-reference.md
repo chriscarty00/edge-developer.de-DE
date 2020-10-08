@@ -1,12 +1,12 @@
 ---
-description: The timeline events mode displays all events triggered while making a recording.  Use the timeline event reference to learn more about each timeline event type.
-title: Timeline Event Reference
+description: Im Modus Zeitachsenereignisse werden alle Ereignisse angezeigt, die während der Aufzeichnung ausgelöst werden.  Verwenden Sie den Zeitachsen-Ereignisverweis, um mehr über die einzelnen Zeitachse-Ereignistypen zu erfahren.
+title: Ereignisreferenz der Zeitachse
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
 ms.openlocfilehash: 624035636e2231cf1f3cd1e2ba0fdda7e2e4fa00
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -32,122 +32,122 @@ ms.locfileid: "10992848"
 
 
 
-# Timeline Event Reference   
+# Ereignisreferenz der Zeitachse   
 
 
 
 
-The timeline events mode displays all events triggered while making a recording.  Use the timeline event reference to learn more about each timeline event type.  
+Im Modus Zeitachsenereignisse werden alle Ereignisse angezeigt, die während der Aufzeichnung ausgelöst werden.  Verwenden Sie den Zeitachsen-Ereignisverweis, um mehr über die einzelnen Zeitachse-Ereignistypen zu erfahren.  
 
-## Common timeline event properties  
+## Allgemeine zeitachsenereignis Eigenschaften  
 
-Certain details are present in events of all types, while some only apply to certain event types.  This section lists properties common to different event types.  Properties specific to certain event types are listed in the references for those event types that follow.  
+Bestimmte Details sind in Ereignissen aller Typen vorhanden, während einige nur für bestimmte Ereignistypen gelten.  In diesem Abschnitt werden Eigenschaften aufgelistet, die für unterschiedliche Ereignistypen üblich sind.  Eigenschaften, die für bestimmte Ereignistypen spezifisch sind, werden in den verweisen für die folgenden Ereignistypen aufgeführt.  
 
-| Property | When is it shown |  
+| Eigenschaft | Wann wird angezeigt |  
 |:--- |:--- |  
-| Aggregated time | For events with **nested events**, the time taken by each category of events. |  
-| Call Stack | For events with **child events**, the time taken by each category of events. |  
-| CPU time | How much CPU time the recorded event took. |  
-| Details | Other details about the event. |  
-| Duration \(at time-stamp\) | How long it took the event with all of its children to complete; timestamp is the time at which the event occurred, relative to when the recording started. |  
-| Self time | How long the event took without any of its children. |  
-| Used Heap Size | Amount of memory being used by the application when the event was recorded, and the delta \(+/-\) change in used heap size since the last sampling. |  
+| Aggregierte Zeit | Für Ereignisse mit **geschachtelten Ereignissen**die Zeit, die für jede Kategorie von Ereignissen übernommen wurde. |  
+| Aufrufliste | Für Ereignisse mit **untergeordneten Ereignissen**die Zeit, die von jeder Kategorie von Ereignissen genommen wird. |  
+| CPU-Zeit | Wie viel CPU-Zeit das aufgezeichnete Ereignis beansprucht hat. |  
+| Details | Weitere Details zum Ereignis. |  
+| Dauer \ (zum Zeitstempel \) | Wie lange das Ereignis dauerte, bis alle untergeordneten Elemente abgeschlossen waren; timestamp ist der Zeitpunkt, zu dem das Ereignis aufgetreten ist, relativ zu dem Zeitpunkt, zu dem die Aufzeichnung gestartet wurde. |  
+| Selbst Zeit | Die Dauer des Ereignisses ohne untergeordnete Elemente. |  
+| Verwendete Heapgröße | Die Menge des Arbeitsspeichers, der von der Anwendung beim Aufzeichnen des Ereignisses verwendet wird, und die Änderung der verwendeten Heapgröße seit dem letzten Sampling in Delta \ (+/-\). |  
 
 <!--todo: add nested and child events (timelinetool) section when available -->  
 
-## Loading events  
+## Laden von Ereignissen  
 
-This section lists events that belong to Loading category and their properties.  
+In diesem Abschnitt werden Ereignisse aufgelistet, die zu Lade Kategorie und deren Eigenschaften gehören.  
 
-| Event | Description |  
+| Ereignis | Beschreibung |  
 |:--- |:--- |  
-| Parse HTML |  Microsoft Edge ran the HTML parsing algorithm. |  
-| Finish Loading |  A network request completed. |  
-| Receive Data |  Data for a request was received.  There are one or more Receive Data events. |  
-| Receive Response |  The initial HTTP response from a request. |  
-| Send Request |  A network request has been sent. |  
+| HTML analysieren |  Microsoft Edge hat den HTML-Analyse Algorithmus ausgeführt. |  
+| Fertig stellen des Ladens |  Eine Netzwerkanforderung wurde abgeschlossen. |  
+| Empfangen von Daten |  Die Daten für eine Anforderung wurden empfangen.  Es gibt mindestens ein Receive-Datenereignis. |  
+| Antwort empfangen |  Die anfängliche HTTP-Antwort einer Anforderung. |  
+| Anfrage senden |  Eine Netzwerkanforderung wurde gesendet. |  
 
-### Loading event properties  
+### Laden von Ereigniseigenschaften  
 
-| Property | Description |  
+| Eigenschaft | Beschreibung |  
 |:--- |:--- |  
-| Resource | The URL of the requested resource. |  
-| Preview | Preview of the requested resource \(images only\). |  
-| Request Method | HTTP method used for the request \(`GET` or `POST`, for example\). |  
-| Status Code | HTTP response code. |  
-| MIME Type | MIME type of the requested resource. |  
-| Encoded Data Length | Length of requested resource in bytes. |  
+| Ressource | Die URL der angeforderten Ressource. |  
+| Preview | Vorschau der angeforderten Ressource \ (nur Bilder \). |  
+| Request-Methode | Die für die Anforderung verwendete HTTP-Methode \ ( `GET` oder Beispiels `POST` Weise \). |  
+| Status Code | HTTP-Antwortcode. |  
+| MIME-Typ | Der MIME-Typ der angeforderten Ressource. |  
+| Codierte Datenlänge | Die Länge der angeforderten Ressource in Bytes. |  
 
-## Scripting events  
+## Skripting-Ereignisse  
 
-This section lists events that belong to the Scripting category and their properties.  
+In diesem Abschnitt werden Ereignisse aufgelistet, die zu der Kategorie Skripting gehören, und deren Eigenschaften.  
 
-| Event | Description |  
+| Ereignis | Beschreibung |  
 |:--- |:--- |  
-| Animation Frame Fired | A scheduled animation frame fired, and its callback handler invoked. |  
-| Cancel Animation Frame |  A scheduled animation frame was canceled. |  
-| GC Event |  Garbage collection occurred. |  
-| DOMContentLoaded |  The [DOMContentLoaded event][MDNWindowDOMContentLoadedEvent] was fired by the browser.  This event is fired when all of the page's DOM content has been loaded and parsed. |  
-| Evaluate Script | A script was evaluated. |  
-| Event | A JavaScript event \(for example, `mousedown`, or `key`\). |  
-| Function Call | A top-level JavaScript function call was made \(only appears when browser enters JavaScript engine\). |  
-| Install Timer | A timer was created with [setInterval()][MDNWindowOrWorkerGlobalScopeSetInterval] or [setTimeout()][MDNWindowOrWorkerGlobalScopeSetTimeout]. |  
-| Request Animation Frame | A `requestAnimationFrame()` call scheduled a new frame. |  
-| Remove Timer | A previously created timer was cleared. |  
-| Time |  A script called [console.time()][ConsoleApiTime]. |  
-| Time End | A script called [console.timeEnd()][ConsoleApiTimeEnd]. |  
-| Timer Fired | A timer fired that was scheduled with `setInterval()` or `setTimeout()`. |  
-| XHR Ready State Change | The ready state of an XMLHTTPRequest changed. |  
-| XHR Load | An `XMLHTTPRequest` finished loading. |  
+| Animations Frame gebrannt | Ein geplanter Animationsframe wird ausgelöst, und der zugehörige Rückrufhandler wird aufgerufen. |  
+| Animations Frame Abbrechen |  Ein geplanter Animationsframe wurde abgebrochen. |  
+| GC-Ereignis |  Garbage Collection ist aufgetreten. |  
+| DOMContentLoaded |  Das [DOMContentLoaded-Ereignis][MDNWindowDOMContentLoadedEvent] wurde vom Browser ausgelöst.  Dieses Ereignis wird ausgelöst, wenn der gesamte Dom-Inhalt der Seite geladen und analysiert wurde. |  
+| Auswerten des Skripts | Ein Skript wurde ausgewertet. |  
+| Ereignis | Ein JavaScript-Ereignis \ (Beispiel: `mousedown` oder `key` \). |  
+| Funktionsaufruf | Es wurde ein JavaScript-Funktionsaufruf der obersten Ebene durchgeführt \ (wird nur angezeigt, wenn der Browser JavaScript-Modul wechselt). |  
+| Timer installieren | Ein Zeitgeber wurde mit [setInterval ()][MDNWindowOrWorkerGlobalScopeSetInterval] oder [setTimeout ()][MDNWindowOrWorkerGlobalScopeSetTimeout]erstellt. |  
+| Animationsrahmen anfordern | Ein `requestAnimationFrame()` Anruf hat einen neuen Frame geplant. |  
+| Timer entfernen | Ein zuvor erstellter Zeitgeber wurde gelöscht. |  
+| Zeit |  Ein Skript mit dem Namen [Console. time ()][ConsoleApiTime]. |  
+| Endzeit | Ein Skript mit dem Namen [Console. timeEnd ()][ConsoleApiTimeEnd]. |  
+| Timer ausgelöst | Ein Timer, der mit oder geplant `setInterval()` wurde `setTimeout()` . |  
+| XMLHttpRequest Ready-Statusänderung | Der Zustand "Ready" eines XMLHttpRequest wurde geändert. |  
+| XMLHttpRequest Load | Ein `XMLHTTPRequest` beendeten Ladevorgang. |  
 
-### Scripting event properties  
+### Skripting-Ereigniseigenschaften  
 
-| Property | Description |  
+| Eigenschaft | Beschreibung |  
 |:--- |:--- |  
-| Timer ID | The timer ID. |  
-| Timeout | The timeout specified by the timer. |  
-| Repeats | Boolean that specifies if the timer repeats. |  
-| Function Call | A function that was invoked. |  
+| Timer-ID | Die Timer-ID. |  
+| Timeout | Das vom Zeitgeber angegebene Timeout. |  
+| Wiederholt | Boolescher Wert, der angibt, ob der Zeitgeber wiederholt wird. |  
+| Funktionsaufruf | Eine Funktion, die aufgerufen wurde. |  
 
-## Rendering events  
+## Rendern von Ereignissen  
 
-This section lists events that belong to Rendering category and their properties.  
+In diesem Abschnitt werden Ereignisse aufgelistet, die zu einer Rendering-Kategorie und deren Eigenschaften gehören.  
 
-| Event | Description |  
+| Ereignis | Beschreibung |  
 |:--- |:--- |  
-| Invalidate layout | The page layout was invalidated by a DOM change. |  
-| Layout | A page layout was completed. |  
-| Recalculate style | Microsoft Edge recalculated element styles. |  
-| Scroll | The content of nested view was scrolled. |  
+| Ungültiges Layout | Das Seitenlayout wurde durch eine DOM-Änderung ungültig. |  
+| Layout | Ein Seitenlayout wurde abgeschlossen. |  
+| Neuberechnen des Formats | Neu berechnete Microsoft Edge-Element Formatvorlagen |  
+| Scroll | Der Inhalt der geschachtelten Ansicht wurde gescrollt. |  
 
-### Rendering event properties  
+### Rendern von Ereigniseigenschaften  
 
-| Property | Description |  
+| Eigenschaft | Beschreibung |  
 |:--- |:--- |  
-| Layout invalidated | For Layout records, the stack trace of the code that caused the layout to be invalidated. |  
-| Nodes that need layout | For Layout records, the number of nodes that were marked as needing layout before the relayout started.  These are normally those nodes that were invalidated by developer code, plus a path upward to relayout root. |  
-| Layout tree size | For Layout records, the total number of nodes under the relayout root \(the node that Microsoft Edge starts the relayout\). |  
-| Layout scope | Possible values are `Partial` \(the re-layout boundary is a portion of the DOM\) or `Whole document`. |  
-| Elements affected | For Recalculate style records, the number of elements affected by a style recalculation. |  
-| Styles invalidated | For Recalculate style records, provides the stack trace of the code that caused the style invalidation. |  
+| Layout ungültig | Bei Layout-Datensätzen ist die Stapelüberwachung des Codes, der das Layout verursacht hat, ungültig. |  
+| Knoten, die Layout benötigen | Bei Layout-Datensätzen wird die Anzahl der Knoten, die vor dem Neulayout als Layout erforderlich markiert wurden, gestartet.  In der Regel handelt es sich um die Knoten, die vom Entwickler Code für ungültig erklärt wurden, sowie einen Pfad aufwärts zum Neulayout-Stamm. |  
+| Layout-Strukturgröße | Bei Layout-Datensätzen die Gesamtzahl der Knoten unter dem umlayout-Stamm \ (der Knoten, mit dem Microsoft Edge das Neulayout startet \). |  
+| Bereich ' Layout ' | Mögliche Werte sind `Partial` \ (die Umgrenzung des Re-Layouts ist ein Teil des DOM \) oder `Whole document` . |  
+| Betroffene Elemente | Zum Neuberechnen von Formatvorlagen Datensätzen die Anzahl der Elemente, die von einer Neuberechnung des Formats betroffen sind. |  
+| Formatvorlagen ungültig | Zum Neuberechnen von Formatvorlagen Datensätzen wird die Stapelüberwachung des Codes bereitgestellt, der die Formatvorlage ungültig wurde. |  
 
-## Painting events  
+## Malen von Ereignissen  
 
-This section lists events that belong to Painting category and their properties.  
+In diesem Abschnitt werden Ereignisse aufgelistet, die zur Kategorie "Malerei" und deren Eigenschaften gehören.  
 
-| Event | Description |  
+| Ereignis | Beschreibung |  
 |:--- |:--- |  
-| Composite Layers | The composited image layers for the Microsoft Edge rendering engine. |  
-| Image Decode | An image resource was decoded. |  
-| Image Resize | An image was resized from its native dimensions. |  
-| Paint | Composited layers were painted to a region of the display.  Hovering over a Paint record highlights the region of the display that was updated. |  
+| Composite-Layer | Die zusammengesetzten Bildebenen für das Microsoft-Edge-Rendering-Modul |  
+| Bild decodieren | Eine Bildressource wurde dekodiert. |  
+| Bildgröße | Die Größe eines Bilds wurde aus den systemeigenen Dimensionen geändert. |  
+| Paint | Zusammengesetzte Ebenen wurden in einen Bereich der Anzeige gemalt.  Wenn Sie den Mauszeiger über einen Paint-Eintrag bewegen, wird der Bereich der Anzeige, der aktualisiert wurde, hervorgehoben. |  
 
-### Painting event properties  
+### Zeichnen von Ereigniseigenschaften  
 
-| Property | Beschreibung |  
+| Eigenschaft | Beschreibung |  
 |:--- |:--- |  
-| Location | For Paint events, the x and y coordinates of the paint rectangle. |  
-| Dimensions | For Paint events, the height and width of the painted region. |  
+| Pfad | Für Paint-Ereignisse die x-und y-Koordinaten des Paint-Rechtecks. |  
+| Dimensionen | Für Paint-Ereignisse die Höhe und Breite des bemalten Bereichs. |  
 
  
 
@@ -157,20 +157,20 @@ This section lists events that belong to Painting category and their properties.
 
 <!-- links -->
 
-[ConsoleApiTime]: /microsoft-edge/devtools-guide-chromium/console/api#time "time - Console API Reference"  
-[ConsoleApiTimeEnd]: /microsoft-edge/devtools-guide-chromium/console/api#timeend "timeEnd - Console API Reference"  
+[ConsoleApiTime]: /microsoft-edge/devtools-guide-chromium/console/api#time "Referenz zur Zeit Konsolen-API"  
+[ConsoleApiTimeEnd]: /microsoft-edge/devtools-guide-chromium/console/api#timeend "timeEnd-API-Referenz"  
 <!--[EvaluatePerformanceTimelineTool]: timeline-tool "How to Use the Timeline Tool"  -->
 
-[MDNWindowDOMContentLoadedEvent]: https://developer.mozilla.org/docs/Web/Events/DOMContentLoaded "Window: DOMContentLoaded event | MDN"  
-[MDNWindowOrWorkerGlobalScopeSetInterval]: https://developer.mozilla.org/docs/Web/API/WindowTimers/setInterval "WindowOrWorkerGlobalScope.setInterval() | MDN"  
-[MDNWindowOrWorkerGlobalScopeSetTimeout]: https://developer.mozilla.org/docs/Web/API/WindowTimers/setTimeout "WindowOrWorkerGlobalScope.setTimeout() | MDN"  
+[MDNWindowDOMContentLoadedEvent]: https://developer.mozilla.org/docs/Web/Events/DOMContentLoaded "Fenster: DOMContentLoaded-Ereignis | MDN"  
+[MDNWindowOrWorkerGlobalScopeSetInterval]: https://developer.mozilla.org/docs/Web/API/WindowTimers/setInterval "WindowOrWorkerGlobalScope. setInterval () | MDN"  
+[MDNWindowOrWorkerGlobalScopeSetTimeout]: https://developer.mozilla.org/docs/Web/API/WindowTimers/setTimeout "WindowOrWorkerGlobalScope. setTimeout () | MDN"  
 
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/performance-reference) and is authored by [Meggin Kearney][MegginKearney] \(Tech Writer\) and [Flavio Copes][FlavioCopes] \(Full Stack Developer\).  
+> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
+> Die ursprüngliche Seite wird [hier](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/performance-reference) gefunden und von [Meggin Kearney][MegginKearney] (Tech Writer \) und [Flavio Copes][FlavioCopes] \ (vollständiger Stack-Entwickler \) erstellt.  
 
-[![Creative Commons License][CCby4Image]][CCA4IL]  
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
+[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

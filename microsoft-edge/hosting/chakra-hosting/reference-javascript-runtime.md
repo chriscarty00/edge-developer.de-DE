@@ -1,6 +1,6 @@
 ---
-description: JavaScript Runtime (JsRT) APIs enable you to add scripting capabilities to desktop and server-side applications running on Windows.
-title: Reference (JavaScript Runtime)
+description: JavaScript Runtime (JsRT)-APIs ermöglichen das Hinzufügen von Skriptfunktionen zu Desktop-und serverseitigen Anwendungen, die unter Windows ausgeführt werden.
+title: Referenz (JavaScript-Laufzeit)
 ms.date: 06/08/2020
 ms.prod: microsoft-edge
 ms.topic: article
@@ -15,23 +15,23 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/18/2020
 ms.locfileid: "10752213"
 ---
-# Reference (JavaScript runtime)  
+# Referenz (JavaScript-Laufzeit)  
 
 [!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-JavaScript Runtime (JsRT) APIs enable you to add scripting capabilities to desktop and server-side applications running on Windows.  
+JavaScript Runtime (JsRT)-APIs ermöglichen das Hinzufügen von Skriptfunktionen zu Desktop-und serverseitigen Anwendungen, die unter Windows ausgeführt werden.  
 
-If you intend to embed [ChakraCore](https://github.com/Microsoft/ChakraCore) in your application, please refer to [ChakraCore Wiki](https://aka.ms/corejsrtref) for JSRT references instead.  
+Wenn Sie beabsichtigen, [ChakraCore](https://github.com/Microsoft/ChakraCore) in Ihre Anwendung einzubetten, lesen Sie stattdessen [ChakraCore-wiki](https://aka.ms/corejsrtref) für JSRT-Verweise.  
 
-## In this section  
+## In diesem Abschnitt  
 
-Typedefs, constants, and enumerations that support JsRT hosting are described here:  
+Typedefs, Konstanten und Enumerationen, die JsRT-Hosting unterstützen, werden hier beschrieben:  
   
-*   [JavaScript Runtime Typedefs, Constants, and Enumerations](./javascript-runtime-typedefs-constants-and-enumerations.md)  
+*   [JavaScript-Laufzeit-Typedefs, Konstanten und Enumerationen](./javascript-runtime-typedefs-constants-and-enumerations.md)  
 
-The following functions enable JsRT hosting:  
+Die folgenden Funktionen ermöglichen JsRT-Hosting:  
 
-*   [JsAddRef Function](./jsaddref-function.md)  
+*   [JsAddRef Funktion](./jsaddref-function.md)  
 *   [JsBooleanToBool Funktion](./jsbooleantobool-function.md)  
 *   [JsBoolToBoolean Funktion](./jsbooltoboolean-function.md)  
 *   [JsCallFunction Funktion](./jscallfunction-function.md)  
@@ -145,9 +145,9 @@ The following functions enable JsRT hosting:
 *   [JsStrictEquals Funktion](./jsstrictequals-function.md)  
 *   [JsStringToPointer Funktion](./jsstringtopointer-function.md)  
 *   [JsValueToVariant Funktion](./jsvaluetovariant-function.md)  
-*   [JsVariantToValue Function](./jsvarianttovalue-function.md)  
+*   [JsVariantToValue Funktion](./jsvarianttovalue-function.md)  
 
-## See also  
+## Weitere Informationen  
 
-*   [Hosting the JavaScript Runtime](./hosting-the-javascript-runtime.md)  
-*   [JavaScript Runtime Hosting](../javascript-runtime-hosting.md)  
+*   [Hosten der JavaScript-Laufzeit](./hosting-the-javascript-runtime.md)  
+*   [JavaScript-Laufzeit-Hosten](../javascript-runtime-hosting.md)  

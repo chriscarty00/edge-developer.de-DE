@@ -1,12 +1,12 @@
 ---
-description: How to turn on the dark theme in Microsoft Edge DevTools.
-title: Enable Dark Theme In Microsoft Edge DevTools
+description: So aktivieren Sie das dunkle Design in Microsoft Edge devtools
+title: Aktivieren des dunklen Designs in Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
 ms.openlocfilehash: 4369d06fff8372677910e2807daa3b23c2c0e333
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -32,37 +32,37 @@ ms.locfileid: "10993023"
 
 
 
-# Enable Dark Theme In Microsoft Edge DevTools   
+# Aktivieren des dunklen Designs in Microsoft Edge devtools   
 
   
 
-You may enable dark theme in [Settings](#set-up-dark-theme-from-settings) or the [Command Menu](#set-up-dark-theme-from-the-command-menu).  
+Sie können ein dunkles Design in den [Einstellungen](#set-up-dark-theme-from-settings) oder im [Befehlsmenü](#set-up-dark-theme-from-the-command-menu)aktivieren.  
 
-:::image type="complex" source="../media/customize-elements-styles-console-dark-theme.msft.png" alt-text="The dark theme" lightbox="../media/customize-elements-styles-console-dark-theme.msft.png":::
-   The dark theme  
+:::image type="complex" source="../media/customize-elements-styles-console-dark-theme.msft.png" alt-text="Das dunkle Design" lightbox="../media/customize-elements-styles-console-dark-theme.msft.png":::
+   Das dunkle Design  
 :::image-end:::  
 
-## Set up dark theme from Settings   
+## Einrichten eines dunklen Designs aus Einstellungen   
 
-1.  Click **Customize And Control DevTools** `...` and then select **Settings**.  You may also open **Settings** by pressing `F1`.  
+1.  Klicken Sie auf **anpassen und Steuern von devtools** `...` , und wählen Sie dann **Einstellungen**aus.  Sie können die **Einstellungen** auch öffnen, indem Sie auf klicken `F1` .  
     
-    :::image type="complex" source="../media/customize-options-settings.msft.png" alt-text="The dark theme" lightbox="../media/customize-options-settings.msft.png":::
-       Open **Settings**  
+    :::image type="complex" source="../media/customize-options-settings.msft.png" alt-text="Das dunkle Design" lightbox="../media/customize-options-settings.msft.png":::
+       **Einstellungen** öffnen  
     :::image-end:::  
 
-1.  On the **Preferences** pane,  under **Appearance**, click on the **Theme** drop-down, and select **Dark**.  
+1.  Klicken Sie im Bereich **Einstellungen** unter **Darstellung**auf die Dropdownliste **Design** , und wählen Sie **dunkel**aus.  
     
-    :::image type="complex" source="../media/customize-settings-preferences-appearance-theme-dark.msft.png" alt-text="The dark theme" lightbox="../media/customize-settings-preferences-appearance-theme-dark.msft.png":::
-       **Preferences**  
+    :::image type="complex" source="../media/customize-settings-preferences-appearance-theme-dark.msft.png" alt-text="Das dunkle Design" lightbox="../media/customize-settings-preferences-appearance-theme-dark.msft.png":::
+       **Voreinstellungen**  
     :::image-end:::  
 
-## Set up dark theme from the Command Menu   
+## Einrichten eines dunklen Designs über das Befehlsmenü   
 
-1.  [Open the Command Menu][DevtoolsCommandMenu].  
-1.  Start typing `dark`, select the **Switch To Dark Theme** command, and then press `Enter` to run the command.  
+1.  [Öffnen des Befehlsmenüs][DevtoolsCommandMenu]  
+1.  Beginnen `dark` Sie mit der Eingabe, wählen Sie den Befehl **zum dunklen Design wechseln** aus, und drücken Sie dann `Enter` , um den Befehl auszuführen.  
     
-    :::image type="complex" source="../media/customize-command-menu-dark.msft.png" alt-text="The dark theme" lightbox="../media/customize-command-menu-dark.msft.png":::
-       The dark theme command  
+    :::image type="complex" source="../media/customize-command-menu-dark.msft.png" alt-text="Das dunkle Design" lightbox="../media/customize-command-menu-dark.msft.png":::
+       Der Befehl ' dunkler Design '  
     :::image-end:::  
     
 <!--  
@@ -73,14 +73,14 @@ You may enable dark theme in [Settings](#set-up-dark-theme-from-settings) or the
 
 <!-- links -->  
 
-[DevtoolsCommandMenu]: ../command-menu/index.md "Command Menu | Microsoft Docs"  
+[DevtoolsCommandMenu]: ../command-menu/index.md "Befehlsmenü | Microsoft docs"  
 
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/customize/dark-theme) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
+> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
+> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/customize/dark-theme) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
 
-[![Creative Commons License][CCby4Image]][CCA4IL]  
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
+[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

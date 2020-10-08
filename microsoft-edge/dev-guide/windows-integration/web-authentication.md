@@ -1,14 +1,14 @@
 ---
 ms.assetid: 88825563-5f5d-421d-861b-7cec01277dec
-description: Learn how the Web Authentication API can enable web applications to use Windows Hello and FIDO2 for user authentication.
-title: Web Authentication - Dev guide
+description: Erfahren Sie, wie die Webauthentifizierungs-API Webanwendungen die Verwendung von Windows Hello und FIDO2 für die Benutzerauthentifizierung ermöglichen kann.
+title: Webauthentifizierung – Entwicklerhandbuch
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 07/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: windows-integration
-keywords: edge, web development, html, css, javascript, developer
+keywords: Edge, Web-Entwicklung, HTML, CSS, JavaScript, Entwickler
 ms.openlocfilehash: b8ff3769434c17b5508978c64b5d9c14e7e3bdaa
 ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
@@ -16,33 +16,33 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "10941813"
 ---
-# Web Authentication and Windows Hello  
+# Web-Authentifizierung und Windows Hello  
 
 [!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
-The [Web Authentication API](https://w3c.github.io/webauthn) in Microsoft Edge enables web applications to use [Windows Hello](https://www.microsoft.com/windows/comprehensive-security) and [external FIDO2 devices](https://fidoalliance.org/fido2) for user authentication so that you and your users can avoid all the hassles and risks of password management, including password guessing, phishing, and key-logging attacks.  The current Microsoft Edge implementation is based on the Candidate Recommendation of the Web Authentication specification.  
+Die [Webauthentifizierungs-API](https://w3c.github.io/webauthn) in Microsoft Edge ermöglicht Webanwendungen die Verwendung von [Windows Hello](https://www.microsoft.com/windows/comprehensive-security) -und [externen FIDO2-Geräten](https://fidoalliance.org/fido2) für die Benutzerauthentifizierung, damit Sie und Ihre Benutzer alle Probleme und Risiken der Kennwortverwaltung vermeiden können, einschließlich der Kenn Wort erraten, Phishing-Angriffe und Angriffe auf die Schlüsselprotokollierung.  Die aktuelle Microsoft Edge-Implementierung basiert auf der Kandidaten Empfehlung der Webauthentifizierungs Spezifikation.  
 
 > [!IMPORTANT]
-> This topic will show you how to try out Windows Hello and FIDO2 authentication with Microsoft Edge.  
+> In diesem Thema wird gezeigt, wie Sie die Windows Hello-und FIDO2-Authentifizierung mit Microsoft Edge testen.  
 
-Using Web Authentication, the server sends down a plain text challenge to the browser.  Once Microsoft Edge is able to verify the user through Windows Hello or an external FIDO2 device, the system will sign the challenge with a private key previously provisioned for this user and send the signature back to the server.  If the server can validate the signature using the public key it has for that user and verify the challenge is correct, it can authenticate the user securely.  With [asymmetric cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography) such as this, the public key is meaningless on its own and the private key is never shared.  Furthermore, the private key can never be moved from secure elements or modern systems with TPM-enabled hardware.  
+Mithilfe der Webauthentifizierung sendet der Server eine unformatierte Text Herausforderung an den Browser.  Sobald Microsoft Edge in der Lage ist, den Benutzer über Windows Hello oder ein externes FIDO2-Gerät zu verifizieren, signiert das System die Challenge mit einem zuvor für diesen Benutzer bereitgestellten privaten Schlüssel und sendet die Signatur zurück an den Server.  Wenn der Server die Signatur mit dem öffentlichen Schlüssel überprüfen kann, den Sie für diesen Benutzer hat, und überprüfen Sie, ob die Herausforderung richtig ist, kann Sie den Benutzer sicher authentifizieren.  Bei [asymmetrischer Kryptografie](https://en.wikipedia.org/wiki/Public-key_cryptography) wie dieser ist der öffentliche Schlüssel für sich selbst bedeutungslos, und der private Schlüssel wird nie freigegeben.  Darüber hinaus kann der private Schlüssel nie aus sicheren Elementen oder modernen Systemen mit TPM-fähiger Hardware verschoben werden.  
 
-There are two basic steps to using the Web Authentication API:  
+Es gibt zwei grundlegende Schritte bei der Verwendung der Web-Authentifizierungs-API:  
 
-1.  Register your user with `create`  
-1.  Authenticate your user with `get`  
+1.  Registrieren Ihres Benutzers bei `create`  
+1.  Authentifizieren des Benutzers mit `get`  
 
-The following dev guide will walk you through this flow using the [WebAuthn Sample App](https://github.com/MicrosoftEdge/webauthnsample).  
+Das folgende dev-Handbuch führt Sie durch diesen Fluss mit der [webauthn-Beispiel-App](https://github.com/MicrosoftEdge/webauthnsample).  
 
-## Register your user  
+## Registrieren des Benutzers  
 
-Acting as an identity provider, you will first need to create a Web Authentication credential for your user with the `navigator.credentials.create` method.  Before you register that credential to the user on your server, you will need to confirm the identity of the user.  This can be done by sending the user an email confirmation or asking them to use their traditional login method.  
+Wenn Sie als Identitätsanbieter fungieren, müssen Sie zuerst eine Webauthentifizierungs Anmeldeinformationen für den Benutzer mit der `navigator.credentials.create` Methode erstellen.  Bevor Sie diese Anmeldeinformationen für den Benutzer auf dem Server registrieren, müssen Sie die Identität des Benutzers bestätigen.  Dies kann geschehen, wenn Sie dem Nutzer eine Bestätigung per e-Mail senden oder ihn bitten, seine herkömmliche Anmeldemethode zu verwenden.  
 
-The `create` method takes the following parameters:  
+Die `create` Methode verwendet die folgenden Parameter:  
 
 :::row:::
    :::column span="1":::
-      **relying party information**  
+      **Informationen zur vertrauenden Seite**  
    :::column-end:::
    :::column span="3":::
       ```javascript
@@ -55,7 +55,7 @@ The `create` method takes the following parameters:
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **user account information**  
+      **Informationen zum Benutzerkonto**  
    :::column-end:::
    :::column span="3":::
       ```javascript
@@ -70,7 +70,7 @@ The `create` method takes the following parameters:
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **crypto parameters**  
+      **Crypto-Parameter**  
    :::column-end:::
    :::column span="3":::
       ```javascript
@@ -91,7 +91,7 @@ The `create` method takes the following parameters:
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **authenticator selection parameters**  
+      **Authentifikator-Auswahlparameter**  
    :::column-end:::
    :::column span="3":::
       ```javascript
@@ -108,7 +108,7 @@ The `create` method takes the following parameters:
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **other options**  
+      **Weitere Optionen**  
    :::column-end:::
    :::column span="3":::
       ```javascript
@@ -124,11 +124,11 @@ The `create` method takes the following parameters:
    :::column-end:::
 :::row-end:::  
 
-You can use [credential creation parameters](https://w3c.github.io/webauthn#dictdef-publickeycredentialcreationoptions) to configure the credential you want to create.  In particular, you can choose to create a Windows Hello credential by setting `authenticatorAttachment` to `platform`, or a roaming credential on an external FIDO2 device by setting `authenticatorAttachment` to `cross-platform`.  
+Sie können [Anmelde Informations Erstellungsparameter](https://w3c.github.io/webauthn#dictdef-publickeycredentialcreationoptions) verwenden, um die Anmeldeinformationen zu konfigurieren, die Sie erstellen möchten.  Insbesondere können Sie auswählen, ob Sie eine Windows Hello-Anmeldeinformationen erstellen möchten, indem Sie auf ein `authenticatorAttachment` `platform` externes FIDO2-Gerät oder auf ein Roaming-Anmeldeinformationen festlegen `authenticatorAttachment` `cross-platform` .  
 
-When you use the `create` method, Microsoft Edge will first ask the user to verify their presence by scanning their face or fingerprint, entering a PIN, or taking action on an external FIDO2 device.  Once this step is completed the authenticator will generate a publicprivate key pair and store the private key.  These credentials are created per origin, per account, and cannot be extracted because they are stored securely to the authentication device.  
+Wenn Sie die `create` Methode verwenden, fordert Microsoft Edge zunächst den Benutzer auf, seinen Anwesenheitsstatus zu überprüfen, indem er sein Angesicht oder seinen Fingerabdruck scannt, eine PIN eingibt oder auf einem externen FIDO2-Gerät eine Aktion durchführt.  Nach Abschluss dieses Schritts generiert der Authentifikator ein publicprivate-Schlüsselpaar und speichert den privaten Schlüssel.  Diese Anmeldeinformationen werden pro Herkunft und Konto erstellt und können nicht extrahiert werden, da Sie sicher auf dem Authentifizierungsgerät gespeichert werden.  
 
-The resulting promise returns an [attestation object](https://w3c.github.io/webauthn#sctn-attestation) representing the new credential.  The attestation object contains the public key for the credential.  You'll send this object to the server for validating future authentications.  Before sending back to the server, you'll need to base64-encode the raw data.  
+Die resultierende Versprechung gibt ein [Testat-Objekt](https://w3c.github.io/webauthn#sctn-attestation) zurück, das die neuen Anmeldeinformationen darstellt.  Das Testat-Objekt enthält den öffentlichen Schlüssel für die Anmeldeinformationen.  Sie senden dieses Objekt an den Server, um zukünftige Authentifizierungen zu überprüfen.  Bevor Sie zum Server zurückkehren, müssen Sie die unformatierten Daten Base64-codiert codieren.  
 
 **Client**  
 
@@ -147,7 +147,7 @@ The resulting promise returns an [attestation object](https://w3c.github.io/weba
 </script>
 ```  
 
-The server should then decode the attestation object, perform verification steps, extract the public key for this credential, and store it for future authentications.  A detailed list of steps can be found in the [credential registration algorithm](https://w3c.github.io/webauthn#registering-a-new-credential) in the WebAuthn specification.  
+Der Server sollte dann das Bestätigungs Objekt decodieren, Überprüfungsschritte ausführen, den öffentlichen Schlüssel für diese Anmeldeinformationen extrahieren und für zukünftige Authentifizierungen speichern.  Eine detaillierte Liste der Schritte finden Sie im Algorithmus zur [Registrierung von Anmeldeinformationen](https://w3c.github.io/webauthn#registering-a-new-credential) in der webauthn-Spezifikation.  
 
 **Server**  
 
@@ -161,11 +161,11 @@ The server should then decode the attestation object, perform verification steps
     });
 ```  
 
-## Authenticate your user  
+## Authentifizieren des Benutzers  
 
-Once the credential is created on the client, the next time the user attempts to log into the site you can offer to sign them in using their Web Authentication credential instead of a password with a call to `navigator.credentials.get`.  
+Nachdem die Anmeldeinformationen auf dem Client erstellt wurden, können Sie das nächste Mal, wenn der Benutzer versucht, sich bei der Website anzumelden, Ihnen anbieten, diese mithilfe ihrer Webauthentifizierungs Anmeldeinformationen anstelle eines Kennworts mit einem Anruf an zu signieren `navigator.credentials.get` .  
 
-The `get` method takes the challenge as its only required parameter.  The challenge is an opaque sequence of bytes that the server will send down to a client to sign with the user's private key.  For example:  
+Die `get` Methode nimmt die Herausforderung als einzigen erforderlichen Parameter an.  Die Herausforderung ist eine undurchsichtige Bytefolge, die vom Server an einen Client gesendet wird, um mit dem privaten Schlüssel des Benutzers zu signieren.  Beispiel:  
 
 **Server**  
 
@@ -179,7 +179,7 @@ The `get` method takes the challenge as its only required parameter.  The challe
     };
 ```  
 
-After retrieving a challenge from the server, you'll call the get API along with [credential request options](https://w3c.github.io/webauthn#credentialrequestoptions-extension).  Microsoft Edge will show a prompt, which will verify the identity of the user using Windows Hello or an external FIDO2 device.  After the user is verified, the challenge will be signed within the TPM or FIDO2 device and the promise will return with an [assertion object](https://w3c.github.io/webauthn#authenticatorassertionresponse) that contains the signature and other metadata for you to send to the server.  
+Nachdem Sie eine Herausforderung vom Server abgerufen haben, rufen Sie die Get-API zusammen mit den Optionen für die [Anmelde Informationsanforderung](https://w3c.github.io/webauthn#credentialrequestoptions-extension)auf.  Microsoft Edge zeigt eine Aufforderung an, mit der die Identität des Benutzers mit Windows Hello oder einem externen FIDO2-Gerät überprüft wird.  Nachdem der Benutzer überprüft wurde, wird die Herausforderung innerhalb des TPM-oder FIDO2-Geräts signiert, und die Versprechung wird mit einem [Assertions Objekt](https://w3c.github.io/webauthn#authenticatorassertionresponse) zurückgegeben, das die Signatur und andere Metadaten enthält, die Sie an den Server senden.  
 
 **Client**  
 
@@ -208,7 +208,7 @@ After retrieving a challenge from the server, you'll call the get API along with
     })
 ```  
 
-Once you receive the assertion on the server, you will need to validate the signature to authenticate the user.  The following is some sample code.  A detailed list of steps can be found in the [assertion verification algorithm](https://w3c.github.io/webauthn#verifying-assertion) in the WebAuthn specification.  
+Nachdem Sie die Assertion auf dem Server erhalten haben, müssen Sie die Signatur überprüfen, um den Benutzer zu authentifizieren.  Im folgenden sind einige Beispielcodes zu entschlüsseln.  Eine detaillierte Liste der Schritte finden Sie im Algorithmus zur [Assertionsüberprüfung](https://w3c.github.io/webauthn#verifying-assertion) in der webauthn-Spezifikation.  
 
 **Server**  
 
@@ -245,51 +245,51 @@ Once you receive the assertion on the server, you will need to validate the sign
     }
 ```  
 
-## Implementation notes  
+## Implementierungshinweise  
 
-### Supported platforms  
+### Unterstützte Plattformen  
 
-*   The Candidate Recommendation version of the Web Authentication API can be used from Microsoft Edge beginning with EdgeHTML 18 \(Windows Insider Preview version 17713 or newer\).  
-*   The [prefixed, preview version](https://blogs.windows.com/msedgedev/2016/04/12) of the Web Authentication API has been removed and is no longer available.  
-*   The Web Authentication API is not yet available to UWP apps and PWAs.  
-*   Internet Explorer does not support the Web Authentication API.  
+*   Die Version der Kandidaten Empfehlung der Webauthentifizierungs-API kann von Microsoft Edge beginnend mit EdgeHTML 18 \ (Windows Insider Preview-Version 17713 oder höher) verwendet werden.  
+*   Die vorangestellte [Preview-Version](https://blogs.windows.com/msedgedev/2016/04/12) der Webauthentifizierungs-API wurde entfernt und steht nicht mehr zur Verfügung.  
+*   Die Webauthentifizierungs-API steht für UWP-apps und-PWAs noch nicht zur Verfügung.  
+*   Internet Explorer unterstützt die Webauthentifizierungs-API nicht.  
 
-### Supported authenticators  
+### Unterstützte Authentifikatoren  
 
-With the Web Authentication API in Microsoft Edge, you can authenticate users with the following technologies:  
+Mit der Web-Authentifizierungs-API in Microsoft Edge können Sie Benutzer mit den folgenden Technologien authentifizieren:  
 
-*   **Windows Hello**  Enables passwordless on-device authentication with  face, fingerprint, or PIN  
-*   **FIDO2**  Enables passwordless roaming authentication with a removable device and a fingerprint or PIN  
-*   **U2F**  Enables strong second factor authentication for websites that are not ready to move to a passwordless model  
+*   **Windows Hello**  Ermöglicht die kennwortgeschützte Authentifizierung auf einem Gerät mit Face, Fingerabdruck oder PIN  
+*   **FIDO2**  Ermöglicht die kennwortlos-Roaming-Authentifizierung mit einem Wechselmedium und einem Fingerabdruck oder einer PIN  
+*   **U2F**  Ermöglicht eine starke Authentifizierung des zweiten Faktors für Websites, die nicht bereit sind, zu einem Kenn Wort unfähigen Modell zu wechseln  
 
-### Special considerations for Windows Hello  
+### Besondere Überlegungen für Windows Hello  
 
-A few things to note when using the Windows Hello authenticator:  
+Einige Dinge, die Sie bei der Verwendung des Windows Hello-Authentifikators beachten sollten:  
 
-*   You can detect if Windows Hello is available on a PC by calling the `isUserVerifyingPlatformAuthenticatorAvailable` API.  Learn more about this API [here](https://www.w3.org/TR/webauthn#isUserVerifyingPlatformAuthenticatorAvailable).  
-*   When creating a credential for Windows Hello, you should set `authenticatorAttachment` to `platform` for the best user experience.
-*   Windows Hello only supports RS256 \(alg -257\) as its public key algorithm.  Be sure to specify this algorithm when creating a credential.  
-*   To receive a [TPM attestation statement](https://w3c.github.io/webauthn#tpm-attestation), set attestation to "direct" when calling the `create` API.  TPM attestation is a best effort.  Only PCs with TPM 2.0 will return a TPM attestation statement, and the attestation process could fail for a variety of reasons.  
-*   Windows Hello employs a variety of ways to protect user credentials.  You can check which method has been used to protect a credential by consuming the [AAGUID](https://w3c.github.io/webauthn#sec-attested-credential-data) field in the attestation object returned at credential creation.  The following is the list of AAGUIDs that Windows Hello may return:   
-    *   Software backed authenticators  
-        *   Windows Hello software authenticator:  `6028B017-B1D4-4C02-B4B3-AFCDAFC96BB2`  
-        *   Windows Hello VBS software authenticator:  `6E96969E-A5CF-4AAD-9B56-305FE6C82795`  
-    *   Trusted Platform Module \(TPM\) backed authenticators  
-        *   Windows Hello hardware authenticator:  `08987058-CADC-4B81-B6E1-30DE50DCBE96`  
-        *   Windows Hello VBS hardware authenticator:  `9DDD1817-AF5A-4672-A2B9-3E3DD95000A9`  
+*   Sie können feststellen, ob Windows Hello auf einem PC verfügbar ist, indem Sie die `isUserVerifyingPlatformAuthenticatorAvailable` API aufrufen.  Weitere Informationen zu dieser API [finden Sie hier](https://www.w3.org/TR/webauthn#isUserVerifyingPlatformAuthenticatorAvailable).  
+*   Wenn Sie eine Anmeldeinformationen für Windows Hello erstellen, sollten `authenticatorAttachment` Sie `platform` für eine optimale Benutzererfahrung festzulegen.
+*   Windows Hello unterstützt nur RS256 \ (AIG-257 \) als öffentlichen Schlüsselalgorithmus.  Stellen Sie sicher, dass Sie bei der Erstellung von Anmeldeinformationen diesen Algorithmus angeben.  
+*   Um eine [TPM-Bestätigungsanweisung](https://w3c.github.io/webauthn#tpm-attestation)zu erhalten, legen Sie die Bescheinigung beim Aufrufen der API auf "Direct" fest `create` .  Die TPM-Bescheinigung ist ein optimaler Aufwand.  Nur PCs mit TPM 2,0 geben eine TPM-Bestätigungsanweisung zurück, und der Bestätigungsprozess kann aus verschiedenen Gründen fehlschlagen.  
+*   Windows Hello verwendet verschiedene Möglichkeiten, um Benutzeranmeldeinformationen zu schützen.  Sie können überprüfen, welche Methode zum Schützen von Anmeldeinformationen verwendet wurde, indem Sie das [AAGUID](https://w3c.github.io/webauthn#sec-attested-credential-data) -Feld im Bestätigungs Objekt verwenden, das bei der Erstellung von Anmeldeinformationen zurückgegeben wird.  Die folgende Liste enthält die AAGUIDs, die von Windows Hello zurückgegeben werden können:   
+    *   Software-gesicherte Authentifikatoren  
+        *   Windows Hello-Software-Authentifikator:  `6028B017-B1D4-4C02-B4B3-AFCDAFC96BB2`  
+        *   Windows Hello VBS-Software-Authentifikator:  `6E96969E-A5CF-4AAD-9B56-305FE6C82795`  
+    *   Vertrauenswürdiges Plattformmodul \ (TPM \) gesicherte Authentifikatoren  
+        *   Windows Hello-Hardware-Authentifikator:  `08987058-CADC-4B81-B6E1-30DE50DCBE96`  
+        *   Windows Hello VBS-Hardware-Authentifikator:  `9DDD1817-AF5A-4672-A2B9-3E3DD95000A9`  
 
-### API surface  
+### API-Oberfläche  
 
-*   Microsoft Edge has a complete implementation of the Candidate Recommendation version of the core Web Authentication specification.  
-*   The [AppID extension](https://w3c.github.io/webauthn#sctn-appid-extension) is supported.  
-*   No other extensions are supported.  
+*   Microsoft Edge verfügt über eine vollständige Implementierung der Kandidaten Empfehlungs Version der Core Web Authentication-Spezifikation.  
+*   Die [Erweiterung](https://w3c.github.io/webauthn#sctn-appid-extension) für die Erweiterung wird unterstützt.  
+*   Es werden keine weiteren Erweiterungen unterstützt.  
 
 ## Demos  
 
-[Client and server code sample](https://github.com/MicrosoftEdge/webauthnsample)  
+[Beispiel für Client-und Servercode](https://github.com/MicrosoftEdge/webauthnsample)  
 
-[Windows Hello Test Drive demo](https://webauthnsample.azurewebsites.net)  
+[Windows Hello Test Drive-Demo](https://webauthnsample.azurewebsites.net)  
 
-## Specification  
+## Spezifikation  
 
-[Web Authentication: An API for accessing Public Key Credentials](http://w3c.github.io/webauthn)  
+[Webauthentifizierung: eine API für den Zugriff auf öffentliche Schlüssel-Anmeldeinformationen](http://w3c.github.io/webauthn)  

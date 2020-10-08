@@ -6,25 +6,25 @@ ms.topic: include
 ms.date: 04/17/2020
 ms.openlocfilehash: 7b162ee22f37810abb40acd9a99f7f5b152cb2df
 ms.sourcegitcommit: eae5ca009ec4cb60ca5c07bf5b6c4561de692517
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/17/2020
 ms.locfileid: "10582614"
 ---
 > [!NOTE]
-> Diese Dokumentation beruht auf Erweiterungen für die [Legacy Version von Microsoft Edge][MicrosoftSupportEdgeLegacy]. Informationen zum neuen Microsoft Edge finden Sie unter [Microsoft Edge (Chrom)-Erweiterungen][MicrosoftEdgeExtensionsChromiumIndex].
+> In dieser Dokumentation geht es um Erweiterungen für die [Vorgängerversion von Microsoft Edge][MicrosoftSupportEdgeLegacy]. Informationen zum neuen Microsoft Edge erhalten Sie unter [Microsoft Edge (Chromium)-Erweiterungen][MicrosoftEdgeExtensionsChromiumIndex].
 
 > [!IMPORTANT]
-> Das neue Microsoft Edge-Programm ist nun geöffnet, um Chrom basierte Erweiterungen für den neuen Microsoft Edge zu akzeptieren \ (V77 oder höher \). Wenn Sie eine neue Erweiterung einreichen möchten, besuchen Sie [Publish to Microsoft Edge (Chrom) Addons Store][ExtensionsChromiumPublish] , um mehr über den Übermittlungsprozess zu erfahren.  
+> In dem neuen Microsoft Edge-Programm können nun Chromium-basierte Erweiterungen zum neuen Microsoft Edge \(v77 oder später\) hinzugefügt werden. Wenn Sie eine neue Erweiterung einreichen möchten, gehen Sie auf [Veröffentlichung im Microsoft Edge (Chromium) Addons Store][ExtensionsChromiumPublish] und erfahren Sie mehr über den Einreichungsvorgang.  
 > 
-> Mit dieser Ankündigung akzeptiert Microsoft keine neuen Erweiterungen mehr für die [Legacy Version von Microsoft Edge][MicrosoftSupportEdgeLegacy]. Wenn Sie eine Erweiterung für die Legacy Version besitzen, sollten Sie mit dem Vorgang beginnen, ihre Erweiterung auf den neuen Microsoft Edge zu portieren.  Da der neue Microsoft Edge auf Chrom basiert, funktionieren Erweiterungen, die für die Legacy Version von Microsoft Edge entwickelt wurden, nicht mit der neuen Version.  
+> Ab dieser Ankündigung akzeptiert Microsoft keine neuen Erweiterungen für die [Vorgängerversion von Microsoft Edge][MicrosoftSupportEdgeLegacy] mehr. Wenn Sie eine Erweiterung für die Vorgängerversion besitzen, sollten Sie damit beginnen, Ihre Erweiterung in den neuen Microsoft Edge zu portieren.  Der neue Microsoft Edge basiert auf Chromium, sodass für die Vorgängerversion von Microsoft Edge konzipierte Erweiterungen nicht in der neuen Version funktionieren.  
 > 
 
 <!-- image links -->  
 
 <!-- links -->  
 
-[MicrosoftEdgeExtensionsChromiumIndex]: /microsoft-edge/extensions-chromium/index "Microsoft Edge (Chrom)-Erweiterungen"
+[MicrosoftEdgeExtensionsChromiumIndex]: /microsoft-edge/extensions-chromium/index "Microsoft Edge (Chromium)-Erweiterungen"
 [ExtensionsChromiumPublish]: /microsoft-edge/extensions-chromium/publish/publish-extension "Veröffentlichen einer Erweiterung"  
 
-[MicrosoftSupportEdgeLegacy]: https://support.microsoft.com/help/4533505/what-is-microsoft-edge-legacy "Was ist Microsoft Edge Legacy? | Microsoft-Support"  
+[MicrosoftSupportEdgeLegacy]: https://support.microsoft.com/help/4533505/what-is-microsoft-edge-legacy "Was ist die Vorgängerversion von Microsoft Edge? | Microsoft-Support"  

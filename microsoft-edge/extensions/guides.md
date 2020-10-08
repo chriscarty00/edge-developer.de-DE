@@ -1,13 +1,13 @@
 ---
 ms.assetid: 6ee5a2d7-0f67-4d3c-85e6-57c16f3aec52
-description: Microsoft Edge extension developer guides about topics such as porting Chrome extensions to Microsoft Edge and debugging extensions.
-title: Extensions - Guides
+description: Microsoft Edge Extension-Entwicklerhandbücher zu Themen wie das Portieren von Chrome-Erweiterungen an Microsoft Edge-und Debugging-Erweiterungen.
+title: Erweiterungen – Leitfäden
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 12/16/2019
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge, web development, html, css, javascript, developer
+keywords: Edge, Web-Entwicklung, HTML, CSS, JavaScript, Entwickler
 ms.openlocfilehash: 87dcf53bd3e3b9abe93aba01bf829ff8140b601d
 ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
 ms.translationtype: MT
@@ -15,30 +15,30 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "10567445"
 ---
-# Guides  
+# Handbücher  
 
 [!INCLUDE [deprecation-note](includes/deprecation-note.md)]  
 
-## Accessibility
-To ensure your extension's icon is visible while in both light and dark mode, follow the [accessibility](./guides/accessibility.md) guide.
+## Bedienungshilfen
+Wenn Sie sicherstellen möchten, dass das Symbol ihrer Erweiterung im hellen und im dunklen Modus angezeigt wird, folgen Sie dem Leitfaden zur [Barrierefreiheit](./guides/accessibility.md) .
 
-## Adding and removing extensions
-Learn how to [add and remove extensions](./guides/adding-and-removing-extensions.md), as well as move an extension's button next to the address bar.
+## Hinzufügen und Entfernen von Erweiterungen
+Hier erfahren Sie, wie [Sie Erweiterungen hinzufügen und entfernen](./guides/adding-and-removing-extensions.md)sowie die Schaltfläche einer Erweiterung neben der Adressleiste verschieben.
 
-## Creating an extension
-Get started with [creating extensions](./guides/creating-an-extension.md) by following a couple tutorials and learning the basics.
+## Erstellen einer Erweiterung
+Beginnen Sie mit dem [Erstellen von Erweiterungen](./guides/creating-an-extension.md) , indem Sie ein paar Tutorials befolgen und die Grundlagen kennenlernen.
 
-## Debugging extensions
-With F12 Developer Tools, learn [how to debug an extension](./guides/debugging-extensions.md)'s background script, content scripts, and extension pages.
+## Debugging von Erweiterungen
+In den F12-Entwickler Tools erfahren Sie, wie Sie das Hintergrundskript [einer Erweiterung](./guides/debugging-extensions.md), Inhalts Skripts und Erweiterungsseiten Debuggen.
 
-## Design
-Learn about the [design](./guides/design.md) aspects of extensions including the various icon sizes you need and where these icons appear.
+## Entwerfen
+Informieren Sie sich über die [Entwurfs](./guides/design.md) Aspekte von Erweiterungen, einschließlich der verschiedenen Symbolgrößen, die Sie benötigen, und dem Ort, an dem diese Symbole angezeigt werden.
 
-## Internationalization
-Make your extension accessible for different languages and test your language strings with the [internationalization](./guides/internationalization.md) guide.
+## Internationalisierung
+Stellen Sie Ihre Erweiterung für verschiedene Sprachen barrierefrei zur Verfügung, und testen Sie Ihre Sprachzeichenfolgen mit dem [Internationalisierungs](./guides/internationalization.md) Leit Faden.
 
-## Packaging
-Once you've completed your extension, learn about the final steps needed to [package it](./guides/packaging.md).
+## Verpacken
+Nachdem Sie Ihre Erweiterung abgeschlossen haben, informieren Sie sich über die letzten Schritte, die zum [Verpacken](./guides/packaging.md)erforderlich sind.
 
-## Porting Chrome extensions
-See how to easily [port your Chrome extension to Microsoft Edge](./guides/porting-Chrome-extensions.md) using the Microsoft Edge Extension Toolkit.
+## Portieren von Chrome-Erweiterungen
+Hier erfahren Sie, wie Sie Ihre Chrome-Erweiterung mithilfe des Microsoft Edge Extension Toolkit problemlos [an Microsoft Edge portieren](./guides/porting-Chrome-extensions.md) können.

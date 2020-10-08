@@ -1,12 +1,12 @@
 ---
-description: How to move Microsoft Edge DevTools to the bottom or left of your viewport, or to a separate window.
-title: Change Microsoft Edge DevTools placement (Undock, Dock To Bottom, Dock To Left)
+description: Verschieben von Microsoft Edge devtools in den unteren oder linken Bereich des Viewports oder in ein separates Fenster
+title: Ändern der Platzierung von Microsoft Edge devtools (abdocken, docken an den unteren Rand, docken nach links)
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
 ms.openlocfilehash: da7bd4ed23c54faac6d9fef9afbc78128f8cfd3c
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -32,52 +32,52 @@ ms.locfileid: "10993009"
 
 
 
-# Change Microsoft Edge DevTools placement (Undock, Dock To Bottom, Dock To Left)   
+# Ändern der Platzierung von Microsoft Edge devtools (abdocken, docken an den unteren Rand, docken nach links)   
 
 
 
-By default DevTools is docked to the right of your viewport.  You may also dock to bottom, dock to left, or undock the DevTools to a separate window.  
+Standardmäßig ist devtools an der rechten Seite des Viewports verankert.  Sie können auch an der Unterseite andocken, an der linken Seite andocken oder das devtools in einem separaten Fenster Abdocken.  
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="Select Dock To Left" lightbox="../media/customize-elements-styles-right-docked.msft.png":::
-         Select `Dock To Left`  
+      :::image type="complex" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="Wählen Sie Dock an Links aus." lightbox="../media/customize-elements-styles-right-docked.msft.png":::
+         Auswählen `Dock To Left`  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/customize-elements-styles-bottom-docked.msft.png" alt-text="Select Dock To Left" lightbox="../media/customize-elements-styles-bottom-docked.msft.png":::
-         Select `Dock To Bottom`  
+      :::image type="complex" source="../media/customize-elements-styles-bottom-docked.msft.png" alt-text="Wählen Sie Dock an Links aus." lightbox="../media/customize-elements-styles-bottom-docked.msft.png":::
+         Auswählen `Dock To Bottom`  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png" alt-text="Select Dock To Left" lightbox="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png":::
-         Browser in separate window  
+      :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png" alt-text="Wählen Sie Dock an Links aus." lightbox="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png":::
+         Browser in einem separaten Fenster  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png" alt-text="Select Dock To Left" lightbox="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png":::
-         Undocked DevTools in separate window  
+      :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png" alt-text="Wählen Sie Dock an Links aus." lightbox="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png":::
+         Abdocken von devtools in einem separaten Fenster  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-## Change placement from the main menu   
+## Ändern der Platzierung aus dem Hauptmenü   
 
-1.  Click **Customize And Control DevTools** \(`...`\) and select **Undock Into Separate Window** \(![Undock][ImageUndockIcon]\), **Dock To Bottom** \(![Dock To Bottom][ImageBottomIcon]\), or **Dock To Left** \(![Dock To Left][ImageLeftIcon]\).  
+1.  Klicken Sie auf **anpassen und Steuern von devtools** \ ( `...` \), und wählen Sie **Abdocken in separates Fenster** aus. \ ( ![ Abdocken ][ImageUndockIcon] \), **an unten Andocken** \ ( ![ Dock to Bottom ][ImageBottomIcon] \) oder **Dock to Left** \ ( ![ Dock to Left \ ][ImageLeftIcon] ).  
     
-    :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="Select Dock To Left" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
-       Select **Undock Into Separate Window**  
+    :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="Wählen Sie Dock an Links aus." lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
+       Auswählen der Option " **Abdocken" in separates Fenster**  
     :::image-end:::  
     
-## Change placement from the Command Menu   
+## Ändern der Platzierung über das Befehlsmenü   
 
-1.  [Open the Command Menu][DevtoolsCommandMenu].  
-1.  Run one of the following commands: `Dock To Bottom`, `Undock Into Separate Window`.  Currently there is no command for docking to left, but you may access it from the [main menu](#change-placement-from-the-main-menu).  
+1.  [Öffnen des Befehlsmenüs][DevtoolsCommandMenu]  
+1.  Führen Sie einen der folgenden Befehle aus: `Dock To Bottom` , `Undock Into Separate Window` .  Derzeit gibt es keinen Befehl zum Andocken an Left, aber Sie können über das [Hauptmenü](#change-placement-from-the-main-menu)darauf zugreifen.  
     
-    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="Select Dock To Left" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
-       The undock command  
+    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="Wählen Sie Dock an Links aus." lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
+       Befehl "Abdocken"  
     :::image-end:::  
     
 <!--  
@@ -94,14 +94,14 @@ By default DevTools is docked to the right of your viewport.  You may also dock 
 
 <!-- links -->  
 
-[DevtoolsCommandMenu]: ../command-menu/index.md "Run commands with the Microsoft Edge DevTools Command menu | Microsoft Docs"  
+[DevtoolsCommandMenu]: ../command-menu/index.md "Ausführen von Befehlen mit dem Befehlsmenü von Microsoft Edge devtools | Microsoft docs"  
 
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/customize/placement) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
+> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
+> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/customize/placement) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
 
-[![Creative Commons License][CCby4Image]][CCA4IL]  
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
+[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

@@ -1,13 +1,13 @@
 ---
 ms.assetid: c4544a19-de78-4c69-a042-c0415726548f
-description: To ensure your extension’s icon is visible while in both light and dark mode, follow the accessibility guide.
-title: Accessibility - Extensions (EdgeHTML)
+description: Wenn Sie sicherstellen möchten, dass das Symbol ihrer Erweiterung im hellen und im dunklen Modus angezeigt wird, folgen Sie dem Leitfaden zur Barrierefreiheit.
+title: Barrierefreiheits Erweiterungen (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge, web development, html, css, javascript, developer
+keywords: Edge, Web-Entwicklung, HTML, CSS, JavaScript, Entwickler
 ms.openlocfilehash: 60e794467c6d054e390ce61c40559afa3a110c21
 ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
@@ -15,40 +15,40 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 07/16/2020
 ms.locfileid: "10882793"
 ---
-# Accessibility - Extensions (EdgeHTML)  
+# Barrierefreiheits Erweiterungen (EdgeHTML)  
 
 [!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-## Creating accessible extension icons for Microsoft Edge
+## Erstellen von barrierefreien Erweiterungssymbolen für Microsoft Edge
 
-Third-party extension developers are encouraged to use image assets that meet Microsoft’s strict accessibility requirements so that icons are clearly visible for both light and dark themes. We recommend that all extension icons have a 14:1 ratio between the icon’s background color and the dominant color of the icon itself.
-
-
-First-party extensions developed by Microsoft apply a “stickering” visual treatment to satisfy these requirements.
-
-### Examples of the "stickering"
-
-The main goal of “stickering” is to make the icon visually accessible on any background color. The recommended color ratio between the white outer stroke and your icon should be 14:1 to support the high contrast requirements.
-
-#### Good icon
-With stickering, a primarily dark icon will remain visible on any background color.
+Entwickler von Drittanbieter-Erweiterungen werden ermutigt, Bildressourcen zu verwenden, die den strengen Barrierefreiheitsanforderungen von Microsoft entsprechen, damit Symbole für helle und dunkle Designs deutlich sichtbar sind. Wir empfehlen, dass alle Erweiterungssymbole ein 14:1-Verhältnis zwischen der Hintergrundfarbe des Symbols und der dominierenden Farbe des Symbols selbst aufweisen.
 
 
-![image of icon being visible on any background color](./../media/accessibility-light-to-dark-good.png)
+Von Microsoft entwickelte First-Party-Erweiterungen wenden eine visuelle Behandlung mit "Aufklebern" an, um diese Anforderungen zu erfüllen.
 
-#### Bad icon
-Without stickering, an icon could blend in with the background and become impossible to see.
+### Beispiele für "Aufkleber"
 
+Das Hauptziel von "Aufklebern" besteht darin, das Symbol visuell auf jeder Hintergrundfarbe zugänglich zu machen. Das empfohlene Farb Verhältnis zwischen dem weißen äußeren Strich und dem Symbol sollte 14:1 sein, um die hohen Kontrast Anforderungen zu unterstützen.
 
-![image of icon blending into black background](./../media/accessibility-light-to-dark-bad.png)
-
-### "Stickering" your extension icon
-
-The following five steps outline the suggested method of creating an extension icon that meets Microsoft’s accessibility requirements:
+#### Gutes Symbol
+Mit Aufklebern bleibt ein in erster Linie dunkleres Symbol auf jeder Hintergrundfarbe sichtbar.
 
 
-| Step 1                                       | Step 2                                       | Step 3                                                                                 | Step 4                                                                          | Step 5                                                       |
+![Abbildung des Symbols, das auf einer beliebigen Hintergrundfarbe angezeigt wird](./../media/accessibility-light-to-dark-good.png)
+
+#### Ungültiges Symbol
+Ohne Aufkleber kann ein Symbol in den Hintergrund integriert werden, sodass es nicht mehr zu sehen ist.
+
+
+![Abbildung des Symbols, das in schwarzen Hintergrund verschmilzt](./../media/accessibility-light-to-dark-bad.png)
+
+### "Aufkleber" für Ihr Erweiterungssymbol
+
+In den folgenden fünf Schritten wird die vorgeschlagene Methode zum Erstellen eines Erweiterungssymbols erläutert, das den Barrierefreiheitsanforderungen von Microsoft entspricht:
+
+
+| Schritt 1                                       | Schritt 2                                       | Schritt 3                                                                                 | Schritt 4                                                                          | Schritt 5                                                       |
 |:---------------------------------------------|:---------------------------------------------|:---------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------|:-------------------------------------------------------------|
-| Set your icon within your specified grid.    | Reduce your icon size by 2 pixels.           | Copy your icon and paste in place. Create a 2 pixel outer stroke with rounded corners. | Outline your stroke, release the compound path, and merge the remaining shapes. | Color the outer stroke white and the inner icon as you wish. |
-| ![step1](./../media/accessibility-step1.png) | ![step2](./../media/accessibility-step2.png) | ![step3](./../media/accessibility-step3.png)                                           | ![step4](./../media/accessibility-step4.png)                                    | ![step5](./../media/accessibility-step5.png)                 |
+| Setzen Sie das Symbol innerhalb des angegebenen Rasters.    | Verringern Sie die Größe des Symbols um 2 Pixel.           | Kopieren Sie das Symbol, und fügen Sie es ein. Erstellen Sie einen äußeren Strich mit 2 Pixeln mit abgerundeten Ecken. | Skizzieren Sie den Strich, geben Sie den zusammengesetzten Pfad frei, und verbinden Sie die restlichen Shapes. | Färben Sie den äußeren Strich weiß und das innere Symbol, wie Sie möchten. |
+| ![step1](./../media/accessibility-step1.png) | ![step2](./../media/accessibility-step2.png) | ![step3](./../media/accessibility-step3.png)                                           | ![Schritt4](./../media/accessibility-step4.png)                                    | ![step5](./../media/accessibility-step5.png)                 |
 

@@ -1,12 +1,12 @@
 ---
-description: Features added to the Microsoft Edge DevTools in the Windows 10 April 2018 Update (EdgeHTML 17)
+description: Features, die dem Microsoft Edge-devtools im Windows 10 April 2018-Update (EdgeHTML 17) hinzugefügt wurden
 title: DevTools in EdgeHTML 17
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools, edgehtml 17
+keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools, edgehtml 17
 ms.custom: seodec18
 ms.openlocfilehash: cc110071422f858acf840c1eaf100696a6e3cf03
 ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
@@ -15,57 +15,57 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "10567568"
 ---
-# DevTools in the Windows 10 April 2018 update (EdgeHTML 17)
+# DevTools im Windows 10 April 2018-Update (EdgeHTML 17)
 
-The EdgeHTML 17 release of the DevTools ships in two ways: as the traditional in-browser (`F12`) tools for Microsoft Edge, and previewing as a standalone [Windows 10 app](#microsoft-edge-devtools-app-preview) from the Microsoft Store!
+Die EdgeHTML 17-Version von devtools wird auf zwei Arten ausgeliefert: als herkömmliche in-Browser ( `F12` )-Tools für Microsoft Edge und Vorschau als eigenständige [Windows 10-App](#microsoft-edge-devtools-app-preview) aus dem Microsoft Store!
 
-The tools have been updated with a number of major features, including basic support for [remote debugging](../../devtools-guide.md#remote-debugging) (via our new [DevTools Protocol](#devtools-protocol)), [PWA debugging features](#pwa-debugging), [IndexedDB cache management](#indexeddb-inspection), [vertical docking](#docking-to-the-right-in-microsoft-edge) and more! We also continued the overall [refactoring effort](./edgehtml-16.md) started last release as part of ongoing investments in performance and reliability.
+Die Tools wurden mit einer Reihe wichtiger Features aktualisiert, einschließlich der grundlegenden Unterstützung für das [Remotedebuggen](../../devtools-guide.md#remote-debugging) (über unser neues [devtools-Protokoll](#devtools-protocol)), [PWA-Debuggingfunktionen](#pwa-debugging), [IndexedDB-Cache-Verwaltung](#indexeddb-inspection), [vertikales Andocken](#docking-to-the-right-in-microsoft-edge) und vieles mehr! Darüber hinaus haben wir den Gesamtaufwand für die [Umgestaltung](./edgehtml-16.md) der letzten Version im Rahmen der laufenden Investitionen in Leistung und Zuverlässigkeit fortgesetzt.
 
-Here are the latest Microsoft Edge DevTools features that shipped in the [Windows 10 April 2018 Update](/windows/uwp/whats-new/windows-10-build-17134) ([EdgeHTML 17](https://aka.ms/devguide_edgehtml_17)).
+Hier sind die neuesten Microsoft Edge devtools-Features, die im [Windows 10 April 2018-Update](/windows/uwp/whats-new/windows-10-build-17134) ([EdgeHTML 17](https://aka.ms/devguide_edgehtml_17)) ausgeliefert wurden.
 
-## Microsoft Edge DevTools app preview
+## Microsoft Edge devtools App Preview
 
-![Microsoft Edge DevTools app](../../devtools-protocol/media/microsoft-edge-devtools.png) 
+![Microsoft Edge devtools-App](../../devtools-protocol/media/microsoft-edge-devtools.png) 
 
-The [**Microsoft Edge DevTools**](https://www.microsoft.com/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj?activetab=pivot%3aoverviewtab) are now available for preview as a standalone Windows 10 app from the Microsoft Store. Die Store-Version enthält einen Bereich *Auswahl* zum Anfügen an geöffnete lokale und remote Seitenziele und ein Layout im Registerkartenformat für den einfachen Wechsel zwischen DevTools-Instanzen. Also exclusive to the DevTools app is the ability to debug web content in apps (such as add-ins for Office, Cortana, EdgeHTML [webview](../../webview.md), and [Windows-installed PWAs](../../progressive-web-apps-edgehtml/windows-features.md)).
+Die [**Microsoft Edge-devtools**](https://www.microsoft.com/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj?activetab=pivot%3aoverviewtab) sind jetzt für die Vorschau als eigenständige Windows 10-App aus dem Microsoft Store verfügbar. Die Store-Version enthält einen Bereich *Auswahl* zum Anfügen an geöffnete lokale und remote Seitenziele und ein Layout im Registerkartenformat für den einfachen Wechsel zwischen DevTools-Instanzen. Ebenfalls exklusiv für die devtools-APP ist die Möglichkeit zum Debuggen von Webinhalten in Apps (wie Add-Ins für Office, Cortana, EdgeHTML [WebView](../../webview.md)und [Windows-installierte PWAs](../../progressive-web-apps-edgehtml/windows-features.md)).
 
-The Edge DevTools are also still available (`F12`) from within the browser (without the chooser panel).
+Die Edge-devtools sind auch weiterhin ( `F12` ) im Browser verfügbar (ohne den Auswahlbereich).
 
-Decoupling the DevTools from the browser provides these UX and architectural advantages:
+Die Entkopplung des devtools aus dem Browser bietet die folgenden Vorteile für UX und Architektur:
 
-- The DevTools run in a separate app container sandbox from Microsoft Edge, providing better reliability for both.
-- The app provides easy switching between active DevTools instance tabs (rather than having to switch between open Microsoft Edge tabs)
-- We're able to instrument the *EdgeHTML* browser engine and open it to the larger devtools ecosystem with [cross-browser APIs](https://github.com/WICG/devtools-protocol/).
-- We can ship DevTools updates independently from the Windows (and EdgeHTML) release cycle.
+- Die devtools werden in einer separaten App-Container-Sandbox von Microsoft Edge ausgeführt, was eine höhere Zuverlässigkeit für beide bietet.
+- Die APP bietet einen einfachen Wechsel zwischen aktiven devtools-Instanzen Registerkarten (anstatt zwischen geöffneten Microsoft Edge-Registerkarten wechseln zu müssen).
+- Wir sind in der Lage, das *EdgeHTML* -Browsermodul zu instrumentieren und es im größeren devtools-Ökosystem mit [browserübergreifenden APIs](https://github.com/WICG/devtools-protocol/)zu öffnen.
+- Wir können devtools-Updates unabhängig vom Windows-und EdgeHTML-Freigabezyklus versenden.
 
-Check out the *DevTools guide* for more on [local and remote debugging using the DevTools app](../../devtools-guide.md).
+Im *devtools-Leitfaden* finden Sie weitere Informationen zum [lokalen und Remotedebuggen mithilfe der devtools-App](../../devtools-guide.md).
 
-## DevTools Protocol
+## DevTools-Protokoll
 
-Developer tools can use the [**Microsoft Edge DevTools Protocol**](../../devtools-protocol/index.md) to inspect and debug the Microsoft Edge browser. It provides a set of methods and events that are organized into different [Domains](../../devtools-protocol/0.1/domains/index.md) of EdgeHTML engine instrumentation.
+Entwicklertools können das [**Microsoft Edge devtools-Protokoll**](../../devtools-protocol/index.md) verwenden, um den Microsoft Edge-Browser zu überprüfen und zu debuggen. Sie stellt eine Reihe von Methoden und Ereignissen bereit, die in verschiedenen [Domänen](../../devtools-protocol/0.1/domains/index.md) der EdgeHTML-Modul Instrumentation organisiert sind.
 
- Tooling clients can call these methods and monitor these events through JSON web socket messages exchanged with the *DevTools Server* hosted by Microsoft Edge or the [Windows Device Portal](/windows/mixed-reality/using-the-windows-device-portal). 
+ Tooling-Clients können diese Methoden aufrufen und diese Ereignisse über JSON Web Socket-Nachrichten überwachen, die mit dem von Microsoft Edge oder dem [Windows Device Portal](/windows/mixed-reality/using-the-windows-device-portal)gehosteten *devtools-Server* ausgetauscht werden. 
  
- Microsoft Edge DevTools uses this protocol to enable [remote debugging](../../devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview) of a host machine running Microsoft Edge from the [standalone DevTools client](https://www.microsoft.com/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj) available from the Microsoft Store. Currently this preview support is limited to JS debugging of another Edge on another desktop device or VM. Over time, we'll add support for the full set of DevTools against any EdgeHTML instance on any Windows 10 device.  
+ Microsoft Edge devtools verwendet dieses Protokoll, um das [Remotedebuggen](../../devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview) eines Hostcomputers mit Microsoft Edge vom [eigenständigen devtools-Client](https://www.microsoft.com/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj) zu aktivieren, der im Microsoft Store verfügbar ist. Derzeit ist diese Preview-Unterstützung auf das js-Debuggen einer anderen Kante auf einem anderen Desktop Gerät oder virtuellen Computer limitiert. Im Laufe der Zeit fügen wir Unterstützung für den vollständigen Satz von devtools für jede EdgeHTML-Instanz auf einem Windows 10-Gerät hinzu.  
  
- The latest [**Visual Studio Preview**](https://www.visualstudio.com/vs/preview/) builds (Visual Studio 15.7 Preview 1 or later) use the DevTools Protocol to enable launching and debugging Microsoft Edge (JavaScript code) from within the Visual Studio IDE of any ASP.NET or .NET Core project.
+ Die neuesten Builds für die [**Visual Studio-Vorschau**](https://www.visualstudio.com/vs/preview/) (Visual Studio 15,7 Preview 1 oder höher) verwenden das devtools-Protokoll, um das Starten und Debuggen von Microsoft Edge (JavaScript-Code) in der Visual Studio-IDE eines beliebigen ASP.net-oder .net Core-Projekts zu ermöglichen.
 
-## IndexedDB inspection
+## IndexedDB Inspektion
 
-New to the [**Debugger**](../debugger.md) this release is an [IndexedDB Manager](../storage.md#indexeddb-manager) with support for inspecting and refreshing your object stores and deleting individual key-value entries. Expect even more functionality in future releases.
+Neu im [**Debugger**](../debugger.md) diese Version ist ein [IndexedDB-Manager](../storage.md#indexeddb-manager) mit Unterstützung für das überprüfen und Aktualisieren Ihrer Objektspeicher und das Löschen einzelner Schlüssel-Wert-Einträge. Erwarten Sie in zukünftigen Versionen noch mehr Funktionalität.
 
-## PWA debugging
+## PWA-Debuggen
 
-Support for debugging Progressive Web Apps (PWAs) is now enabled by default, providing tool tabs for [**Service Workers**](../service-workers.md), [**Cache API**](../storage.md#cache-manager), and [**IndexedDB**](../storage.md#indexeddb-manager) management.
+Die Unterstützung für das Debuggen von Progressive Web Apps (PWAs) ist jetzt standardmäßig aktiviert und bietet Tool Registerkarten für [**Dienstmitarbeiter**](../service-workers.md), [**Cache-API**](../storage.md#cache-manager)und [**IndexedDB**](../storage.md#indexeddb-manager) -Verwaltung.
 
-Additionally, the [Network panel toolbar](../network.md#toolbar) has a new button, **Bypass Service Worker for all network requests**, to toggle on/off your registered service workers as network proxies:
+Darüber hinaus verfügt die [Symbolleiste des Netzwerk Panels](../network.md#toolbar) über eine neue Schaltfläche, **Bypass Service Worker für alle Netzwerkanforderungen**, um Ihre registrierten Service Mitarbeiter als Netzwerk Proxys ein-und auszuschalten:
 
-![Network toolbar button: Bypass Service Worker for all network requests](../media/network_toolbar_bypass_sw.png)
+![Schaltfläche "Netzwerk-Symbolleiste": umgehen von Service Worker für alle Netzwerkanforderungen](../media/network_toolbar_bypass_sw.png)
 
-You can debug your [PWA as an installed Windows 10 app](../../progressive-web-apps-edgehtml/windows-features.md) by selecting it from the list of [**Local**](../../progressive-web-apps-edgehtml/windows-features.md#debug-your-pwa-edgehtml-as-a-windows-app) targets (browser tab/PWA/webview) in the chooser of the [standalone DevTools app](../../devtools-guide.md#microsoft-store-app).  
+Sie können Ihre [PWA als installierte Windows 10-App](../../progressive-web-apps-edgehtml/windows-features.md) Debuggen, indem Sie Sie in der Auswahl der [eigenständigen devtools-App](../../devtools-guide.md#microsoft-store-app)in der Liste der [**lokalen**](../../progressive-web-apps-edgehtml/windows-features.md#debug-your-pwa-edgehtml-as-a-windows-app) Ziele (Browserregister Karte/PWA/WebView) auswählen.  
 
-## Docking to the right in Microsoft Edge
+## Andocken rechts in Microsoft Edge
 
-You can now dock the DevTools to the right of the page you're debugging from within Microsoft Edge, in addition to docking at the bottom and undocking the DevTools from the browser window. Use `Ctrl+Shift+D` to cycle between the **Dock Bottom**, **Dock Right**, and **Undock** positions, or the icons in the top-right corner of the DevTools:
+Sie können jetzt das devtools rechts neben der Seite, die Sie Debuggen, in Microsoft Edge andocken, zusätzlich zum Andocken am unteren Rand und zum Abdocken des devtools aus dem Browserfenster. Verwenden `Ctrl+Shift+D` Sie diese Schaltfläche, um zwischen dem **Dock unten**, dem **Dock rechts**und dem **Abdocken** von Positionen oder den Symbolen in der oberen rechten Ecke des devtools zu wechseln:
 
-![DevTools (in undocked state) docking options](../media/docking_buttons.png) 
+![DevTools (in unverankertem Zustand) Andockoptionen](../media/docking_buttons.png) 

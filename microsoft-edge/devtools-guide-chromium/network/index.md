@@ -1,12 +1,12 @@
 ---
-description: A tutorial on the most popular network-related features in Microsoft Edge DevTools.
-title: Inspect Network Activity In Microsoft Edge DevTools
+description: Ein Lernprogramm zu den am häufigsten verwendeten netzwerkbezogenen Features in Microsoft Edge devtools
+title: Überprüfen der Netzwerkaktivität in Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
 ms.openlocfilehash: 3629c2d3711716d6d4a837b29bffef4786eb6d3f
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -32,13 +32,13 @@ ms.locfileid: "10993450"
 
 
 
-# Inspect network activity in Microsoft Edge DevTools   
+# Überprüfen der Netzwerkaktivität in Microsoft Edge devtools   
 
 
 
-This is a hands-on tutorial of some of the most commonly-used DevTools features related to inspecting network activity for a page.  
+Hierbei handelt es sich um ein praktisches Lernprogramm einiger der am häufigsten verwendeten devtools-Features im Zusammenhang mit der Überprüfung der Netzwerkaktivität für eine Seite.  
 
-See [Network Reference][DevtoolsNetworkReference] if you want to browse features instead.  
+Weitere Informationen finden Sie unter [Netzwerk Referenz][DevtoolsNetworkReference] , wenn Sie stattdessen Features durchsuchen möchten.  
 
 <!--TODO: This entire section needs a Microsoft Edge DevTools re-write  -->
 
@@ -48,320 +48,320 @@ See [Network Reference][DevtoolsNetworkReference] if you want to browse features
 > [!VIDEO embed/e1gAyQuIFQo]  
 -->
 
-## When to use the Network panel   
+## Verwendung des Netzwerk Panels   
 
-In general, use the Network panel when you need to make sure that resources are being downloaded or uploaded as expected.  The most common use cases for the Network panel are:  
+Verwenden Sie im Allgemeinen das Netzwerk Panel, wenn Sie sicherstellen möchten, dass Ressourcen wie erwartet heruntergeladen oder hochgeladen werden.  Die häufigsten Anwendungsfälle für das Netzwerk Panel sind:  
 
-*   Making sure that resources are actually being uploaded or downloaded at all.  
-*   Inspecting the properties of an individual resource, such as the HTTP headers, content, size, and so on.  
+*   Sicherstellen, dass Ressourcen tatsächlich hochgeladen oder überhaupt heruntergeladen werden.  
+*   Überprüfen der Eigenschaften einer einzelnen Ressource, wie HTTP-Header, Inhalt, Größe usw.  
     
-If you are looking for ways to improve page load performance, **do not** start with the Network panel.  There are many types of load performance issues that are not related to network activity.  Start with the Audits panel because it gives you targeted suggestions on how to improve your page.  See [Optimize Website Speed][DevtoolsSpeedGetStarted].  
+Wenn Sie nach Möglichkeiten suchen, die Seiten Ladeleistung zu verbessern, beginnen Sie **nicht** mit dem Netzwerk Panel.  Es gibt viele Arten von Problemen mit der Auslastungs Leistung, die nicht mit der Netzwerkaktivität zusammenhängen.  Beginnen Sie mit dem Überwachungs Panel, da Sie gezielte Vorschläge zum Verbessern Ihrer Seite erhalten.  Weitere Informationen finden Sie unter [Optimieren der Website Geschwindigkeit][DevtoolsSpeedGetStarted].  
 
-## Open the Network panel   
+## Öffnen des Netzwerk Panels   
 
-To get the most out of this tutorial, open up the demo and try out the features on the demo page.  
+Um dieses Lernprogramm optimal zu nutzen, öffnen Sie die Demo und testen Sie die Features auf der Demo-Seite.  
 
-1.  Open the [Get Started Demo][GlitchNetworkGetStarted].  
+1.  Öffnen [Sie die Demo für erste Schritte][GlitchNetworkGetStarted].  
     
-    :::image type="complex" source="../media/network-glitch-inspect-network-activity-demo.msft.png" alt-text="The demo" lightbox="../media/network-glitch-inspect-network-activity-demo.msft.png":::
-       The demo  
+    :::image type="complex" source="../media/network-glitch-inspect-network-activity-demo.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-inspect-network-activity-demo.msft.png":::
+       Die Demo  
     :::image-end:::  
     
     <!--You may prefer to move the demo to a separate window.  -->  
     
     <!--
-    :::image type="complex" source="../media/network-tutorial/windows.msft.png" alt-text="The demo" lightbox="../media/network-tutorial/windows.msft.png":::
+    :::image type="complex" source="../media/network-tutorial/windows.msft.png" alt-text="Die Demo" lightbox="../media/network-tutorial/windows.msft.png":::
        The demo in one window and this tutorial in a different window  
     :::image-end:::  
     -->
     
-1.  [Open DevTools][DevToolsOpen] by pressing `Control`+`Shift`+`J` \(Windows\) or `Command`+`Option`+`J` \(macOS\).  The **Console** panel opens.  
+1.  [Öffnen Sie devtools][DevToolsOpen] , indem Sie `Control` + `Shift` + `J` \ (Windows \) oder `Command` + `Option` + `J` \ (macOS \) drücken.  Das **Konsolen** Fenster wird geöffnet.  
     
-    :::image type="complex" source="../media/network-glitch-console.msft.png" alt-text="The demo" lightbox="../media/network-glitch-console.msft.png":::
-       The **Console**  
+    :::image type="complex" source="../media/network-glitch-console.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-console.msft.png":::
+       Der **Konsole**  
     :::image-end:::  
     
-    You may prefer to [dock DevTools to the bottom of your window][DevToolsCustomizePlacement].  
+    Sie können [devtools am unteren Rand des Fensters andocken][DevToolsCustomizePlacement].  
     
-    :::image type="complex" source="../media/network-glitch-console-bottom.msft.png" alt-text="The demo" lightbox="../media/network-glitch-console-bottom.msft.png":::
-       DevTools docked to the bottom of the window  
+    :::image type="complex" source="../media/network-glitch-console-bottom.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-console-bottom.msft.png":::
+       DevTools an den unteren Rand des Fensters angedockt  
     :::image-end:::  
     
-1.  Select the **Network** tab.  The Network panel opens.  
+1.  Wählen Sie die Registerkarte **Netzwerk** aus.  Das Netzwerkfenster wird geöffnet.  
     
-    :::image type="complex" source="../media/network-glitch-network-bottom.msft.png" alt-text="The demo" lightbox="../media/network-glitch-network-bottom.msft.png":::
-       DevTools docked to the bottom of the window  
+    :::image type="complex" source="../media/network-glitch-network-bottom.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-bottom.msft.png":::
+       DevTools an den unteren Rand des Fensters angedockt  
     :::image-end:::  
     
-Right now the Network panel is empty.  DevTools only logs network activity after you open it and no network activity has occurred since you opened DevTools.  
+Im Moment ist das Netzwerk Panel leer.  DevTools protokolliert nur Netzwerkaktivitäten, nachdem Sie Sie geöffnet haben und seit dem Öffnen von devtools keine Netzwerkaktivität stattgefunden hat.  
 
-## Log network activity   
+## Protokollieren von Netzwerkaktivitäten   
 
-To view the network activity that a page causes:  
+So zeigen Sie die Netzwerkaktivität an, die eine Seite verursacht:  
 
-1.  Reload the page.  The Network panel logs all network activity in the **Network Log**.  
+1.  Laden Sie die Seite neu.  Das Netzwerk Panel protokolliert alle Netzwerkaktivitäten im **Netzwerkprotokoll**.  
     
-    :::image type="complex" source="../media/network-glitch-network.msft.png" alt-text="The demo" lightbox="../media/network-glitch-network.msft.png":::
-       The **Network Log**  
+    :::image type="complex" source="../media/network-glitch-network.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network.msft.png":::
+       Das **Netzwerkprotokoll**  
     :::image-end:::  
     
-    Each row of the **Network Log** represents a resource.  By default the resources are listed chronologically.  The top resource is usually the main HTML document.  The bottom resource is whatever was requested last.  
+    Jede Zeile des **Netzwerkprotokolls** stellt eine Ressource dar.  Standardmäßig werden die Ressourcen in chronologischer Reihenfolge aufgeführt.  Die oberste Ressource ist in der Regel das wichtigste HTML-Dokument.  Die untere Ressource ist, was zuletzt angefordert wurde.  
     
-    Each column represents information about a resource.  In the previous figure the default columns are displayed.  
+    Jede Spalte stellt Informationen zu einer Ressource dar.  In der vorhergehenden Abbildung werden die Standardspalten angezeigt.  
 
-    *   **Status**.  The HTTP status code for response.  
-    *   **Type**.  The resource type.  
-    *   **Initiator**.  The cause of the resource request.  Selecting a link in the Initiator column takes you to the source code that caused the request.  
-    *   **Time**.  The duration of the request.  
-    *   **Waterfall**.  A graphical representation of the different stages of the request.  Hover over a Waterfall to see a breakdown.  
+    *   **Status**aus.  Der HTTP-Statuscode für die Antwort.  
+    *   **Typ**.  Der Ressourcentyp.  
+    *   **Initiator**.  Die Ursache der Ressourcenanforderung.  Wenn Sie einen Link in der Spalte Initiator auswählen, gelangen Sie zu dem Quellcode, der die Anforderung verursacht hat.  
+    *   **Zeit**.  Die Dauer der Anforderung.  
+    *   **Wasserfall**.  Eine grafische Darstellung der verschiedenen Phasen der Anforderung.  Zeigen Sie mit der Maus auf einen Wasserfall, um eine Unterbrechung anzuzeigen.  
     
     > [!NOTE]
-    > The graph above the Network Log is called the Overview.  You will not use the Overview graph in this tutorial, so you may hide it.  See [Hide the Overview pane][DevtoolsReferenceHideOverview].
+    > Das Diagramm oberhalb des Netzwerkprotokolls wird als Übersicht bezeichnet.  Sie werden das Übersichtsdiagramm in diesem Lernprogramm nicht verwenden, sodass Sie es möglicherweise ausblenden können.  Weitere Informationen finden Sie unter [Ausblenden des][DevtoolsReferenceHideOverview]Übersichtsbereichs.
     
-1.  After you open DevTools, it records network activity in the Network Log.  
-    To demonstrate this, first look at the bottom of the **Network Log** and make a mental note of the last activity.  
-1.  Now, select the **Get Data** button in the demo.  
-1.  Look at the bottom of the **Network Log** again.  You should see a new resource called `getstarted.json`.  Selecting the **Get Data** button caused the page to request this file.  
+1.  Nachdem Sie devtools geöffnet haben, werden die Netzwerkaktivitäten im Netzwerkprotokoll aufgezeichnet.  
+    Um dies zu veranschaulichen, schauen Sie sich zuerst den unteren Rand des **Netzwerkprotokolls** an und machen Sie sich mit der letzten Aktivität auf den Kopf.  
+1.  Wählen Sie nun in der Demo die Schaltfläche **Daten abrufen** aus.  
+1.  Sehen Sie sich die untere Seite des **Netzwerkprotokolls** erneut an.  Es sollte eine neue Ressource mit dem Namen angezeigt werden `getstarted.json` .  Durch Auswählen der Schaltfläche " **Daten abrufen** " wurde die Datei von der Seite angefordert.  
     
-    :::image type="complex" source="../media/network-glitch-network-new-resource.msft.png" alt-text="The demo" lightbox="../media/network-glitch-network-new-resource.msft.png":::
-       A new resource in the **Network Log**  
+    :::image type="complex" source="../media/network-glitch-network-new-resource.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-new-resource.msft.png":::
+       Eine neue Ressource im **Netzwerkprotokoll**  
     :::image-end:::  
     
-## Show more information   
+## Weitere Informationen anzeigen   
 
-The columns of the Network Log are configurable.  You may hide columns that you are not using.  
-There are also many columns that are hidden by default which you may find useful.  
+Die Spalten des Netzwerkprotokolls können konfiguriert werden.  Sie können Spalten, die Sie nicht verwenden, ausblenden.  
+Es gibt auch viele Spalten, die standardmäßig ausgeblendet sind, die Sie möglicherweise als nützlich empfinden.  
 
-1.  Right-click the header of the Network Log table and select **Domain**.  The domain of each resource is now shown.  
+1.  Klicken Sie mit der rechten Maustaste auf die Kopfzeile der Netzwerkprotokoll Tabelle, und wählen Sie **Domäne**aus.  Die Domäne jeder Ressource wird nun angezeigt.  
     
-    :::image type="complex" source="../media/network-glitch-network-edit-column.msft.png" alt-text="The demo" lightbox="../media/network-glitch-network-edit-column.msft.png":::
-       Enable the Domain column  
+    :::image type="complex" source="../media/network-glitch-network-edit-column.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-edit-column.msft.png":::
+       Aktivieren der Spalte "Domäne"  
     :::image-end:::  
     
     > [!TIP]
-    > See the full URL of a resource by hovering over the cell in the **Name** column.  
+    > Zeigen Sie die vollständige URL einer Ressource an, indem Sie in der Spalte **Name** auf die Zelle zeigen.  
     
-## Simulate a slower network connection   
+## Simulieren einer langsameren Netzwerkverbindung   
 
-The network connection of the computer that you use to build sites is probably faster than the network connections of the mobile devices of your users.  By throttling the page, you get a better idea of how long a page takes to load on a mobile device.  
+Die Netzwerkverbindung des Computers, den Sie zum Erstellen von Websites verwenden, ist wahrscheinlich schneller als die Netzwerkverbindungen der mobilen Geräte ihrer Benutzer.  Durch Drosselung der Seite erhalten Sie eine bessere Vorstellung davon, wie lange eine Seite zum Laden auf einem mobilen Gerät dauert.  
 
-1.  Select the **Throttling** dropdown, which is set to **Online** by default.  
+1.  Wählen Sie die Dropdownliste **Drosselung** aus, die standardmäßig auf **Online** gesetzt ist.  
     
-    :::image type="complex" source="../media/network-glitch-network-throttling.msft.png" alt-text="The demo" lightbox="../media/network-glitch-network-throttling.msft.png":::
-       Enable throttling  
+    :::image type="complex" source="../media/network-glitch-network-throttling.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-throttling.msft.png":::
+       Aktivieren der Drosselung  
     :::image-end:::  
     
-1.  Select **Slow 3G**.  
+1.  Wählen Sie **Slow 3G**aus.  
     
-    :::image type="complex" source="../media/network-glitch-network-throttling-slow-3g.msft.png" alt-text="The demo" lightbox="../media/network-glitch-network-throttling-slow-3g.msft.png":::
-       Select Slow 3G  
+    :::image type="complex" source="../media/network-glitch-network-throttling-slow-3g.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-throttling-slow-3g.msft.png":::
+       Wählen Sie Slow 3G aus.  
     :::image-end:::  
     
-1.  Long-press **Reload** \(![Reload][ImageRefreshIcon]\) and then select **Empty Cache And Hard Reload**.  
+1.  Lange drücken Sie **Reload** (Reload ![ ][ImageRefreshIcon] \), und wählen Sie dann **Cache leeren und Hard Reload**aus.  
     
-    :::image type="complex" source="../media/network-glitch-empty-cache-and-hard-reset.msft.png" alt-text="The demo" lightbox="../media/network-glitch-empty-cache-and-hard-reset.msft.png":::
-       **Empty Cache And Hard Reload**  
+    :::image type="complex" source="../media/network-glitch-empty-cache-and-hard-reset.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-empty-cache-and-hard-reset.msft.png":::
+       **Leerer Cache und schweres erneutes Laden**  
     :::image-end:::  
     
-    On repeat visits, the browser usually serves some files from the [cache][MDNHTTPCache], which speeds up the page load.  **Empty Cache And Hard Reload** forces the browser to go the network for all resources.  This is helpful when you want to see how a first-time visitor experiences a page load.  
+    Bei wiederholten Besuchen dient der Browser in der Regel einigen Dateien aus dem [Cache][MDNHTTPCache], wodurch die Seitenauslastung beschleunigt wird.  **Leerer Cache und harter Reload** erzwingt den Browser, das Netzwerk für alle Ressourcen zu wechseln.  Dies ist hilfreich, wenn Sie sehen möchten, wie ein Erstbesucher eine Seitenbelastung erlebt.  
     
     > [!NOTE]
-    > The **Empty Cache And Hard Reload** workflow is only available when DevTools is open.  
+    > Der Workflow " **leerer Cache" und "harter Reload** " steht nur zur Verfügung, wenn devtools geöffnet ist.  
     
-## Capture screenshots   
+## Screenshots aufzeichnen   
 
-Screenshots let you see how a page looked over time while it was loading.  
+Mit Screenshots können Sie sehen, wie eine Seite im Laufe der Zeit aussah, während Sie geladen wurde.  
 
-1.  Select \(![Network settings][ImageSettingsIcon]\) and select the **Capture screenshots** checkbox.
-1.  Reload the page again via the **Empty Cache And Hard Reload** workflow.  See [Simulate a slower connection](#simulate-a-slower-network-connection) if you need a reminder on how to do this.  
-    The Screenshots pane provides thumbnails of how the page looked at various points during the loading process.  
+1.  Wählen Sie \ ( ![ Netzwerkeinstellungen ][ImageSettingsIcon] \) aus, und aktivieren Sie das Kontrollkästchen **Screenshots aufnehmen** .
+1.  Laden Sie die Seite erneut über den **leeren Cache und** den Arbeitsablauf für das erneute Laden.  Weitere Informationen hierzu finden Sie unter [Simulieren einer langsameren Verbindung](#simulate-a-slower-network-connection) .  
+    Der Bereich "Screenshots" bietet Miniaturansichten, wie die Seite während des Ladevorgangs an verschiedenen Punkten aussah.  
     
-    :::image type="complex" source="../media/network-glitch-network-screenshots.msft.png" alt-text="The demo" lightbox="../media/network-glitch-network-screenshots.msft.png":::
-       Screenshots of the page load  
+    :::image type="complex" source="../media/network-glitch-network-screenshots.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-screenshots.msft.png":::
+       Screenshots des Ladens der Seite  
     :::image-end:::  
     
-1.  Select the first thumbnail.  DevTools shows you what network activity was occurring at that moment in time.  
+1.  Wählen Sie die erste Miniaturansicht aus.  DevTools zeigt Ihnen, welche Netzwerkaktivität zu diesem Zeitpunkt stattgefunden hat.  
     
-    :::image type="complex" source="../media/network-glitch-network-screenshots-first.msft.png" alt-text="The demo" lightbox="../media/network-glitch-network-screenshots-first.msft.png":::
-       The network activity that was happening during the first screenshot  
+    :::image type="complex" source="../media/network-glitch-network-screenshots-first.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-screenshots-first.msft.png":::
+       Die Netzwerkaktivität, die während des ersten Screenshots stattgefunden hat  
     :::image-end:::  
     
-1.  Select \(![Network settings][ImageSettingsIcon]\) again and deselect the **Capture screenshots** checkbox to close the Screenshots pane.
-1.  Reload the page again.  
+1.  Wählen Sie erneut \ ( ![ Netzwerkeinstellungen ][ImageSettingsIcon] \) aus, und deaktivieren Sie das Kontrollkästchen **Screenshots aufnehmen** , um den Bereich Screenshots zu schließen.
+1.  Laden Sie die Seite erneut.  
     
-## Inspect the details of the resource   
+## Überprüfen der Details der Ressource   
 
-Select a resource to learn more information about it.  Try it now:  
+Wählen Sie eine Ressource aus, um weitere Informationen dazu zu erhalten.  Probieren Sie es jetzt aus:  
 
-1.  Select `getstarted.html`.  The **Headers** tab is shown.  Use this tab to inspect HTTP headers.  
+1.  Wählen Sie aus `getstarted.html` .  Die Registerkarte über **Schriften** wird angezeigt.  Verwenden Sie diese Registerkarte, um HTTP-Header zu überprüfen.  
     
-    :::image type="complex" source="../media/network-glitch-network-resources-headers.msft.png" alt-text="The demo" lightbox="../media/network-glitch-network-resources-headers.msft.png":::
-       The **Headers** tab  
+    :::image type="complex" source="../media/network-glitch-network-resources-headers.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-resources-headers.msft.png":::
+       Die Registerkarte "über **Schriften** "  
     :::image-end:::  
     
-1.  Select the **Preview** tab.  A basic rendering of the HTML is shown.  
+1.  Wählen Sie die Registerkarte **Vorschau** aus.  Eine grundlegende Darstellung des HTML-Code wird angezeigt.  
     
-    :::image type="complex" source="../media/network-glitch-network-resources-preview.msft.png" alt-text="The demo" lightbox="../media/network-glitch-network-resources-preview.msft.png":::
-       The **Preview** tab  
+    :::image type="complex" source="../media/network-glitch-network-resources-preview.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-resources-preview.msft.png":::
+       Registerkarte " **Vorschau** "  
     :::image-end:::  
     
-    This tab is helpful when an API returns an error code in HTML.  You may find it easier to read the rendered HTML than the HTML source code, or when you inspect images.  
+    Diese Registerkarte ist hilfreich, wenn eine API einen Fehlercode in HTML zurückgibt.  Möglicherweise ist es einfacher, den gerenderten HTML-Code zu lesen als den HTML-Quellcode, oder wenn Sie Bilder untersuchen.  
 
-1.  Select the **Response** tab.  The HTML source code is shown.  
+1.  Wählen Sie die Registerkarte **Antwort** aus.  Der HTML-Quellcode wird angezeigt.  
     
-    :::image type="complex" source="../media/network-glitch-network-resources-response.msft.png" alt-text="The demo" lightbox="../media/network-glitch-network-resources-response.msft.png":::
-       The **Response** tab  
+    :::image type="complex" source="../media/network-glitch-network-resources-response.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-resources-response.msft.png":::
+       Die Registerkarte " **Antwort** "  
     :::image-end:::  
     
     > [!TIP]
-    > When a file is minified, selecting the **Format** \(![Format][ImageFormatIcon]\) button at the bottom of the **Response** tab re-formats the contents of the file for readability.  
+    > Wenn eine Datei minimierte ist, wird durch Auswählen der Schaltfläche **Format** \ ( ![ Format ][ImageFormatIcon] \) am unteren Rand der Registerkarte **Antwort** der Inhalt der Datei zur Lesbarkeit neu formatiert.  
     
-1.  Select the **Timing** tab.  A breakdown of the network activity for this resource is shown.  
+1.  Wählen Sie die Registerkarte **Anzeige** Dauer aus.  Eine Aufschlüsselung der Netzwerkaktivität für diese Ressource wird angezeigt.  
     
-    :::image type="complex" source="../media/network-glitch-network-resources-timing.msft.png" alt-text="The demo" lightbox="../media/network-glitch-network-resources-timing.msft.png":::
-       The **Timing** tab  
+    :::image type="complex" source="../media/network-glitch-network-resources-timing.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-resources-timing.msft.png":::
+       Registerkarte " **Anzeige** Dauer"  
     :::image-end:::  
     
-1.  Select **Close** \(![Close][ImageCloseIcon]\) to view the Network Log again.  
+1.  Wählen Sie **Schließen** \ ( ![ Schließen ][ImageCloseIcon] \) aus, um das Netzwerkprotokoll erneut anzuzeigen.  
     
-    :::image type="complex" source="../media/network-glitch-network-resources-close-tabs.msft.png" alt-text="The demo" lightbox="../media/network-glitch-network-resources-close-tabs.msft.png":::
-       The **Close** button  
+    :::image type="complex" source="../media/network-glitch-network-resources-close-tabs.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-resources-close-tabs.msft.png":::
+       Schaltfläche " **Schließen** "  
     :::image-end:::  
     
-## Search network headers and responses   
+## Durchsuchen von Netzwerk Kopfzeilen und-Antworten   
 
-Use the **Search** pane when you need to search the HTTP headers and responses of all resources for a certain string or regular expression.  
+Verwenden Sie den **Such** Bereich, wenn Sie die HTTP-Header und Antworten aller Ressourcen nach einer bestimmten Zeichenfolge oder einem regulären Ausdruck durchsuchen müssen.  
 
-For example, suppose you want to verify that your resources are using reasonable **cache policies**.  
+Angenommen, Sie möchten beispielsweise überprüfen, ob Ihre Ressourcen angemessene **Cacherichtlinien**verwenden.  
 
 <!--TODO: add cache policies section when available  -->
 
-1.  Select **Search** \(![Search][ImageSearchIcon]\).  The Search pane opens to the left of the Network log.  
+1.  Wählen Sie **Suchen** \ ( ![ Suchen ][ImageSearchIcon] \) aus.  Der Suchbereich wird links neben dem Netzwerkprotokoll geöffnet.  
     
-    :::image type="complex" source="../media/network-glitch-network-search-empty.msft.png" alt-text="The demo" lightbox="../media/network-glitch-network-search-empty.msft.png":::
-       The **Search** pane  
+    :::image type="complex" source="../media/network-glitch-network-search-empty.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-search-empty.msft.png":::
+       Der **Such** Bereich  
     :::image-end:::  
     
-1.  Type `Cache-Control` and press `Enter`.  The Search pane lists all instances of `Cache-Control` that it finds in resource headers or content.  
+1.  Geben `Cache-Control` Sie ein, und drücken Sie `Enter` .  Der Suchbereich listet alle Instanzen auf `Cache-Control` , die in Ressourcen Kopfzeilen oder-Inhalten gefunden werden.  
     
-    :::image type="complex" source="../media/network-glitch-network-search-cache-control.msft.png" alt-text="The demo" lightbox="../media/network-glitch-network-search-cache-control.msft.png":::
-       Search results for `Cache-Control`  
+    :::image type="complex" source="../media/network-glitch-network-search-cache-control.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-search-cache-control.msft.png":::
+       Suchergebnisse‎‏ für:  `Cache-Control`  
     :::image-end:::  
     
-1.  Select a result to view the resource in which the result was found.  If you are looking at the details of the resource, select a result to go directly to it.  For example, if the query was found in a header, the Headers tab opens.   If the query was found in content, the **Response** tab opens.  
+1.  Wählen Sie ein Ergebnis aus, um die Ressource anzuzeigen, in der das Ergebnis gefunden wurde.  Wenn Sie die Details der Ressource sehen möchten, wählen Sie ein Ergebnis aus, um direkt dorthin zu wechseln.  Wenn die Abfrage beispielsweise in einer Kopfzeile gefunden wurde, wird die Registerkarte Überschriften geöffnet.   Wenn die Abfrage im Inhalt gefunden wurde, wird die Registerkarte " **Antwort** " geöffnet.  
     
-    :::image type="complex" source="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png" alt-text="The demo" lightbox="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png":::
-       A search result highlighted in the **Headers** tab  
+    :::image type="complex" source="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png":::
+       Auf der Registerkarte "über **Schriften** " hervorgehobenes Suchergebnis  
     :::image-end:::  
     
-1.  Close the Search pane and the Headers tab.  
+1.  Schließen Sie den Suchbereich und die Registerkarte Überschriften.  
     
-    :::image type="complex" source="../media/network-glitch-network-search-close.msft.png" alt-text="The demo" lightbox="../media/network-glitch-network-search-close.msft.png":::
-       The **Close** buttons  
+    :::image type="complex" source="../media/network-glitch-network-search-close.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-search-close.msft.png":::
+       Die Schaltflächen " **Schließen** "  
     :::image-end:::  
     
-## Filter resources   
+## Filtern von Ressourcen   
 
-DevTools provides numerous workflows for filtering out resources that are not relevant to the task at hand.  
+DevTools bietet zahlreiche Workflows zum Filtern von Ressourcen, die für die jeweilige Aufgabe nicht relevant sind.  
 
-:::image type="complex" source="../media/network-glitch-network-filter-empty.msft.png" alt-text="The demo" lightbox="../media/network-glitch-network-filter-empty.msft.png":::
-   The **Filters** toolbar  
+:::image type="complex" source="../media/network-glitch-network-filter-empty.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-filter-empty.msft.png":::
+   Die Symbolleiste " **Filter** "  
 :::image-end:::  
 
-The **Filters** toolbar should be enabled by default.  If not:  
+Die **Filter** Symbolleiste sollte standardmäßig aktiviert sein.  Wenn nicht,:  
 
-1.  Select **Filter** \(![Filter][ImageFilterIcon]\) to show it.  
+1.  Wählen Sie **Filter** \ ( ![ Filter ][ImageFilterIcon] \) aus, um Sie anzuzeigen.  
     
-### Filter by string, regular expression, or property   
+### Filtern nach Zeichenfolge, regulärem Ausdruck oder Eigenschaft   
 
-The **Filter** text box supports many different types of filtering.  
+Das Textfeld " **Filter** " unterstützt viele verschiedene Filterarten.  
 
-1.  Type `png` into the **Filter** text box.  Only the files that contain the text `png` are shown.  In this case the only files that match the filter are the PNG images.  
+1.  Geben Sie `png` in das Textfeld **Filter** ein.  Nur die Dateien, die den Text enthalten, `png` werden angezeigt.  In diesem Fall sind die einzigen Dateien, die dem Filter entsprechen, die PNG-Bilder.  
     
-    :::image type="complex" source="../media/network-glitch-network-filter-png.msft.png" alt-text="The demo" lightbox="../media/network-glitch-network-filter-png.msft.png":::
-       A string filter  
+    :::image type="complex" source="../media/network-glitch-network-filter-png.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-filter-png.msft.png":::
+       Ein Zeichenfolgenfilter  
     :::image-end:::  
     
-1.  Type `/.*\.[cj]s+$/`.  DevTools filters out any resource with a filename that does not end with a `j` or a `c` followed by 1 or more `s` characters.  
+1.  Geben Sie `/.*\.[cj]s+$/` ein.  DevTools filtert jede Ressource mit einem Dateinamen, der nicht mit a `j` oder a, `c` gefolgt von 1 oder mehr Zeichen, endet `s` .  
     
-    :::image type="complex" source="../media/network-glitch-network-filter-regex.msft.png" alt-text="The demo" lightbox="../media/network-glitch-network-filter-regex.msft.png":::
-       A regular expression filter  
+    :::image type="complex" source="../media/network-glitch-network-filter-regex.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-filter-regex.msft.png":::
+       Ein Filter für reguläre Ausdrücke  
     :::image-end:::  
     
-1.  Type `-main.css`.  DevTools filters out `main.css`.  If any other file matched the pattern they would also be filtered out.  
+1.  Geben Sie `-main.css` ein.  DevTools filtert aus `main.css` .  Wenn eine andere Datei mit dem Muster übereinstimmt, würden Sie ebenfalls herausgefiltert.  
     
-    :::image type="complex" source="../media/network-glitch-network-filter-negative-statement.msft.png" alt-text="The demo" lightbox="../media/network-glitch-network-filter-negative-statement.msft.png":::
-       A negative filter  
+    :::image type="complex" source="../media/network-glitch-network-filter-negative-statement.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-filter-negative-statement.msft.png":::
+       Ein negativer Filter  
     :::image-end:::  
     
-1.  Type `domain:cdn.glitch.com` into the **Filter** text box.  DevTools filters out any resource with a URL that does not match this domain.  
+1.  Geben Sie `domain:cdn.glitch.com` in das Textfeld **Filter** ein.  DevTools filtert jede Ressource mit einer URL ab, die dieser Domäne nicht entspricht.  
     
-    :::image type="complex" source="../media/network-glitch-network-filter-property-value.msft.png" alt-text="The demo" lightbox="../media/network-glitch-network-filter-property-value.msft.png":::
-       A property filter  
+    :::image type="complex" source="../media/network-glitch-network-filter-property-value.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-filter-property-value.msft.png":::
+       Ein Eigenschaften Filter  
     :::image-end:::  
     
-    See [Filter requests by properties][DevtoolsReferenceProperty] for the full list of filterable properties.  
+    Die vollständige Liste der filterbaren Eigenschaften finden Sie unter [Filtern von Anforderungen nach Eigenschaften][DevtoolsReferenceProperty] .  
     
-1.  Clear the **Filter** text box of any text.  
+1.  Deaktivieren Sie das Textfeld " **Filter** " eines beliebigen Texts.  
     
-### Filter by resource type   
+### Nach Ressourcentyp Filtern   
 
-To focus in on a certain type of file, such as stylesheets:  
+So konzentrieren Sie sich auf eine bestimmte Art von Datei, beispielsweise Stylesheets:  
 
-1.  Select **CSS**.  All other file types are filtered out.  
+1.  Wählen Sie **CSS**aus.  Alle anderen Dateitypen werden herausgefiltert.  
     
-    :::image type="complex" source="../media/network-glitch-network-filter-file-type-css.msft.png" alt-text="The demo" lightbox="../media/network-glitch-network-filter-file-type-css.msft.png":::
-       Show CSS files only  
+    :::image type="complex" source="../media/network-glitch-network-filter-file-type-css.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-filter-file-type-css.msft.png":::
+       Nur CSS-Dateien anzeigen  
     :::image-end:::  
     
-1.  To also see scripts, hold `Control` \(Windows\) or `Command` \(macOS\) and then select **JS**.  
+1.  Wenn Sie auch Skripts anzeigen möchten, halten Sie `Control` \ (Windows \) oder `Command` \ (macOS \) gedrückt, und wählen Sie dann **js**aus.  
     
-    :::image type="complex" source="../media/network-glitch-network-filter-file-type-css-js.msft.png" alt-text="The demo" lightbox="../media/network-glitch-network-filter-file-type-css-js.msft.png":::
-       Show CSS and JS files only  
+    :::image type="complex" source="../media/network-glitch-network-filter-file-type-css-js.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-filter-file-type-css-js.msft.png":::
+       Nur CSS-und JS-Dateien anzeigen  
     :::image-end:::  
     
-1.  Select **All** to remove the filters and see all resources again.  
+1.  Wählen Sie **alle** aus, um die Filter zu entfernen und alle Ressourcen erneut anzuzeigen.  
     
-See [Filter requests][DevtoolsNetworkReferenceFilter] for other filtering workflows.  
+Weitere Informationen finden Sie unter [Filteranforderungen][DevtoolsNetworkReferenceFilter] für andere Filter Workflows.  
 
-## Block requests   
+## Anfragen blockieren   
 
-How does a page look and behave when some of the page resources are not available?  Does it fail completely, or is it still somewhat functional?  Block requests to find out:  
+Wie wird eine Seite aussehen und sich Verhalten, wenn einige Seitenressourcen nicht verfügbar sind?  Funktioniert es nicht vollständig, oder ist es immer noch etwas funktionell?  Anfragen blockieren, um Folgendes zu erfahren:  
 
-1.  Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
+1.  Drücken Sie `Control` + `Shift` + `P` \ (Windows \) oder `Command` + `Shift` + `P` \ (macOS \), um das **Befehlsmenü**zu öffnen.  
     
-    :::image type="complex" source="../media/network-glitch-network-cli-empty.msft.png" alt-text="The demo" lightbox="../media/network-glitch-network-cli-empty.msft.png":::
-       The **Command Menu**  
+    :::image type="complex" source="../media/network-glitch-network-cli-empty.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-cli-empty.msft.png":::
+       Das **Befehlsmenü**  
     :::image-end:::  
     
-1.  Type `block`, select **Show Request Blocking**, and press `Enter`.  
+1.  Geben `block` Sie die Option **Blockierungs Anforderung anzeigen**ein, und drücken Sie `Enter` .  
     
-    :::image type="complex" source="../media/network-glitch-network-cli-block.msft.png" alt-text="The demo" lightbox="../media/network-glitch-network-cli-block.msft.png":::
-       **Show Request Blocking**  
+    :::image type="complex" source="../media/network-glitch-network-cli-block.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-cli-block.msft.png":::
+       **Anforderungs Blockierung anzeigen**  
     :::image-end:::  
     
-1.  Select **Add Pattern** \(![Add Pattern][ImageAddIcon]\).  
-1.  Type `main.css`.  
+1.  Wählen Sie **Muster hinzufügen** \ ( ![ Muster hinzufügen ][ImageAddIcon] \) aus.  
+1.  Geben Sie `main.css` ein.  
     
-    :::image type="complex" source="../media/network-glitch-network-cli-block-add-pattern.msft.png" alt-text="The demo" lightbox="../media/network-glitch-network-cli-block-add-pattern.msft.png":::
-       Blocking `main.css`  
+    :::image type="complex" source="../media/network-glitch-network-cli-block-add-pattern.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-cli-block-add-pattern.msft.png":::
+       Blockieren `main.css`  
     :::image-end:::  
     
-1.  Select **Add**.  
-1.  Reload the page.  As expected, the styling of the page is slightly messed up because the main stylesheet has been blocked.  
+1.  Wählen Sie **Hinzufügen** aus.  
+1.  Laden Sie die Seite neu.  Wie erwartet, wird das Design der Seite etwas durcheinander gebracht, da das Haupt-Stylesheet blockiert wurde.  
     
     > [!NOTE]
-    > The `main.css` row in the Network Log.  The red text means that the resource was blocked.
+    > Die `main.css` Zeile im Netzwerkprotokoll.  Der rote Text bedeutet, dass die Ressource blockiert wurde.
     
-    :::image type="complex" source="../media/network-glitch-network-cli-block-main-css.msft.png" alt-text="The demo" lightbox="../media/network-glitch-network-cli-block-main-css.msft.png":::
-       `main.css` has been blocked  
+    :::image type="complex" source="../media/network-glitch-network-cli-block-main-css.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-cli-block-main-css.msft.png":::
+       `main.css` wurde blockiert  
     :::image-end:::  
     
-1.  Deselect the **Enable request blocking** checkbox.  
+1.  Deaktivieren Sie das Kontrollkästchen **Anforderungs Blockierung aktivieren** .  
 
-## Conclusion  
+## Fazit  
 
-Congratulations, you have completed the tutorial.  You now know how to use the **Network** panel in the Microsoft Edge DevTools!
+Herzlichen Glückwunsch, Sie haben das Lernprogramm abgeschlossen.  Sie wissen jetzt, wie Sie das **Netzwerk** Panel im Microsoft Edge-devtools verwenden!
 
 <!--
 
@@ -370,7 +370,7 @@ Congratulations, you have completed the tutorial.  You now know how to use the *
 
 -->  
 
-Check out the [Network Reference][DevtoolsNetworkReference] to discover more DevTools features related to inspecting network activity.  
+Schauen Sie sich die [Netzwerk Referenz][DevtoolsNetworkReference] an, um weitere devtools-Features im Zusammenhang mit der Überprüfung von Netzwerkaktivitäten zu entdecken.  
 
 <!--  
  
@@ -393,24 +393,24 @@ Check out the [Network Reference][DevtoolsNetworkReference] to discover more Dev
 
 <!--[CachePolicies]: ../../../web/tools/lighthouse/audits/cache-policy ""  -->  
 
-[DevToolsCustomizePlacement]: ../customize/placement.md "Change Microsoft Edge DevTools placement | Microsoft Docs"  
-[DevtoolsNetworkReference]: ./reference.md "Network analysis reference | Microsoft Docs"
-[DevtoolsNetworkReferenceFilter]: ./reference.md#filter-requests "Filter requests - Network analysis reference | Microsoft Docs"  
-[DevtoolsReferenceHideOverview]: ./reference.md#hide-the-overview-pane "Hide the Overview pane - Network analysis reference | Microsoft Docs"
-[DevtoolsReferenceProperty]: ./reference.md#filter-requests-by-properties "Filter requests by properties - Network analysis reference | Microsoft Docs"
-[DevToolsOpen]: ../open.md "Open Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsSpeedGetStarted]: ../speed/get-started.md "Optimize website speed with Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsCustomizePlacement]: ../customize/placement.md "Ändern der Position von Microsoft Edge devtools | Microsoft docs"  
+[DevtoolsNetworkReference]: ./reference.md "Netzwerkanalyse Referenz | Microsoft docs"
+[DevtoolsNetworkReferenceFilter]: ./reference.md#filter-requests "Filter Anforderungen – Netzwerkanalyse Referenz | Microsoft docs"  
+[DevtoolsReferenceHideOverview]: ./reference.md#hide-the-overview-pane "Ausblenden des Übersichtsbereichs-Netzwerkanalyse Referenz | Microsoft docs"
+[DevtoolsReferenceProperty]: ./reference.md#filter-requests-by-properties "Filtern von Anforderungen nach Eigenschaften-Netzwerkanalyse Referenz | Microsoft docs"
+[DevToolsOpen]: ../open.md "Öffnen Sie Microsoft Edge devtools | Microsoft docs"  
+[DevtoolsSpeedGetStarted]: ../speed/get-started.md "Optimieren der Website Geschwindigkeit mit Microsoft Edge devtools | Microsoft docs"  
 
-[GlitchNetworkGetStarted]: https://microsoft-edge-chromium-devtools.glitch.me/static/network/getstarted.html "Inspect Network Activity Demo | Glitch"  
+[GlitchNetworkGetStarted]: https://microsoft-edge-chromium-devtools.glitch.me/static/network/getstarted.html "Überprüfen der Netzwerk Aktivitäts Demo | Glitch"  
 
-[MDNHTTPCache]: https://developer.mozilla.org/docs/Web/HTTP/Caching "HTTP caching | MDN"  
+[MDNHTTPCache]: https://developer.mozilla.org/docs/Web/HTTP/Caching "HTTP-Caching | MDN"  
 
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/network/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
+> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
+> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/network/index) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
 
-[![Creative Commons License][CCby4Image]][CCA4IL]  
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
+[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

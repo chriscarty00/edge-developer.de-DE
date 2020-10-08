@@ -1,12 +1,12 @@
 ---
-description: Host a site on a development machine web server, and then access the content from an Android device.
-title: Access Local Servers
+description: Hosten Sie eine Website auf einem Entwicklungscomputer-Webserver, und greifen Sie dann auf den Inhalt eines Android-Geräts zu.
+title: Zugreifen auf lokale Server
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
 ms.openlocfilehash: 373cd7ce5cd262bad9fa5460bb2187241246cd75
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -32,90 +32,90 @@ ms.locfileid: "10993485"
 
 
 
-# Access local servers   
+# Zugreifen auf lokale Server   
 
 
 
 
-Host a site on a development machine web server, then access the content from an Android device.  
+Hosten Sie eine Website auf einem Entwicklungscomputer-Webserver, und greifen Sie dann auf den Inhalt eines Android-Geräts zu.  
 
-With a USB cable and Microsoft Edge DevTools, run a site from a development machine and then view the site on an Android device.  
+Führen Sie mit einem USB-Kabel und Microsoft Edge devtools eine Website von einem Entwicklungscomputer aus, und zeigen Sie dann die Website auf einem Android-Gerät an.  
 
-### Summary  
+### Zusammenfassung  
 
-*   Port forwarding enables you to view content hosted by the web server running in your development machine on your Android device.  
-*   If your web server is using a custom domain, set up your Android device to access the content at that domain with custom domain mapping.  
+*   Mit der Port Weiterleitung können Sie Inhalte anzeigen, die von dem Webserver gehostet werden, der auf Ihrem Android-Gerät auf Ihrem Entwicklungscomputer ausgeführt wird.  
+*   Wenn Ihr Webserver eine benutzerdefinierte Domäne verwendet, richten Sie Ihr Android-Gerät für den Zugriff auf den Inhalt dieser Domäne mit benutzerdefinierter Domänenzuordnung ein.  
 
-## Set up port forwarding   
+## Einrichten der Portweiterleitung   
 
-Port forwarding enables your Android device to access content that is being hosted on the web server running in your development machine.  Port forwarding works by creating a listening TCP port on your Android device that maps to a TCP port on your development machine.  Traffic between the ports travel through the USB connection between your Android device and development machine, so the connection does not depend on your network configuration.  
+Mit der Port Weiterleitung kann Ihr Android-Gerät auf Inhalte zugreifen, die auf dem Webserver gehostet werden, der auf Ihrem Entwicklungscomputer ausgeführt wird.  Die Port Weiterleitung funktioniert durch Erstellen eines abhörenden TCP-Ports auf Ihrem Android-Gerät, der einem TCP-Port auf dem Entwicklungscomputer zugeordnet ist.  Der Datenverkehr zwischen den Anschlüssen durchläuft die USB-Verbindung zwischen Ihrem Android-Gerät und dem Entwicklungscomputer, sodass die Verbindung nicht von Ihrer Netzwerkkonfiguration abhängt.  
 
-To enable port forwarding:  
+So aktivieren Sie die Portweiterleitung:  
 
-1.  Set up [remote debugging][RemoteDebuggingGettingStarted] between your development machine and your Android device.  When you are finished, you should see your Android device in the left-hand menu of the **Inspect Devices** dialog and a **Connected** status indicator.  
-1.  In the **Inspect Devices** dialog in DevTools, enable **Port forwarding**.  
-1.  Select **Add rule**.  
+1.  Richten Sie das [Remotedebuggen][RemoteDebuggingGettingStarted] zwischen Ihrem Entwicklungscomputer und Ihrem Android-Gerät ein.  Wenn Sie den Vorgang beenden, sollten Sie Ihr Android-Gerät im linken Menü des Dialogfelds " **Geräte prüfen** " und einer **verbundenen** Statusanzeige sehen.  
+1.  Aktivieren Sie im Dialogfeld **Geräte prüfen** in devtools die **Port Weiterleitung**.  
+1.  Wählen Sie **Regel hinzufügen**aus.  
     
-    :::image type="complex" source="../media/remote-debugging-remote-devices-devices-port-forwarding-add-rule.msft.png" alt-text="Adding a port forwarding rule" lightbox="../media/remote-debugging-remote-devices-devices-port-forwarding-add-rule.msft.png":::
-       Adding a port forwarding rule  
+    :::image type="complex" source="../media/remote-debugging-remote-devices-devices-port-forwarding-add-rule.msft.png" alt-text="Hinzufügen einer Port Weiterleitungsregel" lightbox="../media/remote-debugging-remote-devices-devices-port-forwarding-add-rule.msft.png":::
+       Hinzufügen einer Port Weiterleitungsregel  
     :::image-end:::  
     
-1.  In the **Device port** textbox on the left, enter the `localhost` port number from which you want to be able to access the site on your Android device.  For example, if you wanted to access the site from `localhost:5000` enter `5000`.  
-1.  In the **Local address** textbox on the right, enter the IP address or hostname on which your site is hosted on the web server running in your development machine, followed by the port number.  For example, if your site is running on `localhost:7331` enter `localhost:7331`.  
-1.  Select **Add**.  
+1.  Geben Sie im Textfeld **Device Port** auf der linken Seite die Portnummer ein, auf der `localhost` Sie auf Ihrem Android-Gerät auf die Website zugreifen können möchten.  Wenn Sie beispielsweise auf die Website von Enter aus zugreifen `localhost:5000` möchten `5000` .  
+1.  Geben Sie im Textfeld **lokale Adresse** auf der rechten Seite die IP-Adresse oder den Hostnamen ein, auf dem Ihre Website auf dem Webserver gehostet wird, der auf Ihrem Entwicklungscomputer ausgeführt wird, gefolgt von der Portnummer.  Beispiel: Wenn Ihre Website auf Enter ausgeführt wird `localhost:7331` `localhost:7331` .  
+1.  Wählen Sie **Hinzufügen** aus.  
     
-Port forwarding is now set up.  See the status indicator for the port forward on the tab on your device within the **Inspect Devices** dialog.  
+Die Port Weiterleitung ist nun eingerichtet.  Sehen Sie sich die Statusanzeige für den Port Forward auf der Registerkarte auf Ihrem Gerät im Dialogfeld " **Geräte überprüfen** " an.  
 
-:::image type="complex" source="../media/remote-debugging-remote-devices-devices-port-forwarding-5000-edge-user-agent.msft.png" alt-text="Adding a port forwarding rule" lightbox="../media/remote-debugging-remote-devices-devices-port-forwarding-5000-edge-user-agent.msft.png":::
-   Port forwarding status  
+:::image type="complex" source="../media/remote-debugging-remote-devices-devices-port-forwarding-5000-edge-user-agent.msft.png" alt-text="Hinzufügen einer Port Weiterleitungsregel" lightbox="../media/remote-debugging-remote-devices-devices-port-forwarding-5000-edge-user-agent.msft.png":::
+   Port Weiterleitungsstatus  
 :::image-end:::  
 
-To view the content, open up Microsoft Edge on your Android device and go to the `localhost` port that you specified in the **Device port** field.  For example, if you entered `5000` in the field, visit `localhost:5000`.  
+Wenn Sie den Inhalt anzeigen möchten, öffnen Sie Microsoft Edge auf Ihrem Android-Gerät, und wechseln Sie zu dem `localhost` Port, den Sie im Feld **Device Port** festgelegt haben.  Wenn Sie beispielsweise `5000` in das Feld eingegeben haben, besuchen Sie `localhost:5000` .  
 
-## Map to custom local domains   
+## Zuordnen zu benutzerdefinierten lokalen Domänen   
 
-Custom domain mapping enables you to view content on an Android device from a web server on your development machine that is using a custom domain.  
+Mit der benutzerdefinierten Domänenzuordnung können Sie Inhalte auf einem Android-Gerät von einem Webserver auf dem Entwicklungscomputer anzeigen, auf dem eine benutzerdefinierte Domäne verwendet wird.  
 
-For example, suppose that your site uses a third-party JavaScript library that only works on the domain `microsoft-edge.devtools`.  So, you create an entry in your `hosts` file on your development machine to map this domain to `localhost` \(for example, `127.0.0.1 microsoft-edge.devtools`\).  After setting up custom domain mapping and port forwarding, view the site on your Android device at the URL `microsoft-edge.devtools`.  
+Nehmen wir beispielsweise an, dass Ihre Website eine JavaScript-Bibliothek eines Drittanbieters verwendet, die nur in der Domäne funktioniert `microsoft-edge.devtools` .  So erstellen Sie einen Eintrag in Ihrer `hosts` Datei auf Ihrem Entwicklungscomputer, um diese Domäne an `localhost` \ (beispielsweise `127.0.0.1 microsoft-edge.devtools` \) zuzuordnen.  Nachdem Sie die benutzerdefinierte Domänenzuordnung und Portweiterleitung eingerichtet haben, können Sie die Website auf Ihrem Android-Gerät unter der URL anzeigen `microsoft-edge.devtools` .  
 
-### Set up port forwarding to proxy server  
+### Einrichten der Portweiterleitung an Proxy Server  
 
-To map a custom domain you must run a proxy server on your development machine.  Examples of proxy servers are [Charles][CharlesWebDebuggingProxy], [Squid][SquidOptimisingWebDelivery], and [Fiddler][FiddlerWebDebuggingProxy].  
+Wenn Sie eine benutzerdefinierte Domäne zuordnen möchten, müssen Sie einen Proxy Server auf Ihrem Entwicklungscomputer ausführen.  Beispiele für Proxy Server sind [Charles][CharlesWebDebuggingProxy], [squid][SquidOptimisingWebDelivery]und [Fiddler][FiddlerWebDebuggingProxy].  
 
-To set up port forwarding to a proxy:  
+So richten Sie die Portweiterleitung an einen Proxy ein:  
 
-1.  Run the proxy server and record the port that it is using.  
+1.  Führen Sie den Proxy Server aus, und notieren Sie den verwendeten Port.  
     
     > [!NOTE]
-    > The proxy server and your web server must run on different ports.  
+    > Der Proxy Server und Ihr Webserver müssen auf unterschiedlichen Ports ausgeführt werden.  
     
-1.  Set up [port forwarding](#set-up-port-forwarding) to your Android device.  For the **local address** field, enter `localhost:` followed by the port that your proxy server is running on.  For example, if it is running on port `8000`, visit `localhost:8000`.  In the **device port** field enter the number that you want your Android device to listen on, such as `3333`.  
+1.  Richten Sie die [Portweiterleitung](#set-up-port-forwarding) auf Ihr Android-Gerät ein.  Geben Sie für das Feld **lokale Adresse** `localhost:` den Port ein, auf dem Ihr Proxy Server ausgeführt wird.  Wenn Sie beispielsweise auf Port ausgeführt wird `8000` , besuchen Sie `localhost:8000` .  Geben Sie im Feld **Device Port** die Nummer ein, die Ihr Android-Gerät hören soll, beispielsweise `3333` .  
     
-### Configure proxy settings on your device  
+### Konfigurieren von Proxyeinstellungen auf Ihrem Gerät  
 
-Next, you need to configure your Android device to communicate with the proxy server.  
+Als nächstes müssen Sie Ihr Android-Gerät für die Kommunikation mit dem Proxy Server konfigurieren.  
 
-1.  On your Android device go to **Settings** > **Wi-Fi**.  
-1.  Long-press the name of the network to which you are currently connected.  
+1.  Wechseln Sie auf Ihrem Android-Gerät zu **Einstellungen**  >  **Wi-Fi**.  
+1.  Lange – drücken Sie den Namen des Netzwerks, mit dem Sie gerade verbunden sind.  
     
     > [!NOTE]
-    > Proxy settings apply per network.  
+    > Proxy Einstellungen gelten pro Netzwerk.  
     
-1.  Select **Modify network**.  
-1.  Select **Advanced options**.  The proxy settings display.  
-1.  Select the **Proxy** menu and select **Manual**.  
-1.  For the **Proxy hostname** field, enter `localhost`.  
-1.  For the **Proxy port** field, enter the port number that you entered for **device port** in the previous section.  
-1.  Select **Save**.  
+1.  Wählen Sie **Netzwerk ändern**aus.  
+1.  Wählen Sie **Erweiterte Optionen**aus.  Die Proxyeinstellungen werden angezeigt.  
+1.  Wählen Sie das **Proxy** -Menü und dann **manuell**aus.  
+1.  Geben Sie für das Feld **Proxy Hostname** ein `localhost` .  
+1.  Geben Sie im Feld **Proxy Port** die Portnummer ein, die Sie im vorherigen Abschnitt für den **Geräteanschluss** eingegeben haben.  
+1.  Wählen Sie **Speichern**.  
     
-With these settings, your device forwards all of its requests to the proxy on your development machine.  The proxy makes requests on behalf of your device, so requests to your customized local domain are properly resolved.  
+Mit diesen Einstellungen leitet Ihr Gerät alle seine Anforderungen an den Proxy auf dem Entwicklungscomputer weiter.  Der Proxy stellt Anforderungen für Ihr Gerät, damit Anforderungen an Ihre angepasste lokale Domäne ordnungsgemäß aufgelöst werden.  
 
-Now access custom domains on your Android device just like on the development machine.  
+Auf Ihrem Android-Gerät können Sie nun auf benutzerdefinierte Domänen zugreifen, genau wie auf dem Entwicklungscomputer.  
 
-If your web server is running off of a non-standard port, remember to specify the port when requesting the content from your Android device.  For example, if your web server is using the custom domain `microsoft-edge.devtools` on port `7331`, when you view the site from your Android device you should be using the URL `microsoft-edge.devtools:7331`.  
+Wenn Ihr Webserver von einem nicht standardmäßigen Port ausgeführt wird, denken Sie daran, den Port anzugeben, wenn Sie den Inhalt von Ihrem Android-Gerät anfordern.  Wenn Ihr Webserver beispielsweise die benutzerdefinierte Domäne `microsoft-edge.devtools` am Port verwendet `7331` , sollten Sie die URL verwenden, wenn Sie die Website von Ihrem Android-Gerät aus anzeigen `microsoft-edge.devtools:7331` .  
 
 > [!TIP]
-> To resume normal browsing, remember to revert the proxy settings on your Android device after you disconnect from the development machine.  
+> Wenn Sie das normale Browsen fortsetzen möchten, denken Sie daran, die Proxyeinstellungen auf Ihrem Android-Gerät zurückzusetzen, nachdem Sie die Verbindung mit dem Entwicklungscomputer getrennt haben.  
 
 <!--  
   
@@ -124,20 +124,20 @@ If your web server is running off of a non-standard port, remember to specify th
 -->  
 <!-- links -->  
 
-[RemoteDebuggingGettingStarted]: ./index.md "Get started with remote debugging Android devices | Microsoft Docs"  
+[RemoteDebuggingGettingStarted]: ./index.md "Erste Schritte mit dem Remotedebuggen von Android-Geräten | Microsoft docs"  
 
-[CharlesWebDebuggingProxy]: https://www.charlesproxy.com "Charles Web Debugging Proxy"  
+[CharlesWebDebuggingProxy]: https://www.charlesproxy.com "Charles Web Debugging-Proxy"  
 
-[SquidOptimisingWebDelivery]: https://www.squid-cache.org "squid : Optimising Web Delivery"  
+[SquidOptimisingWebDelivery]: https://www.squid-cache.org "Squid: Optimieren der Web-Zustellung"  
 
-[FiddlerWebDebuggingProxy]: https://www.telerik.com/fiddler "Fiddler - Free Web Debugging Proxy"  
+[FiddlerWebDebuggingProxy]: https://www.telerik.com/fiddler "Fiddler-Free Web Debugging Proxy"  
 
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/local-server) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) and [Meggin Kearney][MegginKearney] \(Tech Writer\).  
+> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
+> Die ursprüngliche Seite wird [hier](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/local-server) gefunden und von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) und [Meggin Kearney][MegginKearney] \ (Tech Writer \) erstellt.  
 
-[![Creative Commons License][CCby4Image]][CCA4IL]  
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
+[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

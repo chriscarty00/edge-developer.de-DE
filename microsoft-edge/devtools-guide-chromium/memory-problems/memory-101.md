@@ -1,12 +1,12 @@
 ---
-description: This section describes common terms used in memory analysis, and is applicable to a variety of memory profiling tools for different languages.
-title: Memory Terminology
+description: In diesem Abschnitt werden allgemeine Ausdrücke beschrieben, die in der Speicheranalyse verwendet werden, und Sie gelten für eine Vielzahl von Arbeitsspeicherprofil Tools für verschiedene Sprachen.
+title: Speicher Terminologie
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
 ms.openlocfilehash: 3455b05cf19f3aa5a69de5571ab3a24d5654dfe4
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -28,168 +28,168 @@ ms.locfileid: "10992750"
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-# Memory Terminology  
+# Speicher Terminologie  
 
-This section describes common terms used in memory analysis, and is applicable to a variety of memory profiling tools for different languages.  
+In diesem Abschnitt werden allgemeine Ausdrücke beschrieben, die in der Speicheranalyse verwendet werden, und Sie gelten für eine Vielzahl von Arbeitsspeicherprofil Tools für verschiedene Sprachen.  
 
-The terms and notions described here refer to the [Memory panel][DevtoolsMemoryProblemsHeapSnapshots].  If you have ever worked with either the Java, .NET, or some other memory profiler, then this may be a refresher.  
+Die hier beschriebenen Begriffe und Begriffe beziehen sich auf das [Speicher Panel][DevtoolsMemoryProblemsHeapSnapshots].  Wenn Sie jemals mit dem Java-, .net-oder einem anderen Speicher Profiler gearbeitet haben, ist dies möglicherweise eine Auffrischung.  
 
-## Object sizes  
+## Objektgrößen  
 
-Think of memory as a graph with primitive types \(like numbers and strings\) and objects \(associative arrays\).  It might visually be represented as a graph with a number of interconnected points as follows:  
+Denken Sie an Arbeitsspeicher als ein Diagramm mit primitiven Typen \ (wie Zahlen und Zeichenfolgen \) und Objekten \ (assoziative Arrays \).  Sie wird möglicherweise visuell als Diagramm mit einer Reihe von miteinander verbundenen Punkten wie folgt dargestellt:  
 
-:::image type="complex" source="../media/memory-problems-thinkgraph.msft.png" alt-text="Visual representation of memory" lightbox="../media/memory-problems-thinkgraph.msft.png":::
-   Visual representation of memory  
+:::image type="complex" source="../media/memory-problems-thinkgraph.msft.png" alt-text="Visuelle Darstellung des Arbeitsspeichers" lightbox="../media/memory-problems-thinkgraph.msft.png":::
+   Visuelle Darstellung des Arbeitsspeichers  
 :::image-end:::  
 
-An object may hold memory in two ways:  
+Ein Objekt kann Speicher auf zwei Arten enthalten:  
 
-*   Directly by the object.  
-*   Implicitly by holding references to other objects, and therefore preventing those objects from being automatically disposed by a garbage collector \(**GC** for short\).  
+*   Direkt vom Objekt.  
+*   Implizit durch Speichern von Verweisen auf andere Objekte, wodurch verhindert wird, dass diese Objekte automatisch von einem Garbage Collector entfernt werden \ (**GC** für Short \).  
 
-When working with the [Memory][DevtoolsMemoryProblemsHeapSnapshots] panel in DevTools \(a tool for investigating memory issues found under **Memory**\), you may find yourself looking at a few different columns of information.  Two that stand out are **Shallow Size** and **Retained Size**, but what do these represent?  
+Bei der Arbeit mit dem [Speicher][DevtoolsMemoryProblemsHeapSnapshots] Bereich in devtools \ (ein Tool zur Untersuchung von Speicherproblemen, die unter " **Arbeits**Speicher" gefunden wurden) finden Sie möglicherweise einige verschiedene Informationsspalten.  Zwei, die sich hervorheben, sind eine **flache Größe** und eine **Beibehaltungs Größe**, doch was stellen diese dar?  
 
-:::image type="complex" source="../media/memory-problems-shallow-retained.msft.png" alt-text="Visual representation of memory" lightbox="../media/memory-problems-shallow-retained.msft.png":::
-   Shallow and Retained Size  
+:::image type="complex" source="../media/memory-problems-shallow-retained.msft.png" alt-text="Visuelle Darstellung des Arbeitsspeichers" lightbox="../media/memory-problems-shallow-retained.msft.png":::
+   Flache und gespeicherte Größe  
 :::image-end:::  
 
-### Shallow size  
+### Flache Größe  
 
-This is the size of memory that is held by the object.  
+Dies ist die Größe des Speichers, der vom Objekt gehalten wird.  
 
-Typical JavaScript objects have some memory reserved for their description and for storing immediate values.  Usually, only arrays and strings are able to have a significant shallow size.  However, strings and external arrays often have their main storage in renderer memory, exposing only a small wrapper object on the JavaScript heap.  
+Typische JavaScript-Objekte verfügen über einen Speicherplatz, der für die Beschreibung reserviert ist, und zum Speichern unmittelbarer Werte.  In der Regel können nur Arrays und Zeichenfolgen eine beträchtliche flache Größe aufweisen.  Zeichenfolgen und externe Arrays verfügen jedoch häufig über Ihren Hauptspeicher im rendererspeicher, wodurch nur ein kleines Wrapperobjekt auf dem JavaScript-Heap verfügbar gemacht wird.  
 
-Renderer memory is all memory of the process where an inspected page is rendered: native memory + JS heap memory of the page + JS heap memory of all dedicated workers started by the page.  Nevertheless, even a small object is able to hold a large amount of memory indirectly, by preventing other objects from being disposed of by the automatic garbage collection process.  
+Der Renderer-Arbeitsspeicher ist der gesamte Arbeitsspeicher des Prozesses, in dem eine geprüfte Seite gerendert wird: nativer Arbeitsspeicher + js-Heapspeicher des Page + js-Heapspeichers aller dedizierten Arbeitskräfte, die von der Seite gestartet wurden.  Dennoch kann selbst ein kleines Objekt eine große Menge an Arbeitsspeicher indirekt aufnehmen, indem verhindert wird, dass andere Objekte vom automatischen Garbage Collection-Prozess verworfen werden.  
 
-### Retained size  
+### Beibehaltungs Größe  
 
-This is the size of memory that is freed once the object is deleted along with the dependent objects that were made unreachable from **Garbage Collector roots** \(GC roots\) .  
+Hierbei handelt es sich um die Größe des Arbeitsspeichers, der freigegeben wird, sobald das Objekt zusammen mit den abhängigen Objekten gelöscht wird, die aus den **Garbage Collector-Stämmen** (GC-Stämme \) nicht erreichbar sind.  
 
-**Garbage Collector roots** \(GC roots\) are made up of **handles** that are created \(either local or global\) when making a reference from native code to a JavaScript object outside of V8.  All such handles may be found within a heap snapshot under **GC roots** > **Handle scope** and **GC roots** > **Global handles**.  Describing the handles in this documentation without diving into details of the browser implementation may be confusing.  Both Garbage Collector (GC) roots and the handles are not something you need to worry about.  
+**Garbage Collector-Stämme** \ (GC-Stämme \) bestehen aus **Handles** , die \ (entweder lokal oder Global \) erstellt werden, wenn Sie einen Verweis vom systemeigenen Code auf ein JavaScript-Objekt außerhalb von V8 erstellen.  Alle derartigen Handles befinden sich möglicherweise in einem Heap-Snapshot unter **GC-Roots**  >  -**Handles** und globalen **GC-Stamm**  >  **Handles**.  Die Beschreibung der Handles in dieser Dokumentation, ohne die Details der Browser Implementierung zu untertauchen, ist möglicherweise verwirrend.  Sowohl Garbage Collector (GC)-Stämme als auch die Ziehpunkte sind keine Grund zur Sorge.  
 
-There are lots of internal GC roots, most of which are not interesting for the users.  From the applications standpoint there are following kinds of roots.  
+Es gibt viele interne GC-Stämme, von denen die meisten nicht für die Benutzer interessant sind.  Aus Sicht der Anwendungen gibt es folgende Arten von Stämmen:  
 
-*   Window global object \(in each iframe\).  There is a distance field in the heap snapshots which is the number of property references on the shortest retaining path from the window.  
-*   Document DOM tree consisting of all native DOM nodes reachable by traversing the document.  Not all of the nodes may have JS wrappers but if a node has a wrapper, it is alive while the document is alive.  
-*   Sometimes objects may be retained by the debugger context in the **Sources** panel and the **Console** \(for example after Console evaluation\).  Create heap snapshots with a cleared **Console** panel and no active breakpoints in the debugger in the **Sources** panel.
+*   Globales Window-Objekt \ (in jedem IFRAME \).  In den Heap-Schnappschüssen gibt es ein Entfernungs Feld, bei dem es sich um die Anzahl der Eigenschaftsverweise auf dem kürzesten Beibehaltungs Pfad aus dem Fenster handelt.  
+*   Dokument-DOM-Struktur, bestehend aus allen systemeigenen DOM-Knoten, die durch Durchlaufen des Dokuments erreichbar sind.  Nicht alle Knoten können js-Wrapper aufweisen, aber wenn ein Knoten über einen Wrapper verfügt, ist er lebendig, während das Dokument aktiv ist.  
+*   Manchmal werden Objekte im Debugger-Kontext im **Quellen** Panel und in der **Konsole** (beispielsweise nach der Konsolen Auswertung \) gespeichert.  Erstellen Sie Heap-Schnappschüsse mit einem gelöschten **Konsolen** Panel und keine aktiven Haltepunkte im Debugger im **Quellen** Panel.
 
 >[!TIP]
-> Clear the **Console** panel by running `clear()` and deactivate breakpoints in the **Sources** panel before taking a heap snapshot in the [Memory panel][DevtoolsMemoryProblemsHeapSnapshots].
+> Deaktivieren Sie die **Konsolen** Leiste, indem Sie die `clear()` Haltepunkte im **Quellen** Panel ausführen und deaktivieren, bevor Sie einen Heap-Schnappschuss im [Speicher Panel][DevtoolsMemoryProblemsHeapSnapshots]aufnehmen.
 
-The memory graph starts with a root, which may be the `window` object of the browser or the `Global` object of a Node.js module.  You do not control how this root object is garbage collected (GCd).  
+Der Speicher Graph beginnt mit einem Stamm, der das Objekt des `window` Browsers oder das `Global` Objekt eines Node.js Moduls sein kann.  Sie steuern nicht, wie dieses Stammobjekt Garbage Collection (GGT) ist.  
 
-:::image type="complex" source="../media/memory-problems-dontcontrol.msft.png" alt-text="Visual representation of memory" lightbox="../media/memory-problems-dontcontrol.msft.png":::
-   You are not able to control how the root object is garbage collected.  
+:::image type="complex" source="../media/memory-problems-dontcontrol.msft.png" alt-text="Visuelle Darstellung des Arbeitsspeichers" lightbox="../media/memory-problems-dontcontrol.msft.png":::
+   Sie können nicht steuern, wie das Stammobjekt als Garbage Collection erfasst wird.  
 :::image-end:::  
 
-Whatever is not reachable from the root gets garbage collected \(GCd\).  
+Was nicht über den Stamm erreichbar ist, erhält Garbage Collection \ (GGT \).  
 
 > [!NOTE]
-> Both the [Shallow size](#shallow-size) and [Retained size](#retained-size) columns represent data in bytes.  
+> Die Spalten " [flache Größe](#shallow-size) " und " [Größe beibehalten](#retained-size) " stellen Daten in Bytes dar.  
 
-## Objects retaining tree  
+## Objekte, die die Struktur beibehalten  
 
-The heap is a network of interconnected objects.  In the mathematical world, this structure is called a **graph** or memory graph.  A graph is constructed from **nodes** connected by means of **edges**, both of which are given labels.  
+Der Heap ist ein Netzwerk von miteinander verbundenen Objekten.  In der mathematischen Welt wird diese Struktur als **Diagramm** oder Speicher Diagramm bezeichnet.  Ein Diagramm wird aus **Knoten** erstellt, die über **Kanten**verbunden sind, wobei beide Bezeichnungen angegeben werden.  
 
-*   **Nodes** \(or **objects**\) are labelled using the name of the **constructor** function that was used to build them.  
-*   **Edges** are labelled using the names of **properties**.  
+*   **Knoten** \ (oder **Objekte**\) werden mit dem Namen der **Konstruktorfunktion** gekennzeichnet, die zum Erstellen verwendet wurde.  
+*   **Kanten** werden mit den Namen der **Eigenschaften**gekennzeichnet.  
 
-Learn [how to record a profile using the Heap Profiler][DevtoolsMemoryProblemsHeapSnapshots].  In the following figure, some of the eye-catching things that you may see in the Heap Snapshot recording in the [Memory panel][DevtoolsMemoryProblemsHeapSnapshots] include distance:  the distance from the Garbage Collector \(GC\) root.  If almost all the objects of the same type are at the same distance, and a few are at a bigger distance, that is something worth investigating.  
+Erfahren Sie [, wie Sie ein Profil mit dem Heap Profiler aufzeichnen][DevtoolsMemoryProblemsHeapSnapshots].  In der folgenden Abbildung sind einige der auffälligen Dinge, die bei der Aufzeichnung des Heap-Schnappschusses im [Speicher Panel][DevtoolsMemoryProblemsHeapSnapshots] angezeigt werden können, Distance: der Abstand vom Garbage Collector \ (GC \)-Stammverzeichnis.  Wenn sich fast alle Objekte desselben Typs im gleichen Abstand befinden und einige wenige in größerer Entfernung sind, ist das eine Untersuchung Wert.  
 
-:::image type="complex" source="../media/memory-problems-root.msft.png" alt-text="Visual representation of memory" lightbox="../media/memory-problems-root.msft.png":::
-   Distance from root  
+:::image type="complex" source="../media/memory-problems-root.msft.png" alt-text="Visuelle Darstellung des Arbeitsspeichers" lightbox="../media/memory-problems-root.msft.png":::
+   Abstand vom Stamm  
 :::image-end:::  
 
 ## Dominators  
 
-Dominator objects are comprised of a tree structure because each object has exactly one dominator.  A dominator of an object may lack direct references to an object it dominates; that is, the tree of the dominator is not a spanning tree of the graph.  
+Dominator-Objekte bestehen aus einer Struktur, da jedes Objekt genau einen Dominator hat.  Ein Dominator eines Objekts kann keine direkten Bezüge auf ein Objekt aufweisen, das es dominiert; Das bedeutet, dass die Struktur des Dominators keine Spanning-Struktur des Diagramms ist.  
 
-In the following figure, the following statement are true.  
+In der folgenden Abbildung ist die folgende Anweisung wahr.  
 
-*   Node 1 dominates node 2  
-*   Node 2 dominates nodes 3, 4 and 6  
-*   Node 3 dominates node 5  
-*   Node 5 dominates node 8  
-*   Node 6 dominates node 7  
+*   Knoten 1 dominiert Knoten 2  
+*   Knoten 2 dominiert die Knoten 3, 4 und 6  
+*   Knoten 3 dominiert Knoten 5  
+*   Knoten 5 dominiert Knoten 8  
+*   Knoten 6 dominiert Knoten 7  
 
-:::image type="complex" source="../media/memory-problems-dominatorsspanning.msft.png" alt-text="Visual representation of memory" lightbox="../media/memory-problems-dominatorsspanning.msft.png":::
-   Dominator tree structure  
+:::image type="complex" source="../media/memory-problems-dominatorsspanning.msft.png" alt-text="Visuelle Darstellung des Arbeitsspeichers" lightbox="../media/memory-problems-dominatorsspanning.msft.png":::
+   Struktur des Dominators  
 :::image-end:::  
 
-In the following figure, node `#3` is the dominator of `#10`, but `#7` also exists in every simple path from Garbage Collector \(GC\) to `#10`.  Therefore, an object B is a dominator of an object A if B exists in every simple path from the root to the object A.  
+In der folgenden Abbildung `#3` ist der Knoten der Dominator von `#10` , aber er ist `#7` auch in jedem einfachen Pfad vom Garbage Collector \ (GC \) bis `#10` .  Daher ist ein Objekt b ein Dominator eines Objekts a, wenn b in jedem einfachen Pfad vom Stamm zum Objekt a vorhanden ist.  
 
-:::image type="complex" source="../media/memory-problems-dominators.msft.gif" alt-text="Visual representation of memory" lightbox="../media/memory-problems-dominators.msft.gif":::
-   Animated dominator illustration  
+:::image type="complex" source="../media/memory-problems-dominators.msft.gif" alt-text="Visuelle Darstellung des Arbeitsspeichers" lightbox="../media/memory-problems-dominators.msft.gif":::
+   Animierte Dominator-Illustration  
 :::image-end:::  
 
-## V8 specifics  
+## V8-Besonderheiten  
 
-When profiling memory, it is helpful to understand why heap snapshots look a certain way.  This section describes some memory-related topics specifically corresponding to the **V8 JavaScript virtual machine** \(V8 VM or VM\).  
+Bei der Profilerstellung von Arbeitsspeicher ist es hilfreich zu verstehen, warum Heap Momentaufnahmen auf eine bestimmte Weise aussehen.  In diesem Abschnitt werden einige speicherbezogene Themen beschrieben, die speziell der **virtuellen V8-JavaScript-Maschine** \ (V8 VM oder VM \) entsprechen.  
 
-### JavaScript object representation  
+### JavaScript-Objektdarstellung  
 
-There are three primitive types:  
+Es gibt drei primitive Typen:  
 
-*   Numbers \(for example `3.14159...`\)  
-*   Booleans \(`true` or `false`\)  
-*   Strings \(for example `"Werner Heisenberg"`\)  
+*   Zahlen \ (Beispiel `3.14159...` : \)  
+*   Boolesche Werte \ ( `true` oder `false` \)  
+*   Zeichenfolgen \ (Beispiel `"Werner Heisenberg"` : \)  
 
-Primitives are not able to reference other values and are always leafs or terminating nodes.  
+Primitive können nicht auf andere Werte verweisen und sind immer Blatt-oder Endpunkt Knoten.  
 
-**Numbers** are able to be stored as either:  
+**Nummern** können entweder wie folgt gespeichert werden:  
 
-*   an immediate 31-bit integer values called **small integers** \(**SMI**s\), or  
-*   heap objects, referred to as **heap numbers**. Heap numbers are used for storing values that do not fit into the SMI form, such as **doubles**, or when a value needs to be **boxed**, such as setting properties on it.  
+*   eine direkte 31-Bit-Ganzzahl, die als **kleine ganze Zahlen** (**SMI**s \) bezeichnet wird, oder  
+*   Heap-Objekte, die als **Heap-Nummern**bezeichnet werden. Heap-Nummern werden zum Speichern von Werten verwendet, die nicht in das SMI-Formular passen, wie etwa **Doubles**, oder wenn ein Wert **geschachtelt**werden muss, wie beispielsweise das Festlegen von Eigenschaften.  
 
-**Strings** are able to be stored in either:  
+**Zeichenfolgen** können entweder in folgendem gespeichert werden:  
 
-*   the **VM heap**, or
-*   externally in the **memory of the renderer**.  A **wrapper object** is created and used for accessing external storage where, for example, script sources and other content that is received from the Web is stored, rather than copied onto the VM heap.
+*   der **VM-Heap**oder
+*   extern im **Speicher des Renderers**.  Ein **Wrapperobjekt** wird erstellt und für den Zugriff auf externen Speicher verwendet, wenn beispielsweise Skript Quellen und andere Inhalte, die aus dem Web empfangen werden, gespeichert werden, anstatt auf den VM-Heap kopiert zu werden.
 
-Memory for new JavaScript objects is allocated from a dedicated JavaScript heap \(or **VM heap**\).  These objects are managed by the garbage collector in V8 and therefore, stay alive as long as there is at least one strong reference to them.  
+Der Arbeitsspeicher für neue JavaScript-Objekte wird von einem dedizierten JavaScript-Heap zugeordnet \ (oder **VM-Heap**\).  Diese Objekte werden vom Garbage Collector in V8 verwaltet und bleiben daher so lange am Leben, wie es mindestens einen starken Bezug auf Sie gibt.  
 
-Anything not in the JavaScript heap is called a **native object**.  Native objects, in contrast to heap objects, are not managed by the V8 garbage collector throughout their lifetime, and may only be accessed from JavaScript using the JavaScript wrapper object.  
+Alles, was sich nicht im JavaScript-Heap befindet, wird als **systemeigenes Objekt**bezeichnet.  Systemeigene Objekte werden im Gegensatz zu Heap Objekten nicht vom V8-Garbage Collector während ihrer gesamten Lebensdauer verwaltet und können nur über JavaScript mit dem JavaScript-Wrapperobjekt aufgerufen werden.  
 
-**Cons string** is an object that consists of pairs of strings stored and then joined, and is a result of concatenation.  The joining of the **cons string** contents occurs only as needed. An example would be when a substring of a joined string needs to be constructed.
+**Cons String** ist ein Objekt, das aus Paaren von Zeichenfolgen besteht, die gespeichert und dann verknüpft sind und ein Ergebnis der Verkettung sind.  Die Verknüpfung des **Cons-Zeichenfolgen** Inhalts erfolgt nur bei Bedarf. Ein Beispiel wäre, wenn eine Teilzeichenfolge einer verknüpften Zeichenfolge erstellt werden muss.
 
-For example, if you concatenate `a` and `b`, you get a string `(a, b)` which represents the result of concatenation.  If you later concatenated `d` with that result, you get another **cons string**: `((a, b, d)`.  
+Wenn Sie beispielsweise verketten `a` und `b` erhalten Sie eine Zeichenfolge, die `(a, b)` das Ergebnis der Verkettung darstellt.  Wenn Sie später `d` mit diesem Ergebnis verkettet haben, erhalten Sie eine weitere **Cons-Zeichenfolge**: `((a, b, d)` .  
 
-**Array** is an object with numeric keys. **Arrays** are used extensively in the V8 VM for storing large amounts of data. Sets of key-value pairs, like dictionaries, are backed up by **arrays**.  
+**Matrix** ist ein Objekt mit numerischen Schlüsseln. **Arrays** werden in der V8-VM umfassend verwendet, um große Datenmengen zu speichern. Sätze von Schlüssel-Wert-Paaren, wie Wörterbücher, werden von **Arrays**gesichert.  
 
-A typical JavaScript object is stored as only one of two **array** types:  
+Ein typisches JavaScript-Objekt wird nur als einer von zwei **Array** Typen gespeichert:  
 
-*   named properties, and  
-*   numeric elements  
+*   benannte Eigenschaften und  
+*   numerische Elemente  
 
-When there are a small number of properties, the properties are stored internally in the JavaScript object.  
+Wenn eine geringe Anzahl von Eigenschaften vorhanden ist, werden die Eigenschaften intern im JavaScript-Objekt gespeichert.  
 
-**Map** is an object that describes both the kind of object it is and the layout. For example, maps are used to describe implicit object hierarchies for [fast property access][V8FastProperties].  
+**Map** ist ein Objekt, das sowohl die Art des Objekts als auch das Layout beschreibt. Karten werden beispielsweise verwendet, um implizite Objekthierarchien für den [schnellen Eigenschaftenzugriff][V8FastProperties]zu beschreiben.  
 
-### Object groups  
+### Objektgruppen  
 
-Each **native objects** group is made up of objects that hold mutual references to each other.  Consider, for example, a DOM subtree where every node has a link to the relative parent and links to the next child and next sibling, therefore forming a connected graph.  
+Jede Gruppe **systemeigene Objekte** besteht aus Objekten, die gegenseitige Bezüge aufeinander abhalten.  Nehmen Sie beispielsweise eine DOM-Unterstruktur in Frage, bei der jeder Knoten über einen Link zum relativen übergeordneten Element und Links zum nächsten untergeordneten Element und zum nächsten nebengeordneten Element verfügt, wodurch ein verbundenes Diagramm entsteht.  
 
 > [!NOTE]
-> Native objects are not represented in the JavaScript heap.  The lack of representation is why native objects have zero size. Instead, wrapper objects are created.  
+> Systemeigene Objekte werden nicht im JavaScript-Heap dargestellt.  Das Fehlen einer Darstellung ist der Grund dafür, dass systemeigene Objekte die Größe 0 aufweisen. Stattdessen werden Wrapper Objekte erstellt.  
 
-Each wrapper object holds a reference to the corresponding native object, for redirecting commands to it.  In turn, an object group holds wrapper objects.  However, this does not create an uncollectable cycle, as Garbage Collector \(GC\) is smart enough to release object groups whose wrappers are no longer referenced. But forgetting to release a single wrapper holds the whole group and associated wrappers.  
+Jedes Wrapperobjekt enthält einen Verweis auf das entsprechende systemeigene Objekt für die Umleitung von Befehlen an ihn.  Eine Objektgruppe enthält wiederum Wrapper Objekte.  Dadurch wird jedoch kein nicht sammelbarer Zyklus erstellt, da der Garbage Collector \ (GC \) intelligent genug ist, Objektgruppen freizugeben, deren Wrapper nicht mehr referenziert werden. Aber zu vergessen, einen einzelnen Wrapper freizugeben, enthält die gesamte Gruppe und zugehörige Wrapper.  
 
-## Getting in touch with the Microsoft Edge DevTools team  
+## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsMemoryProblemsHeapSnapshots]: ./heap-snapshots.md "How to Record Heap Snapshots | Microsoft Docs"  
+[DevtoolsMemoryProblemsHeapSnapshots]: ./heap-snapshots.md "Aufzeichnen von Heap-Snapshots | Microsoft docs"  
 
-[V8FastProperties]: https://v8.dev/blog/fast-properties "Fast properties in V8 | V8"  
+[V8FastProperties]: https://v8.dev/blog/fast-properties "Fast-Eigenschaften in V8 | V8"  
 
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/memory-problems/memory-101) and is authored by [Meggin Kearney][MegginKearney] \(Technical Writer\).  
+> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
+> Die ursprüngliche Seite wird [hier](https://developers.google.com/web/tools/chrome-devtools/memory-problems/memory-101) gefunden und von [Meggin Kearney][MegginKearney] (Technical Writer \) erstellt.  
 
-[![Creative Commons License][CCby4Image]][CCA4IL]  
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
+[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

@@ -1,12 +1,12 @@
 ---
-description: Use the Network panel to monitor and profile page resource requests
-title: DevTools - Network
+description: Verwenden des Netzwerk Panels zum Überwachen und Anzeigen von Seitenressourcen Anforderungen
+title: DevTools-Netzwerk
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools, network, load time, http, https, browser cache, HAR
+keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools, Netzwerk, Ladezeit, http, HTTPS, Browser-Cache, har
 ms.custom: seodec18
 ms.openlocfilehash: 0b190f5163f9b7a9f9920877a94577177053e4f6
 ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
@@ -17,205 +17,205 @@ ms.locfileid: "10567597"
 ---
 # Network
 
-Use the **Network** panel to monitor, inspect and profile the requests and responses sent over the wire. With it, you can:
+Verwenden Sie das **Netzwerk** Panel, um die über den Draht gesendeten Anfragen und Antworten zu überwachen, zu überprüfen und zu profilieren. Damit haben Sie folgende Möglichkeiten:
 
- - [Browse a record of all the resource requests](#network-summary) made by the page
- - [Measure the load time of your site](#summary-bar) for new and returning users 
- - [Inspect the headers, message bodies, parameters, and cookies](#request-details) exchanged between your page and the network
- - [Identify the network events causing bottlenecks](#timings) in the load time of your site
+ - Durch [Suchen eines Datensatzes aller Ressourcenanforderungen](#network-summary) , die von der Seite vorgenommen wurden
+ - [Messen der Ladezeit Ihrer Website](#summary-bar) für neue und wiederkehrende Benutzer 
+ - Über [Prüfen der Überschriften, Nachrichtentexte, Parameter und Cookies](#request-details) , die zwischen Ihrer Seite und dem Netzwerk ausgetauscht wurden
+ - [Ermitteln der Netzwerkereignisse](#timings) , die zu Engpässen beim Laden der Website führen
 
-![The Microsoft Edge  DevTools Network panel](./media/network.png)
+![Das Microsoft Edge devtools-Netzwerk Panel](./media/network.png)
 
-## Network summary
+## Netzwerk Zusammenfassung
 
-When you open  DevTools, network profiling is turned on by default. All the network traffic from your active browser tab is recorded in the network summary list, even while you are working in a different  DevTools panel than *Network*.
+Wenn Sie devtools öffnen, ist die Netzwerkprofil Erstellung standardmäßig aktiviert. Der gesamte Netzwerkdatenverkehr von der Registerkarte "aktiver Browser" wird in der Liste "Netzwerk Zusammenfassung" aufgezeichnet, auch wenn Sie in einem anderen devtools als dem *Netzwerk*arbeiten.
 
-![In-progress network profiling indicator](./media/network_profile_indicator.png)
+![In-Progress-Netzwerkprofil Erstellungs Indikator](./media/network_profile_indicator.png)
 
-### Toolbar
+### Symbolleiste
 
-The toolbar provides controls for profiling and filtering the network activity of your page. 
+Die Symbolleiste bietet Steuerelemente zum profilieren und Filtern der Netzwerkaktivität Ihrer Seite. 
 
-![Network profiler toolbar](./media/network_toolbar.png)
+![Netzwerk Profiler-Symbolleiste](./media/network_toolbar.png)
 
-1. **Start / Stop profiling session**: By default, network profiling is turned on, and network traffic will be logged in the [**Network profiler**](#network-request-list) list. You can turn off network capture with the **Stop** (`Ctrl+E`) button.
+1. **Starten/Beenden der Profilerstellungssitzung**: Standardmäßig ist die Netzwerkprofil Erstellung aktiviert, und der Netzwerkdatenverkehr wird in der Liste " [**Netzwerk Profiler**](#network-request-list) " protokolliert. Mit der Schaltfläche **Stopp** () können Sie die Netzwerkaufzeichnung deaktivieren `Ctrl+E` .
 
-2. **Export as HAR**: You can save the current network profiling session (`Ctrl+S`) as a JSON-formatted [HTTP Archive (HAR)](https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/HAR/Overview.html) file. 
+2. **Als har exportieren**: Sie können die aktuelle Netzwerkprofil Erstellungs Sitzung ( `Ctrl+S` ) als JSON-formatierte [http-Archivdatei (har)](https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/HAR/Overview.html) speichern. 
 
-3. **Content type filter**: Filter the network request list by specific content requests (*Documents, Style sheets, Images, Scripts, Media, Fonts, XHR, Other*). By default all content types are shown.
+3. **Inhaltstyp Filter**: Filtern Sie die Liste der Netzwerkanforderungen nach bestimmten Inhaltsanforderungen (*Dokumente, Stylesheets, Bilder, Skripts, Medien, Schriftarten, XMLHttpRequest usw*.). Standardmäßig werden alle Inhaltstypen angezeigt.
 
-4. **Find**: Filter (`Ctrl+F`) the network request list by entry names (resource paths) containing a specified search string.
+4. **Suchen**: Filtern ( `Ctrl+F` ) Sie die Netzwerk Anforderungsliste nach Eintragsnamen (Ressourcenpfade), die eine angegebene Suchzeichenfolge enthalten.
 
-5. **Always refresh from server**: Depressing this button will force page resources to load from the network rather than the browser cache. You can refresh the page from  network a single time by pressing `Ctrl+F5`.
+5. **Immer vom Server aktualisieren**: Wenn Sie diese Schaltfläche drücken, wird das Laden von Seitenressourcen aus dem Netzwerk und nicht vom Browsercache erzwungen. Sie können die Seite aus dem Netzwerk ein einziges Mal aktualisieren, indem Sie auf klicken `Ctrl+F5` .
 
-6. **Bypass Service Worker for all network requests**: Disable your registered service workers as network proxies. 
+6. **Bypass Service Worker für alle Netzwerkanforderungen**: Deaktivieren Sie Ihre registrierten Servicemitarbeiter als Netzwerk Proxys. 
 
-7. Clear buttons
+7. Schaltflächen Löschen
 
-   - **Clear cache**: Removes all resources stored in the browser cache (and emulates a first-time experience loading the page).
-   - **Clear cookies**: Removes all cookies for the given domain (and emulates a first-time experience of the site).
-   - **Clear entries on navigate**: Recorded traffic is cleared upon page navigation. This is turned on by default.
-   - **Clear session**: Clears all network request entries from the **Network summary** list.
+   - **Cache löschen**: entfernt alle im Browsercache gespeicherten Ressourcen (und emuliert eine erstmalige Benutzeroberfläche beim Laden der Seite).
+   - **Cookies löschen**: entfernt alle Cookies für die angegebene Domäne (und emuliert eine erstmalige Nutzung der Website).
+   - **Einträge beim Navigieren löschen: der**aufgezeichnete Datenverkehr wird bei der Seitennavigation gelöscht. Dies ist standardmäßig aktiviert.
+   - **Sitzung löschen**: Löscht alle Netzwerk Anforderungs Einträge aus der **Netzwerk Zusammenfassungs** Liste.
 
-### Network request list
+### Liste der Netzwerkanforderungen
 
-All network traffic is recorded to a list (until cleared upon navigation, manually cleared, or  DevTools are closed). Clicking on any entry will open a more [detailed view of the request](#request-details).
+Der gesamte Netzwerkdatenverkehr wird in einer Liste aufgezeichnet (bis zum Zeitpunkt der Navigation, manuelles Löschen oder devtools geschlossen). Wenn Sie auf einen Eintrag klicken, wird eine [detailliertere Ansicht der Anfrage](#request-details)geöffnet.
 
-![Network request list](./media/network_request_list.png)
+![Liste der Netzwerkanforderungen](./media/network_request_list.png)
 
-The network request list includes the following info: 
+Die Netzwerk Anforderungsliste enthält die folgenden Informationen: 
 
-Column | Beschreibung 
+Spalte | Beschreibung 
 :------------ | :------------- 
-**Name** | Name and URL path of the request
-**Protocol** |  Type of protocol for the request (such as *HTTPS, HTTP/2*)
-**Method** |    [HTTP method](https://developer.mozilla.org/docs/Web/HTTP/Methods) used for the request
-**Result** |    [HTTP response status](https://developer.mozilla.org/docs/Web/HTTP/Status)  code
-**Content type** |  Type of media requested ([MIME type](https://en.wikipedia.org/wiki/Media_type))
-**Received** | Size of the response as delivered by the server (not calculated for cached responses)
-**Time** |  Time to load the server response (not calculated for cached responses)
-**Initiator** | Subsystem responsible for initiating the request (such as *Parser, Redirect, Script, Other*)
-**Timeline** | Visual timeline for the network events of the request (such as *Stalled, Resolving(DNS), Connecting(TCP), SSL, Sending, Waiting(TTFB), Downloading*). Hovering over the chart provides the more granular breakdown of network [network timings](#timings)).
+**Name** | Name und URL-Pfad der Anforderung
+**Protokoll** |  Der Typ des Protokolls für die Anforderung (wie *https; HTTP/2*)
+**Methode** |    Für die Anforderung verwendete [http-Methode](https://developer.mozilla.org/docs/Web/HTTP/Methods)
+**Ergebnis** |    [HTTP-Antwortstatus](https://developer.mozilla.org/docs/Web/HTTP/Status)  Code
+**Inhaltstyp** |  Art des angeforderten Mediums ([MIME-Typ](https://en.wikipedia.org/wiki/Media_type))
+**Empfangen** | Die Größe der Antwort, wie Sie vom Server bereitgestellt wurde (wird nicht für zwischengespeicherte Antworten berechnet)
+**Zeit** |  Zeit zum Laden der Serverantwort (nicht für zwischengespeicherte Antworten berechnet)
+**Initiator** | Subsystem, das für das Initiieren der Anforderung verantwortlich ist (wie *Parser, Redirect, Skript usw*.)
+**Zeitachse** | Visuelle Zeitachse für die Netzwerkereignisse der Anforderung (wie *verzögert, auflösen (DNS), verbinden (TCP), SSL, senden, warten (TTFB), herunterladen*). Wenn Sie den Mauszeiger über das Diagramm bewegen, erhalten Sie eine genauere Unterbrechung der Netzwerk [Anzeige](#timings)dauern.
 
-### Summary bar
+### Zusammenfassungs Leiste
 
-The bar at the bottom of **Network** panel summarizes the total number of HTTP network errors, requests, data transfered, and load times during the network profiling session (i.e., since  DevTools were opened and recording network traffic).
+Die Leiste am unteren Rand des **Netzwerk** Panels fasst die Gesamtzahl der HTTP-Netzwerkfehler,-Anforderungen,-Datenübertragungen und-Ladezeiten während der Netzwerkprofil Erstellungs Sitzung zusammen (d. h., seit devtools geöffnet wurden und den Netzwerkdatenverkehr aufzeichnen).
 
-![Network summary bar](./media/network_summary_bar.png)
+![Netzwerk Zusammenfassungs Leiste](./media/network_summary_bar.png)
 
-**Elapsed time** means the time between the start of the profiling session and when the last resource was downloaded from the network. Resources fetched from the browser cache do not accrue time to this number. 
+**Verstrichene Zeit** bedeutet die Zeit zwischen dem Start der Profilerstellungssitzung und dem Zeitpunkt, zu dem die letzte Ressource aus dem Netzwerk heruntergeladen wurde. Ressourcen, die aus dem Browser-Cache abgerufen werden, werden dieser Nummer nicht Zeit gutgeschrieben. 
 
-**DOM load time** means the time between the start of the profiling session and when the [DOMContentLoaded](https://developer.mozilla.org/docs/Web/Events/DOMContentLoaded) event was fired to indicate that the structure of the page document has been loaded and parsed (though not necessarily any stylesheets, images or subframes).
+**DOM Load Time** bezeichnet die Zeit zwischen dem Beginn der Profilerstellungssitzung und dem Zeitpunkt, zu dem das [DOMContentLoaded](https://developer.mozilla.org/docs/Web/Events/DOMContentLoaded) -Ereignis ausgelöst wurde, um anzugeben, dass die Struktur des Seitendokuments geladen und analysiert wurde (aber nicht unbedingt alle Stylesheets, Bilder oder unter Frames).
 
-**Page load time** time means the time between the start of the profiling session and when the [load](https://developer.mozilla.org/docs/Web/Events/load) event was fired to indicate that the page document (and all its resources) has been fully loaded.
+**"Seitenladezeit"** bedeutet die Zeit zwischen dem Start der Profilerstellungssitzung und dem Zeitpunkt, zu dem das [Load](https://developer.mozilla.org/docs/Web/Events/load) -Ereignis ausgelöst wurde, um anzugeben, dass das Seiten Dokument (und alle zugehörigen Ressourcen) vollständig geladen wurde.
 
-## Request details
+## Details anfordern
 
-Clicking on any entry in the [**Network summary**](#network-summary) list will open the [**Request details**](#request-details) pane with further information in each of the following tabs.
+Wenn Sie auf einen Eintrag in der [**Netzwerk Zusammenfassungs**](#network-summary) Liste klicken, wird der Bereich [**Anforderungsdetails**](#request-details) mit weiteren Informationen auf den folgenden Registerkarten geöffnet.
 
-![Network request details pane](./media/network_request_details.png)
+![Bereich ' Netzwerk Anforderungsdetails '](./media/network_request_details.png)
 
-### Headers
-Displays the [HTTP headers](https://developer.mozilla.org/docs/Web/HTTP/Headers) sent to and received from the server. Right-click on any header entry to copy it (`Ctrl+C`) to the clipboard. You can also multi-select entries by holding down the `Shift` key or select all (`Ctrl+A`).
+### Header
+Zeigt die [http-Header](https://developer.mozilla.org/docs/Web/HTTP/Headers) an, die vom Server gesendet und empfangen wurden. Klicken Sie mit der rechten Maustaste auf einen beliebigen kopfzeileneintrag, um ihn ( `Ctrl+C` ) in die Zwischenablage zu kopieren. Sie können auch eine Mehrfachauswahl von Einträgen durchführen, indem Sie die Taste gedrückt halten `Shift` oder alle auswählen ( `Ctrl+A` ).
 
-### Body
-Displays the body data (if available) of the request and response payloads.
+### Textkörper
+Zeigt die Textkörper Daten (sofern verfügbar) der Anforderungs-und Antwort Nutzlast an.
 
-Image content is displayed with dimensions and size data.
+Bildinhalte werden mit Bemaßungen und Größendaten angezeigt.
 
-Text content appears in a (read-only) editor with options to format minified content with **Pretty print** and/or **Word wrap** for easier readability.
+Text Inhalte werden in einem (schreibgeschützten) Editor mit Optionen zum Formatieren von minimierte-Inhalten mit **Pretty Print** und/oder **Word Wrap** angezeigt, um die Lesbarkeit zu verbessern.
 
-![Body tab of the request details pane](./media/network_details_body.png)
+![Registerkarte "Text" im Bereich "Anforderungsdetails"](./media/network_details_body.png)
 
-### Parameters
-Displays query string parameters for GET requests. While the parameters of POST requests are sent in the headers, GET requests include them in the URL. They're broken out here for easier reading.
+### Parameter
+Zeigt Abfragezeichenfolgenparameter für Get-Anforderungen an. Während die Parameter von Post-Anforderungen in den Kopfzeilen gesendet werden, werden Sie von Get-Anforderungen in die URL eingefügt. Sie sind hier ausgebrochen, um einfacher zu lesen.
 
-Right-click on any row to copy it (`Ctrl+C`) to the clipboard. You can also multi-select entries by holding down the `Shift` key or select all (`Ctrl+A`).
+Klicken Sie mit der rechten Maustaste auf eine beliebige Zeile, um Sie ( `Ctrl+C` ) in die Zwischenablage zu kopieren. Sie können auch eine Mehrfachauswahl von Einträgen durchführen, indem Sie die Taste gedrückt halten `Shift` oder alle auswählen ( `Ctrl+A` ).
 
 ### Cookies
-Displays cookies that are sent or received as key/value pairs.
+Zeigt Cookies an, die als Schlüssel-Wert-Paare gesendet oder empfangen werden.
 
-Right-click on any row to copy it (`Ctrl+C`) to the clipboard. You can also multi-select entries by holding down the `Shift` key or select all (`Ctrl+A`).
+Klicken Sie mit der rechten Maustaste auf eine beliebige Zeile, um Sie ( `Ctrl+C` ) in die Zwischenablage zu kopieren. Sie können auch eine Mehrfachauswahl von Einträgen durchführen, indem Sie die Taste gedrückt halten `Shift` oder alle auswählen ( `Ctrl+A` ).
 
-You can clear the stored cookies for the given domain from the [Toolbar](#network-summary) (**Clear cookies** button). 
+Sie können die gespeicherten Cookies für die angegebene Domäne über die [Symbolleiste](#network-summary) löschen (Schaltfläche "**Cookies löschen** "). 
 
 ### Timings
 
-The **Timings** tab provides a timeline of network events involved in the loading of the selected resource. This is similar to the information found in the *Timeline* column of the [Network request list](#network-request-list), but also includes the events leading up to the request being sent over the wire, such as time spent waiting (*Stalled*) in the request queue, DNS resolution, and establishing the TCP connection. 
+Die Registerkarte **Anzeige** Dauer enthält eine Zeitachse mit Netzwerkereignissen, die am Laden der ausgewählten Ressource beteiligt sind. Dies ähnelt den Informationen, die in der Spalte " *Zeitachse* " der [Netzwerk Anforderungsliste](#network-request-list)enthalten sind, enthält aber auch die Ereignisse, die zu der Anforderung führen, die über den Draht gesendet wird*Stalled*, wie etwa die Wartezeit in der Anforderungswarteschlange, die DNS-Auflösung und das Einrichten der TCP-Verbindung. 
 
-![Timings tab of the request details pane](./media/network_details_timings.png)
+![Registerkarte "Anzeigedauern" im Bereich "Anforderungsdetails"](./media/network_details_timings.png)
 
-Redirections to/from other resources are noted, and clicking on the link will set focus to that resource in the network [request details](#request details) pane.
+Umleitungen zu/von anderen Ressourcen werden notiert, und durch Klicken auf den Link wird der Fokus auf diese Ressource im Bereich Netzwerk [Anforderungsdetails](#request details) gesetzt.
 
-Resouces loaded from the cache are not affected by network latency, so no network *Timings* chart will display.
+Resouces, die aus dem Cache geladen werden, sind von der Netzwerklatenz nicht betroffen, daher wird *kein Diagramm für Netzwerk Anzeigedauern* angezeigt.
 
-![Redirected resource loaded from the cache](./media/network_details_timings_cache_redirect.png)
+![Umgeleitete Ressource, die aus dem Cache geladen wurde](./media/network_details_timings_cache_redirect.png)
 
-Here are the different network events you might see for a given resource, in chronological order:
+Hier sind die verschiedenen Netzwerkereignisse, die für eine bestimmte Ressource möglicherweise in chronologischer Reihenfolge angezeigt werden:
 
-#### Stalled
+#### Blockiert
 
-Time spent waiting for an available network connection in the request queue. For HTTP 1.0/1.1, Microsoft Edge allows a maximum of six (6) simultaneous TCP connections per hostname. 
+Zeit, die auf eine verfügbare Netzwerkverbindung in der Anforderungswarteschlange wartet. Für HTTP 1.0/1.1 ermöglicht Microsoft Edge maximal sechs (6) gleichzeitige TCP-Verbindungen pro Hostname. 
 
-#### Resolving (DNS)
+#### Auflösen (DNS)
 
-Time spent looking up the IP address for the hostname of the resource in the DNS ([Domain Name System](https://en.wikipedia.org/wiki/Domain_Name_System)).
+Zeit, die die IP-Adresse für den Hostnamen der Ressource im DNS ([Domain Name System](https://en.wikipedia.org/wiki/Domain_Name_System)) nachschlagen soll.
 
-#### Connecting (TCP)
+#### Verbinden (TCP)
 
-Time spent establishing the TCP ([Transmission Control Protocol](https://en.wikipedia.org/wiki/Transmission_Control_Protocol)) connection.
+Zeit, die für das Einrichten der TCP-Verbindung ([Transmission Control Protocol](https://en.wikipedia.org/wiki/Transmission_Control_Protocol)) aufgewendet wurde.
 
 #### SSL
 
-Time spent negotiating a SSL ([Secure Sockets Layer](https://en.wikipedia.org/wiki/Transport_Layer_Security))  connection with the [proxy server](https://en.wikipedia.org/wiki/Proxy_server) for the host.
+Zeit, die für die Aushandlung einer SSL-Verbindung ([Secure Sockets Layer](https://en.wikipedia.org/wiki/Transport_Layer_Security)) mit dem [Proxy Server](https://en.wikipedia.org/wiki/Proxy_server) für den Host aufgewendet wurde.
 
-#### Sending
+#### Senden
 
-Time spent sending the resource request.
+Der Zeitaufwand für das Senden der Ressourcenanforderung.
 
-#### Waiting (TTFB)
+#### Warten (TTFB)
 
-Time spent waiting for the first byte of the response from the host server ("time to first byte", or *TTFB*).
+Die Wartezeit für das erste Byte der Antwort vom Hostserver ("Time to First Byte" oder *TTFB*).
 
-#### Downloading
+#### Herunterladen
 
-Time spent reading the response from the server.
+Die Zeit, die beim Lesen der Antwort vom Server aufgewendet wurde.
 
-## Shortcuts
+## Verknüpfungen
 
-| Action                         | Shortcut     |
+| Aktion                         | Tastenkombination     |
 |:-------------------------------|:-------------|
-| Start / Stop profiling session | `Ctrl` + `E` |
-| Export as HAR                  | `Ctrl` + `S` |
-| Find                           | `Ctrl` + `F` |
-| Copy                           | `Ctrl` + `C` |
+| Starten/Beenden der Profilerstellungssitzung | `Ctrl` + `E` |
+| Als har exportieren                  | `Ctrl` + `S` |
+| Suchen                           | `Ctrl` + `F` |
+| Kopieren                           | `Ctrl` + `C` |
 
-## Known Issues
+## Bekannte Probleme
 
-### The network collection agent failed to start.
+### Der Netzwerk Sammlungs-Agent konnte nicht gestartet werden.
 
-If you see this error message: **The network collection agent failed to start** in the Network tool, follow these steps for a workaround.
+Wenn diese Fehlermeldung angezeigt wird: Fehler beim **Starten des Netzwerk Sammlungs-Agents** im Netzwerktool, führen Sie die folgenden Schritte aus, um eine Problemumgehung zu erhalten.
 
-1. Press `Windows Key` + `R`.
+1. Drücken Sie `Windows Key`  +  `R` .
 
-2. In the Run dialog, enter **services.msc**.
-![known-issues-1](./media/known_issues_1.PNG)
+2. Geben Sie im Dialogfeld Ausführen den **Dienst "Services. msc**" ein.
+![Bekannte Probleme-1](./media/known_issues_1.PNG)
 
-3. Locate the **Microsoft (R) Diagnostics Hub Standard Collector Service** and right-click it.
-![known-issues-2](./media/known_issues_2.PNG)
+3. Suchen Sie den **Microsoft (R) Diagnostics Hub Standard-Kollektor Dienst** , und klicken Sie mit der rechten Maustaste darauf.
+![Bekannte Probleme-2](./media/known_issues_2.PNG)
 
-4. Restart the **Microsoft (R) Diagnostics Hub Standard Collector Service**.
-![known-issues-3](./media/known_issues_3.PNG)
+4. Starten Sie den **Microsoft (R) Diagnostics Hub Standard-Kollektor Dienst**erneut.
+![Bekannte Probleme-3](./media/known_issues_3.PNG)
 
-5. Close the Microsoft Edge Developer Tools and the tab. Open a new tab, navigate to your page, and press `F12`.
+5. Schließen Sie die Microsoft Edge-Entwickler Tools und die Registerkarte. Öffnen Sie eine neue Registerkarte, navigieren Sie zu Ihrer Seite, und drücken Sie `F12` .
 
-6. You should now see a Play badge next to **Network** and the network requests for your webpage.
-![known-issues-4](./media/known_issues_4-network.PNG)
+6. Neben **Netzwerk** und Netzwerkanforderungen für Ihre Webseite sollte nun ein Play-Signal angezeigt werden.
+![Bekannte Probleme-4](./media/known_issues_4-network.PNG)
 
-Still running into problems? Please send us your feedback using the **Send feedback** icon! 
+Gibt es immer noch Probleme? Senden Sie uns Ihr Feedback über das Symbol **Feedback senden** ! 
 
-![known-issues-5](./media/known_issues_5.PNG)
+![Bekannte Probleme-5](./media/known_issues_5.PNG)
 
-### The network collection agent failed to stop.
+### Fehler beim Beenden des Netzwerk Sammlungs-Agents.
 
-If you see this error message: **The network collection agent failed to stop** in the Network tool, follow these steps for a workaround.
+Wenn diese Fehlermeldung angezeigt wird: Fehler beim **Beenden des Netzwerk Sammlungs-Agents** im Netzwerktool, führen Sie die folgenden Schritte aus, um eine Problemumgehung zu erhalten.
 
-1. Press `Windows Key` + `R`.
+1. Drücken Sie `Windows Key`  +  `R` .
 
-2. In the Run dialog, enter **services.msc**.
-![known-issues-1](./media/known_issues_1.PNG)
+2. Geben Sie im Dialogfeld Ausführen den **Dienst "Services. msc**" ein.
+![Bekannte Probleme-1](./media/known_issues_1.PNG)
 
-3. Locate the **Microsoft (R) Diagnostics Hub Standard Collector Service** and right-click it.
-![known-issues-2](./media/known_issues_2.PNG)
+3. Suchen Sie den **Microsoft (R) Diagnostics Hub Standard-Kollektor Dienst** , und klicken Sie mit der rechten Maustaste darauf.
+![Bekannte Probleme-2](./media/known_issues_2.PNG)
 
-4. Restart the **Microsoft (R) Diagnostics Hub Standard Collector Service**.
-![known-issues-3](./media/known_issues_3.PNG)
+4. Starten Sie den **Microsoft (R) Diagnostics Hub Standard-Kollektor Dienst**erneut.
+![Bekannte Probleme-3](./media/known_issues_3.PNG)
 
-5. Close the Microsoft Edge Developer Tools and the tab. Open a new tab, navigate to your page, and press `F12`.
+5. Schließen Sie die Microsoft Edge-Entwickler Tools und die Registerkarte. Öffnen Sie eine neue Registerkarte, navigieren Sie zu Ihrer Seite, und drücken Sie `F12` .
 
-6. You should now see a Play badge next to **Network** and the network requests for your webpage.
-![known-issues-4](./media/known_issues_4-network.PNG)
+6. Neben **Netzwerk** und Netzwerkanforderungen für Ihre Webseite sollte nun ein Play-Signal angezeigt werden.
+![Bekannte Probleme-4](./media/known_issues_4-network.PNG)
 
-Still running into problems? Please send us your feedback using the **Send feedback** icon! 
+Gibt es immer noch Probleme? Senden Sie uns Ihr Feedback über das Symbol **Feedback senden** ! 
 
-![known-issues-5](./media/known_issues_5.PNG)
+![Bekannte Probleme-5](./media/known_issues_5.PNG)

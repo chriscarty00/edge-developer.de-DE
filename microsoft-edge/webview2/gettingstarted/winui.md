@@ -47,7 +47,7 @@ Beginnen Sie mit einem einfachen Desktopprojekt, das ein einzelnes Hauptfenster 
     *   Zielversion: **Windows 10, Version 1903 (Build 18362)** oder höher  
     *   Minimale Version: **Windows 10, Version 1803 (Build 17134)**.  
     
-    :::image type="complex" source="./media/winui-gettingstarted-projecttype.png" alt-text="Das neue Dialogfeld "universelle Windows-Plattform" mit ausgewählten Werten für Zielversion und Mindestversion." lightbox="./media/winui-gettingstarted-projecttype.png":::
+    :::image type="complex" source="./media/winui-gettingstarted-projecttype.png" alt-text="Dialogfeld zum Erstellen von Visual Studio-Projekten für WinUI" lightbox="./media/winui-gettingstarted-projecttype.png":::
        Das neue Dialogfeld "universelle Windows-Plattform" mit ausgewählten Werten für Zielversion und Mindestversion.
     :::image-end:::  
     
@@ -117,7 +117,7 @@ Fügen Sie dem Projekt als nächstes ein WebView2-Steuerelement hinzu.
     
 1.  Wählen Sie aus `F5` , um Ihr Projekt zu erstellen und auszuführen.  Vergewissern Sie sich, dass Ihr WebView2-Steuerelement angezeigt wird [https://www.microsoft.com][|::ref1::|Main] .  
     
-    :::image type="complex" source="./media/winui-gettingstarted-part3.png" alt-text="Ein WebView2-Steuerelement, das die Microsoft.com-Website anzeigt" lightbox="./media/winui-gettingstarted-part3.png":::
+    :::image type="complex" source="./media/winui-gettingstarted-part3.png" alt-text="Dialogfeld zum Erstellen von Visual Studio-Projekten für WinUI" lightbox="./media/winui-gettingstarted-part3.png":::
        Ein WebView2-Steuerelement, das die Microsoft.com-Website anzeigt.  
     :::image-end:::  
     
@@ -177,7 +177,7 @@ Ermöglichen Sie Benutzern, die Webseite zu steuern, die in Ihrem WebView2-Steue
     > [!NOTE]
     > Stellen Sie sicher, dass Sie vollständige URLs in der Adressleiste verwenden. `ArgumentException` Ausnahmen werden ausgelöst, wenn die URL nicht mit `http://` oder beginnt `https://` .  
     
-    :::image type="complex" source="./media/winui-gettingstarted-bing.png" alt-text="„Bing.com“" lightbox="./media/winui-gettingstarted-bing.png":::
+    :::image type="complex" source="./media/winui-gettingstarted-bing.png" alt-text="Dialogfeld zum Erstellen von Visual Studio-Projekten für WinUI" lightbox="./media/winui-gettingstarted-bing.png":::
        „Bing.com“  
     :::image-end:::  
     
@@ -251,7 +251,7 @@ private void EnsureHttps(WebView2 sender, WebView2NavigationStartingEventArgs ar
 
 Wählen Sie aus `F5` , um Ihr Projekt zu erstellen und auszuführen.  Vergewissern Sie sich, dass Ihre Anwendung eine Warnung anzeigt, wenn Sie zu einer Website navigieren, die kein HTTPS verwendet.  
 
-:::image type="complex" source="./media/winui-gettingstarted-script.png" alt-text="WebView2-Steuerelement mit einem Warnungsdialogfeld" lightbox="./media/winui-gettingstarted-script.png":::
+:::image type="complex" source="./media/winui-gettingstarted-script.png" alt-text="Dialogfeld zum Erstellen von Visual Studio-Projekten für WinUI" lightbox="./media/winui-gettingstarted-script.png":::
    WebView2-Steuerelement mit einem Warnungsdialogfeld
 :::image-end:::  
 

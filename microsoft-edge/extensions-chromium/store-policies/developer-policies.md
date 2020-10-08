@@ -1,12 +1,12 @@
 ---
-description: Microsoft Edge Addons Catalog Developer Policies.
-title: Microsoft Edge Addons Catalog Developer Policies
+description: Microsoft Edge Addons-Katalog-Entwicklerrichtlinien.
+title: Entwicklerrichtlinien für den Katalog für Microsoft Edge-Add-Ons
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
+keywords: Edge-Chromium, Erweiterungen-Entwicklung, Browser-Erweiterungen, Addons, Partner Center, Entwickler
 ms.openlocfilehash: f71767cc4cd887ce9351202dd06732760299816d
 ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
@@ -14,328 +14,328 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 09/15/2020
 ms.locfileid: "11015709"
 ---
-# Microsoft Edge Addons Catalog Developer Policies  
+# Entwicklerrichtlinien für den Katalog für Microsoft Edge-Add-Ons  
 
-## Introduction and Objective of this document  
+## Einführung und Ziel dieses Dokuments  
 
-Thank you for your interest in developing Extensions for the Microsoft Edge Addons catalog.  The Microsoft Edge Addons Catalog Developer Policies \(Addons Catalog Developer Policies\) apply to your Extensions, including your submission of Extensions through [Partner Center][MicrosoftPartnerCenter] and the provision of such Extensions through the Microsoft Edge Addons.  
+Vielen Dank für Ihr Interesse an der Entwicklung von Erweiterungen für den Microsoft Edge Addons-Katalog.  Die Microsoft Edge Addons-Katalog-Entwicklerrichtlinien \ (Addons-Katalog-Entwicklerrichtlinien \) gelten für Ihre Erweiterungen, einschließlich ihrer Übermittlung von Erweiterungen über das [Partner Center][MicrosoftPartnerCenter] und die Bereitstellungsolcher Erweiterungen über die Microsoft Edge-Add-ons.  
 
-## Principles  
+## Prinzipien  
 
-A few principles to get you started:  
+Zunächst einige wichtige Grundregeln:  
 
-*   You should offer unique and distinct value within your Extensions for Microsoft Edge.  Provide a compelling reason to download your Extensions from the Microsoft Edge Addons catalog \(Microsoft Edge Addons\).  
-*   You must not mislead our joint users about what your Extension does, who is offering it, and so on.  
-*   You must not attempt to cheat users, the system or the ecosystem.  There is no place in our Microsoft Edge Addons for any kind of fraud; be it ratings and review manipulation, credit card fraud or other fraudulent activity.  
+*   Sie sollten innerhalb Ihrer Erweiterungen für Microsoft Edge einen eindeutigen und eindeutigen Wert anbieten.  Bieten Sie einen zwingenden Grund, Ihre Erweiterungen aus dem Microsoft Edge Addons-Katalog herunterzuladen \ (Microsoft Edge Addons \).  
+*   Sie dürfen die gemeinsamen Benutzer nicht darüber täuschen, was Ihre Erweiterung tut, wer Sie anbietet usw.  
+*   Sie dürfen nicht versuchen, Benutzer, das System oder das Ökosystem zu betrügen.  Es gibt keinen Platz in unseren Microsoft Edge-Addons für jegliche Art von Betrug. seien es Bewertungen und Überprüfung von Manipulationen, Kreditkartenbetrug oder anderen betrügerischen Aktivitäten.  
 
-Adhering to these Addons Catalog Developer Policies should help you make choices that enhance the appeal and audience of your Extension.  
+Durch die Einhaltung dieser Addons-Katalog-Entwicklerrichtlinien sollten Sie Entscheidungen treffen können, die die Attraktivität und das Publikum ihrer Erweiterung verbessern.  
 
-Your Extensions are crucial to the experience of hundreds of millions of users.  We look forward to experiencing what you create and are thrilled to help deliver your Extensions to the world.  
+Ihre Erweiterungen sind entscheidend für die Erfahrung von Hunderten von Millionen von Benutzern.  Wir freuen uns darauf, das zu erleben, was Sie schaffen, und freuen uns, Ihnen bei der Bereitstellung Ihrer Erweiterungen zur Welt zu helfen.  
 
-## 1. Product Policies  
+## 1. Produktrichtlinien  
 
-### 1.1 Distinct Function & Value; Accurate Representation  
+### 1,1 Distinct-Funktion & Wert; Genaue Darstellung  
 
-Your Extension and associated metadata must accurately and clearly reflect the source, functionality, and features that you describe.  
+Ihre Erweiterung und die zugehörigen Metadaten müssen die Quelle, die Funktionalität und die Features, die Sie beschreiben, genau und deutlich widerspiegeln.  
 
-#### 1.1.1 Extensions must have a single purpose  
+#### 1.1.1 Erweiterungen müssen einen einzigen Zweck haben  
 
-Your Extension must have a single purpose with narrow functionality.  
+Ihre Erweiterung muss einen einzigen Zweck mit eingeschränkter Funktionalität aufweisen.  
 
-#### 1.1.2 Describe your Extension  
+#### 1.1.2 Beschreibung ihrer Erweiterung  
 
-All aspects of your Extension should accurately describe the functions, features and any important limitations of your Extension, including required or supported input devices.  The value proposition of your Extension must be clear during the first run experience.  Your Extension may not use a name or icon similar to that of other Extensions, and must not claim to represent a company, government body, or other entity if you do not have permission to make that representation.  
+Alle Aspekte ihrer Erweiterung sollten die Funktionen, Funktionen und wichtigen Einschränkungen ihrer Erweiterung, einschließlich erforderlicher oder unterstützter Eingabegeräte, genau beschreiben.  Der Wert Vorschlag für Ihre Erweiterung muss während der ersten Ausführung klar sein.  Ihre Erweiterung darf keinen Namen oder ein Symbol ähnlich wie bei anderen Erweiterungen verwenden und darf nicht behaupten, ein Unternehmen, eine staatliche Einrichtung oder eine andere Einrichtung zu vertreten, wenn Sie nicht berechtigt sind, diese Vertretung zu veranlassen.  
 
-#### 1.1.3 Functionality  
+#### 1.1.3-Funktionalität  
 
-Your Extension must be fully functional.  
+Ihre Erweiterung muss voll funktionsfähig sein.  
 
-#### 1.1.4 Search and Discovery  
+#### 1.1.4 suchen und entdecken  
 
-Search terms may not exceed seven unique terms and should be relevant to your Extension.  
+Suchbegriffe dürfen sieben eindeutige Begriffe nicht überschreiten und sollten für Ihre Erweiterung relevant sein.  
 
-#### 1.1.5 Provide appropriate details  
+#### 1.1.5 angemessene Angaben liefern  
 
-You must provide distinct and informative details about your Extension and the functionality in listing \(metadata\) for your Extension.  Your Extension must provide a valuable and quality user experience.  Your Extension must also have an active presence in Microsoft Edge Addons.  
+Sie müssen unterschiedliche und informative Informationen zu ihrer Erweiterung und den Funktionen im Eintrag \ (Metadaten \) für Ihre Erweiterung angeben.  Ihre Erweiterung muss eine wertvolle und hochwertige Benutzererfahrung bieten.  Ihre Erweiterung muss auch in Microsoft Edge-Addons aktiv sein.  
 
-#### 1.1.6 Stability and Performance  
+#### 1.1.6 Stabilität und Leistung  
 
-Your Extension must not negatively impact the performance or stability of Microsoft Edge.  
+Ihre Erweiterung darf sich nicht negativ auf die Leistung oder Stabilität von Microsoft Edge auswirken.  
 
-#### 1.1.7 Obfuscation  
+#### 1.1.7-Verschleierung  
 
-Extensions with obfuscated code are not allowed.  This includes code within the Extension package as well as any external code or resource fetched from the web.  You may be asked to refactor parts of your code if it is not reviewable.  
+Erweiterungen mit verborgenem Code sind nicht zulässig.  Dazu gehören Code innerhalb des Erweiterungspakets sowie alle externen Codes oder Ressourcen, die aus dem Internet abgerufen werden.  Sie werden möglicherweise aufgefordert, Teile Ihres Codes zu umgestalten, wenn diese nicht überarbeitet werden können.  
 
-#### 1.1.8 Altering Browser Settings  
+#### 1.1.8 ändern von Browser Einstellungen  
 
-Your Extension must **not, without appropriate user consent**, alter, or appear to alter, browser functionality or settings including, but not limited to: the address bar search provider and suggestions, the start or home page, the new tab page, and adding or removing favorite.  
+Ihre Erweiterung darf keine Browserfunktionen oder-Einstellungen, einschließlich, aber nicht eingeschränkt auf: der Adressleisten-Suchanbieter und-Vorschläge, die Start-oder Startseite, die neue Registerkarte und das Hinzufügen oder Entfernen von Favoriten, **ohne die entsprechende Zustimmung des Benutzers**ändern oder diese ändern.  
 
-Any alteration to the browser settings should be explicitly documented in the description of the Extension.  
+Eine Änderung der Browsereinstellungen sollte in der Beschreibung der Erweiterung ausdrücklich dokumentiert werden.  
 
-Your Extension may only revise key settings to replace a Microsoft webpage or service with that of a third-party \(such as require use of a third-party search engine or set the home page to a third-party web property\) if you are employed by or otherwise associated with such third-party.  
+Ihre Erweiterung kann nur die Schlüsseleinstellungen überprüfen, um eine Microsoft-Webseite oder einen Dienst durch die eines Drittanbieters zu ersetzen, wie beispielsweise die Verwendung einer Drittanbieter-Suchmaschine oder das Festlegen der Startseite auf eine Drittanbieter-webeigenschaft, wenn Sie mit dieser Drittpartei beschäftigt oder anderweitig verbunden sind.  
 
-### 1.2 Security  
+### 1,2-Sicherheit  
 
-Your Extension must not jeopardize or compromise user security, or the security or functionality of the device, system or related systems.  
+Ihre Erweiterung darf die Benutzersicherheit oder die Sicherheit oder Funktionalität des Geräts, des Systems oder verwandter Systeme nicht gefährden oder gefährden.  
 
-#### 1.2.1 Content Security Policies  
+#### 1.2.1 Inhalts Sicherheitsrichtlinien  
 
 > [!NOTE]
-> If you make any changes to your Extension beyond the described functionality, any changes to code must be compliant with the [Microsoft Edge content security policy][MicrosoftEdgeContentSecurityPolicyRemoteScript].  Example: Your Extension should not download a remote script and subsequently run that script in a manner that is not consistent with the described functionality.  
+> Wenn Sie Änderungen an ihrer Erweiterung über die beschriebene Funktionalität hinaus vornehmen, müssen alle Änderungen am Code mit der [Sicherheitsrichtlinie für Microsoft Edge-Inhalte][MicrosoftEdgeContentSecurityPolicyRemoteScript]kompatibel sein.  Beispiel: Ihre Erweiterung sollte kein Remoteskript herunterladen und anschließend das Skript auf eine Weise ausführen, die nicht mit den beschriebenen Funktionen konsistent ist.  
 
-#### 1.2.2 Unwanted and Malicious Software  
+#### 1.2.2 unerwünschte und bösartige Software  
 
-Your Extension must not contain or enable malware as defined by the Microsoft criteria for [Unwanted and Malicious Software][MicrosoftIdentifiesMalwareUnwantedApplications].  
+Ihre Erweiterung darf keine Malware enthalten oder aktivieren, wie Sie in den Microsoft-Kriterien für [unerwünschte und bösartige Software][MicrosoftIdentifiesMalwareUnwantedApplications]definiert ist.  
 
-#### 1.2.3 Dependency on other software  
+#### 1.2.3 Abhängigkeit von anderer Software  
 
-Your Extension may depend on non-integrated software \(such as another product, module, or service\) to deliver the primary functionality, provided you disclose the dependency in the description  
+Ihre Erweiterung kann von nicht integrierter Software (wie einem anderen Produkt, Modul oder Dienst) abhängen, um die primäre Funktionalität bereitzustellen, vorausgesetzt, Sie geben die Abhängigkeit in der Beschreibung an.  
 
-#### 1.2.4 Extensions Update  
+#### 1.2.4-Erweiterungen aktualisieren  
 
-Unless otherwise permitted by Microsoft, your Extensions must be updated only through Microsoft Edge Addons.  
+Sofern von Microsoft nicht anderweitig zugelassen, müssen Ihre Erweiterungen nur über Microsoft Edge-Add-ons aktualisiert werden.  
 
-### 1.3 Product is Testable  
-The Extension must be testable.  If it is not possible to test your Extension for any reason, including, but not limited to, the items below, your Extension may fail this requirement.  
+### 1,3-Produkt kann getestet werden  
+Die Erweiterung muss getestet werden.  Wenn es nicht möglich ist, ihre Erweiterung aus irgendeinem Grund zu testen, einschließlich, aber nicht darauf, die nachstehenden Elemente zu begrenzen, kann Ihre Erweiterung diese Anforderung nicht erfüllen.  
 
-#### 1.3.1 User Credentials  
-If your Extension requires login credentials, provide a working demo account using the **Notes for certification** field.  
+#### 1.3.1 Benutzeranmeldeinformationen  
+Wenn für Ihre Erweiterung Anmeldeinformationen erforderlich sind, geben Sie ein funktionierendes Demokonto unter Verwendung des Felds **Hinweise für Zertifizierung** ein.  
 
-#### 1.3.2 Availability of services  
+#### 1.3.2 Verfügbarkeit von Diensten  
 
-If your Extension requires access to a server, the server must be functional to verify that it works correctly.  
+Wenn für Ihre Erweiterung Zugriff auf einen Server erforderlich ist, muss der Server funktionsfähig sein, um sicherzustellen, dass er ordnungsgemäß funktioniert.  
 
-### 1.4 Usability  
+### 1,4 Usability  
 
-Your Extension must meet Extension Store standards for usability, including, but not limited to, those listed in the subsections below.  
+Ihre Erweiterung muss den Erweiterungsspeicher Standards für die Benutzerfreundlichkeit entsprechen, einschließlich, aber nicht ausschließlich, die in den folgenden Unterabschnitten aufgeführt sind.  
 
-#### 1.4.1 Compatibility across platforms  
+#### 1.4.1 plattformübergreifende Kompatibilität  
 
-Extensions should be compatible with Microsoft Edge on all the devices and platforms on which they may be downloaded.  If an Extension is downloaded on a device with which it is not compatible, it should detect that at launch and display a message to the user detailing the requirements that devices must meet in order to be compatible with your Extension.  
+Erweiterungen sollten mit Microsoft Edge auf allen Geräten und Plattformen kompatibel sein, auf denen Sie heruntergeladen werden können.  Wenn eine Erweiterung auf einem Gerät heruntergeladen wird, mit dem Sie nicht kompatibel ist, sollte Sie diese beim Start erkennen und eine Meldung an den Benutzer anzeigen, in der die Anforderungen aufgeführt sind, die die Geräte erfüllen müssen, damit Sie mit ihrer Erweiterung kompatibel sind.  
 
-#### 1.4.2 User Experience  
+#### 1.4.2 Benutzererfahrung  
 
-The Extension must start up promptly and must stay responsive to user input.  Extensions must continue to run and remain responsive to user input.  Extensions must shut down gracefully and not close unexpectedly.  The Extension should handle exceptions and remain responsive to user input after the exception is handled.  
+Die Erweiterung muss sofort gestartet werden und muss für die Benutzereingabe ansprechbar sein.  Erweiterungen müssen weiterhin ausgeführt werden und reagieren weiterhin auf die Benutzereingabe.  Erweiterungen müssen ordnungsgemäß heruntergefahren und nicht unerwartet geschlossen werden.  Die Erweiterung sollte Ausnahmen behandeln und weiterhin auf Benutzereingaben reagieren, nachdem die Ausnahme behandelt wurde.  
 
-### 1.5 Personal Information  
+### 1,5 personenbezogene Informationen  
 
-The following requirements apply to Extensions that access Personal Information.  Personal Information includes all information or data that identifies or could be used to identify a person, or that is associated with such information or data.  
+Die folgenden Anforderungen gelten für Erweiterungen, die auf persönliche Informationen zugreifen.  Zu den personenbezogenen Informationen gehören alle Informationen oder Daten, die zur Identifizierung einer Person oder zur Verwendung solcher Informationen oder Daten verwendet werden können.  
 
-#### 1.5.1 Collect Personal Information only when necessary  
+#### 1.5.1 Erfassen persönlicher Informationen nur bei Bedarf  
 
-Your Extension may collect, access, use, or transmit Personal Information \(including web browsing activity\); only if required by and only for use in a prominently disclosed, user-facing feature.  
+Ihre Erweiterung kann persönliche Informationen erfassen, darauf zugreifen, Sie verwenden oder übertragen \ (einschließlich der Aktivitäten im Web-Browsing \); nur bei Bedarf von und nur zur Verwendung in einer prominent offenbarten, nutzerorientierten Funktion.  
 
-#### 1.5.2 Maintain a privacy policy  
+#### 1.5.2 aufrecht erhalten einer Datenschutzrichtlinie  
 
-Regardless of whether your Extension accesses, collects, or transmits Personal Information; you must provide prominent notice of and comply with your privacy policy if required by law.  Your privacy policy must inform users of the Personal Information accessed, collected, or transmitted by your Extension, how that information is used, stored, and secured, and indicate the types of parties to whom it is disclosed.  Your privacy policy must describe the controls that users have over the use and sharing of their information, how they access their information, and it must comply with applicable laws and regulations.  Your privacy policy must be kept up-to-date as you add new features and functionality to your Extension.  
+Unabhängig davon, ob Ihre Durchwahl personenbezogene Informationen zugreift, sammelt oder überträgt; Wenn gesetzlich vorgeschrieben, müssen Sie Ihre Datenschutzrichtlinien bekannt machen und diese einhalten.  Ihre Datenschutzrichtlinien müssen die Nutzer über die persönlichen Informationen informieren, die von ihrer Durchwahl abgerufen, erfasst oder übertragen werden, wie diese Informationen verwendet, gespeichert und gesichert werden, und die Typen der Parteien angeben, denen Sie bekannt gegeben werden.  Ihre Datenschutzrichtlinien müssen die Steuerelemente beschreiben, die Nutzer über die Nutzung und die Weitergabe Ihrer Informationen haben, wie Sie auf Ihre Informationen zugreifen, und Sie müssen die geltenden Gesetze und Vorschriften einhalten.  Ihre Datenschutzrichtlinien müssen auf dem neuesten Stand gehalten werden, wenn Sie Ihrer Erweiterung neue Funktionen und Funktionen hinzufügen.  
 
-If you provide Microsoft with your privacy policy, you agree to permit Microsoft to share such privacy policy with users of your Extension.  
+Wenn Sie Microsoft Ihre Datenschutzrichtlinien zur Verfügung stellen, erklären Sie sich damit einverstanden, Microsoft die Möglichkeit zu geben, diese Datenschutzrichtlinien mit Nutzern ihrer Durchwahl zu teilen.  
 
-#### 1.5.3 Sharing data with third parties  
+#### 1.5.3 Freigeben von Daten an Dritte  
 
-You may publish the Personal Information of users of your Extension to an outside service or third-party through your Extension or associated metadata only after obtaining opt-in consent from those users.  Opt-in consent means the users give their express permission in the user interface of your Extension for the requested activity, after you:  
+Sie können die persönlichen Informationen der Nutzer ihrer Durchwahl an einen externen Dienst oder Drittanbieter über Ihre Erweiterung oder zugehörige Metadaten nur veröffentlichen, nachdem Sie die Zustimmung dieser Nutzer erhalten haben.  Einwilligung in die Zustimmung bedeutet, dass die Benutzer Ihre ausdrückliche Genehmigung auf der Benutzeroberfläche Ihrer Durchwahl für die angeforderte Aktivität erteilen, nachdem Sie:  
 
-*   Describe to your users how the information is accessed, used or shared and indicate the types of parties to whom it is disclosed, and  
-*   Provide your users a mechanism in the Extension user interface through which they have the option to later rescind the permission and opt-out.  
+*   Beschreiben Sie Ihren Benutzern, wie die Informationen abgerufen, verwendet oder freigegeben werden, und geben Sie an, welche Arten von Parteien Sie offen legen, und  
+*   Stellen Sie Ihren Benutzern einen Mechanismus auf der Benutzeroberfläche der Erweiterung zur Verfügung, über den Sie die Möglichkeit haben, die Berechtigung später zu widerrufen und abzumelden.  
 
-#### 1.5.4 Sharing information of non-Users  
+#### 1.5.4 Freigeben von Informationen für nicht-Benutzer  
 
-If you publish a person's Personal Information to an outside service or third-party through your Extension or the metadata, but the person whose information is being shared is not a user of your Extension;  
+Wenn Sie die persönlichen Informationen einer Person über Ihre Erweiterung oder die Metadaten an einen externen Dienst oder Drittanbieter veröffentlichen, die Person, deren Informationen freigegeben werden, jedoch kein Nutzer ihrer Durchwahl ist;  
 
-1.  You must obtain express written consent to publish that Personal Information.  
-1.  You must permit the person whose information is shared to withdraw that consent at any time.  
-1.  Your privacy policy must clearly disclose that you may collect personal information in this manner.  
-1.  If required by applicable law you must delete the Personal Information of any individual upon request, including individuals whose information you collect in this manner.  
-1.  If your Extension provides users with access to another person's Personal Information, this requirement also applies.  
+1.  Sie müssen die ausdrückliche schriftliche Zustimmung zur Veröffentlichung dieser personenbezogenen Informationen erhalten.  
+1.  Sie müssen der Person, deren Informationen freigegeben sind, die Zustimmung jederzeit zurückziehen.  
+1.  Ihre Datenschutzrichtlinie muss klar offen legen, dass Sie personenbezogene Informationen auf diese Weise erfassen können.  
+1.  Wenn dies nach geltendem Recht erforderlich ist, müssen Sie die persönlichen Informationen jeder Person auf Anfrage löschen, einschließlich Personen, deren Informationen Sie auf diese Weise sammeln.  
+1.  Wenn Ihre Erweiterung Benutzern den Zugriff auf die persönlichen Informationen einer anderen Person gewährt, gilt diese Anforderung auch.  
 
-#### 1.5.5 Transmit information securely  
+#### 1.5.5 Informationen sicher übertragen  
 
-If your Extension collects, stores, or transmits Personal Information; it must do so securely by using modern cryptography methods.  
+Wenn Ihre Durchwahl personenbezogene Informationen sammelt, speichert oder überträgt; Dies muss mithilfe moderner kryptografischer Methoden sicher erfolgen.  
 
-#### 1.5.6 Highly sensitive information  
+#### 1.5.6 hochsensible Informationen  
 
-Your Extension must not collect, store, or transmit highly sensitive personal information, such as health or financial data, unless the information is related to the functionality of your Extension.  Your Extension must also obtain express user consent before collecting, storing, or transmitting such information.  
+Ihre Erweiterung darf keine vertraulichen persönlichen Informationen wie Gesundheits-oder Finanzdaten erfassen, speichern oder übertragen, es sei denn, die Informationen beziehen sich auf die Funktionalität ihrer Erweiterung.  Ihre Erweiterung muss auch die ausdrückliche Zustimmung des Nutzers einholen, bevor diese Informationen gesammelt, gespeichert oder übermittelt werden.  
 
-### 1.6 Permissions  
+### 1,6-Berechtigungen  
 
-Your Extension must only request those permissions that are necessary for functioning.  You must provide a description of how your Extension works.  Your Extension must only perform as described.  Your Extension may not request permission for capabilities that go beyond the capabilities required to perform and function as declared.  
+Ihre Erweiterung darf nur die Berechtigungen anfordern, die für die Funktion erforderlich sind.  Sie müssen eine Beschreibung der Funktionsweise der Erweiterung angeben.  Ihre Erweiterung darf nur wie beschrieben ausgeführt werden.  Ihre Erweiterung fordert möglicherweise keine Berechtigung für Funktionen an, die über die Funktionen hinausgehen, die für die Ausführung und Funktion als deklariert erforderlich sind.  
 
-### 1.7 Localization  
+### 1,7-Lokalisierung  
 
-You should localize your Extension for all languages that the Extension claims to support.  The text of the description of your Extension should be localized in each language that you declare.  
-If your Extension is localized such that some features are not available in a localized version, you must clearly state or display the limits of localization in the Extension description. The experience provided by an Extension must be reasonably similar in all languages that it supports.  
+Sie sollten die Erweiterung für alle Sprachen lokalisieren, die von der Erweiterung unterstützt werden.  Der Text der Beschreibung ihrer Erweiterung sollte in jeder von Ihnen deklarierten Sprache lokalisiert werden.  
+Wenn Ihre Erweiterung so lokalisiert ist, dass einige Features in einer lokalisierten Version nicht zur Verfügung stehen, müssen Sie die Grenzwerte für die Lokalisierung in der Erweiterungsbeschreibung klar angeben oder anzeigen. Die Erfahrung, die durch eine Erweiterung bereitgestellt wird, muss in allen unterstützten Sprachen relativ ähnlich sein.  
 
-### 1.8 Financial Transactions  
+### 1,8 Finanztransaktionen  
 
-If your product includes in-product purchase, subscriptions, virtual currency, billing functionality, or captures financial information; the requirements in the following sections apply.  
+Wenn Ihr Produkt in-Product-Käufe, Abonnements, virtuelle Währung, Abrechnungsfunktionen oder erfasste Finanzinformationen umfasst; Es gelten die Anforderungen in den folgenden Abschnitten.  
 
-#### 1.8.1 Paid Features  
+#### 1.8.1 kostenpflichtige Funktionen  
 
-Your Extension may enable users to consume digital content or services purchased through a third-party purchase mechanism or API.  
+Ihre Erweiterung kann es Benutzern ermöglichen, digitale Inhalte oder Dienste zu nutzen, die über einen Kauf Mechanismus oder eine API eines Drittanbieters erworben wurden.  
 
-You must use a secure third-party purchase API for purchases of physical goods or services.  You must use a secure third-party purchase API for payments made in connection with any other services including real world gambling or charitable contributions.  
+Sie müssen eine sichere Drittanbieter-Kauf-API für den Kauf von physischen Gütern oder Dienstleistungen verwenden.  Sie müssen eine sichere Drittanbieter-Kauf-API für Zahlungen verwenden, die in Verbindung mit anderen Dienstleistungen wie realen Glücksspielen oder gemeinnützigen Beiträgen getätigt wurden.  
 
-*   If your Extension is used to facilitate or collect charitable contributions or to conduct a promotional sweepstakes or contest, you must do so in compliance with applicable law.  
-*   You must also state clearly that Microsoft is not the fundraiser or sponsor of the promotion.  
-*   In-product offerings sold in your Extension must not be converted to any legally valid currency \(such as USD, Euro, and so on\) or any physical goods or services.  
+*   Wenn Ihre Verlängerung zur Erleichterung oder Sammlung von gemeinnützigen Beiträgen oder zur Durchführung von Werbe Verlosungen oder Wettbewerben verwendet wird, müssen Sie dies unter Beachtung des anwendbaren Rechts tun.  
+*   Zudem muss deutlich gemacht werden, dass Microsoft weder als Spendensammler noch als Sponsor der Werbeaktion auftritt.  
+*   In ihrer Verlängerung verkaufte Produktangebote dürfen nicht in eine rechtlich gültige Währung (wie USD, Euro usw.) oder physische waren oder Dienstleistungen umgewandelt werden.  
 
-The following requirements apply to your use of a secure third-party purchase API:  
+Die folgenden Anforderungen gelten für ihre Verwendung einer sicheren Drittanbieter-Kauf-API:  
 
-*   At the time of the transaction or when you collect any payment or financial information from the user; your Extension must identify the commerce transaction provider, authenticate the user, and obtain user confirmation for the transaction.  A commerce transaction provider maintains a secure platform for financial exchanges.  
-*   Your Extension may offer users the ability to save this authentication, but users must have the ability to either require an authentication on every transaction or to turn off in-product transactions.  
-*   If your Extension collects credit card information or uses a third-party payment processor that collects credit card information, the payment processing must meet the current PCI Data Security Standard \(PCI DSS\).  
+*   Zum Zeitpunkt der Transaktion oder wenn Sie Zahlungs-oder Finanzinformationen des Nutzers einholen; Ihre Durchwahl muss den Commerce-Transaktions Anbieter identifizieren, den Benutzer authentifizieren und die Bestätigung des Benutzers für die Transaktion anfordern.  Ein Commerce-Transaktions Anbieter pflegt eine sichere Plattform für Finanz Börsen.  
+*   Ihre Erweiterung bietet Benutzern möglicherweise die Möglichkeit, diese Authentifizierung zu speichern, aber die Benutzer müssen die Möglichkeit haben, bei jeder Transaktion eine Authentifizierung zu verlangen oder in-Product-Transaktionen zu deaktivieren.  
+*   Wenn Ihre Durchwahl Kreditkarteninformationen sammelt oder einen externen Zahlungsprozessor verwendet, der Kreditkarteninformationen sammelt, muss die Zahlungsabwicklung den aktuellen PCI-Daten Sicherheits Standard erfüllen \ (PCI DSS).  
 
-#### 1.8.2 Disclosing paid features  
+#### 1.8.2 Offenlegung bezahlter Funktionen  
 
-Your Extension and associated metadata must provide information about the types of in-product purchases offered and the range of prices.  You must not mislead users and must be clear about the nature of your in-product promotions and offerings including the scope and terms of any trial experiences.  If your Extension restricts access to user-created content during or after a trial, you must notify users in advance.  In addition, your Extension must make it clear to users that they are initiating a purchase option in the Extension.  
+Ihre Erweiterung und die zugehörigen Metadaten müssen Informationen zu den Arten von in-Product-Käufen und dem Preisbereich bereitstellen.  Sie dürfen die Nutzer nicht in die Irre führen und müssen sich über die Art ihrer in-Product-Werbeaktionen und-Angebote sowie über den Umfang und die Ausdrücke der Test Erfahrungen klar sein.  Wenn Ihre Erweiterung den Zugriff auf vom Benutzer erstellte Inhalte während oder nach einer Testversion einschränken soll, müssen Sie die Benutzer im Voraus benachrichtigen.  Darüber hinaus muss Ihre Erweiterung Benutzern deutlich machen, dass Sie eine Kaufoption in der Erweiterung initiieren.  
 
-### 1.9 Notifications  
+### 1,9-Benachrichtigungen  
 
-Your Extension must respect system settings for notifications.  This means any presentation of ads and notifications to users must be consistent with user preferences, regardless of whether the notifications are provided by the Microsoft Push Notification Service \(MPNS\), Windows Push Notification Service \(WNS\), or any other service.  If the user disables notifications, either on a product-specific or system-wide basis, your Extension must remain functional.  
+Ihre Erweiterung muss die Systemeinstellungen für Benachrichtigungen beachten.  Das bedeutet, dass jede Präsentation von anzeigen und Benachrichtigungen für Benutzer mit den Benutzereinstellungen konsistent sein muss, unabhängig davon, ob die Benachrichtigungen vom Microsoft Push Notification Service \ (MPNS \), Windows Push Notification Service \ (WNS \) oder einem anderen Dienst bereitgestellt werden.  Wenn der Benutzer Benachrichtigungen entweder auf produktspezifischer oder auf Systemebene deaktiviert, muss Ihre Erweiterung funktionsfähig bleiben.  
 
-If your product uses MPNS or WNS to transmit notifications, it must comply with the following requirements:  
+Wenn Ihr Produkt MPNS oder WNS zum Übertragen von Benachrichtigungen verwendet, muss es die folgenden Voraussetzungen erfüllen:  
 
-#### 1.9.1 General Guidance  
+#### 1.9.1 Allgemeine Anleitungen  
 
-Notifications provided through WNS or MPNS are considered product content and are subject to all Addons Catalog Developer Policies.  
+Benachrichtigungen, die über WNS oder MPNS bereitgestellt werden, gelten als Produktinhalte und unterliegen allen Addons-Katalog-Entwicklerrichtlinien.  
 
-#### 1.9.2 Ownership of notifications  
+#### 1.9.2 Besitz von Benachrichtigungen  
 
-You must not obscure or try to disguise the source of any notification initiated from your Extension.  
+Sie dürfen die Quelle jeder Benachrichtigung, die von ihrer Erweiterung initiiert wurde, nicht verschleiern oder verschleiern.  
 
-#### 1.9.3 No Confidential or Sensitive Information  
+#### 1.9.3 keine vertraulichen oder sensiblen Informationen  
 
-You must not include in a notification any information users may reasonably consider confidential or sensitive.  
+Sie dürfen in einer Benachrichtigung keine Informationen angeben, die Benutzer möglicherweise als vertraulich oder vertraulich empfinden.  
 
-#### 1.9.4 Purpose of notifications  
+#### 1.9.4 Zweck von Benachrichtigungen  
 
-Notifications sent from your Extension must relate to that Extension or to other Extensions you publish in Microsoft Edge Addons catalog and must not include promotional messages of any kind that are not related to your Extensions.  
+Benachrichtigungen, die von ihrer Durchwahl gesendet werden, müssen sich auf diese Erweiterung oder auf andere Erweiterungen beziehen, die Sie im Microsoft Edge Addons-Katalog veröffentlichen, und dürfen keine Werbebotschaften jeglicher Art enthalten, die nicht mit ihren Erweiterungen in Verbindung stehen.  
 
-### 1.10 Advertising Conduct and Content  
+### 1,10 Werbeverhalten und Inhalte  
 
-For all advertising related activities, the following requirements apply:  
+Für alle Aktivitäten im Zusammenhang mit Werbung gelten die folgenden Anforderungen:  
 
-#### 1.10.1 Purpose  
+#### 1.10.1 Zweck  
 
-The primary content of your Extension must not be advertising, and advertising must be clearly distinguishable from other content in your Extension.  
+Der Hauptinhalt ihrer Erweiterung darf keine Werbung sein, und Werbung muss deutlich von anderen Inhalten in ihrer Erweiterung unterschieden werden.  
 
-#### 1.10.2 Policies and Agreements  
+#### 1.10.2-Richtlinien und-Vereinbarungen  
 
-Any advertising content your Extension displays must adhere to [Microsoft Creative Acceptance Policy][MicrosoftAdvertisingCreativeAcceptancePolicies].  
-If your Extension displays ads, all content displayed must conform to the advertising requirements of the [App Developer Agreement][MicrosoftAppDeveloperAgreement] and this Policy.  
+Alle Werbungs Inhalte, die ihre Erweiterung anzeigt, müssen der [Microsoft Creative Acceptance Policy][MicrosoftAdvertisingCreativeAcceptancePolicies]unterliegen.  
+Wenn Ihre Erweiterung anzeigen anzeigt, müssen alle angezeigten Inhalte den Werbeanforderungen der [App-Entwickler Vereinbarung][MicrosoftAppDeveloperAgreement] und dieser Richtlinie entsprechen.  
 
-#### 1.10.3 Quality of advertising  
+#### 1.10.3 Qualität der Werbung  
 
-*   The primary purpose of your Extension must not be to get users to click ads.  
-*   Your Extension must not do anything that interferes with or diminishes the visibility, value, or quality of any ads that it does display.  
+*   Der Hauptzweck ihrer Erweiterung darf nicht darin liegen, dass Benutzer zum Klicken auf anzeigen gelangen.  
+*   Ihre Erweiterung darf nichts tun, was die Sichtbarkeit, den Wert oder die Qualität von anzeigen beeinträchtigt oder vermindert.  
 
-#### 1.10.4 Promotions  
+#### 1.10.4-Werbeaktionen  
 
-If you purchase or create promotional ad campaigns to promote your Extensions through the ad campaign functionality in [Partner Center][MicrosoftPartnerCenter], all ad materials you provide to Microsoft, including any associated landing pages, must comply with [Microsoft Creative Specifications Policy][MicrosoftAdvertisingCreativeSpecifications] and [Microsoft Creative Acceptance Policy][MicrosoftAdvertisingCreativeAcceptancePolicies].  
+Wenn Sie Werbekampagnen kaufen oder erstellen, um Ihre Erweiterungen über die Anzeigenkampagnen Funktionalität im [Partner Center][MicrosoftPartnerCenter]zu promoten, müssen alle anzeigen Materialien, die Sie für Microsoft bereitstellen, einschließlich aller zugehörigen Zielseiten, den Richtlinien für die [Microsoft Creative-Spezifikationen][MicrosoftAdvertisingCreativeSpecifications] und die [Microsoft Creative-Akzeptanz Richtlinie][MicrosoftAdvertisingCreativeAcceptancePolicies]entsprechen.  
 
-#### 1.10.5 Notifying Users of Opt-Out for Interest-Based Advertising  
+#### 1.10.5 Benachrichtigung der Nutzer über das ablehnen für Interessenbasierte Werbung  
 
-Your privacy statement or terms of use must let users know you plan to send Personal Information to the ad service provider and must tell users how they may opt-out of interest-based advertising.  
+Ihre Datenschutzbestimmungen oder Nutzungsbedingungen müssen Benutzern mitteilen, dass Sie beabsichtigen, personenbezogene Informationen an den Anzeigendienst Anbieter zu senden, und Benutzern mitzuteilen, wie Sie die Interessenbasierte Werbung ablehnen können.  
 
-#### 1.10.6 Other guidelines  
+#### 1.10.6 Sonstige Richtlinien  
 
-If your Extension is directed at children under the age of 13, as defined in the [Children's Online Privacy Protection Act][FTCChildrensPrivacy]; you must notify Microsoft of this fact in [Partner Center][MicrosoftPartnerCenter] and ensure that all ad content displayed in your Extension is appropriate for children under the age of 13.  
+Wenn Ihre Durchwahl an Kinder unter 13 Jahren gerichtet ist, wie Sie im [Online-schutzgesetz für Kinder][FTCChildrensPrivacy]festgelegt sind; Sie müssen Microsoft diese Tatsache im [Partner Center][MicrosoftPartnerCenter] mitteilen und sicherstellen, dass alle in ihrer Erweiterung angezeigten Anzeigeninhalte für Kinder unter 13 Jahren geeignet sind.  
 
-## 2 Content Policies  
+## 2 Inhaltsrichtlinien  
 
-The following policies apply to content and metadata \(including publisher name, Extension name, Extension icon, Extension description, Extension screenshots, Extension trailers and trailer thumbnails, and any other Extension metadata\) offered for distribution in Microsoft Edge Addons.  Content means the images, sounds, videos and text contained in the Extension, the tiles, notifications, error messages or ads exposed through your Extension, and anything delivered from a server or to which the Extension connects.  Because Extensions and Microsoft Edge Addons are used around the world, these requirements are interpreted and applied in the context of regional and cultural norms.  
+Die folgenden Richtlinien gelten für Inhalte und Metadaten \ (einschließlich Herausgebername, Erweiterungsname, Erweiterungssymbol, Erweiterungsbeschreibung, Screenshots für Erweiterungen, Erweiterungs Anhänger und Miniaturansichten des Trailers sowie alle anderen Erweiterungs Metadaten \), die in Microsoft Edge-Add-ons zur Verfügung gestellt werden.  Inhalt bezieht sich auf die Bilder, Sounds, Videos und Text in der Erweiterung, die Kacheln, Benachrichtigungen, Fehlermeldungen oder anzeigen, die über Ihre Erweiterung bereitgestellt werden, und alles, was von einem Server geliefert wird oder mit dem die Erweiterung verbunden ist.  Da Erweiterungen und Microsoft Edge-Add-ons weltweit verwendet werden, werden diese Anforderungen im Kontext regionaler und kultureller Normen interpretiert und angewendet.  
 
-### 2.1 Content Requirements for Microsoft Edge Addon Catalog Listing  
+### 2,1-Inhaltsanforderungen für den Microsoft Edge Addon-Katalogeintrag  
 
-Metadata and other content you submit to accompany your Extension may not contain mature content.  
-Submissions that do not meet Extension Store listings requirements are rejected or promptly removed.  
+Metadaten und andere Inhalte, die Sie Ihrer Erweiterung beifügen, enthalten möglicherweise keine ausgereiften Inhalte.  
+Übermittlungen, die die Anforderungen des Erweiterungsspeichers nicht erfüllen, werden abgelehnt oder umgehend entfernt.  
 
-### 2.2 Content Including Names, Logos, Original, and Third-party  
+### 2,2-Inhalte, einschließlich Namen, Logos, Original und Drittanbietern  
 
-All content in your Extension and associated metadata must be either originally created by the you or appropriately licensed from a third-party rights holder and must be used only as permitted by the rights holder or as otherwise permitted by law.  
+Der gesamte Inhalt ihrer Erweiterung und zugehöriger Metadaten muss entweder ursprünglich von Ihnen erstellt oder von einem Rechteinhaber Dritter angemessen lizenziert werden und darf nur wie vom Rechteinhaber zugelassen oder im gesetzlich zulässigen Rahmen verwendet werden.  
 
-### 2.3 Risk of Harm  
+### 2,3 Risiko von Schaden  
 
-#### 2.3.1 Requirements  
+#### 2.3.1 Voraussetzungen  
 
-Your Extension must not contain any content that facilitates or glamorizes the following real world activities: \(a\) extreme or gratuitous violence; \(b\) human rights violations; \(c\) the creation of illegal weapons; or \(d\) the use of weapons against a person, animal, or real or personal property.  
+Ihre Erweiterung darf keine Inhalte enthalten, die die folgenden realen Aktivitäten erleichtern oder glamorizes: \ (a \) Extreme oder unentgeltliche Gewalt; \ (b \) Verletzungen der Menschenrechte; \ (c \) die Schaffung von illegalen Waffen; oder \ (d \) die Verwendung von Waffen gegen eine Person, ein Tier oder ein echtes oder persönliches Eigentum.  
 
-#### 2.3.2 Responsibility  
+#### 2.3.2 Verantwortlichkeit  
 
-Your Extension must not: \(a\) pose a safety risk to, nor result in discomfort, injury or any other harm to end users or to any other person or animal; or \(b\) pose a risk of or result in damage to real or personal property.  You are solely responsible for all Extension safety testing, certificate acquisition, and implementation of any appropriate feature safeguards.  You must not disable any platform safety or comfort features and you must include all applicable legally required and industry-standard warnings, notices, and disclaimers in your Extension.  
+Ihre Erweiterung darf nicht sein: \ (a \) stellen Sie ein Sicherheitsrisiko dar, das nicht zu Unbehagen, Verletzungen oder sonstigem Schaden für Endnutzer oder andere Personen oder Tiere führen kann. oder \ (b \) stellen ein Risiko dar oder führen zu Schäden an einer realen oder persönlichen Eigenschaft.  Sie tragen die alleinige Verantwortung für alle Sicherheitsprüfungen bei der Erweiterung, die Zertifikat Erfassung und die Implementierung der entsprechenden Funktionsgarantien.  Sie dürfen keine Plattformsicherheit oder Komfortfunktionen deaktivieren, und Sie müssen alle anwendbaren gesetzlichen und branchenüblichen Warnungen, Hinweise und Haftungsausschlüsse in ihrer Durchwahl angeben.  
 
-### 2.4 Defamatory, Libelous, Slanderous, and Threatening  
+### 2,4 diffamierenden, verleumderischen, verleumderischen und bedrohlichen  
 
-Your Extension must not contain any content that is defamatory, libelous, slanderous, or threatening.  
+Ihre Erweiterung darf keine diffamierenden, verleumderischen, verleumderischen oder bedrohlichen Inhalte enthalten.  
 
-### 2.5 Offensive Content  
+### 2,5 anstößiger Inhalt  
 
-Your Extension and associated metadata must not contain potentially sensitive or offensive content.  Content may be considered sensitive or offensive in certain countries/regions because of local laws or cultural norms.  In addition, your Extension and associated metadata must not contain content that advocates discrimination, hatred, or violence based on considerations of race, ethnicity, national origin, language, gender, age, disability, religion, sexual orientation, status as a veteran, or membership in any other social group.  
+Ihre Erweiterung und die zugehörigen Metadaten dürfen keine potenziell sensiblen oder anstößigen Inhalte enthalten.  Inhalte können aufgrund örtlicher Gesetze oder kultureller Normen in bestimmten Ländern/Regionen als sensibel oder beleidigend eingestuft werden.  Darüber hinaus dürfen Ihre Erweiterung und die zugehörigen Metadaten keine Inhalte enthalten, die sich auf Diskriminierung, Hass oder Gewalt Gründen, die auf Überlegungen hinsichtlich Rasse, Ethnizität, nationaler Herkunft, Sprache, Geschlecht, Alter, Behinderung, Religion, sexueller Orientierung, Status als Veteran oder Mitgliedschaft in einer anderen sozialen Gruppe beruhen.  
 
-### 2.6 Alcohol, Tobacco, and Drugs  
+### 2,6 Alkohol, Tabak und Drogen  
 
-Your Extension must not contain any content that facilitates or glamorizes excessive or irresponsible use of alcohol or tobacco products or drugs.  
+Ihre Erweiterung darf keine Inhalte enthalten, die zu einer exzessiven oder unverantwortlichen Verwendung von Alkohol oder glamorizes oder Medikamenten führen.  
 
-### 2.7 Adult Content  
+### 2,7 Adult-Inhalte  
 
-Your Extension must not contain or display content that a reasonable person would consider pornographic or sexually explicit.  
+Ihre Erweiterung darf keine Inhalte enthalten oder anzeigen, die eine vernünftige Person als pornographische oder sexuell explizit einschätzen würde.  
 
-### 2.8 Prohibited Content, Services, and Activity  
+### 2,8 verbotene Inhalte, Dienste und Aktivitäten  
 
-Your Extension must adhere to the following conditions.  
+Ihre Durchwahl muss die folgenden Bedingungen erfüllen:  
 
-*   Your Extension must not contain content or provide services that facilitate online gambling.  Online gambling includes but is not limited to online casinos, sports betting, lotteries, or games of skill that offer prizes of cash or other value.  
-*   Your Extension must not provide unauthorized access to website content, such as by circumventing paywalls or login restrictions.  
-*   Your Extension must not provide, encourage, or enable the unauthorized access, download, or streaming of copyrighted content or media.  
-*   Your Extension must not mine cryptocurrency.  
+*   Ihre Erweiterung darf keine Inhalte enthalten oder Dienste bereitstellen, die das Online-spielen erleichtern.  Online-Glücksspiel umfasst aber nicht nur Online-Casinos, Sportwetten, Lotterien oder Geschicklichkeitsspiele, die Preise von Bargeld oder anderen Werten anbieten.  
+*   Ihre Erweiterung darf keinen unbefugten Zugriff auf Websiteinhalte ermöglichen, beispielsweisedurch Umgehung von bezahlschranken-oder Login-Einschränkungen.  
+*   Ihre Erweiterung darf den unbefugten Zugriff, den Download oder das Streaming urheberrechtlich geschützter Inhalte oder Medien nicht bereitstellen, fördern oder aktivieren.  
+*   Ihre Durchwahl darf cryptocurrency nicht abbauen.  
 
-### 2.9 Illegal Activity  
+### 2,9 illegale Aktivitäten  
 
-Your Extension must not contain content or functionality that encourages, facilitates or glamorizes illegal activity in the real world.  
+Ihre Erweiterung darf keine Inhalte oder Funktionen enthalten, die illegale Aktivitäten in der realen Welt ermutigen, erleichtern oder glamorizes.  
 
-### 2.10 Excessive Profanity and Inappropriate Content  
+### 2,10 übermäßige Obszönitäten und ungeeignete Inhalte  
 
-*   Your Extension must not contain excessive or gratuitous profanity.  
-*   Your Extension must not contain or display content that a reasonable person considers obscene.  
+*   Ihre Erweiterung darf keine exzessiven oder unentgeltlichen Obszönitäten enthalten.  
+*   Ihre Erweiterung darf keine Inhalte enthalten oder anzeigen, die eine vernünftige Person für obszön hält.  
 
-### 2.11 Country/Region Specific Requirements  
+### 2,11 spezifische Anforderungen für Länder/Regionen  
 
-Content that is offensive in any country/region to which your Extension is targeted is not allowed.  Content may be considered offensive in certain countries/regions because of local laws or cultural norms.  Beispiele für potenziell beleidigende Inhalte in bestimmten Ländern/Regionen:  
+Inhalte, die in allen Ländern/Regionen beleidigend sind, auf die ihre Erweiterung ausgerichtet ist, sind nicht zulässig.  Inhalte können aufgrund lokaler Gesetze oder kultureller Normen in bestimmten Ländern/Regionen als beleidigend angesehen werden.  Beispiele für potenziell beleidigende Inhalte in bestimmten Ländern/Regionen:  
 
 **China**  
 
 *   Verbot pornographischer Inhalte  
 *   Verweise auf umstrittene Gebiete oder Regionen  
-*   Providing or enabling access to content or services that are illegal under applicable local law  
+*   Bereitstellung oder Zugriff auf Inhalte oder Dienste, die unter dem jeweils anwendbaren Recht rechtswidrig sind.  
 
-### 2.12 Age Ratings  
+### 2,12 Altersfreigaben  
 
-#### 2.12.1 Mature Content  
+#### überfälliger Inhalt  
 
-When you submit your Extension to [Partner Center][MicrosoftPartnerCenter], you must indicate whether your Extension displays content that should be marked "Mature".  When determining the rating for your Extension, consider all the content in your app, including user generated content and ads, and to the content that your Extension links.  If you indicate that your Extension does not contain any "Mature" content, you are responsible for maintaining the accuracy of this rating.  Regardless of the rating given to your Extension, it must still adhere to all the content requirements of Microsoft Edge Addons Developer policies  
+Wenn Sie Ihre Durchwahl an das [Partner Center][MicrosoftPartnerCenter]übermitteln, müssen Sie angeben, ob Ihre Erweiterung Inhalte anzeigt, die als "ausgereift" gekennzeichnet sein sollen.  Berücksichtigen Sie bei der Bestimmung der Bewertung für Ihre Erweiterung den gesamten Inhalt Ihrer APP, einschließlich von Benutzern generierter Inhalte und anzeigen, sowie den Inhalt, den Ihre Erweiterung verknüpft.  Wenn Sie angeben, dass Ihre Durchwahl keine "ausgereiften" Inhalte enthält, sind Sie dafür verantwortlich, die Richtigkeit dieser Bewertung zu gewährleisten.  Unabhängig von der Bewertung, die Sie für Ihre Durchwahl erhalten haben, muss Sie weiterhin alle inhaltlichen Anforderungen der Microsoft Edge Addons-Entwicklerrichtlinien erfüllen.  
 
-#### 2.12.2 Ratings Change  
+#### Änderung der 2.12.2-Bewertungen  
 
-If your Extension provides content \(such as user-generated, retail, or other web-based content\) that might be appropriate for a higher age rating than the assigned rating, you must require users to opt into receiving such content by using a content filter or by signing in with a pre-existing account.  
+Wenn Ihre Erweiterung Inhalte enthält, die möglicherweise für eine höhere Alterseinstufung als die zugewiesene Bewertung geeignet sind (beispielsweise vom benutzergenerierten, im Einzelhandel oder in anderen webbasierten Inhalten), müssen Sie die Benutzer dazu auffordern, diese Inhalte mithilfe eines Inhaltsfilters zu empfangen oder sich mit einem bereits vorhandenen Konto anzumelden.  
 
-### 2.13 Videos  
+### 2,13-Videos  
 
-If you submit a promotional video in the listing, it should follow all the content guidelines mentioned in this policy.  If you choose to provide a YouTube link, you must ensure that advertisements are disabled for the specific videos that you want to embed.  For more information about how ads are enabled and disabled on YouTube, see [support.google.com/youtube/answer/2531367?ref_topic=7072227][GoogleYoutubeAnswer2531367Topic7072227] and [support.google.com/youtube/answer/132596][GoogleYoutubeAnswer132596].  
+Wenn Sie ein Werbevideo im Eintrag einreichen, sollten alle in dieser Richtlinie erwähnten Inhaltsrichtlinien befolgt werden.  Wenn Sie einen YouTube-Link zur Verfügung stellen möchten, müssen Sie sicherstellen, dass Ankündigungen für die Videos, die Sie einbetten möchten, deaktiviert sind.  Weitere Informationen zur Aktivierung und Deaktivierung von anzeigen auf YouTube finden Sie unter [Support.Google.com/YouTube/Answer/2531367?ref_topic=7072227][GoogleYoutubeAnswer2531367Topic7072227] und [Support.Google.com/YouTube/Answer/132596][GoogleYoutubeAnswer132596].  
 
 <!-- image links -->  
 
 <!-- links -->  
 
-[MicrosoftEdgeContentSecurityPolicyRemoteScript]: ./csp.md#relaxing-the-default-policy "Relaxing the default policy - Content Security Policy \(CSP\) | Microsoft Docs"  
+[MicrosoftEdgeContentSecurityPolicyRemoteScript]: ./csp.md#relaxing-the-default-policy "Relaxen der Standardrichtlinien-Inhalts Sicherheitsrichtlinie \ (CSP \) | Microsoft docs"  
 
-[MicrosoftAppDeveloperAgreement]: /legal/windows/agreements/app-developer-agreement "App Developer Agreement | Microsoft Docs"  
-[MicrosoftIdentifiesMalwareUnwantedApplications]: /windows/security/threat-protection/intelligence/criteria "How Microsoft identifies malware and potentially unwanted applications | Microsoft Docs"  
+[MicrosoftAppDeveloperAgreement]: /legal/windows/agreements/app-developer-agreement "Vereinbarung für App-Entwickler | Microsoft docs"  
+[MicrosoftIdentifiesMalwareUnwantedApplications]: /windows/security/threat-protection/intelligence/criteria "So erkennt Microsoft Malware und potenziell unerwünschte Anwendungen | Microsoft docs"  
 
-[GoogleYoutubeAnswer2531367Topic7072227]: https://support.google.com/youtube/answer/2531367?ref_topic=7072227 "Set your default ad formats - YouTube Help"  
-[GoogleYoutubeAnswer132596]: https://support.google.com/youtube/answer/132596 "Ads on embedded videos - YouTube Help"  
-[FTCChildrensPrivacy]: https://www.ftc.gov/tips-advice/business-center/privacy-and-security/children%27s-privacy "Children's Privacy - Federal Trade Commission"  
+[GoogleYoutubeAnswer2531367Topic7072227]: https://support.google.com/youtube/answer/2531367?ref_topic=7072227 "Festlegen der standardmäßigen Anzeigenformate-YouTube-Hilfe"  
+[GoogleYoutubeAnswer132596]: https://support.google.com/youtube/answer/132596 "Anzeigen in eingebetteten Videos – YouTube-Hilfe"  
+[FTCChildrensPrivacy]: https://www.ftc.gov/tips-advice/business-center/privacy-and-security/children%27s-privacy "Privatsphäre der Kinder-Federal Trade Commission"  
 
-[MicrosoftAdvertisingCreativeAcceptancePolicies]: https://about.ads.microsoft.com/solutions/ad-products/display-advertising/creative-acceptance-policies "Creative acceptance policies - Microsoft Advertising"  
-[MicrosoftAdvertisingCreativeSpecifications]: https://about.ads.microsoft.com/solutions/ad-products/display-advertising/creative-specs "Creative Specifications - Microsoft Advertising"  
+[MicrosoftAdvertisingCreativeAcceptancePolicies]: https://about.ads.microsoft.com/solutions/ad-products/display-advertising/creative-acceptance-policies "Kreative Akzeptanz Richtlinien – Microsoft Advertising"  
+[MicrosoftAdvertisingCreativeSpecifications]: https://about.ads.microsoft.com/solutions/ad-products/display-advertising/creative-specs "Kreative Spezifikationen – Microsoft Advertising"  
 
 [MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "Partner Center"  

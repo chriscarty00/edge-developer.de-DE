@@ -11,4 +11,4 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 09/09/2020
 ms.locfileid: "11004163"
 ---
-The following sections announce additional features available in Microsoft Edge that were contributed to the open-source Chromium project.  
+In den folgenden Abschnitten werden die in Microsoft Edge verfügbaren zusätzlichen Features angekündigt, die zum Open-Source-Projekt Chromium beigetragen haben.  

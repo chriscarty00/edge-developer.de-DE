@@ -1,12 +1,12 @@
 ---
-description: Use the Application panel to inspect, modify, and debug web app manifests, service workers, and service worker caches.
-title: Debug Progressive Web Apps
+description: Verwenden Sie den Anwendungs Panel, um Web App-Manifeste, Dienstmitarbeiter und Service Worker-Caches zu prüfen, zu ändern und zu debuggen.
+title: Debuggen von progressiven Web-Apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
 ms.openlocfilehash: 7eb71d0d57d8a9227a54b921f15dfe434ad6e65b
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -32,11 +32,11 @@ ms.locfileid: "10993604"
 
 
 
-# Debug Progressive Web Apps   
+# Debuggen von progressiven Web-Apps   
 
 
 
-Use the **Application** panel to inspect, modify, and debug web app manifests, service workers, and service worker caches.  
+Verwenden Sie den **Anwendungs** Panel, um Web App-Manifeste, Dienstmitarbeiter und Service Worker-Caches zu prüfen, zu ändern und zu debuggen.  
 
 <!--Related Guides:  
 
@@ -44,20 +44,20 @@ Use the **Application** panel to inspect, modify, and debug web app manifests, s
 
 <!--TODO:  Link web "Progressive Web Apps" section when available. -->
 
-This guide only discusses the Progressive Web App features of the **Application** panel.  <!--If you're looking for help on the other panes, check out the last section of this guide, [Other Application panel guides](#other-application-panel-guides).  -->
+In diesem Leitfaden werden nur die fortschrittlichen Web App-Features des **Anwendungs** Panels erläutert.  <!--If you're looking for help on the other panes, check out the last section of this guide, [Other Application panel guides](#other-application-panel-guides).  -->
 
 <!--TODO:  Link to sections when available. -->
 
-### Summary  
+### Zusammenfassung  
 
-*   Use the **Manifest** pane to inspect your web app manifest and trigger Add to Homescreen events.  
-*   Use the **Service Workers** pane for a whole range of service-worker-related tasks, like unregistering or updating a service, emulating push events, going offline, or stopping a service worker.  
-*   View your service worker cache from the **Cache Storage** pane.  
-*   Unregister a service worker and clear all storage and caches with a single button click from the **Clear storage** pane.  
+*   Verwenden Sie den Bereich **Manifest** , um das Web App-Manifest zu überprüfen und auf Homescreen-Ereignisse hinzufügen zu starten.  
+*   Verwenden Sie den Bereich " **Dienstmitarbeiter** " für eine ganze Reihe von Dienstmitarbeiter bezogenen Aufgaben, wie das Aufheben der Registrierung oder Aktualisierung eines Diensts, das Emulieren von Push-Ereignissen, das offline schalten oder Beenden eines Dienst Mitarbeiters.  
+*   Zeigen Sie den Service Worker-Cache im **Cachespeicher** Bereich an.  
+*   Heben Sie die Registrierung eines Dienstmitarbeiter auf, und löschen Sie alle Speicher und Caches mit einem einzigen Mausklick aus dem Bereich " **Speicher löschen** ".  
     
-## Web app manifest   
+## Web App-Manifest   
 
-If you want your users to be able to add your app to their mobile homescreens, you need a web app manifest.  The manifest defines how the app appears on the homescreen, where to direct the user when launching from homescreen, and what the app looks like on launch.  
+Wenn Sie möchten, dass Ihre Benutzer Ihre APP ihren mobilen Homescreens hinzufügen können, benötigen Sie ein Web App-Manifest.  Das Manifest definiert, wie die APP auf dem Homescreen angezeigt wird, wo der Benutzer beim Start von Homescreen weitergeleitet wird und wie die APP beim Start aussieht.  
 
 <!--Related Guides:  
 
@@ -66,16 +66,16 @@ If you want your users to be able to add your app to their mobile homescreens, y
 
 <!--TODO:  Link to sections when available. -->
 
-After you have your manifest set up, you can use the **Manifest** pane of the **Application** panel to inspect it.  
+Nachdem Sie Ihr Manifest eingerichtet haben, können Sie es über den Bereich **Manifest** des **Anwendungs** Bereichs überprüfen.  
 
-:::image type="complex" source="./media/manifest-pane.msft.png" alt-text="The Manifest Pane" lightbox="./media/manifest-pane.msft.png":::
-   The **Manifest** Pane  
+:::image type="complex" source="./media/manifest-pane.msft.png" alt-text="Bereich ' Manifest '" lightbox="./media/manifest-pane.msft.png":::
+   Bereich ' **Manifest** '  
 :::image-end:::  
 
-*   To look at the manifest source, click the link below **App Manifest** label \(`https://airhorner.com/manifest.json` in the previous figure\).  
+*   Wenn Sie sich die Manifest-Quelle ansehen möchten, klicken Sie auf den Link unter **App-Manifest** -Beschriftung \ ( `https://airhorner.com/manifest.json` in der vorhergehenden Abbildung).  
 <!-- *   Press the **Add to homescreen** button to simulate an Add to Homescreen event.  Check out the next section for more information.  -->  
-*   The **Identity** and **Presentation** sections just display fields from the manifest source in a more user-friendly display.  
-*   The **Icons** section displays every icon that you've specified.  
+*   In den Abschnitten **Identität** und **Präsentation** werden nur Felder aus der Manifestdatei in einer benutzerfreundlicheren Anzeige angezeigt.  
+*   Im Abschnitt "Symbole" werden alle von Ihnen angegebenen **Symbole** angezeigt.  
     
 <!--### Simulate Add to Homescreen events   -->
 
@@ -85,7 +85,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 <!--You can test out this feature with the [Microsoft I/O 2016 progressive web app](https://events.alpahabet.com/io2016/), which has proper support for Add to Homescreen.  Clicking on **Add to Homescreen** while the app is open prompts Microsoft Edge to display the "add this site to your shelf" banner, which is the desktop equivalent of the "add to homescreen" banner for mobile devices.  -->
 
 <!--  
-:::image type="complex" source="./media/io.msft.png" alt-text="The Manifest Pane" lightbox="./media/io.msft.png":::
+:::image type="complex" source="./media/io.msft.png" alt-text="Bereich ' Manifest '" lightbox="./media/io.msft.png":::
    Add to desktop shelf  
 :::image-end:::
 -->  
@@ -102,9 +102,9 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 
 <!--TODO:  Link Debug "remote debugging" sections when available. -->
 
-## Service workers   
+## Dienstmitarbeiter   
 
-Service workers are a fundamental technology in the future web platform.  They are scripts that the browser runs in the background, separate from a web page.  These scripts enable you to access features that don't need a web page or user interaction, like push notifications, background sync, and offline experiences.  
+Service Mitarbeiter sind eine grundlegende Technologie in der zukünftigen Web-Plattform.  Dabei handelt es sich um Skripts, die der Browser im Hintergrund ausführt, und zwar unabhängig von einer Webseite.  Diese Skripts ermöglichen Ihnen den Zugriff auf Features, die keine Webseite oder Benutzerinteraktion benötigen, wie Push-Benachrichtigungen, Hintergrundsynchronisierung und Offline-Erlebnisse.  
 
 <!--Related Guides:  
 
@@ -113,28 +113,28 @@ Service workers are a fundamental technology in the future web platform.  They a
     
 <!--TODO:  Link to sections when available. -->  
 
-The **Service Workers** pane in the **Application** panel is the main place in DevTools to inspect and debug service workers.  
+Der Bereich " **Dienstmitarbeiter** " im Bereich " **Anwendung** " ist der wichtigste Ort in devtools zum Überprüfen und Debuggen von Dienst Mitarbeitern.  
 
-:::image type="complex" source="./media/service-workers-pane.msft.png" alt-text="The Manifest Pane" lightbox="./media/service-workers-pane.msft.png":::
-   The **Service Workers** pane  
+:::image type="complex" source="./media/service-workers-pane.msft.png" alt-text="Bereich ' Manifest '" lightbox="./media/service-workers-pane.msft.png":::
+   Der Bereich " **Dienstmitarbeiter** "  
 :::image-end:::  
 
-*   If a service worker is installed to the currently open page, then you'll see it listed on this pane.  For example, in the previous figure, there is a service worker installed for the scope of `https://weather-pwa-sample.firebaseapp.com`.  
-*   The **Offline** checkbox puts DevTools into offline mode.  This is equivalent to the offline mode available from the **Network** panel, or the `Go offline` option in the [Command Menu][DevtoolsCommandMenuIndex].  
-*   The **Update on reload** checkbox forces the service worker to update on every page load.  
-*   The **Bypass for network** checkbox bypasses the service worker and forces the browser to go to the network for requested resources.  
-*   The **Update** button performs a one-time update of the specified service worker.  
-*   The **Push** button emulates a push notification without a payload \(also known as a **tickle**\).  
-*   The **Sync** button emulates a background sync event.  
-*   The **Unregister** button unregisters the specified service worker.  Check out [Clear storage](#clear-storage) for a way to unregister a service worker and wipe storage and caches with a single button click.  
-*   The **Source** line tells you when the currently running service worker was installed.  The link is the name of the service worker's source file.  Clicking on the link sends you to the service worker's source.  
-*   The **Status** line tells you the status of the service worker.  The ID number next to the green status indicator \(`#36` in previous figure\) is for the currently active Service Worker.  Next to the status you'll see a **start** button \(if the service worker is stopped\) or a **stop** button \(if the service worker is running\).  Service workers are designed to be stopped and started by the browser at any time.  Explicitly stopping your service worker using the **stop** button can simulate that.  Stopping your service worker is a great way to test how your code behaves when the service worker starts back up again.  It frequently reveals bugs due to faulty assumptions about persistent global state.  
-*   The **Clients** line tells you the origin that the service worker is scoped to.  The **focus** button is mostly useful when you've enabled the **show all** checkbox.  When that checkbox is enabled, all registered service workers are listed.  If you click on the **focus** button next to a service worker that is running in a different tab, Microsoft Edge focuses on that tab.  
+*   Wenn ein Dienstmitarbeiter auf der aktuell geöffneten Seite installiert ist, wird er in diesem Bereich aufgelistet.  In der vorherigen Abbildung ist beispielsweise ein Dienstmitarbeiter für den Bereich von installiert `https://weather-pwa-sample.firebaseapp.com` .  
+*   Mit dem Kontrollkästchen **Offline** wird devtools in den Offlinemodus versetzt.  Dies entspricht dem Offlinemodus, der über das **Netzwerk** Panel zur Verfügung steht, oder die `Go offline` Option im [Menübefehl][DevtoolsCommandMenuIndex].  
+*   Das Kontrollkästchen " **beim erneuten Laden aktualisieren** " zwingt den Dienstmitarbeiter, bei jeder Seitenauslastung zu aktualisieren.  
+*   Das Kontrollkästchen " **für Netzwerk umgehen** " umgeht den Dienstmitarbeiter und zwingt den Browser, für angeforderte Ressourcen zum Netzwerk zu wechseln.  
+*   Die Schaltfläche " **Aktualisieren** " führt eine einmalige Aktualisierung der angegebenen Dienstmitarbeiter aus.  
+*   Die Schaltfläche " **Push** " emuliert eine Push-Benachrichtigung ohne Nutzlast \ (auch bekannt als " **Tickle**\").  
+*   Die Schaltfläche " **Synchronisieren** " emuliert ein Hintergrund Synchronisierungsereignis.  
+*   Mit der Schaltfläche zum **aufheben** der Registrierung wird der angegebene Dienstmitarbeiter aufgehoben.  Schauen Sie sich das Kontrollkästchen [Speicher löschen](#clear-storage) an, um eine Möglichkeit zum Aufheben der Registrierung eines Dienstmitarbeiter und zum Löschen von Speicher und Zwischenspeichern mit einem einzigen Mausklick zu finden.  
+*   Die **Quell** Zeile zeigt an, wann der aktuell ausgeführte Dienstmitarbeiter installiert wurde.  Bei dem Link handelt es sich um den Namen der Quelldatei des Dienst Mitarbeiters.  Wenn Sie auf den Link klicken, werden Sie an die Quelle des Dienst Mitarbeiters gesendet.  
+*   In der **Status** Zeile wird der Status der Dienstmitarbeiter angezeigt.  Die ID-Nummer neben dem grünen Statusindikator \ ( `#36` in der vorherigen Abbildung \) ist für den aktuell aktiven Dienstmitarbeiter.  Neben dem Status wird die Schaltfläche **Start** \ (wenn der Dienstmitarbeiter angehalten wird) oder eine Schaltfläche " **Beenden** " \ (wenn der Dienstmitarbeiter ausgeführt wird) angezeigt.  Dienstmitarbeiter sind so konzipiert, dass Sie jederzeit angehalten und vom Browser gestartet werden können.  Das explizite beenden Ihrer Dienstmitarbeiter mithilfe der Schaltfläche " **Beenden** " kann dies simulieren.  Das Beenden Ihrer Dienstmitarbeiter stellt eine hervorragende Möglichkeit dar, zu testen, wie sich der Code verhält, wenn der Dienstmitarbeiter wieder startet.  Sie zeigt häufig Fehler aufgrund fehlerhafter Annahmen über den persistenten globalen Zustand.  
+*   Die Zeile " **Clients** " gibt den Ursprung an, auf den sich der Dienstmitarbeiter beläuft.  Die Schaltfläche " **Fokus** " ist meist hilfreich, wenn Sie das Kontrollkästchen " **Alle anzeigen** " aktiviert haben.  Wenn dieses Kontrollkästchen aktiviert ist, werden alle registrierten Dienstmitarbeiter aufgelistet.  Wenn Sie auf die Schaltfläche **Fokus** neben einem Dienstmitarbeiter klicken, der auf einer anderen Registerkarte ausgeführt wird, konzentriert sich Microsoft Edge auf die Registerkarte.  
     
-If the service worker causes any errors, a new label called **Errors** shows up.  
+Wenn der Dienstmitarbeiter Fehler verursacht, wird eine neue Bezeichnung mit dem Namen **Fehler** angezeigt.  
 
 <!--  
-:::image type="complex" source="./media/sw-error.msft.png" alt-text="The Manifest Pane" lightbox="./media/sw-error.msft.png":::
+:::image type="complex" source="./media/sw-error.msft.png" alt-text="Bereich ' Manifest '" lightbox="./media/sw-error.msft.png":::
    Service worker with errors  
 :::image-end:::
 -->  
@@ -142,46 +142,46 @@ If the service worker causes any errors, a new label called **Errors** shows up.
 <!--TODO:  Capture Service Worker Errors sample when available. -->
 <!--TODO:  Link Web "How tickle works" sections when available. -->
 
-## Service worker caches 
+## Dienst Worker-Caches 
 
-The **Cache Storage** pane provides a read-only list of resources that have been cached using the \(service worker\) [Cache API][MDNWebCacheAPI].  
+Der Bereich **Cache-Speicher** bietet eine schreibgeschützte Liste der Ressourcen, die mit der [Cache-API][MDNWebCacheAPI]\ (Service Worker \) zwischengespeichert wurden.  
 
-:::image type="complex" source="./media/cache-pane-cache-storage-resources.msft.png" alt-text="The Manifest Pane" lightbox="./media/cache-pane-cache-storage-resources.msft.png":::
-   The **Cache Storage** Pane  
+:::image type="complex" source="./media/cache-pane-cache-storage-resources.msft.png" alt-text="Bereich ' Manifest '" lightbox="./media/cache-pane-cache-storage-resources.msft.png":::
+   Der **Cache Speicher** Bereich  
 :::image-end:::  
 
 > [!NOTE]
-> The first time you open a cache and add a resource to it, DevTools might not detect the change.  Reload the page and you should see the cache.  
+> Wenn Sie zum ersten Mal einen Cache öffnen und ihm eine Ressource hinzufügen, erkennt devtools die Änderung möglicherweise nicht.  Laden Sie die Seite neu, und Sie sollten den Cache sehen.  
 
-If you have two or more caches open, you'll see them listed below the **Cache Storage** dropdown.  
+Wenn zwei oder mehr Caches geöffnet sind, werden Sie unter der Dropdownliste **Cachespeicher** aufgelistet.  
 
-:::image type="complex" source="./media/cache-pane-cache-storage.msft.png" alt-text="The Manifest Pane" lightbox="./media/cache-pane-cache-storage.msft.png":::
-   The **Cache Storage** dropdown  
+:::image type="complex" source="./media/cache-pane-cache-storage.msft.png" alt-text="Bereich ' Manifest '" lightbox="./media/cache-pane-cache-storage.msft.png":::
+   Die Dropdownliste " **Cache Speicher** "  
 :::image-end:::  
 
-## Quota usage 
+## Kontingent Verwendung 
 
-Some responses within the **Cache Storage** pane may be flagged as being "opaque".  This refers to a response retrieved from a different origin, like from a **CDN** or remote API, when [CORS][FetchHttpCorsProtocol] is not enabled.  
+Einige Antworten innerhalb des **Cache Speicher** Bereichs werden möglicherweise als "undurchsichtig" gekennzeichnet.  Dies bezieht sich auf eine Antwort, die von einem anderen Ursprung abgerufen wurde, wie etwa von einem **CDN** oder einer Remote-API, wenn [CORS][FetchHttpCorsProtocol] nicht aktiviert ist.  
 
 <!--TODO:  Link Web "CDN" section when available. -->  
 <!--TODO:  Link Web "opaque" section when available. -->
 
-In order to avoid leakage of cross-domain information, there's significant padding added to the size of an opaque response used for calculating storage quota limits \(for example whether a `QuotaExceeded` exception is thrown\) and reported by the `navigator.storage` API.  
+Um das Auslaufen von domänenübergreifenden Informationen zu vermeiden, wird die Größe einer undurchsichtigen Antwort, die für die Berechnung von Speicherkontingent Grenzwerten verwendet wird, erheblich erweitert (beispielsweise, ob eine `QuotaExceeded` Ausnahme ausgelöst wird \) und von der `navigator.storage` API gemeldet.  
 
 <!--TODO:  Link Estimating "`navigator.storage` API" sections when available. -->
 
-The details of this padding vary from browser to browser, but for Microsoft Edge, this means that the **minimum size** that any single cached opaque response contributes to the overall storage usage is [approximately 7 megabytes][ChromiumIssues796060#c17].  You should keep this in mind when determining how many opaque responses you want to cache, since you could easily exceeded storage quota limitations much sooner than you'd otherwise expect based on the actual size of the opaque resources.  
+Die Details dieses Textabstands variieren von Browser zu Browser, aber für Microsoft Edge bedeutet dies, dass die **Mindestgröße** , die eine einzelne zwischengespeicherte undurchsichtige Antwort zur allgemeinen Speichernutzung beiträgt, [ungefähr 7 Megabyte][ChromiumIssues796060#c17]beträgt.  Beachten Sie Folgendes, wenn Sie ermitteln möchten, wie viele undurchsichtige Antworten Sie zwischenspeichern möchten, da Sie die Speicherkontingent Einschränkungen auf einfache Weise überschreiten können, die auf der tatsächlichen Größe der opaken Ressourcen basiert.  
 
-Related Guides:  
+Verwandte Leitfäden:  
 
-*   [Stack Overflow: What limitations apply to opaque responses?][StackOverflowLimitationsForOpaqueResponses]  
+*   [Stapelüberlauf: Welche Einschränkungen gelten für undurchsichtige Antworten?][StackOverflowLimitationsForOpaqueResponses]  
 <!--*   [Alphabet work container: Understanding Storage Quota](/web/tools/Alphabet-work-container/guides/storage-quota#beware_of_opaque_responses)  -->
     
 <!--TODO:  Link Work container storage quota for opaque responses section when available. -->
 
-## Clear storage 
+## Speicher löschen 
 
-The **Clear Storage** pane is a very useful feature when developing progressive web apps.  This pane lets you unregister service workers and clear all caches and storage with a single button click.  <!--Check out the section below to learn more.  -->
+Der Bereich " **Speicher löschen** " ist eine sehr nützliche Funktion, wenn Sie Progressive Web-Apps entwickeln.  In diesem Bereich können Sie die Registrierung von Dienst Mitarbeitern aufheben und alle Caches und den Speicher mit einem einzigen Klick auf die Schaltfläche Löschen.  <!--Check out the section below to learn more.  -->
 
 <!--Related Guides:  
 
@@ -208,15 +208,15 @@ Related Guides:
 
 <!-- links -->  
 
-[DevtoolsCommandMenuIndex]: ./command-menu/index.md "Run commands with the Microsoft Edge DevTools Command Menu | Microsoft Docs"  
+[DevtoolsCommandMenuIndex]: ./command-menu/index.md "Ausführen von Befehlen mit dem Befehlsmenü von Microsoft Edge devtools | Microsoft docs"  
 
-[ChromiumIssues796060#c17]: https://bugs.chromium.org/p/chromium/issues/detail?id=796060#c17 "Chromium Issue 796060: Cache Storage value rises on each refresh when Analytics code is in the html"  
+[ChromiumIssues796060#c17]: https://bugs.chromium.org/p/chromium/issues/detail?id=796060#c17 "Chrom Problem 796060: der Cache Speicherwert steigt bei jeder Aktualisierung, wenn sich der Analysecode im HTML-Code befindet"  
 
 [FetchHttpCorsProtocol]: https://fetch.spec.whatwg.org/#http-cors-protocol  
 
-[MDNWebCacheAPI]: https://developer.mozilla.org/docs/Web/API/Cache "Cache - Web APIs | MDN"  
+[MDNWebCacheAPI]: https://developer.mozilla.org/docs/Web/API/Cache "Cache-Web-APIs | MDN"  
 
-[StackOverflowLimitationsForOpaqueResponses]: https://stackoverflow.com/q/39109789/385997 "Stack Overflow: What limitations apply to opaque responses?"  
+[StackOverflowLimitationsForOpaqueResponses]: https://stackoverflow.com/q/39109789/385997 "Stapelüberlauf: Welche Einschränkungen gelten für undurchsichtige Antworten?"  
 
 <!--[WebEstimatingAvailableStorageSpace]: whats-new/2017/08/estimating-available-storage-space  -->
 <!--[RemoteDebugging]: /debug/remote-debugging/remote-debugging  -->
@@ -226,11 +226,11 @@ Related Guides:
 <!--[WebGlossaryOpaque]: /web/fundamentals/glossary#opaque-response  -->
 
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/progressive-web-apps) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
+> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
+> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/progressive-web-apps) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
 
-[![Creative Commons License][CCby4Image]][CCA4IL]  
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
+[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

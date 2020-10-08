@@ -1,13 +1,13 @@
 ---
 ms.assetid: 8b7f362f-da09-43db-8a42-cfa128c1808c
-description: Get the answers to common questions you may have while loading unpacked extensions.
-title: Extensions - Troubleshooting
+description: Hier erhalten Sie Antworten auf häufig gestellte Fragen, die beim Laden von ungepackten Erweiterungen auftreten können.
+title: Erweiterungen – Problembehandlung
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 12/16/2019
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge, web development, html, css, javascript, developer
+keywords: Edge, Web-Entwicklung, HTML, CSS, JavaScript, Entwickler
 ms.openlocfilehash: 78013876ba5c2c6c111289f46c81a9fde3ecc964
 ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
 ms.translationtype: MT
@@ -15,42 +15,42 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "10567354"
 ---
-# Troubleshooting  
+# Problembehandlung  
 
 [!INCLUDE [deprecation-note](includes/deprecation-note.md)]  
 
-If you are trying to load unpacked extensions and are experiencing issues, the info below may help:
+Wenn Sie versuchen, ungepackte Erweiterungen zu laden und Probleme auftreten, können die folgenden Informationen hilfreich sein:
 
-## 1. I see the error "We couldn't load this extension"
+## 1. Ich sehe den Fehler "Diese Erweiterung konnte nicht geladen werden"
 
-This usually means that Microsoft Edge cannot access the extension folder you attempted to load.
+Dies bedeutet in der Regel, dass Microsoft Edge nicht auf den Erweiterungsordner zugreifen kann, den Sie zu laden versucht haben.
 
-Here is a summary of the possible errors you may encounter:
+Nachfolgend finden Sie eine Zusammenfassung der möglichen Fehler, die möglicherweise auftreten:
 
-Error message | Details
+Fehlermeldung | Details
 :--------- | :------------
-Manifest parsing error: Missing or malformed manifest file. | Either the file `"manifest.json"` was not found in the specified location or there is something wrong with the file. To resolve the issue, ensure that the specified folder contains the manifest at the top-level, and double-check your commas, quotes and brackets.
-Manifest parsing error: `"content_scripts"` must define an array. | The field `"content_scripts"` should be an array. To resolve the issue, double-check your syntax. For example: `"content_scripts": [{"matches": [...],"css": [...],"js": [...] }]`
-Manifest parsing error: `"content_scripts"` must define value for `"matches"` property. | The property `"matches"` is required. To resolve the issue, specify the property’s value with an array of strings. For example: `"content_scripts": [ {... "matches": ["http://www.bing.com"] ...} ]`
-Manifest parsing error: `"content_scripts"` must reference at least one .css or .js file. | At least one property `"css"` or `"js"` is required. To resolve the issue, specify the property’s value with an array of strings. For example: `"content_scripts": [ { ... "js": ["myScript1.js", "myScript2.js"] ...} ]`
-Manifest parsing error: `"<field>"` must define value for "<property>" property. | The property `<property>` for the field `<field>` is required. To resolve the issue, specify a valid value for `<property>`.
-Manifest parsing error: `"content_scripts"` references invalid value for "run_at" field. | The property `"run_at"` specifies an unknown value. To resolve the issue, specify one of `"document_start"`, `"document_end"` or `"document_idle"`. For example: `"content_scripts": [ {... "run_at": "document_start" ... } ]`
-Manifest parsing error: Missing `"<field>"` field. | The field `<field>` is required. To resolve the issue, define the field with a valid value.
-Manifest parsing error: Invalid field `"<field1>"` found in `"<field2>"`. | The field <field1> for the field <field2> specifies an unknown value. To resolve the issue, specify a valid value for <field1>.
-Manifest parsing error: Invalid value for "<field>" field. | The field <field> specifies an unknown value. To resolve the issue, specify a valid value.
-Manifest parsing error: Extension is not supported by current version of Microsoft Edge. | The property `"minimum_edge_version"` specifies a more recent version of Microsoft Edge than the one you own. You can find the current version by opening the "..." (More) menu and then selecting "Settings" (bottom section "About this app"). To resolve the issue, either update your browser to a newer version or change the value in the manifest. For example: `"minimum_edge_version": "x.xxxx.xxxx.x"`
-Manifest parsing error: `"background"` must define value for "page" or "scripts" property. | The property "page" or "scripts" is required for the field "background". To resolve the issue, specify a string for "page" or an array of strings for "scripts". For example: `"background": { ... "scripts": ["background.js"] ... }`
-Manifest parsing error: `"background"` must define value for `"persistent"` property. | The property `"persistent"` is required. To resolve the issue, specify a true or false value. For example: `"background": {... "persistent": true ...}`
-Manifest parsing error: Only one `"browser_action"` or `"page_action"` can be defined. | An extension cannot define both a page action and a browser action at the same time. To resolve the issue, remove either one of the definitions.
-Unspecified error: `<error>` | Generic catch-all error message. `<error>` will be replaced by the specified error.
+Manifest-Analysefehler: fehlende oder fehlerhafte Manifestdatei. | Entweder wurde die Datei am `"manifest.json"` angegebenen Speicherort nicht gefunden, oder die Datei hat einen Fehler. Um das Problem zu beheben, stellen Sie sicher, dass der angegebene Ordner das Manifest auf der obersten Ebene enthält, und doppelklicken Sie auf die Kommas, Anführungszeichen und Klammern.
+Manifest-Analysefehler: `"content_scripts"` muss ein Array definieren. | Das Feld `"content_scripts"` sollte ein Array sein. Um das Problem zu beheben, überprüfen Sie die Syntax. Beispiel: `"content_scripts": [{"matches": [...],"css": [...],"js": [...] }]`
+Manifest-Analysefehler: `"content_scripts"` muss den Wert für `"matches"` Property definieren. | Die Eigenschaft `"matches"` ist erforderlich. Um das Problem zu beheben, geben Sie den Wert der Eigenschaft mit einem Array von Zeichenfolgen an. Beispiel: `"content_scripts": [ {... "matches": ["http://www.bing.com"] ...} ]`
+Manifest-Analysefehler: `"content_scripts"` muss auf mindestens eine CSS-oder JS-Datei verweisen. | Mindestens eine Eigenschaft `"css"` oder `"js"` erforderlich. Um das Problem zu beheben, geben Sie den Wert der Eigenschaft mit einem Array von Zeichenfolgen an. Beispiel: `"content_scripts": [ { ... "js": ["myScript1.js", "myScript2.js"] ...} ]`
+Manifest-Analysefehler: `"<field>"` muss den Wert für " <property> "-Eigenschaft definieren. | Die Eigenschaft `<property>` für das Feld `<field>` ist erforderlich. Um das Problem zu beheben, geben Sie einen gültigen Wert für an `<property>` .
+Manifest-Analysefehler: `"content_scripts"` verweist auf einen ungültigen Wert für das Feld "run_at". | Die Eigenschaft `"run_at"` gibt einen unbekannten Wert an. Um das Problem zu beheben, geben Sie `"document_start"` eines `"document_end"` oder ein `"document_idle"` . Beispiel: `"content_scripts": [ {... "run_at": "document_start" ... } ]`
+Manifest-Analysefehler: Fehlendes `"<field>"` Feld. | Das Feld `<field>` ist erforderlich. Um das Problem zu beheben, definieren Sie das Feld mit einem gültigen Wert.
+Manifest-Analysefehler: Ungültiges Feld `"<field1>"` gefunden in `"<field2>"` . | Das Feld <field1> für das Feld <field2> gibt einen unbekannten Wert an. Um das Problem zu beheben, geben Sie einen gültigen Wert für an <field1> .
+Manifest-Analysefehler: Ungültiger Wert für " <field> "-Feld. | Das Feld <field> gibt einen unbekannten Wert an. Um das Problem zu beheben, geben Sie einen gültigen Wert an.
+Fehler bei der Manifest-Analyse: die Erweiterung wird von der aktuellen Version von Microsoft Edge nicht unterstützt. | Die Eigenschaft `"minimum_edge_version"` gibt eine neuere Version von Microsoft Edge an als die, die Sie besitzen. Sie können die aktuelle Version finden, indem Sie das "..." öffnen. (Mehr) und wählen Sie dann "Einstellungen" (unter dem Abschnitt "Informationen zu dieser app"). Um das Problem zu beheben, aktualisieren Sie Ihren Browser entweder auf eine neuere Version, oder ändern Sie den Wert im Manifest. Beispiel: `"minimum_edge_version": "x.xxxx.xxxx.x"`
+Manifest-Analysefehler: `"background"` muss den Wert für die Eigenschaft "page" oder "Scripts" definieren. | Die Eigenschaft "Seite" oder "Skripte" ist für das Feld "Hintergrund" erforderlich. Um das Problem zu beheben, geben Sie eine Zeichenfolge für "page" oder ein Array von Zeichenfolgen für "Skripts" an. Beispiel: `"background": { ... "scripts": ["background.js"] ... }`
+Manifest-Analysefehler: `"background"` muss den Wert für `"persistent"` Property definieren. | Die Eigenschaft `"persistent"` ist erforderlich. Um das Problem zu beheben, geben Sie den Wert wahr oder falsch ein. Beispiel: `"background": {... "persistent": true ...}`
+Manifest-Analysefehler: nur ein `"browser_action"` oder `"page_action"` kann definiert werden. | Eine Erweiterung kann nicht gleichzeitig eine Seiten Aktion und eine Browser Aktion definieren. Um das Problem zu beheben, entfernen Sie entweder eine der Definitionen.
+Unspezifizierter Fehler: `<error>` | Generische Catch-All-Fehlermeldung. `<error>` wird durch den angegebenen Fehler ersetzt.
 
 
-## 2. I don't see the "Load extension" button
-Until extensions are available via the Microsoft Store, this button *should* be visible by default. If you open the "More" (...) menu, select the "Extensions" menu item and don't see the button, follow these steps:
+## 2. die Schaltfläche "Lade Erweiterung" wird nicht angezeigt
+Bis Erweiterungen über den Microsoft Store verfügbar sind, *sollte* diese Schaltfläche standardmäßig angezeigt werden. Wenn Sie das Menü "mehr" (...) öffnen, wählen Sie das Menüelement "Erweiterungen" aus, und sehen Sie die Schaltfläche nicht, gehen Sie folgendermaßen vor:
 
-1. In the address bar type **"about:flags"** and press the **"Enter"** key.
-2. Under the heading **"Developer settings"** make sure the checkbox next to **"Enable extension developer features"** is selected.
+1. Geben Sie in der Adressleiste **"about: Flags"** ein, und drücken Sie die **Eingabe** Taste.
+2. Stellen Sie unter der Überschrift **"Entwicklereinstellungen"** sicher, dass das Kontrollkästchen neben **"Erweiterungsentwickler Features aktivieren"** aktiviert ist.
 
-   ![about flags](./media/aboutflags.PNG)  
+   ![Informationen zu Flags](./media/aboutflags.PNG)  
 
-3. Close and re-open Microsoft Edge and check to see if the **"Load extension"** button is now visible.
+3. Schließen Sie Microsoft Edge, und öffnen Sie es erneut, und überprüfen Sie, ob die Schaltfläche **"Erweiterung laden"** nun angezeigt wird.

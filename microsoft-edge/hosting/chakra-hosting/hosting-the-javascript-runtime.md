@@ -1,6 +1,6 @@
 ---
-description: Use the standards-based Chakra JavaScript engine to add scripting capabilities to your Windows application.
-title: Hosting the JavaScript Runtime
+description: Verwenden Sie die standardbasierte Chakra JavaScript-Engine, um Ihrer Windows-Anwendung Skriptfunktionen hinzuzufügen.
+title: Hosten der JavaScript-Laufzeit
 ms.date: 06/18/2020
 ms.prod: microsoft-edge
 ms.topic: article
@@ -15,78 +15,78 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/18/2020
 ms.locfileid: "10752248"
 ---
-# Hosting the JavaScript runtime  
+# Hosten der JavaScript-Laufzeit  
 
 [!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-The JavaScript Runtime (JsRT) APIs provide a way for desktop, Windows Store, and server-side applications running on the Windows operating system to add scripting capabilities to the application by using the standards-based Chakra JavaScript engine that is also utilized by Microsoft Edge and Internet Explorer. These APIs are available on Windows 10 and any version of the Windows operating system that has Internet Explorer version 11.0 installed on the machine. For more info, see [Reference (JavaScript Runtime)](../chakra-hosting/reference-javascript-runtime.md). For info on using the JsRT in Windows Store apps, see [JsRT and the Universal Windows Platform](#Windows).  
+Die APIs für JavaScript-Runtime (JsRT) bieten eine Möglichkeit für Desktop-, Windows Store-und serverseitige Anwendungen, die unter dem Windows-Betriebssystem ausgeführt werden, um der Anwendung mithilfe des standardbasierten Chakra JavaScript-Moduls, das auch von Microsoft Edge und Internet Explorer verwendet wird, Skriptfunktionen hinzuzufügen. Diese APIs sind unter Windows 10 und einer beliebigen Version des Windows-Betriebssystems verfügbar, auf dem Internet Explorer, Version 11,0, auf dem Computer installiert ist. Weitere Informationen finden Sie unter [Referenz (JavaScript-Laufzeit)](../chakra-hosting/reference-javascript-runtime.md). Informationen zur Verwendung von JsRT in Windows Store-Apps finden Sie unter [JsRT und die universelle Windows-Plattform](#Windows).  
 
 > [!NOTE]
-> This documentation assumes a general working familiarity with the JavaScript language.  
+> Diese Dokumentation setzt eine allgemeine Vertrautheit mit der JavaScript-Sprache voraus.  
 
-## Concepts  
+## Konzepte  
 
-Understanding how to host the JavaScript engine using the JsRT APIs depends on two key concepts: runtimes and execution contexts.  
+Wie Sie das JavaScript-Modul mithilfe der JsRT-APIs hosten, hängt von zwei Schlüsselkonzepten ab: Laufzeiten und Ausführungs Kontexten.  
 
-A *runtime* represents a complete JavaScript execution environment. Each runtime that is created has its own isolated garbage collected heap and, by default, its own just-in-time (JIT) compiler thread and garbage collector (GC) thread. An *execution context* represents a JavaScript environment that has its own JavaScript global object distinct from all other execution contexts. One runtime may contain multiple execution contexts, and in such cases, all the execution contexts share the JIT compiler and GC thread associated with the runtime.  
+Eine *Common Language Runtime* stellt eine vollständige JavaScript-Ausführungsumgebung dar. Jede erstellte Laufzeit verfügt über einen eigenen isolierten Garbage Collection-Heap und standardmäßig über einen eigenen Just-in-time (JIT)-Compiler-Thread und einen Garbage Collector-Thread (GC). Ein *Ausführungskontext* stellt eine JavaScript-Umgebung dar, die ein eigenes JavaScript-globales Objekt hat, das sich von allen anderen Ausführungs Kontexten unterscheidet. Eine Laufzeit kann mehrere Ausführungskontexte enthalten, und in solchen Fällen teilen alle Ausführungskontexte den JIT-Compiler und den GC-Thread, der der Laufzeit zugeordnet ist.  
 
-Runtimes represent a single thread of execution. Only one runtime can be active on a particular thread at a time, and a runtime can only be active on one thread at a time. Runtimes are rental threaded, so a runtime that is not currently active on a thread (i.e. isn't running any JavaScript code or responding to any calls from the host) can be used on any thread that doesn't already have an active runtime on it.  
+Runtimes stellen einen einzelnen Ausführungsthread dar. In einem bestimmten Thread kann jeweils nur eine Laufzeit aktiv sein, und eine Laufzeit kann nur jeweils für einen Thread aktiv sein. Runtimes sind "Rental-threaded", sodass eine Runtime, die derzeit nicht in einem Thread aktiv ist (also keine JavaScript-Codes ausführt oder auf Anrufe vom Host reagiert), für alle Threads verwendet werden kann, auf denen noch keine aktive Laufzeit vorhanden ist.  
 
-Execution contexts are tied to a particular runtime and execute code within that runtime. Unlike runtimes, multiple execution contexts can be active on a thread at the same time. So a host can make a call into an execution context, that execution context can call back to the host, and the host can make a call into a different execution context.  
+Ausführungskontexte sind an eine bestimmte Laufzeit gebunden und führen Code innerhalb dieser Runtime aus. Im Gegensatz zu Laufzeiten können mehrere Ausführungskontexte gleichzeitig in einem Thread aktiv sein. Damit ein Host einen Aufruf in einem Ausführungskontext durchführen kann, kann dieser Ausführungskontext wieder an den Host zurückrufen, und der Host kann einen Aufruf in einen anderen Ausführungskontext führen.  
 
-![Multiple Execution Contexts](../chakra-hosting/media/js-chakra-hosting.png "JS_Chakra_Hosting")  
+![Mehrere Ausführungskontexte](../chakra-hosting/media/js-chakra-hosting.png "JS_Chakra_Hosting")  
 
-In practice, unless a host needs to run code in separated environments, a single execution context can be used. Similarly, unless a host needs to run multiple pieces of code concurrently, a single runtime is sufficient.  
+In der Praxis kann ein einzelner Ausführungskontext verwendet werden, es sei denn, ein Host muss Code in getrennten Umgebungen ausführen. Auch wenn ein Host mehrere Codeabschnitte gleichzeitig ausführen muss, genügt eine einzige Laufzeit.  
 
-## Memory management  
+## Speicherverwaltung  
 
-JavaScript is a garbage collected language, and thus there are several considerations that must be kept in mind when working with the JsRT APIs from another language.  
+Bei JavaScript handelt es sich um eine Garbage Collection-Sprache, und es gibt daher verschiedene Aspekte, die beim Arbeiten mit den JsRT-APIs aus einer anderen Sprache berücksichtigt werden müssen.  
 
-The main consideration is that the JavaScript garbage collector can only see references to values in two places: its runtime's heap, and the stack. Thus, a reference to a JavaScript value that is stored inside of another JavaScript value or in a local variable on the stack will always be seen by the garbage collector. But references stored in other locations, such as heaps managed by the host or the system, will not be seen by the garbage collector and may result in premature collection of values that are still in use by the host.  
+Die wichtigste Überlegung ist, dass der JavaScript-Garbage Collector nur Verweise auf Werte an zwei Stellenanzeigen kann: den Heap der Laufzeit und den Stapel. Daher wird ein Verweis auf einen JavaScript-Wert, der in einem anderen JavaScript-Wert oder in einer lokalen Variablen auf dem Stapel gespeichert ist, immer vom Garbage Collector angezeigt. Verweise, die an anderen Speicherorten gespeichert sind, wie Heaps, die vom Host oder System verwaltet werden, werden vom Garbage Collector jedoch nicht angezeigt und können zu einer vorzeitigen Sammlung von Werten führen, die vom Host weiterhin verwendet werden.  
 
 > [!IMPORTANT]
-> Some language compilers (such as the Visual Studio C++ compiler) will optimize away local variables where possible. Care must be taken to ensure that local variables that reference JavaScript values are on the stack if they are expected to keep those values alive.  
+> Bei einigen Sprachcompilern (wie dem Visual Studio C++-Compiler) werden lokale Variablen nach Möglichkeit optimiert. Es muss darauf geachtet werden, dass lokale Variablen, die auf JavaScript-Werte verweisen, auf dem Stapel liegen, wenn Sie davon ausgehen, dass diese Werte weiterhin aktiv sind.  
 
-If a reference to a JavaScript value will be stored in a location not visible to the garbage collector, the host must manually add and remove references using the JsRT APIs.  
+Wenn ein Verweis auf einen JavaScript-Wert an einem Speicherort gespeichert wird, der für den Garbage Collector nicht sichtbar ist, muss der Host Verweise manuell mithilfe der JsRT-APIs hinzufügen und entfernen.  
 
-## Exception handling  
+## Ausnahmebehandlung  
 
-When a JavaScript exception occurs during script execution, the containing runtime is put into an exception state. While in an exception state, no code can run and all API calls will fail with the error code `JsErrorInExceptionState` until the host retrieves and clears the exception using the `JsGetAndClearException` API. If the host returns from a JavaScript callback without clearing the runtime from an exception state, then the JavaScript exception will be re-thrown as soon as control passes back to the JavaScript engine. This also enables host callbacks to "throw" a JavaScript exception by setting the runtime into an exception state and then returning from a host callback.  
+Wenn während der Skriptausführung eine JavaScript-Ausnahme auftritt, wird die enthaltende Laufzeit in einen Ausnahmezustand versetzt. In einem Ausnahmezustand kann kein Code ausgeführt werden, und alle API-Aufrufe schlagen mit dem Fehlercode fehl, `JsErrorInExceptionState` bis der Host die Ausnahme mithilfe der API abruft und löscht `JsGetAndClearException` . Wenn der Host von einem JavaScript-Rückruf zurückkehrt, ohne die Laufzeit aus einem Ausnahmezustand zu löschen, wird die JavaScript-Ausnahme erneut ausgelöst, sobald die Steuerung wieder an das JavaScript-Modul übergeben wird. Dadurch können Host Rückrufe auch eine JavaScript-Ausnahme auslösen, indem Sie die Laufzeit in einen Ausnahmezustand setzen und dann von einem Host Rückruf zurückkehren.  
 
-A host is not allowed to let its own internal exceptions to propagate across a host callback—any callback methods must catch all host exceptions before returning control to the runtime.  
+Einem Host ist es nicht gestattet, seine eigenen internen Ausnahmen über einen Host Rückruf zu übertragen – alle Rückrufmethoden müssen alle Host Ausnahmen abfangen, bevor Sie die Steuerung an die Laufzeit zurückgeben.  
 
-## Runtime resource usage  
+## Laufzeit-Ressourcennutzung  
 
-The JsRT APIs expose a number of way to monitor and modify the way runtimes use resources. They generally break down into the following categories:  
+Mit den JsRT-APIs wird eine Reihe von Möglichkeiten zum Überwachen und Ändern der Art und Weise der Verwendung von Ressourcen durch Runtimes verfügbar gemacht. Sie gliedern sich im Allgemeinen in die folgenden Kategorien:  
 
-*   **Thread Usage**. By default, each runtime will create a dedicated JIT compiler thread and a dedicated GC thread that service that runtime. If a runtime is created with the `JsRuntimeAttributeDisableBackgroundWork` flag, then the JIT and GC work will be performed on the runtime thread itself instead of separate background threads for each one of them. A host can also supply a thread service callback to the `JsCreateRuntime` call, which will allow the host to schedule JIT and GC work in any way it sees fit.
-*   **Memory Usage**. There are several ways to monitor and modify the memory usage of a runtime. If the runtime will be running for a long time, the host can specify the `JsRuntimeAttributeEnableIdleProcessing` flag when creating the runtime and then call `JsIdle` when the host is in an idle state. This allows the engine to defer some memory cleanup and bookkeeping work until idle time.  
+*   **Thread Verwendung**. Standardmäßig erstellt jede Laufzeit einen dedizierten JIT-Compiler-Thread und einen dedizierten GC-Thread, der diese Runtime bereitstellt. Wenn eine Common Language Runtime mit dem `JsRuntimeAttributeDisableBackgroundWork` Flag erstellt wird, werden die JIT-und die GC-Arbeit für den Laufzeitthread selbst und nicht für jedes einzelne Hintergrund-Threads ausgeführt. Ein Host kann auch einen Thread Dienst Rückruf für den Aufruf bereitstellen `JsCreateRuntime` , der es dem Host ermöglicht, JIT-und GC-Arbeit in einer Weise zu planen, in der es für Sie geeignet ist.
+*   **Speichernutzung**. Es gibt mehrere Möglichkeiten, die Speicherauslastung einer Laufzeit zu überwachen und zu ändern. Wenn die Laufzeit für längere Zeit ausgeführt wird, kann der Host das Flag angeben, `JsRuntimeAttributeEnableIdleProcessing` Wenn die Laufzeit erstellt und dann aufgerufen `JsIdle` wird, wenn sich der Host im Ruhezustand befindet. Dadurch kann das Modul einige Arbeitsspeicher Bereinigung und-Buchhaltung bis zur Leerlaufzeit aufschieben.  
     
-    The host can monitor garbage collections by calling `JsSetRuntimeBeforeCollectCallback`. It can also monitor allocations made by the heap by calling `JsSetRuntimeMemoryAllocationCallback`. Note that this API does not call back on every JavaScript allocation, just when the runtime's heap needs more space from which to allocate. The memory allocation callback is allowed to deny the request, which will trigger a garbage collection and, if no memory is available, an out of memory error in the runtime.  
+    Der Host kann Garbage Collections durch Aufrufen überwachen `JsSetRuntimeBeforeCollectCallback` . Sie kann auch Zuordnungen überwachen, die vom Heap durch einen Aufruf durchgeführt werden `JsSetRuntimeMemoryAllocationCallback` . Beachten Sie, dass diese API nicht bei jeder JavaScript-Zuweisung zurückruft, nur wenn der Heap der Laufzeit mehr Speicherplatz benötigt. Der Speicher Zuweisungs Rückruf ist berechtigt, die Anforderung zu verweigern, wodurch eine Garbage Collection ausgelöst wird und, wenn kein Arbeitsspeicher verfügbar ist, ein Arbeitsspeicherfehler in der Laufzeit auftritt.  
     
-    The host can also call `JsSetRuntimeMemoryLimit` to set a limit for how much memory a runtime can use. When a runtime hits a limit, it will trigger a garbage collection and, if no memory is available, an out of memory error will be thrown by the runtime.  
+    Der Host kann auch aufrufen `JsSetRuntimeMemoryLimit` , um einen Grenzwert für den Arbeitsspeicher festzulegen, den eine Laufzeit verwenden kann. Wenn eine Common Language Runtime auf eine Grenze trifft, wird eine Garbage Collection ausgelöst, und wenn kein Arbeitsspeicher verfügbar ist, wird ein Fehler aufgrund eines Arbeitsspeichers von der Laufzeit ausgelöst.  
     
-*   **Script Interruption and Evaluation**. The host can call `JsDisableRuntimeExecution` to terminate execution within a runtime. This call can be made at any time and from any thread. Because script termination depends on reaching guard points inserted into the code, a script may not terminate at the exact moment, but will do so very shortly afterwards. By default, termination guard points are placed in the generated code conservatively and may not cover every situation, such as an infinite loop. Creating the runtime with the `JsRuntimeAttributeAllowScriptInterrupt` flag causes the runtime to insert additional checks for infinite loops, often at the cost of a small performance overhead.  
+*   **Skript Unterbrechung und-Auswertung** Der Host kann aufrufen `JsDisableRuntimeExecution` , um die Ausführung innerhalb einer Laufzeit zu terminieren. Dieser Anruf kann jederzeit und von jedem beliebigen Thread aus erfolgen. Da die Skript Beendigung davon abhängt, in den Code eingefügte Guard Points zu erreichen, wird ein Skript möglicherweise nicht zum exakten Zeitpunkt beendet, aber dies wird sehr kurz danach sein. Standardmäßig werden Termination Guard-Punkte in dem generierten Code konservativ plaziert und decken möglicherweise nicht alle Situationen ab, wie etwa eine Endlosschleife. Das Erstellen der Common Language Runtime mit dem `JsRuntimeAttributeAllowScriptInterrupt` Flag führt dazu, dass die Common Language Runtime zusätzliche Überprüfungen für Endlosschleifen einfügt, oft zu Lasten eines geringen Leistungsaufwands.  
     
-    If a host wishes to disallow generation of native code by the JIT compiler, it can specify the `JsRuntimeAttributeDisableNativeCodeGeneration` flag. A host can also disallow scripts from dynamically running scripts itself by specifying the `JsRuntimeAttributeDisableEval` flag.  
+    Wenn ein Host die Generierung von systemeigenem Code durch den JIT-Compiler nicht zulassen möchte, kann er das `JsRuntimeAttributeDisableNativeCodeGeneration` Flag angeben. Ein Host kann auch verhindern, dass Skripts dynamisch Skripts selbst ausführen, indem Sie das `JsRuntimeAttributeDisableEval` Flag angeben.  
     
-## Debugging and profiling  
+## Debuggen und Profilerstellung  
 
-JsRT APIs supports debugging and profiling via the Active Scripting technology.  
+JsRT-APIs unterstützen das Debuggen und die Profilerstellung über die Active Scripting-Technologie.  
 
-Starting in Windows 10, the Chakra JavaScript Engine supports the legacy Internet Explorer (MSHTML) engine and new Microsoft Edge (EdgeHTML) engine, and you can target either in JsRT (see [Targeting Microsoft Edge vs. Legacy Engines](../chakra-hosting/targeting-edge-vs-legacy-engines-in-jsrt-apis.md) for details). Debugging a script in Visual Studio works differently between the legacy engine and Microsoft Edge engine. With the legacy engine, the host needs to provide an [IDebugApplication Interface](/scripting/winscript/reference/idebugapplication-interface) pointer, which can be obtained from an [IProcessDebugManager Interface](/scripting/winscript/reference/iprocessdebugmanager-interface) instance. With the Microsoft Edge engine, `IDebugApplication` is deprecated, and the Chakra engine enables native and script debugging capabilities through the Visual Studio debugger without requiring an implementation of `IDebugApplication` from the user.  
+Ab Windows 10 unterstützt das Chakra JavaScript-Modul das Legacy-Modul "Internet Explorer (MSHTML)" und "New Microsoft Edge (EdgeHTML)", und Sie können entweder in JsRT (siehe [Targeting Microsoft Edge vs. Legacy Engines](../chakra-hosting/targeting-edge-vs-legacy-engines-in-jsrt-apis.md) für Details). Das Debuggen eines Skripts in Visual Studio funktioniert unterschiedlich zwischen dem Legacy Modul und dem Microsoft Edge-Modul. Beim Legacy Modul muss der Host einen [IDebugApplication-Schnittstellen](/scripting/winscript/reference/idebugapplication-interface) Zeiger bereitstellen, der von einer [IProcessDebugManager-Schnittstellen](/scripting/winscript/reference/iprocessdebugmanager-interface) Instanz abgerufen werden kann. Mit dem Microsoft-Edge-Modul `IDebugApplication` ist veraltet, und das Chakra-Modul ermöglicht das systemeigene und Skriptdebugging über den Visual Studio-Debugger, ohne dass eine Implementierung des Benutzers erforderlich ist `IDebugApplication` .  
 
-To make scripts in an execution context debuggable, the Chakra engine has to switch to using less efficient code execution methods. As such, debuggable code typically runs slower than non-debuggable code. As a result, with the legacy engine, a host can choose to either start debugging in an execution context from the beginning by providing the `IDebugApplication` pointer up front through `JsCreateContext`, or it can wait until debugging is needed and then call `JsStartDebugging`. With the Microsoft Edge engine, `JsCreateContext` no longer takes an `IDebugApplication` parameter, and as a result the script is debuggable only after `JsStartDebugging` is called. When debugging using Visual Studio, the "Script" debugger option must be enabled.  
+Damit Skripts in einem Ausführungskontext debugfähigen werden, muss das Chakra-Modul auf die Verwendung von niedrigeren effizienten Code Ausführungsmethoden umschalten. Daher wird debugfähigen-Code in der Regel langsamer ausgeführt als nicht-debugfähigen-Code. Aus diesem Grund kann ein Host mit dem Legacy Modul entweder von Anfang an das Debuggen in einem Ausführungskontext starten, indem er den Zeiger im `IDebugApplication` Vordergrund bereitstellt `JsCreateContext` , oder es kann warten, bis das Debuggen erforderlich ist, und dann aufrufen `JsStartDebugging` . Mit dem Microsoft-Edge-Modul wird `JsCreateContext` kein Parameter mehr benötigt `IDebugApplication` , und infolgedessen wird das Skript nur debugfähigen, nachdem `JsStartDebugging` es aufgerufen wurde. Beim Debuggen mit Visual Studio muss die Debugger-Option "Skript" aktiviert sein.  
 
-The JavaScript code in an execution context can be profiled in one of two ways. The command line Visual Studio Profiler (vsperf.exe) can be used in Windows 8.1 and later versions with the /js switch to produce a report that targets the JavaScript code run in the application. Or the host can directly call `JsStartProfiling` and `JsStopProfiling` and provide a callback to do profiling itself. The host can also examine the state of the garbage collected heap by calling `JsEnumerateHeap`. Profiling in JsRT works in the same manner between the legacy and the Microsoft Edge engine. However, JsRT profiling APIs (`JsStartProfiling`, `JsStopProfiling`, `JsEnumerateHeap`, and `JsIsEnumeratingHeap`) are not available for Universal Windows Apps.  
+Der JavaScript-Code in einem Ausführungskontext kann auf eine von zwei Arten profiliert werden. Die Befehlszeile Visual Studio Profiler (vsperf.exe) kann in Windows 8,1 und höheren Versionen mit dem/js-Schalter verwendet werden, um einen Bericht zu erstellen, der auf den in der Anwendung ausgeführten JavaScript-Code ausgerichtet ist. Oder der Host kann direkt anrufen `JsStartProfiling` und `JsStopProfiling` einen Rückruf für die Profilerstellung selbst bereitstellen. Der Host kann den Zustand des Garbage Collection-Heaps auch durch Aufrufen untersuchen `JsEnumerateHeap` . Die Profilerstellung in JsRT funktioniert auf die gleiche Weise zwischen dem Legacy-und dem Microsoft Edge-Modul. JsRT-Profilerstellungs-APIs ( `JsStartProfiling` ,, `JsStopProfiling` `JsEnumerateHeap` , und `JsIsEnumeratingHeap` ) sind jedoch für universelle Windows-apps nicht verfügbar.  
 
 <a name="Windows"></a>   
 
-## JsRT and the Universal Windows Platform  
+## JsRT und die universelle Windows-Plattform  
 
-You can use JsRT APIs to add scripting capabilities to a Universal Windows app. A Universal Windows app that uses the JsRT APIs will need to target the Microsoft Edge JSRT APIs, which in turn target the Edge Chakra engine. For more information, see [Targeting Microsoft Edge vs. Legacy Engines](../chakra-hosting/targeting-edge-vs-legacy-engines-in-jsrt-apis.md). The complete JsRT API is available for Universal Windows apps, except for profiling and heap enumeration support (`JsStartProfiling`, `JsStopProfiling`, `JsEnumerateHeap`, and `JsIsEnumeratingHeap` are not supported).  
+Sie können JsRT-APIs verwenden, um einer universellen Windows-App Skriptfunktionen hinzuzufügen. Eine universelle Windows-APP, die die JsRT-APIs verwendet, muss auf die Microsoft Edge JsRT-APIs ausgerichtet sein, die wiederum auf das Edge-Chakra-Modul ausgerichtet sind. Weitere Informationen finden Sie unter [Targeting für Microsoft Edge vs. Legacy Engines](../chakra-hosting/targeting-edge-vs-legacy-engines-in-jsrt-apis.md). Die vollständige JsRT-API ist für universelle Windows-apps verfügbar, mit Ausnahme der Unterstützung für Profilierungs-und Heap Enumeration (,, `JsStartProfiling` `JsStopProfiling` `JsEnumerateHeap` und `JsIsEnumeratingHeap` werden nicht unterstützt).  
 
-JsRT also allows scripts to natively access any [Universal Windows Platform (UWP) APIs](https://msdn.microsoft.com/library/windows/apps/br211377.aspx) after exposing the API namespace through Microsoft Edge JsRT API `JsProjectWinRTNamespace`. While Universal Windows Applications require no setup in addition to projecting necessary namespaces, in a Classic (Win32) Windows Application, a COM-initialized delegated pumping mechanism needs to be enabled through `JsSetProjectionEnqueueCallback` to enable events and asynchronous APIs. The following Win32 sample utilizes asynchronous UWP APIs to create an http client to get content from a Uri:  
+JsRT ermöglicht es Skripts auch, nativ auf alle [APIs für die universelle Windows-Plattform (UWP)](https://msdn.microsoft.com/library/windows/apps/br211377.aspx) zuzugreifen, nachdem der API-Namespace über die Microsoft Edge JsRT-API verfügbar gemacht wurde `JsProjectWinRTNamespace` . Während für universelle Windows-Anwendungen zusätzlich zur Projektion notwendiger Namespaces kein Setup erforderlich ist, muss in einer klassischen (Win32-) Windows-Anwendung ein com-initialisierter Delegierter Pumpmechanismus aktiviert werden, um `JsSetProjectionEnqueueCallback` Ereignisse und asynchrone APIs zu ermöglichen. Im folgenden Win32-Beispiel werden asynchrone UWP-APIs verwendet, um einen HTTP-Client zum Abrufen von Inhalten aus einem URI zu erstellen:  
 
 ```cpp
 typedef struct _jsCall {
@@ -129,8 +129,8 @@ WaitForSingleObjectEx(outstandingCall.event, 10000, FALSE) == WAIT_OBJECT_0;
 outstandingCall.jsCallback(outstandingCall.jsContext);
 ```  
 
-## See also  
+## Weitere Informationen  
 
-*   [JavaScript Runtime Sample App](https://go.microsoft.com/fwlink/p/?LinkID=306674&clcid=0x409)   
-*   [Reference (JavaScript Runtime)](../chakra-hosting/reference-javascript-runtime.md)   
-*   [JavaScript Runtime Hosting](../javascript-runtime-hosting.md)  
+*   [JavaScript-Runtime-Beispiel-App](https://go.microsoft.com/fwlink/p/?LinkID=306674&clcid=0x409)   
+*   [Referenz (JavaScript-Laufzeit)](../chakra-hosting/reference-javascript-runtime.md)   
+*   [JavaScript-Laufzeit-Hosten](../javascript-runtime-hosting.md)  

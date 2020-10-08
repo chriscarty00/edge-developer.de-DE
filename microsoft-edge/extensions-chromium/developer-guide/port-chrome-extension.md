@@ -1,12 +1,12 @@
 ---
-description: Process of porting Chrome Extension to Microsoft Edge.
-title: Port Chrome Extension To Microsoft (Chromium)Edge
+description: Prozess zum Portieren der Chrome-Erweiterung an Microsoft Edge.
+title: Port Chrome-Erweiterung an Microsoft (Chrom) Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
+keywords: Edge-Chromium, Erweiterungen-Entwicklung, Browser-Erweiterungen, Addons, Partner Center, Entwickler
 ms.openlocfilehash: 1852e267579f0fb790c6b8cac75a566298223933
 ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
@@ -14,9 +14,9 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 09/15/2020
 ms.locfileid: "11015688"
 ---
-# Port Chrome Extension To Microsoft \(Chromium\) Edge  
+# Port Chrome-Erweiterung zu Microsoft \ (Chrom \) Edge  
 
-The process of porting a Chrome Extension to Microsoft Edge is very straightforward.  Extensions written for Chromium, in most cases, run on Microsoft Edge with minimal changes.  The Extension APIs and manifest keys supported by Chrome are code-compatible with Microsoft Edge.  However, Microsoft Edge does not support the following Extension APIs:  
+Der Vorgang zum Portieren einer Chrome-Erweiterung zu Microsoft Edge ist sehr einfach.  Die für Chrom geschriebenen Erweiterungen werden in den meisten Fällen auf Microsoft Edge mit minimalen Änderungen ausgeführt.  Die von Chrome unterstützten Erweiterungs-APIs und manifestschlüssel sind mit Microsoft Edge Code kompatibel.  Microsoft Edge unterstützt jedoch nicht die folgenden Erweiterungs-APIs:  
 
 *   `chrome.gcm`  
 *   `chrome.identity.getAccounts`  
@@ -24,35 +24,35 @@ The process of porting a Chrome Extension to Microsoft Edge is very straightforw
 *   `chrome.instanceID`  
 
 > [!Note]
-> The user must be signed into Microsoft Edge using an MSA or AAD account in order to use the `chrome.identity.getProfileUserInfo` API.  If the user is signed into Microsoft Edge using **On-premise AD**, the API returns `null` for the email and ID values.  
+> Der Benutzer muss bei Microsoft Edge mit einem MSA-oder Aad-Konto angemeldet sein, um die API verwenden zu können `chrome.identity.getProfileUserInfo` .  Wenn der Benutzer bei Microsoft Edge unter Verwendung einer **lokalen Anzeige**angemeldet ist, gibt die API die `null` e-Mail-und ID-Werte zurück.  
 
 > [!IMPORTANT]
-> **Payments**:  Microsoft Edge does not directly support an Extension that uses [Chrome Web Store payments][ChromeDeveloperWebStorePayments] due to the requirement to use the `identity.getAuthtoken` request to get the token for signed-in users to send the REST-based licensing API request.  Microsoft Edge does not support the `getAuthtoken` request, so this flow does not work.  
+> **Zahlungen**: Microsoft Edge unterstützt nicht direkt eine Erweiterung, die [Chrome Web Store-Zahlungen][ChromeDeveloperWebStorePayments] verwendet, da die Anforderung zum `identity.getAuthtoken` Abrufen des Tokens für Benutzer mit Anmeldedaten zum Senden der auf der Grundlage der Ruhe basierten Lizenzierungs-API-Anforderung verwendet werden muss.  Microsoft Edge unterstützt die `getAuthtoken` Anforderung nicht, sodass dieser Fluss nicht funktioniert.  
 
-To port your Chrome Extension, follow these steps:  
+Führen Sie die folgenden Schritte aus, um Ihre Chrome-Erweiterung zu portieren:  
 
-1.  Review the Chrome Extension APIs used in your Extensions.  If you are using features or APIs that are not supported by Microsoft Edge, you may not be able to port your Extension.  
+1.  Überprüfen Sie die in ihren Erweiterungen verwendeten Chrome-Erweiterungs-APIs.  Wenn Sie Features oder APIs verwenden, die von Microsoft Edge nicht unterstützt werden, können Sie Ihre Erweiterung möglicherweise nicht portieren.  
     
     > [!NOTE]
-    > The `getAuthToken` API does not work with Microsoft Edge, however you may use `launchWebAuthFlow` to fetch an OAuth2 token to authenticate users.  
+    > Die `getAuthToken` API funktioniert nicht mit Microsoft Edge, jedoch können Sie `launchWebAuthFlow` zum Abrufen eines OAuth2-Tokens verwenden, um Benutzer zu authentifizieren.  
     
-1.  If you are using `Chrome` in the name or description of your Extension, re-brand the Extension for `Microsoft Edge`.  You must pass the certification process.  
+1.  Wenn Sie `Chrome` den Namen oder die Beschreibung ihrer Durchwahl verwenden, geben Sie die Erweiterung für neu ein `Microsoft Edge` .  Sie müssen den Zertifizierungsprozess bestehen.  
     
-1.  Test your Extension to check if it works in Microsoft Edge.  The first step to do this is to ensure that you have Extension developer features turned on.  This enables you to side load Extension files in Microsoft Edge so that you are able to test your Extension while developing it.  
+1.  Testen Sie Ihre Erweiterung, um zu überprüfen, ob Sie in Microsoft Edge funktioniert.  Der erste Schritt besteht darin, sicherzustellen, dass die Erweiterungsentwickler Features aktiviert sind.  Dadurch können Sie Erweiterungsdateien in Microsoft Edge laden, damit Sie Ihre Erweiterung während der Entwicklung testen können.  
     
-1.  If you have any issues, debug your Extensions in Microsoft Edge by using the DevTools, or [contact us][mailtoExtensionPartnerOpsMicrosoft].  
+1.  Wenn Sie Probleme haben, Debuggen Sie Ihre Erweiterungen in Microsoft Edge mithilfe des devtools, oder [kontaktieren Sie uns][mailtoExtensionPartnerOpsMicrosoft].  
     
-1.  Now your Extension is finally polished up and ready to be packaged.  If you wish to prepare for submission to the Microsoft Edge Addons catalog \(Microsoft Edge Addons\), you do not need to package your Extension.  Further, follow our [publishing guidelines][ExtensionsPublishExtension] to publish your Extension on Microsoft Edge Addons.  
+1.  Nun wird Ihre Erweiterung endlich aufpoliert und kann verpackt werden.  Wenn Sie sich auf die Übermittlung an den Microsoft Edge Addons-Katalog vorbereiten möchten \ (Microsoft Edge Addons \), müssen Sie Ihre Erweiterung nicht verpacken.  Befolgen Sie außerdem unsere [Veröffentlichungsrichtlinien][ExtensionsPublishExtension] , um Ihre Erweiterung auf Microsoft Edge-Addons zu veröffentlichen.  
     
     > [!NOTE]
-    > If your Extension exchanges messages with a native application using `chrome.runtime.connectNative` API, ensure that you set `allowedorigins` to "`extension://[Microsoft-Catalog-extensionID]`" in your native messaging host manifest file.  This enables the app to identify the Extension.  
+    > Wenn Ihre Erweiterung Nachrichten mit einer systemeigenen Anwendung unter Verwendung der API austauscht `chrome.runtime.connectNative` , stellen Sie sicher, dass Sie `allowedorigins` `extension://[Microsoft-Catalog-extensionID]` in der Manifestdatei des systemeigenen Messaging-Hosts auf "" festzulegen.  Dadurch kann die APP die Erweiterung identifizieren.  
 
 <!-- image links -->  
 
 <!-- links -->  
 
-[ExtensionsPublishExtension]: ../publish/publish-extension.md "Publish An Extension"  
+[ExtensionsPublishExtension]: ../publish/publish-extension.md "Veröffentlichen einer Erweiterung"  
 
 [mailtoExtensionPartnerOpsMicrosoft]: mailto:extensionpartnerops@microsoft.com "ExtensionPartnerOps@microsoft.com"  
 
-[ChromeDeveloperWebStorePayments]: https://developer.chrome.com/webstore/one_time_payments "One-Time Payments - Google Chrome"  
+[ChromeDeveloperWebStorePayments]: https://developer.chrome.com/webstore/one_time_payments "Einmalige Zahlungen – Google Chrome"  

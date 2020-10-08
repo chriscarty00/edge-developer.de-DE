@@ -1,12 +1,12 @@
 ---
-description: Provides a summary of high-impact changes that may impact site compatibility
-title: Site compatibility-impacting changes coming to Microsoft Edge
+description: Enthält eine Zusammenfassung der Änderungen mit hoher Auswirkung, die sich auf die Website Kompatibilität auswirken können.
+title: Website Kompatibilität – Auswirkungen von Änderungen an Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 10/02/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, compatibility, web platform
+keywords: Microsoft Edge, Kompatibilität, Web-Plattform
 ms.openlocfilehash: 49fbedb2fe979a52b771539c7ceedce8968c2fb4
 ms.sourcegitcommit: 903524ab85321ade278facd741d6487e8cabe33f
 ms.translationtype: MT
@@ -14,53 +14,53 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 10/06/2020
 ms.locfileid: "11100288"
 ---
-# Site compatibility-impacting changes coming to Microsoft Edge  
+# Website Kompatibilität – Auswirkungen von Änderungen an Microsoft Edge  
 
-The web is constantly evolving to improve the user experience, security, and privacy.  In some cases, changes may be significant enough to impact the functionality of existing pages.  The following table summarizes particularly high-impact changes that the Microsoft Edge team is currently tracking.  Review this article often; the Microsoft Edge team updates the following page as thinking evolves, timelines solidify, and new changes are announced.  
+Das Web entwickelt sich ständig weiter, um Benutzerfreundlichkeit, Sicherheit und Datenschutz zu verbessern.  In einigen Fällen können Änderungen erheblich genug sein, um die Funktionalität vorhandener Seiten zu beeinflussen.  In der folgenden Tabelle sind besonders wichtige Änderungen zusammengefasst, die vom Microsoft Edge-Team zurzeit nachverfolgt werden.  Lesen Sie diesen Artikel häufig; das Microsoft Edge-Team aktualisiert die folgende Seite, wenn sich das Denken entwickelt, Zeitpläne verfestigen und neue Änderungen angekündigt werden.  
 
-| Change | Stable Channel | Experimentation | Additional information |  
+| Änderung | Stable-Kanal | Experimentation | Weitere Informationen |  
 |:--- |:--- |:--- |:--- |
-| Cookies default to `SameSite=Lax` and `SameSite=None-requires-Secure` | [Chrome+1](#release-comments) \(Edge v86\)  | Canary v82, Dev v82 | This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, including the planned timeline by Google for this change, navigate to the [Chrome Platform Status entry][ChromePlatformStatus5088147346030592].  |  
-| Referrer Policy: Default to `strict-origin-when-cross-origin` | [Chrome+1](#release-comments) \(Edge v86\)  | Canary v79, Dev v79 | This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, including the planned timeline by Google for this change, navigate to the [Chrome Platform Status entry][ChromePlatformStatus6251880185331712].  |  
-| Disallow synchronous `XmlHttpRequest` in page dismissal | [Chrome+1](#release-comments) \(Edge v83\) |  | This change is happening in the Chromium project, on which Microsoft Edge is based.  Matching Chrome, Microsoft Edge offers a Group Policy to turn off this change until Edge v88.  For more information, including the planned timeline by Google for this change, navigate to the [Chrome Platform Status entry][ChromePlatformStatus4664843055398912].  |  
-| Display subtle prompt for notification permissions requests | Edge v84 |  | Quiet notification requests display a subtle request icon in the address bar for site notification permissions requested using the `Notifications` or `Push` API, replacing the full or standard permission flyout prompt UI.  This feature is currently enabled for all users.  To opt out of quiet notification requests, navigate to `edge://settings/content/notifications`.  In the future, the Microsoft Edge team may explore re-enabling the full flyout notification prompt in some scenarios.  |  
-| Turn off TLS/1.0 and TLS/1.1 by default | Edge v84 |  | The [SSLMinVersion][DeployedEdgePoliciesSSLMinVersion] Group Policy permits re-enabling of TLS/1.0 and TLS/1.1; the policy remains available until Edge v90.  |  
-| Block mixed content downloads | [Chrome+1](#release-comments) \(Edge v86\)  |  | This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, including the planned timeline by Google for this change, navigate to the [Google security blog entry][GoogleBlogSecurity20200206].  The Microsoft rollout schedule on file types to warn or block is planned for one release after Chrome.  |  
-| Deprecate AppCache | [Chrome+1](#release-comments) \(Edge v86\)  |  | This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, navigate to the [WebDev documentation][WebDevAppCacheRemoval].  The Microsoft rollout schedule for deprecation is planned for one release after Chrome.  Requesting an [AppCache OriginTrial Token][AppCacheOriginTrial] allows sites to continue to use the deprecated API until Edge v90.  |  
-| Removal of Adobe Flash | Edge v88  |  | This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, navigate to the [Adobe Flash Chromium Roadmap][ChromiumFlashRoadmapSupportRemoved].  | 
-| Turn off and remove FTP | Edge v88  | Edge v87 | In Edge v87, FTP support is turned off by default.  In Edge v88, FTP support is removed.  This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, navigate to the [Chrome Platform Status Entry][ChromePlatformStatus6246151319715840].  |   
+| Cookies standardmäßig auf `SameSite=Lax` und `SameSite=None-requires-Secure` | [Chrome + 1](#release-comments) \ (Edge V86 \)  | Canary V82, dev V82 | Diese Änderung findet im Chromium-Projekt statt, auf dem Microsoft Edge basiert.  Um weitere Informationen zu erhalten, einschließlich der geplanten Zeitachse von Google für diese Änderung, navigieren Sie zum [Chrome Platform-Status Eintrag][ChromePlatformStatus5088147346030592].  |  
+| Referrer-Richtlinie: standardmäßig `strict-origin-when-cross-origin` | [Chrome + 1](#release-comments) \ (Edge V86 \)  | Canary V79, dev V79 | Diese Änderung findet im Chromium-Projekt statt, auf dem Microsoft Edge basiert.  Um weitere Informationen zu erhalten, einschließlich der geplanten Zeitachse von Google für diese Änderung, navigieren Sie zum [Chrome Platform-Status Eintrag][ChromePlatformStatus6251880185331712].  |  
+| Synchrone `XmlHttpRequest` in Seiten Kündigung nicht zulassen | [Chrome + 1](#release-comments) \ (Edge v83 \) |  | Diese Änderung findet im Chromium-Projekt statt, auf dem Microsoft Edge basiert.  Passend zu Chrome bietet Microsoft Edge eine Gruppenrichtlinie zum Deaktivieren dieser Änderung bis zum Edge-V88.  Um weitere Informationen zu erhalten, einschließlich der geplanten Zeitachse von Google für diese Änderung, navigieren Sie zum [Chrome Platform-Status Eintrag][ChromePlatformStatus4664843055398912].  |  
+| Subtile Aufforderung zur Anzeige von Benachrichtigungs Berechtigungsanforderungen | Edge-v84 |  | Für ruhige Benachrichtigungsanforderungen wird in der Adressleiste für Website Benachrichtigungs Berechtigungen, die mit der oder-API angefordert werden, ein Symbol für subtile Anforderung angezeigt `Notifications` `Push` , das die Benutzeroberfläche für das vollständige oder standardmäßige Berechtigungs Flyout  Dieses Feature ist derzeit für alle Benutzer aktiviert.  Navigieren Sie zu, um die leisen Benachrichtigungsanforderungen zu deaktivieren `edge://settings/content/notifications` .  In Zukunft kann das Microsoft Edge-Team in einigen Szenarien das erneute Aktivieren der vollständigen Eingabeaufforderung für Flyout-Benachrichtigungen untersuchen.  |  
+| Standardmäßiges Deaktivieren von TLS/1.0 und TLS/1.1 | Edge-v84 |  | Die [SSLMinVersion][DeployedEdgePoliciesSSLMinVersion] -Gruppenrichtlinie ermöglicht die erneute Aktivierung von TLS/1.0 und TLS/1.1; die Richtlinie bleibt verfügbar, bis Edge V90.  |  
+| Blockieren von Downloads für gemischten Inhalt | [Chrome + 1](#release-comments) \ (Edge V86 \)  |  | Diese Änderung findet im Chromium-Projekt statt, auf dem Microsoft Edge basiert.  Weitere Informationen, einschließlich der geplanten Zeitachse von Google für diese Änderung, finden Sie im [Blogeintrag Google Security][GoogleBlogSecurity20200206].  Der Microsoft-Rollout-Zeitplan für Dateitypen, die gewarnt oder blockiert werden sollen, ist für eine Version nach Chrome geplant.  |  
+| Deprecated AppCache | [Chrome + 1](#release-comments) \ (Edge V86 \)  |  | Diese Änderung findet im Chromium-Projekt statt, auf dem Microsoft Edge basiert.  Weitere Informationen finden Sie in der [WebDev-Dokumentation][WebDevAppCacheRemoval].  Der Microsoft-Rollout-Zeitplan für die deprecated-Version ist für eine Version nach Chrome geplant.  Durch Anfordern eines [AppCache-OriginTrial-Tokens][AppCacheOriginTrial] können Websites die veraltete API weiter verwenden, bis Edge-V90.  |  
+| Entfernen von Adobe Flash | Edge-V88  |  | Diese Änderung findet im Chromium-Projekt statt, auf dem Microsoft Edge basiert.  Wenn Sie weitere Informationen wünschen, navigieren Sie zur [Adobe Flash Chrom-Roadmap][ChromiumFlashRoadmapSupportRemoved].  | 
+| Deaktivieren und Entfernen von FTP | Edge-V88  | Edge-V87 | In Edge V87 ist die FTP-Unterstützung standardmäßig deaktiviert.  In Edge V88 wird die FTP-Unterstützung entfernt.  Diese Änderung findet im Chromium-Projekt statt, auf dem Microsoft Edge basiert.  Wenn Sie weitere Informationen wünschen, navigieren Sie zum [Chrome Platform-Status Eintrag][ChromePlatformStatus6246151319715840].  |   
 
-##### Release comments  
+##### Kommentare freigeben  
 
 :::row:::
    :::column span="1":::
-      Chrome+1
+      Chrome + 1
    :::column-end:::
    :::column span="2":::
-      Based on user and developer feedback, the indicated feature or change ships one release after Chrome.
+      Basierend auf dem Feedback von Benutzern und Entwicklern werden die angegebenen Features oder Änderungen in einer Version nach Chrome ausgeliefert.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-      Chrome or Chrome+1
+      Chrom oder Chrom + 1
    :::column-end:::
    :::column span="2":::
-      Based on user and developer feedback, the indicated feature or change ships at the same time or one release after Chrome.
+      Auf der Grundlage des Feedbacks von Benutzern und Entwicklern wird die angegebene Funktion oder der Wechsel zur gleichen Zeit oder eine Version nach Chrome geliefert.
    :::column-end:::
 :::row-end:::
 
 <!-- links -->  
 
-[DeployedEdgePoliciesSSLMinVersion]: /deployedge/microsoft-edge-policies#sslversionmin "SSLVersionMin - Microsoft Edge - Policies | Microsoft Docs"  
+[DeployedEdgePoliciesSSLMinVersion]: /deployedge/microsoft-edge-policies#sslversionmin "SSLVersionMin – Microsoft Edge – Richtlinien | Microsoft docs"  
 
-[ChromePlatformStatus4664843055398912]: https://www.chromestatus.com/feature/4664843055398912 "Disallow sync XHR in page dismissal JavaScript | Chrome Platform Status"  
-[ChromePlatformStatus5088147346030592]: https://www.chromestatus.com/feature/5088147346030592 "Cookies default to SameSite=Lax | Chrome Platform Status"  
-[ChromePlatformStatus6251880185331712]: https://www.chromestatus.com/feature/6251880185331712 "Referrer Policy: Default to strict-origin-when-cross-origin | Chrome Platform Status"  
-[ChromePlatformStatus6246151319715840]: https://chromestatus.com/feature/6246151319715840 "Deprecate FTP support | Chrome Platform Status"
+[ChromePlatformStatus4664843055398912]: https://www.chromestatus.com/feature/4664843055398912 "Synchronisierungs-XMLHttpRequest in Seite Entlassung deaktivieren JavaScript | Chrome-Platt Form Status"  
+[ChromePlatformStatus5088147346030592]: https://www.chromestatus.com/feature/5088147346030592 "Cookies sind standardmäßig SameSite = Lax | Chrome-Platt Form Status"  
+[ChromePlatformStatus6251880185331712]: https://www.chromestatus.com/feature/6251880185331712 "Referrer-Richtlinie: standardmäßig auf Strict-Origin-wann-Cross-Origin | Chrome-Platt Form Status"  
+[ChromePlatformStatus6246151319715840]: https://chromestatus.com/feature/6246151319715840 "FTP-Unterstützung veraltet | Chrome-Platt Form Status"
 
-[ChromiumFlashRoadmapSupportRemoved]: https://www.chromium.org/flash-roadmap#TOC-Flash-Support-Removed-from-Chromium-Target:-Chrome-88---Jan-2021- "Flash Support Removed from Chromium (Target: Chrome 88+ - Jan 2021) - Flash Roadmap | Chromium Projects"  
+[ChromiumFlashRoadmapSupportRemoved]: https://www.chromium.org/flash-roadmap#TOC-Flash-Support-Removed-from-Chromium-Target:-Chrome-88---Jan-2021- "Flash-Unterstützung aus Chrom entfernt (Ziel: Chrom 88 +-Jan 2021) – Flash-Roadmap | Chromium-Projekte"  
 
-[GoogleBlogSecurity20200206]: https://security.googleblog.com/2020/02/protecting-users-from-insecure_6.html "Protecting users from insecure downloads in Google Chrome - Google Online Security Blog" 
+[GoogleBlogSecurity20200206]: https://security.googleblog.com/2020/02/protecting-users-from-insecure_6.html "Schützen von Benutzern vor unsicheren Downloads in Google Chrome – Google Online Security-Blog" 
 
-[WebDevAppCacheRemoval]: https://web.dev/appcache-removal/ "AppCache Removal"
-[AppCacheOriginTrial]: https://developers.chrome.com/origintrials/#/view_trial/1776670052997660673 "AppCache OriginTrial token"
+[WebDevAppCacheRemoval]: https://web.dev/appcache-removal/ "AppCache entfernen"
+[AppCacheOriginTrial]: https://developers.chrome.com/origintrials/#/view_trial/1776670052997660673 "AppCache-OriginTrial-Token"

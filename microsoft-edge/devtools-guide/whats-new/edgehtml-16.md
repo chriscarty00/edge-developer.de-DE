@@ -1,12 +1,12 @@
 ---
-description: Features added to the Microsoft Edge DevTools in the Windows 10 Fall Creators Update (EdgeHTML 16)
+description: Features, die dem Microsoft Edge-devtools im Windows 10 Fall Creators Update (EdgeHTML 16) hinzugefügt wurden
 title: DevTools in EdgeHTML 16
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 01/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools, edgehtml 16
+keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools, edgehtml 16
 ms.custom: seodec18
 ms.openlocfilehash: 78ede81e022cc8f0f623ecd33fd2303314ec9cb0
 ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
@@ -15,117 +15,117 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "10567572"
 ---
-# DevTools in the Windows 10 Fall Creators Update (EdgeHTML 16)
+# DevTools im Windows 10 Fall Creators Update (EdgeHTML 16)
 
-With this release we started a major DevTools refactoring effort for improved robustness and performance, and also added a bunch of new features you can start using today! 
+Mit dieser Version haben wir einen wichtigen devtools-Umgestaltungs Aufwand für verbesserte Robustheit und Leistung eingeleitet und außerdem eine Reihe neuer Funktionen hinzugefügt, die Sie heute nutzen können! 
 
-Here are the Microsoft Edge DevTools features that shipped with the [Windows 10 Fall Creators Update](/windows/uwp/whats-new/windows-10-build-16299) ([EdgeHTML 16](https://aka.ms/devguide_edgehtml_16)).
+Hier sind die Microsoft Edge devtools-Features, die im Lieferumfang des [Windows 10 Fall Creators Update](/windows/uwp/whats-new/windows-10-build-16299) ([EdgeHTML 16](https://aka.ms/devguide_edgehtml_16)) enthalten sind.
 
-## Ancestor event listeners 
+## Ahnen Ereignis-Listener 
 
-The **Events** pane now adds the option to view event listeners registered on any ancestor of the currently selected element (in the **Elements** panel), in addition to those on the element itself. Additionally, you can now group the event listener display by either *Event* or *Element*. 
+Im Bereich " **Ereignisse** " wird nun die Option zum Anzeigen von Ereignislistener hinzugefügt, die für einen Vorgänger des aktuell ausgewählten Elements (im Bereich **Elemente** ) sowie für das Element selbst registriert sind. Darüber hinaus können Sie jetzt die Ereignis-Listener-Anzeige nach *Ereignis* oder *Element*gruppieren. 
 
-![Event listener inspection pane](../media/elements_ancestor_events.png)
+![Überwachungsbereich für Ereignisüberwachung](../media/elements_ancestor_events.png)
 
-## DOM mutation breakpoints
+## Dom-mutations Haltepunkte
 
-You can now set DOM mutation breakpoints to break into the Debugger whenever a selected element node changes. From the **Elements** panel, rt-click on any element in the DOM tree view and select one or more of the following:
+Sie können jetzt die Breakpoints für die DOM-Mutation so festlegen, dass Sie beim Ändern des ausgewählten Element Knotens in den Debugger umbrochen werden. Klicken Sie **im Element Panel auf** ein beliebiges Element in der Dom-Strukturansicht, und wählen Sie eine oder mehrere der folgenden Optionen aus:
 
- - Break on Node removed
- - Break on Subtree modified
- - Break on Attribute modified
+ - Unterbrechung beim Entfernen des Knotens
+ - Umbruch in der Unterstruktur geändert
+ - Unterbrechen des Attributs geändert
 
-You can manage your mutation breakpoints from the **DOM breakpoints** pane in the **Elements** or **Debugger** panels.
+Sie können Ihre mutations Haltepunkte im Bereich " **DOM-Haltepunkte** " in den Bereichen **Elemente** oder **Debugger** verwalten.
 
-![DOM breakpoints pane](../media/elements_dom_breakpoints.png)
+![Bereich "Dom-Haltepunkte"](../media/elements_dom_breakpoints.png)
 
-## CSS at-rule support
+## Unterstützung für CSS at-rule
 
-CSS "at" (@) rules are now represented among other CSS rule declarations on the **Styles** pane, including animation `@keyframes` rules (currently limited to read-only), `@supports` feature queries, and `@media` queries.
+CSS-Regeln für "at" (@) werden jetzt unter anderen CSS-Regel Deklarationen im Bereich " **Formatvorlagen** " dargestellt, einschließlich Animations `@keyframes` Regeln (derzeit nur schreibgeschützt), `@supports` Feature-Abfragen und `@media` Abfragen.
 
-![CSS at-rules inspection from the  DevTools Style pane](../media/elements_at_rules.png)
+![CSS at-Rules-Prüfung im devtools-Stilbereich](../media/elements_at_rules.png)
 
-## CSS fonts pane
+## Bereich "CSS-Schriftarten"
 
-CSS `@font-face` rules now have their own dedicated **Fonts** pane that displays where the font is loaded from (*Local* or *Network*) and how many characters are using it. If a font is loaded from the network,  DevTools will display the rule that imported it along with its alias and font type.
+CSS `@font-face` -Regeln verfügen nun über einen eigenen Bereich für **Schriftarten** , in dem angezeigt wird, wo die Schriftart aus (*lokal* oder *Netzwerk*) geladen wird und wie viele Zeichen Sie verwenden. Wenn eine Schriftart aus dem Netzwerk geladen wird, zeigt devtools die Regel, die Sie importiert hat, zusammen mit dem Alias und dem Schriftarttyp an.
 
-![CSS font information](../media/elements_fonts.png)
+![CSS-Schriftartinformationen](../media/elements_fonts.png)
 
-## CSS pseudo-element support
+## CSS-Unterstützung für Pseudoelemente
 
-The **Styles** pane now groups pseudo-elements under their own headings and no longer displays their content as crossed out.
+Der Bereich " **Formatvorlagen** " gruppiert nun Pseudoelemente unter ihren eigenen Überschriften und zeigt deren Inhalt nicht mehr als durchgestrichen an.
 
-**Before:**
+**Vorher:**
 <br>
-![Generated content was previously crossed out](../media/gc_before.png)
+![Der generierte Inhalt wurde zuvor durchgestrichen.](../media/gc_before.png)
 
-**After:**
+**Nachher:**
 <br>
-![Generated content no longer displays with a strikethrough](../media/gc_after.png)
+![Generierter Inhalt wird nicht mehr durchgestrichen angezeigt](../media/gc_after.png)
 
-## Console improvements
+## Verbesserungen der Konsole
 
-The **Console** panel got a UX overhaul for improved usability and a faster, richer Intellisense experience.
+Der **Konsolen** Bereich hat eine UX-Überholung für verbesserte Benutzerfreundlichkeit und eine schnellere, umfassendere IntelliSense-Funktionalität.
 
-**Before:**
-![Previous console](../media/console_old.png)
+**Vorher:** 
+![ Vorherige Konsole](../media/console_old.png)
 
-**After:**
-![New console](../media/console_new.png)
+**Nach:** 
+![ Neue Konsole](../media/console_new.png)
 
-We also added these improvements:
+Diese Verbesserungen wurden auch hinzugefügt:
 
- -  Use `Shift + Enter` to add an additional line to a command before executing it with `Enter`. (Formerly there was a *Switch to multiline/single-line mode* toggle button.)
+ -  Verwenden Sie `Shift + Enter` Diese Funktion, um eine zusätzliche Zeile zu einem Befehl hinzuzufügen, bevor Sie Sie Ausführen `Enter` . (Früher gab es eine Umschaltfläche *zum mehrzeiligen/einzeiligen Modus* .)
 
- - The following new APIs are supported:
-    - [**console.table(***object***)**](../console/console-api.md#organizing-log-output) method
-    - [**getEventListeners(***object***)**](../console/command-line.md#event-listeners) command
-    - [**keys(***object***)**](../console/command-line.md#object-inspection) command
-    - [**values(***object***)**](../console/command-line.md#object-inspection) command
-    - [**$x(***xpath expression***)**](../console/command-line.md#dom-selectors) selector
+ - Die folgenden neuen APIs werden unterstützt:
+    - [**Console. Table (***Objekt***)**](../console/console-api.md#organizing-log-output) -Methode
+    - [**getEventListeners (***Objekt***) (Befehl)**](../console/command-line.md#event-listeners)
+    - [**Schlüssel (***Objekt***) (Befehl)**](../console/command-line.md#object-inspection)
+    - Befehl " [**Werte (***Objekt***)**](../console/command-line.md#object-inspection) "
+    - [**$x (***XPath-Ausdruck***)-**](../console/command-line.md#dom-selectors) Auswahl
 
- - The [**%c()**](../console/console-api.md#logging-custom-messages) formatting parameter is now supported
+ - Der Formatierungsparameter [**% c ()**](../console/console-api.md#logging-custom-messages) wird jetzt unterstützt.
 
-## Debugging improvements
+## Verbesserungen beim Debuggen
 
-In addition to a suite of new features for debugging your [PWA service workers and cache](#progressive-web-app-debugging), the Debugger added these features:
+Neben einer Reihe von neuen Features zum Debuggen von PWA- [Dienst Mitarbeitern und-Cache](#progressive-web-app-debugging)hat der Debugger folgende Features hinzugefügt:
 
-### Consolidated debugging for shared resources
+### Konsolidiertes Debuggen für freigegebene Ressourcen
 
-Even when a resource, such as a file loaded from CDN, is referenced multiple times throughout your code,  DevTools will now provide a single debugging instance for that file where you can then set common breakpoints which will be hit regardless of where that file is referenced. (Previously each script reference was considered a unique resource would map to a separate set of breakpoints.)
+Auch wenn eine Ressource, beispielsweise eine aus CDN geladene Datei, im gesamten Code mehrmals referenziert wird, stellt devtools nun eine einzelne Debug-Instanz für diese Datei bereit, in der Sie dann allgemeine Haltepunkte festlegen können, die unabhängig davon, wo auf die Datei verwiesen wird, aufgerufen werden. (Zuvor wurde jeder Skriptverweis als eine eindeutige Ressource einer separaten Reihe von Haltepunkten zugeordnet.)
 
-### Live edit JavaScript with *Edit-on-idle*
+### Live Edit JavaScript mit *edit-on-Idle*
 
-You can now edit your JavaScript live during a debugging session. This feature was experimentally available (behind a flag) in the [previous](https://blogs.windows.com/buildingapps/2017/04/05/windows-10-creators-update-creators-update-sdk-released/#MMhK2OdcrR12Vi6u.97) (*Windows 10 Creators Update*) release and now its a permanent feature. Simply select any script file from the **Debugger** panel, edit, then click **Save** (or `Ctrl+S`) to test your changes next time that section of code runs. 
+Sie können jetzt Ihre JavaScript-Live-Sitzung während einer Debugsitzung bearbeiten. Dieses Feature war in der [vorherigen](https://blogs.windows.com/buildingapps/2017/04/05/windows-10-creators-update-creators-update-sdk-released/#MMhK2OdcrR12Vi6u.97) Version (*Windows 10 Creators Update*) experimentell verfügbar (hinter einer Kennzeichnung) und ist jetzt ein permanentes Feature. Wählen Sie im **Debuggerfenster** einfach eine beliebige Skriptdatei aus, bearbeiten Sie, und klicken Sie dann auf **Speichern** (oder `Ctrl+S` ), um Ihre Änderungen zu testen, wenn der Codeabschnitt das nächste Mal ausgeführt wird. 
 
-![The debugger enables you to live edit script and diff the changes](../media/debugger_edit_buttons.png) 
+![Mit dem Debugger können Sie ein Live-Skript bearbeiten und die Änderungen vergleichen.](../media/debugger_edit_buttons.png) 
 
-Click the **Compare document to original** button to view the diff of what you changed.
+Klicken Sie auf die Schaltfläche **Dokument mit Original vergleichen** , um den Vergleich der Änderungen anzuzeigen.
 
-![Diff view of edited code in the Debugger](../media/debugger_edit_code.png) 
+![Vergleichsansicht des bearbeiteten Codes im Debugger](../media/debugger_edit_code.png) 
 
-Please be aware of the following constraints:
+Beachten Sie die folgenden Einschränkungen:
 
-- Script editing only works in external *.js* files (and not embedded `<script>` within *.html*)
-- Edits are saved in memory and flushed when the document is reloaded, thus you won’t be able to run edits inside a `DOMContentLoaded` handler, for example
-- Currently there’s no way (such as a **Save As** option) to save your edits to disk from  DevTools
+- Die Skriptbearbeitung funktioniert nur in externen *js* -Dateien (und nicht `<script>` in *HTML*eingebettet).
+- Bearbeitungen werden im Arbeitsspeicher gespeichert und beim erneuten Laden des Dokuments geleert, sodass Sie nicht in der Lage sind, Bearbeitungen in einem `DOMContentLoaded` Handler auszuführen, beispielsweise
+- Derzeit gibt es keine Möglichkeit (wie eine Option " **Speichern** unter"), um Ihre Bearbeitungen auf dem Datenträger von devtools zu speichern.
 
-## Shortcuts
+## Verknüpfungen
 
-You can now launch DevTools to the last viewed panel (`Ctrl+Shift+I`) or directly to the Console (`Ctrl+Shift+J`) just like you would on other major browsers.
+Sie können devtools nun auf den zuletzt angezeigten Bereich ( `Ctrl+Shift+I` ) oder direkt auf die Konsole () starten, `Ctrl+Shift+J` genau wie in anderen gängigen Browsern.
 
-## Progressive Web App debugging
+## Debuggen von Progressive Web App
 
-Test out the experimental support for Progressive Web Apps (PWAs) in Microsoft Edge and  DevTools by selecting the **Enable service workers** option from `about:flags` (and restarting Microsoft Edge). If a site makes use of **Service Workers** and/or the **Cache** API,  will populate entries in the **Debugger** panel for each origin, similar to how web storage and cookie inspection work.
+Testen Sie die experimentelle Unterstützung für Progressive Web Apps (PWAs) in Microsoft Edge und DevTools, indem Sie die Option " **Dienstmitarbeiter aktivieren** " `about:flags` (und den Neustart von Microsoft Edge) auswählen. Wenn eine Website **Dienstmitarbeiter** und/oder die **Cache** -API verwendet, werden die Einträge im **Debuggerfenster** für jeden Ursprung aufgefüllt, ähnlich wie bei der Webspeicher-und Cookie-Prüfung.
 
-Clicking on a specific service worker entry will open up the **Service Worker Overview**, where you can manage the service worker registration for the given scope and force a test push notification. You can also **Stop**/**Start** individual service workers and **Inspect** them from a separate debugger window:
+Wenn Sie auf einen bestimmten Service Worker-Eintrag klicken, wird die **Übersicht über den Dienstmitarbeiter**geöffnet, auf der Sie die Dienstmitarbeiter Registrierung für den angegebenen Bereich verwalten und eine Test-Push-Benachrichtigung erzwingen können. Sie können auch **Stop** / den**Start** einzelner Dienstmitarbeiter beenden und Sie über ein separates Debuggerfenster über **prüfen** :
 
-![Service Worker Overview pane](../media/debugger_sw_overview.png)
+![Bereich ' Dienstmitarbeiter Übersicht '](../media/debugger_sw_overview.png)
 
-Please note the following about service worker debugging:
+Beachten Sie Folgendes zum Debuggen von Service Worker:
 
- - Debugging a service worker will launch a new instance of the DevTools separate from the page's tools because service workers can be shared across multiple tabs. 
- - The [Elements](../elements.md) and [Emulation](../emulation.md) panels are absent from the service worker debugger, given that service workers run in the background and do not directly control the front-end of your app.
- - Currently network traffic for a service worker is only reported from the DevTools debugging instance for that worker, and not from the central instance for the page itself.
+ - Beim Debuggen eines Dienst Arbeitsthreads wird eine neue Instanz des devtools, die sich von den Tools der Seite trennt, gestartet, da Dienstmitarbeiter auf mehreren Registerkarten freigegeben werden können. 
+ - Die [Elemente](../elements.md) und [Emulations](../emulation.md) Panels fehlen im Service Worker-Debugger, da Dienstmitarbeiter im Hintergrund ausgeführt werden und das Front-End Ihrer APP nicht direkt steuern.
+ - Zurzeit wird der Netzwerkdatenverkehr für einen Dienstmitarbeiter nur von der devtools-Debug-Instanz für diesen Worker und nicht von der zentralen Instanz für die Seite selbst gemeldet.
 
-Clicking on a specific cache entry will open up the **Cache** manager, where you can inspect and optionally delete cache entries (*Request* and *Response* key/value pairs).
+Wenn Sie auf einen bestimmten Cacheeintrag klicken, wird der **Cache** -Manager geöffnet, in dem Sie Cacheeinträge prüfen und optional löschen können (*Anforderungs* -und *Antwort* Schlüssel-Wert-Paare).

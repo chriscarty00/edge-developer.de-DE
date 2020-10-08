@@ -1,12 +1,12 @@
 ---
-description: Inspect and modify animations with the Microsoft Edge DevTools  Animation Inspector.
-title: Inspect animations
+description: Überprüfen und Ändern von Animationen mit dem Animations Inspektor für Microsoft Edge devtools
+title: Überprüfen von Animationen
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
 ms.openlocfilehash: e867cc373286666f73bee3b8fb886f60fa1b94f6
 ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
@@ -28,69 +28,69 @@ ms.locfileid: "11015772"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Inspect animations  
+# Überprüfen von Animationen  
 
-Inspect and modify animations with the Microsoft Edge DevTools Animation Inspector.  
+Überprüfen und Ändern von Animationen mit dem Animations Inspektor für Microsoft Edge devtools  
 
-:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations-completed.msft.png" alt-text="animation inspector" lightbox="../media/inspect-styles-elements-styles-drawer-animations-completed.msft.png":::
-   animation inspector  
+:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations-completed.msft.png" alt-text="Animations Inspektor" lightbox="../media/inspect-styles-elements-styles-drawer-animations-completed.msft.png":::
+   Animations Inspektor  
 :::image-end:::  
 
-### Summary  
+### Zusammenfassung  
 
-*   Capture animations by opening the Animation Inspector.  The Animation Inspector automatically detects and sorts animations into groups.  
-*   Inspect animations by slowing down each one, replaying each one, or viewing the source code.  
-*   Modify animations by changing the timing, delay, duration, or keyframe offsets.  
+*   Zeichnen Sie Animationen auf, indem Sie den Animations Inspektor öffnen.  Der Animations Inspektor erkennt und sortiert Animationen automatisch in Gruppen.  
+*   Überprüfen Sie Animationen, indem Sie Sie verlangsamen, jede einzelne wiedergeben oder den Quellcode anzeigen.  
+*   Sie können Animationen ändern, indem Sie den Offset für Anzeigedauer, Verzögerung, Dauer oder Keyframe ändern.  
 
-## Overview  
+## Übersicht  
 
-The Microsoft Edge DevTools Animation Inspector has two main purposes.  
+Der Microsoft Edge devtools-Animations Inspektor hat zwei Hauptaufgaben.  
 
-*   Inspecting animations.  You want to slow down, replay, or inspect the source code for an Animation Group.  
-*   Modifying animations.  You want to modify the timing, delay, duration, or keyframe offsets of an Animation Group.  Bezier editing and keyframe editing are currently not supported.  
+*   Untersuchen von Animationen  Sie möchten den Quellcode für eine Animationsgruppe verlangsamen, wiedergeben oder überprüfen.  
+*   Ändern von Animationen  Sie möchten die Zeitmessung, die Verzögerung, die Dauer oder den Keyframe-Offset einer Animationsgruppe ändern.  Bezier-und Keyframe-Bearbeitung werden zurzeit nicht unterstützt.  
 
-The Animation Inspector supports CSS animations, CSS transitions, and web animations.  `requestAnimationFrame` animations are currently not supported.  
+Der Animations Inspektor unterstützt CSS-Animationen, CSS-Übergänge und Web-Animationen.  `requestAnimationFrame` Animationen werden zurzeit nicht unterstützt.  
 
-### What is an Animation Group?  
+### Was ist eine Animationsgruppe?  
 
-An Animation Group is a group of animations that may be related to each other.  Currently, the web has no real concept of a group animation, so motion designers and developers have to compose and time individual animations so that the animations render as one coherent visual effect.  The Animation Inspector predicts which animations are related based on start time \(excluding delays, and so on\).  The Animation Inspector also groups the animations side-by-side.  
-In other words, a set of animations that are all triggered in the same script block are grouped together.  If an animation is asynchronous, it is placed in a separate group.  
+Bei einer Animationsgruppe handelt es sich um eine Gruppe von Animationen, die möglicherweise miteinander in Beziehung stehen.  Derzeit hat das Web kein echtes Konzept einer Gruppen Animation, daher müssen Motion-Designer und-Entwickler einzelne Animationen zusammenstellen und verfassen, damit die Animationen als ein kohärenter visueller Effekt gerendert werden.  Der Animations Inspektor prognostiziert, welche Animationen auf der Grundlage der Startzeit \ (ohne Verzögerungen usw.) zusammenhängen.  Der Animations Inspektor gruppiert auch die Animationen nebeneinander.  
+Mit anderen Worten: eine Gruppe von Animationen, die alle im gleichen Skriptblock ausgelöst werden, wird zusammen gruppiert.  Wenn eine Animation asynchron ist, wird Sie in eine separate Gruppe verschoben.  
 
-## Get started  
+## Erste Schritte  
 
-There are two ways to open the Animation Inspector:  
+Es gibt zwei Möglichkeiten, den Animations Inspektor zu öffnen:  
 
-*   Open the **Customize and Control DevTools** menu  
-    1.  Navigate to the **More tools** sub-menu.  
-    1.  Select **Animations**:  
+*   Öffnen des Menüs zum **anpassen und Steuern des devtools**  
+    1.  Navigieren Sie zum unter Menü **Weitere Tools** .  
+    1.  Wählen Sie **Animationen**aus:  
         
-        :::image type="complex" source="../media/inspect-styles-elements-styles-more-tools-animations.msft.png" alt-text="animation inspector" lightbox="../media/inspect-styles-elements-styles-more-tools-animations.msft.png":::
-           **Animations** using Main Menu  
+        :::image type="complex" source="../media/inspect-styles-elements-styles-more-tools-animations.msft.png" alt-text="Animations Inspektor" lightbox="../media/inspect-styles-elements-styles-more-tools-animations.msft.png":::
+           **Animationen** mithilfe des Hauptmenüs  
     :::image-end:::  
         
-*   Open the **Command Menu**  
-    1.  Type `Drawer: Show Animations`.  
+*   Öffnen des **Befehlsmenüs**  
+    1.  Geben Sie `Drawer: Show Animations` ein.  
 
-The Animation Inspector opens up as a tab next to the Console Drawer.  Since the Animation Inspector is a Drawer tab, you may use the Animation Inspector from any DevTools panel.  
+Der Animations Inspektor wird als Registerkarte neben dem Konsolen Einzug geöffnet.  Da es sich bei dem Animations Inspektor um eine Schublade handelt, können Sie den Animations Inspektor in einem beliebigen devtools-Fenster verwenden.  
 
-:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations.msft.png" alt-text="animation inspector" lightbox="../media/inspect-styles-elements-styles-drawer-animations.msft.png":::
-   Empty Animation Inspector  
+:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations.msft.png" alt-text="Animations Inspektor" lightbox="../media/inspect-styles-elements-styles-drawer-animations.msft.png":::
+   Animations Inspektor leeren  
 :::image-end:::  
 
-The Animation Inspector is grouped into four main sections \(or panes\).  This guide refers to each pane as follows:  
+Der Animations Inspektor ist in vier Hauptabschnitte unterteilt \ (oder Bereiche \).  Dieser Leitfaden bezieht sich auf jeden Bereich wie folgt:  
 
-| Index | Pane | Description |  
+| Index | Bereich | Beschreibung |  
 |:--- |:--- |:--- |  
-| 1 | **Controls** | From here you may clear all currently captured Animation Groups, or change the speed of the currently selected Animation Group. |  
-| 2 | **Overview** | Select an Animation Group here to inspect and modify it in the **Details** pane. |  
-| 3 | **Timeline** | Pause and start an animation from here, or jump to a specific point in the animation. |  
-| 4 | **Details** | Inspect and modify the currently selected Animation Group. |  
+| 1 | **Steuerelemente** | Hier können Sie alle aktuell aufgenommenen Animationsgruppen löschen oder die Geschwindigkeit der aktuell ausgewählten Animationsgruppe ändern. |  
+| 2 | **Übersicht** | Wählen Sie hier eine Animationsgruppe aus, um Sie im **Detail** Bereich zu überprüfen und zu ändern. |  
+| 3 | **Zeitachse** | Pausieren und starten Sie eine Animation von hier aus, oder springen Sie zu einer bestimmten Stelle in der Animation. |  
+| 4 | **Details** | Überprüfen und Ändern der aktuell ausgewählten Animationsgruppe |  
 
-:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations-selected-paused.msft.png" alt-text="animation inspector" lightbox="../media/inspect-styles-elements-styles-drawer-animations-selected-paused.msft.png":::
-   Annotated Animation Inspector  
+:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations-selected-paused.msft.png" alt-text="Animations Inspektor" lightbox="../media/inspect-styles-elements-styles-drawer-animations-selected-paused.msft.png":::
+   Animations Inspektor mit Anmerkungen  
 :::image-end:::  
 
-To capture an animation, just perform the interaction that triggers the animation while the Animation Inspector is open.  If an animation is triggered on page load, reload the page with the Animation Inspector open to detect the animation.  
+Wenn Sie eine Animation aufzeichnen möchten, führen Sie einfach die Interaktion aus, mit der die Animation ausgelöst wird, während der Animations Inspektor geöffnet ist.  Wenn beim Laden einer Seite eine Animation ausgelöst wird, laden Sie die Seite neu, wobei der Animations Inspektor geöffnet wird, um die Animation zu erkennen.  
 
 <!--  old link: <video src="animations/capture-animations.mp4" autoplay loop muted controls></video>  -->  
 
@@ -98,73 +98,73 @@ To capture an animation, just perform the interaction that triggers the animatio
 
 <!--  > [!VIDEO animations/capture-animations.mp4]  -->  
 
-## Inspect animations  
+## Überprüfen von Animationen  
 
-After you capture an animation, there are a few ways to replay it:  
+Nachdem Sie eine Animation aufgenommen haben, gibt es verschiedene Möglichkeiten, Sie wiederzugeben:  
 
-*   Hover over the thumbnail in the **Overview** pane to view a preview of it.  
-*   Select the Animation Group from the **Overview** pane \(so that it is displayed in the **Details** pane\) and press the **replay** \(![replay icon][ImageReplayButtonIcon]\) icon.  The animation is replayed in the viewport.  Click on the **animation speed** \(![animation speed icons][ImageAnimationSpeedButtonsIcon]\) icons to change the preview speed of the currently selected Animation Group.  You may use the red vertical bar to change your current position.  
-*   Click and drag the red vertical bar to scrub the viewport animation.  
+*   Zeigen Sie **mit der Maus** auf die Miniaturansicht im Übersichtsbereich, um eine Vorschau davon anzuzeigen.  
+*   Wählen **Sie im Übersichtsbereich die** Gruppe Animation aus, damit Sie im **Detail** Bereich angezeigt wird, und drücken Sie dann das Symbol **Wiedergabe** \ ( ![ Wiedergabe ][ImageReplayButtonIcon] -Symbol).  Die Animation wird im Viewport wiedergegeben.  Klicken Sie auf die Symbole **Animationsgeschwindigkeit** \ ( ![ Animations Geschwindigkeits Symbole ][ImageAnimationSpeedButtonsIcon] \), um die Vorschau Geschwindigkeit der aktuell ausgewählten Animationsgruppe zu ändern.  Sie können die rote vertikale Leiste verwenden, um Ihre aktuelle Position zu ändern.  
+*   Klicken Sie, und ziehen Sie den roten vertikalen Balken, um die Animation des Viewports zu schrubben.  
     
-### View animation details  
+### Anzeigen von Animations Details  
 
-After you capture an Animation Group, click on it from the **Overview** pane to view the details.  In the **Details** pane each individual animation is assigned the a row.  
+Nachdem Sie eine Animationsgruppe erfasst haben, klicken **Sie im Übersichtsbereich darauf** , um die Details anzuzeigen.  Im **Detail** Bereich wird jeder einzelnen Animation die Zeile a zugewiesen.  
 
-:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations-selected-completed.msft.png" alt-text="animation inspector" lightbox="../media/inspect-styles-elements-styles-drawer-animations-selected-completed.msft.png":::
-   Animation Group details  
+:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations-selected-completed.msft.png" alt-text="Animations Inspektor" lightbox="../media/inspect-styles-elements-styles-drawer-animations-selected-completed.msft.png":::
+   Animationsgruppen Details  
 :::image-end:::  
 
-Hover over an animation to highlight it in the viewport.  Click on the animation to select it in the **Elements** panel.  
+Zeigen Sie mit der Maus auf eine Animation, um Sie im Viewport zu markieren.  Klicken Sie auf die Animation, um Sie im **Element** Panel zu markieren.  
 
-:::image type="complex" source="../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png" alt-text="animation inspector" lightbox="../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png":::
-   Hover over the animation to highlight it in viewport  
+:::image type="complex" source="../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png" alt-text="Animations Inspektor" lightbox="../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png":::
+   Zeigen Sie mit der Maus auf die Animation, um Sie im Viewport hervorzuheben  
 :::image-end:::  
 
-The leftmost, darker section of an animation is the definition.  The right, more faded section represents iterations.  For example, in the following figure, sections two and three represent iterations of section one.  
+Der linke, dunklere Abschnitt einer Animation ist die Definition.  Der Rechte, verblasstere Abschnitt stellt Iterationen dar.  In der folgenden Abbildung stellen die Abschnitte zwei und drei beispielsweise Iterationen von Abschnitt eins dar.  
 
-:::image type="complex" source="../media/inspect-styles-glitch-display-animations-highlight.msft.png" alt-text="animation inspector" lightbox="../media/inspect-styles-glitch-display-animations-highlight.msft.png":::
-   Diagram of animation iterations  
+:::image type="complex" source="../media/inspect-styles-glitch-display-animations-highlight.msft.png" alt-text="Animations Inspektor" lightbox="../media/inspect-styles-glitch-display-animations-highlight.msft.png":::
+   Diagramm der Animations Iterationen  
 :::image-end:::  
 
-If two elements have the same animation applied, the Animation Inspector assigns the same color to the elements.  The color is random and has no significance.  For example, in the following figure, the two elements `div.cwccw.earlier` and `div.cwccw.later` have the same animation \(`spinrightleft`\) applied, as do the `div.ccwcw.earlier` and `div.ccwcw.later` elements.  
+Wenn für zwei Elemente dieselbe Animation angewendet wurde, weist der Animations Inspektor den Elementen dieselbe Farbe zu.  Die Farbe ist zufällig und hat keine Bedeutung.  In der folgenden Abbildung finden Sie beispielsweise die beiden Elemente, `div.cwccw.earlier` und es werden die `div.cwccw.later` gleichen Animationen `spinrightleft` wie die `div.ccwcw.earlier` und- `div.ccwcw.later` Elemente angewendet.  
 
-:::image type="complex" source="../media/inspect-styles-glitch-display-animations.msft.png" alt-text="animation inspector" lightbox="../media/inspect-styles-glitch-display-animations.msft.png":::
-   Color-coded animations  
+:::image type="complex" source="../media/inspect-styles-glitch-display-animations.msft.png" alt-text="Animations Inspektor" lightbox="../media/inspect-styles-glitch-display-animations.msft.png":::
+   Farbcodierte Animationen  
 :::image-end:::  
 
-## Modify animations  
+## Ändern von Animationen  
 
-There are three ways you are able to modify an animation with the Animation Inspector.  
+Es gibt drei Möglichkeiten, wie Sie eine Animation mit dem Animations Inspektor ändern können.  
 
-*   Animation duration.  
-*   Keyframe timings.  
-*   Start time delay.  
+*   Animationsdauer.  
+*   Keyframe-Anzeigedauern.  
+*   Anfangszeit Verzögerung.  
     
-In the following figure, the original animation is represented.  
+In der folgenden Abbildung wird die ursprüngliche Animation dargestellt.  
 
-:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations.msft.png" alt-text="animation inspector" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations.msft.png":::
-   Original animation before modification  
+:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations.msft.png" alt-text="Animations Inspektor" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations.msft.png":::
+   Ursprüngliche Animation vor der Änderung  
 :::image-end:::  
 
-To change the duration of an animation, click and drag the first or last circle.  
+Wenn Sie die Dauer einer Animation ändern möchten, klicken Sie auf den ersten oder letzten Kreis, und ziehen Sie ihn.  
 
-:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-shorter.msft.png" alt-text="animation inspector" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-shorter.msft.png":::
-   Modified duration  
+:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-shorter.msft.png" alt-text="Animations Inspektor" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-shorter.msft.png":::
+   Geänderte Dauer  
 :::image-end:::  
 
-If the animation defines any keyframe rules, then these are represented as white inner circles.  Click and drag one of these to change the timing of the keyframe.  
+Wenn die Animation Keyframe-Regeln definiert, werden diese als weiße innere Kreise dargestellt.  Klicken Sie, und ziehen Sie eine der folgenden Schritte, um die Anzeigedauer des Keyframes zu ändern.  
 
-:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png" alt-text="animation inspector" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png":::
-   Modified keyframe  
+:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png" alt-text="Animations Inspektor" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png":::
+   Geänderter Keyframe  
 :::image-end:::  
 
-To add a delay to an animation, click and drag it anywhere except the circles.  
+Wenn Sie einer Animation eine Verzögerung hinzufügen möchten, klicken Sie darauf, und ziehen Sie Sie mit Ausnahme der Kreise an eine beliebige Stelle.  
 
-:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-delay.msft.png" alt-text="animation inspector" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-delay.msft.png":::
-   Modified delay  
+:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-delay.msft.png" alt-text="Animations Inspektor" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-delay.msft.png":::
+   Geänderte Verzögerung  
 :::image-end:::  
 
-## Getting in touch with the Microsoft Edge DevTools team  
+## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -176,11 +176,11 @@ To add a delay to an animation, click and drag it anywhere except the circles.
 <!-- links -->  
 
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/animations) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
+> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
+> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/animations) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
 
-[![Creative Commons License][CCby4Image]][CCA4IL]  
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
+[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

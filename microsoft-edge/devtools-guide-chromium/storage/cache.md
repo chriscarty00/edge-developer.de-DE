@@ -1,12 +1,12 @@
 ---
-description: How to view Cache data from the Application panel of Microsoft Edge DevTools.
-title: View Cache Data With Microsoft Edge DevTools
+description: Informationen zum Anzeigen von Cache Daten aus dem Anwendungs Panel von Microsoft Edge devtools
+title: Anzeigen von Cache Daten mit Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
 ms.openlocfilehash: c920a171ec89925cc79ab741eed01e11d749bf1b
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -32,90 +32,90 @@ ms.locfileid: "10993296"
 
 
 
-# View cache data with Microsoft Edge DevTools   
+# Anzeigen von Cachedaten mit Microsoft Edge devtools   
 
 
 
-This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to inspect [Cache][MDNCache] data.  
+Dieser Leitfaden zeigt, wie Sie [Microsoft Edge devtools][MicrosoftEdgeDevTools] verwenden, um [Cache][MDNCache] Daten zu überprüfen.  
 
-If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the guide you want.  Look for the information in the **Size** column of the **Network Log**.  See [Log network activity][DevtoolsNetworkLogActivity].  
+Wenn Sie versuchen, http- [Cache][MDNHTTPCaching] -Daten zu überprüfen, ist dies nicht die gewünschte Richtlinie.  Suchen Sie in der Spalte **Größe** des **Netzwerkprotokolls**nach den Informationen.  Siehe [Protokoll Netzwerkaktivität][DevtoolsNetworkLogActivity].  
 
-## View cache data   
+## Anzeigen von Cachedaten   
 
-1.  Select the **Application** tab to open the **Application** panel.  The **Manifest** pane usually opens by default.  
+1.  Wählen Sie die Registerkarte **Anwendung** aus, um den **Anwendungs** Panel zu öffnen.  Der Bereich **Manifest** wird normalerweise standardmäßig geöffnet.  
     
-    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-manifest.msft.png":::
-       The **Manifest** pane  
+    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="Bereich ' Manifest '" lightbox="../media/storage-application-manifest.msft.png":::
+       Bereich ' **Manifest** '  
     :::image-end:::  
     
-1.  Expand the **Cache Storage** section to view available caches.  
+1.  Erweitern Sie den Abschnitt **Cache Speicher** , um verfügbare Caches anzuzeigen.  
     
-    :::image type="complex" source="../media/storage-application-cache-storage.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-cache-storage.msft.png":::
-       Available caches  
+    :::image type="complex" source="../media/storage-application-cache-storage.msft.png" alt-text="Bereich ' Manifest '" lightbox="../media/storage-application-cache-storage.msft.png":::
+       Verfügbare Caches  
     :::image-end:::  
     
-1.  Select a cache to view the contents.  
+1.  Wählen Sie einen Cache aus, um den Inhalt anzuzeigen.  
     
-    :::image type="complex" source="../media/storage-application-cache-storage-domain-root-headers.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-cache-storage-domain-root-headers.msft.png":::
-       View the contents of a cache  
+    :::image type="complex" source="../media/storage-application-cache-storage-domain-root-headers.msft.png" alt-text="Bereich ' Manifest '" lightbox="../media/storage-application-cache-storage-domain-root-headers.msft.png":::
+       Anzeigen des Inhalts eines Caches  
     :::image-end:::  
     
-1.  Select a resource to view the HTTP headers in the section below the table.  
+1.  Wählen Sie eine Ressource aus, um die HTTP-Header im Abschnitt unterhalb der Tabelle anzuzeigen.  
     
-    :::image type="complex" source="../media/storage-application-cache-storage-index-headers.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-cache-storage-index-headers.msft.png":::
-       View the HTTP headers of a resource  
+    :::image type="complex" source="../media/storage-application-cache-storage-index-headers.msft.png" alt-text="Bereich ' Manifest '" lightbox="../media/storage-application-cache-storage-index-headers.msft.png":::
+       Anzeigen der HTTP-Header einer Ressource  
     :::image-end:::  
     
-1.  Select **Preview** to view the content of a resource.  
+1.  Wählen Sie **Vorschau** aus, um den Inhalt einer Ressource anzuzeigen.  
     
-    :::image type="complex" source="../media/storage-application-cache-storage-domain-js-preview.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-cache-storage-domain-js-preview.msft.png":::
-       View the content of a resource  
+    :::image type="complex" source="../media/storage-application-cache-storage-domain-js-preview.msft.png" alt-text="Bereich ' Manifest '" lightbox="../media/storage-application-cache-storage-domain-js-preview.msft.png":::
+       Anzeigen des Inhalts einer Ressource  
     :::image-end:::  
     
-## Refresh a resource   
+## Aktualisieren einer Ressource   
 
-1.  [View the data for a cache](#view-cache-data).  
-1.  Select the resource that you want to refresh.  DevTools highlights it to indicate that it is selected.  
+1.  [Anzeigen der Daten für einen Cache](#view-cache-data)  
+1.  Wählen Sie die Ressource aus, die Sie aktualisieren möchten.  DevTools hebt die Markierung hervor, um anzugeben, dass Sie markiert ist.  
     
-    :::image type="complex" source="../media/storage-application-cache-storage-domain-refresh.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-cache-storage-domain-refresh.msft.png":::
-       Select a resource  
+    :::image type="complex" source="../media/storage-application-cache-storage-domain-refresh.msft.png" alt-text="Bereich ' Manifest '" lightbox="../media/storage-application-cache-storage-domain-refresh.msft.png":::
+       Auswählen einer Ressource  
     :::image-end:::  
     
-1.  Select **Refresh** \(![Refresh][ImageRefreshIcon]\).  
+1.  Wählen Sie **Aktualisieren** \ ( ![ aktualisieren ][ImageRefreshIcon] \) aus.  
     
-## Filter resources   
+## Filtern von Ressourcen   
 
-1.  [View the data for a cache](#view-cache-data).  
-1.  Use the **Filter by Path** text box to filter out any resources that do not match the path that you provide.  
+1.  [Anzeigen der Daten für einen Cache](#view-cache-data)  
+1.  Verwenden Sie das Textfeld nach **Pfad filtern** , um alle Ressourcen zu filtern, die nicht dem von Ihnen bereitgestellten Pfad entsprechen.  
     
-    :::image type="complex" source="../media/storage-application-cache-storage-filter.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-cache-storage-filter.msft.png":::
-       Filter out resources that do not match the specified path  
+    :::image type="complex" source="../media/storage-application-cache-storage-filter.msft.png" alt-text="Bereich ' Manifest '" lightbox="../media/storage-application-cache-storage-filter.msft.png":::
+       Filtern von Ressourcen, die nicht mit dem angegebenen Pfad übereinstimmen  
     :::image-end:::  
     
-## Delete a resource   
+## Löschen einer Ressource   
 
-1.  [View the data for a cache](#view-cache-data).  
-1.  Select the resource that you want to delete.  DevTools highlights it to indicate that it is selected.  
+1.  [Anzeigen der Daten für einen Cache](#view-cache-data)  
+1.  Wählen Sie die Ressource aus, die Sie löschen möchten.  DevTools hebt die Markierung hervor, um anzugeben, dass Sie markiert ist.  
     
-    :::image type="complex" source="../media/storage-application-cache-storage-delete-selected.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-cache-storage-delete-selected.msft.png":::
-       Select a resource  
+    :::image type="complex" source="../media/storage-application-cache-storage-delete-selected.msft.png" alt-text="Bereich ' Manifest '" lightbox="../media/storage-application-cache-storage-delete-selected.msft.png":::
+       Auswählen einer Ressource  
     :::image-end:::  
     
-1.  Select **Delete Selected** \(![Delete Selected][ImageDeleteIcon]\).  
+1.  Wählen Sie " **Ausgewählte löschen** " aus ![ ][ImageDeleteIcon] .  
     
-## Delete all cache data   
+## Löschen aller Cachedaten   
 
-1.  Open **Application** > **Clear Storage**.  
-1.  Make sure that the **Cache Storage** checkbox is enabled.  
+1.  Öffnen Sie die **Anwendung**  >  **Clear Storage**.  
+1.  Stellen Sie sicher, dass das Kontrollkästchen **Cache Speicher** aktiviert ist.  
     
-    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png":::
-       The **Cache Storage** checkbox  
+    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png" alt-text="Bereich ' Manifest '" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png":::
+       Das Kontrollkästchen " **Cache Speicher** "  
     :::image-end:::  
     
-1.  Select **Clear site data**.  
+1.  Wählen Sie **Website Daten löschen**aus.  
     
-    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png":::
-       The **Clear Site Data** button  
+    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png" alt-text="Bereich ' Manifest '" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png":::
+       Schaltfläche " **Website Daten löschen** "  
     :::image-end:::  
     
 <!--  
@@ -131,18 +131,18 @@ If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the 
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"  
-[DevtoolsNetworkLogActivity]: ../network/index.md#log-network-activity  "Log network activity | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chrom)-Entwicklertools | Microsoft docs"  
+[DevtoolsNetworkLogActivity]: ../network/index.md#log-network-activity  "Protokoll Netzwerkaktivität | Microsoft docs"  
 
 [MDNCache]: https://developer.mozilla.org/docs/Web/API/Cache "Cache | MDN"  
-[MDNHTTPCaching]: https://developer.mozilla.org/docs/Web/HTTP/Caching "HTTP caching | MDN"  
+[MDNHTTPCaching]: https://developer.mozilla.org/docs/Web/HTTP/Caching "HTTP-Caching | MDN"  
 
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/storage/cache) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
+> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
+> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/storage/cache) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
 
-[![Creative Commons License][CCby4Image]][CCA4IL]  
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
+[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

@@ -1,12 +1,12 @@
 ---
-description: Progressively enhance your PWA for Windows with native app features
-title: Tailor your PWA (EdgeHTML) for Windows
+description: Progressives verbessern ihrer PWA für Windows mit nativen App-Features
+title: Anpassen der PWA-EdgeHTML für Windows
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 08/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: progressive web apps, PWA, Edge, Windows, WinRT, UWP, EdgeHTML
+keywords: Progressive Web-Apps, PWA, Edge, Windows, WinRT, UWP, EdgeHTML
 ms.openlocfilehash: 70a675b1a4057326463fb63c6a93abf8f428c677
 ms.sourcegitcommit: 8510fdaa72c8940440133e4c5b36349997d94127
 ms.translationtype: MT
@@ -14,116 +14,116 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 08/04/2020
 ms.locfileid: "10905573"
 ---
-# Tailor your PWA (EdgeHTML) for Windows  
+# Anpassen der PWA-EdgeHTML für Windows  
 
-PWAs installed on Windows 10 enjoy [all the benefits][PwaIndexWindows10] of running as [Universal Windows Platform \(UWP\)][WindowsUWPGetStartedGuide] apps, including protection through Windows app sandboxing security and full access to [Windows Runtime \(WinRT\))][UwpApiIndex] APIs, including those for:  
+PWAs, die unter Windows 10 installiert sind, [nutzen alle Vorteile][PwaIndexWindows10] der Ausführung als [universelle Windows-Plattform \ (UWP \)][WindowsUWPGetStartedGuide] -apps, einschließlich Schutz durch die Sicherheit der Windows-App-Sandbox und Vollzugriff auf die [Windows-Runtime \ (WinRT \))][UwpApiIndex] -APIs, einschließlich der folgenden:  
 
-*   Controlling device features \(such as camera, microphone, GPS\)  
-*   Accessing user resources \(such as calendar, contacts, documents, music\)  
-*   Launching / navigating your app through Cortana voice commands  
-*   Integrating with the Windows OS \(through the Windows Action Center, desktop taskbar, and context menus\)  
+*   Steuern von Gerätefunktionen \ (wie Kamera, Mikrofon, GPS \)  
+*   Zugriff auf Benutzer Ressourcen \ (wie Kalender, Kontakte, Dokumente, Musik \)  
+*   Starten/Navigieren in ihrer App mithilfe von Cortana-Sprachbefehlen  
+*   Integration in das Windows-Betriebssystem \ (über das Windows-Aktions Center, die Desktop-Taskleiste und Kontextmenüs \)  
 
-These are only a few of the added possibilities for your PWA \(EdgeHTML\) on Windows.  
+Dies sind nur einige der zusätzlichen Möglichkeiten für Ihre PWA \ (EdgeHTML \) unter Windows.  
 
-This article shows you how to install, run, and enhance your PWA \(EdgeHTML\) as a Windows 10 app, while still ensuring cross-browser and cross-platform compatibility.  
+In diesem Artikel wird gezeigt, wie Sie Ihre PWA \ (EdgeHTML \) als Windows 10-App installieren, ausführen und verbessern, während Sie dennoch die browserübergreifende und plattformübergreifende Kompatibilität sicherstellen.  
 
 > [!IMPORTANT]
-> The examples and steps in this article require Visual Studio 2017. Visual Studio 2019 does not include the template used in this article. To download Visual Studio 2017, see [Visual Studio Downloads - 2017, 2015 & Previous Versions][PreviousVSDownloads]  
+> Die Beispiele und Schritte in diesem Artikel erfordern Visual Studio 2017. Die in diesem Artikel verwendete Vorlage wird in Visual Studio 2019 nicht berücksichtigt. Informationen zum Herunterladen von Visual Studio 2017 finden Sie unter [Visual Studio-Downloads-2017, 2015 & vorherigen Versionen][PreviousVSDownloads] .  
 
 
-## Prerequisites  
+## Voraussetzungen  
 
-*   An existing PWA \(or hosted web app\), either a live or localhost site.  This guide uses the sample PWA from [Get started with Progressive Web Apps][PwaGetStarted].  
-*   Download the \(free\) [Visual Studio Community 2017][MicrosoftVisualStudio|::ref1::|].  You are also able to use the Professional, Enterprise, or [Preview][MicrosoftVisualStudioPreview] editions.  From the Visual Studio Installer, choose the following Workloads:  
-    *   **Universal Windows Platform development**  
+*   Eine vorhandene PWA \ (oder gehostete Web-App \), entweder eine Live-oder eine localhost-Website.  In diesem Leitfaden wird das Beispiel PWA aus [Erste Schritte mit progressiven Web-Apps][PwaGetStarted]verwendet.  
+*   Laden Sie die \ (Free \) [Visual Studio Community 2017][MicrosoftVisualStudio|::ref1::|].  Sie können auch die Editionen Professional, Enterprise oder [Preview][MicrosoftVisualStudioPreview] verwenden.  Wählen Sie im Visual Studio-Installationsprogramm die folgenden Arbeitsauslastungen aus:  
+    *   **Entwicklung der universellen Windows-Plattform**  
 
-## Set up and run your Universal Windows app  
+## Einrichten und Ausführen der universellen Windows-App  
 
-A PWA \(EdgeHTML\) installed as a Windows 10 app runs independently from the browser, in a standalone \(`WWAHost.exe` process\) window.  Enabling this simply requires a lightweight app wrapper that contains your hosted web app, which you are able to quickly set up using the Visual Studio `Progressive Web App (Universal Windows)` project template.  \(All your app logic, including sending native Windows Runtime API requests, still happens in your original web app code.\)  
+Eine PWA \ (EdgeHTML \), die als Windows 10-App installiert ist, wird unabhängig vom Browser in einem eigenständigen \ ( `WWAHost.exe` Prozess \)-Fenster ausgeführt.  Für die Aktivierung wird einfach ein einfacher app-Wrapper benötigt, der Ihre gehostete Web-App enthält, die Sie mit der Visual Studio-Projektvorlage schnell einrichten können `Progressive Web App (Universal Windows)` .  \ (Alle Ihre APP-Logik, einschließlich des Sendens von systemeigenen Windows-Runtime-API-Anforderungen, erfolgt weiterhin in Ihrem ursprünglichen Web App-Code. \)  
 
-Set up your Windows app development environment in Visual Studio.  
+Richten Sie Ihre Entwicklungsumgebung für die Windows-app in Visual Studio ein.  
 
-1.  In your Windows Settings, turn on [Developer mode][WindowsUWPGetStartedEnable].  \(Type `developer mode` in the Windows searchbar to find it.\)  
-1.  Launch Visual Studio and select **Create a new project...**.  
-1.  Choose **Javascript** > **Windows Universal** and select **Progressive Web App (Universal Windows)** from the list of project types in Visual Studio 2017.  
-1.  Select the default Windows 10 `Target version` \(most recent release\) and `Minimum version` \(build 10586 or higher\) and choose **OK**.  
+1.  Aktivieren Sie in den Windows-Einstellungen den [Entwicklermodus][WindowsUWPGetStartedEnable].  \ (Geben `developer mode` Sie die Windows-Suchfunktion ein, um Sie zu finden. \)  
+1.  Starten Sie Visual Studio, und wählen Sie **Neues Projekt erstellen...** aus.  
+1.  Wählen Sie **JavaScript**  >  **Windows Universal** aus, und wählen Sie **Progressive Web App (universelle Windows)** aus der Liste der Projekttypen in Visual Studio 2017 aus.  
+1.  Wählen Sie die standardmäßige Windows 10 `Target version` \ (neueste Version) und `Minimum version` \ (Build 10586 oder höher \) aus, und wählen Sie **OK**aus.  
 
-    ![Visual Studio selection dialog for UWP project target builds](media/vs-target-min-version.png)  
+    ![Visual Studio-Auswahldialogfeld für UWP-Projektziel-Builds](media/vs-target-min-version.png)  
 
-    Your new project loads with the package.appxmanifest designer open.  This is where you configure the details of your app, including package identity, package dependencies, required capabilities, visual elements, and extensibility points.  This is an easily configurable, temporary version of the app package manifest used during app development.  
-    When you build your app project, [Visual Studio generates an AppxManifest.xml][UwpSchemasAppxpackageUapmanifestschemaGeneratePackageManifest] file from this metadata, which is used to install and run your app.  Whenever you update your `package.appxmanifest` file, be sure to rebuild the project so both are reflected in your `AppxManifest.xml` at runtime.  
+    Das neue Projekt wird geladen, wenn der Paket-appxmanifest-Designer geöffnet wird.  Hier konfigurieren Sie die Details Ihrer APP, einschließlich Paketidentität, Paketabhängigkeiten, erforderliche Funktionen, visuelle Elemente und Erweiterbarkeitspunkte.  Hierbei handelt es sich um eine leicht konfigurierbare, temporäre Version des App-paketmanifests, das während der APP-Entwicklung verwendet wird.  
+    Wenn Sie Ihr App-Projekt erstellen, [generiert Visual Studio eine AppxManifest.xml][UwpSchemasAppxpackageUapmanifestschemaGeneratePackageManifest] -Datei aus diesen Metadaten, die zum Installieren und Ausführen der APP verwendet wird.  Wenn Sie Ihre Datei aktualisieren, müssen Sie `package.appxmanifest` das Projekt neu erstellen, damit beide in ihrer zur Laufzeit wiedergegeben werden `AppxManifest.xml` .  
 
-1.  In the manifest designer **Application** panel, enter the URL of your PWA as the `Start page`.
+1.  Geben Sie im Manifest-Designer- **Anwendungs** Bereich die URL ihrer PWA als `Start page` .
 
     > [!NOTE]
-    > Service workers are supported for all https \(secure, remote\) urls specified as the `StartPage`.  Service workers are not supported by default for web apps that specify a local start page.  To enable service worker support for these cases, add an explicit [ApplicationContentUriRules](#set-application-content-uri-rules-acurs) entry to the manifest, for example: `<uap:Rule Match="http://web-platform.test/" Type="include" uap5:ServiceWorker="true"/>`  
+    > Dienstmitarbeiter werden für alle HTTPS \ (Secure, Remote \)-URLs unterstützt, die als `StartPage` .  Dienstmitarbeiter werden standardmäßig nicht für Webanwendungen unterstützt, die eine lokale Startseite angeben.  Um die Unterstützung der Dienstmitarbeiter für diese Fälle zu aktivieren, fügen Sie dem Manifest einen expliziten [ApplicationContentUriRules](#set-application-content-uri-rules-acurs) -Eintrag hinzu, beispielsweise: `<uap:Rule Match="http://web-platform.test/" Type="include" uap5:ServiceWorker="true"/>`  
     
-    ![Application panel of package.appxmanifest designer](media/vs-manifest-application.png)  
+    ![Anwendungsbereich des Pakets. appxmanifest-Designer](media/vs-manifest-application.png)  
     
-    You are able to also modify the `Display name` and `Description` as you like.  
-1.  Save this file \(or another 512x512 image of your choosing\) to your desktop.  
-    Then, in the manifest designer **Visual Assets** panel, click on the `Source` field **...** button, select it as your source file, and click **Generate**.  \(Then click **OK** to overwrite the default placeholder images\).  
+    Sie können auch das `Display name` und `Description` nach Belieben ändern.  
+1.  Speichern Sie diese Datei \ (oder ein anderes 512x512-Bild Ihrer Wahl) auf dem Desktop.  
+    Klicken Sie dann im Manifest-Designer **Visual Assets** Panel auf die `Source` Schaltfläche Feld **...** , wählen Sie Sie als Quelldatei aus, und klicken Sie auf **generieren**.  \ (Klicken Sie dann auf **OK** , um die Standardplatzhalter-Bilder zu überschreiben \).  
     
-    ![Visual Assets panel of package.appxmanifest designer](media/vs-manifest-visual-assets.png)  
+    ![Bereich "visuelle Objekte" des Pakets. appxmanifest-Designer](media/vs-manifest-visual-assets.png)  
     
-    This generates the basic visual assets for installing, running, launching, and distributing your app in the store.  
-    If you see any red \(`X`\) errors indicating missing images, you are able to click on the **...** buttons to manually select a file from the generated images.  
-1.  In the manifest designer **Content URIs** panel, replace `http://example.com` with the location of your PWA \(such that `Rule` = `include` and `WinRT Access` = `All`\).  
-    This grants your PWA permission to send native Windows Runtime \(WinRT\) API requests when running as a Windows 10 app, which is covered a bit later.   If your actual PWA does not require WinRT access, you are able to switch the `WinRT Access` value to `None`.  Either way, be sure to sub out the default `http://example.com` string with the URI of your PWA, or your app is not able to properly load at runtime.  
-    You are ready to run and debug your PWA as a Windows 10 app.  If you are using a localhost site to step through this guide, make sure it is running.  Then,  
-1.  Build \(`Ctrl`+`Shift`+`F5`\) and Run \(`F5`\) your PWA project.  Your website should now launch in a standalone app window.  Not only is it a hosted web app; it is running as a Progressive Web App installed on Windows 10!  
+    Dadurch werden die grundlegenden visuellen Ressourcen zum Installieren, ausführen, starten und Verteilen Ihrer APP im Store generiert.  
+    Wenn rote `X` Fehlermeldungen angezeigt werden, die auf fehlende Bilder hindeuten, können Sie auf die Schaltfläche.. **.** klicken, um eine Datei aus den generierten Bildern manuell auszuwählen.  
+1.  Ersetzen Sie im Bereich Manifest-Designer- **Inhalts-URIs** `http://example.com` durch den Speicherort Ihrer PWA \ (so `Rule`  =  `include` und `WinRT Access`  =  `All` \).  
+    Dadurch wird Ihre PWA-Berechtigung zum Senden systemeigener Windows-Runtime \ (WinRT \)-API-Anforderungen gewährt, wenn Sie als Windows 10-app ausgeführt wird, die ein wenig später abgedeckt wird.   Wenn für ihre eigentliche PWA kein WinRT-Zugriff erforderlich ist, können Sie den `WinRT Access` Wert auf ändern `None` .  Achten Sie auf jeden Fall darauf, die Standard `http://example.com` Zeichenfolge mit dem URI ihrer PWA zu unterteilen, oder die APP kann zur Laufzeit nicht ordnungsgemäß geladen werden.  
+    Sie können Ihre PWA als Windows 10-app ausführen und Debuggen.  Wenn Sie eine localhost-Website verwenden, um diesen Leitfaden zu durchlaufen, stellen Sie sicher, dass Sie ausgeführt wird.  Dann  
+1.  Erstellen Sie \ ( `Ctrl` + `Shift` + `F5` \), und führen `F5` Sie das PWA-Projekt aus.  Ihre Website sollte nun in einem eigenständigen App-Fenster gestartet werden.  Es handelt sich nicht nur um eine gehostete Web-App; Sie wird als Progressive Web-App auf Windows 10 ausgeführt.  
 
-    ![PWA running in a WWAHost.exe window](media/wwahost.png)  
+    ![PWA wird in einem WWAHost.exe Fenster ausgeführt](media/wwahost.png)  
 
-## Debug your PWA \(EdgeHTML\) as a Windows app  
+## Debuggen Ihrer PWA \ (EdgeHTML \) als Windows-App  
 
-Because a PWA \(EdgeHTML\) is simply a progressively enhanced hosted web app, you are able to debug your server-side code the same as any web app, using your usual IDE and workflow.  The changes you deploy live are reflected in your installed PWA the next time you launch it \(no need to redeploy your Universal Windows app package\).
+Da es sich bei einer PWA \ (EdgeHTML \) einfach um eine progressiv erweiterte gehostete Web-App handelt, können Sie Ihren serverseitigen Code wie jede andere Web-App mit der üblichen IDE und dem normalen Workflow Debuggen.  Die von Ihnen bereitgestellten Änderungen werden in Ihrer installierten PWA-Version wiedergegeben, wenn Sie Sie das nächste Mal starten \ (Sie müssen das universelle Windows-App-Paket nicht erneut bereitstellen).
 
-For client-side debugging within your Windows 10 app, you must have the `Microsoft Edge DevTools Preview` app.  This standalone app includes all the functionality of the original in-browser [Microsoft Edge DevTools][DevToolsGuide] \(including [PWA tools][DevToolsGuideServiceWorkers]\), plus basic [remote debugging][DevToolsProtocol01ClientsEdgePreview] support and a [Debug Target chooser][DevToolsGuideMicrosoftStoreApp] for attaching to any running instance of the EdgeHTML engine, including add-ins for Office, Cortana, app webviews, and of course, PWAs running on Windows.  
+Für das clientseitige Debuggen in Ihrer Windows 10-App müssen Sie über die `Microsoft Edge DevTools Preview` App verfügen.  Diese eigenständige App umfasst die gesamte Funktionalität des ursprünglichen in-Browser- [Microsoft Edge-devtools][DevToolsGuide] \ (einschließlich [PWA-Tools][DevToolsGuideServiceWorkers]\) sowie die grundlegende Unterstützung für [Remotedebuggen][DevToolsProtocol01ClientsEdgePreview] sowie eine [Debug-Zielauswahl][DevToolsGuideMicrosoftStoreApp] zum Anfügen an eine beliebige ausgeführte Instanz des EdgeHTML-Moduls, einschließlich Add-Ins für Office, Cortana, App-Webansichten und natürlich PWAs, die unter Windows ausgeführt werden.  
 
-Here is how to set up debugging for your PWA \(EdgeHTML\).  
+Hier erfahren Sie, wie Sie das Debuggen für Ihre PWA \ (EdgeHTML \) einrichten.  
 
-1.  Install the [Microsoft Edge DevTools Preview][MicrosoftStoreEdgeDevtoolsPreview] app from the Microsoft Store if you do not already have it.  
-1.  With your PWA site up and running, launch the DevTools app.  
-1.  From Visual Studio, launch your Windows 10 app with the `Start Without Debugging` (`Ctrl`+`F5`) command.  \(The DevTools app does not attach properly if the Visual Studio debugger is active.\)  
-1.  In the DevTools app, click the **Refresh** button in the Local debug target chooser.  Your PWA \(EdgeHTML\) site should now be listed.  \(If it is also running in a browser window, it is the last instance of that site in the list.\)  
-1.  Click on your PWA \(EdgeHTML\) site listing to open a new DevTools instance tab and start debugging.  
+1.  Installieren Sie die [Microsoft Edge devtools Preview][MicrosoftStoreEdgeDevtoolsPreview] -App aus dem Microsoft Store, wenn Sie Sie nicht bereits haben.  
+1.  Starten Sie die devtools-APP, während ihre PWA-Website ausgeführt wird.  
+1.  Starten Sie in Visual Studio Ihre Windows 10-App mit `Start Without Debugging` dem `Ctrl` + `F5` Befehl ().  \ (Die devtools-APP wird nicht ordnungsgemäß angefügt, wenn der Visual Studio-Debugger aktiv ist. \)  
+1.  Klicken Sie in der devtools-app in der lokalen Debug-Zielauswahl auf die Schaltfläche **Aktualisieren** .  Ihre PWA \ (EdgeHTML \)-Website sollte nun aufgelistet sein.  \ (Wenn Sie auch in einem Browserfenster ausgeführt wird, handelt es sich um die letzte Instanz dieser Website in der Liste. \)  
+1.  Klicken Sie auf Ihren PWA \ (EdgeHTML \)-Website Eintrag, um eine neue Registerkarte für devtools-Instanzen zu öffnen und das Debuggen zu starten.  
     
-    ![Local Debug Targets chooser in the Microsoft Edge DevTools app](media/devtools-local.png)  
+    ![Lokale Debug-Zielauswahl in der Microsoft Edge devtools-App](media/devtools-local.png)  
     
-1.  You are able to verify that DevTools is attached to your PWA-running-as-Windows-app.  In the DevTools **Console**, type:  
+1.  Sie können überprüfen, ob devtools an Ihre PWA-running-as-Windows-App angefügt ist.  Geben Sie in der devtools- **Konsole**Folgendes ein:  
     
     ```shell
     window.Windows
     ```  
     
-    This returns the global `Windows Runtime` object containing all of the [top-level WinRT namespaces](#find-windows-runtime-winrt-apis).  This is your PWA \(EdgeHTML\) entrypoint to the [Universal Windows Platform][WindowsUWPIndex], and only exposed to web apps that run as Windows 10 apps (running outside the browser, in a `WWAHost.exe` process).  
+    Dadurch wird das globale `Windows Runtime` Objekt zurückgegeben, das alle [WinRT-Namespaces der obersten Ebene](#find-windows-runtime-winrt-apis)enthält.  Hierbei handelt es sich um Ihren PWA \ (EdgeHTML \)-Einstiegsbereich für die [universelle Windows-Plattform][WindowsUWPIndex], der nur für Web-Apps verfügbar gemacht wird, die als Windows 10-apps ausgeführt werden (die außerhalb des Browsers ausgeführt werden, in einem `WWAHost.exe` Prozess).  
     
-## Find Windows Runtime (WinRT) APIs  
+## Suchen von Windows-Runtime-APIs (WinRT)  
 
-As an installed Windows app, your [PWA \(EdgeHTML\) has full access to native Windows Runtime APIs][WindowsRuntime]; identify what you need to use, obtain the requisite permissions, and employ feature detection to send that API request on supported environments.  Walk through this process to add a progressive enhancement for Windows desktop users of your PWA.  
+Als installierte Windows-App verfügt Ihre [PWA \ (EdgeHTML \) über vollen Zugriff auf systemeigene Windows-Runtime-APIs][WindowsRuntime]. Ermitteln Sie, was Sie verwenden müssen, rufen Sie die erforderlichen Berechtigungen ab, und verwenden Sie die Feature-Erkennung, um diese API-Anforderung in unterstützten Umgebungen zu senden.  Gehen Sie durch diesen Vorgang, um eine progressive Verbesserung für Windows-Desktopbenutzer ihrer PWA hinzuzufügen.  
 
-There are a number of ways to identify the Universal Windows Platform APIs you need for your Windows PWA, including searching the comprehensive [UWP docs on Windows Dev Center][uwp/api/], downloading and running [UWP code samples](#uwp-code-samples) with Visual Studio, and browsing code snippets for common tasks for PWAs on Windows.
+Es gibt eine Reihe von Möglichkeiten, die universellen Windows-Plattform-APIs zu identifizieren, die Sie für Ihre Windows-PWA benötigen, einschließlich Durchsuchen der umfassenden [UWP-Dokumente auf Windows dev Center] [UWP/API/], herunterladen und Ausführen von [UWP-Codebeispielen](#uwp-code-samples) in Visual Studio und Durchsuchen von Codeausschnitten für allgemeine Aufgaben für PWAs unter Windows.
 
-There are a number of ways to identify the Universal Windows Platform APIs you need for your Windows PWA, including searching the comprehensive [UWP docs on Windows Dev Center][uwp/api/], downloading and running [UWP code samples](#uwp-code-samples) with Visual Studio, and browsing code snippets for common tasks for [PWAs on Windows 10 (EdgeHTML)][PwaIndexWindows10].  
+Es gibt eine Reihe von Möglichkeiten, die für Ihre Windows-PWA benötigten APIs für die universelle Windows-Plattform zu identifizieren, einschließlich Durchsuchen der umfassenden [UWP-Dokumente auf Windows dev Center] [UWP/API/], herunterladen und Ausführen von [UWP-Codebeispielen](#uwp-code-samples) in Visual Studio und Durchsuchen von Codeausschnitten für allgemeine Aufgaben für [PWAs unter Windows 10 (EdgeHTML)][PwaIndexWindows10].  
 
-Overall, WinRT APIs work in JavaScript the same way they do in C#, so you may follow the general [Universal Windows Platform documentation][WindowsUWPIndex] and [API Reference][UwpApiIndex] for usage.  However, please note the following differences:  
+Insgesamt arbeiten WinRT-APIs in JavaScript auf die gleiche Weise wie in C#, daher können Sie die allgemeine [Dokumentation zur universellen Windows-Plattform][WindowsUWPIndex] und die [API-Referenz][UwpApiIndex] für die Verwendung befolgen.  Beachten Sie jedoch die folgenden Unterschiede:  
 
-*   WinRT features in JavaScript use  [different casing conventions][ScriptingJsinrtUsingWinRTCasingConventions]  
-*   [Events are represented as string identifiers][ScriptingJsinrtHandlingWinRTEvents] passed to class `addEventListener`/`removeEventListener` methods  
-*   [Asynchronous methods][ScriptingJsinrtUsingWinRT] use the JavaScript Promise model  
-*   APIs in the `Windows.UI.Xaml` namespace are not supported for JavaScript apps, which instead use the [EdgeHTML][DevGuideWhatsNew] engine web rendering stack \(HTML, CSS\)  
+*   WinRT-Features in JavaScript verwenden [unterschiedliche Konventionen][ScriptingJsinrtUsingWinRTCasingConventions] für die Groß-/Kleinschreibung  
+*   [Ereignisse werden als Zeichenfolgenbezeichner dargestellt][ScriptingJsinrtHandlingWinRTEvents] , die an Klassen `addEventListener` / `removeEventListener` Methoden übergeben werden.  
+*   [Asynchrone Methoden][ScriptingJsinrtUsingWinRT] verwenden das JavaScript-Promise-Modell  
+*   APIs im `Windows.UI.Xaml` Namespace werden für JavaScript-apps nicht unterstützt, die stattdessen den [EdgeHTML][DevGuideWhatsNew] Engine Web Rendering Stack \ (HTML, CSS \) verwenden.  
 
-For more details, see [Using the Windows Runtime in JavaScript][WindowRuntimeUsingJavascript].  
+Weitere Informationen finden Sie unter [Verwenden der Windows-Runtime in JavaScript][WindowRuntimeUsingJavascript].  
 
-### UWP code samples  
+### UWP-Codebeispiele  
 
-Check out the [Universal Windows Platform \(UWP\) Code Samples][MicrosoftDeveloperWindowsSamples] repo to browse JavaScript examples for common Windows 10 app scenarios.  Although the JS versions of these samples use the [WinJS][GithubWinjsWinjs] library to structure the sample template, WinJS is not required for sending the WinRT API requests demonstrated in these samples.  
+Schauen Sie sich die [universelle Windows-Plattform \ (UWP \) Code Beispiele][MicrosoftDeveloperWindowsSamples] Repo an, um JavaScript-Beispiele für allgemeine Windows 10-App-Szenarien zu durchsuchen.  Obwohl die JS-Versionen dieser Beispiele die [WinJS][GithubWinjsWinjs] -Bibliothek verwenden, um die Beispielvorlage zu strukturieren, ist WinJS für das Senden der WinRT-API-Anforderungen, die in diesen Beispielen demonstriert werden, nicht erforderlich.  
 
 > [!NOTE]
-> If you need to listen for the [`activated`][UwpApiWindowsUiWebuiWebapplicationActivated] event for the app, you are able to do this using the following native WinRT API:  
+> Wenn Sie das [`activated`][UwpApiWindowsUiWebuiWebapplicationActivated] Ereignis für die APP Abhören müssen, können Sie dies mit der folgenden systemeigenen WinRT-API tun:  
 > 
-> **Use this**  
+> **Verwenden Sie diese**  
 > 
 > ```javascript
 > Windows.UI.WebUI.WebUIApplication.addEventListener("activated", function (activatedEventArgs) {
@@ -131,9 +131,9 @@ Check out the [Universal Windows Platform \(UWP\) Code Samples][MicrosoftDevelop
 > });
 > ```  
 > 
-> ... as opposed this type of WinJS request used in the samples:  
+> ... im Gegensatz zu dieser Art von WinJS-Anforderung, die in den Beispielen verwendet wird:  
 > 
-> **Not this**  
+> **Nicht so**  
 > 
 > ```javascript
 >     var page = WinJS.UI.Pages.define("/html/scenario1-launched.html", {
@@ -143,30 +143,30 @@ Check out the [Universal Windows Platform \(UWP\) Code Samples][MicrosoftDevelop
 >     });
 > ```  
 
-## Send WinRT API requests from your PWA (EdgeHTML)  
+## Senden von WinRT-API-Anforderungen aus ihrer PWA (EdgeHTML)  
 
-At this point, pretend you want to add a custom context menu for Windows users of our PWA \(EdgeHTML\) and have identified the APIs you need in the [Windows.UI.Popups][UwpApiWindowsUiPopups] namespace.  
+Nehmen Sie an diesem Punkt an, dass Sie ein benutzerdefiniertes Kontextmenü für Windows-Benutzer unserer PWA \ (EdgeHTML \) hinzufügen und die benötigten APIs im [Windows. UI. Popups][UwpApiWindowsUiPopups] -Namespace identifiziert haben möchten.  
 
-In order to send any WinRT APIs requests from our PWA \(EdgeHTML\), you first need to [establish the requisite permissions](#set-application-content-uri-rules-acurs) \(or, Application Content URI Rules\) in your Windows app package manifest \(`.appxmanifest`\) file.  
+Um alle WinRT-APIs-Anforderungen aus unserer PWA \ (EdgeHTML \) zu senden, müssen Sie zuerst [die erforderlichen Berechtigungen](#set-application-content-uri-rules-acurs) \ (oder Anwendungsinhalts-URI-Regeln \) in Ihrer Windows-App-Paketmanifest \ ( `.appxmanifest` \)-Datei erstellen.  
 
-If any of these API requests involve access to user resources like pictures or music, or to device features like the camera or microphone, you also need to add [app capability declarations](#app-capability-declarations) to the app package manifest in order for Windows to prompt the user for permission.  If you later publish your PWA \(EdgeHTML\) to the Microsoft Store, these required [App permissions][MicrosoftSupportWindowsAppPermissions] are also noted in your store listing.  
+Wenn eine dieser API-Anforderungen den Zugriff auf Benutzer Ressourcen wie Bilder oder Musik oder auf Gerätefeatures wie die Kamera oder das Mikrofon beinhaltet, müssen Sie dem App-Paketmanifest auch [App-Funktionsdeklarationen](#app-capability-declarations) hinzufügen, damit Windows den Benutzer zur Genehmigung auffordert.  Wenn Sie später Ihre PWA \ (EdgeHTML \) im Microsoft Store veröffentlichen, werden diese erforderlichen [App-Berechtigungen][MicrosoftSupportWindowsAppPermissions] auch in Ihrem Store-Eintrag angegeben.  
 
-#### Set Application Content URI Rules (ACURs)  
+#### Einrichten von Anwendungsinhalts-URI-Regeln (ACURs)  
 
-Through ACURs, otherwise known as a URL allow list, you are able to give the URLs of your PWA \(EdgeHTML\) direct access to Windows Runtime APIs.  At the Windows OS level, the right policy bounds are set to allow code hosted on your web server to directly send platform API requests.  You define these bounds in the app package manifest file when you specify your PWA URLs as `ApplicationContentUriRules`.  
+Über ACURs (auch als URL-Zulassungsliste bezeichnet) können Sie die URLs Ihres PWA \ (EdgeHTML \) direkten Zugriffs auf Windows-Runtime-APIs angeben.  Auf der Windows-Betriebssystemebene sind die richtigen Richtlinien Grenzen so eingestellt, dass Code, der auf Ihrem Webserver gehostet wird, direkt Platt Form-API-Anforderungen senden kann.  Sie definieren diese Grenzen in der APP-Paket Manifestdatei, wenn Sie Ihre PWA-URLs als angeben `ApplicationContentUriRules` .  
 
-Your rules should include the start page for your app and any other pages you want included as app pages.  If your user navigates to a URL that is not included in your rules, Windows opens the target URL in the Microsoft Edge browser rather than your standalone PWA \(EdgeHTML\) window \(`WWAHost.exe` process\).  You may also exclude specific URLs.  
+Ihre Regeln sollten die Startseite für Ihre APP und alle anderen Seiten enthalten, die als App-Seiten enthalten sein sollen.  Wenn der Benutzer zu einer URL navigiert, die nicht in ihren Regeln enthalten ist, öffnet Windows die Ziel-URL im Microsoft Edge-Browser und nicht das eigenständige PWA \ (EdgeHTML \)-Fenster \ ( `WWAHost.exe` Prozess \).  Sie können auch bestimmte URLs ausschließen.  
 
-There are several ways to specify a URL `Match` in your rules:  
+Es gibt mehrere Möglichkeiten, eine URL `Match` in ihren Regeln anzugeben:  
 
-*   An exact hostname  
+*   Ein exakter Hostname  
 *   Ein Hostname, für den ein URI mit einer Unterdomäne dieses Hostnamens einbezogen oder ausgeschlossen wird  
-*   An exact URI  
-*   An exact URI containing a query property  
-*   A partial path and a wildcard to indicate a particular file extension for an include rule  
-*   Relative paths for exclude rules  
+*   Ein exakter URI  
+*   Ein exakter URI mit einer Abfrageeigenschaft  
+*   Ein Teilpfad und ein Platzhalter für die Angabe einer bestimmten Dateierweiterung für eine Einbeziehungsregel  
+*   Relative Pfade für Ausschlussregeln  
 
-Here are a few examples of ACURs in a `.appxmanifest` file:  
+Hier sind einige Beispiele für ACURs in einer `.appxmanifest` Datei:  
 
 ```xml
 <Application
@@ -179,41 +179,41 @@ StartPage="https://contoso.com/home">
 </uap:ApplicationContentUriRules>
 ```  
 
-URLs defined within the ACURs for your app are able to be granted permission to the Windows Runtime through the `WindowsRuntimeAccess` attribute, which accepts the following values:  
+In der ACURs für Ihre APP definierte URLs können über das `WindowsRuntimeAccess` Attribut, das die folgenden Werte akzeptiert, die Berechtigung für die Windows-Runtime erhalten:  
 
-*   `all`: Remote JavaScript code has access to all WinRT APIs and any local packaged components.  The [Windows \(WinRT\))][UwpApiIndex] namespace is injected and present in the script engine.  
-*   `allowForWeb`: Remote JavaScript code access is limited to local packaged components, including custom C++/C# components.  
-*   `none`: Default.  The specified URL has no platform access.  
+*   `all`: Remote-JavaScript-Code hat Zugriff auf alle WinRT-APIs und alle lokalen Paketkomponenten.  Der [Windows \ (WinRT \))-][UwpApiIndex] Namespace wird injiziert und im Skriptmodul dargestellt.  
+*   `allowForWeb`: Der Remote Zugriff auf JavaScript-Code ist auf lokale verpackte Komponenten, einschließlich benutzerdefinierter C++/c #-Komponenten, limitiert.  
+*   `none`Standard.  Die angegebene URL hat keinen Plattformzugriff.  
 
-In this tutorial, you already set the only ACUR that you need \(Step 6 of the previous [Set up and run your app](#set-up-and-run-your-universal-windows-app) section\) for your single-page app.  You are able to confirm this from the **Content URIs** panel of the Visual Studio `package.appxmanifest` designer.  
+In diesem Lernprogramm haben Sie bereits die einzige ACUR-Version festgesetzt, die Sie benötigen \ (Schritt 6 des vorherigen [Einrichten und Ausführen des App](#set-up-and-run-your-universal-windows-app) -Abschnitts \) für ihre Einzelseiten-app.  Sie können dies über den Bereich " **Inhalts-URIs** " des Visual Studio- `package.appxmanifest` Designers bestätigen.  
 
-![Content URI panel of the Visual Studio appxmanifest designer](media/vs-appxmanifest-editor-acurs.png)  
+![Bereich ' Inhalts-URI ' im Visual Studio-appxmanifest-Designer](media/vs-appxmanifest-editor-acurs.png)  
 
-You are also able to view the raw XML of your manifest by right-clicking your `package.appxmanifest` file in Visual Studio Solution Explorer and selecting **View Code** \(`F7`\).  To toggle back to the Designer view, select **View Designer** \(`Shift`+`F7`\).  
+Sie können auch den unformatierten XML-Code ihres Manifests anzeigen, indem Sie `package.appxmanifest` im Visual Studio-Projektmappen-Explorer mit der rechten Maustaste auf die Datei klicken und " **Code anzeigen** \ ( `F7` \)" auswählen.  Wenn Sie wieder zur Entwurfsansicht wechseln möchten, wählen Sie **Ansicht-Designer** \ ( `Shift` + `F7` \) aus.  
 
-#### App capability declarations  
+#### Deklarationen von App-Funktionen  
 
-If your app needs programmatic access to user resources like pictures or music, or to devices like a camera or a microphone, you must include the corresponding [App capability declarations][WindowsUwpPackagingAppCapabilities] in your app package manifest file.  There are three app capability declaration categories:  
+Wenn Ihre APP programmgesteuerten Zugriff auf Benutzer Ressourcen wie Bilder oder Musik oder auf Geräte wie eine Kamera oder ein Mikrofon benötigt, müssen Sie die entsprechenden [Deklarationen][WindowsUwpPackagingAppCapabilities] für die App-Funktion in Ihre APP-Paket Manifestdatei aufnehmen.  Es gibt drei Kategorien von App Funktionsdeklarationen:  
 
 *   [Funktionen zur allgemeinen Verwendung][WindowsUwpPackagingAppCapabilitiesGeneralUse], die auf die meisten allgemeinen App-Szenarien zutreffen.  
-*   [Device capabilities][WindowsUwpPackagingAppCapabilitiesDevice] that allow your app to access peripheral and internal devices.  
-*   [Special-use capabilities][WindowsUwpPackagingAppCapabilitiesSpecialRestricted] that support enterprise scenarios and require a Microsoft Store company account.  For more info about company accounts, see [Account types, locations, and fees][WindowsUwpPublishAccountTypesLocationsFees].
+*   [Gerätefunktionen][WindowsUwpPackagingAppCapabilitiesDevice], die Ihrer App den Zugriff auf Peripheriegeräte und interne Geräte ermöglichen.  
+*   [Funktionen zur Sondernutzung][WindowsUwpPackagingAppCapabilitiesSpecialRestricted] , die Unternehmensszenarien unterstützen und ein Microsoft Store-Unternehmenskonto erfordern.  Weitere Informationen zu Unternehmenskonten finden Sie unter [Kontotypen, Standorte und Gebühren][WindowsUwpPublishAccountTypesLocationsFees].
 
-Your Microsoft Store app page lists all the capabilities you declare in your app package manifest, so be sure to only specify the capabilities that your app actually uses.
+Auf der Microsoft Store-App-Seite werden alle Funktionen aufgeführt, die Sie in Ihrem App-Paketmanifest deklarieren, daher müssen Sie unbedingt nur die Funktionen angeben, die Ihre APP tatsächlich verwendet.
 
-Some capabilities provide apps access to sensitive resources.  These resources are considered sensitive because each is able to access the user's personal data or cost the user money.  Privacy settings, managed by the Windows 10 [Settings][BingResultsWindows10Settings] app, let the user dynamically control access to sensitive resources.  Thus, it is important that your app does not assume a sensitive resource is always available.  For more info about accessing sensitive resources, see [Guidelines for privacy-aware apps][WindowsUwp|::ref2::|Index].  
+Einige Funktionen bieten apps Zugriff auf vertrauliche Ressourcen.  Diese Ressourcen gelten als vertraulich, weil jede Person auf die persönlichen Daten des Benutzers zugreifen oder dem Nutzer Geld kosten kann.  Mit den Datenschutzeinstellungen, die von der Windows 10- [Einstellungs][BingResultsWindows10Settings] -App verwaltet werden, können Benutzer den Zugriff auf vertrauliche Ressourcen dynamisch steuern.  Daher ist es wichtig, dass Ihre APP nicht davon ausgeht, dass eine vertrauliche Ressource immer verfügbar ist.  Weitere Informationen zum Zugriff auf sensible Ressourcen finden Sie unter [Richtlinien für Apps mit Berücksichtigung von Datenschutz][WindowsUwp|::ref2::|Index].  
 
-You request access by declaring capabilities in the package manifest for your app.  In Visual Studio, you are able to do this from the **Capabilities** panel of the package.appxmanifest designer.  
+Sie fordern Zugriff an, indem Sie Funktionen im Paketmanifest für Ihre APP deklarieren.  In Visual Studio können Sie dies über den Bereich " **Funktionen** " des Package. appxmanifest-Designers tun.  
 
-![Capabilities panel of the Visual Studio appxmanifest designer](media/vs-appxmanifest-editor-capabilities.png)  
+![Bereich "Funktionen" im Visual Studio-appxmanifest-Designer](media/vs-appxmanifest-editor-capabilities.png)  
 
-In this tutorial, only the default Internet \(Client\) capability is required, so no further action is needed.  
+In diesem Lernprogramm ist nur die standardmäßige Internet-Funktion \ (Client \) erforderlich, daher ist keine weitere Aktion erforderlich.  
 
-### Use feature detection to invoke WinRT  
+### Verwenden der Feature-Erkennung zum Aufrufen von WinRT  
 
-To ensure a quality baseline experience for your PWA audience across all platforms, you progressively enhance your PWA experience on Windows using WinRT feature detection.  This way, you are able to be sure your Windows-specific code is only run in a context where WinRT APIs are available and applicable.  
+Damit Sie für Ihre PWA-Zielgruppe auf allen Plattformen eine qualitativ hochwertige Baseline erzielen können, verbessern Sie mit der WinRT-Feature-Erkennung schrittweise ihre PWA-Funktionalität für Windows.  Auf diese Weise können Sie sicherstellen, dass Ihr Windows-spezifischer Code nur in einem Kontext ausgeführt wird, in dem WinRT-APIs verfügbar und anwendbar sind.  
 
-Feature detection may be as simple as looking for the `Windows` object \(the entrypoint to the [WinRT namespace][UwpApiIndex]\) as below:  
+Die Funktionserkennung kann so einfach sein wie die Suche nach dem `Windows` Objekt \ (dem EntryPoint zum [WinRT-Namespace][UwpApiIndex]\) wie unten:  
 
 ```javascript
 if(window.Windows){
@@ -221,7 +221,7 @@ if(window.Windows){
 }
 ```  
 
-However, given that not all Windows APIs are available on all [Windows 10 device types][UwpExtensionSdkDeviceFamiliesOverview], it is generally useful to use more specific feature detection to further qualify the namespace of the API request you are sending:  
+Da jedoch nicht alle Windows-APIs für alle [Windows 10-Gerätetypen][UwpExtensionSdkDeviceFamiliesOverview]verfügbar sind, ist es im Allgemeinen nützlich, eine spezifischere Funktionserkennung zu verwenden, um den Namespace der API-Anforderung, die Sie senden, weiter zu qualifizieren:  
 
 ```javascript
 if(window.Windows && Windows.Media.SpeechRecognition){
@@ -229,19 +229,19 @@ if(window.Windows && Windows.Media.SpeechRecognition){
 }
 ```  
 
-With that background, you are ready to add some WinRT code to implement a custom context menu.  If you are using the sample PWA from [Get started with Progressive Web Apps][PwaGetStarted]:
+Mit diesem Hintergrund können Sie einige WinRT-Code hinzufügen, um ein benutzerdefiniertes Kontextmenü zu implementieren.  Wenn Sie das Beispiel PWA aus [Erste Schritte mit Progressive Web Apps][PwaGetStarted]verwenden:
 
-1.  Open Visual Studio to your PWA site project.
+1.  Öffnen Sie Visual Studio für Ihr PWA-Websiteprojekt.
 
-1.  In Solution Explorer, open the `views\layout.pug` file and add the following line, right below the `script` reference for your service worker:
+1.  Öffnen Sie im Projektmappen-Explorer die `views\layout.pug` Datei, und fügen Sie die folgende Zeile direkt unter dem `script` Verweis für Ihren Dienstmitarbeiter hinzu:
     
     ```xml
     script(src='/javascripts/site.js')
     ```  
 
-1.  In Solution Explorer, right-click on the `javascripts` folder and **Add** > **New File...**.
+1.  Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf den `javascripts` Ordner, und **fügen**Sie  >  **neue Datei hinzu.**
 
-1.  Name your file: `site.js`, and copy in the following code:
+1.  Benennen Sie Ihre Datei: `site.js` , und kopieren Sie den folgenden Code:
     
     ```javascript
     if (window.Windows && Windows.UI.Popups) {
@@ -286,64 +286,64 @@ With that background, you are ready to add some WinRT code to implement a custom
     }
     ```
 
-1.  Compare the context menu behavior when you run your PWA in the browser \(`F5` from your PWA site project\) versus from inside the Windows app window \(`F5` from your Universal Windows app project\).  In the browser, right-clicking gives you the Microsoft Edge default context menu, whereas in the `WWAHost.exe` process, your custom menu now appears.  
+1.  Vergleichen Sie das Verhalten des Kontextmenüs, wenn Sie Ihre PWA im Browser ausführen \ ( `F5` aus dem PWA-Websiteprojekt \) versus im Windows-App-Fenster \ ( `F5` aus ihrem universellen Windows-App-Projekt \).  Klicken Sie im Browser mit der rechten Maustaste auf das Standardkontextmenü von Microsoft Edge, während während des `WWAHost.exe` Prozesses das benutzerdefinierte Menü nun angezeigt wird.  
 
-    | Microsoft Edge | Windows 10 app |  
+    | Microsoft Edge | Windows 10-App |  
     |:--- |:---- |  
-    | ![Browser default context menu](media/browser-context-menu.png) | ![App custom context menu](media/app-context-menu.png) |  
+    | ![Browser-Standardkontextmenü](media/browser-context-menu.png) | ![Benutzerdefiniertes App-Kontextmenü](media/app-context-menu.png) |  
 
-Hopefully you now have a solid foundation for progressively enhancing your PWAs on Windows.  If you run into questions or anything is unclear, please send a comment!  
+Wir hoffen, dass Sie jetzt ein solides Fundament haben, um Ihre PWAs unter Windows schrittweise zu verbessern.  Wenn Sie auf Fragen stoßen oder etwas unklar ist, senden Sie uns bitte einen Kommentar!  
 
-## Going further
+## Vertiefung
 
-The [Windows Dev Center][MicrosoftDeveloperWindowsApps] is your complete reference for all stages of Windows app building, from [getting started][MicrosoftDeveloperWindowsAppsGetStarted], to [designing][MicrosoftDeveloperWindowsAppsDesign], [developing][MicrosoftDeveloperWindowsAppsDevelop], and [publishing][MicrosoftDeveloperStorePublishApps] to the Microsoft Store.  
+Das [Windows dev Center][MicrosoftDeveloperWindowsApps] ist Ihre vollständige Referenz für alle Phasen des Windows-App-Aufbaus, von den [ersten Schritten][MicrosoftDeveloperWindowsAppsGetStarted]bis zum [entwerfen][MicrosoftDeveloperWindowsAppsDesign], [entwickeln][MicrosoftDeveloperWindowsAppsDevelop]und [veröffentlichen][MicrosoftDeveloperStorePublishApps] im Microsoft Store.  
 
-For a general overview on the Universal Windows Platform \(UWP\) and how to target different Windows 10 device families, see [Intro to the Universal Windows Platform][WindowsUWPGetStartedGuide].  
+Eine allgemeine Übersicht über die universelle Windows-Plattform \ (UWP \) und wie Sie auf unterschiedliche Windows 10-Gerätefamilien abzielen, finden Sie unter [Einführung in die universelle Windows-Plattform][WindowsUWPGetStartedGuide].  
 
-And when you are ready, here is how \(and why!\) to [Submit your PWA to the Microsoft Store](./microsoft-store.md).  
+Und wenn Sie fertig sind, gehen Sie wie folgt vor, um [Ihre PWA an den Microsoft Store](./microsoft-store.md)zu übermitteln.  
 
 <!-- image links -->  
 
 <!-- links -->  
 
-[PwaGetStarted]: ./get-started.md "Get started with Progressive Web Apps"  
-[PwaIndexWindows10]: ./index.md#pwas-on-windows-10-edgehtml "PWAs on Windows 10 (EdgeHTML) - Progressive Web Apps on Windows"  
-[DevToolsGuide]: ../devtools-guide.md "Microsoft Edge (EdgeHTML) Developer Tools"  
-[DevToolsGuideMicrosoftStoreApp]: ../devtools-guide.md#microsoft-store-app "Microsoft Store app - Microsoft Edge (EdgeHTML) Developer Tools"  
-[DevToolsGuideServiceWorkers]: ../devtools-guide/service-workers.md "Service Workers"  
-[DevToolsProtocol01ClientsEdgePreview]: ../devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview "Microsoft Edge DevTools Preview - DevTools Protocol Clients"  
-[DevGuideWhatsNew]: ../dev-guide/whats-new.md "What's New in EdgeHTML"  
-[WindowsRuntime]: ../windows-runtime/index.md "Windows Runtime (WinRT) for JavaScript"  
-[WindowRuntimeUsingJavascript]: ../windows-runtime/using-the-windows-runtime-in-javascript.md "Using the Windows Runtime in JavaScript"  
+[PwaGetStarted]: ./get-started.md "Erste Schritte mit Progressive Web-Apps"  
+[PwaIndexWindows10]: ./index.md#pwas-on-windows-10-edgehtml "PWAs unter Windows 10 (EdgeHTML) – Progressive Web-Apps unter Windows"  
+[DevToolsGuide]: ../devtools-guide.md "Microsoft Edge (EdgeHTML)-Entwickler Tools"  
+[DevToolsGuideMicrosoftStoreApp]: ../devtools-guide.md#microsoft-store-app "Microsoft Store-App – Microsoft Edge (EdgeHTML)-Entwickler Tools"  
+[DevToolsGuideServiceWorkers]: ../devtools-guide/service-workers.md "Dienstmitarbeiter"  
+[DevToolsProtocol01ClientsEdgePreview]: ../devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview "Microsoft Edge DevTools-Vorschau – DevTools-Protokoll-Clients"  
+[DevGuideWhatsNew]: ../dev-guide/whats-new.md "Neuerungen in EdgeHTML"  
+[WindowsRuntime]: ../windows-runtime/index.md "Windows-Runtime (WinRT) für JavaScript"  
+[WindowRuntimeUsingJavascript]: ../windows-runtime/using-the-windows-runtime-in-javascript.md "Verwenden der Windows-Runtime in JavaScript"  
 
-[ScriptingJsinrtHandlingWinRTEvents]: /scripting/jswinrt/handling-windows-runtime-events-in-javascript "Handling Windows Runtime Events in JavaScript"  
-[ScriptingJsinrtUsingWinRT]: /scripting/jswinrt/using-windows-runtime-asynchronous-methods "Using Windows Runtime Asynchronous Methods"  
-[ScriptingJsinrtUsingWinRTCasingConventions]:  /scripting/jswinrt/using-the-windows-runtime-in-javascript#casing-conventions-with-windows-runtime-features "Casing Conventions with Windows Runtime Features - Using the Windows Runtime in JavaScript"  
-[UwpApiIndex]: /uwp/api/index "Windows UWP Namespaces"  
-[UwpApiWindowsUiPopups]: /uwp/api/windows.ui.popups "Windows.UI.Popups Namespace"  
-[UwpApiWindowsUiWebuiWebapplicationActivated]: /uwp/api/windows.ui.webui.webuiapplication.activated "WebUIApplication.Activated Event"  
-[UwpExtensionSdkDeviceFamiliesOverview]: /uwp/extension-sdks/device-families-overview "Device families overview"  
-[UwpSchemasAppxpackageUapmanifestschemaGeneratePackageManifest]: /uwp/schemas/appxpackage/uapmanifestschema/generate-package-manifest "How Visual Studio generates an app package manifest"  
-[WindowsUWPIndex]: /windows/uwp/index "Universal Windows Platform documentation"  
-[WindowsUWPGetStartedGuide]: /windows/uwp/get-started/universal-application-platform-guide "What's a Universal Windows Platform (UWP) app?"  
-[WindowsUWPGetStartedEnable]: /windows/uwp/get-started/enable-your-device-for-development "Enable your device for development"  
-[WindowsUwpSecurityIndex]: /windows/uwp/security/index "Security"  
-[WindowsUwpPublishAccountTypesLocationsFees]: /windows/uwp/publish/account-types-locations-and-fees "Account types, locations, and fees"  
-[WindowsUwpPackagingAppCapabilitiesSpecialRestricted]: /windows/uwp/packaging/app-capability-declarations#special-and-restricted-capabilities "Restricted capabilities"  
-[WindowsUwpPackagingAppCapabilitiesDevice]: /windows/uwp/packaging/app-capability-declarations#device-capabilities "Device capabilities"  
-[WindowsUwpPackagingAppCapabilitiesGeneralUse]: /windows/uwp/packaging/app-capability-declarations#general-use-capabilities "General-use capabilities"  
-[WindowsUwpPackagingAppCapabilities]: /windows/uwp/packaging/app-capability-declarations "App capability declarations"  
+[ScriptingJsinrtHandlingWinRTEvents]: /scripting/jswinrt/handling-windows-runtime-events-in-javascript "Behandeln von Windows-Runtime-Ereignissen in JavaScript"  
+[ScriptingJsinrtUsingWinRT]: /scripting/jswinrt/using-windows-runtime-asynchronous-methods "Verwenden von asynchronen Windows-Runtime-Methoden"  
+[ScriptingJsinrtUsingWinRTCasingConventions]:  /scripting/jswinrt/using-the-windows-runtime-in-javascript#casing-conventions-with-windows-runtime-features "Konventionen für die Groß-/Kleinschreibung mit Windows-Runtime-Features – verwenden der Windows-Runtime in JavaScript"  
+[UwpApiIndex]: /uwp/api/index "Windows UWP-Namespaces"  
+[UwpApiWindowsUiPopups]: /uwp/api/windows.ui.popups "Windows. UI. Popups-Namespace"  
+[UwpApiWindowsUiWebuiWebapplicationActivated]: /uwp/api/windows.ui.webui.webuiapplication.activated "WebUIApplication. Activated-Ereignis"  
+[UwpExtensionSdkDeviceFamiliesOverview]: /uwp/extension-sdks/device-families-overview "Übersicht über Gerätefamilien"  
+[UwpSchemasAppxpackageUapmanifestschemaGeneratePackageManifest]: /uwp/schemas/appxpackage/uapmanifestschema/generate-package-manifest "So generiert Visual Studio ein App-Paketmanifest"  
+[WindowsUWPIndex]: /windows/uwp/index "Dokumentation zur universellen Windows-Plattform"  
+[WindowsUWPGetStartedGuide]: /windows/uwp/get-started/universal-application-platform-guide "Was ist eine APP für die universelle Windows-Plattform (UWP)?"  
+[WindowsUWPGetStartedEnable]: /windows/uwp/get-started/enable-your-device-for-development "Aktivieren Ihres Geräts für die Entwicklung"  
+[WindowsUwpSecurityIndex]: /windows/uwp/security/index "Sicherheits"  
+[WindowsUwpPublishAccountTypesLocationsFees]: /windows/uwp/publish/account-types-locations-and-fees "Kontotypen, Standorte und Gebühren"  
+[WindowsUwpPackagingAppCapabilitiesSpecialRestricted]: /windows/uwp/packaging/app-capability-declarations#special-and-restricted-capabilities "Eingeschränkte Funktionen"  
+[WindowsUwpPackagingAppCapabilitiesDevice]: /windows/uwp/packaging/app-capability-declarations#device-capabilities "Gerätefunktionen"  
+[WindowsUwpPackagingAppCapabilitiesGeneralUse]: /windows/uwp/packaging/app-capability-declarations#general-use-capabilities "Funktionen zur allgemeinen Nutzung"  
+[WindowsUwpPackagingAppCapabilities]: /windows/uwp/packaging/app-capability-declarations "App-Funktionsdeklarationen"  
 
-[BingResultsWindows10Settings]: https://binged.it/2lOGSH0 "windows 10 settings - Bing"  
+[BingResultsWindows10Settings]: https://binged.it/2lOGSH0 "Windows 10-Einstellungen – Bing"  
 [GithubWinjsWinjs]: https://github.com/winjs/winjs "winjs/winjs | GitHub"  
-[MicrosoftDeveloperStorePublishApps]: https://developer.microsoft.com/store/publish-apps/index "Publish Windows apps and games"  
-[MicrosoftDeveloperWindowsApps]: https://developer.microsoft.com/windows/apps/index "Universal Windows Platform documentation"  
-[MicrosoftDeveloperWindowsAppsDesign]: https://developer.microsoft.com/windows/apps/design/index "Design and code Windows apps"  
-[MicrosoftDeveloperWindowsAppsDevelop]: https://developer.microsoft.com/windows/apps/develop/index "Develop UWP apps"  
-[MicrosoftDeveloperWindowsAppsGetStarted]: https://developer.microsoft.com/windows/apps/getstarted/index "Get started with Windows 10 apps"  
-[MicrosoftDeveloperWindowsSamples]: https://developer.microsoft.com/windows/samples "Code samples"  
-[MicrosoftStoreEdgeDevtoolsPreview]: https://www.microsoft.com/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj "Microsoft Edge DevTools Preview"  
-[MicrosoftSupportWindowsAppPermissions]: https://support.microsoft.com/help/10557/windows-10-app-permissions "App permissions"  
+[MicrosoftDeveloperStorePublishApps]: https://developer.microsoft.com/store/publish-apps/index "Veröffentlichen von Windows-apps und-spielen"  
+[MicrosoftDeveloperWindowsApps]: https://developer.microsoft.com/windows/apps/index "Dokumentation zur universellen Windows-Plattform"  
+[MicrosoftDeveloperWindowsAppsDesign]: https://developer.microsoft.com/windows/apps/design/index "Entwerfen und Codieren von Windows-apps"  
+[MicrosoftDeveloperWindowsAppsDevelop]: https://developer.microsoft.com/windows/apps/develop/index "Entwickeln von UWP-apps"  
+[MicrosoftDeveloperWindowsAppsGetStarted]: https://developer.microsoft.com/windows/apps/getstarted/index "Erste Schritte mit Windows 10-apps"  
+[MicrosoftDeveloperWindowsSamples]: https://developer.microsoft.com/windows/samples "Code Beispiele"  
+[MicrosoftStoreEdgeDevtoolsPreview]: https://www.microsoft.com/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj "Microsoft Edge devtools Preview"  
+[MicrosoftSupportWindowsAppPermissions]: https://support.microsoft.com/help/10557/windows-10-app-permissions "App-Berechtigungen"  
 [MicrosoftVisualStudioDownloads]: https://visualstudio.microsoft.com/downloads "Downloads"  
 [MicrosoftVisualStudioPreview]: https://visualstudio.microsoft.com/vs/preview "Visual Studio Preview"  
-[PreviousVSDownloads]: https://visualstudio.microsoft.com/vs/older-downloads/ "Visual Studio downloads"
+[PreviousVSDownloads]: https://visualstudio.microsoft.com/vs/older-downloads/ "Visual Studio-Downloads"

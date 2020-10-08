@@ -1,12 +1,12 @@
 ---
-description: Use the Debugger to step through and troubleshoot your code.
-title: Debugger - DevTools (EdgeHTML)
+description: Verwenden Sie den Debugger, um den Code zu durchlaufen und zu behandeln.
+title: Debugger-devtools (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools, debugger, debugging, breakpoints, watches, service workers, cache api, web storage, cookies
+keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools, Debugger, Debuggen, Haltepunkte, Uhren, Dienstmitarbeiter, Cache-API, Web-Speicher, Cookies
 ms.custom: seodec18
 ms.openlocfilehash: 722277618cd8d6d5d6dba4f2a8bd3a28b6466f77
 ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
@@ -15,244 +15,244 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 07/16/2020
 ms.locfileid: "10882919"
 ---
-# Debugger - DevTools (EdgeHTML)
+# Debugger-devtools (EdgeHTML)
 
-Use the **Debugger** to step through code, set watches and breakpoints, live edit your code and inspect your caches. Test and troubleshoot your code by:
+Verwenden Sie den **Debugger** , um Code zu durchlaufen, Uhren und Haltepunkte einzurichten, Live den Code zu bearbeiten und ihre Caches zu überprüfen. Testen und Problembehandlung für Ihren Code durch:
 
-- [Browsing](#resource-picker) and [searching](#file-search) code from your loaded source files
-- [Controlling the execution flow](#toolbar) as you step through your code
-- [Managing page storage resources](./storage.md#cache-manager), including the [service workers and cache](./service-workers.md), [cookies](./storage.md#cookies-list) and [web storage](./storage.md#local-and-session-storage-managers)  
-- [Setting breakpoints and live editing](#debug-window) your code as it runs
-- [Tracking and editing local variables](#watches) as you debug
-- [Hiding or showing asynchronous code and library code](#call-stack) from your callstack as needed
-- [Adding specialized breakpoints](#breakpoints) for XmlHttpRequests, events and [DOM mutations](#dom-breakpoints)
+- [Durch](#resource-picker) suchen und [Suchen](#file-search) von Code aus ihren geladenen Quelldateien
+- [Steuern des Ausführungsflusses](#toolbar) , während Sie den Code schrittweise durchlaufen
+- [Verwalten von Seiten Speicherressourcen](./storage.md#cache-manager), einschließlich [Servicemitarbeitern und Cache](./service-workers.md), [Cookies](./storage.md#cookies-list) und [Webspeicher](./storage.md#local-and-session-storage-managers)  
+- [Festlegen von Haltepunkten und Live Bearbeitung](#debug-window) des Codes während der Ausführung
+- [Nachverfolgen und Bearbeiten von lokalen Variablen](#watches) beim Debuggen
+- [Ausblenden oder Anzeigen von asynchronem Code und Bibliothekscode](#call-stack) aus Ihrem callstack nach Bedarf
+- [Hinzufügen spezieller Haltepunkte](#breakpoints) für XMLHttpRequests, Ereignisse und [DOM-Mutationen](#dom-breakpoints)
 
-![The Microsoft Edge DevTools Debugger](./media/debugger.png)
+![Der Microsoft Edge devtools-Debugger](./media/debugger.png)
 
-There are three ways to begin a debugging session.
+Es gibt drei Möglichkeiten, eine Debugsitzung zu starten.
 
-1. **Set a breakpoint.** When the execution of your code reaches it, you'll enter the debugger and be able to step through your code.
-2. **Initiate a break in code.** Click the [**Break**](#toolbar) (*pause* icon) toolbar button or `Ctrl+Shift+B`. The debugger will break on the next statement of execution.
-3. **Set exception behavior.** Use the [**Change exception behavior**](#toolbar) menu (`Ctrl+Shift+E`) to break into the debugger when your code throws an exception. By default, the debugger is set to *Never break on exceptions*, but they are logged to the console.
+1. **Festlegen eines Haltepunkts** Wenn die Ausführung des Codes erreicht ist, geben Sie den Debugger ein und können den Code schrittweise durchlaufen.
+2. **Initiieren Sie eine Unterbrechung im Code.** Klicken Sie auf die*Symbolleisten* Schaltfläche [**Pause**](#toolbar) (Symbol) oder `Ctrl+Shift+B` . Der Debugger wird bei der nächsten Ausführungsanweisung unterbrechen.
+3. **Festlegen des Ausnahme Verhaltens** Verwenden Sie das Menü zum [**Ändern des Ausnahme Verhaltens**](#toolbar) ( `Ctrl+Shift+E` ), um den Debugger zu unterbrechen, wenn der Code eine Ausnahme auslöst. Standardmäßig ist der Debugger *auf Ausnahmen nie unterbrechen*eingestellt, aber Sie werden in der Konsole protokolliert.
 
-## Resource picker
+## Ressourcenauswahl
 
-Often the first step in debugging is to set breakpoints in the code you're looking to troubleshoot. You can find all the code files currently loaded by the page from the *Resource picker* pane, including *.html, .css* and *.js* files.
+Häufig ist der erste Schritt beim Debuggen das Festlegen von Haltepunkten im Code, den Sie zur Problembehandlung durchsuchen. Sie können alle Codedateien finden, die aktuell von der Seite geladen sind, und zwar im Bereich *Ressourcenauswahl* , einschließlich *HTML-, CSS* -und *js* -Dateien.
 
- Clicking on a file entry will open a tab for that file in the [Debug window](#debug-window) and bold the text of the file name to indicate this (as *devtools-guide* file name is in the illustration above). You can then set breakpoints within that file from the [Debug window](#debug-window).
+ Wenn Sie auf einen Dateieintrag klicken, wird im [Debugfenster](#debug-window) eine Registerkarte für diese Datei geöffnet, und der Text des Datei namens wird fett formatiert, um dies anzugeben (als *devtools-Guide-* Dateiname in der Abbildung oben). Sie können dann die Haltepunkte innerhalb dieser Datei über das [Debug-Fenster](#debug-window)festlegen.
 
-![Debugger resource picker](./media/debugger_resource_picker.png)
+![Debugger-Ressourcenauswahl](./media/debugger_resource_picker.png)
 
-From the *Resource picker* context menu, you can also mark a file as **library code** (`Ctrl+L`), giving you the option to [skip over that code in the debugger](#debug-window) and [hide it from the **Call stack** pane](#call-stack). Clicking (or `Ctrl+L`) again will toggle the file back to its previous value as *my code* or *library code*.
+Im Kontextmenü der *Ressourcenauswahl* können Sie auch eine Datei als **Bibliothekscode** () kennzeichnen `Ctrl+L` und Ihnen die Möglichkeit geben, [diesen Code im Debugger](#debug-window) zu überspringen und [ihn im **Aufruf** Listenbereich auszublenden](#call-stack). Wenn Sie erneut auf (oder `Ctrl+L` ) klicken, wird die Datei wieder zu Ihrem vorherigen Wert als *mein Code* oder *Bibliothekscode*umgeschaltet.
 
-### File search
+### Dateisuche
 
-Use the *Find in files* command (`Ctrl`+`Shift`+`F`) when you have a specific string of code you're trying to find in the source. The toolbar provides different search options, including regular expressions. Clicking on a search result will focus the *Debug window* on the specified file and line.
+Verwenden Sie den Befehl *in Dateien suchen* ( `Ctrl` + `Shift` + `F` ), wenn Sie über eine bestimmte Zeichenfolge verfügen, die Sie in der Quelle finden möchten. Die Symbolleiste bietet verschiedene Suchoptionen, einschließlich regulärer Ausdrücke. Wenn Sie auf ein Suchergebnis klicken, wird das *Debug-Fenster* auf die angegebene Datei und Zeile ausgerichtet.
 
-![Debugger file search pane](./media/debugger_file_search.png)
+![Debugger-Dateisuche (Bereich)](./media/debugger_file_search.png)
 
-## Debug window
+## Fenster "Debuggen"
 
-The *Debug window* is where you set your breakpoints, step through code, and live edit your script as you debug. Click to the left of any script command to add (or remove) a **Breakpoint**. Use the right-click context menu or [**Breakpoints**](#breakpoints) pane to *Add a condition* to the breakpoint by supplying a logical expression that causes the debugger to break if it evaluates *True* at that location.
+Im *Fenster "Debuggen"* können Sie die Haltepunkte festlegen, den Code schrittweise durchlaufen und das Skript beim Debuggen Live bearbeiten. Klicken Sie links neben einem beliebigen Skriptbefehl, um einen **Haltepunkt**hinzuzufügen (oder zu entfernen). Verwenden Sie den Kontextmenü-oder [**Haltepunkt**](#breakpoints) Bereich, um dem Haltepunkt *eine Bedingung hinzuzufügen* , indem Sie einen logischen Ausdruck bereitstellen, der dazu führt, dass der Debugger unterbricht, wenn er an dieser Stelle *wahr* ausgewertet wird.
 
-![Debug window commands](./media/debugger_window.png)
+![Debug-Fenster Befehle](./media/debugger_window.png)
 
-Other features of the debug window include controls for:
+Weitere Features des Debug-Fensters sind Steuerelemente für:
 
-### 1. Code editing
+### 1. Code Bearbeitung
 
-You can edit your JavaScript live during a debugging session. Once you make your changes, click <strong>Save</strong> (`Ctrl+S`) to test your changes next time that section of code runs. If you have unsaved code changes, an asterisk (\*) will appear before the file name in the *Debug window* tab.
+Sie können Ihr JavaScript Live während einer Debugsitzung bearbeiten. Nachdem Sie Ihre Änderungen vorgenommen haben, klicken Sie auf <strong> speichern </strong> ( `Ctrl+S` ), um die Änderungen zu testen, wenn der Codeabschnitt das nächste Mal ausgeführt wird. Wenn Sie nicht gespeicherte Codeänderungen haben, wird vor dem Dateinamen auf der Registerkarte *Debugfenster* ein Sternchen (\ *) angezeigt.
 
-Click the **Compare document to original** button to view the diff of what you changed.
+Klicken Sie auf die Schaltfläche **Dokument mit Original vergleichen** , um den Vergleich der Änderungen anzuzeigen.
 
-![Diff view of edited code in the Debugger](./media/debugger_edit_code.png)
+![Vergleichsansicht des bearbeiteten Codes im Debugger](./media/debugger_edit_code.png)
 
-Please be aware of the following constraints:
+Beachten Sie die folgenden Einschränkungen:
 
-- Script editing only works in external *.js* files (and not embedded `<script>` within *.html*)
-- Edits are saved in memory and flushed when the document is reloaded, thus you won't be able to run edits inside a `DOMContentLoaded` handler, for example
-- Currently there's no way (such as a **Save As** option) to save your edits to disk from the DevTools
+- Die Skriptbearbeitung funktioniert nur in externen *js* -Dateien (und nicht `<script>` in *HTML*eingebettet).
+- Bearbeitungen werden im Arbeitsspeicher gespeichert und beim erneuten Laden des Dokuments geleert, sodass Sie nicht in der Lage sind, Bearbeitungen in einem `DOMContentLoaded` Handler auszuführen, beispielsweise
+- Derzeit gibt es keine Möglichkeit (wie eine Option " **Speichern** unter"), um Ihre Bearbeitungen auf dem Datenträger aus dem devtools zu speichern.
 
-### 2.Code formatting
+### 2. Code Formatierung
 
-Use these controls to format minified code for better readability as you debug:
+Verwenden Sie diese Steuerelemente zum Formatieren von minimierte-Code für eine bessere Lesbarkeit beim Debuggen:
 
-#### Pretty print (`Ctrl+Shift+P`) 
-Adds line breaks and curly brace alignment per JavaScript conventions. Even compressed code that's been made more readable with this option may have function, selector, and variable names that are much different than in your original source code. In these cases, the [*Toggle source maps*](#source-maps) option might be available.
+#### Pretty Print ( `Ctrl+Shift+P` ) 
+Fügt Zeilenumbrüche und geschweifte Klammer Ausrichtung pro JavaScript-Konventionen hinzu. Selbst komprimierter Code, der mit dieser Option besser lesbar ist, kann Funktions-, Auswahl-und Variablennamen aufweisen, die sich wesentlich von dem ursprünglichen Quellcode unterscheiden. In diesen Fällen steht möglicherweise die Option [*Quell Karten umschalten*](#source-maps) zur Verfügung.
 
-#### Word wrap (`Alt+W`)
-Adjusts code to fit within the current margins of the debug window (eliminating the need for horizontal scrolling).
+#### Zeilenumbruch ( `Alt+W` )
+Passt Code an die aktuellen Seitenränder des Debug-Fensters an (wodurch kein horizontaler Bildlauf erforderlich ist).
 
-### 3. Code scoping
+### 3. Code-Scoping
 
-You can direct the debugger to ignore certain files with the **Mark as library code** (`Ctrl+L`) button. By default, the [**Debug just my code**](#toolbar) toolbar button is on, meaning that the debugger will skip over any files that you mark as *library code* and they will not appear in the debugger [call stack](#call-stack). Depressing the button (**Mark as my code**, `Ctrl+L`) will remove this flag.
+Sie können den Debugger anweisen, bestimmte Dateien mit der Schaltfläche **als Bibliothekscode markieren** () zu ignorieren `Ctrl+L` . Standardmäßig ist die Schaltfläche " [**nur mein Code Debuggen**](#toolbar) " aktiviert, was bedeutet, dass der Debugger alle Dateien überspringt, die Sie als *Bibliothekscode* markieren, und diese werden im [Aufruf Stapel](#call-stack)des Debuggers nicht angezeigt. Wenn Sie die Schaltfläche (**als mein Code markieren**) drücken, `Ctrl+L` wird dieses Flag entfernt.
 
-For keeping track of libraries across debugging sessions, you can edit these files to maintain a default list or add wildcards for a domain or file type:
+Zum Nachverfolgen von Bibliotheken in Debug-Sitzungen können Sie diese Dateien bearbeiten, um eine Standardliste beizubehalten oder Platzhalter für eine Domäne oder einen Dateityp hinzuzufügen:
 
 ```JavaScript
 %APPDATA%\..\LocalLow\Microsoft\F12\header\MyCode.json and %APPDATA%\..\Local\Microsoft\F12\header\MyCode.json
 ```
 
-#### Source maps
+#### Quell Karten
 
-You will see the **Toggle source maps** button enabled for code written in a language that compiles to JavaScript or CSS and that provides a *source map* (an intermediate file mapping to the original source). This option directs the debugger to present the original source to use for debugging (rather than the compiled file that's *actually* running in the browser).
+Sie sehen die Schaltfläche " **Quell Karten umschalten** " für Code, der in einer Sprache geschrieben ist, die in JavaScript oder CSS kompiliert wird und eine *Quell Karte* (eine Zwischendatei Zuordnung zur ursprünglichen Quelle) bereitstellt. Mit dieser Option wird der Debugger anweisen, die ursprüngliche Quelle zur Verwendung für das Debuggen darzustellen (und nicht die kompilierte Datei, die im Browser *tatsächlich* ausgeführt wird).
 
-The DevTools will check if the compiler that generated the JavaScript file included a comment with the name of the map file. For example, if a compiler compressed *myfile.js* to *myfile.min.js*, it might also generate a map file, *myfile.min.js.map* and include a comment in the compressed file like this:
+Der devtools überprüft, ob der Compiler, der die JavaScript-Datei generiert hat, einen Kommentar mit dem Namen der Zuordnungsdatei enthielt. Wenn beispielsweise ein Compiler *myfile.js* auf *myfile.min.js*komprimiert hat, wird möglicherweise auch eine Zuordnungsdatei, *myfile.min.js. map* , generiert und ein Kommentar in der komprimierten Datei wie folgt eingefügt:
 
 ```JavaScript
 //# sourceMappingURL=myfile.min.js.map
 ```
 
-![Debug file tab context menu](./media/debug_file_contextmenu.png)
+![Kontextmenü ' Datei Debuggen '](./media/debug_file_contextmenu.png)
 
-If the DevTools can't find the map automatically, you can choose a source map for that file. Right-click the file's tab to find the **Choose source map** option. 
+Wenn der devtools die Karte nicht automatisch finden kann, können Sie eine Quell Karte für diese Datei auswählen. Klicken Sie mit der rechten Maustaste auf die Registerkarte Datei, um die Option **Quell Karte auswählen** zu finden. 
 
-## Toolbar
+## Symbolleiste
 
-Use the debugger *Toolbar* to control how you step through code, and what code to step through or ignore. From here you can also do a full text search across your code files for specific strings.
+Verwenden Sie die Debugger- *Symbolleiste* , um zu steuern, wie Sie den Code schrittweise durchlaufen, und welchen Code Sie durchlaufen oder ignorieren möchten. Von hier aus können Sie auch eine Volltextsuche in ihren Codedateien nach bestimmten Zeichenfolgen durchführen.
 
-![Debugger toolbar](./media/debugger_toolbar.png)
+![Debugger-Symbolleiste](./media/debugger_toolbar.png)
 
-### 1. Continue (`F5`) / Break (`Ctrl+Shift+B`)
- **Continue** (`F5`) continues code execution to the next breakpoint. Holding down `F5` will repeatedly move past breaks until you release it. 
+### 1. Continue ( `F5` )/Break ( `Ctrl+Shift+B` )
+ **Continue** ( `F5` ) setzt die Codeausführung bis zum nächsten Haltepunkt fort. Wenn Sie die Taste gedrückt halten, `F5` werden vergangene Umbrüche wiederholt verschoben, bis Sie Sie freigeben. 
 
- **Break** (`Ctrl+Shift+B`) will break into the debugger after running the next statement.
+ **Break** ( `Ctrl+Shift+B` ) bricht in den Debugger nach Ausführung der Next-Anweisung ab.
 
-### 2. Step functions (`F11`, `Ctrl+F10`, `Shift+F11`)
- **Step into** (`F11`) steps into the function being called. 
+### 2. Schritt Funktionen ( `F11` , `Ctrl+F10` , `Shift+F11` )
+ **Schritt in** ( `F11` ) Schritte in der aufgerufenen Funktion. 
 
- **Step over** (`Ctrl+F10`) steps over the function being called. 
+ **Schritt über** ( `Ctrl+F10` ) Schritte über die aufgerufene Funktion. 
 
- **Step out** (`Shift+F11`) steps out of the current function and into the calling function. 
+ **Schritt aus** ( `Shift+F11` ) führt die Schritte aus der aktuellen Funktion und in die aufrufende Funktion aus. 
 
- The debugger will step to the next statement if it is not at a function when these commands are used.
+ Der Debugger führt einen Schritt zur nächsten Anweisung durch, wenn er nicht an einer Funktion teilhat, wenn diese Befehle verwendet werden.
 
-### 3. Break on new worker (`Ctrl+Shift+W`)
- Breaks on the creation of a new [web worker](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers).
+### 3. unterbrechen auf neue Arbeitskraft ( `Ctrl+Shift+W` )
+ Unterbricht die Erstellung eines neuen [Webworkers](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers).
 
-### 4. Exception control
-**Change exception behavior** (`Ctrl+Shift+E`) opens options to change how the debugger reacts to exceptions. By default exceptions are ignored by the debugger and logged to the [**Console**](./console.md). You can choose to *Break on all exceptions*, or just those not being handled by `try...catch` statements in your code (*Break on unhandled exceptions*).
+### 4. Ausnahmeregelung
+**Ändern des Ausnahme Verhaltens** ( `Ctrl+Shift+E` ) öffnet Optionen, um zu ändern, wie der Debugger auf Ausnahmen reagiert. Standardmäßig werden Ausnahmen vom Debugger ignoriert und in der [**Konsole**](./console.md)protokolliert. Sie können auswählen, ob Sie *alle Ausnahmen unterbrechen*oder nur diejenigen, die nicht von `try...catch` Anweisungen im Code behandelt werden (*Unterbrechung bei nicht behandelten Ausnahmen*).
 
-### 5. View search results
-(Currently disabled.) **Show/Hide results** toggles the display of [*Find in files*](#6-find-in-files-ctrlf) search results.
+### 5. Anzeigen von Suchergebnissen
+(Derzeit deaktiviert.) **Ergebnisse einblenden/ausblenden** schaltet die Anzeige der Suchergebnisse [*in Dateien suchen ein*](#6-find-in-files-ctrlf) .
 
-### 6. Find in files (`Ctrl+F`)
- **Find in files** (`Ctrl+F`) runs a text search through all the loaded files within the [*Resource picker*](#resource-picker). If the text is found, it opens the first file matching the search string. Pressing `Enter` or `F3` takes you to the next match.
+### 6. Suchen in Dateien ( `Ctrl+F` )
+ **In Dateien suchen** ( `Ctrl+F` ) wird eine Textsuche durch alle geladenen Dateien in der [*Ressourcenauswahl*](#resource-picker)ausgeführt. Wenn der Text gefunden wird, wird die erste Datei geöffnet, die mit der Suchzeichenfolge übereinstimmt. Drücken `Enter` `F3` Sie oder gelangen Sie zur nächsten Übereinstimmung.
 
-### 7. Debug just my code (`Ctrl+J`)
- **Debug just my code** (`Ctrl+J`) acts as a toggle to include or exclude all the files that have been marked as [library code](#3-code-scoping) as you step through the debugger.
+### 7. Debuggen nur meines Codes ( `Ctrl+J` )
+ **Nur mein Code Debuggen** ( `Ctrl+J` ) fungiert als Umschaltfläche zum einschließen oder Ausschließen aller Dateien, die als [Bibliothekscode](#3-code-scoping) markiert wurden, während Sie den Debugger durchlaufen.
 
-### 8. Debugger connection
-**Disconnect/Connect debugger** is essentially the on/off switch for the debugger.
+### 8. Debugger-Verbindung
+**Disconnect/Connect-Debugger** ist im Grunde der ein/aus-Schalter für den Debugger.
 
-## Watches
+## Uhren
 
-Use the **Watches** pane to browse a catalog of all objects and variables (**Locals**), both in the local and global scope, available to the statement that is the focus of the current break in the debugger.
+Verwenden Sie den Bereich " **Überwachungen** ", um einen Katalog aller Objekte und Variablen (**lokal**) sowohl im lokalen als auch im globalen Bereich zu durchsuchen, die für die Anweisung verfügbar sind, die den Fokus des aktuellen Umbruchs im Debugger bildet.
 
-![Watches pane](./media/debugger_watches.png)
+![Überwachungsbereich](./media/debugger_watches.png)
 
-You can track the value of specific variables as they pass in and out of scope by adding a watch (**Add watch**, `Ctrl+W`) and modify any editable values by double-clicking on it or by selecting **Edit value** from the *Context menu*. Clear your watches using the **Delete** (`Ctrl+D`) / **Delete all** buttons or from the context menu. 
+Sie können den Wert bestimmter Variablen nachverfolgen, während Sie an-und ablaufen, indem Sie eine Uhr hinzufügen ("**Überwachung hinzufügen**" `Ctrl+W` ) und bearbeitbare Werte ändern, indem Sie darauf doppelklicken oder im *Kontextmenü*die Option " **Wert bearbeiten** " auswählen. Deaktivieren Sie Ihre Uhren mithilfe **Delete** der `Ctrl+D` Schaltflächen Löschen ()/ **Alle löschen** oder im Kontextmenü. 
 
 ## Details
 
-The *Details* pane includes the [**Callstack**](#call-stack), [**Breakpoints**](#breakpoints) and [**DOM breakpoints**](#dom-breakpoints) tabs.
+Der *Detail* Bereich umfasst die Registerkarten [**CallStack**](#call-stack), [**Haltepunkte**](#breakpoints) und [**DOM-Haltepunkte**](#dom-breakpoints) .
 
-### Call stack
+### Anrufliste
 
-The **Call stack** tab shows the chain of functions that led to the current point of execution. The current function appears at the top, and the calling functions appear below it in reverse order.
+Die Registerkarte " **Anrufliste** " zeigt die funktionskette an, die zum aktuellen Ausführungspunkt geführt hat. Die aktuelle Funktion wird oben angezeigt, und die Anruffunktionen werden in umgekehrter Reihenfolge darunter angezeigt.
 
-![Call stack pane](./media/debugger_callstack.png)
+![Bereich "Anrufliste"](./media/debugger_callstack.png)
 
-The **Show/Hide library frames** button (`Ctrl+Shift+J`) toggles the output of [library code](#3-code-scoping) from the call stack. Use the **Library code** option (`Ctrl+L`) from the right-click *Context menu* to mark (or unmark) the source of the selected frame as library code. 
+Mit der Schaltfläche " **Bibliotheks Frames einblenden/ausblenden** " ( `Ctrl+Shift+J` ) wird die Ausgabe des [Bibliothekscodes](#3-code-scoping) aus der Aufrufliste umgeschaltet. Verwenden Sie die Option " **Bibliothekscode** " ( `Ctrl+L` ) im *Kontextmenü* , um die Quelle des ausgewählten Frames als Bibliothekscode zu kennzeichnen (oder die Markierung aufzuheben). 
 
-The **Show/Hide async frames** button toggles the display of roots for asynchronous function calls.
+Die Schaltfläche " **asynchrone Frames einblenden/ausblenden** " schaltet die Anzeige von Stämmen für asynchrone Funktionsaufrufe um.
 
 ### Breakpoints
 
-From the **Breakpoints** tab, you can manage you breakpoints and event tracepoints, including setting conditions, disabling and deleting them.
+Auf der Registerkarte **Haltepunkte** können Sie Haltepunkte und Ereignisablauf Verfolgungs Punkte verwalten, einschließlich Festlegen von Bedingungen, deaktivieren und löschen.
 
-![Breakpoints tab](./media/debugger_breakpoints.png)
+![Registerkarte "Haltepunkte"](./media/debugger_breakpoints.png)
 
-Here's a summary of the different types of breakpoints you can use for debugging.
+Nachfolgend finden Sie eine Zusammenfassung der verschiedenen Arten von Haltepunkten, die Sie für das Debuggen verwenden können.
 
-Breakpoint type | Description | How to set it
+Breakpoint-Typ | Beschreibung | So wird es gemacht
 :------------ | :------------ | :--------
-**Breakpoint** | Breaks into the debugger just before the specified line of code is executed. Regular breakpoints are easiest to set if you have one statement per line. | From the [Debug window](#debug-window), click in the left margin next to any line number in the code. A red dot appears and the breakpoint is set. You can jump into the source of any breakpoint by clicking on its blue text.
-**Conditional breakpoint** | Breaks if the specified condition evaluates to *true*. This is essentially an `if(condition)`  for breaking into the debugger.  | From the [Breakpoints](#breakpoints) tab, hover over an existing breakpoint and click the "pencil" button (*Add a condition to this breakpoint*), right-click an existing breakpoint and select **Condition...** from the context menu. Specify the "if" condition to be evaluated at the breakpoint location. 
-**XMLHttpRequest breakpoint** (w/optional condition) | Breaks whenever a XMLHttpRequest (XHR) request has been fulfilled. You can inspect the XHR `response` object from the [**Watches**](#watches) pane. | From the [Breakpoints](#breakpoints) tab, click the *XMLHttpRequest breakpoint* button (circle with up/down arrows). You can turn it into a *Conditional breakpoint* as described above.
-**Event tracepoint** | Calls [`console.log()`](./console/console-api.md#logging-custom-messages) with a specified string in response to a specific event. Use this for temporary console logging statements that you don't want to save directly in your event handler code. | From the [Breakpoints](#breakpoints) tab, click the *Event tracepoint* button (diamond with lightning bolt). Select an **Event** type for the trigger and a **Trace** statement for logging.
-**Event breakpoint** (w/optional condition) | Breaks whenever a specified event is fired. | From the [Breakpoints](#breakpoints) tab, click the *Event breakpoint* button (circle with lightning bolt). Select an **Event** type for the trigger and optionally, specify a **Condition** statement. 
-**DOM breakpoint** | Breaks whenever a specified element on the page is mutated, such as when its subtree is modified, its attributes change, or when it is detached from the DOM. | From the [Elements](./elements/dom-breakpoints.md) tab, right-click on a source element and select from the *DOM Breakpoints* options. Use the [**DOM breakpoints**](#dom-breakpoints) tab in either the *Debugger* or *Elements* panels to manage your breakpoints. 
+**Haltepunkt** | Unterbricht den Debugger, unmittelbar bevor die angegebene Codezeile ausgeführt wird. Reguläre Haltepunkte sind am einfachsten festzulegen, wenn Sie eine Anweisung pro Zeile besitzen. | Klicken Sie im [Fenster Debuggen](#debug-window)in den linken Rand neben einer beliebigen Zeile im Code. Ein roter Punkt wird angezeigt, und der Haltepunkt wird gesetzt. Sie können in die Quelle eines beliebigen Haltepunkts springen, indem Sie auf den blauen Text klicken.
+**Bedingter Haltepunkt** | Unterbricht, wenn die angegebene Bedingung als *wahr*ausgewertet wird. Dies ist im Wesentlichen ein `if(condition)`  für das Eindringen in den Debugger.  | Zeigen Sie auf der Registerkarte [Haltepunkte](#breakpoints) auf einen vorhandenen Haltepunkt, und klicken Sie auf die Schaltfläche "Bleistift" (*fügen Sie eine Bedingung zu diesem Haltepunkt hinzu*), klicken Sie mit der rechten Maustaste auf einen vorhandenen Haltepunkt, und wählen Sie im Kontextmenü **Bedingung** aus. Geben Sie die "if"-Bedingung an, die an der Haltepunktposition ausgewertet werden soll. 
+**XMLHttpRequest-Haltepunkt** (w/optionale Bedingung) | Breaks, wenn eine XMLHttpRequest-Anforderung (XMLHttpRequest) erfüllt wurde. Sie können das XMLHttpRequest `response` -Objekt im Bereich " [**Überwachungen**](#watches) " überprüfen. | Klicken Sie auf der Registerkarte [Haltepunkte](#breakpoints) auf die Schaltfläche " *XMLHttpRequest-Haltepunkt* " (Kreis mit aufwärts-/Abwärtspfeilen). Sie können es wie oben beschrieben in einen *bedingten Haltepunkt* umwandeln.
+**Ereignis-Ablaufverfolgungspunkt** | Ruft [`console.log()`](./console/console-api.md#logging-custom-messages) mit einer angegebenen Zeichenfolge als Antwort auf ein bestimmtes Ereignis auf. Verwenden Sie diese Funktion für temporäre Konsolen Protokollierungs Anweisungen, die Sie nicht direkt im Ereignis Handlercode speichern möchten. | Klicken Sie auf der Registerkarte [Haltepunkte](#breakpoints) auf die Schaltfläche *Ereignisablauf Verfolgungs* Punkt (Diamant mit Blitz). Wählen Sie einen **Ereignistyp** für den Trigger und eine **Trace** -Anweisung für die Protokollierung aus.
+**Ereignis Haltepunkt** (w/optionale Bedingung) | Unterbricht jedes Mal, wenn ein bestimmtes Ereignis ausgelöst wird. | Klicken Sie auf der Registerkarte [Haltepunkte](#breakpoints) auf die Schaltfläche *Ereignis Haltepunkt* (Kreis mit Blitz). Wählen Sie einen **Ereignistyp** für den Trigger aus, und geben Sie optional eine **Condition** -Anweisung an. 
+**Dom-Haltepunkt** | Unterbricht jedes Mal, wenn ein angegebenes Element auf der Seite mutiert wird, beispielsweise wenn die Unterstruktur geändert wird, die Attribute geändert werden oder wenn Sie vom Dom getrennt werden. | Klicken Sie auf der Registerkarte [Elemente](./elements/dom-breakpoints.md) mit der rechten Maustaste auf ein Quellelement, und wählen Sie dann aus den Optionen für *DOM-Haltepunkte* aus. Verwenden Sie die Registerkarte [**DOM-Haltepunkte**](#dom-breakpoints) im *Debugger* oder in den *Elementen* Panels, um Ihre Haltepunkte zu verwalten. 
 
-Conditional breakpoints and tracepoints have access to all the local and global variables currently in scope when they break into the debugger.
+Bedingte Haltepunkte und Ablaufverfolgungspunkte haben Zugriff auf alle lokalen und globalen Variablen, die sich derzeit im Bereich befinden, wenn Sie in den Debugger einbrechen.
 
-### DOM breakpoints
+### DOM-Haltepunkte
 
-Manage your DOM mutation breakpoints from the **DOM breakpoints** tab, including disabling, deleting and rebinding them.  [DOM breakpoints can be set](./elements/dom-breakpoints.md) from the *HTML tree view* in the **Elements** panel.
+Verwalten Sie Ihre Dom-mutations Haltepunkte auf der Registerkarte **DOM-Haltepunkte** , einschließlich Deaktivierung, löschen und erneute Bindung.  [DOM-Haltepunkte können](./elements/dom-breakpoints.md) über die *HTML-Strukturansicht* im **Element** Panel gesetzt werden.
 
-![DOM breakpoints tab](./media/debugger_dom_breakpoints.png)
+![Dom-Haltepunkte (Registerkarte)](./media/debugger_dom_breakpoints.png)
 
-The *DOM breakpoints* tab in the **Debugger** provides equivalent functionality to the *DOM breakpoints** tab on the **Elements** panel.
+Die Registerkarte *DOM-Haltepunkte* im **Debugger** bietet äquivalente Funktionen für die Registerkarte *DOM-Haltepunkte** im **Element** Panel.
 
-Here's more on the different types of [DOM breakpoints](./elements/dom-breakpoints.md).
+Hier finden Sie weitere Informationen zu den verschiedenen Typen von [DOM-Haltepunkten](./elements/dom-breakpoints.md).
 
-## Shortcuts
+## Verknüpfungen
 
-### Toolbar shortcuts
+### Symbolleisten-Tastenkombinationen
 
-Action | Shortcut
+Aktion | Tastenkombination
 :------------ | :-------------
-Find | `Ctrl` + `F`
-Continue (from breakpoint) | `F5` or `F8`
-Fast continue | Hold `F5` or `F8`
-Continue and refresh | `Ctrl` + `Shift` + `F5`
-Break | `Ctrl` + `Shift` + `B`
-Step into | `F11`
-Step over | `F10`
-Step out | `Shift` + `F11`
-Break on new worker | `Ctrl` + `Shift` + `W`
-Change exception behavior (opens menu) | `Ctrl` + `Shift` + `E`
-Debug just my code | `Ctrl` + `J`
+Suchen | `Ctrl` + `F`
+Continue (aus Haltepunkt) | `F5` oder `F8`
+Schnell weiter | Halten `F5` oder `F8`
+Fortsetzen und aktualisieren | `Ctrl` + `Shift` + `F5`
+Brechen | `Ctrl` + `Shift` + `B`
+Schritt in | `F11`
+Schritt über | `F10`
+Aussteigen | `Shift` + `F11`
+Unterbrechen auf neue Arbeitskraft | `Ctrl` + `Shift` + `W`
+Ändern des Ausnahme Verhaltens (Menü "Öffnen") | `Ctrl` + `Shift` + `E`
+Debuggen nur meines Codes | `Ctrl` + `J`
 
-### Resource picker shortcuts
+### Tastenkombinationen für die Ressourcenauswahl
 
-Action | Shortcut
+Aktion | Tastenkombination
 :------------ | :-------------
-Mark as my code / library code | `Ctrl` + `L`
-Open file | `Ctrl` + `O`, `Ctrl` + `P`
-Search all files | `Ctrl` + `Shift` + `F`
+Als "mein Code/Bibliothekscode" markieren | `Ctrl` + `L`
+Datei öffnen | `Ctrl` + `O`, `Ctrl` + `P`
+Durchsuchen aller Dateien | `Ctrl` + `Shift` + `F`
 
-### Debug window shortcuts
+### Debuggen von Fenster Tastenkombinationen
 
-Action | Shortcut
+Aktion | Tastenkombination
 :------------ | :-------------
-Remove breakpoint | `F9`
-Disable breakpoint | `Ctrl` + `F9`
-Conditional breakpoint... | `Alt` + `F9`
-Copy | `Ctrl` + `C`
-Save | `Ctrl` + `S`
-Go to line... | `Ctrl` + `G`
-Show next statement | `Alt` + `Num` + `*`
-Run to cursor | `Ctrl` + `F10`
-Set next statement | `Ctrl` + `Shift` + `F10`
-Show in file picker | `Ctrl` + `Alt` + `P`
-Go to definition in file | `Ctrl`+`D`
-Find references in file | `Ctrl` + `Shift` + `D`
-Pretty print | `Ctrl` + `Shift` + `P`
-Word wrap | `Alt` + `W`
-Mark as my code/library code | `Ctrl` + `L`
-Disable/Enable tabs in the editor. **Note:** if you're using the keyboard to navigate in the Debugger, you won't be able to tab out of the editor until you disable tabbing | `Ctrl` + `M`
+Haltepunkt entfernen | `F9`
+Haltepunkt deaktivieren | `Ctrl` + `F9`
+Bedingter Haltepunkt... | `Alt` + `F9`
+Kopieren | `Ctrl` + `C`
+Speichern | `Ctrl` + `S`
+Wechseln Sie zu Zeile... | `Ctrl` + `G`
+Nächste Anweisung anzeigen | `Alt` + `Num` + `*`
+Ausführen bis Cursor | `Ctrl` + `F10`
+Nächste Anweisung setzen | `Ctrl` + `Shift` + `F10`
+In Dateiauswahl anzeigen | `Ctrl` + `Alt` + `P`
+Zu Definition in Datei wechseln | `Ctrl`+`D`
+Suchen von Bezügen in einer Datei | `Ctrl` + `Shift` + `D`
+Hübsch gedruckt | `Ctrl` + `Shift` + `P`
+Zeilenumbruch | `Alt` + `W`
+Als "mein Code/Bibliothekscode" markieren | `Ctrl` + `L`
+Deaktivieren/Aktivieren von Registerkarten im Editor **Hinweis:** Wenn Sie die Tastatur verwenden, um im Debugger zu navigieren, können Sie die Tab-Taste erst dann verlassen, wenn Sie die Tab-Taste deaktiviert haben. | `Ctrl` + `M`
 
-### Shortcuts for Watches pane
+### Tastenkombinationen für den Bereich "Uhren"
 
-Action | Shortcut
+Aktion | Tastenkombination
 :------------ | :-------------
-Add watch | `Ctrl` + `W`
-Delete watch | `Ctrl` + `D`
+Uhr hinzufügen | `Ctrl` + `W`
+Uhr löschen | `Ctrl` + `D`
 
-### Shortcuts for Details pane
+### Tastenkombinationen für den Detailbereich
 
-| Action                             | Shortcut                 |
+| Aktion                             | Tastenkombination                 |
 |:-----------------------------------|:-------------------------|
-| Show/Hide frames from library code | `Ctrl` + `Shift` + `J`   |
-| Enable all breakpoints             | `Ctrl` + `Shift` + `F11` |
+| Anzeigen/Ausblenden von Frames aus dem Bibliothekscode | `Ctrl` + `Shift` + `J`   |
+| Aktivieren aller Haltepunkte             | `Ctrl` + `Shift` + `F11` |

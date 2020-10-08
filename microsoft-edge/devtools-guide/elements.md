@@ -1,12 +1,12 @@
 ---
-description: Use the Elements panel to inspect the HTML, CSS, DOM, and accessibility of your page.
-title: DevTools - Elements
+description: Verwenden Sie das Panel Elemente, um die HTML-, CSS-, Dom-und Barrierefreiheit Ihrer Seite zu überprüfen.
+title: DevTools-Elemente
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools, elements, html, css, dom breakpoints, events, accessibility
+keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools, Elemente, HTML, CSS, Dom-Haltepunkte, Ereignisse, Barrierefreiheit
 ms.custom: seodec18
 ms.openlocfilehash: 8948ddb3291bd122521e0b0800c0113a576d49e4
 ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
@@ -15,70 +15,70 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "10568427"
 ---
-# Elements
+# Elemente
 
-The **Elements** panel helps you to:
+Das Panel " **Elemente** " hilft Ihnen dabei, Folgendes zu tun:
 
-* [Identify and edit elements in the HTML tree](#html-tree-view) of the current page
-* [Inspect and modify CSS](./elements/styles.md) on the page, including pseudo-states and pseudo-elements
-* [Understand the CSS layout and style cascade](./elements/computed.md) happening on the page
-* [Track down rogue event handlers](./elements/events.md) so you can debug them
-* [Set debugging breakpoints for unexpected visual changes](./elements/dom-breakpoints.md) to jump into the code causing them
-* [Get detailed information about the fonts used on the page](./elements/fonts.md) and where they're loading from
-* [View your page from a screen reader's point of view](./elements/accessibility.md) to verify and test accessibility 
-* [Review a running diff of the CSS changes](./elements/changes.md) you make as you debug the UI of your page
+* [Identifizieren und Bearbeiten von Elementen in der HTML-Struktur](#html-tree-view) der aktuellen Seite
+* Über [prüfen und Ändern von CSS](./elements/styles.md) auf der Seite, einschließlich Pseudo Zuständen und Pseudo Elementen
+* Grund [Legendes zu den CSS-Layouts und-Stilen](./elements/computed.md) auf der Seite
+* [Aufspüren von Rogue-Ereignishandlern](./elements/events.md) , damit Sie diese Debuggen können
+* [Festlegen von Debug-Haltepunkten für unerwartete visuelle Änderungen](./elements/dom-breakpoints.md) , um in den Code zu springen, der Sie verursacht
+* [Abrufen detaillierter Informationen zu den Schriftarten, die auf der Seite verwendet](./elements/fonts.md) werden, und von der Stelle, von der Sie geladen werden
+* [Anzeigen der Seite aus der Sicht einer Bildschirmsprachausgabe](./elements/accessibility.md) , um die Barrierefreiheit zu überprüfen und zu testen 
+* [Überprüfen einer ausgeführten Unterschiede der CSS-Änderungen](./elements/changes.md) , die Sie beim Debuggen der Benutzeroberfläche Ihrer Seite vornehmen
 
-## HTML tree view
+## HTML-Strukturansicht
 
-![The Microsoft Edge DevTools Elements panel](./media/elements.png)
+![Das Microsoft Edge devtools-Element Panel](./media/elements.png)
 
-1. Use the **Select element** (`Ctrl+B`) tool to locate an element in the **HTML tree view** by clicking on it in the page.
+1. Verwenden Sie das Tool **SELECT Element** ( `Ctrl+B` ), um ein Element in der **HTML-Strukturansicht** zu finden, indem Sie auf der Seite darauf klicken.
 
-2. Use the **Element highlighting** (`Ctrl+Shift+L`) tool to locate an element on the page by hovering over it in the **HTML tree view**.
+2. Verwenden Sie das Tool zum **hervorheben von Elementen** ( `Ctrl+Shift+L` ), um ein Element auf der Seite zu finden, indem Sie in der **HTML-Strukturansicht**darauf zeigen.
 
-3. Open the **Color picker** (`Ctrl+K`) tool to see a list of the colors in use on the current page. Clicking on a color on the list will provide further details (Hue, Saturation, Lightness, Alpha). The *Color picker* also opens when you click on the colored square next to a color value in the **Styles** pane, allowing you to edit the color of a page element and immediately see the results.
+3. Öffnen Sie das Tool **Farbauswahl** ( `Ctrl+K` ), um eine Liste der verwendeten Farben auf der aktuellen Seite anzuzeigen. Wenn Sie auf eine Farbe in der Liste klicken, werden weitere Details angezeigt (Farbton, Sättigung, Helligkeit, Alpha). Die *Farbauswahl* wird auch geöffnet, wenn Sie im Bereich **Formatvorlagen** auf das farbige Quadrat neben einem Farbwert klicken, sodass Sie die Farbe eines Seitenelements bearbeiten und sofort die Ergebnisse sehen können.
 
-4. The **Accessibility tree** (`Ctrl+Shift+A`) button will open the [Accessibility tree](./elements/accessibility.md) pane showing the structure of your page as it would appear to an assistive technology, such as the [Windows Narrator](https://support.microsoft.com/help/22798/windows-10-narrator-get-started) screenreader.
+4. Die Schaltfläche **Barrierefreiheits Struktur** ( `Ctrl+Shift+A` ) öffnet den Bereich [Barrierefreiheit](./elements/accessibility.md) , in dem die Struktur der Seite angezeigt wird, wie dies bei einer Hilfstechnologie wie der [Windows-Sprachausgabe](https://support.microsoft.com/help/22798/windows-10-narrator-get-started) Screenreader der Fall wäre.
 
-5. You can also **Find** (`Ctrl+F`) an element in the HTML tree view by searching for its tag name, attributes, or text content.
+5. Sie können auch **Find** `Ctrl+F` ein Element in der HTML-Strukturansicht suchen, indem Sie nach seinem Tagnamen, Attributen oder Textinhalt suchen.
 
-### Editing elements
+### Bearbeiten von Elementen
 
-You can edit an element by right-clicking on it within the HTML tree view and selecting **Edit as HTML** from the context menu. The context menu also provides options to delete, cut, copy, paste, set CSS pseudo-classes (*:active*, *:focus*, *:hover*, *:visited*) and add attributes. Another way to edit an attribute and/or its value is to double-click it from the HTML tree view.
+Sie können ein Element bearbeiten, indem Sie in der HTML-Strukturansicht mit der rechten Maustaste darauf klicken und im Kontextmenü **als HTML bearbeiten** auswählen. Das Kontextmenü bietet auch Optionen zum Löschen, Ausschneiden, kopieren, einfügen, Einrichten von CSS-Pseudoklassen (*: aktiv*, *: Fokus*, *: hover*, *: besucht*) und Hinzufügen von Attributen. Eine weitere Möglichkeit zum Bearbeiten eines Attributs und/oder des zugehörigen Werts besteht darin, in der HTML-Strukturansicht auf das Attribut zu doppelklicken.
 
-![HTML tree view context menu](./media/elements_html_tree_context.png)
+![Kontextmenü der HTML-Strukturansicht](./media/elements_html_tree_context.png)
 
 > [!NOTE]
-> Editing the HTML tree does not affect the underlying source markup. Refreshing the page will revert your changes and render only the layout determined by the page source. You can **Copy** your modified HTML to the clipboard by right-clicking the desired element (or the global `html` element, if you want the entire page) to open up the context menu. (**Cut** and **Paste** options are also available).
+> Das Bearbeiten der HTML-Struktur hat keinen Einfluss auf das zugrunde liegende Quellmarkup. Beim Aktualisieren der Seite werden Ihre Änderungen zurückgesetzt und nur das Layout gerendert, das von der Seitenquelle bestimmt wird. Sie können ihren geänderten HTML-Code in die Zwischenablage **Kopieren** , indem Sie mit der rechten Maustaste auf das gewünschte Element klicken (oder das globale `html` Element, wenn die gesamte Seite angezeigt werden soll), um das Kontextmenü zu öffnen. (Optionen für**Ausschneiden** und **Einfügen** sind ebenfalls verfügbar).
 
-From the [Styles](./elements/styles.md) pane you can also add/delete/edit CSS pseudo-states and pseudo-elements.
+Im Bereich " [Formatvorlagen](./elements/styles.md) " können Sie auch CSS-Pseudo Zustände und Pseudoelemente hinzufügen/löschen oder bearbeiten.
 
-## Tool Panes
+## Tool Bereiche
 
-Once you have selected a page element of interest, you can use the tool panes to further inspect its different styles and accessibility properties, view its event listeners, and set DOM mutation breakpoints.
+Nachdem Sie ein interessantes Seitenelement ausgewählt haben, können Sie die Toolfenster verwenden, um die unterschiedlichen Formatvorlagen und Barrierefreiheitseigenschaften weiter zu überprüfen, die Ereignislistener anzuzeigen und die Haltepunkte für die DOM-Mutation festzulegen.
 
-![Tools panes on the Elements panel](./media/elements_toolpanes.png)
+![Fenster ' Tools ' im Bereich ' Elemente '](./media/elements_toolpanes.png)
 
-1. [**Styles**](./elements/styles.md): Currently applied styles organized by stylesheet
+1. [**Formatvorlagen**](./elements/styles.md): aktuell angewendete Formatvorlagen, die nach Stylesheets angeordnet sind
 
-2. [**Computed**](./elements/computed.md): Currently applied styles organized by CSS attributes
+2. [**Berechnet**](./elements/computed.md): aktuell angewendete Formatvorlagen, die nach CSS-Attributen strukturiert sind
 
-3. [**Events**](./elements/events.md): Event listeners registered on the current element and ancestor elements
+3. [**Ereignisse**](./elements/events.md): Ereignis-Listener, die für das aktuelle Element und übergeordnete Elemente registriert sind
 
-4. [**DOM breakpoints**](./elements/dom-breakpoints.md): DOM Mutation Breakpoints 
+4. [**DOM-Haltepunkte**](./elements/dom-breakpoints.md): Dom-mutations Haltepunkte 
 
-5. [**Fonts**](./elements/fonts.md): Currently applied fonts for a selected element
+5. [**Schriftarten**](./elements/fonts.md): aktuell angewendete Schriftarten für ein ausgewähltes Element
 
-6. [**Accessibility**](./elements/accessibility.md):  Accessibility properties
+6. [**Barrierefreiheit**](./elements/accessibility.md): Barrierefreiheitseigenschaften
 
-7. [**Changes**](./elements/changes.md): CSS changes made during diagnostic session  
+7. [**Änderungen**](./elements/changes.md): während der Diagnosesitzung vorgenommene CSS-Änderungen  
 
-## Shortcuts
+## Verknüpfungen
 
-| Action               | Shortcut               |
+| Aktion               | Tastenkombination               |
 |:---------------------|:-----------------------|
-| Elements panel       | `Ctrl` + `1`           |
-| Element highlighting | `Ctrl` + `Shift` + `L` |
-| Select element       | `Ctrl` + `B`           |
-| Color picker         | `Ctrl` + `K`           |
-| Accessibility tree   | `Ctrl` + `Shift` + `A` |
+| Element Panel       | `Ctrl` + `1`           |
+| Element Hervorhebung | `Ctrl` + `Shift` + `L` |
+| Element auswählen       | `Ctrl` + `B`           |
+| Farbwähler         | `Ctrl` + `K`           |
+| Barrierefreiheits Struktur   | `Ctrl` + `Shift` + `A` |

@@ -1,12 +1,12 @@
 ---
-description: Microsoft Edge (Chromium) and Visual Studio
+description: Microsoft Edge (Chrom) und Visual Studio
 title: Visual Studio
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 08/20/2019
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools, vs, visual studio, debugger
+keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools, vs, Visual Studio, Debugger
 ms.openlocfilehash: 3fc2e2c3dc21689d8c378ccbe33e4dff813ea12f
 ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
@@ -16,94 +16,94 @@ ms.locfileid: "10986192"
 ---
 # Visual Studio
 
-Microsoft [Visual Studio](https://visualstudio.microsoft.com/vs/) is an integrated development environment (IDE) that you can use to edit, debug, build, and publish your web applications. It is a feature-rich program that can be used for many aspects of your web development. Over and above the standard editor and debugger that most IDEs provide, Visual Studio includes compilers, code completion tools, graphical designers, and many more features to ease your development process. Head to [this page](https://visualstudio.microsoft.com/downloads/) to download Visual Studio if you aren't using it yet.
+Microsoft [Visual Studio](https://visualstudio.microsoft.com/vs/) ist eine integrierte Entwicklungsumgebung (IDE), die Sie verwenden können, um Ihre Webanwendungen zu bearbeiten, zu debuggen, zu erstellen und zu veröffentlichen. Es handelt sich um ein funktionsreiches Programm, das für viele Aspekte Ihrer Web-Entwicklung verwendet werden kann. Neben dem Standard-Editor und-Debugger, den die meisten IDES bereitstellen, enthält Visual Studio Compiler, Tools für die Codevervollständigung, grafische Designer und viele weitere Features, um den Entwicklungsprozess zu vereinfachen. Wechseln Sie zu [dieser Seite](https://visualstudio.microsoft.com/downloads/) , um Visual Studio herunterzuladen, wenn Sie es noch nicht verwenden.
 
-Currently, Visual Studio 2019 supports debugging JavaScript in Microsoft Edge for your ASP\.NET Framework and ASP\.NET Core applications. Follow the steps below to debug Microsoft Edge from Visual Studio.
+Derzeit unterstützt Visual Studio 2019 das Debuggen von JavaScript in Microsoft Edge für Ihre ASP\.NET-Framework-und ASP\.net-Core-Anwendungen. Führen Sie die folgenden Schritte aus, um Microsoft Edge in Visual Studio zu debuggen.
 
-## Launch Microsoft Edge
-Visual Studio builds your ASP\.NET and ASP\.NET Core application, starts your web server, launches Microsoft Edge, and connects the Visual Studio debugger all at the click of a single button. This enables you to debug JavaScript running in Microsoft Edge directly from your IDE!
+## Starten von Microsoft Edge
+Visual Studio erstellt Ihre ASP\.net-und ASP\.net-Kernanwendung, startet Ihren Webserver, startet Microsoft Edge und verbindet den Visual Studio-Debugger mit nur einem Mausklick. Auf diese Weise können Sie JavaScript Debuggen, das in Microsoft Edge direkt aus Ihrer IDE ausgeführt wird!
 
-### Create a new ASP.NET Core web application
+### Erstellen einer neuen ASP.net Core-Webanwendung
 
-Open Visual Studio 2019 and select **Create a new project**. On the next screen, select **ASP\.NET Core Web Application** and click **Next**.
+Öffnen Sie Visual Studio 2019, und wählen Sie **Neues Projekt erstellen**aus. Wählen Sie auf dem nächsten Bildschirm **ASP\.net Core Web Application** aus, und klicken Sie auf **weiter**.
 
-> ##### Figure 1  
-> Create a new ASP.NET Core Web Application ![Create a new ASP.NET Core Web Application](./media/create-new-project.png)  
+> ##### Abbildung1  
+> Erstellen einer neuen ASP.net Core-Webanwendung ![ Erstellen einer neuen ASP.net-Core-Webanwendung](./media/create-new-project.png)  
 
-Provide a **Project name** for your new project and click **Create**. For the purposes of this example, select **React.js** as the template which shows you how to integrate React.js with an ASP.NET Core application and click **Create**.
+Geben Sie einen **Projektnamen** für das neue Projekt ein, und klicken Sie auf **Erstellen**. Wählen Sie in diesem Beispiel **React.js** als Vorlage aus, in der Sie erfahren, wie Sie React.js in eine ASP.net Core-Anwendung integrieren, und klicken Sie auf **Erstellen**.
 
-### Launch Microsoft Edge from Visual Studio
+### Starten von Microsoft Edge in Visual Studio
 
-Once your project has been created, open **ClientApp/src/components/Counter.js**. Now, tell Visual Studio to debug JavaScript by selecting the dropdown next to the green **Play** button and **IIS Express**. 
+Nachdem Sie Ihr Projekt erstellt haben, öffnen Sie **ClientApp/src/Components/Counter.js**. Visual Studio soll nun JavaScript Debuggen, indem Sie die Dropdownliste neben der grünen Schaltfläche " **Wiedergabe** " und " **IIS Express**" auswählen. 
 
-> ##### Figure 2  
-> The dropdown next to the green **Play** button and **IIS Express**
-> ![The dropdown next to the green Play button and IIS Express](./media/vs-dropdown.png)  
+> ##### Abbildung2  
+> Die Dropdown-Liste neben der grünen Schaltfläche " **Wiedergabe** " und " **IIS" drücken** 
+> ![ die Dropdown-Liste neben der grünen Schaltfläche "Wiedergabe" und IIS Express](./media/vs-dropdown.png)  
 
-Select **Script Debugging** and click **Enabled**.
+Wählen Sie **Skript Debugging** aus, und klicken Sie auf **aktiviert**.
 
-> ##### Figure 3  
-> Enable script debugging in Visual Studio ![Enable script debugging in Visual Studio](./media/enable-script-debugging.png)  
+> ##### Abbildung 3  
+> Aktivieren des Skriptdebuggings in Visual Studio ![ Aktivieren des Skriptdebuggings in Visual Studio](./media/enable-script-debugging.png)  
 
-In the same dropdown, select **Web Browser** and click the preview channel of Microsoft Edge that you want Visual Studio to launch: Microsoft Edge Canary, Dev, or Beta. If you haven't already, head to [this page](https://www.microsoftedgeinsider.com/download) to install the Microsoft Edge preview channels.
+Wählen Sie in derselben Dropdownliste **Webbrowser** aus, und klicken Sie auf den Vorschau Kanal von Microsoft Edge, den Visual Studio starten soll: Microsoft Edge Canary, dev oder Beta. Wenn Sie dies noch nicht getan haben, wechseln Sie zu [dieser Seite](https://www.microsoftedgeinsider.com/download) , um die Microsoft Edge Preview-Kanäle zu installieren.
 
-> ##### Figure 4  
-> Select the preview channel of Microsoft Edge that you want Visual Studio to launch ![Select the preview channel of Microsoft Edge that you want Visual Studio to launch](./media/set-web-browser.png)  
+> ##### Abbildung4  
+> Wählen Sie den Vorschau Kanal von Microsoft Edge aus, den Visual Studio starten soll, und ![ Wählen Sie den Vorschau Kanal von Microsoft Edge aus, den Visual Studio starten soll.](./media/set-web-browser.png)  
 
 > [!NOTE]
-> If you select Microsoft Edge (EdgeHTML), Visual Studio will launch that instead of Microsoft Edge (Chromium). [Install the preview channels of Microsoft Edge](https://www.microsoftedgeinsider.com/download) and select them or ensure that the version of Microsoft Edge installed on your machine is Microsoft Edge (Chromium) and not Microsoft Edge (EdgeHTML).
+> Wenn Sie Microsoft Edge (EdgeHTML) auswählen, startet Visual Studio diesen anstelle von Microsoft Edge (Chrom). [Installieren Sie die Vorschau Kanäle von Microsoft Edge](https://www.microsoftedgeinsider.com/download) , und wählen Sie Sie aus, oder stellen Sie sicher, dass die Version von Microsoft Edge, die auf Ihrem Computer installiert ist, Microsoft Edge (Chrom) und nicht Microsoft Edge (EdgeHTML) ist.
 
-Now that Visual Studio is correctly configured, click the green **Play** button. Visual Studio will build your application, start the web server, launch Microsoft Edge, and navigate to `https://localhost:44362/` or whatever port is specified in **launchSettings.json**.
+Nachdem Visual Studio nun ordnungsgemäß konfiguriert wurde, klicken Sie auf die grüne Schaltfläche **Wiedergabe** . In Visual Studio wird die Anwendung erstellt, der Webserver gestartet, Microsoft Edge gestartet, und Sie können zu dem `https://localhost:44362/` in **launchSettings.json**angegebenen Port navigieren.
 
-> ##### Figure 5  
-> Microsoft Edge launched from Visual Studio ![Microsoft Edge launched from Visual Studio](./media/edge-launch.png)  
+> ##### Abbildung5  
+> Microsoft Edge, gestartet von Visual Studio ![ Microsoft Edge, gestartet von Visual Studio](./media/edge-launch.png)  
 
-### Debug JavaScript running in Microsoft Edge
+### Debuggen von JavaScript, das in Microsoft Edge ausgeführt wird
 
-Switch back to Visual Studio. In **Counter.js**, set a breakpoint on Line 13 by clicking in the gutter next to that line.
+Wechseln Sie zurück zu Visual Studio. Setzen Sie in **Counter.js**einen Haltepunkt in Zeile 13, indem Sie in den Bundsteg neben dieser Zeile klicken.
 
-> ##### Figure 6
-> Setting a breakpoint in Visual Studio by clicking on the gutter next to Line 13 in **Counter.js**
-> ![Setting a breakpoint in Visual Studio by clicking on the gutter next to Line 13 in Counter.js](./media/set-breakpoint.png)  
+> ##### Abbildung6
+> Sie können einen Haltepunkt in Visual Studio festlegen, indem Sie auf den Bundsteg neben Zeile 13 Klicken **Counter.js**in 
+> ![ Visual Studio einen Haltepunkt festlegen, indem Sie auf den Bundsteg neben Zeile 13 in Counter.jsklicken.](./media/set-breakpoint.png)  
 
-Now switch back to the instance of Microsoft Edge that Visual Studio launched. Click on **Counter** in the NavMenu on the left of the page. Now click **Increment**.
+Wechseln Sie nun zurück zu der Instanz von Microsoft Edge, die von Visual Studio gestartet wurde. Klicken Sie im NavMenu Links auf der Seite auf **Zähler** . Klicken Sie nun auf **Inkrement**.
 
-> ##### Figure 7
-> The Counter page in our ASP.NET Core web application ![The Counter page in our ASP.NET Core web application](./media/edge-counter.png)  
+> ##### Abbildung7
+> Die Counter-Seite in unserer ASP.net Core-Webanwendung ![ die Counter-Seite in unserer ASP.net-Core-Webanwendung](./media/edge-counter.png)  
 
-The JavaScript debugger in Visual Studio is going to hit the breakpoint we set in **Counter.js**. Visual Studio has now paused execution of the JavaScript running in Microsoft Edge and you can step through the script line-by-line.
+Der JavaScript-Debugger in Visual Studio wird den in **Counter.js**eingestellten Haltepunkt treffen. Visual Studio hat nun die Ausführung des in Microsoft Edge ausgeführten Javascripts angehalten, und Sie können das Skript Zeile für Zeile durchlaufen.
 
-> ##### Figure 8
-> Visual Studio pausing JavaScript running in Microsoft Edge ![Visual Studio pausing JavaScript running in Microsoft Edge](./media/hit-breakpoint.png)  
+> ##### Abbildung8
+> Visual Studio pausieren von JavaScript, das in Microsoft Edge Visual Studio ausgeführt wird, hält ![ JavaScript in Microsoft Edge auf](./media/hit-breakpoint.png)  
 
-This example was just a minor demonstration of the functionality available in Visual Studio. Learn more about all the things you can do in Visual Studio 2019 by reading [their documentation](https://docs.microsoft.com/visualstudio/windows/?view=vs-2019).
+Dieses Beispiel war nur eine kleine Demonstration der in Visual Studio verfügbaren Funktionen. Erfahren Sie mehr über alle Funktionen, die Sie in Visual Studio 2019 durchführen können, indem Sie [deren Dokumentation](https://docs.microsoft.com/visualstudio/windows/?view=vs-2019)lesen.
 
-## Attach to Microsoft Edge
-In the previous workflow, Visual Studio launches Microsoft Edge. With this workflow, you will be able to attach the Visual Studio debugger to an already running instance of Microsoft Edge. 
+## An Microsoft Edge anfügen
+Im vorherigen Workflow startet Visual Studio Microsoft Edge. Mit diesem Workflow können Sie den Visual Studio-Debugger an eine bereits ausgeführte Instanz von Microsoft Edge anfügen. 
 
-First, ensure that there are no running instances of Microsoft Edge. Now, from your terminal, run the following command:
+Stellen Sie zunächst sicher, dass keine ausgeführten Instanzen von Microsoft Edge vorhanden sind. Führen Sie nun über Ihr Terminal den folgenden Befehl aus:
 
 ```console
 start msedge –remote-debugging-port=9222
 ```
 
-From Visual Studio, open the **Debug** menu and select **Attach to Process** or press `Ctrl` + `Alt` + `P`.
+Öffnen Sie in Visual Studio das Menü **Debuggen** , und wählen Sie **an Prozess anfügen** aus, oder drücken Sie `Ctrl`  +  `Alt`  +  `P` .
 
-> ##### Figure 9
-> Selecting **Attach to Process** in Visual Studio ![Selecting **Attach to Process** in Visual Studio](./media/attach-to-process.png)  
+> ##### Abbildung 9
+> Auswählen von **Anfügen an den Prozess** in Visual Studio ![ Auswählen von * * an den Prozess anfügen * * in Visual Studio](./media/attach-to-process.png)  
 
-From the **Attach to Process** dialog, set **Connection type** to **Chrome devtools protocol websocket (no authentication)**. In the **Connecting target** textbox, type in `http://localhost:9222/` and press `Enter`. You should see the list of open tabs you have in Microsoft Edge listed out in the **Attach to Process** dialog.
+Legen Sie im Dialogfeld **an den Prozess anfügen** den **Verbindungstyp** auf **Chrome devtools Protocol WebSocket (keine Authentifizierung)**. Geben Sie in das Textfeld **Verbindungsziel** ein, `http://localhost:9222/` und drücken Sie `Enter` . Im Dialogfeld **an den Prozess anfügen wird** die Liste der geöffneten Registerkarten angezeigt, die in Microsoft Edge aufgeführt sind.
 
-> ##### Figure 10
-> Configuring the **Attach to Process** dialog in Visual Studio ![Configuring the Attach to Process dialog in Visual Studio](./media/attach-to-process-dialog.png)  
+> ##### Abbildung 10
+> Konfigurieren des Dialogfelds **an den Prozess anfügen** in Visual Studio ![ Konfigurieren des Dialogfelds an den Prozess anfügen in Visual Studio](./media/attach-to-process-dialog.png)  
 
-Click **Select…** and check **JavaScript (Microsoft Edge – Chromium)**. You can add tabs, navigate to new tabs, and close tabs and see those changes reflected in the **Attach to Process** dialog by clicking the **Refresh** button. Select the tab you want to debug and click **Attach**.
+Klicken Sie auf **auswählen.** .. und prüfen Sie **JavaScript (Microsoft Edge – Chrom)**. Sie können Registerkarten hinzufügen, zu neuen Registerkarten navigieren und Registerkarten schließen, und diese Änderungen werden im Dialogfeld **an den Prozess anfügen** angezeigt, indem Sie auf die Schaltfläche **Aktualisieren** klicken. Wählen Sie die Registerkarte aus, die Sie debuggen möchten, und klicken Sie auf **Anfügen**.
 
-The Visual Studio debugger is now attached to Microsoft Edge! You can pause execution of JavaScript, set breakpoints, and see `console.log()` statements directly in the Debug Output window in Visual Studio.
+Der Visual Studio-Debugger ist nun an Microsoft Edge angefügt! Sie können die Ausführung von JavaScript anhalten, Haltepunkte festlegen und `console.log()` Anweisungen direkt im Fenster Debug-Ausgabe in Visual Studio anzeigen.
 
-## Getting in touch with the Microsoft Visual Studio team  
+## Kontaktieren des Microsoft Visual Studio-Teams  
 
-We're eager to learn more about how you work with JavaScript in Visual Studio!  Please send us feedback by clicking the **Feedback** icon in Visual Studio or by tweeting [@VisualStudio and @EdgeDevTools](https://twitter.com/intent/tweet?text=@VisualStudio+@EdgeDevTools).  
+Wir möchten gerne mehr darüber erfahren, wie Sie mit JavaScript in Visual Studio arbeiten können!  Senden Sie uns Feedback, indem Sie auf das **Feedback** Symbol in Visual Studio oder auf tweeting [ @VisualStudio and @EdgeDevTools](https://twitter.com/intent/tweet?text= @VisualStudio + @EdgeDevTools) klicken.  
 
-> ##### Figure 11
-> The **Feedback** icon in Visual Studio ![The Feedback icon in Visual Studio](./media/feedback-icon.png)  
+> ##### Abbildung 11
+> Das **Feedback** Symbol in Visual Studio ![ das Feedback Symbol in Visual Studio](./media/feedback-icon.png)  

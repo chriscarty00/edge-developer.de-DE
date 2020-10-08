@@ -1,12 +1,12 @@
 ---
-description: See what's new in the Microsoft Edge DevTools in the Windows 10 October 2018 Update
-title: What's new in the Microsoft Edge DevTools
+description: Schauen Sie sich die Neuerungen in der Microsoft Edge-devtools im Windows 10 Oktober 2018-Update an
+title: Neuerungen im Microsoft Edge-devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 01/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools, edgehtml 18
+keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools, edgehtml 18
 ms.custom: RS5, seodec18
 ms.openlocfilehash: 604419f4c77ccaaf2dfd3179273be803cde86fc8
 ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
@@ -15,38 +15,38 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "10567574"
 ---
-# DevTools in the latest Windows 10 update (EdgeHTML 18)
+# DevTools im neuesten Windows 10-Update (EdgeHTML 18)
 
-The latest update to Microsoft Edge DevTools adds a number of conveniences both to the UI and under the hood, including new dedicated panels for [*Service Workers*](#service-workers-panel) and [*Storage*](#storage-panel), source [file search](#source-file-search-tools) tools in the Debugger, and new [Edge DevTools Protocol domains](#edge-devtools-protocol-updates) for style/layout debugging and console APIs.
+Das neueste Update für Microsoft Edge devtools bietet eine Reihe von Vorteilen sowohl für die Benutzeroberfläche als auch unter der Haube, einschließlich neuer dedizierter Panels für [*Dienstmitarbeiter*](#service-workers-panel) und [*Speicher*](#storage-panel), Quell [Datei-Such](#source-file-search-tools) Tools im Debugger und neuen Edge- [devtools-Protokoll Domänen](#edge-devtools-protocol-updates) für das Debuggen von Stilen und Layouts sowie für Konsolen-APIs.
 
-Here are the latest Microsoft Edge DevTools features available now in the [Windows 10 October 2018 Update](/windows/uwp/whats-new/windows-10-build-17763) ([EdgeHTML 18](https://aka.ms/devguide_edgehtml_18)). In addition to all this, we’ve also fixed a number of accessibility, reliability, and performance bugs to improve fundamentals!
+Hier sind die neuesten Microsoft Edge devtools-Funktionen, die jetzt im [Windows 10 October 2018-Update](/windows/uwp/whats-new/windows-10-build-17763) ([EdgeHTML 18](https://aka.ms/devguide_edgehtml_18)) zur Verfügung stehen. Darüber hinaus haben wir auch eine Reihe von Fehlern bei der Barrierefreiheit, Zuverlässigkeit und Leistung behoben, um die Grundlagen zu verbessern!
 
-## DevTools app
+## DevTools-App
 
-We've updated the standalone [Microsoft Edge DevTools Preview app](../devtools-guide.md#microsoft-store-app). The latest release includes remote debugging access to core funtionality in the [**Debugger**](./debugger.md), [**Elements**](./elements.md) (for read-only operations), and [**Console**](./console.md) panels.
+Wir haben die eigenständige [Microsoft Edge devtools Preview-App](../devtools-guide.md#microsoft-store-app)aktualisiert. Die neueste Version umfasst den Remotedebuggen Zugriff auf Kernfunktionalität im [**Debugger**](./debugger.md), [**Elemente**](./elements.md) (für schreibgeschützte Vorgänge) und [**Konsolen**](./console.md) Panels.
 
-## Service Workers panel
+## Dienstmitarbeiter-Panel
 
-There's now a dedicated [**Service Workers**](./service-workers.md) panel for inspecting, managing, and debugging your site's service workers. This provides the same functionality as was previously in the *Debugger* panel (now with a less-crowded UI!).
+Es gibt jetzt ein dediziertes [**Service Worker**](./service-workers.md) -Panel zum Überprüfen, verwalten und Debuggen der Servicemitarbeiter Ihrer Website. Dies bietet die gleiche Funktionalität wie zuvor im *Debugger* -Panel (jetzt mit einer nicht überfüllten UI!).
 
-![Service Workers panel](./media/service_worker.png)
+![Dienstmitarbeiter-Panel](./media/service_worker.png)
 
-## Storage panel
+## Speicher Panel
 
-We've also moved all the local storage inspectors (*Local and Sesion Storage, IndexedDB, Cookies, Cache*) previously in the *Debugger* to their own dedicated [**Storage**](./storage.md) panel.
+Darüber hinaus haben wir alle lokalen Speicher Inspektoren (*lokaler Speicher, IndexedDB, Cookies, Cache*), die sich zuvor im *Debugger* befanden, in Ihre eigene dedizierte [**Speicher**](./storage.md) Konsole verschoben.
 
-![Storage panel](./media/storage_cache.png)
+![Speicher Panel](./media/storage_cache.png)
 
-## Source file search tools
+## Such Tools für Quelldateien
 
-The [**Debugger**](./debugger.md) now has a [source file search](./debugger.md#file-search) pane. Open it with the *Find in files* command (`Ctrl`+`Shift`+`F`) when you have a specific string of code you're trying to find in the source. The toolbar provides different search options, including regular expressions. 
+Der [**Debugger**](./debugger.md) verfügt nun über einen Bereich für die [Quelldatei Suche](./debugger.md#file-search) . Öffnen Sie die Datei mit dem Befehl *in Dateien suchen* ( `Ctrl` + `Shift` + `F` ), wenn Sie über eine bestimmte Zeichenfolge verfügen, die Sie in der Quelle finden möchten. Die Symbolleiste bietet verschiedene Suchoptionen, einschließlich regulärer Ausdrücke. 
 
-![Debugger file search](./media/debugger_file_search.png)
+![Debugger-Dateisuche](./media/debugger_file_search.png)
 
-You can also quickly open any loaded source file with the *Open file* (`Ctrl`+`P`) command.
+Sie können auch eine beliebige geladene Quelldatei mit dem Befehl *Open File* () schnell öffnen `Ctrl` + `P` .
 
-![Debugger open file](./media/debugger_open_file.png)
+![Debugger-Datei öffnen](./media/debugger_open_file.png)
 
-## Edge DevTools Protocol updates
+## Edge-devtools-Protokoll Updates
 
-[Version 0.2](../devtools-protocol/0.2/index.md) of the DevTools Protocol provides new domains for style and layout (read-only) debugging and console APIs, in addition to the core script debugging functionality introduced in [Version 0.1](../devtools-protocol/0.1/index.md). In the Edge DevTools UI, this translates to functionality available in the [**Elements**](../devtools-guide/elements.md) (for read-only operations), [**Console**](../devtools-guide/console.md) and [**Debugger**](../devtools-guide/debugger.md) panels.
+[Version 0,2](../devtools-protocol/0.2/index.md) des devtools-Protokolls bietet neue Domänen für Stil-und Layoutfunktionen (schreibgeschützt) sowie Debug-und Konsolen-APIs sowie die Kernskript Debugging-Funktionen, die in [Version 0,1](../devtools-protocol/0.1/index.md)eingeführt wurden. In der Benutzeroberfläche von Edge devtools wird dadurch die Funktionalität übersetzt, die in den [**Elementen**](../devtools-guide/elements.md) (für schreibgeschützte Vorgänge), [**Konsolen**](../devtools-guide/console.md) -und [**Debuggerfenster**](../devtools-guide/debugger.md) zur Verfügung steht.

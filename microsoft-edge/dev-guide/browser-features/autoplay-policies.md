@@ -1,12 +1,12 @@
 ---
-description: Ensure media content on your site behaves as intended
-title: Autoplay policies - Dev guide
+description: Sicherstellen, dass sich der Medieninhalt auf Ihrer Website wie vorgesehen verhält
+title: Richtlinien zur automatischen Wiedergabe – dev-Leitfaden
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 07/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge, media, video, audio, autoplay
+keywords: Edge, Medien, Video, Audio, automatische Wiedergabe
 ms.custom: seodec18
 ms.openlocfilehash: 39c9bd8e9921167dfc3a9ab1a4cc12b2157f0f6f
 ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
@@ -15,57 +15,57 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "10942063"
 ---
-# Autoplay Policies  
+# Richtlinien für die automatische Wiedergabe  
 
 [!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
-Microsoft Edge provides customers with the ability to personalize their browsing preferences on websites that autoplay media with sound in order to minimize distractions on the web and conserve bandwidth.  Additionally, Microsoft Edge automatically suppresses autoplay of media in background tabs.  
+Microsoft Edge bietet Kunden die Möglichkeit, Ihre Browsereinstellungen auf Websites zu personalisieren, die Medien mit Sound wiedergeben, um Ablenkungen im Internet zu minimieren und die Bandbreite zu sparen.  Darüber hinaus unterdrückt Microsoft Edge automatisch die automatische Wiedergabe von Medien in Hintergrundregisterkarten.  
 
-Users can customize media behavior with both [global](#global-media-autoplay-settings) and [per-site](#per-site-media-autoplay-settings) autoplay controls, which provide the following options:  
+Benutzer können das Medienverhalten mit den Steuerelementen für die automatische Wiedergabe auf [globaler](#global-media-autoplay-settings) und [pro Website](#per-site-media-autoplay-settings) anpassen, die die folgenden Optionen bieten:  
 
-*   `Allow`  The default and will continue to play videos when a tab is first viewed in the foreground, at the site's discretion.  
+*   `Allow`  Die Standardeinstellung, und die Wiedergabe von Videos erfolgt weiterhin, wenn eine Registerkarte zuerst im Vordergrund angezeigt wird, nach Ermessen der Website.  
 
-*   `Limit`  Restricts autoplay to only work when videos are muted, so users are never surprised by sound.  Once the user clicks anywhere on the page, autoplay is re-enabled, and will continue to be allowed within that domain in that tab.  
+*   `Limit`  Schränkt die automatische Wiedergabe ein, wenn Videos stumm geschaltet sind, sodass die Benutzer nie von Sound überrascht werden.  Nachdem der Benutzer auf eine beliebige Stelle auf der Seite geklickt hat, ist die automatische Wiedergabe wieder aktiviert und wird weiterhin innerhalb dieser Domäne auf dieser Registerkarte zugelassen.  
 
-*   `Block`  Prevent sautoplay on all sites until users directly interact with the media content.  
+*   `Block`  Verhindern Sie sautoplay auf allen Websites, bis Benutzer direkt mit dem Medieninhalt interagieren.  
 
-## Global media autoplay settings  
+## Einstellungen für die automatische Wiedergabe globaler Medien  
 
-Users can control the default autoplay behavior for all sites under **Advanced Setting** > **Media autoplay**.  
+Benutzer können das Standardverhalten für die automatische Wiedergabe für alle Websites unter **Erweiterte Einstellung**  >  **Medien Automatik**steuern.  
 
-:::image type="complex" source="../media/autoplay_global.png" alt-text="Global media autoplay settings" lightbox="../media/autoplay_global.png":::
-   Global media autoplay settings  
+:::image type="complex" source="../media/autoplay_global.png" alt-text="Einstellungen für die automatische Wiedergabe globaler Medien" lightbox="../media/autoplay_global.png":::
+   Einstellungen für die automatische Wiedergabe globaler Medien  
 :::image-end:::  
 
-## Per-site media autoplay settings  
+## Einstellungen für die automatische Wiedergabe von Medien pro Website  
 
-Users can control autoplay behavior on a per-site basis under the **Website permissions** section of the website information pane.  This setting can be found by clicking the information icon or lock icon on the left side of the address bar and clicking on **Media autoplay settings** to get started.  
+Benutzer können das Verhalten der automatischen Wiedergabe pro Website unter dem Abschnitt " **Websiteberechtigungen** " im Bereich "Website Informationen" steuern.  Diese Einstellung finden Sie, indem Sie auf das Symbol "Informationen" oder das Symbol "Sperren" auf der linken Seite der Adressleiste klicken und dann auf "Einstellungen für die **Medienwiedergabe** " klicken, um zu beginnen.  
 
-Per-site settings override the global setting.  For example, if a user has their global setting set to `Allow` but changes a per-site setting to `Block`, autoplay will be blocked for that site.  
+Einstellungen pro Website überschreiben die globale Einstellung.  Wenn ein Benutzer beispielsweise die globale Einstellung auf `Allow` eine Einstellung pro Website festgelegt hat `Block` , wird die automatische Wiedergabe für diese Website blockiert.  
 
-:::image type="complex" source="../media/autoplay_per-site.png" alt-text="Global media autoplay settings" lightbox="../media/autoplay_per-site.png":::
-   Per-site media autoplay settings  
+:::image type="complex" source="../media/autoplay_per-site.png" alt-text="Einstellungen für die automatische Wiedergabe globaler Medien" lightbox="../media/autoplay_per-site.png":::
+   Einstellungen für die automatische Wiedergabe von Medien pro Website  
 :::image-end:::  
 
-## Best Practices for Web Developers  
+## Bewährte Methoden für Web-Entwickler  
 
-Here's how to ensure a good user experience with media hosted on your site:  
+Hier erfahren Sie, wie Sie eine gute Benutzerfreundlichkeit mit auf Ihrer Website gehosteten Medien gewährleisten:  
 
-*   Assume each use of a media element wil require a user gesture to start the playback \(as users can block autoplay at any point in time\) and plan accordingly.  Global and per-site autoplay policies apply to all `<audio>` and `<video>` elements, regardless of how they are used on your site  
+*   Davon ausgehen, dass für jede Verwendung eines Medienelements Wil eine Benutzergeste erforderlich ist, um die Wiedergabe zu starten \ (da Benutzer die automatische Wiedergabe zu einem beliebigen Zeitpunkt blockieren können \) und entsprechend planen.  Global-und pro-Site-AutoPlay-Richtlinien gelten für alle `<audio>` und `<video>` Elemente, unabhängig davon, wie Sie auf Ihrer Website verwendet werden.  
 
-*   Ensure that media controls are always present on both site media and ad content.  This will give users the ability to restart playback if autoplay is blocked on the page.  
+*   Stellen Sie sicher, dass mediensteuerelemente immer auf dem Website Medium und dem Anzeigeninhalt vorhanden sind.  Dadurch können Benutzer die Wiedergabe neu starten, wenn die automatische Wiedergabe auf der Seite blockiert ist.  
 
-*   Evaluate how autoplay may affect users' experience on your website and consider using autoplay in a way that minimizes unwanted media playback.  If autoplay is a crucial part of your experience, consider using muted content to start and allowing the user to unmute it.  For muted content to autoplay, the audio source must be either explicitly muted or not be set.  Otherwise the element will not be considered as muted.  
+*   Bewerten Sie, wie die automatische Wiedergabe die Benutzerfreundlichkeit auf Ihrer Website beeinträchtigen kann, und verwenden Sie die automatische Wiedergabe auf eine Weise, die unerwünschte Medienwiedergabe minimiert.  Wenn die automatische Wiedergabe ein entscheidender Bestandteil ihrer Erfahrung ist, sollten Sie die Verwendung von stummgeschaltetem Inhalt verwenden, damit der Benutzer die Stummschaltung aufheben kann.  Für stummgeschaltete Inhalte muss die Audioquelle entweder explizit stumm geschaltet oder nicht eingestellt sein.  Andernfalls wird das Element nicht als stumm geschaltet angesehen.  
 
-*   Unless absolutely necessary to do otherwise, use the native browser controls for media playback.  This will ensure a consistent experience for users.  If you are building custom controls instead, ensure that media controls are always present and that your controls properly react to autoplay suppression.  
+*   Verwenden Sie die systemeigenen Browsersteuerelemente für die Medienwiedergabe, sofern dies nicht unbedingt erforderlich ist.  Dadurch wird eine konsistente Benutzeroberfläche gewährleistet.  Wenn Sie stattdessen benutzerdefinierte Steuerelemente erstellen, stellen Sie sicher, dass die mediensteuerelemente immer vorhanden sind und dass Ihre Steuerelemente auf die Unterdrückung der automatischen Wiedergabe reagieren.  
 
-### Iframe delegation  
+### Iframe-Delegierung  
 
-Autoplay in an `<iframe>` will inherit the autoplay permission from the parent page regardless of content origin.  In a playlist scenario where each media file is hosted by a separate iframe, the user would only need to initiate playback once for the entire playlist.  
+Die automatische Wiedergabe in einer `<iframe>` erbt die Berechtigung "AutoPlay" von der übergeordneten Seite unabhängig vom Inhalts Ursprung.  In einem Wiedergabelisten Szenario, in dem jede Mediendatei von einem separaten IFrame gehostet wird, muss der Benutzer die Wiedergabe nur einmal für die gesamte Wiedergabeliste initiieren.  
 
-### Detecting when autoplay is allowed  
+### Erkennen, wenn die automatische Wiedergabe zulässig ist  
 
-You can adjust your playback controls to display the correct state when autoplay is blocked by examining the promise returned by the `play()` function on the media element:  
+Sie können die Wiedergabesteuerelemente so anpassen, dass der richtige Zustand angezeigt wird, wenn die automatische Wiedergabe blockiert wird, indem Sie die von der `play()` Funktion für das Medienelement zurückgegebene Versprechung untersuchen:  
 
 ```javascript
 var promise = document.querySelector('video').play();

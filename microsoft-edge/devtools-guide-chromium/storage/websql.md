@@ -1,12 +1,12 @@
 ---
-description: How to view Web SQL data from the Application panel of Microsoft Edge DevTools.
-title: View Web SQL Data With Microsoft Edge DevTools
+description: Informationen zum Anzeigen von WebSQL-Daten aus dem Anwendungs Panel von Microsoft Edge devtools
+title: Anzeigen von WebSQL-Daten mit Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
 ms.openlocfilehash: cc2f726c80fbf0c943b43ff6c131e9479db75b78
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -32,77 +32,77 @@ ms.locfileid: "10993534"
 
 
 
-# View Web SQL data with Microsoft Edge DevTools   
+# Anzeigen von WebSQL-Daten mit Microsoft Edge devtools   
 
 
 
 > [!WARNING]
-> The Web SQL specification is [not being maintained][W3CWebSQLStatus].  
+> Die Web SQL-Spezifikation wird [nicht verwaltet][W3CWebSQLStatus].  
 
-This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to inspect Web SQL data.  
+Dieser Leitfaden zeigt, wie Sie [Microsoft Edge devtools][MicrosoftEdgeDevTools] verwenden, um Web SQL-Daten zu überprüfen.  
 
-## View Web SQL Data   
+## Anzeigen von Web SQL-Daten   
 
-1.  Select the **Sources** tab to open the **Sources** panel.  The **Manifest** pane usually opens by default.  
+1.  Wählen Sie die Registerkarte **Quellen** aus, um das **Quellen** Panel zu öffnen.  Der Bereich **Manifest** wird normalerweise standardmäßig geöffnet.  
     
-    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-manifest.msft.png":::
-       The **Manifest** pane  
+    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="Bereich ' Manifest '" lightbox="../media/storage-application-manifest.msft.png":::
+       Bereich ' **Manifest** '  
     :::image-end:::  
     
-1.  Expand the **Web SQL** section to view databases and tables.  In the following figure, below **html5meetup** is a database and **rooms** is a table.  
+1.  Erweitern Sie den Abschnitt **Web SQL** , um Datenbanken und Tabellen anzuzeigen.  In der folgenden Abbildung ist unter **html5meetup** eine Datenbank, und **rooms** ist eine Tabelle.  
     
-    :::image type="complex" source="../media/storage-application-storage-web-sql.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-storage-web-sql.msft.png":::
-       The **Web SQL** pane  
+    :::image type="complex" source="../media/storage-application-storage-web-sql.msft.png" alt-text="Bereich ' Manifest '" lightbox="../media/storage-application-storage-web-sql.msft.png":::
+       Der **Web SQL-** Bereich  
     :::image-end:::  
     
-1.  Select a table to view the data for that table.  
+1.  Wählen Sie eine Tabelle aus, um die Daten für diese Tabelle anzuzeigen.  
     
-    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-rooms-1.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-storage-web-sql-html5meetup-rooms-1.msft.png":::
-       View the data of a Web SQL table  
+    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-rooms-1.msft.png" alt-text="Bereich ' Manifest '" lightbox="../media/storage-application-storage-web-sql-html5meetup-rooms-1.msft.png":::
+       Anzeigen der Daten einer Web SQL-Tabelle  
     :::image-end:::  
     
-## Edit Web SQL data   
+## Bearbeiten von Web SQL-Daten   
 
-You are not able to edit Web SQL data when viewing a Web SQL table, such as in **Figure 3** above.  But you may run statements from the Web SQL Console that edit or delete tables.  See [Run Web SQL queries](#run-web-sql-queries).  
+Sie können keine Web SQL-Daten bearbeiten, wenn Sie eine Web SQL-Tabelle anzeigen, wie in **Abbildung 3 oben dargestellt** .  Sie können jedoch in der Web SQL-Konsole Anweisungen zum Bearbeiten oder Löschen von Tabellen ausführen.  Weitere Informationen finden Sie unter [Ausführen von WebSQL-Abfragen](#run-web-sql-queries).  
 
-## Run Web SQL queries   
+## Ausführen von Web SQL-Abfragen   
 
-1.  Select a database to open a console for that database.  
-1.  Type a Web SQL statement, then press `Enter` to run it.  
+1.  Wählen Sie eine Datenbank aus, um eine Konsole für diese Datenbank zu öffnen.  
+1.  Geben Sie eine Web SQL-Anweisung ein, und drücken Sie dann `Enter` , um Sie auszuführen.  
     
-    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png":::
-       Use the Web SQL Console to delete a row from a table  
+    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png" alt-text="Bereich ' Manifest '" lightbox="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png":::
+       Verwenden der Web SQL-Konsole zum Löschen einer Zeile aus einer Tabelle  
     :::image-end:::  
     
-## Refresh a Web SQL table   
+## Aktualisieren einer Web SQL-Tabelle   
 
-DevTools does not update tables in real-time.  To update the data in a table:  
+DevTools aktualisiert Tabellen nicht in Echtzeit.  So aktualisieren Sie die Daten in einer Tabelle:  
 
-1.  [View the data in a Web SQL table](#view-web-sql-data).  
-1.  Select **Refresh** \(![Refresh][ImageRefreshIcon]\).  
+1.  [Anzeigen der Daten in einer SQL-Webtabelle](#view-web-sql-data)  
+1.  Wählen Sie **Aktualisieren** \ ( ![ aktualisieren ][ImageRefreshIcon] \) aus.  
     
-## Filter out columns in a Web SQL table   
+## Filtern von Spalten in einer SQL-Webtabelle   
 
-1.  [View the data in a Web SQL table](#view-web-sql-data).  
-1.  Use the **Visible columns** text box to specify what columns you want to show.  Provide the column names as a CSV list.  
+1.  [Anzeigen der Daten in einer SQL-Webtabelle](#view-web-sql-data)  
+1.  Verwenden Sie das Textfeld **sichtbare Spalten** , um anzugeben, welche Spalten angezeigt werden sollen.  Geben Sie die Spaltennamen als CSV-Liste an.  
     
-    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png":::
-       Use the **Visible Columns** text box to reduce the number of columns shown  
+    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png" alt-text="Bereich ' Manifest '" lightbox="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png":::
+       Verwenden Sie das Textfeld " **sichtbare Spalten** ", um die Anzahl der angezeigten Spalten zu verringern.  
     :::image-end:::  
     
-## Delete all Web SQL data   
+## Löschen aller Web SQL-Daten   
 
-1.  Open the **Clear Storage** pane.  
-1.  Make sure that the **Web SQL** checkbox is enabled.  
+1.  Öffnen Sie den Bereich **Speicher löschen** .  
+1.  Stellen Sie sicher, dass das Kontrollkästchen **Web SQL** aktiviert ist.  
     
-    :::image type="complex" source="../media/storage-application-clear-storage-web-sql.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-clear-storage-web-sql.msft.png":::
-       The **Web SQL** checkbox  
+    :::image type="complex" source="../media/storage-application-clear-storage-web-sql.msft.png" alt-text="Bereich ' Manifest '" lightbox="../media/storage-application-clear-storage-web-sql.msft.png":::
+       Das **Web SQL-** Kontrollkästchen  
     :::image-end:::  
     
-1.  Select **Clear site data**.  
+1.  Wählen Sie **Website Daten löschen**aus.  
     
-    :::image type="complex" source="../media/storage-application-clear-storage-clear-site-data-button.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-clear-storage-clear-site-data-button.msft.png":::
-       The **Clear Site Data** button  
+    :::image type="complex" source="../media/storage-application-clear-storage-clear-site-data-button.msft.png" alt-text="Bereich ' Manifest '" lightbox="../media/storage-application-clear-storage-clear-site-data-button.msft.png":::
+       Schaltfläche " **Website Daten löschen** "  
     :::image-end:::  
     
 <!--  
@@ -117,16 +117,16 @@ DevTools does not update tables in real-time.  To update the data in a table:
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chrom)-Entwickler Tools | Microsoft docs"  
 
-[W3CWebSQLStatus]: https://w3.org/TR/webdatabase/#status-of-this-document "Web SQL database | W3C"  
+[W3CWebSQLStatus]: https://w3.org/TR/webdatabase/#status-of-this-document "Web SQL-Datenbank | W3C"  
 
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/storage/websql) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
+> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
+> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/storage/websql) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
 
-[![Creative Commons License][CCby4Image]][CCA4IL]  
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
+[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

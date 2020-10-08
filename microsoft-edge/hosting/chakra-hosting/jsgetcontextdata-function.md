@@ -1,6 +1,6 @@
 ---
-description: Gets the internal data set on JsrtContext.
-title: JsGetContextData Function | Microsoft Docs
+description: Ruft die interne Datengruppe in JsrtContext ab.
+title: JsGetContextData-Funktion | Microsoft docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: microsoft-edge
@@ -20,8 +20,8 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "10567268"
 ---
-# JsGetContextData Function
-Gets the internal data set on JsrtContext.  
+# JsGetContextData Funktion
+Ruft die interne Datengruppe in JsrtContext ab.  
   
 ## Syntax  
   
@@ -32,21 +32,21 @@ STDAPI_(JsErrorCode) JsGetContextData(
 );  
 ```  
   
-#### Parameters  
+#### Parameter  
  `context`  
- The context to get the data from.  
+ Der Kontext, aus dem die Daten abgerufen werden sollen.  
   
  `data`  
- The pointer to the data where data will be returned.  
+ Der Zeiger auf die Daten, in die Daten zurückgegeben werden.  
   
-## Return Value  
- The code `JsNoError` if the operation succeeded, a failure code otherwise.  
+## Rückgabewert  
+ Der Code `JsNoError` , wenn der Vorgang erfolgreich war, andernfalls ein Fehlercode.  
   
-## Remarks  
- Requires an active script context.  
+## Hinweise  
+ Erfordert einen aktiven Skriptkontext.  
   
-## Requirements  
- **Header:** jsrt.h  
+## Anforderungen  
+ **Kopfzeile:** jsrt. h  
   
-## See Also  
- [Reference (JavaScript Runtime)](../chakra-hosting/reference-javascript-runtime.md)
+## Weitere Informationen  
+ [Referenz (JavaScript-Laufzeit)](../chakra-hosting/reference-javascript-runtime.md)

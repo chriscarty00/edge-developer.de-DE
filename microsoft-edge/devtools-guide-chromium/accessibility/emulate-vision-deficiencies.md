@@ -1,11 +1,11 @@
 ---
-title: Emulate vision deficiencies in Microsoft Edge DevTools(color blindness)
+title: Emulieren von Sehstörungen in Microsoft Edge devtools (Farbenblindheit)
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 06/29/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
 ms.openlocfilehash: b70499fa189d162fa7589966bab183f4c12f68f7
 ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
 ms.translationtype: MT
@@ -13,80 +13,80 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 07/01/2020
 ms.locfileid: "10843921"
 ---
-# Emulate vision deficiencies
+# Emulieren von Sehstörungen
 
-To better meet the needs of your users with [color vision deficiency][ColorblindawarenessMain] \(color blindness\), [Microsoft Edge DevTools][MicrosoftEdgeDevTools] enable you to simulate specific color vision deficiencies.  The **Emulate vision deficiencies** tool simulates the following categories.  
+Um die Anforderungen Ihrer Benutzer mit [farbsehstörungen][ColorblindawarenessMain] zu erfüllen \ (Farbenblindheit \), können Sie mit [Microsoft Edge devtools][MicrosoftEdgeDevTools] bestimmte farbsehstörungen simulieren.  Das Tool zum **emulieren von Sehstörungen** simuliert die folgenden Kategorien.  
 
-| Color vision deficiency | Details |  
+| Farbsehstörungen | Details |  
 |:--- |:--- |  
-| Blurred vision | The user has difficulty focusing on fine details. |   
-| Protanopia | The user is unable to perceive any red light. |  
-| Deuteranopia | The user is unable to perceive any green light. |  
-| Tritanopia | The user is unable to perceive any blue light. |  
-| Achromatopsia | The user is unable to perceive any color, which reduces all color to a shade of grey. |  
+| Verschwommenes Sehvermögen | Der Benutzer hat Schwierigkeiten, sich auf feine Details zu konzentrieren. |   
+| Protanopie | Der Benutzer kann keine rote Leuchte erkennen. |  
+| Deuteranopie | Der Benutzer kann kein grünes Licht erkennen. |  
+| Tritanopie | Der Benutzer kann keine blauen Lichter erkennen. |  
+| Achromatopsie | Der Benutzer kann keine Farbe wahrnehmen, wodurch alle Farben auf eine Grauschattierung reduziert werden. |  
 
-## Navigate to the Rendering Tools  
+## Navigieren zu den Render-Tools  
 
-To simulate a vision deficiency being applied for your web product, open the [Rendering Tools][RenderingTools].  
+Um einen Sehstörungen zu simulieren, der für Ihr Web-Produkt angewendet wird, öffnen Sie die [Rendering-Tools][RenderingTools].  
 
-1.  Open the Rendering Tools by selecting the `...` menu item in the toolbar  
-1.  Select `More tools`  
-1.  Select `Rendering`  
+1.  Öffnen der Rendering-Tools durch Auswählen des `...` Menüelements in der Symbolleiste  
+1.  Auswählen `More tools`  
+1.  Auswählen `Rendering`  
     
-    :::image type="complex" source="../media/getting-to-the-rendering-tools.msft.png" alt-text="Opening the Rendering Tools" lightbox="../media/getting-to-the-rendering-tools.msft.png":::
-       Opening the **Rendering Tools**  
+    :::image type="complex" source="../media/getting-to-the-rendering-tools.msft.png" alt-text="Öffnen der Rendering-Tools" lightbox="../media/getting-to-the-rendering-tools.msft.png":::
+       Öffnen der **Rendering-Tools**  
     :::image-end:::  
 
-The **Rendering** menu appears in the drawer.  
+Das **Rendering** -Menü wird im Einzug angezeigt.  
 
-1.  Scroll down to the `Emulate vision deficiencies` menu item and select the drop-down menu to display the options.  
+1.  Scrollen Sie nach unten zum `Emulate vision deficiencies` Menüelement, und wählen Sie das Dropdownmenü aus, um die Optionen anzuzeigen.  
     
-    :::image type="complex" source="../media/accessibility-emulate-vision-menu.msft.png" alt-text="Opening the Rendering Tools" lightbox="../media/accessibility-emulate-vision-menu.msft.png":::
-       The **Emulate vision deficiencies** menu on the **Rendering** drawer  
+    :::image type="complex" source="../media/accessibility-emulate-vision-menu.msft.png" alt-text="Öffnen der Rendering-Tools" lightbox="../media/accessibility-emulate-vision-menu.msft.png":::
+       Das Menü " **Sehstörungen emulieren** " auf der **Rendering** -Schublade  
     :::image-end:::  
     
-1.  Choose an option.  
+1.  Wählen Sie eine Option aus.  
     
-    :::image type="complex" source="../media/accessibility-emulate-vision-menu-options.msft.png" alt-text="Opening the Rendering Tools" lightbox="../media/accessibility-emulate-vision-menu-options.msft.png":::
-       The **Emulate vision deficiencies** menu options  
+    :::image type="complex" source="../media/accessibility-emulate-vision-menu-options.msft.png" alt-text="Öffnen der Rendering-Tools" lightbox="../media/accessibility-emulate-vision-menu-options.msft.png":::
+       Menü Optionen für das **emulieren von Sehstörungen**  
     :::image-end:::  
     
-1.  The main windows displays the simulation of your selected option applied to the current page.  
+1.  Das Hauptfenster zeigt die Simulation der ausgewählten Option an, die auf die aktuelle Seite angewendet wurde.  
     
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/accessibility-blurred-vision-emulation.msft.png" alt-text="Opening the Rendering Tools" lightbox="../media/accessibility-blurred-vision-emulation.msft.png":::
-             Display using **Blurred Vision** simulation  
+          :::image type="complex" source="../media/accessibility-blurred-vision-emulation.msft.png" alt-text="Öffnen der Rendering-Tools" lightbox="../media/accessibility-blurred-vision-emulation.msft.png":::
+             Anzeige mithilfe einer **verschwommenen Bild** Simulation  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/accessibility-achromatopsia-emulation.msft.png" alt-text="Opening the Rendering Tools" lightbox="../media/accessibility-achromatopsia-emulation.msft.png":::
-             Display using **Achromatopsia** simulation :::image-end:::  
+          :::image type="complex" source="../media/accessibility-achromatopsia-emulation.msft.png" alt-text="Öffnen der Rendering-Tools" lightbox="../media/accessibility-achromatopsia-emulation.msft.png":::
+             Anzeigen mithilfe der **Achromatopsie** -Simulation :::image-end:::  
        :::column-end:::
     :::row-end:::
     
-## Use the Command Menu  
+## Verwenden des Befehlsmenüs  
 
-You may also use **Command Menu** to access the different simulations.  
+Sie können auch das **Befehlsmenü** verwenden, um auf die verschiedenen Simulationen zuzugreifen.  
 
-1.  Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
+1.  Drücken Sie `Control` + `Shift` + `P` \ (Windows \) oder `Command` + `Shift` + `P` \ (macOS \), um das **Befehlsmenü**zu öffnen.  
     
-    :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="Opening the Rendering Tools" lightbox="../media/css-console-command-menu-rendering.msft.png":::
-       The **Command Menu**  
+    :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="Öffnen der Rendering-Tools" lightbox="../media/css-console-command-menu-rendering.msft.png":::
+       Das **Befehlsmenü**  
     :::image-end:::  
     
-1.  Type `emulate`, choose what you want to simulate and press `Enter`.  
+1.  Geben Sie ein `emulate` , was Sie simulieren möchten, und drücken Sie `Enter` .  
     
-    :::image type="complex" source="../media/accessibility-emulation-command-menu-results.msft.png" alt-text="Opening the Rendering Tools" lightbox="../media/accessibility-emulation-command-menu-results.msft.png":::
-       The different simulation options available in the **Command Menu**  
+    :::image type="complex" source="../media/accessibility-emulation-command-menu-results.msft.png" alt-text="Öffnen der Rendering-Tools" lightbox="../media/accessibility-emulation-command-menu-results.msft.png":::
+       Die verschiedenen Simulationsoptionen, die im **Befehlsmenü** zur Verfügung stehen  
     :::image-end:::  
     
 > [!IMPORTANT]
-> The **Emulate vision deficiencies** tools simulate approximations of how a person with each deficiency may see your product.  Each person is different, therefore vision deficiencies vary in severity from person to person.  To better meet the needs of your users, avoid any color combination that may be an issue.  The **Emulate vision deficiencies** tools are not a full accessibility assessment of your product.  Instead, the **Emulate vision deficiencies** tools should  give you a good first step to avoid problems.  
+> Die Tools zum **emulieren von Sehvermögen-Mängeln** simulieren Näherungswerte, wie eine Person mit jedem Mangel Ihr Produkt sehen kann.  Die einzelnen Personen sind unterschiedlich, daher variieren Sehstörungen in Schweregraden von Person zu Person.  Um die Anforderungen Ihrer Benutzer besser erfüllen zu können, sollten Sie keine Farbkombinationen verwenden, die möglicherweise ein Problem sind.  Die Tools zum **emulieren von Sehstörungen** sind keine vollständige Beurteilung der Barrierefreiheit Ihres Produkts.  Stattdessen sollten die Tools zum **emulieren von Sehstörungen** ein guter erster Schritt sein, um Probleme zu vermeiden.  
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools"  
-[ColorblindawarenessMain]: http://www.colourblindawareness.org "The Colour Blind Awareness organisation"  
-[AmfcbMain]: https://www.amfcb.org "The American Foundation for the Color Blind (AFCB)"  
-[RenderingTools]: /microsoft-edge/devtools-guide-chromium/rendering-tools "Microsoft Edge (Chromium) Rendering Tools"  
+[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chrom)-Entwickler Tools"  
+[ColorblindawarenessMain]: http://www.colourblindawareness.org "Die Organisation der farbenblinden Sensibilisierung"  
+[AmfcbMain]: https://www.amfcb.org "Die amerikanische Stiftung für das Farben Blind (AFCB)"  
+[RenderingTools]: /microsoft-edge/devtools-guide-chromium/rendering-tools "Microsoft Edge (Chrom)-Rendering-Tools"  

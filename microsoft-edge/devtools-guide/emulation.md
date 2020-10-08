@@ -1,12 +1,12 @@
 ---
-description: Use the Emulation panel to test different browser profiles, screen sizes and resolutions, and GPS location coordinates
-title: DevTools - Emulation
+description: Verwenden des Emulations Panels zum Testen unterschiedlicher Browser Profile, Bildschirmgrößen und Auflösungen sowie GPS-Positionskoordinaten
+title: DevTools-Emulation
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools, device emulation, responsive design, geolocation, resolution
+keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools, Geräteemulation, reaktionsfähiges Design, Geolocation, Auflösung
 ms.custom: seodec18
 ms.openlocfilehash: d66646600aeaac279acaf622527f829c69f33286
 ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
@@ -17,63 +17,63 @@ ms.locfileid: "10567637"
 ---
 # Emulation
 
-The *Emulation* panel helps you to:
- - Simulate various [device profiles](#device), [browsers](#browser-profile), [screen sizes and resolutions](#display)
- - Test different [geolocation settings and coordinates](#geolocation)
+Das *Emulations* Panel hilft Ihnen dabei, Folgendes zu tun:
+ - Simulieren verschiedener [Geräteprofile](#device), [Browser](#browser-profile), [Bildschirmgrößen und Auflösungen](#display)
+ - Testen verschiedener [Geolocation-Einstellungen und-Koordinaten](#geolocation)
 
-![The Microsoft Edge DevTools Emulation panel](./media/emulation.png)
+![Das Microsoft Edge devtools-Emulations Panel](./media/emulation.png)
 
-1. The **Persist Emulation settings** button will save any changes you made from the default desktop emulation settings, even when you close and reopen the DevTools. 
+1. Mit der Schaltfläche für die **Beibehaltung der Emulationseinstellungen** werden alle von Ihnen vorgenommenen Änderungen an den Standardeinstellungen für die Desktop Emulation gespeichert, auch wenn Sie das devtools schließen und erneut öffnen. 
 
-2. The **Reset Emulation settings** button will reset your emulation settings back to the default *Desktop* browser profile and Microsoft Edge user agent string with GPS turned off.
+2. Mit der Schaltfläche " **Emulationseinstellungen zurücksetzen** " werden Ihre Emulationseinstellungen wieder auf das standardmäßige *Desktop* Browserprofil und die Microsoft Edge-Benutzer-Agent-Zeichenfolge zurückgesetzt, wobei GPS deaktiviert ist.
 
-3. When any of these options are changed from the default, the **Emulation** tab will show an informational alert to indicate that some aspect of your browser's behavior is being emulated.
+3. Wenn eine dieser Optionen von der Standardeinstellung geändert wird, wird auf der Registerkarte **Emulation** eine Informationswarnung angezeigt, die darauf hinweist, dass ein Aspekt des Verhaltens Ihres Browsers emuliert wird.
 
-## Device
+## Gerät
 
-Pick from a preset list of Windows device profiles which  automatically configure the other emulation options or specify your own *Custom* configuation. Switch back to *Default* to reset all the emulation tools.
+Wählen Sie aus einer vordefinierten Liste von Windows-Geräteprofilen aus, die die anderen Emulationsoptionen automatisch konfigurieren oder Ihre eigene *benutzerdefinierte* Konfigurations. Wechseln Sie zurück zu *Standard* , um alle Emulations Tools zurückzusetzen.
 
-## Mode
+## Modus
 
-### Browser profile
-A quick way to simulate your page running on a Windows Phone device is to change the **Browser profile** setting to *Windows Phone*.
+### Browser Profil
+Eine schnelle Möglichkeit zum Simulieren der auf einem Windows Phone-Gerät ausgeführten Seite besteht darin, die **Browser Profil** Einstellung auf *Windows Phone*zu ändern.
 
-#### User agent string
+#### Benutzer-Agent-Zeichenfolge
 
-Modifying your user agent string to mimic another browser is a good first step in debugging errors that are only happening in Microsoft Edge. 
+Das Ändern der Zeichenfolge des Benutzer-Agents, um einen anderen Browser zu imitieren, ist ein guter erster Schritt beim Debuggen von Fehlern, die nur in Microsoft Edge stattfinden. 
 
-Front end and/or back end scripts sometimes use the user agent string  to detect which browser you're using. And even when you're not using browser detection in your own code, you may be using a third-party JavaScript library or server-side script that does.
+Frontend-und/oder Back-End-Skripte verwenden manchmal die Zeichenfolge des Benutzer-Agents, um zu ermitteln, welchen Browser Sie verwenden. Und selbst wenn Sie die Browsererkennung nicht in Ihrem eigenen Code verwenden, verwenden Sie möglicherweise eine JavaScript-Bibliothek eines Drittanbieters oder ein serverseitiges Skript.
 
-The problem with browser detection is that it's often used to scale back or change the features in a webpage based on what the developer writing the script thinks your browser can do, rather than detecting what your browser can actually do using feature detection. This can cause unexpected behavior, because code targeted at Windows Internet Explorer 8 can run very differently in Microsoft Edge; or a feature your browser is perfectly capable of supporting might be disabled because of an assumption made by the developer.
+Das Problem bei der Browsererkennung besteht darin, dass Sie häufig verwendet wird, um die Features in einer Webseite zu skalieren oder zu ändern, basierend auf dem, was der Entwickler, der das Skript schreibt, von Ihrem Browser abhängt, anstatt zu erkennen, was Ihr Browser tatsächlich mithilfe der Feature-Erkennung tun kann. Dies kann zu unerwartetem Verhalten führen, da Code, der auf Windows Internet Explorer 8 ausgerichtet ist, in Microsoft Edge sehr unterschiedlich ausgeführt werden kann. oder ein Feature, das Ihr Browser hervorragend unterstützt, ist möglicherweise aufgrund einer vom Entwickler vorgenommenen Annahme deaktiviert.
 
-If changing your user agent string clears up the problem, browser detection is likely culprit.
+Wenn das Problem durch Ändern der Zeichenfolge des Benutzer-Agents behoben wird, ist die Browsererkennung wahrscheinlich eine Ursache.
 
-## Display
+## Anzeige
 
-Display emulation lets you preview your site on different screen sizes and resolutions: from conventional desktop monitors to smaller mobile screens or newer high-resolution displays.
+Mit der Anzeige Emulation können Sie eine Vorschau Ihrer Website auf unterschiedlichen Bildschirmgrößen und-Auflösungen anzeigen: von herkömmlichen Desktop Monitoren bis zu kleineren mobilen Bildschirmen oder neueren Displays mit hoher Auflösung.
 
-Emulations are adapted to try and match the physical dimensions of the screens being emulated. Emulated pixels might appear compressed or expanded, and emulation is not recommended if you need to test pixel-perfect positioning of HTML elements. Emulation is, however, good for testing responsive designs and identifying larger element positioning issues.
+Emulationen sind so angepasst, dass Sie den physikalischen Abmessungen der emulierten Bildschirme entsprechen. Emulierte Pixel werden möglicherweise komprimiert oder erweitert angezeigt, und es wird keine Emulation empfohlen, wenn Sie die pixelperfekte Positionierung von HTML-Elementen testen müssen. Die Emulation eignet sich jedoch gut für das Testen von reaktionsfähigen Designs und das identifizieren größerer Element Positionierungsprobleme.
 
-### Orientation
+### Ausrichtung
 
-Choose from *Landscape* or *Portrait* mode.
+Wählen Sie im *quer* Format oder *Hochformat* aus.
 
-### Resolution
+### Lösung
 
-Choose from a preset list of popular device resolutions, or specify your own *Custom* config. Resolutions of up to 80 inches and 3820 x 2160 are supported.
+Wählen Sie aus einer vordefinierten Liste gängiger Geräte Auflösungen aus, oder geben Sie Ihre eigene *benutzerdefinierte* Konfiguration an. Es werden Auflösungen von bis zu 80 Zoll und 3820 x 2160 unterstützt.
 
 ## Geolocation
 
-If your site uses the [Geolocation API](https://developer.mozilla.org/docs/Web/API/Geolocation/Using_geolocation) to provide location-based services, you can easily test different GPS coordinates and sensor states from the convenience of your desktop. These settings will override any actual GPS coordinates and the sensor state on machines that support geolocation. 
+Wenn Ihre Website die [Geolocation-API](https://developer.mozilla.org/docs/Web/API/Geolocation/Using_geolocation) verwendet, um standortbasierte Dienste bereitzustellen, können Sie unterschiedliche GPS-Koordinaten und Sensorzustände ganz einfach aus der Bequemlichkeit Ihres Desktops testen. Mit diesen Einstellungen werden alle tatsächlichen GPS-Koordinaten und der Sensorzustand auf Computern, die Geolokation unterstützen, außer Kraft gesetzt. 
 
-As with any usage of personal data on the web, your users will first need to grant your site permission to use their location. You can test how your site behaves with and without location permissions from the Microsoft Edge *Settings* panel:
+Wie bei jeder Verwendung personenbezogener Daten im Internet müssen Ihre Benutzer zunächst Ihrer Website die Berechtigung erteilen, Ihren Standort zu verwenden. Sie können über den Microsoft Edge *Settings* -Bereich testen, wie sich Ihre Website mit und ohne Standort Berechtigungen verhält:
 
-**...** > **Settings** > **View advanced settings** > **Website permissions** > **Manage**
+**...** >  **Einstellungen**  >  **Erweiterte Einstellungen anzeigen**  >  **Website Berechtigungen**  >  **Verwalten** von
 
-![Manage website permissions from the Microsoft Edge Settings panel](./media/settings_manage_permissions.png)
+![Verwalten von Websiteberechtigungen über den Microsoft Edge Settings-Dialog](./media/settings_manage_permissions.png)
 
-## Shortcuts
+## Verknüpfungen
 
-| Action                   | Shortcut               |
+| Aktion                   | Tastenkombination               |
 |:-------------------------|:-----------------------|
-| Reset Emulation settings | `CTRL` + `SHIFT` + `L` |
+| Zurücksetzen von Emulationseinstellungen | `CTRL` + `SHIFT` + `L` |

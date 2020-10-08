@@ -1,12 +1,12 @@
 ---
-description: Use the Console command line to interact with a running page
-title: DevTools - Console - Command Line
+description: Verwenden der Konsolen Befehlszeile für die Interaktion mit einer ausgeführten Seite
+title: DevTools-Console-Befehlszeile
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools, console command line
+keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools, Befehlszeile der Konsole
 ms.custom: seodec18
 ms.openlocfilehash: c661736e5ea264f60279c89cfa0f9c55361d2288
 ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
@@ -15,83 +15,83 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "10568456"
 ---
-# Console command line
+# Befehlszeile der Konsole
 
-Use the Console command line to view and change values on a page and execute debug code on the fly, all while taking advantage of Visual Studio [*IntelliSense*](/visualstudio/ide/javascript-intellisense) auto code completion. 
+Verwenden Sie die Befehlszeile der Konsole, um Werte auf einer Seite anzuzeigen und zu ändern, und führen Sie im Handumdrehen Debugcode aus, während Sie alle die Vorteile der automatischen Codevervollständigung in Visual Studio [*IntelliSense*](/visualstudio/ide/javascript-intellisense) nutzen. 
 
-Simply enter any valid JavaScript at the command line prompt and press `Enter` to execute. For multi-line input use `Shift+Enter` to add a line-break. Use the `Up` and `Down` arrow keys to navigate through previous console commands you entered during the current  DevTools session. In addition to standard JavaScript and the [Console API](./console-api.md), the Console also supports the following commands for:
+Geben Sie einfach ein beliebiges gültiges JavaScript an der Eingabeaufforderung ein, und drücken Sie `Enter` zum Ausführen. Verwenden Sie die mehrzeiligen Eingabe `Shift+Enter` , um eine Zeile zu unterbrechen. Verwenden `Up` Sie die `Down` Pfeiltasten, um durch die vorherigen Konsolenbefehle zu navigieren, die Sie während der aktuellen devtools-Sitzung eingegeben haben. Neben dem Standard-JavaScript und der [Konsolen-API](./console-api.md)unterstützt die Konsole auch die folgenden Befehle für:
 
- - [Selecting DOM objects](#dom-selectors)
- - [Inspecting object properties](#object-inspection)
- - [Finding all the event listeners on a given object](#event-listeners)
+ - [Auswählen von DOM-Objekten](#dom-selectors)
+ - [Überprüfen von Objekteigenschaften](#object-inspection)
+ - [Auffinden aller Ereignis-Listener für ein bestimmtes Objekt](#event-listeners)
 
-Script entered in the command line executes in the [global scope](/scripting/javascript/advanced/variable-scope-javascript) of the currently selected window, unless the page is paused at a breakpoint. Console commands entered while the page is paused will execute in the [local scope](/scripting/javascript/advanced/variable-scope-javascript) of the current function within the call stack.
+Das in die Befehlszeile eingegebene Skript wird im [globalen Bereich](/scripting/javascript/advanced/variable-scope-javascript) des aktuell ausgewählten Fensters ausgeführt, es sei denn, die Seite wird an einem Haltepunkt angehalten. Die während der angehenden Seite eingegebenen Konsolenbefehle werden im [lokalen Bereich](/scripting/javascript/advanced/variable-scope-javascript) der aktuellen Funktion innerhalb der Aufrufliste ausgeführt.
 
-The Console has a **Target** execution context drop-down just above the Console output area. The default selection is the top-level document, **_top**. Any iframes in the document or running extensions will also appear as options, allowing you to alternately run commands within those scopes.
+Die Konsole hat eine Dropdownliste für den **Ziel** Ausführungskontext direkt oberhalb des Ausgabebereichs der Konsole. Die Standardauswahl ist das Dokument auf oberster Ebene, **_top**. Alle iframes im Dokument oder in ausgeführten Erweiterungen werden auch als Optionen angezeigt, sodass Sie abwechselnd Befehle in diesen Bereichen ausführen können.
 
-## DOM selectors
-These console selectors provide simple shorthands for quickly accessing objects within the DOM:
+## Dom-Auswahlen
+Diese Konsolen Auswahl bietet einfache Abkürzungen für den schnellen Zugriff auf Objekte innerhalb des Dom:
 
-### $(*CSS selector string*)
-Returns the first element within the document matching the specified [CSS selector](https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS/Selectors)  (or comma-separated group of selectors) string. Shorthand for [document.querySelector()](https://developer.mozilla.org/docs/Web/API/Document/querySelector).
+### $ (*CSS-Auswahlzeichenfolge*)
+Gibt das erste Element innerhalb des Dokuments zurück, das der angegebenen [CSS-Auswahl](https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS/Selectors)  Zeichenfolge (oder einer durch Trennzeichen getrennten Gruppe von Selektoren) entspricht. Kurzform für [Document. querySelector ()](https://developer.mozilla.org/docs/Web/API/Document/querySelector).
 
-Example: Open the console and type `$('#main')` to return the div object with `id='main'` on this page.
+Beispiel: Öffnen Sie die Konsole, und geben `$('#main')` Sie ein, um das DIV-Objekt `id='main'` auf dieser Seite zurückzugeben.
 
-![Example use of '$' selector](../media/console_cmd_$.png)
+![Beispiel für die Verwendung von "$"-Auswahl](../media/console_cmd_$.png)
 
-### $$(*CSS selector string*)
-Returns an array of elements within the document matching the specified [CSS selector](https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS/Selectors)  (or comma-separated group of selectors) string. Shorthand for [document.querySelectorAll()](https://developer.mozilla.org/docs/Web/API/Document/querySelectorAll).
+### $ $ (*CSS-Auswahlzeichenfolge*)
+Gibt ein Array von Elementen innerhalb des Dokuments zurück, die der angegebenen [CSS-Auswahl](https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS/Selectors)  Zeichenfolge (oder einer durch Trennzeichen getrennten Gruppe von Selektoren) entsprechen. Kurzform für [Document. querySelectorAll ()](https://developer.mozilla.org/docs/Web/API/Document/querySelectorAll).
 
-Example: Open the console and type `$$('.container')` to return all the div objects with `class='container'` on this page.
+Beispiel: Öffnen Sie die Konsole, und geben `$$('.container')` Sie ein, um alle div-Objekte `class='container'` auf dieser Seite zurückzugeben.
 
-![Example use of '$$' selector](../media/console_cmd_$$.png)
+![Beispiel für die Verwendung von "$ $"-Auswahl](../media/console_cmd_$$.png)
 
 ### $0, $1, $2,...
-Returns the last elements selected in the [**Elements**](../elements.md) panel, where `$0` represents the currently selected item, `$1` was the selected item before that, and so on.
+Gibt die letzten Elemente zurück, die im Bereich " [**Elemente**](../elements.md) " ausgewählt sind, wobei `$0` das aktuell ausgewählte Element, `$1` das ausgewählte Element davor usw. ist.
 
-Example: Open  DevTools to the **Elements** tab, press `CTRL + B` to activate the **Select element** tool and click some area on this page with your mouse. Now open the Console and type `$0` to return the element you just clicked.
+Beispiel: Öffnen Sie devtools auf der Registerkarte **Elemente** , drücken Sie, `CTRL + B` um das Tool **Element auswählen** zu aktivieren, und klicken Sie mit der Maus auf einen Bereich auf dieser Seite. Öffnen Sie nun die Konsole, und geben `$0` Sie ein, um das Element zurückzugeben, auf das Sie gerade geklickt haben.
 
-![Example use of '$0' selector](../media/console_cmd_$0.png)
+![Beispiel für die Verwendung der Auswahl "$0"](../media/console_cmd_$0.png)
 
-### $x(*XPath expression*)
-Returns an array of elements matched by the specified [XPath](https://developer.mozilla.org/docs/Introduction_to_using_XPath_in_JavaScript) expression. 
+### $x (*XPath-Ausdruck*)
+Gibt ein Array von Elementen zurück, die mit dem angegebenen [XPath](https://developer.mozilla.org/docs/Introduction_to_using_XPath_in_JavaScript) -Ausdruck übereinstimmen. 
 
-Example: Open the console and type `$x('//script[@defer]')` to return all the `<script>` elements on this page that contain a `defer` attribute.
+Beispiel: Öffnen Sie die Konsole, und geben `$x('//script[@defer]')` Sie ein, um alle `<script>` Elemente auf dieser Seite zurückzugeben, die ein `defer` Attribut enthalten.
 
-![Example use of '$x' selector](../media/console_cmd_$x.png)
+![Beispiel für die Verwendung der Auswahl "$x"](../media/console_cmd_$x.png)
 
-## Object inspection
+## Objektprüfung
 
-These commands provide quick ways to inspect the properties of an object. The specified object must either be defined in the global namespace or the current scope of the debugger.
+Diese Befehle bieten schnelle Möglichkeiten zum Überprüfen der Eigenschaften eines Objekts. Das angegebene Objekt muss entweder im globalen Namespace oder im aktuellen Bereich des Debuggers definiert sein.
 
-### dir(*object*)
-Returns a tree view list of properties for the specified object.
+### dir (*Objekt*)
+Gibt eine Strukturansicht-Liste der Eigenschaften für das angegebene Objekt zurück.
 
-Example: Open the console and type `dir(document)` to see the object properties for the document object representing this page.
+Beispiel: Öffnen Sie die Konsole, und geben `dir(document)` Sie die Objekteigenschaften für das Dokumentobjekt ein, das diese Seite darstellt.
 
-![Example use of 'dir' method](../media/console_cmd_dir.png)
+![Beispiel für die Verwendung der "dir"-Methode](../media/console_cmd_dir.png)
 
-### keys(*object*)
-Returns an array of property names attached to the specified object.
+### Keys (*Objekt*)
+Gibt ein Array von Eigenschaftennamen zurück, die dem angegebenen Objekt angefügt sind.
 
-Example: Open the console and type `keys(window)` to return all of the properties defined on the global window object.
+Beispiel: Öffnen Sie die Konsole, und geben `keys(window)` Sie einen Wert ein, um alle Eigenschaften zurückzugeben, die für das globale Fensterobjekt definiert sind.
 
-![Example use of 'keys' method](../media/console_cmd_keys.png)
+![Beispiel für die Verwendung der "Keys"-Methode](../media/console_cmd_keys.png)
 
-### values(*object*)
-Returns an array of property values attached to the specified object.
+### Werte (*Objekt*)
+Gibt ein Array von Eigenschaftswerten zurück, die an das angegebene Objekt angefügt sind.
 
-Example: Open the console and type `values(window)` to return the values of all the properties (keys) defined on the global window object.
+Beispiel: Öffnen Sie die Konsole, und geben `values(window)` Sie die Werte aller Eigenschaften (Schlüssel) zurück, die für das globale Fensterobjekt definiert sind.
 
-![Example use of 'values' method](../media/console_cmd_values.png)
+![Beispiel für die Verwendung der "Values"-Methode](../media/console_cmd_values.png)
 
-## Event listeners
+## Ereignis-Listener
 
-This command allows you to inspect the event listeners registered to a given object. The specified object must either be defined in the global namespace or the current scope of the  debugger.
+Mit diesem Befehl können Sie die für ein bestimmtes Objekt registrierten Ereignislistener untersuchen. Das angegebene Objekt muss entweder im globalen Namespace oder im aktuellen Bereich des Debuggers definiert sein.
 
-### getEventListeners(*object*)
-Returns an object containing a key for each registered event type on the given object. The value of each key is an array of event listeners and their related info. 
+### getEventListeners (*Objekt*)
+Gibt ein Objekt zurück, das einen Schlüssel für die einzelnen registrierten Ereignistypen für das angegebene Objekt enthält. Der Wert der einzelnen Schlüssel ist ein Array von Ereignislistener und zugehörigen Informationen. 
 
-Example: Open the console and type `getEventListeners(document)` to see all the event listeners registered on the document object of this page.
+Beispiel: Öffnen Sie die Konsole, und geben `getEventListeners(document)` Sie ein, um alle Ereignislistener anzuzeigen, die für das Document-Objekt dieser Seite registriert sind.
 
-![Example use of 'getEventListeners' method](../media/console_cmd_getEventListeners.png)
+![Beispiel für die Verwendung der "getEventListeners"-Methode](../media/console_cmd_getEventListeners.png)

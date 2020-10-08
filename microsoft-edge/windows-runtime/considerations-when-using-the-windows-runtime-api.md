@@ -1,5 +1,5 @@
 ---
-title: Considerations when Using the Windows Runtime API
+title: Überlegungen bei der Verwendung der Windows-Runtime-API
 ms.custom: ''
 ms.date: 07/29/2020
 ms.prod: microsoft-edge
@@ -22,31 +22,31 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 08/20/2020
 ms.locfileid: "10942217"
 ---
-# Considerations when using the Windows Runtime API  
+# Überlegungen bei der Verwendung der Windows-Runtime-API  
 
 [!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
 
-You can use nearly every element of the Windows Runtime API in JavaScript.  However, there are some aspects of the JavaScript representation of Windows Runtime elements that you should keep in mind.  
+Sie können nahezu jedes Element der Windows-Runtime-API in JavaScript verwenden.  Es gibt jedoch einige Aspekte der JavaScript-Darstellung von Windows-Runtime-Elementen, die Sie berücksichtigen sollten.  
 
 > [!IMPORTANT]
-> For information about creating Windows Runtime components in C++, C#, or Visual Basic and consuming them in JavaScript, see [Creating Windows Runtime Components in C++][WindowsUwpComponentsCreatingCpp] and [Creating Windows Runtime Components in C# and Visual Basic][WindowsUwpComponentsCreatingCsharpVb].  
+> Informationen zum Erstellen von Komponenten für Windows-Runtime in c++, c# oder Visual Basic und deren Verwendung in JavaScript finden Sie unter Erstellen von Komponenten für Windows-Runtime [in c++][WindowsUwpComponentsCreatingCpp] und [Erstellen von Komponenten für Windows-Runtime in C# und Visual Basic][WindowsUwpComponentsCreatingCsharpVb].  
 
-## Special cases in the JavaScript Representation of Windows Runtime types  
+## Sonderfälle in der JavaScript-Darstellung von Windows-Runtime-Typen  
 
 :::row:::
    :::column span="1":::
-      Strings  
+      Zeichenfolgen  
    :::column-end:::
    :::column span="3":::
-      An uninitialized string is passed to a Windows Runtime method as the string "undefined", and a string set to `null` is passed as the string "null".  \(This is true whenever a `null` or `undefined` value is coerced to a string.\)  Before you pass a string to a Windows Runtime method, you should initialize it as the empty string \(""\).  
+      Eine nicht initialisierte Zeichenfolge wird als Zeichenfolge "undefined" an eine Windows-Runtime-Methode übergeben, und ein Zeichenfolgensatz, `null` der als Zeichenfolge "Null" übergeben wird.  \ (Dies ist wahr, wenn ein `null` oder `undefined` -Wert in eine Zeichenfolge umgewandelt wird. \) bevor Sie eine Zeichenfolge an eine Windows-Runtime-Methode übergeben, sollten Sie Sie als leere Zeichenfolge initialisieren \ ("" \).  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      Interfaces  
+      Schnittstellen  
    :::column-end:::
    :::column span="3":::
-      You cannot implement a Windows Runtime interface in JavaScript.  
+      Sie können in JavaScript keine Windows-Runtime-Schnittstelle implementieren.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -54,49 +54,49 @@ You can use nearly every element of the Windows Runtime API in JavaScript.  Howe
       Arrays  
    :::column-end:::
    :::column span="3":::
-      Windows Runtime arrays are not resizable, so methods that resize arrays in JavaScript do not work on Windows Runtime arrays.  
-      *   Arrays: If you pass a JavaScript array value to a Windows Runtime method, the array is copied.  The Windows Runtime method is not able to modify the array or its members and return it to your JavaScript app.  However, you can use typed arrays \(for example, [Int32Array Object][MDNInt32array]\), which are not copied.  
+      Windows-Runtime-Arrays sind nicht veränderbar, daher funktionieren Methoden, die die Größe von Arrays in JavaScript ändern, nicht auf Windows-Runtime-Arrays.  
+      *   Arrays: Wenn Sie einen JavaScript-Array Wert an eine Windows-Runtime-Methode übergeben, wird das Array kopiert.  Die Windows-Runtime-Methode kann das Array oder seine Member nicht ändern und an Ihre JavaScript-App zurückgeben.  Sie können jedoch typisierte Arrays verwenden (beispielsweise Int32Array- [Objekt][MDNInt32array]\), die nicht kopiert werden.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      Structures  
+      Strukturen  
    :::column-end:::
    :::column span="3":::
-      Windows Runtime structures are objects in JavaScript.  If you want to pass a Windows Runtime structure to a Windows Runtime method, don't instantiate the structure with the `new` keyword.  Instead, create an object and add the relevant members and their values.  The names of the members should be in camel case: `SomeStruct.firstMember`.  
+      Windows-Runtime-Strukturen sind Objekte in JavaScript.  Wenn Sie eine Windows-Runtime-Struktur an eine Windows-Runtime-Methode übergeben möchten, instanziieren Sie die Struktur nicht mit dem `new` Schlüsselwort.  Erstellen Sie stattdessen ein Objekt, und fügen Sie die relevanten Member und deren Werte hinzu.  Die Namen der Mitglieder sollten im Camel-Fall liegen: `SomeStruct.firstMember` .  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      Objects  
+      Objekte  
    :::column-end:::
    :::column span="3":::
-      JavaScript objects aren't the same as managed code objects \(`System.Object`\).  You can't pass a JavaScript object to a Windows Runtime method that requires a `System.Object`.  
+      JavaScript-Objekte sind nicht mit verwalteten Code Objekten identisch `System.Object` .  Sie können ein JavaScript-Objekt nicht an eine Windows-Runtime-Methode übergeben, für die ein `System.Object` .  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      Object identity  
+      Objektidentität  
    :::column-end:::
    :::column span="3":::
-      In most cases, the objects passed back and forth between the Windows Runtime and JavaScript do not change.  The JavaScript engine maintains a map of known objects.  When an object is returned from the Windows Runtime it is matched against the map, and if it does not exist a new object is created.  The same procedure is followed for objects that represent interfaces that are returned by Windows Runtime methods.  There are two kinds of exceptions:  
+      In den meisten Fällen ändern sich die Objekte, die zwischen der Windows-Runtime und JavaScript hin-und hergeleitet werden, nicht.  Das JavaScript-Modul verwaltet eine Karte mit bekannten Objekten.  Wenn ein Objekt von der Windows-Runtime zurückgegeben wird, wird es mit der Zuordnung abgeglichen, und wenn es nicht vorhanden ist, wird ein neues Objekt erstellt.  Das gleiche Verfahren wird für Objekte befolgt, die Schnittstellen darstellen, die von Windows-Runtime-Methoden zurückgegeben werden.  Es gibt zwei Arten von Ausnahmen:  
       
-      *   Objects that are returned from a Windows Runtime call, and then have new \(expando\) properties added, don't retain their new properties when they are passed back to the Windows Runtime.  However, when they are returned to the JavaScript app, because they're matched to the existing object, the returned object does have the expando properties.  
-      *   Structures and delegates in Windows Runtime can't be identified as identical to previously-used structures or delegates.  Every time a structure or delegate is returned, it gets a new reference.  
+      *   Objekte, die von einem Windows-Runtime-Aufruf zurückgegeben werden und dann neue \ (Expando \)-Eigenschaften hinzugefügt wurden, behalten ihre neuen Eigenschaften nicht bei, wenn Sie an die Windows-Runtime zurückgegeben werden.  Wenn Sie jedoch an die JavaScript-App zurückgegeben werden, da Sie dem vorhandenen Objekt zugeordnet sind, verfügt das zurückgegebene Objekt über die Expando-Eigenschaften.  
+      *   Strukturen und Stellvertretungen in der Windows-Runtime können nicht als identisch mit zuvor verwendeten Strukturen oder Stellvertretungen identifiziert werden.  Jedes Mal, wenn eine Struktur oder ein Delegat zurückgegeben wird, wird ein neuer Verweis abgerufen.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      Name collisions  
+      Namenskollisionen  
    :::column-end:::
    :::column span="3":::
-      Multiple Windows Runtime interfaces may have members with the same names.  If they are combined in a single JavaScript object (which can be a representation of a runtime class or an interface), the members are represented with fully-qualified names.  You can call these members by using the following syntax:  
+      Mehrere Windows-Runtime-Schnittstellen verfügen möglicherweise über Member mit den gleichen Namen.  Wenn Sie in einem einzelnen JavaScript-Objekt kombiniert werden (Dies kann eine Darstellung einer Runtime-Klasse oder einer Schnittstelle sein), werden die Member durch vollqualifizierte Namen dargestellt.  Sie können diese Member mithilfe der folgenden Syntax aufrufen:  
       
       ```cpp
       Class["MemberName"](parameter)
       ```  
       
-      In the following code, two interfaces have a Draw method, and a runtime class implements both interfaces.  
+      Im folgenden Code verfügen zwei Schnittstellen über eine Draw-Methode, und eine Runtime-Klasse implementiert beide Schnittstellen.  
       
       ```cpp
       namespace CollisionExample {
@@ -115,7 +115,7 @@ You can use nearly every element of the Windows Runtime API in JavaScript.  Howe
       }
       ```  
       
-      Here is how you can call the above code in JavaScript.  
+      Hier erfahren Sie, wie Sie den obigen Code in JavaScript aufrufen können.  
       
       ```javascript
       var example = new ExampleObject();
@@ -126,10 +126,10 @@ You can use nearly every element of the Windows Runtime API in JavaScript.  Howe
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      `Out` parameters  
+      `Out` Parameter  
    :::column-end:::
    :::column span="3":::
-      If a Windows Runtime method has multiple `out` parameters, in JavaScript the method has a JavaScript object as its return value, and the object has properties that correspond to the `out` parameter.  For example, consider the following Windows Runtime signature in C++.  
+      Wenn eine Windows-Runtime-Methode über mehrere `out` Parameter verfügt, verfügt die Methode in JavaScript über ein JavaScript-Objekt als Rückgabewert, und das Objekt verfügt über Eigenschaften, die dem `out` Parameter entsprechen.  Nehmen Sie beispielsweise die folgende Windows-Runtime-Signatur in C++ in Frage.  
       
       ```cpp
       void ExampleMethod(
@@ -138,21 +138,21 @@ You can use nearly every element of the Windows Runtime API in JavaScript.  Howe
       )
       ```  
       
-      The JavaScript version of this signature is:  
+      Die JavaScript-Version dieser Signatur lautet:  
       
       ```javascript
       var returnValue = exampleMethod();
       ```  
       
-      In this example, `returnValue` is a JavaScript object that has two fields: `first` and `second`.  
+      In diesem Beispiel `returnValue` ist ein JavaScript-Objekt mit zwei Feldern: `first` und `second` .  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      Static members  
+      Statische Member  
    :::column-end:::
    :::column span="3":::
-      The Windows Runtime defines both static members and instance members.  In JavaScript, static members are added to the object that is associated with the Windows Runtime class or interface.  
+      Die Windows-Runtime definiert sowohl statische Member als auch Instanzen Mitglieder.  In JavaScript werden statische Member dem Objekt hinzugefügt, das der Windows-Runtime-Klasse oder-Schnittstelle zugeordnet ist.  
       
       ```javascript
       // Static method.
@@ -163,13 +163,13 @@ You can use nearly every element of the Windows Runtime API in JavaScript.  Howe
    :::column-end:::
 :::row-end:::  
     
-For more information about the JavaScript representation of Windows Runtime basic types, see [JavaScript Representation of Windows Runtime Types][WindowsRuntimeJavascriptTypes].  
+Weitere Informationen zur JavaScript-Darstellung von Windows-Runtime Basic-Typen finden Sie unter [JavaScript-Darstellung von Windows-Runtime-Typen][WindowsRuntimeJavascriptTypes].  
 
 <!-- links -->  
  
-[WindowsRuntimeJavascriptTypes]: ./javascript-representation-of-windows-runtime-types.md "JavaScript Representation of Windows Runtime Types | Microsoft Docs"
+[WindowsRuntimeJavascriptTypes]: ./javascript-representation-of-windows-runtime-types.md "JavaScript-Darstellung von Windows-Runtime-Typen | Microsoft docs"
 
-[WindowsUwpComponentsCreatingCpp]: /windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp "Windows Runtime components with C++/CX | Microsoft Docs"  
-[WindowsUwpComponentsCreatingCsharpVb]: /windows/uwp/winrt-components/creating-windows-runtime-components-in-csharp-and-visual-basic "Windows Runtime components with C# and Visual Basic | Microsoft Docs"  
+[WindowsUwpComponentsCreatingCpp]: /windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp "Komponenten für Windows-Runtime mit C++/CX | Microsoft docs"  
+[WindowsUwpComponentsCreatingCsharpVb]: /windows/uwp/winrt-components/creating-windows-runtime-components-in-csharp-and-visual-basic "Komponenten für Windows-Runtime mit C# und Visual Basic | Microsoft docs"  
 
 [MDNInt32array]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Int32Array "Int32Array | MDN"  

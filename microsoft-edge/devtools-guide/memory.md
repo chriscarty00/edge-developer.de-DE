@@ -1,12 +1,12 @@
 ---
-description: Use the Memory panel to
-title: DevTools - Memory
+description: Verwenden Sie den Speicher-Panel, um
+title: DevTools – Arbeitsspeicher
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools, memory, heap, GC, garbage collection, retained size, dominators
+keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools, Arbeitsspeicher, Heap, GC, Garbage Collection, Aufbewahrungs Größe, dominierer
 ms.custom: seodec18
 ms.openlocfilehash: 416ba144f7e22bd50f5d2a3437bc21d9d31a9035
 ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
@@ -15,167 +15,167 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "10567610"
 ---
-# Memory
+# Arbeitsspeicher
 
-Use the **Memory** panel to measure your use of system resources and compare heap snapshots at different states of code execution. With it, you can:
+Verwenden Sie den **Speicher** Panel, um ihre Verwendung von Systemressourcen zu messen und Heap-Snapshots in verschiedenen Zuständen der Codeausführung zu vergleichen. Damit haben Sie folgende Möglichkeiten:
 
-- [Graph the memory consumption of your page in real time](#memory-usage-timeline) and take snapshots of the heap
-- [Identify potential memory issues](#snapshot-summary) in your code, such as retained objects not attached to the DOM
-- [Review memory usage data](#snapshot-details) by object type, instance count, size, and references to help isolate issues
-- [Apply snapshot data filters](#filters) to reduce the noise of non-actionable information
-- [Identify the memory cost of a specific object](#object-references) and the references keeping it alive
-- [Diff the heap at different phases of your investigation](#snapshot-comparison) to track down the source of memory leaks and other problems
+- Zeichnen Sie [den Speicherverbrauch Ihrer Seite in Echtzeit ab](#memory-usage-timeline) , und nehmen Sie Schnappschüsse des Heaps auf
+- [Ermitteln potenzieller Arbeitsspeicherprobleme](#snapshot-summary) in Ihrem Code, beispielsweise aufbewahrte Objekte, die nicht an das DOM angefügt sind
+- [Überprüfen von Speicher Nutzungsdaten](#snapshot-details) nach Objekttyp, instanzenanzahl, Größe und verweisen, um Probleme zu isolieren
+- [Anwenden von Snapshot-Daten filtern](#filters) , um das Rauschen nicht umsetzbar Informationen zu verringern
+- [Ermitteln der Speicherkosten für ein bestimmtes Objekt](#object-references) und die Verweise, die es beibehalten
+- Untersuchen Sie [den Heap in verschiedenen Phasen der Untersuchung](#snapshot-comparison) , um die Quelle von Speicherverlusten und anderen Problemen zu ermitteln.
 
-![The Microsoft Edge  DevTools Memory panel](./media/memory.png)
-
-
-## Toolbar
-
-1. **Start/Stop profiling session (Ctrl+E)**: Turning on the profiler enables you to track memory usage and take snapshots of the heap.
-2. **Import profiling session (Ctrl+O)**: Load a saved  DevTools memory diagnostic session.
-3. **Export profiling session (Ctrl+S)**: Save the current diagnostic session to disk.
-4. **Take heap snapshot (Ctrl+Shift+T)**: Record current memory allocations for a given point of time.
+![Der Microsoft Edge devtools-Speicher Panel](./media/memory.png)
 
 
-## Memory usage timeline
+## Symbolleiste
 
-Memory problems can be a major culprit of performance issues, causing your page to become increasingly unresponsive and laggy over time.
+1. **Starten/Beenden der Profilerstellungssitzung (STRG + E)**: Wenn Sie den Profiler aktivieren, können Sie die Speicherauslastung nachvollziehen und Snapshots des Heaps aufnehmen.
+2. **Profilerstellungssitzung importieren (STRG + O)**: Laden Sie eine gespeicherte devtools-Speicherdiagnose Sitzung.
+3. **Profilerstellungssitzung exportieren (STRG + S)**: Speichern Sie die aktuelle Diagnosesitzung auf dem Datenträger.
+4. Erstellen eines **Heap-Snapshots (STRG + UMSCHALT + T)**: Aufzeichnen der aktuellen Speicherzuweisungen für einen bestimmten Zeitpunkt.
 
-The first step to analyzing the memory usage of your page is to [start a profiling session](#toolbar) in order to take before/after snapshots of the heap as you repro the steps causing memory bloat or a suspected memory leak.
 
-When you start the memory profiler, you will see a process memory graph that allows you to observe the overall private working set (the amount of memory consumed by the page) over time. The memory graph shows you a live view of the tab's process memory, which includes private bytes, native memory, and the JavaScript heap. 
+## Speicher Auslastungs Zeitachse
 
-![Memory usage timeline](./media/memory_timeline.png)
+Speicherprobleme können ein Hauptverursacher von Leistungsproblemen sein, was dazu führt, dass Ihre Seite zunehmend nicht mehr reagiert und im Laufe der zeitverzögert wird.
 
- The graph gives you an indication of the memory trend for the page which enables you to judge when it is appropriate to [take a heap snapshot](#toolbar) for later comparison, such as when you see periods of unexpected memory retention.
+Der erste Schritt bei der Analyse der Speichernutzung Ihrer Seite besteht darin, [eine Profilerstellungssitzung zu starten](#toolbar) , um vor/nach-Snapshots des Heaps zu erstellen, während Sie die Schritte zum Aufblasen des Arbeitsspeichers oder einen vermuteten Speicherverlust durchführen.
 
-### Performance.mark()
+Wenn Sie den Speicher Profiler starten, wird ein Prozess Speicher Diagramm angezeigt, in dem Sie den gesamten privaten Arbeitssatz (die Menge des von der Seite verbrauchten Arbeitsspeichers) über einen Zeitraum beobachten können. Im Arbeitsspeicher Diagramm wird eine Live Ansicht des Arbeitsspeichers der Registerkarte angezeigt, die private Bytes, systemeigenen Speicher und den JavaScript-Heap umfasst. 
 
-You can add custom **User marks** to the timeline to help identify  key events during the course of your analysis session by calling the [`Performance.mark()`](https://developer.mozilla.org/docs/Web/API/Performance/mark) method from within your code or the  DevTools [**Console**](./console.md).
+![Speicher Auslastungs Zeitachse](./media/memory_timeline.png)
 
-### Console.takeheapSnapshot()
+ Das Diagramm zeigt den speichertrend für die Seite an, mit dem Sie beurteilen können, wann [ein Heap-Schnappschuss für einen](#toolbar) späteren Vergleich geeignet ist, beispielsweise wenn Sie Zeiträume mit unerwarteter Speicher Aufbewahrung sehen.
 
-Sometimes you need to take snapshots at very specific points in time, such as immediately before a large mutation of the DOM. In these cases,you can take snapshots programmatically with [`Console.takeHeapSnapshot()`](./console/console-api.md#taking-heap-snapshots).
+### Performance. Mark ()
 
-## Snapshot summary
+Sie können der Zeitachse benutzerdefinierte **Benutzermarkierungen** hinzufügen, um wichtige Ereignisse im Verlauf der Analysesitzung zu identifizieren, indem Sie die [`Performance.mark()`](https://developer.mozilla.org/docs/Web/API/Performance/mark) Methode im Code oder in der devtools- [**Konsole**](./console.md)aufrufen.
 
-[Taking a snapshot](#toolbar) will generate a summary tile that indicates the size of the JavaScript heap at the time the snapshot was taken, along with the number of objects allocated and a screenshot of the page. You can continue to take snapshots at any time as you run through the user scenario requiring analysis. The snapshots generate additional tiles, each of which indicates the difference in JavaScript memory from the previous snapshot.
+### Console. takeheapSnapshot ()
 
-![Heap snapshot](./media/memory_snapshot.png)
+Manchmal müssen Sie Schnappschüsse zu sehr bestimmten Zeitpunkten aufnehmen, beispielsweise unmittelbar vor einer großen Mutation des DOM. In diesen Fällen können Sie Schnappschüsse programmgesteuert mit ausführen [`Console.takeHeapSnapshot()`](./console/console-api.md#taking-heap-snapshots) .
 
-Clicking on the values in the summary tile will switch to the pane showing [details of the snapshot data](#snapshot-details). Potential [memory issues are indicated](#snapshot-details) with a blue informational ("i") icon.
+## Zusammenfassung der Momentaufnahme
 
-## Snapshot details
+Wenn Sie [einen Schnappschuss](#toolbar) erstellen, wird eine Zusammenfassungs Kachel generiert, die die Größe des JavaScript-Heaps zum Zeitpunkt des Schnappschusses sowie die Anzahl der zugewiesenen Objekte und einen Screenshot der Seite angibt. Sie können jederzeit während der Ausführung des Benutzerszenarios, in dem eine Analyse erforderlich ist, Snapshots aufnehmen. Die Snapshots generieren zusätzliche Kacheln, die jeweils den Unterschied im JavaScript-Speicher aus dem vorherigen Snapshot angeben.
 
-The data in the *Snapshot* pane shows the objects created by your page along with any memory allocated by JavaScript frameworks you may be consuming.
+![Heap-Snapshot](./media/memory_snapshot.png)
 
-![Snapshot details table](./media/memory_details.png)
+Durch Klicken auf die Werte in der Zusammenfassungs Kachel wechseln Sie zu dem Bereich, in dem [Details zu den Momentaufnahme Daten](#snapshot-details)angezeigt werden. Potenzielle [Speicherprobleme werden](#snapshot-details) mit einem blauen Informationssymbol ("i") angezeigt.
 
-The three tabs represent different views of the data:
+## Details zur Momentaufnahme
 
-#### Types
+Die Daten im *Momentaufnahme* Bereich zeigen die von Ihrer Seite erstellten Objekte zusammen mit allen von JavaScript-Frameworks zugewiesenen Arbeitsspeichers, die Sie möglicherweise verwenden.
 
-Shows the instance count and total size of objects on the heap, grouped by object type. By default, these are sorted by instance count.
+![Snapshot-Detailtabelle](./media/memory_details.png)
 
-When you select an object in the upper *Types* pane, the [Object references](#object-references) table in the lower pane will list all the objects that point to that object.
+Die drei Registerkarten stellen unterschiedliche Ansichten der Daten dar:
 
-#### Roots
+#### Typen
 
-Shows a hierarchical view of child references to describe how objects are rooted to the global object, thus preventing them from being garbage-collected.
+Zeigt die Anzahl der Instanzen und die Gesamtgröße von Objekten im Heap, gruppiert nach Objekttyp. Standardmäßig werden diese nach instanzenanzahl sortiert.
 
-By default, the child nodes are sorted by the retained size column, with the largest at the top.
+Wenn Sie ein Objekt im Bereich obere *Typen* auswählen, werden in der Tabelle [Objektverweise](#object-references) im unteren Bereich alle Objekte aufgelistet, die auf das Objekt verweisen.
+
+#### Wurzeln
+
+Zeigt eine hierarchische Ansicht der untergeordneten Bezüge an, um zu beschreiben, wie Objekte zum globalen Objekt verwurzelt sind, wodurch verhindert wird, dass Sie von der Garbage Collection erfasst werden.
+
+Standardmäßig werden die untergeordneten Knoten nach der Spalte mit der Beibehaltungs Größe sortiert, wobei der größte oben ist.
 
 #### Dominators
 
-Shows a list of objects on the heap that have exclusive references to other objects. Dominators are sorted by retained size to indicate the objects consuming the most memory that are potentially easiest to free.
+Zeigt eine Liste der Objekte auf dem Heap, die exklusive Bezüge zu anderen Objekten aufweisen. Die dominierer werden nach Beibehaltungs Größe sortiert, um die Objekte anzugeben, die den meisten Speicher verbrauchen, die möglicherweise am einfachsten zu befreien sind.
 
-Here's how to interpret the columns in the *Types, Roots* and *Dominators* views:
+Hier erfahren Sie, wie Sie die Spalten in den Ansichten *Typen, Stämme* und *Dominanzen* interpretieren:
 
-Column | Description
+Spalte | Beschreibung
 :------------ | :-------------
-Identifier(s) | Name that best identifies the object. For example, for HTML elements the snapshot details show the ID attribute value, if one is used.
-Type | Object type (for example, *HTMLDivElement*).
-Size | Object size, not including the size of any referenced objects.
-Retained size | Object size plus the size of all child objects that have no other parents. For practical purposes, this is the amount of memory retained by the object, so if you delete the object you reclaim the specified amount of memory.
-Count | Number of object instances. This value appears only in the Types view.
+Kennung (en) | Der Name, der das Objekt am besten identifiziert. Bei HTML-Elementen zeigt die momentaufnahmedetails beispielsweise den ID-Attributwert an, wenn eine verwendet wird.
+Typ | Objekttyp (beispielsweise *HTMLDivElement*).
+Size | Objektgröße, ohne die Größe von referenzierten Objekten.
+Beibehaltungs Größe | Objektgröße plus die Größe aller untergeordneten Objekte, die keine anderen übergeordneten Elemente aufweisen. Für praktische Zwecke ist dies die Größe des vom Objekt aufbewahrten Arbeitsspeichers, wenn Sie also das Objekt löschen, wird die angegebene Speichermenge zurückgefordert.
+Anzahl | Die Anzahl der Objektinstanzen. Dieser Wert wird nur in der Ansicht Typen angezeigt.
 
-When you select an object in the upper *Dominators* pane, the [Object references](#object-references) table in the lower pane will list all the objects that point to that object.
+Wenn Sie ein Objekt im Bereich obere *Dominanz* auswählen, werden in der Tabelle [Objektverweise](#object-references) im unteren Bereich alle Objekte aufgelistet, die auf das Objekt verweisen.
 
-### Filters
+### Filter
 
-You can further adjust data in the table with the following:
+Sie können die Daten in der Tabelle mit den folgenden Schritten weiter anpassen:
 
-![Filter for built-ins and object IDs](./media/memory_filter.png)
+![Filtern nach integrierten und Objekt-IDs](./media/memory_filter.png)
 
-1. **Identifier filter**: Filter out data by searching for a particular object identifier
-2. **Group by dominator**: Only objects with *exclusive* references to other objects are shown in the top-level view of objects (this is the default view in the *Dominators* tab).
-3. **Built-ins / IDs filter**: By default, [JavaScript built-in objects](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects) are included in the list. Listing object IDs can be useful if there are multiple anonymous objects which need to be differentiated.
+1. **Kennzeichnungs Filter**: Filtern von Daten durchsuchen nach einer bestimmten Objektkennung
+2. **Gruppieren nach Dominator**: nur Objekte mit *exklusiven* Bezügen auf andere Objekte werden in der Ansicht der obersten Ebene der Objekte angezeigt (Dies ist die Standardansicht auf der Registerkarte " *Herrscher* ").
+3. **Integrierter/IDs-Filter**: Standardmäßig sind [JavaScript-integrierte Objekte](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects) in der Liste enthalten. Das Auflisten von Objekt-IDs kann hilfreich sein, wenn mehrere anonyme Objekte unterschieden werden müssen.
 
-The *Types, Roots* and *Dominators* views each has its own filter, so the filter isn't preserved when you switch to another view.
+Die Ansichten *Typen, Stämme* und *Dominanzen* verfügen jeweils über einen eigenen Filter, sodass der Filter nicht beibehalten wird, wenn Sie zu einer anderen Ansicht wechseln.
 
-### Object references
+### Objekt Bezüge
 
-In the [**Types**](#types) and [**Dominators**](#dominators) views, the lower pane contains an **Object references** list that displays shared references. When you choose an object in the upper pane, this list displays all objects that point to that object--in other words, the objects that are keeping the selected object alive.
+In den Ansichten [**Typen**](#types) und [**Dominanzen**](#dominators) enthält der untere Bereich eine **Objektverweis** Liste, in der freigegebene Verweise angezeigt werden. Wenn Sie ein Objekt im oberen Bereich auswählen, werden in dieser Liste alle Objekte angezeigt, die auf das Objekt verweisen, also die Objekte, die das ausgewählte Objekt am Leben erhalten.
 
-Circular references are shown with an asterisk (*) and informational tooltip, and cannot be expanded. Otherwise, they would prevent you from walking up the reference tree and identifying objects that are retaining memory.
+Zirkelbezüge werden mit einem Sternchen (*) und Informations ToolTip angezeigt und können nicht erweitert werden. Andernfalls verhindern Sie, dass Sie die Referenzstruktur hinauflaufen und Objekte identifizieren, die Speicher erhalten.
 
-To quickly identify equivalent objects, tick the [*Display object IDs*](#filters) filter option to display object IDs next to object names in the *Identifier(s)* column. Objects that have the same ID are shared references.
+Um gleichwertige Objekte schnell zu identifizieren, markieren Sie die Option " [*Objekt-IDs anzeigen*](#filters) ", um Objekt-IDs neben Objektnamen in der Spalte " *Identifier (s)* " anzuzeigen. Objekte mit der gleichen ID sind freigegebene Verweise.
 
-### Snapshot comparison
+### Snapshot-Vergleich
 
-Clicking on a [snapshot comparison tab](#snapshot-details) or comparison link on the [snapshot summary tile](#snapshot-summary)  will show a diff of information between the two snapshots. In the comparison pane, the *Dominators, Types* and *Roots* views provide the same [*snapshot details*](#snapshot-details) you would see for a single snapshots, with these additional values:
+Durch Klicken auf die [Registerkarte "Snapshot-Vergleich"](#snapshot-details) oder den Vergleichs Link auf der [Kachel "Snapshot-Zusammenfassung](#snapshot-summary)  " wird ein Unterschied zwischen den beiden Schnappschüssen angezeigt. Im Vergleichsbereich bieten die Vorwahlen *, Typen* und *Stamm* Ansichten dieselben Snapshot- [*Details*](#snapshot-details) , die Sie für einzelne Schnappschüsse sehen würden, mit den folgenden zusätzlichen Werten:
 
-Column | Description
+Spalte | Beschreibung
 :------------ | :-------------
-Size diff. | Difference between the size of the object in the current snapshot and its size in the previous snapshot, not including the size of any referenced objects.
-Retained size diff. | Difference between the retained size of the object in the current snapshot and its retained size in the previous snapshot. The retained size includes the object size plus the size of all its child objects that have no other parents. For practical purposes, the retained size is the amount of memory retained by the object, so if you delete the object you reclaim the specified amount of memory.
+Größenunterschied. | Unterschied zwischen der Größe des Objekts im aktuellen Snapshot und seiner Größe im vorherigen Snapshot, ohne die Größe von referenzierten Objekten.
+Unterschiede bei der Beibehaltungs Größe | Unterschied zwischen der aufbewahrten Größe des Objekts im aktuellen Snapshot und der Beibehaltungs Größe im vorherigen Schnappschuss. Die Beibehaltungs Größe umfasst die Objektgröße plus die Größe aller untergeordneten Objekte, die keine anderen übergeordneten Elemente aufweisen. Für praktische Zwecke ist die Größe des Speichers, der vom Objekt aufbewahrt wird, also, wenn Sie das Objekt löschen, das Sie den angegebenen Arbeitsspeicher zurückfordern.
 
-You can use the **Scope** dropdown to filter differential info between snapshots:
+Sie können die Dropdownliste **Bereichs** verwenden, um differenzielle Informationen zwischen Snapshots zu filtern:
 
-![Scoping filter for snapshot comparisions](./media/memory_comparison_scope_filter.png)
+![Bereichsfilter für Snapshot-Vergleiche](./media/memory_comparison_scope_filter.png)
 
-- <strong>Objects left over from Snapshot #<number></strong>: Shows the diff between the objects added to the heap and removed from the heap from the baseline snapshot to the previous snapshot. For example, if the snapshot summary shows <em>+205 / -195</em> in the object count, this filter will show you the ten objects that were added but not removed.
+- <strong>Objekte, die von "Snapshot #" übrig <number></strong> sind, zeigt die Differenz zwischen den Objekten, die dem Heap hinzugefügt wurden, und aus dem Heap vom Basisplan zum vorherigen Snapshot entfernt. Wenn beispielsweise in der Zusammenfassung der Momentaufnahme <em> + 205/-195 </em> in der Objektanzahl angezeigt wird, werden in diesem Filter die zehn Objekte angezeigt, die hinzugefügt, aber nicht entfernt wurden.
 
-- <strong>Objects added between Snapshot #<number> and #<number></strong>: Shows all objects added to the heap from the previous snapshot.
+- <strong>Zwischen Snapshot # und #: hinzugefügte Objekte <number> <number></strong> zeigt alle Objekte, die dem Heap aus dem vorherigen Snapshot hinzugefügt wurden.
 
-- <strong>All objects in Snapshot #<number></strong>: Shows all objects on the heap (in other words, an <em>unfiltered</em> view).
+- <strong>Alle Objekte in Snapshot # <number></strong> : zeigt alle Objekte auf dem Heap an (also eine <em> ungefilterte </em> Ansicht).
 
-By default, the *Show non-matching references* filter is applied to the comparison view to indicate object references that don't match the current Scope filter. You can turn it off from the dropdown menu:
+Standardmäßig wird der Filter *nicht übereinstimmende Bezüge anzeigen* auf die Vergleichsansicht angewendet, um Objekt Bezüge anzugeben, die dem aktuellen Bereichsfilter nicht entsprechen. Sie können es über das Dropdown-Menü deaktivieren:
 
-![Non-matching references filter for snapshot comparisons](./media/memory_comparison_matching_filter.png)
+![Filter für nicht übereinstimmende Bezüge für Snapshot-Vergleiche](./media/memory_comparison_matching_filter.png)
 
 
-## Shortcuts
+## Verknüpfungen
 
- Action | Shortcut
+ Aktion | Tastenkombination
 :------------ | :-------------
-Start / Stop profiling session  | `Ctrl` + `E`
-Import profiling session | `Ctrl` + `O`
-Export profiling session | `Ctrl` + `S`
-Take heap snapshot | `Ctrl` + `Shift` + `T`
+Starten/Beenden der Profilerstellungssitzung  | `Ctrl` + `E`
+Profilerstellungssitzung importieren | `Ctrl` + `O`
+Profilerstellungssitzung exportieren | `Ctrl` + `S`
+Snapshot des Heaps aufnehmen | `Ctrl` + `Shift` + `T`
 
-## Known Issues
+## Bekannte Probleme
 
-### An error occurred while starting the profiling session
+### Beim Starten der Profilerstellungssitzung ist ein Fehler aufgetreten.
 
-If you see this error message: **An error occurred while starting the profiling session** in the Memory tool, follow these steps for a workaround.
+Wenn diese Fehlermeldung angezeigt wird: **beim Starten der Profilerstellungssitzung im Speicher Tool ist ein Fehler aufgetreten** , führen Sie die folgenden Schritte aus, um eine Problemumgehung zu erhalten.
 
-1. Press `Windows Key` + `R`.
+1. Drücken Sie `Windows Key`  +  `R` .
 
-2. In the Run dialog, enter **services.msc**.
-![known-issues-1](./media/known_issues_1.PNG)
+2. Geben Sie im Dialogfeld Ausführen den **Dienst "Services. msc**" ein.
+![Bekannte Probleme-1](./media/known_issues_1.PNG)
 
-3. Locate the **Microsoft (R) Diagnostics Hub Standard Collector Service** and right-click it.
-![known-issues-2](./media/known_issues_2.PNG)
+3. Suchen Sie den **Microsoft (R) Diagnostics Hub Standard-Kollektor Dienst** , und klicken Sie mit der rechten Maustaste darauf.
+![Bekannte Probleme-2](./media/known_issues_2.PNG)
 
-4. Restart the **Microsoft (R) Diagnostics Hub Standard Collector Service**.
-![known-issues-3](./media/known_issues_3.PNG)
+4. Starten Sie den **Microsoft (R) Diagnostics Hub Standard-Kollektor Dienst**erneut.
+![Bekannte Probleme-3](./media/known_issues_3.PNG)
 
-5. Close the Microsoft Edge Developer Tools and the tab. Open a new tab, navigate to your page, and press `F12`.
+5. Schließen Sie die Microsoft Edge-Entwickler Tools und die Registerkarte. Öffnen Sie eine neue Registerkarte, navigieren Sie zu Ihrer Seite, und drücken Sie `F12` .
 
-6. You should now be able to begin profiling. 
-![known-issues-4](./media/known_issues_4-memory.PNG)
+6. Sie sollten jetzt in der Lage sein, mit der Profilerstellung zu beginnen. 
+![Bekannte Probleme-4](./media/known_issues_4-memory.PNG)
 
-Still running into problems? Please send us your feedback using the **Send feedback** icon! 
+Gibt es immer noch Probleme? Senden Sie uns Ihr Feedback über das Symbol **Feedback senden** ! 
 
-![known-issues-5](./media/known_issues_5.PNG)
+![Bekannte Probleme-5](./media/known_issues_5.PNG)

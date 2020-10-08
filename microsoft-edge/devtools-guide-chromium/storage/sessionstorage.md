@@ -1,12 +1,12 @@
 ---
-description: How to view and edit sessionStorage with the Session Storage pane and the Console.
-title: View And Edit Session Storage With Microsoft Edge DevTools
+description: Informationen zum Anzeigen und Bearbeiten von sessionStorage mit dem Sitzungsspeicher Bereich und der Konsole.
+title: Anzeigen und Bearbeiten des Sitzungs Speichers mit Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
 ms.openlocfilehash: 24fca3fd3a068f3b2ffbe4ec1c23e6b80b968953
 ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
@@ -32,81 +32,81 @@ ms.locfileid: "10993548"
 
 
 
-# View and edit Session Storage with Microsoft Edge DevTools   
+# Anzeigen und Bearbeiten des Sitzungs Speichers mit Microsoft Edge devtools   
 
   
 
-This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to view, edit, and delete [`sessionStorage`][MDNSessionStorage] key-value pairs.  
+In diesem Leitfaden wird gezeigt, wie Sie mit [Microsoft Edge devtools][MicrosoftEdgeDevTools] [`sessionStorage`][MDNSessionStorage] Schlüssel-Wert-Paare anzeigen, bearbeiten und löschen können.  
 
-## View sessionStorage keys and values   
+## Anzeigen von sessionStorage-Schlüsseln und-Werten   
 
-1.  Select the **Application** tab to open the **Application** panel.  The **Manifest** pane is shown by default.  
+1.  Wählen Sie die Registerkarte **Anwendung** aus, um den **Anwendungs** Panel zu öffnen.  Standardmäßig wird der Bereich **Manifest** angezeigt.  
     
-    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-manifest.msft.png":::
-       The **Manifest** pane  
+    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="Bereich ' Manifest '" lightbox="../media/storage-application-manifest.msft.png":::
+       Bereich ' **Manifest** '  
     :::image-end:::  
     
-1.  Expand the **Session Storage** menu.  
+1.  Erweitern Sie das Menü **Sitzungsspeicher** .  
     
-    :::image type="complex" source="../media/storage-application-storage-session-storage.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-storage-session-storage.msft.png":::
-       The **Session Storage** Menu  
+    :::image type="complex" source="../media/storage-application-storage-session-storage.msft.png" alt-text="Bereich ' Manifest '" lightbox="../media/storage-application-storage-session-storage.msft.png":::
+       Das Menü " **Sitzungsspeicher** "  
     :::image-end:::  
     
-1.  Select a domain to view the key-value pairs.  
+1.  Wählen Sie eine Domäne aus, um die Schlüssel-Wert-Paare anzuzeigen.  
     
-    :::image type="complex" source="../media/storage-application-storage-session-storage-domain.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-storage-session-storage-domain.msft.png":::
-       The `sessionStorage` key-value pairs  
+    :::image type="complex" source="../media/storage-application-storage-session-storage-domain.msft.png" alt-text="Bereich ' Manifest '" lightbox="../media/storage-application-storage-session-storage-domain.msft.png":::
+       Die `sessionStorage` Schlüssel-Wert-Paare  
     :::image-end:::  
     
-1.  Select a row of the table to view the value in the viewer below the table.  
+1.  Wählen Sie eine Zeile der Tabelle aus, um den Wert im Viewer unter der Tabelle anzuzeigen.  
     
-    :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-selected.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-storage-session-storage-domain-key-value-selected.msft.png":::
-       View the value of the `x-sid` key  
+    :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-selected.msft.png" alt-text="Bereich ' Manifest '" lightbox="../media/storage-application-storage-session-storage-domain-key-value-selected.msft.png":::
+       Anzeigen des Werts des `x-sid` Schlüssels  
     :::image-end:::  
     
-## Create a new sessionStorage key-value pair   
+## Erstellen eines neuen sessionStorage-Schlüssel-Wert-Paars   
 
-1.  [View the `sessionStorage` key-value pairs of a domain](#view-sessionstorage-keys-and-values).  
-1.  Double-click the empty part of the table.  DevTools creates a new row and focuses your cursor in the **Key** column.  
+1.  [Anzeigen der `sessionStorage` Schlüssel-Wert-Paare einer Domäne](#view-sessionstorage-keys-and-values)  
+1.  Doppelklicken Sie auf den leeren Teil der Tabelle.  DevTools erstellt eine neue Zeile und fokussiert den Cursor in der **Schlüssel** Spalte.  
     
-    :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png":::
-       The empty part of the table to double-click in order to create a new key-value pair  
+    :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png" alt-text="Bereich ' Manifest '" lightbox="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png":::
+       Der leere Teil der Tabelle zum doppelklicken, um ein neues Schlüssel-Wert-Paar zu erstellen  
     :::image-end:::  
     
-## Edit sessionStorage keys or values   
+## Bearbeiten von sessionStorage-Schlüsseln oder-Werten   
 
-1.  [View the `sessionStorage` key-value pairs of a domain](#view-sessionstorage-keys-and-values).  
-1.  Double-click a cell in the **Key** or **Value** column to edit that key or value.  
+1.  [Anzeigen der `sessionStorage` Schlüssel-Wert-Paare einer Domäne](#view-sessionstorage-keys-and-values)  
+1.  Doppelklicken Sie auf eine Zelle in der Spalte **Schlüssel** oder **Wert** , um diesen Schlüssel oder Wert zu bearbeiten.  
     
-    :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-edit.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-storage-session-storage-domain-key-value-edit.msft.png":::
-       Edit a `sessionStorage` key  
+    :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-edit.msft.png" alt-text="Bereich ' Manifest '" lightbox="../media/storage-application-storage-session-storage-domain-key-value-edit.msft.png":::
+       Bearbeiten eines `sessionStorage` Schlüssels  
     :::image-end:::  
     
-## Delete sessionStorage key-value pairs   
+## Löschen von sessionStorage-Schlüssel-Wert-Paaren   
 
-1.  [View the `sessionStorage` key-value pairs of a domain](#view-sessionstorage-keys-and-values).  
-1.  Select the key-value pair that you want to delete.  DevTools highlights it blue to indicate that it is selected.  
-1.  Press the `Delete` key or click **Delete Selected** \(![Delete Selected][ImageDeleteIcon]\).  
+1.  [Anzeigen der `sessionStorage` Schlüssel-Wert-Paare einer Domäne](#view-sessionstorage-keys-and-values)  
+1.  Wählen Sie das Schlüssel-Wert-Paar aus, das Sie löschen möchten.  DevTools hebt das Blau hervor, um anzugeben, dass es markiert ist.  
+1.  Drücken Sie die Eingabe `Delete` Taste, oder klicken Sie auf **Ausgewählte löschen** \ ( ![ Auswahl löschen ][ImageDeleteIcon] \).  
     
-## Delete all sessionStorage key-value pairs for a domain   
+## Löschen aller sessionStorage-Schlüssel-Wert-Paare für eine Domäne   
 
-1.  [View the `sessionStorage` key-value pairs of a domain](#view-sessionstorage-keys-and-values).  
-1.  Select **Clear All** \(![Clear All][ImageClearIcon]\).  
+1.  [Anzeigen der `sessionStorage` Schlüssel-Wert-Paare einer Domäne](#view-sessionstorage-keys-and-values)  
+1.  Wählen Sie **Alle löschen** \ ( ![ Alle löschen ][ImageClearIcon] \) aus.  
     
-## Interact with sessionStorage from the Console   
+## Interagieren mit sessionStorage über die Konsole   
 
-Since you can run JavaScript in the **Console**, and since the **Console** has access to the JavaScript contexts of the page, it is possible to interact with `sessionStorage` from the **Console**.  
+Da sie JavaScript in der **Konsole**ausführen können und die **Konsole** Zugriff auf die JavaScript-Kontexte der Seite hat, ist es möglich, mit `sessionStorage` der **Konsole**zu interagieren.  
 
-1.  Use the **JavaScript contexts** menu to change the JavaScript context of the **Console** if you want to access the `sessionStorage` key-value pairs of a domain other than the page you are on.  
+1.  Verwenden Sie das **JavaScript** -Kontextmenü, um den JavaScript-Kontext der **Konsole** zu ändern, wenn Sie auf die `sessionStorage` Schlüssel-Wert-Paare einer anderen Domäne als auf die Seite zugreifen möchten, auf der Sie sich befinden.  
     
-    :::image type="complex" source="../media/storage-console-domain-selection.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-console-domain-selection.msft.png":::
-       Change the JavaScript context of the Console  
+    :::image type="complex" source="../media/storage-console-domain-selection.msft.png" alt-text="Bereich ' Manifest '" lightbox="../media/storage-console-domain-selection.msft.png":::
+       Ändern des JavaScript-Kontexts der Konsole  
     :::image-end:::  
     
-1.  Run your `sessionStorage` expressions in the Console, the same as you would in your JavaScript.  
+1.  Führen Sie Ihre `sessionStorage` Ausdrücke in der Konsole wie in Ihrem JavaScript aus.  
     
-    :::image type="complex" source="../media/storage-console-session-storage-keys.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-console-session-storage-keys.msft.png":::
-       Interact with `sessionStorage` from the **Console**  
+    :::image type="complex" source="../media/storage-console-session-storage-keys.msft.png" alt-text="Bereich ' Manifest '" lightbox="../media/storage-console-session-storage-keys.msft.png":::
+       Interagieren mit `sessionStorage` der **Konsole**  
     :::image-end:::  
     
 <!--  
@@ -122,16 +122,16 @@ Since you can run JavaScript in the **Console**, and since the **Console** has a
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chrom)-Entwicklertools | Microsoft docs"  
 
-[MDNSessionStorage]: https://developer.mozilla.org/docs/Web/API/Window/sessionStorage "Window.sessionStorage | MDN"  
+[MDNSessionStorage]: https://developer.mozilla.org/docs/Web/API/Window/sessionStorage "Window. sessionStorage | MDN"  
 
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/storage/sessionstorage) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
+> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
+> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/storage/sessionstorage) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
 
-[![Creative Commons License][CCby4Image]][CCA4IL]  
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
+[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

@@ -1,12 +1,12 @@
 ---
-description: Content Security Policy for Edge (Chromium) Extensions.
-title: Content Security Policy (CSP)
+description: Inhalts Sicherheitsrichtlinie für Edge (Chrom)-Erweiterungen.
+title: Inhalts Sicherheitsrichtlinie (CSP)
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
+keywords: Edge-Chromium, Erweiterungen-Entwicklung, Browser-Erweiterungen, Addons, Partner Center, Entwickler
 ms.openlocfilehash: f3769639465d048c42ad0705f74598fbd1db8a20
 ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
@@ -14,13 +14,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 09/15/2020
 ms.locfileid: "11015716"
 ---
-# Content Security Policy \(CSP\)  
+# Inhalts Sicherheitsrichtlinie \ (CSP \)  
 
-In order to mitigate a large class of potential cross-site scripting issues, the Microsoft Edge Extension system has incorporated the general concept of [Content Security Policy \(CSP\)][W3CContentSecurityPolicy].  This introduces some fairly strict policies that make Extensions more secure by default, and provides you with the ability to create and enforce rules governing the types of content that may be loaded and run by your Extensions and applications.  
+Um eine große Klasse potenzieller Probleme mit Website übergreifendem Skripting zu verringern, hat das Microsoft Edge-Erweiterungssystem das allgemeine Konzept der [Inhalts Sicherheitsrichtlinie (CSP \)][W3CContentSecurityPolicy]übernommen.  Dies führt einige ziemlich strenge Richtlinien ein, die Erweiterungen standardmäßig sicherer machen, und bietet Ihnen die Möglichkeit, Regeln für die Typen von Inhalten zu erstellen und zu erzwingen, die von ihren Erweiterungen und Anwendungen geladen und ausgeführt werden können.  
 
-In general, CSP works as a block/allowlisting mechanism for resources loaded or run by your Extensions.  Defining a reasonable policy for your Extension enables you to carefully consider the resources that your Extension requires, and to ask the browser to ensure that those are the only resources your Extension has access to.  These policies provide security over and above the host permissions your Extension requests; they are an additional layer of protection, not a replacement.  
+Im Allgemeinen funktioniert CSP als Block-allowlisting-Mechanismus für Ressourcen, die von ihren Erweiterungen geladen oder ausgeführt werden.  Wenn Sie eine angemessene Richtlinie für Ihre Erweiterung definieren, können Sie die Ressourcen, die ihre Erweiterung erfordert, sorgfältig berücksichtigen und den Browser bitten, sicherzustellen, dass dies die einzigen Ressourcen ist, auf die ihre Erweiterung zugreifen kann.  Diese Richtlinien bieten Sicherheit über die Host Berechtigungen für Ihre Erweiterungsanforderungen. Es handelt sich um eine zusätzliche Schutzebene, die nicht ersetzt werden kann.  
 
-On the web, such a policy is defined via an HTTP header or `meta` element.  Inside the Microsoft Edge Extension system, neither is an appropriate mechanism.  Instead, an Extension policy is defined via the `manifest.json` file for the Extension as follows:  
+Im Web wird eine solche Richtlinie über einen HTTP-Header oder- `meta` Element definiert.  Innerhalb des Microsoft Edge-Erweiterungssystems ist kein geeigneter Mechanismus.  Stattdessen wird eine Erweiterungs Richtlinie über die `manifest.json` Datei für die Erweiterung wie folgt definiert:  
 
 ```javascript
 {
@@ -30,21 +30,21 @@ On the web, such a policy is defined via an HTTP header or `meta` element.  Insi
 }
 ```  
 
-> For full details regarding the CSP syntax, please take a look at the [Content Security Policy specification][W3CContentSecurityPolicy] , and the ["An Introduction to Content Security Policy"][HTML5RocksIntroductionContentSecurityPolicy] article on HTML5Rocks.  
+> Ausführliche Informationen zur CSP-Syntax finden Sie in der [Inhalts Sicherheitsrichtlinien-Spezifikation][W3CContentSecurityPolicy] und im Artikel ["eine Einführung in die Inhaltssicherheit"][HTML5RocksIntroductionContentSecurityPolicy] auf HTML5Rocks.  
 
-## Default Policy Restrictions  
+## Standardmäßige Richtlinieneinschränkungen  
 
-Packages that do not define a `manifest_version` do not have a default content security policy.  Those that select `manifest_version` 2, have a default content security policy of:  
+Pakete, die keine definieren, `manifest_version` verfügen nicht über eine Standardrichtlinie für Inhaltssicherheit.  Für diejenigen, die `manifest_version` 2 auswählen, gibt es eine Standardrichtlinie für Inhaltssicherheit:  
 
 ```javascript
 script-src 'self'; object-src 'self'
 ```  
 
-This policy adds security by limiting Extensions and applications in three ways:  
+Diese Richtlinie bietet Sicherheit, indem Erweiterungen und Anwendungen auf drei Arten eingeschränkt werden:  
 
-**Eval and related functions are disabled**  
+**Eval und verwandte Funktionen sind deaktiviert**  
 
-Code like the following does not work:  
+Code wie den folgenden funktioniert nicht:  
 
 ```javascript
 alert(eval("foo.bar.baz"));
@@ -53,7 +53,7 @@ window.setInterval("alert('hi')", 10);
 new Function("return foo.bar.baz");
 ```  
 
-Evaluating strings of JavaScript like this is a common XSS attack vector.  Instead, you should write code like:
+Die Auswertung von Zeichenfolgen mit JavaScript wie diesem ist ein häufig verwendeter XSS-Angriffsvektor.  Stattdessen sollten Sie Code wie folgt schreiben:
 
 ```javascript
 alert(foo && foo.bar && foo.bar.baz);
@@ -62,11 +62,11 @@ window.setInterval(function() { alert('hi'); }, 10);
 function() { return foo && foo.bar && foo.bar.baz };
 ```  
 
-**Inline JavaScript are not run**  
+**Inline-JavaScript wird nicht ausgeführt**  
 
-Inline JavaScript are not run.  This restriction bans both inline `<script>` blocks and inline event handlers, such as `<button onclick="...">`.
+Inline-JavaScript wird nicht ausgeführt.  Diese Einschränkung `<script>` verbietet sowohl Inline Blöcke als auch Inline-Ereignishandler wie `<button onclick="...">` .
 
-The first restriction wipes out a huge class of cross-site scripting attacks by making it impossible for you to accidentally run the script provided by a malicious third-party.  It does, however, require you to write your code with a clean separation between content and behavior \(which you should of course do anyway, right?\).  An example may make this clearer.  You may try to write a Browser Action pop-up as a single `pop-up.html` containing:  
+Mit der ersten Einschränkung wird eine große Klasse von websiteübergreifenden Skripting-Angriffen gelöscht, da Sie das Skript, das von einem böswilligen Drittanbieter bereitgestellt wird, nicht versehentlich ausführen können.  Allerdings ist es erforderlich, dass Sie Ihren Code mit einer sauberen Trennung zwischen Inhalt und Verhalten schreiben \ (was Sie natürlich ohnehin tun sollten, oder? \).  Ein Beispiel kann dies deutlicher machen.  Sie können versuchen, ein Popup-Fenster für eine Browser Aktion zu schreiben, das `pop-up.html` Folgendes enthält:  
 
 ```html
 <!doctype html>
@@ -99,14 +99,14 @@ The first restriction wipes out a huge class of cross-site scripting attacks by 
 </html>
 ```  
 
-Three things must change in order to make this work the way you expect it to:  
+Drei Dinge müssen sich ändern, um diese Arbeit wie erwartet zu gestalten:  
 
-*   The `clickHandler` definition must be moved into an external JavaScript file \(`popup.js` may be a good target).  
-*   The inline event handler definitions must be rewritten in terms of `addEventListener` and extracted into `popup.js`.  
-    If you are currently starting your program using code like `<body onload="main();">`, consider replacing it by hooking into the `DOMContentLoaded` event of the document, or the `load` event of the window, depending on your requirements.  Use the former, since it generally triggers more quickly.  
+*   Die `clickHandler` Definition muss in eine externe JavaScript-Datei verschoben werden \ ( `popup.js` kann ein gutes Ziel sein).  
+*   Die Definitionen des Inline-Ereignishandlers müssen in Bezug auf `addEventListener` und extrahiert werden `popup.js` .  
+    Wenn Sie das Programm zurzeit mithilfe von Code wie starten `<body onload="main();">` , sollten Sie es in der Weise ersetzen, indem Sie das `DOMContentLoaded` Ereignis des Dokuments oder das `load` Ereignis des Fensters abhängig von Ihren Anforderungen einbinden.  Verwenden Sie das erstere, da es in der Regel schneller auslöst.  
 
-*   The `setTimeout` call must be rewritten to avoid converting the string `"awesome(); totallyAwesome()"` into JavaScript for running.  
-    Those changes may look something like the following:  
+*   Der `setTimeout` Aufruf muss neu geschrieben werden, um zu verhindern, dass die Zeichenfolge `"awesome(); totallyAwesome()"` in JavaScript für die Ausführung konvertiert wird.  
+    Diese Änderungen können etwa wie folgt aussehen:  
 
 ```javascript
 function awesome() {
@@ -152,11 +152,11 @@ document.addEventListener('DOMContentLoaded', function () {
 </html>
 ```  
 
-**Only local script and object resources are loaded**  
+**Es werden nur lokale Skript-und Objektressourcen geladen**  
 
-Script and object resources are only able to be loaded from the Extension package, not from the web at large.  This ensures that your Extension only runs the code you specifically approved, preventing an active network attacker from maliciously redirecting your request for a resource.  
+Skript-und Objektressourcen können nur aus dem Erweiterungspaket geladen werden, nicht aus dem ganzen Web.  Dadurch wird sichergestellt, dass Ihre Erweiterung nur den von Ihnen ausdrücklich genehmigten Code ausführt, wodurch verhindert wird, dass ein aktiver Netzwerk Angreifer Ihre Anforderung für eine Ressource in böswilliger Weise umleitet.  
 
-Instead of writing code that depends on jQuery \(or any other library\) loading from an external CDN, consider including the specific version of jQuery in your Extension package.  That is, instead of:  
+Anstatt Code zu schreiben, der von jQuery \ (oder einer anderen Bibliothek \) abhängig ist, die von einem externen CDN geladen werden, sollten Sie die spezifische Version von jQuery in Ihrem Erweiterungspaket einbeziehen.  Das heißt, statt:  
 
 ```html
 <!doctype html>
@@ -171,7 +171,7 @@ Instead of writing code that depends on jQuery \(or any other library\) loading 
 </html>
 ```  
 
-Download the file, include it in your package, and write:  
+Laden Sie die Datei herunter, fügen Sie Sie in Ihr Paket ein, und schreiben Sie Folgendes:  
 
 ```html
 <!doctype html>
@@ -186,75 +186,75 @@ Download the file, include it in your package, and write:
 </html>
 ```  
 
-## Relaxing the default policy  
+## Entspannen der Standardrichtlinie  
 
-**Inline Script**  
+**Inline Skript**  
 
 <!-- Up until Chrome 45, there was no mechanism for relaxing the restriction against running inline JavaScript.  In particular, setting a script policy that includes `'unsafe-inline'` has no effect.  
 
 As of Chrome 46, -->  
 
-Inline scripts are able to be allowed by specifying the base64-encoded hash of the source code in the policy.  This hash must be prefixed by the used hash algorithm \(sha256, sha384 or sha512\).  See [Hash usage for \<script\> elements][W3CContentSecurityPolicyLevel2ScriptSrcHashUsage] for an example.  
+Inline Skripts können durch Angabe des Base64-codierten Hashs des Quellcodes in der Richtlinie zugelassen werden.  Dieser Hash muss vom verwendeten Hashalgorithmus (SHA256, SHA384 oder SHA512 \) vorangestellt werden.  Ein Beispiel finden Sie unter [Hash Verwendung für \<script\> Elemente][W3CContentSecurityPolicyLevel2ScriptSrcHashUsage] .  
 
-**Remote Script**  
+**Remote Skript**  
 
-If you require some external JavaScript or object resources, you may relax the policy to a limited extent by allowlisting secure origins from which scripts should be accepted.  Verify that runtime resources loaded with with elevated permissions of an Extension are exactly the resources you expect, and are not replaced by an active network attacker.  As [man-in-the-middle attacks][WikiManMiddleAttacks] are both trivial and undetectable over HTTP, those origins are not accepted.  
+Wenn Sie einige externe JavaScript-oder Objektressourcen benötigen, können Sie die Richtlinie in begrenztem Umfang lockern, indem Sie allowlisting, um sicherzustellen, woher Skripts akzeptiert werden sollen.  Überprüfen Sie, ob Laufzeitressourcen, die mit erhöhten Berechtigungen einer Erweiterung geladen werden, genau die erwarteten Ressourcen sind und nicht durch einen aktiven Netzwerk Angreifer ersetzt werden.  Da [man-in-the-Middle-Angriffe][WikiManMiddleAttacks] sowohl trivial als auch unauffindbar über HTTP sind, werden diese Ursprünge nicht akzeptiert.  
 
-Currently, developers are able to allowlist origins with the following schemes: `blob`, `filesystem`, `https`, and `extension`.  The host part of the origin must explicitly be specified for the `https` and `extension` schemes.  Generic wildcards such as https:, `https://*` and `https://*.com` are not allowed; subdomain wildcards such as `https://*.example.com` are allowed.  Domains in the [Public Suffix list][PublicSuffixList] are also viewed as generic top-level domains.  To load a resource from these domains, the subdomain must explicitly be listed.  For example, `https://*.cloudfront.net` is not valid, but `https://XXXX.cloudfront.net` and `https://*.XXXX.cloudfront.net` are able to be allowlisted.  
+Derzeit können entwicklerlist-Ursprünge mit den folgenden Schemas zulassen: `blob` ,, `filesystem` `https` und `extension` .  Der Host-Teil des Ursprungs muss explizit für die `https` und-Schemas angegeben werden `extension` .  Generische Platzhalter wie https: `https://*` und `https://*.com` sind nicht zulässig; Platzhalter für Subdomänen wie `https://*.example.com` zulässig.  Domänen in der [Liste der öffentlichen Suffixe][PublicSuffixList] werden auch als generische Domänen auf oberster Ebene angezeigt.  Um eine Ressource aus diesen Domänen zu laden, muss die Unterdomäne explizit aufgelistet werden.  Ist beispielsweise `https://*.cloudfront.net` ungültig, kann aber `https://XXXX.cloudfront.net` `https://*.XXXX.cloudfront.net` allowlisted sein.  
 
-For development ease, resources loaded over HTTP from servers on your local machine are able to be allowlisted.  You may allowlist script and object sources on any port of either `http://127.0.0.1` or `http://localhost`.  
+Zur Vereinfachung der Entwicklung können Ressourcen, die über HTTP von Servern auf dem lokalen Computer geladen werden, allowlisted werden.  Sie könnenlist-Skript-und Objektquellen an einem beliebigen Port einer der beiden `http://127.0.0.1` oder zulassen `http://localhost` .  
 
 > [!NOTE]
-> The restriction against resources loaded over HTTP applies only to those resources which are directly run.  You are still free, for example, to make XMLHTTPRequest connections to any origin you like; the default policy does not restrict `connect-src` or any of the other CSP directives in any way.  
+> Die Beschränkung für Ressourcen, die über HTTP geladen werden, gilt nur für die Ressourcen, die direkt ausgeführt werden.  Sie sind nach wie vor kostenlos, um beispielsweise XMLHttpRequest-Verbindungen zu beliebigen Ursprungs zu machen, die Ihnen gefallen; die Standardrichtlinie schränkt `connect-src` oder keine der anderen CSP-Direktiven in irgendeiner Weise ein.  
 
-A relaxed policy definition which allows script resources to be loaded from example.com over HTTPS may look like:  
+Eine lockere Richtliniendefinition, mit der Skriptressourcen von example.com über HTTPS geladen werden können, sieht wie folgt aus:  
 
 ```javascript
 "content_security_policy": "script-src 'self' https://example.com; object-src 'self'"
 ```  
 
 > [!NOTE]
-> Both `script-src` and `object-src` are defined by the policy.  Microsoft Edge does not accept a policy that does not limit each of these values to \(at least\) '`self`'.  
+> Beide `script-src` und `object-src` werden durch die Richtlinie definiert.  Microsoft Edge akzeptiert keine Richtlinie, die die einzelnen Werte nicht auf \ (mindestens \) ' `self` ' beschränkt.  
 
 <!-- Making use of Google Analytics is the canonical example for this sort of policy definition.  It is common enough that an Analytics boilerplate of sorts is provided in the Event Tracking with Google Analytics sample Extension, and a brief tutorial that goes into more detail.  -->  
 
-**Evaluated JavaScript**  
+**JavaScript ausgewertet**  
 
-The policy against `eval()` and related functions like `setTimeout(String)`, `setInterval(String)`, and `new Function(String)` are able to be relaxed by adding `unsafe-eval` to your policy:  
+Die Richtlinie für `eval()` und verwandte Funktionen wie und `setTimeout(String)` `setInterval(String)` `new Function(String)` können durch Hinzufügen `unsafe-eval` zu Ihrer Richtlinie gelockert werden:  
 
 ```javascript
 "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 ```  
 
-However, we strongly recommend against doing this.  These functions are notorious XSS attack vectors.  
+Wir empfehlen jedoch dringend, dies zu tun.  Diese Funktionen sind berüchtigte XSS-Angriffsvektoren.  
 
-## Tightening the default policy  
+## Verschärfen der Standardrichtlinie  
 
-You may, of course, tighten this policy to whatever extent your Extension allows in order to increase security at the expense of convenience.  To specify that your Extension are able to only load resources of any type \(images, and so on\) from the associated Extension package, for example, a policy of `default-src 'self'` may be appropriate.  
+Sie können diese Richtlinie selbstverständlich so anziehen, wie es Ihre Erweiterung zulässt, um die Sicherheit zu Lasten der Bequemlichkeit zu erhöhen.  Um anzugeben, dass Ihre Erweiterung nur Ressourcen eines beliebigen Typs \ (Bilder usw.) aus dem zugehörigen Erweiterungspaket laden kann, ist beispielsweise eine Richtlinie von `default-src 'self'` geeignet.  
 
 <!-- The Mappy sample Extension is a good example of an Extension that is been locked down above and beyond the defaults.  -->  
 
-## Content Scripts  
+## Inhalts Skripts  
 
-The policy being discussing applies to the background pages and event pages of the Extension.  How the content scripts apply to the content scripts of the Extension is more complicated.  
+Die zu diskutierende Richtlinie gilt für die Hintergrundseiten und Ereignis Seiten der Erweiterung.  Die Art und Weise, wie die Inhalts Skripts auf die Inhalts Skripts der Erweiterung angewendet werden, ist komplizierter.  
 
-Content scripts are generally not subject to the CSP of the Extension.  Since content scripts are not HTML, the main impact of this is that they may use `eval` even if the CSP of the Extension does not specify `unsafe-eval`, although this is not recommended.  Additionally, the CSP of the page does not apply to content scripts.  More complicated are `<script>` tags that content scripts create and put into the DOM of the page they are running on.  These are referenced as DOM injected scripts going forward.  
+Inhalts Skripts unterliegen in der Regel nicht dem CSP der Erweiterung.  Da Inhalts Skripts keine HTML-Datei sind, ist dies hauptsächlich darauf zu verwenden, dass Sie auch dann verwendet werden können, `eval` Wenn der CSP der Erweiterung nicht angibt `unsafe-eval` , dies aber nicht empfohlen wird.  Darüber hinaus gilt der CSP der Seite nicht für Inhalts Skripts.  Komplizierter sind `<script>` Tags, die Inhalts Skripts erstellen und in das DOM der Seite einfügen, auf der Sie ausgeführt werden.  Diese werden als mit Dom-injizierte Skripts weitergeleitet.  
 
-DOM injected scripts that run immediately upon injection into the page runs as you may expect.  Imagine a content script with the following code as a simple example:  
+Dom-injizierte Skripts, die unmittelbar nach der Injektion in die Seite ausgeführt werden, werden wie erwartet ausgeführt.  Stellen Sie sich ein Inhalts Skript mit dem folgenden Code als einfaches Beispiel vor:  
 
 ```javascript
 document.write("<script>alert(1);</script>");
  ```  
 
-This content script causes an `alert` immediately upon the `document.write()`.  Note that this runs regardless of the policy a page may specify.
-However, the behavior becomes more complicated both inside that DOM injected script and for any script that does not immediately run upon injection.  Imagine that your Extension is running on a page that provides an associated CSP that specifies `script-src 'self'`.  Now imagine the content script runs the following code:  
+Dieses Inhalts Skript bewirkt `alert` unmittelbar nach dem `document.write()` .  Beachten Sie, dass dies unabhängig von der von einer Seite angegebenen Richtlinie ausgeführt werden kann.
+Das Verhalten wird jedoch sowohl innerhalb des DOM-injizierten Skripts als auch bei Skripten komplizierter, die nicht unmittelbar nach der Injektion ausgeführt werden.  Stellen Sie sich vor, dass Ihre Erweiterung auf einer Seite ausgeführt wird, die einen zugeordneten CSP bereitstellt, der angibt `script-src 'self'` .  Stellen Sie sich nun vor, dass das Inhalts Skript den folgenden Code ausführt:  
 
 ```javascript
 document.write("<button onclick='alert(1);'>click me</button>'");
 ```  
 
-If a user clicks on that button, the `onclick` script does not run.  This is because the script did not immediately run and code is not interpreted until the click event occurs is not considered part of the content script, so the CSP of the page \(not of the Extension\) restricts the behavior.  And since that CSP does not specify `unsafe-inline`, the inline event handler is blocked.  
-The correct way to implement the desired behavior in this case may be to add the `onclick` handler as a function from the content script as follows:  
+Wenn ein Benutzer auf diese Schaltfläche klickt, `onclick` wird das Skript nicht ausgeführt.  Dies liegt daran, dass das Skript nicht sofort ausgeführt wurde und Code nicht interpretiert wird, bis das Click-Ereignis nicht als Teil des Inhalts Skripts betrachtet wird, daher schränkt der CSP der Seite \ (nicht der Erweiterung \) das Verhalten ein.  Und da dieser CSP nicht angibt `unsafe-inline` , wird der Inline-Ereignishandler blockiert.  
+Die richtige Methode zum Implementieren des gewünschten Verhaltens in diesem Fall ist das Hinzufügen des `onclick` Handlers als Funktion aus dem Inhalts Skript wie folgt:  
 
 ```javascript
 document.write("<button id='mybutton'>click me</button>'");
@@ -264,7 +264,7 @@ button.onclick = function() {
 };
 ```  
 
-Another similar issue arises if the content script runs the following:  
+Ein anderes ähnliches Problem tritt auf, wenn das Inhalts Skript Folgendes ausführt:  
 
 ```javascript
 var script = document.createElement('script');
@@ -272,7 +272,7 @@ script.innerHTML = 'alert(1);'
 document.getElementById('body').appendChild(script);
 ```  
 
-In this case, the script runs and the alert displays.  However, take this case:  
+In diesem Fall wird das Skript ausgeführt, und die Benachrichtigung wird angezeigt.  In diesem Fall gehen Sie jedoch wie folgt vor:  
 
 ```javascript
 var script = document.createElement('script');
@@ -280,25 +280,25 @@ script.innerHTML = 'eval("alert(1);")';
 =document.getElementById('body').appendChild(script);
 ```  
 
-While the initial script runs, the call to `eval` is blocked.  That is, while the initial script runtime is allowed, the behavior within the script is regulated by the CSP of the page.  
-Thus, depending on how you write DOM injected scripts in your Extension, changes to the CSP of the page may affect the behavior of your Extension.  Since content scripts are not affected by the CSP of the page, this a great reason to put as much behavior as possible of your Extension into the content script rather than DOM injected scripts.  
+Während das anfängliche Skript ausgeführt wird, wird der Anruf an `eval` blockiert.  Das heißt, während die anfängliche Skriptlaufzeit zulässig ist, wird das Verhalten innerhalb des Skripts vom CSP der Seite reguliert.  
+Je nachdem, wie Sie in ihrer Erweiterung Dom-injizierte Skripts schreiben, kann sich die Änderung des CSP der Seite auf das Verhalten der Erweiterung auswirken.  Da Inhalts Skripts nicht vom CSP der Seite betroffen sind, ist dies ein guter Grund, um das Inhalts Skript so weit wie möglich von der Erweiterung zu versetzen, anstatt von Dom-injizierten Skripts.  
 
 <!-- image links -->  
 
 <!-- links -->  
 
-[HTML5RocksIntroductionContentSecurityPolicy]: https://www.html5rocks.com/en/tutorials/security/content-security-policy "An Introduction to Content Security Policy - HTML5 Rocks"  
-[PublicSuffixList]: https://publicsuffix.org/list "VIEW THE PUBLIC SUFFIX LIST"  
-[W3CContentSecurityPolicyLevel2ScriptSrcHashUsage]: https://www.w3.org/TR/CSP2#script-src-hash-usage "Hash usage for \<script\> elements - Content Security Policy Level 2"  
-[W3CContentSecurityPolicy]: https://w3c.github.io/webappsec-csp "Content Security Policy Level 3"  
-[WikiManMiddleAttacks]: https://en.wikipedia.org/wiki/Man-in-the-middle_attack "Man-in-the-middle attack - Wikipedia"  
+[HTML5RocksIntroductionContentSecurityPolicy]: https://www.html5rocks.com/en/tutorials/security/content-security-policy "Eine Einführung in die Inhalts Sicherheitsrichtlinie – HTML5 rockt"  
+[PublicSuffixList]: https://publicsuffix.org/list "Anzeigen der Liste der öffentlichen Suffixe"  
+[W3CContentSecurityPolicyLevel2ScriptSrcHashUsage]: https://www.w3.org/TR/CSP2#script-src-hash-usage "Hash Verwendung für \ <Skript \ > Elemente – Inhalts Sicherheitsrichtlinienebene 2"  
+[W3CContentSecurityPolicy]: https://w3c.github.io/webappsec-csp "Inhalts Sicherheitsrichtlinienebene 3"  
+[WikiManMiddleAttacks]: https://en.wikipedia.org/wiki/Man-in-the-middle_attack "Man-in-the-Middle-Angriff – Wikipedia"  
 
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developer.chrome.com/extensions/contentSecurityPolicy).  
+> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
+> Die ursprüngliche Seite finden Sie [hier](https://developer.chrome.com/extensions/contentSecurityPolicy).  
 
-[![Creative Commons License][CCby4Image]][CCA4IL]  
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
+[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
