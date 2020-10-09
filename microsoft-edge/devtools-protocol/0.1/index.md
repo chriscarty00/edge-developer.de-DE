@@ -7,12 +7,12 @@ ms.date: 03/05/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
-ms.openlocfilehash: 29dc8f1b0ba67cb2b3155cb2135d488609e9bff9
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 3c0648467c20572a525fe257788068966efd193c
+ms.sourcegitcommit: 845a0d53a86bee3678f421adee26b3372cefce57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10567549"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "11104735"
 ---
 # Versionshinweise zu devtools-Protokoll Version 0,1
 
@@ -25,7 +25,7 @@ Die Ziele hinter dem devtools-Protokoll sind drei Fach:
 
  - Bereitstelleneiner öffentlichen API für unsere devtools-App zum Anfügen an Microsoft Edge
  - Erweitern des Zugriffs auf die devtools-Funktionalität auf externe Tooling-Clients
- - Aktivieren des Remotedebuggens im gesamten Bereich von Windows 10-Geräten mit Micrsoft Edge 
+ - Aktivieren des Remotedebuggens im gesamten Bereich von Windows 10-Geräten mit Microsoft Edge 
 
 Diese vorläufige Version bietet Kernfunktionen zum Debuggen, wie das Festlegen von Haltepunkten, das Durchlaufen von Code und das Untersuchen von Stapelablaufverfolgungen. In der Benutzeroberfläche von Edge devtools wird dadurch die Funktionalität übersetzt, die im [**Debuggerfenster**](../../devtools-guide/debugger.md) zur Verfügung steht, minus Cache Überprüfung (für Web Storage, Service Worker, Cache-API und IndexedDB). 
 

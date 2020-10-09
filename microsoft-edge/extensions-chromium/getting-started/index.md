@@ -1,94 +1,67 @@
 ---
-description: Learn what a Chromium Extension is as well as progressively build a complete picture viewing Extension that includes options, content injection, background scripts, storage and more.
-title: Getting Started With Microsoft Edge (Chromium) Extensions
+description: Erfahren Sie mehr über Chromium-Erweiterungen und grundlegende Konzepte zum Erstellen von Erweiterungen.
+title: Konzepte und Architektur für Microsoft Edge (Chrom)-Erweiterungen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020
-ms.topic: article
+ms.date: 10/01/2020
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge-chromium, web development, html, css, javascript, developer, extensions
-ms.openlocfilehash: 31bb970201e8fe66c9996938fe8461d503d9c6a1
-ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
+keywords: Edge-Chromium, Web-Entwicklung, HTML, CSS, JavaScript, Entwickler, Erweiterungen
+ms.openlocfilehash: 8ffdd19e1a1e36a4d10fdd80bd7dd5654d543527
+ms.sourcegitcommit: 845a0d53a86bee3678f421adee26b3372cefce57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015723"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "11104728"
 ---
-# Getting Started With Microsoft Edge \(Chromium\) Extensions  
+# Erweiterungskonzepte und-Architektur
 
-If you want to jump directly into building your first Extension, go to part 1 of building a NASA picture of the day Extension.  
+Dieser Artikel enthält eine kurze Einführung in Konzepte, die beim Erstellen von Erweiterungen helfen. Um Microsoft Edge \ (Chrom \)-Erweiterungen zu verstehen, erläutern wir zunächst, wie Multi-Tab-Browser funktionieren.
 
-If you are not familiar with the Extension concepts and architecture, continue reading, and learn all about what Extensions are.  This information helps you build Extensions much more easily since you understand the motivations and architecture behind them.  
 
-## Build a NASA picture of the day Extension  
+## Grundlegendes zur Funktionsweise von Browsern
 
-Each section has the completed Extension source installation package referenced in it.  
+In der folgenden Liste werden hilfreiche Informationen erläutert, die Sie vor dem Erstellen Ihrer Erweiterung verstehen können.
 
-*   [Build a simple Extension that pops up NASA picture of the day](part1-simple-extension.md)  
-    *   Creating a Manifest  
-    *   Assign Extension icons  
-    *   Displaying a Pop-up Window  
-    *   Run your Extension locally in your browser \(side-loading\)  
+1.  Jede Registerkarte des Browsers ist von jeder anderen Registerkarte isoliert.  Jede Registerkarte wird in einem eigenen Thread ausgeführt, der von anderen browserregisterkarten und-Threads isoliert ist.
 
-*   [Dynamically insert NASA picture below the page body tag](part2-content-scripts.md)  
-    *   Create JavaScript that inserts dynamic content script  
-    *   Define in manifest which pages get content script  
-    *   Inject content script declaratively  
-    *   Add a Button on Pop-up to send a message to content script  
-    *   Receive a message inside a content script  
+    ![Ein Thread pro Browser-Registerkarte](media/index-image1-browsertabs.png)  
 
-## Understanding the browser before Extensions are introduced  
+2.  Jede Registerkarte verarbeitet eine GET-Anforderung.  Jede Registerkarte verwendet eine URL, um einen einzelnen Datenstrom abzurufen, der normalerweise ein HTML-Dokument ist.  Dieser einzelne Datenstrom oder eine Seite enthält Anweisungen wie JavaScript-Tags, Bildverweise, CSS-Verweise und vieles mehr.  Alle Ressourcen werden auf eine Registerkartenseite heruntergeladen, und die Seite wird auf der Registerkarte gerendert.  
 
-### Each browser tab is isolated from every other tab  
+3.  Die Kommunikation erfolgt zwischen den einzelnen Registerkarten und Remoteservern.  Jede Registerkarte wird in einer isolierten Umgebung ausgeführt. Sie sind weiterhin mit dem Internet verbunden, aber Sie sind von anderen Registerkarten isoliert.  Tabs können JavaScript ausführen, um mit Servern zu kommunizieren. Diese Server stellen den Ursprungsserver für die erste Get-Anforderung dar, die in die URL-Leiste der Registerkarte eingegeben wurde.  
 
-To understand what a Microsoft Edge \(Chromium\) Extension is, we first need to fully understand what a multi tab browser, like Microsoft Edge does primarily.  To start, each browser tab runs in an individual thread that effectively isolates it from other browser tabs \(or threads\).  
+4.  Das Erweiterungsmodell verwendet ein anderes Kommunikationsmodell.  Ähnlich wie Tab-Seiten werden Erweiterungen in einzelnen Threads ausgeführt, die von allen Registerkartenseiten-Threads isoliert sind.  Tabstopps Problem mit einzelnen Get-Anforderungen an Remoteserver und anschließendes Rendern der Seite. Die Erweiterungen funktionieren jedoch ähnlich wie ein Remoteserver. Wenn Sie Erweiterungen in Ihrem Browser installieren, wird im Browser ein eigenständiger Webserver erstellt. Die Erweiterung ist von allen Registerkartenseiten isoliert.  
 
-![One thread per browser tab](media/index-image1-browsertabs.png)  
+    ![Erweiterungen verwenden ein anderes Kommunikationsmodell](media/index-image3-upsidedown.png)  
 
-### Each tab handles one GET request  
+## Erweiterungsarchitektur
 
-Each tab essentially uses the URL \(also known as the uniform resource locator\) to get a single stream of data which is typically an HTML document.  That single stream \(or page\), often includes instructions \(like JavaScript include tags, image references, CSS references, and more\).  Ultimately, all the resources needed are downloaded to that one tab page and typically a visualization appears which we see in the browser tab completely rendered.  
+In der folgenden Liste sind hilfreiche Informationen im Zusammenhang mit der Architektur einer Erweiterung dargestellt.  
 
-### All communication from each tab is to remote servers  
+1.  Das Extension Web Server-Paket.  Eine Erweiterung ist ein Bündel von Webressourcen. Diese Webressourcen sind mit anderen Ressourcen vergleichbar, die Webentwickler auf Web-Servern veröffentlichen. Entwickler bündeln diese Webressourcen beim Erstellen einer Erweiterung in einer ZIP-Datei.
+    
+    Die ZIP-Datei enthält HTML-, CSS-, JavaScript-und Bilddateien.  Im Stammverzeichnis der ZIP-Datei ist eine weitere Datei erforderlich. Diese Datei ist die Manifestdatei und hat den Namen `manifest.json` .  Es handelt sich um den Entwurf ihrer Erweiterung und umfasst die Version ihrer Erweiterung, den Titel, die Berechtigungen, die für die Ausführung der Erweiterung erforderlich sind, und so weiter.
 
-Understanding that each tab runs in an isolated environment means that these tabs are isolated from each other, but not the greater internet.  Typically, these tabs, running JavaScript as the defined programming language, communicate back to the server, that should be thought of as the originating server for that first GET request that was entered into the URL bar at the top of the browser tab.  
+2.  Starten des Erweiterungs Servers  Web-Server enthalten Ihr Webpaket. Browser Navigieren zu URLs auf dem Server und laden die Datei herunter, die im Browser gerendert werden soll. Browser Navigieren mithilfe von Zertifikaten, Konfigurationsdateien usw.  Wenn eine Datei vorhanden ist `index.html` , die an einem bestimmten Speicherort auf dem Webserver gespeichert ist.  
 
-## The Extension model turns everything upside down  
+    Wenn wir Erweiterungen verwenden, wird die Registerkartenseite Ihres Browsers mit der Erweiterungs Laufzeit zum Webpaket ihrer Erweiterung.  Die Erweiterungs Laufzeit dient den Dateien aus der URL `extension://{some-long-unique-identifier}/index.html` , wobei `{some-long-unique-identifier}` ein eindeutiger Bezeichner vorhanden ist, der der Erweiterung bei der Installation zugewiesen ist.  Jede Erweiterung verwendet einen anderen eindeutigen Bezeichner. Jeder Bezeichner verweist auf das Webpaket, das in Ihrem Browser installiert ist.   
 
-An Extension, just like tab pages, runs in a individual thread which is completely isolated from all tab page threads that are discussed.  Unlike the tabs whose job is to typically issue a single GET request to a remote server, then display a visualization of that data in the browser, the Extension, on the other hand is the server, that previously resided on the other end of the internet connection made from a browser tab.  
+3.  Erweiterungen können mit Registerkarten und der Symbolleiste des Browsers kommunizieren.   Erweiterungen können mit der Toolbar Ihres Browsers interagieren. Jede Erweiterung verwaltet die Ausführung von Registerkartenseiten in separaten Threads, und die DOM-Manipulation auf jeder Registerkarte ist isoliert.  Erweiterungen verwenden die Erweiterungen-API, um zwischen der Erweiterung und den Registerkarten zu kommunizieren.  Diese Erweiterungs-API bietet zusätzliche Funktionen wie Benachrichtigungsverwaltung, Speicherverwaltung usw.  
 
-![Extension model turns server model upside down](media/index-image3-upsidedown.png)  
+    Wie bei Webservern warten Erweiterungen auf Benachrichtigungen, wenn der Browser geöffnet ist.  Erweiterungen und Registerkarten werden in Threads ausgeführt, die voneinander isoliert sind. Entwickler können jedoch die Erweiterungen-API und Berechtigungen in der Manifestdatei verwenden, um eine Erweiterung für die Arbeit mit einer Registerkartenseite zu ermöglichen.  
 
-This is really important to understand.  Once you create an Extension, and install it in your browser, you've created a standalone web server that is living and breathing inside of your browser but still isolated from every tab page running on that browser.  
+4. Erweiterungen bieten zum Zeitpunkt der Installation die Berechtigung zum Einwählen.  Erweiterungs Berechtigungen werden vom Entwickler in der Datei angegeben `manifest.json` . Beim Installieren von Erweiterungen werden Benutzern Informationen zu den Berechtigungen angezeigt, die von der Erweiterung ausgeführt werden müssen. Je nach Art der erforderlichen Berechtigung kann die Erweiterung Informationen aus dem Browser extrahieren und verwenden.
 
-### The Extension web server bundle  
 
-So what is an Extension? It is a bundle \(or referred to as a zip file\) of web resources that are no different than what a web developer publishes to a web server.  
+## Nächste Schritte
 
-That zip file includes HTML, CSS, JavaScript, images and all the necessary assets to make a web page.  There is however, one extra file that is required in the root of this zip file, and that file is named `manifest.json`.  It is the blueprint for your Extension that includes things like what is the version of your Extension, what is the title, what privileges does it need to run and lots more.  
+ Informationen zu den ersten Schritten mit Erweiterungen finden Sie unter [Erstellen eines Erweiterungs Lernprogramms][CreateAnExtensionPart1]. 
 
-![View of files in zip](media/index-image5-filemanager-view.png)  
 
-### Launching the Extension server  
-
-When you deploy to a web server, that web server, whether it is Apache, IIS, NGINX or any other, contains your web bundle.  When a browser navigates to a URL on a server, the `index.html` file on the web server is downloaded.  The browser navigated using certificates, configuration files, and more.  The `index.html` file is stored at some special location on the web server.   How does your Extension do the same thing?  Particularly, how is the tab page of your browser able to get to this zip file \(your Extension\)?  That is what the Extension runtime does for you.  
-
-The extension serves the files all from the URL \(uniform resource locator\) at the name `extension://{some-long-unique-identifier}/index.html`.  The name I put in brackets, `{some-long-unique-identifier}` is a unique identifier assigned to the Extension that you installed.  That means, if you have 10 unique Extensions installed on your browser, each Extension has a unique identifier that points at the zip file \(or Extension bundle\) installed inside your browser.  
-
-<!--![Unique URLS for Extensions](media/index-image4-uniqueurls.png)  -->  
-
-<!--todo: add image for unique URLs  -->  
-
-### Extensions manage and communicate with tabs and the browser toolbar  
-
-Extensions interact with the toolbar of the browser, each is able to manage all the other running tab pages in a safe way, as well as manipulating the DOM of all those tab pages.  Built into the Chromium browser is a message API that allows for communications between the Extensions and the tab pages to allow this to happen gracefully.  This API, also known as the Extensions API gives a lots of capabilities including notification management, storage management, and much more.  
-
-Just like web servers, Extensions are able to continually run \(or sleep waiting for notifications\) all the time that the browser is running.  You may think of an Extension as an orchestrator for the browser.  Again, the Extension runs completely isolated from the tab pages, but through the Extensions API, and opt-in permissions granted to the Extension, each Extension is able to virtually control any and all tab pages running in the browser.  
-
-### Extensions provide an opt-in at install time security model  
-
-Each Extension, through a declaration in the `manifest.json` file allows the person installing the Extension to give it different levels of authority.  This authority allows Extensions, when installed by a user, to opt-in so that the Extension is able to extract any information, and process that data through the Extension.  
 
 <!-- image links -->  
 
 <!-- links -->  
+
+[CreateAnExtensionPart1]: ./part1-simple-extension.md "Erstellen eines Erweiterungs Lernprogramms – Teil 1 | Microsoft docs"  

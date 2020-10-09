@@ -3,16 +3,16 @@ description: Passen Sie Tastenkombinationen mit Visual Studio-Code an, emulieren
 title: Neuerungen in devtools (Microsoft Edge 86)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/08/2020
+ms.date: 10/08/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 943eca7e73385513b264feb74ec37c450d5c5a2f
-ms.sourcegitcommit: 6b577cb118f34f3ff2c65eab2908b65f155dc151
+ms.openlocfilehash: 74fb4e276547d9f653a5bcbdcab9c4406d09a81a
+ms.sourcegitcommit: 912609aa49864e3363aaa3b245ff2aa4bec3fc3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "11004164"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "11104861"
 ---
 # Neuerungen in devtools (Microsoft Edge 86)  
 
@@ -174,7 +174,7 @@ Chromium-Problem: [#1103316][CR1103316]
 
 ### Neues Medien Panel  
 
-DevTools zeigt nun Informationen zu Medienplayern im [Medien][DevtoolsMediaIndex] Panel an.  
+DevTools zeigt nun Informationen zu Medienplayern im [Medien][DevtoolsMediaPanelIndex] Panel an.  
 
 Führen Sie den folgenden Schritt aus, um den neuen **Medien** Panel zu öffnen.  
 
@@ -468,7 +468,7 @@ Wenn Sie unter Windows oder macOS arbeiten, sollten Sie die [Microsoft Edge Prev
 [DevtoolsCoverageIndex]: /microsoft-edge/devtools-guide-chromium/coverage/index "Suchen Sie ungenutzten JavaScript-und CSS-Code mit der Registerkarte Coverage in Microsoft Edge devtools | Microsoft docs"  
 [DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "Schublade – Anpassen von Microsoft Edge devtools | Microsoft docs"  
 [DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "Analysieren der Renderingleistung mit der Registerkarte "Rendering" – Referenz zur Leistungsanalyse | Microsoft docs"  
-[DevtoolsMediaIndex]: /microsoft-edge/devtools-guide-chromium/media/index "Anzeigen und Debuggen von Medienplayer-Informationen | Microsoft docs"  
+[DevtoolsMediaPanelIndex]: /microsoft-edge/devtools-guide-chromium/media-panel/index "Anzeigen und Debuggen von Medienplayer-Informationen | Microsoft docs"  
 
 [DualScreenIntroductionHowWorkSeam]:  /dual-screen/introduction#how-to-work-with-the-seam "Arbeiten mit der Naht – Einführung in Dual-Screen-Geräte | Microsoft docs"  
 [DualScreenWebCssMediaSpanning]: /dual-screen/web/css-media-spanning "CSS mediascreen-Spanning-Funktion für Dual-Screen-Erkennung | Microsoft docs"  
