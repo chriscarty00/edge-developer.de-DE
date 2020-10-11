@@ -360,13 +360,16 @@
     - name: Erweiterungen (Chromium)
       href: extensions-chromium/index.md
       items:
-        - name: Lernprogramm "Erste Schritte"
-          href: extensions-chromium/getting-started/index.md
+        - name: Erste Schritte
           items:
-            - name: Erstellen einer einfachen Erweiterung – Teil I
+            - name: Architektur der Erweiterung
+              href: extensions-chromium/getting-started/index.md
+            - name: Erstellen eines Erweiterungslernprogramms Teil 1
               href: extensions-chromium/getting-started/part1-simple-extension.md
-            - name: Erstellen einer einfachen Erweiterung – Teil II
+            - name: Erstellen eines Erweiterungslernprogramms Teil 2
               href: extensions-chromium/getting-started/part2-content-scripts.md
+            - name: Eine Erweiterung querladen
+              href: extensions-chromium/getting-started/extension-sideloading.md
         - name: Entwicklerhandbuch
           items:
             - name: Übertragen einer Chrom-Erweiterung auf Microsoft Edge
