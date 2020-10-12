@@ -144,7 +144,7 @@
           href: devtools-guide-chromium/issues/index.md
         - name: Befehlszeile
           href: devtools-guide-chromium/command-menu/index.md
-        - name: Mobile Simulation
+        - name: Emulation
           items:
             - name: Übersicht
               href: devtools-guide-chromium/device-mode/index.md
@@ -236,6 +236,8 @@
               href: devtools-guide-chromium/memory-problems/heap-snapshots.md
             - name: Verwenden der Zuordnungsinstrumentation auf der Zeitachse
               href: devtools-guide-chromium/memory-problems/allocation-profiler.md
+        - name: Media
+          href: devtools-guide-chromium/media-panel/index.md
         - name: Arbeitsbereiche
           href: devtools-guide-chromium/workspaces/index.md
         - name: Progressive Web Apps
