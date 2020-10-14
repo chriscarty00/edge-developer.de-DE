@@ -8,12 +8,12 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, Browser-Steuerelement, Edge-HTML, ICoreWebView2Environment
-ms.openlocfilehash: 3552de59b8b349c62d61ca165141d9adddd2a5a9
-ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
+ms.openlocfilehash: edf573bc7c4c83c7882005937db29a068ab7b015
+ms.sourcegitcommit: 2d57b515d6ccbbe24cb3a8c8f44f9c3a26fc17a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11012017"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "11115785"
 ---
 # Schnittstellen ICoreWebView2Environment 
 
@@ -224,7 +224,7 @@ HRESULT AppWindow::OnCreateEnvironmentCompleted(
 ```
  Wenn die Anwendung CreateCoreWebView2Controller bei einem Fehler erneut versucht, wird empfohlen, dass die Anwendung neu gestartet wird, indem eine neue WebView2-Umgebung erstellt wird. Wenn eine Edge-Aktualisierung durchgeführt wird, könnte die Version, die mit einer WebView2-Umgebung verknüpft ist, entfernt worden sein und dazu führen, dass das Objekt nicht mehr funktioniert. Das Erstellen einer neuen WebView2-Umgebung funktioniert bei Verwendung der neuesten Version.
 
-Die WebView-Erstellung schlägt fehl, wenn bereits eine ausgeführte Instanz mit dem gleichen benutzerdatenordner vorhanden ist und die Umgebungsobjekte unterschiedliche environmentoptions aufweisen. Wenn beispielsweise bereits eine WebView mit einer Sprache erstellt wurde, schlägt das Erstellen einer WebView mit einer anderen Sprache mithilfe desselben Benutzerdatenordners fehl.
+Die WebView-Erstellung schlägt fehl, wenn bereits eine ausgeführte Instanz mit dem gleichen benutzerdatenordner vorhanden ist und die Umgebungsobjekte unterschiedliche environmentoptions aufweisen oder die HWND-parentWindows unterschiedliche dpi-Kenntnisse aufweisen. Wenn beispielsweise bereits eine WebView mit einer Sprache erstellt wurde, schlägt das Erstellen einer WebView mit einer anderen Sprache mithilfe desselben Benutzerdatenordners fehl.
 
 #### CreateWebResourceResponse 
 
