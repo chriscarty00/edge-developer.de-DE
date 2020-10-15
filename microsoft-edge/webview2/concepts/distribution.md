@@ -3,17 +3,17 @@ description: Verteilungsoptionen beim Freigeben einer APP mit Microsoft Edge Web
 title: Verteilung von Microsoft Edge WebView2-Anwendungen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/21/2020
+ms.date: 10/14/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, WPF-apps, WPF, Edge, ICoreWebView2, ICoreWebView2Host, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: 7db610ff1133b1b5b380372422f1f2f10981e583
-ms.sourcegitcommit: 24151cc65bad92d751a8e7a868c102e1121456e3
+ms.openlocfilehash: e96ca2b26feb3883b51ad468db1fabe68ed8ad1f
+ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11052186"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "11118997"
 ---
 # Verteilung von Anwendungen mithilfe von WebView2  
 
@@ -61,7 +61,7 @@ Führen Sie die folgenden Schritte aus, wenn Sie über ein Szenario für die Onl
 
 *   Überprüfen Sie während der Anwendungseinrichtung, ob die Laufzeit bereits installiert ist, indem Sie eine der folgenden Aktionen ausführen:  
     *   Überprüfen, ob `pv (REG_SZ)` unter der Registrierungsschlüssel vorhanden ist `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\ClientState\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}` , oder  
-    *   Rufen Sie die WebView2-API- [GetAvailableCoreWebView2BrowserVersionString](../reference/win32/0-9-622/webview2-idl.md#getavailablecorewebview2browserversionstring) auf, und überprüfen Sie, ob VERSIONINFO NULL ist.  
+    *   Rufen Sie die WebView2-API- [GetAvailableCoreWebView2BrowserVersionString](/microsoft-edge/webview2/reference/win32/webview2-idl#getavailablecorewebview2browserversionstring) auf, und überprüfen Sie, ob VERSIONINFO NULL ist.  
 *   Wenn die Common Language Runtime nicht installiert ist, verwenden Sie den Link zum programmgesteuerten Download des Bootstrappers.  
 *   Rufen Sie den Bootstrapper über einen erhöhten Prozess oder eine Eingabeaufforderung mit `MicrosoftEdgeWebview2Setup.exe /silent /install` für die unbeaufsichtigte Installation auf.  
 
@@ -75,7 +75,7 @@ Wenn Sie über ein Offline Bereitstellungsszenario verfügen, in dem die APP-Ber
 *   Fügen Sie das Installationsprogramm in ihr Anwendungs Installationsprogramm oder Updater ein.  
 *   Überprüfen Sie während der Anwendungseinrichtung, ob die Laufzeit bereits installiert ist, indem Sie eine der folgenden Aktionen ausführen:  
     *   Überprüfen, ob `pv (REG_SZ)` unter der Registrierungsschlüssel vorhanden ist `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\ClientState\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}` , oder  
-    *   Rufen Sie die WebView2-API- [GetAvailableCoreWebView2BrowserVersionString](../reference/win32/0-9-622/webview2-idl.md#getavailablecorewebview2browserversionstring) auf, und überprüfen Sie, ob VERSIONINFO NULL ist.  
+    *   Rufen Sie die WebView2-API- [GetAvailableCoreWebView2BrowserVersionString](/microsoft-edge/webview2/reference/win32/webview2-idl#getavailablecorewebview2browserversionstring) auf, und überprüfen Sie, ob VERSIONINFO NULL ist.  
 *   Wenn die Common Language Runtime nicht installiert ist, rufen Sie das eigenständige Installationsprogramm von einem erhöhten Prozess oder einer Eingabeaufforderung mit `MicrosoftEdgeWebView2RuntimeInstaller{X64/X86/ARM64}.exe /silent /install` für die unbeaufsichtigte Installation auf.  
 
 ## Modus für feste Versions Verteilung  
@@ -89,6 +89,5 @@ Für abhängige Umgebungen sind Pläne zur Unterstützung einer festen Version v
 <!-- links -->  
 
 [ConceptsVersioning]: ./versioning.md "Grundlegendes zu Browserversionen und WebView2 | Microsoft docs"  
-[ReferenceWin3209622WebviewIdl]: ../reference/win32/0-9-622/webview2-idl.md  "Globals | Microsoft docs"  
 
 [Webview2Installer]: https://developer.microsoft.com/microsoft-edge/webview2 "WebView2-Installationsprogramm"  

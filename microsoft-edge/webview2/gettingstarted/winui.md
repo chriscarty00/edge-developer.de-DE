@@ -1,19 +1,19 @@
 ---
-description: Hosten von Webinhalten in ihrer WinUI-App mit dem Steuerelement "Microsoft Edge WebView 2"
-title: Microsoft Edge-WebView2 für WinUI-apps
+description: Leitfaden für erste Schritte mit WebView2 für WinUI-apps
+title: Erste Schritte mit WebView2 für WinUI-apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/17/2020
+ms.date: 10/14/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, WinUI-apps, WinUI, Edge, CoreWebView2, Browser-Steuerelement, Edge-HTML, erste Schritte, erste Schritte, .net
-ms.openlocfilehash: 805655fd27c0b654e1ccb41c615aa21797d6ddf7
-ms.sourcegitcommit: ef6d6adae1f4d18a219fa3e17f91b95b40367a40
+ms.openlocfilehash: df6ee7a7391337635a63a961f62317e5b8a67334
+ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "10934898"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "11119094"
 ---
 # Erste Schritte mit WebView2 in WinUI3 (Preview)  
 
@@ -231,7 +231,7 @@ Wählen Sie aus `F5` , um Ihr Projekt zu erstellen und auszuführen.  Vergewisse
 
 Host-Anwendungen können JavaScript-Code zur Laufzeit in WebView2-Steuerelemente einfügen.  Das eingefügte JavaScript gilt für alle neuen Dokumente auf oberster Ebene und für alle untergeordneten Frames, bis das JavaScript entfernt wurde.  Das eingefügte JavaScript wird nach der Erstellung des globalen Objekts und vor dem Ausführen eines anderen im HTML-Dokument enthaltenen Skripts ausgeführt.  
 
-Ein Beispiel: beim Hinzufügen von Skripts wird eine Benachrichtigung gesendet, wenn ein Benutzer zu nicht-HTTPS-Websites navigiert.  Ändern `EnsureHttps` Sie die Funktion, um ein Skript mit [ExecuteScriptAsync][Webviews2ReferenceWpf09515MicrosoftWebExecutescriptasync]in den Webinhalt einzufügen.  
+Ein Beispiel: beim Hinzufügen von Skripts wird eine Benachrichtigung gesendet, wenn ein Benutzer zu nicht-HTTPS-Websites navigiert.  Ändern `EnsureHttps` Sie die Funktion, um ein Skript mit [ExecuteScriptAsync][Webviews2ReferenceWpfMicrosoftWebExecutescriptasync]in den Webinhalt einzufügen.  
 
 ```csharp
 private void EnsureHttps(WebView2 sender, WebView2NavigationStartingEventArgs args)
@@ -264,7 +264,7 @@ Unser Team erstellt derzeit mehr WebView2-APIs.  Weitere Informationen zum aktue
 > [!NOTE]
 > Das WinRT-CoreWebView2-Objekt steht möglicherweise nicht zur Verfügung, wenn die WebView2-APIs ausgeliefert werden. Wenn Sie wissen möchten, welche APIs für WebView2-Steuerelemente verfügbar sind, finden Sie unter [WebView2 spec][GithubMicrosoftUiXamlSpecsWebview2] eine Liste der verfügbaren APIs. 
 
-Weitere Informationen zu den WebView2-Funktionen finden Sie unter [WebView2-Konzepte und Anleitungen][Webview2IndexNextSteps]sowie im [WebView2-Beispiel-Repo][GithubMicrosoftedgeWebview2samplesMain].  
+Weitere Informationen zu den WebView2-Funktionen finden Sie unter [WebView2-Konzepte und-How-To Handbücher][Webview2IndexNextSteps]sowie im [WebView2-Beispiel-Repo][GithubMicrosoftedgeWebview2samplesMain].  
 
 ## Kontakt mit dem Microsoft Edge WebView-Team  
 
@@ -275,7 +275,7 @@ Weitere Informationen zu den WebView2-Funktionen finden Sie unter [WebView2-Konz
 [Webview2Index]: ../index.md "Einführung in Microsoft Edge WebView2 (Preview) | Microsoft docs"  
 [Webview2IndexNextSteps]: ../index.md#next-steps "Nächste Schritte – Einführung in Microsoft Edge WebView2 (Preview) | Microsoft docs"  
 [Webviews2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Navigationsereignisse | Microsoft docs"  
-[Webviews2ReferenceWpf09515MicrosoftWebExecutescriptasync]: ../reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2.md#executescriptasync "ExecuteScriptAsync-Microsoft. Web. WebView2. WPF. WebView2 Klasse | Microsoft docs"  
+[Webviews2ReferenceWpfMicrosoftWebExecutescriptasync]: /dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync "WebView2.ExecuteScriptAsync (String)-Methode (Microsoft. Web. WebView2. WPF) | Microsoft docs"  
 
 [UwpSchemasAppxpackageUapmanifestRoot]: /uwp/schemas/appxpackage/uapmanifestschema/schema-root "Paketmanifest-Schemareferenz für Windows 10 | Microsoft docs"  
 

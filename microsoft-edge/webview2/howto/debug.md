@@ -3,17 +3,17 @@ description: Erfahren Sie, wie Sie WebView2-Steuerelemente Debuggen.
 title: Erste Schritte beim Debuggen von WebView2-Anwendungen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/21/2020
+ms.date: 10/14/2020
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Host, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: 78c0fb982de8ccce71a8df2b59447b55f64fdc2f
-ms.sourcegitcommit: 24151cc65bad92d751a8e7a868c102e1121456e3
+ms.openlocfilehash: 25a710796b499a78a43045266058029caa890b78
+ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11052148"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "11119108"
 ---
 # Erste Schritte beim Debuggen von WebView2-Anwendungen  
 
@@ -236,7 +236,7 @@ Führen Sie in Visual Studio-Code die folgenden Aktionen aus, um den Code zu deb
     Bei Verwendung des Debuggers können die folgenden Szenarien auftreten.  
 
     *   Der Debugger wird nicht am Haltepunkt angehalten, und Sie haben die Debug-Ausgabe.  Um das Problem zu beheben, stellen Sie sicher, dass die Datei mit dem Haltepunkt dieselbe Datei ist, die vom WebView2-Steuerelement verwendet wird.  Der Debugger führt keine Quell Pfadzuordnung aus.  
-    *   Sie können nicht an einen ausgeführten Prozess anfügen, und Sie erhalten einen Timeoutfehler.  Um das Problem zu beheben, stellen Sie sicher, dass das WebView2-Steuerelement den CDP-Port geöffnet hat.  Stellen Sie sicher, dass Ihr  `additionalBrowserArguments`  Wert in der Registrierung richtig ist, oder die Optionen richtig sind.  Weitere Informationen finden Sie unter [additionalBrowserArguments for dotnet] [Webview2ReferenceDotnet09515MicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments] und [additionalBrowserArguments für Win32] [Webview2ReferenceWin3209538Webview2IdlParameters].  
+    *   Sie können nicht an einen ausgeführten Prozess anfügen, und Sie erhalten einen Timeoutfehler.  Um das Problem zu beheben, stellen Sie sicher, dass das WebView2-Steuerelement den CDP-Port geöffnet hat.  Stellen Sie sicher, dass Ihr  `additionalBrowserArguments`  Wert in der Registrierung richtig ist, oder die Optionen richtig sind.  Weitere Informationen finden Sie unter [additionalBrowserArguments für dotnet][Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments] und [additionalBrowserArguments für Win32][Webview2ReferenceWin32Webview2IdlParameters].  
     
 * * *  
 
@@ -256,10 +256,10 @@ Führen Sie in Visual Studio-Code die folgenden Aktionen aus, um den Code zu deb
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumMain]: ../../devtools-guide-chromium.md "Microsoft Edge (Chrom)-Entwickler Tools"  
+[DevtoolsGuideChromiumMain]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium)-Entwicklertools"  
 
-[Webview2ReferenceDotnet09628MicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments]: ../reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2environmentoptions.md#additionalbrowserarguments "AdditionalBrowserArguments-0.9.515-Microsoft. Web. WebView2. Core. CoreWebView2EnvironmentOptions Klasse | Microsoft docs"  
-[Webview2ReferenceWin3209622Webview2IdlParameters]: ../reference/win32/0-9-622/webview2-idl.md#createcorewebview2environment  "CreateCoreWebView2Environment-Globals | Microsoft docs"  
+[Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments]: /dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.additionalbrowserarguments "CoreWebView2EnvironmentOptions. AdditionalBrowserArguments-Eigenschaft (Microsoft. Web. WebView2. Core) | Microsoft docs"  
+[Webview2ReferenceWin32Webview2IdlParameters]: /microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions  "CreateCoreWebView2Environment-Globals | Microsoft docs"  
 [Webview2ApiReference]: ../webview2-api-reference.md "Microsoft Edge WebView2-API-Referenz | Microsoft docs"  
 [Webview2MainNextSteps]: ../index.md#next-steps "Nächste Schritte – Einführung in Microsoft Edge WebView2 (Preview) | Microsoft docs"  
 [Webview2MainGettingStarted]: ../index.md#getting-started "Erste Schritte – Einführung in Microsoft Edge WebView2 (Preview) | Microsoft docs"  

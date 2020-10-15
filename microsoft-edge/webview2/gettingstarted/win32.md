@@ -1,23 +1,23 @@
 ---
-description: Hosten von Webinhalten in ihrer Win32-App mit dem Steuerelement "Microsoft Edge WebView 2"
+description: Leitfaden für erste Schritte mit WebView2 für Win32-apps
 title: Erste Schritte mit WebView2 für Win32-apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/10/2020
+ms.date: 10/14/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: 5bb2d8a1ec0d75c2cbb1d426bae6bf1cd8298592
-ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
+ms.openlocfilehash: 906ddbea08440aaa0f1fd7e32550c3b1790ba8a1
+ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11010712"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "11119101"
 ---
 # Erste Schritte mit WebView2 (Entwicklervorschau)  
 
-Der folgende Inhalt führt Sie durch die häufig verwendeten Funktionen von [WebView2 (Developer Preview)][Webview2Index] und stellt einen Ausgangspunkt zum Erstellen Ihrer ersten WebView2-App bereit.  Weitere Informationen zu einzelnen WebView2-APIs finden Sie unter [API-Referenz][Webview2ReferenceWin3209622].  
+Der folgende Inhalt führt Sie durch die häufig verwendeten Funktionen von [WebView2 (Developer Preview)][Webview2Index] und stellt einen Ausgangspunkt zum Erstellen Ihrer ersten WebView2-App bereit.  Weitere Informationen zu einzelnen WebView2-APIs finden Sie unter [API-Referenz][Webview2ReferenceWin32].  
 
 ## Voraussetzungen  
 
@@ -46,7 +46,7 @@ Fügen Sie das WebView2-SDK in das Projekt ein.  Für die Entwicklervorschau kö
 
 1.  Zeigen Sie mit der Maus auf das Projekt, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie **Nuget-Pakete verwalten**aus.  
     
-    :::image type="complex" source="../media/manage-nuget-packages.png" alt-text="Verwalten von Nuget-Paketen":::
+    :::image type="complex" source="../media/manage-nuget-packages.png" alt-text="Tool Version":::
        Verwalten von Nuget-Paketen  
     :::image-end:::  
     
@@ -56,15 +56,15 @@ Fügen Sie das WebView2-SDK in das Projekt ein.  Für die Entwicklervorschau kö
         > [!NOTE] 
         > Die [Windows-Implementierungs Bibliothek][GithubMicrosoftWilMain] und die [Windows-Runtime-C++-Vorlagenbibliothek][CppCxWrlTemplateLibraryVS2019] sind optional und wurden hinzugefügt, um die Arbeit mit com für das Beispiel zu vereinfachen.  
         
-        :::image type="complex" source="../media/wil.png" alt-text="Windows-Implementierungs Bibliothek":::
+        :::image type="complex" source="../media/wil.png" alt-text="Tool Version":::
            Windows-Implementierungs Bibliothek  
         :::image-end:::  
         
 1.  Installieren Sie das WebView2-SDK.  
     1.  Geben Sie `Microsoft.Web.WebView2` in der Suchleiste **Microsoft. Web. WebView2** aus den Ergebnissen ein, und wählen Sie im rechten Fenster **Installieren** aus.  Nuget downloadet das SDK auf Ihren Computer.  
         
-        :::image type="complex" source="../media/nuget.png" alt-text="Nuget":::
-           Nuget
+        :::image type="complex" source="../media/nuget.png" alt-text="Tool Version":::
+           Nuget-Paket-Manager
         :::image-end:::  
         
 1.  Fügen Sie WebView2-Kopfzeile zu Ihrem Projekt hinzu.  
@@ -96,7 +96,7 @@ Sie sind für die Verwendung und Erstellung von WebView2-APIs eingestellt.
 
 Drücken Sie `F5` , um die Beispiel-APP zu erstellen und auszuführen.  Es sollte eine App angezeigt werden, die ein leeres Fenster anzeigt.  
 
-:::image type="complex" source="../media/empty-app.png" alt-text="Leere App":::
+:::image type="complex" source="../media/empty-app.png" alt-text="Tool Version":::
    Leere App  
 :::image-end:::  
 
@@ -156,7 +156,7 @@ CreateCoreWebView2EnvironmentWithOptions(nullptr, nullptr, nullptr,
 
 Drücken Sie `F5` , um die APP zu erstellen und auszuführen.  Nun wird ein WebView-Fenster mit der Bing-Seite angezeigt.  
 
-:::image type="complex" source="../media/bing-window.png" alt-text="Bing-Fenster":::
+:::image type="complex" source="../media/bing-window.png" alt-text="Tool Version":::
    Bing-Fenster  
 :::image-end:::  
 
@@ -172,7 +172,7 @@ Das WebView-Team hat bereits die Navigation zur URL unter Verwendung der `ICoreW
 
 Weitere Informationen finden Sie unter [Navigationsereignisse][Webview2ConceptsNavigationEvents].  
 
-:::image type="complex" source="../media/navigation-events.png" alt-text="Navigationsereignisse":::
+:::image type="complex" source="../media/navigation-events.png" alt-text="Tool Version":::
    Navigationsereignisse  
 :::image-end:::  
 
@@ -266,34 +266,10 @@ nullptr);
 
 Drücken Sie `F5` , um die APP zu erstellen und auszuführen.  Sie sollten die URL in einem Popupfenster sehen, bevor Sie zu einer Seite navigieren.  
 
-:::image type="complex" source="../media/show-url.png" alt-text="URL anzeigen":::
-   URL anzeigen  
-:::image-end:::  
+:::image type="complex" source="../media/show-url.png" alt-text="Tool Version"  
 
-Herzlichen Glückwunsch, Sie haben soeben Ihre erste WebView2-App erstellt!  
-
-## Nächste Schritte  
-
-Viele der WebView2-Funktionen, die auf dieser Seite nicht behandelt werden, im folgenden Abschnitt wurden zusätzliche Ressourcen bereitgestellt.  
-
-### Weitere Informationen  
-
-*   Ein umfassendes Beispiel für WebView2-Funktionen finden Sie unter Beispiel für die [WebView2-API][GithubMicrosoftedgeWebview2samplesApisample].  
-*   Eine Beispielanwendung, die mit WebView2 erstellt wurde, finden Sie unter [WebView2Browser][GithubMicrosoftedgeWebview2browser].  
-*   Ausführliche Informationen zur WebView2-API finden Sie unter [API-Referenz][Webview2ReferenceWin3209622].  
-
-## Kontakt mit dem Microsoft Edge WebView-Team  
-
-[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
-
-<!-- links -->  
-
-[Webview2Index]: ../index.md "Einführung in Microsoft Edge WebView2 (Preview) | Microsoft docs"  
-[Webview2ReferenceWin3209622]: ../reference/win32/0-9-622-reference-webview2.md "Referenz (WebView2) | Microsoft docs"  
-[Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Navigationsereignisse | Microsoft docs"  
-
-[CppCxWrlTemplateLibraryVS2019]: /cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019 "Windows-Runtime C++-Vorlagenbibliothek (WRL) | Microsoft docs"  
-[CppWindowsWalkthroughCreatingDesktopApplication]: /cpp/windows/walkthrough-creating-windows-desktop-applications-cpp?view=vs-2019 "Exemplarische Vorgehensweise: Erstellen einer herkömmlichen Windows-Desktop Anwendung (C++) | Microsoft docs"  
+[CppCxWrlTemplateLibraryVS2019]: /cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019&preserve-view=true "Windows-Runtime C++-Vorlagenbibliothek (WRL) | Microsoft docs"  
+[CppWindowsWalkthroughCreatingDesktopApplication]: /cpp/windows/walkthrough-creating-windows-desktop-applications-cpp?view=vs-2019&preserve-view=true "Exemplarische Vorgehensweise: Erstellen einer herkömmlichen Windows-Desktop Anwendung (C++) | Microsoft docs"  
 
 [GithubMicrosoftedgeWebview2browser]: https://github.com/MicrosoftEdge/WebView2Browser "WebView2Browser-MicrosoftEdge/WebView2Browser | GitHub"  
 

@@ -1,19 +1,19 @@
 ---
-description: Hosten von Webinhalten in ihrer Win32-App mit dem Steuerelement "Microsoft Edge WebView 2"
+description: API-Referenz für Microsoft Edge WebView2 SDK
 title: Microsoft Edge WebView2-API-Referenz
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/10/2020
+ms.date: 10/14/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, Browser-Steuerelement
-ms.openlocfilehash: f6417b543191c923c89af2e17a59f4505cc82a7d
-ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
+ms.openlocfilehash: 36c951967675d1daed769e40e8eacbf668a5973c
+ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11010138"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "11119052"
 ---
 # Microsoft Edge WebView2-API-Referenz  
 
@@ -23,8 +23,12 @@ Wählen Sie die Sprachen und das Framework von WebView2 aus, die Sie in der folg
 
 ## Sprachen und Frameworks  
 
-*   [Win32 C++](reference/win32/0-9-622-reference-webview2.md)  
+*   [Win32 C++](/microsoft-edge/webview2/reference/win32/index)  
 *   .NET  
-    *   [Core](reference/dotnet/0-9-628-reference-webview2.md)  
-    *   [Windows Forms](reference/winforms/0-9-515-reference-webview2.md)  
-    *   [WPF](reference/wpf/0-9-515-reference-webview2.md)  
+    *   [Core][DotnetMicrosoftWebWebView2CoreNamespace]  
+    *   [WPF][DotnetMicrosoftWebWebView2WpfNamespace]  
+    *   [Windows Forms][DotnetMicrosoftWebWebView2WinformsNamespace]  
+
+[DotnetMicrosoftWebWebview2CoreNamespace]: /dotnet/api/microsoft.web.webview2.core "Microsoft. Web. WebView2. Core-Namespace | Microsoft docs"
+[DotnetMicrosoftWebWebview2WpfNamespace]: /dotnet/api/microsoft.web.webview2.wpf "Microsoft. Web. WebView2. WPF-Namespace | Microsoft docs"
+[DotnetMicrosoftWebWebview2WinformsNamespace]: /dotnet/api/microsoft.web.webview2.winforms "Microsoft. Web. WebView2. WinForms-Namespace | Microsoft docs"
