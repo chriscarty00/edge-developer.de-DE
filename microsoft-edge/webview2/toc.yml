@@ -36,6 +36,8 @@
   href: roadmap.md
 - name: So wird's gemacht
   items:
+    - name: Erweiterte JavaScript-Szenarien in WebView2
+      href: howto/js.md
     - name: Ladeprogramm für statische Links
       href: howto/static.md
     - name: Debug-WebView2
