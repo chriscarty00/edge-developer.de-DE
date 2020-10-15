@@ -11,23 +11,23 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 09/02/2020
 ms.locfileid: "10992704"
 ---
-<span data-ttu-id="7d9df-101">Use the following options to discuss the new features and changes in the post, or anything else related to DevTools.</span><span class="sxs-lookup"><span data-stu-id="7d9df-101">Use the following options to discuss the new features and changes in the post, or anything else related to DevTools.</span></span>  
+<span data-ttu-id="7c24b-101">Verwenden Sie die folgenden Optionen, um die neuen Features und Änderungen im Beitrag zu besprechen, oder alles, was mit devtools zu tun hat.</span><span class="sxs-lookup"><span data-stu-id="7c24b-101">Use the following options to discuss the new features and changes in the post, or anything else related to DevTools.</span></span>  
 
-*   <span data-ttu-id="7d9df-102">Send your feedback using the **Send Feedback** icon or select `Alt`+`Shift`+`I` \(Windows\) or `Option`+`Shift`+`I` \(macOS\) in DevTools.</span><span class="sxs-lookup"><span data-stu-id="7d9df-102">Send your feedback using the **Send Feedback** icon or select `Alt`+`Shift`+`I` \(Windows\) or `Option`+`Shift`+`I` \(macOS\) in DevTools.</span></span>  
-*   <span data-ttu-id="7d9df-103">Tweet at [@EdgeDevTools][PostTweetEdgeDevTools].</span><span class="sxs-lookup"><span data-stu-id="7d9df-103">Tweet at [@EdgeDevTools][PostTweetEdgeDevTools].</span></span>  
-*   <span data-ttu-id="7d9df-104">Submit a suggestion to [The Web We Want][TheWebWeWant].</span><span class="sxs-lookup"><span data-stu-id="7d9df-104">Submit a suggestion to [The Web We Want][TheWebWeWant].</span></span>  
-*   <span data-ttu-id="7d9df-105">File bugs on this article using the [Feedback](#feedback) section.</span><span class="sxs-lookup"><span data-stu-id="7d9df-105">File bugs on this article using the [Feedback](#feedback) section.</span></span>  
+*   <span data-ttu-id="7c24b-102">Senden Sie Ihr Feedback über das Symbol **Feedback senden** , oder wählen Sie `Alt` + `Shift` + `I` in devtools \ (Windows \) oder `Option` + `Shift` + `I` \ (macOS \) aus.</span><span class="sxs-lookup"><span data-stu-id="7c24b-102">Send your feedback using the **Send Feedback** icon or select `Alt`+`Shift`+`I` \(Windows\) or `Option`+`Shift`+`I` \(macOS\) in DevTools.</span></span>  
+*   <span data-ttu-id="7c24b-103">Tweet auf [@EdgeDevTools][PostTweetEdgeDevTools].</span><span class="sxs-lookup"><span data-stu-id="7c24b-103">Tweet at [@EdgeDevTools][PostTweetEdgeDevTools].</span></span>  
+*   <span data-ttu-id="7c24b-104">Senden Sie einen Vorschlag an [das gewünschte Web][TheWebWeWant].</span><span class="sxs-lookup"><span data-stu-id="7c24b-104">Submit a suggestion to [The Web We Want][TheWebWeWant].</span></span>  
+*   <span data-ttu-id="7c24b-105">Datei-Bugs in diesem Artikel mit dem [Feedback](#feedback) -Abschnitt.</span><span class="sxs-lookup"><span data-stu-id="7c24b-105">File bugs on this article using the [Feedback](#feedback) section.</span></span>  
 
-:::image type="complex" source="../media/bing-devtools-send-feedback.msft.png" alt-text="The Send Feedback icon in the Microsoft Edge DevTools" lightbox="../media/bing-devtools-send-feedback.msft.png":::
-   <span data-ttu-id="7d9df-107">The **Send Feedback** icon in Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="7d9df-107">The **Send Feedback** icon in Microsoft Edge DevTools</span></span>  
+:::image type="complex" source="../media/bing-devtools-send-feedback.msft.png" alt-text="Das Symbol &quot;Feedback senden&quot; im Microsoft Edge-devtools" lightbox="../media/bing-devtools-send-feedback.msft.png":::
+   <span data-ttu-id="7c24b-107">Das Symbol " **Feedback senden** " in Microsoft Edge devtools</span><span class="sxs-lookup"><span data-stu-id="7c24b-107">The **Send Feedback** icon in Microsoft Edge DevTools</span></span>  
 :::image-end:::  
 
 <!-- links -->  
 
-[PostTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | Post a Tweet"  
+[PostTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | Einen Tweet Posten"  
 
-[EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools Twitter account"  
+[EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools Twitter-Konto"  
 
-[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback] "New Issue - MicrosoftDocs/edge-developer - GitHub"  
+[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback] "Neues Problem-MicrosoftDocs/Edge-Developer-GitHub"  
 
-[TheWebWeWant]: https://webwewant.fyi "The Web We Want"  
+[TheWebWeWant]: https://webwewant.fyi "Das gewünschte Web"  
