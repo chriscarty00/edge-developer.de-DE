@@ -106,7 +106,7 @@ Chrom Problem [#1070378][CR1070378]
 
 ### Verschieben von Tools zwischen Bereichen  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Experimentelle Funktion von devtools geöffnet werden.  Sie können jetzt Ihr devtools-Layout anpassen, indem Sie die Tools zwischen dem oberen und unteren Bereich verschieben."  
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Experimentelle Funktion von devtools geöffnet werden.  Sie können jetzt Ihr devtools-Layout anpassen, indem Sie die Tools zwischen dem oberen und unteren Bereich verschieben.":::  
 
 :::image type="complex" source="../../media/2020/06/experiments-move-panels.msft.png" alt-text="Experimentelle Funktion" lightbox="../../media/2020/06/experiments-move-panels.msft.png":::
    Verschieben von Tabstopps zwischen Bereichen  
