@@ -96,10 +96,8 @@
               href: devtools-guide-chromium/coverage/index.md
             - name: Überprüfen von Animationen
               href: devtools-guide-chromium/inspect-styles/animations.md
-            - name: Handbücher
-              items:
-                - name: DevTools in den Druckvorschaumodus erzwingen
-                  href: devtools-guide-chromium/css/print-preview.md
+            - name: DevTools in den Druckvorschaumodus erzwingen
+              href: devtools-guide-chromium/css/print-preview.md
         - name: Console
           items:
             - name: Übersicht
@@ -366,16 +364,18 @@
           items:
             - name: Architektur der Erweiterung
               href: extensions-chromium/getting-started/index.md
-            - name: Erstellen eines Erweiterungslernprogramms Teil 1
+            - name: Erstellen eines Erweiterungslernprogramms (Teil 1)
               href: extensions-chromium/getting-started/part1-simple-extension.md
-            - name: Erstellen eines Erweiterungslernprogramms Teil 2
+            - name: Erstellen eines Erweiterungslernprogramms (Teil 2)
               href: extensions-chromium/getting-started/part2-content-scripts.md
             - name: Eine Erweiterung querladen
               href: extensions-chromium/getting-started/extension-sideloading.md
         - name: Entwicklerhandbuch
           items:
-            - name: Übertragen einer Chrom-Erweiterung auf Microsoft Edge
+            - name: Übertragen von Chrom-Erweiterungen auf Microsoft Edge
               href: extensions-chromium/developer-guide/port-chrome-extension.md
+            - name: Migrieren ihrer Erweiterung von Manifest v2 zu v3
+              href: extensions-chromium/developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md
             - name: Alternative Methoden zum Verteilen von Erweiterungen
               href: extensions-chromium/developer-guide/alternate-distribution-options.md
             - name: Systemeigenes Messaging
@@ -396,7 +396,7 @@
           items:
             - name: Sicherheitsrichtlinie für Inhalte
               href: extensions-chromium/store-policies/csp.md
-            - name: Edge Developer ADA Addendum
+            - name: ADA Addendum für Microsoft Edge-Entwickler
               href: extensions-chromium/store-policies/ada-addendum.md
             - name: Entwicklerrichtlinien für den Katalog für Microsoft Edge-Add-Ons
               href: extensions-chromium/store-policies/developer-policies.md
@@ -511,7 +511,7 @@
       href: webdriver-chromium.md
     - name: WebDriver (EdgeHTML)
       href: webdriver.md
-    - name: Web Platform (Chromium)
+    - name: Web-Platform (Chromium)
       items:
         - name: Website Kompatibilität – Auswirkungen von Änderungen an Microsoft Edge
           href: web-platform/site-impacting-changes.md
