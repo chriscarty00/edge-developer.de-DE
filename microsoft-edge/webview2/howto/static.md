@@ -3,17 +3,17 @@ description: Hier erfahren Sie, wie Sie die WebView2-Loader-Bibliothek statisch 
 title: So verknüpfen Sie die WebView2-Ladeprogramm Bibliothek statisch
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/01/2020
+ms.date: 10/15/2020
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Host, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: b7e0ec70cb00f318d4eb67254f37fcec79a5fcf6
-ms.sourcegitcommit: 903524ab85321ade278facd741d6487e8cabe33f
+ms.openlocfilehash: a25bd85c8a6b17bdf8712c954eb7b7cc28738eb2
+ms.sourcegitcommit: 442de63da52d00c6dc27fa08ccdb736534127566
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "11100307"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "11120072"
 ---
 # So verknüpfen Sie die WebView2-Ladeprogramm Bibliothek statisch  
 
@@ -82,8 +82,6 @@ Kompilieren und Bereitstellen Ihrer APP  Erfolgreich.
 
 [DevtoolsGuideChromiumMain]: ../../devtools-guide-chromium.md "Microsoft Edge (Chrom)-Entwickler Tools | Microsoft docs"  
 
-[Webview2ReferenceDotnet09628MicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments]: ../reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2environmentoptions.md#additionalbrowserarguments "AdditionalBrowserArguments-0.9.515-Microsoft. Web. WebView2. Core. CoreWebView2EnvironmentOptions Klasse | Microsoft docs"  
-[Webview2ReferenceWin3209622Webview2IdlParameters]: ../reference/win32/0-9-622/webview2-idl.md#createcorewebview2environment  "CreateCoreWebView2Environment-Globals | Microsoft docs"  
 [Webview2ApiReference]: ../webview2-api-reference.md "Microsoft Edge WebView2-API-Referenz | Microsoft docs"  
 [Webview2MainNextSteps]: ../index.md#next-steps "Nächste Schritte – Einführung in Microsoft Edge WebView2 (Preview) | Microsoft docs"  
 [Webview2MainGettingStarted]: ../index.md#getting-started "Erste Schritte – Einführung in Microsoft Edge WebView2 (Preview) | Microsoft docs"  
