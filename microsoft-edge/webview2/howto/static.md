@@ -8,75 +8,63 @@ ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Host, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: a25bd85c8a6b17bdf8712c954eb7b7cc28738eb2
-ms.sourcegitcommit: 442de63da52d00c6dc27fa08ccdb736534127566
+ms.openlocfilehash: 880e9ed809dc268ee0b30b6ee3b5996711f54300
+ms.sourcegitcommit: 0ded671914aae231493f418dd7645a04361dca1b
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "11120072"
+ms.locfileid: "11120124"
 ---
-# So verknüpfen Sie die WebView2-Ladeprogramm Bibliothek statisch  
+# Statische Verknüpfung der WebView2-Loader-Bibliothek  
 
-## Kontext  
+Möglicherweise möchten Sie Ihre Anwendung mit einer einzelnen ausführbaren Datei anstelle eines Pakets von vielen Dateien verteilen. Wenn Sie eine einzelne ausführbare Datei erstellen oder die Größe Ihres Pakets verkleinern möchten, sollten Sie die WebView2Loader-Dateien statisch verknüpfen. Das WebView2-SDK enthält eine Headerdatei `WebView2Loader.dll` und die `IDL` Datei. `WebView2Loader.dll` ist eine kleine Komponente, die apps dabei hilft, die WebView2-Runtime oder nicht-stable-Kanäle von Microsoft Edge auf dem Gerät zu finden.  
 
-Was ist der WebView2Loader.dll?  
-
-*   Das WebView2-SDK enthält eine Headerdatei `WebView2Loader.dll.` und die `IDL` Datei. `WebView2Loader.dll` ist eine kleine Komponente, die apps bei der Suche nach der WebView2-Runtime (oder nicht stabilen Microsoft Edge-Kanälen) auf dem Gerät unterstützt.  
-
-Führen Sie die folgenden Schritte aus, wenn apps, die über eine einzige Laufzeit verfügen und keine senden möchten `WebView2Loader.dll` , die folgenden Schritte **Ausführen** .  
-
-## Verfahren  
+Führen Sie die folgenden Schritte aus, wenn Sie keine apps senden möchten `WebView2Loader.dll` .  
 
 1.  Öffnen `.vcxproj` Sie die Projektdatei für Ihre APP in einem Text-Editor wie Visual Studio-Code.  
     
     > [!NOTE]
-    > Die `.vcproj` Projektdatei kann eine versteckte Datei sein, was bedeutet, dass Sie in Visual Studio nicht angezeigt wird.  Verwenden Sie die Befehlszeile, um eine versteckte Datei zu suchen.  
+    > Die `.vcproj` Projektdatei kann eine versteckte Datei sein, was bedeutet, dass Sie in Visual Studio nicht angezeigt wird.  Verwenden Sie die Befehlszeile, um ausgeblendete Dateien zu suchen.  
     
 1.  Suchen Sie den Abschnitt im Code, in den Sie die WebView2 NuGet-Paket Zieldateien einbeziehen.  Die Position im Code ist in der folgenden Abbildung hervorgehoben.  
-    
-    :::image type="complex" source="./media/inserthere.png" alt-text="Codeausschnitt für Projektdateien" lightbox="./media/inserthere.png"::: 
-       Codeausschnitt für Projektdateien  
-    :::image-end:::  
-    
-1.  Kopieren Sie den folgenden Codeausschnitt, und fügen Sie ihn überall im `Microsoft.Web.WebView2.targets` Lieferumfang ein.  
 
-    > [!NOTE]
-    > Fügen Sie den Codebeispiels Weise nach dem folgenden Codeblock ein.  
-    > 
-    > ```csharp
-    > <Import Project="..\packages\Microsoft.Web.WebView2.0.9.579-prerelease\build\native\Microsoft.Web.WebView2.targets" Condition="Exists('..\packages\Microsoft.Web.WebView2.0.9.579-prerelease\build\native\Microsoft.Web.WebView2.targets')" />
-    > ```  
-    
-    ```csharp
-    <PropertyGroup> <WebView2LoaderPreference>Static</WebView2LoaderPreference> </PropertyGroup>
+    :::image type="complex" source="./media/inserthere.png" alt-text="Codeausschnitt für Projektdateien" lightbox="./media/inserthere.png":::
+       Codeausschnitt für Projektdateien   
+    :::image-end:::  
+  
+1.  Kopieren Sie den folgenden Codeausschnitt, und fügen Sie ihn dort ein, wo er `Microsoft.Web.WebView2.targets` enthalten ist.  
+
+    ```xaml
+    <PropertyGroup> 
+        <WebView2LoaderPreference>Static</WebView2LoaderPreference> 
+    </PropertyGroup>
     ```
-    
-    :::image type="complex" source="./media/staticlib.png" alt-text="Codeausschnitt für Projektdateien" lightbox="./media/staticlib.png"::: 
+      
+    :::image type="complex" source="./media/staticlib.png" alt-text="Codeausschnitt für Projektdateien" lightbox="./media/staticlib.png":::
        Eingefügter Codeausschnitt  
     :::image-end:::  
     
-1.  Bearbeiten Sie die zusätzlichen Abhängigkeiten der Buildkonfiguration für Ihre APP.  Suchen Sie zunächst alle `<AdditionalDependencies>` Kategorien.  
-1.  Fügen Sie `version.lib` jeder anderen Buildkonfiguration in der `.vcxproj` Datei für Ihre APP eine zusätzliche Abhängigkeit hinzu.  
+1.  Bearbeiten Sie die zusätzlichen Abhängigkeiten der Buildkonfiguration für Ihre APP.  Suchen Sie zunächst alle `<AdditionalDependencies>` Kategorien. Fügen Sie für jede `version.lib` eine weitere Abhängigkeit zu jeder anderen Buildkonfiguration in der Datei hinzu `.vcxproj` .  
     
-    :::image type="complex" source="./media/versionlib.png" alt-text="Codeausschnitt für Projektdateien" lightbox="./media/versionlib.png"::: 
+    :::image type="complex" source="./media/versionlib.png" alt-text="Codeausschnitt für Projektdateien" lightbox="./media/versionlib.png":::
        Hinzufügen `version.lib` zu `ItemDefinitionGroups`  
     :::image-end:::  
     
     > [!NOTE]
-    > Das WebView2-Team zielt darauf ab, den zusätzlichen Abhängigkeits Schritt in zukünftigen Versionen zu automatisieren.  
+    > Das WebView2-Team zielt darauf ab, das Hinzufügen der zusätzlichen Abhängigkeit in zukünftigen Versionen zu automatisieren.  
     
-Kompilieren und Bereitstellen Ihrer APP  Erfolgreich.  
+1. Kompilieren Sie Ihre APP, und führen Sie Sie aus.
 
-## Weitere Informationen  
+### Kontakt mit dem WebView2-Team  
+
+[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
+
+### Weitere Informationen  
 
 *   Um mit der Verwendung von WebView2 zu beginnen, navigieren Sie zu [WebView2 Anleitungen für erste Schritte][Webview2MainGettingStarted].  
 *   Ein umfassendes Beispiel für WebView2-Funktionen finden Sie unter [WebView2Samples][GithubMicrosoftedgeWebview2samples] auf GitHub.
 *   Ausführlichere Informationen zu WebView2-APIs finden Sie unter [API-Referenz][Webview2ApiReference].
 *   Wenn Sie weitere Informationen zu WebView2 möchten, navigieren Sie zu [WebView2-Ressourcen][Webview2MainNextSteps].
-
-## Kontakt mit dem WebView2-Team  
-
-[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!-- links -->  
 
