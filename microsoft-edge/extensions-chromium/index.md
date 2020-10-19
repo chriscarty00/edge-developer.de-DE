@@ -22,7 +22,7 @@ Die Erstellung von Erweiterungen ist sinnvoll, wenn Ihre Idee oder Ihr Produkt v
 
 Eine Erweiterung ist ähnlich wie eine normale Web-App strukturiert.  Sie umfasst mindestens eine JSON-App-Manifestdatei mit grundlegenden Plattforminformationen, eine JavaScript-Datei zum Definieren von Funktionen sowie eine HTML- und eine CSS-Datei, um das Aussehen der Benutzeroberfläche zu bestimmen \(nach Bedarf\).  Um direkt mit einem Teil des Browsers zu funktionieren, z. B. mit einem Fenster oder einem Tab, müssen Sie API-Anforderungen senden und häufig auf den Namen des Browsers verweisen.  
 
-:::image type="complex" source="./media/example-extension-screenshot.png" alt-text="Eine Microsoft Edge-Erweiterung (Chromium)&quot;:::
+:::image type="complex" source="./media/example-extension-screenshot.png" alt-text="Eine Microsoft Edge-Erweiterung (Chromium)":::
   Eine Microsoft Edge-Erweiterung \(Chromium\)  
 :::image-end:::  
 
