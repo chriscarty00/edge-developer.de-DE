@@ -18,7 +18,7 @@ ms.locfileid: "10694862"
 
 Mit den [Elementen für Microsoft Edge][VisualstudioMarketplaceElementsMicrosoftEdgeChromium] vs Code Extension verwenden Sie das Tool Elemente des Microsoft Edge-Browsers in [Visual Studio-Code][VisualstudioCode].  Durch Starten oder Anfügen wird das elementtool mit einer Instanz von Microsoft Edge verbunden, zeigt die HTML-Laufzeitstruktur an und ermöglicht Ihnen, das Layout zu ändern oder Formatierungsprobleme zu beheben.  
 
-:::image type="complex" source="./media/elements-for-edge.gif" alt-text="Elemente für Edge-vs-Code Erweiterung am Arbeitsplatz&quot;:::
+:::image type="complex" source="./media/elements-for-edge.gif" alt-text="Elemente für Edge-vs-Code Erweiterung am Arbeitsplatz":::
    Elemente für Edge-vs-Code Erweiterung am Arbeitsplatz  
 :::image-end:::
 
