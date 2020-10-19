@@ -121,7 +121,7 @@ Fügen Sie Ihrer Anwendung als nächstes eine WebView hinzu.
     
 1.  Drücken Sie `F5` , um das Projekt zu erstellen und auszuführen.  Vergewissern Sie sich, dass Ihr WebView2-Steuerelement angezeigt wird [https://www.microsoft.com](https://www.microsoft.com) .  
     
-    :::image type="complex" source="./media/wpf-gettingstarted-microsoft.png" alt-text="WPF-Kern" eine Adressleiste hinzu, indem Sie den folgenden Codeausschnitt innerhalb der DockPanel-Datei, die die WebView enthält, kopieren und einfügen.  
+    :::image type="complex" source="./media/wpf-gettingstarted-microsoft.png" alt-text="WPF-Kern eine Adressleiste hinzu, indem Sie den folgenden Codeausschnitt innerhalb der DockPanel-Datei, die die WebView enthält, kopieren und einfügen.  ":::
     
     ```xml
     <DockPanel DockPanel.Dock="Top">
