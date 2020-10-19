@@ -88,7 +88,7 @@ node example.js
 
 `puppeteer-core` startet Microsoft Edge, navigiert zu `https://www.microsoftedgeinsider.com` und speichert einen Screenshot der Seite 800px x 600px.  Sie können die Seitengröße mit [Page. setviewport ()][PuppeteerApipagesetviewport]anpassen.  
 
-:::image type="complex" source="./media/puppeteer-example.png" alt-text="Die von example.js erstellte example.png-Datei&quot;:::
+:::image type="complex" source="./media/puppeteer-example.png" alt-text="Die von example.js erstellte example.png-Datei":::
    Abbildung 1: die `example.png` Datei, die von erstellt wurde `example.js`  
 :::image-end:::  
 
@@ -105,7 +105,7 @@ Dies ist nur ein einfaches Beispiel für die Automatisierungs-und Testszenarien,
 Das Microsoft Edge-Entwicklerteam freut sich, Ihr Feedback zur Verwendung von Puppenspieler `puppeteer-core` und Microsoft Edge zu hören.  Verwenden Sie das Symbol &quot; **Feedback senden** " im Microsoft Edge devtools-oder Tweet- [@EdgeDevTools][TwitterIntentTweetEdgedevtools] , damit das Microsoft Edge-Team wissen kann, was Sie denken.  
 
 
-:::image type="complex" source="./devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="Die von example.js erstellte example.png-Datei&quot;:::
+:::image type="complex" source="./devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="Die von example.js erstellte example.png-Datei":::
    Abbildung 1: die `example.png` Datei, die von erstellt wurde `example.js`  
 :::image-end:::  
 
