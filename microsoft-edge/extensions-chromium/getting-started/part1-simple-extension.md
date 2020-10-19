@@ -47,7 +47,7 @@ Der folgende Codeausschnitt beschreibt die grundlegenden Informationen, die in d
 
 Erstellen Sie zunächst das `icons` Verzeichnis in Ihrem Projekt, in dem die Symbolbild Dateien gespeichert werden sollen.  Die Symbole werden für das Hintergrundbild der Schaltfläche verwendet, die Benutzer zum Starten der Erweiterung auswählen.  
 
-:::image type="complex" source="./media/part1-badge1.png" alt-text="Symbol auf der Symbolleiste, um die Erweiterung zu öffnen&quot;:::
+:::image type="complex" source="./media/part1-badge1.png" alt-text="Symbol auf der Symbolleiste, um die Erweiterung zu öffnen":::
    Symbol auf der Symbolleiste, um die Erweiterung zu öffnen
 :::image-end:::
 
