@@ -21,7 +21,7 @@ ms.locfileid: "10683651"
 
 In diesem Leitfaden erfahren Sie, wie Sie eine Erweiterung für Microsoft Edge erstellen.  Mit dieser Beispielerweiterung können Sie bestimmte CSS für [docs.Microsoft.com][MicrosoftDocs] -Seiten manipulieren, einschließlich der Erstellung einer Manifestdatei, der Benutzeroberfläche sowie von Hintergrund-und Inhalts Skripts.  
 
-:::image type="complex" source="../media/color-changer_header.png" alt-text="Docs.Microsoft.com Body in blau geändert&quot;:::
+:::image type="complex" source="../media/color-changer_header.png" alt-text="Docs.Microsoft.com Body in blau geändert":::
    Docs.Microsoft.com Body in blau geändert
 :::image-end:::
 
@@ -88,7 +88,7 @@ Nachdem Sie die Manifestdatei erstellt haben, benötigen Sie eine Benutzeroberfl
 
 Erstellen Sie für Ihre Erweiterung ein Popup für die Benutzeroberfläche, wie unten beschrieben.  
 
-:::image type="complex" source="../media/color-changer_popup.png" alt-text="Docs.Microsoft.com Body in blau geändert&quot;:::
+:::image type="complex" source="../media/color-changer_popup.png" alt-text="Docs.Microsoft.com Body in blau geändert":::
    Docs.Microsoft.com Body in blau geändert
 :::image-end:::
 
@@ -253,7 +253,7 @@ Navigieren Sie nach dem Hinzufügen der Erweiterung zu einer beliebigen [docs.Mi
 
 :::row:::
    :::column span="1":::
-      :::image type="complex" source="../media/color-changer_header_aliceblue.png" alt-text="Docs.Microsoft.com Body in blau geändert&quot;:::
+      :::image type="complex" source="../media/color-changer_header_aliceblue.png" alt-text="Docs.Microsoft.com Body in blau geändert":::
    Docs.Microsoft.com Body in blau geändert
 :::image-end:::
 
@@ -309,7 +309,7 @@ Erstellen Sie innerhalb des `color-changer` Ordners eine Datei mit dem Namen `ma
       <!--![Docs.microsoft.com header changed to Aliceblue][ImageColorChangerHeaderAliceblue]  -->
    :::column-end:::
    :::column span="1":::
-      :::image type="complex" source="../media/color-changer_header_cornsilk.png" alt-text="Docs.Microsoft.com Body in blau geändert&quot;:::
+      :::image type="complex" source="../media/color-changer_header_cornsilk.png" alt-text="Docs.Microsoft.com Body in blau geändert":::
    Docs.Microsoft.com Body in blau geändert
 :::image-end:::
 
