@@ -61,7 +61,7 @@ Wenn die Browser Aktion durch die Erweiterung eingestellt wurde, wird Sie entwed
       <!--![browser action in action menu][ImageActionmenuBrowseraction]  -->  
    :::column-end:::
    :::column span="1":::
-      :::image type="complex" source="../media/browseractionicon.png" alt-text="Browser Aktion im Menü ' Aktion '" angegeben ist, wird Sie in der Adressleiste angezeigt, wenn die [PageAction. Show][MDNApiPageactionShow] -Methode verwendet wird.  
+      :::image type="complex" source="../media/browseractionicon.png" alt-text="Browser Aktion im Menü ' Aktion ' angegeben ist, wird Sie in der Adressleiste angezeigt, wenn die [PageAction. Show][MDNApiPageactionShow] -Methode verwendet wird.  ":::
 
 :::image type="complex" source="../media/pageaction.png" alt-text="Browser Aktion im Menü ' Aktion '"
 },
