@@ -61,7 +61,7 @@ Aktualisieren Sie zunächst die `popup.html` Datei mit einem geraden Markup, in 
 
 Nach dem Aktualisieren und Öffnen der Erweiterung wird ein Popup mit einer Anzeige Schaltfläche geöffnet.  
 
-:::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.html-Anzeige nach dem Drücken des Erweiterungssymbols&quot;:::
+:::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.html-Anzeige nach dem Drücken des Erweiterungssymbols":::
    popup.html-Anzeige nach dem Drücken des Erweiterungssymbols
 :::image-end:::
 
@@ -219,7 +219,7 @@ Wenn ein Ereignis vom Listener verarbeitet wird, wird die Funktion, die der erst
 
 Wenn Sie nun zu einer beliebigen Seite navigieren und das Symbol für die **Erweiterung** auswählen, wird das Popupmenü wie folgt angezeigt:  
 
-:::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.html-Anzeige nach dem Drücken des Erweiterungssymbols&quot;:::
+:::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.html-Anzeige nach dem Drücken des Erweiterungssymbols":::
    popup.html-Anzeige nach dem Drücken des Erweiterungssymbols
 :::image-end:::
 
@@ -233,7 +233,7 @@ Wenn Sie nun zu einer beliebigen Seite navigieren und das Symbol für die **Erwe
 
 Wenn Sie die `Display` Schaltfläche auswählen, erhalten Sie die folgenden Elemente.  Wenn Sie eine beliebige Stelle im `stars.jpeg` Bild auswählen, wird das Bildelement entfernt, und die Registerkarten werden wieder auf die ursprüngliche Anzeige reduziert.  
 
-:::image type="complex" source="./media/part2-showingimage.png" alt-text="popup.html-Anzeige nach dem Drücken des Erweiterungssymbols&quot;:::
+:::image type="complex" source="./media/part2-showingimage.png" alt-text="popup.html-Anzeige nach dem Drücken des Erweiterungssymbols":::
    popup.html-Anzeige nach dem Drücken des Erweiterungssymbols
 :::image-end:::
 
