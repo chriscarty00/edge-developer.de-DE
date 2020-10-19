@@ -22,18 +22,18 @@ Führen Sie die folgenden Schritte aus, um die Erweiterung zu querladen.
 
 1.  Öffnen `edge://extensions` Sie die Seite, indem Sie die drei Punkte oben im Browser auswählen und dann **Erweiterungen**auswählen.
 
-       :::image type="complex" source="./media/part1-threedots.png" alt-text="Öffnen der Seite &quot;Edge://Extensions&quot;&quot;:::
+       :::image type="complex" source="./media/part1-threedots.png" alt-text="Öffnen der Seite &quot;Edge://Extensions&quot;":::
           Öffnen der Seite &quot;Edge://Extensions" :::image-end:::
 
 1.  Aktivieren Sie auf der Seite Erweiterungsverwaltung unter `edge://extensions` den **Entwicklermodus** mithilfe der Umschaltfläche unten links auf der Seite.
 
-       :::image type="complex" source="./media/part1-developermode-toggle.png" alt-text="Öffnen der Seite &quot;Edge://Extensions&quot;&quot;:::
+       :::image type="complex" source="./media/part1-developermode-toggle.png" alt-text="Öffnen der Seite &quot;Edge://Extensions&quot;":::
           Öffnen der Seite &quot;Edge://Extensions":::
           Aktivieren des Entwicklermodus :::image-end:::
 
 1.  Wenn Sie Ihre Erweiterung zum ersten Mal installieren, wählen Sie **Laden entpackt**aus.  Sie werden aufgefordert, das Verzeichnis mit den Quelldateien für die Erweiterung einzugeben.  Ihre Erweiterung wird in Ihrem Browser installiert, ähnlich wie im Store installierte Erweiterungen.  
 
-       :::image type="complex" source="./media/part1-installed-extension.png" alt-text="Öffnen der Seite &quot;Edge://Extensions&quot;&quot;:::
+       :::image type="complex" source="./media/part1-installed-extension.png" alt-text="Öffnen der Seite &quot;Edge://Extensions&quot;":::
           Öffnen der Seite &quot;Edge://Extensions" mit einer quer geladene-Erweiterung :::image-end:::
 
 Während der Entwicklung müssen Sie möglicherweise auch die folgenden Aufgaben ausführen.
