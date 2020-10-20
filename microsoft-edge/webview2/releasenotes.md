@@ -3,17 +3,17 @@ description: Anmerkungen zu dieser Version von Microsoft Edge WebView2 SDK
 title: Anmerkungen zu dieser Version von Microsoft Edge WebView2 für Win32, WPF und WinForms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/15/2020
+ms.date: 10/19/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: 96ceb12dc5cdf51a1ca254f52e967fd78b9dc15d
-ms.sourcegitcommit: 442de63da52d00c6dc27fa08ccdb736534127566
+ms.openlocfilehash: 3e567373b0faff745e60cd53faddc9af4e370a58
+ms.sourcegitcommit: efb12ebe2fe9ef02f04a9ff6e4540c2384c964e2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "11120095"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "11120501"
 ---
 # Anmerkungen zu dieser Version von WebView2 SDK  
 
@@ -24,6 +24,51 @@ Das WebView2-Team liefert Updates für das [WebView2-SDK][NuGetGallery] in einer
 
 > [!IMPORTANT]
 > Während WebView2 eine Vorschau ist, befinden sich die .NET-APIs in der `prerelease package` .  
+
+## 1.0.674-Vorabversion  
+
+Veröffentlichungsdatum: Okt 19, 2020  
+
+[NuGet-Paket][NuGetGallery1.0.674-prerelease] \ | minimale Microsoft Edge-Version 88.0.674.0.
+
+#### Allgemein
+
+*   [NavigateWithWebResourceRequest][ReferenceWin32Icorewebview2experimentalNavigatewithwebresourcerequest10674] -Methode hinzugefügt, mit der Sie während der Navigation Postdaten oder zusätzliche Anforderungs Kopfzeilen bereitstellen können.
+*   Das [DOMContentLoaded][ReferenceWin32Icorewebview2experimentalAddDomcontentloaded10674] -Ereignis, das beim Laden und Analysieren des ersten HTML-Dokuments ausgeführt wird, wurde hinzugefügt.
+*   Die [Umgebungs][ReferenceWin32Icorewebview2experimentalGetEnvironment10674] Eigenschaft für WebView2 wurde hinzugefügt. Diese Eigenschaft macht die WebView2-Umgebung verfügbar, in der eine Instanz von WebView2 erstellt wurde.
+*   Hinzugefügte [Cookie-Verwaltungs][ReferenceWin32Icorewebview2experimentalGetCookiemanager10674] -APIs, die es Entwicklern ermöglichen, die WebView2-Sitzung zu authentifizieren oder Cookies aus WebView abzurufen, um andere Tools zu authentifizieren. Wir planen, Sprache/Framework-spezifische Verbesserungen vorzunehmen. Weitere Informationen finden Sie unter [API-Überprüfung: Cookieverwaltung][GithubMicrosoftedgeWebview2AnnouncementIssue2].
+*   Das [WebResourceResponseReceived][ReferenceWin32Icorewebview2experimentalAddWebresourceresponsereceived10674] -Ereignis wurde aktualisiert, und es wurden unveränderliche [WebResourceResponseView][ReferenceWin32Icorewebview2experimentalwebresourceresponseview10674] und [WebResourceResponseReceivedEventArgs::P opulateresponsecontent][ReferenceWin32Icorewebview2experimentalwebresourceresponsereceivedeventargsPopulateresponsecontent09628] zu [WebResourceResponseView:: getContent][ReferenceWin32Icorewebview2experimentalwebresourceresponseviewGetcontent10674]hinzugefügt.
+*   [Microsoft Defender Application Guard (WDAG)][WindowsSecurityThreatProtectionMicrosoftDefenderApplicationGuardWindows10] in WebView2 deaktiviert.
+*   [SystemCursorId][ReferenceWin32Icorewebview2experimentalcompositioncontroller2GetSystemcursorid10674] für visuelles Hosting hinzugefügt.
+*   Der Fehler wurde für die Eingabemethode im visuellen Hosting behoben.
+*   Entwickler müssen Version. lib nicht mehr einbeziehen, wenn Sie die statische WebView2-Bibliothek verwenden.
+
+
+#### .NET  
+
+*   [CoreWebView2][DotnetApiMicrosoftWebWebview2CoreCorewebview2] -Klasse aktualisiert, um die CoreWebView2Environment-Variable verfügbar zu machen.  
+*   Implementierungen von benutzerdefinierten EventArgs-Klassen in Namespace wurden als unter `Microsoft.Web.WebView2.Core` Klassen von [System. EventArgs][DotnetApiSystemEventargs] oder [System. ComponentModel. CancelEventArgs][DotnetApiSystemComponentmodelCancelEventargs]geändert. \ ([\ #250][GithubMicrosoftedgeWebviewfeedbackIssue250]\)  
+*   Unterstützung für [CoreWebView2CreationProperties][DotnetApiMicrosoftWebWebview2Winforms] in WinForms wurde hinzugefügt. \ ([\ #204][GithubMicrosoftedgeWebviewfeedbackIssue204]\)
+*   .Net [WebResourceRequested][DotnetApiMicrosoftWebWebview2CoreCorewebview2Webresourcerequested] -APIs wurden hinzugefügt.  \ ([\ #219][GithubMicrosoftedgeWebviewfeedbackIssue219]\).  
+*   Die [Quell][DotnetApiMicrosoftWebWebview2WinformsWebview2Source] Eigenschaft des WinForms-Designers wurde auf Standard aktualisiert oder auf Null zurückgesetzt. \ ([\ #177][GithubMicrosoftedgeWebviewfeedbackIssue177]\).  
+*   WebView2-Begrenzungen in WebView2.Init () wurden aktualisiert, um dpi-Modi mit weniger als 100% zu unterstützen.  \ ([\ #432][GithubMicrosoftedgeWebviewfeedbackIssue432]\).  
+*   [BuildWindowCore][DotnetApiMicrosoftWebWebview2WpfWebview2Buildwindowcore] und [DestroyWindowCore][DotnetApiMicrosoftWebWebview2WpfWebview2Destroywindowcore] wurden aktualisiert, um robuster zu sein.  \ ([\ #382][GithubMicrosoftedgeWebviewfeedbackIssue382]\).  
+*   Die .net Loader-Basis wurde aktualisiert, um den Prozess-Bit anstelle der Betriebssystemarchitektur zu laden. \ ([\ #431][GithubMicrosoftedgeWebviewfeedbackIssue431]\).  
+*   EdgeNotFoundExpection in [WebView2RuntimeNotFoundException][WebView2RuntimeNotFoundException]umbenannt.
+ 
+## 1.0.622.22  
+
+Veröffentlichungsdatum: Okt 19, 2020  
+
+[NuGet-Paket][NuGetGallery1.0.622.22] \ | minimale WebView2-Runtime-Version 86.0.622.22.  
+
+#### Allgemein  
+
+> [!IMPORTANT]
+> **Ankündigung**: Win32 C/C++ WebView2 ist jetzt im allgemeinen verfügbar (GA). Ab dieser Version sind die Release-SDKs für die Weiterleitung kompatibel. Weitere Informationen finden Sie im [Blogbeitrag der GA-Ankündigung](https://aka.ms/wv2gablogpost) .
+
+* [Evergreen-WebView2-Laufzeit und-Installer][Webview2ConceptsDistributionUnderstandRuntimeInstaller] ist GA. Bootstrapper, Downlink-Link für den Bootstrapper und Standalone-Installationsprogramm für die Evergreen-Runtime finden Sie [hier](https://developer.microsoft.com/microsoft-edge/webview2/). Der Beispielcode für den Installations Workflow steht auch im [WebView2Samples Repo][GithubMicrosoftedgeWebview2samplesMain]zur Verfügung. 
+* Der [Modus für feste Versionen][Webview2ConceptsDistributionFixedVersionMode] steht für Entwicklervorschau zur Verfügung.
 
 ## 0.9.628-Vorabversion  
 
@@ -37,13 +82,13 @@ Veröffentlichungsdatum: 10. September, 2020
 #### Allgemein  
 
 *   > [!IMPORTANT]
-    > **Ankündigung**: Visual Hosting-APIs sind jetzt unter Vorschau.  WebView2 verwendet visuelles Hosting, um neben WinComp/DComp-visuellen Objekten im Gegensatz zu HWNDs zu laufen.  Die Schnittstellen sind in experimental.  Weitere Informationen finden Sie unter [ICoreWebView2ExperimentalEnvironment][ReferenceWin3209622Icorewebview2experimentalenvironment].  
+    > **Ankündigung**: Visual Hosting-APIs sind jetzt unter Vorschau.  WebView2 verwendet visuelles Hosting, um neben WinComp/DComp-visuellen Objekten im Gegensatz zu HWNDs zu laufen.  Die Schnittstellen sind in experimental.  Weitere Informationen finden Sie unter [ICoreWebView2ExperimentalEnvironment][ReferenceWin32Icorewebview2experimentalenvironment09628].  
 
 #### .NET  
 
 *   .NET-Binärdateien sind jetzt [stark benannt][DotnetStandardAssemblyStrongNamed].  \ ([\ #181][GithubMicrosoftedgeWebviewfeedbackIssue181]\).  
 *   Das NuGet-Ziel wurde aktualisiert `WebViewLoader2.dll` .  \ ([\ #228][GithubMicrosoftedgeWebviewfeedbackIssue228]\) und \ ([\ #183][GithubMicrosoftedgeWebviewfeedbackIssue183]\).  
-*   Aktualisiert `WebResourceRequested` , um [HttpRequestHeaders][ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2httprequestheaders] -und [HttpResponseHeaders][ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2httpresponseheaders] -APIs in .net verfügbar zu machen.  \ ([\ #131][GithubMicrosoftedgeWebviewfeedbackIssue131]\).  
+*   Aktualisiert `WebResourceRequested` , um [HttpRequestHeaders][DotnetApiMicrosoftWebWebview2CoreCorewebview2httprequestheaders] -und [HttpResponseHeaders][DotnetApiMicrosoftWebWebview2CoreCorewebview2httpresponseheaders] -APIs in .net verfügbar zu machen.  \ ([\ #131][GithubMicrosoftedgeWebviewfeedbackIssue131]\).  
 
 ## 0.9.622.11  
 
@@ -57,11 +102,11 @@ Veröffentlichungsdatum: 10. September, 2020
     > **Ankündigung**: dieses SDK ist der Veröffentlichungskandidat für WebView2 Win32 C/C++ GA.  Die GA-Version sollte dieselbe API-Schnittstelle und-Funktionalität verwenden.  
 
 *   Getrennte [Browser Richtlinien][DeployedgeMicrosoftEdgePolicies].  
-*   [AllowSingleSignOnUsingOSPrimaryAccount][ReferenceWin3209622Icorewebview2environmentoptionsGetAllowsinglesignonusingosprimaryaccount] -Eigenschaft für WebView2-Umgebungsoptionen hinzugefügt, um bedingten Zugriff für WebView zu ermöglichen.  
-*   Aktualisiert `ICoreWebView2NewWindowRequestedEventArgs` , um die [WindowFeatures][ReferenceWin3209622Icorewebview2newwindowrequestedeventargsGetWindowfeatures] -Eigenschaft und die zugehörige [ICoreWebView2WindowFeatures][ReferenceWin3209622Icorewebview2windowfeatures]einzubeziehen.  \ ([\ #293][GithubMicrosoftedgeWebviewfeedbackIssue293]\).  
+*   [AllowSingleSignOnUsingOSPrimaryAccount][ReferenceWin32Icorewebview2environmentoptionsGetAllowsinglesignonusingosprimaryaccount09622] -Eigenschaft für WebView2-Umgebungsoptionen hinzugefügt, um bedingten Zugriff für WebView zu ermöglichen.  
+*   Aktualisiert `ICoreWebView2NewWindowRequestedEventArgs` , um die [WindowFeatures][ReferenceWin32Icorewebview2newwindowrequestedeventargsGetWindowfeatures09622] -Eigenschaft und die zugehörige [ICoreWebView2WindowFeatures][ReferenceWin32Icorewebview2windowfeatures09622]einzubeziehen.  \ ([\ #293][GithubMicrosoftedgeWebviewfeedbackIssue293]\).  
 *   `System.Windows.Rect`Die Verwendung wird `System.Drawing.Rectangle` anstelle von `System.Windows.Rect` \ ([\ #235][GithubMicrosoftedgeWebviewfeedbackIssue235]\) aktualisiert.  
 *   Das mswebviewnewwindowrequested-Ereignis wurde aktualisiert, um die `window.open()` Anforderung ohne Parameter zu behandeln.  \ ([\ #293][GithubMicrosoftedgeWebviewfeedbackIssue293]\).  
-*   [AdditionalBrowserArguments][ReferenceWin3209622Icorewebview2environmentoptionsPutAdditionalbrowserarguments] -Satz using `ICoreWebView2EnvironmentOptions` werden nicht mit Umgebungsvariablen oder Registrierungswert überschrieben.  Weitere Informationen finden Sie unter [CreateCoreWebView2EnvironmentWithOptions][ReferenceWin3209622IdlCreatecorewebview2environmentwithoptions].  
+*   [AdditionalBrowserArguments][ReferenceWin32Icorewebview2environmentoptionsPutAdditionalbrowserarguments09622] -Satz using `ICoreWebView2EnvironmentOptions` werden nicht mit Umgebungsvariablen oder Registrierungswert überschrieben.  Weitere Informationen finden Sie unter [CreateCoreWebView2EnvironmentWithOptions][ReferenceWin32IdlCreatecorewebview2environmentwithoptions09622].  
 
 ## 0.9.579  
 
@@ -72,7 +117,7 @@ Veröffentlichungsdatum: 20. Juli 2020
 #### Allgemein  
 
 *   > [!IMPORTANT]
-    > **Ankündigung**: Evergreen WebView2-Laufzeit und-Installationsprogramm werden für die Vorschau veröffentlicht.  Weitere Informationen finden Sie unter [Verteilung von WebView2][Webview2ConceptsDistributionUnderstandRuntimeInstallerPreview].  
+    > **Ankündigung**: Evergreen WebView2-Laufzeit und-Installationsprogramm werden für die Vorschau veröffentlicht.  Weitere Informationen finden Sie unter [Verteilung von WebView2] [Webview2ConceptsDistributionUnderstandRuntimeInstallerPreview].  
 *   > [!IMPORTANT]
     > **Ankündigung**: die folgenden WebView2-SDK-Versionen werden nach der nächsten SDK-Version nicht mehr unterstützt.  
     > 
@@ -85,11 +130,11 @@ Veröffentlichungsdatum: 20. Juli 2020
     > Die WebView2-SDK-Versionen sind auch in nuget.org als veraltet markiert.  WebView2 empfiehlt, mit der neuesten Version von WebView2 auf dem Laufenden zu bleiben.  
 
 *   Verbesserungen des WebView-Worker-Threads.  \ ([\ #318][GithubMicrosoftedgeWebviewfeedbackIssue318]\).  
-*   Popup-Blocker deaktiviert in WebView.  Wenn Sie weitere Informationen erhalten möchten, navigieren Sie zu der [IsUserInitiated][ReferenceWin3209538Icorewebview2newwindowrequestedeventargsGetIsuserinitiated] -Eigenschaft des `NewWindowRequested` Ereignisses.  
+*   Popup-Blocker deaktiviert in WebView.  Wenn Sie weitere Informationen erhalten möchten, navigieren Sie zu der [IsUserInitiated][ReferenceWin32Icorewebview2newwindowrequestedeventargsGetIsuserinitiated09538] -Eigenschaft des `NewWindowRequested` Ereignisses.  
 *   Sichergestellt, dass das Startereignis für WebView-Navigation ausgelöst wird `about:blank` .  Nun `NavigationStarting` werden Ereignisse für die gesamte Navigation ausgelöst, aber Abbruch `about:blank` -oder IFRAME-srcdoc werden nicht unterstützt und ignoriert.  
 *   Blockiertes `edge:// URI` Schema in WebView.  
-*   Experimentelle [IsSingleSignOnUsingOSPrimaryAccountEnabled][ReferenceWin3209538Icorewebview2experimentaloptionsGetIssinglesignonusingosprimaryaccountenabled] -Eigenschaft für WebView2-Umgebungsoptionen hinzugefügt, um bedingten Zugriff für WebView zu ermöglichen.  
-*   Experimentelles [WebResourceResponseReceived][ReferenceWin3209538Icorewebview2experimentalAddWebresourceresponsereceived] -Ereignis wurde hinzugefügt, das ausgelöst wird, nachdem die WebView die Antwort für eine Webressourcen Anforderung empfangen und verarbeitet hat.  Authentifizierungsheader (sofern vorhanden) sind im Response-Objekt enthalten.  
+*   Experimentelle [IsSingleSignOnUsingOSPrimaryAccountEnabled][ReferenceWin32Icorewebview2experimentaloptionsGetIssinglesignonusingosprimaryaccountenabled09538] -Eigenschaft für WebView2-Umgebungsoptionen hinzugefügt, um bedingten Zugriff für WebView zu ermöglichen.  
+*   Experimentelles [WebResourceResponseReceived][ReferenceWin32Icorewebview2experimentalAddWebresourceresponsereceived09538] -Ereignis wurde hinzugefügt, das ausgelöst wird, nachdem die WebView die Antwort für eine Webressourcen Anforderung empfangen und verarbeitet hat.  Authentifizierungsheader (sofern vorhanden) sind im Response-Objekt enthalten.  
 
 #### .NET  
 
@@ -107,21 +152,21 @@ Veröffentlichungsdatum: 20. Juli 2020
 
 #### Win32 C/C++  
 
-*   [ICoreWebView2ExperimentalNewWindowRequestedEventArgs:: get_WindowFeatures][ReferenceWin3209538Icorewebview2experimentalnewwindowrequestedeventargsGetWindowfeatures]hinzugefügt, das ausgelöst wird, wenn `window.open()` ausgeführt wird und [ICoreWebView2ExperimentalWindowFeatures][ReferenceWin3209538Icorewebview2experimentalwindowfeatures] \ ([#70][GithubMicrosoftedgeWebviewfeedbackIssue70]\) zugeordnet ist.  
+*   [ICoreWebView2ExperimentalNewWindowRequestedEventArgs:: get_WindowFeatures][ReferenceWin32Icorewebview2experimentalnewwindowrequestedeventargsGetWindowfeatures09538]hinzugefügt, das ausgelöst wird, wenn `window.open()` ausgeführt wird und [ICoreWebView2ExperimentalWindowFeatures][ReferenceWin32Icorewebview2experimentalwindowfeatures09538] \ ([#70][GithubMicrosoftedgeWebviewfeedbackIssue70]\) zugeordnet ist.  
 *   > [!IMPORTANT]
-    > **Aktuelle Änderung**:  [CreateCoreWebView2EnvironmentWithDetails][ReferenceWin3209488Webview2IdlCreatecorewebview2environmentwithdetails] ist veraltet und wird durch [CreateCoreWebView2EnvironmentWithOptions] [[ReferenceWin3209538IdlCreatecorewebview2environmentwithoptions].  
+    > **Aktuelle Änderung**:  [CreateCoreWebView2EnvironmentWithDetails][ReferenceWin32Webview2IdlCreatecorewebview2environmentwithdetails09488] ist veraltet und wird durch [CreateCoreWebView2EnvironmentWithOptions] [[ReferenceWin32IdlCreatecorewebview2environmentwithoptions09538].  
 *   > [!IMPORTANT]
     > **Aktuelle Änderung**: um sicherzustellen, dass die WebView2-API mit den Windows-API-Benennungskonventionen übereinstimmt, hat das WebView-Team die Namen der folgenden aktualisiert.  
-    > *   [AreRemoteObjectsAllowed][ReferenceWin3209488Icorewebview2settingsGetAreremoteobjectsallowed] ist jetzt [AreHostObjectsAllowed][ReferenceWin3209538Icorewebview2settingsGetArehostobjectsallowed].  
-*   [AddHostObjectToScript][ReferenceWin3209538Icorewebview2Addhostobjecttoscript] aktualisiert, um sicherzustellen, dass die ursprünglichen Hostobjekt-Serialisierungsprogramme-Marker auf die Proxyobjekte gesetzt und als Hostobjekt zurück serialisiert werden, wenn Sie als Parameter im JavaScript-Rückruf \ ([#148][GithubMicrosoftedgeWebviewfeedbackIssue148]\) übergeben werden.  
+    > *   [AreRemoteObjectsAllowed][ReferenceWin32Icorewebview2settingsGetAreremoteobjectsallowed09488] ist jetzt [AreHostObjectsAllowed][ReferenceWin32Icorewebview2settingsGetArehostobjectsallowed09538].  
+*   [AddHostObjectToScript][ReferenceWin32Icorewebview2Addhostobjecttoscript09538] aktualisiert, um sicherzustellen, dass die ursprünglichen Hostobjekt-Serialisierungsprogramme-Marker auf die Proxyobjekte gesetzt und als Hostobjekt zurück serialisiert werden, wenn Sie als Parameter im JavaScript-Rückruf \ ([#148][GithubMicrosoftedgeWebviewfeedbackIssue148]\) übergeben werden.  
 
 #### .Net (0.9.538 Pre-Release)  
 
 *   Freigegebene WinForms-und WPF-WebView2API-Beispiele, die umfassende Leitfäden des WebView2-SDK sind.  Wenn Sie weitere Informationen wünschen, navigieren Sie zu [Samples Repo][GithubMicrosoftedgeWebview2samplesMain].  
 *   Unterstützung für visuelles Hosting und Fenster Features, [experimentelle APIs][ConceptsVersioningExperimentalApis], wurde hinzugefügt.  
 *   > [!IMPORTANT]
-    > **Aktuelle Änderung**: die folgenden Verzögerungen implementieren nun IDisposable:  [ScriptDialogOpening][ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2Scriptdialogopening], [mswebviewnewwindowrequested][ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2Newwindowrequested], [WebResourceRequested][ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2Webresourcerequested]und [PermissionRequested][ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2Permissionrequested].  
-*   [GetAvailableBrowserVersionString][ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentGetavailablebrowserversionstring] und [CompareBrowserVersions][ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentComparebrowserversions] werden als [CoreWebView2Environment][ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environment] -Statik hinzugefügt.  
+    > **Aktuelle Änderung**: die folgenden Verzögerungen implementieren nun IDisposable:  [ScriptDialogOpening][DotnetApiMicrosoftWebWebview2CoreCorewebview2Scriptdialogopening], [mswebviewnewwindowrequested][DotnetApiMicrosoftWebWebview2CoreCorewebview2Newwindowrequested], [WebResourceRequested][DotnetApiMicrosoftWebWebview2CoreCorewebview2Webresourcerequested]und [PermissionRequested][DotnetApiMicrosoftWebWebview2CoreCorewebview2Permissionrequested].  
+*   [GetAvailableBrowserVersionString][DotnetApiMicrosoftWebWebview2CoreCorewebview2environmentGetavailablebrowserversionstring] und [CompareBrowserVersions][DotnetApiMicrosoftWebWebview2CoreCorewebview2environmentComparebrowserversions] werden als [CoreWebView2Environment][DotnetApiMicrosoftWebWebview2CoreCorewebview2environment] -Statik hinzugefügt.  
 
 ## 0.9.515-Vorabversion  
 
@@ -129,9 +174,9 @@ Veröffentlichungsdatum: 20. Juli 2020
 
 *   > [!IMPORTANT]
     > **Ankündigung**: WebView2 unterstützt jetzt Windows Forms und WPF unter .NET Framework 4.6.2 oder höher und .net Core 3,0 oder höher im **Pre-Release-Paket**.  
-*   Weitere Informationen zum Erstellen von WPF-Anwendungen und zum WPF- [Referenz][ReferenceWpfReference] WebView2 für WPF-spezifische APIs finden Sie unter [WPF-Leitfaden für erste Schritte][GettingstartedWpf].  
-*   Weitere Informationen zum Erstellen von Windows Forms-Anwendungen und der WebView2 [Windows Forms-Referenz][ReferenceWinformsReference] für Windows Forms-spezifische APIs finden Sie unter [Windows Forms-Leitfaden für erste Schritte][GettingstartedWinforms].  
-*   Wenn Sie weitere Informationen zu den CoreWebView2-APIs erhalten möchten, navigieren Sie zu [.net Reference][ReferenceDotnetReference].  
+*   Weitere Informationen zum Erstellen von WPF-Anwendungen und zum WPF- [Referenz][DotnetApiMicrosoftWebWebview2Wpf] WebView2 für WPF-spezifische APIs finden Sie unter [WPF-Leitfaden für erste Schritte][GettingstartedWpf].  
+*   Weitere Informationen zum Erstellen von Windows Forms-Anwendungen und der WebView2 [Windows Forms-Referenz][DotnetApiMicrosoftWebWebview2Winforms] für Windows Forms-spezifische APIs finden Sie unter [Windows Forms-Leitfaden für erste Schritte][GettingstartedWinforms].  
+*   Wenn Sie weitere Informationen zu den CoreWebView2-APIs erhalten möchten, navigieren Sie zu [.net Reference][DotnetApiMicrosoftWebWebview2Core].  
 *   > [!CAUTION]
     > **Bekannte Probleme**: das WebView-Team kennt einige Probleme in der Vorabversion, die in zukünftigen Versionen aufgelöst werden.  
     > *   **Dpi-Erkennung**: WebView2 für WPF ist derzeit nicht mit dpi vertraut.  Bei der Initialisierung von WebView2 auf hochdpi-Monitoren gibt es ein bekanntes Problem, bei dem die WebView zunächst als Bruchteil des Fensters initialisiert wird, bis die Größe des Fensters geändert wird.  
@@ -148,10 +193,10 @@ Veröffentlichungsdatum: 20. Juli 2020
 *   > [!IMPORTANT]
     > **Aktuelle Änderung**: um sicherzustellen, dass die WebView2-API mit den Windows-API-Benennungskonventionen übereinstimmt, hat das WebView-Team die Namen der folgenden Schnittstellen aktualisiert.  
     > *   `CORE_WEBVIEW2_*` prefix ist jetzt `COREWEBVIEW2_*` .  
-    > *   [GetCoreWebView2BrowserVersionInfo][ReferenceWin3209430Webview2IdlGetcorewebview2browserversioninfo] ist jetzt [GetAvailableCoreWebView2BrowserVersionString][ReferenceWin3209488Webview2IdlGetavailablecorewebview2browserversionstring].  
-    > *   [get_BrowserVersionInfo][ReferenceWin3209430Icorewebview2environmentGetBrowserversioninfo] ist nun [get_BrowserVersionString][ReferenceWin3209488Icorewebview2environmentGetBrowserversionstring].  
-    > *   [Addremoteobject][ReferenceWin3209430Icorewebview2Addremoteobject] ist jetzt [AddHostObjectToScript][ReferenceWin3209488Icorewebview2Addhostobjecttoscript].  
-    > *   [RemoveRemoteObject][ReferenceWin3209430Icorewebview2Removeremoteobject] ist jetzt [RemoveHostObjectFromScript][ReferenceWin3209488Icorewebview2Removehostobjectfromscript].  
+    > *   [GetCoreWebView2BrowserVersionInfo][ReferenceWin32Webview2IdlGetcorewebview2browserversioninfo09430] ist jetzt [GetAvailableCoreWebView2BrowserVersionString][ReferenceWin32Webview2IdlGetavailablecorewebview2browserversionstring09488].  
+    > *   [get_BrowserVersionInfo][ReferenceWin32Icorewebview2environmentGetBrowserversioninfo09430] ist nun [get_BrowserVersionString][ReferenceWin32Icorewebview2environmentGetBrowserversionstring09488].  
+    > *   [Addremoteobject][ReferenceWin32Icorewebview2Addremoteobject09430] ist jetzt [AddHostObjectToScript][ReferenceWin32Icorewebview2Addhostobjecttoscript09488].  
+    > *   [RemoveRemoteObject][ReferenceWin32Icorewebview2Removeremoteobject09430] ist jetzt [RemoveHostObjectFromScript][ReferenceWin32Icorewebview2Removehostobjectfromscript09488].  
     > *   `chrome.webview.remoteObjects` ist jetzt `chrome.webview.hostObjects` .  
 *   > [!IMPORTANT]
     > **Aktuelle Änderung**: die `AddRemoteObject` js-Proxy Methoden werden ebenfalls umbenannt.  
@@ -161,16 +206,16 @@ Veröffentlichungsdatum: 20. Juli 2020
     > *   `setRemote` ist jetzt `setHostProperty` .  
     > *   `applyRemote` ist jetzt `applyHostFunction` .  
 *   > [!IMPORTANT]
-    > **Aktuelle Änderung**:  [CreateCoreWebView2EnvironmentWithDetails][ReferenceWin3209488Webview2IdlCreatecorewebview2environmentwithdetails] ist veraltet und durch [CreateCoreWebView2EnvironmentWithOptions][ReferenceWin3209488Webview2IdlCreatecorewebview2environmentwithoptions]ersetzt.  
-*   [FrameNavigationCompleted][ReferenceWin3209488Icorewebview2AddFramenavigationcompleted] -Ereignis hinzugefügt.  Wenn ein IFRAME nun die Navigation beendet, wird ein Ereignis ausgelöst und gibt den Erfolg der Navigation und der Navigations-ID zurück.  
-*   [ICoreWebView2EnvironmentOptions][ReferenceWin3209488Icorewebview2environmentoptions] -Schnittstelle hinzugefügt, die verwendet werden kann, um die Version der WebView2-Laufzeit zu ermitteln, auf die die Anwendung ausgerichtet ist.  
-*   [IsBuiltInErrorPageEnabled][ReferenceWin3209488Icorewebview2settingsGetIsbuiltinerrorpageenabled] -Einstellung hinzugefügt.  Nun können Sie die integrierte Fehlerseite für Navigationsfehler und Renderprozess-Fehler aktivieren oder deaktivieren.  
+    > **Aktuelle Änderung**:  [CreateCoreWebView2EnvironmentWithDetails][ReferenceWin32Webview2IdlCreatecorewebview2environmentwithdetails09488] ist veraltet und durch [CreateCoreWebView2EnvironmentWithOptions][ReferenceWin32Webview2IdlCreatecorewebview2environmentwithoptions09488]ersetzt.  
+*   [FrameNavigationCompleted][ReferenceWin32Icorewebview2AddFramenavigationcompleted09488] -Ereignis hinzugefügt.  Wenn ein IFRAME nun die Navigation beendet, wird ein Ereignis ausgelöst und gibt den Erfolg der Navigation und der Navigations-ID zurück.  
+*   [ICoreWebView2EnvironmentOptions][ReferenceWin32Icorewebview2environmentoptions09488] -Schnittstelle hinzugefügt, die verwendet werden kann, um die Version der WebView2-Laufzeit zu ermitteln, auf die die Anwendung ausgerichtet ist.  
+*   [IsBuiltInErrorPageEnabled][ReferenceWin32Icorewebview2settingsGetIsbuiltinerrorpageenabled09488] -Einstellung hinzugefügt.  Nun können Sie die integrierte Fehlerseite für Navigationsfehler und Renderprozess-Fehler aktivieren oder deaktivieren.  
 *   Aktualisierte Remote Objekt Injektion zur Unterstützung von .net IDispatch-Implementierungen \ ([#113][GithubMicrosoftedgeWebviewfeedbackIssue113]\).  
-*   Das [mswebviewnewwindowrequested][ReferenceWin3209488Icorewebview2AddNewwindowrequested] -Ereignis wurde aktualisiert, um Anforderungen aus Kontextmenüs zu behandeln \ ([#108][GithubMicrosoftedgeWebviewfeedbackIssue108]\).  
+*   Das [mswebviewnewwindowrequested][ReferenceWin32Icorewebview2AddNewwindowrequested09488] -Ereignis wurde aktualisiert, um Anforderungen aus Kontextmenüs zu behandeln \ ([#108][GithubMicrosoftedgeWebviewfeedbackIssue108]\).  
 *   Hat das erste separate WebView2-Pre-Release-Paket veröffentlicht, in dem Sie auf visuelle Hosting-APIs zugreifen können.  Das WebView-Team hat [APISample][GithubMicrosoftedgeWebview2samplesMain] aktualisiert, um die neuen experimentellen APIs einzubeziehen.  
-    *   [ICoreWebView2ExperimentalCompositionController][ReferenceWin3209488Icorewebview2experimentalcompositioncontroller] -Schnittstelle hinzugefügt, um eine Verbindung mit einer Kompositionsstruktur herzustellen und Eingaben für die WebView bereitzustellen.  
-    *   [ICoreWebView2ExperimentalPointerInfo][ReferenceWin3209488Icorewebview2experimentalpointerinfo]hinzugefügt, das alle Informationen aus einer enthält `POINTER_INFO` .  Dieses Objekt wird an SendPointerInput übergeben, um zeigereingaben in die WebView einzufügen.  
-    *   [ICoreWebView2ExperimentalCursorChangedEventHandler][ReferenceWin3209488Icorewebview2experimentalcursorchangedeventhandler]hinzugefügt, das die APP anweist, wenn der Mauszeiger über der WebView geändert werden soll.  Wenn sich die Maus über einem Textfeld in der WebView befindet, ändert sich der Cursor vom Pfeil zur Auswahl.  Die `cursor` Eigenschaft in der `CompositionController` teilt der APP mit, was der Mauszeiger aktuell für die WebView sein sollte.  
+    *   [ICoreWebView2ExperimentalCompositionController][ReferenceWin32Icorewebview2experimentalcompositioncontroller09488] -Schnittstelle hinzugefügt, um eine Verbindung mit einer Kompositionsstruktur herzustellen und Eingaben für die WebView bereitzustellen.  
+    *   [ICoreWebView2ExperimentalPointerInfo][ReferenceWin32Icorewebview2experimentalpointerinfo09488]hinzugefügt, das alle Informationen aus einer enthält `POINTER_INFO` .  Dieses Objekt wird an SendPointerInput übergeben, um zeigereingaben in die WebView einzufügen.  
+    *   [ICoreWebView2ExperimentalCursorChangedEventHandler][ReferenceWin32Icorewebview2experimentalcursorchangedeventhandler09488]hinzugefügt, das die APP anweist, wenn der Mauszeiger über der WebView geändert werden soll.  Wenn sich die Maus über einem Textfeld in der WebView befindet, ändert sich der Cursor vom Pfeil zur Auswahl.  Die `cursor` Eigenschaft in der `CompositionController` teilt der APP mit, was der Mauszeiger aktuell für die WebView sein sollte.  
 
 ## 0.9.430  
 
@@ -179,27 +224,27 @@ Veröffentlichungsdatum: 20. Juli 2020
 Das WebView2-SDK ist die offizielle Win32 C++-Beta Version, die mehrere Funktionsanforderungen aus Feedback enthält.  Das WebView-Team versucht, die Anzahl der Versionen mit Unterbrechungen zu begrenzen, aber da die allgemeine Verfügbarkeit angesprochen wird, wird die Beta Version verwendet, um mehrere wichtige wichtige Änderungen in einem Schritt einzubeziehen.  
 
 *   > [!IMPORTANT]
-    > **Aktuelle Änderung**: Wenn sich die endgültige Version nähert, wird das WebView-Team das Präfix *IWebView2WebView*   zu *ICoreWebView2*   umbenannt, um sicherzustellen, dass die WebView2-API mit der Windows-API-Benennungskonvention ausgerichtet wird.  Um das WebView2-SDK aus UI-Frameworks zu nutzen, wurde das WebView-Team außerdem `ICoreWebView2` in [ICoreWebView2][ReferenceWin3209430Icorewebview2] und [ICoreWebView2Host][ReferenceWin3209430Icorewebview2host]getrennt.  `ICoreWebView2Host` unterstützt das Ändern der Größe, ein-und ausblenden, die Fokussierung und andere Funktionen im Zusammenhang mit Fenster und Komposition.  ICoreWebView2 unterstützt alle anderen WebView2-Funktionen.  Wenn Sie mehr über das Integrieren der Änderungen erfahren möchten, navigieren Sie im WebView2 [APISample][GithubMicrosoftedgeWebview2samplesMain] -Projekt zur WebView2- [Pull-Anforderung][GithubMicrosoftedgeWebview2samplesPr17] .  
+    > **Aktuelle Änderung**: Wenn sich die endgültige Version nähert, wird das WebView-Team das Präfix *IWebView2WebView*   zu *ICoreWebView2*   umbenannt, um sicherzustellen, dass die WebView2-API mit der Windows-API-Benennungskonvention ausgerichtet wird.  Um das WebView2-SDK aus UI-Frameworks zu nutzen, wurde das WebView-Team außerdem `ICoreWebView2` in [ICoreWebView2][ReferenceWin32Icorewebview209430] und [ICoreWebView2Host][ReferenceWin32Icorewebview2host09430]getrennt.  `ICoreWebView2Host` unterstützt das Ändern der Größe, ein-und ausblenden, die Fokussierung und andere Funktionen im Zusammenhang mit Fenster und Komposition.  ICoreWebView2 unterstützt alle anderen WebView2-Funktionen.  Wenn Sie mehr über das Integrieren der Änderungen erfahren möchten, navigieren Sie im WebView2 [APISample][GithubMicrosoftedgeWebview2samplesMain] -Projekt zur WebView2- [Pull-Anforderung][GithubMicrosoftedgeWebview2samplesPr17] .  
 *   > [!IMPORTANT]
-    > Unter **brechende Änderung**: Teilen Sie [DocumentStateChanged][ReferenceWin3208190Iwebview2webviewAddDocumentstatechanged] in drei Komponenten auf: [sourced][ReferenceWin3209430Icorewebview2AddSourcechanged], [ContentLoading][ReferenceWin3209430Icorewebview2AddContentloading]und [History][ReferenceWin3209430Icorewebview2AddHistorychanged].  Wenn die Quell-URL nun geändert `SourceChanged` wird, wird das Ereignis ausgelöst.  Wenn der Verlaufszustand geändert wird `HistoryChanged` , wird das Ereignis ausgelöst.  Das `ContentLoading` Ereignis wird vor dem anfänglichen Skript ausgelöst, wenn ein neues Dokument geladen wird.  
+    > Unter **brechende Änderung**: Teilen Sie [DocumentStateChanged][ReferenceWin32Iwebview2webviewAddDocumentstatechanged08190] in drei Komponenten auf: [sourced][ReferenceWin32Icorewebview2AddSourcechanged09430], [ContentLoading][ReferenceWin32Icorewebview2AddContentloading09430]und [History][ReferenceWin32Icorewebview2AddHistorychanged09430].  Wenn die Quell-URL nun geändert `SourceChanged` wird, wird das Ereignis ausgelöst.  Wenn der Verlaufszustand geändert wird `HistoryChanged` , wird das Ereignis ausgelöst.  Das `ContentLoading` Ereignis wird vor dem anfänglichen Skript ausgelöst, wenn ein neues Dokument geladen wird.  
 *   Unterstützung für die ARM64-Architektur wurde hinzugefügt.  
 *   Soft Input Panel (SIP \)-Unterstützung für Touchscreen-Geräte hinzugefügt.  
 *   Unterstützung für Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 und Windows Server 2016 wurde hinzugefügt.  
-*   [NotifyParentWindowPositionChanged][ReferenceWin3209430Icorewebview2hostNotifyparentwindowpositionchanged] hinzugefügt, der es der Statusleiste ermöglicht, dem Fenster im Fenstermodus zu folgen.  Die Änderung muss auch im Fenster freien Modus implementiert werden, damit Barrierefreiheitsfeatures funktionieren.  
-*   [AreRemoteObjectsAllowed][ReferenceWin3209430Icorewebview2settingsGetAreremoteobjectsallowed] -Einstellung hinzugefügt, um global zu steuern, ob von Remoteobjekten auf eine Seite zugegriffen werden kann.  Standardmäßig `AreRemoteObjectsAllowed` ist aktiviert, was bedeutet, dass Remoteobjekte, die von [addremoteobject][ReferenceWin3209430Icorewebview2Addremoteobject] hinzugefügt wurden, von der Seite aus zugänglich sind.  Wenn `AreRemoteObjectsAllowed` deaktiviert ist, kann auf die Objekte nicht über die Seite zugegriffen werden.  Änderungen werden beim nächsten Navigations Ereignis übernommen.  
-*   [IsZoomControlEnabled][ReferenceWin3209430Icorewebview2settingsGetIszoomcontrolenabled] -Einstellung wurde hinzugefügt, um zu verhindern, dass Benutzer den Zoom der WebView mithilfe von `ctrl` + `+` und `ctrl` + `-` \ (oder `ctrl` + Mausrad \) beeinflussen.  Zoom kann weiterhin mithilfe von [put_ZoomFactor][ReferenceWin3209430Icorewebview2hostPutZoomfactor] festgelegt werden, wenn die Einstellung deaktiviert ist.  
-*   ZoomFactor geändert, um nur auf die aktuelle WebView anzuwenden.  Zoom Änderungen an der aktuellen WebView wirken sich nicht auf andere Webansichten aus, die Sie zur gleichen Ursprungssite navigiert haben.  Wenn Sie weitere Informationen wünschen, navigieren Sie zu [get_ZoomFactor][ReferenceWin3209430Icorewebview2hostGetZoomfactor].  
+*   [NotifyParentWindowPositionChanged][ReferenceWin32Icorewebview2hostNotifyparentwindowpositionchanged09430] hinzugefügt, der es der Statusleiste ermöglicht, dem Fenster im Fenstermodus zu folgen.  Die Änderung muss auch im Fenster freien Modus implementiert werden, damit Barrierefreiheitsfeatures funktionieren.  
+*   [AreRemoteObjectsAllowed][ReferenceWin32Icorewebview2settingsGetAreremoteobjectsallowed09430] -Einstellung hinzugefügt, um global zu steuern, ob von Remoteobjekten auf eine Seite zugegriffen werden kann.  Standardmäßig `AreRemoteObjectsAllowed` ist aktiviert, was bedeutet, dass Remoteobjekte, die von [addremoteobject][ReferenceWin32Icorewebview2Addremoteobject09430] hinzugefügt wurden, von der Seite aus zugänglich sind.  Wenn `AreRemoteObjectsAllowed` deaktiviert ist, kann auf die Objekte nicht über die Seite zugegriffen werden.  Änderungen werden beim nächsten Navigations Ereignis übernommen.  
+*   [IsZoomControlEnabled][ReferenceWin32Icorewebview2settingsGetIszoomcontrolenabled09430] -Einstellung wurde hinzugefügt, um zu verhindern, dass Benutzer den Zoom der WebView mithilfe von `ctrl` + `+` und `ctrl` + `-` \ (oder `ctrl` + Mausrad \) beeinflussen.  Zoom kann weiterhin mithilfe von [put_ZoomFactor][ReferenceWin32Icorewebview2hostPutZoomfactor09430] festgelegt werden, wenn die Einstellung deaktiviert ist.  
+*   ZoomFactor geändert, um nur auf die aktuelle WebView anzuwenden.  Zoom Änderungen an der aktuellen WebView wirken sich nicht auf andere Webansichten aus, die Sie zur gleichen Ursprungssite navigiert haben.  Wenn Sie weitere Informationen wünschen, navigieren Sie zu [get_ZoomFactor][ReferenceWin32Icorewebview2hostGetZoomfactor09430].  
 *   HID-zoomview-UI für WebView \ ([#95][GithubMicrosoftedgeWebviewfeedbackIssue95]\).  
-*   [SetBoundsAndZoomFactor][ReferenceWin3209430Icorewebview2hostSetboundsandzoomfactor]hinzugefügt.  Nun können Sie den Zoomfaktor und die Grenzen eines Webviews gleichzeitig einstellen.  
-*   [WindowCloseRequested][ReferenceWin3209430Icorewebview2AddWindowcloserequested] -Ereignis hinzugefügt.  Wenn Sie weitere Informationen erhalten möchten, navigieren Sie zu [add_WindowCloseRequested][ReferenceWin3209430Icorewebview2AddWindowcloserequested] \ ([#119][GithubMicrosoftedgeWebviewfeedbackIssue119]\).  
-*   Unterstützung für den `beforeunload` Dialogfeldtyp für JavaScript-Dialog Ereignisse hinzugefügt und [CORE_WEBVIEW2_SCRIPT_DIALOG_KIND_BEFOREUNLOAD][ReferenceWin3209430Icorewebview2CoreWebview2ScriptDialogKind] Enum-Eintrag hinzugefügt.  
-*   [GetHeaders][ReferenceWin3209430Icorewebview2httprequestheadersGetheaders] zu HttpRequestHeaders, [GetHeader][ReferenceWin3209430Icorewebview2httpresponseheadersGetheader] zu HttpResponseHeaders und [get_HasCurrentHeader][ReferenceWin3209430Icorewebview2httpheaderscollectioniteratorGetHascurrentheader] -Eigenschaft zu HttpHeadersCollectionIterator hinzugefügt.  
+*   [SetBoundsAndZoomFactor][ReferenceWin32Icorewebview2hostSetboundsandzoomfactor09430]hinzugefügt.  Nun können Sie den Zoomfaktor und die Grenzen eines Webviews gleichzeitig einstellen.  
+*   [WindowCloseRequested][ReferenceWin32Icorewebview2AddWindowcloserequested09430] -Ereignis hinzugefügt.  Wenn Sie weitere Informationen erhalten möchten, navigieren Sie zu [add_WindowCloseRequested][ReferenceWin32Icorewebview2AddWindowcloserequested09430] \ ([#119][GithubMicrosoftedgeWebviewfeedbackIssue119]\).  
+*   Unterstützung für den `beforeunload` Dialogfeldtyp für JavaScript-Dialog Ereignisse hinzugefügt und [CORE_WEBVIEW2_SCRIPT_DIALOG_KIND_BEFOREUNLOAD][ReferenceWin32Icorewebview2CoreWebview2ScriptDialogKind09430] Enum-Eintrag hinzugefügt.  
+*   [GetHeaders][ReferenceWin32Icorewebview2httprequestheadersGetheaders09430] zu HttpRequestHeaders, [GetHeader][ReferenceWin32Icorewebview2httpresponseheadersGetheader09430] zu HttpResponseHeaders und [get_HasCurrentHeader][ReferenceWin32Icorewebview2httpheaderscollectioniteratorGetHascurrentheader09430] -Eigenschaft zu HttpHeadersCollectionIterator hinzugefügt.  
 *   > [!IMPORTANT]
-    > **Aktuelle Änderung**: geändertes `DevToolsProtocolEventReceived` Verhalten.  Nun können Sie einen [DevToolsProtocolEventReceiver][ReferenceWin3209430Icorewebview2devtoolsprotocoleventreceiver] für ein bestimmtes devtools-Protokollereignis erstellen und dieses Ereignis mithilfe [add_DevToolsProtocolEventReceived][ReferenceWin3209430Icorewebview2devtoolsprotocoleventreceiverAddDevtoolsprotocoleventreceived]remove_DevToolsProtocolEventReceived abonnieren/abbestellen / [remove_DevToolsProtocolEventReceived][ReferenceWin3209430Icorewebview2devtoolsprotocoleventreceiverRemoveDevtoolsprotocoleventreceived].
+    > **Aktuelle Änderung**: geändertes `DevToolsProtocolEventReceived` Verhalten.  Nun können Sie einen [DevToolsProtocolEventReceiver][ReferenceWin32Icorewebview2devtoolsprotocoleventreceiver09430] für ein bestimmtes devtools-Protokollereignis erstellen und dieses Ereignis mithilfe [add_DevToolsProtocolEventReceived][ReferenceWin32Icorewebview2devtoolsprotocoleventreceiverAddDevtoolsprotocoleventreceived09430]remove_DevToolsProtocolEventReceived abonnieren/abbestellen / [remove_DevToolsProtocolEventReceived][ReferenceWin32Icorewebview2devtoolsprotocoleventreceiverRemoveDevtoolsprotocoleventreceived09430].
 *   > [!IMPORTANT]
-    > Unter **brechende Änderung**: Changed WebMessageReceivedEventArgs ' [get_WebMessageAsString][ReferenceWin3208190Iwebview2webmessagereceivedeventargsGetWebmessageasstring] -Eigenschaft in eine [TryGetWebMessageAsString][ReferenceWin3209430Icorewebview2webmessagereceivedeventargsTrygetwebmessageasstring] -Methode.  
+    > Unter **brechende Änderung**: Changed WebMessageReceivedEventArgs ' [get_WebMessageAsString][ReferenceWin32Iwebview2webmessagereceivedeventargsGetWebmessageasstring08190] -Eigenschaft in eine [TryGetWebMessageAsString][ReferenceWin32Icorewebview2webmessagereceivedeventargsTrygetwebmessageasstring09430] -Methode.  
 *   > [!IMPORTANT]
-    > **Umbruch Änderung**: geänderte `AcceleratorKeyPressedEventArgs` [handle][ReferenceWin3208190Iwebview2acceleratorkeypressedeventargsHandle] -Methode in eine [get_Handled][ReferenceWin3209430Icorewebview2acceleratorkeypressedeventargsGetHandled] -Eigenschaft.  
+    > **Umbruch Änderung**: geänderte `AcceleratorKeyPressedEventArgs` [handle][ReferenceWin32Iwebview2acceleratorkeypressedeventargsHandle08190] -Methode in eine [get_Handled][ReferenceWin32Icorewebview2acceleratorkeypressedeventargsGetHandled09430] -Eigenschaft.  
 
 ## 0.8.355
 
@@ -207,9 +252,9 @@ Das WebView2-SDK ist die offizielle Win32 C++-Beta Version, die mehrere Funktion
 
 *   Veröffentlichtes WebView2API-Beispiel, eine umfassende Anleitung zum WebView2-SDK.  Weitere Informationen finden Sie unter [APISample][GithubMicrosoftedgeWebview2samplesApisample].  
 *   IME-Unterstützung für alle Sprachen außer Englisch ([#30][GithubMicrosoftedgeWebviewfeedbackIssue30]\) hinzugefügt.  
-*   Die API-Oberfläche des `WebResourceRequested` Ereignisses wurde als Reaktion auf Fehlerberichte aktualisiert.  Das gleichzeitige angeben eines Filters und eines Ereignisses bei der Erstellung ist jetzt veraltet.  Zum Erstellen eines angeforderten Webressource-Ereignisses verwenden Sie [add_WebResourceRequested][ReferenceWin3208190Iwebview2webview5AddWebresourcerequested] , um das Ereignis und [AddWebResourceRequestedFilter][ReferenceWin3208190Iwebview2webview5Addwebresourcerequestedfilter] hinzuzufügen, um einen Filter hinzuzufügen.  [RemoveWebResourceRequestedFilter][ReferenceWin3208190Iwebview2webview5Removewebresourcerequestedfilter] entfernt den Filter \ ([#36][GithubMicrosoftedgeWebviewfeedbackIssue36]\) \ ([#74][GithubMicrosoftedgeWebviewfeedbackIssue74]\).  
+*   Die API-Oberfläche des `WebResourceRequested` Ereignisses wurde als Reaktion auf Fehlerberichte aktualisiert.  Das gleichzeitige angeben eines Filters und eines Ereignisses bei der Erstellung ist jetzt veraltet.  Zum Erstellen eines angeforderten Webressource-Ereignisses verwenden Sie [add_WebResourceRequested][ReferenceWin32Iwebview2webview5AddWebresourcerequested08190] , um das Ereignis und [AddWebResourceRequestedFilter][ReferenceWin32Iwebview2webview5Addwebresourcerequestedfilter08190] hinzuzufügen, um einen Filter hinzuzufügen.  [RemoveWebResourceRequestedFilter][ReferenceWin32Iwebview2webview5Removewebresourcerequestedfilter08190] entfernt den Filter \ ([#36][GithubMicrosoftedgeWebviewfeedbackIssue36]\) \ ([#74][GithubMicrosoftedgeWebviewfeedbackIssue74]\).  
 *   > [!IMPORTANT]
-    > Unter **brechende Änderung**: geändertes Vollbild-Verhalten.  Veraltete [IsFullScreenAllowed][ReferenceWin3208190Iwebview2settingsGetIsfullscreenallowedDeprecated].  Wenn ein Element innerhalb einer WebView-Datei (beispielsweise ein Video) auf Vollbild eingestellt ist, wird nun standardmäßig die Begrenzungen der WebView-Ansicht ausgefüllt.  Verwenden Sie das [ContainsFullScreenElementChanged][ReferenceWin3208190Iwebview2containsfullscreenelementchangedeventhandler] -Ereignis und [get_ContainsFullScreenElement][ReferenceWin3208190Iwebview2webview5GetContainsfullscreenelement] , um anzugeben, wie die APP die Größe der WebView ändern soll, wenn ein Element in den Vollbildmodus wechseln möchte.  
+    > Unter **brechende Änderung**: geändertes Vollbild-Verhalten.  Veraltete [IsFullScreenAllowed][ReferenceWin32Iwebview2settingsGetIsfullscreenallowedDeprecated08190].  Wenn ein Element innerhalb einer WebView-Datei (beispielsweise ein Video) auf Vollbild eingestellt ist, wird nun standardmäßig die Begrenzungen der WebView-Ansicht ausgefüllt.  Verwenden Sie das [ContainsFullScreenElementChanged][ReferenceWin32Iwebview2containsfullscreenelementchangedeventhandler08190] -Ereignis und [get_ContainsFullScreenElement][ReferenceWin32Iwebview2webview5GetContainsfullscreenelement08190] , um anzugeben, wie die APP die Größe der WebView ändern soll, wenn ein Element in den Vollbildmodus wechseln möchte.  
 
 ## 0.8.314  
 
@@ -217,9 +262,9 @@ Das WebView2-SDK ist die offizielle Win32 C++-Beta Version, die mehrere Funktion
 
 *   Unterstützung für Windows 7, Windows 8 und Windows 8,1 wurde hinzugefügt.  
 *   Visual Studio-und Visual Studio-Code-Debug-Unterstützung für WebView2 hinzugefügt.  Debuggen Sie nun Ihr Skript in der WebView2 direkt von der IDE aus.  Weitere Informationen finden Sie unter [Debuggen bei der Entwicklung mit WebView2-Steuerelementen][HowtoDebug].  
-*   Hinzugefügt `Native Object Injection` , wodurch das in WebView2 ausgeführte Skript auf ein IDispatch-Objekt aus der Win32-Komponente der Anwendung zugreifen und auf die Eigenschaften des IDispatch-Objekts zugreifen kann.  Wenn Sie weitere Informationen erhalten möchten, navigieren Sie zu [addremoteobject][ReferenceWin3208190Iwebview2webview4Addremoteobject] \ ([#17][GithubMicrosoftedgeWebviewfeedbackIssue17]\).  
-*   Ereignis hinzugefügt `AcceleratorKeyPressed` .  Wenn Sie weitere Informationen erhalten möchten, navigieren Sie zu [add_AcceleratorKeyPressed][ReferenceWin3208190Iwebview2webview4AddAcceleratorkeypressed] \ ([#57][GithubMicrosoftedgeWebviewfeedbackIssue57]\).  
-*   Deaktiviert `Context Menus` .  Wenn Sie weitere Informationen erhalten möchten, navigieren Sie zu [put_AreDefaultContextMenusEnabled][ReferenceWin3208190Iwebview2settings2PutAredefaultcontextmenusenabled] \ ([#57][GithubMicrosoftedgeWebviewfeedbackIssue57]\).  
+*   Hinzugefügt `Native Object Injection` , wodurch das in WebView2 ausgeführte Skript auf ein IDispatch-Objekt aus der Win32-Komponente der Anwendung zugreifen und auf die Eigenschaften des IDispatch-Objekts zugreifen kann.  Wenn Sie weitere Informationen erhalten möchten, navigieren Sie zu [addremoteobject][ReferenceWin32Iwebview2webview4Addremoteobject08190] \ ([#17][GithubMicrosoftedgeWebviewfeedbackIssue17]\).  
+*   Ereignis hinzugefügt `AcceleratorKeyPressed` .  Wenn Sie weitere Informationen erhalten möchten, navigieren Sie zu [add_AcceleratorKeyPressed][ReferenceWin32Iwebview2webview4AddAcceleratorkeypressed08190] \ ([#57][GithubMicrosoftedgeWebviewfeedbackIssue57]\).  
+*   Deaktiviert `Context Menus` .  Wenn Sie weitere Informationen erhalten möchten, navigieren Sie zu [put_AreDefaultContextMenusEnabled][ReferenceWin32Iwebview2settings2PutAredefaultcontextmenusenabled08190] \ ([#57][GithubMicrosoftedgeWebviewfeedbackIssue57]\).  
 *   Aktualisiert `DPI Awareness` .  Die dpi-Bekanntheit von WebView ist nun identisch mit der dpi-Bekanntheit der Hostanwendung.  
     
     > [!NOTE]
@@ -234,10 +279,10 @@ Das WebView2-SDK ist die offizielle Win32 C++-Beta Version, die mehrere Funktion
 *   Ereignis hinzugefügt `DocumentTitleChanged` , um die Änderung des Dokumenttitels anzugeben \ ([\ #27][GithubMicrosoftedgeWebviewfeedbackIssue27]\).  
 *   API hinzugefügt `GetWebView2BrowserVersionInfo` \ ([\ #18][GithubMicrosoftedgeWebviewfeedbackIssue18]\).  
 *   Ereignis hinzugefügt `NewWindowRequested` .  
-*   `CreateWebView2EnvironmentWithDetails`Zu entfernende zu aktualisierende Funktion `releaseChannelPreference` .  Weitere Informationen zur `CreateWebView2EnvironmentWithDetails` Funktion finden Sie unter [CreateWebView2EnvironmentWithDetails][ReferenceWin3208190WebView2IdlCreatewebview2environmentwithdetails].  Die Überschreibung der Registrierungs-und Umgebungsvariablen wird weiterhin unterstützt.  Die Standardkanal Einstellung wird nur verwendet, wenn Sie überschrieben wird.  
+*   `CreateWebView2EnvironmentWithDetails`Zu entfernende zu aktualisierende Funktion `releaseChannelPreference` .  Weitere Informationen zur `CreateWebView2EnvironmentWithDetails` Funktion finden Sie unter [CreateWebView2EnvironmentWithDetails][ReferenceWin32WebView2IdlCreatewebview2environmentwithdetails08190].  Die Überschreibung der Registrierungs-und Umgebungsvariablen wird weiterhin unterstützt.  Die Standardkanal Einstellung wird nur verwendet, wenn Sie überschrieben wird.  
     Während der Kanalsuche überspringt das WebView-Team alle älteren Kanal Versionen, die nicht mit dem WebView2-SDK kompatibel sind.  
     Das WebView-Team wählt den stabileren Kanal aus, um die konsistentsten Verhaltensweisen für den Endbenutzer zu gewährleisten.  Wenn Sie mit den neuesten Canary-Builds testen, sollten Sie ein Skript erstellen, um die `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE` Umgebungsvariable `1` vor dem Starten der App festzulegen.  
-*   Die `CreateWebView2EnvironmentWithDetails` Funktion wurde mit der Logik für die Auswahl aktualisiert `userDataFolder` , wenn nicht angegeben.  Weitere Informationen zur `CreateWebView2EnvironmentWithDetails` Funktion finden Sie unter [CreateWebView2EnvironmentWithDetails][ReferenceWin3208190WebView2IdlCreatewebview2environmentwithdetails].  Wenn Sie zuvor den Standard `userDataFolder` Speicherort verwendet haben, wird beim Wechseln zum neuen SDK der Standardwert `userDataFolder` zurückgesetzt \ (auf einen neuen Speicherort im Host Codeverzeichnis festgesetzt \), und ihr Zustand wird ebenfalls zurückgesetzt.  
+*   Die `CreateWebView2EnvironmentWithDetails` Funktion wurde mit der Logik für die Auswahl aktualisiert `userDataFolder` , wenn nicht angegeben.  Weitere Informationen zur `CreateWebView2EnvironmentWithDetails` Funktion finden Sie unter [CreateWebView2EnvironmentWithDetails][ReferenceWin32WebView2IdlCreatewebview2environmentwithdetails08190].  Wenn Sie zuvor den Standard `userDataFolder` Speicherort verwendet haben, wird beim Wechseln zum neuen SDK der Standardwert `userDataFolder` zurückgesetzt \ (auf einen neuen Speicherort im Host Codeverzeichnis festgesetzt \), und ihr Zustand wird ebenfalls zurückgesetzt.  
     Wenn der Hostprozess nicht über die Berechtigung zum Schreiben in das angegebene Verzeichnis verfügt, `CreateWebView2EnvironmentWithDetails` schlägt die Funktion möglicherweise fehl.  Sie können die Daten aus dem alten Benutzerdatenverzeichnis in das neue Verzeichnis kopieren.  
 
 ## 0.8.230  
@@ -272,100 +317,127 @@ Erste Entwickler-Preview-Version.
 
 [ConceptsDistribution]: ./concepts/distribution.md "Verteilung von Anwendungen mit WebView2 | Microsoft docs"  
 [ConceptsDistributionEvergreenMode]: ./concepts/distribution.md#evergreen-distribution-mode "Evergreen-Verteilungsmodus – Verteilung von Anwendungen mit WebView2 | Microsoft docs"  
-[Webview2ConceptsDistributionUnderstandRuntimeInstallerPreview]: ./concepts/distribution.md#understanding-the-webview2-runtime "Grundlegendes zur WebView2-Laufzeit und zum Installationsprogramm (Preview) – Verteilung von Anwendungen mithilfe von WebView2 | Microsoft docs"  
+[Webview2ConceptsDistributionFixedVersionMode]: ./concepts/distribution.md#fixed-version-distribution-mode "Fester Versions Verteilungsmodus – Verteilung von Anwendungen mit WebView2 | Microsoft docs"  
+[Webview2ConceptsDistributionUnderstandRuntimeInstaller]: ./concepts/distribution.md#understanding-the-webview2-runtime "Grundlegendes zur WebView2-Laufzeit und zum Installationsprogramm – Verteilung von Anwendungen mithilfe von WebView2 | Microsoft docs"  
 [ConceptsVersioning]: ./concepts/versioning.md "Grundlegendes zu Browserversionen und WebView2 | Microsoft docs"  
 [ConceptsVersioningExperimentalApis]: ./concepts/versioning.md#experimental-apis "Experimentelle APIs – Grundlegendes zu Browserversionen und WebView2 | Microsoft docs"  
 [GettingstartedWinforms]: ./gettingstarted/winforms.md "Erste Schritte mit WebView2 in Windows Forms-apps | Microsoft docs"  
 [GettingstartedWpf]: ./gettingstarted/wpf.md "Erste Schritte mit WebView2 in WPF | Microsoft docs"  
 [HowtoDebug]: ./howto/debug.md "Debuggen bei der Entwicklung mit WebView2-Steuerelementen | Microsoft docs"  
 
-[ReferenceWin3208190Iwebview2acceleratorkeypressedeventargsHandle]: /microsoft-edge/webview2/reference/win32/iwebview2acceleratorkeypressedeventargs?view=webview2-0.8.355&preserve-view=true#handle "Handle-Interface-IWebView2AcceleratorKeyPressedEventArgs | Microsoft docs"  
-[ReferenceWin3208190Iwebview2containsfullscreenelementchangedeventhandler]: /microsoft-edge/webview2/reference/win32/iwebview2containsfullscreenelementchangedeventhandler?view=webview2-0.8.355&preserve-view=true "Schnittstelle IWebView2ContainsFullScreenElementChangedEventHandler | Microsoft docs"  
-[ReferenceWin3208190Iwebview2settings2PutAredefaultcontextmenusenabled]: /microsoft-edge/webview2/reference/win32/iwebview2settings2?view=webview2-0.8.355&preserve-view=true#put_aredefaultcontextmenusenabled "put_AreDefaultContextMenusEnabled-Interface IWebView2Settings2 | Microsoft docs"  
-[ReferenceWin3208190Iwebview2settingsGetIsfullscreenallowedDeprecated]: /microsoft-edge/webview2/reference/win32/iwebview2settings?view=webview2-0.8.355&preserve-view=true#get_isfullscreenallowed_deprecated "get_IsFullscreenAllowed_deprecated-Interface IWebView2Settings | Microsoft docs"  
-[ReferenceWin3208190Iwebview2webmessagereceivedeventargsGetWebmessageasstring]: /microsoft-edge/webview2/reference/win32/iwebview2webmessagereceivedeventargs?view=webview2-0.8.355&preserve-view=true#get_webmessageasstring "get_WebMessageAsString-Interface IWebView2WebMessageReceivedEventArgs | Microsoft docs"  
-[ReferenceWin3208190Iwebview2webview4AddAcceleratorkeypressed]: /microsoft-edge/webview2/reference/win32/iwebview2webview4?view=webview2-0.8.355&preserve-view=true#add_acceleratorkeypressed "add_AcceleratorKeyPressed-Interface IWebView2WebView4 | Microsoft docs"  
-[ReferenceWin3208190Iwebview2webviewAddDocumentstatechanged]: /microsoft-edge/webview2/reference/win32/iwebview2webview?view=webview2-0.8.355&preserve-view=true#add_documentstatechanged "add_DocumentStateChanged-Interface IWebView2WebView | Microsoft docs"  
-[ReferenceWin3208190Iwebview2webview4Addremoteobject]: /microsoft-edge/webview2/reference/win32/iwebview2webview4?view=webview2-0.8.355&preserve-view=true#addremoteobject "Addremoteobject-Schnittstelle IWebView2WebView4 | Microsoft docs"  
-[ReferenceWin3208190Iwebview2webview5AddWebresourcerequested]: /microsoft-edge/webview2/reference/win32/iwebview2webview5?view=webview2-0.8.355&preserve-view=true#add_webresourcerequested "add_WebResourceRequested-Interface IWebView2WebView5 | Microsoft docs"  
-[ReferenceWin3208190Iwebview2webview5Addwebresourcerequestedfilter]: /microsoft-edge/webview2/reference/win32/iwebview2webview5?view=webview2-0.8.355&preserve-view=true#addwebresourcerequestedfilter "AddWebResourceRequestedFilter-Interface-IWebView2WebView5 | Microsoft docs"  
-[ReferenceWin3208190Iwebview2webview5GetContainsfullscreenelement]: /microsoft-edge/webview2/reference/win32/iwebview2webview5?view=webview2-0.8.355&preserve-view=true#get_containsfullscreenelement "get_ContainsFullScreenElement-Interface IWebView2WebView5 | Microsoft docs"  
-[ReferenceWin3208190Iwebview2webview5Removewebresourcerequestedfilter]: /microsoft-edge/webview2/reference/win32/iwebview2webview5?view=webview2-0.8.355&preserve-view=true#removewebresourcerequestedfilter "RemoveWebResourceRequestedFilter-Interface-IWebView2WebView5 | Microsoft docs"  
-[ReferenceWin3208190WebView2IdlCreatewebview2environmentwithdetails]:  /microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-0.8.355&preserve-view=true#createwebview2environmentwithdetails "CreateWebView2EnvironmentWithDetails-Globals | Microsoft docs"  
+[ReferenceWin32Iwebview2acceleratorkeypressedeventargsHandle08190]: /microsoft-edge/webview2/reference/win32/iwebview2acceleratorkeypressedeventargs?view=webview2-0.8.355&preserve-view=true#handle "Handle-Interface-IWebView2AcceleratorKeyPressedEventArgs | Microsoft docs"  
+[ReferenceWin32Iwebview2containsfullscreenelementchangedeventhandler08190]: /microsoft-edge/webview2/reference/win32/iwebview2containsfullscreenelementchangedeventhandler?view=webview2-0.8.355&preserve-view=true "Schnittstelle IWebView2ContainsFullScreenElementChangedEventHandler | Microsoft docs"  
+[ReferenceWin32Iwebview2settings2PutAredefaultcontextmenusenabled08190]: /microsoft-edge/webview2/reference/win32/iwebview2settings2?view=webview2-0.8.355&preserve-view=true#put_aredefaultcontextmenusenabled "put_AreDefaultContextMenusEnabled-Interface IWebView2Settings2 | Microsoft docs"  
+[ReferenceWin32Iwebview2settingsGetIsfullscreenallowedDeprecated08190]: /microsoft-edge/webview2/reference/win32/iwebview2settings?view=webview2-0.8.355&preserve-view=true#get_isfullscreenallowed_deprecated "get_IsFullscreenAllowed_deprecated-Interface IWebView2Settings | Microsoft docs"  
+[ReferenceWin32Iwebview2webmessagereceivedeventargsGetWebmessageasstring08190]: /microsoft-edge/webview2/reference/win32/iwebview2webmessagereceivedeventargs?view=webview2-0.8.355&preserve-view=true#get_webmessageasstring "get_WebMessageAsString-Interface IWebView2WebMessageReceivedEventArgs | Microsoft docs"  
+[ReferenceWin32Iwebview2webview4AddAcceleratorkeypressed08190]: /microsoft-edge/webview2/reference/win32/iwebview2webview4?view=webview2-0.8.355&preserve-view=true#add_acceleratorkeypressed "add_AcceleratorKeyPressed-Interface IWebView2WebView4 | Microsoft docs"  
+[ReferenceWin32Iwebview2webviewAddDocumentstatechanged08190]: /microsoft-edge/webview2/reference/win32/iwebview2webview?view=webview2-0.8.355&preserve-view=true#add_documentstatechanged "add_DocumentStateChanged-Interface IWebView2WebView | Microsoft docs"  
+[ReferenceWin32Iwebview2webview4Addremoteobject08190]: /microsoft-edge/webview2/reference/win32/iwebview2webview4?view=webview2-0.8.355&preserve-view=true#addremoteobject "Addremoteobject-Schnittstelle IWebView2WebView4 | Microsoft docs"  
+[ReferenceWin32Iwebview2webview5AddWebresourcerequested08190]: /microsoft-edge/webview2/reference/win32/iwebview2webview5?view=webview2-0.8.355&preserve-view=true#add_webresourcerequested "add_WebResourceRequested-Interface IWebView2WebView5 | Microsoft docs"  
+[ReferenceWin32Iwebview2webview5Addwebresourcerequestedfilter08190]: /microsoft-edge/webview2/reference/win32/iwebview2webview5?view=webview2-0.8.355&preserve-view=true#addwebresourcerequestedfilter "AddWebResourceRequestedFilter-Interface-IWebView2WebView5 | Microsoft docs"  
+[ReferenceWin32Iwebview2webview5GetContainsfullscreenelement08190]: /microsoft-edge/webview2/reference/win32/iwebview2webview5?view=webview2-0.8.355&preserve-view=true#get_containsfullscreenelement "get_ContainsFullScreenElement-Interface IWebView2WebView5 | Microsoft docs"  
+[ReferenceWin32Iwebview2webview5Removewebresourcerequestedfilter08190]: /microsoft-edge/webview2/reference/win32/iwebview2webview5?view=webview2-0.8.355&preserve-view=true#removewebresourcerequestedfilter "RemoveWebResourceRequestedFilter-Interface-IWebView2WebView5 | Microsoft docs"  
+[ReferenceWin32WebView2IdlCreatewebview2environmentwithdetails08190]:  /microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-0.8.355&preserve-view=true#createwebview2environmentwithdetails "CreateWebView2EnvironmentWithDetails-Globals | Microsoft docs"  
 
-[ReferenceWin3209430Icorewebview2]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-0.9.430&preserve-view=true "Schnittstelle ICoreWebView2 | Microsoft docs"  
-[ReferenceWin3209430Icorewebview2acceleratorkeypressedeventargsGetHandled]: /microsoft-edge/webview2/reference/win32/icorewebview2acceleratorkeypressedeventargs?view=webview2-0.9.430&preserve-view=true#get_handled "get_Handled-Interface ICoreWebView2AcceleratorKeyPressedEventArgs | Microsoft docs"  
-[ReferenceWin3209430Icorewebview2AddContentloading]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-0.9.430&preserve-view=true#add_contentloading "add_ContentLoading-Interface ICoreWebView2 | Microsoft docs"  
-[ReferenceWin3209430Icorewebview2AddHistorychanged]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-0.9.430&preserve-view=true#add_historychanged "add_HistoryChanged-Interface ICoreWebView2 | Microsoft docs"  
-[ReferenceWin3209430Icorewebview2Addremoteobject]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-0.9.430&preserve-view=true#addremoteobject "Addremoteobject-Schnittstelle ICoreWebView2 | Microsoft docs"  
-[ReferenceWin3209430Icorewebview2AddSourcechanged]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-0.9.430&preserve-view=true#add_sourcechanged "add_SourceChanged-Interface ICoreWebView2 | Microsoft docs"  
-[ReferenceWin3209430Icorewebview2AddWindowcloserequested]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-0.9.430&preserve-view=true#add_windowcloserequested "add_WindowCloseRequested-Interface ICoreWebView2 | Microsoft docs"  
-[ReferenceWin3209430Icorewebview2CoreWebview2ScriptDialogKind]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-0.9.430&preserve-view=true#core_webview2_script_dialog_kind "CORE_WEBVIEW2_SCRIPT_DIALOG_KIND-Interface ICoreWebView2 | Microsoft docs"  
-[ReferenceWin3209430Icorewebview2devtoolsprotocoleventreceiver]: /microsoft-edge/webview2/reference/win32/icorewebview2devtoolsprotocoleventreceiver?view=webview2-0.9.430&preserve-view=true "Schnittstelle ICoreWebView2DevToolsProtocolEventReceiver | Microsoft docs"  
-[ReferenceWin3209430Icorewebview2devtoolsprotocoleventreceiverAddDevtoolsprotocoleventreceived]: /microsoft-edge/webview2/reference/win32/icorewebview2devtoolsprotocoleventreceiver?view=webview2-0.9.430&preserve-view=true#add_devtoolsprotocoleventreceived "add_DevToolsProtocolEventReceived-Interface ICoreWebView2DevToolsProtocolEventReceiver | Microsoft docs"  
-[ReferenceWin3209430Icorewebview2devtoolsprotocoleventreceiverRemoveDevtoolsprotocoleventreceived]: /microsoft-edge/webview2/reference/win32/icorewebview2devtoolsprotocoleventreceiver?view=webview2-0.9.430&preserve-view=true#remove_devtoolsprotocoleventreceived "remove_DevToolsProtocolEventReceived-Interface ICoreWebView2DevToolsProtocolEventReceiver | Microsoft docs"  
-[ReferenceWin3209430Icorewebview2environmentGetBrowserversioninfo]: /microsoft-edge/webview2/reference/win32/icorewebview2environment?view=webview2-0.9.430&preserve-view=true#get_browserversioninfo "get_BrowserVersionInfo-Interface ICoreWebView2Environment | Microsoft docs"  
-[ReferenceWin3209430Icorewebview2host]: /microsoft-edge/webview2/reference/win32/icorewebview2host?view=webview2-0.9.430&preserve-view=true "Schnittstelle ICoreWebView2Host | Microsoft docs"  
-[ReferenceWin3209430Webview2IdlGetcorewebview2browserversioninfo]: /microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-0.9.430&preserve-view=true#getcorewebview2browserversioninfo "GetCoreWebView2BrowserVersionInfo-Globals | Microsoft docs"  
-[ReferenceWin3209430Icorewebview2hostGetZoomfactor]: /microsoft-edge/webview2/reference/win32/icorewebview2host?view=webview2-0.9.430&preserve-view=true#get_zoomfactor "get_ZoomFactor-Interface ICoreWebView2Host | Microsoft docs"  
-[ReferenceWin3209430Icorewebview2hostNotifyparentwindowpositionchanged]: /microsoft-edge/webview2/reference/win32/icorewebview2host?view=webview2-0.9.430&preserve-view=true#notifyparentwindowpositionchanged "NotifyParentWindowPositionChanged-Interface-ICoreWebView2Host | Microsoft docs"  
-[ReferenceWin3209430Icorewebview2hostPutZoomfactor]: /microsoft-edge/webview2/reference/win32/icorewebview2host?view=webview2-0.9.430&preserve-view=true#put_zoomfactor "put_ZoomFactor-Interface ICoreWebView2Host | Microsoft docs"  
-[ReferenceWin3209430Icorewebview2hostSetboundsandzoomfactor]: /microsoft-edge/webview2/reference/win32/icorewebview2host?view=webview2-0.9.430&preserve-view=true#setboundsandzoomfactor "SetBoundsAndZoomFactor-Interface-ICoreWebView2Host | Microsoft docs"  
-[ReferenceWin3209430Icorewebview2httpheaderscollectioniteratorGetHascurrentheader]: /microsoft-edge/webview2/reference/win32/icorewebview2httpheaderscollectioniterator?view=webview2-0.9.430&preserve-view=true#get_hascurrentheader "get_HasCurrentHeader-Interface ICoreWebView2HttpHeadersCollectionIterator | Microsoft docs"  
-[ReferenceWin3209430Icorewebview2httprequestheadersGetheaders]: /microsoft-edge/webview2/reference/win32/icorewebview2httprequestheaders?view=webview2-0.9.430&preserve-view=true#getheaders "GetHeaders-Interface ICoreWebView2HttpRequestHeaders | Microsoft docs"  
-[ReferenceWin3209430Icorewebview2httpresponseheadersGetheader]: /microsoft-edge/webview2/reference/win32/icorewebview2httpresponseheaders?view=webview2-0.9.430&preserve-view=true#getheader "GetHeader-Interface ICoreWebView2HttpResponseHeaders | Microsoft docs"  
-[ReferenceWin3209430Icorewebview2Removeremoteobject]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-0.9.430&preserve-view=true#removeremoteobject "RemoveRemoteObject-Interface-ICoreWebView2 | Microsoft docs"  
-[ReferenceWin3209430Icorewebview2settingsGetAreremoteobjectsallowed]: /microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-0.9.430&preserve-view=true#get_areremoteobjectsallowed "get_AreRemoteObjectsAllowed-Interface ICoreWebView2Settings | Microsoft docs"  
-[ReferenceWin3209430Icorewebview2settingsGetIszoomcontrolenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-0.9.430&preserve-view=true#get_iszoomcontrolenabled "get_IsZoomControlEnabled-Interface ICoreWebView2Settings | Microsoft docs"  
-[ReferenceWin3209430Icorewebview2webmessagereceivedeventargsTrygetwebmessageasstring]: /microsoft-edge/webview2/reference/win32/icorewebview2webmessagereceivedeventargs?view=webview2-0.9.430&preserve-view=true#trygetwebmessageasstring "TryGetWebMessageAsString-Interface-ICoreWebView2WebMessageReceivedEventArgs | Microsoft docs"  
+[ReferenceWin32Icorewebview209430]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-0.9.430&preserve-view=true "Schnittstelle ICoreWebView2 | Microsoft docs"  
+[ReferenceWin32Icorewebview2acceleratorkeypressedeventargsGetHandled09430]: /microsoft-edge/webview2/reference/win32/icorewebview2acceleratorkeypressedeventargs?view=webview2-0.9.430&preserve-view=true#get_handled "get_Handled-Interface ICoreWebView2AcceleratorKeyPressedEventArgs | Microsoft docs"  
+[ReferenceWin32Icorewebview2AddContentloading09430]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-0.9.430&preserve-view=true#add_contentloading "add_ContentLoading-Interface ICoreWebView2 | Microsoft docs"  
+[ReferenceWin32Icorewebview2AddHistorychanged09430]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-0.9.430&preserve-view=true#add_historychanged "add_HistoryChanged-Interface ICoreWebView2 | Microsoft docs"  
+[ReferenceWin32Icorewebview2Addremoteobject09430]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-0.9.430&preserve-view=true#addremoteobject "Addremoteobject-Schnittstelle ICoreWebView2 | Microsoft docs"  
+[ReferenceWin32Icorewebview2AddSourcechanged09430]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-0.9.430&preserve-view=true#add_sourcechanged "add_SourceChanged-Interface ICoreWebView2 | Microsoft docs"  
+[ReferenceWin32Icorewebview2AddWindowcloserequested09430]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-0.9.430&preserve-view=true#add_windowcloserequested "add_WindowCloseRequested-Interface ICoreWebView2 | Microsoft docs"  
+[ReferenceWin32Icorewebview2CoreWebview2ScriptDialogKind09430]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-0.9.430&preserve-view=true#core_webview2_script_dialog_kind "CORE_WEBVIEW2_SCRIPT_DIALOG_KIND-Interface ICoreWebView2 | Microsoft docs"  
+[ReferenceWin32Icorewebview2devtoolsprotocoleventreceiver09430]: /microsoft-edge/webview2/reference/win32/icorewebview2devtoolsprotocoleventreceiver?view=webview2-0.9.430&preserve-view=true "Schnittstelle ICoreWebView2DevToolsProtocolEventReceiver | Microsoft docs"  
+[ReferenceWin32Icorewebview2devtoolsprotocoleventreceiverAddDevtoolsprotocoleventreceived09430]: /microsoft-edge/webview2/reference/win32/icorewebview2devtoolsprotocoleventreceiver?view=webview2-0.9.430&preserve-view=true#add_devtoolsprotocoleventreceived "add_DevToolsProtocolEventReceived-Interface ICoreWebView2DevToolsProtocolEventReceiver | Microsoft docs"  
+[ReferenceWin32Icorewebview2devtoolsprotocoleventreceiverRemoveDevtoolsprotocoleventreceived09430]: /microsoft-edge/webview2/reference/win32/icorewebview2devtoolsprotocoleventreceiver?view=webview2-0.9.430&preserve-view=true#remove_devtoolsprotocoleventreceived "remove_DevToolsProtocolEventReceived-Interface ICoreWebView2DevToolsProtocolEventReceiver | Microsoft docs"  
+[ReferenceWin32Icorewebview2environmentGetBrowserversioninfo09430]: /microsoft-edge/webview2/reference/win32/icorewebview2environment?view=webview2-0.9.430&preserve-view=true#get_browserversioninfo "get_BrowserVersionInfo-Interface ICoreWebView2Environment | Microsoft docs"  
+[ReferenceWin32Icorewebview2host09430]: /microsoft-edge/webview2/reference/win32/icorewebview2host?view=webview2-0.9.430&preserve-view=true "Schnittstelle ICoreWebView2Host | Microsoft docs"  
+[ReferenceWin32Webview2IdlGetcorewebview2browserversioninfo09430]: /microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-0.9.430&preserve-view=true#getcorewebview2browserversioninfo "GetCoreWebView2BrowserVersionInfo-Globals | Microsoft docs"  
+[ReferenceWin32Icorewebview2hostGetZoomfactor09430]: /microsoft-edge/webview2/reference/win32/icorewebview2host?view=webview2-0.9.430&preserve-view=true#get_zoomfactor "get_ZoomFactor-Interface ICoreWebView2Host | Microsoft docs"  
+[ReferenceWin32Icorewebview2hostNotifyparentwindowpositionchanged09430]: /microsoft-edge/webview2/reference/win32/icorewebview2host?view=webview2-0.9.430&preserve-view=true#notifyparentwindowpositionchanged "NotifyParentWindowPositionChanged-Interface-ICoreWebView2Host | Microsoft docs"  
+[ReferenceWin32Icorewebview2hostPutZoomfactor09430]: /microsoft-edge/webview2/reference/win32/icorewebview2host?view=webview2-0.9.430&preserve-view=true#put_zoomfactor "put_ZoomFactor-Interface ICoreWebView2Host | Microsoft docs"  
+[ReferenceWin32Icorewebview2hostSetboundsandzoomfactor09430]: /microsoft-edge/webview2/reference/win32/icorewebview2host?view=webview2-0.9.430&preserve-view=true#setboundsandzoomfactor "SetBoundsAndZoomFactor-Interface-ICoreWebView2Host | Microsoft docs"  
+[ReferenceWin32Icorewebview2httpheaderscollectioniteratorGetHascurrentheader09430]: /microsoft-edge/webview2/reference/win32/icorewebview2httpheaderscollectioniterator?view=webview2-0.9.430&preserve-view=true#get_hascurrentheader "get_HasCurrentHeader-Interface ICoreWebView2HttpHeadersCollectionIterator | Microsoft docs"  
+[ReferenceWin32Icorewebview2httprequestheadersGetheaders09430]: /microsoft-edge/webview2/reference/win32/icorewebview2httprequestheaders?view=webview2-0.9.430&preserve-view=true#getheaders "GetHeaders-Interface ICoreWebView2HttpRequestHeaders | Microsoft docs"  
+[ReferenceWin32Icorewebview2httpresponseheadersGetheader09430]: /microsoft-edge/webview2/reference/win32/icorewebview2httpresponseheaders?view=webview2-0.9.430&preserve-view=true#getheader "GetHeader-Interface ICoreWebView2HttpResponseHeaders | Microsoft docs"  
+[ReferenceWin32Icorewebview2Removeremoteobject09430]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-0.9.430&preserve-view=true#removeremoteobject "RemoveRemoteObject-Interface-ICoreWebView2 | Microsoft docs"  
+[ReferenceWin32Icorewebview2settingsGetAreremoteobjectsallowed09430]: /microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-0.9.430&preserve-view=true#get_areremoteobjectsallowed "get_AreRemoteObjectsAllowed-Interface ICoreWebView2Settings | Microsoft docs"  
+[ReferenceWin32Icorewebview2settingsGetIszoomcontrolenabled09430]: /microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-0.9.430&preserve-view=true#get_iszoomcontrolenabled "get_IsZoomControlEnabled-Interface ICoreWebView2Settings | Microsoft docs"  
+[ReferenceWin32Icorewebview2webmessagereceivedeventargsTrygetwebmessageasstring09430]: /microsoft-edge/webview2/reference/win32/icorewebview2webmessagereceivedeventargs?view=webview2-0.9.430&preserve-view=true#trygetwebmessageasstring "TryGetWebMessageAsString-Interface-ICoreWebView2WebMessageReceivedEventArgs | Microsoft docs"  
 
-[ReferenceWin3209488Icorewebview2AddFramenavigationcompleted]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-0.9.488&preserve-view=true#add_framenavigationcompleted "add_FrameNavigationCompleted-Interface ICoreWebView2 | Microsoft docs"  
-[ReferenceWin3209488Icorewebview2Addhostobjecttoscript]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-0.9.488&preserve-view=true#addhostobjecttoscript "AddHostObjectToScript-Interface-ICoreWebView2 | Microsoft docs"  
-[ReferenceWin3209488Icorewebview2AddNewwindowrequested]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-0.9.488&preserve-view=true#add_newwindowrequested "add_NewWindowRequested-Interface ICoreWebView2 | Microsoft docs"  
-[ReferenceWin3209488Icorewebview2environmentGetBrowserversionstring]: /microsoft-edge/webview2/reference/win32/icorewebview2environment?view=webview2-0.9.488&preserve-view=true#get_browserversionstring " | Microsoft docs"  
-[ReferenceWin3209488Icorewebview2environmentoptions]: /microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions?view=webview2-0.9.488&preserve-view=true "Schnittstelle ICoreWebView2EnvironmentOptions | Microsoft docs"  
-[ReferenceWin3209488Icorewebview2experimentalcompositioncontroller]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller?view=webview2-0.9.488-prerelease&preserve-view=true "Schnittstelle ICoreWebView2ExperimentalCompositionController | Microsoft docs"  
-[ReferenceWin3209488Icorewebview2experimentalcursorchangedeventhandler]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalcursorchangedeventhandler?view=webview2-0.9.488-prerelease&preserve-view=true "Schnittstelle ICoreWebView2ExperimentalCursorChangedEventHandler | Microsoft docs"  
-[ReferenceWin3209488Icorewebview2experimentalpointerinfo]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalpointerinfo?view=webview2-0.9.488-prerelease&preserve-view=true "Schnittstelle ICoreWebView2ExperimentalPointerInfo | Microsoft docs"  
-[ReferenceWin3209488Icorewebview2Removehostobjectfromscript]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-0.9.488&preserve-view=true#removehostobjectfromscript "RemoveHostObjectFromScript-Interface-ICoreWebView2 | Microsoft docs"  
-[ReferenceWin3209488Icorewebview2settingsGetAreremoteobjectsallowed]: /microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-0.9.488&preserve-view=true#get_areremoteobjectsallowed "get_AreRemoteObjectsAllowed-Interface ICoreWebView2Settings | Microsoft docs"  
-[ReferenceWin3209488Icorewebview2settingsGetIsbuiltinerrorpageenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-0.9.488&preserve-view=true#get_isbuiltinerrorpageenabled " | Microsoft docs"  
-[ReferenceWin3209488Webview2IdlCreatecorewebview2environmentwithdetails]: /microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-0.9.488&preserve-view=true#createcorewebview2environmentwithdetails "CreateCoreWebView2EnvironmentWithDetails-Globals | Microsoft docs"  
-[ReferenceWin3209488Webview2IdlCreatecorewebview2environmentwithoptions]: /microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-0.9.488&preserve-view=true#createcorewebview2environmentwithoptions "CreateCoreWebView2EnvironmentWithOptions-Globals | Microsoft docs"  
-[ReferenceWin3209488Webview2IdlGetavailablecorewebview2browserversionstring]: /microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-0.9.488&preserve-view=true#getavailablecorewebview2browserversionstring "GetAvailableCoreWebView2BrowserVersionString-Globals | Microsoft docs"  
+[ReferenceWin32Icorewebview2AddFramenavigationcompleted09488]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-0.9.488&preserve-view=true#add_framenavigationcompleted "add_FrameNavigationCompleted-Interface ICoreWebView2 | Microsoft docs"  
+[ReferenceWin32Icorewebview2Addhostobjecttoscript09488]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-0.9.488&preserve-view=true#addhostobjecttoscript "AddHostObjectToScript-Interface-ICoreWebView2 | Microsoft docs"  
+[ReferenceWin32Icorewebview2AddNewwindowrequested09488]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-0.9.488&preserve-view=true#add_newwindowrequested "add_NewWindowRequested-Interface ICoreWebView2 | Microsoft docs"  
+[ReferenceWin32Icorewebview2environmentGetBrowserversionstring09488]: /microsoft-edge/webview2/reference/win32/icorewebview2environment?view=webview2-0.9.488&preserve-view=true#get_browserversionstring " | Microsoft docs"  
+[ReferenceWin32Icorewebview2environmentoptions09488]: /microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions?view=webview2-0.9.488&preserve-view=true "Schnittstelle ICoreWebView2EnvironmentOptions | Microsoft docs"  
+[ReferenceWin32Icorewebview2experimentalcompositioncontroller09488]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller?view=webview2-0.9.488-prerelease&preserve-view=true "Schnittstelle ICoreWebView2ExperimentalCompositionController | Microsoft docs"
+[ReferenceWin32Icorewebview2experimentalcompositioncontroller09488]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller?view=webview2-0.9.488-prerelease&preserve-view=true "Schnittstelle ICoreWebView2ExperimentalCompositionController | Microsoft docs"  
+[ReferenceWin32Icorewebview2experimentalcursorchangedeventhandler09488]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalcursorchangedeventhandler?view=webview2-0.9.488-prerelease&preserve-view=true "Schnittstelle ICoreWebView2ExperimentalCursorChangedEventHandler | Microsoft docs"  
+[ReferenceWin32Icorewebview2experimentalpointerinfo09488]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalpointerinfo?view=webview2-0.9.488-prerelease&preserve-view=true "Schnittstelle ICoreWebView2ExperimentalPointerInfo | Microsoft docs"  
+[ReferenceWin32Icorewebview2Removehostobjectfromscript09488]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-0.9.488&preserve-view=true#removehostobjectfromscript "RemoveHostObjectFromScript-Interface-ICoreWebView2 | Microsoft docs"  
+[ReferenceWin32Icorewebview2settingsGetAreremoteobjectsallowed09488]: /microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-0.9.488&preserve-view=true#get_areremoteobjectsallowed "get_AreRemoteObjectsAllowed-Interface ICoreWebView2Settings | Microsoft docs"  
+[ReferenceWin32Icorewebview2settingsGetIsbuiltinerrorpageenabled09488]: /microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-0.9.488&preserve-view=true#get_isbuiltinerrorpageenabled " | Microsoft docs"  
+[ReferenceWin32Webview2IdlCreatecorewebview2environmentwithdetails09488]: /microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-0.9.488&preserve-view=true#createcorewebview2environmentwithdetails "CreateCoreWebView2EnvironmentWithDetails-Globals | Microsoft docs"  
+[ReferenceWin32Webview2IdlCreatecorewebview2environmentwithoptions09488]: /microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-0.9.488&preserve-view=true#createcorewebview2environmentwithoptions "CreateCoreWebView2EnvironmentWithOptions-Globals | Microsoft docs"  
+[ReferenceWin32Webview2IdlGetavailablecorewebview2browserversionstring09488]: /microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-0.9.488&preserve-view=true#getavailablecorewebview2browserversionstring "GetAvailableCoreWebView2BrowserVersionString-Globals | Microsoft docs"  
 
-[ReferenceDotnetReference]: /dotnet/api/microsoft.web.webview2.core "Microsoft. Web. WebView2. Core-Namespace | Microsoft docs"  
-[ReferenceWpfReference]: /dotnet/api/microsoft.web.webview2.wpf "Microsoft. Web. WebView2. WPF-Namespace | Microsoft docs"  
-[ReferenceWinformsReference]: /dotnet/api/microsoft.web.webview2.winforms "Microsoft. Web. WebView2. WinForms-Namespace | Microsoft docs"  
 
-[ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environment]: /dotnet/api/microsoft.web.webview2.core.corewebview2environment "CoreWebView2Environment-Klasse (Microsoft. Web. WebView2. Core) | Microsoft docs"  
-[ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentComparebrowserversions]: /dotnet/api/microsoft.web.webview2.core.corewebview2environment.comparebrowserversions "CoreWebView2Environment. CompareBrowserVersions (String, String)-Methode (Microsoft. Web. WebView2. Core) | Microsoft docs"
-[ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentGetavailablebrowserversionstring]: /dotnet/api/microsoft.web.webview2.core.corewebview2environment.getavailablebrowserversionstring "CoreWebView2Environment. GetAvailableBrowserVersionString (String)-Methode (Microsoft. Web. WebView2. Core) | Microsoft docs"  
-[ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2Newwindowrequested]: /dotnet/api/microsoft.web.webview2.core.corewebview2.newwindowrequested "CoreWebView2. mswebviewnewwindowrequested-Ereignis (Microsoft. Web. WebView2. Core) | Microsoft docs"  
-[ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2Permissionrequested]: /dotnet/api/microsoft.web.webview2.core.corewebview2.permissionrequested "CoreWebView2. PermissionRequested-Ereignis (Microsoft. Web. WebView2. Core) | Microsoft docs"  
-[ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2Scriptdialogopening]: /dotnet/api/microsoft.web.webview2.core.corewebview2.scriptdialogopening "CoreWebView2. ScriptDialogOpening-Ereignis (Microsoft. Web. WebView2. Core) | Microsoft docs"  
-[ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2Webresourcerequested]: /dotnet/api/microsoft.web.webview2.core.corewebview2.webresourcerequested "CoreWebView2. WebResourceRequested-Ereignis (Microsoft. Web. WebView2. Core) | Microsoft docs"  
-[ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2httprequestheaders]: /dotnet/api/microsoft.web.webview2.core.corewebview2httprequestheaders "CoreWebView2HttpRequestHeaders-Klasse (Microsoft. Web. WebView2. Core) | Microsoft docs"  
-[ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2httpresponseheaders]: /dotnet/api/microsoft.web.webview2.core.corewebview2httpresponseheaders "CoreWebView2HttpResponseHeaders-Klasse (Microsoft. Web. WebView2. Core) | Microsoft docs"  
+[DotnetApiMicrosoftWebWebview2Core]: /dotnet/api/microsoft.web.webview2.core "Microsoft. Web. WebView2. Core-Namespace | Microsoft docs"  
+[DotnetApiMicrosoftWebWebview2Wpf]: /dotnet/api/microsoft.web.webview2.wpf "Microsoft. Web. WebView2. WPF-Namespace | Microsoft docs"  
+[DotnetApiMicrosoftWebWebview2Winforms]: /dotnet/api/microsoft.web.webview2.winforms "Microsoft. Web. WebView2. WinForms-Namespace | Microsoft docs"  
 
-[ReferenceWin3209538Icorewebview2Addhostobjecttoscript]: /microsoft-edge/webview2/reference/win32/icorewebview2#addhostobjecttoscript?view=webview2-0.9.538&preserve-view=true "AddHostObjectToScript-Interface-ICoreWebView2 | Microsoft docs"  
-[ReferenceWin3209538Icorewebview2experimentalAddWebresourceresponsereceived]: /microsoft-edge/webview2/reference/win32/icorewebview2experimental?view=webview2-0.9.538-prerelease&preserve-view=true#add_webresourceresponsereceived "add_WebResourceResponseReceived-Interface ICoreWebView2Experimental | Microsoft docs"  
-[ReferenceWin3209538Icorewebview2experimentaloptionsGetIssinglesignonusingosprimaryaccountenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-0.9.538-prerelease&preserve-view=true#get_issinglesignonusingosprimaryaccountenabled "get_IsSingleSignOnUsingOSPrimaryAccountEnabled-Interface ICoreWebView2ExperimentalEnvironmentOptions | Microsoft docs"  
-[ReferenceWin3209538Icorewebview2experimentalnewwindowrequestedeventargsGetWindowfeatures]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalnewwindowrequestedeventargs?view=webview2-0.9.538-prerelease&preserve-view=true#get_windowfeatures "get_WindowFeatures-Interface ICoreWebView2ExperimentalNewWindowRequestedEventArgs | Microsoft docs"  
-[ReferenceWin3209538Icorewebview2experimentalwindowfeatures]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalwindowfeatures?view=webview2-0.9.538-prerelease&preserve-view=true "Schnittstelle ICoreWebView2ExperimentalWindowFeatures | Microsoft docs"  
-[ReferenceWin3209538Icorewebview2newwindowrequestedeventargsGetIsuserinitiated]: /microsoft-edge/webview2/reference/win32/icorewebview2newwindowrequestedeventargs?view=webview2-0.9.538&preserve-view=true#get_isuserinitiated "get_IsUserInitiated-Schnittstelle ICoreWebView2NewWindowRequestedEventArgs | Microsoft docs"  
-[ReferenceWin3209538Icorewebview2settingsGetArehostobjectsallowed]: /microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-0.9.538&preserve-view=true#get_arehostobjectsallowed "get_AreHostObjectsAllowed-Interface ICoreWebView2Settings | Microsoft docs"  
-[ReferenceWin3209538IdlCreatecorewebview2environmentwithoptions]: /microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-0.9.538&preserve-view=true#createcorewebview2environmentwithoptions "CreateCoreWebView2EnvironmentWithOptions-Globals | Microsoft docs"  
+[WebView2RuntimeNotFoundException]: /dotnet/api/microsoft.web.webview2.core.webview2runtimenotfoundexception "CoreWebView2. WebView2RuntimeNotFound (Microsoft. Web. WebView2. Core) | Microsoft docs"  
+[DotnetApiMicrosoftWebWebview2CoreCorewebview2]: /dotnet/api/microsoft.web.webview2.core.corewebview2 "CoreWebView2-Klasse (Microsoft. Web. WebView2. Core) | Microsoft docs"  
+[DotnetApiMicrosoftWebWebview2CoreCorewebview2environment]: /dotnet/api/microsoft.web.webview2.core.corewebview2environment "CoreWebView2Environment-Klasse (Microsoft. Web. WebView2. Core) | Microsoft docs"  
+[DotnetApiMicrosoftWebWebview2CoreCorewebview2environmentComparebrowserversions]: /dotnet/api/microsoft.web.webview2.core.corewebview2environment.comparebrowserversions "CoreWebView2Environment. CompareBrowserVersions (String, String)-Methode (Microsoft. Web. WebView2. Core) | Microsoft docs"
+[DotnetApiMicrosoftWebWebview2CoreCorewebview2environmentGetavailablebrowserversionstring]: /dotnet/api/microsoft.web.webview2.core.corewebview2environment.getavailablebrowserversionstring "CoreWebView2Environment. GetAvailableBrowserVersionString (String)-Methode (Microsoft. Web. WebView2. Core) | Microsoft docs"  
+[DotnetApiMicrosoftWebWebview2CoreCorewebview2Newwindowrequested]: /dotnet/api/microsoft.web.webview2.core.corewebview2.newwindowrequested "CoreWebView2. mswebviewnewwindowrequested-Ereignis (Microsoft. Web. WebView2. Core) | Microsoft docs"  
+[DotnetApiMicrosoftWebWebview2CoreCorewebview2Permissionrequested]: /dotnet/api/microsoft.web.webview2.core.corewebview2.permissionrequested "CoreWebView2. PermissionRequested-Ereignis (Microsoft. Web. WebView2. Core) | Microsoft docs"  
+[DotnetApiMicrosoftWebWebview2CoreCorewebview2Scriptdialogopening]: /dotnet/api/microsoft.web.webview2.core.corewebview2.scriptdialogopening "CoreWebView2. ScriptDialogOpening-Ereignis (Microsoft. Web. WebView2. Core) | Microsoft docs"  
+[DotnetApiMicrosoftWebWebview2CoreCorewebview2Webresourcerequested]: /dotnet/api/microsoft.web.webview2.core.corewebview2.webresourcerequested "CoreWebView2. WebResourceRequested-Ereignis (Microsoft. Web. WebView2. Core) | Microsoft docs"  
+[DotnetApiMicrosoftWebWebview2CoreCorewebview2httprequestheaders]: /dotnet/api/microsoft.web.webview2.core.corewebview2httprequestheaders "CoreWebView2HttpRequestHeaders-Klasse (Microsoft. Web. WebView2. Core) | Microsoft docs"  
+[DotnetApiMicrosoftWebWebview2CoreCorewebview2httpresponseheaders]: /dotnet/api/microsoft.web.webview2.core.corewebview2httpresponseheaders "CoreWebView2HttpResponseHeaders-Klasse (Microsoft. Web. WebView2. Core) | Microsoft docs"  
 
-[ReferenceWin3209622Icorewebview2environmentoptionsGetAllowsinglesignonusingosprimaryaccount]: /microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions?view=webview2-0.9.622&preserve-view=true#get_allowsinglesignonusingosprimaryaccount "get_AllowSingleSignOnUsingOSPrimaryAccount-Interface ICoreWebView2EnvironmentOptions | Microsoft docs"  
-[ReferenceWin3209622Icorewebview2environmentoptionsPutAdditionalbrowserarguments]: /microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions?view=webview2-0.9.622&preserve-view=true#put_additionalbrowserarguments "put_AdditionalBrowserArguments-Interface ICoreWebView2EnvironmentOptions | Microsoft docs"  
-[ReferenceWin3209622Icorewebview2experimentalenvironment]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment?view=webview2-0.9.622-prerelease&preserve-view=true "Schnittstelle ICoreWebView2ExperimentalEnvironment | Microsoft docs"  
-[ReferenceWin3209622Icorewebview2newwindowrequestedeventargsGetWindowfeatures]: /microsoft-edge/webview2/reference/win32/icorewebview2newwindowrequestedeventargs?view=webview2-0.9.622&preserve-view=true#get_windowfeatures "get_WindowFeatures-Interface ICoreWebView2NewWindowRequestedEventArgs | Microsoft docs"  
-[ReferenceWin3209622Icorewebview2windowfeatures]: /microsoft-edge/webview2/reference/win32/icorewebview2windowfeatures?view=webview2-0.9.622&preserve-view=true "Schnittstelle ICoreWebView2WindowFeatures | Microsoft docs"  
-[ReferenceWin3209622IdlCreatecorewebview2environmentwithoptions]: /microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-0.9.622&preserve-view=true#createcorewebview2environmentwithoptions "CreateCoreWebView2EnvironmentWithOptions-Globals | Microsoft Edge"  
+[DotnetApiMicrosoftWebWebview2WinformsCorewebview2creationproperties]: /dotnet/api/microsoft.web.webview2.winforms.corewebview2creationproperties "CoreWebView2CreationProperties-Klasse (Microsoft. Web. WebView2. WinForms) | Microsoft docs"  
+[DotnetApiMicrosoftWebWebview2WinformsWebview2Source]: /dotnet/api/microsoft.web.webview2.winforms.webview2.source "Webview2. Source-Klasse (Microsoft. Web. Webview2. WinForms) | Microsoft docs"  
+
+
+[DotnetApiMicrosoftWebWebview2WpfWebview2Buildwindowcore]: /dotnet/api/microsoft.web.webview2.wpf.webview2.buildwindowcore "WebView2. BuildWindowCore (HandleRef)-Methode (Microsoft. Web. WebView2. WPF) | Microsoft docs"  
+[DotnetApiMicrosoftWebWebview2WpfWebview2Destroywindowcore]: /dotnet/api/microsoft.web.webview2.wpf.webview2.destroywindowcore "WebView2. DestroyWindowCore (HandleRef)-Methode (Microsoft. Web. WebView2. WPF) | Microsoft docs"  
+
+[ReferenceWin32Icorewebview2Addhostobjecttoscript09538]: /microsoft-edge/webview2/reference/win32/icorewebview2#addhostobjecttoscript?view=webview2-0.9.538&preserve-view=true "AddHostObjectToScript-Interface-ICoreWebView2 | Microsoft docs"  
+[ReferenceWin32Icorewebview2experimentalAddWebresourceresponsereceived09538]: /microsoft-edge/webview2/reference/win32/icorewebview2experimental?view=webview2-0.9.538-prerelease&preserve-view=true#add_webresourceresponsereceived "add_WebResourceResponseReceived-Interface ICoreWebView2Experimental | Microsoft docs"  
+[ReferenceWin32Icorewebview2experimentaloptionsGetIssinglesignonusingosprimaryaccountenabled09538]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-0.9.538-prerelease&preserve-view=true#get_issinglesignonusingosprimaryaccountenabled "get_IsSingleSignOnUsingOSPrimaryAccountEnabled-Interface ICoreWebView2ExperimentalEnvironmentOptions | Microsoft docs"  
+[ReferenceWin32Icorewebview2experimentalnewwindowrequestedeventargsGetWindowfeatures09538]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalnewwindowrequestedeventargs?view=webview2-0.9.538-prerelease&preserve-view=true#get_windowfeatures "get_WindowFeatures-Interface ICoreWebView2ExperimentalNewWindowRequestedEventArgs | Microsoft docs"  
+[ReferenceWin32Icorewebview2experimentalwindowfeatures09538]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalwindowfeatures?view=webview2-0.9.538-prerelease&preserve-view=true "Schnittstelle ICoreWebView2ExperimentalWindowFeatures | Microsoft docs"  
+[ReferenceWin32Icorewebview2newwindowrequestedeventargsGetIsuserinitiated09538]: /microsoft-edge/webview2/reference/win32/icorewebview2newwindowrequestedeventargs?view=webview2-0.9.538&preserve-view=true#get_isuserinitiated "get_IsUserInitiated-Schnittstelle ICoreWebView2NewWindowRequestedEventArgs | Microsoft docs"  
+[ReferenceWin32Icorewebview2settingsGetArehostobjectsallowed09538]: /microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-0.9.538&preserve-view=true#get_arehostobjectsallowed "get_AreHostObjectsAllowed-Interface ICoreWebView2Settings | Microsoft docs"  
+[ReferenceWin32IdlCreatecorewebview2environmentwithoptions09538]: /microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-0.9.538&preserve-view=true#createcorewebview2environmentwithoptions "CreateCoreWebView2EnvironmentWithOptions-Globals | Microsoft docs"  
+
+[ReferenceWin32Icorewebview2environmentoptionsGetAllowsinglesignonusingosprimaryaccount09622]: /microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions?view=webview2-0.9.622&preserve-view=true#get_allowsinglesignonusingosprimaryaccount "get_AllowSingleSignOnUsingOSPrimaryAccount-Interface ICoreWebView2EnvironmentOptions | Microsoft docs"  
+[ReferenceWin32Icorewebview2environmentoptionsPutAdditionalbrowserarguments09622]: /microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions?view=webview2-0.9.622&preserve-view=true#put_additionalbrowserarguments "put_AdditionalBrowserArguments-Interface ICoreWebView2EnvironmentOptions | Microsoft docs"  
+[ReferenceWin32Icorewebview2newwindowrequestedeventargsGetWindowfeatures09622]: /microsoft-edge/webview2/reference/win32/icorewebview2newwindowrequestedeventargs?view=webview2-0.9.622&preserve-view=true#get_windowfeatures "get_WindowFeatures-Interface ICoreWebView2NewWindowRequestedEventArgs | Microsoft docs"  
+[ReferenceWin32Icorewebview2windowfeatures09622]: /microsoft-edge/webview2/reference/win32/icorewebview2windowfeatures?view=webview2-0.9.622&preserve-view=true "Schnittstelle ICoreWebView2WindowFeatures | Microsoft docs"  
+[ReferenceWin32IdlCreatecorewebview2environmentwithoptions09622]: /microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-0.9.622&preserve-view=true#createcorewebview2environmentwithoptions "CreateCoreWebView2EnvironmentWithOptions-Globals | Microsoft Edge"  
+[ReferenceWin32Icorewebview2experimentalenvironment09628]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment?view=webview2-0.9.628-prerelease&preserve-view=true "Schnittstelle ICoreWebView2ExperimentalEnvironment | Microsoft docs"  
+[ReferenceWin32Icorewebview2experimentalwebresourceresponsereceivedeventargsPopulateresponsecontent09628]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalwebresourceresponsereceivedeventargs?view=webview2-0.9.628-prerelease&preserve-view=true#populateresponsecontent "PopulateResponseContent-Interface-ICoreWebView2ExperimentalWebResourceResponseReceivedEventArgs | Microsoft docs"  
+
+[ReferenceWin32Icorewebview2experimentalAddDomcontentloaded10674]: /microsoft-edge/webview2/reference/win32/icorewebview2experimental?view=webview2-1.0.674-prerelease&preserve-view=true#add_domcontentloaded "add_DOMContentLoaded-Interface ICoreWebView2Experimental | Microsoft docs"  
+[ReferenceWin32Icorewebview2experimentalAddWebresourceresponsereceived10674]: /microsoft-edge/webview2/reference/win32/icorewebview2experimental?view=webview2-1.0.674-prerelease&preserve-view=true#add_webresourceresponsereceived "add_WebResourceResponseReceived-Interface ICoreWebView2Experimental | Microsoft docs"  
+[ReferenceWin32Icorewebview2experimentalGetCookiemanager10674]: /microsoft-edge/webview2/reference/win32/icorewebview2experimental?view=webview2-1.0.674-prerelease&preserve-view=true#get_cookiemanager "get_CookieManager-Interface ICoreWebView2Experimental | Microsoft docs"  
+[ReferenceWin32Icorewebview2experimentalGetEnvironment10674]: /microsoft-edge/webview2/reference/win32/icorewebview2experimental?view=webview2-1.0.674-prerelease&preserve-view=true#get_environment "get_Environment-Interface ICoreWebView2Experimental | Microsoft docs"  
+[ReferenceWin32Icorewebview2experimentalNavigatewithwebresourcerequest10674]: /microsoft-edge/webview2/reference/win32/icorewebview2experimental?view=webview2-1.0.674-prerelease&preserve-view=true#navigatewithwebresourcerequest "NavigateWithWebResourceRequest-Interface-ICoreWebView2Experimental | Microsoft docs"  
+[ReferenceWin32Icorewebview2experimentalcompositioncontroller2GetSystemcursorid10674]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller2#get_systemcursorid?view=webview2-1.0.674-prerelease&preserve-view=true "Schnittstelle ICoreWebView2ExperimentalWebResourceResponseView | Microsoft docs"  
+[ReferenceWin32Icorewebview2experimentalwebresourceresponseview10674]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalwebresourceresponseview?view=webview2-1.0.674-prerelease&preserve-view=true "Schnittstelle ICoreWebView2ExperimentalWebResourceResponseView | Microsoft docs"  
+[ReferenceWin32Icorewebview2experimentalwebresourceresponseviewGetcontent10674]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalwebresourceresponseview?view=webview2-1.0.674-prerelease&preserve-view=true#getcontent "GetContent-Schnittstelle ICoreWebView2ExperimentalWebResourceResponseView | Microsoft docs"  
 
 [DeployedgeMicrosoftEdgePolicies]: /deployedge/microsoft-edge-policies "Microsoft Edge – Richtlinien | Microsoft docs"  
+[DeployedgeMicrosoftEdgeWebviewPolicies]: /deployedge/microsoft-edge-webview-policies "Microsoft Edge WebView2-Richtlinien | Microsoft docs"  
 
+[WindowsSecurityThreatProtectionMicrosoftDefenderApplicationGuardWindows10]: /windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview "Microsoft Defender Application Guard (Windows 10) – Windows-Sicherheit | Microsoft docs"
+
+[DotnetApiSystemComponentmodelCancelEventargs]: /dotnet/api/system.componentmodel.canceleventargs "CancelEventArgs-Klasse (System. ComponentModel) | Microsoft docs"  
+[DotnetApiSystemEventargs]: /dotnet/api/system.eventargs "EventArgs-Klasse (System) | Microsoft docs"  
 [DotnetStandardAssemblyStrongNamed]: /dotnet/standard/assembly/strong-named "Assemblys mit starkem Namen | Microsoft docs"  
 
 [GithubMicrosoftedgeWebviewfeedbackIssue1]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/1 "Feedback Repo für MicrosoftEdge/WebViewFeedback Issue 1"  
@@ -391,14 +463,24 @@ Erste Entwickler-Preview-Version.
 [GithubMicrosoftedgeWebviewfeedbackIssue119]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/119 "Feedback Repo für MicrosoftEdge/WebViewFeedback Issue 119"
 [GithubMicrosoftedgeWebviewfeedbackIssue131]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/131 "Feedback Repo für MicrosoftEdge/WebViewFeedback Issue 131"
 [GithubMicrosoftedgeWebviewfeedbackIssue148]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/148 "Feedback Repo für MicrosoftEdge/WebViewFeedback Issue 148"  
+[GithubMicrosoftedgeWebviewfeedbackIssue177]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/177 "Feedback Repo für MicrosoftEdge/WebViewFeedback Issue 177"
 [GithubMicrosoftedgeWebviewfeedbackIssue179]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/179 "Feedback Repo für MicrosoftEdge/WebViewFeedback Issue 179"
 [GithubMicrosoftedgeWebviewfeedbackIssue181]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/181 "Feedback Repo für MicrosoftEdge/WebViewFeedback Issue 181"
 [GithubMicrosoftedgeWebviewfeedbackIssue183]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/183 "Feedback Repo für MicrosoftEdge/WebViewFeedback Issue 183"
 [GithubMicrosoftedgeWebviewfeedbackIssue185]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/185 "Feedback Repo für MicrosoftEdge/WebViewFeedback Issue 185"
+[GithubMicrosoftedgeWebviewfeedbackIssue204]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/204 "Feedback Repo für MicrosoftEdge/WebViewFeedback Issue 204"
+[GithubMicrosoftedgeWebviewfeedbackIssue219]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/219 "Feedback Repo für MicrosoftEdge/WebViewFeedback Issue 219"
 [GithubMicrosoftedgeWebviewfeedbackIssue228]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/228 "Feedback Repo für MicrosoftEdge/WebViewFeedback Issue 228"
 [GithubMicrosoftedgeWebviewfeedbackIssue235]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/235 "Feedback Repo für MicrosoftEdge/WebViewFeedback Issue 235"
+[GithubMicrosoftedgeWebviewfeedbackIssue250]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/250 "Feedback Repo für MicrosoftEdge/WebViewFeedback Issue 250"
 [GithubMicrosoftedgeWebviewfeedbackIssue293]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/293 "Feedback Repo für MicrosoftEdge/WebViewFeedback Issue 293"
 [GithubMicrosoftedgeWebviewfeedbackIssue318]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/318 "Feedback Repo für MicrosoftEdge/WebViewFeedback Issue 318"  
+[GithubMicrosoftedgeWebviewfeedbackIssue382]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/382 "Feedback Repo für MicrosoftEdge/WebViewFeedback Issue 382"  
+[GithubMicrosoftedgeWebviewfeedbackIssue431]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/431 "Feedback Repo für MicrosoftEdge/WebViewFeedback Issue 431"  
+[GithubMicrosoftedgeWebviewfeedbackIssue432]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/432 "Feedback Repo für MicrosoftEdge/WebViewFeedback Issue 432"  
+
+
+[GithubMicrosoftedgeWebview2AnnouncementIssue2]:  https://github.com/MicrosoftEdge/WebView2Announcement/issues/2 "Ankündigungs-Repo für MicrosoftEdge/WebViewAnnouncement Issue 2"  
 
 [GithubMicrosoftedgeWebview2samplesMain]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2-Beispiele-MicrosoftEdge/WebView2Samples | GitHub"  
 [GithubMicrosoftedgeWebview2samplesPr17]: https://github.com/MicrosoftEdge/WebView2Samples/pull/17 "Verschieben eines Projekts zur Verwendung der neuesten WebView2 SDK-0.9.430-MicrosoftEdge/WebView2Samples | GitHub"  
@@ -417,4 +499,6 @@ Erste Entwickler-Preview-Version.
 [NuGetGallery0.9.538]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.538 "NuGet-Katalog | Microsoft. Web. WebView2 v 0.9.538"  
 [NuGetGallery0.9.579]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.579 "NuGet-Katalog | Microsoft. Web. WebView2 v 0.9.579"
 [NuGetGallery0.9.622.11]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.622.11 "NuGet-Katalog | Microsoft. Web. WebView2 v 0.9.622.11"
+[NuGetGallery1.0.622.22]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.622.22 "NuGet-Katalog | Microsoft. Web. WebView2 v 1.0.622.22"
 [NuGetGallery0.9.628-prerelease]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.628-prerelease "NuGet-Katalog | Microsoft. Web. WebView2 v 0.9.628-Vorabversion"  
+[NuGetGallery1.0.674-prerelease]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.674-prerelease "NuGet-Katalog | Microsoft. Web. WebView2 v 1.0.674-Vorabversion"  
