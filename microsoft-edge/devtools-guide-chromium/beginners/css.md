@@ -3,16 +3,16 @@ description: Erste Schritte mit CSS
 title: 'DevTools für Anfänger: Erste Schritte mit CSS'
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools
-ms.openlocfilehash: fe87b4f840c6d9dde3cdf6455700161ea8d8d31e
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 62821084af8c22809f6e14ca4038ee173efd964a
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993303"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125335"
 ---
 <!-- Copyright Katherine Jackson 
 
@@ -35,7 +35,7 @@ In diesem Lernprogramm erfahren Sie, wie Sie eine Webseite mithilfe von CSS form
 Der folgende Artikel ist das zweite Lernprogramm in einer Reihe von Lernprogrammen, in denen Sie die Grundlagen der Webentwicklung und der Microsoft Edge-devtools.  Sie erhalten praktische Erfahrungen, wenn Sie tatsächlich ihre eigene Website erstellen.  Sie müssen das erste Lernprogramm nicht durchführen, bevor Sie den zweiten Schritt ausführen.  [Einrichten Ihres Codes](#set-up-your-code) zeigt, wie Sie sich einrichten.  
 
 > [!NOTE]
-> Dieses Lernprogramm ist für absolute Anfänger konzipiert und konzentriert sich sowohl auf die **Grundlagen der Webentwicklung** als auch auf die Grundlagen der Verwendung von devtools zum Experimentieren mit CSS.  Wenn Sie ein Lernprogramm benötigen, das sich nur auf devtools konzentriert, lesen Sie [Erste Schritte mit dem anzeigen und Ändern von CSS][DevtoolsCssIndex].  
+> Dieses Lernprogramm ist für absolute Anfänger konzipiert und konzentriert sich sowohl auf die **Grundlagen der Webentwicklung** als auch auf die Grundlagen der Verwendung von devtools zum Experimentieren mit CSS.  Wenn Sie ein Lernprogramm mit Schwerpunkt auf devtools möchten, navigieren Sie zu [Erste Schritte mit dem anzeigen und Ändern von CSS][DevtoolsCssIndex].  
 
 Am Anfang des Lernprogramms sollte Ihre Website wie in der folgenden Abbildung aussehen.  
 
@@ -90,7 +90,7 @@ Um Ihre Website zu erstellen, müssen Sie zunächst die folgenden Aktionen ausf�
     > [!NOTE]
     > Glitch generiert einen zufälligen Namen für das neue Projekt.  
     
-1.  Wählen Sie **in einem neuen Fenster** **anzeigen** und auswählen aus.  Eine andere Registerkarte wird mit einer Live Ansicht Ihrer Website geöffnet.  Auf die Registerkarte "auf dem Fokus" Ihres Browsers wird als **"Live"-Registerkarte**verwiesen.  
+1.  Wählen Sie **anzeigen** aus, und wählen Sie **in einem neuen Fenster**aus.  Eine andere Registerkarte wird mit einer Live Ansicht Ihrer Website geöffnet.  Auf die Registerkarte "auf dem Fokus" Ihres Browsers wird als **"Live"-Registerkarte**verwiesen.  
     
     :::image type="complex" source="../media/beginners-css-setup3.msft.png" alt-text="Wie Ihre Website aktuell aussieht" lightbox="../media/beginners-css-setup3.msft.png":::
        Die **Registerkarte "Live"**  
@@ -599,8 +599,12 @@ Führen Sie die folgenden Aktionen aus, um einen Bootstrap durchzuführen und Kl
 Herzlichen Glückwunsch, Sie haben es geschafft.  
 
 *   Die beste Methode, um die Web-Entwicklung zu verbessern, besteht darin, weitere Websites zu erstellen.  Machen Sie sich keine Sorgen, wenn Sie etwas kaputt machen.  Machen Sie einfach Spaß und lernen Sie so viel wie möglich auf dem Weg.  
-*   Weitere Informationen zum Formatieren von Webseiten finden Sie unter [Einführung in CSS][MDNCssFirstSteps].  
-*   Weitere Informationen dazu, wie Sie devtools verwenden können, um mit dem CSS einer Seite zu experimentieren, finden Sie unter [Erste Schritte mit dem anzeigen und Ändern von CSS][DevtoolsCssIndex].  
+*   Wenn Sie mehr über das Formatieren von Webseiten erfahren möchten, navigieren Sie zu [Introduction to CSS][MDNCssFirstSteps].  
+*   Wenn Sie mehr darüber erfahren möchten, wie Sie devtools verwenden können, um mit dem CSS einer Seite zu experimentieren, navigieren Sie zu [Erste Schritte mit dem anzeigen und Ändern von CSS][DevtoolsCssIndex].  
+
+## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!--- image links --->  
 

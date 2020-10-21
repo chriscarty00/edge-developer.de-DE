@@ -3,16 +3,16 @@ description: Verwenden Sie die Zuweisungs Instrumentation auf der Zeitachse, um 
 title: Verwenden der Zuordnungs Instrumentation auf der Zeitachse
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 58a951c4241ae0fe7dce70f523a701694b8254f9
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 1e76e3459128be5b659d790163ef62447dd97ae4
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993506"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125447"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -73,7 +73,7 @@ Die Höhe der einzelnen Balken entspricht der Größe der zuletzt zugeordneten O
 <!--In the following figure, an action was performed 3 times.  The sample program caches five objects, so the last five blue bars are expected.  But the left-most blue bar indicates a potential problem.  -->  
 <!--todo: redo figure 4 with multiple click actions  -->  
 
-Sie können die Schieberegler in der obigen Zeitachse verwenden, um den jeweiligen Schnappschuss zu vergrößern und die Objekte anzuzeigen, die kürzlich zu diesem Zeitpunkt zugewiesen wurden:  
+Sie können die Schieberegler in der obigen Zeitachse verwenden, um den jeweiligen Schnappschuss zu vergrößern und die Objekte zu überprüfen, die kürzlich zu diesem Zeitpunkt zugewiesen wurden:  
 
 :::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png" alt-text="Zuordnungs Instrumentation auf Zeitachse" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png":::
    Vergrößern des Schnappschusses  

@@ -3,16 +3,16 @@ description: Verwenden Sie virtuelle Geräte in Microsoft Edge zum Erstellen von
 title: Emulieren von mobilen Geräten in Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/04/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Web Development, F12 Tools, devtools, Emulation, Device, Simulation, Mobile
-ms.openlocfilehash: c70b81eabb145461eac7d1b9a8f438d6a18fbc89
-ms.sourcegitcommit: cc96ada9679b23feb841e46f19d8077251c4a4df
+ms.openlocfilehash: 8b636a20fcb1c55630009031ec8bf300624d03d7
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "10997089"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125104"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -234,7 +234,7 @@ Führen Sie die folgenden Schritte aus, um nur das Netzwerk zu drosseln:
        Die **Drosselungs** Liste im Netzwerk Panel  
     :::image-end:::  
     
-    Oder wählen Sie `Control` + `Shift` + `P` \ (Windows \) oder `Command` + `Shift` + `P` \ (macOS \) aus, um das **Befehlsmenü**zu öffnen, geben Sie ein `3G` , und wählen Sie **fast 3G-Drosselung aktivieren** oder **langsame 3G-Drosselung aktivieren**aus.  
+    Oder wählen Sie `Control` + `Shift` + `P` \ (Windows, Linux \) oder `Command` + `Shift` + `P` \ (macOS \) aus, um das **Befehlsmenü**zu öffnen, geben Sie ein `3G` , und wählen Sie **fast 3G-Drosselung aktivieren** oder **langsame 3G-Drosselung aktivieren**aus.  
     
     :::image type="complex" source="../media/device-mode-command-menu-throttle.msft.png" alt-text="Die Gerätesymbolleiste" lightbox="../media/device-mode-command-menu-throttle.msft.png":::
        Das **Befehlsmenü**  
@@ -248,7 +248,7 @@ Sie können die Netzwerk Drosselung auch über das **Leistungs** Panel einstelle
        Einrichten der Netzwerk Drosselung im **Leistungs** Panel  
     :::image-end:::  
     
-## Überschreiben von Geolocation  
+## Außerkraftsetzung der Geolocation  
 
 :::row:::
    :::column span="":::
@@ -262,7 +262,7 @@ Sie können die Netzwerk Drosselung auch über das **Leistungs** Panel einstelle
    :::column-end:::
    :::column span="":::
       1.  Öffnen des Befehlsmenüs  
-          *   Wählen Sie `Control` + `Shift` + `P` \ (Windows \) oder `Command` + `Shift` + `P` \ (macOS \) aus.  
+          *   Wählen Sie `Control` + `Shift` + `P` \ (Windows, Linux \) oder `Command` + `Shift` + `P` \ (macOS \) aus.  
       1. Geben `Sensors` Sie ein, und wählen Sie **Sensoren anzeigen**aus.  
       
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Die Gerätesymbolleiste" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
@@ -291,7 +291,7 @@ Im Bereich " **Sensoren** " können Sie mithilfe des Dropdownmenüs " **Standort
    :::column-end:::
    :::column span="":::
       1.  Öffnen des Befehlsmenüs  
-          *   Wählen Sie `Control` + `Shift` + `P` \ (Windows \) oder `Command` + `Shift` + `P` \ (macOS \) aus.  
+          *   Wählen Sie `Control` + `Shift` + `P` \ (Windows, Linux \) oder `Command` + `Shift` + `P` \ (macOS \) aus.  
       1. Geben `Sensors` Sie ein, und wählen Sie **Sensoren anzeigen**aus.  
       
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Die Gerätesymbolleiste" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
@@ -320,7 +320,7 @@ Im **Sensor** Panel können Sie eine voreingestellte Ausrichtung aus dem Dropdow
    :::column-end:::
    :::column span="":::
       1.  Öffnen des Befehlsmenüs  
-          *   Wählen Sie `Control` + `Shift` + `P` \ (Windows \) oder `Command` + `Shift` + `P` \ (macOS \) aus.  
+          *   Wählen Sie `Control` + `Shift` + `P` \ (Windows, Linux \) oder `Command` + `Shift` + `P` \ (macOS \) aus.  
       1. Geben `Network conditions` Sie ein, und wählen Sie **Netzwerkbedingungen anzeigen**aus.  
       
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png" alt-text="Die Gerätesymbolleiste" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png":::

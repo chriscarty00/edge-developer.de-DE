@@ -3,16 +3,16 @@ description: Informationen zum Anzeigen und Ändern von IndexedDB-Daten mit dem 
 title: Anzeigen und Ändern von IndexedDB-Daten mit Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 6b1209ddcbfac305535d9d61e001441dbf61b6ec
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 54d232780e5e071ce34cdfb55e12daed6f631491
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993562"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125433"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,17 +28,11 @@ ms.locfileid: "10993562"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
+# Anzeigen und Ändern von IndexedDB-Daten mit Microsoft Edge devtools  
 
+Dieser Leitfaden zeigt, wie Sie [Microsoft Edge devtools][MicrosoftEdgeDevTools] verwenden, um [IndexedDB][MDNIndexedDBAPI] -Daten anzuzeigen und zu ändern.  Es wird davon ausgegangen, dass Sie mit devtools vertraut sind.  Außerdem wird davon ausgegangen, dass Sie mit IndexedDB vertraut sind.  Wenn dies nicht der Fall ist, navigieren Sie zu [using IndexedDB][MDNUsingIndexedDB].  
 
-
-
-# Anzeigen und Ändern von IndexedDB-Daten mit Microsoft Edge devtools   
-
-  
-
-Dieser Leitfaden zeigt, wie Sie [Microsoft Edge devtools][MicrosoftEdgeDevTools] verwenden, um [IndexedDB][MDNIndexedDBAPI] -Daten anzuzeigen und zu ändern.  Es wird davon ausgegangen, dass Sie mit devtools vertraut sind.  Außerdem wird davon ausgegangen, dass Sie mit IndexedDB vertraut sind.  Wenn dies nicht der Fall ist, lesen Sie [Verwenden von IndexedDB][MDNUsingIndexedDB].  
-
-## Anzeigen von IndexedDB-Daten   
+## Anzeigen von IndexedDB-Daten  
 
 1.  Wählen Sie die Registerkarte **Anwendung** aus, um den **Anwendungs** Panel zu öffnen.  Der Bereich **Manifest** wird normalerweise standardmäßig geöffnet.  
     
@@ -89,19 +83,19 @@ Dieser Leitfaden zeigt, wie Sie [Microsoft Edge devtools][MicrosoftEdgeDevTools]
        Sortieren eines Objektspeichers anhand eines Indexes  
     :::image-end:::  
     
-## Aktualisieren von IndexedDB-Daten   
+## Aktualisieren von IndexedDB-Daten  
 
-IndexedDB-Werte im **Anwendungs** Panel werden nicht in Echtzeit aktualisiert.  Wählen Sie **Aktualisieren** \ ( ![ Aktualisieren \) aus, wenn Sie ][ImageReloadIcon] einen Objektspeicher anzeigen, um die Daten zu aktualisieren, oder zeigen Sie eine Datenbank an, und klicken Sie auf **Datenbank aktualisieren** , um alle Daten zu aktualisieren.  
+IndexedDB-Werte im **Anwendungs** Panel werden nicht in Echtzeit aktualisiert.  Wählen Sie **Aktualisieren** \ ( ![ Aktualisieren \) aus, wenn Sie ][ImageReloadIcon] einen Objektspeicher anzeigen, um die Daten zu aktualisieren, oder zeigen Sie eine Datenbank an, und wählen Sie **Datenbank aktualisieren** aus, um alle Daten zu aktualisieren.  
 
 :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png" alt-text="Bereich ' Manifest '" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png":::
    Anzeigen einer Datenbank  
 :::image-end:::  
 
-## Bearbeiten von IndexedDB-Daten   
+## Bearbeiten von IndexedDB-Daten  
 
 IndexedDB-Schlüssel und-Werte können im **Anwendungs** Panel nicht bearbeitet werden.  Da devtools jedoch Zugriff auf den Seitenkontext hat, können Sie JavaScript-Code in devtools ausführen, um IndexedDB-Daten zu bearbeiten.  
 
-### Bearbeiten von IndexedDB-Daten mit Ausschnitten   
+### Bearbeiten von IndexedDB-Daten mit Ausschnitten  
 
 [Snippets][DevtoolsJavascriptSnippets] sind eine Möglichkeit zum Speichern und Ausführen von JavaScript-Codeblöcken in devtools.  Wenn Sie einen Ausschnitt ausführen, wird das Ergebnis in der **Konsole**protokolliert.  Sie können einen Ausschnitt zum Ausführen von JavaScript-Code zum Bearbeiten einer IndexedDB-Datenbank verwenden.  
 
@@ -109,9 +103,9 @@ IndexedDB-Schlüssel und-Werte können im **Anwendungs** Panel nicht bearbeitet 
    Verwenden eines Snippets für die Interaktion mit IndexedDB  
 :::image-end:::  
 
-## Löschen von IndexedDB-Daten   
+## Löschen von IndexedDB-Daten  
 
-### Löschen eines IndexedDB-Schlüssel-Wert-Paars   
+### Löschen eines IndexedDB-Schlüssel-Wert-Paars  
 
 1.  [Anzeigen eines IndexedDB-Objektspeichers](#view-indexeddb-data)  
 1.  Wählen Sie das Schlüssel-Wert-Paar aus, das Sie löschen möchten.  DevTools hebt die Markierung hervor, um anzugeben, dass Sie markiert ist.  
@@ -120,13 +114,13 @@ IndexedDB-Schlüssel und-Werte können im **Anwendungs** Panel nicht bearbeitet 
        Wählen Sie ein Schlüssel-Wert-Paar aus, um es zu löschen.  
     :::image-end:::  
     
-1.  Drücken Sie die Eingabe `Delete` Taste, oder klicken Sie auf **Ausgewählte löschen** \ ( ![ Auswahl löschen ][ImageDeleteIcon] \).  
+1.  Drücken Sie die Eingabe `Delete` Taste, oder wählen Sie **Ausgewählte löschen** ( ![ Ausgewählte löschen ][ImageDeleteIcon] \) aus.  
     
     :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png" alt-text="Bereich ' Manifest '" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png":::
        Wie der Objektspeicher aussieht, nachdem das Schlüssel-Wert-Paar gelöscht wurde  
     :::image-end:::  
     
-### Löschen aller Schlüssel-Wert-Paare in einem Objektspeicher   
+### Löschen aller Schlüssel-Wert-Paare in einem Objektspeicher  
 
 1.  [Anzeigen eines IndexedDB-Objektspeichers](#view-indexeddb-data)  
     
@@ -136,7 +130,7 @@ IndexedDB-Schlüssel und-Werte können im **Anwendungs** Panel nicht bearbeitet 
     
 1.  Wählen Sie **Objektspeicher löschen** \ ( ![ Objektspeicher löschen ][ImageClearIcon] \) aus.  
     
-### Löschen einer IndexedDB-Datenbank   
+### Löschen einer IndexedDB-Datenbank  
 
 1.  [Zeigen Sie die IndexedDB-Datenbank](#view-indexeddb-data) an, die Sie löschen möchten.  
 1.  Wählen Sie **Datenbank löschen**aus.  
@@ -145,7 +139,7 @@ IndexedDB-Schlüssel und-Werte können im **Anwendungs** Panel nicht bearbeitet 
        Schaltfläche " **Datenbank löschen** "  
     :::image-end:::  
     
-### Löschen des gesamten IndexedDB-Speichers   
+### Löschen des gesamten IndexedDB-Speichers  
 
 1.  Öffnen Sie den Bereich **Speicher löschen** .  
 1.  Stellen Sie sicher, dass das Kontrollkästchen **IndexedDB** aktiviert ist.  
@@ -155,11 +149,9 @@ IndexedDB-Schlüssel und-Werte können im **Anwendungs** Panel nicht bearbeitet 
        Der Bereich " **Speicher löschen** "  
     :::image-end:::  
     
-<!--  
- 
+## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

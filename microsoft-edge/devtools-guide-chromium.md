@@ -1,6 +1,6 @@
 ---
 description: Kennenlernen der Microsoft Edge (Chrom)-Entwickler Tools
-title: Microsoft Edge (Chrom)-Entwickler Tools
+title: Microsoft Edge (Chromium)-Entwicklertools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/08/2020
@@ -8,14 +8,14 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: ba925c402d33ba75c558006c7c43c5dc05515911
-ms.sourcegitcommit: 6b577cb118f34f3ff2c65eab2908b65f155dc151
+ms.openlocfilehash: 50c4fa578ffa1738649496176cda2611625908b8
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "11003936"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125321"
 ---
-# Microsoft Edge (Chrom)-Entwickler Tools  
+# Microsoft Edge (Chromium)-Entwicklertools  
 
 Microsoft Edge hat das Chrom-Open-Source-Projekt angenommen, um eine bessere Web-Kompatibilität und geringere Fragmentierung unterschiedlicher zugrunde liegender Webplattformen zu schaffen.  Diese Änderung sollte es für Sie einfacher machen, ihre Websites in Microsoft Edge zu erstellen und zu testen und sicherzustellen, dass Sie auch in einem anderen Chrom basierten Browser wie erwartet funktionieren (wie Google Chrome, Vivaldi, Opera oder Brave \).  
 
@@ -43,11 +43,11 @@ alle direkt im Browser.  Dies sind nur einige Beispiele für einige der Features
 So öffnen Sie das devtools  
 
 *   drücken Sie `F12` 
-*   Drücken Sie `Ctrl` + `Shift` + `I` auf Windows \ ( `Command` + `Option` + `I` unter macOS \).  
+*   Drücken Sie `Ctrl` + `Shift` + `I` unter Windows/Linux \ ( `Command` + `Option` + `I` unter macOS \).  
 
-Wenn Sie den HTML-oder CSS-Code für ein Element auf Ihrer Website anzeigen möchten, klicken Sie mit der rechten Maustaste auf das Element, und wählen Sie über **prüfen** aus, um in das Panel Elemente zu wechseln.  Sie können auch `Ctrl` + `Shift` + `C` auf Windows \ ( `Command` + `Option` + `C` unter macOS \) drücken, um das devtools im Kontroll **Element Modus** zu öffnen, in dem Sie ein Element auf der Website auswählen und den HTML-und **Elements** CSS-Code im Element Panel sehen können.  
+Wenn Sie den HTML-oder CSS-Code für ein Element auf Ihrer Website anzeigen möchten, klicken Sie mit der rechten Maustaste auf das Element, und wählen Sie über **prüfen** aus, um in das Panel Elemente zu wechseln.  Sie können auch `Ctrl` + `Shift` + `C` auf Windows/Linux \ ( `Command` + `Option` + `C` unter macOS \) drücken, um das devtools im Kontroll **Element Modus** zu öffnen, in dem Sie ein Element auf der Website auswählen und den HTML-und **Elements** CSS-Code im Element Panel sehen können.  
 
-Wenn Sie die Protokolle aus Ihrem Front-End-JavaScript-Code anzeigen oder schnell ein Skript ausführen möchten, drücken Sie `Ctrl` + `Shift` + `J` auf Windows oder `Command` + `Option` + `J` auf macOS, um den Konsolenbereich im devtools zu starten.  
+Wenn Sie die Protokolle aus Ihrem Front-End-JavaScript-Code anzeigen oder schnell ein Skript ausführen möchten, drücken Sie `Ctrl` + `Shift` + `J` auf Windows/Linux oder `Command` + `Option` + `J` auf macOS, um den Konsolenbereich im devtools zu starten.  
 
 ## Grundlegende Tools  
 

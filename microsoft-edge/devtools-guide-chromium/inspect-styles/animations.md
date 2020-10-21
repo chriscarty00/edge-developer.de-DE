@@ -3,16 +3,16 @@ description: Überprüfen und Ändern von Animationen mit dem Animations Inspekt
 title: Überprüfen von Animationen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: e867cc373286666f73bee3b8fb886f60fa1b94f6
-ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
+ms.openlocfilehash: fed686c07acd0648ac512dac131d85a317fb64eb
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015772"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124775"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -62,7 +62,7 @@ Es gibt zwei Möglichkeiten, den Animations Inspektor zu öffnen:
 
 *   Öffnen des Menüs zum **anpassen und Steuern des devtools**  
     1.  Navigieren Sie zum unter Menü **Weitere Tools** .  
-    1.  Wählen Sie **Animationen**aus:  
+    1.  Auswählen von **Animationen**:  
         
         :::image type="complex" source="../media/inspect-styles-elements-styles-more-tools-animations.msft.png" alt-text="Animations Inspektor" lightbox="../media/inspect-styles-elements-styles-more-tools-animations.msft.png":::
            **Animationen** mithilfe des Hauptmenüs  

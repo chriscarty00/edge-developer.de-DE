@@ -3,16 +3,16 @@ description: Eine Referenz zu den in der Microsoft Edge devtools-Konsole verfüg
 title: API-Referenz für Konsolen Dienstprogramme
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 2882d980e6da45072cab4b028ceb1838a9078064
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: f224bb8235437e971ff0e59c20d69e589ce520fb
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993107"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125251"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -179,7 +179,7 @@ for (each in images) {
 :::image-end:::  
 
 > [!NOTE]
-> Drücken Sie `Shift` + `Enter` in der Konsole, um eine neue Zeile zu starten, ohne das Skript auszuführen.  
+> Wählen Sie `Shift` + `Enter` in der Konsole aus, um eine neue Zeile zu beginnen, ohne das Skript auszuführen.  
 
 ## XPath  
 
@@ -260,7 +260,7 @@ debug("debug");
 
 Verwenden Sie diese Option, `undebug(method)` um die Unterbrechung der Methode zu beenden, oder verwenden Sie die Benutzeroberfläche, um alle Haltepunkte zu deaktivieren.  
 
-Weitere Informationen zu Haltepunkten finden Sie unter [Anhalten des Codes mit Haltepunkten][DevToolsJavascriptBreakpoints].  
+Wenn Sie weitere Informationen zu Haltepunkten erhalten möchten, navigieren Sie zum [Anhalten des Codes mit Haltepunkten][DevToolsJavascriptBreakpoints].  
 
 ## dir  
 
@@ -281,7 +281,7 @@ dir(document.head);
    Abbildung 14: Protokollierung `document.head` mit `dir()` Methode  
 :::image-end:::  
 
-Weitere Informationen finden Sie im [`console.dir()`][DevToolsConsoleApiConsoleDirObject] Eintrag in der Konsolen-API.  
+Weitere Informationen finden Sie unter [`console.dir()`][DevToolsConsoleApiConsoleDirObject] Eintrag in der Konsolen-API.  
 
 ## DirXML  
 
@@ -350,7 +350,7 @@ Gibt ein Array zurück, das die Namen der Eigenschaften enthält, die zum angege
 Angenommen, Ihre Anwendung hat das folgende Objekt definiert.  
 
 ```console
-var player1 = { "name":  "Ted", "level": 42 }
+var player1 =   
 ```  
 
 In den folgenden Codebeispielen und einer Abbildung wird davon ausgegangen, dass das Ergebnis `player1` vor der Eingabe `keys(player1)` und in der Konsole im globalen Namespace \ (zur Vereinfachung \) definiert wurde `values(player1)` .  
@@ -606,6 +606,10 @@ Gibt ein Array zurück, das die Werte aller Eigenschaften enthält, die zum ange
 ```console
 values(object);
 ```  
+
+## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

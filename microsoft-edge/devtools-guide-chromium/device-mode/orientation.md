@@ -3,16 +3,16 @@ description: Öffnen Sie die Registerkarte Sensoren, und wechseln Sie zum Abschn
 title: Simulieren der geräteausrichtung mit Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 42b58ef2d4b132eedad2663287894e25e72b2572
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 01e6d3a24513b504665dbe0c03d9e72cc1f97533
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992932"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124957"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -34,13 +34,13 @@ Führen Sie die folgenden Aktionen aus, um unterschiedliche Geräte Ausrichtunge
 
 <!--todo: update device orientation section when available -->  
 
-1.  Drücken Sie `Control` + `Shift` + `P` \ (Windows \) oder `Command` + `Shift` + `P` \ (macOS \), um das **Befehlsmenü**zu öffnen.  
+1.  Wählen Sie `Control` + `Shift` + `P` \ (Windows, Linux \) oder `Command` + `Shift` + `P` \ (macOS \) aus, um das **Befehlsmenü**zu öffnen.  
     
     :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="Das Befehlsmenü" lightbox="../media/device-mode-console-command-menu.msft.png":::
        Das **Befehlsmenü**  
     :::image-end:::  
     
-1.  Tippen `sensors` Sie auf **Sensoren anzeigen**und dann auf `Enter` .  Die Registerkarte **Sensoren** wird unten im devtools-Fenster geöffnet.  
+1.  Tippen `sensors` Sie auf **Sensoren anzeigen**, und wählen Sie aus `Enter` .  Die Registerkarte **Sensoren** wird unten im devtools-Fenster geöffnet.  
 1.  Wählen Sie in der Liste **Ausrichtung** eine der vordefinierten Ausrichtungen aus, beispielsweise `Portrait upside down` , oder wählen Sie **benutzerdefinierte Ausrichtung** aus, um eine exakte Ausrichtung zu gewährleisten.  
     
     :::row:::
@@ -50,7 +50,7 @@ Führen Sie die folgenden Aktionen aus, um unterschiedliche Geräte Ausrichtunge
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          Nachdem Sie **benutzerdefinierte Ausrichtung**ausgewählt haben `alpha` , `beta` sind die Felder, und `gamma` aktiviert.  
+          Nachdem Sie die **benutzerdefinierte Ausrichtung**ausgewählt haben, `alpha` `beta` sind die Felder, und `gamma` aktiviert.  
           <!--See [Alpha][alpha], [Beta][beta], and [Gamma][gamma] to understand how each axis works.  -->  
           <!--todo: update links to alpha, beta, and gamma section when available -->  
           Sie können auch eine benutzerdefinierte Ausrichtung definieren, indem Sie das **Ausrichtungs Modell**ziehen.  Halten `Shift` Sie vor dem Ziehen gedrückt, um sich entlang der Achse zu drehen `alpha` .  

@@ -3,16 +3,16 @@ description: Die hauptsächliche Verwendung der Microsoft Edge devtools-Konsole 
 title: Übersicht über die Konsole
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 0cdce953b22d22f9a2bf8048a6eff89388aa6e2e
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 32272c3f76f715566ced66d11346985dc95dd290
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993156"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125265"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,17 +28,13 @@ ms.locfileid: "10993156"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Übersicht über die Konsole   
+# Übersicht über die Konsole  
 
   
 
 Auf dieser Seite wird erläutert, wie die Microsoft Edge devtools-Konsole das Entwickeln von Webseiten vereinfacht.  Die Konsole hat zwei hauptsächliche Verwendungsmöglichkeiten: [Anzeigen von protokollierten Nachrichten](#viewing-logged-messages) und [Ausführen von JavaScript](#running-javascript).  
 
-## Anzeigen von angemeldeten Nachrichten   
+## Anzeigen von angemeldeten Nachrichten  
 
 Web-Entwickler protokollieren häufig Nachrichten an die Konsole, um sicherzustellen, dass Ihr JavaScript wie erwartet funktioniert.  Wenn Sie eine Nachricht protokollieren möchten, fügen Sie einen Ausdruck wie `console.log('Hello, Console!')` in Ihr JavaScript ein.  Wenn der Browser Ihr JavaScript ausführt und einen Ausdruck wie diesen sieht, wird die Nachricht in der Konsole protokolliert.  
 
@@ -62,7 +58,7 @@ Web-Entwickler protokollieren häufig Nachrichten an die Konsole, um sicherzuste
                   const artists = [
                       { first: 'René', last: 'Magritte' },
                       { first: 'Chaim', last: 'Soutine' },
-                      { first: 'Henri', last: 'Matisse' }
+                        
                   ];
                   console.table(artists);
                   setTimeout(() => {
@@ -92,7 +88,7 @@ Web-Entwickler protokollieren Nachrichten für die folgenden 2 allgemeinen Grün
 
 Lesen Sie [Erste Schritte mit der Protokollierung von Nachrichten][DevtoolsConsoleLoggingMessages] , um praktische Erfahrungen mit der Protokollierung zu erhalten.  Die vollständige Liste der Methoden finden Sie in der [API-Referenz][DevToolsConsoleAPI] für die Konsole `console` .  Der Hauptunterschied zwischen den Methoden besteht darin, wie die Daten, die protokolliert werden, angezeigt werden.  
 
-## Ausführen von JavaScript   
+## Ausführen von JavaScript  
 
 Die **Konsole** ist auch ein [repl][WikiREPLoop].  Sie können JavaScript in der **Konsole** ausführen, um mit der geprüften Seite zu interagieren.   
 
@@ -113,16 +109,16 @@ Die **Konsole** ist auch ein [repl][WikiREPLoop].  Sie können JavaScript in der
    :::column-end:::
 :::row-end:::
 
-Das Ändern der Seite über die **Konsole** ist möglich, da die **Konsole** Vollzugriff auf das [Fenster][MDNWindow] der Seite hat.  DevTools verfügt über einige komfortable Funktionen, mit denen Sie eine Seite leichter überprüfen können.  Nehmen wir beispielsweise an, dass Ihr JavaScript eine Funktion mit dem Namen `hideModal` .  Durch Ausführen wird der `debug(hideModal)` Code in der ersten Zeile des `hideModal` nächsten Ausführungszeitraums angehalten.  Weitere Informationen zur vollständigen Liste der Dienstprogrammfunktionen finden Sie unter [API-Referenz für Konsolen Dienstprogramme][DevtoolsConsoleUtilitiesDebug].  
+Das Ändern der Seite über die **Konsole** ist möglich, da die **Konsole** Vollzugriff auf das [Fenster][MDNWindow] der Seite hat.  DevTools verfügt über einige komfortable Funktionen, mit denen Sie eine Seite leichter überprüfen können.  Nehmen wir beispielsweise an, dass Ihr JavaScript eine Funktion mit dem Namen `hideModal` .  Durch Ausführen wird der `debug(hideModal)` Code in der ersten Zeile des `hideModal` nächsten Ausführungszeitraums angehalten.  Weitere Informationen zur vollständigen Liste der Dienstprogrammfunktionen finden Sie unter [API-Referenz für die Konsolen Dienstprogramme][DevtoolsConsoleUtilitiesDebug].  
 
 Wenn Sie JavaScript ausführen, müssen Sie nicht mit der Seite interagieren.  Sie können die **Konsole** verwenden, um neuen Code auszuprobieren, der sich nicht auf die Seite bezieht.  Angenommen, Sie haben soeben die integrierte JavaScript-Array [Zuordnungsmethode ()][MDNMap] kennengelernt, und Sie möchten damit experimentieren.  
 Die **Konsole** ist ein guter Ort, um die Funktion auszuprobieren.  
 
-Weitere praktische Erfahrungen mit der Ausführung von JavaScript in der **Konsole**finden Sie unter [Erste Schritte mit der Ausführung von JavaScript][DevtoolsConsoleRunningJavascript].  
+Wenn Sie mehr praktische Erfahrungen mit der Ausführung von JavaScript in der **Konsole**erhalten möchten, navigieren Sie zu den [ersten Schritten mit der Ausführung von JavaScript][DevtoolsConsoleRunningJavascript].  
 
-   
+## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
-  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

@@ -1,18 +1,18 @@
 ---
-description: Leitfaden zum Öffnen des Befehlsmenüs, Ausführen von Befehlen, Anzeigen anderer Aktionen und vieles mehr.
+description: Leitfaden zum Öffnen des Befehlsmenüs, Ausführen von Befehlen, überprüfen weiterer Aktionen und vieles mehr.
 title: Ausführen von Befehlen mit dem Befehlsmenü von Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 54dead492e7d58053efab77c82a10e7e3c912460
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 2f13461fdf04e034b324db63c6ec6d9090f80f50
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993198"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125279"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,11 +28,7 @@ ms.locfileid: "10993198"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Ausführen von Befehlen mit dem Befehlsmenü von Microsoft Edge devtools   
+# Ausführen von Befehlen mit dem Befehlsmenü von Microsoft Edge devtools  
 
   
 
@@ -42,15 +38,15 @@ Das Befehlsmenü bietet eine schnelle Möglichkeit, auf der Benutzeroberfläche 
    Verwenden des Befehlsmenüs zum Deaktivieren von JavaScript  
 :::image-end:::  
 
-## Öffnen des Befehlsmenüs   
+## Öffnen des Befehlsmenüs  
 
-Drücken Sie `Control` + `Shift` + `P` \ (Windows \) oder `Command` + `Shift` + `P` \ (macOS \). Oder klicken Sie auf **anpassen und Steuern von devtools** `...` , und wählen Sie dann **Befehl ausführen**aus.  
+Wählen Sie `Control` + `Shift` + `P` \ (Windows, Linux \) oder `Command` + `Shift` + `P` \ (macOS \) aus. Oder wählen Sie **anpassen und Steuern von devtools** `...` und dann **Befehl ausführen**aus.  
 
 :::image type="complex" source="../media/command-menu-options-run-command.msft.png" alt-text="Verwenden des Befehlsmenüs zum Deaktivieren von JavaScript" lightbox="../media/command-menu-options-run-command.msft.png":::
    Befehl "ausführen"  
 :::image-end:::  
 
-## Anzeigen der anderen verfügbaren Aktionen   
+## Anzeigen der anderen verfügbaren Aktionen  
 
 Wenn Sie den Workflow verwenden, der unter [Öffnen des Befehls](#open-the-command-menu)Menüs erläutert wird, wird das Befehl-Menü mit einem `>` Zeichen vor der vorangestellt des Befehlsmenü-Textfelds geöffnet.  
 
@@ -64,9 +60,9 @@ Löschen `>` Sie das Zeichen und den Typ `?` , um andere Aktionen anzuzeigen, di
    Andere verfügbare Aktionen  
 :::image-end:::  
 
- 
+## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
-
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

@@ -3,16 +3,16 @@ description: Hosten Sie eine Website auf einem Entwicklungscomputer-Webserver, u
 title: Zugreifen auf lokale Server
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 373cd7ce5cd262bad9fa5460bb2187241246cd75
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: f994092460f090743119d7304bfe12aa28556b19
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993485"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125412"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,14 +28,7 @@ ms.locfileid: "10993485"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Zugreifen auf lokale Server   
-
-
-
+# Zugreifen auf lokale Server  
 
 Hosten Sie eine Website auf einem Entwicklungscomputer-Webserver, und greifen Sie dann auf den Inhalt eines Android-Geräts zu.  
 
@@ -46,7 +39,7 @@ Führen Sie mit einem USB-Kabel und Microsoft Edge devtools eine Website von ein
 *   Mit der Port Weiterleitung können Sie Inhalte anzeigen, die von dem Webserver gehostet werden, der auf Ihrem Android-Gerät auf Ihrem Entwicklungscomputer ausgeführt wird.  
 *   Wenn Ihr Webserver eine benutzerdefinierte Domäne verwendet, richten Sie Ihr Android-Gerät für den Zugriff auf den Inhalt dieser Domäne mit benutzerdefinierter Domänenzuordnung ein.  
 
-## Einrichten der Portweiterleitung   
+## Einrichten der Portweiterleitung  
 
 Mit der Port Weiterleitung kann Ihr Android-Gerät auf Inhalte zugreifen, die auf dem Webserver gehostet werden, der auf Ihrem Entwicklungscomputer ausgeführt wird.  Die Port Weiterleitung funktioniert durch Erstellen eines abhörenden TCP-Ports auf Ihrem Android-Gerät, der einem TCP-Port auf dem Entwicklungscomputer zugeordnet ist.  Der Datenverkehr zwischen den Anschlüssen durchläuft die USB-Verbindung zwischen Ihrem Android-Gerät und dem Entwicklungscomputer, sodass die Verbindung nicht von Ihrer Netzwerkkonfiguration abhängt.  
 
@@ -62,7 +55,7 @@ So aktivieren Sie die Portweiterleitung:
     
 1.  Geben Sie im Textfeld **Device Port** auf der linken Seite die Portnummer ein, auf der `localhost` Sie auf Ihrem Android-Gerät auf die Website zugreifen können möchten.  Wenn Sie beispielsweise auf die Website von Enter aus zugreifen `localhost:5000` möchten `5000` .  
 1.  Geben Sie im Textfeld **lokale Adresse** auf der rechten Seite die IP-Adresse oder den Hostnamen ein, auf dem Ihre Website auf dem Webserver gehostet wird, der auf Ihrem Entwicklungscomputer ausgeführt wird, gefolgt von der Portnummer.  Beispiel: Wenn Ihre Website auf Enter ausgeführt wird `localhost:7331` `localhost:7331` .  
-1.  Wählen Sie **Hinzufügen** aus.  
+1.  Wählen Sie **Hinzufügen**.  
     
 Die Port Weiterleitung ist nun eingerichtet.  Sehen Sie sich die Statusanzeige für den Port Forward auf der Registerkarte auf Ihrem Gerät im Dialogfeld " **Geräte überprüfen** " an.  
 
@@ -72,7 +65,7 @@ Die Port Weiterleitung ist nun eingerichtet.  Sehen Sie sich die Statusanzeige f
 
 Wenn Sie den Inhalt anzeigen möchten, öffnen Sie Microsoft Edge auf Ihrem Android-Gerät, und wechseln Sie zu dem `localhost` Port, den Sie im Feld **Device Port** festgelegt haben.  Wenn Sie beispielsweise `5000` in das Feld eingegeben haben, besuchen Sie `localhost:5000` .  
 
-## Zuordnen zu benutzerdefinierten lokalen Domänen   
+## Zuordnen zu benutzerdefinierten lokalen Domänen  
 
 Mit der benutzerdefinierten Domänenzuordnung können Sie Inhalte auf einem Android-Gerät von einem Webserver auf dem Entwicklungscomputer anzeigen, auf dem eine benutzerdefinierte Domäne verwendet wird.  
 
@@ -89,7 +82,7 @@ So richten Sie die Portweiterleitung an einen Proxy ein:
     > [!NOTE]
     > Der Proxy Server und Ihr Webserver müssen auf unterschiedlichen Ports ausgeführt werden.  
     
-1.  Richten Sie die [Portweiterleitung](#set-up-port-forwarding) auf Ihr Android-Gerät ein.  Geben Sie für das Feld **lokale Adresse** `localhost:` den Port ein, auf dem Ihr Proxy Server ausgeführt wird.  Wenn Sie beispielsweise auf Port ausgeführt wird `8000` , besuchen Sie `localhost:8000` .  Geben Sie im Feld **Device Port** die Nummer ein, die Ihr Android-Gerät hören soll, beispielsweise `3333` .  
+1.  Richten Sie die [Portweiterleitung](#set-up-port-forwarding) auf Ihr Android-Gerät ein.  Geben Sie für das Feld **lokale Adresse** `localhost:` den Port ein, auf dem Ihr Proxy Server ausgeführt wird.  Wenn Sie beispielsweise auf Port ausgeführt wird `8000` , navigieren Sie zu `localhost:8000` .  Geben Sie im Feld **Device Port** die Nummer ein, die Ihr Android-Gerät hören soll, beispielsweise `3333` .  
     
 ### Konfigurieren von Proxyeinstellungen auf Ihrem Gerät  
 
@@ -106,7 +99,7 @@ Als nächstes müssen Sie Ihr Android-Gerät für die Kommunikation mit dem Prox
 1.  Wählen Sie das **Proxy** -Menü und dann **manuell**aus.  
 1.  Geben Sie für das Feld **Proxy Hostname** ein `localhost` .  
 1.  Geben Sie im Feld **Proxy Port** die Portnummer ein, die Sie im vorherigen Abschnitt für den **Geräteanschluss** eingegeben haben.  
-1.  Wählen Sie **Speichern**.  
+1.  Wählen Sie **Speichern**aus.  
     
 Mit diesen Einstellungen leitet Ihr Gerät alle seine Anforderungen an den Proxy auf dem Entwicklungscomputer weiter.  Der Proxy stellt Anforderungen für Ihr Gerät, damit Anforderungen an Ihre angepasste lokale Domäne ordnungsgemäß aufgelöst werden.  
 
@@ -117,11 +110,10 @@ Wenn Ihr Webserver von einem nicht standardmäßigen Port ausgeführt wird, denk
 > [!TIP]
 > Wenn Sie das normale Browsen fortsetzen möchten, denken Sie daran, die Proxyeinstellungen auf Ihrem Android-Gerät zurückzusetzen, nachdem Sie die Verbindung mit dem Entwicklungscomputer getrennt haben.  
 
-<!--  
-  
+## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
--->  
 <!-- links -->  
 
 [RemoteDebuggingGettingStarted]: ./index.md "Erste Schritte mit dem Remotedebuggen von Android-Geräten | Microsoft docs"  

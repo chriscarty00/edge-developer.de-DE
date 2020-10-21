@@ -3,16 +3,16 @@ description: Aktivieren Sie "Inhalts Skripts als Bibliothekscode markieren" aus 
 title: Markieren von Inhaltsskripts als Bibliothekscode
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 517e0a4e944f32d41451a0a5d9d7baa91ff97212
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 2a9bca703004b6232bef857d7b9e2f45458db52d
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992792"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124698"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -32,7 +32,7 @@ ms.locfileid: "10992792"
 
 Wenn Sie den Quellcode **-Panel von** Microsoft Edge devtools verwenden, um Code zu [durchlaufen][DevToolsJavascriptStepThroughCode], können Sie manchmal auf Code pausieren, den Sie nicht erkennen.  Wahrscheinlich haben Sie den Code für eine der installierten Microsoft-Edge-Erweiterungen angehalten.  Führen Sie die folgenden Schritte aus, um den Erweiterungscode nicht zu unterbrechen.  
 
-1.  Öffnen Sie devtools, wählen Sie **anpassen und Steuern von devtools** \ ( `...` \) aus, und wählen Sie **Einstellungen**aus.  Sie können die **Einstellungen** auch öffnen, indem Sie auswählen `F1` .  
+1.  Öffnen Sie devtools, wählen Sie **anpassen und Steuer devtools** \ ( `...` \) aus, und wählen Sie **Einstellungen**aus.  Sie können die **Einstellungen** auch öffnen, indem Sie auswählen `F1` .  
 
 1.  Wählen Sie die Registerkarte " **Bibliothekscode** " aus, um den Abschnitt " **Framework Library Code** " von **Settings**zu öffnen.  
 1.  Aktivieren Sie das Kontrollkästchen **Inhalts Skripts als Bibliothekscode markieren** .  

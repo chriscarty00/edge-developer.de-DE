@@ -3,16 +3,16 @@ description: Entdecken Sie neue Debugging-Workflows in dieser umfassenden Refere
 title: JavaScript-Debugging-Referenz
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: f11dfb52e97dcec20d1e6c4f3adeee7010857a33
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: c1d6b9d301ff2bc696900b48d80a3d5352f8fd58
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993422"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124803"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,7 +28,7 @@ ms.locfileid: "10993422"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# JavaScript-febugging-Referenz  
+# JavaScript-Debugging-Referenz  
 
 Entdecken Sie neue Debugging-Workflows mit der folgenden umfassenden Referenz zu den Microsoft Edge DevTools-Debugging-Features.  
 
@@ -73,7 +73,7 @@ Sie sind angehalten `A` .  Wenn Sie den **Schritt über**drücken, führt devtoo
 Wenn **Sie in einer** Codezeile mit einem Funktionsaufruf, der sich auf das zu debuggende Problem bezieht, angehalten haben, klicken Sie auf die Schaltfläche \ ( ![ Schritt in ][ImageStepIntoIcon] \), um diese Funktion weiter zu untersuchen.  
 
 :::image type="complex" source="../media/javascript-source-page-debugger-step-into-next-function-call.msft.png" alt-text="Wählen Sie Schritt über" lightbox="../media/javascript-source-page-debugger-step-into-next-function-call.msft.png":::
-   **Schritt in** auswählen  
+   Wählen Sie **Schritt in**  
 :::image-end:::  
 
 Nehmen wir beispielsweise an, dass Sie den folgenden Codeausschnitt Debuggen.  
@@ -122,7 +122,7 @@ Wenn Sie eine Long-Funktion Debuggen, gibt es möglicherweise viel Code, der sic
 
 Sie können alle Zeilen durchlaufen, aber das ist mühsam.  Sie können festlegen, dass in der Zeile, in der Sie interessiert sind, ein Haltepunkt für den Code in der Zeile gesetzt wird, und dann auf die Schaltfläche **Skriptausführung** \ ( ![ Skriptausführung fortsetzen ][ImageResumeScriptExecutionIcon] \) klicken, aber es gibt eine schnellere Möglichkeit.  
 
-Klicken Sie mit der rechten Maustaste auf die Codezeile, für die Sie sich interessieren, und wählen Sie **hier weiter**.  DevTools führt den gesamten Code bis zu diesem Punkt aus und hält dann in dieser Zeile an.  
+Klicken Sie mit der rechten Maustaste auf die Codezeile, an der Sie interessiert sind, und wählen Sie **hier weiter**.  DevTools führt den gesamten Code bis zu diesem Punkt aus und hält dann in dieser Zeile an.  
 
 :::image type="complex" source="../media/javascript-source-page-continue-to-here.msft.png" alt-text="Wählen Sie Schritt über" lightbox="../media/javascript-source-page-continue-to-here.msft.png":::
    Wählen Sie **hier weiter**  
@@ -144,7 +144,7 @@ function factorial(n) {
 }
 ```  
 
-Sie sind angehalten `A` .  Nachdem Sie auf **Frame neu starten**geklickt haben, sollten Sie angehalten werden `B` , ohne einen Haltepunkt festzulegen oder die **Ausführung von Skript Fortsetzung**zu drücken.  
+Sie sind angehalten `A` .  Nachdem Sie " **Frame neu starten**" ausgewählt haben, sollten Sie angehalten werden `B` , ohne einen Haltepunkt festzulegen oder die **Skriptausführung fortzusetzen**.  
 
 :::image type="complex" source="../media/javascript-source-page-debugger-restart-frame.msft.png" alt-text="Wählen Sie Schritt über" lightbox="../media/javascript-source-page-debugger-restart-frame.msft.png":::
    Wählen Sie **Frame neu starten** aus.  
@@ -152,7 +152,7 @@ Sie sind angehalten `A` .  Nachdem Sie auf **Frame neu starten**geklickt haben, 
 
 ### Fortsetzen der Skriptlaufzeit  
 
-Wenn Sie die Laufzeit nach einer Pause Ihres Skripts fortsetzen möchten, **Resume Script Execution** klicken Sie auf die ![ Schaltfläche "Skriptausführung fortsetzen ][ImageResumeScriptExecutionIcon] \".  DevTools führt das Skript bis zum nächsten Haltepunkt aus, sofern vorhanden.  
+Wenn Sie die Laufzeit nach einer Pause Ihres Skripts fortsetzen möchten, wählen **Sie die** ![ ][ImageResumeScriptExecutionIcon] Schaltfläche "Skriptausführung fortsetzen \" aus.  DevTools führt das Skript bis zum nächsten Haltepunkt aus, sofern vorhanden.  
 
 :::image type="complex" source="../media/javascript-sources-get-started-js-resume-script-runtime.msft.png" alt-text="Wählen Sie Schritt über" lightbox="../media/javascript-sources-get-started-js-resume-script-runtime.msft.png":::
    Auswählen der **Skriptausführung fortsetzen**  
@@ -160,7 +160,7 @@ Wenn Sie die Laufzeit nach einer Pause Ihres Skripts fortsetzen möchten, **Resu
 
 #### Erzwingen der Skriptlaufzeit  
 
-Wenn Sie alle Haltepunkte ignorieren und das Fortsetzen des Skripts erzwingen möchten, klicken Sie auf die Schaltfläche Skriptausführung **fort** setzen \ ( ![ Fortsetzen der Skriptausführung ][ImageResumeScriptExecutionIcon] \), und wählen Sie dann die Schaltfläche Skriptausführung **erzwingen** \ ( ![ Skriptausführung erzwingen ][ImageForceScriptExecutionIcon] \) aus.  
+Wenn Sie alle Haltepunkte ignorieren und die Fortsetzung des Skripts erzwingen möchten, wählen Sie die Schaltfläche Skriptausführung **Ausführen \ (** ![ Fortsetzen der Skriptausführung \) und dann die Schaltfläche Skriptausführung erzwingen \ ][ImageResumeScriptExecutionIcon] **Force script execution** ( ![ Skriptausführung erzwingen ][ImageForceScriptExecutionIcon] \) aus, und halten Sie sie gedrückt.  
 
 :::image type="complex" source="../media/javascript-sources-get-started-js-force-script-runtime.msft.png" alt-text="Wählen Sie Schritt über" lightbox="../media/javascript-sources-get-started-js-force-script-runtime.msft.png":::
    Auswählen der **Erzwingung der Skriptausführung**  
@@ -168,13 +168,13 @@ Wenn Sie alle Haltepunkte ignorieren und das Fortsetzen des Skripts erzwingen m�
 
 ### Ändern des Thread Kontexts  
 
-Wenn Sie mit webarbeitern oder Dienst Mitarbeitern arbeiten, klicken Sie auf einen im Bereich **Threads** aufgelisteten Kontext, um zu diesem Kontext zu wechseln.  Das blaue Pfeilsymbol steht für den aktuell ausgewählten Kontext.  
+Wenn Sie mit webarbeitern oder Dienst Mitarbeitern arbeiten, wählen Sie einen im Bereich **Threads** aufgeführten Kontext aus, um zu diesem Kontext zu wechseln.  Das blaue Pfeilsymbol steht für den aktuell ausgewählten Kontext.  
 
 :::image type="complex" source="../media/javascript-sources-main-min-js-threads.msft.png" alt-text="Wählen Sie Schritt über" lightbox="../media/javascript-sources-main-min-js-threads.msft.png":::
    Der Bereich " **Threads** "  
 :::image-end:::  
 
-Nehmen wir beispielsweise an, dass Sie sowohl in Ihrem Hauptskript als auch in Ihrem Dienstmitarbeiter Skript an einem Haltepunkt angehalten werden.  Sie möchten die lokalen und globalen Eigenschaften für den Service Worker-Kontext anzeigen, aber der Bereich " **Quellen** " zeigt den Hauptskript Kontext an.  Durch Klicken auf den Eintrag Service Worker im Bereich **Threads** sollten Sie in der Lage sein, zu diesem Kontext zu wechseln.  
+Nehmen wir beispielsweise an, dass Sie sowohl in Ihrem Hauptskript als auch in Ihrem Dienstmitarbeiter Skript an einem Haltepunkt angehalten werden.  Sie möchten die lokalen und globalen Eigenschaften für den Service Worker-Kontext anzeigen, aber der Bereich " **Quellen** " zeigt den Hauptskript Kontext an.  Wenn Sie im Bereich **Threads** den Eintrag Service Worker auswählen, sollten Sie in der Lage sein, zu diesem Kontext zu wechseln.  
 
 ## Anzeigen und Bearbeiten von lokalen, Closure-und globalen Eigenschaften  
 
@@ -193,7 +193,7 @@ Wenn Sie in einer Codezeile angehalten wurden, verwenden Sie den Bereich **Anruf
 
 <!--If you are working with async code, check the **Async** checkbox to enable async call stacks.  -->  
 
-Klicken Sie auf einen Eintrag, um zu der Codezeile zu springen, in der die Funktion aufgerufen wurde.  Das blaue Pfeilsymbol stellt dar, welche Funktion devtools derzeit markiert.  
+Wählen Sie einen Eintrag aus, um zu der Codezeile zu springen, in der die Funktion aufgerufen wurde.  Das blaue Pfeilsymbol stellt dar, welche Funktion devtools derzeit markiert.  
 
 :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty.msft.png" alt-text="Wählen Sie Schritt über" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty.msft.png":::
    Der Bereich " **Anrufliste** "  
@@ -267,15 +267,15 @@ Führen Sie die folgenden Aktionen aus, um ein einzelnes Skript oder Muster von 
 
 1.  Öffnen Sie [Einstellungen][DevToolsCustomize].  
 1.  Wechseln Sie zur Registerkarte **Bibliothekscode** .  
-1.  Klicken Sie auf **Muster hinzufügen**.  
+1.  Wählen Sie **Muster hinzufügen**aus.  
 1.  Geben Sie den Skriptnamen oder ein Regex-Muster von Skriptnamen ein, das als **Bibliothekscode**markiert werden soll.  
-1.  Klicken Sie auf **Hinzufügen**.  
+1.  Wählen Sie **Hinzufügen**.  
     
     :::image type="complex" source="../media/javascript-framework-library-code.msft.png" alt-text="Wählen Sie Schritt über" lightbox="../media/javascript-framework-library-code.msft.png":::
        Markieren eines Skripts als **Bibliothekscode** aus **Einstellungen**  
     :::image-end:::  
     
-## Ausführen von Codeausschnitten von Debugcode auf jeder Seite   
+## Ausführen von Codeausschnitten von Debugcode auf jeder Seite  
 
 Wenn Sie immer wieder denselben Debugcode in der Konsole ausführen, sollten Sie Snippets in Betracht gezogen sehen.  Ausschnitte sind Lauf Zeit Skripte, die Sie in devtools erstellen, speichern und ausführen.  
 
@@ -289,19 +289,19 @@ Verwenden Sie den **Überwachungs** Bereich, um die Werte benutzerdefinierter Au
    Der **Überwachungs** Bereich  
 :::image-end:::  
 
-*   Klicken Sie auf die Schaltfläche **Ausdruck hinzufügen** \ ( ![ Ausdruck hinzufügen ][ImageAddExpressionIcon] \), um einen neuen Überwachungsausdruck zu erstellen.  
-*   Klicken Sie auf die Schaltfläche **Aktualisieren** \ ( ![ aktualisieren ][ImageRefreshIcon] \), um die Werte aller vorhandenen Ausdrücke zu aktualisieren.  Werte werden beim Durchlaufen des Codes automatisch aktualisiert.  
-*   Zeigen Sie mit der Maus auf einen Ausdruck, und klicken Sie auf die Schaltfläche zum **Löschen** des Ausdrucks \ ( ![ Ausdruck löschen ][ImageDeleteExpressionIcon] ), um Sie zu löschen.  
+*   Wählen Sie die Schaltfläche **Ausdruck hinzufügen** \ ( ![ Ausdruck hinzufügen ][ImageAddExpressionIcon] \) aus, um einen neuen Überwachungsausdruck zu erstellen.  
+*   Wählen Sie die Schaltfläche **Aktualisieren** \ ( ![ aktualisieren ][ImageRefreshIcon] \) aus, um die Werte aller vorhandenen Ausdrücke zu aktualisieren.  Werte werden beim Durchlaufen des Codes automatisch aktualisiert.  
+*   Zeigen Sie mit der Maus auf einen Ausdruck, und wählen Sie die Schaltfläche **Ausdruck löschen** \ ( ![ Ausdruck löschen ][ImageDeleteExpressionIcon] \) aus, um Sie zu löschen.  
 
 ## Erstellen einer lesbaren minimierte-Datei  
 
-Klicken Sie auf die Schaltfläche **Format** \ ( ![ Format ][ImageFormatIcon] \), um eine minimierte-Datei menschlich lesbar zu machen.  
+Wählen Sie die Schaltfläche **Format** \ ( ![ Format ][ImageFormatIcon] \) aus, um eine minimierte-Datei menschlich lesbar zu machen.  
 
 :::image type="complex" source="../media/javascript-sources-html-non-minified.msft.png" alt-text="Wählen Sie Schritt über" lightbox="../media/javascript-sources-html-non-minified.msft.png":::
    Schaltfläche " **Format** "  
 :::image-end:::  
 
-## Bearbeiten eines Skripts   
+## Bearbeiten eines Skripts  
 
 Wenn Sie einen Fehler beheben, möchten Sie häufig einige Änderungen an Ihrem JavaScript-Code testen.  Sie müssen die Änderungen nicht in einem externen Editor oder in einer IDE vornehmen und die Seite dann erneut laden.  Sie können Ihr Skript in devtools bearbeiten.  
 
@@ -309,15 +309,15 @@ Führen Sie die folgenden Aktionen aus, um ein Skript zu bearbeiten.
 
 1.  Öffnen Sie die Datei im Bereich " **Editor** " des Bereichs " **Quellen** ".  
 1.  Nehmen Sie die gewünschten Änderungen im Bereich " **Editor** " vor.  
-1.  Drücken Sie `Ctrl` + `S` \ (Windows \) oder `Command` + `S` \ (macOS \), um zu speichern.  DevTools-Patches die gesamte JS-Datei in das JavaScript-Modul von Microsoft Edge.  
+1.  Wählen Sie `Ctrl` + `S` \ (Windows, Linux \) oder `Command` + `S` \ (macOS \) aus, um Sie zu speichern.  DevTools-Patches die gesamte JS-Datei in das JavaScript-Modul von Microsoft Edge.  
     
     :::image type="complex" source="../media/javascript-sources-html-minified.msft.png" alt-text="Wählen Sie Schritt über" lightbox="../media/javascript-sources-html-minified.msft.png":::
        Der Bereich " **Editor** "  
     :::image-end:::  
      
-## JavaScript deaktivieren   
+## JavaScript deaktivieren  
 
-Weitere Informationen finden Sie unter [Deaktivieren von JavaScript mit Microsoft Edge devtools][DevToolsJavascriptDisable].  
+Navigieren Sie, um [JavaScript mit Microsoft Edge devtools zu deaktivieren][DevToolsJavascriptDisable].  
 
 ## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 

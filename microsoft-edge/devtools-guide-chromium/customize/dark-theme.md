@@ -3,16 +3,16 @@ description: So aktivieren Sie das dunkle Design in Microsoft Edge devtools
 title: Aktivieren des dunklen Designs in Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 4369d06fff8372677910e2807daa3b23c2c0e333
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 7eaedc59bf1b8ab592612f3a2006a0aac1dfbe9e
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993023"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125097"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,13 +28,7 @@ ms.locfileid: "10993023"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Aktivieren des dunklen Designs in Microsoft Edge devtools   
-
-  
+# Aktivieren des dunklen Designs in Microsoft Edge devtools  
 
 Sie können ein dunkles Design in den [Einstellungen](#set-up-dark-theme-from-settings) oder im [Befehlsmenü](#set-up-dark-theme-from-the-command-menu)aktivieren.  
 
@@ -42,9 +36,9 @@ Sie können ein dunkles Design in den [Einstellungen](#set-up-dark-theme-from-se
    Das dunkle Design  
 :::image-end:::  
 
-## Einrichten eines dunklen Designs aus Einstellungen   
+## Einrichten eines dunklen Designs aus Einstellungen  
 
-1.  Klicken Sie auf **anpassen und Steuern von devtools** `...` , und wählen Sie dann **Einstellungen**aus.  Sie können die **Einstellungen** auch öffnen, indem Sie auf klicken `F1` .  
+1.  Wählen Sie **anpassen und Steuern devtools** \ ( `...` \) aus, und wählen Sie dann **Einstellungen**aus.  Sie können die **Einstellungen** auch öffnen, indem Sie auf klicken `F1` .  
     
     :::image type="complex" source="../media/customize-options-settings.msft.png" alt-text="Das dunkle Design" lightbox="../media/customize-options-settings.msft.png":::
        **Einstellungen** öffnen  
@@ -56,20 +50,18 @@ Sie können ein dunkles Design in den [Einstellungen](#set-up-dark-theme-from-se
        **Voreinstellungen**  
     :::image-end:::  
 
-## Einrichten eines dunklen Designs über das Befehlsmenü   
+## Einrichten eines dunklen Designs über das Befehlsmenü  
 
 1.  [Öffnen des Befehlsmenüs][DevtoolsCommandMenu]  
-1.  Beginnen `dark` Sie mit der Eingabe, wählen Sie den Befehl **zum dunklen Design wechseln** aus, und drücken Sie dann `Enter` , um den Befehl auszuführen.  
+1.  Beginnen `dark` Sie mit der Eingabe, wählen Sie den Befehl **zum dunklen Design wechseln** aus, und wählen Sie dann aus, `Enter` um den Befehl auszuführen.  
     
     :::image type="complex" source="../media/customize-command-menu-dark.msft.png" alt-text="Das dunkle Design" lightbox="../media/customize-command-menu-dark.msft.png":::
        Der Befehl ' dunkler Design '  
     :::image-end:::  
     
-<!--  
-   
+## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

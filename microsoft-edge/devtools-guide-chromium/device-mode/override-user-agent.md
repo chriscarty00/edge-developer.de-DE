@@ -3,16 +3,16 @@ description: Öffnen Sie die Registerkarte Netzwerkbedingungen, deaktivieren Sie
 title: Überschreiben der Benutzer-Agent-Zeichenfolge von Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: ecaa1247824e5c3acb07a2c631feab30d25aba8d
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: befbe186a5992c651f877a18f1c3232bf212394a
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992925"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124950"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -32,13 +32,13 @@ ms.locfileid: "10992925"
 
 So überschreiben Sie die Zeichenfolge des [Benutzer-Agents][MDNUserAgent] von Microsoft Edge devtools:  
 
-1.  Drücken Sie `Control` + `Shift` + `P` \ (Windows \) oder `Command` + `Shift` + `P` \ (macOS \), um das **Befehlsmenü**zu öffnen.  
+1.  Wählen Sie `Control` + `Shift` + `P` \ (Windows, Linux \) oder `Command` + `Shift` + `P` \ (macOS \) aus, um das **Befehlsmenü**zu öffnen.  
     
     :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="Das Befehlsmenü" lightbox="../media/device-mode-console-command-menu.msft.png":::
        Das **Befehlsmenü**  
     :::image-end:::  
     
-1.  Geben `network conditions` Sie **Netzwerkbedingungen anzeigen**ein, und drücken Sie, `Enter` um die Registerkarte **Netzwerkbedingungen** zu öffnen.  
+1.  Geben `network conditions` Sie **Netzwerkbedingungen anzeigen**ein, und wählen Sie aus, `Enter` um die Registerkarte **Netzwerkbedingungen** zu öffnen.  
 1.  Deaktivieren Sie im Abschnitt **Benutzer-Agent** das Kontrollkästchen **automatisch auswählen** .  
     
     :::image type="complex" source="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png" alt-text="Das Befehlsmenü" lightbox="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png":::
@@ -46,7 +46,7 @@ So überschreiben Sie die Zeichenfolge des [Benutzer-Agents][MDNUserAgent] von M
     :::image-end:::  
     
 1.  Wählen Sie eine Benutzer-Agent-Zeichenfolge aus der Liste aus, oder geben Sie eine eigene benutzerdefinierte Zeichenfolge ein.  
-
+    
 ## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  

@@ -3,16 +3,16 @@ description: Verwenden Sie die Konsolen-API, um Nachrichten in die Konsole zu sc
 title: Konsolen-API-Referenz
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 684c0a1e42357ceca0a0295859e64447251f191a
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 38fb3ee2345530775423ac3ec8e53e0d8de76eaf
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993254"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125286"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -30,7 +30,7 @@ ms.locfileid: "10993254"
 
 # Konsolen-API-Referenz  
 
-Verwenden Sie die API-Methoden für die Konsole, um Nachrichten aus Ihrem JavaScript in die Konsole zu schreiben.  Eine interaktive Einführung in das Thema finden Sie unter [Erste Schritte mit der Protokollierung von Nachrichten in der Konsole][DevtoolsConsoleLog].  Informationen zu den Convenience `debug()` -Methoden `monitorEvents()` , die nur im **Konsolen** Bereich verfügbar sind, finden Sie unter [Console Utilities API Reference][DevtoolConsoleUtilities].  
+Verwenden Sie die API-Methoden für die Konsole, um Nachrichten aus Ihrem JavaScript in die Konsole zu schreiben.  Eine interaktive Einführung in das Thema finden [Sie unter Erste Schritte mit der Protokollierung von Nachrichten in der Konsole][DevtoolsConsoleLog].  Navigieren Sie für die Convenience `debug()` `monitorEvents()` -Methoden, wie Sie nur im **Konsolen** Bereich verfügbar sind, zur [API-Referenz für Konsolen Dienstprogramme][DevtoolConsoleUtilities].  
 
 ---  
 
@@ -391,6 +391,10 @@ console.warn('warn');
    Abbildung 13: das Ergebnis des `console.warn()` Beispiels  
 :::image-end:::  
 
+## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+
 <!-- links -->  
 
 [DevtoolsConsoleLog]: /microsoft-edge/devtools-guide-chromium/console/log "Erste Schritte mit der Protokollierung von Nachrichten in der Konsole"  
@@ -399,7 +403,7 @@ console.warn('warn');
 [DevtoolsConsoleReferencePersist]: /microsoft-edge/devtools-guide-chromium/console/reference#persist-messages-across-page-loads "Beibehalten von Nachrichten über Seitenlasten – Konsolen Referenz"  
 [DevtoolsConsoleReferenceLevel]: /microsoft-edge/devtools-guide-chromium/console/reference#filter-by-log-level "Filtern nach Protokollebene – Konsolen Referenz"  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chrom)-Entwickler Tools"  
+[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium)-Entwicklertools"  
 
 > [!NOTE]
 > Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  

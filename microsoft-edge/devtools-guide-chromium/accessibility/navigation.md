@@ -3,16 +3,16 @@ description: Leitfaden zur Navigation in Microsoft Edge devtools mit Hilfstechno
 title: Navigieren in Microsoft Edge devtools mit Hilfstechnologien
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 9a9accd043d05d1c55b1e79ce580f7b45711118f
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: f4ec63a0d432925b7db99ce695db66dd61f8bcf1
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993191"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125293"
 ---
 <!-- Copyright Rob Dodson 
 
@@ -38,7 +38,7 @@ Die Barrierefreiheit von devtools ist eine Work-in-Progress-Funktion.  Einige Pa
 
 Bevor Sie beginnen, hilft es, ein geistiges Modell für die Strukturierung der devtools-Benutzeroberfläche zu haben.  DevTools ist in eine Reihe von Tafeln unterteilt, die in einem [Aria-TabList][W3CWaiAriaTablist]organisiert sind.  
 
-Beispiel:  
+Zum Beispiel:  
 
 *   Im **Element** Fenster können Sie [DOM-Knoten] [DevtoolsDomIndexNavigateDomTreeKeyboard] oder [CSS][DevtoolsCssIndex][anzeigen und ändern.  
 *   Im [Konsolenfeld][DevtoolsConsoleIndex] können Sie JavaScript-Protokolle und Live-Bearbeitungs Objekte lesen.  
@@ -52,14 +52,14 @@ Die [devtools-Tastenkombinationen] [DevtoolsShortcuts] ist ein hilfreiches Cheat
 
 ## Open DevTools  
 
-Informationen zu den ersten Schritten finden Sie unter [Open Microsoft Edge devtools] [DevtoolsOpen].  Es gibt eine Reihe von Möglichkeiten, devtools zu öffnen, entweder über Tastenkombinationen oder Menüelemente.  
+Navigieren Sie zu [Open Microsoft Edge devtools] [DevtoolsOpen], um zu beginnen.  Es gibt eine Reihe von Möglichkeiten, devtools zu öffnen, entweder über Tastenkombinationen oder Menüelemente.  
 
 ## Navigieren zwischen Bereichen  
 
 ### Navigieren mithilfe der Tastatur  
 
-*   Wenn devtools geöffnet ist, wählen Sie `Control` + `]` \ (Windows \) oder `Command` + `]` \ (macOS \) aus, um den Fokus auf das nächste Fenster zu legen.  
-*   Wählen Sie `Control` + `[` \ (Windows \) oder `Command` + `[` \ (macOS \) aus, um den Fokus auf das vorherige Panel zu legen.  
+*   Wenn devtools geöffnet ist, wählen Sie `Control` + `]` \ (Windows, Linux \) oder `Command` + `]` \ (macOS \) aus, um den Fokus auf das nächste Fenster zu legen.  
+*   Wählen Sie `Control` + `[` \ (Windows, Linux \) oder `Command` + `[` \ (macOS \) aus, um den Fokus auf das vorherige Panel zu legen.  
 *   Es ist auch möglich, den `Shift` + `Tab` Fokus in das Aria- [TabList][W3CWaiAriaTablist] eines Panels zu verschieben und die Pfeiltasten zum Ändern von Panels zu verwenden, obwohl es möglicherweise schneller ist, die zuvor erwähnten Tastenkombinationen zu verwenden.  
 
 **Bekannte Probleme**  
@@ -71,7 +71,7 @@ Informationen zu den ersten Schritten finden Sie unter [Open Microsoft Edge devt
 
 Wenn Sie ein bestimmtes Panel fokussieren möchten, verwenden Sie das [Befehlsmenü][DevtoolsCommandMenuIndex]:  
 
-1.  Wenn devtools geöffnet ist, wählen Sie `Control` + `Shift` + `P` \ (Windows \) oder `Command` + `Shift` + `P` \ (macOS \) aus, um das **Befehlsmenü**zu öffnen.  
+1.  Wählen Sie bei geöffnetem devtools `Control` + `Shift` + `P` \ (Windows, Linux \) oder `Command` + `Shift` + `P` \ (macOS \) aus, um das **Befehlsmenü**zu öffnen.  
     Das **Befehl-Menü** ist ein Fuzzy-Such-AutoVervollständigen-Kombinationsfeld.  
 1.  Geben Sie den Namen des Panels ein, das Sie öffnen möchten, und navigieren Sie dann mithilfe der `Down Arrow` auf der Tastatur zur richtigen Option.  
 1.  Wählen Sie aus `Enter` , um einen Befehl auszuführen.  
@@ -92,7 +92,7 @@ Führen Sie die folgenden Aktionen aus, um das Panel **Elemente** zu öffnen.
 1.  Simulieren Sie mit der rechten Maustaste auf das Element, um das Kontextmenü zu öffnen.  
 1.  Wählen Sie die Option über **prüfen** aus.  Dadurch [wird das Element Fenster geöffnet, und das Element wird in der DOM-Struktur fokussiert] [DevtoolsDomIndexViewDomNodes].  
 
-Die **DOM-Struktur** wird als Aria- [Struktur][W3CWaiAriaTree]angelegt.  Ein Beispiel finden Sie unter [Navigieren in der **DOM-Struktur** mit einer Tastatur] [DevtoolsDomIndexNavigateDomTreeKeyboard].  
+Die **DOM-Struktur** wird als Aria- [Struktur][W3CWaiAriaTree]angelegt.  Navigieren Sie in einem Beispiel zu [Navigieren in der **DOM-Struktur** mit einer Tastatur] [DevtoolsDomIndexNavigateDomTreeKeyboard].  
 
 ### Kopieren des Codes für ein Element in der DOM-Struktur  
 
@@ -108,7 +108,7 @@ Die **DOM-Struktur** wird als Aria- [Struktur][W3CWaiAriaTree]angelegt.  Ein Bei
 
 *   Wenn der Fokus auf einem Knoten in der **DOM-Struktur**liegt, wählen Sie ihn aus, `Enter` um ihn bearbeitbar zu machen.  
 *   Wählen Sie diese Option aus `Tab` , um zwischen Attributwerten zu wechseln.  Wenn Sie "Leerzeichen" hören, befinden Sie sich innerhalb einer leeren Texteingabe und können einen neuen Attributwert eingeben.  
-*   Wählen Sie `Control` + `Enter` \ (Windows \) oder `Command` + `Enter` \ (macOS \) aus, um die Änderung zu übernehmen und den gesamten Inhalt des Elements zu hören.  
+*   Wählen Sie `Control` + `Enter` \ (Windows, Linux \) oder `Command` + `Enter` \ (macOS \) aus, um die Änderung zu übernehmen und den gesamten Inhalt des Elements zu hören.  
 
 **Bekannte Probleme**  
 
@@ -118,9 +118,9 @@ Die **DOM-Struktur** wird als Aria- [Struktur][W3CWaiAriaTree]angelegt.  Ein Bei
 
 *   Wenn der Fokus auf einem Knoten in der **DOM-Struktur**liegt, wählen Sie ihn aus, `Enter` um ihn bearbeitbar zu machen.  
 *   Wählen Sie diese Option aus `Tab` , um zwischen Attributwerten zu wechseln.  Wenn Sie beispielsweise den Namen des Elements hören, `h2` befinden Sie sich innerhalb einer Texteingabe und können den Typ des Elements ändern.  
-*   Wählen Sie `Control` + `Enter` \ (Windows \) oder `Command` + `Enter` \ (macOS \) aus, um die Änderung zu übernehmen.  
+*   Wählen Sie `Control` + `Enter` \ (Windows, Linux \) oder `Command` + `Enter` \ (macOS \) aus, um die Änderung zu übernehmen.  
 
-Wenn Sie beispielsweise `h3` `Control` + `Enter` \ (Windows \) oder `Command` + `Enter` \ (macOS \) eingeben und auswählen, ändern sich die Start-und Endtags des `h3` Elements.  
+Wenn Sie beispielsweise `h3` `Control` + `Enter` \ (Windows, Linux \) oder `Command` + `Enter` \ (macOS \) eingeben und auswählen, ändern sich die Start-und Endtags des `h3` Elements.  
 
 ## Registerkarten des Elements-Panels  
 
@@ -152,7 +152,7 @@ Da alle Formatvorlagen Tools auf die eine oder andere Weise wieder mit dem Berei
 *   Wählen Sie diese Option aus `Tab` , um zwischen bearbeitbaren Versionen jeder CSS-Eigenschaft und den entsprechenden Werten zu wechseln.  Am Ende jedes Formatvorlagen Blocks befindet sich ein leeres bearbeitbares Textfeld, das Sie zum Hinzufügen weiterer CSS-Eigenschaften verwenden können.  
 *   Sie können weiterhin auswählen, `Tab` um die Liste der Formatvorlagen zu durchlaufen, oder Sie können `Escape` den Modus beenden und zur Navigation durch die Pfeiltasten zurückkehren.  
 
-Weitere Tastenkombinationen finden Sie unter [Tastatur Referenz für Formatvorlagenbereich] [DevtoolsShortcutsStylesPaneKeyboard].  
+Wenn Sie weitere Tastenkombinationen verwenden möchten, navigieren Sie zu [Formatvorlagenbereich-Tastatur Referenz] [DevtoolsShortcutsStylesPaneKeyboard].  
 
 **Bekannte Probleme**  
 
@@ -236,7 +236,7 @@ Der Überwachungsbericht ist in Abschnitte gegliedert, die den einzelnen Überwa
 
 Verwenden Sie zum Ausführen einer neuen Überwachung `Shift` + `Tab` den Bericht, und suchen Sie nach der Schaltfläche **Audit durchführen** .  
 
-## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen
+## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

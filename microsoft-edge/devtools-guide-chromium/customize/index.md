@@ -3,16 +3,16 @@ description: Eine Liste der Möglichkeiten zum Anpassen der Microsoft Edge-devto
 title: Anpassen von Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 238ee27a75aa94bf986d41f00a98e5eacc806d7f
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 91f353c6b6c4dea2bc6764a972acf2ad52b1f151
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992995"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125083"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,46 +28,42 @@ ms.locfileid: "10992995"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Anpassen von Microsoft Edge devtools   
+# Anpassen von Microsoft Edge devtools  
 
   
 
 Auf dieser Seite werden die Möglichkeiten zum Anpassen der Microsoft Edge-devtools.  
 
-## Einstellungen   
+## Einstellungen  
 
 **Einstellungen**  >  **Einstellungen** enthält viele Optionen zum Anpassen von devtools.  
 
 Führen Sie eine der folgenden Aktionen aus, um die Einstellungen zu öffnen:  
 
-*   Drücken Sie `F1` , während devtools den Fokus hat.  
+*   Wählen Sie aus `F1` , während devtools den Fokus hat.  
 *   Öffnen Sie das **Hauptmenü** , und wählen Sie dann **Einstellungen**aus.  
     
     :::image type="complex" source="../media/customize-settings-preferences.msft.png" alt-text="Einstellungen" lightbox="../media/customize-settings-preferences.msft.png":::
        **Einstellungen**  
     :::image-end:::  
     
-## Schublade   
+## Schublade  
 
 Die **Schublade** enthält viele versteckte Features.  
 
-Drücken Sie `Escape` , um die **Schublade**zu öffnen oder zu schließen.  
+Wählen Sie aus `Escape` , um die **Schublade**zu öffnen oder zu schließen.  
 
 :::image type="complex" source="../media/customize-drawer-open.msft.png" alt-text="Einstellungen" lightbox="../media/customize-drawer-open.msft.png":::
    Die **Schublade**  
 :::image-end:::  
 
-Klicken Sie auf **mehr** \ ( ![ mehr ][ImageMoreIcon] \), um weitere Registerkarten für die **Schublade** zu öffnen.  
+Wählen Sie **mehr** \ ( ![ mehr ][ImageMoreIcon] \) aus, um weitere Registerkarten für die **Schublade** zu öffnen.  
 
 :::image type="complex" source="../media/customize-drawer-open-more-tools.msft.png" alt-text="Einstellungen" lightbox="../media/customize-drawer-open-more-tools.msft.png":::
    Schaltfläche zum Öffnen der Registerkarten für die **Schublade**  
 :::image-end:::  
 
-## Neuanordnen von Bereichen   
+## Neuanordnen von Bereichen  
 
 Klicken Sie auf die Registerkarte, und ziehen Sie Sie, um die Reihenfolge zu ändern.  Ihre benutzerdefinierte Aktivierreihenfolge bleibt in devtools-Sitzungen erhalten.  
 
@@ -78,7 +74,7 @@ Klicken Sie auf die Registerkarte, und ziehen Sie Sie, um die Reihenfolge zu än
    Ein devtools-Fenster mit einer benutzerdefinierten Registerkartenreihenfolge  
 :::image-end:::  
 
-## Ändern der devtools-Platzierung   
+## Ändern der devtools-Platzierung  
 
 Weitere Informationen finden Sie unter [Platzierung von Microsoft Edge devtools][DevToolsPlacement].  
 
@@ -86,7 +82,7 @@ Weitere Informationen finden Sie unter [Platzierung von Microsoft Edge devtools]
    Nicht angedockte devtools  
 :::image-end:::  
 
-## Dunkles Design   
+## Dunkles Design  
 
 Siehe [Aktivieren eines dunklen Designs][DarkTheme].  
 
@@ -94,21 +90,19 @@ Siehe [Aktivieren eines dunklen Designs][DarkTheme].
    Das dunkle Design  
 :::image-end:::  
 
-## Versuche   
+## Versuche  
 
 Führen Sie die folgenden Aktionen aus, um devtools-Experimente zu aktivieren.  
 
-1.  Wechseln Sie zu `edge://flags/#enable-devtools-experiments` .  
-1.  Klicken Sie auf **Aktivieren**.  
+1.  Navigieren Sie zu `edge://flags/#enable-devtools-experiments` .  
+1.  Wählen Sie **aktivieren**aus.  
 1.  Klicken Sie unten auf der Seite auf **neu starten**.  
 
-Wenn Sie devtools das nächste Mal öffnen, wird eine neue Seite mit dem Namen **Experimente** in [Einstellungen](#settings)angezeigt.  
+Wenn Sie devtools das nächste Mal öffnen, wird eine neue Seite mit dem Namen " **Experiments** " in " [Einstellungen](#settings)" angezeigt.  
 
-<!--  
-   
+## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
-  
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

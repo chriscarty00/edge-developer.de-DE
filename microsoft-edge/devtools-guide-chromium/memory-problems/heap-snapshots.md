@@ -3,16 +3,16 @@ description: Erfahren Sie, wie Sie Heap-Snapshots mit dem Microsoft Edge devtool
 title: Aufzeichnen von Heap-Snapshots
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 15692b0258de6db66c0b58a2659348a6e849aaca
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 9762cb1d4932ce1a5d0b1c3944aa0b85d78b1060
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993471"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125461"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -36,7 +36,7 @@ Der Microsoft Edge devtools-Heap Profiler zeigt die Speicherverteilung nach den 
 
 ## Erstellen einer Momentaufnahme  
 
-Wählen Sie im **Speicher** Panel **Schnappschuss aufnehmen**und dann auf **Start**.  Sie können auch `Ctrl` + `E` \ (Windows \) oder `Cmd` + `E` \ (macOS \) drücken.  
+Wählen Sie im **Speicher** Panel **Schnappschuss aufnehmen**und dann **Start**aus.  Sie können auch `Ctrl` + `E` \ (Windows, Linux \) oder `Cmd` + `E` \ (macOS \) auswählen.  
 
 :::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png" alt-text="Auswählen des Profil Erstellungs Typs" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png":::
    Auswählen des Profil Erstellungs Typs  
@@ -55,7 +55,7 @@ Nachdem der Schnappschuss in devtools geladen und analysiert wurde, wird die Zah
 
 ## Löschen von Schnappschüssen  
 
-Klicken Sie auf Symbol " **alle Profile löschen** ", um Schnappschüsse zu entfernen \ (sowohl aus devtools als auch aus dem Speicher, der dem Renderer-Prozess zugeordnet ist).  
+Wählen Sie " **alle Profile löschen** " aus, um Schnappschüsse zu entfernen \ (sowohl aus devtools als auch aus dem Speicher, der dem Renderer-Prozess zugeordnet ist).  
 
 :::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png" alt-text="Auswählen des Profil Erstellungs Typs" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png":::
    Entfernen von Schnappschüssen  

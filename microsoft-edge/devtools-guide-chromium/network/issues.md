@@ -3,16 +3,16 @@ description: Informationen zum Erkennen von Netzwerkproblemen finden Sie im Netz
 title: Leitfaden zu Netzwerkproblemen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: ccd78c34a50bf235416df58aad28df9253b1b24e
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 4713dc252d428abbf5b60ee5f74a7316a102dab6
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993373"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125377"
 ---
 <!-- Copyright Kayce Basques and Jonathan Garbee
 
@@ -28,20 +28,13 @@ ms.locfileid: "10993373"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Leitfaden zu Netzwerkproblemen   
-
-
-
+# Leitfaden zu Netzwerkproblemen  
 
 Dieser Leitfaden zeigt Ihnen, wie Sie Netzwerkprobleme oder Optimierungsmöglichkeiten im Netzwerk Panel von Microsoft Edge devtools erkennen.  
 
 Informationen zu den Grundlagen der **Netzwerk** Steuerung finden Sie unter [Erste Schritte][NetworkPerformance] .  
 
-## Warteschlangen-oder verzögerte Anforderungen   
+## Warteschlangen-oder verzögerte Anforderungen  
 
 **Symptome**  
 
@@ -63,7 +56,7 @@ Es werden zu viele Anforderungen an eine einzelne Domäne gestellt.  Bei HTTP/1.
 *   Verwenden Sie http/2.  Verwenden Sie keine Domänen Splitterung mit http/2.  
 *   Entfernen oder aufschieben unnötiger Anforderungen, damit kritische Anforderungen früher heruntergeladen werden.  
     
-## Langsame Zeit bis zum ersten Byte (TTFB)   
+## Langsame Zeit bis zum ersten Byte (TTFB)  
 
 **Symptome**  
 
@@ -85,7 +78,7 @@ In der folgenden Abbildung zeigt der lange, grüne Balken im **Wasserfall** an, 
 *   Wenn die Verbindung langsam ist, sollten Sie das Hosten von Inhalten in einem CDN oder Ändern von Hostinganbieter in Frage stellen.  
 *   Wenn der Server langsam ist, empfiehlt es sich, Datenbankabfragen zu optimieren, einen Cache zu implementieren oder Ihre Serverkonfiguration zu ändern.  
     
-## Langsamer Download von Inhalten   
+## Langsamer Download von Inhalten  
 
 **Symptome**  
 
@@ -107,19 +100,17 @@ In der folgenden Abbildung bedeutet der lange, blaue Balken im **Wasserfall** ne
 *   Bedenken Sie, dass Sie Ihre Inhalte in einem CDN hosten oder Hosting-Anbieter ändern.  
 *   Senden Sie weniger Bytes, indem Sie Ihre Anforderungen optimieren.  
     
-## Wissens Spenden  
+<!--   ## Contribute knowledge  
 
-Haben Sie ein Netzwerkproblem, das diesem Leitfaden hinzugefügt werden sollte?  
+Do you have a network issue that should be added to this guide?  
 
-*   Senden Sie einen Tweet an [@EdgeDevTools][MicrosoftEdgeTweet].  
-*   Wählen Sie **Feedback senden** \ ( ![ Feedback senden ][ImageSendFeedbackIcon] \) im devtools aus, oder drücken Sie \ ( `Alt` + `Shift` + `I` Windows \) oder `Option` + `Shift` + `I` \ (macOS \), um Feedback-oder Funktionsanforderungen bereitzustellen.  
-*   [Öffnen Sie ein Problem][WebFundamentalsIssue] mit dem docs Repo.  
+*   Send a tweet to [@EdgeDevTools][MicrosoftEdgeTweet].  
+*   Choose **Send Feedback** \(![Send Feedback][ImageSendFeedbackIcon]\) in the DevTools or select `Alt`+`Shift`+`I` \(Windows, Linux\) or `Option`+`Shift`+`I` \(macOS\) to provide feedback or feature requests.  
+*   [Open an issue][WebFundamentalsIssue] on the docs repo.  -->  
     
-<!--  
-  
+## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

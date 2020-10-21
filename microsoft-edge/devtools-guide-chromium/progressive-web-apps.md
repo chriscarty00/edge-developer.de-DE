@@ -7,12 +7,12 @@ ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 7eb71d0d57d8a9227a54b921f15dfe434ad6e65b
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 80475ebcbbdd3fb04fd0196e993c933e0bdcf090
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993604"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125391"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,13 +28,7 @@ ms.locfileid: "10993604"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Debuggen von progressiven Web-Apps   
-
-
+# Debuggen von progressiven Web-Apps  
 
 Verwenden Sie den **Anwendungs** Panel, um Web App-Manifeste, Dienstmitarbeiter und Service Worker-Caches zu prüfen, zu ändern und zu debuggen.  
 
@@ -55,7 +49,7 @@ In diesem Leitfaden werden nur die fortschrittlichen Web App-Features des **Anwe
 *   Zeigen Sie den Service Worker-Cache im **Cachespeicher** Bereich an.  
 *   Heben Sie die Registrierung eines Dienstmitarbeiter auf, und löschen Sie alle Speicher und Caches mit einem einzigen Mausklick aus dem Bereich " **Speicher löschen** ".  
     
-## Web App-Manifest   
+## Web App-Manifest  
 
 Wenn Sie möchten, dass Ihre Benutzer Ihre APP ihren mobilen Homescreens hinzufügen können, benötigen Sie ein Web App-Manifest.  Das Manifest definiert, wie die APP auf dem Homescreen angezeigt wird, wo der Benutzer beim Start von Homescreen weitergeleitet wird und wie die APP beim Start aussieht.  
 
@@ -77,7 +71,7 @@ Nachdem Sie Ihr Manifest eingerichtet haben, können Sie es über den Bereich **
 *   In den Abschnitten **Identität** und **Präsentation** werden nur Felder aus der Manifestdatei in einer benutzerfreundlicheren Anzeige angezeigt.  
 *   Im Abschnitt "Symbole" werden alle von Ihnen angegebenen **Symbole** angezeigt.  
     
-<!--### Simulate Add to Homescreen events   -->
+<!--### Simulate Add to Homescreen events  -->
 
 <!--A web app can only be added to a homescreen when the site is visited at least twice, with at least five minutes between visits.  While developing or debugging your Add to Homescreen workflow, this criteria can be inconvenient.  
 The **Add to homescreen** button on the **App Manifest** pane lets you simulate Add to Homescreen events whenever you want.  -->
@@ -102,7 +96,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 
 <!--TODO:  Link Debug "remote debugging" sections when available. -->
 
-## Dienstmitarbeiter   
+## Service Workers  
 
 Service Mitarbeiter sind eine grundlegende Technologie in der zukünftigen Web-Plattform.  Dabei handelt es sich um Skripts, die der Browser im Hintergrund ausführt, und zwar unabhängig von einer Webseite.  Diese Skripts ermöglichen Ihnen den Zugriff auf Features, die keine Webseite oder Benutzerinteraktion benötigen, wie Push-Benachrichtigungen, Hintergrundsynchronisierung und Offline-Erlebnisse.  
 
@@ -142,7 +136,7 @@ Wenn der Dienstmitarbeiter Fehler verursacht, wird eine neue Bezeichnung mit dem
 <!--TODO:  Capture Service Worker Errors sample when available. -->
 <!--TODO:  Link Web "How tickle works" sections when available. -->
 
-## Dienst Worker-Caches 
+## Dienst Worker-Caches  
 
 Der Bereich **Cache-Speicher** bietet eine schreibgeschützte Liste der Ressourcen, die mit der [Cache-API][MDNWebCacheAPI]\ (Service Worker \) zwischengespeichert wurden.  
 
@@ -159,7 +153,7 @@ Wenn zwei oder mehr Caches geöffnet sind, werden Sie unter der Dropdownliste **
    Die Dropdownliste " **Cache Speicher** "  
 :::image-end:::  
 
-## Kontingent Verwendung 
+## Kontingent Verwendung  
 
 Einige Antworten innerhalb des **Cache Speicher** Bereichs werden möglicherweise als "undurchsichtig" gekennzeichnet.  Dies bezieht sich auf eine Antwort, die von einem anderen Ursprung abgerufen wurde, wie etwa von einem **CDN** oder einer Remote-API, wenn [CORS][FetchHttpCorsProtocol] nicht aktiviert ist.  
 
@@ -179,7 +173,7 @@ Verwandte Leitfäden:
     
 <!--TODO:  Link Work container storage quota for opaque responses section when available. -->
 
-## Speicher löschen 
+## Speicher löschen  
 
 Der Bereich " **Speicher löschen** " ist eine sehr nützliche Funktion, wenn Sie Progressive Web-Apps entwickeln.  In diesem Bereich können Sie die Registrierung von Dienst Mitarbeitern aufheben und alle Caches und den Speicher mit einem einzigen Klick auf die Schaltfläche Löschen.  <!--Check out the section below to learn more.  -->
 
@@ -189,7 +183,7 @@ Der Bereich " **Speicher löschen** " ist eine sehr nützliche Funktion, wenn Si
     
 <!--TODO:  Link to sections when available. -->
 
-<!--## Other Application panel guides 
+<!--## Other Application panel guides   
 
 Check out the guides below for more help on the other panes of the **Application** panel.  
 
@@ -198,13 +192,9 @@ Related Guides:
 *   [Inspect page resources](/iterate/manage-data/page-resources)  
 *   [Inspect and manage local storage and caches](/iterate/manage-data/local-storage)  -->
     
-<!--TODO  -->
+## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
-<!--  
- 
-
-
--->  
+[!INCLUDE [contact DevTools team note](./includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

@@ -3,16 +3,16 @@ description: Eine umfassende Referenz zu den Features des Microsoft Edge devtool
 title: Netzwerkanalyse Referenz
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/30/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 758623482ab2179987c6467f8e30c72d8893d710
-ms.sourcegitcommit: addfd27bb765c92880a59f259dc702f6e4e1bf28
+ms.openlocfilehash: 8123fbebadf1d43fd1460ecebf91190cac793e19
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "11092314"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125370"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -49,8 +49,8 @@ Standardmäßig zeichnet devtools alle Netzwerkanforderungen im Netzwerk Panel a
 
 Führen Sie die folgenden Schritte aus, um die Aufzeichnung von Anforderungen zu beenden.  
 
-1.  Wählen Sie auf der Registerkarte Netzwerk die Option Aufzeichnung des Netzwerk **Protokolls beenden** \ ( ![ Aufzeichnung des Netzwerkprotokolls beenden ][ImageRecordOnIcon] \) aus. **Network**  Es wird grau, um anzugeben, dass devtools keine Anforderungen mehr aufzeichnet.  
-1.  Drücken Sie `Control` + `E` \ (Windows \) oder `Command` + `E` \ (macOS \), während sich der Fokus des **Netzwerk** Panels befindet.  
+1.  Wählen Sie im Netzwerk Panel die Option **Aufzeichnung** ![ des Netzwerkprotokolls beenden aufzeichnen ][ImageRecordOnIcon] aus. **Network**  Es wird grau, um anzugeben, dass devtools keine Anforderungen mehr aufzeichnet.  
+1.  Wählen Sie `Control` + `E` \ (Windows, Linux \) oder `Command` + `E` \ (macOS \) aus, während sich der Fokus des **Netzwerk** Panels befindet.  
 
 ### Löschen von Anforderungen  
 
@@ -72,7 +72,7 @@ Aktivieren Sie das Kontrollkästchen **Protokoll beibehalten** auf der Registerk
 
 Screenshots aufzeichnen, um zu analysieren, was für Benutzer angezeigt wird, während Sie darauf warten, dass Ihre Seite geladen wird.  
 
-Wenn Sie Screenshots aktivieren möchten, wählen Sie **Netzwerkeinstellungen** und dann auf der Registerkarte **Netzwerk** das Kontrollkästchen **Screenshots aufzeichnen** aus.  
+Wenn Sie Screenshots aktivieren möchten, wählen Sie **Netzwerkeinstellungen** und dann auf der Registerkarte **Netzwerk** die Option **Screenshots aufzeichnen** aus.  
 
 Aktualisieren Sie die Seite, während sich das **Netzwerk** Panel im Fokus befindet, um Screenshots zu erfassen.  
 
@@ -88,7 +88,7 @@ Nachdem Sie einen Screenshot aufgezeichnet haben, interagieren Sie mit ihm auf d
 
 <!--  ### Replay XHR request  -->
 
-<!--  To replay an XHR request, hover on the request in the Requests table, open the contextual menu \(right-click\), and select **Replay XHR**.  -->
+<!--  To replay an XHR request, hover on the request in the Requests table, open the contextual menu \(right-click\), and choose **Replay XHR**.  -->
 
 <!--  
 :::image type="complex" source="../media/network-replay-xhr.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-replay-xhr.msft.png":::
@@ -244,7 +244,7 @@ Wenn Sie Anforderungen nach Anforderungsfiltern möchten, wählen Sie eine der f
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Medien**  
+      **Media**  
    :::column-end:::
    :::column span="2":::
       &nbsp;  
@@ -294,7 +294,7 @@ Wenn Sie Anforderungen nach Anforderungsfiltern möchten, wählen Sie eine der f
 Wenn die Schaltflächen nicht angezeigt werden, ist der Bereich " **Filter** " möglicherweise ausgeblendet.  
 Wenn Sie weitere Informationen erhalten möchten, navigieren Sie zum [Ausblenden des Filters-Bereichs](#hide-the-filters-pane).  
 
-Wenn Sie mehrere Typfilter gleichzeitig aktivieren möchten, halten `Control` Sie \ (Windows \) oder `Command` \ (macOS \) gedrückt, und wählen Sie dann aus.  
+Wenn Sie mehrere Typen Filter gleichzeitig aktivieren möchten, halten `Control` Sie \ (Windows, Linux \) oder `Command` \ (macOS \), und wählen Sie dann aus.  
 
 :::image type="complex" source="../media/network-network-type-filters.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-network-type-filters.msft.png":::
    Verwenden des Typs "Filter" zum Anzeigen von JS-, CSS-und Dokument Ressourcen  
@@ -575,7 +575,7 @@ Führen Sie die folgenden Schritte aus, um die Abfragezeichenfolgenparameter Que
 Führen Sie die folgenden Schritte aus, um Abfragezeichenfolgenparameter in einem menschlich lesbaren Format anzuzeigen, jedoch mit erhaltenen Codierungen.  
 
 1.  Wechseln Sie zum Abschnitt Abfragezeichenfolgenparameter.  Weitere Informationen finden Sie unter [Anzeigen von Abfragezeichenfolgenparametern](#view-query-string-parameters).  
-1.  Wählen Sie **URL-codiert anzeigen**aus.  
+1.  Wählen Sie **View URL encoded**aus.  
 
 ### Cookies anzeigen  
 
@@ -918,6 +918,10 @@ Standardmäßig zeigt devtools den **Bereich "Übersicht"** an.  Deaktivieren Si
 :::image type="complex" source="../media/network-network-requests-show-overview-off.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-network-requests-show-overview-off.msft.png":::
    Kontrollkästchen ' **Übersicht anzeigen** '  
 :::image-end:::  
+
+## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

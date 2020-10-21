@@ -3,16 +3,16 @@ description: Informationen zum Anzeigen von Cache Daten aus dem Anwendungs Panel
 title: Anzeigen von Cache Daten mit Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: c920a171ec89925cc79ab741eed01e11d749bf1b
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 5ab5fd0b3b504443e495f1d5108907a4551e6ac6
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993296"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125440"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,19 +28,13 @@ ms.locfileid: "10993296"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Anzeigen von Cachedaten mit Microsoft Edge devtools   
-
-
+# Anzeigen von Cachedaten mit Microsoft Edge devtools  
 
 Dieser Leitfaden zeigt, wie Sie [Microsoft Edge devtools][MicrosoftEdgeDevTools] verwenden, um [Cache][MDNCache] Daten zu überprüfen.  
 
 Wenn Sie versuchen, http- [Cache][MDNHTTPCaching] -Daten zu überprüfen, ist dies nicht die gewünschte Richtlinie.  Suchen Sie in der Spalte **Größe** des **Netzwerkprotokolls**nach den Informationen.  Siehe [Protokoll Netzwerkaktivität][DevtoolsNetworkLogActivity].  
 
-## Anzeigen von Cachedaten   
+## Anzeigen von Cachedaten  
 
 1.  Wählen Sie die Registerkarte **Anwendung** aus, um den **Anwendungs** Panel zu öffnen.  Der Bereich **Manifest** wird normalerweise standardmäßig geöffnet.  
     
@@ -72,18 +66,18 @@ Wenn Sie versuchen, http- [Cache][MDNHTTPCaching] -Daten zu überprüfen, ist di
        Anzeigen des Inhalts einer Ressource  
     :::image-end:::  
     
-## Aktualisieren einer Ressource   
+## Aktualisieren einer Ressource  
 
 1.  [Anzeigen der Daten für einen Cache](#view-cache-data)  
 1.  Wählen Sie die Ressource aus, die Sie aktualisieren möchten.  DevTools hebt die Markierung hervor, um anzugeben, dass Sie markiert ist.  
     
     :::image type="complex" source="../media/storage-application-cache-storage-domain-refresh.msft.png" alt-text="Bereich ' Manifest '" lightbox="../media/storage-application-cache-storage-domain-refresh.msft.png":::
-       Auswählen einer Ressource  
+       Auswählen einer zu aktualisierden Ressource  
     :::image-end:::  
     
 1.  Wählen Sie **Aktualisieren** \ ( ![ aktualisieren ][ImageRefreshIcon] \) aus.  
     
-## Filtern von Ressourcen   
+## Filtern von Ressourcen  
 
 1.  [Anzeigen der Daten für einen Cache](#view-cache-data)  
 1.  Verwenden Sie das Textfeld nach **Pfad filtern** , um alle Ressourcen zu filtern, die nicht dem von Ihnen bereitgestellten Pfad entsprechen.  
@@ -92,18 +86,18 @@ Wenn Sie versuchen, http- [Cache][MDNHTTPCaching] -Daten zu überprüfen, ist di
        Filtern von Ressourcen, die nicht mit dem angegebenen Pfad übereinstimmen  
     :::image-end:::  
     
-## Löschen einer Ressource   
+## Löschen einer Ressource  
 
 1.  [Anzeigen der Daten für einen Cache](#view-cache-data)  
 1.  Wählen Sie die Ressource aus, die Sie löschen möchten.  DevTools hebt die Markierung hervor, um anzugeben, dass Sie markiert ist.  
     
     :::image type="complex" source="../media/storage-application-cache-storage-delete-selected.msft.png" alt-text="Bereich ' Manifest '" lightbox="../media/storage-application-cache-storage-delete-selected.msft.png":::
-       Auswählen einer Ressource  
+       Auswählen einer zu löschenden Ressource  
     :::image-end:::  
     
 1.  Wählen Sie " **Ausgewählte löschen** " aus ![ ][ImageDeleteIcon] .  
     
-## Löschen aller Cachedaten   
+## Löschen aller Cachedaten  
 
 1.  Öffnen Sie die **Anwendung**  >  **Clear Storage**.  
 1.  Stellen Sie sicher, dass das Kontrollkästchen **Cache Speicher** aktiviert ist.  
@@ -118,11 +112,9 @@ Wenn Sie versuchen, http- [Cache][MDNHTTPCaching] -Daten zu überprüfen, ist di
        Schaltfläche " **Website Daten löschen** "  
     :::image-end:::  
     
-<!--  
-  
+## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

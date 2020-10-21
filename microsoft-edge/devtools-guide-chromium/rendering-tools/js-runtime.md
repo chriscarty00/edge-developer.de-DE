@@ -3,16 +3,16 @@ description: Ermitteln Sie kostspielige Funktionen mithilfe des Microsoft Edge d
 title: Beschleunigen der JavaScript-Laufzeit
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 27afe999083470cde0cc0fabf76d0d1ab54e6562
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: f3cf0440579865495f4afc8b1ae4e3940af7b04f
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993583"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125356"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -47,7 +47,7 @@ Wenn Sie Jank in Ihrem JavaScript bemerken, erfassen Sie ein Sampling-Profil.  S
 
 1.  Wechseln Sie zum **Speicher** Panel von devtools.  
 1.  Aktivieren Sie das Optionsfeld **Zuweisungs Sampling** .  
-1.  Wählen Sie **Start**.  
+1.  Wählen Sie **Start**aus.  
 1.  Je nachdem, was Sie analysieren möchten, können Sie entweder die Seite neu laden, mit der Seite interagieren oder einfach die Seite ausführen lassen.  
 1.  Wählen Sie die Schaltfläche **Beenden** aus, wenn Sie den Vorgang beendet haben.  
     

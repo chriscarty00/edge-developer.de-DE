@@ -3,16 +3,16 @@ description: Die neuesten experimentellen Features in Microsoft Edge devtools
 title: Experimentelle Funktionen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/05/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools, Experiment
-ms.openlocfilehash: f885201ddfb7553a2b9c58a07dd52b7a77c4137a
-ms.sourcegitcommit: 0326a4082064e9cdfa602736f3f9ce7d8d294604
+ms.openlocfilehash: 65cf178596abfbaaac0e80bf205035838967cf59
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "11094931"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124894"
 ---
 # Experimentelle Funktionen  
 
@@ -25,7 +25,7 @@ Während experimentelle Features in allen Kanälen von Microsoft Edge verfügbar
 Führen Sie die folgenden Schritte aus, um die experimentellen Features von \ (oder Off \) in Microsoft Edge zu aktivieren.  
 
 1.  [Öffnen Sie devtools][DevtoolsOpen].  
-     *   Wählen Sie `Control` + `Shift` + `I` \ (Windows \) oder `Command` + `Option` + `I` \ (macOS \) aus.  Weitere Informationen finden Sie unter [Tastenkombinationen für Microsoft Edge devtools][DevToolsShortcuts].  
+     *   Wählen Sie `Control` + `Shift` + `I` \ (Windows, Linux \) oder `Command` + `Option` + `I` \ (macOS \) aus.  Weitere Informationen finden Sie unter [Tastenkombinationen für Microsoft Edge devtools][DevToolsShortcuts].  
 1.  Öffnen Sie den Bereich " [Einstellungen][DevToolsCustomizeSettings] ".  
     *   Wählen Sie aus `Shift` + `?` .  Weitere Informationen finden Sie unter [Tastenkombinationen für Microsoft Edge devtools][DevToolsShortcuts].  
 1.  Wählen Sie auf der linken Seite des Bereichs **Einstellungen** den Abschnitt **Experimente** aus.  

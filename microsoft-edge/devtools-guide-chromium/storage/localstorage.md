@@ -3,16 +3,16 @@ description: Anzeigen und Bearbeiten von localStorage mit dem lokalen Speicherbe
 title: Anzeigen und Bearbeiten des lokalen Speichers mit Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: aa5365d1764ea0db537ea24464f9c76441f05322
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 25404e454187db941dc12d356dfe5ae7437d833b
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993555"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125419"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,17 +28,11 @@ ms.locfileid: "10993555"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Anzeigen und Bearbeiten des lokalen Speichers mit Microsoft Edge devtools   
-
-
+# Anzeigen und Bearbeiten des lokalen Speichers mit Microsoft Edge devtools  
 
 In diesem Leitfaden wird gezeigt, wie Sie [localStorage][MDNWindowsLocalStorage] -Schlüssel-Wert-Paare mithilfe von [Microsoft Edge devtools][MicrosoftEdgeDevTools] anzeigen, bearbeiten und löschen.  
 
-## Anzeigen von localStorage-Schlüsseln und-Werten   
+## Anzeigen von localStorage-Schlüsseln und-Werten  
 
 1.  Wählen Sie die Registerkarte **Anwendung** aus, um den **Anwendungs** Panel zu öffnen.  Standardmäßig wird der Bereich **Manifest** angezeigt.  
     
@@ -64,7 +58,7 @@ In diesem Leitfaden wird gezeigt, wie Sie [localStorage][MDNWindowsLocalStorage]
        Anzeigen des Werts des `eventLogQueue_Online` Schlüssels  
     :::image-end:::  
     
-## Erstellen eines neuen localStorage-Schlüssel-Wert-Paars   
+## Erstellen eines neuen localStorage-Schlüssel-Wert-Paars  
 
 1.  [Anzeigen der `localStorage` Schlüssel-Wert-Paare einer Domäne](#view-localstorage-keys-and-values)  
 1.  Doppelklicken Sie auf den leeren Teil der Tabelle.  DevTools erstellt eine neue Zeile und fokussiert den Cursor in der **Schlüssel** Spalte.  
@@ -73,7 +67,7 @@ In diesem Leitfaden wird gezeigt, wie Sie [localStorage][MDNWindowsLocalStorage]
        Der leere Teil der Tabelle zum doppelklicken, um ein neues Schlüssel-Wert-Paar zu erstellen  
     :::image-end:::  
     
-## Bearbeiten von localStorage-Schlüsseln oder-Werten   
+## Bearbeiten von localStorage-Schlüsseln oder-Werten  
 
 1.  [Anzeigen der `localStorage` Schlüssel-Wert-Paare einer Domäne](#view-localstorage-keys-and-values)  
 1.  Doppelklicken Sie auf eine Zelle in der Spalte **Schlüssel** oder **Wert** , um diesen Schlüssel oder Wert zu bearbeiten.  
@@ -82,18 +76,18 @@ In diesem Leitfaden wird gezeigt, wie Sie [localStorage][MDNWindowsLocalStorage]
        Bearbeiten eines `localStorage` Schlüssels  
     :::image-end:::  
     
-## Löschen von localStorage-Schlüssel-Wert-Paaren   
+## Löschen von localStorage-Schlüssel-Wert-Paaren  
 
 1.  [Anzeigen der `localStorage` Schlüssel-Wert-Paare einer Domäne](#view-localstorage-keys-and-values)  
 1.  Wählen Sie das Schlüssel-Wert-Paar aus, das Sie löschen möchten.  DevTools hebt das Blau hervor, um anzugeben, dass es markiert ist.  
-1.  Drücken Sie die Eingabe `Delete` Taste, oder klicken Sie auf **Ausgewählte löschen** \ ( ![ Auswahl löschen ][ImageDeleteIcon] \).  
+1.  Drücken Sie die Eingabe `Delete` Taste, oder wählen Sie **Ausgewählte löschen** ( ![ Ausgewählte löschen ][ImageDeleteIcon] \) aus.  
     
-## Löschen aller `localStorage` Schlüssel-Wert-Paare für eine Domäne   
+## Löschen aller `localStorage` Schlüssel-Wert-Paare für eine Domäne  
 
 1.  [Anzeigen der `localStorage` Schlüssel-Wert-Paare einer Domäne](#view-localstorage-keys-and-values)  
 1.  Wählen Sie **Alle löschen** \ ( ![ Alle löschen ][ImageClearIcon] \) aus.  
     
-## Interagieren mit localStorage über die Konsole   
+## Interagieren mit localStorage über die Konsole  
 
 Da sie JavaScript in der **Konsole**ausführen können und die **Konsole** Zugriff auf die JavaScript-Kontexte der Seite hat, ist es möglich, mit `localStorage` der **Konsole**zu interagieren.  
 
@@ -109,11 +103,9 @@ Da sie JavaScript in der **Konsole**ausführen können und die **Konsole** Zugri
        Interagieren mit `localStorage` der **Konsole**  
     :::image-end:::  
     
-<!--  
- 
+## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

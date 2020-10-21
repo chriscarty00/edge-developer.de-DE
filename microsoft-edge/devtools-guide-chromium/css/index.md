@@ -3,16 +3,16 @@ description: Erfahren Sie, wie Sie Microsoft Edge devtools verwenden, um das CSS
 title: Erste Schritte mit dem Anzeigen und Ändern von CSS
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: f055606ff6140652341627097e7fe7b270dc929c
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 3cd833c97cb2e7b746943f18526d09481b4e3cc5
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993065"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125209"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -34,7 +34,7 @@ Führen Sie diese interaktiven Lernprogramme aus, um die Grundlagen für das Anz
 
 ## Öffnen von CSS-Beispielen  
 
-1.  Halten `Control` Sie \ (Windows \) oder `Command` \ (macOS \) gedrückt, und wählen Sie **CSS-Beispiele** aus, um Sie in einem neuen Fenster zu öffnen.  
+1.  Halten `Control` Sie \ (Windows, Linux \) oder `Command` \ (macOS \) gedrückt, und wählen Sie **CSS-Beispiele** aus, um Sie in einem neuen Fenster zu öffnen.  
     
     [CSS-Beispiele][GlitchDevToolsCssExamples]  
     
@@ -79,8 +79,8 @@ Verwenden Sie die Registerkarte **Formatvorlagen** , wenn Sie einem Element CSS-
 1.  [Öffnen Sie CSS-Beispiele](#open-css-examples).  
 1.  Zeigen Sie auf den `Add A Background Color To Me!` Text, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie über **prüfen**aus.  
 1.  Wählen Sie am `element.style` oberen Rand der Registerkarte **Formatvorlagen** aus.  
-1.  Geben `background-color` Sie ein, und drücken Sie `Enter` .  
-1.  Geben `honeydew` Sie ein, und drücken Sie `Enter` .  In der **DOM-Struktur** sollten Sie sehen, dass eine Inlineformatvorlagen Deklaration auf das Element angewendet wurde.  
+1.  Geben `background-color` Sie ein, und wählen Sie aus `Enter` .  
+1.  Geben `honeydew` Sie ein, und wählen Sie aus `Enter` .  In der **DOM-Struktur** sollten Sie sehen, dass eine Inlineformatvorlagen Deklaration auf das Element angewendet wurde.  
     
     :::image type="complex" source="../media/css-elements-add-background-color-to-me-styles-p.msft.png" alt-text="Das geprüfte Element ist in der DOM-Struktur hervorgehoben." lightbox="../media/css-elements-add-background-color-to-me-styles-p.msft.png":::
        Abbildung 3: die `background-color:honeydew` Deklaration wurde auf das Element über den `element.style` Abschnitt der Registerkarte " **Formatvorlagen** " angewendet  
@@ -96,7 +96,7 @@ Verwenden Sie die Registerkarte **Formatvorlagen** , um zu sehen, wie ein Elemen
 1.  [Öffnen Sie CSS-Beispiele](#open-css-examples).  
 1.  Zeigen Sie auf den `Add A Class To Me!` Text, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie über **prüfen**aus.  
 1.  Wählen Sie **CLS**aus.  DevTools zeigt ein Textfeld an, in dem Sie dem ausgewählten Elementklassen hinzufügen können.  
-1.  Geben `color_me` Sie in das Textfeld **neue Klasse hinzufügen** ein, und drücken Sie dann `Enter` .  Unterhalb des Textfelds **neue Klasse hinzufügen** wird ein Kontrollkästchen eingeblendet, in dem Sie die Klasse ein-und ausblenden können.  Wenn `Add A Class To Me!` auf das Element andere Klassen angewendet werden, können Sie auch von hier aus umschalten.  
+1.  Geben `color_me` Sie das Textfeld **neue Klasse hinzufügen** ein, und wählen Sie dann aus `Enter` .  Unterhalb des Textfelds **neue Klasse hinzufügen** wird ein Kontrollkästchen eingeblendet, in dem Sie die Klasse ein-und ausblenden können.  Wenn `Add A Class To Me!` auf das Element andere Klassen angewendet werden, können Sie auch von hier aus umschalten.  
     
     :::image type="complex" source="../media/css-elements-add-a-class-to-me-styles-cls.msft.png" alt-text="Das geprüfte Element ist in der DOM-Struktur hervorgehoben." lightbox="../media/css-elements-add-a-class-to-me-styles-cls.msft.png":::
        Abbildung 4: die `color_me` Klasse wurde auf das Element mit dem Abschnitt " **. CLS** " auf der Registerkarte " **Formatvorlagen** " angewendet.  
@@ -134,7 +134,7 @@ Verwenden Sie das interaktive Diagramm des **Feld Modells** auf der Registerkart
     > Je nach Größe des devtools-Fensters müssen Sie möglicherweise an den unteren Rand der Registerkarte **Formatvorlagen** scrollen, um das **Feld Modell**anzuzeigen.  
 
 1.  Doppelklicken Sie auf den linken Rand im **Feld Modell**, das derzeit den Wert Bedeutung hat, `-` dass das Element keinen linken Rand aufweist.  
-1.  Geben `100px` Sie ein, und drücken Sie `Enter` .  Das **Feld Modell** ist standardmäßig Pixel, akzeptiert aber auch andere Werte wie " `25%` oder" `10vw` .  
+1.  Geben `100px` Sie ein, und wählen Sie aus `Enter` .  Das **Feld Modell** ist standardmäßig Pixel, akzeptiert aber auch andere Werte wie " `25%` oder" `10vw` .  
     
     :::row:::
        :::column span="":::
@@ -155,7 +155,7 @@ Verwenden Sie das interaktive Diagramm des **Feld Modells** auf der Registerkart
 
 Führen Sie die folgenden Schritte aus, wenn Sie die medienabfragen, die Sie in Ihrem CSS definiert haben, Debuggen oder testen möchten.  
 
-1.  Öffnen Sie die Entwicklertools, und wählen Sie in der oberen linken Ecke das Symbol " **Gerätesymbolleiste umschalten** " aus, oder drücken Sie `Ctrl` + `Shift` + `M` \ ( `Cmd` + `Shift` + `M` unter macOS \).  
+1.  Öffnen Sie die Entwicklertools, und wählen Sie in der oberen linken Ecke das Symbol " **Gerätesymbolleiste umschalten** " aus, oder wählen Sie `Ctrl` + `Shift` + `M` \ ( `Cmd` + `Shift` + `M` unter macOS \) aus.  
     
     :::image type="complex" source="../media/css-elements-media-queries-open-device-toolbar.msft.png" alt-text="Das geprüfte Element ist in der DOM-Struktur hervorgehoben." lightbox="../media/css-elements-media-queries-open-device-toolbar.msft.png":::
        Abbildung 8: Öffnen der Gerätesymbolleiste  
@@ -179,6 +179,10 @@ Führen Sie die folgenden Schritte aus, wenn Sie die medienabfragen, die Sie in 
        Abbildung 11: Anzeigen von medienabfragen im Quellen-Editor  
     :::image-end:::  
     
+## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+
 <!-- links -->  
 
 [DevToolsCustomizePlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement "Ändern der Platzierung von Microsoft Edge devtools (abdocken, docken an den unteren Rand, docken nach links)"  

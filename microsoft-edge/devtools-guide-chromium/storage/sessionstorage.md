@@ -3,16 +3,16 @@ description: Informationen zum Anzeigen und Bearbeiten von sessionStorage mit de
 title: Anzeigen und Bearbeiten des Sitzungs Speichers mit Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 24fca3fd3a068f3b2ffbe4ec1c23e6b80b968953
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 6543c03f04ff80b1bba1d244598a901d066db13a
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993548"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125475"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,17 +28,11 @@ ms.locfileid: "10993548"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Anzeigen und Bearbeiten des Sitzungs Speichers mit Microsoft Edge devtools   
-
-  
+# Anzeigen und Bearbeiten des Sitzungs Speichers mit Microsoft Edge devtools  
 
 In diesem Leitfaden wird gezeigt, wie Sie mit [Microsoft Edge devtools][MicrosoftEdgeDevTools] [`sessionStorage`][MDNSessionStorage] Schlüssel-Wert-Paare anzeigen, bearbeiten und löschen können.  
 
-## Anzeigen von sessionStorage-Schlüsseln und-Werten   
+## Anzeigen von sessionStorage-Schlüsseln und-Werten  
 
 1.  Wählen Sie die Registerkarte **Anwendung** aus, um den **Anwendungs** Panel zu öffnen.  Standardmäßig wird der Bereich **Manifest** angezeigt.  
     
@@ -64,7 +58,7 @@ In diesem Leitfaden wird gezeigt, wie Sie mit [Microsoft Edge devtools][Microsof
        Anzeigen des Werts des `x-sid` Schlüssels  
     :::image-end:::  
     
-## Erstellen eines neuen sessionStorage-Schlüssel-Wert-Paars   
+## Erstellen eines neuen sessionStorage-Schlüssel-Wert-Paars  
 
 1.  [Anzeigen der `sessionStorage` Schlüssel-Wert-Paare einer Domäne](#view-sessionstorage-keys-and-values)  
 1.  Doppelklicken Sie auf den leeren Teil der Tabelle.  DevTools erstellt eine neue Zeile und fokussiert den Cursor in der **Schlüssel** Spalte.  
@@ -73,7 +67,7 @@ In diesem Leitfaden wird gezeigt, wie Sie mit [Microsoft Edge devtools][Microsof
        Der leere Teil der Tabelle zum doppelklicken, um ein neues Schlüssel-Wert-Paar zu erstellen  
     :::image-end:::  
     
-## Bearbeiten von sessionStorage-Schlüsseln oder-Werten   
+## Bearbeiten von sessionStorage-Schlüsseln oder-Werten  
 
 1.  [Anzeigen der `sessionStorage` Schlüssel-Wert-Paare einer Domäne](#view-sessionstorage-keys-and-values)  
 1.  Doppelklicken Sie auf eine Zelle in der Spalte **Schlüssel** oder **Wert** , um diesen Schlüssel oder Wert zu bearbeiten.  
@@ -82,18 +76,18 @@ In diesem Leitfaden wird gezeigt, wie Sie mit [Microsoft Edge devtools][Microsof
        Bearbeiten eines `sessionStorage` Schlüssels  
     :::image-end:::  
     
-## Löschen von sessionStorage-Schlüssel-Wert-Paaren   
+## Löschen von sessionStorage-Schlüssel-Wert-Paaren  
 
 1.  [Anzeigen der `sessionStorage` Schlüssel-Wert-Paare einer Domäne](#view-sessionstorage-keys-and-values)  
 1.  Wählen Sie das Schlüssel-Wert-Paar aus, das Sie löschen möchten.  DevTools hebt das Blau hervor, um anzugeben, dass es markiert ist.  
-1.  Drücken Sie die Eingabe `Delete` Taste, oder klicken Sie auf **Ausgewählte löschen** \ ( ![ Auswahl löschen ][ImageDeleteIcon] \).  
+1.  Drücken Sie die Eingabe `Delete` Taste, oder wählen Sie **Ausgewählte löschen** ( ![ Ausgewählte löschen ][ImageDeleteIcon] \) aus.  
     
-## Löschen aller sessionStorage-Schlüssel-Wert-Paare für eine Domäne   
+## Löschen aller sessionStorage-Schlüssel-Wert-Paare für eine Domäne  
 
 1.  [Anzeigen der `sessionStorage` Schlüssel-Wert-Paare einer Domäne](#view-sessionstorage-keys-and-values)  
 1.  Wählen Sie **Alle löschen** \ ( ![ Alle löschen ][ImageClearIcon] \) aus.  
     
-## Interagieren mit sessionStorage über die Konsole   
+## Interagieren mit sessionStorage über die Konsole  
 
 Da sie JavaScript in der **Konsole**ausführen können und die **Konsole** Zugriff auf die JavaScript-Kontexte der Seite hat, ist es möglich, mit `sessionStorage` der **Konsole**zu interagieren.  
 
@@ -109,11 +103,9 @@ Da sie JavaScript in der **Konsole**ausführen können und die **Konsole** Zugri
        Interagieren mit `sessionStorage` der **Konsole**  
     :::image-end:::  
     
-<!--  
-   
+## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
-  
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

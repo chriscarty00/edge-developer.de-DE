@@ -3,16 +3,16 @@ description: Erfahren Sie, wie Sie Änderungen speichern können, die in devtool
 title: Bearbeiten von Dateien mit Arbeitsbereichen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: fd72021e75c536fa38c27ae17e4b1678eb4ca85f
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 496bbbb34cdf900d36aa7ebfbf79ad63cdf3e6e7
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992722"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125349"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -81,7 +81,7 @@ Führen Sie die folgenden Aktionen aus, um praktische Erfahrungen mit Arbeitsber
     :::image-end:::  
     
     <!--1.  Choose the project name.  -->  
-    <!--1.  Select **Advanced Options** > **Download Project**.  
+    <!--1.  Choose **Advanced Options** > **Download Project**.  
     
     :::image type="complex" source="../media/workspaces-glitch-advanced-options-download-project.msft.png" alt-text="Ein glitch-Projekt" lightbox="../media/workspaces-glitch-advanced-options-download-project.msft.png":::
        The Download Project button  
@@ -117,7 +117,7 @@ Führen Sie die folgenden Aktionen aus, um praktische Erfahrungen mit Arbeitsber
     
 ### Einrichten von devtools  
 
-1.  Wählen Sie `Control` + `Shift` + `J` \ (Windows \) oder `Command` + `Option` + `J` \ (macOS \) aus, um die **Konsolen** Leiste von devtools zu öffnen.  
+1.  Wählen Sie `Control` + `Shift` + `J` \ (Windows, Linux \) oder `Command` + `Option` + `J` \ (macOS \) aus, um die **Konsolen** Leiste von devtools zu öffnen.  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-console.msft.png" alt-text="Ein glitch-Projekt" lightbox="../media/workspaces-workspaces-demo-console.msft.png":::
        Die **Konsolen** Leiste  
@@ -207,7 +207,7 @@ Wenn Sie eine Änderung am HTML-Code der Seite speichern möchten, verwenden Sie
 1.  Wählen Sie die Registerkarte **Seite** aus.  
 1.  Wählen Sie **(Index)** aus.  Der HTML-Code für die Seite wird geöffnet.  
 1.  Ersetzen Sie `<h1>Workspaces Demo</h1>` durch `<h1>I ❤️  Cake</h1>`.  Sehen Sie sich die folgende Abbildung an.  
-1.  Wählen Sie `Control` + `S` \ (Windows \) oder `Command` + `S` \ (macOS \) aus, um die Änderung zu speichern.  
+1.  Wählen Sie `Control` + `S` \ (Windows, Linux \) oder `Command` + `S` \ (macOS \) aus, um die Änderung zu speichern.  
 1.  Aktualisieren Sie die Seite.  Das `<h1>` Element zeigt weiterhin den neuen Text an.  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Ein glitch-Projekt" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
@@ -221,14 +221,14 @@ Wenn Sie eine Änderung am HTML-Code der Seite speichern möchten, verwenden Sie
 Der Bereich " **Quellen** " ist auch der Ort, an dem Sie Änderungen an JavaScript vornehmen können.  Manchmal müssen Sie aber auch auf andere Panels zugreifen, beispielsweise auf das Panel **Elemente** oder den **Konsolen** Panel, während Sie Änderungen an Ihrer Website vornehmen.  Es gibt eine Möglichkeit, das **Quellen** Panel parallel zu anderen Panels zu öffnen.  
 
 1.  Wählen Sie die Registerkarte **Elemente** aus.  
-1.  Wählen Sie `Control` + `Shift` + `P` \ (Windows \) oder `Command` + `Shift` + `P` \ (macOS \) aus.  Das **Befehlsmenü** wird geöffnet.  
+1.  Wählen Sie `Control` + `Shift` + `P` \ (Windows, Linux \) oder `Command` + `Shift` + `P` \ (macOS \) aus.  Das **Befehlsmenü** wird geöffnet.  
 1.  Geben `QS` Sie ein, und wählen Sie dann **schnell Quelle anzeigen**aus.  Am unteren Rand des devtools-Fensters befindet sich nun eine **schnell Ausgangs** Registerkarte.  Auf der Registerkarte wird der Inhalt von angezeigt `index.html` , die letzte Datei, die Sie im **Quellen** Panel bearbeitet haben.  Auf der Registerkarte " **schnell Quelle** " finden Sie den Editor im **Quellen** Panel, sodass Sie Dateien bearbeiten können, während andere Panels geöffnet sind.  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="Ein glitch-Projekt" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
        Öffnen der Registerkarte " **schnell** Start" mithilfe des **Befehlsmenüs**  
     :::image-end:::  
     
-1.  Wählen Sie `Control` + `P` \ (Windows \) oder `Command` + `P` \ (macOS \) aus, um das Dialogfeld **Datei öffnen** zu öffnen.  Sehen Sie sich die folgende Abbildung an.  
+1.  Wählen Sie `Control` + `P` \ (Windows, Linux \) oder `Command` + `P` \ (macOS \) aus, um das Dialogfeld **Datei öffnen** zu öffnen.  Sehen Sie sich die folgende Abbildung an.  
 1.  Geben `script` Sie ein, und wählen Sie dann **App/#b0 **aus.  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="Ein glitch-Projekt" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
@@ -245,7 +245,7 @@ Der Bereich " **Quellen** " ist auch der Ort, an dem Sie Änderungen an JavaScri
     document.querySelector('a').style = 'font-style:italic';
     ```  
     
-1.  Wählen Sie `Control` + `S` \ (Windows \) oder `Command` + `S` \ (macOS \) aus, um die Änderung zu speichern.  
+1.  Wählen Sie `Control` + `S` \ (Windows, Linux \) oder `Command` + `S` \ (macOS \) aus, um die Änderung zu speichern.  
 1.  Aktualisieren Sie die Seite.  
     
     > [!NOTE]
@@ -263,8 +263,11 @@ Verwenden Sie das gelernte in diesem Lernprogramm, um Arbeitsbereiche in Ihrem e
 If you have more feedback on the topics or anything else, please use any of the channels below:  
 
 *   [Mailing List][AlphabetGroupsAlphabetBrowserDevTools]  
-*   [Twitter][TwitterAlphabetBrowserDevTools]  
-    -->  
+*   [Twitter][TwitterAlphabetBrowserDevTools]  -->  
+
+## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

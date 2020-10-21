@@ -3,16 +3,16 @@ description: Erfahren Sie, wie Sie die Laufzeitleistung in Microsoft Edge devtoo
 title: Erste Schritte mit der Analyse der Laufzeitleistung
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 65351f3846ed76ef8a27dbff2cfb08c497282d15
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 7cb1d8f073cdb8a43093514dd7dea86d72102011
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992946"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124985"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -31,7 +31,7 @@ ms.locfileid: "10992946"
 # Erste Schritte mit der Analyse der Laufzeitleistung  
 
 > [!NOTE]
-> Informationen dazu, wie Sie Ihre Seiten schneller laden können, finden Sie unter [Optimieren der Website Geschwindigkeit][DevtoolsSpeedGetStarted].  
+> Wenn Sie wissen möchten, wie Sie Ihre Seiten schneller laden können, navigieren Sie zur [Optimierung der Website Geschwindigkeit][DevtoolsSpeedGetStarted].  
 
 Die Laufzeitleistung ist die Art und Weise, wie Ihre Seite ausführt, wenn Sie ausgeführt wird, im Gegensatz zum Laden.  Im folgenden Lernprogramm Artikel erfahren Sie, wie Sie das Microsoft Edge devtools-Leistungs Panel verwenden, um die Runtime-Leistung zu analysieren.  Im Hinblick auf das **Schienen** Modell sind die in diesem Lernprogramm gelernten Kenntnisse hilfreich, um die Reaktions-, Animations-und Leerlaufphasen Ihrer Seite zu analysieren.  
 
@@ -51,7 +51,7 @@ Im folgenden Lernprogramm öffnen Sie devtools auf einer Live Seite und verwende
     https://microsoft-edge-chromium-devtools.glitch.me/sluggish/
     ```  
     
-1.  Wählen Sie `Control` + `Shift` + `I` \ (Windows \) oder `Command` + `Option` + `I` \ (macOS \) aus, um devtools zu öffnen.  
+1.  Wählen Sie `Control` + `Shift` + `I` \ (Windows, Linux \) oder `Command` + `Option` + `I` \ (macOS \) aus, um devtools zu öffnen.  
     
     :::image type="complex" source="../media/evaluate-performance-get-started-side-by-side.msft.png" alt-text="Die Demo auf der linken Seite und DevTools auf der rechten Seite" lightbox="../media/evaluate-performance-get-started-side-by-side.msft.png":::
        Die Demo auf der linken Seite und DevTools auf der rechten Seite  
@@ -146,7 +146,7 @@ Natürlich sollten Sie sehen, dass die Seite nicht gut funktioniert.  In realen 
 
 Ein weiteres praktisches Tool ist das FPS-Messgerät, das in Echtzeit Schätzungen für FPS bereitstellt, während die Seite ausgeführt wird.  
 
-1.  Wählen Sie `Control` + `Shift` + `P` \ (Windows \) oder `Command` + `Shift` + `P` \ (macOS \) aus, um das **Befehlsmenü**zu öffnen.  
+1.  Wählen Sie `Control` + `Shift` + `P` \ (Windows, Linux \) oder `Command` + `Shift` + `P` \ (macOS \) aus, um das **Befehlsmenü**zu öffnen.  
 1.  Beginnen `Rendering` Sie mit der Eingabe im **Befehlsmenü** , und wählen Sie **Rendering anzeigen**aus.  
 1.  Aktivieren Sie auf der Registerkarte **Rendern** die Option **FPS-Meter**.  In der oberen rechten Ecke des Viewports wird eine neue Überlagerung angezeigt.  
     
@@ -225,7 +225,7 @@ Wählen Sie mithilfe der soeben gelernten Workflows und Tools in der Demo **opti
 <!--The foundation for understanding performance is the RAIL model.  The RAIL model teaches you the performance metrics that are most important to your users.  
 See [Measure Performance With The RAIL Model][RAIL] to learn more.  -->  
 
-Um mit dem Leistungsumfang noch komfortabler zu werden, ist die Praxis perfekt.  Versuchen Sie, Ihre Seiten zu profilieren und die Ergebnisse zu analysieren.  Wenn Sie Fragen zu ihren Ergebnissen haben, verwenden Sie das Symbol **Feedback senden** , wählen Sie `Alt` + `Shift` + `I` \ (Windows \) aus, wählen Sie `Option` + `Shift` + `I` \ (macOS \) aus, oder [tweeten Sie das devtools-Team][TwitterEdgeDevtools].  Fügen Sie Screenshots oder Links zu reproduzierbaren Seiten hinzu, falls möglich.  
+Um mit dem Leistungsumfang noch komfortabler zu werden, ist die Praxis perfekt.  Versuchen Sie, Ihre Seiten zu profilieren und die Ergebnisse zu analysieren.  Wenn Sie Fragen zu ihren Ergebnissen haben, verwenden Sie das Symbol **Feedback senden** , wählen Sie `Alt` + `Shift` + `I` \ (Windows, Linux \) aus, wählen Sie `Option` + `Shift` + `I` \ (macOS \) aus, oder [tweeten Sie das devtools-Team][TwitterEdgeDevtools].  Fügen Sie Screenshots oder Links zu reproduzierbaren Seiten hinzu, falls möglich.  
 
 :::image type="complex" source="../media/evaluate-performance-feedback-icon.msft.png" alt-text="Die Demo auf der linken Seite und DevTools auf der rechten Seite" lightbox="../media/evaluate-performance-feedback-icon.msft.png":::
    Das Symbol " **Feedback senden** " im Microsoft Edge-devtools  
@@ -243,6 +243,10 @@ Schließlich gibt es viele Möglichkeiten, die Laufzeitleistung zu verbessern.  
 *   [Stick To Compositor-Only Properties And Manage Layer Count][RenderingManageLayers]  
 *   [Debounce Your Input Handlers][RenderingDebounceInputs]  
 -->
+
+## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->
 

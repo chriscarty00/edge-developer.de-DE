@@ -3,16 +3,16 @@ description: Debuggen von Hintergrund-FETCH-, Hintergrund-Sync-, Benachrichtigun
 title: Debuggen von Hintergrunddiensten mit Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 1724bd3a5e45734555650c3d46e377161a3a7c65
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: fb5e408eb261ae3b2145780a1d7d5566c4501936
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992869"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124817"
 ---
 <!-- Copyright Kayce Basques 
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,13 +27,7 @@ ms.locfileid: "10992869"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Debuggen von Hintergrunddiensten mit Microsoft Edge devtools   
-
-
+# Debuggen von Hintergrunddiensten mit Microsoft Edge devtools  
 
 Der Abschnitt " **Hintergrunddienste** " von Microsoft Edge devtools ist eine Sammlung von Tools für die JavaScript-APIs, mit deren Hilfe Ihre Website Updates senden und empfangen kann, auch wenn ein Benutzer die Website nicht geöffnet hat.  
 Ein Hintergrunddienst ähnelt einem [Hintergrundprozess] [WikiBackgroundProcess].  
@@ -47,13 +41,13 @@ Microsoft Edge devtools berücksichtigt jede der folgenden APIs als Hintergrundd
 Microsoft Edge devtools kann Hintergrunddienst Ereignisse für 3 Tage protokollieren, auch wenn devtools nicht geöffnet ist.  
 Auf diese Weise können Sie sicherstellen, dass Ereignisse wie erwartet gesendet und empfangen werden.  Sie können auch die Details zu den einzelnen Ereignissen prüfen.  
 
-:::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="Anzeigen der Details eines Ereignisses im Bereich &quot;Push-Messaging&quot;" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
-   Anzeigen der Details eines Ereignisses im Bereich " **Push-Messaging** "  
+:::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="Der Bereich &quot;Push-Messaging&quot;" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
+   Der Bereich " **Push-Messaging** "  
 :::image-end:::  
 
-## Hintergrund Abruf   
+## Hintergrund Abruf  
 
-Die *Background FETCH-API** ermöglicht es einem **Dienstmitarbeiter** , große Ressourcen wie Filme oder Podcasts als Hintergrunddienst zuverlässig herunterzuladen.  So protokollieren Sie das Hintergrund-FETCH-Ereignis für 3 Tage, auch wenn devtools nicht geöffnet ist:  
+Die **Background FETCH-API** ermöglicht es einem **Dienstmitarbeiter** , große Ressourcen wie Filme oder Podcasts als Hintergrunddienst zuverlässig herunterzuladen.  So protokollieren Sie das Hintergrund-FETCH-Ereignis für 3 Tage, auch wenn devtools nicht geöffnet ist:  
 
 <!--Todo: add background fetch api section when available -->  
 
@@ -61,24 +55,24 @@ Die *Background FETCH-API** ermöglicht es einem **Dienstmitarbeiter** , große 
 1.  Öffnen Sie den **Anwendungs** Panel.  
 1.  Öffnen des Bereichs " **Hintergrund Abruf** "  
     
-    :::image type="complex" source="../media/javascript-application-background-services-background-fetch-empty.msft.png" alt-text="Anzeigen der Details eines Ereignisses im Bereich &quot;Push-Messaging&quot;" lightbox="../media/javascript-application-background-services-background-fetch-empty.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-background-fetch-empty.msft.png" alt-text="Der Bereich &quot;Push-Messaging&quot;" lightbox="../media/javascript-application-background-services-background-fetch-empty.msft.png":::
        Der Bereich " **Fetch-Hintergrund** "  
     :::image-end:::  
     
-1.  Klicken Sie auf **Datensatz** \ ( ![ Datensatz ][ImageRecordIcon] \).  
+1.  Wählen Sie **Datensatz** \ ( ![ Datensatz ][ImageRecordIcon] \) aus.  
    Nach dem Auslösen einiger Hintergrund Abruf Aktivitäten protokolliert devtools die Ereignisse in der Tabelle.  
     
-    :::image type="complex" source="../media/javascript-application-background-services-background-fetch.msft.png" alt-text="Anzeigen der Details eines Ereignisses im Bereich &quot;Push-Messaging&quot;" lightbox="../media/javascript-application-background-services-background-fetch.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-background-fetch.msft.png" alt-text="Der Bereich &quot;Push-Messaging&quot;" lightbox="../media/javascript-application-background-services-background-fetch.msft.png":::
        Ereignisprotokoll im Bereich " **Fetch-Hintergrund** "  
     :::image-end:::  
     
 1.  Klicken Sie auf ein Ereignis, um dessen Details in dem Bereich unterhalb der Tabelle anzuzeigen.  
     
-    :::image type="complex" source="../media/javascript-application-background-services-background-fetch-details.msft.png" alt-text="Anzeigen der Details eines Ereignisses im Bereich &quot;Push-Messaging&quot;" lightbox="../media/javascript-application-background-services-background-fetch-details.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-background-fetch-details.msft.png" alt-text="Der Bereich &quot;Push-Messaging&quot;" lightbox="../media/javascript-application-background-services-background-fetch-details.msft.png":::
        Anzeigen der Details eines Ereignisses im **Hintergrund Abruf** Bereich  
     :::image-end:::  
     
-## Hintergrundsynchronisierung   
+## Hintergrundsynchronisierung  
 
 Die **Hintergrund Synchronisierungs-API** ermöglicht es einem Offline **Dienstmitarbeiter** , Daten an einen Server zu senden, nachdem eine zuverlässige Internetverbindung wiederhergestellt wurde.  So protokollieren Sie Hintergrund Synchronisierungsereignisse für 3 Tage, auch wenn devtools nicht geöffnet ist:  
 
@@ -88,24 +82,24 @@ Die **Hintergrund Synchronisierungs-API** ermöglicht es einem Offline **Dienstm
 1.  Öffnen Sie den **Anwendungs** Panel.  
 1.  Öffnen des Bereichs " **Hintergrundsynchronisierung** "  
     
-    :::image type="complex" source="../media/javascript-application-background-services-background-sync-empty.msft.png" alt-text="Anzeigen der Details eines Ereignisses im Bereich &quot;Push-Messaging&quot;" lightbox="../media/javascript-application-background-services-background-sync-empty.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-background-sync-empty.msft.png" alt-text="Der Bereich &quot;Push-Messaging&quot;" lightbox="../media/javascript-application-background-services-background-sync-empty.msft.png":::
        Der Bereich " **Hintergrundsynchronisierung** "  
     :::image-end:::  
     
-1.  Klicken Sie auf **Datensatz** \ ( ![ Datensatz ][ImageRecordIcon] \).  
+1.  Wählen Sie **Datensatz** \ ( ![ Datensatz ][ImageRecordIcon] \) aus.  
    Nach dem Auslösen einiger Hintergrund Synchronisierungsaktivitäten protokolliert devtools die Ereignisse in der Tabelle.  
     
-    :::image type="complex" source="../media/javascript-application-background-services-background-sync.msft.png" alt-text="Anzeigen der Details eines Ereignisses im Bereich &quot;Push-Messaging&quot;" lightbox="../media/javascript-application-background-services-background-sync.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-background-sync.msft.png" alt-text="Der Bereich &quot;Push-Messaging&quot;" lightbox="../media/javascript-application-background-services-background-sync.msft.png":::
        Ereignisprotokoll im Bereich " **Hintergrundsynchronisierung** "  
     :::image-end:::  
     
 1.  Klicken Sie auf ein Ereignis, um dessen Details in dem Bereich unterhalb der Tabelle anzuzeigen.  
     
-    :::image type="complex" source="../media/javascript-application-background-services-background-sync-details.msft.png" alt-text="Anzeigen der Details eines Ereignisses im Bereich &quot;Push-Messaging&quot;" lightbox="../media/javascript-application-background-services-background-sync-details.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-background-sync-details.msft.png" alt-text="Der Bereich &quot;Push-Messaging&quot;" lightbox="../media/javascript-application-background-services-background-sync-details.msft.png":::
        Anzeigen der Details eines Ereignisses im Bereich " **Hintergrundsynchronisierung** "  
     :::image-end:::  
     
-## Benachrichtigungen 
+## Benachrichtigungen  
 
 Nachdem ein **Dienstmitarbeiter** eine Push- [Nachricht][MDNPush] von einem Server erhalten hat, verwendet der Dienstmitarbeiter die [Benachrichtigungs-API][MDNNotifications] , um die Daten für einen Benutzer anzuzeigen.  So protokollieren Sie Benachrichtigungen für 3 Tage, auch wenn devtools nicht geöffnet ist:  
 
@@ -113,24 +107,24 @@ Nachdem ein **Dienstmitarbeiter** eine Push- [Nachricht][MDNPush] von einem Serv
 1.  Öffnen Sie den **Anwendungs** Panel.  
 1.  Öffnen Sie den Bereich **Benachrichtigungen** .  
     
-    :::image type="complex" source="../media/javascript-application-background-services-notifications-empty.msft.png" alt-text="Anzeigen der Details eines Ereignisses im Bereich &quot;Push-Messaging&quot;" lightbox="../media/javascript-application-background-services-notifications-empty.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-notifications-empty.msft.png" alt-text="Der Bereich &quot;Push-Messaging&quot;" lightbox="../media/javascript-application-background-services-notifications-empty.msft.png":::
        Der Bereich " **Benachrichtigungen** "  
     :::image-end:::  
     
-1.  Klicken Sie auf **Datensatz** \ ( ![ Datensatz ][ImageRecordIcon] \).  
+1.  Wählen Sie **Datensatz** \ ( ![ Datensatz ][ImageRecordIcon] \) aus.  
    Nach dem Auslösen einiger Benachrichtigungs Aktivitäten protokolliert devtools die Ereignisse in der Tabelle.  
     
-    :::image type="complex" source="../media/javascript-application-background-services-notifications.msft.png" alt-text="Anzeigen der Details eines Ereignisses im Bereich &quot;Push-Messaging&quot;" lightbox="../media/javascript-application-background-services-notifications.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-notifications.msft.png" alt-text="Der Bereich &quot;Push-Messaging&quot;" lightbox="../media/javascript-application-background-services-notifications.msft.png":::
        Ereignisprotokoll im Bereich " **Benachrichtigungen** "  
     :::image-end:::  
     
 1.  Klicken Sie auf ein Ereignis, um dessen Details in dem Bereich unterhalb der Tabelle anzuzeigen.  
     
-    :::image type="complex" source="../media/javascript-application-background-services-notifications-details.msft.png" alt-text="Anzeigen der Details eines Ereignisses im Bereich &quot;Push-Messaging&quot;" lightbox="../media/javascript-application-background-services-notifications-details.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-notifications-details.msft.png" alt-text="Der Bereich &quot;Push-Messaging&quot;" lightbox="../media/javascript-application-background-services-notifications-details.msft.png":::
        Anzeigen der Details eines Ereignisses im Bereich " **Benachrichtigungen** "  
     :::image-end:::  
     
-## Push-Nachrichten 
+## Push-Nachrichten  
 
 Um eine Push-Benachrichtigung für einen Benutzer anzuzeigen, muss ein **Dienstmitarbeiter** zuerst die [Push-Nachrichten-API][MDNPush] verwenden, um Daten von einem Server zu empfangen.  Wenn der Dienstmitarbeiter bereit ist, die Benachrichtigung anzuzeigen, wird die Benachrichtigungs [-API][MDNNotifications]verwendet.  So protokollieren Sie Push-Nachrichten für 3 Tage, auch wenn devtools nicht geöffnet ist:  
 
@@ -138,28 +132,26 @@ Um eine Push-Benachrichtigung für einen Benutzer anzuzeigen, muss ein **Dienstm
 1.  Öffnen Sie den **Anwendungs** Panel.  
 1.  Öffnen Sie den Bereich **Push-Messaging** .  
     
-    :::image type="complex" source="../media/javascript-application-background-services-push-messaging-empty.msft.png" alt-text="Anzeigen der Details eines Ereignisses im Bereich &quot;Push-Messaging&quot;" lightbox="../media/javascript-application-background-services-push-messaging-empty.msft.png":::
-       Der Bereich " **Push-Messaging** "  
+    :::image type="complex" source="../media/javascript-application-background-services-push-messaging-empty.msft.png" alt-text="Der Bereich &quot;Push-Messaging&quot;" lightbox="../media/javascript-application-background-services-push-messaging-empty.msft.png":::
+       Öffnen des Bereichs " **Push-Messaging** "  
     :::image-end:::  
     
-1.  Klicken Sie auf **Datensatz** \ ( ![ Datensatz ][ImageRecordIcon] \).  
+1.  Wählen Sie **Datensatz** \ ( ![ Datensatz ][ImageRecordIcon] \) aus.  
     Nach dem Auslösen einiger Push-Nachrichten Aktivitäten protokolliert devtools die Ereignisse in der Tabelle.  
     
-    :::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="Anzeigen der Details eines Ereignisses im Bereich &quot;Push-Messaging&quot;" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="Der Bereich &quot;Push-Messaging&quot;" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
        Ereignisprotokoll im Bereich " **Push-Messaging** "  
     :::image-end:::  
     
-1.  Klicken Sie auf ein Ereignis, um dessen Details in dem Bereich unterhalb der Tabelle anzuzeigen.  
+1.  Klicken Sie auf ein Ereignis, um die Details in dem Bereich unterhalb der Tabelle anzuzeigen.  
     
-    :::image type="complex" source="../media/javascript-application-background-services-push-messaging-details.msft.png" alt-text="Anzeigen der Details eines Ereignisses im Bereich &quot;Push-Messaging&quot;" lightbox="../media/javascript-application-background-services-push-messaging-details.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-push-messaging-details.msft.png" alt-text="Der Bereich &quot;Push-Messaging&quot;" lightbox="../media/javascript-application-background-services-push-messaging-details.msft.png":::
        Anzeigen der Details eines Ereignisses im Bereich " **Push-Messaging** "  
     :::image-end:::  
     
-<!--  
- 
+## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

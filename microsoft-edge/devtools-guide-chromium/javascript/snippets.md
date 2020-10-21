@@ -3,16 +3,16 @@ description: Snippets sind kleine Skripts, die Sie im Quellen Panel von Microsof
 title: Ausführen von JavaScript-Codeausschnitten auf einer beliebigen Seite mit Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 5f6284179aacb471116a2d732507b010c37ef235
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: e353da76a5c354d834b69708c8a8c9e8dbdf9934
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993387"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124740"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,13 +28,7 @@ ms.locfileid: "10993387"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Ausführen von JavaScript-Codeausschnitten auf einer beliebigen Seite mit Microsoft Edge devtools   
-
-
+# Ausführen von JavaScript-Codeausschnitten auf einer beliebigen Seite mit Microsoft Edge devtools  
 
 Wenn Sie feststellen, dass derselbe Code wiederholt in der [Konsole][DevtoolsConsoleIndex] ausgeführt wird, sollten Sie stattdessen den Code als Snippet speichern.  Ausschnitte sind Skripts, die Sie im [Quellen][DevToolsSourcesPanel] Panel erstellen.  Sie haben Zugriff auf den JavaScript-Kontext der Seite, und Sie können Sie auf einer beliebigen Seite ausführen.  Snippets sind eine Alternative zu [Bookmarklets][WikiBookmarklet].  
 Firefox devtools verfügt über ein ähnliches Feature wie Snippets mit [dem Namen "][MDNScratchpad]Zwischenablage".  
@@ -61,7 +55,7 @@ In der folgenden Abbildung wird die Seite nach dem Ausführen des Snippets angez
    Aussehen der Seite nach dem Ausführen des Snippets  
 :::image-end:::  
 
-## Öffnen des Bereichs "Snippets"   
+## Öffnen des Bereichs "Snippets"  
 
 Im Bereich **Snippets** werden Ihre Snippets aufgelistet.  Wenn Sie einen Ausschnitt bearbeiten möchten, müssen Sie ihn im Bereich **Snippets** öffnen.  
 
@@ -69,7 +63,7 @@ Im Bereich **Snippets** werden Ihre Snippets aufgelistet.  Wenn Sie einen Aussch
    Der Bereich " **Ausschnitte** "  
 :::image-end:::  
 
-### Öffnen des Bereichs "Ausschnitte" mit einer Maus   
+### Öffnen des Bereichs "Ausschnitte" mit einer Maus  
 
 1.  Klicken Sie auf die Registerkarte **Quellen** , um das **Quellen** Panel zu öffnen.  Der **Seiten** Bereich wird normalerweise standardmäßig geöffnet.  
     
@@ -77,35 +71,35 @@ Im Bereich **Snippets** werden Ihre Snippets aufgelistet.  Wenn Sie einen Aussch
        Das Fenster " **Quellen** " mit geöffnetem Seitenbereich auf der linken **Seite**  
     :::image-end:::  
     
-1.  Klicken Sie auf die Registerkarte **Snippets** , um den Bereich **Snippets** zu öffnen.  Möglicherweise müssen Sie auf **weitere Registerkarten** \ ( ![ weitere Registerkarten ][ImageMoreTabsIcon] \) klicken, um auf die Option **Snippets** zuzugreifen.  
+1.  Klicken Sie auf die Registerkarte **Snippets** , um den Bereich **Snippets** zu öffnen.  Möglicherweise müssen Sie **weitere Registerkarten** auswählen \ ( ![ weitere Registerkarten ][ImageMoreTabsIcon] \), um auf die Option **Snippets** zuzugreifen.  
     
-### Öffnen des Bereichs "Ausschnitte" mit dem Befehlsmenü   
+### Öffnen des Bereichs "Ausschnitte" mit dem Befehlsmenü  
 
 1.  Setzen Sie den Cursor an eine beliebige Stelle in der devtools.  
-1.  Drücken Sie `Control` + `Shift` + `P` \ (Windows \) oder `Command` + `Shift` + `P` \ (macOS \), um das Befehlsmenü zu öffnen.  
-1.  Beginnen `Snippets` Sie mit der Eingabe, wählen Sie **Snippets anzeigen**aus, und drücken Sie dann `Enter` , um den Befehl auszuführen.  
+1.  Wählen Sie `Control` + `Shift` + `P` \ (Windows, Linux \) oder `Command` + `Shift` + `P` \ (macOS \) aus, um das Befehlsmenü zu öffnen.  
+1.  Beginnen `Snippets` Sie mit der Eingabe, wählen Sie **Snippets anzeigen**aus, und wählen Sie dann aus, `Enter` um den Befehl auszuführen.  
     
     :::image type="complex" source="../media/javascript-search-show-snippets.msft.png" alt-text="Aussehen der Seite vor dem Ausführen des Snippets" lightbox="../media/javascript-search-show-snippets.msft.png":::
        Der Befehl ' **Snippets anzeigen** '  
     :::image-end:::  
     
-## Erstellen von Ausschnitten   
+## Erstellen von Ausschnitten  
 
-### Erstellen eines Snippets über das Quellen Panel   
+### Erstellen eines Snippets über das Quellen Panel  
 
 1.  [Öffnen Sie den Bereich **Snippets** ](#open-the-snippets-pane).  
-1.  Klicken Sie auf **neuer Ausschnitt**.  
-1.  Geben Sie einen Namen für das Snippet ein, und drücken Sie `Enter` zum Speichern.  
+1.  Wählen Sie **Neues Snippet**aus.  
+1.  Geben Sie einen Namen für das Snippet ein, und wählen Sie dann `Enter` Speichern aus.  
     
     :::image type="complex" source="../media/javascript-sources-snippets-naming.msft.png" alt-text="Aussehen der Seite vor dem Ausführen des Snippets" lightbox="../media/javascript-sources-snippets-naming.msft.png":::
        Benennen eines Snippets  
     :::image-end:::  
     
-### Erstellen eines Snippets über das Befehlsmenü   
+### Erstellen eines Snippets über das Befehlsmenü  
 
 1.  Setzen Sie den Cursor an eine beliebige Stelle in der devtools.  
-1.  Drücken Sie `Control` + `Shift` + `P` \ (Windows \) oder `Command` + `Shift` + `P` \ (macOS \), um das Befehlsmenü zu öffnen.  
-1.  Beginnen `Snippet` Sie mit der Eingabe, wählen Sie **Neues Snippet erstellen**aus, und drücken Sie dann `Enter` , um den Befehl auszuführen.  
+1.  Wählen Sie `Control` + `Shift` + `P` \ (Windows, Linux \) oder `Command` + `Shift` + `P` \ (macOS \) aus, um das Befehlsmenü zu öffnen.  
+1.  Beginnen `Snippet` Sie mit der Eingabe, wählen Sie **Neues Snippet erstellen**aus, und wählen Sie dann aus, `Enter` um den Befehl auszuführen.  
     
     :::image type="complex" source="../media/javascript-search-create-new-snippet.msft.png" alt-text="Aussehen der Seite vor dem Ausführen des Snippets" lightbox="../media/javascript-search-create-new-snippet.msft.png":::
        Der Befehl zum Erstellen eines neuen Snippets  
@@ -113,7 +107,7 @@ Im Bereich **Snippets** werden Ihre Snippets aufgelistet.  Wenn Sie einen Aussch
     
 Weitere Informationen finden Sie unter [Umbenennen von Snippets](#rename-snippets) , wenn Sie Ihrem neuen Snippet einen benutzerdefinierten Namen zuweisen möchten.  
 
-## Bearbeiten von Ausschnitten   
+## Bearbeiten von Ausschnitten  
 
 1.  [Öffnen Sie den Bereich **Snippets** ](#open-the-snippets-pane).  
 1.  Klicken Sie im Bereich **Snippets** auf den Namen des Ausschnitts, den Sie bearbeiten möchten, um ihn im **Code-Editor**zu öffnen.  
@@ -123,47 +117,45 @@ Weitere Informationen finden Sie unter [Umbenennen von Snippets](#rename-snippet
     :::image-end:::  
     
 1.  Verwenden Sie den **Code-Editor** , um Ihrem Snippet JavaScript hinzuzufügen.  
-1.  Wenn neben dem Namen des Snippets ein Sternchen angezeigt wird, bedeutet dies, dass Sie nicht gespeicherten Code haben. Drücken Sie `Control` + `S` \ (Windows \) oder `Command` + `S` \ (macOS \), um zu speichern.  
+1.  Wenn neben dem Namen des Snippets ein Sternchen angezeigt wird, bedeutet dies, dass Sie nicht gespeicherten Code haben. Wählen Sie `Control` + `S` \ (Windows, Linux \) oder `Command` + `S` \ (macOS \) aus, um Sie zu speichern.  
     
     :::image type="complex" source="../media/javascript-sources-snippets-editor-unsaved.msft.png" alt-text="Aussehen der Seite vor dem Ausführen des Snippets" lightbox="../media/javascript-sources-snippets-editor-unsaved.msft.png":::
        Ein Sternchen neben dem Namen des Snippets, das nicht gespeicherten Code angibt  
     :::image-end:::  
     
-## Ausführen von Ausschnitten   
+## Ausführen von Ausschnitten  
 
-### Ausführen eines Snippets im Quellen Panel   
+### Ausführen eines Snippets im Quellen Panel  
 
 1.  [Öffnen Sie den Bereich **Snippets** ](#open-the-snippets-pane).  
 1.  Klicken Sie auf den Namen des Ausschnitts, den Sie ausführen möchten.  Das Snippet wird im **Code-Editor**geöffnet.  
-1.  Klicken Sie auf **Snippet ausführen** \ ( ![ Snippet ausführen ][ImageRunSnippetIcon] ), oder drücken Sie `Control` + `Enter` \ (Windows \) oder `Command` + `Enter` \ (macOS \).  
+1.  Wählen Sie **Snippet ausführen** \ ( ![ Snippet ausführen ][ImageRunSnippetIcon] ) aus, oder wählen Sie `Control` + `Enter` \ (Windows, Linux \) oder `Command` + `Enter` \ (macOS \) aus.  
     
-### Ausführen eines Snippets mit dem Befehlsmenü   
+### Ausführen eines Snippets mit dem Befehlsmenü  
 
 1.  Setzen Sie den Cursor an eine beliebige Stelle in der devtools.  
-1.  Drücken Sie `Control` + `Shift` + `P` \ (Windows \) oder `Command` + `Shift` + `P` \ (macOS \), um das Befehlsmenü zu öffnen.  
+1.  Wählen Sie `Control` + `Shift` + `P` \ (Windows, Linux \) oder `Command` + `Shift` + `P` \ (macOS \) aus, um das Befehlsmenü zu öffnen.  
 1.  Löschen `>` Sie das Zeichen, und geben `!` Sie das Zeichen gefolgt vom Namen des Ausschnitts ein, den Sie ausführen möchten.  
     
     :::image type="complex" source="../media/javascript-search-run-command.msft.png" alt-text="Aussehen der Seite vor dem Ausführen des Snippets" lightbox="../media/javascript-search-run-command.msft.png":::
        Ausführen eines Snippets über das **Befehlsmenü**  
     :::image-end:::  
     
-1.  Drücken Sie `Enter` zum Ausführen des Snippets.  
+1.  Wählen Sie aus `Enter` , um den Ausschnitt auszuführen.  
 
-## Umbenennen von Ausschnitten   
+## Umbenennen von Ausschnitten  
 
 1.  [Öffnen Sie den Bereich **Snippets** ](#open-the-snippets-pane).  
-1.  Klicken Sie mit der rechten Maustaste auf den Snippet-Namen, und wählen Sie **Umbenennen**aus.  
+1.  Klicken Sie mit der rechten Maustaste auf den Ausschnitt Namen, und wählen Sie **Umbenennen**aus.  
     
-## Löschen von Ausschnitten   
+## Löschen von Ausschnitten  
 
 1.  [Öffnen Sie den Bereich **Snippets** ](#open-the-snippets-pane).  
 1.  Klicken Sie mit der rechten Maustaste auf den Snippet-Namen, und wählen Sie **Entfernen**aus.  
     
-<!--  
- 
+## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

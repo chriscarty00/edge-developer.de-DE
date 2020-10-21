@@ -3,16 +3,16 @@ description: Informationen zum Anzeigen von WebSQL-Daten aus dem Anwendungs Pane
 title: Anzeigen von WebSQL-Daten mit Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: cc2f726c80fbf0c943b43ff6c131e9479db75b78
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 0396a00ec354fdd707bc4d484242d4cf844db5f9
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993534"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125468"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,20 +28,14 @@ ms.locfileid: "10993534"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Anzeigen von WebSQL-Daten mit Microsoft Edge devtools   
-
-
+# Anzeigen von WebSQL-Daten mit Microsoft Edge devtools  
 
 > [!WARNING]
 > Die Web SQL-Spezifikation wird [nicht verwaltet][W3CWebSQLStatus].  
 
 Dieser Leitfaden zeigt, wie Sie [Microsoft Edge devtools][MicrosoftEdgeDevTools] verwenden, um Web SQL-Daten zu überprüfen.  
 
-## Anzeigen von Web SQL-Daten   
+## Anzeigen von Web SQL-Daten  
 
 1.  Wählen Sie die Registerkarte **Quellen** aus, um das **Quellen** Panel zu öffnen.  Der Bereich **Manifest** wird normalerweise standardmäßig geöffnet.  
     
@@ -61,27 +55,27 @@ Dieser Leitfaden zeigt, wie Sie [Microsoft Edge devtools][MicrosoftEdgeDevTools]
        Anzeigen der Daten einer Web SQL-Tabelle  
     :::image-end:::  
     
-## Bearbeiten von Web SQL-Daten   
+## Bearbeiten von Web SQL-Daten  
 
 Sie können keine Web SQL-Daten bearbeiten, wenn Sie eine Web SQL-Tabelle anzeigen, wie in **Abbildung 3 oben dargestellt** .  Sie können jedoch in der Web SQL-Konsole Anweisungen zum Bearbeiten oder Löschen von Tabellen ausführen.  Weitere Informationen finden Sie unter [Ausführen von WebSQL-Abfragen](#run-web-sql-queries).  
 
-## Ausführen von Web SQL-Abfragen   
+## Ausführen von Web SQL-Abfragen  
 
 1.  Wählen Sie eine Datenbank aus, um eine Konsole für diese Datenbank zu öffnen.  
-1.  Geben Sie eine Web SQL-Anweisung ein, und drücken Sie dann `Enter` , um Sie auszuführen.  
+1.  Geben Sie eine Web SQL-Anweisung ein, und wählen Sie Sie aus, `Enter` um Sie auszuführen.  
     
     :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png" alt-text="Bereich ' Manifest '" lightbox="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png":::
        Verwenden der Web SQL-Konsole zum Löschen einer Zeile aus einer Tabelle  
     :::image-end:::  
     
-## Aktualisieren einer Web SQL-Tabelle   
+## Aktualisieren einer Web SQL-Tabelle  
 
 DevTools aktualisiert Tabellen nicht in Echtzeit.  So aktualisieren Sie die Daten in einer Tabelle:  
 
 1.  [Anzeigen der Daten in einer SQL-Webtabelle](#view-web-sql-data)  
 1.  Wählen Sie **Aktualisieren** \ ( ![ aktualisieren ][ImageRefreshIcon] \) aus.  
     
-## Filtern von Spalten in einer SQL-Webtabelle   
+## Filtern von Spalten in einer SQL-Webtabelle  
 
 1.  [Anzeigen der Daten in einer SQL-Webtabelle](#view-web-sql-data)  
 1.  Verwenden Sie das Textfeld **sichtbare Spalten** , um anzugeben, welche Spalten angezeigt werden sollen.  Geben Sie die Spaltennamen als CSV-Liste an.  
@@ -90,7 +84,7 @@ DevTools aktualisiert Tabellen nicht in Echtzeit.  So aktualisieren Sie die Date
        Verwenden Sie das Textfeld " **sichtbare Spalten** ", um die Anzahl der angezeigten Spalten zu verringern.  
     :::image-end:::  
     
-## Löschen aller Web SQL-Daten   
+## Löschen aller Web SQL-Daten  
 
 1.  Öffnen Sie den Bereich **Speicher löschen** .  
 1.  Stellen Sie sicher, dass das Kontrollkästchen **Web SQL** aktiviert ist.  
@@ -105,11 +99,9 @@ DevTools aktualisiert Tabellen nicht in Echtzeit.  So aktualisieren Sie die Date
        Schaltfläche " **Website Daten löschen** "  
     :::image-end:::  
     
-<!--  
- 
+## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

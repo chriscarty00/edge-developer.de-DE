@@ -1,18 +1,18 @@
 ---
 description: Wenn Sie feststellen, dass Sie dieselben JavaScript-Ausdrücke wiederholt in die Konsole eingeben, versuchen Sie stattdessen, Live Ausdrücke zu verwenden.
-title: Sehen Sie sich die Werte für JavaScript-Ausdrücke in Echtzeit mit Live Ausdrücken an
+title: Sehen Sie sich die Werte für JavaScript-Ausdrücke in Real-Time mit Live Ausdrücken an
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 6b66c44b77cd50bc0c1575e5eceb7c8d1a01b709
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: f6787455863f738d0fa4e014ca8fc318ad83a9cb
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993114"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125230"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,32 +28,24 @@ ms.locfileid: "10993114"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Sehen Sie sich die Werte für JavaScript-Ausdrücke in Echtzeit mit Live Ausdrücken an   
-
-  
+# Sehen Sie sich die Werte für JavaScript-Ausdrücke in Real-Time mit Live Ausdrücken an  
 
 Wenn Sie feststellen, dass Sie denselben JavaScript-Ausdruck wiederholt in der Konsole eingeben, ist es möglicherweise einfacher, einen **Live Ausdruck**zu erstellen.  Mit **Live-Ausdrücken** geben Sie einen Ausdruck einmal ein und anheften ihn dann an den Anfang der Konsole.  Der Wert des Ausdrucks wird nahezu in Echtzeit aktualisiert.  
 
-## Erstellen eines Live Ausdrucks   
+## Erstellen eines Live Ausdrucks  
 
 1.  [Öffnen Sie die Konsole][DevToolsConsoleReferenceOpenConsole].  
-1.  Klicken Sie auf **Live Ausdruck erstellen** \ ( ![ Live Ausdruck erstellen ][ImageCreateLiveExpressionIcon] \).  Das Textfeld " **Live Ausdruck** " wird angezeigt.  
+1.  Wählen Sie **Live Ausdruck erstellen** \ ( ![ Live Ausdruck erstellen ][ImageCreateLiveExpressionIcon] \) aus.  Das Textfeld " **Live Ausdruck** " wird angezeigt.  
     
     :::image type="complex" source="../media/console-create-live-expression.msft.png" alt-text="Eingeben von Document. activeElement in das Textfeld &quot;Live Ausdruck&quot;" lightbox="../media/console-create-live-expression.msft.png":::
        Eingeben `document.activeElement` in das Textfeld " **Live Ausdruck** "  
     :::image-end:::  
     
-1.  Geben `Control` + `Enter` Sie \ (Windows \) oder `Command` + `Enter` \ (macOS \) ein, um den Ausdruck zu speichern, oder klicken Sie außerhalb des Textfeldes **Live Ausdruck** .  
+1.  Wählen Sie `Control` + `Enter` \ (Windows, Linux \) oder `Command` + `Enter` \ (macOS \) aus, um den Ausdruck zu speichern, oder wählen Sie außerhalb des **Live Ausdrucks** -TextBox aus.  
 
-<!--todo: add reference open console (open the console) section when available  -->  
+## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
- 
-
-
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

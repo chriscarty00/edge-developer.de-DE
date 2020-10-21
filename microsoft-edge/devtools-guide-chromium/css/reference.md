@@ -3,16 +3,16 @@ description: Entdecken Sie neue Workflows zum Anzeigen und Ändern von CSS in Mi
 title: CSS-Referenz
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: de0fb33e1e080045383f3c0fb50919297cbff5bc
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: a4c8d5ed7f3cf84f20b4b73531f871e17921b186
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993072"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125223"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -48,7 +48,7 @@ Mit dem Element Panel von devtools können **Sie das CSS** eines Elements gleich
 Verwenden Sie eine der folgenden Aktionen, um ein Element auszuwählen.  
 
 *   Zeigen Sie im Viewport auf das Element, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie über **prüfen**aus.  
-*   Wählen Sie in devtools **Element auswählen** \ ( ![ Element auswählen ][ImageSelectAnElementIcon] \) aus, oder wählen Sie `Control` + `Shift` + `C` \ (Windows \) oder `Command` + `Shift` + `C` \ (macOS \) aus, und wählen Sie dann das Element im Viewport aus.  
+*   Wählen Sie in devtools **Element auswählen** \ ( ![ Element auswählen ][ImageSelectAnElementIcon] \) aus, oder wählen Sie `Control` + `Shift` + `C` \ (Windows, Linux \) oder `Command` + `Shift` + `C` \ (macOS \) aus, und wählen Sie dann das Element im Viewport aus.  
 *   Wählen Sie in devtools das Element in der **DOM-Struktur**aus.  
 *   Führen Sie in devtools eine Abfrage wie `document.querySelector('p')` in der **Konsole**aus, zeigen Sie auf das Ergebnis, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie **im Dialogfeldelemente**anzeigen aus.  
 
@@ -58,7 +58,7 @@ Verwenden Sie eine der folgenden Aktionen, um ein Element auszuwählen.
 
 Wählen Sie im Bereich **Formatvorlagen** den Link neben einer CSS-Regel aus, um das externe Stylesheet zu öffnen, das die Regel definiert.  
 
-Wenn das Stylesheet minimierte ist, lesen Sie [Erstellen einer minimierte-Datei][DevToolsJavascriptReferenceFormat].  
+Wenn das Stylesheet minimierte ist, navigieren Sie, um [eine minimierte-Datei lesbar zu machen][DevToolsJavascriptReferenceFormat].  
 
 > [!NOTE]
 > In der folgenden Abbildung werden Sie nach der Auswahl `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2` an Zeile 2 von `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css` , in der die `.content h1:first-of-type` CSS-Regel definiert ist, weitergeleitet.  
@@ -145,7 +145,7 @@ Führen Sie die folgenden Aktionen aus, um eine Pseudoklasse wie, `:active` `:fo
    Umschalten der `:hover` Pseudoklasse  
 :::image-end:::  
 
-Ein interaktives Lernprogramm finden Sie unter [Hinzufügen eines PseudoState zu einer Klasse][DevToolsCSSGetStartedAddPseudoState].  
+Navigieren Sie zu einem interaktiven Lernprogramm, um einer [Klasse eine PseudoState hinzuzufügen][DevToolsCSSGetStartedAddPseudoState].  
 
 ### Anzeigen einer Seite im Druckmodus  
 
@@ -159,7 +159,7 @@ Führen Sie die folgenden Aktionen aus, um eine Seite im Druckmodus anzuzeigen.
 
 Auf der Registerkarte Coverage wird angezeigt, welche CSS-Seiten tatsächlich verwendet werden.  
 
-1.  Wählen Sie `Control` + `Shift` + `P` \ (Windows \) oder `Command` + `Shift` + `P` \ (macOS \) aus, während sich devtools im Fokus befindet, um [das Befehlsmenü zu öffnen][DevToolsCommandMenu].  
+1.  Wählen Sie `Control` + `Shift` + `P` \ (Windows, Linux \) oder `Command` + `Shift` + `P` \ (macOS \) aus, während sich devtools im Fokus befindet, um [das Befehlsmenü zu öffnen][DevToolsCommandMenu].  
 1.  Beginnen `coverage` Sie mit der Eingabe, und wählen Sie **Berichterstattung anzeigen**aus.  Die Registerkarte Coverage wird angezeigt.  
     
     :::row:::
@@ -205,7 +205,7 @@ Die Reihenfolge der Deklarationen wirkt sich darauf aus, wie ein Element formati
 *   [Fügen Sie eine Inline Deklaration hinzu](#add-an-inline-declaration).  Entspricht dem Hinzufügen eines `style` Attributs zum HTML-Code eines Elements.  
 *   [Hinzufügen einer Deklaration zu einer Formatvorlagenregel](#add-a-declaration-to-a-style-rule)  
 
-**Welchen Workflow sollten Sie verwenden?** In den meisten Fällen möchten Sie wahrscheinlich den Inline Deklarations Workflow verwenden.  Inline Deklarationen haben eine höhere Spezifität als externe, sodass der Inline-Workflow sicherstellt, dass die Änderungen in Ihrem erwarteten Element wirksam werden.  Weitere Informationen zur Spezifität finden Sie unter [Selector-Typen][MDNSelectorTypes].  
+**Welchen Workflow sollten Sie verwenden?** In den meisten Fällen möchten Sie wahrscheinlich den Inline Deklarations Workflow verwenden.  Inline Deklarationen haben eine höhere Spezifität als externe, sodass der Inline-Workflow sicherstellt, dass die Änderungen in Ihrem erwarteten Element wirksam werden.  Weitere Informationen zur Spezifität finden Sie unter Selektor- [Typen][MDNSelectorTypes].  
 
 Wenn Sie alle Formatvorlagen des Elements Debuggen und insbesondere testen möchten, was geschieht, wenn eine Deklaration an verschiedenen Stellen definiert ist, verwenden Sie den anderen Workflow.  
 
@@ -250,10 +250,10 @@ Wählen Sie den Namen oder den Wert einer Deklaration aus, und bearbeiten Sie ih
 
 Wenn Sie den Wert einer Deklaration bearbeiten, können Sie die folgenden Tastenkombinationen verwenden, um den Wert um einen bestimmten Betrag zu erhöhen.  
 
-*   Wählen Sie `Alt` + `Up` \ (Windows \) oder `Option` + `Up` \ (macOS \) aus, um den Wert zu erhöhen `0.1` .  
+*   Wählen Sie `Alt` + `Up` \ (Windows, Linux \) oder `Option` + `Up` \ (macOS \) aus, um den Wert zu erhöhen `0.1` .  
 *   Wählen Sie aus, `Up` um den Wert nach `1` oder nach zu ändern, `0.1` Wenn der aktuelle Wert zwischen `-1` und ist `1` .  
 *   Wählen Sie aus `Shift` + `Up` , um zu inkrementieren `10` .  
-*   Wählen Sie `Shift` + `Page Up` \ (Windows \) oder `Shift` + `Command` + `Up` \ (macOS \) aus, um den Wert zu erhöhen `100` .  
+*   Wählen Sie `Shift` + `Page Up` \ (Windows, Linux \) oder `Shift` + `Command` + `Up` \ (macOS \) aus, um den Wert zu erhöhen `100` .  
 
 Das Dekrementieren funktioniert auch.  Ersetzen Sie einfach alle `Up` oben genannten Instanzen durch `Down` .  
 
@@ -306,7 +306,7 @@ Führen Sie die folgenden Aktionen aus, um einer bestimmten Position auf der Reg
 
 1.  Zeigen Sie mit der Maus auf die Stilregel, die sich direkt darüber befindet, wo Sie die neue Stilregel hinzufügen möchten.  
 1.  [Blenden Sie die Symbolleiste " **Weitere Aktionen** " ein](#reveal-the-more-actions-toolbar).  
-1.  Wählen Sie **unter** \ (Stilregel ![ Einfügen unter \) die Option Stilregel einfügen aus ][ImageNewStyleRuleIcon] .  
+1.  Wählen Sie **unter** \ (Stilregel ![ Einfügen unter Symbol ][ImageNewStyleRuleIcon] \) die Option Stilregel einfügen aus.  
 
 :::image type="complex" source="../media/css-elements-styles-insert-style-rule-below.msft.png" alt-text="Ein Beispiel für ein ausgewähltes Element" lightbox="../media/css-elements-styles-insert-style-rule-below.msft.png":::
    **Einfügen einer Stilregel unten**  
@@ -360,7 +360,7 @@ Führen Sie die folgenden Aktionen aus, um einem Element eine Deklaration hinzuz
 
 1.  Zeigen Sie mit der Maus auf die Stilregel, der Sie die Deklaration hinzufügen möchten `background-color` .  
 1.  [Blenden Sie die Symbolleiste " **Weitere Aktionen** " ein](#reveal-the-more-actions-toolbar).  
-1.  Wählen Sie **Hintergrundfarbe hinzufügen** \ ( ![ Hintergrundfarbe hinzufügen ][ImageAddBackgroundColorIcon] \) aus.  
+1.  Wählen Sie **Hintergrundfarbe hinzufügen** \ ( ![ Symbol ' Hintergrundfarbe hinzufügen ][ImageAddBackgroundColorIcon] \) aus.  
 
 :::image type="complex" source="../media/css-elements-styles-rule-add-background-color.msft.png" alt-text="Ein Beispiel für ein ausgewähltes Element" lightbox="../media/css-elements-styles-rule-add-background-color.msft.png":::
    **Hinzufügen einer Hintergrundfarbe**  
@@ -372,7 +372,7 @@ Führen Sie die folgenden Aktionen aus, um einem Element eine Deklaration hinzuz
 
 1.  Zeigen Sie mit der Maus auf die Stilregel, der Sie die Deklaration hinzufügen möchten `color` .  
 1.  [Blenden Sie die Symbolleiste " **Weitere Aktionen** " ein](#reveal-the-more-actions-toolbar).  
-1.  Wählen Sie **Farbe hinzufügen** ( ![ Farbe hinzufügen ][ImageAddColorIcon] ) aus.  
+1.  Wählen Sie **Farbe hinzufügen** \ ( ![ Farbsymbol hinzufügen ][ImageAddColorIcon] \) aus.  
 
 :::image type="complex" source="../media/css-elements-styles-rule-add-color.msft.png" alt-text="Ein Beispiel für ein ausgewähltes Element" lightbox="../media/css-elements-styles-rule-add-color.msft.png":::
    **Farbe hinzufügen**  
@@ -384,7 +384,7 @@ Führen Sie die folgenden Aktionen aus, um einem Element eine Deklaration hinzuz
 
 1.  Zeigen Sie mit der Maus auf die Stilregel, der Sie die Deklaration hinzufügen möchten `box-shadow` .  
 1.  [Blenden Sie die Symbolleiste " **Weitere Aktionen** " ein](#reveal-the-more-actions-toolbar).  
-1.  Wählen Sie " **Feld Schatten hinzufügen** " aus ![ ][ImageAddBoxShadowIcon] .  
+1.  Wählen Sie **Feld Schatten hinzufügen** \ ( ![ Symbol ' Feld Schatten hinzufügen ][ImageAddBoxShadowIcon] \) aus.  
 
 :::image type="complex" source="../media/css-elements-styles-rule-add-box-shadow.msft.png" alt-text="Ein Beispiel für ein ausgewähltes Element" lightbox="../media/css-elements-styles-rule-add-box-shadow.msft.png":::
    **Feld Schatten hinzufügen**  
@@ -396,7 +396,7 @@ Führen Sie die folgenden Aktionen aus, um einem Element eine Deklaration hinzuz
 
 1.  Zeigen Sie mit der Maus auf die Stilregel, der Sie die Deklaration hinzufügen möchten `text-shadow` .  
 1.  [Blenden Sie die Symbolleiste " **Weitere Aktionen** " ein](#reveal-the-more-actions-toolbar).  
-1.  Wählen Sie **Text Schatten hinzufügen** \ ( ![ Text Schatten hinzufügen ][ImageAddTextShadowIcon] ) aus.  
+1.  Wählen Sie **Text Schatten hinzufügen** \ ( ![ Text Schatten Symbol hinzufügen ][ImageAddTextShadowIcon] \) aus.  
 
 :::image type="complex" source="../media/css-elements-styles-rule-add-text-shadow.msft.png" alt-text="Ein Beispiel für ein ausgewähltes Element" lightbox="../media/css-elements-styles-rule-add-text-shadow.msft.png":::
    **Hinzufügen von Text Schatten**  
@@ -449,7 +449,7 @@ Die folgende Abbildung und Listen beschreibt der einzelnen UI-Elemente der **Far
       **Pipette**  
    :::column-end:::
    :::column span="2":::
-      Weitere Informationen finden Sie unter [Beispiel für eine Farbe außerhalb der Seite mit der Pipette](#sample-a-color-off-the-page-with-the-eyedropper).  
+      Weitere Informationen finden Sie unter [Beispiel einer Farbe auf der Seite mit der Pipette](#sample-a-color-off-the-page-with-the-eyedropper).  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -544,6 +544,10 @@ Wenn Sie die **Farbauswahl**öffnen, ist die **Pipette** (Pipette ![ ][ImageEyed
        Verwenden der Pipette  
     :::image-end:::  
     
+## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+
 <!-- image links -->  
 
 [ImageAddBackgroundColorIcon]: ../media/add-background-color-icon.msft.png  

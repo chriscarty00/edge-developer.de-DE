@@ -3,16 +3,16 @@ description: Organisieren Sie Ressourcen nach Frame, Domäne, Typ oder anderen K
 title: Anzeigen von Seitenressourcen mit Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 4f90927cc4044c722d9a62ab4b0427aa2753e4c5
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: a243a400dd85b587a8f299a6b8bc3d3d463796b0
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993590"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125398"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,11 +28,7 @@ ms.locfileid: "10993590"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Anzeigen von Seitenressourcen mit Microsoft Edge devtools   
+# Anzeigen von Seitenressourcen mit Microsoft Edge devtools  
 
   
 
@@ -40,49 +36,49 @@ In diesem Leitfaden lernen Sie, wie Sie Microsoft Edge devtools verwenden, um di
 
 In diesem Leitfaden wird davon ausgegangen, dass Sie mit den Grundlagen der [Webentwicklung][MDNLearnWebDevelopment] und der [Microsoft Edge-devtools][MicrosoftEdgeDevTools]vertraut sind.  
 
-## Öffnen von Ressourcen   
+## Öffnen von Ressourcen  
 
 Wenn Sie den Namen der Ressource kennen, die Sie überprüfen möchten, bietet das **Befehlsmenü** eine schnelle Möglichkeit zum Öffnen der Ressource.  
 
-1.  Drücken Sie `Control` + `P` \ (Windows \) oder `Command` + `P` \ (macOS \).  Das Dialogfeld **Datei öffnen** wird geöffnet.  
+1.  Wählen Sie `Control` + `P` \ (Windows, Linux \) oder `Command` + `P` \ (macOS \) aus.  Das Dialogfeld **Datei öffnen** wird geöffnet.  
     
     :::image type="complex" source="../media/resources-command-menu-empty.msft.png" alt-text="Dialogfeld ' Datei öffnen '" lightbox="../media/resources-command-menu-empty.msft.png":::
        Dialogfeld ' **Datei öffnen** '  
     :::image-end:::  
     
-1.  Wählen Sie die Datei aus der Dropdownliste aus, oder geben Sie den Dateinamen ein, und drücken Sie `Enter` im Feld AutoVervollständigen, sobald die richtige Datei hervorgehoben ist.  
+1.  Wählen Sie die Datei aus der Dropdownliste aus, oder beginnen Sie mit der Eingabe des Datei namens, und wählen Sie `Enter` im Feld AutoVervollständigen die richtige Datei hervorgehoben aus.  
     
     :::image type="complex" source="../media/resources-command-menu-file-search.msft.png" alt-text="Dialogfeld ' Datei öffnen '" lightbox="../media/resources-command-menu-file-search.msft.png":::
        Geben Sie im Dialogfeld " **Datei öffnen** " einen Dateinamen ein.  
     :::image-end:::  
     
-### Öffnen von Ressourcen im Netzwerk Panel   
+### Öffnen von Ressourcen im Netzwerk Panel  
 
-Weitere Informationen finden Sie unter [Überprüfen der Details einer Ressource][DevtoolsNetworkInspectDetailsResource].  
+Navigieren Sie, um [die Details einer Ressource zu überprüfen][DevtoolsNetworkInspectDetailsResource].  
 
 :::image type="complex" source="../media/resources-network-response.msft.png" alt-text="Dialogfeld ' Datei öffnen '" lightbox="../media/resources-network-response.msft.png":::
    Überprüfen einer Ressource im **Netzwerk** Panel  
 :::image-end:::  
 
-### Anzeigen von Ressourcen im Netzwerk Panel von anderen Panels   
+### Anzeigen von Ressourcen im Netzwerk Panel von anderen Panels  
 
-Im Abschnitt [Ressourcen durchsuchen](#browse-resources) wird gezeigt, wie Sie Ressourcen aus verschiedenen Teilen der devtools-Benutzeroberfläche anzeigen können.  Wenn Sie jemals eine Ressource im **Netzwerk** Panel überprüfen möchten, klicken Sie mit der rechten Maustaste auf die Ressource, und wählen Sie **in der Netzwerksteuerung**anzeigen aus.  
+Im Abschnitt [Ressourcen durchsuchen](#browse-resources) wird gezeigt, wie Sie Ressourcen aus verschiedenen Teilen der devtools-Benutzeroberfläche anzeigen können.  Wenn Sie jemals eine Ressource im **Netzwerk** Panel überprüfen möchten, klicken Sie mit der rechten Maustaste auf die Ressource, und wählen Sie **im Netzwerk Panel**anzeigen aus.  
 
 :::image type="complex" source="../media/resources-sources-page-reveal-in-network-panel.msft.png" alt-text="Dialogfeld ' Datei öffnen '" lightbox="../media/resources-sources-page-reveal-in-network-panel.msft.png":::
    **Im Netzwerk Panel anzeigen**  
 :::image-end:::  
 
-## Ressourcen durchsuchen   
+## Ressourcen durchsuchen  
 
-### Durchsuchen von Ressourcen im Netzwerk Panel   
+### Durchsuchen von Ressourcen im Netzwerk Panel  
 
-Siehe [Protokoll Netzwerkaktivität][DevtoolsNetworkLogActivity].  
+Navigieren Sie zur [Protokoll Netzwerkaktivität][DevtoolsNetworkLogActivity].  
 
 :::image type="complex" source="../media/resources-network-resources.msft.png" alt-text="Dialogfeld ' Datei öffnen '" lightbox="../media/resources-network-resources.msft.png":::
    Seitenressourcen im **Netzwerk** Protokoll  
 :::image-end:::  
 
-### Durchsuchen nach Verzeichnissen   
+### Durchsuchen nach Verzeichnissen  
 
 So zeigen Sie die Ressourcen einer Seite an, die nach Verzeichnis geordnet ist:  
 
@@ -109,12 +105,12 @@ So zeigen Sie die Ressourcen einer Seite an, die nach Verzeichnis geordnet ist:
        Anzeigen einer Datei im **Editor**  
     :::image-end:::  
     
-### Nach Dateiname suchen   
+### Nach Dateiname suchen  
 
 Standardmäßig werden im **Seiten** Bereich Ressourcen nach Verzeichnis gruppiert.  So deaktivieren Sie diese Gruppierung und zeigen die Ressourcen für jede Domäne als flache Liste an:  
 
-1.  Öffnen des **Seiten** Bereichs  Siehe [Verzeichnis durchsuchen](#browse-by-directory).  
-1.  Klicken Sie auf **Weitere Optionen** `...` , und deaktivieren Sie " **Gruppieren nach"**.  
+1.  Öffnen des **Seiten** Bereichs  Navigieren Sie nach [Verzeichnis durchsuchen](#browse-by-directory).  
+1.  Wählen Sie **Weitere Optionen** aus `...` , und deaktivieren Sie " **Gruppieren nach"**.  
     
     :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text="Dialogfeld ' Datei öffnen '" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
        Die Option **"Gruppieren nach"**  
@@ -126,7 +122,7 @@ Standardmäßig werden im **Seiten** Bereich Ressourcen nach Verzeichnis gruppie
        **Seiten** Bereich nach Deaktivierung des **Ordners "Gruppieren nach"**  
     :::image-end:::  
     
-### Nach Dateityp suchen   
+### Nach Dateityp suchen  
 
 So gruppieren Sie Ressourcen basierend auf Ihrem Dateityp zusammen:  
 
@@ -149,19 +145,17 @@ So gruppieren Sie Ressourcen basierend auf Ihrem Dateityp zusammen:
        Anzeigen einer Ressource im **Anwendungs** Panel  
     :::image-end:::  
     
-#### Dateien nach Typ im Netzwerk Panel durchsuchen   
+#### Dateien nach Typ im Netzwerk Panel durchsuchen  
 
-Siehe [Filtern nach Ressourcentyp][DevtoolsNetworkFilterByResourceType].  
+Navigieren Sie zu [Filter nach Ressourcentyp][DevtoolsNetworkFilterByResourceType].  
 
 :::image type="complex" source="../media/resources-network-resources-filter-css.msft.png" alt-text="Dialogfeld ' Datei öffnen '" lightbox="../media/resources-network-resources-filter-css.msft.png":::
    Filtern nach CSS im **Netzwerk** Protokoll  
 :::image-end:::  
 
-<!--  
-  
+## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

@@ -3,16 +3,16 @@ description: Öffnen Sie das Befehl-Menü, und führen Sie den Befehl "JavaScrip
 title: Deaktivieren von JavaScript mit Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: de756e04c91768c49eed50debce97ae91fdaa3bd
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 4a200e2faa303a12d46fe2daf7ba89226a985b1f
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992799"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124719"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -33,13 +33,13 @@ ms.locfileid: "10992799"
 Führen Sie die folgenden Aktionen aus, um zu sehen, wie eine Webseite aussieht und sich verhält, wenn JavaScript deaktiviert ist.  
 
 1.  [Öffnen Sie Microsoft Edge devtools][DevToolsOpen].  
-1.  Drücken Sie `Control` + `Shift` + `P` \ (Windows \) oder `Command` + `Shift` + `P` \ (macOS \), um das **Befehlsmenü**zu öffnen.  
+1.  Wählen Sie `Control` + `Shift` + `P` \ (Windows, Linux \) oder `Command` + `Shift` + `P` \ (macOS \) aus, um das **Befehlsmenü**zu öffnen.  
     
     :::image type="complex" source="../media/javascript-console-command.msft.png" alt-text="Das Befehlsmenü" lightbox="../media/javascript-console-command.msft.png":::
        Das **Befehlsmenü**  
     :::image-end:::  
     
-1.  Beginnen `javascript` Sie mit der Eingabe, wählen Sie **JavaScript deaktivieren**aus, und drücken Sie dann `Enter` , um den Befehl auszuführen.  JavaScript ist jetzt deaktiviert.  
+1.  Beginnen `javascript` Sie mit der Eingabe, wählen Sie **JavaScript deaktivieren**aus, und wählen Sie dann aus `Enter` , um den Befehl auszuführen.  JavaScript ist jetzt deaktiviert.  
     
     :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="Das Befehlsmenü" lightbox="../media/javascript-console-command-javascript.msft.png":::
        Wählen Sie im **Befehlsmenü** **JavaScript deaktivieren** aus.  

@@ -3,16 +3,16 @@ description: Öffnen Sie die Registerkarte Sensoren, und wählen Sie in der List
 title: Überschreiben von Geolocation mit Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 269e7ca4bf259aa168c06ac0fd915604731463c4
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: f2bc395993ff59d88360a363b2c4bc12b570f1ab
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992988"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125013"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -36,14 +36,14 @@ Viele Websites nutzen den Standort des Benutzers, um den Benutzern eine wichtige
 
 Wenn Sie eine Benutzeroberfläche erstellen, die je nachdem, wo sich der Benutzer befindet, geändert wird, möchten Sie wahrscheinlich sicherstellen, dass sich die Website an verschiedenen Orten auf der ganzen Welt korrekt verhält.  Führen Sie die folgenden Aktionen aus, um Ihre Geoposition in Microsoft Edge devtools zu überschreiben.  
 
-1.  Drücken Sie `Control` + `Shift` + `P` \ (Windows \) oder `Command` + `Shift` + `P` \ (macOS \), um das **Befehlsmenü**zu öffnen.  
+1.  Wählen Sie `Control` + `Shift` + `P` \ (Windows, Linux \) oder `Command` + `Shift` + `P` \ (macOS \) aus, um das **Befehlsmenü**zu öffnen.  
     
     :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="Das Befehlsmenü" lightbox="../media/device-mode-console-command-menu.msft.png":::
        Das **Befehlsmenü**  
     :::image-end:::  
     
-1.  Tippen `sensors` Sie auf **Sensoren anzeigen**und dann auf `Enter` .  Die Registerkarte **Sensoren** wird unten im devtools-Fenster geöffnet.  
-1.  Wählen Sie in der Liste **Geolocation** eine der voreingestellten Städte aus, `Tokyo` oder wählen Sie **benutzerdefinierter Speicherort** aus, um benutzerdefinierte Längen-und Breitengradkoordinaten einzugeben, oder wählen Sie nicht **verfügbarer Speicherort** aus, um zu sehen, wie sich die Website verhält, wenn der Standort des Benutzers nicht verfügbar ist.  
+1.  Tippen `sensors` Sie auf **Sensoren anzeigen**, und wählen Sie aus `Enter` .  Die Registerkarte **Sensoren** wird unten im devtools-Fenster geöffnet.  
+1.  Wählen Sie in der Liste **Geolocation** eine der vordefinierten Städte aus, oder wählen Sie `Tokyo` **benutzerdefinierter Speicherort** aus, um benutzerdefinierte Längen-und Breitengradkoordinaten einzugeben, oder wählen Sie **Speicherort nicht verfügbar** aus, um zu sehen, wie sich die Website verhält, wenn der Standort des Benutzers nicht verfügbar ist.  
     
     :::image type="complex" source="../media/device-mode-console-sensors-geolocation-tokyo.msft.png" alt-text="Das Befehlsmenü" lightbox="../media/device-mode-console-sensors-geolocation-tokyo.msft.png":::
        Wählen Sie `Tokyo` aus der Liste **Geolocation** aus.  

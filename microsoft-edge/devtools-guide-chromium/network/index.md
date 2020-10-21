@@ -3,16 +3,16 @@ description: Ein Lernprogramm zu den am häufigsten verwendeten netzwerkbezogene
 title: Überprüfen der Netzwerkaktivität in Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 3629c2d3711716d6d4a837b29bffef4786eb6d3f
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: a55ff05e29817c483cbf13b8713ef37cf96424d5
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993450"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125426"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,13 +28,7 @@ ms.locfileid: "10993450"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Überprüfen der Netzwerkaktivität in Microsoft Edge devtools   
-
-
+# Überprüfen der Netzwerkaktivität in Microsoft Edge devtools  
 
 Hierbei handelt es sich um ein praktisches Lernprogramm einiger der am häufigsten verwendeten devtools-Features im Zusammenhang mit der Überprüfung der Netzwerkaktivität für eine Seite.  
 
@@ -48,7 +42,7 @@ Weitere Informationen finden Sie unter [Netzwerk Referenz][DevtoolsNetworkRefere
 > [!VIDEO embed/e1gAyQuIFQo]  
 -->
 
-## Verwendung des Netzwerk Panels   
+## Verwendung des Netzwerk Panels  
 
 Verwenden Sie im Allgemeinen das Netzwerk Panel, wenn Sie sicherstellen möchten, dass Ressourcen wie erwartet heruntergeladen oder hochgeladen werden.  Die häufigsten Anwendungsfälle für das Netzwerk Panel sind:  
 
@@ -57,7 +51,7 @@ Verwenden Sie im Allgemeinen das Netzwerk Panel, wenn Sie sicherstellen möchten
     
 Wenn Sie nach Möglichkeiten suchen, die Seiten Ladeleistung zu verbessern, beginnen Sie **nicht** mit dem Netzwerk Panel.  Es gibt viele Arten von Problemen mit der Auslastungs Leistung, die nicht mit der Netzwerkaktivität zusammenhängen.  Beginnen Sie mit dem Überwachungs Panel, da Sie gezielte Vorschläge zum Verbessern Ihrer Seite erhalten.  Weitere Informationen finden Sie unter [Optimieren der Website Geschwindigkeit][DevtoolsSpeedGetStarted].  
 
-## Öffnen des Netzwerk Panels   
+## Öffnen des Netzwerk Panels  
 
 Um dieses Lernprogramm optimal zu nutzen, öffnen Sie die Demo und testen Sie die Features auf der Demo-Seite.  
 
@@ -75,7 +69,7 @@ Um dieses Lernprogramm optimal zu nutzen, öffnen Sie die Demo und testen Sie di
     :::image-end:::  
     -->
     
-1.  [Öffnen Sie devtools][DevToolsOpen] , indem Sie `Control` + `Shift` + `J` \ (Windows \) oder `Command` + `Option` + `J` \ (macOS \) drücken.  Das **Konsolen** Fenster wird geöffnet.  
+1.  [Öffnen Sie devtools][DevToolsOpen] , indem Sie `Control` + `Shift` + `J` \ (Windows, Linux \) oder `Command` + `Option` + `J` \ (macOS \) drücken.  Das **Konsolen** Fenster wird geöffnet.  
     
     :::image type="complex" source="../media/network-glitch-console.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-console.msft.png":::
        Der **Konsole**  
@@ -87,15 +81,15 @@ Um dieses Lernprogramm optimal zu nutzen, öffnen Sie die Demo und testen Sie di
        DevTools an den unteren Rand des Fensters angedockt  
     :::image-end:::  
     
-1.  Wählen Sie die Registerkarte **Netzwerk** aus.  Das Netzwerkfenster wird geöffnet.  
+1.  Wählen Sie die Registerkarte **Netzwerk** aus.  Das **Netzwerk** Fenster wird geöffnet.  
     
     :::image type="complex" source="../media/network-glitch-network-bottom.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-bottom.msft.png":::
-       DevTools an den unteren Rand des Fensters angedockt  
+       **Konsolen** Tool im devtools, das am unteren Rand des Fensters angedockt ist  
     :::image-end:::  
     
 Im Moment ist das Netzwerk Panel leer.  DevTools protokolliert nur Netzwerkaktivitäten, nachdem Sie Sie geöffnet haben und seit dem Öffnen von devtools keine Netzwerkaktivität stattgefunden hat.  
 
-## Protokollieren von Netzwerkaktivitäten   
+## Protokollieren von Netzwerkaktivitäten  
 
 So zeigen Sie die Netzwerkaktivität an, die eine Seite verursacht:  
 
@@ -127,7 +121,7 @@ So zeigen Sie die Netzwerkaktivität an, die eine Seite verursacht:
        Eine neue Ressource im **Netzwerkprotokoll**  
     :::image-end:::  
     
-## Weitere Informationen anzeigen   
+## Weitere Informationen anzeigen  
 
 Die Spalten des Netzwerkprotokolls können konfiguriert werden.  Sie können Spalten, die Sie nicht verwenden, ausblenden.  
 Es gibt auch viele Spalten, die standardmäßig ausgeblendet sind, die Sie möglicherweise als nützlich empfinden.  
@@ -141,7 +135,7 @@ Es gibt auch viele Spalten, die standardmäßig ausgeblendet sind, die Sie mögl
     > [!TIP]
     > Zeigen Sie die vollständige URL einer Ressource an, indem Sie in der Spalte **Name** auf die Zelle zeigen.  
     
-## Simulieren einer langsameren Netzwerkverbindung   
+## Simulieren einer langsameren Netzwerkverbindung  
 
 Die Netzwerkverbindung des Computers, den Sie zum Erstellen von Websites verwenden, ist wahrscheinlich schneller als die Netzwerkverbindungen der mobilen Geräte ihrer Benutzer.  Durch Drosselung der Seite erhalten Sie eine bessere Vorstellung davon, wie lange eine Seite zum Laden auf einem mobilen Gerät dauert.  
 
@@ -168,7 +162,7 @@ Die Netzwerkverbindung des Computers, den Sie zum Erstellen von Websites verwend
     > [!NOTE]
     > Der Workflow " **leerer Cache" und "harter Reload** " steht nur zur Verfügung, wenn devtools geöffnet ist.  
     
-## Screenshots aufzeichnen   
+## Screenshots aufzeichnen  
 
 Mit Screenshots können Sie sehen, wie eine Seite im Laufe der Zeit aussah, während Sie geladen wurde.  
 
@@ -189,7 +183,7 @@ Mit Screenshots können Sie sehen, wie eine Seite im Laufe der Zeit aussah, wäh
 1.  Wählen Sie erneut \ ( ![ Netzwerkeinstellungen ][ImageSettingsIcon] \) aus, und deaktivieren Sie das Kontrollkästchen **Screenshots aufnehmen** , um den Bereich Screenshots zu schließen.
 1.  Laden Sie die Seite erneut.  
     
-## Überprüfen der Details der Ressource   
+## Überprüfen der Details der Ressource  
 
 Wählen Sie eine Ressource aus, um weitere Informationen dazu zu erhalten.  Probieren Sie es jetzt aus:  
 
@@ -228,7 +222,7 @@ Wählen Sie eine Ressource aus, um weitere Informationen dazu zu erhalten.  Prob
        Schaltfläche " **Schließen** "  
     :::image-end:::  
     
-## Durchsuchen von Netzwerk Kopfzeilen und-Antworten   
+## Durchsuchen von Netzwerk Kopfzeilen und-Antworten  
 
 Verwenden Sie den **Such** Bereich, wenn Sie die HTTP-Header und Antworten aller Ressourcen nach einer bestimmten Zeichenfolge oder einem regulären Ausdruck durchsuchen müssen.  
 
@@ -242,7 +236,7 @@ Angenommen, Sie möchten beispielsweise überprüfen, ob Ihre Ressourcen angemes
        Der **Such** Bereich  
     :::image-end:::  
     
-1.  Geben `Cache-Control` Sie ein, und drücken Sie `Enter` .  Der Suchbereich listet alle Instanzen auf `Cache-Control` , die in Ressourcen Kopfzeilen oder-Inhalten gefunden werden.  
+1.  Geben `Cache-Control` Sie ein, und wählen Sie aus `Enter` .  Der Suchbereich listet alle Instanzen auf `Cache-Control` , die in Ressourcen Kopfzeilen oder-Inhalten gefunden werden.  
     
     :::image type="complex" source="../media/network-glitch-network-search-cache-control.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-search-cache-control.msft.png":::
        Suchergebnisse‎‏ für:  `Cache-Control`  
@@ -260,7 +254,7 @@ Angenommen, Sie möchten beispielsweise überprüfen, ob Ihre Ressourcen angemes
        Die Schaltflächen " **Schließen** "  
     :::image-end:::  
     
-## Filtern von Ressourcen   
+## Filtern von Ressourcen  
 
 DevTools bietet zahlreiche Workflows zum Filtern von Ressourcen, die für die jeweilige Aufgabe nicht relevant sind.  
 
@@ -272,7 +266,7 @@ Die **Filter** Symbolleiste sollte standardmäßig aktiviert sein.  Wenn nicht,:
 
 1.  Wählen Sie **Filter** \ ( ![ Filter ][ImageFilterIcon] \) aus, um Sie anzuzeigen.  
     
-### Filtern nach Zeichenfolge, regulärem Ausdruck oder Eigenschaft   
+### Filtern nach Zeichenfolge, regulärem Ausdruck oder Eigenschaft  
 
 Das Textfeld " **Filter** " unterstützt viele verschiedene Filterarten.  
 
@@ -304,7 +298,7 @@ Das Textfeld " **Filter** " unterstützt viele verschiedene Filterarten.
     
 1.  Deaktivieren Sie das Textfeld " **Filter** " eines beliebigen Texts.  
     
-### Nach Ressourcentyp Filtern   
+### Nach Ressourcentyp Filtern  
 
 So konzentrieren Sie sich auf eine bestimmte Art von Datei, beispielsweise Stylesheets:  
 
@@ -314,7 +308,7 @@ So konzentrieren Sie sich auf eine bestimmte Art von Datei, beispielsweise Style
        Nur CSS-Dateien anzeigen  
     :::image-end:::  
     
-1.  Wenn Sie auch Skripts anzeigen möchten, halten Sie `Control` \ (Windows \) oder `Command` \ (macOS \) gedrückt, und wählen Sie dann **js**aus.  
+1.  Wenn Sie auch Skripts anzeigen möchten, halten Sie `Control` \ (Windows, Linux \) oder `Command` \ (macOS \) gedrückt, und wählen Sie dann **js**aus.  
     
     :::image type="complex" source="../media/network-glitch-network-filter-file-type-css-js.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-filter-file-type-css-js.msft.png":::
        Nur CSS-und JS-Dateien anzeigen  
@@ -324,17 +318,17 @@ So konzentrieren Sie sich auf eine bestimmte Art von Datei, beispielsweise Style
     
 Weitere Informationen finden Sie unter [Filteranforderungen][DevtoolsNetworkReferenceFilter] für andere Filter Workflows.  
 
-## Anfragen blockieren   
+## Anfragen blockieren  
 
 Wie wird eine Seite aussehen und sich Verhalten, wenn einige Seitenressourcen nicht verfügbar sind?  Funktioniert es nicht vollständig, oder ist es immer noch etwas funktionell?  Anfragen blockieren, um Folgendes zu erfahren:  
 
-1.  Drücken Sie `Control` + `Shift` + `P` \ (Windows \) oder `Command` + `Shift` + `P` \ (macOS \), um das **Befehlsmenü**zu öffnen.  
+1.  Wählen Sie `Control` + `Shift` + `P` \ (Windows, Linux \) oder `Command` + `Shift` + `P` \ (macOS \) aus, um das **Befehlsmenü**zu öffnen.  
     
     :::image type="complex" source="../media/network-glitch-network-cli-empty.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-cli-empty.msft.png":::
        Das **Befehlsmenü**  
     :::image-end:::  
     
-1.  Geben `block` Sie die Option **Blockierungs Anforderung anzeigen**ein, und drücken Sie `Enter` .  
+1.  Geben `block` Sie die Option **Blockierungs Anforderung anzeigen**ein, und wählen Sie aus `Enter` .  
     
     :::image type="complex" source="../media/network-glitch-network-cli-block.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-cli-block.msft.png":::
        **Anforderungs Blockierung anzeigen**  
@@ -347,7 +341,7 @@ Wie wird eine Seite aussehen und sich Verhalten, wenn einige Seitenressourcen ni
        Blockieren `main.css`  
     :::image-end:::  
     
-1.  Wählen Sie **Hinzufügen** aus.  
+1.  Wählen Sie **Hinzufügen**.  
 1.  Laden Sie die Seite neu.  Wie erwartet, wird das Design der Seite etwas durcheinander gebracht, da das Haupt-Stylesheet blockiert wurde.  
     
     > [!NOTE]
@@ -363,20 +357,11 @@ Wie wird eine Seite aussehen und sich Verhalten, wenn einige Seitenressourcen ni
 
 Herzlichen Glückwunsch, Sie haben das Lernprogramm abgeschlossen.  Sie wissen jetzt, wie Sie das **Netzwerk** Panel im Microsoft Edge-devtools verwenden!
 
-<!--
+Navigieren Sie zu der [Netzwerk Referenz][DevtoolsNetworkReference] , um weitere devtools-Features im Zusammenhang mit der Überprüfung von Netzwerkaktivitäten zu entdecken.  
 
+## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
-
-
--->  
-
-Schauen Sie sich die [Netzwerk Referenz][DevtoolsNetworkReference] an, um weitere devtools-Features im Zusammenhang mit der Überprüfung von Netzwerkaktivitäten zu entdecken.  
-
-<!--  
- 
-
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

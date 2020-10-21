@@ -3,16 +3,16 @@ description: Halten Sie den clientseitigen Code lesbar und debugfähigen, selbst
 title: Zuordnen von vorverarbeitetem Code zu Quellcode
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: bd04c7bae6f57d4fe3f9b293d70775aa99db3dd1
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: c16f59658217ab9dfb905bd814f96af21f95130d
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993233"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124681"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -50,7 +50,7 @@ In diesem Artikel wird erläutert, wie Sie mit JavaScript-Quell Karten im devtoo
 
 ## Verwenden eines unterstützten Präprozessors  
 
-Sie müssen ein minifier verwenden, das Quell Karten erstellen kann.  <!--For the most popular options, see the preprocessor support section.  -->  Eine erweiterte Ansicht finden Sie unter [Quell Karten: Sprachen, Tools und andere Info][GitHubWikiSourceMapsLanguagesTools] -Wiki-Seite.  
+Sie müssen ein minifier verwenden, das Quell Karten erstellen kann.  <!--For the most popular options, navigate to preprocessor support section.  -->  Navigieren Sie für eine erweiterte Ansicht zu [Quell Karten: Sprachen, Tools und andere Info][GitHubWikiSourceMapsLanguagesTools] -Wiki-Seite.  
 
 <!--todo: add link to see the preprocessor support section when section is available -->  
 <!--[]: /web/tools/setup/setup-preprocessors?#supported_preprocessors ""  -->  

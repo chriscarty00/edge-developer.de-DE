@@ -3,16 +3,16 @@ description: Ihr Job endet nicht mit der Sicherstellung, dass Ihre Website über
 title: Emulieren und Testen anderer Browser
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 1b76447aa86837abac88bc4727eb7f4ee082342a
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 1a7cc1c7e0a49760f30afdc16921824372b3a1aa
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992911"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124943"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -28,14 +28,7 @@ ms.locfileid: "10992911"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Emulieren und Testen anderer Browser   
-
-
-
+# Emulieren und Testen anderer Browser  
 
 Ihr Job endet nicht mit der Sicherstellung, dass Ihre Website über Microsoft Edge und Android hervorragend läuft.  Obwohl der Gerätemodus eine Reihe anderer Geräte wie iPhones simulieren kann, empfehlen wir Ihnen, Lösungen für die Emulation zu finden, die von anderen Browsern bereitgestellt wird.  
 
@@ -137,11 +130,9 @@ Wenn Sie nicht in der Lage sind, die Emulatoren zu verwenden und keinen Zugriff 
 *   Mit [SauceLabs (Commercial)][SauceLabs] können Sie Komponententests innerhalb eines Emulators ausführen, was für das Skripting eines Flows über Ihre Website und die anschließende Videoaufzeichnung auf verschiedenen Geräten nützlich sein kann.  Außerdem können Sie mit Ihrer Website manuelle Tests durchführen.  
 *   [Device Anywhere (kommerziell)][AppExperience] verwendet keine Emulatoren, sondern echte Geräte, die Sie remote steuern können.  Dies ist sehr nützlich für den Fall, dass Sie ein Problem auf einem bestimmten Gerät reproduzieren müssen und nicht in der Lage sind, den Fehler unter Verwendung einer der Optionen in den vorherigen Leitfäden anzuzeigen.  
 
-<!--  
- 
+## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

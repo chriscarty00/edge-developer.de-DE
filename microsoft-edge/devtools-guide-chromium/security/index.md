@@ -3,16 +3,16 @@ description: Überprüfen Sie mithilfe des Sicherheits Panels, ob eine Seite vol
 title: Grundlegendes zu Sicherheitsproblemen mit Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 2538f80b08c8162d27f075775075a8b81c5f7725
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 09f7e641ddd8da74c361980b9ce61b212a8477fe
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993576"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125384"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,11 +28,7 @@ ms.locfileid: "10993576"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Grundlegendes zu Sicherheitsproblemen mit Microsoft Edge devtools   
+# Grundlegendes zu Sicherheitsproblemen mit Microsoft Edge devtools  
 
   
 
@@ -40,20 +36,20 @@ ms.locfileid: "10993576"
 
 <!--todo: add section when why-https is available -->  
 
-## Öffnen des Fensters "Sicherheit"   
+## Öffnen des Fensters "Sicherheit"  
 
 Der Bereich " **Sicherheit** " ist der wichtigste Ort in devtools, um die Sicherheit einer Seite zu überprüfen.  
 
 1.  [Öffnen Sie devtools][DevToolsOpen].  
-1.  Klicken Sie auf die Registerkarte **Sicherheit** , um das **Sicherheits** Fenster zu öffnen.  
+1.  Wählen Sie die Registerkarte **Sicherheit** aus, um das **Sicherheits** Fenster zu öffnen.  
     
     :::image type="complex" source="../media/security-security-overview-secure.msft.png" alt-text="Das Sicherheitspanel" lightbox="../media/security-security-overview-secure.msft.png":::
        Das **Sicherheits** Panel  
     :::image-end:::  
     
-## Häufig auftretende Probleme   
+## Häufig auftretende Probleme  
 
-### Nicht sichere Haupt Ursprünge   
+### Nicht sichere Haupt Ursprünge  
 
 Wenn der Haupt Ursprung einer Seite nicht sicher ist, lautet die **Sicherheitsübersicht** , dass **Diese Seite nicht sicher ist**.  
 
@@ -70,7 +66,7 @@ Wenn Sie HTTPS auf dem Server nicht eingerichtet haben, können Sie durch [versc
 > [!TIP]
 > Der [use https][WebhintUseHttps] -Hinweis in [webhint][Webhint] kann dazu beitragen, den Vorgang zu automatisieren, um sicherzustellen, dass alle HTTP-Anforderungen an https weitergeleitet werden.  
 
-### Gemischter Inhalt   
+### Gemischter Inhalt  
 
 **Gemischte Inhalte** bedeuten, dass der Haupt Ursprung einer Seite sicher ist, die Seite jedoch Ressourcen von nicht sicheren Ursprüngen angefordert hat.  Gemischte Inhaltsseiten sind nur teilweise geschützt, da der HTTP-Inhalt für Sniffer zugänglich und anfällig für man-in-the-Middle-Angriffe ist.  
 
@@ -78,23 +74,23 @@ Wenn Sie HTTPS auf dem Server nicht eingerichtet haben, können Sie durch [versc
    Gemischter Inhalt  
 :::image-end:::  
 
-Klicken Sie in der vorherigen Abbildung auf **Ansicht 1 Anforderung in der Netzwerksteuerung** , um die **Netzwerk** Steuerung zu öffnen und den Filter anzuwenden, `mixed-content:displayed` damit im **Netzwerkprotokoll** nur nicht sichere Ressourcen angezeigt werden.  
+Wählen Sie in der vorherigen Abbildung **in der Netzwerksteuerung Ansicht 1 anfordern** aus, um die **Netzwerk** Steuerung zu öffnen und den Filter anzuwenden, `mixed-content:displayed` damit im **Netzwerkprotokoll** nur nicht sichere Ressourcen angezeigt werden.  
 
 :::image type="complex" source="../media/security-network-filter.msft.png" alt-text="Das Sicherheitspanel" lightbox="../media/security-network-filter.msft.png":::
    Gemischte Ressourcen im **Netzwerkprotokoll**  
 :::image-end:::  
 
-## Details anzeigen   
+## Details anzeigen  
 
-### Haupt Ursprungszertifikat anzeigen   
+### Haupt Ursprungszertifikat anzeigen  
 
-Klicken Sie in der **Sicherheitsübersicht**auf **Zertifikat anzeigen** , um das Zertifikat schnell auf den Haupt Ursprung zu überprüfen.  
+Wählen Sie in der **Übersicht Sicherheit**die Option **Zertifikat anzeigen** aus, um das Zertifikat schnell auf den Haupt Ursprung zu überprüfen.  
 
 :::image type="complex" source="../media/security-security-overview-secure-view-certificate.msft.png" alt-text="Das Sicherheitspanel" lightbox="../media/security-security-overview-secure-view-certificate.msft.png":::
    Ein Haupt Ursprungszertifikat  
 :::image-end:::  
 
-### Anzeigen von Ursprungs Details   
+### Anzeigen von Ursprungs Details  
 
 Klicken Sie auf einen der Einträge im Navigationsbereich auf der linken Seite, um die Details des Ursprungs anzuzeigen.  Auf der Seite "Details" können Sie die Verbindungs-und Zertifikatinformationen anzeigen.  Die Informationen zur Transparenz der Zertifikate werden ebenfalls angezeigt, wenn Sie verfügbar sind.  
 
@@ -102,18 +98,14 @@ Klicken Sie auf einen der Einträge im Navigationsbereich auf der linken Seite, 
    Details des Haupt Ursprungs  
 :::image-end:::  
 
-<!--  
- 
+## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
 [MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chrom)-Entwicklertools | Microsoft docs"  
 [DevToolsOpen]: ../open.md "Öffnen Sie Microsoft Edge devtools | Microsoft docs"  
-
-
 [LetsEncrypt]: https://letsencrypt.org "Verschlüsseln-﻿kostenlose SSL/TLS-Zertifikate"  
 
 [Webhint]: https://webhint.io "webhint"  

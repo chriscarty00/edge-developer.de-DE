@@ -3,16 +3,16 @@ description: Erfahren Sie, wie Sie Microsoft Edge und DevTools verwenden, um Spe
 title: Beheben von Speicherproblemen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: ef820353f81eb3fd791433e9c53434dff3b10a60
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 1d8a24fc360dc307471be33544c9c707736be06d
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992778"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125454"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -63,7 +63,7 @@ Der Schlüssel besteht darin, das Schienen Modell zu verwenden und sich auf die 
 
 Verwenden Sie den Microsoft Edge-Browser-Task-Manager als Ausgangspunkt für die Untersuchung des Speicherproblems.  Der Microsoft Edge-Browser-Task-Manager ist ein Echtzeitmonitor, der Ihnen mitteilt, wie viel Arbeitsspeicher eine Seite zurzeit verwendet.  
 
-1.  Drücken `Shift` + `Esc` oder wechseln Sie zum Hauptmenü von Microsoft Edge, und wählen Sie **Weitere Tools**  >  **Browser Task-Manager** aus, um den Task-Manager von Microsoft Edge-Browser zu öffnen.  
+1.  Wählen Sie aus `Shift` + `Esc` , oder wechseln Sie zum Microsoft Edge-Hauptmenü, und wählen Sie **Weitere Tools**  >  **Browser Task-Manager** aus, um den Task-Manager von Microsoft Edge-Browser zu öffnen.  
     
     :::image type="complex" source="../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png" alt-text="Öffnen des Task-Managers des Microsoft Edge-Browsers" lightbox="../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png":::
        Abbildung 1: Öffnen des Microsoft Edge-Browser-Task-Managers  
@@ -234,6 +234,10 @@ Wenn Ihre Seite häufig angehalten wird, haben Sie möglicherweise Probleme mit 
 Sie können entweder den Microsoft Edge-Browser-Task-Manager oder Leistungs Speicher Aufzeichnungen verwenden, um häufige Garbage Collection zu erkennen.  Im Microsoft Edge-Browser Task-Manager stellen häufig steigende und fallende **Speicher** -oder **JavaScript-Speicher** Werte häufige Garbage Collection dar.  In Leistungs Aufzeichnungen zeigen häufige Änderungen \ (steigende und fallende \) zu den js-Heap-oder Knotenanzahl-Diagrammen auf häufige Garbage Collection.  
 
 Nachdem Sie das Problem identifiziert haben, können Sie eine **Zuordnungs Instrumentation für die Zeitachsen** Aufzeichnung verwenden, um herauszufinden, wo Speicher reserviert wird und welche Funktionen die Zuweisungen verursachen.  
+
+## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

@@ -3,16 +3,16 @@ description: Öffnen Sie den Reiter "Rendering" und wählen Sie "emulieren von C
 title: Erzwingen von Microsoft Edge devtools in den Druckvorschau Modus (CSS-Druckmedientyp)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 1b71135c5ed2d86903b76e659434ee2125985a24
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: d4e8e06d60461ac4cdcab8686a18a0698d52f6e3
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993051"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125118"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,23 +28,17 @@ ms.locfileid: "10993051"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Erzwingen von Microsoft Edge devtools in den Druckvorschau Modus (CSS-Druckmedientyp)   
-
-
+# Erzwingen von Microsoft Edge devtools in den Druckvorschau Modus (CSS-Druckmedientyp)  
 
 Die [Druckmedien Abfrage][MDNUsingMediaQueries] steuert, wie Ihre Seite gedruckt aussieht.  So erzwingen Sie eine Seite in den Druckvorschau Modus:  
 
-1.  Drücken Sie `Control` + `Shift` + `P` \ (Windows \) oder `Command` + `Shift` + `P` \ (macOS \), um das **Befehlsmenü**zu öffnen.  
+1.  Wählen Sie `Control` + `Shift` + `P` \ (Windows, Linux \) oder `Command` + `Shift` + `P` \ (macOS \) aus, um das **Befehlsmenü**zu öffnen.  
     
     :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="Das Befehlsmenü" lightbox="../media/css-console-command-menu-rendering.msft.png":::
        Das **Befehlsmenü**  
     :::image-end:::  
     
-1.  Geben `rendering` Sie, wählen Sie **Rendering anzeigen**aus, und drücken Sie dann `Enter` .  
+1.  Tippen `rendering` Sie auf **Rendering anzeigen**, und wählen Sie dann aus `Enter` .  
 1.  Wählen Sie unter **emulieren von CSS-Medien** die Option **Drucken**aus.  
     
     :::image type="complex" source="../media/css-elements-styles-qs-rendering-emulate-css-media-print.msft.png" alt-text="Das Befehlsmenü" lightbox="../media/css-elements-styles-qs-rendering-emulate-css-media-print.msft.png":::
@@ -53,11 +47,9 @@ Die [Druckmedien Abfrage][MDNUsingMediaQueries] steuert, wie Ihre Seite gedruckt
     
 Von hier aus können Sie Ihre CSS wie jede andere Webseite anzeigen und ändern.  Weitere Informationen finden Sie unter [Erste Schritte beim Anzeigen und Ändern von CSS][DevToolsCSSGetStarted].  
 
-<!--  
- 
+## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

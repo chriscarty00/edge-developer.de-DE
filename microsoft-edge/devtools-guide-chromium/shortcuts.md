@@ -3,16 +3,16 @@ description: Die kanonische Dokumentation für Microsoft Edge devtools-Tastenkom
 title: Tastenkombinationen für Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/08/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: ab2e162af9b59e2ed92abc0cebf8e9fa2ac3a3d2
-ms.sourcegitcommit: 6b577cb118f34f3ff2c65eab2908b65f155dc151
+ms.openlocfilehash: 78e96fa3ae927a8aee24dfc18d4fa6ee515556a8
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "11003950"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125342"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -38,7 +38,7 @@ Sie können auch Tastenkombinationen in QuickInfos finden. Zeigen Sie mit der Ma
 
 Um devtools zu öffnen, wählen Sie die folgenden Tastenkombinationen aus, während sich der Cursor auf das Viewport des Browsers konzentriert.
 
-| Aktion | Windows | macOS |  
+| Aktion | Windows/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Öffnen eines beliebigen Panels, das Sie zuletzt verwendet haben | `F12` oder `Control`+`Shift`+`I` | `Command`+`Option`+`I` |  
 | Öffnen des **Konsolen** Panels | `Control`+`Shift`+`J` | `Command`+`Option`+`J` |  
@@ -48,7 +48,7 @@ Um devtools zu öffnen, wählen Sie die folgenden Tastenkombinationen aus, währ
 
 Die folgenden Tastenkombinationen stehen in den meisten, wenn nicht allen devtools-Panels zur Verfügung.
 
-| Aktion | Windows | macOS |  
+| Aktion | Windows/Linux | macOS |  
 |:--- |:--- |:--- |  
 | **Einstellungen** anzeigen | `?` oder `F1` | `?` oder `Function`+`F1` |  
 | Fokussieren des nächsten Panels | `Control`+`]` | `Command`+`]` |  
@@ -73,7 +73,7 @@ Die folgenden Tastenkombinationen stehen in den meisten, wenn nicht allen devtoo
 
 ## Tastenkombinationen im Element Panel  
 
-| Aktion | Windows | macOS |  
+| Aktion | Windows/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Rückgängigmachen der Änderung | `Control`+`Z` | `Command`+`Z` |  
 | Änderung wiederholen | `Control`+`Y` | `Command`+`Shift`+`Z` |  
@@ -88,7 +88,7 @@ Die folgenden Tastenkombinationen stehen in den meisten, wenn nicht allen devtoo
 
 ### Tastenkombinationen für den Bereich "Formatvorlagen"  
 
-| Aktion | Windows | macOS |  
+| Aktion | Windows/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Wechseln zu der Zeile, in der ein Eigenschaftswert deklariert ist | Halten `Control` Sie den Eigenschaftswert, und wählen Sie ihn aus. | Halten `Command` Sie den Eigenschaftswert, und wählen Sie ihn aus. |  
 | Durchlaufen der RBGA-, HSLA-und Hex-Darstellungen eines Color-Werts | Halten `Shift` Sie das Kontrollkästchen **Farbvorschau** neben dem Wert | Halten `Shift` Sie das Kontrollkästchen **Farbvorschau** neben dem Wert |  
@@ -100,7 +100,7 @@ Die folgenden Tastenkombinationen stehen in den meisten, wenn nicht allen devtoo
 
 ## Tastenkombinationen für das Quellen Panel  
 
-| Aktion | Windows | macOS |  
+| Aktion | Windows/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Unterbrechen der Skriptlaufzeit \ (sofern zurzeit ausgeführt wird \) oder fortsetzen \ (Wenn aktuell angehalten \) | `F8` oder `Control`+`\` | `F8` oder `Command`+`\` |  
 | Schritt zum nächsten Funktionsaufruf | `F10` oder `Control`+`'` | `F10` oder `Command`+`'` |  
@@ -118,7 +118,7 @@ Die folgenden Tastenkombinationen stehen in den meisten, wenn nicht allen devtoo
 
 ### Tastenkombinationen im Code-Editor  
 
-| Aktion | Windows | macOS |  
+| Aktion | Windows/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Löschen aller Zeichen im letzten Wort bis zum Cursor | `Control`+`Delete` | `Option`+`Delete` |  
 | Hinzufügen oder Entfernen eines [Haltepunkts für die Codezeile][DevtoolsJavascriptBreakpointsLOC] | Fokussieren Sie den Cursor auf die Linie, und wählen Sie dann `Control`+`B` | Fokussieren Sie den Cursor auf die Linie, und wählen Sie dann `Command`+`B` |  
@@ -128,7 +128,7 @@ Die folgenden Tastenkombinationen stehen in den meisten, wenn nicht allen devtoo
 
 ## Tastenkombinationen im Leistungs Panel  
 
-| Aktion | Windows | macOS |  
+| Aktion | Windows/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Aufzeichnung starten/beenden | `Control`+`E` | `Command`+`E` |  
 | Speichern der Aufzeichnung | `Control`+`S` | `Command`+`S` |  
@@ -136,13 +136,13 @@ Die folgenden Tastenkombinationen stehen in den meisten, wenn nicht allen devtoo
 
 ## Tastenkombinationen im Speicher Panel  
 
-| Aktion | Windows | macOS |  
+| Aktion | Windows/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Aufzeichnung starten/beenden | `Control`+`E` | `Command`+`E` |  
 
 ## Tastenkombinationen im Konsolenfeld  
 
-| Aktion | Windows | macOS |  
+| Aktion | Windows/Linux | macOS |  
 |:--- |:--- |:--- |  
 | AutoVervollständigen-Vorschlag akzeptieren | `Right Arrow` oder `Tab` | `Right Arrow` oder `Tab` |  
 | Vorschlag für AutoVervollständigen ablehnen | `Escape` | `Escape` |  

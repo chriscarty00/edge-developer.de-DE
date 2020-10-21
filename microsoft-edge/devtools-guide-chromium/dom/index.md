@@ -3,16 +3,16 @@ description: Hier erfahren Sie, wie Sie Knoten anzeigen, nach Knoten suchen, Kno
 title: Erste Schritte beim Anzeigen und Ändern des DOM
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 555e627b70f0cc5e50c0676cf90067c2709a9ae3
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 8c0b544f2c4717a01d09c287f1167c81456a97f3
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992953"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125027"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,13 +28,7 @@ ms.locfileid: "10992953"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Erste Schritte beim Anzeigen und Ändern des DOM   
-
-
+# Erste Schritte beim Anzeigen und Ändern des DOM  
 
 Führen Sie diese interaktiven Lernprogramme aus, um die Grundlagen zum Anzeigen und Ändern des DOM einer Seite mit Microsoft Edge devtools zu erfahren.  
 
@@ -42,20 +36,20 @@ In diesem Lernprogramm wird davon ausgegangen, dass Sie den Unterschied zwischen
 
 ## Öffnen von Dom-Beispielen  
 
-1.  Halten `Control` Sie \ (Windows \) oder `Command` \ (macOS \) gedrückt, und klicken Sie auf **DOM-Beispiele** , um Sie in einer neuen Registerkarte zu öffnen.  
+1.  Halten `Control` Sie \ (Windows, Linux \) oder `Command` \ (macOS \) gedrückt, und wählen Sie **DOM-Beispiele** aus, die auf einer neuen Registerkarte geöffnet werden sollen.  
     
     [DOM-Beispiele][GlitchDomExamples]  
     
-## DOM-Knoten anzeigen   
+## DOM-Knoten anzeigen  
 
 In der DOM-Struktur des Elements Panels werden alle DOM-bezogenen Aktivitäten in devtools durchführen.  
 
-### Überprüfen eines Knotens   
+### Überprüfen eines Knotens  
 
 Wenn Sie an einem bestimmten DOM-Knoten interessiert sind, ist über **prüfen** eine schnelle Möglichkeit, devtools zu öffnen und diesen Knoten zu untersuchen.  
 
 1.  [Öffnen Sie DOM-Beispiele](#open-dom-examples).  
-1.  Klicken Sie unter **Knoten prüfen mit der**rechten Maustaste auf **Michelangelo** , und wählen Sie über **prüfen**aus.  
+1.  Wählen Sie unter **Knoten überprüfen die**Option **Michelangelo** aus, und wählen Sie über **prüfen**aus.  
     
     :::image type="complex" source="../media/dom-glitch-dom-examples-michelangelo-inspect.msft.png" alt-text="Überprüfen eines Knotens" lightbox="../media/dom-glitch-dom-examples-michelangelo-inspect.msft.png":::
        Überprüfen eines Knotens  
@@ -77,12 +71,12 @@ Wenn Sie an einem bestimmten DOM-Knoten interessiert sind, ist über **prüfen**
 
 Das Überprüfen eines Knotens ist auch der erste Schritt zum Anzeigen und Ändern der Formatvorlagen eines Knotens.  Weitere Informationen finden Sie unter [Erste Schritte beim Anzeigen und Ändern von CSS][DevToolsCssGetStarted].  
 
-### Navigieren in der DOM-Struktur mithilfe einer Tastatur   
+### Navigieren in der DOM-Struktur mithilfe einer Tastatur  
 
 Nachdem Sie einen Knoten in der DOM-Struktur ausgewählt haben, können Sie mit der Tastatur in der DOM-Struktur navigieren.  
 
 1.  [Öffnen Sie DOM-Beispiele](#open-dom-examples).  
-1.  Klicken Sie unter **der DOM-Struktur mit einer Tastatur navigieren mit der**rechten Maustaste auf **Ringo** , und wählen Sie über **prüfen**aus.  `<li>Ringo</li>` ist in der DOM-Struktur ausgewählt.  
+1.  Wählen Sie unter **DOM-Struktur mit einer Tastatur navigieren mit der**rechten Maustaste **Ringo** aus, und wählen Sie über **prüfen**aus.  `<li>Ringo</li>` ist in der DOM-Struktur ausgewählt.  
     
     :::image type="complex" source="../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ringo.msft.png" alt-text="Überprüfen eines Knotens" lightbox="../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ringo.msft.png":::
        Überprüfen des `Ringo` Knotens  
@@ -99,7 +93,7 @@ Nachdem Sie einen Knoten in der DOM-Struktur ausgewählt haben, können Sie mit 
     1.  Drücken Sie `Down` zweimal die Pfeiltaste, damit Sie die `<ul>` Liste, die Sie soeben reduziert haben, erneut ausgewählt haben.  Es sollte wie folgt aussehen: `<ul>... </ul>`  
     1.  Drücken Sie die `Right` Pfeiltaste.  Die Liste wird erweitert.  
 
-### Scrollen Sie in die Ansicht   
+### Scrollen Sie in die Ansicht  
 
 Wenn Sie die DOM-Struktur anzeigen, sind Sie möglicherweise an einem DOM-Knoten interessiert, der sich derzeit nicht im Viewport befindet.  Angenommen, Sie haben einen Bildlauf zum Ende der Seite durchgeführt, und Sie sind an dem `<h1>` Knoten oben auf der Seite interessiert.  Durch **Scrollen in die Ansicht** können Sie das Ansichtsfenster schnell neu positionieren, damit Sie den Knoten sehen können.  
 
@@ -113,12 +107,12 @@ Wenn Sie die DOM-Struktur anzeigen, sind Sie möglicherweise an einem DOM-Knoten
        **Scrollen Sie in die Ansicht**  
     :::image-end:::  
 
-### Suchen nach Knoten   
+### Suchen nach Knoten  
 
 Sie können die DOM-Struktur nach Zeichenfolge, CSS-Auswahl oder XPath-Auswahl Durchsuchen.  
 
 1.  Fokussieren Sie den Cursor auf das **Element** Panel.  
-1.  Drücken Sie `Control` + `F` \ (Windows \) oder `Command` + `F` \ (macOS \).  Die Suchleiste wird am unteren Rand der DOM-Struktur geöffnet.  
+1.  Wählen Sie `Control` + `F` \ (Windows, Linux \) oder `Command` + `F` \ (macOS \) aus.  Die Suchleiste wird am unteren Rand der DOM-Struktur geöffnet.  
 1.  Geben Sie `The Moon is a Harsh Mistress` ein.  Der letzte Satz ist in der DOM-Struktur hervorgehoben.  
     
     :::image type="complex" source="../media/dom-elements-highlighted-search-nodes-highlight.msft.png" alt-text="Überprüfen eines Knotens" lightbox="../media/dom-elements-highlighted-search-nodes-highlight.msft.png":::
@@ -127,11 +121,11 @@ Sie können die DOM-Struktur nach Zeichenfolge, CSS-Auswahl oder XPath-Auswahl D
     
 Wie bereits erwähnt, unterstützt die Suchleiste auch CSS-und XPath-Auswahlen.  
 
-## Bearbeiten des DOM   
+## Bearbeiten des DOM  
 
 Sie können das Dom im Handumdrehen bearbeiten und sehen, wie sich diese Änderungen auf die Seite auswirken.  
 
-### Bearbeiten von Inhalten   
+### Bearbeiten von Inhalten  
 
 Um den Inhalt eines Knotens zu bearbeiten, doppelklicken Sie auf den Inhalt in der DOM-Struktur.  
 
@@ -143,9 +137,9 @@ Um den Inhalt eines Knotens zu bearbeiten, doppelklicken Sie auf den Inhalt in d
            Bearbeiten des Texts  
         :::image-end:::  
         
-    1.  Löschen `Michelle` Sie, geben `Leela` Sie ein, und drücken Sie dann, `Enter` um die Änderung zu bestätigen.  Der Text im Dom wechselt von **Michelle** zu **Leela**.  
+    1.  Löschen `Michelle` Sie, geben `Leela` Sie ein, und wählen Sie dann aus, `Enter` um die Änderung zu bestätigen.  Der Text im Dom wechselt von **Michelle** zu **Leela**.  
 
-### Bearbeiten von Attributen   
+### Bearbeiten von Attributen  
 
 Um Attribute zu bearbeiten, doppelklicken Sie auf den Attributnamen oder-Wert.  Befolgen Sie die Anweisungen, um zu erfahren, wie Sie einem Knoten Attribute hinzufügen.  
 
@@ -157,31 +151,31 @@ Um Attribute zu bearbeiten, doppelklicken Sie auf den Attributnamen oder-Wert.  
        Bearbeiten des Knotens  
     :::image-end:::  
     
-1.  Drücken Sie die `Right` Pfeiltaste, fügen Sie ein Leerzeichen hinzu, geben Sie ein `style="background-color:gold"` , und drücken Sie dann `Enter` .  Die Hintergrundfarbe des Knotens ändert sich in Gold.  
+1.  Drücken Sie die `Right` Pfeiltaste, fügen Sie ein Leerzeichen hinzu, geben `style="background-color:gold"` Sie ein, und wählen Sie dann aus `Enter` .  Die Hintergrundfarbe des Knotens ändert sich in Gold.  
     
     :::image type="complex" source="../media/dom-elements-highlighted-edit-attributes-inline-css.msft.png" alt-text="Überprüfen eines Knotens" lightbox="../media/dom-elements-highlighted-edit-attributes-inline-css.msft.png":::
        Hinzufügen eines `style` Attributs zum Knoten  
     :::image-end:::  
     
-### Knotentyp bearbeiten   
+### Knotentyp bearbeiten  
 
 Um den Typ eines Knotens zu bearbeiten, doppelklicken Sie auf den Typ, und geben Sie dann den neuen Typ ein.  
 
 1.  [Öffnen Sie DOM-Beispiele](#open-dom-examples).  
 1.  Klicken Sie unter **Knotentyp bearbeiten**mit der rechten Maustaste auf **Hank** , und wählen Sie über **prüfen**aus.  
     1.  Doppelklicken Sie auf `<li>` .  Der Text `li` ist hervorgehoben.  
-    1.  Löschen `li` Sie, geben `button` Sie ein, und drücken Sie dann `Enter` .  Der `<li>` Knoten wird in einen `<button>` Knoten geändert.  
+    1.  Löschen `li` Sie, geben `button` Sie ein, und wählen Sie dann aus `Enter` .  Der `<li>` Knoten wird in einen `<button>` Knoten geändert.  
         
         :::image type="complex" source="../media/dom-elements-highlighted-edit-node-type-button.msft.png" alt-text="Überprüfen eines Knotens" lightbox="../media/dom-elements-highlighted-edit-node-type-button.msft.png":::
            Ändern des Knotentyps in `button`  
         :::image-end:::  
         
-### Neuanordnen von DOM-Knoten   
+### Neuanordnen von DOM-Knoten  
 
 Ziehen Sie Knoten, um Sie neu anzuordnen.  
 
 1.  [Öffnen Sie DOM-Beispiele](#open-dom-examples).  
-1.  Klicken Sie unter **DOM-Knoten neu anordnen**mit der rechten Maustaste auf **Elvis Presley** , und wählen Sie über **prüfen**aus.  
+1.  Klicken Sie unter **DOM-Knoten neu anordnen**auf **Elvis Presley** , und wählen Sie über **prüfen**aus.  
     
     > [!NOTE]
     > Dies ist das letzte Element in der Liste.  
@@ -192,21 +186,21 @@ Ziehen Sie Knoten, um Sie neu anzuordnen.
            Ziehen des Knotens an den Anfang der Liste  
         :::image-end:::  
         
-### Zustand erzwingen   
+### Zustand erzwingen  
 
 Sie können die Knoten zwingen, in Zuständen wie,,, und zu bleiben `:active` `:hover` `:focus` `:visited` `:focus-within` .  
 
 1.  [Öffnen Sie DOM-Beispiele](#open-dom-examples).  
 1.  Zeigen Sie unter **Kraftzustand**auf **den Lord of the Flies**.  Die Hintergrundfarbe wird Orange.  
-    1.  Klicken Sie mit der rechten Maustaste auf **den Lord of the Flies** , und wählen Sie über **prüfen**aus.  
+    1.  Klicken Sie mit der rechten Maustaste **auf den Lord of the Flies** und wählen Sie **prüfen**aus.  
     1.  Klicken Sie mit der rechten Maustaste `<li class="demo--hover">The Lord of the Flies</li>` , und wählen Sie **Zustand erzwingen**  >  **: hover**aus.  Siehe [Anhang: fehlende Optionen](#appendix-missing-options) , wenn diese Option nicht angezeigt wird.  Die Hintergrundfarbe bleibt Orange, auch wenn Sie nicht tatsächlich über den Knoten zeigen.  
 
-### Ausblenden eines Knotens   
+### Ausblenden eines Knotens  
 
-Drücken Sie `H` , um einen Knoten auszublenden.  
+Wählen Sie aus `H` , um einen Knoten auszublenden.  
 
 1.  [Öffnen Sie DOM-Beispiele](#open-dom-examples).  
-1.  Klicken Sie unter **Knoten ausblenden**mit der rechten Maustaste auf **das Sternchen mein Ziel** , und wählen Sie über **prüfen**aus.  
+1.  Klicken Sie unter **Knoten ausblenden**mit der rechten Maustaste auf **den Stern mein Ziel** , und wählen Sie über **prüfen**aus.  
     1.  Drücken Sie die Eingabe `H` Taste.  Der Knoten ist ausgeblendet.  
         
         :::image type="complex" source="../media/dom-elements-highlighted-hide-a-node.msft.png" alt-text="Überprüfen eines Knotens" lightbox="../media/dom-elements-highlighted-hide-a-node.msft.png":::
@@ -215,25 +209,25 @@ Drücken Sie `H` , um einen Knoten auszublenden.
         
     1.  Drücken Sie die `H` Taste erneut.  Der Knoten wird wieder angezeigt.  
 
-### Löschen eines Knotens   
+### Löschen eines Knotens  
 
-Drücken Sie `Delete` , um einen Knoten zu löschen.  
+Wählen Sie aus `Delete` , um einen Knoten zu löschen.  
 
 1.  [Öffnen Sie DOM-Beispiele](#open-dom-examples).  
-1.  Klicken Sie unter **Knoten löschen mit der**rechten Maustaste auf **Foundation** , und wählen Sie über **prüfen**aus.  
+1.  Klicken Sie unter **Knoten löschen mit der**rechten Maustaste auf **Fundament** , und wählen Sie über **prüfen**aus.  
     1.  Drücken Sie die Eingabe `Delete` Taste.  Der Knoten wird gelöscht.  
-    1.  Drücken Sie `Control` + `Z` \ (Windows \) oder `Command` + `Z` \ (macOS \).  Die letzte Aktion wird rückgängig gemacht, und der Knoten wird wieder angezeigt.  
+    1.  Wählen Sie `Control` + `Z` \ (Windows, Linux \) oder `Command` + `Z` \ (macOS \) aus.  Die letzte Aktion wird rückgängig gemacht, und der Knoten wird wieder angezeigt.  
 
-## Access-Knoten in der Konsole   
+## Access-Knoten in der Konsole  
 
 DevTools bietet einige Tastenkombinationen für den Zugriff auf DOM-Knoten über die Konsole oder das Abrufen von JavaScript-verweisen auf jede einzelne.  
 
-### Verweisen auf den aktuell ausgewählten Knoten mit $0   
+### Verweisen auf den aktuell ausgewählten Knoten mit $0  
 
 Wenn Sie einen Knoten überprüfen, `== $0` bedeutet der Text neben dem Knoten, dass Sie auf diesen Knoten in der Konsole mit der Variablen verweisen können `$0` .  
 
 1.  [Öffnen Sie DOM-Beispiele](#open-dom-examples).  
-1.  Klicken Sie unter **Verweis auf den aktuell ausgewählten Knoten mit $0 mit**der rechten Maustaste auf **die linke Hand der Dunkelheit** , und wählen Sie über **prüfen**aus.  
+1.  Wählen Sie unter **Bezug auf den aktuell ausgewählten Knoten mit $0 mit**der rechten Maustaste **die linke Hand von Darkness** aus, und wählen Sie über **prüfen**aus.  
     1.  Drücken Sie die Eingabe `Escape` Taste, um den Konsolen Einzug zu öffnen.  
     1.  Geben `$0` Sie ein, und drücken Sie die Eingabe `Enter` Taste.  Das Ergebnis des Ausdrucks zeigt, dass `$0` ausgewertet wird `<li>The Left Hand of Darkness</li>` .  
         
@@ -242,85 +236,85 @@ Wenn Sie einen Knoten überprüfen, `== $0` bedeutet der Text neben dem Knoten, 
         :::image-end:::  
         
     1.  Zeigen Sie mit der Maus auf das Ergebnis.  Der Knoten ist im Viewport hervorgehoben.  
-    1.  Klicken Sie `<li>Dune</li>` in die DOM-Struktur, geben Sie `$0` die Konsole erneut ein, und drücken Sie dann `Enter` erneut.  Wird nun `$0` ausgewertet `<li>Dune</li>` .  
+    1.  Klicken Sie `<li>Dune</li>` in die DOM-Struktur, geben Sie `$0` die Konsole erneut ein, und wählen Sie dann `Enter` erneut aus.  Wird nun `$0` ausgewertet `<li>Dune</li>` .  
         
         :::image type="complex" source="../media/dom-elements-highlighted-reference-currently-selected-node-console-2.msft.png" alt-text="Überprüfen eines Knotens" lightbox="../media/dom-elements-highlighted-reference-currently-selected-node-console-2.msft.png":::
            Das Ergebnis des zweiten `$0` Ausdrucks in der **Konsole**  
         :::image-end:::  
         
-### Speichern als globale Variable   
+### Speichern als globale Variable  
 
 Wenn Sie viele Male wieder auf einen Knoten verweisen müssen, speichern Sie ihn als globale Variable.  
 
 1.  [Öffnen Sie DOM-Beispiele](#open-dom-examples).  
-1.  Klicken Sie unter **als globale Variable speichern**mit der rechten Maustaste auf **den großen Ruhezustand** , und wählen Sie über **prüfen**aus.  
+1.  Wählen Sie unter **als globale Variable speichern** **den großen Ruhezustand** aus, und wählen Sie über **prüfen**aus.  
     1.  Klicken Sie `<li>The Big Sleep</li>` mit der rechten Maustaste in die DOM-Struktur, und wählen Sie **als globale Variable speichern**aus.  Siehe [Anhang: fehlende Optionen](#appendix-missing-options) , wenn diese Option nicht angezeigt wird.  
-    1.  Geben `temp1` Sie die Konsole ein, und drücken Sie dann `Enter` .  Das Ergebnis des Ausdrucks zeigt, dass die Variable zum Knoten ausgewertet wird.  
+    1.  Geben `temp1` Sie die Konsole ein, und wählen Sie dann aus `Enter` .  Das Ergebnis des Ausdrucks zeigt, dass die Variable zum Knoten ausgewertet wird.  
         
         :::image type="complex" source="../media/dom-elements-highlighted-store-global-variable-console-temp1.msft.png" alt-text="Überprüfen eines Knotens" lightbox="../media/dom-elements-highlighted-store-global-variable-console-temp1.msft.png":::
            Das Ergebnis des `temp1` Ausdrucks  
         :::image-end:::  
         
-### Kopieren des js-Pfads   
+### Kopieren des js-Pfads  
 
 Kopieren Sie den JavaScript-Pfad zu einem Knoten, wenn Sie in einem automatisierten Test darauf verweisen müssen.  
 
 1.  [Öffnen Sie DOM-Beispiele](#open-dom-examples).  
-1.  Klicken Sie unter **js-Pfad kopieren**mit der rechten Maustaste auf **das Brothers-Karamazov** , und wählen Sie über **prüfen**aus.  
+1.  Klicken Sie unter **js-Pfad kopieren**mit der rechten Maustaste auf **die Brüder Karamazov** , und wählen Sie über **prüfen**aus.  
     1.  Klicken Sie `<li>The Brothers Karamazov</li>` mit der rechten Maustaste in die DOM **Copy**-Struktur, und wählen Sie Copy  >  **js Path**kopieren aus.  Ein `document.querySelector()` Ausdruck, der in den Knoten aufgelöst wird, wurde in die Zwischenablage kopiert.  
-    1.  Drücken Sie `Control` + `V` \ (Windows \) oder `Command` + `V` \ (macOS \), um den Ausdruck in die Konsole einzufügen.  
-    1.  Drücken Sie `Enter` , um den Ausdruck auszuwerten.
+    1.  Wählen Sie `Control` + `V` \ (Windows, Linux \) oder `Command` + `V` \ (macOS \) aus, um den Ausdruck in die Konsole einzufügen.  
+    1.  Wählen Sie aus `Enter` , um den Ausdruck auszuwerten.
         
         :::image type="complex" source="../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png" alt-text="Überprüfen eines Knotens" lightbox="../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png":::
            Das Ergebnis des Ausdrucks " **js-Pfad kopieren** "  
         :::image-end:::  
         
-## Änderungen am Dom unterbrechen   
+## Änderungen am Dom unterbrechen  
 
 Mit devtools können Sie das JavaScript einer Seite anhalten, wenn das DOM vom JavaScript geändert wird.  
 
-### Unterbrechen von Attributänderungen   
+### Unterbrechen von Attributänderungen  
 
 Verwenden Sie die Attribut Änderungs Haltepunkte, wenn Sie das JavaScript anhalten möchten, das dazu führt, dass das Attribut eines Knotens geändert wird.  
 
 1.  [Öffnen Sie DOM-Beispiele](#open-dom-examples).  
-1.  Klicken Sie unter **Umbruch bei Attributänderungen mit der**rechten Maustaste auf **Sauerkraut** , und wählen Sie über **prüfen**aus.  
+1.  Klicken Sie unter **Umbruch bei Attributänderungen auf** **Sauerkraut** , und wählen Sie über **prüfen**aus.  
     1.  Klicken Sie in der DOM-Struktur mit der rechten Maustaste, `<li id="target">Sauerkraut</li>` und wählen Sie **bei**  >  **Attributänderungen**aufheben aus.  Siehe [Anhang: fehlende Optionen](#appendix-missing-options) , wenn diese Option nicht angezeigt werden kann.
         
         :::image type="complex" source="../media/dom-elements-highlighted-break-attribute-modifications-break-on-attribute-modifications.msft.png" alt-text="Überprüfen eines Knotens" lightbox="../media/dom-elements-highlighted-break-attribute-modifications-break-on-attribute-modifications.msft.png":::
            **Unterbrechen von Attributänderungen**  
         :::image-end:::  
         
-    1.  Im nächsten Schritt werden Sie angewiesen, auf eine Schaltfläche zu klicken, mit der der Code der Seite angehalten wird.  Nachdem die Seite angehalten wurde, können Sie die Seite nicht mehr scrollen.  Sie müssen auf **Skript fortsetzen** \ ( ![ Skript fortsetzen ][ImageResumeScriptIcon] \) klicken, um die Seite erneut scrollen zu lassen.
+    1.  Im nächsten Schritt werden Sie angewiesen, auf eine Schaltfläche zu klicken, mit der der Code der Seite angehalten wird.  Nachdem die Seite angehalten wurde, können Sie die Seite nicht mehr scrollen.  Sie müssen **Resume-Skript** \ ( ![ Resume ][ImageResumeScriptIcon] -Skript \) auswählen, um die Seite erneut scrollen zu lassen.
         
         :::image type="complex" source="../media/dom-break-attribute-modifications-sources-paused-on.msft.png" alt-text="Überprüfen eines Knotens" lightbox="../media/dom-break-attribute-modifications-sources-paused-on.msft.png":::
            Wo wird das Skript fortgesetzt?  
         :::image-end:::  
         
     1.  Klicken Sie oben auf die Schaltfläche **Hintergrund einstellen** .  Dadurch wird das `style` Attribut des Knotens auf festgelegt `background-color:thistle` .  DevTools hält die Seite an und hebt den Code hervor, der zum Ändern des Attributs geführt hat.  
-    1.  Klicken Sie, wie bereits erwähnt, auf **Skript fortsetzen** \ ( ![ Fortsetzen des Skripts ][ImageResumeScriptIcon] \).  
+    1.  Wählen Sie, wie bereits erwähnt, **fortsetzen-Skript** \ ( ![ Skript fortsetzen ][ImageResumeScriptIcon] \) aus.  
     
-### Unterbrechung beim Entfernen von Knoten   
+### Unterbrechung beim Entfernen von Knoten  
 
 Wenn Sie anhalten möchten, wenn ein bestimmter Knoten entfernt wird, verwenden Sie Haltepunkte für die Knoten Entfernung.  
 
 1.  [Öffnen Sie DOM-Beispiele](#open-dom-examples).  
-1.  Klicken Sie unter **Umbruch beim Entfernen von Knoten mit der**rechten Maustaste auf **Neuromancer** , und wählen Sie über **prüfen**aus.  
-    1.  Klicken Sie in der DOM-Struktur mit der rechten Maustaste, `<li id="target">Neuromancer</li>` und wählen Sie **beim Entfernen von Knoten unterbrechen**aus  >  **Node Removal**.  Siehe [Anhang: fehlende Optionen](#appendix-missing-options) , wenn diese Option nicht angezeigt werden kann.  
+1.  Klicken Sie unter **Unterbrechungs Vorgang beim Entfernen von Knoten mit der**rechten Maustaste auf **Neuromancer** , und wählen Sie über **prüfen**aus.  
+    1.  Klicken Sie in der DOM-Struktur mit der rechten Maustaste, `<li id="target">Neuromancer</li>` und wählen Sie **Unterbrechung beim**  >  **Entfernen von Knoten**aus.  Siehe [Anhang: fehlende Optionen](#appendix-missing-options) , wenn diese Option nicht angezeigt werden kann.  
     1.  Klicken Sie oben auf die Schaltfläche **Löschen** .  DevTools hält die Seite an und hebt den Code hervor, der dazu geführt hat, dass der Knoten entfernt wurde.  
-    1.  Klicken Sie auf **Skript fortsetzen** \ ( ![ Skript fortsetzen ][ImageResumeScriptIcon] \).  
+    1.  Wählen Sie **Skript fortsetzen** \ ( ![ Skript fortsetzen ][ImageResumeScriptIcon] \) aus.  
     
-### Unterbrechen von Änderungen an Teilstruktur   
+### Unterbrechen von Änderungen an Teilstruktur  
 
 Nachdem Sie einen Haltepunkt für die Unterstruktur Änderung auf einem Knoten platziert haben, wird die Seite von devtools angehalten, wenn ein Nachfolger des Knotens hinzugefügt oder entfernt wird.  
 
 1.  [Öffnen Sie DOM-Beispiele](#open-dom-examples).  
-1.  Klicken Sie unter **Umbruch bei Teilstruktur Änderungen**mit der rechten Maustaste auf **ein Feuer auf der Tiefe** , und wählen Sie über **prüfen**aus.  
-    1.  Klicken Sie in der DOM-Struktur mit der rechten Maustaste auf `<ul id="target">` den Knoten oben `<li>A Fire Upon the Deep</li>` , und wählen Sie **unter**Teil  >  **Strukturänderungen**aufheben aus.  Siehe [Anhang: fehlende Optionen](#appendix-missing-options) , wenn diese Option nicht angezeigt werden kann.  
-    1.  Klicken Sie auf **Kind hinzufügen**.  Der Code wird angehalten `<li>` , weil der Liste ein Knoten hinzugefügt wurde.  
-    1.  Klicken Sie auf **Skript fortsetzen** \ ( ![ Skript fortsetzen ][ImageResumeScriptIcon] \).  
+1.  Wählen Sie unter unter **Brechung bei Teilstruktur Änderungen**mit der rechten Maustaste **ein Feuer auf der Tiefe** aus, und wählen Sie über **prüfen**aus.  
+    1.  Klicken Sie in der DOM-Struktur mit der rechten Maustaste auf `<ul id="target">` den Knoten oben `<li>A Fire Upon the Deep</li>` , und wählen Sie unter Teil **Break On**  >  **Strukturänderungen**aufheben aus.  Siehe [Anhang: fehlende Optionen](#appendix-missing-options) , wenn diese Option nicht angezeigt werden kann.  
+    1.  Wählen Sie **Kind hinzufügen**aus.  Der Code wird angehalten `<li>` , weil der Liste ein Knoten hinzugefügt wurde.  
+    1.  Wählen Sie **Skript fortsetzen** \ ( ![ Skript fortsetzen ][ImageResumeScriptIcon] \) aus.  
     
-## Nächste Schritte   
+## Nächste Schritte  
 
 , Die die meisten der Dom-bezogenen Features in devtools abdeckt.  Sie können die restlichen Personen entdecken, indem Sie mit der rechten Maustaste auf Knoten in der DOM-Struktur klicken und mit den anderen Optionen experimentieren, die in diesem Lernprogramm nicht behandelt wurden.  Siehe auch [Tastenkombinationen im Element Panel][DevToolsShortcutsElements].  
 
@@ -328,9 +322,7 @@ Schauen Sie sich die [Microsoft Edge devtools-Startseite][MicrosoftEdgeDevTools]
 
 <!--See [Community](../index#community) if you want to contact the DevTools team or get help from the DevTools community.  -->  
 
-
-
-## Anhang: HTML im Vergleich zum Dom   
+## Anhang: HTML im Vergleich zum Dom  
 
 Im folgenden Abschnitt wird schnell der Unterschied zwischen HTML und dem Dom erläutert.  
 
@@ -401,27 +393,29 @@ Der HTML-Code für die Seite ist jetzt anders als das DOM.  Mit anderen Worten, 
 Weitere Informationen finden Sie unter [Einführung in das DOM][MDNIntroductionToDOM] .  
 
 <!--
-## Appendix: Scroll into view   
+## Appendix: Scroll into view  
 
 This is a continuation of the [Scroll into view](#scroll-into-view) section.  Follow the instructions below to complete the section.  
 
 1.  The `<li>Magritte</li>` node should still be selected in your DOM Tree.  If not, go back to [Scroll into view](#scroll-into-view) and start over.  
-1.  Right-click the `<li>Magritte</li>` node and select **Scroll into view**.  Your viewport scrolls back up so that you may see the **Magritte** node.  See [Appendix: Missing options](#appendix-missing-options) if you are not able to see the **Scroll into view** option.
+1.  Right-click the `<li>Magritte</li>` node and choose **Scroll into view**.  Your viewport scrolls back up so that you may see the **Magritte** node.  See [Appendix: Missing options](#appendix-missing-options) if you are not able to see the **Scroll into view** option.
     
-    > ##### Figure 19  
-    > Scroll into view  
-    > :::image type="complex" source="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png" alt-text="Überprüfen eines Knotens" lightbox="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png":::
-   Scroll into view  
-:::image-end:::  
+    :::image type="complex" source="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png" alt-text="Überprüfen eines Knotens" lightbox="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png":::
+       Scroll into view  
+    :::image-end:::  
     -->  
 
-## Anhang: fehlende Optionen   
+## Anhang: fehlende Optionen  
 
 Viele der Anweisungen in diesem Lernprogramm weisen Sie an, mit der rechten Maustaste auf einen Knoten in der DOM-Struktur zu klicken und dann im Kontextmenü, das eingeblendet wird, eine Option auszuwählen.  Wenn die angegebene Option im Kontextmenü nicht angezeigt wird, versuchen Sie, mit der rechten Maustaste auf den Knotentext zu klicken.  
 
 :::image type="complex" source="../media/dom-elements-highlighted-right-click-right-side.msft.png" alt-text="Überprüfen eines Knotens" lightbox="../media/dom-elements-highlighted-right-click-right-side.msft.png":::
    Wo klicken, wenn nicht alle Optionen angezeigt werden  
 :::image-end:::  
+
+## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

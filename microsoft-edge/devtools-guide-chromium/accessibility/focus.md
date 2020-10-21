@@ -3,16 +3,16 @@ description: Öffnen Sie die Konsole, erstellen Sie einen Live Ausdruck, und leg
 title: Nachverfolgen, welches Element den Fokus hat
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 9000b8ca1fa52daf5257f201c65dcabd78298ec7
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: a0d0861494db87e546443c0f3a1d4f531412300c
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993205"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125307"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -35,7 +35,7 @@ Angenommen, Sie testen die Barrierefreiheit der Tastaturnavigation auf einer Sei
 Führen Sie die folgenden Aktionen aus, um das fokussierte Element in devtools zu verfolgen.  
 
 1.  Öffnen Sie die **Konsole**.  
-1.  Klicken Sie auf **Live Ausdruck erstellen** \ ( ![ Live Ausdruck erstellen ][ImageCreateIcon] \).  
+1.  Wählen Sie **Live Ausdruck erstellen** \ ( ![ Live Ausdruck erstellen ][ImageCreateIcon] \) aus.  
     
     :::image type="complex" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="Erstellen eines Live Ausdrucks" lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
        Erstellen eines Live Ausdrucks  
@@ -49,7 +49,7 @@ Der unten angezeigte Wert `document.activeElement` ist das Ergebnis des Ausdruck
 Da dieser Ausdruck immer das Focused-Element darstellt, haben Sie jetzt die Möglichkeit, immer nachzuverfolgen, welches Element den Fokus hat.  
 
 *   Zeigen Sie mit der Maus auf das Ergebnis, um das fokussierte Element im Viewport zu markieren.  
-*   Klicken Sie mit der rechten Maustaste auf das Ergebnis, und wählen Sie **im Element Fenster** anzeigen aus, um das Element in der DOM- **Struktur im Element Panel anzuzeigen** .  
+*   Klicken Sie mit der rechten Maustaste auf das Ergebnis, und wählen Sie **im Panel Elemente** anzeigen aus, um das Element in der DOM- **Struktur im Element Panel anzuzeigen** .  
 *   Klicken Sie mit der rechten Maustaste auf das Ergebnis, und wählen Sie **als globale Variable speichern** aus, um einen Variablen Bezug auf den Knoten zu erstellen, den Sie in der **Konsole**verwenden können.  
 
 ## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  

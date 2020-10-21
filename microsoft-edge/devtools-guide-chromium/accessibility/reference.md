@@ -3,16 +3,16 @@ description: Eine umfassende Referenz zu Barrierefreiheitsfeatures in Microsoft 
 title: Barrierefreiheits Referenz
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 39b0b8c36cea017b9976ea4e80e92ea93896a671
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: de8f4bee6fef7725af9b97fb80ab45582dfa2286
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993268"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125314"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -74,11 +74,11 @@ So überprüfen Sie eine Seite:
     > [!NOTE]
     > Die Screenshots in diesem Abschnitt wurden mit Version 79 von Microsoft Edge übernommen.  Sie können überprüfen, welche Version Sie Ausführen `edge://version` .  Die Benutzeroberfläche des **Überwachungs** Panels sieht in früheren Versionen von Microsoft Edge anders aus, der allgemeine Workflow ist jedoch identisch.  
     
-1.  Wählen Sie für **Gerät**den Eintrag **Handy** aus, wenn Sie ein mobiles Gerät simulieren möchten.  Mit dieser Option wird die Zeichenfolge des Benutzer-Agents geändert und die Größe des Viewports geändert.  Wenn die Mobile Version der Seite anders als die Desktop Version angezeigt wird, kann sich diese Option erheblich auf die Ergebnisse ihrer Überwachung auswirken.  
+1.  Wählen **Device**Sie für Gerät **Mobile** aus, wenn Sie ein mobiles Gerät simulieren möchten.  Mit dieser Option wird die Zeichenfolge des Benutzer-Agents geändert und die Größe des Viewports geändert.  Wenn die Mobile Version der Seite anders als die Desktop Version angezeigt wird, kann sich diese Option erheblich auf die Ergebnisse ihrer Überwachung auswirken.  
 1.  Stellen Sie im Abschnitt **Audits** sicher, dass die **Barrierefreiheit** aktiviert ist.  Deaktivieren Sie die anderen Kategorien, wenn Sie Sie aus dem Bericht ausschließen möchten.  Lassen Sie sie aktiviert, wenn Sie andere Möglichkeiten entdecken möchten, um die Qualität Ihrer Seite zu verbessern.  
 1.  Im Abschnitt **Drosselung** können Sie das Netzwerk und die CPU Drosseln, was bei der Analyse der Auslastungs Leistung hilfreich ist.  Diese Option sollte für den Zugriff auf die Barrierefreiheit irrelevant sein, daher können Sie das, was Sie bevorzugen, verwenden.  
 1.  Mit dem Kontrollkästchen **Speicher löschen** können Sie den gesamten Speicher löschen, bevor Sie die Seite laden, oder den Speicherplatz zwischen den Seitenlasten bewahren.  Diese Option ist möglicherweise auch für das Ergebnis der Barrierefreiheit irrelevant, sodass Sie die von Ihnen bevorzugten Optionen verwenden können.  
-1.  Klicken Sie auf **Überwachungen ausführen**. Nach 10 bis 30 Sekunden bietet devtools einen Bericht.  Ihr Bericht gibt Ihnen verschiedene Tipps, wie Sie die Barrierefreiheit der Seite verbessern können.  
+1.  Wählen Sie **Audits ausführen**aus. Nach 10 bis 30 Sekunden bietet devtools einen Bericht.  Ihr Bericht gibt Ihnen verschiedene Tipps, wie Sie die Barrierefreiheit der Seite verbessern können.  
     
     :::image type="complex" source="../media/accessibility-audits-run-audits-result.msft.png" alt-text="Konfigurieren von Audits" lightbox="../media/accessibility-audits-run-audits-result.msft.png":::
        Einen Bericht  
@@ -90,7 +90,7 @@ So überprüfen Sie eine Seite:
        Weitere Informationen zu einer Überwachung  
     :::image-end:::  
     
-1.  Klicken Sie auf **Weitere Informationen** , um die Dokumentation dieser Überwachung anzuzeigen.  
+1.  Wählen Sie **Weitere Informationen** aus, um die Dokumentation dieser Überwachung anzuzeigen.  
     
     :::image type="complex" source="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png" alt-text="Konfigurieren von Audits" lightbox="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png":::
        Anzeigen der Dokumentation einer Überwachung  
@@ -143,7 +143,7 @@ Zeigen Sie die Aria-Attribute eines Elements im [Bereich "Barrierefreiheit"](#th
 ### Anzeigen der berechneten Barrierefreiheitseigenschaften eines Elements  
 
 > [!NOTE]
-> Wenn Sie nach berechneten CSS-Eigenschaften suchen, lesen Sie die [Registerkarte berechnet][DevtoolsCssReferenceViewActuallyAppliedElements].  
+> Wenn Sie nach berechneten CSS-Eigenschaften suchen, navigieren Sie zur [Registerkarte berechnet][DevtoolsCssReferenceViewActuallyAppliedElements].  
 
 Einige Barrierefreiheitseigenschaften werden vom Browser dynamisch berechnet.  Diese Eigenschaften werden im Abschnitt " **berechnete Eigenschaften** " des **Barrierefreiheits** Bereichs angezeigt.  
 
@@ -186,7 +186,7 @@ Mit der Farbauswahl können Sie überprüfen, ob Ihr Text die empfohlenen Kontra
        Die Zeile " **Kontrastverhältnis** " in der visuellen Auswahl  
     :::image-end:::  
     
-<!--## Feedback   -->  
+## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

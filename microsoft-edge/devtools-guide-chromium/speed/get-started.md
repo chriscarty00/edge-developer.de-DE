@@ -3,16 +3,16 @@ description: Erfahren Sie, wie Sie Microsoft Edge devtools verwenden, um Wege zu
 title: Optimieren der Website Geschwindigkeit mit Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: dafcb9c4d1194239baed7507e505d74d2b4ce1c8
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: af655941fdc836759651e8d8202e41d8d03331c5
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993440"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125489"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,13 +28,7 @@ ms.locfileid: "10993440"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Optimieren der Website Geschwindigkeit mit Microsoft Edge devtools   
-
-
+# Optimieren der Website Geschwindigkeit mit Microsoft Edge devtools  
 
 ## Ziel des Lernprogramms  
 
@@ -45,7 +39,7 @@ In diesem Lernprogramm erfahren Sie, wie Sie Microsoft Edge devtools verwenden, 
 *   Sie sollten über grundlegende Webentwicklungsfunktionen verfügen, ähnlich wie in dieser [Einführung in die Webentwicklungs Klasse][CourseraIntroductionWebDevelopmentClass].  
 *   Sie müssen nichts über die Ladeleistung wissen.  In diesem Lernprogramm erfahren Sie mehr darüber!  
 
-## Einführung   
+## Einführung  
 
 Das ist Tony.  Tony ist in der Cat Society sehr bekannt.  Er hat eine Website entwickelt, damit seine Fans mehr über seine bevorzugten Lebensmittel erfahren können.  Seine Fans lieben die Website, aber Tony hört immer wieder Beschwerden, dass die Website langsam geladen wird.  Tony hat Sie gebeten, ihm beim Beschleunigen der Website zu helfen.  
 
@@ -53,7 +47,7 @@ Das ist Tony.  Tony ist in der Cat Society sehr bekannt.  Er hat eine Website en
    Tony the Cat  
 :::image-end:::  
 
-## Schritt 1: Überwachen der Website   
+## Schritt 1: Überwachen der Website  
 
 Wenn Sie die Ladeleistung einer Website verbessern möchten, **beginnen Sie immer mit einer Überwachung**.  
 Das Audit hat zwei wichtige Funktionen:  
@@ -61,7 +55,7 @@ Das Audit hat zwei wichtige Funktionen:
 *   Sie erstellt einen **Basisplan** , in dem Sie nachfolgende Änderungen messen können.  
 *   Es gibt Ihnen **umsetzbare Tipps** , welche Änderungen die meisten Auswirkungen haben.  
     
-### Einrichtung   
+### Einrichtung  
 
 Zunächst müssen Sie die Website so einrichten, dass Sie später Änderungen daran vornehmen können.  
 
@@ -78,25 +72,25 @@ Zunächst müssen Sie die Website so einrichten, dass Sie später Änderungen da
     :::image-end:::  
     
 1.  Wählen Sie **Remix Project**aus.  Der Name des Projekts wechselt von **Tony** zu einem zufällig generierten Namen.  Sie haben jetzt eine eigene bearbeitbare Kopie des Codes.  Später können Sie Änderungen an diesem Code vornehmen.  
-1.  Wählen Sie **in einem neuen Fenster** **anzeigen** und auswählen aus.  Die Demo wird in einer neuen Registerkarte geöffnet.  Diese Registerkarte wird als **Registerkarte Demo**bezeichnet.  Das Laden der Website kann einige Zeit in Anspruch nehmen.  
+1.  Wählen Sie **anzeigen** aus, und wählen Sie **in einem neuen Fenster**aus.  Die Demo wird in einer neuen Registerkarte geöffnet.  Diese Registerkarte wird als **Registerkarte Demo**bezeichnet.  Das Laden der Website kann einige Zeit in Anspruch nehmen.  
     
     :::image type="complex" source="../media/speed-glitch-tony-show-live.msft.png" alt-text="Tony the Cat" lightbox="../media/speed-glitch-tony-show-live.msft.png":::
        Die Registerkarte "Demo"  
     :::image-end:::  
     
-1.  Drücken Sie `Control` + `Shift` + `J` \ (Windows \) oder `Command` + `Option` + `J` \ (macOS \).  Microsoft Edge devtools wird parallel zur Demo geöffnet.  
+1.  Wählen Sie `Control` + `Shift` + `J` \ (Windows, Linux \) oder `Command` + `Option` + `J` \ (macOS \) aus.  Microsoft Edge devtools wird parallel zur Demo geöffnet.  
     
     :::image type="complex" source="../media/speed-glitch-tony-show-live-console.msft.png" alt-text="Tony the Cat" lightbox="../media/speed-glitch-tony-show-live-console.msft.png":::
        DevTools und die Demo  
     :::image-end:::  
     
-Für die restlichen Screenshots in diesem Lernprogramm wird devtools in einem separaten Fenster angezeigt.  Drücken Sie `Control` + `Shift` + `P` \ (Windows \) oder `Command` + `Shift` + `P` \ (macOS \), um das Befehlsmenü zu öffnen, einzugeben `Undock` , und wählen Sie dann **in separates Fenster Abdocken**aus.  
+Für die restlichen Screenshots in diesem Lernprogramm wird devtools in einem separaten Fenster angezeigt.  Wählen Sie `Control` + `Shift` + `P` \ (Windows, Linux \) oder `Command` + `Shift` + `P` \ (macOS \) aus, um das Befehlsmenü zu öffnen, einzugeben `Undock` , und wählen Sie dann **in separates Fenster Abdocken**aus.  
 
 :::image type="complex" source="../media/speed-console.msft.png" alt-text="Tony the Cat" lightbox="../media/speed-console.msft.png":::
    Nicht angedockte devtools  
 :::image-end:::  
 
-### Festlegen eines Basisplans   
+### Festlegen eines Basisplans  
 
 Der Basisplan ist eine Aufzeichnung der Vorgehensweise der Website, bevor Sie Leistungsverbesserungen durchgeführt haben.  
 
@@ -124,7 +118,7 @@ Der Basisplan ist eine Aufzeichnung der Vorgehensweise der Website, bevor Sie Le
        Der Bericht für das Audits-Panel über die Leistung der Website  
     :::image-end:::  
     
-#### Behandeln von Berichts Fehlern   
+#### Behandeln von Berichts Fehlern  
 
 Wenn Sie in Ihrem Audits-Panel-Bericht jemals eine Fehlermeldung erhalten, versuchen Sie, die Registerkarte Demo in einem **InPrivate** -Fenster auszuführen, ohne dass weitere Registerkarten geöffnet sind.  Dadurch wird sichergestellt, dass Sie Microsoft Edge in einem sauberen Zustand ausführen.  Insbesondere Microsoft-Edge-Erweiterungen stören häufig den Überwachungsprozess.  
 
@@ -135,7 +129,7 @@ Wenn Sie in Ihrem Audits-Panel-Bericht jemals eine Fehlermeldung erhalten, versu
 :::image-end:::  
 -->  
 
-### Grundlegendes zu Ihrem Bericht   
+### Grundlegendes zu Ihrem Bericht  
 
 Die Zahl am oberen Rand des Berichts entspricht dem Gesamtleistungsfaktor für die Website.  Wenn Sie später Änderungen am Code vornehmen, sollte diese Zahl steigen.  Eine höhere Punktzahl bedeutet eine bessere Leistung.  
 
@@ -149,7 +143,7 @@ Der Abschnitt **Metriken** bietet quantitative Maße für die Leistung der Websi
    Abschnitt " **Metriken** "  
 :::image-end:::  
 
-Wählen Sie die hervorgehobene Umschaltfläche in der folgenden Abbildung aus, um eine Beschreibung für jede Metrik anzuzeigen, und klicken Sie auf **Weitere Informationen** , um die Dokumentation dazu zu lesen.  
+Wählen Sie die hervorgehobene Umschaltfläche in der folgenden Abbildung aus, um eine Beschreibung für jede Metrik anzuzeigen, und wählen Sie **Weitere Informationen** aus, um die Dokumentation dazu zu lesen.  
 
 :::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-metrics-expanded.msft.png" alt-text="Tony the Cat" lightbox="../media/speed-glitch-tony-remix-audits-performance-metrics-expanded.msft.png":::
    Auswählen der hervorgehobenen Umschaltfläche zum Erweitern der Metriken Elemente  
@@ -191,11 +185,11 @@ Im Abschnitt "übertragene **Prüfungen** " wird gezeigt, was die Website richti
    Abschnitt " **übergebene Überprüfungen** "  
 :::image-end:::  
 
-## Schritt 2: experimentieren   
+## Schritt 2: experimentieren  
 
 Im Abschnitt "Verkaufschancen" Ihres Überwachungsberichts erhalten Sie Tipps, wie Sie die Leistung der Seite verbessern können.  In diesem Abschnitt implementieren Sie die empfohlenen Änderungen an der CodeBase, indem Sie die Website nach jeder Änderung überwachen, um zu messen, wie sich dies auf die Geschwindigkeit der Website auswirkt.  
 
-### Aktivieren der Text Komprimierung   
+### Aktivieren der Text Komprimierung  
 
 Ihr Bericht besagt, dass die Vermeidung von enormen Netzwerklasten eine der besten Möglichkeiten zur Verbesserung der Leistung der Seite darstellt.  Das Aktivieren der Text Komprimierung bietet die Möglichkeit, die Leistung der Seite zu verbessern.  
 
@@ -234,7 +228,7 @@ Der untere Wert gibt die Größe der unkomprimierten Ressource an.  Wenn die bei
 
 Genug mit den Erläuterungen.  Zeit, einige Änderungen vorzunehmen!  Aktivieren Sie die Text Komprimierung, indem Sie ein paar Codezeilen hinzufügen:  
 
-1.  Klicken Sie auf der Registerkarte Editor auf **server.js**.  
+1.  Wählen Sie auf der Registerkarte Editor die Option **server.js**aus.  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-server-js.msft.png" alt-text="Tony the Cat" lightbox="../media/speed-glitch-tony-remix-server-js.msft.png":::
        Bearbeiten `server.js`  
@@ -259,7 +253,7 @@ Genug mit den Erläuterungen.  Zeit, einige Änderungen vorzunehmen!  Aktivieren
     > [!NOTE]
     > In der Regel müssen Sie das `compression` Paket über einen ähnlichen `npm i -S compression` Vorgang installieren, dies wurde aber bereits für Sie erledigt.  
     
-1.  Warten Sie, bis glitch den neuen Build der Website bereitgestellt hat.  Die raffinierte Animation neben **Tools** bedeutet, dass die Website neu erstellt und erneut bereitgestellt wird.  Die Änderung ist fertig, wenn die Animation neben **Tools** verschwindet.  Wählen Sie wieder **in einem neuen Fenster** **anzeigen** und auswählen aus.  
+1.  Warten Sie, bis glitch den neuen Build der Website bereitgestellt hat.  Die raffinierte Animation neben **Tools** bedeutet, dass die Website neu erstellt und erneut bereitgestellt wird.  Die Änderung ist fertig, wenn die Animation neben **Tools** verschwindet.  Wählen Sie **anzeigen** aus, und wählen Sie erneut **in einem neuen Fenster** aus.  
     
     <!--
     :::image type="complex" source="../media/speed-glitch-tony-remix-server-js-edited.msft.png" alt-text="Tony the Cat" lightbox="../media/speed-glitch-tony-remix-server-js-edited.msft.png":::
@@ -294,15 +288,15 @@ Verwenden Sie die zuvor gelernten Workflows, um manuell zu überprüfen, ob die 
     
 <!--  Woohoo!  That looks like progress.  -->  Ihr Gesamtleistungsfaktor sollte zugenommen haben, was bedeutet, dass die Website schneller wird.  
 
-#### Text Komprimierung in der realen Welt   
+#### Text Komprimierung in der realen Welt  
 
 Bei den meisten Servern gibt es wirklich einfache Fehlerbehebungen wie diese zum Aktivieren von Komprimierung!  Führen Sie einfach eine Suche durch, um zu konfigurieren, welcher Server zum Komprimieren von Text verwendet wird.  
 
-### Ändern der Größe von Bildern   
+### Ändern der Größe von Bildern  
 
 Ihr Bericht weist darauf hin, dass die Vermeidung enormer Netzwerklasten eine der besten Möglichkeiten zur Verbesserung der Leistung der Seite darstellt.  Durch Ändern der Größe von Bildern kann die Größe der Netzwerk Nutzlast verringert werden.  Wenn der Benutzer Ihre Bilder auf einem Bildschirm mit einem mobilen Gerät anzeigt, der 500 Pixel breit ist, ist es wirklich unwichtig, ein 1500-Pixel breites Bild zu senden.  Im Idealfall senden Sie höchstens ein Bild mit einer Breite von 500 Pixel.  
 
-1.  Klicken Sie in Ihrem Bericht auf **enorme Netzwerk Nutzlasten vermeiden** , um festzustellen, welche Bilder geändert werden sollen.  Es sieht so aus, als ob 2 der JPG-Dateien über 2000 KB liegen, was größer als notwendig ist.  
+1.  Wählen Sie in Ihrem Bericht **riesige Netzwerk Nutzlasten vermeiden** aus, um zu sehen, welche Bilder geändert werden sollten.  Es sieht so aus, als ob 2 der JPG-Dateien über 2000 KB liegen, was größer als notwendig ist.  
     
     <!--
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-opportunities-expanded.msft.png" alt-text="Tony the Cat" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-opportunities-expanded.msft.png":::
@@ -320,7 +314,7 @@ Ihr Bericht weist darauf hin, dass die Vermeidung enormer Netzwerklasten eine de
     
 Sieht so aus, als ob die Änderung nur eine geringfügige Auswirkung auf den Gesamtleistungsfaktor hat.  Die Punktzahl zeigt jedoch nicht eindeutig, wie viel Netzwerkdaten Sie für Ihre Benutzer speichern.  Die Gesamtgröße der alten Fotos betrug etwa 5,3 Megabyte, während es jetzt nur noch etwa 0,18 Megabytes gibt.  
 
-#### Ändern der Größe von Bildern in der realen Welt   
+#### Ändern der Größe von Bildern in der realen Welt  
 
 Bei einer kleinen app kann eine einmalige Größenänderung so gut wie möglich sein.  Bei einer umfangreichen APP ist dies natürlich nicht skalierbar.  Im folgenden finden Sie einige Strategien zum Verwalten von Bildern in umfangreichen apps:  
 
@@ -334,7 +328,7 @@ Bei einer kleinen app kann eine einmalige Größenänderung so gut wie möglich 
 *   Optimieren Sie zumindest jedes Bild.  Dies kann zu enormen Einsparungen führen.  
   Optimierung ist, wenn Sie ein Bild über ein spezielles Programm ausführen, das die Größe der Bilddatei reduziert.  Weitere Tipps finden Sie unter [grundlegende Bildoptimierung][EssentialImageOptimization] .  
     
-### Eliminieren von Render-Blockierungs Ressourcen   
+### Eliminieren von Render-Blockierungs Ressourcen  
 
 Ihr neuester Bericht besagt, dass das Eliminieren von Render-Blockierungs Ressourcen jetzt die größte Chance darstellt.  
 
@@ -342,14 +336,14 @@ Eine Render-Blockierungs Ressource ist eine externe JavaScript-oder CSS-Datei, d
 
 Die erste Aufgabe besteht darin, Code zu finden, den Sie beim Laden der Seite nicht ausführen müssen.  
 
-1.  Wählen Sie **Render-Blockierungs Ressourcen eliminieren** aus, um die blockierten Ressourcen anzuzeigen:  
+1.  Wählen Sie **eliminieren von Render-Blockierungs Ressourcen** aus, um die blockierten Ressourcen anzuzeigen:  
     `lodash.js` und `jquery.js` .  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded.msft.png" alt-text="Tony the Cat" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded.msft.png":::
        Weitere Informationen zur Möglichkeit zum **eliminieren von Render-Blockierungs Ressourcen**  
     :::image-end:::  
     
-1.  Drücken Sie `Control` + `Shift` + `P` \ (Windows \) oder `Command` + `Shift` + `P` \ (macOS \), um das Befehlsmenü zu öffnen, mit der Eingabe zu beginnen `Coverage` , und wählen Sie dann **Coverage anzeigen**aus.  
+1.  Wählen Sie `Control` + `Shift` + `P` \ (Windows, Linux \) oder `Command` + `Shift` + `P` \ (macOS \) aus, um das Befehlsmenü zu öffnen, mit der Eingabe zu beginnen `Coverage` , und wählen Sie dann **Coverage anzeigen**aus.  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-command-coverage.msft.png" alt-text="Tony the Cat" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-command-coverage.msft.png":::
        Öffnen des Befehlsmenüs im **Überwachungs** Panel  
@@ -378,14 +372,14 @@ Kurz gesagt: Wenn Sie mit Ihrem eigenen Code arbeiten, können Sie mithilfe der 
 Sind die `jquery.js` und `lodash.js` Dateien auch zum Laden der Seite erforderlich?  Auf der Registerkarte Anforderungs Blockierung wird angezeigt, was geschieht, wenn keine Ressourcen verfügbar sind.  
 
 1.  Wählen Sie die Registerkarte **Netzwerk** aus.  
-1.  Drücken Sie `Control` + `Shift` + `P` \ (Windows \) oder `Command` + `Shift` + `P` \ (macOS \), um das Befehlsmenü erneut zu öffnen.  
-1.  Beginnen `blocking` Sie mit der Eingabe, und wählen Sie dann **Anforderungs Blockierung anzeigen**aus.  
+1.  Wählen Sie `Control` + `Shift` + `P` \ (Windows, Linux \) oder `Command` + `Shift` + `P` \ (macOS \) aus, um das Befehlsmenü erneut zu öffnen.  
+1.  Beginnen `blocking` Sie mit der Eingabe, und wählen Sie dann **Blockierung anfordern**aus.  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-empty.msft.png" alt-text="Tony the Cat" lightbox="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-empty.msft.png":::
        Die Registerkarte ' **Anforderungs Blockierung** '  
     :::image-end:::  
     
-1.  Wählen Sie **Muster hinzufügen** \ ( ![ Muster hinzufügen ][ImageAddPatternIcon] ) aus, geben Sie ein `/libs/*` , und drücken Sie dann `Enter` , um zu bestätigen.  
+1.  Wählen Sie **Muster hinzufügen** \ ( ![ Muster hinzufügen ][ImageAddPatternIcon] ) aus, geben Sie ein `/libs/*` , und wählen Sie dann aus, `Enter` um zu bestätigen.  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-added.msft.png" alt-text="Tony the Cat" lightbox="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-added.msft.png":::
        Hinzufügen eines Musters zum Blockieren einer Anforderung an das `libs` Verzeichnis  
@@ -412,7 +406,7 @@ Entfernen Sie nun die Verweise auf diese Dateien aus dem Code, und überwachen S
        Ein **Überwachungs** Bericht nach dem Entfernen der Render-Blockierungs Ressourcen  
     :::image-end:::  
     
-#### Optimieren des kritischen Rendering-Pfads in der realen Welt   
+#### Optimieren des kritischen Rendering-Pfads in der realen Welt  
 
 Der **kritische Rendering-Pfad** bezieht sich auf den Code, der zum Laden einer Seite erforderlich ist.  Im Allgemeinen können Sie die Seitenauslastung beschleunigen, indem Sie nur den Versand von kritischem Code während des Ladens der Seite durchführen und dann alles andere verzögert laden.  
 
@@ -423,7 +417,7 @@ Der **kritische Rendering-Pfad** bezieht sich auf den Code, der zum Laden einer 
     
 <!--[async]: /web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/#use_async_or_defer  -->  
 
-### Arbeiten mit einem geringeren Hauptthread   
+### Arbeiten mit einem geringeren Hauptthread  
 
 Ihr neuester Bericht zeigt einige kleinere potenzielle Einsparungen im Abschnitt "Verkaufschancen", aber wenn Sie im Abschnitt "Diagnose" nach unten suchen, sieht es so aus, als wäre der größte Engpass zu viel Hauptthread Aktivität.  
 
@@ -454,7 +448,7 @@ Untersuchen Sie die Ablaufverfolgung, um Möglichkeiten für eine geringere Java
        Abschnitt " **Anzeige** dauern"  
     :::image-end:::  
     
-1.  Wählen Sie erneut **Anzeige** dauern aus, um den Abschnitt zu reduzieren.  
+1.  Wählen Sie erneut **Anzeige** dauern aus, um diesen Abschnitt zu reduzieren.  
 1.  Durchsuchen Sie den **Haupt** Abschnitt.  Dieser Abschnitt zeigt ein chronologisches Protokoll der Hauptthread Aktivität, von links nach rechts.  Die y-Achse (von oben nach unten) zeigt, warum Ereignisse aufgetreten sind.  In der figyre nach dem folgenden Beispiel hat das Ereignis zum Ausführen der Funktion geführt, die zur Ausführung führte, die `Evaluate Script` `(anonymous)` `(anonymous)` `__webpack__require__` zum Ausführen führte usw.  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-main.msft.png" alt-text="Tony the Cat" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-main.msft.png":::
@@ -470,7 +464,7 @@ Untersuchen Sie die Ablaufverfolgung, um Möglichkeiten für eine geringere Java
     > [!NOTE]
     > Obwohl die Anforderungen, die Ihr Framework macht, in der Regel nicht in Ihrem Steuerelement enthalten sind, können Sie Ihre APP manchmal so strukturieren, dass das Framework ineffizient ausgeführt wird.  Die Umstrukturierung ihrer App zur effizienten Verwendung des Frameworks ist eine Möglichkeit, um die Arbeit am Hauptthread zu verkürzen.  Dies erfordert jedoch ein umfassendes Verständnis der Funktionsweise des Frameworks und der Art von Änderungen, die Sie in Ihrem eigenen Code vornehmen, um das Framework effizienter zu verwenden.  
     
-1.  Erweitern Sie den Abschnitt **Bottom-up** .  Auf dieser Registerkarte wird aufgeschlüsselt, welche Aktivitäten die meiste Zeit in Anspruch genommen haben.  Wenn im Abschnitt Bottom-up nichts angezeigt wird, klicken Sie auf die Beschriftung für **Haupt** Abschnitt.  Der **Bottom-up-** Abschnitt zeigt nur Informationen zu einer beliebigen Aktivität oder Aktivitätsgruppe, die Sie aktuell ausgewählt haben.  Wenn Sie beispielsweise auf eine der Aktivitäten geklickt haben `mineBitcoin` , werden im Abschnitt **Bottom-up** nur Informationen für diese Aktivität angezeigt.  
+1.  Erweitern Sie den Abschnitt **Bottom-up** .  Auf dieser Registerkarte wird aufgeschlüsselt, welche Aktivitäten die meiste Zeit in Anspruch genommen haben.  Wenn im Abschnitt Bottom-Up nichts angezeigt wird, klicken Sie auf die Beschriftung für **Haupt** Abschnitt.  Der **Bottom-up-** Abschnitt zeigt nur Informationen zu einer beliebigen Aktivität oder Aktivitätsgruppe, die Sie aktuell ausgewählt haben.  Wenn Sie beispielsweise auf eine der Aktivitäten geklickt haben `mineBitcoin` , werden im Abschnitt **Bottom-up** nur Informationen für diese Aktivität angezeigt.  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings-summary-minebitcoin.msft.png" alt-text="Tony the Cat" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings-summary-minebitcoin.msft.png":::
        Die Registerkarte " **Bottom-up** "  
@@ -507,29 +501,27 @@ Sieht so aus, als ob diese letzte Änderung einen massiven Sprung in der Leistun
 
 <!--todo: add section when available -->  
 
-#### Arbeiten mit einem niedrigeren Hauptthread in der realen Welt   
+#### Arbeiten mit einem niedrigeren Hauptthread in der realen Welt  
 
 Im Allgemeinen ist der Bereich " **Leistung** " die häufigste Methode, um zu verstehen, welche Aktivitäten Ihre Website während der Auslastung durchführt, und Möglichkeiten zum Entfernen unnötiger Aktivitäten zu finden.  
 
 Wenn Sie einen Ansatz bevorzugen, der sich eher wie anfühlt `console.log()` , können Sie mit der API für die [Benutzersteuerung][MDNUserTimingApi] bestimmte Phasen des App-Lebenszyklus willkürlich kennzeichnen, um zu verfolgen, wie lange diese Phasen dauern.  
 
-## Zusammenfassung   
+## Zusammenfassung  
 
 *   Wenn Sie die Auslastungs Leistung einer Website optimieren möchten, beginnen Sie immer mit einer Überwachung.  Mit der Überprüfung wird ein Basisplan erstellt, und Sie erhalten Tipps zum verbessern.  
 *   Führen Sie jeweils eine Änderung durch, und überprüfen Sie die Seite nach jeder Änderung, um zu sehen, wie sich diese isolierte Änderung auf die Leistung auswirkt.  
 
 <!--
-## Next steps   
+## Next steps  
 
 *   Run audits on your own site!  If you need help interpreting your report, or finding ways to improve your load performance, check out [Feedback](#feedback) for ways to get help from the DevTools community.  Stack Overflow, the mailing list, or Twitter are probably best for these types of questions.  
 *   Please leave [feedback](#feedback) on this tutorial.  I really do use the data to make better tutorials for you.  
 -->  
 
-<!--  
-  
+## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 
