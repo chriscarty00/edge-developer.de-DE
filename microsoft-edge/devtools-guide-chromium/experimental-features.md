@@ -3,16 +3,16 @@ description: Die neuesten experimentellen Features in Microsoft Edge devtools
 title: Experimentelle Funktionen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 10/21/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools, Experiment
-ms.openlocfilehash: 65cf178596abfbaaac0e80bf205035838967cf59
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: b620388df309109e28ab8b9c010dfd448ca906f7
+ms.sourcegitcommit: 6e2b26d41a0aa56ac34e6edc7dddd852ddb415b1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11124894"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "11133855"
 ---
 # Experimentelle Funktionen  
 
@@ -31,7 +31,7 @@ Führen Sie die folgenden Schritte aus, um die experimentellen Features von \ (o
 1.  Wählen Sie auf der linken Seite des Bereichs **Einstellungen** den Abschnitt **Experimente** aus.  
     
     :::image type="complex" source="./media/experiments-devtools.msft.png" alt-text="Liste der Experimente in den devtools-Einstellungen" lightbox="./media/experiments-devtools.msft.png":::
-       Liste der Experimente in den devtools-Einstellungen  
+       Liste der Experimente in den devtools- **Einstellungen**  
     :::image-end:::  
     
 1.  Scrollen Sie auf der Seite **Experimente** durch die Liste aller verfügbaren experimentellen Features, und aktivieren Sie das Kontrollkästchen neben den einzelnen Features, die Sie testen möchten.  
@@ -52,6 +52,7 @@ In den folgenden Abschnitten werden die neuen experimentellen Features beschrieb
 | [Webhint aktivieren](#enable-webhint) | 85 oder höher |  
 | [Aktivieren der Netzwerk Konsole](#enable-network-console) | 85 oder höher |  
 | [Viewer für Quellreihenfolge](#source-order-viewer) | 86 oder höher |  
+| [Aktivieren des Tasten Kombinations-Editors](#enable-keyboard-shortcut-editor) | 87 oder höher |  
 
 ### Emulation: Unterstützung des Dual-Screen-Modus  
 
@@ -92,7 +93,7 @@ Aktivieren Sie das Kennzeichen in Microsoft Edge, um das [Feature "CSS-Medien Bi
 
 Wenn Sie das [Surface Duo][SurfaceDevicesDuo] in einer Haltung mit zwei Bildschirmen in Microsoft Edge emulieren, wird die Naht \ (der Abstand zwischen den beiden Bildschirmen \) über Ihre Website oder App gezeichnet.  
 
-Die emulierte Anzeige entspricht der Art, in der Ihre Website \ (oder App \) in der [Microsoft Edge Android-App][GooglePlayMicrosoftEdge] auf [Surface Duo][SurfaceDevicesDuo]gerendert wird.  Möglicherweise müssen Sie Ihre Website aktualisieren \ (oder App \), damit Sie besser entlang der Naht angezeigt werden.  Weitere Informationen zum Anpassen Ihrer Website \ (oder App \) an die Naht finden Sie unter [Arbeiten mit der Naht][DualScreenIntroductionHowWorkSeam] in der Surface Duo-Dokumentation.  
+Die emulierte Anzeige entspricht der Darstellung Ihrer Website \ (oder App \) in der [Microsoft Edge Android-App][GooglePlayMicrosoftEdge] , die auf [Surface Duo][SurfaceDevicesDuo]ausgeführt wird.  Möglicherweise müssen Sie Ihre Website aktualisieren \ (oder App \), damit Sie besser entlang der Naht angezeigt werden.  Weitere Informationen zum Anpassen Ihrer Website \ (oder App \) an die Naht finden Sie unter [Arbeiten mit der Naht][DualScreenIntroductionHowWorkSeam].  
 
 Die [Gerätesymbolleiste][DevtoolsDeviceModeIndexSimulateMobileViewport] verfügt über zusätzliche Features, die Sie beim Testen Ihrer Website oder app in verschiedenen Haltungen und Ausrichtungen unterstützen.  Wählen Sie **drehen** \ ( ![ drehen ][ImageRotateIcon] \) aus, um das Ansichtsfenster in Querformat zu drehen. Kombinieren Sie das Feature mit **Span** \ ( ![ Span ][ImageSpanIcon] \), um zwischen Einzelbildschirm-oder gefalteten und Dual-Screen-oder entfalteten Haltungen umzuschalten.  Zusammen können die Features das Testen Ihrer Website oder app in allen vier möglichen Haltungen und Ausrichtungen ermöglichen.  
 
@@ -105,7 +106,8 @@ Das **Feature "experimentelle Webplattform-Features** \ ( ![ ExperimentalApis ][
 <!-- Commenting out until the icon issue is fixed in Edge Canary
 The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperimentalApisIcon]\) icon displays the state of the **Experimental Web Platform features** flag.  If the flag is turned on, the icon is highlighted.  If the flag is turned off, the icon is not highlighted.  To turn on \(or off\) the flag, either choose the icon or navigate to `edge://flags` and toggle the flag.   -->  
 
-Hier sind weitere Ressourcen, die Ihnen bei der Optimierung Ihrer Website (oder App \) für Dual-Screen-Geräte helfen können:
+Hier sind weitere Ressourcen, die Ihnen bei der Optimierung Ihrer Website (oder App \) für Dual-Screen-Geräte helfen können.  
+
 *   Weitere Informationen zur Web-Entwicklung auf Dual-Screen-Geräten finden Sie unter [Dual-Screen-Web-Erlebnisse][DualScreenWebIndex].  
 *   Installieren Sie den [Surface Duo-Emulator][DualScreenAndroidUseEmulator].  Sie unterscheidet sich vom Emulator in Microsoft Edge, emuliert das Surface Duo mit Android und ist in [Android Studio][AndroidDeveloperStudio]integriert.  Wenn Sie weitere Informationen erhalten möchten, navigieren Sie zu [Surface Duo SDK][DualScreenAndroidGetDuoSdk].  
 
@@ -116,7 +118,7 @@ Hier sind weitere Ressourcen, die Ihnen bei der Optimierung Ihrer Website (oder 
 
 ### Debuggen von neuen CSS-Raster Features aktivieren  
 
-Dieses experimentelle Feature bietet eine Reihe neuer Visualisierungen, die Ihnen beim Debuggen von CSS-Rasterlayouts helfen.  Wenn Sie eine Vorschau der neuesten experimentellen Features anzeigen möchten, [Aktivieren Sie dieses Experiment](#turn-on-experimental-features) , und laden Sie devtools.  Dieses Experiment ist in Edge 87 und höher standardmäßig aktiviert.  
+Dieses experimentelle Feature bietet eine Reihe neuer Visualisierungen, die Ihnen beim Debuggen von CSS-Rasterlayouts helfen.  Wenn Sie eine Vorschau der neuesten experimentellen Features anzeigen möchten, [Aktivieren Sie dieses Experiment](#turn-on-experimental-features) , und laden Sie devtools.  Dieses Experiment ist in Microsoft Edge, Version 87 oder höher, standardmäßig aktiviert.  
 
 #### Anzeigen von in-Hover-Raster Überlagerungen mit dem Tool "überprüfen"  
 
@@ -128,29 +130,29 @@ Das Tool "über **prüfen** " bietet eine schnelle Möglichkeit, CSS-Rasterlayou
 
 #### Anzeigen beständiger Raster Überlagerungen  
 
-In Edge 86 und höher bietet das experimentelle CSS-Raster Feature auch die Option zum Aktivieren beständiger Raster Überlagerungen.  Die persistenten Overlays bieten mehrere Vorteile.  
+In Microsoft Edge, Version 86 oder höher, bietet das experimentelle CSS-Raster Feature auch die Option zum Aktivieren beständiger Raster Überlagerungen.  Die persistenten Overlays bieten mehrere Vorteile.  
 
 *   Die beständigen Overlays bleiben auf der Seite sichtbar, während Sie scrollen, die Maus bewegen und andere Features des devtools verwenden.  
-*   Mehrere persistente Overlays können gleichzeitig aktiviert werden, sodass Sie zahlreiche Rasterlayouts auf einmal überprüfen können.  
-*   Beständige Overlays bieten viele Konfigurationsoptionen, wie beispielsweise das Ausblenden oder Anzeigen von Rasterbereichs Namen, Rasterabständen, nach Titel Größen und mehr.  
+*   Mehrere persistente Overlays können gleichzeitig aktiviert werden, sodass Sie mehrere Rasterlayouts auf einmal überprüfen können.  
+*   Beständige Overlays bieten viele Konfigurationsoptionen, wie das ein-oder Ausblenden von Namen im Rasterbereich, Rasterabstände, nach Titel Größen usw.  
 
 Zwei Möglichkeiten zum Umschalten einer beständigen Raster Überlagerung  
 
-*   Wählen Sie die **Raster** Raute neben einem beliebigen Rasterelement aus, das in der DOM-Struktur des **Elements** -Tools angezeigt wird.  
+*   Wählen Sie das Oval- **Raster** Symbol neben einem Rasterelement aus, das in der DOM-Struktur des **Elements** -Tools angezeigt wird.  
     
     :::image type="complex" source="./media/grid-adorner.msft.png" alt-text="Liste der Experimente in den devtools-Einstellungen" lightbox="./media/grid-adorner.msft.png":::
-       Raster Rauten im elementtool  
+       Symbol ' Raster Oval ' im Tool ' **Elemente** '  
     :::image-end:::  
     
 *   Öffnen Sie den neuen **LayoutPanel** -Bereich, der sich im Tool Elemente befindet, und aktivieren Sie das Kontrollkästchen neben den einzelnen Rasterelementen, die Sie markieren möchten.  
     
     :::image type="complex" source="./media/grid-layout-zoom.msft.png" alt-text="Liste der Experimente in den devtools-Einstellungen" lightbox="./media/grid-layout-zoom.msft.png":::
-       Layoutpanel  
+       **LayoutPanel** in devtools  
     :::image-end:::  
     
 #### Konfigurieren von persistenten Overlays  
 
-Das neue **LayoutPanel** -Element, das sich neben den **Formatvorlagen** und **berechneten** Registerkarten in Edge 86 und höher im Tool **Elemente** befindet, Oberflächen-Konfigurationsoptionen für persistente Overlays.  
+In Microsoft Edge, Version 86 oder höher, befindet sich das neue **LayoutPanel** -Element neben den Registerkarten **"Formatvorlagen** " und " **berechnet** " im Tool " **Elemente** ".  Im **LayoutPanel** werden die Konfigurationsoptionen für persistente Overlays Oberflächen angezeigt.  
 
 :::image type="complex" source="./media/experiments-grid.msft.png" alt-text="Liste der Experimente in den devtools-Einstellungen" lightbox="./media/experiments-grid.msft.png":::
    CSS-Raster Debugging-Feature  
@@ -211,7 +213,7 @@ Nachdem Sie das Experiment aktiviert haben, stellen Sie sicher, dass Sie das dev
 
 1.  Öffnen Sie den Bereich **Elemente** .  
 1.  Öffnen Sie den Bereich " **Barrierefreiheit** " im Bereich "Schublade \" (unten).  
-1.  Aktivieren Sie im Abschnitt **Quellauftrags Anzeige** das Kontrollkästchen **Quellreihenfolge anzeigen** .  
+1.  Wählen Sie im Abschnitt **Quellauftrags Anzeige** das Kontrollkästchen **Quellreihenfolge anzeigen** aus.  
 1.  Markieren Sie ein beliebiges HTML-Element, um ein Overlay anzuzeigen, das die Reihenfolge in der Seitenquelle enthält.  
 
 :::image type="complex" source="./media/experiments-source-order-viewer.msft.png" alt-text="Liste der Experimente in den devtools-Einstellungen" lightbox="./media/experiments-source-order-viewer.msft.png":::
@@ -219,6 +221,42 @@ Nachdem Sie das Experiment aktiviert haben, stellen Sie sicher, dass Sie das dev
 :::image-end:::  
 
 <!--Available in Microsoft Edge version 86 and later.  -->  
+
+### Aktivieren des Tasten Kombinations-Editors
+
+Wenn das Experiment " **Tastenkombinationen-Editor aktivieren** " aktiviert ist, können Sie jetzt Tastenkombinationen für jede Aktion im devtools anpassen.  Führen Sie die folgenden Schritte aus, um die Tastenkombination für eine bestimmte Aktion anzupassen.  
+
+1.  [Öffnen Sie devtools][DevtoolsOpenMain].  
+1.  Öffnen Sie [Einstellungen][DevToolsCustomizeSettings].
+    *   Wählen Sie aus `Shift` + `?` .  
+1.  Navigieren Sie zur Seite **Verknüpfungen** .  
+1.  Wählen Sie die Aktion aus, die Sie anpassen möchten.  
+1.  Wählen Sie das Symbol **Bearbeiten** \ ( ![ EditKeyboardShortcut ][ImageEditKeyboardShortcutIcon] \) aus.  
+    
+    :::image type="complex" source="./media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="Liste der Experimente in den devtools-Einstellungen" lightbox="./media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
+       Auswählen der zu anpassenden Aktion auf der Seite " **Verknüpfungen** " in " [Einstellungen][DevToolsCustomizeSettings] "
+    :::image-end:::  
+    
+1.  Wählen Sie auf der Tastatur die Tasten aus, die Sie an die Aktion binden möchten.
+    
+    :::image type="complex" source="./media/experiments-custom-keyboard-shortcuts-enter-key.msft.png" alt-text="Liste der Experimente in den devtools-Einstellungen" lightbox="./media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
+       Wählen Sie die Tasten aus, die Sie der Aktion zuweisen möchten.
+    :::image-end:::  
+    
+1.  Wenn Sie die neue Tastenkombination speichern möchten, wählen Sie das Häkchen \ (![CheckmarkKeyboardShortcut][ImageCheckmarkKeyboardShortcutIcon]\)-Symbol.
+    
+    :::image type="complex" source="./media/experiments-custom-keyboard-shortcuts-save-shortcut.msft.png" alt-text="Liste der Experimente in den devtools-Einstellungen" lightbox="./media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
+       Auswählen des Kontrollkästchen Symbols zum Speichern der neuen Tastenkombination
+    :::image-end:::  
+    
+1.  Wählen Sie die neue Tastenkombination aus, um die Aktion im devtools auszulösen.  
+    
+Auf der Seite " **Verknüpfungen** " zeigt das Symbol " **benutzerdefinierte Tastenkombination** \ ( ![ CustomKeyboardShortcut ][ImageCustomKeyboardShortcutIcon] \)" die von Ihnen angepassten Tastenkombinationen an.  Wenn Sie alle Tastenkombinationen zurücksetzen möchten, wählen Sie **Standardtastenkombinationen wiederherstellen**aus.  
+
+Wenn Sie die Tastenkombinationen für eine Aktion bearbeiten, um Ihre Änderungen zu verwerfen, wählen Sie das X \ ( ![ XKeyboardShortcut ][ImageXKeyboardShortcutIcon] \)-Symbol aus.  Wenn Sie Tastenkombinationen für eine bestimmte Aktion entfernen möchten, wählen Sie das Symbol " **Verknüpfung löschen** \ ( ![ DeleteKeyboardShortcut ][ImageDeleteKeyboardShortcutIcon] \)" aus.  Wenn Sie mehrere Tastenkombinationen für eine Aktion hinzufügen möchten, wählen Sie **Verknüpfung hinzufügen**aus.
+
+> [!NOTE]
+> Wenn eine Tastenkombination aktuell einer anderen Aktion zugewiesen ist, können Sie Sie nicht für eine neue Aktion speichern.  Sie müssen zuerst die Tastenkombination für die vorherige Aktion löschen und dann der neuen Aktion hinzufügen.  
 
 ## Frühere experimentelle Features  
 
@@ -247,6 +285,11 @@ Sie können Feedback zu Microsoft Edge devtools-Experimenten oder zu allem ander
 [ImageRotateIcon]: ./media/rotate-dark-icon.msft.png  
 [ImageSpanIcon]: ./media/span-dark-icon.msft.png  
 [ImageExperimentalApisIcon]: ./media/experimental-apis-dark-icon.msft.png  
+[ImageEditKeyboardShortcutIcon]: ./media/edit-keyboard-shortcut-icon.msft.png  
+[ImageCheckmarkKeyboardShortcutIcon]: ./media/checkmark-keyboard-shortcut-icon.msft.png  
+[ImageCustomKeyboardShortcutIcon]: ./media/custom-keyboard-shortcut-icon.msft.png  
+[ImageDeleteKeyboardShortcutIcon]: ./media/delete-keyboard-shortcut-icon.msft.png  
+[ImageXKeyboardShortcutIcon]: ./media/discard-changes-keyboard-shortcut-icon.msft.png  
 
 <!-- links -->  
 
@@ -256,7 +299,8 @@ Sie können Feedback zu Microsoft Edge devtools-Experimenten oder zu allem ander
 [DevtoolsIssues]: ./issues/index.md "Suchen und Beheben von Problemen mit dem Microsoft Edge devtools Issues Tool | Microsoft docs"  
 [DevToolsShortcuts]: ./shortcuts.md "Microsoft Edge devtools-Tastenkombinationen | Microsoft docs"  
 [DevtoolsOpen]: ./open.md "Öffnen Sie Microsoft Edge devtools | Microsoft docs"  
-[DevtoolsCustomKeyboardShortcuts]: ./customize/shortcuts.md "Anpassen von Tastenkombinationen in Microsoft Edge devtools | Microsoft docs"
+[DevtoolsCustomKeyboardShortcuts]: ./customize/shortcuts.md "Anpassen von Tastenkombinationen in Microsoft Edge devtools | Microsoft docs"  
+[DevtoolsOpenMain]: ./open.md "Öffnen Sie Microsoft Edge devtools | Microsoft docs"  
 
 [DualScreenWebIndex]: /dual-screen/web/index "Dual-Screen Web Experiences | Microsoft docs"  
 [DualScreenAndroidGetDuoSdk]: /dual-screen/android/get-duo-sdk "Abrufen des Surface Duo-Emulators | Microsoft docs"  

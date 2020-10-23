@@ -7,12 +7,12 @@ ms.date: 10/08/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 74fb4e276547d9f653a5bcbdcab9c4406d09a81a
-ms.sourcegitcommit: 912609aa49864e3363aaa3b245ff2aa4bec3fc3e
+ms.openlocfilehash: 0e759c18b5ef547bfd490f4d525930f92809a6a1
+ms.sourcegitcommit: 6e2b26d41a0aa56ac34e6edc7dddd852ddb415b1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "11104861"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "11133911"
 ---
 # Neuerungen in devtools (Microsoft Edge 86)  
 
@@ -490,7 +490,7 @@ Wenn Sie unter Windows oder macOS arbeiten, sollten Sie die [Microsoft Edge Prev
 [CR772558]: https://crbug.com/772558 "DevTools: Update auf die neueste Version von Lighthouse | Chrom Fehler"  
 [CR807440]: https://crbug.com/807440 "Chrome sperrt mit einer hohen Anzahl von SWs | Chrom Fehler"  
 [CR997694]: https://crbug.com/997694 "XMLHttpRequest-Anforderungen mit 302-Status werden nicht unter dem Filter \ "XMLHttpRequest \" im Netzwerk Panel angezeigt | Chrom Fehler"  
-[CR1047356]: https://crbug.com/1047356 "CSS Grid/Flexbox/Tabellentools"  
+[CR1047356]: https://crbug.com/1047356 "CSS Grid/Flexbox/Tabellentools | Chrom Fehler"  
 [CR1051466]: https://crbug.com/1051466 "Unterstützen des Coop/COEP-Debuggens in devtools | Chrom Fehler"  
 [CR1054281]: https://crbug.com/1054281 "Feature Request: devtools sollte faltbare und Dual-Screen-Geräte emulieren | Chrom Fehler"  
 [CR1067184]: https://crbug.com/1067184 "Feature Request: Schaltfläche "Filter löschen" im Netzwerk &-Elemente-> Formatfilter Eingaben | Chrom Fehler"  

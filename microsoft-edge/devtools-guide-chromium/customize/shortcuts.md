@@ -3,24 +3,22 @@ description: Zuordnen von Tastenkombinationen im devtools zu Visual Studio-Code
 title: Anpassen von Tastenkombinationen in der Microsoft Edge-devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/04/2020
+ms.date: 10/21/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools, Benutzerdefiniert, Tastenkombinationen, Tastatur, Visual Studio-Code
-ms.openlocfilehash: 65a54c343c043c30ad02ebdde53edb3e32e1e1df
-ms.sourcegitcommit: 6b577cb118f34f3ff2c65eab2908b65f155dc151
+ms.openlocfilehash: 2af2ea5c17e699ded6f2163d08a74d1f094ea4e8
+ms.sourcegitcommit: 6e2b26d41a0aa56ac34e6edc7dddd852ddb415b1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "11003943"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "11133890"
 ---
 # Anpassen von Tastenkombinationen in der Microsoft Edge-devtools  
 
-Die Seite " **Verknüpfungen** " in " [Einstellungen][DevToolsCustomizeSettings] " enthält eine Liste der [Tastenkombinationen in den devtools][DevToolsShortcuts] und [Funktionen zum Anpassen der Tastenkombinationen](#match-keyboard-shortcuts-in-the-devtools-to-microsoft-visual-studio-code).  
+Die Seite " **Verknüpfungen** " in " [Einstellungen][DevToolsCustomizeSettings] " enthält eine Liste der [Tastenkombinationen in den devtools][DevToolsShortcuts] und [Funktionen zum Anpassen der Tastenkombinationen](#match-keyboard-shortcuts-in-the-devtools-to-microsoft-visual-studio-code).  Führen Sie die folgenden Schritte aus, um zur Seite **Verknüpfungen** zu navigieren.  
 
-In diesem Artikel werden die aktuellen Tastenkombinationen im devtools und die ausgelösten Aktionen bereitgestellt.  
-
-1.  [Öffnen Sie devtools][DevtoolOpenMain].  
+1.  [Öffnen Sie devtools][DevtoolsOpenMain].  
 1.  Öffnen Sie [Einstellungen][DevToolsCustomizeSettings].
     *   Wählen Sie aus `Shift` + `?` .  
 1.  Navigieren Sie zur Seite **Verknüpfungen** .  
@@ -39,17 +37,15 @@ Führen Sie die folgenden Schritte aus, um die Tastenkombinationen in der Micros
     :::image type="complex" source="../media/match-keyboard-shortcuts-visual-studio-code.msft.png" alt-text="Die Seite &quot;Verknüpfungen&quot; in &quot;Einstellungen&quot;" lightbox="../media/match-keyboard-shortcuts-visual-studio-code.msft.png":::
        Zuordnen von Tastenkombinationen im devtools zu Visual Studio-Code  
     :::image-end:::  
-
-Wenn Sie beispielsweise ein Skript in [Visual Studio-Code][VisualStudioCodeShortcutsKeyboardWindows]anhalten oder weiter ausführen möchten, wählen Sie aus `F5` .  
-Wenn Sie keine Werte aus der **devtools (Standardeinstellung)** im Microsoft Edge-devtools ändern und ein Skript anhalten oder fortsetzen möchten, wählen Sie aus `F8` .  
-Wenn Sie den Wert **Visual Studio-Code** Voreinstellung in der Microsoft Edge-devtools ändern und ein Skript anhalten oder fortsetzen möchten, wählen Sie aus `F5` .  
+    
+Wenn Sie beispielsweise ein Skript in [Visual Studio-Code][VisualStudioCodeShortcutsKeyboardWindows]anhalten oder weiterhin ausführen möchten, wählen Sie aus `F5` .  Wenn Sie mit der **devtools (Standardeinstellung)** ein Skript anhalten oder fortsetzen möchten, wählen Sie aus `F8` .  Wenn Sie die Voreinstellung in **Visual Studio-Code**ändern, wählen Sie nun ebenso `F5` wie in [Visual Studio-Code][VisualStudioCodeShortcutsKeyboardWindows]aus.  
 
 <!-- ## Edit shortcuts for any action in the DevTools -->
 
 <!-- links -->  
 
 [DevToolsCustomizeSettings]: ./index.md#settings "Einstellungen – anpassen von Microsoft Edge devtools | Microsoft docs"  
-[DevtoolOpenMain]: ../open.md "Öffnen Sie Microsoft Edge devtools | Microsoft docs"  
+[DevtoolsOpenMain]: ../open.md "Öffnen Sie Microsoft Edge devtools | Microsoft docs"  
 [DevToolsShortcuts]: ../shortcuts.md "Microsoft Edge devtools-Tastenkombinationen | Microsoft docs"  
 [VisualStudioCode]: https://code.visualstudio.com "Microsoft Visual Studio-Code"  
 [VisualStudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Visual Studio-Code Tastenkombinationen für Windows | Microsoft Visual Studio-Code"  
