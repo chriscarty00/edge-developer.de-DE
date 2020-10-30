@@ -178,6 +178,8 @@
               href: devtools-guide-chromium/javascript/reference.md
             - name: Codeausschnitte
               href: devtools-guide-chromium/javascript/snippets.md
+            - name: Außerkraftsetzungen
+              href: devtools-guide-chromium/javascript/overrides.md
             - name: Übersicht über das Quellenpanel
               href: devtools-guide-chromium/sources.md
             - name: Debuggen von Hintergrunddiensten
