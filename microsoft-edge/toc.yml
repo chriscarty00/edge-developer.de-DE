@@ -525,6 +525,8 @@
       items:
         - name: Website Kompatibilität – Auswirkungen von Änderungen an Microsoft Edge
           href: web-platform/site-impacting-changes.md
+        - name: Benutzer von IE nach Microsoft Edge verschieben
+          href: web-platform/ie-to-microsoft-edge-redirection.md
         - name: Nachverfolgungsprävention in Microsoft Edge
           href: web-platform/tracking-prevention.md
         - name: Benutzer-Agent-Zeichenfolge für Microsoft Edge
