@@ -3,16 +3,16 @@ description: Enthält eine Zusammenfassung der Änderungen mit hoher Auswirkung,
 title: Website Kompatibilität – Auswirkungen von Änderungen an Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/02/2020
+ms.date: 11/04/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Kompatibilität, Web-Plattform
-ms.openlocfilehash: 49fbedb2fe979a52b771539c7ceedce8968c2fb4
-ms.sourcegitcommit: 903524ab85321ade278facd741d6487e8cabe33f
+ms.openlocfilehash: bb4d67bf1ab6274a10a83ee750fa9db52ab85464
+ms.sourcegitcommit: 4497b399a6ddfa34163b7d3db4f76423d4da3c12
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "11100288"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "11156348"
 ---
 # Website Kompatibilität – Auswirkungen von Änderungen an Microsoft Edge  
 
@@ -28,7 +28,7 @@ Das Web entwickelt sich ständig weiter, um Benutzerfreundlichkeit, Sicherheit u
 | Blockieren von Downloads für gemischten Inhalt | [Chrome + 1](#release-comments) \ (Edge V86 \)  |  | Diese Änderung findet im Chromium-Projekt statt, auf dem Microsoft Edge basiert.  Weitere Informationen, einschließlich der geplanten Zeitachse von Google für diese Änderung, finden Sie im [Blogeintrag Google Security][GoogleBlogSecurity20200206].  Der Microsoft-Rollout-Zeitplan für Dateitypen, die gewarnt oder blockiert werden sollen, ist für eine Version nach Chrome geplant.  |  
 | Deprecated AppCache | [Chrome + 1](#release-comments) \ (Edge V86 \)  |  | Diese Änderung findet im Chromium-Projekt statt, auf dem Microsoft Edge basiert.  Weitere Informationen finden Sie in der [WebDev-Dokumentation][WebDevAppCacheRemoval].  Der Microsoft-Rollout-Zeitplan für die deprecated-Version ist für eine Version nach Chrome geplant.  Durch Anfordern eines [AppCache-OriginTrial-Tokens][AppCacheOriginTrial] können Websites die veraltete API weiter verwenden, bis Edge-V90.  |  
 | Entfernen von Adobe Flash | Edge-V88  |  | Diese Änderung findet im Chromium-Projekt statt, auf dem Microsoft Edge basiert.  Wenn Sie weitere Informationen wünschen, navigieren Sie zur [Adobe Flash Chrom-Roadmap][ChromiumFlashRoadmapSupportRemoved].  | 
-| Deaktivieren und Entfernen von FTP | Edge-V88  | Edge-V87 | In Edge V87 ist die FTP-Unterstützung standardmäßig deaktiviert.  In Edge V88 wird die FTP-Unterstützung entfernt.  Diese Änderung findet im Chromium-Projekt statt, auf dem Microsoft Edge basiert.  Wenn Sie weitere Informationen wünschen, navigieren Sie zum [Chrome Platform-Status Eintrag][ChromePlatformStatus6246151319715840].  |   
+| Deaktivieren und Entfernen von FTP | Edge-V88  | Edge Beta-V87 | In Edge Beta V87 ist die FTP-Unterstützung standardmäßig deaktiviert; in Edge stable V87 bleibt die Funktion aktiviert.  In Edge V88 wird die FTP-Unterstützung vollständig entfernt.  Diese Änderung findet im Chromium-Projekt statt, auf dem Microsoft Edge basiert.  Wenn Sie weitere Informationen wünschen, navigieren Sie zum [Chrome Platform-Status Eintrag][ChromePlatformStatus6246151319715840].  Unternehmen, die über Websites verfügen, die weiterhin FTP-Unterstützung benötigen, können FTP weiterhin verwenden, indem Sie die Website für die Verwendung des [IE-Modus](https://docs.microsoft.com/deployedge/edge-ie-mode)konfigurieren.  |   
 
 ##### Kommentare freigeben  
 
@@ -64,3 +64,5 @@ Das Web entwickelt sich ständig weiter, um Benutzerfreundlichkeit, Sicherheit u
 
 [WebDevAppCacheRemoval]: https://web.dev/appcache-removal/ "AppCache entfernen"
 [AppCacheOriginTrial]: https://developers.chrome.com/origintrials/#/view_trial/1776670052997660673 "AppCache-OriginTrial-Token"
+
+<!--todo:  cleanup links  -->  
