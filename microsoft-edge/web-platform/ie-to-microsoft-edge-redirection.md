@@ -2,16 +2,16 @@
 description: Verschieben von Benutzern aus dem Internet Explorer nach Microsoft Edge
 title: Verschieben von Benutzern aus dem Internet Explorer nach Microsoft Edge
 author: MSEdgeTeam
-ms.date: 11/04/2020
+ms.date: 11/06/2020
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Kompatibilität, Web-Plattform, Internet Explorer
-ms.openlocfilehash: 48f0f4121fb444d80603dcbb408397679c64753d
-ms.sourcegitcommit: 7b4441b7656c8317139650f904b70cc87797d37e
+ms.openlocfilehash: 2e1488359e405247e290ad8f6300c480a7e20af6
+ms.sourcegitcommit: 6ef48c8cda392c6bf8217cff5f696ac620d10739
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "11154332"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163206"
 ---
 # Verschieben von Benutzern aus dem Internet Explorer nach Microsoft Edge 
 
@@ -20,8 +20,7 @@ Viele moderne Websites verfügen über Designs, die mit Internet Explorer \ (IE 
 In diesem Artikel werden die folgenden Konzepte beschrieben:  
 
 *   Die Benutzeroberfläche für die Umleitung  
-*   So fügen Sie Ihre Website zur IE-Kompatibilitätsliste hinzu  
-*   So entfernen Sie Ihre Website aus der IE-Kompatibilitätsliste  
+*   Anfordern eines Updates für die Liste  
     
 ## Warum wird eine Website zur IE-Kompatibilitätsliste hinzugefügt?  
 
@@ -32,7 +31,7 @@ Die IE-Kompatibilitätsliste fügt nur dann eine Website hinzu, wenn die folgend
     
 ## Aktualisieren der IE-Kompatibilitätsliste  
 
-Die IE-Kompatibilitätsliste ist eine XML-Datei auf [Microsoft.com][MicrosoftOfficialHome].  Die Liste wird regelmäßig als Antwort auf die Anforderungen von Nutzer-und Websiteentwicklern aktualisiert, damit Websites hinzugefügt oder entfernt werden.  Aktualisierungen der Liste werden automatisch auf Benutzer Computer heruntergeladen.  
+Die IE-Kompatibilitätsliste ist eine XML-Datei auf [Microsoft.com][MicrosoftOfficialHome].  Die Liste wird regelmäßig als Antwort auf Benutzer-und Websiteentwickler Anforderungen aktualisiert, damit Websites hinzugefügt oder entfernt werden.  Aktualisierungen der Liste werden automatisch auf Benutzer Computer heruntergeladen.  
 
 Senden Sie die folgenden Informationen an [ietoedge@Microsoft.com][MailtoMicrosoftIetoedge] , damit Ihre Website aus der IE-Kompatibilitätsliste hinzugefügt oder entfernt wird.    
 
@@ -42,9 +41,10 @@ Senden Sie die folgenden Informationen an [ietoedge@Microsoft.com][MailtoMicroso
 *   Name des Unternehmens  
 *   Straße  
 *   Website Adresse  
-<!--  *   Telephone number  -->  
-<!--  *   Target platform \(desktop, phone, Xbox\)  -->  
     
+> [!NOTE]
+> Die IE-Kompatibilitätsliste ist für die Zusammenarbeit mit öffentlichen Websites vorgesehen.  
+
 <!-- links -->  
 
 [MailtoMicrosoftIetoedge]: mailto:ietoedge@microsoft.com "Senden einer e-Mail an ietoedge@Microsoft.com"  
