@@ -7,12 +7,12 @@ ms.date: 05/07/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools, vs-Code, Visual Studio-Code, Debugger
-ms.openlocfilehash: 58bcbc927505f4c5a1f493349c3e9475cb75e1be
-ms.sourcegitcommit: c1b5fdd48d39d874a76c9b8f68309eb1b507fd0b
+ms.openlocfilehash: d9f33a17db7083a6a7cbb013dbf9886755f92c5e
+ms.sourcegitcommit: 56cb5821d1b8e96f55bfa14a4ce87a3845b009c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "10695866"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "11182301"
 ---
 # Debugger für Microsoft Edge-vs-Code Erweiterung  
 
@@ -30,14 +30,14 @@ Navigieren Sie in der Aktivitäts Leiste zur Debugansicht \ ( `Ctrl` + `Shift` +
 
 ```json
 {
-    &quot;version&quot;: &quot;0.2.0&quot;,
-    &quot;configurations&quot;: [
+    "version": "0.2.0",
+    "configurations": [
         {
-            &quot;type&quot;: &quot;edge&quot;,
-            &quot;request&quot;: &quot;launch&quot;,
-            &quot;name&quot;: &quot;Launch Edge against localhost&quot;,
-            &quot;url&quot;: &quot;http://localhost:8080&quot;,
-            &quot;webRoot&quot;: &quot;${workspaceFolder}&quot;
+            "type": "edge",
+            "request": "launch",
+            "name": "Launch Edge against localhost",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
         }
     ]
 }
@@ -47,16 +47,16 @@ Wenn Sie `F5` Windows oder macOS drücken oder die grüne wieder **Gabe** -Schal
 
 ### Microsoft Edge (Chromium)  
 
-Wenn Sie Microsoft Edge \ (Chrom \), die nächste Version von Microsoft Edge, anstatt Microsoft Edge \ (EdgeHTML \) starten möchten, fügen Sie der `version` vorhandenen Konfiguration einfach ein Attribut mit der Version von Microsoft Edge \ (Chromium \) hinzu, die Sie starten möchten \ ( `dev` , `beta` oder `canary` \). In der folgenden Konfiguration wird die Canary-Version von Microsoft Edge (Chrom \) gestartet.  
+Wenn Sie Microsoft Edge \ (Chrom \), die nächste Version von Microsoft Edge, anstatt Microsoft Edge \ (EdgeHTML \) starten möchten, fügen Sie der `version` vorhandenen Konfiguration einfach ein Attribut mit der Version von Microsoft Edge \ (Chromium \) hinzu, die Sie starten möchten \ (,, `stable` `dev` `beta` oder `canary` \). In der folgenden Konfiguration wird die Canary-Version von Microsoft Edge (Chrom \) gestartet.  
 
 ```json
 {
-    &quot;type&quot;: &quot;edge&quot;,
-    &quot;request&quot;: &quot;launch&quot;,
-    &quot;version&quot;: &quot;canary&quot;,
-    &quot;name&quot;: &quot;Launch Edge against localhost&quot;,
-    &quot;url&quot;: &quot;http://localhost:8080&quot;,
-    &quot;webRoot&quot;: &quot;${workspaceFolder}"
+    "type": "edge",
+    "request": "launch",
+    "version": "canary",
+    "name": "Launch Edge against localhost",
+    "url": "http://localhost:8080",
+    "webRoot": "${workspaceFolder}"
 }
 ```  
 
