@@ -3,21 +3,21 @@ description: Informieren Sie sich über die nächsten Schritte für WebView2
 title: Roadmap für Microsoft Edge WebView 2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 11/19/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Host, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: 52a2f6d9ef3447955554a5507c3eaab39e6b6a9e
-ms.sourcegitcommit: af91bfc3e6d8afc51f0fbbc0fe392262f424225c
+ms.openlocfilehash: 99e743db0c1fb17ea46405b08e1ed074a3386068
+ms.sourcegitcommit: fab44f7e183a3c4f12bf925512fc62d84a4d6edc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "11120368"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "11182360"
 ---
 # Roadmap für Microsoft Edge-WebView2  
 
-##### Letzte Aktualisierung: Okt 2020  
+##### Letzte Aktualisierung: November 2020  
 
 Das WebView2-Steuerelement ermöglicht Entwicklern das Einbetten von Webtechnologien in ihre systemeigenen Anwendungen.  Auf der folgenden Seite werden die prospektiven Roadmaps für WebView2 erläutert.  
 
@@ -38,7 +38,7 @@ Das WebView2-Team plant die folgenden wichtigen Schritte für zukünftige Update
 :::row-end:::
 :::row:::
    :::column span="1":::
-      Feste Version  
+      Festgelegte Version  
    :::column-end:::
    :::column span="2":::
       *   Q4 2020  
@@ -61,7 +61,7 @@ Das [Evergreen-Verteilungsmodell][ConceptDistributionEvergreenModel] ermöglicht
 
 ## Feste Version  
 
-Mit dem Modell für die [Feste Versions Verteilung][ConceptsDistributionFixedVersionModel] können Sie die Microsoft Edge-Binärdateien in der systemeigenen Anwendung verpacken.  Es befindet sich derzeit in der Vorschau und ist auf GA Q4 2020 ausgerichtet.  
+Mit dem Modell für die [Feste Versions Verteilung][ConceptsDistributionFixedVersionModel] können Sie die Microsoft Edge-Binärdateien in der systemeigenen Anwendung verpacken.  Die feste Version hat die allgemeine Verfügbarkeit erreicht \ (GA \).  
 
 ## Allgemeine Verfügbarkeit  
 
@@ -71,11 +71,11 @@ Das Win32 C/C++-SDK hat GA erreicht.
 
 ### .NET  
 
-Das .NET SDK umschließt das Win32 C/C++-SDK.  Das .NET SDK wird in Kürze nach der Win32 C/C++ ga in Q4 2020 zu GA erwartet.  
+Das .NET SDK hat GA erreicht. 
 
 ### WinUI 3.0  
 
-Sie können mit [Win UI 3,0][UwpToolkitsWinui3Index], derzeit in Alpha, auf WebView2 in ihren UWP-Anwendungen zugreifen.  Weitere Informationen dazu, wie Sie auf dem neuesten Stand bleiben, finden Sie unter Roadmap für die [Windows-UI-Bibliothek][GithubMicrosoftUiXamlRoadmap].  
+Sie können in ihren UWP-Anwendungen mithilfe von [Win UI 3,0][UwpToolkitsWinui3Index], derzeit in Alpha, auf WebView2 zugreifen.  Weitere Informationen dazu, wie Sie auf dem neuesten Stand bleiben, finden Sie unter Roadmap für die [Windows-UI-Bibliothek][GithubMicrosoftUiXamlRoadmap].  
 
 <!-- links -->  
 

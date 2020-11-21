@@ -3,20 +3,20 @@ description: Features, die dem Microsoft Edge (Chrom)-devtools im März 2019 hin
 title: Neuerungen in der Microsoft Edge-devtools (Chrom) im März 2019
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/11/2020
+ms.date: 10/23/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: bf1919b0ab46df378880d664dd4e59aee96605e5
-ms.sourcegitcommit: 24430258f363b7dd85f7067afd4565bf102b4a1f
+ms.openlocfilehash: 0b592eddbd68b3bbd8ff0a9edf9a1253bd79677e
+ms.sourcegitcommit: acf8ad7cb6c8ecf83a6170f8eeb9bec32878f8ff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "10645322"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "11182512"
 ---
 # Neuerungen in Microsoft Edge (Chrom) devtools
 
-Vielen Dank, dass Sie eine Vorschau der nächsten Version von Microsoft Edge ausprobiert haben! Mit dieser Version haben wir eine wichtige Schicht in der zugrunde liegenden Webplattform von Microsoft Edge durch die Übernahme des Open-Source-Projekts Chromium übernommen. Mit dieser Änderung ist es einfacher für Sie, ihre Websites in Microsoft Edge zu erstellen und zu testen und sicherzustellen, dass diese weiterhin wie erwartet funktionieren, auch wenn Ihre Benutzer in einem anderen Chrom basierten Browser wie Google Chrome, Vivaldi, Opera oder Brave Surfen.
+Vielen Dank, dass Sie eine Vorschau des neuen Microsoft Edge ausprobiert haben! Mit dieser Version haben wir eine wichtige Schicht in der zugrunde liegenden Webplattform von Microsoft Edge durch die Übernahme des Open-Source-Projekts Chromium übernommen. Mit dieser Änderung ist es einfacher für Sie, ihre Websites in Microsoft Edge zu erstellen und zu testen und sicherzustellen, dass diese weiterhin wie erwartet funktionieren, auch wenn Ihre Benutzer in einem anderen Chrom basierten Browser wie Google Chrome, Vivaldi, Opera oder Brave Surfen.
 
 ## Das neue Microsoft Edge (Chrom)-devtools
 
@@ -24,7 +24,7 @@ Wenn Sie Microsoft Edge Auschecken und sich hauptsächlich in einem Chrom basier
 
 ![Microsoft Edge (Chrom) devtools](./media/devtools.png)
 
-Wenn Sie die nächste Version von Microsoft Edge Auschecken und Sie hauptsächlich in Microsoft Edge (EdgeHTML) entwickelt haben, haben wir einige hervorragende neue Tools, mit denen wir hoffen, dass es Ihnen einfacher und schneller fällt, ihre Websites in Microsoft Edge zu erstellen und zu testen! Weitere Informationen zu diesen neuen Tools finden Sie [im devtools-Leitfaden zu Microsoft Edge (Chrom)](../devtools-guide-chromium.md).
+Wenn Sie den neuen Microsoft Edge Auschecken und sich hauptsächlich in Microsoft Edge (EdgeHTML) entwickelt haben, haben wir einige hervorragende neue Tools, mit denen wir hoffen, dass es Ihnen einfacher und schneller fällt, ihre Websites in Microsoft Edge zu erstellen und zu testen! Weitere Informationen zu diesen neuen Tools finden Sie [im devtools-Leitfaden zu Microsoft Edge (Chrom)](../devtools-guide-chromium.md).
 
 ## Neue dunkle und helle Designs für das devtools
 
@@ -58,7 +58,7 @@ Weitere Informationen finden Sie unter [Debuggen von Microsoft Edge (Chrom) aus 
 
 Mit der Verschiebung in der zugrunde liegenden Webplattform von Microsoft Edge erhält das Edge devtools-Protokoll keine weiteren Updates. Die Microsoft Edge-devtools (Chrom) verwendet das Chrom-devtools-Protokoll oder CDP. Informationen zum Verweisen auf die Dokumentation zu den Domänen und Methoden in CDP finden Sie [im CDP-Viewer](https://chromedevtools.github.io/devtools-protocol/tot/Accessibility).
 
-In der nächsten Version von Microsoft Edge werden alle Methoden, mit denen das Präfix vorangestellt wurde, `ms` nicht unterstützt. Weitere Informationen zur Verwendung von CDP in Microsoft Edge (Chrom) finden Sie unter [devtools-Protokoll (Chrom)](../devtools-protocol-chromium.md).
+Im neuen Microsoft Edge werden alle Methoden, mit denen das Präfix vorangestellt wurde, `ms` nicht unterstützt. Weitere Informationen zur Verwendung von CDP in Microsoft Edge (Chrom) finden Sie unter [devtools-Protokoll (Chrom)](../devtools-protocol-chromium.md).
 
 ## Bekannte Probleme
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, CoreWebView2, ICoreWebView2Host, Browser-Steuerelement, Edge-HTML, Windows Forms, WinForms, WPF, .net, WinUI, Projekt-Wiedervereinigung
-ms.openlocfilehash: 9e5cc3a26f07a11c9fd5c21d62ecafc3ed5103f4
-ms.sourcegitcommit: c619168deea44cdec8ebc80ef9ddf1d91d5f726d
+ms.openlocfilehash: 02d17b05364f02f26a4917b65ac497156be02b2e
+ms.sourcegitcommit: fab44f7e183a3c4f12bf925512fc62d84a4d6edc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "11182183"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "11182367"
 ---
 # Einführung in Microsoft Edge WebView2  
 
@@ -97,10 +97,11 @@ Das [WebView2-Beispiel][GithubMicrosoftedgeWebview2samples] -Repository enthält
 
 Eine allgemeine Verfügbarkeit \ (GA \) oder Preview-Version steht in den folgenden Programmierumgebungen zur Verfügung.  
 
-*   Win32 C/C++ \ (GA \)  
-*   .NET Framework 4.6.2 oder höher \ (Vorschau \)  
-*   .Net Core 3,0 oder höher \ (Vorschau \)  
-*   [WinUI 3,0][UwpToolkitsWinui3] \ (Vorschau \)  
+*   Win32 C/C++ \ (GA \)
+*   .NET Framework 4.6.2 oder höher
+*   .Net Core 3,1 oder höher
+*   .Net 5
+*   [WinUI 3,0][UwpToolkitsWinui3] \ (Vorschau \)
 
 Sie können WebView2-Anwendungen unter den folgenden Windows-Versionen ausführen.  
 
@@ -130,7 +131,8 @@ Weitere Informationen zum Erstellen und Bereitstellen von WebView2-Anwendungen f
 #### How-To Führungslinien  
 
 *   [Debuggen mit WebView2][Webview2HowtoDebug]  
-*   [Automatisieren und Testen von WebView2 mit Microsoft Edge Driver][Webview2HowtoWebdriver]  
+*   [Automatisieren und Testen von WebView2 mit Microsoft Edge Driver][Webview2HowtoWebdriver]
+
 
 ## Kontakt mit dem Microsoft Edge WebView-Team  
 

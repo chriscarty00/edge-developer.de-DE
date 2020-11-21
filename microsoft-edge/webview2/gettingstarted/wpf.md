@@ -3,21 +3,21 @@ description: Leitfaden für erste Schritte mit WebView2 für WPF-apps
 title: Erste Schritte mit WebView2 für WPF-apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/10/2020
+ms.date: 11/19/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, WPF-apps, WPF, Edge, CoreWebView2, Browser-Steuerelement, Edge-HTML, erste Schritte, erste Schritte, .net
-ms.openlocfilehash: 9977fad5f0462372eaa863fd740cbba6c92f6354
-ms.sourcegitcommit: a59464aff9e2c0bf57d172afbacdeed2c1a3ea42
+ms.openlocfilehash: e928dae0aa63f15ca5fa21860c83fa5529e905df
+ms.sourcegitcommit: fab44f7e183a3c4f12bf925512fc62d84a4d6edc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11162634"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "11182374"
 ---
-# Erste Schritte mit WebView2 in WPF (Preview)
+# Erste Schritte mit WebView2 in WPF
 
-In diesem Artikel erfahren Sie, wie Sie Ihre erste WebView2-app erstellen und die wichtigsten Features von [WebView2 (Preview)](../index.md)kennenlernen.  Weitere Informationen zu einzelnen APIs finden Sie unter [API-Referenz](/dotnet/api/microsoft.web.webview2.wpf).  
+In diesem Artikel erfahren Sie, wie Sie Ihre erste WebView2-app erstellen und Informationen zu den Hauptfeatures von [WebView2](../index.md)erhalten.  Weitere Informationen zu einzelnen APIs finden Sie unter [API-Referenz](/dotnet/api/microsoft.web.webview2.wpf).  
 
 ## Voraussetzungen  
 
@@ -61,22 +61,19 @@ Beginnen Sie mit einem einfachen Desktopprojekt, das ein einzelnes Hauptfenster 
     
 ## Schritt 2 – Installieren des WebView2 SDK  
 
-Fügen Sie als nächstes das WebView2-SDK zum Projekt hinzu.  Installieren Sie für die Vorschau das WebView2-SDK mithilfe von Nuget.  
+Als Nächstes fügen Sie das WebView2-SDK mit NuGet zum Projekt hinzu.  
 
 1.  Öffnen Sie das Kontextmenü im Projekt \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie **NuGet-Pakete verwalten**aus.  
     
-    :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="Nuget":::
-       Nuget
+    :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="NuGet":::
+       NuGet
     :::image-end:::
     
 1.  Geben Sie `Microsoft.Web.WebView2` in die Suchleiste ein.  Wählen Sie in den Suchergebnissen **Microsoft. Web. WebView2** aus.  
-
-    > [!IMPORTANT]
-    > Stellen Sie sicher, dass Sie die **Vorabversion einbeziehen**, wählen Sie ein Vorabversion-Paket in **Version**aus, und wählen Sie dann **Installieren**aus.  
-  
+   
      ![nuget](./media/installnuget.PNG)
     
-    Sie können mit der WebView2-API beginnen, Anwendungen zu entwickeln.  Wählen Sie aus `F5` , um das Projekt zu erstellen und auszuführen.  Im laufenden Projekt wird ein leeres Fenster angezeigt.  
+    Mit der WebView2-API können Sie nun mit der Entwicklung von Anwendungen beginnen.  Wählen Sie aus `F5` , um das Projekt zu erstellen und auszuführen.  Im laufenden Projekt wird ein leeres Fenster angezeigt.  
     
     :::image type="complex" source="./media/wpf-gettingstarted-blank.png" alt-text="Leere App":::
        Leere App
@@ -189,7 +186,7 @@ Hinzufügen der Möglichkeit, dass Benutzer die vom WebView2-Steuerelement angez
     
 ## Schritt 5 – Navigationsereignisse  
 
-Die Anwendung, die WebView2-Steuerelemente hostet, überwacht die folgenden Ereignisse, die vom WebView2-Steuerelement während der Navigation zu Webseiten ausgelöst werden.  
+Während der Webseiten Navigation löst das WebView2-Steuerelementereignisse aus. Die Anwendung, die WebView2-Steuerelemente hostet, überwacht die folgenden Ereignisse.  
 
 *   `NavigationStarting`  
 *   `SourceChanged`  
@@ -211,7 +208,7 @@ Wenn ein Fehler auftritt, werden die folgenden Ereignisse ausgelöst und können
 
 Wenn eine HTTP-Umleitung vorhanden ist, gibt es mehrere `NavigationStarting` Ereignisse.  
 
-Um zu veranschaulichen, wie diese Ereignisse verwendet werden, müssen Sie zunächst einen Handler registrieren, der `NavigationStarting` alle Anforderungen abbricht, die nicht HTTPS verwenden.  
+Um zu veranschaulichen, wie diese Ereignisse verwendet werden, müssen Sie zunächst einen Handler registrieren, der `NavigationStarting` alle Anforderungen abbricht, die kein HTTPS verwenden.  
 
 `MainWindow.xaml.cs`Ändern Sie in den Konstruktor wie unten dargestellt, und fügen Sie die `EnsureHttps` Funktion hinzu.  
 
@@ -238,7 +235,7 @@ Drücken Sie `F5` , um das Projekt zu erstellen und auszuführen.  Vergewissern 
 
 ## Schritt 6 – Skripting  
 
-Sie können Host-Anwendungen verwenden, um JavaScript-Code zur Laufzeit in WebView2-Steuerelemente einzufügen.  Das eingefügte JavaScript gilt für alle neuen Dokumente auf oberster Ebene und für alle untergeordneten Frames, bis das JavaScript entfernt wurde.  Das eingefügte JavaScript wird nach der Erstellung des globalen Objekts und vor dem Ausführen eines anderen im HTML-Dokument enthaltenen Skripts ausgeführt.  
+Sie können Host-Anwendungen verwenden, um JavaScript-Code zur Laufzeit in WebView2-Steuerelemente einzufügen.  Das eingefügte JavaScript gilt für alle neuen Dokumente auf oberster Ebene und für alle untergeordneten Frames, bis das JavaScript entfernt wurde.  Das eingefügte JavaScript wird nach der Erstellung des globalen Objekts und vor den Skripts, die im HTML-Dokument enthalten sind, ausgeführt.  
 
 Sie können Skripting verwenden, um den Benutzer zu benachrichtigen, wenn Sie zu einer nicht-HTTPS-Website navigieren.  Ändern `EnsureHttps` Sie die Funktion so, dass Sie mit der [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync) -Methode Skripts in den Webinhalt einfügt.  
 
@@ -287,7 +284,7 @@ Wenn das WebView2-Steuerelement in Ihrem Projekt zu einer URL navigiert, wird di
     }
     ```  
     
-1.  Nachdem **CoreWebView2** initialisiert wurde, registrieren Sie einen Ereignishandler, auf den Sie Antworten können `WebMessageReceived` .  In **MainWindow.XAML.cs** Update `InitializeAsync` und Add `UpdateAddressBar` mit dem folgenden Codeausschnitt.  
+1.  Nachdem **CoreWebView2** initialisiert wurde, registrieren Sie einen Ereignishandler, auf den Sie Antworten können `WebMessageReceived` .  Aktualisieren Sie in **MainWindow.XAML.cs**, `InitializeAsync` und fügen Sie es `UpdateAddressBar` mithilfe des folgenden Codeausschnitts hinzu.  
     
     ```csharp
     async void InitializeAsync()
@@ -322,7 +319,7 @@ Wenn das WebView2-Steuerelement in Ihrem Projekt zu einer URL navigiert, wird di
     }
     ```  
     
-    Drücken Sie `F5` , um die APP zu erstellen und auszuführen.  Die Adressleiste zeigt nun den URI in der WebView an, und wenn Sie erfolgreich zu einem neuen URI navigieren, benachrichtigt die WebView den Benutzer des in der WebView angezeigten URIs.  
+    Drücken Sie `F5` , um die APP zu erstellen und auszuführen.  Nun zeigt die Adressleiste den URI im WebView2-Steuerelement an. Wenn Sie erfolgreich zu einem neuen URI navigieren, benachrichtigt das WebView2-Steuerelement den Benutzer über den URI, der im WebView2-Steuerelement angezeigt wird.  
     
     :::image type="complex" source="./media/wpf-gettingstarted-searchbar.png" alt-text="addressBar":::
        addressBar

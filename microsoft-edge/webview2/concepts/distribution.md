@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, WPF-apps, WPF, Edge, ICoreWebView2, ICoreWebView2Host, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: 89e53c43c3550d0a7a3707381cc4c76be111db28
-ms.sourcegitcommit: 56cb5821d1b8e96f55bfa14a4ce87a3845b009c3
+ms.openlocfilehash: cbe3fb35bdf64a3627256028940cf868b8b185c2
+ms.sourcegitcommit: fab44f7e183a3c4f12bf925512fc62d84a4d6edc
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/20/2020
-ms.locfileid: "11182290"
+ms.locfileid: "11182409"
 ---
 # Verteilung von apps mithilfe von WebView2  
 
@@ -125,14 +125,12 @@ Das Web entwickelt sich ständig weiter.  Die Evergreen WebView2-Laufzeit wird a
 
 Nicht stabile Microsoft Edge-Kanäle \ (Beta/dev/Canary \) bieten einen kleinen Einblick in das, was als nächstes in die WebView2-Laufzeit kommt.  Genau wie bei der Entwicklung von Websites für Microsoft Edge sollten Sie Ihre WebView2-App regelmäßig testen.  Testen Sie Ihre WebView2-App mit einem der nicht stabilen Kanäle, und aktualisieren Sie Ihre APP, oder [melden Sie Probleme][GithubMicrosoftedgeWebviewfeedback] , wenn Probleme auftreten. In der Regel sind dev und Beta die empfohlenen Kanäle.  Navigieren Sie zur [Übersicht über die Microsoft Edge-Kanäle][DeployEdgeMicrosoftEdgeChannels], damit Sie entscheiden können, welcher Kanal richtig ist.  Sie können den [nicht stabilen Microsoft Edge-Kanal][DownloadNonstableEdge] in Ihrer Testumgebung herunterladen und mithilfe von `regkey` oder Umgebungsvariablen die Kanaleinstellungen für Ihre Test-App angeben.  Weitere Informationen finden Sie unter [CreateCoreWebView2EnvironmentWithOptions][ReferenceWin32Webview2IdlCreatecorewebview2environmentwithoptions].  Sie können auch [WebDriver][HowtoWebdriver] verwenden, um WebView2-Tests zu automatisieren.
 
-## Modus für feste Versions Verteilung  
-
-> [!NOTE]
-> Der Modus für die feste Versions Verteilung befindet sich in der öffentlichen Vorschau.  
-
-Der Modus für die feste Versions Verteilung wurde zuvor mit "eigene Version" benannt.  
+## Modus für feste Versions Verteilung   
 
 In Umgebungen mit eingeschränkter Kompatibilität, die strenge Kompatibilitätsanforderungen erfüllen, sollten Sie die Verwendung des festen Versions Verteilungsmodus in Frage stellen.  Wählen Sie eine bestimmte Version der WebView2-Runtime aus, und Verpacken Sie Sie mit dem Verteilungsmodus für feste Versionen.  Sie können die Anzeigedauer von Laufzeitupdates für Ihre APP angeben.  Der Modus für die feste Versions Verteilung erhält keine automatischen Updates. Planen Sie, Ihre APP und die Laufzeit zu aktualisieren.  
+
+> [!NOTE] 
+> Der Modus für die feste Versions Verteilung wurde zuvor als "eigene Version" bezeichnet.  
 
 Führen Sie die folgenden Aktionen aus, um den Modus "feste Version" zu verwenden:
 
