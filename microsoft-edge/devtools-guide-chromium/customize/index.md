@@ -3,16 +3,16 @@ description: Eine Liste der Möglichkeiten zum Anpassen der Microsoft Edge-devto
 title: Anpassen von Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 11/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 91f353c6b6c4dea2bc6764a972acf2ad52b1f151
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 682ff78b6a5272c1f6462648d64241448838edac
+ms.sourcegitcommit: 080759f68a0a158f10dc20d20c14e222ace1be84
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125083"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "11189982"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -30,55 +30,68 @@ ms.locfileid: "11125083"
 
 # Anpassen von Microsoft Edge devtools  
 
-  
-
 Auf dieser Seite werden die Möglichkeiten zum Anpassen der Microsoft Edge-devtools.  
 
 ## Einstellungen  
 
 **Einstellungen**  >  **Einstellungen** enthält viele Optionen zum Anpassen von devtools.  
 
-Führen Sie eine der folgenden Aktionen aus, um die Einstellungen zu öffnen:  
+Führen Sie eine der folgenden Aktionen aus, um die Einstellungen zu öffnen.  
 
 *   Wählen Sie aus `F1` , während devtools den Fokus hat.  
 *   Öffnen Sie das **Hauptmenü** , und wählen Sie dann **Einstellungen**aus.  
     
-    :::image type="complex" source="../media/customize-settings-preferences.msft.png" alt-text="Einstellungen" lightbox="../media/customize-settings-preferences.msft.png":::
-       **Einstellungen**  
-    :::image-end:::  
-    
+:::image type="complex" source="../media/customize-settings-preferences.msft.png" alt-text="Einstellungen" lightbox="../media/customize-settings-preferences.msft.png":::
+   **Einstellungen**  
+:::image-end:::  
+
 ## Schublade  
 
-Die **Schublade** enthält viele versteckte Features.  
+Die **Schublade** ist ein zweites Fenster, in dem Tools Ihrer Wahl angezeigt werden.  
 
-Wählen Sie aus `Escape` , um die **Schublade**zu öffnen oder zu schließen.  
+Wenn Sie die **Schublade**öffnen oder schließen möchten, wählen Sie aus `Escape` .  
 
-:::image type="complex" source="../media/customize-drawer-open.msft.png" alt-text="Einstellungen" lightbox="../media/customize-drawer-open.msft.png":::
+:::image type="complex" source="../media/customize-drawer-open.msft.png" alt-text="Die Schublade" lightbox="../media/customize-drawer-open.msft.png":::
    Die **Schublade**  
 :::image-end:::  
 
-Wählen Sie **mehr** \ ( ![ mehr ][ImageMoreIcon] \) aus, um weitere Registerkarten für die **Schublade** zu öffnen.  
+Standardmäßig werden einige Tools im Haupt Feld geöffnet, während andere im **Einzug**angezeigt werden.  Wählen Sie **mehr** \ ( `...` ) aus, um ein Tool im **Einzug**zu öffnen.  
 
-:::image type="complex" source="../media/customize-drawer-open-more-tools.msft.png" alt-text="Einstellungen" lightbox="../media/customize-drawer-open-more-tools.msft.png":::
-   Schaltfläche zum Öffnen der Registerkarten für die **Schublade**  
+:::image type="complex" source="../media/customize-drawer-open-more-tools.msft.png" alt-text="Die Schaltfläche zum Öffnen der Schublade" lightbox="../media/customize-drawer-open-more-tools.msft.png":::
+   Die Schaltfläche zum Öffnen der **Schublade**  
 :::image-end:::  
+
+Sie können Tools zwischen dem Hauptpanel und der Schublade verschieben.  
+
+*   Wenn Sie ein Tool vom Einzug in den Hauptbereich verschieben möchten, zeigen Sie mit der Maus auf ein Tool, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie **nach oben verschieben**aus.  
+    
+    :::image type="complex" source="../media/move-from-drawer.msft.png" alt-text="Verschieben des Tools aus der Schublade in den Hauptbildschirm" lightbox="../media/move-from-drawer.msft.png":::
+       Verschieben des Tools aus der **Schublade** in den Hauptbildschirm  
+    :::image-end:::  
+    
+*   Wenn Sie ein Tool vom Hauptbereich auf die Schublade verschieben möchten, zeigen Sie mit der Maus auf ein Tool, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie **nach unten verschieben**aus.  
+    
+    :::image type="complex" source="../media/move-to-drawer.msft.png" alt-text="Verschieben des Tools aus dem Hauptpanel in die Schublade" lightbox="../media/move-to-drawer.msft.png":::
+       Verschieben des Tools aus dem Hauptpanel in die **Schublade**
+    :::image-end:::  
+    
 
 ## Neuanordnen von Bereichen  
 
-Klicken Sie auf die Registerkarte, und ziehen Sie Sie, um die Reihenfolge zu ändern.  Ihre benutzerdefinierte Aktivierreihenfolge bleibt in devtools-Sitzungen erhalten.  
+Wählen Sie ein Tool aus, und ziehen Sie es, um die Reihenfolge zu ändern.  Ihre benutzerdefinierte Tool Reihenfolge bleibt in devtools-Sitzungen erhalten.  
 
 > [!NOTE]
-> Standardmäßig ist die Registerkarte **Netzwerk** Panel in der Regel die vierte von Links.  In der folgenden Abbildung ist das **Netzwerk** Panel die erste von Links.  
+> Standardmäßig ist das **Netzwerk** Tool in der Regel der vierte von Links.  In der folgenden Abbildung ist das **Netzwerk** Panel die erste von Links.  
 
-:::image type="complex" source="../media/customize-network-first-position.msft.png" alt-text="Einstellungen" lightbox="../media/customize-network-first-position.msft.png":::
-   Ein devtools-Fenster mit einer benutzerdefinierten Registerkartenreihenfolge  
+:::image type="complex" source="../media/customize-network-first-position.msft.png" alt-text="Benutzerdefinierte Reihenfolge von devtools in einem Panel" lightbox="../media/customize-network-first-position.msft.png":::
+   Benutzerdefinierte Reihenfolge von devtools in einem Panel  
 :::image-end:::  
 
 ## Ändern der devtools-Platzierung  
 
 Weitere Informationen finden Sie unter [Platzierung von Microsoft Edge devtools][DevToolsPlacement].  
 
-:::image type="complex" source="../media/customize-dev-tools-dock-side.msft.png" alt-text="Einstellungen" lightbox="../media/customize-dev-tools-dock-side.msft.png":::
+:::image type="complex" source="../media/customize-dev-tools-dock-side.msft.png" alt-text="Nicht angedockte devtools" lightbox="../media/customize-dev-tools-dock-side.msft.png":::
    Nicht angedockte devtools  
 :::image-end:::  
 
@@ -86,7 +99,7 @@ Weitere Informationen finden Sie unter [Platzierung von Microsoft Edge devtools]
 
 Siehe [Aktivieren eines dunklen Designs][DarkTheme].  
 
-:::image type="complex" source="../media/customize-settings-appearance-theme.msft.png" alt-text="Einstellungen" lightbox="../media/customize-settings-appearance-theme.msft.png":::
+:::image type="complex" source="../media/customize-settings-appearance-theme.msft.png" alt-text="Das dunkle Design" lightbox="../media/customize-settings-appearance-theme.msft.png":::
    Das dunkle Design  
 :::image-end:::  
 

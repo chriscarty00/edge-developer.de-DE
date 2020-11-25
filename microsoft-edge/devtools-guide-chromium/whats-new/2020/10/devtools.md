@@ -7,12 +7,12 @@ ms.date: 10/22/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 0e4b1972918797d69e2068236f6d1336c54cc858
-ms.sourcegitcommit: 6e2b26d41a0aa56ac34e6edc7dddd852ddb415b1
+ms.openlocfilehash: b972468ad21f3a64985a00aecbe29836032b3334
+ms.sourcegitcommit: 080759f68a0a158f10dc20d20c14e222ace1be84
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "11134056"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "11190005"
 ---
 # Neuerungen in devtools (Microsoft Edge 87)  
 
@@ -41,14 +41,14 @@ DevTools unterstützt jetzt das Verschieben von Tools zwischen dem oberen und un
    :::column span="":::
       Wenn Sie ein oberes Tool nach unten verschieben möchten, zeigen Sie auf eine Registerkarte, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie **nach unten verschieben**aus.  
       
-      :::image type="complex" source="../../media/2020/10/move-to-bottom.msft.png" alt-text="Netzwerktool mit nicht lokalisierten Filtern" lightbox="../../media/2020/10/move-to-bottom.msft.png":::
+      :::image type="complex" source="../../media/2020/10/move-to-bottom.msft.png" alt-text="Nach unten verschieben" lightbox="../../media/2020/10/move-to-bottom.msft.png":::
          Nach unten verschieben  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
       Wenn Sie ein beliebiges Bottom-Tool nach oben verschieben möchten, zeigen Sie auf eine Registerkarte, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie **nach oben verschieben**aus.  
       
-      :::image type="complex" source="../../media/2020/10/move-to-top.msft.png" alt-text="Netzwerktool mit nicht lokalisierten Filtern" lightbox="../../media/2020/10/move-to-top.msft.png":::
+      :::image type="complex" source="../../media/2020/10/move-to-top.msft.png" alt-text="Zum Anfang wechseln" lightbox="../../media/2020/10/move-to-top.msft.png":::
          Zum Anfang wechseln  
       :::image-end:::  
    :::column-end:::
@@ -56,7 +56,11 @@ DevTools unterstützt jetzt das Verschieben von Tools zwischen dem oberen und un
 
 ## Speichern und Exportieren mithilfe der Netzwerk Konsole  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Netzwerktool mit nicht lokalisierten Filtern" [OpenAPI v2][SwaggerSpecificationV2] ".  Um das Experiment zu aktivieren, navigieren Sie zu [experimentelle Features][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] aktivieren, und aktivieren Sie das Kontrollkästchen neben **Netzwerk Konsole aktivieren**.  Weitere Informationen zur **Netzwerk Konsole**finden Sie unter Aktivieren des [experimentellen Netzwerkkonsolen Features][DevtoolsExperimentalFeaturesEnableNetworkConsole].  Dieses Experiment unterstützt nun die folgenden Aktionen:  
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Experimentelle Funktion":::
+   Experimentelle Funktion  
+:::image-end:::  
+
+Das **Netzwerkkonsolen** Tool bietet nun eine verbesserte Kompatibilität mit den Schemas " [Postman v 2.1][PostmanSchemaJsonCollectionv210Index] " und " [OpenAPI v2][SwaggerSpecificationV2] ".  Um das Experiment zu aktivieren, navigieren Sie zu [experimentelle Features][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] aktivieren, und aktivieren Sie das Kontrollkästchen neben **Netzwerk Konsole aktivieren**.  Weitere Informationen zur **Netzwerk Konsole**finden Sie unter Aktivieren des [experimentellen Netzwerkkonsolen Features][DevtoolsExperimentalFeaturesEnableNetworkConsole].  Dieses Experiment unterstützt nun die folgenden Aktionen:  
 
 *   Speichern und Exportieren von Sammlungen und Umgebungen  
 *   Bearbeiten und exportieren Sie Gruppen von Umgebungsvariablen innerhalb des **Netzwerkkonsolen** Tools.  
@@ -65,12 +69,12 @@ Navigieren Sie zu Issue [#1093687][CR1093687], um Echtzeitupdates für dieses Fe
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/network-console-environments-new-name.msft.png" alt-text="Netzwerktool mit nicht lokalisierten Filtern" lightbox="../../media/2020/10/network-console-environments-new-name.msft.png":::
+      :::image type="complex" source="../../media/2020/10/network-console-environments-new-name.msft.png" alt-text="Geben Sie den Namen für die neue Umgebung ein." lightbox="../../media/2020/10/network-console-environments-new-name.msft.png":::
          Geben Sie den Namen für die neue Umgebung ein.  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/network-console-environments-new-format.msft.png" alt-text="Netzwerktool mit nicht lokalisierten Filtern" lightbox="../../media/2020/10/network-console-environments-new-format.msft.png":::
+      :::image type="complex" source="../../media/2020/10/network-console-environments-new-format.msft.png" alt-text="Format für die neue Umgebung auswählen" lightbox="../../media/2020/10/network-console-environments-new-format.msft.png":::
          Format für die neue Umgebung auswählen  
       :::image-end:::  
    :::column-end:::
@@ -78,20 +82,26 @@ Navigieren Sie zu Issue [#1093687][CR1093687], um Echtzeitupdates für dieses Fe
 
 ## Verbesserte CSS-Raster Tools  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Netzwerktool mit nicht lokalisierten Filtern" oder Abrufen detaillierter Informationen mit beständigen Overlays.  
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Experimentelle Funktion":::
+   Experimentelle Funktion  
+:::image-end:::  
+
+Die Microsoft Edge-devtools unterstützen nun die folgenden Features zum Überprüfen, anzeigen und Debuggen von CSS-Rastern.  
+
+*   Anzeigen einer vereinfachten Raster Überlagerung mit dem Tool "über **prüfen** " oder Abrufen detaillierter Informationen mit beständigen Overlays.  
 *   Wenn Sie persistente Raster Überlagerungen aktivieren möchten, wählen Sie das Rastersymbol neben einem Rastercontainer Element im Tool **Elemente** aus, oder wählen Sie das Raster im Tool **Layout** aus.  
 *   Sie können persistente Overlays für mehrere Raster aktivieren.  
 *   Mit dem neuen **Layout** -Tool können Sie problemlos Raster Überlagerungen umschalten und die Darstellung und den Inhalt für jeden konfigurieren.  
     
 Die Features sind standardmäßig aktiviert.  Wenn Sie weitere Informationen zu den Features erhalten möchten, navigieren Sie zu [CSS-Rastern][DevtoolsCssGrid].  Navigieren Sie zu Issue [#1047356][CR1047356], um den Verlauf dieses Features im Open-Source-Projekt Chrom zu überprüfen.  Darüber hinaus kooperiert das Microsoft Edge devtools-Team mit der Chrome-devtools-Team-und Chrom-Community, um neue Flexbox-Tool Funktionen zu devtools hinzuzufügen.  Informationen zu Updates für die Flexbox-Tools im Open-Source-Projekt von Chromium finden Sie unter Issue [#1136394][CR1136394].  
 
-:::image type="complex" source="../../media/2020/10/grid-layout-pane.msft.png" alt-text="Netzwerktool mit nicht lokalisierten Filtern" lightbox="../../media/2020/10/grid-layout-pane.msft.png":::
+:::image type="complex" source="../../media/2020/10/grid-layout-pane.msft.png" alt-text="Layout-Tool mit Rastern" lightbox="../../media/2020/10/grid-layout-pane.msft.png":::
    **Layout** -Tool mit Rastern  
 :::image-end:::  
 
 ## Anpassen von Tastenkombinationen in den Einstellungen  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Netzwerktool mit nicht lokalisierten Filtern":::
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Experimentelle Funktion":::
    Experimentelle Funktion  
 :::image-end:::  
 
@@ -99,7 +109,7 @@ Sie können nun die Tastenkombination für jede Aktion im devtools anpassen.  Se
 
 Um das Experiment zu aktivieren, navigieren Sie zu [experimentelle Features][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] aktivieren, und aktivieren Sie das Kontrollkästchen neben **Tastenkombinationen-Editor aktivieren**.  Weitere Informationen zum Anpassen und Bearbeiten von Tastenkombinationen finden Sie unter Aktivieren des Features für den [Tasten Kombinations-Editor][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor].  Navigieren Sie zu Issue [#174309][CR174309], um Echtzeitupdates für dieses Feature im Chromium Open-Source-Projekt zu überprüfen.  
 
-:::image type="complex" source="../../media/2020/10/custom-shortcut-pause-script.msft.png" alt-text="Netzwerktool mit nicht lokalisierten Filtern" lightbox="../../media/2020/10/custom-shortcut-pause-script.msft.png":::
+:::image type="complex" source="../../media/2020/10/custom-shortcut-pause-script.msft.png" alt-text="Benutzerdefinierte Tastenkombination zum Anhalten eines Skripts" lightbox="../../media/2020/10/custom-shortcut-pause-script.msft.png":::
    Benutzerdefinierte Tastenkombination zum Anhalten eines Skripts  
 :::image-end:::  
 
@@ -115,12 +125,12 @@ Starten Sie mit der Erweiterung Microsoft Edge, stellen Sie eine Verbindung mit 
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/microsoft-edge-tools-full-browser.msft.png" alt-text="Netzwerktool mit nicht lokalisierten Filtern" lightbox="../../media/2020/10/microsoft-edge-tools-full-browser.msft.png":::
+      :::image type="complex" source="../../media/2020/10/microsoft-edge-tools-full-browser.msft.png" alt-text="Verwenden der Erweiterung im vollständigen Browsermodus-Screenshot" lightbox="../../media/2020/10/microsoft-edge-tools-full-browser.msft.png":::
          Verwenden der Erweiterung im vollständigen Browsermodus-Screenshot  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/microsoft-edge-tools-headless.msft.png" alt-text="Netzwerktool mit nicht lokalisierten Filtern" lightbox="../../media/2020/10/microsoft-edge-tools-headless.msft.png":::
+      :::image type="complex" source="../../media/2020/10/microsoft-edge-tools-headless.msft.png" alt-text="Verwenden der Erweiterung im Headless-Modus-Screenshot" lightbox="../../media/2020/10/microsoft-edge-tools-headless.msft.png":::
          Verwenden der Erweiterung im Headless-Modus-Screenshot  
       :::image-end:::  
    :::column-end:::
@@ -144,12 +154,12 @@ Sie können Authentifikatoren emulieren und die [Web-Authentifizierungs-API][Git
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/more-tools-webauthn.msft.png" alt-text="Netzwerktool mit nicht lokalisierten Filtern" lightbox="../../media/2020/10/more-tools-webauthn.msft.png":::
+      :::image type="complex" source="../../media/2020/10/more-tools-webauthn.msft.png" alt-text="Öffnen des webauthn-Tools" lightbox="../../media/2020/10/more-tools-webauthn.msft.png":::
          Öffnen des **webauthn** -Tools  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/webauthn-enable-virtual-auth.msft.png" alt-text="Netzwerktool mit nicht lokalisierten Filtern" lightbox="../../media/2020/10/webauthn-enable-virtual-auth.msft.png":::
+      :::image type="complex" source="../../media/2020/10/webauthn-enable-virtual-auth.msft.png" alt-text="Webauthn-Tool" lightbox="../../media/2020/10/webauthn-enable-virtual-auth.msft.png":::
          **Webauthn** -Tool  
       :::image-end:::  
    :::column-end:::
@@ -163,12 +173,12 @@ Umschalten des **berechneten** Bereichs im Bereich " **Formatvorlagen** "  Der *
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="Netzwerktool mit nicht lokalisierten Filtern" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
+      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="Öffnen des Bereichs "berechnete Seitenleiste"" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
          Öffnen des Bereichs " **berechnete Seitenleiste** "  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane-open.msft.png" alt-text="Netzwerktool mit nicht lokalisierten Filtern" lightbox="../../media/2020/10/computed-sidebar-pane-open.msft.png":::
+      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane-open.msft.png" alt-text="Bereich "berechnete Seitenleiste"" lightbox="../../media/2020/10/computed-sidebar-pane-open.msft.png":::
          Bereich " **berechnete Seitenleiste** "  
       :::image-end:::  
    :::column-end:::
@@ -178,7 +188,7 @@ Umschalten des **berechneten** Bereichs im Bereich " **Formatvorlagen** "  Der *
 
 Wenn Sie das angewendete CSS mit einem geringeren Bildlauf anzeigen möchten, Gruppieren Sie die CSS-Eigenschaften nach Kategorien im **berechneten** Bereich.  Sie können sich auch selektiv auf eine Reihe verwandter Eigenschaften konzentrieren, während Sie Ihr CSS untersuchen.  Wählen Sie **im Element** -Tool ein Element aus.  Wenn Sie die CSS-Eigenschaften gruppieren oder die Gruppe aufheben möchten, aktivieren Sie das Kontrollkästchen **Gruppieren** .  Navigieren Sie zu Problemen [#1096230][CR1096230], [#1084673][CR1084673]und [#1106251][CR1106251], um Echtzeitupdates für dieses Feature im Chromium Open-Source-Projekt zu überprüfen.  
 
-:::image type="complex" source="../../media/2020/10/grouping-css-prop.msft.png" alt-text="Netzwerktool mit nicht lokalisierten Filtern" lightbox="../../media/2020/10/grouping-css-prop.msft.png":::
+:::image type="complex" source="../../media/2020/10/grouping-css-prop.msft.png" alt-text="Gruppieren von CSS-Eigenschaften" lightbox="../../media/2020/10/grouping-css-prop.msft.png":::
    Gruppieren von CSS-Eigenschaften  
 :::image-end:::  
 
@@ -200,7 +210,7 @@ performance.mark('end');
 
 Öffnen Sie dann das Tool [Leistung][DevtoolsGuideChromiumEvaluatePerformanceReference] , und navigieren Sie zum **Abschnitt Anzeige** dauern, um Ihren JavaScript-Code aufzuzeichnen.  Die `performance.mark()` von Ihnen hinzugefügten Ereignisse werden nun in der Aufzeichnung angezeigt.  
 
-:::image type="complex" source="../../media/2020/10/perf-mark.msft.png" alt-text="Netzwerktool mit nicht lokalisierten Filtern" lightbox="../../media/2020/10/perf-mark.msft.png":::
+:::image type="complex" source="../../media/2020/10/perf-mark.msft.png" alt-text="Performance. Mark-Ereignisse" lightbox="../../media/2020/10/perf-mark.msft.png":::
    `performance.mark` Ereignisse  
 :::image-end:::  
 
@@ -208,7 +218,7 @@ performance.mark('end');
 
 Verwenden Sie die neuen `resource-type` und `url` Schlüsselwörter im **Netzwerk** Tool, um Netzwerkanforderungen zu filtern.  Verwenden Sie beispielsweise, `resource-type:image` um sich auf die Netzwerkanforderungen zu konzentrieren, die Bilder sind.  
 
-:::image type="complex" source="../../media/2020/10/network-resource-type-filter.msft.png" alt-text="Netzwerktool mit nicht lokalisierten Filtern" lightbox="../../media/2020/10/network-resource-type-filter.msft.png":::
+:::image type="complex" source="../../media/2020/10/network-resource-type-filter.msft.png" alt-text="Ressourcentypfilter" lightbox="../../media/2020/10/network-resource-type-filter.msft.png":::
    Ressourcentypfilter  
 :::image-end:::  
 
@@ -220,7 +230,7 @@ Wenn Sie weitere spezielle Schlüsselwörter wie "und" entdecken möchten `resou
 
 Zeigen Sie im `reporting to` Abschnitt **Sicherheits & Isolierung** die Richtlinie für die Cross-Origin-Einbettungs Richtlinie \ (COEP \) und die Cross-Origin-Opener-Richtlinie \ (Coop \) an.  Die [Reporting-API][MdnReportingApi] definiert `Report-To` einen neuen HTTP-Header, der Ihnen die Möglichkeit gibt, die Server Endpunkte für den Browser anzugeben, um Warnungen und Fehler zu senden.  Navigieren Sie zu Issue [#1051466][CR1051466], um Echtzeitupdates für dieses Feature im Chromium Open-Source-Projekt zu überprüfen.  
 
-:::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png" alt-text="Netzwerktool mit nicht lokalisierten Filtern" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png":::
+:::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png" alt-text="Der Bericht an den Endpunkt" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png":::
    Der `reporting to` Endpunkt  
 :::image-end:::  
 
@@ -228,13 +238,13 @@ Zeigen Sie im `reporting to` Abschnitt **Sicherheits & Isolierung** die Richtlin
 
 DevTools zeigt jetzt die `report-only` Beschriftung für COEP und Coop an, die auf Mode festgesetzt sind `report-only` .  Navigieren Sie zu Issue [#1051466][CR1051466], um Echtzeitupdates für dieses Feature im Chromium Open-Source-Projekt zu überprüfen.  
 
-:::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png" alt-text="Netzwerktool mit nicht lokalisierten Filtern" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png":::
+:::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png" alt-text="Die Bezeichnung "nur Berichtsmodus"" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png":::
    Die `report-only` Beschriftung "Modus"  
 :::image-end:::  
 
 ### Anzeigen und Beheben von Problemen mit dem Farbkontrast im Tool "CSS-Übersicht"  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Netzwerktool mit nicht lokalisierten Filtern":::
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Experimentelle Funktion":::
    Experimentelle Funktion  
 :::image-end:::  
 
@@ -244,7 +254,7 @@ Das Tool **CSS-Übersicht** zeigt nun eine Liste der Elemente auf der Seite an, 
 
 Um dieses Experiment zu aktivieren, wählen Sie unter **Einstellungen**  >  **Experimente**das Kontrollkästchen **CSS-Übersicht** aus.  Wenn Sie eine Liste der Elemente mit einem Farbkontrast Problem anzeigen möchten, wählen Sie in **Kontrast Problemen** **Text**aus.  Wenn Sie das Element im Tool **Elemente** öffnen möchten, wählen Sie ein Element in der Liste aus.  Um Kontrastprobleme zu beheben, bieten die Microsoft Edge-devtools [automatisch Farbvorschläge][DevtoolsWhatsnew200208DevtoolsAccessibleColorSuggestionStylesPane]an.  Navigieren Sie zu Issue [#1120316][CR1120316], um Echtzeitupdates für dieses Feature im Chromium Open-Source-Projekt zu überprüfen.  
 
-:::image type="complex" source="../../media/2020/10/css-overview.msft.png" alt-text="Netzwerktool mit nicht lokalisierten Filtern" lightbox="../../media/2020/10/css-overview.msft.png":::
+:::image type="complex" source="../../media/2020/10/css-overview.msft.png" alt-text="Probleme mit niedriger Farbkontrast" lightbox="../../media/2020/10/css-overview.msft.png":::
    Probleme mit niedriger Farbkontrast  
 :::image-end:::  
 
