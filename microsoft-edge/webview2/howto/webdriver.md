@@ -3,17 +3,17 @@ description: Automatisieren und Testen des WebView2-Steuerelements mit Microsoft
 title: Automatisieren und Testen von WebView2 mit Microsoft Edge Driver
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/24/2020
+ms.date: 11/25/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Edge, ICoreWebView2, ICoreWebView2Controller, Selenium, Microsoft Edge Driver
-ms.openlocfilehash: 6f7f84fa88a57e54d7b5143a489d1138c7426d88
-ms.sourcegitcommit: 652c345b46aae8b7e3723eb55a01b71a4ef76bf0
+ms.openlocfilehash: 2af1ce222abb1dc7a279afc05e87e7e42a45fe9e
+ms.sourcegitcommit: 2e14ff82350f700d7eabc8d33b3ec3e5fc8c61fa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "11191450"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "11191617"
 ---
 # Automatisieren und Testen von WebView2 mit Microsoft Edge Driver  
 
@@ -23,7 +23,7 @@ Beginnen Sie mit den folgenden Schritten.
 
 ## Schritt 1: Herunterladen des WebView2API-Beispiels  
 
-Wenn Sie nicht über ein vorhandenes WebView2-Projekt verfügen, laden Sie die [WebView2API-Beispiel-App][GithubMicrosoftedgewebview2samplesSampleappsWebview2apisample]herunter, ein umfassendes Beispiel für das neueste WebView2-SDK.  Stellen Sie sicher, dass Sie die [Voraussetzungen für die WebView2API-Beispiel-App][GithubMicrosoftedgeWebview2samplesSampleappsWebview2apisamplePrerequisites]erfüllt haben. 
+Wenn Sie nicht über ein vorhandenes WebView2-Projekt verfügen, laden Sie die [WebView2API-Beispiel-App][GithubMicrosoftedgewebview2samplesSampleappsWebview2apisample]herunter, ein umfassendes Beispiel für das neueste WebView2-SDK.  Stellen Sie sicher, dass Sie die [Voraussetzungen für die WebView2API-Beispiel-App][GithubMicrosoftedgeWebview2samplesSampleappsWebview2apisamplePrerequisites]erfüllt haben.  
 
 Nachdem Sie das Repo geklont haben, erstellen Sie das Projekt in Visual Studio.  Es sollte wie in der folgenden Abbildung aussehen.  
 
@@ -70,7 +70,7 @@ An diesem Punkt sollten Sie die WebView2-Runtime installiert haben, ein WebView2
        NuGet-Paket herunterladen  
     :::image-end:::  
     
-1.  Geben Sie **Selen. WebDriver** in der Suchleiste ein, wählen Sie aus den Ergebnissen **Selen. WebDriver** aus, und stellen Sie sicher, dass Sie das Kontrollkästchen neben " **Pre-Release einbeziehen**" markieren. Stellen Sie im rechten Fenster sicher, dass die **Version** für die Installation von **4.0.0-alpha04** oder höher eingestellt ist, und wählen Sie **Installieren**aus.  Nuget downloadet Selen auf Ihren Computer.  
+1.  Geben Sie `Selenium.WebDriver` in die Suchleiste ein, wählen Sie **Selen. WebDriver** aus den Ergebnissen aus, und stellen Sie sicher, dass Sie das Kontrollkästchen neben " **Pre-Release einbeziehen**" markieren.  Stellen Sie im rechten Fenster sicher, dass die **Version** für die Installation von **4.0.0-alpha04** oder höher eingestellt ist, und wählen Sie **Installieren**aus.  NuGet downloadet Selen auf Ihren Computer.  
     
     Wenn Sie mehr über das Selen. WebDriver NuGet-Paket erfahren möchten, navigieren Sie zu [Selen. WebDriver 4.0.0-alpha04][NugetSeleniumWebdriver400Alpha04].  
     
@@ -158,8 +158,8 @@ Herzlichen Glückwunsch.  Sie haben erfolgreich ein WebView2-Projekt und gesteue
 
 <!-- links -->  
 
-[WebdriverChromium]: ../../webdriver-chromium.md "Verwenden von WebDriver (Chrom) für die Testautomatisierung | Microsoft docs"  
-[WebdriverChromiumDownloadMicrosoftEdgeDriver]: ../../webdriver-chromium.md#download-microsoft-edge-driver "Microsoft Edge Driver herunterladen – verwenden Sie WebDriver (Chrom) für die Testautomatisierung | Microsoft docs"  
+[WebdriverChromium]: ../../webdriver-chromium/index.md "Verwenden von WebDriver (Chrom) für die Testautomatisierung | Microsoft docs"  
+[WebdriverChromiumDownloadMicrosoftEdgeDriver]: ../../webdriver-chromium/index.md#download-microsoft-edge-driver "Microsoft Edge Driver herunterladen – verwenden Sie WebDriver (Chrom) für die Testautomatisierung | Microsoft docs"  
 [WebViewIndex]: ../index.md "Einführung in Microsoft Edge WebView2 – Microsoft docs"  
 [Webview2Releasenotes]: ../releasenotes.md "Anmerkungen zu dieser Version von WebView2 SDK | Microsoft docs"  
 

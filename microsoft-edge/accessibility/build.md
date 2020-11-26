@@ -1,20 +1,20 @@
 ---
 ms.assetid: 1b3ebc25-d023-4f23-bbba-dce066c20de8
 description: Gehen Sie durch, wie bewährte Methoden und barrierefreie Rich-Internet-Anwendungen (Aria) zusammen kommen können, um eine barrierefreie Website zu erstellen.
-title: Barrierefreiheit – erstellen
+title: Build | Zugänglichkeit
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 11/13/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Barrierefreiheit, Barrierefreiheit für Entwickler, barrierefreie Websites, Edge, Web-Entwicklung, Aria, Developer, UIA, UI-Automatisierung
 ms.custom: seodec18
-ms.openlocfilehash: 4412fef6bb78b5a393ccafd5a2cfa79aba223141
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 7a8ff5082132ec3270a6e01af594a5bd9fb35389
+ms.sourcegitcommit: 5d3802721036dc7cd90e9e6f7ac90dc3acc24eec
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10566745"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "11191552"
 ---
 # Erstellen von barrierefreien Websites
 Das Web ist mit dynamischen und komplexen Websites, Anwendungen und Benutzeroberflächen gefüllt, die mit einer Kombination aus HTML, CSS und JavaScript erstellt wurden.  Wenn Sie jedoch ohne Barrierefreiheit entworfen und erstellt wurden, sind diese komplexen Websites nur schwer von Personen zu verwenden, die auf [Hilfstechnologien](https://webaim.org/articles/motor/assistive) zum Durchsuchen des Webs angewiesen sind. Das Erstellen von Websites, die für Menschen mit Behinderungen barrierefrei sind, erfordert semantische Informationen über die Benutzeroberfläche. Auf diese Weise können Hilfstechnologien wie Bildschirmsprachausgaben die erforderlichen Informationen vermitteln, um Personen mit einer Reihe von Fähigkeiten die Nutzung der Website zu ermöglichen.
@@ -56,6 +56,44 @@ Zustände ändern nicht die Art des Objekts, sondern stellen Informationen dar, 
 Wechseln Sie zum [Rollenmodell](https://www.w3.org/TR/wai-aria-1.1/#roles) des W3C, um eine vollständige Liste der Rollen, Eigenschaften und Zustände anzuzeigen.
 
 Weitere Informationen zu Aria finden Sie in der Aria im Abschnitt [Resources](#resources) .
+
+## Kompatibilitätstests für Hilfstechnologien  
+
+Überprüfen, ob die Website, die Sie erstellen, mit echten Hilfstechnologien arbeitet, ist die beste Methode, um für Benutzer mit Behinderungen eine gute Benutzerfreundlichkeit zu gewährleisten.  Da viele Hilfstechnologien die Tastatur verwenden, ist das Testen der Barrierefreiheit Ihrer Website ein guter Ausgangspunkt.  Das [Testen der Tastatur Kompatibilität][W3cPerspectiveVideosKeyboard] überprüft, ob Benutzer auf alle interaktiven Steuerelemente zugreifen können, ohne dass eine Maus erforderlich ist.  Microsoft [Accessibility Insights für Web][AccessibilityinsightsWebOverview] ist eine Browser Erweiterung für Microsoft Edge und Chrome, die Sie führt und einige häufige Probleme aufdeckt.  
+
+Wenn Sie sicher sind, dass Ihre Website gut mit einer Tastatur funktioniert, versuchen Sie es mit anderen Hilfstechnologien wie Bildschirmsprachausgaben.  Im folgenden werden Probleme aufgedeckt.
+
+*   Ihr HTML-, Aria-und CSS-Code  
+*   Die Stufe der Unterstützung einer Hilfstechnologie für ein Feature oder eine Technik.  
+    
+Unterschiedliche Browser können Elemente Platt Form Barrierefreiheits-APIs anders als Microsoft Edge zuordnen.  Beim Erstellen der Benutzeroberfläche ist es wichtig, die einzelnen Unterschiede zu beachten.  
+
+WebAIM führt Umfragen mit [Sprachausgabe][WebaimProjectsScreenreadersurvey8] und [sehbehinderten][WebaimProjectsLowvisionsurvey2] Benutzern durch, die Ihnen bei der Entscheidung helfen, welche Hilfstechnologien und Browser Sie testen möchten.  
+
+### Lernen, wie man testet  
+
+Hilfstechnologien sind ausgeklügelte Tools.  Gehen Sie nicht davon aus, dass Sie in der Lage sind, sofort mit einer Hilfstechnologie zu testen, ohne zuvor zu erfahren, wie das funktioniert.  Das Lernen mit einer Sprachausgabe zu testen, hat eine besonders steile Lernkurve.  Ein unerfahrener Benutzer der Bildschirmsprachausgabe kann davon ausgehen, dass ein Fehler bei der Bildschirmsprachausgabe aufgetreten ist, während das Problem mit dem Missbrauch der Sprachausgabe zusammenhängt.  
+
+Weitere Informationen zum Lernen, wie Sie mit Hilfstechnologien testen können, finden Sie unter [Testen mit Bildschirmsprachausgaben][WebaimArticlesScreenreaderTesting] auf WebAIM.  
+
+### Lokales Testen  
+
+Die meisten Geräte umfassen Hilfstechnologien, die für das Betriebssystem integriert sind.  Microsoft Windows umfasst die [Windows-Sprachausgabe][MicrosoftSupport22798] und die [Windows][MicrosoftSupportWindows414948ba8b1cD3bd86150e5e32204198]-Bildschirmlupe.  Hilfstechnologien von Drittanbietern wie [NVDA][NvaccessAboutNvda], [FreedomscientificSoftwareJaws]und [ZoomText][FreedomscientificSoftwareZoomtext] stehen zum Download zur Verfügung.  Apple macOS enthält die [VoiceOver][AppleAccessibilityMacVision] -Sprachausgabe.  Und IOS, Android und Linux unterstützen alle eine Vielzahl von Hilfstechnologien.  
+
+### Testen in virtuellen Computern und Emulatoren  
+
+Wenn Sie unter macOS mit einer Hilfstechnologie testen möchten, die nur für Windows verfügbar ist, wie Windows-Sprachausgabe oder NVDA, erstellen Sie einen virtuellen Windows-Computer.  Virtuelle Computer mit Microsoft Edge \ (EdgeHTML \) und IE sind für virtualbox und VMware auf der [Download Seite für virtuelle Computer][MicrosoftDeveloperEdgeVms]verfügbar.  
+
+[Android Studio][AndroidDeveloperSdkInstallingStudioHtml] enthält einen Emulator, mit dem Sie Hilfstechnologien in der [Android-Barrierefreiheits Suite][GooglePlayStoreAndroidAccessibilitySuite]testen können.  Befolgen Sie die Anweisungen zum [Einrichten eines virtuellen Geräts][AndroidDeveloperDevicesManagingAvdsHtml] , und [Starten Sie den Emulator][AndroidDeveloperDevicesEmulatorHtml], und installieren Sie dann die [Android-Barrierefreiheits Suite][GooglePlayStoreAndroidAccessibilitySuite] aus dem GooglePlay-Store.  
+
+> [!NOTE]
+> Der IOS-Simulator enthält derzeit keine VoiceOver-Funktion.  
+
+### Cloud-basierte Test Tools  
+
+Wenn keine Hilfstechnologien für Ihr Betriebssystem verfügbar sind oder wenn Sie eine auf einem virtuellen Computer oder Emulator nicht installieren können, sind Cloud-basierte Hilfstechnologie-Testtools die beste Wahl.  
+
+*   Mit [Assistiv Labs (Commercial)][AssistivlabsMain] können Sie mit Hilfstechnologien manuell über einen beliebigen modernen Webbrowser testen.  Wählen Sie eine Hilfstechnologie und einen Browser aus, die Sie mit einem virtuellen Computer, Emulator oder realen Gerät verbindet, mit dem Sie interagieren können.  
 
 ## Ressourcen
 
@@ -141,3 +179,35 @@ Eine Liste der Tools zur Bewertung der Barrierefreiheit im Web, um festzustellen
 
 #### [Barrierefreie Web-Perspektiven: untersuchen Sie die Auswirkungen und Vorteile für alle](https://w3.org/WAI/perspectives/)
 Eine Reihe von kurzen situations Videos des W3C über die Auswirkungen der Barrierefreiheit und die Vorteile für alle.
+
+<!-- links -->  
+
+<!--todo: link updates and acrolinx  -->  
+
+[MicrosoftDeveloperEdgeVms]: https://developer.microsoft.com/microsoft-edge/tools/vms "Virtuelle Computer | Microsoft Edge-Entwickler"  
+
+[MicrosoftSupport22798]: https://support.microsoft.com/help/22798 "Vollständige Anleitung für die Sprachausgabe | Microsoft-Support"  
+[MicrosoftSupportWindows414948ba8b1cD3bd86150e5e32204198]: https://support.microsoft.com/windows/414948ba-8b1c-d3bd-8615-0e5e32204198 "Verwenden der Bildschirmlupe, um die Anzeige der Dinge auf dem Bildschirm zu verbessern | Microsoft-Support"  
+
+[AccessibilityinsightsWebOverview]: https://accessibilityinsights.io/docs/web/overview "Barrierefreiheit für Web | Einblicke in die Barrierefreiheit"  
+
+[AndroidDeveloperDevicesManagingAvdsHtml]: https://developer.android.com/tools/devices/managing-avds.html "Erstellen und Verwalten von virtuellen Geräten | Android-Entwickler"  
+[AndroidDeveloperDevicesEmulatorHtml]: https://developer.android.com/tools/devices/emulator.html "Ausführen von apps auf dem Android-Emulator | Android-Entwickler"  
+[AndroidDeveloperSdkInstallingStudioHtml]: https://developer.android.com/sdk/installing/studio.html "Android Studio herunterladen | Android-Entwickler"  
+
+[AppleAccessibilityMacVision]: https://www.apple.com/accessibility/mac/vision "Barrierefreiheit von Visionen-Mac | Apple"  
+
+[AssistivlabsMain]: https://assistivlabs.com "Assistiv Labs"  
+
+[FreedomscientificSoftwareJaws]: https://www.freedomscientific.com/products/software/jaws "Jaws® | Freiheit wissenschaftlich"  
+[FreedomscientificSoftwareZoomtext]: https://www.freedomscientific.com/products/software/zoomtext "ZoomText | Freiheit wissenschaftlich"  
+
+[GooglePlayStoreAndroidAccessibilitySuite]: https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback "Android-Suite für Barrierefreiheit | GooglePlay-Store"  
+
+[NvaccessAboutNvda]: https://www.nvaccess.org/about-nvda "Informationen zu NVDA | NV-Zugriff"  
+
+[W3cPerspectiveVideosKeyboard]: https://www.w3.org/WAI/perspective-videos/keyboard "Tastatur Kompatibilität | W3C"  
+
+[WebaimProjectsLowvisionsurvey2]: https://webaim.org/projects/lowvisionsurvey2 "Umfrage von Benutzern mit Sehbehinderungen \ #2 Ergebnisse | WebAIM"  
+[WebaimProjectsScreenreadersurvey8]: https://webaim.org/projects/screenreadersurvey8 "Benutzerumfrage zur Sprachausgabe \ #8 Ergebnisse | WebAIM"  
+[WebaimArticlesScreenreaderTesting]: https://webaim.org/articles/screenreader_testing "Testen mit Bildschirmsprachausgaben | WebAIM"  
