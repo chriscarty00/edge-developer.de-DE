@@ -52,13 +52,13 @@ ms.locfileid: "11015482"
 
 <span data-ttu-id="fef8f-120">Es gibt Unmengen von Einstellungen für die devtools, die Sie anpassen können, um die devtools aussehen zu lassen, zu fühlen und zu arbeiten, wie Sie es benötigen.</span><span class="sxs-lookup"><span data-stu-id="fef8f-120">There are tons of settings for the DevTools that you are able to customize to make the DevTools look, feel, and work the way you need.</span></span> <span data-ttu-id="fef8f-121">In Microsoft Edge 83 ist der Zugriff auf die [Einstellungen][DevtoolsCustomizeIndexSettings] im devtools jetzt viel einfacher.</span><span class="sxs-lookup"><span data-stu-id="fef8f-121">In Microsoft Edge 83, accessing [Settings][DevtoolsCustomizeIndexSettings] in the DevTools is now much easier.</span></span> <span data-ttu-id="fef8f-122">Öffnen Sie die Einstellungen mit dem Zahnradsymbol neben "Console Alerts" und dem Hauptmenü.</span><span class="sxs-lookup"><span data-stu-id="fef8f-122">Open Settings with the gear icon next to Console alerts and the main menu.</span></span>  
 
-:::image type="complex" source="../../media/2020/03/settings.msft.png" alt-text="Die im Microsoft Store verfügbare Remote Tools für Microsoft Edge (Beta)-app" lightbox="../../media/2020/03/settings.msft.png":::
+:::image type="complex" source="../../media/2020/03/settings.msft.png" alt-text="Das Zahnradsymbol öffnet die Einstellungen im devtools" lightbox="../../media/2020/03/settings.msft.png":::
    <span data-ttu-id="fef8f-124">Das Zahnradsymbol öffnet die **Einstellungen** im devtools</span><span class="sxs-lookup"><span data-stu-id="fef8f-124">The gear icon opens **Settings** in the DevTools</span></span>  
 :::image-end:::  
 
 <span data-ttu-id="fef8f-125">Sie können die [Einstellungen][DevtoolsCustomizeIndexSettings] auch über das Hauptmenü unter **"** **Weitere Tools**" öffnen.</span><span class="sxs-lookup"><span data-stu-id="fef8f-125">You are also able to open [Settings][DevtoolsCustomizeIndexSettings] from the **Main Menu** under **More tools**.</span></span>
 
-:::image type="complex" source="../../media/2020/03/settings2.msft.png" alt-text="Die im Microsoft Store verfügbare Remote Tools für Microsoft Edge (Beta)-app" lightbox="../../media/2020/03/settings2.msft.png":::
+:::image type="complex" source="../../media/2020/03/settings2.msft.png" alt-text="Hauptmenü > weitere Tools > Einstellungen" lightbox="../../media/2020/03/settings2.msft.png":::
    <span data-ttu-id="fef8f-127">**Hauptmenü**  >  **Weitere Tools**  >  **Einstellungen**</span><span class="sxs-lookup"><span data-stu-id="fef8f-127">**Main Menu** > **More tools** > **Settings**</span></span>  
 :::image-end:::  
 
@@ -68,7 +68,7 @@ ms.locfileid: "11015482"
 
 <span data-ttu-id="fef8f-130">Informations Benachrichtigungs leisten \ (Infoleisten \) in devtools haben nun ein verbessertes Aussehen und mehr Funktionalität.</span><span class="sxs-lookup"><span data-stu-id="fef8f-130">Informational notification bars \(infobars\) in DevTools now have an improved look and more functionality.</span></span> <span data-ttu-id="fef8f-131">In Microsoft Edge 83 können infobars leichter gelesen und Schaltflächen bereitgestellt werden, damit Sie die relevante Aktion sofort durchführen können.</span><span class="sxs-lookup"><span data-stu-id="fef8f-131">In Microsoft Edge 83, infobars are easier to read and provide buttons so you are able to take the relevant action right away.</span></span>  
 
-:::image type="complex" source="../../media/2020/03/infobar.msft.png" alt-text="Die im Microsoft Store verfügbare Remote Tools für Microsoft Edge (Beta)-app" lightbox="../../media/2020/03/infobar.msft.png":::
+:::image type="complex" source="../../media/2020/03/infobar.msft.png" alt-text="Infoleiste für das schöne Drucken einer minimierte-Datei in Microsoft Edge 83" lightbox="../../media/2020/03/infobar.msft.png":::
    <span data-ttu-id="fef8f-133">Infoleiste für das schöne Drucken einer minimierte-Datei in Microsoft Edge, Version 83</span><span class="sxs-lookup"><span data-stu-id="fef8f-133">Infobar for pretty-printing a minified file in Microsoft Edge Version 83</span></span>  
 :::image-end:::  
 
@@ -78,7 +78,7 @@ ms.locfileid: "11015482"
 
 <span data-ttu-id="fef8f-136">Bei der [Farbauswahl][DevtoolsCssReferenceColorPicker] handelt es sich um eine Benutzeroberfläche für Änderungen und Deklarationen im [Element Panel][DevtoolsCssIndex] `color` `background-color` .</span><span class="sxs-lookup"><span data-stu-id="fef8f-136">The [Color Picker][DevtoolsCssReferenceColorPicker] is a GUI in the [Elements panel][DevtoolsCssIndex] for changing `color` and `background-color` declarations.</span></span>  <span data-ttu-id="fef8f-137">In früheren Versionen von Microsoft Edge konnten Sie nicht über die Tastatur in der [Farbauswahl][DevtoolsCssReferenceColorPicker] im Bereich " **Schattierungen** " navigieren.</span><span class="sxs-lookup"><span data-stu-id="fef8f-137">In previous versions of Microsoft Edge, you were not able to navigate the **Shades** section of the [Color Picker][DevtoolsCssReferenceColorPicker] with the keyboard.</span></span>  
 
-:::image type="complex" source="../../media/2020/03/color-picker.msft.png" alt-text="Die im Microsoft Store verfügbare Remote Tools für Microsoft Edge (Beta)-app" lightbox="../../media/2020/03/color-picker.msft.png":::
+:::image type="complex" source="../../media/2020/03/color-picker.msft.png" alt-text="Sie können jetzt Ihre Tastatur verwenden, um die Auswahl im Bereich "Schattierungen" der Farbauswahl zu verschieben." lightbox="../../media/2020/03/color-picker.msft.png":::
    <span data-ttu-id="fef8f-139">Sie können jetzt Ihre Tastatur verwenden, um die Auswahl im Bereich " **Schattierungen** " der [Farbauswahl][DevtoolsCssReferenceColorPicker] zu verschieben.</span><span class="sxs-lookup"><span data-stu-id="fef8f-139">You are now able to use your keyboard to move the selector in the **Shades** section of the [Color Picker][DevtoolsCssReferenceColorPicker]</span></span>  
 :::image-end:::  
 
@@ -90,13 +90,13 @@ ms.locfileid: "11015482"
 
 <span data-ttu-id="fef8f-143">In Microsoft Edge 81 und früheren Versionen wurde die **Registerkarte Eigenschaften** im [Element Panel][DevtoolsCssIndex] durch Seitenaktualisierungen unterbrochen.</span><span class="sxs-lookup"><span data-stu-id="fef8f-143">In Microsoft Edge 81 and earlier, the **Properties tab** in the [Elements panel][DevtoolsCssIndex] was broken by page refreshes.</span></span>  <span data-ttu-id="fef8f-144">Wenn Sie die Seite aktualisiert haben, wurden die Eigenschaften des aktuell ausgewählten Elements auf der **Registerkarte Eigenschaften** nicht aufgefüllt.</span><span class="sxs-lookup"><span data-stu-id="fef8f-144">When you refreshed the page, the **Properties tab** did not populate the properties of the currently-selected element.</span></span>  
 
-:::image type="complex" source="../../media/2020/03/properties-in-81.msft.png" alt-text="Die im Microsoft Store verfügbare Remote Tools für Microsoft Edge (Beta)-app" lightbox="../../media/2020/03/properties-in-81.msft.png":::
+:::image type="complex" source="../../media/2020/03/properties-in-81.msft.png" alt-text="In Microsoft Edge 81 und früher war die Registerkarte "Eigenschaften" nach einer Seitenaktualisierung leer" lightbox="../../media/2020/03/properties-in-81.msft.png":::
    <span data-ttu-id="fef8f-146">In Microsoft Edge 81 und früher war die **Registerkarte "Eigenschaften"** nach einer Seitenaktualisierung leer</span><span class="sxs-lookup"><span data-stu-id="fef8f-146">In Microsoft Edge 81 and earlier, the **Properties tab** was blank after a page refresh</span></span>  
 :::image-end:::  
 
 <span data-ttu-id="fef8f-147">In Microsoft Edge 83 können Sie nun die Eigenschaften des aktuell ausgewählten Elements nach einer Seitenaktualisierung auf der **Registerkarte Eigenschaften**anzeigen.</span><span class="sxs-lookup"><span data-stu-id="fef8f-147">In Microsoft Edge 83, you are now able to see the properties of the currently-selected element after a page refresh in the **Properties tab**.</span></span>  
 
-:::image type="complex" source="../../media/2020/03/properties-in-82.msft.png" alt-text="Die im Microsoft Store verfügbare Remote Tools für Microsoft Edge (Beta)-app" lightbox="../../media/2020/03/properties-in-82.msft.png":::
+:::image type="complex" source="../../media/2020/03/properties-in-82.msft.png" alt-text="In Microsoft Edge 83 werden auf der Registerkarte "Eigenschaften" die Eigenschaften des aktuell ausgewählten Elements nach einer Seitenaktualisierung angezeigt." lightbox="../../media/2020/03/properties-in-82.msft.png":::
    <span data-ttu-id="fef8f-149">In Microsoft Edge 83 werden auf der **Registerkarte "Eigenschaften"** die Eigenschaften des aktuell ausgewählten Elements nach einer Seitenaktualisierung angezeigt.</span><span class="sxs-lookup"><span data-stu-id="fef8f-149">In Microsoft Edge 83, the **Properties tab** displays the properties of the currently-selected element after a page refresh</span></span>  
 :::image-end:::  
 
@@ -110,7 +110,7 @@ ms.locfileid: "11015482"
 
 <span data-ttu-id="fef8f-156">Wenn Sie eine Änderung an einer minimierte-Datei vorgenommen haben, können Sie mit dem **Tool "Änderungen"** horizontal scrollen, um den gesamten minimierte-Code anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="fef8f-156">When you have made a change to a minified file, the **Changes tool** enables you to scroll horizontally to see all of your minified code.</span></span>  <span data-ttu-id="fef8f-157">Ab Microsoft Edge 83 können Sie jetzt mit den Pfeiltasten auf der Tastatur horizontal scrollen.</span><span class="sxs-lookup"><span data-stu-id="fef8f-157">Starting in Microsoft Edge 83, you may now scroll horizontally using the arrow keys on your keyboard.</span></span>  
 
-:::image type="complex" source="../../media/2020/03/changes.msft.png" alt-text="Die im Microsoft Store verfügbare Remote Tools für Microsoft Edge (Beta)-app" lightbox="../../media/2020/03/changes.msft.png":::
+:::image type="complex" source="../../media/2020/03/changes.msft.png" alt-text="In Microsoft Edge 83 können Sie mit den Pfeiltasten horizontal scrollen, um Ihren minimierte-Code im Tool "Änderungen" anzuzeigen." lightbox="../../media/2020/03/changes.msft.png":::
    <span data-ttu-id="fef8f-159">In Microsoft Edge 83 können Sie mit den Pfeiltasten horizontal scrollen, um die am minimierte-Code vorgenommenen Änderungen im **Tool "Änderungen"** anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="fef8f-159">In Microsoft Edge 83, you may scroll horizontally with the arrow keys to see the changes you made to your minified code in the **Changes tool**</span></span>  
 :::image-end:::  
 
@@ -126,7 +126,7 @@ ms.locfileid: "11015482"
 
 <span data-ttu-id="fef8f-165">Öffnen Sie die [Registerkarte "Rendering"][DevtoolsEvaluatePreformanceReferenceAnalyzeRenderingTab] , und verwenden Sie das neue Feature "nach **eifern des Sehvermögens** ", um eine bessere Vorstellung davon zu erhalten, wie Personen mit unterschiedlichen Arten von Sehstörungen Ihre Website erleben.</span><span class="sxs-lookup"><span data-stu-id="fef8f-165">Open the [Rendering tab][DevtoolsEvaluatePreformanceReferenceAnalyzeRenderingTab] and use the new **Emulate vision deficiencies** feature to get a better idea of how people with different types of vision deficiencies experience your site.</span></span>  
 
-:::image type="complex" source="../../media/2020/03/vision.msft.png" alt-text="Die im Microsoft Store verfügbare Remote Tools für Microsoft Edge (Beta)-app" lightbox="../../media/2020/03/vision.msft.png":::
+:::image type="complex" source="../../media/2020/03/vision.msft.png" alt-text="Emulieren verschwommener Sehkraft" lightbox="../../media/2020/03/vision.msft.png":::
    <span data-ttu-id="fef8f-167">Emulieren verschwommener Sehkraft</span><span class="sxs-lookup"><span data-stu-id="fef8f-167">Emulating blurred vision</span></span>  
 :::image-end:::  
 
@@ -160,7 +160,7 @@ ms.locfileid: "11015482"
 > [!NOTE]
 > <span data-ttu-id="fef8f-192">Updates für `navigator.language` und `navigator.languages` werden nicht sofort, sondern nur nach der nächsten Navigation oder Seitenaktualisierung angezeigt.</span><span class="sxs-lookup"><span data-stu-id="fef8f-192">Updates to `navigator.language` and `navigator.languages` are not visible immediately, but only after the next navigation or page refresh.</span></span>  <span data-ttu-id="fef8f-193">Änderungen am `Accept-Language` http-Header werden nur für nachfolgende Anforderungen wiedergegeben.</span><span class="sxs-lookup"><span data-stu-id="fef8f-193">Changes to the `Accept-Language` HTTP header are only reflected for subsequent requests.</span></span>  
 
-:::image type="complex" source="../../media/2020/03/locale.msft.png" alt-text="Die im Microsoft Store verfügbare Remote Tools für Microsoft Edge (Beta)-app" lightbox="../../media/2020/03/locale.msft.png":::
+:::image type="complex" source="../../media/2020/03/locale.msft.png" alt-text="Emulieren eines Gebietsschemas" lightbox="../../media/2020/03/locale.msft.png":::
    <span data-ttu-id="fef8f-195">Emulieren eines Gebietsschemas</span><span class="sxs-lookup"><span data-stu-id="fef8f-195">Emulating a locale</span></span>  
 :::image-end:::  
 
@@ -174,13 +174,13 @@ ms.locfileid: "11015482"
 
 <span data-ttu-id="fef8f-200">Die Spalte **Status** bietet nun eine kurze Erläuterung dazu, warum eine Anforderung blockiert wurde, sowie einen Link, um die Überschriften dieser Anforderung für weiteres Debuggen anzuzeigen:</span><span class="sxs-lookup"><span data-stu-id="fef8f-200">The **Status** column now provides a quick explanation of why a request was blocked as well as a link to view the headers of that request for further debugging:</span></span>  
 
-:::image type="complex" source="../../media/2020/03/status.msft.png" alt-text="Die im Microsoft Store verfügbare Remote Tools für Microsoft Edge (Beta)-app" lightbox="../../media/2020/03/status.msft.png":::
+:::image type="complex" source="../../media/2020/03/status.msft.png" alt-text="Blockierte Anforderungen in der Spalte \* \* Status \* \*" lightbox="../../media/2020/03/status.msft.png":::
    <span data-ttu-id="fef8f-202">Blockierte Anforderungen in der Spalte " **Status** "</span><span class="sxs-lookup"><span data-stu-id="fef8f-202">Blocked requests in the **Status** column</span></span>  
 :::image-end:::  
 
 <span data-ttu-id="fef8f-203">Im Abschnitt " **Antwort Kopfzeilen** " auf der Registerkarte " **Kopfzeilen** " finden Sie weitere Anleitungen zur Behebung der Probleme:</span><span class="sxs-lookup"><span data-stu-id="fef8f-203">The **Response Headers** section of the **Headers** tab provides more guidance on how to resolve the issues:</span></span>  
 
-:::image type="complex" source="../../media/2020/03/guidance.msft.png" alt-text="Die im Microsoft Store verfügbare Remote Tools für Microsoft Edge (Beta)-app" lightbox="../../media/2020/03/guidance.msft.png":::
+:::image type="complex" source="../../media/2020/03/guidance.msft.png" alt-text="Weitere Anleitungen im Abschnitt "Antwort Kopfzeilen"" lightbox="../../media/2020/03/guidance.msft.png":::
    <span data-ttu-id="fef8f-205">Weitere Anleitungen im Abschnitt " **Antwort Kopfzeilen** "</span><span class="sxs-lookup"><span data-stu-id="fef8f-205">More guidance in the **Response Headers** section</span></span>  
 :::image-end:::  
 
@@ -210,7 +210,7 @@ ms.locfileid: "11015482"
 
 <span data-ttu-id="fef8f-225">Öffnen Sie das [Befehl-Menü][DevToolsCommandMenuIndex] , und führen Sie den `Dock to left` Befehl aus, um devtools Links vom Viewport zu verschieben.</span><span class="sxs-lookup"><span data-stu-id="fef8f-225">Open the [Command Menu][DevToolsCommandMenuIndex] and run the `Dock to left` command to move DevTools to the left of your viewport.</span></span>  
 
-:::image type="complex" source="../../media/2020/03/dock-to-left.msft.png" alt-text="Die im Microsoft Store verfügbare Remote Tools für Microsoft Edge (Beta)-app" lightbox="../../media/2020/03/dock-to-left.msft.png":::
+:::image type="complex" source="../../media/2020/03/dock-to-left.msft.png" alt-text="DevTools, angedockt Links vom Viewport" lightbox="../../media/2020/03/dock-to-left.msft.png":::
    <span data-ttu-id="fef8f-227">DevTools, angedockt Links vom Viewport</span><span class="sxs-lookup"><span data-stu-id="fef8f-227">DevTools docked to the left of the viewport</span></span>  
 :::image-end:::  
 
@@ -225,7 +225,7 @@ ms.locfileid: "11015482"
 
 <span data-ttu-id="fef8f-233">Das devtools-Team erhielt häufig Feedback von Webentwicklern, dass es zwar möglich war, [Leuchtturm][GithubGoogleChromeLighthouse] von devtools aus zu starten, als Sie es ausprobierten, dass Sie das Panel "Leuchtturm" nicht finden konnten, daher ist das **Audit** Panel nun das **Leuchtturm** -Panel.</span><span class="sxs-lookup"><span data-stu-id="fef8f-233">The DevTools team frequently got feedback from web developers that while it was possible to run [Lighthouse][GithubGoogleChromeLighthouse] from DevTools, when they tried it out they were not able to find the "Lighthouse" panel, so the **Audits** panel is now the **Lighthouse** panel.</span></span>  
 
-:::image type="complex" source="../../media/2020/03/lighthouse.msft.png" alt-text="Die im Microsoft Store verfügbare Remote Tools für Microsoft Edge (Beta)-app" lightbox="../../media/2020/03/lighthouse.msft.png":::
+:::image type="complex" source="../../media/2020/03/lighthouse.msft.png" alt-text="Das Leuchtturm-Panel" lightbox="../../media/2020/03/lighthouse.msft.png":::
    <span data-ttu-id="fef8f-235">Das Leuchtturm-Panel</span><span class="sxs-lookup"><span data-stu-id="fef8f-235">The Lighthouse panel</span></span>  
 :::image-end:::  
 
@@ -236,7 +236,7 @@ ms.locfileid: "11015482"
 
 <span data-ttu-id="fef8f-239">Nachdem Sie **lokale Überschreibungen** eingerichtet haben, können Sie mit der rechten Maustaste auf einen Ordner klicken und die Option " **alle Überschreibungen löschen** " auswählen, um alle lokalen Überschreibungen in diesem Ordner zu löschen.</span><span class="sxs-lookup"><span data-stu-id="fef8f-239">After setting up **Local Overrides** you may right-click a folder and select the new **Delete all overrides** option to delete all Local Overrides in that folder.</span></span>  
 
-:::image type="complex" source="../../media/2020/03/overrides.msft.png" alt-text="Die im Microsoft Store verfügbare Remote Tools für Microsoft Edge (Beta)-app" lightbox="../../media/2020/03/overrides.msft.png":::
+:::image type="complex" source="../../media/2020/03/overrides.msft.png" alt-text="Alle Außerkraftsetzungen löschen" lightbox="../../media/2020/03/overrides.msft.png":::
    <span data-ttu-id="fef8f-241">Alle Außerkraftsetzungen löschen</span><span class="sxs-lookup"><span data-stu-id="fef8f-241">Delete all overrides</span></span>  
 :::image-end:::  
 
@@ -250,7 +250,7 @@ ms.locfileid: "11015482"
 
 <span data-ttu-id="fef8f-246">Sie haben in der Lage sein, [lange Aufgaben im Leistungs Panel][DevtoolsEvaluatePerformanceReferenceViewMainThreadActivity] für eine Weile zu visualisieren, doch in Microsoft Edge 83 wurde die Benutzeroberfläche für die lange Aufgaben Visualisierung im Leistungs Panel aktualisiert.</span><span class="sxs-lookup"><span data-stu-id="fef8f-246">You have been able to [visualize Long Tasks in the Performance panel][DevtoolsEvaluatePerformanceReferenceViewMainThreadActivity] for a while now, but in Microsoft Edge 83 the Long Task visualization UI in the Performance panel has been updated.</span></span>  <span data-ttu-id="fef8f-247">Der lange Aufgabenbereich eines Vorgangs wird nun mit einem gestreiften roten Hintergrund eingefärbt.</span><span class="sxs-lookup"><span data-stu-id="fef8f-247">The Long Task portion of a task is now colored with a striped red background.</span></span>  
 
-:::image type="complex" source="../../media/2020/03/long-task.msft.png" alt-text="Die im Microsoft Store verfügbare Remote Tools für Microsoft Edge (Beta)-app" lightbox="../../media/2020/03/long-task.msft.png":::
+:::image type="complex" source="../../media/2020/03/long-task.msft.png" alt-text="Die neue Benutzeroberfläche für lange Aufgaben" lightbox="../../media/2020/03/long-task.msft.png":::
    <span data-ttu-id="fef8f-249">Die neue Benutzeroberfläche für lange Aufgaben</span><span class="sxs-lookup"><span data-stu-id="fef8f-249">The new Long Task UI</span></span>  
 :::image-end:::  
 
@@ -266,7 +266,7 @@ ms.locfileid: "11015482"
 
 <!-- Check out [Are my current icons ready?] to learn more.  -->  
 
-:::image type="complex" source="../../media/2020/03/maskable-icons.msft.png" alt-text="Die im Microsoft Store verfügbare Remote Tools für Microsoft Edge (Beta)-app" lightbox="../../media/2020/03/maskable-icons.msft.png":::
+:::image type="complex" source="../../media/2020/03/maskable-icons.msft.png" alt-text="Kontrollkästchen "nur minimaler sicherer Bereich für Maskierungs Symbole anzeigen"" lightbox="../../media/2020/03/maskable-icons.msft.png":::
    <span data-ttu-id="fef8f-257">Kontrollkästchen " **nur den kleinsten sicheren Bereich für maskierte Symbole anzeigen** "</span><span class="sxs-lookup"><span data-stu-id="fef8f-257">The **Show only the minimum safe area for maskable icons** checkbox</span></span>  
 :::image-end:::  
 
