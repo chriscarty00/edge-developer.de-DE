@@ -78,7 +78,7 @@ Chrom Problem [#1056348][CR1056348]
 
 Bei der [Farbauswahl][DevtoolsCssReferenceColorPicker] handelt es sich um eine Benutzeroberfläche für Änderungen und Deklarationen im [Element Panel][DevtoolsCssIndex] `color` `background-color` .  In früheren Versionen von Microsoft Edge konnten Sie nicht über die Tastatur in der [Farbauswahl][DevtoolsCssReferenceColorPicker] im Bereich " **Schattierungen** " navigieren.  
 
-:::image type="complex" source="../../media/2020/03/color-picker.msft.png" alt-text="Sie können jetzt Ihre Tastatur verwenden, um die Auswahl im Bereich "Schattierungen" der Farbauswahl zu verschieben." lightbox="../../media/2020/03/color-picker.msft.png":::
+:::image type="complex" source="../../media/2020/03/color-picker.msft.png" alt-text="Sie können jetzt Ihre Tastatur verwenden, um die Auswahl im Bereich Schattierungen der Farbauswahl zu verschieben."::: lightbox="../../media/2020/03/color-picker.msft.png":::
    Sie können jetzt Ihre Tastatur verwenden, um die Auswahl im Bereich " **Schattierungen** " der [Farbauswahl][DevtoolsCssReferenceColorPicker] zu verschieben.  
 :::image-end:::  
 
@@ -90,13 +90,13 @@ Chrom Problem [#963183][CR963183]
 
 In Microsoft Edge 81 und früheren Versionen wurde die **Registerkarte Eigenschaften** im [Element Panel][DevtoolsCssIndex] durch Seitenaktualisierungen unterbrochen.  Wenn Sie die Seite aktualisiert haben, wurden die Eigenschaften des aktuell ausgewählten Elements auf der **Registerkarte Eigenschaften** nicht aufgefüllt.  
 
-:::image type="complex" source="../../media/2020/03/properties-in-81.msft.png" alt-text="In Microsoft Edge 81 und früher war die Registerkarte "Eigenschaften" nach einer Seitenaktualisierung leer" lightbox="../../media/2020/03/properties-in-81.msft.png":::
+:::image type="complex" source="../../media/2020/03/properties-in-81.msft.png" alt-text="In Microsoft Edge 81 und früher war die Registerkarte Eigenschaften nach einer Seitenaktualisierung leer"::: lightbox="../../media/2020/03/properties-in-81.msft.png":::
    In Microsoft Edge 81 und früher war die **Registerkarte "Eigenschaften"** nach einer Seitenaktualisierung leer  
 :::image-end:::  
 
 In Microsoft Edge 83 können Sie nun die Eigenschaften des aktuell ausgewählten Elements nach einer Seitenaktualisierung auf der **Registerkarte Eigenschaften**anzeigen.  
 
-:::image type="complex" source="../../media/2020/03/properties-in-82.msft.png" alt-text="In Microsoft Edge 83 werden auf der Registerkarte "Eigenschaften" die Eigenschaften des aktuell ausgewählten Elements nach einer Seitenaktualisierung angezeigt." lightbox="../../media/2020/03/properties-in-82.msft.png":::
+:::image type="complex" source="../../media/2020/03/properties-in-82.msft.png" alt-text="In Microsoft Edge 83 werden auf der Registerkarte Eigenschaften die Eigenschaften des aktuell ausgewählten Elements nach einer Seitenaktualisierung angezeigt."::: lightbox="../../media/2020/03/properties-in-82.msft.png":::
    In Microsoft Edge 83 werden auf der **Registerkarte "Eigenschaften"** die Eigenschaften des aktuell ausgewählten Elements nach einer Seitenaktualisierung angezeigt.  
 :::image-end:::  
 
@@ -110,7 +110,7 @@ Das **Tool "Änderungen"** verfolgt alle Änderungen, die Sie an CSS oder JavaSc
 
 Wenn Sie eine Änderung an einer minimierte-Datei vorgenommen haben, können Sie mit dem **Tool "Änderungen"** horizontal scrollen, um den gesamten minimierte-Code anzuzeigen.  Ab Microsoft Edge 83 können Sie jetzt mit den Pfeiltasten auf der Tastatur horizontal scrollen.  
 
-:::image type="complex" source="../../media/2020/03/changes.msft.png" alt-text="In Microsoft Edge 83 können Sie mit den Pfeiltasten horizontal scrollen, um Ihren minimierte-Code im Tool "Änderungen" anzuzeigen." lightbox="../../media/2020/03/changes.msft.png":::
+:::image type="complex" source="../../media/2020/03/changes.msft.png" alt-text="In Microsoft Edge 83 können Sie mit den Pfeiltasten horizontal scrollen, um Ihren minimierte-Code im Tool Änderungen anzuzeigen."::: lightbox="../../media/2020/03/changes.msft.png":::
    In Microsoft Edge 83 können Sie mit den Pfeiltasten horizontal scrollen, um die am minimierte-Code vorgenommenen Änderungen im **Tool "Änderungen"** anzuzeigen.  
 :::image-end:::  
 
@@ -180,7 +180,7 @@ Die Spalte **Status** bietet nun eine kurze Erläuterung dazu, warum eine Anford
 
 Im Abschnitt " **Antwort Kopfzeilen** " auf der Registerkarte " **Kopfzeilen** " finden Sie weitere Anleitungen zur Behebung der Probleme:  
 
-:::image type="complex" source="../../media/2020/03/guidance.msft.png" alt-text="Weitere Anleitungen im Abschnitt "Antwort Kopfzeilen"" lightbox="../../media/2020/03/guidance.msft.png":::
+:::image type="complex" source="../../media/2020/03/guidance.msft.png" alt-text="Weitere Anleitungen im Abschnitt Antwort Kopfzeilen"::: lightbox="../../media/2020/03/guidance.msft.png":::
    Weitere Anleitungen im Abschnitt " **Antwort Kopfzeilen** "  
 :::image-end:::  
 
@@ -266,7 +266,7 @@ Aktivieren Sie das Kontrollkästchen **nur den Mindestbereich für abgesicherten
 
 <!-- Check out [Are my current icons ready?] to learn more.  -->  
 
-:::image type="complex" source="../../media/2020/03/maskable-icons.msft.png" alt-text="Kontrollkästchen "nur minimaler sicherer Bereich für Maskierungs Symbole anzeigen"" lightbox="../../media/2020/03/maskable-icons.msft.png":::
+:::image type="complex" source="../../media/2020/03/maskable-icons.msft.png" alt-text="Kontrollkästchen nur minimaler sicherer Bereich für Maskierungs Symbole anzeigen"::: lightbox="../../media/2020/03/maskable-icons.msft.png":::
    Kontrollkästchen " **nur den kleinsten sicheren Bereich für maskierte Symbole anzeigen** "  
 :::image-end:::  
 
