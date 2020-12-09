@@ -42,7 +42,7 @@ Führen Sie die folgenden Schritte aus, um mit der Automatisierung von Tests zu 
     
 1.  Navigieren Sie zur Seite [Microsoft Edge Driver Downloads][MicrosoftDeveloperEdgeToolsWebdriverDownloads] , und laden Sie den Treiber herunter, der der Versionsnummer von Microsoft Edge entspricht.  
     
-    :::image type="complex" source="../media/webdriver-chromium/edge-driver-install.png" alt-text="Der Abschnitt "Downloads" auf der Seite "Microsoft Edge-Treiber"" lightbox="../media/webdriver-chromium/edge-driver-install.png":::
+    :::image type="complex" source="../media/webdriver-chromium/edge-driver-install.png" alt-text="Der Abschnitt Downloads auf der Seite Microsoft Edge-Treiber" ::: lightbox="../media/webdriver-chromium/edge-driver-install.png":::
        Der Abschnitt "Downloads" auf der Seite " [Microsoft Edge-Treiber][MicrosoftDeveloperEdgeToolsWebdriver] "  
     :::image-end:::  
     
@@ -326,7 +326,7 @@ Weitere Informationen finden Sie unter [Container im docker-Hub][DockerHubMsedge
 
 Das Microsoft Edge-Team ist begierig, Ihr Feedback zur Verwendung von WebDriver, Selen und Microsoft Edge zu hören.  Um das Team zu informieren, was Sie denken, wählen Sie das Symbol **Feedback senden** in der Microsoft Edge-devtools aus, oder senden Sie eine Tweet- [@EdgeDevTools][TwitterTweetEdgeDevTools].  
 
-:::image type="complex" source="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="Das Symbol "Feedback senden" im Microsoft Edge-devtools" lightbox="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png":::
+:::image type="complex" source="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="Das Symbol Feedback senden im Microsoft Edge-devtools" ::: lightbox="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png":::
    Das Symbol " **Feedback senden** " im Microsoft Edge-devtools  
 :::image-end:::  
 
