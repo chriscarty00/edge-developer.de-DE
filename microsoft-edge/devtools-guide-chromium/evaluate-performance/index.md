@@ -124,7 +124,7 @@ Die wichtigste Metrik zum Messen der Leistung einer Animation ist Frames pro Sek
     
 1.  Unterhalb des **fps** -Diagramms wird das **CPU** -Diagramm angezeigt.  Die Farben im **CPU** -Diagramm entsprechen den Farben auf der Registerkarte " **Zusammenfassung** " unten im Leistungsbereich.  Die Tatsache, dass das **CPU** -Diagramm Farb voll ist, bedeutet, dass die CPU während der Aufzeichnung ausgereizt wurde.  Wenn Sie sehen, dass die CPU über einen längeren Zeitraum ausgeschöpft ist, ist es ein Anhaltspunkt, wie Sie Möglichkeiten für eine geringere Arbeit finden.  
     
-    :::image type="complex" source="../media/evaluate-performance-performance-cpu-chart.msft.png" alt-text="Das CPU-Diagramm und die Registerkarte "Zusammenfassung"" lightbox="../media/evaluate-performance-performance-cpu-chart.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-performance-cpu-chart.msft.png" alt-text="Das CPU-Diagramm und die Registerkarte Zusammenfassung"::: lightbox="../media/evaluate-performance-performance-cpu-chart.msft.png":::
        Das **CPU** -Diagramm und die Registerkarte " **Zusammenfassung** "  
     :::image-end:::  
     
@@ -162,7 +162,7 @@ Nachdem Sie gemessen und überprüft haben, dass die Animation nicht gut funktio
 
 1.  Wenn keine Ereignisse ausgewählt sind, wird auf der Registerkarte **Zusammenfassung** eine Aufschlüsselung der Aktivitäten angezeigt.  Die Seite verbrachte die meiste Zeit beim Rendern.  Da Leistung die Kunst ist, weniger Arbeit zu erledigen, besteht das Ziel darin, die Zeit zu verringern, die für das Rendern von Arbeit aufgewendet wurde.  
     
-    :::image type="complex" source="../media/evaluate-performance-performance-summary-tab.msft.png" alt-text="Registerkarte "Zusammenfassung"" lightbox="../media/evaluate-performance-performance-summary-tab.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-performance-summary-tab.msft.png" alt-text="Registerkarte Zusammenfassung"::: lightbox="../media/evaluate-performance-performance-summary-tab.msft.png":::
        Registerkarte " **Zusammenfassung** "  
     :::image-end:::  
     
