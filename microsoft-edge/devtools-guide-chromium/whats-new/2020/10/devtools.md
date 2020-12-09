@@ -173,12 +173,12 @@ Umschalten des **berechneten** Bereichs im Bereich " **Formatvorlagen** "  Der *
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="Öffnen des Bereichs "berechnete Seitenleiste"" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
+      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="Öffnen des Bereichs berechnete Seitenleiste"::: lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
          Öffnen des Bereichs " **berechnete Seitenleiste** "  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane-open.msft.png" alt-text="Bereich "berechnete Seitenleiste"" lightbox="../../media/2020/10/computed-sidebar-pane-open.msft.png":::
+      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane-open.msft.png" alt-text="Bereich berechnete Seitenleiste"::: lightbox="../../media/2020/10/computed-sidebar-pane-open.msft.png":::
          Bereich " **berechnete Seitenleiste** "  
       :::image-end:::  
    :::column-end:::
@@ -238,7 +238,7 @@ Zeigen Sie im `reporting to` Abschnitt **Sicherheits & Isolierung** die Richtlin
 
 DevTools zeigt jetzt die `report-only` Beschriftung für COEP und Coop an, die auf Mode festgesetzt sind `report-only` .  Navigieren Sie zu Issue [#1051466][CR1051466], um Echtzeitupdates für dieses Feature im Chromium Open-Source-Projekt zu überprüfen.  
 
-:::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png" alt-text="Die Bezeichnung "nur Berichtsmodus"" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png":::
+:::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png" alt-text="Die Bezeichnung nur Berichtsmodus"::: lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png":::
    Die `report-only` Beschriftung "Modus"  
 :::image-end:::  
 
