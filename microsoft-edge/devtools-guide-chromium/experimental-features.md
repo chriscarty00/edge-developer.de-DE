@@ -81,7 +81,7 @@ Aktivieren Sie das Kennzeichen in Microsoft Edge, um das [Feature "CSS-Medien Bi
 1.  Geben Sie im Textfeld **Such Kennzeichnungen** `Experimental Web Platform features` das Flag **experimental Web Platform Features** ein, und ändern Sie **deaktiviert** in **aktiviert**.  
 1.  Starten Sie Microsoft Edge neu.  
 
-:::image type="complex" source="./media/experiments-dual-screen-emulation-edge-flags.msft.png" alt-text="Aktivieren des Kennzeichens "experimentelle Webplattform-Features"" lightbox="./media/experiments-dual-screen-emulation.msft.png":::
+:::image type="complex" source="./media/experiments-dual-screen-emulation-edge-flags.msft.png" alt-text="Aktivieren des Kennzeichens experimentelle Webplattform-Features" ::: lightbox="./media/experiments-dual-screen-emulation.msft.png":::
    Aktivieren des Kennzeichens "experimentelle Webplattform-Features"  
 :::image-end:::  
 
@@ -125,7 +125,7 @@ Dieses experimentelle Feature bietet eine Reihe neuer Visualisierungen, die Ihne
 
 Das Tool "über **prüfen** " bietet eine schnelle Möglichkeit, CSS-Rasterlayouts in einer Website zu erkennen und zu visualisieren, indem Sie mit der Maus darauf zeigen.  Klicken Sie **Inspect** ![ ](./media/inspect-icon.msft.png) in der oberen linken Ecke von devtools auf das Symbol inspizieren \ (Inspect \).  Zeigen Sie dann auf der Website, die Sie Debuggen, auf ein Grid-Element.  Umrisse werden um das Raster herum angezeigt, und Schattierung zeigt die Position von Raster Lücken an, sofern vorhanden.  
 
-:::image type="complex" source="./media/grid-inspect.msft.png" alt-text="Anzeigen von Rastern mit dem Tool "überprüfen"" lightbox="./media/grid-inspect.msft.png":::
+:::image type="complex" source="./media/grid-inspect.msft.png" alt-text="Anzeigen von Rastern mit dem Tool überprüfen"::: lightbox="./media/grid-inspect.msft.png":::
    Anzeigen von Rastern mit dem Tool "überprüfen"  
 :::image-end:::  
 
@@ -182,7 +182,7 @@ Normalerweise werden Tools wie **Elemente** und **Netzwerke** nur im Hauptbereic
 
 Das [webhint][WebhintMain] -Experiment zeigt das webhint-Feedback im Bereich " [Probleme][DevtoolsIssues] " an.  Wählen Sie ein Problem aus, um die Lösungsdokumentation und eine Liste der betroffenen Ressourcen auf Ihrer Website anzuzeigen.  Wählen Sie einen Ressourcen Link aus, um den entsprechenden Bereich für **Netzwerke**, **Quellen**oder **Elemente** in devtools zu öffnen.  
 
-:::image type="complex" source="./media/experiments-webhint.msft.png" alt-text="webhint-Feedback im Bereich "Probleme"" lightbox="./media/experiments-webhint.msft.png":::
+:::image type="complex" source="./media/experiments-webhint.msft.png" alt-text="webhint-Feedback im Bereich Probleme"::: lightbox="./media/experiments-webhint.msft.png":::
    webhint-Feedback im Bereich " **Probleme** "  
 :::image-end:::  
 
@@ -217,7 +217,7 @@ Nachdem Sie das Experiment aktiviert haben, stellen Sie sicher, dass Sie das dev
 1.  Wählen Sie im Abschnitt **Quellauftrags Anzeige** das Kontrollkästchen **Quellreihenfolge anzeigen** aus.  
 1.  Markieren Sie ein beliebiges HTML-Element, um ein Overlay anzuzeigen, das die Reihenfolge in der Seitenquelle enthält.  
 
-:::image type="complex" source="./media/experiments-source-order-viewer.msft.png" alt-text="Viewer für Quellreihenfolge im Bereich "Barrierefreiheit"" lightbox="./media/experiments-source-order-viewer.msft.png":::
+:::image type="complex" source="./media/experiments-source-order-viewer.msft.png" alt-text="Viewer für Quellreihenfolge im Bereich Barrierefreiheit"::: lightbox="./media/experiments-source-order-viewer.msft.png":::
    **Viewer für Quellreihenfolge** im Bereich " **Barrierefreiheit** "  
 :::image-end:::  
 
@@ -234,7 +234,7 @@ Wenn das Experiment " **Tastenkombinationen-Editor aktivieren** " aktiviert ist,
 1.  Wählen Sie die Aktion aus, die Sie anpassen möchten.  
 1.  Wählen Sie das Symbol **Bearbeiten** \ ( ![ EditKeyboardShortcut ][ImageEditKeyboardShortcutIcon] \) aus.  
     
-    :::image type="complex" source="./media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="Auswählen der zu anpassenden Aktion auf der Seite "Verknüpfungen" in "Einstellungen"" lightbox="./media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
+    :::image type="complex" source="./media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="Auswählen der zu anpassenden Aktion auf der Seite Verknüpfungen in Einstellungen"::: lightbox="./media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
        Auswählen der zu anpassenden Aktion auf der Seite " **Verknüpfungen** " in " [Einstellungen][DevToolsCustomizeSettings] "
     :::image-end:::  
     
@@ -290,7 +290,7 @@ Sie können Feedback zu Microsoft Edge devtools-Experimenten oder zu allem ander
 *   Senden Sie Ihr Feedback über das Symbol " **Feedback senden** " im devtools  
 *   Tweet bei [@EdgeDevTools][TwitterEdgedevtools]  
 
-:::image type="complex" source="./media/bing-devtools-send-feedback.msft.png" alt-text="Das Symbol "Feedback senden" in Microsoft Edge devtools" lightbox="./media/bing-devtools-send-feedback.msft.png":::
+:::image type="complex" source="./media/bing-devtools-send-feedback.msft.png" alt-text="Das Symbol Feedback senden in Microsoft Edge devtools"::: lightbox="./media/bing-devtools-send-feedback.msft.png":::
    Das Symbol " **Feedback senden** " in Microsoft Edge devtools  
 :::image-end:::  
 
