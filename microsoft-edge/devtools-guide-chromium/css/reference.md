@@ -84,8 +84,8 @@ Geerbte Eigenschaften sind nicht transparent.  Aktivieren Sie das Kontrollkästc
 > [!NOTE]
 > In der folgenden Abbildung werden auf der Registerkarte **berechnet** die CSS-Eigenschaften angezeigt, die auf das aktuell ausgewählte Element angewendet werden `h1` .  
 
-:::image type="complex" source="../media/css-elements-computed-h1.msft.png" alt-text="Die Registerkarte "berechnet"" lightbox="../media/css-elements-computed-h1.msft.png":::
-   Die Registerkarte " **berechnet** "  
+:::image type="complex" source="../media/css-elements-computed-h1.msft.png" alt-text="Die Registerkarte berechnet"::: lightbox="../media/css-elements-computed-h1.msft.png"
+   Die Registerkarte  **berechnet** 
 :::image-end:::  
 
 ### Anzeigen von CSS-Eigenschaften in alphabetischer Reihenfolge  
@@ -118,7 +118,7 @@ Wenn Sie auch geerbte Eigenschaften auf der Registerkarte **berechnet** durchsuc
 > [!NOTE]
 > In der folgenden Abbildung wird die Registerkarte **Formatvorlagen** so gefiltert, dass nur Regeln angezeigt werden, die die Suchabfrage enthalten `color` .  
 
-:::image type="complex" source="../media/css-elements-styles-filter-color.msft.png" alt-text="Filtern der Registerkarte "Formatvorlagen"" lightbox="../media/css-elements-styles-filter-color.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-filter-color.msft.png" alt-text="Filtern der Registerkarte Formatvorlagen":::: lightbox="../media/css-elements-styles-filter-color.msft.png"
    Filtern der Registerkarte " **Formatvorlagen** "  
 :::image-end:::  
 
@@ -164,7 +164,7 @@ Auf der Registerkarte Coverage wird angezeigt, welche CSS-Seiten tatsächlich ve
     
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/css-console-command-menu-coverage.msft.png" alt-text="Öffnen der Registerkarte "Abdeckung" über das Befehlsmenü" lightbox="../media/css-console-command-menu-coverage.msft.png":::
+          :::image type="complex" source="../media/css-console-command-menu-coverage.msft.png" alt-text="Öffnen der Registerkarte Abdeckung über das Befehlsmenü"::: lightbox="../media/css-console-command-menu-coverage.msft.png":::
              Öffnen der Registerkarte " **Abdeckung** " über das **Befehlsmenü**  
           :::image-end:::  
        :::column-end:::
