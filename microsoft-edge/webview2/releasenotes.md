@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: 34063aee7bec324464cf592e6aab8ca499e9c944
-ms.sourcegitcommit: 1a35a0d52c412c503d742e66f25c4e97286a3919
+ms.openlocfilehash: 2859f931aea8963e8a50835110914a216811c191
+ms.sourcegitcommit: 3234b32e73c9f8362082d995296bd1c5e4286036
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/09/2020
-ms.locfileid: "11203623"
+ms.locfileid: "11204019"
 ---
 # Anmerkungen zu dieser Version von WebView2 SDK  
 
@@ -53,7 +53,7 @@ Veröffentlichungsdatum: 8. Dezember 2020
 
 *   Aktivierter WinForms-Designer in .net Core 3.1 + und .net 5.  
 *   Verbesserte .net Cookie-Verwaltung.  \ ([\ #611][GithubMicrosoftedgeWebviewfeedbackIssue611]\).  
-*   `CoreWebView2Ready`In [CoreWebView2InitializationCompleted][DotnetApiMicrosoftWebWebview2Corewebview2initializationcompletedeventargs]umbenannt.  
+*   `CoreWebView2Ready`Durch [CoreWebView2InitializationCompleted][DotnetApiMicrosoftWebWebview2Corewebview2initializationcompletedeventargs]ersetzt.  
 
 ###### Fehlerbehebungen
 
@@ -298,7 +298,7 @@ Das WebView2-SDK ist die offizielle Win32 C++-Beta Version, die mehrere Funktion
 *   Unterstützung für den `beforeunload` Dialogfeldtyp für JavaScript-Dialog Ereignisse hinzugefügt und [CORE_WEBVIEW2_SCRIPT_DIALOG_KIND_BEFOREUNLOAD][ReferenceWin32Icorewebview2CoreWebview2ScriptDialogKind09430] Enum-Eintrag hinzugefügt.  
 *   [GetHeaders][ReferenceWin32Icorewebview2httprequestheadersGetheaders09430] zu HttpRequestHeaders, [GetHeader][ReferenceWin32Icorewebview2httpresponseheadersGetheader09430] zu HttpResponseHeaders und [get_HasCurrentHeader][ReferenceWin32Icorewebview2httpheaderscollectioniteratorGetHascurrentheader09430] -Eigenschaft zu HttpHeadersCollectionIterator hinzugefügt.  
 *   > [!IMPORTANT]
-    > **Aktuelle Änderung**: geändertes `DevToolsProtocolEventReceived` Verhalten.  Nun können Sie einen [DevToolsProtocolEventReceiver][ReferenceWin32Icorewebview2devtoolsprotocoleventreceiver09430] für ein bestimmtes devtools-Protokollereignis erstellen und dieses Ereignis mithilfe [add_DevToolsProtocolEventReceived][ReferenceWin32Icorewebview2devtoolsprotocoleventreceiverAddDevtoolsprotocoleventreceived09430]remove_DevToolsProtocolEventReceived abonnieren/abbestellen / [remove_DevToolsProtocolEventReceived][ReferenceWin32Icorewebview2devtoolsprotocoleventreceiverRemoveDevtoolsprotocoleventreceived09430].
+    > **Aktuelle Änderung**: geändertes `DevToolsProtocolEventReceived` Verhalten.  Nun können Sie einen [DevToolsProtocolEventReceiver][ReferenceWin32Icorewebview2devtoolsprotocoleventreceiver09430] für ein bestimmtes devtools-Protokollereignis erstellen und dieses Ereignis mithilfe [add_DevToolsProtocolEventReceived][ReferenceWin32Icorewebview2devtoolsprotocoleventreceiverAddDevtoolsprotocoleventreceived09430]remove_DevToolsProtocolEventReceived abonnieren/abbestellen / [][ReferenceWin32Icorewebview2devtoolsprotocoleventreceiverRemoveDevtoolsprotocoleventreceived09430].
 *   > [!IMPORTANT]
     > Unter **brechende Änderung**: `WebMessageReceivedEventArgs` [get_WebMessageAsString][ReferenceWin32Iwebview2webmessagereceivedeventargsGetWebmessageasstring08190] -Eigenschaft in eine [TryGetWebMessageAsString][ReferenceWin32Icorewebview2webmessagereceivedeventargsTrygetwebmessageasstring09430] -Methode geändert.  
 *   > [!IMPORTANT]

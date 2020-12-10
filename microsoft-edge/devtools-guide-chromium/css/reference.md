@@ -7,12 +7,12 @@ ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 707841901046db6a7e957771164ffb868900bdd8
-ms.sourcegitcommit: 080759f68a0a158f10dc20d20c14e222ace1be84
+ms.openlocfilehash: 83edc15549b4f8e668af99a4d95966736aaa0992
+ms.sourcegitcommit: 3234b32e73c9f8362082d995296bd1c5e4286036
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "11190012"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "11204012"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -84,8 +84,8 @@ Geerbte Eigenschaften sind nicht transparent.  Aktivieren Sie das Kontrollkästc
 > [!NOTE]
 > In der folgenden Abbildung werden auf der Registerkarte **berechnet** die CSS-Eigenschaften angezeigt, die auf das aktuell ausgewählte Element angewendet werden `h1` .  
 
-:::image type="complex" source="../media/css-elements-computed-h1.msft.png" alt-text="Die Registerkarte berechnet"::: lightbox="../media/css-elements-computed-h1.msft.png"
-   Die Registerkarte  **berechnet** 
+:::image type="complex" source="../media/css-elements-computed-h1.msft.png" alt-text="Die Registerkarte "berechnet"" lightbox="../media/css-elements-computed-h1.msft.png":::
+   Die Registerkarte " **berechnet** "  
 :::image-end:::  
 
 ### Anzeigen von CSS-Eigenschaften in alphabetischer Reihenfolge  
@@ -118,7 +118,7 @@ Wenn Sie auch geerbte Eigenschaften auf der Registerkarte **berechnet** durchsuc
 > [!NOTE]
 > In der folgenden Abbildung wird die Registerkarte **Formatvorlagen** so gefiltert, dass nur Regeln angezeigt werden, die die Suchabfrage enthalten `color` .  
 
-:::image type="complex" source="../media/css-elements-styles-filter-color.msft.png" alt-text="Filtern der Registerkarte Formatvorlagen":::: lightbox="../media/css-elements-styles-filter-color.msft.png"
+:::image type="complex" source="../media/css-elements-styles-filter-color.msft.png" alt-text="Filtern der Registerkarte "Formatvorlagen"" lightbox="../media/css-elements-styles-filter-color.msft.png":::
    Filtern der Registerkarte " **Formatvorlagen** "  
 :::image-end:::  
 
@@ -164,12 +164,12 @@ Auf der Registerkarte Coverage wird angezeigt, welche CSS-Seiten tatsächlich ve
     
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/css-console-command-menu-coverage.msft.png" alt-text="Öffnen der Registerkarte Abdeckung über das Befehlsmenü"::: lightbox="../media/css-console-command-menu-coverage.msft.png":::
+          :::image type="complex" source="../media/css-console-command-menu-coverage.msft.png" alt-text="Öffnen der Registerkarte "Abdeckung" über das Befehlsmenü" lightbox="../media/css-console-command-menu-coverage.msft.png":::
              Öffnen der Registerkarte " **Abdeckung** " über das **Befehlsmenü**  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/css-console-qs-coverage-empty.msft.png" alt-text="Die Registerkarte Coverage"::: lightbox="../media/css-console-qs-coverage-empty.msft.png":::
+          :::image type="complex" source="../media/css-console-qs-coverage-empty.msft.png" alt-text="Die Registerkarte "Coverage"" lightbox="../media/css-console-qs-coverage-empty.msft.png":::
              Die Registerkarte " **Coverage** "  
           :::image-end:::  
        :::column-end:::
@@ -266,7 +266,7 @@ Führen Sie die folgenden Aktionen aus, um einem Element eine Klasse hinzuzufüg
 1.  Geben Sie den Namen der Klasse in das Textfeld **neue Klasse hinzufügen** ein.  
 1.  Wählen Sie aus `Enter` .  
 
-:::image type="complex" source="../media/css-elements-styles-filter-classes.msft.png" alt-text="Der Bereich Element Klassen"::: lightbox="../media/css-elements-styles-filter-classes.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-filter-classes.msft.png" alt-text="Der Bereich "Element Klassen"" lightbox="../media/css-elements-styles-filter-classes.msft.png":::
    Der Bereich " **Element Klassen** "  
 :::image-end:::  
 
@@ -321,7 +321,7 @@ Auf der Symbolleiste **Weitere Aktionen** können Sie die folgenden Aktionen aus
 
 Führen Sie die folgenden Aktionen aus, um die Symbolleiste **Weitere Aktionen** anzuzeigen.  
 
-1.  Zeigen Sie auf der Registerkarte **Formatvorlagen** auf eine Stilregel.  **More Actions** `...` In der unteren rechten Ecke des Abschnitts Stilregel werden weitere Aktionen angezeigt.  
+1.  Zeigen Sie auf der Registerkarte **Formatvorlagen** auf eine Stilregel.  **** `...` In der unteren rechten Ecke des Abschnitts Stilregel werden weitere Aktionen angezeigt.  
     
     > [!NOTE]
     > Zeigen Sie in der folgenden Abbildung auf die `.header-holder.has-default-focus` Stilregel, und **Weitere Aktionen** werden in der unteren rechten Ecke des Abschnitts Stilregel eingeblendet.  
@@ -335,7 +335,7 @@ Führen Sie die folgenden Aktionen aus, um die Symbolleiste **Weitere Aktionen**
     > [!NOTE]
     > Die **Regel "Stil einfügen" unterhalb** der Aktion wird nach dem Hovern auf **Weitere Aktionen**angezeigt.  
     
-    :::image type="complex" source="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png" alt-text="Die Symbolleiste Weitere Aktionen"::: lightbox="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png":::
+    :::image type="complex" source="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png" alt-text="Die Symbolleiste "Weitere Aktionen"" lightbox="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png":::
        Die Symbolleiste " **Weitere Aktionen** "  
     :::image-end:::  
     
@@ -544,6 +544,8 @@ Wenn Sie die **Farbauswahl**öffnen, ist die **Pipette** (Pipette ![ ][ImageEyed
        Verwenden der Pipette  
     :::image-end:::  
     
+<!--todo:  add the section on the Angle clock section for What's New 88.  -->  
+
 ## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  

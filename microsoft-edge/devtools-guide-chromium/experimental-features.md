@@ -3,16 +3,16 @@ description: Die neuesten experimentellen Features in Microsoft Edge devtools
 title: Experimentelle Funktionen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/06/2020
+ms.date: 12/07/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools, Experiment
-ms.openlocfilehash: ddedf62ff27023751c511a7d2e34b6ea14461db5
-ms.sourcegitcommit: be42902c404e9f9ac2d661df9c55de3db4d956a5
+ms.openlocfilehash: b2b2e591834f1c75d51ec98523e2752d67a2d354
+ms.sourcegitcommit: 6571bcc0b7f1c4c9d6ead65081374bab87cd4469
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "11160366"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "11203899"
 ---
 # Experimentelle Funktionen  
 
@@ -25,7 +25,7 @@ Während experimentelle Features in allen Kanälen von Microsoft Edge verfügbar
 Führen Sie die folgenden Schritte aus, um die experimentellen Features in Microsoft Edge zu aktivieren oder zu deaktivieren.  
 
 1.  [Öffnen Sie devtools][DevtoolsOpen].  
-     *   Wählen Sie `Control` + `Shift` + `I` \ (Windows, Linux \) oder `Command` + `Option` + `I` \ (macOS \) aus.  Weitere Informationen finden Sie unter [Tastenkombinationen für Microsoft Edge devtools][DevToolsShortcuts].  
+    *   Wählen Sie `Control` + `Shift` + `I` \ (Windows, Linux \) oder `Command` + `Option` + `I` \ (macOS \) aus.  Weitere Informationen finden Sie unter [Tastenkombinationen für Microsoft Edge devtools][DevToolsShortcuts].  
 1.  Öffnen Sie den Bereich " [Einstellungen][DevToolsCustomizeSettings] ".  
     *   Wählen Sie aus `Shift` + `?` .  Weitere Informationen finden Sie unter [Tastenkombinationen für Microsoft Edge devtools][DevToolsShortcuts].  
 1.  Wählen Sie auf der linken Seite des Bereichs **Einstellungen** den Abschnitt **Experimente** aus.  
@@ -36,7 +36,7 @@ Führen Sie die folgenden Schritte aus, um die experimentellen Features in Micro
     
 1.  Scrollen Sie auf der Seite **Experimente** durch die Liste aller verfügbaren experimentellen Features, und aktivieren Sie das Kontrollkästchen neben den einzelnen Features, die Sie testen möchten.  
 1.  Schließen Sie die Microsoft Edge-devtools, und öffnen Sie Sie erneut.  
-
+    
 > [!NOTE]
 > Experimentelle Features werden ständig aktualisiert, was zu Leistungsproblemen führen kann.  Wenn Sie ein experimentelles Feature deaktivieren möchten, öffnen Sie die Seite **Experimente** , und deaktivieren Sie das Kontrollkästchen des experimentellen Features, das Sie deaktivieren möchten.  
 
@@ -61,7 +61,7 @@ Bietet zusätzliche Features zum Emulieren von zwei neuen Dual-Screen-und faltba
 
 *   [Surface Duo][SurfaceDevicesDuo]  
 *   [Samsung Galaxy Fold][SamsungMobileGalaxyFold]  
-
+    
 Emulieren Sie die Geräte, und wechseln Sie zwischen den folgenden Haltungen.  
 
 *   Einzelbild-oder gefaltete Haltung  
@@ -80,8 +80,8 @@ Aktivieren Sie das Kennzeichen in Microsoft Edge, um das [Feature "CSS-Medien Bi
 1.  Navigieren Sie zu `edge://flags` .  
 1.  Geben Sie im Textfeld **Such Kennzeichnungen** `Experimental Web Platform features` das Flag **experimental Web Platform Features** ein, und ändern Sie **deaktiviert** in **aktiviert**.  
 1.  Starten Sie Microsoft Edge neu.  
-
-:::image type="complex" source="./media/experiments-dual-screen-emulation-edge-flags.msft.png" alt-text="Aktivieren des Kennzeichens experimentelle Webplattform-Features" ::: lightbox="./media/experiments-dual-screen-emulation.msft.png":::
+    
+:::image type="complex" source="./media/experiments-dual-screen-emulation-edge-flags.msft.png" alt-text="Aktivieren des Kennzeichens "experimentelle Webplattform-Features"" lightbox="./media/experiments-dual-screen-emulation.msft.png":::
    Aktivieren des Kennzeichens "experimentelle Webplattform-Features"  
 :::image-end:::  
 
@@ -111,7 +111,7 @@ Hier sind weitere Ressourcen, die Ihnen bei der Optimierung Ihrer Website (oder 
 
 *   Weitere Informationen zur Web-Entwicklung auf Dual-Screen-Geräten finden Sie unter [Dual-Screen-Web-Erlebnisse][DualScreenWebIndex].  
 *   Installieren Sie den [Surface Duo-Emulator][DualScreenAndroidUseEmulator].  Sie unterscheidet sich vom Emulator in Microsoft Edge, emuliert das Surface Duo mit Android und ist in [Android Studio][AndroidDeveloperStudio]integriert.  Wenn Sie weitere Informationen erhalten möchten, navigieren Sie zu [Surface Duo SDK][DualScreenAndroidGetDuoSdk].  
-
+    
 > [!NOTE]
 > Die folgende Liste enthält aktuelle bekannte Probleme.  
 > 
@@ -125,7 +125,7 @@ Dieses experimentelle Feature bietet eine Reihe neuer Visualisierungen, die Ihne
 
 Das Tool "über **prüfen** " bietet eine schnelle Möglichkeit, CSS-Rasterlayouts in einer Website zu erkennen und zu visualisieren, indem Sie mit der Maus darauf zeigen.  Klicken Sie **Inspect** ![ ](./media/inspect-icon.msft.png) in der oberen linken Ecke von devtools auf das Symbol inspizieren \ (Inspect \).  Zeigen Sie dann auf der Website, die Sie Debuggen, auf ein Grid-Element.  Umrisse werden um das Raster herum angezeigt, und Schattierung zeigt die Position von Raster Lücken an, sofern vorhanden.  
 
-:::image type="complex" source="./media/grid-inspect.msft.png" alt-text="Anzeigen von Rastern mit dem Tool überprüfen"::: lightbox="./media/grid-inspect.msft.png":::
+:::image type="complex" source="./media/grid-inspect.msft.png" alt-text="Anzeigen von Rastern mit dem Tool "überprüfen"" lightbox="./media/grid-inspect.msft.png":::
    Anzeigen von Rastern mit dem Tool "überprüfen"  
 :::image-end:::  
 
@@ -136,7 +136,7 @@ In Microsoft Edge, Version 86 oder höher, bietet das experimentelle CSS-Raster 
 *   Die beständigen Overlays bleiben auf der Seite sichtbar, während Sie scrollen, die Maus bewegen und andere Features des devtools verwenden.  
 *   Mehrere persistente Overlays können gleichzeitig aktiviert werden, sodass Sie mehrere Rasterlayouts auf einmal überprüfen können.  
 *   Beständige Overlays bieten viele Konfigurationsoptionen, wie das ein-oder Ausblenden von Namen im Rasterbereich, Rasterabstände, nach Titel Größen usw.  
-
+    
 Zwei Möglichkeiten zum Umschalten einer beständigen Raster Überlagerung  
 
 *   Wählen Sie das Oval- **Raster** Symbol neben einem Rasterelement aus, das in der DOM-Struktur des **Elements** -Tools angezeigt wird.  
@@ -179,10 +179,10 @@ Normalerweise werden Tools wie **Elemente** und **Netzwerke** nur im Hauptbereic
 *   Leistung  
 *   Progressive Web-Apps (PWAs)  
 *   andere häufig auftretende Probleme mit der Web-Entwicklung  
-
+    
 Das [webhint][WebhintMain] -Experiment zeigt das webhint-Feedback im Bereich " [Probleme][DevtoolsIssues] " an.  Wählen Sie ein Problem aus, um die Lösungsdokumentation und eine Liste der betroffenen Ressourcen auf Ihrer Website anzuzeigen.  Wählen Sie einen Ressourcen Link aus, um den entsprechenden Bereich für **Netzwerke**, **Quellen**oder **Elemente** in devtools zu öffnen.  
 
-:::image type="complex" source="./media/experiments-webhint.msft.png" alt-text="webhint-Feedback im Bereich Probleme"::: lightbox="./media/experiments-webhint.msft.png":::
+:::image type="complex" source="./media/experiments-webhint.msft.png" alt-text="webhint-Feedback im Bereich "Probleme"" lightbox="./media/experiments-webhint.msft.png":::
    webhint-Feedback im Bereich " **Probleme** "  
 :::image-end:::  
 
@@ -199,7 +199,7 @@ Nachdem Sie das Experiment aktiviert haben, stellen Sie sicher, dass Sie das dev
 1.  Öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie **Bearbeiten und wiedergeben**aus.  
 1.  Wenn die **Netzwerk Konsole** geöffnet wird, bearbeiten Sie die Netzwerk Anforderungsinformationen.  
 1.  Wählen Sie **senden**aus.  
-
+    
 :::image type="complex" source="./media/network-network-console.msft.png" alt-text="Netzwerk Konsole im Konsolen Einzug" lightbox="./media/network-network-console.msft.png":::
    **Netzwerk Konsole** im **Konsolen** Einzug  
 :::image-end:::  
@@ -216,8 +216,8 @@ Nachdem Sie das Experiment aktiviert haben, stellen Sie sicher, dass Sie das dev
 1.  Öffnen Sie den Bereich " **Barrierefreiheit** " im Bereich "Schublade \" (unten).  
 1.  Wählen Sie im Abschnitt **Quellauftrags Anzeige** das Kontrollkästchen **Quellreihenfolge anzeigen** aus.  
 1.  Markieren Sie ein beliebiges HTML-Element, um ein Overlay anzuzeigen, das die Reihenfolge in der Seitenquelle enthält.  
-
-:::image type="complex" source="./media/experiments-source-order-viewer.msft.png" alt-text="Viewer für Quellreihenfolge im Bereich Barrierefreiheit"::: lightbox="./media/experiments-source-order-viewer.msft.png":::
+    
+:::image type="complex" source="./media/experiments-source-order-viewer.msft.png" alt-text="Viewer für Quellreihenfolge im Bereich "Barrierefreiheit"" lightbox="./media/experiments-source-order-viewer.msft.png":::
    **Viewer für Quellreihenfolge** im Bereich " **Barrierefreiheit** "  
 :::image-end:::  
 
@@ -234,7 +234,7 @@ Wenn das Experiment " **Tastenkombinationen-Editor aktivieren** " aktiviert ist,
 1.  Wählen Sie die Aktion aus, die Sie anpassen möchten.  
 1.  Wählen Sie das Symbol **Bearbeiten** \ ( ![ EditKeyboardShortcut ][ImageEditKeyboardShortcutIcon] \) aus.  
     
-    :::image type="complex" source="./media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="Auswählen der zu anpassenden Aktion auf der Seite Verknüpfungen in Einstellungen"::: lightbox="./media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
+    :::image type="complex" source="./media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="Auswählen der zu anpassenden Aktion auf der Seite "Verknüpfungen" in "Einstellungen"" lightbox="./media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
        Auswählen der zu anpassenden Aktion auf der Seite " **Verknüpfungen** " in " [Einstellungen][DevToolsCustomizeSettings] "
     :::image-end:::  
     
@@ -265,13 +265,10 @@ Wenn Sie die Tastenkombinationen für eine Aktion bearbeiten, um Ihre Änderunge
 
 Sie können nun Ebenen neben z-Indizes und dem Dokumentobjektmodell \ (DOM \) visualisieren.  Mit diesem Feature können Sie Debuggen, ohne die Kontexte so häufig zu wechseln.  Sie haben festgestellt, dass die Verringerung des Kontextwechsels ein wichtiger Problempunkt war.  Es ist nicht immer klar, wie sich der Code, den Sie schreiben, auf Ihre Web-App auswirkt.  Für ein umfassendes visuelles Debugging werden jetzt die 3D-Ansicht und die zusammengesetzten Ebenen kombiniert.  Nachdem Sie das Experiment aktiviert haben, stellen Sie sicher, dass Sie das devtools erneut starten.  Führen Sie die folgenden Schritte aus, um **zusammengesetzte Layer**zu verwenden.  
 
-<!--1.  Navigate to a PWA-enabled website such as `twitter.com`.  
-1.  Choose the **Install ...** \(![Install PWA icon](./media/install-pwa-icon.msft.png)\) icon to install the Twitter PWA.  If it is already set up, open the app as usual.  
-1.  Open the Devtools.  -->  
 1.  Wählen Sie auf der Schublade das Tool **3D-Ansicht** aus.  
 1.  Öffnen Sie den Bereich **zusammengesetzte Ebenen** .  
 1.  Alle gemalten Ebenen der App werden angezeigt.  Testen Sie diese Funktion mit ihren eigenen Web-Apps.  
-
+    
 :::image type="complex" source="./media/experiments-layers.msft.png" alt-text="Bereich ' zusammengesetzte Ebenen '" lightbox="./media/experiments-layers.msft.png":::
    Bereich ' **zusammengesetzte Ebenen** '  
 :::image-end:::  
@@ -290,7 +287,7 @@ Sie können Feedback zu Microsoft Edge devtools-Experimenten oder zu allem ander
 *   Senden Sie Ihr Feedback über das Symbol " **Feedback senden** " im devtools  
 *   Tweet bei [@EdgeDevTools][TwitterEdgedevtools]  
 
-:::image type="complex" source="./media/bing-devtools-send-feedback.msft.png" alt-text="Das Symbol Feedback senden in Microsoft Edge devtools"::: lightbox="./media/bing-devtools-send-feedback.msft.png":::
+:::image type="complex" source="./media/bing-devtools-send-feedback.msft.png" alt-text="Das Symbol "Feedback senden" in Microsoft Edge devtools" lightbox="./media/bing-devtools-send-feedback.msft.png":::
    Das Symbol " **Feedback senden** " in Microsoft Edge devtools  
 :::image-end:::  
 

@@ -3,17 +3,17 @@ description: Kennenlernen der Microsoft Edge (Chrom)-Entwickler Tools
 title: Microsoft Edge (Chromium)-Entwicklertools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/23/2020
+ms.date: 12/09/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: ffc31dad9e641adfb9f1ae0b5b88b29192ea4152
-ms.sourcegitcommit: acf8ad7cb6c8ecf83a6170f8eeb9bec32878f8ff
+ms.openlocfilehash: 8f773db3d175f8b5128e1558809334c8f2de4bd7
+ms.sourcegitcommit: 3234b32e73c9f8362082d995296bd1c5e4286036
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "11182498"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "11204005"
 ---
 # Microsoft Edge (Chromium)-Entwicklertools  
 
@@ -45,7 +45,7 @@ So öffnen Sie das devtools
 *   drücken Sie `F12` 
 *   Drücken Sie `Ctrl` + `Shift` + `I` unter Windows/Linux \ ( `Command` + `Option` + `I` unter macOS \).  
 
-Wenn Sie den HTML-oder CSS-Code für ein Element auf Ihrer Website anzeigen möchten, klicken Sie mit der rechten Maustaste auf das Element, und wählen Sie über **prüfen** aus, um in das Panel Elemente zu wechseln.  Sie können auch `Ctrl` + `Shift` + `C` auf Windows/Linux \ ( `Command` + `Option` + `C` unter macOS \) drücken, um das devtools im Kontroll **Element Modus** zu öffnen, in dem Sie ein Element auf der Website auswählen und den HTML-und **Elements** CSS-Code im Element Panel sehen können.  
+Wenn Sie den HTML-oder CSS-Code für ein Element auf Ihrer Website anzeigen möchten, klicken Sie mit der rechten Maustaste auf das Element, und wählen Sie über **prüfen** aus, um in das Panel Elemente zu wechseln.  Sie können auch `Ctrl` + `Shift` + `C` auf Windows/Linux \ ( `Command` + `Option` + `C` unter macOS \) drücken, um das devtools im Kontroll **Element Modus** zu öffnen, in dem Sie ein Element auf der Website auswählen und den HTML-und **** CSS-Code im Element Panel sehen können.  
 
 Wenn Sie die Protokolle aus Ihrem Front-End-JavaScript-Code anzeigen oder schnell ein Skript ausführen möchten, drücken Sie `Ctrl` + `Shift` + `J` auf Windows/Linux oder `Command` + `Option` + `J` auf macOS, um den Konsolenbereich im devtools zu starten.  
 
@@ -140,7 +140,7 @@ Wenn Sie eine Vorschau der [neuesten Features in devtools][DevtoolsGuideChromium
 <!-- links -->  
 
 [DevtoolsGuideChromiumBeginnersHtml]: /microsoft-edge/devtools-guide-chromium/beginners/html "DevTools für Anfänger: Erste Schritte mit HTML und dem Dom | Microsoft docs"  
-[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/10/devtools "Neuerungen in Microsoft Edge (Chrom) devtools | Microsoft docs"  
+[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/11/devtools "Neuerungen in Microsoft Edge (Chrom) devtools | Microsoft docs"  
 [DevtoolsProtocolChromiumIndex]: /microsoft-edge/devtools-protocol-chromium "Microsoft Edge (Chrom) devtools-Protokoll | Microsoft docs"  
 
 [MicrosoftEdgeAddonsExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions "Microsoft Edge-Add-ons"  

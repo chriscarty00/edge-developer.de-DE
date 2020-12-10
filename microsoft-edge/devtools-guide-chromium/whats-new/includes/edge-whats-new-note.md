@@ -3,15 +3,15 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
 ms.topic: include
-ms.date: 09/08/2020
-ms.openlocfilehash: e6d1cf188792c6ee6594685943e51c9a5761844e
-ms.sourcegitcommit: 6b577cb118f34f3ff2c65eab2908b65f155dc151
+ms.date: 12/08/2020
+ms.openlocfilehash: 4dbb6c0c07b6294c647f49929f12739447b43e8a
+ms.sourcegitcommit: 3234b32e73c9f8362082d995296bd1c5e4286036
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "11004162"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "11205232"
 ---
-In den folgenden Abschnitten finden Sie eine Liste der Ankündigungen, die Sie möglicherweise im Microsoft Edge devtools-Team verpasst haben.  Schauen Sie sich die Ankündigungen an, um neue Features im devtools, Visual Studio-Code Erweiterungen und vieles mehr zu testen.  Wenn Sie über die neuesten und besten Funktionen Ihrer Entwicklertools auf dem Laufenden bleiben möchten, laden Sie die [Microsoft Edge Preview-Kanäle][MicrosoftEdgePreviewChannels] herunter, und [folgen Sie dem Microsoft Edge devtools-Team auf Twitter][EdgeDevToolsTwitterAccount].  
+In den folgenden Abschnitten werden die Ankündigungen des Microsoft Edge devtools-Teams aufgeführt.  Überprüfen Sie die Ankündigungen, um neue Features in den devtools, Visual Studio-Code Erweiterungen und mehr zu testen.  Wenn Sie mit den neuesten und besten Features in ihren Entwicklertools auf dem Laufenden bleiben möchten, laden Sie die [Microsoft Edge Preview-Kanäle][MicrosoftEdgePreviewChannels] herunter, und [folgen Sie dem Microsoft Edge devtools-Team auf Twitter][EdgeDevToolsTwitterAccount].
 
 <!-- links -->  
 
