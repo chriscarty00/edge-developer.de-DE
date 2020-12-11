@@ -3,22 +3,22 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
 ms.topic: include
-ms.date: 09/01/2020
-ms.openlocfilehash: abd837417098aa6d665bb112f99085ff2473b4ca
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.date: 12/09/2020
+ms.openlocfilehash: 8c0d978497b443701d8db3f694f89cd92f79c524
+ms.sourcegitcommit: ae1e6a7db70b97dc0f7f12feafd3ea88bfdca7ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11124680"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "11205642"
 ---
 Verwenden Sie die folgenden Optionen, um die neuen Features und Änderungen im Beitrag zu besprechen, oder alles, was mit devtools zu tun hat.  
 
 *   Senden Sie Ihr Feedback über das Symbol **Feedback senden** , oder wählen Sie `Alt` + `Shift` + `I` in devtools \ (Windows, Linux \) oder `Option` + `Shift` + `I` \ (macOS \) aus.  
 *   Tweet auf [@EdgeDevTools][PostTweetEdgeDevTools].  
 *   Senden Sie einen Vorschlag an [das gewünschte Web][TheWebWeWant].  
-*   Datei-Bugs in diesem Artikel mit dem [Feedback](#feedback) -Abschnitt.  
+*   Verwenden Sie den folgenden **Feedback** Abschnitt, um Fehler zu diesem Artikel zu speichern.  
 
-:::image type="complex" source="../media/bing-devtools-send-feedback.msft.png" alt-text="Das Symbol Feedback senden im Microsoft Edge-devtools"::: lightbox="../media/bing-devtools-send-feedback.msft.png":::
+:::image type="complex" source="../media/bing-devtools-send-feedback.msft.png" alt-text="Das Symbol "Feedback senden" im Microsoft Edge-devtools" lightbox="../media/bing-devtools-send-feedback.msft.png":::
    Das Symbol " **Feedback senden** " in Microsoft Edge devtools  
 :::image-end:::  
 

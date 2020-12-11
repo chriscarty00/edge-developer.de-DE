@@ -8,14 +8,14 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 10/14/2020
+  ms.date: 12/10/2020
   ms.localizationpriority: high
-  ms.openlocfilehash: 9400bf4be62a4050b7d6511386ee5e66777b18fd
-  ms.sourcegitcommit: 1ad087b00df16fd7718a5d95226de57e29b335e1
+  ms.openlocfilehash: 29518882f80892eb5799a2cda7991963aa55ba60
+  ms.sourcegitcommit: 92e1fa81efe2d176353b5e81098b0761c3539d55
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 10/14/2020
-  ms.locfileid: "11117812"
+  ms.lasthandoff: 12/10/2020
+  ms.locfileid: "11205749"
 highlightedContent:
   items:
   - title: Microsoft Edge (offizieller stabiler Kanal)
@@ -110,7 +110,7 @@ additionalContent:
         url: /microsoft-edge/devtools-guide-chromium/beginners/html
       - text: Tastenkombinationen
         url: /microsoft-edge/devtools-guide-chromium/shortcuts
-      - text: Befehlsmenü
+      - text: Befehlszeile
         url: /microsoft-edge/devtools-guide-chromium/command-menu/index
       - text: Open DevTools
         url: /microsoft-edge/devtools-guide-chromium/open
@@ -118,7 +118,7 @@ additionalContent:
         url: /microsoft-edge/devtools-guide-chromium/css/index
     - title: Testen der & Automatisierung
       links:
-      - text: Bedienungshilfen
+      - text: Barrierefreiheit
         url: /microsoft-edge/accessibility
       - text: DevTools Protocol (Chromium)
         url: /microsoft-edge/devtools-protocol-chromium
@@ -156,7 +156,7 @@ additionalContent:
         url: /microsoft-edge/extensions-chromium/publish/create-dev-account
       - text: Aktualisieren der Erweiterungsliste
         url: /microsoft-edge/extensions-chromium/publish/update
-      - text: Verwalten von Kontoeinstellungen
+      - text: Verwalten der Kontoeinstellungen
         url: /microsoft-edge/extensions-chromium/publish/manage-settings
     - title: 'Erweiterungen: Microsoft Edge Addons-Richtlinien'
       links:
@@ -197,7 +197,7 @@ additionalContent:
       url: /answers/topics/ms-edge.html
     - summary: Microsoft verpflichtet sich, sicherzustellen, dass Ihre apps auf Microsoft Edge funktionieren.  Wenn Sie Probleme mit Ihren Geschäfts-Apps oder Websites über die neueste Version von Edge haben, hilft Ihnen Microsoft, Ihre apps und Websites ohne zusätzliche Kosten zu beheben.  Informationen zu den Teilnahmebedingungen finden Sie unter Angebotsdetails.
       title: Erhalten Sie kostengünstige Hilfe mit der APP-versicherten
-      url: /fasttrack/win-10-microsoft-edge
+      url: https://fasttrack.microsoft.com/portal
     - summary: Wenn Ihr Unternehmen unmittelbaren technischen Support für Microsoft Edge benötigt, ist der 1:1-Support von Microsoft mit einer Reihe von Plänen verfügbar, die Ihnen helfen, den erforderlichen Support zu erhalten.
       title: Microsoft-Support für Unternehmen
       url: https://support.microsoft.com/supportforbusiness/productselection?sapId=a77ee9b7-b6b6-aa08-d7b9-887ebe228207
