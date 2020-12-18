@@ -3,16 +3,16 @@ description: Diese Seite enthält die Dokumentation zur Nachverfolgungsfunktion 
 title: Nach Verfolgungs Verhinderung in Microsoft Edge (Chrom)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/05/2020
+ms.date: 10/27/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Kompatibilität, Web-Plattform, Tracking-Prävention, Tracker, Cookies, Speicher, AD-Blockierung, Tracker-Blockierung, Tracking-Schutz
-ms.openlocfilehash: 2648f05c112a00e66eae85ed44adf22632a0524a
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: a767e55a44c4d416b6d40ca12eb49f2c3a722010
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10568736"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11231152"
 ---
 # Nach Verfolgungs Verhinderung in Microsoft Edge (Chrom)  
 
@@ -174,8 +174,8 @@ Allerdings können die Optionen **blockieren** und **zulassen** auf der `edge://
 
 <!-- image links -->  
 
-[ImageThreeSettingsTrackingPrevention]: ../media/web-platform/tracking-prevention/tracking-prevention-settings.png  
-[ImageBlockedTrackersPageInfoFlyout]: ../media/web-platform/tracking-prevention/page-info-flyout.png  
+[ImageThreeSettingsTrackingPrevention]: ./media/tracking-prevention-settings.png  
+[ImageBlockedTrackersPageInfoFlyout]: ./media/page-info-flyout.png  
 
 <!-- links -->  
 

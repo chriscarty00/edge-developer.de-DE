@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: Microsoft Edge, Web-Entwicklung, Entwickler, Tools, Automatisierung, Test, Dramatiker, Knoten, JavaScript, NPM
-ms.openlocfilehash: ac03923fb25da00f07cb70e81ac06b106a6e1452
-ms.sourcegitcommit: 2e14ff82350f700d7eabc8d33b3ec3e5fc8c61fa
+ms.openlocfilehash: 5ce51864177731dd1bafb845466abb00cce1e0aa
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "11192212"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11231083"
 ---
 # Dramatiker  
 
@@ -101,7 +101,7 @@ Weitere Informationen zu Dramatiker finden Sie auf der [Dramatiker-Website][|::r
 <!-- links -->  
 
 [WebdriverChromiumMain]: ../webdriver-chromium/index.md "WebDriver (Chrom) | Microsoft docs"  
-[PuppeteerMain]: ../puppeteer.md "Puppenspieler | Microsoft docs"  
+[PuppeteerMain]: ../puppeteer/index.md "Puppenspieler | Microsoft docs"  
 
 [MicrosoftBlogsWindowsExperience20181206]: https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration "Microsoft Edge: verbessern des Webs durch mehr Open-Source-Zusammenarbeit | Microsoft Experience-Blog"  
 

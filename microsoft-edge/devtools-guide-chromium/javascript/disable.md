@@ -3,16 +3,16 @@ description: Öffnen Sie das Befehl-Menü, und führen Sie den Befehl "JavaScrip
 title: Deaktivieren von JavaScript mit Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 4a200e2faa303a12d46fe2daf7ba89226a985b1f
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
+ms.openlocfilehash: f7aafee4b05f843319a4a744e6cba148d4642667
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11124719"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230670"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -41,13 +41,13 @@ Führen Sie die folgenden Aktionen aus, um zu sehen, wie eine Webseite aussieht 
     
 1.  Beginnen `javascript` Sie mit der Eingabe, wählen Sie **JavaScript deaktivieren**aus, und wählen Sie dann aus `Enter` , um den Befehl auszuführen.  JavaScript ist jetzt deaktiviert.  
     
-    :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="Das Befehlsmenü" lightbox="../media/javascript-console-command-javascript.msft.png":::
+    :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="Wählen Sie im Befehlsmenü JavaScript deaktivieren aus." lightbox="../media/javascript-console-command-javascript.msft.png":::
        Wählen Sie im **Befehlsmenü** **JavaScript deaktivieren** aus.  
     :::image-end:::  
     
     Das gelbe Warnsymbol neben **Quellen** erinnert Sie daran, dass JavaScript deaktiviert ist.  
     
-    :::image type="complex" source="../media/javascript-console-javascript-disabled-warning.msft.png" alt-text="Das Befehlsmenü" lightbox="../media/javascript-console-javascript-disabled-warning.msft.png":::
+    :::image type="complex" source="../media/javascript-console-javascript-disabled-warning.msft.png" alt-text="Das Warnungssymbol nebenquellen" lightbox="../media/javascript-console-javascript-disabled-warning.msft.png":::
        Das Warnungssymbol neben **Quellen**  
     :::image-end:::  
     
@@ -66,13 +66,13 @@ Führen Sie die folgenden Aktionen aus, um JavaScript wieder zu aktivieren.
 
 <!-- links -->  
 
-[DevToolsOpen]: ../open.md "Öffnen Sie Microsoft Edge devtools | Microsoft docs"  
+[DevToolsOpen]: ../open/index.md "Öffnen Sie Microsoft Edge devtools | Microsoft docs"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
+> Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
 > Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/javascript/disable) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

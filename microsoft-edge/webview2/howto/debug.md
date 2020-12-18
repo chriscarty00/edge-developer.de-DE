@@ -3,17 +3,17 @@ description: Erfahren Sie, wie Sie WebView2-Steuerelemente Debuggen.
 title: Erste Schritte beim Debuggen von WebView2-Anwendungen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/14/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Host, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: 25a710796b499a78a43045266058029caa890b78
-ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
+ms.openlocfilehash: 4f94fe880f66f8aeb387d2db4a8bfaab20699466
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "11119108"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230698"
 ---
 # Erste Schritte beim Debuggen von WebView2-Anwendungen  
 
@@ -26,7 +26,7 @@ Verwenden Sie die [Microsoft Edge (Chrom)-Entwickler Tools][DevtoolsGuideChromiu
 *   Wählen Sie aus `F12` .  
 *   Wählen Sie aus `Ctrl` + `Shift` + `I` .  
 *   Öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie aus `Inspect` .  
-
+    
 Weitere Informationen finden Sie unter [Übersicht über devtools][DevtoolsGuideChromiumMain].  
 
 :::image type="complex" source="./media/f12.png" alt-text="DevTools-Debuggen" lightbox="./media/f12.png":::
@@ -45,25 +45,26 @@ Bevor Sie beginnen, stellen Sie sicher, dass die folgenden Anforderungen erfüll
 *   Zum Debuggen von Skripts muss die app in Visual Studio gestartet werden.  
 *   Sie können keinen Debugger an einen ausgeführten WebView2-Prozess anfügen.  
 *   Installieren Sie Visual Studio 2019, Version 16,4 Preview 2 oder höher.  
-
+    
 Installieren und Einrichten der Skriptdebugger Tools in Visual Studio.  
 
 1.  Führen Sie die folgenden Aktionen aus, um die Komponente **JavaScript-Diagnose** in der **Desktop Entwicklung mit C++** zu installieren.  
-
-    1. Geben Sie in der Windows-Explorer-Leiste ein `Visual Studio Installer` .  
-    1. Wählen Sie **Visual Studio-Installationsprogramm** aus, um es zu öffnen.  
-    1. Wählen Sie im Visual Studio-Installationsprogramm in der installierten Version die Schaltfläche **mehr** aus, und wählen Sie dann **ändern**aus.  
-    1. Wählen Sie in Visual Studio unter **Arbeits auslasten**die Einstellung **Desktop Entwicklung in C++** aus.  
+    
+    1.  Geben Sie in der Windows-Explorer-Leiste ein `Visual Studio Installer` .  
+    1.  Wählen Sie **Visual Studio-Installationsprogramm** aus, um es zu öffnen.  
+    1.  Wählen Sie im Visual Studio-Installationsprogramm in der installierten Version die Schaltfläche **mehr** aus, und wählen Sie dann **ändern**aus.  
+    1.  Wählen Sie in Visual Studio unter **Arbeits auslasten**die Einstellung **Desktop Entwicklung in C++** aus.  
         
-        :::image type="complex" source="./media/workloads.png" alt-text="DevTools-Debuggen" lightbox="./media/workloads.png":::
-            Bildschirm ' Ändern von Arbeitslasten ' in Visual Studio :::image-end:::  
+        :::image type="complex" source="./media/workloads.png" alt-text="Bildschirm ' Ändern von Arbeitslasten ' in Visual Studio" lightbox="./media/workloads.png":::
+            Bildschirm ' Ändern von Arbeitslasten ' in Visual Studio
+        :::image-end:::  
         
     1.  Wählen Sie **einzelne Komponenten**aus.  
     1.  Geben Sie im Suchfeld ein `JavaScript diagnostics` .  
     1.  Wählen Sie die **JavaScript-Diagnose** Einstellung aus.  
     1.  Wählen Sie **ändern**aus. 
         
-        :::image type="complex" source="./media/indivcomp.png" alt-text="DevTools-Debuggen" lightbox="./media/indivcomp.png":::
+        :::image type="complex" source="./media/indivcomp.png" alt-text="Visual Studio-Registerkarte ' einzelne Komponenten ändern '" lightbox="./media/indivcomp.png":::
            Visual Studio-Registerkarte ' einzelne Komponenten ändern '  
         :::image-end:::  
         
@@ -72,7 +73,7 @@ Installieren und Einrichten der Skriptdebugger Tools in Visual Studio.
     1.  Wählen Sie unter den **Konfigurationseigenschaften**die Option **Debuggen**aus.  
     1.  Wählen Sie unter dem **Debuggertyp**die Option **JavaScript (WebView2)** aus.  
         
-        :::image type="complex" source="./media/enbjs.png" alt-text="DevTools-Debuggen" lightbox="./media/enbjs.png":::
+        :::image type="complex" source="./media/enbjs.png" alt-text="Visual Studio-Konfigurationseigenschaft "Debuggen"" lightbox="./media/enbjs.png":::
            Visual Studio-Konfigurationseigenschaft " **Debuggen** "  
         :::image-end:::  
         
@@ -80,19 +81,19 @@ Führen Sie die folgenden Aktionen aus, um Ihre WebView2-Anwendung zu debuggen.
 
 1.  Wenn Sie einen Haltepunkt im Quellcode festlegen möchten, zeigen Sie auf die linke Seite der Zeile, und wählen Sie einen Haltepunkt aus.  Der JS/TS-Debug-Adapter führt keine Quell Pfadzuordnung aus.  Sie müssen exakt denselben Pfad öffnen, der Ihrem WebView2 zugeordnet ist.  
     
-    :::image type="complex" source="./media/breakpoint.png" alt-text="DevTools-Debuggen" lightbox="./media/breakpoint.png"::: 
+    :::image type="complex" source="./media/breakpoint.png" alt-text="Visual Studio-Haltepunkt hinzufügen" lightbox="./media/breakpoint.png"::: 
        Visual Studio-Haltepunkt hinzufügen  
     :::image-end:::  
     
 1.  Zum Ausführen des Debuggers wählen Sie die Bit-Größe der Plattform aus, und wählen Sie dann die grüne Schaltfläche Wiedergabe neben dem **lokalen Windows-Debugger**aus.  Die Anwendung wird ausgeführt, und der Debugger stellt eine Verbindung mit dem ersten WebView2-Prozess her, der erstellt wird.  
     
-    :::image type="complex" source="./media/run.png" alt-text="DevTools-Debuggen" lightbox="./media/run.png"::: 
+    :::image type="complex" source="./media/run.png" alt-text=" Lokaler Windows-Debugger in Visual Studio" lightbox="./media/run.png"::: 
        **Lokaler Windows-Debugger** in Visual Studio  
     :::image-end:::  
     
 1.  Suchen Sie in der **Debug-Konsole**die Ausgabe des Debuggers.  
     
-    :::image type="complex" source="./media/console.png" alt-text="DevTools-Debuggen" lightbox="./media/console.png"::: 
+    :::image type="complex" source="./media/console.png" alt-text=" Visual Studio-Debug-Konsole" lightbox="./media/console.png"::: 
        Visual Studio- **Debug-Konsole**  
     :::image-end:::  
     
@@ -103,7 +104,7 @@ Verwenden Sie Microsoft Visual Studio-Code zum Debuggen von Skripts, die in WebV
 Führen Sie in Visual Studio-Code die folgenden Aktionen aus, um den Code zu debuggen. 
 
 1.  Für Ihr Projekt ist eine Datei erforderlich `launch.json` .  Wenn Ihr Projekt keine Datei enthält `launch.json` , kopieren Sie den folgenden Codeausschnitt, und erstellen Sie eine neue `launch.json` Datei.  
-        
+    
     ```json
         "name": "Hello debug world",
         "type": "pwa-msedge",
@@ -116,10 +117,10 @@ Führen Sie in Visual Studio-Code die folgenden Aktionen aus, um den Code zu deb
         },
         "useWebView": true,
     ```  
-        
+    
 1.  Wenn Sie einen Haltepunkt im Quellcode festlegen möchten, zeigen Sie auf die Zeile, und wählen Sie `F9`
     
-    :::image type="complex" source="./media/breakpointvs.png" alt-text="DevTools-Debuggen" lightbox="./media/breakpointvs.png":::
+    :::image type="complex" source="./media/breakpointvs.png" alt-text="Der Haltepunkt wird in Visual Studio-Code gesetzt" lightbox="./media/breakpointvs.png":::
        Der Haltepunkt wird in Visual Studio-Code gesetzt  
     :::image-end:::
     
@@ -130,20 +131,20 @@ Führen Sie in Visual Studio-Code die folgenden Aktionen aus, um den Code zu deb
     1.  Wählen Sie auf der Registerkarte **Ausführen** im Dropdownmenü die Option Startkonfiguration aus.  
     1.  Wenn Sie mit dem Debuggen der Anwendung beginnen möchten, wählen Sie Debuggen starten (das grüne Dreieck neben der Dropdownliste Startkonfiguration) aus.  
         
-        :::image type="complex" source="./media/runvs.png" alt-text="DevTools-Debuggen" lightbox="./media/runvs.png":::
+        :::image type="complex" source="./media/runvs.png" alt-text=" Visual Studio-Registerkarte "Code ausführen"" lightbox="./media/runvs.png":::
            Visual Studio-Registerkarte "Code ausführen"  
         :::image-end:::  
         
 1.  Öffnen Sie die **Debug-Konsole** , um die Debug-Ausgabe und die Fehler anzuzeigen.  
     
-    :::image type="complex" source="./media/resultsvs.png" alt-text="DevTools-Debuggen" lightbox="./media/resultsvs.png":::
+    :::image type="complex" source="./media/resultsvs.png" alt-text=" Visual Studio-Code Debug-Konsole" lightbox="./media/resultsvs.png":::
        Visual Studio-Code Debug-Konsole  
     :::image-end:::  
     
 **Erweiterte Einstellungen**:  
 
 *   Gezieltes WebView Debuggen 
-
+    
     In einigen WebView2-Anwendungen können Sie mehr als ein WebView2-Steuerelement verwenden. So wählen Sie das WebView2-Steuerelement aus, das in dieser Situation gedebuggt werden soll Sie können das gezielte WebView2 Debuggen verwenden. 
     
     Öffnen `launch.json` und führen Sie die folgenden Aktionen aus, um ein gezieltes WebView-Debugging zu verwenden.  
@@ -170,7 +171,7 @@ Führen Sie in Visual Studio-Code die folgenden Aktionen aus, um den Code zu deb
 *   Debuggen von ausgeführten Prozessen  
     
     Möglicherweise müssen Sie den Debugger an die ausgeführten WebView2-Prozesse anfügen. Aktualisieren Sie dazu `launch.json` den `request` Parameter in `attach` .
-        
+    
     ```json
         "name": "Hello debugging world",
         "type": "pwa-msedge",
@@ -182,7 +183,7 @@ Führen Sie in Visual Studio-Code die folgenden Aktionen aus, um den Code zu deb
         },
         "useWebView": true
     ```  
-        
+    
     Das WebView2-Steuerelement muss den CDP-Port öffnen, um das Debuggen des WebView2-Steuerelements zu ermöglichen.  Ihr Code muss erstellt werden, um sicherzustellen, dass nur ein WebView2-Steuerelement einen CDP-Port (Chrome Developer Protocol) geöffnet hat, bevor der Debugger gestartet wird.  
     
 *   Debug-Ablaufverfolgungsoptionen  
@@ -190,8 +191,6 @@ Führen Sie in Visual Studio-Code die folgenden Aktionen aus, um den Code zu deb
     Fügen Sie den zu `trace` launch.jsden Parameter hinzu, um die Debug-Ablaufverfolgung zu aktivieren.  
     
     1.  Parameter hinzufügen `trace` .  
-        
- 
         
         :::row:::
            :::column span="":::
@@ -208,7 +207,7 @@ Führen Sie in Visual Studio-Code die folgenden Aktionen aus, um den Code zu deb
                 ,"trace": true  // Turn on  debug tracing, and save the output to a log file.
               ```  
               
-              :::image type="complex" source="./media/tracelog.png" alt-text="DevTools-Debuggen" lightbox="./media/tracelog.png":::
+              :::image type="complex" source="./media/tracelog.png" alt-text=" Speichern Sie die Debug-Ausgabe in einer Protokolldatei." lightbox="./media/tracelog.png":::
                  Speichern der Debug-Ausgabe in einer Protokolldatei  
               :::image-end:::  
            :::column-end:::
@@ -217,7 +216,7 @@ Führen Sie in Visual Studio-Code die folgenden Aktionen aus, um den Code zu deb
               ,"trace": "verbose"  // Turn on verbose tracing in the Debug Output pane.
               ```  
               
-              :::image type="complex" source="./media/verbose.png" alt-text="DevTools-Debuggen" lightbox="./media/verbose.png":::
+              :::image type="complex" source="./media/verbose.png" alt-text=" Ausführliche Ausgabe" lightbox="./media/verbose.png":::
                  Visual Studio-Code Debug-Ausgabe mit aktivierter ausführlicher Ablaufverfolgung  
               :::image-end:::  
            :::column-end:::
@@ -234,13 +233,10 @@ Führen Sie in Visual Studio-Code die folgenden Aktionen aus, um den Code zu deb
 *   Problembehandlung des Debuggers  
     
     Bei Verwendung des Debuggers können die folgenden Szenarien auftreten.  
-
+    
     *   Der Debugger wird nicht am Haltepunkt angehalten, und Sie haben die Debug-Ausgabe.  Um das Problem zu beheben, stellen Sie sicher, dass die Datei mit dem Haltepunkt dieselbe Datei ist, die vom WebView2-Steuerelement verwendet wird.  Der Debugger führt keine Quell Pfadzuordnung aus.  
     *   Sie können nicht an einen ausgeführten Prozess anfügen, und Sie erhalten einen Timeoutfehler.  Um das Problem zu beheben, stellen Sie sicher, dass das WebView2-Steuerelement den CDP-Port geöffnet hat.  Stellen Sie sicher, dass Ihr  `additionalBrowserArguments`  Wert in der Registrierung richtig ist, oder die Optionen richtig sind.  Weitere Informationen finden Sie unter [additionalBrowserArguments für dotnet][Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments] und [additionalBrowserArguments für Win32][Webview2ReferenceWin32Webview2IdlParameters].  
     
-* * *  
-
-
 * * *  
 
 ## Weitere Informationen  
@@ -249,14 +245,14 @@ Führen Sie in Visual Studio-Code die folgenden Aktionen aus, um den Code zu deb
 *   Ein umfassendes Beispiel für WebView2-Funktionen finden Sie im [WebView2Samples][GithubMicrosoftedgeWebview2samples] -Repo auf GitHub.
 *   Ausführlichere Informationen zu WebView2-APIs finden Sie unter [API-Referenz][Webview2ApiReference].
 *   Weitere Informationen zu WebView2 finden Sie unter [WebView2-Ressourcen][Webview2MainNextSteps].
-
+    
 ## Kontakt mit dem Microsoft Edge WebView-Team  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumMain]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium)-Entwicklertools"  
+[DevtoolsGuideChromiumMain]: ../index.md "Microsoft Edge (Chrom)-Entwickler Tools | Microsoft docs"  
 
 [Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments]: /dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.additionalbrowserarguments "CoreWebView2EnvironmentOptions. AdditionalBrowserArguments-Eigenschaft (Microsoft. Web. WebView2. Core) | Microsoft docs"  
 [Webview2ReferenceWin32Webview2IdlParameters]: /microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions  "CreateCoreWebView2Environment-Globals | Microsoft docs"  

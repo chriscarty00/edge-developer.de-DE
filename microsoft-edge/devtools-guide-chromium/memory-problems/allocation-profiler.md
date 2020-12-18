@@ -3,16 +3,16 @@ description: Verwenden Sie die Zuweisungs Instrumentation auf der Zeitachse, um 
 title: Verwenden der Zuordnungs Instrumentation auf der Zeitachse
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 1e76e3459128be5b659d790163ef62447dd97ae4
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
+ms.openlocfilehash: 946c2d8b45f316b491a604c16c37bb2467983222
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125447"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230915"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -56,7 +56,7 @@ Führen Sie die folgenden Aktionen aus, um die **Zuweisungs Instrumentation auf 
 1.  Öffnen Sie den Bereich " **Speicher** ", und aktivieren Sie das Optionsfeld **Zuweisungs Instrumentation auf Zeitachse** .  
 1.  Start recording (Aufzeichnung starten.  
     
-    :::image type="complex" source="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png" alt-text="Zuordnungs Instrumentation auf Zeitachse" lightbox="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png":::
+    :::image type="complex" source="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png" alt-text="Datensatz-Heapzuweisungen Profiler" lightbox="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png":::
        Datensatz-Heapzuweisungen Profiler  
     :::image-end:::  
     
@@ -66,7 +66,7 @@ Die Zeitachse der Heapzuweisung zeigt an, wo Objekte erstellt werden, und identi
 
 Die Höhe der einzelnen Balken entspricht der Größe der zuletzt zugeordneten Objekte, und die Farbe der Balken gibt an, ob diese Objekte weiterhin im endgültigen Heap-Snapshot enthalten sind.  Blaue Balken zeigen Objekte an, die am Ende der Zeitachse weiterhin aktiv sind, und graue Balken zeigen Objekte an, die während der Zeitachse zugewiesen wurden, die aber seither als Garbage Collection erfasst wurden.  
 
-:::image type="complex" source="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png" alt-text="Zuordnungs Instrumentation auf Zeitachse" lightbox="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png":::
+:::image type="complex" source="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png" alt-text="Zuordnungs Instrumentation auf der Zeitachse-Momentaufnahme" lightbox="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png":::
    **Zuordnungs Instrumentation auf der Zeitachse** -Momentaufnahme  
 :::image-end:::  
 
@@ -75,7 +75,7 @@ Die Höhe der einzelnen Balken entspricht der Größe der zuletzt zugeordneten O
 
 Sie können die Schieberegler in der obigen Zeitachse verwenden, um den jeweiligen Schnappschuss zu vergrößern und die Objekte zu überprüfen, die kürzlich zu diesem Zeitpunkt zugewiesen wurden:  
 
-:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png" alt-text="Zuordnungs Instrumentation auf Zeitachse" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png":::
+:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png" alt-text="Vergrößern des Schnappschusses" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png":::
    Vergrößern des Schnappschusses  
 :::image-end:::  
 
@@ -91,7 +91,7 @@ Sie können die Speicherzuweisung nach JavaScript-Funktion anzeigen.  Weitere In
 
 <!-- links -->  
 
-[DevToolsOpenIndex]: ../open.md "Öffnen Sie Microsoft Edge (Chrom) devtools | Microsoft docs"
+[DevToolsOpenIndex]: ../open/index.md "Öffnen Sie Microsoft Edge (Chrom) devtools | Microsoft docs"
 [DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: ./index.md#investigate-memory-allocation-by-function "Untersuchen der Speicherzuweisung nach Funktion – beheben von Speicherproblemen | Microsoft docs"  
 
 <!--[HeapProfiler]: ./heap-snapshots.md "How to Record Heap Snapshots"  -->  
@@ -100,10 +100,10 @@ Sie können die Speicherzuweisung nach JavaScript-Funktion anzeigen.  Weitere In
 [MicrosoftEdgeChannel]: https://www.microsoftedgeinsider.com/download "Herunterladen eines Microsoft Edge-Kanals"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
+> Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
 > Die ursprüngliche Seite wird [hier](https://developers.google.com/web/tools/chrome-devtools/memory-problems/allocation-profiler) gefunden und von [Meggin Kearney][MegginKearney] (Technical Writer \) erstellt.  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

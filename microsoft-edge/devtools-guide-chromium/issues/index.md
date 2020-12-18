@@ -3,16 +3,16 @@ description: Verwenden Sie das Tool Probleme, um Probleme mit Ihrer Website zu f
 title: Suchen und Beheben von Problemen mit dem Microsoft Edge devtools Issues Tool
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 4691db9542ecff93d1b59e243844109e0c730d23
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
+ms.openlocfilehash: 8bd3e5950572a9d3fdce71ec6cd935f6b6d6a0b7
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11124726"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230663"
 ---
 <!-- Copyright Sam Dutton 
 
@@ -55,7 +55,7 @@ Das **Problem** Tool in Microsoft Edge devtools verringert die Ermüdung der Ben
        :::column span="":::
           Sie können auch im Menü **Weitere Tools** die Option **Probleme** auswählen.  
           
-          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text="Schaltfläche ' Probleme ' in der gelben Warnleiste, wenn Probleme erkannt werden" lightbox="../media//issues-more-tools-menu.msft.png":::
+          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text="Tool ' Probleme ' im Menü ' Weitere Tools '" lightbox="../media//issues-more-tools-menu.msft.png":::
              Tool ' **Probleme** ' im Menü ' **Weitere Tools** '  
           :::image-end:::  
        :::column-end:::
@@ -63,13 +63,13 @@ Das **Problem** Tool in Microsoft Edge devtools verringert die Ermüdung der Ben
     
 1.  Wählen Sie bei Bedarf die Schaltfläche **Seite neu laden** aus.  
     
-    :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="Schaltfläche ' Probleme ' in der gelben Warnleiste, wenn Probleme erkannt werden" lightbox="../media/issues-tab-before-refresh.msft.png":::
+    :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="Tool ' Probleme ' in der devtools-Schublade mit der Schaltfläche ' Seite neu laden '" lightbox="../media/issues-tab-before-refresh.msft.png":::
        Tool ' **Probleme** ' in der devtools-Schublade mit der Schaltfläche ' **Seite neu laden** '  
     :::image-end:::  
 
     Die in der **Konsole** gemeldeten Probleme sind schwer verständlich, wie etwa die Cookie-Warnungen in der folgenden Abbildung.  Basierend auf den gemeldeten Problemen ist es möglicherweise nicht klar, was Sie tun müssen.  
     
-    :::image type="complex" source="../media/issues-tab-after-refresh.msft.png" alt-text="Schaltfläche ' Probleme ' in der gelben Warnleiste, wenn Probleme erkannt werden" lightbox="../media/issues-tab-after-refresh.msft.png":::
+    :::image type="complex" source="../media/issues-tab-after-refresh.msft.png" alt-text="Tool "Probleme" im devtools-Einzug mit drei Problemen mit Cookies" lightbox="../media/issues-tab-after-refresh.msft.png":::
        Tool " **Probleme** " im devtools-Einzug mit drei Problemen mit Cookies  
     :::image-end:::  
     
@@ -79,7 +79,7 @@ Das Tool " **Probleme** " im devtools-Einzug zeigt Warnungen auf strukturierter,
 
 1.  Wählen Sie ein Element im **Issues** -Tool aus, um Anleitungen zur Behebung des Problems und zum Auffinden betroffener Ressourcen zu erhalten.  
     
-    :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="Schaltfläche ' Probleme ' in der gelben Warnleiste, wenn Probleme erkannt werden" lightbox="../media/issues-tab-issue-open.msft.png":::
+    :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="Markieren von websiteübergreifenden Cookies als sicheres Problem im Tool "Probleme"" lightbox="../media/issues-tab-issue-open.msft.png":::
        **Markieren von websiteübergreifenden Cookies als sicheres** Problem im Tool " **Probleme** "  
     :::image-end:::  
     
@@ -92,7 +92,7 @@ Das Tool " **Probleme** " im devtools-Einzug zeigt Warnungen auf strukturierter,
     
 1.  Wählen Sie Elemente in **betroffenen Ressourcen** aus, um Details anzuzeigen.  Im folgenden Beispiel wirkt sich das **kennzeichnen von websiteübergreifenden Cookies als sicheres** Problem auf ein Cookie und zwei Anforderungen aus.  
     
-    :::image type="complex" source="../media/issues-tab-affected-resources.msft.png" alt-text="Schaltfläche ' Probleme ' in der gelben Warnleiste, wenn Probleme erkannt werden" lightbox="../media/issues-tab-affected-resources.msft.png":::
+    :::image type="complex" source="../media/issues-tab-affected-resources.msft.png" alt-text="Auf der Registerkarte "Issues Drawer" geöffnete betroffene Ressourcen" lightbox="../media/issues-tab-affected-resources.msft.png":::
        Im Tool " **Probleme** " im devtools-Einzug geöffnete betroffene Ressourcen  
     :::image-end:::  
     
@@ -100,13 +100,13 @@ Das Tool " **Probleme** " im devtools-Einzug zeigt Warnungen auf strukturierter,
 
 1.  Wählen Sie einen Ressourcen Link aus, um das Element im entsprechenden Kontext in devtools anzuzeigen.  Wählen Sie im folgenden Beispiel `samesite-sandbox.glitch.me` unter **Anforderungen** aus, um die Cookies anzuzeigen, die dieser Anforderung angefügt sind.  
     
-    :::image type="complex" source="../media/issues-tab-view-request.msft.png" alt-text="Schaltfläche ' Probleme ' in der gelben Warnleiste, wenn Probleme erkannt werden" lightbox="../media/issues-tab-view-request.msft.png":::
+    :::image type="complex" source="../media/issues-tab-view-request.msft.png" alt-text="Anzeigen des betroffenen Cookies im devtools-Netzwerk Panel" lightbox="../media/issues-tab-view-request.msft.png":::
        Anzeigen des betroffenen Cookies im devtools- **Netzwerk** Panel  
     :::image-end:::  
 
 1.  Scrollen Sie, um das Element mit einem Problem anzuzeigen: im folgenden Beispiel wird das `ck02` Cookie angezeigt.  Zeigen Sie mit der Maus auf die Spalte **SameSite** , um den `None` Wert anzuzeigen, der vom Problem erkannt wurde.  
     
-    :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="Schaltfläche ' Probleme ' in der gelben Warnleiste, wenn Probleme erkannt werden" lightbox="../media/issues-tab-view-issue.msft.png":::
+    :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="Kein Wert in der Spalte "SameSite" für das ck02-Cookie im devtools-Netzwerk Panel" lightbox="../media/issues-tab-view-issue.msft.png":::
        `None` Wert in der Spalte " **SameSite** " für das `ck02` Cookie im devtools- **Netzwerk** Panel  
     :::image-end:::  
 
@@ -116,7 +116,7 @@ Das Tool " **Probleme** " im devtools-Einzug zeigt Warnungen auf strukturierter,
 
 <!-- links -->  
 
-[DevtoolsOpen]: ../open.md "Öffnen Sie Microsoft Edge devtools | Microsoft docs"  
+[DevtoolsOpen]: ../open/index.md "Öffnen Sie Microsoft Edge devtools | Microsoft docs"  
 
 [GlitchSamesiteSandbox]: https://samesite-sandbox.glitch.me "SameSite-Cookie-Tests | Glitch"  
 
@@ -126,9 +126,9 @@ Das Tool " **Probleme** " im devtools-Einzug zeigt Warnungen auf strukturierter,
 [W3CCOEPSpec]: https://wicg.github.io/cross-origin-embedder-policy "Richtlinien für die übergreifende Einbettung | Webinkubator-Community-Gruppe"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
+> Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
 > Die ursprüngliche Seite wird [hier](https://developers.google.com/web/tools/chrome-devtools/issues/index) gefunden und von [Sam Dutton][SamDutton] (Entwickler Anwalt \) erstellt.  
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

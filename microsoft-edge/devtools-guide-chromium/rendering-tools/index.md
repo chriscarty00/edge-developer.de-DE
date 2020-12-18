@@ -3,16 +3,16 @@ description: Benutzer erwartet interaktive und glatte Seiten.  Jede Phase in der
 title: Analysieren der Laufzeitleistung
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 12/17/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: f7ca848712268110700fac2c5fb75fe1751812bf
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
+ms.openlocfilehash: d42ac5e7a7456971d48198a1f362eebe7156bbce
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992705"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230607"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -131,7 +131,7 @@ Als Faustregelgilt: Wenn Sie einen geometrischen Wert zurück aus dem Dom anford
 
 Der Bereich " **Leistung** " gibt an, wann eine Seite erzwungene synchrone Layouts verursacht.  Diese `Layout` Ereignisse sind mit roten Balken gekennzeichnet.  
 
-:::image type="complex" source="../media/rendering-tools-jank-performance-recalculate-style-summary.msft.png" alt-text="Formatvorlage ' lange neu berechnen '" lightbox="../media/rendering-tools-jank-performance-recalculate-style-summary.msft.png":::
+:::image type="complex" source="../media/rendering-tools-jank-performance-recalculate-style-summary.msft.png" alt-text="Erzwungenes synchrones Layout" lightbox="../media/rendering-tools-jank-performance-recalculate-style-summary.msft.png":::
    Erzwungenes synchrones Layout  
 :::image-end:::  
 
@@ -161,7 +161,7 @@ Compositing ist der Ort, an dem die gemalten Teile der Seite für die Anzeige au
 Möchten Sie wissen, wie lange das Malen dauert oder wie oft gemalt wird?  Aktivieren Sie das Kontrollkästchen [Erweiterte Farben Instrumentation aktivieren][DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation] im **Leistungs** Panel, und nehmen Sie dann eine Aufzeichnung vor.  Wenn die meiste Zeit für das Rendern von Bildern verwendet wird, gibt es Probleme mit der Farbwiedergabe.  
 
 <!--
-:::image type="complex" source="../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png" alt-text="Formatvorlage ' lange neu berechnen '" lightbox="../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png":::
+:::image type="complex" source="../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png" alt-text="Long paint times in timeline recording" lightbox="../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png":::
    Long paint times in timeline recording  
 :::image-end:::  
 -->  
@@ -190,7 +190,7 @@ In der folgenden Tabelle werden einige häufige Probleme bei der Farb-und Zusamm
 <!-- links -->  
 
 [DevtoolsRenderingToolsJavascriptRuntime]: ./js-runtime.md "Beschleunigen der JavaScript-Laufzeit | Microsoft docs"  
-[DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation]: ../evaluate-performance/reference.md#enable-advanced-paint-instrumentation "Aktivieren von Advanced Paint Instrumentation – Referenz zur Leistungsanalyse | Microsoft docs"
+[DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation]: ../evaluate-performance/reference.md#turn-on-advanced-paint-instrumentation "Aktivieren von Advanced Paint Instrumentation – Referenz zur Leistungsanalyse | Microsoft docs"
 
 <!--[DevtoolsRenderingToolsForcedSynchronousLayouts]: ./rendering-tools/forced-synchronous-layouts.md "Diagnose Forced Synchronous Layouts | Microsoft Docs"  -->  
 
@@ -215,10 +215,10 @@ In der folgenden Tabelle werden einige häufige Probleme bei der Farb-und Zusamm
 [GitHubWilsonpageFastdom]: https://github.com/wilsonpage/fastdom "wilsonpage/fastdom | GitHub"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
+> Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
 > Die ursprüngliche Seite wird [hier](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/index) gefunden und von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) und [Meggin Kearney][MegginKearney] \ (Tech Writer \) erstellt.  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

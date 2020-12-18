@@ -3,16 +3,16 @@ description: Ein Lernprogramm zu den am häufigsten verwendeten netzwerkbezogene
 title: Überprüfen der Netzwerkaktivität in Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: a55ff05e29817c483cbf13b8713ef37cf96424d5
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
+ms.openlocfilehash: 1874c6222798755aa5ad7002e22b0cef00c8fd41
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125426"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230978"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -49,7 +49,7 @@ Verwenden Sie im Allgemeinen das Netzwerk Panel, wenn Sie sicherstellen möchten
 *   Sicherstellen, dass Ressourcen tatsächlich hochgeladen oder überhaupt heruntergeladen werden.  
 *   Überprüfen der Eigenschaften einer einzelnen Ressource, wie HTTP-Header, Inhalt, Größe usw.  
     
-Wenn Sie nach Möglichkeiten suchen, die Seiten Ladeleistung zu verbessern, beginnen Sie **nicht** mit dem Netzwerk Panel.  Es gibt viele Arten von Problemen mit der Auslastungs Leistung, die nicht mit der Netzwerkaktivität zusammenhängen.  Beginnen Sie mit dem Überwachungs Panel, da Sie gezielte Vorschläge zum Verbessern Ihrer Seite erhalten.  Weitere Informationen finden Sie unter [Optimieren der Website Geschwindigkeit][DevtoolsSpeedGetStarted].  
+Wenn Sie nach Möglichkeiten suchen, die Seiten Ladeleistung zu verbessern, beginnen Sie **nicht** mit dem **Netzwerk** Tool.  Es gibt viele Arten von Problemen mit der Auslastungs Leistung, die nicht mit der Netzwerkaktivität zusammenhängen.  Beginnen Sie mit dem Überwachungs Panel, da Sie gezielte Vorschläge zum Verbessern Ihrer Seite erhalten.  Navigieren Sie zur [Optimierung der Website Geschwindigkeit][DevtoolsSpeedGetStarted].  
 
 ## Öffnen des Netzwerk Panels  
 
@@ -64,26 +64,26 @@ Um dieses Lernprogramm optimal zu nutzen, öffnen Sie die Demo und testen Sie di
     <!--You may prefer to move the demo to a separate window.  -->  
     
     <!--
-    :::image type="complex" source="../media/network-tutorial/windows.msft.png" alt-text="Die Demo" lightbox="../media/network-tutorial/windows.msft.png":::
+    :::image type="complex" source="../media/network-tutorial/windows.msft.png" alt-text="The demo in one window and this tutorial in a different window" lightbox="../media/network-tutorial/windows.msft.png":::
        The demo in one window and this tutorial in a different window  
     :::image-end:::  
     -->
     
-1.  [Öffnen Sie devtools][DevToolsOpen] , indem Sie `Control` + `Shift` + `J` \ (Windows, Linux \) oder `Command` + `Option` + `J` \ (macOS \) drücken.  Das **Konsolen** Fenster wird geöffnet.  
+1.  [Öffnen Sie devtools][DevToolsOpen] , indem Sie `Control` + `Shift` + `J` \ (Windows, Linux \) oder `Command` + `Option` + `J` \ (macOS \) drücken.  Das **Konsolen** Tool wird geöffnet.  
     
-    :::image type="complex" source="../media/network-glitch-console.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-console.msft.png":::
+    :::image type="complex" source="../media/network-glitch-console.msft.png" alt-text="Der Konsole" lightbox="../media/network-glitch-console.msft.png":::
        Der **Konsole**  
     :::image-end:::  
     
     Sie können [devtools am unteren Rand des Fensters andocken][DevToolsCustomizePlacement].  
     
-    :::image type="complex" source="../media/network-glitch-console-bottom.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-console-bottom.msft.png":::
+    :::image type="complex" source="../media/network-glitch-console-bottom.msft.png" alt-text="DevTools an den unteren Rand des Fensters angedockt" lightbox="../media/network-glitch-console-bottom.msft.png":::
        DevTools an den unteren Rand des Fensters angedockt  
     :::image-end:::  
     
 1.  Wählen Sie die Registerkarte **Netzwerk** aus.  Das **Netzwerk** Fenster wird geöffnet.  
     
-    :::image type="complex" source="../media/network-glitch-network-bottom.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-bottom.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-bottom.msft.png" alt-text="Konsolen Tool im devtools, das am unteren Rand des Fensters angedockt ist" lightbox="../media/network-glitch-network-bottom.msft.png":::
        **Konsolen** Tool im devtools, das am unteren Rand des Fensters angedockt ist  
     :::image-end:::  
     
@@ -95,7 +95,7 @@ So zeigen Sie die Netzwerkaktivität an, die eine Seite verursacht:
 
 1.  Laden Sie die Seite neu.  Das Netzwerk Panel protokolliert alle Netzwerkaktivitäten im **Netzwerkprotokoll**.  
     
-    :::image type="complex" source="../media/network-glitch-network.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network.msft.png" alt-text="Das Netzwerkprotokoll" lightbox="../media/network-glitch-network.msft.png":::
        Das **Netzwerkprotokoll**  
     :::image-end:::  
     
@@ -117,7 +117,7 @@ So zeigen Sie die Netzwerkaktivität an, die eine Seite verursacht:
 1.  Wählen Sie nun in der Demo die Schaltfläche **Daten abrufen** aus.  
 1.  Sehen Sie sich die untere Seite des **Netzwerkprotokolls** erneut an.  Es sollte eine neue Ressource mit dem Namen angezeigt werden `getstarted.json` .  Durch Auswählen der Schaltfläche " **Daten abrufen** " wurde die Datei von der Seite angefordert.  
     
-    :::image type="complex" source="../media/network-glitch-network-new-resource.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-new-resource.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-new-resource.msft.png" alt-text="Eine neue Ressource im Netzwerkprotokoll" lightbox="../media/network-glitch-network-new-resource.msft.png":::
        Eine neue Ressource im **Netzwerkprotokoll**  
     :::image-end:::  
     
@@ -126,9 +126,9 @@ So zeigen Sie die Netzwerkaktivität an, die eine Seite verursacht:
 Die Spalten des Netzwerkprotokolls können konfiguriert werden.  Sie können Spalten, die Sie nicht verwenden, ausblenden.  
 Es gibt auch viele Spalten, die standardmäßig ausgeblendet sind, die Sie möglicherweise als nützlich empfinden.  
 
-1.  Klicken Sie mit der rechten Maustaste auf die Kopfzeile der Netzwerkprotokoll Tabelle, und wählen Sie **Domäne**aus.  Die Domäne jeder Ressource wird nun angezeigt.  
+1.  Zeigen Sie auf die Kopfzeile der Netzwerkprotokoll Tabelle, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie **Domäne**aus.  Die Domäne jeder Ressource wird nun angezeigt.  
     
-    :::image type="complex" source="../media/network-glitch-network-edit-column.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-edit-column.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-edit-column.msft.png" alt-text="Aktivieren der Spalte "Domäne"" lightbox="../media/network-glitch-network-edit-column.msft.png":::
        Aktivieren der Spalte "Domäne"  
     :::image-end:::  
     
@@ -141,19 +141,19 @@ Die Netzwerkverbindung des Computers, den Sie zum Erstellen von Websites verwend
 
 1.  Wählen Sie die Dropdownliste **Drosselung** aus, die standardmäßig auf **Online** gesetzt ist.  
     
-    :::image type="complex" source="../media/network-glitch-network-throttling.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-throttling.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-throttling.msft.png" alt-text="Aktivieren der Drosselung" lightbox="../media/network-glitch-network-throttling.msft.png":::
        Aktivieren der Drosselung  
     :::image-end:::  
     
 1.  Wählen Sie **Slow 3G**aus.  
     
-    :::image type="complex" source="../media/network-glitch-network-throttling-slow-3g.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-throttling-slow-3g.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-throttling-slow-3g.msft.png" alt-text="Wählen Sie Slow 3G aus." lightbox="../media/network-glitch-network-throttling-slow-3g.msft.png":::
        Wählen Sie Slow 3G aus.  
     :::image-end:::  
     
 1.  Lange drücken Sie **Reload** (Reload ![ ][ImageRefreshIcon] \), und wählen Sie dann **Cache leeren und Hard Reload**aus.  
     
-    :::image type="complex" source="../media/network-glitch-empty-cache-and-hard-reset.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-empty-cache-and-hard-reset.msft.png":::
+    :::image type="complex" source="../media/network-glitch-empty-cache-and-hard-reset.msft.png" alt-text="Leerer Cache und schweres erneutes Laden" lightbox="../media/network-glitch-empty-cache-and-hard-reset.msft.png":::
        **Leerer Cache und schweres erneutes Laden**  
     :::image-end:::  
     
@@ -167,21 +167,21 @@ Die Netzwerkverbindung des Computers, den Sie zum Erstellen von Websites verwend
 Mit Screenshots können Sie sehen, wie eine Seite im Laufe der Zeit aussah, während Sie geladen wurde.  
 
 1.  Wählen Sie \ ( ![ Netzwerkeinstellungen ][ImageSettingsIcon] \) aus, und aktivieren Sie das Kontrollkästchen **Screenshots aufnehmen** .
-1.  Laden Sie die Seite erneut über den **leeren Cache und** den Arbeitsablauf für das erneute Laden.  Weitere Informationen hierzu finden Sie unter [Simulieren einer langsameren Verbindung](#simulate-a-slower-network-connection) .  
+1.  Aktualisieren Sie die Seite erneut mit dem **leeren Cache und** dem Workflow für das erneute Laden von Arbeitsblättern.  Navigieren Sie zum [Simulieren einer langsameren Verbindung](#simulate-a-slower-network-connection) , wenn Sie eine Erinnerung dazu benötigen.  
     Der Bereich "Screenshots" bietet Miniaturansichten, wie die Seite während des Ladevorgangs an verschiedenen Punkten aussah.  
     
-    :::image type="complex" source="../media/network-glitch-network-screenshots.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-screenshots.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-screenshots.msft.png" alt-text="Screenshots des Ladens der Seite" lightbox="../media/network-glitch-network-screenshots.msft.png":::
        Screenshots des Ladens der Seite  
     :::image-end:::  
     
 1.  Wählen Sie die erste Miniaturansicht aus.  DevTools zeigt Ihnen, welche Netzwerkaktivität zu diesem Zeitpunkt stattgefunden hat.  
     
-    :::image type="complex" source="../media/network-glitch-network-screenshots-first.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-screenshots-first.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-screenshots-first.msft.png" alt-text="Die Netzwerkaktivität, die während des ersten Screenshots stattgefunden hat" lightbox="../media/network-glitch-network-screenshots-first.msft.png":::
        Die Netzwerkaktivität, die während des ersten Screenshots stattgefunden hat  
     :::image-end:::  
     
-1.  Wählen Sie erneut \ ( ![ Netzwerkeinstellungen ][ImageSettingsIcon] \) aus, und deaktivieren Sie das Kontrollkästchen **Screenshots aufnehmen** , um den Bereich Screenshots zu schließen.
-1.  Laden Sie die Seite erneut.  
+1.  Wählen Sie erneut \ ( ![ Netzwerkeinstellungen ][ImageSettingsIcon] \) aus, und deaktivieren Sie das Kontrollkästchen **Screenshots aufzeichnen** , um den Bereich Screenshots zu schließen.
+1.  Aktualisieren Sie die Seite erneut.  
     
 ## Überprüfen der Details der Ressource  
 
@@ -189,36 +189,36 @@ Wählen Sie eine Ressource aus, um weitere Informationen dazu zu erhalten.  Prob
 
 1.  Wählen Sie aus `getstarted.html` .  Die Registerkarte über **Schriften** wird angezeigt.  Verwenden Sie diese Registerkarte, um HTTP-Header zu überprüfen.  
     
-    :::image type="complex" source="../media/network-glitch-network-resources-headers.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-resources-headers.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-resources-headers.msft.png" alt-text="Die Registerkarte "Überschriften"" lightbox="../media/network-glitch-network-resources-headers.msft.png":::
        Die Registerkarte "über **Schriften** "  
     :::image-end:::  
     
 1.  Wählen Sie die Registerkarte **Vorschau** aus.  Eine grundlegende Darstellung des HTML-Code wird angezeigt.  
     
-    :::image type="complex" source="../media/network-glitch-network-resources-preview.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-resources-preview.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-resources-preview.msft.png" alt-text="Registerkarte "Vorschau"" lightbox="../media/network-glitch-network-resources-preview.msft.png":::
        Registerkarte " **Vorschau** "  
     :::image-end:::  
     
-    Diese Registerkarte ist hilfreich, wenn eine API einen Fehlercode in HTML zurückgibt.  Möglicherweise ist es einfacher, den gerenderten HTML-Code zu lesen als den HTML-Quellcode, oder wenn Sie Bilder untersuchen.  
+    Die Registerkarte ist hilfreich, wenn eine API einen Fehlercode in HTML zurückgibt.  Möglicherweise ist es einfacher, den gerenderten HTML-Code zu lesen als den HTML-Quellcode, oder wenn Sie Bilder untersuchen.  
 
 1.  Wählen Sie die Registerkarte **Antwort** aus.  Der HTML-Quellcode wird angezeigt.  
     
-    :::image type="complex" source="../media/network-glitch-network-resources-response.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-resources-response.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-resources-response.msft.png" alt-text="Die Registerkarte "Antwort"" lightbox="../media/network-glitch-network-resources-response.msft.png":::
        Die Registerkarte " **Antwort** "  
     :::image-end:::  
     
     > [!TIP]
-    > Wenn eine Datei minimierte ist, wird durch Auswählen der Schaltfläche **Format** \ ( ![ Format ][ImageFormatIcon] \) am unteren Rand der Registerkarte **Antwort** der Inhalt der Datei zur Lesbarkeit neu formatiert.  
+    > Wenn eine Datei minimierte ist, wählen Sie **** unten auf der ![ Registerkarte "Antwort" die Schaltfläche "Format \ (Format \)" aus, ][ImageFormatIcon] um den Inhalt der Datei zur Lesbarkeit neu zu formatieren. ****  
     
-1.  Wählen Sie die Registerkarte **Anzeige** Dauer aus.  Eine Aufschlüsselung der Netzwerkaktivität für diese Ressource wird angezeigt.  
+1.  Wählen Sie die Registerkarte **Anzeige** Dauer aus.  Eine Aufschlüsselung der Netzwerkaktivität für die Ressource wird angezeigt.  
     
-    :::image type="complex" source="../media/network-glitch-network-resources-timing.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-resources-timing.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-resources-timing.msft.png" alt-text="Registerkarte "Anzeigedauer"" lightbox="../media/network-glitch-network-resources-timing.msft.png":::
        Registerkarte " **Anzeige** Dauer"  
     :::image-end:::  
     
 1.  Wählen Sie **Schließen** \ ( ![ Schließen ][ImageCloseIcon] \) aus, um das Netzwerkprotokoll erneut anzuzeigen.  
     
-    :::image type="complex" source="../media/network-glitch-network-resources-close-tabs.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-resources-close-tabs.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-resources-close-tabs.msft.png" alt-text="Schaltfläche "Schließen"" lightbox="../media/network-glitch-network-resources-close-tabs.msft.png":::
        Schaltfläche " **Schließen** "  
     :::image-end:::  
     
@@ -232,25 +232,25 @@ Angenommen, Sie möchten beispielsweise überprüfen, ob Ihre Ressourcen angemes
 
 1.  Wählen Sie **Suchen** \ ( ![ Suchen ][ImageSearchIcon] \) aus.  Der Suchbereich wird links neben dem Netzwerkprotokoll geöffnet.  
     
-    :::image type="complex" source="../media/network-glitch-network-search-empty.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-search-empty.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-search-empty.msft.png" alt-text="Der Suchbereich" lightbox="../media/network-glitch-network-search-empty.msft.png":::
        Der **Such** Bereich  
     :::image-end:::  
     
 1.  Geben `Cache-Control` Sie ein, und wählen Sie aus `Enter` .  Der Suchbereich listet alle Instanzen auf `Cache-Control` , die in Ressourcen Kopfzeilen oder-Inhalten gefunden werden.  
     
-    :::image type="complex" source="../media/network-glitch-network-search-cache-control.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-search-cache-control.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-search-cache-control.msft.png" alt-text="Suchergebnisse für Cache-Control" lightbox="../media/network-glitch-network-search-cache-control.msft.png":::
        Suchergebnisse‎‏ für:  `Cache-Control`  
     :::image-end:::  
     
 1.  Wählen Sie ein Ergebnis aus, um die Ressource anzuzeigen, in der das Ergebnis gefunden wurde.  Wenn Sie die Details der Ressource sehen möchten, wählen Sie ein Ergebnis aus, um direkt dorthin zu wechseln.  Wenn die Abfrage beispielsweise in einer Kopfzeile gefunden wurde, wird die Registerkarte Überschriften geöffnet.   Wenn die Abfrage im Inhalt gefunden wurde, wird die Registerkarte " **Antwort** " geöffnet.  
     
-    :::image type="complex" source="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png" alt-text="Auf der Registerkarte "Überschriften" hervorgehobenes Suchergebnis" lightbox="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png":::
        Auf der Registerkarte "über **Schriften** " hervorgehobenes Suchergebnis  
     :::image-end:::  
     
 1.  Schließen Sie den Suchbereich und die Registerkarte Überschriften.  
     
-    :::image type="complex" source="../media/network-glitch-network-search-close.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-search-close.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-search-close.msft.png" alt-text="Die Schaltflächen "Schließen"" lightbox="../media/network-glitch-network-search-close.msft.png":::
        Die Schaltflächen " **Schließen** "  
     :::image-end:::  
     
@@ -258,11 +258,11 @@ Angenommen, Sie möchten beispielsweise überprüfen, ob Ihre Ressourcen angemes
 
 DevTools bietet zahlreiche Workflows zum Filtern von Ressourcen, die für die jeweilige Aufgabe nicht relevant sind.  
 
-:::image type="complex" source="../media/network-glitch-network-filter-empty.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-filter-empty.msft.png":::
+:::image type="complex" source="../media/network-glitch-network-filter-empty.msft.png" alt-text="Die Symbolleiste "Filter"" lightbox="../media/network-glitch-network-filter-empty.msft.png":::
    Die Symbolleiste " **Filter** "  
 :::image-end:::  
 
-Die **Filter** Symbolleiste sollte standardmäßig aktiviert sein.  Wenn nicht,:  
+Die Symbolleiste **Filter** sollte standardmäßig aktiviert sein.  Wenn nicht,:  
 
 1.  Wählen Sie **Filter** \ ( ![ Filter ][ImageFilterIcon] \) aus, um Sie anzuzeigen.  
     
@@ -272,25 +272,25 @@ Das Textfeld " **Filter** " unterstützt viele verschiedene Filterarten.
 
 1.  Geben Sie `png` in das Textfeld **Filter** ein.  Nur die Dateien, die den Text enthalten, `png` werden angezeigt.  In diesem Fall sind die einzigen Dateien, die dem Filter entsprechen, die PNG-Bilder.  
     
-    :::image type="complex" source="../media/network-glitch-network-filter-png.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-filter-png.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-filter-png.msft.png" alt-text="Ein Zeichenfolgenfilter" lightbox="../media/network-glitch-network-filter-png.msft.png":::
        Ein Zeichenfolgenfilter  
     :::image-end:::  
     
 1.  Geben Sie `/.*\.[cj]s+$/` ein.  DevTools filtert jede Ressource mit einem Dateinamen, der nicht mit a `j` oder a, `c` gefolgt von 1 oder mehr Zeichen, endet `s` .  
     
-    :::image type="complex" source="../media/network-glitch-network-filter-regex.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-filter-regex.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-filter-regex.msft.png" alt-text="Ein Filter für reguläre Ausdrücke" lightbox="../media/network-glitch-network-filter-regex.msft.png":::
        Ein Filter für reguläre Ausdrücke  
     :::image-end:::  
     
 1.  Geben Sie `-main.css` ein.  DevTools filtert aus `main.css` .  Wenn eine andere Datei mit dem Muster übereinstimmt, würden Sie ebenfalls herausgefiltert.  
     
-    :::image type="complex" source="../media/network-glitch-network-filter-negative-statement.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-filter-negative-statement.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-filter-negative-statement.msft.png" alt-text="Ein negativer Filter" lightbox="../media/network-glitch-network-filter-negative-statement.msft.png":::
        Ein negativer Filter  
     :::image-end:::  
     
 1.  Geben Sie `domain:cdn.glitch.com` in das Textfeld **Filter** ein.  DevTools filtert jede Ressource mit einer URL ab, die dieser Domäne nicht entspricht.  
     
-    :::image type="complex" source="../media/network-glitch-network-filter-property-value.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-filter-property-value.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-filter-property-value.msft.png" alt-text="Ein Eigenschaften Filter" lightbox="../media/network-glitch-network-filter-property-value.msft.png":::
        Ein Eigenschaften Filter  
     :::image-end:::  
     
@@ -304,13 +304,13 @@ So konzentrieren Sie sich auf eine bestimmte Art von Datei, beispielsweise Style
 
 1.  Wählen Sie **CSS**aus.  Alle anderen Dateitypen werden herausgefiltert.  
     
-    :::image type="complex" source="../media/network-glitch-network-filter-file-type-css.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-filter-file-type-css.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-filter-file-type-css.msft.png" alt-text="Nur CSS-Dateien anzeigen" lightbox="../media/network-glitch-network-filter-file-type-css.msft.png":::
        Nur CSS-Dateien anzeigen  
     :::image-end:::  
     
 1.  Wenn Sie auch Skripts anzeigen möchten, halten Sie `Control` \ (Windows, Linux \) oder `Command` \ (macOS \) gedrückt, und wählen Sie dann **js**aus.  
     
-    :::image type="complex" source="../media/network-glitch-network-filter-file-type-css-js.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-filter-file-type-css-js.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-filter-file-type-css-js.msft.png" alt-text="Nur CSS-und JS-Dateien anzeigen" lightbox="../media/network-glitch-network-filter-file-type-css-js.msft.png":::
        Nur CSS-und JS-Dateien anzeigen  
     :::image-end:::  
     
@@ -324,20 +324,20 @@ Wie wird eine Seite aussehen und sich Verhalten, wenn einige Seitenressourcen ni
 
 1.  Wählen Sie `Control` + `Shift` + `P` \ (Windows, Linux \) oder `Command` + `Shift` + `P` \ (macOS \) aus, um das **Befehlsmenü**zu öffnen.  
     
-    :::image type="complex" source="../media/network-glitch-network-cli-empty.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-cli-empty.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-cli-empty.msft.png" alt-text="Das Befehlsmenü" lightbox="../media/network-glitch-network-cli-empty.msft.png":::
        Das **Befehlsmenü**  
     :::image-end:::  
     
 1.  Geben `block` Sie die Option **Blockierungs Anforderung anzeigen**ein, und wählen Sie aus `Enter` .  
     
-    :::image type="complex" source="../media/network-glitch-network-cli-block.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-cli-block.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-cli-block.msft.png" alt-text="Anforderungs Blockierung anzeigen" lightbox="../media/network-glitch-network-cli-block.msft.png":::
        **Anforderungs Blockierung anzeigen**  
     :::image-end:::  
     
 1.  Wählen Sie **Muster hinzufügen** \ ( ![ Muster hinzufügen ][ImageAddIcon] \) aus.  
 1.  Geben Sie `main.css` ein.  
     
-    :::image type="complex" source="../media/network-glitch-network-cli-block-add-pattern.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-cli-block-add-pattern.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-cli-block-add-pattern.msft.png" alt-text="Blockieren von Main. CSS" lightbox="../media/network-glitch-network-cli-block-add-pattern.msft.png":::
        Blockieren `main.css`  
     :::image-end:::  
     
@@ -347,7 +347,7 @@ Wie wird eine Seite aussehen und sich Verhalten, wenn einige Seitenressourcen ni
     > [!NOTE]
     > Die `main.css` Zeile im Netzwerkprotokoll.  Der rote Text bedeutet, dass die Ressource blockiert wurde.
     
-    :::image type="complex" source="../media/network-glitch-network-cli-block-main-css.msft.png" alt-text="Die Demo" lightbox="../media/network-glitch-network-cli-block-main-css.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-cli-block-main-css.msft.png" alt-text="Main. CSS wurde blockiert" lightbox="../media/network-glitch-network-cli-block-main-css.msft.png":::
        `main.css` wurde blockiert  
     :::image-end:::  
     
@@ -383,7 +383,7 @@ Navigieren Sie zu der [Netzwerk Referenz][DevtoolsNetworkReference] , um weitere
 [DevtoolsNetworkReferenceFilter]: ./reference.md#filter-requests "Filter Anforderungen – Netzwerkanalyse Referenz | Microsoft docs"  
 [DevtoolsReferenceHideOverview]: ./reference.md#hide-the-overview-pane "Ausblenden des Übersichtsbereichs-Netzwerkanalyse Referenz | Microsoft docs"
 [DevtoolsReferenceProperty]: ./reference.md#filter-requests-by-properties "Filtern von Anforderungen nach Eigenschaften-Netzwerkanalyse Referenz | Microsoft docs"
-[DevToolsOpen]: ../open.md "Öffnen Sie Microsoft Edge devtools | Microsoft docs"  
+[DevToolsOpen]: ../open/index.md "Öffnen Sie Microsoft Edge devtools | Microsoft docs"  
 [DevtoolsSpeedGetStarted]: ../speed/get-started.md "Optimieren der Website Geschwindigkeit mit Microsoft Edge devtools | Microsoft docs"  
 
 [GlitchNetworkGetStarted]: https://microsoft-edge-chromium-devtools.glitch.me/static/network/getstarted.html "Überprüfen der Netzwerk Aktivitäts Demo | Glitch"  
@@ -391,10 +391,10 @@ Navigieren Sie zu der [Netzwerk Referenz][DevtoolsNetworkReference] , um weitere
 [MDNHTTPCache]: https://developer.mozilla.org/docs/Web/HTTP/Caching "HTTP-Caching | MDN"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
+> Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
 > Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/network/index) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

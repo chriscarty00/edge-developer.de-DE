@@ -3,16 +3,16 @@ description: Informationen zum Anzeigen von Anwendungs Cache Daten aus dem Anwen
 title: Anzeigen von Anwendungs Cache Daten mit Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: ed742f24900786c3c5b31ec2a026ddbf9d16ccb6
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
+ms.openlocfilehash: 3d73047a8332e4d6cae5f7411f968a7dfe4c3738
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993324"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230782"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -45,7 +45,7 @@ Dieser Leitfaden zeigt Ihnen, wie Sie [Microsoft Edge devtools][MicrosoftEdgeDev
 
 1.  Erweitern Sie den Abschnitt **Anwendungscache** , und wählen Sie einen Cache aus, um die Ressourcen anzuzeigen.  
     
-    :::image type="complex" source="../media/storage-cache-pane-cache-storage-resources.msft.png" alt-text="Bereich ' Manifest '" lightbox="../media/storage-cache-pane-cache-storage-resources.msft.png":::
+    :::image type="complex" source="../media/storage-cache-pane-cache-storage-resources.msft.png" alt-text="Der Anwendungs Cache Bereich" lightbox="../media/storage-cache-pane-cache-storage-resources.msft.png":::
        Der **Anwendungs Cache** Bereich  
     :::image-end:::  
 
@@ -74,7 +74,7 @@ Am unteren Rand der Tabelle befinden sich Statussymbole, die Ihre Netzwerkverbin
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chrom)-Entwickler Tools | Microsoft docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chrom)-Entwickler Tools | Microsoft docs"  
 
 [HTMLStandardOfflineWebApplications]: https://html.spec.whatwg.org/multipage/offline.html#offline "Offline-Webanwendungen – HTML-Standard"  
 
@@ -82,10 +82,10 @@ Am unteren Rand der Tabelle befinden sich Statussymbole, die Ihre Netzwerkverbin
 [MDNWebAPIsWindowApplicationCache]: https://developer.mozilla.org/docs/Web/API/Window/applicationCache "Window. applicationCache-Web-APIs | MDN"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
+> Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
 > Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/storage/applicationcache) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

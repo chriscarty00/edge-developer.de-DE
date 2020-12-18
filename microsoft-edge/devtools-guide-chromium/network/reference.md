@@ -3,16 +3,16 @@ description: Eine umfassende Referenz zu den Features des Microsoft Edge devtool
 title: Netzwerkanalyse Referenz
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/08/2020
+ms.date: 12/17/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 4d4dc8ad5102766f3ad3c8322dbf9342a69e9097
-ms.sourcegitcommit: 6571bcc0b7f1c4c9d6ead65081374bab87cd4469
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
+ms.openlocfilehash: c600197ffa0e415fe42aecc704a523d1b23f8260
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "11203906"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230754"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -972,7 +972,7 @@ Standardmäßig zeigt devtools den Bereich " **Übersicht** " an.  Deaktivieren 
 
 <!-- links -->  
 
-[DevtoolsProgressiveWebApps]: ../progressive-web-apps.md "Debuggen von progressiven Web-Apps | Microsoft docs"  
+[DevtoolsProgressiveWebApps]: ../progressive-web-apps/index.md "Debuggen von progressiven Web-Apps | Microsoft docs"  
 
 <!--[NetworkConditions]: /microsoft-edge/devtools-guide-chromium/network/network-conditions "Optimize Performance Under Varying Network Conditions | Microsoft Docs"  -->  
 
@@ -981,10 +981,10 @@ Standardmäßig zeigt devtools den Bereich " **Übersicht** " an.  Deaktivieren 
 [WikiProxyServer]: https://en.wikipedia.org/wiki/Proxy_server "Proxy Server – Wikipedia"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
+> Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
 > Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/network/reference) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

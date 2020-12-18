@@ -3,17 +3,17 @@ description: Hier erfahren Sie, wie Sie die WebView2-Loader-Bibliothek statisch 
 title: So verknüpfen Sie die WebView2-Ladeprogramm Bibliothek statisch
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/15/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Host, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: 880e9ed809dc268ee0b30b6ee3b5996711f54300
-ms.sourcegitcommit: 0ded671914aae231493f418dd7645a04361dca1b
+ms.openlocfilehash: 397c226eb958d1e656fb0ecb6dd8f1e2fe300746
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "11120124"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230929"
 ---
 # Statische Verknüpfung der WebView2-Loader-Bibliothek  
 
@@ -40,13 +40,13 @@ Führen Sie die folgenden Schritte aus, wenn Sie keine apps senden möchten `Web
     </PropertyGroup>
     ```
       
-    :::image type="complex" source="./media/staticlib.png" alt-text="Codeausschnitt für Projektdateien" lightbox="./media/staticlib.png":::
+    :::image type="complex" source="./media/staticlib.png" alt-text="Eingefügter Codeausschnitt" lightbox="./media/staticlib.png":::
        Eingefügter Codeausschnitt  
     :::image-end:::  
     
 1.  Bearbeiten Sie die zusätzlichen Abhängigkeiten der Buildkonfiguration für Ihre APP.  Suchen Sie zunächst alle `<AdditionalDependencies>` Kategorien. Fügen Sie für jede `version.lib` eine weitere Abhängigkeit zu jeder anderen Buildkonfiguration in der Datei hinzu `.vcxproj` .  
     
-    :::image type="complex" source="./media/versionlib.png" alt-text="Codeausschnitt für Projektdateien" lightbox="./media/versionlib.png":::
+    :::image type="complex" source="./media/versionlib.png" alt-text="Hinzufügen von Version. lib zu ItemDefinitionGroups verfügen" lightbox="./media/versionlib.png":::
        Hinzufügen `version.lib` zu `ItemDefinitionGroups`  
     :::image-end:::  
     
@@ -68,7 +68,7 @@ Führen Sie die folgenden Schritte aus, wenn Sie keine apps senden möchten `Web
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumMain]: ../../devtools-guide-chromium.md "Microsoft Edge (Chrom)-Entwickler Tools | Microsoft docs"  
+[DevtoolsGuideChromiumMain]: ../index.md "Microsoft Edge (Chrom)-Entwickler Tools | Microsoft docs"  
 
 [Webview2ApiReference]: ../webview2-api-reference.md "Microsoft Edge WebView2-API-Referenz | Microsoft docs"  
 [Webview2MainNextSteps]: ../index.md#next-steps "Nächste Schritte – Einführung in Microsoft Edge WebView2 (Preview) | Microsoft docs"  

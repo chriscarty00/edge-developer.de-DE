@@ -3,18 +3,18 @@ description: Übersicht über Microsoft Edge-Erweiterungen (Chromium) sowie übe
 title: Microsoft Edge-Erweiterungen (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/28/2020
+ms.date: 10/27/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: Edge, Erweiterungen entwickeln, Browsererweiterungen, Add-Ons, Partner Center, Entwickler, Chromium-Erweiterungen
-ms.openlocfilehash: 85858fc7e1159db3175c3a67c3cfd5f6dfbb448f
-ms.sourcegitcommit: 845a0d53a86bee3678f421adee26b3372cefce57
+ms.openlocfilehash: 04b9ffb7ec175bad4f980310819ea6d3551ef9f8
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "11104700"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230943"
 ---
-# Microsoft Edge-Erweiterungen (Chromium) 
+# Übersicht über Microsoft Edge (Chrom)-Erweiterungen 
 
 Bei einer Erweiterung handelt es sich um ein kleines Programm, mit dem Sie \(als Entwickler\) neue Funktionen zu Microsoft Edge \(Chromium\) hinzufügen oder vorhandene Funktionalitäten ändern können.  Eine Erweiterung soll die tägliche Browsernutzung verbessern durch die Bereitstellung von Nischenfunktionen, die für ihre Zielgruppen wichtig sind.  
 
@@ -106,35 +106,35 @@ Nachdem Sie Ihre Erweiterung eingereicht haben, wird sie im Rahmen eines Zertifi
 
 <!-- links -->  
 
-[ExtensionsChromiumDeveloperGuidePortChrome]: ./developer-guide/port-chrome-extension.md &quot;Portieren einer Chrome-Erweiterung nach Microsoft Edge (Chromium) | Microsoft Docs&quot;  
-[ExtensionsChromiumGettingStartedIndex]: ./getting-started/index.md &quot;Erste Schritte mit Microsoft Edge-Erweiterungen (Chromium) | Microsoft Docs&quot;  
-[ExtensionsChromiumPublish]: ./publish/publish-extension.md &quot;Veröffentlichen einer Erweiterung | Microsoft Docs&quot;  
+[ExtensionsChromiumDeveloperGuidePortChrome]: ./developer-guide/port-chrome-extension.md "Portieren einer Chrome-Erweiterung nach Microsoft Edge (Chromium) | Microsoft Docs"  
+[ExtensionsChromiumGettingStartedIndex]: ./getting-started/index.md "Erste Schritte mit Microsoft Edge-Erweiterungen (Chromium) | Microsoft Docs"  
+[ExtensionsChromiumPublish]: ./publish/publish-extension.md "Veröffentlichen einer Erweiterung | Microsoft Docs"  
 
-[MicrosoftDeveloperEdgeExtensions]: https://developer.microsoft.com/microsoft-edge/extensions &quot;Entwickeln von Erweiterungen für Microsoft Edge | Microsoft-Entwickler&quot;  
-[MicrosoftDeveloperRegistration]: https://developer.microsoft.com/registration &quot;Partner Center | Microsoft-Entwickler&quot;  
+[MicrosoftDeveloperEdgeExtensions]: https://developer.microsoft.com/microsoft-edge/extensions "Entwickeln von Erweiterungen für Microsoft Edge | Microsoft-Entwickler"  
+[MicrosoftDeveloperRegistration]: https://developer.microsoft.com/registration "Partner Center | Microsoft-Entwickler"  
 
-[MicrosoftEdgeAddonsCategoryExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions &quot;Erweiterungen für Microsoft Edge | Microsoft Edge&quot;  
+[MicrosoftEdgeAddonsCategoryExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions "Erweiterungen für Microsoft Edge | Microsoft Edge"  
 
-[AppleDeveloperSafariservicesAppExtensions]: https://developer.apple.com/documentation/safariservices/safari_app_extensions &quot;Safari-App-Erweiterungen | Apple-Entwickler&quot;  
-[AppleDeveloperSafariservicesAppExtensionsBuilding]: https://developer.apple.com/documentation/safariservices/safari_app_extensions/building_a_safari_app_extension &quot;Erstellen einer Safari-App-Erweiterung | Apple-Entwickler&quot;  
+[AppleDeveloperSafariservicesAppExtensions]: https://developer.apple.com/documentation/safariservices/safari_app_extensions "Safari-App-Erweiterungen | Apple-Entwickler"  
+[AppleDeveloperSafariservicesAppExtensionsBuilding]: https://developer.apple.com/documentation/safariservices/safari_app_extensions/building_a_safari_app_extension "Erstellen einer Safari-App-Erweiterung | Apple-Entwickler"  
 
-[ChromeDeveloperExtensions]: https://developer.chrome.com/extensions &quot;Was sind Erweiterungen? | Chrome-Entwickler&quot;  
-[ChromeDeveloperExtensionsApiIndex]: https://developer.chrome.com/extensions/api_index &quot;Chrome-APIs | Chrome-Entwickler&quot;  
-[ChromeDeveloperExtensionsGetstarted]: https://developer.chrome.com/extensions/getstarted &quot;Tutorial für die ersten Schritte | Chrome-Entwickler&quot;  
+[ChromeDeveloperExtensions]: https://developer.chrome.com/extensions "Was sind Erweiterungen? | Chrome-Entwickler"  
+[ChromeDeveloperExtensionsApiIndex]: https://developer.chrome.com/extensions/api_index "Chrome-APIs | Chrome-Entwickler"  
+[ChromeDeveloperExtensionsGetstarted]: https://developer.chrome.com/extensions/getstarted "Tutorial für die ersten Schritte | Chrome-Entwickler"  
 
-[ChromiumHome]: https://www.chromium.org/Home &quot;Chromium&quot;  
+[ChromiumHome]: https://www.chromium.org/Home "Chromium"  
 
-[ExtensionworkshopPorting]: https://extensionworkshop.com/documentation/develop/porting-a-google-chrome-extension &quot;Portieren einer Google Chrome-Erweiterung | Erweiterungs-Workshop&quot;  
+[ExtensionworkshopPorting]: https://extensionworkshop.com/documentation/develop/porting-a-google-chrome-extension "Portieren einer Google Chrome-Erweiterung | Erweiterungs-Workshop"  
 
-[GoogleChromeWebstoreCategoryExtensions]: https://chrome.google.com/webstore/category/extensions &quot;Erweiterungen | Chrome Web Store&quot;  
+[GoogleChromeWebstoreCategoryExtensions]: https://chrome.google.com/webstore/category/extensions "Erweiterungen | Chrome Web Store"  
 
-[MDNWebextensions]: https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions &quot;Browser-Erweiterungen | MDN&quot;  
-[MDNWebextensionsYourFirst]: https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension &quot;Ihre erste Erweiterung | MDN&quot;  
+[MDNWebextensions]: https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions "Browser-Erweiterungen | MDN"  
+[MDNWebextensionsYourFirst]: https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension "Ihre erste Erweiterung | MDN"  
 
-[MozillaAddonsFirefoxExtensions]: https://addons.mozilla.org/firefox/extensions &quot;Erweiterungen | Firefox Add-ons&quot;  
+[MozillaAddonsFirefoxExtensions]: https://addons.mozilla.org/firefox/extensions "Erweiterungen | Firefox Add-ons"  
 
-[OperaAddonsExtensions]: https://addons.opera.com/extensions &quot;Erweiterungen | Opera-Add-ons&quot;  
+[OperaAddonsExtensions]: https://addons.opera.com/extensions "Erweiterungen | Opera-Add-ons"  
 
-[OperaDevExtensions]: https://dev.opera.com/extensions &quot;Dokumentation zu Erweiterungen | Dev.Opera&quot;  
-[OperaDevExtensionsApis]: https://dev.opera.com/extensions/apis &quot;In Opera unterstützte Erweiterungs-APIs | Dev.Opera&quot;  
-[OperaDevExtensionsGettingStarted]: https://dev.opera.com/extensions/getting-started &quot;Erste Schritte | Dev.Opera"  
+[OperaDevExtensions]: https://dev.opera.com/extensions "Dokumentation zu Erweiterungen | Dev.Opera"  
+[OperaDevExtensionsApis]: https://dev.opera.com/extensions/apis "In Opera unterstützte Erweiterungs-APIs | Dev.Opera"  
+[OperaDevExtensionsGettingStarted]: https://dev.opera.com/extensions/getting-started "Erste Schritte | Dev.Opera"  

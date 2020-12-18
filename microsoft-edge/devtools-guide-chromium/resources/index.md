@@ -3,16 +3,16 @@ description: Organisieren Sie Ressourcen nach Frame, Domäne, Typ oder anderen K
 title: Anzeigen von Seitenressourcen mit Microsoft Edge devtools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: a243a400dd85b587a8f299a6b8bc3d3d463796b0
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
+ms.openlocfilehash: 353c36a9d98dac287c3fdaaa3feed2fe3b17cd07
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125398"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230775"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -48,7 +48,7 @@ Wenn Sie den Namen der Ressource kennen, die Sie überprüfen möchten, bietet d
     
 1.  Wählen Sie die Datei aus der Dropdownliste aus, oder beginnen Sie mit der Eingabe des Datei namens, und wählen Sie `Enter` im Feld AutoVervollständigen die richtige Datei hervorgehoben aus.  
     
-    :::image type="complex" source="../media/resources-command-menu-file-search.msft.png" alt-text="Dialogfeld ' Datei öffnen '" lightbox="../media/resources-command-menu-file-search.msft.png":::
+    :::image type="complex" source="../media/resources-command-menu-file-search.msft.png" alt-text="Geben Sie im Dialogfeld "Datei öffnen" einen Dateinamen ein." lightbox="../media/resources-command-menu-file-search.msft.png":::
        Geben Sie im Dialogfeld " **Datei öffnen** " einen Dateinamen ein.  
     :::image-end:::  
     
@@ -56,7 +56,7 @@ Wenn Sie den Namen der Ressource kennen, die Sie überprüfen möchten, bietet d
 
 Navigieren Sie, um [die Details einer Ressource zu überprüfen][DevtoolsNetworkInspectDetailsResource].  
 
-:::image type="complex" source="../media/resources-network-response.msft.png" alt-text="Dialogfeld ' Datei öffnen '" lightbox="../media/resources-network-response.msft.png":::
+:::image type="complex" source="../media/resources-network-response.msft.png" alt-text="Überprüfen einer Ressource im Netzwerk Panel" lightbox="../media/resources-network-response.msft.png":::
    Überprüfen einer Ressource im **Netzwerk** Panel  
 :::image-end:::  
 
@@ -64,7 +64,7 @@ Navigieren Sie, um [die Details einer Ressource zu überprüfen][DevtoolsNetwork
 
 Im Abschnitt [Ressourcen durchsuchen](#browse-resources) wird gezeigt, wie Sie Ressourcen aus verschiedenen Teilen der devtools-Benutzeroberfläche anzeigen können.  Wenn Sie jemals eine Ressource im **Netzwerk** Panel überprüfen möchten, klicken Sie mit der rechten Maustaste auf die Ressource, und wählen Sie **im Netzwerk Panel**anzeigen aus.  
 
-:::image type="complex" source="../media/resources-sources-page-reveal-in-network-panel.msft.png" alt-text="Dialogfeld ' Datei öffnen '" lightbox="../media/resources-sources-page-reveal-in-network-panel.msft.png":::
+:::image type="complex" source="../media/resources-sources-page-reveal-in-network-panel.msft.png" alt-text="Im Netzwerk Panel anzeigen" lightbox="../media/resources-sources-page-reveal-in-network-panel.msft.png":::
    **Im Netzwerk Panel anzeigen**  
 :::image-end:::  
 
@@ -74,7 +74,7 @@ Im Abschnitt [Ressourcen durchsuchen](#browse-resources) wird gezeigt, wie Sie R
 
 Navigieren Sie zur [Protokoll Netzwerkaktivität][DevtoolsNetworkLogActivity].  
 
-:::image type="complex" source="../media/resources-network-resources.msft.png" alt-text="Dialogfeld ' Datei öffnen '" lightbox="../media/resources-network-resources.msft.png":::
+:::image type="complex" source="../media/resources-network-resources.msft.png" alt-text="Seitenressourcen im Netzwerkprotokoll" lightbox="../media/resources-network-resources.msft.png":::
    Seitenressourcen im **Netzwerk** Protokoll  
 :::image-end:::  
 
@@ -85,7 +85,7 @@ So zeigen Sie die Ressourcen einer Seite an, die nach Verzeichnis geordnet ist:
 1.  Klicken Sie auf die Registerkarte **Quellen** , um das **Quellen** Panel zu öffnen.  
 1.  Klicken Sie auf das **Seiten** Register, um die Ressourcen der Seite anzuzeigen.  Der **Seiten** Bereich wird geöffnet.  
     
-    :::image type="complex" source="../media/resources-sources-page-empty.msft.png" alt-text="Dialogfeld ' Datei öffnen '" lightbox="../media/resources-sources-page-empty.msft.png":::
+    :::image type="complex" source="../media/resources-sources-page-empty.msft.png" alt-text="Seitenbereich" lightbox="../media/resources-sources-page-empty.msft.png":::
        **Seiten** Bereich  
     :::image-end:::  
     
@@ -101,7 +101,7 @@ So zeigen Sie die Ressourcen einer Seite an, die nach Verzeichnis geordnet ist:
     
 1.  Klicken Sie auf eine Ressource, um Sie im **Editor**anzuzeigen.  
     
-    :::image type="complex" source="../media/resources-sources-page-resource.msft.png" alt-text="Dialogfeld ' Datei öffnen '" lightbox="../media/resources-sources-page-resource.msft.png":::
+    :::image type="complex" source="../media/resources-sources-page-resource.msft.png" alt-text="Anzeigen einer Datei im Editor" lightbox="../media/resources-sources-page-resource.msft.png":::
        Anzeigen einer Datei im **Editor**  
     :::image-end:::  
     
@@ -112,13 +112,13 @@ Standardmäßig werden im **Seiten** Bereich Ressourcen nach Verzeichnis gruppie
 1.  Öffnen des **Seiten** Bereichs  Navigieren Sie nach [Verzeichnis durchsuchen](#browse-by-directory).  
 1.  Wählen Sie **Weitere Optionen** aus `...` , und deaktivieren Sie " **Gruppieren nach"**.  
     
-    :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text="Dialogfeld ' Datei öffnen '" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
+    :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text="Die Option "Gruppieren nach"" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
        Die Option **"Gruppieren nach"**  
     :::image-end:::  
     
     Ressourcen sind nach Dateityp geordnet.  Innerhalb der einzelnen Dateitypen werden die Ressourcen alphabetisch geordnet.  
     
-    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="Dialogfeld ' Datei öffnen '" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
+    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="Seitenbereich nach Deaktivierung des Ordners "Gruppieren nach"" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
        **Seiten** Bereich nach Deaktivierung des **Ordners "Gruppieren nach"**  
     :::image-end:::  
     
@@ -128,20 +128,20 @@ So gruppieren Sie Ressourcen basierend auf Ihrem Dateityp zusammen:
 
 1.  Klicken Sie auf die Registerkarte **Anwendung** .  Das **Anwendungs** Fenster wird geöffnet.  Standardmäßig wird der Bereich **Manifest** in der Regel zuerst geöffnet.  
     
-    :::image type="complex" source="../media/resources-application-mainfest-airhorner.msft.png" alt-text="Dialogfeld ' Datei öffnen '" lightbox="../media/resources-application-mainfest-airhorner.msft.png":::
+    :::image type="complex" source="../media/resources-application-mainfest-airhorner.msft.png" alt-text="Anwendungs Panel" lightbox="../media/resources-application-mainfest-airhorner.msft.png":::
        **Anwendungs** Panel  
     :::image-end:::  
     
 1.  Scrollen Sie nach unten zum Bereich **Frames** .  
     
-    :::image type="complex" source="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png" alt-text="Dialogfeld ' Datei öffnen '" lightbox="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png":::
+    :::image type="complex" source="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png" alt-text="Der Bereich "Frames"" lightbox="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png":::
        Der Bereich " **Frames** "  
     :::image-end:::  
     
 1.  Erweitern Sie die Abschnitte, an denen Sie interessiert sind.  
 1.  Klicken Sie auf eine Ressource, um Sie anzuzeigen.  
     
-    :::image type="complex" source="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png" alt-text="Dialogfeld ' Datei öffnen '" lightbox="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png":::
+    :::image type="complex" source="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png" alt-text="Anzeigen einer Ressource im Anwendungs Panel" lightbox="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png":::
        Anzeigen einer Ressource im **Anwendungs** Panel  
     :::image-end:::  
     
@@ -149,7 +149,7 @@ So gruppieren Sie Ressourcen basierend auf Ihrem Dateityp zusammen:
 
 Navigieren Sie zu [Filter nach Ressourcentyp][DevtoolsNetworkFilterByResourceType].  
 
-:::image type="complex" source="../media/resources-network-resources-filter-css.msft.png" alt-text="Dialogfeld ' Datei öffnen '" lightbox="../media/resources-network-resources-filter-css.msft.png":::
+:::image type="complex" source="../media/resources-network-resources-filter-css.msft.png" alt-text="Filtern nach CSS im Netzwerkprotokoll" lightbox="../media/resources-network-resources-filter-css.msft.png":::
    Filtern nach CSS im **Netzwerk** Protokoll  
 :::image-end:::  
 
@@ -159,7 +159,7 @@ Navigieren Sie zu [Filter nach Ressourcentyp][DevtoolsNetworkFilterByResourceTyp
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chrom)-Entwicklertools | Microsoft docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chrom)-Entwicklertools | Microsoft docs"  
 [DevtoolsNetworkFilterByResourceType]: ../network/index.md#filter-by-resource-type "Nach Ressourcentyp Filtern – Überprüfen der Netzwerkaktivität in Microsoft Edge devtools | Microsoft docs"  
 [DevtoolsNetworkInspectDetailsResource]: ../network/index.md#inspect-the-details-of-the-resource "Überprüfen Sie die Details der Ressource – Überprüfen der Netzwerkaktivität in Microsoft Edge devtools | Microsoft docs"  
 [DevtoolsNetworkLogActivity]: ../network/index.md#log-network-activity "Protokollieren von Netzwerkaktivitäten – Überprüfen der Netzwerkaktivität in Microsoft Edge devtools | Microsoft docs"  
@@ -168,10 +168,10 @@ Navigieren Sie zu [Filter nach Ressourcentyp][DevtoolsNetworkFilterByResourceTyp
 [MDNLearnWebDevelopment]: https://developer.mozilla.org/docs/Learn "Web-Entwicklung kennenlernen | MDN"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
+> Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
 > Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/resources/index) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

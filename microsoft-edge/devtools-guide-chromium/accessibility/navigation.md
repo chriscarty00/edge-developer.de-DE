@@ -3,16 +3,16 @@ description: Leitfaden zur Navigation in Microsoft Edge devtools mit Hilfstechno
 title: Navigieren in Microsoft Edge devtools mit Hilfstechnologien
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: f4ec63a0d432925b7db99ce695db66dd61f8bcf1
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
+ms.openlocfilehash: d72c856e9136291e9255b3784aad7c6cd99f92fc
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125293"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230810"
 ---
 <!-- Copyright Rob Dodson 
 
@@ -30,7 +30,7 @@ ms.locfileid: "11125293"
 
 # Navigieren in Microsoft Edge devtools mit Hilfstechnologien  
 
-Der folgende Artikel soll Benutzern helfen, die in erster Linie auf Hilfstechnologien wie Bildschirmsprachausgaben zugreifen und [Microsoft Edge devtools][MicrosoftEdgeDevtoolsMain]verwenden.  [Microsoft Edge devtools][MicrosoftEdgeDevtoolsMain] ist eine Suite von Webentwickler Tools, die in den Microsoft Edge-Browser integriert sind.  Wenn Sie nach devtools-Features suchen, die sich auf die Verbesserung der Barrierefreiheit einer Webseite beziehen, finden Sie Informationen unter [Barrierefreiheits Referenz][DevtoolsAccessibilityReference].  
+Der folgende Artikel soll Benutzern helfen, die in erster Linie auf Hilfstechnologien wie Bildschirmsprachausgaben zugreifen und [Microsoft Edge devtools][MicrosoftEdgeDevtoolsMain]verwenden.  [Microsoft Edge devtools][MicrosoftEdgeDevtoolsMain] ist eine Suite von Webentwickler Tools, die in den Microsoft Edge-Browser integriert sind.  Wenn Sie nach devtools-Features suchen, die sich auf die Verbesserung der Barrierefreiheit einer Webseite beziehen, navigieren Sie zu [Barrierefreiheits Referenz][DevtoolsAccessibilityReference].  
 
 Die Barrierefreiheit von devtools ist eine Work-in-Progress-Funktion.  Einige Panels und Registerkarten funktionieren mit Hilfstechnologien besser als andere.  Dieser Leitfaden führt Sie durch die Panels, die am häufigsten zugänglich sind, und hebt spezifische Probleme hervor, auf die Sie auf dem Weg stoßen können.  
 
@@ -44,7 +44,7 @@ Zum Beispiel:
 *   Im [Konsolenfeld][DevtoolsConsoleIndex] können Sie JavaScript-Protokolle und Live-Bearbeitungs Objekte lesen.  
 
 Im Inhaltsbereich jedes Bereichs gibt es eine Reihe unterschiedlicher Tools, die häufig als Tabstopps oder Bereiche in der Dokumentation bezeichnet werden.  
-Beispielsweise enthält das Panel **Elemente** weitere Registerkarten, um Ereignislistener, die Barrierefreiheits Struktur und vieles mehr zu überprüfen.  Die Unterscheidung zwischen Registerkarten und Fensterbereichen ist etwas willkürlich.  Der einzige Grund, warum Sie möglicherweise einen oder den anderen Ausdruck sehen, besteht darin, die Konsistenz mit der restlichen offiziellen devtools-Dokumentation beizubehalten.  
+Beispielsweise enthält das Panel **Elemente** weitere Registerkarten, um Ereignislistener, die Barrierefreiheits Struktur und vieles mehr zu überprüfen.  Die Unterscheidung zwischen Registerkarten und Fensterbereichen ist etwas willkürlich.  Der einzige Grund, warum Sie einen oder den anderen Ausdruck überprüfen können, besteht darin, die Konsistenz mit der restlichen offiziellen devtools-Dokumentation zu gewährleisten.  
 
 ## Tastenkombinationen  
 
@@ -244,17 +244,17 @@ Verwenden Sie zum Ausführen einer neuen Überwachung `Shift` + `Tab` den Berich
 
 [DevtoolsAccessibilityReference]: ./reference.md "Barrierefreiheits Referenz | Microsoft docs"  
 [DevtoolsAccessibilityReferencePane]: reference.md#the-accessibility-pane "Der Bereich Barrierefreiheit – Referenz zu Barrierefreiheit | Microsoft docs"  
-[MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium.md "Microsoft Edge (Chrom)-Entwickler Tools | Microsoft docs"  
+[MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chrom)-Entwickler Tools | Microsoft docs"  
 [DevtoolsCommandMenuIndex]: ../command-menu/index.md "Ausführen von Befehlen mit dem Befehlsmenü von Microsoft Edge devtools | Microsoft docs"  
-[DevtoolsConsoleIndex]: ../console/index.md "Übersicht über die Konsole | Microsoft docs"  
+[DevtoolsConsoleIndex]: ../console/index.md "Übersicht über die Konsole | Microsoft Docs"  
 [DevtoolsCssIndex]: ../css/index.md "Erste Schritte mit dem anzeigen und Ändern von CSS | Microsoft docs"  
 <!--[DevtoolsCssReferenceViewAppliedElement]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "CSS Reference - View only the CSS that is actually applied to an element | Microsoft Docs"  -->  
 <!--[DevtoolsDomIndex]: ../dom/index.md "Get started with viewing and changing the DOM | Microsoft Docs"  -->  
 [DevtoolsDomIndexViewDomNodes]: .. /DOM/Index.MD # View-Dom-Nodes "DOM-Knoten anzeigen – erste Schritte beim Anzeigen und Ändern des DOM | Microsoft docs "  
 [DevtoolsDomIndexNavigateDomTreeKeyboard]: .. /DOM/Index.MD # Navigate-the-DOM-Tree-with-a-Keyboard "Navigieren in der DOM-Struktur mit einer Tastatur – erste Schritte beim Anzeigen und Ändern des DOM | Microsoft docs "  
-[DevtoolsOpen]: .. /Open.MD "Microsoft Edge-devtools öffnen | Microsoft docs "  
-[DevtoolsShortcuts]: .. /Shortcuts.MD "Microsoft Edge devtools-Tastenkombinationen | Microsoft docs "  
-[DevtoolsShortcutsStylesPaneKeyboard]: .. /Shortcuts.MD # Formatvorlagen-Bereich-Tastenkombinationen "Formatvorlagenbereich – Tastenkombinationen für Microsoft Edge devtools-Tastenkombinationen | Microsoft docs "  
+[DevtoolsOpen]: .. /Open/Index.MD "Öffnen von Microsoft Edge devtools | Microsoft docs "  
+[DevtoolsShortcuts]: .. /Shortcuts/Index.MD "Microsoft Edge devtools-Tastenkombinationen | Microsoft docs "  
+[DevtoolsShortcutsStylesPaneKeyboard]: .. /Shortcuts/Index.MD # Formatvorlagen-Bereich-Tastenkombinationen "Formatvorlagenbereich – Tastenkombinationen für Microsoft Edge devtools-Tastenkombinationen | Microsoft docs "  
 
 [ChromiumIssues868480]: https://bugs.chromium.org/p/chromium/issues/detail?id=868480 "Problem 868480 – verfügbar machen von Aria-Strukturen als Tabellen unter Mac-Barrierefreiheit"  
 
@@ -269,10 +269,10 @@ Verwenden Sie zum Ausführen einer neuen Überwachung `Shift` + `Tab` den Berich
 [W3CWaiAriaTree]: https://www.w3.org/TR/wai-aria-1.1/#tree "Struktur (Rolle) – barrierefreie Rich-Internet-Anwendungen (WAI-ARIA) 1,1 | W3C"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
+> Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
 > Die ursprüngliche Seite wird [hier](https://developers.google.com/web/tools/chrome-devtools/accessibility/navigation) gefunden und von [Rob Dodson][RobDodson] (Mitwirkender, Google webfundamentals \) erstellt.  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

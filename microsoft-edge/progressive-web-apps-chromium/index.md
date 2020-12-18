@@ -3,19 +3,19 @@ description: Progressive Web-Apps (Chrom) werden nativ unter Windows 10 ausgefü
 title: Progressive Web-Apps unter Windows
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/01/2020
+ms.date: 12/17/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: Progressive Web-Apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft Store
-ms.openlocfilehash: a9fa08a9c84ee5da8eab3c9c3edeea34439b6557
-ms.sourcegitcommit: be76feed0d616a96c77ea2748a9f0d6c0c06284b
+ms.openlocfilehash: a13f39dc3b3e0d47ad07b0e447556dc14093e71b
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "11103938"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11231216"
 ---
-# Progressive Web-Apps unter Windows  
+# Übersicht über Progressive Web-Apps unter Windows  
 
 [Progressive Web-Apps][MDNApps] \ (PWAs \) bieten Zugriff auf Open Web-Technologien für die plattformübergreifende Interoperabilität und bieten ihren Benutzern eine systemeigene, App-ähnliche Benutzeroberfläche, die auf Ihre Geräte zugeschnitten ist.  PWAs sind Websites, die [schrittweise verbessert][AListApartUnderstandingProgressiveEnhancement] werden, um wie Native apps auf unterstützenden Plattformen zu funktionieren.  Die Eigenschaften einer PWA vereinen das Beste aus Web- und nativen Apps.  
 
@@ -90,7 +90,7 @@ Desktop-PWAs werden auf allen Plattformen unterstützt, die Microsoft Edge \ (Ch
     
 *   Anwendungen können auch über das Menü **Einstellungen**-  >  **apps** installiert, ausgeführt und verwaltet werden.  
     
-    :::image type="complex" source="./media/app_menus.png" alt-text="Installieren des Anwendungs Flyouts und-Symbols" lightbox="./media/app_menus.png":::
+    :::image type="complex" source="./media/app_menus.png" alt-text="Menüelemente des Programms unter "Einstellungen"" lightbox="./media/app_menus.png":::
        Menüelemente des Programms unter "Einstellungen"  
     :::image-end:::  
     
@@ -100,7 +100,7 @@ Desktop-PWAs werden auf allen Plattformen unterstützt, die Microsoft Edge \ (Ch
 *   Vollzugriff auf [Microsoft Edge devtools][DevtoolsProgressiveWebApps] zum Debuggen Ihrer APP  
     
 > [!IMPORTANT]
-> Wenn Sie PWAs speziell für Windows 10 anpassen möchten, die WinRT-API-Anforderungen mithilfe von JavaScript erstellen, navigieren Sie zu [der Dokumentation, die für die EdgeHTML PWA-Features spezifisch][PwaEdgehtmlIndex]ist.  Erfahren Sie mehr über das Testen ihrer PWA unter Windows 10 und deren Verteilung im Microsoft Store.  
+> Um PWAs speziell für Windows 10 anzupassen, die WinRT-API-Anforderungen mit JavaScript erstellen, navigieren Sie zu [spezifische Dokumentation zu den EdgeHTML PWA-Features] [PwaEdgehtmlIndex].  Erfahren Sie mehr über das Testen ihrer PWA unter Windows 10 und deren Verteilung im Microsoft Store.  
 
 > [!NOTE]
 > Weitere Informationen zu PWA-Vorteilen, bevorstehenden Features und kurzen Demos finden Sie unter [Erstellen von 2020-PWA-Sitzungen][BuildVideo]. 
@@ -157,7 +157,7 @@ Um eine tolle PWA zu sein, muss Ihre APP auch die folgenden Voraussetzungen erf�
       *   [Medienabfragen][MDNMediaQueries]  
       *   [reaktionsfähige Bilder][MDNResponsiveImages]  
       
-      Verwendet [Geräte Emulations Tools][DevToolsGuide|::ref1::|] aus dem Browser, um lokal zu testen oder eine [Remote Debugsitzung][DevToolsProtocolClientsEdgeDevToolsPreview] zu erstellen, die direkt auf einem Zielgerät getestet wird.
+      Verwendet [Geräte Emulations Tools][DevToolsGuideDeviceModeTestingOtherBrowsers] aus dem Browser, um lokal zu testen oder eine Remote Debugsitzung für [Windows][DevtoolsRemoteDebuggingWindows] oder [Android][DevtoolsRemoteDebuggingIndex] zu erstellen, um direkt auf einem Zielgerät zu testen.
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -186,7 +186,7 @@ Um eine tolle PWA zu sein, muss Ihre APP auch die folgenden Voraussetzungen erf�
 :::row-end:::  
 
 > [!NOTE]
-> Wenn Sie Ihre PWA in eine [Microsoft Store][MicrosoftDeveloperStore] -Anwendung umwandeln möchten, navigieren Sie [im Microsoft Store zu Progressive Web Apps (EdgeHTML)][PwaEdgehtmlMicrosoftStore].  
+> Wenn Sie Ihre PWA in eine [Microsoft Store][MicrosoftDeveloperStore] -Anwendung umwandeln möchten, navigieren Sie zu [Progressive Web Apps (EdgeHTML) im Microsoft Store] [PwaEdgehtmlMicrosoftStore].  
   
 ## Weitere Informationen  
 
@@ -202,22 +202,23 @@ Um eine tolle PWA zu sein, muss Ihre APP auch die folgenden Voraussetzungen erf�
     
 <!-- links -->  
 
-[DevToolsProtocolClientsEdgeDevToolsPreview]: ../devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview "Microsoft Edge DevTools-Vorschau – DevTools-Protokoll-Clients"  
-[DevToolsGuideEmulation]: ../devtools-guide/emulation.md "Emulation"  
-[DevtoolsProgressiveWebApps]: ../devtools-guide-chromium/progressive-web-apps.md "Debuggen von progressiven Web-Apps"  
-[DevGuideWhatsNewEdgeHtml17]: ../dev-guide/whats-new/edgehtml-17.md "Neuerungen in EdgeHTML 17"  
-[DevGuideWhatsNewEdgeHtml14]: ../dev-guide/whats-new/edgehtml-14.md "Neuerungen in EdgeHTML 14"  
-[PwaEdgehtmlIndex]: ../progressive-web-apps-edgehtml/index.md "Progressive Web-Apps (EdgeHTML) unter Windows"  
-[PwaEdgehtmlMicrosoftStore]: ../progressive-web-apps-edgehtml/microsoft-store.md "Progressive Web-Apps im Microsoft Store"
-<!--PwaEdgehtmlMicrosoftStoreCriteriaAutomaticSubmission]: ../progressive-web-apps-edgehtml/microsoft-store.md#criteria-for-automatic-submission "Criteria for automatic submission - Progressive Web Apps in the Microsoft Store"  -->  
+[DevtoolsRemoteDebuggingIndex]: ../devtools-guide-chromium/remote-debugging/index.md "Erste Schritte mit dem Remotedebuggen von Android-Geräten | Microsoft docs"  
+[DevtoolsRemoteDebuggingWindows]: ../devtools-guide-chromium/remote-debugging/windows.md "Erste Schritte mit dem Remote Debuggen von Windows 10-Geräten | Microsoft docs"  
+[DevToolsGuideDeviceModeTestingOtherBrowsers]: ../devtools-guide-chromium/device-mode/testing-other-browsers.md "Emulieren und Testen anderer Browser | Microsoft docs"  
+[DevtoolsProgressiveWebApps]: ../devtools-guide-chromium/progressive-web-apps/index.md "Debuggen von progressiven Web-Apps | Microsoft docs"  
+<!--[DevGuideWhatsNewEdgeHtml17]: ../dev-guide/whats-new/edgehtml-17.md "What's new in EdgeHTML 17 | Microsoft Docs"  -->  
+<!--[DevGuideWhatsNewEdgeHtml14]: ../dev-guide/whats-new/edgehtml-14.md "What's New in EdgeHTML 14 | Microsoft Docs"  -->  
+[PwaEdgehtmlIndex]: .. /edgehtml/Progressive-Web-Apps/Index.MD "Progressive Web-Apps (edgehtml) unter Windows | Microsoft docs "  
+[PwaEdgehtmlMicrosoftStore]: .. /edgehtml/Progressive-Web-Apps/Microsoft-Store.MD "Progressive Web-Apps im Microsoft Store | Microsoft docs "
+<!--PwaEdgehtmlMicrosoftStoreCriteriaAutomaticSubmission]: ../progressive-web-apps/microsoft-store.md#criteria-for-automatic-submission "Criteria for automatic submission - Progressive Web Apps in the Microsoft Store"  -->  
 
-[WindowsUWPControlsPatternTilesNotificationsWns]: /windows/uwp/controls-and-patterns/tiles-and-notifications-windows-push-notification-services--wns--overview.md "Windows-Push-Benachrichtigungsdienste \ (WNS \) – Übersicht"  
-[WindowsUWPDesignDevicesDesigningTv]: /windows/uwp/design/devices/designing-for-tv.md "Entwerfen für Xbox und Fernsehgeräte"  
-[WindowsUWPDesignDevicesIndex]: /windows/uwp/design/devices/index.md "Überlegungen zur Benutzeroberfläche für UWP-Geräte"  
-[WindowsUWPGetStartedGuide]: /windows/uwp/get-started/universal-application-platform-guide.md "Was ist eine APP für die universelle Windows-Plattform (UWP)?"  
-[WindowsUWPLaunchResumeBackgroundTasks]: /windows/uwp/launch-resume/support-your-app-with-background-tasks.md "Unterstützen Ihrer APP mit Hintergrundaufgaben"  
-[WindowsUWPPublishIndex]: /windows/uwp/publish/index.md "Veröffentlichen von Windows-apps und-spielen"  
-[WindowsUWPPublishDeveloperAccount]: /windows/uwp/publish/opening-a-developer-account.md "Öffnen eines entwicklerkontos"  
+[WindowsUWPControlsPatternTilesNotificationsWns]: /windows/uwp/controls-and-patterns/tiles-and-notifications-windows-push-notification-services--wns--overview.md "Übersicht über Windows Push Notification Services (WNS) | Microsoft docs"  
+[WindowsUWPDesignDevicesDesigningTv]: /windows/uwp/design/devices/designing-for-tv.md "Entwerfen für Xbox und TV | Microsoft docs"  
+[WindowsUWPDesignDevicesIndex]: /windows/uwp/design/devices/index.md "Überlegungen zur Benutzeroberfläche für UWP-Geräte | Microsoft docs"  
+[WindowsUWPGetStartedGuide]: /windows/uwp/get-started/universal-application-platform-guide.md "Was ist eine APP für die universelle Windows-Plattform (UWP)? | Microsoft docs"  
+[WindowsUWPLaunchResumeBackgroundTasks]: /windows/uwp/launch-resume/support-your-app-with-background-tasks.md "Unterstützen Ihrer APP mit Hintergrundaufgaben | Microsoft docs"  
+[WindowsUWPPublishIndex]: /windows/uwp/publish/index.md "Veröffentlichen von Windows-apps und-spielen | Microsoft docs"  
+[WindowsUWPPublishDeveloperAccount]: /windows/uwp/publish/opening-a-developer-account.md "Öffnen eines entwicklerkontos | Microsoft docs"  
 
 [WindowsBlogsWelcomingPWAsEdgeWindows]: https://blogs.windows.com/msedgedev/2018/02/06/welcoming-progressive-web-apps-edge-windows-10/#56z7mJwKsykfbR4I.97 "Willkommene Progressive Web-Apps für Microsoft Edge und Windows 10 – Windows-Blogs"  
 [MicrosoftDeveloperEdgePlatformStatusBackgroundSync]: https://developer.microsoft.com/microsoft-edge/platform/status/backgroundsyncapi "Hintergrund Synchronisierungs-API – Status der Microsoft Edge-Plattform"  

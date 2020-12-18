@@ -1,21 +1,22 @@
 ---
+description: Emulieren von Sehstörungen in Microsoft Edge devtools
 title: Emulieren von Sehstörungen in Microsoft Edge devtools (Farbenblindheit)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/29/2020
+ms.date: 12/17/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: b70499fa189d162fa7589966bab183f4c12f68f7
-ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
+ms.openlocfilehash: 5343d32992880f8c60501a86db6cb3a92f417331
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "10843921"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230824"
 ---
 # Emulieren von Sehstörungen
 
-Um die Anforderungen Ihrer Benutzer mit [farbsehstörungen][ColorblindawarenessMain] zu erfüllen \ (Farbenblindheit \), können Sie mit [Microsoft Edge devtools][MicrosoftEdgeDevTools] bestimmte farbsehstörungen simulieren.  Das Tool zum **emulieren von Sehstörungen** simuliert die folgenden Kategorien.  
+Um die Anforderungen Ihrer Benutzer mit [farbsehstörungen][ColorblindawarenessMain] zu erfüllen \ (Farbenblindheit \), können Sie mit [Microsoft Edge devtools][DevtoolsIndex] bestimmte farbsehstörungen simulieren.  Das Tool zum **emulieren von Sehstörungen** simuliert die folgenden Kategorien.  
 
 | Farbsehstörungen | Details |  
 |:--- |:--- |  
@@ -27,9 +28,9 @@ Um die Anforderungen Ihrer Benutzer mit [farbsehstörungen][ColorblindawarenessM
 
 ## Navigieren zu den Render-Tools  
 
-Um einen Sehstörungen zu simulieren, der für Ihr Web-Produkt angewendet wird, öffnen Sie die [Rendering-Tools][RenderingTools].  
+Um einen Sehstörungen zu simulieren, der für Ihr Web-Produkt angewendet wird, öffnen Sie die [Rendering-Tools][DevtoolsRenderingToolsIndex].  
 
-1.  Öffnen der Rendering-Tools durch Auswählen des `...` Menüelements in der Symbolleiste  
+1.  So öffnen Sie die Rendering-Tools, indem Sie das `...` Menüelement in der Symbolleiste auswählen  
 1.  Auswählen `More tools`  
 1.  Auswählen `Rendering`  
     
@@ -41,13 +42,13 @@ Das **Rendering** -Menü wird im Einzug angezeigt.
 
 1.  Scrollen Sie nach unten zum `Emulate vision deficiencies` Menüelement, und wählen Sie das Dropdownmenü aus, um die Optionen anzuzeigen.  
     
-    :::image type="complex" source="../media/accessibility-emulate-vision-menu.msft.png" alt-text="Öffnen der Rendering-Tools" lightbox="../media/accessibility-emulate-vision-menu.msft.png":::
+    :::image type="complex" source="../media/accessibility-emulate-vision-menu.msft.png" alt-text="Das Menü "Sehstörungen emulieren" auf der Rendering-Schublade" lightbox="../media/accessibility-emulate-vision-menu.msft.png":::
        Das Menü " **Sehstörungen emulieren** " auf der **Rendering** -Schublade  
     :::image-end:::  
     
 1.  Wählen Sie eine Option aus.  
     
-    :::image type="complex" source="../media/accessibility-emulate-vision-menu-options.msft.png" alt-text="Öffnen der Rendering-Tools" lightbox="../media/accessibility-emulate-vision-menu-options.msft.png":::
+    :::image type="complex" source="../media/accessibility-emulate-vision-menu-options.msft.png" alt-text="Menü Optionen für das Emulieren von Sehstörungen" lightbox="../media/accessibility-emulate-vision-menu-options.msft.png":::
        Menü Optionen für das **emulieren von Sehstörungen**  
     :::image-end:::  
     
@@ -55,12 +56,12 @@ Das **Rendering** -Menü wird im Einzug angezeigt.
     
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/accessibility-blurred-vision-emulation.msft.png" alt-text="Öffnen der Rendering-Tools" lightbox="../media/accessibility-blurred-vision-emulation.msft.png":::
+          :::image type="complex" source="../media/accessibility-blurred-vision-emulation.msft.png" alt-text="Anzeige mit * * verschwommener Sehkraft * *-Simulation" lightbox="../media/accessibility-blurred-vision-emulation.msft.png":::
              Anzeige mithilfe einer **verschwommenen Bild** Simulation  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/accessibility-achromatopsia-emulation.msft.png" alt-text="Öffnen der Rendering-Tools" lightbox="../media/accessibility-achromatopsia-emulation.msft.png":::
+          :::image type="complex" source="../media/accessibility-achromatopsia-emulation.msft.png" alt-text="Anzeige mit * * Achromatopsie * *-Simulation" lightbox="../media/accessibility-achromatopsia-emulation.msft.png":::
              Anzeigen mithilfe der **Achromatopsie** -Simulation :::image-end:::  
        :::column-end:::
     :::row-end:::
@@ -69,15 +70,15 @@ Das **Rendering** -Menü wird im Einzug angezeigt.
 
 Sie können auch das **Befehlsmenü** verwenden, um auf die verschiedenen Simulationen zuzugreifen.  
 
-1.  Drücken Sie `Control` + `Shift` + `P` \ (Windows \) oder `Command` + `Shift` + `P` \ (macOS \), um das **Befehlsmenü**zu öffnen.  
+1.  Wählen Sie `Control` + `Shift` + `P` \ (Windows \) oder `Command` + `Shift` + `P` \ (macOS \) aus, um das **Befehlsmenü**zu öffnen.  
     
-    :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="Öffnen der Rendering-Tools" lightbox="../media/css-console-command-menu-rendering.msft.png":::
+    :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="Das Befehlsmenü" lightbox="../media/css-console-command-menu-rendering.msft.png":::
        Das **Befehlsmenü**  
     :::image-end:::  
     
-1.  Geben Sie ein `emulate` , was Sie simulieren möchten, und drücken Sie `Enter` .  
+1.  Geben Sie ein `emulate` , was Sie simulieren und auswählen möchten `Enter` .  
     
-    :::image type="complex" source="../media/accessibility-emulation-command-menu-results.msft.png" alt-text="Öffnen der Rendering-Tools" lightbox="../media/accessibility-emulation-command-menu-results.msft.png":::
+    :::image type="complex" source="../media/accessibility-emulation-command-menu-results.msft.png" alt-text="Die verschiedenen Simulationsoptionen, die im Befehlsmenü zur Verfügung stehen" lightbox="../media/accessibility-emulation-command-menu-results.msft.png":::
        Die verschiedenen Simulationsoptionen, die im **Befehlsmenü** zur Verfügung stehen  
     :::image-end:::  
     
@@ -86,7 +87,10 @@ Sie können auch das **Befehlsmenü** verwenden, um auf die verschiedenen Simula
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chrom)-Entwickler Tools"  
+[DevtoolsIndex]: ../index.md "Microsoft Edge (Chrom)-Entwickler Tools | Microsoft docs"  
+[DevtoolsRenderingToolsIndex]: ../rendering-tools/index.md "Analysieren der Laufzeitleistung | Microsoft docs"  
+
 [ColorblindawarenessMain]: http://www.colourblindawareness.org "Die Organisation der farbenblinden Sensibilisierung"  
+
 [AmfcbMain]: https://www.amfcb.org "Die amerikanische Stiftung für das Farben Blind (AFCB)"  
-[RenderingTools]: /microsoft-edge/devtools-guide-chromium/rendering-tools "Microsoft Edge (Chrom)-Rendering-Tools"  
+

@@ -3,16 +3,16 @@ description: Dieser Leitfaden enthält eine Übersicht über die Grundlagen und 
 title: Erste Schritte mit Progressive Web-Apps (Chrom)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/01/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: Progressive Web-Apps, PWA, Edge, Windows, PWABuilder, Web-Manifest, Service Worker, Push
-ms.openlocfilehash: 065ced3afa8ecd4165325fd4f10a673d86c72fa7
-ms.sourcegitcommit: be76feed0d616a96c77ea2748a9f0d6c0c06284b
+ms.openlocfilehash: 7ad13f98f54c52891681d7591b21503c9d5825ff
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "11103924"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11231223"
 ---
 # Erste Schritte mit Progressive Web-Apps (Chrom)  
 
@@ -27,7 +27,7 @@ Das folgende Handbuch bietet Ihnen einen Überblick über die Grundlagen von PWA
 
 *   Verwenden Sie [Visual Studio-Code][VisualstudioCodeMain] zum Bearbeiten Ihres PWA-Quellcodes.  
 *   Verwenden Sie [Node.js][NodejsMain] als lokalen Webserver.  
-
+    
 ## Erstellen einer einfachen Web-App  
 
 Wenn Sie eine leere Web-App erstellen möchten, führen Sie die Schritte im [Knoten Express-App-Generator][ExpressjsApplicationGenerator]aus, und benennen Sie Ihre APP `MySamplePwa` .  
@@ -118,7 +118,7 @@ Dienstmitarbeiter sind Hintergrundaufgaben, die Netzwerkanforderungen aus Ihrer 
 *   Ausführen von Hintergrund Abruf Aufgaben  
 *   Badges-Symbole  
 *   und vieles mehr  
-
+    
 Dienstmitarbeiter werden in einer speziellen JavaScript-Datei definiert.  Weitere Informationen finden Sie unter [Verwenden von Dienst Mitarbeitern][MDNUsingServiceWorkers] und [Service Worker-API][MDNServiceWorkerApi].  
 
 Um einen Dienstmitarbeiter in Ihrem Projekt zu erstellen, verwenden Sie das **Cache-First-Netzwerkdienst-Worker-** Rezept aus dem [PWA-Generator][PwaBuilderServiceWorker].  
@@ -127,9 +127,8 @@ Um einen Dienstmitarbeiter in Ihrem Projekt zu erstellen, verwenden Sie das **Ca
     
     *   `pwabuilder-sw-register.js`  
     *   `pwabuilder-sw.js`  
-    
+        
 1.  Kopieren Sie die heruntergeladenen Dateien `public` in den Ordner in Ihrem Web App-Projekt.  
-    
 1.  Öffnen Sie in Visual Studio-Code `/public/index.html` den folgenden Codeausschnitt, und fügen Sie ihn in das `<head>` Tag ein.  
     
     ```html
@@ -147,26 +146,26 @@ Führen Sie die folgenden Schritte aus, um zu überprüfen, ob Ihre Dienstmitarb
     ```
     
 1.  Wählen Sie in Microsoft Edge aus, `F12` um den Microsoft Edge-devtools zu öffnen.  Wählen Sie **Anwendung**und dann **Servicemitarbeiter** aus, um die Servicemitarbeiter anzuzeigen.  Wenn der Dienstmitarbeiter nicht angezeigt wird, aktualisieren Sie die Seite.  
-     
-    :::image type="complex" source="./media/devtools-sw-overview.png" alt-text="Ausführen ihrer neuen PWA auf localhost" lightbox="./media/devtools-sw-overview.png":::
+    
+    :::image type="complex" source="./media/devtools-sw-overview.png" alt-text="Übersicht über den Microsoft Edge devtools Service Worker" lightbox="./media/devtools-sw-overview.png":::
        Übersicht über den Microsoft Edge devtools Service Worker
     :::image-end:::
     
 1.  Zeigen Sie den Service Worker-Cache an, indem Sie den **Cachespeicher** erweitern und **pwabuilder-precache**auswählen.  Alle vom Dienstmitarbeiter zwischengespeicherten Ressourcen sollten angezeigt werden.  Zu den vom Dienstmitarbeiter zwischengespeicherten Ressourcen gehören das App-Symbol, das App-Manifest, CSS-und JavaScript-Dateien.  
     
-    :::image type="complex" source="./media/devtools-cache.png" alt-text="Ausführen ihrer neuen PWA auf localhost" lightbox="./media/devtools-cache.png":::
+    :::image type="complex" source="./media/devtools-cache.png" alt-text="Service Worker-Cache in Microsoft Edge devtools" lightbox="./media/devtools-cache.png":::
        Service Worker-Cache in Microsoft Edge devtools (F12)
     :::image-end:::
     
 1.  Testen Sie Ihre PWA als offline-app.  Klicken Sie in Microsoft Edge devtools \ ( `F12` \) auf **Netzwerk** , und ändern Sie dann den **Online** Status in **Offline**.  
     
-    :::image type="complex" source="./media/devtools-offline.png" alt-text="Ausführen ihrer neuen PWA auf localhost" lightbox="./media/devtools-offline.png":::
+    :::image type="complex" source="./media/devtools-offline.png" alt-text="Festlegen der APP auf den Offlinemodus in Microsoft Edge devtools" lightbox="./media/devtools-offline.png":::
        Festlegen der APP auf den Offlinemodus in Microsoft Edge devtools
     :::image-end:::
     
 1.  Aktualisieren Sie Ihre APP, und es sollte den Offline Mechanismus anzeigen, um die Ressourcen ihrer App aus dem Cache zu bedienen.  
     
-    :::image type="complex" source="./media/vs-nodejs-express-index.png" alt-text="Ausführen ihrer neuen PWA auf localhost" lightbox="./media/vs-nodejs-express-index.png":::
+    :::image type="complex" source="./media/vs-nodejs-express-index.png" alt-text="PWA, die offline ausgeführt wird" lightbox="./media/vs-nodejs-express-index.png":::
        PWA, die offline ausgeführt wird
     :::image-end:::
     
@@ -285,23 +284,24 @@ Führen Sie die folgenden Schritte aus, um Push-Benachrichtigungen für Ihre PWA
 
 1.  Navigieren Sie zu ihrer PWA unter `http://localhost:3000` .  Wenn Ihr Dienstmitarbeiter ihre PWA-Benachrichtigung für Push-Benachrichtigungen aktiviert und versucht, Sie zu abonnieren, werden Sie von Microsoft Edge dazu aufgefordert, zulassen, dass Ihre PWA-Benachrichtigungen angezeigt werden.  Wählen Sie **zulassen**aus.  
     
-    :::image type="complex" source="./media/notification-permission.png" alt-text="Ausführen ihrer neuen PWA auf localhost" lightbox="./media/notification-permission.png":::
+    :::image type="complex" source="./media/notification-permission.png" alt-text="Dialogfeld ' Berechtigung ' zum Aktivieren von Benachrichtigungen" lightbox="./media/notification-permission.png":::
        Dialogfeld ' Berechtigung ' zum Aktivieren von Benachrichtigungen
     :::image-end:::
     
 1.  Simulieren Sie eine serverseitige Push-Benachrichtigung.  Wenn Ihre PWA `http://localhost:3000` in Ihrem Browser geöffnet ist, wählen Sie aus, `F12` um die devtools zu öffnen.  Wählen Sie **Application**  >  **Service Worker**  >  **Push** aus, um eine Test-Push-Benachrichtigung an Ihre PWA zu senden.  
+    
     :::row:::
        :::column span="":::
           Eine Push-Benachrichtigung sollte in der Nähe der Taskleiste angezeigt werden.  
           
-          :::image type="complex" source="./media/devtools-push.png" alt-text="Ausführen ihrer neuen PWA auf localhost" lightbox="./media/devtools-push.png":::
+          :::image type="complex" source="./media/devtools-push.png" alt-text="Pushen einer Benachrichtigung von devtools" lightbox="./media/devtools-push.png":::
              Pushen einer Benachrichtigung von devtools  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
           Wenn Sie keine Popupbenachrichtigung \ (oder aktivieren \) auswählen, wird das System nach einigen Sekunden automatisch geschlossen und in Ihrem Windows-Wartungs Center in die Warteschlange eingereiht.  
           
-          :::image type="complex" source="./media/windows-action-center.png" alt-text="Ausführen ihrer neuen PWA auf localhost" lightbox="./media/windows-action-center.png":::
+          :::image type="complex" source="./media/windows-action-center.png" alt-text="Benachrichtigungen im Windows-Wartungs Center" lightbox="./media/windows-action-center.png":::
              Benachrichtigungen im Windows-Wartungs Center :::image-end:::
        :::column-end:::
     :::row-end:::  
@@ -316,7 +316,7 @@ Die folgenden Schritte umfassen zusätzliche Aufgaben, mit denen Sie den Aufbau 
 *   Deep-Linking  
 *   [Browserübergreifende Tests][BrowserStackTestEdgeBrowser]  
 *   Implementieren von Validierungs-und Testmethoden wie [webhint][Webhint]  
-   
+    
 ## Weitere Informationen  
 
 *   [Progressive Web-Apps auf MDN Web docs][MDNProgressiveWebApps]  
@@ -338,7 +338,7 @@ Die folgenden Schritte umfassen zusätzliche Aufgaben, mit denen Sie den Aufbau 
 
 <!-- links -->  
 
-<!--[PwaEdgehtmlIndexRequirements]: ../progressive-web-apps-edgehtml/index.md#requirements "Requirements - Progressive Web Apps \(EdgeHTML\) on Windows | Microsoft Docs"  -->  
+<!--[PwaEdgehtmlIndexRequirements]: ../progressive-web-apps/index.md#requirements "Requirements - Progressive Web Apps \(EdgeHTML\) on Windows | Microsoft Docs"  -->  
 
 [VisualStudioNodejsTutorialPublishAzureAppService]: /azure/javascript/tutorial-vscode-azure-app-service-node-03 "Bereitstelleneiner Node.js-App für Azure mit Visual Studio-Code | Microsoft docs"  
 
@@ -347,7 +347,7 @@ Die folgenden Schritte umfassen zusätzliche Aufgaben, mit denen Sie den Aufbau 
 
 [WindowsBlogsWebNotificationsEdge]: https://blogs.windows.com/msedgedev/2016/05/16/web-notifications-microsoft-edge#UAbvU2ymUlHO8EUV.97 "Web-Benachrichtigungen in Microsoft Edge | Windows-Blogs"  
 
-[VisualstudioCodeMain]: https://code.visualstudio.com "Visual Studio-Code"  
+[VisualstudioCodeMain]: https://code.visualstudio.com "Visual Studio Code"  
 
 [AaronGustafsonNotebookPwaQa]: https://www.aaron-gustafson.com/notebook/pwa-qa "PWA Q&A"  
 

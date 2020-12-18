@@ -3,16 +3,16 @@ description: Hier erfahren Sie, wie Sie JavaScript in der Konsole ausführen.
 title: Erste Schritte mit der Ausführung von JavaScript in der Konsole
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 6537cb07b52ef6b8be4b1ea7d9420bf2307d3fd5
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
+ms.openlocfilehash: ecd1a2fffb311990b6e743e99d038f1f2a519ee4
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125244"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11231090"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -49,7 +49,7 @@ Dieses Lernprogramm wurde entwickelt, um die Demo zu öffnen und alle Workflows 
     
     *   [Beispiel für eine Konsolen-JavaScript][GlitchConsoleJavascriptExample]  
     
-    :::image type="complex" source="../media/console-javascript-example-console-empty.msft.png" alt-text="Der Konsole" lightbox="../media/console-javascript-example-console-empty.msft.png":::
+    :::image type="complex" source="../media/console-javascript-example-console-empty.msft.png" alt-text="Die JavaScript-Beispielseite der Konsole Links und DevTools auf der rechten Seite" lightbox="../media/console-javascript-example-console-empty.msft.png":::
        Die JavaScript-Beispielseite der Konsole Links und DevTools auf der rechten Seite  
     :::image-end:::  
     
@@ -60,7 +60,7 @@ Beim Erstellen oder Debuggen einer Seite ist es häufig hilfreich, Anweisungen i
 1.  Beachten Sie den Text in der Schaltfläche.  
 1.  Geben `document.getElementById('hello').textContent = 'Hello, Console!'` Sie die **Konsole** ein, und wählen Sie dann aus `Enter` , um den Ausdruck auszuwerten.  Beachten Sie, wie sich der Text in der Schaltfläche ändert.  
     
-    :::image type="complex" source="../media/console-javascript-example-console-change-button-text.msft.png" alt-text="Der Konsole" lightbox="../media/console-javascript-example-console-change-button-text.msft.png":::
+    :::image type="complex" source="../media/console-javascript-example-console-change-button-text.msft.png" alt-text="So sieht die Konsole nach der Auswertung des Ausdrucks aus" lightbox="../media/console-javascript-example-console-change-button-text.msft.png":::
        So sieht die **Konsole** nach der Auswertung des Ausdrucks aus  
     :::image-end:::  
     
@@ -68,7 +68,7 @@ Beim Erstellen oder Debuggen einer Seite ist es häufig hilfreich, Anweisungen i
     
 ## Ausführen von beliebigem JavaScript, das nicht mit der Seite verbunden ist  
 
-Manchmal möchten Sie einfach nur einen Code-Spielplatz, in dem Sie einige Codes testen oder neue JavaScript-Funktionen testen können, mit denen Sie nicht vertraut sind.  Die Konsole eignet sich hervorragend für Experimente dieser Art.  
+Manchmal möchten Sie einfach nur einen Code-Spielplatz, in dem Sie einige Codes testen oder neue JavaScript-Funktionen testen können, mit denen Sie nicht vertraut sind.  Die **Konsole** eignet sich hervorragend für Experimente dieser Art.  
 
 1.  Geben `5 + 15` Sie die Konsole ein, und wählen Sie aus `Enter` , um den Ausdruck auszuwerten. Die Konsole druckt das Ergebnis des Ausdrucks unter dem Code aus.  In der folgenden Abbildung sollte Ihre **Konsole** das Ergebnis anzeigen, nachdem der Ausdruck ausgewertet wurde.  
 
@@ -89,7 +89,7 @@ Manchmal möchten Sie einfach nur einen Code-Spielplatz, in dem Sie einige Codes
           ```  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/console-javascript-example-console-playground.msft.png" alt-text="Der Konsole" lightbox="../media/console-javascript-example-console-playground.msft.png":::
+          :::image type="complex" source="../media/console-javascript-example-console-playground.msft.png" alt-text="Die Konsole wird angezeigt, nachdem die Ausdrücke im Codeausschnitt ausgewertet wurden." lightbox="../media/console-javascript-example-console-playground.msft.png":::
              Die **Konsole** wird angezeigt, nachdem die Ausdrücke im Codeausschnitt ausgewertet wurden.  
           :::image-end:::  
        :::column-end:::
@@ -122,7 +122,7 @@ Weitere Informationen zu den Bequemlichkeits Funktionen finden Sie unter [API-Re
 [DevToolsConsoleLoggingMessages]: ./log.md "Erste Schritte mit der Protokollierung von Nachrichten in der Konsole | Microsoft docs"  
 [DevToolsConsoleReference]: ./reference.md#run-javascript "Konsolen Referenz | Microsoft docs"  
 [DevToolsConsoleUtilities]: ./utilities.md "API-Referenz für Konsolen Dienstprogramme | Microsoft docs"  
-[DevToolsJavascriptIndex]: ../javascript/index.md "Erste Schritte mit dem Debuggen von JavaScript in Microsoft Edge devtools"  
+[DevToolsJavascriptIndex]: ../javascript/index.md "Erste Schritte mit dem Debuggen von JavaScript in Microsoft Edge devtools | Microsoft docs"  
 
 [2alityExpressionsVersusStatements]: https://2ality.com/2012/09/expressions-vs-statements.html "Ausdrücke im Vergleich zu Anweisungen in JavaScript"  
 
@@ -133,10 +133,10 @@ Weitere Informationen zu den Bequemlichkeits Funktionen finden Sie unter [API-Re
 [WikiReadEvalPrintLoop]: https://en.wikipedia.org/wiki/Read–eval–print_loop "Lesen – eval – Print Loop – Wikipedia"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
+> Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
 > Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/console/javascript) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

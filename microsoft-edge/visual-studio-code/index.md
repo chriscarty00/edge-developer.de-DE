@@ -7,18 +7,18 @@ ms.date: 11/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools, vs-Code, Visual Studio-Code, Debugger, webhint
-ms.openlocfilehash: 0d13c6eb9411f89e3a681176ade0caf8d59d46d8
-ms.sourcegitcommit: 02c602379537ab3b9d0a355cea7fcf96fdbd8870
+ms.openlocfilehash: 1aa5b66043e87ebb0f1b848dcd60e2553b378f36
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "11182740"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230691"
 ---
-# Visual Studio Code  
+# Übersicht über Visual Studio-Code  
 
 [Visual Studio-Code][VisualStudioCodeDocs] ist ein leichter, aber leistungsstarker Quellcode-Editor.  [Visual Studio-Code][VisualStudioCodeDocs] steht für Windows, Linux und macOS zur Verfügung.  Es enthält integrierte Unterstützung für JavaScript, Maschinen-und Node.js, daher ist es ein hervorragendes Tool für Web-Entwickler, bevor Sie es anpassen.  Wenn Sie Sie noch nicht verwenden, laden Sie [Visual Studio-Code][VisualstudioCode]herunter.  
 
-## Extensions  
+## Erweiterungen  
 
 <!--todo: We want to put something like the tiles for extensions Visual Studio Code uses on this page https://code.visualstudio.com/Docs#top-extensions but I don't think this is a markdown page.  I think it's a web page.  I couldn't find anything in https://github.com/Microsoft/vscode-docs that looks like this page. In the meantime, here's what I've come up with: -->  
 

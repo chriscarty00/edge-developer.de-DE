@@ -3,17 +3,17 @@ description: Informationen zur Verwendung von JavaScript in komplexen Szenarien 
 title: Verwenden von JavaScript in WebView2-apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/15/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Host, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: 0fd4e33b7cfc16dcd19a850147b6efbca8922a8e
-ms.sourcegitcommit: 442de63da52d00c6dc27fa08ccdb736534127566
+ms.openlocfilehash: da04d1e24b95dfa7ea477bbd228fd46b64727ec3
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "11120069"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230936"
 ---
 # Verwenden von JavaScript in WebView für erweiterte Szenarien  
 
@@ -96,7 +96,7 @@ Erkunden Sie zunächst die aktuelle Kontextmenü Funktionalität.
 1.  Führen Sie das Projekt aus.  
 1.  Zeigen Sie auf das WebView2-Steuerelement, und öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \).  Das Kontextmenü zeigt die Standardauswahl an.  
     
-    :::image type="complex" source="./media/contextmenu.png" alt-text="Ergebnis beim Ziehen und Ablegen von contoso.txt" lightbox="./media/contextmenu.png":::
+    :::image type="complex" source="./media/contextmenu.png" alt-text="Das Kontextmenü mit den Standardoptionen" lightbox="./media/contextmenu.png":::
        Das Kontextmenü mit den Standardoptionen  
     :::image-end:::  
     
@@ -123,7 +123,7 @@ Fügen Sie nun Code hinzu, um die Kontextmenü Funktionalität des WebView2-Steu
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumMain]: ../../devtools-guide-chromium.md "Microsoft Edge (Chrom)-Entwickler Tools | Microsoft docs"  
+[DevtoolsGuideChromiumMain]: ../index.md "Microsoft Edge (Chrom)-Entwickler Tools | Microsoft docs"  
 
 
 [Webview2ApiReference]: ../webview2-api-reference.md "Microsoft Edge WebView2-API-Referenz | Microsoft docs"  

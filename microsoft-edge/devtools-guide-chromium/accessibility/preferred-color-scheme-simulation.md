@@ -1,33 +1,34 @@
 ---
+Description: Erzwingen des Microsoft Edge-devtools in den Vorschaumodus für Farbschemas
 title: Erzwingen des Microsoft Edge-devtools in den Vorschaumodus für Farbschemas (CSS bevorzugt Farbschema)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/18/2020
+ms.date: 12/17/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: a83284b676ad388114a4a0ddb7ebdf2203ebcb90
-ms.sourcegitcommit: d7fdb67df0fe73fa5ae96e5a69a847d07941d0a7
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
+ms.openlocfilehash: 29b0121a616a037fa11b61799efeffd201eb1821
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "10758082"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230796"
 ---
 # Simulation eines dunklen oder hellen Farbschemas  
 
 Betriebssysteme weisen eine Möglichkeit auf, jede Anwendung in dunklerer oder heller Farbe anzuzeigen.  Wenn Sie ein Webprodukt mit einem hellen Design in einem Betriebssystem im dunklen Modus haben, können Sie es mit einem Problem der Barrierefreiheit bei einigen Benutzern erreichen.  Im Internet können Sie die CSS-medienabfrage " [bevorzugt-Farbschema][MDNPrefersColorScheme] " verwenden, um festzustellen, ob Benutzer Ihr Produkt lieber in einem dunkleren oder helleren Farbschema sehen möchten.  Verwenden Sie [Microsoft Edge devtools][DevtoolsGuideChromiumMain] , um eine Änderung vom dunkel-in hellen Modus zu simulieren, ohne das gesamte Betriebssystem ändern zu müssen.  
 
 1.  Öffnen des **Befehlsmenüs**  
-    1.  Drücken Sie `Control` + `Shift` + `P` Windows oder `Command` + `Shift` + `P` Mac OS.  
+    1.  Wählen Sie `Control` + `Shift` + `P` unter Windows/Linux oder `Command` + `Shift` + `P` unter macOS aus.  
         
         :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="Das Befehlsmenü" lightbox="../media/css-console-command-menu-rendering.msft.png":::
            Das **Befehlsmenü**  
-        :::image-end:::   
+        :::image-end:::  
         
-1.  Typ `emulate color` , wählen Sie entweder **emulieren von CSS bevorzugt-Farbschema: dunkel** oder **emulieren Sie CSS bevorzugt-Farbschema: Licht**  , und drücken Sie dann `Enter` .  
+1.  `emulate color`Wählen Sie entweder **emulieren von CSS bevorzugt-Farbschema: dunkel** oder **emulieren Sie CSS bevorzugt-Farbschema: Licht** , und wählen Sie dann aus `Enter` .  
     
-    :::image type="complex" source="../media/css-elements-styles-qs-select-renderingmode-command-menu.msft.png" alt-text="Das Befehlsmenü" lightbox="../media/css-elements-styles-qs-select-renderingmode-command-menu.msft.png":::
-       Auswahl des Farbschemas im **Befehls** Menü  
+    :::image type="complex" source="../media/css-elements-styles-qs-select-renderingmode-command-menu.msft.png" alt-text="Option ' Farbschema ' im Menü ' Befehl '" lightbox="../media/css-elements-styles-qs-select-renderingmode-command-menu.msft.png":::
+       Option ' Farbschema ' im Menü ' **Befehl** '  
     :::image-end:::  
     
     > [!IMPORTANT]
@@ -35,7 +36,7 @@ Betriebssysteme weisen eine Möglichkeit auf, jede Anwendung in dunklerer oder h
 
 1.  Nachdem Sie ein Farbschema ausgewählt haben, laden Sie das aktuelle Dokument erneut, um den simulierten Modus anzuzeigen.  
     
-    :::image type="complex" source="../media/css-elements-styles-qs-simulated-light-mode.msft.png" alt-text="Das Befehlsmenü" lightbox="../media/css-elements-styles-qs-simulated-light-mode.msft.png":::
+    :::image type="complex" source="../media/css-elements-styles-qs-simulated-light-mode.msft.png" alt-text="Simulierter Licht Modus in Microsoft Edge devtools" lightbox="../media/css-elements-styles-qs-simulated-light-mode.msft.png":::
        Simulierter Licht Modus in Microsoft Edge devtools  
     :::image-end:::  
     
@@ -43,7 +44,7 @@ Betriebssysteme weisen eine Möglichkeit auf, jede Anwendung in dunklerer oder h
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumMain]: ../../devtools-guide-chromium.md "Microsoft Edge (Chrom)-Entwickler Tools Microsoft | Microsoft docs"  
+[DevtoolsGuideChromiumMain]: ../index.md "Microsoft Edge (Chrom)-Entwickler Tools | Microsoft docs"  
 [DevtoolsGuideChromiumCustomizeDarkTheme]: ../customize/dark-theme.md "Aktivieren des dunklen Designs in Microsoft Edge devtools | Microsoft docs"
 [DevtoolsGuideChromiumCssIndex]: ../css/index.md "Erste Schritte mit dem anzeigen und Ändern von CSS | Microsoft docs"  
 

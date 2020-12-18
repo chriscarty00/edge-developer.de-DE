@@ -3,16 +3,16 @@ description: Microsoft Edge (Chrom) und Visual Studio
 title: Visual Studio
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/20/2019
+ms.date: 12/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools, vs, Visual Studio, Debugger
-ms.openlocfilehash: 3fc2e2c3dc21689d8c378ccbe33e4dff813ea12f
-ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
+ms.openlocfilehash: f3796a040fe6c658211b4009445b5c179ab9b077
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10986192"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11231209"
 ---
 # Visual Studio
 
@@ -76,7 +76,7 @@ Der JavaScript-Debugger in Visual Studio wird den in **Counter.js**eingestellten
 > ##### Abbildung8
 > Visual Studio pausieren von JavaScript, das in Microsoft Edge Visual Studio ausgeführt wird, hält ![ JavaScript in Microsoft Edge auf](./media/hit-breakpoint.png)  
 
-Dieses Beispiel war nur eine kleine Demonstration der in Visual Studio verfügbaren Funktionen. Erfahren Sie mehr über alle Funktionen, die Sie in Visual Studio 2019 durchführen können, indem Sie [deren Dokumentation](https://docs.microsoft.com/visualstudio/windows/?view=vs-2019)lesen.
+Dieses Beispiel war nur eine kleine Demonstration der in Visual Studio verfügbaren Funktionen. Erfahren Sie mehr über alle Funktionen, die Sie in Visual Studio 2019 durchführen können, indem Sie [deren Dokumentation](/visualstudio/windows/?view=vs-2019&preserve-view=true)lesen.
 
 ## An Microsoft Edge anfügen
 Im vorherigen Workflow startet Visual Studio Microsoft Edge. Mit diesem Workflow können Sie den Visual Studio-Debugger an eine bereits ausgeführte Instanz von Microsoft Edge anfügen. 
