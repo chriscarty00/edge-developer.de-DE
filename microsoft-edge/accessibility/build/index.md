@@ -1,0 +1,245 @@
+---
+ms.assetid: 1b3ebc25-d023-4f23-bbba-dce066c20de8
+description: Gehen Sie durch, wie bewährte Methoden und barrierefreie Rich-Internet-Anwendungen (Aria) zusammen kommen können, um eine barrierefreie Website zu erstellen.
+title: Build | Zugänglichkeit
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 11/13/2020
+ms.topic: article
+ms.prod: microsoft-edge
+keywords: Barrierefreiheit, Barrierefreiheit für Entwickler, barrierefreie Websites, Edge, Web-Entwicklung, Aria, Developer, UIA, UI-Automatisierung
+ms.custom: seodec18
+ms.openlocfilehash: 40ab1acd0b5356ad4696cde0762f656708a67890
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11233727"
+---
+# <span data-ttu-id="368a2-104">Erstellen von barrierefreien Websites</span><span class="sxs-lookup"><span data-stu-id="368a2-104">Building Accessible Websites</span></span>
+
+<span data-ttu-id="368a2-105">Das Web ist mit dynamischen und komplexen Websites, Anwendungen und Benutzeroberflächen gefüllt, die mit einer Kombination aus HTML, CSS und JavaScript erstellt wurden.</span><span class="sxs-lookup"><span data-stu-id="368a2-105">The web is filled with dynamic and complex websites, applications, and user interfaces built using a combination of HTML, CSS, and JavaScript.</span></span>  <span data-ttu-id="368a2-106">Wenn Sie jedoch ohne Barrierefreiheit entworfen und erstellt wurden, sind diese komplexen Websites nur schwer von Personen zu verwenden, die auf [Hilfstechnologien](https://webaim.org/articles/motor/assistive) zum Durchsuchen des Webs angewiesen sind.</span><span class="sxs-lookup"><span data-stu-id="368a2-106">However, when designed and built without accessibility in mind, these complex websites are difficult to use by people who rely on [assistive technologies](https://webaim.org/articles/motor/assistive) to browse the web.</span></span> <span data-ttu-id="368a2-107">Das Erstellen von Websites, die für Menschen mit Behinderungen barrierefrei sind, erfordert semantische Informationen über die Benutzeroberfläche.</span><span class="sxs-lookup"><span data-stu-id="368a2-107">Building websites that are accessible to people with disabilities requires semantic information about the user interface.</span></span> <span data-ttu-id="368a2-108">Auf diese Weise können Hilfstechnologien wie Bildschirmsprachausgaben die erforderlichen Informationen vermitteln, um Personen mit einer Reihe von Fähigkeiten die Nutzung der Website zu ermöglichen.</span><span class="sxs-lookup"><span data-stu-id="368a2-108">This allows for assistive technologies, like screen readers, to convey the necessary information to help people with a range of abilities use the website.</span></span>
+
+<span data-ttu-id="368a2-109">Besuchen Sie [HTML5Accessibility](https://html5accessibility.com) , um Informationen darüber zu erhalten, welche neuen HTML5-Features von Microsoft Edge zugänglich unterstützt werden.</span><span class="sxs-lookup"><span data-stu-id="368a2-109">Visit [HTML5Accessibility](https://html5accessibility.com) for information on which new HTML5 features are accessibly supported by Microsoft Edge.</span></span>
+
+## <span data-ttu-id="368a2-110">Funktionsweise der Barrierefreiheit</span><span class="sxs-lookup"><span data-stu-id="368a2-110">How Accessibility Works</span></span>
+
+<span data-ttu-id="368a2-111">Hilfstechnologien fügen Funktionen hinzu, die normalerweise von Computern nicht zur Verfügung stehen.</span><span class="sxs-lookup"><span data-stu-id="368a2-111">Assistive technologies add capabilities that computers don't usually have.</span></span> <span data-ttu-id="368a2-112">Beispielsweise kann ein sehbehinderter Benutzer seine Tastatur in Kombination mit Hilfstechnologien wie einer Sprachausgabe verwenden, anstatt den Browser mit der Maus und dem Bildschirm direkt zu verwenden.</span><span class="sxs-lookup"><span data-stu-id="368a2-112">For example, a visually impaired user might use their keyboard in combination with assistive technology such as a screen reader, rather than directly using the browser with the mouse and screen.</span></span> <span data-ttu-id="368a2-113">Bei Anwendungen auf Microsoft-Plattformen und im Web interagiert die Hilfstechnologie mit der Microsoft- [Benutzeroberflächenautomatisierung](https://msdn.microsoft.com/library/windows/desktop/bb892135.aspx), einem anwendungsspezifischen Objektmodell wie dem Dokumentobjektmodell (DOM) in Microsoft Edge oder einer Kombination dieser Technologien.</span><span class="sxs-lookup"><span data-stu-id="368a2-113">For applications on Microsoft platforms and on the web, the assistive technology interacts with Microsoft [UI Automation](https://msdn.microsoft.com/library/windows/desktop/bb892135.aspx), an application-specific object model such as the Document Object Model (DOM) in Microsoft Edge, or a combination of these.</span></span>
+
+<span data-ttu-id="368a2-114">Für Webentwickler werden bestimmte HTML-Elemente UI-Automatisierung-Objekten zugeordnet, sodass der Entwickler bei der Auswahl dieser HTML-Elemente die Barrierefreiheitseigenschaften und Ereignisse verwenden kann, die in diesen Elementen integriert sind.</span><span class="sxs-lookup"><span data-stu-id="368a2-114">For web developers, certain HTML elements are mapped to UI Automation objects, so in selecting those HTML elements, the developer can use the accessibility properties and events built in to those elements.</span></span> <span data-ttu-id="368a2-115">Bei der Entwicklung Ihrer Website müssen Sie in der Regel nur darauf achten, dass die API richtig geschrieben wird (oder das entsprechende Element angegeben ist), damit die Anwendung barrierefrei ist.</span><span class="sxs-lookup"><span data-stu-id="368a2-115">While developing your website, you usually only need to be concerned with ensuring that the API is correctly written to (or that the appropriate element is specified), in order for the application to be accessible.</span></span> <span data-ttu-id="368a2-116">Weitere Informationen finden Sie [unter Aria und UI-Automatisierung in Microsoft Edge](./ARIA-and-UI-Automation.md) .</span><span class="sxs-lookup"><span data-stu-id="368a2-116">Check out [ARIA and UI Automation in Microsoft Edge](./ARIA-and-UI-Automation.md) for more information.</span></span>  <span data-ttu-id="368a2-117">Informationen zu barrierefreien Apps für die universelle Windows-Plattform (UWP) finden Sie im Thema [Barrierefreiheit](https://msdn.microsoft.com/windows/uwp/accessibility/accessibility) im Windows dev Center.</span><span class="sxs-lookup"><span data-stu-id="368a2-117">For information on accessible Universal Windows Platform (UWP) apps, see the [Accessibility](https://msdn.microsoft.com/windows/uwp/accessibility/accessibility) topic in the Windows Dev Center.</span></span>
+
+<span data-ttu-id="368a2-118">Viele häufige Barrierefreiheitsprobleme mit dynamischem Inhalt können durch eine gute Codierungspraxis behoben werden, und die [WCAG 2,0](https://go.microsoft.com/fwlink/p/?LinkID=24629) -Dokumentation umfasst zahlreiche Techniken und bewährte Methoden, mit denen Sie barrierefreiere dynamische Webanwendungen erstellen können.</span><span class="sxs-lookup"><span data-stu-id="368a2-118">Many common accessibility issues with dynamic content can be addressed by good coding practice, and the [WCAG 2.0](https://go.microsoft.com/fwlink/p/?LinkID=24629) documentation includes many techniques and best practices to help you create more accessible dynamic web applications.</span></span> <span data-ttu-id="368a2-119">Auch wenn Sie ordnungsgemäß codiert sind, ist es nicht unbedingt möglich, dynamischen Inhalt zu erreichen.</span><span class="sxs-lookup"><span data-stu-id="368a2-119">Even when coded properly, however, dynamic content is not necessarily accessible.</span></span> <span data-ttu-id="368a2-120">[Barrierefreie Rich-Internet-Anwendungen (Aria)](#aria) helfen, dieses Problem zu lösen.</span><span class="sxs-lookup"><span data-stu-id="368a2-120">[Accessible Rich Internet Applications (ARIA)](#aria) helps overcome this issue.</span></span>  
+
+<span data-ttu-id="368a2-121">Weitere Informationen zur Barrierefreiheit im Web finden Sie [in der Einführung in die Barrierefreiheit](https://www.w3.org/WAI/intro/accessibility.php) des Webs durch die [Web Accessibility Initiative](https://www.w3.org/WAI/) (WAI).</span><span class="sxs-lookup"><span data-stu-id="368a2-121">For more information on web accessibility, check out the [Introduction to Web Accessibility](https://www.w3.org/WAI/intro/accessibility.php) by the [Web Accessibility Initiative](https://www.w3.org/WAI/) (WAI).</span></span>
+
+## <span data-ttu-id="368a2-122">Aria</span><span class="sxs-lookup"><span data-stu-id="368a2-122">ARIA</span></span>
+
+<span data-ttu-id="368a2-123">Die Aria-Spezifikation ( [barrierefreie Rich-Internet-Anwendungen](https://www.w3.org/TR/wai-aria/) ) der W3C [Web Accessibility-Initiative](https://www.w3.org/WAI/) definiert eine Syntax für die Erstellung von dynamischen Webinhalten und benutzerdefinierten Benutzeroberflächen, die für alle Personen zugänglich sind.</span><span class="sxs-lookup"><span data-stu-id="368a2-123">The [Accessible Rich Internet Applications](https://www.w3.org/TR/wai-aria/) (ARIA) specification by the W3C's [Web Accessibility Initiative](https://www.w3.org/WAI/) defines as a syntax for making dynamic web content and custom user interfaces accessible to all people.</span></span> <span data-ttu-id="368a2-124">Aria erweitert HTML mithilfe zusätzlicher Attribute (Rollen, Eigenschaften und Zustände), die für die Übertragung benutzerdefinierter Semantik entwickelt wurden.</span><span class="sxs-lookup"><span data-stu-id="368a2-124">ARIA extends HTML by using additional attributes (roles, properties, and states) that are designed to convey custom semantics.</span></span> <span data-ttu-id="368a2-125">Diese Attribute werden von Browsern verwendet, um den Zustand und die Rolle des Steuerelements an die Barrierefreiheits-API weiterzugeben.</span><span class="sxs-lookup"><span data-stu-id="368a2-125">These attributes are used by browsers to pass along the controls' state and role to the accessibility API.</span></span>
+
+### <span data-ttu-id="368a2-126">Rollen, Eigenschaften und Zustände</span><span class="sxs-lookup"><span data-stu-id="368a2-126">Roles, Properties, and States</span></span>
+
+<span data-ttu-id="368a2-127">Aria-Rollen werden für Elemente mit dem [`role`](https://msdn.microsoft.com/library/cc304102(v=vs.85).aspx) Attribut gesetzt, um Hilfstechnologien und Barrierefreiheits-APIs Informationen zu dem Element zu geben.</span><span class="sxs-lookup"><span data-stu-id="368a2-127">ARIA roles are set on elements using the [`role`](https://msdn.microsoft.com/library/cc304102(v=vs.85).aspx) attribute to give assistive technologies and accessibility APIs information about the element.</span></span> <span data-ttu-id="368a2-128">So wird beispielsweise das untere `<li>` Element zugewiesen `role="menuitem"` , um zu signalisieren, dass es sich um ein Element in einem Menü handelt.</span><span class="sxs-lookup"><span data-stu-id="368a2-128">For example, the below `<li>` element is assigned `role="menuitem"` to signify it's an item in a menu.</span></span>
+
+```html
+<li role="menuitem">Home</li>
+```
+
+<span data-ttu-id="368a2-129">Aria-Zustände und-Eigenschaften sind Aria-Präfix Attribute, die bestimmte Informationen zu einem Objekt bereitstellen, um die Definition der Art von Rollen zu unterstützen.</span><span class="sxs-lookup"><span data-stu-id="368a2-129">ARIA states and properties are aria-prefixed attributes that provide specific information about an object to help form the definition of the nature of roles.</span></span> <span data-ttu-id="368a2-130">Eigenschaften sind Attribute, die für die Art eines Objekts wichtig sind, wie [`aria-readonly`](https://msdn.microsoft.com/library/cc304089(v=vs.85).aspx) und [`aria-haspopup`](https://msdn.microsoft.com/library/cc304081(v=vs.85).aspx) .</span><span class="sxs-lookup"><span data-stu-id="368a2-130">Properties are attributes that are essential to the nature of an object, like [`aria-readonly`](https://msdn.microsoft.com/library/cc304089(v=vs.85).aspx) and [`aria-haspopup`](https://msdn.microsoft.com/library/cc304081(v=vs.85).aspx).</span></span> <span data-ttu-id="368a2-131">Das Ändern einer Eigenschaft wirkt sich auf die Bedeutung des Objekts aus.</span><span class="sxs-lookup"><span data-stu-id="368a2-131">Changing a property affects the meaning of the object.</span></span> <span data-ttu-id="368a2-132">Im folgenden Beispiel wird die Eigenschaft `aria-haspopup="true"` für ein `<li>` Menüelement auf ein Popup Symbol gesetzt.</span><span class="sxs-lookup"><span data-stu-id="368a2-132">In the example below, the property `aria-haspopup="true"` is set on a `<li>` menu item to signify it has a popup.</span></span>
+
+```html
+<li role="menuitem" aria-haspopup="true">Open</li>
+```
+
+<span data-ttu-id="368a2-133">Zustände ändern nicht die Art des Objekts, sondern stellen Informationen dar, die dem Objekt oder der Interaktion des Benutzers mit dem Objekt zugeordnet sind, wie [`aria-hidden`](https://msdn.microsoft.com/library/cc304083(v=vs.85).aspx) oder [`aria-checked`](https://msdn.microsoft.com/library/cc304075(v=vs.85).aspx) .</span><span class="sxs-lookup"><span data-stu-id="368a2-133">States do not change the nature of the object, but represent information associated with the object or user interaction with the object, like [`aria-hidden`](https://msdn.microsoft.com/library/cc304083(v=vs.85).aspx) or [`aria-checked`](https://msdn.microsoft.com/library/cc304075(v=vs.85).aspx).</span></span> <span data-ttu-id="368a2-134">Der Zustand `aria-checked="false"` im folgenden Beispiel zeigt beispielsweise, dass das Kontrollkästchen nicht aktiviert ist.</span><span class="sxs-lookup"><span data-stu-id="368a2-134">For example, the state `aria-checked="false"` in the example below represents that the checkbox is not checked.</span></span>
+
+```html
+<div role="checkbox" aria-checked="false">Accept</div>
+```
+
+<span data-ttu-id="368a2-135">Wechseln Sie zum [Rollenmodell](https://www.w3.org/TR/wai-aria-1.1/#roles) des W3C, um eine vollständige Liste der Rollen, Eigenschaften und Zustände anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="368a2-135">Go to [The Roles Model](https://www.w3.org/TR/wai-aria-1.1/#roles) by the W3C to see a full list of roles, properties, and states.</span></span>
+
+<span data-ttu-id="368a2-136">Weitere Informationen zu Aria finden Sie in der Aria im Abschnitt [Resources](#resources) .</span><span class="sxs-lookup"><span data-stu-id="368a2-136">For more information on ARIA, see the ARIA in the [Resources](#resources) section.</span></span>
+
+## <span data-ttu-id="368a2-137">Kompatibilitätstests für Hilfstechnologien</span><span class="sxs-lookup"><span data-stu-id="368a2-137">Assistive Technology Compatibility Testing</span></span>  
+
+<span data-ttu-id="368a2-138">Überprüfen, ob die Website, die Sie erstellen, mit echten Hilfstechnologien arbeitet, ist die beste Methode, um für Benutzer mit Behinderungen eine gute Benutzerfreundlichkeit zu gewährleisten.</span><span class="sxs-lookup"><span data-stu-id="368a2-138">Verifying that the website you are building works with real assistive technologies is the best way to ensure a good experience for your users with disabilities.</span></span>  <span data-ttu-id="368a2-139">Da viele Hilfstechnologien die Tastatur verwenden, ist das Testen der Barrierefreiheit Ihrer Website ein guter Ausgangspunkt.</span><span class="sxs-lookup"><span data-stu-id="368a2-139">Since many assistive technologies make use of the keyboard, testing the keyboard accessibility of your website is a good place to start.</span></span>  <span data-ttu-id="368a2-140">Das [Testen der Tastatur Kompatibilität][W3cPerspectiveVideosKeyboard] überprüft, ob Benutzer auf alle interaktiven Steuerelemente zugreifen können, ohne dass eine Maus erforderlich ist.</span><span class="sxs-lookup"><span data-stu-id="368a2-140">[Keyboard compatibility testing][W3cPerspectiveVideosKeyboard] validates that users have access to all interactive controls without requiring a mouse.</span></span>  <span data-ttu-id="368a2-141">Microsoft [Accessibility Insights für Web][AccessibilityinsightsWebOverview] ist eine Browser Erweiterung für Microsoft Edge und Chrome, die Sie führt und einige häufige Probleme aufdeckt.</span><span class="sxs-lookup"><span data-stu-id="368a2-141">Microsoft [Accessibility Insights for Web][AccessibilityinsightsWebOverview] is a browser extension for Microsoft Edge and Chrome that guides you and reveals several common issues.</span></span>  
+
+<span data-ttu-id="368a2-142">Wenn Sie sicher sind, dass Ihre Website gut mit einer Tastatur funktioniert, versuchen Sie es mit anderen Hilfstechnologien wie Bildschirmsprachausgaben.</span><span class="sxs-lookup"><span data-stu-id="368a2-142">Once you are confident that your website works well with a keyboard, try it with other assistive technologies, such as screen readers.</span></span>  <span data-ttu-id="368a2-143">Im folgenden werden Probleme aufgedeckt.</span><span class="sxs-lookup"><span data-stu-id="368a2-143">It uncover issues in the following.</span></span>
+
+*   <span data-ttu-id="368a2-144">Ihr HTML-, Aria-und CSS-Code</span><span class="sxs-lookup"><span data-stu-id="368a2-144">Your HTML, ARIA, and CSS.</span></span>  
+*   <span data-ttu-id="368a2-145">Die Stufe der Unterstützung einer Hilfstechnologie für ein Feature oder eine Technik.</span><span class="sxs-lookup"><span data-stu-id="368a2-145">The level of support of an assistive technology for a feature or technique.</span></span>  
+    
+<span data-ttu-id="368a2-146">Unterschiedliche Browser können Elemente Platt Form Barrierefreiheits-APIs anders als Microsoft Edge zuordnen.</span><span class="sxs-lookup"><span data-stu-id="368a2-146">Different browsers may map elements to platform accessibility APIs differently than Microsoft Edge.</span></span>  <span data-ttu-id="368a2-147">Beim Erstellen der Benutzeroberfläche ist es wichtig, die einzelnen Unterschiede zu beachten.</span><span class="sxs-lookup"><span data-stu-id="368a2-147">While building your interface, it is important to consider each difference.</span></span>  
+
+<span data-ttu-id="368a2-148">WebAIM führt Umfragen mit [Sprachausgabe][WebaimProjectsScreenreadersurvey8] und [sehbehinderten][WebaimProjectsLowvisionsurvey2] Benutzern durch, die Ihnen bei der Entscheidung helfen, welche Hilfstechnologien und Browser Sie testen möchten.</span><span class="sxs-lookup"><span data-stu-id="368a2-148">WebAIM conducts surveys with [screen reader][WebaimProjectsScreenreadersurvey8] and [low vision][WebaimProjectsLowvisionsurvey2] users that help you decide which assistive technologies and browsers you want to test.</span></span>  
+
+### <span data-ttu-id="368a2-149">Lernen, wie man testet</span><span class="sxs-lookup"><span data-stu-id="368a2-149">Learning How to Test</span></span>  
+
+<span data-ttu-id="368a2-150">Hilfstechnologien sind ausgeklügelte Tools.</span><span class="sxs-lookup"><span data-stu-id="368a2-150">Assistive technologies are sophisticated tools.</span></span>  <span data-ttu-id="368a2-151">Gehen Sie nicht davon aus, dass Sie in der Lage sind, sofort mit einer Hilfstechnologie zu testen, ohne zuvor zu erfahren, wie das funktioniert.</span><span class="sxs-lookup"><span data-stu-id="368a2-151">Do not assume that you are able to immediately start testing with an assistive technology without first learning about how it works.</span></span>  <span data-ttu-id="368a2-152">Das Lernen mit einer Sprachausgabe zu testen, hat eine besonders steile Lernkurve.</span><span class="sxs-lookup"><span data-stu-id="368a2-152">Learning to test with a screen reader has an especially steep learning curve.</span></span>  <span data-ttu-id="368a2-153">Ein unerfahrener Benutzer der Bildschirmsprachausgabe kann davon ausgehen, dass ein Fehler bei der Bildschirmsprachausgabe aufgetreten ist, während das Problem mit dem Missbrauch der Sprachausgabe zusammenhängt.</span><span class="sxs-lookup"><span data-stu-id="368a2-153">A novice screen reader user may assume that a screen reader bug has occurred while the issue is related to misuse of the screen reader.</span></span>  
+
+<span data-ttu-id="368a2-154">Weitere Informationen zum Lernen, wie Sie mit Hilfstechnologien testen können, finden Sie unter [Testen mit Bildschirmsprachausgaben][WebaimArticlesScreenreaderTesting] auf WebAIM.</span><span class="sxs-lookup"><span data-stu-id="368a2-154">For more information about learning to test with assistive technologies, navigate to [Testing with Screen Readers][WebaimArticlesScreenreaderTesting] on WebAIM.</span></span>  
+
+### <span data-ttu-id="368a2-155">Lokales Testen</span><span class="sxs-lookup"><span data-stu-id="368a2-155">Testing Locally</span></span>  
+
+<span data-ttu-id="368a2-156">Die meisten Geräte umfassen Hilfstechnologien, die für das Betriebssystem integriert sind.</span><span class="sxs-lookup"><span data-stu-id="368a2-156">Most devices include assistive technology that is built-in to the OS.</span></span>  <span data-ttu-id="368a2-157">Microsoft Windows umfasst die [Windows-Sprachausgabe][MicrosoftSupport22798] und die [Windows][MicrosoftSupportWindows414948ba8b1cD3bd86150e5e32204198]-Bildschirmlupe.</span><span class="sxs-lookup"><span data-stu-id="368a2-157">Microsoft Windows includes the [Windows Narrator][MicrosoftSupport22798] screen reader and [Windows Magnifier][MicrosoftSupportWindows414948ba8b1cD3bd86150e5e32204198].</span></span>  <span data-ttu-id="368a2-158">Hilfstechnologien von Drittanbietern wie [NVDA][NvaccessAboutNvda], [FreedomscientificSoftwareJaws]und [ZoomText][FreedomscientificSoftwareZoomtext] stehen zum Download zur Verfügung.</span><span class="sxs-lookup"><span data-stu-id="368a2-158">3rd party assistive technologies like [NVDA][NvaccessAboutNvda], [FreedomscientificSoftwareJaws], and [ZoomText][FreedomscientificSoftwareZoomtext] are available to download.</span></span>  <span data-ttu-id="368a2-159">Apple macOS enthält die [VoiceOver][AppleAccessibilityMacVision] -Sprachausgabe.</span><span class="sxs-lookup"><span data-stu-id="368a2-159">Apple macOS includes the [VoiceOver][AppleAccessibilityMacVision] screen reader.</span></span>  <span data-ttu-id="368a2-160">Und IOS, Android und Linux unterstützen alle eine Vielzahl von Hilfstechnologien.</span><span class="sxs-lookup"><span data-stu-id="368a2-160">And iOS, Android, and Linux all support a variety of assistive technologies.</span></span>  
+
+### <span data-ttu-id="368a2-161">Testen in virtuellen Computern und Emulatoren</span><span class="sxs-lookup"><span data-stu-id="368a2-161">Testing in Virtual Machines and Emulators</span></span>  
+
+<span data-ttu-id="368a2-162">Wenn Sie unter macOS mit einer Hilfstechnologie testen möchten, die nur für Windows verfügbar ist, wie Windows-Sprachausgabe oder NVDA, erstellen Sie einen virtuellen Windows-Computer.</span><span class="sxs-lookup"><span data-stu-id="368a2-162">Under macOS, if you want to test with an assistive technology only available for Windows, like Windows Narrator or NVDA, create a Windows virtual machine.</span></span>  <span data-ttu-id="368a2-163">Virtuelle Computer mit Microsoft Edge \ (EdgeHTML \) und IE sind für virtualbox und VMware auf der [Download Seite für virtuelle Computer][MicrosoftDeveloperEdgeVms]verfügbar.</span><span class="sxs-lookup"><span data-stu-id="368a2-163">Virtual machines with Microsoft Edge \(EdgeHTML\) and IE are available for VirtualBox and VMWare on the [Virtual Machines download page][MicrosoftDeveloperEdgeVms].</span></span>  
+
+<span data-ttu-id="368a2-164">[Android Studio][AndroidDeveloperSdkInstallingStudioHtml] enthält einen Emulator, mit dem Sie Hilfstechnologien in der [Android-Barrierefreiheits Suite][GooglePlayStoreAndroidAccessibilitySuite]testen können.</span><span class="sxs-lookup"><span data-stu-id="368a2-164">[Android Studio][AndroidDeveloperSdkInstallingStudioHtml] includes an emulator that for you to test assistive technologies in the [Android Accessibility Suite][GooglePlayStoreAndroidAccessibilitySuite].</span></span>  <span data-ttu-id="368a2-165">Befolgen Sie die Anweisungen zum [Einrichten eines virtuellen Geräts][AndroidDeveloperDevicesManagingAvdsHtml] , und [Starten Sie den Emulator][AndroidDeveloperDevicesEmulatorHtml], und installieren Sie dann die [Android-Barrierefreiheits Suite][GooglePlayStoreAndroidAccessibilitySuite] aus dem GooglePlay-Store.</span><span class="sxs-lookup"><span data-stu-id="368a2-165">Follow the instructions to [set up a virtual device][AndroidDeveloperDevicesManagingAvdsHtml] and [start the emulator][AndroidDeveloperDevicesEmulatorHtml], then install [Android Accessibility Suite][GooglePlayStoreAndroidAccessibilitySuite] from the GooglePlay store.</span></span>  
+
+> [!NOTE]
+> <span data-ttu-id="368a2-166">Der IOS-Simulator enthält derzeit keine VoiceOver-Funktion.</span><span class="sxs-lookup"><span data-stu-id="368a2-166">The iOS Simulator does not currently include VoiceOver.</span></span>  
+
+### <span data-ttu-id="368a2-167">Cloud-basierte Test Tools</span><span class="sxs-lookup"><span data-stu-id="368a2-167">Cloud-based Testing Tools</span></span>  
+
+<span data-ttu-id="368a2-168">Wenn keine Hilfstechnologien für Ihr Betriebssystem verfügbar sind oder wenn Sie eine auf einem virtuellen Computer oder Emulator nicht installieren können, sind Cloud-basierte Hilfstechnologie-Testtools die beste Wahl.</span><span class="sxs-lookup"><span data-stu-id="368a2-168">If an assistive technology is not available on your OS or you not possible to install one on a virtual machine or emulator, cloud-based assistive technology testing tools are the next best thing.</span></span>  
+
+*   <span data-ttu-id="368a2-169">Mit [Assistiv Labs (Commercial)][AssistivlabsMain] können Sie mit Hilfstechnologien manuell über einen beliebigen modernen Webbrowser testen.</span><span class="sxs-lookup"><span data-stu-id="368a2-169">[Assistiv Labs (commercial)][AssistivlabsMain] enables you to manually test with assistive technologies through any modern web browser.</span></span>  <span data-ttu-id="368a2-170">Wählen Sie eine Hilfstechnologie und einen Browser aus, die Sie mit einem virtuellen Computer, Emulator oder realen Gerät verbindet, mit dem Sie interagieren können.</span><span class="sxs-lookup"><span data-stu-id="368a2-170">Choose an assistive technology and browser and it connects you with a virtual machine, emulator, or real device with which you may interact.</span></span>  
+
+## <span data-ttu-id="368a2-171">Ressourcen</span><span class="sxs-lookup"><span data-stu-id="368a2-171">Resources</span></span>
+
+### <span data-ttu-id="368a2-172">Grundlagen der Barrierefreiheit</span><span class="sxs-lookup"><span data-stu-id="368a2-172">Accessibility Basics</span></span>
+
+#### [<span data-ttu-id="368a2-173">Das A11Y-Projekt</span><span class="sxs-lookup"><span data-stu-id="368a2-173">The A11Y Project</span></span>](http://a11yproject.com/)
+
+<span data-ttu-id="368a2-174">Das A11Y-Projekt ist eine Community-gesteuerte Anstrengung, um die Barrierefreiheit im Web zu vereinfachen.</span><span class="sxs-lookup"><span data-stu-id="368a2-174">The A11Y Project is a community-driven effort to make web accessibility easier.</span></span> <span data-ttu-id="368a2-175">Schauen Sie sich [die A11Y-Projekt](https://a11yproject.com/) Website an, um mehr über grundlegende Barrierefreiheits Prinzipien, deren Barrierefreies Muster und die Widget- [Bibliothek](https://a11yproject.com/patterns)sowie deren [Ressourcen](http://a11yproject.com/resources.html) zu Barrierefreiheits Software, Blogs, Büchern und Tools zu erfahren.</span><span class="sxs-lookup"><span data-stu-id="368a2-175">Check out [The A11Y Project](https://a11yproject.com/) site to learn about basic accessibility principles, their accessible pattern and widget [library](https://a11yproject.com/patterns), and their [resources](http://a11yproject.com/resources.html) on accessibility software, blogs, books, and tools.</span></span>
+
+#### [<span data-ttu-id="368a2-176">Web Accessibility Initiative (WAI)</span><span class="sxs-lookup"><span data-stu-id="368a2-176">Web Accessibility Initiative (WAI)</span></span>](https://w3.org/WAI/)
+
+<span data-ttu-id="368a2-177">Die W3C Web Accessibility Initiative (WAI) stellt eine Bemühung dar, die Barrierefreiheit im Internet zu verbessern.</span><span class="sxs-lookup"><span data-stu-id="368a2-177">The W3C Web Accessibility Initiative (WAI) is an effort to help improve the accessibility of the web.</span></span> <span data-ttu-id="368a2-178">Ihre Website bietet eine Reihe von Ressourcen für den Einstieg [in die Barrierefreiheit im Web](https://www.w3.org/WAI/gettingstarted/Overview.html), das [Entwerfen für Inklusion](https://www.w3.org/WAI/users/Overview.html), [Lernprogramme und Präsentationen](https://www.w3.org/WAI/train.html)und vieles mehr.</span><span class="sxs-lookup"><span data-stu-id="368a2-178">Their site provides a variety of resources for [Getting Started with Web Accessibility](https://www.w3.org/WAI/gettingstarted/Overview.html), [Designing for Inclusion](https://www.w3.org/WAI/users/Overview.html), [tutorials and presentations](https://www.w3.org/WAI/train.html), and more.</span></span>
+
+### <span data-ttu-id="368a2-179">Barrierefreiheits-Blogs</span><span class="sxs-lookup"><span data-stu-id="368a2-179">Accessibility Blogs</span></span>
+
+#### [<span data-ttu-id="368a2-180">Die der Paciello-Gruppe</span><span class="sxs-lookup"><span data-stu-id="368a2-180">The Paciello Group</span></span>](https://www.paciellogroup.com/blog/)
+
+<span data-ttu-id="368a2-181">Die der Paciello-Gruppe bietet Beratungs-und Technologielösungen für Organisationen in der ganzen Welt, um sicherzustellen, dass Ihre Kunden effektiv und effizient alle Zielgruppen erreichen, während Sie behördliche und internationale Standards erfüllen.</span><span class="sxs-lookup"><span data-stu-id="368a2-181">The Paciello Group provides consulting and technology solutions to organizations around the world to ensure their clients reach all audiences effectively and efficiently, while meeting governmental and international standards.</span></span> <span data-ttu-id="368a2-182">Ihr Blog umfasst Themen wie bewährte Methoden für Web-Barrierefreiheit, Barrierefreiheits Tools und Trends für Barrierefreiheit.</span><span class="sxs-lookup"><span data-stu-id="368a2-182">Their blog covers topics like web accessibility best practices, accessibility tools, and accessibility trends.</span></span>
+
+#### [<span data-ttu-id="368a2-183">Einfach zugänglich</span><span class="sxs-lookup"><span data-stu-id="368a2-183">Simply Accessible</span></span>](http://simplyaccessible.com/articles/)
+
+<span data-ttu-id="368a2-184">Einfach barrierefrei ist ein Team von Spezialisten für Barrierefreiheit, das Barrierefreiheit, Beratung und mehr bietet, um die Wahrnehmung von Barrierefreiheit im Internet zu ändern.</span><span class="sxs-lookup"><span data-stu-id="368a2-184">Simply Accessible is a team of accessibility specialists providing accessibility training, consulting and more to change the perception of accessibility on the web.</span></span> <span data-ttu-id="368a2-185">Im Abschnitt " [Artikel](http://simplyaccessible.com/articles/) " werden bewährte Methoden für Barrierefreiheit, Barrierefreies Design und vieles mehr erläutert.</span><span class="sxs-lookup"><span data-stu-id="368a2-185">Their [Articles](http://simplyaccessible.com/articles/) section discusses best practices for web accessibility, accessible design, and more.</span></span>
+
+#### [<span data-ttu-id="368a2-186">SSB Bart Group (SSB)</span><span class="sxs-lookup"><span data-stu-id="368a2-186">SSB BART Group (SSB)</span></span>](http://www.ssbbartgroup.com/blog/)
+
+<span data-ttu-id="368a2-187">SSB Bart Group ist eine digitale Bedienungshilfe Firma, die Ihre Kunden bei der Entwicklung und Bereitstellung von barrierefreien Produkten und Diensten unterstützt.</span><span class="sxs-lookup"><span data-stu-id="368a2-187">SSB BART Group is a digital accessibility firm supporting their clients in developing and deploying accessible products and services.</span></span> <span data-ttu-id="368a2-188">Ihr Blog behandelt Themen wie Aria-bewährte Methoden, Trends für Barrierefreiheit, Webinars und vieles mehr.</span><span class="sxs-lookup"><span data-stu-id="368a2-188">Their blog addresses topics like ARIA best practices, accessibility trends, webinars, and more.</span></span>
+
+### <span data-ttu-id="368a2-189">Barrierefreie Beispiele</span><span class="sxs-lookup"><span data-stu-id="368a2-189">Accessible Examples</span></span>
+
+#### [<span data-ttu-id="368a2-190">ally.js-Lernprogramme</span><span class="sxs-lookup"><span data-stu-id="368a2-190">ally.js - Tutorials</span></span>](http://allyjs.io/tutorials/)
+
+<span data-ttu-id="368a2-191">JavaScript-Bibliothek, um moderne Webanwendungen mit Barrierefreiheits Problemen zu unterstützen, indem die Barrierefreiheit vereinfacht wird.</span><span class="sxs-lookup"><span data-stu-id="368a2-191">JavaScript library to help modern web applications with accessibility concerns by making accessibility simpler.</span></span>
+
+#### [<span data-ttu-id="368a2-192">Heydonworks-Aria-Beispiele</span><span class="sxs-lookup"><span data-stu-id="368a2-192">Heydonworks - ARIA Examples</span></span>](http://heydonworks.com/practical_aria_examples/)
+
+<span data-ttu-id="368a2-193">Praktische Aria-Beispiele zum Verbessern der Barrierefreiheit Ihrer Anwendung</span><span class="sxs-lookup"><span data-stu-id="368a2-193">Practical ARIA examples to enhance your application accessibility</span></span>
+
+#### [<span data-ttu-id="368a2-194">OpenAjax-Beispiele</span><span class="sxs-lookup"><span data-stu-id="368a2-194">OpenAjax Examples</span></span>](http://oaa-accessibility.org/)
+
+<span data-ttu-id="368a2-195">Die OpenAjax Alliance-Website ist eine hervorragende Ressource zur Überprüfung der Regeln für WAI-ARIA und bietet eine Reihe von Beispielen für WAI-ARIA-Implementierungen.</span><span class="sxs-lookup"><span data-stu-id="368a2-195">The OpenAjax Alliance website is an excellent resource for verifying the rules for WAI-ARIA and provides a number of examples of WAI-ARIA implementations.</span></span>
+
+#### [<span data-ttu-id="368a2-196">Muster</span><span class="sxs-lookup"><span data-stu-id="368a2-196">Patterns</span></span>](http://a11yproject.com/patterns.html)
+
+<span data-ttu-id="368a2-197">[Das A11Y-Projekt](http://a11yproject.com/) bietet eine Bibliothek mit barrierefreien Widgets und Mustern wie Menüs, Schaltflächen, QuickInfos und vieles mehr.</span><span class="sxs-lookup"><span data-stu-id="368a2-197">[The A11Y Project](http://a11yproject.com/) offers a library of accessible widgets and patterns like menus, buttons, tooltips, and more.</span></span>
+
+### <span data-ttu-id="368a2-198">Barrierefreiheits Techniken & Tools</span><span class="sxs-lookup"><span data-stu-id="368a2-198">Accessibility Techniques & Tools</span></span>
+
+#### [<span data-ttu-id="368a2-199">Barrierefreiheit: Erstellen barrierefreier Erweiterungssymbole für Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="368a2-199">Accessibility: Creating accessible extension icons for Microsoft Edge</span></span>](../../edgehtml/extensions/guides/accessibility.md)
+
+<span data-ttu-id="368a2-200">Hier finden Sie Anleitungen zum Erstellen von Symbolen für barrierefreie Erweiterungen für Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="368a2-200">Get guidance on creating accessible extensions icons for Microsoft Edge.</span></span>
+
+#### [<span data-ttu-id="368a2-201">Barrierefreier Name und Beschreibung: Berechnungen und Zuordnungen 1,1</span><span class="sxs-lookup"><span data-stu-id="368a2-201">Accessible Name and Description: Computation and Mappings 1.1</span></span>](https://www.w3.org/TR/accname-1.1/)
+
+<span data-ttu-id="368a2-202">In diesem W3C-Zuordnungsdokument wird erläutert, wie Browsernamen und Beschreibungen von barrierefreien Objekten aus Webinhalts Sprachen ermitteln und diese in Barrierefreiheits-APIs verfügbar machen.</span><span class="sxs-lookup"><span data-stu-id="368a2-202">This W3C mapping document explains how browsers determine name and descriptions of accessible objects from web content languages and expose them in accessibility APIs.</span></span>
+
+#### [<span data-ttu-id="368a2-203">Ressourcen zur Auswertung der Barrierefreiheit</span><span class="sxs-lookup"><span data-stu-id="368a2-203">Accessibility Evaluation Resources</span></span>](https://www.w3.org/WAI/eval/Overview.html)
+
+<span data-ttu-id="368a2-204">Barrierefreiheits Auswertungs Ressourcen ist eine mehrseitige Ressource des W3C, in der verschiedene Ansätze für die Auswertung von Websites für Barrierefreiheit erläutert werden.</span><span class="sxs-lookup"><span data-stu-id="368a2-204">Accessibility Evaluation Resources is a multi-page resource by the W3C that outlines different approaches for evaluating websites for accessibility.</span></span>
+
+#### [<span data-ttu-id="368a2-205">Kompatibilitätstests für Hilfstechnologien</span><span class="sxs-lookup"><span data-stu-id="368a2-205">Assistive technology compatibility tests</span></span>](http://www.powermapper.com/tests/)
+
+<span data-ttu-id="368a2-206">Test Ergebnisse, die zeigen, wie sich unterschiedliche Inhaltstypen und Standards in Hilfstechnologien (at) wie Bildschirmsprachausgaben Verhalten.</span><span class="sxs-lookup"><span data-stu-id="368a2-206">Test results showing how different content types and standards behave in assistive technologies (AT) like screen readers.</span></span>
+
+#### [<span data-ttu-id="368a2-207">Das Erstellen barrierefreier Websites ist jetzt noch einfacher geworden</span><span class="sxs-lookup"><span data-stu-id="368a2-207">Building accessible websites just got a lot easier</span></span>](https://blogs.msdn.microsoft.com/webdev/2016/05/02/building-accessible-websites-just-got-a-lot-easier/)
+
+<span data-ttu-id="368a2-208">Dieser .net Web Development-und Tools-Blogbeitrag beschreibt die Visual Studio Extension [Web-barrierefreiheitsprüfung](https://go.microsoft.com/fwlink/p/?linkid=841539).</span><span class="sxs-lookup"><span data-stu-id="368a2-208">This .NET Web Development and Tools blog post describes the Visual Studio extension [Web Accessibility Checker](https://go.microsoft.com/fwlink/p/?linkid=841539).</span></span>
+
+#### [<span data-ttu-id="368a2-209">Zentrale Barrierefreiheits-API-Zuordnungen 1,1</span><span class="sxs-lookup"><span data-stu-id="368a2-209">Core Accessibility API Mappings 1.1</span></span>](https://www.w3.org/TR/core-aam-1.1/)
+
+<span data-ttu-id="368a2-210">In diesem W3C-Zuordnungsdokument wird erläutert, wie die Semantik von Webinhalts Sprachen für Barrierefreiheits-APIs verfügbar gemacht wird.</span><span class="sxs-lookup"><span data-stu-id="368a2-210">This W3C mapping document explains how the semantics of web content languages are exposed to accessibility APIs.</span></span>  
+
+#### [<span data-ttu-id="368a2-211">Einfache Überprüfungen – eine erste Überprüfung der Barrierefreiheit im Web</span><span class="sxs-lookup"><span data-stu-id="368a2-211">Easy Checks – A First Review of Web Accessibility</span></span>](https://www.w3.org/WAI/eval/preliminary.html)
+
+<span data-ttu-id="368a2-212">Eine Reihe von schnellen Überprüfungen durch Wai, die Ihnen helfen, die Barrierefreiheit einer Webseite zu beurteilen.</span><span class="sxs-lookup"><span data-stu-id="368a2-212">A series of quick checks by the WAI that help you asses the accessibility of a web page.</span></span>
+
+#### [<span data-ttu-id="368a2-213">So treffen Sie die WCAG 2,0</span><span class="sxs-lookup"><span data-stu-id="368a2-213">How to Meet WCAG 2.0</span></span>](https://www.w3.org/WAI/WCAG20/quickref/)
+
+<span data-ttu-id="368a2-214">Eine Kurzübersicht über Web Content Accessibility Guidelines (WCAG) 2,0-Anforderungen (Erfolgskriterien) und Techniken.</span><span class="sxs-lookup"><span data-stu-id="368a2-214">A quick reference to Web Content Accessibility Guidelines (WCAG) 2.0 requirements (success criteria) and techniques.</span></span>
+
+#### [<span data-ttu-id="368a2-215">HTML-Barrierefreiheits-API-Zuordnungen 1,0</span><span class="sxs-lookup"><span data-stu-id="368a2-215">HTML Accessibility API Mappings 1.0</span></span>](https://www.w3.org/TR/html-aam-1.0/)
+
+<span data-ttu-id="368a2-216">In diesem W3C-Zuordnungsdokument wird erläutert, wie HTML 5.1-Elemente und-Attribute den Platt Form Barrierefreiheits-APIs zugeordnet werden.</span><span class="sxs-lookup"><span data-stu-id="368a2-216">This W3C mappings document explains how HTML5.1 element and attributes map to platform accessibility APIs.</span></span>
+
+#### [<span data-ttu-id="368a2-217">Schnelle Tipps</span><span class="sxs-lookup"><span data-stu-id="368a2-217">Quick Tips</span></span>](http://a11yproject.com/#Quick-tips)
+
+<span data-ttu-id="368a2-218">Eine Liste mit Tipps zur schnellen Webentwicklung für Barrierefreiheit [im A11Y-Projekt](http://a11yproject.com/).</span><span class="sxs-lookup"><span data-stu-id="368a2-218">A list of quick web development tips for accessibility by [The A11Y Project](http://a11yproject.com/).</span></span>
+
+#### [<span data-ttu-id="368a2-219">Website Überprüfung</span><span class="sxs-lookup"><span data-stu-id="368a2-219">Site Scan</span></span>](https://developer.microsoft.com/microsoft-edge/tools/staticscan/)
+
+<span data-ttu-id="368a2-220">Das Tool "Website Überprüfung" im Microsoft Edge dev Center sucht nach veralteten Bibliotheken, Layout-Problemen und Barrierefreiheits Problemen.</span><span class="sxs-lookup"><span data-stu-id="368a2-220">The Site Scan tool on Microsoft Edge Dev Center checks for out-of-date libraries, layout issues, and accessibility issues.</span></span>
+
+#### [<span data-ttu-id="368a2-221">Techniken für WCAG 2,0</span><span class="sxs-lookup"><span data-stu-id="368a2-221">Techniques for WCAG 2.0</span></span>](https://www.w3.org/TR/WCAG20-TECHS/Overview.html)
+
+<span data-ttu-id="368a2-222">Techniken des W3C, die Anleitungen für Web-Entwickler zur Erfüllung von [Richtlinien für die Barrierefreiheit von Webinhalten (WCAG) 2,0](https://w3.org/TR/WCAG20/) bieten.</span><span class="sxs-lookup"><span data-stu-id="368a2-222">Techniques from the W3C that provide guidance for web developers on meeting [Web Content Accessibility Guidelines (WCAG) 2.0](https://w3.org/TR/WCAG20/) success criteria.</span></span>
+
+#### [<span data-ttu-id="368a2-223">Tipps zur Entwicklung für Barrierefreiheit im Web</span><span class="sxs-lookup"><span data-stu-id="368a2-223">Tips on Developing for Web Accessibility</span></span>](https://w3.org/WAI/gettingstarted/tips/developing.html)
+
+<span data-ttu-id="368a2-224">Tipps vom W3C zur Entwicklung von Webinhalten, die für Menschen mit Behinderungen barrierefreier sind.</span><span class="sxs-lookup"><span data-stu-id="368a2-224">Tips from the W3C on developing web content that is more accessible to people with disabilities.</span></span>
+
+#### [<span data-ttu-id="368a2-225">WAI-ARIA Authoring Practices 1,1</span><span class="sxs-lookup"><span data-stu-id="368a2-225">WAI-ARIA Authoring Practices 1.1</span></span>](http://w3c.github.io/aria-practices/)
+
+<span data-ttu-id="368a2-226">Ein Dokument des W3C, in dem die Leser wissen, wie Sie WAI-ARIA 1,1 verwenden können, und empfiehlt Ansätze, Widgets, Navigation und Verhaltensweisen mithilfe von WAI-ARIA-Rollen,-Zuständen und-Eigenschaften barrierefrei zu gestalten.</span><span class="sxs-lookup"><span data-stu-id="368a2-226">A document by the W3C that provides readers with an understanding of how to use WAI-ARIA 1.1 and recommends approaches to make widgets, navigation, and behaviors accessible using WAI-ARIA roles, states, and properties.</span></span>
+
+#### [<span data-ttu-id="368a2-227">Wai-Richtlinien und-Techniken</span><span class="sxs-lookup"><span data-stu-id="368a2-227">WAI Guidelines and Techniques</span></span>](https://w3.org/WAI/guid-tech.html)
+
+<span data-ttu-id="368a2-228">Eine Reihe von Richtlinien und Standards zur Barrierefreiheit im Web, die von Wai entwickelt wurden.</span><span class="sxs-lookup"><span data-stu-id="368a2-228">A series of web accessibility guidelines and standards developed by the WAI.</span></span>  
+
+#### [<span data-ttu-id="368a2-229">Liste der Evaluierungs Tools für Web-Barrierefreiheit</span><span class="sxs-lookup"><span data-stu-id="368a2-229">Web Accessibility Evaluation Tools List</span></span>](https://www.w3.org/WAI/ER/tools/index.html)
+
+<span data-ttu-id="368a2-230">Eine Liste der Tools zur Bewertung der Barrierefreiheit im Web, um festzustellen, ob Websites den Richtlinien für Barrierefreiheit entsprechen.</span><span class="sxs-lookup"><span data-stu-id="368a2-230">A list of web accessibility evaluation tools to help determine if websites meet accessibility guidelines.</span></span>
+
+#### [<span data-ttu-id="368a2-231">Barrierefreie Web-Perspektiven: untersuchen Sie die Auswirkungen und Vorteile für alle</span><span class="sxs-lookup"><span data-stu-id="368a2-231">Web Accessibility Perspectives: Explore the Impact and Benefits for Everyone</span></span>](https://w3.org/WAI/perspectives/)
+
+<span data-ttu-id="368a2-232">Eine Reihe von kurzen situations Videos des W3C über die Auswirkungen der Barrierefreiheit und die Vorteile für alle.</span><span class="sxs-lookup"><span data-stu-id="368a2-232">A series of short situational videos by the W3C about the impact of accessibility and the benefits for everyone.</span></span>
+
+<!-- links -->  
+
+<!--todo: link updates and acrolinx  -->  
+
+[MicrosoftDeveloperEdgeVms]: https://developer.microsoft.com/microsoft-edge/tools/vms "Virtuelle Computer | Microsoft Edge-Entwickler"  
+
+[MicrosoftSupport22798]: https://support.microsoft.com/help/22798 "Vollständige Anleitung für die Sprachausgabe | Microsoft-Support"  
+[MicrosoftSupportWindows414948ba8b1cD3bd86150e5e32204198]: https://support.microsoft.com/windows/414948ba-8b1c-d3bd-8615-0e5e32204198 "Verwenden der Bildschirmlupe, um die Anzeige der Dinge auf dem Bildschirm zu verbessern | Microsoft-Support"  
+
+[AccessibilityinsightsWebOverview]: https://accessibilityinsights.io/docs/web/overview "Barrierefreiheit für Web | Einblicke in die Barrierefreiheit"  
+
+[AndroidDeveloperDevicesManagingAvdsHtml]: https://developer.android.com/tools/devices/managing-avds.html "Erstellen und Verwalten von virtuellen Geräten | Android-Entwickler"  
+[AndroidDeveloperDevicesEmulatorHtml]: https://developer.android.com/tools/devices/emulator.html "Ausführen von apps auf dem Android-Emulator | Android-Entwickler"  
+[AndroidDeveloperSdkInstallingStudioHtml]: https://developer.android.com/sdk/installing/studio.html "Android Studio herunterladen | Android-Entwickler"  
+
+[AppleAccessibilityMacVision]: https://www.apple.com/accessibility/mac/vision "Barrierefreiheit von Visionen-Mac | Apple"  
+
+[AssistivlabsMain]: https://assistivlabs.com "Assistiv Labs"  
+
+[FreedomscientificSoftwareJaws]: https://www.freedomscientific.com/products/software/jaws "Jaws® | Freiheit wissenschaftlich"  
+[FreedomscientificSoftwareZoomtext]: https://www.freedomscientific.com/products/software/zoomtext "ZoomText | Freiheit wissenschaftlich"  
+
+[GooglePlayStoreAndroidAccessibilitySuite]: https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback "Android-Suite für Barrierefreiheit | GooglePlay-Store"  
+
+[NvaccessAboutNvda]: https://www.nvaccess.org/about-nvda "Informationen zu NVDA | NV-Zugriff"  
+
+[W3cPerspectiveVideosKeyboard]: https://www.w3.org/WAI/perspective-videos/keyboard "Tastatur Kompatibilität | W3C"  
+
+[WebaimProjectsLowvisionsurvey2]: https://webaim.org/projects/lowvisionsurvey2 "Umfrage von Benutzern mit Sehbehinderungen \ #2 Ergebnisse | WebAIM"  
+[WebaimProjectsScreenreadersurvey8]: https://webaim.org/projects/screenreadersurvey8 "Benutzerumfrage zur Sprachausgabe \ #8 Ergebnisse | WebAIM"  
+[WebaimArticlesScreenreaderTesting]: https://webaim.org/articles/screenreader_testing "Testen mit Bildschirmsprachausgaben | WebAIM"  
