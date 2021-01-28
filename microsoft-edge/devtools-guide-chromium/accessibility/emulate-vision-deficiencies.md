@@ -42,7 +42,7 @@ Das **Rendering** -Menü wird im Einzug angezeigt.
 
 1.  Scrollen Sie nach unten zum `Emulate vision deficiencies` Menüelement, und wählen Sie das Dropdownmenü aus, um die Optionen anzuzeigen.  
     
-    :::image type="complex" source="../media/accessibility-emulate-vision-menu.msft.png" alt-text="Das Menü "Sehstörungen emulieren" auf der Rendering-Schublade" lightbox="../media/accessibility-emulate-vision-menu.msft.png":::
+    :::image type="complex" source="../media/accessibility-emulate-vision-menu.msft.png" alt-text="Das Menü Sehstörungen emulieren auf der Rendering-Schublade" lightbox="../media/accessibility-emulate-vision-menu.msft.png":::
        Das Menü " **Sehstörungen emulieren** " auf der **Rendering** -Schublade  
     :::image-end:::  
     
