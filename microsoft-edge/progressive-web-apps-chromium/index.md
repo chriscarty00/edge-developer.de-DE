@@ -90,7 +90,7 @@ Desktop-PWAs werden auf allen Plattformen unterstützt, die Microsoft Edge \ (Ch
     
 *   Anwendungen können auch über das Menü **Einstellungen**-  >  **apps** installiert, ausgeführt und verwaltet werden.  
     
-    :::image type="complex" source="./media/app_menus.png" alt-text="Menüelemente des Programms unter "Einstellungen"" lightbox="./media/app_menus.png":::
+    :::image type="complex" source="./media/app_menus.png" alt-text="Menüelemente des Programms unter Einstellungen" lightbox="./media/app_menus.png":::
        Menüelemente des Programms unter "Einstellungen"  
     :::image-end:::  
     
