@@ -53,7 +53,7 @@ Organisation des **Seiten** Bereichs:
     
 Wählen Sie im **Seiten** Bereich eine Datei aus, um den Inhalt im **Editor** Bereich anzuzeigen.  Sie können jede Art von Datei anzeigen.  Bei Bildern wird eine Vorschau des Bilds angezeigt.  
 
-:::image type="complex" source="../media/sources-editor-pane.msft.png" alt-text="Anzeigen der Inhalte von a4d10f71.index-docs.js im Bereich "Editor"" lightbox="../media/sources-editor-pane.msft.png":::
+:::image type="complex" source="../media/sources-editor-pane.msft.png" alt-text="Anzeigen der Inhalte von a4d10f71.index-docs.js im Bereich Editor" lightbox="../media/sources-editor-pane.msft.png":::
    Anzeigen des Inhalts `a4d10f71.index-docs.js` im Bereich " **Editor** "  
 :::image-end:::  
 
@@ -75,7 +75,7 @@ Diese Änderung sollte sofort wirksam werden.
 
 CSS-Änderungen werden sofort wirksam, keine Speicherung erforderlich.  Damit JavaScript-Änderungen wirksam werden, wählen Sie `Control` + `S` \ (Windows, Linux \) oder `Command` + `S` \ (macOS \) aus.  DevTools führt ein Skript nicht erneut aus, sodass nur die JavaScript-Änderungen wirksam werden, die Sie in Funktionen vornehmen.  Beachten Sie beispielsweise in der folgenden Abbildung, wie diese `console.log('A')` nicht ausgeführt wird, während `console.log('B')` dies der Fall ist.  Wenn devtools das gesamte Skript nach dem vornehmen der Änderung erneut ausführt, wurde der Text `A` in der **Konsole**protokolliert.  
 
-:::image type="complex" source="../media/edit-js.msft.png" alt-text="Bearbeiten von JavaScript im Bereich "Editor"" lightbox="../media/edit-js.msft.png":::
+:::image type="complex" source="../media/edit-js.msft.png" alt-text="Bearbeiten von JavaScript im Bereich Editor" lightbox="../media/edit-js.msft.png":::
    Bearbeiten von JavaScript im Bereich " **Editor** "  
 :::image-end:::  
 
