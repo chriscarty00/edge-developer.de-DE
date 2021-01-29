@@ -23,7 +23,7 @@ Die Seite " **Verknüpfungen** " in " [Einstellungen][DevToolsCustomizeSettings]
     *   Wählen Sie aus `Shift` + `?` .  
 1.  Navigieren Sie zur Seite **Verknüpfungen** .  
     
-    :::image type="complex" source="../media/settings-shortcuts.msft.png" alt-text="Die Seite "Verknüpfungen" in "Einstellungen"" lightbox="../media/settings-shortcuts.msft.png":::
+    :::image type="complex" source="../media/settings-shortcuts.msft.png" alt-text="Die Seite Verknüpfungen in Einstellungen" lightbox="../media/settings-shortcuts.msft.png":::
        Die Seite " **Verknüpfungen** " in " **Einstellungen** "  
     :::image-end:::  
     
