@@ -102,13 +102,13 @@ Wenn Sie versuchen, http- [Cache][MDNHTTPCaching] -Daten zu überprüfen, ist di
 1.  Öffnen Sie die **Anwendung**  >  **Clear Storage**.  
 1.  Stellen Sie sicher, dass das Kontrollkästchen **Cache Speicher** aktiviert ist.  
     
-    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png" alt-text="Das Kontrollkästchen "Cache Speicher"" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png":::
+    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png" alt-text="Das Kontrollkästchen Cache Speicher" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png":::
        Das Kontrollkästchen " **Cache Speicher** "  
     :::image-end:::  
     
 1.  Wählen Sie **Website Daten löschen**aus.  
     
-    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png" alt-text="Schaltfläche "Website Daten löschen"" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png":::
+    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png" alt-text="Schaltfläche Website Daten löschen" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png":::
        Schaltfläche " **Website Daten löschen** "  
     :::image-end:::  
     
