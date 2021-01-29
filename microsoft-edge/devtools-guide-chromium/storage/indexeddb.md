@@ -135,7 +135,7 @@ IndexedDB-Schlüssel und-Werte können vom **Anwendungs** Tool nicht bearbeitet 
 1.  [Zeigen Sie die IndexedDB-Datenbank](#view-indexeddb-data) an, die Sie löschen möchten.  
 1.  Wählen Sie **Datenbank löschen**aus.  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png" alt-text="Schaltfläche "Datenbank löschen"" lightbox="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png" alt-text="Schaltfläche Datenbank löschen" lightbox="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png":::
        Schaltfläche " **Datenbank löschen** "  
     :::image-end:::  
     
@@ -145,7 +145,7 @@ IndexedDB-Schlüssel und-Werte können vom **Anwendungs** Tool nicht bearbeitet 
 1.  Stellen Sie sicher, dass das Kontrollkästchen **IndexedDB** aktiviert ist.  
 1.  Wählen Sie **Website Daten löschen**aus.  
     
-    :::image type="complex" source="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png" alt-text="Der Bereich "Speicher löschen"" lightbox="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png":::
+    :::image type="complex" source="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png" alt-text="Der Bereich Speicher löschen" lightbox="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png":::
        Der Bereich " **Speicher löschen** "  
     :::image-end:::  
     
