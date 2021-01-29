@@ -80,7 +80,7 @@ DevTools aktualisiert Tabellen nicht in Echtzeit.  Führen Sie die folgenden Akt
 1.  [Anzeigen der Daten in einer SQL-Webtabelle](#view-web-sql-data)  
 1.  Verwenden Sie das Textfeld **sichtbare Spalten** , um anzugeben, welche Spalten angezeigt werden sollen.  Geben Sie die Spaltennamen als CSV-Liste an.  
     
-    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png" alt-text="Verwenden Sie das Textfeld "sichtbare Spalten", um die Anzahl der angezeigten Spalten zu verringern." lightbox="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png" alt-text="Verwenden Sie das Textfeld sichtbare Spalten, um die Anzahl der angezeigten Spalten zu verringern." lightbox="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png":::
        Verwenden Sie das Textfeld " **sichtbare Spalten** ", um die Anzahl der angezeigten Spalten zu verringern.  
     :::image-end:::  
     
@@ -95,7 +95,7 @@ DevTools aktualisiert Tabellen nicht in Echtzeit.  Führen Sie die folgenden Akt
     
 1.  Wählen Sie **Website Daten löschen**aus.  
     
-    :::image type="complex" source="../media/storage-application-clear-storage-clear-site-data-button.msft.png" alt-text="Schaltfläche "Website Daten löschen"" lightbox="../media/storage-application-clear-storage-clear-site-data-button.msft.png":::
+    :::image type="complex" source="../media/storage-application-clear-storage-clear-site-data-button.msft.png" alt-text="Schaltfläche Website Daten löschen" lightbox="../media/storage-application-clear-storage-clear-site-data-button.msft.png":::
        Schaltfläche " **Website Daten löschen** "  
     :::image-end:::  
     
