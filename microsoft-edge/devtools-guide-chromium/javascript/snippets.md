@@ -67,7 +67,7 @@ In der folgenden Abbildung wird die Webseite nach dem Ausführen des Snippets an
 
 Im Bereich **Snippets** werden Ihre Snippets aufgelistet.  Wenn Sie einen Ausschnitt bearbeiten möchten, müssen Sie ihn im Bereich **Snippets** öffnen.  
 
-:::image type="complex" source="../media/javascript-sources-snippets-pane.msft.png" alt-text="Der Bereich "Ausschnitte"" lightbox="../media/javascript-sources-snippets-pane.msft.png":::
+:::image type="complex" source="../media/javascript-sources-snippets-pane.msft.png" alt-text="Der Bereich Ausschnitte" lightbox="../media/javascript-sources-snippets-pane.msft.png":::
    Der Bereich " **Ausschnitte** "  
 :::image-end:::  
 
@@ -75,7 +75,7 @@ Im Bereich **Snippets** werden Ihre Snippets aufgelistet.  Wenn Sie einen Aussch
 
 1.  Wählen Sie die Registerkarte **Quellen** aus, um das **Quellen** Tool zu öffnen.  Der **Seiten** Bereich wird normalerweise standardmäßig geöffnet.  
     
-    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="Das Tool "Quellen" mit geöffnetem Seitenbereich auf der linken Seite" lightbox="../media/javascript-sources-page-pane.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="Das Tool Quellen mit geöffnetem Seitenbereich auf der linken Seite" lightbox="../media/javascript-sources-page-pane.msft.png":::
        Das Tool " **Quellen** " mit geöffnetem Seitenbereich auf der linken **Seite**  
     :::image-end:::  
     
