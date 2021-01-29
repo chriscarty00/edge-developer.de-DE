@@ -115,7 +115,7 @@ Die meisten Nachrichten, die in der **Konsole** angezeigt werden, stammen von de
     
 1.  Wählen Sie die Schaltfläche **Protokoll Warnung** in der Demo aus.  `Abandon Hope All Ye Who Enter` wird in der **Konsole**protokolliert.  So formatierte Nachrichten sind Warnungen.  
     
-    :::image type="complex" source="../media/console-log-warning.msft.png" alt-text="Die Konsole nach Auswahl der Option "Protokoll Warnung"" lightbox="../media/console-log-warning.msft.png":::
+    :::image type="complex" source="../media/console-log-warning.msft.png" alt-text="Die Konsole nach Auswahl der Option Protokoll Warnung" lightbox="../media/console-log-warning.msft.png":::
        Die **Konsole** nach Auswahl der Option " **Protokoll Warnung** "  
     :::image-end:::  
     
