@@ -128,7 +128,7 @@ Es gibt auch viele Spalten, die standardmäßig ausgeblendet sind, die Sie mögl
 
 1.  Zeigen Sie auf die Kopfzeile der Netzwerkprotokoll Tabelle, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie **Domäne**aus.  Die Domäne jeder Ressource wird nun angezeigt.  
     
-    :::image type="complex" source="../media/network-glitch-network-edit-column.msft.png" alt-text="Aktivieren der Spalte "Domäne"" lightbox="../media/network-glitch-network-edit-column.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-edit-column.msft.png" alt-text="Aktivieren der Spalte Domäne" lightbox="../media/network-glitch-network-edit-column.msft.png":::
        Aktivieren der Spalte "Domäne"  
     :::image-end:::  
     
@@ -189,13 +189,13 @@ Wählen Sie eine Ressource aus, um weitere Informationen dazu zu erhalten.  Prob
 
 1.  Wählen Sie aus `getstarted.html` .  Die Registerkarte über **Schriften** wird angezeigt.  Verwenden Sie diese Registerkarte, um HTTP-Header zu überprüfen.  
     
-    :::image type="complex" source="../media/network-glitch-network-resources-headers.msft.png" alt-text="Die Registerkarte "Überschriften"" lightbox="../media/network-glitch-network-resources-headers.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-resources-headers.msft.png" alt-text="Die Registerkarte Überschriften" lightbox="../media/network-glitch-network-resources-headers.msft.png":::
        Die Registerkarte "über **Schriften** "  
     :::image-end:::  
     
 1.  Wählen Sie die Registerkarte **Vorschau** aus.  Eine grundlegende Darstellung des HTML-Code wird angezeigt.  
     
-    :::image type="complex" source="../media/network-glitch-network-resources-preview.msft.png" alt-text="Registerkarte "Vorschau"" lightbox="../media/network-glitch-network-resources-preview.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-resources-preview.msft.png" alt-text="Registerkarte Vorschau" lightbox="../media/network-glitch-network-resources-preview.msft.png":::
        Registerkarte " **Vorschau** "  
     :::image-end:::  
     
@@ -203,7 +203,7 @@ Wählen Sie eine Ressource aus, um weitere Informationen dazu zu erhalten.  Prob
 
 1.  Wählen Sie die Registerkarte **Antwort** aus.  Der HTML-Quellcode wird angezeigt.  
     
-    :::image type="complex" source="../media/network-glitch-network-resources-response.msft.png" alt-text="Die Registerkarte "Antwort"" lightbox="../media/network-glitch-network-resources-response.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-resources-response.msft.png" alt-text="Die Registerkarte Antwort" lightbox="../media/network-glitch-network-resources-response.msft.png":::
        Die Registerkarte " **Antwort** "  
     :::image-end:::  
     
@@ -212,13 +212,13 @@ Wählen Sie eine Ressource aus, um weitere Informationen dazu zu erhalten.  Prob
     
 1.  Wählen Sie die Registerkarte **Anzeige** Dauer aus.  Eine Aufschlüsselung der Netzwerkaktivität für die Ressource wird angezeigt.  
     
-    :::image type="complex" source="../media/network-glitch-network-resources-timing.msft.png" alt-text="Registerkarte "Anzeigedauer"" lightbox="../media/network-glitch-network-resources-timing.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-resources-timing.msft.png" alt-text="Registerkarte Anzeigedauer" lightbox="../media/network-glitch-network-resources-timing.msft.png":::
        Registerkarte " **Anzeige** Dauer"  
     :::image-end:::  
     
 1.  Wählen Sie **Schließen** \ ( ![ Schließen ][ImageCloseIcon] \) aus, um das Netzwerkprotokoll erneut anzuzeigen.  
     
-    :::image type="complex" source="../media/network-glitch-network-resources-close-tabs.msft.png" alt-text="Schaltfläche "Schließen"" lightbox="../media/network-glitch-network-resources-close-tabs.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-resources-close-tabs.msft.png" alt-text="Schaltfläche Schließen" lightbox="../media/network-glitch-network-resources-close-tabs.msft.png":::
        Schaltfläche " **Schließen** "  
     :::image-end:::  
     
@@ -244,13 +244,13 @@ Angenommen, Sie möchten beispielsweise überprüfen, ob Ihre Ressourcen angemes
     
 1.  Wählen Sie ein Ergebnis aus, um die Ressource anzuzeigen, in der das Ergebnis gefunden wurde.  Wenn Sie die Details der Ressource sehen möchten, wählen Sie ein Ergebnis aus, um direkt dorthin zu wechseln.  Wenn die Abfrage beispielsweise in einer Kopfzeile gefunden wurde, wird die Registerkarte Überschriften geöffnet.   Wenn die Abfrage im Inhalt gefunden wurde, wird die Registerkarte " **Antwort** " geöffnet.  
     
-    :::image type="complex" source="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png" alt-text="Auf der Registerkarte "Überschriften" hervorgehobenes Suchergebnis" lightbox="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png" alt-text="Auf der Registerkarte Überschriften hervorgehobenes Suchergebnis" lightbox="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png":::
        Auf der Registerkarte "über **Schriften** " hervorgehobenes Suchergebnis  
     :::image-end:::  
     
 1.  Schließen Sie den Suchbereich und die Registerkarte Überschriften.  
     
-    :::image type="complex" source="../media/network-glitch-network-search-close.msft.png" alt-text="Die Schaltflächen "Schließen"" lightbox="../media/network-glitch-network-search-close.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-search-close.msft.png" alt-text="Die Schaltflächen Schließen" lightbox="../media/network-glitch-network-search-close.msft.png":::
        Die Schaltflächen " **Schließen** "  
     :::image-end:::  
     
@@ -258,7 +258,7 @@ Angenommen, Sie möchten beispielsweise überprüfen, ob Ihre Ressourcen angemes
 
 DevTools bietet zahlreiche Workflows zum Filtern von Ressourcen, die für die jeweilige Aufgabe nicht relevant sind.  
 
-:::image type="complex" source="../media/network-glitch-network-filter-empty.msft.png" alt-text="Die Symbolleiste "Filter"" lightbox="../media/network-glitch-network-filter-empty.msft.png":::
+:::image type="complex" source="../media/network-glitch-network-filter-empty.msft.png" alt-text="Die Symbolleiste Filter" lightbox="../media/network-glitch-network-filter-empty.msft.png":::
    Die Symbolleiste " **Filter** "  
 :::image-end:::  
 
