@@ -73,7 +73,7 @@ Installieren und Einrichten der Skriptdebugger Tools in Visual Studio.
     1.  Wählen Sie unter den **Konfigurationseigenschaften**die Option **Debuggen**aus.  
     1.  Wählen Sie unter dem **Debuggertyp**die Option **JavaScript (WebView2)** aus.  
         
-        :::image type="complex" source="./media/enbjs.png" alt-text="Visual Studio-Konfigurationseigenschaft "Debuggen"" lightbox="./media/enbjs.png":::
+        :::image type="complex" source="./media/enbjs.png" alt-text="Visual Studio-Konfigurationseigenschaft Debuggen" lightbox="./media/enbjs.png":::
            Visual Studio-Konfigurationseigenschaft " **Debuggen** "  
         :::image-end:::  
         
@@ -131,7 +131,7 @@ Führen Sie in Visual Studio-Code die folgenden Aktionen aus, um den Code zu deb
     1.  Wählen Sie auf der Registerkarte **Ausführen** im Dropdownmenü die Option Startkonfiguration aus.  
     1.  Wenn Sie mit dem Debuggen der Anwendung beginnen möchten, wählen Sie Debuggen starten (das grüne Dreieck neben der Dropdownliste Startkonfiguration) aus.  
         
-        :::image type="complex" source="./media/runvs.png" alt-text=" Visual Studio-Registerkarte "Code ausführen"" lightbox="./media/runvs.png":::
+        :::image type="complex" source="./media/runvs.png" alt-text=" Visual Studio-Registerkarte Code ausführen" lightbox="./media/runvs.png":::
            Visual Studio-Registerkarte "Code ausführen"  
         :::image-end:::  
         
