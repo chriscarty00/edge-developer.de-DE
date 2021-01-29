@@ -39,7 +39,7 @@ Mit den folgenden Aufgaben können Sie die Formatvorlagen oder Attribute eines D
 *   Zeigen Sie auf das Element, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie über **prüfen**aus.  
 *   Wählen Sie `Control` + `Shift` + `C` \ (Windows, Linux \) oder `Command` + `Option` + `C` \ (macOS \) aus.  Weitere Informationen finden Sie unter [Tastenkombinationen für Microsoft Edge devtools][DevtoolsShortcutsIndex].  
 
-:::image type="complex" source="../media/bing-right-click-inspect.msft.png" alt-text="Die Option "überprüfen"" lightbox="../media/bing-right-click-inspect.msft.png":::
+:::image type="complex" source="../media/bing-right-click-inspect.msft.png" alt-text="Die Option überprüfen" lightbox="../media/bing-right-click-inspect.msft.png":::
    Die Option "über **prüfen** "  
 :::image-end:::  
 
@@ -132,7 +132,7 @@ Führen Sie die folgenden Aktionen aus, um die Einstellung für die `F12` Tasten
     
 1.  Wählen Sie **devtools öffnen aus, wenn die Taste F12 gedrückt wird** , um die Einstellung auf aus \ (oder auf \) umzuschalten.  Schalten Sie die Einstellung auf aus, um die Tastenkombination zu beenden, um `F12` devtools zu öffnen.  
     
-    :::image type="complex" source="../media/settings-developer-tools-f12-off.msft.png" alt-text="Die Option "devtools öffnen, wenn die Taste F12 gedrückt wird" ist deaktiviert" lightbox="../media/settings-developer-tools-f12-off.msft.png":::
+    :::image type="complex" source="../media/settings-developer-tools-f12-off.msft.png" alt-text="Die Option devtools öffnen, wenn die Taste F12 gedrückt wird ist deaktiviert" lightbox="../media/settings-developer-tools-f12-off.msft.png":::
        Die Option " **devtools öffnen, wenn die Taste F12 gedrückt wird** " ist deaktiviert  
     :::image-end:::  
     
