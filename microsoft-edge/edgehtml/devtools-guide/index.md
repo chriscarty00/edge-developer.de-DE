@@ -58,7 +58,7 @@ Die **Microsoft Edge \(EdgeHTML\) DevTools** sind [jetzt][DevtoolsGuideEdgehtmlW
 
 Um eine Seite lokal zu debuggen, starten Sie einfach die Microsoft Edge DevTools-App.  Im Bereich **Lokal** der Auswahl werden alle aktiven EdgeHTML-Inhaltsprozesse angezeigt, einschließlich der geöffneten Edge-Browser-Registerkarten, in denen [PWAs][PwasEdgehtmlIndex] \(`WWAHost.exe`-Prozesse\) und [WebView][HostingWebview]-Steuerelemente ausgeführt werden.  Wählen Sie das Ziel, das angehängt werden soll, und öffnen Sie eine neue Registerkarten-Instanz der DevTools.  
 
-:::image type="complex" source=".//media/chooser_local.png" alt-text="DevTools-App, Bereich "Lokal"":::
+:::image type="complex" source=".//media/chooser_local.png" alt-text="DevTools-App, Bereich Lokal":::
    DevTools-App, Bereich "Lokal"
 :::image-end:::
 
@@ -70,7 +70,7 @@ Die Microsoft Edge DevTools-App bietet grundlegende Unterstützung beim Debuggen
 
 Lesen Sie zu Beginn den Abschnitt [*Microsoft Edge DevTools*][DevtoolsProtocolEdgehtmlClientsEdgePreview] der Dokumente [DevTools-Protokoll][DevtoolsProtocolEdgehtmlIndex].  
 
-:::image type="complex" source="./media/chooser_remote.png" alt-text="DevTools-App, Bereich "Remote"":::
+:::image type="complex" source="./media/chooser_remote.png" alt-text="DevTools-App, Bereich Remote":::
    DevTools-App, Bereich "Remote"
 :::image-end:::
 
