@@ -73,7 +73,7 @@ DevTools zoomt automatisch auf den Teil der Aufzeichnung, in dem die meisten Akt
 
 Aktivieren Sie das Kontrollkästchen **Screenshots** , um einen Screenshot jedes Frames während der Aufzeichnung zu erfassen.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-capture-screenshots-checkbox.msft.png" alt-text="Das Kontrollkästchen "Screenshots"" lightbox="../media/evaluate-performance-performance-capture-screenshots-checkbox.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-capture-screenshots-checkbox.msft.png" alt-text="Das Kontrollkästchen Screenshots" lightbox="../media/evaluate-performance-performance-capture-screenshots-checkbox.msft.png":::
    Das Kontrollkästchen " **Screenshots** "  
 :::image-end:::  
 
@@ -91,7 +91,7 @@ Wenn Sie eine Seite aufzeichnen, wählen Sie **Garbage** Collection durchführen
 
 Wählen Sie **aufnahmeeinstellungen** \ ( ![ Aufnahmeeinstellungen ][ImageCaptureSettingsIcon] \) aus, um weitere Einstellungen anzuzeigen, die sich darauf beziehen, wie devtools Leistungs Aufzeichnungen erfasst.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png" alt-text="Abschnitt "Aufnahmeeinstellungen"" lightbox="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png" alt-text="Abschnitt Aufnahmeeinstellungen" lightbox="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png":::
    Abschnitt " **aufnahmeeinstellungen** "  
 :::image-end:::  
 
@@ -221,7 +221,7 @@ Verwenden Sie den **Haupt** Abschnitt, um die Aktivitäten anzuzeigen, die im Ha
 
 Wählen Sie ein Ereignis aus, um weitere Informationen dazu auf der Registerkarte " **Zusammenfassung** " anzuzeigen.  DevTools skizziert das ausgewählte Ereignis.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-summary-me.msft.png" alt-text="Weitere Informationen zur anonymen Funktion auf der Registerkarte "Zusammenfassung"" lightbox="../media/evaluate-performance-performance-summary-me.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-summary-me.msft.png" alt-text="Weitere Informationen zur anonymen Funktion auf der Registerkarte Zusammenfassung" lightbox="../media/evaluate-performance-performance-summary-me.msft.png":::
    Weitere Informationen zur `anonymous` Funktion auf der Registerkarte " **Zusammenfassung** "  
 :::image-end:::  
 
@@ -264,7 +264,7 @@ Verwenden Sie die Registerkarte **anrufstruktur** , um anzuzeigen, welche [Stamm
 
 Die Registerkarte " **anrufstruktur** " zeigt nur Aktivitäten während des ausgewählten Teils der Aufzeichnung an.  Navigieren [Sie zum Auswählen eines Teils einer Aufzeichnung](#select-a-portion-of-a-recording) , um zu erfahren, wie Sie Abschnitte auswählen.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-call-tree.msft.png" alt-text="Die Registerkarte "anrufstruktur"" lightbox="../media/evaluate-performance-performance-call-tree.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-call-tree.msft.png" alt-text="Die Registerkarte anrufstruktur" lightbox="../media/evaluate-performance-performance-call-tree.msft.png":::
    Die Registerkarte " **anrufstruktur** "  
 :::image-end:::  
 
@@ -286,7 +286,7 @@ Verwenden Sie die Registerkarte " **Bottom-up** ", um anzuzeigen, welche Aktivit
 
 Auf der Registerkarte **Bottom-up** werden nur Aktivitäten während des ausgewählten Teils der Aufzeichnung angezeigt.  Navigieren [Sie zum Auswählen eines Teils einer Aufzeichnung](#select-a-portion-of-a-recording) , um zu erfahren, wie Sie Abschnitte auswählen.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-bottoms-up.msft.png" alt-text="Die Registerkarte "Bottom-Up"" lightbox="../media/evaluate-performance-performance-bottoms-up.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-bottoms-up.msft.png" alt-text="Die Registerkarte Bottom-Up" lightbox="../media/evaluate-performance-performance-bottoms-up.msft.png":::
    Die Registerkarte " **Bottom-up** "  
 :::image-end:::  
 
@@ -302,7 +302,7 @@ Verwenden Sie die Registerkarte **Ereignisprotokoll** , um Aktivitäten in der R
 
 Die Registerkarte **Ereignisprotokoll** zeigt nur Aktivitäten während des ausgewählten Teils der Aufzeichnung an.  Navigieren [Sie zum Auswählen eines Teils einer Aufzeichnung](#select-a-portion-of-a-recording) , um zu erfahren, wie Sie Abschnitte auswählen.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-event-log.msft.png" alt-text="Die Registerkarte "Ereignisprotokoll"" lightbox="../media/evaluate-performance-performance-event-log.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-event-log.msft.png" alt-text="Die Registerkarte Ereignisprotokoll" lightbox="../media/evaluate-performance-performance-event-log.msft.png":::
    Die Registerkarte " **Ereignisprotokoll** "  
 :::image-end:::  
 
@@ -340,7 +340,7 @@ Raster Aktivitäten im **Raster** Abschnitt anzeigen
 
 Verwenden Sie den Abschnitt **Interaktionen** , um Benutzerinteraktionen zu suchen und zu analysieren, die während der Aufzeichnung aufgetreten sind.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-interactions-animation.msft.png" alt-text="Abschnitt "Interaktionen"" lightbox="../media/evaluate-performance-performance-interactions-animation.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-interactions-animation.msft.png" alt-text="Abschnitt Interaktionen" lightbox="../media/evaluate-performance-performance-interactions-animation.msft.png":::
    Abschnitt " **Interaktionen** "  
 :::image-end:::  
 
@@ -378,7 +378,7 @@ Zeigen Sie mit der Maus auf einen Frame, um eine QuickInfo mit weiteren Informat
 
 Wählen Sie einen Frame aus, um weitere Informationen zum Frame auf der Registerkarte " **Zusammenfassung** " anzuzeigen.  DevTools konturiert den markierten Frame in blau.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-frames-summary.msft.png" alt-text="Anzeigen eines Frames auf der Registerkarte "Zusammenfassung"" lightbox="../media/evaluate-performance-performance-frames-summary.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-frames-summary.msft.png" alt-text="Anzeigen eines Frames auf der Registerkarte Zusammenfassung" lightbox="../media/evaluate-performance-performance-frames-summary.msft.png":::
    Anzeigen eines Frames auf der Registerkarte " **Zusammenfassung** "  
 :::image-end:::  
 
@@ -386,7 +386,7 @@ Wählen Sie einen Frame aus, um weitere Informationen zum Frame auf der Register
 
 Erweitern Sie den Abschnitt **Netzwerk** , um einen Wasserfall von Netzwerkanforderungen anzuzeigen, die während der Aufzeichnung aufgetreten sind.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-network.msft.png" alt-text="Der Abschnitt "Netzwerk"" lightbox="../media/evaluate-performance-performance-network.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-network.msft.png" alt-text="Der Abschnitt Netzwerk" lightbox="../media/evaluate-performance-performance-network.msft.png":::
    Der Abschnitt " **Netzwerk** "  
 :::image-end:::  
 
@@ -425,7 +425,7 @@ In der ersten der folgenden Zahlen wird die Anforderung für `www.bing.com` durc
 
 Aktivieren Sie das Kontrollkästchen **Speicher** , um Speicher Metriken aus der letzten Aufzeichnung anzuzeigen.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-memory-highlight.msft.png" alt-text="Das Kontrollkästchen "Speicher"" lightbox="../media/evaluate-performance-performance-memory-highlight.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-memory-highlight.msft.png" alt-text="Das Kontrollkästchen Speicher" lightbox="../media/evaluate-performance-performance-memory-highlight.msft.png":::
    Das Kontrollkästchen " **Speicher** "  
 :::image-end:::  
 
@@ -460,13 +460,13 @@ Zeigen Sie mit der Maus auf die **Übersicht** , um einen Screenshot zu sehen, w
 
 Sie können Screenshots auch anzeigen, indem Sie im Abschnitt **Frames** einen Frame auswählen.  DevTools zeigt eine kleine Version des Screenshots auf der Registerkarte " **Zusammenfassung** " an.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-summary-preview.msft.png" alt-text="Anzeigen eines Screenshots auf der Registerkarte "Zusammenfassung"" lightbox="../media/evaluate-performance-performance-summary-preview.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-summary-preview.msft.png" alt-text="Anzeigen eines Screenshots auf der Registerkarte Zusammenfassung" lightbox="../media/evaluate-performance-performance-summary-preview.msft.png":::
    Anzeigen eines Screenshots auf der Registerkarte " **Zusammenfassung** "  
 :::image-end:::  
 
 Wählen Sie die Miniaturansicht auf der Registerkarte " **Zusammenfassung** " aus, um den Screenshot zu vergrößern.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-summary-preview-select.msft.png" alt-text="Vergrößern eines Screenshots über die Registerkarte "Zusammenfassung"" lightbox="../media/evaluate-performance-performance-summary-preview-select.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-summary-preview-select.msft.png" alt-text="Vergrößern eines Screenshots über die Registerkarte Zusammenfassung" lightbox="../media/evaluate-performance-performance-summary-preview-select.msft.png":::
    Vergrößern eines Screenshots über die Registerkarte " **Zusammenfassung** "  
 :::image-end:::  
 
@@ -477,7 +477,7 @@ So zeigen Sie erweiterte Folieninformationen zu einem Frame an:
 1.  [Aktivieren der erweiterten Farb Instrumentation](#turn-on-advanced-paint-instrumentation)  
 1.  Wählen Sie im Abschnitt **Frames** einen Frame aus.  DevTools zeigt Informationen zu den Ebenen auf der Registerkarte "neue **Ebenen** " neben der Registerkarte " **Ereignisprotokoll** " an.  
     
-    :::image type="complex" source="../media/evaluate-performance-layers-all.msft.png" alt-text="Der Bereich "Ebenen"" lightbox="../media/evaluate-performance-layers-all.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-layers-all.msft.png" alt-text="Der Bereich Ebenen" lightbox="../media/evaluate-performance-layers-all.msft.png":::
        Der Bereich " **Ebenen** "  
     :::image-end:::  
     
@@ -500,7 +500,7 @@ So zeigen Sie erweiterte Informationen zu einem Paint-Ereignis an:
 1.  [Aktivieren Sie](#turn-on-advanced-paint-instrumentation).  
 1.  Wählen Sie im **Haupt** Abschnitt ein **Paint** -Ereignis aus.  
     
-    :::image type="complex" source="../media/evaluate-performance-paint-profiler.msft.png" alt-text="Die Registerkarte "Paint-Profiler"" lightbox="../media/evaluate-performance-paint-profiler.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-paint-profiler.msft.png" alt-text="Die Registerkarte Paint-Profiler" lightbox="../media/evaluate-performance-paint-profiler.msft.png":::
        Die Registerkarte " **Paint-Profiler** "  
     :::image-end:::  
     
@@ -513,7 +513,7 @@ So öffnen Sie die Registerkarte " **Rendering** ":
 1.  [Öffnen des Befehlsmenüs][DevToolsCommandMenu]  
 1.  Beginnen `Rendering` Sie mit der Eingabe, und wählen Sie aus `Show Rendering` .  DevTools zeigt die Registerkarte " **Rendering** " am unteren Rand des devtools-Fensters an.  
     
-    :::image type="complex" source="../media/evaluate-performance-console-drawer-rendering.msft.png" alt-text="Die Registerkarte "Rendern"" lightbox="../media/evaluate-performance-console-drawer-rendering.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-console-drawer-rendering.msft.png" alt-text="Die Registerkarte Rendern" lightbox="../media/evaluate-performance-console-drawer-rendering.msft.png":::
        Die Registerkarte " **Rendern** "  
     :::image-end:::  
     
