@@ -26,7 +26,7 @@ Installieren Sie das [Surface Duo SDK][MicrosoftDownload100847] , bevor Sie den 
 
 Öffnen Sie eine Desktop Instanz von [Microsoft Edge][MicrosoftEdge], und navigieren Sie zu `edge://inspect` .  
 
-:::image type="complex" source="../media/remote-debugging-surface-duo-inspect-page.msft.png" alt-text="Die Seite "Edge://Inspect" in Microsoft Edge auf dem Desktop" lightbox="../media/remote-debugging-surface-duo-inspect-page.msft.png":::
+:::image type="complex" source="../media/remote-debugging-surface-duo-inspect-page.msft.png" alt-text="Die Seite Edge://Inspect in Microsoft Edge auf dem Desktop" lightbox="../media/remote-debugging-surface-duo-inspect-page.msft.png":::
    Die `edge://inspect` Seite in Microsoft Edge auf dem Desktop  
 :::image-end:::
 
@@ -55,7 +55,7 @@ Navigieren Sie in der [Microsoft Edge-App][GooglePlayStoreAppsComMicrosoftEmmx]z
 
 Wechseln Sie zurück zur Desktop Instanz von [Microsoft Edge][MicrosoftEdge].  `edge://inspect`Auf der Seite wird nun der **SurfaceDuoEmulator** mit einer Liste der geöffneten Registerkarten oder [PWAs][ProgressiveWebAppsIndex] angezeigt, die auf dem [Surface Duo-Emulator][DualScreenAndroidUseEmulator]ausgeführt werden.  
 
-:::image type="complex" source="../media/remote-debugging-surface-duo-inspect-page-with-targets.msft.png" alt-text="Auf der Seite "Edge://Inspect" wird eine Liste der geöffneten Registerkarten in der Microsoft Edge-App angezeigt, die auf dem Emulator ausgeführt wird." lightbox="../media/remote-debugging-surface-duo-inspect-page-with-targets.msft.png":::
+:::image type="complex" source="../media/remote-debugging-surface-duo-inspect-page-with-targets.msft.png" alt-text="Auf der Seite Edge://Inspect wird eine Liste der geöffneten Registerkarten in der Microsoft Edge-App angezeigt, die auf dem Emulator ausgeführt wird." lightbox="../media/remote-debugging-surface-duo-inspect-page-with-targets.msft.png":::
    `edge://inspect`Auf der Seite wird eine Liste der geöffneten Registerkarten in der Microsoft Edge-App angezeigt, die auf dem Emulator ausgeführt wird.  
 :::image-end:::  
 
