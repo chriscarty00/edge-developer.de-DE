@@ -48,7 +48,7 @@ Wenn Sie den Namen der Ressource kennen, die Sie überprüfen möchten, bietet d
     
 1.  Wählen Sie die Datei aus der Dropdownliste aus, oder beginnen Sie mit der Eingabe des Datei namens, und wählen Sie `Enter` im Feld AutoVervollständigen die richtige Datei hervorgehoben aus.  
     
-    :::image type="complex" source="../media/resources-command-menu-file-search.msft.png" alt-text="Geben Sie im Dialogfeld "Datei öffnen" einen Dateinamen ein." lightbox="../media/resources-command-menu-file-search.msft.png":::
+    :::image type="complex" source="../media/resources-command-menu-file-search.msft.png" alt-text="Geben Sie im Dialogfeld Datei öffnen einen Dateinamen ein." lightbox="../media/resources-command-menu-file-search.msft.png":::
        Geben Sie im Dialogfeld " **Datei öffnen** " einen Dateinamen ein.  
     :::image-end:::  
     
@@ -112,13 +112,13 @@ Standardmäßig werden im **Seiten** Bereich Ressourcen nach Verzeichnis gruppie
 1.  Öffnen des **Seiten** Bereichs  Navigieren Sie nach [Verzeichnis durchsuchen](#browse-by-directory).  
 1.  Wählen Sie **Weitere Optionen** aus `...` , und deaktivieren Sie " **Gruppieren nach"**.  
     
-    :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text="Die Option "Gruppieren nach"" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
+    :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text="Die Option Gruppieren nach" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
        Die Option **"Gruppieren nach"**  
     :::image-end:::  
     
     Ressourcen sind nach Dateityp geordnet.  Innerhalb der einzelnen Dateitypen werden die Ressourcen alphabetisch geordnet.  
     
-    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="Seitenbereich nach Deaktivierung des Ordners "Gruppieren nach"" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
+    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="Seitenbereich nach Deaktivierung des Ordners Gruppieren nach" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
        **Seiten** Bereich nach Deaktivierung des **Ordners "Gruppieren nach"**  
     :::image-end:::  
     
@@ -134,7 +134,7 @@ So gruppieren Sie Ressourcen basierend auf Ihrem Dateityp zusammen:
     
 1.  Scrollen Sie nach unten zum Bereich **Frames** .  
     
-    :::image type="complex" source="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png" alt-text="Der Bereich "Frames"" lightbox="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png":::
+    :::image type="complex" source="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png" alt-text="Der Bereich Frames" lightbox="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png":::
        Der Bereich " **Frames** "  
     :::image-end:::  
     
