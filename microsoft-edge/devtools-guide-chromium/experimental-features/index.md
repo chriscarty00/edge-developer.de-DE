@@ -125,7 +125,7 @@ Dieses experimentelle Feature bietet eine Reihe neuer Visualisierungen, die Sie 
 
 Das **Tool "Inspect"** bietet eine schnelle Möglichkeit, CSS-Rasterlayouts in einer Website zu identifizieren und zu visualisieren, indem Sie mit der Maus auf sie zeigen.  Klicken Sie **in der** oberen linken Ecke von DevTools auf das Symbol Überprüfen\( Überprüfen ![ ][ImageInspectIcon] \) .  Zeigen Sie dann auf der Website, die Sie debuggen, auf ein Grid-Element.  Um das Raster herum werden Gliederungen angezeigt, und die Schattierung gibt die Position von Rasterlücken an, falls vorhanden.  
 
-:::image type="complex" source="../media/grid-inspect.msft.png" alt-text="Anzeigen von Rastern mit dem Tool "Überprüfen"" lightbox="../media/grid-inspect.msft.png":::
+:::image type="complex" source="../media/grid-inspect.msft.png" alt-text="Anzeigen von Rastern mit dem Tool Überprüfen" lightbox="../media/grid-inspect.msft.png":::
    Anzeigen von Rastern mit dem **Tool "Überprüfen"**  
 :::image-end:::  
 
@@ -141,7 +141,7 @@ Die beiden Möglichkeiten zum Umschalten einer persistenten Rasterüberlagerung.
 
 *   Wählen Sie das **Symbol "Raster-Oval"** neben einem beliebigen Rasterelement aus, das in der STRUKTUR des Elements **angezeigt** wird.  
     
-    :::image type="complex" source="../media/grid-adorner.msft.png" alt-text="Symbol "Raster oval" im Tool "Elemente"" lightbox="../media/grid-adorner.msft.png":::
+    :::image type="complex" source="../media/grid-adorner.msft.png" alt-text="Symbol Raster oval im Tool Elemente" lightbox="../media/grid-adorner.msft.png":::
        Symbol "Raster oval" im **Tool "Elemente"**  
     :::image-end:::  
     
@@ -217,7 +217,7 @@ Nachdem Sie das Experiment aktiviert haben, stellen Sie sicher, dass Sie die Dev
 1.  Aktivieren Sie **im Abschnitt "Quellauftragsanzeige"** das Kontrollkästchen "Quellbestellung anzeigen". ****  
 1.  Markieren Sie alle HTML-Elemente, um eine Überlagerung in der Reihenfolge in der Seitenquelle anzeigen.  
     
-:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="Quellreihenfolgeanzeige im Bereich "Barrierefreiheit"" lightbox="../media/experiments-source-order-viewer.msft.png":::
+:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="Quellreihenfolgeanzeige im Bereich Barrierefreiheit" lightbox="../media/experiments-source-order-viewer.msft.png":::
    **Quellreihenfolgeanzeige** im Bereich **"Barrierefreiheit"**  
 :::image-end:::  
 
@@ -234,7 +234,7 @@ Wenn das **Experiment "Tastenkombination-Editor** aktivieren" aktiviert ist, kö
 1.  Wählen Sie die Aktion aus, die Sie anpassen möchten.  
 1.  Wählen Sie **das Symbol "Bearbeiten** \( ![ EditKeyboardShortcut ][ImageEditKeyboardShortcutIcon] \)" aus.  
     
-    :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="Auswählen der anzupassenden Aktion auf der Seite "Verknüpfungen" in den Einstellungen" lightbox="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
+    :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="Auswählen der anzupassenden Aktion auf der Seite Verknüpfungen in den Einstellungen" lightbox="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
        Auswählen der anzupassenden Aktion auf der Seite **"Verknüpfungen"** in den [Einstellungen][DevToolsCustomizeSettings]
     :::image-end:::  
     
