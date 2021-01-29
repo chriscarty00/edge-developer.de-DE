@@ -51,7 +51,7 @@ Führen Sie die folgenden Schritte aus, um die Aufzeichnung von Anforderungen zu
 
 Wählen Sie im Netzwerk Panel die Option **"Löschen"** ![ ][ImageClearIcon] aus, um alle Anforderungen aus der Tabelle "Anforderungen" zu löschen. ****  
 
-:::image type="complex" source="../media/network-network-clear-button.msft.png" alt-text="Die Schaltfläche "Löschen"" lightbox="../media/network-network-clear-button.msft.png":::
+:::image type="complex" source="../media/network-network-clear-button.msft.png" alt-text="Die Schaltfläche Löschen" lightbox="../media/network-network-clear-button.msft.png":::
    Die Schaltfläche " **Löschen** "  
 :::image-end:::  
 
@@ -59,7 +59,7 @@ Wählen Sie im Netzwerk Panel die Option **"Löschen"** ![ ][ImageClearIcon] aus
 
 Wenn Sie Anforderungen zwischen Seitenlasten speichern möchten, aktivieren Sie im **Netzwerk** Panel das Kontrollkästchen **Protokoll beibehalten** .  DevTools speichert alle Anforderungen, bis Sie **Protokoll beibehalten**deaktivieren.  
 
-:::image type="complex" source="../media/network-network-preserve-log.msft.png" alt-text="Kontrollkästchen "Protokoll beibehalten"" lightbox="../media/network-network-preserve-log.msft.png":::
+:::image type="complex" source="../media/network-network-preserve-log.msft.png" alt-text="Kontrollkästchen Protokoll beibehalten" lightbox="../media/network-network-preserve-log.msft.png":::
    Kontrollkästchen " **Protokoll beibehalten** "  
 :::image-end:::  
 
@@ -97,7 +97,7 @@ Nachdem Sie einen Screenshot aufgezeichnet haben, interagieren Sie mit ihm auf d
 
 Aktivieren Sie das Kontrollkästchen **Cache deaktivieren** , um zu emulieren, wie ein Erstbenutzer Ihre Website erlebt.  DevTools deaktiviert den Browsercache.  Dieses Feature emuliert die Benutzerfreundlichkeit des ersten Benutzers genauer, da Anforderungen im Browser-Cache für wiederholte Besuche bereitgestellt werden.  
 
-:::image type="complex" source="../media/network-network-disable-cache-checkbox.msft.png" alt-text="Kontrollkästchen "Cache deaktivieren"" lightbox="../media/network-network-disable-cache-checkbox.msft.png":::
+:::image type="complex" source="../media/network-network-disable-cache-checkbox.msft.png" alt-text="Kontrollkästchen Cache deaktivieren" lightbox="../media/network-network-disable-cache-checkbox.msft.png":::
    Kontrollkästchen " **Cache deaktivieren** "  
 :::image-end:::  
 
@@ -134,7 +134,7 @@ Wählen Sie das Dropdownmenü **Online** aus, suchen Sie unter **Voreinstellunge
 
 Emulieren Sie langsames 3G, fast 3G und andere Verbindungsgeschwindigkeiten über das **Online-Dropdown-** Menü.  
 
-:::image type="complex" source="../media/network-network-throttling-menu.msft.png" alt-text="Dropdownmenü "Drosselung"" lightbox="../media/network-network-throttling-menu.msft.png":::
+:::image type="complex" source="../media/network-network-throttling-menu.msft.png" alt-text="Dropdownmenü Drosselung" lightbox="../media/network-network-throttling-menu.msft.png":::
    Dropdownmenü " **Drosselung** "  
 :::image-end:::  
 
@@ -178,7 +178,7 @@ Verwenden Sie das Textfeld **Filtern** , um Anforderungen nach Eigenschaften wie
 Wenn das Textfeld nicht angezeigt wird, ist der **Filter** Bereich wahrscheinlich ausgeblendet.  
 Wenn Sie weitere Informationen erhalten möchten, navigieren Sie zum [Ausblenden des Filters-Bereichs](#hide-the-filters-pane).  
 
-:::image type="complex" source="../media/network-network-filters-textbox.msft.png" alt-text="Das Textfeld "Filter"" lightbox="../media/network-network-filters-textbox.msft.png":::
+:::image type="complex" source="../media/network-network-filters-textbox.msft.png" alt-text="Das Textfeld Filter" lightbox="../media/network-network-filters-textbox.msft.png":::
    Das Textfeld " **Filter** "  
 :::image-end:::  
 
@@ -291,7 +291,7 @@ Wenn Sie weitere Informationen erhalten möchten, navigieren Sie zum [Ausblenden
 
 Wenn Sie mehrere Typen Filter gleichzeitig aktivieren möchten, halten `Control` Sie \ (Windows, Linux \) oder `Command` \ (macOS \) gedrückt, und wählen Sie dann aus.  
 
-:::image type="complex" source="../media/network-network-type-filters.msft.png" alt-text="Verwenden des Typs "Filter" zum Anzeigen von JS-, CSS-und Dokument Ressourcen" lightbox="../media/network-network-type-filters.msft.png":::
+:::image type="complex" source="../media/network-network-type-filters.msft.png" alt-text="Verwenden des Typs Filter zum Anzeigen von JS-, CSS-und Dokument Ressourcen" lightbox="../media/network-network-type-filters.msft.png":::
    Verwenden des Typs "Filter" zum Anzeigen von JS-, CSS-und Dokument Ressourcen  
 :::image-end:::  
 
@@ -309,7 +309,7 @@ Wählen Sie aus, und ziehen **Sie im Übersichtsbereich nach** Links oder rechts
 
 Wenn Sie die Anforderungen ausblenden möchten, deaktivieren Sie das Kontrollkästchen **Daten-URLs ausblenden** .  
 
-:::image type="complex" source="../media/network-network-hide-data-urls.msft.png" alt-text="Das Kontrollkästchen "Daten-URLs ausblenden"" lightbox="../media/network-network-hide-data-urls.msft.png":::
+:::image type="complex" source="../media/network-network-hide-data-urls.msft.png" alt-text="Das Kontrollkästchen Daten-URLs ausblenden" lightbox="../media/network-network-hide-data-urls.msft.png":::
    Das Kontrollkästchen " **Daten-URLs ausblenden** "  
 :::image-end:::  
 
@@ -381,7 +381,7 @@ Verwenden Sie das Netzwerk Panel, um Anforderungen zu analysieren.
 
 Verwenden Sie die Tabelle "Anforderungen", um ein Protokoll aller Anforderungen anzuzeigen, die während der devtools geöffnet wurden.  Wenn Sie weitere Informationen zu den einzelnen Elementen sehen möchten, wählen oder zeigen Sie auf Anfragen.  
 
-:::image type="complex" source="../media/network-network-requests-table.msft.png" alt-text="Die Tabelle "Anforderungen"" lightbox="../media/network-network-requests-table.msft.png":::
+:::image type="complex" source="../media/network-network-requests-table.msft.png" alt-text="Die Tabelle Anforderungen" lightbox="../media/network-network-requests-table.msft.png":::
    Die Tabelle "Anforderungen"  
 :::image-end:::  
 
@@ -453,7 +453,7 @@ In der Tabelle Anforderungen werden standardmäßig die folgenden Spalten angeze
 
 Zeigen Sie auf die Kopfzeile der Tabelle Anforderungen, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie eine Option aus, um sie auszublenden oder anzuzeigen.  Die aktuell angezeigten Optionen verfügen über Kontrollkästchen neben den einzelnen Elementen.  
 
-:::image type="complex" source="../media/network-network-requests-add-column.msft.png" alt-text="Hinzufügen einer Spalte zur Tabelle "Anforderungen"" lightbox="../media/network-network-requests-add-column.msft.png":::
+:::image type="complex" source="../media/network-network-requests-add-column.msft.png" alt-text="Hinzufügen einer Spalte zur Tabelle Anforderungen" lightbox="../media/network-network-requests-add-column.msft.png":::
    Hinzufügen einer Spalte zur Tabelle "Anforderungen"  
 :::image-end:::  
 
@@ -461,7 +461,7 @@ Zeigen Sie auf die Kopfzeile der Tabelle Anforderungen, öffnen Sie das Kontextm
 
 Wenn Sie der Tabelle Anforderungen eine benutzerdefinierte Spalte hinzufügen möchten, zeigen Sie auf die Kopfzeile der Tabelle Anforderungen, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie **Antwortheader**  >  **Verwalten von Kopfzeilen Spalten**aus.  
 
-:::image type="complex" source="../media/network-network-requests-add-custom.msft.png" alt-text="Hinzufügen einer benutzerdefinierten Spalte zur Tabelle "Anforderungen"" lightbox="../media/network-network-requests-add-custom.msft.png":::
+:::image type="complex" source="../media/network-network-requests-add-custom.msft.png" alt-text="Hinzufügen einer benutzerdefinierten Spalte zur Tabelle Anforderungen" lightbox="../media/network-network-requests-add-custom.msft.png":::
    Hinzufügen einer benutzerdefinierten Spalte zur Tabelle "Anforderungen"  
 :::image-end:::  
 
@@ -473,7 +473,7 @@ Anforderungen, die weiter Links sind, wurden früher als die Anforderungen weite
 
 Wenn Sie die verschiedenen Möglichkeiten zum Sortieren des Wasserfalls überprüfen möchten, navigieren Sie zu nach [Aktivitätsphase sortieren](#sort-by-activity-phase).  
 
-:::image type="complex" source="../media/network-network-requests-waterfall.msft.png" alt-text="Spalte "Wasserfall" im Bereich "Anforderungen"" lightbox="../media/network-network-requests-waterfall.msft.png":::
+:::image type="complex" source="../media/network-network-requests-waterfall.msft.png" alt-text="Spalte Wasserfall im Bereich "Anforderungen"" lightbox="../media/network-network-requests-waterfall.msft.png":::
    Spalte "Wasserfall" im Bereich " **Anforderungen** "  
 :::image-end:::  
 
@@ -514,7 +514,7 @@ Führen Sie die folgenden Schritte aus, um eine Vorschau eines Antworttexts anzu
 
 Die Registerkarte Vorschau ist meist nützlich, um Bilder anzuzeigen.  
 
-:::image type="complex" source="../media/network-network-resources-preview.msft.png" alt-text="Registerkarte "Vorschau"" lightbox="../media/network-network-resources-preview.msft.png":::
+:::image type="complex" source="../media/network-network-resources-preview.msft.png" alt-text="Registerkarte Vorschau" lightbox="../media/network-network-resources-preview.msft.png":::
    Registerkarte " **Vorschau** "  
 :::image-end:::  
 
@@ -525,7 +525,7 @@ Führen Sie die folgenden Schritte aus, um den Antworttext einer Anforderung anz
 1.  Wählen Sie die URL der Anforderung unter der Spalte **Name** der Tabelle Anforderungen aus.  
 1.  Wählen Sie die Registerkarte **Antwort** aus.  
 
-:::image type="complex" source="../media/network-network-resources-response.msft.png" alt-text="Die Registerkarte "Antwort"" lightbox="../media/network-network-resources-response.msft.png":::
+:::image type="complex" source="../media/network-network-resources-response.msft.png" alt-text="Die Registerkarte Antwort" lightbox="../media/network-network-resources-response.msft.png":::
    Die Registerkarte " **Antwort** "  
 :::image-end:::  
 
@@ -536,7 +536,7 @@ Führen Sie die folgenden Schritte aus, um HTTP-Header Daten zu einer Anforderun
 1.  Wählen Sie die URL der Anforderung unter der Spalte **Name** der Tabelle Anforderungen aus.  
 1.  Wählen Sie die Registerkarte über **Schriften** aus.  
 
-:::image type="complex" source="../media/network-resources-headers.msft.png" alt-text="Die Registerkarte "Überschriften"" lightbox="../media/network-resources-headers.msft.png":::
+:::image type="complex" source="../media/network-resources-headers.msft.png" alt-text="Die Registerkarte Überschriften" lightbox="../media/network-resources-headers.msft.png":::
    Die Registerkarte "über **Schriften** "  
 :::image-end:::  
 
@@ -584,7 +584,7 @@ Führen Sie die folgenden Schritte aus, um die im HTTP-Header einer Anforderung 
 <!--[ManageDataCookiesFields]: manage-data/cookies#fields  -->  
 <!--TODO: add link when section is available -->  
 
-:::image type="complex" source="../media/network-network-resources-cookies.msft.png" alt-text="Die Registerkarte "Cookies"" lightbox="../media/network-network-resources-cookies.msft.png":::
+:::image type="complex" source="../media/network-network-resources-cookies.msft.png" alt-text="Die Registerkarte Cookies" lightbox="../media/network-network-resources-cookies.msft.png":::
    Die Registerkarte "Cookies"  
 :::image-end:::  
 
@@ -599,7 +599,7 @@ Um eine schnellere Möglichkeit für den Zugriff auf die Daten zu erhalten, navi
 
 Weitere Informationen zu den einzelnen Phasen, die möglicherweise auf der Registerkarte **Anzeige** Dauer angezeigt werden, finden Sie unter [erläuterte](#timing-breakdown-phases-explained)Phasen der Anzeigedauer.  
 
-:::image type="complex" source="../media/network-network-resources-timing.msft.png" alt-text="Registerkarte "Anzeigedauer"" lightbox="../media/network-network-resources-timing.msft.png":::
+:::image type="complex" source="../media/network-network-resources-timing.msft.png" alt-text="Registerkarte Anzeigedauer" lightbox="../media/network-network-resources-timing.msft.png":::
    Registerkarte " **Anzeige** Dauer"  
 :::image-end:::  
 
@@ -811,7 +811,7 @@ Nachdem Sie eine har-Datei gespeichert haben, können Sie Sie für die Analyse w
 <!--[HARAnalyzer]: https://toolbox.alphabetapps.com/apps/har_analyzer  -->  
 <!--Todo: add section link when content is available  -->  
 
-:::image type="complex" source="../media/network-network-requests-save-har-content.msft.png" alt-text="Auswählen von "als har mit Inhalt speichern"" lightbox="../media/network-network-requests-save-har-content.msft.png":::
+:::image type="complex" source="../media/network-network-requests-save-har-content.msft.png" alt-text="Auswählen von als har mit Inhalt speichern" lightbox="../media/network-network-requests-save-har-content.msft.png":::
    Auswählen **von "als har mit Inhalt speichern** "  
 :::image-end:::  
 
@@ -931,7 +931,7 @@ Sie können Abschnitte der **Netzwerk** Panel-UI erweitern oder reduzieren, um w
 Standardmäßig zeigt devtools den Bereich " **Filter** " an.  
 Wählen Sie **Filter** \ ( ![ Filter ][ImageFilterIcon] \) aus, um sie auszublenden.  
 
-:::image type="complex" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text="Schaltfläche "Filter ausblenden"" lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
+:::image type="complex" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text="Schaltfläche Filter ausblenden" lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
    Schaltfläche "Filter ausblenden"  
 :::image-end:::  
 
@@ -939,13 +939,13 @@ Wählen Sie **Filter** \ ( ![ Filter ][ImageFilterIcon] \) aus, um sie auszublen
 
 Verwenden Sie große Zeilen, wenn in Ihrer Netzwerk Anforderungstabelle mehr Leerzeichen verwendet werden sollen.  Einige Spalten liefern auch ein wenig mehr Informationen, wenn Sie große Zeilen verwenden.  Der untere Wert der Spalte **size** entspricht beispielsweise der unkomprimierten Größe einer Anforderung.  
 
-:::image type="complex" source="../media/network-network-requests-large-request-rows.msft.png" alt-text="Ein Beispiel für große Anforderungs Zeilen im Bereich "Anforderungen"" lightbox="../media/network-network-requests-large-request-rows.msft.png":::
+:::image type="complex" source="../media/network-network-requests-large-request-rows.msft.png" alt-text="Ein Beispiel für große Anforderungs Zeilen im Bereich Anforderungen" lightbox="../media/network-network-requests-large-request-rows.msft.png":::
    Ein Beispiel für große Anforderungs Zeilen im Bereich " **Anforderungen** "  
 :::image-end:::  
 
 Wenn Sie große Zeilen aktivieren möchten, aktivieren Sie das Kontrollkästchen **große Anforderungs Zeilen verwenden** .  
 
-:::image type="complex" source="../media/network-network-requests-use-large-request-rows-on.msft.png" alt-text="Das Kontrollkästchen "große Anforderungs Zeilen verwenden"" lightbox="../media/network-network-requests-use-large-request-rows-on.msft.png":::
+:::image type="complex" source="../media/network-network-requests-use-large-request-rows-on.msft.png" alt-text="Das Kontrollkästchen große Anforderungs Zeilen verwenden" lightbox="../media/network-network-requests-use-large-request-rows-on.msft.png":::
    Das Kontrollkästchen " **große Anforderungs Zeilen verwenden** "  
 :::image-end:::  
 
