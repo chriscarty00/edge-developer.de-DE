@@ -63,7 +63,7 @@ Wenn Sie an einem bestimmten DOM-Knoten interessiert sind, ist über **prüfen**
         
         1.  Klicken Sie in der oberen linken Ecke von devtools auf das Symbol **inspizieren** \ ( ![ Inspect ][ImageInspectIcon] \).  
             
-            :::image type="complex" source="../media/dom-elements-highlighted-select-element-page-inspect.msft.png" alt-text="Das Symbol "überprüfen"" lightbox="../media/dom-elements-highlighted-select-element-page-inspect.msft.png":::
+            :::image type="complex" source="../media/dom-elements-highlighted-select-element-page-inspect.msft.png" alt-text="Das Symbol überprüfen" lightbox="../media/dom-elements-highlighted-select-element-page-inspect.msft.png":::
                Das Symbol "über **prüfen** "  
             :::image-end:::  
             
@@ -265,7 +265,7 @@ Kopieren Sie den JavaScript-Pfad zu einem Knoten, wenn Sie in einem automatisier
     1.  Wählen Sie `Control` + `V` \ (Windows, Linux \) oder `Command` + `V` \ (macOS \) aus, um den Ausdruck in die Konsole einzufügen.  
     1.  Wählen Sie aus `Enter` , um den Ausdruck auszuwerten.
         
-        :::image type="complex" source="../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png" alt-text="Das Ergebnis des Ausdrucks "JS-Pfad kopieren"" lightbox="../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png":::
+        :::image type="complex" source="../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png" alt-text="Das Ergebnis des Ausdrucks JS-Pfad kopieren" lightbox="../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png":::
            Das Ergebnis des Ausdrucks " **js-Pfad kopieren** "  
         :::image-end:::  
         
