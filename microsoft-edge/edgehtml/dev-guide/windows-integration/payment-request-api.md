@@ -35,7 +35,7 @@ Zusammenfassend können die Kunden bei der Verwendung der [API für Zahlungsanfo
 
 Der Browser authentifiziert den Benutzer, ermöglicht es dem Benutzer, eine unterstützte Zahlungsmethode für die Datei auszuwählen und die Zahlungsdetails zu verarbeiten.  Der Browser sendet dann die Informationen zur Zahlungsinformation zurück an die Händler-Website, damit der Händler die Zahlung abschließen kann.  Zusätzlich zum Empfang von Zahlungsinformationen kann der Händler auch beschließen, Versandinformationen im Rahmen der **Zahlungsaufforderung**zu erhalten.  
 
-:::image type="complex" source="../media/payment_response_construct.png" alt-text="Konstrukt "Zahlungsantwort"" lightbox="../media/payment_response_construct.png":::
+:::image type="complex" source="../media/payment_response_construct.png" alt-text="Konstrukt Zahlungsantwort" lightbox="../media/payment_response_construct.png":::
    Konstrukt "Zahlungsantwort"  
 :::image-end:::  
 
@@ -62,7 +62,7 @@ Der [methodData](/previous-versions/mt790440(v=vs.85)#PaymentRequest_params) -Pa
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/pay_with.png" alt-text="Die Liste "bezahlen mit" in der Microsoft Wallet-Benutzeroberfläche" lightbox="../media/pay_with.png":::
+      :::image type="complex" source="../media/pay_with.png" alt-text="Die Liste bezahlen mit in der Microsoft Wallet-Benutzeroberfläche" lightbox="../media/pay_with.png":::
          Die Liste " **bezahlen mit** " in der Microsoft Wallet-Benutzeroberfläche  
       :::image-end:::  
    :::column-end:::
@@ -121,7 +121,7 @@ Der [options](/previous-versions/mt790440(v=vs.85)#PaymentRequest_params) -Param
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/email_snippet.png" alt-text="Dropdownliste "e-Mail-Adresse"" lightbox="../media/email_snippet.png":::
+      :::image type="complex" source="../media/email_snippet.png" alt-text="Dropdownliste e-Mail-Adresse" lightbox="../media/email_snippet.png":::
          Dropdownliste "e-Mail-Adresse"  
       :::image-end:::  
    :::column-end:::
