@@ -38,7 +38,7 @@ Mithilfe des [Microsoft Edge-devtools][DevtoolsIndex]können Sie diese reduziert
         
 1.  Geben `reduced` Sie an, um die Simulation ein-und auszuschalten.  Wählen Sie die Option aus, und wählen Sie aus `Enter` .  
     
-    :::image type="complex" source="../media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png" alt-text="Aktivieren oder Deaktivieren der Einstellung "reduzierte Bewegung bevorzugt" im Befehlsmenü" lightbox="../media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png":::
+    :::image type="complex" source="../media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png" alt-text="Aktivieren oder Deaktivieren der Einstellung reduzierte Bewegung bevorzugt im Befehlsmenü" lightbox="../media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png":::
        Aktivieren oder Deaktivieren der Einstellung " **reduzierte Bewegung bevorzugt** " im **Befehlsmenü**  
     :::image-end:::  
     
