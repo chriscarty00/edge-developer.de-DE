@@ -28,12 +28,12 @@ Sie können nun eine Ressource der aktuellen Webseite aufnehmen und lokal speich
     
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/javascript-overrides-overflow-menu.msft.png" alt-text="Quellen Tool mit nicht genügend Speicherplatz, um die Option "Außerkraftsetzungen" anzuzeigen" lightbox="../media/javascript-overrides-overflow-menu.msft.png":::
+          :::image type="complex" source="../media/javascript-overrides-overflow-menu.msft.png" alt-text="Quellen Tool mit nicht genügend Speicherplatz, um die Option Außerkraftsetzungen anzuzeigen" lightbox="../media/javascript-overrides-overflow-menu.msft.png":::
              **Quellen** Tool mit nicht genügend Speicherplatz, um die Option "Außerkraftsetzungen" anzuzeigen  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/javascript-overrides-menu.msft.png" alt-text="Auswählen der Option "Außerkraftsetzungen"" lightbox="../media/javascript-overrides-menu.msft.png":::
+          :::image type="complex" source="../media/javascript-overrides-menu.msft.png" alt-text="Auswählen der Option Außerkraftsetzungen" lightbox="../media/javascript-overrides-menu.msft.png":::
              Auswählen der Option "Außerkraftsetzungen"  
           :::image-end:::  
        :::column-end:::
@@ -77,7 +77,7 @@ Zeigen Sie im **Quellen** -Editor auf den Dateinamen der ausgewählten Datei, ö
 
 Die Datei wird im Ordner Overrides gespeichert.  Überprüfen Sie, ob devtools einen Ordner mit dem Namen der URL der Datei mit der richtigen Verzeichnisstruktur erstellt.  Die Datei wird in gespeichert.  Der Dateiname im Editor zeigt nun auch einen lila Punkt an, der angibt, dass die Datei lokal und nicht Live ist.  
 
-:::image type="complex" source="../media/javascript-overrides-file-stored.msft.png" alt-text="Die Datei wurde erfolgreich im Ordner "Overrides" gespeichert" lightbox="../media/javascript-overrides-file-stored.msft.png":::
+:::image type="complex" source="../media/javascript-overrides-file-stored.msft.png" alt-text="Die Datei wurde erfolgreich im Ordner Overrides gespeichert" lightbox="../media/javascript-overrides-file-stored.msft.png":::
    Die Datei wurde erfolgreich im Ordner "Overrides" gespeichert  
 :::image-end:::  
 
@@ -92,7 +92,7 @@ Die Datei wird im Ordner Overrides gespeichert.  Überprüfen Sie, ob devtools e
    :::column span="":::
       Die Datei wird automatisch auf Ihrem Computer gespeichert.  Wenn Sie die Datei aktualisieren, wird der Rahmen angezeigt, und keine ihrer Arbeit geht verloren.  
       
-      :::image type="complex" source="../media/javascript-overrides-changing-styles.msft.png" alt-text="Dauerhaftes ändern von Webseitenformat Vorlagen durch Bearbeiten einer Datei im Ordner "Außerkraftsetzungen"" lightbox="../media/javascript-overrides-changing-styles.msft.png":::
+      :::image type="complex" source="../media/javascript-overrides-changing-styles.msft.png" alt-text="Dauerhaftes ändern von Webseitenformat Vorlagen durch Bearbeiten einer Datei im Ordner Außerkraftsetzungen" lightbox="../media/javascript-overrides-changing-styles.msft.png":::
          Dauerhaftes ändern von Webseitenformat Vorlagen durch Bearbeiten einer Datei im Ordner "Außerkraftsetzungen"  
       :::image-end:::  
    :::column-end:::
