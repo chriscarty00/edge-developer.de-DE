@@ -109,7 +109,7 @@ Service Mitarbeiter sind eine grundlegende Technologie in der zukünftigen Web-P
 
 Der Bereich " **Dienstmitarbeiter** " im Bereich " **Anwendung** " ist der wichtigste Ort in devtools zum Überprüfen und Debuggen von Dienst Mitarbeitern.  
 
-:::image type="complex" source="../media/service-workers-pane.msft.png" alt-text="Der Bereich "Dienstmitarbeiter"" lightbox="../media/service-workers-pane.msft.png":::
+:::image type="complex" source="../media/service-workers-pane.msft.png" alt-text="Der Bereich Dienstmitarbeiter" lightbox="../media/service-workers-pane.msft.png":::
    Der Bereich " **Dienstmitarbeiter** "  
 :::image-end:::  
 
@@ -149,7 +149,7 @@ Der Bereich **Cache-Speicher** bietet eine schreibgeschützte Liste der Ressourc
 
 Wenn zwei oder mehr Caches geöffnet sind, werden Sie unter der Dropdownliste **Cachespeicher** aufgelistet.  
 
-:::image type="complex" source="../media/cache-pane-cache-storage.msft.png" alt-text="Die Dropdownliste "Cache Speicher"" lightbox="../media/cache-pane-cache-storage.msft.png":::
+:::image type="complex" source="../media/cache-pane-cache-storage.msft.png" alt-text="Die Dropdownliste Cache Speicher" lightbox="../media/cache-pane-cache-storage.msft.png":::
    Die Dropdownliste " **Cache Speicher** "  
 :::image-end:::  
 
