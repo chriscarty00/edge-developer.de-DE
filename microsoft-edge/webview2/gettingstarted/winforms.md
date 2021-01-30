@@ -1,107 +1,130 @@
 ---
-description: Leitfaden für erste Schritte mit WebView2 für WinForms-apps
-title: Erste Schritte mit WebView2 für WinForms-apps
+description: Erste Schritte mit WebView2 für WinForms-Apps
+title: Erste Schritte mit WebView2 für WinForms-Apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/19/2020
+ms.date: 01/29/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: WebView2, WebView2, WebView, WebView, WinForms-apps, WinForms, Edge, CoreWebView2, Browser Control, Edge HTML, erste Schritte, erste Schritte, .net, Windows Forms
-ms.openlocfilehash: f4768c38f293d1931e625136ea7068a61176541e
-ms.sourcegitcommit: fab44f7e183a3c4f12bf925512fc62d84a4d6edc
+keywords: WebView2, Webview2, WebView, Webview, winforms apps, winforms, edge, CoreWebView2, browser control, edge html, getting started, .NET, windows forms
+ms.openlocfilehash: 45a3b59733a57975e373df2e21258198645be2d4
+ms.sourcegitcommit: d89f77d4667dfbc44ed35f2ec7e3ae64ab98bf1a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "11182388"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "11306166"
 ---
 # Erste Schritte mit WebView2 in Windows Forms
 
-In diesem Artikel erfahren Sie, wie Sie Ihre erste WebView2-app erstellen und Informationen zu den Hauptfeatures von [WebView2](/microsoft-edge/webview2/index)erhalten.  Weitere Informationen zu einzelnen APIs finden Sie unter [API-Referenz](/dotnet/api/microsoft.web.webview2.winforms).  
+In diesem Artikel beginnen Sie mit dem Erstellen Ihrer ersten WebView2-App, und erfahren Sie mehr über die Wichtigsten Features von [WebView2.][MicrosoftDeveloperMicrosoftEdgeWebview2]  Weitere Informationen zu einzelnen APIs finden Sie in der [API-Referenz.][DotnetApiMicrosoftWebWebview2Winforms]  
 
 ## Voraussetzungen  
 
-Stellen Sie sicher, dass Sie die folgende Liste der Voraussetzungen installiert haben, bevor Sie fortfahren:  
+Stellen Sie sicher, dass Sie die folgende Liste der Voraussetzungen installieren, bevor Sie fortfahren.  
 
-* [WebView2-Runtime][Webview2Installer] oder ein [nicht stabiler Microsoft Edge (Chrom) Canary-Kanal](https://www.microsoftedgeinsider.com/download) , der unter Windows 10, Windows 8,1 oder Windows 7 installiert ist. 
-* [Visual Studio](https://visualstudio.microsoft.com) 2017 oder höher
-
+*   [WebView2 Runtime][MicrosoftDeveloperMicrosoftEdgeWebview2] oder ein nicht stabiler [Microsoft Edge (Chromium)-Kanal,][MicrosoftedgeinsiderDownload] der unter unterstützten Betriebssystemen \(derzeit Windows 10, Windows 8.1 und Windows 7\ installiert ist).  
+    
+    > [!NOTE]
+    > Das WebView-Team empfiehlt die Verwendung des Canarykanals, und die mindestens erforderliche Version ist 82.0.488.0.  
+    
+*   [Visual Studio][MicrosoftVisualstudioMain] 2017 oder höher.  
+    
 > [!NOTE]
-> WebView2 unterstützt derzeit keine .net 5-und .net Core-Designer.
+> WebView2 unterstützt derzeit keine .NET 5- und .NET Core-Designer.
 
-## Schritt 1 – Erstellen einer einzelnen Fenster Anwendung
+## Schritt 1: Erstellen einer App mit einem Fenster
 
 Beginnen Sie mit einem einfachen Desktopprojekt, das ein einzelnes Hauptfenster enthält.  
 
-1. Öffnen Sie **Visual Studio.**
-
-1. Wählen Sie **Windows Forms .NET Framework-App** aus, und wählen Sie dann **weiter**aus.
-
-    ![NewProject](./media/winforms-newproject.png)
-
-1. Geben Sie Werte für **Projektname** und **Speicherort**ein.  Wählen Sie **.NET Framework 4.6.2** oder höher aus.  
-
-    ![startproject](./media/winforms-startproj.png)
-
-1. Wählen Sie **Erstellen** aus, um Ihr Projekt zu erstellen.
-
-## Schritt 2 – Installieren des WebView2 SDK
-
-Als Nächstes fügen Sie das WebView2-SDK mit NuGet zum Projekt hinzu.
-
-1. Öffnen Sie das Kontextmenü im Projekt \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie **NuGet-Pakete verwalten**aus.  
-
-    :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="Verwalten von NuGet-Paketen":::
-       Verwalten von NuGet-Paketen :::image-end:::
-
-1. Geben Sie `Microsoft.Web.WebView2` in die Suchleiste ein.  Wählen Sie in den Suchergebnissen **Microsoft. Web. WebView2** aus.  
-
-    ![nuget](./media/installnuget.png)
-
-Mit der WebView2-API können Sie nun mit der Entwicklung von Anwendungen beginnen.  Wählen Sie aus `F5` , um das Projekt zu erstellen und auszuführen.  Im laufenden Projekt wird ein leeres Fenster angezeigt.  
-
-![emptyApp](./media/winforms-emptyApp.png)
-
-## Schritt 3 – Erstellen einer einzelnen WebView  
-
-Fügen Sie Ihrer Anwendung als nächstes eine WebView hinzu.  
-
-1. Öffnen Sie den **Windows Forms-Designer**.  
-1. Suchen Sie in der **Toolbox**nach **WebView2** . Ziehen Sie das **WebView2** -Steuerelement in die Windows Forms-APP, und legen Sie es ab.
+1.  Wählen Visual Studio **"Windows Forms .NET Framework App**  >  **Next" aus.**
     
-    :::image type="complex" source="./media/winforms-toolbox.png" alt-text="Toolbox mit Anzeige von WebView2":::
-       Toolbox mit Anzeige von WebView2 :::image-end:::  
+    :::image type="complex" source="./media/winforms-newproject.png" alt-text="Neues Projekt" lightbox="./media/winforms-newproject.png":::
+       Neues Projekt  
+    :::image-end:::
+    
+1.  Geben Sie Werte für **den Projektnamen und** den **Speicherort ein.**  Wählen **Sie .NET Framework 4.6.2** oder höher aus.  
+    
+    :::image type="complex" source="./media/winforms-startproj.png" alt-text="Projekt starten" lightbox="./media/winforms-startproj.png":::
+       Projekt starten  
+    :::image-end:::
+    
+1.  Um Ihr Projekt zu erstellen, wählen Sie **"Erstellen"** aus.
+    
+## Schritt 2: Installieren des WebView2 SDK
 
-1. Ändern Sie die `Name`-Eigenschaft in `webView`.
+Verwenden Sie NuGet, um dem Projekt das WebView2 SDK hinzuzufügen.  
+
+1.  Zeigen Sie auf das Projekt, öffnen Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste\), und wählen Sie **NuGet-Pakete verwalten... aus.**  
+    
+    :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="Verwalten von NuGet-Paketen":::
+       Verwalten von NuGet-Paketen
+    :::image-end:::
+    
+1.  Geben Sie in der Suchleiste > `Microsoft.Web.WebView2` **Microsoft.Web.WebView2 aus.**  
+    
+    :::image type="complex" source="./media/installnuget.png" alt-text="NuGet" lightbox="./media/installnuget.png":::
+       NuGet  
+    :::image-end:::
+    
+    Beginnen Sie mit der Entwicklung von Apps mithilfe der WebView2-API.  Wählen Sie zum Erstellen und Ausführen des Projekts die Option `F5` aus.  Das ausgeführte Projekt zeigt ein leeres Fenster an.  
+    
+    :::image type="complex" source="./media/winforms-emptyapp.png" alt-text="Leere App" lightbox="./media/winforms-emptyapp.png":::
+       Leere App  
+    :::image-end:::
+    
+## Schritt 3: Erstellen einer einzelnen WebView  
+
+Fügen Sie Ihrer App eine WebView hinzu.  
+
+1.  Öffnen Sie **den Windows Forms Designer.**  
+1.  Suchen Sie in der **Toolbox**nach **WebView2.**  
+    
+    > [!NOTE]
+    > Wenn Sie Visual Studio 2017 verwenden, wird **WebView2** standardmäßig nicht in der **Toolbox angezeigt.**  Um das Verhalten zu aktivieren, **wählen**Sie tools Options General > die Einstellung "Toolbox automatisch  >  ****  >  **** auffüllen" auf **** `True` .  
+    
+    Drag and drop the **WebView2** control into the Windows Forms App.
+    
+    :::image type="complex" source="./media/winforms-toolbox.png" alt-text="Toolbox mit WebView2":::
+       Toolbox mit WebView2
+    :::image-end:::  
+
+1.  Legen Sie die `(Name)`-Eigenschaft auf `webView` fest.
     
     :::image type="complex" source="./media/winforms-properties.png" alt-text="Eigenschaften des WebView2-Steuerelements":::
-       Eigenschaften des WebView2-Steuerelements :::image-end:::
+       Eigenschaften des WebView2-Steuerelements
+    :::image-end:::
 
-1. Die `Source` Eigenschaft legt den anfänglichen URI fest, der im WebView2-Steuerelement angezeigt wird. Setzen Sie die Source-Eigenschaft auf <https://www.microsoft.com>
+1.  Die `Source` Eigenschaft legt den anfänglichen URI fest, der im WebView2-Steuerelement angezeigt wird.  Legen Sie die `Source`-Eigenschaft auf `https://www.microsoft.com` fest.  
     
-    :::image type="complex" source="./media/winforms-source.png" alt-text="Die Source-Eigenschaft des WebView2-Steuerelements":::
-       Die Source-Eigenschaft des WebView2-Steuerelements :::image-end:::
+    :::image type="complex" source="./media/winforms-source.png" alt-text="Die Eigenschaft "Source" des WebView2-Steuerelements":::
+       Die **Eigenschaft "Source"** des WebView2-Steuerelements
+    :::image-end:::  
 
-Wählen Sie aus `F5` , um Ihr Projekt zu erstellen und auszuführen.  Vergewissern Sie sich, dass Ihr WebView2-Steuerelement angezeigt wird [https://www.microsoft.com](https://www.microsoft.com) .
+Wählen Sie zum Erstellen und Ausführen des Projekts die Option `F5` aus.  Stellen Sie sicher, dass Ihr WebView2-Steuerelement angezeigt [https://www.microsoft.com][|::ref1::|Main] wird.
 
-![hellowebview](./media/winforms-hellowebview.png)
+:::image type="complex" source="./media/winforms-hellowebview.png" alt-text="hello webview" lightbox="./media/winforms-hellowebview.png":::
+   hello webview  
+:::image-end:::  
 
 > [!NOTE]
-> Wenn Sie mit einem HD-Monitor arbeiten, müssen Sie möglicherweise [Ihre Windows Forms-App für die Unterstützung mit höherer dpi-Auflösung konfigurieren](/dotnet/framework/winforms/high-dpi-support-in-windows-forms#configuring-your-windows-forms-app-for-high-dpi-support).
+> Wenn Sie an einem Monitor mit hohem DPI arbeiten, müssen Sie Ihre [Windows Forms-App][DotnetFrameworkWinformsHighDpiSupportWindowsFormsConfiguringYourWindowsFormsAppForHighDpiSupport]möglicherweise für die Unterstützung hoher DPI konfigurieren.  
 
-## Schritt 4: Behandeln von Fenstergrößen Ereignissen
+## Schritt 4: Behandeln von Ereignissen für die Fenstergröße
 
-Fügen Sie Ihren Windows Forms einige weitere Steuerelemente aus der Toolbox hinzu, und behandeln Sie die Ereignisse für die Fenstergröße entsprechend.
+Fügen Sie ein paar weitere Steuerelemente zu Ihren Windows Forms aus der Toolbox hinzu, und behandeln Sie die Ereignisse für die Fenstergröße entsprechend.
 
-1. Öffnen der **Toolbox** im **Windows Forms-Designer**
-1. Ziehen Sie ein **Textfeld** in die Windows Forms-APP, und legen Sie es ab. Benennen Sie das **Textfeld** `addressBar` auf der **Registerkarte Eigenschaften**.
-1. Ziehen Sie eine **Schaltfläche** in die Windows Forms-APP, und legen Sie Sie ab. Ändern Sie den Text in der **Schaltfläche** , `Go!` und benennen Sie die **Schaltfläche** auf `goButton` der **Registerkarte Eigenschaften**.
+1.  Öffnen Sie **im Windows Forms Designer**die **Toolbox**
+1.  Ziehen Sie ein **TextBox-Objekt per** Drag and Drop in die Windows Forms App.  Geben Sie **auf der Registerkarte "Eigenschaften"** den Namen **"TextBox" ein.** `addressBar`
+1.  Drag and drop a **Button** into the Windows Forms App.  Ändern Sie den Text in der **Schaltfläche,** `Go!` und benennen Sie die **Schaltfläche** auf der `goButton` Registerkarte **"Eigenschaften".**
 
-    Die APP sollte im Designer wie in der folgenden Abbildung aussehen.
+    Die App sollte wie das folgende Bild im Designer aussehen.
     
-    ![-Designer](./media/winforms-designer.png)
+    :::image type="complex" source="./media/winforms-designer.png" alt-text="Designer" lightbox="./media/winforms-designer.png":::
+       Designer  
+    :::image-end:::  
 
-1. In **Form1.cs** definieren `Form_Resize` , um die Steuerelemente beizubehalten, wenn die Größe des App-Fensters geändert wird.
+1.  Definieren Sie in der Datei, dass die Steuerelemente bei der Größenänderung des `Form1.cs` `Form_Resize` App-Fensters weiterhin verwendet werden.
 
 ```csharp
 public Form1()
@@ -118,21 +141,23 @@ private void Form_Resize(object sender, EventArgs e)
 }
 ```
 
-Wählen Sie aus `F5` , um Ihr Projekt zu erstellen und auszuführen.  Vergewissern Sie sich, dass die APP ähnlich wie der folgende Screenshot angezeigt wird.
+Wählen Sie zum Erstellen und Ausführen des Projekts die Option `F5` aus.  Stellen Sie sicher, dass die App ähnlich wie im folgenden Screenshot angezeigt wird.
 
-![App](./media/winforms-app.png)
+:::image type="complex" source="./media/winforms-app.png" alt-text="App" lightbox="./media/winforms-app.png":::
+   App  
+:::image-end:::
 
-## Schritt 5 – Navigation
+## Schritt 5: Navigation
 
-Hinzufügen der Möglichkeit, dass Benutzer die vom WebView2-Steuerelement angezeigte URL ändern können, indem Sie der App eine Adressleiste hinzufügen.
+Fügen Sie die Möglichkeit hinzu, Benutzern das Ändern der URL zu ermöglichen, die das WebView2-Steuerelement anzeigt, indem Sie der App eine Adressleiste hinzufügen.
 
-1. `Form1.cs`Fügen Sie den `CoreWebView2` Namespace hinzu, indem Sie den folgenden Codeausschnitt oben auf Einfügen `Form1.cs` .  
+1.  Fügen Sie in der Datei den folgenden Codeausschnitt oben ein, um den `Form1.cs` `CoreWebView2` Namespace hinzuzufügen.  
 
     ```csharp
     using Microsoft.Web.WebView2.Core;
     ```
 
-1. Doppelklicken Sie im **Windows Forms-Designer**auf die `Go!` Schaltfläche, um die `goButton_Click` Methode in zu erstellen `Form1.cs` . Kopieren Sie den folgenden Codeausschnitt, und fügen Sie ihn in die Funktion ein. Nun `goButton_Click` navigiert die Funktion in der WebView zu der URL, die in der Adressleiste eingegeben wurde.
+1.  Doppelklicken Sie **im Windows Forms Designer**auf die Schaltfläche, um die Methode in der Datei zu `Go!` `goButton_Click` `Form1.cs` erstellen.  Kopieren Sie den folgenden Codeausschnitt, und fügen Sie ihn in die Funktion ein.  Nun navigiert die Funktion in der WebAnsicht zu `goButton_Click` der URL, die in der Adressleiste eingegeben wurde.
 
     ```csharp
     private void goButton_Click(object sender, EventArgs e)
@@ -144,40 +169,43 @@ Hinzufügen der Möglichkeit, dass Benutzer die vom WebView2-Steuerelement angez
     }
     ```  
 
-Wählen Sie aus `F5` , um Ihr Projekt zu erstellen und auszuführen.  Geben Sie in der Adressleiste eine neue URL ein, und wählen Sie **dann gehe**zu aus.  Geben Sie beispielsweise ein `https://www.bing.com` .  Überprüfen Sie, ob das WebView2-Steuerelement zur URL navigiert.  
+Wählen Sie zum Erstellen und Ausführen des Projekts die Option `F5` aus.  Geben Sie in der Adressleiste eine neue URL ein, und wählen Sie **"Los" aus.**  Geben Sie z. `https://www.bing.com` B. .  Stellen Sie sicher, dass das WebView2-Steuerelement zur URL navigiert.  
 
 > [!NOTE]
-> Stellen Sie sicher, dass in der Adressleiste eine vollständige URL eingegeben wurde. Eine `ArgumentException` wird ausgelöst, wenn die URL nicht mit gestartet wird `http://` oder `https://`
+> Stellen Sie sicher, dass in der Adressleiste eine vollständige URL eingegeben ist.  Ein `ArgumentException` wird ausgelöst, wenn die URL nicht mit oder `http://` `https://`
 
-![bing](./media/winforms-bing.png)
+:::image type="complex" source="./media/winforms-bing.png" alt-text="bing.com" lightbox="./media/winforms-bing.png":::
+   bing.com  
+:::image-end:::
 
-## Schritt 6 – Navigationsereignisse  
+## Schritt 6: Navigationsereignisse  
 
-Während der Webseiten Navigation löst das WebView2-Steuerelementereignisse aus. Die Anwendung, die WebView2-Steuerelemente hostet, überwacht die folgenden Ereignisse.  
+Während der Webseitennavigation löst das WebView2-Steuerelement Ereignisse aus.  Die App, die WebView2-Steuerelemente hostet, lauscht auf die folgenden Ereignisse.  
 
-* `NavigationStarting`  
-* `SourceChanged`  
-* `ContentLoading`  
-* `HistoryChanged`  
-* `NavigationCompleted`  
+*   `NavigationStarting`  
+*   `SourceChanged`  
+*   `ContentLoading`  
+*   `HistoryChanged`  
+*   `NavigationCompleted`  
 
-Weitere Informationen finden Sie unter [Navigationsereignisse](../concepts/navigation-events.md).  
+Navigieren Sie zu [Navigationsereignissen, um weitere Informationen zu erhalten.][Webview2ConceptsNavigationEvents]  
 
 :::image type="complex" source="../media/navigation-events.png" alt-text="Navigationsereignisse":::
    Navigationsereignisse
 :::image-end:::
 
-Wenn ein Fehler auftritt, werden die folgenden Ereignisse ausgelöst und können von der Navigation zu einer Fehlerseite abhängen.  
+Wenn ein Fehler auftritt, werden die folgenden Ereignisse ausgelöst und sind möglicherweise von der Navigation zu einer Fehlerwebseite abhängig.  
 
-* `SourceChanged`  
-* `ContentLoading`  
-* `HistoryChanged`  
+*   `SourceChanged`  
+*   `ContentLoading`  
+*   `HistoryChanged`  
 
-Wenn eine HTTP-Umleitung vorhanden ist, gibt es mehrere `NavigationStarting` Ereignisse.  
+> [!NOTE]
+> Wenn eine HTTP-Umleitung auftritt, gibt es mehrere `NavigationStarting` Ereignisse in einer Zeile.  
 
-Um zu veranschaulichen, wie diese Ereignisse verwendet werden, müssen Sie zunächst einen Handler registrieren, der `NavigationStarting` alle Anforderungen abbricht, die kein HTTPS verwenden.  
+Um die Verwendung dieser Ereignisse zu veranschaulichen, registrieren Sie zunächst einen Handler, der alle Anforderungen abbricht, die HTTPS `NavigationStarting` nicht verwenden.  
 
-`Form1.cs`Ändern Sie in den Konstruktor wie unten dargestellt, und fügen Sie die `EnsureHttps` Funktion hinzu.  
+Aktualisieren Sie in der Datei den Konstruktor so, dass er mit dem `Form1.cs` folgenden Codeausschnitt übereinstimmen kann, und fügen Sie die Funktion `EnsureHttps` hinzu.  
 
 ```csharp
 public Form1()
@@ -200,13 +228,16 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
 
 Im Konstruktor wird EnsureHttps als Ereignishandler für das `NavigationStarting` Ereignis im WebView2-Steuerelement registriert.  
 
-Wählen Sie aus `F5` , um Ihr Projekt zu erstellen und auszuführen. Vergewissern Sie sich, dass die WebView-Ansicht beim Navigieren zu einer HTTP-Website unverändert bleibt. Die WebView wird jedoch zu HTTPS-Websites navigieren.
+Wählen Sie zum Erstellen und Ausführen des Projekts die Option `F5` aus.  Stellen Sie sicher, dass die WebView beim Navigieren zu einer HTTP-Website unverändert bleibt.  Die WebView navigiert jedoch zu HTTPS-Websites.
 
-## Schritt 7 – Skripting  
+## Schritt 7: Skripterstellung  
 
-Sie können Host-Anwendungen verwenden, um JavaScript-Code zur Laufzeit in WebView2-Steuerelemente einzufügen.  Das eingefügte JavaScript gilt für alle neuen Dokumente auf oberster Ebene und für alle untergeordneten Frames, bis das JavaScript entfernt wurde.  Das eingefügte JavaScript wird nach der Erstellung des globalen Objekts und vor den Skripts, die im HTML-Dokument enthalten sind, ausgeführt.  
+Sie können Host-Apps verwenden, um Zur Laufzeit JavaScript-Code in WebView2-Steuerelemente zu injizieren.  You may task WebView to run arbitrary JavaScript or add initialization scripts.  Das injizierte JavaScript gilt für alle neuen Dokumente der obersten Ebene und alle untergeordneten Frames, bis das JavaScript entfernt wird.  Das injizierte JavaScript wird mit einem bestimmten Timing ausgeführt.  
 
-Sie können Skripting verwenden, um den Benutzer zu benachrichtigen, wenn Sie zu einer nicht-HTTPS-Website navigieren.  Ändern `EnsureHttps` Sie die Funktion so, dass Sie mit der [ExecuteScriptAsync]() -Methode Skripts in den Webinhalt einfügt.  
+*   Führen Sie es nach der Erstellung des globalen Objekts aus.  
+*   Führen Sie es aus, bevor ein anderes Im HTML-Dokument enthaltenes Skript ausgeführt wird.  
+
+Fügen Sie beispielsweise Skripts hinzu, die eine Warnung senden, wenn ein Benutzer zu Nicht-HTTPS-Websites navigiert.  Ändern Sie die Funktion, um ein Skript in den Webinhalt zu injizieren, `EnsureHttps` der die [ExecuteScriptAsync-Methode][DotnetApiMicrosoftWebWebview2WinformsWebview2Executescriptasync] verwendet.  
 
 ```csharp
 void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
@@ -220,22 +251,24 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
 }
 ```  
 
-Wählen Sie aus `F5` , um Ihr Projekt zu erstellen und auszuführen.  Vergewissern Sie sich, dass die Anwendung eine Warnung anzeigt, wenn Sie zu einer Website navigieren, die nicht HTTPS verwendet.  
+Wählen Sie zum Erstellen und Ausführen des Projekts die Option `F5` aus.  Stellen Sie sicher, dass die App eine Warnung anzeigt, wenn Sie zu einer Website navigieren, die https nicht verwendet.  
 
-![https](./media/winforms-https.png)
+:::image type="complex" source="./media/winforms-https.png" alt-text="https" lightbox="./media/winforms-https.png":::
+   https  
+:::image-end:::
 
-## Schritt 8 – Kommunikation zwischen Host-und Webinhalten  
+## Schritt 8: Kommunikation zwischen Host- und Webinhalt  
 
-Die Host-und Webinhalte können mithilfe der folgenden Informationen miteinander kommunizieren `postMessage` :  
+Host- und Webinhalte können für `postMessage` die Kommunikation miteinander wie folgt verwendet werden:  
 
-* Webinhalte in einem WebView2-Steuerelement senden möglicherweise eine Nachricht mithilfe von an den Host `window.chrome.webview.postMessage` .  Der Host verarbeitet die Nachricht mit einem `WebMessageReceived` auf dem Host registrierten Namen.  
-* Hosts Posten Nachrichten an Webinhalte in einem WebView2-Steuerelement mit `CoreWebView2.PostWebMessageAsString` oder `CoreWebView2.PostWebMessageAsJSON` .  Diese Nachrichten werden von Handlern abgefangen, denen Sie hinzugefügt wurden `window.chrome.webview.addEventListener` .  
+*   Webinhalte in einem WebView2-Steuerelement können zum Veröffentlichen `window.chrome.webview.postMessage` einer Nachricht an den Host verwendet werden.  Der Host verarbeitet die Nachricht mit allen auf dem `WebMessageReceived` Host registrierten Nachrichten.  
+*   Hostet Nachrichten an Webinhalte in einem WebView2-Steuerelement mithilfe oder `CoreWebView2.PostWebMessageAsString` `CoreWebView2.PostWebMessageAsJSON` .  Diese Nachrichten werden von Handlern erfasst, die zu hinzugefügt `window.chrome.webview.addEventListener` wurden.  
 
-Mit diesem Kommunikationsmechanismus können Webinhalte Nachrichten mithilfe von systemeigenen Funktionen an den Host weiterleiten.  
+Der Kommunikationsmechanismus übergibt Nachrichten von Webinhalten mithilfe systemeigener Funktionen an den Host.  
 
-Wenn das WebView2-Steuerelement in Ihrem Projekt zu einer URL navigiert, wird die URL in der Adressleiste angezeigt, und der Benutzer wird benachrichtigt, dass die URL im WebView2-Steuerelement angezeigt wird.  
+Wenn das WebView2-Steuerelement in Ihrem Projekt zu einer URL navigiert, zeigt es die URL in der Adressleiste an und benachrichtigt den Benutzer über die im WebView2-Steuerelement angezeigte URL.  
 
-1. Aktualisieren Sie in **Form1.cs**den Konstruktor, und erstellen Sie eine `InitializeAsync` Funktion, wie im folgenden Codeausschnitt dargestellt.  Die `InitializeAsync` Funktion wartet [EnsureCoreWebView2Async]() auf, da die Initialisierung von `CoreWebView2` asynchron ist.  
+1.  Aktualisieren Sie in der Datei den Konstruktor, und erstellen Sie eine `Form1.cs` `InitializeAsync` Funktion, die mit dem folgenden Codeausschnitt übereinstimmen soll.  Die `InitializeAsync` Funktion wartet auf [EnsureCoreWebView2Async,][DotnetApiMicrosoftWebWebview2WinformsWebview2Ensurecorewebview2async] da die Initialisierung `CoreWebView2` asynchron ist.  
 
     ```csharp
     public Form1()
@@ -252,7 +285,7 @@ Wenn das WebView2-Steuerelement in Ihrem Projekt zu einer URL navigiert, wird di
     }
     ```  
 
-1. Nachdem **CoreWebView2** initialisiert wurde, registrieren Sie einen Ereignishandler, auf den Sie Antworten können `WebMessageReceived` .  In `Form1.cs` , aktualisieren `InitializeAsync` und hinzufügen `UpdateAddressBar` mithilfe des folgenden Codeausschnitts.  
+1.  Registrieren `CoreWebView2` Sie nach der Initialisierung einen Ereignishandler, um auf zu `WebMessageReceived` reagieren.  Aktualisieren und `Form1.cs` fügen Sie in der Datei mithilfe des folgenden `InitializeAsync` `UpdateAddressBar` Codeausschnitts hinzu.  
 
     ```csharp
     async void InitializeAsync()
@@ -269,12 +302,12 @@ Wenn das WebView2-Steuerelement in Ihrem Projekt zu einer URL navigiert, wird di
     }
     ```  
 
-1. Damit die WebView die Webnachricht senden und beantworten kann, wird nach der `CoreWebView2` Initialisierung der Host ein Skript in den Webinhalt eingefügt, um:  
+1.  Damit WebView die Webnachricht sendet und darauf antwortet, wird nach der Initialisierung ein Skript in den `CoreWebView2` Webinhalt eingef?nkt, um:  
 
-    1. Senden Sie die URL an den Host mit `postMessage` .
-    1. Registrieren Sie einen Ereignishandler, um eine vom Host gesendete Nachricht zu drucken.  
+    1.  Senden Sie die URL mithilfe von `postMessage` .
+    1.  Registrieren Sie einen Ereignishandler, um eine vom Host gesendete Nachricht zu drucken.  
 
-In `Form1.cs` , aktualisieren Sie, `InitializeAsync` wie im folgenden Codeausschnitt dargestellt.  
+Aktualisieren Sie `Form1.cs` in der Datei so, dass sie mit `InitializeAsync` dem folgenden Codeausschnitt übereinstimmen.  
 
 ```csharp
 async void InitializeAsync()
@@ -287,26 +320,46 @@ async void InitializeAsync()
 }
 ```  
 
-Wählen Sie aus `F5` , um die APP zu erstellen und auszuführen.  Vergewissern Sie sich, dass auf der Adressleiste die URL der Website angezeigt wird, die in der WebView angezeigt wird. Wenn Sie erfolgreich zu einer neuen URL navigieren, benachrichtigt die WebView den Benutzer auch über die URL, die in der WebView angezeigt wird.  
+Wählen Sie zum Erstellen und Ausführen der App die Option `F5` aus.  Jetzt zeigt die Adressleiste den URI im WebView2-Steuerelement an.  Wenn Sie erfolgreich zu einer neuen URL navigieren, wird der Benutzer außerdem von WebView über die url benachrichtigt, die in der WebView angezeigt wird.  
 
-![finalapp](./media/winforms-finalapp.png)
+:::image type="complex" source="./media/winforms-finalapp.png" alt-text="Endgültige App" lightbox="./media/winforms-finalapp.png":::
+   Endgültige App  
+:::image-end:::
 
-Herzlichen Glückwunsch, Sie haben ihre erste WebView2-App erstellt!  
+Herzlichen Glückwunsch, Sie haben Ihre erste WebView2-App erstellt.  
 
-## Nächste Schritte 
+## Nächste Schritte  
 
-Navigieren Sie zu den folgenden Ressourcen, um weitere Informationen zu WebView2 zu erfahren.
+Um weitere Informationen zu WebView2 zu erhalten, navigieren Sie zu den folgenden Ressourcen.  
 
-* Das [WebView2Samples Repo](https://github.com/MicrosoftEdge/WebView2Samples) bietet ein umfassendes Beispiel für WebView2's-Funktionen.
-* Die [API-Referenz](/dotnet/api/microsoft.web.webview2.winforms.webview2) für detailliertere Informationen zu unseren APIs.
-* [WebView2-Ressourcen](../index.md#next-steps).
+### Weitere Informationen  
 
+*   Ein umfassendes Beispiel der WebView2-Funktionen finden Sie unter [WebView2Samples][GithubMicrosoftedgeWebview2samplesMain].  
+*   Weitere Informationen zu WebView2 finden Sie unter ["WebView2-Ressourcen".][Webview2IndexNextSteps]  
+*   Ausführliche Informationen zur WebView2-API finden Sie in der [API-Referenz.][DotnetApiMicrosoftWebWebview2WinformsWebview2]  
 
 ## Kontakt mit dem Microsoft Edge WebView-Team  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
-
 <!-- links -->  
 
-[Webview2Installer]: https://developer.microsoft.com/microsoft-edge/webview2 "WebView2-Installationsprogramm" 
+[Webview2IndexNextSteps]: ../index.md#next-steps "Nächste Schritte – Einführung in Microsoft Edge WebView2 (Vorschau) | Microsoft Docs"  
+[Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Navigationsereignisse | Microsoft Docs"  
+
+[DotnetApiMicrosoftWebWebview2Winforms]: /dotnet/api/microsoft.web.webview2.winforms "Microsoft.Web.WebView2.WinForms Namespace-| Microsoft Docs"  
+[DotnetApiMicrosoftWebWebview2WinformsWebview2]: /dotnet/api/microsoft.web.webview2.winforms.webview2 "WebView2-| Microsoft Docs"  
+[DotnetApiMicrosoftWebWebview2WinformsWebview2Ensurecorewebview2async]: /dotnet/api/microsoft.web.webview2.winforms.webview2.ensurecorewebview2async "WebView2.EnsureCoreWebView2Async(CoreWebView2Environment)-Methode | Microsoft Docs"  
+[DotnetApiMicrosoftWebWebview2WinformsWebview2Executescriptasync]: /dotnet/api/microsoft.web.webview2.winforms.webview2.executescriptasync "WebView2.ExecuteScriptAsync(String)-Methode | Microsoft Docs"  
+
+[DotnetFrameworkWinformsHighDpiSupportWindowsFormsConfiguringYourWindowsFormsAppForHighDpiSupport]: /dotnet/framework/winforms/high-dpi-support-in-windows-forms#configuring-your-windows-forms-app-for-high-dpi-support "Konfigurieren der Windows Forms-App für hohe DPI-Unterstützung – Unterstützung für hohe DPI in Windows Forms | Microsoft Docs"  
+
+[GithubMicrosoftedgeWebview2samplesMain]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2-Beispiele – MicrosoftEdge/WebView2Samples | GitHub"  
+
+[MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Herunterladen von Microsoft Edge Insider Channels"  
+
+[MicrosoftDeveloperMicrosoftEdgeWebview2]: https://developer.microsoft.com/microsoft-edge/webview2 " WebView2| Microsoft Edge Developer"  
+
+[MicrosoftMain]: https://www.microsoft.com "Microsoft"  
+
+[MicrosoftVisualstudioMain]: https://visualstudio.microsoft.com "Visual Studio"  
