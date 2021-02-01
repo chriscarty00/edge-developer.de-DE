@@ -165,7 +165,7 @@ CreateCoreWebView2EnvironmentWithOptions(nullptr, nullptr, nullptr,
 
 Wählen Sie zum Erstellen und Ausführen der App die Option `F5` aus.  Jetzt haben Sie ein WebView-Fenster, in dem die Seite Bing angezeigt wird.  
 
-:::image type="complex" source="../media/bing-window.png" alt-text="Fenster "Bing"" lightbox="../media/bing-window.png":::
+:::image type="complex" source="../media/bing-window.png" alt-text="Fenster Bing" lightbox="../media/bing-window.png":::
    Fenster "Bing"  
 :::image-end:::  
 
