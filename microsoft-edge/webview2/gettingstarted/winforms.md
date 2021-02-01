@@ -97,7 +97,7 @@ Fügen Sie Ihrer App eine WebView hinzu.
 
 1.  Die `Source` Eigenschaft legt den anfänglichen URI fest, der im WebView2-Steuerelement angezeigt wird.  Legen Sie die `Source`-Eigenschaft auf `https://www.microsoft.com` fest.  
     
-    :::image type="complex" source="./media/winforms-source.png" alt-text="Die Eigenschaft "Source" des WebView2-Steuerelements":::
+    :::image type="complex" source="./media/winforms-source.png" alt-text="Die Eigenschaft Source des WebView2-Steuerelements":::
        Die **Eigenschaft "Source"** des WebView2-Steuerelements
     :::image-end:::  
 
