@@ -65,7 +65,7 @@ Beginnen Sie mit einem einfachen Desktopprojekt, das ein einzelnes Hauptfenster 
     *   **Zielversion:**  **Windows 10, Version 1903 (Build 18362)** oder höher  
     *   **Mindestversion:**  **Windows 10, Version 1803 (Build 17134)**  
     
-    :::image type="complex" source="./media/winui-gettingstarted-projecttype.png" alt-text="Das Dialogfeld "Neues Projekt für die universelle Windows-Plattform" mit den ausgewählten Werten für die Zielversion und die Mindestversion." lightbox="./media/winui-gettingstarted-projecttype.png":::
+    :::image type="complex" source="./media/winui-gettingstarted-projecttype.png" alt-text="Das Dialogfeld Neues Projekt für die universelle Windows-Plattform mit den ausgewählten Werten für die Zielversion und die Mindestversion." lightbox="./media/winui-gettingstarted-projecttype.png":::
        Das Dialogfeld "Neues Projekt für die universelle Windows-Plattform" mit ausgewählten Werten für die Zielversion und die Mindestversion.
     :::image-end:::  
     
