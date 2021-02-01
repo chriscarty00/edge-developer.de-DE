@@ -42,7 +42,7 @@ Um mit der Automatisierung von Tests zu beginnen, müssen Sie mit den folgenden 
     
 1.  Navigieren Sie zur [Downloadseite][MicrosoftDeveloperEdgeToolsWebdriverDownloads] des Microsoft Edge-Treibers, und laden Sie den Treiber herunter, der der Versionsnummer von Microsoft Edge entspricht.  
     
-    :::image type="complex" source="./media/edge-driver-install.png" alt-text="Der Abschnitt "Downloads" der Seite "Microsoft Edge-Treiber"":::
+    :::image type="complex" source="./media/edge-driver-install.png" alt-text="Der Abschnitt Downloads der Seite Microsoft Edge-Treiber":::
        Der Abschnitt "Downloads" der [Seite "Microsoft Edge-Treiber"][MicrosoftDeveloperEdgeToolsWebdriver]
     :::image-end:::  
     
