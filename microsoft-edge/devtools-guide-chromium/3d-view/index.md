@@ -123,7 +123,7 @@ Die **Option "Bildschirmtextur verwenden"** fügt Ihrer Debugerfahrung Kontext h
 
 ## Zusammengesetzte Ebenen
 
-:::image type="complex" source="../media/experiments-layers.msft.png" alt-text="Bereich "Zusammengesetzte Ebenen"" lightbox="../media/experiments-layers.msft.png":::
+:::image type="complex" source="../media/experiments-layers.msft.png" alt-text="Bereich Zusammengesetzte Ebenen" lightbox="../media/experiments-layers.msft.png":::
    Bereich **Zusammengesetzte Ebenen**
 :::image-end:::  
 
