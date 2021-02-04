@@ -3,16 +3,16 @@ description: Microsoft Edge unter Linux, verbesserte Webhint-Tipps im Probleme-T
 title: Neuerungen in DevTools (Microsoft Edge 88)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/15/2020
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: a9c262075f3d541861ed825a8da96b3a86956c0e
-ms.sourcegitcommit: c06a4ece7bcbfeae4677d15fca677ca42a0373b9
-ms.translationtype: HT
+ms.openlocfilehash: 9e4bdfcb3cc32364931894dcb3c857ac6e082809
+ms.sourcegitcommit: 12c30ad4ab2664d17c9b7e9d59d7a3cda60ff65c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "11229476"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "11313086"
 ---
 # Neuerungen in DevTools (Microsoft Edge 88)  
 
@@ -62,7 +62,7 @@ Zur leichteren Überprüfung der von [webhint][WebhintMain] aufgedeckten Problem
 <!-- Title: 3D View is now integrated with Composited Layers  -->  
 <!-- Subtitle: Composited Layers are now in 3D View.  -->  
 
-:::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::
+:::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
 
 Sie können nun Inhalte von **Ebenen** neben Z-Indexwerten und dem Dokumentobjektmodell \(DOM\) visualisieren.  Mit diesem Feature können Sie Debuggen, ohne zwischen den Tools [3D-Ansicht][Devtools3dViewIndex] und **Ebenen** umzuschalten.  Für ein umfassendes visuelles Debugging werden jetzt [die 3D-Ansicht und die zusammengesetzten Ebenen kombiniert][DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView].  
 
@@ -112,7 +112,7 @@ Zeigen Sie mit dem neuen Link **Netzwerkanforderungen** alle Routinginformatione
 1.  Navigieren Sie zu **Anwendung** > **Service Workers**.  
 1.  Wählen Sie **Netzwerkanforderungen** aus.  
     
-    :::image type="complex" source="../../media/2020/11/service-worker-application-network-requests.msft.png" alt-text="Öffnen des Netzwerk-Tools im Bereich Service Workers" lightbox="../../media/2020/11/service-worker-application-network-requests.msft.png":::
+    :::image type="complex" source="../../media/2020/11/service-worker-application-network-requests.msft.png" alt-text="Öffnen des Netzwerk-Tools im Bereich "Service Workers"" lightbox="../../media/2020/11/service-worker-application-network-requests.msft.png":::
        Öffnen des **Netzwerk**-Tools im Bereich **Service Workers**
     :::image-end:::  
     
@@ -137,7 +137,7 @@ Debuggen Sie Netzwerkanforderungen, die über Service Worker ausgeführt werden.
 *   Die Laufzeit eines `fetch`-Ereignishandlers.  
 *   Die Laufzeit aller `fetch`-Ereignisse zum Laden eines Clients.  
     
-:::image type="complex" source="../../media/2020/11/network-timing-service-worker.msft.png" alt-text="Bereich Timing" lightbox="../../media/2020/11/network-timing-service-worker.msft.png":::
+:::image type="complex" source="../../media/2020/11/network-timing-service-worker.msft.png" alt-text="Bereich "Timing"" lightbox="../../media/2020/11/network-timing-service-worker.msft.png":::
    Bereich **Timing**  
 :::image-end:::  
 
@@ -222,7 +222,7 @@ Für das Beispiel wird der folgende CSS-Winkel verwendet.
 
 ```css
 background: linear-gradient(100deg, lightblue, pink);
-```  
+```
 
 :::image type="complex" source="../../media/2020/11/css-angle.msft.png" alt-text="CSS-Winkel" lightbox="../../media/2020/11/css-angle.msft.png":::
    CSS-Winkel  
@@ -329,7 +329,7 @@ Das **Netzwerk**-Tool hat beispielsweise zuvor `kB` in den Beschriftungen, aber 
 
 ## Herunterladen der Microsoft Edge-Vorschaukanäle  
 
-Wenn Sie unter Windows, Linux oder macOS arbeiten, sollten Sie die [Microsoft Edge-Vorschaukanäle][MicrosoftEdgePreviewChannels] als Standardbrowser für die Entwicklung verwenden.  Über die Vorschaukanäle erhalten Sie Zugriff auf die neuesten DevTools-Features.  
+Wenn Sie unter Windows, Linux oder macOS arbeiten, sollten Sie die [Microsoft Edge-Vorschaukanäle][MicrosoftEdgePreviewChannels] als Standardentwicklungsbrowser verwenden.  Über die Vorschaukanäle erhalten Sie Zugriff auf die neuesten DevTools-Features.  
 
 ## Mit dem Microsoft Edge DevTools-Team Kontakt aufnehmen  
 
@@ -360,6 +360,8 @@ Wenn Sie unter Windows, Linux oder macOS arbeiten, sollten Sie die [Microsoft Ed
 
 [MicrosoftinsiderDownloadPlatformLinux]: https://www.microsoftedgeinsider.com/download?platform=linux "Herunterladen von Microsoft Edge Insider Channels"  
 
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge Preview Channels"  
+
 [VisualStudioCode]: https://code.visualstudio.com "Visual Studio Code"  
 
 [CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chromium-Fehler"  
@@ -370,7 +372,7 @@ Wenn Sie unter Windows, Linux oder macOS arbeiten, sollten Sie die [Microsoft Ed
 [CR1035309]: https://crbug.com/1035309 "Problem 1035309: DevTools sollte konsistent MB für Megabyte verwenden, nicht Mebibyte | Chromium-Fehler"  
 [CR1051466]: https://crbug.com/1051466 "Problem 1051466: Unterstützung für COOP/COEP-Debugging in DevTools | Chromium-Fehler"  
 [CR1058836]: https://crbug.com/1058836 "Problem 1058836: UX-Probleme rund um das WASM-Debuggen | Chromium-Fehler"  
-[CR1071432]: https://crbug.com/1071432 "Problem 1071432: ☂️ Grundlegende Wasm-Entwicklererfahrung | Chromium-Fehler"  
+[CR1071432]: https://crbug.com/1071432 "Problem 1071432: ☂︝ Wasm Basic Developer Experience | Chromium-Bugs"  
 [CR1107766]: https://crbug.com/1107766 "Problem 1107766: Anzeigen von Informationen zu von 'window.open()' generierten Frames in der Frame-Struktur | Chromium-Fehler"  
 [CR1122507]: https://crbug.com/1122507 "Problem 1122507: Anzeigen von Worker-Informationen in der Framestrukturansicht | Chromium-Fehler"  
 [CR1126178]: https://crbug.com/1126178 "Problem 1126178: ☂ Devtools: CSS <type>-Komponenten | Chromium-Fehler"  

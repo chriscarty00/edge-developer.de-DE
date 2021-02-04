@@ -3,16 +3,16 @@ description: Die neuesten experimentellen Features in Microsoft Edge DevTools
 title: Experimentelle Funktionen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/17/2020
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, f12-Tools, DevTools, Experimentieren
-ms.openlocfilehash: fbdeeb08599285a9cfa6edd467282cfbabbadd74
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 018364d4debc1791685a028c337f61f85865ef6b
+ms.sourcegitcommit: 12c30ad4ab2664d17c9b7e9d59d7a3cda60ff65c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11233929"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "11313055"
 ---
 # Experimentelle Funktionen  
 
@@ -26,12 +26,12 @@ Führen Sie die folgenden Schritte aus, um experimentelle Features in Microsoft 
 
 1.  [Öffnen Sie DevTools][DevtoolsOpenMain].  
     *   Wählen `Control` + `Shift` + `I` Sie \(Windows, Linux\) oder `Command` + `Option` + `I` \(macOS\) aus.  Weitere Informationen finden Sie unter ["Microsoft Edge DevTools"-Tastenkombinationen.][DevToolsShortcuts]  
-1.  Öffnen Sie den [Bereich "Einstellungen".][DevToolsCustomizeSettings]  
+1.  Öffnen Sie den [Bereich "Einstellungen".][DevToolsCustomizeIndexSettings]  
     *   Wählen Sie `Shift` + `?` .  Weitere Informationen finden Sie unter ["Microsoft Edge DevTools"-Tastenkombinationen.][DevToolsShortcuts]  
 1.  Wählen Sie auf der linken Seite **des** Einstellungsbereichs den Abschnitt **"Experimente"** aus.  
     
-    :::image type="complex" source="../media/experiments-devtools.msft.png" alt-text="Liste der Experimente in den DevTools-Einstellungen" lightbox="../media/experiments-devtools.msft.png":::
-       Liste der Experimente **** in den DevTools-Einstellungen  
+    :::image type="complex" source="../media/experiments-devtools.msft.png" alt-text="Seite "Experimente" in den Einstellungen" lightbox="../media/experiments-devtools.msft.png":::
+       Seite **"Experimente"** in den **Einstellungen**  
     :::image-end:::  
     
 1.  Scrollen Sie **auf** der Seite "Experimente" durch die Liste aller verfügbaren experimentellen Features, und aktivieren Sie das Kontrollkästchen neben jedem Feature, das Sie testen möchten.  
@@ -46,76 +46,15 @@ In den folgenden Abschnitten werden die neuen experimentellen Features beschrieb
 
 | Experimentelles Feature | Microsoft Edge Version |  
 |:--- |:--- |  
-| [Emulation: Unterstützung des Dualbildschirmmodus](#emulation-support-dual-screen-mode) | 84 oder höher |  
-| [Aktivieren neuer Features für das Debuggen von CSS-Rastern](#enable-new-css-grid-debugging-features) | 85 oder höher |  
-| [Aktivieren der Unterstützung für das Verschieben von Registerkarten zwischen Panels](#enable-support-to-move-tabs-between-panels) | 85 oder höher |  
 | [Aktivieren von Webhint](#enable-webhint) | 85 oder höher |  
 | [Aktivieren der Netzwerkkonsole](#enable-network-console) | 85 oder höher |  
 | [Quellauftragsanzeige](#source-order-viewer) | 86 oder höher |  
 | [Aktivieren des Editors für Tastenkombinationen](#enable-keyboard-shortcut-editor) | 87 oder höher |  
-| [Aktivieren zusammengesetzter Layer in der 3D-Ansicht](#turn-on-composited-layers-in-3d-view) | 87 oder höher |  
-
-### Emulation: Unterstützung des Dualbildschirmmodus  
-
-Bietet zusätzliche Features zum Emulieren von zwei neuen Dualbildschirmen und ausklappbaren Geräten in Microsoft Edge.  
-
-*   [Surface Duo][SurfaceDevicesDuo]  
-*   [Samsung Verknappung][SamsungMobileGalaxyFold]  
-    
-Emulieren Sie die Geräte, und schalten Sie zwischen den folgenden Haltungen um.  
-
-*   Einzelbildschirm oder geklappte Haltung  
-*   Dualbildschirm oder aufgefunktioniertes Bild  
-    
-Aktivieren Sie [experimentelle Webplattform-APIs,](#enable-experimental-apis) und verwenden Sie die [CSS-Medienbildschirm-übergreifende][DualScreenDocsCssMedia] Funktion und [javaScript getWindowSegments-API,][DualScreenDocsJSAPI] um Ihre Website \(oder App\) für Dualbildschirme und ausklappbare Geräte zu verbessern.  
-
-:::image type="complex" source="../media/experiments-surface-duo-emulation.msft.png" alt-text="Emulieren von Surface Duo in Microsoft Edge" lightbox="../media/experiments-surface-duo-emulation.msft.png":::  
-   Emulieren von Surface Duo in Microsoft Edge  
-:::image-end:::  
-
-#### Aktivieren experimenteller APIs  
-
-Aktivieren Sie das Flag in Microsoft Edge, um das Feature für den Bildschirmbereich von [CSS-Medien][DualScreenDocsCssMedia] und die [JavaScript-getWindowSegments-API][DualScreenDocsJSAPI] `Experimental Web Platform features` zu verwenden.  Führen Sie die folgenden Schritte aus.  
-
-1.  Navigieren Sie zu `edge://flags` .  
-1.  Geben Sie **im Textfeld "Suchkennzeichen"** die Option `Experimental Web Platform features` **"Experimentelle Webplattform-Features"** ein, und ändern Sie **"Deaktiviert"** in **"Aktiviert".**  
-1.  Starten Sie Microsoft Edge neu.  
-    
-:::image type="complex" source="../media/experiments-dual-screen-emulation-edge-flags.msft.png" alt-text="Aktivieren der Kennzeichnung für experimentelle Webplattformfeatures" lightbox="../media/experiments-dual-screen-emulation.msft.png":::
-   Aktivieren der Kennzeichnung für experimentelle Webplattformfeatures  
-:::image-end:::  
-
-> [!NOTE]
-> Wenn Sie CSS-Medienabfragen oder die [JavaScript-Windows-Segment-Enumerations-API][DualScreenDocsJSAPI] verwenden, um Ihre Website oder App für [Surface Duo][SurfaceDevicesDuo]zu verbessern, müssen Sie auch das Flag **"Experimentelle WebPlattform-Features"** in der [Android Microsoft Edge-App][GooglePlayMicrosoftEdge] auf Ihrem [Surface Duo-Gerät][SurfaceDevicesDuo] aktivieren. [][DualScreenDocsCssMedia]  
-> 
-> Wenn das Flag für experimentelle Webplattformfeatures im Microsoft [Edge][MicrosoftEdge] Desktop aktiviert und in der [Android Microsoft][GooglePlayMicrosoftEdge]Edge-App deaktiviert ist, ist das Verhalten Ihrer Website oder App im Surface Duo-Emulator im Desktop von Microsoft Edge nicht mit der [Android Microsoft Edge-App][GooglePlayMicrosoftEdge] auf [Surface Duo kompatibel.][SurfaceDevicesDuo] ****  Stellen Sie sicher, dass die Flags in Android- und Desktop-Microsoft Edge übereinstimmen, um den Surface Duo-Emulator im Microsoft Edge [Desktop erfolgreich zu verwenden.][MicrosoftEdge]  
-
-#### Testen auf ausklappbaren und Dualbildschirmgeräten  
-
-Wenn Sie das [Surface Duo][SurfaceDevicesDuo] in einem dualen Bildschirm in Microsoft Edge emulieren, wird die Naht \(der Abstand zwischen den beiden Bildschirmen\) über Ihrer Website oder App gezeichnet.  
-
-Die emulierte Anzeige entspricht der Darstellung Ihrer Website \(oder App\) in der [Microsoft Edge Android-App,][GooglePlayMicrosoftEdge] die auf [Surface Duo ausgeführt wird.][SurfaceDevicesDuo]  Möglicherweise müssen Sie Ihre Website \(oder App\) aktualisieren, damit sie am Nahtstrich besser angezeigt wird.  Weitere Informationen zum Anpassen Ihrer Website \(oder app\) an die Naht finden Sie unter "Arbeiten mit [der Naht".][DualScreenIntroductionHowWorkSeam]  
-
-Die [Gerätesymbolleiste][DevtoolsDeviceModeIndexSimulateMobileViewport] bietet zusätzliche Features, mit deren Hilfe Sie Ihre Website oder App in mehreren Haltungen und Ausrichtungen testen können.  Choose **Rotate** \( ![ Rotate ][ImageRotateIcon] \) to rotate the viewport to landscape orientation. Kombinieren Sie das Feature mit **Span** \( Span \), um zwischen einem einzelnen Bildschirm oder gefalteten und dualen Bildschirmen oder aufgeklappten ![ ][ImageSpanIcon] Postures umschalten zu können.  Zusammen ermöglichen die Features das Testen Ihrer Website oder App in allen vier möglichen Stellen und Ausrichtungen.  
-
-:::image type="complex" source="../media/experiments-dual-screen-emulation-rotate-span.msft.png" alt-text="Matrix der Haltungen und Ausrichtungen für Dualbildschirme und ausklappbare Geräte" lightbox="../media/experiments-dual-screen-emulation-rotate-span.msft.png":::
-   Matrix der Haltungen und Ausrichtungen für Dualbildschirme und ausklappbare Geräte  
-:::image-end:::  
-
-Das **Symbol für experimentelle Webplattformfeatures** \( ExperimentalApis \) zeigt den Status des Features der ![ ][ImageExperimentalApisIcon] **experimentellen Webplattform** an.  Wenn das Flag aktiviert ist, wird das Symbol hervorgehoben.  Wenn das Flag deaktiviert ist, wird das Symbol nicht hervorgehoben.  Um das Flag zu aktivieren (oder zu deaktivieren), navigieren Sie zu dem Flag, und schalten `edge://flags` Sie es um.  
-
-<!-- Commenting out until the icon issue is fixed in Edge Canary
-The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperimentalApisIcon]\) icon displays the state of the **Experimental Web Platform features** flag.  If the flag is turned on, the icon is highlighted.  If the flag is turned off, the icon is not highlighted.  To turn on \(or off\) the flag, either choose the icon or navigate to `edge://flags` and toggle the flag.   -->  
-
-Hier finden Sie weitere Ressourcen, die Sie bei der Verbesserung Ihrer Website \(oder App\) für Dual-Screen-Geräte unterstützen können.  
-
-*   Weitere Informationen zur Webentwicklung auf Dual-Screen-Geräten finden Sie unter ["Dual-screen web experiences".][DualScreenWebIndex]  
-*   Installieren Sie den [Surface Duo-Emulator.][DualScreenAndroidUseEmulator]  Sie unterscheiden sich vom Emulator in Microsoft Edge, emulieren das Surface Duo unter Android und werden in [Android Studio integriert.][AndroidDeveloperStudio]  Weitere Informationen finden Sie unter ["Surface Duo SDK erhalten".][DualScreenAndroidGetDuoSdk]  
-    
-> [!NOTE]
-> Im Folgenden finden Sie eine Liste der aktuellen bekannten Probleme.  
-> 
-> *   Wenn Sie einen [Microsoft Remote Desktop Client][RemoteDesktopClientDocs] verwenden, um eine Verbindung mit einem Remote-PC herzustellen und das Surface [Duo][SurfaceDevicesDuo] oder Samsung [Während Fold][SamsungMobileGalaxyFold]zu emulieren, kann der Zeiger wackeln oder zittern.  Wenn das Problem vor sich geht, senden [Sie Feedback.](#providing-feedback-on-experimental-features)  
+| [Aktivieren zusammengesetzter Layer in der 3D-Ansicht](#enable-composited-layers-in-3d-view) | 87 oder höher |  
+| [Aktivieren des neuen Schriftarten-Editor-Tools im Formatvorlagenbereich](#) | 89 oder höher |  
+| [Aktivieren neuer CSS -Flexbox-Debugfeatures](#enable-new-css-flexbox-debugging-features) | 89 oder höher |  
+| [Aktivieren + Schaltflächenmenüs zum Öffnen von weiteren Tools](#enable--button-tab-menus-to-open-more-tools) | 89 oder höher |  
+| [Registerkarte "Willkommen" aktivieren](#enable-welcome-tool) | 89 oder höher |  
 
 ### Aktivieren neuer Features für das Debuggen von CSS-Rastern  
 
@@ -123,9 +62,9 @@ Dieses experimentelle Feature bietet eine Reihe neuer Visualisierungen, die Sie 
 
 #### Anzeigen von Rasterüberlagerungen beim Zeigen mit dem Tool "Inspect"  
 
-Das **Tool "Inspect"** bietet eine schnelle Möglichkeit, CSS-Rasterlayouts in einer Website zu identifizieren und zu visualisieren, indem Sie mit der Maus auf sie zeigen.  Klicken Sie **in der** oberen linken Ecke von DevTools auf das Symbol Überprüfen\( Überprüfen ![ ][ImageInspectIcon] \) .  Zeigen Sie dann auf der Website, die Sie debuggen, auf ein Grid-Element.  Um das Raster herum werden Gliederungen angezeigt, und die Schattierung gibt die Position von Rasterlücken an, falls vorhanden.  
+Das **Tool "Inspect"** bietet eine schnelle Möglichkeit, CSS-Rasterlayouts in einer Website zu identifizieren und zu visualisieren, indem Sie mit der Maus auf sie zeigen.  Klicken Sie **in der** oberen linken Ecke von DevTools auf das Symbol Überprüfen\( Überprüfen ![ ](../media/inspect-icon.msft.png) \) .  Zeigen Sie dann auf der Website, die Sie debuggen, auf ein Grid-Element.  Um das Raster herum werden Gliederungen angezeigt, und die Schattierung gibt die Position von Rasterlücken an, falls vorhanden.  
 
-:::image type="complex" source="../media/grid-inspect.msft.png" alt-text="Anzeigen von Rastern mit dem Tool Überprüfen" lightbox="../media/grid-inspect.msft.png":::
+:::image type="complex" source="../media/grid-inspect.msft.png" alt-text="Anzeigen von Rastern mit dem Tool "Überprüfen"" lightbox="../media/grid-inspect.msft.png":::
    Anzeigen von Rastern mit dem **Tool "Überprüfen"**  
 :::image-end:::  
 
@@ -141,7 +80,7 @@ Die beiden Möglichkeiten zum Umschalten einer persistenten Rasterüberlagerung.
 
 *   Wählen Sie das **Symbol "Raster-Oval"** neben einem beliebigen Rasterelement aus, das in der STRUKTUR des Elements **angezeigt** wird.  
     
-    :::image type="complex" source="../media/grid-adorner.msft.png" alt-text="Symbol Raster oval im Tool Elemente" lightbox="../media/grid-adorner.msft.png":::
+    :::image type="complex" source="../media/grid-adorner.msft.png" alt-text="Symbol "Raster oval" im Tool "Elemente"" lightbox="../media/grid-adorner.msft.png":::
        Symbol "Raster oval" im **Tool "Elemente"**  
     :::image-end:::  
     
@@ -161,7 +100,7 @@ In Microsoft Edge, Version 86 oder höher, befindet sich das neue **Layoutpanel*
 
 ### Aktivieren der Unterstützung für das Verschieben von Registerkarten zwischen Panels  
 
-Normalerweise können Tools wie **Elemente** und **Netzwerk** nur im Hauptbereich geöffnet werden, der sich oben in devTools befindet.  Tools wie **die 3D-Ansicht** und Probleme, die normalerweise nur im Bereich "Drawer" am unteren Rand der DevTools geöffnet werden. **** ****  Nachdem Sie das Experiment auswählen, können Sie Tools zwischen dem oberen und unteren Bereich verschieben.  Um ein Tool zu verschieben, zeigen Sie auf die Registerkarte, öffnen **** Sie das Kontextmenü \(rechtsklick\), und wählen Sie "Nach oben" oder **"Nach unten" aus.**   Mit diesem Experiment können Sie Ihr DevTools-Layout anpassen.  Wählen Sie zum Ein- oder Ausblenden **des Drawerpanels** die Option `Escape` aus.  
+Normalerweise können Tools wie **Elemente** und **Netzwerk** nur im Hauptbereich geöffnet werden, der sich oben in devTools befindet.  Tools wie **die 3D-Ansicht** und Probleme, die normalerweise nur im Bereich "Drawer" am unteren Rand der DevTools geöffnet werden. **** ****  Nachdem Sie das Experiment auswählen, können Sie Tools zwischen dem oberen und unteren Bereich verschieben.  Um ein Tool zu verschieben, zeigen Sie auf die Registerkarte, öffnen **** Sie das Kontextmenü \(rechtsklick\), und wählen Sie "Nach oben" oder **"Nach unten" aus.**   Mit diesem Experiment können Sie Ihr DevTools-Layout anpassen.  Wählen Sie zum Anzeigen oder Ausblenden **des Drawerpanels** die Option `Escape` aus.  
 
 :::image type="complex" source="../media/experiments-move-panels.msft.png" alt-text="Verschieben von Registerkarten zwischen Panels" lightbox="../media/experiments-move-panels.msft.png":::
    Verschieben von Registerkarten zwischen Panels  
@@ -171,7 +110,7 @@ Normalerweise können Tools wie **Elemente** und **Netzwerk** nur im Hauptbereic
 
 ### Aktivieren von Webhint  
 
-[Webhint][WebhintMain] ist ein Open Source-Tool, das Echtzeitfeedback für Websites und lokale Webseiten bietet.  Die Art des Feedbacks, das von [Webhint bereitgestellt wird.][WebhintMain]  
+[Webhint][WebhintMain] ist ein Open-Source-Tool, das Echtzeitfeedback für Websites und lokale Webseiten liefert.  Die Art des Feedbacks, das von [Webhint bereitgestellt wird.][WebhintMain]  
 
 *   Bedienungshilfen  
 *   Browserübergreifende Kompatibilität  
@@ -192,7 +131,7 @@ Das [Webhint-Experiment][WebhintMain] zeigt das Webhintfeedback im Bereich ["Pro
 
 **Die Netzwerkkonsole** ist der Arbeitstitel eines Experiments zum Erstellen synthetischer Netzwerkanforderungen über HTTP.  Sie können das Experiment **"Netzwerkkonsole"** verwenden, um Web-API-Anforderungen zu senden.  
 
-Nachdem Sie das Experiment aktiviert haben, stellen Sie sicher, dass Sie die DevTools neu starten.  Führen Sie die folgenden **Schritte aus, um**die Netzwerkkonsole zu verwenden.  
+Nachdem Sie das Experiment aktivieren, stellen Sie sicher, dass Sie die DevTools neu starten.  Führen Sie die folgenden **Schritte aus, um**die Netzwerkkonsole zu verwenden.  
 
 1.  Öffnen Sie den **Netzwerkbereich.**  
 1.  Suchen Sie die Netzwerkanforderung, die Sie ändern und erneut senden möchten.  
@@ -200,24 +139,24 @@ Nachdem Sie das Experiment aktiviert haben, stellen Sie sicher, dass Sie die Dev
 1.  Bearbeiten Sie **beim Öffnen der** Netzwerkkonsole die Netzwerkanforderungsinformationen.  
 1.  Wählen Sie **"Senden"** aus.  
     
-:::image type="complex" source="../media/network-network-console.msft.png" alt-text="Netzwerkkonsole in der Konsolenschubte" lightbox="../media/network-network-console.msft.png":::
-   **Netzwerkkonsole** in der **Konsolenschubte**  
+:::image type="complex" source="../media/network-network-console.msft.png" alt-text="Netzwerkkonsole in der Konsolenschubschubschubte" lightbox="../media/network-network-console.msft.png":::
+   **Netzwerkkonsole** in der **Konsolenschubschubschubte**  
 :::image-end:::  
 
 <!--Available in Microsoft Edge version 85 and later.  -->  
 
 ### Quellauftragsanzeige  
 
-**Source Order Viewer** ist ein Experiment, das die Reihenfolge der Elemente in der Seitenquelle anzeigt.  Die Anzeigereihenfolge auf dem Bildschirm kann sich von der Reihenfolge der Quelle unterscheiden, was die Benutzer von Bildschirmleseprogramm und Tastatur verwechselt.  Verwenden Sie **das Experiment "Quellreihenfolgeanzeige",** um die Unterschiede zwischen der Anzeigereihenfolge auf dem Bildschirm und der Reihenfolge der Quelle zu finden.  
+**Source Order Viewer** ist ein Experiment, das die Reihenfolge der Elemente in der Webseitenquelle anzeigt.  Die Anzeigereihenfolge auf dem Bildschirm kann sich von der Reihenfolge der Quelle unterscheiden, was die Benutzer von Bildschirmleseprogramm und Tastatur verwechselt.  Verwenden Sie **das Experiment "Quellreihenfolgeanzeige",** um die Unterschiede zwischen der Anzeigereihenfolge auf dem Bildschirm und der Reihenfolge der Quelle zu finden.  
 
-Nachdem Sie das Experiment aktiviert haben, stellen Sie sicher, dass Sie die DevTools neu starten.  Führen Sie die **folgenden Schritte aus,** um die Quellauftragsanzeige zu verwenden.  
+Nachdem Sie das Experiment aktivieren, stellen Sie sicher, dass Sie die DevTools neu starten.  Führen Sie die **folgenden Schritte aus,** um die Quellauftragsanzeige zu verwenden.  
 
-1.  Öffnen Sie den **Bereich "Elemente".**  
+1.  Öffnen Sie das **Elementtool.**  
 1.  Öffnen Sie den **Barrierefreiheitsbereich** im Bereich "Drawer \(bottom\)".  
 1.  Aktivieren Sie **im Abschnitt "Quellauftragsanzeige"** das Kontrollkästchen "Quellbestellung anzeigen". ****  
-1.  Markieren Sie alle HTML-Elemente, um eine Überlagerung in der Reihenfolge in der Seitenquelle anzeigen.  
+1.  Markieren Sie alle HTML-Elemente, um eine Überlagerung anzuzeigen, die in der Reihenfolge in der Webseitenquelle angezeigt wird.  
     
-:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="Quellreihenfolgeanzeige im Bereich Barrierefreiheit" lightbox="../media/experiments-source-order-viewer.msft.png":::
+:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="Quellreihenfolgeanzeige im Bereich "Barrierefreiheit"" lightbox="../media/experiments-source-order-viewer.msft.png":::
    **Quellreihenfolgeanzeige** im Bereich **"Barrierefreiheit"**  
 :::image-end:::  
 
@@ -225,45 +164,47 @@ Nachdem Sie das Experiment aktiviert haben, stellen Sie sicher, dass Sie die Dev
 
 ### Aktivieren des Editors für Tastenkombinationen
 
-Wenn das **Experiment "Tastenkombination-Editor** aktivieren" aktiviert ist, können Sie nun Tastenkombinationen für jede Aktion in devTools anpassen.  Führen Sie die folgenden Schritte aus, um die Tastenkombination für eine bestimmte Aktion anzupassen.  
+Wenn das **Experiment "Tastenkombination-Editor** aktivieren" aktiviert ist, können Sie Tastenkombinationen für jede Aktion in devTools anpassen.  Führen Sie die folgenden Schritte aus, um die Tastenkombination für eine bestimmte Aktion anzupassen.  
 
 1.  [Öffnen Sie DevTools][DevtoolsOpenMain].  
-1.  Öffnen Sie [Einstellungen][DevToolsCustomizeSettings].
+1.  Öffnen Sie [Einstellungen][DevToolsCustomizeIndexSettings].  
     *   Wählen Sie `Shift` + `?` .  
 1.  Navigieren Sie zur **Verknüpfungsseite.**  
 1.  Wählen Sie die Aktion aus, die Sie anpassen möchten.  
-1.  Wählen Sie **das Symbol "Bearbeiten** \( ![ EditKeyboardShortcut ][ImageEditKeyboardShortcutIcon] \)" aus.  
+1.  Wählen Sie **das Symbol "Bearbeiten** \( ![ EditKeyboardShortcut ](../media/edit-keyboard-shortcut-icon.msft.png) \)" aus.  
     
-    :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="Auswählen der anzupassenden Aktion auf der Seite Verknüpfungen in den Einstellungen" lightbox="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
-       Auswählen der anzupassenden Aktion auf der Seite **"Verknüpfungen"** in den [Einstellungen][DevToolsCustomizeSettings]
+    :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="Auswählen der anzupassenden Aktion auf der Seite "Verknüpfungen" in den Einstellungen" lightbox="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
+       Auswählen der anzupassenden Aktion auf der Seite **"Verknüpfungen"** in den [Einstellungen][DevToolsCustomizeIndexSettings]  
     :::image-end:::  
     
-1.  Wählen Sie auf der Tastatur die Tasten aus, die Sie an die Aktion binden möchten.
+1.  Wählen Sie auf der Tastatur die Tasten aus, die an die Aktion gebunden werden soll.  
     
-    :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png" alt-text="Wählen Sie die Schlüssel aus, die Sie der Aktion zuweisen möchten." lightbox="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
-       Wählen Sie die Schlüssel aus, die Sie der Aktion zuweisen möchten.
+    :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png" alt-text="Auswählen der Schlüssel, die der Aktion zugewiesen werden" lightbox="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
+       Auswählen der Schlüssel, die der Aktion zugewiesen werden  
     :::image-end:::  
     
-1.  Um die neue Tastenkombination zu speichern, aktivieren Sie das Kontrollkästchen \(![CheckmarkKeyboardShortcut][ImageCheckmarkKeyboardShortcutIcon]\) symbol.
+1.  Um die neue Tastenkombination zu speichern, aktivieren Sie das Kontrollkästchen \(![CheckmarkKeyboardShortcut](../media/checkmark-keyboard-shortcut-icon.msft.png)\) symbol.  
     
     :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-save-shortcut.msft.png" alt-text="Klicken Sie auf das Häkchensymbol, um die neue Tastenkombination zu speichern." lightbox="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
-       Klicken Sie auf das Häkchensymbol, um die neue Tastenkombination zu speichern.
+       Klicken Sie auf das Häkchensymbol, um die neue Tastenkombination zu speichern.  
     :::image-end:::  
     
 1.  Wählen Sie die neue Tastenkombination aus, um die Aktion in devTools auszulösen.  
     
-Auf der **Seite Verknüpfungen ** zeigt das Symbol Benutzerdefinierte Tastenkombination\( **** ![ CustomKeyboardShortcut ][ImageCustomKeyboardShortcutIcon] \) die von Ihnen angepassten Tastenkombinationen an.  Um alle Verknüpfungen zurückzusetzen, wählen Sie **"Standardverknüpfungen wiederherstellen" aus.**  
+Auf der **Seite Verknüpfungen ** zeigt das Symbol Benutzerdefinierte Tastenkombination\( **** ![ CustomKeyboardShortcut ](../media/custom-keyboard-shortcut-icon.msft.png) \) die von Ihnen angepassten Tastenkombinationen an.  Um alle Verknüpfungen zurückzusetzen, wählen Sie **"Standardverknüpfungen wiederherstellen" aus.**  
 
-Wenn Sie die Tastenkombinationen für eine Aktion bearbeiten, wählen Sie zum Verwerfen der Änderungen das X \( ![ XKeyboardShortcut ][ImageXKeyboardShortcutIcon] \)-Symbol aus.  Um Verknüpfungen für eine bestimmte Aktion zu entfernen, wählen Sie **das** Symbol "Verknüpfung löschen" ![ (DeleteKeyboardShortcut ][ImageDeleteKeyboardShortcutIcon] \) aus.  Wenn Sie mehrere Verknüpfungen für eine Aktion hinzufügen möchten, wählen **Sie "Verknüpfung hinzufügen" aus.**
+Wenn Sie Ihre Änderungen beim Bearbeiten der Tastenkombinationen für eine Aktion verwerfen möchten, wählen Sie das X \( ![ XKeyboardShortcut ](../media/discard-changes-keyboard-shortcut-icon.msft.png) \)-Symbol aus.  Um Verknüpfungen für eine bestimmte Aktion zu entfernen, wählen Sie **das** Symbol "Verknüpfung löschen" ![ (DeleteKeyboardShortcut ](../media/delete-keyboard-shortcut-icon.msft.png) \) aus.  Wenn Sie mehrere Verknüpfungen für eine Aktion hinzufügen möchten, wählen **Sie "Verknüpfung hinzufügen" aus.**  
 
 > [!NOTE]
 > Wenn derzeit eine Tastenkombination einer anderen Aktion zugewiesen ist, können Sie sie nicht für eine neue Aktion speichern.  Sie müssen zuerst die Tastenkombination für die vorherige Aktion löschen und dann der neuen Aktion hinzufügen.  
 
-<!--Available in Microsoft Edge version 87 and later.  -->
+<!--Available in Microsoft Edge version 87 and later.  -->  
 
-### Aktivieren zusammengesetzter Layer in der 3D-Ansicht
+### Aktivieren zusammengesetzter Layer in der 3D-Ansicht  
 
-Sie können layer nun zusammen mit Z-Indizes und dem Dokumentobjektmodell \(DOM\) visualisieren.  Dieses Feature hilft Ihnen beim Debuggen, ohne Kontexte so oft zu wechseln.  Sie haben festgestellt, dass die Reduzierung des Kontextwechsels ein großer Problempunkt war.  Es ist nicht immer klar, wie sich der von Ihnen geschriebene Code auf Ihre Web App auswirkt.  Für ein umfassendes visuelles Debugging werden jetzt die 3D-Ansicht und die zusammengesetzten Ebenen kombiniert.  Nachdem Sie das Experiment aktiviert haben, stellen Sie sicher, dass Sie die DevTools neu starten.  Führen Sie die **folgenden Schritte aus,** um zusammengesetzte Layer zu verwenden.  
+Sie können layer nun zusammen mit Z-Indizes und dem Dokumentobjektmodell \(DOM\) visualisieren.  Dieses Feature hilft Ihnen beim Debuggen, ohne Kontexte so oft zu wechseln.  Sie haben festgestellt, dass die Reduzierung des Kontextwechsels ein großer Problempunkt war.  Es ist nicht immer klar, wie sich der von Ihnen geschriebene Code auf Ihre Web App auswirkt.  Für ein umfassendes visuelles Debugging werden jetzt die 3D-Ansicht und die zusammengesetzten Ebenen kombiniert.  
+
+Nachdem Sie das Experiment aktivieren, stellen Sie sicher, dass Sie die DevTools neu starten.  Führen Sie die **folgenden Schritte aus,** um zusammengesetzte Layer zu verwenden.  
 
 1.  Wählen Sie in der Drawer das **3D-Ansichtstool** aus.  
 1.  Öffnen Sie den **Bereich zusammengesetzte Layer.**  
@@ -275,18 +216,112 @@ Sie können layer nun zusammen mit Z-Indizes und dem Dokumentobjektmodell \(DOM\
 
 <!--Available in Microsoft Edge version 87 and later.  -->  
 
+### Aktivieren des neuen Schriftarten-Editor-Tools im Formatvorlagenbereich  
+
+Sie können jetzt den neuen visuellen [Schriftarten-Editor zum][DevtoolsInspectStylesEditFonts] Bearbeiten von Schriftarten verwenden.  Verwenden Sie sie, um Schriftarten und Schriftartmerkmale zu definieren.  Der visuelle **Schriftarten-Editor** hilft Ihnen beim Ausführen der folgenden Aktionen.  
+
+*   Wechseln zwischen Einheiten für unterschiedliche Schriftarteigenschaften  
+*   Wechseln zwischen Schlüsselwörtern für unterschiedliche Schriftarteigenschaften  
+*   Einheiten konvertieren  
+*   Generieren von genauem CSS-Code  
+    
+Nachdem Sie das Experiment aktivieren, stellen Sie sicher, dass Sie die DevTools neu starten.  Führen Sie die folgenden Schritte aus, um den neuen visuellen **Schriftarten-Editor**zu verwenden.  
+
+1.  Öffnen Sie das **Elementtool.**  
+1.  Öffnen Sie den **Formatvorlagenbereich.**  
+1.  Wählen Sie das **Symbol "Schriftart-Editor"** aus.  
+    
+For more information about the new visual **Font Editor,** navigate to [Edit CSS font styles and settings in the Styles pane in DevTools][DevtoolsInspectStylesEditFonts].  
+
+:::image type="complex" source="../media/font-editor-open.msft.png" alt-text="Der visuelle Schriftarten-Editor-Bereich ist hervorgehoben." lightbox="../media/font-editor-open.msft.png":::
+   Der visuelle **Schriftarten-Editor-Bereich** ist hervorgehoben.  
+:::image-end:::  
+
+<!--Available in Microsoft Edge version 89 and later.  -->  
+
+### Aktivieren neuer CSS -Flexbox-Debugfeatures  
+
+Dieses experimentelle Feature bietet viele neue Visualisierungen, mit deren Hilfe Sie CSS-Flexbox-Layouts debuggen können.  Um eine Vorschau der neuesten experimentellen Features anzuzeigen, [aktivieren Sie dieses Experiment,](#turn-on-experimental-features) und laden Sie DevTools neu.  
+
+#### Anzeigen beständiger Überlagerungen in Flexboxlayouts mit dem Tool "Inspect"  
+
+Das **Tool "Inspect"** bietet eine schnelle Möglichkeit, CSS-Flexbox-Layouts in einer Website zu identifizieren und zu visualisieren, indem Sie mit der Maus auf sie zeigen.  Klicken Sie **in der** oberen linken Ecke von DevTools auf das Symbol Überprüfen\( Überprüfen ![ ](../media/inspect-icon.msft.png) \) .  Zeigen Sie dann beim Debuggen der Website auf einen Flexcontainer, um Gliederungen um den Flexcontainer zu zeigen.  
+
+:::image type="complex" source="../media/flexbox-hover.msft.png" alt-text="Anzeigen von "Flexbox"-Containern mit dem Tool "Inspect"" lightbox="../media/flexbox-hover.msft.png":::
+   Anzeigen von "Flexbox"-Containern mit dem **Tool "Inspect"**  
+:::image-end:::  
+
+#### Anzeigen beständiger Überlagerungen in Flexboxlayouts  
+
+In Microsoft Edge, Version 89 oder höher, bietet das experimentelle CSS-Flexbox-Feature auch die Möglichkeit, dauerhafte Überlagerungen für Flexboxlayouts zu aktivieren.  Dauerhafte Überlagerungen bieten die folgenden Vorteile.  
+
+*   Dauerhafte Überlagerungen bleiben auf der Webseite sichtbar, wenn Sie einen Bildlauf durchführen, die Maus bewegen und andere Features von DevTools verwenden.
+*   Mehrere persistente Überlagerungen können gleichzeitig verwendet werden, damit Sie mehrere Flexboxlayouts gleichzeitig überprüfen können.  
+*   Dauerhafte Überlagerungen bieten Farbkonfigurationsoptionen.  
+    
+Verwenden Sie eine der folgenden Aktionen, um beständige Überlagerungen im Layout von Flexbox umschalten.  
+
+*   Wählen Sie **das Ovalsymbol "Flexbox"** neben einem beliebigen Flexbox-Container aus, der in der STRUKTUR DES Elements **angezeigt** wird.  
+*   Öffnen Sie das neue **** **Layoutpanel** im Elementtool, und aktivieren Sie das Kontrollkästchen neben jedem Flexbox-Container, den Sie hervorheben möchten.  
+    
+:::image type="complex" source="../media/flexbox-overlay.msft.png" alt-text="Flexsymbole und Layoutpanel in DevTools" lightbox="../media/flexbox-overlay.msft.png":::
+   Flexsymbole **und Layoutpanel** in DevTools  
+:::image-end:::  
+
+#### Konfigurieren beständiger Überlagerungen  
+
+Verwenden Sie zum Konfigurieren von Optionen für beständige Überlagerungen für CSS-Raster oder Flexbox-Layouts den **Layoutbereich.**  Der **Layoutbereich** befindet sich im Tool **"Elemente"** neben den **Formatvorlagen-** und **berechneten** Fensterausschnitten.  
+
+:::image type="complex" source="../media/flexbox-layout.msft.png" alt-text="Layoutpanel" lightbox="../media/flexbox-layout.msft.png":::
+   Layoutpanel  
+:::image-end:::  
+
+<!--Available in Microsoft Edge version 89 and later.  -->  
+
+### Aktivieren + Schaltflächenmenüs zum Öffnen von weiteren Tools  
+
+Sie können nun weitere Tools öffnen, indem Sie das neue Symbol "Weitere **Tools\(** `+` \) " verwenden.  Nachdem Sie die **** Registerkartenmenüs Aktivieren + aktiviert haben, um weitere Tools zu experimentieren und DevTools neu zu laden, wird rechts neben der Registerkartengruppe oben in DevTools ein Pluszeichen \( `+` \) angezeigt.  Wenn Sie eine Liste anderer Tools anzeigen möchten, die Sie der Registerkartenleiste hinzufügen können, wählen Sie das neue Symbol "Weitere **Tools\** `+` (\)" aus.  
+
+:::image type="complex" source="../media/experiments-more-tools-button.msft.png" alt-text="Weitere Tools im oberen Bereich" lightbox="../media/experiments-more-tools-button.msft.png":::
+   **Weitere Tools** im oberen Bereich
+:::image-end:::  
+
+<!--Available in Microsoft Edge version 89 and later.  -->  
+
+### Willkommenstool aktivieren
+
+Dieses Experiment ersetzt das Tool **"Neues"** durch das neue **Willkommenstool.**  Es wird ein aktualisiertes Design für die folgenden Inhalte angezeigt.  
+
+*   Links zu Entwickler-Dokumenten  
+*   Die neuesten Features  
+*   Anmerkungen zur Version  
+*   Option zum Kontaktieren des Microsoft Edge DevTools-Teams  
+    
+Das **Willkommenstool** wird nach jedem Update auf Microsoft Edge automatisch geöffnet.  Um zu verhindern, **** dass das Willkommenstool nach jeder **** Aktualisierung angezeigt wird, müssen Sie nach jeder Aktualisierung unter dem Titel des Willkommenstools das Kontrollkästchen neben der Registerkarte "Öffnen" **** aktivieren.  
+
+Wenn Sie das ursprüngliche Tool **"Was ist neu"** bevorzugen, navigieren Sie zu Einstellungsexperimente, und entfernen Sie das Kontrollkästchen neben der Registerkarte [][DevtoolsCustomizeIndexSettings]  >  **** **"Willkommen aktivieren".**  
+
+:::image type="complex" source="../media/experiments-welcome.msft.png" alt-text="Willkommenstool" lightbox="../media/experiments-welcome.msft.png":::
+   **Willkommenstool**  
+:::image-end:::  
+
+<!--Available in Microsoft Edge version 89 and later.  -->  
+
 ## Frühere experimentelle Features  
 
 *   [Die 3D-Ansicht][Devtools3dViewIndex] ist jetzt in Microsoft Edge, Version 83 oder höher, verfügbar und standardmäßig aktiviert.  
+*   [Die Unterstützung zum Verschieben von Registerkarten][DevtoolsMoveTabs] zwischen Panels ist jetzt verfügbar und in Microsoft Edge, Version 85 oder höher, standardmäßig aktiviert.  
 *   [Tastenkombinationen anpassen ist][DevtoolsCustomKeyboardShortcuts] jetzt in Microsoft Edge, Version 86 oder höher, verfügbar und standardmäßig aktiviert.  
-
+*   [Emulation: Der Dualbildschirmmodus ist][DevtoolsDeviceModeDualScreenAndFoldables] jetzt verfügbar und in Microsoft Edge, Version 89 oder höher, standardmäßig aktiviert.  
+*   In Microsoft [Edge,][DevtoolsCssGrid] Version 89 oder höher, sind neue Features zum Debuggen des CSS-Rasters jetzt verfügbar und standardmäßig aktiviert.  
+    
 ## Bereitstellen von Feedback zu experimentellen Features  
 
 Um Feedback zu Microsoft Edge -DevTools-Experimenten oder anderen im Zusammenhang mit DevTools zu geben.  
 
 *   Senden Sie Ihr Feedback über das Symbol **"Feedback** senden" in den DevTools.  
 *   Tweet bei [@EdgeDevTools][TwitterEdgedevtools]  
-
+    
 :::image type="complex" source="../media/bing-devtools-send-feedback.msft.png" alt-text="Das Symbol Feedback senden in den Microsoft Edge-Entwicklungstools" lightbox="../media/bing-devtools-send-feedback.msft.png":::
    Das Symbol **Feedback senden** in den Microsoft Edge-Entwicklungstools  
 :::image-end:::  
@@ -297,23 +332,14 @@ Um Feedback zu Microsoft Edge -DevTools-Experimenten oder anderen im Zusammenhan
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 -->  
 
-<!-- image links -->  
-
-[ImageCheckmarkKeyboardShortcutIcon]: ../media/checkmark-keyboard-shortcut-icon.msft.png  
-[ImageCustomKeyboardShortcutIcon]: ../media/custom-keyboard-shortcut-icon.msft.png  
-[ImageDeleteKeyboardShortcutIcon]: ../media/delete-keyboard-shortcut-icon.msft.png  
-[ImageEditKeyboardShortcutIcon]: ../media/edit-keyboard-shortcut-icon.msft.png  
-[ImageExperimentalApisIcon]: ../media/experimental-apis-dark-icon.msft.png  
-[ImageInspectIcon]: ../media/inspect-icon.msft.png  
-[ImageRotateIcon]: ../media/rotate-dark-icon.msft.png  
-[ImageSpanIcon]: ../media/span-dark-icon.msft.png  
-[ImageXKeyboardShortcutIcon]: ../media/discard-changes-keyboard-shortcut-icon.msft.png  
-
 <!-- links -->  
 
 [Devtools3dViewIndex]: ../3d-view/index.md "3D-Ansicht | Microsoft Docs"  
-[DevToolsCustomizeSettings]: ../customize/index.md#settings "Einstellungen – Anpassen von Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCssGrid]: ../css/grid.md "Überprüfen sie das CSS-Raster in Microsoft Edge DevTools-| Microsoft Docs"  
+[DevtoolsMoveTabs]: ../customize/index.md "Anpassen von Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsCustomizeIndexSettings]: ../customize/index.md#settings "Einstellungen – Anpassen von Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsDeviceModeIndexSimulateMobileViewport]: ../device-mode/index.md#simulate-a-mobile-viewport "Simulieren mobiler Geräte mit dem Gerätemodus in Microsoft Edge DevTools | Microsoft Edge"  
+[DevtoolsInspectStylesEditFonts]: ../inspect-styles/edit-fonts.md "Bearbeiten von Css-Schriftartenformaten und -einstellungen im Formatvorlagenbereich in DevTools | Microsoft Docs"  
 [DevtoolsIssues]: ../issues/index.md "Erkennen und Beheben von Problemen mit dem Microsoft Edge DevTools-Tool „Probleme“ | Microsoft Docs"  
 [DevToolsShortcuts]: ../shortcuts/index.md "Microsoft Edge DevTools – Tastenkombinationen | Microsoft Docs"  
 [DevtoolsCustomKeyboardShortcuts]: ../customize/shortcuts.md "Anpassen von Tastenkombinationen in der Microsoft Edge DevTools-| Microsoft Docs"  
@@ -337,6 +363,7 @@ Um Feedback zu Microsoft Edge -DevTools-Experimenten oder anderen im Zusammenhan
 [GooglePlayMicrosoftEdge]: https://play.google.com/store/apps/details?id=com.microsoft.emmx "Microsoft Edge | Google Play"  
 
 [SamsungMobileGalaxyFold]: https://www.samsung.com/mobile/galaxy-fold/ "1-1-| Samsung"  
+[DevtoolsDeviceModeDualScreenAndFoldables]: ../device-mode/dual-screen-and-foldables.md "Emulieren von Dualbildschirmen und ausklappbaren Geräten in Microsoft Edge DevTools | Microsoft Docs"
 
 [TwitterEdgedevtools]: https://www.twitter.com/EdgeDevTools "Microsoft Edge DevTools | Twitter"  
 

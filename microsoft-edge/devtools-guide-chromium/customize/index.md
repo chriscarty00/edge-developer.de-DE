@@ -1,18 +1,18 @@
 ---
-description: Eine Liste der Möglichkeiten zum Anpassen der Microsoft Edge-devtools
-title: Anpassen von Microsoft Edge devtools
+description: Eine Liste der Möglichkeiten zum Anpassen von Microsoft Edge DevTools
+title: Anpassen von Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/20/2020
+ms.date: 01/22/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 682ff78b6a5272c1f6462648d64241448838edac
-ms.sourcegitcommit: 080759f68a0a158f10dc20d20c14e222ace1be84
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
+ms.openlocfilehash: 5822fa087244fdfafdefe040709058411040ea45
+ms.sourcegitcommit: 12c30ad4ab2664d17c9b7e9d59d7a3cda60ff65c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "11189982"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "11313023"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,76 +28,76 @@ ms.locfileid: "11189982"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Anpassen von Microsoft Edge devtools  
+# Anpassen von Microsoft Edge DevTools  
 
-Auf dieser Seite werden die Möglichkeiten zum Anpassen der Microsoft Edge-devtools.  
+Auf dieser Seite werden die Möglichkeiten zum Anpassen von Microsoft Edge DevTools aufgeführt.  
 
 ## Einstellungen  
 
-**Einstellungen**  >  **Einstellungen** enthält viele Optionen zum Anpassen von devtools.  
+**Einstellungen**  >  **Einstellungen enthalten** viele Optionen zum Anpassen von DevTools.  
 
-Führen Sie eine der folgenden Aktionen aus, um die Einstellungen zu öffnen.  
+Führen Sie zum Öffnen von "Einstellungen" eine der folgenden Aktionen aus.  
 
-*   Wählen Sie aus `F1` , während devtools den Fokus hat.  
-*   Öffnen Sie das **Hauptmenü** , und wählen Sie dann **Einstellungen**aus.  
+*   Wählen `F1` Sie diese Option aus, während DevTools den Fokus hat.  
+*   Öffnen Sie **das Hauptmenü,** und wählen Sie dann **"Einstellungen" aus.**  
     
 :::image type="complex" source="../media/customize-settings-preferences.msft.png" alt-text="Einstellungen" lightbox="../media/customize-settings-preferences.msft.png":::
    **Einstellungen**  
 :::image-end:::  
 
-## Schublade  
+## Drawer  
 
-Die **Schublade** ist ein zweites Fenster, in dem Tools Ihrer Wahl angezeigt werden.  
+Die **Drawer** ist ein zweites Panel, in dem Tools Ihrer Wahl angezeigt werden.  
 
-Wenn Sie die **Schublade**öffnen oder schließen möchten, wählen Sie aus `Escape` .  
+Wählen Sie zum Öffnen von \(oder schließen\) die **Drawer** `Escape` aus.  
 
-:::image type="complex" source="../media/customize-drawer-open.msft.png" alt-text="Die Schublade" lightbox="../media/customize-drawer-open.msft.png":::
-   Die **Schublade**  
+:::image type="complex" source="../media/customize-drawer-open.msft.png" alt-text="Die Drawer" lightbox="../media/customize-drawer-open.msft.png":::
+   Die **Drawer**  
 :::image-end:::  
 
-Standardmäßig werden einige Tools im Haupt Feld geöffnet, während andere im **Einzug**angezeigt werden.  Wählen Sie **mehr** \ ( `...` ) aus, um ein Tool im **Einzug**zu öffnen.  
+Standardmäßig werden einige Tools im Hauptbereich geöffnet, während andere in der **Drawer angezeigt werden.**  Choose **More** \( `...` \) to open a tool in the **Drawer**.  
 
-:::image type="complex" source="../media/customize-drawer-open-more-tools.msft.png" alt-text="Die Schaltfläche zum Öffnen der Schublade" lightbox="../media/customize-drawer-open-more-tools.msft.png":::
-   Die Schaltfläche zum Öffnen der **Schublade**  
+:::image type="complex" source="../media/customize-drawer-open-more-tools.msft.png" alt-text="Die Schaltfläche zum Öffnen der Drawer" lightbox="../media/customize-drawer-open-more-tools.msft.png":::
+   Die Schaltfläche zum Öffnen der **Drawer**  
 :::image-end:::  
 
-Sie können Tools zwischen dem Hauptpanel und der Schublade verschieben.  
+Sie können Tools zwischen dem Hauptbereich und der Drawer verschieben.  
 
-*   Wenn Sie ein Tool vom Einzug in den Hauptbereich verschieben möchten, zeigen Sie mit der Maus auf ein Tool, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie **nach oben verschieben**aus.  
+*   Wenn Sie ein Tool aus der Drawer in den Hauptbereich verschieben, zeigen Sie auf ein Tool, öffnen Sie das Kontextmenü \(rechtsklick\), und wählen Sie **"Nach oben" aus.**  
     
-    :::image type="complex" source="../media/move-from-drawer.msft.png" alt-text="Verschieben des Tools aus der Schublade in den Hauptbildschirm" lightbox="../media/move-from-drawer.msft.png":::
-       Verschieben des Tools aus der **Schublade** in den Hauptbildschirm  
+    :::image type="complex" source="../media/move-from-drawer.msft.png" alt-text="Verschieben des Tools aus der Drawer in den Hauptbereich" lightbox="../media/move-from-drawer.msft.png":::
+       Verschieben des Tools aus **der Drawer** in den Hauptbereich  
     :::image-end:::  
     
-*   Wenn Sie ein Tool vom Hauptbereich auf die Schublade verschieben möchten, zeigen Sie mit der Maus auf ein Tool, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie **nach unten verschieben**aus.  
+*   Wenn Sie ein Tool vom Hauptbereich in die Drawer verschieben wollen, zeigen Sie mit der Maus auf ein Tool, öffnen Sie das Kontextmenü \(rechtsklick\), und wählen Sie "Nach **unten" aus.**  
     
-    :::image type="complex" source="../media/move-to-drawer.msft.png" alt-text="Verschieben des Tools aus dem Hauptpanel in die Schublade" lightbox="../media/move-to-drawer.msft.png":::
-       Verschieben des Tools aus dem Hauptpanel in die **Schublade**
+    :::image type="complex" source="../media/move-to-drawer.msft.png" alt-text="Verschieben des Tools vom Hauptbereich in die Drawer" lightbox="../media/move-to-drawer.msft.png":::
+       Verschieben des Tools vom Hauptbereich in die **Drawer**
     :::image-end:::  
     
 
-## Neuanordnen von Bereichen  
+## Neuanordnen von Panels  
 
-Wählen Sie ein Tool aus, und ziehen Sie es, um die Reihenfolge zu ändern.  Ihre benutzerdefinierte Tool Reihenfolge bleibt in devtools-Sitzungen erhalten.  
+Wählen Sie ein Tool aus, und ziehen Sie es, um die Reihenfolge zu ändern.  Ihre benutzerdefinierte Toolreihenfolge bleibt in allen DevTools-Sitzungen bestehen.  
 
 > [!NOTE]
-> Standardmäßig ist das **Netzwerk** Tool in der Regel der vierte von Links.  In der folgenden Abbildung ist das **Netzwerk** Panel die erste von Links.  
+> Standardmäßig ist das **Netzwerktool** in der Regel das vierte von links.  In der folgenden Abbildung ist der **Netzwerkbereich** der erste von links.  
 
-:::image type="complex" source="../media/customize-network-first-position.msft.png" alt-text="Benutzerdefinierte Reihenfolge von devtools in einem Panel" lightbox="../media/customize-network-first-position.msft.png":::
-   Benutzerdefinierte Reihenfolge von devtools in einem Panel  
+:::image type="complex" source="../media/customize-network-first-position.msft.png" alt-text="Benutzerdefinierte Reihenfolge von Devtools in einem Bereich" lightbox="../media/customize-network-first-position.msft.png":::
+   Benutzerdefinierte Reihenfolge von Devtools in einem Bereich  
 :::image-end:::  
 
-## Ändern der devtools-Platzierung  
+## Ändern der Platzierung von DevTools  
 
-Weitere Informationen finden Sie unter [Platzierung von Microsoft Edge devtools][DevToolsPlacement].  
+Siehe [Microsoft Edge DevTools Placement][DevToolsPlacement].  
 
-:::image type="complex" source="../media/customize-dev-tools-dock-side.msft.png" alt-text="Nicht angedockte devtools" lightbox="../media/customize-dev-tools-dock-side.msft.png":::
-   Nicht angedockte devtools  
+:::image type="complex" source="../media/customize-dev-tools-dock-side.msft.png" alt-text="Entfernte DevTools" lightbox="../media/customize-dev-tools-dock-side.msft.png":::
+   Entfernte DevTools  
 :::image-end:::  
 
 ## Dunkles Design  
 
-Siehe [Aktivieren eines dunklen Designs][DarkTheme].  
+Siehe ["Dunkles Design aktivieren".][DarkTheme]  
 
 :::image type="complex" source="../media/customize-settings-appearance-theme.msft.png" alt-text="Das dunkle Design" lightbox="../media/customize-settings-appearance-theme.msft.png":::
    Das dunkle Design  
@@ -105,13 +105,13 @@ Siehe [Aktivieren eines dunklen Designs][DarkTheme].
 
 ## Versuche  
 
-Führen Sie die folgenden Aktionen aus, um devtools-Experimente zu aktivieren.  
+Führen Sie zum Aktivieren von DevTools-Experimenten die folgenden Aktionen aus.  
 
 1.  Navigieren Sie zu `edge://flags/#enable-devtools-experiments` .  
-1.  Wählen Sie **aktivieren**aus.  
-1.  Klicken Sie unten auf der Seite auf **neu starten**.  
+1.  Wählen Sie **"Aktivieren"** aus.  
+1.  Wählen **Sie "Jetzt neu**starten" am unteren Rand der Seite aus.  
 
-Wenn Sie devtools das nächste Mal öffnen, wird eine neue Seite mit dem Namen " **Experiments** " in " [Einstellungen](#settings)" angezeigt.  
+Wenn Sie DevTools das nächste Mal öffnen, wird in den Einstellungen eine neue Seite mit dem Namen **"Experimente"** [angezeigt.](#settings)  
 
 ## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
@@ -123,14 +123,14 @@ Wenn Sie devtools das nächste Mal öffnen, wird eine neue Seite mit dem Namen "
 
 <!-- links -->  
 
-[DevToolsPlacement]: ./placement.md "Ändern der Position von Microsoft Edge devtools | Microsoft docs"  
-[DarkTheme]: ./dark-theme.md "Aktivieren des dunklen Designs in Microsoft Edge devtools | Microsoft docs"  
+[DevToolsPlacement]: ./placement.md "Ändern der Platzierung von Microsoft Edge DevTools | Microsoft Docs"  
+[DarkTheme]: ./dark-theme.md "Aktivieren des dunklen Designs in Microsoft Edge DevTools | Microsoft Docs"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
-> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/customize/index) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
+> Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
+> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/customize/index) und wird von [Kayce Baskisch][KayceBasques] \(Technical Writer, Chrome DevTools \& Vorserie\) verfasst.  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
