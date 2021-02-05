@@ -207,7 +207,7 @@ Sie können jetzt DevTools [][MdnDocsWebCssTarget] verwenden, um die :target-CSS
 
 Verwenden Sie die neue **Verknüpfung "Duplicate"-Element,** um ein Element zu klonen.  Zeigen Sie **im Elementtool** auf ein Element, öffnen Sie das Kontextmenü \(rechtsklick\), wählen Sie **"Duplizieren" aus.**  Unter dem ausgewählten Element wird ein neues Element erstellt.  Um das Element mit einer Tastenkombination zu duplizieren, wählen `Shift` + `Alt` + `Down Arrow` Sie \(Windows/Linux\) oder `Shift` + `Option` + `Down Arrow` \(macOS\) aus.  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Issue [1150797][CR1150797].  
 
-:::image type="complex" source="../../media/2021/01/elements-duplicate-element.msft.png" alt-text="Das Element Duplicate" wird im Kontextmenü eines Elements im Tool Elemente hervorgehoben." lightbox="../../media/2021/01/elements-duplicate-element.msft.png":::
+:::image type="complex" source="../../media/2021/01/elements-duplicate-element.msft.png" alt-text="Das Element Duplicate wird im Kontextmenü eines Elements im Tool Elemente hervorgehoben." lightbox="../../media/2021/01/elements-duplicate-element.msft.png":::
    Das **Element "Duplicate"** wird im Kontextmenü eines Elements im Tool **"Elemente"** hervorgehoben.  
 :::image-end:::  
 
