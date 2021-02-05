@@ -173,7 +173,7 @@ Schalten Sie den **berechneten Bereich** im **Formatvorlagenbereich** um.  Der *
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="Öffnen des Bereichs "Berechnete Seitenleiste"" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
+      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="Öffnen des Bereichs Berechnete Seitenleiste" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
          Öffnen des **Bereichs "Berechnete Seitenleiste"**  
       :::image-end:::  
    :::column-end:::  
