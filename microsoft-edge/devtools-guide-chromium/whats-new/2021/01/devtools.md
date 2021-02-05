@@ -3,16 +3,16 @@ description: Das Tool "Neues" ist jetzt Willkommen, Visual Font Editor im Format
 title: Neues in DevTools (Microsoft Edge 89)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/03/2021
+ms.date: 02/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: cfaee927d2d914cf0d816505ea2cf6b36a225d64
-ms.sourcegitcommit: 12c30ad4ab2664d17c9b7e9d59d7a3cda60ff65c
+ms.openlocfilehash: 0a8a5e69281ced9421733059b554bd8cb997c7cd
+ms.sourcegitcommit: 085046a5885c68243b763aaf6809fea43452403a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "11313221"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "11313776"
 ---
 # Neues in DevTools (Microsoft Edge 89)  
 
@@ -45,7 +45,7 @@ Wenn Sie mit Schriftarten in CSS arbeiten, verwenden Sie den neuen visuellen [Sc
 *   Einheiten konvertieren  
 *   Generieren von genauem CSS-Code  
     
-Um dieses Experiment zu [][DevtoolsCustomizeIndexSettings]aktivieren, navigieren Sie zu Einstellungsexperimente, und aktivieren Sie das Kontrollkästchen neben "Neue Schriftarten-Editor-Tools  >  **** **im Formatvorlagenbereich aktivieren".**  Weitere Informationen finden Sie unter "Bearbeiten von [CSS-Schriftartenformatvorlagen und -einstellungen" im Bereich "Formatvorlagen" in DevTools.][DevtoolsInspectStylesEditFonts]  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Issue [1093229][CR1093229].  
+Um dieses Experiment zu [][DevtoolsCustomizeIndexSettings]aktivieren, navigieren Sie zu Einstellungsexperimente, und aktivieren Sie das Kontrollkästchen neben "Neue Schriftarten-Editor-Tools  >  **** **im Formatvorlagenbereich aktivieren".**  Weitere Informationen finden Sie unter "Bearbeiten von [CSS-Schriftartenformatvorlagen und -einstellungen" im Bereich "Formatvorlagen" in DevTools.][DevtoolsInspectStylesEditFonts]  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Problem [1093229][CR1093229].  
 
 :::image type="complex" source="../../media/2021/01/visual-font-editor.msft.png" alt-text="Der visuelle Schriftarten-Editor wird im Formatvorlagenbereich hervorgehoben." lightbox="../../media/2021/01/visual-font-editor.msft.png":::
    Der visuelle **Schriftarten-Editor** wird im **Formatvorlagenbereich** hervorgehoben.  
@@ -53,9 +53,9 @@ Um dieses Experiment zu [][DevtoolsCustomizeIndexSettings]aktivieren, navigieren
 
 ## CSS-Flexbox-Debugtools  
 
-Die Debugfeatures von Flexbox befinden sich in der aktiven Entwicklung.  Um das Experiment für die folgenden beiden [][DevtoolsCustomizeIndexSettings]Features zu aktivieren, navigieren Sie zu "Einstellungsexperimente", und aktivieren Sie das Kontrollkästchen neben "Neue  >  **** **CSS-Flexbox-Debugfeatures aktivieren".**  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Problemen [1136394][CR1136394] und [1139949][CR1139949].  
+Die Debugfeatures von Flexbox befinden sich in der aktiven Entwicklung.  Um das Experiment für die folgenden beiden [][DevtoolsCustomizeIndexSettings]Features zu aktivieren, navigieren Sie zu "Einstellungsexperimente", und aktivieren Sie das Kontrollkästchen neben "Neue  >  **** **CSS-Flexbox-Debugfeatures aktivieren".**  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu den Problemen [1136394][CR1136394] und [1139949][CR1139949].  
 
-### Neue Flexbox (Flexbox)-Symbole helfen bei der Identifizierung und Anzeige von Flexcontainern  
+### Neues Flexbox (Flexbox)-Symbol hilft beim Identifizieren und Anzeigen von Flexcontainern  
 
 <!--  Title: Display Flexbox containers with Flexbox (flex) icon  -->  
 <!--  Subtitle: New Flexbox (flex) icon in the Elements tool help you identify Flexbox containers in your code.  When toggled, the adorner displays and hides outlines of the flex container to help you debug the layout -->  
@@ -103,7 +103,7 @@ Wenn Sie CSS für Ihr Flexboxlayout bearbeiten, **** werden bei automatischen CS
 :::row-end:::  
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/01/elements-flex-container-align.msft.png" alt-text="Das Menü AutoVervollständigung ist für CSS-Eigenschaften hervorgehoben, die mit ausrichtungs-" lightbox="../../media/2021/01/elements-flex-container-align.msft.png":::
+      :::image type="complex" source="../../media/2021/01/elements-flex-container-align.msft.png" alt-text="Das Menü "AutoVervollständigung" ist für CSS-Eigenschaften hervorgehoben, die mit ausrichtungs-" lightbox="../../media/2021/01/elements-flex-container-align.msft.png":::
          Menü "AutoVervollständigung" für CSS-Eigenschaften, die mit `align-`  
       :::image-end:::  
    :::column-end:::
@@ -132,13 +132,13 @@ Sie haben nun eine neue Möglichkeit, weitere Tools in den Microsoft Edge DevToo
 <!--  Title: Assistive technologies now announce position and count of CSS suggestions  -->  
 <!--  Subtitle: CSS suggestions are now easier to navigate using screen readers -->  
 
-Wenn Sie CSS bearbeiten, erhalten Sie eine Dropdownliste mit Features.  Dieses Feature war für Benutzer von Hilfstechnologien nicht verfügbar, da es in Microsoft Edge, Version 89, angekündigt wurde.  Ein Benutzer von Hilfstechnologien kann nun im Formatvorlagenbereich durch die Vorschläge von **CSS** navigieren.  In Microsoft Edge, Version 88 und früher, hat die als Benutzer angekündigte Hilfstechnologie beim Bearbeiten von CSS im Formatvorlagenbereich durch die Liste der Vorschläge `Suggestion` navigiert. ****  In Microsoft Edge, Version 89, hört ein Benutzer der Hilfstechnologie jetzt die Position und Anzahl des aktuellen Vorschlags.  Jeder Vorschlag wird angekündigt, wenn der Benutzer durch die Liste der Vorschläge navigiert, z. B. Vorschlag 3 von 5.  Um mehr über das Schreiben von CSS in devTools zu erfahren, navigieren Sie zu [CSS ändern.][DevtoolsCssReferenceChangeCss]  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Issue [1157329][CR1157329].  
+Wenn Sie CSS bearbeiten, erhalten Sie eine Dropdownliste mit Features.  Dieses Feature war für Benutzer von Hilfstechnologien nicht verfügbar, da es in Microsoft Edge, Version 89, angekündigt wurde.  Ein Benutzer von Hilfstechnologien kann nun im Formatvorlagenbereich durch die Vorschläge von **CSS** navigieren.  In Microsoft Edge, Version 88 und früher, hat die als Benutzer angekündigte Hilfstechnologie beim Bearbeiten von CSS im Formatvorlagenbereich durch die Liste der Vorschläge `Suggestion` navigiert. ****  In Microsoft Edge, Version 89, hört ein Benutzer der Hilfstechnologie jetzt die Position und Anzahl des aktuellen Vorschlags.  Jeder Vorschlag wird angekündigt, wenn der Benutzer durch die Liste der Vorschläge navigiert, z. B. Vorschlag 3 von 5.  Um mehr über das Schreiben von CSS in devTools zu erfahren, navigieren Sie zu [CSS ändern.][DevtoolsCssReferenceChangeCss]  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Problem [1157329][CR1157329].  
 
-<!--To view a video that displays and reads aloud several suggestions with this experiment turned on, navigate to [Voiceover announcing devtools options](https://youtu.be/9TcUpleEwwA) on YouTube.  -->  
+Wenn Sie ein Video anzeigen möchten, in dem mehrere Vorschläge angezeigt und laut vorgelesen werden, wenn dieses Experiment aktiviert ist, navigieren Sie zu [Voiceover,](https://youtu.be/9TcUpleEwwA) und kündigen Sie devtools-Optionen auf YouTube an.  
 
-Der folgende Videolink zeigt mehrere Vorschläge an und liest sie laut vor, wenn dieses Experiment aktiviert ist.  
-
-> [!VIDEO https://youtu.be/9TcUpleEwwA]  
+:::image type="complex" source="../../media/2021/01/announce-css-suggestion.msft.png" alt-text="Der Im Formatvorlagenbereich hervorgehobene Vorschlag" lightbox="../../media/2021/01/announce-css-suggestion.msft.png":::
+   Die `suggestion` im Formatvorlagenbereich **hervorgehobene** Liste  
+:::image-end:::  
 
 ## Emulieren von Surface Duo und Samsung Fold  
 
@@ -155,7 +155,7 @@ Aktivieren Sie **experimentelle Webplattformfeatures,** um auf das neue Feature 
 *   [Spanning][DevtoolsDeviceModeDualScreenFoldablesTestingFoldableDualScreenDevices], d. h. wenn Ihre Website \(oder App\) auf beiden Bildschirmen angezeigt wird.  
 *   [Rendern der Naht][DualScreenIntroductionHowToWorkWithSeam], die den Abstand zwischen den beiden Bildschirmen ist.  
     
-Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Issue [1054281][CR1054281].  
+Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Problem [1054281][CR1054281].  
 
 :::image type="complex" source="../../media/2021/01/emulate-surface-device-surface-duo.msft.png" alt-text="Emulieren des dualen Bildschirms" lightbox="../../media/2021/01/emulate-surface-device-surface-duo.msft.png":::
    Emulieren des dualen Bildschirms  
@@ -178,9 +178,9 @@ You may file issues and contribute to the extension on the [vscode-edge-devtools
 
 ### Screenshot des Aufnahmeknotens über Viewport hinaus  
 
-In Microsoft Edge, Version 89, sind Knotenscreenshots genauer und erfassen den vollständigen Knoten, auch wenn der Inhalt des Knotens nicht im Viewport sichtbar ist.  Zeigen Sie **im Tool "Elemente"** auf ein Element, öffnen Sie das Kontextmenü \(rechtsklick\), und wählen Sie Screenshot des **Aufnahmeknotens aus.**  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Issue [1003629][CR1003629].  
+In Microsoft Edge, Version 89, sind Knotenscreenshots genauer und erfassen den vollständigen Knoten, auch wenn der Inhalt des Knotens nicht im Viewport sichtbar ist.  Zeigen Sie **im Tool "Elemente"** auf ein Element, öffnen Sie das Kontextmenü \(rechtsklick\), und wählen Sie Screenshot des **Aufnahmeknotens aus.**  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Problem [1003629][CR1003629].  
 
-:::image type="complex" source="../../media/2021/01/capture-node-screenshot.msft.png" alt-text="Screenshot des Aufnahmeknotens im Kontextmenü im Tool Elemente" lightbox="../../media/2021/01/capture-node-screenshot.msft.png":::
+:::image type="complex" source="../../media/2021/01/capture-node-screenshot.msft.png" alt-text="Screenshot des Aufnahmeknotens im Kontextmenü im Tool "Elemente"" lightbox="../../media/2021/01/capture-node-screenshot.msft.png":::
    **Screenshot des Aufnahmeknotens** im Kontextmenü im Tool **"Elemente"**  
 :::image-end:::  
 
@@ -188,7 +188,7 @@ In Microsoft Edge, Version 89, sind Knotenscreenshots genauer und erfassen den v
 
 #### Unterstützung der Erzwingung des :target-CSS-Status  
 
-Sie können jetzt DevTools [][MdnDocsWebCssTarget] verwenden, um die :target-CSS-Pseudoklasse zu erzwingen.  Die Pseudoklasse wird ausgelöst, wenn ein eindeutiges Element \(das Zielelement\) über ein Element verfügt, das einem `:target` `id` Fragment der URL entspricht.  Beispielsweise löst die URL die Pseudoklasse für `http://www.example.com/index.html#section1` ein `:target` HTML-Element mit `id="section1"` aus.  To try a demo with section 1 highlighted, navigate to [CSS :target demo][GithubMicrosoftedgeDevtoolssamplesWhatsNew89TargetCssDemoHtmlSection1].  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Issue [1156628][CR1156628].  
+Sie können jetzt DevTools [][MdnDocsWebCssTarget] verwenden, um die :target-CSS-Pseudoklasse zu erzwingen.  Die Pseudoklasse wird ausgelöst, wenn ein eindeutiges Element \(das Zielelement\) über ein Element verfügt, das einem `:target` `id` Fragment der URL entspricht.  Beispielsweise löst die URL die Pseudoklasse für `http://www.example.com/index.html#section1` ein `:target` HTML-Element mit `id="section1"` aus.  To try a demo with section 1 highlighted, navigate to [CSS :target demo][GithubMicrosoftedgeDevtoolssamplesWhatsNew89TargetCssDemoHtmlSection1].  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Problem [1156628][CR1156628].  
 
 :::row:::
    :::column span="":::
@@ -205,15 +205,15 @@ Sie können jetzt DevTools [][MdnDocsWebCssTarget] verwenden, um die :target-CSS
 
 #### Verwenden doppelter Elemente zum Kopieren von Elementen  
 
-Verwenden Sie die neue **Verknüpfung "Duplicate"-Element,** um ein Element zu klonen.  Zeigen Sie **im Elementtool** auf ein Element, öffnen Sie das Kontextmenü \(rechtsklick\), wählen Sie **"Duplizieren" aus.**  Unter dem ausgewählten Element wird ein neues Element erstellt.  Um das Element mit einer Tastenkombination zu duplizieren, wählen `Shift` + `Alt` + `Down Arrow` Sie \(Windows/Linux\) oder `Shift` + `Option` + `Down Arrow` \(macOS\) aus.  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Issue [1150797][CR1150797].  
+Verwenden Sie die neue **Verknüpfung "Duplicate"-Element,** um ein Element zu klonen.  Zeigen Sie **im Elementtool** auf ein Element, öffnen Sie das Kontextmenü \(rechtsklick\), wählen Sie **"Duplizieren" aus.**  Unter dem ausgewählten Element wird ein neues Element erstellt.  Um das Element mit einer Tastenkombination zu duplizieren, wählen `Shift` + `Alt` + `Down Arrow` Sie \(Windows/Linux\) oder `Shift` + `Option` + `Down Arrow` \(macOS\) aus.  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Problem [1150797][CR1150797].  
 
-:::image type="complex" source="../../media/2021/01/elements-duplicate-element.msft.png" alt-text="Das Element Duplicate wird im Kontextmenü eines Elements im Tool Elemente hervorgehoben." lightbox="../../media/2021/01/elements-duplicate-element.msft.png":::
+:::image type="complex" source="../../media/2021/01/elements-duplicate-element.msft.png" alt-text="Das Element "Duplicate" wird im Kontextmenü eines Elements im Tool "Elemente" hervorgehoben." lightbox="../../media/2021/01/elements-duplicate-element.msft.png":::
    Das **Element "Duplicate"** wird im Kontextmenü eines Elements im Tool **"Elemente"** hervorgehoben.  
 :::image-end:::  
 
 #### Farbauswahl für benutzerdefinierte CSS-Eigenschaften  
 
-Im **Formatvorlagenbereich** werden nun Farbauswahlen für benutzerdefinierte CSS-Eigenschaften angezeigt.  Um die RGBA-, HSLA- und Hexadezimalformate des Farbwerts zu durchzyklen, halten Sie die Farbauswahl und `Shift` wählen Sie sie aus.  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Issue [1147016][CR1147016].  
+Im **Formatvorlagenbereich** werden nun Farbauswahlen für benutzerdefinierte CSS-Eigenschaften angezeigt.  Um die RGBA-, HSLA- und Hexadezimalformate des Farbwerts zu durchzyklen, halten Sie die Farbauswahl und `Shift` wählen Sie sie aus.  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Problem [1147016][CR1147016].  
 
 :::image type="complex" source="../../media/2021/01/elements-styles-change-color-format.msft.png" alt-text="Farbauswahl für benutzerdefinierte CSS-Eigenschaften" lightbox="../../media/2021/01/elements-styles-change-color-format.msft.png":::
    Farbauswahl für benutzerdefinierte CSS-Eigenschaften  
@@ -256,13 +256,13 @@ Sie können jetzt mit ein paar neuen Optionen im Kontextmenü die CSS-Eigenschaf
    :::column-end:::
 :::row-end:::  
 
-Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Issue [1152391][CR1152391].  
+Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Problem [1152391][CR1152391].  
 
 ### Cookiesupdates  
 
 #### Neue Option zum Anzeigen von URL-decodierten Cookies  
 
-Sie können jetzt den Wert für URL-decodierte Cookies im Bereich **"Cookies"** anzeigen.  Um das decodierte Cookie **** anzuzeigen, navigieren Sie zum Bereich "Anwendungscookies", wählen Sie ein beliebiges Cookie in der Liste aus, und aktivieren Sie das Kontrollkästchen neben  >  **** **decodierte URL anzeigen.**  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Issue [997625][CR997625].  
+Sie können jetzt den Wert für URL-decodierte Cookies im Bereich **"Cookies"** anzeigen.  Um das decodierte Cookie **** anzuzeigen, navigieren Sie zum Bereich "Anwendungscookies", wählen Sie ein beliebiges Cookie in der Liste aus, und aktivieren Sie das Kontrollkästchen neben  >  **** **decodierte URL anzeigen.**  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Problem [997625][CR997625].  
 
 :::image type="complex" source="../../media/2021/01/application-cookies-show-url-decoded.msft.png" alt-text="Option zum Anzeigen von URL-decodierten Cookies" lightbox="../../media/2021/01/application-cookies-show-url-decoded.msft.png":::
    Option zum Anzeigen von URL-decodierten Cookies  
@@ -270,7 +270,7 @@ Sie können jetzt den Wert für URL-decodierte Cookies im Bereich **"Cookies"** 
 
 #### Filtern und Löschen sichtbarer Cookies  
 
-In Microsoft Edge version 88 or earlier, the **Application** tool only provided a way to clear all cookies with the **Clear all cookies** button.  In Microsoft Edge, Version 89, können Sie nun "Gefilterte Cookies **löschen"** auswählen, um nur die gefilterten Cookies zu löschen.  Um Cookies zu filtern, navigieren Sie zu **"Anwendungscookies",**  >  **** und geben Sie das Textfeld **"Filter"** ein.  Um die angezeigten Cookies zu löschen, wählen Sie die Schaltfläche **"Gefilterte Cookies löschen"** aus.  Löschen Sie den Filtertext, um alle anderen Cookies anzeigen zu können.  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Issue [978059][CR978059].  
+In Microsoft Edge version 88 or earlier, the **Application** tool only provided a way to clear all cookies with the **Clear all cookies** button.  In Microsoft Edge, Version 89, können Sie nun "Gefilterte Cookies **löschen"** auswählen, um nur die gefilterten Cookies zu löschen.  Um Cookies zu filtern, navigieren Sie zu **"Anwendungscookies",**  >  **** und geben Sie das Textfeld **"Filter"** ein.  Um die angezeigten Cookies zu löschen, wählen Sie die Schaltfläche **"Gefilterte Cookies löschen"** aus.  Löschen Sie den Filtertext, um alle anderen Cookies anzeigen zu können.  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Problem [978059][CR978059].  
 
 :::image type="complex" source="../../media/2021/01/application-cookies-clear-filtered-cookies.msft.png" alt-text="Nur sichtbare Cookies löschen" lightbox="../../media/2021/01/application-cookies-clear-filtered-cookies.msft.png":::
    Nur sichtbare Cookies löschen  
@@ -282,7 +282,7 @@ DevTools löschen jetzt standardmäßig nur Cookies von Erstparteiern.  Wenn Sie
 
 Navigieren Sie zum Anwendungsspeicher, **** um Websitedaten und alle Cookies  >  **zu löschen.**  Aktivieren Sie das Kontrollkästchen neben **Cookies**von Drittanbietern, und wählen Sie dann **"Websitedaten löschen" aus.**  
 
-Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Issue [1012337][CR1012337].  
+Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Problem [1012337][CR1012337].  
 
 :::image type="complex" source="../../media/2021/01/application-storage-clear-site-data-including-third-party-cookies.msft.png" alt-text="Option zum Löschen von Cookies von Drittanbietern" lightbox="../../media/2021/01/application-storage-clear-site-data-including-third-party-cookies.msft.png":::
    Option zum Löschen von Cookies von Drittanbietern  
@@ -292,7 +292,7 @@ Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, 
 
 #### Netzwerkprotokolleinstellung für "Datensatz beibehalten"  
 
-In Microsoft Edge, Version 88 oder **** früher, setzen DevTools die Protokolleinstellung "Protokoll aufzeichnen" zurück, wenn eine Webseite aktualisiert wird.  In Microsoft Edge, Version 89, werden die Protokolleinstellungen des Datensatznetzwerks von DevTools **beibehalten.**  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Issue [1122580][CR1122580].  
+In Microsoft Edge, Version 88 oder **** früher, setzen DevTools die Protokolleinstellung "Protokoll aufzeichnen" zurück, wenn eine Webseite aktualisiert wird.  In Microsoft Edge, Version 89, werden die Protokolleinstellungen des Datensatznetzwerks von DevTools **beibehalten.**  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Problem [1122580][CR1122580].  
 
 :::image type="complex" source="../../media/2021/01/network-log.msft.png" alt-text="Aufzeichnen des Netzwerkprotokolls" lightbox="../../media/2021/01/network-log.msft.png":::
    Aufzeichnen des Netzwerkprotokolls  
@@ -300,7 +300,7 @@ In Microsoft Edge, Version 88 oder **** früher, setzen DevTools die Protokollei
 
 #### Onlineoption ist jetzt keine Einschränkungsoption  
 
-Die Netzwerkemulationsoption **Online** wurde jetzt in **"No Throttling" umbenannt.**  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Issue [1028078][CR1028078].  
+Die Netzwerkemulationsoption **Online** wurde jetzt in **"No Throttling" umbenannt.**  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Problem [1028078][CR1028078].  
 
 :::image type="complex" source="../../media/2021/01/network-no-throttling.msft.png" alt-text="Keine Einschränkungsoption" lightbox="../../media/2021/01/network-no-throttling.msft.png":::
    **Keine Einschränkungsoption**  
@@ -310,7 +310,7 @@ Die Netzwerkemulationsoption **Online** wurde jetzt in **"No Throttling" umbenan
 
 #### Kopieren eines Objekts im Konsolen- und Quellentool  
 
-Sie können nun Objektwerte in die **Konsolen-** und **Quellentools** kopieren.  Die Möglichkeit, Objektwerte zu kopieren, ist beim Arbeiten mit großen Objekten hilfreich.  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Problemen [1148353][CR1148353] und [1149859][CR1149859].  
+Sie können nun Objektwerte in die **Konsolen-** und **Quellentools** kopieren.  Die Möglichkeit, Objektwerte zu kopieren, ist beim Arbeiten mit großen Objekten hilfreich.  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu den Problemen [1148353][CR1148353] und [1149859][CR1149859].  
 
 :::row:::
    :::column span="":::
@@ -327,7 +327,7 @@ Sie können nun Objektwerte in die **Konsolen-** und **Quellentools** kopieren. 
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/01/sources-breakpoint-object-copy-object.msft.png" alt-text="Objekt in Sources kopieren" lightbox="../../media/2021/01/sources-breakpoint-object-copy-object.msft.png":::
+      :::image type="complex" source="../../media/2021/01/sources-breakpoint-object-copy-object.msft.png" alt-text="Objekt in "Sources" kopieren" lightbox="../../media/2021/01/sources-breakpoint-object-copy-object.msft.png":::
          Objekt in **"Sources" kopieren**  
       :::image-end:::  
    :::column-end:::
@@ -347,7 +347,7 @@ Sie können jetzt einen Dateinamen über das Kontextmenü kopieren.  Um den Verl
 :::row-end:::  
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/01/sources-copy-file-name.msft.png" alt-text="Kopieren des Dateinamens in Quellen" lightbox="../../media/2021/01/sources-copy-file-name.msft.png":::
+      :::image type="complex" source="../../media/2021/01/sources-copy-file-name.msft.png" alt-text="Kopieren des Dateinamens in "Quellen"" lightbox="../../media/2021/01/sources-copy-file-name.msft.png":::
          Kopieren des Dateinamens in **"Quellen"**  
       :::image-end:::  
    :::column-end:::
@@ -362,7 +362,7 @@ Sie können jetzt einen Dateinamen über das Kontextmenü kopieren.  Um den Verl
 
 #### Informationen zu Service Workers in Framedetails  
 
-DevTools listet jetzt einen dedizierten Dienstmitarbeiter unter dem übergeordneten Frame auf.  In der folgenden Abbildung werden Die Details des Dienstmitarbeiters angezeigt.  Um die Details des Dienstarbeitsmitarbeiters anzuzeigen, navigieren Sie zu **"Application**  >  **Frames**Service  >  `top`  >  **Workers",** und wählen Sie dann einen Dienstmitarbeiter aus.  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Issue [1122507][CR1122507].  
+DevTools listet jetzt einen dedizierten Dienstmitarbeiter unter dem übergeordneten Frame auf.  In der folgenden Abbildung werden Die Details des Dienstmitarbeiters angezeigt.  Um die Details des Dienstarbeitsmitarbeiters anzuzeigen, navigieren Sie zu **"Application**  >  **Frames**Service  >  `top`  >  **Workers",** und wählen Sie dann einen Dienstmitarbeiter aus.  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Problem [1122507][CR1122507].  
 
 :::image type="complex" source="../../media/2021/01/application-frames-service-workers-details.msft.png" alt-text="Informationen zu Service Workers in den Framesdetails" lightbox="../../media/2021/01/application-frames-service-workers-details.msft.png":::
    **Informationen zu Service Workers** in den **Framesdetails**  
@@ -370,7 +370,7 @@ DevTools listet jetzt einen dedizierten Dienstmitarbeiter unter dem übergeordne
 
 #### Messen von Speicherinformationen in Framedetails  
 
-Der `performance.measureMemory()` STATUS der API wird nun im Abschnitt zur **API-Verfügbarkeit** angezeigt.  Die neue `performance.measureMemory()` API schätzt die Speicherauslastung der gesamten Webseite.  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Issue [1139899][CR1139899].  
+Der `performance.measureMemory()` STATUS der API wird nun im Abschnitt zur **API-Verfügbarkeit** angezeigt.  Die neue `performance.measureMemory()` API schätzt die Speicherauslastung der gesamten Webseite.  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Problem [1139899][CR1139899].  
 
 :::image type="complex" source="../../media/2021/01/application-frames-measure-memory.msft.png" alt-text="Messen des Arbeitsspeichers" lightbox="../../media/2021/01/application-frames-measure-memory.msft.png":::
    Messen des Arbeitsspeichers  
@@ -378,7 +378,7 @@ Der `performance.measureMemory()` STATUS der API wird nun im Abschnitt zur **API
 
 ### Verworfene Frames im Leistungstool  
 
-Wenn Sie [die Lastleistung im Tool "Performance"][DevtoolsEvaluatePerformanceReferenceRecordLoadPerformance]analysieren, markiert der Abschnitt **"Frames"** verworfene Frames als rot.  Zeigen Sie zum Anzeigen der Framerate auf einen verworfenen Frame.  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Issue [1075865][CR1075865].  
+Wenn Sie [die Lastleistung im Tool "Performance"][DevtoolsEvaluatePerformanceReferenceRecordLoadPerformance]analysieren, markiert der Abschnitt **"Frames"** verworfene Frames als rot.  Zeigen Sie zum Anzeigen der Framerate auf einen verworfenen Frame.  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Problem [1075865][CR1075865].  
 
 :::image type="complex" source="../../media/2021/01/performance-frames-dropped-frames-red.msft.png" alt-text="Verworfene Frames" lightbox="../../media/2021/01/performance-frames-dropped-frames-red.msft.png":::
    Verworfene Frames  
@@ -394,7 +394,7 @@ Der [Advanced Perceptual Contrast Algorithm (APCA)][GithubW3cSilverGuidelinesMet
 *   Räumliche Eigenschaften der Farbe, die den wahrgenommenen Kontrast zwischen Text und Hintergrund enthalten.  
 *   Räumliche Eigenschaften des Kontexts, die Umgebungslicht, Umgebung und den beabsichtigten Zweck umfassen.  
     
-Um dieses Experiment zu [][DevtoolsCustomizeIndexSettings]aktivieren, navigieren Sie zu "Einstellungsexperimente", und aktivieren Sie das Kontrollkästchen neben "Neuen  >  **** **advanced Perceptual Contrast Algorithm (APCA)** aktivieren", der das vorherige Kontrastverhältnis und AA/AAA-Richtlinien ersetzt.  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Issue [1121900][CR1121900].  
+Um dieses Experiment zu [][DevtoolsCustomizeIndexSettings]aktivieren, navigieren Sie zu "Einstellungsexperimente", und aktivieren Sie das Kontrollkästchen neben "Neuen  >  **** **advanced Perceptual Contrast Algorithm (APCA)** aktivieren", der das vorherige Kontrastverhältnis und AA/AAA-Richtlinien ersetzt.  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Problem [1121900][CR1121900].  
 
 :::image type="complex" source="../../media/2021/01/advanced-perceptual-contrast-algorithm.msft.png" alt-text="APCA in der Farbauswahl" lightbox="../../media/2021/01/advanced-perceptual-contrast-algorithm.msft.png":::
    APCA in der Farbauswahl  
@@ -445,39 +445,29 @@ Wenn Sie unter Windows, Linux oder macOS arbeiten, sollten Sie die [Microsoft Ed
 [VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge Tools for Visual Studio Code | Visual Studio Marketplace"  
 [VisualstudioMarketplaceMsjsdiagDebuggerMicrosoftEdge]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge "Debugger für Microsoft Edge | Visual Studio Marketplace"  
 
-[CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chromium-Fehler"  
-
-<!--[CR174309]: https://crbug.com/174309 "Issue 174309: DevTools: Allow to customize keyboard shortcuts/key bindings | Chromium bugs"  -->  
-<!--[CR772558]: https://crbug.com/772558 "Issue 772558: DevTools: Update to latest version of Lighthouse | Chromium bugs"  -->  
-[CR978059]: https://crbug.com/978059 "Issue 978059: Deleting cookies when filtering them, delete all the cookies not just the filtered ones | Chromium bugs"  
-[CR997625]: https://crbug.com/997625 "Issue 997625: New Feature Req | Need option to see url-decoded value in cookies | Chromium bugs"  
-[CR1003629]: https://crbug.com/1003629 "Issue 1003629: Capture Node does not screenshot the node below the fold anymore. | Chromium bugs"  
-[CR1012337]: https://crbug.com/1012337 "Issue 1012337: Clear Site Data destroys Google session on non-Google sites | Chromium bugs"  
-[CR1028078]: https://crbug.com/1028078 "Issue 1028078: Put Online and Offline next to each next to each in the list | Chromium bugs"  
-[CR1054281]: https://crbug.com/1054281 "Issue 1054281: Feature Request: DevTools should emulate foldable and dual-screen devices | Chromium bugs"  
-<!--[CR1073909]: https://crbug.com/1073909 "Issue 1073909: BLOCKED | Chromium bugs"  -->  
-[CR1075865]: https://crbug.com/1075865 "Issue 1075865: Show dropped frames in devtools timeline | Chromium bugs"  
-[CR1093229]: https://crbug.com/1093229 "Issue 1093229: DevTools: offer a specialized typeface editor UI | Chromium bugs"  
-[CR1121900]: https://crbug.com/1121900 "Issue 1121900: DevTools: update contrast calculation logic per new spec | Chromium bugs"  
-[CR1122507]: https://crbug.com/1122507 "Issue 1122507: Surface worker information in frame tree view | Chromium bugs"  
-[CR1122580]: https://crbug.com/1122580 "Issue 1122580: Impossible to disable network recording on reload | Chromium bugs"  
-<!--[CR1126824]: https://crbug.com/1126824 "Issue 1126824: ☂ Support Trust Token debugging in DevTools | Chromium bugs"  -->  
-[CR1136394]: https://crbug.com/1136394 "Issue 1136394: Flexbox tooling | Chromium bugs"  
-<!--[CR1137837]: https://crbug.com/1137837 "Issue 1137837: ☂ Improve Trusted Types support in DevTools | Chromium bugs"  -->  
-[CR1139899]: https://crbug.com/1139899 "Issue 1139899: Report gated API availability in frame details view | Chromium bugs"  
-[CR1139949]: https://crbug.com/1139949 "Issue 1139949: Flexbox overlay | Chromium bugs"  
-<!--[CR1142804]: https://crbug.com/1142804 "Issue 1142804: Implement break-on-trusted-type-violation | Chromium bugs"  -->  
-<!--[CR1144127]: https://crbug.com/1144127 "Issue 1144127: BLOCKED | Chromium bugs"  -->  
-[CR1147016]: https://crbug.com/1147016 "Problem 1147016: Die Farbauswahl wird in der var()-Funktion nicht angezeigt. | Chromium bugs"  
-[CR1148353]: https://crbug.com/1148353 "Issue 1148353: Feature Request: Copy Object from the devtools console | Chromium bugs"  
-[CR1149859]: https://crbug.com/1149859 "Issue 1149859: [feature request][Console] add copy object to clipboard item to contextual menu | Chromium bugs"  
-[CR1150797]: https://crbug.com/1150797 "Issue 1150797: Add Duplicate element context menu in Element panel | Chromium bugs"  
-<!--[CR1150883]: https://crbug.com/1150883 "Issue 1150883: Remove TT messages from the console but keep underlining in the sources tab | Chromium bugs"  -->  
-<!--[CR1152290]: https://crbug.com/1152290 "Issue 1152290: Devtools support for QuicTransport | Chromium bugs"  -->  
-[CR1152391]: https://crbug.com/1152391 "Issue 1152391: Support for copy CSS context menu in styles panel | Chromium bugs"  
-[CR1155120]: https://crbug.com/1155120 "Issue 1155120: [FR]Support copy file name and line number | Chromium bugs"  
-[CR1156628]: https://crbug.com/1156628 "Issue 1156628: DevTools: add support for :target in force element state feature | Chromium bugs"  
-[CR1157329]: https://crbug.com/1157329 "Issue 1157329: Accessibility - Narrator: Narrator is not announcing the count and position for suggestions available for code in Styles tab | Chromium bugs"  
+[CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chromium-Bugs"  
+[CR978059]: https://crbug.com/978059 "Problem 978059: Löschen von Cookies beim Filtern, löschen Sie nicht nur die gefilterten Cookies, sondern | Chromium-Bugs"  
+[CR997625]: https://crbug.com/997625 "Problem 997625: Neue Featurereq-| Need option to see url-decoded value in cookies | Chromium-Bugs"  
+[CR1003629]: https://crbug.com/1003629 "Problem 1003629: Der Knoten "Erfassen" screenshott den Knoten unter dem Knoten nicht mehr. | Chromium-Bugs"  
+[CR1012337]: https://crbug.com/1012337 "Problem 1012337: Das Löschen von Websitedaten zerstört die Google-Sitzung auf Nicht-Google-Websites | Chromium-Bugs"  
+[CR1028078]: https://crbug.com/1028078 "Problem 1028078: Online und Offline nebeneinander in der Liste | Chromium-Bugs"  
+[CR1054281]: https://crbug.com/1054281 "Problem 1054281: Featureanforderung: DevTools sollten ausklappbare und duale Bildschirmgeräte emulieren, die | Chromium-Bugs"  
+[CR1075865]: https://crbug.com/1075865 "Problem 1075865: Anzeigen verworfener Frames in devtools timeline | Chromium-Bugs"  
+[CR1093229]: https://crbug.com/1093229 "Problem 1093229: DevTools: Anbieten eines speziellen Benutzeroberflächeneditors für | Chromium-Bugs"  
+[CR1121900]: https://crbug.com/1121900 "Problem 1121900: DevTools: Aktualisieren der Berechnungslogik für den Kontrast pro neuer Spezifikation | Chromium-Bugs"  
+[CR1122507]: https://crbug.com/1122507 "Problem 1122507: Anzeigen von Worker-Informationen in der Framestrukturansicht | Chromium-Fehler"  
+[CR1122580]: https://crbug.com/1122580 "Problem 1122580: Es ist nicht möglich, die Netzwerkaufzeichnung beim Erneutladen von | Chromium-Bugs"  
+[CR1136394]: https://crbug.com/1136394 "Problem 1136394: Flexbox-Tooling | Chromium-Fehler"  
+[CR1139899]: https://crbug.com/1139899 "Problem 1139899: Verfügbarkeit der Gated-API in der Frame-Detailansicht melden | Chromium-Fehler"  
+[CR1139949]: https://crbug.com/1139949 "Problem 1139949: Flexbox-Überlagerungs-| Chromium-Bugs"  
+[CR1147016]: https://crbug.com/1147016 "Problem 1147016: Die Farbauswahl wird in der Var()-Funktion nicht angezeigt. | Chromium-Bugs"  
+[CR1148353]: https://crbug.com/1148353 "Problem 1148353: Featureanforderung: Kopieren des Objekts aus der Devtools-Konsolen-| Chromium-Bugs"  
+[CR1149859]: https://crbug.com/1149859 "Problem 1149859: [feature request][Console] add copy object to clipboard item to contextual menu | Chromium-Bugs"  
+[CR1150797]: https://crbug.com/1150797 "Problem 1150797: Hinzufügen des Kontextmenüs "Dupliziertes Element" im Elementbereich | Chromium-Bugs"  
+[CR1152391]: https://crbug.com/1152391 "Problem 1152391: Unterstützung für das Kopieren des CSS-Kontextmenüs im Formatvorlagenbereich | Chromium-Bugs"  
+[CR1155120]: https://crbug.com/1155120 "Problem 1155120: [FR]Unterstützung des Dateinamens und der Zeilennummer für | Chromium-Bugs"  
+[CR1156628]: https://crbug.com/1156628 "Problem 1156628: DevTools: Hinzufügen von Unterstützung für das Feature ":target in Force Element State" | Chromium-Bugs"  
+[CR1157329]: https://crbug.com/1157329 "Problem 1157329: Eingabehilfen – Sprachausgabe: Die Sprachausgabe kündigt nicht die Anzahl und Position von Vorschlägen an, die für Code auf der Registerkarte "Formatvorlagen" verfügbar | Chromium-Bugs"  
 
 [MdnDocsWebCssTarget]: https://developer.mozilla.org/docs/web/css/:target ":target | MDN"  
 
