@@ -3,16 +3,16 @@ description: Die neuesten experimentellen Features in Microsoft Edge DevTools
 title: Experimentelle Funktionen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/03/2020
+ms.date: 02/04/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, f12-Tools, DevTools, Experimentieren
-ms.openlocfilehash: 018364d4debc1791685a028c337f61f85865ef6b
-ms.sourcegitcommit: 12c30ad4ab2664d17c9b7e9d59d7a3cda60ff65c
+ms.openlocfilehash: 32eaa3e8d41efefa669142297891e7c62cf4eb5b
+ms.sourcegitcommit: d53421b7219ad87fa9d58f601d9c61ee44c2e43a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 02/04/2021
-ms.locfileid: "11313055"
+ms.locfileid: "11313465"
 ---
 # <span data-ttu-id="4246c-104">Experimentelle Funktionen</span><span class="sxs-lookup"><span data-stu-id="4246c-104">Experimental features</span></span>  
 
@@ -51,7 +51,7 @@ ms.locfileid: "11313055"
 | [<span data-ttu-id="4246c-131">Quellauftragsanzeige</span><span class="sxs-lookup"><span data-stu-id="4246c-131">Source Order Viewer</span></span>](#source-order-viewer) | <span data-ttu-id="4246c-132">86 oder höher</span><span class="sxs-lookup"><span data-stu-id="4246c-132">86 or later</span></span> |  
 | [<span data-ttu-id="4246c-133">Aktivieren des Editors für Tastenkombinationen</span><span class="sxs-lookup"><span data-stu-id="4246c-133">Enable keyboard shortcut editor</span></span>](#enable-keyboard-shortcut-editor) | <span data-ttu-id="4246c-134">87 oder höher</span><span class="sxs-lookup"><span data-stu-id="4246c-134">87 or later</span></span> |  
 | [<span data-ttu-id="4246c-135">Aktivieren zusammengesetzter Layer in der 3D-Ansicht</span><span class="sxs-lookup"><span data-stu-id="4246c-135">Enable Composited Layers in 3D View</span></span>](#enable-composited-layers-in-3d-view) | <span data-ttu-id="4246c-136">87 oder höher</span><span class="sxs-lookup"><span data-stu-id="4246c-136">87 or later</span></span> |  
-| [<span data-ttu-id="4246c-137">Aktivieren des neuen Schriftarten-Editor-Tools im Formatvorlagenbereich</span><span class="sxs-lookup"><span data-stu-id="4246c-137">Enable new Font Editor tool within the Styles pane</span></span>](#) | <span data-ttu-id="4246c-138">89 oder höher</span><span class="sxs-lookup"><span data-stu-id="4246c-138">89 or later</span></span> |  
+| [<span data-ttu-id="4246c-137">Aktivieren des neuen Schriftarten-Editor-Tools im Formatvorlagenbereich</span><span class="sxs-lookup"><span data-stu-id="4246c-137">Enable new Font Editor tool within the Styles pane</span></span>](#enable-new-font-editor-tool-within-the-styles-pane) | <span data-ttu-id="4246c-138">89 oder höher</span><span class="sxs-lookup"><span data-stu-id="4246c-138">89 or later</span></span> |  
 | [<span data-ttu-id="4246c-139">Aktivieren neuer CSS -Flexbox-Debugfeatures</span><span class="sxs-lookup"><span data-stu-id="4246c-139">Enable new CSS Flexbox debugging features</span></span>](#enable-new-css-flexbox-debugging-features) | <span data-ttu-id="4246c-140">89 oder höher</span><span class="sxs-lookup"><span data-stu-id="4246c-140">89 or later</span></span> |  
 | [<span data-ttu-id="4246c-141">Aktivieren + Schaltflächenmenüs zum Öffnen von weiteren Tools</span><span class="sxs-lookup"><span data-stu-id="4246c-141">Enable + button tab menus to open more tools</span></span>](#enable--button-tab-menus-to-open-more-tools) | <span data-ttu-id="4246c-142">89 oder höher</span><span class="sxs-lookup"><span data-stu-id="4246c-142">89 or later</span></span> |  
 | [<span data-ttu-id="4246c-143">Registerkarte "Willkommen" aktivieren</span><span class="sxs-lookup"><span data-stu-id="4246c-143">Enable Welcome tab</span></span>](#enable-welcome-tool) | <span data-ttu-id="4246c-144">89 oder höher</span><span class="sxs-lookup"><span data-stu-id="4246c-144">89 or later</span></span> |  
