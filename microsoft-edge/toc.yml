@@ -277,6 +277,8 @@
               href: extensions-chromium/publish/submission-states.md
             - name: Verwalten der Kontoeinstellungen
               href: extensions-chromium/publish/manage-settings.md
+            - name: Wenden Sie sich an uns
+              href: extensions-chromium/publish/contact-us.md
         - name: Richtlinien für Microsoft Edge-Add-Ons
           items:
             - name: Sicherheitsrichtlinie für Inhalte
