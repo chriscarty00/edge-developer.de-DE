@@ -103,7 +103,7 @@ Wenn Sie CSS für Ihr Flexboxlayout bearbeiten, **** werden bei automatischen CS
 :::row-end:::  
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/01/elements-flex-container-align.msft.png" alt-text="Das Menü "AutoVervollständigung" ist für CSS-Eigenschaften hervorgehoben, die mit ausrichtungs-" lightbox="../../media/2021/01/elements-flex-container-align.msft.png":::
+      :::image type="complex" source="../../media/2021/01/elements-flex-container-align.msft.png" alt-text="Das Menü AutoVervollständigung ist für CSS-Eigenschaften hervorgehoben, die mit ausrichtungs-" lightbox="../../media/2021/01/elements-flex-container-align.msft.png":::
          Menü "AutoVervollständigung" für CSS-Eigenschaften, die mit `align-`  
       :::image-end:::  
    :::column-end:::
@@ -180,7 +180,7 @@ You may file issues and contribute to the extension on the [vscode-edge-devtools
 
 In Microsoft Edge, Version 89, sind Knotenscreenshots genauer und erfassen den vollständigen Knoten, auch wenn der Inhalt des Knotens nicht im Viewport sichtbar ist.  Zeigen Sie **im Tool "Elemente"** auf ein Element, öffnen Sie das Kontextmenü \(rechtsklick\), und wählen Sie Screenshot des **Aufnahmeknotens aus.**  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Problem [1003629][CR1003629].  
 
-:::image type="complex" source="../../media/2021/01/capture-node-screenshot.msft.png" alt-text="Screenshot des Aufnahmeknotens im Kontextmenü im Tool "Elemente"" lightbox="../../media/2021/01/capture-node-screenshot.msft.png":::
+:::image type="complex" source="../../media/2021/01/capture-node-screenshot.msft.png" alt-text="Screenshot des Aufnahmeknotens im Kontextmenü im Tool Elemente" lightbox="../../media/2021/01/capture-node-screenshot.msft.png":::
    **Screenshot des Aufnahmeknotens** im Kontextmenü im Tool **"Elemente"**  
 :::image-end:::  
 
@@ -207,7 +207,7 @@ Sie können jetzt DevTools [][MdnDocsWebCssTarget] verwenden, um die :target-CSS
 
 Verwenden Sie die neue **Verknüpfung "Duplicate"-Element,** um ein Element zu klonen.  Zeigen Sie **im Elementtool** auf ein Element, öffnen Sie das Kontextmenü \(rechtsklick\), wählen Sie **"Duplizieren" aus.**  Unter dem ausgewählten Element wird ein neues Element erstellt.  Um das Element mit einer Tastenkombination zu duplizieren, wählen `Shift` + `Alt` + `Down Arrow` Sie \(Windows/Linux\) oder `Shift` + `Option` + `Down Arrow` \(macOS\) aus.  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Problem [1150797][CR1150797].  
 
-:::image type="complex" source="../../media/2021/01/elements-duplicate-element.msft.png" alt-text="Das Element "Duplicate" wird im Kontextmenü eines Elements im Tool "Elemente" hervorgehoben." lightbox="../../media/2021/01/elements-duplicate-element.msft.png":::
+:::image type="complex" source="../../media/2021/01/elements-duplicate-element.msft.png" alt-text="Das Element Duplicate wird im Kontextmenü eines Elements im Tool Elemente hervorgehoben." lightbox="../../media/2021/01/elements-duplicate-element.msft.png":::
    Das **Element "Duplicate"** wird im Kontextmenü eines Elements im Tool **"Elemente"** hervorgehoben.  
 :::image-end:::  
 
@@ -327,7 +327,7 @@ Sie können nun Objektwerte in die **Konsolen-** und **Quellentools** kopieren. 
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/01/sources-breakpoint-object-copy-object.msft.png" alt-text="Objekt in "Sources" kopieren" lightbox="../../media/2021/01/sources-breakpoint-object-copy-object.msft.png":::
+      :::image type="complex" source="../../media/2021/01/sources-breakpoint-object-copy-object.msft.png" alt-text="Objekt in Sources kopieren" lightbox="../../media/2021/01/sources-breakpoint-object-copy-object.msft.png":::
          Objekt in **"Sources" kopieren**  
       :::image-end:::  
    :::column-end:::
@@ -347,7 +347,7 @@ Sie können jetzt einen Dateinamen über das Kontextmenü kopieren.  Um den Verl
 :::row-end:::  
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/01/sources-copy-file-name.msft.png" alt-text="Kopieren des Dateinamens in "Quellen"" lightbox="../../media/2021/01/sources-copy-file-name.msft.png":::
+      :::image type="complex" source="../../media/2021/01/sources-copy-file-name.msft.png" alt-text="Kopieren des Dateinamens in Quellen" lightbox="../../media/2021/01/sources-copy-file-name.msft.png":::
          Kopieren des Dateinamens in **"Quellen"**  
       :::image-end:::  
    :::column-end:::
