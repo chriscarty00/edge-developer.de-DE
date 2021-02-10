@@ -1,18 +1,18 @@
 ---
-description: Erfahren Sie, wie Sie Microsoft Edge devtools verwenden, um JavaScript-Fehler zu finden und zu beheben.
-title: Erste Schritte mit dem Debuggen von JavaScript in Microsoft Edge devtools
+description: Erfahren Sie, wie Sie Microsoft Edge DevTools verwenden, um JavaScript-Fehler zu finden und zu beheben.
+title: Erste Schritte mit dem Debuggen von JavaScript in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/09/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: bff87ca36c484689134f284514bbab353b8b99b6
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
+ms.openlocfilehash: b036fc87149d13446ab1bc05afc8fc8631d27c8d
+ms.sourcegitcommit: e737277744dd25a7585c113eef22a2aa4d4c167f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11124789"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "11325948"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -26,57 +26,56 @@ ms.locfileid: "11124789"
    distributed under the License is distributed on an "AS IS" BASIS,
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
-   limitations under the License.  -->
+   limitations under the License.  -->  
+# Erste Schritte mit dem Debuggen von JavaScript in Microsoft Edge DevTools  
 
-# Erste Schritte mit dem Debuggen von JavaScript in Microsoft Edge devtools  
+In diesem Artikel lernen Sie den grundlegenden Workflow zum Debuggen von JavaScript-Problem in DevTools.  
 
-In diesem Lernprogramm lernen Sie den grundlegenden Workflow zum Debuggen von JavaScript-Problemen in devtools.  
+## Schritt 1: Reproduzieren des Fehlers  
 
-## Schritt 1: reproduzieren des Fehlers  
+Das Suchen einer Reihe von Aktionen, die einen Fehler konsistent reproduzieren, ist immer der erste Schritt beim Debuggen.  
 
-Das Suchen nach einer Reihe von Aktionen, die einen Fehler konsistent reproduzieren, ist immer der erste Schritt zum Debuggen.  
-
-1.  Wählen Sie **Demo öffnen**aus.  Halten Sie `Control` \ (Windows, Linux \) oder `Command` \ (macOS \) gedrückt, und öffnen Sie die Demo auf einer neuen Registerkarte.  
+1.  Wählen Sie **"Demo öffnen"** aus.  Halten `Control` Sie \(Windows, Linux\) oder \(macOS\) fest, und öffnen Sie die Demo `Command` auf einer neuen Browserregisterkarte.  
     
     [Demo öffnen][OpenDebugJSDemo]  
     
-1.  Geben Sie `5` den Text in das Textfeld **Zahl 1** ein.  
-1.  Geben Sie `1` den Text in das Textfeld **Zahl 2** ein.  
-1.  Wählen Sie **Add Number 1 und Number 2**aus.  Die Beschriftung unter der Schaltfläche steht `5 + 1 = 51` .  Das Ergebnis sollte sein `6` .  Dies ist der Fehler, den Sie beheben werden.  
+1.  Geben `5` Sie in das Textfeld Zahl **1** ein.  
+1.  Geben `1` Sie in das Textfeld Zahl **2** ein.  
+1.  Wählen **Sie "Nummer 1 hinzufügen" und "Zahl 2" aus.**  Die Bezeichnung unterhalb der Schaltfläche steht `5 + 1 = 51` für .  Das Ergebnis sollte `6` .  Beheben Sie als Nächstes den Fehler beim Hinzuf?en, der der Fehler ist.  
     
-    :::image type="complex" source="../media/javascript-js-demo-bad.msft.png" alt-text="Das Ergebnis von 5 + 1 ist 51, sollte aber 6 sein." lightbox="../media/javascript-js-demo-bad.msft.png":::
-       Das Ergebnis `5 + 1` ist `51` `6`  
+    :::image type="complex" source="../media/javascript-js-demo-bad.msft.png" alt-text="5 + 1 ergibt 51, sollte aber 6 sein" lightbox="../media/javascript-js-demo-bad.msft.png":::
+       `5 + 1` führt zu `51` , sollte aber `6`  
     :::image-end:::  
     
-## Schritt 2: Kennenlernen der Benutzeroberfläche des Quellbereichs  
+## Schritt 2: Machen Sie sich mit der Benutzeroberfläche des Quellenbereichs vertraut  
 
-DevTools bietet eine Vielzahl unterschiedlicher Tools für verschiedene Aufgaben, wie beispielsweise das Ändern von CSS, die Leistung der Profilerstellung für Seiten und das Überwachen von Netzwerkanforderungen.  Im **Quellen** Bereich können Sie JavaScript Debuggen.  
+DevTools bietet viele verschiedene Tools für verschiedene Aufgaben.  Zu den verschiedenen Aufgaben gehören das Ändern von CSS, das Laden von Profilingseiten und das Überwachen von Netzwerkanforderungen.  Im **Bereich** "Quellen" debuggen Sie JavaScript.  
 
-1.  Öffnen Sie devtools, indem Sie `Control` + `Shift` + `J` \ (Windows, Linux \) oder `Command` + `Option` + `J` \ (macOS \) drücken.  Mit dieser Tastenkombination wird die **Konsolen** Leiste geöffnet.  
+1.  Öffnen Sie DevTools, indem `Control` + `Shift` + `J` Sie \(Windows, Linux\) oder `Command` + `Option` + `J` \(macOS\) drücken.  Mit dieser Verknüpfung wird der **Konsolenbereich** geöffnet.  
     
-    :::image type="complex" source="../media/javascript-console-empty.msft.png" alt-text="Das Ergebnis von 5 + 1 ist 51, sollte aber 6 sein." lightbox="../media/javascript-console-empty.msft.png":::
-       Die **Konsolen** Leiste  
+    :::image type="complex" source="../media/javascript-console-empty.msft.png" alt-text="Konsolenbereich" lightbox="../media/javascript-console-empty.msft.png":::
+       Das **Konsolentool**  
     :::image-end:::  
     
-1.  Klicken Sie auf die Registerkarte **Quellen** .  
+1.  Wählen Sie das **Quellentool** aus.  
     
-    :::image type="complex" source="../media/javascript-sources-sections.msft.png" alt-text="Das Ergebnis von 5 + 1 ist 51, sollte aber 6 sein." lightbox="../media/javascript-sources-sections.msft.png":::
-       Das **Quellen** Panel  
+    :::image type="complex" source="../media/javascript-sources-sections.msft.png" alt-text="Bereich "Quellen"" lightbox="../media/javascript-sources-sections.msft.png":::
+       Bereich **"Quellen"**  
     :::image-end:::  
     
-Die Benutzeroberfläche des **Quellen** Panels besteht aus drei Teilen.  
+Die **Benutzeroberfläche** des Quellenbereichs hat drei Teile.  
 
-:::image type="complex" source="../media/javascript-sources-sections-annotated.msft.png" alt-text="Das Ergebnis von 5 + 1 ist 51, sollte aber 6 sein." lightbox="../media/javascript-sources-sections-annotated.msft.png":::
-   Die drei Teile der Benutzeroberfläche des **Quellen** Panels  
+:::image type="complex" source="../media/javascript-sources-sections-annotated.msft.png" alt-text="Die drei Teile der Benutzeroberfläche des Quellenbereichs" lightbox="../media/javascript-sources-sections-annotated.msft.png":::
+   Die drei Teile der **Benutzeroberfläche** des Quellenbereichs  
 :::image-end:::  
 
-1.  Der Bereich " **Datei-Navigator** " \ (Abschnitt 1 in der vorhergehenden Abbildung \).  Jede Datei, die die Seite anfordert, wird hier aufgelistet.  
-1.  Der Bereich " **Code-Editor** " \ (Abschnitt 2 in der vorhergehenden Abbildung \).  Nachdem Sie eine Datei im Bereich " **Datei-Navigator** " ausgewählt haben, wird hier der Inhalt der Datei angezeigt.  
-1.  Der **JavaScript-Debugbereich** \ (in der vorherigen Abbildung Abschnitt 3).  Verschiedene Tools zum Überprüfen des Javascripts für die Seite.  Wenn Ihr devtools-Fenster breit ist, wird dieser Bereich rechts neben dem **Code-Editor-** Bereich angezeigt.  
+1.  Der **Dateinavigatorbereich** \(Abschnitt 1 in der vorherigen Abbildung\).  Jede Datei, die die Webseite anfordert, wird hier aufgelistet.  
+1.  Der **Code-Editor-Bereich** \(Abschnitt 2 in der vorherigen Abbildung\).  Nachdem Sie eine Datei im **Bereich "Dateinavigator"** ausgewählt haben, wird der Inhalt dieser Datei hier angezeigt.  
+1.  Der **JavaScript-Debugbereich** \(Abschnitt 3 in der vorherigen Abbildung\).  Verschiedene Tools zum Überprüfen des JavaScript für die Webseite.  Wenn ihr DevTools-Fenster breit ist, wird dieser Bereich rechts vom **Code-Editor-Bereich** angezeigt.  
     
 ## Schritt 3: Anhalten des Codes mit einem Haltepunkt  
 
-Eine gängige Methode zum Debuggen eines Problems wie dieses besteht darin, viele `console.log()` Anweisungen in den Code einzufügen, um Werte während der Ausführung des Skripts zu überprüfen.  Zum Beispiel:  
+Eine gängige Methode zum Debuggen dieser Art von Problem ist das Einfügen mehrerer Anweisungen in den Code und das anschließende Überprüfen von Werten während der Ausführung `console.log()` des Skripts.  Zum Beispiel:  
 
 ```javascript
 function updateLabel() {
@@ -90,140 +89,140 @@ function updateLabel() {
 }
 ```  
 
-Die `console.log()` Methode erhält möglicherweise die Aufgabe erledigt, aber **Haltepunkte** können Sie schneller erledigen.  Mit einem Haltepunkt können Sie Ihren Code in der Mitte der Laufzeit anhalten und alle Werte zu diesem Zeitpunkt untersuchen.  Haltepunkte weisen gegenüber der Methode einige Vorteile auf `console.log()` :  
+Die `console.log()` Methode kann die Aufgabe erledigen, **haltepunkte können** sie jedoch schneller erledigen.  Mit einem Haltepunkt können Sie Ihren Code in der Mitte der Laufzeit anhalten und alle Werte zu diesem Zeitpunkt untersuchen.  Haltepunkte haben gegenüber der Methode einige `console.log()` Vorteile:  
 
-*   Mit `console.log()` müssen Sie den Quellcode manuell öffnen, den relevanten Code suchen, die Anweisungen einfügen und die `console.log()` Seite dann erneut laden, um die Nachrichten in der Konsole anzuzeigen.  Mit Haltepunkten können Sie den relevanten Code anhalten, ohne zu wissen, wie der Code strukturiert ist.  
-*   In Ihren `console.log()` Anweisungen müssen Sie jeden Wert, den Sie überprüfen möchten, explizit angeben.  Mit Haltepunkten zeigt devtools die Werte aller Variablen zu diesem Zeitpunkt an.  Manchmal gibt es Variablen, die Ihren Code beeinflussen, den Sie nicht einmal kennen.  
-
-Kurz gesagt: Haltepunkte können Ihnen helfen, Fehler schneller zu finden und zu beheben als die `console.log()` Methode.  
-
-Wenn Sie einen Schritt zurückgehen und darüber nachdenken, wie die APP funktioniert, können Sie eine fundierte Vermutung anstellen, dass die falsche Summe ( `5 + 1 = 51` ) im `click` Ereignislistener berechnet wird, der der Schaltfläche " **Zahl 1" und "Zahl 2** " zugeordnet ist.  Daher möchten Sie den Code wahrscheinlich um die Zeit anhalten, zu der der `click` Listener ausgeführt wird.  Mit **Ereignis-Listener-Haltepunkten** können Sie genau das ausführen:  
-
-1.  Wählen Sie im **JavaScript-Debugbereich** **Ereignis-Listener-Haltepunkte** aus, um den Abschnitt zu erweitern.  DevTools zeigt eine Liste erweiterbarer Ereigniskategorien wie **Animation** und **Zwischenablage**an.  
-1.  Wählen Sie neben der **Maus** Ereigniskategorie **erweitern** \ ( ![ Symbol erweitern ][ImageExpandIcon] \) aus.  DevTools zeigt eine Liste von Mausereignissen wie **Click** und **MouseDown**an.  Neben jedem Ereignis ist ein Kontrollkästchen markiert.  
-1.  Aktivieren Sie das Kontrollkästchen **Klicken** .  DevTools ist jetzt so eingerichtet, dass automatisch angehalten wird, wenn *ein* `click` Ereignis-Listener ausgeführt wird.  
+*   With `console.log()` , you need to manually open the source code, find the relevant code, insert the `console.log()` statements, and then refresh the webpage to display the messages in the **Console**.  Bei Haltepunkten können Sie den relevanten Code unterbrechen, ohne zu wissen, wie der Code strukturiert ist.  
+*   In Ihren Anweisungen müssen Sie explizit jeden `console.log()` Wert angeben, den Sie überprüfen möchten.  Mit Haltepunkten zeigt DevTools die Werte aller Variablen zu diesem Zeitpunkt an.  Manchmal werden Variablen, die sich auf Ihren Code auswirken, ausgeblendet und verschleiert.  
     
-    :::image type="complex" source="../media/javascript-sources-event-listener-breakpoint-mouse-click.msft.png" alt-text="Das Ergebnis von 5 + 1 ist 51, sollte aber 6 sein." lightbox="../media/javascript-sources-event-listener-breakpoint-mouse-click.msft.png":::
-       Das Kontrollkästchen **"klicken"** ist aktiviert.  
+Kurz gesagt, können Haltepunkte Ihnen helfen, Fehler schneller zu finden und zu beheben als die `console.log()` Methode.  
+
+Wenn Sie einen Schritt zurück gehen und sich Gedanken über die Funktionsweise der App machen, können Sie eine gebildete Ermutung treffen, dass die falsche Summe \( \) im Ereignislistener berechnet wird, der der Schaltfläche "Nummer 1 hinzufügen" und "Nummer `5 + 1 = 51` `click` **2"** zugeordnet ist.  Daher möchten Sie den Code wahrscheinlich zu dem Zeitpunkt anhalten, zu dem der `click` Listener ausgeführt wird.  **Mit Ereignislistener-Haltepunkten** können Sie genau dies tun:  
+
+1.  Wählen Sie **im Bereich "JavaScript-Debuggen"** die **Option "Ereignislistener-Haltepunkte"** aus, um den Abschnitt zu erweitern.  DevTools zeigt eine Liste erweiterbarer Ereigniskategorien an, z. B. **Animation** und **Zwischenablage.**  
+1.  Wählen Sie neben der **Kategorie "Mausereignis"** **"Erweitern** \( ![ Symbol "Erweitern" ][ImageExpandIcon] \) aus.  DevTools zeigt eine Liste von Mausereignissen an, z. B. **Klicken** **und Mousedown.**  Jedes Ereignis verfügt über ein Kontrollkästchen daneben.  
+1.  Aktivieren Sie das Kontrollkästchen neben dem **Klicken.**  DevTools ist jetzt so eingerichtet, dass es automatisch angehalten wird, wenn ein `click` Ereignislistener ausgeführt wird.  
+    
+    :::image type="complex" source="../media/javascript-sources-event-listener-breakpoint-mouse-click.msft.png" alt-text="Aktivieren Sie das Kontrollkästchen neben dem Klicken." lightbox="../media/javascript-sources-event-listener-breakpoint-mouse-click.msft.png":::
+       Aktivieren Sie das Kontrollkästchen neben dem **Klicken.**  
     :::image-end:::  
     
-1.  Zurück zur Demo wählen Sie erneut die **Nummer 1 und die Nummer 2** aus.  DevTools hält die Demo an und hebt eine Codezeile im **Quellen** Panel hervor.  DevTools sollte auf Zeile 16 anhalten `get-started.js` .  
+1.  Wählen Sie wieder auf der Demo **"Nummer 1" und "Nummer 2"** aus.  DevTools hält die Demo an und hebt eine Codezeile im **Quellenbereich** hervor.  DevTools sollten in Zeile 16 in angehalten `get-started.js` werden.  
     
     ```javascript
     if (inputsAreEmpty()) {
     ```  
     
-    Wenn Sie in einer anderen Codezeile pausieren, drücken Sie die Fortsetzung der **Skriptausführung** \ ( ![ Fortsetzen der Skriptausführung ][ImageResumeIcon] \), bis Sie die richtige Zeile anhalten.  
+    Wenn Sie in einer anderen Codezeile anhalten, drücken Sie **"Skriptausführung** fortsetzen\( Skriptausführung fortsetzen \) bis Sie in der richtigen ![ ][ImageResumeIcon] Zeile anhalten.  
     
     > [!NOTE]
-    > Wenn Sie in einer anderen Zeile angehalten haben, verfügen Sie über eine Browser Erweiterung, die einen `click` Ereignis-Listener auf jeder besuchten Seite registriert.  Sie wurden im `click` Listener der Erweiterung angehalten.  Wenn Sie den InPrivate-Modus verwenden, um **private zu durchsuchen**, wodurch alle Erweiterungen deaktiviert werden, sehen Sie möglicherweise, dass Sie jedes Mal in der gewünschten Codezeile anhalten.  
+    > Wenn Sie in einer anderen Zeile angehalten haben, verfügen Sie über eine Browsererweiterung, die einen Ereignislistener auf jeder besuchten `click` Webseite registriert.  Sie wurden im Listener der Erweiterung `click` angehalten.  Wenn Sie den InPrivate-Modus verwenden, um **im privaten**Modus zu navigieren, wodurch alle Erweiterungen deaktiviert werden, sehen Sie möglicherweise, dass Sie jedes Mal in der gewünschten Codezeile anhalten.  
 
 <!--todo: add inprivate section when available -->  
 
-**Ereignis-Listener-Haltepunkte** sind nur eine von vielen Arten von Haltepunkten, die in devtools verfügbar sind.  Es lohnt sich, alle unterschiedlichen Typen zu merken, denn jeder Typ hilft Ihnen letztendlich dabei, verschiedene Szenarien so schnell wie möglich zu debuggen.  <!--See [Pause Your Code With Breakpoints][JSBreakpoints] to learn when and how to use each type.  -->  
+**Ereignislistener-Haltepunkte** sind nur einer von vielen Arten von Haltepunkten, die in DevTools verfügbar sind.  Merken Sie sich alle verschiedenen Typen, damit Sie unterschiedliche Szenarien so schnell wie möglich debuggen können.  <!--See [Pause Your Code With Breakpoints][JSBreakpoints] to learn when and how to use each type.  -->  
 
-## Schritt 4: Durchlaufen des Codes  
+## Schritt 4: Schrittweises Durchschritten des Codes  
 
-Eine häufige Ursache für Fehler ist, wenn ein Skript in der falschen Reihenfolge ausgeführt wird.  Wenn Sie den Code schrittweise durchlaufen, können Sie die Laufzeit des Codes, jeweils eine Zeile, durchlaufen und genau ermitteln, wo er in einer anderen Reihenfolge als erwartet ausgeführt wird.  Probieren Sie es jetzt aus:  
+Eine häufige Ursache für Fehler ist, wenn ein Skript in der falschen Reihenfolge ausgeführt wird.  Schrittweises Durchschritten des Codes ermöglicht Es Ihnen, die Laufzeit ihres Codes zu durchschritten.  Sie werden durch eine Zeile nach der anderen gehen, um herauszufinden, wo Ihr Code in einer anderen Reihenfolge als erwartet ausgeführt wird.  Probieren Sie es jetzt aus:  
 
-1.  Wählen Sie **Schritt über den nächsten Funktionsaufruf** \ ( ![ Schritt über den nächsten Funktionsaufruf ][ImageOverIcon] \).  DevTools führt den folgenden Code aus, ohne ihn zu betreten.  
+1.  Choose **Step over next function call** \( Step over next function call ![ ][ImageOverIcon] \).  DevTools führt den folgenden Code aus, ohne ihn schrittweise zu verwenden.  
     
     ```javascript
     if (inputsAreEmpty()) {
     ```  
     
     > [!NOTE]
-    > DevTools überspringt einige Codezeilen.  Dies liegt daran `inputsAreEmpty()` , dass die Auswertung als falsch ausgewertet wird, damit der Codeblock für die `if` Anweisung nicht ausgeführt wird.  
+    > DevTools überspringt einige Codezeilen.  Dies liegt daran, dass der Codeblock für die Anweisung nicht als `inputsAreEmpty()` falsch `if` ausgewertet wird.  
     
-1.  Wählen Sie im **Quellen** Panel von devtools die Option **Schritt in nächster Funktionsaufruf** \ ( ![ Schritt in nächster Funktionsaufruf \) aus, ][ImageIntoIcon] um die Laufzeit der `updateLabel()` Funktion um jeweils eine Zeile zu durchlaufen.  
+1.  On the **Sources** panel of DevTools, choose **Step into next function call** \( Step into next function call ![ ][ImageIntoIcon] \) to step through the runtime of the `updateLabel()` function, one line at a time.  
     
-Das ist die grundlegende Idee, Code zu durchlaufen.  Wenn Sie sich den Code in ansehen `get-started.js` , sehen Sie, dass der Fehler wahrscheinlich irgendwo in der `updateLabel()` Funktion enthalten ist.  Anstatt jede Codezeile zu durchlaufen, können Sie eine andere Art von Haltepunkt verwenden, um den Code näher an der wahrscheinlichen Position des Fehlers anzuhalten.  
+Das Überprüfen einer Zeile nach der anderen ist die grundidee Idee, codeschritten zu werden.  Wenn Sie den Code in betrachten, sehen Sie, dass sich der Fehler wahrscheinlich an `get-started.js` einer anderen Stelle in der Funktion `updateLabel()` befindet.  Anstatt jede Codezeile zu durchschritten, können Sie einen anderen Haltepunkttyp verwenden, um den Code näher an der voraussichtlichen Stelle des Fehlers anzuhalten.  
 
-## Schritt 5: Festlegen eines Haltepunkts für die Code Zeile  
+## Schritt 5: Festlegen eines Codezeile-Haltepunkts  
 
-Die am häufigsten verwendeten Haltepunkte sind die Code Haltepunkte.  Wenn Sie die spezifische Codezeile erhalten, die Sie anhalten möchten, verwenden Sie einen Haltepunkt für die Code Zeile:  
+Codelinien-Haltepunkte sind der am häufigsten verwendeten Haltepunkttyp.  Wenn Sie zu der bestimmten Codezeile kommen, die Sie anhalten möchten, verwenden Sie einen Codezeile-Haltepunkt.  
 
-1.  Sehen Sie sich die letzte Codezeile in an `updateLabel()` :  
+1.  Sehen Sie sich die letzte Codezeile `updateLabel()` in:  
     
     ```javascript
     label.textContent = addend1 + ' + ' + addend2 + ' = ' + sum;
     ```  
     
-1.  Auf der linken Seite des Codes sehen Sie die Nummer der Zeile dieser bestimmten Codezeile, die **33**ist.  Klicken Sie auf **33**.  DevTools platziert ein rotes Symbol links von **33**.  Dies bedeutet, dass in dieser Zeile ein Haltepunkt für eine Codezeile vorhanden ist.  DevTools wird nun immer angehalten, bevor diese Codezeile ausgeführt wird.  
-1.  Wählen Sie **Skriptausführung fortsetzen** \ ( ![ Skriptausführung fortsetzen ][ImageResumeIcon] \) aus.  Das Skript wird weiterhin ausgeführt, bis es die Zeile 33 erreicht hat.  In den Zeilen 30, 31 und 32 druckt devtools die Werte von `addend1` , `addend2` und `sum` rechts neben dem Semikolon auf jeder Zeile aus.  
+1.  Auf der linken Seite wird die Nummer dieser bestimmten Codezeile als **34 angezeigt.**  Wählen Sie Zeile **34 aus.**  DevTools setzt links von **34**ein rotes Symbol.  Das rote Symbol gibt an, dass sich in dieser Zeile ein Codezeile-Haltepunkt befindet.  DevTools hält immer an, bevor diese Codezeile ausgeführt wird.  
+1.  Choose **Resume script execution** \( Resume script execution ![ ][ImageResumeIcon] \).  Das Skript wird weiterhin ausgeführt, bis es Die Zeile 33 erreicht.  In den Zeilen 31, 32 und 33 druckt DevTools die Werte von , und rechts neben dem `addend1` `addend2` `sum` Semikolon in jeder Zeile.  
     
-    :::image type="complex" source="../media/javascript-sources-breakpoint-paused.msft.png" alt-text="Das Ergebnis von 5 + 1 ist 51, sollte aber 6 sein." lightbox="../media/javascript-sources-breakpoint-paused.msft.png":::
-       DevTools hält auf dem Zeile-zu-Code-Haltepunkt in Zeile 32  
+    :::image type="complex" source="../media/javascript-sources-breakpoint-paused.msft.png" alt-text="DevTools hält am Codelinien-Haltepunkt in Zeile 34 an." lightbox="../media/javascript-sources-breakpoint-paused.msft.png":::
+       DevTools hält am Codelinien-Haltepunkt in Zeile 34 an.  
     :::image-end:::  
     
 ## Schritt 6: Überprüfen von Variablenwerten  
 
-Die Werte von `addend1` , `addend2` und `sum` verdächtig aussehen.  Sie werden in Anführungszeichen eingeschlossen, was bedeutet, dass es sich um Zeichenfolgen handelt.  Dies ist eine gute Hypothese, in der die Ursache des Fehlers erläutert wird.  Jetzt ist es an der Zeit, weitere Informationen zu sammeln.  DevTools bietet eine Vielzahl von Tools für die Untersuchung von Variablenwerten.  
+Die Werte von `addend1` , `addend2` und sehen `sum` verdächtig aus.  Die Werte sind in Anführungszeichen eingeschlossen.  Die Anführungszeichen bedeuten, dass der Wert eine Zeichenfolge ist. Dies ist eine gute Hypothese, um die Ursache des Fehlers zu erläutern.  Sammeln Sie weitere Informationen zur Situation.  DevTools bietet viele Tools zum Untersuchen von Variablenwerten.  
 
-### Methode 1: Bereichs Bereich  
+### Methode 1: Bereichsbereich  
 
-Wenn Sie in einer Codezeile anhalten, zeigt der **Bereich** Bereich an, welche lokalen und globalen Variablen aktuell definiert sind, zusammen mit dem Wert der einzelnen Variablen.  Darüber hinaus werden ggf. Schließ Variablen angezeigt.  Doppelklicken Sie auf einen Variablenwert, um ihn zu bearbeiten.  Wenn Sie nicht in einer Codezeile angehalten werden, ist der **Bereich** Bereich leer.  
+Wenn Sie in einer Codezeile **** anhalten, werden im Bereichsbereich die lokalen und globalen Variablen angezeigt, die derzeit definiert sind, zusammen mit dem Wert jeder Variablen.  Außerdem werden ggf. Schließvariablen angezeigt.  Doppelklicken Sie auf einen Variablenwert, um ihn zu bearbeiten.  Wenn Sie in einer Codezeile nicht anhalten, **ist** der Bereich leer.  
 
-:::image type="complex" source="../media/javascript-sources-breakpoint-paused-scope.msft.png" alt-text="Das Ergebnis von 5 + 1 ist 51, sollte aber 6 sein." lightbox="../media/javascript-sources-breakpoint-paused-scope.msft.png":::
-   **Bereichs** Bereich  
+:::image type="complex" source="../media/javascript-sources-breakpoint-paused-scope.msft.png" alt-text="Bereichsbereich" lightbox="../media/javascript-sources-breakpoint-paused-scope.msft.png":::
+   **Bereichsbereich**  
 :::image-end:::  
 
-### Methode 2: Überwachen von Ausdrücken  
+### Methode 2: Ausdrücke ansehen  
 
-Auf der Registerkarte " **Überwachungsausdrücke** " können Sie die Werte von Variablen über einen Zeitraum überwachen.  Wie der Name schon sagt, sind Watch-Ausdrücke nicht nur auf Variablen limitiert.  Sie können jeden gültigen JavaScript-Ausdruck in einem Überwachungsausdruck speichern.  Probieren Sie es jetzt aus:  
+Im **Bereich "Überwachungsausdrücke"** können Sie die Werte von Variablen im Laufe der Zeit überwachen.  Wie der Name schon sagt, sind **Watch Expressions** nicht auf Variablen beschränkt.  Sie können jeden gültigen JavaScript-Ausdruck in einem **Watch-Ausdruck speichern.**  Versuchen Sie es jetzt.  
 
-1.  Klicken Sie auf die Registerkarte über **Wachen** .  
-1.  Wählen Sie **Ausdruck hinzufügen** \ ( ![ Ausdruck hinzufügen ][ImageAddIcon] \) aus.  
+1.  Wählen Sie den **Bereich "Watch"** aus.  
+1.  Choose **Add Expression** \( Add Expression ![ ][ImageAddIcon] \).  
 1.  Geben Sie `typeof sum` ein.  
-1.  Wählen Sie aus `Enter` .  DevTools wird angezeigt `typeof sum: "string"` .  Der Wert rechts neben dem Doppelpunkt ist das Ergebnis des Überwachungsausdrucks.  
+1.  Wählen Sie `Enter` .  DevTools zeigt `typeof sum: "string"` .  Der Wert rechts neben dem Doppelpunkt ist das Ergebnis des Watch-Ausdrucks.  
     
 > [!NOTE]
-> Im Bereich "Überwachungsausdruck" \ (unten rechts) in der folgenden Abbildung `typeof sum` wird der Überwachungsausdruck angezeigt.  Wenn Ihr devtools-Fenster groß ist, befindet sich der Bereich "Überwachungsausdruck" auf der rechten Seite oberhalb des Bereichs " **Ereignis-Listener-Haltepunkte** ".  
+> Im Bereich **"Watch Expression"** (unten rechts\) in der folgenden Abbildung wird der Watch `typeof sum` Expression angezeigt.  Wenn ihr DevTools-Fenster groß ist, befindet sich der Bereich "Watch **Expression"** auf der rechten Seite über dem Bereich "Haltepunkte des Ereignislisteners". ****  
 
-:::image type="complex" source="../media/javascript-sources-breakpoint-paused-watch.msft.png" alt-text="Das Ergebnis von 5 + 1 ist 51, sollte aber 6 sein." lightbox="../media/javascript-sources-breakpoint-paused-watch.msft.png":::
-   Der Bereich " **Überwachungsausdruck** "  
+:::image type="complex" source="../media/javascript-sources-breakpoint-paused-watch.msft.png" alt-text="Der Bereich "Watch Expression"" lightbox="../media/javascript-sources-breakpoint-paused-watch.msft.png":::
+   Der **Bereich "Watch Expression"**  
 :::image-end:::  
 
-Wie vermutet, `sum` wird als Zeichenfolge ausgewertet, wenn es sich um eine Zahl handelt.  Sie haben nun bestätigt, dass dies die Ursache des Fehlers ist.  
+Wie verdächtig, `sum` wird sie als Zeichenfolge ausgewertet, wenn es sich um eine Zahl handelt.  Sie haben nun bestätigt, dass der Werttyp die Ursache des Fehlers ist.  
 
-### Methode 3: die Konsole  
+### Methode 3: Die Konsole  
 
-Neben der Anzeige von `console.log()` Nachrichten können Sie auch die Konsole verwenden, um willkürliche JavaScript-Anweisungen auszuwerten.  Im Hinblick auf das Debuggen können Sie die Konsole verwenden, um mögliche Fehlerkorrekturen zu testen.  Probieren Sie es jetzt aus:  
+Mit **der Konsole** können Sie Nachrichten anzeigen und sie auch zum `console.log()` Auswerten beliebiger JavaScript-Anweisungen verwenden.  Zum Debuggen können Sie die **Konsole** verwenden, um potenzielle Fehlerbehebungen zu testen.  Versuchen Sie es jetzt.  
 
-1.  Wenn das Konsolen Fach nicht geöffnet ist, wählen Sie es aus, `Escape` um es zu öffnen.  Sie wird unten im devtools-Fenster geöffnet.  
-1.  Geben Sie in der Konsole `parseInt(addend1) + parseInt(addend2)` .  Diese Anweisung funktioniert, weil Sie in einer Codezeile angehalten werden `addend1` und `addend2` sich im Bereich befinden.  
-1.  Wählen Sie aus `Enter` .  DevTools wertet die Anweisung aus und gibt das `6` Ergebnis aus, das Sie erwarten, dass die Demo erstellt wird.  
+1.  Wenn die **Konsolenschubschubte** geschlossen ist, wählen Sie `Escape` sie aus, um sie zu öffnen.  Die **** Konsolenschubschubleiste wird im unteren Bereich des Fensters DevTools geöffnet.  
+1.  Geben Sie in **der Konsole**den Text `parseInt(addend1) + parseInt(addend2)` ein.  Die Anweisung, mit der das Tool in einer Codezeile angehalten wird, in der sich der Bereich `addend1` `addend2` befindet.  
+1.  Wählen Sie `Enter` .  DevTools wertet die Anweisung aus und druckt , was das Ergebnis ist, das Sie von `6` der Demo erwarten.  
     
-    :::image type="complex" source="../media/javascript-sources-breakpoint-paused-console.msft.png" alt-text="Das Ergebnis von 5 + 1 ist 51, sollte aber 6 sein." lightbox="../media/javascript-sources-breakpoint-paused-console.msft.png":::
-       Der **Konsolen** Einzug nach der Auswertung `parseInt(addend1) + parseInt(addend2)`  
+    :::image type="complex" source="../media/javascript-sources-breakpoint-paused-console.msft.png" alt-text="Die Konsolenschubschubte nach der Auswertung von parseInt(addend1) + parseInt(addend2)" lightbox="../media/javascript-sources-breakpoint-paused-console.msft.png":::
+       Die **Konsolenschubschubte** nach der Auswertung `parseInt(addend1) + parseInt(addend2)`  
     :::image-end:::  
     
-## Schritt 7: Anwenden einer Korrektur  
+## Schritt 7: Anwenden eines Fixs  
 
-Wenn Sie eine Lösung für den Fehler gefunden haben, versuchen Sie, Ihr Problem zu beheben, indem Sie den Code bearbeiten und die Demo erneut ausführen.  Sie müssen devtools nicht mehr belassen, um den Fix anzuwenden.  Sie können JavaScript-Code direkt in der devtools-Benutzeroberfläche bearbeiten.  Probieren Sie es jetzt aus:  
+Wenn Sie einen Fix für den Fehler finden, probieren Sie Ihre Korrektur aus, indem Sie den Code bearbeiten und die Demo erneut ausführen.  Sie können JavaScript-Code direkt in der DevTools-Benutzeroberfläche bearbeiten und den Fix anwenden.  Versuchen Sie es jetzt.  
 
-1.  Wählen Sie **Skriptausführung fortsetzen** \ ( ![ Skriptausführung fortsetzen ][ImageResumeIcon] \) aus.  
-1.  Ersetzen Sie im **Code-Editor**Zeile 32, `var sum = addend1 + addend2` mit `var sum = parseInt(addend1) + parseInt(addend2)` .  
-1.  Wählen Sie `Control` + `S` \ (Windows, Linux \) oder `Command` + `S` \ (macOS \) aus, um die Änderung zu speichern.  
-1.  Wählen Sie **Haltepunkte deaktivieren** \ ( ![ Haltepunkte deaktivieren ][ImageDeactivateIcon] \) aus.  Es wechselt blau, um anzuzeigen, dass es aktiv ist.  Während dies eingestellt ist, ignoriert devtools alle von Ihnen gesetzten Haltepunkte.  
-1.  Probieren Sie die Demo mit unterschiedlichen Werten aus.  Die Demo wird nun korrekt berechnet.  
+1.  Choose **Resume script execution** \( Resume script execution ![ ][ImageResumeIcon] \).  
+1.  Ersetzen Sie **im Code-Editor**Zeile 32 `var sum = addend1 + addend2` durch `var sum = parseInt(addend1) + parseInt(addend2)` .  
+1.  Wählen `Control` + `S` Sie \(Windows, Linux\) oder `Command` + `S` \(macOS\) aus, um Ihre Änderung zu speichern.  
+1.  Choose **Deactivate breakpoints** \( ![ Deactivate breakpoints ][ImageDeactivateIcon] \).  Es ändert sich blau, um anzugeben, dass die Option aktiv ist.  Während **Haltepunkte deaktiviert sind,** ignoriert DevTools alle von Ihnen festgelegten Haltepunkte.  
+1.  Testen Sie die Demo mit unterschiedlichen Werten.  Die Demo wird nun korrekt berechnet.  
     
 > [!CAUTION]
-> Dieser Workflow wendet nur einen Fix auf den Code an, der im Browser ausgeführt wird.  Der Code für alle Benutzer, die Ihre Seite besuchen, wird dadurch nicht behoben.  Dazu müssen Sie den Code korrigieren, der sich auf Ihren Servern befindet.  
+> Dieser Workflow wendet nur eine Korrektur auf den Code an, der in Ihrem Browser ausgeführt wird.  Der Code für alle Benutzer, die Ihre Webseite besuchen, wird nicht korrigiert.  Dazu müssen Sie den Code auf den Servern korrigieren.  
 
 ## Nächste Schritte  
 
-Herzlichen Glückwunsch!  Sie wissen jetzt, wie Sie Microsoft Edge devtools beim Debuggen von JavaScript optimal nutzen können.  Die Tools und Methoden, die Sie in diesem Lernprogramm gelernt haben, können Ihnen unzählige Stunden sparen.  
+Herzlichen Glückwunsch!  Sie wissen nun, wie Sie Microsoft Edge DevTools beim Debuggen von JavaScript nutzen.  Die Tools und Methoden, die Sie in diesem Artikel gelernt haben, können Stunden sparen.  
 
-In diesem Lernprogramm wurden nur zwei Möglichkeiten zum Festlegen von Haltepunkten gezeigt.  DevTools bietet viele weitere Möglichkeiten, einschließlich der folgenden Einstellungen.  
+In diesem Artikel wurden ihnen nur zwei Methoden zum Festlegen von Haltepunkten erläutert.  DevTools bietet viele weitere Möglichkeiten, einschließlich der folgenden Einstellungen.  
 
-*   Bedingte Haltepunkte, die nur ausgelöst werden, wenn die von Ihnen bereitgestellte Bedingung wahr ist.  
-*   Haltepunkte für abgefangene oder nicht abgefangene Ausnahmen  
-*   XMLHttpRequest-Haltepunkte, die ausgelöst werden, wenn die angeforderte URL einer von Ihnen bereitgestellten Teilzeichenfolge entspricht.  
+*   Bedingte Haltepunkte, die nur ausgelöst werden, wenn die bedingung, die Sie bereitstellen, wahr ist.  
+*   Haltepunkte für abgefangene oder nicht abgefangene Ausnahmen.  
+*   XHR-Haltepunkte, die ausgelöst werden, wenn die angeforderte URL einer von Ihnen angegebenen Teilzeichenfolge entspricht.  
     
-Weitere Informationen dazu, wann und wie Sie die einzelnen Typen verwenden, finden Sie unter [Anhalten des Codes mit Haltepunkten][DevtoolsJavscriptBreakpoints].  
+Weitere Informationen dazu, wann und wie Sie die einzelnen Typen verwenden, finden Sie unter ["Ihren Code mit Haltepunkten anhalten".][DevtoolsJavscriptBreakpoints]  
 
-Es gibt ein paar Code-Stepping-Steuerelemente, die in diesem Lernprogramm nicht erläutert wurden.  Weitere Informationen finden Sie unter Schritt-für- [Zeile-Code][DevtoolsJavascriptReferenceStepThroughCode].  
+Einige Steuerelemente für die Codeschritte werden in diesem Artikel nicht erläutert.  Weitere Informationen finden Sie unter ["Schritt über Codezeile".][DevtoolsJavascriptReferenceStepThroughCode]  
 
 ## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
@@ -240,18 +239,18 @@ Es gibt ein paar Code-Stepping-Steuerelemente, die in diesem Lernprogramm nicht 
 
 <!-- links -->  
 
-[DevtoolsJavscriptBreakpoints]: ./breakpoints.md "Anhalten des Codes mit Haltepunkten in Microsoft Edge devtools | Microsoft docs"
-[DevtoolsJavascriptReferenceStepThroughCode]: ./reference.md#step-through-code "Schritt-für-Schritt-Code – JavaScript-Debug-Referenz | Microsoft docs"
+[DevtoolsJavscriptBreakpoints]: ./breakpoints.md "So unterbrechen Sie Ihren Code mit Haltepunkten in Microsoft Edge DevTools | Microsoft Docs"
+[DevtoolsJavascriptReferenceStepThroughCode]: ./reference.md#step-through-code "Schritt-für-Schritt-Code – JavaScript-Debugreferenz-| Microsoft Docs"
 
 <!--[inPrivate]: https://support.alphabet.com/alphabet-browser/answer/95464  -->  
 
-[OpenDebugJSDemo]: https://microsoft-edge-chromium-devtools.glitch.me/debug-js/get-started.html "Demo öffnen | Glitch"  
+[OpenDebugJSDemo]: https://microsoft-edge-chromium-devtools.glitch.me/debug-js/get-started.html "Öffnen der Demo-| Glitch"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
-> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/javascript/index) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
+> Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
+> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/javascript/index) und wird von [Kayce Baskisch][KayceBasques] \(Technical Writer, Chrome DevTools \& Vorsteller\) verfasst.  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

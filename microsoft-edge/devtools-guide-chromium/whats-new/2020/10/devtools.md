@@ -3,16 +3,16 @@ description: Neue CSS-Raster-Debuggingtools, Webauthn-Tool, verschiebbare Tools 
 title: Neues in DevTools (Microsoft Edge 87)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/22/2020
+ms.date: 01/26/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: cf3a685a1a4e9a3f13d2401a6294058a71dd5104
-ms.sourcegitcommit: 12c30ad4ab2664d17c9b7e9d59d7a3cda60ff65c
+ms.openlocfilehash: 88e6678880172a7a494bcf73c74874aeb70c24b9
+ms.sourcegitcommit: e737277744dd25a7585c113eef22a2aa4d4c167f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "11313030"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "11325959"
 ---
 # Neues in DevTools (Microsoft Edge 87)  
 
@@ -35,11 +35,11 @@ Um Ihre Übersetzungsanforderungen zu erfüllen, konzentriert sich das Microsoft
 
 ## Verschieben von Tools zwischen oberen und unteren Panels  
 
-DevTools unterstützt jetzt das Verschieben von Tools zwischen dem oberen und unteren Bereich.  Passen Sie Ihre DevTools an, und verbessern Sie Ihre Produktivität, indem Sie eine beliebige Kombination von zwei Tools gleichzeitig anzeigen.  Beispielsweise können Sie die **Elemente und** **die** Quellentools gleichzeitig **** anzeigen \(durch Verschieben des Quellentools nach unten\).  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Issue [#1075732][CR1075732].  
+DevTools unterstützt jetzt das Verschieben von Tools zwischen dem oberen und unteren Bereich.  Passen Sie Ihre DevTools an, und verbessern Sie Ihre Produktivität, indem Sie eine beliebige Kombination von zwei Tools gleichzeitig anzeigen.  Zeigen Sie beispielsweise die **Elemente und** **die** Quellentools gleichzeitig **** an \(durch Verschieben des Quellentools nach unten\).  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Issue [#1075732][CR1075732].  
 
 :::row:::
    :::column span="":::
-      Um ein beliebiges oberstes Tool nach unten zu verschieben, zeigen Sie auf eine Registerkarte, öffnen Sie das Kontextmenü \(rechtsklick\), und wählen Sie **"Nach unten verschieben" aus.**  
+      Um ein beliebiges oberstes Tool nach unten zu verschieben, zeigen Sie auf eine Registerkarte, öffnen Sie das Kontextmenü \(rechtsklick\), und wählen Sie **"Nach unten" aus.**  
       
       :::image type="complex" source="../../media/2020/10/move-to-bottom.msft.png" alt-text="Nach unten bewegen" lightbox="../../media/2020/10/move-to-bottom.msft.png":::
          Nach unten bewegen  
@@ -60,7 +60,7 @@ DevTools unterstützt jetzt das Verschieben von Tools zwischen dem oberen und un
    Experimentelles Feature  
 :::image-end:::  
 
-Das **Tool "Netzwerkkonsole"** hat nun die Kompatibilität mit den [Postman v2.1-][PostmanSchemaJsonCollectionv210Index] und [OpenAPI v2-Schemas][SwaggerSpecificationV2] verbessert.  Um das Experiment zu aktivieren, navigieren Sie zu "Experimentelle Funktionen [aktivieren",][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] und aktivieren Sie das Kontrollkästchen neben **"Netzwerkkonsole aktivieren".**  Weitere Informationen zur Netzwerkkonsole **finden**Sie unter ["Enable Network Console Experimental".][DevtoolsExperimentalFeaturesEnableNetworkConsole]  Dieses Experiment unterstützt jetzt die folgenden Aktionen.  
+Das **Tool "Netzwerkkonsole"** hat nun die Kompatibilität mit den [Schemas Postman v2.1][PostmanSchemaJsonCollectionv210Index] und [OpenAPI v2][SwaggerSpecificationV2] verbessert.  Um das Experiment zu aktivieren, navigieren Sie zu "Experimentelle Funktionen [aktivieren",][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] und aktivieren Sie das Kontrollkästchen neben **"Netzwerkkonsole aktivieren".**  Weitere Informationen zur Netzwerkkonsole **finden**Sie unter ["Enable Network Console Experimental".][DevtoolsExperimentalFeaturesEnableNetworkConsole]  Dieses Experiment unterstützt jetzt die folgenden Aktionen.  
 
 *   Speichern und Exportieren von Sammlungen und Umgebungen.  
 *   Bearbeiten und Exportieren von Gruppen von Umgebungsvariablen im **Tool "Netzwerkkonsole".**  
@@ -88,12 +88,12 @@ Um Echtzeitupdates für dieses Feature im Open-Source-Projekt Chromium zu überp
 
 Die Microsoft Edge DevTools unterstützen jetzt die folgenden Features zum Überprüfen, Anzeigen und Debuggen Ihrer CSS-Raster.  
 
-*   Zeigen Sie eine vereinfachte Rasterüberlagerung mithilfe des Tools **"Überprüfen"** an, oder erhalten Sie detailliertere Informationen mit beständigen Überlagerungen.  
-*   Um beständige Rasterüberlagerungen zu aktivieren, wählen Sie **** das Rastersymbol neben einem Rastercontainerelement im Elementtool oder das Raster im **Layouttool** aus.  
+*   Zeigen Sie eine vereinfachte Rasterüberlagerung mit dem **Tool "Überprüfen"** an, oder erhalten Sie detailliertere Informationen mit beständigen Überlagerungen.  
+*   Um dauerhafte Rasterüberlagerungen zu aktivieren, wählen Sie das **** Rastersymbol neben einem Rastercontainerelement im Elementtool oder das Raster im **Layouttool** aus.  
 *   Sie können beständige Überlagerungen für mehrere Raster aktivieren.  
 *   Mit dem **neuen Layouttool** können Sie Rasterüberlagerungen einfach umschalten und das Erscheinungsbild und den Inhalt für jedes Layout konfigurieren.  
     
-Die Features sind standardmäßig aktiviert.  Weitere Informationen zu den Features finden Sie unter [CSS-Raster.][DevtoolsCssGrid]  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Issue [#1047356][CR1047356].  Darüber hinaus arbeitet das Microsoft Edge DevTools-Team mit dem Chrome DevTools-Team und der Chromium-Community zusammen, um DevTools neue Flexbox-Toolfunktionen hinzuzufügen.  Um Updates für Flexboxtools im Open-Source-Projekt Chromium zu erhalten, navigieren Sie zu Problem [#1136394][CR1136394].  
+Die Features sind standardmäßig aktiviert.  Weitere Informationen zu den Features finden Sie unter [CSS-Raster.][DevtoolsCssGrid]  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Issue [#1047356][CR1047356].  Darüber hinaus arbeitet das Microsoft Edge DevTools-Team mit dem Chrome DevTools-Team und der Chromium-Community zusammen, um DevTools neue Flexbox-Toolfunktionen hinzuzufügen.  Um Updates für flexbox-Tools im Open-Source-Projekt Chromium zu erhalten, navigieren Sie zu Issue [#1136394][CR1136394].  
 
 :::image type="complex" source="../../media/2020/10/grid-layout-pane.msft.png" alt-text="Layouttool mit Rastern" lightbox="../../media/2020/10/grid-layout-pane.msft.png":::
    **Layouttool** mit Rastern  
@@ -105,7 +105,7 @@ Die Features sind standardmäßig aktiviert.  Weitere Informationen zu den Featu
    Experimentelles Feature  
 :::image-end:::  
 
-Sie können jetzt die Tastenkombination für jede Aktion in devTools anpassen.  Seit Microsoft Edge Version 84 können Sie zwischen Visual Studio **Code** und **DevTools (Standard)-Voreinstellungen** für Tastenkombinationen [wählen.][DevtoolsCustomizeShortcuts]  Ab Microsoft Edge, Version 87, **** können Sie das Experiment "Tastenkombination-Editor aktivieren" aktivieren, um Tastenkombinationen [weiter anzupassen.][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]  
+Sie können nun die Tastenkombination für jede Aktion in devTools anpassen.  Seit Microsoft Edge Version 84 können Sie zwischen Visual Studio **Code** und **DevTools (Standard)-Voreinstellungen** für Tastenkombinationen [wählen.][DevtoolsCustomizeShortcuts]  Ab Microsoft Edge, Version 87, können Sie das Experiment "Tastenkombinationen **aktivieren"** aktivieren, um Tastenkombinationen [weiter anzupassen.][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]  
 
 Um das Experiment zu aktivieren, navigieren Sie zu "Experimentelle Funktionen [aktivieren",][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] und aktivieren Sie das Kontrollkästchen neben **"Tastenkombination-Editor aktivieren".**  Weitere Informationen zum Anpassen und Bearbeiten von Tastenkombinationen finden Sie unter [Experimentelles Feature „Tastenkombinations-Editor aktivieren“][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor].  Um Echtzeitupdates für dieses Feature im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Problem [#174309][CR174309].  
 
@@ -121,7 +121,7 @@ Die **Elemente für Visual Studio Code** und Network for Visual Studio **Code** 
 *   Bearbeiten von CSS  
 *   Überprüfen des Netzwerkdatenverkehrs  
 
-Starten Sie mit der Erweiterung Microsoft Edge, stellen Sie eine Verbindung mit einer vorhandenen Instanz des Browsers oder verwenden Sie direkt in Ihrem Editor einen browserlosen Browser.  Um probleme mit Ihrem Feedback zu dieser Erweiterung zu lösen, navigieren Sie zum [Microsoft Edge Developer Tools for Visual Studio Code][GithubMicrosoftVscodeEdgeDevtools] Repository auf GitHub.  
+Starten Sie mit der Erweiterung Microsoft Edge, stellen Sie eine Verbindung mit einer vorhandenen Instanz des Browsers oder verwenden Sie direkt in Ihrem Editor einen browserlosen Browser.  Um probleme mit Ihrem Feedback zu dieser Erweiterung zu beheben, navigieren Sie zum [Microsoft Edge Developer Tools for Visual Studio Code][GithubMicrosoftVscodeEdgeDevtools] Repository auf GitHub.  
 
 :::row:::
    :::column span="":::
@@ -142,15 +142,15 @@ Starten Sie mit der Erweiterung Microsoft Edge, stellen Sie eine Verbindung mit 
 
 ### Neues WebAuthn-Tool  
 
-In früheren Versionen von Microsoft Edge gab es keine systemeigene WebAuthn-Debugunterstützung.  Sie benötigten physische Authentatoren, um Ihre Webanwendung mit der [Webauthentifizierungs-API zu testen.][GithubW3cWebauthn]  Mit dem neuen **Tool WebAuthn** können Sie die folgenden Aktionen ausführen, ohne physische Authentatoren zu verwenden.
+In früheren Versionen von Microsoft Edge gab es keine systemeigene WebAuthn-Debugunterstützung.  Sie benötigten physische Authentatoren, um Ihre Webanwendung mit der [Webauthentifizierungs-API zu testen.][GithubW3cWebauthn]  Mit dem neuen **Tool WebAuthn** können Sie die folgenden Aktionen ohne physische Authentatoren ausführen.
 
 *   Emulieren von Authentatoren
 *   Anpassen von Attributen von Authentatoren
 *   Überprüfen der Zustände von Authentatoren
     
-Weitere Informationen zum **Feature WebAuthn** finden Sie unter Emulieren von Authentatoren und Debuggen von [WebAuthn in Microsoft Edge DevTools.][DevtoolsWebauthnIndex]  
+For more information about the **WebAuthn** feature, navigate to [Emulate authenticators and debug WebAuthn in Microsoft Edge DevTools][DevtoolsWebauthnIndex].  
 
-Sie können Authentatoren emulieren und die [Webauthentifizierungs-API][GithubW3cWebauthn] mit dem neuen [WebAuthn-Tool][DevtoolsWebauthnIndex] debuggen.  Um das **Tool WebAuthn zu** öffnen, wählen Sie das Symbol **DevTools** anpassen und steuern \( \) aus, > Weitere Tools `...` ****  >  **WebAuthn**.  Um Echtzeitupdates für dieses Feature im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Problem [#1034663][CR1034663].  
+Sie können Authentatoren emulieren und die [Webauthentifizierungs-API][GithubW3cWebauthn] mit dem neuen [WebAuthn-Tool][DevtoolsWebauthnIndex] debuggen.  Um das **Tool WebAuthn zu** öffnen, wählen Sie das Symbol **"DevTools** anpassen und steuern" \( \) aus, > Weitere Tools `...` ****  >  **WebAuthn**.  Um Echtzeitupdates für dieses Feature im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Problem [#1034663][CR1034663].  
 
 :::row:::
    :::column span="":::
@@ -173,13 +173,13 @@ Schalten Sie den **berechneten Bereich** im **Formatvorlagenbereich** um.  Der *
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="Öffnen des Bereichs Berechnete Seitenleiste" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
+      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="Öffnen des Bereichs "Berechnete Seitenleiste"" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
          Öffnen des **Bereichs "Berechnete Seitenleiste"**  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane-open.msft.png" alt-text="Berechneter Randbereich" lightbox="../../media/2020/10/computed-sidebar-pane-open.msft.png":::
-         **Berechneter Randbereich**  
+      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane-open.msft.png" alt-text="Berechneter Seitenleistenbereich" lightbox="../../media/2020/10/computed-sidebar-pane-open.msft.png":::
+         **Berechneter Seitenleistenbereich**  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -208,7 +208,7 @@ for (var i = 0; i < 1000; i+=7;){
 performance.mark('end');
 ```  
 
-Öffnen Sie dann das [Leistungstool,][DevtoolsGuideChromiumEvaluatePerformanceReference] und navigieren Sie zum Abschnitt **"Timings",** um Ihren JavaScript-Code zu notiert.  Die `performance.mark()` hinzugefügten Ereignisse werden nun in der Aufzeichnung angezeigt.  
+Öffnen Sie dann das [Leistungstool,][DevtoolsGuideChromiumEvaluatePerformanceReference] und navigieren Sie zum Abschnitt **"Timings",** um Ihren JavaScript-Code zu aufzeichnen.  Die `performance.mark()` hinzugefügten Ereignisse werden nun in der Aufzeichnung angezeigt.  
 
 :::image type="complex" source="../../media/2020/10/perf-mark.msft.png" alt-text="Performance.mark-Ereignisse" lightbox="../../media/2020/10/perf-mark.msft.png":::
    `performance.mark` Ereignisse  
@@ -216,7 +216,7 @@ performance.mark('end');
 
 ### Neue Ressourcentyp- und URL-Filter im Netzwerktool  
 
-Verwenden Sie die neuen `resource-type` und `url` Schlüsselwörter im **Netzwerktool,** um Netzwerkanforderungen zu filtern.  Verwenden Sie dies beispielsweise, `resource-type:image` um sich auf die Netzwerkanforderungen zu konzentrieren, bei der es sich um Bilder handelt.  
+Verwenden Sie die neuen `resource-type` Und `url` Schlüsselwörter im **Netzwerktool,** um Netzwerkanforderungen zu filtern.  Verwenden Sie dies beispielsweise, `resource-type:image` um sich auf die Netzwerkanforderungen zu konzentrieren, bei der es sich um Bilder handelt.  
 
 :::image type="complex" source="../../media/2020/10/network-resource-type-filter.msft.png" alt-text="Ressourcentypfilter" lightbox="../../media/2020/10/network-resource-type-filter.msft.png":::
    Ressourcentypfilter  
@@ -228,15 +228,15 @@ Um speziellere Schlüsselwörter wie und `resource-type` `url` zu ermitteln, nav
 
 #### Anzeigen der COEP- und DERSRG-Berichterstellung für Endpunkte  
 
-Sehen Sie sich den Endpunkt "Cross-Origin Embedder Policy \(COEP\") und den Endpunkt "Cross-Origin Opener Policy \(ZUR\) " `reporting to` **Security & Isolation"** an.  Die [Berichterstellungs-API][MdnReportingApi] definiert einen neuen HTTP-Header, mit dem Sie die Serverendpunkte für den Browser zum Senden von Warnungen und `Report-To` Fehlern angeben können.  Um Echtzeitupdates für dieses Feature im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Problem [#1051466][CR1051466].  
+Zeigen Sie den Endpunkt "Cross-Origin Embedder Policy \(COEP\") und den Endpunkt "Cross-Origin Opener Policy \(EINBETTUNG\)" im Abschnitt `reporting to` **"Sicherheit & Isolation"** an.  Die [Berichterstellungs-API][MdnReportingApi] definiert einen neuen HTTP-Header, mit dem Sie die Serverendpunkte für den Browser zum Senden von Warnungen und `Report-To` Fehlern angeben können.  Um Echtzeitupdates für dieses Feature im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Problem [#1051466][CR1051466].  
 
 :::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png" alt-text="Die Berichterstellung an den Endpunkt" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png":::
    Der `reporting to` Endpunkt  
 :::image-end:::  
 
-#### Anzeigen des Berichtsmodus "COEP" und "DESGOE"  
+#### Anzeigen des berichts only-Modus für COEP und DESTG  
 
-DevTools zeigen jetzt die Bezeichnung für COEP und HOC an, `report-only` die auf den Modus festgelegt `report-only` sind.  Um Echtzeitupdates für dieses Feature im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Problem [#1051466][CR1051466].  
+DevTools zeigen jetzt die `report-only` Bezeichnung für COEP und DEV ANF an, die auf den Modus `report-only` festgelegt sind.  Um Echtzeitupdates für dieses Feature im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Problem [#1051466][CR1051466].  
 
 :::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png" alt-text="Bezeichnung für den Nur-Bericht-Modus" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png":::
    Die `report-only` Modusbezeichnung  
@@ -252,7 +252,7 @@ Das **Tool "CSS-Übersicht"** zeigt nun eine Liste der Elemente auf Der Seite an
 
 [Demo zu barrierefreien Farben in CSS (Übersicht)][GlitchCssOverviewAccessibleColorsDemo]  
 
-Um dieses Experiment **** zu aktivieren, aktivieren Sie unter "Einstellungsexperimente"  >  **** das **Kontrollkästchen "CSS-Übersicht".**  Wenn Sie eine Liste der Elemente anzeigen möchten, bei deren Farbkontrast ein Problem mit dem Farbkontrast besteht, wählen Sie bei Problemen mit dem **Kontrast** **Text aus.**  Um das Element im Tool **"Elemente" zu** öffnen, wählen Sie ein Element in der Liste aus.  Zur Behebung von Kontrastproblemen stellen die Microsoft Edge DevTools [automatisch Farbvorschläge zur Verfügung.][DevtoolsWhatsnew200208DevtoolsAccessibleColorSuggestionStylesPane]  Um Echtzeitupdates für dieses Feature im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Problem [#1120316][CR1120316].  
+Um dieses Experiment **** zu aktivieren, aktivieren Sie unter "Einstellungsexperimente"  >  **** das **Kontrollkästchen "CSS-Übersicht".**  Wenn Sie eine Liste der Elemente anzeigen möchten, bei deren Farbkontrast ein Problem mit dem Farbkontrast besteht, wählen Sie bei Problemen mit dem **Kontrast** **Text aus.**  Um das Element im **Elementtool zu** öffnen, wählen Sie ein Element in der Liste aus.  Zur Behebung von Kontrastproblemen stellen die Microsoft Edge DevTools [automatisch Farbvorschläge zur Verfügung.][DevtoolsWhatsnew200208DevtoolsAccessibleColorSuggestionStylesPane]  Um Echtzeitupdates für dieses Feature im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Problem [#1120316][CR1120316].  
 
 :::image type="complex" source="../../media/2020/10/css-overview.msft.png" alt-text="Probleme mit geringem Farbkontrast" lightbox="../../media/2020/10/css-overview.msft.png":::
    Probleme mit geringem Farbkontrast  
@@ -275,24 +275,24 @@ Wenn Sie windows- oder macOS verwenden, sollten Sie die [Microsoft Edge-Vorschau
 [DevtoolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index "Emulieren von mobilen Geräten in Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsGuideChromiumConsoleUtilitiesRecentlySelectedElementJavascriptObject]:  https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/console/utilities#recently-selected-element-or-javascript-object "Zuletzt ausgewähltes Element oder JavaScript-Objekt – Console Utilities API Reference | Microsoft Docs"  
 [DevtoolsCustomizeShortcuts]: /microsoft-edge/devtools-guide-chromium/customize/shortcuts "Anpassen von Tastenkombinationen in der Microsoft Edge DevTools-| Microsoft Docs"  
-[DevtoolsGuideChromiumEvaluatePerformanceReference]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference "Leistungsanalysereferenz | Microsoft Docs"  
+[DevtoolsGuideChromiumEvaluatePerformanceReference]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference "Referenz zur Leistungsanalyse | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode]: /microsoft-edge/devtools-guide-chromium/experimental-features#emulation-support-dual-screen-mode "Emulation: Unterstützung des Dualbildschirmmodus – Experimentelle Features | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesEnableExperimentalApis]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-experimental-apis "Aktivieren experimenteller APIs – experimentelle | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-keyboard-shortcut-editor "Aktivieren des Editors für Tastenkombinationen – Experimentelle | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-new-css-grid-debugging-features "Emulation: Unterstützung des Dualbildschirmmodus – Experimentelle Features | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesEnableNetworkConsole]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-network-console "Aktivieren der Netzwerkkonsole – Experimentelle | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesEnableSourceOrderViewer]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-source-order-viewer "Aktivieren der Quellreihenfolgeanzeige – experimentelle Features | Microsoft Docs"
-[DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices]: /microsoft-edge/devtools-guide-chromium/experimental-features#testing-on-foldable-and-dual-screen-devices "Testen auf ausklappbaren und dualen Bildschirmgeräten – Experimentelle Features | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices]: /microsoft-edge/devtools-guide-chromium/experimental-features#testing-on-foldable-and-dual-screen-devices "Testen auf ausklappbaren und Dualbildschirmgeräten – Experimentelle Features | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features#turn-on-experimental-features "Aktivieren von experimentellen Features – experimentelle Features | Microsoft Docs"  
 [DevtoolsConsoleApiTable]: /microsoft-edge/devtools-guide-chromium/console/api#table "Tabelle – Konsolen-API-| Microsoft Docs"  
-[DevtoolsCoverageIndex]: /microsoft-edge/devtools-guide-chromium/coverage/index "Suchen Sie nicht verwendeten JavaScript- und CSS-Code auf der Registerkarte "Abdeckung" in Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCoverageIndex]: /microsoft-edge/devtools-guide-chromium/coverage/index "Suchen Sie nicht verwendeten JavaScript- und CSS-Code über die Registerkarte "Abdeckung" in Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCssGrid]:  /microsoft-edge/devtools-guide-chromium/css/grid "Überprüfen der CSS-Raster-| Microsoft Docs"  
 [DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "Drawer – Anpassen von Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCustomizeIndexSettings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "Einstellungen – Anpassen von Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "Analysieren der Renderingleistung mit der Registerkarte "Rendern" – Referenz zu | Microsoft Docs"  
 [DevtoolsMediaIndex]: /microsoft-edge/devtools-guide-chromium/media/index "Anzeigen und Debuggen von Media Player-| Microsoft Docs"  
 [DevtoolsNetworkReferenceFilterRequestsProperties]: /microsoft-edge/devtools-guide-chromium/network/reference#filter-requests-by-properties  "Filtern von Anforderungen nach Eigenschaften – Netzwerkanalysereferenz | Microsoft Docs"  
-[DevtoolsWebauthnIndex]: /microsoft-edge/devtools-guide-chromium/webauthn/index "Emulieren von Authenatoren und Debuggen von WebAuthn in Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsWebauthnIndex]: /microsoft-edge/devtools-guide-chromium/webauthn/index "Emulieren von Authentatoren und Debuggen von WebAuthn in Microsoft Edge DevTools | Microsoft Docs"  
 
 [MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge Preview Channels"  
 
@@ -306,13 +306,13 @@ Wenn Sie windows- oder macOS verwenden, sollten Sie die [Microsoft Edge-Vorschau
 [CR772558]: https://crbug.com/772558 "DevTools: Aktualisieren auf die neueste Version von | Chromium-Bugs"  
 [CR1034663]: https://crbug.com/1034663 "Erstellen sie ein Front-End für die WebAuthn Testing-API| Chromium-Bugs"  
 [CR1047356]: https://crbug.com/1047356 "CSS Grid/Flexbox/Table tooling | Chromium-Bugs"  
-[CR1051466]: https://crbug.com/1051466 "Unterstützen von DEBUGGING/COEP in DevTools | Chromium-Bugs"  
+[CR1051466]: https://crbug.com/1051466 "Unterstützen von DEBUGGING/COEP in DevTools-| Chromium-Bugs"  
 [CR1073899]: https://crbug.com/1073899 "Registerkarte für berechnete Stile wird im reaktionsschnellen Modus | Chromium-Bugs"  
 [CR1075732]: https://crbug.com/1075732 "DevTools-Personalisierung – Wechselregisterkarten | Chromium-Bugs"  
 [CR1084673]: https://crbug.com/1084673 "DevTools: Verbessern Sie die Art und Weise, wie wir benutzerdefinierte CSS-Eigenschaften (auch bekannt) präsentieren. CSS-Variablen) und deren Werte | Chromium-Bugs"  
 [CR1093687]: https://crbug.com/1093687 "Erstellen eines Tools zum Erstellen und Wiedergeben synthetischer Netzwerkanforderungen | Chromium-Bugs"  
 [CR1096230]: https://crbug.com/1096230 "Gruppieren von CSS-Eigenschaften nach Kategorien im Bereich "Berechnete Formatvorlagen" | Chromium-Bugs"  
-[CR1104188]: https://crbug.com/1104188 "Bei der Suche nach vollständigen URL-Adressen findet die Netzwerktoolsuche keine | Chromium-Bugs"  
+[CR1104188]: https://crbug.com/1104188 "Die Netzwerktoolsuche findet bei der Suche nach vollständigen URL-Adressen keine | Chromium-Bugs"  
 [CR1106251]: https://crbug.com/1106251 "☂ DevTools: Verbessern der Registerkarte "Berechnete Formatvorlagen" | Chromium-Bugs"  
 [CR1120316]: https://crbug.com/1120316 "Hervorheben des schlechten Kontrasts unter "CSS-Übersicht" > Farben | Chromium Bugs"  
 [CR1121141]: https://crbug.com/1121141 "Filtern nach Ressourcentyp in Netzwerkprotokollen | Chromium-Bugs"  
@@ -346,4 +346,4 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[JecelynYeen]: https://developers.google.com/web/resources/contributors/jecelynyeen
+[JecelynYeen]: https://developers.google.com/web/resources/contributors/jecelynyeen  
