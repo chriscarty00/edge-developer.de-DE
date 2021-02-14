@@ -3,7 +3,7 @@ description: Whitepaper zum Microsoft Edge-Datenschutz
 title: Whitepaper zum Microsoft Edge-Datenschutz
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/02/2020
+ms.date: 02/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Datenschutz, Whitepaper, Vertrauen
@@ -11,12 +11,12 @@ ms.localizationpriority: high
 no-loc:
 - Cast
 - Google Cast
-ms.openlocfilehash: e34228f7b094fbf11320da7d9523f04d2a550aae
-ms.sourcegitcommit: 5f10022bd1da3477660be40c559411fadf59d8f0
+ms.openlocfilehash: f62fae09c5d52dd2bdb67f0bbceb0ee394c97ea3
+ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "11297737"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "11327666"
 ---
 # Whitepaper zum Microsoft Edge-Datenschutz  
 
@@ -227,7 +227,7 @@ Unter `edge://settings/importData` können Sie jederzeit Daten aus einem anderen
 
 Sie können Microsoft Edge auf Plattformen wie Windows und macOS herunterladen und installieren.  Microsoft Edge verwendet den Updatedienst, um Ihre Version von Microsoft Edge auf dem neuesten Stand und sicher zu halten.  
 
-Wenn Sie Microsoft Edge herunterladen und installieren, werden während des Installationsvorgangs Informationen zu Ihrem Gerät, z. B. der Release-Kanal, grundlegende Hardwareinformationen, Update-IDs, eine für Ihr Gerät einmalige ID sowie eine für Ihren Browser eindeutige zurücksetzbare ID, an Microsoft gesendet.  Die IP-Adresse des Geräts wird an den Updatedienst gesendet, für zusätzlichen Datenschutz wird die letzte Dezimalzahl jedoch entfernt.  Während jeder Browsersitzung wird ein neues, zufällig generiertes Token erstellt, um aktualisierte Versionen von Microsoft Edge zu installieren.  Das Token ist nicht mit persönlichen Informationen verknüpft und wird nur für den Installations- und Updatevorgang sowie zur Verbesserung des Updatediensts verwendet.  
+Wenn Sie Microsoft Edge herunterladen und installieren oder aktualisieren, werden während des Installations- oder Aktualisierungsvorgangs Informationen zu Ihrem Gerät, z.B. der Release-Kanal, grundlegende Hardwareinformationen, Update-IDs, eine für Ihr Gerät einmalige ID sowie eine für Ihren Browser eindeutige zurücksetzbare ID, an Microsoft gesendet.  Die IP-Adresse des Geräts wird an den Updatedienst gesendet, für zusätzlichen Datenschutz wird die letzte Dezimalzahl jedoch entfernt.  Während jeder Browsersitzung wird ein neues, zufällig generiertes Token erstellt, um aktualisierte Versionen von Microsoft Edge zu installieren.  Das Token ist nicht mit persönlichen Informationen verknüpft und wird nur für den Installations- und Updatevorgang sowie zur Verbesserung des Updatediensts verwendet.  
 
 Microsoft Edge sendet dem Microsoft Edge-Updatedienst Pingsignale zum Fortschritt von Installation und Aktualisierung.  Wenn eine Installation oder ein Update fehlschlägt und Absturzberichte aktiviert sind, wird ein entsprechendes Protokoll erstellt und an Microsoft gesendet.  Weitere Informationen zum Senden von Absturzberichten an Microsoft finden Sie im Abschnitt [Abstürze](#crashes).  Microsoft sammelt Informationen darüber, wie Sie Microsoft Edge heruntergeladen haben, über den Erfolg der Installation und eventuelle Deinstallationen, um den Erfolg von Microsoft Edge-Downloads besser zu verstehen.  
 
@@ -268,7 +268,7 @@ Microsoft Edge bietet eine ansprechende und anwenderorientierte "Neuer Tab"-Seit
 
 Um die Ladezeiten der "Neuer Tab"-Seite zu verbessern, kann die Microsoft "Neuer Tab"-Seite im Hintergrund geladen werden, um sie zu beschleunigen. Die geladenen Inhalte können Cookies enthalten, falls Sie Cookies zulassen. Um das Laden der Microsoft "Neuer Tab"-Seite im Hintergrund zu deaktivieren, gehen Sie zu `edge://settings/newTabPage` und deaktivieren Sie die Einstellung ** für das Vorladen der "Neuer Tab"-Seite, um die Erfahrung zu beschleunigen**. 
 
-:::image type="complex" source="./media/n-t-p1.png" alt-text="Neuer Tab -Seite" lightbox="./media/n-t-p1.png":::
+:::image type="complex" source="./media/n-t-p1.png" alt-text=""Neuer Tab"-Seite" lightbox="./media/n-t-p1.png":::
    "Neuer Tab"-Seite  
 :::image-end:::  
 
@@ -387,7 +387,9 @@ Wenn Sie Coupons anwenden, werden Cookies auf Ihrem Gerät gespeichert, um den C
    Shopping und Coupons  
 :::image-end:::  
 
-Damit Sie den besten Preis beim Online-Shopping mit Sammlungen finden, bestimmt Microsoft Edge lokal, ob es sich bei der Seite oder dem Objekt der Sammlung, das Sie sich ansehen, um eine Produktdetailseite handelt.  Wenn Sie sich eine Produktdetailseite ansehen, sendet Microsoft Edge die Details des Produkts an den Shopping-Service, einschließlich der URL ohne persönliche Informationen. Außerdem senden wir den Produktpreis, das Produktbild, den Produktnamen, die Bewertungen und die Bewertungen sowie Informationen zu Microsoft Edge und ihrer Betriebssystemversion an den Dienst.  Diese Daten werden über HTTPS mit einem nach dem Zufallsprinzip generierten Bezeichner gesendet.  Der Microsoft Shopping-Service gibt Preise von anderen Einzelhändlern für das gleiche Produkt zurück.  
+Damit Sie den besten Preis beim Online-Shopping finden, bestimmt Microsoft Edge lokal, ob es sich bei der Seite oder dem Objekt der Sammlung, das Sie sich ansehen, um eine Produktdetailseite handelt.  Wenn Sie sich eine Produktdetailseite ansehen, sendet Microsoft Edge die Details des Produkts an den Shopping-Service, einschließlich der URL ohne persönliche Informationen. Außerdem senden wir den Produktpreis, das Produktbild, den Produktnamen, die Bewertungen und die Bewertungen sowie Informationen zu Microsoft Edge und ihrer Betriebssystemversion an den Dienst.  Diese Daten werden über HTTPS mit einem nach dem Zufallsprinzip generierten Bezeichner gesendet.  Der Microsoft Shopping-Service gibt Preise von anderen Einzelhändlern für das gleiche Produkt zurück.  
+
+Wenn Sie eine Shopping-Domäne besuchen und Sie ein bestehender Bing Rebates-Benutzer sind, sendet Microsoft Edge die Domäne zusammen mit Cookies an den Microsoft Shopping-Service, um Ihr Bing Rebates-Profil und Cashback-Angebote für die Domäne abzurufen. Wenn Sie sich dafür entscheiden, den Cashback zu aktivieren, sendet Microsoft Edge Ihre URL an den Microsoft Shopping-Service, um eine Partner-URL zu erhalten. Cookies können auf Ihrem Gerät gespeichert werden, um den Rabattanbieter korrekt zuzuordnen. 
 
 Der Shopping-Service ist standardmäßig für alle Benutzer aktiviert.  Um die Shopping-Einstellung in Microsoft Edge zu ändern, navigieren Sie zu `edge://settings/privacy`, und deaktivieren Sie dann **Zeit und Geld sparen mit Shopping in Microsoft Edge**.  Beim InPrivate-Browsen wird die Shopping-Einstellung des Profils verwendet, das die InPrivate-Sitzung gestartet hat.  
 
@@ -445,9 +447,9 @@ Um Tippfehler in der URL in der Adressleiste zu beheben, die zu einem Websitefeh
 
 ## Sync  
 
-Wenn Sie sich mit einem Microsoft-Konto bei Microsoft Edge anmelden, können Sie die Browserdaten über alle Ihre angemeldeten Versionen von Microsoft Edge hinweg synchronisieren.  Sie können Ihren Browserverlauf, Favoriten, Einstellungen, Formular Füll Daten \ (Adressen und mehr \), Kennwörter, Erweiterungen und Sammlungen synchronisieren.  Sie müssen das Aktivieren der Synchronisierung in Microsoft Edge zulassen, und die zu synchronisierenden Datentypen können einzeln aktiviert oder deaktiviert werden.  Zu den "Favoriten" zählen alle Tabs, die Sie in der älteren Version von Microsoft Edge für später gespeichert haben. Diese werden zusammen mit den restlichen Favoriten synchronisiert.  Gelöschte oder geänderte Favoriten oder andere Daten aus einer Microsoft Edge-Version, bei der Sie angemeldet sind, werden mit allen anderen Versionen von Microsoft Edge synchronisiert, in denen die Synchronisierung aktiviert ist und bei denen Sie angemeldet sind.  Um die Konfigurationen für die Synchronisierung zu verwalten, wechseln Sie zu `edge://settings/profiles/sync`.  Ihre Synchronisierungseinstellungen werden u. U. von Ihrer Organisation verwaltet.
+Wenn Sie sich mit einem Microsoft-Konto bei Microsoft Edge anmelden, können Sie die Browserdaten über alle Ihre angemeldeten Versionen von Microsoft Edge hinweg synchronisieren.  Sie können Ihren Browserverlauf, Favoriten, Einstellungen, Formular Füll Daten \(Adressen und mehr\), Kennwörter, Erweiterungen geöffnete Registerkarten und Sammlungen synchronisieren.  Sie müssen das Aktivieren der Synchronisierung in Microsoft Edge zulassen, und die zu synchronisierenden Datentypen können einzeln aktiviert oder deaktiviert werden.  Zu den "Favoriten" zählen alle Tabs, die Sie in der älteren Version von Microsoft Edge für später gespeichert haben. Diese werden zusammen mit den restlichen Favoriten synchronisiert.  Gelöschte oder geänderte Favoriten oder andere Daten aus einer Microsoft Edge-Version, bei der Sie angemeldet sind, werden mit allen anderen Versionen von Microsoft Edge synchronisiert, in denen die Synchronisierung aktiviert ist und bei denen Sie angemeldet sind.  Um die Konfigurationen für die Synchronisierung zu verwalten, wechseln Sie zu `edge://settings/profiles/sync`.  Ihre Synchronisierungseinstellungen werden u. U. von Ihrer Organisation verwaltet.
 
-:::image type="complex" source="./media/sync.png" alt-text="Bild der Synchronisierungseinstellung auf aktiviert festgelegt" lightbox="./media/sync.png":::
+:::image type="complex" source="./media/sync.png" alt-text="Bild der Synchronisierungseinstellung auf "aktiviert" festgelegt" lightbox="./media/sync.png":::
    Synchronisierungseinstellung ist aktiviert
 :::image-end:::  
 
