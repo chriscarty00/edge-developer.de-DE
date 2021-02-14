@@ -1,67 +1,72 @@
 ---
-description: Der Vorgang zum Aktualisieren der Erweiterung auf dem Microsoft Store.
-title: Aktualisieren eines Erweiterungs Eintrags
+description: Das Aktualisieren oder Entfernen von Erweiterungen aus dem Microsoft Edge-Add-Ons-Speicher
+title: Aktualisieren eines Erweiterungseintrags
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020
+ms.date: 02/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge-Chromium, Erweiterungen-Entwicklung, Browser-Erweiterungen, Addons, Partner Center, Entwickler
-ms.openlocfilehash: 0d4512331b4f9542921d2063c908b5e9d4251074
-ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
+keywords: Edge-Chromium, Erweiterungenentwicklung, Browsererweiterungen, Add-Ons, Partner Center, Entwickler
+ms.openlocfilehash: 930d0f835e89451d09743a20ac4097c596ea5c30
+ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015680"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "11327484"
 ---
-# Aktualisieren eines Erweiterungs Eintrags  
+# Aktualisieren oder Entfernen der Erweiterung  
 
-Aktualisieren eines vorhandenen Eintrags im Microsoft Edge Addons-Katalog \ (Microsoft Edge Addons \).  Sie haben die Möglichkeit, eine veröffentlichte Erweiterung zu einem beliebigen Zeitpunkt zu ändern.  Während Sie die Aktualisierung durchführen, müssen Sie die gesamte Erweiterung nicht aktualisieren, um nur wenige Änderungen vorzunehmen, beispielsweise die Beschreibung oder das Logo zu aktualisieren.  Wenn Sie aber Ihr Erweiterungspaket aktualisieren, denken Sie daran, die Versionsnummer jedes Mal zu erhöhen.  
+Sie können eine übermittelte Erweiterung aktualisieren oder einen veröffentlichten Erweiterungseintrag jederzeit aus dem Microsoft Edge-Add-Ons-Store entfernen.  
 
-## Aktualisieren einer bereits veröffentlichten Erweiterung  
-
-Führen Sie die folgenden Schritte aus, um Ihren Eintrag zu aktualisieren:  
-
-1.  Wechseln Sie zu Ihrem [entwicklerdashboard][MicrosoftPartnerCenter].  Klicken Sie auf der Seite Übersicht auf den Eintrag, den Sie aktualisieren möchten.  Dadurch werden die Angaben zum Übermittlungsformular eingeblendet, die Sie während der Veröffentlichung ausgefüllt haben.  
-1.  Nehmen Sie die gewünschten Änderungen an dem Paket, der Beschreibung, den Grafikobjekten oder anderen Einstellungen vor.  Wenn Sie die Paketdatei aktualisieren, stellen Sie sicher, dass die Version im Manifest höher als die vorherige Paketversion ist.
-1.  Nachdem Sie die Änderungen vorgenommen haben, klicken Sie auf Speichern und dann auf veröffentlichen.
-1.  Besuchen Sie das [Partner Center][MicrosoftPartnerCenter] -entwicklerdashboard, um zu sehen, in welchem Status Ihr Eintrag geändert wurde `In the store` `In the store.  Certification in progress` .  
+## Aktualisieren Ihrer Erweiterung im Microsoft Edge-Add-Ons-Store  
 
 > [!NOTE]
-> Die Dauer des Update Veröffentlichungsprozesses reicht von einigen Stunden bis zu wenigen Tagen.  
+> Die Dauer des Zertifizierungsprozesses für ein Update einer Erweiterung kann zwischen einigen Stunden und einigen Tagen dauern.  
 
-Sobald die `Status` Spalte angezeigt wird `In the store` , ist Ihr Erweiterungs Update in Microsoft Edge-Addons verfügbar.  
+### Aktualisieren einer vorhandenen Erweiterung im Microsoft Edge-Add-Ons-Store  
 
-## Aktualisieren einer Erweiterung während des Zertifizierungs Schritts  
+Führen Sie die folgenden Schritte aus, um Ihre Erweiterung im Store zu aktualisieren.  
 
-Sie können Ihre Verlängerungs Übermittlung bearbeiten und aktualisieren, nachdem Sie sich vor der Eingabe des Veröffentlichungs Schritts eingereicht haben.  Sie können den Status Ihrer Durchwahl auf der Übersichtsseite der **Erweiterung** überprüfen, die Ihrem Eintrag im [Partner Center][MicrosoftPartnerCenter]zugeordnet ist.  
+1.  Navigieren Sie zu Ihrem [Entwicklerdashboard,][MicrosoftPartnerCenter] und wählen Sie die Erweiterung aus, die Sie aktualisieren möchten.  
+1.  Aktualisieren Sie entweder das Erweiterungspaket oder die Metadaten der Erweiterung.  Wenn Sie das Erweiterungspaket aktualisieren, stellen Sie sicher, dass Sie die Version in der Manifestdatei erhöhen.  
+1.  Nachdem Sie die Änderungen vorgenommen haben, **wählen**Sie "Veröffentlichen speichern" aus, um ihren Erweiterungseintrag zu  >  **** aktualisieren, und starten Sie den Zertifizierungsprozess.  
+1.  Nachdem die Spalte angezeigt wurde, ist Ihr Erweiterungsupdate `Status` `In the store` im Microsoft Edge-Add-Ons-Store verfügbar.  
+    
+### Aktualisieren Der Erweiterung während des Zertifizierungsschritts  
 
-Führen Sie die folgenden Schritte aus, um ihre Übermittlung zu bearbeiten:  
+Während sich Ihre Erweiterung noch in der Zertifizierungsphase befindet und bevor sie im Microsoft Edge-Add-Ons-Store veröffentlicht wird, können Sie sie aktualisieren. Wenn die Erweiterung den Zertifizierungsprozess nicht erfolgreich ist, müssen Sie die Erweiterung möglicherweise auch aktualisieren.    
 
-1.  Wechseln Sie zu Ihrem [entwicklerdashboard][MicrosoftPartnerCenter].  Klicken Sie auf der Seite **Übersicht** auf den Eintrag, den Sie aktualisieren möchten.  Dadurch werden die Angaben zum Übermittlungsformular eingeblendet, die Sie während der Veröffentlichung ausgefüllt haben.  
-1.  Wechseln Sie mit der linken Navigationsleiste wie in der Abbildung gezeigt zur **Übersicht über die Erweiterung** .  Abbrechen der aktuellen Übermittlung durch Klicken auf die Schaltfläche " **Übermittlung abbrechen** ".  
-1.  Wechseln Sie zu anderer Abschnitt, und nehmen Sie die gewünschten Änderungen an dem Paket, der Beschreibung, den Grafikobjekten oder anderen Einstellungen vor.  Wenn Sie die Paketdatei aktualisieren, stellen Sie sicher, dass die Version im Manifest höher als die vorherige Paketversion ist.  
-1.  Nachdem Sie die Änderungen vorgenommen haben, klicken Sie auf **Speichern** und dann auf **veröffentlichen**.  
+Um den Status Ihrer Erweiterung zu überprüfen, navigieren Sie zu dem Dashboard, das Ihrem Eintrag im [Partner Center zugeordnet ist.][MicrosoftPartnerCenter]  
 
+Führen Sie die folgenden Schritte aus, um Ihre Übermittlung zu bearbeiten.  
+
+1.  Navigieren Sie zu Ihrem [Entwicklerdashboard,][MicrosoftPartnerCenter] und wählen Sie die Erweiterung aus, die Sie aktualisieren möchten.  Die Informationen, die Sie während der vorherigen Übermittlung ausgefüllt haben, werden angezeigt.  
+1.  Verwenden Sie **die** linke Navigationsleiste, um den Abschnitt "Erweiterungsübersicht" zu öffnen.  Wenn Sie die aktuelle Übermittlung abbrechen möchten, wählen Sie **"Übermittlung abbrechen" aus.**  
+1.  Wechseln Sie zu anderen Abschnitten, und aktualisieren Sie entweder das Erweiterungspaket oder die Metadaten der Erweiterung.  Wenn Sie das Erweiterungspaket aktualisieren, stellen Sie sicher, dass Sie die Version in der Manifestdatei so erhöhen, dass sie den Änderungen seit der vorherigen Paketversion entsprechen.  
+1.  Nachdem Sie Änderungen vorgenommen haben, wählen Sie **"Veröffentlichen**  >  **speichern" aus.**  
+    
 > [!IMPORTANT]
-> Dieser Vorgang beendet und entfernt ihre aktuelle Übermittlung aus unserer Zertifizierungspipeline, und eine neue Überprüfung beginnt mit der neuesten Übermittlung.  
+> Der Prozess wird beendet und entfernt Ihre aktuelle Übermittlung aus der Zertifizierungspipeline für Microsoft Edge-Erweiterungen, und eine neue Überprüfung beginnt mit der neuesten Übermittlung.  
 
-> [!NOTE]
-> Die Dauer des Update Veröffentlichungsprozesses reicht von einigen Stunden bis zu wenigen Tagen.  
+### Aktualisieren Der Erweiterung, nachdem die Zertifizierung fehlgeschlagen ist  
 
-Sobald die `Status` Spalte angezeigt wird `In the store` , ist Ihr Erweiterungs Update in Microsoft Edge-Addons verfügbar.  
+Nachdem der Zertifizierungsprozess der Erweiterung fehlgeschlagen ist, müssen Sie die Erweiterung aktualisieren und die Erweiterung erneut übermitteln, die das Feedback enthält.  
 
-## Entfernen der Erweiterung von Microsoft Edge-Addons  
+Führen Sie zum Bearbeiten der Erweiterung die folgenden Schritte aus.  
 
-Gehen Sie wie folgt vor, um Ihre Erweiterung von Microsoft Edge-Addons zu entfernen:  
+1.  Navigieren Sie zu Ihrem [Entwicklerdashboard,][MicrosoftPartnerCenter] und wählen Sie die Erweiterung aus, bei der der Zertifizierungsprozess fehlgeschlagen ist.  
+1.  Aktualisieren Sie entweder das Erweiterungspaket oder die Metadaten, die das Feedback aus dem Zertifizierungsprozess enthalten.  Wenn Sie das Erweiterungspaket aktualisieren, stellen Sie sicher, dass Sie die Version in der Manifestdatei erhöhen.  
+1.  Nachdem Sie Änderungen vorgenommen haben, wählen Sie **"Veröffentlichen**  >  **speichern" aus.**  
+    
+## Entfernen von Erweiterungen aus dem Microsoft Edge-Add-Ons-Speicher  
 
-1.  Wechseln Sie zu Ihrem [entwicklerdashboard][MicrosoftPartnerCenter].  Klicken Sie auf der Seite **Übersicht** auf den Eintrag, den Sie entfernen möchten.  
-1.  Öffnen Sie die Seite mit der **Erweiterungs Übersicht** Ihres Eintrags.  
-1.  Klicken Sie auf **Veröffentlichung**aufheben.  Dadurch wird der Eintrag von Microsoft Edge Addons nicht veröffentlicht.  
+Führen Sie die folgenden Schritte aus, um Ihre Erweiterung aus dem Microsoft Edge-Add-Ons-Speicher zu entfernen.  
 
-Mit diesen Schritten wird die Erweiterung von Microsoft Edge Addons entfernt, was bedeutet, dass neue Benutzer ihre Erweiterung nicht finden oder installieren können, aber Benutzer, die die Erweiterung bereits installiert haben, Sie möglicherweise weiterhin verwenden.  
-
-<!-- image links -->  
+1.  Navigieren Sie zu Ihrem [Entwicklerdashboard.][MicrosoftPartnerCenter]  Wählen Sie auf der Dashboardseite den zu entfernende Eintrag aus.  
+1.  Choose **Extension Overview** on your listing.  
+1.  Wählen **Sie "Aufheben der Veröffentlichung"** aus, um den Eintrag aus dem Microsoft Edge-Add-Ons-Store zu entfernen.  
+    
+Ihre Erweiterung wurde nun aus dem Microsoft Edge-Add-Ons-Store entfernt.  Benutzer, die Ihre Erweiterung bereits installiert haben, verwenden sie möglicherweise weiterhin, aber neue Benutzer finden sie nicht.  
 
 <!-- links -->  
 

@@ -1,50 +1,45 @@
 ---
-description: Erweiterungen Enterprise-Dokumentation für Edge (Chrom)-Erweiterungen.
-title: Hosten und Aktualisieren
+description: Hosten und Veröffentlichen von Erweiterungen im Unternehmen für Microsoft Edge (Chromium).
+title: Veröffentlichen und Aktualisieren von Erweiterungen im Microsoft Edge-Add-Ons-Store
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020
+ms.date: 02/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge-Chromium, Erweiterungen-Entwicklung, Browser-Erweiterungen, Addons, Partner Center, Entwickler
-ms.openlocfilehash: d918aec12e56daf66d13488d360a454d736031e8
-ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
+keywords: Edge-Chromium, Erweiterungenentwicklung, Browsererweiterungen, Addons, Partner Center, Entwickler
+ms.openlocfilehash: 91fdd5c2f625890653085e8999da3e513b072348
+ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015702"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "11327687"
 ---
-# Web Store-Hosting und-Aktualisierung  
+# Veröffentlichen und Aktualisieren von Erweiterungen im Microsoft Edge-Add-Ons-Store  
 
-Die meisten Erweiterungen werden im [Microsoft Edge Insider Addons-Katalog (Microsoft Edge Insider Addons \)][MicrosoftStoreExtensions] gehostet, um Benutzer am besten vor böswilligen Erweiterungen zu schützen.  
+Die meisten Erweiterungen werden im [Microsoft Edge-Add-Ons-Store][MicrosoftMicrosoftedgeInsiderAddonsEdgeextensions] veröffentlicht, um Benutzer vor bösartigen Erweiterungen zu schützen.  
 
-## Hosting  
+## Veröffentlichungsoptionen für Erweiterungen  
 
-Alle Erweiterungen werden als spezielle ZIP-Datei mit dem Suffix ". Wagon" an die Benutzer verteilt.  Erweiterungen, die in Microsoft Edge-Addons gehostet werden, werden als ZIP-Dateien hochgeladen. Der Veröffentlichungsprozess wandelt die ZIP-Datei automatisch in eine ".".  
+Alle Erweiterungen werden als spezielle Archivdatei \( \) mit einem Suffix `.zip` an Die Benutzer `.crx` verteilt.  Im Microsoft Edge-Add-Ons-Speicher veröffentlichte Erweiterungen werden als Dateien `.zip` hochgeladen.  Beim Veröffentlichungsprozess wird die Datei `.zip` automatisch in eine Datei `.crx` konvertiert.  
 
-Es gibt zwei Ausnahmen von der Hosting-Regel für Microsoft Edge-Add-ons:  
+In den folgenden beiden Szenarien müssen Sie Ihre Erweiterung nicht im Microsoft Edge-Add-Ons-Store veröffentlichen.  
 
-1.  Erweiterungen, die über die Unternehmensrichtlinie verteilt werden.  
-1.  Degepackte Erweiterungs Verzeichnisse von einem lokalen Computer im Entwicklermodus.  
+*   Erweiterungen, die mithilfe der Unternehmensrichtlinie verteilt werden.  
+*   Verwenden von entpackten Erweiterungsverzeichnissen auf einem lokalen Computer, wenn sich Microsoft Edge im Entwicklermodus befindet.  
 
-## Aktualisieren  
+## Updates für Erweiterungen
 
-Der Microsoft Edge-Browser überprüft in regelmäßigen Abständen nach neuen Versionen installierter Erweiterungen und Updates ohne Benutzereingriff.  
-
-> [!NOTE]
-> Es werden Schritte zum Aktualisieren einer Erweiterung auf Microsoft Edge-Addons geplant, die hinzugefügt werden sollen.  
-
-<!-- image links -->
+Der Microsoft Edge Browser sucht regelmäßig nach neuen Versionen installierter Erweiterungen und aktualisiert diese ohne Benutzereingriff.  
 
 <!-- links -->  
 
-[MicrosoftStoreExtensions]: https://microsoftedge.microsoft.com/insider-addons/category/EdgeExtensions "Erweiterungen – Microsoft Edge Insider-Addons"  
+[MicrosoftMicrosoftedgeInsiderAddonsEdgeextensions]: https://microsoftedge.microsoft.com/insider-addons/category/EdgeExtensions "Erweiterungen – Microsoft Edge Insider Addons | Microsoft"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
-> Die ursprüngliche Seite finden Sie [hier](https://developer.chrome.com/extensions/hosting).  
+> Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
+> Die ursprüngliche Seite finden Sie [hier.](https://developer.chrome.com/extensions/hosting)  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

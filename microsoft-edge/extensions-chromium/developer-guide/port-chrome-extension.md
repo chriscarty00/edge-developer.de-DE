@@ -1,49 +1,50 @@
 ---
-description: Prozess zum Portieren der Chrome-Erweiterung an Microsoft Edge.
-title: Port Chrome-Erweiterung zu Microsoft Edge
+description: Prozess des Portierens der Chrome-Erweiterung zu Microsoft Edge.
+title: Portierung der Chrome-Erweiterung zu Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/25/2020
+ms.date: 02/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge-Chromium, Erweiterungen-Entwicklung, Browser-Erweiterungen, Addons, Partner Center, Entwickler
-ms.openlocfilehash: 0f767107bfb259476d1ab35d081fb9bb05c81b46
-ms.sourcegitcommit: e79503c6c53ea9b7de58f8cf1532b5c82116a6eb
+keywords: Edge-Chromium, Erweiterungenentwicklung, Browsererweiterungen, Addons, Partner Center, Entwickler
+ms.openlocfilehash: 64a92927b9fe7658562f87f326bb9ac148991031
+ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "11195159"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "11327694"
 ---
-# Portieren der Erweiterung  
+# Portierung der Erweiterung  
 
-Mit Microsoft Edge können Sie Ihre Chrome-Erweiterung mit minimalen Änderungen portieren.  Die von Chrome unterstützten Erweiterungs-APIs und manifestschlüssel sind mit Microsoft Edge Code kompatibel.  Wenn Sie eine Liste der von Microsoft Edge unterstützten APIs finden möchten, navigieren Sie zu [API-Support][ExtensionApiSupport].  
+Mit Microsoft Edge können Sie Ihre Chrome-Erweiterung mit minimalen Änderungen portierung.  Die von Chrome unterstützten Erweiterungs-APIs und Manifestschlüssel sind codekompatibel mit Microsoft Edge.  Eine Liste der von Microsoft Edge unterstützten APIs finden Sie unter [API-Unterstützung.][ExtensionApiSupport]  
 
-Führen Sie die folgenden Schritte aus, um Ihre Chrome-Erweiterung zu portieren.  
+Führen Sie die folgenden Schritte aus, um Ihre Chrome-Erweiterung zu porten.  
 
-1.  Überprüfen Sie die in ihren Erweiterungen verwendeten Chrome-Erweiterungs-APIs mit der Liste der [unterstützten APIs][ExtensionApiSupport] für Microsoft-Edge-Erweiterungen.  
+1.  Überprüfen Sie die in Ihren Erweiterungen verwendeten Chrome-Erweiterungs-APIs mit der Liste der von Microsoft Edge-Erweiterungen [unterstützten APIs.][ExtensionApiSupport]  
     
     > [!NOTE]
-    > Wenn Ihre Erweiterung APIs verwendet, die von Microsoft Edge nicht unterstützt werden, kann Sie nicht direkt portiert werden.  
+    > Wenn Ihre Erweiterung APIs verwendet, die von Microsoft Edge nicht unterstützt werden, wird sie möglicherweise nicht direkt portierung.  
     
-1.  Wenn der Name `Chrome` entweder im Namen oder in der Beschreibung der Erweiterung verwendet wird, geben Sie die Erweiterung für neu ein `Microsoft Edge` .  Dieser Schritt ist erforderlich, um den Zertifizierungsprozess durchlaufen zu lassen.  
-1.  Testen Sie Ihre Erweiterung, um zu überprüfen, ob Sie in Microsoft Edge funktioniert, indem Sie [Ihre Erweiterung Sideloading][ExtensionsGettingStartedExtensionSideloading].  
-1.  Wenn Sie Probleme haben, können Sie Ihre Erweiterungen in Microsoft Edge mithilfe des devtools Debuggen oder [sich mit uns in Verbindung setzen][mailtoExtensionMicrosoft].  
-1.  Befolgen Sie die [Veröffentlichungsrichtlinien][ExtensionsPublishPublishExtension] , um Ihre Erweiterung im Microsoft Edge-Add-on-Store zu veröffentlichen.  
+1.  Legen Sie in der Manifestdatei das Feld `update_URL` auf `https://edge.microsoft.com/extensionwebstorebase/v1/crx` .  Der Wert verweist auf die Datei Ihrer Erweiterung im `.crx` Microsoft Edge-Add-Ons-Store und ermöglicht Es Microsoft Edge, nach Erweiterungsupdates zu suchen.  
+1.  Wenn die Erweiterung entweder im Namen oder in der Beschreibung ihrer Erweiterung verwendet wird, müssen Sie die Erweiterung `Chrome` mit einer neuen Bezeichnung `Microsoft Edge` benennen.  Zum Bestehen des Zertifizierungsprozesses sind die Änderungen erforderlich.  
+1.  Testen Sie Ihre Erweiterung, um zu überprüfen, ob sie in Microsoft Edge funktioniert, indem [Sie Ihre Erweiterung querladen.][ExtensionsGettingStartedExtensionSideloading]  
+1.  Wenn Probleme auftreten, können Sie Ihre Erweiterungen in Microsoft Edge mithilfe der DevTools debuggen oder [uns kontaktieren.][mailtoExtensionMicrosoft]  
+1.  Befolgen Sie [die Veröffentlichungsrichtlinien,][ExtensionsPublishPublishExtension] um Ihre Erweiterung im Microsoft Edge-Add-Ons-Store zu veröffentlichen.  
     
     > [!NOTE]
-    > Wenn die Erweiterung Nachrichten mit einer systemeigenen App mit API austauscht `chrome.runtime.connectNative` , stellen Sie sicher, dass Sie `allowed_origins` `extension://[Microsoft-Catalog-extensionID]` in der Manifestdatei des systemeigenen Messaging-Hosts auf festzulegen.  Dadurch kann die APP die Erweiterung identifizieren.  
+    > Wenn Ihre Erweiterung Nachrichten mit einer systemeigenen App austauscht, stellen Sie sicher, dass Sie dies in Der manifestdatei des systemeigenen `chrome.runtime.connectNative` `allowed_origins` `extension://[Microsoft-Catalog-extensionID]` Messaginghosts festlegen.  Mit dieser Einstellung kann die App Ihre Erweiterung identifizieren.  
     
 ## Nächste Schritte  
 
-Sobald das Erweiterungspaket im Microsoft Edge-Add-ons-Store veröffentlicht werden kann, [Erstellen Sie ein Entwicklerkonto][ExtensionsPublishCreateDevAccount] , und [veröffentlichen Sie Ihre Erweiterung][ExtensionsPublishPublishExtension].  
+Nachdem Ihr Erweiterungspaket bereit für die Veröffentlichung im Microsoft Edge-Add-Ons-Store [ist,][ExtensionsPublishCreateDevAccount] erstellen Sie ein Entwicklerkonto, und veröffentlichen Sie [Ihre Erweiterung.][ExtensionsPublishPublishExtension]  
 
 <!-- links -->  
 
-[ExtensionApiSupport]: ./api-support.md "API-Unterstützung | Microsoft docs"  
-[ExtensionsGettingStartedExtensionSideloading]: ../getting-started/extension-sideloading.md "Querladen-Erweiterung | Microsoft docs"  
-[ExtensionsPublishCreateDevAccount]: ../publish/create-dev-account.md "Entwickler Registrierung | Microsoft docs"  
-[ExtensionsPublishPublishExtension]: ../publish/publish-extension.md "Veröffentlichen Ihrer Erweiterung | Microsoft docs"  
+[ExtensionApiSupport]: ./api-support.md "API-Support-| Microsoft Docs"  
+[ExtensionsGettingStartedExtensionSideloading]: ../getting-started/extension-sideloading.md "Querladen der Erweiterungs-| Microsoft Docs"  
+[ExtensionsPublishCreateDevAccount]: ../publish/create-dev-account.md "Entwicklerregistrierungs-| Microsoft Docs"  
+[ExtensionsPublishPublishExtension]: ../publish/publish-extension.md "Veröffentlichen Der Erweiterungs-| Microsoft Docs"  
 
-[ChromeDeveloperWebStorePayments]: https://developer.chrome.com/webstore/one_time_payments "Einmalige Zahlungen | Chrome-Entwickler"  
+[ChromeDeveloperWebStorePayments]: https://developer.chrome.com/webstore/one_time_payments "Einmalzahlung | Chrome Developer"  
 
 [mailtoExtensionMicrosoft]: mailto:ext_dev_support@microsoft.com "ext_dev_support@microsoft.com"  

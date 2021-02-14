@@ -8,14 +8,14 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 12/10/2020
+  ms.date: 02/04/2021
   ms.localizationpriority: high
-  ms.openlocfilehash: 787e80a0db6754d9d2046084f601294aa68a62a5
-  ms.sourcegitcommit: 5f10022bd1da3477660be40c559411fadf59d8f0
+  ms.openlocfilehash: 150dcdf1a5d4f5ac06a4d0b105f89a05907d7ddb
+  ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 01/23/2021
-  ms.locfileid: "11297723"
+  ms.lasthandoff: 02/13/2021
+  ms.locfileid: "11327630"
 highlightedContent:
   items:
   - title: Microsoft Edge (offizieller Stable Channel)
@@ -152,7 +152,7 @@ additionalContent:
       links:
       - text: Schrittweiser Veröffentlichungsprozess
         url: /microsoft-edge/extensions-chromium/publish/publish-extension
-      - text: Öffnen eines Entwicklerkontos
+      - text: Entwicklerkonto öffnen
         url: /microsoft-edge/extensions-chromium/publish/create-dev-account
       - text: Aktualisieren der Erweiterungsliste
         url: /microsoft-edge/extensions-chromium/publish/update
@@ -162,7 +162,7 @@ additionalContent:
       links:
       - text: Sicherheitsrichtlinie für Inhalte
         url: /microsoft-edge/extensions-chromium/store-policies/csp
-      - text: Entwicklerrichtlinien für den Katalog für Microsoft Edge-Add-Ons
+      - text: Microsoft Edge-Add-Ons-Katalog – Entwicklerrichtlinien
         url: /microsoft-edge/extensions-chromium/store-policies/developer-policies
     - title: Progressive Web Apps
       links:
@@ -195,10 +195,10 @@ additionalContent:
     - summary: Holen Sie sich Tipps und Antworten von Communityexperten zu Microsoft Q&A
       title: Communitysupport für Microsoft Q&A
       url: /answers/topics/ms-edge.html
-    - summary: Microsoft ist bestrebt, sicherzustellen, dass Ihre Apps auf Microsoft Edge funktionieren.  Wenn Probleme mit Ihren Geschäfts-Apps oder -Websites auf der neuesten Version von Edge auftreten, hilft Microsoft Ihnen, Ihre Apps und Websites ohne zusätzliche Kosten zu beheben.  Informationen zu Den Berechtigungsanforderungen finden Sie unter Angebotsdetails.
+    - summary: Microsoft ist bestrebt, sicherzustellen, dass Ihre Apps auf Microsoft Edge funktionieren.  Wenn Probleme mit Ihren Geschäftlichen Apps oder Websites auf der neuesten Version von Edge auftreten, hilft Microsoft Ihnen, Ihre Apps und Websites ohne zusätzliche Kosten zu beheben.  Informationen zu Den Berechtigungsanforderungen finden Sie unter Angebotsdetails.
       title: Kostenlose Hilfe mit App Assure erhalten
       url: https://fasttrack.microsoft.com/portal
-    - summary: Wenn Ihr Unternehmen sofortigen technischen Support für Microsoft Edge benötigt, steht Ihnen der 1:1-Support von Microsoft mithilfe einer Vielzahl von Plänen zur Verfügung, um Ihnen zu helfen, Ihren erforderlichen Support zu erhalten.
+    - summary: Wenn Ihr Unternehmen sofortigen technischen Support für Microsoft Edge benötigt, steht Ihnen der 1:1-Support von Microsoft mit einer Vielzahl von Plänen zur Verfügung, die Ihnen dabei helfen, Ihren erforderlichen Support zu erhalten.
       title: Microsoft Support for Business
       url: https://support.microsoft.com/supportforbusiness/productselection?sapId=a77ee9b7-b6b6-aa08-d7b9-887ebe228207
     - summary: Hilfreiche Supportressourcen für Benutzer sind verfügbar.

@@ -1,45 +1,43 @@
 ---
-description: Edge Developer Ada-Nachtrag
-title: Ada-Nachtrag
+description: Edge developer ADA Addendum
+title: ADA-Add-In
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020
+ms.date: 02/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge-Chromium, Erweiterungen-Entwicklung, Browser-Erweiterungen, Addons, Partner Center, Entwickler
-ms.openlocfilehash: 40147cd32f2dcd2c0069d34b5751305819834a22
-ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
+keywords: Edge-Chromium, Erweiterungenentwicklung, Browsererweiterungen, Addons, Partner Center, Entwickler
+ms.openlocfilehash: 8f6df89fc48b3492d0e27183c90d29f79861b064
+ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015667"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "11327676"
 ---
-# Nachtrag zur App-Entwickler Vereinbarung für Benutzer von Microsoft Edge-Programmen  
+# App Developer Agreement Addendum für Benutzer des Microsoft Edge-Programms  
 
-## Abbildung G: Allgemeine Geschäftsbedingungen für Microsoft Edge-Erweiterungen  
+## Exponent G: Geschäftsbedingungen für Microsoft Edge Extensions  
 
-Diese Allgemeinen Geschäftsbedingungen für Microsoft Edge Extensions \ ("Extensions Addendum" \) sind eine Ergänzung zu den allgemeinen Geschäftsbedingungen des App-Entwickler Vertrags, dessen aktuelle Version Sie finden können [https://go.microsoft.com/fwlink/p/?LinkID=221922][ExtensionsMicrosoftEdgeAddonsCatalogDeveloperPolicies] .  Dieser Nachtrag gilt, wenn Sie Microsoft Edge-Erweiterungen (jeweils eine "Erweiterung" \) über Microsoft Edge Addons übermittelt haben oder verfügbar machen.  Sofern nicht ausdrücklich durch diesen Extension-Nachtrag geändert, gelten alle Bestimmungen und Bedingungen in der App-Entwickler Vereinbarung, die in diesem Dokument enthalten ist, auf das Angebot und den Vertrieb Ihrer Microsoft Edge-Erweiterungen.  Sofern durch diesen Nachtrag ausdrücklich geändert, gelten die allgemeinen Geschäftsbedingungen, die für eine "Anwendung" oder "App" im Rahmen des App-Entwickler Vertrags gelten, auf eine Erweiterung, wie Sie in diesem Addendum definiert ist, und alle Verweise auf "Store" oder "Microsoft Store" im Rahmen der App-Entwickler Vereinbarung gelten für Microsoft Edge-Addons, wie es in diesem Addendum definiert ist.  
+Diese Geschäftsbedingungen für Microsoft Edge Extensions \(das "Extensions Addendum"\) ist eine Ergänzung zu den Geschäftsbedingungen der Vereinbarung für App-Entwickler, deren aktuelle Version unter zu finden [https://go.microsoft.com/fwlink/p/?LinkID=221922][ExtensionsMicrosoftEdgeAddonsCatalogDeveloperPolicies] ist.  Diese Ergänzung gilt, wenn Sie Microsoft Edge Extensions \(jede, eine "Erweiterung"\) über Microsoft Edge-Add-Ons übermittelt haben oder verfügbar machen.  Mit Ausnahme der ausdrücklichen Änderung durch diesen Erweiterungs-Add-In gelten alle Bedingungen des App-Entwicklervertrags, der in diesem Dokument enthalten ist, für das Angebot und die Verteilung Ihrer Microsoft Edge-Erweiterungen.  Sofern nicht ausdrücklich durch diesen Add-In-Add-In geändert, gelten die Geschäftsbedingungen, die für eine "Anwendung" oder "App" gemäß dem Vereinbarung für App-Entwickler gelten, für eine Erweiterung gemäß der Definition in diesem Add-In, und alle Verweise auf "Store" oder "Microsoft Store" gemäß der Vereinbarung für App-Entwickler gelten für Microsoft Edge-Add-Ons gemäß der Definition in diesem Add-In.  
 
-1.  Definitionen.  Groß-/Kleinschreibung, die hier nicht definiert sind, werden die in der App-Entwickler Vereinbarung angegebenen Bedeutungen aufweisen.  
+1.  DEFINITIONEN.  Großbuchstaben, die in diesem Dokument nicht definiert sind, haben die Bedeutung, die in der Vereinbarung für App-Entwickler enthalten ist.  
 
-    1.  "Zertifizierungsanforderungen" bezieht sich auf die technischen, funktionellen, inhaltlichen und sonstigen Richtlinienanforderungen, die von Microsoft \ (at [https://go.microsoft.com/fwlink/?linkid=2104222][ExtensionsMicrosoftEdgeAddonsCatalogDeveloperPolicies] oder einem anderen von Microsoft festgelegten Ort) für Erweiterungen bereitgestellt werden, die über Microsoft Edge Addons angeboten werden.  
+    1.  "Zertifizierungsanforderungen" bezeichnet die technischen, funktionalen, Inhalts- und anderen Richtlinienanforderungen, die von Microsoft \(at oder einem anderen von Microsoft\) angegebenen Speicherort\(en\) für Erweiterungen bereitgestellt werden, die über [https://go.microsoft.com/fwlink/?linkid=2104222][ExtensionsMicrosoftEdgeAddonsCatalogDeveloperPolicies] Microsoft Edge-Add-Ons angeboten werden.  
 
-    1.  "Microsoft Edge Addons" bezeichnet eine Microsoft-eigene oder betriebene Plattform, die jedoch benannt ist, über die Microsoft Edge-Erweiterungen angeboten oder von Kunden erworben werden können.
+    1.  "Microsoft Edge-Add-Ons" bezeichnet eine im Besitz von Microsoft oder betriebene Plattform, die auch benannt ist, über die Microsoft Edge Extensions kunden angeboten oder erworben werden können.
 
-1.  Übermittlung, Zertifizierung und Verteilung von apps.  Abschnitt 3 des App-Entwickler Vertrags wird hiermit gelöscht und durch folgenden Wortlaut ersetzt:  
+1.  ÜBERMITTLUNG, ZERTIFIZIERUNG UND VERTEILUNG VON APPS.  Abschnitt 3 der Vereinbarung für App-Entwickler wird gelöscht und durch Folgendes ersetzt:  
 
-    1.  Übermittlung.  Sie müssen jeder Erweiterung, die Sie über Microsoft Edge-Add-ons zur Verfügung stellen möchten, einschließlich aller Updates für die einzelnen Erweiterungen, eine Übermittlung an Microsoft übermitteln.  Sie sind allein verantwortlich und haftbar für die von Ihnen eingereichten Erweiterungen.  Sie sind für die Unterstützung Ihrer.  Microsoft behält \ (oder zerstöre \) alle Kopien der Erweiterung und anderer von Ihnen übermittelten Materialien bei.  Microsoft gibt die Kopien nicht an Sie zurück. Erstellen Sie daher eigene Sicherungskopien.  
+    1.  Übermittlung.  Sie müssen jede Erweiterung, die Sie über Microsoft Edge-Add-Ons zur Verfügung stellen möchten, an Microsoft übermitteln, einschließlich aller Updates für jede Erweiterung.  Sie sind für die von Ihnen übermittelten Erweiterungen allein verantwortlich und verantwortlich.  Sie sind für die Unterstützung Ihrer Erweiterung verantwortlich.  Microsoft behält \(oder zerstört\) alle Kopien der Erweiterung und anderer Materialien, die Sie übermitteln.  Microsoft gibt die Kopien nicht an Sie zurück. Erstellen Sie daher eigene Sicherungskopien.  
 
-    1.  Updates für Erweiterungen.  Sie können Updates für Zertifizierungs-und Verteilungserweiterungen über Microsoft Edge Addons einreichen.  Für diese Updates gelten sämtliche Anforderungen dieser Vereinbarung.  Sie wissen, dass Endbenutzer Updates automatisch empfangen können.  Sie dürfen ihrer Erweiterung keine neuen Funktionen über ein Update hinzufügen, das die schriftliche Zustimmung des Kunden erfordert, ohne vorher dem Kunden eine Benachrichtigung zu senden und etwaige Zustimmungen zu erhalten, die gesetzlich in den Märkten erforderlich sind, auf denen Sie Ihre Erweiterung verteilen möchten.  
+    1.  Updates für Erweiterungen.  Sie können Updates für Erweiterungen zur Zertifizierung und Verteilung über Microsoft Edge-Add-Ons übermitteln.  Für diese Updates gelten sämtliche Anforderungen dieser Vereinbarung.  Sie wissen, dass Endbenutzer updates möglicherweise automatisch erhalten.  Sie dürfen Ihrer Erweiterung keine neue Funktionalität über ein Update hinzufügen, das eine schriftliche Zustimmung des Kunden erfordert, ohne dem Kunden eine Benachrichtigung zu machen und jegliche Zustimmungen einzuholen, die möglicherweise gesetzlich in den Märkten erforderlich sind, in denen Sie Ihre Durchwahl vertreiben möchten.  
 
-    1.  Erstzertifizierung.  Microsoft testet die einzelnen Erweiterungen \ (einschließlich aller Updates \), die Sie für die Einhaltung dieser Vereinbarung übermitteln, \ (mit den anwendbaren Zertifizierungsanforderungen \) und anderen für Sie verfügbaren Richtlinien (sofern vorhanden).  Microsoft stellt keine Erweiterung über Microsoft Edge Addons zur Verfügung, es sei denn, dass die Erweiterung zertifiziert ist.  
+    1.  Erstzertifizierung.  Microsoft teste jede Erweiterung \(einschließlich aller Updates\), die Sie übermitteln, um die Einhaltung dieser Vereinbarung \(einschließlich der anwendbaren Zertifizierungsanforderungen\) und anderer Richtlinien, die Ihnen zur Verfügung gestellt werden \(sofern vorhanden\) zu erfüllen.  Microsoft stellt keine Erweiterung über Microsoft Edge-Add-Ons zur Verfügung, es sei denn, die Erweiterung ist zertifiziert.  
 
-1.  positiver Rückgang ist nicht erforderlich.  Ungeachtet des Abschnitts 4 \ (i \) der App-Entwickler Vereinbarung sind Sie nicht verpflichtet, die Teilnahme an Microsoft Store for Business und Microsoft Store für Bildungseinrichtungen zu verzögern.  Ihre Erweiterung steht nur über die Microsoft Edge-Add-ons zur Verfügung.  
+1.  BESTÄTIGUNGSVERZING NICHT ERFORDERLICH.  Ungeachtet von Abschnitt 4\(i\) des Vereinbarung für App-Entwickler müssen Sie die Teilnahme am Microsoft Store für Unternehmen und im Microsoft Store für Bildungseinrichtungen nicht bestätigen.  Ihre Erweiterung ist nur über die Microsoft Edge-Add-Ons verfügbar.  
 
-1.  App-Preise, Zahlungen, Transaktionen und steuern.  Abschnitt 6 des App-Entwickler Vertrags gilt nicht für Erweiterungen und wird hiermit vollständig gelöscht.  
-
-<!-- image links  -->  
+1.  APP-PREISE, ZAHLUNGEN, TRANSAKTIONEN UND STEUERN.  Abschnitt 6 der Vereinbarung für App-Entwickler gilt nicht für Erweiterungen und wird vollständig gelöscht.  
 
 <!-- links -->  
 
-[ExtensionsMicrosoftEdgeAddonsCatalogDeveloperPolicies]: developer-policies.md "Microsoft Edge Addons-Katalog-Entwicklerrichtlinien"  
+[ExtensionsMicrosoftEdgeAddonsCatalogDeveloperPolicies]: ./developer-policies.md "Microsoft Edge Add-Ons Catalog Developer Policies | Microsoft Docs"  

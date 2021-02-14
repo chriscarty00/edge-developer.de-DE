@@ -3,51 +3,51 @@ description: Einführung in die Microsoft Edge-Entwicklungstools (Chromium)
 title: Microsoft Edge (Chromium)-Entwicklungstools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/09/2020
+ms.date: 02/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: fcae8f0974244e87ba781b94221cb5d8a1bb3dce
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 05b757b7cb399815d072b9d6038873cfd118a59d
+ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11233604"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "11327491"
 ---
-# Microsoft Edge (Chrom) – Übersicht über Entwickler Tools  
+# Übersicht über Microsoft Edge (Chromium)-Entwicklertools  
 
-Microsoft Edge hat das Chrom-Open-Source-Projekt angenommen, um eine bessere Web-Kompatibilität und geringere Fragmentierung unterschiedlicher zugrundeliegender Webplattformen zu schaffen.  Diese Änderungen sollte es Ihnen einfacher machen, Ihre Websites in Microsoft Edge zu erstellen und zu testen, und sicherzustellen, dass sie wie erwartet funktionieren, wenn sie in einem anderen Browser auf Chromium-Basis \(wie Google Chrome, Vivaldi, Opera, oder Brave\) angezeigt werden.  
+Microsoft Edge hat das Open-Source-Projekt Chromium übernommen.  Der neue Microsoft Edge-Browser sorgt für eine bessere Webkompatibilität und verringert die Fragmentierung verschiedener Webplattformen.  Die Änderung sollte ihnen das Erstellen und Testen Ihrer Webseiten in Microsoft Edge erleichtern.  Mit dem neuen Microsoft Edge sollten Ihre Webseiten wie erwartet funktionieren, wenn sie in anderen Chromium-basierten Browsern geöffnet werden.  Chromium-basierte Browser umfassen Google Chrome, Chromeldi, Opera, Chrome und das neue Microsoft Edge.  
 
-Da das Web immer stärker auf immer mehr Gerätetypen genutzt wird, sind die Komplexität und der Mehraufwand beim Testen von Websites in die Höhe geschossen. Webentwickler müssen \(besonders in kleinen Unternehmen\) so viele verschiedene Systeme testen, dass es beinahe unmöglich ist sicherzustellen, dass Websites auf allen Gerätetypen und in allen Browsern gut funktionieren.  Da nun Microsoft Edge auf Chromium basiert, hat das Microsoft Edge-Team die Matrix vereinfacht, indem die Microsoft Edge-Webplattform an andere Browsern auf Chromium-Basis angepasst wurde. Außerdem wird jetzt sowohl im Browser als auch in den weiteren Entwicklungstools, die Sie täglich benutzen \(wie Visual Studio Code\)., erstklassige Benutzerfreundlichkeit geboten.  
+Die Nutzung des Webs hat sich in einem ständig wachsenden Array von Gerätetypen vergrößert.  Die Komplexität und der Aufwand für das Testen von Webseiten sind schnell größer geworden.  Webentwickler wie Sie müssen mit vielen verschiedenen Systemen testen.  Um sicherzustellen, dass Ihre Webseiten auf allen Gerätetypen und Browsern gut funktionieren, kann es fast unmöglich sein, insbesondere, wenn Sie in einem kleinen Unternehmen arbeiten.  Der neue Microsoft Edge basiert jetzt auf Chromium.  Das Microsoft Edge-Team hat die Matrix vereinfacht, indem die Microsoft Edge-Webplattform an anderen Chromium-basierten Browsern ausgerichtet wurde.  Das neue Microsoft Edge bietet eine erstklassige Entwicklungsumgebung.  Die Erfahrung wird innerhalb des Browsers und zusammen mit den anderen Entwicklertools, die Sie täglich verwenden, wie z. B. Visual Studio Code.  
 
-Wenn Sie Microsoft Edge ausprobieren und bisher hauptsächlich in einem Browser auf Chromium-Basis entwickelt haben, sollten Sie sich wie zuhause fühlen.  Die Microsoft Edge \(Chromium\)-Entwicklungstools funktionieren auf die gleiche Weise wie die Entwicklungstools, die Sie bereits kennen und verwenden.  Weitere Informationen finden Sie unter [Neuerungen in der Microsoft Edge (Chrom)-devtools][DevtoolsGuideChromiumWhatsNewIndex].  
+Als Chromium-basierter Browserentwickler sollten Sie sich mit dem neuen Microsoft Edge-Browser wohl fühlen.  Die Microsoft Edge \(Chromium\) DevTools funktionieren genau wie die Entwicklertools, die Sie bereits kennen und verwenden.  Die Microsoft Edge \(Chromium\)-Entwicklertools werden häufig als Microsoft Edge \(Chromium\) DevTools oder DevTools bezeichnet.  Weitere Informationen finden Sie in den [Microsoft Edge (Chromium)-DevTools.][DevtoolsGuideChromiumWhatsNewIndex]  
 
 :::image type="complex" source="./media/devtools.png" alt-text="Microsoft Edge (Chromium)-Entwicklungstools (DevTools)" lightbox="./media/devtools.png":::
    Microsoft Edge (Chromium)-Entwicklungstools (DevTools)  
 :::image-end:::  
 
-Wenn Sie den neuen Microsoft Edge Auschecken und zuvor in Microsoft Edge \ (EdgeHTML \) entwickelt haben, verfügen Sie nun über einige hervorragende neue Tools, die es einfacher und schneller machen, ihre Websites in Microsoft Edge zu erstellen und zu testen.  
+Wenn Sie zuvor für Microsoft Edge \(EdgeHTML\) entwickelt haben und das neue Microsoft Edge auswerten, bietet es jetzt großartige neue Tools zum einfacheren und schnelleren Erstellen und Testen Ihrer Webseiten.  
 
 ## Entwicklungstools öffnen  
 
-Falls Sie die Entwicklungstools noch nie verwendet haben: Bei den Microsoft Edge-Entwicklungstools handelt es sich um eine Reihe von Tools, die direkt in den Microsoft Edge-Browser integriert sind.  Mit dem devtools können Sie die folgenden Aktionen ausführen:  
+Die Microsoft Edge DevTools sind eine Reihe von Tools, die direkt in den Microsoft Edge Browser integrierten sind.  Mit devTools können Sie die folgenden Aufgaben alle direkt im Browser ausführen.  
 
-*   Ihre HTML-Website überprüfen und ändern  
-*   CSS bearbeiten und sofort in der Vorschau sehen, wie Ihre Website gerendert wird  
-*   Alle `console.log()` Anweisungen aus Ihrem Front-End-Code in JavaScript anzeigen  
-*   Ihr Skript debuggen, indem Haltepunkte festgelegt und diese zeilenweise durchlaufen werden  
+*   Überprüfen und Vornehmen von Änderungen an Ihrer HTML-Webseite  
+*   Bearbeiten sie CSS, und sehen Sie sofort eine Vorschau, wie Ihre Webseite gerendert wird  
+*   Überprüfen Sie alle `console.log()` Anweisungen aus Ihrem Front-End-JavaScript-Code.  
+*   Debuggen Des Skripts, Festlegen von Haltepunkten und Schrittweises Durchschritten des Codes zeile für Zeile  
     
-Alle direkt im Browser.  Das sind nur einige Beispiele für die Features, die Ihnen in den Entwicklungstools zur Verfügung stehen, damit Sie einfacher und schneller Ihre Websites in Microsoft Edge erstellen und testen können.  
+Weitere Beispiele für die Features, die DevTools bereitstellen, um das Erstellen und Testen Ihrer Webseite in Microsoft Edge zu vereinfachen und zu beschleunigen.  
 
 So öffnen Sie die Entwicklungstools  
 
 *   Auswählen `F12` 
-*   `Ctrl` + `Shift` + `I` Unter Windows/Linux auswählen \ ( `Command` + `Option` + `I` unter macOS \)  
+*   Wählen `Ctrl` + `Shift` + `I` Sie \(Windows/Linux\) oder `Command` + `Option` + `I` \(macOS\) aus.  
     
-Wenn Sie den HTML-oder CSS-Code für ein Element auf Ihrer Website anzeigen möchten, klicken Sie mit der rechten Maustaste auf das Element, und wählen Sie **Prüfen** aus, um in den Bereich „Elemente“ zu wechseln.  Sie können auch `Ctrl`+`Shift`+`C` auf Windows/Linux \(`Command`+`Option`+`C` auf macOS\) drücken, um die Entwicklungstools im **Modus „Element prüfen“** zu öffnen. So können Sie ein Element auf der Website auswählen und den HTML- und CSS-Code im Bereich **Elemente** ansehen.  
+Wenn Sie den HTML- oder CSS-Code für ein Element auf **** Ihrer Website anzeigen möchten, klicken Sie mit der rechten Maustaste auf das Element, und wählen Sie "Überprüfen" aus, um in das **Elementtool zu** springen.  Um die DevTools im **Elementmodus**zu öffnen, wählen Sie `Ctrl` + `Shift` + `C` \(Windows/Linux\) oder `Command` + `Option` + `C` \(macOS\) aus. Im **Elementmodus "Überprüfen"** können Sie ein Element auf der Webseite auswählen und HTML und CSS im Tool **"Elemente"** anzeigen.  
 
-Wenn Sie die Protokolle aus Ihrem Front-End-JavaScript-Code anzeigen oder schnell ein Skript ausführen möchten, wählen Sie `Ctrl` + `Shift` + `J` unter Windows/Linux oder `Command` + `Option` + `J` unter macOS aus, um den **Konsolen** Bereich im devtools zu starten.  
+Wenn Sie Protokolle aus Ihrem Front-End-JavaScript-Code überprüfen oder schnell Skripts ausführen möchten, öffnen Sie die **Konsole.**   Um das **Konsolentool** in devTools zu starten, wählen Sie `Ctrl` + `Shift` + `J` \(Windows/Linux\) oder `Command` + `Option` + `J` \(macOS\) aus.  
 
 ## Grundlegende Tools  
 
@@ -55,28 +55,28 @@ Wenn Sie die Protokolle aus Ihrem Front-End-JavaScript-Code anzeigen oder schnel
    Microsoft Edge (Chromium)-DevTools – Grundlegende Tools  
 :::image-end::: 
 
-Die Microsoft Edge \(Chromium\)-DevTools umfassen die folgenden Bereiche.  
+Die Microsoft Edge \(Chromium\) DevTools enthalten die folgenden Tools.  
 
-*   Einen Bereich **Elemente** zum Bearbeiten von HTML und CSS, Untersuchen von Barrierefreiheitseigenschaften, Anzeigen von Ereignis-Listenern und Festlegen von Haltepunkten für DOM-Mutationen  
-*   Eine **Konsole** zum Anzeigen und Filtern von Protokollmeldungen, zum Überprüfen von JavaScript-Objekten und DOM-Knoten sowie zum Ausführen von JavaScript im Kontext des ausgewählten Fensters oder Rahmens  
-*   Einen Bereich **Quellen**, in dem Sie Ihren Code öffnen und ihn live bearbeiten, Haltepunkte festlegen, den Code Schritt für Schritt durchlaufen, und den Zustand Ihrer Website je JavaScript-Zeile anzeigen können  
-*   Einen Bereich **Netzwerk** zum Überwachen und Überprüfen von Anforderungen und Antworten aus dem Netzwerk- und Browsercache   
-*   Einen Bereich **Leistung**, um die Zeit und Systemressourcen zu ermitteln, die für Ihre Website erforderlich sind  
-*   Einen Bereich **Arbeitsspeicher** zum Messen der Nutzung von Speicherressourcen und Vergleichen von Heap-Momentaufnahmen in unterschiedlichen Zuständen der Code-Runtime  
-*   Einen Bereich **Anwendung** zum Untersuchen, Anpassen und Debuggen von Web-App-Manifesten, Service Workers, und Service Worker-Caches.  Sie können Speicher, Datenbanken und Caches auch im Bereich **Anwendung** prüfen und verwalten.  
-*   Einen Bereich **Sicherheit** zum Debuggen von Sicherheitsproblemen und Sicherstellen, dass Sie HTTPS ordnungsgemäß auf Ihrer Website implementiert haben.  HTTPS bietet wichtige Sicherheit und Datenintegrität sowohl für Ihre Website als auch für Ihre Benutzer, die auf Ihrer Website personenbezogene Daten angeben.  
-*   Einen Bereich **Überwachung** \(jetzt unter dem neuen Namen **Lighthouse**\), in dem Sie eine Überwachung Ihrer Website veranlassen können.  Die Ergebnisse der Überwachung helfen Ihnen dabei, die Qualität Ihrer Website folgendermaßen zu verbessern.  
-    *   Erfassen häufiger Fehler in Bezug darauf, Ihre Website barrierefrei, sicher, leistungsstark, und so weiter zu gestalten.  
+*   Ein **Elementtool** zum Bearbeiten von HTML und CSS, Überprüfen von Barrierefreiheitseigenschaften, Anzeigen von Ereignislistenern und Festlegen von HALTEpunkten der DOM-Mutation  
+*   Eine **Konsole zum** Überprüfen und Filtern von Protokollmeldungen, Überprüfen von JavaScript-Objekten und DOM-Knoten und Ausführen von JavaScript im Kontext des ausgewählten Fensters oder Frames  
+*   Ein **Quellentool** zum Öffnen und Bearbeiten des Codes, Festlegen von Haltepunkten, Schrittweises Durchschritten von Code und Anzeigen des Status Ihrer Webseite
+*   Ein **Netzwerktool** zum Überwachen und Überprüfen von Anforderungen und Antworten aus dem Netzwerk- und Browsercache   
+*   Ein **Leistungstool** zum Profilieren der für Ihre Website erforderlichen Zeit- und Systemressourcen  
+*   Ein **Speichertool** zum Messen der Verwendung von Speicherressourcen und Vergleichen von Heapmomentaufnahmen bei unterschiedlichen Zuständen der Codelaufzeit  
+*   Ein **Anwendungstool** zum Überprüfen, Ändern und Debuggen von Web-App-Manifesten, Service Workern und Dienstarbeitscaches.  Sie können auch Speicher, Datenbanken und Caches über das **Anwendungstool** überprüfen und verwalten.  
+*   Ein **Sicherheitstool** zum Debuggen von Sicherheitsproblemen und sicherstellen, dass SIE HTTPS auf Ihrer Webseite ordnungsgemäß implementiert haben.  HTTPS bietet wichtige Sicherheit und Datenintegrität sowohl für Ihre Website als auch für Ihre Benutzer, die auf Ihrer Website personenbezogene Daten angeben.  
+*   Ein **Überwachungstool** \(jetzt umbenannt in **"Unteres**\") zum Ausführen einer Überwachung Ihrer Webseite.  Die Ergebnisse der Überwachung helfen Ihnen dabei, die Qualität Ihrer Website folgendermaßen zu verbessern.  
+    *   Fangen Sie häufige Fehler im Zusammenhang mit der Barrierefreie, sichere, performante und so weiter.  
     *   Alle Fehler beheben.  
     *   Eine PWA erstellen.  
         
 [!INCLUDE [audits-panel-note](./includes/audits-panel-note.md)]  
 
-Bitte senden Sie Ihre [Feedback-und Funktionswünsche](#getting-in-touch-with-the-microsoft-edge-devtools-team).  
+Senden Sie Ihr [Feedback und Ihre Featureanforderungen.](#getting-in-touch-with-the-microsoft-edge-devtools-team)  
 
-## Erweiterungen  
+## Extensions  
 
-Möglicherweise haben Sie Erweiterungen der Entwicklungstools verwendet, um Probleme beim Erstellen Ihrer Websites oder Apps besser erkennen und debuggen zu können.  Erweiterungen für Microsoft Edge erhalten Sie auf der Seite [Microsoft Edge Add-Ons][MicrosoftEdgeAddonsExtensions].  Auf der Seite [Microsoft Edge Add-Ons][MicrosoftEdgeAddonsExtensions] können Sie Erweiterungen für die Entwicklungstools in der Kategorie **Entwicklungstools** durchsuchen, oder nach einer bestimmten Erweiterung suchen.  
+Möglicherweise haben Sie auf DevTools mithilfe von Erweiterungen zugegriffen, wenn Sie Während der Webseitenerstellen \(oder Apps\) Probleme diagnostizieren und debuggen. Microsoft Edge Erweiterungen werden von [Microsoft Edge-Add-Ons erworben.][MicrosoftEdgeAddonsExtensions]  Durchsuchen [Sie in Microsoft Edge-Add-Ons][MicrosoftEdgeAddonsExtensions]die DevTools-Erweiterungen aus der Kategorie **"Entwicklertools",** oder suchen Sie nach einer bestimmten Erweiterung.  
 
 Sie können auch Erweiterungen aus dem [Chrome Web Store][GoogleChromeWebstoreExtensions] hinzufügen.  
 
@@ -84,38 +84,38 @@ Sie können auch Erweiterungen aus dem [Chrome Web Store][GoogleChromeWebstoreEx
    Chrome Web Store in Microsoft Edge  
 :::image-end:::  
 
-Wählen Sie oben im Dialogfeld, das angezeigt wird, die Option **Erweiterungen von anderen speichern zulassen aus** , und wählen Sie dann **zulassen** aus.  
+At the top, choose **Allow extensions from other stores** and then choose **Allow** in the dialog that appears.  
 
 > [!NOTE]
 > Erweiterungen, die aus anderen Quellen als dem Microsoft Store installiert werden, sind nicht verifiziert, und können die Browser-Leistung beeinträchtigen.  
 
-Wählen Sie **zu Chrome hinzufügen** aus, um Ihre devtools-Erweiterung zu Microsoft Edge hinzuzufügen.  
+Choose **Add to Chrome** to add your DevTools extension to Microsoft Edge.  
 
-:::image type="complex" source="./media/install-extension-from-chrome-store.png" alt-text="Hinzufügen einer Erweiterung von Chrome Web Store zu Microsoft Edge" lightbox="./media/install-extension-from-chrome-store.png":::
-   Hinzufügen einer Erweiterung von Chrome Web Store zu Microsoft Edge  
+:::image type="complex" source="./media/install-extension-from-chrome-store.png" alt-text="Hinzufügen einer Erweiterung aus dem Chrome Web Store zu Microsoft Edge" lightbox="./media/install-extension-from-chrome-store.png":::
+   Hinzufügen einer Erweiterung aus dem Chrome Web Store zu Microsoft Edge  
 :::image-end:::  
 
 ## Tastenkombinationen  
 
-Diese Tastenkombinationen steuern das Hauptfenster der Entwicklungstools, funktionieren in allen Tools, oder beides.  
+Die folgenden Verknüpfungen steuern das Hauptfenster von DevTools, arbeiten über alle Tools hinweg oder beides.  
 
 | Aktion | Windows/Linux | macOS |  
 |:--- |:--- | :--- |  
-| Entwicklungstools ein-/ausblenden\(zuletzt angezeigter Bereich wird geöffnet\) | `F12` oder `Ctrl`+`Shift`+`I` | `Command`+`Option`+`I` |  
-| Anzeigen des Bereichs „Konsole“ | `Ctrl`+`Shift`+`J` | `Command`+`Option`+`J` |  
-| Anzeigen der devtools im **Element Modus überprüfen** , mit dem Sie ein Element auf der Website auswählen und den HTML-und CSS-Code im **Element Panel anzeigen** können | `Ctrl`+`Shift`+`C` | `Command`+`Option`+`C` |  
+| Einblenden/Ausblenden von DevTools \(öffnet sich zum zuletzt angezeigten Tool\) | `F12` oder `Ctrl`+`Shift`+`I` | `Command`+`Option`+`I` |  
+| Anzeigen der Konsole | `Ctrl`+`Shift`+`J` | `Command`+`Option`+`J` |  
+| Anzeigen der DevTools im **Elementmodus "Untersuchen",** mit dem Sie ein Element auswählen und HTML und CSS im Tool **"Elemente"** anzeigen können | `Ctrl`+`Shift`+`C` | `Command`+`Option`+`C` |  
 | Einstellungen anzeigen | `?` oder `Fn`+`F1` | `?` oder `Fn`+`F1` |  
 | Anzeigen des nächsten Bereichs | `Ctrl`+`]` | `Command`+`]` |  
 | Anzeigen des vorherigen Bereichs | `Ctrl`+`[` | `Command`+`[` |  
-| Entwicklungstools in der letzten verwendeten Position andocken.  Wenn der devtools für die gesamte Sitzung in der Standardposition verbleibt, wird der devtools in einem separaten Fenster von der Verknüpfung Abdocken. | `Ctrl`+`Shift`+`D` | `Command`+`Shift`+`D` |  
+| Entwicklungstools in der letzten verwendeten Position andocken.  Wenn die DevTools für die gesamte Sitzung an der Standardposition bleiben, werden die DevTools mit der Verknüpfung in ein separates Fenster entfernt. | `Ctrl`+`Shift`+`D` | `Command`+`Shift`+`D` |  
 | **Gerätemodus** einschalten | `Ctrl`+`Shift`+`M` | `Command`+`Shift`+`M` |  
-| Schalten Sie den **Modus „Element prüfen“** ein, in dem Sie ein Element auf der Website auswählen und das HTML und CSS im Bereich **Elemente** ansehen können | `Ctrl`+`Shift`+`C` | `Command`+`Shift`+`C` |  
+| Toggle **Inspect Element Mode** that allows you to choose an element and display the HTML and CSS in the **Elements** tool | `Ctrl`+`Shift`+`C` | `Command`+`Shift`+`C` |  
 | Anzeigen des Befehlsmenüs | `Ctrl`+`Shift`+`P` | `Command`+`Shift`+`P` |  
 | Einblenden/Ausblenden der Schublade | `Esc` | `Esc` |  
-| Aktualisieren.  Fefreshes Sie die Seite mit dem Cache.  | `F5` oder `Ctrl`+`R` | `Command`+`R` |  
-| Harte Aktualisierung.  Zwingt Microsoft Edge, Ressourcen erneut herunterzuladen und neu zu laden.  Möglicherweise stammen die verwendeten Ressourcen aus einer zwischengespeicherten Version | `Ctrl`+`F5` oder `Ctrl`+`Shift`+`R` | `Command`+`Shift`+`R` |  
-| Im aktuellen Bereich nach Text suchen.  Wird in den Bereichen Überwachung, Anwendung und Sicherheit nicht unterstützt | `Ctrl`+`F` | `Command`+`F` |  
-| In der Schublade den Bereich Suche anzeigen, in dem Sie in allen geladenen Ressourcen nach Text suchen können | `Ctrl`+`Shift`+`F` | `Command`+`Option`+`F` |  
+| Aktualisieren.  Aktualisiert die Webseite mithilfe des Caches.  | `F5` oder `Ctrl`+`R` | `Command`+`R` |  
+| Harte Aktualisierung.  Erzwingt Microsoft Edge, Ressourcen erneut herunterzuladen und neu zu laden.  Die verwendeten Ressourcen stammen möglicherweise aus einer zwischengespeicherten Version. | `Ctrl`+`F5` oder `Ctrl`+`Shift`+`R` | `Command`+`Shift`+`R` |  
+| Im aktuellen Bereich nach Text suchen.  Nicht unterstützt in den Überwachungs-, Anwendungs- und Sicherheitstools | `Ctrl`+`F` | `Command`+`F` |  
+| Anzeigen des Suchtools in der Drawer, mit dem Sie in allen geladenen Ressourcen nach Text suchen können | `Ctrl`+`Shift`+`F` | `Command`+`Option`+`F` |  
 | Im Bereich Quellen eine Datei öffnen | `Ctrl`+`O` oder `Ctrl`+`P` | `Command`+`O` oder `Command`+`P` |  
 | Vergrößern | `Ctrl`+`Shift`+`+` | `Command`+`Shift`+`+` |  
 | Verkleinern | `Ctrl`+`-` | `Command`+`-` |  
