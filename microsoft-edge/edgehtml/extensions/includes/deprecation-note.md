@@ -3,25 +3,23 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
 ms.topic: include
-ms.date: 11/19/2020
+ms.date: 02/10/2021
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: d5c7cae4d598c14fe0bc3f459c7bf551dba81374
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 272097d406f6b3574fc86abb5f4d4cb975eadec6
+ms.sourcegitcommit: 988c9add287abd203acf1d5d51ef7146e6f0b351
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11233791"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "11340445"
 ---
 > [!NOTE]
 > In dieser Dokumentation geht es um Erweiterungen für die [Vorgängerversion von Microsoft Edge][MicrosoftSupportEdgeLegacy]. Informationen zum neuen Microsoft Edge erhalten Sie unter [Microsoft Edge (Chromium)-Erweiterungen][MicrosoftEdgeExtensionsChromiumIndex].
 
 > [!IMPORTANT]
-> In dem neuen Microsoft Edge-Programm können nun Chromium-basierte Erweiterungen zum neuen Microsoft Edge \(v77 oder später\) hinzugefügt werden. Wenn Sie eine neue Erweiterung einreichen möchten, gehen Sie auf [Veröffentlichung im Microsoft Edge (Chromium) Addons Store][ExtensionsChromiumPublish] und erfahren Sie mehr über den Einreichungsvorgang.  
+> In dem neuen Microsoft Edge-Programm können nun Chromium-basierte Erweiterungen zum neuen Microsoft Edge \(v77 oder später\) hinzugefügt werden. Wenn Sie eine neue Erweiterung übermitteln möchten, besuchen Sie den Microsoft [Edge (Chromium) Add-Ons Store,][ExtensionsChromiumPublish] um mehr über den Übermittlungsprozess zu erfahren.  
 > 
 > Ab dieser Ankündigung akzeptiert Microsoft keine neuen Erweiterungen für die [Vorgängerversion von Microsoft Edge][MicrosoftSupportEdgeLegacy] mehr. Wenn Sie eine Erweiterung für die Vorgängerversion besitzen, sollten Sie damit beginnen, Ihre Erweiterung in den neuen Microsoft Edge zu portieren.  Der neue Microsoft Edge basiert auf Chromium, sodass für die Vorgängerversion von Microsoft Edge konzipierte Erweiterungen nicht in der neuen Version funktionieren.  
 > 
-
-<!-- image links -->  
 
 <!-- links -->  
 
