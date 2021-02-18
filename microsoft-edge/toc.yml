@@ -272,20 +272,20 @@
             - name: Veröffentlichen Sie die Erweiterung
               href: extensions-chromium/publish/publish-extension.md
             - name: Aktualisieren Sie die Erweiterung
-              href: extensions-chromium/publish/update.md
+              href: extensions-chromium/publish/update-extension.md
             - name: Übermittlungsstatus
               href: extensions-chromium/publish/submission-states.md
             - name: Verwalten der Kontoeinstellungen
               href: extensions-chromium/publish/manage-settings.md
-            - name: Wenden Sie sich an uns
-              href: extensions-chromium/publish/contact-us.md
+            - name: Support für Kontakterweiterungen
+              href: extensions-chromium/publish/contact-extensions-team.md
         - name: Richtlinien für Microsoft Edge-Add-Ons
           items:
             - name: Sicherheitsrichtlinie für Inhalte
               href: extensions-chromium/store-policies/csp.md
             - name: ADA Addendum für Microsoft Edge-Entwickler
               href: extensions-chromium/store-policies/ada-addendum.md
-            - name: Entwicklerrichtlinien für den Katalog für Microsoft Edge-Add-Ons
+            - name: Microsoft Edge Add-Ons Store Entwicklerrichtlinien
               href: extensions-chromium/store-policies/developer-policies.md
         - name: Erweiterungen für Unternehmen
           items:
