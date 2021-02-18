@@ -3,16 +3,16 @@ description: Informationen zum Verteilen von Erweiterungen mithilfe alternativer
 title: Alternative Methode zum Verteilen von Erweiterungen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Edge-Chromium, Erweiterungenentwicklung, Browsererweiterungen, Add-Ons, Partner Center, Entwickler
-ms.openlocfilehash: 9232b8912acaa52c8d97fdd5f13b82ec33c865d4
-ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
+ms.openlocfilehash: 3b2c72e13488632e2fadea2a7e8eb95888f67170
+ms.sourcegitcommit: 916b4daa26c2c78611f7d837bd6ecf009f0082df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "11327624"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "11343150"
 ---
 # Alternative Erweiterungsverteilungsmethoden  
 
@@ -47,7 +47,7 @@ Führen Sie die folgenden Schritte aus, um Ihre Erweiterung mithilfe der Windows
     *   32-Bit-Windows:  `HKEY_LOCAL_MACHINE\Software\Microsoft\Edge\Extensions` .  
     *   64-Bit-Windows:  `HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Edge\Extensions` .  
 1.  Erstellen Sie einen neuen Schlüssel oder Ordner unter **"Erweiterungen"** mit demselben Namen wie die ID Ihrer Erweiterung. Erstellen Sie beispielsweise den Schlüssel mit dem Namen `aaaaaaaaaabbbbbbbbbbcccccccccc` .  
-1.  Erstellen Sie **im Schlüssel "Extensions"** die `update_url` Eigenschaft, und legen Sie den Wert auf . `https://edge.microsoft.com/extensionwebstorebase/v1/crx`  Die `update_url` Eigenschaft verweist auf die Datei Ihrer Erweiterung im Microsoft `.crx` Edge-Add-Ons-Speicher.  
+1.  Erstellen Sie **im Schlüssel "Extensions"** die `update_url` Eigenschaft, und legen Sie den Wert auf . `https://edge.microsoft.com/extensionwebstorebase/v1/crx`  Die Eigenschaft verweist auf die Datei Ihrer Erweiterung im `update_url` `.crx` Microsoft Edge-Add-Ons-Speicher.  
 
     ```json
     {
@@ -64,7 +64,7 @@ Führen Sie die folgenden Schritte aus, um Ihre Erweiterung mithilfe der Windows
 
 Führen Sie die folgenden Schritte aus, um Ihre Erweiterung mithilfe einer bevorzugten JSON-Datei zu verteilen.
 
-1.  Wenn Sie Linux verwenden, stellen Sie sicher, dass Ihre Erweiterungsdatei auf dem Computer verfügbar ist, auf dem die `.crx` Erweiterung installiert wird. Kopieren Sie die Erweiterungsdatei in ein lokales Verzeichnis, oder verwenden Sie eine `.crx` Netzwerkfreigabe, die vom Computer aus erreichbar ist. 
+1.  Stellen Sie bei Verwendung von Linux sicher, dass Ihre Erweiterungsdatei auf dem Computer verfügbar ist, auf dem die `.crx` Erweiterung installiert wird. Kopieren Sie die Erweiterungsdatei in ein lokales Verzeichnis, oder verwenden Sie eine `.crx` Netzwerkfreigabe, die vom Computer aus erreichbar ist. 
 1.  Erstellen Sie eine JSON-Datei, in der der Name der Datei der ID Ihrer Erweiterung entspricht. Erstellen Sie beispielsweise eine JSON-Datei mit dem `aaaaaaaaaabbbbbbbbbbcccccccccc.json` Dateinamen.  
 1.  Speichern Sie die JSON-Datei je nach Betriebssystem in einem der folgenden Ordner.   
     *   **macOS**  
@@ -101,7 +101,7 @@ Führen Sie die folgenden Schritte aus, um Ihre Erweiterung mithilfe einer bevor
         }
         ```  
  
-    *  Kopieren Sie bei der Installation aus dem Microsoft Edge-Add-Ons-Store unter macOS und Linux den folgenden Code in Ihre JSON-Datei.
+    *  Kopieren Sie den folgenden Code bei der Installation aus dem Microsoft Edge-Add-Ons-Store unter macOS und Linux in Ihre JSON-Datei.
     
         ```json
         {

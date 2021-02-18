@@ -1,24 +1,24 @@
 ---
-description: Systemeigene Messagingdokumentation
+description: Native Messagingdokumentation
 title: Systemeigenes Messaging
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Edge-Chromium, Erweiterungenentwicklung, Browsererweiterungen, Addons, Partner Center, Entwickler
-ms.openlocfilehash: 2d629762d4c7c75832905cfbf8c2d5311191092d
-ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
+ms.openlocfilehash: d9c2370d6a4f9f7cd25001c1c58ce266423af19a
+ms.sourcegitcommit: 916b4daa26c2c78611f7d837bd6ecf009f0082df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "11327701"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "11343066"
 ---
 # Systemeigenes Messaging  
 
 Erweiterungen kommunizieren mit einer systemeigenen Win32-Anwendung, die auf dem Gerät eines Benutzers installiert ist, und verwenden APIs zum Übergeben von Nachrichten.  Der systemeigene Anwendungshost sendet und empfängt Nachrichten mit Erweiterungen mithilfe von Standardeingabe und Standardausgabe.  Erweiterungen, die natives Messaging verwenden, werden in Microsoft Edge ähnlich wie jede andere Erweiterung installiert.  Systemeigene Anwendungen werden jedoch nicht von Microsoft Edge installiert oder verwaltet.  
 
-Um die Erweiterung und den systemeigenen Anwendungshost zu erwerben, verfügen Sie über zwei Verteilungsmodelle.  
+Zum Erwerben der Erweiterung und des systemeigenen Anwendungshosts verfügen Sie über zwei Verteilungsmodelle.  
 
 *   Packen Sie Ihre Erweiterung und den Host zusammen.  Wenn ein Benutzer das Paket installiert, werden sowohl die Erweiterung als auch der Host installiert.  
 *   Installieren Sie Ihre Erweiterung mithilfe des [Microsoft Edge-Add-Ons-Speichers,] [MicrosoftMicrosoftedgeAddonsMicrosoftEdgeExtensionsHome]und Die Benutzer werden aufgefordert, den Host zu installieren.  
@@ -98,7 +98,7 @@ Die Hostmanifestdatei muss eine gültige JSON-Datei sein, die die folgenden Schl
       *   Auf Windows-Geräten können Sie relative Pfade zu dem Verzeichnis verwenden, das die Manifestdatei enthält.  
       *   Unter macOS und Linux muss der Pfad absolut sein.  
       
-      Der Hostprozess beginnt mit dem Verzeichnis, das die Host binär enthält, mit dem aktuellen Verzeichnis.  Wenn dieser Parameter beispielsweise auf \(Windows\) festgelegt ist, wird die Binärdatei mit dem aktuellen `C:\Application\nm_host.exe` Verzeichnis \( `C:\Application\` \) gestartet.  
+      Der Hostprozess beginnt mit dem aktuellen Verzeichnis, das auf das Verzeichnis festgelegt ist, das die Hostdatei enthält.  Wenn dieser Parameter beispielsweise auf \(Windows\) festgelegt ist, wird die Binärdatei mit dem aktuellen `C:\Application\nm_host.exe` Verzeichnis \( `C:\Application\` \) gestartet.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -115,7 +115,7 @@ Die Hostmanifestdatei muss eine gültige JSON-Datei sein, die die folgenden Schl
       `allowed_origins` 
    :::column-end:::
    :::column span="2":::
-      Gibt die Liste der Erweiterungen an, die Zugriff auf den systemeigenen Messaginghost haben.  Damit Ihre Anwendung eine Erweiterung identifizieren und mit dieser kommunizieren kann, legen Sie in der systemeigenen Messaginghostmanifestdatei den folgenden Wert festgelegt.  
+      Gibt die Liste der Erweiterungen an, die Zugriff auf den systemeigenen Messaginghost haben.  Damit Ihre Anwendung eine Erweiterung identifizieren und mit dieser kommunizieren kann, legen Sie in der manifesten Datei des systemeigenen Messaginghosts den folgenden Wert ein.  
       
       ```json
       "allowed_origins": ["chrome-extension://{microsoft_catalog_extension_id}"]
@@ -130,13 +130,13 @@ Führen Sie die folgenden Schritte aus, um die Erweiterung während der Entwickl
 1.  Choose **Load unpacked**, and then select your extension package to sideload.  
 1.  Klicken Sie auf **OK**.  
 1.  Navigieren Sie zu `edge://extensions` der Seite, und überprüfen Sie, ob Ihre Erweiterung aufgeführt ist.  
-1.  Kopieren Sie den Schlüssel von `microsoft_catalog_extension_id` \(ID\) aus dem Erweiterungseintrag auf der Seite.  
+1.  Kopieren Sie den Schlüssel aus `microsoft_catalog_extension_id` \(ID\) aus dem Erweiterungseintrag auf der Seite.  
 
-Wenn Sie bereit sind, Ihre Erweiterung an Benutzer zu verteilen, veröffentlichen Sie Ihre Erweiterung im Microsoft Edge-Add-Ons-Store.  Die Erweiterungs-ID der veröffentlichten Erweiterung kann sich von der ID unterscheiden, die beim Querladen der Erweiterung verwendet wird.  Wenn sich die ID geändert hat, aktualisieren Sie `allowed_origins` in der Hostmanifestdatei mit der ID Ihrer veröffentlichten Erweiterung.  
+Wenn Sie bereit sind, Ihre Erweiterung an Benutzer zu verteilen, veröffentlichen Sie Ihre Erweiterung im Microsoft Edge Add-Ons Store.  Die Erweiterungs-ID der veröffentlichten Erweiterung kann sich von der ID unterscheiden, die beim Querladen der Erweiterung verwendet wird.  Wenn sich die ID geändert hat, aktualisieren Sie `allowed_origins` in der Hostmanifestdatei mit der ID Ihrer veröffentlichten Erweiterung.  
 
 ## Schritt 3: Kopieren der systemeigenen Messaginghostmanifestdatei in Ihr System  
 
-Im letzten Schritt wird die systemeigene Messaginghostmanifestdatei auf Ihren Computer kopiert und sichergestellt, dass die Manifestdatei ordnungsgemäß konfiguriert ist.  Führen Sie die folgenden Schritte aus, um sicherzustellen, dass sich die Manifestdatei am erwarteten Speicherort befindet.  Der Standort variiert je nach Plattform.  
+Der letzte Schritt besteht darin, die systemeigene Messaginghostmanifestdatei auf Ihren Computer zu kopieren und sicherzustellen, dass die Manifestdatei ordnungsgemäß konfiguriert ist.  Führen Sie die folgenden Schritte aus, um sicherzustellen, dass die Manifestdatei am erwarteten Speicherort platziert wird.  Der Standort variiert je nach Plattform.  
 
 ### [Windows](#tab/windows/)  
 
@@ -182,7 +182,7 @@ Microsoft Edge fragt den `HKEY_CURRENT_USER` Stammschlüssel ab, gefolgt von `HK
 
 Führen Sie eine der folgenden Aktionen aus, um die Manifestdatei zu speichern.  
 
-*   Systemweite systemweite systemeigene Messaginghosts, die für alle Benutzer verfügbar sind, werden an einem festen Speicherort gespeichert.  Die Manifestdatei muss z. B. an folgendem Speicherort gespeichert werden.  
+*   Systemweite systemeigene Messaginghosts, die für alle Benutzer verfügbar sind, werden an einem festen Speicherort gespeichert.  Die Manifestdatei muss z. B. an folgendem Speicherort gespeichert werden.  
     
     ```bash
     /Library/Microsoft/Edge/NativeMessagingHosts/com.my_company.my_application.json
@@ -208,7 +208,7 @@ Führen Sie eine der folgenden Aktionen aus, um die Manifestdatei zu speichern.
 
 Führen Sie eine der folgenden Aktionen aus, um die Manifestdatei zu speichern.  
 
-*   Systemweite systemweite systemeigene Messaginghosts, die für alle Benutzer verfügbar sind, werden an einem festen Speicherort gespeichert.  Die Manifestdatei muss an folgendem Speicherort gespeichert werden.  
+*   Systemweite systemeigene Messaginghosts, die für alle Benutzer verfügbar sind, werden an einem festen Speicherort gespeichert.  Die Manifestdatei muss an folgendem Speicherort gespeichert werden.  
     
     ```bash
     /etc/opt/edge/native-messaging-hosts

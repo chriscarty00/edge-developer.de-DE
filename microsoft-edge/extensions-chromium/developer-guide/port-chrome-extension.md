@@ -1,18 +1,18 @@
 ---
-description: Prozess des Portierens der Chrome-Erweiterung zu Microsoft Edge.
+description: Portieren der Chrome-Erweiterung zu Microsoft Edge
 title: Portierung der Chrome-Erweiterung zu Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Edge-Chromium, Erweiterungenentwicklung, Browsererweiterungen, Addons, Partner Center, Entwickler
-ms.openlocfilehash: 64a92927b9fe7658562f87f326bb9ac148991031
-ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
+ms.openlocfilehash: 6be7d788ac22232475e278ae9a5b04de9b6e17f7
+ms.sourcegitcommit: 916b4daa26c2c78611f7d837bd6ecf009f0082df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "11327694"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "11343136"
 ---
 # Portierung der Erweiterung  
 
@@ -36,7 +36,7 @@ Führen Sie die folgenden Schritte aus, um Ihre Chrome-Erweiterung zu porten.
     
 ## Nächste Schritte  
 
-Nachdem Ihr Erweiterungspaket bereit für die Veröffentlichung im Microsoft Edge-Add-Ons-Store [ist,][ExtensionsPublishCreateDevAccount] erstellen Sie ein Entwicklerkonto, und veröffentlichen Sie [Ihre Erweiterung.][ExtensionsPublishPublishExtension]  
+Nachdem Ihr Erweiterungspaket bereit für die Veröffentlichung im Microsoft Edge-Add-Ons-Store [ist,][ExtensionsPublishCreateDevAccount] erstellen Sie ein Entwicklerkonto, und [veröffentlichen Sie Ihre Erweiterung.][ExtensionsPublishPublishExtension]  
 
 <!-- links -->  
 

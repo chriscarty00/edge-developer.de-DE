@@ -3,20 +3,20 @@ description: Erfahren Sie, wie Sie sich bei einem Entwicklerkonto registrieren, 
 title: Registrieren als Microsoft Edge-Erweiterungsentwickler, um Erweiterungen zu veröffentlichen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/05/2021
+ms.date: 02/17/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: Edge-Chromium, Erweiterungenentwicklung, Browsererweiterungen, Add-Ons, Partner Center, Entwickler
-ms.openlocfilehash: 8277390bb78e6692345e9c30ef26f60528655374
-ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
+ms.openlocfilehash: 0c3b4d70da214a171b7a6ebb308e89bad2ab16c2
+ms.sourcegitcommit: 916b4daa26c2c78611f7d837bd6ecf009f0082df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "11327519"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "11343059"
 ---
 # Registrieren als Entwickler einer Microsoft Edge-Erweiterung  
 
-Um Ihre Erweiterung an den Microsoft Edge-Add-Ons-Katalog zu übermitteln, müssen Sie als Entwickler beim Microsoft Edge-Programm registriert sein.  Das Microsoft Edge-Programm befindet sich im [Partner Center.][MicrosoftPartnerCenter]  
+Um Ihre Erweiterung an den Microsoft Edge-Add-Ons-Store zu übermitteln, müssen Sie als Entwickler beim Microsoft Edge-Programm registriert sein.  Das Microsoft Edge-Programm befindet sich im [Partner Center.][MicrosoftPartnerCenter]  
 
 > [!IMPORTANT]
 > Für die Übermittlung von Erweiterungen an das Microsoft Edge-Programm ist keine Registrierungsgebühr erforderlich.  
@@ -57,7 +57,7 @@ Wenn Sie ein Entwicklerkonto im Partner Center registriert haben, verwenden Sie 
           **Kontotyp**  
        :::column-end:::
        :::column span="2":::
-          Das Microsoft Edge-Programm in [Partner Center bietet][MicrosoftPartnerCenter] sowohl Einzel- als auch Unternehmenskonten.  Die Konten werden in den folgenden Aufzählungszeichen ausführlich beschrieben.  Mit beiden Kontotypen können Sie Erweiterungen im Microsoft Edge-Add-Ons-Katalog veröffentlichen.  
+          Das Microsoft Edge-Programm in [Partner Center bietet][MicrosoftPartnerCenter] sowohl Einzel- als auch Unternehmenskonten.  Die Konten werden in den folgenden Aufzählungszeichen ausführlich beschrieben.  Mit beiden Kontotypen können Sie Erweiterungen im Microsoft Edge-Add-Ons-Store veröffentlichen.  
           
           > [!IMPORTANT]
           > Nach der Registrierung können Sie den Wert dieses Felds nicht mehr ändern.  
@@ -75,7 +75,7 @@ Wenn Sie ein Entwicklerkonto im Partner Center registriert haben, verwenden Sie 
           **Anzeigename des Herausgebers**  
        :::column-end:::
        :::column span="2":::
-          Dieses Feld enthält den Namen, der im Microsoft Edge-Add-Ons-Katalog angezeigt wird.  Sie können einen Namen nur verwenden, wenn er verfügbar ist, und Sie haben die Rechte, ihn zu verwenden.  Unternehmenskonten müssen den registrierten Firmennamen Ihrer Organisation verwenden.  
+          Dieses Feld enthält den Namen, der im Microsoft Edge-Add-Ons-Speicher angezeigt wird.  Sie können einen Namen nur verwenden, wenn er verfügbar ist, und Sie haben die Rechte, ihn zu verwenden.  Unternehmenskonten müssen den registrierten Firmennamen Ihrer Organisation verwenden.  
           
           > [!NOTE]
           > Die maximale Länge für dieses Feld beträgt 50 Zeichen.  
@@ -100,7 +100,7 @@ Wenn Sie ein Entwicklerkonto im Partner Center registriert haben, verwenden Sie 
     :::row-end:::  
     
 1.  Lesen und akzeptieren Sie vor dem Übermitteln des Registrierungsformulars die Bedingungen des [Microsoft Edge-Entwicklervertrags.][MicrosoftAppDeveloperAgreement]  
-1.  Wählen Sie "Fertig stellen" aus, um die Registrierung **abzuschließen.**  
+1.  Um ihre Registrierung abzuschließen, wählen Sie **"Fertig stellen" aus.**  
     
 ## Nächste Schritte  
 

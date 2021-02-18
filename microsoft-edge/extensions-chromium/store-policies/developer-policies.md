@@ -1,34 +1,34 @@
 ---
-description: Microsoft Edge Add-ons Catalog Developer Policies.
-title: Microsoft Edge-Add-Ons-Katalog – Entwicklerrichtlinien
+description: Microsoft Edge Add-Ons Store Entwicklerrichtlinien
+title: Microsoft Edge Add-Ons Store Entwicklerrichtlinien
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Edge-Chromium, Erweiterungenentwicklung, Browsererweiterungen, Addons, Partner Center, Entwickler
-ms.openlocfilehash: 5c2a8dd816a28a35b6e7b725d5106814e401f6ec
-ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
+ms.openlocfilehash: cc34a95e08d01ebee54581222d0eb9fefa3dc458
+ms.sourcegitcommit: 916b4daa26c2c78611f7d837bd6ecf009f0082df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "11327645"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "11343080"
 ---
-# Microsoft Edge-Add-Ons-Katalog – Entwicklerrichtlinien  
+# Microsoft Edge Add-Ons Store Entwicklerrichtlinien  
 
 ## Einführung und Ziel dieses Dokuments  
 
-Vielen Dank für Ihr Interesse an der Entwicklung von Erweiterungen für den Microsoft Edge-Add-Ons-Katalog.  Die Microsoft Edge-Add-Ons-Katalog-Entwicklerrichtlinien \(Addons-Katalog-Entwicklerrichtlinien\) gelten für Ihre Erweiterungen, einschließlich der Übermittlung von Erweiterungen über [Partner Center][MicrosoftPartnerCenter] und der Bereitstellung solcher Erweiterungen über die Microsoft Edge-Add-Ons.  
+Vielen Dank für Ihr Interesse an der Entwicklung von Erweiterungen für den Microsoft Edge Add-Ons Store.  Die Entwicklerrichtlinien des Microsoft Edge-Add-Ons-Speichers \(Add-Ons store developer policies\) gelten für Ihre Erweiterungen, einschließlich der Übermittlung von Erweiterungen über [Partner Center][MicrosoftPartnerCenter] und der Bereitstellung solcher Erweiterungen über die Microsoft Edge-Add-Ons.  
 
 ## Prinzipien  
 
 Zunächst einige wichtige Grundregeln:  
 
-*   Sie sollten innerhalb Ihrer Erweiterungen für Microsoft Edge einen eindeutigen und eindeutigen Wert anbieten.  Geben Sie einen überzeugenden Grund an, Ihre Erweiterungen aus dem Microsoft Edge-Add-Ons-Katalog \(Microsoft Edge-Add-Ons\) herunterzuladen.  
-*   Sie dürfen unsere gemeinsamen Benutzer nicht in die Irre führen, was Ihre Erweiterung macht, wer sie bietet und so weiter.  
+*   Sie sollten innerhalb Ihrer Erweiterungen für Microsoft Edge einen eindeutigen und eindeutigen Wert anbieten.  Geben Sie einen überzeugenden Grund an, Ihre Erweiterungen aus dem Microsoft Edge-Add-Ons-Store \(Microsoft Edge-Add-Ons\) herunterzuladen.  
+*   Sie dürfen unsere gemeinsamen Benutzer nicht in die Irre führen, was Ihre Erweiterung bedeutet, wer sie bietet und so weiter.  
 *   Sie dürfen nicht versuchen, Benutzer, das System oder das Ökosystem zu vertäuschen.  Es gibt keinen Ort in unseren Microsoft Edge-Add-Ons für jegliche Art von Betrug. Seien es Bewertungen und Überprüfungen von Manipulationen, Kreditkartenmanipulationen oder anderen betrügerischen Aktivitäten.  
     
-Die Einhaltung der Entwicklerrichtlinien des Microsoft Edge-Add-Ons-Speichers sollte Ihnen dabei helfen, Entscheidungen zu treffen, die die Ansing- und Zielgruppe Ihrer Erweiterung verbessern.  
+Die Einhaltung der Entwicklerrichtlinien für Microsoft Edge-Add-Ons sollte Ihnen dabei helfen, Entscheidungen zu treffen, die die Ansung und Zielgruppe Ihrer Erweiterung verbessern.  
 
 Ihre Erweiterungen sind entscheidend für die Erfahrung von Hunderten Millionen von Benutzern.  Wir freuen uns auf das, was Sie erstellen, und freuen uns darauf, Ihnen bei der Bereitstellung Ihrer Erweiterungen auf der ganzen Welt zu helfen.  
 
@@ -81,9 +81,9 @@ Ihre Erweiterung darf die Benutzersicherheit oder die Sicherheit oder Funktional
 #### 1.2.1 Inhaltssicherheitsrichtlinien  
 
 > [!NOTE]
-> Wenn Sie über die beschriebene Funktionalität hinausgehende Änderungen an Ihrer Erweiterung vornehmen, müssen alle Änderungen am Code mit der [Microsoft Edge-Inhaltssicherheitsrichtlinie kompatibel sein.][MicrosoftEdgeContentSecurityPolicyRemoteScript]  Ihre Erweiterung sollte beispielsweise kein Remoteskript herunterladen und dieses Skript anschließend auf eine Weise ausführen, die nicht mit der beschriebenen Funktionalität konsistent ist.  
+> Wenn Sie über die beschriebene Funktionalität hinausgehende Änderungen an Ihrer Erweiterung vornehmen, müssen alle Änderungen am Code mit der [Microsoft Edge-Inhaltssicherheitsrichtlinie kompatibel sein.][MicrosoftEdgeContentSecurityPolicyRemoteScript]  Die Erweiterung sollte beispielsweise kein Remoteskript herunterladen und dieses Skript anschließend auf eine Weise ausführen, die nicht mit der beschriebenen Funktionalität konsistent ist.  
 
-#### 1.2.2 Unerwünschte und schädliche Software  
+#### 1.2.2 Unerwünschte und bösartige Software  
 
 Ihre Erweiterung darf keine Schadsoftware gemäß den Kriterien von Microsoft für unerwünschte und [bösartige Software enthalten oder aktivieren.][MicrosoftIdentifiesMalwareUnwantedApplications]  
 
@@ -97,7 +97,7 @@ Sofern nicht anders von Microsoft zugelassen, dürfen Ihre Erweiterungen nur üb
 
 ### 1.3 Produkt ist testbar  
 
-Ihre Erweiterung muss testbar sein.  Wenn es nicht möglich ist, Ihre Erweiterung aus irgendeinem Grund zu testen, einschließlich, aber nicht beschränkt auf die unten aufgeführten Elemente, kann ihre Erweiterung diese Anforderung nicht erfüllen.  
+Ihre Erweiterung muss testbar sein.  Wenn es nicht möglich ist, Ihre Erweiterung aus irgendeinem Grund zu testen, einschließlich, aber nicht beschränkt auf die unten aufgeführten Elemente, besteht Ihre Erweiterung möglicherweise diese Anforderung nicht.  
 
 #### 1.3.1 Benutzeranmeldeinformationen  
 
@@ -109,7 +109,7 @@ Wenn Ihre Erweiterung Zugriff auf einen Server erfordert, muss der Server funkti
 
 ### 1.4 Benutzerfreundlichkeit  
 
-Ihre Erweiterung muss die Standards des Microsoft Edge-Add-Ons-Speichers für benutzerfreundlichkeit erfüllen, einschließlich, aber nicht beschränkt auf die standards, die in den folgenden Unterabschnitten aufgeführt sind.  
+Ihre Erweiterung muss die Standards des Microsoft Edge-Add-Ons-Speichers für die Benutzerfreundlichkeit erfüllen, einschließlich, aber nicht beschränkt auf die in den folgenden Unterabschnitten aufgeführten.  
 
 #### 1.4.1 Plattformübergreifend kompatibilität  
 
@@ -125,11 +125,11 @@ Die folgenden Anforderungen gelten für Erweiterungen, die auf persönliche Info
 
 #### 1.5.1 Persönliche Informationen nur bei Bedarf sammeln  
 
-Ihre Erweiterung kann persönliche Informationen sammeln, darauf zugreifen, diese verwenden oder übertragen (einschließlich Webbrowsen-Aktivitäten\); nur, wenn dies nur für die Verwendung in einem öffentlich offengelegten, benutzerfreundlichen Feature erforderlich ist.  
+Ihre Erweiterung kann persönliche Informationen sammeln, darauf zugreifen, verwenden oder übertragen (einschließlich Webbrowsing-Aktivität\); nur, wenn dies nur für die Verwendung in einem öffentlich offengelegten, benutzerfreundlichen Feature erforderlich ist.  
 
 #### 1.5.2 Beibehalten einer Datenschutzrichtlinie  
 
-Unabhängig davon, ob Ihre Erweiterung auf personenbezogene Informationen zu, diese erfasst oder überträgt; Sie müssen Ihre Datenschutzrichtlinien deutlich beachten und einhalten, wenn dies gesetzlich vorgeschrieben ist.  Ihre Datenschutzrichtlinie muss Die Benutzer über die von Ihrer Erweiterung zugegriffenen, erfassten oder übermittelten personenbezogenen Informationen informieren, wie diese Informationen verwendet, gespeichert und geschützt werden, und die Arten von Parteien angeben, denen sie offengelegt werden.  Ihre Datenschutzrichtlinie muss die Kontrollen beschreiben, über die Benutzer über die Verwendung und Freigabe ihrer Informationen verfügen, wie sie auf ihre Informationen zugreifen, und sie muss die geltenden Gesetze und Bestimmungen einhalten.  Ihre Datenschutzrichtlinie muss auf dem neuesten Stand gehalten werden, wenn Sie Ihrer Erweiterung neue Features und Funktionen hinzufügen.  
+Unabhängig davon, ob Ihre Erweiterung auf personenbezogene Informationen zu, diese erfasst oder überträgt; Sie müssen Ihre Datenschutzrichtlinien deutlich machen und einhalten, wenn dies gesetzlich vorgeschrieben ist.  Ihre Datenschutzrichtlinie muss Die Benutzer über die von Ihrer Erweiterung zugegriffenen, erfassten oder übermittelten personenbezogenen Informationen informieren, wie diese Informationen verwendet, gespeichert und geschützt werden, und die Arten von Parteien angeben, denen sie offengelegt werden.  Ihre Datenschutzrichtlinie muss die Kontrollen beschreiben, über die Benutzer über die Verwendung und Freigabe ihrer Informationen verfügen, wie sie auf ihre Informationen zugreifen, und sie muss die geltenden Gesetze und Bestimmungen einhalten.  Ihre Datenschutzrichtlinie muss auf dem neuesten Stand gehalten werden, wenn Sie Ihrer Erweiterung neue Features und Funktionen hinzufügen.  
 
 Wenn Sie Microsoft Ihre Datenschutzrichtlinie bereitstellen, erklären Sie sich damit einverstanden, Microsoft zu erlauben, diese Datenschutzrichtlinie für Benutzer Ihrer Erweiterung zu teilen.  
 
@@ -183,7 +183,7 @@ Sie müssen eine sichere Drittanbieter-Einkaufs-API für den Kauf von physischen
     
 Die folgenden Anforderungen gelten für die Verwendung einer sicheren Drittanbieter-Einkaufs-API:  
 
-*   Zum Zeitpunkt der Transaktion oder wenn Sie Zahlungs- oder Finanzdaten vom Benutzer erfassen; Ihre Erweiterung muss den Handelstransaktionsanbieter identifizieren, den Benutzer authentifizieren und eine Benutzerbestätigung für die Transaktion erhalten.  Ein Handelstransaktionsanbieter verwaltet eine sichere Plattform für den Austausch von Finanzdaten.  
+*   Zum Zeitpunkt der Transaktion oder wenn Sie Zahlungs- oder Finanzdaten vom Benutzer erfassen; Ihre Erweiterung muss den Transaktionsanbieter identifizieren, den Benutzer authentifizieren und eine Benutzerbestätigung für die Transaktion erhalten.  Ein Handelstransaktionsanbieter verwaltet eine sichere Plattform für den Austausch von Finanzdaten.  
 *   Ihre Erweiterung bietet Benutzern möglicherweise die Möglichkeit, diese Authentifizierung zu speichern, aber Die Benutzer müssen in der Lage sein, entweder eine Authentifizierung für jede Transaktion zu erfordern oder Produkttransaktionen zu deaktivieren.  
 *   Wenn Ihre Durchwahl Kreditkarteninformationen erfasst oder einen Drittanbieter für Zahlungsverarbeiter verwendet, der Kreditkarteninformationen erfasst, muss die Zahlungsverarbeitung den aktuellen PCI Data Security Standard \(PCI DSS\) erfüllen.  
     
@@ -193,9 +193,9 @@ Ihre Erweiterung und die zugehörigen Metadaten müssen Informationen über die 
 
 ### 1.9 Benachrichtigungen  
 
-Ihre Erweiterung muss die Systemeinstellungen für Benachrichtigungen achten.  Dies bedeutet, dass jede Darstellung von Anzeigen und Benachrichtigungen für Benutzer mit den Benutzereinstellungen konsistent sein muss, unabhängig davon, ob die Benachrichtigungen vom Microsoft Push Notification Service \(MPNS\), dem Windows Push Notification Service \(WNS\) oder einem anderen Dienst bereitgestellt werden.  Wenn der Benutzer Benachrichtigungen entweder produktspezifisch oder systemweit deaktiviert, muss Ihre Erweiterung funktionsfähig bleiben.  
+Ihre Erweiterung muss die Systemeinstellungen für Benachrichtigungen achten.  Dies bedeutet, dass jede Darstellung von Anzeigen und Benachrichtigungen für Benutzer mit den Benutzereinstellungen konsistent sein muss, unabhängig davon, ob die Benachrichtigungen vom Microsoft Push Notification Service \(MPNS\), dem Windows Push Notification Service \(WNS\) oder einem anderen Dienst bereitgestellt werden.  Wenn der Benutzer Benachrichtigungen entweder produktspezifisch oder systemweit deaktiviert, muss die Erweiterung funktionsfähig bleiben.  
 
-Wenn Ihr Produkt MPNS oder WNS zum Übertragen von Benachrichtigungen verwendet, muss es die folgenden Anforderungen erfüllen:  
+Wenn Ihr Produkt MPNS oder WNS zum Übermitteln von Benachrichtigungen verwendet, muss es die folgenden Anforderungen erfüllen:  
 
 #### 1.9.1 Allgemeiner Leitfaden  
 
@@ -211,7 +211,7 @@ Sie dürfen keine Informationen, die Benutzer als vertraulich oder vertraulich b
 
 #### 1.9.4 Zweck von Benachrichtigungen  
 
-Benachrichtigungen, die von Ihrer Erweiterung gesendet werden, müssen sich auf diese Erweiterung oder andere Erweiterungen beziehen, die Sie im Microsoft Edge-Add-Ons-Katalog veröffentlichen, und dürfen keine Werbenachrichten enthalten, die nicht mit Ihren Erweiterungen in Zusammenhang stehen.  
+Benachrichtigungen, die von Ihrer Erweiterung gesendet werden, müssen sich auf diese Erweiterung oder andere Erweiterungen beziehen, die Sie im Microsoft Edge-Add-Ons Store veröffentlichen, und dürfen keine Werbenachrichten enthalten, die nicht mit Ihren Erweiterungen in Zusammenhang stehen.  
 
 ### 1.10 Verhalten und Inhalte von Werbung  
 
@@ -228,7 +228,7 @@ Wenn Ihre Erweiterung Anzeigen anzeigt, müssen alle angezeigten Inhalte den Wer
 
 #### 1.10.3 Qualität der Werbung  
 
-*   Der Hauptzweck Ihrer Erweiterung darf nicht sein, Benutzer zum Klicken auf Anzeigen zu besennen.  
+*   Der Hauptzweck ihrer Erweiterung darf nicht sein, Benutzer zum Klicken auf Anzeigen zu benennen.  
 *   Ihre Erweiterung darf nichts tun, was die Sichtbarkeit, den Wert oder die Qualität von anzeigenden Anzeigen beeinträchtigt oder beeinträchtigt.  
 
 #### 1.10.4 Werbeaktionen  
@@ -264,7 +264,7 @@ Ihre Erweiterung darf keine Inhalte enthalten, die die folgenden aktivitäten in
 
 #### 2.3.2 Verantwortung  
 
-Ihre Erweiterung darf nicht: \(a\) ein Sicherheitsrisiko darstellen oder zu Beschwerden, Verletzungen oder sonstigen Schäden für Endbenutzer oder andere Personen oder Tier führen; oder \(b\) ein Risiko darstellen oder zu schäden an realen oder persönlichen Eigenschaften führen.  Sie sind allein für alle Tests der Erweiterungssicherheit, den Erwerb von Zertifikaten und die Implementierung geeigneter Featurevorkehrungen verantwortlich.  Sie dürfen keine Plattformsicherheits- oder Komfortfeatures deaktivieren, und Sie müssen alle anwendbaren gesetzlich erforderlichen und branchenüblichen Warnungen, Benachrichtigungen und Haftungsausschlüsse in Ihre Erweiterung mit einbeführen.  
+Ihre Erweiterung darf nicht: \(a\) ein Sicherheitsrisiko darstellen oder zu Beschwerden, Verletzungen oder sonstigen Schäden für Endbenutzer oder andere Personen oder Tier führen; oder \(b\) ein Risiko darstellen oder zu schäden an realen oder persönlichen Eigenschaften führen.  Sie sind allein für alle Tests der Erweiterungssicherheit, den Erwerb von Zertifikaten und die Implementierung geeigneter Featurevorkehrungen verantwortlich.  Sie dürfen keine Plattformsicherheits- oder Komfortfeatures deaktivieren und alle anwendbaren gesetzlich erforderlichen und branchenüblichen Warnungen, Benachrichtigungen und Haftungsausschlüsse in Ihre Erweiterung mit einbeführen.  
 
 ### 2.4 Verleumdung, Verleumdung, Verleumdung und Bedrohlich  
 
@@ -272,9 +272,9 @@ Ihre Erweiterung darf keine Inhalte enthalten, die verleumderisch, verleumderisc
 
 ### 2.5 Anstößige Inhalte  
 
-Ihre Erweiterung und die zugehörigen Metadaten dürfen keine potenziell vertraulichen oder anstößigen Inhalte enthalten.  Inhalte können in bestimmten Ländern/Regionen aufgrund lokaler Gesetze oder kulturellen Normen als vertraulich oder anstößig betrachtet werden.  Darüber hinaus dürfen Ihre Erweiterung und die zugehörigen Metadaten keine Inhalte enthalten, die Auferlegungen, Gewalt oder Gewalt aufgrund von Überlegungen zu Race, Ethnischer Zugehörigkeit, nationaler Herkunft, Sprache, Geschlecht, Alter, Behinderung, Behinderung, sexueller Orientierung, Status als Erfahrene oder Mitgliedschaft in einer anderen sozialen Gruppe befürsprechen.  
+Ihre Erweiterung und die zugehörigen Metadaten dürfen keine potenziell vertraulichen oder anstößigen Inhalte enthalten.  Inhalte können in bestimmten Ländern/Regionen aufgrund lokaler Gesetze oder kulturellen Normen als vertraulich oder anstößig betrachtet werden.  Darüber hinaus dürfen Ihre Erweiterung und die zugehörigen Metadaten keine Inhalte enthalten, die Auferstand, Gewalt oder Gewalt aufgrund von Überlegungen zu Race, Ethnischer Zugehörigkeit, nationalem Ursprung, Sprache, Geschlecht, Alter, Behinderung, Kinder, sexueller Orientierung, Status als Erfahrene oder Mitgliedschaft in einer anderen sozialen Gruppe vorsagt.  
 
-### 2.6 Konsum, Konsum und Rauschmittel  
+### 2.6 Konsum konsumiert, Rauschmittel und Rauschmittel  
 
 Ihre Erweiterung darf keine Inhalte enthalten, die die übermäßige oder unverantwortliche Verwendung von Konsum von Konsum von Produkten oder Rauschmitteln durch Über- oder Rauschmittel erleichtern oder verwertbar machen.  
 
@@ -282,11 +282,11 @@ Ihre Erweiterung darf keine Inhalte enthalten, die die übermäßige oder unvera
 
 Ihre Erweiterung darf keine Inhalte enthalten oder anzeigen, die eine angemessene Person als lästig oder sexual explizit betrachten würde.  
 
-### 2.8 Verbotene Inhalte, Dienste und Aktivitäten  
+### 2.8 Unzulässige Inhalte, Dienste und Aktivitäten  
 
 Ihre Erweiterung muss die folgenden Bedingungen erfüllen.  
 
-*   Ihre Erweiterung darf keine Inhalte enthalten oder Dienste bereitstellen, die das Onlineding erleichtern.  Onlinespiele umfassen, sind jedoch nicht auf Onlinesport, Sportsport, Sportspiele oder Fertigkeiten beschränkt, die Geld oder einen anderen Wert bieten.  
+*   Ihre Erweiterung darf keine Inhalte enthalten oder Dienste bereitstellen, die das Onlineding erleichtern.  Onlinespiele umfassen, sind jedoch nicht auf Onlinesportsport, Sportsport, Sportspiele oder Fertigkeiten beschränkt, die Geld oder einen anderen Wert bieten.  
 *   Ihre Erweiterung darf keinen nicht autorisierten Zugriff auf Websiteinhalte ermöglichen, z. B. durch Umgehen von Paywalls oder Anmeldeeinschränkungen.  
 *   Ihre Erweiterung darf nicht den nicht autorisierten Zugriff, das Herunterladen oder Streaming von urheberrechtlich geschützten Inhalten oder Medien ermöglichen.  
 *   Ihre Erweiterung darf keine Kryptokryptografie aus der Grube gruben.  
