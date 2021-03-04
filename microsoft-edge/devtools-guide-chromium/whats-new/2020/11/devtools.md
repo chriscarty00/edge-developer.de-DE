@@ -7,18 +7,18 @@ ms.date: 02/03/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 9e4bdfcb3cc32364931894dcb3c857ac6e082809
-ms.sourcegitcommit: 12c30ad4ab2664d17c9b7e9d59d7a3cda60ff65c
+ms.openlocfilehash: f56586fa77e34da7884d9d7c565b8cbcc4106c4a
+ms.sourcegitcommit: 661e8def3f27cea381c59ac38954789e736c18f4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "11313086"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "11387285"
 ---
-# Neuerungen in DevTools (Microsoft Edge 88)  
+# <a name="whats-new-in-devtools-microsoft-edge-88"></a>Neuerungen in DevTools (Microsoft Edge 88)  
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]  
 
-## Microsoft Edge und Microsoft Edge-Treiber jetzt unter Linux verfügbar  
+## <a name="microsoft-edge-and-microsoft-edge-driver-now-available-on-linux"></a>Microsoft Edge und Microsoft Edge-Treiber jetzt unter Linux verfügbar  
 
 <!-- Title: Microsoft Edge and Microsoft Edge Driver on Linux  -->  
 <!-- Subtitle: Get Microsoft Edge Dev on Ubuntu, Debian, Fedora, and openSUSE distributions and start automating in CI/CD environments with Microsoft Edge Driver. -->  
@@ -31,7 +31,7 @@ Wenn Sie eine Linux-Umgebung in Ihren Continuous Integration und Continuous Deli
    DevTools in Microsoft Edge unter Linux  
 :::image-end:::  
 
-## Verbesserte Webhint- und Plattformtipps im Probleme-Tool  
+## <a name="improved-webhint-and-platform-tips-in-the-issues-tool"></a>Verbesserte Webhint- und Plattformtipps im Probleme-Tool  
 
 <!-- Title: Improvements to Issues tool and webhint integration  -->  
 <!-- Subtitle: Categories and third-party filtering make it easier to survey issues in the Issues tool.  Issues surfaced by webhint now have improved code snippets and documentation links to help you fix problems in your website.  -->  
@@ -57,7 +57,7 @@ Zur leichteren Überprüfung der von [webhint][WebhintMain] aufgedeckten Problem
    **Probleme**-Tool  
 :::image-end:::  
 
-## Zusammengesetzte Ebenen werden jetzt in der 3D-Ansicht dargestellt  
+## <a name="composited-layers-are-now-in-3d-view"></a>Zusammengesetzte Ebenen werden jetzt in der 3D-Ansicht dargestellt  
 
 <!-- Title: 3D View is now integrated with Composited Layers  -->  
 <!-- Subtitle: Composited Layers are now in 3D View.  -->  
@@ -70,7 +70,7 @@ Sie können nun Inhalte von **Ebenen** neben Z-Indexwerten und dem Dokumentobjek
    Bereich **Zusammengesetzte Ebenen**  
 :::image-end:::  
 
-## CSS-Variablendefinitionen im Bereich „Stile“  
+## <a name="css-variable-definitions-in-styles-pane"></a>CSS-Variablendefinitionen im Bereich „Stile“  
 
 <!-- Title: Jump to CSS variable definitions  -->  
 <!-- Subtitle: Choose any CSS variable to navigate directly to the definition in the Styles tool. -->  
@@ -93,7 +93,7 @@ Im Bereich **Stile** werden die [CSS-Variablen][MdnUsingCssCustomProperties] nun
    :::column-end:::
 :::row-end:::  
 
-## Verbesserungen beim Service Worker-Debugging  
+## <a name="service-worker-debugging-improvements"></a>Verbesserungen beim Service Worker-Debugging  
 
 <!-- Title:  Service worker debugging improvements in the Network, Application, and Sources tools  -->  
 <!-- Subtitle:  Making service workers easier to debug for progressive web applications and more.  -->  
@@ -102,7 +102,7 @@ Die folgenden neuen Features in den Tools [Netzwerk](#network-tool), [Anwendung]
 
 Das Routing von Anforderungen zeigt die `startup`- und `fetch`-Ereignisse basierend auf den Netzwerkanforderungen an, die von Service Workern ausgeführt werden.  Der Zugriff auf die Zeitpläne erfolgt entweder über das **Application**- oder das **Network**-Tool.  Die Zeitpläne helfen, wenn Sie Probleme mit Service Workern haben und sehen möchten, ob ein Fehler beim `startup`- oder `fetch`-Ereignis vorliegt.  
 
-### Anwendung-Tool  
+### <a name="application-tool"></a>Anwendung-Tool  
 
 <!-- Title: Open Network tool from the Service Workers pane  -->  
 <!-- Subtitle: Display additional context when debugging a service worker.  -->  
@@ -112,7 +112,7 @@ Zeigen Sie mit dem neuen Link **Netzwerkanforderungen** alle Routinginformatione
 1.  Navigieren Sie zu **Anwendung** > **Service Workers**.  
 1.  Wählen Sie **Netzwerkanforderungen** aus.  
     
-    :::image type="complex" source="../../media/2020/11/service-worker-application-network-requests.msft.png" alt-text="Öffnen des Netzwerk-Tools im Bereich Service Workers" lightbox="../../media/2020/11/service-worker-application-network-requests.msft.png":::
+    :::image type="complex" source="../../media/2020/11/service-worker-application-network-requests.msft.png" alt-text="Öffnen des Netzwerk-Tools im Bereich "Service Workers"" lightbox="../../media/2020/11/service-worker-application-network-requests.msft.png":::
        Öffnen des **Netzwerk**-Tools im Bereich **Service Workers**
     :::image-end:::  
     
@@ -128,7 +128,7 @@ Zeigen Sie mit dem neuen Link **Netzwerkanforderungen** alle Routinginformatione
        Schließen der **Schublade**, um das **Netzwerk**-Tool zurückzugeben  
     :::image-end:::  
     
-### Network-Tool  
+### <a name="network-tool"></a>Network-Tool  
 
 Debuggen Sie Netzwerkanforderungen, die über Service Worker ausgeführt werden.  Sie können Netzwerkanforderungen auch über das **Anwendung**-Tool öffnen.  Für jede Anforderung zeigen die DevTools die folgenden Informationen im Bereich [Timing][DevtoolsNetworkReferenceViewTimingBreakdownRequest] an.  
 
@@ -137,11 +137,11 @@ Debuggen Sie Netzwerkanforderungen, die über Service Worker ausgeführt werden.
 *   Die Laufzeit eines `fetch`-Ereignishandlers.  
 *   Die Laufzeit aller `fetch`-Ereignisse zum Laden eines Clients.  
     
-:::image type="complex" source="../../media/2020/11/network-timing-service-worker.msft.png" alt-text="Bereich Timing" lightbox="../../media/2020/11/network-timing-service-worker.msft.png":::
+:::image type="complex" source="../../media/2020/11/network-timing-service-worker.msft.png" alt-text="Bereich "Timing"" lightbox="../../media/2020/11/network-timing-service-worker.msft.png":::
    Bereich **Timing**  
 :::image-end:::  
 
-### Quellen-Tool  
+### <a name="sources-tool"></a>Quellen-Tool  
 
 In früheren Versionen von Microsoft Edge war die Tiefe im Aufrufstapel auf den JavaScript-Code in Ihrem Service Worker beschränkt.  In Microsoft Edge 88 zeigt der Aufrufstapel nun den Initiator von Anforderungen an, die über Ihren Service Worker ausgeführt werden.  
 
@@ -160,7 +160,7 @@ Zum Auffinden des Initiators der Anforderung verwenden Sie den Aufrufstapel Ihre
    :::column-end:::
 :::row-end:::  
 
-## Kopieren des Eigenschaftswerts einer Netzwerkanforderung  
+## <a name="copy-property-value-of-a-network-request"></a>Kopieren des Eigenschaftswerts einer Netzwerkanforderung  
 
 <!-- Title: Copy response JSON in Network tool using the contextual menu  -->  
 <!-- Subtitle:  The Network tool now has a more consistent UX.  Easily copy the JSON response using the contextual menu.  -->  
@@ -185,7 +185,7 @@ Zum Kopieren des Eigenschaftswerts in die Zwischenablage navigieren Sie zu [Form
    :::column-end:::
 :::row-end:::  
 
-## Anpassen von mehrfach gedrückten Tastenkombinationen  
+## <a name="customize-multi-press-keyboard-shortcuts"></a>Anpassen von mehrfach gedrückten Tastenkombinationen  
 
 <!-- Title: Customize multi-press keyboard shortcuts  -->  
 <!-- Subtitle: Create custom multi-press keyboard shortcuts in the shortcut editor.  -->  
@@ -200,7 +200,7 @@ Die rote Markierung zeigt beispielsweise eine angepasste Multipress-Tastenkombin
    Multipress-Tastenkombinationen  
 :::image-end:::  
 
-## DevTools-Sprache entspricht nun der Browsersprache  
+## <a name="devtools-now-match-browser-language"></a>DevTools-Sprache entspricht nun der Browsersprache  
 
 Wenn Sie in Microsoft Edge, Version 87, in den [DevTools-Einstellungen][DevtoolsCustomizeIndexSettings] die Einstellung **Übereinstimmung mit der Browser-Sprache** aktiviert haben, entsprach die Sprache von DevTools nicht der Browsersprache.  In Microsoft Edge, Version 88, entspricht DevTools nun der Browsersprache, wenn Sie die Einstellung **Übereinstimmung mit der Browsersprache** aktivieren.  Weitere Informationen zur DevTools-Einstellung **Übereinstimmung mit der Browsersprache** erhalten Sie, wenn Sie zu [Ändern der DevTools-Spracheinstellungen][DevtoolsCustomizeLocalization] navigieren.  
 
@@ -208,11 +208,11 @@ Wenn Sie in Microsoft Edge, Version 87, in den [DevTools-Einstellungen][Devtools
    DevTools-Einstellung **Übereinstimmung mit der Browsersprache** in Japanisch  
 :::image-end:::  
 
-## Ankündigungen aus dem Chromium-Projekt  
+## <a name="announcements-from-the-chromium-project"></a>Ankündigungen aus dem Chromium-Projekt  
 
 [!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]  
 
-### Neue Visualisierungstools für CSS-Winkel  
+### <a name="new-css-angle-visualization-tools"></a>Neue Visualisierungstools für CSS-Winkel  
 
 DevTools unterstützt jetzt das Debuggen von CSS-Winkeln besser.  Wenn auf ein HTML-Element auf Ihrer Seite ein CSS-Winkel angewendet wurde, wird neben dem Winkel im **Stile**-Tool ein Uhrensymbol angezeigt.  Wenn Sie die Uhr-Überlagerung ein-/ausschalten möchten, wählen Sie das Uhrensymbol aus.  Wenn Sie den Winkel ändern möchten, wählen Sie eine beliebige Stelle in der Uhr aus, oder ziehen Sie am Zeiger.  Zum Ändern des Winkelwerts können Sie auch Mausverfahren und Tastenkombinationen verwenden.  <!--  To learn more, navigate to [Angle Clock][DevtoolsCssReferenceChangeAngleValueWithAngleClock].  -->  Navigieren Sie zu den Problemen [1126178][CR1126178] und [1138633][CR1138633], um Echtzeitupdates für dieses Feature im Open-Source-Projekt Chromium zu überprüfen.  
 
@@ -222,13 +222,13 @@ Für das Beispiel wird der folgende CSS-Winkel verwendet.
 
 ```css
 background: linear-gradient(100deg, lightblue, pink);
-```
+```  
 
 :::image type="complex" source="../../media/2020/11/css-angle.msft.png" alt-text="CSS-Winkel" lightbox="../../media/2020/11/css-angle.msft.png":::
    CSS-Winkel  
 :::image-end:::  
 
-### Simulieren der Speicherkontingentgröße im Speicherbereich  
+### <a name="simulate-storage-quota-size-in-the-storage-pane"></a>Simulieren der Speicherkontingentgröße im Speicherbereich  
 
 Sie können jetzt die Größe des Speicherkontingents im Bereich **Speicher** außer Kraft setzen.  Dieses Feature ermöglicht es Ihnen, verschiedene Geräte zu simulieren und das Verhalten Ihrer Website oder App in Szenarien mit wenig verfügbarem Speicherplatz zu testen.  Führen Sie die folgenden Aktionen aus, um das Speicherkontingent zu simulieren.  
 
@@ -242,7 +242,7 @@ Weitere Informationen zum Emulieren von mobilen Geräten und anderen Features in
    Simulieren der Speicherkontingentgröße  
 :::image-end:::  
 
-### Melden von CORS-Fehlern im Netzwerk-Tool  
+### <a name="report-cors-errors-in-the-network-tool"></a>Melden von CORS-Fehlern im Netzwerk-Tool  
 
 Testen Sie dieses Feature, indem Sie zur [CORS-Fehlerdemo][GlitchCorsErrors] navigieren.  Öffnen Sie das Tool **Netzwerk**, aktualisieren Sie die Seite, und beobachten Sie die fehlerhafte CORS-Netzwerkanforderung.  In der Statusspalte wird der **CORS-Fehler** angezeigt.  Wenn Sie auf den Fehler zeigen, wird in der QuickInfo nun der Fehlercode angezeigt.  In Microsoft Edge, Version 87 und früheren Versionen, hat DevTools nur den generischen **(failed)**-Status für CORS-Fehler angezeigt.  Navigieren Sie zu Problem [1141824][CR1141824], um Echtzeitupdates für dieses Feature im Open-Source-Projekt Chromium zu überprüfen.  
 
@@ -250,9 +250,9 @@ Testen Sie dieses Feature, indem Sie zur [CORS-Fehlerdemo][GlitchCorsErrors] nav
    CORS-Fehler  
 :::image-end:::  
 
-### Updates der Frame-Detailansicht  
+### <a name="frame-details-view-updates"></a>Updates der Frame-Detailansicht  
 
-#### Informationen zur ursprungsübergreifenden Isolierung in der Frame-Detailansicht  
+#### <a name="cross-origin-isolation-information-in-the-frame-details-view"></a>Informationen zur ursprungsübergreifenden Isolierung in der Frame-Detailansicht  
 
 Der Status ursprungsübergreifend isoliert (cross-origin isolated) wird nun unter dem Abschnitt **Sicherheit & Isolierung** angezeigt.  Der neue Abschnitt **API-Verfügbarkeit** zeigt die Verfügbarkeit von `SharedArrayBuffer`s \(SAB\) und ob die Puffer mit `postMessage()` freigegeben werden können.  Eine Warnung „veraltet“ wird angezeigt, wenn der SAB und `postMessage()` derzeit verfügbar sind, der Kontext aber nicht ursprungsübergreifend isoliert ist.  Weitere Informationen zur ursprungsübergreifenden Isolierung und warum sie für Features wie `SharedArrayBuffers` erforderlich ist, finden Sie unter [WindowOrWorkerGlobalScope.crossOriginIsolated][MdnWindoworworkerglobalscopeCrossoriginisolated].  Navigieren Sie zu Problem [1139899][CR1139899], um Echtzeitupdates dieser Funktion im Open-Source-Projekt Chromium zu überprüfen.  
 
@@ -260,7 +260,7 @@ Der Status ursprungsübergreifend isoliert (cross-origin isolated) wird nun unte
    Informationen über einen anderen Ursprung  
 :::image-end:::  
 
-#### Neue Web-Worker-Informationen in der Frame-Detailansicht  
+#### <a name="new-web-workers-information-in-the-frame-details-view"></a>Neue Web-Worker-Informationen in der Frame-Detailansicht  
 
 DevTools organisiert nun Web-Worker unter dem entsprechenden übergeordneten Frame.  Beispiel: Wenn der `someName`-Frame `worker.js` erstellt, wird `worker.js` unter `someName` in der Liste **Frames** angezeigt.  Führen Sie die folgenden Aktionen aus, um die Details des Web-Worker anzuzeigen.  
 
@@ -275,7 +275,7 @@ Navigieren Sie zu den Problemen [1122507][CR1122507] und [1051466][CR1051466], u
    Informationen für Web-Worker  
 :::image-end:::  
 
-#### Anzeigen von Details zum öffnenden Frame für geöffnete Fenster  
+#### <a name="display-opener-frame-details-for-opened-windows"></a>Anzeigen von Details zum öffnenden Frame für geöffnete Fenster  
 
 DevTools organisiert nun geöffnete [Fenster][MdnWindowConstructors] unter dem relevanten übergeordneten [Frame][MdnWindowFrames].  Wenn beispielsweise der `top`-Frame ein `Window` mit `https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium` öffnet, wird das `Window` unter `top` in der Liste **Frames** angezeigt.  
 
@@ -297,7 +297,7 @@ Navigieren Sie zu Problem [1107766][CR1107766], um den Verlauf dieses Features i
    Details zum geöffneten Frame  
 :::image-end:::  
 
-### Kopieren von StackTrace für den Netzwerkinitiator  
+### <a name="copy-stacktrace-for-network-initiator"></a>Kopieren von StackTrace für den Netzwerkinitiator  
 
 Führen Sie die folgenden Aktionen aus, um den StackTrace in Ihre Zwischenablage zu kopieren.  
 
@@ -310,7 +310,7 @@ Navigieren Sie zu Problem [1139615][CR1139615], um den Verlauf dieses Features i
    Kopieren von StackTrace  
 :::image-end:::  
 
-### Vorschau eines Wasm-Variablenwerts bei Mouseover  
+### <a name="preview-wasm-variable-value-on-mouseover"></a>Vorschau eines Wasm-Variablenwerts bei Mouseover  
 
 Verwenden Sie dieses Feature, um den Wert einer WebAssembly \(WASM\)-Variablen zu überprüfen, wenn der Code angehalten wird.  Um den aktuellen Wert einer Variablen anzuzeigen, zeigen Sie auf eine Variable.  Navigieren Sie zu den Problemen [1058836][CR1058836] und [1071432][CR1071432], um Echtzeitupdates für dieses Feature im Open-Source-Projekt Chromium zu überprüfen.  
 
@@ -318,7 +318,7 @@ Verwenden Sie dieses Feature, um den Wert einer WebAssembly \(WASM\)-Variablen z
    Vorschau von Wasm-Variable bei Mouseover  
 :::image-end:::  
 
-### Einheitliche Maßeinheiten für die Größe von Dateien und Arbeitsspeicher  
+### <a name="consistent-units-of-measurement-for-sizes-of-files-and-memory"></a>Einheitliche Maßeinheiten für die Größe von Dateien und Arbeitsspeicher  
 
 DevTools verwendet jetzt einheitlich `kB`, um die Größe von Dateien und Arbeitsspeicher anzuzeigen.  Zuvor wurden in DevTools `kB` und `KiB` gemischt.
 
@@ -327,11 +327,11 @@ DevTools verwendet jetzt einheitlich `kB`, um die Größe von Dateien und Arbeit
     
 Das **Netzwerk**-Tool hat beispielsweise zuvor `kB` in den Beschriftungen, aber `KiB` in Berechnungen verwendet.  Ihr Feedback hat gezeigt, dass diese Inkonsistenz Verwirrung stiftet.  Navigieren Sie zu Problem [1035309][CR1035309], um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen.  
 
-## Herunterladen der Microsoft Edge-Vorschaukanäle  
+## <a name="download-the-microsoft-edge-preview-channels"></a>Herunterladen der Microsoft Edge-Vorschaukanäle  
 
 Wenn Sie unter Windows, Linux oder macOS arbeiten, sollten Sie die [Microsoft Edge-Vorschaukanäle][MicrosoftEdgePreviewChannels] als Standardentwicklungsbrowser verwenden.  Über die Vorschaukanäle erhalten Sie Zugriff auf die neuesten DevTools-Features.  
 
-## Mit dem Microsoft Edge DevTools-Team Kontakt aufnehmen  
+## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge DevTools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
@@ -372,7 +372,7 @@ Wenn Sie unter Windows, Linux oder macOS arbeiten, sollten Sie die [Microsoft Ed
 [CR1035309]: https://crbug.com/1035309 "Problem 1035309: DevTools sollte konsistent MB für Megabyte verwenden, nicht Mebibyte | Chromium-Fehler"  
 [CR1051466]: https://crbug.com/1051466 "Problem 1051466: Unterstützung für COOP/COEP-Debugging in DevTools | Chromium-Fehler"  
 [CR1058836]: https://crbug.com/1058836 "Problem 1058836: UX-Probleme rund um das WASM-Debuggen | Chromium-Fehler"  
-[CR1071432]: https://crbug.com/1071432 "Problem 1071432: ☂︝ Wasm Basic Developer Experience | Chromium-Bugs"  
+[CR1071432]: https://crbug.com/1071432 "Problem 1071432: ☂️ Grundlegende Wasm-Entwicklererfahrung | Chromium-Fehler"  
 [CR1107766]: https://crbug.com/1107766 "Problem 1107766: Anzeigen von Informationen zu von 'window.open()' generierten Frames in der Frame-Struktur | Chromium-Fehler"  
 [CR1122507]: https://crbug.com/1122507 "Problem 1122507: Anzeigen von Worker-Informationen in der Framestrukturansicht | Chromium-Fehler"  
 [CR1126178]: https://crbug.com/1126178 "Problem 1126178: ☂ Devtools: CSS <type>-Komponenten | Chromium-Fehler"  
