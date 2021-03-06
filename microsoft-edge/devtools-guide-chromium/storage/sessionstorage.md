@@ -1,18 +1,18 @@
 ---
-description: Informationen zum Anzeigen und Bearbeiten von sessionStorage mit dem Sitzungsspeicher Bereich und der Konsole.
-title: Anzeigen und Bearbeiten des Sitzungs Speichers mit Microsoft Edge devtools
+description: Anzeigen und Bearbeiten von sessionStorage mit dem Sitzungsspeicherbereich und der Konsole.
+title: Anzeigen und Bearbeiten des Sitzungsspeichers mit Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: e31e45abc5eac26d297cd9bc9fca43778dd74300
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: cf00d71302e7a1f16ba1cceaa17c9380245d12f8
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11231195"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398007"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,82 +28,82 @@ ms.locfileid: "11231195"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Anzeigen und Bearbeiten des Sitzungs Speichers mit Microsoft Edge devtools  
+# <a name="view-and-edit-session-storage-with-microsoft-edge-devtools"></a>Anzeigen und Bearbeiten des Sitzungsspeichers mit Microsoft Edge DevTools  
 
-In diesem Leitfaden wird gezeigt, wie Sie [sessionStorage][MDNSessionStorage] -Schlüssel-Wert-Paare mithilfe von [Microsoft Edge devtools][MicrosoftEdgeDevTools] anzeigen, bearbeiten und löschen.  
+In diesem Handbuch erfahren Sie, wie [Sie Microsoft Edge DevTools][MicrosoftEdgeDevTools] zum Anzeigen, Bearbeiten und Löschen von SessionStorage-Schlüssel-Wert-Paaren verwenden. [][MDNSessionStorage]  
 
-## Anzeigen von sessionStorage-Schlüsseln und-Werten  
+## <a name="view-sessionstorage-keys-and-values"></a>Anzeigen von sessionStorage-Schlüsseln und -Werten  
 
-1.  Wählen Sie die Registerkarte **Anwendung** aus, um das **Anwendungs** Tool zu öffnen.  Standardmäßig wird der Bereich **Manifest** angezeigt.  
+1.  Wählen Sie die **Registerkarte Anwendung** aus, um das **Anwendungstool zu** öffnen.  Der **Manifestbereich** wird standardmäßig angezeigt.  
     
-    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="Bereich ' Manifest '" lightbox="../media/storage-application-manifest.msft.png":::
-       Bereich ' **Manifest** '  
+    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="Der Manifestbereich" lightbox="../media/storage-application-manifest.msft.png":::
+       Der **Manifestbereich**  
     :::image-end:::  
     
-1.  Erweitern Sie das Menü **Sitzungsspeicher** .  
+1.  Erweitern Sie **das Menü Sitzungsspeicher.**  
     
-    :::image type="complex" source="../media/storage-application-storage-session-storage.msft.png" alt-text="Das Menü Sitzungsspeicher" lightbox="../media/storage-application-storage-session-storage.msft.png":::
-       Das Menü " **Sitzungsspeicher** "  
+    :::image type="complex" source="../media/storage-application-storage-session-storage.msft.png" alt-text="Das Menü "Sitzungsspeicher"" lightbox="../media/storage-application-storage-session-storage.msft.png":::
+       Das **Menü "Sitzungsspeicher"**  
     :::image-end:::  
     
-1.  Wählen Sie eine Domäne aus, um die Schlüssel-Wert-Paare anzuzeigen.  
+1.  Wählen Sie eine Domäne aus, um die Schlüssel-Wert-Paare anzeigen zu können.  
     
-    :::image type="complex" source="../media/storage-application-storage-session-storage-domain.msft.png" alt-text="Die sessionStorage-Schlüssel-Wert-Paare" lightbox="../media/storage-application-storage-session-storage-domain.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-session-storage-domain.msft.png" alt-text="Die SessionStorage-Schlüssel-Wert-Paare" lightbox="../media/storage-application-storage-session-storage-domain.msft.png":::
        Die `sessionStorage` Schlüssel-Wert-Paare  
     :::image-end:::  
     
-1.  Wählen Sie eine Zeile der Tabelle aus, um den Wert im Viewer unter der Tabelle anzuzeigen.  
+1.  Wählen Sie eine Zeile der Tabelle aus, um den Wert im Viewer unterhalb der Tabelle anzeigen zu können.  
     
     :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-selected.msft.png" alt-text="Anzeigen des Werts des x-sid-Schlüssels" lightbox="../media/storage-application-storage-session-storage-domain-key-value-selected.msft.png":::
        Anzeigen des Werts des `x-sid` Schlüssels  
     :::image-end:::  
     
-## Erstellen eines neuen sessionStorage-Schlüssel-Wert-Paars  
+## <a name="create-a-new-sessionstorage-key-value-pair"></a>Erstellen eines neuen sessionStorage-Schlüssel-Wert-Paars  
 
-1.  [Anzeigen der sessionStorage-Schlüssel-Wert-Paare einer Domäne](#view-sessionstorage-keys-and-values)  
-1.  Doppelklicken Sie auf den leeren Teil der Tabelle.  DevTools erstellt eine neue Zeile und fokussiert den Cursor in der **Schlüssel** Spalte.  
+1.  [Zeigen Sie die sessionStorage-Schlüssel-Wert-Paare einer Domäne an.](#view-sessionstorage-keys-and-values)  
+1.  Doppelklicken Sie auf den leeren Teil der Tabelle.  DevTools erstellt eine neue Zeile und konzentriert den Cursor in der **Spalte Schlüssel.**  
     
-    :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png" alt-text="Der leere Teil der Tabelle zum doppelklicken, um ein neues Schlüssel-Wert-Paar zu erstellen" lightbox="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png":::
-       Der leere Teil der Tabelle zum doppelklicken, um ein neues Schlüssel-Wert-Paar zu erstellen  
+    :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png" alt-text="Der leere Teil der Tabelle, auf den sie doppelklicken soll, um ein neues Schlüssel-Wert-Paar zu erstellen." lightbox="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png":::
+       Der leere Teil der Tabelle, auf den sie doppelklicken soll, um ein neues Schlüssel-Wert-Paar zu erstellen.  
     :::image-end:::  
     
-## Bearbeiten von sessionStorage-Schlüsseln oder-Werten  
+## <a name="edit-sessionstorage-keys-or-values"></a>Bearbeiten von sessionStorage-Schlüsseln oder -Werten  
 
-1.  [Anzeigen der sessionStorage-Schlüssel-Wert-Paare einer Domäne](#view-sessionstorage-keys-and-values)  
-1.  Doppelklicken Sie auf eine Zelle in der Spalte **Schlüssel** oder **Wert** , um diesen Schlüssel oder Wert zu bearbeiten.  
+1.  [Zeigen Sie die sessionStorage-Schlüssel-Wert-Paare einer Domäne an.](#view-sessionstorage-keys-and-values)  
+1.  Doppelklicken Sie in der Spalte **Schlüssel** oder **Wert** auf eine Zelle, um diesen Schlüssel oder Wert zu bearbeiten.  
     
     :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-edit.msft.png" alt-text="Bearbeiten eines sessionStorage-Schlüssels" lightbox="../media/storage-application-storage-session-storage-domain-key-value-edit.msft.png":::
        Bearbeiten eines `sessionStorage` Schlüssels  
     :::image-end:::  
     
-## Löschen von sessionStorage-Schlüssel-Wert-Paaren  
+## <a name="delete-sessionstorage-key-value-pairs"></a>SessionStorage-Schlüssel-Wert-Paare löschen  
 
-1.  [Anzeigen der `sessionStorage` Schlüssel-Wert-Paare einer Domäne](#view-sessionstorage-keys-and-values)  
-1.  Wählen Sie das Schlüssel-Wert-Paar aus, das Sie löschen möchten.  DevTools hebt das Blau hervor, um anzugeben, dass es markiert ist.  
-1.  Wählen Sie den `Delete` Schlüssel aus, oder wählen Sie **Ausgewählte löschen** ( ![ Ausgewählte löschen ][ImageDeleteIcon] \) aus.  
+1.  [Zeigen Sie `sessionStorage` die Schlüssel-Wert-Paare einer Domäne an.](#view-sessionstorage-keys-and-values)  
+1.  Wählen Sie das Schlüssel-Wert-Paar aus, das Sie löschen möchten.  DevTools hebt es blau hervor, um anzugeben, dass es ausgewählt ist.  
+1.  Wählen Sie `Delete` den Schlüssel aus, oder wählen **Sie Ausgewählte \(** ![ Ausgewählte Option löschen ][ImageDeleteIcon] \) aus.  
     
-## Löschen aller sessionStorage-Schlüssel-Wert-Paare für eine Domäne  
+## <a name="delete-all-sessionstorage-key-value-pairs-for-a-domain"></a>Löschen aller sessionStorage-Schlüssel-Wert-Paare für eine Domäne  
 
-1.  [Anzeigen der `sessionStorage` Schlüssel-Wert-Paare einer Domäne](#view-sessionstorage-keys-and-values)  
-1.  Wählen Sie **Alle löschen** \ ( ![ Alle löschen ][ImageClearIcon] \) aus.  
+1.  [Zeigen Sie `sessionStorage` die Schlüssel-Wert-Paare einer Domäne an.](#view-sessionstorage-keys-and-values)  
+1.  Wählen **Sie Alle löschen** \( Alle löschen ![ ][ImageClearIcon] \).  
     
-## Interagieren mit sessionStorage über die Konsole  
+## <a name="interact-with-sessionstorage-from-the-console"></a>Interagieren mit sessionStorage über die Konsole  
 
-Da sie JavaScript in der **Konsole**ausführen können und die **Konsole** Zugriff auf die JavaScript-Kontexte der Seite hat, ist es möglich, mit `sessionStorage` der **Konsole**zu interagieren.  
+Da Sie JavaScript in der Konsole **** ausführen können **und**die Konsole Zugriff auf die JavaScript-Kontexte der Seite hat, ist es möglich, mit über die Konsole `sessionStorage` zu **interagieren.**  
 
-1.  Verwenden Sie das **JavaScript** -Kontextmenü, um den JavaScript-Kontext der **Konsole** zu ändern, wenn Sie auf die `sessionStorage` Schlüssel-Wert-Paare einer anderen Domäne als auf die Seite zugreifen möchten, auf der Sie sich befinden.  
+1.  Verwenden Sie **das Menü JavaScript-Kontexte,** **** um den JavaScript-Kontext der Konsole zu ändern, wenn Sie auf die Schlüssel-Wert-Paare einer anderen Domäne als der Seite zugreifen möchten, auf der `sessionStorage` Sie sich befinden.  
     
     :::image type="complex" source="../media/storage-console-domain-selection.msft.png" alt-text="Ändern des JavaScript-Kontexts der Konsole" lightbox="../media/storage-console-domain-selection.msft.png":::
        Ändern des JavaScript-Kontexts der **Konsole**  
     :::image-end:::  
     
-1.  Führen Sie Ihre `sessionStorage` Ausdrücke in der **Konsole**wie in Ihrem JavaScript aus.  
+1.  Führen Sie `sessionStorage` Ihre Ausdrücke in **der Konsole**aus, die mit Ihrem JavaScript identisch ist.  
     
     :::image type="complex" source="../media/storage-console-session-storage-keys.msft.png" alt-text="Interagieren mit sessionStorage über die Konsole" lightbox="../media/storage-console-session-storage-keys.msft.png":::
-       Interagieren mit `sessionStorage` der **Konsole**  
+       Interagieren mit `sessionStorage` über die **Konsole**  
     :::image-end:::  
     
-## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -114,13 +114,13 @@ Da sie JavaScript in der **Konsole**ausführen können und die **Konsole** Zugri
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chrom)-Entwicklertools | Microsoft docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Entwicklertools | Microsoft Docs"  
 
-[MDNSessionStorage]: https://developer.mozilla.org/docs/Web/API/Window/sessionStorage "Window. sessionStorage | MDN"  
+[MDNSessionStorage]: https://developer.mozilla.org/docs/Web/API/Window/sessionStorage "Window.sessionStorage | MDN"  
 
 > [!NOTE]
 > Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
-> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/storage/sessionstorage) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
+> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/storage/sessionstorage) und wird von [Kayce Basken][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) verfasst.  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  

@@ -1,851 +1,379 @@
 ---
-description: DevTools Protocol Version 0,2 (EdgeHTML) Reference für die Debugger-Domäne. Die Debugger-Domäne macht JavaScript-Debugfunktionen verfügbar. Sie ermöglicht das Festlegen und Entfernen von Haltepunkten, durchlaufen der Ausführung, Durchsuchen von Stapelablaufverfolgungen usw.
-title: Debugger-Domäne – devtools-Protokoll Version 0,2 (EdgeHTML)
+description: DevTools Protocol Version 0.2 (EdgeHTML)-Referenz für die Debuggerdomäne. Die Debuggerdomäne macht JavaScript-Debuggingfunktionen verfügbar. Es ermöglicht das Festlegen und Entfernen von Haltepunkten, das Schrittweise Durchbrechen der Ausführung, das Untersuchen von Stapelverfolgungen usw.
+title: Debuggerdomäne – DevTools Protocol Version 0.2 (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.date: 11/03/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
-ms.date: 11/19/2020
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 24571b3a32acf085dd9ccbd641b1e5b06b3b9504
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 00c410812edd4d11e9904a489955e7fd218a7e5d
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11233638"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398175"
 ---
-# Debugger-Domäne – devtools-Protokoll Version 0,2 (EdgeHTML)  
-
-Die Debugger-Domäne macht JavaScript-Debugfunktionen verfügbar. Sie ermöglicht das Festlegen und Entfernen von Haltepunkten, durchlaufen der Ausführung, Durchsuchen von Stapelablaufverfolgungen usw.
-
-| | |
-|-|-|
-| [**Methoden**](#methods) | [aktivieren](#enable), [Deaktivieren](#disable), [getPossibleBreakpoints](#getpossiblebreakpoints), [setBreakpointsActive](#setbreakpointsactive), [setBreakpointByUrl](#setbreakpointbyurl), [setbreak Point](#setbreakpoint), [removeBreakpoint](#removebreakpoint), [Zustellung](#stepover), [stepInto](#stepinto), [aussteigen](#stepout), [Anhalten](#pause), [fortsetzen](#resume), [getScriptSource](#getscriptsource), [setPauseOnExceptions](#setpauseonexceptions), [evaluateOnCallFrame](#evaluateoncallframe), [setvariablevalue](#setvariablevalue), [setBlackboxPatterns](#setblackboxpatterns), [msSetDebuggerPropertyValue](#mssetdebuggerpropertyvalue) |
-| [**Veranstaltungen**](#events) | [scriptParsed](#scriptparsed), [breakpointResolved](#breakpointresolved), [angehalten](#paused), [fortgesetzt](#resumed) |
-| [**Typen**](#types) | [Breakpoint](#breakpointid), [CallFrameId](#callframeid), [Location](#location), [BreakLocation](#breaklocation), [CallFrame](#callframe), [Scope](#scope) |
-| [**Abhängigkeiten**](#dependencies) | [Laufzeit](runtime.md) |
-## Methoden
-
-### Aktivieren
-Aktiviert den Debugger für die angegebene Seite. Clients sollten nicht davon ausgehen, dass das Debuggen aktiviert wurde, bis das Ergebnis für diesen Befehl empfangen wurde.
-
-</p>
-
----
-
-### Deaktivieren 
-Deaktiviert den Debugger für die angegebene Seite.
-
-</p>
-
----
-
-### getPossibleBreakpoints
-Gibt mögliche Speicherorte für Breakpoint zurück. die Skript-Nr in Start-und Endbereich-Speicherorten sollte identisch sein.
-
-<table>
-    <thead>
-        <tr>
-            <th>Parameter</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>start</td>
-            <td><a href="#location"><code class="flyout">Location</code></a></td>
-            <td>Anfang des Bereichs, in dem mögliche Haltepunkte in der Position durchsucht werden.</td>
-        </tr>
-        <tr>
-            <td>Aufhören</td>
-            <td><a href="#location"><code class="flyout">Location</code></a></td>
-            <td>Ende des Bereichs, in dem mögliche Haltepunkte in (ohne) durchsucht werden. Wenn keine Angabe erfolgt, wird das Ende von Skripten als Bereichsende verwendet.</td>
-        </tr>
-    </tbody>
-</table>
-<table>
-    <thead>
-        <tr>
-            <th>Gibt</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Speicherorte</td>
-            <td><a href="#breaklocation"><code class="flyout">BreakLocation</code></a></td>
-            <td>Liste der möglichen Haltepunkt Positionen</td>
-        </tr>
-    </tbody>
-</table>
-</p>
-
----
-
-### setBreakpointsActive
-Aktiviert/deaktiviert alle Haltepunkte auf der Seite.
-
-<table>
-    <thead>
-        <tr>
-            <th>Parameter</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>active</td>
-            <td><code class="flyout">boolean</code></td>
-            <td>Neuer Wert für Haltepunkte für aktiven Zustand.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
-
----
-
-### setBreakpointByUrl
-Legt den JavaScript-Haltepunkt an einer bestimmten Position fest, die entweder durch URL oder URL Regex angegeben wird. Sobald dieser Befehl ausgegeben wurde, haben alle vorhandenen analysierten Skripts Haltepunkte aufgelöst und werden in der Eigenschaft zurückgegeben <code>locations</code> . Eine weitere übereinstimmende Skript Analyse führt dazu, dass nachfolgende <code>breakpointResolved</code> Ereignisse ausgegeben werden. Dieser logische Haltepunkt überlebt das erneute Laden von Seiten.
-
-<table>
-    <thead>
-        <tr>
-            <th>Parameter</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>LineNumber</td>
-            <td><code class="flyout">integer</code></td>
-            <td>Die Nummer der Zeile, auf die der Haltepunkt gesetzt werden soll.</td>
-        </tr>
-        <tr>
-            <td>URL <br/> <i>Optional</i></td>
-            <td><code class="flyout">string</code></td>
-            <td>Die URL der Ressourcen, auf die der Haltepunkt gesetzt werden soll.</td>
-        </tr>
-        <tr>
-            <td>urlRegex <br/> <i>Optional</i></td>
-            <td><code class="flyout">string</code></td>
-            <td>Regex-Muster für die URLs der Ressourcen zum Festlegen von Haltepunkten. Entweder <code>url</code> oder <code>urlRegex</code> muss angegeben werden.</td>
-        </tr>
-        <tr>
-            <td>ColumnNumber <br/> <i>Optional</i></td>
-            <td><code class="flyout">integer</code></td>
-            <td>Offset in der Zeile, an der der Haltepunkt gesetzt werden soll.</td>
-        </tr>
-        <tr>
-            <td>Bedingung <br/> <i>Optional</i></td>
-            <td><code class="flyout">string</code></td>
-            <td>Ausdruck, der als Haltepunktbedingung verwendet werden soll. Wenn angegeben, wird der Debugger nur an dem Haltepunkt angehalten, wenn dieser Ausdruck wahr ausgewertet wird.</td>
-        </tr>
-    </tbody>
-</table>
-<table>
-    <thead>
-        <tr>
-            <th>Gibt</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Haltepunkt-Nr</td>
-            <td><a href="#breakpointid"><code class="flyout">BreakpointId</code></a></td>
-            <td>Die ID des erstellten Haltepunkts für Weitere Verweise.</td>
-        </tr>
-        <tr>
-            <td>Speicherorte</td>
-            <td><a href="#location"><code class="flyout">Location[]</code></a></td>
-            <td>Liste der Speicherorte, in die dieser Haltepunkt nach dem Hinzufügen aufgelöst wurde.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
-
----
-
-### setbreaker
-Legt den JavaScript-Haltepunkt an einer bestimmten Position fest.
-
-<table>
-    <thead>
-        <tr>
-            <th>Parameter</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Lage</td>
-            <td><a href="#location"><code class="flyout">Location</code></a></td>
-            <td>Die Position, an der der Haltepunkt gesetzt werden soll.</td>
-        </tr>
-        <tr>
-            <td>Bedingung <br/> <i>Optional</i></td>
-            <td><code class="flyout">string</code></td>
-            <td>Ausdruck, der als Haltepunktbedingung verwendet werden soll. Wenn angegeben, wird der Debugger nur an dem Haltepunkt angehalten, wenn dieser Ausdruck wahr ausgewertet wird.</td>
-        </tr>
-    </tbody>
-</table>
-<table>
-    <thead>
-        <tr>
-            <th>Gibt</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Haltepunkt-Nr</td>
-            <td><a href="#breakpointid"><code class="flyout">BreakpointId</code></a></td>
-            <td>Die ID des erstellten Haltepunkts für Weitere Verweise.</td>
-        </tr>
-        <tr>
-            <td>actualLocation</td>
-            <td><a href="#location"><code class="flyout">Location</code></a></td>
-            <td>Ort, in den dieser Haltepunkt aufgelöst wurde.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
-
----
-
-### removeBreakpoint
-Entfernt den JavaScript-Haltepunkt.
-
-<table>
-    <thead>
-        <tr>
-            <th>Parameter</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Haltepunkt-Nr</td>
-            <td><a href="#breakpointid"><code class="flyout">BreakpointId</code></a></td>
-            <td></td>
-        </tr>
-    </tbody>
-</table>
-</p>
-
----
-
-### Zustellung
-Schritte über die Anweisung.
-
-</p>
-
----
-
-### stepInto
-Tritt in den Funktionsaufruf ein.
-
-</p>
-
----
-
-### stepOut
-Schritte aus dem Funktionsaufruf.
-
-</p>
-
----
-
-### pause
-Stoppt bei der nächsten JavaScript-Anweisung.
-
-</p>
-
----
-
-### resume
-Setzt die JavaScript-Ausführung fort.
-
-</p>
-
----
-
-### getScriptSource
-Gibt die Quelle für das Skript mit der angegebenen ID zurück.
-
-<table>
-    <thead>
-        <tr>
-            <th>Parameter</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>SkriptID</td>
-            <td><a href="runtime.md#scriptid"><code class="flyout">Runtime.ScriptId</code></a></td>
-            <td>Die ID des Skripts, für das die Quelle abgerufen werden soll.</td>
-        </tr>
-    </tbody>
-</table>
-<table>
-    <thead>
-        <tr>
-            <th>Gibt</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>scriptSource</td>
-            <td><code class="flyout">string</code></td>
-            <td>Skript Quelle.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
-
----
-
-### setPauseOnExceptions
-Definiert die Pause für den Ausnahmezustand. Kann so eingestellt werden, dass bei allen Ausnahmen, nicht abgefangene Ausnahmen oder ohne Ausnahmen, beendet wird. Anfängliche Pause für Ausnahmen Zustand ist <code>none</code> .
-
-<table>
-    <thead>
-        <tr>
-            <th>Parameter</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Zustand</td>
-            <td><code class="flyout">string</code> <br/> <i>Zulässige Werte: keine, nicht abgefangen, alle</i></td>
-            <td>Pausieren im Ausnahmen Modus.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
-
----
-
-### evaluateOnCallFrame
-Wertet den Ausdruck für einen angegebenen Aufruf Frame aus.
-
-<table>
-    <thead>
-        <tr>
-            <th>Parameter</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>callFrameId</td>
-            <td><a href="#callframeid"><code class="flyout">CallFrameId</code></a></td>
-            <td>Die Frame-ID des Anrufs für die Auswertung.</td>
-        </tr>
-        <tr>
-            <td>Ausdruck</td>
-            <td><code class="flyout">string</code></td>
-            <td>Ausdruck, der ausgewertet werden soll.</td>
-        </tr>
-    </tbody>
-</table>
-<table>
-    <thead>
-        <tr>
-            <th>Gibt</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Ergebnis</td>
-            <td><a href="runtime.md#remoteobject"><code class="flyout">Runtime.RemoteObject</code></a></td>
-            <td>Objektwrapper für das Auswertungsergebnis</td>
-        </tr>
-    </tbody>
-</table>
-</p>
-
----
-
-### setvariablevalue
-Ändert den Wert der Variablen in einem callframe. Objektbasierte Bereiche werden nicht unterstützt und müssen manuell mutiert werden.
-
-<table>
-    <thead>
-        <tr>
-            <th>Parameter</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>scopeNumber</td>
-            <td><code class="flyout">integer</code></td>
-            <td>0-basierte Anzahl des Bereichs, wie er in der Bereichskette aufgeführt ist. Nur "local"-, "Closure"-und "Catch"-Bereichstypen sind zulässig. Andere Bereiche können manuell manipuliert werden.</td>
-        </tr>
-        <tr>
-            <td>variableName</td>
-            <td><code class="flyout">string</code></td>
-            <td>Name der Variablen.</td>
-        </tr>
-        <tr>
-            <td>NewValue</td>
-            <td><a href="runtime.md#callargument"><code class="flyout">Runtime.CallArgument</code></a></td>
-            <td>Neuer Variablenwert.</td>
-        </tr>
-        <tr>
-            <td>callFrameId</td>
-            <td><a href="#callframeid"><code class="flyout">CallFrameId</code></a></td>
-            <td>Die ID der callframe, die Variable enthält.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
-
----
-
-### setBlackboxPatterns
-<span><b>Experimenteller. </b></span>Ersetzen Sie frühere Blackbox-Muster durch übergebene. Zwingt das Back-End, die Schritt-oder Pausierung in Skripts zu überspringen, wobei die URL einem der Muster entspricht. Der Debugger versucht, das blackboxed-Skript zu verlassen, indem es mehrere Male "Step in" ausführt und schließlich auf "Step out" zurückgegriffen wird, wenn es nicht erfolgreich ist.
-
-<table>
-    <thead>
-        <tr>
-            <th>Parameter</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Muster</td>
-            <td><code class="flyout">string[]</code></td>
-            <td>Array von Regexps, die verwendet werden, um die Skript-URL für den Blackbox-Zustand zu überprüfen.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
-
----
-
-### msSetDebuggerPropertyValue
-<span><b>Experimenteller. </b></span>Microsoft: legt die angegebene Debugger-Eigenschaft auf den angegebenen Wert fest.
-
-<table>
-    <thead>
-        <tr>
-            <th>Parameter</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>debuggerPropertyId</td>
-            <td><code class="flyout">string</code></td>
-            <td>Microsoft: die Eigenschafts-ID (also msDebuggerPropertyId), die Sie festlegen möchten.</td>
-        </tr>
-        <tr>
-            <td>NewValue</td>
-            <td><code class="flyout">string</code></td>
-            <td></td>
-        </tr>
-    </tbody>
-</table>
-</p>
-
----
-
-## Veranstaltungen
-
-### scriptParsed
-Wird ausgelöst, wenn das Skript analysiert wird. Dieses Ereignis wird beim Aktivieren des Debuggers auch für alle bekannten und nicht gesammelten Skripts ausgelöst.
-
-<table>
-    <thead>
-        <tr>
-            <th>Parameter</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>SkriptID</td>
-            <td><a href="runtime.md#scriptid"><code class="flyout">Runtime.ScriptId</code></a></td>
-            <td>Der Bezeichner des analysierten Skripts.</td>
-        </tr>
-        <tr>
-            <td>URL</td>
-            <td><code class="flyout">string</code></td>
-            <td>Die URL oder der Name des analysierten Skripts (sofern vorhanden).</td>
-        </tr>
-        <tr>
-            <td>startLine</td>
-            <td><code class="flyout">integer</code></td>
-            <td>Der Offset des Skripts innerhalb der Ressource mit der angegebenen URL (für Skripttags).</td>
-        </tr>
-        <tr>
-            <td>startColumn</td>
-            <td><code class="flyout">integer</code></td>
-            <td>Spaltenoffset des Skripts innerhalb der Ressource mit der angegebenen URL.</td>
-        </tr>
-        <tr>
-            <td>endLine</td>
-            <td><code class="flyout">integer</code></td>
-            <td>Letzte Zeile des Skripts.</td>
-        </tr>
-        <tr>
-            <td>endColumn</td>
-            <td><code class="flyout">integer</code></td>
-            <td>Die Länge der letzten Zeile des Skripts.</td>
-        </tr>
-        <tr>
-            <td>executionContextId</td>
-            <td><a href="runtime.md#executioncontextid"><code class="flyout">Runtime.ExecutionContextId</code></a></td>
-            <td>Gibt den Skript Erstellungs Kontext an.</td>
-        </tr>
-        <tr>
-            <td>sourceMapURL <br/> <i>Optional</i></td>
-            <td><code class="flyout">string</code></td>
-            <td>Die URL der Quell Karte, die dem Skript zugeordnet ist (sofern vorhanden).</td>
-        </tr>
-        <tr>
-            <td>Länge <br/> <i>Optional</i></td>
-            <td><code class="flyout">integer</code></td>
-            <td><span><b>Experimenteller. </b></span>Diese Skript Länge.</td>
-        </tr>
-        <tr>
-            <td>msParentId <br/> <i>Optional</i></td>
-            <td><code class="flyout">string</code></td>
-            <td><span><b>Experimenteller. </b></span>Hierbei handelt es sich um die übergeordnete Dokument-ID.</td>
-        </tr>
-        <tr>
-            <td>msMimeType <br/> <i>Optional</i></td>
-            <td><code class="flyout">string</code></td>
-            <td><span><b>Experimenteller. </b></span>Dies ist der MIME-Typ.</td>
-        </tr>
-        <tr>
-            <td>msIsDynamicCode <br/> <i>Optional</i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td><span><b>Experimenteller. </b></span>Gibt an, ob es sich um dynamischen Code handelt.</td>
-        </tr>
-        <tr>
-            <td>msLongDocumentId <br/> <i>Optional</i></td>
-            <td><code class="flyout">integer</code></td>
-            <td><span><b>Experimenteller. </b></span>Dies ist die lange Dokument-ID.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
-
----
-
-### breakpointResolved
-Wird ausgelöst, wenn der Haltepunkt zu einem tatsächlichen Skript und Speicherort aufgelöst wird.
-
-<table>
-    <thead>
-        <tr>
-            <th>Parameter</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Haltepunkt-Nr</td>
-            <td><a href="#breakpointid"><code class="flyout">BreakpointId</code></a></td>
-            <td>Eindeutiger Haltepunktbezeichner.</td>
-        </tr>
-        <tr>
-            <td>Lage</td>
-            <td><a href="#location"><code class="flyout">Location</code></a></td>
-            <td>Tatsächliche Haltepunktposition.</td>
-        </tr>
-        <tr>
-            <td>msLength <br/> <i>Optional</i></td>
-            <td><code class="flyout">integer</code></td>
-            <td><span><b>Experimenteller. </b></span>Microsoft: Länge des Codes (also Anzahl der Zeichen) an der Haltepunktposition.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
-
----
-
-### angehalten
-Wird ausgelöst, wenn die Debugger für einen Haltepunkt oder eine Ausnahme unterbrechen.
-
-<table>
-    <thead>
-        <tr>
-            <th>Parameter</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>callFrames</td>
-            <td><a href="#callframe"><code class="flyout">CallFrame[]</code></a></td>
-            <td>Aufrufliste der Debugger wurde angehalten.</td>
-        </tr>
-        <tr>
-            <td>Grund</td>
-            <td><code class="flyout">string</code> <br/> <i>Zulässige Werte: Haltepunkt, Schritt, Ausnahme, sonstige, EventListener</i></td>
-            <td>Grund für Pause.</td>
-        </tr>
-        <tr>
-            <td>data <br/> <i>Optional</i></td>
-            <td><code class="flyout">object</code></td>
-            <td>Objekt, das Bruch spezifische Zusatzeigenschaften enthält.</td>
-        </tr>
-        <tr>
-            <td>hitBreakpoints <br/> <i>Optional</i></td>
-            <td><code class="flyout">string[]</code></td>
-            <td>Treffer Haltepunkte-IDs</td>
-        </tr>
-        <tr>
-            <td>asyncStackTrace <br/> <i>Optional</i></td>
-            <td><!--  <a href="#stacktrace">  --><code class="flyout">StackTrace</code><!--  </a>  --></td>
-            <td>Asynchrone JavaScript-Stapelüberwachung.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
-
----
-
-### wieder
-Wird ausgelöst, wenn der Debugger die Ausführung fortsetzt.
-
-</p>
-
----
-
-## Typen
-
-### <a name="breakpointid"></a> Haltepunkt-Nr `string`
-
-Haltepunkt-ID.
-
-</p>
-
----
-
-### <a name="callframeid"></a> CallFrameId `string`
-
-Anruf Rahmen-ID.
-
-</p>
-
----
-
-### <a name="location"></a> Pfad `object`
-
-Speicherort im Quellcode.
-
-<table>
-    <thead>
-        <tr>
-            <th>Eigenschaften</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>SkriptID</td>
-            <td><a href="runtime.md#scriptid"><code class="flyout">Runtime.ScriptId</code></a></td>
-            <td>Skriptbezeichner, wie in <code>Debugger.scriptParsed</code> .</td>
-        </tr>
-        <tr>
-            <td>LineNumber</td>
-            <td><code class="flyout">integer</code></td>
-            <td>Die Nummer der Zeile im Skript (0-basiert).</td>
-        </tr>
-        <tr>
-            <td>ColumnNumber <br/> <i>Optional</i></td>
-            <td><code class="flyout">integer</code></td>
-            <td>Spaltennummer im Skript (0-basiert)</td>
-        </tr>
-        <tr>
-            <td>msLength</td>
-            <td><code class="flyout">integer</code></td>
-            <td>Microsoft: Länge des Codes (also Anzahl der Zeichen) an diesem Aufruf Frame.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
-
----
-
-### <a name="breaklocation"></a> BreakLocation `object`
-
-Position im Quellcode unterbrechen.
-
-<table>
-    <thead>
-        <tr>
-            <th>Eigenschaften</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>SkriptID</td>
-            <td><a href="runtime.md#scriptid"><code class="flyout">Runtime.ScriptId</code></a></td>
-            <td>Skriptbezeichner, wie in <code>Debugger.scriptParsed</code> .</td>
-        </tr>
-        <tr>
-            <td>LineNumber</td>
-            <td><code class="flyout">integer</code></td>
-            <td>Die Nummer der Zeile im Skript (0-basiert).</td>
-        </tr>
-        <tr>
-            <td>ColumnNumber <br/> <i>Optional</i></td>
-            <td><code class="flyout">integer</code></td>
-            <td>Spaltennummer im Skript (0-basiert)</td>
-        </tr>
-        <tr>
-            <td>msLength</td>
-            <td><code class="flyout">integer</code></td>
-            <td>Microsoft: Länge des Codes (also Anzahl der Zeichen) an diesem Aufruf Frame.</td>
-        </tr>
-        <tr>
-            <td>Typ <br/> <i>Optional</i></td>
-            <td><code class="flyout">string</code></td>
-            <td>Zulässige Werte: debuggerStatement, Aufruf, zurück.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
-
----
-
-### <a name="callframe"></a> CallFrame `object`
-
-JavaScript-Anruf Rahmen. Array von Anruf Frames aus der Aufrufliste.
-
-<table>
-    <thead>
-        <tr>
-            <th>Eigenschaften</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>callFrameId</td>
-            <td><a href="#callframeid"><code class="flyout">CallFrameId</code></a></td>
-            <td>Anruf Rahmen-ID. Dieser Bezeichner ist nur gültig, wenn der Debugger angehalten wurde.</td>
-        </tr>
-        <tr>
-            <td>FunctionName</td>
-            <td><code class="flyout">string</code></td>
-            <td>Der Name der JavaScript-Funktion, die in diesem Aufruf Frame aufgerufen wird.</td>
-        </tr>
-        <tr>
-            <td>functionLocation <br/> <i>Optional</i></td>
-            <td><a href="#location"><code class="flyout">Location</code></a></td>
-            <td><span><b>Experimenteller. </b></span>Speicherort im Quellcode.</td>
-        </tr>
-        <tr>
-            <td>Lage</td>
-            <td><a href="#location"><code class="flyout">Location</code></a></td>
-            <td>Speicherort im Quellcode.</td>
-        </tr>
-        <tr>
-            <td>URL</td>
-            <td><code class="flyout">string</code></td>
-            <td>JavaScript-Skriptname oder-URL.</td>
-        </tr>
-        <tr>
-            <td>scopeChain</td>
-            <td><a href="#scope"><code class="flyout">Scope[]</code></a></td>
-            <td>Bereichskette für diesen Aufruf Frame.</td>
-        </tr>
-        <tr>
-            <td>Diese</td>
-            <td><a href="runtime.md#remoteobject"><code class="flyout">Runtime.RemoteObject</code></a></td>
-            <td><code>this</code> das Objekt für diesen Anruf Frame.</td>
-        </tr>
-        <tr>
-            <td>returnValue <br/> <i>Optional</i></td>
-            <td><a href="runtime.md#remoteobject"><code class="flyout">Runtime.RemoteObject</code></a></td>
-            <td>Der Wert, der zurückgegeben wird, wenn sich die Funktion am Rückgabe Punkt befindet.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
-
----
-
-### <a name="scope"></a> Bereich `object`
-
-Beschreibung des Bereichs
-
-<table>
-    <thead>
-        <tr>
-            <th>Eigenschaften</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Typ</td>
-            <td><code class="flyout">string</code> <br/> <i>Zulässige Werte: Global, local, with, Closure, catch, Block, Script, eval, Module, Return</i></td>
-            <td>Scope-Typ.</td>
-        </tr>
-        <tr>
-            <td>Objekt</td>
-            <td><a href="runtime.md#remoteobject"><code class="flyout">Runtime.RemoteObject</code></a></td>
-            <td>Das Objekt, das den Bereich darstellt. Für <code>global</code> und <code>with</code> Bereiche stellt es das eigentliche Objekt dar; für die restlichen Bereiche ist es ein künstliches Transienten Objekt, das Bereichsvariablen als Eigenschaften auflistet.</td>
-        </tr>
-        <tr>
-            <td>name <br/> <i>Optional</i></td>
-            <td><code class="flyout">string</code></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>StartLocation <br/> <i>Optional</i></td>
-            <td><a href="#location"><code class="flyout">Location</code></a></td>
-            <td>Speicherort im Quellcode, in dem der Bereich beginnt</td>
-        </tr>
-        <tr>
-            <td>endLocation <br/> <i>Optional</i></td>
-            <td><a href="#location"><code class="flyout">Location</code></a></td>
-            <td>Speicherort im Quellcode, in dem der Bereich endet</td>
-        </tr>
-    </tbody>
-</table>
-</p>
-
----
-
-## Abhängigkeiten
-
-[Laufzeit](runtime.md)
+# <a name="debugger-domain---devtools-protocol-version-02-edgehtml"></a>Debuggerdomäne – DevTools Protocol Version 0.2 (EdgeHTML)  
+
+Die Debuggerdomäne macht JavaScript-Debuggingfunktionen verfügbar. Es ermöglicht das Festlegen und Entfernen von Haltepunkten, das Schrittweise Durchbrechen der Ausführung, das Untersuchen von Stapelverfolgungen usw.
+
+| Klassifizierung | Member |  
+|:--- |:--- |  
+| [**Methoden**](#methods) | [enable](#enable), [disable](#disable), [getPossibleBreakpoints](#getpossiblebreakpoints), [setBreakpointsActive](#setbreakpointsactive), [setBreakpointByUrl](#setbreakpointbyurl), [setBreakpoint](#setbreakpoint), [removeBreakpoint](#removebreakpoint), [stepOver](#stepover), [stepInto](#stepinto), [stepOut](#stepout), [pause](#pause), [resume](#resume), [getScriptSource](#getscriptsource), [setPauseOnExceptions](#setpauseonexceptions), [evaluateOnCallFrame](#evaluateoncallframe), [setVariableValue](#setvariablevalue), [setBlackboxPatterns](#setblackboxpatterns), [msSetDebuggerPropertyValue](#mssetdebuggerpropertyvalue) |  
+| [**Veranstaltungen**](#events) | [scriptParsed](#scriptparsed), [breakpointResolved](#breakpointresolved), [paused](#paused), [resumed](#resumed) |  
+| [**Typen**](#types) | [BreakpointId](#breakpointid), [CallFrameId](#callframeid), [Location](#location), [BreakLocation](#breaklocation), [CallFrame](#callframe), [Scope](#scope) |  
+| [**Abhängigkeiten**](#dependencies) | [Laufzeit](./runtime.md) |  
+
+## <a name="methods"></a>Methoden  
+
+### <a name="enable"></a>Aktivieren  
+
+Aktiviert den Debugger für die angegebene Seite. Clients sollten nicht davon ausgehen, dass das Debuggen aktiviert wurde, bis das Ergebnis für diesen Befehl empfangen wurde.  
+
+&nbsp;  
+
+---  
+
+### <a name="disable"></a>Deaktivieren   
+
+Deaktiviert den Debugger für eine bestimmte Seite.  
+
+&nbsp;  
+
+---  
+
+### <a name="getpossiblebreakpoints"></a>getPossibleBreakpoints  
+
+Gibt mögliche Speicherorte für Haltepunkte zurück. scriptId an Start- und Endbereichspositionen sollte identisch sein.  
+
+| Parameter | Typ | Details |  
+|:--- |:--- |:--- |  
+| start | [Ort](#location) | Anfang des Bereichs zum Durchsuchen möglicher Haltepunktpositionen in. |  
+| Aufhören | [Ort](#location) | Ende des Bereichs, um mögliche Haltepunktpositionen in \(ohne\) zu durchsuchen.  Wenn nicht angegeben, wird das Ende der Skripts als Ende des Bereichs verwendet. |  
+
+| Gibt zurück | Typ | Details |  
+|:--- |:--- |:--- |  
+| Speicherorte | [BreakLocation](#breaklocation) | Liste der möglichen Haltepunktpositionen. |  
+
+---  
+
+### <a name="setbreakpointsactive"></a>setBreakpointsActive  
+
+Aktiviert/deaktiviert alle Haltepunkte auf der Seite.  
+
+| Parameter | Typ | Details |  
+|:--- |:--- |:--- |  
+| active | `boolean` | Neuer Wert für den aktiven Zustand der Haltepunkte. | 
+
+---  
+
+### <a name="setbreakpointbyurl"></a>setBreakpointByUrl  
+
+Legt den JavaScript-Haltepunkt an einem bestimmten Speicherort fest, der entweder durch URL oder URL regex angegeben wird.  Sobald dieser Befehl ausgegeben wurde, werden für alle vorhandenen analysierten Skripts Haltepunkte aufgelöst und in der Eigenschaft `locations` zurückgegeben.  Eine weitere übereinstimmende Skript-Analyse führt zu nachfolgenden `breakpointResolved` Ereignissen.  Dieser logische Haltepunkt überdauert seitenladen.  
+
+| Parameter | Typ | Details |  
+|:--- |:--- |:--- |  
+| lineNumber | `integer` | Zeilennummer zum Festlegen des Haltepunkts. | 
+| url \(optional\) | `string` | URL der Ressourcen, auf die der Haltepunkt festgelegt werden soll. |  
+| urlRegex \(optional\) | `string` | Regex-Muster für die URLs der Ressourcen zum Festlegen von Haltepunkten.  Entweder `url` oder muss angegeben `urlRegex` werden. |  
+| columnNumber \(optional\) | `integer` | Offset in der Linie, um den Haltepunkt zu festlegen. |  
+| Bedingung \(optional\) | `string` | Ausdruck, der als Haltepunktbedingung verwendet werden soll. Wenn angegeben, wird der Debugger nur dann am Haltepunkt beendet, wenn dieser Ausdruck auf true ausgewertet wird. |  
+
+| Gibt zurück | Typ | Details |  
+|:--- |:--- |:--- |  
+| breakpointId | [BreakpointId](#breakpointid) | ID des erstellten Haltepunkts für weitere Referenz. |  
+| Speicherorte | [Location[]](#location) | Liste der Speicherorte, in die dieser Haltepunkt beim Hinzufügen aufgelöst wurde. |  
+
+---  
+
+### <a name="setbreakpoint"></a>setBreakpoint  
+
+Legt den JavaScript-Haltepunkt an einem bestimmten Speicherort fest.  
+
+| Parameter | Typ | Details |  
+|:--- |:--- |:--- |  
+| location | [Ort](#location) | Speicherort zum Festlegen des Haltepunkts. |  
+| Bedingung \(optional\) | `string` | Ausdruck, der als Haltepunktbedingung verwendet werden soll.  Wenn angegeben, wird der Debugger nur dann am Haltepunkt beendet, wenn dieser Ausdruck auf true ausgewertet wird. |  
+
+| Gibt zurück | Typ | Details |  
+|:--- |:--- |:--- |  
+| breakpointId | [BreakpointId](#breakpointid) | ID des erstellten Haltepunkts für weitere Referenz. |  
+| actualLocation | [Ort](#location) | Speicherort, in den dieser Haltepunkt aufgelöst wurde. |  
+
+---  
+
+### <a name="removebreakpoint"></a>removeBreakpoint  
+
+Entfernt den JavaScript-Haltepunkt.  
+
+| Parameter | Typ | Details |  
+|:--- |:--- |:--- |  
+| breakpointId | [BreakpointId](#breakpointid) | &nbsp; |  
+
+---  
+
+### <a name="stepover"></a>stepOver  
+
+Schritte über die Anweisung.  
+
+&nbsp;  
+
+---  
+
+### <a name="stepinto"></a>stepInto  
+
+Schritte in den Funktionsaufruf.  
+
+&nbsp;  
+
+---  
+
+### <a name="stepout"></a>stepOut  
+
+Tritt aus dem Funktionsaufruf aus.  
+
+&nbsp;  
+
+---  
+
+### <a name="pause"></a>pause  
+
+Stoppt bei der nächsten JavaScript-Anweisung.  
+
+&nbsp;  
+
+---  
+
+### <a name="resume"></a>resume  
+
+Setzt die JavaScript-Ausführung fort.  
+
+&nbsp;  
+
+---  
+
+### <a name="getscriptsource"></a>getScriptSource  
+
+Gibt die Quelle für das Skript mit der angegebenen ID zurück.  
+
+| Parameter | Typ | Details |  
+|:--- |:--- |:--- |  
+| scriptId | [Runtime.ScriptId](./runtime.md#scriptid) | DIE ID des Skripts, für das Die Quelle erhalten werden soll. |  
+
+| Gibt zurück | Typ | Details |  
+|:--- |:--- |:--- |  
+| scriptSource | `string` | Skriptquelle. | 
+
+---  
+
+### <a name="setpauseonexceptions"></a>setPauseOnExceptions  
+
+Definiert pause on exceptions state.  Kann so festgelegt werden, dass alle Ausnahmen, nicht abgefangenen Ausnahmen oder keine Ausnahmen beendet werden.  Die anfängliche Pause für den Ausnahmezustand ist `none` .  
+
+| Parameter | Typ | Details |  
+|:--- |:--- |:--- |  
+| state | `string` | Halten Sie den Ausnahmemodus an.  Zulässige Werte:  `none` `uncaught` , , `all` |  
+
+---  
+
+### <a name="evaluateoncallframe"></a>evaluateOnCallFrame  
+
+Wertet Ausdruck für einen bestimmten Aufrufrahmen aus.  
+
+| Parameter | Typ | Details |  
+|:--- |:--- |:--- |  
+| callFrameId | [CallFrameId](#callframeid) | Anrufrahmen-ID, die ausgewertet werden soll. |  
+| Ausdruck | `string` | Ausdruck, der ausgewertet werden soll. | 
+
+| Gibt zurück | Typ | Details |  
+|:--- |:--- |:--- |  
+| result | [Runtime.RemoteObject](./runtime.md#remoteobject) | Objektwrapper für das Auswertungsergebnis. |  
+
+---  
+
+### <a name="setvariablevalue"></a>setVariableValue  
+
+Ändert den Wert der Variablen in einem Callframe.  Objektbasierte Bereiche werden nicht unterstützt und müssen manuell mutiert werden.  
+
+| Parameter | Typ | Details |  
+|:--- |:--- |:--- |  
+| scopeNumber | `integer` | 0-basierte Anzahl des Bereichs, wie in der Bereichskette aufgeführt.  Nur `local` , `closure` und `catch` Bereichstypen sind zulässig.  Andere Bereiche können manuell bearbeitet werden. | 
+| variableName | `string` | Variabler Name. | 
+| newValue | [Runtime.CallArgument](./runtime.md#callargument) | Neuer Variabler Wert. |  
+| callFrameId | [CallFrameId](#callframeid) | ID des Callframes, der eine Variable enthält. |  
+
+---  
+
+### <a name="setblackboxpatterns"></a>setBlackboxPatterns  
+
+**Experimental**.  Ersetzen Sie vorherige Blackboxmuster durch übergebene Muster.  Erzwingt das Back-End, das Schrittweise/Anhalten in Skripts zu überspringen, deren URL mit einem der Muster übereinstimmen.  Der Debugger versucht, das blackboxed-Skript zu verlassen, indem er mehrmals "Einschritt" ausgeführt hat, und schließlich zu "Step out" greifen, wenn dies nicht erfolgreich ist.  
+
+
+| Parameter | Typ | Details |  
+|:--- |:--- |:--- |  
+| Muster | `string[]` | Array von Regexps, das zum Überprüfen der Skript-URL auf den Blackboxstatus verwendet wird. | 
+
+---  
+
+### <a name="mssetdebuggerpropertyvalue"></a>msSetDebuggerPropertyValue  
+
+**Experimental**.  Microsoft: Legt die angegebene Debuggereigenschaft auf den angegebenen Wert fest.  
+
+| Parameter | Typ | Details |  
+|:--- |:--- |:--- |  
+| debuggerPropertyId | string | Microsoft: Die eigenschafts-ID \(d. h. `msDebuggerPropertyId` \), die festgelegt werden soll. | 
+| newValue | `string` | &nbsp; |  
+
+---  
+
+## <a name="events"></a>Veranstaltungen  
+
+### <a name="scriptparsed"></a>scriptParsed  
+
+Wird ausgelöst, wenn das Skript analysiert wird. Dieses Ereignis wird auch für alle bekannten und nicht abgeholten Skripts beim Aktivieren des Debuggers ausgelöst.  
+
+| Parameter | Typ | Details |  
+|:--- |:--- |:--- |  
+| scriptId | [Runtime.ScriptId](./runtime.md#scriptid) | Bezeichner des analysierten Skripts. |  
+| URL | `string` | URL oder Name des analysierten Skripts \(falls ein\). | 
+| startLine | `integer` | Zeilenversatz des Skripts innerhalb der Ressource mit der angegebenen URL \(für Skripttags\). | 
+| startColumn | `integer` | Spaltenversatz des Skripts innerhalb der Ressource mit einer angegebenen URL. | 
+| endLine | `integer` | Letzte Zeile des Skripts. | 
+| endColumn | `integer` | Länge der letzten Zeile des Skripts. | 
+| executionContextId | [Runtime.ExecutionContextId](./runtime.md#executioncontextid) | Gibt den Kontext für die Skripterstellung an. |  
+| sourceMapURL \(optional\) | `string` | URL der Quellzuordnung, die dem Skript zugeordnet ist (falls eine). |  
+| length \(optional\) | `integer` | **Experimental**.  Diese Skriptlänge. |  
+| msParentId \(optional\) | `string` | **Experimental**.  Dies ist die übergeordnete Dokument-ID. |  
+| msMimeType \(optional\) | `string` | **Experimental**.  Dies ist der Mimetyp. |  
+| msIsDynamicCode \(optional\) | `boolean` | **Experimental**.  Dies gibt an, ob es sich um dynamischen Code handelt. |  
+| msLongDocumentId \(optional\) | `integer` | **Experimental**.  Dies ist die lange Dokument-ID. |  
+
+---  
+
+### <a name="breakpointresolved"></a>breakpointResolved  
+
+Wird ausgelöst, wenn der Haltepunkt in ein tatsächliches Skript und einen tatsächlichen Speicherort aufgelöst wird.  
+
+| Parameter | Typ | Details |  
+|:--- |:--- |:--- |  
+| breakpointId | [BreakpointId](#breakpointid) | Eindeutiger Bezeichner des Haltepunkts. |  
+| location | [Ort](#location) | Tatsächliche Haltepunktposition. |  
+| msLength \(optional\) | `integer` | **Experimental**.  Microsoft: Länge des Codes \(d. h. Anzahl der Zeichen\) am Haltepunktspeicherort. |  
+
+---  
+
+### <a name="paused"></a>angehalten  
+
+Wird ausgelöst, wenn der Debugger für einen Haltepunkt oder eine Ausnahme umbricht.  
+
+| Parameter | Typ | Details |  
+|:--- |:--- |:--- |  
+| callFrames | [CallFrame[]](#callframe) | Aufrufstapel, auf dem der Debugger beendet wurde. |  
+| reason | `string` |  Grund anhalten.  Zulässige Werte:  `breakpoint` , , , , `step` `exception` `other` und `EventListener` |  
+| data \(optional\) | `object` | Objekt mit unterbrechungsspezifischen Hilfseigenschaften. |  
+| hitBreakpoints \(optional\) | `string[]` | Hit breakpoints IDs |  
+| asyncStackTrace \(optional\) | `StackTrace` | JavaScript async stack trace. |  
+
+---  
+
+### <a name="resumed"></a>fortgesetzt  
+
+Wird ausgelöst, wenn der Debugger die Ausführung wieder auf sich nimmt.  
+
+&nbsp;  
+
+---  
+
+## <a name="types"></a>Typen  
+
+### <a name="breakpointid-string"></a>BreakpointId-Zeichenfolge  
+
+<a name="breakpointid"></a>  
+
+Haltepunkt-ID.  
+
+&nbsp;  
+
+---  
+
+### <a name="callframeid-string"></a>CallFrameId-Zeichenfolge  
+
+<a name="callframeid"></a>  
+
+Anrufrahmen-ID.  
+
+&nbsp;  
+
+---  
+
+### <a name="location-object"></a>Location-Objekt  
+
+<a name="location"></a>  
+
+Speicherort im Quellcode.  
+
+| Eigenschaften | Typ | Details |  
+|:--- |:--- |:--- |  
+| scriptId | [Runtime.ScriptId](./runtime.md#scriptid) | Skript-ID, wie in der `Debugger.scriptParsed` angegeben. |  
+| lineNumber | `integer` | Zeilennummer im Skript \(0-basiert\). |  
+| columnNumber \(optional\) | `integer` | Spaltennummer im Skript \(0-basiert\). |  
+| msLength | `integer` | Microsoft: Länge des Codes \(d. h. Anzahl der Zeichen\) in diesem Aufrufrahmen. |  
+
+---  
+
+### <a name="breaklocation-object"></a>BreakLocation-Objekt  
+
+<a name="breaklocation"></a>  
+
+Speicherort im Quellcode umbrechen.  
+
+| Eigenschaften | Typ | Details |  
+|:--- |:--- |:--- |  
+| scriptId | [Runtime.ScriptId](./runtime.md#scriptid) | Skript-ID, wie in der `Debugger.scriptParsed` angegeben. |  
+| lineNumber | `integer` | Zeilennummer im Skript \(0-basiert\). |  
+| columnNumber \(optional\) | `integer` | Spaltennummer im Skript \(0-basiert\). |  
+| msLength | `integer` | Microsoft: Länge des Codes \(d. h. Anzahl der Zeichen\) in diesem Aufrufrahmen. |  
+| Typ \(optional\) | `string` | Zulässige Werte: debuggerStatement, call, return. |  
+
+---  
+
+### <a name="callframe-object"></a>CallFrame-Objekt  
+
+<a name="callframe"></a>  
+
+JavaScript-Aufrufrahmen. Array von Anrufframes bilden die Aufrufliste.  
+
+| Eigenschaften | Typ | Details |  
+|:--- |:--- |:--- |  
+| callFrameId | [CallFrameId](#callframeid) | Anrufrahmen-ID.  Dieser Bezeichner ist nur gültig, wenn der Debugger angehalten wird. |  
+| functionName | `string` | Name der für diesen Aufrufrahmen aufgerufenen JavaScript-Funktion. |  
+| functionLocation \(optional\) | [Ort](#location) | **Experimental**.  Speicherort im Quellcode. |  
+| location | [Ort](#location) | Speicherort im Quellcode. |  
+| URL | `string` | Name oder URL des JavaScript-Skripts. |  
+| scopeChain | [Scope[]](#scope) | Bereichskette für diesen Anrufrahmen. |  
+| this | [Runtime.RemoteObject](./runtime.md#remoteobject) | `this` -Objekt für diesen Aufrufrahmen. |  
+| returnValue \(optional\) | [Runtime.RemoteObject](./runtime.md#remoteobject) | Der zurückgegebene Wert, wenn sich die Funktion am Rückgabepunkt befindet. |  
+
+---  
+
+### <a name="scope-object"></a>Scope-Objekt  
+
+<a name="scope"></a>  
+
+Bereichsbeschreibung.  
+
+| Eigenschaften | Typ | Details |  
+|:--- |:--- |:--- |  
+| Typ | `string` | Bereichstyp.  Zulässige Werte:  `global` , , , , , , , , `local` , `with` `closure` `catch` `block` `script` `eval` `module` und `return` |  
+| Objekt | [Runtime.RemoteObject](./runtime.md#remoteobject) | Objekt, das den Bereich darstellt.  Für und Bereiche stellt sie das tatsächliche Objekt dar. Für die restlichen Bereiche ist es ein künstliches transientes Objekt, das Bereichsvariablen als `global` `with` Eigenschaften aufzählt. |  
+| Name \(optional\) | `string` | &nbsp; |  
+| startLocation \(optional\) | [Ort](#location) | Speicherort im Quellcode, an dem der Bereich beginnt. |  
+| endLocation \(optional\) | [Ort](#location) | Speicherort im Quellcode, an dem der Bereich endet. |  
+
+---  
+
+## <a name="dependencies"></a>Abhängigkeiten  
+
+[Laufzeit](./runtime.md)  

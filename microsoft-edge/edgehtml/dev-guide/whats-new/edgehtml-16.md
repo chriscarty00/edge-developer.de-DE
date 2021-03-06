@@ -1,112 +1,111 @@
 ---
-ms.assetid: 476c4b7a-be24-434b-a051-83f19d741aaf
-description: Dieser Leitfaden enthält eine Übersicht über die neuen Features und APIs in EdgeHTML 16.
+description: Dieses Handbuch bietet eine Übersicht über die Entwicklerfeatures und -standards, die in EdgeHTML 16 enthalten sind.
 title: Neue Features und APIs in EdgeHTML 16
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.date: 11/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge, Web-Entwicklung, HTML, CSS, JavaScript, Entwickler
-ms.date: 11/19/2020
-ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 7697114546153555d947903eda6bf8477cca3516
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.assetid: 476c4b7a-be24-434b-a051-83f19d741aaf
+keywords: edge, web development, html, css, javascript, developer
+ms.openlocfilehash: e6ec2ec4a3152e9dfe73938784968fe3403d99cf
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11233915"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399197"
 ---
-# Neuerungen in EdgeHTML 16  
+# <a name="whats-new-in-edgehtml-16"></a>Neues in EdgeHTML 16  
 
 [!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
-Nachfolgend finden Sie eine Liste der neuen und aktualisierten Features, die in [EdgeHTML 16](https://blogs.windows.com/msedgedev/2017/10/17) Web Platform ausgeliefert wurden, als Teil des [Windows 10 Fall Creators Update](https://blogs.windows.com/windowsexperience/2017/10/17/whats-new-windows-10-fall-creators-update) \ (10/2017, Build 16299 \).  Änderungen an bestimmten Windows Insider Preview-Builds finden Sie im [Microsoft Edge-Changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog) und [Neuerungen in EdgeHTML](../whats-new.md).  
+Hier finden Sie eine Liste der neuen und aktualisierten Features, die im Rahmen des [Windows 10 Fall Creators Update](https://blogs.windows.com/windowsexperience/2017/10/17/whats-new-windows-10-fall-creators-update) \(10/2017, Build 16299\) auf der [EdgeHTML 16-Webplattform](https://blogs.windows.com/msedgedev/2017/10/17) ausgeliefert wurden.  Änderungen an bestimmten Windows Insider Preview-Builds finden Sie unter [Microsoft Edge Changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog) und [What's New in EdgeHTML](../whats-new.md).  
 
-Hier ist der Permalink für die folgende Liste der  [https://aka.ms/devguide_edgehtml_16](./edgehtml-16.md) Änderungen:  
+Hier sehen Sie den Permalink für die folgende Liste der Änderungen:  [https://aka.ms/devguide_edgehtml_16](./edgehtml-16.md) .  
 
-## Neue und aktualisierte Features  
+## <a name="new-and-updated-features"></a>Neue und aktualisierte Features  
 
-### CSS-Raster Layout  
+### <a name="css-grid-layout"></a>CSS-Rasterlayout  
 
-Microsoft Edge unterstützt jetzt die UN-voreingestellte Implementierung des [CSS-Rasterlayouts](https://www.w3.org/TR/css-grid-1).  Das [Rasterlayout](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout) definiert ein zweidimensionales Grid-basiertes Layoutsystem, das mehr Layout-Fluidität als möglich mit der Positionierung mithilfe von Floats oder Skripts ermöglicht.  Im folgenden Beispiel wird das CSS-Raster Layout verwendet, um die Struktur für eine einfache Webseite zu erstellen.  
+Microsoft Edge unterstützt jetzt die implementierung ohne Präfix von [CSS Grid Layout](https://www.w3.org/TR/css-grid-1).  [Grid Layout](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout) definiert ein zweidimensionales rasterbasiertes Layoutsystem, das mehr Layoutfluidität als möglich durch positionierung mithilfe von Floats oder Skripts ermöglicht.  Im folgenden Beispiel wird css Grid Layout verwendet, um die Struktur für eine einfache Webseite zu erstellen.  
 
-<iframe height='303' scrolling='no' title='CSS-Raster Layout' src='//codepen.io/MSEdgeDev/embed/mMQqZX/?height=303&theme-id=23761&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true'>Sehen Sie sich das Layout "Stift <a href='https://codepen.io/MSEdgeDev/pen/mMQqZX/'> -CSS-Raster" </a> von MSEdgeDev ( <a href='https://codepen.io/MSEdgeDev'> @MSEdgeDev </a> ) auf <a href='https://codepen.io'> CodePen </a> .</iframe>  
+<iframe height='303' scrolling='no' title='CSS-Rasterlayout' src='//codepen.io/MSEdgeDev/embed/mMQqZX/?height=303&theme-id=23761&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true'>Weitere Informationen finden Sie im <a href='https://codepen.io/MSEdgeDev/pen/mMQqZX/'> Stift-CSS-Rasterlayout </a> von MSEdgeDev ( <a href='https://codepen.io/MSEdgeDev'> @MSEdgeDev ) auf </a> <a href='https://codepen.io'> CodePen </a> .</iframe>  
 
-### CSS-Objekt-fit und Objekt-Position  
+### <a name="css-object-fit-and-object-position"></a>CSS-Objekt-Anpassung und Objektposition  
 
-EdgeHTML 16 führt Unterstützung für CSS [`object-fit`](https://developer.mozilla.org/docs/Web/CSS/object-fit) -Eigenschaften und [`object-position`](https://developer.mozilla.org/docs/Web/CSS/object-position) .  Diese Eigenschaften steuern die Position und Größe des ersetzten Inhalts im Feldinhalt.  
+In EdgeHTML 16 wird die Unterstützung von CSS-Eigenschaften und [`object-fit`](https://developer.mozilla.org/docs/Web/CSS/object-fit) . [`object-position`](https://developer.mozilla.org/docs/Web/CSS/object-position)  Diese Eigenschaften steuern die Position und Größe des ersetzten Inhalts innerhalb des Inhaltsfelds.  
 
-### Entwicklungstools  
+### <a name="developer-tools"></a>Entwicklungstools  
 
-In dieser Version haben wir einen wichtigen Microsoft Edge devtools-Umgestaltungs Aufwand für verbesserte Robustheit und Leistung gestartet und außerdem eine Reihe neuer Funktionen hinzugefügt, die Sie heute auf [Windows-Insider](https://insider.windows.com) -Builds verwenden können.  Weitere Informationen zu den Änderungen finden Sie im [Microsoft Edge devtools-Leitfaden](../whats-new.md) .  
+In dieser Version haben wir eine wichtige Umgestaltung von Microsoft Edge DevTools für eine verbesserte Robustheit und Leistung gestartet und außerdem eine Reihe neuer Features hinzugefügt, die Sie heute auf [Windows-Insider-Builds verwenden](https://insider.windows.com) können.  Weitere Informationen zu den Geänderten finden Sie im [Microsoft Edge DevTools-Handbuch.](../whats-new.md)  
 
-### JavaScript  
+### <a name="javascript"></a>JavaScript  
 
-[EdgeHTML 16 baut auf JavaScript-Leistungs](https://blogs.windows.com/msedgedev/2017/10/31) Optimierungen früherer Versionen auf, indem die Fähigkeit des Chakra-Moduls erweitert wird, Funktionen zu verzögern/erneut zu verzögern, polymorphe Inline-Caches zu verwenden und Funktionen mit `try` / `finally` Blöcken zu optimieren.  
+[EdgeHTML 16](https://blogs.windows.com/msedgedev/2017/10/31) baut auf Javascript-Leistungsoptimierungen früherer Versionen auf, indem die Fähigkeit des Moduls zum Zurück-/Zurückspeichern von Funktionen erweitert, polymorphe Inlinecaches verwendet und Funktionen mit Blöcken optimiert `try` / `finally` werden.  
 
-Darüber hinaus sind Features, die in EdgeHTML 15 erstmals in der Vorschau angezeigt werden, jetzt stabil und standardmäßig aktiviert:  
+Darüber hinaus sind features first previewed in EdgeHTML 15 jetzt stabil und standardmäßig aktiviert:  
 
-#### Neue Funktionen  
+#### <a name="new-features"></a>Neue Features  
 
 Standardmäßig aktiviert  
 
-*   [Webassembly](https://developer.microsoft.com/microsoft-edge/platform/status/webassemblymvp/?q=WebAssembly) MVP \ ([Demo](https://webassembly.org/demo))  
-*   [Shared Memory und Atomics](https://developer.microsoft.com/microsoft-edge/platform/status/sharedmemoryandatomics/?q=Atomics)  
+*   [WebAssembly](https://developer.microsoft.com/microsoft-edge/platform/status/webassemblymvp/?q=WebAssembly) MVP \([Demo](https://webassembly.org/demo)\)  
+*   [Freigegebener Speicher und Atome](https://developer.microsoft.com/microsoft-edge/platform/status/sharedmemoryandatomics/?q=Atomics)  
 
-### Payments Request-API  
+### <a name="payment-request-api"></a>Payments Request-API  
 
-Die [Zahlungs Anforderungs-API](../windows-integration/payment-request-api.md) ist ein offener, browserübergreifender Standard, der es Browsern ermöglicht, als Vermittler zwischen Händlern, Verbrauchern und Zahlungsmethoden zu fungieren (wie Kreditkarten \), die von Verbrauchern in der Cloud gespeichert wurden.  Die API in EdgeHTML 16 wurde so aktualisiert, dass Sie der neuesten API-Spezifikation für die W3C [-Zahlungsanforderung](https://w3c.github.io/payment-request) entspricht.  Dies umfasst Folgendes:  
+Die [Zahlungsanforderungs-API](../windows-integration/payment-request-api.md) ist ein offener, browserübergreifender Standard, mit dem Browser als Vermittler zwischen Händlern, Verbrauchern und Zahlungsmethoden \(z. B. Kreditkarten\) fungieren können, die Verbraucher in der Cloud gespeichert haben.  Die API in EdgeHTML 16 wurde so aktualisiert, dass sie der neuesten W3C [Payment Request-API-Spezifikation](https://w3c.github.io/payment-request) entspricht.  Dies umfasst Folgendes:  
 
 *   Unterstützung für die `canMakePayment()` Methode  
 *   Unterstützung für die `requestId` Eigenschaft  
 *   Unterstützung für die `id` Eigenschaft  
-*   Der Standardwert für den `complete()` Parameter der Methode `result` wurde von "" in "unbekannt" geändert.  
+*   Der Standardwert für den Parameter `complete()` der Methode wurde von " " in `result` "unbekannt" geändert.  
 
-### Service Workers  
+### <a name="service-workers"></a>Service Workers  
 
-[Dienstmitarbeiter](https://www.w3.org/TR/service-workers-1) sind ereignisgesteuerte Skripts, die im Hintergrund einer Webseite ausgeführt werden.  Dienstmitarbeiter aktivieren Funktionen, die zuvor nur für systemeigene apps verfügbar waren, wie das Abfangen und behandeln von Anforderungen aus dem Netzwerk, verwalten und behandeln von Hintergrundsynchronisierung, lokalem Speicher und Push-Benachrichtigungen.  Die Unterstützung für Service Worker befindet sich noch in der Entwicklung, doch Sie können Ihre PWA in Microsoft Edge mit unserem experimental Service Worker-Support testen, indem Sie das Feature "Dienstmitarbeiter" in aktivieren `about:flags` .  
+[Service Workers](https://www.w3.org/TR/service-workers-1) sind ereignisgesteuerte Skripts, die im Hintergrund einer Webseite ausgeführt werden.  Service workers aktivieren Funktionen, die bisher nur für systemeigene Apps verfügbar waren, z. B. das Abfangen und Behandeln von Anforderungen aus dem Netzwerk, das Verwalten und Behandeln der Hintergrundsynchronisierung, des lokalen Speichers und der Pushbenachrichtigungen.  Die Unterstützung für Servicemitarbeiter befindet sich noch in der Entwicklung, Aber Sie können Ihre PWA in Microsoft Edge mit unserer experimentellen Service worker-Unterstützung testen, indem Sie das Service Worker-Feature in `about:flags` aktivieren.  
 
-### WebVR  
+### <a name="webvr"></a>WebVR  
 
-WebVR für Microsoft Edge hat Unterstützung für [Motion Controller](https://developer.microsoft.com/windows/mixed-reality/motion_controllers)hinzugefügt.  Diese Controller haben eine präzise Position im Raum, was eine feinkörnige Interaktion mit digitalen Objekten in der virtuellen Realität ermöglicht.  
+WebVR für Microsoft Edge hat unterstützung für [Bewegungscontroller hinzugefügt.](https://developer.microsoft.com/windows/mixed-reality/motion_controllers)  Diese Controller haben eine präzise Position im Raum, sodass eine feinkörnige Interaktion mit digitalen Objekten in der virtuellen Realität ermöglicht wird.  
 
-:::image type="complex" source="../media/MotionControllers.jpg" alt-text="Motion-Controller" lightbox="../media/MotionControllers.jpg":::
-   Motion-Controller  
+:::image type="complex" source="../media/MotionControllers.jpg" alt-text="Bewegungscontroller" lightbox="../media/MotionControllers.jpg":::
+   Bewegungscontroller  
 :::image-end:::  
 
-WebVR wurde ebenfalls optimiert, um zwei unterschiedliche Arten von Erfahrungen zu unterstützen.  
+WebVR wurde außerdem optimiert, um zwei verschiedene Arten von Erfahrungen zu unterstützen.  
 
-**Windows Mixed Reality-PCs** – Desktops und Laptops mit integrierter Grafik.  Wenn Sie an diese Geräte angeschlossen sind, können unsere immersiven Headsets mit 60 Frames pro Sekunde ausgeführt werden.  
-**Windows Mixed Reality Ultra-PCs** – Desktops und Laptops mit diskreten Grafiken.  Wenn Sie an diese Geräte angeschlossen sind, können unsere immersiven Headsets mit 90 Frames pro Sekunde ausgeführt werden.  
+**Windows Mixed Reality PCs** – Desktops und Laptops mit integrierten Grafiken.  Wenn sie an diese Geräte angeschlossen werden, werden unsere immersiven Headsets mit 60 Frames pro Sekunde ausgeführt.  
+**Windows Mixed Reality Ultra PCs** – Desktops und Laptops mit separaten Grafiken.  Wenn sie an diese Geräte angeschlossen werden, werden unsere immersiven Headsets mit 90 Frames pro Sekunde ausgeführt.  
 
-Beide Setups unterstützen die gleichen immersiven Video-und Spielerlebnisse.  
+Beide Setups unterstützen dieselbe immersive Video- und Spielerfahrung.  
 
-Weitere Informationen zu den bevorstehenden Windows-Mixed-Reality-Updates finden Sie im Blogbeitrag [Windows Mixed Reality](https://blogs.windows.com/windowsexperience/2017/08/28/windows-mixed-reality-holiday-update) Holiday Update.  
+Weitere Informationen zu den anstehenden Windows Mixed Reality-Updates finden Sie im [Windows Mixed Reality-Blogbeitrag](https://blogs.windows.com/windowsexperience/2017/08/28/windows-mixed-reality-holiday-update) zum Feiertagsupdate.  
 
-Anleitungen und Demos finden Sie im [WebVR-Entwicklerhandbuch](/microsoft-edge/webvr).  
+Anleitungen und Demos finden Sie im [WebVR Developer Guide](/microsoft-edge/webvr).  
 
  > [!NOTE] 
- > Da sich die WebVR-Spezifikation noch in der Entwicklung befindet, kann sich die Implementierung von Microsoft Edge später in der Zeile ändern.  
+ > Da die WebVR-Spezifikation noch in der Entwicklung ist, kann sich die Implementierung von Microsoft Edge später ändern.  
 
-## Neue APIs in EdgeHTML 16  
+## <a name="new-apis-in-edgehtml-16"></a>Neue APIs in EdgeHTML 16  
 
-Hier finden Sie die vollständige Liste der neuen APIs in EdgeHTML 16.  Sie werden im Format von angezeigt `[interface name].[api name]` .
+Hier ist die vollständige Liste der neuen APIs in EdgeHTML 16.  Sie sind im Format `[interface name].[api name]` aufgeführt.
 
 > [!NOTE] 
-> Obwohl die folgenden APIs im DOM verfügbar gemacht werden, kann sich das End-to-End-Verhalten einiger Entwickler weiterhin entwickeln.  Informationen zum offiziellen Word-Feature-Support finden Sie im  [Microsoft Edge-Platt Form Status](https://developer.microsoft.com/microsoft-edge/platform/status) .  
+> Obwohl die folgenden APIs im DOM verfügbar gemacht werden, ist das End-to-End-Verhalten einiger möglicherweise noch in der Entwicklung.  Das offizielle Wort zur Featureunterstützung finden Sie unter Microsoft Edge-Plattformstatus. [](https://developer.microsoft.com/microsoft-edge/platform/status)  
 
 ---  
 
-<iframe height='559' scrolling='no' title='Neue APIs in EdgeHTML 16' src='//codepen.io/MSEdgeDev/embed/jLGZZY/?height=559&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true'>Weitere Informationen finden Sie in den neuen APIs für Stifte <a href='https://codepen.io/MSEdgeDev/pen/jLGZZY/'> in EdgeHTML 16 </a> von MSEdgeDev ( <a href='https://codepen.io/MSEdgeDev'> @MSEdgeDev </a> ) auf <a href='https://codepen.io'> CodePen </a> .</iframe>  
+<iframe height='559' scrolling='no' title='Neue APIs in EdgeHTML 16' src='//codepen.io/MSEdgeDev/embed/jLGZZY/?height=559&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true'>Weitere Informationen finden Sie in den neuen <a href='https://codepen.io/MSEdgeDev/pen/jLGZZY/'> APIs des Stifts in EdgeHTML 16 </a> von MSEdgeDev ( <a href='https://codepen.io/MSEdgeDev'> @MSEdgeDev ) auf </a> <a href='https://codepen.io'> CodePen </a> .</iframe>  
 
 ---  
 
-## Vorherige EdgeHTML-Versionen  
+## <a name="previous-edgehtml-releases"></a>Frühere EdgeHTML-Versionen  
 
-[EdgeHTML 12/Windows Build 10240 (7/2015)](./edgehtml-12.md)  
+[EdgeHTML 12 / Windows Build 10240 (7/2015)](./edgehtml-12.md)  
 
-[EdgeHTML 13/Windows Build 10586 (11/2015)](./edgehtml-13.md)  
+[EdgeHTML 13 / Windows Build 10586 (11/2015)](./edgehtml-13.md)  
 
-[EdgeHTML 14/Windows Build 14393 (8/2016)](./edgehtml-14.md)  
+[EdgeHTML 14 / Windows Build 14393 (8/2016)](./edgehtml-14.md)  
 
-[EdgeHTML 15/Windows Build 15063 (4/2017)](./edgehtml-15.md)  
+[EdgeHTML 15 / Windows Build 15063 (4/2017)](./edgehtml-15.md)  

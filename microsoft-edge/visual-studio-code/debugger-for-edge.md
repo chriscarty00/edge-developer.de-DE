@@ -1,32 +1,32 @@
 ---
-description: Debuggen von Microsoft Edge (Chrom) und Microsoft Edge (EdgeHTML) aus Visual Studio-Code
-title: Debuggen von Microsoft Edge (Chrom) aus Visual Studio-Code
+description: Debuggen von Microsoft Edge (Chromium) und Microsoft Edge (EdgeHTML) aus Visual Studio Code
+title: Debuggen von Microsoft Edge (Chromium) Visual Studio Code
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/20/2020
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools, vs-Code, Visual Studio-Code, Debugger
-ms.openlocfilehash: df15b76cc26ad01d3b8508362aa4b86998f8b41b
-ms.sourcegitcommit: acf8ad7cb6c8ecf83a6170f8eeb9bec32878f8ff
+keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual studio code, debugger
+ms.openlocfilehash: e36348fc1ef5e30a511e6eda73c7646a85d8717e
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "11182505"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399295"
 ---
-# Debugger für Microsoft Edge Visual Studio-Code Erweiterung  
+# <a name="debugger-for-microsoft-edge-visual-studio-code-extension"></a>Debugger für Microsoft Edge Visual Studio Codeerweiterung  
 
-Mit der [Debugger für Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftEdge] Visual Studio-Code Erweiterung Debuggen Sie den Front-End-JavaScript-Code Zeile für Zeile, und lesen Sie `console.log()` Anweisungen direkt aus [Visual Studio-Code][VisualstudioCode]!  
+Debuggen Sie mit dem [Debugger für Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftEdge] Visual Studio Codeerweiterung Ihre Front-End-JavaScript-Codezeile zeile für Zeile, und sehen Sie anweisungen direkt aus Visual Studio `console.log()` [Code][VisualstudioCode]!  
 
-:::image type="complex" source="./media/debugger-for-edge.gif" alt-text="Debugger für Edge Visual Studio-Code Erweiterung am Arbeitsplatz" lightbox="./media/debugger-for-edge.gif":::
-   Debugger für Edge Visual Studio-Code Erweiterung am Arbeitsplatz  
+:::image type="complex" source="./media/debugger-for-edge.gif" alt-text="Debugger für Edge Visual Studio Codeerweiterung bei der Arbeit" lightbox="./media/debugger-for-edge.gif":::
+   Debugger für Edge Visual Studio Codeerweiterung bei der Arbeit  
 :::image-end:::
 
 <!--![Debugger for Edge Visual Studio Code extension at work][ImageGifDebuggerEdge]  -->  
 
-## Starten von Microsoft Edge  
+## <a name="launching-microsoft-edge"></a>Starten von Microsoft Edge  
 
-Navigieren Sie in der Aktivitäts Leiste zur Debugansicht \ ( `Ctrl` + `Shift` + `D` unter Windows oder `Command` + `Shift` + `D` unter macOS **Activity Bar**\).  Wenn Sie keine Konfigurationen in Visual Studio-Code haben, drücken Sie `F5` Windows oder macOS, oder wählen Sie die grüne Schaltfläche **Wiedergabe** aus.  Wählen Sie in der Dropdownliste die Option **Edge** aus.  Es sollte eine `launch.json` Datei mit der folgenden Konfiguration angezeigt werden.  
+Navigieren Sie in der Aktivitätsleiste zur Debugansicht \( unter Windows oder `Ctrl` + `Shift` + `D` `Command` + `Shift` + `D` unter macOS\). ****  Wenn Sie keine Konfigurationen in Visual Studio Code haben, wählen Sie unter Windows oder macOS aus, oder wählen Sie die grüne Schaltfläche `F5` Wiedergabe aus. ****  Wählen **Sie im Dropdownmenü** Edge aus.  Es sollte eine Datei `launch.json` mit der folgenden Konfiguration angezeigt werden.  
 
 ```json
 {
@@ -43,11 +43,11 @@ Navigieren Sie in der Aktivitäts Leiste zur Debugansicht \ ( `Ctrl` + `Shift` +
 }
 ```  
 
-Wenn Sie `F5` Windows oder macOS drücken oder die grüne wieder **Gabe** -Schaltfläche erneut auswählen, startet Visual Studio-Code Microsoft Edge \ (EdgeHTML \), und Sie können jedes Webprojekt Debuggen, das Sie `8080` direkt im Visual Studio-Code auf Port ausgeführt haben!  
+Wenn Sie unter Windows oder macOS auswählen oder erneut die grüne Schaltfläche "Wiedergabe" auswählen, startet `F5` Visual Studio Code Microsoft Edge \(EdgeHTML\) und Sie können jedes Webprojekt debuggen, das Sie im Port ausgeführt haben, direkt aus Visual Studio **** `8080` Code!  
 
-### Microsoft Edge (Chromium)  
+### <a name="microsoft-edge-chromium"></a>Microsoft Edge (Chromium)  
 
-Wenn Sie Microsoft Edge \ (Chrom \) starten möchten, fügen Sie dem neuen Microsoft Edge anstelle von Microsoft Edge \ (EdgeHTML \) einfach ein `version` Attribut zu Ihrer vorhandenen Konfiguration mit der Version von Microsoft Edge \ (Chromium \) hinzu, die Sie starten möchten \ ( `dev` , `beta` oder `canary` \).  In der folgenden Konfiguration wird die Canary-Version von Microsoft Edge (Chrom \) gestartet.  
+Wenn Sie Microsoft Edge \(Chromium\) starten möchten, fügen Sie dem neuen Microsoft Edge anstelle von Microsoft Edge \(EdgeHTML\) einfach ein Attribut zu Ihrer vorhandenen Konfiguration mit der Version von Microsoft Edge \(Chromium\) hinzu, die Sie `version` starten möchten \( `dev` , oder `beta` `canary` \).  Mit der folgenden Konfiguration wird die Canary-Version von Microsoft Edge \(Chromium\) gestartet.  
 
 ```json
 {
@@ -60,15 +60,15 @@ Wenn Sie Microsoft Edge \ (Chrom \) starten möchten, fügen Sie dem neuen Micro
 }
 ```  
 
-## Anfügen an Microsoft Edge  
+## <a name="attaching-to-microsoft-edge"></a>Anfügen an Microsoft Edge  
 
-Anfügen von Visual Studio-Code an Microsoft Edge \ (Chrom \).  Führen Sie auf Ihrem Terminal den folgenden Befehl aus.  
+Fügen Visual Studio Code an Microsoft Edge \(Chromium\) an.  Führen Sie in Ihrem Terminal den folgenden Befehl aus.  
 
 ```shell
 start msedge --remote-debugging-port=9222
 ```  
 
-Fügen Sie Ihrer Datei die unten aufgeführte Konfiguration hinzu `launch.json` .   
+Fügen Sie der Datei die folgende Konfiguration `launch.json` hinzu.   
 
 ```json
 {
@@ -79,26 +79,26 @@ Fügen Sie Ihrer Datei die unten aufgeführte Konfiguration hinzu `launch.json` 
 }
 ```  
 
-Wenn Sie diese Konfiguration jetzt ausführen, wird Visual Studio-Code an Microsoft Edge \ (Chrom \) angefügt, und Sie können mit dem Debuggen beginnen.  
+Wenn Sie diese Konfiguration jetzt ausführen, Visual Studio Code an Microsoft Edge \(Chromium\) anfügen und mit dem Debuggen beginnen.  
 
-## Mit den Elementen für Microsoft Edge Visual Studio Code Extension Team in Verbindung treten    
+## <a name="getting-in-touch-with-the-elements-for-microsoft-edge-visual-studio-code-extension-team"></a>Kontakt mit dem Team für Elemente für Microsoft Edge Visual Studio Codeerweiterung    
 
-Senden Sie Ihr Feedback, indem Sie im [GitHub Repo][GithubMicrosoftVscodeEdgeDebug2] der Erweiterung [ein Problem einreichen][GithubMicrosoftVscodeEdgeDebug2NewIssue] .  Fügen Sie die Debug-Adapter Protokolldatei ein, die für jeden Testlauf im `%temp%` Verzeichnis mit dem Namen erstellt wird `vscode-edge-debug2.txt` .  Ziehen Sie diese Datei in einen Problem Kommentar, um Sie in GitHub hochzuladen.  
+Senden Sie Ihr Feedback, [indem Sie ein Problem im][GithubMicrosoftVscodeEdgeDebug2NewIssue] [GitHub-Repository der][GithubMicrosoftVscodeEdgeDebug2] Erweiterung einreichen.  Fügen Sie die Protokolldatei des Debugadapters ein, die für jede Ausführung im Verzeichnis mit `%temp%` dem Namen erstellt `vscode-edge-debug2.txt` wird.  Ziehen Sie diese Datei in einen Problemkommentar, um sie auf GitHub hochzuladen.  
 
-Damit die Elemente für die Microsoft Edge Visual Studio-Code Erweiterung besser sind, sind Ihre Beiträge Willkommen!  Finden Sie alles, was Sie für den Einstieg in [GitHub Repo][GithubMicrosoftVscodeEdgeDebug2] der Erweiterung benötigen.  
+Um die Elemente für Microsoft Edge und Visual Studio Codeerweiterung zu verbessern, sind Ihre Beiträge willkommen!  Finden Sie alles, was Sie zum Einstieg in [das GitHub-Repository der][GithubMicrosoftVscodeEdgeDebug2] Erweiterung benötigen.  
 
 
 <!-- image links -->  
 
 <!--[ImageGifDebuggerEdge]: ./media/debugger-for-edge.gif "Debugger for Edge Visual Studio Code extension in action"  -->  
-[ImagePngDebuggerEdge]:./Media/debugger-for-edge.png "Debugger für Edge Visual Studio-Code Erweiterung in Aktion"  
+[ImagePngDebuggerEdge]: ./media/debugger-for-edge.png "Debugger für Edge Visual Studio Codeerweiterung in Aktion"  
 
 <!--links -->  
 
-[VisualstudioCode]: https://code.visualstudio.com "Visual Studio-Code"  
-[VisualStudioCodeDocs]: https://code.visualstudio.com/Docs "Dokumentation | Visual Studio-Code"   
+[VisualstudioCode]: https://code.visualstudio.com "Visual Studio Code"  
+[VisualStudioCodeDocs]: https://code.visualstudio.com/Docs "Dokumentation | Visual Studio Code"   
 
-[GithubMicrosoftVscodeEdgeDebug2]: https://github.com/Microsoft/vscode-edge-debug2 "Microsoft/vscode-Edge-debug2 | GitHub"  
-[GithubMicrosoftVscodeEdgeDebug2NewIssue]: https://github.com/Microsoft/vscode-edge-debug2/issues/new "Neues Problem-Microsoft/vscode-Edge-debug2 | GitHub"  
+[GithubMicrosoftVscodeEdgeDebug2]: https://github.com/Microsoft/vscode-edge-debug2 "microsoft/vscode-edge-debug2 | GitHub"  
+[GithubMicrosoftVscodeEdgeDebug2NewIssue]: https://github.com/Microsoft/vscode-edge-debug2/issues/new "Neues Problem – microsoft/vscode-edge-debug2 | GitHub"  
 
 [VisualstudioMarketplaceDebuggerMicrosoftEdge]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge "Debugger für Microsoft Edge | Visual Studio Marketplace"  

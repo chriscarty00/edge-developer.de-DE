@@ -1,18 +1,18 @@
 ---
-description: Informationen zum Erkennen von Netzwerkproblemen finden Sie im Netzwerk Panel von Microsoft Edge devtools.
+description: Erfahren Sie, wie Sie Netzwerkprobleme im Netzwerkbereich von Microsoft Edge DevTools erkennen.
 title: Leitfaden zu Netzwerkproblemen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 4713dc252d428abbf5b60ee5f74a7316a102dab6
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
+ms.openlocfilehash: 12cc447fa9d8ef8624e8528430eabc25ab523dd0
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125377"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398273"
 ---
 <!-- Copyright Kayce Basques and Jonathan Garbee
 
@@ -28,66 +28,66 @@ ms.locfileid: "11125377"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Leitfaden zu Netzwerkproblemen  
+# <a name="network-issues-guide"></a>Leitfaden zu Netzwerkproblemen  
 
-Dieser Leitfaden zeigt Ihnen, wie Sie Netzwerkprobleme oder Optimierungsmöglichkeiten im Netzwerk Panel von Microsoft Edge devtools erkennen.  
+In diesem Handbuch erfahren Sie, wie Sie Netzwerkprobleme oder Optimierungsmöglichkeiten im Netzwerkbereich von Microsoft Edge DevTools erkennen.  
 
-Informationen zu den Grundlagen der **Netzwerk** Steuerung finden Sie unter [Erste Schritte][NetworkPerformance] .  
+Um die Grundlagen des Netzwerktools **zu** erlernen, navigieren Sie zu [Erste Schritte][NetworkPerformance].  
 
-## Warteschlangen-oder verzögerte Anforderungen  
+## <a name="queued-or-stalled-requests"></a>Anforderungen in der Warteschlange oder in der Warteschlange  
 
 **Symptome**  
 
-Sechs Anforderungen werden gleichzeitig heruntergeladen.  Danach wird eine Reihe von Anforderungen in die Warteschlange gestellt oder angehalten.  Nachdem eine der ersten sechs Anforderungen beendet wurde, wird eine der Anforderungen in der Warteschlange gestartet.  
+Sechs Anforderungen werden gleichzeitig heruntergeladen.  Anschließend wird eine Reihe von Anforderungen in die Warteschlange gestellt oder ins Stocken geraten.  Sobald eine der ersten sechs Anforderungen abgeschlossen ist, wird eine der Anforderungen in der Warteschlange gestartet.  
 
-Im **Wasserfall** in der folgenden Abbildung beginnen die ersten sechs Anforderungen für das `edge-iconx1024.msft.png` Objekt gleichzeitig.  Die nachfolgenden Anforderungen werden angehalten, bis eine der ursprünglichen sechs beendet ist.  
+Im **Wasserfall** in der folgenden Abbildung beginnen die ersten sechs Anforderungen für die `edge-iconx1024.msft.png` Ressource gleichzeitig.  Die nachfolgenden Anforderungen werden bis zum Ende einer der ursprünglichen sechs Beendete beendet.  
 
-:::image type="complex" source="../media/network-network-disabled-cache-resources-queue.msft.png" alt-text="Ein Beispiel für eine Reihe von Warteschlangen oder verzögerten Datenreihen im Netzwerk Panel" lightbox="../media/network-network-disabled-cache-resources-queue.msft.png":::
-   Ein Beispiel für eine Reihe von Warteschlangen oder verzögerten Datenreihen im **Netzwerk** Panel  
+:::image type="complex" source="../media/network-network-disabled-cache-resources-queue.msft.png" alt-text="Ein Beispiel für eine in die Warteschlange eingereihte oder in die Warteschlange geplatzte Datenreihe im Netzwerkbereich" lightbox="../media/network-network-disabled-cache-resources-queue.msft.png":::
+   Ein Beispiel für eine in der Warteschlange oder in der Warteschlange geplatzte Datenreihe im **Netzwerktool**  
 :::image-end:::  
 
 **Ursachen**  
 
-Es werden zu viele Anforderungen an eine einzelne Domäne gestellt.  Bei HTTP/1.0-oder http/1.1-Verbindungen können mit Microsoft Edge maximal sechs gleichzeitige TCP-Verbindungen pro Host ausgeführt werden.  
+Es werden zu viele Anforderungen für eine einzelne Domäne vorgenommen.  Bei HTTP/1.0- oder HTTP/1.1-Verbindungen ermöglicht Microsoft Edge maximal sechs gleichzeitige TCP-Verbindungen pro Host.  
 
-**Korrekturen**  
+**Fixes**  
 
-*   Implementieren Sie Domänen Splitter, wenn Sie http/1.0 oder http/1.1 verwenden müssen.  
-*   Verwenden Sie http/2.  Verwenden Sie keine Domänen Splitterung mit http/2.  
-*   Entfernen oder aufschieben unnötiger Anforderungen, damit kritische Anforderungen früher heruntergeladen werden.  
+*   Implementieren Sie die Domänensharding, wenn Sie HTTP/1.0 oder HTTP/1.1 verwenden müssen.  
+*   Verwenden Sie HTTP/2.  Verwenden Sie keine Domänensharding mit HTTP/2.  
+*   Entfernen oder Aufschub unnötiger Anforderungen, sodass kritische Anforderungen früher heruntergeladen werden.  
     
-## Langsame Zeit bis zum ersten Byte (TTFB)  
+## <a name="slow-time-to-first-byte-ttfb"></a>Slow Time To First Byte (TTFB)  
 
 **Symptome**  
 
-Eine Anforderung verbringt lange Zeit darauf, das erste Byte vom Server zu empfangen.  
+Eine Anforderung wartet lange darauf, das erste Byte vom Server zu erhalten.  
 
-In der folgenden Abbildung zeigt der lange, grüne Balken im **Wasserfall** an, dass die Anforderung lange gewartet hat.  Dies wurde mithilfe eines Profils simuliert, um die Netzwerkgeschwindigkeit zu begrenzen und eine Verzögerung hinzuzufügen.  
+In der folgenden Abbildung gibt die lange grüne Leiste im **Wasserfall** an, dass die Anforderung lange gewartet hat.  Dies wurde mithilfe eines Profils simuliert, um die Netzwerkgeschwindigkeit einzuschränken und eine Verzögerung hinzuzufügen.  
 
-:::image type="complex" source="../media/network-network-resources-using-dial-up-profile.msft.png" alt-text="Ein Beispiel für eine Reihe von Warteschlangen oder verzögerten Datenreihen im Netzwerk Panel" lightbox="../media/network-network-resources-using-dial-up-profile.msft.png":::
-   Ein Beispiel für eine Anforderung mit einer langsamen Zeit bis zum ersten Byte  
+:::image type="complex" source="../media/network-network-resources-using-dial-up-profile.msft.png" alt-text="Ein Beispiel für eine Anforderung mit einem langsamen Time To First Byte" lightbox="../media/network-network-resources-using-dial-up-profile.msft.png":::
+   Ein Beispiel für eine Anforderung mit einem langsamen Time To First Byte  
 :::image-end:::  
 
 **Ursachen**  
 
 *   Die Verbindung zwischen dem Client und dem Server ist langsam.  
-*   Der Server reagiert langsam.  Hosten Sie den Server lokal, um festzustellen, ob es sich um eine langsame Verbindung oder einen Server handelt.  Wenn Sie beim Zugriff auf einen lokalen Server weiterhin langsam auf das erste Byte \ (TTFB \) zugreifen, ist der Server langsam.  
+*   Der Server reagiert langsam.  Hosten Sie den Server lokal, um festzustellen, ob die Verbindung oder der Server langsam ist.  Wenn Sie beim Zugriff auf einen lokalen Server immer noch ein langsames Time To First Byte \(TTFB\) erhalten, ist der Server langsam.  
     
-**Korrekturen**  
+**Fixes**  
 
-*   Wenn die Verbindung langsam ist, sollten Sie das Hosten von Inhalten in einem CDN oder Ändern von Hostinganbieter in Frage stellen.  
-*   Wenn der Server langsam ist, empfiehlt es sich, Datenbankabfragen zu optimieren, einen Cache zu implementieren oder Ihre Serverkonfiguration zu ändern.  
+*   Wenn die Verbindung langsam ist, sollten Sie Ihre Inhalte auf einem CDN hosten oder Hostinganbieter ändern.  
+*   Wenn der Server langsam ist, sollten Sie datenbankabfragen optimieren, einen Cache implementieren oder Ihre Serverkonfiguration ändern.  
     
-## Langsamer Download von Inhalten  
+## <a name="slow-content-download"></a>Langsamer Inhaltsdownload  
 
 **Symptome**  
 
-Eine Anforderung dauert lange zum herunterladen.  
+Das Herunterladen einer Anforderung dauert sehr lange.  
 
-In der folgenden Abbildung bedeutet der lange, blaue Balken im **Wasserfall** neben dem PNG, dass es lange dauert, bis der Download erfolgt ist.  
+In der folgenden Abbildung bedeutet die lange, blaue Leiste im **Wasserfall** neben dem Png, dass der Download lange gezeitet hat.  
 
-:::image type="complex" source="../media/network-network-resources-edge-devtools.msft.png" alt-text="Ein Beispiel für eine Reihe von Warteschlangen oder verzögerten Datenreihen im Netzwerk Panel" lightbox="../media/network-network-resources-edge-devtools.msft.png":::
-   Ein Beispiel für eine Anforderung, deren Download viel Zeit in Anspruch nimmt  
+:::image type="complex" source="../media/network-network-resources-edge-devtools.msft.png" alt-text="Ein Beispiel für eine Anforderung, die lange dauert, bis sie heruntergeladen wird" lightbox="../media/network-network-resources-edge-devtools.msft.png":::
+   Ein Beispiel für eine Anforderung, die lange dauert, bis sie heruntergeladen wird  
 :::image-end:::  
 
 **Ursachen**  
@@ -95,9 +95,9 @@ In der folgenden Abbildung bedeutet der lange, blaue Balken im **Wasserfall** ne
 *   Die Verbindung zwischen dem Client und dem Server ist langsam.  
 *   Viele Inhalte werden heruntergeladen.  
     
-**Korrekturen**  
+**Fixes**  
 
-*   Bedenken Sie, dass Sie Ihre Inhalte in einem CDN hosten oder Hosting-Anbieter ändern.  
+*   Erwägen Sie, Ihre Inhalte auf einem CDN zu hosten oder Hostinganbieter zu ändern.  
 *   Senden Sie weniger Bytes, indem Sie Ihre Anforderungen optimieren.  
     
 <!--   ## Contribute knowledge  
@@ -108,7 +108,7 @@ Do you have a network issue that should be added to this guide?
 *   Choose **Send Feedback** \(![Send Feedback][ImageSendFeedbackIcon]\) in the DevTools or select `Alt`+`Shift`+`I` \(Windows, Linux\) or `Option`+`Shift`+`I` \(macOS\) to provide feedback or feature requests.  
 *   [Open an issue][WebFundamentalsIssue] on the docs repo.  -->  
     
-## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -118,17 +118,17 @@ Do you have a network issue that should be added to this guide?
 
 <!-- links -->  
 
-[NetworkPerformance]: ./index.md "Überprüfen der Netzwerkaktivität in Microsoft Edge devtools | Microsoft docs"  
+[NetworkPerformance]: ./index.md "Überprüfen der Netzwerkaktivitäten in Microsoft Edge DevTools | Microsoft Docs"  
 
 [MicrosoftEdgeTweet]: https://twitter.com/intent/tweet?text=@EdgeDevTools%20[Network%20Issues%20Guide%20Suggestion]  
 
-[WebFundamentalsIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=%5BDevTools%20Network%20Issues%20Guide%20Suggestion%5D "Neues Problem – MicrosoftDocs/Edge – Entwickler"  
+[WebFundamentalsIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=%5BDevTools%20Network%20Issues%20Guide%20Suggestion%5D "Neues Problem – MicrosoftDocs/edge-developer"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
-> Die ursprüngliche Seite wird [hier](https://developers.google.com/web/tools/chrome-devtools/network/issues) gefunden und von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) und [Jonathan Garber][JonathanGarbee] \ (Google Developer Expert für Web Technology) verfasst.  
+> Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
+> Die ursprüngliche Seite [](https://developers.google.com/web/tools/chrome-devtools/network/issues) befindet sich hier und wird von [Kayce Basken][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) und [Jonathan Garbee][JonathanGarbee] \(Google Developer Expert for Web Technology\) verfasst.  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

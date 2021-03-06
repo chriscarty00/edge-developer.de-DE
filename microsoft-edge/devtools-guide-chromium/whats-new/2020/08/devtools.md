@@ -1,133 +1,133 @@
 ---
-description: Passen Sie Tastenkombinationen mit Visual Studio-Code an, emulieren Sie Surface Duo und Samsung Galaxy Fold, Verbesserungen der CSS-Raster Überlagerung und vieles mehr.
-title: Neuerungen in devtools (Microsoft Edge 86)
+description: Anpassen von Tastenkombinationen Visual Studio Code, Emulieren von Surface Duo und Samsung -Galaxis-Fold, Verbesserungen der CSS-Rasterüberlagerung und vieles mehr.
+title: Neues in DevTools (Microsoft Edge 86)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/08/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 0e759c18b5ef547bfd490f4d525930f92809a6a1
-ms.sourcegitcommit: 6e2b26d41a0aa56ac34e6edc7dddd852ddb415b1
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
+ms.openlocfilehash: 3853f097877fc45b14ceb0674309cb35b58a0aa6
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "11133911"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398616"
 ---
-# Neuerungen in devtools (Microsoft Edge 86)  
+# <a name="whats-new-in-devtools-microsoft-edge-86"></a>Neues in DevTools (Microsoft Edge 86)  
 
-## Ankündigungen des Microsoft Edge devtools-Teams  
+## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>Ankündigungen des Microsoft Edge DevTools-Teams  
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]  
 
-### Zuordnen von Tastenkombinationen in devtools zu Visual Studio-Code  
+### <a name="match-keyboard-shortcuts-in-devtools-to-visual-studio-code"></a>Übereinstimmung von Tastenkombinationen in DevTools mit Visual Studio Code  
 
-In Microsoft Edge 86 können Sie die Tastenkombinationen im devtools mit ihren Tastenkombinationen in [Visual Studio-Code][VisualStudioCode]vergleichen. 
+In Microsoft Edge 86 können Sie Tastenkombinationen in devTools mit Ihren Verknüpfungen in [Microsoft Visual Studio Code übereinstimmen.][VisualStudioCode]  
 
-:::image type="complex" source="../../media/2020/08/keyboard-shortcut.msft.png" alt-text="Zuordnen von Tastenkombinationen im devtools zu Visual Studio-Code" lightbox="../../media/2020/08/keyboard-shortcut.msft.png":::
-   Zuordnen von Tastenkombinationen im devtools zu Visual Studio-Code  
+:::image type="complex" source="../../media/2020/08/keyboard-shortcut.msft.png" alt-text="Übereinstimmung von Tastenkombinationen in devTools mit Visual Studio Code" lightbox="../../media/2020/08/keyboard-shortcut.msft.png":::
+   Übereinstimmung von Tastenkombinationen in devTools mit Visual Studio Code  
 :::image-end:::  
 
-Um dieses Feature zu aktivieren, navigieren Sie zum [Anpassen von Tastenkombinationen im Microsoft Edge-devtools][DevtoolsCustomizeShortcuts].  
+Navigieren Sie zum Aktivieren dieses Features zu [Tastenkombinationen anpassen in den Microsoft Edge DevTools][DevtoolsCustomizeShortcuts].  
 
-Die Tastenkombination zum Anhalten oder Fortsetzen der Ausführung eines Skripts in [Visual Studio-Code][VisualStudioCodeShortcutsKeyboardWindows] lautet beispielsweise `F5` .  Mit der **devtools (Standardeinstellung)** ist dieselbe Verknüpfung in der devtools `F8` , aber wenn Sie die **Visual Studio-Code** Vorgabe auswählen, ist diese Verknüpfung nun auch `F5` .  
+Beispielsweise ist die Tastenkombination zum Anhalten oder Fortsetzen des Ausführens eines Skripts in [Visual Studio Code][VisualStudioCodeShortcutsKeyboardWindows] `F5` .  Bei der **Voreinstellung DevTools (Default)** ist dieselbe Verknüpfung in devTools , aber wenn Sie die voreingestellte `F8` Visual Studio **Code** auswählen, ist diese Verknüpfung jetzt auch `F5` .  
 
-Chrom Problem [#174309][CR174309]  
+[Chromium-#174309][CR174309]  
 
-### Emulieren von Surface Duo und Samsung Galaxy Fold  
+### <a name="emulate-surface-duo-and-samsung-galaxy-fold"></a>Emulieren von Surface Duo und Samsung Galaxy Fold  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Zuordnen von Tastenkombinationen im devtools zu Visual Studio-Code":::
-   Experimentelle Funktion  
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Experimentelles Feature":::
+   Experimentelles Feature  
 :::image-end:::  
 
-Sie können jetzt das Aussehen und Verhalten Ihrer Website oder App auf zwei neuen Geräten testen:  [Surface Duo][MicrosoftSurfaceDevicesDuo] und [Samsung Galaxy Fold][SamsungMobileGalaxyFold] in Microsoft Edge.  
+Sie können nun das Aussehen und Gefühl Ihrer Website oder App auf zwei neuen Geräten testen:  [Surface Duo][MicrosoftSurfaceDevicesDuo] und Samsung [Galaxy Fold][SamsungMobileGalaxyFold] in Microsoft Edge.  
 
-Verwenden Sie beim [emulieren des Geräts][DevtoolsDeviceModeIndex]die folgenden Features, um Ihre Website oder App für Dual-Screen-und faltbare Geräte zu verbessern.  
+Verwenden Sie beim Emulieren des Geräts die folgenden Features, um Ihre Website oder App für die dualen bildschirm- und faltbaren [Geräte zu verbessern.][DevtoolsDeviceModeIndex]  
 
-*   Über [greifend][DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices], das heißt, wenn auf beiden Bildschirmen die Website \ (oder App \) angezeigt wird.
-*   [Rendern der Naht][DualScreenIntroductionHowWorkSeam], also des Leerraums zwischen den beiden Bildschirmen
-*   [Aktivieren von experimentellen Web-Platform-APIs][DevtoolsExperimentalFeaturesEnableExperimentalApis] für den Zugriff auf das neue [CSS mediascreen-Feature][DualScreenWebCssMediaSpanning] und die [JavaScript-getWindowSegments-API][DualScreenWebJavascriptGetwindowsegments].  
+*   [Spanning][DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices], das ist, wenn Ihre Website \(oder App\) auf beiden Bildschirmen angezeigt wird.
+*   [Rendern der Naht][DualScreenIntroductionHowWorkSeam], d. h. des Abstands zwischen den beiden Bildschirmen.
+*   [Aktivieren experimenteller Webplattform-APIs][DevtoolsExperimentalFeaturesEnableExperimentalApis] für den Zugriff auf das neue Feature für die [Medienbildschirmübergreifende][DualScreenWebCssMediaSpanning] CSS und [die JavaScript getWindowSegments-API][DualScreenWebJavascriptGetwindowsegments].  
 
-:::image type="complex" source="../../media/2020/08/surface-duo-device-emulation.msft.png" alt-text="Zuordnen von Tastenkombinationen im devtools zu Visual Studio-Code" lightbox="../../media/2020/08/surface-duo-device-emulation.msft.png":::
+:::image type="complex" source="../../media/2020/08/surface-duo-device-emulation.msft.png" alt-text="Geräteemulation für Surface Duo" lightbox="../../media/2020/08/surface-duo-device-emulation.msft.png":::
    Geräteemulation für Surface Duo  
 :::image-end:::  
 
-Um dieses experimentelle Feature zu aktivieren, navigieren Sie zu [experimentelle Features aktivieren][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] , und aktivieren Sie das Kontrollkästchen neben **Emulation: Dual-Screen-Modus unterstützen**.  
+Navigieren Sie zum Aktivieren dieses experimentellen Features zu [Aktivieren][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] experimenteller Features, und wählen Sie das Kontrollkästchen neben **Emulation: Unterstützen des Dualbildschirmmodus aus.**  
 
-Wenn Sie weitere Informationen zu diesem Experiment erhalten möchten, navigieren Sie zu [Emulation: Unterstützung des dualen Bildschirms][DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode].  
+Weitere Informationen zu diesem Experiment finden Sie unter [Emulation: Support dual screen mode][DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode].  
 
 Chromium-Problem: [#1054281][CR1054281]  
 
-### Verbesserungen der CSS-Raster Überlagerung und neue experimentelle Raster Features  
+### <a name="css-grid-overlay-improvements-and-new-experimental-grid-features"></a>Verbesserungen der CSS-Rasterüberlagerung und neue experimentelle Rasterfeatures  
 
-Vielen Dank für ihr positives Feedback zu den verbesserten CSS-Raster Überlagerungen.  Die CSS-Raster Überlagerungen sind nun standardmäßig aktiviert, und es ist nicht erforderlich, dass Sie ein Experiment aktivieren.  
+Vielen Dank für das positive Feedback zu den verbesserten CSS-Rasterüberlagerungen.  Die CSS-Rasterüberlagerungen sind jetzt standardmäßig aktiviert und erfordern nicht, dass Sie ein Experiment aktivieren.  
 
-:::image type="complex" source="../../media/2020/08/css-grid-overlay-article.msft.png" alt-text="Zuordnen von Tastenkombinationen im devtools zu Visual Studio-Code" lightbox="../../media/2020/08/css-grid-overlay-article.msft.png":::
-   CSS-Raster Überlagerung für `article` Element  
+:::image type="complex" source="../../media/2020/08/css-grid-overlay-article.msft.png" alt-text="CSS-Rasterüberlagerung für artikelelement" lightbox="../../media/2020/08/css-grid-overlay-article.msft.png":::
+   CSS-Rasterüberlagerung für `article` Element  
 :::image-end:::  
 
 > [!NOTE]
-> Weitere Informationen zu Raster Überlagerungen finden Sie unter [Debuggen von CSS-Raster Features][DevtoolsWhatsnew200206DevtoolsCssGridDebuggingFeatures].  
+> Weitere Informationen zu Rasterüberlagerungen finden Sie unter [CSS-Rasterdebugfunktionen][DevtoolsWhatsnew200206DevtoolsCssGridDebuggingFeatures].  
 
-Das Microsoft Edge devtools-Team und das Chrome devtools-Team arbeiten an zusätzlichen Features zusammen.  Zu den neuen Features gehören mehrere Overlays, die in einem neuen **Layoutbereich** im Bereich **Elemente** persistent und konfigurierbar sind.  
+Das Microsoft Edge DevTools-Team und das Chrome DevTools-Team arbeiten an weiteren Features zusammen.  Die neuen Features umfassen mehrere Überlagerungen, die dauerhaft und aus einem neuen **Layoutbereich** im Elementtool **konfigurierbar** sind.  
 
-Um dieses experimentelle Feature zu aktivieren, navigieren Sie zu [experimentelle Features][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] aktivieren, und aktivieren Sie das Kontrollkästchen neben **neue CSS-Raster Debuggen Features aktivieren (Konfigurationsoptionen, die im Bereich "Layout-Seitenleiste" in Elementen nach dem Neustart verfügbar sind)**.  
+Navigieren Sie zum Aktivieren dieses [][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] experimentellen Features zu Aktivieren experimenteller Features, und aktivieren Sie das Kontrollkästchen neben Neue CSS-Raster-Debuggingfeatures aktivieren (Konfigurationsoptionen sind im Seitenleistenbereich Layout in Elemente nach dem Neustart **verfügbar)**.  
 
-Weitere Informationen zu diesem Experiment finden Sie unter [Aktivieren neuer Features für das Debuggen von CSS-Rastern][DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures].  
+Weitere Informationen zu diesem Experiment finden Sie unter [Enable new CSS grid debugging features][DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures].  
 
 Chromium-Problem: [#1047356][CR1047356]  
 
-### Von der Konsole kopierte Tabelle erhält die Formatierung  
+### <a name="table-copied-from-the-console-preserves-formatting"></a>Aus der Konsole kopierte Tabelle behält die Formatierung bei  
 
-In Microsoft Edge 85 oder früher ging die Formatierung einer Kopie `console.table` verloren.  Wenn Sie die Ausgabe aus der [Tabellen][DevtoolsConsoleApiTable] Konsolen-API kopiert und eingefügt haben, wurde nur der Text der Tabelle beibehalten.  
+In Microsoft Edge 85 oder früher ging die Formatierung eines kopierten `console.table` Textes verloren.  Wenn Sie die Ausgabe aus der [Konsolen-API der Tabelle][DevtoolsConsoleApiTable] kopiert und eingeschrieben haben, wurde nur der Text der Tabelle beibehalten.  
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/console-table-beta.msft.png" alt-text="Zuordnen von Tastenkombinationen im devtools zu Visual Studio-Code" lightbox="../../media/2020/08/console-table-beta.msft.png":::
-         `table` Ausgabe der Konsolen-API in Microsoft Edge 85 oder früher  
+      :::image type="complex" source="../../media/2020/08/console-table-beta.msft.png" alt-text="Ausgabe der Konsolen-API in Microsoft Edge 85 oder früher" lightbox="../../media/2020/08/console-table-beta.msft.png":::
+         `table` Konsolen-API-Ausgabe in Microsoft Edge 85 oder früher  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png" alt-text="Zuordnen von Tastenkombinationen im devtools zu Visual Studio-Code" lightbox="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png":::
-         `table` Konsolen-API-Ausgabe von Microsoft Edge 85 oder früher in Visual Studio-Code eingefügt  
+      :::image type="complex" source="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png" alt-text="Table Console API output from Microsoft Edge 85 or earlier pasted into Visual Studio Code" lightbox="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png":::
+         `table` Konsolen-API-Ausgabe von Microsoft Edge 85 oder früher in Visual Studio Code  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-Wenn Sie in Microsoft Edge 86 oder höher eine Tabelle aus der **Konsole**kopieren, ist die Formatierung nun erhalten.  
+Wenn Sie in Microsoft Edge 86 oder höher eine Tabelle aus der Konsole **kopieren,** bleibt die Formatierung nun erhalten.  
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/console-table-canary.msft.png" alt-text="Zuordnen von Tastenkombinationen im devtools zu Visual Studio-Code" lightbox="../../media/2020/08/console-table-canary.msft.png":::
-         `table` Ausgabe der Konsolen-API in Microsoft Edge 86 oder höher  
+      :::image type="complex" source="../../media/2020/08/console-table-canary.msft.png" alt-text="Table Console API Output in Microsoft Edge 86 oder höher" lightbox="../../media/2020/08/console-table-canary.msft.png":::
+         `table` Konsolen-API-Ausgabe in Microsoft Edge 86 oder höher  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png" alt-text="Zuordnen von Tastenkombinationen im devtools zu Visual Studio-Code" lightbox="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png":::
-         `table` Konsolen-API-Ausgabe von Microsoft Edge 86 oder später eingefügt in Visual Studio-Code  
+      :::image type="complex" source="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png" alt-text="Table Console API Output from Microsoft Edge 86 or later pasted into Visual Studio Code" lightbox="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png":::
+         `table` Konsolen-API-Ausgabe von Microsoft Edge 86 oder höher in Visual Studio Code  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-Chrom Problem: [#1115011] [CR1115011]  
+Chromium-Problem: [#1115011][CR1115011]  
 
-### Viewer für Quellreihenfolge für einfachere Tests zur Barrierefreiheit  
+### <a name="source-order-viewer-for-easier-accessibility-testing"></a>Source Order Viewer für einfachere Barrierefreiheitstests  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Zuordnen von Tastenkombinationen im devtools zu Visual Studio-Code":::
-   Experimentelle Funktion  
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Experimentelles Feature":::
+   Experimentelles Feature  
 :::image-end:::  
 
-Die neue Barrierefreiheits Hilfe zeigt die Reihenfolge der Elemente in der Quelle an.  
+Die neue Barrierefreiheitshilfe zeigt die Reihenfolge der Elemente in der Quelle an.  
 
-:::image type="complex" source="../../media/2020/08/source-order-viewer.msft.png" alt-text="Zuordnen von Tastenkombinationen im devtools zu Visual Studio-Code" lightbox="../../media/2020/08/source-order-viewer.msft.png":::
-   Aktivieren der **Quellreihenfolge anzeigen**  
+:::image type="complex" source="../../media/2020/08/source-order-viewer.msft.png" alt-text="Aktivieren der Quellreihenfolge anzeigen" lightbox="../../media/2020/08/source-order-viewer.msft.png":::
+   Aktivieren **der Quellreihenfolge anzeigen**  
 :::image-end:::  
 
-Dieses Feature macht es einfacher, die Art und Weise zu testen, wie Sprachausgabe und Tastatur Benutzer Ihre Website oder App erleben.  Bildschirmsprachausgaben und Tastaturnavigation hängen davon ab, ob Inhalte in einer bestimmten Reihenfolge im Quellcode Ihrer Website oder App gespeichert werden, damit Sie der gerenderten Seite entsprechen.  In der Quellauftrags Anzeige werden potenzielle Unterschiede in der Reihenfolge zwischen der gerenderten Seite und dem Quellcode angezeigt.  
+Mit diesem Feature können Sie leichter testen, wie Bildschirmlese- und Tastaturbenutzer Ihre Website oder App nutzen.  Bildschirmlesegeräte und Tastaturnavigation hängen davon ab, dass Inhalte im Quellcode Ihrer Website oder App in einer bestimmten Reihenfolge platziert werden, sodass sie der gerenderten Seite entspricht.  Der Quellauftragsanzeige zeigt potenzielle Unterschiede in der Reihenfolge zwischen der gerenderten Seite und dem Quellcode an.  
 
-Wenn Sie dieses experimentelle Feature aktivieren möchten, navigieren Sie zu [experimentelle Features][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] aktivieren, und aktivieren Sie das Kontrollkästchen neben **Quellauftrags Anzeige aktivieren**.  
+Navigieren Sie zum Aktivieren dieses experimentellen Features zu Aktivieren experimenteller [Features,][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] und aktivieren Sie das Kontrollkästchen neben **Source Order Viewer aktivieren.**  
 
-Weitere Informationen zu diesem Experiment finden Sie unter [Aktivieren der Quellauftrags Anzeige][DevtoolsExperimentalFeaturesEnableSourceOrderViewer].  
+Weitere Informationen zu diesem Experiment finden Sie unter [Enable Source Order Viewer][DevtoolsExperimentalFeaturesEnableSourceOrderViewer].  
 
 Chromium-Problem: [#1094406][CR1094406]  
 
@@ -138,12 +138,12 @@ Your feedback and internal discoveries uncovered which text strings used in the 
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/localization-improvements-chinese-complex-stable.msft.png" alt-text="Zuordnen von Tastenkombinationen im devtools zu Visual Studio-Code" lightbox="localization-improvements-chinese-complex-stable.msft.png":::
+      :::image type="complex" source="../../media/2020/08/localization-improvements-chinese-complex-stable.msft.png" alt-text="Microsoft Edge DevTools in Traditional Chinese" lightbox="localization-improvements-chinese-complex-stable.msft.png":::
          Microsoft Edge DevTools 85 and earlier in Traditional Chinese  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/localization-improvements-chinese-complex-canary.msft.png" alt-text="Zuordnen von Tastenkombinationen im devtools zu Visual Studio-Code" lightbox="../../media/2020/08/localization-improvements-chinese-complex-canary.msft.png":::
+      :::image type="complex" source="../../media/2020/08/localization-improvements-chinese-complex-canary.msft.png" alt-text="Microsoft Edge DevTools in Japanese" lightbox="../../media/2020/08/localization-improvements-chinese-complex-canary.msft.png":::
          Microsoft Edge DevTools 86  or later in Traditional Chinese  
       :::image-end:::  
    :::column-end:::
@@ -154,225 +154,225 @@ To meet your translation needs, the Microsoft Edge DevTools team is focused on i
 The current effort to improve translation quality enables easier support for more languages in the future.  
 -->  
 
-### Markieren aller Suchergebnisse im elementtool  
+### <a name="highlight-all-search-results-in-elements-tool"></a>Hervorheben aller Suchergebnisse im Elementtool  
 
-In Microsoft Edge 84 und 85 wurde das erste Suchergebnis im **Element** Panel nicht markiert.  Die restlichen Suchergebnisse wurden richtig hervorgehoben.  
+In Microsoft Edge 84 und 85 wurde das erste Suchergebnis im **Elementtool** nicht hervorgehoben.  Die restlichen Suchergebnisse wurden korrekt hervorgehoben.  
 
-Vielen Dank für Ihr Feedback und die Verbesserung von Chrom.  Ihr Feedback hat ein Problem [#1103316][CR1103316] im Open-Source-Projekt Chromium aufgedeckt.  
+Vielen Dank für Ihr Feedback und die Verbesserung von Chromium.  Ihr Feedback deckte Problem [#1103316][CR1103316] im Open-Source-Chromium-Projekt auf.  
 
-:::image type="complex" source="../../media/2020/08/elements- search-highlight-fixed.msft.png" alt-text="Zuordnen von Tastenkombinationen im devtools zu Visual Studio-Code" lightbox="../../media/2020/08/elements- search-highlight-fixed.msft.png":::
-   Hervorgehobenes erstes Suchergebnis im **Element** Panel in Microsoft Edge 84 oder höher  
+:::image type="complex" source="../../media/2020/08/elements- search-highlight-fixed.msft.png" alt-text="Hervorgehobenes erstes Suchergebnis im Elementbereich in Microsoft Edge 84 oder höher" lightbox="../../media/2020/08/elements- search-highlight-fixed.msft.png":::
+   Hervorgehobenes erstes Suchergebnis im **Elementtool** in Microsoft Edge 84 oder höher  
 :::image-end:::  
 
-Das Problem ist jetzt in allen Versionen von Microsoft Edge behoben.  
+Das Problem wurde nun in allen Versionen von Microsoft Edge behoben.  
 
 Chromium-Problem: [#1103316][CR1103316]  
 
-## Ankündigungen aus dem Chromium-Projekt  
+## <a name="announcements-from-the-chromium-project"></a>Ankündigungen aus dem Chromium-Projekt  
 
 [!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]  
 
-### Neues Medien Panel  
+### <a name="new-media-tool"></a>Tool für neue Medien  
 
-DevTools zeigt nun Informationen zu Medienplayern im [Medien][DevtoolsMediaPanelIndex] Panel an.  
+DevTools zeigt jetzt Media Player-Informationen im [Medientool][DevtoolsMediaPanelIndex] an.  
 
-Führen Sie den folgenden Schritt aus, um den neuen **Medien** Panel zu öffnen.  
+Führen Sie den folgenden Schritt aus, um das neue **Medientool** zu öffnen.  
 
-1.  Wählen Sie **anpassen und Steuern devtools** \ ( `...` \) > **Weitere Tools**  >  **Medien**aus.  
+1.  Wählen **Sie Anpassen und Steuern devTools** \( `...` \) > Weitere **Tools**  >  **Media aus.**  
     
-    :::image type="complex" source="../../media/2020/08/media-panel.msft.png" alt-text="Zuordnen von Tastenkombinationen im devtools zu Visual Studio-Code" lightbox="../../media/2020/08/media-panel.msft.png":::
-       Neues **Medien** Panel  
+    :::image type="complex" source="../../media/2020/08/media-panel.msft.png" alt-text="Tool für neue Medien" lightbox="../../media/2020/08/media-panel.msft.png":::
+       Tool **für neue Medien**  
     :::image-end:::  
 
-Vor dem neuen **Medien** Panel in devtools befanden sich die Protokollierungs-und Debuginformationen zu Videoplayern unter der Einstellung " **zuletzt verwendete Spieler** ".  Wenn Sie die Einstellung für **zuletzt verwendete Spieler** öffnen möchten, wechseln Sie zu `edge://media-internals` und wählen Sie den Reiter **Spieler** aus.  
+Vor dem neuen **Medientool** in DevTools befanden sich die Protokollierungs- und Debuginformationen zu Video playern unter der **Einstellung Zuletzt verwendeter Player.**  Navigieren Sie zum Öffnen der Einstellung Zuletzt **verwendeter Spieler,** `edge://media-internals` und wählen Sie das Tool **Spieler** aus.  
 
-Zeigen Sie Liveinhalte an, und prüfen Sie potenzielle Probleme schneller, einschließlich der folgenden Beispiele.  
+Zeigen Sie Liveinhalte an, und untersuchen Sie potenzielle Probleme schneller, einschließlich der folgenden Beispiele.  
 
 *   Warum werden Frames verworfen?  
-*   Warum wird JavaScript in einer unerwarteten Weise mit dem Spieler interagieren?  
+*   Warum interagiert JavaScript unerwartet mit dem Spieler?  
 
-### Aufzeichnen von Knoten Screenshots über das Kontextmenü des Elements Panels  
+### <a name="capture-node-screenshots-using-the-elements-tool-context-menu"></a>Erfassen von Knoten-Screenshots mithilfe des Kontextmenüs des Elements-Tools  
 
-Sie können nun Knoten Screenshots über das Kontextmenü im Bereich " **Elemente** " erfassen.  
+Sie können jetzt Knoten-Screenshots mithilfe des Kontextmenüs im **Elementtool** erfassen.  
 
-Wenn Sie beispielsweise einen Screenshot des Inhaltsverzeichnisses erstellen möchten, zeigen Sie auf das Element, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie **Screenshot des Knotens aufzeichnen**aus.  
+Um beispielsweise einen Screenshot des Inhaltsverzeichnisses zu erstellen, zeigen Sie auf das Element, öffnen Sie das Kontextmenü \(rechtsklicken\), und wählen Sie Screenshot des Knotens **erfassen aus.**  
 
-:::image type="complex" source="../../media/2020/08/capture-node-screenshot.msft.png" alt-text="Zuordnen von Tastenkombinationen im devtools zu Visual Studio-Code" lightbox="../../media/2020/08/capture-node-screenshot.msft.png":::
-   Screenshots des Knotens aufzeichnen  
+:::image type="complex" source="../../media/2020/08/capture-node-screenshot.msft.png" alt-text="Screenshots des Aufnahmeknotens" lightbox="../../media/2020/08/capture-node-screenshot.msft.png":::
+   Screenshots des Aufnahmeknotens  
 :::image-end:::  
 
 Chromium-Problem: [#1100253][CR1100253]  
 
-### Probleme mit Tool Updates  
+### <a name="issues-tool-updates"></a>Probleme mit Toolupdates  
 
-Die warnungsleiste "Probleme" im **Konsolen** Bereich wird nun durch eine normale Nachricht ersetzt.  
+Die Warnmeldungsleiste Probleme im **Konsolentool** wird jetzt durch eine reguläre Meldung ersetzt.  
 
 <!--todo: this figure need to be updated  -->  
 
-:::image type="complex" source="../../media/2020/08/issue-console-msg.msft.png" alt-text="Zuordnen von Tastenkombinationen im devtools zu Visual Studio-Code" lightbox="../../media/2020/08/issue-console-msg.msft.png":::
-   Probleme in der Konsolen Nachricht  
+:::image type="complex" source="../../media/2020/08/issue-console-msg.msft.png" alt-text="Probleme in Konsolennachrichten" lightbox="../../media/2020/08/issue-console-msg.msft.png":::
+   Probleme in Konsolennachrichten  
 :::image-end:::  
 
-Probleme mit Cookies von Drittanbietern sind jetzt standardmäßig im **Problem** Tool ausgeblendet.  Aktivieren Sie das Kontrollkästchen neues **einbeziehen von Cookies von Drittanbietern** , um die Probleme anzuzeigen.  
+Cookieprobleme von Drittanbietern werden jetzt standardmäßig im **Problemtool** ausgeblendet.  Aktivieren Sie das neue **Kontrollkästchen Cookieprobleme von** Drittanbietern enthalten, um die Probleme anzeigen zu können.  
 
-:::image type="complex" source="../../media/2020/08/third-party-cookies.msft.png" alt-text="Zuordnen von Tastenkombinationen im devtools zu Visual Studio-Code" lightbox="../../media/2020/08/third-party-cookies.msft.png":::
-   Kontrollkästchen für Cookies von Drittanbietern  
+:::image type="complex" source="../../media/2020/08/third-party-cookies.msft.png" alt-text="Kontrollkästchen für Cookieprobleme von Drittanbietern" lightbox="../../media/2020/08/third-party-cookies.msft.png":::
+   Kontrollkästchen für Cookieprobleme von Drittanbietern  
 :::image-end:::  
 
-Chrom Probleme: [1096481][CR1096481], [1068116][CR1068116], [1080589][CR1080589]  
+Chromium-Probleme: [1096481][CR1096481], [1068116][CR1068116], [1080589][CR1080589]  
 
-### Emulieren fehlender lokaler Schriftarten  
+### <a name="emulate-missing-local-fonts"></a>Emulieren fehlender lokaler Schriftarten  
 
-Öffnen Sie das [Rendering-Tool][DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance] , und verwenden Sie das neue Feature **lokale Schriftarten deaktivieren** , um fehlende `local()` Quellen in Regeln zu emulieren `@font-face` .  
+Öffnen Sie [das Renderingtool,][DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance] und verwenden Sie das neue Feature Lokale **Schriftarten** deaktivieren, um fehlende `local()` Quellen in Regeln zu `@font-face` emulieren.  
 
-Wenn die Schriftart beispielsweise `Rubik` auf Ihrem Gerät installiert ist und von der `@font-face src` Regel als Schriftart verwendet wird `local()` , verwendet Microsoft Edge die lokale Schriftartdatei auf Ihrem Gerät.  
+Wenn die Schriftart beispielsweise auf Ihrem Gerät installiert ist und von der Regel als Schriftart verwendet wird, verwendet Microsoft Edge die lokale Schriftartdatei `Rubik` `@font-face src` von Ihrem `local()` Gerät.  
 
-Wenn **lokale Schriftarten deaktivieren** aktiviert ist, ignoriert devtools die `local()` Schriftarten und ruft alle aus dem Netzwerk ab.  
+Wenn **Lokale Schriftarten deaktivieren** aktiviert ist, ignoriert DevTools die Schriftarten und ruft jede Schriftart aus dem Netzwerk `local()` ab.  
 
-:::image type="complex" source="../../media/2020/08/disable-font.msft.png" alt-text="Zuordnen von Tastenkombinationen im devtools zu Visual Studio-Code" lightbox="../../media/2020/08/disable-font.msft.png":::
+:::image type="complex" source="../../media/2020/08/disable-font.msft.png" alt-text="Emulieren fehlender lokaler Schriftarten" lightbox="../../media/2020/08/disable-font.msft.png":::
    Emulieren fehlender lokaler Schriftarten  
 :::image-end:::  
 
-Wenn Sie während der Entwicklung zwei unterschiedliche Kopien derselben Schriftart verwenden, wie beispielsweise die folgenden Beispiele.  
+Wenn Sie während der Entwicklung zwei unterschiedliche Kopien derselben Schriftart verwenden, z. B. die folgenden Beispiele.  
 
-*   Eine lokale Schriftart für Ihre Entwurfstools.  
-*   Eine Web-Schriftart für Ihren Code.  
+*   Eine lokale Schriftart für Ihre Designtools.  
+*   Eine Webschriftart für Ihren Code.  
 
-Verwenden Sie **lokale Schriftarten deaktivieren** , damit Sie die folgenden Aufgaben einfacher ausführen können.  
+Verwenden **Sie Lokale Schriftarten deaktivieren,** um ihnen das Ausführen der folgenden Aufgaben zu erleichtern.  
 
-*   Debuggen und Messen der Ladeleistung und Optimierung von Webschriftarten  
-*   Überprüfen Sie die Genauigkeit Ihrer CSS `@font-face` -Regeln.  
-*   Entdecken Sie Unterschiede zwischen lokalen Versionen, die auf Ihrem Gerät installiert sind, und einer Web-Schriftart.  
+*   Debuggen und Messen der Ladeleistung und Optimierung von Webschriftarten.  
+*   Überprüfen Sie die Genauigkeit Ihrer `@font-face` CSS-Regeln.  
+*   Ermitteln Sie Unterschiede zwischen lokalen Versionen, die auf Ihrem Gerät installiert sind, und einer Webschriftart.  
 
 Chromium-Problem: [#384968][CR384968]  
 
-### Emulieren inaktiver Benutzer  
+### <a name="emulate-inactive-users"></a>Emulieren inaktiver Benutzer  
 
-Die [API für die Leerlauferkennung][WebDevIdleDetection] ermöglicht es Entwicklern, inaktive Benutzer zu erkennen und auf Leerlauf Zustandsänderungen zu reagieren.  Sie können jetzt devtools verwenden, um die Änderungen im Leerlaufzustand im **Sensor** Tool sowohl für den Benutzerzustand als auch für den Bildschirm Zustand zu emulieren, anstatt zu warten, bis der Zustand des tatsächlichen Ruhezustands geändert wird.  Sie können das Tool **Sensoren** aus der [Schublade][DevtoolsCustomizeIndexDrawer]öffnen.  
+Die [Idle Detection-API][WebDevIdleDetection] ermöglicht Es Entwicklern, inaktive Benutzer zu erkennen und auf Änderungen des Leerlaufzustands zu reagieren.  Sie können devTools nun verwenden, um Änderungen des Leerlaufzustands im Tool **Sensoren** sowohl für den Benutzerstatus als auch für den Bildschirmzustand zu emulieren, anstatt auf die Änderung des tatsächlichen Leerlaufzustands zu warten.  Sie können das Tool **"Sensors"** in der [Drawer öffnen.][DevtoolsCustomizeIndexDrawer]  
 
-:::image type="complex" source="../../media/2020/08/emulate-idle.msft.png" alt-text="Zuordnen von Tastenkombinationen im devtools zu Visual Studio-Code" lightbox="../../media/2020/08/emulate-idle.msft.png":::
+:::image type="complex" source="../../media/2020/08/emulate-idle.msft.png" alt-text="Emulieren inaktiver Benutzer" lightbox="../../media/2020/08/emulate-idle.msft.png":::
    Emulieren inaktiver Benutzer  
 :::image-end:::  
 
 Chromium-Problem: [#1090802][CR1090802]  
 
-### Emulieren bevorzugt-reduzierte Daten  
+### <a name="emulate-prefers-reduced-data"></a>Emulieren von prefers-reduced-data  
 
 > [!NOTE]
-> Wenn Sie dieses Feature in Microsoft Edge 86 aktivieren möchten, wechseln Sie zu, `edge://flags#enable-experimental-web-platform-features` und aktivieren Sie das Kennzeichen **experimentelle webplattforms-Features** .  Die Emulations Option wird nur angezeigt, wenn das Flag aktiviert ist.  
+> Navigieren Sie in Microsoft Edge 86, um dieses Feature zu aktivieren, zu und aktivieren Sie das Flag für Experimentelle `edge://flags#enable-experimental-web-platform-features` **Webplattformfeatures.**  Die Emulationsoption wird nur angezeigt, wenn das Flag aktiviert ist.  
 
-Die Abfrage " [bevorzugt reduzierte Daten][CsswgDraftsMediaqueries5DescdefMediaPrefersReducedData] Medien" erkennt Benutzerinhalts Einstellungen für reduzierte Daten.  Wenn diese Option ausgewählt ist, erhält der Benutzer Alternativen Seiteninhalt, in dem geringere Daten verwendet werden.  
+Die [Prefers-reduced-Data Media-Abfrage][CsswgDraftsMediaqueries5DescdefMediaPrefersReducedData] erkennt Benutzerinhaltseinstellungen für reduzierte Daten.  Wenn diese Option ausgewählt ist, erhält der Benutzer alternative Seiteninhalte, die weniger Daten verwenden.  
 
-Sie können jetzt devtools verwenden, um die medienabfrage zu emulieren `prefers-reduced-data` .  
+Sie können jetzt DevTools verwenden, um die `prefers-reduced-data` Medienabfrage zu emulieren.  
 
-:::image type="complex" source="../../media/2020/08/emulate-prefers-reduced-data.msft.png" alt-text="Zuordnen von Tastenkombinationen im devtools zu Visual Studio-Code" lightbox="../../media/2020/08/emulate-prefers-reduced-data.msft.png":::
-   Emulieren bevorzugt-reduzierte Daten  
+:::image type="complex" source="../../media/2020/08/emulate-prefers-reduced-data.msft.png" alt-text="Emulieren von prefers-reduced-data" lightbox="../../media/2020/08/emulate-prefers-reduced-data.msft.png":::
+   Emulieren von prefers-reduced-data  
 :::image-end:::  
 
 Chromium-Problem: [#1096068][CR1096068]  
 
-### Unterstützung für neue JavaScript-Features  
+### <a name="support-for-new-javascript-features"></a>Unterstützung für neue JavaScript-Features  
 
-DevTools haben nun die folgenden JavaScript-Sprachfeatures besser unterstützt.  
+DevTools haben jetzt die folgenden JavaScript-Sprachfeatures besser unterstützt.  
 
 | JavaScript-Sprachfeature | Details |  
 |:--- |:--- |  
-| [Logische Zuordnungs Operatoren][V8FeaturesLogicalAssignment] | DevTools unterstützt jetzt die logische Zuordnung mit dem neuen `&&=` `||=` und den `??=` Operatoren in den Panels **Console** und **Sources** .  |  
-| Pretty-Print- [numerische Trenn][V8FeaturesNumericSeparators] Zeichen | DevTools nun richtig hübsch – druckt die numerischen Trennzeichen im **Quellen** Panel.  |  
+| [Logische Zuweisungsoperatoren][V8FeaturesLogicalAssignment] | DevTools unterstützt jetzt die logische Zuordnung mit den neuen `&&=` Operatoren `||=` , und in `??=` den **Konsolen-** und **Quellentools.**  |  
+| Ziemlich gedruckte [numerische Trennzeichen][V8FeaturesNumericSeparators] | DevTools druckt nun die numerischen Trennzeichen im Tool **Sources ordnungsgemäß.**  |  
 
-Probleme mit Chrom: [1086817][CR1086817], [1080569][CR1080569]  
+Chromium-Probleme: [1086817][CR1086817], [1080569][CR1080569]  
 
-### Leuchtturm 6,2 im Leuchtturm-Panel  
+### <a name="lighthouse-62-in-the-lighthouse-panel"></a>Leuchttürme 6.2 im Bereich "Leuchttürme"  
 
-Auf dem **Leuchtturm** -Panel läuft nun Lighthouse 6,2.  Eine vollständige Liste der Änderungen finden Sie in den [Anmerkungen zur Lighthouse-Version][GithubGooglechromeLighthouseV620].  
+Das **Tool "Leuchtturm"** wird jetzt mit "6.2" ausgeführt.  Eine vollständige Liste der Änderungen finden Sie in den [Anmerkungen zur Veröffentlichung von "Leuchttürme".][GithubGooglechromeLighthouseV620]  
 
 Chromium-Problem: [#772558][CR772558]  
 
-### Deprecated of other Origins-Eintrag im Bereich "Dienstmitarbeiter"  
+### <a name="deprecation-of-other-origins-listing-in-the-service-workers-pane"></a>Veraltetes Auflisten anderer Ursprünge im Bereich "Service Workers"  
 
-DevTools bietet nun einen Link im Bereich " **Dienstmitarbeiter** " \ (**Anwendungs** Bereich > Bereich " **Dienstmitarbeiter** \"), um die vollständige Liste der Servicemitarbeiter anderer Herkunft anzuzeigen.  Wechseln Sie zu, um auf die Liste zuzugreifen, ohne das devtools zu öffnen `edge://service-worker-internals/?devtools` .  
+DevTools stellt nun einen Link aus dem Bereich Service **workers** **\(** Anwendungstool > Dienstmitarbeiterbereich\) zur Verfügung, um die vollständige Liste der Servicemitarbeiter anderer Ursprünge anzuzeigen. ****  Navigieren Sie zu, um auf die Liste zu zugreifen, ohne die DevTools zu `edge://service-worker-internals/?devtools` öffnen.  
 
-Zuvor devtools eine Liste angezeigt, die unter dem **Anwendungs** Bereich > Bereich " **Dienstmitarbeiter** " geschachtelt ist.  
+Zuvor hat DevTools eine Liste angezeigt, die unter dem Anwendungstool **>** **Dienstmitarbeiterbereich geschachtelt** ist.  
 
-:::image type="complex" source="../../media/2020/08/sw-other-origins.msft.png" alt-text="Zuordnen von Tastenkombinationen im devtools zu Visual Studio-Code" lightbox="../../media/2020/08/sw-other-origins.msft.png":::
+:::image type="complex" source="../../media/2020/08/sw-other-origins.msft.png" alt-text="Link zu anderen Ursprüngen" lightbox="../../media/2020/08/sw-other-origins.msft.png":::
    Link zu anderen Ursprüngen  
 :::image-end:::  
 
 Chromium-Problem: [#807440][CR807440]  
 
-### Anzeigen der Deckungs Zusammenfassung für gefilterte Elemente  
+### <a name="show-coverage-summary-for-filtered-items"></a>Anzeigen der Abdeckungszusammenfassung für gefilterte Elemente  
 
-DevTools wird nun dynamisch neu berechnet und eine Zusammenfassung der Deckungs Informationen angezeigt.  Die dynamische Anzeige wird ausgelöst, wenn Filter im [Coverage][DevtoolsCoverageIndex] -Tool angewendet werden.  Vor dem **Coverage** -Tool wird immer eine Zusammenfassung aller Deckungs Informationen angezeigt.  
+DevTools berechnet nun neu und zeigt dynamisch eine Zusammenfassung der Abdeckungsinformationen an.  Die dynamische Anzeige wird ausgelöst, wenn Filter im [Coverage-Tool angewendet][DevtoolsCoverageIndex] werden.  Bevor das **Coverage-Tool** immer eine Zusammenfassung aller Abdeckungsinformationen angezeigt hat.  
 
-In der ersten der folgenden Zahlen wird die Zusammenfassung zunächst angezeigt, `344 kB of 1.7 MB (20%) used so far.  1.4 MB unused.` und in der zweiten der folgenden Zahlen wird die Zusammenfassung angezeigt, `26.8 kB of 408 kB (7%) used so far.  381 kB unused.` nachdem die CSS-Filterung angewendet wurde.  
+In der ersten der folgenden Abbildungen wird zunächst die Zusammenfassung angezeigt, und in der zweiten der folgenden Abbildungen wird die Zusammenfassung angezeigt, nachdem die `344 kB of 1.7 MB (20%) used so far.  1.4 MB unused.` `26.8 kB of 408 kB (7%) used so far.  381 kB unused.` CSS-Filterung angewendet wurde.  
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/coverage-compare.msft.png" alt-text="Zuordnen von Tastenkombinationen im devtools zu Visual Studio-Code" lightbox="../../media/2020/08/coverage-compare.msft.png":::
-         Deckungs Zusammenfassung  
+      :::image type="complex" source="../../media/2020/08/coverage-compare.msft.png" alt-text="Zusammenfassung der Abdeckung" lightbox="../../media/2020/08/coverage-compare.msft.png":::
+         Zusammenfassung der Abdeckung  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/coverage-compare-css-filter.msft.png" alt-text="Zuordnen von Tastenkombinationen im devtools zu Visual Studio-Code" lightbox="../../media/2020/08/coverage-compare-css-filter.msft.png":::
-         Deckungs Zusammenfassung für gefilterte Elemente  
+      :::image type="complex" source="../../media/2020/08/coverage-compare-css-filter.msft.png" alt-text="Abdeckungszusammenfassung für gefilterte Elemente" lightbox="../../media/2020/08/coverage-compare-css-filter.msft.png":::
+         Abdeckungszusammenfassung für gefilterte Elemente  
       :::image-end:::  
    :::column-end:::
 :::row-end:::
 
 Chromium-Problem: [#1061385][CR1090802]  
 
-### Neue Frame Detailansicht im Anwendungsbereich  
+### <a name="new-frame-details-view-in-application-panel"></a>Neue Framedetailseansicht im Anwendungsbereich  
 
-DevTools zeigen nun eine detaillierte Ansicht für jeden Frame an.  Um darauf zuzugreifen, wählen Sie im **Anwendungs** Bereich unter dem Menü **Frames** einen Frame aus.  
+DevTools zeigt jetzt eine detaillierte Ansicht für jeden Frame an.  Um darauf zu zugreifen, wählen Sie im Anwendungstool unter dem Menü **Frames** einen **Frame** aus.  
 
-:::image type="complex" source="../../media/2020/08/frame-details.msft.png" alt-text="Zuordnen von Tastenkombinationen im devtools zu Visual Studio-Code" lightbox="../../media/2020/08/frame-details.msft.png":::
-   Neue Detailansicht für einen Frame im **Anwendungs** Bereich  
+:::image type="complex" source="../../media/2020/08/frame-details.msft.png" alt-text="Neue Detailansicht für einen Frame im Anwendungsbereich" lightbox="../../media/2020/08/frame-details.msft.png":::
+   Neue Detailansicht für einen Frame im **Anwendungstool**  
 :::image-end:::  
 
 Chromium-Problem: [#1093247][CR1093247]  
 
-#### Frame Details für geöffnete Fenster  
+#### <a name="frame-details-for-opened-windows"></a>Framedetails für geöffnete Fenster  
 
-Geöffnete Fenster und Popupfenster werden nun auch unter der Frame Struktur angezeigt.  Die Detailansicht der geöffneten Fenster enthält zusätzliche Sicherheitsinformationen.  
+Geöffnete Fenster und Popupfenster werden nun auch unter der Framestruktur angezeigt.  Die detaillierte Ansicht der geöffneten Fenster enthält zusätzliche Sicherheitsinformationen.  
 
-:::image type="complex" source="../../media/2020/08/window-opener.msft.png" alt-text="Zuordnen von Tastenkombinationen im devtools zu Visual Studio-Code" lightbox="../../media/2020/08/window-opener.msft.png":::
+:::image type="complex" source="../../media/2020/08/window-opener.msft.png" alt-text="Neue Frame-Detailansicht für geöffnete Fenster" lightbox="../../media/2020/08/window-opener.msft.png":::
    Neue Frame-Detailansicht für geöffnete Fenster  
 :::image-end:::  
 
-Chrom Problem: [#1107766] [CR1107766]  
+Chromium-Problem: [#1107766][CR1107766]  
 
-#### Sicherheits-und Isolierungsinformationen  
+#### <a name="security-and-isolation-information"></a>Sicherheits- und Isolationsinformationen  
 
-Sicherer Kontext, [Cross-Origin-embeder-Policy (COEP)][WebDevCoopCoep]und [Cross-Origin-Opener-Policy (Coop)][WebDevCoopCoep] werden jetzt in den Frame Details angezeigt.  
+Sicherer Kontext, [Cross-Origin-Embedder-Policy (COEP)][WebDevCoopCoep]und [Cross-Origin-Opener-Policy (COOP)][WebDevCoopCoep] werden nun in den Framedetails angezeigt.  
 
-:::image type="complex" source="../../media/2020/08/coep-coop.msft.png" alt-text="Zuordnen von Tastenkombinationen im devtools zu Visual Studio-Code" lightbox="../../media/2020/08/coep-coop.msft.png":::
-   Sicherheits-und Isolierungsinformationen  
+:::image type="complex" source="../../media/2020/08/coep-coop.msft.png" alt-text="Sicherheits- und Isolationsinformationen" lightbox="../../media/2020/08/coep-coop.msft.png":::
+   Sicherheits- und Isolationsinformationen  
 :::image-end:::  
 
-In Zukunft planen das Microsoft Edge devtools-Team und das Chrome devtools-Team, weitere Sicherheitsinformationen zu den Frame Details hinzuzufügen.  
+In Zukunft planen das Microsoft Edge DevTools-Team und das Chrome DevTools-Team, den Framedetails weitere Sicherheitsinformationen hinzuzufügen.  
 
 Chromium-Problem: [#1051466][CR1051466]  
 
-### Elemente und Aktualisierungen des Netzwerk Panels  
+### <a name="elements-and-network-panel-updates"></a>Updates für Elemente und Netzwerkpanels  
 
-#### Vorschlag für barrierefreie Farben im Bereich "Formatvorlagen"  
+#### <a name="accessible-color-suggestion-in-the-styles-pane"></a>Barrierefreier Farbvorschlag im Bereich Formatvorlagen  
 
-DevTools bietet jetzt Farbvorschläge für Text mit niedriger Farbkontrast.  
+DevTools bietet nun Farbvorschläge für Text mit geringem Farbkontrast.  
 
-Im folgenden Beispiel `h1` ist Text mit geringem Kontrast.  Um das Problem zu beheben, öffnen Sie die Farbauswahl der `color` Eigenschaft im Bereich **Formatvorlagen** .  Nachdem Sie den Abschnitt **Kontrastverhältnis** erweitert haben, bietet devtools AA-und AAA-Farbvorschläge.  Wählen Sie die vorgeschlagene Farbe aus, um die Farbe anzuwenden.  
+Im folgenden Beispiel hat `h1` Text mit geringem Kontrast.  Um dies zu beheben, öffnen Sie die Farbauswahl der `color` Eigenschaft im **Bereich Formatvorlagen.**  Nachdem Sie den Abschnitt **Kontrastverhältnis** erweitert haben, stellt DevTools AA- und AAA-Farbvorschläge zur Verfügung.  Wählen Sie die vorgeschlagene Farbe aus, um die Farbe anzuwenden.  
 
-:::image type="complex" source="../../media/2020/08/contrast-color-suggestion.msft.png" alt-text="Zuordnen von Tastenkombinationen im devtools zu Visual Studio-Code" lightbox="../../media/2020/08/contrast-color-suggestion.msft.png":::
-   Farbauswahl schlägt Vorschläge für AA-und AAA-Farben vor  
+:::image type="complex" source="../../media/2020/08/contrast-color-suggestion.msft.png" alt-text="Farbauswahl schlägt AA- und AAA-Farbvorschläge vor" lightbox="../../media/2020/08/contrast-color-suggestion.msft.png":::
+   Farbauswahl schlägt AA- und AAA-Farbvorschläge vor  
 :::image-end:::  
 
 Chromium-Problem: [#1093227][CR1093227]  
 
-#### Bereich ' Eigenschaften wiederherstellen ' im Bereich ' Elemente '  
+#### <a name="reinstate-properties-pane-in-the-elements-panel"></a>Bereich Eigenschaften im Elementbereich neu festlegen  
 
-Der Bereich " **Eigenschaften** " ist "zurück".  Es war [in Microsoft Edge 84 veraltet][DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel].  Das Microsoft Edge devtools-Team und das Chrome devtools-Team planen Verbesserungen bei der Überprüfung von Eigenschaften von Elementen.  
+Der **Bereich** Eigenschaften ist zurück.  Es war [in Microsoft Edge 84][DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel]veraltet.  Das Microsoft Edge DevTools-Team und das Chrome DevTools-Team planen Verbesserungen für die Überprüfung der Eigenschaften von Elementen.  
 
-:::image type="complex" source="../../media/2020/08/properties-pane.msft.png" alt-text="Zuordnen von Tastenkombinationen im devtools zu Visual Studio-Code" lightbox="../../media/2020/08/properties-pane.msft.png":::
-   Bereich ' **Eigenschaften** ' im Bereich ' **Elemente** '  
+:::image type="complex" source="../../media/2020/08/properties-pane.msft.png" alt-text="Eigenschaftenbereich im Elementbereich" lightbox="../../media/2020/08/properties-pane.msft.png":::
+   **Eigenschaftenbereich** im **Elementtool**  
 :::image-end:::  
 
 Chromium-Problem:  <!--  [#1105205][CR1105205],  -->  [#1116085] [CR1116085]  
@@ -384,155 +384,155 @@ When inspecting a network resource in the Network panel, DevTools now formats an
 
 The `X-Client-Data` HTTP header contains a list of experiment IDs and Microsoft Edge flags that are enabled in your browser.  The raw header values look like opaque strings since the values are `base-64-encoded`, serialized [protocol buffers][GoogleDevelopersProtocolBuffers].  To make the contents more transparent to developers, DevTools now shows the decoded values.  
 
-:::image type="complex" source="../../media/2020/08/x-client-data.msft.png" alt-text="Zuordnen von Tastenkombinationen im devtools zu Visual Studio-Code" lightbox="../../media/2020/08/x-client-data.msft.png":::
+:::image type="complex" source="../../media/2020/08/x-client-data.msft.png" alt-text="Human-readable `X-Client-Data` header values" lightbox="../../media/2020/08/x-client-data.msft.png":::
    Human-readable `X-Client-Data` header values  
 :::image-end:::  
 
 Chromium issue: [#1103854][CR1103854]  
 -->  
 
-#### AutoVervollständigen von benutzerdefinierten Schriftarten im Bereich "Formatvorlagen"  
+#### <a name="autocomplete-custom-fonts-in-the-styles-pane"></a>Automatisches Kompletieren benutzerdefinierter Schriftarten im Bereich Formatvorlagen  
 
-Importierte Schrift Flächen werden jetzt der Liste der CSS-Autovervollständigung hinzugefügt, wenn die `font-family` Eigenschaft im Bereich " **Formatvorlagen** " bearbeitet wird.  
+Importierte Schriftartengesichter werden nun der Liste der automatischen CSS-Vervollständigung hinzugefügt, wenn die Eigenschaft im `font-family` Bereich **Formatvorlagen bearbeitet** wird.  
 
-Wenn beispielsweise `monospace` eine benutzerdefinierte Schriftart auf dem lokalen Computer installiert ist, wird Sie in der Liste CSS-Vervollständigung angezeigt. In früheren Versionen von Microsoft Edge wurde die Schriftart nicht angezeigt.
+Wenn beispielsweise eine benutzerdefinierte Schriftart auf dem lokalen Computer installiert ist, wird `monospace` sie in der Css-Abschlussliste angezeigt.  In früheren Versionen von Microsoft Edge wurde die Schriftart nicht angezeigt.
 
-:::image type="complex" source="../../media/2020/08/font-auto-complete.msft.png" alt-text="Zuordnen von Tastenkombinationen im devtools zu Visual Studio-Code" lightbox="../../media/2020/08/font-auto-complete.msft.png":::
-   Benutzerdefinierte AutoVervollständigen-Schriftarten  
+:::image type="complex" source="../../media/2020/08/font-auto-complete.msft.png" alt-text="Automatisches Kompletieren benutzerdefinierter Schriftarten" lightbox="../../media/2020/08/font-auto-complete.msft.png":::
+   Automatisches Kompletieren benutzerdefinierter Schriftarten  
 :::image-end:::  
 
-Chrom Problem: [#1106221] [CR1106221]  
+Chromium-Problem: [#1106221][CR1106221]  
 
-#### Konsistente Anzeige des Ressourcentyps in der Netzwerksteuerung  
+#### <a name="consistently-display-resource-type-in-network-panel"></a>Konsistenter Ressourcentyp im Netzwerkbereich anzeigen  
 
-DevTools zeigt jetzt konsistent denselben Ressourcentyp wie die ursprüngliche Netzwerkanforderung an und fügt `/ Redirect` beim Umleiten \ (HTTP-Statuscode 302 \) den Wert der Spalte **Typ** an.  
+DevTools zeigen jetzt konsistent denselben Ressourcentyp wie die ursprüngliche Netzwerkanforderung an und fügen den Wert der Spalte Type an, wenn die Umleitung `/ Redirect` \(HTTP-Statuscode 302\) erfolgt. ****  
 
-Zuvor hat devtools den Typ in `Other` Sometimes geändert.  
+Zuvor hat DevTools den Typ in manchmal `Other` geändert.  
 
-:::image type="complex" source="../../media/2020/08/network-redirect.msft.png" alt-text="Zuordnen von Tastenkombinationen im devtools zu Visual Studio-Code" lightbox="../../media/2020/08/network-redirect.msft.png":::
-   Anzeigen des Umleitungs Ressourcentyps  
+:::image type="complex" source="../../media/2020/08/network-redirect.msft.png" alt-text="Umleitungsressourcentyp anzeigen" lightbox="../../media/2020/08/network-redirect.msft.png":::
+   Umleitungsressourcentyp anzeigen  
 :::image-end:::  
 
 Chromium-Problem: [#997694][CR997694]  
 
-#### Löschen von Schaltflächen in den Elementen und Netzwerk Fenstern  
+#### <a name="clear-buttons-in-the-elements-and-network-tools"></a>Löschen von Schaltflächen in den Elementen und Netzwerktools  
 
-Die folgenden Textfelder verfügen nun über **klare** Schaltflächen.  
+Die folgenden Textfelder verfügen jetzt über **Schaltflächen löschen.**  
 
-*   Die Felder ' Text filtern ' im Bereich ' **Formatvorlagen** ' und ' **Netzwerk** Bereich '  
-*   Das Textfeld "Dom-Suche" im Dialogfeld " **Elemente** ".  
+*   Die Filtertextfelder im **Bereich Formatvorlagen** und **im Netzwerktool.**  
+*   Das Textfeld DOM-Suche im **Elementtool.**  
 
-Wählen Sie die Schaltfläche **Löschen** aus, um den eingegebenen Text zu entfernen.  
+Wählen Sie die **Schaltfläche Löschen** aus, um eingegebenen Text zu entfernen.  
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/clear-button-elements.msft.png" alt-text="Zuordnen von Tastenkombinationen im devtools zu Visual Studio-Code" lightbox="../../media/2020/08/clear-button-elements.msft.png":::
-         Löschen von Schaltflächen in den **Elementen** -Panels  
+      :::image type="complex" source="../../media/2020/08/clear-button-elements.msft.png" alt-text="Löschen von Schaltflächen in den Elementen-Panels" lightbox="../../media/2020/08/clear-button-elements.msft.png":::
+         Löschen von Schaltflächen in den **Elements-Tools**  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/clear-button-network.msft.png" alt-text="Zuordnen von Tastenkombinationen im devtools zu Visual Studio-Code" lightbox="../../media/2020/08/clear-button-network.msft.png":::
-         Löschen von Schaltflächen in den  **Netzwerk** Panels  
+      :::image type="complex" source="../../media/2020/08/clear-button-network.msft.png" alt-text="Löschen von Schaltflächen in den Netzwerkpanels" lightbox="../../media/2020/08/clear-button-network.msft.png":::
+         Löschen von Schaltflächen in den **Netzwerktools**  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
 Chromium-Problem: [#1067184][CR1067184]  
 
-## Herunterladen der Microsoft Edge Preview-Kanäle  
+## <a name="download-the-microsoft-edge-preview-channels"></a>Herunterladen der Microsoft Edge-Vorschaukanäle  
 
-Wenn Sie unter Windows oder macOS arbeiten, sollten Sie die [Microsoft Edge Preview-Kanäle][MicrosoftEdgePreviewChannels] als Standard Entwicklungsbrowser verwenden.  Über die Vorschau Kanäle erhalten Sie Zugriff auf die neuesten devtools-Funktionen.  
+Wenn Sie unter Windows oder macOS sind, sollten Sie die [Microsoft Edge-Vorschaukanäle][MicrosoftEdgePreviewChannels] als Standardentwicklungsbrowser verwenden.  Über die Vorschaukanäle erhalten Sie Zugriff auf die neuesten DevTools-Features.  
 
-## Kontakt mit dem Microsoft Edge devtools-Team  
+## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge DevTools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
 <!-- image links -->  
 
-[ImageSettingsIcon]: /microsoft-edge/devtools-guide-chromium/media/settings-icon.msft.png "Symbol für devtools-Einstellungen"  
+[ImageSettingsIcon]: /microsoft-edge/devtools-guide-chromium/media/settings-icon.msft.png "Symbol "DevTools-Einstellungen""  
 
 <!-- links -->  
 
-[DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel]: ../05/devtools.md#deprecation-of-the-properties-pane-in-the-elements-panel "Missbilligung des Bereichs "Eigenschaften" im Bereich "Elemente" – Neuerungen in devtools (Microsoft Edge 84) | Microsoft docs"  
-[DevtoolsWhatsnew200206DevtoolsCssGridDebuggingFeatures]: ../06/devtools.md#css-grid-debugging-features "Features des CSS-Raster Debuggens – Neuerungen in devtools (Microsoft Edge 85) | Microsoft docs"  
+[DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel]: ../05/devtools.md#deprecation-of-the-properties-pane-in-the-elements-panel "Veralteter Eigenschaftenbereich im Bereich Elemente – Neues in DevTools (Microsoft Edge 84) | Microsoft Docs"  
+[DevtoolsWhatsnew200206DevtoolsCssGridDebuggingFeatures]: ../06/devtools.md#css-grid-debugging-features "Features zum Debuggen von CSS-Rastern – Neues in DevTools (Microsoft Edge 85) | Microsoft Docs"  
 
-[DevtoolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index "Emulieren von mobilen Geräten in Microsoft Edge devtools | Microsoft docs"  
-[DevtoolsCustomizeShortcuts]: /microsoft-edge/devtools-guide-chromium/customize/shortcuts "Anpassen von Tastenkombinationen in Microsoft Edge devtools | Microsoft docs"  
-[DevtoolsExperimentalFeaturesEnableExperimentalApis]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-experimental-apis "Aktivieren experimenteller APIs – experimentelle Features | Microsoft docs"  
-[DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-new-css-grid-debugging-features "Emulation: Unterstützung des Dual-Screen-Modus – experimentelle Features | Microsoft docs"  
-[DevtoolsExperimentalFeaturesEnableSourceOrderViewer]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-source-order-viewer "Aktivieren der Quellauftrags Anzeige – experimentelle Features | Microsoft docs"
-[DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode]: https://review.docs.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features?branch=user/zoghadya/dual-screen-experiment#emulation-support-dual-screen-mode "Emulation: Unterstützung des Dual-Screen-Modus – experimentelle Features | Microsoft docs"  
-[DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices]: /microsoft-edge/devtools-guide-chromium/experimental-features#testing-on-foldable-and-dual-screen-devices "Testen auf faltbaren und Dual-Screen-Geräten – experimentelle Funktionen | Microsoft docs"  
-[DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features#turn-on-experimental-features "Aktivieren von experimentellen Features – experimentelle Features | Microsoft docs"  
-[DevtoolsConsoleApiTable]: /microsoft-edge/devtools-guide-chromium/console/api#table "Tabelle-Console-API-Referenz | Microsoft docs"  
-[DevtoolsCoverageIndex]: /microsoft-edge/devtools-guide-chromium/coverage/index "Suchen Sie ungenutzten JavaScript-und CSS-Code mit der Registerkarte Coverage in Microsoft Edge devtools | Microsoft docs"  
-[DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "Schublade – Anpassen von Microsoft Edge devtools | Microsoft docs"  
-[DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "Analysieren der Renderingleistung mit der Registerkarte "Rendering" – Referenz zur Leistungsanalyse | Microsoft docs"  
-[DevtoolsMediaPanelIndex]: /microsoft-edge/devtools-guide-chromium/media-panel/index "Anzeigen und Debuggen von Medienplayer-Informationen | Microsoft docs"  
+[DevtoolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index "Emulieren von mobilen Geräten in Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeShortcuts]: /microsoft-edge/devtools-guide-chromium/customize/shortcuts "Anpassen von Tastenkombinationen in der Microsoft Edge DevTools-| Microsoft Docs"  
+[DevtoolsExperimentalFeaturesEnableExperimentalApis]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-experimental-apis "Aktivieren experimenteller APIs – Experimentelle | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-new-css-grid-debugging-features "Emulation: Unterstützung des dualen Bildschirmmodus – Experimentelle Features | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesEnableSourceOrderViewer]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-source-order-viewer "Aktivieren der Quellauftragsanzeige – Experimentelle | Microsoft Docs"
+[DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode]: https://review.docs.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features?branch=user/zoghadya/dual-screen-experiment#emulation-support-dual-screen-mode "Emulation: Unterstützung des dualen Bildschirmmodus – Experimentelle Features | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices]: /microsoft-edge/devtools-guide-chromium/experimental-features#testing-on-foldable-and-dual-screen-devices "Testen auf zusammenklappbaren geräten und dualen Bildschirmen – Experimentelle | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features#turn-on-experimental-features "Aktivieren experimenteller Features – Experimentelle Features | Microsoft Docs"  
+[DevtoolsConsoleApiTable]: /microsoft-edge/devtools-guide-chromium/console/api#table "Tabelle – Konsolen-API-| Microsoft Docs"  
+[DevtoolsCoverageIndex]: /microsoft-edge/devtools-guide-chromium/coverage/index "Suchen Sie nicht verwendeten JavaScript- und CSS-Code auf der Registerkarte Abdeckung in Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "Drawer – Anpassen von Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "Analysieren der Renderingleistung mit der Registerkarte Rendering – Leistungsanalysereferenz | Microsoft Docs"  
+[DevtoolsMediaPanelIndex]: /microsoft-edge/devtools-guide-chromium/media-panel/index "Anzeigen und Debuggen von Media Player-| Microsoft Docs"  
 
-[DualScreenIntroductionHowWorkSeam]:  /dual-screen/introduction#how-to-work-with-the-seam "Arbeiten mit der Naht – Einführung in Dual-Screen-Geräte | Microsoft docs"  
-[DualScreenWebCssMediaSpanning]: /dual-screen/web/css-media-spanning "CSS mediascreen-Spanning-Funktion für Dual-Screen-Erkennung | Microsoft docs"  
-[DualScreenWebJavascriptGetwindowsegments]: /dual-screen/web/javascript-getwindowsegments "Die getWindowSegments-JavaScript-API für Dual-Screen-Geräte | Microsoft docs"  
+[DualScreenIntroductionHowWorkSeam]:  /dual-screen/introduction#how-to-work-with-the-seam "Arbeiten mit der Naht – Einführung in duale Bildschirmgeräte | Microsoft Docs"  
+[DualScreenWebCssMediaSpanning]: /dual-screen/web/css-media-spanning "Css-Medienbildschirm-Spannfunktion für die Erkennung von | Microsoft Docs"  
+[DualScreenWebJavascriptGetwindowsegments]: /dual-screen/web/javascript-getwindowsegments "Die getWindowSegments-JavaScript-API für Dual-Screen-| Microsoft Docs"  
 
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge Preview-Kanäle"  
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge Preview Channels"  
 
-[VisualStudioCode]: https://code.visualstudio.com "Visual Studio-Code "  
-[VisualStudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Visual Studio-Code Tastenkombinationen für Windows"  
+[VisualStudioCode]: https://code.visualstudio.com "Visual Studio Code "  
+[VisualStudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Visual Studio Tastenkombinationen für Windows"  
 
 [MicrosoftSurfaceDevicesDuo]: https://www.microsoft.com/surface/devices/surface-duo "Das neue Surface Duo"  
 
-[EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools Twitter-Konto"  
+[EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools, Twitter-Konto"  
 
-[CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chrom Fehler"  
+[CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chromium-Fehler"  
 
-[CR174309]: https://crbug.com/174309 "DevTools: zulassen der Anpassung von Tastenkombinationen/Tastenkombinationen | Chrom Fehler"
-[CR384968]: https://crbug.com/384968 "Option zum ignorieren lokaler () Schriftarten | Chrom Fehler"  
-[CR772558]: https://crbug.com/772558 "DevTools: Update auf die neueste Version von Lighthouse | Chrom Fehler"  
-[CR807440]: https://crbug.com/807440 "Chrome sperrt mit einer hohen Anzahl von SWs | Chrom Fehler"  
-[CR997694]: https://crbug.com/997694 "XMLHttpRequest-Anforderungen mit 302-Status werden nicht unter dem Filter \ "XMLHttpRequest \" im Netzwerk Panel angezeigt | Chrom Fehler"  
-[CR1047356]: https://crbug.com/1047356 "CSS Grid/Flexbox/Tabellentools | Chrom Fehler"  
-[CR1051466]: https://crbug.com/1051466 "Unterstützen des Coop/COEP-Debuggens in devtools | Chrom Fehler"  
-[CR1054281]: https://crbug.com/1054281 "Feature Request: devtools sollte faltbare und Dual-Screen-Geräte emulieren | Chrom Fehler"  
-[CR1067184]: https://crbug.com/1067184 "Feature Request: Schaltfläche "Filter löschen" im Netzwerk &-Elemente-> Formatfilter Eingaben | Chrom Fehler"  
-[CR1068116]: https://crbug.com/1068116 "☂ Bereich "Schiffs Probleme" | Chrom Fehler"  
-[CR1080569]: https://crbug.com/1080569 "Acorn unterstützt keine logischen Zuweisungsoperatoren | Chrom Fehler"  
-[CR1080589]: https://crbug.com/1080589 "Klassifizieren von Problemen durch Drittanbieter/First-Party | Chrom Fehler"  
-[CR1086817]: https://crbug.com/1086817 "Acorn unterstützt keine numerischen Trennzeichen | Chrom Fehler"  
-[CR1090802]: https://crbug.com/1090802 "Simulieren von Änderungen im Leerlaufzustand aus der Leerlauf Erkennungs-API | Chrom Fehler"  
-[CR1093227]: https://crbug.com/1093227 "DevTools: empfehlen Sie die nächste barrierefreie Farbe | Chrom Fehler"  
-[CR1093247]: https://crbug.com/1093247 "Anzeigen von Informationen zu Frames im Anwendungs Panel | Chrom Fehler"  
-[CR1094406]: https://crbug.com/1094406 "Entwickler möchten eine Quellauftrags Anzeige für at https://webwewant.fyi/wants/64/"  
-[CR1096068]: https://crbug.com/1096068 "DevTools: Unterstützung emuliert das Feature "bevorzugt-reduzierte Datenmedien" | Chrom Fehler"  
-[CR1096481]: https://crbug.com/1096481 "Issues Banner Placement | Chrom Fehler"  
-[CR1100253]: https://crbug.com/1100253 "Verknüpfung zum Hinzufügen eines Screenshot-Knotens im Kontextmenü des Elements | Chrom Fehler"  
-[CR1103316]: https://crbug.com/1103316 "Beim ersten Suchergebnis wird die Element Suche nicht resolveNode (Text markieren usw.) | Chrom Fehler"  
-[CR1103854]: https://crbug.com/1103854 "De-verschleiern von X-Client-Datenwerten in Developer Tools | Chrom Fehler"  
+[CR174309]: https://crbug.com/174309 "DevTools: Ermöglicht das Anpassen von Tastenkombinationen/Tastenkombinationen | Chromium-Fehler"
+[CR384968]: https://crbug.com/384968 "Option zum Ignorieren von lokalen()Schriftarten | Chromium-Fehler"  
+[CR772558]: https://crbug.com/772558 "DevTools: Aktualisieren auf die neueste Version von "| Chromium-Fehler"  
+[CR807440]: https://crbug.com/807440 "Chrome wird mit einer großen Anzahl von SWs | Chromium-Fehler"  
+[CR997694]: https://crbug.com/997694 "XHR-Anforderungen mit dem Status 302 werden im Netzwerkbereich nicht unter dem Filter \"xhr\" | Chromium-Fehler"  
+[CR1047356]: https://crbug.com/1047356 "CSS Grid/Flexbox/Table tooling | Chromium-Fehler"  
+[CR1051466]: https://crbug.com/1051466 "Unterstützung des COOP/COEP-Debuggings in DevTools | Chromium-Fehler"  
+[CR1054281]: https://crbug.com/1054281 "Featureanforderung: DevTools sollte zusammenklappbare und duale Bildschirmgeräte emulieren, die | Chromium-Fehler"  
+[CR1067184]: https://crbug.com/1067184 "Featureanforderung: Filterschaltfläche löschen im Netzwerk & Elemente -> Formatfiltereingaben | Chromium-Fehler"  
+[CR1068116]: https://crbug.com/1068116 "☂ Problembereich | Chromium-Fehler"  
+[CR1080569]: https://crbug.com/1080569 "acorn unterstützt keine logischen Zuweisungsoperatoren | Chromium-Fehler"  
+[CR1080589]: https://crbug.com/1080589 "Klassifizieren von Problemen nach Drittanbieter-/erst-| Chromium-Fehler"  
+[CR1086817]: https://crbug.com/1086817 "acorn unterstützt keine numerischen Trennzeichen | Chromium-Fehler"  
+[CR1090802]: https://crbug.com/1090802 "Simulieren von Änderungen des Leerlaufzustands aus der Leerlauferkennungs-API | Chromium-Fehler"  
+[CR1093227]: https://crbug.com/1093227 "DevTools: Schlagen Sie die am nächsten barrierefreien | Chromium-Fehler"  
+[CR1093247]: https://crbug.com/1093247 "Anzeigen von Informationen zu Frames im Anwendungsbereich | Chromium-Fehler"  
+[CR1094406]: https://crbug.com/1094406 "Entwickler möchten eine Quellauftragsanzeige für AT https://webwewant.fyi/wants/64/"  
+[CR1096068]: https://crbug.com/1096068 "DevTools: Unterstützt die Emulierung der Features "prefers-reduced-data media" | Chromium-Fehler"  
+[CR1096481]: https://crbug.com/1096481 "Probleme bei der Bannerplatzierung | Chromium-Fehler"  
+[CR1100253]: https://crbug.com/1100253 "Hinzufügen einer Verknüpfung mit einem Screenshotknoten im Elementkontextmenü | Chromium-Fehler"  
+[CR1103316]: https://crbug.com/1103316 "Elementesuche wird nicht aufgelöstNode (Hervorhebungstext usw.) im ersten Suchergebnis | Chromium-Fehler"  
+[CR1103854]: https://crbug.com/1103854 "Entverschleieren von X-Client-Data-Werten in Entwicklertools | Chromium-Fehler"  
 <!--  [CR1105205]: https://crbug.com/1105205 "Issue 1105205 | Chromium bugs"  -->  
-[CR1106221]: https://crbug.com/1106221 "Hinzufügen von importierten Schriftarten zur Autovervollständigung der Schriftartfamilie im Formatvorlagen-Panel | Chromium-Fehler "  
-[CR1107766]: https://crbug.com/1107766 "zeigt Informationen zu Frames an, die von" Window. Open () "in der Frame Struktur generiert wurden | Chromium-Fehler "  
-[CR1115011]: https://crbug.com/1115011 "beim Kopieren einer Tabelle aus der Konsole wird die Struktur der Tabelle nicht beibehalten | Chromium-Fehler "  
-[CR1116085]: https://crbug.com/1116085 "Bitte bringen Sie den devtools-Eigenschafteninspektor zurück | Chromium-Fehler "  
+[CR1106221]: "Hinzufügen importierter Schriftarten zur automatischen Schriftfamilienvervollständigung https://crbug.com/1106221 im Formatvorlagenbereich | Chromium-Bugs"  
+[CR1107766]: "Anzeigen von Informationen zu Frames, die von https://crbug.com/1107766 'window.open()' in der Framestruktur generiert | Chromium-Bugs"  
+[CR1115011]: "Beim Kopieren einer Tabelle aus der Konsole wird die Struktur der Tabelle nicht | https://crbug.com/1115011 Chromium-Bugs"  
+[CR1116085]: "Rufen Sie den https://crbug.com/1116085 Inspektor für DevTools-Eigenschaften | Chromium-Bugs"  
 
-[CsswgDraftsMediaqueries5DescdefMediaPrefersReducedData]: https://drafts.csswg.org/mediaqueries-5#descdef-media-prefers-reduced-data "bevorzugt-reduzierte Datenmedien Abfragen Ebene 5 | W3C CSS-Arbeitsgruppen-Editor-Entwürfe"  
+[CsswgDraftsMediaqueries5DescdefMediaPrefersReducedData]: https://drafts.csswg.org/mediaqueries-5#descdef-media-prefers-reduced-data "prefers-reduced-data – Media Queries Level 5 | W3C CSS Working Group Editor Drafts"  
 
-[GithubGooglechromeLighthouseV620]: https://github.com/GoogleChrome/lighthouse/releases/tag/v6.2.0 "v 6.2.0-GoogleChrome/Lighthouse | GitHub"  
+[GithubGooglechromeLighthouseV620]: https://github.com/GoogleChrome/lighthouse/releases/tag/v6.2.0 "v6.2.0 – GoogleChrome/| GitHub"  
 
-[GoogleDevelopersProtocolBuffers]: https://developers.google.com/protocol-buffers "Protokollpuffer | Google-Entwickler"  
+[GoogleDevelopersProtocolBuffers]: https://developers.google.com/protocol-buffers "Protokollpuffer | Google Developers"  
 
-[SamsungMobileGalaxyFold]: https://www.samsung.com/us/mobile/galaxy-fold "Galaxy Fold | Samsung USA"  
+[SamsungMobileGalaxyFold]: https://www.samsung.com/us/mobile/galaxy-fold "Galaxis fold | Samsung US"  
 
-[V8FeaturesLogicalAssignment]: https://v8.dev/features/logical-assignment "Logische Zuordnung | V8"  
+[V8FeaturesLogicalAssignment]: https://v8.dev/features/logical-assignment "Logische Zuweisung | V8"  
 [V8FeaturesNumericSeparators]: https://v8.dev/features/numeric-separators "Numerische Trennzeichen | V8"  
 
-[WebDevCoopCoep]: https://web.dev/coop-coep "Erstellen Ihrer Website \ "Cross-Origin isolated \" mit Coop und COEP | Web. dev"  
-[WebDevIdleDetection]: https://web.dev/idle-detection "Erkennen von inaktiven Benutzern mit der Leerlauf Erkennungs-API | Web. dev"  
-[WebDevNonCompositedAnimations]: https://web.dev/non-composited-animations "Vermeiden Sie nicht zusammengesetzte Animationen | Web. dev"  
+[WebDevCoopCoep]: https://web.dev/coop-coep "So wird Ihre Website mithilfe von COOP und COEP isoliert\"Cross-Origin\" | web.dev"  
+[WebDevIdleDetection]: https://web.dev/idle-detection "Erkennen von inaktiven Benutzern mit dem Leerlauferkennungs-API-| web.dev"  
+[WebDevNonCompositedAnimations]: https://web.dev/non-composited-animations "Vermeiden sie nicht zusammengesetzte Animationen | web.dev"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
-> Die ursprüngliche Seite wird [hier](https://developers.google.com/web/updates/2020/08/devtools/index) gefunden und von [Jecelyn Yeen][JecelynYeen] \ (Developer Advocate, Chrome devtools \) erstellt.  
+> Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
+> Die ursprüngliche Seite findet sich [hier](https://developers.google.com/web/updates/2020/08/devtools/index) und wurde von [Jecelyn Yeen][JecelynYeen] \(Developer Advocate, Chrome DevTools\) erstellt.  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

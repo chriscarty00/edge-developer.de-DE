@@ -1,22 +1,22 @@
 ---
-description: Simulieren von reduzierter Bewegung mithilfe von Entwicklertools
+description: Simulieren sie reduzierte Bewegung mithilfe von Entwicklertools.
 title: Simulieren von reduzierter Bewegung mithilfe von Entwicklertools (CSS bevorzugt reduzierte Bewegung)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/17/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 0e5243e01ca6c9344dceffb0bf004dadccc3d4d7
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 29cdbd7492665e819315910b3f743d444470cc12
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230789"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397867"
 ---
-# Reduzierte Bewegungs Simulation  
+# <a name="reduced-motion-simulation"></a>Reduzierte Bewegungssimulation  
 
-Animationen in Webprodukten sind möglicherweise ein Problem mit der Barrierefreiheit.  Betriebssysteme befassen sich mit dem Problem, indem Sie eine Option zum Deaktivieren von Animationen verwenden, um Benutzer Verwirrungen und mögliche gesundheitliche Probleme wie das Auslösen von Anfällen zu vermeiden.  Im Web können Sie die CSS-medienabfrage " [bevorzugt-reduzierte Bewegung][MDNPrefersReducedMotion] " verwenden, um festzustellen, ob Benutzer keine Animationen sehen möchten.  In Ihrem Produkt können Sie den Animations Code in einen Test einschließen, um zu vermeiden, dass Animationen für die betroffenen Benutzer angezeigt werden.  
+Animation in Webprodukten kann ein Problem mit der Barrierefreiheit sein.  Betriebssysteme lösen das Problem, indem sie eine Option zum Deaktivieren von Animationen enthalten, um Benutzerverwechslungen und potenzielle Gesundheitsprobleme wie das Auslösen von Anfällen zu vermeiden.  Im Web können Sie die CSS-Medienabfrage [prefers-reduced-motion][MDNPrefersReducedMotion] verwenden, um zu erkennen, ob Benutzer keine Animationen ausführen oder anzeigen möchten.  In Ihrem Produkt können Sie Ihren Animationscode in einen Test umschließen, um zu vermeiden, dass Animationen für die betroffenen Benutzer angezeigt werden.  
 
 ```css
 @media (prefers-reduced-motion: reduce) {
@@ -27,25 +27,25 @@ Animationen in Webprodukten sind möglicherweise ein Problem mit der Barrierefre
 }
 ```  
 
-Mithilfe des [Microsoft Edge-devtools][DevtoolsIndex]können Sie diese reduzierte Bewegungs Einstellung simulieren, ohne Ihr Betriebssystem ändern zu müssen.  
+Mithilfe der [Microsoft Edge DevTools][DevtoolsIndex]können Sie diese Einstellung für reduzierte Bewegungen simulieren, ohne Ihr Betriebssystem ändern zu müssen.  
 
-1.  Öffnen des **Befehlsmenüs**  
-    1.  Wählen Sie `Control` + `Shift` + `P` unter Windows/Linux oder `Command` + `Shift` + `P` unter macOS aus.  
+1.  Öffnen Sie das **Befehlsmenü**.  
+    1.  Wählen `Control` + `Shift` + `P` Sie unter Windows/Linux oder `Command` + `Shift` + `P` unter macOS aus.  
         
         :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="Das Befehlsmenü" lightbox="../media/css-console-command-menu-rendering.msft.png":::
            Das **Befehlsmenü**  
         :::image-end:::  
         
-1.  Geben `reduced` Sie an, um die Simulation ein-und auszuschalten.  Wählen Sie die Option aus, und wählen Sie aus `Enter` .  
+1.  Geben `reduced` Sie ein, um die Simulation ein- und auszuschalten.  Wählen Sie die Option aus, und wählen Sie `Enter` aus.  
     
-    :::image type="complex" source="../media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png" alt-text="Aktivieren oder Deaktivieren der Einstellung reduzierte Bewegung bevorzugt im Befehlsmenü" lightbox="../media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png":::
-       Aktivieren oder Deaktivieren der Einstellung " **reduzierte Bewegung bevorzugt** " im **Befehlsmenü**  
+    :::image type="complex" source="../media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png" alt-text="Aktivieren oder Deaktivieren der Einstellung für reduzierte Bewegungen im Befehlsmenü" lightbox="../media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png":::
+       Aktivieren oder Deaktivieren der **Einstellung für reduzierte Bewegungen** im **Befehlsmenü**  
     :::image-end:::  
     
 1.  Aktualisieren Sie die aktuelle Seite, um zu testen, ob Ihre Animationen deaktiviert oder sichtbar sind.  
     
 <!-- links -->  
 
-[DevtoolsIndex]: ../index.md "Microsoft Edge (Chrom)-Entwickler Tools | Microsoft docs"  
+[DevtoolsIndex]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 
-[MDNPrefersReducedMotion]: https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion "bevorzugt-reduzierte-Motion | MDN"  
+[MDNPrefersReducedMotion]: https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion "bevorzugt eine reduzierte Bewegungserkennung | MDN"  

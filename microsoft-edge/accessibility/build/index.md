@@ -1,245 +1,245 @@
 ---
 ms.assetid: 1b3ebc25-d023-4f23-bbba-dce066c20de8
-description: Gehen Sie durch, wie bewährte Methoden und barrierefreie Rich-Internet-Anwendungen (Aria) zusammen kommen können, um eine barrierefreie Website zu erstellen.
-title: Build | Zugänglichkeit
+description: Erfahren Sie, wie bewährte Methoden und ARIA (Accessible Rich Internet Applications) zusammenkommen können, um eine barrierefreie Website zu erstellen.
+title: Erstellen | Barrierefreiheit
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/13/2020
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Barrierefreiheit, Barrierefreiheit für Entwickler, barrierefreie Websites, Edge, Web-Entwicklung, Aria, Developer, UIA, UI-Automatisierung
+keywords: Barrierefreiheit, Barrierefreiheit für Entwickler, barrierefreie Websites, Edge, Webentwicklung, ARIA, Entwickler, UIA, Benutzeroberflächenautomatisierung
 ms.custom: seodec18
-ms.openlocfilehash: 40ab1acd0b5356ad4696cde0762f656708a67890
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 69f0576b39815708d01477972abad1f8bdc9486e
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11233727"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397888"
 ---
-# Erstellen von barrierefreien Websites
+# <a name="building-accessible-websites"></a>Erstellen barrierefreier Websites
 
-Das Web ist mit dynamischen und komplexen Websites, Anwendungen und Benutzeroberflächen gefüllt, die mit einer Kombination aus HTML, CSS und JavaScript erstellt wurden.  Wenn Sie jedoch ohne Barrierefreiheit entworfen und erstellt wurden, sind diese komplexen Websites nur schwer von Personen zu verwenden, die auf [Hilfstechnologien](https://webaim.org/articles/motor/assistive) zum Durchsuchen des Webs angewiesen sind. Das Erstellen von Websites, die für Menschen mit Behinderungen barrierefrei sind, erfordert semantische Informationen über die Benutzeroberfläche. Auf diese Weise können Hilfstechnologien wie Bildschirmsprachausgaben die erforderlichen Informationen vermitteln, um Personen mit einer Reihe von Fähigkeiten die Nutzung der Website zu ermöglichen.
+Das Web ist mit dynamischen und komplexen Websites, Anwendungen und Benutzeroberflächen gefüllt, die mithilfe einer Kombination aus HTML, CSS und JavaScript erstellt wurden.  Wenn diese komplexen Websites jedoch ohne Barrierefreiheit entworfen und erstellt werden, ist die Verwendung dieser komplexen Websites für Personen, die auf Hilfstechnologien zum Durchsuchen des Webs angewiesen sind, schwierig. [](https://webaim.org/articles/motor/assistive) Das Erstellen von Websites, auf die für Personen mit Behinderungen zugegriffen werden kann, erfordert semantische Informationen über die Benutzeroberfläche. Auf diese Weise können Hilfstechnologien, wie z. B. Bildschirmlesegeräte, die erforderlichen Informationen vermitteln, um Personen mit einer Reihe von Fähigkeiten bei der Verwendung der Website zu helfen.
 
-Besuchen Sie [HTML5Accessibility](https://html5accessibility.com) , um Informationen darüber zu erhalten, welche neuen HTML5-Features von Microsoft Edge zugänglich unterstützt werden.
+Informationen dazu, welche neuen HTML5-Features von Microsoft Edge zugriffbar unterstützt werden, finden Sie unter [HTML5Accessibility.](https://html5accessibility.com)
 
-## Funktionsweise der Barrierefreiheit
+## <a name="how-accessibility-works"></a>Funktionsweise der Barrierefreiheit
 
-Hilfstechnologien fügen Funktionen hinzu, die normalerweise von Computern nicht zur Verfügung stehen. Beispielsweise kann ein sehbehinderter Benutzer seine Tastatur in Kombination mit Hilfstechnologien wie einer Sprachausgabe verwenden, anstatt den Browser mit der Maus und dem Bildschirm direkt zu verwenden. Bei Anwendungen auf Microsoft-Plattformen und im Web interagiert die Hilfstechnologie mit der Microsoft- [Benutzeroberflächenautomatisierung](https://msdn.microsoft.com/library/windows/desktop/bb892135.aspx), einem anwendungsspezifischen Objektmodell wie dem Dokumentobjektmodell (DOM) in Microsoft Edge oder einer Kombination dieser Technologien.
+Hilfstechnologien fügen Funktionen hinzu, die Computer normalerweise nicht haben. Beispielsweise kann ein sehbehinderter Benutzer seine Tastatur in Kombination mit Hilfstechnologie wie z. B. einer Bildschirmlesefunktion verwenden, anstatt den Browser direkt mit der Maus und dem Bildschirm zu verwenden. Für Anwendungen auf Microsoft-Plattformen und im Web interagiert die Hilfstechnologie mit der Microsoft [UI Automation,](https://msdn.microsoft.com/library/windows/desktop/bb892135.aspx)einem anwendungsspezifischen Objektmodell wie dem Document Object Model (DOM) in Microsoft Edge oder einer Kombination aus diesen.
 
-Für Webentwickler werden bestimmte HTML-Elemente UI-Automatisierung-Objekten zugeordnet, sodass der Entwickler bei der Auswahl dieser HTML-Elemente die Barrierefreiheitseigenschaften und Ereignisse verwenden kann, die in diesen Elementen integriert sind. Bei der Entwicklung Ihrer Website müssen Sie in der Regel nur darauf achten, dass die API richtig geschrieben wird (oder das entsprechende Element angegeben ist), damit die Anwendung barrierefrei ist. Weitere Informationen finden Sie [unter Aria und UI-Automatisierung in Microsoft Edge](./ARIA-and-UI-Automation.md) .  Informationen zu barrierefreien Apps für die universelle Windows-Plattform (UWP) finden Sie im Thema [Barrierefreiheit](https://msdn.microsoft.com/windows/uwp/accessibility/accessibility) im Windows dev Center.
+Für Webentwickler werden bestimmte HTML-Elemente Benutzeroberflächenautomatisierungsobjekten zugeordnet, sodass der Entwickler bei der Auswahl dieser HTML-Elemente die in diese Elemente integrierten Barrierefreiheitseigenschaften und -ereignisse verwenden kann. Beim Entwickeln Ihrer Website müssen Sie sich in der Regel nur darum sorgen, dass die API ordnungsgemäß in die API geschrieben wird (oder dass das entsprechende Element angegeben ist), damit auf die Anwendung zugegriffen werden kann. Weitere Informationen finden Sie [unter ARIA and UI Automation in Microsoft Edge.](./ARIA-and-UI-Automation.md)  Informationen zu barrierefreien Apps für die universelle [](https://msdn.microsoft.com/windows/uwp/accessibility/accessibility) Windows-Plattform (UWP) finden Sie im Thema Barrierefreiheit im Windows Dev Center.
 
-Viele häufige Barrierefreiheitsprobleme mit dynamischem Inhalt können durch eine gute Codierungspraxis behoben werden, und die [WCAG 2,0](https://go.microsoft.com/fwlink/p/?LinkID=24629) -Dokumentation umfasst zahlreiche Techniken und bewährte Methoden, mit denen Sie barrierefreiere dynamische Webanwendungen erstellen können. Auch wenn Sie ordnungsgemäß codiert sind, ist es nicht unbedingt möglich, dynamischen Inhalt zu erreichen. [Barrierefreie Rich-Internet-Anwendungen (Aria)](#aria) helfen, dieses Problem zu lösen.  
+Viele häufige Barrierefreiheitsprobleme mit dynamischen Inhalten können durch eine bewährte Codierungspraxis behoben werden, und die [WCAG 2.0-Dokumentation](https://go.microsoft.com/fwlink/p/?LinkID=24629) enthält viele Techniken und bewährte Methoden, mit deren Hilfe Sie barrierefreiere dynamische Webanwendungen erstellen können. Auch wenn sie ordnungsgemäß codiert sind, ist der Zugriff auf dynamische Inhalte jedoch nicht unbedingt möglich. [Barrierefreie Rich Internet Applications (ARIA) hilft](#aria) bei der Bewältigung dieses Problems.  
 
-Weitere Informationen zur Barrierefreiheit im Web finden Sie [in der Einführung in die Barrierefreiheit](https://www.w3.org/WAI/intro/accessibility.php) des Webs durch die [Web Accessibility Initiative](https://www.w3.org/WAI/) (WAI).
+Weitere Informationen zur Webbarrierefreiheit finden Sie in der [Einführung in web accessibility](https://www.w3.org/WAI/intro/accessibility.php) by the Web Accessibility Initiative [(WAI).](https://www.w3.org/WAI)
 
-## Aria
+## <a name="aria"></a>ARIA
 
-Die Aria-Spezifikation ( [barrierefreie Rich-Internet-Anwendungen](https://www.w3.org/TR/wai-aria/) ) der W3C [Web Accessibility-Initiative](https://www.w3.org/WAI/) definiert eine Syntax für die Erstellung von dynamischen Webinhalten und benutzerdefinierten Benutzeroberflächen, die für alle Personen zugänglich sind. Aria erweitert HTML mithilfe zusätzlicher Attribute (Rollen, Eigenschaften und Zustände), die für die Übertragung benutzerdefinierter Semantik entwickelt wurden. Diese Attribute werden von Browsern verwendet, um den Zustand und die Rolle des Steuerelements an die Barrierefreiheits-API weiterzugeben.
+Die [ARIA(Accessible Rich Internet](https://www.w3.org/TR/wai-aria/) Applications)-Spezifikation der Web Accessibility [Initiative](https://www.w3.org/WAI/) von W3C definiert als Syntax, um dynamische Webinhalte und benutzerdefinierte Benutzeroberflächen für alle Benutzer zugänglich zu machen. ARIA erweitert HTML mithilfe zusätzlicher Attribute (Rollen, Eigenschaften und Zustände), die benutzerdefinierte Semantik vermitteln sollen. Diese Attribute werden von Browsern verwendet, um den Zustand und die Rolle der Steuerelemente an die Barrierefreiheits-API weiter zu übergeben.
 
-### Rollen, Eigenschaften und Zustände
+### <a name="roles-properties-and-states"></a>Rollen, Eigenschaften und Zustände
 
-Aria-Rollen werden für Elemente mit dem [`role`](https://msdn.microsoft.com/library/cc304102(v=vs.85).aspx) Attribut gesetzt, um Hilfstechnologien und Barrierefreiheits-APIs Informationen zu dem Element zu geben. So wird beispielsweise das untere `<li>` Element zugewiesen `role="menuitem"` , um zu signalisieren, dass es sich um ein Element in einem Menü handelt.
+ARIA-Rollen werden für Elemente festgelegt, die das Attribut verwenden, um Hilfstechnologien und [`role`](https://msdn.microsoft.com/library/cc304102(v=vs.85).aspx) Barrierefreiheits-APIs Informationen zum Element zu geben. Das folgende Element wird beispielsweise zugewiesen, um zu signalisieren, dass es sich um ein `<li>` Element in einem Menü `role="menuitem"` handelt.
 
 ```html
 <li role="menuitem">Home</li>
 ```
 
-Aria-Zustände und-Eigenschaften sind Aria-Präfix Attribute, die bestimmte Informationen zu einem Objekt bereitstellen, um die Definition der Art von Rollen zu unterstützen. Eigenschaften sind Attribute, die für die Art eines Objekts wichtig sind, wie [`aria-readonly`](https://msdn.microsoft.com/library/cc304089(v=vs.85).aspx) und [`aria-haspopup`](https://msdn.microsoft.com/library/cc304081(v=vs.85).aspx) . Das Ändern einer Eigenschaft wirkt sich auf die Bedeutung des Objekts aus. Im folgenden Beispiel wird die Eigenschaft `aria-haspopup="true"` für ein `<li>` Menüelement auf ein Popup Symbol gesetzt.
+ARIA-Zustände und -Eigenschaften sind Arienpräfixattribute, die spezifische Informationen zu einem Objekt bereitstellen, um die Definition der Art von Rollen zu bilden. Eigenschaften sind Attribute, die für die Art eines Objekts wichtig sind, z. B. [`aria-readonly`](https://msdn.microsoft.com/library/cc304089(v=vs.85).aspx) und [`aria-haspopup`](https://msdn.microsoft.com/library/cc304081(v=vs.85).aspx) . Das Ändern einer Eigenschaft wirkt sich auf die Bedeutung des Objekts aus. Im folgenden Beispiel wird die Eigenschaft für ein Menüelement festgelegt, um anzuzeigen, `aria-haspopup="true"` dass sie über ein Popup `<li>` verfügt.
 
 ```html
 <li role="menuitem" aria-haspopup="true">Open</li>
 ```
 
-Zustände ändern nicht die Art des Objekts, sondern stellen Informationen dar, die dem Objekt oder der Interaktion des Benutzers mit dem Objekt zugeordnet sind, wie [`aria-hidden`](https://msdn.microsoft.com/library/cc304083(v=vs.85).aspx) oder [`aria-checked`](https://msdn.microsoft.com/library/cc304075(v=vs.85).aspx) . Der Zustand `aria-checked="false"` im folgenden Beispiel zeigt beispielsweise, dass das Kontrollkästchen nicht aktiviert ist.
+Zustände ändern nicht die Art des Objekts, sondern stellen Informationen dar, die dem Objekt oder der Benutzerinteraktion mit dem Objekt zugeordnet sind, z. B. [`aria-hidden`](https://msdn.microsoft.com/library/cc304083(v=vs.85).aspx) oder [`aria-checked`](https://msdn.microsoft.com/library/cc304075(v=vs.85).aspx) . Der Status im folgenden Beispiel stellt z. B. dar, dass `aria-checked="false"` das Kontrollkästchen nicht aktiviert ist.
 
 ```html
 <div role="checkbox" aria-checked="false">Accept</div>
 ```
 
-Wechseln Sie zum [Rollenmodell](https://www.w3.org/TR/wai-aria-1.1/#roles) des W3C, um eine vollständige Liste der Rollen, Eigenschaften und Zustände anzuzeigen.
+Wechseln Sie [zum Rollenmodell](https://www.w3.org/TR/wai-aria-1.1/#roles) des W3C, um eine vollständige Liste der Rollen, Eigenschaften und Zustände zu sehen.
 
-Weitere Informationen zu Aria finden Sie in der Aria im Abschnitt [Resources](#resources) .
+Weitere Informationen zu ARIA finden Sie unter ARIA im Abschnitt [Ressourcen.](#resources)
 
-## Kompatibilitätstests für Hilfstechnologien  
+## <a name="assistive-technology-compatibility-testing"></a>Kompatibilitätstests für Hilfstechnologien  
 
-Überprüfen, ob die Website, die Sie erstellen, mit echten Hilfstechnologien arbeitet, ist die beste Methode, um für Benutzer mit Behinderungen eine gute Benutzerfreundlichkeit zu gewährleisten.  Da viele Hilfstechnologien die Tastatur verwenden, ist das Testen der Barrierefreiheit Ihrer Website ein guter Ausgangspunkt.  Das [Testen der Tastatur Kompatibilität][W3cPerspectiveVideosKeyboard] überprüft, ob Benutzer auf alle interaktiven Steuerelemente zugreifen können, ohne dass eine Maus erforderlich ist.  Microsoft [Accessibility Insights für Web][AccessibilityinsightsWebOverview] ist eine Browser Erweiterung für Microsoft Edge und Chrome, die Sie führt und einige häufige Probleme aufdeckt.  
+Die Überprüfung, ob die website, die Sie erstellen, mit echten Hilfstechnologien funktioniert, ist die beste Möglichkeit, um eine gute Erfahrung für Ihre Benutzer mit Behinderungen zu gewährleisten.  Da viele Hilfstechnologien die Tastatur nutzen, ist das Testen der Barrierefreiheit ihrer Website ein guter Einstiegsort.  [Tastaturkompatibilitätstests][W3cPerspectiveVideosKeyboard] überprüfen, ob Benutzer zugriff auf alle interaktiven Steuerelemente haben, ohne dass eine Maus erforderlich ist.  Microsoft [Accessibility Insights for Web ist][AccessibilityinsightsWebOverview] eine Browsererweiterung für Microsoft Edge und Chrome, die Sie leitet und mehrere häufige Probleme auftiert.  
 
-Wenn Sie sicher sind, dass Ihre Website gut mit einer Tastatur funktioniert, versuchen Sie es mit anderen Hilfstechnologien wie Bildschirmsprachausgaben.  Im folgenden werden Probleme aufgedeckt.
+Sobald Sie sicher sind, dass Ihre Website gut mit einer Tastatur funktioniert, versuchen Sie es mit anderen Hilfstechnologien, z. B. Bildschirmlesegeräten.  Es werden Probleme in den folgenden Themen aufgedeckt.
 
-*   Ihr HTML-, Aria-und CSS-Code  
-*   Die Stufe der Unterstützung einer Hilfstechnologie für ein Feature oder eine Technik.  
+*   Ihre HTML, ARIA und CSS.  
+*   Die Unterstützungsebene einer Hilfstechnologie für ein Feature oder eine Technik.  
     
-Unterschiedliche Browser können Elemente Platt Form Barrierefreiheits-APIs anders als Microsoft Edge zuordnen.  Beim Erstellen der Benutzeroberfläche ist es wichtig, die einzelnen Unterschiede zu beachten.  
+Verschiedene Browser ordnen Elemente plattformbarrierefreien APIs möglicherweise anders zu als Microsoft Edge.  Beim Erstellen Der Benutzeroberfläche ist es wichtig, jeden Unterschied zu berücksichtigen.  
 
-WebAIM führt Umfragen mit [Sprachausgabe][WebaimProjectsScreenreadersurvey8] und [sehbehinderten][WebaimProjectsLowvisionsurvey2] Benutzern durch, die Ihnen bei der Entscheidung helfen, welche Hilfstechnologien und Browser Sie testen möchten.  
+WebAIM führt Umfragen mit [][WebaimProjectsLowvisionsurvey2] Bildschirmleser und Benutzern mit niedriger Sehkraft durch, die Ihnen bei der Entscheidung helfen, welche Hilfstechnologien und Browser Sie testen möchten. [][WebaimProjectsScreenreadersurvey8]  
 
-### Lernen, wie man testet  
+### <a name="learning-how-to-test"></a>Learning How to Test  
 
-Hilfstechnologien sind ausgeklügelte Tools.  Gehen Sie nicht davon aus, dass Sie in der Lage sind, sofort mit einer Hilfstechnologie zu testen, ohne zuvor zu erfahren, wie das funktioniert.  Das Lernen mit einer Sprachausgabe zu testen, hat eine besonders steile Lernkurve.  Ein unerfahrener Benutzer der Bildschirmsprachausgabe kann davon ausgehen, dass ein Fehler bei der Bildschirmsprachausgabe aufgetreten ist, während das Problem mit dem Missbrauch der Sprachausgabe zusammenhängt.  
+Hilfstechnologien sind ausgefeilte Tools.  Gehen Sie nicht davon aus, dass Sie sofort mit dem Testen mit einer Hilfstechnologie beginnen können, ohne zunächst zu erfahren, wie sie funktioniert.  Das Testen mit einer Bildschirmleseausgabe hat eine besonders starke Lernkurve.  Ein benutzerfreundlicher Bildschirmlesebenutzer kann davon ausgehen, dass ein Bildschirmlesefehler aufgetreten ist, während das Problem im Zusammenhang mit dem Missbrauch der Bildschirmleseausgabe steht.  
 
-Weitere Informationen zum Lernen, wie Sie mit Hilfstechnologien testen können, finden Sie unter [Testen mit Bildschirmsprachausgaben][WebaimArticlesScreenreaderTesting] auf WebAIM.  
+Weitere Informationen zum Testen mit Hilfstechnologien finden Sie unter [Testen mit Bildschirmlesegeräten][WebaimArticlesScreenreaderTesting] auf WebAIM.  
 
-### Lokales Testen  
+### <a name="testing-locally"></a>Lokal testen  
 
-Die meisten Geräte umfassen Hilfstechnologien, die für das Betriebssystem integriert sind.  Microsoft Windows umfasst die [Windows-Sprachausgabe][MicrosoftSupport22798] und die [Windows][MicrosoftSupportWindows414948ba8b1cD3bd86150e5e32204198]-Bildschirmlupe.  Hilfstechnologien von Drittanbietern wie [NVDA][NvaccessAboutNvda], [FreedomscientificSoftwareJaws]und [ZoomText][FreedomscientificSoftwareZoomtext] stehen zum Download zur Verfügung.  Apple macOS enthält die [VoiceOver][AppleAccessibilityMacVision] -Sprachausgabe.  Und IOS, Android und Linux unterstützen alle eine Vielzahl von Hilfstechnologien.  
+Die meisten Geräte enthalten Hilfstechnologie, die in das Betriebssystem integrierte Ist.  Microsoft Windows enthält die [Windows Sprachausgabe][MicrosoftSupport22798] und [die Windows Magnifier][MicrosoftSupportWindows414948ba8b1cD3bd86150e5e32204198].  Hilfstechnologien von Drittanbietern wie [NVDA,][NvaccessAboutNvda] [FreedomscientificSoftwareJaws]und [ZoomText][FreedomscientificSoftwareZoomtext] stehen zum Herunterladen zur Verfügung.  Apple macOS enthält die [VoiceOver-Sprachausgabe.][AppleAccessibilityMacVision]  Und iOS, Android und Linux unterstützen eine Vielzahl von Hilfstechnologien.  
 
-### Testen in virtuellen Computern und Emulatoren  
+### <a name="testing-in-virtual-machines-and-emulators"></a>Testen in virtuellen Computern und Emulatoren  
 
-Wenn Sie unter macOS mit einer Hilfstechnologie testen möchten, die nur für Windows verfügbar ist, wie Windows-Sprachausgabe oder NVDA, erstellen Sie einen virtuellen Windows-Computer.  Virtuelle Computer mit Microsoft Edge \ (EdgeHTML \) und IE sind für virtualbox und VMware auf der [Download Seite für virtuelle Computer][MicrosoftDeveloperEdgeVms]verfügbar.  
+Wenn Sie unter macOS mit einer Hilfstechnologie testen möchten, die nur für Windows verfügbar ist, z. B. Windows Sprachausgabe oder NVDA, erstellen Sie einen virtuellen Windows-Computer.  Virtuelle Computer mit Microsoft Edge \(EdgeHTML\) und IE sind für VirtualBox und VMWare auf der Downloadseite für virtuelle [Computer verfügbar.][MicrosoftDeveloperEdgeVms]  
 
-[Android Studio][AndroidDeveloperSdkInstallingStudioHtml] enthält einen Emulator, mit dem Sie Hilfstechnologien in der [Android-Barrierefreiheits Suite][GooglePlayStoreAndroidAccessibilitySuite]testen können.  Befolgen Sie die Anweisungen zum [Einrichten eines virtuellen Geräts][AndroidDeveloperDevicesManagingAvdsHtml] , und [Starten Sie den Emulator][AndroidDeveloperDevicesEmulatorHtml], und installieren Sie dann die [Android-Barrierefreiheits Suite][GooglePlayStoreAndroidAccessibilitySuite] aus dem GooglePlay-Store.  
+[Android Studio][AndroidDeveloperSdkInstallingStudioHtml] enthält einen Emulator, mit dem Sie Hilfstechnologien in der [Android Accessibility Suite testen können.][GooglePlayStoreAndroidAccessibilitySuite]  Befolgen Sie die Anweisungen [zum Einrichten eines][AndroidDeveloperDevicesManagingAvdsHtml] virtuellen Geräts und [starten][AndroidDeveloperDevicesEmulatorHtml]Sie den Emulator, und installieren Sie dann die Android [Accessibility Suite][GooglePlayStoreAndroidAccessibilitySuite] aus dem GooglePlay Store.  
 
 > [!NOTE]
-> Der IOS-Simulator enthält derzeit keine VoiceOver-Funktion.  
+> Der iOS-Simulator enthält derzeit nicht VoiceOver.  
 
-### Cloud-basierte Test Tools  
+### <a name="cloud-based-testing-tools"></a>Cloudbasierte Testtools  
 
-Wenn keine Hilfstechnologien für Ihr Betriebssystem verfügbar sind oder wenn Sie eine auf einem virtuellen Computer oder Emulator nicht installieren können, sind Cloud-basierte Hilfstechnologie-Testtools die beste Wahl.  
+Wenn eine Hilfstechnologie auf Ihrem Betriebssystem nicht verfügbar ist oder Sie eine nicht auf einem virtuellen Computer oder Emulator installieren können, sind cloudbasierte Tools zum Testen von Hilfstechnologien das nächste Beste.  
 
-*   Mit [Assistiv Labs (Commercial)][AssistivlabsMain] können Sie mit Hilfstechnologien manuell über einen beliebigen modernen Webbrowser testen.  Wählen Sie eine Hilfstechnologie und einen Browser aus, die Sie mit einem virtuellen Computer, Emulator oder realen Gerät verbindet, mit dem Sie interagieren können.  
+*   [Assistiv Labs (kommerziell)][AssistivlabsMain] ermöglicht ihnen das manuelle Testen mit Hilfstechnologien über jeden modernen Webbrowser.  Wählen Sie eine Hilfstechnologie und einen Browser aus, und sie verbindet Sie mit einem virtuellen Computer, Emulator oder einem echten Gerät, mit dem Sie interagieren können.  
 
-## Ressourcen
+## <a name="resources"></a>Ressourcen
 
-### Grundlagen der Barrierefreiheit
+### <a name="accessibility-basics"></a>Grundlagen der Barrierefreiheit
 
-#### [Das A11Y-Projekt](http://a11yproject.com/)
+#### [<a name="the-a11y-project"></a>Das A11Y-Projekt](http://a11yproject.com/)
 
-Das A11Y-Projekt ist eine Community-gesteuerte Anstrengung, um die Barrierefreiheit im Web zu vereinfachen. Schauen Sie sich [die A11Y-Projekt](https://a11yproject.com/) Website an, um mehr über grundlegende Barrierefreiheits Prinzipien, deren Barrierefreies Muster und die Widget- [Bibliothek](https://a11yproject.com/patterns)sowie deren [Ressourcen](http://a11yproject.com/resources.html) zu Barrierefreiheits Software, Blogs, Büchern und Tools zu erfahren.
+Das A11Y-Projekt ist eine communitygesteuerte Anstrengung, um die Barrierefreiheit des Webs zu vereinfachen. Auf der [A11Y-Projektwebsite](https://a11yproject.com/) finden Sie Informationen zu grundlegenden Barrierefreiheitsprinzipien, deren barrierefreien Mustern und der Widgetbibliothek sowie deren Ressourcen zu Barrierefreiheitssoftware, Blogs, Büchern und Tools. [](https://a11yproject.com/patterns) [](http://a11yproject.com/resources.html)
 
-#### [Web Accessibility Initiative (WAI)](https://w3.org/WAI/)
+#### [<a name="web-accessibility-initiative-wai"></a>Web Accessibility Initiative (WAI)](https://w3.org/WAI/)
 
-Die W3C Web Accessibility Initiative (WAI) stellt eine Bemühung dar, die Barrierefreiheit im Internet zu verbessern. Ihre Website bietet eine Reihe von Ressourcen für den Einstieg [in die Barrierefreiheit im Web](https://www.w3.org/WAI/gettingstarted/Overview.html), das [Entwerfen für Inklusion](https://www.w3.org/WAI/users/Overview.html), [Lernprogramme und Präsentationen](https://www.w3.org/WAI/train.html)und vieles mehr.
+Die W3C Web Accessibility Initiative (WAI) ist ein Versuch, die Barrierefreiheit des Webs zu verbessern. Ihre Website bietet eine Vielzahl von Ressourcen für erste Schritte mit Barrierefreiheit im [Web,](https://www.w3.org/WAI/gettingstarted/Overview.html) [Entwerfen für](https://www.w3.org/WAI/users/Overview.html)Inklusion, [Lernprogramme und Präsentationen](https://www.w3.org/WAI/train.html)und vieles mehr.
 
-### Barrierefreiheits-Blogs
+### <a name="accessibility-blogs"></a>Barrierefreiheitsblogs
 
-#### [Die der Paciello-Gruppe](https://www.paciellogroup.com/blog/)
+#### [<a name="the-paciello-group"></a>Die Paciello-Gruppe](https://www.paciellogroup.com/blog/)
 
-Die der Paciello-Gruppe bietet Beratungs-und Technologielösungen für Organisationen in der ganzen Welt, um sicherzustellen, dass Ihre Kunden effektiv und effizient alle Zielgruppen erreichen, während Sie behördliche und internationale Standards erfüllen. Ihr Blog umfasst Themen wie bewährte Methoden für Web-Barrierefreiheit, Barrierefreiheits Tools und Trends für Barrierefreiheit.
+Die Paciello-Gruppe bietet Organisationen auf der ganzen Welt Beratungs- und Technologielösungen, um sicherzustellen, dass ihre Kunden alle Zielgruppen effektiv und effizient erreichen und gleichzeitig staatliche und internationale Standards erfüllen. Ihr Blog behandelt Themen wie bewährte Methoden für die Webbarrierefreiheit, Barrierefreiheitstools und Barrierefreiheitstrends.
 
-#### [Einfach zugänglich](http://simplyaccessible.com/articles/)
+#### [<a name="simply-accessible"></a>Einfach zugänglich](http://simplyaccessible.com/articles/)
 
-Einfach barrierefrei ist ein Team von Spezialisten für Barrierefreiheit, das Barrierefreiheit, Beratung und mehr bietet, um die Wahrnehmung von Barrierefreiheit im Internet zu ändern. Im Abschnitt " [Artikel](http://simplyaccessible.com/articles/) " werden bewährte Methoden für Barrierefreiheit, Barrierefreies Design und vieles mehr erläutert.
+Simply Accessible ist ein Team von Barrierefreiheitsspezialisten, das Barrierefreiheitsschulungen, Beratungsleistungen und vieles mehr bietet, um die Wahrnehmung von Barrierefreiheit im Web zu ändern. In [ihrem Abschnitt](http://simplyaccessible.com/articles/) Artikel werden bewährte Methoden für Barrierefreiheit im Web, barrierefreies Design und vieles mehr erläutert.
 
-#### [SSB Bart Group (SSB)](http://www.ssbbartgroup.com/blog/)
+#### [<a name="ssb-bart-group-ssb"></a>SSB -BART-Gruppe (SSB)](http://www.ssbbartgroup.com/blog/)
 
-SSB Bart Group ist eine digitale Bedienungshilfe Firma, die Ihre Kunden bei der Entwicklung und Bereitstellung von barrierefreien Produkten und Diensten unterstützt. Ihr Blog behandelt Themen wie Aria-bewährte Methoden, Trends für Barrierefreiheit, Webinars und vieles mehr.
+Die SSB -BART-Gruppe ist eine Firma für digitale Barrierefreiheit, die ihre Kunden bei der Entwicklung und Bereitstellung barrierefreier Produkte und Dienste unterstützt. In ihrem Blog werden Themen wie bewährte Methoden für ARIA, Barrierefreiheitstrends, Webinare und vieles mehr behandelt.
 
-### Barrierefreie Beispiele
+### <a name="accessible-examples"></a>Barrierefreie Beispiele
 
-#### [ally.js-Lernprogramme](http://allyjs.io/tutorials/)
+#### [<a name="allyjs---tutorials"></a>ally.js – Lernprogramme](http://allyjs.io/tutorials/)
 
-JavaScript-Bibliothek, um moderne Webanwendungen mit Barrierefreiheits Problemen zu unterstützen, indem die Barrierefreiheit vereinfacht wird.
+JavaScript-Bibliothek, um moderne Webanwendungen mit Barrierefreiheitsbedenken zu unterstützen, indem sie die Barrierefreiheit vereinfacht.
 
-#### [Heydonworks-Aria-Beispiele](http://heydonworks.com/practical_aria_examples/)
+#### [<a name="heydonworks---aria-examples"></a>Heydonworks – ARIA-Beispiele](http://heydonworks.com/practical_aria_examples/)
 
-Praktische Aria-Beispiele zum Verbessern der Barrierefreiheit Ihrer Anwendung
+Praktische ARIA-Beispiele zur Verbesserung der Anwendungsbarrierefreiheit
 
-#### [OpenAjax-Beispiele](http://oaa-accessibility.org/)
+#### [<a name="openajax-examples"></a>OpenAjax-Beispiele](http://oaa-accessibility.org/)
 
-Die OpenAjax Alliance-Website ist eine hervorragende Ressource zur Überprüfung der Regeln für WAI-ARIA und bietet eine Reihe von Beispielen für WAI-ARIA-Implementierungen.
+Die OpenAjax Alliance-Website ist eine hervorragende Ressource zum Überprüfen der Regeln für WAI-ARIA und bietet eine Reihe von Beispielen für WAI-ARIA-Implementierungen.
 
-#### [Muster](http://a11yproject.com/patterns.html)
+#### [<a name="patterns"></a>Muster](http://a11yproject.com/patterns.html)
 
-[Das A11Y-Projekt](http://a11yproject.com/) bietet eine Bibliothek mit barrierefreien Widgets und Mustern wie Menüs, Schaltflächen, QuickInfos und vieles mehr.
+[Das A11Y-Projekt](http://a11yproject.com/) bietet eine Bibliothek mit barrierefreien Widgets und Mustern wie Menüs, Schaltflächen, QuickInfos und mehr.
 
-### Barrierefreiheits Techniken & Tools
+### <a name="accessibility-techniques--tools"></a>Barrierefreiheitstechniken & Tools
 
-#### [Barrierefreiheit: Erstellen barrierefreier Erweiterungssymbole für Microsoft Edge](../../edgehtml/extensions/guides/accessibility.md)
+#### [<a name="accessibility-creating-accessible-extension-icons-for-microsoft-edge"></a>Barrierefreiheit: Erstellen barrierefreier Erweiterungssymbole für Microsoft Edge](../../edgehtml/extensions/guides/accessibility.md)
 
-Hier finden Sie Anleitungen zum Erstellen von Symbolen für barrierefreie Erweiterungen für Microsoft Edge.
+Hier erhalten Sie Anleitungen zum Erstellen von Symbolen für barrierefreie Erweiterungen für Microsoft Edge.
 
-#### [Barrierefreier Name und Beschreibung: Berechnungen und Zuordnungen 1,1](https://www.w3.org/TR/accname-1.1/)
+#### [<a name="accessible-name-and-description-computation-and-mappings-11"></a>Barrierefreier Name und Beschreibung: Berechnung und Zuordnungen 1.1](https://www.w3.org/TR/accname-1.1/)
 
-In diesem W3C-Zuordnungsdokument wird erläutert, wie Browsernamen und Beschreibungen von barrierefreien Objekten aus Webinhalts Sprachen ermitteln und diese in Barrierefreiheits-APIs verfügbar machen.
+In diesem W3C-Zuordnungsdokument wird erläutert, wie Browser Namen und Beschreibungen barrierefreier Objekte aus Webinhaltssprachen bestimmen und diese in Barrierefreiheits-APIs verfügbar machen.
 
-#### [Ressourcen zur Auswertung der Barrierefreiheit](https://www.w3.org/WAI/eval/Overview.html)
+#### [<a name="accessibility-evaluation-resources"></a>Ressourcen für die Barrierefreiheitsbewertung](https://www.w3.org/WAI/eval/Overview.html)
 
-Barrierefreiheits Auswertungs Ressourcen ist eine mehrseitige Ressource des W3C, in der verschiedene Ansätze für die Auswertung von Websites für Barrierefreiheit erläutert werden.
+Ressourcen für die Barrierefreiheitsbewertung ist eine mehrseitige Ressource des W3C, die verschiedene Ansätze für die Auswertung von Websites für Barrierefreiheit beschreibt.
 
-#### [Kompatibilitätstests für Hilfstechnologien](http://www.powermapper.com/tests/)
+#### [<a name="assistive-technology-compatibility-tests"></a>Kompatibilitätstests für Hilfstechnologien](http://www.powermapper.com/tests/)
 
-Test Ergebnisse, die zeigen, wie sich unterschiedliche Inhaltstypen und Standards in Hilfstechnologien (at) wie Bildschirmsprachausgaben Verhalten.
+Testergebnisse, die zeigen, wie sich unterschiedliche Inhaltstypen und Standards in Hilfstechnologien (AT) wie Bildschirmlesegeräten verhalten.
 
-#### [Das Erstellen barrierefreier Websites ist jetzt noch einfacher geworden](https://blogs.msdn.microsoft.com/webdev/2016/05/02/building-accessible-websites-just-got-a-lot-easier/)
+#### [<a name="building-accessible-websites-just-got-a-lot-easier"></a>Das Erstellen barrierefreier Websites wurde einfach einfacher](https://blogs.msdn.microsoft.com/webdev/2016/05/02/building-accessible-websites-just-got-a-lot-easier/)
 
-Dieser .net Web Development-und Tools-Blogbeitrag beschreibt die Visual Studio Extension [Web-barrierefreiheitsprüfung](https://go.microsoft.com/fwlink/p/?linkid=841539).
+In diesem .NET Web Development and Tools-Blogbeitrag wird die Visual Studio [Web Accessibility Checker beschrieben.](https://go.microsoft.com/fwlink/p/?linkid=841539)
 
-#### [Zentrale Barrierefreiheits-API-Zuordnungen 1,1](https://www.w3.org/TR/core-aam-1.1/)
+#### [<a name="core-accessibility-api-mappings-11"></a>Grundlegende Barrierefreiheits-API-Zuordnungen 1.1](https://www.w3.org/TR/core-aam-1.1/)
 
-In diesem W3C-Zuordnungsdokument wird erläutert, wie die Semantik von Webinhalts Sprachen für Barrierefreiheits-APIs verfügbar gemacht wird.  
+In diesem W3C-Zuordnungsdokument wird erläutert, wie die Semantik von Webinhaltssprachen für Barrierefreiheits-APIs verfügbar gemacht wird.  
 
-#### [Einfache Überprüfungen – eine erste Überprüfung der Barrierefreiheit im Web](https://www.w3.org/WAI/eval/preliminary.html)
+#### [<a name="easy-checks--a-first-review-of-web-accessibility"></a>Einfache Überprüfungen – Eine erste Überprüfung der Webbarrierefreiheit](https://www.w3.org/WAI/eval/preliminary.html)
 
-Eine Reihe von schnellen Überprüfungen durch Wai, die Ihnen helfen, die Barrierefreiheit einer Webseite zu beurteilen.
+Eine Reihe von schnell überprüfungen durch die WAI, die Ihnen helfen, die Barrierefreiheit einer Webseite zu überprüfen.
 
-#### [So treffen Sie die WCAG 2,0](https://www.w3.org/WAI/WCAG20/quickref/)
+#### [<a name="how-to-meet-wcag-20"></a>So treffen Sie WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref/)
 
-Eine Kurzübersicht über Web Content Accessibility Guidelines (WCAG) 2,0-Anforderungen (Erfolgskriterien) und Techniken.
+Ein Kurzverweis auf Web Content Accessibility Guidelines (WCAG) 2.0 requirements (success criteria) and techniques.
 
-#### [HTML-Barrierefreiheits-API-Zuordnungen 1,0](https://www.w3.org/TR/html-aam-1.0/)
+#### [<a name="html-accessibility-api-mappings-10"></a>HTML Accessibility API Mappings 1.0](https://www.w3.org/TR/html-aam-1.0/)
 
-In diesem W3C-Zuordnungsdokument wird erläutert, wie HTML 5.1-Elemente und-Attribute den Platt Form Barrierefreiheits-APIs zugeordnet werden.
+In diesem W3C-Zuordnungsdokument wird erläutert, wie HTML5.1-Elemente und -Attribute plattformbarrierefreien APIs zugeordnet werden.
 
-#### [Schnelle Tipps](http://a11yproject.com/#Quick-tips)
+#### [<a name="quick-tips"></a>Schnelltipps](http://a11yproject.com/#Quick-tips)
 
-Eine Liste mit Tipps zur schnellen Webentwicklung für Barrierefreiheit [im A11Y-Projekt](http://a11yproject.com/).
+Eine Liste der Tipps zur Schnellen Webentwicklung für die Barrierefreiheit von [The A11Y Project](http://a11yproject.com/).
 
-#### [Website Überprüfung](https://developer.microsoft.com/microsoft-edge/tools/staticscan/)
+#### [<a name="site-scan"></a>Websitescan](https://developer.microsoft.com/microsoft-edge/tools/staticscan/)
 
-Das Tool "Website Überprüfung" im Microsoft Edge dev Center sucht nach veralteten Bibliotheken, Layout-Problemen und Barrierefreiheits Problemen.
+Das Tool für die Websiteüberprüfung im Microsoft Edge Dev Center prüft veraltete Bibliotheken, Layoutprobleme und Barrierefreiheitsprobleme.
 
-#### [Techniken für WCAG 2,0](https://www.w3.org/TR/WCAG20-TECHS/Overview.html)
+#### [<a name="techniques-for-wcag-20"></a>Techniken für WCAG 2.0](https://www.w3.org/TR/WCAG20-TECHS/Overview.html)
 
-Techniken des W3C, die Anleitungen für Web-Entwickler zur Erfüllung von [Richtlinien für die Barrierefreiheit von Webinhalten (WCAG) 2,0](https://w3.org/TR/WCAG20/) bieten.
+Techniken aus dem W3C, die Anleitungen für Webentwickler zum Erfüllen von [Web Content Accessibility Guidelines (WCAG) 2.0-Erfolgskriterien](https://w3.org/TR/WCAG20/) bieten.
 
-#### [Tipps zur Entwicklung für Barrierefreiheit im Web](https://w3.org/WAI/gettingstarted/tips/developing.html)
+#### [<a name="tips-on-developing-for-web-accessibility"></a>Tipps zum Entwickeln für Barrierefreiheit im Web](https://w3.org/WAI/gettingstarted/tips/developing.html)
 
-Tipps vom W3C zur Entwicklung von Webinhalten, die für Menschen mit Behinderungen barrierefreier sind.
+Tipps aus dem W3C zum Entwickeln von Webinhalten, die für Personen mit Behinderungen zugänglicher sind.
 
-#### [WAI-ARIA Authoring Practices 1,1](http://w3c.github.io/aria-practices/)
+#### [<a name="wai-aria-authoring-practices-11"></a>WAI-ARIA Authoring Practices 1.1](http://w3c.github.io/aria-practices/)
 
-Ein Dokument des W3C, in dem die Leser wissen, wie Sie WAI-ARIA 1,1 verwenden können, und empfiehlt Ansätze, Widgets, Navigation und Verhaltensweisen mithilfe von WAI-ARIA-Rollen,-Zuständen und-Eigenschaften barrierefrei zu gestalten.
+Ein Dokument des W3C, das Lesern ein Verständnis der Verwendung von WAI-ARIA 1.1 vermittelt und Ansätze zum Zugriff auf Widgets, Navigation und Verhaltensweisen mithilfe von WAI-ARIA-Rollen, -Zuständen und -Eigenschaften empfiehlt.
 
-#### [Wai-Richtlinien und-Techniken](https://w3.org/WAI/guid-tech.html)
+#### [<a name="wai-guidelines-and-techniques"></a>WAI-Richtlinien und -Techniken](https://w3.org/WAI/guid-tech.html)
 
-Eine Reihe von Richtlinien und Standards zur Barrierefreiheit im Web, die von Wai entwickelt wurden.  
+Eine Reihe von Richtlinien und Standards für die Webbarrierefreiheit, die vom WAI entwickelt wurden.  
 
-#### [Liste der Evaluierungs Tools für Web-Barrierefreiheit](https://www.w3.org/WAI/ER/tools/index.html)
+#### [<a name="web-accessibility-evaluation-tools-list"></a>Web Accessibility Evaluation Tools List](https://www.w3.org/WAI/ER/tools/index.html)
 
-Eine Liste der Tools zur Bewertung der Barrierefreiheit im Web, um festzustellen, ob Websites den Richtlinien für Barrierefreiheit entsprechen.
+Eine Liste der Tools zur Bewertung der Webbarrierefreiheit, um festzustellen, ob Websites Barrierefreiheitsrichtlinien erfüllen.
 
-#### [Barrierefreie Web-Perspektiven: untersuchen Sie die Auswirkungen und Vorteile für alle](https://w3.org/WAI/perspectives/)
+#### [<a name="web-accessibility-perspectives-explore-the-impact-and-benefits-for-everyone"></a>Web Accessibility Perspectives: Explore the Impact and Benefits for Everyone](https://w3.org/WAI/perspectives/)
 
-Eine Reihe von kurzen situations Videos des W3C über die Auswirkungen der Barrierefreiheit und die Vorteile für alle.
+Eine Reihe kurzer Situationalvideos des W3C über die Auswirkungen der Barrierefreiheit und die Vorteile für alle.
 
 <!-- links -->  
 
 <!--todo: link updates and acrolinx  -->  
 
-[MicrosoftDeveloperEdgeVms]: https://developer.microsoft.com/microsoft-edge/tools/vms "Virtuelle Computer | Microsoft Edge-Entwickler"  
+[MicrosoftDeveloperEdgeVms]: https://developer.microsoft.com/microsoft-edge/tools/vms "Virtuelle Computer | Microsoft Edge Developer"  
 
-[MicrosoftSupport22798]: https://support.microsoft.com/help/22798 "Vollständige Anleitung für die Sprachausgabe | Microsoft-Support"  
-[MicrosoftSupportWindows414948ba8b1cD3bd86150e5e32204198]: https://support.microsoft.com/windows/414948ba-8b1c-d3bd-8615-0e5e32204198 "Verwenden der Bildschirmlupe, um die Anzeige der Dinge auf dem Bildschirm zu verbessern | Microsoft-Support"  
+[MicrosoftSupport22798]: https://support.microsoft.com/help/22798 "Vollständige Anleitung zur Sprachausgabe | Microsoft Support"  
+[MicrosoftSupportWindows414948ba8b1cD3bd86150e5e32204198]: https://support.microsoft.com/windows/414948ba-8b1c-d3bd-8615-0e5e32204198 "Verwenden Sie Die Bildschirmlupe, um Die Dinge auf dem Bildschirm einfacher zu | Microsoft Support"  
 
-[AccessibilityinsightsWebOverview]: https://accessibilityinsights.io/docs/web/overview "Barrierefreiheit für Web | Einblicke in die Barrierefreiheit"  
+[AccessibilityinsightsWebOverview]: https://accessibilityinsights.io/docs/web/overview "Accessibility Insights for Web | Einblicke in die Barrierefreiheit"  
 
-[AndroidDeveloperDevicesManagingAvdsHtml]: https://developer.android.com/tools/devices/managing-avds.html "Erstellen und Verwalten von virtuellen Geräten | Android-Entwickler"  
-[AndroidDeveloperDevicesEmulatorHtml]: https://developer.android.com/tools/devices/emulator.html "Ausführen von apps auf dem Android-Emulator | Android-Entwickler"  
-[AndroidDeveloperSdkInstallingStudioHtml]: https://developer.android.com/sdk/installing/studio.html "Android Studio herunterladen | Android-Entwickler"  
+[AndroidDeveloperDevicesManagingAvdsHtml]: https://developer.android.com/tools/devices/managing-avds.html "Erstellen und Verwalten von virtuellen | Android-Entwickler"  
+[AndroidDeveloperDevicesEmulatorHtml]: https://developer.android.com/tools/devices/emulator.html "Ausführen von Apps auf dem Android-Emulator | Android-Entwickler"  
+[AndroidDeveloperSdkInstallingStudioHtml]: https://developer.android.com/sdk/installing/studio.html "Herunterladen von Android Studio | Android-Entwickler"  
 
-[AppleAccessibilityMacVision]: https://www.apple.com/accessibility/mac/vision "Barrierefreiheit von Visionen-Mac | Apple"  
+[AppleAccessibilityMacVision]: https://www.apple.com/accessibility/mac/vision "Barrierefreiheit – Mac | Apple"  
 
 [AssistivlabsMain]: https://assistivlabs.com "Assistiv Labs"  
 
-[FreedomscientificSoftwareJaws]: https://www.freedomscientific.com/products/software/jaws "Jaws® | Freiheit wissenschaftlich"  
-[FreedomscientificSoftwareZoomtext]: https://www.freedomscientific.com/products/software/zoomtext "ZoomText | Freiheit wissenschaftlich"  
+[FreedomscientificSoftwareJaws]: https://www.freedomscientific.com/products/software/jaws "JAWS® | Freiheit wissenschaftlich"  
+[FreedomscientificSoftwareZoomtext]: https://www.freedomscientific.com/products/software/zoomtext "ZoomText-| Freiheit wissenschaftlich"  
 
-[GooglePlayStoreAndroidAccessibilitySuite]: https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback "Android-Suite für Barrierefreiheit | GooglePlay-Store"  
+[GooglePlayStoreAndroidAccessibilitySuite]: https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback "Android Accessibility Suite | GooglePlay Store"  
 
-[NvaccessAboutNvda]: https://www.nvaccess.org/about-nvda "Informationen zu NVDA | NV-Zugriff"  
+[NvaccessAboutNvda]: https://www.nvaccess.org/about-nvda "Informationen zu NVDA-| NV Access"  
 
-[W3cPerspectiveVideosKeyboard]: https://www.w3.org/WAI/perspective-videos/keyboard "Tastatur Kompatibilität | W3C"  
+[W3cPerspectiveVideosKeyboard]: https://www.w3.org/WAI/perspective-videos/keyboard "Tastaturkompatibilität | W3C"  
 
-[WebaimProjectsLowvisionsurvey2]: https://webaim.org/projects/lowvisionsurvey2 "Umfrage von Benutzern mit Sehbehinderungen \ #2 Ergebnisse | WebAIM"  
-[WebaimProjectsScreenreadersurvey8]: https://webaim.org/projects/screenreadersurvey8 "Benutzerumfrage zur Sprachausgabe \ #8 Ergebnisse | WebAIM"  
-[WebaimArticlesScreenreaderTesting]: https://webaim.org/articles/screenreader_testing "Testen mit Bildschirmsprachausgaben | WebAIM"  
+[WebaimProjectsLowvisionsurvey2]: https://webaim.org/projects/lowvisionsurvey2 "Umfrage unter Benutzern mit geringer Sehkraft \#2 Ergebnisse | WebAIM"  
+[WebaimProjectsScreenreadersurvey8]: https://webaim.org/projects/screenreadersurvey8 "Screen Reader User Survey \#8 Results | WebAIM"  
+[WebaimArticlesScreenreaderTesting]: https://webaim.org/articles/screenreader_testing "Testen mit Bildschirmlesegeräten | WebAIM"  

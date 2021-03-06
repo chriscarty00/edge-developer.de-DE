@@ -1,38 +1,38 @@
 ---
 description: Erstellen einer Erweiterung, die das NASA-Bild des Tages öffnet
-title: Erstellen eines Erweiterungs Lernprogramms – Teil 1
+title: Erstellen eines Erweiterungs-Lernprogramms – Teil 1
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/23/2020
+ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: Edge-Chromium, Web-Entwicklung, HTML, CSS, JavaScript, Entwickler, Erweiterungen
-ms.openlocfilehash: 3809bfac714621cf97184127132487ed93958a2f
-ms.sourcegitcommit: 845a0d53a86bee3678f421adee26b3372cefce57
+keywords: edge-chromium, web development, html, css, javascript, developer, extensions
+ms.openlocfilehash: dfbe7893ce576c223d2b1d39ec21b6c5f46d8356
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "11104707"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397510"
 ---
-# Erstellen eines Erweiterungs Lernprogramms – Teil 1  
+# <a name="create-an-extension-tutorial---part-1"></a>Erstellen eines Erweiterungs-Lernprogramms – Teil 1  
 
-## Übersicht  
+## <a name="overview"></a>Übersicht  
 
-Das Ziel dieses Lernprogramms besteht darin, eine Microsoft Edge-Erweiterung (Chrom) zu erstellen, die mit einem leeren Verzeichnis beginnt. Wir erstellen eine Erweiterung, die das NASA-Bild des Tages öffnet. In diesem Lernprogramm erfahren Sie, wie Sie eine Erweiterung erstellen, indem Sie:
+Das Ziel dieses Lernprogramms ist es, eine Microsoft Edge (Chromium)-Erweiterung zu erstellen, die mit einem leeren Verzeichnis beginnt.  Sie erstellen eine Erweiterung, die das NASA-Bild des Tages öffnet. In diesem Lernprogramm erfahren Sie, wie Sie eine Erweiterung erstellen, indem Sie die folgenden Aktionen ausführen.  
 
-*   Erstellen einer `manifest.json` Datei  
-*   Symbole werden hinzugefügt.  
-*   Öffnen eines standardmäßigen Popup Dialogfelds  
+*   Erstellen einer `manifest.json` Datei.  
+*   Hinzufügen von Symbolen.  
+*   Öffnen eines Standardmäßigen Popupdialogfelds.  
 
-## Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-Wenn Sie die abgeschlossene Erweiterung testen möchten, die Sie in diesem Lernprogramm erstellen, laden Sie den [Quellcode][ArchiveExtensionGettingStartedPart1]herunter.  
+Laden Sie den Quellcode herunter, um die abgeschlossene Erweiterung zu testen, die Sie in diesem Lernprogramm [erstellen.][ArchiveExtensionGettingStartedPart1]  
 
-## Schritt 1: Erstellen einer `manifest.json` Datei
+## <a name="step-1-create-a-manifestjson-file"></a>Schritt 1: Erstellen einer manifest.json-Datei
 
-Für jedes Erweiterungspaket muss eine `manifest.json` Datei am Stamm vorhanden sein.  Das Manifest enthält Details zu ihrer Erweiterung, der Erweiterungspaket Version, dem Namen der Erweiterung und der Beschreibung usw.  
+Jedes Erweiterungspaket muss eine `manifest.json` Datei im Stammverzeichnis haben.  Das Manifest enthält Details ihrer Erweiterung, der Erweiterungspaketversion, des Erweiterungsnamens und der Beschreibung, und so weiter.  
 
-Der folgende Codeausschnitt beschreibt die grundlegenden Informationen, die in der `manifest.json` Datei benötigt werden.  
+Der folgende Codeausschnitt beschreibt die grundlegenden Informationen, die in Ihrer Datei benötigt `manifest.json` werden.  
 
 ```json
 {
@@ -43,19 +43,19 @@ Der folgende Codeausschnitt beschreibt die grundlegenden Informationen, die in d
 }
 ```  
 
-## Schritt 2: Hinzufügen von Symbolen  
+## <a name="step-2-add-icons"></a>Schritt 2: Hinzufügen von Symbolen  
 
-Erstellen Sie zunächst das `icons` Verzeichnis in Ihrem Projekt, in dem die Symbolbild Dateien gespeichert werden sollen.  Die Symbole werden für das Hintergrundbild der Schaltfläche verwendet, die Benutzer zum Starten der Erweiterung auswählen.  
+Erstellen Sie zunächst das `icons` Verzeichnis in Ihrem Projekt, um die Symbolbilddateien zu speichern.  Die Symbole werden für das Hintergrundbild der Schaltfläche verwendet, die Benutzer zum Starten der Erweiterung auswählen.  
 
-:::image type="complex" source="./media/part1-badge1.png" alt-text="Symbol auf der Symbolleiste, um die Erweiterung zu öffnen":::
-   Symbol auf der Symbolleiste, um die Erweiterung zu öffnen
-:::image-end:::
+:::image type="complex" source="./media/part1-badge1.png" alt-text="Symbol auf der Symbolleiste zum Öffnen der Erweiterung":::
+   Symbol auf der Symbolleiste zum Öffnen der Erweiterung  
+:::image-end:::  
 
-Für Symbole empfehlen wir die Verwendung von: 
-*   `PNG` Format für Symbole, Sie können aber auch `BMP` `GIF` `ICO` oder `JPEG` Formate verwenden.  
-*   Bilder mit einer Größe von 128 x 128 px, die bei Bedarf vom Browser geändert werden.  
+Für Symbole wird die Verwendung von folgenden Symbolen empfohlen: 
+*   `PNG` format for icons, but you may also use `BMP` , `GIF` , or `ICO` `JPEG` formats.  
+*   Bilder mit einer Größe von 128 x 128 px, die bei Bedarf vom Browser angepasst werden.  
 
-Die Verzeichnisse Ihres Projekts sollten der folgenden Struktur ähneln.   
+Die Verzeichnisse Ihres Projekts sollten der folgenden Struktur ähnlich sein.   
 
 ```shell
 └── part1
@@ -67,28 +67,28 @@ Die Verzeichnisse Ihres Projekts sollten der folgenden Struktur ähneln.
         └── nasapod128x128.png
 ```  
 
-Als Nächstes fügen Sie die Symbole zur `manifest.json` Datei hinzu. Aktualisieren Sie Ihre `manifest.json` Datei mit den Symbolen-Informationen, damit Sie dem folgenden Codeausschnitt entspricht. Die `png` im folgenden Code aufgelisteten Dateien sind in der oben in diesem Artikel genannten Downloaddatei verfügbar.  
+Fügen Sie als Nächstes die Symbole der Datei `manifest.json` hinzu. Aktualisieren Sie `manifest.json` Ihre Datei mit den Symbolinformationen, sodass sie mit dem folgenden Codeausschnitt entspricht. Die im folgenden Code aufgeführten Dateien sind in der oben in diesem Artikel erwähnten `png` Downloaddatei verfügbar.  
 
 ```json
 {
-    &quot;name&quot;: &quot;NASA picture of the day viewer&quot;,
-    &quot;version&quot;: &quot;0.0.0.1&quot;,
-    &quot;manifest_version&quot;: 2,
-    &quot;description&quot;: &quot;A chromium extension to show the NASA picture of the day.&quot;,
-    &quot;icons&quot;: {
-        &quot;16&quot;: &quot;icons/nasapod16x16.png&quot;,
-        &quot;32&quot;: &quot;icons/nasapod32x32.png&quot;,
-        &quot;48&quot;: &quot;icons/nasapod48x48.png&quot;,
-        &quot;128&quot;: &quot;icons/nasapod128x128.png"
+    "name": "NASA picture of the day viewer",
+    "version": "0.0.0.1",
+    "manifest_version": 2,
+    "description": "A chromium extension to show the NASA picture of the day.",
+    "icons": {
+        "16": "icons/nasapod16x16.png",
+        "32": "icons/nasapod32x32.png",
+        "48": "icons/nasapod48x48.png",
+        "128": "icons/nasapod128x128.png"
     }
 }
 ```  
 
-## Schritt 3: Öffnen eines standardmäßigen Popup Dialogfelds  
+## <a name="step-3-open-a-default-pop-up-dialog"></a>Schritt 3: Öffnen eines Standardmäßigen Popupdialogfelds  
 
-Erstellen Sie nun eine `HTML` Datei, die ausgeführt wird, wenn der Benutzer ihre Erweiterung startet.  Erstellen Sie die HTML-Datei `popup.html` , die in einem Verzeichnis mit dem Namen aufgerufen wird `popup` .  Wenn Benutzer das Symbol zum Starten der Erweiterung auswählen, `popup/popup.html` wird es als modales Dialogfeld angezeigt.  
+Erstellen Sie nun eine Datei, die beim Starten der Erweiterung `HTML` durch den Benutzer ausgeführt werden soll.  Erstellen Sie die HTML-Datei `popup.html` namens in einem Verzeichnis namens `popup` .  Wenn Benutzer das Symbol zum Starten der Erweiterung auswählen, `popup/popup.html` wird es als modales Dialogfeld angezeigt.  
 
-Fügen Sie den Code aus dem folgenden Codeausschnitt hinzu, um `popup.html` das Sternchen-Bild anzuzeigen.  
+Fügen Sie den Code aus dem folgenden Codeausschnitt hinzu, `popup.html` um das Sternbild anzeigen zu können.  
 
 ```html
 <html lang="en">
@@ -104,7 +104,7 @@ Fügen Sie den Code aus dem folgenden Codeausschnitt hinzu, um `popup.html` das 
 </html>
 ```  
 
-Stellen Sie sicher, dass Sie die Bilddatei `images/stars.jpeg` dem Ordner Images hinzufügen.  Die Verzeichnisse Ihres Projekts sollten der folgenden Struktur ähneln.   
+Stellen Sie sicher, dass Sie die Bilddatei `images/stars.jpeg` dem Ordner "Bilder" hinzufügen.  Die Verzeichnisse Ihres Projekts sollten der folgenden Struktur ähnlich sein.   
 
 ```shell
 └── part1
@@ -120,7 +120,7 @@ Stellen Sie sicher, dass Sie die Bilddatei `images/stars.jpeg` dem Ordner Images
         └── popup.html
 ```  
 
-Stellen Sie abschließend sicher, dass Sie das Popup in `manifest.json` unter Registrieren `browser_action` , wie im folgenden Codeausschnitt dargestellt.  
+Stellen Sie schließlich sicher, dass Sie das Popup unter `manifest.json` `browser_action` registrieren, wie im folgenden Codeausschnitt gezeigt.  
 
 ```json
 {
@@ -140,9 +140,8 @@ Stellen Sie abschließend sicher, dass Sie das Popup in `manifest.json` unter Re
 }
 ```  
 
-## Nächste Schritte
-Das ist alles, was Sie brauchen, um eine Arbeits Erweiterung zu entwickeln. Fahren Sie jetzt mit querladen fort, und testen Sie Ihre Erweiterung. Weitere Informationen finden Sie unter [querladen einer Erweiterung][TestExtensionSideload].  
-
+## <a name="next-steps"></a>Nächste Schritte
+Dies ist alles, was Sie zum Entwickeln einer Arbeitserweiterung benötigen.  Fahren Sie nun mit dem Querladen fort, und testen Sie die Erweiterung. Weitere Informationen finden Sie unter [Querladen einer Erweiterung][TestExtensionSideload].  
 
 <!-- image links -->  
 
@@ -155,6 +154,6 @@ Das ist alles, was Sie brauchen, um eine Arbeits Erweiterung zu entwickeln. Fahr
 
 <!-- links -->  
 
-[ArchiveExtensionGettingStartedPart1]: https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/extension-getting-started-part1/part1 "Abgeschlossene Erweiterungspaket Quelle | Microsoft docs"
+[ArchiveExtensionGettingStartedPart1]: https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/extension-getting-started-part1/part1 "Abgeschlossene Erweiterungspaketquelle | Microsoft Docs"
 
-[TestExtensionSideload]: ./extension-sideloading.md "Testen der Erweiterung (Sideloading) | Microsoft docs"
+[TestExtensionSideload]: ./extension-sideloading.md "Testen der Erweiterung (Querladen) | Microsoft Docs"

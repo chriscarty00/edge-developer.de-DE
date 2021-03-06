@@ -1,18 +1,18 @@
 ---
-description: So aktivieren Sie das dunkle Design in Microsoft Edge devtools
-title: Aktivieren des dunklen Designs in Microsoft Edge devtools
+description: So aktivieren Sie das dunkle Design in Microsoft Edge DevTools.
+title: Aktivieren des dunklen Designs in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 7eaedc59bf1b8ab592612f3a2006a0aac1dfbe9e
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
+ms.openlocfilehash: dc857a65deef9b62614da79d2648c8b92ac9db07
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125097"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399022"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,50 +28,50 @@ ms.locfileid: "11125097"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Aktivieren des dunklen Designs in Microsoft Edge devtools  
+# <a name="enable-dark-theme-in-microsoft-edge-devtools"></a>Aktivieren des dunklen Designs in Microsoft Edge DevTools  
 
-Sie können ein dunkles Design in den [Einstellungen](#set-up-dark-theme-from-settings) oder im [Befehlsmenü](#set-up-dark-theme-from-the-command-menu)aktivieren.  
+Sie können das dunkle Design unter [Einstellungen oder](#set-up-dark-theme-from-settings) im [Befehlsmenü aktivieren.](#set-up-dark-theme-from-the-command-menu)  
 
 :::image type="complex" source="../media/customize-elements-styles-console-dark-theme.msft.png" alt-text="Das dunkle Design" lightbox="../media/customize-elements-styles-console-dark-theme.msft.png":::
    Das dunkle Design  
 :::image-end:::  
 
-## Einrichten eines dunklen Designs aus Einstellungen  
+## <a name="set-up-dark-theme-from-settings"></a>Einrichten eines dunklen Designs in den Einstellungen  
 
-1.  Wählen Sie **anpassen und Steuern devtools** \ ( `...` \) aus, und wählen Sie dann **Einstellungen**aus.  Sie können die **Einstellungen** auch öffnen, indem Sie auf klicken `F1` .  
+1.  Wählen **Sie Anpassen und Steuern von DevTools** \( `...` \) > Einstellungen **aus.**  Sie können einstellungen auch **öffnen,** indem Sie `F1` auswählen.  
     
-    :::image type="complex" source="../media/customize-options-settings.msft.png" alt-text="Das dunkle Design" lightbox="../media/customize-options-settings.msft.png":::
-       **Einstellungen** öffnen  
+    :::image type="complex" source="../media/customize-options-settings.msft.png" alt-text="Einstellungen öffnen" lightbox="../media/customize-options-settings.msft.png":::
+       Öffnen **von Einstellungen**  
     :::image-end:::  
 
-1.  Klicken Sie im Bereich **Einstellungen** unter **Darstellung**auf die Dropdownliste **Design** , und wählen Sie **dunkel**aus.  
+1.  Wählen Sie **im Bereich** Einstellungen unter **Darstellung**die Option **Design dunkel**  >  **aus.**  
     
-    :::image type="complex" source="../media/customize-settings-preferences-appearance-theme-dark.msft.png" alt-text="Das dunkle Design" lightbox="../media/customize-settings-preferences-appearance-theme-dark.msft.png":::
+    :::image type="complex" source="../media/customize-settings-preferences-appearance-theme-dark.msft.png" alt-text="Voreinstellungen" lightbox="../media/customize-settings-preferences-appearance-theme-dark.msft.png":::
        **Voreinstellungen**  
     :::image-end:::  
 
-## Einrichten eines dunklen Designs über das Befehlsmenü  
+## <a name="set-up-dark-theme-from-the-command-menu"></a>Einrichten eines dunklen Designs über das Befehlsmenü  
 
-1.  [Öffnen des Befehlsmenüs][DevtoolsCommandMenu]  
-1.  Beginnen `dark` Sie mit der Eingabe, wählen Sie den Befehl **zum dunklen Design wechseln** aus, und wählen Sie dann aus, `Enter` um den Befehl auszuführen.  
+1.  [Öffnen Sie das Befehlsmenü][DevtoolsCommandMenu].  
+1.  Geben `dark` Sie ein, wählen **Sie den Befehl Zum dunklen Design wechseln** aus, und wählen Sie dann aus, um den Befehl `Enter` auszuführen.  
     
-    :::image type="complex" source="../media/customize-command-menu-dark.msft.png" alt-text="Das dunkle Design" lightbox="../media/customize-command-menu-dark.msft.png":::
-       Der Befehl ' dunkler Design '  
+    :::image type="complex" source="../media/customize-command-menu-dark.msft.png" alt-text="Der Befehl "Dunkles Design"" lightbox="../media/customize-command-menu-dark.msft.png":::
+       Der Befehl "Dunkles Design"  
     :::image-end:::  
     
-## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsCommandMenu]: ../command-menu/index.md "Befehlsmenü | Microsoft docs"  
+[DevtoolsCommandMenu]: ../command-menu/index.md "Befehlsmenü | Microsoft Docs"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
-> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/customize/dark-theme) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
+> Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
+> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/customize/dark-theme) und wird von [Kayce Basken][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) verfasst.  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

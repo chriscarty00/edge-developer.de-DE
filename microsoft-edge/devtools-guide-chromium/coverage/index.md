@@ -1,18 +1,18 @@
 ---
-description: Suchen und Analysieren von nicht verwendetem Javascript und CSS-Code in Microsoft Edge devtools
-title: Suchen von nicht verwendetem Javascript und CSS-Code mit der Registerkarte "Coverage" in Microsoft Edge devtools
+description: So finden und analysieren Sie nicht verwendeten JavaScript- und CSS-Code in Microsoft Edge DevTools.
+title: Suchen nicht verwendeten JavaScript- und CSS-Codes im Bereich "Abdeckung" in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 08c4daaabd30296b53ad57a81caa0e7b155a4fc9
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
+ms.openlocfilehash: 092788606347352876483b1a8282fbb75b2bff66
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125188"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398763"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,20 +28,20 @@ ms.locfileid: "11125188"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Suchen von nicht verwendetem Javascript und CSS-Code mit der Registerkarte "Coverage" in Microsoft Edge devtools  
+# <a name="find-unused-javascript-and-css-code-with-the-coverage-panel-in-microsoft-edge-devtools"></a>Suchen von nicht verwendetem JavaScript- und CSS-Code im Bereich "Abdeckung" in Microsoft Edge DevTools  
 
-Die Registerkarte Coverage in Microsoft Edge devtools hilft Ihnen, ungenutzte JavaScript-und CSS-Codes zu finden.  Wenn Sie nicht verwendeten Code entfernen, können Sie das Laden der Seite beschleunigen und Ihre mobilen Benutzer mobil Daten speichern.  
+Der **Bereich Abdeckung** in Microsoft Edge DevTools hilft Ihnen, nicht verwendeten JavaScript- und CSS-Code zu finden.  Das Entfernen nicht verwendeten Codes kann das Laden der Seite beschleunigen und Mobilfunkdaten ihrer mobilen Benutzer speichern.  
 
 :::image type="complex" source="../media/coverage-sources-resource-drawer-coverage.msft.png" alt-text="Analysieren der Codeabdeckung" lightbox="../media/coverage-sources-resource-drawer-coverage.msft.png":::
    Analysieren der Codeabdeckung  
 :::image-end:::  
 
 > [!WARNING]
-> Das Auffinden unbenutzten Codes ist relativ einfach.  Das Umgestalten einer CodeBase, damit jede Seite nur das JavaScript und das CSS liefert, die Sie benötigt, ist möglicherweise schwierig.  In diesem Leitfaden wird nicht behandelt, wie Sie eine CodeBase umgestalten, um nicht verwendeten Code zu vermeiden, da diese umgestalten in hohem Maße von Ihrem Technologiestapel abhängen.  
+> Die Suche nach nicht verwendetem Code ist relativ einfach.  Es kann jedoch schwierig sein, eine Codebasis so umgestalten, dass jede Seite nur javaScript und CSS enthält, die sie benötigt.  In diesem Handbuch wird nicht beschrieben, wie Eine Codebasis umgestaltet wird, um nicht verwendeten Code zu vermeiden, da diese Umgestaltungen stark von Ihrem Technologiestapel abhängen.  
 
-## Übersicht  
+## <a name="overview"></a>Übersicht  
 
-Das Versenden unbenutzter JavaScript-oder CSS-Probleme ist ein häufiges Problem in der Webentwicklung.  Nehmen wir beispielsweise an, dass Sie die [Bootstrap-Schaltflächenkomponente][BootstrapButtons] auf der Seite verwenden möchten.  Um die Button-Komponente zu verwenden, müssen Sie einen Link zum Bootstrap-Stylesheet in Ihrem HTML-Code hinzufügen, wie hier:  
+Der Versand nicht verwendeter JavaScript- oder CSS-Dateien ist ein häufiges Problem bei der Webentwicklung.  Angenommen, Sie möchten die [Bootstrap-Schaltflächenkomponente auf][BootstrapButtons] Ihrer Seite verwenden.  Um die Schaltflächenkomponente zu verwenden, müssen Sie einen Link zum Bootstrap-Stylesheet in Ihrem HTML wie den folgenden hinzufügen:  
 
 ```html
 ...
@@ -53,44 +53,44 @@ Das Versenden unbenutzter JavaScript-oder CSS-Probleme ist ein häufiges Problem
 ...
 ```  
 
-Dieses Stylesheet enthält nicht nur den Code für die Schaltflächenkomponente.  Sie enthält das CSS für **alle** Bootstrap-Komponenten.  Sie verwenden jedoch keine der anderen Bootstrap-Komponenten.  Ihre Seite lädt also eine Reihe von CSS herunter, die nicht benötigt werden.  Dieses extra-CSS ist aus den folgenden Gründen ein Problem.  
+Dieses Stylesheet enthält nicht nur den Code für die Schaltflächenkomponente.  Es enthält die CSS für **alle** Bootstrap-Komponenten.  Sie verwenden jedoch keine der anderen Bootstrap-Komponenten.  Ihre Seite heruntergeladen also eine Reihe von CSS, die sie nicht benötigt.  Diese zusätzliche CSS ist aus den folgenden Gründen ein Problem.  
 
-*   Der zusätzliche Code verlangsamt das Laden der Seite.  <!--See [Render-Blocking CSS][render].  -->  
-*   Wenn ein Benutzer auf die Seite auf einem mobilen Gerät zugreift, verwendet der zusätzliche Code Ihre zellularen Daten.  
+*   Der zusätzliche Code verlangsamt die Seitenlast.  <!--Navigate to [Render-Blocking CSS][render].  -->  
+*   Wenn ein Benutzer auf die Seite auf einem mobilen Gerät zugreift, verwendet der zusätzliche Code seine Mobilfunkdaten.  
     
 <!--[render]: /web/fundamentals/performance/critical-rendering-path/render-blocking-css  -->  
 
-## Öffnen der Registerkarte "Abdeckung"  
+## <a name="open-the-coverage-panel"></a>Öffnen des Abdeckungsbereichs  
 
-1.  [Öffnen des Befehlsmenüs][DevToolsCommandMenu]  
-1.  Beginnen `coverage` Sie mit der Eingabe, wählen Sie den Befehl **Coverage anzeigen** aus, und wählen Sie dann aus, `Enter` um den Befehl auszuführen.  Die Registerkarte **Coverage** wird im **Einzug**geöffnet.  
+1.  [Öffnen Sie das Befehlsmenü][DevToolsCommandMenu].  
+1.  Beginnen Sie mit der `coverage` Eingabe, wählen Sie den **Befehl Abdeckung** anzeigen aus, und wählen Sie dann aus, `Enter` um den Befehl auszuführen.  Der **Bereich** Abdeckung wird in der **Schublade geöffnet.**  
 
-    :::image type="complex" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="Analysieren der Codeabdeckung" lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
-       Die Registerkarte " **Coverage** "  
+    :::image type="complex" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="Der Bereich "Abdeckung"" lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
+       Der **Bereich "Abdeckung"**  
     :::image-end:::  
     
-## Aufzeichnen von Codeabdeckung  
+## <a name="record-code-coverage"></a>Aufzeichnen der Codeabdeckung  
 
-1.  Klicken Sie auf der Registerkarte **Coverage** auf eine der folgenden Schaltflächen:  
-    *   Wählen Sie " **Instrumentations Abdeckung starten" und "Seite neu laden** " aus, ![ ][ImageReloadIcon] Wenn Sie sehen möchten, welcher Code zum Laden der Seite erforderlich ist.  
-    *   Wählen Sie **Instrument Coverage** \ ( ![ Instrument Coverage ][ImageRecordIcon] \) aus, wenn Sie sehen möchten, welcher Code nach der Interaktion mit der Seite verwendet wird.  
-1.  Wählen Sie " **Instrumentations Abdeckung beenden" und "Ergebnisse anzeigen** " aus, ![ ][ImageStopIcon] Wenn Sie die Aufzeichnung der Codeabdeckung beenden möchten.  
+1.  Wählen Sie eine der folgenden Schaltflächen im **Bereich Abdeckung** aus.  
+    *   Wählen **Sie Start Instrumenting Coverage and Reload Page** \( Start Instrumenting Coverage and Reload Page \) aus, wenn Sie überprüfen möchten, welcher Code zum Laden der ![ Seite erforderlich ][ImageReloadIcon] ist.  
+    *   Wählen **Sie Instrument Coverage** \( Instrument Coverage ![ \) aus, wenn Sie überprüfen möchten, welcher Code nach der Interaktion mit der ][ImageRecordIcon] Seite verwendet wird.  
+1.  Wählen **Sie Abdeckung beenden und Ergebnisse** anzeigen \( Die Instrumentierungsabdeckung beenden und Ergebnisse anzeigen \) aus, wenn Sie die Aufzeichnung der Codeabdeckung ![ beenden ][ImageStopIcon] möchten.  
     
-## Analysieren der Codeabdeckung  
+## <a name="analyze-code-coverage"></a>Analysieren der Codeabdeckung  
 
-Die Tabelle auf der Registerkarte **Coverage** zeigt Ihnen, welche Ressourcen analysiert wurden und wie viel Code innerhalb der einzelnen Ressourcen verwendet wird.  Klicken Sie auf eine Zeile, um diese Ressource im **Quellen** Panel zu öffnen, und sehen Sie eine zeilenweise Aufschlüsselung von verwendetem Code und nicht verwendetem Code.  
+In der Tabelle im **Bereich** "Abdeckung" werden die analysierten Ressourcen und der Code in den einzelnen Ressourcen angezeigt.  Wählen Sie eine Zeile aus, um diese Ressource im Bereich Quellen zu **öffnen,** und überprüfen Sie eine Zeilenaufschlüsselung des verwendeten Codes und des nicht verwendeten Codes.  
 
-:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage-selected.msft.png" alt-text="Analysieren der Codeabdeckung" lightbox="../media/coverage-sources-resource-drawer-coverage-selected.msft.png":::
-   Code Coverage-Bericht  
+:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage-selected.msft.png" alt-text="Ein Codeabdeckungsbericht" lightbox="../media/coverage-sources-resource-drawer-coverage-selected.msft.png":::
+   Ein Codeabdeckungsbericht  
 :::image-end:::  
 
-*   Die **URL** -Spalte ist die URL der Ressource, die analysiert wurde.  
-*   In der Spalte **Typ** wird angegeben, ob die Ressource CSS, JavaScript oder beides enthält.  
-*   Die Spalte " **Gesamt Bytes** " gibt die Gesamtgröße der Ressource in Bytes an.  
-*   Die Spalte "nicht **verwendete Bytes** " gibt die Anzahl der Bytes an, die nicht verwendet wurden.  
-*   Die letzte, unbenannte Spalte ist eine Visualisierung der Spalten **Gesamt Bytes** und **nicht verwendete Bytes** .  Der Rote Bereich der Leiste ist nicht verwendete Bytes.  Der grüne Abschnitt wird in Bytes verwendet.  
+*   Die **SPALTE URL** ist die URL der Ressource, die analysiert wurde.  
+*   Die **Spalte Type** gibt an, ob die Ressource CSS, JavaScript oder beides enthält.  
+*   Die **Spalte Bytes insgesamt** ist die Gesamtgröße der Ressource in Bytes.  
+*   Die **Spalte Nicht verwendete Bytes** gibt die Anzahl der Bytes an, die nicht verwendet wurden.  
+*   Die letzte, nicht benannte Spalte ist eine Visualisierung der Spalten **Total Bytes** und **Unused Bytes.**  Der rote Abschnitt der Leiste ist nicht verwendete Bytes.  Der grüne Abschnitt wird byte verwendet.  
     
-## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -102,15 +102,15 @@ Die Tabelle auf der Registerkarte **Coverage** zeigt Ihnen, welche Ressourcen an
 
 <!-- links -->  
 
-[DevToolsCommandMenu]: ../command-menu/index.md "Ausführen von Befehlen mit dem Befehlsmenü von Microsoft Edge devtools | Microsoft docs"  
+[DevToolsCommandMenu]: ../command-menu/index.md "Ausführen von Befehlen mit dem Microsoft Edge DevTools Command-Menü | Microsoft Docs"  
 
 [BootstrapButtons]: https://getbootstrap.com/docs/4.3/components/buttons "Schaltflächen – Bootstrap"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
-> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/coverage/index) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
+> Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
+> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/coverage/index) und wird von [Kayce Basken][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) verfasst.  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

@@ -1,18 +1,18 @@
 ---
-description: Ein Verweis auf alle Möglichkeiten zum Aufzeichnen und Analysieren der Leistung in Microsoft Edge devtools
+description: Ein Verweis auf alle Möglichkeiten zum Aufzeichnen und Analysieren der Leistung in Microsoft Edge DevTools.
 title: Referenz zur Leistungsanalyse
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: d5b6be92c1419ba880a94c62c3f586a740816622
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 181bc05fffbaef6a06bebcc5cb9ccfcc8e7de498
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230761"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398805"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,549 +28,549 @@ ms.locfileid: "11230761"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Referenz zur Leistungsanalyse  
+# <a name="performance-analysis-reference"></a>Referenz zur Leistungsanalyse  
 
-Diese Seite ist eine umfassende Referenz zu den Microsoft Edge devtools-Features, die sich auf die Leistungsanalyse beziehen.  
+Diese Seite ist eine umfassende Referenz zu Microsoft Edge DevTools-Features im Zusammenhang mit der Leistungsanalyse.  
 
-Navigieren Sie zu den [ersten Schritten mit der Analyse der Laufzeitleistung][DevtoolsEvaluatePerformanceGettingStarted] für ein geführtes Lernprogramm zum Analysieren der Leistung einer Seite mit [Microsoft Edge devtools][MicrosoftEdgeDevTools].  
+Navigieren Sie [zu Erste Schritte mit der Analyse der Laufzeitleistung][DevtoolsEvaluatePerformanceGettingStarted] für ein geführtes Lernprogramm zum Analysieren der Leistung einer Seite mithilfe von Microsoft Edge [DevTools][MicrosoftEdgeDevTools].  
 
-## Aufzeichnen der Leistung  
+## <a name="record-performance"></a>Aufzeichnen der Leistung  
 
-### Aufzeichnen der Laufzeitleistung  
+### <a name="record-runtime-performance"></a>Aufzeichnen der Laufzeitleistung  
 
-Zeichnen Sie die Laufzeitleistung auf, wenn Sie die Leistung einer Seite während der Ausführung analysieren möchten, anstatt Sie zu laden.  
+Zeichnen Sie die Laufzeitleistung auf, wenn Sie die Leistung einer Seite während der Ausführung analysieren möchten, statt zu laden.  
 
-1.  Wechseln Sie zu der Seite, die Sie analysieren möchten.  
-1.  Wählen Sie die Registerkarte **Leistung** in devtools aus.  
-1.  Wählen Sie **Datensatz** \ ( ![ Eintrags Symbol ][ImageRecordIcon] \) aus.  
+1.  Navigieren Sie zu der Seite, die Sie analysieren möchten.  
+1.  Öffnen Sie **das Tool Leistung** in DevTools.  
+1.  Wählen **Sie Datensatz** \( ![ Datensatzsymbol ][ImageRecordIcon] \).  
     
     :::image type="complex" source="../media/evaluate-performance-performance-record-highlight.msft.png" alt-text="Record" lightbox="../media/evaluate-performance-performance-record-highlight.msft.png":::
        **Record**  
     :::image-end:::  
     
-1.  Interagieren Sie mit der Seite.  DevTools zeichnet alle Seiten Aktivitäten auf, die durch ihre Interaktionen entstehen.  
-1.  Wählen Sie erneut **aufzeichnen** aus, oder klicken Sie auf **Beenden** , um die Aufzeichnung zu beenden.  
+1.  Interagieren mit der Seite.  DevTools zeichnet alle Seitenaktivitäten auf, die als Ergebnis Ihrer Interaktionen auftreten.  
+1.  Wählen **Sie erneut Aufzeichnen** aus, oder wählen Sie Beenden **aus,** um die Aufzeichnung zu beenden.  
     
-### Aufzeichnen der Ladeleistung  
+### <a name="record-load-performance"></a>Aufzeichnen der Lastleistung  
 
-Zeichnen Sie die Ladeleistung auf, wenn Sie die Leistung einer Seite während des Ladens analysieren möchten, anstatt Sie zu starten.  
+Zeichnen Sie die Lastleistung auf, wenn Sie die Leistung einer Seite beim Laden analysieren möchten, statt sie zu ausführen.  
 
-1.  Wechseln Sie zu der Seite, die Sie analysieren möchten.  
-1.  Öffnen Sie das **Leistungs** Panel von devtools.  
-1.  Wählen Sie **Seite aktualisieren** \ ( ![ Seite aktualisieren ][ImageRefreshPageIcon] \) aus.  DevTools zeichnet Leistungs Metriken auf, während die Seite aktualisiert wird, und stoppt dann die Aufzeichnung ein paar Sekunden nach Abschluss der Auslastung automatisch.  
+1.  Navigieren Sie zu der Seite, die Sie analysieren möchten.  
+1.  Öffnen Sie **den Bereich** Leistung von DevTools.  
+1.  Wählen **Sie Seite aktualisieren** \( Seite aktualisieren ![ ][ImageRefreshPageIcon] \).  DevTools zeichnet Leistungsmetriken auf, während die Seite aktualisiert wird, und beendet dann die Aufzeichnung ein paar Sekunden nach Abschluss der Last automatisch.  
     
     :::image type="complex" source="../media/evaluate-performance-performance-refresh-button.msft.png" alt-text="Seite aktualisieren" lightbox="../media/evaluate-performance-performance-refresh-button.msft.png":::
        **Seite aktualisieren**  
     :::image-end:::  
     
-DevTools zoomt automatisch auf den Teil der Aufzeichnung, in dem die meisten Aktivitäten aufgetreten sind.  
+DevTools vergrößert automatisch den Teil der Aufzeichnung, in dem der Großteil der Aktivität aufgetreten ist.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-refreshed.msft.png" alt-text="Laden einer Seite" lightbox="../media/evaluate-performance-performance-refreshed.msft.png":::
-   Laden einer Seite  
+:::image type="complex" source="../media/evaluate-performance-performance-refreshed.msft.png" alt-text="Eine Aufzeichnung zum Laden von Seiten" lightbox="../media/evaluate-performance-performance-refreshed.msft.png":::
+   Eine Aufzeichnung zum Laden von Seiten  
 :::image-end:::  
 
-### Aufzeichnen von Screenshots während der Aufzeichnung  
+### <a name="capture-screenshots-while-recording"></a>Aufnehmen von Screenshots während der Aufzeichnung  
 
-Aktivieren Sie das Kontrollkästchen **Screenshots** , um einen Screenshot jedes Frames während der Aufzeichnung zu erfassen.  
+Aktivieren Sie das **Kontrollkästchen Screenshots,** um einen Screenshot jedes Frames während der Aufzeichnung zu erfassen.  
 
 :::image type="complex" source="../media/evaluate-performance-performance-capture-screenshots-checkbox.msft.png" alt-text="Das Kontrollkästchen Screenshots" lightbox="../media/evaluate-performance-performance-capture-screenshots-checkbox.msft.png":::
-   Das Kontrollkästchen " **Screenshots** "  
+   Das **Kontrollkästchen Screenshots**  
 :::image-end:::  
 
-Navigieren Sie zu [einem Screenshot](#view-a-screenshot) , um zu erfahren, wie Sie mit Screenshots interagieren können.  
+Navigieren Sie zu [Screenshot anzeigen,](#view-a-screenshot) um zu erfahren, wie Sie mit Screenshots interagieren.  
 
-### Erzwingen der Garbage Collection während der Aufzeichnung  
+### <a name="force-garbage-collection-while-recording"></a>Erzwingen der Garbage Collection während der Aufzeichnung  
 
-Wenn Sie eine Seite aufzeichnen, wählen Sie **Garbage** Collection durchführen aus, ![ ][ImageCollectGarbageIcon] um die Garbage Collection zu erzwingen.  
+Wählen Sie beim Aufzeichnen einer Seite die Option Garbage **sammeln** \( Garbage Icon sammeln \) aus, ![ um die Garbage Collection zu ][ImageCollectGarbageIcon] erzwingen.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-collect-garbage-button.msft.png" alt-text="Garbage Collection" lightbox="../media/evaluate-performance-performance-collect-garbage-button.msft.png":::
-   Garbage Collection  
+:::image type="complex" source="../media/evaluate-performance-performance-collect-garbage-button.msft.png" alt-text="Sammeln von Garbage" lightbox="../media/evaluate-performance-performance-collect-garbage-button.msft.png":::
+   Sammeln von Garbage  
 :::image-end:::  
 
-### Aufzeichnungseinstellungen anzeigen  
+### <a name="show-recording-settings"></a>Anzeigen von Aufzeichnungseinstellungen  
 
-Wählen Sie **aufnahmeeinstellungen** \ ( ![ Aufnahmeeinstellungen ][ImageCaptureSettingsIcon] \) aus, um weitere Einstellungen anzuzeigen, die sich darauf beziehen, wie devtools Leistungs Aufzeichnungen erfasst.  
+Wählen **Sie Aufnahmeeinstellungen** \( Aufnahmeeinstellungen \) aus, um weitere Einstellungen im Zusammenhang mit der Erfassung von Leistungsaufzeichnungen durch ![ ][ImageCaptureSettingsIcon] DevTools verfügbar zu machen.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png" alt-text="Abschnitt Aufnahmeeinstellungen" lightbox="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png":::
-   Abschnitt " **aufnahmeeinstellungen** "  
+:::image type="complex" source="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png" alt-text="Abschnitt "Aufnahmeeinstellungen"" lightbox="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png":::
+   Abschnitt **"Aufnahmeeinstellungen"**  
 :::image-end:::  
 
-### Deaktivieren von JavaScript-Beispielen  
+### <a name="disable-javascript-samples"></a>Deaktivieren von JavaScript-Beispielen  
 
-Standardmäßig werden im **Haupt** Abschnitt einer Aufzeichnung detaillierte Aufruflisten von JavaScript-Funktionen angezeigt, die während der Aufzeichnung aufgerufen wurden.  So deaktivieren Sie diese Anruflisten:  
+Standardmäßig werden im **Hauptabschnitt** einer Aufzeichnung detaillierte Aufrufstapel von JavaScript-Funktionen angezeigt, die während der Aufzeichnung aufgerufen wurden.  So deaktivieren Sie diese Aufrufstapel:  
 
-1.  Öffnen Sie das Menü " **aufnahmeeinstellungen** ".  Navigieren Sie zu [Aufzeichnung Einstellungen anzeigen](#show-recording-settings).  
-1.  Aktivieren Sie das Kontrollkästchen **JavaScript-Beispiele deaktivieren** .  
-1.  Nehmen Sie eine Aufzeichnung der Seite auf.  
+1.  Öffnen Sie **das Menü Einstellungen erfassen.**  Navigieren Sie zu [Aufzeichnungseinstellungen anzeigen.](#show-recording-settings)  
+1.  Aktivieren Sie das **Kontrollkästchen JavaScript-Beispiele** deaktivieren.  
+1.  Nehmen Sie eine Aufzeichnung der Seite vor.  
     
-Die folgenden zwei Abbildungen zeigen den Unterschied zwischen dem deaktivieren und Aktivieren von JavaScript-Beispielen.  Der **Haupt** Abschnitt der Aufzeichnung ist viel kürzer, wenn Sampling deaktiviert ist, da alle JavaScript-Aufruflisten ausgelassen werden.  
+Die folgenden beiden Abbildungen zeigen den Unterschied zwischen dem Deaktivieren und Aktivieren von JavaScript-Beispielen.  Der **Abschnitt "Main"** der Aufzeichnung ist wesentlich kürzer, wenn das Sampling deaktiviert ist, da alle JavaScript-Aufrufstapel nicht verwendet werden.  
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-on.msft.png" alt-text="Beispiel für eine Aufzeichnung, wenn JS-Beispiele deaktiviert sind" lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-on.msft.png":::
-         Beispiel für eine Aufzeichnung, wenn JS-Beispiele deaktiviert sind  
+      :::image type="complex" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-on.msft.png" alt-text="Ein Beispiel für eine Aufzeichnung, wenn JS-Beispiele deaktiviert sind" lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-on.msft.png":::
+         Ein Beispiel für eine Aufzeichnung, wenn JS-Beispiele deaktiviert sind  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off.msft.png" alt-text="Beispiel für eine Aufzeichnung, wenn JS-Beispiele aktiviert sind" lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off.msft.png":::
-         Beispiel für eine Aufzeichnung, wenn JS-Beispiele aktiviert sind  
+      :::image type="complex" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off.msft.png" alt-text="Ein Beispiel für eine Aufzeichnung, wenn JS-Beispiele aktiviert sind" lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off.msft.png":::
+         Ein Beispiel für eine Aufzeichnung, wenn JS-Beispiele aktiviert sind  
       :::image-end:::  
    :::column-end:::
 :::row-end:::
 
-### Drosseln des Netzwerks während der Aufzeichnung  
+### <a name="throttle-the-network-while-recording"></a>Drosseln des Netzwerks während der Aufzeichnung  
 
-So Drosseln Sie das Netzwerk während der Aufzeichnung:  
+So drosseln Sie das Netzwerk während der Aufzeichnung:  
 
-1.  Öffnen Sie das Menü " **aufnahmeeinstellungen** ".  Navigieren Sie zu [Aufzeichnung Einstellungen anzeigen](#show-recording-settings).  
-1.  Stellen Sie **Network** auf die gewünschte drosselungsebene ein.  
+1.  Öffnen Sie **das Menü Einstellungen erfassen.**  Navigieren Sie zu [Aufzeichnungseinstellungen anzeigen.](#show-recording-settings)  
+1.  Legen **Sie Netzwerk** auf die gewünschte Drosselungsstufe.  
     
-### Drosseln der CPU während der Aufzeichnung  
+### <a name="throttle-the-cpu-while-recording"></a>Drosseln der CPU während der Aufzeichnung  
 
-So Drosseln Sie die CPU während der Aufzeichnung:  
+So drosseln Sie die CPU während der Aufzeichnung:  
 
-1.  Öffnen Sie das Menü " **aufnahmeeinstellungen** ".  Navigieren Sie zu [Aufzeichnung Einstellungen anzeigen](#show-recording-settings).  
-1.  Setzen Sie die **CPU** auf das gewünschte Drosselungs Niveau.  
+1.  Öffnen Sie **das Menü Einstellungen erfassen.**  Navigieren Sie zu [Aufzeichnungseinstellungen anzeigen.](#show-recording-settings)  
+1.  Legen **Sie die CPU** auf die gewünschte Drosselungsstufe.  
     
-Die Drosselung ist relativ zu den Funktionen Ihres Computers.  Mit der Option " **2X verlangsamen** " wird beispielsweise die CPU zwei Mal langsamer als normal ausgeführt.  DevTools simulieren die CPUs von mobilen Geräten nicht wirklich, da sich die Architektur von mobilen Geräten stark von der von Desktops und Laptops unterscheidet.  
+Die Einschränkung ist relativ zu den Funktionen Ihres Computers.  Die **2x-Verlangsamungsoption** z. B. macht ihre CPU zwei Mal langsamer als normal.  DevTools simulieren nicht wirklich die CPUs mobiler Geräte, da sich die Architektur mobiler Geräte stark von der architektur von Desktops und Laptops unterscheiden.  
 
-### Aktivieren von Advanced Paint Instrumentation  
+### <a name="turn-on-advanced-paint-instrumentation"></a>Aktivieren der erweiterten Farbinstrumentierung  
 
-So zeigen Sie die detaillierte Farb Instrumentation an:  
+So zeigen Sie die detaillierte Farbinstrumentierung an:  
 
-1.  Öffnen Sie das Menü " **aufnahmeeinstellungen** ".  Navigieren Sie zu [Aufzeichnung Einstellungen anzeigen](#show-recording-settings).  
-1.  Aktivieren Sie das Kontrollkästchen **Erweiterte Farb Instrumentation (langsam) aktivieren** .  
+1.  Öffnen Sie **das Menü Einstellungen erfassen.**  Navigieren Sie zu [Aufzeichnungseinstellungen anzeigen.](#show-recording-settings)  
+1.  Aktivieren Sie **das Kontrollkästchen Erweiterte Farbinstrumentierung aktivieren (langsam).**  
 
-Wenn Sie wissen möchten, wie Sie mit den Paint-Informationen interagieren, navigieren Sie zu [Ansichtsebenen](#view-layers-information) , und [zeigen Sie Paint Profiler](#view-paint-profiler)an.  
+Um zu erfahren, wie Sie mit den Farbinformationen interagieren, navigieren Sie zu [Ebenen anzeigen](#view-layers-information) und [Lackprofiler anzeigen.](#view-paint-profiler)  
 
-## Speichern einer Aufzeichnung  
+## <a name="save-a-recording"></a>Speichern einer Aufzeichnung  
 
-Wenn Sie eine Aufzeichnung speichern möchten, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie **Profil speichern**aus.  
+Öffnen Sie zum Speichern einer Aufzeichnung das Kontextmenü \(klicken Sie mit der rechten Maustaste auf\), und wählen Sie **Profil speichern aus.**  
 
 :::image type="complex" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-save-profile.msft.png" alt-text="Profil speichern" lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-save-profile.msft.png":::
    **Profil speichern**  
 :::image-end:::  
 
-## Laden einer Aufzeichnung  
+## <a name="load-a-recording"></a>Laden einer Aufzeichnung  
 
-Wenn Sie eine Aufzeichnung laden möchten, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie **Profil laden**aus.  
+Öffnen Sie zum Laden einer Aufzeichnung das Kontextmenü \(klicken Sie mit der rechten Maustaste\), und wählen Sie **Profil laden aus.**  
 
-:::image type="complex" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-load-profile.msft.png" alt-text="Profil laden" lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-load-profile.msft.png":::
-   **Profil laden**  
+:::image type="complex" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-load-profile.msft.png" alt-text="Lastenprofil" lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-load-profile.msft.png":::
+   **Lastenprofil**  
 :::image-end:::  
 
-## Löschen der vorherigen Aufzeichnung  
+## <a name="clear-the-previous-recording"></a>Löschen der vorherigen Aufzeichnung  
 
-Nachdem Sie eine Aufzeichnung durchführen, drücken Sie die **Aufzeichnung löschen** \ ( ![ Symbol ' Aufzeichnung löschen ][ImageClearRecordingIcon] \), um die Aufzeichnung aus dem **Leistungs** Panel zu löschen.  
+Nachdem Sie eine Aufzeichnung gemacht haben, **wählen** Sie Aufzeichnung löschen \( Aufzeichnungssymbol löschen \) aus, um diese Aufzeichnung im ![ ][ImageClearRecordingIcon] Leistungsbereich **zu** löschen.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-clear-button.msft.png" alt-text="Aufzeichnen löschen" lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-clear-button.msft.png":::
-   **Aufzeichnen löschen**  
+:::image type="complex" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-clear-button.msft.png" alt-text="Löschen der Aufzeichnung" lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-clear-button.msft.png":::
+   **Löschen der Aufzeichnung**  
 :::image-end:::  
 
-## Analysieren einer Leistungsaufzeichnung  
+## <a name="analyze-a-performance-recording"></a>Analysieren einer Leistungsaufzeichnung  
 
-Nachdem Sie die Leistung der [Lauf Zeitaufzeichnung](#record-runtime-performance) oder die [Daten Satz Auslastung](#record-load-performance)aufgezeichnet haben, bietet der **Leistungs** Bereich viele Daten für die Analyse der Leistung von dem, was gerade geschehen ist.  
+Nachdem Sie [die Laufzeitleistung oder](#record-runtime-performance) **** die Ladeleistung aufgezeichnet [haben,](#record-load-performance)stellt der Bereich Leistung eine Menge Daten für die Analyse der Leistung der gerade geschehenen Daten zur Wahl.  
 
-### Auswählen eines Teils einer Aufzeichnung  
+### <a name="select-a-portion-of-a-recording"></a>Auswählen eines Teils einer Aufzeichnung  
 
-Ziehen Sie den Mauszeiger über die **Übersicht** nach links oder rechts, um einen Teil der Aufzeichnung auszuwählen.  Die **Übersicht** ist der Abschnitt, in dem die **fps**-, **CPU**-und **net** -Diagramme enthalten sind.  
+Ziehen Sie die Maus nach links oder rechts über die **Übersicht,** um einen Teil einer Aufzeichnung auszuwählen.  Der **Abschnitt Übersicht** enthält die Diagramme **FPS,** **CPU**und **NET.**  
 
-:::image type="complex" source="../media/evaluate-performance-performance-zoom-highlighted.msft.png" alt-text="Ziehen Sie den Mauszeiger über die Übersicht, um die Ansicht zu vergrößern" lightbox="../media/evaluate-performance-performance-zoom-highlighted.msft.png":::
-   Ziehen Sie den Mauszeiger über die **Übersicht** , um die Ansicht zu vergrößern  
+:::image type="complex" source="../media/evaluate-performance-performance-zoom-highlighted.msft.png" alt-text="Ziehen Sie die Maus über die Übersicht, um zu zoomen" lightbox="../media/evaluate-performance-performance-zoom-highlighted.msft.png":::
+   Ziehen Sie die Maus über die **Übersicht,** um zu zoomen  
 :::image-end:::  
 
-So wählen Sie einen Teil über die Tastatur aus:  
+So wählen Sie einen Teil mithilfe der Tastatur aus:  
 
-1.  Wählen Sie den Hintergrund des **Haupt** Abschnitts oder eines der Abschnitte daneben aus, beispielsweise **Interaktionen**, **Netzwerk**oder **GPU**.  Dieser Tastatur Workflow funktioniert nur, wenn einer dieser Abschnitte den Fokus hat.  
-1.  Verwenden Sie `W` die `A` Tasten,, `S` , `D` um Sie zu vergrößern, nach Links zu verschieben, zu verkleinern und nach rechts zu verschieben.  
+1.  Wählen Sie den Hintergrund des **Abschnitts Main** oder einen der abschnitte daneben aus, z. B. **Interaktionen,** **Netzwerk**oder **GPU**.  Dieser Tastaturworkflow funktioniert nur, wenn sich einer dieser Abschnitte im Fokus befindet.  
+1.  Verwenden Sie die Tasten , , , um `W` `A` zu `S` zoomen, nach links zu verschieben, zu verkleinern und nach rechts `D` zu verschieben.  
 
-Wenn Sie einen Teil mithilfe eines Trackpads auswählen möchten, führen Sie die folgenden Aktionen aus.  
+Führen Sie die folgenden Aktionen aus, um einen Teil mithilfe eines Trackpads auszuwählen.  
 
-1.  Zeigen Sie mit der Maus auf den Abschnitt " **Übersicht** " oder den Abschnitt " **Details** ".  Der Abschnitt " **Übersicht** " ist der Bereich, in dem die **fps**-, **CPU**-und **net** -Diagramme enthalten sind.  Der Abschnitt **Details** ist der Bereich, der den **Haupt** Abschnitt, den Abschnitt **Interaktionen** und so weiter enthält.  
-1.  Wischen Sie mit zwei Fingern nach oben, um es zu verkleinern, wischen Sie nach links, wischen Sie nach unten, um die Ansicht zu vergrößern, und wischen Sie nach rechts, um nach rechts zu wechseln  
+1.  Zeigen Sie mit der Maus auf den **Abschnitt Übersicht** oder den **Abschnitt Details.**  Der **Abschnitt Übersicht** ist der Bereich, der die **FPS-,** **CPU-** und **#A0** enthält.  Der **Abschnitt Details** ist der Bereich, der den Abschnitt **Main,** den Abschnitt **Interaktionen** und so weiter enthält.  
+1.  Wischen Sie mit zwei Fingern nach oben, um sie zu verkleinern, wischen Sie nach links, wischen Sie nach unten, um zu vergrößern, und wischen Sie nach rechts, um nach rechts zu wechseln.  
 
-Wenn Sie in einem langen Flammen Diagramm im **Haupt** Abschnitt oder einem der Nachbarn Scrollen möchten, wählen und halten Sie beim Ziehen nach oben und unten.  Ziehen Sie nach links und rechts, um zu verschieben, welcher Teil der Aufzeichnung ausgewählt wird.  
+Wenn Sie ein langes Flammendiagramm im **Abschnitt "Main"** oder einen der Benachbarten scrollen möchten, wählen Sie beim Ziehen nach oben und unten die Option und halten sie gedrückt.  Ziehen Sie nach links und rechts, um den ausgewählten Teil der Aufzeichnung zu verschieben.  
 
-### Suchaktivitäten  
+### <a name="search-activities"></a>Suchaktivitäten  
 
-Wählen Sie `Control` + `F` \ (Windows, Linux \) oder `Command` + `F` \ (macOS \) aus, um das Suchfeld unten im **Leistungs** Bereich zu öffnen.  
+Wählen `Control` + `F` Sie \(Windows, Linux\) oder `Command` + `F` \(macOS\) **** aus, um das Suchfeld am unteren Rand des Leistungsbereichs zu öffnen.  
 
 :::image type="complex" source="../media/evaluate-performance-performance-search-regex.msft.png" alt-text="Suchfeld" lightbox="../media/evaluate-performance-performance-search-regex.msft.png":::
    Suchfeld  
 :::image-end:::  
 
-So navigieren Sie in Aktivitäten, die Ihrer Abfrage entsprechen:  
+So navigieren Sie zu Aktivitäten, die mit Ihrer Abfrage übereinstimmen:  
 
-*   Verwenden Sie die Schaltflächen **vorherige** \ ( ![ vorherige ][ImagePreviousIcon] \) und **nächste** \ ( ![ weiter \ ][ImageNextIcon] ).  
-*   Wählen Sie aus `Shift` + `Enter` , um das vorherige auszuwählen, oder `Enter` Wählen Sie das nächste aus.  
+*   Verwenden Sie **die Schaltflächen** Previous \( ![ Previous ][ImagePreviousIcon] \) und **Next** \( ![ Next ][ImageNextIcon] \).  
+*   Wählen `Shift` + `Enter` Sie diese Option aus, um den `Enter` vorherigen oder den nächsten auszuwählen.  
 
-So ändern Sie die Abfrageeinstellungen:  
+So ändern Sie Abfrageeinstellungen:  
 
-*   Drücken Sie **groß** -/Kleinschreibung ![ beachten \ (Groß-/Kleinschreibung ][ImageSearchCaseIcon] beachten \), damit die Abfrage Groß-/Kleinschreibung berücksichtigt.  
-*   Drücken Sie **Regex** \ ( ![ Regex ][ImageSearchRegexIcon] \), um einen regulären Ausdruck in Ihrer Abfrage zu verwenden.  
+*   Wählen **Sie Zwischen- und** ![ Kleinschreibung \( Zwischenfall ][ImageSearchCaseIcon] und \) aus, um die Abfragefalle vertraulich zu machen.  
+*   Wählen **Sie Regex** \( ![ Regex ][ImageSearchRegexIcon] \) aus, um einen regulären Ausdruck in Ihrer Abfrage zu verwenden.  
 
-Wenn Sie das Suchfeld ausblenden möchten, drücken Sie **Abbrechen**.  
+Wählen Sie Abbrechen aus, um das Suchfeld **auszublenden.**  
 
-### Hauptthread Aktivität anzeigen  
+### <a name="view-main-thread-activity"></a>Anzeigen der Hauptthreadaktivität  
 
-Verwenden Sie den **Haupt** Abschnitt, um die Aktivitäten anzuzeigen, die im Hauptthread der Seite aufgetreten sind.  
+Verwenden Sie **den Abschnitt Main,** um Aktivitäten im Hauptthread der Seite zu anzeigen.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-main-zoomed.msft.png" alt-text="Der Hauptabschnitt" lightbox="../media/evaluate-performance-performance-main-zoomed.msft.png":::
-   Der **Haupt** Abschnitt  
+:::image type="complex" source="../media/evaluate-performance-performance-main-zoomed.msft.png" alt-text="Der Abschnitt "Main"" lightbox="../media/evaluate-performance-performance-main-zoomed.msft.png":::
+   Der **Abschnitt "Main"**  
 :::image-end:::  
 
-Wählen Sie ein Ereignis aus, um weitere Informationen dazu auf der Registerkarte " **Zusammenfassung** " anzuzeigen.  DevTools skizziert das ausgewählte Ereignis.  
+Wählen Sie ein Ereignis aus, um weitere Informationen zu diesem Ereignis im **Zusammenfassungsfenster anzeigen** zu können.  DevTools umreißt das ausgewählte Ereignis.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-summary-me.msft.png" alt-text="Weitere Informationen zur anonymen Funktion auf der Registerkarte Zusammenfassung" lightbox="../media/evaluate-performance-performance-summary-me.msft.png":::
-   Weitere Informationen zur `anonymous` Funktion auf der Registerkarte " **Zusammenfassung** "  
+:::image type="complex" source="../media/evaluate-performance-performance-summary-me.msft.png" alt-text="Weitere Informationen zur anonymen Funktion im Zusammenfassungsfenster" lightbox="../media/evaluate-performance-performance-summary-me.msft.png":::
+   Weitere Informationen zur `anonymous` Funktion im **Zusammenfassungsfenster**  
 :::image-end:::  
 
-DevTools stellt die Hauptthread Aktivität mit einem Flammen Diagramm dar.  Die x-Achse stellt die Aufzeichnung über einen Zeitraum dar.  Die y-Achse steht für die Aufrufliste.  Die Ereignisse im Vordergrund führen zu den darunter liegenden Ereignissen.  
+DevTools stellt die Hauptthreadaktivität mit einem Flammendiagramm dar.  Die x-Achse stellt die Aufzeichnung im Laufe der Zeit dar.  Die y-Achse stellt die Aufrufliste dar.  Die Ereignisse oben verursachen die Ereignisse darunter.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-main-flame-chart.msft.png" alt-text="Ein Flammen Diagramm" lightbox="../media/evaluate-performance-performance-main-flame-chart.msft.png":::
-   Ein Flammen Diagramm  
+:::image type="complex" source="../media/evaluate-performance-performance-main-flame-chart.msft.png" alt-text="Ein Flammendiagramm" lightbox="../media/evaluate-performance-performance-main-flame-chart.msft.png":::
+   Ein Flammendiagramm  
 :::image-end:::  
 
-In der vorherigen Abbildung hat ein `click` Ereignis eine `Function Call` in `activitytabs.js` on Zeile 53 verursacht.  `Function Call`Überprüfen Sie unten, ob eine anonyme Funktion ausgeführt wurde.  Die angeforderte anonyme Funktion `a` , die angefordert `wait` wurde `Minor GC` .  
+In der vorherigen Abbildung hat ein `click` Ereignis ein In in zeile `Function Call` `activitytabs.js` 53 verursacht.  Überprüfen `Function Call` Sie unten, ob eine anonyme Funktion ausgeführt wurde.  Die anonyme Funktion angefordert `a` , die angefordert hat , die angefordert `wait` `Minor GC` hat.  
 
-DevTools weist Skripten zufällige Farben zu.  In der vorhergehenden Abbildung sind Funktionsanforderungen eines Skripts farbig hellgrün.  Anfragen von einem anderen Skript sind farbig beige.  Das dunklere Gelb steht für Skriptaktivitäten, und das Purple-Ereignis stellt die Rendering-Aktivität dar.  Diese dunkelgelben und violetten Ereignisse sind für alle Aufzeichnungen konsistent.  
+DevTools weist Skripts zufällige Farben zu.  In der vorherigen Abbildung sind Funktionsanforderungen von einem Skript hellgrün gefärbt.  Anforderungen von einem anderen Skript sind gefärbtes Grau.  Das dunklere Gelb stellt die Skriptaktivität dar, und das violette Ereignis stellt die Renderingaktivität dar.  Diese dunkleren gelben und violetten Ereignisse sind für alle Aufzeichnungen konsistent.  
 
-Navigieren Sie zum [Deaktivieren von JavaScript-Beispielen](#disable-javascript-samples) , wenn Sie den detaillierten Flammen Diagramm von JavaScript-Anforderungen ausblenden möchten.  Wenn js-Beispiele deaktiviert sind, werden nur Ereignisse auf höherer Ebene wie `Event: click` und `Function Call` aus der vorhergehenden Abbildung `str` angezeigt.  
+Navigieren Sie [zu Deaktivieren von JavaScript-Beispielen,](#disable-javascript-samples) wenn Sie das detaillierte Flammendiagramm von JavaScript-Anforderungen ausblenden möchten.  Wenn JS-Beispiele deaktiviert sind, werden nur Ereignisse auf hoher Ebene wie und aus der `Event: choose` `Function Call` vorherigen Abbildung `str` angezeigt.  
 
-### Anzeigen von Aktivitäten in einer Tabelle  
+### <a name="view-activities-in-a-table"></a>Anzeigen von Aktivitäten in einer Tabelle  
 
-Nach dem Aufzeichnen einer Seite müssen Sie sich nicht nur auf den **Haupt** Abschnitt verlassen, um Aktivitäten zu analysieren.  DevTools stellt auch drei tabellarische Ansichten zum Analysieren von Aktivitäten bereit.  Jede Ansicht gibt Ihnen eine andere Perspektive auf die Aktivitäten:  
+Nach dem Aufzeichnen einer Seite müssen Sie sich nicht nur auf den **Abschnitt "Main"** verlassen, um Aktivitäten zu analysieren.  DevTools bietet außerdem drei Tabellenansichten für die Analyse von Aktivitäten.  Jede Ansicht bietet Ihnen eine andere Perspektive für die Aktivitäten:  
 
-*   Wenn Sie die Stammaktivitäten anzeigen möchten, die die meiste Arbeit verursachen, verwenden Sie [die Registerkarte anrufstruktur](#the-call-tree-tab).  
-*   Wenn Sie die Aktivitäten anzeigen möchten, bei denen die meiste Zeit direkt ausgegeben wurde, verwenden Sie [die Registerkarte Bottom-Up](#the-bottom-up-tab).  
-*   Wenn Sie die Aktivitäten in der Reihenfolge anzeigen möchten, in der Sie während der Aufzeichnung aufgetreten sind, verwenden Sie [die Registerkarte Ereignisprotokoll](#the-event-log-tab).  
+*   Wenn Sie die Stammaktivitäten anzeigen möchten, die am meisten Arbeit verursachen, verwenden Sie den [Anrufstrukturbereich.](#the-call-tree-panel)  
+*   Wenn Sie die Aktivitäten anzeigen möchten, in denen die meiste Zeit direkt verbracht wurde, verwenden Sie den [Bottom-Up-Bereich.](#the-bottom-up-panel)  
+*   Wenn Sie die Aktivitäten in der Reihenfolge anzeigen möchten, in der sie während der Aufzeichnung aufgetreten sind, verwenden Sie den [Ereignisprotokollbereich.](#the-event-log-panel)  
     
 > [!NOTE]
-> Die nächsten drei Abschnitte beziehen sich alle auf die gleiche Demo.  Führen Sie die Demo selbst auf der [Registerkarte Activity Tabs][ActivityTabsDemo]aus.  
+> Die nächsten drei Abschnitte beziehen sich alle auf die gleiche Demo.  Führen Sie die Demo selbst unter [Activity Tabs Demo aus.][ActivityTabsDemo]  
 
-#### Stammaktivitäten  
+#### <a name="root-activities"></a>Stammaktivitäten  
 
-Im folgenden finden Sie eine Erläuterung des Konzepts der **Stammaktivitäten** , das auf der Registerkarte " **anrufstruktur** ", " **Bottom-up-** Registerkarte" und " **Ereignisprotokoll** Abschnitte" erwähnt wird.  
+Hier finden Sie **** eine Erläuterung des Konzepts **** der Stammaktivitäten, das im Bereich Anrufstruktur, **Bottom-Up-Bereich** und **Ereignisprotokoll erwähnt** wird.  
 
-Stammaktivitäten sind solche, die dazu führen, dass der Browser einige Aufgaben ausführen kann.  Wenn Sie beispielsweise eine Webseite auswählen, führt der Browser eine `Event` Aktivität als Stammaktivität aus.  Dies `Event` kann dazu führen, dass ein Handler ausgeführt wird usw.  
+Stammaktivitäten sind diejenigen, die dazu führen, dass der Browser einige Arbeit macht.  Wenn Sie beispielsweise eine Webseite auswählen, führt der Browser eine `Event` Aktivität als Stammaktivität aus.  Dies `Event` kann dazu führen, dass ein Handler ausgeführt wird, und so weiter.  
 
-Im Flammen Diagramm des **Haupt** Abschnitts befinden sich die Stammaktivitäten am oberen Rand des Diagramms.  In den Registerkarten " **anrufstruktur** " und " **Ereignisprotokoll** " sind Stammaktivitäten die Elemente der obersten Ebene.  
+Im Flammendiagramm des **Abschnitts Main** befinden sich die Stammaktivitäten am oberen Rand des Diagramms.  In den **Feldern Anrufstruktur** **und Ereignisprotokoll** sind Stammaktivitäten die Elemente auf oberster Ebene.  
 
-Navigieren Sie zur [Registerkarte anrufstruktur](#the-call-tree-tab) , um ein Beispiel für Stammaktivitäten anzuzeigen.  
+Navigieren Sie zum [Bereich Anrufstruktur,](#the-call-tree-panel) um ein Beispiel für Stammaktivitäten zu finden.  
 
-#### Die Registerkarte "anrufstruktur"  
+#### <a name="the-call-tree-panel"></a>Der Bereich "Anrufstruktur"  
 
-Verwenden Sie die Registerkarte **anrufstruktur** , um anzuzeigen, welche [Stammaktivitäten](#root-activities) die meiste Arbeit verursachen.  
+Verwenden Sie **den Anrufstrukturbereich,** um zu sehen, [welche Stammaktivitäten](#root-activities) am meisten Arbeit verursachen.  
 
-Die Registerkarte " **anrufstruktur** " zeigt nur Aktivitäten während des ausgewählten Teils der Aufzeichnung an.  Navigieren [Sie zum Auswählen eines Teils einer Aufzeichnung](#select-a-portion-of-a-recording) , um zu erfahren, wie Sie Abschnitte auswählen.  
+Im **Bereich Anrufstruktur** werden nur Aktivitäten während des ausgewählten Abschnitts der Aufzeichnung angezeigt.  Navigieren Sie [zu Wählen Sie einen Teil einer Aufzeichnung aus,](#select-a-portion-of-a-recording) um zu erfahren, wie Sie Teile auswählen.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-call-tree.msft.png" alt-text="Die Registerkarte anrufstruktur" lightbox="../media/evaluate-performance-performance-call-tree.msft.png":::
-   Die Registerkarte " **anrufstruktur** "  
+:::image type="complex" source="../media/evaluate-performance-performance-call-tree.msft.png" alt-text="Der Bereich "Anrufstruktur"" lightbox="../media/evaluate-performance-performance-call-tree.msft.png":::
+   Der **Bereich "Anrufstruktur"**  
 :::image-end:::  
 
-In der vorhergehenden Abbildung sind die Elemente der obersten Ebene in der Spalte **Aktivität** , beispielsweise `Evaluate Script` und Stammaktivitäten, zu finden `Parse HTML` .  Die Schachtelung stellt die Aufrufliste dar.  Beispielsweise in der vorherigen Abbildung, die `Parse HTML` verursacht hat, `Evaluate Script` `Compile Script` und `(anonymous)` .  
+In der vorherigen Abbildung ist die oberste Ebene der Elemente in der Spalte **Aktivität,** z. B. Und `Evaluate Script` sind `Parse HTML` Stammaktivitäten.  Die Verschachtelung stellt die Aufrufliste dar.  Beispiel: in der vorherigen Abbildung, `Parse HTML` die verursacht hat, `Evaluate Script` und `Compile Script` `(anonymous)` .  
 
-**Self time** steht für die in dieser Aktivität direkt verbrachte Zeit.  **Gesamtzeit** stellt die Zeit dar, die in dieser Aktivität oder einem der untergeordneten Elemente aufgewendet wurde.  
+**Self Time stellt** die Zeit dar, die direkt in dieser Aktivität verbracht wird.  **Die Gesamtzeit** stellt die Zeit dar, die in dieser Aktivität oder einem der kinder verbracht wird.  
 
-Wählen Sie **selbst Zeit**, **Gesamtzeit**oder **Aktivität** aus, um die Tabelle nach dieser Spalte zu sortieren.  
+Wählen **Sie Self Time**, Total **Time**oder **Activity** aus, um die Tabelle nach dieser Spalte zu sortieren.  
 
-Verwenden Sie das Textfeld **Filtern** , um Ereignisse nach Aktivitätsname zu filtern.  
+Verwenden Sie das **Textfeld Filter,** um Ereignisse nach Aktivitätsnamen zu filtern.  
 
-Standardmäßig ist das Menü **Gruppierung** auf **keine Gruppierung**eingestellt.  Verwenden Sie das Menü **Gruppierung** , um die aktivitätstabelle auf der Grundlage verschiedener Kriterien zu sortieren.  
+Standardmäßig ist **das Menü Gruppierung** auf Keine Gruppierung **festgelegt.**  Verwenden Sie **das Menü** Gruppierung, um die Aktivitätstabelle nach verschiedenen Kriterien zu sortieren.  
 
-Wählen Sie den **schwersten Stapel anzeigen** aus ![ , um ][ImageShowHeaviestStackIcon] eine andere Tabelle rechts neben der **Aktivitäts** Tabelle anzuzeigen.  Wählen Sie eine Aktivität aus, um die **schwerste Stapel** Tabelle aufzufüllen.  Die **schwerste Stapel** Tabelle zeigt an, welche untergeordneten Elemente der ausgewählten Aktivität am längsten ausgeführt wurden.  
+Wählen **Sie Schwerer Stapel** anzeigen \( Schwerer Stapel anzeigen \) aus, um eine weitere Tabelle rechts neben der ![ ][ImageShowHeaviestStackIcon] **Aktivitätstabelle zu** zeigen.  Wählen Sie eine Aktivität aus, um die **Tabelle "Schwerster Stapel" auffüllen** zu können.  In **der Tabelle "Schwerster Stapel"** wird angezeigt, welche Kinder der ausgewählten Aktivität am längsten ausgeführt wurden.  
 
-#### Die Registerkarte "Bottom-Up"  
+#### <a name="the-bottom-up-panel"></a>The Bottom-Up panel  
 
-Verwenden Sie die Registerkarte " **Bottom-up** ", um anzuzeigen, welche Aktivitäten die meiste Zeit im Aggregat Direktaufnahmen.  
+Verwenden Sie **den Bottom-Up-Bereich,** um zu sehen, welche Aktivitäten am häufigsten zusammengefasst verwendet wurden.  
 
-Auf der Registerkarte **Bottom-up** werden nur Aktivitäten während des ausgewählten Teils der Aufzeichnung angezeigt.  Navigieren [Sie zum Auswählen eines Teils einer Aufzeichnung](#select-a-portion-of-a-recording) , um zu erfahren, wie Sie Abschnitte auswählen.  
+Im **Bottom-Up-Bereich** werden nur Aktivitäten während des ausgewählten Teils der Aufzeichnung angezeigt.  Navigieren Sie [zu Wählen Sie einen Teil einer Aufzeichnung aus,](#select-a-portion-of-a-recording) um zu erfahren, wie Sie Teile auswählen.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-bottoms-up.msft.png" alt-text="Die Registerkarte Bottom-Up" lightbox="../media/evaluate-performance-performance-bottoms-up.msft.png":::
-   Die Registerkarte " **Bottom-up** "  
+:::image type="complex" source="../media/evaluate-performance-performance-bottoms-up.msft.png" alt-text="The Bottom-Up panel" lightbox="../media/evaluate-performance-performance-bottoms-up.msft.png":::
+   The **Bottom-Up** panel  
 :::image-end:::  
 
-Navigieren Sie im **Haupt** Abschnitt Flammen Diagramm der vorhergehenden Abbildung zu dieser fast nahezu alle Zeit verbrachte Ausführung `Parse HTML` .  Die oberste Aktivität auf der Registerkarte " **Bottom-up** " der vorherigen Abbildung ist `Parse HTML` .  <!--In the flame chart of the previous figure, the yellow below the calls to `wait` are actually thousands of `Minor GC` calls.  -->  Navigieren Sie zur Registerkarte " **Bottom-up** ", um die nächst teuerste Aktivität zu finden `Layout` .  
+Navigieren Sie **im Diagramm Hauptabschnitt** Flammen der vorherigen Abbildung zu dem fast die ganze Zeit, die für die Ausführung auf sich `Parse HTML` hatte.  Die oberste Aktivität im **Bottom-Up-Bereich** der vorherigen Abbildung ist `Parse HTML` .  <!--In the flame chart of the previous figure, the yellow below the calls to `wait` are actually thousands of `Minor GC` calls.  -->  Navigieren Sie zum **Bottom-Up-Bereich,** die nächste teuerste Aktivität ist `Layout` .  
 
-Die Spalte **selbst Zeit** stellt die aggregierte Zeit dar, die direkt in dieser Aktivität für alle Vorkommen aufgewendet wurde.  
+Die **Spalte Self Time** stellt die aggregierte Zeit dar, die direkt in dieser Aktivität über alle Vorkommen hinweg verbracht wird.  
 
-Die Spalte " **Gesamtzeit** " stellt die aggregierte Zeit dar, die in dieser Aktivität oder einem der untergeordneten Elemente aufgewendet wurde.  
+Die **Spalte Gesamtzeit** stellt die aggregierte Zeit dar, die in dieser Aktivität oder in einem der unterg nen Aktivitäten verbracht wird.  
 
-#### Die Registerkarte "Ereignisprotokoll"  
+#### <a name="the-event-log-panel"></a>Ereignisprotokollbereich  
 
-Verwenden Sie die Registerkarte **Ereignisprotokoll** , um Aktivitäten in der Reihenfolge anzuzeigen, in der Sie während der Aufzeichnung aufgetreten sind.  
+Verwenden Sie **den Ereignisprotokollbereich,** um Aktivitäten in der Reihenfolge zu anzeigen, in der sie während der Aufzeichnung aufgetreten sind.  
 
-Die Registerkarte **Ereignisprotokoll** zeigt nur Aktivitäten während des ausgewählten Teils der Aufzeichnung an.  Navigieren [Sie zum Auswählen eines Teils einer Aufzeichnung](#select-a-portion-of-a-recording) , um zu erfahren, wie Sie Abschnitte auswählen.  
+Im **Ereignisprotokollbereich** werden nur Aktivitäten während des ausgewählten Abschnitts der Aufzeichnung angezeigt.  Navigieren Sie [zu Wählen Sie einen Teil einer Aufzeichnung aus,](#select-a-portion-of-a-recording) um zu erfahren, wie Sie Teile auswählen.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-event-log.msft.png" alt-text="Die Registerkarte Ereignisprotokoll" lightbox="../media/evaluate-performance-performance-event-log.msft.png":::
-   Die Registerkarte " **Ereignisprotokoll** "  
+:::image type="complex" source="../media/evaluate-performance-performance-event-log.msft.png" alt-text="Ereignisprotokollbereich" lightbox="../media/evaluate-performance-performance-event-log.msft.png":::
+   **Ereignisprotokollbereich**  
 :::image-end:::  
 
-Die Spalte **Anfangszeit** steht für den Punkt, an dem die Aktivität gestartet wurde, relativ zum Anfang der Aufzeichnung.  Beispielsweise bedeutet die Startzeit `175.7 ms` für das ausgewählte Element in der vorherigen Abbildung, dass die Aktivität nach Beginn der Aufzeichnung 175,7 ms gestartet hat.  
+Die **Spalte Startzeit** stellt den Zeitpunkt dar, an dem diese Aktivität gestartet wurde, relativ zum Beginn der Aufzeichnung.  Beispielsweise bedeutet die Startzeit für das ausgewählte Element in der vorherigen Abbildung, dass die Aktivität `175.7 ms` 175,7 ms nach Beginn der Aufzeichnung gestartet wurde.  
 
-Die Spalte **selbst Zeit** stellt die Zeit dar, die direkt in dieser Aktivität verbracht wurde.  
+Die **Spalte Self Time** stellt die Zeit dar, die direkt in dieser Aktivität verbracht wird.  
 
-Die Spalten **Gesamtzeit** stellt die Zeit dar, die direkt in dieser Aktivität oder in einem der untergeordneten Elemente aufgewendet wurde.  
+Die **Spalten Gesamtzeit** stellen die Zeit dar, die direkt in dieser Aktivität oder in einem der unterg nen Aktivitäten verbracht wird.  
 
-Wählen Sie **Start Zeit**, **selbst Zeit**oder **Gesamtzeit** aus, um die Tabelle nach dieser Spalte zu sortieren.
+Wählen **Sie Startzeit,** **Selbstzeit**oder **Gesamtzeit aus,** um die Tabelle nach dieser Spalte zu sortieren.
 
-Verwenden Sie das Textfeld **Filtern** , um Aktivitäten nach Namen zu filtern.  
+Verwenden Sie das **Textfeld Filter,** um Aktivitäten nach Namen zu filtern.  
 
-Verwenden Sie das Menü " **Dauer** ", um alle Aktivitäten zu filtern, die weniger als 1 MS oder 15 MS dauerte.  Standardmäßig ist das Menü **Dauer** auf **alle**eingestellt, was bedeutet, dass alle Aktivitäten angezeigt werden.  
+Verwenden Sie **das Menü Dauer,** um aktivitäten herausfiltern, die weniger als 1 ms oder 15 ms dauerten.  Standardmäßig ist das **Menü Dauer** auf **Alle festgelegt,** d. h. alle Aktivitäten werden angezeigt.  
 
-Deaktivieren Sie die Kontrollkästchen **Lade**-, **Skripting**-, **Rendering**-oder **Painting** , um alle Aktivitäten aus diesen Kategorien zu filtern.  
+Deaktivieren Sie **die Kontrollkästchen Laden,** **** **Skripten,** **Rendern**oder Malen, um alle Aktivitäten aus diesen Kategorien heraus zu filtern.  
 
-### Anzeigen der GPU-Aktivität  
+### <a name="view-gpu-activity"></a>Anzeigen der GPU-Aktivität  
 
-Zeigen Sie die GPU-Aktivität im Abschnitt **GPU** an.  
+Anzeigen der GPU-Aktivität im **Abschnitt GPU.**  
 
-:::image type="complex" source="../media/evaluate-performance-performance-gpu-zoomed.msft.png" alt-text="Der GPU-Abschnitt" lightbox="../media/evaluate-performance-performance-gpu-zoomed.msft.png":::
-   Der **GPU** -Abschnitt  
+:::image type="complex" source="../media/evaluate-performance-performance-gpu-zoomed.msft.png" alt-text="Der Abschnitt "GPU"" lightbox="../media/evaluate-performance-performance-gpu-zoomed.msft.png":::
+   Der **Abschnitt "GPU"**  
 :::image-end:::  
 
-### Raster Aktivität anzeigen  
+### <a name="view-raster-activity"></a>Anzeigen der Rasteraktivität  
 
-Raster Aktivitäten im **Raster** Abschnitt anzeigen  
+Anzeigen der Rasteraktivität im **Abschnitt Raster.**  
 
-:::image type="complex" source="../media/evaluate-performance-performance-raster.msft.png" alt-text="Der Raster Abschnitt" lightbox="../media/evaluate-performance-performance-raster.msft.png":::
-   Der **Raster** Abschnitt  
+:::image type="complex" source="../media/evaluate-performance-performance-raster.msft.png" alt-text="Der Abschnitt Raster" lightbox="../media/evaluate-performance-performance-raster.msft.png":::
+   Der **Abschnitt Raster**  
 :::image-end:::  
 
-### Anzeigen von Interaktionen  
+### <a name="view-interactions"></a>Anzeigen von Interaktionen  
 
-Verwenden Sie den Abschnitt **Interaktionen** , um Benutzerinteraktionen zu suchen und zu analysieren, die während der Aufzeichnung aufgetreten sind.  
+Verwenden Sie **den Abschnitt Interaktionen,** um Benutzerinteraktionen zu suchen und zu analysieren, die während der Aufzeichnung passiert sind.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-interactions-animation.msft.png" alt-text="Abschnitt Interaktionen" lightbox="../media/evaluate-performance-performance-interactions-animation.msft.png":::
-   Abschnitt " **Interaktionen** "  
+:::image type="complex" source="../media/evaluate-performance-performance-interactions-animation.msft.png" alt-text="Der Abschnitt Interaktionen" lightbox="../media/evaluate-performance-performance-interactions-animation.msft.png":::
+   Der **Abschnitt Interaktionen**  
 :::image-end:::  
 
-Eine rote Zeile am unteren Rand einer Interaktion stellt die Zeit dar, die auf den Hauptthread wartet.  
+Eine rote Linie am unteren Rand einer Interaktion stellt die Wartezeit auf den Hauptthread dar.  
 
-Wählen Sie eine Interaktion aus, um weitere Informationen dazu auf der Registerkarte " **Zusammenfassung** " anzuzeigen.  
+Wählen Sie eine Interaktion aus, um weitere Informationen dazu im **Zusammenfassungsfenster einblenden** zu können.  
 
-### Analysieren von Frames pro Sekunde (fps)  
+### <a name="analyze-frames-per-second-fps"></a>Analysieren von Frames pro Sekunde (FPS)  
 
 DevTools bietet zahlreiche Möglichkeiten zum Analysieren von Frames pro Sekunde:  
 
-*   Verwenden Sie [das FPS-Diagramm](#the-fps-chart) , um einen Überblick über fps über die Dauer der Aufzeichnung zu erhalten.  
-*   Verwenden Sie [den Abschnitt Frames](#the-frames-section) , um anzuzeigen, wie lange ein bestimmter Frame aufgenommen wurde.  
-*   Verwenden Sie das **fps-Messgerät** für eine echt Zeitschätzung von fps während der Ausführung der Seite.  Navigieren Sie [in Echtzeit mit dem fps-Messgerät zu Anzeige Frames pro Sekunde](#view-frames-per-second-in-realtime-with-the-fps-meter).  
+*   Verwenden [Sie das FPS-Diagramm,](#the-fps-chart) um eine Übersicht über FPS über die Dauer der Aufzeichnung zu erhalten.  
+*   Verwenden [Sie den Abschnitt Frames,](#the-frames-section) um die Dauer eines bestimmten Frames zu sehen.  
+*   Verwenden Sie **das #A0** für eine Echtzeitschätzung von FPS, während die Seite ausgeführt wird.  Navigieren Sie [mit dem FPS-Meter zu](#view-frames-per-second-in-realtime-with-the-fps-meter)Frames pro Sekunde in Echtzeit anzeigen.  
     
-#### Das fps-Diagramm  
+#### <a name="the-fps-chart"></a>Das #A0  
 
-Das **fps** -Diagramm bietet eine Übersicht über die Framerate für die Dauer einer Aufzeichnung.  Je höher die grüne Leiste, desto besser die Framerate.  
+Das **#A0** bietet eine Übersicht über die Framerate während der Dauer einer Aufzeichnung.  Im Allgemeinen gilt: Je höher der grüne Balken, desto besser ist die Framerate.  
 
-Eine rote Leiste oberhalb des **fps** -Diagramms ist eine Warnung, dass die Framerate so gering war, dass Sie möglicherweise die Benutzererfahrung beeinträchtigte.  
+Ein roter Balken über dem **#A0** ist eine Warnung, dass die Framerate so niedrig gefallen ist, dass sie wahrscheinlich die Benutzererfahrung geschädigt hat.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-fps-highlight.msft.png" alt-text="Das fps-Diagramm" lightbox="../media/evaluate-performance-performance-fps-highlight.msft.png":::
-   Das **fps** -Diagramm  
+:::image type="complex" source="../media/evaluate-performance-performance-fps-highlight.msft.png" alt-text="Das #A0" lightbox="../media/evaluate-performance-performance-fps-highlight.msft.png":::
+   Das **#A0**  
 :::image-end:::  
 
-#### Der Abschnitt "Frames"  
+#### <a name="the-frames-section"></a>Der Abschnitt Frames  
 
-Im Abschnitt **Frames** erfahren Sie genau, wie lange ein bestimmter Frame aufgenommen wurde.  
+Im **Abschnitt Frames** erfahren Sie genau, wie lange ein bestimmter Frame ge dauern hat.  
 
-Zeigen Sie mit der Maus auf einen Frame, um eine QuickInfo mit weiteren Informationen dazu anzuzeigen.  
+Zeigen Sie auf einen Frame, um eine QuickInfo mit weiteren Informationen dazu zu sehen.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-frames-hover.msft.png" alt-text="Zeigen Sie mit der Maus auf einen Frame" lightbox="../media/evaluate-performance-performance-frames-hover.msft.png":::
-   Zeigen Sie mit der Maus auf einen Frame  
+:::image type="complex" source="../media/evaluate-performance-performance-frames-hover.msft.png" alt-text="Zeigen auf einen Frame" lightbox="../media/evaluate-performance-performance-frames-hover.msft.png":::
+   Zeigen auf einen Frame  
 :::image-end:::  
 
-Wählen Sie einen Frame aus, um weitere Informationen zum Frame auf der Registerkarte " **Zusammenfassung** " anzuzeigen.  DevTools konturiert den markierten Frame in blau.  
+Wählen Sie einen Frame aus, um weitere Informationen zum Frame im **Zusammenfassungsbereich anzeigen zu** können.  DevTools umreißt den ausgewählten Frame in Blau.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-frames-summary.msft.png" alt-text="Anzeigen eines Frames auf der Registerkarte Zusammenfassung" lightbox="../media/evaluate-performance-performance-frames-summary.msft.png":::
-   Anzeigen eines Frames auf der Registerkarte " **Zusammenfassung** "  
+:::image type="complex" source="../media/evaluate-performance-performance-frames-summary.msft.png" alt-text="Anzeigen eines Frames im Zusammenfassungsfenster" lightbox="../media/evaluate-performance-performance-frames-summary.msft.png":::
+   Anzeigen eines Frames im **Zusammenfassungsfenster**  
 :::image-end:::  
 
-### Anzeigen von Netzwerkanforderungen  
+### <a name="view-network-requests"></a>Anzeigen von Netzwerkanforderungen  
 
-Erweitern Sie den Abschnitt **Netzwerk** , um einen Wasserfall von Netzwerkanforderungen anzuzeigen, die während der Aufzeichnung aufgetreten sind.  
+Erweitern Sie den **Abschnitt Netzwerk,** um einen Wasserfall mit Netzwerkanforderungen zu sehen, die während der Aufzeichnung aufgetreten sind.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-network.msft.png" alt-text="Der Abschnitt Netzwerk" lightbox="../media/evaluate-performance-performance-network.msft.png":::
-   Der Abschnitt " **Netzwerk** "  
+:::image type="complex" source="../media/evaluate-performance-performance-network.msft.png" alt-text="Der Abschnitt "Netzwerk"" lightbox="../media/evaluate-performance-performance-network.msft.png":::
+   Der **Abschnitt "Netzwerk"**  
 :::image-end:::  
 
-Anforderungen werden wie folgt farblich gekennzeichnet:  
+Anforderungen sind wie folgt farblich codiert:  
 
-*   HTML: blau  
-*   CSS: lila  
-*   JS: gelb  
-*   Bilder: grün  
+*   HTML: Blau  
+*   CSS: Lila  
+*   JS: Gelb  
+*   Bilder: Grün  
     
-Wählen Sie auf der Registerkarte " **Zusammenfassung** " eine Anforderung aus, um weitere Informationen dazu anzuzeigen.  In der vorhergehenden Abbildung werden beispielsweise auf der Registerkarte **Zusammenfassung** Weitere Informationen zu der im Abschnitt **Netzwerk** ausgewählten blauen Anforderung angezeigt.  
+Wählen Sie eine Anforderung aus, um weitere Informationen dazu im **Zusammenfassungsfenster anzeigen** zu können.  In der vorherigen Abbildung **** zeigt der Zusammenfassungsbereich beispielsweise weitere Informationen zur blauen Anforderung an, die im Abschnitt **Netzwerk ausgewählt** ist.  
 
-Ein dunkelblaues Quadrat in der oberen linken Ecke einer Anforderung bedeutet, dass es sich um eine Anforderung mit höherer Priorität handelt.  Ein helleres blaues Quadrat bedeutet niedrigere Priorität.  In der vorhergehenden Abbildung ist beispielsweise die blaue, ausgewählte Anforderung eine höhere Priorität, und die grüne darunter hat eine niedrigere Priorität.  
+Ein dunkelblaues Quadrat oben links einer Anforderung bedeutet, dass es sich um eine Anforderung mit höherer Priorität handelt.  Ein heller-blaues Quadrat bedeutet niedrigere Priorität.  In der vorherigen Abbildung hat die blaue, ausgewählte Anforderung beispielsweise eine höhere Priorität, und die grüne Anforderung darunter hat eine niedrigere Priorität.  
 
-In der ersten der folgenden Zahlen wird die Anforderung für `www.bing.com` durch eine Zeile auf der linken Seite, eine Leiste in der Mitte mit einem dunklen Teil und einem hellen Teil sowie eine Zeile auf der rechten Seite dargestellt.  In der zweiten der folgenden Abbildungen wird die entsprechende Darstellung der gleichen Anforderung auf der Registerkarte **Anzeige** Dauer im **Netzwerk** Fenster angezeigt.  Hier sehen Sie, wie diese beiden Darstellungen einander zugeordnet sind:
+In der 1. der folgenden Abbildungen wird die Anforderung durch eine Linie auf der linken Seite, eine Leiste in der Mitte mit einem dunklen Und einem hellen Teil und einer Linie auf der rechten Seite `www.bing.com` dargestellt.  Im 2. der folgenden Abbildungen ist die entsprechende Darstellung derselben Anforderung im **Zeitfenster** des **Netzwerktools** angezeigt.  So ordnen sich diese beiden Darstellungen zu:
 
-*   Die linke Zeile ist alles bis zur `Connection Start` Gruppe von Ereignissen inklusive.  Mit anderen Worten: Es ist alles vor `Request Sent` , exklusiv.  
-*   Der helle Bereich der Leiste ist `Request Sent` und `Waiting (TTFB)` .  
+*   Die linke Linie ist alles bis zur `Connection Start` Gruppe von Ereignissen, einschließlich.  Mit anderen Worten, es ist alles vor `Request Sent` , exklusiv.  
+*   Der helle Teil der Leiste ist `Request Sent` und `Waiting (TTFB)` .  
 *   Der dunkle Teil der Leiste ist `Content Download` .  
-*   Die richtige Zeile ist im Wesentlichen die Zeit, die auf den Hauptthread wartet.  Diese wird auf der Registerkarte **Anzeige** Dauer nicht dargestellt.  
+*   Die rechte Linie ist im Wesentlichen eine Zeit, die auf das Warten auf den Hauptthread wartet.  Dies wird im **Zeitsteuerungsfenster nicht** dargestellt.  
     
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/evaluate-performance-bing-performance-network.msft.png" alt-text="Die Zeile-Balken-Darstellung der www.Bing.com-Anforderung" lightbox="../media/evaluate-performance-bing-performance-network.msft.png":::
-         Die Zeile-Balken-Darstellung der `www.bing.com` Anforderung  
+      :::image type="complex" source="../media/evaluate-performance-bing-performance-network.msft.png" alt-text="Die Zeilenleistendarstellung der www.bing.com Anforderung" lightbox="../media/evaluate-performance-bing-performance-network.msft.png":::
+         Die Zeilenleistendarstellung der `www.bing.com` Anforderung  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
       :::image type="complex" source="../media/evaluate-performance-bing-network-timing.msft.png" alt-text="Das Netzwerktool" lightbox="../media/evaluate-performance-bing-network-timing.msft.png":::
-         Das **Netzwerk** Tool  
-::: Image-End:::  
+         Das **Netzwerktool**  
+: ::image-end:::  
    :::column-end:::
 :::row-end:::
 
-### Anzeigen von Speicher Metriken  
+### <a name="view-memory-metrics"></a>Anzeigen von Speichermetriken  
 
-Aktivieren Sie das Kontrollkästchen **Speicher** , um Speicher Metriken aus der letzten Aufzeichnung anzuzeigen.  
+Aktivieren Sie das **Kontrollkästchen Speicher,** um Speichermetriken aus der letzten Aufzeichnung anzuzeigen.  
 
 :::image type="complex" source="../media/evaluate-performance-performance-memory-highlight.msft.png" alt-text="Das Kontrollkästchen Speicher" lightbox="../media/evaluate-performance-performance-memory-highlight.msft.png":::
-   Das Kontrollkästchen " **Speicher** "  
+   Das **Kontrollkästchen Speicher**  
 :::image-end:::  
 
-DevTools zeigt ein neues **Speicher** Diagramm über der Registerkarte " **Zusammenfassung** " an.  Es gibt auch ein neues Diagramm unter dem **Netz** Diagramm, das als **Heap**bezeichnet wird.  Das **Heap** Diagramm bietet dieselben Informationen wie die **js-heaplinie** im **Speicher** Diagramm.  
+DevTools zeigt ein neues **Arbeitsspeicherdiagramm** über dem **Zusammenfassungsfenster** an.  Es gibt auch ein neues Diagramm unterhalb des **NET-Diagramms** mit dem Namen **HEAP**.  Das **HEAP-Diagramm** enthält die gleichen Informationen wie die **JS-Heap-Zeile** im **Arbeitsspeicherdiagramm.**  
 
-:::image type="complex" source="../media/evaluate-performance-performance-memory-chart.msft.png" alt-text="Speicher Metriken" lightbox="../media/evaluate-performance-performance-memory-chart.msft.png":::
-   Speicher Metriken  
+:::image type="complex" source="../media/evaluate-performance-performance-memory-chart.msft.png" alt-text="Speichermetriken" lightbox="../media/evaluate-performance-performance-memory-chart.msft.png":::
+   Speichermetriken  
 :::image-end:::  
 
-Die farbigen Linien auf dem Diagramm werden den farbigen Kontrollkästchen oberhalb des Diagramms zugeordnet.  
-Deaktivieren Sie ein Kontrollkästchen, um diese Kategorie aus dem Diagramm auszublenden.  
+Die farbigen Linien im Diagramm werden den farbigen Kontrollkästchen oberhalb des Diagramms angezeigt.  
+Deaktivieren Sie ein Kontrollkästchen, um diese Kategorie im Diagramm auszublenden.  
 
-Das Diagramm zeigt nur den Bereich der Aufzeichnung an, der aktuell markiert ist.  In der vorhergehenden Abbildung zeigt das **Speicher** Diagramm beispielsweise nur die Speicherauslastung von der 400 MS-Marke bis zum 1750 MS Mark.  
+Das Diagramm zeigt nur den Bereich der aktuell ausgewählten Aufzeichnung an.  In der vorherigen Abbildung **** zeigt das Diagramm Arbeitsspeicher beispielsweise nur die Speicherauslastung zwischen 400 ms und 1750 ms an.  
 
-### Anzeigen der Dauer eines Teils einer Aufzeichnung  
+### <a name="view-the-duration-of-a-portion-of-a-recording"></a>Anzeigen der Dauer eines Teils einer Aufzeichnung  
 
-Wenn Sie einen Abschnitt wie " **Netzwerk** " oder " **Main**" analysieren, benötigen Sie manchmal eine genauere Einschätzung, wie lange bestimmte Ereignisse dauerte.  Halten `Shift` , wählen und halten, und ziehen Sie nach links oder rechts, um einen Teil der Aufzeichnung auszuwählen.  Am unteren Rand Ihrer Auswahl zeigt devtools an, wie lange dieser Teil dauerte.  
+Bei der Analyse eines Abschnitts wie **"Netzwerk"** oder **"Main"** benötigen Sie manchmal eine genauere Schätzung der Dauer bestimmter Ereignisse.  Halten, auswählen und halten Sie, und ziehen Sie nach links oder rechts, um `Shift` einen Teil der Aufzeichnung auszuwählen.  Am unteren Rand Ihrer Auswahl zeigt DevTools, wie lange dieser Teil ge dauern hat.  
 
 :::image type="complex" source="../media/evaluate-performance-performance-main-duration.msft.png" alt-text="Anzeigen der Dauer eines Teils einer Aufzeichnung" lightbox="../media/evaluate-performance-performance-main-duration.msft.png":::
    Anzeigen der Dauer eines Teils einer Aufzeichnung  
 :::image-end:::  
 
-### Anzeigen eines Screenshots  
+### <a name="view-a-screenshot"></a>Screenshot anzeigen  
 
-Navigieren Sie zu [Capture Screenshots während der Aufzeichnung](#capture-screenshots-while-recording) , um zu erfahren, wie Screenshots aktiviert werden.  
+Navigieren Sie während der Aufzeichnung zu Screenshots [aufnehmen,](#capture-screenshots-while-recording) um zu erfahren, wie Sie Screenshots aktivieren.  
 
-Zeigen Sie mit der Maus auf die **Übersicht** , um einen Screenshot zu sehen, wie die Seite während dieses Moments der Aufzeichnung aussah.  Die **Übersicht** ist der Abschnitt mit den Diagrammen **CPU**, **fps**und **net** .  
+Zeigen Sie auf **die Übersicht,** um einen Screenshot zu sehen, wie die Seite in diesem Moment der Aufzeichnung aussah.  Der **Abschnitt Übersicht** enthält die Diagramme **CPU,** **FPS**und **NET.**  
 
-:::image type="complex" source="../media/evaluate-performance-performance-screenshots-hover.msft.png" alt-text="Anzeigen eines Screenshots" lightbox="../media/evaluate-performance-performance-screenshots-hover.msft.png":::
-   Anzeigen eines Screenshots  
+:::image type="complex" source="../media/evaluate-performance-performance-screenshots-hover.msft.png" alt-text="Screenshot anzeigen" lightbox="../media/evaluate-performance-performance-screenshots-hover.msft.png":::
+   Screenshot anzeigen  
 :::image-end:::  
 
-Sie können Screenshots auch anzeigen, indem Sie im Abschnitt **Frames** einen Frame auswählen.  DevTools zeigt eine kleine Version des Screenshots auf der Registerkarte " **Zusammenfassung** " an.  
+Sie können auch Screenshots anzeigen, indem Sie im Abschnitt Frames einen **Frame** auswählen.  DevTools zeigt eine kleine Version des Screenshots im **Zusammenfassungsbereich** an.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-summary-preview.msft.png" alt-text="Anzeigen eines Screenshots auf der Registerkarte Zusammenfassung" lightbox="../media/evaluate-performance-performance-summary-preview.msft.png":::
-   Anzeigen eines Screenshots auf der Registerkarte " **Zusammenfassung** "  
+:::image type="complex" source="../media/evaluate-performance-performance-summary-preview.msft.png" alt-text="Anzeigen eines Screenshots im Zusammenfassungsfenster" lightbox="../media/evaluate-performance-performance-summary-preview.msft.png":::
+   Anzeigen eines Screenshots im **Zusammenfassungsfenster**  
 :::image-end:::  
 
-Wählen Sie die Miniaturansicht auf der Registerkarte " **Zusammenfassung** " aus, um den Screenshot zu vergrößern.  
+Wählen Sie die Miniaturansicht im **Zusammenfassungsfenster aus,** um den Screenshot zu vergrößern.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-summary-preview-select.msft.png" alt-text="Vergrößern eines Screenshots über die Registerkarte Zusammenfassung" lightbox="../media/evaluate-performance-performance-summary-preview-select.msft.png":::
-   Vergrößern eines Screenshots über die Registerkarte " **Zusammenfassung** "  
+:::image type="complex" source="../media/evaluate-performance-performance-summary-preview-select.msft.png" alt-text="Vergrößern eines Screenshots aus dem Zusammenfassungsfenster" lightbox="../media/evaluate-performance-performance-summary-preview-select.msft.png":::
+   Vergrößern eines Screenshots aus dem **Zusammenfassungsfenster**  
 :::image-end:::  
 
-### Informationen zu Layern anzeigen  
+### <a name="view-layers-information"></a>Anzeigen von Layerinformationen  
 
-So zeigen Sie erweiterte Folieninformationen zu einem Frame an:  
+So zeigen Sie erweiterte Layerinformationen zu einem Frame an:  
 
-1.  [Aktivieren der erweiterten Farb Instrumentation](#turn-on-advanced-paint-instrumentation)  
-1.  Wählen Sie im Abschnitt **Frames** einen Frame aus.  DevTools zeigt Informationen zu den Ebenen auf der Registerkarte "neue **Ebenen** " neben der Registerkarte " **Ereignisprotokoll** " an.  
+1.  [Aktivieren Sie die erweiterte Malinstrumentierung.](#turn-on-advanced-paint-instrumentation)  
+1.  Wählen Sie im Abschnitt **Frames einen Frame** aus.  DevTools zeigt Informationen zu den Ebenen im neuen **Ebenenbereich** neben dem **Ereignisprotokollbereich** an.  
     
     :::image type="complex" source="../media/evaluate-performance-layers-all.msft.png" alt-text="Der Bereich Ebenen" lightbox="../media/evaluate-performance-layers-all.msft.png":::
-       Der Bereich " **Ebenen** "  
+       Der **Bereich Ebenen**  
     :::image-end:::  
     
-Zeigen Sie mit der Maus auf eine Ebene, um Sie im Diagramm hervorzuheben.  
+Zeigen Sie auf eine Ebene, um sie im Diagramm zu markieren.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-frames-document-nav-bar-highlighted.msft.png" alt-text="Markieren eines Layers" lightbox="../media/evaluate-performance-performance-frames-document-nav-bar-highlighted.msft.png":::
-   Markieren eines Layers  
+:::image type="complex" source="../media/evaluate-performance-performance-frames-document-nav-bar-highlighted.msft.png" alt-text="Hervorheben einer Ebene" lightbox="../media/evaluate-performance-performance-frames-document-nav-bar-highlighted.msft.png":::
+   Hervorheben einer Ebene  
 :::image-end:::  
 
 So verschieben Sie das Diagramm:  
 
-*   Wählen Sie **Schwenkmodus** \ ( ![ Schwenkmodus ][ImagePanModeIcon] \) aus, um entlang der X-und Y-Achse zu navigieren.  
-*   Wählen Sie **Rotationsmodus** \ ( ![ Rotate Mode ][ImageRotateModeIcon] \) aus, um sich entlang der Z-Achse zu drehen.  
-*   Wählen Sie **Transform zurück** setzen \ ( ![ Transform zurücksetzen ][ImageResetTransformIcon] \) aus, um das Diagramm auf die ursprüngliche Position zurückzusetzen.  
+*   Wählen **Sie Schwenkmodus** \( ![ Schwenkmodus ][ImagePanModeIcon] \), um sich entlang der X- und Y-Achsen zu bewegen.  
+*   Wählen **Sie Drehmodus** \( ![ Drehmodus ][ImageRotateModeIcon] \) aus, um sich entlang der Z-Achse zu drehen.  
+*   Wählen **Sie Transform zurücksetzen** \( Transform zurücksetzen ![ ][ImageResetTransformIcon] \), um das Diagramm an die ursprüngliche Position zurückzusetzen.  
     
-### Anzeigen des Paint-Profilers  
+### <a name="view-paint-profiler"></a>Anzeigen von Farbprofiler  
 
 So zeigen Sie erweiterte Informationen zu einem Paint-Ereignis an:  
 
 1.  [Aktivieren Sie](#turn-on-advanced-paint-instrumentation).  
-1.  Wählen Sie im **Haupt** Abschnitt ein **Paint** -Ereignis aus.  
+1.  Wählen Sie im **Abschnitt** Main ein **Paint-Ereignis** aus.  
     
-    :::image type="complex" source="../media/evaluate-performance-paint-profiler.msft.png" alt-text="Die Registerkarte Paint-Profiler" lightbox="../media/evaluate-performance-paint-profiler.msft.png":::
-       Die Registerkarte " **Paint-Profiler** "  
+    :::image type="complex" source="../media/evaluate-performance-paint-profiler.msft.png" alt-text="Der Bereich "Paint Profiler"" lightbox="../media/evaluate-performance-paint-profiler.msft.png":::
+       Der **Bereich "Paint Profiler"**  
     :::image-end:::  
     
-## Analysieren der Renderingleistung mit der Registerkarte "Rendern"  
+## <a name="analyze-rendering-performance-with-the-rendering-tool"></a>Analysieren der Renderingleistung mit dem Renderingtool  
 
-Verwenden Sie die Features der Registerkarte " **Rendern** ", um die Renderingleistung Ihrer Seite zu visualisieren.  
+Verwenden Sie die **** Features des Renderingbereichs, um die Renderingleistung Ihrer Seite zu visualisieren.  
 
-So öffnen Sie die Registerkarte " **Rendering** ":  
+So öffnen Sie das **Renderingtool:**  
 
-1.  [Öffnen des Befehlsmenüs][DevToolsCommandMenu]  
-1.  Beginnen `Rendering` Sie mit der Eingabe, und wählen Sie aus `Show Rendering` .  DevTools zeigt die Registerkarte " **Rendering** " am unteren Rand des devtools-Fensters an.  
+1.  [Öffnen Sie das Befehlsmenü][DevToolsCommandMenu].  
+1.  Beginnen Sie mit der `Rendering` Eingabe und wählen Sie `Show Rendering` aus.  DevTools zeigt das **Renderingtool** am unteren Rand des DevTools-Fensters an.  
     
-    :::image type="complex" source="../media/evaluate-performance-console-drawer-rendering.msft.png" alt-text="Die Registerkarte Rendern" lightbox="../media/evaluate-performance-console-drawer-rendering.msft.png":::
-       Die Registerkarte " **Rendern** "  
+    :::image type="complex" source="../media/evaluate-performance-console-drawer-rendering.msft.png" alt-text="Das Renderingtool" lightbox="../media/evaluate-performance-console-drawer-rendering.msft.png":::
+       Das **Renderingtool**  
     :::image-end:::  
     
-### Anzeigen von Frames pro Sekunde in Echtzeit mit dem fps-Messgerät  
+### <a name="view-frames-per-second-in-realtime-with-the-fps-meter"></a>Anzeigen von Frames pro Sekunde in Echtzeit mit dem #A0  
 
-Das **fps-Messgerät** ist ein Overlay, das in der oberen rechten Ecke des Viewports angezeigt wird.  Bei der Ausführung der Seite wird eine Echtzeit-Schätzung von fps bereitgestellt.  So öffnen Sie das **fps-Messgerät**:  
+Die **#A0 ist** eine Überlagerung, die in der oberen rechten Ecke Des Viewports angezeigt wird.  Es bietet eine Echtzeitschätzung von FPS, während die Seite ausgeführt wird.  So öffnen Sie das **FPS-Zähler:**  
 
-1.  Öffnen Sie die Registerkarte **Rendering** .  Na [Analysieren Sie die Renderingleistung mit der Registerkarte "Rendering"](#analyze-rendering-performance-with-the-rendering-tab).  
-1.  Aktivieren Sie das Kontrollkästchen **FPS-Meter** .  
+1.  Öffnen Sie das **Renderingtool.**  [Analysieren Sie die Renderingleistung mit dem Renderingtool](#analyze-rendering-performance-with-the-rendering-tool).  
+1.  Aktivieren Sie das **Kontrollkästchen FPS Meter.**  
     
-    :::image type="complex" source="../media/evaluate-performance-jank-console-rendering-frame-rate.msft.png" alt-text="Das fps-Messgerät" lightbox="../media/evaluate-performance-jank-console-rendering-frame-rate.msft.png":::
-       Das **fps-Messgerät**  
+    :::image type="complex" source="../media/evaluate-performance-jank-console-rendering-frame-rate.msft.png" alt-text="Das #A0" lightbox="../media/evaluate-performance-jank-console-rendering-frame-rate.msft.png":::
+       Das **#A0**  
     :::image-end:::  
     
-### Anzeigen von Zeichnungs Ereignissen in Echtzeit mit Farb blinken  
+### <a name="view-painting-events-in-realtime-with-paint-flashing"></a>Anzeigen von Malereignissen in Echtzeit mit Paint Flashing  
 
-Verwenden Sie das Farb blinken, um eine Echtzeitansicht aller Paint-Ereignisse auf der Seite zu erhalten.  Jedes Mal, wenn ein Teil der Seite neu gestrichen wird, wird der Abschnitt in devtools in grün umrissen.  
+Verwenden Sie Paint Flashing, um eine Echtzeitansicht aller Malereignisse auf der Seite zu erhalten.  Jedes Mal, wenn ein Teil der Seite neu angestrichen wird, umreißt DevTools diesen Abschnitt grün.  
 
-Führen Sie die folgenden Aktionen aus, um die Farb Blinkfunktion zu aktivieren.  
+Führen Sie die folgenden Aktionen aus, um das Blinken von Farben zu aktivieren.  
 
-1.  Öffnen Sie die Registerkarte **Rendering** .  Navigieren Sie zur [Analyse der Renderingleistung mithilfe der Registerkarte Rendern](#analyze-rendering-performance-with-the-rendering-tab).  
-1.  Aktivieren Sie das Kontrollkästchen **Farbe blinkt** .  
+1.  Öffnen Sie das **Renderingtool.**  Navigieren Sie zu [Renderleistung mit dem Renderingtool analysieren.](#analyze-rendering-performance-with-the-rendering-tool)  
+1.  Aktivieren Sie das **Kontrollkästchen Farbenblitzen.**  
     
-    :::image type="complex" source="../media/evaluate-performance-jank-console-rendering-paint-flashing.msft.png" alt-text="Malen blinkt" lightbox="../media/evaluate-performance-jank-console-rendering-paint-flashing.msft.png":::
-       **Malen blinkt**  
+    :::image type="complex" source="../media/evaluate-performance-jank-console-rendering-paint-flashing.msft.png" alt-text="Blinken von Farben" lightbox="../media/evaluate-performance-jank-console-rendering-paint-flashing.msft.png":::
+       **Blinken von Farben**  
     :::image-end:::  
     
-### Anzeigen einer Überlagerung von Ebenen mit Ebenen Rändern  
+### <a name="view-an-overlay-of-layers-with-layer-borders"></a>Anzeigen einer Überlagerung von Ebenen mit Ebenenrändern  
 
-Verwenden Sie **Layer-Rahmen** , um eine Überlagerung von Layer-Rändern und Kacheln oben auf der Seite anzuzeigen.  
+Verwenden **Sie Ebenenränder,** um eine Überlagerung von Ebenenrändern und Kacheln oben auf der Seite zu sehen.  
 
-Führen Sie die folgenden Aktionen aus, um die Layer-Rahmen zu aktivieren:  
+Führen Sie zum Aktivieren von Ebenenrändern die folgenden Aktionen aus:  
 
-1.  Öffnen Sie die Registerkarte **Rendering** .  Navigieren Sie zur [Analyse der Renderingleistung mithilfe der Registerkarte Rendern](#analyze-rendering-performance-with-the-rendering-tab).  
-1.  Aktivieren Sie das Kontrollkästchen **Layer-Rahmen** .  
+1.  Öffnen Sie das **Renderingtool.**  Navigieren Sie zu [Renderleistung mit dem Renderingtool analysieren.](#analyze-rendering-performance-with-the-rendering-tool)  
+1.  Aktivieren Sie das **Kontrollkästchen Ebenenränder.**  
     
-    :::image type="complex" source="../media/evaluate-performance-devtools-console-rendering-layer-borders.msft.png" alt-text="Folienrahmen" lightbox="../media/evaluate-performance-devtools-console-rendering-layer-borders.msft.png":::
-       **Folienrahmen**  
+    :::image type="complex" source="../media/evaluate-performance-devtools-console-rendering-layer-borders.msft.png" alt-text="Ebenenränder" lightbox="../media/evaluate-performance-devtools-console-rendering-layer-borders.msft.png":::
+       **Ebenenränder**  
     :::image-end:::  
     
-Navigieren Sie zu den Kommentaren in [debug_colors. CC][ChromiumDebugColors] , um eine Erläuterung der Farbcodierungen anzuzeigen.  
+Navigieren Sie zu den Kommentaren in [debug_colors.cc,][ChromiumDebugColors] um eine Erläuterung der Farbcodierungen zu erhalten.  
 
-### Suchen von Scroll-Leistungsproblemen in Echtzeit  
+### <a name="find-scroll-performance-issues-in-realtime"></a>Suchen von Problemen mit der Bildlaufleistung in Echtzeit  
 
-Verwenden Sie Leistungsprobleme beim Scrollen, um Elemente der Seite zu identifizieren, die Ereignislistener in Bezug auf den Bildlauf aufweisen, die die Leistung der Seite beeinträchtigen können.  
-DevTools beschreibt die potenziell problematischen Elemente in Teal.  
+Verwenden Sie Bildlaufleistungsprobleme, um Elemente der Seite zu identifizieren, die Ereignislistener im Zusammenhang mit einem Bildlauf haben, die die Leistung der Seite beeinträchtigen können.  
+DevTools skizziert die potenziell problematischen Elemente in Teal.  
 
-Führen Sie die folgenden Aktionen aus, um Probleme mit der Bildlaufleistung anzuzeigen. 
+Führen Sie die folgenden Aktionen aus, um Probleme mit der Bildlaufleistung zu sehen. 
 
-1.  Öffnen Sie die Registerkarte **Rendering** .  Navigieren Sie zur [Analyse der Renderingleistung mithilfe der Registerkarte Rendern](#analyze-rendering-performance-with-the-rendering-tab).  
-1.  Aktivieren Sie das Kontrollkästchen **Bild Lauf Leistungsprobleme** .  
+1.  Öffnen Sie das **Renderingtool.**  Navigieren Sie zu [Renderleistung mit dem Renderingtool analysieren.](#analyze-rendering-performance-with-the-rendering-tool)  
+1.  Aktivieren Sie das **Kontrollkästchen Leistungsprobleme** beim Bildlauf.  
     
-    :::image type="complex" source="../media/evaluate-performance-bing-console-drawer-rendering-scrolling-performance-issues.msft.png" alt-text="Probleme mit der Bildlaufleistung deuten darauf hin, dass nicht-Layer-Viewport-abhängige Objekte die Bildlaufleistung beeinträchtigen können." lightbox="../media/evaluate-performance-bing-console-drawer-rendering-scrolling-performance-issues.msft.png":::
-       **Probleme mit der Bildlaufleistung** deuten darauf hin, dass nicht-Layer-Viewport-abhängige Objekte die Bildlaufleistung beeinträchtigen können.  
+    :::image type="complex" source="../media/evaluate-performance-bing-console-drawer-rendering-scrolling-performance-issues.msft.png" alt-text="Scrolling Performance Issues gibt an, dass objekte, die nicht mit viewport eingeschränkt sind, die Bildlaufleistung beeinträchtigen können." lightbox="../media/evaluate-performance-bing-console-drawer-rendering-scrolling-performance-issues.msft.png":::
+       **Scrolling Performance Issues** gibt an, dass objekte, die nicht mit viewport eingeschränkt sind, die Bildlaufleistung beeinträchtigen können.  
     :::image-end:::  
     
-## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -592,17 +592,17 @@ Führen Sie die folgenden Aktionen aus, um Probleme mit der Bildlaufleistung anz
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chrom)-Entwicklertools | Microsoft docs"  
-[DevToolsCommandMenu]: ../command-menu/index.md#open-the-command-menu "Öffnen des Befehlsmenüs – Ausführen von Befehlen mit dem Befehlsmenü von Microsoft Edge devtools | Microsoft docs"  
-[DevtoolsEvaluatePerformanceGettingStarted]: ./index.md "Erste Schritte mit der Analyse der Laufzeitleistung | Microsoft docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Entwicklertools | Microsoft Docs"  
+[DevToolsCommandMenu]: ../command-menu/index.md#open-the-command-menu "Öffnen Sie das Befehlsmenü - Befehle ausführen mit dem Microsoft Edge DevTools-Befehlsmenü | Microsoft Docs"  
+[DevtoolsEvaluatePerformanceGettingStarted]: ./index.md "Erste Schritte mit der Analyse der Laufzeitleistung | Microsoft Docs"  
 
-[ActivityTabsDemo]: https://microsoft-edge-chromium-devtools.glitch.me/perf/activitytabs.html "Demo für Aktivitäts Registerkarten | Glitch"  
+[ActivityTabsDemo]: https://microsoft-edge-chromium-devtools.glitch.me/perf/activitytabs.html "Aktivitätsregisterkarten Demo | glitch"  
 
-[ChromiumDebugColors]: https://cs.chromium.org/chromium/src/cc/debug/debug_colors.cc "debug_colors. CC-Code Suche"  
+[ChromiumDebugColors]: https://cs.chromium.org/chromium/src/cc/debug/debug_colors.cc "debug_colors.cc – Codesuche"  
 
 > [!NOTE]
 > Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
-> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/reference) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
+> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/reference) und wird von [Kayce Basken][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) verfasst.  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  

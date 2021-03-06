@@ -1,18 +1,18 @@
 ---
-description: Aktivieren Sie "Inhalts Skripts als Bibliothekscode markieren" aus Einstellungen > Framework-Bibliothekscode.
+description: Aktivieren Sie "Markieren von Inhaltsskripts als Bibliothekscode" unter Einstellungen > Framework Library Code.
 title: Markieren von Inhaltsskripts als Bibliothekscode
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 2a9bca703004b6232bef857d7b9e2f45458db52d
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
+ms.openlocfilehash: ffc27cdd04ce28df888507fb2e1dc460d5bb4f21
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11124698"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398952"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,32 +28,32 @@ ms.locfileid: "11124698"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Markieren von Inhalts Skripts als Bibliothekscode  
+# <a name="mark-content-scripts-as-library-code"></a>Markieren von Inhaltsskripts als Bibliothekscode  
 
-Wenn Sie den Quellcode **-Panel von** Microsoft Edge devtools verwenden, um Code zu [durchlaufen][DevToolsJavascriptStepThroughCode], können Sie manchmal auf Code pausieren, den Sie nicht erkennen.  Wahrscheinlich haben Sie den Code für eine der installierten Microsoft-Edge-Erweiterungen angehalten.  Führen Sie die folgenden Schritte aus, um den Erweiterungscode nicht zu unterbrechen.  
+Wenn Sie den **Bereich Quellen** von Microsoft Edge DevTools [verwenden,][DevToolsJavascriptStepThroughCode]um Code zu durchschritten, unterbrechen Sie manchmal Code, den Sie nicht erkennen.  Wahrscheinlich haben Sie den Code für eine der installierten Microsoft Edge-Erweiterungen angehalten.  Führen Sie die folgenden Schritte aus, um den Erweiterungscode nicht anzuhalten.  
 
-1.  Öffnen Sie devtools, wählen Sie **anpassen und Steuer devtools** \ ( `...` \) aus, und wählen Sie **Einstellungen**aus.  Sie können die **Einstellungen** auch öffnen, indem Sie auswählen `F1` .  
+1.  Öffnen Sie DevTools, wählen **Sie Anpassen und Steuern von DevTools** \( `...` \) > Einstellungen **aus.**  Sie können einstellungen auch **öffnen,** indem Sie `F1` auswählen.  
 
-1.  Wählen Sie die Registerkarte " **Bibliothekscode** " aus, um den Abschnitt " **Framework Library Code** " von **Settings**zu öffnen.  
-1.  Aktivieren Sie das Kontrollkästchen **Inhalts Skripts als Bibliothekscode markieren** .  
+1.  Wählen Sie **den Codebereich Bibliothek** aus, der den **Abschnitt Frameworkbibliothekscode** unter **Einstellungen öffnet.**  
+1.  Aktivieren Sie das **Kontrollkästchen Inhaltsskripts als Bibliothekscode** markieren.  
     
-    :::image type="complex" source="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png" alt-text="Aktivieren des Kontrollkästchens &quot;Inhalts Skripts als Bibliothekscode markieren&quot;" lightbox="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png":::
-       Aktivieren des Kontrollkästchens " **Inhalts Skripts als Bibliothekscode markieren** "  
+    :::image type="complex" source="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png" alt-text="Aktivieren des Kontrollkästchens Inhaltsskripts als Bibliothekscode markieren" lightbox="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png":::
+       Aktivieren des **Kontrollkästchens Inhaltsskripts als Bibliothekscode** markieren  
     :::image-end:::  
     
-## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevToolsJavascriptStepThroughCode]: ../index.md#step-4-step-through-the-code "Schritt 4: schrittweise durch den Code – erste Schritte mit dem Debuggen von JavaScript in Microsoft Edge devtools | Microsoft docs"  
+[DevToolsJavascriptStepThroughCode]: ../index.md#step-4-step-through-the-code "Schritt 4: Schritt durch den Code – Erste Schritte mit dem Debuggen von JavaScript in Microsoft Edge DevTools | Microsoft Docs"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
-> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/javascript/guides/blackbox-chrome-extension-scripts) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
+> Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
+> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/javascript/guides/blackbox-chrome-extension-scripts) und wird von [Kayce Basken][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) verfasst.  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

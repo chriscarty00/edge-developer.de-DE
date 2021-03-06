@@ -1,65 +1,63 @@
 ---
-ms.assetid: f3560505-e01f-47e5-9ad6-7a419f060fc2
-description: Hier erfahren Sie, wie Sie Ihre Erweiterung verpacken.
-title: Erweiterungen – verpacken
+description: Erfahren Sie, wie Sie Ihre Erweiterung packen können.
+title: Erweiterungen – Verpacken
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge, Web-Entwicklung, HTML, CSS, JavaScript, Entwickler
-ms.date: 12/15/2020
+ms.assetid: f3560505-e01f-47e5-9ad6-7a419f060fc2
+keywords: edge, web development, html, css, javascript, developer
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 0ea4d6a4450d47d116164fd8481fdfb0f79bd30b
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 62c7858c38cf0c06e24c25938a885b10b391fd8f
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11234168"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398497"
 ---
-# Verpacken von Microsoft-Edge-Erweiterungen  
+# <a name="packaging-microsoft-edge-extensions"></a>Packen von Microsoft Edge-Erweiterungen  
 
 [!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-Sie haben also endlich ihre Erweiterung abgeschlossen und sind bereit, Sie zu verpacken. Sie Fragen sich vielleicht, was die nächsten Schritte sind, um diese in die Hände potenzieller Nutzer zu bringen. In diesem Leitfaden lernen Sie, wie Sie genau das tun.
+Sie haben also ihre Erweiterung abgeschlossen und sind bereit, sie zu packen. Möglicherweise fragen Sie sich, welche Schritte es als nächstes gibt, um dies potenziellen Benutzern zu ermöglichen. In diesem Leitfaden erfahren Sie, wie Sie genau dies tun.  
 
-Der Leitfaden für die Erweiterung der Verpackung ist umfassend, da er alles umfasst, was Sie über Verpackungen wissen möchten, und zwar selbst die feinkörnigen Details. Wenn Sie nicht alles wissen möchten, was Sie über das Verpacken Ihrer Erweiterung wissen sollten, haben Sie Glück. Wir haben die Unterstützung für Erweiterungen zu ManifoldJS hinzugefügt, einem Open-Source-Node.js-Tool, das die meisten ihrer Verpackungen verträgt.
-
-> [!NOTE]
-> Das Übermitteln einer Microsoft Edge-Erweiterung an den Microsoft Store ist derzeit eine eingeschränkte Funktion. Wenden Sie sich mit Ihren Anforderungen an den Microsoft Store an [uns](https://aka.ms/extension-request) , und wir werden Sie für ein zukünftiges Update in Erwägung ziehen.
-
-
-Verwenden Sie die nachstehende Prozess Gliederung, um Ihr Verpackungs Abenteuer zu kartieren!
-
-
-## [Erweiterungen im Windows Dev Center](./packaging/extensions-in-the-windows-dev-center.md)
-
-Unabhängig davon, welche Paket Erstellungs Route Sie manuell oder ManifoldJS auswählen, ist der erste Schritt die Registrierung für ein Windows-Entwicklerkonto und das Reservieren der Namen ihrer Erweiterung.
-
-Nachdem Sie diese Schritte ausgeführt haben, können Sie entweder mit dem [Erstellen und Testen von Erweiterungspaketen](./packaging/creating-and-testing-extension-packages.md) fortfahren, um zu erfahren, wie AppXs erstellt werden und ihre Erweiterung manuell Verpacken, oder die einfachere Route verwenden und zu [ManifoldJS zu Paketerweiterungen](./packaging/using-ManifoldJS-to-package-extensions.md)wechseln.
+Der Leitfaden für die Erweiterungspackung ist umfassend, da er alles umfasst, was Sie über das Verpacken wissen möchten, auch die feinesten, nüchtriensten Details. Wenn Sie nicht alles wissen möchten, was Sie über das Packen Ihrer Erweiterung wissen müssen, haben Sie Glück. Wir haben Unterstützung für Erweiterungen zu ManifoldJS hinzugefügt, einem Open Source-Node.js-Tool, das den Großteil Ihrer Verpackungs-Wehe wegnimmt.  
 
 > [!NOTE]
-> Nachdem Sie sich bei uns angemeldet haben und ihre Erweiterung im Microsoft Store genehmigt wurde, lesen Sie die Checkliste für die [App-Übermittlung](https://docs.microsoft.com/windows/uwp/publish/app-submissions).
+> Das Übermitteln einer Microsoft Edge-Erweiterung an den Microsoft Store ist derzeit eine eingeschränkte Funktion. [Kontaktieren Sie uns mit](https://developer.microsoft.com/en-us/microsoft-edge/extensions/requests) Ihren Anforderungen, Teil des Microsoft Store zu sein, und wir werden Sie für ein zukünftiges Update in Betracht ziehen.  
+
+Verwenden Sie die unten aufgeführte Prozessgliederung, um Ihr Packabenteuer zu zuordnungen.  
+
+## [<a name="extensions-in-the-windows-dev-center"></a>Erweiterungen im Windows Dev Center](./packaging/extensions-in-the-windows-dev-center.md)  
+
+Unabhängig davon, welche Paketerstellungsroute Sie auswählen, manuell oder ManifoldJS, besteht der erste Schritt in der Registrierung für ein Windows Developer-Konto und dem Reservieren der Namen Ihrer Erweiterung.  
+
+Nachdem Sie dies getan haben, können Sie entweder zu Erstellen und Testen von [Erweiterungspaketen](./packaging/creating-and-testing-extension-packages.md) wechseln, um zu erfahren, wie AppXs erstellt und manuell verpackt werden, oder sie können die einfachere Route gehen und zu [Verwenden von ManifoldJS to package extensions](./packaging/using-ManifoldJS-to-package-extensions.md)wechseln.  
+
+> [!NOTE]
+> Sobald Sie uns erreicht haben und ihre Erweiterung im Microsoft Store genehmigt haben, sehen Sie sich die Prüfliste für die [App-Übermittlung an.](https://docs.microsoft.com/windows/uwp/publish/app-submissions)  
 
 
-## [Erstellen und Testen von Erweiterungspaketen](./packaging/creating-and-testing-extension-packages.md)
+## [<a name="creating-and-testing-extension-packages"></a>Erstellen und Testen von Erweiterungspaketen](./packaging/creating-and-testing-extension-packages.md)  
 
-Dieser Abschnitt des Leitfadens durchläuft die Erstellung manueller Erweiterungen [, nachdem Sie Ihr Windows Developer-Konto eingerichtet und ihre Erweiterungsnamen reserviert haben](./packaging/extensions-in-the-windows-Dev-Center.md). Wenn Sie neugierig auf die feineren Details des Packens einer Erweiterung sind, lesen Sie diesen Artikel.
+In diesem Abschnitt des Handbuchs wird die manuelle Erstellung von Erweiterungspaketen erläutert, sobald Sie Ihr Windows Developer-Konto eingerichtet und Ihre [Durchwahlnamen reserviert haben.](./packaging/extensions-in-the-windows-Dev-Center.md) Wenn Sie auf die feineren Details des Verpackens einer Erweiterung gespannt sind, lesen Sie dies.  
 
-Darüber hinaus finden Sie Informationen dazu, wie Sie [eine verpackte Erweiterung testen und entpacken](./packaging/creating-and-testing-extension-packages.md#testing-an-appx-package)können. Diese Informationen sind auch dann relevant, wenn Sie die ManifoldJS-Verpackungs Route verlassen haben.
+Außerdem sind Informationen zum Testen und Entpacken einer verpackten [Erweiterung enthalten.](./packaging/creating-and-testing-extension-packages.md#testing-an-appx-package) Diese Informationen sind auch dann relevant, wenn Sie die ManifoldJS-Verpackungsroute gegangen sind.  
 
-## [Lokalisierung von Erweiterungspaketen](./packaging/localizing-extension-packages.md)
-Der Paket Lokalisierungs Schritt fällt zwischen dem Erstellen Ihrer appxmanifest.xml Datei und dem Ausführen des letzten Befehls zum Verpacken der Erweiterung.
-Auf diese Weise können Sie angeben, welche Sprachen Ihre Erweiterungen in Ihrem Microsoft Store-Eintrag unterstützen, und welche Sprache der Name der Erweiterung in Windows angezeigt wird.
+## [<a name="localizing-extension-packages"></a>Lokalisierung von Erweiterungspaketen](./packaging/localizing-extension-packages.md)  
 
-Sie können in diesem Abschnitt des Leitfadens zu [Localize-Name und Beschreibung für den Microsoft Store](./packaging/localizing-extension-packages.md#localizing-name-and-description-in-the-microsoft-store) springen, wenn Ihre Erweiterung nicht mehrere Sprachen unterstützt.
+Der Paketlokalisierungsschritt liegt zwischen dem Erstellen appxmanifest.xml datei und dem Ausführen des letzten Befehls zum Packen Der Erweiterung.  
+Auf diese Weise können Sie angeben, welche Sprachen Ihre Erweiterungen in Ihrem Microsoft Store-Eintrag unterstützen und welche Sprache der Name Ihrer Erweiterung in Windows angezeigt wird.  
 
-## [Verwenden von ManifoldJS zu Paketerweiterungen](./packaging/using-ManifoldJS-to-package-extensions.md)
+Sie können zu Name und Beschreibung für den [Microsoft Store](./packaging/localizing-extension-packages.md#localizing-name-and-description-in-the-microsoft-store) lokalisieren in diesem Abschnitt des Handbuchs wechseln, wenn Ihre Erweiterung nicht mehrere Sprachen unterstützt.  
 
-Die Tool-Route zum Verpacken Ihrer Erweiterung wird ManifoldJS ihre Erweiterung im Handumdrehen mit minimalem Aufwand für ihr Ende verpacken. Stellen Sie nach dem Ausfüllen einiger AppXManifest-Eigenschaften einige Windows/Microsoft Store-Ressourcen bereit, und ihre Erweiterung wird in kürzester Zeit verpackt.
+## [<a name="using-manifoldjs-to-package-extensions"></a>Verwenden von ManifoldJS zu Paketerweiterungen](./packaging/using-ManifoldJS-to-package-extensions.md)  
 
-Nachdem Sie Ihre Erweiterung gepackt haben, lesen Sie den Abschnitt [Testen](./packaging/creating-and-testing-extension-packages.md#testing-an-appx-package) zum Erstellen und Testen Ihrer Microsoft Edge-Erweiterung, um zu erfahren, wie Sie Sie querladen oder entpacken können.
+Die Toolroute zum Packen Ihrer Erweiterung, ManifoldJS, verpackt Ihre Erweiterung mit minimalem Aufwand am Ende. Stellen Sie nach dem Ausfüllen einiger AppXManifest-Eigenschaften einige Windows-/Microsoft Store-Ressourcen zur Verfügung, und Ihre Erweiterung wird in einem handfesten Paket verpackt.  
 
+Sobald Ihre Erweiterung gepackt [](./packaging/creating-and-testing-extension-packages.md#testing-an-appx-package) wurde, lesen Sie den Testabschnitt Erstellen und Testen Ihrer Microsoft Edge-Erweiterung, um zu erfahren, wie Sie sie querladen oder entpacken.  
 
-## [Ausführen des Zertifizierungskits für Windows-Apps](./packaging/running-the-windows-app-certification-kit.md)
+## [<a name="running-the-windows-app-certification-kit"></a>Ausführen des Zertifizierungskits für Windows-Apps](./packaging/running-the-windows-app-certification-kit.md)  
 
-Sobald Sie über eine verpackte Erweiterung verfügen, können Sie diese über das Windows-App-Zertifizierungs Kit ausführen. Auf diese Weise wird eine Reihe von Tests für Ihr Erweiterungspaket ausgeführt, um sicherzustellen, dass es für den Microsoft Store bereit ist.
+Sobald Sie über eine verpackte Erweiterung verfügen, können Sie sie über das Zertifizierungskit für Windows-Apps ausführen. Dadurch werden eine Reihe von Tests für Ihr Erweiterungspaket ausgeführt, um sicherzustellen, dass es für den Microsoft Store bereit ist.  

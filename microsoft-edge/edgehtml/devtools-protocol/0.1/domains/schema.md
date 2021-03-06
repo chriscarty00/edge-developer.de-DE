@@ -1,78 +1,52 @@
 ---
-description: DevTools Protocol Version 0,1 (EdgeHTML)-Referenz für die Schema Domäne. Enthält Informationen zum Protokollschema.
-title: Schema Domain-devtools Protocol Version 0,1 (EdgeHTML)
+description: DevTools Protocol Version 0.1 (EdgeHTML)-Referenz für die Schemadomäne. Stellt Informationen zum Protokollschema zur Verfügung.
+title: Schemadomäne – DevTools Protocol Version 0.1 (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.date: 11/03/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
-ms.date: 11/19/2020
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 7b4ec71b7799ae099c673bd81fa5b15a8ddd5d27
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: e89f4269b4984ee49e83a23fcab9679485c49040
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11234018"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398861"
 ---
-# Schema Domain-devtools Protocol Version 0,1 (EdgeHTML)  
+# <a name="schema-domain---devtools-protocol-version-01-edgehtml"></a>Schemadomäne – DevTools Protocol Version 0.1 (EdgeHTML)  
 
-Enthält Informationen zum Protokollschema.
+Stellt Informationen zum Protokollschema zur Verfügung.  
 
-| | |
-|-|-|
-| [**Methoden**](#methods) | [getdomains](#getdomains) |
-| [**Typen**](#types) | [Domäne](#domain) |
-## Methoden
+| Klassifizierung | Member |  
+|:--- |:--- |  
+| [Methoden](#methods) | [getDomains](#getdomains) |  
+| [Typen](#types) | [Domäne](#domain) |  
 
-### getdomains
-Gibt unterstützte Domänen zurück.
+## <a name="methods"></a>Methoden  
 
-<table>
-    <thead>
-        <tr>
-            <th>Gibt</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Domänen</td>
-            <td><a href="#domain"><code class="flyout">Domain[]</code></a></td>
-            <td>Liste der unterstützten Domänen.</td>
-        </tr>
-    </tbody>
-</table>
+### <a name="getdomains"></a>getDomains  
 
----
+Gibt unterstützte Domänen zurück.  
 
-## Typen
+| Gibt zurück | Typ | Details |  
+|:--- |:--- |:--- |  
+| domänen | [Domain[]](#domain) | Liste der unterstützten Domänen. |  
 
-### <a name="domain"></a> Domäne `object`
+---  
 
-Beschreibung der Protokoll Domäne.
+## <a name="types"></a>Typen  
 
-<table>
-    <thead>
-        <tr>
-            <th>Eigenschaften</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>name</td>
-            <td><code class="flyout">string</code></td>
-            <td>Domänenname.</td>
-        </tr>
-        <tr>
-            <td>version</td>
-            <td><code class="flyout">string</code></td>
-            <td>Domänen Version.</td>
-        </tr>
-    </tbody>
-</table>
+### <a name="domain-object"></a>Domänenobjekt  
 
----
+<a name="domain"></a>  
+
+Beschreibung der Protokolldomäne.  
+
+| Eigenschaften | Typ | Details |  
+|:--- |:--- |:--- |  
+| name | `string` | Domänenname. |  
+| version | `string` | Domänenversion. |  
+
+---  

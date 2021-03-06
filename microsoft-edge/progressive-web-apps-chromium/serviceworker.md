@@ -1,27 +1,27 @@
 ---
-title: Verwenden von Service Mitarbeitern zum Verwalten von Netzwerkanforderungen und Push-Benachrichtigungen
-description: Dienstmitarbeiter sind webarbeiter, die dazu beitragen, die Leistung zu verbessern, auf unterschiedliche Netzwerkbedingungen zu reagieren und die Konnektivität mit Ihrer Web-Anwendung zu erhöhen.
+title: Verwalten von Netzwerkanforderungen und Pushbenachrichtigungen mithilfe von Service Workers
+description: Service Workers sind Web Workers, die dazu beitragen, die Leistung zu verbessern, auf unterschiedliche Netzwerkbedingungen zu reagieren und die Konnektivität mit Ihrer Webanwendung zu erhöhen.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/15/2020
+ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: Progressive Web-Apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft Store
-ms.openlocfilehash: 9bf573b668ade351716b69965f653e05857c32ec
-ms.sourcegitcommit: d9cc829deb709b0866f6b43a5f4733682ddae5ca
+keywords: progressive Web-Apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft Store
+ms.openlocfilehash: 314acbbd5a2f423c274f92e815b2be4329ace9b8
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "10659300"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399134"
 ---
-# Verwenden von Service Mitarbeitern zum Verwalten von Netzwerkanforderungen und Push-Benachrichtigungen
+# <a name="use-service-workers-to-manage-network-requests-and-push-notifications"></a>Verwalten von Netzwerkanforderungen und Pushbenachrichtigungen mithilfe von Service Workers
 
-Dienstmitarbeiter sind eine spezielle Art von Web-Worker mit der Möglichkeit, mithilfe der API alle Netzwerkanforderungen abzufangen, zu ändern und auf Sie zu reagieren `Fetch` .  Dienstmitarbeiter können auf die `Cache` API und asynchrone clientseitige Datenspeicher zugreifen, beispielsweise `IndexedDB` zum Speichern von Ressourcen.  
+Service Workers sind ein spezieller Typ von Web Worker mit der Möglichkeit, alle Netzwerkanforderungen mithilfe der API abzufangen, zu ändern und auf diese zu `Fetch` reagieren.  Service Workers kann auf die API und asynchrone clientseitige Datenspeicher zugreifen, z. B. `Cache` , um Ressourcen zu `IndexedDB` speichern.  
 
-## Registrieren eines Dienst Mitarbeiters  
+## <a name="registering-a-service-worker"></a>Registrieren eines Dienstmitarbeiters  
 
-Ähnlich wie andere Web-Worker müssen Service Mitarbeiter in einer separaten Datei vorhanden sein. Sie verweisen auf diese Datei, wenn Sie den Dienstmitarbeiter registrieren, wie im folgenden Codeausschnitt dargestellt.  
+Ähnlich wie andere Web Workers müssen Service Workers in einer separaten Datei vorhanden sein. Sie verweisen bei der Registrierung des Service Worker auf diese Datei, wie im folgenden Codeausschnitt gezeigt.  
 
 ```javascript
 if ( "serviceWorker" in navigator ) {
@@ -29,14 +29,14 @@ if ( "serviceWorker" in navigator ) {
 }
 ```  
 
-Moderne Browser bieten unterschiedliche Supportstufen für Dienstmitarbeiter. Daher empfiehlt es sich, das vorhanden sein des Objekts zu testen, bevor ein `serviceWorker` Dienstmitarbeiter bezogener Code ausgeführt wird. Im obigen Codeausschnitt wird ein Dienstmitarbeiter mit der Datei registriert, die sich im `serviceworker.min.js` Stammverzeichnis der Website befindet. Stellen Sie sicher, dass die JavaScript-Datei, die ihren Dienstmitarbeiter definiert, im Verzeichnis der obersten Ebene vorhanden ist, das verwaltet werden soll \ (das als Bereich der Dienstmitarbeiter bezeichnet wird).  Im obigen Codeausschnitt wird die Datei im Stammverzeichnis gespeichert, und der Dienstmitarbeiter verwaltet alle Seiten in der Domäne. Wenn die Dienst Arbeitskraft Datei in einem Verzeichnis gespeichert wurde `js` , würde der Bereich des Dienst Arbeitsthreads das `js` Verzeichnis und alle Unterverzeichnisse sein.  Als bewährte Methode sollten Sie die Service Worker-Datei im Stammverzeichnis Ihrer Website platzieren, es sei denn, Sie müssen den Umfang ihrer Dienstmitarbeiter reduzieren.  
+Moderne Browser bieten unterschiedliche Unterstützungsebenen für Service Workers. Daher ist es eine bewährte Methode, das Vorhandensein des Objekts zu testen, bevor Sie service `serviceWorker` workerbezogenen Code ausführen. Im obigen Codeausschnitt wird ein Service Worker mithilfe der Datei registriert, die sich `serviceworker.min.js` im Stammverzeichnis der Website befindet. Stellen Sie sicher, dass die JavaScript-Datei, die Ihren Dienstarbeitsmitarbeiter definiert, in dem Verzeichnis auf höchster Ebene vorhanden ist, das sie verwalten soll \(das als Bereich des Dienstarbeitsmitarbeiters\ bezeichnet wird).  Im vorherigen Codeausschnitt wird die Datei im Stammverzeichnis gespeichert, und der Service Worker verwaltet alle Seiten in der Domäne. Wenn die Dienstarbeitsdatei in einem Verzeichnis gespeichert wurde, würde der Bereich des Dienstarbeitsmitarbeiters das Verzeichnis und `js` `js` alle Unterverzeichnisse sein.  Als bewährte Methode sollten Sie die Dienstarbeitsdatei im Stammverzeichnis Ihrer Website platzieren, es sei denn, Sie müssen den Umfang Ihres Dienstmitarbeiters reduzieren.  
 
-## Der Service Worker-Lebenszyklus  
+## <a name="the-service-worker-lifecycle"></a>Der Service Worker-Lebenszyklus  
 
-Der Lebenszyklus eines Dienstmitarbeiter besteht aus mehreren Schritten, wobei jeder Schritt ein Ereignis auslöst. Sie können diesen Ereignissen Listener hinzufügen, um Code auszuführen, um eine Aktion auszuführen. Die folgende Liste enthält eine allgemeine Übersicht über den Lebenszyklus und verwandte Ereignisse von Servicemitarbeitern. 
+Der Lebenszyklus eines Service Worker besteht aus mehreren Schritten, bei der jeder Schritt ein Ereignis auslöst. Sie können diesen Ereignissen Listener hinzufügen, um Code zum Ausführen einer Aktion ausführen zu können. Die folgende Liste enthält eine übersichtsbezogene Ansicht des Lebenszyklus und der zugehörigen Ereignisse von Servicemitarbeitern. 
 
-1. Registrieren Sie den Dienstmitarbeiter.  
-1.  Der Browser lädt die JavaScript-Datei herunter, installiert den Dienstmitarbeiter und löst das `install` Ereignis aus. Sie können das `install` Ereignis verwenden, um wichtige und langlebige Dateien, wie etwa CSS-Dateien, JavaScript-Dateien, Logo Bilder, Offlineseiten usw., auf Ihrer Website vorab zwischenzuspeichern.  
+1.  Registrieren Sie den Service Worker.  
+1.  Der Browser lädt die JavaScript-Datei herunter, installiert den Service Worker und löst das Ereignis `install` aus. Sie können das Ereignis verwenden, um wichtige und langlebige Dateien wie `install` CSS-Dateien, JavaScript-Dateien, Logobilder, Offlineseiten und so weiter von Ihrer Website vorab zwischenspeichern.  
     
     ```javascript
     self.addEventListener( "install", function( event ){
@@ -44,7 +44,7 @@ Der Lebenszyklus eines Dienstmitarbeiter besteht aus mehreren Schritten, wobei j
     });
     ```  
     
-1.  Der Dienstmitarbeiter wird aktiviert, wodurch das Ereignis ausgelöst wird `activate` .  Verwenden Sie dieses Ereignis, um veraltete Caches zu bereinigen.  
+1.  Der Dienstmitarbeiter wird aktiviert, wodurch das Ereignis ausgelöst `activate` wird.  Verwenden Sie dieses Ereignis, um veraltete Caches zu bereinigen.  
     
     ```javascript
     self.addEventListener( "activate", event => {
@@ -52,7 +52,7 @@ Der Lebenszyklus eines Dienstmitarbeiter besteht aus mehreren Schritten, wobei j
     });
     ```  
     
-1.  Der Dienstmitarbeiter kann ausgeführt werden, wenn die Seite aktualisiert wird, oder wenn der Benutzer zu einer neuen Seite auf der Website navigiert. Wenn Sie den Dienstmitarbeiter ohne Wartezeit ausführen möchten, verwenden Sie die `self.skipWaiting()` Methode während des `install` Ereignisses.  
+1.  Der Dienstmitarbeiter kann ausgeführt werden, wenn die Seite aktualisiert wird oder wenn der Benutzer zu einer neuen Seite auf der Website navigiert. Wenn Sie den Service Worker ohne Wartezeit ausführen möchten, verwenden Sie die `self.skipWaiting()` -Methode während des `install` Ereignisses.  
     
     ```javascript
     self.addEventListener( "install", event => {
@@ -61,11 +61,11 @@ Der Lebenszyklus eines Dienstmitarbeiter besteht aus mehreren Schritten, wobei j
     });
     ```
     
-1.  Der Dienstmitarbeiter wird nun ausgeführt.     
+1.  Der Dienstmitarbeiter wird jetzt ausgeführt.     
     
-## Verwenden von FETCH in Service Mitarbeitern  
+## <a name="using-fetch-in-service-workers"></a>Verwenden des Abrufs in Service Workers  
 
-Das Hauptereignis, das Sie in einem Dienstmitarbeiter verwenden, ist das `fetch` Ereignis.  Das `fetch` Ereignis wird jedes Mal ausgeführt, wenn der Browser versucht, auf Inhalte im Bereich der Dienstmitarbeiter zuzugreifen. Der folgende Codeausschnitt zeigt, wie dem FETCH-Ereignis ein Listener hinzugefügt wird.  
+Das Hauptereignis, das Sie in einem Service Worker verwenden, ist das `fetch` Ereignis.  Das Ereignis wird jedes Mal ausgeführt, wenn der Browser versucht, auf `fetch` Inhalte im Bereich des Service Workers zu zugreifen. Der folgende Codeausschnitt zeigt, wie Sie dem Fetch-Ereignis einen Listener hinzufügen.  
 
 ```javascript
 self.addEventListener( "fetch", event => {
@@ -73,28 +73,28 @@ self.addEventListener( "fetch", event => {
 });
 ```  
 
-Innerhalb des `fetch` Handlers können Sie steuern, ob eine Anforderung an das Netzwerk wechselt, aus dem Cache abgerufen wird usw.  Der von Ihnen verwendete Ansatz variiert je nach Art der angeforderten Ressource, wie häufig Sie aktualisiert wird, und der anderen Geschäftslogik, die für Ihre Anwendung eindeutig ist.  Hier sind einige Beispiele dafür, was Sie tun können:  
+Innerhalb des Handlers können Sie steuern, ob eine Anforderung an das Netzwerk geht, aus dem Cache zurückgeht `fetch` und so weiter.  Der von Ihnen verwendete Ansatz variiert je nach Art der angeforderten Ressource, der Anzahl der Aktualisierungen und der anderen geschäftsbezogenen Logik, die für Ihre Anwendung eindeutig ist.  Im Folgenden finden Sie einige Beispiele dafür, was Sie tun können:  
 
-*   Falls verfügbar, geben Sie eine Antwort aus dem Cache zurück, andernfalls Fallback, um die Ressource über das Netzwerk anzufordern.  
-*   Abrufen einer Ressource aus dem Netzwerk, Zwischenspeichern einer Kopie und Zurückgeben der Antwort.
+*   Wenn verfügbar, geben Sie eine Antwort aus dem Cache zurück, andernfalls fallback, um die Ressource über das Netzwerk an anforderung.  
+*   Rufen Sie eine Ressource aus dem Netzwerk ab, speichern Sie eine Kopie zwischen, und geben Sie die Antwort zurück.
 *   Zulassen, dass Benutzer eine Einstellung zum Speichern von Daten angeben. 
-*   Stellen Sie für bestimmte Bildanforderungen ein Platzhalterbild zur Verfügung.  
-*   Direktes Generieren einer Antwort im Dienstmitarbeiter.  
+*   Geben Sie ein Platzhalterbild für bestimmte Bildanforderungen an.  
+*   Generieren Sie eine Antwort direkt im Service Worker.  
+    
+## <a name="push-notifications"></a>Pushbenachrichtigungen  
 
-## Pushbenachrichtigungen  
+Servicemitarbeiter können Benachrichtigungen per Push an Benutzer senden. Pushbenachrichtigungen sind hilfreich, um Benutzer zum erneuten Interagieren mit Ihrer Anwendung nach einiger Zeit aufforderen. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise und Demo zu [Pushbenachrichtigungen.][AzurewebsitesWebpushdemo]  
 
-Dienstmitarbeiter können Benachrichtigungen an Benutzer senden. Push-Benachrichtigungen sind hilfreich, wenn Benutzer aufgefordert werden sollen, Ihre Anwendung nach Ablauf einiger Zeit erneut zu aktivieren. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise und Demo zu Push-Benachrichtigungen][AzurewebsitesWebpushdemo].  
+## <a name="see-also"></a>Weitere Informationen  
 
-## Weitere Informationen  
+Weitere Informationen zu Service Workers finden Sie in der folgenden Liste verwandter Themen.  
 
-Weitere Informationen zu Service Mitarbeitern finden Sie in der folgenden Liste verwandter Themen.  
-
-*   [Offline Arbeiten von PWAs mit Service Mitarbeitern][MDNPwasMakingOfflineServiceWorkers]  
-*   [So aktivieren Sie PWAs mit Benachrichtigungen und Push][MDNPwasMakeReengageablesingNotificationsPush]  
-
+*   [Offlinebetrieb von PWAs mit Servicemitarbeitern][MDNPwasMakingOfflineServiceWorkers]  
+*   [So können Sie PWAs mithilfe von Benachrichtigungen und Push wieder aktivieren][MDNPwasMakeReengageablesingNotificationsPush]  
+    
 <!-- links -->  
 
-[AzurewebsitesWebpushdemo]: https://webpushdemo.azurewebsites.net "Web-Push-Benachrichtigungen |  Microsoft Edge-Demos"  
+[AzurewebsitesWebpushdemo]: https://webpushdemo.azurewebsites.net "Web-Pushbenachrichtigungen |  Microsoft Edge Demos"  
 
-[MDNPwasMakingOfflineServiceWorkers]: https://developer.mozilla.org/docs/Web/Progressive_web_apps/Offline_Service_workers "Offline Arbeiten von PWAs mit Service Mitarbeitern – PWAs | MDN"  
-[MDNPwasMakeReengageablesingNotificationsPush]: https://developer.mozilla.org/docs/Web/Progressive_web_apps/Re-engageable_Notifications_Push "So aktivieren Sie PWAs mit Benachrichtigungen und Push-PWAs | MDN"  
+[MDNPwasMakingOfflineServiceWorkers]: https://developer.mozilla.org/docs/Web/Progressive_web_apps/Offline_Service_workers "Offlinebetrieb von PWAs mit Servicemitarbeitern – PWAs | MDN"  
+[MDNPwasMakeReengageablesingNotificationsPush]: https://developer.mozilla.org/docs/Web/Progressive_web_apps/Re-engageable_Notifications_Push "So können Sie PWAs mithilfe von Benachrichtigungen und Push wieder aktivieren – PWAs | MDN"  

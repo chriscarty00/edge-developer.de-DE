@@ -1,116 +1,116 @@
 ---
-description: Verwenden von webhint in Visual Studio-Code
-title: webhint vs-Code Erweiterung
+description: Verwenden von Webhint in Visual Studio Code
+title: webhint Visual Studio Codeerweiterung
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/07/2020
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web-Entwicklung, vs-Code, Visual Studio-Code, webhint
-ms.openlocfilehash: ec218fab8cbfb8181a0416c8e0eadc0e00412529
-ms.sourcegitcommit: c1b5fdd48d39d874a76c9b8f68309eb1b507fd0b
+keywords: microsoft edge, web development, vs code, visual studio code, webhint
+ms.openlocfilehash: 3dfd900bf818d02dbc8123c00e7928e56d9b6ade
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "10695859"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399274"
 ---
-# Webhint vs-Code Erweiterung  
+# <a name="webhint-vs-code-extension"></a>Webhint Vs Code Extension  
 
-Verwenden Sie [webhint][WebhintMain], ein anpassbares linting-Tool, um die Barrierefreiheit, die Leistung, die browserübergreifende Kompatibilität, die PWA-Kompatibilität und die Sicherheit Ihrer Website zu verbessern.  Sie überprüft Ihren Code auf bewährte Methoden und häufige Fehler. Dieses Open-Source-Projekt, das ursprünglich vom Microsoft Edge-Team entwickelt wurde, ist jetzt Teil der [OpenJS-Foundation][OpenjsFoundation].  Das Microsoft Edge-Team trägt weiterhin zu webhint neben Webentwicklern in der Community bei.  
+Verwenden [Sie Webhint][WebhintMain], ein anpassbares Lintingtool, um die Barrierefreiheit, Leistung, browserübergreifende Kompatibilität, PWA-Kompatibilität und Sicherheit Ihrer Website zu verbessern.  Der Code wird auf bewährte Methoden und häufige Fehler überprüft. Dieses Open -Source-Projekt, das ursprünglich vom Microsoft Edge-Team entwickelt wurde, ist jetzt Teil der [OpenJS Foundation][OpenjsFoundation].  Das Microsoft Edge-Team trägt weiterhin zusammen mit Webentwicklern in der Community zum Webhint bei.  
 
-:::image type="complex" source="./media/webhint-extension.png" alt-text="Screenshot der webhint vs-Code Erweiterung":::
-   Screenshot der webhint vs-Code Erweiterung  
+:::image type="complex" source="./media/webhint-extension.png" alt-text="Screenshot von webhint Visual Studio Codeerweiterung":::
+   Screenshot von webhint Visual Studio Codeerweiterung  
 :::image-end:::
 
-<!--![Screenshot of webhint VS Code extension][ImageWebhintExtension]  -->  
+<!--![Screenshot of webhint Visual Studio Code extension][ImageWebhintExtension]  -->  
 
-Identifizieren und beheben Sie Probleme in HTML, CSS, JavaScript, Manuskript und mehr, indem Sie die [webhint-Erweiterung für vs-Code][VisualstudioMarketplaceWebhint]hinzufügen.  Hinweise werden als Inline Unterstriche angezeigt und im **Problem** Bereich zusammengefasst.  
+Identifizieren und beheben Sie Probleme in HTML, CSS, JavaScript, TypeScript und mehr, indem Sie die [Webhint-Erweiterung][VisualstudioMarketplaceWebhint]für Visual Studio Code hinzufügen.  Hinweise werden als Inline unterstreicht angezeigt und im Bereich **Probleme zusammengefasst.**  
 
-## Konfiguration  
+## <a name="configuration"></a>Konfiguration  
 
-Diese Erweiterung verwendet eine JSON- [Standard][GithubWebhintioIndexjson] Datei, die Hinweise und Parser für HTML, CSS, Vorlagen Systeme \ (jsx/TSX, eckig usw. \), JavaScript/schreibscript und vieles mehr aktiviert.  
+Diese Erweiterung [][GithubWebhintioIndexjson] verwendet eine standardmäßige Konfigurations-Json-Datei, die Hinweise und Parser für HTML, CSS, Templating-Systeme \(JSX/TSX, Angular und so weiter\), JavaScript/TypeScript und vieles mehr aktiviert.  
 
 ```json
 {
-    &quot;connector&quot;: &quot;local&quot;,
-    &quot;extends&quot;: [
-        &quot;accessibility&quot;,
-        &quot;progressive-web-apps&quot;
+    "connector": "local",
+    "extends": [
+        "accessibility",
+        "progressive-web-apps"
     ],
-    &quot;formatters&quot;: [
-        &quot;html&quot;,
-        &quot;summary&quot;
+    "formatters": [
+        "html",
+        "summary"
     ],
-    &quot;hints&quot;: [
-        &quot;apple-touch-icons&quot;,
-        &quot;button-type&quot;,
-        &quot;compat-api/css&quot;,
-        &quot;compat-api/html&quot;,
-        &quot;create-element-svg&quot;,
-        &quot;css-prefix-order&quot;,
-        &quot;disown-opener&quot;,
-        &quot;highest-available-document-mode&quot;,
-        &quot;manifest-exists&quot;,
-        &quot;meta-charset-utf-8&quot;,
-        &quot;meta-viewport&quot;,
-        &quot;no-bom&quot;,
-        &quot;no-protocol-relative-urls&quot;,
-        &quot;scoped-svg-styles&quot;,
-        &quot;sri&quot;,
-        &quot;typescript-config/consistent-casing&quot;,
-        &quot;typescript-config/import-helpers&quot;,
-        &quot;typescript-config/is-valid&quot;,
-        &quot;typescript-config/no-comments&quot;,
-        &quot;typescript-config/strict&quot;,
-        &quot;typescript-config/target&quot;
+    "hints": [
+        "apple-touch-icons",
+        "button-type",
+        "compat-api/css",
+        "compat-api/html",
+        "create-element-svg",
+        "css-prefix-order",
+        "disown-opener",
+        "highest-available-document-mode",
+        "manifest-exists",
+        "meta-charset-utf-8",
+        "meta-viewport",
+        "no-bom",
+        "no-protocol-relative-urls",
+        "scoped-svg-styles",
+        "sri",
+        "typescript-config/consistent-casing",
+        "typescript-config/import-helpers",
+        "typescript-config/is-valid",
+        "typescript-config/no-comments",
+        "typescript-config/strict",
+        "typescript-config/target"
     ],
-    &quot;hintsTimeout&quot;: 10000,
-    &quot;parsers&quot;: [
-        &quot;babel-config&quot;,
-        &quot;css&quot;,
-        &quot;html&quot;,
-        &quot;javascript&quot;,
-        &quot;jsx&quot;,
-        &quot;less&quot;,
-        &quot;sass&quot;,
-        &quot;typescript&quot;,
-        &quot;typescript-config&quot;,
-        &quot;webpack-config&quot;
+    "hintsTimeout": 10000,
+    "parsers": [
+        "babel-config",
+        "css",
+        "html",
+        "javascript",
+        "jsx",
+        "less",
+        "sass",
+        "typescript",
+        "typescript-config",
+        "webpack-config"
     ]
 }
 ```  
 
-Wenn Sie mehr Kontrolle über die zu aktivierenden Hinweise und Parser erhalten möchten, erstellen Sie eine lokale `.hintrc` Datei, um webhint zu konfigurieren.  Hilfe zur Ausgabe spezifischer Hinweise finden Sie im [webhint-Nutzerleitfaden][WebhintDocsUserguideConfiguringSummary].  
+Wenn Sie mehr Kontrolle über die Hinweise und Parser haben möchten, die aktiviert werden, erstellen Sie eine lokale Datei zum Konfigurieren `.hintrc` von Webhint.  Hilfe bei der Ausgabe von bestimmten Hinweisen finden Sie unter [Webhint-Benutzerhandbuch][WebhintDocsUserguideConfiguringSummary].  
 
-## Mit dem webhint-Team in Kontakt treten  
+## <a name="getting-in-touch-with-the-webhint-team"></a>Kontakt mit dem Webhint-Team  
 
-Senden Sie Ihr Feedback, indem Sie [ein Problem][GithubWebhintioIssuesNew] in [webhint GitHub Repo][GithubWebhintio]einreichen.  
+Senden Sie Ihr Feedback, [indem Sie ein Problem][GithubWebhintioIssuesNew] im [webhint GitHub-Repository einreichen.][GithubWebhintio]  
 
-Wenn Sie zur Erweiterung beitragen möchten, lesen Sie [webhint vs Code Extension Contribution Guide][GithubWebhintioExtensionVscodeContributing].  
+Um zur Erweiterung beizutragen, navigieren Sie zu [webhint Visual Studio Codeerweiterungsbeitragshandbuch][GithubWebhintioExtensionVscodeContributing].  
 
-## Weitere Informationen  
+## <a name="see-also"></a>Weitere Informationen  
 
-*   [Bedienungshilfen][AccessibilityIndex]  
+*   [Barrierefreiheit][AccessibilityIndex]  
 *   [Visual Studio Code][VisualstudiocodeIndex]  
 
 <!-- image links -->  
 
-<!--[ImageWebhintExtension]: ./media/webhint-extension.png &quot;Screenshot of webhint VS Code extension&quot;  -->  
+<!--[ImageWebhintExtension]: ./media/webhint-extension.png "Screenshot of webhint Visual Studio Code extension"  -->  
 
 <!--links -->  
 
-[AccessibilityIndex]: /microsoft-edge/accessibility &quot;Barrierefreiheit | Microsoft docs&quot;  
+[AccessibilityIndex]: /microsoft-edge/accessibility "Barrierefreiheit | Microsoft Docs"  
 
-[VisualstudiocodeIndex]: /microsoft-edge/visual-studio-code/index &quot;Visual Studio-Code | Microsoft docs&quot;  
+[VisualstudiocodeIndex]: /microsoft-edge/visual-studio-code/index "Visual Studio Code | Microsoft Docs"  
 
-[GithubWebhintio]: https://github.com/webhintio/hint &quot;webhint | GitHub&quot;  
-[GithubWebhintioExtensionVscodeContributing]: https://github.com/webhintio/hint/blob/master/packages/extension-vscode/CONTRIBUTING.md &quot;Beitrag-webhint | GitHub&quot;  
-[GithubWebhintioIndexjson]: https://github.com/webhintio/hint/blob/master/packages/configuration-development/index.json &quot;index.json-webhintio/Hint | GitHub&quot;
-[GithubWebhintioIssuesNew]: https://github.com/webhintio/hint/issues/new &quot;Neue Probleme-webhintio/Hint | GitHub"  
+[GithubWebhintio]: https://github.com/webhintio/hint "webhint | GitHub"  
+[GithubWebhintioExtensionVscodeContributing]: https://github.com/webhintio/hint/blob/master/packages/extension-vscode/CONTRIBUTING.md "Mitwirken – webhint | GitHub"  
+[GithubWebhintioIndexjson]: https://github.com/webhintio/hint/blob/master/packages/configuration-development/index.json "index.js- webhintio/hint | GitHub"
+[GithubWebhintioIssuesNew]: https://github.com/webhintio/hint/issues/new "Neue Probleme – webhintio/hint | GitHub"  
 
 [VisualstudioMarketplaceWebhint]: https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint "webhint | Visual Studio Marketplace"  
 
 [OpenjsFoundation]:  https://openjsf.org "OpenJS Foundation"  
 
-[WebhintDocsUserguideConfiguringSummary]: https://webhint.io/docs/user-guide/configuring-webhint/summary "Konfigurieren von webhint | webhint-Dokumentation"  
+[WebhintDocsUserguideConfiguringSummary]: https://webhint.io/docs/user-guide/configuring-webhint/summary "Konfigurieren von Webhint-| webhint-Dokumentation"  
 [WebhintMain]:  https://webhint.io "webhint"  

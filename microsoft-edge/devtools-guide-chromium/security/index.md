@@ -1,18 +1,18 @@
 ---
-description: Überprüfen Sie mithilfe des Sicherheits Panels, ob eine Seite vollständig durch HTTPS geschützt ist.
-title: Grundlegendes zu Sicherheitsproblemen mit Microsoft Edge devtools
+description: Verwenden Sie den Sicherheitsbereich, um sicherzustellen, dass eine Seite vollständig durch HTTPS geschützt ist.
+title: Verstehen von Sicherheitsproblemen mit Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 5bef22eae8deacc81e31cf6d1c7791e016541346
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 71138ad33afb9eb56055fa522eb35edb71974c89
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230614"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397776"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,7 +28,7 @@ ms.locfileid: "11230614"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Grundlegendes zu Sicherheitsproblemen mit Microsoft Edge devtools  
+# <a name="understand-security-issues-with-microsoft-edge-devtools"></a>Verstehen von Sicherheitsproblemen mit Microsoft Edge DevTools  
 
   
 
@@ -36,87 +36,87 @@ ms.locfileid: "11230614"
 
 <!--todo: add section when why-https is available -->  
 
-## Öffnen des Fensters "Sicherheit"  
+## <a name="open-the-security-panel"></a>Öffnen des Sicherheitsbereichs  
 
-Der Bereich " **Sicherheit** " ist der wichtigste Ort in devtools, um die Sicherheit einer Seite zu überprüfen.  
+Der **Sicherheitsbereich** ist der Hauptort in DevTools für die Überprüfung der Sicherheit einer Seite.  
 
-1.  [Öffnen Sie devtools][DevToolsOpen].  
-1.  Wählen Sie die Registerkarte **Sicherheit** aus, um das **Sicherheits** Fenster zu öffnen.  
+1.  [Öffnen Sie DevTools][DevToolsOpen].  
+1.  Wählen Sie die **Registerkarte Sicherheit** aus, um das **Sicherheitstool zu** öffnen.  
     
-    :::image type="complex" source="../media/security-security-overview-secure.msft.png" alt-text="Das Sicherheitspanel" lightbox="../media/security-security-overview-secure.msft.png":::
-       Das **Sicherheits** Panel  
+    :::image type="complex" source="../media/security-security-overview-secure.msft.png" alt-text="Der Sicherheitsbereich" lightbox="../media/security-security-overview-secure.msft.png":::
+       Der **Sicherheitsbereich**  
     :::image-end:::  
     
-## Häufig auftretende Probleme  
+## <a name="common-problems"></a>Häufige Probleme  
 
-### Nicht sichere Haupt Ursprünge  
+### <a name="non-secure-main-origins"></a>Nicht sichere Hauptherkunft  
 
-Wenn der Haupt Ursprung einer Seite nicht sicher ist, lautet die **Sicherheitsübersicht** , dass **Diese Seite nicht sicher ist**.  
+Wenn der Hauptherkunft einer Seite **** nicht sicher ist, heißt es in der Sicherheitsübersicht, **dass diese Seite nicht sicher ist.**  
 
 :::image type="complex" source="../media/security-security-overview-non-secure.msft.png" alt-text="Eine nicht sichere Seite" lightbox="../media/security-security-overview-non-secure.msft.png":::
    Eine nicht sichere Seite  
 :::image-end:::  
 
-Dieses Problem tritt auf, wenn die URL, die Sie besucht haben, über HTTP angefordert wurde.  Um die Sicherheit zu gewährleisten, müssen Sie Sie über HTTPS anfordern.  Wenn Sie beispielsweise die URL in der Adressleiste betrachten, sieht Sie wahrscheinlich ähnlich aus `http://example.com` .  Um die URL zu sichern, sollte die URL `https://example.com` .  
+Dieses Problem tritt auf, wenn die url, die Sie besucht haben, über HTTP angefordert wurde.  Um die Sicherheit zu gewährleisten, müssen Sie sie über HTTPS anfordern.  Wenn Sie sich beispielsweise die URL in der Adressleiste anschauen, sieht sie wahrscheinlich ähnlich aus wie `http://example.com` .  Um die Sicherheit zu gewährleisten, sollte die URL `https://example.com` sein.  
 
-Wenn Sie bereits HTTPS auf dem Server eingerichtet haben, müssen Sie lediglich den Server so konfigurieren, dass alle HTTP-Anforderungen an https umgeleitet werden, um dieses Problem zu beheben.  
+Wenn Sie HTTPS bereits auf Ihrem Server eingerichtet haben, müssen Sie nur den Server so konfigurieren, dass alle HTTP-Anforderungen an HTTPS umgeleitet werden.  
 
-Wenn Sie HTTPS auf dem Server nicht eingerichtet haben, können Sie durch [verschlüsseln][LetsEncrypt] eine ﻿kostenlose und relativ einfache Möglichkeit zum Starten des Prozesses bereitstellen.  Oder Sie können das Hosten Ihrer Website in einem CDN in Frage stellen.  Die meisten wichtigen CDNs-Host Websites sind jetzt standardmäßig auf HTTPS.  
+Wenn Sie HTTPS nicht auf Ihrem Server eingerichtet haben, bietet [Let's Encrypt][LetsEncrypt] eine kostenlose und relativ einfache Möglichkeit, den Prozess zu starten.  Sie können auch erwägen, Ihre Website auf einem CDN zu hosten.  Die meisten wichtigen CDNs hosten jetzt standardmäßig Websites auf HTTPS.  
 
 > [!TIP]
-> Der [use https][WebhintUseHttps] -Hinweis in [webhint][Webhint] kann dazu beitragen, den Vorgang zu automatisieren, um sicherzustellen, dass alle HTTP-Anforderungen an https weitergeleitet werden.  
+> Der [Hinweis HTTPS][WebhintUseHttps] in [Webhint][Webhint] verwenden kann dazu beitragen, den Prozess zu automatisieren, um sicherzustellen, dass alle HTTP-Anforderungen an HTTPS geleitet werden.  
 
-### Gemischter Inhalt  
+### <a name="mixed-content"></a>Gemischte Inhalte  
 
-**Gemischte Inhalte** bedeuten, dass der Haupt Ursprung einer Seite sicher ist, die Seite jedoch Ressourcen von nicht sicheren Ursprüngen angefordert hat.  Gemischte Inhaltsseiten sind nur teilweise geschützt, da der HTTP-Inhalt für Sniffer zugänglich und anfällig für man-in-the-Middle-Angriffe ist.  
+**Gemischter** Inhalt bedeutet, dass der Hauptherkunft einer Seite sicher ist, die Seite jedoch Ressourcen aus nicht sicheren Ursprüngen angefordert hat.  Seiten mit gemischten Inhalten sind nur teilweise geschützt, da der Zugriff auf den HTTP-Inhalt für Schnüffeler und anfällig für Man-in-the-Middle-Angriffe ist.  
 
-:::image type="complex" source="../media/security-security-overview-mixed-secure.msft.png" alt-text="Gemischter Inhalt" lightbox="../media/security-security-overview-mixed-secure.msft.png":::
-   Gemischter Inhalt  
+:::image type="complex" source="../media/security-security-overview-mixed-secure.msft.png" alt-text="Gemischte Inhalte" lightbox="../media/security-security-overview-mixed-secure.msft.png":::
+   Gemischte Inhalte  
 :::image-end:::  
 
-Wählen Sie in der vorherigen Abbildung **in der Netzwerksteuerung Ansicht 1 anfordern** aus, um die **Netzwerk** Steuerung zu öffnen und den Filter anzuwenden, `mixed-content:displayed` damit im **Netzwerkprotokoll** nur nicht sichere Ressourcen angezeigt werden.  
+Wählen Sie in der vorherigen Abbildung die Option **** Anforderung **anzeigen im** Netzwerkbereich aus, um das Netzwerktool zu öffnen und den Filter anzuwenden, sodass im Netzwerkprotokoll nur nicht sichere Ressourcen `mixed-content:displayed` angezeigt werden. ****  
 
 :::image type="complex" source="../media/security-network-filter.msft.png" alt-text="Gemischte Ressourcen im Netzwerkprotokoll" lightbox="../media/security-network-filter.msft.png":::
    Gemischte Ressourcen im **Netzwerkprotokoll**  
 :::image-end:::  
 
-## Details anzeigen  
+## <a name="view-details"></a>Details anzeigen  
 
-### Haupt Ursprungszertifikat anzeigen  
+### <a name="view-main-origin-certificate"></a>Hauptursprungzertifikat anzeigen  
 
-Wählen Sie in der **Übersicht Sicherheit**die Option **Zertifikat anzeigen** aus, um das Zertifikat schnell auf den Haupt Ursprung zu überprüfen.  
+Wählen Sie **in der Sicherheitsübersicht**Zertifikat **anzeigen aus,** um das Zertifikat schnell auf den Hauptursprung zu überprüfen.  
 
-:::image type="complex" source="../media/security-security-overview-secure-view-certificate.msft.png" alt-text="Ein Haupt Ursprungszertifikat" lightbox="../media/security-security-overview-secure-view-certificate.msft.png":::
-   Ein Haupt Ursprungszertifikat  
+:::image type="complex" source="../media/security-security-overview-secure-view-certificate.msft.png" alt-text="Ein Hauptursprungzertifikat" lightbox="../media/security-security-overview-secure-view-certificate.msft.png":::
+   Ein Hauptursprungzertifikat  
 :::image-end:::  
 
-### Anzeigen von Ursprungs Details  
+### <a name="view-origin-details"></a>Anzeigen von Ursprungsdetails  
 
-Wählen Sie einen der Einträge im Navigationsbereich auf der linken Seite aus, um die Details des Ursprungs anzuzeigen.  Auf der Seite "Details" können Sie die Verbindungs-und Zertifikatinformationen anzeigen.  Die Informationen zur Transparenz der Zertifikate werden ebenfalls angezeigt, wenn Sie verfügbar sind.  
+Wählen Sie einen der Einträge im linken Navigationsgerät aus, um die Details des Ursprungs anzuzeigen.  Auf der Detailseite können Sie Verbindungs- und Zertifikatinformationen anzeigen.  Informationen zur Zertifikattransparenz werden ebenfalls angezeigt, wenn verfügbar.  
 
-:::image type="complex" source="../media/security-security-overview-mixed-secure-main-origin.msft.png" alt-text="Details des Haupt Ursprungs" lightbox="../media/security-security-overview-mixed-secure-main-origin.msft.png":::
-   Details des Haupt Ursprungs  
+:::image type="complex" source="../media/security-security-overview-mixed-secure-main-origin.msft.png" alt-text="Hauptherkunftsdetails" lightbox="../media/security-security-overview-mixed-secure-main-origin.msft.png":::
+   Hauptherkunftsdetails  
 :::image-end:::  
 
-## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chrom)-Entwicklertools | Microsoft docs"  
-[DevToolsOpen]: ../open/index.md "Öffnen Sie Microsoft Edge devtools | Microsoft docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Entwicklertools | Microsoft Docs"  
+[DevToolsOpen]: ../open/index.md "Öffnen Sie Microsoft Edge DevTools | Microsoft Docs"  
 
-[LetsEncrypt]: https://letsencrypt.org "Verschlüsseln-﻿kostenlose SSL/TLS-Zertifikate"  
+[LetsEncrypt]: https://letsencrypt.org "Let's Encrypt – Kostenlose SSL/TLS-Zertifikate"  
 
 [Webhint]: https://webhint.io "webhint"  
-[WebhintUseHttps]: https://webhint.io/docs/user-guide/hints/hint-https-only "Verwenden von HTTPS | webhint-Dokumentation"  
+[WebhintUseHttps]: https://webhint.io/docs/user-guide/hints/hint-https-only "Verwenden von HTTPS-| Webhintdokumentation"  
 
 <!--[mixed]: /web/fundamentals/security/prevent-mixed-content/what-is-mixed-content ""  -->
 
 > [!NOTE]
 > Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
-> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/security/index) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
+> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/security/index) und wird von [Kayce Basken][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) verfasst.  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  

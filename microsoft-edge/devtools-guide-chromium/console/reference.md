@@ -1,18 +1,18 @@
 ---
-description: Eine umfassende Referenz zu jedem Feature und Verhalten im Zusammenhang mit der Konsolen-UI in Microsoft Edge devtools
-title: Konsolen Referenz
+description: Eine umfassende Referenz zu allen Features und Verhaltensweisen im Zusammenhang mit der Konsolenbenutzeroberfläche in Microsoft Edge DevTools.
+title: Konsolenreferenz
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 27d521a4af528e95d06f58ac240f620a9c745044
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
+ms.openlocfilehash: 1aed46486240dea19420e8b7cb52b6758f1f528b
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125258"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399162"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,231 +28,231 @@ ms.locfileid: "11125258"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Konsolen Referenz  
+# <a name="console-reference"></a>Konsolenreferenz  
 
-Diese Seite ist eine Referenz zu Features, die sich auf die Microsoft Edge devtools-Konsole beziehen.  Es wird davon ausgegangen, dass Sie bereits mit der Verwendung der Konsole vertraut sind, um aufgezeichnete Nachrichten anzuzeigen und JavaScript auszuführen.  Wenn dies nicht der Fall ist, navigieren Sie zu erste [Schritte mit der Ausführung von JavaScript in der Konsole][DevToolsConsoleJavascript] , und [beginnen Sie mit der Protokollierung von Nachrichten in der Konsole][DevToolsConsoleLog].  
+Diese Seite ist ein Verweis auf Features im Zusammenhang mit der Microsoft Edge DevTools-Konsole.  Es wird davon ausgegangen, dass Sie bereits mit der Verwendung der Konsole vertraut sind, um protokollierte Nachrichten anzeigen und JavaScript ausführen zu können.  Wenn nicht, navigieren Sie zu [Erste Schritte mit der Ausführung von JavaScript in][DevToolsConsoleJavascript] der Konsole, und beginnen Sie mit der Protokollierung von Nachrichten in der [Konsole.][DevToolsConsoleLog]  
 
-Wenn Sie nach der API-Referenz für Funktionen wie `console.log()` Siehe [Console API Reference][DevToolsConsoleApi]suchen.  Wenn Sie auf Funktionen wie verweisen möchten `monitorEvents()` , navigieren Sie zu [API-Referenz für Konsolen Dienstprogramme][DevToolsConsoleUtilities].  
+Wenn Sie nach der API-Referenz für Funktionen wie `console.log()` suchen, navigieren Sie zu [Konsolen-API-Referenz][DevToolsConsoleApi].  Für den Verweis auf Funktionen wie `monitorEvents()` navigieren Sie zu Console [Utilities API Reference][DevToolsConsoleUtilities].  
 
-## Öffnen der Konsole  
+## <a name="open-the-console"></a>Öffnen der Konsole  
 
-Sie können die Konsole als [Panel](#open-the-console-panel) oder als [Registerkarte im Einzug](#open-the-console-tab-in-the-drawer)öffnen.  
+Sie können die **Konsole** als Tool [im](#open-the-console-tool) oberen Bereich oder als Tool [in der Schublade öffnen.](#open-the-console-tool-in-the-drawer)  
 
-### Öffnen des Konsolen Panels  
+### <a name="open-the-console-tool"></a>Öffnen des Konsolentools  
 
-Wählen Sie `Control` + `Shift` + `J` \ (Windows, Linux \) oder `Command` + `Option` + `J` \ (macOS \) aus.  
+Wählen `Control` + `Shift` + `J` Sie \(Windows, Linux\) oder `Command` + `Option` + `J` \(macOS\) aus.  
 
-:::image type="complex" source="../media/console-hello-console.msft.png" alt-text="Die Konsolen Leiste" lightbox="../media/console-hello-console.msft.png":::
-   Die **Konsolen** Leiste  
+:::image type="complex" source="../media/console-hello-console.msft.png" alt-text="Das Konsolentool" lightbox="../media/console-hello-console.msft.png":::
+   Das **Konsolentool**  
 :::image-end:::  
 
-Wenn Sie die Konsolen Leiste über das [Befehlsmenü][DevToolsCommandMenu]öffnen möchten, beginnen Sie mit der Eingabe, `Console` und führen Sie dann den Befehl **Konsole anzeigen** aus, auf dem sich das **Panel** -Badge befindet.  
+Wenn Sie das **Konsolentool** über [das][DevToolsCommandMenu]Befehlsmenü öffnen möchten, beginnen Sie mit der Eingabe, und führen Sie dann den Befehl Konsole anzeigen aus, der das `Console` **Panel-Badge** daneben hat. ****  
 
-:::image type="complex" source="../media/console-command-menu-show-console.msft.png" alt-text="Die Konsolen Leiste" lightbox="../media/console-command-menu-show-console.msft.png":::
-   Der Befehl zum Anzeigen des **Konsolen** Panels  
+:::image type="complex" source="../media/console-command-menu-show-console.msft.png" alt-text="Der Befehl zum Anzeigen des Konsolenbereichs" lightbox="../media/console-command-menu-show-console.msft.png":::
+   Der Befehl zum Anzeigen des **Konsolentools**  
 :::image-end:::  
 
-### Öffnen der Registerkarte "Konsole" im Einzug  
+### <a name="open-the-console-tool-in-the-drawer"></a>Öffnen Des Konsolentools in der Schublade  
 
-Wählen Sie `Escape` **devtools anpassen und Steuern** aus, und `...` Klicken Sie dann auf **Konsolen Einzug anzeigen**.  
+Wählen `Escape` Oder wählen Sie Anpassen und Steuern **DevTools** \( `...` \) und wählen Sie dann **Konsolenschubschubre anzeigen aus.**  
 
-:::image type="complex" source="../media/console-elements-customize-control-devtools-show-console-drawer.msft.png" alt-text="Die Konsolen Leiste" lightbox="../media/console-elements-customize-control-devtools-show-console-drawer.msft.png":::
-   **Konsolen Einzug anzeigen**  
+:::image type="complex" source="../media/console-elements-customize-control-devtools-show-console-drawer.msft.png" alt-text="Show console drawer" lightbox="../media/console-elements-customize-control-devtools-show-console-drawer.msft.png":::
+   **Show console drawer**  
 :::image-end:::  
 
-Die Schublade wird unten im devtools-Fenster eingeblendet, und die Registerkarte **Konsole** wird geöffnet.  
+Die Schublade wird unten im DevTools-Fenster angezeigt, und das **Konsolentool** wird geöffnet.  
 
-:::image type="complex" source="../media/console-elements-console-drawer-hello-world.msft.png" alt-text="Die Konsolen Leiste" lightbox="../media/console-elements-console-drawer-hello-world.msft.png":::
-   Die Registerkarte ' **Konsole** ' im **Einzug**  
+:::image type="complex" source="../media/console-elements-console-drawer-hello-world.msft.png" alt-text="Das Konsolentool in der Schublade" lightbox="../media/console-elements-console-drawer-hello-world.msft.png":::
+   Das **Konsolentool** in **der Schublade**  
 :::image-end:::  
 
-Wenn Sie die Registerkarte Konsole über das [Befehlsmenü][DevToolsCommandMenu]öffnen möchten, beginnen Sie mit der Eingabe, `Console` und führen Sie dann den Befehl **Konsole anzeigen** aus, auf dem sich das **Einschub** Symbol neben dem Symbol befindet.  
+Wenn Sie das **Konsolentool** über [das][DevToolsCommandMenu]Befehlsmenü öffnen möchten, beginnen Sie mit der Eingabe, und führen Sie dann den Befehl Konsole anzeigen aus, neben dem das `Console` **Drawer-Signal** steht. ****  
 
-:::image type="complex" source="../media/console-command-menu-show-console.msft.png" alt-text="Die Konsolen Leiste" lightbox="../media/console-command-menu-show-console.msft.png":::
-   Der Befehl zum Anzeigen der Registerkarte " **Konsole** " im **Einzug**  
+:::image type="complex" source="../media/console-command-menu-show-console.msft.png" alt-text="Der Befehl zum Anzeigen des **Console**-Tools in der Schublade" lightbox="../media/console-command-menu-show-console.msft.png":::
+   Der Befehl zum Anzeigen des **Konsolentools** in der **Schublade**  
 :::image-end:::  
 
-### Öffnen von Konsoleneinstellungen  
+### <a name="open-console-settings"></a>Öffnen von Konsoleneinstellungen  
 
-Wählen Sie **Konsoleneinstellungen** \ ( ![ Symbol für Konsoleneinstellungen ][ImageSettingsButtonIcon] \) aus.  
+Wählen **Sie Konsoleneinstellungen** \( ![ Symbol für Konsoleneinstellungen ][ImageSettingsButtonIcon] \).  
 
-:::image type="complex" source="../media/console-settings-group-similar-empty.msft.png" alt-text="Die Konsolen Leiste" lightbox="../media/console-settings-group-similar-empty.msft.png":::
+:::image type="complex" source="../media/console-settings-group-similar-empty.msft.png" alt-text="Konsoleneinstellungen" lightbox="../media/console-settings-group-similar-empty.msft.png":::
    **Konsoleneinstellungen**  
 :::image-end:::  
 
-Die folgenden Links erläutern jede Einstellung:  
+In den folgenden Links werden die einzelnen Einstellungen erläutert:  
 
 *   [**Netzwerk ausblenden**](#hide-network-messages)  
 *   [**Protokoll beibehalten**](#persist-messages-across-page-loads)  
 *   [**Nur ausgewählter Kontext**](#filter-out-messages-from-different-contexts)  
-*   [**Gruppieren ähnlich**](#disable-message-grouping)  
-*   [**Protokollieren von XMLHttpRequests**](#log-xhr-and-fetch-requests)  
-*   [**Eifrige Auswertung**](#disable-eager-evaluation)  
-*   [**AutoVervollständigen aus Verlauf**](#disable-autocomplete-from-history)  
+*   [**Gruppe ähnlich**](#disable-message-grouping)  
+*   [**Log XmlHttpRequests**](#log-xhr-and-fetch-requests)  
+*   [**Begierde Auswertung**](#disable-eager-evaluation)  
+*   [**Autocomplete From History**](#disable-autocomplete-from-history)  
     
-### Öffnen der Konsolen Leiste  
+### <a name="open-the-console-sidebar"></a>Öffnen der Konsolenseite  
 
-Wählen Sie **Console Sidebar anzeigen** aus ![ ][ImageShowConsoleSidebarIcon] , um die Seitenleiste anzuzeigen, die für das Filtern nützlich ist.  
+Wählen **Sie Konsolenseite anzeigen** \( Konsolenseite anzeigen \) aus, um die Seitenleiste zu ![ ][ImageShowConsoleSidebarIcon] zeigen, die für die Filterung hilfreich ist.  
 
-:::image type="complex" source="../media/console-sidebar-drawer-empty.msft.png" alt-text="Die Konsolen Leiste" lightbox="../media/console-sidebar-drawer-empty.msft.png":::
-   **Console** Seitenleiste  
+:::image type="complex" source="../media/console-sidebar-drawer-empty.msft.png" alt-text="Konsolen-Sidebar" lightbox="../media/console-sidebar-drawer-empty.msft.png":::
+   **Konsole** Sidebar  
 :::image-end:::  
 
-## Anzeigen von Nachrichten  
+## <a name="view-messages"></a>Anzeigen von Nachrichten  
 
-Dieser Abschnitt enthält Features, die ändern, wie Nachrichten in der Konsole angezeigt werden.  Weitere Informationen finden Sie unter [Anzeigen von Nachrichten][DevToolsConsoleViewMessages] für eine praktische Exemplarische Vorgehensweise.  
+Dieser Abschnitt enthält Features, die die Art und Weise ändern, wie Nachrichten in der Konsole angezeigt werden.  Eine praktische exemplarische Vorgehensweise finden Sie unter Anzeigen [von Nachrichten.][DevToolsConsoleViewMessages]  
 
-### Deaktivieren der Nachrichten Gruppierung  
+### <a name="disable-message-grouping"></a>Deaktivieren der Nachrichtengruppe  
 
-[Öffnen Sie die Konsoleneinstellungen](#open-console-settings) , und deaktivieren Sie **Gruppe ähnlich** , um das Standardverhalten der Nachrichten Gruppierung der Konsole zu deaktivieren.  Ein Beispiel finden Sie unter [Protokoll XMLHttpRequest und Abrufen von Anforderungen](#log-xhr-and-fetch-requests) .  
+[Öffnen Sie Konsoleneinstellungen,](#open-console-settings) und deaktivieren Sie **"Gruppe", um** das Standardmäßige Nachrichtengruppenverhalten der Konsole zu deaktivieren.  Navigieren Sie beispielsweise zu [Log XHR und Fetch requests](#log-xhr-and-fetch-requests).  
 
-### Protokollieren von XMLHttpRequest und Abrufen von Anforderungen  
+### <a name="log-xhr-and-fetch-requests"></a>Protokollierung von XHR- und Fetch-Anforderungen  
 
-[Öffnen Sie die Konsoleneinstellungen](#open-console-settings) , und aktivieren Sie **Protokoll-XMLHttpRequests** , um alle `XMLHttpRequest` und `Fetch` Anforderungen an die Konsole während des Auftretens zu protokollieren.  
+[Öffnen Sie Konsoleneinstellungen,](#open-console-settings) und aktivieren Sie **Log XMLHttpRequests,** um alle und Anforderungen an die Konsole zu `XMLHttpRequest` `Fetch` protokollieren.  
 
-:::image type="complex" source="../media/console-xhr-fetch.msft.png" alt-text="Die Konsolen Leiste" lightbox="../media/console-xhr-fetch.msft.png":::
+:::image type="complex" source="../media/console-xhr-fetch.msft.png" alt-text="Protokollieren von XMLHttpRequest- und Fetch-Anforderungen" lightbox="../media/console-xhr-fetch.msft.png":::
    Protokoll `XMLHttpRequest` und `Fetch` Anforderungen  
 :::image-end:::  
-Die oberste Nachricht in der vorherigen Abbildung zeigt das standardmäßige Gruppierungs Verhalten der **Konsole**.  <!--  In the following figure, the same log is displayed after [disabling message grouping](#disable-message-grouping).  -->  
+In der oberen Meldung in der vorherigen Abbildung wird das Standardgruppenverhalten der **Konsole angezeigt.**  <!--  In the following figure, the same log is displayed after [disabling message grouping](#disable-message-grouping).  -->  
 
 <!--  
 > ##### Old Figure 9  
 > How the logged `XMLHttpRequest` and `Fetch` requests look after ungrouping  
-> :::image type="complex" source="../media/console-xhr-fetch-all.msft.png" alt-text="Die Konsolen Leiste" lightbox="../media/console-xhr-fetch-all.msft.png":::
+> :::image type="complex" source="../media/console-xhr-fetch-all.msft.png" alt-text="How the logged XMLHttpRequest and Fetch requests look after ungrouping" lightbox="../media/console-xhr-fetch-all.msft.png":::
 >    How the logged XMLHttpRequest and Fetch requests look after ungrouping  
 > :::image-end:::  
 -->  
 
 <!--todo: add example for ungrouping console items  -->  
 
-### Beibehalten von Nachrichten über Seitenlasten  
+### <a name="persist-messages-across-page-loads"></a>Beibehalten von Nachrichten über Seitenlasten hinweg  
 
-Standardmäßig wird die Konsole gelöscht, wenn Sie eine neue Seite laden.  Wenn Sie Nachrichten über Seitenlasten hinweg beibehalten möchten, öffnen Sie die [Konsoleneinstellungen](#open-console-settings) , und aktivieren Sie dann das Kontrollkästchen **Protokoll beibehalten** .  
+Standardmäßig wird die Konsole beim Laden einer neuen Seite deaktiviert.  Um Nachrichten über Seitenlasten hinweg zu speichern, [öffnen Sie Konsoleneinstellungen,](#open-console-settings) und aktivieren Sie dann das **Kontrollkästchen Protokoll** beibehalten.  
 
-### Ausblenden von Netzwerknachrichten  
+### <a name="hide-network-messages"></a>Ausblenden von Netzwerknachrichten  
 
-Standardmäßig protokolliert der Browser Netzwerknachrichten an die **Konsole**.  In der folgenden Abbildung stellt die ausgewählte Nachricht einen HTTP-Statuscode von dar `429` .  
+Standardmäßig protokolliert der Browser Netzwerknachrichten an die **Konsole**.  In der folgenden Abbildung stellt die ausgewählte Nachricht den HTTP-Statuscode von `429` dar.  
 
-:::image type="complex" source="../media/console-show-network.msft.png" alt-text="Die Konsolen Leiste" lightbox="../media/console-show-network.msft.png":::
+:::image type="complex" source="../media/console-show-network.msft.png" alt-text="Eine 429-Nachricht in der Konsole" lightbox="../media/console-show-network.msft.png":::
    Eine `429` Nachricht in der **Konsole**  
 :::image-end:::  
 So blenden Sie Netzwerknachrichten aus:  
 
-1.  [Öffnen Sie die Konsoleneinstellungen](#open-console-settings).  
-1.  Aktivieren Sie das Kontrollkästchen **Netzwerk ausblenden** .  
+1.  [Öffnen Sie Konsoleneinstellungen](#open-console-settings).  
+1.  Aktivieren Sie **das Kontrollkästchen Netzwerk** ausblenden.  
     
-## Filtern von Nachrichten  
+## <a name="filter-messages"></a>Filtern von Nachrichten  
 
-Es gibt viele Möglichkeiten, Nachrichten in der Konsole zu filtern.  
+Es gibt viele Möglichkeiten, Nachrichten in der Konsole herausfiltern.  
 
-### Filtern von Browser Nachrichten  
+### <a name="filter-out-browser-messages"></a>Filtern von Browsernachrichten  
 
-[Öffnen Sie die Konsolen Leiste](#open-the-console-sidebar) , und wählen Sie **Benutzer Nachrichten** aus, um nur Nachrichten anzuzeigen, die aus dem JavaScript der Seite stammen.  
+[Öffnen Sie die Konsolen-Seitenleiste,](#open-the-console-sidebar) und wählen Sie **Benutzernachrichten aus,** um nur Nachrichten aus dem JavaScript der Seite anzeigen zu können.  
 
-:::image type="complex" source="../media/console-sidebar-drawer-user-messages.msft.png" alt-text="Die Konsolen Leiste" lightbox="../media/console-sidebar-drawer-user-messages.msft.png":::
-   Anzeigen von Benutzer Nachrichten  
+:::image type="complex" source="../media/console-sidebar-drawer-user-messages.msft.png" alt-text="Anzeigen von Benutzernachrichten" lightbox="../media/console-sidebar-drawer-user-messages.msft.png":::
+   Anzeigen von Benutzernachrichten  
 :::image-end:::  
 
-### Nach Protokollebene Filtern  
+### <a name="filter-by-log-level"></a>Filtern nach Protokollebene  
 
-DevTools weist jeder `console.*` Methode einen Schweregrad zu.  Es gibt 4 Ebenen: `Verbose` , `Info` , `Warning` und `Error` .  Befindet sich beispielsweise `console.log()` in der `Info` Gruppe, während `console.error()` sich in der `Error` Gruppe befindet.  Die [API-Referenz][DevToolsConsoleApi] für die Konsole beschreibt den Schweregrad jeder anwendbaren Methode.  Jede Nachricht, die der Browser auf der Konsole anmeldet, hat auch einen Schweregrad.  Sie können jede Ebene von Nachrichten verbergen, an denen Sie nicht interessiert sind.  Wenn Sie beispielsweise nur an `Error` Nachrichten interessiert sind, können Sie die anderen drei Gruppen ausblenden.  
+DevTools weist jeder `console.*` Methode einen Schweregrad zu.  Es gibt 4 Ebenen: `Verbose` `Info` , , und `Warning` `Error` .  Befindet sich `console.log()` z. B. in `Info` der Gruppe, während sie sich in der `console.error()` Gruppe `Error` befindet.  Die [Konsolen-API-Referenz][DevToolsConsoleApi] beschreibt den Schweregrad jeder anwendbaren Methode.  Jede Nachricht, die der Browser bei der Konsole anmeldet, hat auch einen Schweregrad.  Sie können eine beliebige Ebene von Nachrichten ausblenden, an der Sie nicht interessiert sind.  Wenn Sie beispielsweise nur an Nachrichten interessiert sind, können Sie die anderen `Error` 3 Gruppen ausblenden.  
 
-Klicken Sie auf die Dropdownliste **Protokollebenen** , um die Option oder `Verbose` `Info` `Warning` `Error` Nachrichten zu aktivieren oder zu deaktivieren.  
+Wählen Sie **das Dropdownmenü Protokollebenen** aus, um Nachrichten zu aktivieren `Verbose` oder zu `Info` `Warning` `Error` deaktivieren.  
 
-:::image type="complex" source="../media/console-log-level-default-levels.msft.png" alt-text="Die Konsolen Leiste" lightbox="../media/console-log-level-default-levels.msft.png":::
-   Dropdownliste " **Protokollebenen** "  
+:::image type="complex" source="../media/console-log-level-default-levels.msft.png" alt-text="Dropdownliste "Protokollebenen"" lightbox="../media/console-log-level-default-levels.msft.png":::
+   Dropdownliste **"Protokollebenen"**  
 :::image-end:::  
 
-Sie können auch nach Protokollebene filtern, indem Sie [die Konsolen Leiste öffnen](#open-the-console-sidebar) und dann auf **Fehler**, **Warnungen**, **Informationen**oder **ausführlich**klicken.  
+Sie können auch nach Protokollebene filtern, indem Sie die [Konsolenseite öffnen](#open-the-console-sidebar) und dann **Fehler,** **Warnungen,** **Info**oder **Verbose öffnen.**  
 
-:::image type="complex" source="../media/console-sidebar-warnings.msft.png" alt-text="Die Konsolen Leiste" lightbox="../media/console-sidebar-warnings.msft.png":::
-   Verwenden der Seitenleiste zum Anzeigen von Warnungen  
+:::image type="complex" source="../media/console-sidebar-warnings.msft.png" alt-text="Anzeigen von Warnungen mithilfe der Seitenleiste" lightbox="../media/console-sidebar-warnings.msft.png":::
+   Anzeigen von Warnungen mithilfe der Seitenleiste  
 :::image-end:::  
 
-### Filtern von Nachrichten nach URL  
+### <a name="filter-messages-by-url"></a>Filtern von Nachrichten nach URL  
 
-Geben `url:` Sie gefolgt von einer URL ein, um nur Nachrichten anzuzeigen, die von dieser URL stammen.  Nachdem Sie devtools eingegeben haben `url:` , werden alle relevanten URLs angezeigt.  Domänen funktionieren ebenfalls.  Wenn Sie beispielsweise `https://example.com/a.js` `https://example.com/b.js` Nachrichten protokollieren, `url:https://example.com` können Sie sich auf die Nachrichten aus diesen beiden Skripts konzentrieren.  
+Geben Sie eine URL ein, um nur Nachrichten anzeigen zu `url:` können, die von dieser URL stammten.  Nachdem Sie `url:` DevTools eingeben, werden alle relevanten URLs gezeigt.  Domänen funktionieren auch.  Wenn beispielsweise Nachrichten protokollieren und diese protokollieren, können Sie sich auf die Nachrichten aus diesen `https://example.com/a.js` `https://example.com/b.js` `url:https://example.com` 2 Skripts konzentrieren.  
 
-:::image type="complex" source="../media/console-filter-text.msft.png" alt-text="Die Konsolen Leiste" lightbox="../media/console-filter-text.msft.png":::
+:::image type="complex" source="../media/console-filter-text.msft.png" alt-text="Ein URL-Filter" lightbox="../media/console-filter-text.msft.png":::
    Ein URL-Filter  
 :::image-end:::  
 
 Geben `-url:` Sie ein, um Nachrichten aus dieser URL auszublenden.  Dies wird als negativer URL-Filter bezeichnet.  
 
-:::image type="complex" source="../media/console-negative-filter-text.msft.png" alt-text="Die Konsolen Leiste" lightbox="../media/console-negative-filter-text.msft.png":::
-   Ein negativer URL-Filter, mit dem alle Nachrichten ausgeblendet werden, die der `https://b.wal.co` URL entsprechen
+:::image type="complex" source="../media/console-negative-filter-text.msft.png" alt-text="Ein negativer URL-Filter, der alle Nachrichten ausblendet, die mit der https://b.wal.co URL übereinstimmen" lightbox="../media/console-negative-filter-text.msft.png":::
+   Ein negativer URL-Filter, der alle Nachrichten ausblendet, die mit der `https://b.wal.co` URL übereinstimmen
 :::image-end:::  
 
-Sie können auch Nachrichten von einer einzelnen URL anzeigen, indem Sie [die Konsolen Leiste öffnen](#open-the-console-sidebar), den Abschnitt **Benutzer Nachrichten** erweitern und dann auf die URL des Skripts klicken, das die Nachrichten enthält, auf die Sie sich konzentrieren möchten.  
+Sie können auch Nachrichten von einer einzelnen URL anzeigen, **** indem Sie die Konsolenseite [öffnen,](#open-the-console-sidebar)den Abschnitt Benutzernachrichten erweitern und dann die URL des Skripts mit den Nachrichten angeben, auf die Sie sich konzentrieren möchten.  
 
-:::image type="complex" source="../media/console-filter-text-specified.msft.png" alt-text="Die Konsolen Leiste" lightbox="../media/console-filter-text-specified.msft.png":::
-   Anzeigen der von Ihnen gelieferten Nachrichten `wp-ad.min.js`  
+:::image type="complex" source="../media/console-filter-text-specified.msft.png" alt-text="Anzeigen der Nachrichten, die von der wp-ad.min.js" lightbox="../media/console-filter-text-specified.msft.png":::
+   Anzeigen der Nachrichten, die von `wp-ad.min.js`  
 :::image-end:::  
 
-### Filtern von Nachrichten aus unterschiedlichen Kontexten  
+### <a name="filter-out-messages-from-different-contexts"></a>Filtern von Nachrichten aus unterschiedlichen Kontexten  
 
-Angenommen, Sie haben eine Anzeige \ (AD \) auf Ihrer Seite.  Die Anzeige ist in eine eingebettete `<iframe>` und generiert viele Nachrichten in der Konsole.  Da die Anzeige in einem anderen JavaScript- [Kontext](#select-javascript-context)ausgeführt wird, besteht eine Möglichkeit zum Ausblenden der Nachrichten darin, die [Konsoleneinstellungen zu öffnen](#open-console-settings) und das Kontrollkästchen **nur ausgewählten Kontext** zu aktivieren.  
+Angenommen, Sie haben eine Ankündigung \(ad\) auf Ihrer Seite.  Die Anzeige ist in eine eingebettet `<iframe>` und generiert viele Nachrichten in Ihrer Konsole.  Da die Anzeige in einem anderen [JavaScript-Kontext](#select-javascript-context)ausgeführt wird, besteht eine Möglichkeit **** zum Ausblenden der Nachrichten im Öffnen von Konsoleneinstellungen und Aktivieren des Kontrollkästchens Nur ausgewählter Kontext. [](#open-console-settings)  
 
-### Filtern von Nachrichten, die nicht mit einem regulären Ausdrucksmuster übereinstimmen  
+### <a name="filter-out-messages-that-do-not-match-a-regular-expression-pattern"></a>Filtern von Nachrichten, die nicht mit einem Muster für reguläre Ausdrücke übereinstimmen  
 
-Geben Sie einen regulären Ausdruck wie `/[gm][ta][mi]/` im Textfeld **Filter** ein, um alle Nachrichten zu filtern, die nicht mit diesem Muster übereinstimmen.  DevTools überprüft, ob das Muster im Nachrichtentext gefunden wurde, oder das Skript, das die Protokollierung der Nachricht verursacht hat.  
+Geben Sie einen regulären Ausdruck ein, z. B. in das Textfeld Filter, um alle Nachrichten herausfiltern, `/[gm][ta][mi]/` die nicht mit diesem Muster übereinstimmen. ****  DevTools überprüft, ob das Muster im Nachrichtentext oder im Skript gefunden wird, das dazu führte, dass die Nachricht protokolliert wurde.  
 
-:::image type="complex" source="../media/console-filter-regex.msft.png" alt-text="Die Konsolen Leiste" lightbox="../media/console-filter-regex.msft.png":::
-   Filtern von Nachrichten, die nicht mit dem `/[gm][ta][mi]/` Regex-Ausdruck übereinstimmen  
+:::image type="complex" source="../media/console-filter-regex.msft.png" alt-text="Filtern von Nachrichten, die nicht mit dem regex-Ausdruck übereinstimmen" lightbox="../media/console-filter-regex.msft.png":::
+   Filtern von Nachrichten, die nicht mit dem `/[gm][ta][mi]/` regex-Ausdruck übereinstimmen  
 :::image-end:::  
 
-## Ausführen von JavaScript  
+## <a name="run-javascript"></a>Ausführen von JavaScript  
 
-Dieser Abschnitt enthält Features in Bezug auf die Ausführung von JavaScript in der Konsole.  Eine praktische Exemplarische Vorgehensweise finden Sie unter [Ausführen von JavaScript][DevToolsConsoleOverviewJavascript] .  
+Dieser Abschnitt enthält Features im Zusammenhang mit der Ausführung von JavaScript in der Konsole.  Eine praktische exemplarische Vorgehensweise finden Sie unter [Ausführen von JavaScript][DevToolsConsoleOverviewJavascript].  
 
-### Erneutes Ausführen von Ausdrücken aus dem Protokoll  
+### <a name="re-run-expressions-from-history"></a>Erneutes Ausführen von Ausdrücken aus dem Verlauf  
 
-Drücken Sie die Eingabe `Up Arrow` Taste, um den Verlauf der JavaScript-Ausdrücke zu durchlaufen, die Sie zuvor in der Konsole ausgeführt haben.  Wählen Sie diese Option aus, `Enter` um diesen Ausdruck erneut auszuführen.  
+Wählen Sie den Schlüssel aus, um den Verlauf von JavaScript-Ausdrücken zu durchschreiben, die Sie `Up Arrow` zuvor in der Konsole verwendet haben.  Wählen `Enter` Sie diese Option aus, um den Ausdruck erneut ausführen zu können.  
 
-### Überwachen des Werts eines Ausdrucks in Echtzeit mit Live Ausdrücken  
+### <a name="watch-the-value-of-an-expression-in-real-time-with-live-expressions"></a>Beobachten des Werts eines Ausdrucks in Echtzeit mit Liveausdrücken  
 
-Wenn Sie feststellen, dass Sie denselben JavaScript-Ausdruck wiederholt in der Konsole eingeben, ist es möglicherweise einfacher, einen **Live Ausdruck**zu erstellen.  Mit **Live-Ausdrücken** geben Sie einen Ausdruck einmal ein und anheften ihn dann an den Anfang der Konsole.  Der Wert des Ausdrucks wird nahezu in Echtzeit aktualisiert.  Schauen Sie [sich die Werte für JavaScript-Ausdrücke in Real-Time mit Live Ausdrücken an][DevToolsConsoleLiveExpressions].  
+Wenn Sie denselben JavaScript-Ausdruck wiederholt in der Konsole eingeben, ist es möglicherweise einfacher, einen **Liveausdruck zu erstellen.**  Mit **Live-Ausdrücken** geben Sie einen Ausdruck einmal ein undheften ihn dann an den oberen Rand der Konsole.  Der Wert des Ausdrucks wird nahezu in Echtzeit aktualisiert.  Navigieren Sie [zu JavaScript Expression Values in Real-Time With Live Expressions][DevToolsConsoleLiveExpressions].  
 
-### Deaktivieren der eifrigen Auswertung  
+### <a name="disable-eager-evaluation"></a>Deaktivieren der Begierdeauswertung  
 
-Während Sie JavaScript-Ausdrücke in der Konsole eingeben, zeigt die **eifrige Auswertung** eine Vorschau des Rückgabewerts für diesen Ausdruck.  [Öffnen Sie die Konsoleneinstellungen](#open-console-settings) , und deaktivieren Sie das Kontrollkästchen **eifrige Auswertung** , um die Vorschau des Rückgabewerts zu deaktivieren.  
+Wenn Sie In-JavaScript-Ausdrücke in der Konsole eingeben, zeigt die Bewertung mit **Begierde** eine Vorschau des Rückgabewerts für diesen Ausdruck an.  [Öffnen Sie Konsoleneinstellungen,](#open-console-settings) und deaktivieren Sie das Kontrollkästchen Bewertungsgierig, um die Rückgabewertvorschauen zu deaktivieren. ****  
 
-### Deaktivieren von AutoVervollständigen aus dem Protokoll  
+### <a name="disable-autocomplete-from-history"></a>Deaktivieren des automatischen Kompletierens aus dem Verlauf  
 
-Wenn Sie einen Ausdruck eingeben, zeigt das Popupfenster AutoVervollständigen für die Konsole Ausdrücke an, die Sie zuvor ausgeführt haben.  Diesen Ausdrücken wird das Zeichen vorangestellt `>` .  [Öffnen Sie die Konsoleneinstellungen](#open-console-settings) , und deaktivieren Sie das Kontrollkästchen **AutoVervollständigen aus Verlauf** , um die Anzeige von Ausdrücken aus Ihrem Protokoll zu beenden.  
+Beim Eingeben eines Ausdrucks zeigt das Popupfenster für die automatische Vervollständigung für die Konsole Ausdrücke an, die Sie zuvor durchgeführt haben.  Diese Ausdrücke werden mit dem Zeichen `>` vorkonfiguriert.  [Öffnen Sie Konsoleneinstellungen,](#open-console-settings) und deaktivieren Sie das Kontrollkästchen **AutoComplete From History,** um die Anzeige von Ausdrücken aus Ihrem Verlauf zu beenden.  
 
 > [!NOTE]
-> In der folgenden Abbildung `document.querySelector('a')` `document.querySelector('img')` sind Ausdrücke, die zuvor ausgewertet wurden.  
+> In der folgenden Abbildung `document.querySelector('a')` und `document.querySelector('img')` sind Ausdrücke, die zuvor ausgewertet wurden.  
 
-:::image type="complex" source="../media/console-filter-text-autofilter-history.msft.png" alt-text="Die Konsolen Leiste" lightbox="../media/console-filter-text-autofilter-history.msft.png":::
-   Das AutoVervollständigen-Popup zeigt Ausdrücke aus dem Protokoll an  
+:::image type="complex" source="../media/console-filter-text-autofilter-history.msft.png" alt-text="Im Popup für die automatische Vervollständigung werden Ausdrücke aus dem Verlauf angezeigt." lightbox="../media/console-filter-text-autofilter-history.msft.png":::
+   Im Popup für die automatische Vervollständigung werden Ausdrücke aus dem Verlauf angezeigt.  
 :::image-end:::  
 
-### JavaScript-Kontext auswählen  
+### <a name="select-javascript-context"></a>Auswählen des JavaScript-Kontexts  
 
-Standardmäßig ist die Dropdownliste **JavaScript-Kontext** auf **oben**gesetzt, was den [Browserkontext][MDNBrowsingContext] des Hauptdokuments darstellt.  
+Standardmäßig ist das **JavaScript-Kontextdropdown** auf **top**festgelegt, das den [Browserkontext][MDNBrowsingContext] des Hauptdokuments darstellt.  
 
-:::image type="complex" source="../media/console-dom-level-top.msft.png" alt-text="Die Konsolen Leiste" lightbox="../media/console-dom-level-top.msft.png":::
-   Die **JavaScript-Kontext** Dropdownliste  
+:::image type="complex" source="../media/console-dom-level-top.msft.png" alt-text="Das Dropdownmenü "JavaScript-Kontext"" lightbox="../media/console-dom-level-top.msft.png":::
+   Das **Dropdownmenü "JavaScript-Kontext"**  
 :::image-end:::  
 
-Angenommen, Sie haben eine Anzeige auf Ihrer Seite eingebettet in eine `<iframe>` .  Sie möchten JavaScript ausführen, um das DOM der Anzeige zu optimieren.  Wählen Sie zuerst den Browserkontext der Anzeige aus der Dropdownliste **JavaScript-Kontext** aus.  
+Angenommen, Sie haben eine Anzeige auf Ihrer Seite eingebettet in `<iframe>` .  Sie möchten JavaScript ausführen, um das DOM der Anzeige zu optimieren.  Sie sollten zuerst den Browserkontext der Anzeige im **Dropdownmenü JavaScript-Kontext** auswählen.  
 
-:::image type="complex" source="../media/console-dom-level-multiple.msft.png" alt-text="Die Konsolen Leiste" lightbox="../media/console-dom-level-multiple.msft.png":::
+:::image type="complex" source="../media/console-dom-level-multiple.msft.png" alt-text="Auswählen eines anderen JavaScript-Kontexts" lightbox="../media/console-dom-level-multiple.msft.png":::
    Auswählen eines anderen JavaScript-Kontexts  
 :::image-end:::  
 
-## Deaktivieren der Konsole  
+## <a name="clear-the-console"></a>Löschen der Konsole  
 
-Sie können eine der folgenden Workflows verwenden, um die Konsole zu löschen:  
+Sie können einen der folgenden Workflows verwenden, um die Konsole zu löschen:  
 
-*   Wählen Sie **Konsole löschen** ( ![ Konsole löschen ][ImageClearConsoleIcon] ).  
-*   Klicken Sie mit der rechten Maustaste auf eine Nachricht, und wählen Sie **Konsole löschen**aus.  
-*   Geben Sie `clear()` in die Konsole ein, und wählen Sie dann aus `Enter` .  
+*   Wählen **Sie Clear Console** \( Clear Console ![ ][ImageClearConsoleIcon] \).  
+*   Zeigen Sie auf eine Nachricht, öffnen Sie das Kontextmenü \(righ-click\), und wählen Sie **Konsole löschen aus.**  
+*   Geben `clear()` Sie in die Konsole **ein,** und wählen Sie `Enter` aus.  
 *   Führen `console.clear()` Sie das JavaScript für Ihre Webseite aus.  
-*   Wählen Sie aus `Control` + `L` , während sich die Konsole im Fokus befindet.  
+*   Wählen `Control` + `L` Sie **aus, während sich die Konsole** im Fokus befindet.  
     
-## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -264,22 +264,22 @@ Sie können eine der folgenden Workflows verwenden, um die Konsole zu löschen:
 
 <!-- links -->  
 
-[DevToolsCommandMenu]: ../command-menu/index.md "Ausführen von Befehlen mit dem Befehlsmenü von Microsoft Edge devtools | Microsoft docs"  
-[DevToolsConsoleViewMessages]: ./index.md#viewing-logged-messages "Anzeigen von protokollierten Nachrichten – Übersicht über die Konsole | Microsoft docs"  
-[DevToolsConsoleApi]: ./api.md "Konsolen-API-Referenz | Microsoft docs"  
-[DevToolsConsoleOverviewJavascript]: ./index.md#running-javascript "Ausführen von JavaScript – Übersicht über die Konsole | Microsoft docs"  
-[DevToolsConsoleJavascript]: ./javascript.md "Erste Schritte mit der Ausführung von JavaScript in der Konsole | Microsoft docs"  
-[DevToolsConsoleLiveExpressions]: ./live-expressions.md "Sehen Sie sich die Werte für JavaScript-Ausdrücke in Echtzeit mit Live Ausdrücken an | Microsoft docs"  
-[DevToolsConsoleLog]: ./log.md "Erste Schritte mit der Protokollierung von Nachrichten in der Konsole | Microsoft docs"  
-[DevToolsConsoleUtilities]: ./utilities.md "API-Referenz für Konsolen Dienstprogramme | Microsoft docs"  
+[DevToolsCommandMenu]: ../command-menu/index.md "Ausführen von Befehlen mit dem Microsoft Edge DevTools Command-Menü | Microsoft Docs"  
+[DevToolsConsoleViewMessages]: ./index.md#viewing-logged-messages "Anzeigen protokollierter Nachrichten – Übersicht über | Microsoft Docs"  
+[DevToolsConsoleApi]: ./api.md "Konsolen-API-| Microsoft Docs"  
+[DevToolsConsoleOverviewJavascript]: ./index.md#running-javascript "Ausführen von JavaScript – Übersicht über | Microsoft Docs"  
+[DevToolsConsoleJavascript]: ./javascript.md "Erste Schritte mit der Ausführung von JavaScript in der Konsolenkonsole | Microsoft Docs"  
+[DevToolsConsoleLiveExpressions]: ./live-expressions.md "Verfolgen Sie JavaScript-Ausdruckswerte in Echtzeit mit Live Expressions | Microsoft Docs"  
+[DevToolsConsoleLog]: ./log.md "Erste Schritte mit der Protokollierung von Nachrichten in der Konsolenkonsole | Microsoft Docs"  
+[DevToolsConsoleUtilities]: ./utilities.md "Console Utilities API reference | Microsoft Docs"  
 
-[MDNBrowsingContext]: https://developer.mozilla.org/docs/Glossary/Browsing_context "Browsing-Kontext | MDN"  
+[MDNBrowsingContext]: https://developer.mozilla.org/docs/Glossary/Browsing_context "Browserkontext | MDN"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
-> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/console/reference) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
+> Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
+> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/console/reference) und wird von [Kayce Basken][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) verfasst.  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

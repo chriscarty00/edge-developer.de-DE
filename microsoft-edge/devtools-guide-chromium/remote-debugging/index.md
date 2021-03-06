@@ -1,18 +1,18 @@
 ---
-description: Remote Debuggen von Liveinhalten auf einem Android-Gerät von einem Windows-oder macOS-Computer aus.
-title: Erste Schritte mit dem Remote Debuggen von Android-Geräten
+description: Remotedebuggern von Liveinhalten auf einem Android-Gerät von einem Windows- oder macOS-Computer aus.
+title: Erste Schritte mit remote debuggen von Android-Geräten
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: c6bdb48460fb8f6ff26cbb02872e33cb50dd6e12
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
+ms.openlocfilehash: 61fad793ca03dbef68a5f769dbfd25e780fd9930
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125363"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398259"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,13 +28,13 @@ ms.locfileid: "11125363"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Erste Schritte mit dem Remotedebuggen von Android-Geräten  
+# <a name="get-started-with-remote-debugging-android-devices"></a>Erste Schritte mit remote debuggen von Android-Geräten  
 
-Remote Debuggen von Liveinhalten auf einem Android-Gerät von Ihrem Windows-oder macOS-Computer aus.  Auf der folgenden Lernprogramm Seite Lernen Sie, wie Sie die folgenden Aktionen ausführen.  
+Remotedebuggern von Liveinhalten auf einem Android-Gerät von Ihrem Windows- oder macOS-Computer.  Auf der folgenden Lernprogrammseite erfahren Sie, wie Sie die folgenden Aktionen ausführen.  
 
-*   Richten Sie Ihr Android-Gerät für das Remotedebuggen ein, und entdecken Sie es von Ihrem Entwicklungscomputer.  
-*   Überprüfen und Debuggen Sie Liveinhalte auf Ihrem Android-Gerät von Ihrem Entwicklungscomputer.  
-*   Screencast-Inhalte von Ihrem Android-Gerät auf eine devtools-Instanz auf Ihrem Entwicklungscomputer.  
+*   Richten Sie Ihr Android-Gerät für das Remotedebubugen ein, und ermitteln Sie es auf Ihrem Entwicklungscomputer.  
+*   Überprüfen und Debuggen von Liveinhalten auf Ihrem Android-Gerät auf Ihrem Entwicklungscomputer.  
+*   Screencastinhalt von Ihrem Android-Gerät auf eine DevTools-Instanz auf Ihrem Entwicklungscomputer.  
 
 <!--  
 :::image type="complex" source="../media/remote-debugging--remote-debugging.msft.png" alt-text="Remote Debugging lets you inspect a page running on an Android device from your development machine" lightbox="../media/remote-debugging--remote-debugging.msft.png":::
@@ -43,113 +43,113 @@ Remote Debuggen von Liveinhalten auf einem Android-Gerät von Ihrem Windows-oder
 -->  
 
 > [!NOTE]
-> Remote Debuggen die Microsoft Edge-App auf IOS-Geräten wird derzeit nicht unterstützt.  Das folgende Handbuch ist speziell auf das Remotedebuggen von Microsoft Edge auf Android-Geräten ausgerichtet.
-> Wenn Sie über ein macOS-Gerät verfügen, folgen Sie dem [Brightcove-Debugging-Leitfaden][BrightcoveSupportDebuggingMobileDevices] , um Microsoft Edge auf einem IOS-Gerät mithilfe von Safari Remote zu debuggen.  Weitere Informationen zum Tool Web Inspector in Safari finden Sie unter [Safari-Webentwicklungstools][AppleDeveloperSafariTools].  
+> Das Remotedebuding der Microsoft Edge-App auf iOS-Geräten wird derzeit nicht unterstützt.  Die folgende Anleitung konzentriert sich speziell auf das Remotedebugen von Microsoft Edge auf Android-Geräten.
+> Wenn Sie über ein macOS-Gerät verfügen, befolgen Sie die [Anleitung zum Debuggen von Brightcove,][BrightcoveSupportDebuggingMobileDevices] um Microsoft Edge mithilfe von Safari remote auf einem iOS-Gerät zu debuggen.  Weitere Informationen zum Web Inspector-Tool in Safari finden Sie unter [Safari Web Development Tools][AppleDeveloperSafariTools].  
 
-## Schritt 1: entdecken Ihres Android-Geräts  
+## <a name="step-1-discover-your-android-device"></a>Schritt 1: Ermitteln Ihres Android-Geräts  
 
-Der folgende Workflow funktioniert für die meisten Benutzer.  Wenn Sie weitere Hilfe benötigen, navigieren Sie zur [Problembehandlung: devtools erkennt den Abschnitt Android-Gerät nicht](#troubleshooting-devtools-is-not-detecting-the-android-device) .  
+Der folgende Workflow funktioniert für die meisten Benutzer.  Weitere Hilfe finden Sie unter [Troubleshooting: DevTools is not detecting the Android device](#troubleshooting-devtools-is-not-detecting-the-android-device) section.  
 
-1.  Öffnen Sie den Bildschirm " **Entwickler Optionen** " auf Ihrem Android-Gerät.  Weitere Informationen finden Sie unter [Konfigurieren von Optionen für Entwickler auf einem Gerät][AndroidDeveloperStudioDevOptions].  
-1.  Wählen Sie **USB-Debugging aktivieren**aus.  
+1.  Öffnen Sie **den Bildschirm Entwickleroptionen** auf Ihrem Android.  Weitere Informationen finden Sie unter [Configure On-Device Developer Options][AndroidDeveloperStudioDevOptions].  
+1.  Wählen **Sie USB-Debugging aktivieren aus.**  
 1.  Öffnen Sie auf Ihrem Entwicklungscomputer Microsoft Edge.  
-1.  Navigieren Sie zu der `edge://inspect` Seite in Microsoft Edge.  
+1.  Navigieren Sie zur `edge://inspect` Seite in Microsoft Edge.  
     
-    :::image type="complex" source="../media/remote-debugging-edge-inspect-no-targets.msft.png" alt-text="Remote Debugging lets you inspect a page running on an Android device from your development machine" lightbox="../media/remote-debugging-edge-inspect-no-targets.msft.png":::
+    :::image type="complex" source="../media/remote-debugging-edge-inspect-no-targets.msft.png" alt-text="Die edge://inspect in Microsoft Edge" lightbox="../media/remote-debugging-edge-inspect-no-targets.msft.png":::
        Abbildung1.  Die `edge://inspect` Seite in Microsoft Edge  
     :::image-end:::  
     
-1.  Verbinden Sie Ihr Android-Gerät mit einem USB-Kabel direkt mit Ihrem Entwicklungscomputer.  Wenn Sie das erste Mal versuchen, eine Verbindung herzustellen, sollte eine Aufforderung zu devtools angezeigt werden, um ein unbekanntes Gerät zu erkennen.  Akzeptieren Sie die Eingabeaufforderung **USB-Debugging-Berechtigung zulassen** auf Ihrem Android-Gerät.  
+1.  Verbinden Sie Ihr Android-Gerät über ein USB-Kabel direkt mit Ihrem Entwicklungscomputer.  Wenn Sie zum ersten Mal versuchen, eine Verbindung herzustellen, sollte eine Eingabeaufforderung zum Erkennen eines unbekannten Geräts durch DevTools angezeigt werden.  Akzeptieren Sie **die Berechtigungsaufforderung USB-Debugging** zulassen auf Ihrem Android-Gerät.  
     
-    :::image type="complex" source="../media/remote-debugging-android-permissions-prompt.msft.png" alt-text="Remote Debugging lets you inspect a page running on an Android device from your development machine" lightbox="../media/remote-debugging-android-permissions-prompt.msft.png":::
-       Abbildung2.  Die Eingabeaufforderung " **USB-Debugging-Berechtigung zulassen** " auf einem Android-Gerät  
+    :::image type="complex" source="../media/remote-debugging-android-permissions-prompt.msft.png" alt-text="Die Berechtigungsaufforderung USB-Debugging zulassen auf einem Android-Gerät" lightbox="../media/remote-debugging-android-permissions-prompt.msft.png":::
+       Abbildung2.  Die **Berechtigungsaufforderung USB-Debugging** zulassen auf einem Android-Gerät  
     :::image-end:::  
     
-1.  Wenn der Modellname Ihres Android-Geräts angezeigt wird, hat Microsoft Edge die Verbindung zu Ihrem Gerät erfolgreich hergestellt.  Fahren Sie mit dem Abschnitt [Schritt 2](#step-2-debug-content-on-your-android-device-from-your-development-machine) fort.  
+1.  Wenn der Modellname Ihres Android-Geräts angezeigt wird, hat Microsoft Edge die Verbindung zu Ihrem Gerät erfolgreich hergestellt.  Fahren Sie mit [dem Abschnitt Schritt 2](#step-2-debug-content-on-your-android-device-from-your-development-machine) fort.  
     
     <!--  
-    :::image type="complex" source="../media/remote-debugging--unknown-device.msft.png" alt-text="Remote Debugging lets you inspect a page running on an Android device from your development machine" lightbox="../media/remote-debugging--unknown-device.msft.png":::
+    :::image type="complex" source="../media/remote-debugging--unknown-device.msft.png" alt-text="The Remote Devices tab has successfully detected an unknown device that is pending authorization" lightbox="../media/remote-debugging--unknown-device.msft.png":::
        old Figure 4.  The **Remote Devices** tab has successfully detected an unknown device that is pending authorization  
     :::image-end:::
     -->  
     
-### Problembehandlung: devtools erkennt das Android-Gerät nicht.  
+### <a name="troubleshooting-devtools-is-not-detecting-the-android-device"></a>Problembehandlung: DevTools erkennt das Android-Gerät nicht  
 
 Verwenden Sie die folgenden Tipps, um Ihnen bei der Problembehandlung der richtigen Einstellungen für Ihre Hardware zu helfen.  
 
-*   Wenn Sie einen USB-Hub verwenden, versuchen Sie, Ihr Android-Gerät direkt an Ihren Entwicklungscomputer anzuschließen.  
-*   Versuchen Sie, das USB-Kabel zwischen Ihrem Android-Gerät und dem Entwicklungscomputer zu trennen, und schließen Sie dann das USB-Kabel neu an.  Führen Sie die Aufgabe aus, während ihre Android-und Entwicklungscomputer Bildschirme entriegelt sind.  
-*   Stellen Sie sicher, dass Ihr USB-Kabel funktioniert.  Sie sollten Dateien auf Ihrem Android-Gerät über Ihren Entwicklungscomputer prüfen können.  
+*   Wenn Sie einen USB-Hub verwenden, versuchen Sie, Ihr Android-Gerät direkt mit Ihrem Entwicklungscomputer zu verbinden.  
+*   Versuchen Sie, das USB-Kabel zwischen Ihrem Android-Gerät und dem Entwicklungscomputer zu trennen, und schließen Sie das USB-Kabel erneut an.  Führen Sie die Aufgabe aus, während die Bildschirme ihres Android- und Entwicklungscomputers entsperrt sind.  
+*   Stellen Sie sicher, dass Das USB-Kabel funktioniert.  Sie sollten Dateien auf Ihrem Android-Gerät von Ihrem Entwicklungscomputer aus überprüfen können.  
 
-Verwenden Sie die folgenden Tipps, um zu überprüfen, ob die Software ordnungsgemäß eingerichtet ist.  
+Verwenden Sie die folgenden Tipps, um zu überprüfen, ob Ihre Software ordnungsgemäß eingerichtet ist.  
 
-*   Wenn auf Ihrem Entwicklungscomputer Windows ausgeführt wird, versuchen Sie, die USB-Treiber für Ihr Android-Gerät manuell zu installieren.  Weitere Informationen finden Sie unter [Installieren von OEM-USB-Treibern][AndroidDeveloperToolsOemUsb].  
-*   Einige Kombinationen von Windows-und Android-Geräten \ (insbesondere Samsung \) erfordern zusätzliche Einstellungen.  Wenn Sie weitere Informationen erhalten möchten, navigieren Sie zu [devtools Geräte erkennt das Gerät nicht, wenn es angeschlossen ist][Stackoverflow21925992].  
+*   Wenn auf ihrem Entwicklungscomputer Windows ausgeführt wird, versuchen Sie, die USB-Treiber für Ihr Android-Gerät manuell zu installieren.  Weitere Informationen finden Sie unter [Installieren von OEM-USB-Treibern.][AndroidDeveloperToolsOemUsb]  
+*   Einige Kombinationen von Windows- und Android-Geräten \(insbesondere Samsung\) erfordern zusätzliche Einstellungen.  Weitere Informationen finden Sie unter [DevTools Devices does not detect device when plugged in][Stackoverflow21925992].  
 
-Verwenden Sie die folgenden Tipps, um Sie bei der Problembehandlung zu unterstützen, wenn die Eingabeaufforderung **USB-Debugging zulassen** auf Ihrem Android-Gerät nicht angezeigt wird.  
+Verwenden Sie die folgenden Tipps, um Probleme zu beheben, wenn die Eingabeaufforderung **USB-Debugging** zulassen nicht auf Ihrem Android-Gerät angezeigt wird.  
 
-*   Trennen Sie das USB-Kabel, und verbinden Sie es dann erneut, während sich devtools auf Ihrem Entwicklungscomputer befindet und Ihr Android-Homescreen angezeigt wird.  
+*   Trennen Sie die Verbindung, und verbinden Sie das USB-Kabel erneut, während DevTools auf Ihrem Entwicklungscomputer im Fokus steht und Ihr Android-Startbildschirm angezeigt wird.  
     
     > [!NOTE]
-    > Die Eingabeaufforderung wird angezeigt, wenn Ihre Android-oder Entwicklungscomputer Bildschirme gesperrt sind.  
+    > Die Eingabeaufforderung wird angezeigt, wenn Die Bildschirme ihres Android- oder Entwicklungscomputers gesperrt sind.  
 
-*   Aktualisieren der Anzeigeeinstellungen für Ihr Android-Gerät und Ihren Entwicklungscomputer, damit jeder nie in den Ruhezustand wechselt  
-*   Festlegen des USB-Modus für Android auf PTP  Weitere Informationen finden Sie unter [Galaxy S4 zeigt das Dialogfeld Autorisierungs-USB-Debugging nicht][StackexchangeAndroid101933]an.  
-*   Wählen Sie auf dem Android-Gerät auf dem Bildschirm **Entwickler Optionen** die Option **USB-Debugging-Berechtigungen widerrufen** aus, um den Status auf "neu" zurückzusetzen.  
+*   Aktualisieren der Anzeigeeinstellungen für Ihr Android-Gerät und Ihren Entwicklungscomputer, sodass sie niemals in den Ruhezustand gehen.  
+*   Festlegen des USB-Modus für Android auf PTP.  Weitere Informationen finden Sie unter Navigieren zu [Das Dialogfeld USB-Debuggen][StackexchangeAndroid101933]autorisieren wird nicht angezeigt.  
+*   Klicken Sie auf dem **** Bildschirm Entwickleroptionen auf Ihrem Android-Gerät auf Widerrufen von USB-Debuggingautorisierungen, um es auf einen neuen Status zurückzusetzen. ****  
 
-Wenn Sie eine Lösung finden, die auf dieser Seite nicht aufgeführt ist, oder wenn in [devtools-Geräten das Gerät nicht erkannt][Stackoverflow21925992] wird, wenn es sich beim Stapelüberlauf befindet, fügen Sie Ihre Lösung zur Stapelüberlauf Frage hinzu.<!--, or [open an issue in the webfundamentals repository][GitHubWebFundamentalsNewIssue]-->!  
+Wenn Sie eine Lösung finden, die auf dieser Seite oder in [DevTools Devices][Stackoverflow21925992] nicht erkannt wird, wenn das Gerät auf Stack Overflow angeschlossen ist, fügen Sie Ihre Lösung der Frage Stack Overflow hinzu.<!--, or [open an issue in the webfundamentals repository][GitHubWebFundamentalsNewIssue]-->.  
 
-## Schritt 2: Debuggen von Inhalten auf Ihrem Android-Gerät auf dem Entwicklungscomputer  
+## <a name="step-2-debug-content-on-your-android-device-from-your-development-machine"></a>Schritt 2: Debuggen von Inhalten auf Ihrem Android-Gerät auf Ihrem Entwicklungscomputer  
 
 1.  Öffnen Sie Microsoft Edge auf Ihrem Android-Gerät.  
-1.  Navigieren Sie zu `edge://inspect` , wird der Modellname Ihres Android-Geräts angezeigt, gefolgt von der Seriennummer des Geräts.  Darunter sollte die Version von Microsoft Edge, die auf dem Gerät ausgeführt wird, mit der Versionsnummer in Klammern angezeigt werden.  Auf jeder geöffneten Microsoft Edge-Registerkarte wird ein eindeutiger Abschnitt angezeigt.  Sie können mit dieser Registerkarte in einem Abschnitt interagieren.  <!--If there are any apps using WebView, a section for each of those apps should be displayed, too.  --><!--In [**Figure 5**](#figure-5) there are no tabs or WebViews open.  -->  
+1.  Navigieren Sie `edge://inspect` zu , der Modellname Ihres Android-Geräts wird angezeigt, gefolgt von der Seriennummer des Geräts.  Unten sollte die auf dem Gerät ausgeführte Version von Microsoft Edge mit der Versionsnummer in Klammern angezeigt werden.  Jede geöffnete Microsoft Edge-Registerkarte erhält einen eindeutigen Abschnitt.  Sie können über einen Abschnitt mit dieser Registerkarte interagieren.  <!--If there are any apps using WebView, a section for each of those apps should be displayed, too.  --><!--In [**Figure 5**](#figure-5) there are no tabs or WebViews open.  -->  
     
-    :::image type="complex" source="../media/remote-debugging-edge-inspect-with-targets.msft.png" alt-text="Remote Debugging lets you inspect a page running on an Android device from your development machine" lightbox="../media/remote-debugging-edge-inspect-with-targets.msft.png":::
+    :::image type="complex" source="../media/remote-debugging-edge-inspect-with-targets.msft.png" alt-text="Ein verbundenes Remotegerät" lightbox="../media/remote-debugging-edge-inspect-with-targets.msft.png":::
        Abbildung3.  Ein verbundenes Remotegerät  
     :::image-end:::  
     
-1.  Geben Sie im Textfeld **Öffnen mit URL** eine URL ein, und wählen Sie dann **Öffnen**aus.  Die Seite wird in einer neuen Registerkarte auf Ihrem Android-Gerät geöffnet.  
-1.  Wählen Sie neben der soeben geöffneten URL über **prüfen** aus.  Eine neue devtools-Instanz wird geöffnet.  
+1.  Geben Sie **im Textfeld Registerkarte Öffnen** mit URL eine URL ein, und wählen Sie dann Öffnen **aus.**  Die Seite wird auf ihrem Android-Gerät auf einer neuen Registerkarte geöffnet.  
+1.  Wählen **Sie überprüfen** neben der URL aus, die Sie gerade geöffnet haben.  Eine neue DevTools-Instanz wird geöffnet.  
 
 <!-- The version of Microsoft Edge running on your Android device determines the version of DevTools that opens on your development machine.  
     So, if your Android device is running a very old version of Microsoft Edge, the DevTools instance may look very different than what you are used to.   -->
 
-### Weitere Aktionen: fokussieren, erneutes Laden oder Schließen einer Registerkarte  
+### <a name="more-actions-focus-refresh-or-close-a-tab"></a>Weitere Aktionen: Fokussieren, Aktualisieren oder Schließen einer Registerkarte  
 
-Wählen Sie die **Registerkarte Fokus**, **erneut laden**oder **Schließen** neben der Registerkarte aus, die Sie fokussieren, erneut laden oder schließen möchten.  
+Wählen **Sie Fokusregisterkarte**aus, **laden**oder **schließen** Sie neben der Registerkarte, die Sie fokussieren, aktualisieren oder schließen möchten.  
 
-:::image type="complex" source="../media/remote-debugging-edge-inspect-with-targets-buttons.msft.png" alt-text="Remote Debugging lets you inspect a page running on an Android device from your development machine" lightbox="../media/remote-debugging-edge-inspect-with-targets-buttons.msft.png":::
-   Abbildung 4.  Die Schaltflächen zum fokussieren, erneuten Laden oder Schließen einer Registerkarte  
+:::image type="complex" source="../media/remote-debugging-edge-inspect-with-targets-buttons.msft.png" alt-text="Die Schaltflächen zum Fokussieren, Aktualisieren oder Schließen einer Registerkarte" lightbox="../media/remote-debugging-edge-inspect-with-targets-buttons.msft.png":::
+   Abbildung 4.  Die Schaltflächen zum Fokussieren, Aktualisieren oder Schließen einer Registerkarte  
 :::image-end:::  
 
-### Überprüfen von Elementen  
+### <a name="inspect-elements"></a>Überprüfen von Elementen  
 
-Wechseln Sie zum Panel **Elemente** der devtools-Instanz, und zeigen Sie mit der Maus auf ein Element, um es im Viewport Ihres Android-Geräts zu markieren.  
+Navigieren Sie zum **Elementtool** Ihrer DevTools-Instanz, und zeigen Sie auf ein Element, um es im Viewport Ihres Android-Geräts zu markieren.  
 
-Sie können auch ein Element auf dem Bildschirm Ihres Android-Geräts auswählen, um es im **Element** Bereich auszuwählen.  Wählen **Sie** ![ ][ImageSelectElementIcon] in ihrer devtools-Instanz das Symbol Element \ (Element auswählen \) aus, und wählen Sie dann das Element auf dem Bildschirm Ihres Android-Geräts aus.  
-
-> [!NOTE]
-> **Element auswählen** ist nach der ersten Auswahl deaktiviert, damit Sie es jedes Mal wieder aktivieren müssen, wenn Sie das Feature verwenden möchten.  
-
-### Screencast Ihres Android-Bildschirms auf Ihrem Entwicklungscomputer  
-
-Wählen Sie **Screencast umschalten** \ ( ![ Screencast ][ImageToggleScreencastIcon] \) Symbol aus, um den Inhalt Ihres Android-Geräts in ihrer devtools-Instanz anzuzeigen.  
-
-Sie können mit dem Screencast wie folgt interagieren:  
-
-*   Klicks werden in TAPS übersetzt, wobei die richtigen Touch-Ereignisse auf dem Gerät ausgelöst werden.  
-*   Tastenanschläge auf dem Computer werden an das Gerät gesendet.  
-*   Wenn Sie eine Pinch-Geste simulieren möchten, halten Sie `Shift` beim Ziehen gedrückt.  
-*   Verwenden Sie zum Scrollen das Trackpad oder Mausrad, oder werfen Sie den Mauszeiger auf.
+Sie können auch ein Element auf dem Bildschirm Ihres Android-Geräts auswählen, um es im Tool **Elemente auszuwählen.**  Wählen **Sie Element** auswählen \( Element auswählen \) in Ihrer DevTools-Instanz aus, und wählen Sie dann das Element auf dem ![ ][ImageSelectElementIcon] Android-Gerätebildschirm aus.  
 
 > [!NOTE]
-> Verwenden Sie die folgenden Tipps, um Ihnen einen Screencast zu ermöglichen.  
+> **Select Element** ist nach der ersten Auswahl deaktiviert, daher müssen Sie es jedes Mal erneut aktivieren, wenn Sie das Feature verwenden möchten.  
+
+### <a name="screencast-your-android-screen-to-your-development-machine"></a>Screencast your Android screen to your development machine  
+
+Wählen **Sie Screencast \( Screencast** \) umschalten aus, um den Inhalt Ihres Android-Geräts in Ihrer ![ ][ImageToggleScreencastIcon] DevTools-Instanz anzuzeigen.  
+
+Sie können auf folgende Weise mit dem Screencast interagieren.  
+
+*   Auswahlen werden in Tipptasten übersetzt, die richtige Touchereignisse auf dem Gerät abfeuern.  
+*   Tastaturanschläge auf Ihrem Computer werden an das Gerät gesendet.  
+*   Halten Sie beim Ziehen gedrückt, um eine `Shift` Prisegeste zu simulieren.  
+*   Wenn Sie einen Bildlauf durchführen möchten, verwenden Sie das Trackpad oder mausrad oder bewegen Sie sich mit dem Mauszeiger.
+
+> [!NOTE]
+> Verwenden Sie die folgenden Tipps, um Ihnen beim Screencast zu helfen.  
 > 
-> *   Screencasts zeigen nur Seiteninhalte an.  Transparente Abschnitte des Screencasts stellen Geräteschnittstellen dar, beispielsweise die Microsoft Edge-Adressleiste, die Android-Statusleiste oder die Android-Tastatur.  
-> *   Screencasts wirken sich negativ auf die Frame-Raten aus.  Deaktivieren Sie das Screencasting beim Messen von Scrolls oder Animationen, um eine genauere Vorstellung von der Leistung Ihrer Seite zu erhalten.  
-> *   Wenn Ihr Android-Gerät gesperrt ist, wird der Inhalt Ihres Screencasts nicht mehr angezeigt.  Entsperren Sie den Bildschirm Ihres Android-Geräts, um den Screencast automatisch fortzusetzen.  
+> *   Screencasts zeigen nur Seiteninhalte an.  Transparente Teile des Screencasts stellen Geräteschnittstellen dar, z. B. die Microsoft Edge-Adressleiste, die Android-Statusleiste oder die Android-Tastatur.  
+> *   Screencasts wirken sich negativ auf die Frameraten aus.  Deaktivieren Sie das Screencasting, während Sie Bildlauf oder Animationen messen, um ein genaueres Bild der Leistung Ihrer Seite zu erhalten.  
+> *   Wenn der Bildschirm Ihres Android-Geräts gesperrt wird, wird der Inhalt des Screencasts ausgeblendet.  Entsperren Sie den Bildschirm Ihres Android-Geräts, um den Screencast automatisch fortsetzen zu können.  
 
-## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -160,24 +160,24 @@ Sie können mit dem Screencast wie folgt interagieren:
 
 <!-- links -->  
 
-[AndroidDeveloperStudioDevOptions]: https://developer.android.com/studio/debug/dev-options "Konfigurieren von Optionen für Entwickler auf einem Gerät | Android-Entwickler"  
+[AndroidDeveloperStudioDevOptions]: https://developer.android.com/studio/debug/dev-options "Konfigurieren von On-Device-Entwickleroptionen | Android Developer"  
 [AndroidDeveloperToolsOemUsb]: https://developer.android.com/tools/extras/oem-usb.html "Installieren von OEM-USB-Treibern | Android-Entwickler"  
 
-[AppleDeveloperSafariTools]: https://developer.apple.com/safari/tools "Safari-Webentwicklungs Tools | Apple-Entwickler"  
+[AppleDeveloperSafariTools]: https://developer.apple.com/safari/tools "Safari Web Development Tools | Apple Developer"  
 
-[BrightcoveSupportDebuggingMobileDevices]: https://support.brightcove.com/debugging-mobile-devices "Debuggen auf mobilen Geräten | Brightcove-Support"  
+[BrightcoveSupportDebuggingMobileDevices]: https://support.brightcove.com/debugging-mobile-devices "Debuggen auf mobilen | Unterstützung von Brightcove"  
 
 <!-- [GitHubWebFundamentalsNewIssue]: https://github.com/Alphabet/webfundamentals/issues/new?title=[Remote%20Debugging] "GitHub - Web Fundamentals - New Issue"  -->  
 
-[StackexchangeAndroid101933]: https://android.stackexchange.com/questions/101933 "ADB-Android-Enthusiast Stack Exchange"  
+[StackexchangeAndroid101933]: https://android.stackexchange.com/questions/101933 "adb – Android Enthusiast Stack Exchange"  
 
-[Stackoverflow21925992]: https://stackoverflow.com/questions/21925992 "DevTools-Geräte erkennen das Gerät nicht, wenn ein eingesteckter Stapelüberlauf vorliegt"  
+[Stackoverflow21925992]: https://stackoverflow.com/questions/21925992 "DevTools-Geräte erkennen gerät nicht, wenn es angeschlossen ist – Stack Overflow"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
-> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/index) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
+> Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
+> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/index) und wird von [Kayce Basken][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) verfasst.  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

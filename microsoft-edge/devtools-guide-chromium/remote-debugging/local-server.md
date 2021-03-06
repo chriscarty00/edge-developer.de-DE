@@ -1,18 +1,18 @@
 ---
-description: Hosten Sie eine Website auf einem Entwicklungscomputer-Webserver, und greifen Sie dann auf den Inhalt eines Android-Geräts zu.
+description: Hosten Sie eine Website auf einem Webserver des Entwicklungscomputers, und greifen Sie dann über ein Android-Gerät auf die Inhalte zu.
 title: Zugreifen auf lokale Server
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: f994092460f090743119d7304bfe12aa28556b19
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
+ms.openlocfilehash: 16c9927ce4548d71681d35e643aea0a6c44ec75a
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125412"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398210"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,107 +28,107 @@ ms.locfileid: "11125412"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Zugreifen auf lokale Server  
+# <a name="access-local-servers"></a>Zugreifen auf lokale Server  
 
-Hosten Sie eine Website auf einem Entwicklungscomputer-Webserver, und greifen Sie dann auf den Inhalt eines Android-Geräts zu.  
+Hosten Sie eine Website auf einem Webserver des Entwicklungscomputers, und greifen Sie dann von einem Android-Gerät auf die Inhalte zu.  
 
-Führen Sie mit einem USB-Kabel und Microsoft Edge devtools eine Website von einem Entwicklungscomputer aus, und zeigen Sie dann die Website auf einem Android-Gerät an.  
+Führen Sie mit einem USB-Kabel und Microsoft Edge DevTools eine Website von einem Entwicklungscomputer aus aus, und zeigen Sie die Website dann auf einem Android-Gerät an.  
 
-### Zusammenfassung  
+### <a name="summary"></a>Zusammenfassung  
 
-*   Mit der Port Weiterleitung können Sie Inhalte anzeigen, die von dem Webserver gehostet werden, der auf Ihrem Android-Gerät auf Ihrem Entwicklungscomputer ausgeführt wird.  
-*   Wenn Ihr Webserver eine benutzerdefinierte Domäne verwendet, richten Sie Ihr Android-Gerät für den Zugriff auf den Inhalt dieser Domäne mit benutzerdefinierter Domänenzuordnung ein.  
+*   Mit der Port weiterleitung können Sie Inhalte anzeigen, die vom Webserver auf Ihrem Entwicklungscomputer auf Ihrem Android-Gerät gehostet werden.  
+*   Wenn Ihr Webserver eine benutzerdefinierte Domäne verwendet, richten Sie Ihr Android-Gerät ein, um mit benutzerdefinierter Domänenzuordnung auf den Inhalt dieser Domäne zu zugreifen.  
 
-## Einrichten der Portweiterleitung  
+## <a name="set-up-port-forwarding"></a>Einrichten der Port weiterleitung  
 
-Mit der Port Weiterleitung kann Ihr Android-Gerät auf Inhalte zugreifen, die auf dem Webserver gehostet werden, der auf Ihrem Entwicklungscomputer ausgeführt wird.  Die Port Weiterleitung funktioniert durch Erstellen eines abhörenden TCP-Ports auf Ihrem Android-Gerät, der einem TCP-Port auf dem Entwicklungscomputer zugeordnet ist.  Der Datenverkehr zwischen den Anschlüssen durchläuft die USB-Verbindung zwischen Ihrem Android-Gerät und dem Entwicklungscomputer, sodass die Verbindung nicht von Ihrer Netzwerkkonfiguration abhängt.  
+Die Port weiterleitung ermöglicht Ihrem Android-Gerät den Zugriff auf Inhalte, die auf dem Webserver gehostet werden, der auf Ihrem Entwicklungscomputer ausgeführt wird.  Die Port weiterleitung funktioniert, indem sie einen lauschenden TCP-Port auf Ihrem Android-Gerät erstellt, der einem TCP-Port auf Ihrem Entwicklungscomputer zuteil wird.  Der Datenverkehr zwischen den Ports wird über die USB-Verbindung zwischen Ihrem Android-Gerät und dem Entwicklungscomputer übertragen, sodass die Verbindung nicht von Ihrer Netzwerkkonfiguration abhängig ist.  
 
-So aktivieren Sie die Portweiterleitung:  
+So aktivieren Sie die Port weiterleitung:  
 
-1.  Richten Sie das [Remotedebuggen][RemoteDebuggingGettingStarted] zwischen Ihrem Entwicklungscomputer und Ihrem Android-Gerät ein.  Wenn Sie den Vorgang beenden, sollten Sie Ihr Android-Gerät im linken Menü des Dialogfelds " **Geräte prüfen** " und einer **verbundenen** Statusanzeige sehen.  
-1.  Aktivieren Sie im Dialogfeld **Geräte prüfen** in devtools die **Port Weiterleitung**.  
-1.  Wählen Sie **Regel hinzufügen**aus.  
+1.  Einrichten des [Remotedebu debuggings][RemoteDebuggingGettingStarted] zwischen Ihrem Entwicklungscomputer und Ihrem Android-Gerät.  Wenn Sie fertig sind, sollte Ihr Android-Gerät im linken **** Menü des Dialogfelds Geräte überprüfen und eine Statusanzeige **verbunden** angezeigt werden.  
+1.  Aktivieren Sie **im Dialogfeld Geräte** überprüfen in DevTools port **forwarding**.  
+1.  Wählen Sie **Add rule**aus.  
     
-    :::image type="complex" source="../media/remote-debugging-remote-devices-devices-port-forwarding-add-rule.msft.png" alt-text="Hinzufügen einer Port Weiterleitungsregel" lightbox="../media/remote-debugging-remote-devices-devices-port-forwarding-add-rule.msft.png":::
-       Hinzufügen einer Port Weiterleitungsregel  
+    :::image type="complex" source="../media/remote-debugging-remote-devices-devices-port-forwarding-add-rule.msft.png" alt-text="Hinzufügen einer Port weiterleitungsregel" lightbox="../media/remote-debugging-remote-devices-devices-port-forwarding-add-rule.msft.png":::
+       Hinzufügen einer Port weiterleitungsregel  
     :::image-end:::  
     
-1.  Geben Sie im Textfeld **Device Port** auf der linken Seite die Portnummer ein, auf der `localhost` Sie auf Ihrem Android-Gerät auf die Website zugreifen können möchten.  Wenn Sie beispielsweise auf die Website von Enter aus zugreifen `localhost:5000` möchten `5000` .  
-1.  Geben Sie im Textfeld **lokale Adresse** auf der rechten Seite die IP-Adresse oder den Hostnamen ein, auf dem Ihre Website auf dem Webserver gehostet wird, der auf Ihrem Entwicklungscomputer ausgeführt wird, gefolgt von der Portnummer.  Beispiel: Wenn Ihre Website auf Enter ausgeführt wird `localhost:7331` `localhost:7331` .  
+1.  Geben Sie im Textfeld **Geräteport** auf der linken Seite die Portnummer ein, von der aus Sie auf die Website auf Ihrem `localhost` Android-Gerät zugreifen möchten.  Wenn Sie z. B. über die Eingabe auf die Website `localhost:5000` zugreifen `5000` möchten.  
+1.  Geben Sie **im** Textfeld Lokale Adresse auf der rechten Seite die IP-Adresse oder den Hostnamen ein, auf dem Ihre Website auf dem Webserver gehostet wird, der auf dem Entwicklungscomputer ausgeführt wird, gefolgt von der Portnummer.  Wenn Ihre Website z. B. bei der Eingabe `localhost:7331` ausgeführt `localhost:7331` wird.  
 1.  Wählen Sie **Hinzufügen**.  
     
-Die Port Weiterleitung ist nun eingerichtet.  Sehen Sie sich die Statusanzeige für den Port Forward auf der Registerkarte auf Ihrem Gerät im Dialogfeld " **Geräte überprüfen** " an.  
+Die Port weiterleitung ist jetzt eingerichtet.  Überprüfen Sie die Statusanzeige für den Port vorwärts auf der Registerkarte ihres Geräts im Dialogfeld **Geräte** überprüfen.  
 
-:::image type="complex" source="../media/remote-debugging-remote-devices-devices-port-forwarding-5000-edge-user-agent.msft.png" alt-text="Hinzufügen einer Port Weiterleitungsregel" lightbox="../media/remote-debugging-remote-devices-devices-port-forwarding-5000-edge-user-agent.msft.png":::
-   Port Weiterleitungsstatus  
+:::image type="complex" source="../media/remote-debugging-remote-devices-devices-port-forwarding-5000-edge-user-agent.msft.png" alt-text="Status der Port weiterleitung" lightbox="../media/remote-debugging-remote-devices-devices-port-forwarding-5000-edge-user-agent.msft.png":::
+   Status der Port weiterleitung  
 :::image-end:::  
 
-Wenn Sie den Inhalt anzeigen möchten, öffnen Sie Microsoft Edge auf Ihrem Android-Gerät, und wechseln Sie zu dem `localhost` Port, den Sie im Feld **Device Port** festgelegt haben.  Wenn Sie beispielsweise `5000` in das Feld eingegeben haben, besuchen Sie `localhost:5000` .  
+Um den Inhalt anzuzeigen, öffnen Sie Microsoft Edge auf Ihrem Android-Gerät, und wechseln Sie zu dem Port, den Sie `localhost` im Feld **Geräteport angegeben** haben.  Wenn Sie z. B. `5000` in das Feld eingegeben haben, besuchen Sie `localhost:5000` .  
 
-## Zuordnen zu benutzerdefinierten lokalen Domänen  
+## <a name="map-to-custom-local-domains"></a>Zuordnung zu benutzerdefinierten lokalen Domänen  
 
-Mit der benutzerdefinierten Domänenzuordnung können Sie Inhalte auf einem Android-Gerät von einem Webserver auf dem Entwicklungscomputer anzeigen, auf dem eine benutzerdefinierte Domäne verwendet wird.  
+Mit der benutzerdefinierten Domänenzuordnung können Sie Inhalte auf einem Android-Gerät von einem Webserver auf Ihrem Entwicklungscomputer anzeigen, der eine benutzerdefinierte Domäne verwendet.  
 
-Nehmen wir beispielsweise an, dass Ihre Website eine JavaScript-Bibliothek eines Drittanbieters verwendet, die nur in der Domäne funktioniert `microsoft-edge.devtools` .  So erstellen Sie einen Eintrag in Ihrer `hosts` Datei auf Ihrem Entwicklungscomputer, um diese Domäne an `localhost` \ (beispielsweise `127.0.0.1 microsoft-edge.devtools` \) zuzuordnen.  Nachdem Sie die benutzerdefinierte Domänenzuordnung und Portweiterleitung eingerichtet haben, können Sie die Website auf Ihrem Android-Gerät unter der URL anzeigen `microsoft-edge.devtools` .  
+Angenommen, Ihre Website verwendet eine JavaScript-Bibliothek eines Drittanbieters, die nur in der Domäne `microsoft-edge.devtools` funktioniert.  Sie erstellen also einen Eintrag in Ihrer Datei auf dem Entwicklungscomputer, um diese Domäne `hosts` `localhost` \(z. B. `127.0.0.1 microsoft-edge.devtools` \) zu zuordnungen.  Nachdem Sie die benutzerdefinierte Domänenzuordnung und Port weiterleitung eingerichtet haben, zeigen Sie die Website auf Ihrem Android-Gerät unter der URL `microsoft-edge.devtools` an.  
 
-### Einrichten der Portweiterleitung an Proxy Server  
+### <a name="set-up-port-forwarding-to-proxy-server"></a>Einrichten der Port weiterleitung an den Proxyserver  
 
-Wenn Sie eine benutzerdefinierte Domäne zuordnen möchten, müssen Sie einen Proxy Server auf Ihrem Entwicklungscomputer ausführen.  Beispiele für Proxy Server sind [Charles][CharlesWebDebuggingProxy], [squid][SquidOptimisingWebDelivery]und [Fiddler][FiddlerWebDebuggingProxy].  
+Zum Zuordnung einer benutzerdefinierten Domäne müssen Sie einen Proxyserver auf dem Entwicklungscomputer ausführen.  Beispiele für Proxyserver sind [Charles][CharlesWebDebuggingProxy], [Squid][SquidOptimisingWebDelivery]und [Fiddler][FiddlerWebDebuggingProxy].  
 
-So richten Sie die Portweiterleitung an einen Proxy ein:  
+So richten Sie die Port weiterleitung an einen Proxy ein:  
 
-1.  Führen Sie den Proxy Server aus, und notieren Sie den verwendeten Port.  
+1.  Führen Sie den Proxyserver aus, und zeichnen Sie den verwendeten Port auf.  
     
     > [!NOTE]
-    > Der Proxy Server und Ihr Webserver müssen auf unterschiedlichen Ports ausgeführt werden.  
+    > Der Proxyserver und der Webserver müssen an unterschiedlichen Ports ausgeführt werden.  
     
-1.  Richten Sie die [Portweiterleitung](#set-up-port-forwarding) auf Ihr Android-Gerät ein.  Geben Sie für das Feld **lokale Adresse** `localhost:` den Port ein, auf dem Ihr Proxy Server ausgeführt wird.  Wenn Sie beispielsweise auf Port ausgeführt wird `8000` , navigieren Sie zu `localhost:8000` .  Geben Sie im Feld **Device Port** die Nummer ein, die Ihr Android-Gerät hören soll, beispielsweise `3333` .  
+1.  Richten Sie [die Port-Weiterleitung an](#set-up-port-forwarding) Ihr Android-Gerät ein.  Geben Sie **für das feld lokale** Adresse gefolgt vom Port ein, auf dem Der `localhost:` Proxyserver ausgeführt wird.  Wenn sie beispielsweise im Port ausgeführt `8000` wird, navigieren Sie zu `localhost:8000` .  Geben Sie **im Feld Geräteport** die Nummer ein, auf der Ihr Android-Gerät lauschen soll, z. B. `3333` .  
     
-### Konfigurieren von Proxyeinstellungen auf Ihrem Gerät  
+### <a name="configure-proxy-settings-on-your-device"></a>Konfigurieren von Proxyeinstellungen auf Ihrem Gerät  
 
-Als nächstes müssen Sie Ihr Android-Gerät für die Kommunikation mit dem Proxy Server konfigurieren.  
+Als Nächstes müssen Sie Ihr Android-Gerät für die Kommunikation mit dem Proxyserver konfigurieren.  
 
-1.  Wechseln Sie auf Ihrem Android-Gerät zu **Einstellungen**  >  **Wi-Fi**.  
-1.  Lange – drücken Sie den Namen des Netzwerks, mit dem Sie gerade verbunden sind.  
+1.  Navigieren Sie auf Ihrem Android-Gerät zu **Einstellungen**  >  **WI-Fi**.  
+1.  Drücken Sie lange den Namen des Netzwerks, mit dem Sie derzeit verbunden sind.  
     
     > [!NOTE]
-    > Proxy Einstellungen gelten pro Netzwerk.  
+    > Proxyeinstellungen gelten pro Netzwerk.  
     
-1.  Wählen Sie **Netzwerk ändern**aus.  
-1.  Wählen Sie **Erweiterte Optionen**aus.  Die Proxyeinstellungen werden angezeigt.  
-1.  Wählen Sie das **Proxy** -Menü und dann **manuell**aus.  
-1.  Geben Sie für das Feld **Proxy Hostname** ein `localhost` .  
-1.  Geben Sie im Feld **Proxy Port** die Portnummer ein, die Sie im vorherigen Abschnitt für den **Geräteanschluss** eingegeben haben.  
+1.  Wählen **Sie Netzwerk ändern aus.**  
+1.  Wählen **Sie Erweiterte Optionen aus.**  Die Proxyeinstellungen werden angezeigt.  
+1.  Wählen Sie das **Menü Proxy** aus, und wählen Sie **Manuell aus.**  
+1.  Geben Sie **für das Feld Proxyhostname** `localhost` ein.  
+1.  Geben Sie **für das Feld Proxyport** die Portnummer ein, die Sie im vorherigen Abschnitt für den **Geräteport** eingegeben haben.  
 1.  Wählen Sie **Speichern**aus.  
     
-Mit diesen Einstellungen leitet Ihr Gerät alle seine Anforderungen an den Proxy auf dem Entwicklungscomputer weiter.  Der Proxy stellt Anforderungen für Ihr Gerät, damit Anforderungen an Ihre angepasste lokale Domäne ordnungsgemäß aufgelöst werden.  
+Mit diesen Einstellungen gibt Ihr Gerät alle Anforderungen an den Proxy auf Ihrem Entwicklungscomputer weiter.  Der Proxy stellt Anforderungen im Auftrag Ihres Geräts, sodass Anforderungen an Ihre angepasste lokale Domäne ordnungsgemäß aufgelöst werden.  
 
-Auf Ihrem Android-Gerät können Sie nun auf benutzerdefinierte Domänen zugreifen, genau wie auf dem Entwicklungscomputer.  
+Greifen Sie jetzt wie auf dem Entwicklungscomputer auf benutzerdefinierte Domänen auf Ihrem Android-Gerät zu.  
 
-Wenn Ihr Webserver von einem nicht standardmäßigen Port ausgeführt wird, denken Sie daran, den Port anzugeben, wenn Sie den Inhalt von Ihrem Android-Gerät anfordern.  Wenn Ihr Webserver beispielsweise die benutzerdefinierte Domäne `microsoft-edge.devtools` am Port verwendet `7331` , sollten Sie die URL verwenden, wenn Sie die Website von Ihrem Android-Gerät aus anzeigen `microsoft-edge.devtools:7331` .  
+Wenn auf Ihrem Webserver ein nicht standardmäßiger Port ausgeführt wird, denken Sie daran, den Port anzugeben, wenn Sie den Inhalt von Ihrem Android-Gerät anfordern.  Wenn Ihr Webserver beispielsweise die benutzerdefinierte Domäne am Port verwendet, sollten Sie die URL verwenden, wenn Sie die Website von Ihrem `microsoft-edge.devtools` `7331` Android-Gerät aus `microsoft-edge.devtools:7331` anzeigen.  
 
 > [!TIP]
-> Wenn Sie das normale Browsen fortsetzen möchten, denken Sie daran, die Proxyeinstellungen auf Ihrem Android-Gerät zurückzusetzen, nachdem Sie die Verbindung mit dem Entwicklungscomputer getrennt haben.  
+> Denken Sie zum Fortsetzen des normalen Browsens daran, die Proxyeinstellungen auf Ihrem Android-Gerät wiederhergestellt zu haben, nachdem Sie die Verbindung mit dem Entwicklungscomputer getrennt haben.  
 
-## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[RemoteDebuggingGettingStarted]: ./index.md "Erste Schritte mit dem Remotedebuggen von Android-Geräten | Microsoft docs"  
+[RemoteDebuggingGettingStarted]: ./index.md "Erste Schritte mit remote debuggen von Android-Geräten | Microsoft Docs"  
 
-[CharlesWebDebuggingProxy]: https://www.charlesproxy.com "Charles Web Debugging-Proxy"  
+[CharlesWebDebuggingProxy]: https://www.charlesproxy.com "Charles Web Debugging Proxy"  
 
-[SquidOptimisingWebDelivery]: https://www.squid-cache.org "Squid: Optimieren der Web-Zustellung"  
+[SquidOptimisingWebDelivery]: https://www.squid-cache.org "squid : Optimieren der Webzustellung"  
 
-[FiddlerWebDebuggingProxy]: https://www.telerik.com/fiddler "Fiddler-Free Web Debugging Proxy"  
+[FiddlerWebDebuggingProxy]: https://www.telerik.com/fiddler "Fiddler – Free Web Debugging Proxy"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
-> Die ursprüngliche Seite wird [hier](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/local-server) gefunden und von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) und [Meggin Kearney][MegginKearney] \ (Tech Writer \) erstellt.  
+> Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
+> Die ursprüngliche Seite [](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/local-server) befindet sich hier und wird von [Kayce Basken][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) und [Meggin Kearney][MegginKearney] \(Tech Writer\) verfasst.  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

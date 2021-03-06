@@ -1,85 +1,69 @@
 ---
-description: DevTools Protocol Version 0,1 (EdgeHTML)-Referenz für die Seiten Domäne. Aktionen und Ereignisse im Zusammenhang mit der geprüften Seite gehören der Seiten Domäne an.
-title: Page Domain-devtools Protocol Version 0,1 (EdgeHTML)
+description: DevTools Protocol Version 0.1 (EdgeHTML)-Referenz für die Seitendomäne. Aktionen und Ereignisse im Zusammenhang mit der überprüften Seite gehören zur Seitendomäne.
+title: Page Domain - DevTools Protocol Version 0.1 (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.date: 11/03/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
-ms.date: 11/19/2020
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 55575e54b9125d7ff544c23c81da4b15d3b56fb1
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: b04b0685a6b465d40e999a2a48d370573a3058d8
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11234025"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399148"
 ---
-# Page Domain-devtools Protocol Version 0,1 (EdgeHTML)  
+# <a name="page-domain---devtools-protocol-version-01-edgehtml"></a>Page Domain - DevTools Protocol Version 0.1 (EdgeHTML)  
 
-Aktionen und Ereignisse im Zusammenhang mit der geprüften Seite gehören der Seiten Domäne an.
+Aktionen und Ereignisse im Zusammenhang mit der überprüften Seite gehören zur Seitendomäne.  
 
-| | |
-|-|-|
-| [**Methoden**](#methods) | [aktivieren](#enable), [Deaktivieren](#disable), [Navigieren](#navigate) |
-| [**Typen**](#types) | [Frame-Nr](#frameid) |
-## Methoden
+| Klassifizierung | Member |  
+|:--- |:--- |  
+| [**Methoden**](#methods) | [aktivieren](#enable), [deaktivieren](#disable), [navigieren](#navigate) |  
+| [**Typen**](#types) | [FrameId](#frameid) |  
 
-### Aktivieren
-Aktiviert Seiten Domänen Benachrichtigungen.
+## <a name="methods"></a>Methoden  
 
+### <a name="enable"></a>Aktivieren  
 
----
+Aktiviert Seitendomänenbenachrichtigungen.  
 
-### Deaktivieren 
-Deaktiviert Seiten Domänen Benachrichtigungen.
+&nbsp;  
 
+---  
 
----
+### <a name="disable"></a>Deaktivieren   
 
-### Navigieren
-Navigiert die aktuelle Seite zur angegebenen URL.
+Deaktiviert Seitendomänenbenachrichtigungen.  
 
-<table>
-    <thead>
-        <tr>
-            <th>Parameter</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>URL</td>
-            <td><code class="flyout">string</code></td>
-            <td>Die URL, zu der die Seite navigiert werden soll.</td>
-        </tr>
-    </tbody>
-</table>
-<table>
-    <thead>
-        <tr>
-            <th>Gibt</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Frame-Nr</td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td><span><b>Experimenteller. </b></span>Die Frame-ID, die navigiert werden soll.</td>
-        </tr>
-    </tbody>
-</table>
+&nbsp;  
 
----
+---  
 
-## Typen
+### <a name="navigate"></a>Navigieren  
 
-### <a name="frameid"></a> Frame-Nr `string`
+Navigiert die aktuelle Seite zur angegebenen URL.  
 
-Eindeutige Frame-ID.
+| Parameter | Typ | Details |  
+|:--- |:--- |:--- |  
+| URL | `string` | URL, zu der die Seite navigiert werden soll. |  
 
+| Gibt zurück | Typ | Details |  
+|:--- |:--- |:--- |  
+| frameId | [FrameId](#frameid) | **Experimental**.  Frame-ID, die navigiert wird. |  
 
----
+---  
+
+## <a name="types"></a>Typen  
+
+### <a name="frameid-string"></a>FrameId-Zeichenfolge  
+
+<a name="frameid"></a>  
+
+Eindeutige Frame-ID.  
+
+&nbsp;  
+
+---  

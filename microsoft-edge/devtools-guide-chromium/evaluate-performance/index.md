@@ -1,18 +1,18 @@
 ---
-description: Erfahren Sie, wie Sie die Laufzeitleistung in Microsoft Edge devtools.
+description: Erfahren Sie, wie Sie die Laufzeitleistung in Microsoft Edge DevTools bewerten.
 title: Erste Schritte mit der Analyse der Laufzeitleistung
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 7cb1d8f073cdb8a43093514dd7dea86d72102011
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
+ms.openlocfilehash: 074c112b99abb4689cac2274338f2276bc46b4ae
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11124985"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398721"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,212 +28,212 @@ ms.locfileid: "11124985"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Erste Schritte mit der Analyse der Laufzeitleistung  
+# <a name="get-started-with-analyzing-runtime-performance"></a>Erste Schritte mit der Analyse der Laufzeitleistung  
 
 > [!NOTE]
-> Wenn Sie wissen möchten, wie Sie Ihre Seiten schneller laden können, navigieren Sie zur [Optimierung der Website Geschwindigkeit][DevtoolsSpeedGetStarted].  
+> Um zu erfahren, wie Sie Ihre Seiten schneller laden können, navigieren Sie zu [Optimieren der Websitegeschwindigkeit][DevtoolsSpeedGetStarted].  
 
-Die Laufzeitleistung ist die Art und Weise, wie Ihre Seite ausführt, wenn Sie ausgeführt wird, im Gegensatz zum Laden.  Im folgenden Lernprogramm Artikel erfahren Sie, wie Sie das Microsoft Edge devtools-Leistungs Panel verwenden, um die Runtime-Leistung zu analysieren.  Im Hinblick auf das **Schienen** Modell sind die in diesem Lernprogramm gelernten Kenntnisse hilfreich, um die Reaktions-, Animations-und Leerlaufphasen Ihrer Seite zu analysieren.  
+Die Laufzeitleistung ist die Leistung Ihrer Seite, wenn sie ausgeführt wird, statt zu laden.  Im folgenden Lernprogrammartikel erfahren Sie, wie Sie die Laufzeitleistung mithilfe des Microsoft Edge DevTools-Leistungsbereichs analysieren.  Im Hinblick auf das **RAIL-Modell** sind die in diesem Lernprogramm gelernten Kenntnisse nützlich, um die Reaktions-, Animations- und Leerlaufphasen Ihrer Seite zu analysieren.  
 
 <!--todo: add rail link when section is ready -->  
 
-## Erste Schritte  
+## <a name="get-started"></a>Erste Schritte  
 
-Im folgenden Lernprogramm öffnen Sie devtools auf einer Live Seite und verwenden den **Leistungs** Panel, um einen Leistungsengpass auf der Seite zu finden.  
+Im folgenden Lernprogramm öffnen Sie DevTools auf **** einer Liveseite und verwenden den Bereich Leistung, um einen Leistungsengpässe auf der Seite zu finden.  
 
-1.  Öffnen Sie Microsoft Edge im **InPrivate-Modus**.  Der InPrivate-Modus stellt sicher, dass Microsoft Edge in einem sauberen Zustand ausgeführt wird.  Wenn Sie beispielsweise viele Erweiterungen installiert haben, können die Erweiterungen zu Lärm in ihren Leistungsmessungen führen.  
+1.  Öffnen Sie Microsoft Edge im **InPrivate-Modus.**  Der InPrivate-Modus stellt sicher, dass Microsoft Edge in einem sauberen Zustand ausgeführt wird.  Wenn Sie z. B. viele Erweiterungen installiert haben, können die Erweiterungen zu Rauschen in Ihren Leistungsmessungen führen.  
     
     <!--TODO: replace section when updated for new Edge  -->
     
-1.  Laden Sie die folgende Seite in Ihrem InPrivate-Fenster.  Bei der Seite handelt es sich um die Demo, die Sie profilieren möchten.  Auf der Seite werden einige kleine Symbole angezeigt, die sich nach oben und unten bewegen.  
+1.  Laden Sie die folgende Seite in Ihr InPrivate-Fenster.  Die Seite ist die Demo, die Sie profilieren möchten.  Die Seite zeigt eine Reihe kleiner Symbole, die nach oben und unten bewegt werden.  
     
     ```https
     https://microsoft-edge-chromium-devtools.glitch.me/sluggish/
     ```  
     
-1.  Wählen Sie `Control` + `Shift` + `I` \ (Windows, Linux \) oder `Command` + `Option` + `I` \ (macOS \) aus, um devtools zu öffnen.  
+1.  Wählen `Control` + `Shift` + `I` Sie \(Windows, Linux\) oder `Command` + `Option` + `I` \(macOS\) aus, um DevTools zu öffnen.  
     
     :::image type="complex" source="../media/evaluate-performance-get-started-side-by-side.msft.png" alt-text="Die Demo auf der linken Seite und DevTools auf der rechten Seite" lightbox="../media/evaluate-performance-get-started-side-by-side.msft.png":::
        Die Demo auf der linken Seite und DevTools auf der rechten Seite  
     :::image-end:::  
     
     > [!NOTE]
-    > Für die restlichen Zahlen wird devtools [an einem separaten Fenster Abdocken][DevtoolsCustomizePlacement] , um sich besser auf den Inhalt zu konzentrieren.  
+    > Für die restlichen Abbildungen wird DevTools an ein [separates][DevtoolsCustomizePlacement] Fenster gedockt, um sich besser auf den Inhalt zu konzentrieren.  
     
-### Simulieren einer mobilen CPU  
+### <a name="simulate-a-mobile-cpu"></a>Simulieren einer mobilen CPU  
 
-Mobile Geräte haben viel weniger Prozessorleistung als Desktops und Laptops.  Wenn Sie eine Seite profilieren, simulieren Sie mithilfe der CPU-Drosselung, wie Ihre Seite auf mobilen Geräten ausgeführt wird.  
+Mobile Geräte haben viel weniger CPU-Leistung als Desktops und Laptops.  Verwenden Sie bei jedem Profil einer Seite die CPU-Einschränkung, um die Leistung Ihrer Seite auf mobilen Geräten zu simulieren.  
 
-1.  Wählen Sie in devtools die Registerkarte **Leistung** aus.  
-1.  Stellen Sie sicher, dass das Kontrollkästchen **Screenshots** aktiviert ist.  
-1.  Wählen Sie **aufnahmeeinstellungen** \ (! [ Aufnahmeeinstellungen] [ImageCaptureSettingsIcon] \).  DevTools zeigt Einstellungen in Bezug auf die Erfassung von Leistungs Metriken an.  
-1.  Wählen Sie für **CPU**die Option **4X Verlangsamung**aus.  DevTools drosselt Ihre CPU so, dass Sie viermal langsamer als üblich ist.  
+1.  Wählen Sie in DevTools das **Tool Leistung** aus.  
+1.  Stellen Sie sicher, dass **das Kontrollkästchen Screenshots** aktiviert ist.  
+1.  Wählen **Sie Aufnahmeeinstellungen** \(![ Aufnahmeeinstellungen][ImageCaptureSettingsIcon]\).  DevTools zeigt Einstellungen im Zusammenhang mit der Erfassung von Leistungsmetriken an.  
+1.  Wählen **Sie für CPU**die Option **4x Verlangsamung aus.**  DevTools drosselt die CPU, sodass sie viermal langsamer ist als gewöhnlich.  
     
     :::image type="complex" source="../media/evaluate-performance-performance-capture-settings.msft.png" alt-text="CPU-Drosselung" lightbox="../media/evaluate-performance-performance-capture-settings.msft.png":::
        CPU-Drosselung  
     :::image-end:::  
     
     > [!NOTE]
-    > Beim Testen anderer Seiten; Wenn Sie sicherstellen möchten, dass jede Seite auf Low-End-mobilen Geräten gut funktioniert, legen Sie die CPU-Drosselung auf **6x Verlangsamung**fest.  Die Demo funktioniert nicht gut mit einer 6x Verlangsamung, sodass Sie nur eine vierfache Verlangsamung für Unterrichtszwecke verwendet.  
+    > Beim Testen anderer Seiten; Wenn Sie sicherstellen möchten, dass jede Seite auf mobilen Low-End-Geräten gut funktioniert, legen Sie die CPU-Einschränkung auf **die 6-fache Verlangsamung fest.**  Die Demo funktioniert nicht gut mit der 6x-Verlangsamung, daher verwendet sie nur die 4-fache Verlangsamung für Anweisungszwecke.  
     
-### Einrichten der Demo  
+### <a name="set-up-the-demo"></a>Einrichten der Demo  
 
-Es ist schwierig, eine Demo zur Laufzeit-Performance zu erstellen, die für alle Leser der Website konsistent funktioniert.  Im folgenden Abschnitt können Sie die Demo anpassen, um sicherzustellen, dass Ihre Erfahrung mit den Screenshots und Beschreibungen relativ konsistent ist, unabhängig von der jeweiligen Einrichtung.
+Es ist schwierig, eine Laufzeitleistungsdemo zu erstellen, die für alle Leser der Website konsistent funktioniert.  Im folgenden Abschnitt können Sie die Demo anpassen, um sicherzustellen, dass Ihre Erfahrung relativ konsistent mit den Screenshots und Beschreibungen ist, unabhängig von Ihrer speziellen Einrichtung.
 
-1.  Wählen Sie die Schaltfläche " **10 hinzufügen** " aus, bis sich die blauen Symbole merklich langsamer bewegen.  Auf einem Highend-Computer können Sie die Datei etwa 20 Mal auswählen.  
-1.  Wählen Sie **optimieren**aus.  Die blauen Symbole sollten sich schneller und reibungsloser bewegen.  
+1.  Wählen Sie **die Schaltfläche 10** hinzufügen aus, bis die blauen Symbole merklich langsamer als zuvor bewegt werden.  Auf einem High-End-Computer können Sie ihn etwa 20-mal auswählen.  
+1.  Wählen Sie **Optimieren**aus.  Die blauen Symbole sollten sich schneller und reibungsloser bewegen.  
     
     > [!NOTE]
-    > Um einen Unterschied zwischen den optimierten und nicht optimierten Versionen besser anzuzeigen, wählen Sie die Schaltfläche **10 subtrahieren** einige Male aus, und versuchen Sie es erneut.  
-    > Wenn Sie zu viele blaue Symbole hinzufügen, ist es möglich, dass Sie die CPU maximal auszahlen, und es ist möglich, dass Sie keinen großen Unterschied in den Ergebnissen für die beiden Versionen beobachten.  
+    > Um einen Unterschied zwischen den optimierten und nicht optimierten Versionen besser anzeigen zu können, wählen Sie einige Male die Schaltfläche Subtrahieren **10** aus, und versuchen Sie es erneut.  
+    > Wenn Sie zu viele blaue Symbole hinzufügen, können Sie die CPU maximal verwenden, und dann sehen Sie möglicherweise keinen wesentlichen Unterschied in den Ergebnissen für die beiden Versionen.  
     
-1.  Wählen Sie **UN-Optimize**aus.  Die blauen Symbole bewegen sich langsamer und mit mehr Trägheit wieder.  
+1.  Wählen **Sie Un-Optimize**aus.  Die blauen Symbole werden langsamer und mit mehr Trägheit wieder bewegt.  
     
-### Aufzeichnen der Laufzeitleistung  
+### <a name="record-runtime-performance"></a>Aufzeichnen der Laufzeitleistung  
 
-Wenn Sie die optimierte Version der Seite ausgeführt haben, werden die blauen Symbole schneller verschoben.  Weshalb?  Beide Versionen sollen die Symbole in derselben Zeitdauer auf die gleiche Menge an Speicherplatz verschieben.  Nehmen Sie im Leistungs Panel eine Aufzeichnung auf, um zu erfahren, wie Sie den Leistungsengpass in der nicht optimierten Version erkennen.  
+Wenn Sie die optimierte Version der Seite ausgeführt haben, bewegen sich die blauen Symbole schneller.  Weshalb?  Beide Versionen sollen die Symbole in der gleichen Zeit verschieben.  Nehmen Sie eine Aufzeichnung im Bereich Leistung vor, um zu erfahren, wie Sie den Leistungsengpässe in der nicht optimierten Version erkennen.  
 
-1.  Wählen Sie in devtools die Option **Record** \ (! [ Record] [ImageRecordIcon] \).  DevTools erfasst Leistungs Metriken während der Ausführung der Seite.  
+1.  Wählen Sie in DevTools **die Option Record** \(![ aus. Record][ImageRecordIcon]\).  DevTools erfasst Leistungsmetriken, während die Seite ausgeführt wird.  
     
-    :::image type="complex" source="../media/evaluate-performance-performance-profiling.msft.png" alt-text="Profil der Seite" lightbox="../media/evaluate-performance-performance-profiling.msft.png":::
-       Profil der Seite  
+    :::image type="complex" source="../media/evaluate-performance-performance-profiling.msft.png" alt-text="Profilieren der Seite" lightbox="../media/evaluate-performance-performance-profiling.msft.png":::
+       Profilieren der Seite  
     :::image-end:::  
     
-1.  Warten Sie ein paar Sekunden.  
-1.  Wählen Sie **Beenden**aus.  DevTools beendet die Aufzeichnung, verarbeitet die Daten und zeigt dann die Ergebnisse im Leistungs Panel an.  
+1.  Warten Sie einige Sekunden.  
+1.  Wählen Sie **Beenden**aus.  DevTools beendet die Aufzeichnung, verarbeitet die Daten und zeigt dann die Ergebnisse im Bereich Leistung an.  
     
     :::image type="complex" source="../media/evaluate-performance-performance-capture-results.msft.png" alt-text="Die Ergebnisse des Profils" lightbox="../media/evaluate-performance-performance-capture-results.msft.png":::
        Die Ergebnisse des Profils  
     :::image-end:::  
     
-Wow, das ist eine überwältigende Menge an Daten.  machen Sie sich keine Sorgen, schon bald macht der Prozess Sinn.  
+Wow, das ist eine übergroße Datenmenge.  machen Sie sich keine Sorgen, bald ist der Prozess sinnvoller.  
 
-## Analysieren der Ergebnisse  
+## <a name="analyze-the-results"></a>Analysieren der Ergebnisse  
 
-Nachdem Sie die Leistung der Seite aufgezeichnet haben, Messen Sie die Qualität der Leistung der Seite, und ermitteln Sie die Ursachen.  
+Nachdem Sie die Leistung der Seite aufgezeichnet haben, messen Sie die Qualität der Leistung der Seite, und suchen Sie nach den ursachen.  
 
-### Analysieren von Frames pro Sekunde  
+### <a name="analyze-frames-per-second"></a>Analysieren von Frames pro Sekunde  
 
-Die wichtigste Metrik zum Messen der Leistung einer Animation ist Frames pro Sekunde \ (fps \).  Benutzer sind zufrieden, wenn Animationen mit 60 fps ausgeführt werden.  
+Die Hauptmetrik zum Messen der Leistung einer Animation sind Frames pro Sekunde \(FPS\).  Benutzer freuen sich, wenn Animationen mit 60 FPS ausgeführt werden.  
 
-1.  Schauen Sie sich das **fps** -Diagramm an.  Wenn Sie eine rote Leiste oberhalb von **fps**sehen, bedeutet dies, dass die Framerate so gering ist, dass Sie die Benutzerfreundlichkeit wahrscheinlich beeinträchtigt.  Je höher die grüne Leiste, desto höher der FPS-Wert.  
+1.  Überprüfen Sie **das FPS-Diagramm.**  Wenn ein roter Balken über **FPS**angezeigt wird, bedeutet dies, dass die Framerate so niedrig ist, dass sie wahrscheinlich die Benutzerfreundlichkeit geschädigt.  Im Allgemeinen gilt: Je höher der grüne Balken, desto höher der FPS.  
     
-    :::image type="complex" source="../media/evaluate-performance-performance-fps-chart.msft.png" alt-text="Das fps-Diagramm" lightbox="../media/evaluate-performance-performance-fps-chart.msft.png":::
-       Das **fps** -Diagramm  
+    :::image type="complex" source="../media/evaluate-performance-performance-fps-chart.msft.png" alt-text="Das #A0" lightbox="../media/evaluate-performance-performance-fps-chart.msft.png":::
+       Das **#A0**  
     :::image-end:::  
     
-1.  Unterhalb des **fps** -Diagramms wird das **CPU** -Diagramm angezeigt.  Die Farben im **CPU** -Diagramm entsprechen den Farben auf der Registerkarte " **Zusammenfassung** " unten im Leistungsbereich.  Die Tatsache, dass das **CPU** -Diagramm Farb voll ist, bedeutet, dass die CPU während der Aufzeichnung ausgereizt wurde.  Wenn Sie sehen, dass die CPU über einen längeren Zeitraum ausgeschöpft ist, ist es ein Anhaltspunkt, wie Sie Möglichkeiten für eine geringere Arbeit finden.  
+1.  Unterhalb **des #A0** wird das **#A1** angezeigt.  Die Farben im **CPU-Diagramm** entsprechen **** den Farben im Zusammenfassungsfenster am unteren Rand des Leistungsbereichs.  Die Tatsache, dass das **CPU-Diagramm** farblich voll ist, bedeutet, dass die CPU während der Aufzeichnung maximal ausgesenert wurde.  Immer wenn die CPU über einen längeren Zeitraum ausgesenkte, ist dies ein Indikator dafür, dass Sie Möglichkeiten finden sollten, weniger Arbeit zu machen.  
     
-    :::image type="complex" source="../media/evaluate-performance-performance-cpu-chart.msft.png" alt-text="Das CPU-Diagramm und die Registerkarte Zusammenfassung"::: lightbox="../media/evaluate-performance-performance-cpu-chart.msft.png":::
-       Das **CPU** -Diagramm und die Registerkarte " **Zusammenfassung** "  
+    :::image type="complex" source="../media/evaluate-performance-performance-cpu-chart.msft.png" alt-text="Das CPU-Diagramm und der Zusammenfassungsbereich" lightbox="../media/evaluate-performance-performance-cpu-chart.msft.png":::
+       Das **CPU-Diagramm** und **der Zusammenfassungsbereich**  
     :::image-end:::  
     
-1.  Zeigen Sie auf die **fps**-, **CPU**-oder **net** -Diagramme.  DevTools zeigt zu diesem Zeitpunkt einen Screenshot der Seite an.  Bewegen Sie die Maus nach links und rechts, um die Aufzeichnung wiederzugeben.  Die Aktion wird als Scrubbing referenziert, und Sie ist nützlich, um den Fortschritt von Animationen manuell zu analysieren.  
+1.  Zeigen Sie auf **die FPS-,** **CPU-** oder **NET-Diagramme.**  DevTools zeigt einen Screenshot der Seite zu diesem Zeitpunkt.  Bewegen Sie die Maus nach links und rechts, um die Aufzeichnung wieder zu wiedergeben.  Die Aktion wird als Scrubbing bezeichnet und ist nützlich für die manuelle Analyse des Verlaufs von Animationen.  
     
-    :::image type="complex" source="../media/evaluate-performance-performance-screenshot-hover.msft.png" alt-text="Anzeigen eines Screenshot der Seite um das 2500ms-Zeichen der Aufzeichnung" lightbox="../media/evaluate-performance-performance-screenshot-hover.msft.png":::
-       Anzeigen eines Screenshot der Seite um das 2500ms-Zeichen der Aufzeichnung  
+    :::image type="complex" source="../media/evaluate-performance-performance-screenshot-hover.msft.png" alt-text="Anzeigen eines Screenshot der Seite um die 2500-ms-Marke der Aufzeichnung" lightbox="../media/evaluate-performance-performance-screenshot-hover.msft.png":::
+       Anzeigen eines Screenshot der Seite um die 2500-ms-Marke der Aufzeichnung  
     :::image-end:::  
     
-1.  Zeigen Sie im Abschnitt **Frames** auf eines der grünen Quadrate.  DevTools zeigt Ihnen die fps für diesen bestimmten Frame.  Jeder Frame liegt wahrscheinlich deutlich unter dem Ziel von 60 fps.  
+1.  Zeigen Sie **im Abschnitt Frames** auf eines der grünen Quadrate.  DevTools zeigt ihnen den FPS für den jeweiligen Frame an.  Jeder Frame liegt wahrscheinlich deutlich unter dem Ziel von 60 FPS.  
     
-    :::image type="complex" source="../media/evaluate-performance-performance-frame-hover.msft.png" alt-text="Bewegen des Mauszeigers auf einem Frame" lightbox="../media/evaluate-performance-performance-frame-hover.msft.png":::
-       Bewegen des Mauszeigers auf einem Frame  
+    :::image type="complex" source="../media/evaluate-performance-performance-frame-hover.msft.png" alt-text="Zeigen auf einen Frame" lightbox="../media/evaluate-performance-performance-frame-hover.msft.png":::
+       Zeigen auf einen Frame  
     :::image-end:::  
     
-Natürlich sollten Sie sehen, dass die Seite nicht gut funktioniert.  In realen Szenarien ist es aber möglicherweise nicht so klar, dass alle Tools für die Messung praktisch sind.  
+Die Anzeige zeigt natürlich an, dass die Webseite nicht gut funktioniert.  In realen Szenarien ist dies jedoch möglicherweise nicht so klar, sodass alle Tools zum Durchführen von Messungen nützlich sind.  
 
-#### Bonus: Öffnen des FPS-meters  
+#### <a name="bonus-open-the-fps-meter"></a>Bonus: Öffnen des FPS-Zählers  
 
-Ein weiteres praktisches Tool ist das FPS-Messgerät, das in Echtzeit Schätzungen für FPS bereitstellt, während die Seite ausgeführt wird.  
+Ein weiteres praktisches Tool ist das FPS-Zähler, das Echtzeitschätzungen für FPS während der Seitenläufe bietet.  
 
-1.  Wählen Sie `Control` + `Shift` + `P` \ (Windows, Linux \) oder `Command` + `Shift` + `P` \ (macOS \) aus, um das **Befehlsmenü**zu öffnen.  
-1.  Beginnen `Rendering` Sie mit der Eingabe im **Befehlsmenü** , und wählen Sie **Rendering anzeigen**aus.  
-1.  Aktivieren Sie auf der Registerkarte **Rendern** die Option **FPS-Meter**.  In der oberen rechten Ecke des Viewports wird eine neue Überlagerung angezeigt.  
+1.  Wählen `Control` + `Shift` + `P` Sie \(Windows, Linux\) oder `Command` + `Shift` + `P` \(macOS\) aus, um das **Befehlsmenü zu öffnen.**  
+1.  Beginnen Sie mit der `Rendering` Eingabe im **Befehlsmenü,** und wählen Sie **Rendern anzeigen aus.**  
+1.  Aktivieren Sie **im Renderingtool** **FPS Meter**.  Oben rechts im Viewport wird eine neue Überlagerung angezeigt.  
     
-    :::image type="complex" source="../media/evaluate-performance-fps-meter-overlay.msft.png" alt-text="Das fps-Messgerät" lightbox="../media/evaluate-performance-fps-meter-overlay.msft.png":::
-       Das **fps-Messgerät**  
+    :::image type="complex" source="../media/evaluate-performance-fps-meter-overlay.msft.png" alt-text="Das #A0" lightbox="../media/evaluate-performance-fps-meter-overlay.msft.png":::
+       Das **#A0**  
         :::image-end:::  
     
-1.  Deaktivieren Sie das **fps-Messgerät** , und wählen Sie aus `Escape` , um die Registerkarte **Rendering** zu schließen.  In diesem Lernprogramm verwenden Sie nicht **FPS-Meter** .  
+1.  Deaktivieren Sie das **FPS Meter,** und wählen `Escape` Sie aus, um das **Renderingtool zu** schließen.  Sie verwenden **fps Meter** in diesem Lernprogramm nicht.  
     
-### Ermitteln des Engpasses  
+### <a name="find-the-bottleneck"></a>Suchen des Engpasss  
 
-Nachdem Sie gemessen und überprüft haben, dass die Animation nicht gut funktioniert, besteht der nächste Schritt darin, die Frage "Warum?" zu beantworten.  
+Nachdem Sie gemessen und überprüft haben, ob die Animation nicht gut funktioniert, besteht der nächste Schritt in der Beantwortung der Frage "Warum?".  
 
-1.  Wenn keine Ereignisse ausgewählt sind, wird auf der Registerkarte **Zusammenfassung** eine Aufschlüsselung der Aktivitäten angezeigt.  Die Seite verbrachte die meiste Zeit beim Rendern.  Da Leistung die Kunst ist, weniger Arbeit zu erledigen, besteht das Ziel darin, die Zeit zu verringern, die für das Rendern von Arbeit aufgewendet wurde.  
+1.  Wenn keine Ereignisse ausgewählt werden, wird im **Zusammenfassungsbereich** eine Aufschlüsselung der Aktivität angezeigt.  Die Seite hat die meiste Zeit mit dem Rendern verbracht.  Da leistung die Kunst ist, weniger Arbeit zu tun, besteht Ihr Ziel in der Reduzierung des Zeitaufwands für Renderingarbeiten.  
     
-    :::image type="complex" source="../media/evaluate-performance-performance-summary-tab.msft.png" alt-text="Registerkarte Zusammenfassung"::: lightbox="../media/evaluate-performance-performance-summary-tab.msft.png":::
-       Registerkarte " **Zusammenfassung** "  
+    :::image type="complex" source="../media/evaluate-performance-performance-summary-tab.msft.png" alt-text="Der Zusammenfassungsbereich" lightbox="../media/evaluate-performance-performance-summary-tab.msft.png":::
+       Der **Zusammenfassungsbereich**  
     :::image-end:::  
     
-1.  Erweitern des **Haupt** Abschnitts  DevTools zeigt Ihnen im Laufe der Zeit ein Flammen Diagramm mit Aktivitäten auf dem Hauptthread.  Die x-Achse steht für die Aufzeichnung im Laufe der Zeit.  Jeder Balken steht für ein Ereignis.  Eine breitere Leiste bedeutet, dass das Ereignis länger dauerte.  Die y-Achse steht für die Aufrufliste.  Wenn Ereignisse übereinander gestapelt angezeigt werden, bedeutet dies, dass die oberen Ereignisse die niedrigeren Ereignisse verursacht haben.  
+1.  Erweitern Sie den **Abschnitt Main.**  DevTools zeigt Ein Flammendiagramm der Aktivität im Hauptthread im Laufe der Zeit.  Die x-Achse stellt die Aufzeichnung im Laufe der Zeit dar.  Jede Leiste stellt ein Ereignis dar.  Ein breiterer Balken bedeutet, dass das Ereignis länger dauerte.  Die y-Achse stellt die Aufrufliste dar.  Wenn Ereignisse übereinander gestapelt werden, bedeutet dies, dass die oberen Ereignisse die niedrigeren Ereignisse verursacht haben.  
     
-    :::image type="complex" source="../media/evaluate-performance-performance-main.msft.png" alt-text="Der Hauptabschnitt" lightbox="../media/evaluate-performance-performance-main.msft.png":::
-       Der **Haupt** Abschnitt  
+    :::image type="complex" source="../media/evaluate-performance-performance-main.msft.png" alt-text="Der Abschnitt "Main"" lightbox="../media/evaluate-performance-performance-main.msft.png":::
+       Der **Abschnitt "Main"**  
     :::image-end:::  
     
-1.  Die Aufzeichnung enthält viele Daten.  So zoomen Sie in ein einzelnes Ereignis Wählen Sie den Mauszeiger über der **Übersicht**aus, halten Sie ihn gedrückt, und ziehen Sie ihn in den Abschnitt, in dem die **fps**-, **CPU**-und **net** -Diagramme enthalten sind.  Der **Haupt** Abschnitt und die Registerkarte " **Zusammenfassung** " zeigen nur Informationen für den ausgewählten Teil der Aufzeichnung an.  
+1.  Die Aufzeichnung enthält viele Daten.  So zoomen Sie in ein einzelnes Ereignis; Wählen, halten und ziehen Sie den Cursor über die **Übersicht**, die den Abschnitt enthält, der die **FPS-,** **CPU-** und **NET-Diagramme** enthält.  Im **Hauptabschnitt** **und im Zusammenfassungsbereich** werden nur Informationen für den ausgewählten Teil der Aufzeichnung angezeigt.  
     
-    :::image type="complex" source="../media/evaluate-performance-performance-main-zoomed.msft.png" alt-text="Vergrößern eines Ereignisses" lightbox="../media/evaluate-performance-performance-main-zoomed.msft.png":::
-       Vergrößern eines Ereignisses  
-    :::image-end:::  
-    
-    > [!NOTE]
-    > Eine weitere Möglichkeit zum Zoomen, zum Fokussieren des **Haupt** Abschnitts, zum Auswählen des Hintergrunds oder eines Ereignisses und zum auswählen `W` ,, `A` `S` oder `D` .  
-    
-    1.  Konzentrieren Sie sich auf das rote Dreieck in der oberen rechten Ecke des Ereignisses **Animations Frame ausgelöst** .  Wenn Sie ein rotes Dreieck sehen, wird eine Warnung angezeigt, dass ein Problem im Zusammenhang mit dem Ereignis auftreten kann.  
-    
-    > [!NOTE]
-    > Das **ausgelöste Animations Frame** -Ereignis tritt auf, wenn ein [ `requestAnimationFrame()` Rückruf][MDNWebRequestAnimationFrame] ausgeführt wird.  
-    
-1.  Wählen Sie das **ausgelöste Animations Frame** -Ereignis aus.  Auf der Registerkarte " **Zusammenfassung** " werden nun Informationen zu diesem Ereignis angezeigt.  Beachten Sie den Link **Reveal** .  Nachdem Sie Sie ausgewählt haben, hebt devtools das Ereignis hervor, das das ausgelöste **Animations Frame** -Ereignis initiiert hat.  Konzentrieren Sie sich auch auf den Link **app.js:95** .  Nachdem Sie Sie ausgewählt haben, wird die entsprechende Zeile im Quellcode angezeigt.
-    
-    :::image type="complex" source="../media/evaluate-performance-performance-animation-frame-fired.msft.png" alt-text="Weitere Informationen zum ausgelösten Animations Frame-Ereignis" lightbox="../media/evaluate-performance-performance-animation-frame-fired.msft.png":::
-       Weitere Informationen zum **ausgelösten Animations Frame** -Ereignis  
+    :::image type="complex" source="../media/evaluate-performance-performance-main-zoomed.msft.png" alt-text="Zoomen in ein Ereignis" lightbox="../media/evaluate-performance-performance-main-zoomed.msft.png":::
+       Zoomen in ein Ereignis  
     :::image-end:::  
     
     > [!NOTE]
-    > Verwenden Sie nach dem Auswählen eines Ereignisses die Pfeiltasten, um die Ereignisse daneben auszuwählen.  
+    > Eine weitere Möglichkeit zum Zoomen, **Fokussieren** des Hauptabschnitts, Auswählen des Hintergrunds oder eines Ereignisses und Auswählen `W` von , , oder `A` `S` `D` .  
     
-1.  Unter dem **app. Update** -Ereignis gibt es eine Reihe von lila Ereignissen.  Wenn jedes violette Ereignis breiter war, sieht es so aus, als ob jeder ein rotes Dreieck darauf haben kann.  
-1.  Wählen Sie eines der lila **Layout** -Ereignisse aus.  DevTools enthält weitere Informationen zu dem Ereignis auf der Registerkarte " **Zusammenfassung** ".  In der Tat gibt es eine Warnung zu erzwungenen Umläufen \ (ein weiteres Wort für das Layout \).  
+    1.  Konzentrieren Sie sich auf das rote Dreieck oben rechts des **Ereignisses Animation Frame Fired.**  Jedes Mal, wenn ein rotes Dreieck angezeigt wird, wird gewarnt, dass es zu einem Problem im Zusammenhang mit dem Ereignis kommt.  
     
-1.  Wählen Sie auf der Registerkarte **Zusammenfassung** den Link **app.js:71** unter **Layout erzwungen**aus.  DevTools führt Sie zu der Codezeile, die das Layout erzwungen hat.  
+    > [!NOTE]
+    > Das **Ereignis Animation Frame Fired** tritt auf, wenn ein [ `requestAnimationFrame()` Rückruf][MDNWebRequestAnimationFrame] ausgeführt wird.  
+    
+1.  Wählen Sie das **Ereignis Animation Frame Fired** aus.  Im **Zusammenfassungsbereich** werden nun Informationen zu diesem Ereignis angezeigt.  Notieren Sie sich **den Link Reveal.**  Nachdem Sie es markiert haben, hebt DevTools das Ereignis hervor, das das **Ereignis Animation Frame Fired initiiert** hat.  Konzentrieren Sie sich außerdem auf **den linkapp.js:95.**  Nachdem Sie sie auswählen, wird die entsprechende Zeile im Quellcode angezeigt.
+    
+    :::image type="complex" source="../media/evaluate-performance-performance-animation-frame-fired.msft.png" alt-text="Weitere Informationen zum Ereignis Animation Frame Fired" lightbox="../media/evaluate-performance-performance-animation-frame-fired.msft.png":::
+       Weitere Informationen zum **Ereignis Animation Frame Fired**  
+    :::image-end:::  
+    
+    > [!NOTE]
+    > Nachdem Sie ein Ereignis ausgewählt haben, wählen Sie mit den Pfeiltasten die Ereignisse daneben aus.  
+    
+1.  Unter dem **app.update-Ereignis** gibt es eine Reihe von violetten Ereignissen.  Wenn jedes violette Ereignis breiter war, sieht es so aus, als ob jedes einzelne ein rotes Dreieck hat.  
+1.  Wählen Sie eines der lila **Layout-Ereignisse** aus.  DevTools bietet weitere Informationen zum Ereignis im **Zusammenfassungsbereich.**  Tatsächlich gibt es eine Warnung über erzwungene Umflüsse \(ein anderes Wort für Layout\).  
+    
+1.  Wählen Sie **im Bereich** Zusammenfassung den Link **app.js:71** unter **Layout Erzwungen aus.**  DevTools führt Sie zur Codezeile, die das Layout erzwungen hat.  
     
     :::image type="complex" source="../media/evaluate-performance-sources-app-update.msft.png" alt-text="Die Codezeile, die das erzwungene Layout verursacht hat" lightbox="../media/evaluate-performance-sources-app-update.msft.png":::
        Die Codezeile, die das erzwungene Layout verursacht hat  
     :::image-end:::  
     
     > [!NOTE]
-    > Das Problem mit dem Code besteht darin, dass in jedem Animationsframe die Formatvorlage für jedes Symbol geändert und dann die Position der einzelnen Symbole auf der Seite abgefragt wird.  Da die Formatvorlagen geändert wurden, weiß der Browser nicht, ob jede Symbolposition geändert wurde, sodass das Symbol neu angeordnet werden muss, um die neue Position zu berechnen.  <!--  > See [Avoid forced synchronous layouts][RenderingAvoidSynchronousLayouts] to learn more.  -->
+    > Das Problem mit dem Code ist, dass er in jedem Animationsframe die Formatvorlage für jedes Symbol ändert und dann die Position der einzelnen Symbole auf der Seite abfragt.  Da die Formatvorlagen geändert wurden, weiß der Browser nicht, ob sich jede Symbolposition geändert hat. Daher muss das Symbol neu layoutt werden, um die neue Position zu berechnen.  <!--  > To learn more, navigate to [Avoid forced synchronous layouts][RenderingAvoidSynchronousLayouts].  -->
     
 <!-- todo: add layouts section when available -->
 
-Das war viel zu lernen.  Sie verfügen jetzt über eine solide Grundlage im grundlegenden Workflow zum Analysieren der Laufzeitleistung.  Gut Gemacht.  
+Das war viel zu lernen.  Sie verfügen nun über eine solide Grundlage im grundlegenden Workflow für die Analyse der Laufzeitleistung.  Gut Gemacht.  
 
-### Bonus: Analysieren der optimierten Version  
+### <a name="bonus-analyze-the-optimized-version"></a>Bonus: Analysieren der optimierten Version  
 
-Wählen Sie mithilfe der soeben gelernten Workflows und Tools in der Demo **optimieren** aus, um den optimierten Code zu aktivieren, eine andere Leistungsaufnahme durchführen und dann die Ergebnisse zu analysieren.  Von der verbesserten Framerate bis zur Reduzierung von Ereignissen im Flammen Diagramm im **Haupt** Abschnitt können Sie feststellen, dass die optimierte Version der APP viel weniger Arbeit leistet, was zu einer besseren Leistung führt.  
+Wählen Sie mithilfe der Workflows und Tools, die Sie gerade gelernt haben, **in** der Demo optimieren aus, um den optimierten Code zu aktivieren, eine weitere Leistungsaufzeichnung zu erstellen und die Ergebnisse zu analysieren.  Von der verbesserten Framerate bis zur Reduzierung der Ereignisse im Flammendiagramm im **Abschnitt Main** führt die optimierte Version der App wesentlich weniger Arbeit, was zu einer besseren Leistung führt.  
 
 > [!NOTE]
-> Auch die optimierte Version ist nicht optimal, da Sie die `top` Eigenschaft jedes Symbols manipuliert.  Ein besserer Ansatz ist das Beibehalten von Eigenschaften, die sich nur auf die Compositing-Methode auswirken.  <!--  > See [Use transform and opacity changes for animations][RenderingCompositor] for more information.  -->  
+> Auch die optimierte Version ist nicht großartig, da sie die `top` Eigenschaft jedes Symbols bearbeitet.  Ein besserer Ansatz ist, sich an Eigenschaften zu halten, die sich nur auf das Compositing auswirken.  <!--  > For more information, navigate to [Use transform and opacity changes for animations][RenderingCompositor].  -->  
 
 <!--todo: add rendering section when available -->
 
-## Nächste Schritte
+## <a name="next-steps"></a>Nächste Schritte
 
 <!--The foundation for understanding performance is the RAIL model.  The RAIL model teaches you the performance metrics that are most important to your users.  
-See [Measure Performance With The RAIL Model][RAIL] to learn more.  -->  
+To learn more, navigate to [Measure Performance With The RAIL Model][RAIL].  -->  
 
-Um mit dem Leistungsumfang noch komfortabler zu werden, ist die Praxis perfekt.  Versuchen Sie, Ihre Seiten zu profilieren und die Ergebnisse zu analysieren.  Wenn Sie Fragen zu ihren Ergebnissen haben, verwenden Sie das Symbol **Feedback senden** , wählen Sie `Alt` + `Shift` + `I` \ (Windows, Linux \) aus, wählen Sie `Option` + `Shift` + `I` \ (macOS \) aus, oder [tweeten Sie das devtools-Team][TwitterEdgeDevtools].  Fügen Sie Screenshots oder Links zu reproduzierbaren Seiten hinzu, falls möglich.  
+Damit Sie sich mit dem **Tool "Leistung"** bequemer machen können, ist die Übung perfekt.  Versuchen Sie, Ihre Seiten zu profilieren und die Ergebnisse zu analysieren.  Wenn Sie Fragen zu Ihren Ergebnissen **** haben, verwenden Sie das Symbol Feedback senden, wählen `Alt` + `Shift` + `I` Sie \(Windows, Linux\), wählen `Option` + `Shift` + `I` Sie \(macOS\) aus, [][TwitterEdgeDevtools]oder twittern Sie das DevTools-Team .  Fügen Sie nach Möglichkeit Screenshots oder Links zu reproduzierbaren Seiten hinzu.  
 
-:::image type="complex" source="../media/evaluate-performance-feedback-icon.msft.png" alt-text="Das * * Feedback * *-Symbol in der Microsoft Edge-devtools" lightbox="../media/evaluate-performance-feedback-icon.msft.png":::
-   Das Symbol " **Feedback senden** " im Microsoft Edge-devtools  
+:::image type="complex" source="../media/evaluate-performance-feedback-icon.msft.png" alt-text="Das Symbol **Feedback** in den Microsoft Edge DevTools" lightbox="../media/evaluate-performance-feedback-icon.msft.png":::
+   Das **Symbol Feedback senden** in den Microsoft Edge DevTools  
 :::image-end:::  
 
 <!-- To really become an expert in runtime performance, you must learn how the browser translates HTML, CSS, and JS into pixels on a screen.  The best place to start is the [Rendering Performance Overview][RenderingPerformance].  [The Anatomy Of A Frame][FrameAnatomy] dives into even more detail.  -->  
 
-Schließlich gibt es viele Möglichkeiten, die Laufzeitleistung zu verbessern.  Dieser Artikel befasst sich mit einem bestimmten Animations Engpass, der Ihnen eine gezielte Tour durch das Leistungs Panel ermöglicht, aber nur eine von vielen Engpässen, die Ihnen auftreten können.  <!--  The rest of the Rendering Performance series has a lot of good tips for improving various aspects of runtime performance, such as:  -->
+Last, there are many ways to improve runtime performance.  Dieser Artikel konzentrierte sich auf einen bestimmten Animationsengpässe, um Ihnen eine konzentrierte Tour durch den Bereich Leistung zu bieten, aber es ist nur einer von vielen Engpässen, die Sie möglicherweise haben.  <!--  The rest of the Rendering Performance series has a lot of good tips for improving various aspects of runtime performance, such as:  -->
 
 <!--
 *   [Optimizing JS Execution][RenderingOptimizeJS]  
@@ -244,18 +244,18 @@ Schließlich gibt es viele Möglichkeiten, die Laufzeitleistung zu verbessern.  
 *   [Debounce Your Input Handlers][RenderingDebounceInputs]  
 -->
 
-## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->
 
-[DevtoolsCustomizePlacement]: ../customize/placement.md "Ändern der Platzierung von Microsoft Edge devtools (abdocken, docken an den unteren Rand, docken nach links)"  
-[DevtoolsSpeedGetStarted]: ../speed/get-started.md "Optimieren der Website Geschwindigkeit mit Microsoft Edge devtools"  
+[DevtoolsCustomizePlacement]: ../customize/placement.md "Ändern der Microsoft Edge DevTools-Platzierung (Abdocken, Dock nach unten, Dock nach links)"  
+[DevtoolsSpeedGetStarted]: ../speed/get-started.md "Optimieren der Websitegeschwindigkeit mit Microsoft Edge DevTools"  
 
-[TwitterEdgeDevtools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "EdgeDevTools-Post a tweet | Twitter"  
+[TwitterEdgeDevtools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "EdgeDevTools – Post a Tweet | Twitter"  
 
-[MDNWebRequestAnimationFrame]: https://developer.mozilla.org/docs/Web/API/window/requestAnimationFrame "Window. requestAnimationFrame \ (\) | MDN"  
+[MDNWebRequestAnimationFrame]: https://developer.mozilla.org/docs/Web/API/window/requestAnimationFrame "Window.requestAnimationFrame\(\) | MDN"  
 
 <!--[InPrivate]: https://support.microsoft.com/help/4026200/microsoft-edge-browse-inprivate "Browse InPrivate in Microsoft Edge"  -->
 
@@ -275,10 +275,10 @@ Schließlich gibt es viele Möglichkeiten, die Laufzeitleistung zu verbessern.  
 <!--[StackOverflowAlphabetBrowserDevtools]: https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools "Alphabet Browser - Stack Overflow"  -->  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
-> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/index) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
+> Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
+> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/index) und wird von [Kayce Basken][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) verfasst.  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

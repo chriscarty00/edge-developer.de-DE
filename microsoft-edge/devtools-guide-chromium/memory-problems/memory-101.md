@@ -1,18 +1,18 @@
 ---
-description: In diesem Abschnitt werden allgemeine Ausdrücke beschrieben, die in der Speicheranalyse verwendet werden, und Sie gelten für eine Vielzahl von Arbeitsspeicherprofil Tools für verschiedene Sprachen.
-title: Speicher Terminologie
+description: In diesem Abschnitt werden allgemeine Begriffe beschrieben, die in der Speicheranalyse verwendet werden und für eine Vielzahl von Speicherprofilerstellungstools für verschiedene Sprachen gelten.
+title: Speicherterminologie
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 3455b05cf19f3aa5a69de5571ab3a24d5654dfe4
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
+ms.openlocfilehash: 1579374be29f0f419ded3bf88f5dea284f0bbb1a
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992750"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397790"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -28,167 +28,167 @@ ms.locfileid: "10992750"
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-# Speicher Terminologie  
+# <a name="memory-terminology"></a>Speicherterminologie  
 
-In diesem Abschnitt werden allgemeine Ausdrücke beschrieben, die in der Speicheranalyse verwendet werden, und Sie gelten für eine Vielzahl von Arbeitsspeicherprofil Tools für verschiedene Sprachen.  
+Dieser Artikel beschreibt allgemeine Begriffe, die in der Speicheranalyse verwendet werden, und gilt für verschiedene Speicherprofilerstellungstools für verschiedene Sprachen.  
 
-Die hier beschriebenen Begriffe und Begriffe beziehen sich auf das [Speicher Panel][DevtoolsMemoryProblemsHeapSnapshots].  Wenn Sie jemals mit dem Java-, .net-oder einem anderen Speicher Profiler gearbeitet haben, ist dies möglicherweise eine Auffrischung.  
+Die hier beschriebenen Begriffe und Begriffe beziehen sich auf den [Speicherbereich][DevtoolsMemoryProblemsHeapSnapshots].  Wenn Sie jemals mit dem Java, .NET oder einem anderen Speicherprofiler gearbeitet haben, kann dieser Artikel eine Aktualisierung sein.  
 
-## Objektgrößen  
+## <a name="object-sizes"></a>Objektgrößen  
 
-Denken Sie an Arbeitsspeicher als ein Diagramm mit primitiven Typen \ (wie Zahlen und Zeichenfolgen \) und Objekten \ (assoziative Arrays \).  Sie wird möglicherweise visuell als Diagramm mit einer Reihe von miteinander verbundenen Punkten wie folgt dargestellt:  
+Stellen Sie sich Speicher als Diagramm mit grundtypen \(wie Zahlen und Zeichenfolgen\) und Objekten \(assoziative Arrays\) vor.  Es kann als Diagramm mit vielen verbundenen Punkten angezeigt werden, z. B. der folgenden Abbildung.  
 
 :::image type="complex" source="../media/memory-problems-thinkgraph.msft.png" alt-text="Visuelle Darstellung des Arbeitsspeichers" lightbox="../media/memory-problems-thinkgraph.msft.png":::
    Visuelle Darstellung des Arbeitsspeichers  
 :::image-end:::  
 
-Ein Objekt kann Speicher auf zwei Arten enthalten:  
+Ein Objekt kann auf zwei Arten Arbeitsspeicher haben:  
 
-*   Direkt vom Objekt.  
-*   Implizit durch Speichern von Verweisen auf andere Objekte, wodurch verhindert wird, dass diese Objekte automatisch von einem Garbage Collector entfernt werden \ (**GC** für Short \).  
+*   Direkt durch das Objekt.  
+*   Implizit durch Das Halten von Verweisen auf andere Objekte und damit verhindern, dass diese Objekte automatisch von einem Garbage Collector verworfen werden.  
 
-Bei der Arbeit mit dem [Speicher][DevtoolsMemoryProblemsHeapSnapshots] Bereich in devtools \ (ein Tool zur Untersuchung von Speicherproblemen, die unter " **Arbeits**Speicher" gefunden wurden) finden Sie möglicherweise einige verschiedene Informationsspalten.  Zwei, die sich hervorheben, sind eine **flache Größe** und eine **Beibehaltungs Größe**, doch was stellen diese dar?  
+Bei der Arbeit mit dem [Speicherbereich][DevtoolsMemoryProblemsHeapSnapshots] in DevTools \(ein Tool zur Untersuchung von Speicherproblemen unter **Speicher**\) können Sie sich einige verschiedene Spalten mit Informationen anschauen.  Zwei, die sich abhingen, sind **Flache Größe** und **Beibehaltene Größe,** aber was stellen diese dar?  
 
-:::image type="complex" source="../media/memory-problems-shallow-retained.msft.png" alt-text="Visuelle Darstellung des Arbeitsspeichers" lightbox="../media/memory-problems-shallow-retained.msft.png":::
-   Flache und gespeicherte Größe  
+:::image type="complex" source="../media/memory-problems-shallow-retained.msft.png" alt-text="Flache und beibehaltene Größe" lightbox="../media/memory-problems-shallow-retained.msft.png":::
+   Flache und beibehaltene Größe  
 :::image-end:::  
 
-### Flache Größe  
+### <a name="shallow-size"></a>Flache Größe  
 
-Dies ist die Größe des Speichers, der vom Objekt gehalten wird.  
+Dies ist die Größe des Arbeitsspeichers, der vom Objekt gehalten wird.  
 
-Typische JavaScript-Objekte verfügen über einen Speicherplatz, der für die Beschreibung reserviert ist, und zum Speichern unmittelbarer Werte.  In der Regel können nur Arrays und Zeichenfolgen eine beträchtliche flache Größe aufweisen.  Zeichenfolgen und externe Arrays verfügen jedoch häufig über Ihren Hauptspeicher im rendererspeicher, wodurch nur ein kleines Wrapperobjekt auf dem JavaScript-Heap verfügbar gemacht wird.  
+Bei typischen JavaScript-Objekten ist etwas Arbeitsspeicher für die Beschreibung und das Speichern von unmittelbaren Werten reserviert.  In der Regel können nur Arrays und Zeichenfolgen eine erhebliche flache Größe aufweisen.  Zeichenfolgen und externe Arrays verfügen jedoch häufig über ihren Hauptspeicher im Rendererspeicher, was nur ein kleines Wrapperobjekt im JavaScript-Heap verfügbar macht.  
 
-Der Renderer-Arbeitsspeicher ist der gesamte Arbeitsspeicher des Prozesses, in dem eine geprüfte Seite gerendert wird: nativer Arbeitsspeicher + js-Heapspeicher des Page + js-Heapspeichers aller dedizierten Arbeitskräfte, die von der Seite gestartet wurden.  Dennoch kann selbst ein kleines Objekt eine große Menge an Arbeitsspeicher indirekt aufnehmen, indem verhindert wird, dass andere Objekte vom automatischen Garbage Collection-Prozess verworfen werden.  
+Rendererspeicher ist der ganze Speicher des Prozesses, in dem eine überprüfte Seite gerendert wird: systemeigener Speicher + JS-Heapspeicher der Seite + JS-Heapspeicher aller dedizierten Mitarbeiter, die von der Seite gestartet wurden.  Dennoch kann selbst ein kleines Objekt indirekt einen großen Speicher enthalten, indem verhindert wird, dass andere Objekte durch den automatischen Garbage Collection-Prozess verworfen werden.  
 
-### Beibehaltungs Größe  
+### <a name="retained-size"></a>Beibehaltene Größe  
 
-Hierbei handelt es sich um die Größe des Arbeitsspeichers, der freigegeben wird, sobald das Objekt zusammen mit den abhängigen Objekten gelöscht wird, die aus den **Garbage Collector-Stämmen** (GC-Stämme \) nicht erreichbar sind.  
+Dies ist die Größe des Arbeitsspeichers, der freigegeben wird, nachdem das Objekt gelöscht wurde, zusammen mit den abhängigen Objekten, die aus Garbage Collector-Ursprüngen nicht erreichbar **gemacht wurden.**  
 
-**Garbage Collector-Stämme** \ (GC-Stämme \) bestehen aus **Handles** , die \ (entweder lokal oder Global \) erstellt werden, wenn Sie einen Verweis vom systemeigenen Code auf ein JavaScript-Objekt außerhalb von V8 erstellen.  Alle derartigen Handles befinden sich möglicherweise in einem Heap-Snapshot unter **GC-Roots**  >  -**Handles** und globalen **GC-Stamm**  >  **Handles**.  Die Beschreibung der Handles in dieser Dokumentation, ohne die Details der Browser Implementierung zu untertauchen, ist möglicherweise verwirrend.  Sowohl Garbage Collector (GC)-Stämme als auch die Ziehpunkte sind keine Grund zur Sorge.  
+**Garbage Collector-Ursprünge** werden **** aus Handles erstellt, die \(entweder lokal oder global\) erstellt werden, wenn ein Verweis aus systemeigenem Code auf ein JavaScript-Objekt außerhalb von V8 erfolgt.  Alle diese Handles finden Sie in einer Heapmomentaufnahme unter **GC roots**  >  **Handle scope** und GC **roots**  >  **Global handles**.  Die Beschreibung der Handles in dieser Dokumentation, ohne details zur Browserimplementierung zu machen, kann verwirrend sein.  Sowohl garbage collector roots als auch die Handles müssen Sie sich keine Sorgen machen.  
 
-Es gibt viele interne GC-Stämme, von denen die meisten nicht für die Benutzer interessant sind.  Aus Sicht der Anwendungen gibt es folgende Arten von Stämmen:  
+Es gibt viele interne Garbage Collector-Ursprünge, von denen die meisten für die Benutzer nicht interessant sind.  Aus Der Sicht der Anwendungen gibt es folgende Arten von Ursprüngen.  
 
-*   Globales Window-Objekt \ (in jedem IFRAME \).  In den Heap-Schnappschüssen gibt es ein Entfernungs Feld, bei dem es sich um die Anzahl der Eigenschaftsverweise auf dem kürzesten Beibehaltungs Pfad aus dem Fenster handelt.  
-*   Dokument-DOM-Struktur, bestehend aus allen systemeigenen DOM-Knoten, die durch Durchlaufen des Dokuments erreichbar sind.  Nicht alle Knoten können js-Wrapper aufweisen, aber wenn ein Knoten über einen Wrapper verfügt, ist er lebendig, während das Dokument aktiv ist.  
-*   Manchmal werden Objekte im Debugger-Kontext im **Quellen** Panel und in der **Konsole** (beispielsweise nach der Konsolen Auswertung \) gespeichert.  Erstellen Sie Heap-Schnappschüsse mit einem gelöschten **Konsolen** Panel und keine aktiven Haltepunkte im Debugger im **Quellen** Panel.
+*   Window global object \(in each iframe\).  In den Heapmomentaufnahmen ist ein Abstandsfeld enthalten, das die Anzahl der Eigenschaftsverweise auf dem kürzesten Aufbewahrungspfad vom Fenster aus ist.  
+*   Dokument-DOM-Struktur, die aus allen systemeigenen DOM-Knoten besteht, die durch Durchlaufen des Dokuments erreichbar sind.  Nicht alle Knoten verfügen möglicherweise über JS-Wrapper, aber wenn ein Knoten über einen Wrapper verfügt, ist er lebendig, während das Dokument noch am Leben ist.  
+*   Manchmal können Objekte im Debuggerkontext im Bereich **Quellen** und in der **Konsole** \(z. B. nach der Konsolenauswertung\) beibehalten werden.  Erstellen Sie Heapmomentaufnahmen mit einem geräumten **Konsolenbereich** und keine aktiven Haltepunkte im Debugger im **Bereich** Quellen.
 
 >[!TIP]
-> Deaktivieren Sie die **Konsolen** Leiste, indem Sie die `clear()` Haltepunkte im **Quellen** Panel ausführen und deaktivieren, bevor Sie einen Heap-Schnappschuss im [Speicher Panel][DevtoolsMemoryProblemsHeapSnapshots]aufnehmen.
+> Deaktivieren Sie **den Konsolenbereich,** indem Sie Haltepunkte im Bereich Quellen ausführen und deaktivieren, bevor Sie eine `clear()` **** Heapmomentaufnahme im [Speicherbereich erstellen.][DevtoolsMemoryProblemsHeapSnapshots]
 
-Der Speicher Graph beginnt mit einem Stamm, der das Objekt des `window` Browsers oder das `Global` Objekt eines Node.js Moduls sein kann.  Sie steuern nicht, wie dieses Stammobjekt Garbage Collection (GGT) ist.  
+Das Speicherdiagramm beginnt mit einem Stamm, der das Objekt des Browsers oder das Objekt eines Node.js `window` `Global` sein kann.  Sie können nicht steuern, wie dieses Stammobjekt im Garbage Collection-Objekt gesammelt wird.  
 
-:::image type="complex" source="../media/memory-problems-dontcontrol.msft.png" alt-text="Visuelle Darstellung des Arbeitsspeichers" lightbox="../media/memory-problems-dontcontrol.msft.png":::
+:::image type="complex" source="../media/memory-problems-dontcontrol.msft.png" alt-text="Sie können nicht steuern, wie das Stammobjekt als Garbage Collection erfasst wird." lightbox="../media/memory-problems-dontcontrol.msft.png":::
    Sie können nicht steuern, wie das Stammobjekt als Garbage Collection erfasst wird.  
 :::image-end:::  
 
-Was nicht über den Stamm erreichbar ist, erhält Garbage Collection \ (GGT \).  
+Was vom Stamm aus nicht erreichbar ist, wird garbage collected.  
 
 > [!NOTE]
-> Die Spalten " [flache Größe](#shallow-size) " und " [Größe beibehalten](#retained-size) " stellen Daten in Bytes dar.  
+> Sowohl die [Spalten "Flache Größe"](#shallow-size) [als auch "Beibehaltene Größe"](#retained-size) stellen Daten in Bytes dar.  
 
-## Objekte, die die Struktur beibehalten  
+## <a name="objects-retaining-tree"></a>Aufbewahrungsstruktur für Objekte  
 
-Der Heap ist ein Netzwerk von miteinander verbundenen Objekten.  In der mathematischen Welt wird diese Struktur als **Diagramm** oder Speicher Diagramm bezeichnet.  Ein Diagramm wird aus **Knoten** erstellt, die über **Kanten**verbunden sind, wobei beide Bezeichnungen angegeben werden.  
+Der Heap ist ein Netzwerk von miteinander verbundenen Objekten.  In der mathematischen Welt wird diese Struktur als Diagramm **oder** Speicherdiagramm bezeichnet.  Ein Diagramm wird aus Knoten **erstellt,** die über Kanten verbunden **sind,** die beide Beschriftungen erhalten.  
 
-*   **Knoten** \ (oder **Objekte**\) werden mit dem Namen der **Konstruktorfunktion** gekennzeichnet, die zum Erstellen verwendet wurde.  
-*   **Kanten** werden mit den Namen der **Eigenschaften**gekennzeichnet.  
+*   **Knoten** \(oder **Objekte**\) werden mit **** dem Namen der Konstruktorfunktion gekennzeichnet, die zum Erstellen verwendet wurde.  
+*   **Kanten** werden mit den Namen von Eigenschaften **gekennzeichnet.**  
 
-Erfahren Sie [, wie Sie ein Profil mit dem Heap Profiler aufzeichnen][DevtoolsMemoryProblemsHeapSnapshots].  In der folgenden Abbildung sind einige der auffälligen Dinge, die bei der Aufzeichnung des Heap-Schnappschusses im [Speicher Panel][DevtoolsMemoryProblemsHeapSnapshots] angezeigt werden können, Distance: der Abstand vom Garbage Collector \ (GC \)-Stammverzeichnis.  Wenn sich fast alle Objekte desselben Typs im gleichen Abstand befinden und einige wenige in größerer Entfernung sind, ist das eine Untersuchung Wert.  
+Erfahren [Sie, wie Sie ein Profil mit dem Heap Profiler aufzeichnen.][DevtoolsMemoryProblemsHeapSnapshots]  In der folgenden Abbildung sind einige der wichtigsten Dinge in der Heap Snapshot-Aufzeichnung im [Tool Speicher][DevtoolsMemoryProblemsHeapSnapshots] enthalten: der Abstand zum Garbage Collector-Stamm.  Wenn sich fast alle Objekte desselben Typs in derselben Entfernung befinden und einige wenige sich in größerer Entfernung befinden, ist dies eine Untersuchung wert.  
 
-:::image type="complex" source="../media/memory-problems-root.msft.png" alt-text="Visuelle Darstellung des Arbeitsspeichers" lightbox="../media/memory-problems-root.msft.png":::
-   Abstand vom Stamm  
+:::image type="complex" source="../media/memory-problems-root.msft.png" alt-text="Abstand zum Stamm" lightbox="../media/memory-problems-root.msft.png":::
+   Abstand zum Stamm  
 :::image-end:::  
 
-## Dominators  
+## <a name="dominators"></a>Dominante  
 
-Dominator-Objekte bestehen aus einer Struktur, da jedes Objekt genau einen Dominator hat.  Ein Dominator eines Objekts kann keine direkten Bezüge auf ein Objekt aufweisen, das es dominiert; Das bedeutet, dass die Struktur des Dominators keine Spanning-Struktur des Diagramms ist.  
+Dominantor-Objekte bestehen aus einer Strukturstruktur, da jedes Objekt über genau einen Dominanter verfügt.  Einem #A0 eines Objekts fehlen möglicherweise direkte Verweise auf ein objekt, das es überragt. Das heißt, die Struktur des Dominantors ist keine spannende Struktur des Diagramms.  
 
-In der folgenden Abbildung ist die folgende Anweisung wahr.  
+In der folgenden Abbildung ist die folgende Anweisung true.  
 
-*   Knoten 1 dominiert Knoten 2  
-*   Knoten 2 dominiert die Knoten 3, 4 und 6  
-*   Knoten 3 dominiert Knoten 5  
-*   Knoten 5 dominiert Knoten 8  
-*   Knoten 6 dominiert Knoten 7  
+*   Knoten 1 überwiegen Knoten 2  
+*   Knoten 2 überwiegen die Knoten 3, 4 und 6  
+*   Knoten 3 überwiegen Knoten 5  
+*   Knoten 5 überwiegen Knoten 8  
+*   Knoten 6 überwiegen Knoten 7  
 
-:::image type="complex" source="../media/memory-problems-dominatorsspanning.msft.png" alt-text="Visuelle Darstellung des Arbeitsspeichers" lightbox="../media/memory-problems-dominatorsspanning.msft.png":::
-   Struktur des Dominators  
+:::image type="complex" source="../media/memory-problems-dominatorsspanning.msft.png" alt-text="Struktur der dominanten Struktur" lightbox="../media/memory-problems-dominatorsspanning.msft.png":::
+   Struktur der dominanten Struktur  
 :::image-end:::  
 
-In der folgenden Abbildung `#3` ist der Knoten der Dominator von `#10` , aber er ist `#7` auch in jedem einfachen Pfad vom Garbage Collector \ (GC \) bis `#10` .  Daher ist ein Objekt b ein Dominator eines Objekts a, wenn b in jedem einfachen Pfad vom Stamm zum Objekt a vorhanden ist.  
+In der folgenden Abbildung ist Knoten der Dominante von , ist aber auch in jedem einfachen Pfad von `#3` `#10` Garbage Collector zu `#7` `#10` vorhanden.  Daher ist ein Objekt B ein Dominanter eines Objekts A, wenn B in jedem einfachen Pfad vom Stamm zum Objekt A vorhanden ist.  
 
-:::image type="complex" source="../media/memory-problems-dominators.msft.gif" alt-text="Visuelle Darstellung des Arbeitsspeichers" lightbox="../media/memory-problems-dominators.msft.gif":::
-   Animierte Dominator-Illustration  
+:::image type="complex" source="../media/memory-problems-dominators.msft.gif" alt-text="Animierte Dominantor-Illustration" lightbox="../media/memory-problems-dominators.msft.gif":::
+   Animierte Dominantor-Illustration  
 :::image-end:::  
 
-## V8-Besonderheiten  
+## <a name="v8-specifics"></a>V8-Spezifische  
 
-Bei der Profilerstellung von Arbeitsspeicher ist es hilfreich zu verstehen, warum Heap Momentaufnahmen auf eine bestimmte Weise aussehen.  In diesem Abschnitt werden einige speicherbezogene Themen beschrieben, die speziell der **virtuellen V8-JavaScript-Maschine** \ (V8 VM oder VM \) entsprechen.  
+Beim Profilerstellungsspeicher ist es hilfreich zu verstehen, warum Heapmomentaufnahmen auf eine bestimmte Weise aussehen.  In diesem Abschnitt werden einige Speicherthemen beschrieben, die speziell dem **virtuellen V8-JavaScript-Computer** \(V8 VM oder VM\) zugeordnet sind.  
 
-### JavaScript-Objektdarstellung  
+### <a name="javascript-object-representation"></a>JavaScript-Objektdarstellung  
 
-Es gibt drei primitive Typen:  
+Es gibt drei Grundtypen:  
 
-*   Zahlen \ (Beispiel `3.14159...` : \)  
-*   Boolesche Werte \ ( `true` oder `false` \)  
-*   Zeichenfolgen \ (Beispiel `"Werner Heisenberg"` : \)  
+*   Zahlen \(z. B. `3.14159...` \)  
+*   Booleans \( `true` oder `false` \)  
+*   Zeichenfolgen \(z. B. `"Werner Heisenberg"` \)  
 
-Primitive können nicht auf andere Werte verweisen und sind immer Blatt-oder Endpunkt Knoten.  
+Grundtypen können nicht auf andere Werte verweisen und sind immer Blatt- oder Endknoten.  
 
-**Nummern** können entweder wie folgt gespeichert werden:  
+**Zahlen** können wie folgt gespeichert werden:  
 
-*   eine direkte 31-Bit-Ganzzahl, die als **kleine ganze Zahlen** (**SMI**s \) bezeichnet wird, oder  
-*   Heap-Objekte, die als **Heap-Nummern**bezeichnet werden. Heap-Nummern werden zum Speichern von Werten verwendet, die nicht in das SMI-Formular passen, wie etwa **Doubles**, oder wenn ein Wert **geschachtelt**werden muss, wie beispielsweise das Festlegen von Eigenschaften.  
+*   ein sofortiger ganzzahliger 31-Bit-Wert, der als **kleine ganze Zahlen** \(**SMI**s\) bezeichnet wird, oder  
+*   Heapobjekte, die als **Heapnummern bezeichnet werden.** Heapnummern werden zum Speichern von Werten verwendet, die nicht in das SMI-Formular passen, z. B. **Doubles**oder wenn ein Wert geschachtelt werden **muss,** z. B. festlegen von Eigenschaften darauf.  
 
-**Zeichenfolgen** können entweder in folgendem gespeichert werden:  
+**Zeichenfolgen** können in einer der beiden Dateien gespeichert werden:  
 
 *   der **VM-Heap**oder
-*   extern im **Speicher des Renderers**.  Ein **Wrapperobjekt** wird erstellt und für den Zugriff auf externen Speicher verwendet, wenn beispielsweise Skript Quellen und andere Inhalte, die aus dem Web empfangen werden, gespeichert werden, anstatt auf den VM-Heap kopiert zu werden.
+*   extern im **Speicher des Renderers**.  Ein **Wrapperobjekt** wird erstellt und für den Zugriff auf externen Speicher verwendet, in dem beispielsweise Skriptquellen und andere Inhalte gespeichert werden, die aus dem Web empfangen werden, anstatt in den VM-Heap kopiert zu werden.
 
-Der Arbeitsspeicher für neue JavaScript-Objekte wird von einem dedizierten JavaScript-Heap zugeordnet \ (oder **VM-Heap**\).  Diese Objekte werden vom Garbage Collector in V8 verwaltet und bleiben daher so lange am Leben, wie es mindestens einen starken Bezug auf Sie gibt.  
+Der Arbeitsspeicher für neue JavaScript-Objekte wird über einen dedizierten JavaScript-Heap \(oder **VM-Heap\)** zugewiesen.  Diese Objekte werden vom Garbage Collector in V8 verwaltet und bleiben daher am Leben, solange mindestens ein starker Verweis darauf besteht.  
 
-Alles, was sich nicht im JavaScript-Heap befindet, wird als **systemeigenes Objekt**bezeichnet.  Systemeigene Objekte werden im Gegensatz zu Heap Objekten nicht vom V8-Garbage Collector während ihrer gesamten Lebensdauer verwaltet und können nur über JavaScript mit dem JavaScript-Wrapperobjekt aufgerufen werden.  
+Alles, was sich nicht im JavaScript-Heap befindet, wird als **systemeigenes Objekt bezeichnet.**  Systemeigene Objekte werden im Gegensatz zu Heapobjekten nicht während ihrer gesamten Lebensdauer vom V8-Garbage Collector verwaltet und können nur über JavaScript mithilfe des JavaScript-Wrapperobjekts zugegriffen werden.  
 
-**Cons String** ist ein Objekt, das aus Paaren von Zeichenfolgen besteht, die gespeichert und dann verknüpft sind und ein Ergebnis der Verkettung sind.  Die Verknüpfung des **Cons-Zeichenfolgen** Inhalts erfolgt nur bei Bedarf. Ein Beispiel wäre, wenn eine Teilzeichenfolge einer verknüpften Zeichenfolge erstellt werden muss.
+**Cons string** ist ein Objekt, das aus Paaren von Zeichenfolgen besteht, die gespeichert und dann verbunden werden, und ist ein Ergebnis der Verkettung.  Die Verbindung der **Inhalte der Cons-Zeichenfolge** erfolgt nur nach Bedarf.  Wenn z. B. eine Teilzeichenfolge einer angeschlossenen Zeichenfolge erstellt werden muss.
 
-Wenn Sie beispielsweise verketten `a` und `b` erhalten Sie eine Zeichenfolge, die `(a, b)` das Ergebnis der Verkettung darstellt.  Wenn Sie später `d` mit diesem Ergebnis verkettet haben, erhalten Sie eine weitere **Cons-Zeichenfolge**: `((a, b, d)` .  
+Wenn Sie z. B. und verketten, erhalten Sie eine Zeichenfolge, die das Ergebnis der `a` `b` `(a, b)` Verkettung darstellt.  Wenn Sie später mit diesem Ergebnis `d` verkettet sind, erhalten Sie eine weitere **Cons-Zeichenfolge:** `((a, b, d)` .  
 
-**Matrix** ist ein Objekt mit numerischen Schlüsseln. **Arrays** werden in der V8-VM umfassend verwendet, um große Datenmengen zu speichern. Sätze von Schlüssel-Wert-Paaren, wie Wörterbücher, werden von **Arrays**gesichert.  
+**Array** ist ein Objekt mit numerischen Schlüsseln. **Arrays** werden in der V8 VM umfassend zum Speichern großer Datenmengen verwendet. Sätze von Schlüssel-Wert-Paaren, z. B. Wörterbücher, werden durch **Arrays gesichert.**  
 
-Ein typisches JavaScript-Objekt wird nur als einer von zwei **Array** Typen gespeichert:  
+Ein typisches JavaScript-Objekt wird nur als einer von zwei **Arraytypen** gespeichert:  
 
 *   benannte Eigenschaften und  
 *   numerische Elemente  
 
-Wenn eine geringe Anzahl von Eigenschaften vorhanden ist, werden die Eigenschaften intern im JavaScript-Objekt gespeichert.  
+Bei einer kleinen Anzahl von Eigenschaften werden die Eigenschaften intern im JavaScript-Objekt gespeichert.  
 
-**Map** ist ein Objekt, das sowohl die Art des Objekts als auch das Layout beschreibt. Karten werden beispielsweise verwendet, um implizite Objekthierarchien für den [schnellen Eigenschaftenzugriff][V8FastProperties]zu beschreiben.  
+**Map** ist ein Objekt, das sowohl den Objekttyp als auch das Layout beschreibt. Beispielsweise werden Karten verwendet, um implizite Objekthierarchien für den [schnellen Eigenschaftenzugriff zu beschreiben.][V8FastProperties]  
 
-### Objektgruppen  
+### <a name="object-groups"></a>Objektgruppen  
 
-Jede Gruppe **systemeigene Objekte** besteht aus Objekten, die gegenseitige Bezüge aufeinander abhalten.  Nehmen Sie beispielsweise eine DOM-Unterstruktur in Frage, bei der jeder Knoten über einen Link zum relativen übergeordneten Element und Links zum nächsten untergeordneten Element und zum nächsten nebengeordneten Element verfügt, wodurch ein verbundenes Diagramm entsteht.  
+Jede **systemeigene Objektgruppe** besteht aus Objekten, die gegenseitige Verweise aufeinander enthalten.  Stellen Sie sich beispielsweise eine DOM-Unterstruktur vor, in der jeder Knoten eine Verknüpfung zum relativen übergeordneten Element und Links zum nächsten untergeordneten und nächsten gleichgeordneten Element hat und daher ein verbundenes Diagramm bildet.  
 
 > [!NOTE]
-> Systemeigene Objekte werden nicht im JavaScript-Heap dargestellt.  Das Fehlen einer Darstellung ist der Grund dafür, dass systemeigene Objekte die Größe 0 aufweisen. Stattdessen werden Wrapper Objekte erstellt.  
+> Systemeigene Objekte werden nicht im JavaScript-Heap dargestellt.  Die fehlende Darstellung ist der Grund, warum systemeigene Objekte die Größe Null haben. Stattdessen werden Wrapperobjekte erstellt.  
 
-Jedes Wrapperobjekt enthält einen Verweis auf das entsprechende systemeigene Objekt für die Umleitung von Befehlen an ihn.  Eine Objektgruppe enthält wiederum Wrapper Objekte.  Dadurch wird jedoch kein nicht sammelbarer Zyklus erstellt, da der Garbage Collector \ (GC \) intelligent genug ist, Objektgruppen freizugeben, deren Wrapper nicht mehr referenziert werden. Aber zu vergessen, einen einzelnen Wrapper freizugeben, enthält die gesamte Gruppe und zugehörige Wrapper.  
+Jedes Wrapperobjekt enthält einen Verweis auf das entsprechende systemeigene Objekt zum Umleiten von Befehlen an dieses Objekt.  Eine Objektgruppe enthält wiederum Wrapperobjekte.  Dadurch wird jedoch kein unkollektierbarer Zyklus erstellt, da Garbage Collector intelligent genug ist, um Objektgruppen frei zu lassen, auf deren Wrapper nicht mehr verwiesen wird.  Vergessen sie jedoch, einen einzelnen Wrapper zu veröffentlichen, enthält die gesamte Gruppe und die zugehörigen Wrapper.  
 
-## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsMemoryProblemsHeapSnapshots]: ./heap-snapshots.md "Aufzeichnen von Heap-Snapshots | Microsoft docs"  
+[DevtoolsMemoryProblemsHeapSnapshots]: ./heap-snapshots.md "Aufzeichnen von Heapmomentaufnahmen | Microsoft Docs"  
 
-[V8FastProperties]: https://v8.dev/blog/fast-properties "Fast-Eigenschaften in V8 | V8"  
+[V8FastProperties]: https://v8.dev/blog/fast-properties "Schnelle Eigenschaften in V8-| V8"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
-> Die ursprüngliche Seite wird [hier](https://developers.google.com/web/tools/chrome-devtools/memory-problems/memory-101) gefunden und von [Meggin Kearney][MegginKearney] (Technical Writer \) erstellt.  
+> Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
+> Die ursprüngliche Seite befindet sich [hier und](https://developers.google.com/web/tools/chrome-devtools/memory-problems/memory-101) wird von [Meggin Kearney][MegginKearney] \(Technical Writer\) verfasst.  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

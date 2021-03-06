@@ -1,18 +1,18 @@
 ---
-description: Anzeigen und Bearbeiten von Dateien, Erstellen von Ausschnitten, Debuggen von JavaScript und Einrichten von Arbeitsbereichen im Quellen Panel von Microsoft Edge devtools
+description: Anzeigen und Bearbeiten von Dateien, Erstellen von Codeausschnitten, Debuggen von JavaScript und Einrichten von Arbeitsbereichen im Bereich Quellen von Microsoft Edge DevTools.
 title: Übersicht über das Quellenpanel
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/17/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: b90f927670146c004a335256ace28203219442eb
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 4677bf82d3506a4b8d6336ded7ab557b794fd3df
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11233720"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397762"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,38 +28,38 @@ ms.locfileid: "11233720"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Übersicht über das Quellenpanel  
+# <a name="sources-panel-overview"></a>Übersicht über das Quellenpanel  
 
-Verwenden Sie das Panel Microsoft Edge devtools **Sources** , um die folgenden Aktionen auszuführen.  
+Verwenden Sie den **** Microsoft Edge DevTools Sources-Bereich, um die folgenden Aktionen durchzuführen.  
 
-*   [Anzeigen von Dateien](#display-files)  
-*   [Bearbeiten Sie CSS und JavaScript](#edit-css-and-javascript).  
-*   Sie können [JavaScript- **Snippets** erstellen und speichern](#create-save-and-run-snippets), die Sie möglicherweise auf einer beliebigen Webseite ausführen.  **Snippets** ähneln Bookmarklets.  
-*   [Debuggen von JavaScript](#debug-javascript)  
-*   [Richten Sie einen Arbeitsbereich ein](#set-up-a-workspace), damit Änderungen, die Sie in devtools vornehmen, in dem Code Ihres Dateisystems gespeichert werden.  
+*   [Anzeigen von Dateien](#display-files).  
+*   [Bearbeiten von CSS und JavaScript](#edit-css-and-javascript).  
+*   [Erstellen und speichern **Sie Codeausschnitte** von JavaScript](#create-save-and-run-snippets), die Sie auf jeder Beliebigen Webseite ausführen können.  **Codeausschnitte** ähneln Bookmarklets.  
+*   [Debuggen von JavaScript](#debug-javascript).  
+*   [Richten Sie einen Arbeitsbereich](#set-up-a-workspace)ein, damit Änderungen, die Sie in DevTools vornehmen, im Code ihres Dateisystems gespeichert werden.  
     
-## Anzeigen von Dateien  
+## <a name="display-files"></a>Anzeigen von Dateien  
 
-Verwenden Sie den **Seiten** Bereich, um alle Ressourcen anzuzeigen, die von der Seite geladen wurden.
+Verwenden **** Des Seitenbereichs; , um alle Ressourcen, die die Seite geladen hat, anzeigen zu können.
 
 :::image type="complex" source="../media/sources-page-pane.msft.png" alt-text="Seitenbereich" lightbox="../media/sources-page-pane.msft.png":::
-   **Seiten** Bereich  
+   **Seitenbereich**  
 :::image-end:::  
 
-Organisation des **Seiten** Bereichs:  
-*   Die oberste Ebene, wie `top` in der vorherigen Abbildung, stellt einen [HTML-Frame][W3CHtml4Frames]dar.  Finden `top` Sie auf jeder Seite, die Sie besuchen.  `top` stellt den Hauptdokument Frame dar.  
-*   Die zweite Ebene, wie `docs.microsoft.com` in der vorhergehenden Abbildung, stellt einen [Ursprung][HtmlstandardOrigin]dar.  
-*   Die dritte Ebene, die vierte Ebene usw., stellen Verzeichnisse und Ressourcen dar, die von diesem Ursprung geladen wurden.  In der vorherigen Abbildung wird beispielsweise der vollständige Pfad zur Ressource `devtools-guide-chromium` `docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium`  
+So wird **der Seitenbereich** organisiert:  
+*   Die oberste Ebene, z. B. `top` in der vorherigen Abbildung, stellt einen [HTML-Frame dar.][W3CHtml4Frames]  Suchen `top` Sie auf jeder Seite, die Sie besuchen.  `top` stellt den Hauptdokumentrahmen dar.  
+*   Die zweite Ebene, z. B. `docs.microsoft.com` in der vorherigen Abbildung, stellt einen [Ursprung dar.][HtmlstandardOrigin]  
+*   Die dritte Ebene, die vierte Ebene und so weiter stellen Verzeichnisse und Ressourcen dar, die von diesem Ursprung geladen wurden.  In der vorherigen Abbildung ist z. B. der vollständige Pfad zur `devtools-guide-chromium` Ressource `docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium`  
     
-Wählen Sie im **Seiten** Bereich eine Datei aus, um den Inhalt im **Editor** Bereich anzuzeigen.  Sie können jede Art von Datei anzeigen.  Bei Bildern wird eine Vorschau des Bilds angezeigt.  
+Wählen Sie eine Datei im **Bereich Seite** aus, um den Inhalt im **Editorbereich anzuzeigen.**  Sie können einen beliebigen Dateityp anzeigen.  Für Bilder wird eine Vorschau des Bilds angezeigt.  
 
-:::image type="complex" source="../media/sources-editor-pane.msft.png" alt-text="Anzeigen der Inhalte von a4d10f71.index-docs.js im Bereich Editor" lightbox="../media/sources-editor-pane.msft.png":::
-   Anzeigen des Inhalts `a4d10f71.index-docs.js` im Bereich " **Editor** "  
+:::image type="complex" source="../media/sources-editor-pane.msft.png" alt-text="Anzeigen des Inhalts von a4d10f71.index-docs.js im Editorbereich" lightbox="../media/sources-editor-pane.msft.png":::
+   Anzeigen des Inhalts `a4d10f71.index-docs.js` im **Editorbereich**  
 :::image-end:::  
 
-## Bearbeiten von CSS und JavaScript  
+## <a name="edit-css-and-javascript"></a>Bearbeiten von CSS und JavaScript  
 
-Verwenden Sie den **Editor** Bereich, um CSS und JavaScript zu bearbeiten.  DevTools aktualisiert die Seite, um den neuen Code auszuführen.  Wenn Sie beispielsweise eine CSS-Datei bearbeiten, indem Sie unten die Stilregel hinzufügen:
+Verwenden Sie den **Editorbereich,** um CSS und JavaScript zu bearbeiten.  DevTools aktualisiert die Seite, um den neuen Code ausführen zu können.  Wenn Sie z. B. eine CSS-Datei bearbeiten, indem Sie die folgende Formatvorlagenregel hinzufügen:
 
 ```css
 .metadata.page-metadata {
@@ -69,21 +69,21 @@ Verwenden Sie den **Editor** Bereich, um CSS und JavaScript zu bearbeiten.  DevT
 
 Diese Änderung sollte sofort wirksam werden.
 
-:::image type="complex" source="../media/edit-css.msft.png" alt-text="Bearbeiten von CSS im Editor Bereich zum Ändern der Textfarbe des Untertitels in rot" lightbox="../media/edit-css.msft.png":::
-   Bearbeiten von CSS im **Editor** Bereich zum Ändern der Textfarbe des Untertitels in rot  
+:::image type="complex" source="../media/edit-css.msft.png" alt-text="Bearbeiten von CSS im Editorbereich, um die Textfarbe des Untertitels in Rot zu ändern" lightbox="../media/edit-css.msft.png":::
+   Bearbeiten von CSS im **Editorbereich,** um die Textfarbe des Untertitels in Rot zu ändern  
 :::image-end:::  
 
-CSS-Änderungen werden sofort wirksam, keine Speicherung erforderlich.  Damit JavaScript-Änderungen wirksam werden, wählen Sie `Control` + `S` \ (Windows, Linux \) oder `Command` + `S` \ (macOS \) aus.  DevTools führt ein Skript nicht erneut aus, sodass nur die JavaScript-Änderungen wirksam werden, die Sie in Funktionen vornehmen.  Beachten Sie beispielsweise in der folgenden Abbildung, wie diese `console.log('A')` nicht ausgeführt wird, während `console.log('B')` dies der Fall ist.  Wenn devtools das gesamte Skript nach dem vornehmen der Änderung erneut ausführt, wurde der Text `A` in der **Konsole**protokolliert.  
+CSS-Änderungen werden sofort wirksam, es ist kein Speichern erforderlich.  Damit JavaScript-Änderungen wirksam werden, wählen `Control` + `S` Sie \(Windows, Linux\) oder `Command` + `S` \(macOS\).  DevTools führt kein Skript erneut aus, daher sind die einzigen JavaScript-Änderungen, die wirksam werden, diejenigen, die Sie innerhalb von Funktionen vornehmen.  Beachten Sie beispielsweise in der folgenden Abbildung, wie `console.log('A')` nicht ausgeführt wird. `console.log('B')`  Wenn DevTools das gesamte Skript nach der Änderung erneut ausgeführt hat, wird der Text `A` bei der **Konsole protokolliert.**  
 
-:::image type="complex" source="../media/edit-js.msft.png" alt-text="Bearbeiten von JavaScript im Bereich Editor" lightbox="../media/edit-js.msft.png":::
-   Bearbeiten von JavaScript im Bereich " **Editor** "  
+:::image type="complex" source="../media/edit-js.msft.png" alt-text="Bearbeiten von JavaScript im Editorbereich" lightbox="../media/edit-js.msft.png":::
+   Bearbeiten von JavaScript im **Editorbereich**  
 :::image-end:::  
 
-DevTools löscht Ihre CSS-und JavaScript-Änderungen beim erneuten Laden der Seite.  Navigieren Sie zum [Einrichten eines Arbeitsbereichs](#set-up-a-workspace) , um zu erfahren, wie Sie die Änderungen in Ihrem Dateisystem speichern.  
+DevTools löscht Ihre CSS- und JavaScript-Änderungen, wenn Sie die Seite aktualisieren.  Navigieren Sie [zu Einrichten eines Arbeitsbereichs,](#set-up-a-workspace) um zu erfahren, wie Sie die Änderungen an Ihrem Dateisystem speichern.  
 
-## Erstellen, speichern und Ausführen von Ausschnitten  
+## <a name="create-save-and-run-snippets"></a>Erstellen, Speichern und Ausführen von Codeausschnitten  
 
-Snippets sind Skripts, die auf einer beliebigen Seite ausgeführt werden können.  Stellen Sie sich vor, dass Sie den folgenden Code wiederholt in der **Konsole**eingeben, um die jQuery-Bibliothek auf einer Seite einzufügen, damit Sie jQuery-Befehle über die **Konsole**ausführen können.  
+Codeausschnitte sind Skripts, die Sie auf jeder Beliebigen Seite ausführen können.  Stellen Sie sich vor, Sie geben den folgenden Code wiederholt in die Konsole **ein,** um die jQuery-Bibliothek in eine Seite zu einfügen, damit Sie jQuery-Befehle aus der Konsole **ausführen können.**  
 
 ```javascript
 let script = document.createElement('script');
@@ -93,36 +93,36 @@ script.integrity = 'sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=';
 document.head.appendChild(script);
 ```  
 
-Stattdessen können Sie diesen Code in einem **Snippet** speichern und mit ein paar Klicks auf die Schaltfläche ausführen, wenn Sie ihn benötigen.  DevTools speichert das **Snippet** in Ihrem Dateisystem.  
+Stattdessen können Sie diesen Code in einem Codeausschnitt **speichern** und mit ein paar Schaltflächenklicks ausführen, wenn Sie ihn benötigen.  DevTools speichert den **Codeausschnitt** in Ihrem Dateisystem.  
 
-:::image type="complex" source="../media/snippet.msft.png" alt-text="Ein Snippet, das die jQuery-Bibliothek auf einer Seite einfügt" lightbox="../media/snippet.msft.png":::
-   Ein **Snippet** , das die jQuery-Bibliothek auf einer Seite einfügt  
+:::image type="complex" source="../media/snippet.msft.png" alt-text="Ein Codeausschnitt, der die jQuery-Bibliothek in eine Seite einfüge" lightbox="../media/snippet.msft.png":::
+   Ein **Codeausschnitt,** der die jQuery-Bibliothek in eine Seite einfüge  
 :::image-end:::  
 
-So führen Sie einen **Ausschnitt**aus:
+So führen Sie einen **Codeausschnitt aus:**
 
-*   Öffnen Sie die Datei über den Bereich **Snippets** , und wählen Sie **Ausführen** \ ( ![ die Schaltfläche Ausführen ][ImageRunIcon] \) aus.  
-*   Öffnen Sie das [Menübefehl][DevtoolsGuideChromiumCommandMenuIndex], löschen `>` Sie das Zeichen, geben `!` Sie den Namen des **Snippets**ein, und wählen Sie dann aus `Enter` .  
+*   Öffnen Sie die Datei mithilfe des **Codeausschnittbereichs,** und wählen Sie **Ausführen** \( ![ Die Schaltfläche Ausführen ][ImageRunIcon] \).  
+*   Öffnen Sie [das Befehlsmenü,][DevtoolsGuideChromiumCommandMenuIndex]löschen Sie das Zeichen, geben Sie ein, geben Sie den Namen Ihres Codeausschnitts `>` `!` ein, und wählen Sie dann **** `Enter` aus.  
     
-Navigieren Sie zum [Ausführen von Codeausschnitten auf jeder Seite][DevtoolsGuideChromiumJavascriptSnippets] , um weitere Informationen zu erhalten.
+Navigieren Sie [zu Codeausschnitte von beliebigen Seiten ausführen,][DevtoolsGuideChromiumJavascriptSnippets] um weitere Informationen zu erhalten.
 
-## Debuggen von JavaScript  
+## <a name="debug-javascript"></a>Debuggen von JavaScript  
 
-Anstatt `console.log()` abzuleiten, wo Ihr JavaScript schief läuft, sollten Sie stattdessen die Microsoft Edge DevTools-Debugging-Tools verwenden.  Die allgemeine Idee ist, einen Haltepunkt zu definieren, der eine absichtliche Unterbrechung in Ihrem Code ist, und dann schrittweise durch die Laufzeit des Codes eine Zeile zu einem Zeitpunkt zu führen.  Wenn Sie den Code schrittweise durchlaufen, können Sie die Werte aller aktuell definierten Eigenschaften und Variablen anzeigen und ändern, JavaScript in der **Konsole**ausführen und vieles mehr.
+Anstatt zu verwenden, um zu abfingen, wo Ihr JavaScript falsch läuft, sollten Sie stattdessen die `console.log()` Microsoft Edge DevTools-Debuggingtools verwenden.  Die allgemeine Idee besteht im Festlegen eines Haltepunkts, bei dem es sich um einen beabsichtigten Stopport im Code handelt, und dann die Laufzeit des Codes, eine Zeile nach der anderen, zu durchbrechen.  Wenn Sie den Code durchschritten, können Sie die Werte aller derzeit definierten Eigenschaften und Variablen anzeigen und ändern, JavaScript in der **Konsole**ausführen und vieles mehr.
 
-Navigieren Sie zu den [ersten Schritten beim Debuggen von JavaScript][DevtoolsGuideChromiumJavascriptIndex] , um die Grundlagen des Debuggens in devtools zu erfahren.
+Navigieren Sie zu Erste Schritte mit Debuggen von [JavaScript,][DevtoolsGuideChromiumJavascriptIndex] um die Grundlagen des Debuggens in DevTools zu erfahren.
 
 :::image type="complex" source="../media/debugging.msft.png" alt-text="Debuggen von JavaScript" lightbox="../media/debugging.msft.png":::
    Debuggen von JavaScript  
 :::image-end:::  
 
-## Einrichten eines Arbeitsbereichs  
+## <a name="set-up-a-workspace"></a>Einrichten eines Arbeitsbereichs  
 
-Wenn Sie eine Datei im **Quellen** Tool bearbeiten, gehen diese Änderungen standardmäßig verloren, wenn Sie die Seite erneut laden.  Mit **Arbeitsbereichen** können Sie die Änderungen, die Sie in devtools vornehmen, in Ihrem Dateisystem speichern.  Im Wesentlichen kann devtools als Code-Editor verwendet werden.
+Wenn Sie eine Datei im **** Tool Quellen bearbeiten, gehen diese Änderungen beim Aktualisieren der Seite standardmäßig verloren.  **Mit Arbeitsbereichen** können Sie die Änderungen, die Sie in DevTools vornehmen, in Ihrem Dateisystem speichern.  Im Wesentlichen kann DevTools als Code-Editor verwendet werden.
 
-Navigieren Sie zu den ersten Schritten, um [Dateien mit Arbeitsbereichen zu bearbeiten][DevtoolsGuideChromiumWorkspacesIndex] .
+Navigieren Sie [zu Bearbeiten von Dateien mit Arbeitsbereichen,][DevtoolsGuideChromiumWorkspacesIndex] um die ersten Schritte zu starten.
 
-## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -132,18 +132,18 @@ Navigieren Sie zu den ersten Schritten, um [Dateien mit Arbeitsbereichen zu bear
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumCommandMenuIndex]: ../command-menu/index.md "Ausführen von Befehlen mit dem Befehlsmenü von Microsoft Edge devtools | Microsoft docs"  
-[DevtoolsGuideChromiumJavascriptIndex]: ../javascript/index.md "Erste Schritte mit dem Debuggen von JavaScript in Microsoft Edge devtools | Microsoft docs"  
-[DevtoolsGuideChromiumJavascriptSnippets]: ../javascript/snippets.md "Ausführen von JavaScript-Codeausschnitten auf einer beliebigen Seite mit Microsoft Edge devtools | Microsoft docs"  
-[DevtoolsGuideChromiumWorkspacesIndex]: ../workspaces/index.md "Bearbeiten von Dateien mit Arbeitsbereichen | Microsoft docs"  
+[DevtoolsGuideChromiumCommandMenuIndex]: ../command-menu/index.md "Ausführen von Befehlen mit der Microsoft Edge DevTools-Befehlsmenüleiste | Microsoft Docs"  
+[DevtoolsGuideChromiumJavascriptIndex]: ../javascript/index.md "Erste Schritte mit dem Debuggen von JavaScript in Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsGuideChromiumJavascriptSnippets]: ../javascript/snippets.md "Ausführen von Codeausschnitten von JavaScript auf jeder Seite mit Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsGuideChromiumWorkspacesIndex]: ../workspaces/index.md "Bearbeiten von Dateien mit Arbeitsbereichen | Microsoft Docs"  
 
-[HtmlstandardOrigin]: https://html.spec.whatwg.org/multipage/origin.html#origin "Herkunft | HTML-Standard"  
+[HtmlstandardOrigin]: https://html.spec.whatwg.org/multipage/origin.html#origin "Ursprung | HTML-Standard"  
 
 [W3CHtml4Frames]: https://w3.org/TR/html401/present/frames.html "Frames | W3C"  
 
 > [!NOTE]
 > Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
-> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/sources) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
+> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/sources) und wird von [Kayce Basken][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) verfasst.  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  

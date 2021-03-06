@@ -1,18 +1,18 @@
 ---
-description: Leitfaden zur Navigation in Microsoft Edge devtools mit Hilfstechnologien wie Bildschirmsprachausgaben.
-title: Navigieren in Microsoft Edge devtools mit Hilfstechnologien
+description: Eine Anleitung zum Navigieren in Microsoft Edge DevTools mithilfe von Hilfstechnologien wie Bildschirmlesegeräten.
+title: Navigieren in Microsoft Edge DevTools mit Hilfstechnologie
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: d72c856e9136291e9255b3784aad7c6cd99f92fc
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 343ce99188234b40dd8554e3db8bf303876e7b2f
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230810"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398434"
 ---
 <!-- Copyright Rob Dodson 
 
@@ -28,249 +28,249 @@ ms.locfileid: "11230810"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Navigieren in Microsoft Edge devtools mit Hilfstechnologien  
+# <a name="navigate-microsoft-edge-devtools-with-assistive-technology"></a>Navigieren in Microsoft Edge DevTools mit Hilfstechnologie  
 
-Der folgende Artikel soll Benutzern helfen, die in erster Linie auf Hilfstechnologien wie Bildschirmsprachausgaben zugreifen und [Microsoft Edge devtools][MicrosoftEdgeDevtoolsMain]verwenden.  [Microsoft Edge devtools][MicrosoftEdgeDevtoolsMain] ist eine Suite von Webentwickler Tools, die in den Microsoft Edge-Browser integriert sind.  Wenn Sie nach devtools-Features suchen, die sich auf die Verbesserung der Barrierefreiheit einer Webseite beziehen, navigieren Sie zu [Barrierefreiheits Referenz][DevtoolsAccessibilityReference].  
+Der folgende Artikel soll Benutzern helfen, die sich hauptsächlich auf Hilfstechnologie wie Bildschirmlesegeräte verlassen, auf [Microsoft Edge DevTools zu zugreifen][MicrosoftEdgeDevtoolsMain]und diese zu verwenden.  [Microsoft Edge DevTools][MicrosoftEdgeDevtoolsMain] ist eine Suite von Webentwicklertools, die in den Microsoft Edge-Browser integrierte sind.  Wenn Sie nach DevTools-Features im Zusammenhang mit der Verbesserung der Barrierefreiheit einer Webseite suchen, navigieren Sie zu [Barrierefreiheitsreferenz][DevtoolsAccessibilityReference].  
 
-Die Barrierefreiheit von devtools ist eine Work-in-Progress-Funktion.  Einige Panels und Registerkarten funktionieren mit Hilfstechnologien besser als andere.  Dieser Leitfaden führt Sie durch die Panels, die am häufigsten zugänglich sind, und hebt spezifische Probleme hervor, auf die Sie auf dem Weg stoßen können.  
+Die Barrierefreiheit von DevTools ist in Bearbeitung.  Einige Panels und Registerkarten funktionieren mit Hilfstechnologie besser als andere.  Dieser Leitfaden führt Sie durch die Panels, die am zugänglichsten sind, und hebt spezifische Probleme hervor, die auf dem Weg auftreten können.  
 
-## Übersicht  
+## <a name="overview"></a>Übersicht  
 
-Bevor Sie beginnen, hilft es, ein geistiges Modell für die Strukturierung der devtools-Benutzeroberfläche zu haben.  DevTools ist in eine Reihe von Tafeln unterteilt, die in einem [Aria-TabList][W3CWaiAriaTablist]organisiert sind.  
+Vor dem Start hilft es, ein mentales Modell der Struktur der DevTools-Benutzeroberfläche zu haben.  DevTools ist in eine Reihe von Panels unterteilt, die in eine [ARIA-Registerkartenliste unterteilt sind.][W3CWaiAriaTablist]  
 
 Zum Beispiel:  
 
-*   Im **Element** Fenster können Sie [DOM-Knoten] [DevtoolsDomIndexNavigateDomTreeKeyboard] oder [CSS][DevtoolsCssIndex][anzeigen und ändern.  
-*   Im [Konsolenfeld][DevtoolsConsoleIndex] können Sie JavaScript-Protokolle und Live-Bearbeitungs Objekte lesen.  
+*   Mit **dem Elementtool** können Sie [DOM-Knoten][DevtoolsDomIndexNavigateDomTreeKeyboard] oder CSS anzeigen und [ändern.][DevtoolsCssIndex]  
+*   Im [Konsolenbereich][DevtoolsConsoleIndex] können Sie JavaScript-Protokolle und Livebearbeitungsobjekte lesen.  
 
-Im Inhaltsbereich jedes Bereichs gibt es eine Reihe unterschiedlicher Tools, die häufig als Tabstopps oder Bereiche in der Dokumentation bezeichnet werden.  
-Beispielsweise enthält das Panel **Elemente** weitere Registerkarten, um Ereignislistener, die Barrierefreiheits Struktur und vieles mehr zu überprüfen.  Die Unterscheidung zwischen Registerkarten und Fensterbereichen ist etwas willkürlich.  Der einzige Grund, warum Sie einen oder den anderen Ausdruck überprüfen können, besteht darin, die Konsistenz mit der restlichen offiziellen devtools-Dokumentation zu gewährleisten.  
+Im Inhaltsbereich der einzelnen Bereiche finden Sie eine Reihe unterschiedlicher Tools, die in der Dokumentation häufig als Registerkarten oder Bereiche bezeichnet werden.  
+Das **Elementtool** enthält beispielsweise zusätzliche Registerkarten zum Überprüfen von Ereignislistenern, der Barrierefreiheitsstruktur und vielem mehr.  Der Unterschied zwischen Registerkarten und Fensterausschnitten ist etwas willkürlich.  Der einzige Grund, warum Sie den einen oder anderen Ausdruck überprüfen können, besteht in der Beibehaltung der Konsistenz mit dem Rest der offiziellen DevTools-Dokumentation.  
 
-## Tastenkombinationen  
+## <a name="keyboard-shortcuts"></a>Tastenkombinationen  
 
-Die [devtools-Tastenkombinationen] [DevtoolsShortcuts] ist ein hilfreiches Cheatsheet.  Achten Sie darauf, die Textmarke zu markieren, und beziehen Sie sich darauf, während Sie die verschiedenen Panels erkunden.  
+[DevTools Keyboard Shortcuts reference][DevtoolsShortcuts] ist ein hilfreiches Cheatsheet.  Achten Sie darauf, ein Lesezeichen zu setzen, und verweisen Sie beim Erkunden der verschiedenen Panels darauf.  
 
-## Open DevTools  
+## <a name="open-devtools"></a>Öffnen von DevTools  
 
-Navigieren Sie zu [Open Microsoft Edge devtools] [DevtoolsOpen], um zu beginnen.  Es gibt eine Reihe von Möglichkeiten, devtools zu öffnen, entweder über Tastenkombinationen oder Menüelemente.  
+Navigieren Sie zu [Öffnen Sie Microsoft Edge DevTools][DevtoolsOpen].  Es gibt eine Reihe von Möglichkeiten, DevTools zu öffnen, entweder über Tastenkombinationen oder Menüelemente.  
 
-## Navigieren zwischen Bereichen  
+## <a name="navigate-between-panels"></a>Navigieren zwischen Panels  
 
-### Navigieren mithilfe der Tastatur  
+### <a name="navigate-by-keyboard"></a>Navigieren über die Tastatur  
 
-*   Wenn devtools geöffnet ist, wählen Sie `Control` + `]` \ (Windows, Linux \) oder `Command` + `]` \ (macOS \) aus, um den Fokus auf das nächste Fenster zu legen.  
-*   Wählen Sie `Control` + `[` \ (Windows, Linux \) oder `Command` + `[` \ (macOS \) aus, um den Fokus auf das vorherige Panel zu legen.  
-*   Es ist auch möglich, den `Shift` + `Tab` Fokus in das Aria- [TabList][W3CWaiAriaTablist] eines Panels zu verschieben und die Pfeiltasten zum Ändern von Panels zu verwenden, obwohl es möglicherweise schneller ist, die zuvor erwähnten Tastenkombinationen zu verwenden.  
-
-**Bekannte Probleme**  
-
-*   Einige Panels, beispielsweise die **Konsolen** -und **Leistungs** Panels, können den Fokus in den Bereich des Bereichs Inhalts verschieben, sobald die einzelnen Panels aktiviert sind.  Dadurch kann die Navigation mit Pfeiltasten schwierig werden.  
-*   Der Name des ausgewählten Panels wird angekündigt, aber erst, nachdem er den fokussierten Inhalt im Panel gelesen hat.  Dies kann sehr einfach zu versäumen.  
-
-### Navigieren nach Befehlsmenü  
-
-Wenn Sie ein bestimmtes Panel fokussieren möchten, verwenden Sie das [Befehlsmenü][DevtoolsCommandMenuIndex]:  
-
-1.  Wählen Sie bei geöffnetem devtools `Control` + `Shift` + `P` \ (Windows, Linux \) oder `Command` + `Shift` + `P` \ (macOS \) aus, um das **Befehlsmenü**zu öffnen.  
-    Das **Befehl-Menü** ist ein Fuzzy-Such-AutoVervollständigen-Kombinationsfeld.  
-1.  Geben Sie den Namen des Panels ein, das Sie öffnen möchten, und navigieren Sie dann mithilfe der `Down Arrow` auf der Tastatur zur richtigen Option.  
-1.  Wählen Sie aus `Enter` , um einen Befehl auszuführen.  
-
-Führen Sie die folgenden Aktionen aus, um das Panel **Elemente** zu öffnen.  
-
-1.  Öffnen des **Befehlsmenüs**  
-1.  Geben Sie `E` dann ein `L` .  Die Option **Panel > Elemente anzeigen** ist aktiviert.  
-1.  Wählen Sie aus `Enter` , um den Befehl zum Öffnen des Panels auszuführen.  
-
-Öffnen Sie ein Panel auf diese Weise, um den Fokus auf den Inhalt des Panels zu lenken.  Im Fall des **Elements** -Panels wird der Fokus in die **DOM-Struktur**verschoben.  
-
-## Element Panel  
-
-### Überprüfen eines Elements auf der Seite  
-
-1.  Navigieren Sie mit dem Cursor in der Sprachausgabe zu dem Element, das Sie überprüfen möchten.  
-1.  Simulieren Sie mit der rechten Maustaste auf das Element, um das Kontextmenü zu öffnen.  
-1.  Wählen Sie die Option über **prüfen** aus.  Dadurch [wird das Element Fenster geöffnet, und das Element wird in der DOM-Struktur fokussiert] [DevtoolsDomIndexViewDomNodes].  
-
-Die **DOM-Struktur** wird als Aria- [Struktur][W3CWaiAriaTree]angelegt.  Navigieren Sie in einem Beispiel zu [Navigieren in der **DOM-Struktur** mit einer Tastatur] [DevtoolsDomIndexNavigateDomTreeKeyboard].  
-
-### Kopieren des Codes für ein Element in der DOM-Struktur  
-
-1.  Wenn sich der Fokus auf einem Knoten in der **DOM-Struktur**befindet, zeigen Sie auf den Knoten, und öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \).  
-1.  Erweitern Sie die Option **Kopieren** .  
-1.  Wählen Sie **outerHTML kopieren**aus.  
+*   Wenn DevTools geöffnet ist, wählen Sie `Control` + `]` \(Windows, Linux\) oder `Command` + `]` \(macOS\) aus, um den Fokus auf den nächsten Bereich zu legen.  
+*   Wählen `Control` + `[` Sie \(Windows, Linux\) oder `Command` + `[` \(macOS\) aus, um den vorherigen Bereich zu fokussieren.  
+*   Es ist auch möglich, den Fokus in die `Shift` + `Tab` [Registerkartenliste ARIA][W3CWaiAriaTablist] eines Panels zu verschieben und die Pfeiltasten zum Ändern von Panels zu verwenden, obwohl es möglicherweise schneller ist, die zuvor erwähnten Verknüpfungen zu verwenden.  
 
 **Bekannte Probleme**  
 
-*   Beim **Kopieren von outerHTML** wird häufig nicht der aktuelle Knoten, sondern stattdessen der übergeordnete Knoten ausgewählt.  Der Inhalt des Elements sollte sich jedoch weiterhin im kopierten outerHTML befinden.  
+*   Einige Panels, z. **** B. die **Konsolen-** und Leistungstools, können den Fokus in den Bereich "Panelinhalt" verschieben, sobald jedes Panel aktiviert ist.  Dies kann die Navigation durch Pfeiltasten erschweren.  
+*   Der Name des ausgewählten Panels wird angekündigt, jedoch erst, nachdem er den fokussierten Inhalt im Bereich gelesen hat.  Dies kann es sehr einfach machen, sie zu verpassen.  
 
-### Ändern der Attribute eines Elements in der DOM-Struktur  
+### <a name="navigate-by-command-menu"></a>Navigieren nach Befehlsmenü  
 
-*   Wenn der Fokus auf einem Knoten in der **DOM-Struktur**liegt, wählen Sie ihn aus, `Enter` um ihn bearbeitbar zu machen.  
-*   Wählen Sie diese Option aus `Tab` , um zwischen Attributwerten zu wechseln.  Wenn Sie "Leerzeichen" hören, befinden Sie sich innerhalb einer leeren Texteingabe und können einen neuen Attributwert eingeben.  
-*   Wählen Sie `Control` + `Enter` \ (Windows, Linux \) oder `Command` + `Enter` \ (macOS \) aus, um die Änderung zu übernehmen und den gesamten Inhalt des Elements zu hören.  
+Verwenden Sie das Befehlsmenü, um einen bestimmten Bereich [zu fokussieren:][DevtoolsCommandMenuIndex]  
 
-**Bekannte Probleme**  
+1.  Wenn DevTools geöffnet ist, wählen Sie `Control` + `Shift` + `P` \(Windows, Linux\) oder `Command` + `Shift` + `P` \(macOS\) aus, um das **Befehlsmenü zu öffnen.**  
+    Das **Befehlsmenü** ist ein fuzzy search autocomplete combobox.  
+1.  Geben Sie den Namen des Zu öffnende Panels ein, und navigieren Sie dann auf der Tastatur zur `Down Arrow` richtigen Option.  
+1.  Wählen `Enter` Sie aus, um einen Befehl auszuführen.  
 
-*   Wenn Sie in die Texteingabe eintippen, erhalten Sie keine Rückmeldungen.  Wenn Sie einen Tippfehler machen und die Pfeiltasten verwenden, um Ihre Eingaben zu erforschen, erhalten Sie auch kein Feedback.  Die einfachste Möglichkeit, ihre Arbeit zu überprüfen, besteht darin, die Änderung zu übernehmen und dann zu hören, dass das gesamte Element angekündigt wird.  
+Führen Sie die folgenden Aktionen aus, um das **Elementtool zu** öffnen.  
 
-### Bearbeiten des HTML-Code eines Elements in der DOM-Struktur  
+1.  Öffnen Sie das **Befehlsmenü**.  
+1.  Geben `E` Sie dann `L` ein.  Die **Option Panel > Elemente** anzeigen ist ausgewählt.  
+1.  Wählen `Enter` Sie diese Option aus, um den Befehl auszuführen, mit dem der Bereich geöffnet wird.  
 
-*   Wenn der Fokus auf einem Knoten in der **DOM-Struktur**liegt, wählen Sie ihn aus, `Enter` um ihn bearbeitbar zu machen.  
-*   Wählen Sie diese Option aus `Tab` , um zwischen Attributwerten zu wechseln.  Wenn Sie beispielsweise den Namen des Elements hören, `h2` befinden Sie sich innerhalb einer Texteingabe und können den Typ des Elements ändern.  
-*   Wählen Sie `Control` + `Enter` \ (Windows, Linux \) oder `Command` + `Enter` \ (macOS \) aus, um die Änderung zu übernehmen.  
+Öffnen Sie einen Bereich auf diese Weise, um den Fokus auf den Inhalt des Panels zu konzentrieren.  Im Fall des **Elements-Tools** wird der Fokus in die **DOM-Struktur verlagert.**  
 
-Wenn Sie beispielsweise `h3` `Control` + `Enter` \ (Windows, Linux \) oder `Command` + `Enter` \ (macOS \) eingeben und auswählen, ändern sich die Start-und Endtags des `h3` Elements.  
+## <a name="elements-panel"></a>Elementbereich  
 
-## Registerkarten des Elements-Panels  
+### <a name="inspect-an-element-on-the-page"></a>Überprüfen eines Elements auf der Seite  
 
-Der Bereich "Elemente" enthält zusätzliche Registerkarten zum Überprüfen von **Elementen** wie dem auf ein Element angewendeten CSS oder der entsprechenden Stelle in der Barrierefreiheits Struktur.  
+1.  Navigieren Sie zu dem Element, das Sie überprüfen möchten, indem Sie den Cursor in der Bildschirmausgabe verwenden.  
+1.  Simulieren Sie einen Rechtsklick mithilfe einer Maus auf das Element, um das Kontextmenü zu öffnen.  
+1.  Wählen Sie die **Option Überprüfen** aus.  Dadurch wird der Bereich Elemente geöffnet und das Element in der #A0 ][DevtoolsDomIndexViewDomNodes] fokussiert.  
 
-*   Wenn der Fokus auf einem Knoten in der **DOM-Struktur**liegt, wählen Sie aus, `Tab` bis Sie hören, dass der Bereich **Formatvorlagen** ausgewählt ist.  
-*   Verwenden Sie die `Right Arrow` , um andere verfügbare Registerkarten zu erkunden.  
+Der **DOM-Baum** ist als [ARIA-Struktur ausgelegt.][W3CWaiAriaTree]  Navigieren Sie beispielsweise zu [Navigieren Sie in der **#A0** mit einer Tastatur][DevtoolsDomIndexNavigateDomTreeKeyboard].  
 
-Die **DOM-Struktur** wandelt Elemente mit `href` Attributen in fokussierbare Links um, daher müssen Sie möglicherweise mehrmals auswählen, `Tab` um den Bereich " **Formatvorlagen** " zu erreichen.  
+### <a name="copy-the-code-for-an-element-in-the-dom-tree"></a>Kopieren des Codes für ein Element in der DOM-Struktur  
 
-**Bekannte Probleme**  
-
-Auf die Registerkarten " **DOM-Haltepunkte** " und " **Eigenschaften** " kann nicht zugegriffen werden.  
-
-### Bereich ' Formatvorlagen '  
-
-Suchen Sie im Bereich **Formatvorlagen** nach Steuerelementen zum Filtern von Formatvorlagen, Umschalten von Element Zuständen \ (wie [: aktiv][MDNActive] und [: Fokus][MDNFocus]\), Umschalten von Klassen und Hinzufügen neuer Klassen.  Darüber hinaus gibt es ein leistungsfähiges Tool zum Überprüfen von Stilen zum untersuchen und Ändern von Formatvorlagen, die derzeit auf das Element angewendet werden, das sich in der **DOM-Struktur**befindet.  
-
-Das grundlegende Konzept für den Bereich " **Formatvorlagen** " ist, dass nur die Formatvorlagen für den aktuell ausgewählten Knoten in der **DOM-Struktur**angezeigt werden.  Nehmen wir beispielsweise an, dass Sie die Formatvorlagen eines `<header>` Knotens überprüft haben und nun die Formatvorlagen für einen Knoten sehen möchten `<footer>` .  Dazu müssen Sie zuerst den `<footer>` Knoten in der **DOM-Struktur**auswählen.  Möglicherweise finden Sie es schneller, wenn Sie den Workflow über [prüfen](#inspect-an-element-on-the-page) verwenden, um einen Knoten zu inspizieren, der sich in der allgemeinen Nähe des `footer` Knotens befindet \ (beispielsweise ein Link in der Fußzeile \), der die **DOM-Struktur**fokussiert, und dann mit der Tastatur zu dem exakten Knoten navigieren, an dem Sie interessiert sind.  
-
-#### Navigieren im Bereich "Formatvorlagen"  
-
-Da alle Formatvorlagen Tools auf die eine oder andere Weise wieder mit dem Bereich " **Formatvorlagen** " verbunden sind, ist es sinnvoll, zunächst ein Experte in diesem Tool zu werden.  
-
-*   Wählen Sie im Bereich " **Formatvorlagen** " den Fokus aus, `Tab` um den Fokus nach innen zu verschieben und den Inhalt zu untersuchen.  
-*   Wählen Sie aus `Tab` , bis die erste Formatvorlage aktiviert ist.  Wenn Sie eine Sprachausgabe verwenden, wird diese erste Formatvorlage als angekündigt `element.style {}` .  
-*   Wählen Sie diese Option aus `Down Arrow` , um in der Liste der Formatvorlagen in der Reihenfolge der Spezifität zu navigieren.  Eine Sprachausgabe kündigt jede Formatvorlage an, beginnend mit dem Namen der CSS-Datei, der Liniennummer, auf der die Formatvorlage angezeigt wird, und dem Namen der Formatvorlage.  Beispiel: `main.css:233 .card__img {}`.  
-*   Wählen Sie diese Option `Enter` aus, um eine Formatvorlage detaillierter zu prüfen.  Der Fokus beginnt mit einer bearbeitbaren Version des Formatvorlagen namens.  
-*   Wählen Sie diese Option aus `Tab` , um zwischen bearbeitbaren Versionen jeder CSS-Eigenschaft und den entsprechenden Werten zu wechseln.  Am Ende jedes Formatvorlagen Blocks befindet sich ein leeres bearbeitbares Textfeld, das Sie zum Hinzufügen weiterer CSS-Eigenschaften verwenden können.  
-*   Sie können weiterhin auswählen, `Tab` um die Liste der Formatvorlagen zu durchlaufen, oder Sie können `Escape` den Modus beenden und zur Navigation durch die Pfeiltasten zurückkehren.  
-
-Wenn Sie weitere Tastenkombinationen verwenden möchten, navigieren Sie zu [Formatvorlagenbereich-Tastatur Referenz] [DevtoolsShortcutsStylesPaneKeyboard].  
+1.  Zeigen Sie mit dem Fokus auf einen Knoten in der **DOM-Struktur**auf den Knoten, und öffnen Sie das Kontextmenü \(rechtsklicken\).  
+1.  Erweitern Sie die **Option Kopieren.**  
+1.  Wählen **Sie Kopieren outerHTML**aus.  
 
 **Bekannte Probleme**  
 
-*   Wenn Sie das Feld bearbeitbares Textfeld **Filtern** verwenden, können Sie nicht mehr in der Liste der Formatvorlagen navigieren.  
+*   **Copy outerHTML** wählt häufig nicht den aktuellen Knoten aus, sondern den übergeordneten Knoten.  Der Inhalt des Elements sollte sich jedoch weiterhin im kopierten outerHTML-Element enthalten.  
 
-#### Elementzustand umschalten  
+### <a name="modify-the-attributes-of-an-element-in-the-dom-tree"></a>Ändern der Attribute eines Elements in der DOM-Struktur  
 
-Zum Umschalten des Zustands eines Elements, beispielsweise `:active` oder `:focus` :  
+*   Mit dem Fokus auf einem Knoten in der **DOM-Struktur**wählen Sie aus, `Enter` um ihn bearbeitbar zu machen.  
+*   Wählen `Tab` Sie diese Option aus, um zwischen Attributwerten zu wechseln.  Wenn Sie "Leerzeichen" hören, befinden Sie sich innerhalb einer leeren Texteingabe und können einen neuen Attributwert eingeben.  
+*   Wählen `Control` + `Enter` Sie \(Windows, Linux\) oder `Command` + `Enter` \(macOS\) aus, um die Änderung zu akzeptieren und den gesamten Inhalt des Elements zu hören.  
 
-1.  Navigieren Sie zum Bereich **Formatvorlagen** , und wählen Sie aus, `Tab` bis die Schaltfläche **Element Zustand umschalten** den Fokus besitzt.  
-1.  Wählen Sie aus `Enter` , um die Sammlung von Element Zuständen zu erweitern.  Die Elementzustände werden als Gruppe von Kontrollkästchen angezeigt.  
-1.  Wählen Sie, `Tab` bis der erste Zustand, den `:active` Fokus hat.  
-1.  Wählen Sie diese Option aus `Space` , um Sie zu aktivieren.  Wenn das aktuell ausgewählte Element in der DOM-Struktur eine `:active` Formatvorlage aufweist, wird es nun angewendet.  
-1.  Halten Sie die Maustaste gedrückt `Tab` , um alle verfügbaren Status zu erkunden.  
+**Bekannte Probleme**  
 
-#### Hinzufügen einer vorhandenen Klasse  
+*   Wenn Sie in die Texteingabe eingeben, erhalten Sie kein Feedback.  Wenn Sie einen Tippfehler erstellen und die Pfeiltasten verwenden, um Ihre Eingaben zu erkunden, erhalten Sie auch kein Feedback.  Die einfachste Möglichkeit, Ihre Arbeit zu überprüfen, besteht in der Annahme der Änderung, und lauschen Sie dann, ob das gesamte Element angekündigt werden soll.  
 
-Neben der Schaltfläche " **Elementzustand umschalten** " befindet sich die Schaltfläche " **Elementklassen** ".  Wenn Sie den Fokus darauf verschieben möchten, wählen Sie aus, `Tab` und wählen Sie aus `Enter` .  Der Fokus wird in ein Textfeld "Bearbeiten" mit der Bezeichnung " **neue Klasse hinzufügen**" verschoben.  
+### <a name="edit-the-html-of-an-element-in-the-dom-tree"></a>Bearbeiten des HTML eines Elements in der DOM-Struktur  
 
-Die Schaltfläche **Elementklassen** wird in erster Linie zum Hinzufügen vorhandener Klassen zu einem Element verwendet.  Wenn Ihr Stylesheet beispielsweise eine Hilfsklasse mit dem Namen enthalten hat, `.clearfix` können Sie `.` innerhalb des Felds "Text bearbeiten" auswählen, um eine Vorschlagsliste mit Kursen anzuzeigen, und verwenden Sie die `Down Arrow` , um den Vorschlag zu finden `.clearfix` .  Oder geben Sie den Kursnamen selbst ein, und wählen Sie `Enter` ihn aus, um ihn anzuwenden.  
+*   Mit dem Fokus auf einem Knoten in der **DOM-Struktur**wählen Sie aus, `Enter` um ihn bearbeitbar zu machen.  
+*   Wählen `Tab` Sie diese Option aus, um zwischen Attributwerten zu wechseln.  Wenn Sie beispielsweise den Namen des Elements hören, befinden Sie sich innerhalb einer Texteingabe und können den Typ `h2` des Elements ändern.  
+*   Wählen `Control` + `Enter` Sie \(Windows, Linux\) oder `Command` + `Enter` \(macOS\) aus, um die Änderung zu akzeptieren.  
 
-#### Hinzufügen einer neuen Stilregel  
+Wenn Sie z. B. `h3` `Control` + `Enter` \(Windows, Linux\) oder `Command` + `Enter` \(macOS\) `h3` eingeben und auswählen, ändern sich die Start- und Endtags des Elements.  
 
-Neben der Schaltfläche **Element Klassen** befindet sich die Schaltfläche **neue Stilregel** .  Wenn Sie den Fokus darauf verschieben möchten, wählen Sie aus, `Tab` und wählen Sie aus `Enter` .  Der Fokus wird in ein bearbeitbares Textfeld innerhalb des Formatvorlagen Inspektors verschoben.  Der anfängliche Textinhalt des Felds ist der Tagnamen des Elements, das in der **DOM-Struktur**ausgewählt ist.  
-Sie können in dieses Feld einen beliebigen Kursnamen eingeben und dann `Tab` ihm CSS-Eigenschaften zuweisen.  
+## <a name="elements-tool-panels"></a>Elemente-Toolpanels  
 
-### Registerkarte "berechnet"  
+Das **Elementtool** enthält zusätzliche Registerkarten zum Überprüfen von Elementen wie dem auf ein Element angewendeten CSS oder dem relevanten Ort in der Barrierefreiheitsstruktur.  
 
-Wählen Sie auf der Registerkarte **berechnet** den Fokus aus, `Tab` um den Fokus zu verschieben und den Inhalt zu untersuchen.  Auf der Registerkarte " **berechnet** " gibt es Steuerelemente, mit denen Sie untersuchen können, welche CSS-Eigenschaften tatsächlich auf ein Element in der Reihenfolge der Spezifität angewendet werden.  
+*   Wählen Sie mit Fokus auf einem Knoten in der **DOM-Struktur**aus, bis Sie hören, dass der Bereich `Tab` **Formatvorlagen** ausgewählt ist.  
+*   Verwenden Sie `Right Arrow` die, um andere verfügbare Registerkarten zu erkunden.  
+
+Die **DOM-Struktur** wandelt Elemente mit Attributen in fokussierbare Links um, sodass Sie möglicherweise mehr als einmal auswählen müssen, um den Bereich `href` `Tab` **Formatvorlagen zu** erreichen.  
+
+**Bekannte Probleme**  
+
+Auf **die Registerkarten DOM-Haltepunkte** und Eigenschaften kann nicht über die Tastatur zugegriffen werden. ****  
+
+### <a name="styles-pane"></a>Formatvorlagenbereich  
+
+Suchen Sie **im Bereich** Formatvorlagen nach Steuerelementen zum Filtern von Formatvorlagen, zum Toggen von Elementzuständen \(z. B. [:active][MDNActive] und [:focus][MDNFocus]\), zum Toggen von Klassen und zum Hinzufügen neuer Klassen.  Es gibt auch ein leistungsfähiges Formatprüfungstool zum Untersuchen und Ändern von Formatvorlagen, die derzeit auf das Element angewendet werden, das im Fokus der **DOM-Struktur steht.**  
+
+Das wichtigste Konzept, das Sie im Bereich **Formatvorlagen** verstehen müssen, ist, dass nur Formatvorlagen für den aktuell ausgewählten Knoten in der **DOM-Struktur angezeigt werden.**  Angenommen, Sie prüfen die Formatvorlagen eines Knotens, und jetzt möchten Sie die Formatvorlagen `<header>` für einen Knoten `<footer>` betrachten.  Dazu müssen Sie zunächst den Knoten in der `<footer>` **DOM-Struktur auswählen.**  Möglicherweise ist es schneller, den [Inspect-Workflow](#inspect-an-element-on-the-page) zu verwenden, um einen Knoten zu überprüfen, der sich in der allgemeinen Nähe des Knotens \(z. B. ein Link in der Fußzeile\) befindet, der die DOM-Struktur in den Mittelpunkt stellt, und dann mit der Tastatur zu dem genauen Knoten zu navigieren, an dem Sie interessiert `footer` sind. ****  
+
+#### <a name="navigate-the-styles-pane"></a>Navigieren im Bereich Formatvorlagen  
+
+Da alle Formatvorlagentools auf die eine oder **** andere Weise wieder mit dem Formatvorlagenbereich verbinden, ist es sinnvoll, zuerst ein Experte für dieses Tool zu werden.  
+
+*   Mit dem Fokus auf den **Bereich Formatvorlagen** wählen Sie aus, um den Fokus innerhalb zu verschieben `Tab` und den Inhalt zu erkunden.  
+*   Wählen `Tab` Sie aus, bis die erste Formatvorlage aktiv wird.  Wenn Sie eine Bildschirmleseausgabe verwenden, wird diese erste Formatvorlage als `element.style {}` angekündigt.  
+*   Wählen `Down Arrow` Sie diese Option aus, um in der Liste der Formatvorlagen in der Reihenfolge der Spezifizität zu navigieren.  Eine Bildschirmleseausgabe gibt jede Formatvorlage an, beginnend mit dem Namen der CSS-Datei, der Zeilennummer, in der die Formatvorlage angezeigt wird, und dem Namen der Formatvorlage.  Beispiel: `main.css:233 .card__img {}`.  
+*   Wählen `Enter` Sie diese Option aus, um eine Formatvorlage ausführlicher zu prüfen.  Der Fokus beginnt mit einer bearbeitbaren Version des Formatnamens.  
+*   Wählen `Tab` Sie diese Option aus, um zwischen bearbeitbaren Versionen jeder CSS-Eigenschaft und den entsprechenden Werten zu wechseln.  Am Ende jedes Formatvorlagenblocks befindet sich ein leeres, bearbeitbares Textfeld, das Sie zum Hinzufügen zusätzlicher CSS-Eigenschaften verwenden können.  
+*   Sie können weiterhin auswählen, um durch die Liste der Formatvorlagen zu navigieren, oder wählen Sie aus, um den Modus zu beenden und zur Navigation durch `Tab` `Escape` Pfeiltasten zurückzufahren.  
+
+Navigieren Sie zu [Formatvorlagenbereichtastaturreferenz][DevtoolsShortcutsStylesPaneKeyboard].  
+
+**Bekannte Probleme**  
+
+*   Wenn Sie das Bearbeitungstextfeld **Filter** verwenden, können Sie nicht mehr in der Liste der Formatvorlagen navigieren.  
+
+#### <a name="toggle-element-state"></a>Zustand des Umschaltelements  
+
+So schalten Sie den Status eines Elements um, z. B. `:active` oder `:focus` :  
+
+1.  Navigieren Sie zum **Bereich Formatvorlagen,** und wählen Sie aus, bis die Schaltfläche `Tab` **Umschaltfläche Elementstatus** den Fokus hat.  
+1.  Wählen `Enter` Sie diese Option aus, um die Auflistung der Elementzustände zu erweitern.  Die Elementzustände werden als Gruppe von Kontrollkästchen dargestellt.  
+1.  Wählen `Tab` Sie aus, bis der erste Zustand , `:active` den Fokus hat.  
+1.  Wählen `Space` Sie diese Option aus, um sie zu aktivieren.  Wenn das aktuell ausgewählte Element in der DOM-Struktur über eine Formatvorlage `:active` verfügt, wird es nun angewendet.  
+1.  Halten `Tab` Sie sich, um alle verfügbaren Zustände zu erkunden.  
+
+#### <a name="add-an-existing-class"></a>Hinzufügen einer vorhandenen Klasse  
+
+Neben der Schaltfläche **Umschaltfläche Elementstatus** befindet sich die **Schaltfläche Elementklassen.**  Um den Fokus darauf zu verschieben, wählen `Tab` Sie aus, und wählen Sie `Enter` aus.  Der Fokus wechselt in ein Bearbeitungstextfeld mit der Bezeichnung **Neue Klasse hinzufügen.**  
+
+Die **Schaltfläche Elementklassen** wird hauptsächlich zum Hinzufügen vorhandener Klassen zu einem Element verwendet.  Wenn Ihr Stylesheet beispielsweise eine Hilfsklasse namens enthielt, können Sie innerhalb des Bearbeitungstextfelds auswählen, um eine Vorschlagsliste mit Klassen anzeigen und den Vorschlag `.clearfix` `.` `Down Arrow` `.clearfix` suchen.  Oder geben Sie den Klassennamen selbst ein, und wählen Sie `Enter` ihn aus, um ihn anzuwenden.  
+
+#### <a name="add-a-new-style-rule"></a>Hinzufügen einer neuen Formatvorlageregel  
+
+Neben der Schaltfläche **Elementklassen** befindet sich die **Schaltfläche Neue Formatvorlageregel.**  Um den Fokus darauf zu verschieben, wählen `Tab` Sie aus, und wählen Sie `Enter` aus.  Der Fokus wird in ein bearbeitbares Textfeld innerhalb des Formatprüfungsinspektors bewegt.  Der anfängliche Textinhalt des Felds ist der Tagname des Elements, das in der **DOM-Struktur ausgewählt ist.**  
+Sie können einen beliebigen Klassennamen in dieses Feld eingeben und dann auswählen, um `Tab` ihm CSS-Eigenschaften zuzuordnen.  
+
+### <a name="computed-tab"></a>Registerkarte "Berechnet"  
+
+Mit dem Fokus auf der Registerkarte **Berechnet** wählen Sie aus, um den Fokus nach innen zu verschieben `Tab` und den Inhalt zu erkunden.  Auf der **Registerkarte Berechnet gibt** es Steuerelemente zum Untersuchen, welche CSS-Eigenschaften tatsächlich auf ein Element in der Reihenfolge der Spezifizität angewendet werden.  
 
 <!--todo: add computed tab section when available  -->  
 
-#### Erkunden aller berechneten Formatvorlagen  
+#### <a name="explore-all-computed-styles"></a>Erkunden aller berechneten Formatvorlagen  
 
-Wählen Sie diese Option aus, `Tab` bis Sie die Sammlung von berechneten Formatvorlagen erreichen.  Diese werden als Aria- [Struktur][W3CWaiAriaTree]dargestellt.  Durch das Erweitern einer ListBox wird aufgezeigt, welche CSS-Auswahlen die berechnete Formatvorlage anwenden.  Diese Auswahlen sind nach Spezifität geordnet.  Eine Sprachausgabe gibt den berechneten Wert bekannt, den die CSS-Auswahl aktuell abgleichen soll, den Dateinamen des Stylesheets, das die Auswahl enthält, und die Nummer der Zeile für die Auswahl.  
-
-**Bekannte Probleme**  
-
-*   Wenn Sie das Textfeld " **Filter** " verwenden, können Sie keine Formatvorlagen mehr überprüfen.  
-
-### Registerkarte "Ereignis-Listener"  
-
-Über die Registerkarte **Ereignislistener** können Sie innerhalb des **Elements** Panels die Ereignis-Listener überprüfen, die auf ein Element angewendet wurden.  Wählen Sie im Bereich **Formatvorlagen** den Fokus aus, `Right Arrow` um zur Registerkarte **Ereignis Listener** zu navigieren.  
-
-#### Untersuchen von Ereignis Listenern  
-
-Ereignis-Listener werden als [Aria-Struktur][W3CWaiAriaTree]dargestellt.  Sie können die Pfeiltasten verwenden, um zu navigieren.  Eine Sprachausgabe gibt den Namen des DOM-Objekts bekannt, an das der Ereignis-Listener angefügt ist, sowie den Dateinamen, in dem der Ereignislistener definiert ist, und die Nummer der Zeile.  
-
-### Bereich "Barrierefreiheit"  
-
-Wählen Sie im Bereich **Barrierefreiheit** den Fokus aus, `Tab` um den Fokus nach innen zu verschieben und den Inhalt zu untersuchen.  Im [Bereich Barrierefreiheit][DevtoolsAccessibilityReference] gibt es Steuerelemente zum Durchsuchen der Barrierefreiheits Struktur, die Aria-Attribute, die auf ein Element angewendet werden, und die berechneten Barrierefreiheitseigenschaften.  
-
-#### Barrierefreiheits Struktur  
-
-Die **Barrierefreiheits Struktur** wird als Aria- [Struktur][W3CWaiAriaTree] dargestellt, wobei jede `treeitem` einem Element im DOM entspricht.  In der Struktur wird die berechnete Rolle für den ausgewählten Knoten angekündigt.  Generische Elemente wie `div` und `span` werden in der Struktur als "GenericContainer" angekündigt.  Verwenden Sie die Pfeiltasten, um die Struktur zu durchlaufen und die Beziehungen zwischen übergeordneten und untergeordneten Elemente zu erkunden.  
+Wählen `Tab` Sie aus, bis Sie die Sammlung berechneter Formatvorlagen erreicht haben.  Diese werden als [ARIA-Struktur dargestellt.][W3CWaiAriaTree]  Beim Erweitern eines Listenfelds wird angezeigt, welche CSS-Selektoren die berechnete Formatvorlage anwenden.  Diese Selektoren sind nach Spezifizität organisiert.  Eine Bildschirmleseausgabe gibt den berechneten Wert an, mit dem der CSS-Selektor derzeit übereinstimmen soll, den Dateinamen des Stylesheets, das die Auswahl enthält, und die Zeilennummer für die Auswahl.  
 
 **Bekannte Probleme**  
 
-*   Der Typ der [Aria-Struktur][W3CWaiAriaTree] , die vom **Barrierefreiheits** Bereich verwendet wird, wird möglicherweise in Microsoft Edge für macOS-Sprachausgaben wie VoiceOver nicht richtig verfügbar gemacht.  Abonnieren Sie [Chromium Issue #868480][ChromiumIssues868480] , um über den Fortschritt in diesem Problem informiert zu werden.  
-*   Alle Abschnitte **Aria-Attribute** und **berechnete Eigenschaften** werden als [Aria-Struktur][W3CWaiAriaTree]gekennzeichnet, aber derzeit ist keine Fokusverwaltung vorhanden, und die Tastatur ist nicht funktionsfähig.  
+*   Wenn Sie das Textfeld **Filter** verwenden, können Sie formatvorlagen nicht mehr überprüfen.  
 
-## Überwachungs Panel  
+### <a name="event-listeners-tab"></a>Registerkarte "Ereignislistener"  
 
-Im Bereich " **Audits** " sollten Sie eine Reihe von Tests für eine Website ausführen, um nach häufigen Problemen im Zusammenhang mit Leistung, Barrierefreiheit, SEO und einer Reihe anderer Kategorien zu suchen.  
+Innerhalb des **Elements-Tools** können Sie die Ereignislistener überprüfen, die auf ein Element angewendet wurden, indem Sie die Registerkarte **Ereignislistener** verwenden.  Wählen Sie im Bereich **Formatvorlagen** den Aus, um zum Bereich `Right Arrow` Ereignislistener **zu** navigieren.  
 
-### Konfigurieren und Ausführen einer Überwachung  
+#### <a name="explore-event-listeners"></a>Erkunden von Ereignislistenern  
 
-1.  Beim ersten Öffnen des **Überwachungs** Panels wird der Fokus auf die Schaltfläche " **Überwachung ausführen** " am Ende des Formulars eingestellt.  Standardmäßig ist das Formular so konfiguriert, dass Audits für jede Kategorie mithilfe der mobilen Emulation auf einer simulierten 3G-Verbindung ausgeführt werden.  
-1.  Verwenden `Shift` + `Tab` oder zurück navigieren im Durchsuchen-Modus, um die Überwachungseinstellungen zu ändern.  
-1.  Wenn Sie zum Ausführen der Überwachung bereit sind, navigieren Sie zurück zur Schaltfläche **Überwachung ausführen** , und wählen Sie aus `Enter` .  
-1.  Der Fokus wird in ein modales Fenster mit einer Schaltfläche " **Abbrechen** " verschoben, mit der Sie die Überwachung beenden können.  Sie können eine Reihe von earcons hören, während die Überwachung ausgeführt wird, und die Seite mehrmals aktualisieren.  
+Ereignislistener werden als [ARIA-Struktur dargestellt.][W3CWaiAriaTree]  Sie können die Pfeiltasten verwenden, um sie zu navigieren.  Eine Bildschirmleseausgabe gibt den Namen des DOM-Objekts an, an das der Ereignislistener angefügt ist, sowie den Dateinamen, in dem der Ereignislistener definiert ist, und die Zeilennummer.  
+
+### <a name="accessibility-pane"></a>Barrierefreiheitsbereich  
+
+Mit fokus auf **den** Bereich Barrierefreiheit wählen Sie aus, um den Fokus innerhalb zu verschieben und den Inhalt zu `Tab` erkunden.  Im Bereich [Barrierefreiheit][DevtoolsAccessibilityReference] gibt es Steuerelemente zum Untersuchen der Barrierefreiheitsstruktur, der auf ein Element angewendeten ARIA-Attribute und der berechneten Barrierefreiheitseigenschaften.  
+
+#### <a name="accessibility-tree"></a>Barrierefreiheitsstruktur  
+
+Die **Barrierefreiheitsstruktur** wird als [ARIA-Struktur dargestellt,][W3CWaiAriaTree] wobei jede einem `treeitem` Element im DOM entspricht.  Die Struktur gibt die berechnete Rolle für den ausgewählten Knoten an.  Generische Elemente wie und werden in der Struktur als `div` `span` "GenericContainer" angekündigt.  Verwenden Sie die Pfeiltasten, um die Struktur zu durchlaufen und Beziehungen zwischen übergeordneten und untergeordneten Daten zu erkunden.  
 
 **Bekannte Probleme**  
 
-*   Die verschiedenen Abschnitte des Konfigurations Formulars sind derzeit nicht mit einem `fieldset` Element gekennzeichnet.  Es ist möglicherweise einfacher, im Durchsuchen-Modus zu navigieren, um herauszufinden, welche Steuerelemente jedem Abschnitt zugeordnet sind.  
-*   Wenn die Überwachung nicht mehr ausgeführt wird, gibt es keine earcon-oder Live Region-Ankündigung.  In der Regel dauert es ungefähr 30 Sekunden, nach denen Sie in der Lage sein sollten, zu den Ergebnissen zu navigieren.  Die Verwendung des Durchsuchen-Modus ist möglicherweise die einfachste Methode, um die Ergebnisse zu erreichen.  
+*   Der Typ der [ARIA-Struktur,][W3CWaiAriaTree] die vom Barrierefreiheitsbereich verwendet wird, wird in Microsoft Edge möglicherweise nicht ordnungsgemäß für macOS-Sprachleser wie VoiceOver verfügbar gemacht. ****  Abonnieren Sie [das Chromium-#868480,][ChromiumIssues868480] um über den Fortschritt in diesem Problem informiert zu werden.  
+*   Jeder der Abschnitte **"ARIA Attributes"** und **"Computed Properties"** wird als [ARIA-Struktur][W3CWaiAriaTree]gekennzeichnet, verfügt aber zurzeit nicht über die Fokusverwaltung und kann nicht über die Tastatur ausgeführt werden.  
 
-### Navigieren im Überwachungsbericht  
+## <a name="audits-panel"></a>Überwachungspanel  
 
-Der Überwachungsbericht ist in Abschnitte gegliedert, die den einzelnen Überwachungskategorien entsprechen.  Der Bericht wird mit einer Liste der Bewertungen für jede Kategorie geöffnet.  Diese Punkte sind auch Links, die verwendet werden können, um die entsprechenden Abschnitte zu überspringen.  In jedem Abschnitt handelt es sich `details` um erweiterbare Elemente, die Informationen zu übergebenen oder fehlgeschlagenen Audits enthalten.  Standardmäßig werden nur fehlerhafte Überwachungen angezeigt.  Jeder Abschnitt endet mit einem Final `details` -Element, das alle übergebenen Audits enthält.  
+Mit **dem Tool** "Audits" sollten Sie eine Reihe von Tests für eine Website ausführen, um nach häufigen Problemen im Zusammenhang mit Leistung, Barrierefreiheit, SEO und einer Reihe anderer Kategorien zu suchen.  
 
-Verwenden Sie zum Ausführen einer neuen Überwachung `Shift` + `Tab` den Bericht, und suchen Sie nach der Schaltfläche **Audit durchführen** .  
+### <a name="configure-and-run-an-audit"></a>Konfigurieren und Ausführen einer Überwachung  
 
-## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+1.  Wenn das **Überwachungstool** zum ersten Mal **** geöffnet wird, wird der Fokus auf der Schaltfläche Überwachung ausführen am Ende des Formulars platziert.  Standardmäßig ist das Formular so konfiguriert, dass Überwachungen für jede Kategorie mithilfe der mobilen Emulation für eine simulierte 3G werden.  
+1.  Verwenden `Shift` + `Tab` oder navigieren Sie zurück im Durchsuchen-Modus, um die Überwachungseinstellungen zu ändern.  
+1.  Wenn Sie bereit sind, die Überwachung ausführen zu können, navigieren Sie zurück zur Schaltfläche **Überwachung ausführen,** und wählen Sie `Enter` aus.  
+1.  Der Fokus wechselt in ein modales Fenster mit einer **Schaltfläche Abbrechen,** mit der Sie die Überwachung beenden können.  Möglicherweise hören Sie eine Reihe von Earcons, wenn die Überwachung ausgeführt wird und die Seite mehrmals aktualisiert wird.  
+
+**Bekannte Probleme**  
+
+*   Die verschiedenen Abschnitte des Konfigurationsformulars sind derzeit nicht mit einem Element `fieldset` gekennzeichnet.  Es ist möglicherweise einfacher, sie im Durchsuchen-Modus zu navigieren, um herauszufinden, welche Steuerelemente den einzelnen Abschnitten zugeordnet sind.  
+*   Es gibt keine Ankündigung für earcon oder live region, wenn die Überwachung abgeschlossen ist.  Im Allgemeinen dauert es ungefähr 30 Sekunden, danach sollten Sie zu den Ergebnissen navigieren können.  Die Verwendung des Durchsuchen-Modus ist möglicherweise die einfachste Möglichkeit, um die Ergebnisse zu erreichen.  
+
+### <a name="navigate-the-audit-report"></a>Navigieren im Überwachungsbericht  
+
+Der Überwachungsbericht ist in Abschnitte unterteilt, die den einzelnen Überwachungskategorien entsprechen.  Der Bericht wird mit einer Liste der Ergebnisse für jede Kategorie geöffnet.  Diese Bewertungen sind auch Links, die verwendet werden können, um zu den relevanten Abschnitten zu springen.  In jedem Abschnitt sind erweiterbare Elemente enthalten, die Informationen zu `details` bestandenen oder fehlgeschlagenen Prüfungen enthalten.  Standardmäßig werden nur fehlerhafte Überwachungen angezeigt.  Jeder Abschnitt endet mit einem endgültigen `details` Element, das alle übergebenen Überwachungen enthält.  
+
+Verwenden Sie zum Ausführen einer neuen Überwachung, um den Bericht zu beenden und nach der Schaltfläche `Shift` + `Tab` Überwachung **ausführen zu** suchen.  
+
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsAccessibilityReference]: ./reference.md "Barrierefreiheits Referenz | Microsoft docs"  
-[DevtoolsAccessibilityReferencePane]: reference.md#the-accessibility-pane "Der Bereich Barrierefreiheit – Referenz zu Barrierefreiheit | Microsoft docs"  
-[MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chrom)-Entwickler Tools | Microsoft docs"  
-[DevtoolsCommandMenuIndex]: ../command-menu/index.md "Ausführen von Befehlen mit dem Befehlsmenü von Microsoft Edge devtools | Microsoft docs"  
+[DevtoolsAccessibilityReference]: ./reference.md "Barrierefreiheitsreferenz | Microsoft Docs"  
+[DevtoolsAccessibilityReferencePane]: reference.md#the-accessibility-pane "Der Bereich Barrierefreiheit – Barrierefreiheitsreferenz | Microsoft Docs"  
+[MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
+[DevtoolsCommandMenuIndex]: ../command-menu/index.md "Führen Sie Befehle mit dem Microsoft Edge DevTools-Befehlsmenü | Microsoft Docs"  
 [DevtoolsConsoleIndex]: ../console/index.md "Übersicht über die Konsole | Microsoft Docs"  
-[DevtoolsCssIndex]: ../css/index.md "Erste Schritte mit dem anzeigen und Ändern von CSS | Microsoft docs"  
+[DevtoolsCssIndex]: ../css/index.md "Erste Schritte mit dem Anzeigen und Ändern von CSS-| Microsoft Docs"  
 <!--[DevtoolsCssReferenceViewAppliedElement]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "CSS Reference - View only the CSS that is actually applied to an element | Microsoft Docs"  -->  
 <!--[DevtoolsDomIndex]: ../dom/index.md "Get started with viewing and changing the DOM | Microsoft Docs"  -->  
-[DevtoolsDomIndexViewDomNodes]: .. /DOM/Index.MD # View-Dom-Nodes "DOM-Knoten anzeigen – erste Schritte beim Anzeigen und Ändern des DOM | Microsoft docs "  
-[DevtoolsDomIndexNavigateDomTreeKeyboard]: .. /DOM/Index.MD # Navigate-the-DOM-Tree-with-a-Keyboard "Navigieren in der DOM-Struktur mit einer Tastatur – erste Schritte beim Anzeigen und Ändern des DOM | Microsoft docs "  
-[DevtoolsOpen]: .. /Open/Index.MD "Öffnen von Microsoft Edge devtools | Microsoft docs "  
-[DevtoolsShortcuts]: .. /Shortcuts/Index.MD "Microsoft Edge devtools-Tastenkombinationen | Microsoft docs "  
-[DevtoolsShortcutsStylesPaneKeyboard]: .. /Shortcuts/Index.MD # Formatvorlagen-Bereich-Tastenkombinationen "Formatvorlagenbereich – Tastenkombinationen für Microsoft Edge devtools-Tastenkombinationen | Microsoft docs "  
+[DevtoolsDomIndexViewDomNodes]: .. /dom/index.md#view-dom-nodes "DOM-Knoten anzeigen – Erste Schritte mit dem Anzeigen und Ändern der DOM-| Microsoft Docs"  
+[DevtoolsDomIndexNavigateDomTreeKeyboard]: .. /dom/index.md#navigate-the-dom-tree-with-a-keyboard "Navigate the DOM Tree with a keyboard - Get started with viewing and changing the DOM | Microsoft Docs"  
+[DevtoolsOpen]: .. /open/index.md "Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsShortcuts]: .. /shortcuts/index.md "Microsoft Edge DevTools Keyboard Shortcuts | Microsoft Docs"  
+[DevtoolsShortcutsStylesPaneKeyboard]: .. /shortcuts/index.md#styles-panel-keyboard-shortcuts "Stile panel keyboard shortcuts - Microsoft Edge DevTools Keyboard Shortcuts | Microsoft Docs"  
 
-[ChromiumIssues868480]: https://bugs.chromium.org/p/chromium/issues/detail?id=868480 "Problem 868480 – verfügbar machen von Aria-Strukturen als Tabellen unter Mac-Barrierefreiheit"  
+[ChromiumIssues868480]: https://bugs.chromium.org/p/chromium/issues/detail?id=868480 "Problem 868480 – Verfügbar machen von ARIA-Baumstrukturen als Tabellen in Mac-Barrierefreiheit"  
 
-[GithubEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=%5BDevTools%20Docs%20Feedback%5D "Neues Problem-MicrosoftDocs/Edge-Developer | GitHub"  
+[GithubEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=%5BDevTools%20Docs%20Feedback%5D "Neues Problem – MicrosoftDocs/edge-developer | GitHub"  
 
-[MDNActive]: https://developer.mozilla.org/docs/Web/CSS/:active ": aktiv | MDN"  
-[MDNFocus]: https://developer.mozilla.org/docs/Web/CSS/:focus ": Fokus | MDN"  
+[MDNActive]: https://developer.mozilla.org/docs/Web/CSS/:active ":active | MDN"  
+[MDNFocus]: https://developer.mozilla.org/docs/Web/CSS/:focus ":focus | MDN"  
 
-[MonorailChromiumIssues]: https://crbug.com "Probleme – Chrom – Monorail"  
+[MonorailChromiumIssues]: https://crbug.com "Probleme - Chromium - Monorail"  
 
-[W3CWaiAriaTablist]: https://www.w3.org/TR/wai-aria-1.1/#tablist "TabList (Rolle)-barrierefreie Rich-Internet-Anwendungen (WAI-ARIA) 1,1 | W3C"  
-[W3CWaiAriaTree]: https://www.w3.org/TR/wai-aria-1.1/#tree "Struktur (Rolle) – barrierefreie Rich-Internet-Anwendungen (WAI-ARIA) 1,1 | W3C"  
+[W3CWaiAriaTablist]: https://www.w3.org/TR/wai-aria-1.1/#tablist "tablist (role) – Accessible Rich Internet Applications (WAI-ARIA) 1.1 | W3C"  
+[W3CWaiAriaTree]: https://www.w3.org/TR/wai-aria-1.1/#tree "Struktur (Rolle) – Accessible Rich Internet Applications (WAI-ARIA) 1.1 | W3C"  
 
 > [!NOTE]
 > Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
-> Die ursprüngliche Seite wird [hier](https://developers.google.com/web/tools/chrome-devtools/accessibility/navigation) gefunden und von [Rob Dodson][RobDodson] (Mitwirkender, Google webfundamentals \) erstellt.  
+> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/accessibility/navigation) und wird von [Rob Dodson][RobDodson] \(Contributor, Google WebFundamentals\) verfasst.  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  

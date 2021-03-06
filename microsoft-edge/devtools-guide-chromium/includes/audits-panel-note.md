@@ -3,18 +3,16 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
 ms.topic: include
-ms.date: 09/01/2020
-ms.openlocfilehash: 68d32490ed0b2de890216b5425263885aba87e2b
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
-ms.translationtype: HT
+ms.date: 02/12/2021
+ms.openlocfilehash: ba355dce729c37d408afc31a8b705d75ebdf416a
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993439"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397702"
 ---
 > [!NOTE]
-> Der Bereich **Überwachung** enthält Links zu Inhalten, die auf Websites von Drittanbietern gehostet werden.  Microsoft ist nicht verantwortlich für und hat keine Kontrolle über den Inhalt dieser Websites und die von diesen möglicherweise erfassten Daten.  
+> Der Bereich **Überwachung** enthält Links zu Inhalten, die auf Websites von Drittanbietern gehostet werden.  Microsoft ist nicht verantwortlich und hat keine Kontrolle über den Inhalt dieser Websites, und es können Daten gesammelt werden.  
 > 
-
-<!-- image links -->  
 
 <!-- links -->  

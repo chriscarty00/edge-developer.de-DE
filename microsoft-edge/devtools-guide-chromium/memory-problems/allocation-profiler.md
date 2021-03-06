@@ -1,18 +1,18 @@
 ---
-description: Verwenden Sie die Zuweisungs Instrumentation auf der Zeitachse, um Objekte zu finden, die nicht ordnungsgemäß von der Garbage Collection erfasst werden, und den Speicher weiterhin beizubehalten.
-title: Verwenden der Zuordnungs Instrumentation auf der Zeitachse
+description: Verwenden Sie die Zuordnungsinstrumentation auf der Zeitachse, um Objekte zu finden, die nicht ordnungsgemäß gesammelt werden, und behalten Sie weiterhin Arbeitsspeicher bei.
+title: Verwenden der Zuordnungsinstrumentation auf der Zeitachse
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 946c2d8b45f316b491a604c16c37bb2467983222
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 374b7f0ad80b8975319b2b0ec5cecf42ce4bde82
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230915"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397818"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -28,71 +28,71 @@ ms.locfileid: "11230915"
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-# Verwenden der Zuordnungs Instrumentation auf der Zeitachse  
+# <a name="how-to-use-allocation-instrumentation-on-timeline"></a>Verwenden der Zuordnungsinstrumentation auf der Zeitachse  
 
-Verwenden Sie die **Zuweisungs Instrumentation auf der Zeitachse** , um Objekte zu finden, die nicht ordnungsgemäß von der Garbage Collection erfasst werden, und den Speicher weiterhin beizubehalten.  
+Verwenden **Sie die Zuordnungsinstrumentation auf der** Zeitachse, um Objekte zu finden, die nicht ordnungsgemäß gesammelt werden, und behalten Sie weiterhin Arbeitsspeicher bei.  
 
-## Funktionsweise der Zuordnungs Instrumentation auf der Zeitachse  
+## <a name="how-allocation-instrumentation-on-timeline-works"></a>Funktionsweise der Zuweisungsinstrumentation auf der Zeitachse  
 
-Die **Zuweisungs Instrumentation auf Zeitachse** kombiniert die detaillierten Schnappschuss Informationen des **Heap-Profilers** mit der inkrementellen Aktualisierung und Nachverfolgung des **Leistungs** Panels.  Ebenso umfasst das Nachverfolgen der Heapzuordnung für Objekte das Starten einer Aufzeichnung, das Durchführen einer Abfolge von Aktionen und das Beenden der Aufzeichnung zur Analyse.  
+**Die Zuordnungsinstrumentation auf der Zeitachse** kombiniert die detaillierten Snapshotinformationen des **Heap-Profilers** mit der inkrementellen Aktualisierung und Nachverfolgung des **Leistungsbereichs.**  Auf ähnliche Weise umfasst das Nachverfolgen der Heapzuweisung für Objekte das Starten einer Aufzeichnung, das Ausführen einer Abfolge von Aktionen und das Beenden der Aufzeichnung für die Analyse.  
 
 <!--todo: add profile memory problems (heap profiler) section when available  -->  
 <!--todo: add profile evaluate performance (Performance panel) section when available  -->  
 
-Die **Zuweisungs Instrumentation auf der Zeitachse** nimmt in regelmäßigen Abständen Heap-Snapshots (so häufig wie alle 50-ms \) und einen letzten Snapshot am Ende der Aufzeichnung an.  
+**Die Zuordnungsinstrumentation auf der** Zeitachse nimmt in regelmäßigen Abständen Heapmomentaufnahmen während der Aufzeichnung \(so häufig wie alle 50 ms\) und eine letzte Momentaufnahme am Ende der Aufzeichnung auf.  
 
-:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png" alt-text="Zuordnungs Instrumentation auf Zeitachse" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png":::
-   **Zuordnungs Instrumentation auf Zeitachse**  
+:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png" alt-text="Zuordnungsinstrumentation auf der Zeitachse" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png":::
+   **Zuordnungsinstrumentation auf der Zeitachse**  
 :::image-end:::  
 
 > [!NOTE]
-> Die Zahl nach der `@` ist eine Objekt-ID, die über die verschiedenen Snapshots, die während der Aufzeichnungssitzung aufgenommen wurden, beibehalten wird.  Die persistente Objekt-ID ermöglicht einen präzisen Vergleich zwischen Heap Zuständen.  Objekte werden während Garbage Collections verschoben, daher ist es sinnlos, die Adresse eines Objekts anzuzeigen.  
+> Die Zahl nach der ist eine Objekt-ID, die in den mehreren Momentaufnahmen, die während der `@` Aufzeichnungssitzung erstellt wurden, beibehalten wird.  Die ID des beständigen Objekts ermöglicht einen genauen Vergleich zwischen Heapzuständen.  Objekte werden während der Garbage Collections verschoben, sodass das Anzeigen der Adresse eines Objekts keinen Sinn macht.  
 
-## Aktivieren der Zuordnungs Instrumentation auf der Zeitachse  
+## <a name="enable-allocation-instrumentation-on-timeline"></a>Aktivieren der Zuordnungsinstrumentation auf der Zeitachse  
 
-Führen Sie die folgenden Aktionen aus, um die **Zuweisungs Instrumentation auf der Zeitachse**zu verwenden.  
+Führen Sie die folgenden Aktionen aus, um mit der Verwendung der **Zuordnungsinstrumentation auf der Zeitachse zu beginnen.**  
 
-1.  [Öffnen Sie das devtools][DevtoolsOpenIndex].  
-1.  Öffnen Sie den Bereich " **Speicher** ", und aktivieren Sie das Optionsfeld **Zuweisungs Instrumentation auf Zeitachse** .  
+1.  [Öffnen Sie devTools][DevtoolsOpenIndex].  
+1.  Öffnen Sie **den Bereich** Arbeitsspeicher, wählen Sie das **Optionsfeld Zuordnungsinstrumentation auf der Zeitachse** aus.  
 1.  Start recording (Aufzeichnung starten.  
     
-    :::image type="complex" source="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png" alt-text="Datensatz-Heapzuweisungen Profiler" lightbox="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png":::
-       Datensatz-Heapzuweisungen Profiler  
+    :::image type="complex" source="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png" alt-text="Profiler für Datensatzheapzuordnungen" lightbox="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png":::
+       Profiler für Datensatzheapzuordnungen  
     :::image-end:::  
     
-## Lesen einer Heap Zuordnungs Zeitachse  
+## <a name="read-a-heap-allocation-timeline"></a>Lesen einer Zeitachse für die Heapzuweisung  
 
-Die Zeitachse der Heapzuweisung zeigt an, wo Objekte erstellt werden, und identifiziert den Beibehaltungs Pfad.  In der folgenden Abbildung geben die Balken am oberen Rand an, wenn neue Objekte im Heap gefunden werden.  
+Die Zeitachse für die Heapzuordnung zeigt an, wo Objekte erstellt werden, und identifiziert den Aufbewahrungspfad.  In der folgenden Abbildung geben die Balken oben an, wann neue Objekte im Heap gefunden werden.  
 
-Die Höhe der einzelnen Balken entspricht der Größe der zuletzt zugeordneten Objekte, und die Farbe der Balken gibt an, ob diese Objekte weiterhin im endgültigen Heap-Snapshot enthalten sind.  Blaue Balken zeigen Objekte an, die am Ende der Zeitachse weiterhin aktiv sind, und graue Balken zeigen Objekte an, die während der Zeitachse zugewiesen wurden, die aber seither als Garbage Collection erfasst wurden.  
+Die Höhe der einzelnen Balken entspricht der Größe der zuletzt zugewiesenen Objekte, und die Farbe der Balken gibt an, ob diese Objekte noch in der letzten Heapmomentaufnahme gespeichert sind.  Blaue Balken zeigen Objekte an, die am Ende der Zeitachse noch live sind, graue Balken zeigen Objekte an, die während der Zeitachse zugewiesen wurden, aber seitdem garbage collected wurden.  
 
-:::image type="complex" source="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png" alt-text="Zuordnungs Instrumentation auf der Zeitachse-Momentaufnahme" lightbox="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png":::
-   **Zuordnungs Instrumentation auf der Zeitachse** -Momentaufnahme  
+:::image type="complex" source="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png" alt-text="Zuordnungsinstrumentation auf Zeitachsenmomentaufnahme" lightbox="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png":::
+   **Zuordnungsinstrumentation auf Zeitachsenmomentaufnahme**  
 :::image-end:::  
 
 <!--In the following figure, an action was performed 3 times.  The sample program caches five objects, so the last five blue bars are expected.  But the left-most blue bar indicates a potential problem.  -->  
-<!--todo: redo figure 4 with multiple click actions  -->  
+<!--todo: redo figure 4 with multiple choose actions  -->  
 
-Sie können die Schieberegler in der obigen Zeitachse verwenden, um den jeweiligen Schnappschuss zu vergrößern und die Objekte zu überprüfen, die kürzlich zu diesem Zeitpunkt zugewiesen wurden:  
+Sie können die Schieberegler in der obigen Zeitachse verwenden, um in diese bestimmte Momentaufnahme zu zoomen und die Objekte zu überprüfen, die zu diesem Zeitpunkt kürzlich zugewiesen wurden:  
 
-:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png" alt-text="Vergrößern des Schnappschusses" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png":::
-   Vergrößern des Schnappschusses  
+:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png" alt-text="Zoomen in die Momentaufnahme" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png":::
+   Zoomen in die Momentaufnahme  
 :::image-end:::  
 
-Wenn Sie auf ein bestimmtes Objekt im Heap klicken, wird im unteren Teil des Heap-Snapshots die Beibehaltungs Struktur angezeigt.  Wenn Sie den Beibehaltungs Pfad für das Objekt untersuchen, sollten Sie genügend Informationen erhalten, um zu verstehen, warum das Objekt nicht erfasst wurde, und Sie sollten die erforderlichen Codeänderungen vornehmen, um den unnötigen Verweis zu entfernen.  
+Wenn Sie ein bestimmtes Objekt im Heap auswählen, wird die Aufbewahrungsstruktur im unteren Teil der Heapmomentaufnahme angezeigt.  Wenn Sie den Aufbewahrungspfad zum Objekt untersuchen, sollten Sie genügend Informationen erhalten, um zu verstehen, warum das Objekt nicht erfasst wurde, und Sie sollten die erforderlichen Codeänderungen vornehmen, um den unnötigen Verweis zu entfernen.  
 
-## Anzeigen der Speicherzuweisung nach Funktion  
+## <a name="view-memory-allocation-by-function"></a>Anzeigen der Speicherzuweisung nach Funktion  
 
-Sie können die Speicherzuweisung nach JavaScript-Funktion anzeigen.  Weitere Informationen finden Sie unter [untersuchen der Speicherzuweisung nach Funktion][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction].  
+Sie können die Speicherzuweisung über die JavaScript-Funktion anzeigen.  Weitere Informationen finden Sie unter Untersuchen der [Speicherzuordnung nach Funktion][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction].  
 
-## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevToolsOpenIndex]: ../open/index.md "Öffnen Sie Microsoft Edge (Chrom) devtools | Microsoft docs"
-[DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: ./index.md#investigate-memory-allocation-by-function "Untersuchen der Speicherzuweisung nach Funktion – beheben von Speicherproblemen | Microsoft docs"  
+[DevToolsOpenIndex]: ../open/index.md "Öffnen Sie Microsoft Edge (Chromium) DevTools | Microsoft Docs"
+[DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: ./index.md#investigate-memory-allocation-by-function "Untersuchen der Speicherzuweisung nach Funktion – Beheben von Speicherproblemen | Microsoft Docs"  
 
 <!--[HeapProfiler]: ./heap-snapshots.md "How to Record Heap Snapshots"  -->  
 <!--[PerformancePanel]: ../profile/evaluate-performance/timeline-tool ""  -->  
@@ -101,7 +101,7 @@ Sie können die Speicherzuweisung nach JavaScript-Funktion anzeigen.  Weitere In
 
 > [!NOTE]
 > Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
-> Die ursprüngliche Seite wird [hier](https://developers.google.com/web/tools/chrome-devtools/memory-problems/allocation-profiler) gefunden und von [Meggin Kearney][MegginKearney] (Technical Writer \) erstellt.  
+> Die ursprüngliche Seite befindet sich [hier und](https://developers.google.com/web/tools/chrome-devtools/memory-problems/allocation-profiler) wird von [Meggin Kearney][MegginKearney] \(Technical Writer\) verfasst.  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  

@@ -1,18 +1,18 @@
 ---
-description: Die hauptsächliche Verwendung der Microsoft Edge devtools-Konsole sind das Protokollieren von Nachrichten und das Ausführen von JavaScript.
-title: Übersicht über die Konsole
+description: Die Hauptanwendung der Microsoft Edge DevTools-Konsole sind die Protokollierung von Nachrichten und das Ausführen von JavaScript.
+title: Konsole – Übersicht
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 32272c3f76f715566ced66d11346985dc95dd290
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
+ms.openlocfilehash: 496caa4d304d9511d4b1c341846f377899ba4597
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125265"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399120"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,19 +28,19 @@ ms.locfileid: "11125265"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Übersicht über die Konsole  
+# <a name="console-overview"></a>Konsole – Übersicht  
 
   
 
-Auf dieser Seite wird erläutert, wie die Microsoft Edge devtools-Konsole das Entwickeln von Webseiten vereinfacht.  Die Konsole hat zwei hauptsächliche Verwendungsmöglichkeiten: [Anzeigen von protokollierten Nachrichten](#viewing-logged-messages) und [Ausführen von JavaScript](#running-javascript).  
+Auf dieser Seite wird erläutert, wie die Microsoft Edge DevTools-Konsole die Entwicklung von Webseiten vereinfacht.  Die **Konsole** hat zwei Hauptverwendungszwecke: [Anzeigen protokollierter Nachrichten und](#viewing-logged-messages) Ausführen von [JavaScript](#running-javascript).  
 
-## Anzeigen von angemeldeten Nachrichten  
+## <a name="viewing-logged-messages"></a>Anzeigen protokollierter Nachrichten  
 
-Web-Entwickler protokollieren häufig Nachrichten an die Konsole, um sicherzustellen, dass Ihr JavaScript wie erwartet funktioniert.  Wenn Sie eine Nachricht protokollieren möchten, fügen Sie einen Ausdruck wie `console.log('Hello, Console!')` in Ihr JavaScript ein.  Wenn der Browser Ihr JavaScript ausführt und einen Ausdruck wie diesen sieht, wird die Nachricht in der Konsole protokolliert.  
+Webentwickler protokollieren häufig Nachrichten an der Konsole, um sicherzustellen, dass ihr JavaScript wie erwartet funktioniert.  Um eine Nachricht zu protokollieren, fügen Sie einen Ausdruck wie `console.log('Hello, Console!')` in Ihr JavaScript ein.  Wenn der Browser Ihr JavaScript ausgeführt und einen Ausdruck wie ihn verarbeitet, protokolliert der Browser die Nachricht an der **Konsole.**  
 
 :::row:::
    :::column span="":::
-      Das HTML und JavaScript für die Seite.  
+      Html und JavaScript für die Seite.  
       
       ```html
       <!doctype html>
@@ -73,70 +73,70 @@ Web-Entwickler protokollieren häufig Nachrichten an die Konsole, um sicherzuste
    :::column span="":::
       In der folgenden Abbildung zeigt die **Konsole** die Ergebnisse des Ladens der Seite an und wartet 3 Sekunden.  
       
-      :::image type="complex" source="../media/console-console-demo.msft.png" alt-text="Die Konsolen Leiste" lightbox="../media/console-console-demo.msft.png":::
-         Die **Konsolen** Leiste  
+      :::image type="complex" source="../media/console-console-demo.msft.png" alt-text="Konsolenbereich" lightbox="../media/console-console-demo.msft.png":::
+         Das **Konsolentool**  
       :::image-end:::  
       
-      Ermitteln Sie, welche Codezeilen der Browser veranlasst hat, die Nachrichten zu protokollieren.  
+      Versuchen Sie zu bestimmen, welche Codezeilen den Browser dazu führte, dass die Nachrichten protokolliert wurden.  
    :::column-end:::
 :::row-end:::  
 
-Web-Entwickler protokollieren Nachrichten für die folgenden 2 allgemeinen Gründe.  
+Webentwickler protokollieren Nachrichten aus den folgenden 2 allgemeinen Gründen.  
 
-*   Sicherstellen, dass der Code in der richtigen Reihenfolge ausgeführt wird  
-*   Überprüfen der Werte von Variablen zu einem bestimmten Zeitpunkt  
+*   Stellen Sie sicher, dass Code in der richtigen Reihenfolge ausgeführt wird.  
+*   Überprüfen der Werte von Variablen zu einem bestimmten Zeitpunkt.  
 
-Lesen Sie [Erste Schritte mit der Protokollierung von Nachrichten][DevtoolsConsoleLoggingMessages] , um praktische Erfahrungen mit der Protokollierung zu erhalten.  Die vollständige Liste der Methoden finden Sie in der [API-Referenz][DevToolsConsoleAPI] für die Konsole `console` .  Der Hauptunterschied zwischen den Methoden besteht darin, wie die Daten, die protokolliert werden, angezeigt werden.  
+Um praktische Erfahrungen mit der Protokollierung zu erhalten, navigieren Sie zu [Erste Schritte mit Protokollierungsmeldungen][DevtoolsConsoleLoggingMessages].  Navigieren Sie zur Konsolen-API-Referenz, um die vollständige Liste der Methoden `console` [zu durchsuchen.][DevToolsConsoleAPI]  Der Hauptunterschied zwischen den Methoden besteht in der Anzeige der protokollierten Daten.  
 
-## Ausführen von JavaScript  
+## <a name="running-javascript"></a>Ausführen von JavaScript  
 
-Die **Konsole** ist auch ein [repl][WikiREPLoop].  Sie können JavaScript in der **Konsole** ausführen, um mit der geprüften Seite zu interagieren.   
+Die **Konsole** ist auch eine [REPL][WikiREPLoop].  Sie können JavaScript in der Konsole **ausführen,** um mit der überprüften Seite zu interagieren.   
 
 :::row:::
    :::column span="":::
-      In der folgenden Abbildung wird die **Konsole** neben der devtools-Startseite angezeigt.  
+      In der folgenden Abbildung wird **die Konsole** neben der DevTools-Homepage angezeigt.  
       
-      :::image type="complex" source="../media/devtools-console-empty.msft.png" alt-text="Die Konsolen Leiste" lightbox="../media/devtools-console-empty.msft.png":::
-         Das **Konsolen** Feld neben der devtools-Startseite  
+      :::image type="complex" source="../media/devtools-console-empty.msft.png" alt-text="Das Konsolentool neben der DevTools-Homepage" lightbox="../media/devtools-console-empty.msft.png":::
+         Das **Konsolentool** neben der DevTools-Homepage  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
       In der folgenden Abbildung wird dieselbe Seite nach der Verwendung der **Konsole** angezeigt, um die obere Überschrift der Seite zu ändern.
       
-      :::image type="complex" source="../media/devtools-console-h1-changed.msft.png" alt-text="Die Konsolen Leiste" lightbox="../media/devtools-console-h1-changed.msft.png":::
-         Verwenden der **Konsole** zum Ändern der obersten Überschrift der Seite  
+      :::image type="complex" source="../media/devtools-console-h1-changed.msft.png" alt-text="Ändern der oberen Überschrift der Seite mithilfe der Konsole" lightbox="../media/devtools-console-h1-changed.msft.png":::
+         Ändern **der** oberen Überschrift der Seite mithilfe der Konsole  
       :::image-end:::  
    :::column-end:::
 :::row-end:::
 
-Das Ändern der Seite über die **Konsole** ist möglich, da die **Konsole** Vollzugriff auf das [Fenster][MDNWindow] der Seite hat.  DevTools verfügt über einige komfortable Funktionen, mit denen Sie eine Seite leichter überprüfen können.  Nehmen wir beispielsweise an, dass Ihr JavaScript eine Funktion mit dem Namen `hideModal` .  Durch Ausführen wird der `debug(hideModal)` Code in der ersten Zeile des `hideModal` nächsten Ausführungszeitraums angehalten.  Weitere Informationen zur vollständigen Liste der Dienstprogrammfunktionen finden Sie unter [API-Referenz für die Konsolen Dienstprogramme][DevtoolsConsoleUtilitiesDebug].  
+Das Ändern der Seite über die **Konsole** ist möglich, da die **Konsole** Vollzugriff auf das [Fenster][MDNWindow] der Seite hat.  DevTools verfügt über einige Komfortfunktionen, die das Überprüfen einer Seite vereinfachen.  Angenommen, Ihr JavaScript enthält eine Funktion namens `hideModal` .  Beim `debug(hideModal)` Ausführen wird der Code in der ersten Zeile des nächsten `hideModal` Ausführungslaufs angehalten.  Weitere Informationen zur vollständigen Liste der Hilfsfunktionen finden Sie unter [Console Utilities API Reference][DevtoolsConsoleUtilitiesDebug].  
 
-Wenn Sie JavaScript ausführen, müssen Sie nicht mit der Seite interagieren.  Sie können die **Konsole** verwenden, um neuen Code auszuprobieren, der sich nicht auf die Seite bezieht.  Angenommen, Sie haben soeben die integrierte JavaScript-Array [Zuordnungsmethode ()][MDNMap] kennengelernt, und Sie möchten damit experimentieren.  
+Wenn Sie JavaScript ausführen, müssen Sie nicht mit der Seite interagieren.  Sie können die Konsole **verwenden,** um neuen Code zu testen, der nichts mit der Seite zu tun hat.  Angenommen, Sie haben gerade etwas über die integrierte JavaScript Array [map()-Methode][MDNMap] erfahren, und Sie möchten damit experimentieren.  
 Die **Konsole** ist ein guter Ort, um die Funktion auszuprobieren.  
 
-Wenn Sie mehr praktische Erfahrungen mit der Ausführung von JavaScript in der **Konsole**erhalten möchten, navigieren Sie zu den [ersten Schritten mit der Ausführung von JavaScript][DevtoolsConsoleRunningJavascript].  
+Weitere praktische Erfahrungen mit der Ausführung von JavaScript in der **Konsole finden**Sie unter Erste Schritte mit der Ausführung [von JavaScript][DevtoolsConsoleRunningJavascript].  
 
-## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevToolsConsoleAPI]: ./api.md "Konsolen-API-Referenz | Microsoft docs"  
-[DevtoolsConsoleLoggingMessages]: ./log.md "Erste Schritte mit der Protokollierung von Nachrichten in der Konsole | Microsoft docs"  
-[DevtoolsConsoleRunningJavascript]: ./javascript.md "Erste Schritte mit der Ausführung von JavaScript in der Konsole | Microsoft docs"  
-[DevtoolsConsoleUtilitiesDebug]: ./utilities.md#debug "Debug-Console Utilities API Reference | Microsoft docs"  
+[DevToolsConsoleAPI]: ./api.md "Konsolen-API-| Microsoft Docs"  
+[DevtoolsConsoleLoggingMessages]: ./log.md "Erste Schritte mit der Protokollierung von Nachrichten in der | Microsoft Docs"  
+[DevtoolsConsoleRunningJavascript]: ./javascript.md "Erste Schritte mit der Ausführung von JavaScript in der Konsolenkonsole | Microsoft Docs"  
+[DevtoolsConsoleUtilitiesDebug]: ./utilities.md#debug "debug – Apireferenz für Konsolenprogramme | Microsoft Docs"  
 
-[MDNMap]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/map "Array. Prototype. map () | MDN"  
+[MDNMap]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/map "Array.prototype.map() | MDN"  
 [MDNWindow]: https://developer.mozilla.org/docs/Web/API/Window "Fenster | MDN"  
 
-[WikiREPLoop]: https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop "Lesen – eval – Print Loop – Wikipedia"  
+[WikiREPLoop]: https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop "Lese-eval-print-Schleife – Wikipedia"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
-> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/console/index) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
+> Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
+> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/console/index) und wird von [Kayce Basken][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) verfasst.  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

@@ -1,188 +1,188 @@
 ---
-description: Erfahren Sie, wie Sie Microsoft Edge devtools verwenden, um das CSS einer Seite CSS anzuzeigen und zu ändern.
-title: Überprüfen des CSS-Rasters in Microsoft Edge devtools
+description: Erfahren Sie, wie Sie Microsoft Edge DevTools zum Anzeigen und Ändern der CSS einer Seiten-CSS verwenden.
+title: Überprüfen des CSS-Rasters in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 1fe6bd1c8efd244315fb9a38777df6ea3e9b1a4d
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 5e4b20690eac3a692f6428f391def102a4f78ecb
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11231097"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398770"
 ---
-# Überprüfen des CSS-Rasters  
+# <a name="inspect-css-grid"></a>Überprüfen des CSS-Rasters  
 
-In diesem Artikel wird erläutert, wie Sie CSS-Raster auf einer Website identifizieren und Probleme mit Rasterlayouts mithilfe anpassbarer Raster Überlagerungen Debuggen.  
+In diesem Artikel werden Sie durch das Identifizieren von CSS-Rastern auf einer Website und das Debuggen von Rasterlayoutproblemen mithilfe anpassbarer Rasterüberlagerungen erläutert.  
 
-Die in den Abbildungen in diesem Artikel verwendeten Beispiele sind den folgenden Webseiten zu entgenommen.  
+Die In den Abbildungen in diesem Artikel verwendeten Beispiele sind den folgenden Webseiten zu finden.  
 
-*   [Obst Kasten][JecFyiDemoCssGridFruit]  
-*   [Snack-Box][JecFyiDemoCssGridSnack]  
+*   [Obstfeld][JecFyiDemoCssGridFruit]  
+*   [Feld "ImBiss"][JecFyiDemoCssGridSnack]  
 
-## Vorbemerkungen  
+## <a name="before-you-begin"></a>Vorbemerkungen  
 
-CSS-Raster ist ein leistungsfähiges Layout-Paradigma für das Web.  Ein toller Ort, um mit dem Erlernen des CSS-Rasters und der vielen Features vertraut zu werden, ist die [CSS-Raster Layout-Anleitung][MdnCssGridLayout] auf MDN.  
+CSS Grid ist ein leistungsfähiges Layoutparadigma für das Web.  Ein großartiger Ort, um sich mit css Grid und den vielen Features zu beginnen, ist die [CSS Grid Layout-Anleitung][MdnCssGridLayout] auf MDN.  
 
-## Entdecken von CSS-Rastern  
+## <a name="discover-css-grids"></a>Entdecken von CSS-Rastern  
 
-Wenn auf der Seite ein HTML-Element auf der Seite `display: grid` `display: inline-grid` angelegt oder angewendet wurde, `grid` wird im [Element][DevtoolsGuideChromiumOpen] Panel daneben ein Badge angezeigt.  
+Wenn ein HTML-Element auf Ihrer Seite darauf angewendet wurde oder darauf angewendet wurde, wird daneben im Bereich Elemente ein Signal `display: grid` `display: inline-grid` `grid` angezeigt. [][DevtoolsGuideChromiumOpen]  
 
-:::image type="complex" source="../media/grid-discover-grid.msft.png" alt-text="Raster entdecken" lightbox="../media/grid-discover-grid.msft.png":::
-   Raster entdecken  
+:::image type="complex" source="../media/grid-discover-grid.msft.png" alt-text="Raster ermitteln" lightbox="../media/grid-discover-grid.msft.png":::
+   Raster ermitteln  
 :::image-end:::  
 
-Wählen Sie das Abzeichen aus, um die Anzeige einer Raster Überlagerung auf der Seite umzuschalten.  Die Überlagerung wird über dem Element dargestellt, wie ein Raster angeordnet, um die Position der Rasterlinien und Titel anzuzeigen:  
+Wählen Sie das Signal aus, um die Anzeige einer Rasterüberlagerung auf der Seite umschalten zu können.  Die Überlagerung wird über dem Element angezeigt, das wie ein Raster ausgelegt ist, um die Position der Gitternetzlinien und -spuren zu zeigen:  
 
-:::image type="complex" source="../media/grid-highlight-grid.msft.png" alt-text="Rastersignal umschalten" lightbox="../media/grid-highlight-grid.msft.png":::
-   Rastersignal umschalten  
+:::image type="complex" source="../media/grid-highlight-grid.msft.png" alt-text="Gitternetzabzeichen umschalten" lightbox="../media/grid-highlight-grid.msft.png":::
+   Gitternetzabzeichen umschalten  
 :::image-end:::  
 
-Öffnen Sie den Bereich " **Layout** ".  Wenn Raster auf einer Seite enthalten sind, enthält der Bereich **Layout** einen **Raster** Abschnitt, der eine Reihe von Optionen zum Anzeigen der Raster enthält.  
+Öffnen Sie den **Bereich Layout.**  Wenn Raster auf einer Seite enthalten sind, enthält der **Layoutbereich** einen **Abschnitt Grid** mit einer Reihe von Optionen zum Anzeigen der Raster.  
 
-:::image type="complex" source="../media/grid-layout-pane.msft.png" alt-text="Bereich ' Layout '" lightbox="../media/grid-layout-pane.msft.png":::
-   Bereich ' **Layout** '  
+:::image type="complex" source="../media/grid-layout-pane.msft.png" alt-text="Layoutbereich" lightbox="../media/grid-layout-pane.msft.png":::
+   **Layoutbereich**  
 :::image-end:::  
 
-Der Abschnitt " **Raster** " im Bereich " **Layout** " enthält die folgenden 2 Unterabschnitte.  
+Der **Abschnitt Grid** im **Layoutbereich** enthält die folgenden 2 Unterabschnitte.  
 
-*   Anzeigeeinstellungen für Overlays  
-*   Raster Überlagerungen  
+*   Überlagerungsanzeigeeinstellungen  
+*   Rasterüberlagerungen  
 
 <!--todo: @zoher verify the details for each of the sub-sections.  -->  
 
-## Anzeigeeinstellungen für Overlays  
+## <a name="overlay-display-settings"></a>Überlagerungsanzeigeeinstellungen  
 
-Die **Einstellungen** für die Overlay-Anzeige bestehen aus zwei Teilen.  
+Die **Überlagerungsanzeigeeinstellungen** bestehen aus den folgenden 2 Teilen.  
 
-*   Wählen Sie eine der folgenden Optionen aus dem Dropdown-Menü aus.  
+*   Wählen Sie im Dropdownmenü eine der folgenden Optionen aus.  
     
-    | Option "Zeile" | Details |  
+    | Line-Option | Details |  
     |:--- |:--- |  
-    | **Ausblenden von Strich Beschriftungen** | Blenden Sie die Beschriftungen der Linien für jede Raster Überlagerung aus. |  
-    | **Anzeigen von Positionsnummern** | Zeigen Sie die Nummern der Zeilen für jede Raster Überlagerung an \ (standardmäßig ausgewählt). |  
-    | **Anzeigen von Leitungsnamen** | Zeigen Sie die Namen der Zeilen für jede Raster Überlagerung an, wenn Namen bereitgestellt werden. |  
+    | **Ausblenden von Linienbeschriftungen** | Blenden Sie die Beschriftungen der Linien für jede Rasterüberlagerung aus. |  
+    | **Anzeigen von Zeilennummern** | Zeigt die Nummern der Zeilen für jede Rasterüberlagerung \(standardmäßig ausgewählt\) an. |  
+    | **Anzeigen von Zeilennamen** | Zeigt die Namen der Zeilen für jede Rasterüberlagerung an, wenn Namen angegeben werden. |  
     
 *  Aktivieren Sie das Kontrollkästchen neben den folgenden Optionen.  
     
     | Option | Details |  
     |:--- |:--- |  
-    | **Anzeigen von Titel Größen**  | Zeigen Sie die Größe der Tracks an, oder blenden Sie Sie aus. |  
-    | **Anzeigen von Bereichsnamen** | Zeigen Sie die Namen des Bereichs an, wenn Namen bereitgestellt werden. |  
-    | **Erweitern von Rasterlinien** | Zeigt die Erweiterungen der Raster Bemaßungen auf jeder Achse an.  Standardmäßig werden Rasterlinien nur innerhalb des Elements angezeigt, wobei `display: grid` oder `display: inline-grid` CSS darauf gesetzt ist. |  
+    | **Anzeigen von Titelgrößen**  | Zeigen Sie \(oder ausblenden\) die Größen der Titel an. |  
+    | **Anzeigen von Bereichsnamen** | Zeigen Sie \(oder ausblenden\) die Namen des Bereichs an, wenn Namen angegeben werden. |  
+    | **Erweitern von Gitternetzlinien** | Zeigt \(oder blendet\) die Erweiterungen der Rasterdimensionen entlang jeder Achse an.  Standardmäßig werden Gitternetzlinien nur innerhalb des Elements angezeigt, für das `display: grid` `display: inline-grid` css festgelegt ist. |  
     
-Die folgenden Abschnitte enthalten Details zu den einzelnen **Overlay-Anzeigeeinstellungen**.  
+In den folgenden Abschnitten finden Sie Details für jede der **Überlagerungsanzeigeeinstellungen.**  
 
-### Anzeigen von Positionsnummern  
+### <a name="show-line-numbers"></a>Anzeigen von Zeilennummern  
 
-Standardmäßig werden die Zahlen für positive und negative Linien auf der Raster Überlagerung angezeigt.  
+Standardmäßig werden die positiven und negativen Zeilennummern auf der Rasterüberlagerung angezeigt.  
 
-Wenn Sie weitere Informationen zu negativen Zahlen in der Raster Überlagerung erhalten möchten, navigieren Sie zu [Zeile-basierter Platzierung mit CSS-Raster][MdnLineBasedPlacementCssGrid].  
+Weitere Informationen zu negativen Zahlen in der Rasterüberlagerung finden Sie unter [Line-based placement with CSS Grid][MdnLineBasedPlacementCssGrid].  
 
-:::image type="complex" source="../media/grid-show-line-numbers.msft.png" alt-text="Anzeigen von Positionsnummern" lightbox="../media/grid-show-line-numbers.msft.png":::
-   Anzeigen von Positionsnummern  
+:::image type="complex" source="../media/grid-show-line-numbers.msft.png" alt-text="Anzeigen von Zeilennummern" lightbox="../media/grid-show-line-numbers.msft.png":::
+   Anzeigen von Zeilennummern  
 :::image-end:::  
 
-### Ausblenden von Strich Beschriftungen  
+### <a name="hide-line-labels"></a>Ausblenden von Linienbeschriftungen  
 
-Wählen Sie " **Leitungs Beschriftungen ausblenden** " aus, um die Positionsnummern auszublenden.  
+Wählen **Sie Zeilenbeschriftungen ausblenden aus,** um die Zeilennummern auszublenden.  
 
-:::image type="complex" source="../media/grid-hide-line-labels.msft.png" alt-text="Ausblenden von Strich Beschriftungen" lightbox="../media/grid-hide-line-labels.msft.png":::
-   Ausblenden von Strich Beschriftungen  
+:::image type="complex" source="../media/grid-hide-line-labels.msft.png" alt-text="Ausblenden von Linienbeschriftungen" lightbox="../media/grid-hide-line-labels.msft.png":::
+   Ausblenden von Linienbeschriftungen  
 :::image-end:::  
 
-### Anzeigen von Leitungsnamen  
+### <a name="show-line-names"></a>Anzeigen von Zeilennamen  
 
-Weitere Informationen zu Linien Namen in der Raster Überlagerung finden Sie unter [Verwenden benannter Rasterlinien zum Layout][MdnLayoutUsingNamedGridLines].  
+Weitere Informationen zu Liniennamen in der Rasterüberlagerung finden Sie unter [Layout mit benannten Gitternetzlinien.][MdnLayoutUsingNamedGridLines]  
 
-Wählen Sie " **Leitungsnamen anzeigen** " aus, um die Namen der Zeile anstelle von Zahlen anzuzeigen.  Im Beispiel haben 4 Zeilennamen: `left` , `middle1` , `middle2` und `right` .  
+Wählen **Sie Zeilennamen anzeigen aus,** um die Zeilennamen anstelle von Zahlen anzeigen.  Im Beispiel haben 4 Zeilen Namen: `left` , , , und `middle1` `middle2` `right` .  
 
 <!--In the demo, **orange** element spans from left to right, with `grid-column: left` and `grid-column: right` CSS.  Showing line names makes it easier to visualize the start and end position of the element.  -->  
 
-:::image type="complex" source="../media/grid-show-line-names.msft.png" alt-text="Anzeigen von Leitungsnamen" lightbox="../media/grid-show-line-names.msft.png":::
-   **Anzeigen von Leitungsnamen**  
+:::image type="complex" source="../media/grid-show-line-names.msft.png" alt-text="Anzeigen von Zeilennamen" lightbox="../media/grid-show-line-names.msft.png":::
+   **Anzeigen von Zeilennamen**  
 :::image-end:::  
 
-### Anzeigen von Titel Größen  
+### <a name="show-track-sizes"></a>Anzeigen von Titelgrößen  
 
-Aktivieren Sie das Kontrollkästchen " **Spur Größen anzeigen** ", um die Größe des Rasters anzuzeigen.  
+Aktivieren Sie das **Kontrollkästchen Titelgrößen anzeigen,** um die Titelgrößen des Rasters anzeigen.  
 
-DevTools wird `[authored size]` `[computed size]` in jeder Zeile angezeigt.  
+DevTools zeigt `[authored size]` und `[computed size]` in jeder Zeilenbeschriftung an.  
 
 | Size | Details |  
 |:--- |:--- |  
-| **Schriftgrad** | Die in Stylesheet definierte Größe (wird ausgelassen, wenn Sie nicht definiert ist). |  
+| **Erstellungsgröße** | Die größe, die in stylesheet \(omitted if not defined\) definiert ist. |  
 | **berechnete Größe** | Die tatsächliche Größe auf dem Bildschirm. |  
 
-In der Demo werden die `snack-box` Spaltengrößen im `grid-template-columns:1fr 2fr;` CSS definiert.  Daher werden in den Spaltenbeschriftungen sowohl erstellte als auch berechnete Größen angezeigt.  
+In der Demo werden `snack-box` die Spaltengrößen im CSS `grid-template-columns:1fr 2fr;` definiert.  Daher werden in den Spaltenlinienbeschriftungen sowohl die erstellungs- als auch die berechnete Größe angezeigt.  
 
-| Titel Größe | Schriftgrad | Berechnete Größe |  
+| Track-Größe | Größe des Autors | Berechnete Größe |  
 |:--- |:--- |:--- |  
-| **1Fr** &#x2022; **96.66 px** | 1Fr | 96.66 px |  
-| **2FR** &#x2022; **193.32 px** | 2fr | 193.32 px |  
+| **1fr** &#x2022; **96,66px** | 1fr | 96,66px |  
+| **2fr** &#x2022; **193.32px** | 2fr | 193.32px |  
 
-Die Zeilenbeschriftungen zeigen nur berechnete Größen an, da im Stylesheet keine Zeilengrößen definiert sind.  
+Die Zeilenlinienbeschriftungen zeigen nur berechnete Größen an, da im Stylesheet keine Zeilengrößen definiert sind.  
 
-| Titel Größe | Schriftgrad | Berechnete Größe |  
+| Track-Größe | Größe des Autors | Berechnete Größe |  
 |:--- |:--- |:--- |  
 | **80px** | &nbsp;| 80px |  
 | **80px** | &nbsp;| 80px |  
 
-:::image type="complex" source="../media/grid-show-track-sizes.msft.png" alt-text="Anzeigen von Titel Größen" lightbox="../media/grid-show-track-sizes.msft.png":::
-   **Anzeigen von Titel Größen**  
+:::image type="complex" source="../media/grid-show-track-sizes.msft.png" alt-text="Anzeigen von Titelgrößen" lightbox="../media/grid-show-track-sizes.msft.png":::
+   **Anzeigen von Titelgrößen**  
 :::image-end:::  
 
-### Anzeigen von Bereichsnamen  
+### <a name="show-area-names"></a>Anzeigen von Bereichsnamen  
 
-Aktivieren Sie das Kontrollkästchen **Bereichsnamen anzeigen** , um die Bereichsnamen anzuzeigen.  Im Beispiel gibt es drei Bereiche im Raster: **Top**, **bottom1** und **bottom2**.  
+Aktivieren Sie zum Anzeigen der Bereichsnamen das Kontrollkästchen **Bereichsnamen** anzeigen.  Im Beispiel sind drei Bereiche im Raster: **oben,** **unten1** und **unten2**.  
 
 :::image type="complex" source="../media/grid-show-area-names.msft.png" alt-text="Anzeigen von Bereichsnamen" lightbox="../media/grid-show-area-names.msft.png":::
    **Anzeigen von Bereichsnamen**  
 :::image-end:::  
 
-### Erweitern von Rasterlinien  
+### <a name="extend-grid-lines"></a>Erweitern von Gitternetzlinien  
 
-Aktivieren Sie das Kontrollkästchen **Rasterlinien erweitern** , um die Rasterlinien entlang der einzelnen Achsen an den Rand des Viewports zu erweitern.  
+Aktivieren Sie **das Kontrollkästchen Gitternetzlinien** erweitern, um die Gitternetzlinien bis zum Rand des Viewports entlang jeder Achse zu erweitern.  
 
-:::image type="complex" source="../media/grid-extend-grid-lines.msft.png" alt-text="Erweitern von Rasterlinien" lightbox="../media/grid-extend-grid-lines.msft.png":::
-   **Erweitern von Rasterlinien**  
+:::image type="complex" source="../media/grid-extend-grid-lines.msft.png" alt-text="Erweitern von Gitternetzlinien" lightbox="../media/grid-extend-grid-lines.msft.png":::
+   **Erweitern von Gitternetzlinien**  
 :::image-end:::  
 
-## Raster Überlagerungen  
+## <a name="grid-overlays"></a>Rasterüberlagerungen  
 
-Der Abschnitt **Raster Überlagerungen** enthält eine Liste der auf der Seite vorhandenen Raster, die jeweils ein Kontrollkästchen sowie verschiedene Optionen aufweisen.  
+Der **Abschnitt Rasterüberlagerungen** enthält eine Liste der Raster, die auf der Seite vorhanden sind, jeweils mit einem Kontrollkästchen sowie verschiedenen Optionen.  
 
-### Aktivieren von überlagerungsansichten mehrerer Raster  
+### <a name="enable-overlay-views-of-multiple-grids"></a>Aktivieren von Überlagerungsansichten mehrerer Raster  
 
-Um das Overlay-Raster für mehrere Raster anzuzeigen, aktivieren Sie das Kontrollkästchen neben jedem Namen des Rasters.  Im Beispiel sind zwei Raster Überlagerungen aktiviert, die jeweils mit unterschiedlichen Farben dargestellt werden.  
+Wenn Sie das Überlagerungsraster für mehrere Raster anzeigen möchten, aktivieren Sie das Kontrollkästchen neben jedem Namen des Rasters.  Im Beispiel sind zwei Rasterüberlagerungen aktiviert, die jeweils mit unterschiedlichen Farben dargestellt werden.  
 
 *   `main`  
 *   `div.snack-box`  
     
-:::image type="complex" source="../media/grid-grid-overlays.msft.png" alt-text="Aktivieren von überlagerungsansichten mehrerer Raster" lightbox="../media/grid-grid-overlays.msft.png":::
-   Aktivieren von überlagerungsansichten mehrerer Raster  
+:::image type="complex" source="../media/grid-grid-overlays.msft.png" alt-text="Aktivieren von Überlagerungsansichten mehrerer Raster" lightbox="../media/grid-grid-overlays.msft.png":::
+   Aktivieren von Überlagerungsansichten mehrerer Raster  
 :::image-end:::  
 
-### Anpassen der Raster Überlagerungsfarbe  
+### <a name="customize-the-grid-overlay-color"></a>Anpassen der Rasterüberlagerungsfarbe  
 
-Wenn Sie die Farbauswahl öffnen und die Raster Überlagerungsfarbe anpassen möchten, aktivieren Sie das Kontrollkästchen neben dem Namen der Raster Überlagerung.  
+Um die Farbauswahl zu öffnen und die Rasterüberlagerungsfarbe anzupassen, wählen Sie das Feld neben dem Namen der Rasterüberlagerung aus.  
 
-:::image type="complex" source="../media/grid-grid-overlays-color.msft.png" alt-text="Anpassen der Raster Überlagerungsfarbe" lightbox="../media/grid-grid-overlays-color.msft.png":::
-   Anpassen der Raster Überlagerungsfarbe  
+:::image type="complex" source="../media/grid-grid-overlays-color.msft.png" alt-text="Anpassen der Rasterüberlagerungsfarbe" lightbox="../media/grid-grid-overlays-color.msft.png":::
+   Anpassen der Rasterüberlagerungsfarbe  
 :::image-end:::  
 
-### Markieren des Rasters  
+### <a name="highlight-the-grid"></a>Hervorheben des Rasters  
 
-Wenn Sie das HTML-Element im **Element Panel hervor** heben und auf der Webseite zu ihm Scrollen möchten, wählen Sie im **Panel Elemente** das Element anzeigen aus, und klicken Sie auf der Symbolleiste des Elements ![ Panels auf Symbol ][ImageShowElementInElementsPanelIcon] .  
+Um das HTML-Element **** im Elementtool zu markieren und auf der Webseite zu diesem zu scrollen, wählen Sie das Element Anzeigen **im** Bereich Elemente \( Element anzeigen im Elementbereichssymbol ![ ][ImageShowElementInElementsPanelIcon] \) aus.  
 
-:::image type="complex" source="../media/grid-grid-overlays-highlight.msft.png" alt-text="Markieren des Rasters" lightbox="../media/grid-grid-overlays-highlight.msft.png":::
-   Markieren des Rasters  
+:::image type="complex" source="../media/grid-grid-overlays-highlight.msft.png" alt-text="Hervorheben des Rasters" lightbox="../media/grid-grid-overlays-highlight.msft.png":::
+   Hervorheben des Rasters  
 :::image-end:::  
 
-## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -192,14 +192,14 @@ Wenn Sie das HTML-Element im **Element Panel hervor** heben und auf der Webseite
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumOpen]: ../open/index.md "Öffnen Sie Microsoft Edge devtools | Microsoft docs"  
+[DevtoolsGuideChromiumOpen]: ../open/index.md "Öffnen Sie Microsoft Edge DevTools | Microsoft Docs"  
 
-[JecFyiDemoCssGridFruit]: https://jec.fyi/demo/css-grid-fruit "CSS-Raster | JEC. FYI"  
-[JecFyiDemoCssGridSnack]: https://jec.fyi/demo/css-grid-snack "CSS-Raster | JEC. FYI"  
+[JecFyiDemoCssGridFruit]: https://jec.fyi/demo/css-grid-fruit "CSS-Raster | jec.fyi"  
+[JecFyiDemoCssGridSnack]: https://jec.fyi/demo/css-grid-snack "CSS-Raster | jec.fyi"  
 
-[MdnCssGridLayout]: https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout "CSS-Raster Layout | MDN"  
-[MdnLayoutUsingNamedGridLines]: https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines "Layout mit benannten Rasterlinien | MDN"  
-[MdnLineBasedPlacementCssGrid]: https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid "Linien basierte Platzierung mit CSS-Raster | MDN"  
+[MdnCssGridLayout]: https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout "CSS Grid Layout | MDN"  
+[MdnLayoutUsingNamedGridLines]: https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines "Layout mit benannten Gitternetzlinien | MDN"  
+[MdnLineBasedPlacementCssGrid]: https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid "Zeilenbasierte Platzierung mit CSS Grid | MDN"  
 
 > [!NOTE]
 > Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  

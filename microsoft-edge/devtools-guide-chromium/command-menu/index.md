@@ -1,18 +1,18 @@
 ---
-description: Leitfaden zum Öffnen des Befehlsmenüs, Ausführen von Befehlen, überprüfen weiterer Aktionen und vieles mehr.
-title: Ausführen von Befehlen mit dem Befehlsmenü von Microsoft Edge devtools
+description: Eine Anleitung zum Öffnen des Befehlsmenüs, Ausführen von Befehlen, Überprüfen anderer Aktionen und vieles mehr.
+title: Ausführen von Befehlen mit dem Microsoft Edge DevTools Command-Menü
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 2f13461fdf04e034b324db63c6ec6d9090f80f50
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
+ms.openlocfilehash: a9e67815f69a44d3bd2a741738b04c7170f6ac15
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125279"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398028"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,53 +28,51 @@ ms.locfileid: "11125279"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Ausführen von Befehlen mit dem Befehlsmenü von Microsoft Edge devtools  
+# <a name="run-commands-with-the-microsoft-edge-devtools-command-menu"></a>Ausführen von Befehlen mit dem Microsoft Edge DevTools Command-Menü  
 
-  
-
-Das Befehlsmenü bietet eine schnelle Möglichkeit, auf der Benutzeroberfläche von Microsoft Edge devtools zu navigieren und häufige Aufgaben wie das [Deaktivieren von JavaScript][JavascriptDisable]durchzuführen.  Möglicherweise sind Sie mit einem ähnlichen Feature in Visual Studio-Code vertraut, der als [Befehls Palette][VisualStudioCodeUICommandPalette]bezeichnet wird, was die ursprüngliche Inspiration für das Befehlsmenü war.  
+Das Befehlsmenü bietet eine schnelle Möglichkeit, die Microsoft Edge DevTools-Benutzeroberfläche zu navigieren und allgemeine Aufgaben auszuführen, z. B. das Deaktivieren [von JavaScript][JavascriptDisable].  Möglicherweise kennen Sie ein ähnliches Feature in Microsoft Visual Studio Code, die [Befehlspalette][VisualStudioCodeUICommandPalette], die die ursprüngliche Inspiration für das Befehlsmenü war.  
 
 :::image type="complex" source="../media/command-menu-run-command-java.msft.png" alt-text="Verwenden des Befehlsmenüs zum Deaktivieren von JavaScript" lightbox="../media/command-menu-run-command-java.msft.png":::
    Verwenden des Befehlsmenüs zum Deaktivieren von JavaScript  
 :::image-end:::  
 
-## Öffnen des Befehlsmenüs  
+## <a name="open-the-command-menu"></a>Öffnen des Befehlsmenüs  
 
-Wählen Sie `Control` + `Shift` + `P` \ (Windows, Linux \) oder `Command` + `Shift` + `P` \ (macOS \) aus. Oder wählen Sie **anpassen und Steuern von devtools** `...` und dann **Befehl ausführen**aus.  
+Wählen `Control` + `Shift` + `P` Sie \(Windows, Linux\) oder `Command` + `Shift` + `P` \(macOS\) aus. Oder wählen **Sie Customize and Control DevTools** \( `...` \) > Run Command **aus.**  
 
-:::image type="complex" source="../media/command-menu-options-run-command.msft.png" alt-text="Verwenden des Befehlsmenüs zum Deaktivieren von JavaScript" lightbox="../media/command-menu-options-run-command.msft.png":::
-   Befehl "ausführen"  
+:::image type="complex" source="../media/command-menu-options-run-command.msft.png" alt-text="Befehl ausführen" lightbox="../media/command-menu-options-run-command.msft.png":::
+   Befehl ausführen  
 :::image-end:::  
 
-## Anzeigen der anderen verfügbaren Aktionen  
+## <a name="display-other-available-actions"></a>Anzeigen anderer verfügbarer Aktionen  
 
-Wenn Sie den Workflow verwenden, der unter [Öffnen des Befehls](#open-the-command-menu)Menüs erläutert wird, wird das Befehl-Menü mit einem `>` Zeichen vor der vorangestellt des Befehlsmenü-Textfelds geöffnet.  
+Wenn Sie den unter [Öffnen](#open-the-command-menu)des Befehlsmenüs beschriebenen Workflow verwenden, wird das Befehlsmenü mit einem Zeichen geöffnet, das im Textfeld Befehlsmenü `>` vorkonfiguriert ist.  
 
-:::image type="complex" source="../media/command-menu-run-command.msft.png" alt-text="Verwenden des Befehlsmenüs zum Deaktivieren von JavaScript" lightbox="../media/command-menu-run-command.msft.png":::
+:::image type="complex" source="../media/command-menu-run-command.msft.png" alt-text="Das Befehlszeichen" lightbox="../media/command-menu-run-command.msft.png":::
    Das Befehlszeichen  
 :::image-end:::  
 
-Löschen `>` Sie das Zeichen und den Typ `?` , um andere Aktionen anzuzeigen, die über das Befehlsmenü verfügbar sind.  
+Löschen Sie `>` das Zeichen und den `?` Typ, um andere Aktionen anzuzeigen, die im Befehlsmenü verfügbar sind.  
 
-:::image type="complex" source="../media/command-menu-help.msft.png" alt-text="Verwenden des Befehlsmenüs zum Deaktivieren von JavaScript" lightbox="../media/command-menu-help.msft.png":::
+:::image type="complex" source="../media/command-menu-help.msft.png" alt-text="Andere verfügbare Aktionen" lightbox="../media/command-menu-help.msft.png":::
    Andere verfügbare Aktionen  
 :::image-end:::  
 
-## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[JavascriptDisable]: ../javascript/disable.md "Deaktivieren von JavaScript mit Microsoft Edge devtools | Microsoft docs"  
+[JavascriptDisable]: ../javascript/disable.md "Deaktivieren von JavaScript mit Microsoft Edge DevTools | Microsoft Docs"  
 
-[VisualStudioCodeUICommandPalette]: https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette "Befehlspalette – Visual Studio-Code-UI"  
+[VisualStudioCodeUICommandPalette]: https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette "Befehlspalette – Visual Studio Codebenutzeroberfläche"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
-> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/command-menu/index) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
+> Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
+> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/command-menu/index) und wird von [Kayce Basken][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) verfasst.  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

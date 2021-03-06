@@ -1,18 +1,18 @@
 ---
-description: Ermitteln Sie kostspielige Funktionen mithilfe des Microsoft Edge devtools-Speicher Panels.
+description: Identifizieren Sie teure Funktionen mithilfe des Microsoft Edge DevTools-Speicherbereichs.
 title: Beschleunigen der JavaScript-Laufzeit
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: f3cf0440579865495f4afc8b1ae4e3940af7b04f
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
+ms.openlocfilehash: 682001ae8d265b342e5d6e0725f9f8ac4e298cf8
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125356"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397601"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -28,120 +28,120 @@ ms.locfileid: "11125356"
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-# Beschleunigen der JavaScript-Laufzeit  
+# <a name="speed-up-javascript-runtime"></a>Beschleunigen der JavaScript-Laufzeit  
 
-Ermitteln Sie mit dem **Speicher** Panel kostspielige Funktionen.  
+Identifizieren Sie teure Funktionen mithilfe des **Speicherbereichs.**  
 
 :::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="Beispielprofile" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
    Beispielprofile  
 :::image-end:::  
 
-### Zusammenfassung  
+### <a name="summary"></a>Zusammenfassung  
 
-*   Zeichnen Sie genau auf, welche Funktionen aufgerufen wurden und wie viel Arbeitsspeicher für die Zuweisungs Stichproben im **Speicher** Panel erforderlich ist.  
-*   Visualisieren Sie Ihre Profile als Flammen Diagramm.  
+*   Zeichnen Sie genau auf, welche Funktionen aufgerufen wurden und wie viel Arbeitsspeicher die einzelnen Funktionen mit Demokation Sampling im **Speicherbereich** benötigen.  
+*   Visualisieren Sie Ihre Profile als Flammendiagramm.  
     
-## Aufzeichnen eines Stichproben Profils  
+## <a name="record-a-sampling-profile"></a>Aufzeichnen eines Samplingprofils  
 
-Wenn Sie Jank in Ihrem JavaScript bemerken, erfassen Sie ein Sampling-Profil.  Sampling-Profile zeigen an, wo die Laufzeit für Funktionen auf der Seite aufgewendet wird.  
+Wenn Sie jank in Ihrem JavaScript bemerken, erfassen Sie ein Samplingprofil.  Samplingprofile zeigen an, wo die Laufzeit für Funktionen auf Ihrer Seite verwendet wird.  
 
-1.  Wechseln Sie zum **Speicher** Panel von devtools.  
-1.  Aktivieren Sie das Optionsfeld **Zuweisungs Sampling** .  
+1.  Navigieren Sie zum **Speicherbereich** von DevTools.  
+1.  Wählen Sie das **Optionsfeld Zuweisungsstichprobe** aus.  
 1.  Wählen Sie **Start**aus.  
-1.  Je nachdem, was Sie analysieren möchten, können Sie entweder die Seite neu laden, mit der Seite interagieren oder einfach die Seite ausführen lassen.  
-1.  Wählen Sie die Schaltfläche **Beenden** aus, wenn Sie den Vorgang beendet haben.  
+1.  Je nachdem, was Sie analysieren möchten, können Sie entweder die Seite aktualisieren, mit der Seite interagieren oder einfach die Seite ausführen lassen.  
+1.  Wählen Sie die **Schaltfläche** Beenden aus, wenn Sie fertig sind.  
     
 > [!NOTE]
-> Sie können auch die API für die [Konsolen Dienstprogramme][DevtoolsConsoleUtilities] zum Aufzeichnen und Gruppieren von Profilen über die Befehlszeile verwenden.  
+> Sie können auch die [Console Utilities-API verwenden,][DevtoolsConsoleUtilities] um Profile über die Befehlszeile zu aufzeichnen und zu gruppieren.  
 
-## Sampling-Profil anzeigen  
+## <a name="view-sampling-profile"></a>Anzeigen des Samplingprofils  
 
-Wenn Sie die Aufzeichnung abgeschlossen haben, füllt devtools den **Speicher** Panel automatisch unter **Sampling-profile** mit den Daten aus ihrer Aufzeichnung auf.  
+Wenn Sie die Aufzeichnung abgeschlossen haben, **** füllt DevTools automatisch den Speicherbereich unter **SAMPLING PROFILES** mit den Daten aus Ihrer Aufzeichnung auf.  
 
-Die Standardansicht ist **schwer. \ (Bottom up \)**.  In dieser Ansicht können Sie sehen, welche Funktionen die meisten Auswirkungen auf die Leistung haben, und die Aufruf Pfade für diese Funktionen untersuchen.  
+Die Standardansicht ist **Heavy \(Bottom Up\)**.  In dieser Ansicht können Sie überprüfen, welche Funktionen die Leistung am stärksten beeinträchtigen, und den anfordernden Pfad für jede Funktion untersuchen.  
 
-### Ändern der Sortierreihenfolge  
+### <a name="change-sort-order"></a>Sortierreihenfolge ändern  
 
-Wenn Sie die Sortierreihenfolge ändern möchten, wählen Sie das Dropdownmenü neben dem Symbol **Fokus ausgewählte** Funktion \ ( ![ ausgewählte Funktion auswählen ][ImageFocusIcon] \) aus, und wählen Sie dann eine der folgenden Optionen aus.
+Wenn Sie die Sortierreihenfolge ändern möchten, wählen Sie das Dropdownmenü neben dem Symbol für ausgewählte Fokusfunktion **\(** ausgewählte Funktion im Fokus \) aus, und wählen Sie dann eine der ![ ][ImageFocusIcon] folgenden Optionen aus.
 
-**Diagramm**aus.  Zeigt ein chronologisches Diagramm der Aufzeichnung an.  
+**Diagramm**.  Zeigt ein chronologisches Diagramm der Aufzeichnung an.  
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png" alt-text="Beispielprofile" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png":::
-   Flamm Diagramm  
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png" alt-text="Flammendiagramm" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png":::
+   Flammendiagramm  
 :::image-end:::  
 
-**Heavy \ (Bottom up \)**.  Listet Funktionen nach Auswirkungen auf die Leistung auf und ermöglicht Ihnen, die Aufruf Pfade zu den Funktionen zu untersuchen.  Dies ist die Standardansicht.  
+**Heavy \(Bottom Up\)**.  Listet Funktionen nach Auswirkungen auf die Leistung auf und ermöglicht es Ihnen, die aufrufenden Pfade zu den Funktionen zu untersuchen.  Dies ist die Standardansicht.  
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="Beispielprofile" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="Schweres Diagramm" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
    Schweres Diagramm  
 :::image-end:::  
 
-**Struktur \ (oben)**  Zeigt ein Gesamtbild der aufrufenden Struktur, beginnend am oberen Rand der Aufrufliste.  
+**Struktur \(Top Down\)**.  Zeigt ein Gesamtbild der Anrufstruktur, beginnend am oberen Rand der Aufrufliste.  
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-tree-top-down.msft.png" alt-text="Beispielprofile" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-tree-top-down.msft.png":::
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-tree-top-down.msft.png" alt-text="Strukturdiagramm" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-tree-top-down.msft.png":::
    Strukturdiagramm  
 :::image-end:::  
 
-### Ausschließen von Funktionen  
+### <a name="exclude-functions"></a>Ausschließen von Funktionen  
 
-Wenn Sie eine Funktion aus Ihrem Stichproben Profil ausschließen möchten, wählen Sie Sie aus, und wählen Sie dann die Schaltfläche **ausgewählte Funktion ausschließen** \ ( ![ ausgewählte Funktion ausschließen ][ImageExcludeIcon] \) aus.  Die anfordernde Funktion \ (übergeordnete \) der ausgeschlossenen Funktion \ (untergeordnete \) wird mit dem zugewiesenen Arbeitsspeicher belastet, der der ausgeschlossenen Funktion zugeordnet ist (untergeordnete \).  
+Um eine Funktion aus Dem Samplingprofil auszuschließen, wählen Sie sie aus, und wählen Sie dann die Schaltfläche ausgewählte Funktion **ausschließen** \( ausgewählte Funktion ![ ausschließen ][ImageExcludeIcon] \) aus.  Die anfordernde Funktion \(parent\) der ausgeschlossenen Funktion \(child\) wird mit dem zugewiesenen Arbeitsspeicher belastet, der der ausgeschlossenen Funktion \(child\) zugewiesen ist.  
 
-Wählen Sie die Schaltfläche **alle Funktionen wieder** herstellen \ ( ![ alle Funktionen wiederherstellen ][ImageRestoreIcon] \) aus, um alle ausgeschlossenen Funktionen wieder in die Aufzeichnung zurückzusetzen.  
+Wählen Sie **die Schaltfläche Alle Funktionen wiederherstellen** \( Alle Funktionen ![ wiederherstellen \) aus, um alle ausgeschlossenen Funktionen wieder in der ][ImageRestoreIcon] Aufzeichnung wiederherzustellen.  
 
-## Sampling-Profil als Diagramm anzeigen  
+## <a name="view-sampling-profile-as-chart"></a>Anzeigen des Samplingprofils als Diagramm  
 
-Die Diagrammansicht bietet eine visuelle Darstellung des Sampling-Profils über einen Zeitraum.  
+Die Diagrammansicht bietet eine visuelle Darstellung des Samplingprofils im Laufe der Zeit.  
 
-Nachdem Sie [ein Stichproben Profil aufgezeichnet](#record-a-sampling-profile)haben, zeigen Sie die Aufzeichnung als Flammen Diagramm an, indem Sie [die Sortierreihenfolge](#change-sort-order) in **Diagramm**ändern.  
+Nachdem Sie [ein Samplingprofil aufgezeichnet haben,](#record-a-sampling-profile)zeigen Sie die Aufzeichnung als Flammendiagramm an, indem Sie [die Sortierreihenfolge in](#change-sort-order) Diagramm **ändern.**  
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png" alt-text="Beispielprofile" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png":::
-   Ansicht "Flammen Diagramm"  
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png" alt-text="Flammendiagrammansicht" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png":::
+   Flammendiagrammansicht  
 :::image-end:::  
 
-Das Flammen Diagramm ist in zwei Teile aufgeteilt.  
+Das Flammendiagramm ist in zwei Teile unterteilt.  
 
-| Index | Bestandteil | Beschreibung |  
+| index | Bestandteil | Beschreibung |  
 | --- |:--- |:--- |  
-| 1 | Übersicht | Eine Vogelperspektive der gesamten Aufzeichnung  Die Höhe der Balken entspricht der Tiefe der Aufrufliste.  Je höher die Leiste, desto tiefer die Aufrufliste.  |  
-| 2 | Anruflisten | Hierbei handelt es sich um eine detaillierte Ansicht der Funktionen, die während der Aufzeichnung aufgerufen wurden.  Die horizontale Achse ist Zeit, und die vertikale Achse ist die Aufrufliste.  Die Stapel werden oben nach unten angeordnet.  So nennt sich die Funktion oben die untere und so weiter.  |  
+| 1 | Übersicht | Eine Vogel-Augen-Ansicht der gesamten Aufzeichnung.  Die Höhe der Balken entspricht der Tiefe der Aufrufliste.  Je höher die Leiste, desto tiefer die Aufrufliste.  |  
+| 2 | Anrufstapel | Dies ist eine detaillierte Ansicht der Funktionen, die während der Aufzeichnung aufgerufen wurden.  Die horizontale Achse ist Zeit und vertikale Achse ist die Aufrufliste.  Die Stapel sind von oben nach unten organisiert.  Die Funktion oben hat also die darunter genannte aufgerufen, und so weiter.  |  
 
-Funktionen werden nach dem Zufallsprinzip eingefärbt.  Es gibt keine Korrelation zu den in den anderen Bereichen verwendeten Farben.  Funktionen werden allerdings immer gleich über Aufrufe eingefärbt, sodass Sie in jeder Laufzeit Muster sehen können.  
+Funktionen werden nach dem Zufallsprinzip gefärbt.  Es besteht keine Korrelation mit den Farben, die in den anderen Panels verwendet werden.  Funktionen sind jedoch bei Aufrufen immer gleich gefärbt, sodass Sie Muster in jeder Laufzeit beobachten können.  
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.msft.png" alt-text="Beispielprofile" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.msft.png":::
-   Flamm Diagramm mit Anmerkungen  
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.msft.png" alt-text="Mit Anmerkungen versehenes Flammendiagramm" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.msft.png":::
+   Mit Anmerkungen versehenes Flammendiagramm  
 :::image-end:::  
 
-Eine hohe Aufrufliste ist nicht unbedingt wichtig, Sie bedeutet nur, dass viele Funktionen aufgerufen wurden.  Eine breite Leiste bedeutet aber, dass eine Funktion lange Zeit in Anspruch genommen hat.  Diese sind Kandidaten für die Optimierung.  
+Eine hohe Aufrufliste ist nicht unbedingt wichtig, sondern bedeutet lediglich, dass viele Funktionen aufgerufen wurden.  Ein breiter Balken bedeutet jedoch, dass eine Funktion lange ge dauern hat, bis sie abgeschlossen wurde.  Dies sind Kandidaten für die Optimierung.  
 
-### Vergrößern bestimmter Teile der Aufzeichnung  
+### <a name="zoom-in-on-specific-parts-of-recording"></a>Vergrößern bestimmter Teile der Aufzeichnung  
 
-Wählen, halten und ziehen Sie die Maus nach links und rechts über die Übersicht, um bestimmte Teile der Anrufliste zu vergrößern.  Nachdem Sie die Ansicht gezoomt haben, wird in der Aufrufliste automatisch der Teil der Aufzeichnung angezeigt, den Sie ausgewählt haben.  
+Wählen, halten und ziehen Sie die Maus nach links und rechts über die Übersicht, um bestimmte Teile der Anrufliste zu vergrößern.  Nach dem Zoomen zeigt die Aufrufliste automatisch den von Ihnen ausgewählten Teil der Aufzeichnung an.  
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-zoomed.msft.png" alt-text="Beispielprofile" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-zoomed.msft.png":::
-   Diagramm vergrößert  
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-zoomed.msft.png" alt-text="Diagramm verkleinert" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-zoomed.msft.png":::
+   Diagramm verkleinert  
 :::image-end:::  
 
-### Anzeigen von Funktionsdetails  
+### <a name="view-function-details"></a>Anzeigen von Funktionsdetails  
 
-Wählen Sie eine Funktion aus, um die Definition im **Quellen** Panel anzuzeigen.  
+Wählen Sie eine Funktion aus, um die Definition im Bereich **Quellen anzeigen** zu können.  
 
-Zeigen Sie mit der Maus auf eine Funktion, um die Namen-und Anzeigedauer Daten anzuzeigen.  Die folgenden Informationen werden bereitgestellt.  
+Zeigen Sie auf eine Funktion, um den Namen und die Zeitdaten anzeigen.  Die folgenden Informationen werden bereitgestellt.  
 
 | Detail | Beschreibung |  
 |:--- |:--- |  
 | **Name** | Der Name der Funktion.  |  
-| **Selbst Größe** | Die Größe des aktuellen Aufrufs der Funktion, einschließlich nur der Anweisungen in der Funktion.  |  
-| **Gesamtgröße** | Die Größe des aktuellen Aufrufs dieser Funktion und der von ihr aufgerufenen Funktionen.  |  
-| **URL** | Die Position der Funktionsdefinition in Form von `base.js:261` Where `base.js` ist der Name der Datei, in der die Funktion definiert ist, und `261` die Nummer der Zeile der Definition.  |  
+| **Self size** | Die Größe des aktuellen Aufrufs der Funktion, einschließlich nur der Anweisungen in der Funktion.  |  
+| **Gesamtgröße** | Die Größe des aktuellen Aufrufs dieser Funktion und aller von ihr aufgerufenen Funktionen.  |  
+| **URL** | Die Position der Funktionsdefinition in Form von where ist der Name der Datei, in der die Funktion definiert ist, und die `base.js:261` `base.js` `261` Zeilennummer der Definition.  |  
 <!--*   **Aggregated self time**.  Aggregate time for all invocations of the function across the recording, not including functions called by this function.  -->  
 <!--*   **Aggregated total time**.  Aggregate total time for all invocations of the function, including functions called by this function.  -->  
 <!--*   **Not optimized**.  If the profiler has detected a potential optimization for the function it lists it here.  -->  
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png" alt-text="Beispielprofile" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png":::
-   Anzeigen von Funktionsdetails in einem Diagramm  
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png" alt-text="Anzeigen von Funktionsdetails im Diagramm" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png":::
+   Anzeigen von Funktionsdetails im Diagramm  
 :::image-end:::  
 
-## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -153,15 +153,15 @@ Zeigen Sie mit der Maus auf eine Funktion, um die Namen-und Anzeigedauer Daten a
 
 <!-- links -->  
 
-[DevtoolsConsoleUtilities]: ../console/utilities.md "API-Referenz für Konsolen Dienstprogramme | Microsoft docs"  
-[DevtoolsConsoleUtilitiesProfile]: ../console/utilities.md#profile "Profil-Console Utilities API Reference | Microsoft docs"  
-[DevtoolsConsoleUtilitiesProfileEnd]: ../console/utilities.md#profileend "profileEnd-Console Utilities API Reference | Microsoft docs"  
+[DevtoolsConsoleUtilities]: ../console/utilities.md "Api-Referenz für Konsolenprogramme | Microsoft Docs"  
+[DevtoolsConsoleUtilitiesProfile]: ../console/utilities.md#profile "profile – Apireferenz für Konsolenprogramme | Microsoft Docs"  
+[DevtoolsConsoleUtilitiesProfileEnd]: ../console/utilities.md#profileend "profileEnd – Api-Referenz für Konsolenprogramme | Microsoft Docs"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
-> Die ursprüngliche Seite wird [hier](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/js-execution) gefunden und von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) und [Meggin Kearney][MegginKearney] \ (Tech Writer \) erstellt.  
+> Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
+> Die ursprüngliche Seite [](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/js-execution) befindet sich hier und wird von [Kayce Basken][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) und [Meggin Kearney][MegginKearney] \(Tech Writer\) verfasst.  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

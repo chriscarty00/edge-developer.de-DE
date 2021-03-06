@@ -1,66 +1,69 @@
 ---
-description: Informieren Sie sich über alle Möglichkeiten, wie Sie Ihren Code in Microsoft Edge devtools anhalten können.
-title: Anhalten des Codes mit Haltepunkten in Microsoft Edge devtools
+description: Erfahren Sie mehr über alle Möglichkeiten, wie Sie Ihren Code in Microsoft Edge DevTools anhalten können.
+title: So halten Sie Ihren Code mit Haltepunkten in Microsoft Edge DevTools an
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 98c0e42657d9b0900d3eaca8af69f1c17abfcf06
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
+ms.openlocfilehash: 84077503d6c786244fc2ca4d54c349ae9f6d20d8
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11124810"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398595"
 ---
-<!-- Copyright Kayce Basques 
+<!-- Copyright Kayce Basques
+
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
+
        https://www.apache.org/licenses/LICENSE-2.0
+
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Anhalten des Codes mit Haltepunkten in Microsoft Edge devtools  
+# <a name="how-to-pause-your-code-with-breakpoints-in-microsoft-edge-devtools"></a>So halten Sie Ihren Code mit Haltepunkten in Microsoft Edge DevTools an  
 
-Verwenden Sie Haltepunkte, um Ihren JavaScript-Code anzuhalten.  In diesem Leitfaden werden die einzelnen Typen von Haltepunkten erläutert, die in devtools zur Verfügung stehen, sowie Informationen dazu, wann und wie die einzelnen Typen festzulegen sind.  Wenn Sie ein praktisches Lernprogramm für den Debuggingprozess durchführen möchten, navigieren Sie zu den [ersten Schritten beim Debuggen von JavaScript in Microsoft Edge devtools][DevtoolsJavascriptIndex].  
+Verwenden Sie Haltepunkte, um Ihren JavaScript-Code anzuhalten.  In diesem Handbuch werden die einzelnen Typen von Haltepunkten erläutert, die in DevTools verfügbar sind, sowie die Verwendung und das Festlegen der einzelnen Typen.  Ein praktisches Lernprogramm des Debugprozesses finden Sie unter Erste Schritte mit dem Debuggen von [JavaScript in Microsoft Edge DevTools][DevtoolsJavascriptIndex].  
 
-## Übersicht über die Verwendung der einzelnen Haltepunkttypen  
+## <a name="overview-of-when-to-use-each-breakpoint-type"></a>Übersicht über die Verwendung der einzelnen Haltepunkttypen  
 
-Der bekannteste Breakpoint-Typ ist "Codezeile".  Es ist jedoch möglich, dass die festgelegten Code Haltepunkte nicht besonders effizient sind, wenn Sie nicht genau wissen, wo Sie suchen müssen, oder wenn Sie mit einer umfangreichen CodeBase arbeiten.  Sie können beim Debuggen Zeit sparen, indem Sie wissen, wie und wann die anderen Arten von Haltepunkten verwendet werden.  
+Der bekannteste Haltepunkttyp ist die Codezeile.  Aber codebasierte Haltepunkte können ineffizient festgelegt werden, insbesondere wenn Sie nicht genau wissen, wo sie aussehen sollen, oder wenn Sie mit einer großen Codebasis arbeiten.  Sie können sich beim Debuggen Zeit sparen, indem Sie wissen, wie und wann die anderen Arten von Haltepunkten verwendet werden.  
 
-| Breakpoint-Typ | Verwenden Sie diese Taste, wenn Sie anhalten möchten...  |  
+| Haltepunkttyp | Verwenden Sie dies, wenn Sie anhalten möchten...  |  
 |:--- |:--- |  
-| [Codezeile](#line-of-code-breakpoints) | In einem exakten Codebereich.  |  
-| [Bedingte Codezeile](#conditional-line-of-code-breakpoints) | In einem exakten Codebereich, aber nur, wenn eine andere Bedingung wahr ist.  |  
-| [DOM](#dom-change-breakpoints) | Auf dem Code, der einen bestimmten DOM-Knoten ändert oder entfernt, oder die untergeordneten Elemente.  |  
-| [XMLHttpRequest](#xhrfetch-breakpoints) | Wenn eine XMLHttpRequest-URL ein Zeichenfolgenmuster enthält.  |  
-| [Ereignis-Listener](#event-listener-breakpoints) | Auf dem Code, der nach einem Ereignis ausgeführt wird, beispielsweise `click` , wird ausgeführt.  |  
-| [Ausnahme](#exception-breakpoints) | In der Codezeile, die eine abgefangene oder nicht abgefangene Ausnahme auslöst.  |  
-| [Funktion](#function-breakpoints) | Jedes Mal, wenn ein bestimmter Befehl, eine bestimmte Funktion oder Methode ausgeführt wird.  |  
+| [Codezeile](#line-of-code-breakpoints) | Für einen genauen Codebereich.  |  
+| [Bedingte Codezeile](#conditional-line-of-code-breakpoints) | Für einen genauen Codebereich, jedoch nur, wenn eine andere Bedingung true ist.  |  
+| [DOM](#dom-change-breakpoints) | Auf dem Code, der einen bestimmten DOM-Knoten ändert oder entfernt, oder die unteren Knoten.  |  
+| [XHR](#xhrfetch-breakpoints) | Wenn eine XHR-URL ein Zeichenfolgenmuster enthält.  |  
+| [Ereignislistener](#event-listener-breakpoints) | Auf dem Code, der nach einem Ereignis ausgeführt wird, z. B. `click` , wird ausgeführt.  |  
+| [Ausnahme](#exception-breakpoints) | In der Codezeile, die eine Ausnahme beim Abfangen oder Nichtfangen auslöst.  |  
+| [Funktion](#function-breakpoints) | Jedes Mal, wenn ein bestimmter Befehl, eine bestimmte Funktion oder methode ausgeführt wird.  |  
 
-## Haltepunkte für die Code Zeile  
+## <a name="line-of-code-breakpoints"></a>Zeilen-von-Code-Haltepunkte  
 
-Verwenden Sie einen Haltepunkt für die Codezeile, wenn Sie den genauen Codebereich kennen, den Sie untersuchen müssen.  DevTools wird immer angehalten, bevor diese Codezeile ausgeführt wird.  
+Verwenden Sie einen Codezeile-Haltepunkt, wenn Sie den genauen Codebereich kennen, den Sie untersuchen müssen.  DevTools hält immer an, bevor diese Codezeile ausgeführt wird.  
 
-So setzen Sie einen Code Haltepunkt in devtools:  
+So legen Sie einen Codezeile-Haltepunkt in DevTools ein:  
 
-1.  Klicken Sie auf die Registerkarte **Quellen** .  
-1.  Öffnen Sie die Datei, die die Codezeile enthält, für die Sie eine Unterbrechung durchführen möchten.  
+1.  Wählen Sie das **Tool Quellen** aus.  
+1.  Öffnen Sie die Datei, die die Codezeile enthält, in der Sie die Datei umbrechen möchten.  
 1.  Wechseln Sie zur Codezeile.  
-1.  Links neben der Codezeile befindet sich die Spalte "Zeile".  Klicken Sie darauf.  Neben der Spalte "Zeile Nummer" wird ein rotes Symbol angezeigt.  
+1.  Links von der Codezeile befindet sich die Zeilennummerspalte.  Wählen Sie sie aus.  Neben der Zeilennummerspalte wird ein rotes Symbol angezeigt.  
     
-    :::image type="complex" source="../media/javascript-sources-page-js-breakpoint-30.msft.png" alt-text="Ein Haltepunkt für eine Codezeile" lightbox="../media/javascript-sources-page-js-breakpoint-30.msft.png":::
-       Ein Haltepunkt für eine Codezeile  
+    :::image type="complex" source="../media/javascript-sources-page-js-breakpoint-30.msft.png" alt-text="Ein Codezeile-Haltepunkt" lightbox="../media/javascript-sources-page-js-breakpoint-30.msft.png":::
+       Ein Codezeile-Haltepunkt  
     :::image-end:::  
     
-### Haltepunkte für die Code Zeile im Code  
+### <a name="line-of-code-breakpoints-in-your-code"></a>Zeilen-von-Code-Haltepunkte in Ihrem Code  
 
-Führen `debugger` Sie die Methode aus dem Code aus, um in dieser Zeile anzuhalten.  Dies entspricht einem [Zeile-zu-Code-Haltepunkt](#line-of-code-breakpoints), mit der Ausnahme, dass der Haltepunkt im Code festgesetzt wird, nicht auf der devtools-Benutzeroberfläche.  
+Führen Sie `debugger` die -Methode aus Ihrem Code aus, um diese Zeile anzuhalten.  Dies entspricht einem [Zeilen-von-Code-Haltepunkt,](#line-of-code-breakpoints)mit der Ausnahme, dass der Haltepunkt in Ihrem Code festgelegt ist, nicht in der DevTools-Benutzeroberfläche.  
 
 ```javascript
 console.log('a');
@@ -69,114 +72,114 @@ debugger;
 console.log('c');
 ```  
 
-### Bedingte Zeile-für-Code-Haltepunkte  
+### <a name="conditional-line-of-code-breakpoints"></a>Bedingte Zeilen-von-Code-Haltepunkte  
 
-Verwenden Sie einen bedingten Code Haltepunkt, wenn Sie den genauen Codebereich kennen, den Sie untersuchen müssen, aber nur anhalten möchten, wenn eine andere Bedingung wahr ist.  
+Verwenden Sie einen bedingten Zeilen-von-Code-Haltepunkt, wenn Sie den genauen Codebereich kennen, den Sie untersuchen müssen, aber Sie möchten nur anhalten, wenn eine andere Bedingung wahr ist.  
 
-So setzen Sie einen bedingten Haltepunkt für eine bedingte Codezeile:  
+So legen Sie einen bedingten Codelinien-Haltepunkt ein:  
 
-1.  Klicken Sie auf die Registerkarte **Quellen** .  
-1.  Öffnen Sie die Datei, die die Codezeile enthält, für die Sie eine Unterbrechung durchführen möchten.  
+1.  Wählen Sie das **Tool Quellen** aus.  
+1.  Öffnen Sie die Datei, die die Codezeile enthält, in der Sie die Datei umbrechen möchten.  
 1.  Wechseln Sie zur Codezeile.  
-1.  Links neben der Codezeile befindet sich die Spalte "Zeile".  Klicken Sie mit der rechten Maustaste auf die Leitungsnummer.  
-1.  Wählen Sie **bedingter Haltepunkt hinzufügen**aus.  Unterhalb der Codezeile wird ein Dialogfeld angezeigt.  
+1.  Links von der Codezeile befindet sich die Zeilennummerspalte.  Zeigen Sie auf die Zeilennummer, und öffnen Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste\).  
+1.  Wählen **Sie Bedingten Haltepunkt hinzufügen aus.**  Unterhalb der Codezeile wird ein Dialogfeld angezeigt.  
 1.  Geben Sie Ihre Bedingung in das Dialogfeld ein.  
-1.  Wählen Sie aus `Enter` , um den Haltepunkt zu aktivieren.  Ein Symbol neben der Spalte "Zeile"  
+1.  Wählen `Enter` Sie diese Option aus, um den Haltepunkt zu aktivieren.  Ein Symbol neben der Zeilennummerspalte.  
     
-    :::image type="complex" source="../media/javascript-sources-page-js-conditional-breakpoint.msft.png" alt-text="Ein Haltepunkt für eine Codezeile" lightbox="../media/javascript-sources-page-js-conditional-breakpoint.msft.png":::
-       Ein bedingter Zeile-Code-Haltepunkt  
+    :::image type="complex" source="../media/javascript-sources-page-js-conditional-breakpoint.msft.png" alt-text="Ein bedingter Zeilen-von-Code-Haltepunkt" lightbox="../media/javascript-sources-page-js-conditional-breakpoint.msft.png":::
+       Ein bedingter Zeilen-von-Code-Haltepunkt  
     :::image-end:::  
     
-### Verwalten von Code Haltepunkten  
+### <a name="manage-line-of-code-breakpoints"></a>Verwalten von Zeilen-von-Code-Haltepunkten  
 
-Verwenden Sie den Bereich **Haltepunkte** , um Code Haltepunkte an einer einzelnen Position zu deaktivieren oder zu entfernen.  
+Verwenden Sie **den Bereich Haltepunkte,** um Codelinien-Haltepunkte an einem einzigen Speicherort zu deaktivieren oder zu entfernen.  
 
-:::image type="complex" source="../media/javascript-sources-page-js-breakpoints-16-33.msft.png" alt-text="Ein Haltepunkt für eine Codezeile" lightbox="../media/javascript-sources-page-js-breakpoints-16-33.msft.png":::
-   Der **Haltepunkt** -Panel  
+:::image type="complex" source="../media/javascript-sources-page-js-breakpoints-16-33.msft.png" alt-text="The Breakpoints panel" lightbox="../media/javascript-sources-page-js-breakpoints-16-33.msft.png":::
+   The **Breakpoints** panel  
 :::image-end:::  
 
 *   Aktivieren Sie das Kontrollkästchen neben einem Eintrag, um diesen Haltepunkt zu deaktivieren.  
-*   Klicken Sie mit der rechten Maustaste auf einen Eintrag, um diesen Haltepunkt zu entfernen.  
-*   Klicken Sie mit der rechten Maustaste auf eine beliebige Stelle im Bereich **Haltepunkte** , um alle Haltepunkte zu deaktivieren, alle Haltepunkte zu deaktivieren oder alle Haltepunkte zu entfernen.  Das Deaktivieren aller Haltepunkte entspricht der Deaktivierung der einzelnen Haltepunkte.  Durch die Deaktivierung aller Haltepunkte wird devtools angewiesen, alle Zeile-zu-Code-Haltepunkte zu ignorieren, aber auch den aktivierten Zustand beizubehalten, damit sich jeder in demselben Zustand wie zuvor befindet, wenn Sie ihn wieder aktivieren.  
+*   Zeigen Sie auf einen Eintrag, und öffnen Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste\), um diesen Haltepunkt zu entfernen.  
+*   Zeigen Sie **** auf eine beliebige Stelle im Bereich Haltepunkte, und öffnen Sie das Kontextmenü \(mit der rechten Maustaste\), um alle Haltepunkte zu deaktivieren, alle Haltepunkte zu deaktivieren oder alle Haltepunkte zu entfernen.  Das Deaktivieren aller Haltepunkte entspricht dem Deaktivieren der einzelnen Haltepunkte.  Durch das Deaktivieren aller Haltepunkte wird DevTools angewiesen, alle Zeilen-von-Code-Haltepunkte zu ignorieren, aber auch den aktivierten Zustand so zu verwalten, dass sich alle im gleichen Zustand befinden wie zuvor, wenn Sie die einzelnen Haltepunkte reaktivieren.  
     
-    :::image type="complex" source="../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png" alt-text="Ein Haltepunkt für eine Codezeile" lightbox="../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png":::
-       Deaktivierte Haltepunkte im Bereich " **Haltepunkte** "  
+    :::image type="complex" source="../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png" alt-text="Deaktivierte Haltepunkte im Bereich Haltepunkte" lightbox="../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png":::
+       Deaktivierte Haltepunkte im **Bereich Haltepunkte**  
     :::image-end:::  
     
-## Dom-Änderungs Haltepunkte  
+## <a name="dom-change-breakpoints"></a>DOM-Änderungs-Haltepunkte  
 
-Verwenden Sie einen Dom-Änderungs Haltepunkt, wenn Sie den Code anhalten möchten, durch den ein DOM-Knoten oder die untergeordneten Elemente geändert werden.  
+Verwenden Sie einen DOM-Änderungsbruchpunkt, wenn Sie den Code anhalten möchten, der einen DOM-Knoten oder die unteren Knoten ändert.  
 
-So setzen Sie einen Dom-Änderungs Haltepunkt:  
+So legen Sie einen DOM-Änderungs-Haltepunkt ein:  
 
-1.  Klicken Sie auf die Registerkarte **Elemente** .  
-1.  Wechseln Sie zu dem Element, für das Sie den Haltepunkt festlegen möchten.  
-1.  Klicken Sie mit der rechten Maustaste auf das Element.  
-1.  Zeigen Sie **mit der Maus auf Umbruch**, und wählen Sie dann **Strukturänderungen**, **Attributänderungen**oder **Knoten Entfernung**aus.  
+1.  Wählen Sie das **Elementtool** aus.  
+1.  Wechseln Sie zum Element, für das Sie den Haltepunkt festlegen möchten.  
+1.  Zeigen Sie auf das Element, und öffnen Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste\).  
+1.  Zeigen Sie **auf Unterbrechung auf**, und wählen Sie dann **Subtree-Änderungen,** **Attributänderungen**oder **Knotenentfernung aus.**  
     
-    :::image type="complex" source="../media/javascript-elements-break-on-subtree-modifications.msft.png" alt-text="Ein Haltepunkt für eine Codezeile" lightbox="../media/javascript-elements-break-on-subtree-modifications.msft.png":::
-       Das Kontextmenü zum Erstellen eines DOM-Änderungs Haltepunkts  
+    :::image type="complex" source="../media/javascript-elements-break-on-subtree-modifications.msft.png" alt-text="Das Kontextmenü zum Erstellen eines DOM-Änderungs-Haltepunkts" lightbox="../media/javascript-elements-break-on-subtree-modifications.msft.png":::
+       Das Kontextmenü zum Erstellen eines DOM-Änderungs-Haltepunkts  
     :::image-end:::  
     
-### Typen von Dom-Änderungs Haltepunkten  
+### <a name="types-of-dom-change-breakpoints"></a>Typen von DOM-Änderungs-Haltepunkten  
 
-*   Teil **Strukturänderungen**.  Wird ausgelöst, wenn ein untergeordnetes Element des aktuell ausgewählten Knotens entfernt oder hinzugefügt oder der Inhalt eines untergeordneten Elements geändert wird.  Wird nicht für Änderungen an einem Attribut des untergeordneten Knotens oder für Änderungen am aktuell ausgewählten Knoten ausgelöst.  
-*   Attribut **Änderungen**: wird ausgelöst, wenn ein Attribut auf dem aktuell ausgewählten Knoten hinzugefügt oder entfernt wird oder wenn sich ein Attributwert ändert.  
-*   **Knoten Entfernung**: wird ausgelöst, wenn der aktuell ausgewählte Knoten entfernt wird.  
+*   **Änderungen an der Unterstruktur**.  Wird ausgelöst, wenn ein untergeordnetes Element des aktuell ausgewählten Knotens entfernt oder hinzugefügt wird oder der Inhalt eines untergeordneten Knotens geändert wird.  Wird nicht bei Änderungen des untergeordneten Knotenattributs oder bei Änderungen am aktuell ausgewählten Knoten ausgelöst.  
+*   **Attributeänderungen:** Wird ausgelöst, wenn ein Attribut auf dem aktuell ausgewählten Knoten hinzugefügt oder entfernt wird oder wenn sich ein Attributwert ändert.  
+*   **Knotenentfernung**: Wird ausgelöst, wenn der aktuell ausgewählte Knoten entfernt wird.  
     
-## XMLHttpRequest/FETCH-Haltepunkte  
+## <a name="xhrfetch-breakpoints"></a>XHR/Fetch-Haltepunkte  
 
-Verwenden Sie einen XMLHttpRequest-Haltepunkt, wenn Sie unterbrechen möchten, wenn die Anforderungs-URL eines XMLHttpRequest eine angegebene Zeichenfolge enthält.  DevTools wird in der Codezeile angehalten, in der die XMLHttpRequest die `send()` Methode ausführt.  
+Verwenden Sie einen XHR-Haltepunkt, wenn Sie den Wert ändern möchten, wenn die Anforderungs-URL einer XHR eine angegebene Zeichenfolge enthält.  DevTools hält in der Codezeile an, in der die XHR die Methode `send()` ausgeführt wird.  
 
 > [!NOTE]
-> Dieses Feature funktioniert auch mit [Fetch-API-][MDNFetchApi] Anforderungen.  
+> Dieses Feature funktioniert auch mit [Fetch-API-Anforderungen.][MDNFetchApi]  
 
-Wenn dies hilfreich ist, können Sie beispielsweise feststellen, dass die Seite eine falsche URL anfordert, und Sie möchten schnell den AJAX-oder Fetch-Quellcode finden, der die falsche Anforderung verursacht.  
+Ein Beispiel dafür, wann dies hilfreich ist, ist, wenn Ihre Webseite eine falsche URL anfordert und Sie schnell den AJAX- oder Fetch-Quellcode finden möchten, der die falsche Anforderung verursacht.  
 
-So setzen Sie einen XMLHttpRequest-Haltepunkt:  
+So legen Sie einen XHR-Haltepunkt ein:  
 
-1.  Klicken Sie auf die Registerkarte **Quellen** .  
-1.  Erweitern Sie den Bereich **XMLHttpRequest-Haltepunkte** .  
-1.  Wählen Sie **Haltepunkt hinzufügen**aus.  
-1.  Geben Sie die Zeichenfolge ein, die Sie aufheben möchten.  DevTools wird angehalten, wenn diese Zeichenfolge an einer beliebigen Stelle in einer XMLHttpRequest-Anforderungs-URL vorhanden ist.  
-1.  Wählen Sie aus `Enter` , um zu bestätigen.  
+1.  Wählen Sie das **Tool Quellen** aus.  
+1.  Erweitern Sie **den XHR-Haltepunktbereich.**  
+1.  Wählen **Sie Haltepunkt hinzufügen aus.**  
+1.  Geben Sie die Zeichenfolge ein, die Sie umbrechen möchten.  DevTools hält an, wenn diese Zeichenfolge an einer beliebigen Stelle in einer XHR-Anforderungs-URL vorhanden ist.  
+1.  Wählen `Enter` Sie aus, um dies zu bestätigen.  
     
-    :::image type="complex" source="../media/javascript-sources-page-js-xhr-fetch-breakpoints-org.msft.png" alt-text="Ein Haltepunkt für eine Codezeile" lightbox="../media/javascript-sources-page-js-xhr-fetch-breakpoints-org.msft.png":::
-       Erstellen eines XMLHttpRequest-Haltepunkts  
+    :::image type="complex" source="../media/javascript-sources-page-js-xhr-fetch-breakpoints-org.msft.png" alt-text="Erstellen eines XHR-Haltepunkts" lightbox="../media/javascript-sources-page-js-xhr-fetch-breakpoints-org.msft.png":::
+       Erstellen eines XHR-Haltepunkts  
     :::image-end:::  
     
-## Ereignis-Listener-Haltepunkte   
+## <a name="event-listener-breakpoints"></a>Haltepunkte für Ereignislistener  
 
-Verwenden Sie Ereignis-Listener-Haltepunkte, wenn Sie den Ereignislistener-Code anhalten möchten, der nach dem Auslösen eines Ereignisses ausgeführt wird.  Sie können bestimmte Ereignisse, beispielsweise `click` oder Kategorien von Ereignissen, wie alle Mausereignisse auswählen.  
+Verwenden Sie Ereignislistener-Haltepunkte, wenn Sie den Ereignislistenercode anhalten möchten, der nach dem Ausgelöst eines Ereignisses ausgeführt wird.  Sie können bestimmte Ereignisse auswählen, z. B. , oder Kategorien von Ereignissen, z. B. `click` alle Mausereignisse.  
 
-1.  Klicken Sie auf die Registerkarte **Quellen** .  
-1.  Erweitern Sie den Bereich **Ereignislistener-Haltepunkte** .  DevTools zeigt eine Liste der Ereigniskategorien, wie etwa **Animationen**, an.  
-1.  Überprüfen Sie eine dieser Kategorien, um zu pausieren, wenn ein Ereignis aus dieser Kategorie ausgelöst wird, oder erweitern Sie die Kategorie, und überprüfen Sie ein bestimmtes Ereignis.  
+1.  Wählen Sie das **Tool Quellen** aus.  
+1.  Erweitern Sie **den Bereich Ereignislistener-Haltepunkte.**  DevTools zeigt eine Liste der Ereigniskategorien an, z. B. **Animation**.  
+1.  Überprüfen Sie eine dieser Kategorien, um zu unterbrechen, wenn ein Ereignis aus dieser Kategorie ausgelöst wird, oder erweitern Sie die Kategorie, und überprüfen Sie ein bestimmtes Ereignis.  
     
-    :::image type="complex" source="../media/javascript-sources-page-js-event-listener-breakpoints-device-deviceorientation.msft.png" alt-text="Ein Haltepunkt für eine Codezeile" lightbox="../media/javascript-sources-page-js-event-listener-breakpoints-device-deviceorientation.msft.png":::
-       Erstellen eines Ereignis-Listener-Haltepunkts  
+    :::image type="complex" source="../media/javascript-sources-page-js-event-listener-breakpoints-device-deviceorientation.msft.png" alt-text="Erstellen eines Haltepunkts für Ereignislistener" lightbox="../media/javascript-sources-page-js-event-listener-breakpoints-device-deviceorientation.msft.png":::
+       Erstellen eines Haltepunkts für Ereignislistener  
     :::image-end:::  
     
-## Ausnahme Haltepunkte  
+## <a name="exception-breakpoints"></a>Ausnahme-Haltepunkte  
 
-Verwenden Sie Ausnahme Haltepunkte, wenn Sie in der Codezeile anhalten möchten, die eine abgefangene oder nicht abgefangene Ausnahme auslöst.  
+Verwenden Sie Ausnahme-Haltepunkte, wenn Sie die Codezeile anhalten möchten, die eine Ausnahme beim Abfangen oder Nichtfangen auslöst.  
 
-1.  Klicken Sie auf die Registerkarte **Quellen** .  
-1.  Wählen Sie **bei Ausnahmen anhalten** \ ( ![ bei Ausnahmen anhalten ][ImagePauseOnExceptionsIcon] \) aus.  Das Symbol wird blau, wenn es aktiviert ist.  
+1.  Wählen Sie das **Tool Quellen** aus.  
+1.  Wählen **Sie Pause für Ausnahmen** \( Pause für Ausnahmen ![ ][ImagePauseOnExceptionsIcon] \).  Das Symbol wird blau, wenn es aktiviert ist.  
     
-    :::image type="complex" source="../media/javascript-sources-page-js-pause-on-exceptions.msft.png" alt-text="Ein Haltepunkt für eine Codezeile" lightbox="../media/javascript-sources-page-js-pause-on-exceptions.msft.png":::
-       Schaltfläche " **auf Ausnahmen pausieren** "  
+    :::image type="complex" source="../media/javascript-sources-page-js-pause-on-exceptions.msft.png" alt-text="Die Schaltfläche Für Ausnahmen anhalten" lightbox="../media/javascript-sources-page-js-pause-on-exceptions.msft.png":::
+       Die **Schaltfläche Für Ausnahmen anhalten**  
     :::image-end:::  
     
-1.  **Optional**.  Aktivieren Sie das Kontrollkästchen **auf abgefangene Ausnahmen anhalten** , wenn Sie zusätzlich zu den nicht abgefangenen Ausnahmen auch auf abgefangene Ausnahmen anhalten möchten.  
+1.  **Optional**.  Aktivieren Sie das Kontrollkästchen Bei **erwischten Ausnahmen** anhalten, wenn Sie zusätzlich zu nicht abgefangenen Ausnahmen auch bei abgefangenen Ausnahmen anhalten möchten.  
     
-    :::image type="complex" source="../media/javascript-sources-page-js-paused-on-exception.msft.png" alt-text="Ein Haltepunkt für eine Codezeile" lightbox="../media/javascript-sources-page-js-paused-on-exception.msft.png":::
-       Bei einer nicht abgefangenen Ausnahme angehalten  
+    :::image type="complex" source="../media/javascript-sources-page-js-paused-on-exception.msft.png" alt-text="Angehalten für eine nicht abgefangene Ausnahme" lightbox="../media/javascript-sources-page-js-paused-on-exception.msft.png":::
+       Angehalten für eine nicht abgefangene Ausnahme  
     :::image-end:::  
     
-## Funktionshaltepunkte  
+## <a name="function-breakpoints"></a>Haltepunkte für Funktionen  
 
-Führen Sie die Methode aus, `debug(method)` wobei `method` der Befehl, die Funktion oder die Methode, die Sie debuggen möchten, ist, wenn Sie anhalten möchten, wenn eine bestimmte Funktion ausgeführt wird.  Sie können `debug()` in Ihren Code einfügen (wie eine `console.log()` Anweisung) oder die Methode über die devtools-Konsole ausführen.  `debug()` entspricht dem Festlegen eines [Haltepunkts für die Code Zeile](#line-of-code-breakpoints) in der ersten Zeile der Funktion.  
+Führen Sie die -Methode aus, wobei der Befehl, die Funktion oder die Methode ist, die Sie debuggen möchten, wenn Sie anhalten möchten, wenn eine bestimmte `debug(method)` `method` Funktion ausgeführt wird.  Sie können in Ihren Code (wie eine Anweisung) einfügen oder die Methode über die `debug()` `console.log()` DevTools-Konsole ausführen.  `debug()` entspricht dem Festlegen eines [Codepunkts](#line-of-code-breakpoints) in der ersten Zeile der Funktion.  
 
 ```javascript
 function sum(a, b) {
@@ -187,9 +190,9 @@ debug(sum); // Pass the function object, not a string.
 sum();
 ```  
 
-### Sicherstellen, dass sich die Zielfunktion im Bereich befindet  
+### <a name="make-sure-the-target-function-is-in-scope"></a>Sicherstellen, dass sich die Zielfunktion im Bereich befindet  
 
-DevTools löst a `ReferenceError` aus, wenn sich die zu debuggende Funktion nicht im Bereich befindet.  
+DevTools gibt eine `ReferenceError` aus, wenn sich die funktion, die Sie debuggen möchten, nicht im Bereich befindet.  
 
 ```javascript
 (function () {
@@ -205,13 +208,13 @@ DevTools löst a `ReferenceError` aus, wenn sich die zu debuggende Funktion nich
 debug(hey); // This does not work.  hey() is out of scope.
 ```  
 
-Die Sicherstellung, dass die Zielfunktion im Bereich liegt, ist schwierig, wenn Sie die `debug()` Methode über die devtools-Konsole ausführen.  Hier ist eine Strategie:  
+Wenn Sie die Methode über die DevTools-Konsole ausführen, ist es schwierig sicherzustellen, dass sich die Zielfunktion im Bereich `debug()` befindet.  Hier ist eine Strategie:  
 
-1.  Setzen Sie einen [Haltepunkt für die Codezeile](#line-of-code-breakpoints) an einer beliebigen Stelle, an der sich die Funktion im Bereich befindet.
-1.  Auslösen des Haltepunkts  
-1.  Führen `debug()` Sie die Methode in der devtools-Konsole aus, während der Code weiterhin auf dem Haltepunkt für die Code Zeile angehalten wird.  
+1.  Legen Sie [einen Codezeile-Haltepunkt](#line-of-code-breakpoints) an einer Stelle an, an der sich die Funktion im Bereich befindet.
+1.  Lösen Sie den Haltepunkt aus.  
+1.  Führen Sie die Methode in der DevTools-Konsole aus, während der Code weiterhin an Ihrem `debug()` Codezeile-Haltepunkt angehalten wird.  
     
-## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -221,15 +224,15 @@ Die Sicherstellung, dass die Zielfunktion im Bereich liegt, ist schwierig, wenn 
 
 <!-- links -->  
 
-[DevtoolsJavascriptIndex]: index.md "Erste Schritte mit dem Debuggen von JavaScript in Microsoft Edge devtools | Microsoft docs"  
+[DevtoolsJavascriptIndex]: index.md "Erste Schritte mit dem Debuggen von JavaScript in Microsoft Edge DevTools | Microsoft Docs"  
 
-[MDNFetchApi]: https://developer.mozilla.org/docs/Web/API/Fetch_API "FETCH-API | MDN"  
+[MDNFetchApi]: https://developer.mozilla.org/docs/Web/API/Fetch_API "Abrufen von API-| MDN"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
-> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/javascript/breakpoints) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
+> Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
+> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/javascript/breakpoints) und wird von [Kayce Basken][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) verfasst.  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

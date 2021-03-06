@@ -1,92 +1,92 @@
 ---
-description: IE-Modus und Microsoft Edge (Chrom) devtools
-title: Internet Explorer-Modus und DevTools
+description: IE-Modus und Microsoft Edge (Chromium) DevTools
+title: Internet Explorer-Modus und devTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools, ie11, Internet Explorer 11, IE-Modus
-ms.openlocfilehash: c88da78e073a75a664561aba899ca5c8ada78477
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+keywords: microsoft edge, web development, f12 tools, devtools, ie11, internet explorer 11, ie mode
+ms.openlocfilehash: e65869cd88b449dcde0aec25c77df27f99b78f8d
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11233603"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398602"
 ---
-# Internet Explorer-Modus und DevTools  
+# <a name="internet-explorer-mode-and-the-devtools"></a>Internet Explorer-Modus und devTools  
 
-In diesem Artikel wird beschrieben, wie der Internet Explorer-Modus \ (IE-Modus \) in den Microsoft Edge \ (Chromium \) devtools integriert ist.  
+In diesem Artikel wird beschrieben, wie der Internet Explorer-Modus \(IE-Modus\) in microsoft Edge \(Chromium\) DevTools integriert wird.  
 
-## Grundlegendes zum IE-Modus  
+## <a name="understanding-ie-mode"></a>Grundlegendes zum IE-Modus  
 
-Mit dem IE-Modus können Unternehmen eine Liste der Websites angeben, die nur in Internet Explorer 11 funktionieren.  Wenn Sie zu diesen Websites in Microsoft Edge (Chrom \) navigieren, wird eine Instanz von Internet Explorer 11 ausgeführt, und die Website wird auf einer Registerkarte gerendert.  Mit dieser Funktion können Unternehmen die Kompatibilität mit Technologien verwalten, die derzeit nicht mit modernen Webbrowsern kompatibel sind.  Unterstützung für die folgenden Technologien ist im IE-Modus enthalten.  
+Im IE-Modus können Unternehmen eine Liste der Websites angeben, die nur in Internet Explorer 11 funktionieren.  Wenn Sie zu diesen Websites in Microsoft Edge \(Chromium\) navigieren, wird eine Instanz von Internet Explorer 11 ausgeführt und die Website auf einer Registerkarte gerendert.  Mit der Funktionalität können Unternehmen die Kompatibilität mit Technologien verwalten, die derzeit nicht mit modernen Webbrowsern kompatibel sind.  Unterstützung für die folgenden Technologien ist im IE-Modus enthalten.  
 
 *   IE-Dokumentmodi  
 *   ActiveX-Steuerelemente  
 *   andere Legacykomponenten  
 
-Im IE-Modus basiert der Renderingprozess auf Internet Explorer 11.  Der Microsoft Edge-Prozess-Manager (Chrom) verarbeitet die Lebensdauer des Rendering-Prozesses.  Sie ist auf die Lebensdauer der Registerkarte für eine bestimmte Website beschränkt \ (oder App \).  Wenn eine Registerkarte im IE-Modus gerendert wird, wird in der Adressleiste für die jeweilige Registerkarte ein Badge angezeigt.  
+Im IE-Modus basiert der Rendervorgang auf Internet Explorer 11.  Der Microsoft Edge \(Chromium\)-Prozess-Manager übernimmt die Lebensdauer des Renderingprozesses.  Sie ist auf die Lebensdauer der Registerkarte für eine bestimmte Website \(oder App\) beschränkt.  Wenn eine Registerkarte im IE-Modus gerendert wird, wird in der Adressleiste für die spezifische Registerkarte ein Signal angezeigt.  
 
-:::image type="complex" source="../media/ie-mode-badge.msft.png" alt-text="IE-Modus-Abzeichen in der Adressleiste" lightbox="../media/ie-mode-badge.msft.png":::
-   IE-Modus-Abzeichen in der Adressleiste  
+:::image type="complex" source="../media/ie-mode-badge.msft.png" alt-text="IE-Modus-Signal in der Adressleiste" lightbox="../media/ie-mode-badge.msft.png":::
+   IE-Modus-Signal in der Adressleiste  
 :::image-end:::  
 
-Der IE-Modus ist derzeit unter Windows 10, Version 1903, verfügbar (Mai 2019-Update \), wird aber in Kürze für alle unterstützten Windows-Plattformen bereitgestellt.  
+Der IE-Modus ist derzeit unter Windows 10 Version 1903 \(Mai 2019 Update\) verfügbar, wird aber bald für alle unterstützten Windows-Plattformen verfügbar sein.  
 
-## Starten des devtools auf einer Registerkarte im IE-Modus  
+## <a name="launching-the-devtools-on-a-tab-in-ie-mode"></a>Starten der DevTools auf einer Registerkarte im IE-Modus  
 
-Wenn Sie versuchen, den Dokumentmodus einer Website im IE-Modus anzuzeigen, wählen Sie das Abzeichen in der Adressleiste aus.  
+Wenn Sie versuchen, den Dokumentmodus einer Website im IE-Modus zu sehen, wählen Sie das Signal in der Adressleiste aus.  
 
 :::image type="complex" source="../media/ie-mode-badge-doc-mode.msft.png" alt-text="Anzeigen des Dokumentmodus mithilfe des IE-Modus-Badges" lightbox="../media/ie-mode-badge-doc-mode.msft.png":::
    Anzeigen des Dokumentmodus mithilfe des IE-Modus-Badges  
 :::image-end:::  
 
-Wenn eine Registerkarte den IE-Modus verwendet, funktionieren die devtools nicht, und die folgenden Bedingungen treten auf.
+Wenn eine Registerkarte den IE-Modus verwendet, funktionieren die DevTools nicht, und die folgenden Bedingungen treten auf.
 
-*   Wenn Sie auswählen `F12` oder auswählen `Ctrl` + `Shift` + `I` , wird eine leere Instanz des Microsoft Edge \ (Chrom \) devtools gestartet, und die folgende Meldung wird angezeigt.  
+*   Wenn Sie auswählen oder auswählen, wird die folgende Meldung angezeigt, wenn eine leere Instanz von `F12` `Ctrl` + `Shift` + `I` Microsoft Edge \(Chromium\) DevTools gestartet wird.  
     
     ```text
     Developer Tools are not available in Internet Explorer mode.  To debug the page, open it in Internet Explorer 11.
     ```  
     
-*   Wenn Sie ein Kontextmenü öffnen (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie **Quelle anzeigen**aus, wird der Editor gestartet.  
-*   Wenn Sie ein Kontextmenü öffnen \ (mit der rechten Maustaste auf \), wird das **Inspect-Element** nicht angezeigt.  
+*   Wenn Sie ein kontextbezogenes Menü \(rechtsklicken\) öffnen und Quelle **anzeigen**auswählen, wird Editor gestartet.  
+*   Wenn Sie ein kontextbezogenes Menü \(mit der rechten Maustaste klicken\) öffnen, ist das **Inspect-Element** nicht sichtbar.  
 
-Der Grund dafür, dass eine Reihe von Tools innerhalb des devtools \ (wie **Netzwerk** -und **Leistungs** Tools \) nicht funktioniert, ist die Rendering-Engine, die im IE-Modus von Chrom zu Internet Explorer 11 wechselt.  Wenn Sie Feedback bereitstellen möchten, navigieren Sie zum [Kontakt mit dem Microsoft Edge devtools-Team](#getting-in-touch-with-the-microsoft-edge-devtools-team).  
+Der Grund, warum eine Reihe der Tools innerhalb **** der **** DevTools \(wie die Netzwerk- und Leistungstools\) nicht funktioniert, ist der Wechsel des Renderingmoduls von Chromium zu Internet Explorer 11 im IE-Modus.  Um Feedback zu geben, navigieren Sie zu Kontakt mit dem [Microsoft Edge DevTools-Team](#getting-in-touch-with-the-microsoft-edge-devtools-team).  
 
 :::image type="complex" source="../media/ie-mode-devtools.msft.png" alt-text="DevTools im IE-Modus gestartet" lightbox="../media/ie-mode-devtools.msft.png":::
    DevTools im IE-Modus gestartet  
 :::image-end:::  
 
-Führen Sie die folgenden Schritte aus, um Ihre Internet Explorer 11-basierte Website \ (oder App \) in Internet Explorer 11 und dem IE-Modus zu testen.  
+Führen Sie die folgenden Schritte aus, um Ihre Internet Explorer 11-basierte Website \(oder App\) im Internet Explorer 11- und IE-Modus zu testen.  
 
 1.  Öffnen Sie Internet Explorer 11.  
-    *   Suchen Sie unter Windows 10 die Verknüpfung für Internet Explorer 11.
+    *   Suchen Sie unter Windows 10 nach der Verknüpfung für Internet Explorer 11.
         1.  **Startmenü**  >  **Windows-Zubehör**  >  **Internet Explorer 11**.  
     *   Suchen Sie unter Windows 7 nach Internet Explorer 11.
         1.  **Startmenü**  >  **Internet Explorer 11**.  
 1.  Öffnen Sie in Internet Explorer 11 dieselbe Webseite.  
-1.  Starten Sie die Internet Explorer-devtools.  
-    *   Wählen Sie aus `F12` .  
-    *   Zeigen Sie auf eine beliebige Stelle, öffnen Sie ein Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie **Element prüfen**aus.  Weitere Informationen zur Verwendung dieser Tools finden Sie unter [Verwenden der F12-Entwicklertools][PreviousVersionsWindowsInternetExplorerDeveloperSamplesbg182326].  
+1.  Starten Sie Internet Explorer DevTools.  
+    *   Wählen Sie `F12` aus.  
+    *   Zeigen Sie auf eine beliebige Stelle, öffnen Sie ein kontextbezogenes Menü \(klicken Sie mit der rechten Maustaste\), und wählen Sie **Inspect-Element aus.**  Weitere Informationen zur Verwendung dieser Tools finden Sie unter [Verwenden der F12-Entwicklertools.][PreviousVersionsWindowsInternetExplorerDeveloperSamplesbg182326]  
 
-## Remote Debuggen und IE-Modus  
+## <a name="remote-debugging-and-ie-mode"></a>Remotedebuding und IE-Modus  
 
-Starten Sie Microsoft Edge \ (Chromium \) mit aktiviertem Remotedebuggen über die Befehlszeilenschnittstelle.  Visual Studio, Visual Studio-Code und andere Entwicklungstools führen in der Regel einen Befehl aus, um Microsoft Edge zu starten.  Mit dem folgenden Befehl wird Microsoft Edge gestartet, wobei der Remote Debugging-Port auf eingestellt ist `9222` .  
+Starten Sie Microsoft Edge \(Chromium\) mit aktiviertem Remotedebu debugging über die Befehlszeilenschnittstelle.  Microsoft Visual Studio, Microsoft Visual Studio Code und andere Entwicklungstools führen in der Regel einen Befehl aus, um Microsoft Edge zu starten.  Mit dem folgenden Befehl wird Microsoft Edge gestartet, und der Remotedebugport ist auf `9222` festgelegt.  
 
 ```shell
 start msedge --remote-debugging-port=9222
 ```  
 
-Nachdem Sie Microsoft Edge \ (Chrom \) mithilfe eines Befehlszeilenarguments gestartet haben, ist der IE-Modus nicht verfügbar.  Sie können weiterhin zu Websites \ (oder apps \) navigieren, die andernfalls im IE-Modus angezeigt werden.  Der Inhalt der Website \ (oder App \) wird mit Chrom und nicht mit Internet Explorer 11 gerendert.  Es wird davon ausgegangen, dass die Teile der Webseiten, die auf IE11 basieren, wie etwa ActiveX-Steuerelemente, nicht richtig gerendert werden.  Das IE-Modus-Abzeichen wird in der Adressleiste nicht angezeigt.  
+Nachdem Sie Microsoft Edge \(Chromium\) mithilfe eines Befehlszeilenarguments gestartet haben, ist der IE-Modus nicht verfügbar.  Sie können weiterhin zu Websites \(oder Apps\) navigieren, die andernfalls im IE-Modus angezeigt werden.  Der Inhalt der Website \(oder App\) wird mit Chromium gerendert, nicht mit Internet Explorer 11.  Erwarten Sie, dass die Teile der Webseiten, die auf IE11 beruhen, z. B. ActiveX Steuerelemente, nicht ordnungsgemäß gerendert werden.  Das IE-Modus-Signal wird nicht in der Adressleiste angezeigt.  
 
-Der IE-Modus bleibt erst verfügbar, wenn Sie Microsoft Edge (Chrom) vollständig schließen und neu starten.  
+Der IE-Modus ist erst verfügbar, wenn Sie Microsoft Edge \(Chromium\) vollständig schließen und neu starten.  
 
-## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[PreviousVersionsWindowsInternetExplorerDeveloperSamplesbg182326]: /previous-versions/windows/internet-explorer/ie-developer/samples/bg182326(v%3dvs.85) "Verwenden der F12-Entwicklertools | Microsoft docs"  
+[PreviousVersionsWindowsInternetExplorerDeveloperSamplesbg182326]: /previous-versions/windows/internet-explorer/ie-developer/samples/bg182326(v%3dvs.85) "Verwenden der F12-Entwicklertools | Microsoft Docs"  

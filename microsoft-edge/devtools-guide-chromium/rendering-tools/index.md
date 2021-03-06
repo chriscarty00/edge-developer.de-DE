@@ -1,18 +1,18 @@
 ---
-description: Benutzer erwartet interaktive und glatte Seiten.  Jede Phase in der pixelpipeline stellt eine Möglichkeit dar, Jank einzuführen.  Erfahren Sie mehr über Tools und Strategien, um häufige Probleme zu erkennen und zu beheben, die die Runtime-Leistung verlangsamen.
+description: Benutzer erwarten interaktive und flüssige Seiten.  Jede Phase in der Pixelpipeline stellt eine Möglichkeit dar, jank einzuführen.  Erfahren Sie mehr über Tools und Strategien zum Identifizieren und Beheben gängiger Probleme, die die Laufzeitleistung verlangsamen.
 title: Analysieren der Laufzeitleistung
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/17/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: d42ac5e7a7456971d48198a1f362eebe7156bbce
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 646db5b2e88e33b109e5eb3ae01a296bf3a4fb46
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230607"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398000"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -28,46 +28,46 @@ ms.locfileid: "11230607"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Analysieren der Laufzeitleistung 
+# <a name="analyze-runtime-performance"></a>Analysieren der Laufzeitleistung  
 
-Benutzer erwartet interaktive und glatte Seiten.  Jede Phase in der pixelpipeline stellt eine Möglichkeit dar, Jank einzuführen.  Erfahren Sie mehr über Tools und Strategien, um häufige Probleme zu erkennen und zu beheben, die die Runtime-Leistung verlangsamen.  
+Benutzer erwarten interaktive und flüssige Seiten.  Jede Phase in der Pixelpipeline stellt eine Möglichkeit dar, jank einzuführen.  Erfahren Sie mehr über Tools und Strategien zum Identifizieren und Beheben gängiger Probleme, die die Laufzeitleistung verlangsamen.  
 
-### Zusammenfassung  
+### <a name="summary"></a>Zusammenfassung  
 
-*   Schreiben Sie keine JavaScript-Daten, die den Browser zwingen, das Layout neu zu berechnen.  Trennen Sie die Lese-und Schreibfunktionen, und führen Sie zuerst Lesevorgänge aus.  
-*   Verkomplizieren Sie Ihre CSS nicht.  Verwenden Sie nicht so viel CSS, damit Ihre CSS-Auswahl einfach ist.  
-*   Vermeiden Sie das Layout so weit wie möglich.  Wählen Sie CSS aus, das Layout überhaupt nicht auslöst.  
-*   Das zeichnen kann mehr Zeit als alle anderen Rendering-Aktivitäten beanspruchen.  Achten Sie auf Farb Engpässe.  
+*   Schreiben Sie kein JavaScript, das den Browser zwingt, das Layout neu zu berechnen.  Trennen Sie Lese- und Schreibfunktionen, und führen Sie zuerst Lesezugriffe aus.  
+*   Komplizieren Sie Ihre CSS nicht überkompliziert.  Verwenden Sie weniger CSS, und halten Sie Ihre CSS-Selektoren einfach.  
+*   Vermeiden Sie das Layout so weit wie möglich.  Wählen Sie CSS aus, das das Layout überhaupt nicht auslöst.  
+*   Das Malen kann länger dauern als jede andere Renderingaktivität.  Achten Sie auf Farbengpässe.  
     
-## JavaScript  
+## <a name="javascript"></a>JavaScript  
 
-JavaScript-Berechnungen, insbesondere diejenigen, die umfangreiche visuelle Änderungen auslösen, können die Anwendungsleistung verzögern.  Lassen Sie nicht zu, dass die Interaktion zwischen unregelmäßigen oder langlebigen JavaScript-Benutzern beeinträchtigt wird.  
+JavaScript-Berechnungen, insbesondere diejenigen, die umfangreiche visuelle Änderungen auslösen, können die Anwendungsleistung beeinträchtigen.  Lassen Sie nicht zu, dass sich schlecht zeitgezeitte oder lang ausgeführte JavaScript in Benutzerinteraktionen einmischt.  
 
-### JavaScript: Tools  
+### <a name="javascript-tools"></a>JavaScript: Tools  
 
-Nehmen Sie im **Leistungs** Panel eine Aufzeichnung auf, und suchen Sie nach verdächtig langen `Evaluate Script` Ereignissen.  <!--If you find any, you are able to enable the **JS Profiler** and re-do your recording to get more detailed information about exactly which JavaScript functions were used and how long each took.  -->  
+Nehmen Sie eine Aufzeichnung im **Leistungstool** vor, und suchen Sie nach verdächtig langen `Evaluate Script` Ereignissen.  <!--If you find any, you are able to enable the **JS Profiler** and re-do your recording to get more detailed information about exactly which JavaScript functions were used and how long each took.  -->  
 
 <!--todo: add Recording section when available  -->  
 <!--todo: add Profile JavaScript (JS Profiler) section when available  -->  
 
-Wenn Sie einiges an Jank in Ihrem JavaScript bemerken, müssen Sie möglicherweise Ihre Analyse auf die nächste Ebene übertragen und ein JavaScript-CPU-Profil erfassen.  In CPU-Profilen wird angezeigt, wo die Laufzeit innerhalb der Funktionen Ihrer Seite ausgegeben wird.  Erfahren Sie, wie Sie CPU-Profile in der [JavaScript-Laufzeit beschleunigen][DevtoolsRenderingToolsJavascriptRuntime].
+f Sie in Ihrem JavaScript ein wenig Jank notieren, müssen Sie Ihre Analyse möglicherweise auf die nächste Ebene bringen und ein JavaScript-CPU-Profil sammeln.  CPU-Profile zeigen an, wo die Laufzeit innerhalb der Funktionen Ihrer Seite ausgegeben wird.  Informationen zum Erstellen von CPU-Profilen finden Sie unter [Beschleunigen der JavaScript-Runtime][DevtoolsRenderingToolsJavascriptRuntime].
 
-### JavaScript: Probleme  
+### <a name="javascript-problems"></a>JavaScript: Probleme  
 
-In der folgenden Tabelle werden einige häufige JavaScript-Probleme und mögliche Lösungen beschrieben:  
+In der folgenden Tabelle werden einige häufige JavaScript-Probleme und mögliche Lösungen beschrieben.  
 
 | Problem | Beispiel | Lösung |  
 |:--- |:--- |:--- |  
-| Kostspielige Eingabehandler, die die Antwort oder Animation beeinflussen.  | Tippen Sie auf, um den Bildschirm zu scrollen.  | Lassen Sie den Browser Fingereingabe und scrollen, oder binden Sie den Listener so spät wie möglich.  Informationen [zu kostspieligen Eingabe Handlern finden Sie in der Checkliste zur Leistungsfähigkeit von Paul Lewis][WebPerformanceCalendarRuntimeChecklist].  |  
-| JavaScript mit starkem Zeitlimit, das die Antwort, Animation, Auslastung beeinflusst.  | Der Benutzer scrollt direkt nach dem Laden der Seite, setTimeout/setInterval.  | JavaScript-Laufzeit optimieren: Verwenden Sie `requestAnimationFrame` , verbreiten Sie DOM-Manipulation über Frames, verwenden Sie [Web-Worker][MDNUsingWebWorkers].  |  
-| JavaScript mit langer Laufzeit, das die Antwort beeinflusst.  | Das [DOMContentLoaded-Ereignis][MDNUsingWebWorkers] wird angehalten, da es mit js work überschwemmt wird.  | Verschieben Sie reine Rechenarbeit auf [web work worker][MDNUsingWebWorkers].  Wenn Sie DOM-Zugriff benötigen, verwenden Sie `requestAnimationFrame` .  <!--See also [Optimize JavaScript Execution][WebFundamentalsPerformanceRenderingOptimizeJavascriptRuntime].  -->  |  
-| Garbage-y-Skripte, die die Antwort oder Animation beeinflussen.  | Die Garbage Collection kann überall vorkommen.  | Schreiben Sie geringere Garbage-y-Skripte.  Informationen dazu finden Sie unter [Garbage Collection in Animation in Paul Lewis ' Runtime Performance Checkliste][WebPerformanceCalendarRuntimeChecklist].  |  
+| Teure Eingabehandler, die die Antwort oder Animation beeinflussen.  | Touch- und Parallax-Bildlauf.  | Lassen Sie den Browser Touch- und Bildlauf verarbeiten oder den Listener so spät wie möglich binden.  Navigieren Sie [in der Prüfliste zur][WebPerformanceCalendarRuntimeChecklist]Laufzeitleistung von Paul Lewis zu Teure Eingabehandler.  |  
+| Ungültige JavaScript-Zeit, die sich auf Antwort, Animation, Last ausdingt.  | Benutzer scrollt direkt nach Seitenlade, setTimeout /setInterval.  | Optimieren der JavaScript-Laufzeit: `requestAnimationFrame` Verwenden Sie , verteilen Sie die DOM-Manipulation über Frames, verwenden Sie Web [Workers][MDNUsingWebWorkers].  |  
+| Lang ausgeführtes JavaScript, das sich auf die Antwort ausdingt.  | Das [DOMContentLoaded-Ereignis][MDNUsingWebWorkers] wird beim Überschwemmen der JS-Arbeit ins Stocken geraten.  | Verschieben Sie reine Rechenarbeit zu [Web Workers][MDNUsingWebWorkers].  Wenn Sie DOM-Zugriff benötigen, verwenden Sie `requestAnimationFrame` .  <!--Navigate to [Optimize JavaScript Execution][WebFundamentalsPerformanceRenderingOptimizeJavascriptRuntime].  -->  |  
+| Garbage-y-Skripts, die die Antwort oder Animation beeinflussen.  | Die Garbage Collection kann an einer beliebigen Stelle vorkommen.  | Schreiben Sie weniger Garbage-y-Skripts.  Navigieren Sie [zu Garbage Collection in Animation in Der Prüfliste zur Laufzeitleistung von Paul Lewis][WebPerformanceCalendarRuntimeChecklist].  |  
 
 <!--todo: add Optimize JavaScript runtime section when available  -->  
 
-## Format  
+## <a name="style"></a>Format  
 
-Formatänderungen sind kostspielig, insbesondere dann, wenn sich diese Änderungen auf mehr als ein Element im Dom auswirken.  Jedes Mal, wenn Sie Formatvorlagen auf ein Element anwenden, wird der Browser die Auswirkungen auf alle zugehörigen Elemente ermitteln, das Layout neu berechnen und neu zeichnen.  
+Formatänderungen sind kostspielig, insbesondere wenn sich diese Änderungen auf mehr als ein Element im DOM auswirken.  Jedes Mal, wenn Sie Formatvorlagen auf ein Element anwenden, berechnet der Browser die Auswirkungen auf alle zugehörigen Elemente, berechnet das Layout neu und aktualisiert.  
 
 <!--Related Guides:  
 
@@ -76,33 +76,33 @@ Formatänderungen sind kostspielig, insbesondere dann, wenn sich diese Änderung
 
 <!--todo: add Reduce the Scope and Complexity of Styles Calculations section when available -->  
 
-### Formatvorlage: Tools  
+### <a name="style-tools"></a>Formatvorlage: Tools  
 
-Führen Sie eine Aufzeichnung im **Leistungs** Panel aus.  Überprüfen Sie die Aufzeichnung auf große `Recalculate Style` Ereignisse \ (in Lila angezeigt).  
+Nehmen Sie eine Aufzeichnung im **Leistungstool** vor.  Überprüfen Sie die Aufzeichnung auf `Recalculate Style` große Ereignisse \(angezeigt in Lila\).  
 
 <!--todo: add Recording section when available  -->  
 
-Klicken Sie auf ein `Recalculate Style` Ereignis, um weitere Informationen dazu im **Detail** Bereich anzuzeigen.  Wenn die Formatänderungen sehr lange dauern, handelt es sich um einen leistungserfolg.  Wenn sich die Format Berechnungen auf eine große Anzahl von Elementen auswirken, handelt es sich um einen anderen Bereich mit Raum für Verbesserungen.  
+Wählen Sie `Recalculate Style` ein Ereignis aus, um weitere Informationen dazu im **Detailbereich anzuzeigen.**  Wenn die Formatvorlageänderungen sehr lange dauern, ist dies ein Leistungstreffer.  Wenn sich die Formatvorlageberechnungen auf eine große Anzahl von Elementen ausdingen, ist dies ein weiterer Bereich mit Verbesserungsmöglichkeiten.  
 
-:::image type="complex" source="../media/rendering-tools-performance-recalculate-style-summary.msft.png" alt-text="Formatvorlage ' lange neu berechnen '" lightbox="../media/rendering-tools-performance-recalculate-style-summary.msft.png":::
-   Formatvorlage ' lange neu berechnen '  
+:::image type="complex" source="../media/rendering-tools-performance-recalculate-style-summary.msft.png" alt-text="Langes Neuberechnungsformat" lightbox="../media/rendering-tools-performance-recalculate-style-summary.msft.png":::
+   Langes Neuberechnungsformat  
 :::image-end:::  
 
-So verringern Sie die Auswirkungen von `Recalculate Style` Ereignissen:  
+So reduzieren Sie die Auswirkungen von `Recalculate Style` Ereignissen:  
 
-*   Verwenden Sie die [CSS-Trigger][CssTriggers] , um zu erfahren, welche CSS-Eigenschaften Layout, Paint und Composite auslösen.  Diese Eigenschaften haben die größten Auswirkungen auf die Leistung des Renderings.  
-*   Wechseln Sie zu Eigenschaften, die geringere Auswirkungen haben.  <!--See [Stick to compositor-only properties and manage layer count][WebFundamentalsPerformanceRenderingCompositorOnlyProperties] for more guidance.  -->  
+*   Verwenden Sie die [CSS-Trigger,][CssTriggers] um zu erfahren, welche CSS-Eigenschaften Layout, Paint und Composite auslösen.  Diese Eigenschaften haben die größten Auswirkungen auf die Renderingleistung.  
+*   Wechseln Sie zu Eigenschaften, die weniger Auswirkungen haben.  <!--For more guidance, navigate to [Stick to compositor-only properties and manage layer count][WebFundamentalsPerformanceRenderingCompositorOnlyProperties].  -->  
     
 <!--todo: add Stick to compositor-only properties and manage layer count section when available -->  
 
-### Formatvorlage: Probleme  
+### <a name="style-problems"></a>Formatvorlage: Probleme  
 
-In der folgenden Tabelle werden einige allgemeine Stil Probleme und mögliche Lösungen beschrieben:  
+In der folgenden Tabelle werden einige häufige Stilprobleme und mögliche Lösungen beschrieben.  
 
 | Problem | Beispiel | Lösung |  
 |:--- |:--- |:--- |  
-| Kostspielige Formatvorlagen Berechnungen, die die Antwort oder Animation beeinflussen.  | Eine beliebige CSS-Eigenschaft, die die Geometrie eines Elements ändert, wie Breite, Höhe oder Position; der Browser überprüft alle anderen Elemente und berechnet das Layout neu.  | Vermeiden von CSS, das Layouts auslöst |  
-| Komplexe Auswahlen, die die Antwort oder Animation beeinflussen.  | Geschachtelte Auswahlen zwingen den Browser, alles über alle anderen Elemente zu erfahren, einschließlich Eltern und untergeordneten Elementen.  | Verweisen Sie mit nur einer Klasse auf ein Element in Ihrem CSS.  |  
+| Teure Formatvorlageberechnungen, die sich auf Die Antwort oder Animation ausdingen.  | Jede CSS-Eigenschaft, die die Geometrie eines Elements ändert, z. B. die Breite, Höhe oder Position; Der Browser überprüft alle anderen Elemente und berechnet das Layout neu.  | Vermeiden von CSS, das Layouts auslöst |  
+| Komplexe Selektoren, die die Antwort oder Animation beeinflussen.  | Geschachtelte Selektoren zwingen den Browser, alles über alle anderen Elemente, einschließlich Eltern und Kinder, zu wissen.  | Verweisen Sie auf ein Element in Ihrer CSS mit nur einer Klasse.  |  
 
 <!--todo: add Avoid CSS that triggers layouts section when available -->  
 <!--todo: add Reduce the Scope and Complexity of Styles Calculations (Reference an element in your CSS with just a class) section when available -->  
@@ -113,11 +113,11 @@ In der folgenden Tabelle werden einige allgemeine Stil Probleme und mögliche L�
 
 <!--todo: add Reduce the Scope and Complexity of Styles Calculations section when available -->  
 
-## Layout  
+## <a name="layout"></a>Layout  
 
-Layout (oder Reflow in Firefox) ist der Prozess, bei dem der Browser die Positionen und Größen aller Elemente auf einer Seite berechnet.  Das Layout-Modell des Webs bedeutet, dass ein Element andere beeinflussen kann. beispielsweise wirkt sich die Breite des `<body>` Elements in der Regel auf die Breite aller untergeordneten Elemente und so weiter auf die gesamte Struktur nach oben und unten aus.  Der Vorgang ist möglicherweise für den Browser ziemlich kompliziert.  
+Layout (oder Reflow in Firefox) ist der Prozess, mit dem der Browser die Positionen und Größen aller Elemente auf einer Seite berechnet.  Das Layoutmodell des Webs bedeutet, dass sich ein Element auf andere auswirken kann. Beispielsweise wirkt sich die Breite des Elements in der Regel auf die Breite aller untergeordneten Elemente aus, und so weiter, bis hin zur `<body>` Struktur nach oben und unten.  Der Prozess kann für den Browser sehr involviert sein.  
 
-Als Faustregelgilt: Wenn Sie einen geometrischen Wert zurück aus dem Dom anfordern, bevor ein Frame abgeschlossen ist, werden Sie sich mit "erzwungenen synchronen Layouts" befunden, was ein großer Leistungsengpass sein kann, wenn Sie häufig wiederholt werden oder für eine große DOM-Struktur ausgeführt werden.  
+Als allgemeine Faustregel gilt: Wenn Sie einen geometrischen Wert aus dem DOM zurück fordern, bevor ein Frame abgeschlossen ist, werden Sie sich mit "erzwungenen synchronen Layouts" befinden. Dies kann ein großer Leistungsengpässe sein, wenn er häufig wiederholt oder für eine große DOM-Struktur ausgeführt wird.  
 
 <!--Related Guides:  
 
@@ -127,38 +127,38 @@ Als Faustregelgilt: Wenn Sie einen geometrischen Wert zurück aus dem Dom anford
 <!--todo: add Avoid CSS that triggers layouts (Avoid Layout Thrashing) section when available -->  
 <!--todo: add Diagnose Forced Synchronous Layouts section when available  -->  
 
-### Layout: Tools  
+### <a name="layout-tools"></a>Layout: Tools  
 
-Der Bereich " **Leistung** " gibt an, wann eine Seite erzwungene synchrone Layouts verursacht.  Diese `Layout` Ereignisse sind mit roten Balken gekennzeichnet.  
+Der **Bereich Leistung** gibt an, wann eine Seite erzwungene synchrone Layouts verursacht.  Diese `Layout` Ereignisse sind mit roten Balken markiert.  
 
 :::image type="complex" source="../media/rendering-tools-jank-performance-recalculate-style-summary.msft.png" alt-text="Erzwungenes synchrones Layout" lightbox="../media/rendering-tools-jank-performance-recalculate-style-summary.msft.png":::
    Erzwungenes synchrones Layout  
 :::image-end:::  
 
-"Layout-Thrashing" ist eine Wiederholung erzwungener synchroner layoutbedingungen.  Dies tritt auf, wenn JavaScript wiederholt vom Dom geschrieben und gelesen wird, wodurch der Browser die Neuberechnung des Layouts erzwungen.  Suchen Sie nach einem Muster mehrerer erzwungener synchroner Layout-Warnungen, um das verprügeln des Layouts zu erkennen.  Sehen Sie sich die vorhergehende Zahl an.  
+"Layout shing" ist eine Wiederholung erzwungener synchroner Layoutbedingungen.  Dies tritt auf, wenn JavaScript wiederholt aus dem DOM schreibt und liest, was den Browser zwingt, das Layout immer wieder neu zu berechnen.  Suchen Sie zum Identifizieren des Layoutbrands nach einem Muster mehrerer erzwungener synchroner Layoutwarnungen.  Überprüfen Sie die vorherige Abbildung.  
 
-### Layout: Probleme  
+### <a name="layout-problems"></a>Layout: Probleme  
 
-In der folgenden Tabelle werden einige häufige Probleme beim Layout und mögliche Lösungen beschrieben:  
+In der folgenden Tabelle werden einige häufige Layoutprobleme und mögliche Lösungen beschrieben.  
 
 | Problem | Beispiel | Lösung |  
 |:--- |:--- |:--- |  
-| Erzwungenes synchrones Layout, das die Antwort oder Animation beeinflusst.  | Erzwingen, dass der Browser das Layout zuvor in der pixelpipeline ausführt, wodurch sich wieder holende Schritte im Renderingprozess ergeben.  | Stapeln Sie Ihre Formatvorlage zuerst, und führen Sie dann alle Schreibvorgänge aus.  <!--See also [Avoid large, complex layouts and layout thrashing][WebFundamentalsPerformanceRenderingAvoidLargeComplexLayouts].  -->  |  
-| Das Layout verprügelt Auswirkungen auf die Antwort oder Animation.  | Eine Schleife, die den Browser in einen Lese-Schreib-Lese-/Schreibzugriff.-Zyklus versetzt, wodurch der Browser das Layout immer wieder neu berechnet.  | Automatisches Stapeln von Lese-und Schreibvorgängen mithilfe der [FastDom-Bibliothek][GitHubWilsonpageFastdom]  |  
+| Erzwungenes synchrones Layout, das die Antwort oder Animation beeinflusst.  | Erzwingen, dass der Browser das Layout früher in der Pixelpipeline ausführen muss, was zu wiederholten Schritten im Renderingprozess führt.  | Batch, in dem Ihre Formatvorlage zuerst gelesen wird, und anschließend schreibe.  <!--Navigate to [Avoid large, complex layouts and layout thrashing][WebFundamentalsPerformanceRenderingAvoidLargeComplexLayouts].  -->  |  
+| Layoutbrandung, die sich auf Die Antwort oder Animation ausdingt.  | Eine Schleife, die den Browser in einen Lese-/Lese-/Schreibzyklus versetzt und den Browser dazu zwingt, das Layout immer wieder neu zu berechnen.  | Automatische Batch-Lese-/Schreibvorgänge mithilfe der [FastDom-Bibliothek][GitHubWilsonpageFastdom].  |  
 
 <!--todo: add Avoid CSS that triggers layouts (Avoid large, complex layouts and layout thrashing) section when available -->  
 
-## Malen und Composite  
+## <a name="paint-and-composite"></a>Farbe und Zusammengesetzt  
 
-Paint ist der Vorgang des Füllens von Pixeln.  Es ist oft der kostspieligste Teil des Rendering-Prozesses.  Wenn Sie festgestellt haben, dass Ihre Seite in irgendeiner Weise Janky ist, haben Sie wahrscheinlich Probleme mit Paint.  
+Paint ist der Vorgang des Ausfüllens von Pixeln.  Dies ist häufig der kostspieligste Teil des Renderingprozesses.  Wenn Sie feststellen, dass Ihre Seite nicht so funktioniert, wie sie entworfen wurde, ist es wahrscheinlich, dass Sie Farbprobleme haben.  
 
-Compositing ist der Ort, an dem die gemalten Teile der Seite für die Anzeige auf dem Bildschirm zusammengestellt werden.  In den meisten Fällen sollten Sie, wenn Sie sich an nur für Compositor-Eigenschaften halten und die Farbe ganz vermeiden, eine deutliche Verbesserung der Leistung festzustellen, doch müssen Sie auf eine übermäßige Anzahl von Ebenen achten.  <!--See also [Stick to compositor-only properties and manage layer count][WebFundamentalsPerformanceRenderingCompositorOnlyProperties].  -->  
+Beim Compositing werden die dargestellten Teile der Seite für die Anzeige auf dem Bildschirm gegliedert.  Wenn Sie sich in den meisten Punkten nur an die Eigenschaften des Kompositors halten und die Farbe ganz vermeiden, sollten Sie eine wesentliche Leistungsverbesserung feststellen, sie müssen jedoch auf übermäßig hohe Ebenenanzahl achten.  <!--Navigate to [Stick to compositor-only properties and manage layer count][WebFundamentalsPerformanceRenderingCompositorOnlyProperties].  -->  
 
 <!--todo: add Stick to compositor-only properties and manage layer count section when available  -->  
 
-### Paint und Composite: Tools  
+### <a name="paint-and-composite-tools"></a>Paint and composite: Tools  
 
-Möchten Sie wissen, wie lange das Malen dauert oder wie oft gemalt wird?  Aktivieren Sie das Kontrollkästchen [Erweiterte Farben Instrumentation aktivieren][DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation] im **Leistungs** Panel, und nehmen Sie dann eine Aufzeichnung vor.  Wenn die meiste Zeit für das Rendern von Bildern verwendet wird, gibt es Probleme mit der Farbwiedergabe.  
+Möchten Sie wissen, wie lange das Malen dauert oder wie oft das Malen stattfindet?  Überprüfen Sie [die Einstellung Erweiterte Farbinstrumentierung aktivieren][DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation] im Bereich **Leistung,** und nehmen Sie dann eine Aufzeichnung vor.  Wenn die meiste Renderzeit mit dem Malen verbracht wird, haben Sie Farbprobleme.  
 
 <!--
 :::image type="complex" source="../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png" alt-text="Long paint times in timeline recording" lightbox="../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png":::
@@ -171,26 +171,26 @@ Check out the **Rendering** panel for further configurations that are able to he
 
 <!--todo: link Rendering panel in ../evaluate-performance/timeline-tool  sub-section when live  -->  
 
-### Paint und Composite: Probleme  
+### <a name="paint-and-composite-problems"></a>Farbe und Zusammengesetzt: Probleme  
 
-In der folgenden Tabelle werden einige häufige Probleme bei der Farb-und Zusammensetzung und mögliche Lösungen beschrieben:  
+In der folgenden Tabelle werden einige häufige Farb- und Verbundprobleme sowie mögliche Lösungen beschrieben.  
 
 | Problem | Beispiel | Lösung |  
 |:--- |:--- |:--- |  
-| Malen Sie Stürme, die die Antwort oder Animation beeinflussen.  | Große Farbbereiche oder kostspielige Farben, die die Antwort oder Animation beeinflussen.  | Vermeiden Sie Paint, fördern Sie Elemente, die in eine eigene Ebene verschoben werden, und verwenden Sie Transformationen und Deckkraft.  <!--See [Simplify paint complexity and reduce paint areas][WebFundamentalsPerformanceRenderingSimplifyPaintComplexity].  -->  |  
-| Layer-Explosionen, die Animationen beeinflussen  | Die über Förderung von zu vielen Elementen mit `translateZ(0)` starkem Einfluss auf die animationsleistung.  | Werben Sie auf Ebenen sparsam, und nur, wenn Sie wissen, dass es greifbare Verbesserungen bietet.  <!--See [Stick to composite-only properties and manage layer count][WebFundamentalsPerformanceRenderingCompositorOnlyProperties].  -->  |  
+| Farbstürmchen, die sich auf die Reaktion oder Animation ausdingen.  | Große Farbbereiche oder teure Farben, die die Reaktion oder Animation beeinflussen.  | Vermeiden Sie Farbe, fördern Sie Elemente, die sich auf ihre eigene Ebene verschieben, verwenden Sie Transformationen und Deckkraft.  <!--Navigate to [Simplify paint complexity and reduce paint areas][WebFundamentalsPerformanceRenderingSimplifyPaintComplexity].  -->  |  
+| Ebenenexplosionen, die Animationen beeinflussen.  | Überpromotion von zu vielen Elementen mit `translateZ(0)` erheblichen Auswirkungen auf die Animationsleistung.  | Bewerben Sie sich sparsam auf Ebenen, und nur, wenn Sie wissen, dass es greifbare Verbesserungen bietet.  <!--Navigate to [Stick to composite-only properties and manage layer count][WebFundamentalsPerformanceRenderingCompositorOnlyProperties].  -->  |  
 
 <!--todo: add Simplify paint complexity and reduce paint areas section when available  -->  
 <!--todo: add Stick to compositor-only properties and manage layer count section when available  -->  
 
-## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsRenderingToolsJavascriptRuntime]: ./js-runtime.md "Beschleunigen der JavaScript-Laufzeit | Microsoft docs"  
-[DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation]: ../evaluate-performance/reference.md#turn-on-advanced-paint-instrumentation "Aktivieren von Advanced Paint Instrumentation – Referenz zur Leistungsanalyse | Microsoft docs"
+[DevtoolsRenderingToolsJavascriptRuntime]: ./js-runtime.md "Beschleunigen sie die JavaScript-Laufzeit | Microsoft Docs"  
+[DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation]: ../evaluate-performance/reference.md#turn-on-advanced-paint-instrumentation "Aktivieren der erweiterten Farbinstrumentierung – Leistungsanalysereferenz | Microsoft Docs"
 
 <!--[DevtoolsRenderingToolsForcedSynchronousLayouts]: ./rendering-tools/forced-synchronous-layouts.md "Diagnose Forced Synchronous Layouts | Microsoft Docs"  -->  
 
@@ -210,13 +210,13 @@ In der folgenden Tabelle werden einige häufige Probleme bei der Farb-und Zusamm
 
 [MDNUsingWebWorkers]: https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers "Verwenden von Web Workers | MDN"  
 
-[WebPerformanceCalendarRuntimeChecklist]: https://calendar.perfplanet.com/2013/the-runtime-performance-checklist/ "Die Checkliste für die Laufzeitleistung – webleistungs Kalender"  
+[WebPerformanceCalendarRuntimeChecklist]: https://calendar.perfplanet.com/2013/the-runtime-performance-checklist/ "Prüfliste zur Laufzeitleistung – Webleistungskalender"  
 
 [GitHubWilsonpageFastdom]: https://github.com/wilsonpage/fastdom "wilsonpage/fastdom | GitHub"  
 
 > [!NOTE]
 > Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
-> Die ursprüngliche Seite wird [hier](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/index) gefunden und von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) und [Meggin Kearney][MegginKearney] \ (Tech Writer \) erstellt.  
+> Die ursprüngliche Seite [](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/index) befindet sich hier und wird von [Kayce Basken][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) und [Meggin Kearney][MegginKearney] \(Tech Writer\) verfasst.  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  

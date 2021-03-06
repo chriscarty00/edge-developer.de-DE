@@ -1,18 +1,18 @@
 ---
-description: Öffnen Sie die Registerkarte Netzwerkbedingungen, deaktivieren Sie automatisch auswählen, und wählen Sie aus der Liste aus, oder geben Sie eine benutzerdefinierte Zeichenfolge ein.
-title: Überschreiben der Benutzer-Agent-Zeichenfolge von Microsoft Edge devtools
+description: Öffnen Sie das Tool Netzwerkbedingungen, deaktivieren Sie Automatisch auswählen, und wählen Sie aus der Liste aus, oder geben Sie eine benutzerdefinierte Zeichenfolge ein.
+title: Überschreiben der Benutzer-Agent-Zeichenfolge von Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: befbe186a5992c651f877a18f1c3232bf212394a
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
+ms.openlocfilehash: a0ba10b551b4853cf204656ca7a9fb014323986b
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11124950"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398693"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,38 +28,38 @@ ms.locfileid: "11124950"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Überschreiben der Benutzer-Agent-Zeichenfolge von Microsoft Edge devtools  
+# <a name="override-the-user-agent-string-from-microsoft-edge-devtools"></a>Überschreiben der Benutzer-Agent-Zeichenfolge von Microsoft Edge DevTools  
 
-So überschreiben Sie die Zeichenfolge des [Benutzer-Agents][MDNUserAgent] von Microsoft Edge devtools:  
+So überschreiben Sie [die Benutzer-Agent-Zeichenfolge][MDNUserAgent] von Microsoft Edge DevTools:  
 
-1.  Wählen Sie `Control` + `Shift` + `P` \ (Windows, Linux \) oder `Command` + `Shift` + `P` \ (macOS \) aus, um das **Befehlsmenü**zu öffnen.  
+1.  Wählen `Control` + `Shift` + `P` Sie \(Windows, Linux\) oder `Command` + `Shift` + `P` \(macOS\) aus, um das **Befehlsmenü zu öffnen.**  
     
     :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="Das Befehlsmenü" lightbox="../media/device-mode-console-command-menu.msft.png":::
        Das **Befehlsmenü**  
     :::image-end:::  
     
-1.  Geben `network conditions` Sie **Netzwerkbedingungen anzeigen**ein, und wählen Sie aus, `Enter` um die Registerkarte **Netzwerkbedingungen** zu öffnen.  
-1.  Deaktivieren Sie im Abschnitt **Benutzer-Agent** das Kontrollkästchen **automatisch auswählen** .  
+1.  Geben `network conditions` Sie ein, wählen **Sie Netzwerkbedingungen anzeigen**aus, und wählen Sie `Enter` aus, um das Tool **Netzwerkbedingungen zu** öffnen.  
+1.  Deaktivieren Sie **im Abschnitt Benutzer-Agent** das **Kontrollkästchen** Automatisch auswählen.  
     
-    :::image type="complex" source="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png" alt-text="Das Befehlsmenü" lightbox="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png":::
-       **Automatisches auswählen** deaktivieren  
+    :::image type="complex" source="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png" alt-text="Automatisches Deaktivieren von Select" lightbox="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png":::
+       Automatisches **Deaktivieren von Select**  
     :::image-end:::  
     
-1.  Wählen Sie eine Benutzer-Agent-Zeichenfolge aus der Liste aus, oder geben Sie eine eigene benutzerdefinierte Zeichenfolge ein.  
+1.  Wählen Sie eine Benutzer-Agent-Zeichenfolge aus der Liste aus, oder geben Sie Eine eigene benutzerdefinierte Zeichenfolge ein.  
     
-## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[MDNUserAgent]: https://developer.mozilla.org/docs/Glossary/User_agent "Benutzer-Agent | MDN"  
+[MDNUserAgent]: https://developer.mozilla.org/docs/Glossary/User_agent "Benutzer-Agent-| MDN"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
-> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/device-mode/override-user-agent) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
+> Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
+> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/device-mode/override-user-agent) und wird von [Kayce Basken][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) verfasst.  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

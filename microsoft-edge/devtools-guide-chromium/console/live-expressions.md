@@ -1,18 +1,18 @@
 ---
-description: Wenn Sie feststellen, dass Sie dieselben JavaScript-Ausdrücke wiederholt in die Konsole eingeben, versuchen Sie stattdessen, Live Ausdrücke zu verwenden.
-title: Sehen Sie sich die Werte für JavaScript-Ausdrücke in Real-Time mit Live Ausdrücken an
+description: Wenn Sie die gleichen JavaScript-Ausdrücke wiederholt in die Konsole eingeben, versuchen Sie es stattdessen mit Live-Ausdrücken.
+title: Beobachten von JavaScript-Ausdruckswerten in Echtzeit mit Liveausdrücken
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: f6787455863f738d0fa4e014ca8fc318ad83a9cb
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
+ms.openlocfilehash: 5bc49b60cc1c1dfb41c793c3fec7681fb6415e4c
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125230"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398798"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,22 +28,22 @@ ms.locfileid: "11125230"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Sehen Sie sich die Werte für JavaScript-Ausdrücke in Real-Time mit Live Ausdrücken an  
+# <a name="watch-javascript-expression-values-in-real-time-with-live-expressions"></a>Beobachten von JavaScript-Ausdruckswerten in Echtzeit mit Liveausdrücken  
 
-Wenn Sie feststellen, dass Sie denselben JavaScript-Ausdruck wiederholt in der Konsole eingeben, ist es möglicherweise einfacher, einen **Live Ausdruck**zu erstellen.  Mit **Live-Ausdrücken** geben Sie einen Ausdruck einmal ein und anheften ihn dann an den Anfang der Konsole.  Der Wert des Ausdrucks wird nahezu in Echtzeit aktualisiert.  
+Wenn Sie denselben JavaScript-Ausdruck wiederholt in der Konsole eingeben, ist es möglicherweise einfacher, einen **Liveausdruck zu erstellen.**  Mit **Live-Ausdrücken** geben Sie einen Ausdruck einmal ein undheften ihn dann an den oberen Rand der Konsole.  Der Wert des Ausdrucks wird nahezu in Echtzeit aktualisiert.  
 
-## Erstellen eines Live Ausdrucks  
+## <a name="create-a-live-expression"></a>Erstellen eines Liveausdrucks  
 
 1.  [Öffnen Sie die Konsole][DevToolsConsoleReferenceOpenConsole].  
-1.  Wählen Sie **Live Ausdruck erstellen** \ ( ![ Live Ausdruck erstellen ][ImageCreateLiveExpressionIcon] \) aus.  Das Textfeld " **Live Ausdruck** " wird angezeigt.  
+1.  Wählen **Sie Liveausdruck** erstellen \( ![ Liveausdruck ][ImageCreateLiveExpressionIcon] erstellen \).  Das **Textfeld Live-Ausdruck** wird angezeigt.  
     
-    :::image type="complex" source="../media/console-create-live-expression.msft.png" alt-text="Eingeben von Document. activeElement in das Textfeld &quot;Live Ausdruck&quot;" lightbox="../media/console-create-live-expression.msft.png":::
-       Eingeben `document.activeElement` in das Textfeld " **Live Ausdruck** "  
+    :::image type="complex" source="../media/console-create-live-expression.msft.png" alt-text="Eingeben von document.activeElement in das Textfeld Live Expression" lightbox="../media/console-create-live-expression.msft.png":::
+       Eingeben `document.activeElement` in das Textfeld **Live Expression**  
     :::image-end:::  
     
-1.  Wählen Sie `Control` + `Enter` \ (Windows, Linux \) oder `Command` + `Enter` \ (macOS \) aus, um den Ausdruck zu speichern, oder wählen Sie außerhalb des **Live Ausdrucks** -TextBox aus.  
+1.  Wählen `Control` + `Enter` Sie \(Windows, Linux\) oder `Command` + `Enter` \(macOS\) aus, **** um den Ausdruck zu speichern, oder wählen Sie außerhalb des Textfelds Live expression aus.  
 
-## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -53,13 +53,13 @@ Wenn Sie feststellen, dass Sie denselben JavaScript-Ausdruck wiederholt in der K
 
 <!-- links -->  
 
-[DevToolsConsoleReferenceOpenConsole]: ./reference.md#open-the-console "Console-Console-Referenz öffnen | Microsoft docs"  
+[DevToolsConsoleReferenceOpenConsole]: ./reference.md#open-the-console "Öffnen Sie die Konsole – Konsolenreferenz | Microsoft Docs"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
-> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/console/live-expressions) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
+> Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
+> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/console/live-expressions) und wird von [Kayce Basken][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) verfasst.  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

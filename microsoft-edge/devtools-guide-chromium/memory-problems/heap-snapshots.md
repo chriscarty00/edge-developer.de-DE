@@ -1,18 +1,18 @@
 ---
-description: Erfahren Sie, wie Sie Heap-Snapshots mit dem Microsoft Edge devtools-Heap Profiler aufzeichnen und Speicherverluste finden.
-title: Aufzeichnen von Heap-Snapshots
+description: Erfahren Sie, wie Sie Heapmomentaufnahmen mit dem Microsoft Edge DevTools-Heap-Profiler aufzeichnen und Speicherverluste finden.
+title: Aufzeichnen von Heapmomentaufnahmen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 9762cb1d4932ce1a5d0b1c3944aa0b85d78b1060
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
+ms.openlocfilehash: ce7a6f972bed386f96312808428bd74f1241668f
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125461"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397804"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -28,140 +28,140 @@ ms.locfileid: "11125461"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Aufzeichnen von Heap-Snapshots  
+# <a name="how-to-record-heap-snapshots"></a>Aufzeichnen von Heapmomentaufnahmen  
 
-Erfahren Sie, wie Sie Heap-Snapshots mit dem Microsoft Edge devtools-Heap Profiler aufzeichnen und Speicherverluste finden.  
+Erfahren Sie, wie Sie Heapmomentaufnahmen mit dem Microsoft Edge DevTools-Heap-Profiler aufzeichnen und Speicherverluste finden.  
 
-Der Microsoft Edge devtools-Heap Profiler zeigt die Speicherverteilung nach den JavaScript-Objekten und den zugehörigen DOM-Knoten Ihrer Seite an.  Verwenden Sie es, um Snapshots des JavaScript-Heaps zu erstellen, Speicher Diagramme zu analysieren, Schnappschüsse zu vergleichen und Speicherverluste zu finden.  Siehe auch Objekte, die die [Struktur beibehalten][DevtoolsMemoryProblems101ObjectsRetainingTree].  
+Der Microsoft Edge DevTools-Heap-Profiler zeigt die Speicherverteilung durch die JavaScript-Objekte und zugehörigen DOM-Knoten Ihrer Seite an.  Verwenden Sie ihn, um JavaScript-Heap-\(JS-Heap\)-Momentaufnahmen zu erstellen, Speicherdiagramme zu analysieren, Momentaufnahmen zu vergleichen und Speicherverluste zu finden.  Navigieren Sie zu [Objekte Aufbewahrungsstruktur][DevtoolsMemoryProblems101ObjectsRetainingTree].  
 
-## Erstellen einer Momentaufnahme  
+## <a name="take-a-snapshot"></a>Erstellen einer Momentaufnahme  
 
-Wählen Sie im **Speicher** Panel **Schnappschuss aufnehmen**und dann **Start**aus.  Sie können auch `Ctrl` + `E` \ (Windows, Linux \) oder `Cmd` + `E` \ (macOS \) auswählen.  
+Wählen Sie **im Bereich** Arbeitsspeicher die Option **Momentaufnahme erstellen**und dann Start **aus.**  Sie können auch `Ctrl` + `E` \(Windows, Linux\) oder `Cmd` + `E` \(macOS\) auswählen.  
 
-:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png" alt-text="Auswählen des Profil Erstellungs Typs" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png":::
-   Auswählen des Profil Erstellungs Typs  
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png" alt-text="Auswählen des Profilerstellungstyps" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png":::
+   Auswählen des Profilerstellungstyps  
 :::image-end:::  
 
-**Snapshots** werden zunächst im Speicher des Renderer-Prozesses gespeichert.  Schnappschüsse werden bei Bedarf an devtools übertragen, wenn Sie auf das Schnappschuss Symbol klicken, um es anzuzeigen.  
+**Momentaufnahmen** werden zunächst im Rendererprozessspeicher gespeichert.  Momentaufnahmen werden bei Bedarf an die DevTools übertragen, wenn Sie das Momentaufnahmesymbol zum Anzeigen auswählen.  
 
-Nachdem der Schnappschuss in devtools geladen und analysiert wurde, wird die Zahl unterhalb des Snapshot-Titels angezeigt und zeigt die [Gesamtgröße der erreichbaren JavaScript-Objekte an][DevtoolsMemoryProblems101ObjectSizes].  
+Nachdem die Momentaufnahme in DevTools geladen und analysiert wurde, wird die Nummer unter dem Snapshottitel angezeigt und zeigt die Gesamtgröße der erreichbaren [JavaScript-Objekte an.][DevtoolsMemoryProblems101ObjectSizes]  
 
-:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all.msft.png" alt-text="Auswählen des Profil Erstellungs Typs" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all.msft.png":::
-   Gesamtgröße der erreichbaren Objekte  
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all.msft.png" alt-text="Gesamtgröße erreichbarer Objekte" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all.msft.png":::
+   Gesamtgröße erreichbarer Objekte  
 :::image-end:::  
 
 > [!NOTE]
-> In Schnappschüssen sind nur erreichbare Objekte enthalten.  Außerdem beginnt das Erstellen eines Snapshots immer mit einer Garbage Collection.  
+> In Momentaufnahmen sind nur erreichbare Objekte enthalten.  Außerdem beginnt das Erstellen einer Momentaufnahme immer mit einer Garbage Collection.  
 
-## Löschen von Schnappschüssen  
+## <a name="clear-snapshots"></a>Löschen von Momentaufnahmen  
 
-Wählen Sie " **alle Profile löschen** " aus, um Schnappschüsse zu entfernen \ (sowohl aus devtools als auch aus dem Speicher, der dem Renderer-Prozess zugeordnet ist).  
+Wählen **Sie Alle Profile löschen** symbol, um Momentaufnahmen zu entfernen \(sowohl von DevTools als auch von jedem Speicher, der dem Rendererprozess zugeordnet ist\).  
 
-:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png" alt-text="Auswählen des Profil Erstellungs Typs" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png":::
-   Entfernen von Schnappschüssen  
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png" alt-text="Entfernen von Momentaufnahmen" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png":::
+   Entfernen von Momentaufnahmen  
 :::image-end:::  
 
-Beim Schließen des devtools-Fensters werden keine Profile aus dem Speicher gelöscht, der dem Renderer-Prozess zugeordnet ist.  Beim erneuten Öffnen von devtools werden alle zuvor aufgenommenen Schnappschüsse wieder in der Liste der Schnappschüsse angezeigt.  
+Durch das Schließen des DevTools-Fensters werden keine Profile aus dem Speicher gelöscht, der dem Rendererprozess zugeordnet ist.  Beim erneuten Öffnen von DevTools werden alle zuvor aufgenommenen Momentaufnahmen wieder in der Liste der Momentaufnahmen angezeigt.  
 
 > [!NOTE]
-> Probieren Sie dieses Beispiel für [verstreute Objekte][GlitchDevtoolsMemoryExample03] aus, und erstellen Sie ein Profil mit dem Heap Profiler.  Es sollte eine Anzahl von \ (Object \)-Element Zuweisungen angezeigt werden.  
+> Probieren Sie dieses Beispiel für [gestreute Objekte aus,][GlitchDevtoolsMemoryExample03] und profilieren Sie es mithilfe des Heap-Profilers.  Eine Reihe von \(object\)-Elementzuordnungen werden angezeigt.  
 
-## Anzeigen von Schnappschüssen  
+## <a name="view-snapshots"></a>Anzeigen von Momentaufnahmen  
 
-Sie können Schnappschüsse aus unterschiedlichen Perspektiven für verschiedene Aufgaben anzeigen.  
+Zeigen Sie Momentaufnahmen aus unterschiedlichen Perspektiven für verschiedene Aufgaben an.  
 
-**Zusammenfassungsansicht** zeigt Objekte, die nach dem Namen des Konstruktors gruppiert sind.  Verwenden Sie es, um Objekte \ (und die Speichernutzung \) basierend auf dem Typ nach konstruktornamen gruppiert zu jagen.  Dies ist besonders hilfreich für das **Aufspüren von Dom-Lecks**.
+**Die Zusammenfassungsansicht** zeigt Objekte, die nach dem Konstruktornamen zusammengefasst sind.  Verwenden Sie es, um Objekte \(und die Speichernutzung\) basierend auf dem Typ nach Konstruktornamen zu erstellen.  Es ist besonders hilfreich, um **DOM-Lecks nachverfolgung zu verfolgen.**
 
 <!--todo: add profile memory problems memory diagnosis (tracking down DOM leaks) section when available  -->  
 
-**Vergleichsansicht**.  Zeigt den Unterschied zwischen zwei Schnappschüssen an.  Verwenden Sie diese Funktion, um zwei \ (oder mehr \) Speicher-Snapshots von vor und nach einem Vorgang zu vergleichen.  Wenn Sie das Delta in freiem Arbeitsspeicher und Verweisanzahl prüfen, können Sie das vorhanden sein und die Ursache für einen Speicherverlust bestätigen.  
+**Vergleichsansicht**.  Zeigt den Unterschied zwischen zwei Momentaufnahmen an.  Verwenden Sie sie, um zwei \(oder mehr\) Speichermomentaufnahmen vor und nach einem Vorgang zu vergleichen.  Wenn Sie das Delta im frei werdenden Speicher und in der Referenzanzahl überprüfen, können Sie das Vorhandensein und die Ursache eines Speicherverlusts bestätigen.  
 
-**Einkapselungs Ansicht**.  Ermöglicht das Erforschen von Heap Inhalten.  Die **Einkapselungs Ansicht** bietet eine bessere Sicht auf die Objektstruktur und hilft, Objekte zu analysieren, auf die im globalen Namespace \ (Window \) verwiesen wird, um herauszufinden, welche Objekte in der Nähe sind.  Verwenden Sie es, um Verschlüsse zu analysieren und in Ihre Objekte auf einem niedrigeren Niveau zu tauchen.  
+**Containment-Ansicht**.  Ermöglicht die Untersuchung von Heapinhalten.  **Die Eindämmungsansicht** bietet eine bessere Ansicht der Objektstruktur und hilft dabei, Objekte zu analysieren, auf die im globalen Namespace \(window\) verwiesen wird, um herauszufinden, was Objekte um sich herum hält.  Verwenden Sie sie, um Verschlüsse zu analysieren und sich auf niedriger Ebene mit Ihren Objekten zu begnnen.  
 
-Um zwischen den Ansichten zu wechseln, verwenden Sie die Auswahl oben in der Ansicht.  
+Um zwischen Ansichten zu wechseln, verwenden Sie die Auswahl oben in der Ansicht.  
 
-:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png" alt-text="Auswählen des Profil Erstellungs Typs" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png":::
-   Wechseln der Ansicht-Auswahl  
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png" alt-text="Auswahl für Switchansichten" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png":::
+   Auswahl für Switchansichten  
 :::image-end:::  
 
 > [!NOTE]
-> Nicht alle Eigenschaften werden auf dem JavaScript-Heap gespeichert.  Mit Gettern implementierte Eigenschaften, die systemeigenen Code ausführen, werden nicht erfasst.  Auch nicht-Zeichenfolgenwerte wie Zahlen werden nicht erfasst.  
+> Nicht alle Eigenschaften werden im JavaScript-Heap gespeichert.  Eigenschaften, die mithilfe von Getters implementiert werden, die systemeigenen Code ausführen, werden nicht erfasst.  Außerdem werden werte, die keine Zeichenfolgen sind, z. B. Zahlen, nicht erfasst.  
 
-### Zusammenfassungsansicht  
+### <a name="summary-view"></a>Zusammenfassungsansicht  
 
-Zunächst wird in der Zusammenfassungsansicht eine Momentaufnahme geöffnet, in der die Objektergebnisse angezeigt werden, die möglicherweise erweitert werden, um Instanzen anzuzeigen:  
+Zunächst wird in der Zusammenfassungsansicht eine Momentaufnahme geöffnet, in der Objektsummen angezeigt werden, die erweitert werden können, um Instanzen zu zeigen:  
 
-:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png" alt-text="Auswählen des Profil Erstellungs Typs" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png":::
-   **Zusammenfassungs** Ansicht  
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png" alt-text="Zusammenfassungsansicht" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png":::
+   **Zusammenfassungsansicht**  
 :::image-end:::  
 
-Einträge auf oberster Ebene sind "Total"-Zeilen.  
+Einträge auf oberster Ebene sind "Gesamtlinien".  
 
 | Einträge auf oberster Ebene | Beschreibung |  
 |:--- |:--- |  
-| **Konstruktor** | Stellt alle mit diesem Konstruktor erstellten Objekte dar.  |  
+| **Konstruktor** | Stellt alle Objekte dar, die mit diesem Konstruktor erstellt wurden.  |  
 | **Entfernung** | zeigt den Abstand zum Stamm mithilfe des kürzesten einfachen Pfads von Knoten an.  |  
-| **Flache Größe** | Zeigt die Summe der flachen Größen aller Objekte an, die von einer bestimmten Konstruktorfunktion erstellt wurden.  Die flache Größe ist die Größe des Speichers, der für ein Objekt reserviert ist \ (im allgemeinen weisen Arrays und Zeichenfolgen größere flache Größen auf \).  Siehe auch [Objektgrößen][DevtoolsMemoryProblems101ObjectSizes].  |  
-| **Beibehaltungs Größe** | Zeigt die maximale Beibehaltungs Größe für den gleichen Satz von Objekten an.  Die Größe des Arbeitsspeichers, der nach dem Löschen eines Objekts freigegeben werden kann \ (und die abhängigen Personen sind nicht mehr erreichbar \) wird als Beibehaltungs Größe bezeichnet.  Siehe auch [Objektgrößen][DevtoolsMemoryProblems101ObjectSizes].  |  
+| **Flache Größe** | Zeigt die Summe der flachen Größen aller Objekte an, die von einer bestimmten Konstruktorfunktion erstellt werden.  Die flache Größe ist die Größe des Arbeitsspeichers, der von einem Objekt gehalten wird \(im Allgemeinen haben Arrays und Zeichenfolgen größere flache Größen\).  Navigieren Sie zu [Objektgrößen][DevtoolsMemoryProblems101ObjectSizes].  |  
+| **Beibehaltene Größe** | Zeigt die maximale beibehaltene Größe zwischen denselben Objekten an.  Die Größe des Arbeitsspeichers, den Sie frei machen können, nachdem ein Objekt gelöscht wurde \(und die Abhängigen werden nicht mehr erreichbar\) wird als beibehaltene Größe bezeichnet.  Navigieren Sie zu [Objektgrößen][DevtoolsMemoryProblems101ObjectSizes].  |  
 
 <!--| **Number of object instances** | Displayed in the # column.  |  -->  
 
-Nachdem Sie eine Gesamtzeile in der oberen Ansicht erweitert haben, werden alle Instanzen angezeigt.  Für jede Instanz werden die flachen und gespeicherten Größen in den entsprechenden Spalten angezeigt.  Die Zahl hinter dem `@` Zeichen ist die eindeutige ID des Objekts, die es Ihnen ermöglicht, Heap-Schnappschüsse pro Objekt zu vergleichen.  
+Nach dem Erweitern einer Gesamtlinie in der oberen Ansicht werden alle Instanzen angezeigt.  Für jede Instanz werden die flachen und beibehaltenen Größen in den entsprechenden Spalten angezeigt.  Die Zahl nach dem Zeichen ist die eindeutige ID des Objekts, sodass Sie Heapmomentaufnahmen auf `@` Objektbasis vergleichen können.  
 
-Beachten Sie, dass gelbe Objekte JavaScript-Bezüge aufweisen und rote Objekte getrennte Knoten sind, auf die von einer mit einem gelben Hintergrund verwiesen wird.  
+Denken Sie daran, dass gelbe Objekte JavaScript-Verweise und rote Objekte getrennte Knoten sind, auf die von einem mit einem gelben Hintergrund verwiesen wird.  
 
-**Was entsprechen die verschiedenen Konstruktoren \ (Group \)-Einträge im Heap Profiler?**  
+**Was entsprechen die verschiedenen Konstruktoreinträge \(Group\) im Heap-Profiler?**  
 
-:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png" alt-text="Auswählen des Profil Erstellungs Typs" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png":::
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png" alt-text="Konstruktorgruppen" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png":::
    **Konstruktorgruppen**  
 :::image-end:::  
 
-| Konstruktor \ (Gruppe \) Eintrag | Beschreibung |  
+| Konstruktor \(Group\)-Eintrag | Beschreibung |  
 |:--- |:--- |  
-| **\ (globale Eigenschaft \)** | Die zwischen Objekte zwischen einem globalen Objekt \ (wie `window` \) und einem Objekt, auf das verwiesen wird.  Wenn ein Objekt mit einem Konstruktor erstellt `Person` und von einem globalen Objekt gehalten wird, sieht der Beibehaltungs Pfad wie folgt aus `[global] > \(global property\) > Person` .  Dies steht im Gegensatz zur Norm, bei der sich Objekte direkt gegenseitig referenzieren.  Zwischen Objekte bestehen aus Leistungsgründen.  Globals werden regelmäßig geändert, und Eigenschaftenzugriffs Optimierungen erledigen eine gute Aufgabe für nicht-globale Objekte, die nicht für Globals gelten.  |  
-| **\ (Roots \)** | Die Stamm Einträge in der Beibehaltungs Strukturansicht sind die Entitäten, die auf das ausgewählte Objekt verweisen.  Die Einträge können auch Verweise sein, die vom Modul für modulspezifische Zwecke erstellt wurden.  Das Modul hat Zwischenspeicher, die auf Objekte verweisen, aber alle derartigen Bezüge sind schwach und verhindern nicht, dass ein Objekt gesammelt wird, da es keine wirklich starken Bezüge gibt.  |  
-| **\ (Closure \)** | Die Anzahl von Verweisen auf eine Gruppe von Objekten über Funktions Closures.  |  
-| **\ (Array, Zeichenfolge, Zahl, regexp \)** | Eine Liste von Objekttypen mit Eigenschaften, die auf ein Array, eine Zeichenfolge, eine Zahl oder einen regulären Ausdruck verweisen.  |  
-| **\ (kompilierter Code \)** | Alles im Zusammenhang mit kompiliertem Code.  Das Skript ähnelt einer Funktion, entspricht aber einem `<script>` Textkörper.  SharedFunctionInfos \ (SFI \) sind Objekte, die zwischen Funktionen und kompiliertem Code stehen.  Funktionen haben in der Regel einen Kontext, während SFIs nicht.  |  
-| **HTMLDivElement**, **HTMLAnchorElement**, **DocumentFragment**usw.  | Verweise auf Elemente oder Dokument Objekte eines bestimmten Typs, auf die der Code verweist.  |  
+| **\(global property\)** | Die Zwischenobjekte zwischen einem globalen Objekt \(z. B. \) und einem Objekt, auf das `window` verwiesen wird.  Wenn ein Objekt mithilfe eines Konstruktors erstellt wird und von einem globalen Objekt gehalten wird, kann der `Person` Aufbewahrungspfad als dargestellt `[global] > \(global property\) > Person` werden.  Dies steht im Gegensatz zur Norm, bei der Objekte direkt aufeinander verweisen.  Zwischenobjekte sind aus Leistungsgründen vorhanden.  Globals werden regelmäßig geändert, und Eigenschaftenzugriffsoptimierungen sind für nicht-globale Objekte nicht anwendbar.  |  
+| **\(roots\)** | Die Stammeinträge in der Aufbewahrungsstrukturansicht sind die Entitäten, die Verweise auf das ausgewählte Objekt haben.  Die Einträge können auch Verweise sein, die vom Modul zu modulspezifischen Zwecken erstellt werden.  Das Modul verfügt über Caches, die auf Objekte verweisen, aber alle diese Verweise sind schwach und verhindern nicht, dass ein Objekt gesammelt wird, da keine wirklich starken Verweise vorhanden sind.  |  
+| **\(closure\)** | Eine Anzahl von Verweisen auf eine Gruppe von Objekten über Funktionsschließungen.  |  
+| **\(array, string, number, regexp\)** | Eine Liste von Objekttypen mit Eigenschaften, die auf ein Array, eine Zeichenfolge, eine Zahl oder einen regulären Ausdruck verweisen.  |  
+| **\(kompilierter Code\)** | Alles im Zusammenhang mit kompilierten Code.  Skript ähnelt einer Funktion, entspricht jedoch einem `<script>` Textkörper.  SharedFunctionInfos \(SFI\) sind Objekte, die zwischen Funktionen und kompilierten Code stehen.  Funktionen haben in der Regel einen Kontext, sfIs nicht.  |  
+| **HTMLDivElement**, **HTMLAnchorElement**, **DocumentFragment**und so weiter.  | Verweise auf Elemente oder Dokumentobjekte eines bestimmten Typs, auf die ihr Code verweist.  |  
 
 <!--todo: add heap profiling summary section when available -->  
 
-### Vergleichsansicht  
+### <a name="comparison-view"></a>Vergleichsansicht  
 
-Suchen Sie durchgesickerte Objekte, indem Sie mehrere Schnappschüsse miteinander vergleichen.  Wenn Sie sicherstellen möchten, dass ein bestimmter Anwendungsvorgang keine Undichtigkeiten verursacht \ (beispielsweise in der Regel ein paar von direkten und umgekehrten Vorgängen, wie das Öffnen eines Dokuments und das anschließende Schließen des Dokuments), sollten Sie die folgenden Schritte ausführen:  
+Suchen Sie nach undichten Objekten, indem Sie mehrere Momentaufnahmen miteinander vergleichen.  Um zu überprüfen, ob ein bestimmter Anwendungsvorgang keine Lecks \(z. B. ein Paar direkter und umgekehrter Vorgänge, z. B. das Öffnen eines Dokuments und das anschließende Schließen, keine Undichte hinterlassen sollte\), können Sie das folgende Szenario befolgen:  
 
-1.  Erstellen Sie einen Heap-Snapshot, bevor Sie einen Vorgang ausführen.  
-1.  Durchführen eines Vorgangs \ (Interaktion mit einer Seite auf eine Art und Weise, von der Sie glauben, dass Sie ein Leck verursacht).  
-1.  Durchführen eines umgekehrten Vorgangs \ (die entgegengesetzte Interaktion ausführen und einige Male wiederholen \).  
-1.  Nehmen Sie einen zweiten Heap-Snapshot auf, und ändern Sie die Ansicht dieser Person in einen **Vergleich**, und vergleichen Sie Sie mit **Snapshot 1**.  
+1.  Erstellen Sie eine Heapmomentaufnahme, bevor Sie einen Vorgang ausführen.  
+1.  Führen Sie einen Vorgang \(interagieren Sie mit einer Seite in einer Weise aus, von der Sie glauben, dass ein Leck verursacht wird\).  
+1.  Führen Sie einen umgekehrten Vorgang aus \(Führen Sie die entgegengesetzte Interaktion aus, und wiederholen Sie sie ein paar Mal\).  
+1.  Erstellen Sie einen zweiten Heapsnapshot, und ändern Sie die Ansicht dieser in **Vergleich**, und vergleichen Sie sie mit **Snapshot 1**.  
     
-In der **Vergleichs** Ansicht wird der Unterschied zwischen zwei Schnappschüssen angezeigt.  Wenn Sie einen Gesamteintrag erweitern, werden hinzugefügte und gelöschte Objektinstanzen angezeigt.  
+In der **Vergleichsansicht** wird der Unterschied zwischen zwei Momentaufnahmen angezeigt.  Beim Erweitern eines Gesamteintrags werden hinzugefügte und gelöschte Objektinstanzen angezeigt.  
 
-:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-comparison-dropdown.msft.png" alt-text="Auswählen des Profil Erstellungs Typs" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-comparison-dropdown.msft.png":::
-   **Vergleichs** Ansicht  
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-comparison-dropdown.msft.png" alt-text="Vergleichsansicht" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-comparison-dropdown.msft.png":::
+   **Vergleichsansicht**  
 :::image-end:::  
 
 <!--todo: add HeapProfilingComparison section when available  -->  
 
-### Einkapselungs Ansicht  
+### <a name="containment-view"></a>Containment-Ansicht  
 
-Die **Einkapselungs** Ansicht ist im Grunde eine "Vogelperspektive" der Objektstruktur Ihrer Anwendung.  Sie ermöglicht es Ihnen, in Funktions Verschlüssen zu spähen, die virtuellen computerinternen Objekte zu beobachten, die zusammen Ihre JavaScript-Objekte bilden, und zu verstehen, wie viel Arbeitsspeicher Ihre Anwendung auf einem sehr geringen Niveau verwendet.  
+Die **Containment-Ansicht** ist im Wesentlichen eine "Vogelperspektive" der Objektstruktur Ihrer Anwendung.  Es ermöglicht Ihnen, einen Blick in Funktionsschließungen zu werfen, interne Objekte des virtuellen Computers \(VM\) zu beobachten, die ihre JavaScript-Objekte zusammen stellen, und zu verstehen, wie viel Arbeitsspeicher Ihre Anwendung auf sehr niedriger Ebene verwendet.  
 
-| Einstiegspunkte für die Eindämmungs Ansicht | Beschreibung |  
+| Einstiegspunkte für die Eindämmungsansicht | Beschreibung |  
 |:--- |:--- |  
 | **DOMWindow-Objekte** | Globale Objekte für JavaScript-Code.  |  
-| **GC-Stämme** | Die tatsächlichen GC-Stämme, die vom Garbage des virtuellen Computers verwendet werden.  GC-Stämme umfassen integrierte Objektzuordnungen, Symboltabellen, VM-Threadstapel, Kompilierungs Caches, handlebereiche und globale Handles.  |  
-| **Systemeigene Objekte** | Browser Objekte werden innerhalb des virtuellen JavaScript-Computers "geschoben" \ (JavaScript VM \), um die Automatisierung zu ermöglichen, beispielsweise DOM-Knoten, CSS-Regeln.  |  
+| **GC-Stamm** | Die tatsächlichen GC-Stammwurzeln, die vom Garbage of the VM verwendet werden.  GC-Stammpunkte bestehen aus integrierten Objektzuordnungen, Symboltabellen, VM-Threadstapeln, Kompilierungscaches, Handlebereiche und globalen Handles.  |  
+| **Systemeigene Objekte** | Browserobjekte werden innerhalb des virtuellen JavaScript-Computers \(JavaScript VM\) "pushed", um Automatisierung zu ermöglichen, z. B. DOM-Knoten, CSS-Regeln.  |  
 
-:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-containment-dropdown.msft.png" alt-text="Auswählen des Profil Erstellungs Typs" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-containment-dropdown.msft.png":::
-   **Einkapselungs** Ansicht  
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-containment-dropdown.msft.png" alt-text="Containment-Ansicht" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-containment-dropdown.msft.png":::
+   **Containment-Ansicht**  
 :::image-end:::  
 
 <!--todo: add heap profiling containment section when available  -->  
 
 > [!TIP]
-> Ein Tipp zu Closures.  Benennen Sie die Funktionen, damit Sie problemlos zwischen den Closures im Schnappschuss unterscheiden können.  In diesem Beispiel werden beispielsweise keine benannten Funktionen verwendet.  
+> Ein Tipp zu Verschlüssen.  Benennen Sie die Funktionen so, dass Sie problemlos zwischen Verschlüssen in der Momentaufnahme unterscheiden können.  In diesem Beispiel werden beispielsweise keine benannten Funktionen verwendet.  
 > 
 > ```javascript
 > function createLargeClosure() {
@@ -173,7 +173,7 @@ Die **Einkapselungs** Ansicht ist im Grunde eine "Vogelperspektive" der Objektst
 > }
 > ```  
 > 
-> Das followingcode-Snippet verwendet benannte Funktionen.  
+> Der folgende Codeausschnitt verwendet benannte Funktionen.  
 > 
 > ```javascript
 > function createLargeClosure() {
@@ -186,38 +186,38 @@ Die **Einkapselungs** Ansicht ist im Grunde eine "Vogelperspektive" der Objektst
 > ```  
 > 
 > <!--  
-> :::image type="complex" source="../media/memory-problems-domleaks.msft.png" alt-text="Auswählen des Profil Erstellungs Typs" lightbox="../media/memory-problems-domleaks.msft.png":::
+> :::image type="complex" source="../media/memory-problems-domleaks.msft.png" alt-text="Name functions to distinguish between closures" lightbox="../media/memory-problems-domleaks.msft.png":::
 >    Name functions to distinguish between closures  
 > :::image-end:::  
 > -->  
 > 
 > > [!NOTE]
-> > Probieren Sie dieses Beispiel aus, [warum das `eval` böse ist][GlitchDevtoolsMemoryExample07] , um die Auswirkungen von Closures auf den Arbeitsspeicher zu analysieren.  Möglicherweise sind Sie auch daran interessiert, es mit diesem Beispiel zu befolgen, das Sie durch das Aufzeichnen von [Heapzuweisungen][GlitchDevtoolsMemoryExample08]führt.  
+> > Probieren Sie dieses Beispiel [aus, warum `eval` es übl ist,][GlitchDevtoolsMemoryExample07] die Auswirkungen von Sperrungen auf den Speicher zu analysieren.  Sie können auch daran interessiert sein, diesem Beispiel nachzu folgen, das Sie durch die Aufzeichnung von [Heapzuordnungen führt.][GlitchDevtoolsMemoryExample08]  
 > 
 
-## Nachschlagen der Farbcodierung  
+## <a name="look-up-color-coding"></a>Suchen nach Farbcodierung  
 
-Eigenschaften und Eigenschaftswerte von Objekten haben unterschiedliche Typen und werden entsprechend eingefärbt.  Jede Eigenschaft hat einen von vier Typen.  
+Eigenschaften und Eigenschaftswerte von Objekten haben unterschiedliche Typen und werden entsprechend gefärbt.  Jede Eigenschaft hat einen von vier Typen.  
 
 | Eigenschaftstyp | Beschreibung |  
 |:--- |:--- |  
-| **a: Eigenschaft** | Eine reguläre Eigenschaft mit einem Namen, auf den über den `.` \ (dot \)-Operator zugegriffen wird, `[` `]` beispielsweise über die Notation \ (Brackets \) `["foo bar"]` .  |  
-| **0: Element** | Eine reguläre Eigenschaft mit einem numerischen Index, auf die über `[` `]` \ (eckige Klammern \)-Notation zugegriffen wird.  |  
-| **a: Kontext var** |  Eine Variable in einem Funktionskontext, auf die über den Variablennamen in einem Funktions Abschluss zugegriffen werden kann.  |  
-| **a: System Prop** | Eine von der JavaScript-VM hinzugefügte Eigenschaft, auf die über JavaScript-Code nicht zugegriffen werden kann.  |  
+| **a: property** | Eine reguläre Eigenschaft mit einem Namen, auf die über den `.` \(dot\)-Operator zugegriffen wird, oder über `[` `]` \(brackets\)-Notation, z. B. `["foo bar"]` .  |  
+| **0: Element** | Eine reguläre Eigenschaft mit einem numerischen Index, auf die über `[` `]` die Notation \(brackets\) zugegriffen wird.  |  
+| **a: context var** |  Eine Variable in einem Funktionskontext, auf die über den Variablennamen innerhalb einer Funktionsschließung zugegriffen werden kann.  |  
+| **a: System-Prop** | Eine Eigenschaft, die von der JavaScript-VM hinzugefügt wurde und nicht über JavaScript-Code zugänglich ist.  |  
 
-Objekte, `System` die als kein entsprechender JavaScript-Typ gekennzeichnet sind.  Jede ist Teil der Objekt Systemimplementierung der JavaScript-VM.  V8 ordnet die meisten internen Objekte im gleichen Heap wie die JS-Objekte des Benutzers an.  Das sind also nur V8-Interna.  
+Objekte, die `System` nicht über einen entsprechenden JavaScript-Typ verfügen.  Jeder ist Teil der Objektsystemimplementierung der Javascript-VM.  V8 weist die meisten internen Objekte im gleichen Heap wie die JS-Objekte des Benutzers zu.  Dies sind also nur V8-Interne.  
 
-## Suchen nach einem bestimmten Objekt  
+## <a name="find-a-specific-object"></a>Suchen eines bestimmten Objekts  
 
-Wenn Sie ein Objekt im gesammelten Heap suchen möchten, können Sie `Ctrl` + `F` die Objekt-ID verwenden und angeben.  
+Um ein Objekt im gesammelten Heap zu finden, können Sie die Objekt-ID verwenden `Ctrl` + `F` und geben.  
 
-## Aufdecken von Dom-Lecks  
+## <a name="uncover-dom-leaks"></a>Aufdecken von DOM-Lecks  
 
-Der Heap-Profiler hat die Möglichkeit, bidirektionale Abhängigkeiten zwischen Browser systemeigenen Objekten \ (DOM-Knoten, CSS-Regeln \) und JavaScript-Objekten wiederzugeben.
-Dies hilft bei der Ermittlung von ansonsten unsichtbaren Lecks, die durch vergessene, freigegebene Dom-unter Bäume entstehen.  
+Der Heapprofiler kann bidirektionale Abhängigkeiten zwischen browsereigenen Objekten \(DOM-Knoten, CSS-Regeln\) und JavaScript-Objekten widerspiegeln.
+Dies hilft, ansonsten unsichtbare Lecks zu erkennen, die aufgrund vergessener getrennter DOM-Unterstrukturen passieren, die herumschlaufen.  
 
-Dom-Lecks können größer sein, als Sie denken.  Sehen Sie sich das folgende Beispiel an:  Wann ist der #Tree GC?  
+DOM-Lecks können größer sein, als Sie denken.  Ziehen Sie das folgende Beispiel in Betracht.  Wann ist die #tree GC?  
 
 ```javascript
 var select = document.querySelector;
@@ -233,16 +233,16 @@ leafRef = null;
 //#NOW able to be #tree GC
 ```  
 
-Der `#leaf` verwaltet einen Verweis auf das relevante übergeordnete Element \ (parentNode \) und rekursiv bis zu `#tree` , sodass nur dann, wenn leafRef ungültig ist, die gesamte Struktur unter `#tree` einem Kandidaten für GC verfügbar ist.  
+Der behält einen Verweis auf das relevante übergeordnete Objekt \(parentNode\) bei und rekursiv bis , also nur, wenn leafRef nullifiziert wird, ist die GESAMTE Struktur unter einem Kandidaten für `#leaf` `#tree` `#tree` GC.  
 
-:::image type="complex" source="../media/memory-problems-tree-gc.msft.png" alt-text="Auswählen des Profil Erstellungs Typs" lightbox="../media/memory-problems-tree-gc.msft.png":::
-   Dom-Teilbäume  
+:::image type="complex" source="../media/memory-problems-tree-gc.msft.png" alt-text="DOM-Unterstrukturen" lightbox="../media/memory-problems-tree-gc.msft.png":::
+   DOM-Unterstrukturen  
 :::image-end:::  
 
 > [!NOTE]
-> Beispiele: Probieren Sie dieses Beispiel eines [undichten DOM-Knotens][GlitchDevtoolsMemoryExample06] aus, um zu verstehen, wo er undicht sein kann und wie er erkannt wird.  Sie können sich auch dieses Beispiel für [Undichtigkeiten von Dom anschauen, die größer als erwartet sind][GlitchDevtoolsMemoryExample09].  
+> Beispiele: Probieren Sie dieses Beispiel für einen nicht mehr vorhandenen [DOM-Knoten][GlitchDevtoolsMemoryExample06] aus, um zu verstehen, wo und wie sie erkannt werden können.  Sie können sich auch dieses Beispiel dafür anschauen, dass [DOM-Lecks größer als erwartet sind.][GlitchDevtoolsMemoryExample09]  
 
-Weitere Informationen zu Dom-Lecks und Grundlagen der Speicheranalyse finden Sie unter Auschecken von [Speicherlecks bei der Suche nach dem Microsoft Edge-devtools][GonzaloRuizdeVillaMemory] von Gonzalo Ruiz de Villa.  
+Weitere Informationen zu DOM-Lecks und Grundlagen der Speicheranalyse finden Sie unter Suchen und Debuggen von Speicherlecks mit den [Microsoft Edge DevTools][GonzaloRuizdeVillaMemory] von Gonzalo Ruiz de Villa.  
 
 <!--  
 > [!NOTE]
@@ -251,14 +251,14 @@ Weitere Informationen zu Dom-Lecks und Grundlagen der Speicheranalyse finden Sie
 
 <!--todo: add heap profiling dom leaks section when available  -->  
 
-## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsMemoryProblems101ObjectSizes]: ./memory-101.md#object-sizes "Objektgrößen – Speicher Terminologie | Microsoft docs"  
-[DevtoolsMemoryProblems101ObjectsRetainingTree]: ./memory-101.md#objects-retaining-tree "Objekte, die die Struktur des Arbeitsspeichers beibehalten | Microsoft docs"  
+[DevtoolsMemoryProblems101ObjectSizes]: ./memory-101.md#object-sizes "Objektgrößen – Speicherterminologie | Microsoft Docs"  
+[DevtoolsMemoryProblems101ObjectsRetainingTree]: ./memory-101.md#objects-retaining-tree "Struktur der Aufbewahrung von Objekten – Speicherterminologie | Microsoft Docs"  
 
 <!--[DevToolsHeapProfilingComparison]: https://developer.alphabet.com/devtools/docs/heap-profiling-comparison ""  -->  
 <!--[DevToolsHeapProfilingContainment]: https://developer.alphabet.com/devtools/docs/heap-profiling-containment ""  -->  
@@ -266,20 +266,20 @@ Weitere Informationen zu Dom-Lecks und Grundlagen der Speicheranalyse finden Sie
 <!--[DevToolsHeapProfilingSummary]: https://developer.alphabet.com/devtools/docs/heap-profiling-summary ""  -->  
 <!--[DevtoolsProfileMemoryProblemsDiagnosisCausesMemoryLeaks]: ../profile/memory-problems/memory-diagnosis#narrow-down-causes-of-memory-leaks ""  -->  
 
-[GlitchDevtoolsMemoryExample03]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-03.html "example-03.html-Microsoft Edge (Chrom) devtools | Glitch"  
-[GlitchDevtoolsMemoryExample06]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-06.html "example-06.html-Microsoft Edge (Chrom) devtools | Glitch"  
-[GlitchDevtoolsMemoryExample07]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-07.html "example-07.html-Microsoft Edge (Chrom) devtools | Glitch"  
-[GlitchDevtoolsMemoryExample08]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-08.html "example-08.html-Microsoft Edge (Chrom) devtools | Glitch"  
-[GlitchDevtoolsMemoryExample09]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-09.html "example-09.html-Microsoft Edge (Chrom) devtools | Glitch"  
-[GlitchDevtoolsMemoryExample10]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-10.html "example-10.html-Microsoft Edge (Chrom) devtools | Glitch"  
+[GlitchDevtoolsMemoryExample03]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-03.html "example-03.html – Microsoft Edge (Chromium) DevTools | Glitch"  
+[GlitchDevtoolsMemoryExample06]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-06.html "example-06.html – Microsoft Edge (Chromium) DevTools | Glitch"  
+[GlitchDevtoolsMemoryExample07]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-07.html "example-07.html – Microsoft Edge (Chromium) DevTools | Glitch"  
+[GlitchDevtoolsMemoryExample08]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-08.html "example-08.html – Microsoft Edge (Chromium) DevTools | Glitch"  
+[GlitchDevtoolsMemoryExample09]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-09.html "example-09.html – Microsoft Edge (Chromium) DevTools | Glitch"  
+[GlitchDevtoolsMemoryExample10]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-10.html "example-10.html – Microsoft Edge (Chromium) DevTools | Glitch"  
 
-[GonzaloRuizdeVillaMemory]: https://slid.es/gruizdevilla/memory "Arbeitsspeicher | Folien"  
+[GonzaloRuizdeVillaMemory]: https://slid.es/gruizdevilla/memory "Speicher | Folien"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
-> Die ursprüngliche Seite wird [hier](https://developers.google.com/web/tools/chrome-devtools/memory-problems/heap-snapshots) gefunden und von [Meggin Kearney][MegginKearney] (Technical Writer \) erstellt.  
+> Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
+> Die ursprüngliche Seite befindet sich [hier und](https://developers.google.com/web/tools/chrome-devtools/memory-problems/heap-snapshots) wird von [Meggin Kearney][MegginKearney] \(Technical Writer\) verfasst.  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

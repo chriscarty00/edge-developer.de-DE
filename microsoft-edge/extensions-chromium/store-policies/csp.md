@@ -1,26 +1,26 @@
 ---
-description: Inhalts Sicherheitsrichtlinie für Edge (Chrom)-Erweiterungen.
-title: Inhalts Sicherheitsrichtlinie (CSP)
+description: Inhaltssicherheitsrichtlinie für Edgeerweiterungen (Chromium).
+title: Inhaltssicherheitsrichtlinie (Content Security Policy, CSP)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge-Chromium, Erweiterungen-Entwicklung, Browser-Erweiterungen, Addons, Partner Center, Entwickler
-ms.openlocfilehash: f3769639465d048c42ad0705f74598fbd1db8a20
-ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
+keywords: edge-chromium, Erweiterungenentwicklung, Browsererweiterungen, Addons, Partner Center, Entwickler
+ms.openlocfilehash: 8307482e780b4d631edffd976cca7ba724e2ad40
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015716"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397517"
 ---
-# Inhalts Sicherheitsrichtlinie \ (CSP \)  
+# <a name="content-security-policy-csp"></a>Inhaltssicherheitsrichtlinie \(CSP\)  
 
-Um eine große Klasse potenzieller Probleme mit Website übergreifendem Skripting zu verringern, hat das Microsoft Edge-Erweiterungssystem das allgemeine Konzept der [Inhalts Sicherheitsrichtlinie (CSP \)][W3CContentSecurityPolicy]übernommen.  Dies führt einige ziemlich strenge Richtlinien ein, die Erweiterungen standardmäßig sicherer machen, und bietet Ihnen die Möglichkeit, Regeln für die Typen von Inhalten zu erstellen und zu erzwingen, die von ihren Erweiterungen und Anwendungen geladen und ausgeführt werden können.  
+Um eine große Klasse potenzieller websiteübergreifender Skriptingprobleme zu beheben, hat das Microsoft Edge Extension-System das allgemeine Konzept der Inhaltssicherheitsrichtlinie [\(CSP\) integriert.][W3CContentSecurityPolicy]  Dies führt einige ziemlich strenge Richtlinien ein, die Erweiterungen standardmäßig sicherer machen, und bietet Ihnen die Möglichkeit, Regeln für die Inhaltstypen zu erstellen und zu erzwingen, die von Ihren Erweiterungen und Anwendungen geladen und ausgeführt werden können.  
 
-Im Allgemeinen funktioniert CSP als Block-allowlisting-Mechanismus für Ressourcen, die von ihren Erweiterungen geladen oder ausgeführt werden.  Wenn Sie eine angemessene Richtlinie für Ihre Erweiterung definieren, können Sie die Ressourcen, die ihre Erweiterung erfordert, sorgfältig berücksichtigen und den Browser bitten, sicherzustellen, dass dies die einzigen Ressourcen ist, auf die ihre Erweiterung zugreifen kann.  Diese Richtlinien bieten Sicherheit über die Host Berechtigungen für Ihre Erweiterungsanforderungen. Es handelt sich um eine zusätzliche Schutzebene, die nicht ersetzt werden kann.  
+Im Allgemeinen funktioniert CSP als Block-/Allowlisting-Mechanismus für Ressourcen, die von Ihren Erweiterungen geladen oder ausgeführt werden.  Wenn Sie eine angemessene Richtlinie für Ihre Erweiterung definieren, können Sie die Für ihre Erweiterung benötigten Ressourcen sorgfältig berücksichtigen und den Browser bitten, sicherzustellen, dass diese Ressourcen die einzigen Ressourcen sind, auf die Ihre Erweiterung Zugriff hat.  Die Richtlinien bieten Sicherheit über die Hostberechtigungen, die Ihre Erweiterung anfordert. Sie sind eine zusätzliche Schutzebene, keine Ersetzung.  
 
-Im Web wird eine solche Richtlinie über einen HTTP-Header oder- `meta` Element definiert.  Innerhalb des Microsoft Edge-Erweiterungssystems ist kein geeigneter Mechanismus.  Stattdessen wird eine Erweiterungs Richtlinie über die `manifest.json` Datei für die Erweiterung wie folgt definiert:  
+Im Web wird eine solche Richtlinie über einen HTTP-Header oder -Element `meta` definiert.  Innerhalb des Microsoft Edge Extension-Systems ist keine der beiden Mechanismen geeignet.  Stattdessen wird eine Erweiterungsrichtlinie mithilfe der Datei für die `manifest.json` Erweiterung wie folgt definiert:  
 
 ```javascript
 {
@@ -30,21 +30,21 @@ Im Web wird eine solche Richtlinie über einen HTTP-Header oder- `meta` Element 
 }
 ```  
 
-> Ausführliche Informationen zur CSP-Syntax finden Sie in der [Inhalts Sicherheitsrichtlinien-Spezifikation][W3CContentSecurityPolicy] und im Artikel ["eine Einführung in die Inhaltssicherheit"][HTML5RocksIntroductionContentSecurityPolicy] auf HTML5Rocks.  
+> Ausführliche Informationen zur #A0 finden Sie in [][W3CContentSecurityPolicy] der Spezifikation für Inhaltssicherheitsrichtlinien und im Artikel ["An Introduction to Content Security Policy"][HTML5RocksIntroductionContentSecurityPolicy] auf HTML5Rocks.  
 
-## Standardmäßige Richtlinieneinschränkungen  
+## <a name="default-policy-restrictions"></a>Standardrichtlinieneinschränkungen  
 
-Pakete, die keine definieren, `manifest_version` verfügen nicht über eine Standardrichtlinie für Inhaltssicherheit.  Für diejenigen, die `manifest_version` 2 auswählen, gibt es eine Standardrichtlinie für Inhaltssicherheit:  
+Pakete, die keine `manifest_version` definieren, verfügen nicht über eine Standardrichtlinie für die Inhaltssicherheit.  Pakete, die `manifest_version` 2 auswählen, verfügen über die folgende Standardrichtlinie für die Inhaltssicherheit.  
 
 ```javascript
 script-src 'self'; object-src 'self'
 ```  
 
-Diese Richtlinie bietet Sicherheit, indem Erweiterungen und Anwendungen auf drei Arten eingeschränkt werden:  
+Die Richtlinie erhöht die Sicherheit, indem Erweiterungen und Anwendungen auf drei Arten eingeschränkt werden:  
 
-**Eval und verwandte Funktionen sind deaktiviert**  
+**Eval und zugehörige Funktionen sind deaktiviert**  
 
-Code wie den folgenden funktioniert nicht:  
+Code wie der folgende funktioniert nicht:  
 
 ```javascript
 alert(eval("foo.bar.baz"));
@@ -53,7 +53,7 @@ window.setInterval("alert('hi')", 10);
 new Function("return foo.bar.baz");
 ```  
 
-Die Auswertung von Zeichenfolgen mit JavaScript wie diesem ist ein häufig verwendeter XSS-Angriffsvektor.  Stattdessen sollten Sie Code wie folgt schreiben:
+Die Auswertung von Zeichenfolgen von JavaScript wie dieser ist ein gängiger XSS-Angriffsvektor.  Stattdessen sollten Sie Code wie:
 
 ```javascript
 alert(foo && foo.bar && foo.bar.baz);
@@ -64,9 +64,9 @@ function() { return foo && foo.bar && foo.bar.baz };
 
 **Inline-JavaScript wird nicht ausgeführt**  
 
-Inline-JavaScript wird nicht ausgeführt.  Diese Einschränkung `<script>` verbietet sowohl Inline Blöcke als auch Inline-Ereignishandler wie `<button onclick="...">` .
+Inline-JavaScript wird nicht ausgeführt.  Diese Einschränkung verbietet sowohl Inlineblöcke als auch `<script>` Inlineereignishandler, z. B. `<button onclick="...">` .
 
-Mit der ersten Einschränkung wird eine große Klasse von websiteübergreifenden Skripting-Angriffen gelöscht, da Sie das Skript, das von einem böswilligen Drittanbieter bereitgestellt wird, nicht versehentlich ausführen können.  Allerdings ist es erforderlich, dass Sie Ihren Code mit einer sauberen Trennung zwischen Inhalt und Verhalten schreiben \ (was Sie natürlich ohnehin tun sollten, oder? \).  Ein Beispiel kann dies deutlicher machen.  Sie können versuchen, ein Popup-Fenster für eine Browser Aktion zu schreiben, das `pop-up.html` Folgendes enthält:  
+Mit der ersten Einschränkung wird eine große Klasse von websiteübergreifenden Skriptangriffen gelöscht, da es Ihnen nicht möglich ist, das skript versehentlich auszuführen, das von einem böswilligen Drittanbieter bereitgestellt wurde.  Es ist jedoch erforderlich, dass Sie Ihren Code mit einer sauberen Trennung zwischen Inhalt und Verhalten \(was Sie natürlich trotzdem tun sollten, richtig?\) schreiben.  Ein Beispiel kann dies deutlicher machen.  Sie können versuchen, ein Browseraktion-Popup als einzelnes Popup zu schreiben, `pop-up.html` das:  
 
 ```html
 <!doctype html>
@@ -99,13 +99,13 @@ Mit der ersten Einschränkung wird eine große Klasse von websiteübergreifenden
 </html>
 ```  
 
-Drei Dinge müssen sich ändern, um diese Arbeit wie erwartet zu gestalten:  
+Drei Dinge müssen sich ändern, damit dies so funktioniert, wie Sie es erwarten:  
 
-*   Die `clickHandler` Definition muss in eine externe JavaScript-Datei verschoben werden \ ( `popup.js` kann ein gutes Ziel sein).  
-*   Die Definitionen des Inline-Ereignishandlers müssen in Bezug auf `addEventListener` und extrahiert werden `popup.js` .  
-    Wenn Sie das Programm zurzeit mithilfe von Code wie starten `<body onload="main();">` , sollten Sie es in der Weise ersetzen, indem Sie das `DOMContentLoaded` Ereignis des Dokuments oder das `load` Ereignis des Fensters abhängig von Ihren Anforderungen einbinden.  Verwenden Sie das erstere, da es in der Regel schneller auslöst.  
+*   Die `clickHandler` Definition muss in eine externe JavaScript-Datei \( verschoben werden. `popup.js`  
+*   Die Inlineereignishandlerdefinitionen müssen im Sinne von umgeschrieben und in `addEventListener` extrahiert `popup.js` werden.  
+    Wenn Sie Ihr Programm derzeit mit Code wie starten, sollten Sie es ersetzen, indem Sie es je nach Ihren Anforderungen in das Dokumentereignis oder das Ereignis des `<body onload="main();">` `DOMContentLoaded` `load` Fensters einhaken.  Verwenden Sie erstere, da sie im Allgemeinen schneller ausgelöst wird.  
 
-*   Der `setTimeout` Aufruf muss neu geschrieben werden, um zu verhindern, dass die Zeichenfolge `"awesome(); totallyAwesome()"` in JavaScript für die Ausführung konvertiert wird.  
+*   Der `setTimeout` Aufruf muss umgeschrieben werden, um zu vermeiden, dass die Zeichenfolge zur Ausführung in `"awesome(); totallyAwesome()"` JavaScript konvertiert wird.  
     Diese Änderungen können etwa wie folgt aussehen:  
 
 ```javascript
@@ -152,11 +152,11 @@ document.addEventListener('DOMContentLoaded', function () {
 </html>
 ```  
 
-**Es werden nur lokale Skript-und Objektressourcen geladen**  
+**Nur lokale Skript- und Objektressourcen werden geladen**  
 
-Skript-und Objektressourcen können nur aus dem Erweiterungspaket geladen werden, nicht aus dem ganzen Web.  Dadurch wird sichergestellt, dass Ihre Erweiterung nur den von Ihnen ausdrücklich genehmigten Code ausführt, wodurch verhindert wird, dass ein aktiver Netzwerk Angreifer Ihre Anforderung für eine Ressource in böswilliger Weise umleitet.  
+Skript- und Objektressourcen können nur aus dem Erweiterungspaket geladen werden, nicht aus dem Web.  Dadurch wird sichergestellt, dass ihre Erweiterung nur den speziell genehmigten Code ausgeführt, um zu verhindern, dass ein aktiver Netzwerkangreifer Ihre Anforderung für eine Ressource böswillig umleiten kann.  
 
-Anstatt Code zu schreiben, der von jQuery \ (oder einer anderen Bibliothek \) abhängig ist, die von einem externen CDN geladen werden, sollten Sie die spezifische Version von jQuery in Ihrem Erweiterungspaket einbeziehen.  Das heißt, statt:  
+Anstatt Code zu schreiben, der vom Laden von jQuery \(oder einer anderen Bibliothek\) aus einem externen CDN abhängt, sollten Sie erwägen, die spezifische Version von jQuery in Das Erweiterungspaket zu verwenden.  Das heißt, anstatt:  
 
 ```html
 <!doctype html>
@@ -171,7 +171,7 @@ Anstatt Code zu schreiben, der von jQuery \ (oder einer anderen Bibliothek \) ab
 </html>
 ```  
 
-Laden Sie die Datei herunter, fügen Sie Sie in Ihr Paket ein, und schreiben Sie Folgendes:  
+Laden Sie die Datei herunter, fügen Sie sie in Ihr Paket ein, und schreiben Sie:  
 
 ```html
 <!doctype html>
@@ -186,75 +186,75 @@ Laden Sie die Datei herunter, fügen Sie Sie in Ihr Paket ein, und schreiben Sie
 </html>
 ```  
 
-## Entspannen der Standardrichtlinie  
+## <a name="relaxing-the-default-policy"></a>Lockern der Standardrichtlinie  
 
-**Inline Skript**  
+**Inlineskript**  
 
 <!-- Up until Chrome 45, there was no mechanism for relaxing the restriction against running inline JavaScript.  In particular, setting a script policy that includes `'unsafe-inline'` has no effect.  
 
 As of Chrome 46, -->  
 
-Inline Skripts können durch Angabe des Base64-codierten Hashs des Quellcodes in der Richtlinie zugelassen werden.  Dieser Hash muss vom verwendeten Hashalgorithmus (SHA256, SHA384 oder SHA512 \) vorangestellt werden.  Ein Beispiel finden Sie unter [Hash Verwendung für \<script\> Elemente][W3CContentSecurityPolicyLevel2ScriptSrcHashUsage] .  
+Inlineskripts können zulässig sein, indem der base64-codierte Hash des Quellcodes in der Richtlinie angegeben wird.  Diesem Hash muss der verwendete Hashalgorithmus \(sha256, sha384 oder sha512\) vorangestellt werden.  Navigieren Sie beispielsweise zu [Hashverwendung für \<script\> Elemente][W3CContentSecurityPolicyLevel2ScriptSrcHashUsage].  
 
-**Remote Skript**  
+**Remoteskript**  
 
-Wenn Sie einige externe JavaScript-oder Objektressourcen benötigen, können Sie die Richtlinie in begrenztem Umfang lockern, indem Sie allowlisting, um sicherzustellen, woher Skripts akzeptiert werden sollen.  Überprüfen Sie, ob Laufzeitressourcen, die mit erhöhten Berechtigungen einer Erweiterung geladen werden, genau die erwarteten Ressourcen sind und nicht durch einen aktiven Netzwerk Angreifer ersetzt werden.  Da [man-in-the-Middle-Angriffe][WikiManMiddleAttacks] sowohl trivial als auch unauffindbar über HTTP sind, werden diese Ursprünge nicht akzeptiert.  
+Wenn Sie externe JavaScript- oder Objektressourcen benötigen, können Sie die Richtlinie in begrenztem Umfang lockern, indem Sie sichere Ursprünge zulassen, von denen Skripts akzeptiert werden sollen.  Stellen Sie sicher, dass Laufzeitressourcen, die mit erhöhten Berechtigungen einer Erweiterung geladen werden, genau die Ressourcen sind, die Sie erwarten, und nicht durch einen aktiven Netzwerkangreifer ersetzt werden.  Da [Man-in-the-Middle-Angriffe][WikiManMiddleAttacks] sowohl trivial als auch über HTTP nicht nachweisbar sind, werden diese Ursprünge nicht akzeptiert.  
 
-Derzeit können entwicklerlist-Ursprünge mit den folgenden Schemas zulassen: `blob` ,, `filesystem` `https` und `extension` .  Der Host-Teil des Ursprungs muss explizit für die `https` und-Schemas angegeben werden `extension` .  Generische Platzhalter wie https: `https://*` und `https://*.com` sind nicht zulässig; Platzhalter für Subdomänen wie `https://*.example.com` zulässig.  Domänen in der [Liste der öffentlichen Suffixe][PublicSuffixList] werden auch als generische Domänen auf oberster Ebene angezeigt.  Um eine Ressource aus diesen Domänen zu laden, muss die Unterdomäne explizit aufgelistet werden.  Ist beispielsweise `https://*.cloudfront.net` ungültig, kann aber `https://XXXX.cloudfront.net` `https://*.XXXX.cloudfront.net` allowlisted sein.  
+Derzeit können Entwickler Die Ursprünge der Liste mit den folgenden Schemas zulassen: `blob` , , , und `filesystem` `https` `extension` .  Der Hostteil des Ursprungs muss explizit für die `https` Und-Schemas angegeben `extension` werden.  Generische Platzhalter wie https:, und sind nicht `https://*` `https://*.com` zulässig. Unterdomänen-Platzhalter wie `https://*.example.com` sind zulässig.  Domänen in der [Liste öffentliches Suffix][PublicSuffixList] werden auch als generische Domänen auf oberster Ebene angezeigt.  Zum Laden einer Ressource aus diesen Domänen muss die Unterdomäne explizit aufgelistet werden.  Ist z. `https://*.cloudfront.net` B. nicht gültig, `https://XXXX.cloudfront.net` kann aber auch `https://*.XXXX.cloudfront.net` `allowlisted` sein.  
 
-Zur Vereinfachung der Entwicklung können Ressourcen, die über HTTP von Servern auf dem lokalen Computer geladen werden, allowlisted werden.  Sie könnenlist-Skript-und Objektquellen an einem beliebigen Port einer der beiden `http://127.0.0.1` oder zulassen `http://localhost` .  
+Zur Erleichterung der Entwicklung können Ressourcen, die über HTTP von Servern auf Ihrem lokalen Computer geladen werden, `allowlisted` sein.  Sie können Skript- und Objektquellen für einen beliebigen Port von oder `http://127.0.0.1` `http://localhost` zulassen.  
 
 > [!NOTE]
-> Die Beschränkung für Ressourcen, die über HTTP geladen werden, gilt nur für die Ressourcen, die direkt ausgeführt werden.  Sie sind nach wie vor kostenlos, um beispielsweise XMLHttpRequest-Verbindungen zu beliebigen Ursprungs zu machen, die Ihnen gefallen; die Standardrichtlinie schränkt `connect-src` oder keine der anderen CSP-Direktiven in irgendeiner Weise ein.  
+> Die Einschränkung für über HTTP geladene Ressourcen gilt nur für die Ressourcen, die direkt ausgeführt werden.  Beispielsweise können Sie weiterhin Verbindungen zu beliebigen Ursprüngen herstellen. Die Standardrichtlinie schränkt keine oder keine der anderen `XMLHTTPRequest` `connect-src` #A0 ein.  
 
-Eine lockere Richtliniendefinition, mit der Skriptressourcen von example.com über HTTPS geladen werden können, sieht wie folgt aus:  
+Eine lockere Richtliniendefinition, die das Laden von Skriptressourcen von `example.com` über HTTPS ermöglicht, kann wie dies aussehen:  
 
 ```javascript
 "content_security_policy": "script-src 'self' https://example.com; object-src 'self'"
 ```  
 
 > [!NOTE]
-> Beide `script-src` und `object-src` werden durch die Richtlinie definiert.  Microsoft Edge akzeptiert keine Richtlinie, die die einzelnen Werte nicht auf \ (mindestens \) ' `self` ' beschränkt.  
+> Beide `script-src` und werden durch die Richtlinie `object-src` definiert.  Microsoft Edge akzeptiert keine Richtlinie, die nicht jeden dieser Werte auf \(mindestens\) ' ' `self` eingrenzt.  
 
 <!-- Making use of Google Analytics is the canonical example for this sort of policy definition.  It is common enough that an Analytics boilerplate of sorts is provided in the Event Tracking with Google Analytics sample Extension, and a brief tutorial that goes into more detail.  -->  
 
-**JavaScript ausgewertet**  
+**Ausgewertetes JavaScript**  
 
-Die Richtlinie für `eval()` und verwandte Funktionen wie und `setTimeout(String)` `setInterval(String)` `new Function(String)` können durch Hinzufügen `unsafe-eval` zu Ihrer Richtlinie gelockert werden:  
+Die Richtlinie für und zugehörige Funktionen wie , und können durch Hinzufügen zu `eval()` `setTimeout(String)` Ihrer Richtlinie `setInterval(String)` `new Function(String)` `unsafe-eval` gelockert werden:  
 
 ```javascript
 "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 ```  
 
-Wir empfehlen jedoch dringend, dies zu tun.  Diese Funktionen sind berüchtigte XSS-Angriffsvektoren.  
+Sie sollten jedoch lockere Richtlinien vermeiden.  Die Funktionen sind berüchtigte XSS-Angriffsvektoren.  
 
-## Verschärfen der Standardrichtlinie  
+## <a name="tightening-the-default-policy"></a>Straffen der Standardrichtlinie  
 
-Sie können diese Richtlinie selbstverständlich so anziehen, wie es Ihre Erweiterung zulässt, um die Sicherheit zu Lasten der Bequemlichkeit zu erhöhen.  Um anzugeben, dass Ihre Erweiterung nur Ressourcen eines beliebigen Typs \ (Bilder usw.) aus dem zugehörigen Erweiterungspaket laden kann, ist beispielsweise eine Richtlinie von `default-src 'self'` geeignet.  
+Sie können diese Richtlinie natürlich in dem Umfang festziehen, den Ihre Erweiterung zulässt, um die Sicherheit auf Kosten der Benutzerfreundlichkeit zu erhöhen.  Um anzugeben, dass Ihre Erweiterung nur Ressourcen eines beliebigen Typs \(Bilder und so weiter\) aus dem zugeordneten Erweiterungspaket laden kann, kann beispielsweise eine Richtlinie von `default-src 'self'` geeignet sein.  
 
 <!-- The Mappy sample Extension is a good example of an Extension that is been locked down above and beyond the defaults.  -->  
 
-## Inhalts Skripts  
+## <a name="content-scripts"></a>Inhaltsskripts  
 
-Die zu diskutierende Richtlinie gilt für die Hintergrundseiten und Ereignis Seiten der Erweiterung.  Die Art und Weise, wie die Inhalts Skripts auf die Inhalts Skripts der Erweiterung angewendet werden, ist komplizierter.  
+Die zu besprechende Richtlinie gilt für die Hintergrund- und Ereignisseiten der Erweiterung.  Die Anwendung der Inhaltsskripts auf die Inhaltsskripts der Erweiterung ist komplizierter.  
 
-Inhalts Skripts unterliegen in der Regel nicht dem CSP der Erweiterung.  Da Inhalts Skripts keine HTML-Datei sind, ist dies hauptsächlich darauf zu verwenden, dass Sie auch dann verwendet werden können, `eval` Wenn der CSP der Erweiterung nicht angibt `unsafe-eval` , dies aber nicht empfohlen wird.  Darüber hinaus gilt der CSP der Seite nicht für Inhalts Skripts.  Komplizierter sind `<script>` Tags, die Inhalts Skripts erstellen und in das DOM der Seite einfügen, auf der Sie ausgeführt werden.  Diese werden als mit Dom-injizierte Skripts weitergeleitet.  
+Inhaltsskripts unterliegen im Allgemeinen nicht dem CSP der Erweiterung.  Da Inhaltsskripts keine HTML sind, besteht der Hauptauswirkungen davon, dass sie auch dann verwendet werden können, wenn der CSP der Erweiterung nicht angegeben wird, obwohl dies `eval` `unsafe-eval` nicht empfohlen wird.  Darüber hinaus gilt der CSP der Seite nicht für Inhaltsskripts.  Komplizierter sind Tags, die Inhaltsskripts erstellen und in das DOM der Seite setzen, `<script>` auf der sie ausgeführt werden.  Diese werden in Zukunft als DOM-injizierte Skripts referenziert.  
 
-Dom-injizierte Skripts, die unmittelbar nach der Injektion in die Seite ausgeführt werden, werden wie erwartet ausgeführt.  Stellen Sie sich ein Inhalts Skript mit dem folgenden Code als einfaches Beispiel vor:  
+DOM-injizierte Skripts, die unmittelbar nach dem Einspritzen in die Seite ausgeführt werden, werden erwartungsgleich ausgeführt.  Stellen Sie sich ein Inhaltsskript mit dem folgenden Code als einfaches Beispiel vor:  
 
 ```javascript
 document.write("<script>alert(1);</script>");
  ```  
 
-Dieses Inhalts Skript bewirkt `alert` unmittelbar nach dem `document.write()` .  Beachten Sie, dass dies unabhängig von der von einer Seite angegebenen Richtlinie ausgeführt werden kann.
-Das Verhalten wird jedoch sowohl innerhalb des DOM-injizierten Skripts als auch bei Skripten komplizierter, die nicht unmittelbar nach der Injektion ausgeführt werden.  Stellen Sie sich vor, dass Ihre Erweiterung auf einer Seite ausgeführt wird, die einen zugeordneten CSP bereitstellt, der angibt `script-src 'self'` .  Stellen Sie sich nun vor, dass das Inhalts Skript den folgenden Code ausführt:  
+Dieses Inhaltsskript bewirkt eine `alert` unmittelbar nach dem `document.write()` .  Beachten Sie, dass dies unabhängig von der Richtlinie ausgeführt wird, die von einer Seite angegeben werden kann.
+Das Verhalten wird jedoch sowohl innerhalb dieses DOM-injizierten Skripts als auch für alle Skripts, die nicht sofort nach der Einspritzung ausgeführt werden, komplizierter.  Stellen Sie sich vor, Ihre Erweiterung wird auf einer Seite ausgeführt, die einen zugeordneten CSP enthält, der `script-src 'self'` angibt.  Stellen Sie sich nun vor, das Inhaltsskript führt den folgenden Code aus:  
 
 ```javascript
 document.write("<button onclick='alert(1);'>click me</button>'");
 ```  
 
-Wenn ein Benutzer auf diese Schaltfläche klickt, `onclick` wird das Skript nicht ausgeführt.  Dies liegt daran, dass das Skript nicht sofort ausgeführt wurde und Code nicht interpretiert wird, bis das Click-Ereignis nicht als Teil des Inhalts Skripts betrachtet wird, daher schränkt der CSP der Seite \ (nicht der Erweiterung \) das Verhalten ein.  Und da dieser CSP nicht angibt `unsafe-inline` , wird der Inline-Ereignishandler blockiert.  
-Die richtige Methode zum Implementieren des gewünschten Verhaltens in diesem Fall ist das Hinzufügen des `onclick` Handlers als Funktion aus dem Inhalts Skript wie folgt:  
+Wenn ein Benutzer diese Schaltfläche aus wählt, wird das `onclick` Skript nicht ausgeführt.  Dies liegt daran, dass das Skript nicht sofort ausgeführt wurde und Code erst interpretiert wird, wenn das Ereignis als Teil des Inhaltsskripts betrachtet wird, sodass der CSP der Seite \(nicht der Erweiterung\) das Verhalten `click` einschränkt.  Und da dieser CSP keine Angabe macht, wird der `unsafe-inline` Inlineereignishandler blockiert.  
+Die richtige Möglichkeit, das gewünschte Verhalten in diesem Fall zu implementieren, kann sein, den Handler wie eine Funktion aus dem `onclick` Inhaltsskript wie folgt hinzuzufügen:  
 
 ```javascript
 document.write("<button id='mybutton'>click me</button>'");
@@ -264,7 +264,7 @@ button.onclick = function() {
 };
 ```  
 
-Ein anderes ähnliches Problem tritt auf, wenn das Inhalts Skript Folgendes ausführt:  
+Ein weiteres ähnliches Problem tritt auf, wenn das Inhaltsskript Folgendes ausgeführt wird:  
 
 ```javascript
 var script = document.createElement('script');
@@ -272,7 +272,7 @@ script.innerHTML = 'alert(1);'
 document.getElementById('body').appendChild(script);
 ```  
 
-In diesem Fall wird das Skript ausgeführt, und die Benachrichtigung wird angezeigt.  In diesem Fall gehen Sie jedoch wie folgt vor:  
+In diesem Fall wird das Skript ausgeführt und die Warnung angezeigt.  Gehen Sie jedoch wie in diesem Fall vor:  
 
 ```javascript
 var script = document.createElement('script');
@@ -280,24 +280,24 @@ script.innerHTML = 'eval("alert(1);")';
 =document.getElementById('body').appendChild(script);
 ```  
 
-Während das anfängliche Skript ausgeführt wird, wird der Anruf an `eval` blockiert.  Das heißt, während die anfängliche Skriptlaufzeit zulässig ist, wird das Verhalten innerhalb des Skripts vom CSP der Seite reguliert.  
-Je nachdem, wie Sie in ihrer Erweiterung Dom-injizierte Skripts schreiben, kann sich die Änderung des CSP der Seite auf das Verhalten der Erweiterung auswirken.  Da Inhalts Skripts nicht vom CSP der Seite betroffen sind, ist dies ein guter Grund, um das Inhalts Skript so weit wie möglich von der Erweiterung zu versetzen, anstatt von Dom-injizierten Skripts.  
+Während das erste Skript ausgeführt wird, wird der `eval` Aufruf von blockiert.  Das heißt, während die anfängliche Skriptlaufzeit zulässig ist, wird das Verhalten innerhalb des Skripts durch den CSP der Seite reguliert.  
+Je nachdem, wie Sie dominjizierte Skripts in Ihre Erweiterung schreiben, können Änderungen am CSP der Seite das Verhalten Ihrer Erweiterung beeinflussen.  Da Inhaltsskripts nicht vom CSP der Seite betroffen sind, ist dies ein guter Grund, um so viel Verhalten wie möglich ihrer Erweiterung in das Inhaltsskript anstelle von DOM-injizierten Skripts zu verwenden.  
 
 <!-- image links -->  
 
 <!-- links -->  
 
-[HTML5RocksIntroductionContentSecurityPolicy]: https://www.html5rocks.com/en/tutorials/security/content-security-policy "Eine Einführung in die Inhalts Sicherheitsrichtlinie – HTML5 rockt"  
-[PublicSuffixList]: https://publicsuffix.org/list "Anzeigen der Liste der öffentlichen Suffixe"  
-[W3CContentSecurityPolicyLevel2ScriptSrcHashUsage]: https://www.w3.org/TR/CSP2#script-src-hash-usage "Hash Verwendung für \ <Skript \ > Elemente – Inhalts Sicherheitsrichtlinienebene 2"  
-[W3CContentSecurityPolicy]: https://w3c.github.io/webappsec-csp "Inhalts Sicherheitsrichtlinienebene 3"  
-[WikiManMiddleAttacks]: https://en.wikipedia.org/wiki/Man-in-the-middle_attack "Man-in-the-Middle-Angriff – Wikipedia"  
+[HTML5RocksIntroductionContentSecurityPolicy]: https://www.html5rocks.com/en/tutorials/security/content-security-policy "Eine Einführung in die Inhaltssicherheitsrichtlinie | HTML5-Rock"  
+[PublicSuffixList]: https://publicsuffix.org/list "ANZEIGEN DER ÖFFENTLICHEN SUFFIXLISTE"  
+[W3CContentSecurityPolicyLevel2ScriptSrcHashUsage]: https://www.w3.org/TR/CSP2#script-src-hash-usage "Hashverwendung für \<Script\>-Elemente – Inhaltssicherheitsrichtlinie Ebene 2 | W3C"  
+[W3CContentSecurityPolicy]: https://w3c.github.io/webappsec-csp "Inhaltssicherheitsrichtlinie Ebene 3 | W3C"  
+[WikiManMiddleAttacks]: https://en.wikipedia.org/wiki/Man-in-the-middle_attack "Man-in-the-Middle-| Wikipedia"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
+> Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
 > Die ursprüngliche Seite finden Sie [hier](https://developer.chrome.com/extensions/contentSecurityPolicy).  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

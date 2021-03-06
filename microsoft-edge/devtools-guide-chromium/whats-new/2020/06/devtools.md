@@ -1,382 +1,386 @@
 ---
-description: Debuggen von CSS-Raster Features, bearbeiten und Wiedergeben von Anforderungen mit der Netzwerk Konsole und vieles mehr.
-title: Neuerungen in devtools (Microsoft Edge 85)
+description: FEATURES für das Debuggen von CSS-Rastern, Bearbeiten und Wiedergeben von Anforderungen mit der Netzwerkkonsole und vieles mehr.
+title: Neues in DevTools (Microsoft Edge 85)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/11/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 01651bdf0f36f7c175f843655c275695a680b6c1
-ms.sourcegitcommit: b337717957529239434b4e8e1e167aebf0543518
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
+ms.openlocfilehash: 3085153b87f09c1b5aba8fbe43c42cef0851fa9c
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015461"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397755"
 ---
-# Neuerungen in devtools (Microsoft Edge 85)  
+# <a name="whats-new-in-devtools-microsoft-edge-85"></a>Neues in DevTools (Microsoft Edge 85)  
 
-## Ankündigungen des Microsoft Edge devtools-Teams  
+## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>Ankündigungen des Microsoft Edge DevTools-Teams  
 
-In den folgenden Abschnitten finden Sie eine Liste der Ankündigungen, die Sie möglicherweise im Microsoft Edge devtools-Team verpasst haben.  Schauen Sie sich die Ankündigungen an, um neue Features im devtools, Visual Studio-Code Erweiterungen und vieles mehr zu testen.  Wenn Sie über die neuesten und besten Funktionen Ihrer Entwicklertools auf dem Laufenden bleiben möchten, laden Sie die [Microsoft Edge Preview-Kanäle][MicrosoftEdgePreviewChannels] herunter, und [folgen Sie dem Microsoft Edge devtools-Team auf Twitter][EdgeDevToolsTwitterAccount].  
+Die folgenden Abschnitte sind eine Liste der Ankündigungen, die Sie möglicherweise vom Microsoft Edge DevTools-Team verpasst haben.  Sehen Sie sich die Ankündigungen an, um neue Features in devTools, Microsoft Visual Studio Codeerweiterungen zu testen und vieles mehr.  Laden Sie die Microsoft Edge-Vorschaukanäle herunter, und folgen [][MicrosoftEdgePreviewChannels] Sie dem [Microsoft Edge DevTools-Team auf Twitter,][EdgeDevToolsTwitterAccount]um auf dem neuesten Stand zu bleiben.  
 
-### Debuggen von CSS-Raster Features  
+### <a name="css-grid-debugging-features"></a>Features zum Debuggen von CSS-Rastern  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Experimentelle Funktion":::
-   Experimentelle Funktion  
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Experimentelles Feature":::
+   Experimentelles Feature  
 :::image-end:::  
 
-Das Microsoft Edge devtools-Team kooperiert mit der Chrome-devtools-Team-und Chrom-Community, um neue CSS-Raster Debugging-Features zu devtools hinzuzufügen.  Sie können nun Rasterlinien Nummern, Rasterabstände und erweiterte Rasterlinien als eine auf Seiten Überlagerungen anzeigen.  Darüber hinaus werden in Kürze weitere Verbesserungen an den Grid-Tools durchkommen.  
+Das Microsoft Edge DevTools-Team arbeitet mit dem Chrome DevTools-Team und der Chromium-Community zusammen, um DevTools neue FEATURES für das CSS-Rasterdebuding hinzuzufügen.  Sie können nun Gitternetzliniennummern, Gitternetzlücken und erweiterte Gitternetzlinien als on-page-Überlagerung anzeigen.  Darüber hinaus werden in Kürze weitere Verbesserungen an den Rastertools vorgenommen.  
 
-:::image type="complex" source="../../media/2020/06/experiments-grid.msft.png" alt-text="Experimentelle Funktion" lightbox="../../media/2020/06/experiments-grid.msft.png":::
-   Debuggen von CSS-Raster Features
+:::image type="complex" source="../../media/2020/06/experiments-grid.msft.png" alt-text="Features zum Debuggen von CSS-Rastern" lightbox="../../media/2020/06/experiments-grid.msft.png":::
+   Features zum Debuggen von CSS-Rastern
 :::image-end:::  
 
 > [!NOTE]
-> Wenn Sie das Experiment aktivieren möchten, lesen Sie aktivieren [von experimentellen Features][DevtoolsExperimentalFeaturesTurnOn] , und aktivieren Sie das Kontrollkästchen neben " **neue CSS-Raster Debuggen"-Features aktivieren**.  
+> Navigieren Sie zum Aktivieren des Experiments zu Aktivieren experimenteller [Features,][DevtoolsExperimentalFeaturesTurnOn] und aktivieren Sie das Kontrollkästchen neben **Neue CSS Grid-Debuggingfeatures aktivieren.**  
 > 
-> Wenn Sie das Experiment mit einem Beispiel testen möchten, lesen Sie [Beispiel für CSS-Raster Planner][CodepenRachelweilYzwBzKM].  
+> Wenn Sie das Experiment mit einem Beispiel ausprobieren möchten, navigieren Sie zu [CSS Grid Planner(Beispiel).][CodepenRachelweilYzwBzKM]  
 
-Chrom Problem [#1047356][CR1047356]  
+[Chromium-Problem #1047356][CR1047356]  
 
-### Bearbeiten und Wiedergeben von Anforderungen mit der Netzwerk Konsole  
+### <a name="edit-and-replay-requests-with-the-network-console"></a>Bearbeiten und Wiedergeben von Anforderungen mit der Netzwerkkonsole  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Experimentelle Funktion":::
-   Experimentelle Funktion  
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Experimentelles Feature":::
+   Experimentelles Feature  
 :::image-end:::  
 
-Sie können jetzt die **Bearbeitung und Wiedergabe** von Anforderungen im [Netzwerkprotokoll][DevtoolsNetworkIndexLogActivity] über die **Netzwerk Konsole**verwenden.  
+Sie können jetzt **** Bearbeiten und Wiedergeben für Anforderungen im [Netzwerkprotokoll][DevtoolsNetworkIndexLogActivity] mithilfe der **Netzwerkkonsole verwenden.**  
 
-:::image type="complex" source="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png" alt-text="Experimentelle Funktion" lightbox="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png":::
-   Bearbeiten und Wiedergeben einer Anforderung im [NetworkLog][DevtoolsNetworkIndexLogActivity] mit der **Netzwerk Konsole**  
+:::image type="complex" source="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png" alt-text="Bearbeiten und Wiedergeben einer Anforderung im NetworkLog mit der Netzwerkkonsole" lightbox="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png":::
+   Bearbeiten und Wiedergeben einer Anforderung im [NetworkLog mit][DevtoolsNetworkIndexLogActivity] der **Netzwerkkonsole**  
 :::image-end:::  
 
-Ein neues Panel, die **Netzwerk Konsole** wird im [devtools-Einzug][DevtoolsCustomizeIndexDrawer] geöffnet und füllt automatisch Informationen für die HTTP-Anforderung auf.  Um die vom Server zurückgegebene Antwort anzuzeigen, bearbeiten Sie die Anforderung \ (falls erforderlich \), und wählen Sie **senden**aus.  
+Ein neuer Bereich, die **Netzwerkkonsole** wird in der [DevTools-Schublade][DevtoolsCustomizeIndexDrawer] geöffnet und automatisch mit Informationen für die HTTP-Anforderung auffüllt.  Bearbeiten Sie die Anforderung \(falls erforderlich\), und wählen Sie Senden aus, um die vom Server zurückgegebene Antwort **anzeigen zu können.**  
 
-Sie können auch die **Netzwerk Konsole** verwenden, um HTTP-Anforderungen direkt aus dem devtools zu erstellen und zu senden.  
+Sie können auch die **Netzwerkkonsole verwenden,** um HTTP-Anforderungen direkt von devTools zu erstellen und zu senden.  
 
-:::image type="complex" source="../../media/2020/06/experiments-network-console.msft.png" alt-text="Experimentelle Funktion" lightbox="../../media/2020/06/experiments-network-console.msft.png":::
-   Das **Netzwerkkonsolen** Panel  
+:::image type="complex" source="../../media/2020/06/experiments-network-console.msft.png" alt-text="Netzwerkkonsolenbereich" lightbox="../../media/2020/06/experiments-network-console.msft.png":::
+   **Netzwerkkonsolenbereich**  
 :::image-end:::  
 
 > [!TIP]
-> Informationen zum Anzeigen der **Netzwerk Konsole** im Hauptbereich \ (oben \) anstelle der [devtools-Schublade][DevtoolsCustomizeIndexDrawer]finden Sie unter [Verschieben von Tools zwischen Bereichen](#move-tools-between-panels).  
+> Navigieren Sie **zum** Verschieben von Tools zwischen Den Panels, um die Netzwerkkonsole im Hauptbereich \(top\) anstelle der [DevTools-Drawer][DevtoolsCustomizeIndexDrawer] [anzeigen zu können.](#move-tools-between-panels)  
 
 > [!NOTE]
-> Wenn Sie das Experiment aktivieren möchten, lesen Sie aktivieren [von experimentellen Features][DevtoolsExperimentalFeaturesTurnOn] , und aktivieren Sie das Kontrollkästchen neben **Netzwerk Konsole aktivieren**.  
+> Navigieren Sie zum Aktivieren des Experiments zu Aktivieren experimenteller [Features,][DevtoolsExperimentalFeaturesTurnOn] und aktivieren Sie das Kontrollkästchen neben **Netzwerkkonsole aktivieren.**  
 > 
-> Öffnen Sie das [Netzwerkprotokoll][DevtoolsNetworkIndexLogActivity], öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie **Bearbeiten und wiedergeben**aus.  
+> Öffnen Sie [das Netzwerkprotokoll,][DevtoolsNetworkIndexLogActivity]öffnen Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste\), und wählen Sie **Bearbeiten und Wiedergabe aus.**  
 
-Chrom Problem [#1093687][CR1093687]  
+[Chromium-#1093687][CR1093687]  
 
-### Service Worker-respondWith-Ereignisse auf der Registerkarte "Anzeigedauer"  
+### <a name="service-worker-respondwith-events-in-the-timing-tab"></a>Service worker respondWith events in the Timing tab  
 
-Die Registerkarte " **Anzeige** Dauer" des **Netzwerk** Panels enthält jetzt `respondWith` Service Worker-Ereignisse.  Das `respondWith` Dienst Arbeitskraft-Ereignis zeigt die Dauer ab dem Zeitpunkt an, zu dem der Service Worker- `fetch` Ereignishandler mit dem Zeitpunkt beginnt, zu dem das `respondWith` Versprechen des `fetch` Handlers abgerechnet wird.  
+Die **Registerkarte Timing** des **Netzwerktools** enthält jetzt `respondWith` Dienstarbeitsereignisse.  Das Service Worker-Ereignis zeigt die Dauer von der Zeit unmittelbar vor dem Ausführen des Service Worker-Ereignishandlers bis zu dem Zeitpunkt an, zu dem die Zusage des `respondWith` `fetch` `respondWith` `fetch` Handlers abgerechnet wird.  
 
-:::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text="Experimentelle Funktion" lightbox="../../media/2020/06/timing-tab.msft.png":::
-   Das `respondWith` Service Worker-Ereignis auf der Registerkarte " **Anzeige** Dauer" des **Netzwerk** Panels  
+:::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text="Das RespondWith-Dienstarbeitsereignis auf der Registerkarte Timing des Netzwerkbereichs" lightbox="../../media/2020/06/timing-tab.msft.png":::
+   Das `respondWith` Dienstarbeitsereignis auf der **Registerkarte Timing** des **Netzwerktools**  
 :::image-end:::  
 
-Erweitern der **empfangenen Antwort** , um weitere Informationen aus der `fetch` Antwort wie `CacheStorageCacheName` , `serviceWorkerResponseSource` und anzuzeigen `ResponseTime` .  
+Erweitern **Sie die empfangene** Antwort, um zusätzliche Informationen aus der `fetch` Antwort wie , und zu `CacheStorageCacheName` `serviceWorkerResponseSource` `ResponseTime` anzeigen.  
 
-:::image type="complex" source="../../media/2020/06/timing-tab2.msft.png" alt-text="Experimentelle Funktion" lightbox="../../media/2020/06/timing-tab2.msft.png":::
-   Erweitern der **empfangenen Antwort** , um weitere Informationen aus der `fetch` Antwort anzuzeigen  
+:::image type="complex" source="../../media/2020/06/timing-tab2.msft.png" alt-text="Expand Response received to display additional information from the fetch response" lightbox="../../media/2020/06/timing-tab2.msft.png":::
+   Expand **Response received** to display additional information from the `fetch` response  
 :::image-end:::  
 
-Chrom Problem [#1066579][CR1066579]  
+[Chromium-Problem #1066579][CR1066579]  
 
-### webhint-Feedback im Bereich "Probleme"  
+### <a name="webhint-feedback-in-the-issues-panel"></a>Webhintfeedback im Problembereich  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Experimentelle Funktion":::
-   Experimentelle Funktion  
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Experimentelles Feature":::
+   Experimentelles Feature  
 :::image-end:::  
 
-[webhint][WebhintMain] ist ein Open-Source-Tool, das in Echtzeit Feedback zur Barrierefreiheit, browserübergreifenden Kompatibilität, Sicherheit, Leistung, PWAs und anderen gängigen Webentwicklungs Problemen von Websites bietet.  Sie können jetzt webhint-Feedback im [Problem][DevtoolsIssues] Bereich anzeigen.  
+[webhint][WebhintMain] ist ein Open-Source-Tool, das Feedback in Echtzeit zu Barrierefreiheit, browserübergreifender Kompatibilität, Sicherheit, Leistung, PWAs und anderen allgemeinen Webentwicklungsproblemen von Websites liefert.  So überprüfen Sie das Webhintfeedback im [Bereich Probleme.][DevtoolsIssues]  
 
-:::image type="complex" source="../../media/2020/06/experiments-webhint.msft.png" alt-text="Experimentelle Funktion" lightbox="../../media/2020/06/experiments-webhint.msft.png":::
-   webhint-Feedback im Bereich "Probleme"  
+:::image type="complex" source="../../media/2020/06/experiments-webhint.msft.png" alt-text="Webhintfeedback im Problembereich" lightbox="../../media/2020/06/experiments-webhint.msft.png":::
+   Webhintfeedback im Problembereich  
 :::image-end:::  
 
 > [!NOTE]
-> Wenn Sie das Experiment aktivieren möchten, lesen Sie aktivieren [von experimentellen Features][DevtoolsExperimentalFeaturesTurnOn] , und aktivieren Sie das Kontrollkästchen neben **webhint aktivieren**.  
+> Navigieren Sie zum Aktivieren des Experiments zu Aktivieren experimenteller [Features,][DevtoolsExperimentalFeaturesTurnOn] und aktivieren Sie das Kontrollkästchen neben **Webhint aktivieren.**  
 > 
-> Öffnen Sie den Bereich [Probleme][DevtoolsIssues] , um Feedback von webhint anzuzeigen.  
+> Öffnen Sie den [Bereich][DevtoolsIssues] Probleme, um Feedback von Webhint einblenden zu können.  
 
-Chrom Problem [#1070378][CR1070378]  
+[Chromium-#1070378][CR1070378]  
 
-### Verschieben von Tools zwischen Bereichen  
+### <a name="move-tools-between-panels"></a>Verschieben von Tools zwischen Panels  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Experimentelle Funktion von devtools geöffnet werden.  Sie können jetzt Ihr devtools-Layout anpassen, indem Sie die Tools zwischen dem oberen und unteren Bereich verschieben.  ":::
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Experimentelles Feature":::
+   Experimentelles Feature  
+:::image-end:::  
 
-:::image type="complex" source="../../media/2020/06/experiments-move-panels.msft.png" alt-text="Experimentelle Funktion" lightbox="../../media/2020/06/experiments-move-panels.msft.png":::
-   Verschieben von Tabstopps zwischen Bereichen  
+Normalerweise können Tools wie **Elemente** und **Netzwerk** nur im Hauptbereich \(top\) von DevTools geöffnet werden.  Ebenso können Tools wie **3D-Ansicht** und Probleme nur im Drawer \(bottom\)-Bereich von DevTools geöffnet werden. ****  Sie können nun Ihr DevTools-Layout anpassen, indem Sie Tools zwischen dem oberen und unteren Bereich verschieben.  
+
+:::image type="complex" source="../../media/2020/06/experiments-move-panels.msft.png" alt-text="Verschieben von Tools zwischen Panels" lightbox="../../media/2020/06/experiments-move-panels.msft.png":::
+   Verschieben von Tools zwischen Panels  
 :::image-end:::  
 
 > [!NOTE]
-> Wenn Sie das Experiment aktivieren möchten, lesen Sie aktivieren [von experimentellen Features][DevtoolsExperimentalFeaturesTurnOn] , und aktivieren Sie das Kontrollkästchen neben **Unterstützung aktivieren, um Tabstopps zwischen Bereichen zu verschieben**.  
+> Navigieren Sie zum Aktivieren des Experiments zu Aktivieren experimenteller [Features,][DevtoolsExperimentalFeaturesTurnOn] und aktivieren Sie das Kontrollkästchen neben Unterstützung aktivieren, um **Registerkarten zwischen Panels zu verschieben.**  
 
-Chrom Problem [#897944][CR897944]  
+[Chromium-Problem #897944][CR897944]  
 
-### Verbesserte QuickInfo des Initiators im Netzwerk Panel  
+### <a name="improved-initiator-tooltip-in-the-network-panel"></a>Verbesserte Initiator-QuickInfo im Netzwerkbereich  
 
-In Microsoft Edge 83 und 84 werden QuickInfos für die Initiator-Spalte, die die Ursache der Ressourcenanforderung zeigt, im [Netzwerkprotokoll][DevtoolsNetworkIndexLogActivity] mit einer horizontalen Bildlaufleiste angezeigt.  Sie konnten nur den Aufruf Stapel sehen, der die Anforderung initiiert hat, indem Sie in der QuickInfo horizontal scrollen.  
+In Microsoft Edge 83 und 84 werden QuickInfos für die Spalte Initiator, die die Ursache der Ressourcenanforderung zeigt, im [Netzwerkprotokoll][DevtoolsNetworkIndexLogActivity] angezeigt, das mit einer horizontalen Bildlaufleiste angezeigt wird.  Sie konnten nur die Aufrufliste anzeigen, die die Anforderung initiiert hat, indem Sie einen horizontalen Bildlauf in der QuickInfo durchführen.  
 
-:::image type="complex" source="../../media/2020/06/initiator-tooltip-84.msft.png" alt-text="Experimentelle Funktion" lightbox="../../media/2020/06/initiator-tooltip-84.msft.png":::
-   Die QuickInfo des Initiators in Microsoft Edge 84  
+:::image type="complex" source="../../media/2020/06/initiator-tooltip-84.msft.png" alt-text="Die QuickInfo "Initiator" in Microsoft Edge 84" lightbox="../../media/2020/06/initiator-tooltip-84.msft.png":::
+   Die QuickInfo "Initiator" in Microsoft Edge 84  
 :::image-end:::  
 
-Ab Microsoft Edge 85 können Sie jetzt den Initiator-Aufruf Stapel in der QuickInfo anzeigen, ohne horizontal scrollen zu müssen.  
+Ab Microsoft Edge 85 können Sie nun die Aufrufliste des Initiators in der QuickInfo ohne horizontalen Bildlauf anzeigen.  
 
-:::image type="complex" source="../../media/2020/06/initiator-tooltip-85.msft.png" alt-text="Experimentelle Funktion" lightbox="../../media/2020/06/initiator-tooltip-85.msft.png":::
-   Die QuickInfo des Initiators in Microsoft Edge 85
+:::image type="complex" source="../../media/2020/06/initiator-tooltip-85.msft.png" alt-text="Die QuickInfo "Initiator" in Microsoft Edge 85" lightbox="../../media/2020/06/initiator-tooltip-85.msft.png":::
+   Die QuickInfo "Initiator" in Microsoft Edge 85
 :::image-end:::  
 
-Chrom Problem [#1069404][CR1069404]  
+[Chromium-#1069404][CR1069404]  
 
-## Ankündigungen aus dem Chromium-Projekt  
+## <a name="announcements-from-the-chromium-project"></a>Ankündigungen aus dem Chromium-Projekt  
 
-In den folgenden Abschnitten werden weitere in Microsoft Edge 85 verfügbare Features angekündigt, die zum Open-Source-Projekt Chromium beigetragen haben.  
+In den folgenden Abschnitten werden zusätzliche Features angekündigt, die in Microsoft Edge 85 verfügbar sind und zum Open Source Chromium-Projekt beigetragen haben.  
 
-### Format Bearbeitung für CSS-in-JS-Frameworks  
+### <a name="style-editing-for-css-in-js-frameworks"></a>Formatvorlagenbearbeitung für CSS-in-JS-Frameworks  
 
-Der Bereich " **Formatvorlagen** " bietet nun eine bessere Unterstützung für die Bearbeitung von Formatvorlagen, die mit den [CSSOM-APIs (CSS Object Model)][CsswgDraftsCssom] erstellt wurden.  Viele CSS-in-JS-Frameworks und-Bibliotheken verwenden die CSSOM-APIs unter der Haube zum Erstellen von Formatvorlagen.  
+Der **Bereich** Formatvorlagen bietet nun eine bessere Unterstützung für Bearbeitungsstile, die mit den [CSSOM-APIs (CSSOM)][CsswgDraftsCssom] erstellt wurden.  Viele CSS-in-JS-Frameworks und -Bibliotheken verwenden die CSSOM-APIs unter der Blende, um Formatvorlagen zu erstellen.  
 
-Sie können jetzt in JavaScript hinzugefügte Formatvorlagen mithilfe von Konstruktions fähigen [Stylesheets][WicgConstructStylesheet]bearbeiten.  Konstruktable-Stylesheets sind eine neue Möglichkeit zum Erstellen und Verteilen von wiederverwendbaren Formatvorlagen bei Verwendung des [Schatten-Dom][MdnShadowDom].  
+Sie können jetzt in JavaScript hinzugefügte Formatvorlagen mithilfe [von Constructable Stylesheets bearbeiten.][WicgConstructStylesheet]  Constructable Stylesheets sind eine neue Möglichkeit zum Erstellen und Verteilen wiederverwendbarer Formatvorlagen bei Verwendung von [Shadow DOM][MdnShadowDom].  
 
-Beispielsweise wurden die `h1` mit `CSSStyleSheet` \ (CSSOM-APIs \) hinzugefügten Formatvorlagen zuvor nicht bearbeitet.  Die Formatvorlagen können jetzt im Bereich " **Formatvorlagen** " bearbeitet werden.  
+Beispielsweise waren die `h1` mit `CSSStyleSheet` \(CSSOM-APIs\) hinzugefügten Formatvorlagen zuvor nicht bearbeitbar.  Die Formatvorlagen können jetzt im **Formatvorlagenbereich bearbeitet** werden.  
 
-:::image type="complex" source="../../media/2020/06/css-in-js.msft.png" alt-text="Experimentelle Funktion" lightbox="../../media/2020/06/css-in-js.msft.png":::
-   Ändern der `background` Eigenschaft der `h1` mit `CSSStyleSheet` from `pink` to hinzugefügten Formatvorlagen `lightblue`
+:::image type="complex" source="../../media/2020/06/css-in-js.msft.png" alt-text="Ändern der Hintergrundeigenschaft der mit CSSStyleSheet hinzugefügten h1-Formatvorlagen von pink in lightblue" lightbox="../../media/2020/06/css-in-js.msft.png":::
+   Ändern der `background` Eigenschaft der `h1` mit hinzugefügten `CSSStyleSheet` Formatvorlagen in `pink` `lightblue` .
 :::image-end:::  
 
-Geben Sie diesem Feature einen Versuch mit einem [Beispiel, in dem CSS-in-JS verwendet wird][CodepenZoherghadyaliAbdgrpz].
+Testen Sie dieses Feature mit einem [Beispiel, das CSS-in-JS verwendet.][CodepenZoherghadyaliAbdgrpz]
 
-Chrom Problem [#946975][CR946975]  
+[Chromium-#946975][CR946975]  
 
-### Leuchtturm 6 im Leuchtturm-Panel  
+### <a name="lighthouse-6-in-the-lighthouse-panel"></a>Leuchtturm 6 im Leuchtturmpanel  
 
-Auf dem **Leuchtturm** -Panel läuft nun Lighthouse 6.  Eine vollständige Liste aller Änderungen finden Sie unter [v 6.0.0-Versionshinweise][GithubGoogleChromeLighthouse600].  
+Im **Bereich "Leuchttürme"** wird jetzt "6" ausgeführt.  Eine vollständige Liste aller Änderungen finden Sie unter [Versionshinweise zu v6.0.0][GithubGoogleChromeLighthouse600].  
 
-Lighthouse 6,0 führt drei neue Metriken in den Bericht ein: größter Content-Paint \ (LCP \), kumulative Layout-UMSCHALT \ (CLS \) und Gesamt Blockierungszeit \ (TBT \).  
+Mit Dem Bericht von "Farot 6.0" werden drei neue Metriken hinzugefügt: "Largest Contentful Paint \(LCP\"), Cumulative Layout Shift \(CLS\) und Total Blocking Time \(TBT\).  
 
-Die Formel für die Leistungsbewertung wurde ebenfalls umgewichtet, um die Lade Erfahrung des Benutzers besser wiederzugeben.  
+Die Formel für die Leistungspunktzahl wurde ebenfalls neu gewichtet, um die Ladeerfahrung des Benutzers besser widerspiegeln zu können.  
 
-Chrom Problem [#772558][CR772558]  
+[Chromium-#772558][CR772558]  
 
-#### Erste aussagekräftige Paint-Missbilligung  
+#### <a name="first-meaningful-paint-deprecation"></a>First Meaningful Paint deprecation  
 
-Die erste aussagekräftige Farbe \ (Unterstützung \) ist in Lighthouse 6,0 veraltet.  In der **Leistungs** Palette wurde auch das Unternehmen entfernt.  Der **größte zufriedene Anstrich** ist der empfohlene Ersatz für die Verwendung von "mehr".  <!--See [First Meaningful Paint][WebDevFirstMeaningfulPaint] for an explanation of why it was deprecated.  -->  
+First Meaningful Paint \(FMP\) ist in "6.0" veraltet.  FMP wurde auch aus dem Bereich **Leistung** entfernt.  **Die größte Inhaltsfarbe** ist der empfohlene Ersatz für FMP.  <!--For an explanation of why it was deprecated, navigate to [First Meaningful Paint][WebDevFirstMeaningfulPaint].  -->  
 
 <!--todo: add Largest Contentful Paint when section available  -->  
 <!--todo: add First Meaningful Paint link and note when available  -->  
 
-Chrom Problem [#1096008][CR1096008]  
+[Chromium-Problem #1096008][CR1096008]  
 
-### Unterstützung für neue JavaScript-Features  
+### <a name="support-for-new-javascript-features"></a>Unterstützung für neue JavaScript-Features  
 
-DevTools bietet nun eine bessere Unterstützung für einige der neuesten JavaScript-Sprachfeatures.  
+DevTools bietet jetzt eine bessere Unterstützung für einige der neuesten JavaScript-Sprachfeatures.  
 
 :::row:::
    :::column span="1":::
-      [Optionale Verkettungs][V8DevOptionalChaining] Syntax Autovervollständigung  
+      [Optionale Verkettungssyntax][V8DevOptionalChaining] autocompletion  
    :::column-end:::
    :::column span="2":::
-      Die automatische Vervollständigung von Eigenschaften in der **Konsole** unterstützt jetzt optionale Verkettungs Syntax, beispielsweise  `name?.` jetzt zusätzlich zu `name.` und `name[` .  
+      Die automatische Vervollständigung der Eigenschaft in der **Konsole** unterstützt jetzt optionale Verkettungssyntax, z. B. funktioniert jetzt  `name?.` zusätzlich zu und `name.` `name[` .  
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-      Syntax Hervorhebung für [private Felder][V8DevClassFieldsPrivate]  
+      Syntaxhervor hervorheben für [private Felder][V8DevClassFieldsPrivate]  
    :::column-end:::
    :::column span="2":::
-      Private Kurs Felder werden jetzt ordnungsgemäß in der Syntax hervorgehoben und im **Quellen** Panel hübsch gedruckt.  
+      Felder für private Klassen sind nun ordnungsgemäß syntax hervorgehoben und im Bereich Quellen ziemlich **gedruckt.**  
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-      Syntax Hervorhebung für [ungültigen][V8DevNullishCoalescing] Vereinigungsoperator
+      Syntaxhervor hervorheben für [#A0][V8DevNullishCoalescing]
    :::column-end:::
    :::column span="2":::
-      DevTools nun richtig hübsch – druckt den ungültigen Vereinigungsoperator im **Quellen** Panel.  
+      DevTools druckt jetzt den Nullish-Koeescing-Operator im **Bereich Quellen ordnungsgemäß.**  
    :::column-end:::
 :::row-end:::  
 
-Chrom Probleme [#1073903][CR1073903], [#1083214][CR1083214], [#1083797][CR1083797]  
+[Chromium-Probleme #1073903][CR1073903], [#1083214][CR1083214], [#1083797][CR1083797]  
 
-### Neue APP-Verknüpfungs Warnungen im Bereich "Manifest"  
+### <a name="new-app-shortcut-warnings-in-the-manifest-pane"></a>Warnungen für neue App-Verknüpfungen im Manifestbereich  
 
-**App-Tastenkombinationen** helfen Benutzern, häufige oder empfohlene Aufgaben in einer Web-App schnell zu starten.  
+**Mithilfe von App-Verknüpfungen** können Benutzer häufige oder empfohlene Aufgaben in einer Web-App schnell starten.  
 
 <!--todo: add App shortcuts when section is live  -->  
 
-Der Bereich **Manifest** zeigt nun Warnungen für die folgenden Bedingungen an.  
+Der **Manifestbereich** zeigt nun Warnungen für die folgenden Bedingungen an.  
 
-* Die APP-Verknüpfungssymbole sind kleiner als 96x96 Pixel  
-* Die APP-Verknüpfungssymbole und Manifest-Symbole sind nicht quadratisch \ (da die Symbole ignoriert werden \)  
+* Die App-Verknüpfungssymbole sind kleiner als 96 x 96 Pixel  
+* Die App-Verknüpfungssymbole und Manifestsymbole sind nicht quadratisch \(da die Symbole ignoriert werden\)  
 
-:::image type="complex" source="../../media/2020/06/app-shortcut-warnings.msft.png" alt-text="Experimentelle Funktion" lightbox="../../media/2020/06/app-shortcut-warnings.msft.png":::
-   App-Verknüpfungs Warnungen  
+:::image type="complex" source="../../media/2020/06/app-shortcut-warnings.msft.png" alt-text="Warnungen zu App-Verknüpfungen" lightbox="../../media/2020/06/app-shortcut-warnings.msft.png":::
+   Warnungen zu App-Verknüpfungen  
 :::image-end:::  
 
-Chrom Problem [#955497][CR955497]  
+[Chromium-Problem #955497][CR955497]  
 
-### Konsistente Anzeige des berechneten Bereichs  
+### <a name="consistent-display-of-the-computed-pane"></a>Konsistente Anzeige des Berechneten Bereichs  
 
-Der **berechnete** Bereich im **Element** Bereich wird nun einheitlich als Bereich für alle Ansichtsfenster Größen angezeigt.  Zuvor wurde der **berechnete** Bereich im Bereich " **Formatvorlagen** " zusammengeführt, wenn die Breite des devtools-Viewports schmal war.  
+Der **Berechnete** Bereich im **Elementtool** wird nun konsistent als Bereich in allen Ansichtsfenstergrößen angezeigt.  Zuvor wurde **der Berechnete** Bereich im Bereich **Formatvorlagen** zusammengeführt, wenn die Breite des DevTools-Viewports schmal war.  
 
-:::image type="complex" source="../../media/2020/06/computed-pane.msft.png" alt-text="Experimentelle Funktion" lightbox="../../media/2020/06/computed-pane.msft.png":::
-   Der **berechnete** Bereich wird konsistent als separater Bereich angezeigt, auch wenn die devtools schmal sind.
+:::image type="complex" source="../../media/2020/06/computed-pane.msft.png" alt-text="Der Berechnete Bereich wird konsistent als separater Bereich angezeigt, auch wenn die DevTools schmal sind" lightbox="../../media/2020/06/computed-pane.msft.png":::
+   Der **Berechnete** Bereich wird konsistent als separater Bereich angezeigt, auch wenn die DevTools schmal sind.
 :::image-end:::  
 
-Chrom Problem [#1073899][CR1073899]  
+[Chromium-#1073899][CR1073899]  
 
-### Bytecode-Offsets für webassemblydateien  
+### <a name="bytecode-offsets-for-webassembly-files"></a>Bytecodeoffsets für WebAssembly-Dateien  
 
-DevTools verwendet jetzt Bytecode-Offsets zum Anzeigen von WASM-Disassembly-Nummern.  
-Durch die Zahlen in der Zeile wird deutlicher, dass Sie Binärdaten suchen, und es ist konsistenter, wie die WASM-Laufzeit auf Speicherorte verweist.  
+DevTools verwendet jetzt Bytecodeoffsets zum Anzeigen von Zeilennummern der Wasm-Demontage.  
+Die Zeilennummern machen deutlich, dass Sie binäre Daten sehen, und ist konsistenter mit der Referenz der Wasm-Laufzeit auf Speicherorte.  
 
-Chrom Problem [#1071432][CR1071432]  
+[Chromium-#1071432][CR1071432]  
 
-### Kopieren und Ausschneiden der Zeile im Quellen Panel  
+### <a name="line-wise-copy-and-cut-in-sources-panel"></a>Zeilenweises Kopieren und Ausschneiden im Quellenbereich  
 
-Beim Ausführen von kopieren oder Ausschneiden ohne Auswahl im [Quellcode-Panel-Editor][DevtoolsSourcesEditCssJavascript]kopiert devtools die aktuelle Inhaltszeile oder schneidet sie aus.  
+Bei der Ausführung von Kopieren oder Ausschneiden ohne Auswahl im [Editor][DevtoolsSourcesEditCssJavascript]des Quellenbereichs kopiert devTools die aktuelle Inhaltszeile oder schneidet sie aus.  
 
-:::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="Experimentelle Funktion" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
-   Mit dem Cursor am Ende der Zeile 5, kopieren Sie die gesamte Zeile aus **pen.js** im devtools, und fügen Sie Sie in [Visual Studio-Code][VSCode]ein.
+:::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="Kopieren Sie mit dem Cursor am Ende von Zeile 5 die gesamte Zeile aus pen.js devTools und einfügen in Visual Studio Code" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
+   Kopieren Sie mit dem Cursor am Ende von Zeile 5 die gesamte Zeile auspen.js** devTools ** und einfügen in [Visual Studio Code][VisualStudioCode].
 :::image-end:::  
 
-Chrom Problem [#800028][CR800028]
+[Chromium-Problem #800028][CR800028]
 
-### Updates für Konsoleneinstellungen  
+### <a name="console-settings-updates"></a>Aktualisierungen der Konsoleneinstellungen  
 
-#### Aufheben der Gruppierung derselben Konsolen Nachrichten  
+#### <a name="ungroup-same-console-messages"></a>Aufheben der Gruppierung derselben Konsolennachrichten  
 
-Die **Gruppe ähnliche** Umschalter in den Konsoleneinstellungen gilt jetzt für doppelte Nachrichten.  Zuvor hat es gerade auf ähnliche Nachrichten angewendet.  
+Der **Umschalter Gruppe ähnlich** in konsoleneinstellungen gilt jetzt für doppelte Nachrichten.  Zuvor wurde es nur auf ähnliche Nachrichten angewendet.  
 
-Zuvor hat devtools die Gruppierung der Nachrichten nicht aufheben, obwohl `hello` **Gruppe ähnlich** deaktiviert ist.  Nun werden die `hello` Nachrichten nicht gruppiert.  
+In früheren Beispielen hat DevTools die Gruppierung der Nachrichten nicht deaktiviert, obwohl die Gruppierung `hello` **ähnlich** deaktiviert ist.  Jetzt werden `hello` die Nachrichten nicht mehr in die Gruppe eingruppiert.  
 
-:::image type="complex" source="../../media/2020/06/ungroup-similar.msft.png" alt-text="Experimentelle Funktion" lightbox="../../media/2020/06/ungroup-similar.msft.png":::
-   Wenn **"Gruppe ähnlich"** deaktiviert ist, `hello` werden die Nachrichten nicht gruppiert
+:::image type="complex" source="../../media/2020/06/ungroup-similar.msft.png" alt-text="Wenn "Gruppe ähnlich" deaktiviert ist, werden die Hello-Nachrichten nicht in die Gruppe eingruppiert." lightbox="../../media/2020/06/ungroup-similar.msft.png":::
+   Wenn **"Gruppe ähnlich"** deaktiviert ist, werden `hello` die Nachrichten ungruppiert.
 :::image-end:::  
 
-Geben Sie diesem Feature einen Versuch mit einem [Beispiel, mit dem doppelte Nachrichten an die Konsole gesendet werden][CodepenZoherghadyaliZyrjgdJ].  
+Testen Sie dieses Feature mit einem [Beispiel, das doppelte Nachrichten an die Konsole sendet.][CodepenZoherghadyaliZyrjgdJ]  
 
-Chrom Problem [#1082963][CR1082963]  
+[Chromium-#1082963][CR1082963]  
 
-### Nur ausgewählte Kontext Einstellungen beibehalten  
+### <a name="persisting-selected-context-only-settings"></a>Einstellungen nur für den ausgewählten Kontext beibehalten  
 
-Die Einstellungen für den **ausgewählten Kontext nur** in den Konsoleneinstellungen werden nun beibehalten.  Zuvor wurden die Einstellungen jedes Mal zurückgesetzt, wenn Sie devtools geschlossen und wieder geöffnet haben.  Durch die Änderung wird das Einstellungsverhalten mit anderen Optionen für Konsoleneinstellungen konsistent.  
+Die **Einstellungen für "Nur ausgewählter** Kontext" in den Konsoleneinstellungen werden nun beibehalten.  Zuvor wurden die Einstellungen jedes Mal zurückgesetzt, wenn Sie DevTools geschlossen und erneut geöffnet haben.  Durch die Änderung wird das Einstellungsverhalten mit anderen Optionen für Konsoleneinstellungen konsistent.  
 
-:::image type="complex" source="../../media/2020/06/selected-context.msft.png" alt-text="Experimentelle Funktion" lightbox="../../media/2020/06/selected-context.msft.png":::
-   **Nur ausgewählte Kontext** Einstellung  
+:::image type="complex" source="../../media/2020/06/selected-context.msft.png" alt-text="Einstellung nur für ausgewählten Kontext" lightbox="../../media/2020/06/selected-context.msft.png":::
+   **Einstellung nur für ausgewählten** Kontext  
 :::image-end:::  
 
-Chrom Problem [#1055875][CR1055875]  
+[Chromium-#1055875][CR1055875]  
 
-### Updates für das Leistungs Panel  
+### <a name="performance-panel-updates"></a>Aktualisierungen des Leistungsbereichs  
 
-#### Informationen zum Cache für JavaScript-Kompilierung im Leistungs Panel  
+#### <a name="javascript-compilation-cache-information-in-performance-tool"></a>JavaScript-Kompilierungscacheinformationen im **Leistungstool**  
 
-Die [Informationen im JavaScript-Kompilierungs Cache][V8DevCodeCaching] werden jetzt immer auf der Registerkarte "Zusammenfassung" im Leistungsfenster angezeigt.  Zuvor zeigten devtools nichts im Zusammenhang mit der Code Zwischenspeicherung an, wenn die Code Zwischenspeicherung nicht statt fand.  
+[JavaScript-Kompilierungscacheinformationen][V8DevCodeCaching] werden jetzt immer im **Zusammenfassungsbereich** des **Leistungstools** angezeigt.  Bisher hat DevTools nichts im Zusammenhang mit der Zwischenspeicherung von Code gezeigt, wenn keine Code zwischenspeichert wurde.  
 
-:::image type="complex" source="../../media/2020/06/js-compilation-cache.msft.png" alt-text="Experimentelle Funktion" lightbox="../../media/2020/06/js-compilation-cache.msft.png":::
-   Informationen zum Cache für JavaScript-Kompilierung  
+:::image type="complex" source="../../media/2020/06/js-compilation-cache.msft.png" alt-text="JavaScript-Kompilierungscacheinformationen" lightbox="../../media/2020/06/js-compilation-cache.msft.png":::
+   JavaScript-Kompilierungscacheinformationen  
 :::image-end:::  
 
-Chrom Problem [#912581][CR912581]  
+[Chromium-Problem #912581][CR912581]  
 
-#### Ausrichtung der Navigationsanzeige im Leistungsbereich  
+#### <a name="navigation-timing-alignment-in-the-performance-panel"></a>Ausrichtung der Navigationszeit im Leistungsbereich  
 
-Im **Leistungs** Panel werden die Zeiten in den Linealen basierend auf dem Beginn der Aufzeichnung angezeigt.  Die Anzeigedauer wurde für Aufzeichnungen geändert, in denen der Benutzer navigiert, wobei in devtools nun stattdessen die linealzeiten relativ zur Navigation angezeigt werden.  
+Der **Leistungsbereich,** der zum Anzeigen von Zeiten in den Lineals verwendet wurde, basierend auf dem Beginn der Aufzeichnung.  Das Timing hat sich nun für Aufzeichnungen geändert, in denen der Benutzer navigiert, wobei DevTools jetzt Linealzeiten relativ zur Navigation zeigt.  
 
-:::image type="complex" source="../../media/2020/06/nav-timing.msft.png" alt-text="Experimentelle Funktion" lightbox="../../media/2020/06/nav-timing.msft.png":::
-   Ausrichten der Navigationsanzeige im **Leistungs** Bereich  
+:::image type="complex" source="../../media/2020/06/nav-timing.msft.png" alt-text="Ausrichten der Navigationszeit im Leistungstool" lightbox="../../media/2020/06/nav-timing.msft.png":::
+   Ausrichten der Navigationszeit im **Leistungstool**  
 :::image-end:::  
 
-Die Zeiten für `DOMContentLoaded` , erster Anstrich, erster Inhaltsbezogener Paint und die größten inhaltsabhängigen Paint-Ereignisse werden relativ zum Anfang der Navigation aktualisiert, was bedeutet, dass die Anzeigedauer den angegebenen Anzeigedauern entspricht `PerformanceObserver` .  
+Die Zeiten für , First Paint, First Contentful Paint und Largest Contentful Paint -Ereignisse werden so aktualisiert, dass sie relativ zum Start der Navigation sind, was bedeutet, dass die Zeitplanung mit den von gemeldeten `DOMContentLoaded` Timings `PerformanceObserver` entspricht.  
 
-Chrom Problem [#974550][CR974550]  
+[Chromium-#974550][CR974550]  
 
-### Neue Symbole für Haltepunkte, bedingte Haltepunkte und logpoints  
+### <a name="new-icons-for-breakpoints-conditional-breakpoints-and-logpoints"></a>Neue Symbole für Haltepunkte, bedingte Haltepunkte und Protokollpunkte  
 
-Das **Quellen** Panel enthält neue Designs für Haltepunkte, bedingte Haltepunkte und logpoints.  Haltepunkte werden durch einen roten Kreis dargestellt, genau wie [Visual Studio-Code][VSCode] und [Visual Studio][VS].  Symbole werden hinzugefügt, um bedingte Haltepunkte und logpoints zu unterscheiden.  
+Der **Bereich** Quellen verfügt über neue Designs für Haltepunkte, bedingte Haltepunkte und Protokollpunkte.  Haltepunkte werden durch einen roten Kreis dargestellt, genau wie Visual Studio [Code][VisualStudioCode] und [Visual Studio][VisualStudio].  Symbole werden hinzugefügt, um bedingte Haltepunkte und Protokollpunkte zu unterscheiden.  
 
-:::image type="complex" source="../../media/2020/06/breakpoints.msft.png" alt-text="Experimentelle Funktion" lightbox="../../media/2020/06/breakpoints.msft.png":::
+:::image type="complex" source="../../media/2020/06/breakpoints.msft.png" alt-text="Breakpoints" lightbox="../../media/2020/06/breakpoints.msft.png":::
    Breakpoints  
 :::image-end:::  
 
-Chrom Problem [#1041830][CR1041830]  
+[Chromium-#1041830][CR1041830]  
 
-## Herunterladen der Microsoft Edge Preview-Kanäle  
+## <a name="download-the-microsoft-edge-preview-channels"></a>Herunterladen der Microsoft Edge-Vorschaukanäle  
 
-Wenn Sie unter Windows oder macOS arbeiten, sollten Sie die [Microsoft Edge Preview-Kanäle][MicrosoftEdgePreviewChannels] als Standard Entwicklungsbrowser verwenden.  Über die Vorschau Kanäle erhalten Sie Zugriff auf die neuesten devtools-Funktionen.  
+Wenn Sie unter Windows oder macOS sind, sollten Sie die [Microsoft Edge-Vorschaukanäle][MicrosoftEdgePreviewChannels] als Standardentwicklungsbrowser verwenden.  Über die Vorschaukanäle erhalten Sie Zugriff auf die neuesten DevTools-Features.  
 
-## Kontakt mit dem Microsoft Edge devtools-Team  
+## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge DevTools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsMain]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chrom)-Entwickler Tools | Microsoft docs"  
-[DevtoolsCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu "Ausführen von Befehlen mit dem Befehlsmenü von Microsoft Edge devtools | Microsoft docs"
-[DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "Schublade – Anpassen von Microsoft Edge devtools | Microsoft docs"
-[DevtoolsExperimentalFeaturesTurnOn]: /microsoft-edge/devtools-guide-chromium/experimental-features#turn-on-experimental-features "Aktivieren von experimentellen Features – experimentelle Features | Microsoft docs"  
-[DevtoolsIssues]: /microsoft-edge/devtools-guide-chromium/issues "Suchen und Beheben von Problemen mit dem Microsoft Edge devtools Issues Tool | Microsoft docs"
-[DevtoolsSourcesEditCssJavascript]: /microsoft-edge/devtools-guide-chromium/sources#edit-css-and-javascript "Bearbeiten von CSS und JavaScript – Übersicht über das Quellen Panel | Microsoft docs"  
-[DevtoolsNetworkIndexLogActivity]: /microsoft-edge/devtools-guide-chromium/network/index#log-network-activity "Protokollieren von Netzwerkaktivitäten – Überprüfen der Netzwerkaktivität in Microsoft Edge devtools | Microsoft docs"
+[DevtoolsMain]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
+[DevtoolsCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu "Führen Sie Befehle mit dem Microsoft Edge DevTools-Befehlsmenü | Microsoft Docs"
+[DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "Drawer – Anpassen von Microsoft Edge DevTools | Microsoft Docs"
+[DevtoolsExperimentalFeaturesTurnOn]: /microsoft-edge/devtools-guide-chromium/experimental-features#turn-on-experimental-features "Aktivieren experimenteller Features – Experimentelle Features | Microsoft Docs"  
+[DevtoolsIssues]: /microsoft-edge/devtools-guide-chromium/issues "Erkennen und Beheben von Problemen mit dem Microsoft Edge DevTools-Tool „Probleme“ | Microsoft Docs"
+[DevtoolsSourcesEditCssJavascript]: /microsoft-edge/devtools-guide-chromium/sources#edit-css-and-javascript "Bearbeiten von CSS und JavaScript – Übersicht über den Quellenbereich | Microsoft Docs"  
+[DevtoolsNetworkIndexLogActivity]: /microsoft-edge/devtools-guide-chromium/network/index#log-network-activity "Protokollnetzwerkaktivität – Überprüfen der Netzwerkaktivität in Microsoft Edge DevTools | Microsoft Docs"
 
-[CodepenZoherghadyaliAbdgrpz]: https://codepen.io/zoherghadyali/full/abdGrPZ "Format Bearbeitung für CSS-in-JS-Frameworks | CodePen"
-[CodepenZoherghadyaliZyrjgdJ]: https://codepen.io/zoherghadyali/full/zYrjgdJ "Doppelte Nachrichten an Konsole senden | CodePen"
-[CodepenRachelweilYzwBzKM]: https://codepen.io/hxlnt/full/YzwBzKM "CSS-Raster Planner-Beispiel | CodePen"
+[CodepenZoherghadyaliAbdgrpz]: https://codepen.io/zoherghadyali/full/abdGrPZ "Formatbearbeitung für CSS-in-JS-Frameworks | CodePen"
+[CodepenZoherghadyaliZyrjgdJ]: https://codepen.io/zoherghadyali/full/zYrjgdJ "Senden doppelter Nachrichten an konsolen | CodePen"
+[CodepenRachelweilYzwBzKM]: https://codepen.io/hxlnt/full/YzwBzKM "CSS-Rasterplanerbeispiel | CodePen"
 
-[CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chrom Fehler"  
+[CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chromium-Fehler"  
 
-[CR772558]: https://crbug.com/772558 "DevTools: Update auf die neueste Version von Lighthouse | Chrom Fehler"  
-[CR800028]: https://crbug.com/800028 "Verknüpfung "doppelte Zeile" im Entwickler Tools-Editor funktioniert nach dem Chrome-Update nicht Chrom Fehler"  
-[CR912581]: https://crbug.com/912581 "Verfügbar machen, welche Skripts vom V8-Code zwischengespeichert wurden in devtools/about: Ablaufverfolgung | Chrom Fehler"  
-[CR946975]: https://crbug.com/946975 "DevTools-Formatvorlagen-Seitenleiste funktioniert nicht mit konstruierten Stylesheets | Chrom Fehler"  
-[CR955497]: https://crbug.com/955497 "Kontextmenü für App-Symbole für PWAs | Chrom Fehler"  
-[CR974550]: https://crbug.com/974550 "Metrische Diskrepanz zwischen perf Panel und performanceObserver | Chrom Fehler"  
-[CR1041830]: https://crbug.com/1041830 "Verbessern der Farben für Haltepunkte | Chrom Fehler"  
-[CR1055875]: https://crbug.com/1055875 "Der Wert der Einstellung nur ausgewählte Kontext Konsole wird nach dem Schließen und erneuten Öffnen von Entwickler Tools nicht beibehalten | Chrom Fehler"  
-[CR1066579]: https://crbug.com/1066579 "DevTools: Anzeigen der ServiceWorkers-Abruf Zeitachse pro Anforderung in der Netzwerksteuerung | Chrom Fehler"  
-[CR1071432]: https://crbug.com/1071432 "WASM Basic Developer Experience | Chrom Fehler"  
-[CR1073899]: https://crbug.com/1073899 "Die Registerkarte "berechnete Formatvorlage" verschwindet im reaktionsfähigen Modus | Chrom Fehler"  
-[CR1073903]: https://crbug.com/1073903 "DevTools: Syntax Hervorhebung funktioniert nicht mit privaten Feldern | Chrom Fehler"  
-[CR1082963]: https://crbug.com/1082963 "Das Verhalten der Konsolen Gruppe für ähnliche Nachrichten kann nicht deaktiviert werden | Chrom Fehler"  
-[CR1083214]: https://crbug.com/1083214 "Acorn unterstützt keine optionalen Verkettungen | Chrom Fehler"  
-[CR1083797]: https://crbug.com/1083797 "Pretty printing Broken für NULL-verschmilzt | Chrom Fehler"  
-[CR1096008]: https://crbug.com/1096008 "Entfernen von "aus" | Chrom Fehler"  
-[CR1047356]: https://crbug.com/1047356 "CSS Grid/Flexbox/Tabellentools | Chrom Fehler"  
-[CR1093687]: https://crbug.com/1093687 "Tool zum Erstellen und Wiedergeben von synthetischen Netzwerkanforderungen | Chrom Fehler"  
-[CR1070378]: https://crbug.com/1070378 "Integrieren von webhint in devtools | Chrom Fehler"  
-[CR1069404]: https://crbug.com/1069404 "[Dev tools] widget Popups sind zu alle schmal | Chrom Fehler"  
-[CR897944]: https://crbug.com/897944 "Verschieb DevTool Panels | Chrom Fehler"
+[CR772558]: https://crbug.com/772558 "DevTools: Aktualisieren auf die neueste Version von "| Chromium-Fehler"  
+[CR800028]: https://crbug.com/800028 "Doppelte Zeilenverknüpfung im Entwicklertools-Editor funktioniert nach dem Chrome-Update nicht | Chromium-Fehler"  
+[CR912581]: https://crbug.com/912581 "Verfügbar machen, welche Skripts von V8 in DevTools/about:tracing zwischengespeichert | Chromium-Fehler"  
+[CR946975]: https://crbug.com/946975 "DevTools Styles Sidebar funktioniert nicht mit erstellten Stylesheets | Chromium-Fehler"  
+[CR955497]: https://crbug.com/955497 "Kontextmenü "App-Symbol" für PWAs | Chromium-Fehler"  
+[CR974550]: https://crbug.com/974550 "Metrikkonflikt zwischen Perf-Bereich und performanceObserver-| Chromium-Fehler"  
+[CR1041830]: https://crbug.com/1041830 "Verbessern von Farben für Haltepunkte | Chromium-Fehler"  
+[CR1055875]: https://crbug.com/1055875 "Der Wert der Konsoleneinstellung Nur Ausgewählter Kontext bleibt nach dem Schließen und erneuten Öffnen von Entwicklertools nicht | Chromium-Fehler"  
+[CR1066579]: https://crbug.com/1066579 "DevTools: Show ServiceWorkers Fetch Timeline per request in Network panel | Chromium-Fehler"  
+[CR1071432]: https://crbug.com/1071432 "Wasm Basic Developer Experience | Chromium-Fehler"  
+[CR1073899]: https://crbug.com/1073899 "Registerkarte "Berechnete Formatvorlage" wird im reaktionsschnellen Modus | Chromium-Fehler"  
+[CR1073903]: https://crbug.com/1073903 "DevTools: Syntax highlighting doesn't work with private fields | Chromium-Fehler"  
+[CR1082963]: https://crbug.com/1082963 "Das Gruppenverhalten ähnlicher Nachrichten der Konsole kann nicht deaktiviert | Chromium-Fehler"  
+[CR1083214]: https://crbug.com/1083214 "acorn unterstützt keine optionale Verkettung | Chromium-Fehler"  
+[CR1083797]: https://crbug.com/1083797 "Ziemliches Drucken unterbrochen für nullish koescing | Chromium-Fehler"  
+[CR1096008]: https://crbug.com/1096008 "Entfernen von FMP-| Chromium-Fehler"  
+[CR1047356]: https://crbug.com/1047356 "CSS Grid/Flexbox/Table tooling | Chromium-Fehler"  
+[CR1093687]: https://crbug.com/1093687 "Erstellen eines Tools zum Erstellen und Wiedergeben synthetischer Netzwerkanforderungen | Chromium-Fehler"  
+[CR1070378]: https://crbug.com/1070378 "Integrieren von Webhint in DevTools | Chromium-Fehler"  
+[CR1069404]: https://crbug.com/1069404 "[Dev Tools] Widget-Popups sind zu eng | Chromium-Fehler"  
+[CR897944]: https://crbug.com/897944 "Draggable devtool panels | Chromium-Fehler"
 
-[GithubGoogleChromeLighthouse600]: https://github.com/GoogleChrome/lighthouse/releases/tag/v6.0.0 "v 6.0.0-GoogleChrome/Lighthouse | GitHub"  
+[GithubGoogleChromeLighthouse600]: https://github.com/GoogleChrome/lighthouse/releases/tag/v6.0.0 "v6.0.0 – GoogleChrome/| GitHub"  
 
-[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback] "Neues Problem – MicrosoftDocs/Edge – Entwickler"  
+[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback] "Neues Problem – MicrosoftDocs/edge-developer"  
 
-[MdnShadowDom]: https://developer.mozilla.org/docs/Web/Web_Components/Using_shadow_DOM "Verwenden des Schatten-Dom | MDN"
+[MdnShadowDom]: https://developer.mozilla.org/docs/Web/Web_Components/Using_shadow_DOM "Verwenden von Schatten-DOM-| MDN"
 
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download/ "Microsoft Edge Preview-Kanäle"  
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download/ "Microsoft Edge Preview Channels"  
 
-[VS]: https://visualstudio.microsoft.com/ "Visual Studio"
-[VSCode]: https://code.visualstudio.com/ "Visual Studio-Code"  
+[VisualStudio]: https://visualstudio.microsoft.com/ "Visual Studio"
+[VisualStudioCode]: https://code.visualstudio.com/ "Visual Studio Code"  
 
-[CsswgDraftsCssom]: https://drafts.csswg.org/cssom "CSS-Objektmodell (CSSOM) | W3C CSS-Arbeitsgruppen-Editor-Entwürfe"  
+[CsswgDraftsCssom]: https://drafts.csswg.org/cssom "CSS-Objektmodell (CSSOM) | W3C CSS Working Group Editor Drafts"  
 
-[PostTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | Einen Tweet Posten"  
-[EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools Twitter-Konto"  
+[PostTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | Veröffentlichen eines Tweets"  
+[EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools, Twitter-Konto"  
 
-[V8DevClassFieldsPrivate]: https://v8.dev/features/class-fields#private-class-fields "Private Kurs Felder – öffentliche und private Kurs Felder | V8. Dev"  
-[V8DevCodeCaching]: https://v8.dev/blog/code-caching-for-devs "Code Zwischenspeicherung für JavaScript-Entwickler | V8. Dev"  
-[V8DevNullishCoalescing]: https://v8.dev/features/nullish-coalescing "Ungültiges vereinigen | V8. Dev"  
-[V8DevOptionalChaining]: https://v8.dev/features/optional-chaining "Optionale Verkettung | V8. Dev"  
+[V8DevClassFieldsPrivate]: https://v8.dev/features/class-fields#private-class-fields "Private Klassenfelder – Öffentliche und private Klassenfelder | V8. Dev"  
+[V8DevCodeCaching]: https://v8.dev/blog/code-caching-for-devs "Code zwischenspeichern für JavaScript-Entwickler | V8. Dev"  
+[V8DevNullishCoalescing]: https://v8.dev/features/nullish-coalescing "Nullish-Koescing-| V8. Dev"  
+[V8DevOptionalChaining]: https://v8.dev/features/optional-chaining "Optionale Verkettungs| V8. Dev"  
 
 [WebhintMain]: https://webhint.io "webhint"  
 
-[WicgConstructStylesheet]: https://wicg.github.io/construct-stylesheets/ "Konstruktable Stylesheet-Objekte | Web Inkubator CG"
+[WicgConstructStylesheet]: https://wicg.github.io/construct-stylesheets/ "Constructable Stylesheet Objects | Web Incubator CG"
 
 <!--[WebDevLighthouseWhatsNew60]: https://web.dev/lighthouse-whats-new-6.0 "What's New in Lighthouse 6.0 | Web.Dev"  -->  
 <!--[WebDevVitalsCoreWeb]: https://web.dev/vitals#core-web-vitals "Core Web Vitals - Web Vitals | Web.Dev"  -->  
@@ -391,13 +395,13 @@ Wenn Sie unter Windows oder macOS arbeiten, sollten Sie die [Microsoft Edge Prev
 <!--[WebDevFirstMeaningfulPaint]: https://web.dev/first-meaningful-paint "First Meaningful Paint | Web.Dev"  -->  
 <!--[WhatsNew201902ConstructableStylesheets]: ../../2019/02/constructable-stylesheets.md "Constructable Stylesheets: seamless reusable styles | Microsoft Docs"  -->  
 
-[TheWebWeWant]: https://webwewant.fyi/ "Das gewünschte Web"  
+[TheWebWeWant]: https://webwewant.fyi/ "The Web We Want"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
-> Die ursprüngliche Seite wird [hier](https://developers.google.com/web/updates/2020/06/devtools/index) gefunden und von [Jecelyn Yeen][JecelynYeen] \ (Developer Advocate, Chrome devtools \) erstellt.  
+> Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
+> Die ursprüngliche Seite findet sich [hier](https://developers.google.com/web/updates/2020/06/devtools/index) und wurde von [Jecelyn Yeen][JecelynYeen] \(Developer Advocate, Chrome DevTools\) erstellt.  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

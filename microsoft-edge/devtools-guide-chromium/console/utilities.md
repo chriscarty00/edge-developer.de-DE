@@ -1,18 +1,18 @@
 ---
-description: Eine Referenz zu den in der Microsoft Edge devtools-Konsole verfügbaren Convenience-Befehlen.
-title: API-Referenz für Konsolen Dienstprogramme
+description: Ein Verweis auf Komfortbefehle, die in der Microsoft Edge DevTools-Konsole verfügbar sind.
+title: Referenz zur Konsolen-Hilfsprogramme-API
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: f224bb8235437e971ff0e59c20d69e589ce520fb
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
+ms.openlocfilehash: e7253bf5402a03d1659f56ba083bb87e93b3af38
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125251"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398826"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,16 +28,16 @@ ms.locfileid: "11125251"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# API-Referenz für Konsolen Dienstprogramme  
+# <a name="console-utilities-api-reference"></a>Referenz zur Konsolen-Hilfsprogramme-API  
 
-Die API für Konsolen Dienstprogramme enthält eine Sammlung von praktischen Befehlen zum Ausführen allgemeiner Aufgaben: auswählen und Überprüfen von DOM-Elementen, Anzeigen von Daten im lesbaren Format, beenden und Starten des Profilers sowie überwachen von DOM-Ereignissen.  
+Die Console Utilities-API enthält eine Auflistung von Komfortbefehlen zum Ausführen gängiger Aufgaben: Auswählen und Überprüfen von DOM-Elementen, Anzeigen von Daten im lesbaren Format, Beenden und Starten des Profilers und Überwachen von DOM-Ereignissen.  
 
 > [!WARNING]
-> Die folgenden Befehle funktionieren nur in der Microsoft Edge devtools-Konsole.  Die Befehle funktionieren nicht, wenn Sie aus Ihren Skripts ausgeführt werden.  
+> Die folgenden Befehle funktionieren nur in der Microsoft Edge DevTools-Konsole.  Die Befehle funktionieren nicht, wenn sie aus Ihren Skripts ausgeführt werden.  
 
-Suchen Sie `console.log()` nach `console.error()` und die restlichen `console.*` Methoden?  Siehe [API-Referenz][DevToolsConsoleApi]für die Konsole.  
+Navigieren Sie `console.log()` für `console.error()` die und-Methoden der restlichen `console.*` Methoden zu [Konsolen-API-Referenz][DevToolsConsoleApi].  
 
-## Kürzlich ausgewerteter Ausdruck  
+## <a name="recently-evaluated-expression"></a>Kürzlich ausgewerteter Ausdruck  
 
 ```console
 $_
@@ -45,25 +45,25 @@ $_
 
 Gibt den Wert des zuletzt ausgewerteten Ausdrucks zurück.  
 
-In der folgenden Abbildung wird ein einfacher Ausdruck \ ( `2 + 2` \) ausgewertet.  `$_`Anschließend wird die Eigenschaft ausgewertet, die den gleichen Wert enthält.  
+In der folgenden Abbildung wird ein einfacher Ausdruck \( `2 + 2` \) ausgewertet.  Die `$_` Eigenschaft wird dann ausgewertet, die denselben Wert enthält.  
 
-:::image type="complex" source="../media/console-arithmatic.msft.png" alt-text="$ _ ist der zuletzt ausgewertete Ausdruck" lightbox="../media/console-arithmatic.msft.png":::
+:::image type="complex" source="../media/console-arithmatic.msft.png" alt-text="$_ ist der zuletzt ausgewertete Ausdruck" lightbox="../media/console-arithmatic.msft.png":::
    Abbildung 1:  `$_` ist der zuletzt ausgewertete Ausdruck  
 :::image-end:::  
 
-In der folgenden Abbildung enthält der ausgewertete Ausdruck zunächst ein Array von Namen.  Auswerten, `$_.length` um die Länge des Arrays zu ermitteln, wird der Wert, der in Änderungen gespeichert wird, `$_` zum neuesten ausgewerteten Ausdruck `4` .  
+In der folgenden Abbildung enthält der ausgewertete Ausdruck zunächst ein Array von Namen.  Auswerten, um die Länge des Arrays zu finden, wird der in Änderungen gespeicherte Wert zum `$_.length` `$_` neuesten ausgewerteten Ausdruck, `4` .  
 
-:::image type="complex" source="../media/console-array-length.msft.png" alt-text="$ _ ist der zuletzt ausgewertete Ausdruck" lightbox="../media/console-array-length.msft.png":::
-   Abbildung 2:  `$_` Änderungen, wenn neue Befehle ausgewertet werden  
+:::image type="complex" source="../media/console-array-length.msft.png" alt-text="$_ ändert sich, wenn neue Befehle ausgewertet werden" lightbox="../media/console-array-length.msft.png":::
+   Abbildung 2:  `$_` Änderungen bei der Auswertung neuer Befehle  
 :::image-end:::  
 
-## Zuletzt ausgewähltes Element oder JavaScript-Objekt  
+## <a name="recently-chosen-element-or-javascript-object"></a>Kürzlich ausgewähltes Element oder JavaScript-Objekt  
 
 ```console
 $0
 ```  
 
-Gibt das zuletzt ausgewählte Element oder JavaScript-Objekt zurück.  `$1` Gibt die zweite zuletzt ausgewählte Person zurück usw.  Die `$0` `$1` Befehle,,, und werden `$2` `$3` `$4` als historischer Bezug auf die letzten fünf im Bereich **Elemente** geprüften DOM-Elemente oder die letzten fünf im **Speicher** Bereich ausgewählten JavaScript-Heapobjekte ausgeführt.  
+Gibt das zuletzt ausgewählte Element oder JavaScript-Objekt zurück.  `$1` gibt den zweiten zuletzt ausgewählten zurück, und so weiter.  Die Befehle , , , und funktionieren als verlaufshistorische Referenz zu den letzten fünf DOM-Elementen, die im Elementtool oder den letzten fünf im Speichertool ausgewählten `$0` `$1` `$2` `$3` `$4` JavaScript-Heapobjekten überprüft wurden. **** ****  
 
 :::row:::
    :::column span="1":::
@@ -97,60 +97,60 @@ Gibt das zuletzt ausgewählte Element oder JavaScript-Objekt zurück.  `$1` Gibt
    :::column-end:::
 :::row-end:::  
 
-In der folgenden Abbildung ist ein `img` Element im Panel **Elemente** ausgewählt.  Wurde im **Konsolen** Einzug `$0` ausgewertet und zeigt dasselbe Element an.  
+In der folgenden Abbildung wird `img` ein Element im **Elementtool ausgewählt.**  In der **Konsolenschube** `$0` wurde ausgewertet und zeigt dasselbe Element an.  
 
-:::image type="complex" source="../media/console-image-highlighted-$0.msft.png" alt-text="$ _ ist der zuletzt ausgewertete Ausdruck" lightbox="../media/console-image-highlighted-$0.msft.png":::
-   Abbildung 3: die `$0`  
+:::image type="complex" source="../media/console-image-highlighted-$0.msft.png" alt-text="Die $0" lightbox="../media/console-image-highlighted-$0.msft.png":::
+   Abbildung 3: Die `$0`  
 :::image-end:::  
 
-In der folgenden Abbildung zeigt das Bild ein anderes Element, das auf der gleichen Seite markiert ist.  Das `$0` jetzt bezieht sich auf das neu ausgewählte Element, `$1` gibt aber die zuvor ausgewählte zurück.  
+In der folgenden Abbildung zeigt die Abbildung ein anderes Element, das auf derselben Seite ausgewählt ist.  The `$0` bezieht sich nun auf das neu ausgewählte Element, während das zuvor ausgewählte Element zurückgegeben `$1` wird.  
 
-:::image type="complex" source="../media/console-image-highlighted-$1.msft.png" alt-text="$ _ ist der zuletzt ausgewertete Ausdruck" lightbox="../media/console-image-highlighted-$1.msft.png":::
-   Abbildung 4: die `$1`  
+:::image type="complex" source="../media/console-image-highlighted-$1.msft.png" alt-text="Die $1" lightbox="../media/console-image-highlighted-$1.msft.png":::
+   Abbildung 4: Die `$1`  
 :::image-end:::  
 
-## Abfrageauswahl  
+## <a name="query-selector"></a>Abfrageauswahl  
 
 ```console
 $(selector, [startNode])
 ```  
 
-Gibt den Verweis auf das erste DOM-Element mit der angegebenen CSS-Auswahl zurück.  Diese Methode ist ein Alias für die [Document. querySelector ()][MDNDocumentQuerySelector] -Methode.  
+Gibt den Verweis auf das erste DOM-Element mit dem angegebenen CSS-Selektor zurück.  Diese Methode ist ein Alias für die [document.querySelector()-Methode.][MDNDocumentQuerySelector]  
 
 In der folgenden Abbildung wird ein Verweis auf das erste `<img>` Element im Dokument zurückgegeben.  
 
-:::image type="complex" source="../media/console-element-selector-image.msft.png" alt-text="$ _ ist der zuletzt ausgewertete Ausdruck" lightbox="../media/console-element-selector-image.msft.png":::
-   Abbildung 5: die `$('img')`  
+:::image type="complex" source="../media/console-element-selector-image.msft.png" alt-text="$('img')" lightbox="../media/console-element-selector-image.msft.png":::
+   Abbildung 5: Die `$('img')`  
 :::image-end:::  
 
-Zeigen Sie auf das zurückgegebene Ergebnis, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie **im Element Panel** anzeigen aus, um es im Dom zu finden, oder **Scrollen Sie in zu Ansicht** , um es auf der Seite anzuzeigen.  
+Zeigen Sie auf das zurückgegebene Ergebnis, öffnen Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste\), und wählen Sie Im Elementbereich einblenden aus, um es im DOM zu finden, oder scrollen Sie **in** ansicht, um es auf der Seite anzuzeigen. ****  
 
 In der folgenden Abbildung wird ein Verweis auf das aktuell ausgewählte Element zurückgegeben, und die src-Eigenschaft wird angezeigt.  
 
-:::image type="complex" source="../media/console-element-selector-image-source.msft.png" alt-text="$ _ ist der zuletzt ausgewertete Ausdruck" lightbox="../media/console-element-selector-image-source.msft.png":::
-   Abbildung 6: die `$('img').src`  
+:::image type="complex" source="../media/console-element-selector-image-source.msft.png" alt-text="$('img').src" lightbox="../media/console-element-selector-image-source.msft.png":::
+   Abbildung 6: Die `$('img').src`  
 :::image-end:::  
 
-Diese Methode unterstützt auch einen zweiten Parameter, startNode, der ein "Element" oder einen Knoten angibt, aus dem nach Elementen gesucht werden soll.  Der Standardwert des Parameters ist `document` .  
+Diese Methode unterstützt auch einen zweiten Parameter, startNode, der ein "Element" oder einen Knoten angibt, von dem aus nach Elementen gesucht werden soll.  Der Standardwert des Parameters ist `document` .  
 
-In der folgenden Abbildung `img` befindet sich das erste Element nach dem `title--image` und zeigt die `src` ordnungsgemäße zurückgegeben wird.  
+In der folgenden Abbildung wird das erste Element gefunden, nachdem das gefunden wurde und das ordnungsgemäß `img` `title--image` angezeigt `src` wird.  
 
-:::image type="complex" source="../media/console-element-selector-image-filter-source.msft.png" alt-text="$ _ ist der zuletzt ausgewertete Ausdruck" lightbox="../media/console-element-selector-image-filter-source.msft.png":::
-   Abbildung 7: die `$('img', document.querySelector('title--image')).src`  
+:::image type="complex" source="../media/console-element-selector-image-filter-source.msft.png" alt-text="The $('img', document.querySelector('title--image')).src" lightbox="../media/console-element-selector-image-filter-source.msft.png":::
+   Abbildung 7: Die `$('img', document.querySelector('title--image')).src`  
 :::image-end:::  
 
 > [!NOTE]
-> Wenn Sie eine Bibliothek wie jQuery verwenden, die verwendet wird `$` , wird die Funktionalität überschrieben und `$` entspricht der Implementierung aus dieser Bibliothek.  
+> Wenn Sie eine Bibliothek wie jQuery verwenden, die verwendet, wird die Funktionalität überschrieben und entspricht der Implementierung `$` `$` aus dieser Bibliothek.  
 
-## Abfrageauswahl alle  
+## <a name="query-selector-all"></a>Abfrageauswahl alle  
 
 ```console
 $$(selector, [startNode])
 ```  
 
-Gibt ein Array von Elementen zurück, die der angegebenen CSS-Auswahl entsprechen.  Diese Methode entspricht dem Aufrufen der [Document. querySelectorAll ()][MDNDocumentQuerySelectorAll] -Methode.  
+Gibt ein Array von Elementen zurück, die mit dem angegebenen CSS-Selektor übereinstimmen.  Diese Methode entspricht dem Ausführen der [document.querySelectorAll()-Methode.][MDNDocumentQuerySelectorAll]  
 
-Verwenden Sie im folgenden Codebeispiel und in der Abbildung `$$()` ein Array aller `<img>` Elemente im aktuellen Dokument, und zeigen Sie den Wert der `src` Eigenschaft für jedes Element an.  
+Im folgenden Codebeispiel und der folgenden Abbildung können Sie ein Array aller Elemente im aktuellen Dokument erstellen und den Wert der Eigenschaft `$$()` `<img>` für jedes Element `src` anzeigen.  
 
 ```console
 var images = $$('img');
@@ -159,13 +159,13 @@ for (each in images) {
 }
 ```  
 
-:::image type="complex" source="../media/console-element-selector-image-all.msft.png" alt-text="$ _ ist der zuletzt ausgewertete Ausdruck" lightbox="../media/console-element-selector-image-all.msft.png":::
-   Abbildung 8: verwenden `$$()` , um alle Bilder im Dokument auszuwählen und die Quellen anzuzeigen  
+:::image type="complex" source="../media/console-element-selector-image-all.msft.png" alt-text="Verwenden von $$() zum Auswählen aller Bilder im Dokument und Anzeigen der Quellen" lightbox="../media/console-element-selector-image-all.msft.png":::
+   Abbildung 8: Verwenden `$$()` zum Auswählen aller Bilder im Dokument und Anzeigen der Quellen  
 :::image-end:::  
 
-Diese Methode unterstützt auch einen zweiten Parameter, startNode, der ein Element oder einen Knoten angibt, aus dem nach Elementen gesucht werden soll.  Der Standardwert des Parameters ist `document` .  
+Diese Methode unterstützt auch einen zweiten Parameter, startNode, der ein Element oder einen Knoten angibt, von dem aus nach Elementen gesucht werden soll.  Der Standardwert des Parameters ist `document` .  
 
-Im folgenden Codebeispiel und in der Abbildung wird eine geänderte Version des vorherigen Codebeispiels und der Abbildung verwendet, `$$()` um ein Array aller `<img>` Elemente zu erstellen, die im aktuellen Dokument nach dem ausgewählten Knoten angezeigt werden.  
+Im folgenden Codebeispiel und der folgenden Abbildung wird eine geänderte Version des vorherigen Codebeispiels und der abbildung verwendet, um ein Array aller Elemente zu erstellen, die im aktuellen Dokument nach dem ausgewählten `$$()` `<img>` Knoten angezeigt werden.  
 
 ```console
 var images = $$('img', document.querySelector(`title--image`));
@@ -174,60 +174,60 @@ for (each in images) {
 }
 ```  
 
-:::image type="complex" source="../media/console-element-selector-image-filter-all.msft.png" alt-text="$ _ ist der zuletzt ausgewertete Ausdruck" lightbox="../media/console-element-selector-image-filter-all.msft.png":::
-   Abbildung 9: verwenden `$$()` , um alle Bilder auszuwählen, die nach dem angegebenen `<div>` Element im Dokument angezeigt werden, und Anzeigen der Quellen  
+:::image type="complex" source="../media/console-element-selector-image-filter-all.msft.png" alt-text="Verwenden von $$(), um alle Bilder auszuwählen, die nach dem angegebenen <div> im Dokument angezeigt werden, und die Quellen anzeigen" lightbox="../media/console-element-selector-image-filter-all.msft.png":::
+   Abbildung 9: `$$()` Verwenden, um alle Bilder auszuwählen, die nach dem angegebenen Element im Dokument angezeigt werden, und `<div>` die Quellen anzeigen  
 :::image-end:::  
 
 > [!NOTE]
-> Wählen Sie `Shift` + `Enter` in der Konsole aus, um eine neue Zeile zu beginnen, ohne das Skript auszuführen.  
+> Wählen `Shift` + `Enter` Sie in der Konsole aus, um eine neue Zeile zu starten, ohne das Skript auszuführen.  
 
-## XPath  
+## <a name="xpath"></a>XPath  
 
 ```console
 $x(path, [startNode])
 ```  
 
-Gibt ein Array von DOM-Elementen zurück, die dem angegebenen XPath-Ausdruck entsprechen.  
+Gibt ein Array von DOM-Elementen zurück, die mit dem angegebenen XPath-Ausdruck übereinstimmen.  
 
-Im folgenden Codebeispiel und in der Abbildung `<p>` werden alle Elemente auf der Seite zurückgegeben.  
+Im folgenden Codebeispiel und der folgenden Abbildung werden alle Elemente auf der Seite `<p>` zurückgegeben.  
 
 ```console
 $x("//p")
 ```  
 
-:::image type="complex" source="../media/console-array-xpath.msft.png" alt-text="$ _ ist der zuletzt ausgewertete Ausdruck" lightbox="../media/console-array-xpath.msft.png":::
-   Abbildung 10: Verwenden einer XPath-Auswahl  
+:::image type="complex" source="../media/console-array-xpath.msft.png" alt-text="Verwenden eines XPath-Selektors" lightbox="../media/console-array-xpath.msft.png":::
+   Abbildung 10: Verwenden eines XPath-Selektors  
 :::image-end:::  
 
-Im folgenden Codebeispiel und in der Abbildung `<p>` werden alle Elemente `<a>` zurückgegeben, die Elemente enthalten.  
+Im folgenden Codebeispiel und der folgenden Abbildung werden alle Elemente zurückgegeben, die Elemente `<p>` `<a>` enthalten.  
 
 ```console
 $x("//p[a]")
 ```  
 
-:::image type="complex" source="../media/console-array-xpath-sub-element.msft.png" alt-text="$ _ ist der zuletzt ausgewertete Ausdruck" lightbox="../media/console-array-xpath-sub-element.msft.png":::
-   Abbildung 11: Verwenden einer komplexeren XPath-Auswahl  
+:::image type="complex" source="../media/console-array-xpath-sub-element.msft.png" alt-text="Verwenden eines komplizierteren XPath-Selektors" lightbox="../media/console-array-xpath-sub-element.msft.png":::
+   Abbildung 11: Verwenden eines komplizierteren XPath-Selektors  
 :::image-end:::  
 
-Ähnlich wie bei den anderen Auswahlbefehlen `$x(path)` verfügt ein optionaler zweiter Parameter, der `startNode` ein Element oder einen Knoten angibt, aus dem nach Elementen gesucht werden soll.  
+Ähnlich wie die anderen Selektorbefehle verfügt über einen optionalen zweiten Parameter, der ein Element oder einen Knoten angibt, von dem aus `$x(path)` nach Elementen gesucht werden `startNode` soll.  
 
-:::image type="complex" source="../media/console-array-xpath-startnode.msft.png" alt-text="$ _ ist der zuletzt ausgewertete Ausdruck" lightbox="../media/console-array-xpath-startnode.msft.png":::
-   Abbildung 12: Verwenden einer XPath-Auswahl mit `startNode`  
+:::image type="complex" source="../media/console-array-xpath-startnode.msft.png" alt-text="Verwenden eines XPath-Selektors mit startNode" lightbox="../media/console-array-xpath-startnode.msft.png":::
+   Abbildung 12: Verwenden eines XPath-Selektors mit `startNode`  
 :::image-end:::  
 
-## Deaktivieren  
+## <a name="clear"></a>clear  
 
 ```console
 clear()
 ```  
 
-Löscht die Konsole des Verlaufs.  
+Die Konsole des Verlaufs wird geräumt.  
 
 ```console
 clear()
 ```  
 
-## copy  
+## <a name="copy"></a>copy  
 
 ```console
 copy(object)
@@ -239,113 +239,113 @@ Die `copy(object)` Methode kopiert eine Zeichenfolgendarstellung des angegebenen
 copy($0)
 ```  
 
-## debuggen  
+## <a name="debug"></a>debuggen  
 
 ```console
 debug(method)
 ```  
 
 >[!NOTE]
-> Das [Chrom Problem #1050237][MonorailIssue1050237] verfolgt einen Fehler mit der `debug()` Funktion.  Wenn das Problem auftritt, versuchen Sie stattdessen, [Haltepunkte zu verwenden][DevtoolsJavascriptBreakpoints] .  
+> Das [#A0 #1050237][MonorailIssue1050237] verfolgt einen Fehler mit der `debug()` Funktion.  Wenn das Problem auftreten sollte, versuchen Sie stattdessen, [Haltepunkte zu][DevtoolsJavascriptBreakpoints] verwenden.  
 
-Wenn Sie die angegebene Methode anfordern, wird der Debugger aufgerufen und innerhalb der Methode im Bereich " **Quellen** " unterbricht, sodass Sie den Code schrittweise durchlaufen und Debuggen können.  
+Wenn Sie die angegebene Methode anfordern, wird der Debugger aufgerufen und innerhalb der Methode im **Sources-Tool** umbricht, sodass Sie den Code schrittweise durchbrechen und debuggen können.  
 
 ```console
 debug("debug");
 ```  
 
-:::image type="complex" source="../media/console-debug-text.msft.png" alt-text="$ _ ist der zuletzt ausgewertete Ausdruck" lightbox="../media/console-debug-text.msft.png":::
-   Abbildung 13: durchbrechen innerhalb einer Methode mit `debug()`  
+:::image type="complex" source="../media/console-debug-text.msft.png" alt-text="Durchbrechen einer Methode mit debug()" lightbox="../media/console-debug-text.msft.png":::
+   Abbildung 13: Einbrechen in eine Methode mit `debug()`  
 :::image-end:::  
 
-Verwenden Sie diese Option, `undebug(method)` um die Unterbrechung der Methode zu beenden, oder verwenden Sie die Benutzeroberfläche, um alle Haltepunkte zu deaktivieren.  
+Verwenden `undebug(method)` Sie diese Option, um die Unterbrechung der Methode zu beenden, oder verwenden Sie die Benutzeroberfläche, um alle Haltepunkte zu deaktivieren.  
 
-Wenn Sie weitere Informationen zu Haltepunkten erhalten möchten, navigieren Sie zum [Anhalten des Codes mit Haltepunkten][DevToolsJavascriptBreakpoints].  
+Weitere Informationen zu Haltepunkten finden Sie unter [Pause Your Code With Breakpoints][DevToolsJavascriptBreakpoints].  
 
-## dir  
+## <a name="dir"></a>dir  
 
 ```console
 dir(object)
 ```  
 
-Zeigt eine Objektstil Auflistung aller Eigenschaften für das angegebene Objekt an.  Diese Methode ist ein Alias für die [Console. dir ()][MDNConsoleDir] -Methode.  
+Zeigt eine Objektformatliste aller Eigenschaften für das angegebene Objekt an.  Diese Methode ist ein Alias für die [console.dir()-Methode.][MDNConsoleDir]  
 
-Werten `document.head` Sie in der Konsole aus, um den HTML-Code zwischen den `<head>` und- `</head>` Tags anzuzeigen.  Im folgenden Codebeispiel und in der Abbildung wird nach der Verwendung in der Konsole ein Objektformat Eintrag angezeigt `console.dir()` .  
+Werten `document.head` Sie in der Konsole aus, um den HTML-Code zwischen den tags und zu `<head>` `</head>` anzeigen.  Im folgenden Codebeispiel und der folgenden Abbildung wird nach der Verwendung in der Konsole eine Auflistung im `console.dir()` Objektstil angezeigt.  
 
 ```console
 document.head;
 dir(document.head);
 ```  
 
-:::image type="complex" source="../media/console-dir-document-head-expanded.msft.png" alt-text="$ _ ist der zuletzt ausgewertete Ausdruck" lightbox="../media/console-dir-document-head-expanded.msft.png":::
-   Abbildung 14: Protokollierung `document.head` mit `dir()` Methode  
+:::image type="complex" source="../media/console-dir-document-head-expanded.msft.png" alt-text="Protokollierung von document.head mit dir()-Methode" lightbox="../media/console-dir-document-head-expanded.msft.png":::
+   Abbildung 14: `document.head` Protokollierung mit `dir()` Methode  
 :::image-end:::  
 
-Weitere Informationen finden Sie unter [`console.dir()`][DevToolsConsoleApiConsoleDirObject] Eintrag in der Konsolen-API.  
+Weitere Informationen finden Sie unter Eintrag [`console.dir()`][DevToolsConsoleApiConsoleDirObject] in der Konsolen-API.  
 
-## DirXML  
+## <a name="dirxml"></a>dirxml  
 
 ```console
 dirxml(object)
 ```  
 
-Druckt eine XML-Darstellung des angegebenen Objekts, wie auf der Registerkarte **Elemente** zu sehen ist.  Diese Methode entspricht der [Console. DirXML ()][MDNConsoleDirxml] -Methode.  
+Druckt eine XML-Darstellung des angegebenen Objekts, wie im **Elementtool** angezeigt.  Diese Methode entspricht der [console.dirxml()-Methode.][MDNConsoleDirxml]  
 
-## prüfen  
+## <a name="inspect"></a>inspect  
 
 ```console
 inspect(object/method)
 ```  
 
-Das angegebene Element oder Objekt wird in der entsprechenden Leiste geöffnet und markiert: entweder der **Element Panel für** DOM-Elemente oder der **Speicher** Panel für JavaScript-Heapobjekte.  
+Öffnet und wählt das angegebene Element oder Objekt im entsprechenden Bereich aus: entweder das **Elementtool** für DOM-Elemente oder das **Speichertool** für JavaScript-Heapobjekte.  
 
-Im folgenden Codebeispiel und in der Abbildung `document.body` wird das im Panel **Elemente** geöffnet.  
+Im folgenden Codebeispiel und der folgenden Abbildung wird `document.body` das im **Elementtool** geöffnet.  
 
 ```console
 inspect(document.body);
 ```  
 
-:::image type="complex" source="../media/console-inspect-document-body.msft.png" alt-text="$ _ ist der zuletzt ausgewertete Ausdruck" lightbox="../media/console-inspect-document-body.msft.png":::
+:::image type="complex" source="../media/console-inspect-document-body.msft.png" alt-text="Überprüfen eines Elements mit inspect()" lightbox="../media/console-inspect-document-body.msft.png":::
    Abbildung 15: Überprüfen eines Elements mit `inspect()`  
 :::image-end:::  
 
-Beim Übergeben einer zu überprüfenden Methode wird das Dokument im **Quellen** Panel geöffnet, damit Sie es überprüfen können.  
+Beim Übergeben einer Zu überprüfenden Methode öffnet **** die Methode das Dokument im Sources-Tool, damit Sie es überprüfen können.  
 
-## getEventListeners  
+## <a name="geteventlisteners"></a>getEventListeners  
 
 ```console
 getEventListeners(object)
 ```  
 
-Gibt die für das angegebene Objekt registrierten Ereignislistener zurück.  Der Rückgabewert ist ein Objekt, das für jeden registrierten Ereignistyp \ (wie `click` oder \) ein Array enthält `keydown` .  Die Mitglieder jedes Arrays sind Objekte, die den für jeden Typ registrierten Listener beschreiben.  Im folgenden Codebeispiel werden alle für das Document-Objekt registrierten Ereignislistener aufgelistet.  
+Gibt die Ereignislistener zurück, die für das angegebene Objekt registriert sind.  Der Rückgabewert ist ein Objekt, das ein Array für jeden registrierten Ereignistyp \(z. B. `click` oder `keydown` \) enthält.  Die Member der einzelnen Arrays sind Objekte, die den für jeden Typ registrierten Listener beschreiben.  In der folgenden Codebeispielfigur werden alle ereignislistener aufgeführt, die für das Dokumentobjekt registriert sind.  
 
 ```console
 getEventListeners(document);
 ```  
 
-:::image type="complex" source="../media/console-elements-event-listeners-console-get-event-listeners-document.msft.png" alt-text="$ _ ist der zuletzt ausgewertete Ausdruck" lightbox="../media/console-elements-event-listeners-console-get-event-listeners-document.msft.png":::
-   Abbildung 16: das Ergebnis der Verwendung `getEventListeners(document)`  
+:::image type="complex" source="../media/console-elements-event-listeners-console-get-event-listeners-document.msft.png" alt-text="Ausgabe der Verwendung von getEventListeners(document)" lightbox="../media/console-elements-event-listeners-console-get-event-listeners-document.msft.png":::
+   Abbildung 16: Das Ergebnis der Verwendung `getEventListeners(document)`  
 :::image-end:::  
 
-Wenn mehr als ein Listener für das angegebene Objekt registriert ist, enthält das Array ein Element für jeden Listener.  In der folgenden Abbildung sind zwei Ereignis-Listener für das Document-Element für das `click` Ereignis registriert.  
+Wenn mehrere Listener für das angegebene Objekt registriert sind, enthält das Array ein Element für jeden Listener.  In der folgenden Abbildung sind zwei Ereignislistener für das Dokumentelement für das Ereignis `click` registriert.  
 
-:::image type="complex" source="../media/console-elements-event-listeners-console-get-event-listeners-document-expanded-1.msft.png" alt-text="$ _ ist der zuletzt ausgewertete Ausdruck" lightbox="../media/console-elements-event-listeners-console-get-event-listeners-document-expanded-1.msft.png":::
-   Abbildung 17: mehrere Listener  
+:::image type="complex" source="../media/console-elements-event-listeners-console-get-event-listeners-document-expanded-1.msft.png" alt-text="Mehrere Listener" lightbox="../media/console-elements-event-listeners-console-get-event-listeners-document-expanded-1.msft.png":::
+   Abbildung 17: Mehrere Listener  
 :::image-end:::  
 
-Sie können jedes der folgenden Objekte erweitern, um die Eigenschaften zu untersuchen.  
+Sie können jedes der folgenden Objekte weiter erweitern, um die Eigenschaften zu erkunden.  
 
-:::image type="complex" source="../media/console-elements-event-listeners-console-get-event-listeners-document-2.msft.png" alt-text="$ _ ist der zuletzt ausgewertete Ausdruck" lightbox="../media/console-elements-event-listeners-console-get-event-listeners-document-2.msft.png":::
-   Abbildung 18: Erweiterte Ansicht des Listener-Objekts  
+:::image type="complex" source="../media/console-elements-event-listeners-console-get-event-listeners-document-2.msft.png" alt-text="Erweiterte Ansicht des Listenerobjekts" lightbox="../media/console-elements-event-listeners-console-get-event-listeners-document-2.msft.png":::
+   Abbildung 18: Erweiterte Ansicht des Listenerobjekts  
 :::image-end:::  
 
-## Tasten  
+## <a name="keys"></a>Tasten  
 
 ```console
 keys(object)
 ```  
 
-Gibt ein Array zurück, das die Namen der Eigenschaften enthält, die zum angegebenen Objekt gehören.  Um die zugeordneten Werte der gleichen Eigenschaften abzurufen, verwenden Sie `values()` .  
+Gibt ein Array zurück, das die Namen der Eigenschaften enthält, die zum angegebenen Objekt gehören.  Um die zugeordneten Werte derselben Eigenschaften zu erhalten, verwenden Sie `values()` .  
 
 Angenommen, Ihre Anwendung hat das folgende Objekt definiert.  
 
@@ -353,7 +353,7 @@ Angenommen, Ihre Anwendung hat das folgende Objekt definiert.
 var player1 =   
 ```  
 
-In den folgenden Codebeispielen und einer Abbildung wird davon ausgegangen, dass das Ergebnis `player1` vor der Eingabe `keys(player1)` und in der Konsole im globalen Namespace \ (zur Vereinfachung \) definiert wurde `values(player1)` .  
+In den folgenden Codebeispielen und abbildung wird davon ausgegangen, dass das Ergebnis vor der Eingabe und in der Konsole im globalen `player1` Namespace \(zur Einfachheit\) `keys(player1)` `values(player1)` definiert wurde.  
 
 ```console
 keys(player1)
@@ -361,17 +361,17 @@ keys(player1)
 values(player1)
 ```  
 
-:::image type="complex" source="../media/console-keys-values.msft.png" alt-text="$ _ ist der zuletzt ausgewertete Ausdruck" lightbox="../media/console-keys-values.msft.png":::
-   Abbildung 19: die `keys()` `values()` Befehle und  
+:::image type="complex" source="../media/console-keys-values.msft.png" alt-text="Die Befehle keys() und values()" lightbox="../media/console-keys-values.msft.png":::
+   Abbildung 19: Die `keys()` Befehle und `values()`  
 :::image-end:::  
 
-## Monitor  
+## <a name="monitor"></a>Monitor  
 
 ```console
 monitor(method)
 ```  
 
-Protokolliert eine Nachricht an die Konsole, die den Methodennamen zusammen mit den Argumenten angibt, die beim Aufrufen an die Methode übergeben werden.  
+Protokolliert eine Nachricht an die Konsole, die den Methodennamen zusammen mit den Argumenten angibt, die beim Aufgerufen an die -Methode übergeben werden.  
 
 ```console
 function sum(x, y) {
@@ -380,46 +380,46 @@ function sum(x, y) {
 monitor(sum);
 ```  
 
-:::image type="complex" source="../media/console-function-monitor-sum.msft.png" alt-text="$ _ ist der zuletzt ausgewertete Ausdruck" lightbox="../media/console-function-monitor-sum.msft.png":::
-   Abbildung 20: die `monitor()` Methode  
+:::image type="complex" source="../media/console-function-monitor-sum.msft.png" alt-text="Die monitor()-Methode" lightbox="../media/console-function-monitor-sum.msft.png":::
+   Abbildung 20: Die `monitor()` Methode  
 :::image-end:::  
 
-Verwenden Sie diese Einstellung `unmonitor(method)` , um die Überwachung zu beenden.  
+Verwenden `unmonitor(method)` Sie, um die Überwachung zu beenden.  
 
-## monitorEvents  
+## <a name="monitorevents"></a>monitorEvents  
 
 ```console
 monitorEvents(object[, events])
 ```  
 
-Wenn eines der angegebenen Ereignisse für das angegebene Objekt eintritt, wird das Ereignisobjekt in der Konsole protokolliert.  Sie können ein einzelnes Ereignis angeben, das überwacht werden soll, ein Array von Ereignissen oder einen der generischen Ereignistypen, die einer vordefinierten Sammlung von Ereignissen zugeordnet sind.  Das folgende Codebeispiel und die Abbildung finden Sie hier.  
+Wenn eines der angegebenen Ereignisse für das angegebene Objekt auftritt, wird das Ereignisobjekt bei der Konsole protokolliert.  Sie können ein einzelnes zu überwachende Ereignis, ein Array von Ereignissen oder einen der generischen Ereignistypen angeben, die einer vordefinierten Auflistung von Ereignissen zugeordnet sind.  Überprüfen Sie das folgende Codebeispiel und die folgende Abbildung.  
 
-Im folgenden werden alle Größen Änderungsereignisse für das Window-Objekt überwacht.  
+Im Folgenden werden alle Größenänderungsereignisse des Fensterobjekts überwacht.  
 
 ```console
 monitorEvents(window, "resize");
 ```  
 
-:::image type="complex" source="../media/console-monitor-events-resize-window.msft.png" alt-text="$ _ ist der zuletzt ausgewertete Ausdruck" lightbox="../media/console-monitor-events-resize-window.msft.png":::
-   Abbildung 21: Überwachen von Fenstergrößen Ereignissen  
+:::image type="complex" source="../media/console-monitor-events-resize-window.msft.png" alt-text="Überwachen von Fenstergrößeereignissen" lightbox="../media/console-monitor-events-resize-window.msft.png":::
+   Abbildung 21: Überwachen von Fenstergrößeereignissen  
 :::image-end:::  
 
-Im folgenden wird ein Array zum Überwachen `resize` von beiden und `scroll` Ereignissen für das Window-Objekt definiert.  
+Im Folgenden wird ein Array definiert, das sowohl die Ereignisse als `resize` `scroll` auch das Fensterobjekt überwacht.  
 
 ```console
 monitorEvents(window, ["resize", "scroll"]);
 ```  
 
-Sie können auch einen der verfügbaren Arten von Ereignissen angeben, Zeichenfolgen, die vordefinierten Gruppen von Ereignissen zugeordnet sind.  In der folgenden Tabelle werden die verfügbaren Ereignistypen und die zugehörigen Ereigniszuordnungen angezeigt.  
+Sie können auch einen der verfügbaren Ereignistypen angeben, Zeichenfolgen, die vordefinierten Ereignissätzen zuordnungen.  In der folgenden Tabelle werden die verfügbaren Ereignistypen und die zugeordneten Ereigniszuordnungen angezeigt.  
 
 | Ereignistyp | Entsprechende zugeordnete Ereignisse |  
 |:--- |:--- |  
-| `mouse` | "klicken", "DblClick", "MouseDown", "MouseMove", "Mouse Out", "MouseOver", "MouseUp", "Mausrad" |  
-| `key` | "KeyDown"; "keypress"; "KeyUp"; "TextInput" |  
+| `mouse` | "click", "dblclick", "mousedown", "mousemove", "mouseout", "mouseover", "mouseup", "mousewheel" |  
+| `key` | "keydown", "keypress", "keyup", "textInput" |  
 | `touch` | "touchcancel", "touchend", "touchmove", "touchstart" |  
-| `control` | "Blur"; "ändern"; "Fokus"; "Zurücksetzen"; "Größe"; "Scrollen"; "auswählen"; "Absenden"; "Zoom" |  
+| `control` | "blur", "change", "focus", "reset", "resize", "scroll", "select", "submit", "zoom" |  
 
-Im folgenden Codebeispiel ist der `key` Ereignistyp, der `key` Ereignissen in einem Eingabetextfeld entspricht, aktuell im Bereich **Elemente** ausgewählt.  
+Im folgenden Codebeispiel wird der Ereignistyp, der Ereignissen in einem Eingabetextfeld entspricht, `key` `key` derzeit im **Elementtool** ausgewählt.  
 
 ```console
 monitorEvents($0, "key");
@@ -427,27 +427,27 @@ monitorEvents($0, "key");
 
 In der folgenden Abbildung wird die Beispielausgabe nach dem Eingeben eines Zeichens in das Textfeld angezeigt.  
 
-:::image type="complex" source="../media/console-monitor-events-type-t-y.msft.png" alt-text="$ _ ist der zuletzt ausgewertete Ausdruck" lightbox="../media/console-monitor-events-type-t-y.msft.png":::
-   Abbildung 22: Überwachen von Schlüsselereignissen  
+:::image type="complex" source="../media/console-monitor-events-type-t-y.msft.png" alt-text="Überwachen wichtiger Ereignisse" lightbox="../media/console-monitor-events-type-t-y.msft.png":::
+   Abbildung 22: Überwachen wichtiger Ereignisse  
 :::image-end:::  
 
-## profile  
+## <a name="profile"></a>profile  
 
 ```console
 profile([name])
 ```  
 
-Startet eine JavaScript-CPU-Profilerstellungssitzung mit einem optionalen Namen.  Die [profileEnd ()](#profileend) -Methode vervollständigt das Profil und zeigt die Ergebnisse im **Speicher** Panel an.  <!--See also [Speed Up JavaScript Runtime][DevToolsRenderingToolsJSRuntime].  -->  
+Startet eine JavaScript-CPU-Profilerstellungssitzung mit einem optionalen Namen.  Die [profileEnd()-Methode](#profileend) schließt das Profil ab und zeigt die Ergebnisse im **Speichertool** an.  <!--Navigate to [Speed Up JavaScript Runtime][DevToolsRenderingToolsJSRuntime].  -->  
 
-1.  Führen `profile()` Sie die Methode aus, um die Profilerstellung zu starten.  
+1.  Führen Sie die `profile()` Methode aus, um die Profilerstellung zu starten.  
     
     ```console
     profile("My profile")
     ```  
     
-1.  Führen Sie die [profileEnd ()](#profileend) -Methode aus, um die Profilerstellung zu beenden und die Ergebnisse im **Speicher** Panel anzuzeigen.  
+1.  Führen Sie die [profileEnd()-Methode](#profileend) aus, um die Profilerstellung zu beenden und die Ergebnisse im **Speichertool anzeigen** zu können.  
 
-Profile können auch geschachtelt sein.  In den folgenden Codebeispielen und Abbildung ist das Ergebnis unabhängig von der Reihenfolge identisch.  
+Profile können auch geschachtelt sein.  In den folgenden Codebeispielen und abbildung ist das Ergebnis unabhängig von der Reihenfolge gleich.  
 
 ```console
 profile('A');
@@ -457,24 +457,24 @@ profileEnd('B');
 ```  
 
 > [!NOTE]
-> Mehrere CPU-Profile können gleichzeitig ausgeführt werden, und es ist nicht erforderlich, jede Person in der Erstellungsreihenfolge zu schließen.  
+> Es können mehrere CPU-Profile gleichzeitig ausgeführt werden, und Sie müssen nicht jedes in der Erstellungsreihenfolge schließen.  
 
-## profileEnd  
+## <a name="profileend"></a>profileEnd  
 
 ```console
 profileEnd([name])
 ```  
 
-Schließt eine JavaScript-CPU-Profilerstellungssitzung ab und zeigt die Ergebnisse im **Speicher** Panel an.  Sie müssen die [profile ()](#profile) -Methode ausführen.  <!--See also [Speed Up JavaScript Runtime][DevToolsRenderingToolsJSRuntime].  -->  
+Schließt eine JavaScript-CPU-Profilerstellungssitzung ab und zeigt die Ergebnisse im **Speichertool** an.  Sie müssen die [profile()-Methode](#profile) ausführen.  <!--Navigate to [Speed Up JavaScript Runtime][DevToolsRenderingToolsJSRuntime].  -->  
 
-1.  Führen Sie die [profile ()](#profile) -Methode aus, um die Profilerstellung zu starten.  
-1.  Führen `profileEnd()` Sie die Methode aus, um die Profilerstellung zu beenden und die Ergebnisse im **Speicher** Panel anzuzeigen.  
+1.  Führen Sie die [profile()-Methode](#profile) aus, um die Profilerstellung zu starten.  
+1.  Führen Sie `profileEnd()` die Methode aus, um die Profilerstellung zu beenden und die Ergebnisse im **Speichertool** anzeigen.  
     
     ```console
     profileEnd("My profile")
     ```  
 
-Profile können auch geschachtelt sein.  Im folgenden Codebeispiel und in Abbildung ist das Ergebnis unabhängig von der Reihenfolge identisch.  
+Profile können auch geschachtelt sein.  Im folgenden Codebeispiel und in der abbildung ist das Ergebnis unabhängig von der Reihenfolge identisch.  
 
 ```console
 profile('A');
@@ -483,22 +483,22 @@ profileEnd('A');
 profileEnd('B');
 ```  
 
-Das Ergebnis wird als Heap-Momentaufnahme im **Speicher** Panel angezeigt.  
+Das Ergebnis wird als Heap-Momentaufnahme im **Speichertool** angezeigt.  
 
-:::image type="complex" source="../media/console-memory-multiple-cpu-profiles.msft.png" alt-text="$ _ ist der zuletzt ausgewertete Ausdruck" lightbox="../media/console-memory-multiple-cpu-profiles.msft.png":::
-   Abbildung 23: gruppierte profile  
+:::image type="complex" source="../media/console-memory-multiple-cpu-profiles.msft.png" alt-text="Gruppieren von Profilen" lightbox="../media/console-memory-multiple-cpu-profiles.msft.png":::
+   Abbildung 23: Gruppieren von Profilen  
 :::image-end:::  
 
 > [!NOTE]
-> Mehrere CPU-Profile können gleichzeitig ausgeführt werden, und es ist nicht erforderlich, jede Person in der Erstellungsreihenfolge zu schließen.  
+> Es können mehrere CPU-Profile gleichzeitig ausgeführt werden, und Sie müssen nicht jedes in der Erstellungsreihenfolge schließen.  
 
-## queryObjects  
+## <a name="queryobjects"></a>queryObjects  
 
 ```console
 queryObjects(Constructor)
 ```  
 
-Gibt ein Array von Objekten zurück, die mit dem angegebenen Konstruktor erstellt wurden.  Der Bereich von `queryObjects()` ist der aktuell ausgewählte Laufzeitkontext in der Konsole.
+Gibt ein Array von Objekten zurück, die mit dem angegebenen Konstruktor erstellt wurden.  Der Bereich `queryObjects()` von ist der aktuell ausgewählte Laufzeitkontext in der Konsole.
 
 :::row:::
    :::column span="1":::
@@ -506,7 +506,7 @@ Gibt ein Array von Objekten zurück, die mit dem angegebenen Konstruktor erstell
       queryObjects(promise)
       ```  
       
-      Gibt alle zurück `Promises` .  
+      Gibt alle `Promises` zurück.  
    :::column-end:::
    :::column span="1":::
       ```console
@@ -520,19 +520,19 @@ Gibt ein Array von Objekten zurück, die mit dem angegebenen Konstruktor erstell
       queryObjects(functionName)
       ```  
       
-      Gibt alle Objekte zurück, die mithilfe von instanziiert wurden `new functionName()` .  
+      Gibt alle Objekte zurück, die mit instanziiert `new functionName()` wurden.  
    :::column-end:::
 :::row-end:::  
 
 ---  
 
-## Tabelle  
+## <a name="table"></a>Tabelle  
 
 ```console
 table(data[, columns])
 ```  
 
-Protokolliert Objektdaten mit Tabellenformatierung basierend auf dem Datenobjekt mit optionalen Spaltenüberschriften.  Im folgenden Codebeispiel und in der Abbildung wird eine Liste mit Namen angezeigt, die eine Tabelle in der Konsole verwenden.  
+Protokolliert Objektdaten mit Tabellenformatierung basierend auf dem Datenobjekt in mit optionalen Spaltenüberschriften.  Im folgenden Codebeispiel und der folgenden Abbildung wird eine Liste der Namen angezeigt, die eine Tabelle in der Konsole verwenden.  
 
 ```console
 var names = {
@@ -548,54 +548,54 @@ var names = {
 table(names);
 ```  
 
-:::image type="complex" source="../media/console-table-display.msft.png" alt-text="$ _ ist der zuletzt ausgewertete Ausdruck" lightbox="../media/console-table-display.msft.png":::
-   Abbildung 24: das Ergebnis der `table()` Methode  
+:::image type="complex" source="../media/console-table-display.msft.png" alt-text="Das Ergebnis der table()-Methode" lightbox="../media/console-table-display.msft.png":::
+   Abbildung 24: Das Ergebnis der `table()` Methode  
 :::image-end:::  
 
-## undebug  
+## <a name="undebug"></a>undebug  
 
 ```console
 undebug(method)
 ```  
 
-Beendet das Debuggen der angegebenen Methode, sodass der Debugger beim Aufrufen der Methode nicht mehr aufgerufen wird.  
+Beendet das Debuggen der angegebenen Methode, sodass beim Aufruf der Methode der Debugger nicht mehr aufgerufen wird.  
 
 ```console
 undebug(getData);
 ```  
 
-## Unmonitor  
+## <a name="unmonitor"></a>unmonitor  
 
 ```console
 unmonitor(method)
 ```  
 
-Beendet die Überwachung der angegebenen Methode.  Diese Methode wird in Concert mit der [Monitor ()](#monitor) -Methode verwendet.  
+Beendet die Überwachung der angegebenen Methode.  Diese Methode wird in Zusammenarbeit mit der [monitor()-Methode](#monitor) verwendet.  
 
 ```console
 unmonitor(getData);
 ```  
 
-## unmonitorEvents  
+## <a name="unmonitorevents"></a>unmonitorEvents  
 
 ```console
 unmonitorEvents(object[, events])
 ```  
 
-Beendet das Überwachen von Ereignissen für das angegebene Objekt und die Ereignisse.  Im folgenden Beispiel werden alle Ereignisüberwachungen für das Window-Objekt angehalten.  
+Beendet Überwachungsereignisse für das angegebene Objekt und die angegebenen Ereignisse.  Im Folgenden wird beispielsweise die Ereignisüberwachung für das Window-Objekt beendet.  
 
 ```console
 unmonitorEvents(window);
 ```  
 
-Sie können auch selektiv die Überwachung bestimmter Ereignisse für ein Objekt beenden.  Mit dem folgenden Code wird beispielsweise das Überwachen aller `mouse` Ereignisse für das aktuell ausgewählte Element gestartet und dann die Überwachung von `mousemove` Ereignissen beendet \ (vielleicht, um Rauschen in der Konsolenausgabe zu verringern \).  
+Sie können auch selektiv die Überwachung bestimmter Ereignisse für ein Objekt beenden.  Der folgende Code startet beispielsweise die Überwachung aller Ereignisse für das aktuell ausgewählte Element und beendet dann Überwachungsereignisse \(möglicherweise, um das Rauschen in der `mouse` Konsolenausgabe `mousemove` zu reduzieren\).  
 
 ```console
 monitorEvents($0, "mouse");
 unmonitorEvents($0, "mousemove");
 ```  
 
-## Werte  
+## <a name="values"></a>werte  
 
 ```console
 values(object)
@@ -607,29 +607,29 @@ Gibt ein Array zurück, das die Werte aller Eigenschaften enthält, die zum ange
 values(object);
 ```  
 
-## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
 [DevToolsConsoleApi]: /microsoft-edge/devtools-guide-chromium/console/api "Konsolen-API-Referenz"  
-[DevToolsConsoleApiConsoleDirObject]: /microsoft-edge/devtools-guide-chromium/console/api#dir "dir-Console-API-Referenz"  
-[DevToolsJavascriptBreakpoints]: /microsoft-edge/devtools-guide-chromium/javascript/breakpoints "Anhalten des Codes mit Haltepunkten in Microsoft Edge devtools"  
-[DevToolsRenderingToolsJSRuntime]: /microsoft-edge/devtools-guide-chromium/rendering-tools/js-runtime "Beschleunigen der JavaScript-Laufzeit"  
+[DevToolsConsoleApiConsoleDirObject]: /microsoft-edge/devtools-guide-chromium/console/api#dir "dir – Konsolen-API-Referenz"  
+[DevToolsJavascriptBreakpoints]: /microsoft-edge/devtools-guide-chromium/javascript/breakpoints "So unterbrechen Sie Ihren Code mit Haltepunkten in Microsoft Edge DevTools"  
+[DevToolsRenderingToolsJSRuntime]: /microsoft-edge/devtools-guide-chromium/rendering-tools/js-runtime "Beschleunigen der JavaScript-Runtime"  
 
-[MDNConsoleDir]: https://developer.mozilla.org/docs/Web/API/Console/dir "Console. dir () | MDN"  
-[MDNConsoleDirxml]: https://developer.mozilla.org/docs/Web/API/Console/dirxml "Console. DirXML () | MDN"  
-[MDNDocumentQuerySelector]: https://developer.mozilla.org/docs/Web/API/Document/querySelector "Document. querySelector () | MDN"  
-[MDNDocumentQuerySelectorAll]: https://developer.mozilla.org/docs/Web/API/Document/querySelectorAll "Document. querySelectorAll () | MDN"  
+[MDNConsoleDir]: https://developer.mozilla.org/docs/Web/API/Console/dir "Console.dir() | MDN"  
+[MDNConsoleDirxml]: https://developer.mozilla.org/docs/Web/API/Console/dirxml "Console.dirxml() | MDN"  
+[MDNDocumentQuerySelector]: https://developer.mozilla.org/docs/Web/API/Document/querySelector "Document.querySelector() | MDN"  
+[MDNDocumentQuerySelectorAll]: https://developer.mozilla.org/docs/Web/API/Document/querySelectorAll "Document.querySelectorAll() | MDN"  
 
-[MonorailIssue1050237]: https://bugs.chromium.org/p/chromium/issues/detail?id=1050237 "Problem 1050237: Debuggen (Funktion) funktioniert nicht | Monorail"  
+[MonorailIssue1050237]: https://bugs.chromium.org/p/chromium/issues/detail?id=1050237 "Problem 1050237: debug(function) funktioniert nicht | Monorail"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
-> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/console/utilities) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
+> Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
+> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/console/utilities) und wird von [Kayce Basken][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) verfasst.  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

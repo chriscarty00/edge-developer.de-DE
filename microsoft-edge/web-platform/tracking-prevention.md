@@ -1,50 +1,50 @@
 ---
-description: Diese Seite enthält die Dokumentation zur Nachverfolgungsfunktion von Microsoft Edge (Chrom)
-title: Nach Verfolgungs Verhinderung in Microsoft Edge (Chrom)
+description: Diese Seite enthält Eine Dokumentation zum Feature zur Verhinderung der Verfolgung von Microsoft Edge (Chromium)
+title: Tracking Prevention in Microsoft Edge (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/27/2020
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Kompatibilität, Web-Plattform, Tracking-Prävention, Tracker, Cookies, Speicher, AD-Blockierung, Tracker-Blockierung, Tracking-Schutz
-ms.openlocfilehash: a767e55a44c4d416b6d40ca12eb49f2c3a722010
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+keywords: microsoft edge, compatibility, web platform, tracking prevention, trackers, cookies, storage, ad blocking, tracker blocking, tracking protection
+ms.openlocfilehash: 66356ab7ddaa56e46e74560d72b510ba63f7d70a
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11231152"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399288"
 ---
-# Nach Verfolgungs Verhinderung in Microsoft Edge (Chrom)  
+# <a name="tracking-prevention-in-microsoft-edge-chromium"></a>Tracking Prevention in Microsoft Edge (Chromium)  
 
-Das Feature zur nach Verfolgungs Verhinderung in Microsoft Edge schützt Benutzer vor Online Nachverfolgung, indem es die Möglichkeit von Nachverfolgungen für den Zugriff auf browserbasierten Speicher sowie für das Netzwerk einschränken.  Es wurde entwickelt, um die [Datenschutz Versprechen][MicrosoftEdgeBrowserPrivacyPromise] von Microsoft Edge Browser zu wahren und gleichzeitig sicherzustellen, dass es keine Auswirkungen auf die Website Kompatibilität oder die wirtschaftliche Rentabilität des Webs gibt.  
+Das Feature zur Nachverfolgungsverhütung in Microsoft Edge schützt Benutzer vor der Onlineverfolgung, indem die Möglichkeit von Trackern eingeschränkt wird, auf browserbasierten Speicher sowie auf das Netzwerk zu zugreifen.  Es wurde entwickelt, um [][MicrosoftEdgeBrowserPrivacyPromise] die Datenschutzversprechen des Microsoft Edge-Browsers zu erfüllen und gleichzeitig sicherzustellen, dass es standardmäßig keine Auswirkungen auf die Websitekompatibilität oder die wirtschaftliche Lebensfähigkeit des Webs gibt.  
 
-Microsoft Edge bietet derzeit Benutzern drei Ebenen der nach Verfolgungs Prävention, die durch Navigieren zu ausgewählt werden `edge://settings/privacy` .  
+Microsoft Edge bietet Benutzern derzeit drei Ebenen der Nachverfolgungsverhütung, die durch Navigieren zu ausgewählt `edge://settings/privacy` werden.  
 
-![Drei Einstellungen für die nach Verfolgungs Verhinderung][ImageThreeSettingsTrackingPrevention]  
+![Drei Einstellungen für die Nachverfolgungsverhütung][ImageThreeSettingsTrackingPrevention]  
 
-1.  **Standard** – die am wenigsten einschränkende Ebene der nach Verfolgungs Prävention, die für Benutzer entwickelt wurde, die personalisierte Ankündigungen nutzen und die nicht im Web verfolgt werden.  Standard schützt nur Benutzer vor böswilligen Tracker wie Fingerabdruck-und cryptominers.  
-1.  **Ausgeglichen (Standard)** – die Standardebene der nach Verfolgungs Verhinderung, die für Benutzer entwickelt wurde, die nicht so gruselige Ankündigungen sehen möchten, die Ihnen während der Durchsuchung im Internet folgen.  "Balanced" zielt darauf ab, Nachverfolgen von Websites zu blockieren, mit denen Benutzer nie in Kontakt treten, während das Risiko von Kompatibilitätsproblemen im Internet minimiert wird.  
-1.  **Strict** -die restriktivste Ebene der nach Verfolgungs Prävention, die für Benutzer konzipiert ist, die in der Lage sind, die Kompatibilität der Website für maximale Datensicherheit zu überwachen.  
+1.  **Basic** – Die am wenigsten restriktive Ebene der Nachverfolgungsverhütung, die für Benutzer gedacht ist, die personalisierte Werbung genießen und keine Bedenken haben, im Web nachverfolgt zu werden.  Basic schützt Benutzer nur vor bösartigen Trackern wie Fingerabdrücken und Kryptominern.  
+1.  **Balanced (Standard)** – Die Standardstufe der Nachverfolgungsverhütung, die für Benutzer entwickelt wurde, die weniger gruselige Anzeigen anzeigen möchten, die ihnen während des Browsens im Web folgen.  Balanced zielt darauf ab, Tracker von Websites zu blockieren, mit deren Zugriff Benutzer niemals interagieren, und gleichzeitig das Risiko von Kompatibilitätsproblemen im Web zu minimieren.  
+1.  **Strict** – Die restriktivste Stufe der Nachverfolgungsverhütung, die für Benutzer entwickelt wurde, die mit der Kompatibilität von Websites in Ordnung sind, um maximalen Datenschutz zu gewährleisten.  
 
-Das Feature zur nach Verfolgungs Verhinderung in Microsoft Edge besteht aus drei Hauptkomponenten, die zusammenarbeiten, um zu ermitteln, ob eine bestimmte Ressource einer Website als Tracker klassifiziert und blockiert werden soll.  Die Komponenten lauten wie folgt:  
+Das Feature zur Nachverfolgungsverhütung in Microsoft Edge besteht aus drei Hauptkomponenten, die zusammenarbeiten, um zu ermitteln, ob eine bestimmte Ressource von einer Website als Tracker klassifiziert und blockiert werden soll.  Die Komponenten sind wie folgt:  
 
-1.  **Klassifizierung** : die Art und Weise, wie Microsoft Edge feststellt, ob eine URL zu einem Tracker gehört.  
-1.  **Erzwingung** – die Aktionen, mit denen Microsoft Edge-Benutzer vor URLs geschützt werden, die als Tracker klassifiziert wurden.  
-1.  **Abschwächungen** – die Mechanismen, mit denen sichergestellt wird, dass benutzerdefinierte bevorzugte Websites weiterhin funktionieren, während ein starker Standardschutz geboten wird.  
+1.  **Klassifizierung** – Die Art und Weise, wie Microsoft Edge bestimmt, ob eine URL zu einem Tracker gehört.  
+1.  **Erzwingung** – Die Aktionen zum Schutz von Microsoft Edge-Benutzern vor URLs, die als Tracker klassifiziert wurden.  
+1.  **Gegenmaßnahmen** – Die bereitgestellten Mechanismen, um sicherzustellen, dass von Benutzern angegebene Favoritenwebsites weiterhin funktionieren und gleichzeitig einen starken Standardschutz bieten.  
 
-Auf dieser Seite werden alle Komponenten untersucht und ausführlich erläutert.  
+Jede der Komponenten wird auf dieser Seite untersucht und ausführlich erläutert.  
 
-## Klassifizierung  
+## <a name="classification"></a>Klassifizierung  
 
-Die erste Komponente des Features zur nach Verfolgungs Verhinderung in Microsoft Edge ist die Klassifizierung.  Um Online-Tracker zu klassifizieren und Sie in Kategorien zu gruppieren, verwendet Microsoft Edge die [Disconnect][|::ref1::|Main] Open Source [Tracking Protection-Listen][GitHubDisconnectMeTrackingProtection].  Die Listen werden über die "Trust Protection lists"-Komponente bereitgestellt, die bei angezeigt werden kann `edge://components` .  Nach dem herunterladen werden die Listen auf der Festplatte gespeichert, wo Sie Sie verwenden können, um festzustellen, ob/wie eine bestimmte URL klassifiziert wird.  
+Die erste Komponente des Features zur Nachverfolgungsverhütung in Microsoft Edge ist die Klassifizierung.  Um Onlinetracker zu klassifizieren und in Kategorien zu gruppieren, verwendet Microsoft Edge die [Schutzlisten zum][|::ref1::|Main] Trennen von Open Source [Tracking.][GitHubDisconnectMeTrackingProtection]  Die Listen werden über die Komponente "Vertrauensschutzlisten" übermittelt, die unter angezeigt werden `edge://components` kann.  Nach dem Herunterladen werden die Listen auf dem Datenträger gespeichert, auf dem Sie bestimmen können, ob/wie eine bestimmte URL klassifiziert wird.  
 
-Wenn Sie feststellen möchten, ob eine URL vom Klassifikationssystem in Microsoft Edge als Nachverfolgung angesehen wird, werden eine Reihe von Hostnamen überprüft, beginnend mit einer genauen Übereinstimmung, und dann wird die Überprüfung auf partielle Übereinstimmungen mit bis zu vier Beschriftungen über die Domäne der obersten Ebene hinaus fortgesetzt.  
+Um zu ermitteln, ob eine URL vom Klassifizierungssystem in Microsoft Edge als Nachverfolgung betrachtet wird, wird eine Reihe von Hostnamen überprüft, beginnend mit einer genauen Übereinstimmung und anschließend mit der Überprüfung auf teilige Übereinstimmungen auf bis zu vier Bezeichnungen außerhalb der Domäne auf oberster Ebene.  
 
 > **Beispiel**:  
 > 
-> URL `https://a.subdomain.of.a.known.tracker.test/some/path`  
+> URL: `https://a.subdomain.of.a.known.tracker.test/some/path`  
 > 
-> Getestete Host-Namen:  
+> Getestete Hostnamen:  
 > 
 > *   `a.subdomain.of.a.known.tracker.test`  
 > *   `of.a.known.tracker.test`  
@@ -52,125 +52,125 @@ Wenn Sie feststellen möchten, ob eine URL vom Klassifikationssystem in Microsof
 > *   `known.tracker.test`  
 > *   `tracker.test`  
 
-Wenn einer dieser Hostnamen mit einem Hostnamen in der [Liste][GitHubDisconnectMeTrackingProtection]" [trennen][|::ref2::|Main] " übereinstimmt, wird Microsoft Edge mit der Auswertung von Erzwingungs Aktionen fortgesetzt, um zu verhindern, dass Benutzer nachverfolgt werden.  
+Wenn einer dieser Hostnamen mit einem [][|::ref2::|Main] Hostnamen in den Disconnect-Listen [übereinstimmen,][GitHubDisconnectMeTrackingProtection]führt Microsoft Edge die Auswertung von Erzwingungsaktionen aus, um zu verhindern, dass Benutzer nachverfolgt werden.  
 
-## Erzwingung  
+## <a name="enforcement"></a>Erzwingung  
 
-Um Schutz vor der Nachverfolgung von Aktionen im Web zu gewährleisten, übernimmt Microsoft Edge zwei Erzwingungs Aktionen für klassifizierte Tracker:
+Um Schutz vor Nachverfolgungsaktionen im Web zu bieten, ergreift Microsoft Edge zwei Erzwingungsmaßnahmen gegen klassifizierte Tracker:
 
-*   **Einschränken des Speicherzugriffs** – wenn eine bekannte nach Verfolgungs Ressource versucht, auf einen Webspeicher zuzugreifen, in dem Sie möglicherweise versucht, Daten über den Benutzer zu speichern, blockiert Microsoft Edge diesen Zugriff.  Dies umfasst das Einschränken der Möglichkeit für diesen Tracker, Cookies abzurufen oder festzulegen sowie Access-Speicher-APIs wie und zu speichern `IndexedDB` `localStorage` .  
-*   **Blockieren von Ressourcen Lasten** – wenn eine bekannte nach Verfolgungs Ressource auf eine Website geladen wird, blockiert Microsoft Edge möglicherweise diese Last, bevor die Anforderung das Netzwerk erreicht, abhängig von der Kompatibilitäts Auswirkung der Last und der Einstellung für die nach Verfolgungs Vermeidung, die ein Benutzer festgelegt hat.  Blockierte Lasten können Tracking-Skripte, Pixel, Iframes und vieles mehr umfassen.  Dadurch wird verhindert, dass Daten potenziell an die Überwachungs Domäne gesendet werden, und möglicherweise sogar die Ladezeiten und die Seitenleistung als Nebeneffekt verbessern.  
+*   **Speicherzugriff einschränken** – Wenn eine bekannte Nachverfolgungsressource versucht, auf einen Webspeicher zu zugreifen, auf den möglicherweise Daten über den Benutzer gespeichert werden, blockiert Microsoft Edge diesen Zugriff.  Dies umfasst das Einschränken der Möglichkeit für diesen Tracker, Cookies zu erhalten oder zu setzen, sowie den Zugriff auf Speicher-APIs wie `IndexedDB` und `localStorage` .  
+*   **Blockieren** von Ressourcenlasten – Wenn eine bekannte Nachverfolgungsressource auf einer Website geladen wird, blockiert Microsoft Edge diese Last möglicherweise, bevor die Anforderung das Netzwerk erreicht, je nachdem, wie sich die Auslastung und die Einstellung für die Nachverfolgungsverhütung auswirken, die ein Benutzer festgelegt hat.  Blockierte Lasten können Überwachungsskripts, Pixel, iframes und vieles mehr umfassen.  Dadurch wird verhindert, dass potenziell Daten an die Nachverfolgungsdomäne gesendet werden, und die Ladezeiten und die Seitenleistung können sogar als Nebeneffekt verbessert werden.  
 
-Ein Benutzer kann auf der linken Seite der Adressleiste auf das Symbol "Seiten Info" klicken, um festzustellen, welche Tracker auf einer bestimmten Seite blockiert wurden: 
+Ein Benutzer kann das Flyoutsymbol für Seiteninformationen auf der linken Seite der Adressleiste auswählen, um herauszufinden, welche Tracker auf einer bestimmten Seite blockiert wurden: 
 
-![Blockierte Tracker im Seiten Info-Flyout][ImageBlockedTrackersPageInfoFlyout]  
+![Blockierte Tracker im Flyout für Seiteninformationen][ImageBlockedTrackersPageInfoFlyout]  
 
-Wie die Erzwingung angewendet wird, hängt davon ab, welche Ebene der nach Verfolgungs Verhinderung der Benutzer ausgewählt hat und welche Abschwächungen möglicherweise gelten.  
+Wie die Erzwingungen angewendet werden, hängt davon ab, welche Stufe der Nachverfolgungsverhütung der Benutzer ausgewählt hat und welche Gegenmaßnahmen gelten können.  
 
-## Minderungen  
+## <a name="mitigations"></a>Gegenmaßnahmen  
 
-Um sicherzustellen, dass die webkompatibilität so weit wie möglich erhalten bleibt, verfügt Microsoft Edge über drei Schadensbegrenzende Maßnahmen, um die Erzwingung in bestimmten Situationen zu unterstützen.  Hierbei handelt es sich um die [Minderung der org-Beziehung](#org-relationship-mitigation), die Minderung des org- [Engagements](#org-engagement-mitigation)und die [CompatExceptions-Liste](#the-compatexceptions-list).  
+Um sicherzustellen, dass die Webkompatibilität so weit wie möglich erhalten bleibt, verfügt Microsoft Edge über drei Gegenmaßnahmen, mit denen die Durchsetzung in bestimmten Situationen ausgeglichen werden kann.  Dies sind [die Risikominderung für Org-Beziehungen,](#org-relationship-mitigation) [die Risikominderung für Org Engagement](#org-engagement-mitigation)und die [CompatExceptions-Liste.](#the-compatexceptions-list)  
 
-Vor dem Eintauchen in die Schadensbegrenzende Maßnahmen ist es sinnvoll, das Konzept einer "Organisation" oder "org" kurz zu definieren.  [Disconnect][|::ref3::|Main] verwaltet auch eine Liste mit dem Namen [entities.js][GitHubDisconnectMeTrackingProtectionEntitiesJson] , die Gruppen von URLs definiert, die der gleichen übergeordneten Organisation/Firma gehören.  Das Feature zur nach Verfolgungs Verhinderung in Microsoft Edge verwendet diese Liste sowohl in der Vermeidung von Organisations [Beziehungen](#org-relationship-mitigation) als auch in der Vermeidung von Organisations [Engagements](#org-engagement-mitigation) , um das Auftreten von Kompatibilitätsproblemen zu minimieren, die durch nach Verfolgungs Vermeidung mit Auswirkungen auf organisationsübergreifende Anforderungen verursacht werden.  
+Bevor Sie sich mit den Gegenmaßnahmen abm nnen, lohnt es sich, kurz das Konzept einer "Organisation" oder "Org" zu definieren.  [Disconnect][|::ref3::|Main] verwaltet auch eine Liste namens [entities.js,][GitHubDisconnectMeTrackingProtectionEntitiesJson] in der Gruppen von URLs definiert werden, die sich im Besitz derselben übergeordneten Organisation/desselben Unternehmens befinden.  Das Feature zur Nachverfolgungsverhütung [](#org-relationship-mitigation) in Microsoft Edge [](#org-engagement-mitigation) verwendet diese Liste sowohl in der Risikominderung der Organisationsbeziehung als auch in der Risikominderung für Organisationsengagement, um das Auftreten von Kompatibilitätsproblemen zu minimieren, die durch die Nachverfolgung von Verhinderungen verursacht werden, die sich auf organisationsübergreifende Anforderungen ausdingen.  
 
-### Vermeidung von Organisationsbeziehungen  
+### <a name="org-relationship-mitigation"></a>Risikominderung für Organisationsbeziehungen  
 
-Mehrere beliebte Websites verwalten sowohl Websites als auch Content Delivery Networks \ (CDNs \), um statische Ressourcen und Inhalte für diese Websites bereitzustellen.  Um sicherzustellen, dass diese Arten von Szenarien nicht von der nach Verfolgungs Verhinderung betroffen sind, behebt Microsoft Edge eine Website von der nach Verfolgungs Verhinderung, wenn die Website Drittanbieter Anforderungen an andere Websites annimmt, die derselben übergeordneten Organisation gehören (wie in der [Liste "trennen entities.js][GitHubDisconnectMeTrackingProtectionEntitiesJson]in der Liste \" definiert).  Dies ist am besten anhand eines Beispiels zu veranschaulichen.  
-
-> **Beispiel:**
-> 
-> Eine Organisation mit dem Namen Org1 besitzt die Domänen `org1.test` und `org1-cdn.test` , wie in der [Liste entities.jstrennen][GitHubDisconnectMeTrackingProtectionEntitiesJson]definiert.  Stellen Sie sich vor, dass `org1-cdn.test` es sich um einen Tracker handelt, auf den normalerweise Tracking Prevention-Erzwingungen angewendet werden.  Wenn ein Benutzer besucht `https://org1.test` und die Website versucht, eine Ressource zu laden `https://org1-cdn.test` , übernimmt Microsoft Edge keine Erzwingungs Aktionen für Anforderungen, die an vorgenommen wurden, obwohl `org1-cdn.test` es sich nicht um eine URL des ersten Anbieters handelt.  Wenn jedoch eine andere URL, die nicht Teil der Org1-Organisation ist, versucht, die gleiche Ressource zu laden, unterliegt die Anforderung jedoch der Erzwingung, da Sie nicht Teil derselben Organisation ist.  
-> 
-> Auch wenn dadurch die Verfolgung von Verhinderungen für Websites, die zur gleichen Organisation gehören, entspannt wird, ist es unwahrscheinlich, dass dadurch ein hoher Datenschutzrisiko eingeführt wird, da solche Organisationen `https://org1.test` auch `https://org1-cdn.test` mithilfe interner Back-End-Daten ermitteln können, auf welche Websites/Ressourcen Sie zugegriffen haben.  
-
-### Vermeidung von org-Engagements  
-
-Die Minderung des org-Engagements wurde erstellt, um Kompatibilitätsrisiken zu minimieren, die durch das Nachverfolgen der Prävention eingeführt wurden, indem sichergestellt wird, dass Websites, deren Besitzer Organisationen sind, die die Benutzer ausreichend engagieren, weiterhin wie erwartet im Internet funktionieren  Es nutzt das [Website-Engagement][ChromiumDesignDocsSiteEngagement] , um die erzwungene Nutzung zu entspannen, wenn ein Benutzer eine laufende Beziehung (derzeit durch ein Website-Engagement-Score von 4,1 oder höher) mit einer bestimmten Website definiert hat.  Das ist am besten durch ein Beispiel illustriert:
+Mehrere beliebte Websites verwalten websites und Content Delivery Networks \(CDNs\), um statische Ressourcen und Inhalte für diese Websites zu verwenden.  Um sicherzustellen, dass diese Arten von Szenarien nicht von der Nachverfolgungsverhütung betroffen sind, entkoppelt Microsoft Edge eine Website von der Nachverfolgungsverhütung, wenn die Website Anforderungen von Drittanbietern an andere Websites stellt, die im Besitz derselben übergeordneten Organisation sind \(wie unter [Disconnect entities.json list][GitHubDisconnectMeTrackingProtectionEntitiesJson]\ definiert).  Dies wird am besten durch ein Beispiel veranschaulicht.  
 
 > **Beispiel:**
 > 
-> Eine Organisation mit dem Namen Social org besitzt die Domänen `social.example` und `social-videos.example` .
+> Eine Organisation namens Org1 besitzt die Domänen und , wie in der Liste trennen `org1.test` `org1-cdn.test` entities.js[definiert.][GitHubDisconnectMeTrackingProtectionEntitiesJson]  Stellen Sie sich vor, dass dies als Tracker klassifiziert ist und in der Regel Durchsetzungsmaßnahmen für die Nachverfolgungsverhütung `org1-cdn.test` angewendet werden.  Wenn ein Benutzer besucht und die Website versucht, eine Ressource aus zu laden, führt Microsoft Edge keine Erzwingungsaktionen gegen Anforderungen an, an die sie gesendet werden, obwohl es sich nicht um eine URL eines `https://org1.test` `https://org1-cdn.test` Erstbenutzers `org1-cdn.test` handelt.  Wenn jedoch eine andere URL, die nicht Teil der Organisation Org1 ist, versucht, dieselbe Ressource zu laden, wird die Anforderung erzwingt, da sie nicht Teil derselben Organisation ist.  
 > 
-> Benutzer werden als eine Beziehung mit Social org angesehen, wenn Sie eine Website-Engagement-Punktzahl von 4,1 oder höher mit einem der Domänen, die im Besitz von Social org sind, eingerichtet haben.
+> Auch wenn dadurch die Verfolgung von Durchsetzungsmaßnahmen für Websites, die derselben Organisation angehören, entspannt wird, ist es unwahrscheinlich, dass dies ein hohes Datenschutzrisiko mit sich bringt, da solche Organisationen in der Lage sind, zu bestimmen, auf welche Websites/Ressourcen Sie zugegriffen haben, sowie interne `https://org1.test` `https://org1-cdn.test` Back-End-Daten.  
+
+### <a name="org-engagement-mitigation"></a>Risikominderung für Organisationsengagement  
+
+Die Risikominderung für das Engagement der Organisation wurde erstellt, um die durch die Nachverfolgung der Verhinderung verbundenen Kompatibilitätsrisiken zu minimieren, indem sichergestellt wurde, dass Websites im Besitz von Organisationen, mit denen Benutzer ausreichend interagieren, weiterhin wie erwartet im Gesamten Web funktionieren.  Die Websitebindung [][ChromiumDesignDocsSiteEngagement] wird verwendet, um die Erzwingung zu lockern, wenn ein Benutzer eine fortlaufende Beziehung \(derzeit definiert durch eine Websitebindungsnote von 4,1 oder höher\) mit einer bestimmten Website eingerichtet hat.  Dies wird auch hier am besten durch ein Beispiel veranschaulicht:
+
+> **Beispiel:**
 > 
-> Wenn es sich bei einer anderen Website um `https://content-embedder.example` Inhalte von Drittanbietern handelt (sagen Sie ein eingebettetes Video von `social-videos.example` \) aus einer der Domänen, die im Besitz von Social org sind, die normalerweise durch Nachverfolgung von Vorbeugungsmaßnahmen eingeschränkt werden, ist die Website von der Verfolgung von Präventionsmaßnahmen ausgenommen, solange der Standort Einsatzfaktor des Benutzers mit Domänen, die im Besitz von Social org sind,
+> Eine Organisation namens Social Org besitzt die Domänen `social.example` und `social-videos.example` .
 > 
-> Wenn eine Website nicht zu einer Organisation gehört, muss ein Benutzer eine Website-Engagement-Punktzahl von 4,1 oder höher einrichten, bevor alle Speicherzugriffs-/Ressourcen Auslastungs Blöcke, die durch nach Verfolgungs Verhinderung auferlegt werden, gelockert werden.
+> Benutzer gelten als eine Beziehung zu Social Org, wenn sie eine Websitebindungsnote von 4,1 oder höher mit einer der Domänen eingerichtet haben, die im Besitz von Social Org sind.
+> 
+> Wenn eine andere Website , Inhalte von Drittanbietern \(z. B. ein eingebettetes Video von \) aus einer der Domänen enthält, die im Besitz von Social Org sind, die normalerweise durch die Verfolgung von Durchsetzungen der Verhinderung eingeschränkt würden, ist die Website von der Verfolgung von Erzwingungen der Verhinderung ausgenommen, solange die Bewertung des Websiteengagements des Benutzers mit Domänen, die im Besitz von Social Org sind, über dem Schwellenwert beibehalten `https://content-embedder.example` `social-videos.example` wird.
+> 
+> Wenn eine Website nicht zu einer Organisation gehört, muss ein Benutzer eine Standortverlobungsnote von 4,1 oder höher direkt damit festlegen, bevor speicherzugriffs-/ressourcenlastblöcke, die durch die Nachverfolgungsverhinddung auferlegt werden, gelockert werden.
 
-Die Minderung des org-Engagements wird derzeit nur im Modus "ausgeglichen" angewendet, damit Microsoft Edge den größtmöglichen Schutz für Benutzer bietet, die sich für Strict entschieden haben.
+Die Risikominderung für Organisationsengagement wird derzeit nur im Balanced-Modus angewendet, sodass Microsoft Edge den größtmöglichen Schutz für Benutzer bietet, die sich für Strict entschieden haben.
 
-### Die CompatExceptions-Liste  
+### <a name="the-compatexceptions-list"></a>Die CompatExceptions-Liste  
 
-Basierend auf dem kürzlich von Microsoft empfangenen Feedback von Benutzern, verwaltet Microsoft Edge eine kleine Liste von Websites \ (die meisten von Ihnen sind in der Kategorie "Inhalt trennen" \), die aufgrund von nach Verfolgungs Verhinderung unterbrechen, obwohl die beiden oben genannten Abschwächungen vorhanden sind. Websites in dieser Liste sind von der Nachverfolgung von Präventions Erzwingungen ausgenommen.  Die Liste befindet sich auf der Festplatte an den unten beschriebenen [Speicherorten](#determining-whetherhow-a-particular-url-is-classified) .  Benutzer können Einträge mit der Option **blockieren** in überschreiben `edge://settings/content/cookies` .
+Basierend auf dem kürzlich von Microsoft erhaltenen Benutzerfeedback verwaltet Microsoft Edge eine kleine Liste von Websites \(die meisten davon befinden sich in der Kategorie "Inhalt trennen\"), die aufgrund der Nachverfolgungsverhütung unterbrochen wurden, obwohl die beiden oben genannten Gegenmaßnahmen vorhanden waren. Websites in dieser Liste sind von der Verfolgung von Durchsetzungsmaßnahmen ausgenommen.  Die Liste finden Sie auf dem Datenträger an den [unten beschriebenen](#determining-whetherhow-a-particular-url-is-classified) Speicherorten.  Benutzer können Einträge auf dem Computer mithilfe der **Option Blockieren** in außer Kraft `edge://settings/content/cookies` setzen.
 
-Um zu verhindern, dass diese Liste weitergeleitet wird, arbeitet Microsoft derzeit an der [Speicherzugriffs-API][GitHubMsExplainersStorageAccessApi] in der Chrom-CodeBase.  Die [Speicherzugriffs-API][GitHubMsExplainersStorageAccessApi] bietet Websiteentwicklern eine Möglichkeit, den Speicherzugriff von Benutzern direkt anzufordern, wodurch die Benutzer mehr Transparenz darüber erhalten, wie Ihre Datenschutzeinstellungen ihre Browserumgebung beeinflussen, und es den Websiteentwicklern ermöglicht, sich schnell und intuitiv zu entsperren.
+Um zu verhindern, dass diese Liste vorwärts bewegt wird, arbeitet Microsoft derzeit an der [Speicherzugriffs-API][GitHubMsExplainersStorageAccessApi] in der Chromium-Codebasis.  Die [Speicherzugriffs-API][GitHubMsExplainersStorageAccessApi] bietet Websiteentwicklern eine Möglichkeit, Speicherzugriff von Benutzern direkt an anfordern zu können, um Benutzern mehr Transparenz darüber zu bieten, wie sich ihre Datenschutzeinstellungen auf ihre Browsererfahrung ausdingen, und websiteentwicklern Steuerelemente zur schnellen und intuitiven Deblockierung zur Verfügung zu stellen.
 
-Nachdem die [Speicherzugriffs-API][GitHubMsExplainersStorageAccessApi] implementiert wurde, wird die CompatExceptions-Liste von Microsoft als veraltet markiert, und die betroffenen Websites greifen auf die betreffenden Websites zu, um Sie auf die Probleme aufmerksam zu machen, und um zu beantragen, dass Sie die [Speicherzugriffs-API][GitHubMsExplainersStorageAccessApi] verwenden, die weitergeleitet wird.  
+Nachdem die [Speicherzugriffs-API][GitHubMsExplainersStorageAccessApi] implementiert wurde, entfernt Microsoft die Liste "CompatExceptions" und erreicht die betroffenen Websites, um sie auf die Probleme aufmerksam zu machen und die Verwendung der [Speicherzugriffs-API][GitHubMsExplainersStorageAccessApi] zu fordern.  
 
-## Verhalten zur Verhinderung der aktuellen Nachverfolgung  
+## <a name="current-tracking-prevention-behavior"></a>Aktuelles Verhalten zur Nachverfolgungsverhütung  
 
-In der folgenden Tabelle sind die Erzwingungs Aktionen und-Abschwächungen aufgeführt, die auf die einzelnen Kategorien von klassifizierten Tracker in Microsoft Edge angewendet werden.  
+In der folgenden Tabelle sind die Erzwingungsaktionen und Gegenmaßnahmen aufgeführt, die auf jede Kategorie von klassifizierten Trackern in Microsoft Edge angewendet werden.  
 
-*   Im oberen Bereich sind die Kategorien der Tracker aufgeführt, die durch die [Kategorien "Nachverfolgung der Schutzliste trennen][GitHubDisconnectTrackingProtectionCategories]" definiert sind.  
-*   Auf der linken Seite befinden sich die drei Ebenen der nach Verfolgungs Verhinderung in Microsoft Edge \ (Basic, Balanced und Strict \).  
+*   Am oberen Rand befinden sich die Kategorien von Trackern, die in Den Schutzlistenkategorien für die Verbindungsverfolgung [definiert sind.][GitHubDisconnectTrackingProtectionCategories]  
+*   Auf der linken Seite befinden sich die drei Ebenen der Nachverfolgungsverhütung in Microsoft Edge \(Basic, Balanced und Strict\).  
 *   Der Buchstabe `S` gibt an, dass der Speicherzugriff blockiert ist.  
-*   Der Buchstabe `B` gibt an, dass sowohl der Speicherzugriff als auch die Ressourcenauslastung \ (wie Netzwerkanforderungen \) blockiert sind.  
-*   Ein Bindestrich \ ( `-` \) gibt an, dass kein Block auf Speicherzugriff oder Ressourcen Lasten angewendet wird.  
+*   Der Buchstabe gibt an, dass sowohl der Speicherzugriff als auch die `B` Ressourcenauslastung \(z. B. Netzwerkanforderungen\) blockiert werden.  
+*   Ein Bindestrich \( \) gibt an, dass kein Block auf Speicherzugriff oder `-` Ressourcenlasten angewendet wird.  
 
-| | Werbe | Analysen | Inhalt | Cryptomining | Fingerprinting | Soziale Netzwerke | Other | Gleiche Minderung der Organisation | Vermeidung von org-Engagements |  
+| | Anzeigen | Analysen | Inhalt | Cryptomining | Fingerabdruck | Soziale Netzwerke | Other | Gleiche Risikominderung für Organisationen | Risikominderung für Organisationsengagement |  
 | - | - | - | - | - | - | - | - | - | - | - |  
 | **Einfach** | - | - | - | B | B | - | - | Aktiviert | n.a. |  
 | **Ausgeglichen** | E | - | E | B | B | E | E | Aktiviert | Aktiviert |  
 | **Streng** | B | B | E | B | B | B | B | Aktiviert | Deaktiviert |  
 
 > [!NOTE]
-> Die Minderung des org-Engagements gilt nicht für die Cryptomining-oder Fingerabdruck Kategorien.  
+> Die Risikominderung für Organisationsengagement gilt nicht für die Kategorien Cryptomining oder Fingerprinting.  
 
 > [!TIP]
-> Der Strict-Modus blockiert mehr Ressourcen Lasten als ausgeglichen.  Die Blockierung von mehr Ressourcen Lasten kann dazu führen, dass der strikte Modus angezeigt wird, um weniger nachverfolgungsanforderungen als ausgeglichen zu blockieren, da die Tracker, die die Anforderungen vornehmen, nie geladen werden.  
+> Der strenge Modus blockiert mehr Ressourcenlasten als Balanced.  Das Blockieren von mehr Ressourcenlasten kann dazu führen, dass der Strenge Modus weniger Nachverfolgungsanforderungen blockiert als Balanced, da die Tracker, die die Anforderungen stellen, nie geladen werden.  
 
 > [!NOTE]
-> Die Spalte "Fingerabdruck" im [aktuellen Tracking-Verhinderung-Verhalten](#current-tracking-prevention-behavior) bezieht sich auf Tracker, die sich neben einer anderen Liste in der Liste der Fingerabdrücke befinden.  Tracker, die nur auf der Liste der Fingerabdrücke angezeigt werden, gelten als nicht-böswillige Fingerabdrücke und werden nicht blockiert.
+> Die Spalte Fingerprinting in [Current tracking prevention behavior](#current-tracking-prevention-behavior) bezieht sich neben einer anderen Liste auf Tracker, die sich in der Fingerabdruckliste befinden.  Tracker, die ausschließlich in der Fingerabdruckliste angezeigt werden, gelten als nicht schädliche Fingerabdruckerkennungen und werden nicht blockiert.
 
-### InPrivate-Verhalten  
+### <a name="inprivate-behavior"></a>InPrivate-Verhalten  
 
-In Microsoft Edge 79 war das Standardverhalten die Anwendung des Strict-Modus-Schutzes in InPrivate.  In Microsoft Edge 80 wurde dieses Verhalten durch einen Schalter ersetzt, in `edge://settings/privacy` dem Benutzer entscheiden können, ob Sie den strikten modusschutz anwenden oder Ihre normalen Einstellungen beim Durchsuchen von InPrivate beibehalten möchten.  
+In Microsoft Edge 79 war das Standardverhalten die Anwendung von Strengen Modusschutz in InPrivate.  In Microsoft Edge 80 wurde dieses Verhalten durch eine Option ersetzt, mit der Benutzer entscheiden können, ob sie strengen Modusschutz anwenden oder ihre regulären Einstellungen beim Browsen `edge://settings/privacy` inPrivate behalten möchten.  
 
-## Ermitteln, ob/wie eine bestimmte URL klassifiziert wird  
+## <a name="determining-whetherhow-a-particular-url-is-classified"></a>Bestimmen, ob/wie eine bestimmte URL klassifiziert wird  
 
-Die einfachste Methode, um festzustellen, ob eine bestimmte URL als bekannter Tracker klassifiziert wird, besteht darin, die folgenden Schritte auszuführen.  
+Am einfachsten können Sie ermitteln, ob eine bestimmte URL als bekannter Tracker klassifiziert wird, wenn Sie die folgenden Schritte ausführen.  
 
-1.  Öffnen Sie devtools, und navigieren Sie zur Registerkarte Konsole.  
-1.  Laden Sie die Seite neu.  
-    1.  Möglicherweise möchten Sie **Cookies und andere Website Daten** zuerst löschen, um die Ergebnisse der Website Einsätze zurückzusetzen und einen völlig sauberen Schiefer zu gewährleisten.  
-1.  Suchen Sie nach Nachrichten, die gelesen werden `Tracking Prevention blocked access to storage for <URL>` .  
-    1.  Sie können die Nachrichten erweitern, um die einzelnen URLs anzuzeigen, die blockiert wurden.  
-1.  Wenn Sie feststellen möchten, in welcher Kategorie sich eine bestimmte blockierte Website befindet, ist es am einfachsten, wenn Sie in der [Liste services.jstrennen in auf][GitHubDisconnectTrackingProtectionCategories]suchen.  Da die Einträge alphabetisch sortiert sind, können Sie durch Scrollen an den Anfang eines Blocks von Website Einträgen die spezifische Kategorie für eine bestimmte Website finden.  
+1.  Öffnen Sie DevTools, und navigieren Sie zur Registerkarte Konsole.  
+1.  Aktualisieren Sie die Webseite.  
+    1.  Möglicherweise möchten Sie Cookies und **andere** Websitedaten zuerst löschen, um die Ergebnisse der Websitebindung zurückzusetzen und eine vollständig saubere Schieferseite sicherzustellen.  
+1.  Suchen Sie nach Nachrichten, die `Tracking Prevention blocked access to storage for <URL>` lesen.  
+    1.  Sie können die Nachrichten erweitern, um die einzelnen blockierten URLs zu sehen.  
+1.  Wenn Sie bestimmen müssen, in welcher Kategorie sich eine bestimmte blockierte Website befindet, können Sie am einfachsten in der Liste "Trennen" nach [services.jssuchen.][GitHubDisconnectTrackingProtectionCategories]  Die Einträge sind alphabetisch, sodass Sie mit einem Bildlauf zum oberen Rand eines Blocks von Websiteeinträgen die spezifische Kategorie für eine bestimmte Website finden können.  
 
 > [!TIP]
-> Wenn Sie auf die auf dem Datenträger gespeicherten Tracking Prevention-Listen zugreifen müssen, befinden sich die einzelnen Speicherorte an einem von zwei Speicherorten.  
+> Wenn Sie auf die Aufverfolgungsverhütungslisten zugreifen müssen, die auf dem Datenträger gespeichert sind, kann jede an einem der beiden Speicherorte gefunden werden.  
 >
-> **Komponentenbasierte Updates** – die Listen, die aus der Komponente "Trust Protection lists" heruntergeladen werden  
+> **Komponentenbasierte Updates** – Die Listen, die von der Komponente "Vertrauensschutzlisten" heruntergeladen werden  
 >
 > Fenster: `%LOCALAPPDATA%\Microsoft\Edge <OptionalChannelName>\User Data\Trust Protection Lists`  
 >
-> macOS `~/Library/Application Support/Microsoft Edge <OptionalChannelName>/Trust Protection Lists`  
+> macOS: `~/Library/Application Support/Microsoft Edge <OptionalChannelName>/Trust Protection Lists`  
 >
-> **Installationsverzeichnis** – die Listen, die mit dem Microsoft Edge-Installationsprogramm gebündelt sind.  Wenn Sie ein anderes Installationsverzeichnis ausgewählt haben, können die genauen Pfade unterschiedlich sein.  
+> **Installationsverzeichnis** : Die Listen, die mit dem Microsoft Edge Installer gebündelt sind.  Wenn Sie ein anderes Installationsverzeichnis ausgewählt haben, können die genauen Pfade unterschiedlich sein.  
 >
 > Fenster: `%PROGRAMFILES(x86)%\Microsoft\ Edge <OptionalChannelName>\Application<Version>\Trust Protection Lists`  
 >
-> macOS `/Applications/Microsoft Edge.app/Contents/Frameworks/Microsoft Edge Framework.framework/Libraries/Trust Protection Lists`  
+> macOS: `/Applications/Microsoft Edge.app/Contents/Frameworks/Microsoft Edge Framework.framework/Libraries/Trust Protection Lists`  
 
-## Häufig gestellte Fragen  
+## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen  
 
-Der folgende Abschnitt enthält Antworten auf häufig gestellte Fragen zum Feature zur nach Verfolgungs Prävention in Microsoft Edge.  
+Der folgende Abschnitt enthält Antworten auf häufig gestellte Fragen zum Feature zur Nachverfolgungsverhütung in Microsoft Edge.  
 
-**Gibt es eine Möglichkeit zum Blockieren oder Zulassen bestimmter Tracker für Debugging-Zwecke?**  
+**Gibt es eine Möglichkeit, bestimmte Tracker zu Debugzwecken zu blockieren oder zu erlauben?**  
 
-Derzeit macht Microsoft Edge nur eine Option verfügbar, mit der Sie die Verfolgungs Verhinderung für die Ausführung auf einer bestimmten Website deaktivieren können.  Auf diese Option wird über das Seiten Info-Flyout oder über die `edge://settings/privacy/trackingPreventionExceptions` Seite zugegriffen.  
+Derzeit macht Microsoft Edge nur eine Option verfügbar, um die Ausführung von Verfolgungsverhütungsersetzungen auf einer angegebenen Website zu deaktivieren.  Auf diese Option wird über das Flyout für Seiteninformationen oder über die Seite `edge://settings/privacy/trackingPreventionExceptions` zugegriffen.  
 
-Allerdings können die Optionen **blockieren** und **zulassen** auf der `edge://settings/content/cookies` Seite verwendet werden, um bestimmte Domänenzugriff auf Speicher wie Cookies und andere Browser Speichermechanismen zuzulassen oder zu verweigern.  Dies ist hilfreich für das Debuggen von Websiteproblemen, die durch Nachverfolgung von Verhinderung erzwungen werden, die den Zugriff auf den Speicher für eine bestimmte Website blockieren.  
+Die Optionen **Block** und **Allow** auf der Seite können jedoch verwendet werden, um bestimmten Domänen den Zugriff auf den Speicher wie Cookies und andere `edge://settings/content/cookies` Browserspeichermechanismen zu ermöglichen oder zu verweigern.  Dies ist hilfreich beim Debuggen von Websiteproblemen, die durch das Nachverfolgen von Erzwingungen zur Verhinderung des Zugriffs auf Speicher für eine bestimmte Website verursacht werden.  
 
 <!-- image links -->  
 
@@ -181,12 +181,12 @@ Allerdings können die Optionen **blockieren** und **zulassen** auf der `edge://
 
 [MicrosoftEdgeBrowserPrivacyPromise]: https://microsoftedgewelcome.microsoft.com/privacy "Datenschutz – Microsoft Edge"  
 
-[ChromiumDesignDocsSiteEngagement]: https://www.chromium.org/developers/design-documents/site-engagement "Website-Engagement – die Chrom-Projekte"  
+[ChromiumDesignDocsSiteEngagement]: https://www.chromium.org/developers/design-documents/site-engagement "Site Engagement – Die Chromium-Projekte"  
 
-[DisconnectMain]: https://disconnect.me "Trennen"  
+[DisconnectMain]: https://disconnect.me "Disconnect"  
 
-[GitHubDisconnectMeTrackingProtection]: https://github.com/disconnectme/disconnect-tracking-protection "disconnectme/Disconnect-Tracking-Schutz | GitHub"  
-[GitHubDisconnectTrackingProtectionCategories]: https://github.com/disconnectme/disconnect-tracking-protection/blob/master/services.json "services.json-disconnectme/Disconnect-Tracking-Protection | GitHub"  
-[GitHubDisconnectMeTrackingProtectionEntitiesJson]: https://github.com/disconnectme/disconnect-tracking-protection/blob/master/entities.json "entities.json-disconnectme/Disconnect-Tracking-Protection | GitHub"  
+[GitHubDisconnectMeTrackingProtection]: https://github.com/disconnectme/disconnect-tracking-protection "disconnectme/disconnect-tracking-protection | Github"  
+[GitHubDisconnectTrackingProtectionCategories]: https://github.com/disconnectme/disconnect-tracking-protection/blob/master/services.json "services.js- disconnectme/disconnect-tracking-protection | Github"  
+[GitHubDisconnectMeTrackingProtectionEntitiesJson]: https://github.com/disconnectme/disconnect-tracking-protection/blob/master/entities.json "entities.js- disconnectme/disconnect-tracking-protection | Github"  
 
-[GitHubMsExplainersStorageAccessApi]: https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/master/StorageAccessAPI/explainer.md "Erläuterung der Speicherzugriffs-API-MSEdgeExplainers/StorageAccessAPI | GitHub"
+[GitHubMsExplainersStorageAccessApi]: https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/master/StorageAccessAPI/explainer.md "Storage Access API Explainer – MSEdgeExplainers/StorageAccessAPI | GitHub"

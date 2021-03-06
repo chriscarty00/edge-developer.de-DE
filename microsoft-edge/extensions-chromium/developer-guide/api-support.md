@@ -3,98 +3,98 @@ description: Liste der unterstützten APIs, die beim Erstellen von Microsoft Edg
 title: Unterstützte APIs für Microsoft Edge-Erweiterungen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/14/2020
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge-Chromium, Erweiterungen-Entwicklung, Browser-Erweiterungen, Add-ons, Erweiterungs-API, Entwickler, Web-Entwicklung
-ms.openlocfilehash: 868473393da6cefbf146fb7acd6c9816903bd253
-ms.sourcegitcommit: af91bfc3e6d8afc51f0fbbc0fe392262f424225c
+keywords: edge-chromium, extensions development, browser extensions, add-ons, extension api , developer, web development
+ms.openlocfilehash: 20e924b5c973b9ecd433feeb3a772c6d17746369
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "11120392"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398105"
 ---
-# Unterstützte APIs für Microsoft Edge-Erweiterungen
+# <a name="supported-apis-for-microsoft-edge-extensions"></a>Unterstützte APIs für Microsoft Edge-Erweiterungen
 
-Die folgende Tabelle enthält eine Liste der APIs, die Sie beim Erstellen von Erweiterungen für den Microsoft Edge \ (Chromium \)-Browser verwenden können.
+Die folgende Tabelle enthält eine Liste der APIs, die Sie beim Erstellen von Erweiterungen für den Microsoft Edge \(Chromium\)-Browser verwenden können.
 
 | API                                   | Beschreibung                                            
 |---------------------------------------|----------------------------------------------------------|
-| [Wecker](https://developer.chrome.com/extensions/alarms) | Planen Sie den Code so, dass er periodisch oder zu einem bestimmten Zeitpunkt in der Zukunft ausgeführt wird. |
-| [Lesezeichen](https://developer.chrome.com/extensions/bookmarks) | Erstellen, organisieren und Bearbeiten von Textmarken |
-| [BrowserAction](https://developer.chrome.com/extensions/browserAction) | Verwenden Sie Browser Aktionen, um Symbole auf der Symbolleiste in Microsoft Edge zu platzieren. Sie können auch Browser Aktionen verwenden, um eine QuickInfo, ein Signal oder ein Popup hinzuzufügen. |
-| [browsingData](https://developer.chrome.com/extensions/browsingData) | Entfernen Sie das Browsen von Daten aus dem lokalen Profil eines Benutzers. |
-| [Befehle](https://developer.chrome.com/extensions/commands) | Fügen Sie Tastenkombinationen hinzu, die Aktionen in ihrer Erweiterung auslösen. Beispielsweise eine Aktion zum Öffnen des Browsers oder Senden eines Befehls an die Erweiterung. |
-| [contentSettings](https://developer.chrome.com/extensions/contentSettings) | Im Allgemeinen können Sie mit den Inhaltseinstellungen das Verhalten von Microsoft Edge auf jeder Website und nicht global anpassen. Ändern Sie die Einstellungen, die Steuern, ob Websites Funktionen wie Cookies, JavaScript und Plugins verwenden können. |
-| [contextMenus](https://developer.chrome.com/extensions/contextMenus) | Hinzufügen von Elementen zum Kontextmenü in Microsoft Edge Menüelemente können auf verschiedene Objekte wie Bilder, Hyperlinks und Seiten angewendet werden. |
-| [Cookies](https://developer.chrome.com/extensions/cookies) | Sie können Cookies Abfragen und ändern sowie Benachrichtigungen empfangen, wenn Sie sich ändern. |
-| [Debugger](https://developer.chrome.com/extensions/debugger) | Anfügen an eine oder mehrere Registerkarten zum Instrumentieren der Netzwerkinteraktion, Debuggen von JavaScript, Ändern des DOM, Ändern von CSS usw. Verwenden Sie den Debugger-tabid, um Tabstopps mit sendCommand zu Zielen, und leiten Sie Ereignisse von tabid aus OnEvent-Rückrufen weiter. |
-| [declarativeContent](https://developer.chrome.com/extensions/declarativeContent) | Führen Sie Aktionen abhängig vom Inhalt einer Seite aus, ohne dass die Berechtigung zum Lesen des Seiteninhalts erforderlich ist. |
-| [declarativeNetRequest](https://developer.chrome.com/extensions/declarativeNetRequest) | Bietet mehr Datenschutz durch das Blockieren oder Ändern von Netzwerkanforderungen durch Angeben von deklarativen Regeln. Zulassen, dass Erweiterungen Netzwerkanforderungen ändern, ohne die Anforderung abzufangen und den Inhalt anzuzeigen. |
-| [desktopCapture](https://developer.chrome.com/extensions/desktopCapture) | Erfassen des Inhalts eines Bildschirms, einzelner Fenster oder Registerkarten |
-| [devtools. inspectedWindow](https://developer.chrome.com/extensions/devtools_inspectedWindow) | Interagieren mit dem geprüften Fenster Rufen Sie beispielsweise die Registerkarten-ID von Seiten ab, Werten Sie Code aus, laden Sie Seiten neu, oder rufen Sie Ressourcen auf einer Seite auf. |
-| [devtools. Network](https://developer.chrome.com/extensions/devtools_network) | Rufen Sie Informationen zu Netzwerkanforderungen ab, die von den Entwickler Tools in der Netzwerksteuerung angezeigt werden. |
-| [devtools. Panels](https://developer.chrome.com/extensions/devtools.panels) | Integrieren Sie Ihre Erweiterung in die Benutzeroberfläche des Entwickler Tools-Fensters, indem Sie eigene Panels erstellen, auf vorhandene Panels zugreifen oder Seitenleisten hinzufügen. |
-| [Downloads](https://developer.chrome.com/extensions/downloads) | Programmgesteuertes starten, überwachen, manipulieren und suchen nach Downloads. |
-| [Enterprise. hardwarePlatform](https://developer.chrome.com/extensions/enterprise.hardwarePlatform) | Rufen Sie den Hersteller und das Modell der Hardwareplattform ab, auf der der Browser ausgeführt wird. Diese API steht nur für Erweiterungen zur Verfügung, die von Unternehmensrichtlinien installiert werden. |
-| [Ereignisse](https://developer.chrome.com/extensions/events) | Allgemeine Typen, die von APIs verwendet werden, die Ereignisse auslösen, um Sie zu benachrichtigen, wenn ein interessantes Ereignis eintritt. |
-| [Erweiterung](https://developer.chrome.com/extensions/extension) | Jede Erweiterungsseite kann die Dienstprogramme dieser API verwenden. Sie enthält Unterstützung für den Austausch von Nachrichten zwischen Erweiterungen und Inhalts Skripts, die unter Nachrichtenübergabe beschrieben werden. |
+| [Wecker](https://developer.chrome.com/extensions/alarms) | Planen Sie, dass Code regelmäßig oder zu einem bestimmten Zeitpunkt in der Zukunft ausgeführt wird. |
+| [Lesezeichen](https://developer.chrome.com/extensions/bookmarks) | Erstellen, Organisieren und Bearbeiten von Lesezeichen. |
+| [browserAction](https://developer.chrome.com/extensions/browserAction) | Verwenden Sie Browseraktionen, um Symbole auf der Symbolleiste in Microsoft Edge zu platzieren. Sie können auch Browseraktionen verwenden, um eine QuickInfo, ein Signal oder ein Popup hinzuzufügen. |
+| [browsingData](https://developer.chrome.com/extensions/browsingData) | Entfernen von Browserdaten aus dem lokalen Profil eines Benutzers. |
+| [Befehle](https://developer.chrome.com/extensions/commands) | Fügen Sie Tastenkombinationen hinzu, die Aktionen in Ihrer Erweiterung auslösen. Beispielsweise eine Aktion zum Öffnen des Browsers oder Senden eines Befehls an die Erweiterung. |
+| [contentSettings](https://developer.chrome.com/extensions/contentSettings) | Im Allgemeinen können Sie mit Inhaltseinstellungen das Verhalten von Microsoft Edge auf jeder Website anstatt global anpassen. Ändern Sie Einstellungen, die steuern, ob Websites Features wie Cookies, JavaScript und Plug-Ins verwenden können. |
+| [contextMenus](https://developer.chrome.com/extensions/contextMenus) | Fügen Sie dem Kontextmenü in Microsoft Edge Elemente hinzu. Menüelemente können auf verschiedene Objekte angewendet werden, z. B. Bilder, Hyperlinks und Seiten. |
+| [Cookies](https://developer.chrome.com/extensions/cookies) | Abfragen und Ändern von Cookies und Empfangen von Benachrichtigungen, wenn sie sich ändern. |
+| [debugger](https://developer.chrome.com/extensions/debugger) | Fügen Sie eine oder mehrere Registerkarten an, um die Netzwerkinteraktion zu instrumentieren, JavaScript zu debuggen, das DOM zu ändern, CSS zu ändern und so weiter. Verwenden Sie die debugger tabId, um Registerkarten mit sendCommand als Ziel zu verwenden, und routen Sie Ereignisse nach tabId von onEvent-Rückrufen. |
+| [declarativeContent](https://developer.chrome.com/extensions/declarativeContent) | Ergreifen Sie Aktionen abhängig vom Inhalt einer Seite, ohne die Berechtigung zum Lesen des Seiteninhalts zu benötigen. |
+| [declarativeNetRequest](https://developer.chrome.com/extensions/declarativeNetRequest) | Bietet mehr Datenschutz, indem Netzwerkanforderungen blockiert oder geändert werden, indem deklarative Regeln angegeben werden. Zulassen, dass Erweiterungen Netzwerkanforderungen ändern, ohne die Anforderung abzufangen und den Inhalt anzuzeigen. |
+| [desktopCapture](https://developer.chrome.com/extensions/desktopCapture) | Erfassen sie den Inhalt eines Bildschirms, einzelner Fenster oder Registerkarten. |
+| [devtools.inspectedWindow](https://developer.chrome.com/extensions/devtools_inspectedWindow) | Interagieren mit dem überprüften Fenster.  Rufen Sie beispielsweise die Registerkarten-ID von Seiten ab, werten Sie Code aus, aktualisieren Sie Seiten, oder rufen Sie Ressourcen auf einer Seite ab. |
+| [devtools.network](https://developer.chrome.com/extensions/devtools_network) | Abrufen von Informationen zu Netzwerkanforderungen, die von den Entwicklertools im Netzwerkbereich angezeigt werden. |
+| [devtools.panels](https://developer.chrome.com/extensions/devtools.panels) | Integrieren Sie Ihre Erweiterung in die Benutzeroberfläche des Entwicklertools-Fensters, indem Sie eigene Panels erstellen, auf vorhandene Panels zugreifen oder Seitenleisten hinzufügen. |
+| [Downloads](https://developer.chrome.com/extensions/downloads) | Programmgesteuert starten, überwachen, bearbeiten und suchen Sie nach Downloads. |
+| [enterprise.hardwarePlatform](https://developer.chrome.com/extensions/enterprise.hardwarePlatform) | Hier erhalten Sie den Hersteller und das Modell der Hardwareplattform, auf der der Browser ausgeführt wird. Diese API ist nur für Durch die Unternehmensrichtlinie installierte Erweiterungen verfügbar. |
+| [Ereignisse](https://developer.chrome.com/extensions/events) | Häufige Typen, die von APIs verwendet werden, die Ereignisse zur Benachrichtigung beim Auftreten eines interessanten Ereignisses anfingen. |
+| [erweiterung](https://developer.chrome.com/extensions/extension) | Jede Erweiterungsseite kann die Hilfsprogramme dieser API verwenden. Es umfasst Unterstützung für den Austausch von Nachrichten zwischen Erweiterungen und Inhaltsskripts, die unter Message Passing beschrieben wird. |
 | [extensionTypes](https://developer.chrome.com/extensions/extensionTypes) | Enthält Typdeklarationen für Microsoft Edge-Erweiterungen. |
-| [fontSettings](https://developer.chrome.com/extensions/fontSettings) | Verwalten von Schriftarteinstellungen in Microsoft Edge |
-| [Verlauf](https://developer.chrome.com/extensions/history) | Interagieren Sie mit dem Browser-Eintrag der besuchten Seiten. Sie können URLs im Verlauf des Browsers hinzufügen, entfernen oder Abfragen. Informationen zum Überschreiben der Verlaufsseite mit ihrer eigenen Version finden Sie unter Überschreiben von Seiten. |
-| [i18n](https://developer.chrome.com/extensions/i18n) | Implementieren Sie die Internationalisierung für Ihre gesamte APP oder Erweiterung. |
-| [im Leerlauf](https://developer.chrome.com/extensions/idle) | Erkennen, wenn sich der Leerlaufzustand des Computers ändert. |
-| [Management](https://developer.chrome.com/extensions/management) | Verwalten Sie die Liste der installierten oder ausgeführten Erweiterungen. Dies ist hilfreich bei Erweiterungen, die die integrierte neue Registerkarte überschreiben. |
-| [Benachrichtigungen](https://developer.chrome.com/extensions/notifications) | Erstellen Sie mithilfe von Vorlagen Rich-Benachrichtigungen, und zeigen Sie Sie in der Taskleiste an. |
-| [Omnibox](https://developer.chrome.com/extensions/omnibox) | Registrieren Sie Schlüsselwörter in der Microsoft Edge-Adressleiste, die auch als Omnibox bezeichnet wird. |
-| [PageAction](https://developer.chrome.com/extensions/pageAction) | Fügen Sie der Microsoft Edge-Symbolleiste rechts neben der Adressleiste Symbole hinzu. Seitenaktionen sind Aktionen, die auf der aktuellen Seite ausgeführt werden können und nicht für alle Seiten gelten. Seitenaktionen werden abgeblendet angezeigt, wenn Sie inaktiv sind. |
-| [pageCapture](https://developer.chrome.com/extensions/pageCapture) | Speichern Sie Tabstopps als MHTML-Dateien.|
-| [Berechtigungen](https://developer.chrome.com/extensions/permissions) | Abrufen deklarierter, optionaler Berechtigungen zur Laufzeit anstatt zur Installationszeit. Sie können diese API verwenden, um die erforderlichen und genehmigten Berechtigungen für Ihre Benutzer anzuzeigen. |
+| [fontSettings](https://developer.chrome.com/extensions/fontSettings) | Verwalten von Schriftarteinstellungen in Microsoft Edge. |
+| [Verlauf](https://developer.chrome.com/extensions/history) | Interagieren Sie mit dem Browserdatensatz der besuchten Seiten. Sie können URLs im Browserverlauf hinzufügen, entfernen oder abfragen. Um die Verlaufsseite mit Ihrer eigenen Version zu überschreiben, navigieren Sie zu Seiten außer Kraft setzen. |
+| [i18n](https://developer.chrome.com/extensions/i18n) | Implementieren Sie die Internationalisierung in Ihrer gesamten App oder Erweiterung. |
+| [Leerlauf](https://developer.chrome.com/extensions/idle) | Erkennen, wann sich der Leerlaufzustand des Computers ändert. |
+| [Verwaltung](https://developer.chrome.com/extensions/management) | Verwalten Sie die Liste der installierten oder ausgeführten Erweiterungen. Es ist nützlich für Erweiterungen, die die integrierte Seite Neue Registerkarte überschreiben. |
+| [Benachrichtigungen](https://developer.chrome.com/extensions/notifications) | Erstellen Sie umfangreiche Benachrichtigungen mithilfe von Vorlagen, und zeigen Sie sie im Systemfach an. |
+| [omnibox](https://developer.chrome.com/extensions/omnibox) | Registrieren Sie Schlüsselwörter in der Microsoft Edge-Adressleiste, auch bekannt als "Omnibox". |
+| [pageAction](https://developer.chrome.com/extensions/pageAction) | Fügen Sie der Microsoft Edge-Symbolleiste rechts neben der Adressleiste Symbole hinzu. Seitenaktionen sind Aktionen, die auf der aktuellen Seite ergriffen werden können und nicht auf alle Seiten anwendbar sind. Seitenaktionen werden ausgegraut angezeigt, wenn sie inaktiv sind. |
+| [pageCapture](https://developer.chrome.com/extensions/pageCapture) | Speichern Sie Registerkarten als MHTML-Dateien.|
+| [permissions](https://developer.chrome.com/extensions/permissions) | Rufen Sie deklarierte, optionale Berechtigungen zur Laufzeit statt zur Installationszeit ab. Sie können diese API verwenden, um den Benutzern die erforderlichen und genehmigten Berechtigungen zu zeigen. |
 | [Ein/Aus](https://developer.chrome.com/extensions/power) | Überschreiben Sie die Energieverwaltungsfeatures des Systems. |
-| [printerProvider](https://developer.chrome.com/extensions/printerProvider) | Verwenden von Ereignissen zum Abfragen von Druckern, deren Funktionen und zum Übermitteln von Druckaufträgen |
-| [Datenschutz](https://developer.chrome.com/extensions/privacy) | Steuerelementfeatures in Microsoft Edge, die sich auf die Privatsphäre eines Benutzers auswirken. Diese API hängt vom `EdgeSetting` Prototyp von ab `types` , um die Konfiguration von Microsoft Edge abzurufen und einzurichten. |
-| [Proxy](https://developer.chrome.com/extensions/proxy) | Verwalten von Proxyeinstellungen für Microsoft Edge Diese API hängt vom `EdgeSetting` Prototyp der API ab `types` , um die Proxykonfiguration von Microsoft Edge abzurufen und einzurichten. |
-| [Runtime](https://developer.chrome.com/extensions/runtime) | Rufen Sie die Hintergrundseite ab, geben Sie Details zu dem Manifest zurück, und lauschen Sie den Ereignissen im APP-oder Extension Lifecycle, und reagieren Sie darauf. Sie können auch den relativen Pfad von URLs in vollqualifizierte URLs konvertieren. |
-| [Sitzungen](https://developer.chrome.com/extensions/sessions) | Sie können Registerkarten und Fenster aus einer Browsersitzung Abfragen und wiederherstellen. |
-| [Speicher](https://developer.chrome.com/extensions/storage) | Speichern, abrufen und nachvollziehen von Änderungen an Benutzerdaten |
-| [System. Memory](https://developer.chrome.com/extensions/system_memory) | Die `system.memory` API. |
-| [System. Storage](https://developer.chrome.com/extensions/system_storage) | Abfrageinformationen zu Speichergeräten. Sie können auch Benachrichtigungen empfangen, wenn Speichergeräte angefügt oder getrennt werden. |
-| [tabCapture](https://developer.chrome.com/extensions/tabCapture) | Interagieren mit Tab-Mediendatenströmen |
-| [Registerkarten](https://developer.chrome.com/extensions/tabs) | Interagieren Sie mit dem Tab-System des Browsers, um Tabstopps zu erstellen, zu ändern und neu anzuordnen. |
-| [topSites](https://developer.chrome.com/extensions/topSites) | Greifen Sie auf die wichtigsten Websites zu, die auch als "am häufigsten besuchte Websites" bezeichnet werden, die auf der Registerkarte "neu" angezeigt werden. Diese Websites beinhalten keine vom Benutzer angepassten Tastenkombinationen. |
-| [Sprachausgabe](https://developer.chrome.com/extensions/tts) | Wiedergeben von synthetischem Text-zu-Sprache (TTS). |
-| [ttsEngine](https://developer.chrome.com/extensions/ttsEngine) | Implementieren Sie ein TTS-Modul (Text-to-Speech) mithilfe einer Erweiterung. Erweiterungen, die sich für die Verwendung dieser API registrieren, empfangen Ereignisse, die gesprochene Äußerungen und andere Parameter enthalten. Erweiterungen können dann jede verfügbare Webtechnologie verwenden, um Sprache zu synthetisieren und auszugeben und Ereignisse an die aufrufende Funktion zurückzusenden, um den Status zu melden. |
+| [printerProvider](https://developer.chrome.com/extensions/printerProvider) | Verwenden Sie Ereignisse zum Abfragen von Druckern, deren Funktionen und zum Übermitteln von Druckaufträgen. |
+| [Datenschutz](https://developer.chrome.com/extensions/privacy) | Steuern von Features in Microsoft Edge, die sich auf den Datenschutz eines Benutzers auswirkt. Diese API hängt vom Prototyp ab, um die Konfiguration `EdgeSetting` von Microsoft Edge zu erhalten und zu `types` festlegen. |
+| [proxy](https://developer.chrome.com/extensions/proxy) | Verwalten von Proxyeinstellungen für Microsoft Edge. Diese API hängt vom Prototyp der API ab, um die Proxykonfiguration von Microsoft Edge zu erhalten und `EdgeSetting` `types` zu festlegen. |
+| [runtime](https://developer.chrome.com/extensions/runtime) | Rufen Sie die Hintergrundseite ab, geben Sie Details zum Manifest zurück, und lauschen Und reagieren Sie auf Ereignisse im App- oder Erweiterungslebenszyklus. Sie können auch den relativen Pfad von URLs in vollqualifizierte URLs konvertieren. |
+| [sessions](https://developer.chrome.com/extensions/sessions) | Abfragen und Wiederherstellen von Registerkarten und Fenstern aus einer Browsersitzung. |
+| [Speicher](https://developer.chrome.com/extensions/storage) | Speichern, Abrufen und Nachverfolgen von Änderungen an Benutzerdaten. |
+| [system.memory](https://developer.chrome.com/extensions/system_memory) | Die `system.memory` API. |
+| [system.storage](https://developer.chrome.com/extensions/system_storage) | Abfragen von Informationen zu Speichergeräten. Sie können auch Benachrichtigungen empfangen, wenn Speichergeräte angeschlossen oder getrennt sind. |
+| [tabCapture](https://developer.chrome.com/extensions/tabCapture) | Interagieren mit Registerkartenmedienstreams. |
+| [Registerkarten](https://developer.chrome.com/extensions/tabs) | Interagieren Sie mit dem Registerkartensystem des Browsers, um Registerkarten zu erstellen, zu ändern und neu anordnen zu können. |
+| [topSites](https://developer.chrome.com/extensions/topSites) | Greifen Sie auf die wichtigsten Websites zu, die auch als am häufigsten besuchte Websites bezeichnet werden, die auf der neuen Registerkartenseite angezeigt werden. Diese Websites enthalten keine vom Benutzer angepassten Verknüpfungen. |
+| [tts](https://developer.chrome.com/extensions/tts) | Wiedergabe von synthetisiertem Text-zu-Sprache(TTS). |
+| [ttsEngine](https://developer.chrome.com/extensions/ttsEngine) | Implementieren Sie ein Text-zu-Sprache-Modul (Text-to-Speech) mithilfe einer Erweiterung. Erweiterungen, die sich für die Verwendung dieser API registrieren, empfangen Ereignisse, die zu sprechende Sprechaussprechungen und andere Parameter enthalten. Erweiterungen können dann jede verfügbare Webtechnologie verwenden, um Sprache zu synthetisieren und ausausgaben und Ereignisse an die aufrufende Funktion zurücksennen, um den Status zu melden. |
 | [Typen](https://developer.chrome.com/extensions/types) | Geben Sie Deklarationen für Microsoft Edge ein. |
-| [Webnavigation](https://developer.chrome.com/extensions/webNavigation) | Empfangen von Benachrichtigungen über den Status von Navigationsanforderungen |
-| [WebRequest](https://developer.chrome.com/extensions/webRequest) | Beobachten und analysieren Sie den Datenverkehr. Abfangen, blockieren oder Ändern von Anforderungen |
-| [windows](https://developer.chrome.com/extensions/windows) | Interagieren Sie mit Browserfenstern, um Fenster im Browser zu erstellen, zu ändern und neu anzuordnen. |
+| [webNavigation](https://developer.chrome.com/extensions/webNavigation) | Empfangen von Benachrichtigungen über den Status von Navigationsanforderungen. |
+| [webRequest](https://developer.chrome.com/extensions/webRequest) | Beobachten und Analysieren des Datenverkehrs. Abfangen, Blockieren oder Ändern von Anforderungen. |
+| [windows](https://developer.chrome.com/extensions/windows) | Interagieren Sie mit Browserfenstern, um Fenster im Browser zu erstellen, zu ändern und neu anordnen zu können. |
 
 
 
-## Nicht unterstützte Erweiterungs-APIs
+## <a name="unsupported-extension-apis"></a>Nicht unterstützte Erweiterungs-APIs
 
 Microsoft Edge unterstützt die folgenden Erweiterungs-APIs nicht:
 
 * `chrome.gcm`.
 * `chrome.identity.getAccounts`.
-* `chrome.identity.getAuthToken` – Als Alternative können Sie `launchWebAuthFlow` zum Abrufen eines OAuth2-Tokens zum Authentifizieren von Benutzern verwenden.
+* `chrome.identity.getAuthToken` – Alternativ können Sie ein OAuth2-Token zum Authentifizieren `launchWebAuthFlow` von Benutzern abrufen.
 * `chrome.instanceID`.
 
 
-## Weitere Überlegungen zu unterstützten APIs
+## <a name="additional-considerations-for-supported-apis"></a>Zusätzliche Überlegungen zu unterstützten APIs
 
-* Der Benutzer muss bei Microsoft Edge mit einem zu verwendenden MSA-oder Azure Active Directory-Konto angemeldet sein `chrome.identity.getProfileUserInfo` . Wenn der Benutzer mit einem lokalen Active Directory-Konto bei Microsoft Edge angemeldet ist, gibt die API `null` die Werte für e-Mail und ID zurück.
+* Der Benutzer muss mit einem MSA- oder Azure Active Directory-Konto bei Microsoft Edge angemeldet sein, um zu `chrome.identity.getProfileUserInfo` verwenden. Wenn der Benutzer mit einem lokalen Active Directory-Konto bei Microsoft Edge angemeldet ist, gibt die API die E-Mail- und `null` ID-Werte zurück.
 
-* Microsoft Edge unterstützt keine Erweiterungen, die Chrome Web Store-Zahlungen verwenden `identity.getAuthtoken` , da Sie zum Anfordern von Token für signierte Benutzer verwendet werden. Diese Token werden an die RESTful-basierte Lizenzierungs-API gesendet. 
+* Microsoft Edge unterstützt keine Erweiterungen, die Chrome Web Store-Zahlungen verwenden, da es zum Anfordern von `identity.getAuthtoken` Token für angemeldete Benutzer verwendet wird. Diese Token werden an die REST-basierte Lizenzierungs-API gesendet. 
 
 
 <!-- links -->  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
+> Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
 > Die ursprüngliche Seite finden Sie [hier](https://developer.chrome.com/apps/external_extensions).  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

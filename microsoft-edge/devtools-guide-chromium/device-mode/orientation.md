@@ -1,18 +1,18 @@
 ---
-description: Öffnen Sie die Registerkarte Sensoren, und wechseln Sie zum Abschnitt Ausrichtung.
-title: Simulieren der geräteausrichtung mit Microsoft Edge devtools
+description: Öffnen Sie das Tool Sensoren, und navigieren Sie zum Abschnitt Ausrichtung.
+title: Simulieren der Geräteausrichtung mit Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 01e6d3a24513b504665dbe0c03d9e72cc1f97533
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
+ms.openlocfilehash: 754df3b271b44f986802c2847862624f6a8b5bd9
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11124957"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398714"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,40 +28,40 @@ ms.locfileid: "11124957"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Simulieren der geräteausrichtung mit Microsoft Edge devtools  
+# <a name="simulate-device-orientation-with-microsoft-edge-devtools"></a>Simulieren der Geräteausrichtung mit Microsoft Edge DevTools  
 
-Führen Sie die folgenden Aktionen aus, um unterschiedliche Geräte Ausrichtungen von Microsoft Edge devtools zu simulieren.  
+Führen Sie die folgenden Aktionen aus, um verschiedene Geräteausrichtungen von Microsoft Edge DevTools zu simulieren.  
 
 <!--todo: update device orientation section when available -->  
 
-1.  Wählen Sie `Control` + `Shift` + `P` \ (Windows, Linux \) oder `Command` + `Shift` + `P` \ (macOS \) aus, um das **Befehlsmenü**zu öffnen.  
+1.  Wählen `Control` + `Shift` + `P` Sie \(Windows, Linux\) oder `Command` + `Shift` + `P` \(macOS\) aus, um das **Befehlsmenü zu öffnen.**  
     
     :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="Das Befehlsmenü" lightbox="../media/device-mode-console-command-menu.msft.png":::
        Das **Befehlsmenü**  
     :::image-end:::  
     
-1.  Tippen `sensors` Sie auf **Sensoren anzeigen**, und wählen Sie aus `Enter` .  Die Registerkarte **Sensoren** wird unten im devtools-Fenster geöffnet.  
-1.  Wählen Sie in der Liste **Ausrichtung** eine der vordefinierten Ausrichtungen aus, beispielsweise `Portrait upside down` , oder wählen Sie **benutzerdefinierte Ausrichtung** aus, um eine exakte Ausrichtung zu gewährleisten.  
+1.  Geben `sensors` Sie ein, wählen **Sie Sensoren anzeigen**aus, und wählen Sie `Enter` aus.  Das **Tool Sensoren** wird am unteren Rand des DevTools-Fensters geöffnet.  
+1.  Wählen Sie in der **Liste** Ausrichtung eine der voreingestellten Ausrichtungen aus, z. B. , oder wählen Sie Benutzerdefinierte Ausrichtung aus, um Eine `Portrait upside down` eigene genaue Ausrichtung zu bieten. ****  
     
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png" alt-text="Das Befehlsmenü" lightbox="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png":::
-             Auswählen `Portrait upside down` aus der **Ausrichtungs** Liste  
+          :::image type="complex" source="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png" alt-text="Wählen Sie in der Liste Ausrichtung kopfüber Hochformat aus." lightbox="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png":::
+             Auswählen `Portrait upside down` aus der Liste **Ausrichtung**  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          Nachdem Sie die **benutzerdefinierte Ausrichtung**ausgewählt haben, `alpha` `beta` sind die Felder, und `gamma` aktiviert.  
-          <!--See [Alpha][alpha], [Beta][beta], and [Gamma][gamma] to understand how each axis works.  -->  
+          Nachdem Sie **benutzerdefinierte Ausrichtung auswählen,** werden `alpha` die Felder , und `beta` `gamma` aktiviert.  
+          <!--To understand how each axis works, navigate to [Alpha][alpha], [Beta][beta], and [Gamma][gamma].  -->  
           <!--todo: update links to alpha, beta, and gamma section when available -->  
-          Sie können auch eine benutzerdefinierte Ausrichtung definieren, indem Sie das **Ausrichtungs Modell**ziehen.  Halten `Shift` Sie vor dem Ziehen gedrückt, um sich entlang der Achse zu drehen `alpha` .  
+          Sie können auch eine benutzerdefinierte Ausrichtung festlegen, indem Sie das **Ausrichtungsmodell ziehen.**  Halten `Shift` Sie vor dem Ziehen gedrückt, um die Achse entlang zu `alpha` drehen.  
           
-          :::image type="complex" source="../media/device-mode-console-sensors-orientation-custom.msft.png" alt-text="Das Befehlsmenü" lightbox="../media/device-mode-console-sensors-orientation-custom.msft.png":::
-             Das **Orientierungsmodell**  
+          :::image type="complex" source="../media/device-mode-console-sensors-orientation-custom.msft.png" alt-text="Das Ausrichtungsmodell" lightbox="../media/device-mode-console-sensors-orientation-custom.msft.png":::
+             Das **Ausrichtungsmodell**  
           :::image-end:::  
        :::column-end:::
     :::row-end:::
     
-## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -73,10 +73,10 @@ Führen Sie die folgenden Aktionen aus, um unterschiedliche Geräte Ausrichtunge
 <!--[WebFundamentasNativeHardwareDeviceOrientationIndexGamma]: /web/fundamentals/native-hardware/device-orientation/index#gamma "Gamma - Device Orientation & Motion"  -->  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
-> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/device-mode/orientation) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
+> Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
+> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/device-mode/orientation) und wird von [Kayce Basken][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) verfasst.  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

@@ -1,18 +1,18 @@
 ---
-description: Eine umfassende Referenz zu den Features des Microsoft Edge devtools-Netzwerk Panels.
-title: Netzwerkanalyse Referenz
+description: Eine umfassende Referenz zu Microsoft Edge DevTools Network Panel Features.
+title: Netzwerkanalysereferenz
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/17/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: c600197ffa0e415fe42aecc704a523d1b23f8260
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: e8e2259e0f95499519c954e2199e191382998649
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230754"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398378"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,57 +28,57 @@ ms.locfileid: "11230754"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Netzwerkanalyse Referenz  
+# <a name="network-analysis-reference"></a>Netzwerkanalysereferenz  
 
-Entdecken Sie neue Möglichkeiten zur Analyse, wie Ihre Seite in dieser umfassenden Referenz der Microsoft Edge devtools-Netzwerkanalyse Features geladen werden kann.  
+Entdecken Sie in diesem umfassenden Verweis auf Microsoft Edge DevTools-Netzwerkanalysefeatures neue Möglichkeiten, wie Ihre Seite geladen wird.  
 
-## Aufzeichnen von Netzwerkanforderungen  
+## <a name="record-network-requests"></a>Aufzeichnen von Netzwerkanforderungen  
 
-Standardmäßig zeichnet devtools alle Netzwerkanforderungen im **Netzwerk** Panel auf, solange devtools geöffnet ist.  
+Standardmäßig zeichnen DevTools alle Netzwerkanforderungen im **Netzwerktool** auf, solange DevTools geöffnet ist.  
 
-:::image type="complex" source="../media/network-network-panel.msft.png" alt-text="Netzwerk Panel" lightbox="../media/network-network-panel.msft.png":::
-   **Netzwerk** Panel  
+:::image type="complex" source="../media/network-network-panel.msft.png" alt-text="Netzwerkbereich" lightbox="../media/network-network-panel.msft.png":::
+   Das **Netzwerktool**  
 :::image-end:::  
 
-### Beenden der Aufzeichnung von Netzwerkanforderungen  
+### <a name="stop-recording-network-requests"></a>Beenden der Aufzeichnung von Netzwerkanforderungen  
 
-Führen Sie die folgenden Schritte aus, um die Aufzeichnung von Anforderungen zu beenden.  
+Führen Sie die folgenden Schritte aus, um aufzeichnungsanforderungen zu beenden.  
 
-1.  Wählen Sie im **Netzwerk** Panel die Option **Aufzeichnung des Netzwerkprotokolls beenden** \ ( ![ Aufzeichnung des Netzwerkprotokolls beenden ][ImageRecordOnIcon] \) aus.  Es wird grau, um anzugeben, dass devtools keine Anforderungen mehr aufzeichnet.  
-1.  Wählen Sie `Control` + `E` \ (Windows, Linux \) oder `Command` + `E` \ (macOS \) aus, während sich der Fokus des **Netzwerk** Panels befindet.  
+1.  Wählen Sie **im Tool** Netzwerk die Option **Aufzeichnungsnetzwerkprotokoll beenden** \( ![ Aufzeichnungsnetzwerkprotokoll beenden ][ImageRecordOnIcon] \).  Es wird grau, um anzugeben, dass DevTools keine Anforderungen mehr aufzeichnen.  
+1.  Wählen `Control` + `E` Sie \(Windows, Linux\) oder `Command` + `E` \(macOS\) aus, während sich das **Netzwerktool** im Fokus befindet.  
 
-### Löschen von Anforderungen  
+### <a name="clear-requests"></a>Löschen von Anforderungen  
 
-Wählen Sie im Netzwerk Panel die Option **"Löschen"** ![ ][ImageClearIcon] aus, um alle Anforderungen aus der Tabelle "Anforderungen" zu löschen. ****  
+Klicken **Sie im** Netzwerktool auf Löschen \( Löschen \), um alle Anforderungen aus der Tabelle Anforderungen zu ![ ][ImageClearIcon] löschen. ****  
 
 :::image type="complex" source="../media/network-network-clear-button.msft.png" alt-text="Die Schaltfläche Löschen" lightbox="../media/network-network-clear-button.msft.png":::
-   Die Schaltfläche " **Löschen** "  
+   Die **Schaltfläche Löschen**  
 :::image-end:::  
 
-### Speichern von Anforderungen über Seitenlasten hinweg  
+### <a name="save-requests-across-page-loads"></a>Speichern von Anforderungen über Seitenlasten hinweg  
 
-Wenn Sie Anforderungen zwischen Seitenlasten speichern möchten, aktivieren Sie im **Netzwerk** Panel das Kontrollkästchen **Protokoll beibehalten** .  DevTools speichert alle Anforderungen, bis Sie **Protokoll beibehalten**deaktivieren.  
+Aktivieren Sie zum Speichern von **** Anforderungen über Seitenlasten hinweg das Kontrollkästchen Protokoll **beibehalten** im Netzwerktool.  DevTools speichert alle Anforderungen, bis Sie **preserve log deaktivieren.**  
 
-:::image type="complex" source="../media/network-network-preserve-log.msft.png" alt-text="Kontrollkästchen Protokoll beibehalten" lightbox="../media/network-network-preserve-log.msft.png":::
-   Kontrollkästchen " **Protokoll beibehalten** "  
+:::image type="complex" source="../media/network-network-preserve-log.msft.png" alt-text="Das Kontrollkästchen Protokoll beibehalten" lightbox="../media/network-network-preserve-log.msft.png":::
+   Das **Kontrollkästchen Protokoll** beibehalten  
 :::image-end:::  
 
-### Aufzeichnen von Screenshots beim Laden der Seite  
+### <a name="capture-screenshots-during-page-load"></a>Erfassen von Screenshots beim Laden der Seite  
 
-Screenshots aufzeichnen, um zu analysieren, was für Benutzer angezeigt wird, während Sie darauf warten, dass Ihre Seite geladen wird.  
+Erfassen Sie Screenshots, um zu analysieren, was für Benutzer angezeigt wird, während Sie darauf warten, dass Ihre Seite geladen wird.  
 
-Wenn Sie Screenshots aktivieren möchten, wählen Sie **Netzwerkeinstellungen**aus, und aktivieren Sie auf der Registerkarte **Netzwerk** das Kontrollkästchen **Screenshots aufnehmen** .  
+Um Screenshots zu aktivieren, wählen Sie **Netzwerkeinstellungen**aus, und aktivieren Sie im **Netzwerktool** das Kontrollkästchen Screenshots **erfassen.**  
 
-Aktualisieren Sie die Seite, während sich das **Netzwerk** Panel im Fokus befindet, um Screenshots zu erfassen.  
+Aktualisieren Sie die Seite, während das **Netzwerktool** im Fokus steht, um Screenshots zu erfassen.  
 
-Nachdem Sie einen Screenshot aufgezeichnet haben, interagieren Sie mit ihm auf die folgende Weise.  
+Nachdem Sie einen Screenshot erfasst haben, interagieren Sie wie folgt mit ihm.  
 
-*   Zeigen Sie auf einen Screenshot, um den Punkt anzuzeigen, an dem dieser Screenshot aufgenommen wurde.  Im Bereich " **Übersicht** " wird eine gelbe Zeile angezeigt.  
-*   Wählen Sie die Miniaturansicht eines Bildschirms aus, um alle Anforderungen zu filtern, die nach dem Erfassen des Screenshots aufgetreten sind.  
-*   Doppelklicken Sie auf eine Miniaturansicht, um Sie zu vergrößern.  
+*   Zeigen Sie auf einen Screenshot, um den Punkt zu zeigen, an dem dieser Screenshot aufgenommen wurde.  Im Bereich Übersicht wird eine gelbe **Linie** angezeigt.  
+*   Wählen Sie die Miniaturansicht eines Bildschirms aus, um alle Anforderungen herausfiltern zu können, die nach der Aufnahme des Screenshots aufgetreten sind.  
+*   Doppelklicken Sie auf eine Miniaturansicht, um sie zu vergrößern.  
 
-:::image type="complex" source="../media/network-network-screenshot-hover.msft.png" alt-text="Zeigen Sie auf einen Screenshot." lightbox="../media/network-network-screenshot-hover.msft.png":::
-   Zeigen Sie auf einen Screenshot.  
+:::image type="complex" source="../media/network-network-screenshot-hover.msft.png" alt-text="Zeigen auf einen Screenshot" lightbox="../media/network-network-screenshot-hover.msft.png":::
+   Zeigen auf einen Screenshot  
 :::image-end:::  
 
 <!--  ### Replay XHR request  -->
@@ -91,123 +91,123 @@ Nachdem Sie einen Screenshot aufgezeichnet haben, interagieren Sie mit ihm auf d
 :::image-end:::  
 -->  
 
-## Ändern des Ladeverhaltens  
+## <a name="change-loading-behavior"></a>Ändern des Ladeverhaltens  
 
-### Emulieren eines erstmaligen Besuchers durch Deaktivieren des Browsercaches  
+### <a name="emulate-a-first-time-visitor-by-disabling-the-browser-cache"></a>Emulieren eines ersten Besuchers durch Deaktivieren des Browsercaches  
 
-Aktivieren Sie das Kontrollkästchen **Cache deaktivieren** , um zu emulieren, wie ein Erstbenutzer Ihre Website erlebt.  DevTools deaktiviert den Browsercache.  Dieses Feature emuliert die Benutzerfreundlichkeit des ersten Benutzers genauer, da Anforderungen im Browser-Cache für wiederholte Besuche bereitgestellt werden.  
+Aktivieren Sie das Kontrollkästchen Cache deaktivieren, um **** zu emulieren, wie ein Benutzer ihre Website zum ersten Mal erlebt.  DevTools deaktiviert den Browsercache.  Dieses Feature emuliert die Benutzererfahrung eines Erstbenutzers genauer, da Anforderungen beim wiederholten Besuch aus dem Browsercache übermittelt werden.  
 
-:::image type="complex" source="../media/network-network-disable-cache-checkbox.msft.png" alt-text="Kontrollkästchen Cache deaktivieren" lightbox="../media/network-network-disable-cache-checkbox.msft.png":::
-   Kontrollkästchen " **Cache deaktivieren** "  
+:::image type="complex" source="../media/network-network-disable-cache-checkbox.msft.png" alt-text="Das Kontrollkästchen Cache deaktivieren" lightbox="../media/network-network-disable-cache-checkbox.msft.png":::
+   Das **Kontrollkästchen Cache** deaktivieren  
 :::image-end:::  
 
-#### Deaktivieren des Browser-Caches aus der Schublade "Netzwerkbedingungen"  
+#### <a name="disable-the-browser-cache-from-the-network-conditions-drawer"></a>Deaktivieren des Browsercaches aus der Schublade "Netzwerkbedingungen"  
 
-Wenn Sie den Cache während der Arbeit in anderen devtools-Panels deaktivieren möchten, verwenden Sie die Schublade Netzwerkbedingungen.  
+Wenn Sie den Cache deaktivieren möchten, während Sie in anderen DevTools-Panels arbeiten, verwenden Sie die Schublade Netzwerkbedingungen.  
 
-1.  Öffnen Sie die Schublade **Netzwerkbedingungen** .  
-1.  Aktivieren Sie das Kontrollkästchen **Cache deaktivieren** .  
+1.  Öffnen Sie **die Schublade Netzwerkbedingungen.**  
+1.  Aktivieren Sie \(or off\) das **Kontrollkästchen Cache deaktivieren.**  
 
 <!--todo: add network condition section when available -->  
 
-### Manuelles Löschen des Browsercaches  
+### <a name="manually-clear-the-browser-cache"></a>Löschen des Browsercaches manuell  
 
-Wenn Sie den Browser-Cache jederzeit manuell löschen möchten, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \) an einer beliebigen Stelle in der Tabelle Anforderungen, und wählen Sie **Browsercache löschen**aus.  
+Um den Browsercache jederzeit manuell zu löschen, öffnen Sie das Kontextmenü \(rechtsklicken\) an einer beliebigen Stelle in der Tabelle Anforderungen, und wählen Sie **Browsercache löschen aus.**  
 
-:::image type="complex" source="../media/network-network-clear-browser-cache.msft.png" alt-text="Wählen Sie Browser Cache löschen aus." lightbox="../media/network-network-clear-browser-cache.msft.png":::
-   Wählen Sie **Browser Cache löschen** aus.  
+:::image type="complex" source="../media/network-network-clear-browser-cache.msft.png" alt-text="Wählen Sie Browsercache löschen aus" lightbox="../media/network-network-clear-browser-cache.msft.png":::
+   Wählen **Sie Browsercache löschen aus**  
 :::image-end:::  
 
-### Offline emulieren  
+### <a name="emulate-offline"></a>Emulieren offline  
 
-Eine neue Klasse von Web-Apps mit dem Namen " [Progressive Web Apps][DevtoolsProgressiveWebApps]" funktioniert mit Hilfe von **Servicemitarbeitern**offline.  Möglicherweise ist es hilfreich, ein Gerät, das keine Datenverbindung aufweist, schnell zu simulieren, wenn Sie diese Art von App erstellen.  
+Eine neue Klasse von Web-Apps namens [Progressive Web Apps][DevtoolsProgressiveWebApps]funktioniert offline mit Hilfe von **Servicemitarbeitern.**  Möglicherweise ist es hilfreich, beim Erstellen dieser Art von App schnell ein Gerät zu simulieren, das keine Datenverbindung hat.  
 
 <!--[ServiceWorkers]: /web/fundamentals/getting-started/primers/service-workers  -->
 
-Wählen Sie das Dropdownmenü **Online** aus, suchen Sie unter **Voreinstellungen**, und wählen Sie **Offline** aus, um eine Offlinenetzwerk Umgebung zu simulieren.  
+Wählen Sie das **Dropdownmenü Online** aus, suchen Sie unter **Presets,** und wählen Sie **Offline** aus, um eine Offlinenetzwerkerfahrung zu simulieren.  
 
-:::image type="complex" source="../media/network-network-offline-dropdown.msft.png" alt-text="Das Offline-Dropdownmenü" lightbox="../media/network-network-offline-dropdown.msft.png":::
-   Das **Offline** -Dropdownmenü  
+:::image type="complex" source="../media/network-network-offline-dropdown.msft.png" alt-text="Das Dropdownmenü Offline" lightbox="../media/network-network-offline-dropdown.msft.png":::
+   Das **Dropdownmenü Offline**  
 :::image-end:::  
 
-### Emulieren langsamer Netzwerkverbindungen  
+### <a name="emulate-slow-network-connections"></a>Emulieren langsamer Netzwerkverbindungen  
 
-Emulieren Sie langsames 3G, fast 3G und andere Verbindungsgeschwindigkeiten über das **Online-Dropdown-** Menü.  
+Emulieren Sie langsame 3G, schnelle 3G und andere Verbindungsgeschwindigkeiten aus dem **Online-Dropdownmenü.**  
 
-:::image type="complex" source="../media/network-network-throttling-menu.msft.png" alt-text="Dropdownmenü Drosselung" lightbox="../media/network-network-throttling-menu.msft.png":::
-   Dropdownmenü " **Drosselung** "  
+:::image type="complex" source="../media/network-network-throttling-menu.msft.png" alt-text="Das Dropdownmenü Einschränkung" lightbox="../media/network-network-throttling-menu.msft.png":::
+   Das **Dropdownmenü Einschränkung**  
 :::image-end:::  
 
-Sie haben die Wahl zwischen verschiedenen Voreinstellungen wie Slow 3G oder fast 3G.  Wenn Sie eigene benutzerdefinierte Voreinstellungen hinzufügen möchten, öffnen Sie das Menü Drosselung, und wählen Sie **benutzerdefiniertes**  >  **Add**aus.  
+Sie können aus verschiedenen Voreinstellungen auswählen, z. B. Slow 3G oder Fast 3G.  Öffnen Sie zum Hinzufügen eigener benutzerdefinierter Voreinstellungen das Menü Einschränkung, und wählen Sie **Benutzerdefiniertes**  >  **Hinzufügen aus.**  
 
-DevTools zeigt ein Warnungssymbol neben der Registerkarte " **Netzwerk** " an, um Sie daran zu erinnern, dass die Drosselung aktiviert ist.  
+DevTools zeigt ein Warnsymbol neben dem **Netzwerktool** an, um Sie daran zu erinnern, dass die Drosselung aktiviert ist.  
 
-#### Emulieren von langsamen Netzwerkverbindungen über die Netzwerkbedingungen Schublade  
+#### <a name="emulate-slow-network-connections-from-the-network-conditions-drawer"></a>Emulieren langsamer Netzwerkverbindungen aus der Schublade "Netzwerkbedingungen"  
 
-Wenn Sie die Netzwerkverbindung während der Arbeit in anderen devtools-Panels Drosseln möchten, verwenden Sie den Netzwerkbedingungen-Einzug.  
+Wenn Sie die Netzwerkverbindung drosseln möchten, während Sie in anderen DevTools-Panels arbeiten, verwenden Sie die Schublade Netzwerkbedingungen.  
 
-1.  Öffnen Sie die Schublade **Netzwerkbedingungen** .  
-1.  Wählen Sie Ihre Verbindungsgeschwindigkeit im Menü " **Drosselung** " aus.  
+1.  Öffnen Sie **die Schublade Netzwerkbedingungen.**  
+1.  Wählen Sie ihre Verbindungsgeschwindigkeit im Menü **Einschränkung** aus.  
 
 <!--todo: add network condition section when available -->  
 
-### Manuelles Löschen von Browser-Cookies  
+### <a name="manually-clear-browser-cookies"></a>Löschen von Browsercookies manuell  
 
-Wenn Sie Browser-Cookies jederzeit manuell löschen möchten, zeigen Sie mit der Maus auf eine beliebige Stelle in der Tabelle Anforderungen, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie **Browser-Cookies löschen**aus.  
+Wenn Sie Browsercookies jederzeit manuell löschen möchten, zeigen Sie auf eine beliebige Stelle in der Tabelle Anforderungen, öffnen Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste auf\), und wählen Sie Browsercookies **löschen aus.**  
 
-:::image type="complex" source="../media/network-network-clear-browser-cookies.msft.png" alt-text="Auswählen von Browser-Cookies löschen" lightbox="../media/network-network-clear-browser-cookies.msft.png":::
-   Auswählen von **Browser-Cookies löschen**  
+:::image type="complex" source="../media/network-network-clear-browser-cookies.msft.png" alt-text="Wählen Sie Browsercookies löschen aus" lightbox="../media/network-network-clear-browser-cookies.msft.png":::
+   Wählen **Sie Browsercookies löschen aus**  
 :::image-end:::  
 
-### Überschreiben des Benutzer-Agents  
+### <a name="override-the-user-agent"></a>Überschreiben des Benutzer-Agents  
 
-Führen Sie die folgenden Schritte aus, um den Benutzer-Agent manuell zu überschreiben.  
+Verwenden Sie die folgenden Schritte, um den Benutzer-Agent manuell außer Kraft zu setzen.  
 
-1.  Öffnen Sie die Schublade **Netzwerkbedingungen** .  
-1.  Deaktivieren Sie das Kontrollkästchen **automatisch auswählen** .  
-1.  Wählen Sie eine Option für den Benutzer-Agent aus dem Menü aus, oder geben Sie eine benutzerdefinierte Option in das Textfeld ein.  
+1.  Öffnen Sie **die Schublade Netzwerkbedingungen.**  
+1.  Deaktivieren Sie das **Kontrollkästchen Automatisch** auswählen.  
+1.  Wählen Sie im Menü eine Benutzer-Agent-Option aus, oder geben Sie eine benutzerdefinierte Option in das Textfeld ein.  
 
 <!--todo: add network condition section when available -->  
 
-## Filter Anforderungen  
+## <a name="filter-requests"></a>Filteranforderungen  
 
-### Filtern von Anforderungen nach Eigenschaften  
+### <a name="filter-requests-by-properties"></a>Filtern von Anforderungen nach Eigenschaften  
 
-Verwenden Sie das Textfeld **Filtern** , um Anforderungen nach Eigenschaften wie der Domäne oder der Größe der Anforderung zu filtern.  
+Verwenden Sie **das Textfeld Filter,** um Anforderungen nach Eigenschaften zu filtern, z. B. der Domäne oder der Größe der Anforderung.  
 
-Wenn das Textfeld nicht angezeigt wird, ist der **Filter** Bereich wahrscheinlich ausgeblendet.  
-Wenn Sie weitere Informationen erhalten möchten, navigieren Sie zum [Ausblenden des Filters-Bereichs](#hide-the-filters-pane).  
+Wenn das Textfeld nicht angezeigt wird, **ist** der Filterbereich wahrscheinlich ausgeblendet.  
+Weitere Informationen finden Sie unter [Ausblenden des Filterbereichs.](#hide-the-filters-pane)  
 
 :::image type="complex" source="../media/network-network-filters-textbox.msft.png" alt-text="Das Textfeld Filter" lightbox="../media/network-network-filters-textbox.msft.png":::
-   Das Textfeld " **Filter** "  
+   Das **Textfeld Filter**  
 :::image-end:::  
 
-Sie können mehrere Eigenschaften gleichzeitig verwenden, indem Sie jede Eigenschaft mit einem Leerzeichen voneinander trennen.  Zeigt beispielsweise `mime-type:image/png larger-than:1K` alle PNGs an, die größer als 1 KB sind.  Die Filter für mehrere Eigenschaften sind äquivalent zu `AND` Vorgängen.  `OR` Vorgänge werden zurzeit nicht unterstützt.  
+Sie können mehrere Eigenschaften gleichzeitig verwenden, indem Sie jede Eigenschaft durch ein Leerzeichen trennen.  Zeigt beispielsweise `mime-type:image/png larger-than:1K` alle PNGs an, die größer als 1 KB sind.  Die Filter mit mehreren Eigenschaften entsprechen `AND` Vorgängen.  `OR` vorgänge werden derzeit nicht unterstützt.  
 
 Die vollständige Liste der unterstützten Eigenschaften.  
 
 | Eigenschaft | Details |  
 |:--- | :--- |  
-| `domain` | Zeigt nur Ressourcen aus der angegebenen Domäne an.  Sie können ein Platzhalterzeichen \ ( `*` \) verwenden, um mehrere Domänen einzubeziehen.  Zeigt beispielsweise `*.com` Ressourcen aus allen Domänennamen an, die in endet `.com` .  DevTools füllen Sie das Dropdownmenü AutoVervollständigen mit allen gefundenen Domänen auf. |  
-| `has-response-header` | Zeigt die Ressourcen an, die den angegebenen HTTP-Antwortheader enthalten.  DevTools füllen Sie die Dropdownliste AutoVervollständigen mit allen gefundenen Antwortheadern auf. |  
-| `is` | Verwendet `is:running` , um `WebSocket` Ressourcen zu finden. |  
-| `larger-than` | Zeigt Ressourcen an, die größer als die angegebene Größe in Bytes sind.  Das Festlegen eines Werts von entspricht dem `1000` Festlegen eines Werts von `1k` . |  
-| `method` | Zeigt Ressourcen an, die über einen angegebenen http-Methodentyp abgerufen wurden.  DevTools füllen Sie die Dropdownliste mit allen gefundenen HTTP-Methoden auf. |  
-| `mime-type` | Zeigt Ressourcen eines angegebenen MIME-Typs an.  DevTools füllen Sie die Dropdownliste mit allen gefundenen MIME-Typen auf. |  
-| `mixed-content` | Alle gemischten Inhalts Ressourcen anzeigen \ ( `mixed-content:all` \) oder nur diejenigen, die aktuell angezeigt werden \ ( `mixed-content:displayed` \). |  
-| `scheme` | Zeigt Ressourcen an, die über ungeschützten http \ ( `scheme:http` \) oder geschütztes HTTPS \ ( `scheme:https` \) abgerufen wurden. |  
-| `set-cookie-domain` | Zeigt Ressourcen `Set-Cookie` mit einer Kopfzeile mit einem `Domain` Attribut an, das dem angegebenen Wert entspricht.  DevTools füllen Sie das AutoVervollständigen mit allen gefundenen Cookie-Domänen auf. |  
-| `set-cookie-name` | Zeigt Ressourcen `Set-Cookie` mit einer Kopfzeile mit einem Namen an, der dem angegebenen Wert entspricht.  DevTools füllen Sie die AutoVervollständigen-Datei mit allen gefundenen Cookienamen auf. |  
-| `set-cookie-value` | Zeigt Ressourcen `Set-Cookie` mit einer Kopfzeile mit einem Wert an, der dem angegebenen Wert entspricht.  DevTools füllen Sie das AutoVervollständigen mit allen gefundenen Cookie-Werten auf. |  
-| `status-code` | Zeigt Ressourcen an, die dem spezifischen HTTP-Statuscode entsprechen.  DevTools füllt das Dropdownmenü AutoVervollständigen mit allen gefundenen Statuscodes auf. |  
+| `domain` | Nur Ressourcen aus der angegebenen Domäne anzeigen.  Sie können ein Platzhalterzeichen \( \) verwenden, `*` um mehrere Domänen zu enthalten.  Zeigt beispielsweise `*.com` Ressourcen aus allen Domänennamen an, die in enden. `.com`  DevTools füllen das Dropdownmenü autocomplete mit allen gefundenen Domänen auf. |  
+| `has-response-header` | Zeigt die Ressourcen an, die den angegebenen HTTP-Antwortheader enthalten.  DevTools füllen das Dropdownmenü autocomplete mit allen gefundenen Antwortkopfzeilen auf. |  
+| `is` | Verwenden `is:running` Sie zum Suchen von `WebSocket` Ressourcen. |  
+| `larger-than` | Zeigt Ressourcen an, die größer als die angegebene Größe in Byte sind.  Das Festlegen eines `1000` Werts von entspricht dem Festlegen eines Werts von `1k` . |  
+| `method` | Zeigt Ressourcen an, die über einen angegebenen HTTP-Methodentyp abgerufen wurden.  DevTools füllen das Dropdown mit allen gefundenen HTTP-Methoden auf. |  
+| `mime-type` | Zeigt Ressourcen eines angegebenen MIME-Typs an.  DevTools füllen die Dropdownliste mit allen gefundenen MIME-Typen auf. |  
+| `mixed-content` | Zeigen Sie alle gemischten Inhaltsressourcen \( \) oder nur die Ressourcen an, die derzeit `mixed-content:all` angezeigt werden \( `mixed-content:displayed` \). |  
+| `scheme` | Zeigt Ressourcen an, die über ungeschütztes HTTP \( `scheme:http` \) oder geschütztes HTTPS \( `scheme:https` \) abgerufen werden. |  
+| `set-cookie-domain` | Zeigt Ressourcen mit einem `Set-Cookie` Header mit einem Attribut `Domain` an, das dem angegebenen Wert entspricht.  DevTools füllen das autocomplete mit allen gefundenen Cookiedomänen auf. |  
+| `set-cookie-name` | Zeigt Ressourcen an, die über `Set-Cookie` einen Header mit einem Namen verfügen, der dem angegebenen Wert entspricht.  DevTools füllen das AutoComplete mit allen gefundenen Cookienamen auf. |  
+| `set-cookie-value` | Zeigt Ressourcen an, die über `Set-Cookie` einen Header mit einem Wert verfügen, der dem angegebenen Wert entspricht.  DevTools füllen das AutoComplete mit allen gefundenen Cookiewerten auf. |  
+| `status-code` | Zeigt Ressourcen an, die dem spezifischen HTTP-Statuscode entsprechen.  DevTools füllt das Dropdownmenü für die automatische Vervollständigung mit allen gefundenen Statuscodes auf. |  
 
-### Filtern von Anforderungen nach Typ  
+### <a name="filter-requests-by-type"></a>Filtern von Anforderungen nach Typ  
 
-Wenn Sie Anforderungen nach Anforderungsfiltern möchten, wählen Sie eine der folgenden Schaltflächen im **Netzwerk** Panel aus.  
+Um Anforderungen nach Anforderungstyp zu filtern, wählen Sie eine der folgenden Schaltflächen im **Netzwerktool** aus.  
 
 :::row:::
    :::column span="1":::
-      **XMLHttpRequest**  
+      **XHR**  
    :::column-end:::
    :::column span="2":::
       &nbsp;  
@@ -231,7 +231,7 @@ Wenn Sie Anforderungen nach Anforderungsfiltern möchten, wählen Sie eine der f
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **IMG**  
+      **Img**  
    :::column-end:::
    :::column span="2":::
       &nbsp;  
@@ -282,55 +282,55 @@ Wenn Sie Anforderungen nach Anforderungsfiltern möchten, wählen Sie eine der f
       **Other**  
    :::column-end:::
    :::column span="2":::
-      Jeder andere Typ, der nicht aufgeführt ist.  
+      Alle anderen Nicht aufgeführten Typen.  
    :::column-end:::
 :::row-end:::  
 
-Wenn die Schaltflächen nicht angezeigt werden, ist der Bereich " **Filter** " möglicherweise ausgeblendet.  
-Wenn Sie weitere Informationen erhalten möchten, navigieren Sie zum [Ausblenden des Filters-Bereichs](#hide-the-filters-pane).  
+Wenn die Schaltflächen nicht angezeigt werden, **wird** der Filterbereich möglicherweise ausgeblendet.  
+Weitere Informationen finden Sie unter [Ausblenden des Filterbereichs.](#hide-the-filters-pane)  
 
-Wenn Sie mehrere Typen Filter gleichzeitig aktivieren möchten, halten `Control` Sie \ (Windows, Linux \) oder `Command` \ (macOS \) gedrückt, und wählen Sie dann aus.  
+Um mehrere Filter gleichzeitig zu aktivieren, halten Sie `Control` \(Windows, Linux\) oder `Command` \(macOS\) fest, und wählen Sie dann aus.  
 
-:::image type="complex" source="../media/network-network-type-filters.msft.png" alt-text="Verwenden des Typs Filter zum Anzeigen von JS-, CSS-und Dokument Ressourcen" lightbox="../media/network-network-type-filters.msft.png":::
-   Verwenden des Typs "Filter" zum Anzeigen von JS-, CSS-und Dokument Ressourcen  
+:::image type="complex" source="../media/network-network-type-filters.msft.png" alt-text="Verwenden der Typfilter zum Anzeigen von JS-, CSS- und Dokumentressourcen" lightbox="../media/network-network-type-filters.msft.png":::
+   Verwenden der Typfilter zum Anzeigen von JS-, CSS- und Dokumentressourcen  
 :::image-end:::  
 
-### Filtern von Anforderungen nach Zeit  
+### <a name="filter-requests-by-time"></a>Filtern von Anforderungen nach Zeit  
 
-Wählen Sie aus, und ziehen **Sie im Übersichtsbereich nach** Links oder rechts, um nur Anforderungen anzuzeigen, die während dieses Zeitrahmens aktiv waren.  Der Filter ist inklusive.  Jede Anforderung, die während der hervorgehobenen Zeit aktiv war, wird angezeigt.  
+Klicken Sie im Bereich **** Übersicht nach links oder rechts, und ziehen Sie es, um nur Anforderungen anzuzeigen, die während dieses Zeitrahmens aktiv waren.  Der Filter ist inklusive.  Jede Anforderung, die während der hervorgehobenen Zeit aktiv war, wird angezeigt.  
 
-:::image type="complex" source="../media/network-network-overview-filter.msft.png" alt-text="Herausfiltern aller Anforderungen, die um 300 ms inaktiv waren" lightbox="../media/network-network-overview-filter.msft.png":::
-   Herausfiltern aller Anforderungen, die um 300 ms inaktiv waren  
+:::image type="complex" source="../media/network-network-overview-filter.msft.png" alt-text="Filtern von Anforderungen, die etwa 300 ms inaktiv waren" lightbox="../media/network-network-overview-filter.msft.png":::
+   Filtern von Anforderungen, die etwa 300 ms inaktiv waren  
 :::image-end:::  
 
-### Ausblenden von Daten-URLs  
+### <a name="hide-data-urls"></a>Ausblenden von Daten-URLs  
 
-[Daten-URLs][MDNHTTPDataURIs] sind kleine Dateien, die in andere Dokumente eingebettet sind.  Jede Anforderung, die in der Tabelle "Anforderungen" angezeigt wird, beginnt mit `data:` einer Daten-URL.  
+[Daten-URLs][MDNHTTPDataURIs] sind kleine Dateien, die in andere Dokumente eingebettet sind.  Jede Anforderung, die in der Tabelle Anforderungen angezeigt wird, die mit `data:` beginnt, ist eine Daten-URL.  
 
-Wenn Sie die Anforderungen ausblenden möchten, deaktivieren Sie das Kontrollkästchen **Daten-URLs ausblenden** .  
+Deaktivieren Sie das Kontrollkästchen **Daten-URLs** ausblenden, um die Anforderungen auszublenden.  
 
 :::image type="complex" source="../media/network-network-hide-data-urls.msft.png" alt-text="Das Kontrollkästchen Daten-URLs ausblenden" lightbox="../media/network-network-hide-data-urls.msft.png":::
-   Das Kontrollkästchen " **Daten-URLs ausblenden** "  
+   Das **Kontrollkästchen Daten-URLs** ausblenden  
 :::image-end:::  
 
-## Sortieren von Anforderungen  
+## <a name="sort-requests"></a>Sortieren von Anforderungen  
 
-Standardmäßig werden die Anforderungen in der Tabelle Anforderungen nach Initiierungs Zeit sortiert, aber Sie können die Tabelle mit anderen Kriterien sortieren.  
+Standardmäßig werden die Anforderungen in der Tabelle Anforderungen nach Initiierungszeit sortiert, Sie können die Tabelle jedoch anhand anderer Kriterien sortieren.  
 
-### Nach Spalte sortieren  
+### <a name="sort-by-column"></a>Sortieren nach Spalte  
 
-Wählen Sie die Kopfzeile einer beliebigen Spalte in den Anforderungen aus, um Anforderungen nach dieser Spalte zu sortieren.  
+Wählen Sie die Kopfzeile einer beliebigen Spalte in der Spalte Anforderungen zum Sortieren von Anforderungen nach dieser Spalte aus.  
 
-### Nach Aktivitätsphase sortieren  
+### <a name="sort-by-activity-phase"></a>Sortieren nach Aktivitätsphase  
 
-Wenn Sie ändern möchten, wie der Wasserfall Anforderungen sortiert, zeigen Sie auf die Kopfzeile der Tabelle Anforderungen, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), zeigen Sie auf **Wasserfall**, und wählen Sie eine der folgenden Optionen aus.  
+Wenn Sie ändern möchten, wie der Wasserfall Anforderungen sortiert, zeigen Sie auf die Kopfzeile der Tabelle Anforderungen, öffnen Sie das Kontextmenü \(rechtsklicken\), zeigen Sie auf **Wasserfall,** und wählen Sie eine der folgenden Optionen aus.  
 
 :::row:::
    :::column span="1":::
       **Startzeit**  
    :::column-end:::
    :::column span="2":::
-      Die erste Anforderung, die initiiert wurde, ist oben.  
+      Die erste Anforderung, die initiiert wurde, befindet sich oben.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -338,7 +338,7 @@ Wenn Sie ändern möchten, wie der Wasserfall Anforderungen sortiert, zeigen Sie
       **Antwortzeit**  
    :::column-end:::
    :::column span="2":::
-      Die erste Anforderung, die den Download begonnen hat, ist ganz oben.  
+      Die erste Anforderung, die mit dem Herunterladen begonnen hat, befindet sich oben.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -346,7 +346,7 @@ Wenn Sie ändern möchten, wie der Wasserfall Anforderungen sortiert, zeigen Sie
       **Endzeit**  
    :::column-end:::
    :::column span="2":::
-      Die erste abgeschlossene Anforderung ist oben.  
+      Die erste abgeschlossene Anforderung befindet sich oben.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -354,7 +354,7 @@ Wenn Sie ändern möchten, wie der Wasserfall Anforderungen sortiert, zeigen Sie
       **Gesamtdauer**  
    :::column-end:::
    :::column span="2":::
-      Die Anforderung mit den kürzesten Verbindungseinstellungen und der Anforderung oder Antwort ist oben.  
+      Die Anforderung mit den kürzesten Verbindungseinstellungen und Anforderung oder Antwort befindet sich oben.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -362,27 +362,27 @@ Wenn Sie ändern möchten, wie der Wasserfall Anforderungen sortiert, zeigen Sie
       **Latenz**  
    :::column-end:::
    :::column span="2":::
-      Die Anforderung, die die kürzeste Zeit für eine Antwort gewartet hat, ist oben.  
+      Die Anforderung, die die kürzeste Zeit auf eine Antwort gewartet hat, befindet sich oben.  
    :::column-end:::
 :::row-end:::  
 
-Bei diesen Beschreibungen wird davon ausgegangen, dass die jeweilige Option von kürzester bis längster Position bewertet wird.  Wählen Sie die Kopfzeile der Spalte **Wasserfall** aus, um die Reihenfolge umzukehren.  
+In diesen Beschreibungen wird davon ausgegangen, dass jede option vom kürzesten zum längsten rangiert wird.  Wählen Sie die Kopfzeile der **Spalte Wasserfall** aus, um die Reihenfolge umzukehren.  
 
 :::image type="complex" source="../media/network-network-waterfall-total-duration.msft.png" alt-text="Sortieren des Wasserfalls nach Gesamtdauer" lightbox="../media/network-network-waterfall-total-duration.msft.png":::
-   Sortieren des Wasserfalls nach Gesamtdauer \ (der leichtere Teil der einzelnen Balken ist die Zeit, die gewartet wird, und der dunklere Teil ist die Zeit, die zum Herunterladen von Bytes verwendet wird \)  
+   Sortieren Sie den Wasserfall nach gesamter Dauer \(Der hellere Teil jeder Leiste ist die Wartezeit, und der dunklere Teil ist die Zeit für das Herunterladen von Bytes\)  
 :::image-end:::  
 
-## Analysieren von Anforderungen  
+## <a name="analyze-requests"></a>Analysieren von Anforderungen  
 
-Solange devtools geöffnet sind, werden alle Anforderungen im **Netzwerk** Panel protokolliert.  
-Verwenden Sie das Netzwerk Panel, um Anforderungen zu analysieren.  
+Solange DevTools geöffnet sind, werden alle Anforderungen im **Netzwerktool** protokolliert.  
+Verwenden Sie den Netzwerkbereich, um Anforderungen zu analysieren.  
 
-### Anzeigen eines Protokolls der Anforderungen  
+### <a name="display-a-log-of-requests"></a>Anzeigen eines Protokolls mit Anforderungen  
 
-Verwenden Sie die Tabelle "Anforderungen", um ein Protokoll aller Anforderungen anzuzeigen, die während der devtools geöffnet wurden.  Wenn Sie weitere Informationen zu den einzelnen Elementen sehen möchten, wählen oder zeigen Sie auf Anfragen.  
+Verwenden Sie die Tabelle Anforderungen, um ein Protokoll aller Anforderungen anzeigen zu können, die während des Öffnens von DevTools vorgenommen wurden.  Um weitere Informationen zu jedem Element zu erhalten, wählen Oder zeigen Sie auf Anforderungen.  
 
 :::image type="complex" source="../media/network-network-requests-table.msft.png" alt-text="Die Tabelle Anforderungen" lightbox="../media/network-network-requests-table.msft.png":::
-   Die Tabelle "Anforderungen"  
+   Die Tabelle Anforderungen  
 :::image-end:::  
 
 In der Tabelle Anforderungen werden standardmäßig die folgenden Spalten angezeigt.  
@@ -392,7 +392,7 @@ In der Tabelle Anforderungen werden standardmäßig die folgenden Spalten angeze
       **Name**  
    :::column-end:::
    :::column span="2":::
-      Der Dateiname von oder ein Bezeichner für die Ressource.  
+      Der Dateiname oder ein Bezeichner für die Ressource.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -421,7 +421,7 @@ In der Tabelle Anforderungen werden standardmäßig die folgenden Spalten angeze
       *   **Parser**  Der HTML-Parser für Microsoft Edge.  
       *   **Umleitung**  Eine HTTP-Umleitung.  
       *   **Skript**  Eine JavaScript-Funktion.  
-      *   **Andere**  Personen  Einige andere Prozesse oder Aktionen, wie das Navigieren zu einer Seite mithilfe eines Links oder das Eingeben einer URL in der Adressleiste.  
+      *   **Andere**  Ein anderer Prozess oder eine andere Aktion, z. B. das Navigieren zu einer Seite mithilfe eines Links oder das Eingeben einer URL in der Adressleiste.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -429,7 +429,7 @@ In der Tabelle Anforderungen werden standardmäßig die folgenden Spalten angeze
       **Size**  
    :::column-end:::
    :::column span="2":::
-      Die kombinierte Größe der Antwortheader sowie des Antworttexts, wie vom Server bereitgestellt.  
+      Die kombinierte Größe der Antwortkopfzeilen und des Antworttexts, wie vom Server zugestellt.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -437,7 +437,7 @@ In der Tabelle Anforderungen werden standardmäßig die folgenden Spalten angeze
       **Zeit**  
    :::column-end:::
    :::column span="2":::
-      Die Gesamtdauer vom Anfang der Anforderung bis zum Empfang des letzten Bytes in der Antwort.  
+      Die Gesamtdauer vom Beginn der Anforderung bis zum Eingang des letzten Bytes in der Antwort.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -445,36 +445,36 @@ In der Tabelle Anforderungen werden standardmäßig die folgenden Spalten angeze
       [Wasserfall](#display-the-timing-relationship-of-requests)  
    :::column-end:::
    :::column span="2":::
-      Eine visuelle Gliederung der Aktivität für jede Anforderung.  
+      Eine visuelle Aufschlüsselung der Aktivität für jede Anforderung.  
    :::column-end:::
 :::row-end:::  
 
-#### Hinzufügen oder Entfernen von Spalten  
+#### <a name="add-or-remove-columns"></a>Hinzufügen oder Entfernen von Spalten  
 
-Zeigen Sie auf die Kopfzeile der Tabelle Anforderungen, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie eine Option aus, um sie auszublenden oder anzuzeigen.  Die aktuell angezeigten Optionen verfügen über Kontrollkästchen neben den einzelnen Elementen.  
+Zeigen Sie auf die Kopfzeile der Tabelle Anforderungen, öffnen Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste\), und wählen Sie eine Option aus, um sie auszublenden oder anzuzeigen.  Derzeit angezeigte Optionen verfügen neben jedem Element über Häkchen.  
 
 :::image type="complex" source="../media/network-network-requests-add-column.msft.png" alt-text="Hinzufügen einer Spalte zur Tabelle Anforderungen" lightbox="../media/network-network-requests-add-column.msft.png":::
-   Hinzufügen einer Spalte zur Tabelle "Anforderungen"  
+   Hinzufügen einer Spalte zur Tabelle Anforderungen  
 :::image-end:::  
 
-#### Hinzufügen benutzerdefinierter Spalten  
+#### <a name="add-custom-columns"></a>Hinzufügen benutzerdefinierter Spalten  
 
-Wenn Sie der Tabelle Anforderungen eine benutzerdefinierte Spalte hinzufügen möchten, zeigen Sie auf die Kopfzeile der Tabelle Anforderungen, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie **Antwortheader**  >  **Verwalten von Kopfzeilen Spalten**aus.  
+Wenn Sie der Tabelle Anforderungen eine benutzerdefinierte Spalte hinzufügen möchten, zeigen Sie auf die Kopfzeile der Tabelle Anforderungen, öffnen Sie das Kontextmenü \(rechtsklicken\), und wählen Sie **Antwortkopfzeilen**Kopfzeilen verwalten  >  **aus.**  
 
 :::image type="complex" source="../media/network-network-requests-add-custom.msft.png" alt-text="Hinzufügen einer benutzerdefinierten Spalte zur Tabelle Anforderungen" lightbox="../media/network-network-requests-add-custom.msft.png":::
-   Hinzufügen einer benutzerdefinierten Spalte zur Tabelle "Anforderungen"  
+   Hinzufügen einer benutzerdefinierten Spalte zur Tabelle Anforderungen  
 :::image-end:::  
 
-### Anzeigen der Zeit Steuerungsbeziehung von Anforderungen  
+### <a name="display-the-timing-relationship-of-requests"></a>Anzeigen der Zeitlichen Beziehung von Anforderungen  
 
-Verwenden Sie den Wasserfall, um die Timing-Beziehungen von Anforderungen anzuzeigen.  
+Verwenden Sie den Wasserfall, um die Zeitlichen Beziehungen von Anforderungen anzeigen.  
 Die Standardorganisation des Wasserfalls verwendet die Startzeit der Anforderungen.  
-Anforderungen, die weiter Links sind, wurden früher als die Anforderungen weiter rechts gestartet.  
+Anforderungen, die weiter links liegen, wurden also früher gestartet als die Anforderungen, die weiter rechts liegen.  
 
-Wenn Sie die verschiedenen Möglichkeiten zum Sortieren des Wasserfalls überprüfen möchten, navigieren Sie zu nach [Aktivitätsphase sortieren](#sort-by-activity-phase).  
+Um die verschiedenen Methoden zum Sortieren des Wasserfalls zu überprüfen, navigieren Sie zu [Sortieren nach Aktivitätsphase](#sort-by-activity-phase).  
 
-:::image type="complex" source="../media/network-network-requests-waterfall.msft.png" alt-text="Spalte Wasserfall im Bereich Anforderungen" lightbox="../media/network-network-requests-waterfall.msft.png":::
-   Spalte "Wasserfall" im Bereich " **Anforderungen** "  
+:::image type="complex" source="../media/network-network-requests-waterfall.msft.png" alt-text="Die Spalte "Wasserfall" im Bereich Anforderungen" lightbox="../media/network-network-requests-waterfall.msft.png":::
+   Die Spalte "Wasserfall" im **Bereich Anforderungen**  
 :::image-end:::  
 
 <!-- ### Analyze the frames of a WebSocket Connection  -->
@@ -482,13 +482,13 @@ Wenn Sie die verschiedenen Möglichkeiten zum Sortieren des Wasserfalls überpr�
 <!--To review the frames of a WebSocket connection, use the following steps.  
 
 1.  Choose the URL of the WebSocket connection, under the **Name** column of the Requests table.  
-1.  Choose the **Frames** tab.  The table shows the last 100 frames.  
+1.  Choose the **Frames** panel.  The table shows the last 100 frames.  
 
 To refresh the table, re-choose the name of the WebSocket connection under the **Name** column of the Requests table.  -->
 
 <!--
-:::image type="complex" source="../media/network-frames.msft.png" alt-text="The Frames tab" lightbox="../media/network-frames.msft.png":::
-   The **Frames** tab  
+:::image type="complex" source="../media/network-frames.msft.png" alt-text="The Frames panel" lightbox="../media/network-frames.msft.png":::
+   The **Frames** panel  
 :::image-end:::  
 -->
 
@@ -505,148 +505,148 @@ To refresh the table, re-choose the name of the WebSocket connection under the *
 *   WebSocket opcodes are light-yellow.  
 *   Errors are light-red.  -->
 
-### Anzeigen einer Vorschau eines Antworttexts  
+### <a name="display-a-preview-of-a-response-body"></a>Anzeigen einer Vorschau eines Antworttexts  
 
-Führen Sie die folgenden Schritte aus, um eine Vorschau eines Antworttexts anzuzeigen.  
+Um eine Vorschau eines Antworttexts anzuzeigen, verwenden Sie die folgenden Schritte.  
 
-1.  Wählen Sie die URL der Anforderung unter der Spalte **Name** der Tabelle Anforderungen aus.  
-1.  Wählen Sie die Registerkarte **Vorschau** aus.  
+1.  Wählen Sie die URL der Anforderung unter der **Spalte Name** der Tabelle Anforderungen aus.  
+1.  Wählen Sie den **Bereich Vorschau** aus.  
 
-Die Registerkarte Vorschau ist meist nützlich, um Bilder anzuzeigen.  
+Die Registerkarte Vorschau ist hauptsächlich hilfreich, um Bilder anzuzeigen.  
 
-:::image type="complex" source="../media/network-network-resources-preview.msft.png" alt-text="Registerkarte Vorschau" lightbox="../media/network-network-resources-preview.msft.png":::
-   Registerkarte " **Vorschau** "  
+:::image type="complex" source="../media/network-network-resources-preview.msft.png" alt-text="Der Vorschaubereich" lightbox="../media/network-network-resources-preview.msft.png":::
+   Der **Vorschaubereich**  
 :::image-end:::  
 
-### Anzeigen eines Antworttexts  
+### <a name="display-a-response-body"></a>Anzeigen eines Antworttexts  
 
-Führen Sie die folgenden Schritte aus, um den Antworttext einer Anforderung anzuzeigen.  
+Zum Anzeigen des Antworttexts für eine Anforderung verwenden Sie die folgenden Schritte.  
 
-1.  Wählen Sie die URL der Anforderung unter der Spalte **Name** der Tabelle Anforderungen aus.  
-1.  Wählen Sie die Registerkarte **Antwort** aus.  
+1.  Wählen Sie die URL der Anforderung unter der **Spalte Name** der Tabelle Anforderungen aus.  
+1.  Wählen Sie den **Antwortbereich** aus.  
 
-:::image type="complex" source="../media/network-network-resources-response.msft.png" alt-text="Die Registerkarte Antwort" lightbox="../media/network-network-resources-response.msft.png":::
-   Die Registerkarte " **Antwort** "  
+:::image type="complex" source="../media/network-network-resources-response.msft.png" alt-text="Der Antwortbereich" lightbox="../media/network-network-resources-response.msft.png":::
+   Der **Antwortbereich**  
 :::image-end:::  
 
-### Anzeigen von HTTP-Headern  
+### <a name="display-http-headers"></a>Anzeigen von HTTP-Headern  
 
-Führen Sie die folgenden Schritte aus, um HTTP-Header Daten zu einer Anforderung anzuzeigen.  
+Zum Anzeigen von HTTP-Headerdaten zu einer Anforderung verwenden Sie die folgenden Schritte.  
 
-1.  Wählen Sie die URL der Anforderung unter der Spalte **Name** der Tabelle Anforderungen aus.  
-1.  Wählen Sie die Registerkarte über **Schriften** aus.  
+1.  Wählen Sie die URL der Anforderung unter der **Spalte Name** der Tabelle Anforderungen aus.  
+1.  Wählen Sie **das Kopfzeilen-Karussell** aus.  
 
-:::image type="complex" source="../media/network-resources-headers.msft.png" alt-text="Die Registerkarte Überschriften" lightbox="../media/network-resources-headers.msft.png":::
-   Die Registerkarte "über **Schriften** "  
+:::image type="complex" source="../media/network-resources-headers.msft.png" alt-text="Der Kopfzeilenbereich" lightbox="../media/network-resources-headers.msft.png":::
+   Der **Kopfzeilenbereich**  
 :::image-end:::  
 
-#### Anzeigen der HTTP-Header Quelle  
+#### <a name="display-http-header-source"></a>Anzeigen der HTTP-Headerquelle  
 
-Standardmäßig werden auf der Registerkarte Kopfzeilennamen in alphabetischer Reihenfolge angezeigt.  Führen Sie die folgenden Schritte aus, um die HTTP-Headernamen in der empfangenen Reihenfolge Enddatum.  
+Standardmäßig werden im **Kopfzeilenbereich** Kopfzeilennamen alphabetisch angezeigt.  Verwenden Sie die folgenden Schritte, um die HTTP-Headernamen in der empfangenen Reihenfolge zu spielen.  
 
-1.  Öffnen Sie die Registerkarte über **Schriften** für die Anforderung, die Sie interessiert.  Weitere Informationen finden Sie unter [Anzeigen von HTTP-Kopfzeilen](#display-http-headers).  
-1.  Wählen Sie **Quelle anzeigen**neben dem Abschnitt **Anforderungs Kopfzeile** oder **Antwort Kopf** aus.  
+1.  Öffnen Sie **den Bereich** Kopfzeilen für die Anforderung, die Sie interessiert.  Weitere Informationen finden Sie unter [Anzeigen von HTTP-Headern](#display-http-headers).  
+1.  Wählen **Sie Neben dem**Abschnitt **Anforderungsheader** oder **Antwortkopf** die Option Quelle anzeigen aus.  
 
-### Anzeigen von Abfragezeichenfolgenparametern  
+### <a name="display-query-string-parameters"></a>Anzeigen von Abfragezeichenfolgenparametern  
 
-Führen Sie die folgenden Schritte aus, um die Abfragezeichenfolgenparameter einer URL in einem menschlich lesbaren Format anzuzeigen.  
+Wenn Sie die Abfragezeichenfolgenparameter einer URL in einem lesbaren Format anzeigen möchten, verwenden Sie die folgenden Schritte.  
 
-1.  Öffnen Sie die Registerkarte über **Schriften** für die Anforderung, die Sie interessiert.  Weitere Informationen finden Sie unter [Anzeigen von HTTP-Kopfzeilen](#display-http-headers).  
-1.  Wechseln Sie zum Abschnitt **Abfragezeichenfolgenparameter** .  
+1.  Öffnen Sie **den Bereich** Kopfzeilen für die Anforderung, die Sie interessiert.  Weitere Informationen finden Sie unter [Anzeigen von HTTP-Headern](#display-http-headers).  
+1.  Navigieren Sie zum **Abschnitt Abfragezeichenfolgenparameter.**  
 
-:::image type="complex" source="../media/network-network-resources-headers-query-string-parameters.msft.png" alt-text="Der Abfragezeichenfolgenparameter Abschnitt" lightbox="../media/network-network-resources-headers-query-string-parameters.msft.png":::
-   Der **Abfragezeichenfolgenparameter** Abschnitt  
+:::image type="complex" source="../media/network-network-resources-headers-query-string-parameters.msft.png" alt-text="Der Abschnitt Abfragezeichenfolgenparameter" lightbox="../media/network-network-resources-headers-query-string-parameters.msft.png":::
+   Der **Abschnitt Abfragezeichenfolgenparameter**  
 :::image-end:::  
 
-#### Anzeigen der Parameterquelle für Abfragezeichenfolgen  
+#### <a name="display-query-string-parameters-source"></a>Quelle für Abfragezeichenfolgenparameter anzeigen  
 
-Führen Sie die folgenden Schritte aus, um die Abfragezeichenfolgenparameter Quelle einer Anforderung anzuzeigen.  
+Zum Anzeigen der Abfragezeichenfolgenparameterquelle einer Anforderung verwenden Sie die folgenden Schritte.  
 
-1.  Wechseln Sie zum Abschnitt Abfragezeichenfolgenparameter.  Weitere Informationen finden Sie unter [Anzeigen von Abfragezeichenfolgenparametern](#display-query-string-parameters).  
-1.  Wählen Sie **Quelltext anzeigen**aus.  
+1.  Navigieren Sie zum Abschnitt Abfragezeichenfolgenparameter.  Weitere Informationen finden Sie unter Anzeigen von [Abfragezeichenfolgenparametern.](#display-query-string-parameters)  
+1.  Wählen **Sie Ansichtsquelle**aus.  
 
-#### Anzeigen von URL-codierten Abfragezeichenfolgenparametern  
+#### <a name="display-url-encoded-query-string-parameters"></a>Anzeigen von URL-codierten Abfragezeichenfolgenparametern  
 
-Führen Sie die folgenden Schritte aus, um Abfragezeichenfolgenparameter in einem menschlich lesbaren Format, jedoch mit erhaltenen Codierungen, anzuzeigen.  
+Verwenden Sie die folgenden Schritte, um Abfragezeichenfolgenparameter in einem vom Menschen lesbaren Format, jedoch bei beibehaltenen Codierungen, anzeigen zu können.  
 
-1.  Wechseln Sie zum Abschnitt Abfragezeichenfolgenparameter.  Weitere Informationen finden Sie unter [Anzeigen von Abfragezeichenfolgenparametern](#display-query-string-parameters).  
-1.  Wählen Sie **View URL encoded**aus.  
+1.  Navigieren Sie zum Abschnitt Abfragezeichenfolgenparameter.  Weitere Informationen finden Sie unter Anzeigen von [Abfragezeichenfolgenparametern.](#display-query-string-parameters)  
+1.  Wählen **Sie die url-codierte Ansicht aus.**  
 
-### Anzeigen von Cookies  
+### <a name="display-cookies"></a>Anzeigen von Cookies  
 
-Führen Sie die folgenden Schritte aus, um die im HTTP-Header einer Anforderung gesendeten Cookies anzuzeigen.  
+Verwenden Sie die folgenden Schritte, um die im HTTP-Header einer Anforderung gesendeten Cookies anzeigen zu können.  
 
-1.  Wählen Sie die URL der Anforderung unter der Spalte **Name** der Tabelle Anforderungen aus.  
-1.  Wählen Sie die Registerkarte **Cookies** aus.  
+1.  Wählen Sie die URL der Anforderung unter der **Spalte Name** der Tabelle Anforderungen aus.  
+1.  Wählen Sie den **Bereich Cookies** aus.  
 
 <!--For more information about each of the columns, navigate to [Fields][ManageDataCookiesFields].  -->  
 
 <!--[ManageDataCookiesFields]: manage-data/cookies#fields  -->  
 <!--TODO: add link when section is available -->  
 
-:::image type="complex" source="../media/network-network-resources-cookies.msft.png" alt-text="Die Registerkarte Cookies" lightbox="../media/network-network-resources-cookies.msft.png":::
-   Die Registerkarte "Cookies"  
+:::image type="complex" source="../media/network-network-resources-cookies.msft.png" alt-text="Der Bereich "Cookies"" lightbox="../media/network-network-resources-cookies.msft.png":::
+   Der Bereich "Cookies"  
 :::image-end:::  
 
-### Anzeigen der Zeit Plan Aufteilung einer Anforderung  
+### <a name="display-the-timing-breakdown-of-a-request"></a>Anzeigen der Zeitlichen Aufschlüsselung einer Anforderung  
 
-Führen Sie die folgenden Schritte aus, um die Anzeigedauer einer Anforderung anzuzeigen.  
+Verwenden Sie die folgenden Schritte, um die Zeitliche Aufschlüsselung einer Anforderung zu zeigen.  
 
-1.  Wählen Sie die URL der Anforderung unter der Spalte **Name** der Tabelle Anforderungen aus.  
-1.  Wählen Sie die Registerkarte **Anzeige** Dauer aus.  
+1.  Wählen Sie die URL der Anforderung unter der **Spalte Name** der Tabelle Anforderungen aus.  
+1.  Wählen Sie den **Zeitsteuerungsbereich** aus.  
 
-Um eine schnellere Möglichkeit für den Zugriff auf die Daten zu erhalten, navigieren Sie zu [Vorschau einer Anzeige](#preview-a-timing-breakdown)Dauer.  
+Wenn Sie schneller auf die Daten zugreifen möchten, navigieren Sie zu [Vorschau einer Zeitplanungsaufschlüsselung.](#preview-a-timing-breakdown)  
 
-Weitere Informationen zu den einzelnen Phasen, die möglicherweise auf der Registerkarte **Anzeige** Dauer angezeigt werden, finden Sie unter [erläuterte](#timing-breakdown-phases-explained)Phasen der Anzeigedauer.  
+Weitere Informationen zu den einzelnen Phasen, die möglicherweise **** im Zeitsteuerungsfenster angezeigt werden, finden Sie unter [Timing breakdown phases explained](#timing-breakdown-phases-explained).  
 
-:::image type="complex" source="../media/network-network-resources-timing.msft.png" alt-text="Registerkarte Anzeigedauer" lightbox="../media/network-network-resources-timing.msft.png":::
-   Registerkarte " **Anzeige** Dauer"  
+:::image type="complex" source="../media/network-network-resources-timing.msft.png" alt-text="Der Zeitsteuerungsbereich" lightbox="../media/network-network-resources-timing.msft.png":::
+   Der **Zeitsteuerungsbereich**  
 :::image-end:::  
 
 Weitere Informationen zu den einzelnen Phasen.  
 
-Weitere Informationen zum Zugriff auf die Anzeige finden Sie unter [Aufschlüsselung](#display-the-timing-breakdown-of-a-request)der Anzeigedauer.  
+Weitere Informationen zum Zugriff auf die Anzeige finden Sie unter [Anzeigezeitplan .](#display-the-timing-breakdown-of-a-request)  
 
-#### Anzeigen einer Vorschau einer Anzeigedauer  
+#### <a name="preview-a-timing-breakdown"></a>Vorschau einer Zeitlichen Aufschlüsselung  
 
-Wenn Sie eine Vorschau der Zeit Plan Aufteilung einer Anforderung anzeigen möchten, zeigen Sie in der Spalte **Wasserfall** der Tabelle Anforderungen auf den Eintrag für die Anforderung.  
+Wenn Sie eine Vorschau der Zeitlichen Aufschlüsselung einer Anforderung anzeigen möchten, zeigen Sie in der **Spalte Wasserfall** der Tabelle Anforderungen auf den Eintrag für die Anforderung.  
 
-Wenn Sie weitere Informationen dazu benötigen, wie Sie auf die Daten zugreifen können, ohne die Maus zu zeigen, navigieren Sie zum [Anzeigen der Zeit Plan Verteilung einer Anforderung](#display-the-timing-breakdown-of-a-request).  
+Weitere Informationen dazu, wie Sie auf die Daten zugreifen können, ohne darauf zu zeigen, finden Sie unter Anzeigen der Zeitlichen [Aufschlüsselung einer Anforderung.](#display-the-timing-breakdown-of-a-request)  
 
-:::image type="complex" source="../media/network-network-resources-waterfall-hover.msft.png" alt-text="> anzeigen einer Vorschau der Anzeigedauer einer Anforderung" lightbox="../media/network-network-resources-waterfall-hover.msft.png":::
-   Anzeigen einer Vorschau der Anzeigedauer einer Anforderung  
+:::image type="complex" source="../media/network-network-resources-waterfall-hover.msft.png" alt-text="> Vorschau der Zeitlichen Aufschlüsselung einer Anforderung" lightbox="../media/network-network-resources-waterfall-hover.msft.png":::
+   Vorschau der Zeitlichen Aufschlüsselung einer Anforderung  
 :::image-end:::  
 
-#### Erläuterte Phasen Aufgliederungs Phasen  
+#### <a name="timing-breakdown-phases-explained"></a>Erläuterte Phasen für die Zeitliche Aufschlüsselung  
 
-Weitere Informationen zu den einzelnen Phasen **, die auf der Registerkarte** Anzeigedauer angezeigt werden können.  
+Weitere Informationen zu den einzelnen Phasen, die möglicherweise im **Zeitsteuerungsfenster angezeigt** werden.  
 
 :::row:::
    :::column span="1":::
-      **Queueing**  
+      **Warteschlangen**  
    :::column-end:::
    :::column span="2":::
-      Der Browser Warteschlangenanforderungen, wenn eine der folgenden Bedingungen erfüllt ist.  
+      Der Browser warteschlanget Anforderungen, wenn eine der folgenden Bedingungen zutrifft.  
       
-      *   Anforderungen mit höherer Priorität bestehen.  
-      *   Sechs TCP-Verbindungen sind für denselben Ursprung geöffnet, was die Grenze ist.  Gilt nur für HTTP/1.0 und HTTP/1.1.  
-      *   Der Browser reserviert kurzzeitig Speicherplatz im Datenträgercache.  
+      *   Anforderungen mit höherer Priorität sind vorhanden.  
+      *   Sechs TCP-Verbindungen sind für denselben Ursprung geöffnet, d. h. die Grenze.  Gilt nur für HTTP/1.0 und HTTP/1.1.  
+      *   Der Browser verteilt kurz Speicherplatz im Datenträgercache.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Blockiert**  
+      **Ins Stocken geraten**  
    :::column-end:::
    :::column span="2":::
-      Die Anforderung wird aus den in der **Warteschlange**beschriebenen Gründen angehalten.  
+      Die Anforderung wird aus einem der unter Warteschlangen **beschriebenen Gründe ins Stocken geraten.**  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **DNS-Lookup**  
+      **DNS-Nachschlage**  
    :::column-end:::
    :::column span="2":::
-      Der Browser löst die IP-Adresse für die Anforderung auf.  
+      Der Browser aufgelöst die IP-Adresse für die Anforderung.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -654,23 +654,23 @@ Weitere Informationen zu den einzelnen Phasen **, die auf der Registerkarte** An
       **Anfängliche Verbindung**  
    :::column-end:::
    :::column span="2":::
-      Der Browser stellt eine Verbindung her, einschließlich TCP-Handshakes, TCP-Wiederholungen und verhandelt eine sichere Socketebene.
+      Der Browser richtet eine Verbindung ein, einschließlich TCP-Handshakes, TCP-Wiederholungen und aushandelt eine Secure Socket Layer.
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Proxy Verhandlung**  
+      **Proxyaushandlung**  
    :::column-end:::
    :::column span="2":::
-      Der Browser verhandelt die Anforderung mit einem [Proxy Server][WikiProxyServer].  
+      Der Browser handelt die Anforderung mit einem [Proxyserver aus.][WikiProxyServer]  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Anfrage gesendet**  
+      **Gesendete Anforderung**  
    :::column-end:::
    :::column span="2":::
-      Die Anfrage wird gesendet.  
+      Die Anforderung wird gesendet.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -686,15 +686,15 @@ Weitere Informationen zu den einzelnen Phasen **, die auf der Registerkarte** An
       **Anforderung an ServiceWorker**  
    :::column-end:::
    :::column span="2":::
-      Die Anforderung wird an den Dienstmitarbeiter gesendet.  
+      Die Anforderung wird an den Servicemitarbeiter gesendet.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Waiting \ (TTFB \)**  
+      **Waiting \(TTFB\)**  
    :::column-end:::
    :::column span="2":::
-      Der Browser wartet auf das erste Byte einer Antwort.  TTFB steht für Time to First Byte.  Dieser Zeitpunkt umfasst eine Roundtrip-Wartezeit und die Zeitdauer, die der Server zum Vorbereiten der Antwort benötigte.  
+      Der Browser wartet auf das erste Byte einer Antwort.  TTFB steht für Time To First Byte.  Dieser Zeitpunkt umfasst eine Roundtrip-Wartezeit und die Zeit, die der Server zum Vorbereiten der Antwort brauchte.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -710,63 +710,63 @@ Weitere Informationen zu den einzelnen Phasen **, die auf der Registerkarte** An
       **Empfangen von Push**  
    :::column-end:::
    :::column span="2":::
-      Der Browser empfängt Daten für diese Antwort über http/2 Server Push.  
+      Der Browser empfängt Daten für diese Antwort über HTTP/2 Server Push.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Lese Push**  
+      **Lese-Push**  
    :::column-end:::
    :::column span="2":::
       Der Browser liest die zuvor empfangenen lokalen Daten.  
    :::column-end:::
 :::row-end:::  
 
-### Anzeigen von Initiatoren und Abhängigkeiten  
+### <a name="display-initiators-and-dependencies"></a>Anzeigen von Initiatoren und Abhängigkeiten  
 
-Wenn Sie die Initiatoren und Abhängigkeiten einer Anforderung anzeigen möchten, halten Sie `Shift` die Anforderung in der Tabelle Anforderungen gedrückt, und zeigen Sie darauf.  DevTools Farben: Initiatoren werden in grün angezeigt, und Abhängigkeiten werden in rot angezeigt.  
+Um die Initiatoren und Abhängigkeiten einer Anforderung anzuzeigen, halten Sie die Anforderung in der Tabelle Anforderungen, und zeigen Sie `Shift` auf die Anforderung.  DevTools-Farben: Initiatoren werden grün und Abhängigkeiten in Rot angezeigt.  
 
 :::image type="complex" source="../media/network-network-resources-initiators-dependencies.msft.png" alt-text="Anzeigen der Initiatoren und Abhängigkeiten einer Anforderung" lightbox="../media/network-network-resources-initiators-dependencies.msft.png":::
    Anzeigen der Initiatoren und Abhängigkeiten einer Anforderung  
 :::image-end:::  
 
-Wenn die Anforderungstabelle chronologisch geordnet ist, wenn Sie auf eine Zeile zeigen, wird in der davor liegenden Zeile eine grüne Anforderung angezeigt.  Die grüne Anforderung ist der Initiator der Abhängigkeit.  Wenn zuvor eine andere grüne Anforderung in der Zeile angezeigt wird, ist diese höhere Anforderung der Initiator des Initiators.  Und so weiter.  
+Wenn die Tabelle Anforderungen chronologisch geordnet ist, zeigt die zeile vor der Tabelle eine grüne Anforderung an, wenn Sie auf eine Linie zeigen.  Die grüne Anforderung ist der Initiator der Abhängigkeit.  Wenn zuvor eine weitere grüne Anforderung in der Zeile angezeigt wird, ist diese höhere Anforderung der Initiator des Initiators.  Und so weiter.  
 
-### Laden Ereignisse anzeigen  
+### <a name="display-load-events"></a>Anzeigen von Lastereignissen  
 
-DevTools zeigt die Anzeigedauer der `DOMContentLoaded` `load` Ereignisse und Ereignisse an mehreren Stellen im **Netzwerk** Panel an.  Das `DOMContentLoaded` Ereignis ist blau gefärbt, und das `load` Ereignis ist rot.  
+DevTools zeigt das Timing der `DOMContentLoaded` Ereignisse und `load` an mehreren Stellen im **Netzwerktool** an.  Das `DOMContentLoaded` Ereignis ist blau gefärbt, und das Ereignis ist `load` rot.  
 
-:::image type="complex" source="../media/network-network-requests-load-events.msft.png" alt-text="Die Speicherorte der DOMContentLoaded-und Load-Ereignisse im Netzwerk Panel" lightbox="../media/network-network-requests-load-events.msft.png":::
-   Die Speicherorte der `DOMContentLoaded` und- `load` Ereignisse im **Netzwerk** Panel  
+:::image type="complex" source="../media/network-network-requests-load-events.msft.png" alt-text="Die Speicherorte der DOMContentLoaded- und Load-Ereignisse im Netzwerkbereich" lightbox="../media/network-network-requests-load-events.msft.png":::
+   Die Speicherorte und `DOMContentLoaded` `load` Ereignisse im **Netzwerktool**  
 :::image-end:::  
 
-### Anzeigen der Gesamtzahl der Anforderungen  
+### <a name="display-the-total-number-of-requests"></a>Anzeigen der Gesamtzahl der Anforderungen  
 
-Die Gesamtzahl der Anforderungen wird im Bereich " **Zusammenfassung** " unten im **Netzwerk** Bereich aufgelistet.  
+Die Gesamtanzahl der Anforderungen wird **** im Zusammenfassungsbereich unten im **Netzwerktool** aufgelistet.  
 
 > [!CAUTION]
-> Diese Nummer verfolgt nur Anforderungen, die seit dem Öffnen von devtools protokolliert wurden.  Wenn vor dem Öffnen von devtools andere Anforderungen aufgetreten sind, werden diese Anforderungen nicht gezählt.  
+> Diese Zahl verfolgt nur Anforderungen, die seit dem Öffnen von DevTools protokolliert wurden.  Wenn vor dem Öffnen von DevTools andere Anforderungen aufgetreten sind, werden diese Anforderungen nicht gezählt.  
 
-:::image type="complex" source="../media/network-network-total-requests.msft.png" alt-text="Die Gesamtzahl der Anforderungen seit dem Öffnen von devtools" lightbox="../media/network-network-total-requests.msft.png":::
-   Die Gesamtzahl der Anforderungen seit dem Öffnen von devtools  
+:::image type="complex" source="../media/network-network-total-requests.msft.png" alt-text="Die Gesamtzahl der Anforderungen seit dem Öffnen von DevTools" lightbox="../media/network-network-total-requests.msft.png":::
+   Die Gesamtzahl der Anforderungen seit dem Öffnen von DevTools  
 :::image-end:::  
 
-### Anzeigen der Gesamtgröße des Downloads  
+### <a name="display-the-total-download-size"></a>Anzeigen der Downloadgröße insgesamt  
 
-Die Gesamtgröße der Downloadanforderungen wird im Bereich " **Zusammenfassung** " am unteren Rand des **Netzwerk** Bereichs angezeigt.  
+Die Gesamtgröße der Downloads von **** Anforderungen wird im Zusammenfassungsbereich unten im **Netzwerktool** aufgeführt.  
 
 > [!CAUTION]
-> Diese Nummer verfolgt nur Anforderungen, die seit dem Öffnen von devtools protokolliert wurden.  Wenn vor dem Öffnen von devtools andere Anforderungen aufgetreten sind, werden die vorherigen Anforderungen nicht gezählt.  
+> Diese Zahl verfolgt nur Anforderungen, die seit dem Öffnen von DevTools protokolliert wurden.  Wenn vor dem Öffnen von DevTools andere Anforderungen aufgetreten sind, werden die vorherigen Anforderungen nicht gezählt.  
 
 :::image type="complex" source="../media/network-network-total-download-size.msft.png" alt-text="Die Gesamtgröße der Downloads von Anforderungen" lightbox="../media/network-network-total-download-size.msft.png":::
    Die Gesamtgröße der Downloads von Anforderungen  
 :::image-end:::  
 
-Navigieren Sie zum [Anzeigen der unkomprimierten Größe einer Ressource](#display-the-uncompressed-size-of-a-resource), um zu überprüfen, wie umfangreiche Ressourcen sind, nachdem der Browser die einzelnen Elemente dekomprimiert hat.  
+Navigieren Sie, um zu überprüfen, wie groß ressourcen sind, nachdem der Browser die Komprimierung der einzelnen Elemente deaktiviert hat, um die nicht komprimierte Größe [einer Ressource anzuzeigen.](#display-the-uncompressed-size-of-a-resource)  
 
-### Anzeigen der Stapelüberwachung, die eine Anforderung verursacht hat  
+### <a name="display-the-stack-trace-that-caused-a-request"></a>Anzeigen der Stapelverfolgung, die eine Anforderung verursacht hat  
 
-Nachdem eine JavaScript-Anweisung eine Ressource angefordert hat, zeigen Sie auf die Spalte **Initiator** , um die Stapelüberwachung anzuzeigen, die zur Anforderung führt.  
+Nachdem eine JavaScript-Anweisung eine Ressource anfordert, zeigen Sie auf die **Spalte Initiator,** um die Stapelverfolgung zu zeigen, die zur Anforderung führt.  
 
 <!-- [codepen.io/contoso/pen/yLBrOWa?editors=0010#0](https://codepen.io/contoso/pen/yLBrOWa?editors=0010#0) -->  
 
@@ -784,50 +784,50 @@ init();
 ```  
 -->  
 
-:::image type="complex" source="../media/network-network-requests-initiator-stack.msft.png" alt-text="Die Stapelüberwachung, die zu einer Ressourcenanforderung führt" lightbox="../media/network-network-requests-initiator-stack.msft.png":::
-   Die Stapelüberwachung, die zu einer Ressourcenanforderung führt  
+:::image type="complex" source="../media/network-network-requests-initiator-stack.msft.png" alt-text="Die Stapelverfolgung, die zu einer Ressourcenanforderung führt" lightbox="../media/network-network-requests-initiator-stack.msft.png":::
+   Die Stapelverfolgung, die zu einer Ressourcenanforderung führt  
 :::image-end:::  
 
-### Anzeigen der unkomprimierten Größe einer Ressource  
+### <a name="display-the-uncompressed-size-of-a-resource"></a>Anzeigen der unkomprimierten Größe einer Ressource  
 
-Aktivieren Sie das Kontrollkästchen **große Anforderungs Zeilen verwenden** , und überprüfen Sie dann den niedrigsten Wert der Spalte **Größe** .  
+Aktivieren Sie das **Kontrollkästchen Große Anforderungszeilen** verwenden, und überprüfen Sie dann den unteren Wert der **Spalte Größe.**  
 
 :::image type="complex" source="../media/network-network-requests-uncompressed-compare.msft.png" alt-text="Beispiel für nicht komprimierte Ressourcen" lightbox="../media/network-network-requests-uncompressed-compare.msft.png":::
-   Ein Beispiel für unkomprimierte Ressourcen \ (die komprimierte Größe der `jquery-3.3.1.min.js` Datei, die über das Netzwerk gesendet wurde `29.9 KB` , während die unkomprimierte Größe `84.9 KB` \) war  
+   Ein Beispiel für nicht komprimierte Ressourcen \(Die komprimierte Größe der Datei, die über das Netzwerk gesendet wurde, war , während die nicht komprimierte `jquery-3.3.1.min.js` `29.9 KB` Größe `84.9 KB` \) war.  
 :::image-end:::  
 
-## Exportieren von Anforderungsdaten  
+## <a name="export-requests-data"></a>Exportieren von Anforderungensdaten  
 
-### Speichern aller Netzwerkanforderungen in einer har-Datei  
+### <a name="save-all-network-requests-to-a-har-file"></a>Speichern aller Netzwerkanforderungen in einer HAR-Datei  
 
-Führen Sie die folgenden Schritte aus, um alle Netzwerkanforderungen in einer har-Datei zu speichern.  
+Führen Sie die folgenden Schritte aus, um alle Netzwerkanforderungen in einer HAR-Datei zu speichern.  
 
-1.  Zeigen Sie auf jede Anforderung in der Tabelle Anforderungen, und öffnen Sie das Kontextmenü \ (mit der rechten Maustaste auf \).  
-1.  Wählen Sie **als har mit Inhalt speichern**aus.  DevTools speichert alle Anforderungen, die seit dem Öffnen von devtools in der har-Datei aufgetreten sind.  Sie können keine Anforderungen filtern.  Sie können auch keine einzelne Anfrage speichern.  
+1.  Zeigen Sie auf eine beliebige Anforderung in der Tabelle Anforderungen, und öffnen Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste\).  
+1.  Wählen **Sie Speichern als HAR mit Inhalt aus.**  DevTools speichert alle Anforderungen, die seit dem Öffnen von DevTools in der HAR-Datei aufgetreten sind.  Anforderungen können nicht gefiltert werden.  Sie können auch keine einzelne Anforderung speichern.  
 
-Nachdem Sie eine har-Datei gespeichert haben, können Sie Sie für die Analyse wieder in devtools importieren.  Ziehen Sie die har-Datei einfach per Drag & Drop in die Tabelle "Anforderungen".  
+Nachdem Sie eine HAR-Datei gespeichert haben, können Sie sie zur Analyse wieder in DevTools importieren.  Ziehen Sie einfach die HAR-Datei per Drag -and-Drop in die Requests-Tabelle.  
 <!--For more information, navigate to also [HAR Analyzer][HARAnalyzer].  -->  
 
 <!--[HARAnalyzer]: https://toolbox.alphabetapps.com/apps/har_analyzer  -->  
 <!--Todo: add section link when content is available  -->  
 
-:::image type="complex" source="../media/network-network-requests-save-har-content.msft.png" alt-text="Auswählen von als har mit Inhalt speichern" lightbox="../media/network-network-requests-save-har-content.msft.png":::
-   Auswählen **von "als har mit Inhalt speichern** "  
+:::image type="complex" source="../media/network-network-requests-save-har-content.msft.png" alt-text="Wählen Sie Speichern als HAR mit Inhalt aus" lightbox="../media/network-network-requests-save-har-content.msft.png":::
+   Wählen **Sie Speichern als HAR mit Inhalt aus**  
 :::image-end:::  
 
-### Kopieren einer oder mehrerer Anforderungen in die Zwischenablage  
+### <a name="copy-one-or-more-requests-to-the-clipboard"></a>Kopieren einer oder mehreren Anforderungen in die Zwischenablage  
 
-Zeigen Sie unter der Spalte **Name** der Tabelle Anforderungen auf eine Anforderung, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), zeigen Sie auf **Kopieren**, und wählen Sie eine der folgenden Optionen aus.  
+Zeigen Sie in der Spalte **Name** der Tabelle Anforderungen auf eine Anforderung, öffnen Sie das Kontextmenü \(mit der rechten Maustaste auf\), zeigen Sie auf **Kopieren,** und wählen Sie eine der folgenden Optionen aus.  
 
 | Name | Details |  
 |:--- |:--- |  
-| **Link Adresse kopieren** | Kopieren Sie die URL der Anforderung in die Zwischenablage. |  
+| **Linkadresse kopieren** | Kopieren Sie die URL der Anforderung in die Zwischenablage. |  
 | **Antwort kopieren** | Kopieren Sie den Antworttext in die Zwischenablage. |  
-| **Als FETCH kopieren** | &nbsp; |  
-| **Als curl kopieren** | Kopieren Sie die Anforderung als curl-Befehl. |  
-| **Alle als FETCH kopieren** | &nbsp; |  
-| **Alle als curl kopieren** | Kopieren Sie alle Anforderungen als eine Kette von curl-Befehlen. |  
-| **Alle als har kopieren** | Kopieren Sie alle Anforderungen als har-Daten. |  
+| **Kopieren als Abrufen** | &nbsp; |  
+| **Kopieren als cURL** | Kopieren Sie die Anforderung als cURL-Befehl. |  
+| **Copy All as Fetch** | &nbsp; |  
+| **Copy All as cURL** | Kopieren Sie alle Anforderungen als Kette von cURL-Befehlen. |  
+| **Copy All as HAR** | Kopieren Sie alle Anforderungen als HAR-Daten. |  
 
 <!--
 :::row:::
@@ -888,76 +888,76 @@ Zeigen Sie unter der Spalte **Name** der Tabelle Anforderungen auf eine Anforder
 :::row-end:::  
 -->  
 
-:::image type="complex" source="../media/network-network-requests-copy-response.msft.png" alt-text="Wählen Sie Antwort kopieren aus." lightbox="../media/network-network-requests-copy-response.msft.png":::
-   Wählen Sie **Antwort kopieren** aus.  
+:::image type="complex" source="../media/network-network-requests-copy-response.msft.png" alt-text="Wählen Sie Antwort kopieren aus" lightbox="../media/network-network-requests-copy-response.msft.png":::
+   Wählen Sie **Antwort kopieren aus**  
 :::image-end:::  
 
-### Kopieren der formatierten Antwort JSON in die Zwischenablage  
+### <a name="copy-formatted-response-json-to-the-clipboard"></a>Formatierte Antwort-JSON in die Zwischenablage kopieren  
 
-Wählen Sie eine Netzwerkanforderung aus, und navigieren Sie zum Bereich über **Schriften** .  Wenn Sie den JSON-Wert einer Antwort kopieren möchten, navigieren Sie zu **Anforderungsnutzlast**, zeigen Sie auf den JSON-Antwortinhalt, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie **Wert kopieren**aus.  
+Wählen Sie eine Netzwerkanforderung aus, und navigieren Sie zum **Bereich Kopfzeilen.**  Navigieren Sie zum Kopieren des JSON-Werts einer Antwort zu Nutzlast **anfordern,** zeigen Sie auf den Inhalt der JSON-Antwort, öffnen Sie das Kontextmenü \(rechtsklicken\), und wählen Sie **Wert kopieren aus.**  
 
 :::row:::
    :::column span="":::
-        :::image type="complex" source="../media/network-header-copy-property-value.msft.png" alt-text="Wert im Kontextmenü Kopieren" lightbox="../media/network-header-copy-property-value.msft.png":::
-          **Wert** im Kontextmenü Kopieren  
+        :::image type="complex" source="../media/network-header-copy-property-value.msft.png" alt-text="Wert im Kontextmenü kopieren" lightbox="../media/network-header-copy-property-value.msft.png":::
+          **Wert im** Kontextmenü kopieren  
         :::image-end:::  
    :::column-end:::
    :::column span="":::
-        :::image type="complex" source="../media/network-header-paste-property-value.msft.png" alt-text="Visual Studio-Code mit JSON für formatierte Antwort" lightbox="../media/network-header-paste-property-value.msft.png":::
-          Einfügen einer formatierten Antwort JSON in Visual Studio-Code  
+        :::image type="complex" source="../media/network-header-paste-property-value.msft.png" alt-text="Microsoft Visual Studio Code mit formatierter Antwort-JSON" lightbox="../media/network-header-paste-property-value.msft.png":::
+          Pasting formatted response JSON in Microsoft Visual Studio Code  
         :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-### Kopieren von Eigenschaftswerten aus Netzwerkanforderungen in Ihre Zwischenablage  
+### <a name="copy-property-values-from-network-requests-to-your-clipboard"></a>Kopieren von Eigenschaftswerten aus Netzwerkanforderungen in die Zwischenablage  
 
-Führen Sie die folgenden Aktionen aus, um Eigenschaftswerte aus Netzwerkanforderungen in Ihre Zwischenablage zu kopieren.  
+Führen Sie die folgenden Aktionen aus, um Eigenschaftswerte aus Netzwerkanforderungen in die Zwischenablage zu kopieren.  
 
-1.  Öffnen des Bereichs "über **Schriften** "  
-1.  Öffnen Sie einen der folgenden Kopfzeilen Abschnitte.  
-    *   Nutzlast anfordern \ (JSON \)  
+1.  Öffnen Sie den **Bereich Kopfzeilen.**  
+1.  Öffnen Sie einen der folgenden Kopfzeilenabschnitte.  
+    *   Anforderungsnutzlast \(JSON\)  
     *   Formulardaten  
     *   Abfragezeichenfolgenparameter  
-    *   Anforderungs Kopfzeilen  
+    *   Anforderungsheader  
     *   Antwortheader  
-1.  Öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \) > **Wert kopieren**.  Sie können den Wert jetzt in einen beliebigen Editor einfügen, um ihn zu überprüfen.  
+1.  Öffnen Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste\) > **Wert kopieren**.  Sie können den Wert nun in einen beliebigen Editor einfügen, um ihn zu überprüfen.  
     
-## Ändern des Layouts des Netzwerk Panels  
+## <a name="change-the-layout-of-the-network-panel"></a>Ändern des Layouts des Netzwerkbereichs  
 
-Sie können Abschnitte der **Netzwerk** Panel-UI erweitern oder reduzieren, um wichtige Informationen zu konzentrieren.  
+Sie können Abschnitte der **** Benutzeroberfläche des Netzwerktools erweitern oder reduzieren, um wichtige Informationen zu fokussieren.  
 
-### Ausblenden des Bereichs "Filter"  
+### <a name="hide-the-filters-pane"></a>Ausblenden des Bereichs Filter  
 
-Standardmäßig zeigt devtools den Bereich " **Filter** " an.  
-Wählen Sie **Filter** \ ( ![ Filter ][ImageFilterIcon] \) aus, um sie auszublenden.  
+In DevTools wird standardmäßig der Bereich **Filter** angezeigt.  
+Wählen **Sie Filter** \( Filter ![ ][ImageFilterIcon] \) aus, um ihn auszublenden.  
 
 :::image type="complex" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text="Schaltfläche Filter ausblenden" lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
-   Schaltfläche "Filter ausblenden"  
+   Schaltfläche Filter ausblenden  
 :::image-end:::  
 
-### Verwenden von umfangreichen Anforderungs Zeilen  
+### <a name="use-large-request-rows"></a>Verwenden großer Anforderungszeilen  
 
-Verwenden Sie große Zeilen, wenn in Ihrer Netzwerk Anforderungstabelle mehr Leerzeichen verwendet werden sollen.  Einige Spalten liefern auch ein wenig mehr Informationen, wenn Sie große Zeilen verwenden.  Der untere Wert der Spalte **size** entspricht beispielsweise der unkomprimierten Größe einer Anforderung.  
+Verwenden Sie große Zeilen, wenn Sie mehr Leerzeichen in ihrer Netzwerkanforderungentabelle wünschen.  Einige Spalten bieten auch ein wenig mehr Informationen, wenn große Zeilen verwendet werden.  Der untere Wert der Spalte **Größe** ist beispielsweise die nicht komprimierte Größe einer Anforderung.  
 
-:::image type="complex" source="../media/network-network-requests-large-request-rows.msft.png" alt-text="Ein Beispiel für große Anforderungs Zeilen im Bereich Anforderungen" lightbox="../media/network-network-requests-large-request-rows.msft.png":::
-   Ein Beispiel für große Anforderungs Zeilen im Bereich " **Anforderungen** "  
+:::image type="complex" source="../media/network-network-requests-large-request-rows.msft.png" alt-text="Ein Beispiel für große Anforderungszeilen im Bereich Anforderungen" lightbox="../media/network-network-requests-large-request-rows.msft.png":::
+   Ein Beispiel für große Anforderungszeilen im **Bereich Anforderungen**  
 :::image-end:::  
 
-Wenn Sie große Zeilen aktivieren möchten, aktivieren Sie das Kontrollkästchen **große Anforderungs Zeilen verwenden** .  
+Aktivieren Sie zum Aktivieren großer Zeilen das Kontrollkästchen **Große Anforderungszeilen** verwenden.  
 
-:::image type="complex" source="../media/network-network-requests-use-large-request-rows-on.msft.png" alt-text="Das Kontrollkästchen große Anforderungs Zeilen verwenden" lightbox="../media/network-network-requests-use-large-request-rows-on.msft.png":::
-   Das Kontrollkästchen " **große Anforderungs Zeilen verwenden** "  
+:::image type="complex" source="../media/network-network-requests-use-large-request-rows-on.msft.png" alt-text="Das Kontrollkästchen Große Anforderungszeilen verwenden" lightbox="../media/network-network-requests-use-large-request-rows-on.msft.png":::
+   Das **Kontrollkästchen Große Anforderungszeilen** verwenden  
 :::image-end:::  
 
-### Ausblenden des Bereichs "Übersicht"  
+### <a name="hide-the-overview-pane"></a>Ausblenden des Übersichtsbereichs  
 
-Standardmäßig zeigt devtools den Bereich " **Übersicht** " an.  Deaktivieren Sie das Kontrollkästchen **Übersicht anzeigen** , um es auszublenden.  
+Standardmäßig zeigt DevTools den Bereich **Übersicht** an.  Deaktivieren Sie zum Ausblenden das Kontrollkästchen **Übersicht** anzeigen.  
 
-:::image type="complex" source="../media/network-network-requests-show-overview-off.msft.png" alt-text="Kontrollkästchen ' Übersicht anzeigen '" lightbox="../media/network-network-requests-show-overview-off.msft.png":::
-   Kontrollkästchen ' **Übersicht anzeigen** '  
+:::image type="complex" source="../media/network-network-requests-show-overview-off.msft.png" alt-text="Das Kontrollkästchen Übersicht anzeigen" lightbox="../media/network-network-requests-show-overview-off.msft.png":::
+   Das **Kontrollkästchen Übersicht** anzeigen  
 :::image-end:::  
 
-## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -972,17 +972,17 @@ Standardmäßig zeigt devtools den Bereich " **Übersicht** " an.  Deaktivieren 
 
 <!-- links -->  
 
-[DevtoolsProgressiveWebApps]: ../progressive-web-apps/index.md "Debuggen von progressiven Web-Apps | Microsoft docs"  
+[DevtoolsProgressiveWebApps]: ../progressive-web-apps/index.md "Debuggen von Progressive Web Apps | Microsoft Docs"  
 
 <!--[NetworkConditions]: /microsoft-edge/devtools-guide-chromium/network/network-conditions "Optimize Performance Under Varying Network Conditions | Microsoft Docs"  -->  
 
 [MDNHTTPDataURIs]: https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/Data_URIs "Daten-URLs | MDN"  
 
-[WikiProxyServer]: https://en.wikipedia.org/wiki/Proxy_server "Proxy Server – Wikipedia"  
+[WikiProxyServer]: https://en.wikipedia.org/wiki/Proxy_server "Proxyserver – Wikipedia"  
 
 > [!NOTE]
 > Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
-> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/network/reference) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
+> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/network/reference) und wird von [Kayce Basken][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) verfasst.  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  

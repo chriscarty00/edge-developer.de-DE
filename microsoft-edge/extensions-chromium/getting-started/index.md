@@ -1,67 +1,63 @@
 ---
-description: Erfahren Sie mehr über Chromium-Erweiterungen und grundlegende Konzepte zum Erstellen von Erweiterungen.
-title: Konzepte und Architektur für Microsoft Edge (Chrom)-Erweiterungen
+description: Erfahren Sie mehr über Chromium-Erweiterungen und kernige Konzepte zum Erstellen von Erweiterungen.
+title: Microsoft Edge (Chromium) Extensions Konzepte und Architektur
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/01/2020
+ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: Edge-Chromium, Web-Entwicklung, HTML, CSS, JavaScript, Entwickler, Erweiterungen
-ms.openlocfilehash: 8ffdd19e1a1e36a4d10fdd80bd7dd5654d543527
-ms.sourcegitcommit: 845a0d53a86bee3678f421adee26b3372cefce57
+keywords: edge-chromium, web development, html, css, javascript, developer, extensions
+ms.openlocfilehash: 05732287bc1a782ed5830d5e7028cf5580f3b605
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "11104728"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397924"
 ---
-# Erweiterungskonzepte und-Architektur
+# <a name="extension-concepts-and-architecture"></a>Erweiterungskonzepte und -architektur  
 
-Dieser Artikel enthält eine kurze Einführung in Konzepte, die beim Erstellen von Erweiterungen helfen. Um Microsoft Edge \ (Chrom \)-Erweiterungen zu verstehen, erläutern wir zunächst, wie Multi-Tab-Browser funktionieren.
+Dieser Artikel enthält eine kurze Einführung in Konzepte, mit deren Hilfe Sie eine Erweiterung erstellen können.  Um Microsoft Edge \(Chromium\) -Erweiterungen zu verstehen, folgen Sie, um zu verstehen, wie Multi-Tab-Browser funktionieren.  
 
+## <a name="understand-how-browsers-work"></a>Verstehen der Funktionsweise von Browsern  
 
-## Grundlegendes zur Funktionsweise von Browsern
+Die folgende Liste enthält hilfreiche Informationen, die Sie vor dem Erstellen Ihrer Erweiterung verstehen können.  
 
-In der folgenden Liste werden hilfreiche Informationen erläutert, die Sie vor dem Erstellen Ihrer Erweiterung verstehen können.
-
-1.  Jede Registerkarte des Browsers ist von jeder anderen Registerkarte isoliert.  Jede Registerkarte wird in einem eigenen Thread ausgeführt, der von anderen browserregisterkarten und-Threads isoliert ist.
-
-    ![Ein Thread pro Browser-Registerkarte](media/index-image1-browsertabs.png)  
-
-2.  Jede Registerkarte verarbeitet eine GET-Anforderung.  Jede Registerkarte verwendet eine URL, um einen einzelnen Datenstrom abzurufen, der normalerweise ein HTML-Dokument ist.  Dieser einzelne Datenstrom oder eine Seite enthält Anweisungen wie JavaScript-Tags, Bildverweise, CSS-Verweise und vieles mehr.  Alle Ressourcen werden auf eine Registerkartenseite heruntergeladen, und die Seite wird auf der Registerkarte gerendert.  
-
-3.  Die Kommunikation erfolgt zwischen den einzelnen Registerkarten und Remoteservern.  Jede Registerkarte wird in einer isolierten Umgebung ausgeführt. Sie sind weiterhin mit dem Internet verbunden, aber Sie sind von anderen Registerkarten isoliert.  Tabs können JavaScript ausführen, um mit Servern zu kommunizieren. Diese Server stellen den Ursprungsserver für die erste Get-Anforderung dar, die in die URL-Leiste der Registerkarte eingegeben wurde.  
-
-4.  Das Erweiterungsmodell verwendet ein anderes Kommunikationsmodell.  Ähnlich wie Tab-Seiten werden Erweiterungen in einzelnen Threads ausgeführt, die von allen Registerkartenseiten-Threads isoliert sind.  Tabstopps Problem mit einzelnen Get-Anforderungen an Remoteserver und anschließendes Rendern der Seite. Die Erweiterungen funktionieren jedoch ähnlich wie ein Remoteserver. Wenn Sie Erweiterungen in Ihrem Browser installieren, wird im Browser ein eigenständiger Webserver erstellt. Die Erweiterung ist von allen Registerkartenseiten isoliert.  
-
-    ![Erweiterungen verwenden ein anderes Kommunikationsmodell](media/index-image3-upsidedown.png)  
-
-## Erweiterungsarchitektur
-
-In der folgenden Liste sind hilfreiche Informationen im Zusammenhang mit der Architektur einer Erweiterung dargestellt.  
-
-1.  Das Extension Web Server-Paket.  Eine Erweiterung ist ein Bündel von Webressourcen. Diese Webressourcen sind mit anderen Ressourcen vergleichbar, die Webentwickler auf Web-Servern veröffentlichen. Entwickler bündeln diese Webressourcen beim Erstellen einer Erweiterung in einer ZIP-Datei.
+1.  Jede Browserregisterkarte ist von jeder anderen Registerkarte isoliert.  Jede Registerkarte wird in einem separaten Thread ausgeführt, der von anderen Browserregisterkarten und Threads isoliert ist.  
     
-    Die ZIP-Datei enthält HTML-, CSS-, JavaScript-und Bilddateien.  Im Stammverzeichnis der ZIP-Datei ist eine weitere Datei erforderlich. Diese Datei ist die Manifestdatei und hat den Namen `manifest.json` .  Es handelt sich um den Entwurf ihrer Erweiterung und umfasst die Version ihrer Erweiterung, den Titel, die Berechtigungen, die für die Ausführung der Erweiterung erforderlich sind, und so weiter.
+    :::image type="complex" source="./media/index-image1-browsertabs.png" alt-text="Ein Thread pro Browserregisterkarte" lightbox="./media/index-image1-browsertabs.png":::
+       Ein Thread pro Browserregisterkarte  
+    :::image-end:::  
+    
+1.  Jede Registerkarte verarbeitet eine GET-Anforderung.  Jede Registerkarte verwendet eine URL, um einen einzelnen Datenstrom zu erhalten, bei dem es sich normalerweise um ein HTML-Dokument handelt.  Dieser einzelne Datenstrom oder diese Seite enthält Anweisungen wie JavaScript einschließlich Tags, Bildverweise, CSS-Verweise und vieles mehr.  Alle Ressourcen werden auf diese Registerkartenseite heruntergeladen, und dann wird die Seite auf der Registerkarte gerendert.  
+1.  Die Kommunikation erfolgt zwischen jeder Registerkarte und einem Remoteserver.  Jede Registerkarte wird in einer isolierten Umgebung ausgeführt.  Jede Registerkarte ist weiterhin mit dem Internet verbunden, jede ist jedoch von anderen Registerkarten isoliert.  Auf einer Registerkarte kann JavaScript ausgeführt werden, um mit einem Server zu kommunizieren.  Der Server ist der Ursprungsserver für die erste GET-Anforderung, die in die URL-Leiste der Registerkarte eingegeben wurde.  
+1.  Das Erweiterungsmodell verwendet ein anderes Kommunikationsmodell.  Ähnlich wie bei einer Registerkartenseite wird eine Erweiterung in einem einzelnen Thread ausgeführt, der von anderen Registerkartenseitenthreads isoliert ist.  Eine Registerkarte sendet einzelne GET-Anforderungen an Remoteserver und rendert dann die Seite.  Eine Erweiterung funktioniert jedoch ähnlich wie ein Remoteserver.  Durch das Installieren einer Erweiterung in einem Browser wird ein eigenständiger Webserver im Browser erstellt.  Die Erweiterung ist von allen Registerkartenseiten isoliert.  
+    
+    :::image type="complex" source="./media/index-image3-upsidedown.png" alt-text="Erweiterungen verwenden ein anderes Kommunikationsmodell" lightbox="./media/index-image3-upsidedown.png":::
+       Erweiterungen verwenden ein anderes Kommunikationsmodell  
+    :::image-end:::  
+    
+## <a name="extension-architecture"></a>Architektur der Erweiterung  
 
-2.  Starten des Erweiterungs Servers  Web-Server enthalten Ihr Webpaket. Browser Navigieren zu URLs auf dem Server und laden die Datei herunter, die im Browser gerendert werden soll. Browser Navigieren mithilfe von Zertifikaten, Konfigurationsdateien usw.  Wenn eine Datei vorhanden ist `index.html` , die an einem bestimmten Speicherort auf dem Webserver gespeichert ist.  
+In der folgenden Liste sind hilfreiche Informationen zur Architektur einer Erweiterung aufgeführt.  
 
-    Wenn wir Erweiterungen verwenden, wird die Registerkartenseite Ihres Browsers mit der Erweiterungs Laufzeit zum Webpaket ihrer Erweiterung.  Die Erweiterungs Laufzeit dient den Dateien aus der URL `extension://{some-long-unique-identifier}/index.html` , wobei `{some-long-unique-identifier}` ein eindeutiger Bezeichner vorhanden ist, der der Erweiterung bei der Installation zugewiesen ist.  Jede Erweiterung verwendet einen anderen eindeutigen Bezeichner. Jeder Bezeichner verweist auf das Webpaket, das in Ihrem Browser installiert ist.   
+1.  Das Erweiterungswebserverbündel.  Eine Erweiterung ist ein Bündel von Webressourcen.  Die Webressourcen ähneln anderen Ressourcen, die Sie \(der Webentwickler\) auf Webservern veröffentlichen.  Beim Erstellen einer Erweiterung bündeln Sie die Webressourcen in einer ZIP-Datei.  
+    
+    Die ZIP-Datei enthält HTML-, CSS-, JavaScript- und Bilddateien.  Im Stammverzeichnis der ZIP-Datei ist eine weitere Datei erforderlich.  Die andere Datei ist die Manifestdatei mit dem Namen `manifest.json` .  Die Manifestdatei ist der Blueprint Ihrer Erweiterung und enthält die Version Ihrer Erweiterung, den Titel, die berechtigungen, die für die Ausführung der Erweiterung erforderlich sind, und so weiter.  
+    
+1.  Starten des Erweiterungsservers.  Webserver enthalten Ihr Webbundepaket.  Ein Browser navigiert zu URLs auf dem Server und lädt die Datei zum Rendern im Browser herunter.  Ein Browser navigiert mithilfe von Zertifikaten, Konfigurationsdateien und so weiter.  Wenn eine Datei angegeben wird, wird die Datei an einem bestimmten `index.html` Speicherort auf dem Webserver gespeichert.  
+    
+    Wenn Sie eine Erweiterung verwenden, wird die Registerkartenseite Ihres Browsers mithilfe der Erweiterungslaufzeit zum Webbunde ihrer Erweiterung angezeigt.  Die Erweiterungslaufzeit dient den Dateien aus der URL , wobei ein eindeutiger Bezeichner ist, der der Erweiterung bei `extension://{some-long-unique-identifier}/index.html` `{some-long-unique-identifier}` der Installation zugewiesen ist.  Jede Erweiterung verwendet einen anderen eindeutigen Bezeichner.  Jeder Bezeichner verweist auf das Webbundepaket, das in Ihrem Browser installiert ist.  
+    
+1.  Eine Erweiterung kann mit Registerkarten und der Browsersymbolleiste kommunizieren.  Eine Erweiterung kann mit der Symbolleiste Ihres Browsers interagieren.  Jede Erweiterung verwaltet die Ausführung von Registerkartenseiten in separaten Threads, und die DOM-Manipulation auf jeder Registerkartenseite ist isoliert.  Eine Erweiterung verwendet die Extensions-API, um zwischen der Erweiterung und den Registerkartenseiten zu kommunizieren.  Die Extensions-API bietet zusätzliche Funktionen, die Benachrichtigungsverwaltung, Speicherverwaltung und so weiter umfassen.  
+    
+    Genau wie Webserver wartet eine Erweiterung auf Benachrichtigungen, wenn der Browser geöffnet ist.  Eine Erweiterungs- und Registerkartenseiten werden in Threads ausgeführt, die voneinander isoliert sind.  Um zu ermöglichen, dass eine Erweiterung mit einer beliebigen Registerkartenseite funktioniert, verwenden Sie die Extensions-API, und legen Sie die Berechtigungen in der Manifestdatei.  
+    
+1.  Eine Erweiterung bietet bei der Installation Opt-In-Berechtigungen.  Sie geben die Erweiterungsberechtigungen in der Datei `manifest.json` an.  Wenn ein Benutzer eine Erweiterung installiert, werden Informationen zu den berechtigungen angezeigt, die für die Erweiterung erforderlich sind.  Basierend auf der Art der erforderlichen Berechtigung kann die Erweiterung Informationen aus dem Browser extrahieren und verwenden.  
+    
+## <a name="next-steps"></a>Nächste Schritte  
 
-3.  Erweiterungen können mit Registerkarten und der Symbolleiste des Browsers kommunizieren.   Erweiterungen können mit der Toolbar Ihres Browsers interagieren. Jede Erweiterung verwaltet die Ausführung von Registerkartenseiten in separaten Threads, und die DOM-Manipulation auf jeder Registerkarte ist isoliert.  Erweiterungen verwenden die Erweiterungen-API, um zwischen der Erweiterung und den Registerkarten zu kommunizieren.  Diese Erweiterungs-API bietet zusätzliche Funktionen wie Benachrichtigungsverwaltung, Speicherverwaltung usw.  
-
-    Wie bei Webservern warten Erweiterungen auf Benachrichtigungen, wenn der Browser geöffnet ist.  Erweiterungen und Registerkarten werden in Threads ausgeführt, die voneinander isoliert sind. Entwickler können jedoch die Erweiterungen-API und Berechtigungen in der Manifestdatei verwenden, um eine Erweiterung für die Arbeit mit einer Registerkartenseite zu ermöglichen.  
-
-4. Erweiterungen bieten zum Zeitpunkt der Installation die Berechtigung zum Einwählen.  Erweiterungs Berechtigungen werden vom Entwickler in der Datei angegeben `manifest.json` . Beim Installieren von Erweiterungen werden Benutzern Informationen zu den Berechtigungen angezeigt, die von der Erweiterung ausgeführt werden müssen. Je nach Art der erforderlichen Berechtigung kann die Erweiterung Informationen aus dem Browser extrahieren und verwenden.
-
-
-## Nächste Schritte
-
- Informationen zu den ersten Schritten mit Erweiterungen finden Sie unter [Erstellen eines Erweiterungs Lernprogramms][CreateAnExtensionPart1]. 
-
-
-
-<!-- image links -->  
+Informationen zu den ersten Schritte mit Ihrer Erweiterung finden Sie unter [Erstellen eines Erweiterungs-Lernprogramms][CreateAnExtensionPart1].  
 
 <!-- links -->  
 
-[CreateAnExtensionPart1]: ./part1-simple-extension.md "Erstellen eines Erweiterungs Lernprogramms – Teil 1 | Microsoft docs"  
+[CreateAnExtensionPart1]: ./part1-simple-extension.md "Erstellen eines Erweiterungs-Lernprogramms – Teil 1 | Microsoft Docs"  

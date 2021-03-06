@@ -1,18 +1,18 @@
 ---
-description: Verwenden Sie virtuelle Geräte in Microsoft Edge zum Erstellen von mobilen First-Websites.
-title: Emulieren von mobilen Geräten in Microsoft Edge devtools
+description: Verwenden Sie virtuelle Geräte in Microsoft Edge, um Mobile-First-Websites zu erstellen.
+title: Emulieren mobiler Geräte in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web Development, F12 Tools, devtools, Emulation, Device, Simulation, Mobile
-ms.openlocfilehash: 8b636a20fcb1c55630009031ec8bf300624d03d7
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: microsoft edge, web development, f12 tools, devtools, emulation, device, simulation, mobile
+ms.openlocfilehash: 1a83dece95acba386385bfea035a9e2c91639240
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125104"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398784"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,314 +28,314 @@ ms.locfileid: "11125104"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Emulieren von mobilen Geräten in Microsoft Edge devtools  
+# <a name="emulate-mobile-devices-in-microsoft-edge-devtools"></a>Emulieren mobiler Geräte in Microsoft Edge DevTools  
 
-Verwenden Sie die **Geräteemulation** , um ungefähr zu sehen, wie Ihre Seite auf einem mobilen Gerät aussieht und reagiert.  Die Microsoft Edge-devtools bieten eine Sammlung von Features, die Ihnen beim emulieren mobiler Geräte helfen.  Die Sammlung umfasst die folgenden Features.  
+Verwenden **Sie die Geräteemulation,** um das Aussehen und Reagieren Ihrer Seite auf einem mobilen Gerät zu erahnen.  Die Microsoft Edge DevTools bieten eine Sammlung von Features, mit deren Hilfe Sie mobile Geräte emulieren können.  Die Auflistung enthält die folgenden Features.  
 
 *   [Simulieren eines mobilen Viewports](#simulate-a-mobile-viewport)  
-*   [Netzwerk drosseln](#throttle-the-network-only)  
+*   [Drosseln des Netzwerks](#throttle-the-network-only)  
 *   [Drosseln der CPU](#throttle-the-cpu-only)  
-*   [Geolokation simulieren](#override-geolocation)  
-*   [Ausrichtung einstellen](#set-orientation)  
-*   [Benutzer-Agent-Zeichenfolge einrichten](#set-user-agent-string)  
+*   [Simulieren von Geolocation](#override-geolocation)  
+*   [Festlegen der Ausrichtung](#set-orientation)  
+*   [Festlegen der Benutzer-Agent-Zeichenfolge](#set-user-agent-string)  
 
-## Einschränkungen  
+## <a name="limitations"></a>Einschränkungen  
 
-Die **Geräteemulation** ist eine Näherung des Erscheinungsbild Ihrer Seite auf einem mobilen Gerät in [erster Reihe][WikiApproximation] .  Die **Geräteemulation** führt Ihren Code nicht auf einem mobilen Gerät aus.  Stattdessen simulieren Sie die mobile Benutzeroberfläche auf Ihrem Laptop oder Desktop.  
+**Bei der Geräteemulation** [handelt][WikiApproximation] es sich um eine Näherung des Aussehens und Fühlungsgefühls Ihrer Seite auf einem mobilen Gerät in erster Ordnung.  **Bei der Geräteemulation** wird Der Code nicht tatsächlich auf einem mobilen Gerät ausgeführt.  Stattdessen simulieren Sie die mobile Benutzeroberfläche von Ihrem Laptop oder Desktop aus.  
 
-Einige Aspekte von mobilen Geräten werden in devtools nie emuliert.  Die Architektur von mobilen CPUs unterscheidet sich beispielsweise von der Architektur von Laptop-oder Desktop-CPUs.  Im Zweifelsfall ist es am besten, wenn Sie Ihre Seite auf einem mobilen Gerät ausführen.  Verwenden Sie [Remote Debuggen] [DevToolsRemoteDebugging], um mit dem Code einer Seite von Ihrem Computer zu interagieren, während Ihre Seite auf einem mobilen Gerät ausgeführt wird.  Sie können anzeigen, ändern, Debuggen, Profil oder alle vier während der Interaktion mit dem Code.  Ihr Computer kann ein Notizbuch oder ein Desktopcomputer sein.  
+Einige Aspekte mobiler Geräte werden in DevTools nie emuliert.  Beispielsweise ist die Architektur mobiler CPUs anders als die Architektur von Laptop- oder Desktop-CPUs.  Im Zweifelsfall sollten Sie Ihre Seite am besten auf einem mobilen Gerät ausführen.  Verwenden Sie [Remotedebugging][DevToolsRemoteDebugging] zum Interagieren mit dem Code einer Seite von Ihrem Computer, während Ihre Seite tatsächlich auf einem mobilen Gerät ausgeführt wird.  Sie können alle vier anzeigen, ändern, debuggen, profilieren oder alle vier anzeigen, während Sie mit dem Code interagieren.  Ihr Computer kann ein Notizbuch oder ein Desktopcomputer sein.  
 
-## Simulieren eines mobilen Viewports  
+## <a name="simulate-a-mobile-viewport"></a>Simulieren eines mobilen Viewports  
 
-Wählen Sie **Geräteemulation umschalten**  \ ( ![ Gerätesymbolleiste umschalten ][ImageDeviceToolbarIcon] \) aus, oder wählen Sie **anpassen und Steuern devtools** \ ( `...` \) > **Geräteemulation** aus, um die Benutzeroberfläche zu öffnen, mit der Sie ein mobiles Viewport simulieren können.  
+Wählen **Sie Geräteemulation** umschalten \( ![ Gerätesymbolleiste ][ImageDeviceToolbarIcon] umschalten \) oder **DevTools** anpassen und steuern \( `...` \) > Geräteemulation, **** um die Benutzeroberfläche zu öffnen, mit der Sie einen mobilen Ansichtsfenster simulieren können.  
 
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="Die Gerätesymbolleiste" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
     Die Gerätesymbolleiste  
 :::image-end:::  
 
-Standardmäßig wird die Gerätesymbolleiste im reaktionsfähigen Ansichtsfenster Modus geöffnet.  
+Standardmäßig wird die Gerätesymbolleiste im Modus "Responsive Viewport" geöffnet.  
 
-### Reaktionsfähiger viewportmodus  
+### <a name="responsive-viewport-mode"></a>Responsive Viewport Mode  
 
-Ziehen Sie die Ziehpunkte, um das Aussehen und Verhalten Ihrer Seite über mehrere Bildschirmgrößen schnell zu testen, um die Größe des Viewports auf die gewünschten Abmessungen zu ändern.  Sie können auch bestimmte Werte in die Felder Breite und Höhe eingeben.  In der folgenden Abbildung ist die Breite auf festzulegen, `626` und die Höhe ist auf festzulegen `516` .  
+Ziehen Sie die Ziehpunkte, um das Aussehen und Aussehen Ihrer Seite in mehreren Bildschirmgrößen schnell zu testen, um die Größe des Ansichtsfensters auf die erforderlichen Dimensionen zu ändern.  Sie können auch bestimmte Werte in die Felder Breite und Höhe eingeben.  In der folgenden Abbildung wird die Breite auf und `626` die Höhe auf `516` festgelegt.  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png" alt-text="Die Gerätesymbolleiste" lightbox="../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png":::
-    Die Ziehpunkte zum Ändern der Bemaßungen des Viewports im reaktionsfähigen Ansichtsfenster Modus  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png" alt-text="Die Ziehpunkte zum Ändern der Dimensionen des Ansichtsfensters im Modus "Responsive Viewport"" lightbox="../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png":::
+    Die Ziehpunkte zum Ändern der Dimensionen des Ansichtsfensters im Modus "Responsive Viewport"  
 :::image-end:::  
 
-#### Anzeigen von medienabfragen  
+#### <a name="show-media-queries"></a>Anzeigen von Medienabfragen  
 
-Wenn Sie medienabfragen auf der Seite definiert haben, wechseln Sie zu den Viewport-Dimensionen, in denen diese medienabfragen wirksam werden, indem Sie medienabfrage Haltepunkte oberhalb des Viewports anzeigen.  Wählen Sie **Weitere Optionen**  >  **Anzeigen von medienabfragen**aus.  
+Wenn Sie Medienabfragen auf Ihrer Seite definiert haben, springen Sie zu den Viewportdimensionen, in denen diese Medienabfragen wirksam werden, indem Sie Haltepunkte für Medienabfragen über Dem Viewport anzeigen.  Wählen **Sie Weitere Optionen**  >  **Medienabfragen anzeigen aus.**  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-options-show-media-queries.msft.png" alt-text="Die Gerätesymbolleiste" lightbox="../media/device-mode-toggle-device-toolbar-more-options-show-media-queries.msft.png":::
-   **Anzeigen von medienabfragen**  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-options-show-media-queries.msft.png" alt-text="Anzeigen von Medienabfragen" lightbox="../media/device-mode-toggle-device-toolbar-more-options-show-media-queries.msft.png":::
+   **Anzeigen von Medienabfragen**  
 :::image-end:::  
 
-Wählen Sie einen Haltepunkt aus, um die Breite des Viewports so zu ändern, dass die medienabfrage ausgelöst wird.  
+Wählen Sie einen Haltepunkt aus, um die Breite des Viewports so zu ändern, dass die Medienabfrage ausgelöst wird.  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-click-breakpoint.msft.png" alt-text="Die Gerätesymbolleiste" lightbox="../media/device-mode-toggle-device-toolbar-click-breakpoint.msft.png":::
-   Wählen Sie einen Haltepunkt aus, um die Breite des Viewports zu ändern.  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-click-breakpoint.msft.png" alt-text="Wählen Sie einen Haltepunkt aus, um die Breite des Ansichtsfensters zu ändern." lightbox="../media/device-mode-toggle-device-toolbar-click-breakpoint.msft.png":::
+   Wählen Sie einen Haltepunkt aus, um die Breite des Ansichtsfensters zu ändern.  
 :::image-end:::  
 
-#### Einrichten des Gerätetyps  
+#### <a name="set-the-device-type"></a>Festlegen des Gerätetyps  
 
-Verwenden Sie die Liste **Gerätetyp** , um ein mobiles Gerät oder ein Desktop Gerät zu simulieren.  
+Verwenden Sie die **Liste Gerätetyp,** um ein mobiles Gerät oder Desktopgerät zu simulieren.  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png" alt-text="Die Gerätesymbolleiste" lightbox="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png":::
-   Liste der **Gerätetypen**  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png" alt-text="Die Liste "Gerätetyp"" lightbox="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png":::
+   Die **Liste "Gerätetyp"**  
 :::image-end:::  
 
-In der folgenden Tabelle werden die Unterschiede zwischen den verfügbaren Optionen für Gerätetypen beschrieben.  Die Spalte "Rendering-Methode" bezieht sich darauf, ob Microsoft Edge die Seite als mobiles oder Desktop-Viewport rendert.  Die Spalte Cursor Symbol bezieht sich auf den Typ des Cursors, den Sie sehen, wenn Sie auf der Seite zeigen.  Die Spalte "ausgelöste Ereignisse" bezieht sich darauf, ob die Seite ausgelöst `touch` `click` wird oder Ereignisse bei der Interaktion mit der Seite ausgelöst werden.  
+In der folgenden Tabelle werden die Unterschiede zwischen den verfügbaren Gerätetypoptionen beschrieben.  Die Spalte Rendering-Methode bezieht sich darauf, ob Microsoft Edge die Seite als Mobile- oder Desktop-Viewport rendert.  Die Spalte Cursorsymbol bezieht sich auf den Cursortyp, der angezeigt wird, wenn Sie auf die Seite zeigen.  Die Spalte Ereignisse, die ausgelöst wird, bezieht sich darauf, ob die Seite ausgelöst wird oder ob Ereignisse ausgelöst `touch` `click` werden, wenn Sie mit der Seite interagieren.  
 
-| Option | Rendering-Methode | Cursor Symbol | Ausgelöste Ereignisse |  
+| Option | Renderingmethode | Cursorsymbol | Ausgelöste Ereignisse |  
 |:--- |:--- |:--- |:--- |  
 | Mobilgeräte | Mobilgeräte | Kreis | Toucheingabe |  
-| Mobil \ (kein Touch \) | Mobilgeräte | Normal |  auf  |  
-| Desktop | Desktop | Normal |  auf  |  
-| Desktop \ (tippen Sie auf \) | Desktop | Kreis | Toucheingabe |  
+| Mobil \(keine Berührung\) | Mobilgeräte | Normal |  wählen Sie  |  
+| Desktop | Desktop | Normal |  wählen Sie  |  
+| Desktop \(touch\) | Desktop | Kreis | Toucheingabe |  
 
 > [!NOTE]
-> Wenn die Liste **Gerätetyp** nicht angezeigt wird, wählen Sie **Weitere Optionen**  >  **Add Device Type**aus.  
+> Wenn die **Liste Gerätetyp** nicht angezeigt wird, wählen Sie **Weitere Optionen**  >  **Gerätetyp hinzufügen aus.**  
 
-### Ansichtsfenster Modus für mobile Geräte  
+### <a name="mobile-device-viewport-mode"></a>Ansichtsportmodus für mobile Geräte  
 
-Wenn Sie die Abmessungen eines bestimmten mobilen Geräts simulieren möchten, wählen Sie das Gerät in der **Geräte** Liste aus.  
+Um die Abmessungen eines bestimmten mobilen Geräts zu simulieren, wählen Sie das Gerät in der Liste **Gerät** aus.  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-list.msft.png" alt-text="Die Gerätesymbolleiste" lightbox="../media/device-mode-toggle-device-toolbar-device-list.msft.png":::
-   **Geräte** Liste  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-list.msft.png" alt-text="Die Geräteliste" lightbox="../media/device-mode-toggle-device-toolbar-device-list.msft.png":::
+   Die **Geräteliste**  
 :::image-end:::  
 
-#### Drehen des Viewports in Querformat  
+#### <a name="rotate-the-viewport-to-landscape-orientation"></a>Drehen des Ansichtsfensters in die Querformatausrichtung  
 
 Testen Sie Ihre Webseite im Querformat.  
 
-*   Wenn Sie das Ansichtsfenster in Querformat drehen möchten, wählen Sie **drehen** \ ( ![ drehen ][ImageRotateIcon] \) aus.  
+*   Um den Ansichtsfenster in die Querformatausrichtung zu drehen, wählen Sie **Drehen** \( ![ Drehen ][ImageRotateIcon] \).  
     
-    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-landscape.msft.png" alt-text="Die Gerätesymbolleiste" lightbox="../media/device-mode-toggle-device-toolbar-landscape.msft.png":::
-       Im Querformat angezeigte Seite  
+    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-landscape.msft.png" alt-text="Seite, die im Querformat angezeigt wird" lightbox="../media/device-mode-toggle-device-toolbar-landscape.msft.png":::
+       Seite, die im Querformat angezeigt wird  
     :::image-end:::  
     
 > [!NOTE]
-> Die Schaltfläche **drehen** verschwindet, wenn die **Gerätesymbolleiste** schmal ist.  
+> Die **Schaltfläche Drehen** wird ausgeblendet, wenn die **Gerätesymbolleiste** schmal ist.  
 
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="Die Gerätesymbolleiste" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
    Die **Gerätesymbolleiste**  
 :::image-end:::  
 
-Weitere Informationen finden Sie unter [Ausrichtung einstellen](#set-orientation).  
+Weitere Informationen finden Sie unter Festlegen [der Ausrichtung](#set-orientation).  
 
-#### Geräterahmen anzeigen  
+#### <a name="show-device-frame"></a>Anzeigen des Geräteframes  
 
-Zeigen Sie den Frame des physikalischen Geräts um das Viewport an, wenn Sie die Abmessungen eines bestimmten mobilen Geräts wie einem iPhone 6 simulieren.  
+Zeigen Sie den physischen Geräterahmen um den Viewport an, wenn Sie die Abmessungen eines bestimmten mobilen Geräts, z. B. eines iPhone 6, simulieren.  
 
-1.  Öffnen Sie **Weitere Optionen**.  
-1.  Wählen Sie **Geräterahmen anzeigen**aus.  
+1.  Öffnen **Sie Weitere Optionen**.  
+1.  Wählen **Sie Geräterahmen anzeigen aus.**  
 
 > [!NOTE]
-> Wenn ein Geräterahmen für ein bestimmtes Gerät nicht angezeigt wird, bedeutet dies, dass devtools keine Grafiken für diese Option besitzt.  
+> Wenn ein Geräterahmen für ein bestimmtes Gerät nicht angezeigt wird, bedeutet dies, dass DevTools keine Art für die Option hat.  
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png" alt-text="Die Gerätesymbolleiste" lightbox="../media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png":::
-         Geräterahmen anzeigen  
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png" alt-text="Anzeigen des Geräteframes" lightbox="../media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png":::
+         Anzeigen des Geräteframes  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png" alt-text="Die Gerätesymbolleiste" lightbox="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png":::
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png" alt-text="Der Geräterahmen für das iPhone 6" lightbox="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png":::
          Der Geräterahmen für das iPhone 6  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-#### Hinzufügen eines benutzerdefinierten mobilen Geräts  
+#### <a name="add-a-custom-mobile-device"></a>Hinzufügen eines benutzerdefinierten mobilen Geräts  
 
-Wenn die von Ihnen benötigte Option für das Mobile Gerät nicht in der Standardliste enthalten ist, können Sie ein benutzerdefiniertes Gerät hinzufügen.  Führen Sie die folgenden Schritte aus, um ein benutzerdefiniertes Gerät hinzuzufügen.  
+Wenn die option für mobile Geräte, die Sie benötigen, nicht in der Standardliste enthalten ist, können Sie ein benutzerdefiniertes Gerät hinzufügen.  Führen Sie die folgenden Schritte aus, um ein benutzerdefiniertes Gerät hinzuzufügen.  
 
-1.  Wählen Sie die **Geräte** Liste > **Bearbeiten**aus.  
+1.  Wählen Sie **die Liste Gerät** > Bearbeiten **aus.**  
     
-    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png" alt-text="Die Gerätesymbolleiste" lightbox="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png":::
-       Wählen Sie **Bearbeiten** aus.  
+    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png" alt-text="Wählen Sie Bearbeiten aus" lightbox="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png":::
+       Wählen Sie **Bearbeiten aus**  
     :::image-end:::  
     
-1.  Wählen Sie **Benutzerdefiniertes Gerät hinzufügen**aus.  
-1.  Geben Sie auf **emulierten Geräten**einen Gerätenamen, eine Bildschirmbreite und eine Bildschirmhöhe für das benutzerdefinierte Gerät ein.  Die Felder für das [Pixel Verhältnis des Geräts][MDNWindowDevicePixelRatio], die [Zeichenfolge des Benutzer-Agents][MDNUserAgent]und die [Gerätetypen](#set-the-device-type) sind optional.  Das Feld "Gerätetyp" ist standardmäßig auf " **Mobil**" eingestellt.  
+1.  Wählen **Sie Benutzerdefiniertes Gerät hinzufügen aus.**  
+1.  Geben **Sie unter Emulierte**Geräte den Gerätenamen, die Bildschirmbreite und die Bildschirmhöhe für das benutzerdefinierte Gerät ein.  Das [Gerätepixelverhältnis,][MDNWindowDevicePixelRatio] [die Benutzer-Agent-Zeichenfolge][MDNUserAgent]und [die Gerätetypfelder](#set-the-device-type) sind optional.  Das Gerätetypfeld ist standardmäßig **auf Mobile festgelegt.**  
     
-    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png" alt-text="Die Gerätesymbolleiste" lightbox="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png":::
+    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png" alt-text="Erstellen eines benutzerdefinierten Geräts" lightbox="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png":::
        Erstellen eines benutzerdefinierten Geräts  
     :::image-end:::  
     
-### Lineale anzeigen  
+### <a name="show-rulers"></a>Anzeigen von Lineale  
 
-Wenn Sie Bildschirmdimensionen messen müssen, können Sie die Bildschirmgröße in Pixeln mithilfe von Linealen messen.  Wählen Sie **Weitere Optionen**  >  **Lineale anzeigen** aus, um die Lineale oberhalb und Links des Viewports anzuzeigen.  
+Wenn Sie Bildschirmmaße messen müssen, können Sie Lineale verwenden, um die Bildschirmgröße in Pixeln zu messen.  Wählen **Sie Weitere Optionen**  >  **Lineale anzeigen** aus, um Lineale oben und links vom Viewport anzuzeigen.  
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-options-show-rulers.msft.png" alt-text="Die Gerätesymbolleiste" lightbox="../media/device-mode-toggle-device-toolbar-options-show-rulers.msft.png":::
-         Menüelement zum Anzeigen von Linealen  
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-options-show-rulers.msft.png" alt-text="Menüelement zum Anzeigen von Lineale" lightbox="../media/device-mode-toggle-device-toolbar-options-show-rulers.msft.png":::
+         Menüelement zum Anzeigen von Lineale  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-rulers.msft.png" alt-text="Die Gerätesymbolleiste" lightbox="../media/device-mode-toggle-device-toolbar-rulers.msft.png":::
-         Lineale oberhalb und Links des Viewports  
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-rulers.msft.png" alt-text="Lineale oberhalb und links vom Viewport" lightbox="../media/device-mode-toggle-device-toolbar-rulers.msft.png":::
+         Lineale oberhalb und links vom Viewport  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-### Zoomen des Viewports  
+### <a name="zoom-the-viewport"></a>Zoomen des Viewports  
 
-Wenn Sie das Aussehen und Verhalten Ihrer Seite mit mehreren Zoomstufen testen möchten, verwenden Sie die **zoomliste** , um die Ansicht zu vergrößern oder zu verkleinern.  
+Verwenden Sie die Zoomliste zum Vergrößern oder Verkleinern, um das Aussehen und Das Gefühl Ihrer Seite auf mehreren Zoomstufen zu testen. ****  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-zoom.msft.png" alt-text="Die Gerätesymbolleiste" lightbox="../media/device-mode-toggle-device-toolbar-zoom.msft.png":::
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-zoom.msft.png" alt-text="Zoom" lightbox="../media/device-mode-toggle-device-toolbar-zoom.msft.png":::
    **Zoom**  
 :::image-end:::  
 
-## Netzwerk und CPU drosseln  
+## <a name="throttle-the-network-and-cpu"></a>Drosseln des Netzwerks und der CPU  
 
-Mobile Geräte verfügen häufig über Netzwerk-und CPU-Einschränkungen.  Stellen Sie sicher, dass Sie testen, wie schnell Ihre Seite geladen wird und wie Sie mit unterschiedlichen Internet-und CPU-Geschwindigkeiten reagiert.  
+Mobile Geräte haben häufig Netzwerk- und CPU-Einschränkungen.  Stellen Sie sicher, dass Sie testen, wie schnell Ihre Seite geladen wird und wie sie mit unterschiedlichen Internet- und CPU-Geschwindigkeiten reagiert.  
 
 Drosseln Sie das Netzwerk und die CPU.  
 
-1.  Wählen Sie **Drosselungs** Liste aus, und ändern Sie die voreingestellten auf **Mid-Tier-Handy** oder **Low-End-Mobiltelefon**.  
-    *   **Mid-Tier-Handy** simuliert `fast 3G` und drosselt Ihre CPU.  Sie ist viermal langsamer als normal.  
+1.  Wählen **Sie Drosselungsliste** aus, und ändern Sie die Voreinstellung in **Mobile** Oder **Low-End Mobile der Mittleren Ebene.**  
+    *   **Mid-Tier Mobile** simuliert `fast 3G` und drosselt Ihre CPU.  Er ist viermal langsamer als normal.  
     *   **Low-End Mobile** simuliert `slow 3G` und drosselt Ihre CPU.  Sie ist sechsmal langsamer als normal.  
     
-Die gesamte Drosselung basiert auf der normalen Funktion Ihres Laptops oder Desktops.  
+Die Drosselung basiert auf der normalen Funktion Ihres Laptops oder Desktops.  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-throttle.msft.png" alt-text="Die Gerätesymbolleiste" lightbox="../media/device-mode-toggle-device-toolbar-throttle.msft.png":::
-   Die **Drosselungs** Liste auf der Gerätesymbolleiste  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-throttle.msft.png" alt-text="Die Einschränkungsliste in der Gerätesymbolleiste" lightbox="../media/device-mode-toggle-device-toolbar-throttle.msft.png":::
+   Die **Einschränkungsliste** in der Gerätesymbolleiste  
 :::image-end:::  
 
 > [!NOTE]
-> Wenn die **Drosselungs Liste** ausgeblendet ist, ist die **Gerätesymbolleiste** zu schmal.  Um auf die **Drosselungs Liste**zuzugreifen, vergrößern Sie die Breite der **Gerätesymbolleiste**.  
+> Wenn die **Einschränkungsliste** ausgeblendet ist, ist **die Gerätesymbolleiste** zu schmal.  Erhöhen Sie die Breite **der**Gerätesymbolleiste, um auf die Einschränkungsliste **zu zugreifen.**  
 
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="Die Gerätesymbolleiste" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
    Die **Gerätesymbolleiste**  
 :::image-end:::  
 
-### Nur die CPU drosseln  
+### <a name="throttle-the-cpu-only"></a>Nur die CPU drosseln  
 
 Führen Sie die folgenden Schritte aus, um nur die CPU und nicht das Netzwerk zu drosseln.
 
-1.  Wählen Sie das Panel **Leistung** aus, und wählen Sie **Aufnahmeeinstellungen** \ ( ![ Aufnahmeeinstellungen ][ImageCaptureIcon] \) aus.
-1.  Wählen Sie **CPU**  >  **4X Verlangsamung** oder **6x Verlangsamung**aus.
+1.  Wählen Sie **den Bereich** Leistung aus, und wählen Sie **Aufnahmeeinstellungen** \( ![ Aufnahmeeinstellungen ][ImageCaptureIcon] \).
+1.  Wählen **Sie CPU**  >  **4x Verlangsamung** oder **6x Verlangsamung aus.**
     
-    :::image type="complex" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="Die Gerätesymbolleiste" lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
-       Die **CPU** -Liste im **Leistungs** Panel  
+    :::image type="complex" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="Die CPU-Liste im Leistungsbereich" lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
+       Die **CPU-Liste** im **Leistungsbereich**  
     :::image-end:::  
     
-### Nur das Netzwerk drosseln  
+### <a name="throttle-the-network-only"></a>Drosseln des Netzwerks  
 
-Führen Sie die folgenden Schritte aus, um nur das Netzwerk zu drosseln:
+Führen Sie die folgenden Schritte aus, um das Netzwerk zu drosseln.
 
-1.  Wählen Sie das **Netzwerk** Panel aus.
-1.  Wählen Sie **Online**  >  **fast 3G** oder **Slow 3G**.
+1.  Wählen Sie das **Netzwerktool** aus.
+1.  Wählen **Sie Online**Fast  >  **3G** oder Slow **3G**aus.
     
-    :::image type="complex" source="../media/device-mode-network-throttle.msft.png" alt-text="Die Gerätesymbolleiste" lightbox="../media/device-mode-network-throttle.msft.png":::
-       Die **Drosselungs** Liste im Netzwerk Panel  
+    :::image type="complex" source="../media/device-mode-network-throttle.msft.png" alt-text="Die Einschränkungsliste im Netzwerkbereich" lightbox="../media/device-mode-network-throttle.msft.png":::
+       Die **Einschränkungsliste** im Netzwerkbereich  
     :::image-end:::  
     
-    Oder wählen Sie `Control` + `Shift` + `P` \ (Windows, Linux \) oder `Command` + `Shift` + `P` \ (macOS \) aus, um das **Befehlsmenü**zu öffnen, geben Sie ein `3G` , und wählen Sie **fast 3G-Drosselung aktivieren** oder **langsame 3G-Drosselung aktivieren**aus.  
+    Oder wählen `Control` + `Shift` + `P` Sie \(Windows, Linux\) oder `Command` + `Shift` + `P` **** \(macOS\) `3G` **** **** aus, um das Befehlsmenü zu öffnen, geben Sie ein, und wählen Sie Schnelle 3G Drosselung aktivieren oder langsame 3G aktivieren aus.  
     
-    :::image type="complex" source="../media/device-mode-command-menu-throttle.msft.png" alt-text="Die Gerätesymbolleiste" lightbox="../media/device-mode-command-menu-throttle.msft.png":::
+    :::image type="complex" source="../media/device-mode-command-menu-throttle.msft.png" alt-text="Das Befehlsmenü" lightbox="../media/device-mode-command-menu-throttle.msft.png":::
        Das **Befehlsmenü**  
     :::image-end:::  
     
-Sie können die Netzwerk Drosselung auch über das **Leistungs** Panel einstellen.  
+Sie können die Netzwerkeinschränkung auch im Bereich **Leistung** festlegen.  
 
-1.  Wählen Sie **aufnahmeeinstellungen** \ ( ![ Aufnahme ][ImageCaptureIcon] Einstellungen \) aus, und wählen Sie die **Netzwerk** Liste aus, und ändern Sie die Voreinstellung auf **fast 3G** oder **Slow 3G**.  
+1.  Wählen **Sie Aufnahmeeinstellungen** \( ![ Aufnahmeeinstellungen ][ImageCaptureIcon] \) aus, **** **** und wählen Sie **** die Liste Netzwerk aus, und ändern Sie die Voreinstellung in Fast 3G oder Slow 3G .  
     
-    :::image type="complex" source="../media/device-mode-performance-network-throttle.msft.png" alt-text="Die Gerätesymbolleiste" lightbox="../media/device-mode-performance-network-throttle.msft.png":::
-       Einrichten der Netzwerk Drosselung im **Leistungs** Panel  
+    :::image type="complex" source="../media/device-mode-performance-network-throttle.msft.png" alt-text="Festlegen der Netzwerkeinschränkung aus dem Leistungsbereich" lightbox="../media/device-mode-performance-network-throttle.msft.png":::
+       Festlegen der Netzwerkeinschränkung aus dem **Leistungsbereich**  
     :::image-end:::  
     
-## Außerkraftsetzung der Geolocation  
+## <a name="override-geolocation"></a>Außerkraftsetzung der Geolocation  
 
 :::row:::
    :::column span="":::
-      Wenn Ihre Seite von Geolocation-Informationen eines mobilen Geräts abhängt, um Sie ordnungsgemäß zu rendern, stellen Sie unterschiedliche geolokationen mithilfe der Benutzeroberfläche Überschreiben von Geolocation bereit.  
+      Wenn Ihre Seite von Geolocationinformationen von einem mobilen Gerät abhängt, um ordnungsgemäß gerendert zu werden, stellen Sie unterschiedliche Geolocations mithilfe der geolocation-überschreibenden Benutzeroberfläche zur Verfügung.  
 
-      1.  Wählen Sie **anpassen und Steuern devtools** \ ( `...` \) > **Weitere Tools**-  >  **Sensoren**aus.  
+      1.  Wählen **Sie Anpassen und Steuern devTools** \( `...` \) > Weitere Tools **Sensoren**  >  **aus.**  
       
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="Die Gerätesymbolleiste" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
-         **Sensoren** für geolocation  
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="Sensoren für Geolocation" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
+         **Sensoren** für Geolocation  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      1.  Öffnen des Befehlsmenüs  
-          *   Wählen Sie `Control` + `Shift` + `P` \ (Windows, Linux \) oder `Command` + `Shift` + `P` \ (macOS \) aus.  
-      1. Geben `Sensors` Sie ein, und wählen Sie **Sensoren anzeigen**aus.  
+      1.  Öffnen Sie das Befehlsmenü.  
+          *   Wählen `Control` + `Shift` + `P` Sie \(Windows, Linux\) oder `Command` + `Shift` + `P` \(macOS\) aus.  
+      1. Geben `Sensors` Sie ein, und wählen **Sie Sensoren anzeigen aus.**  
       
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Die Gerätesymbolleiste" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
-         **Sensoren** für Geolocation anzeigen  
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Anzeigen von Sensoren für geolocation" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
+         **Anzeigen von Sensoren** für geolocation  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-Im Bereich " **Sensoren** " können Sie mithilfe des Dropdownmenüs " **Standort** " einen der vordefinierten Speicherorte auswählen, die in devtools enthalten sind.  Wenn Sie einen benutzerdefinierten Speicherort eingeben möchten, wählen Sie **andere** aus. und geben Sie die Koordinaten des benutzerdefinierten Speicherorts ein.  Wenn Sie Ihre Seite in einem Fehlerzustand testen möchten, wenn Standortinformationen nicht verfügbar sind, wählen Sie **Speicherort nicht verfügbar**aus.  
+Im Bereich **Sensoren** können Sie einen der vordefinierten Speicherorte auswählen, die in DevTools enthalten sind, indem Sie das **Dropdownmenü** Speicherort verwenden.  Wenn Sie einen benutzerdefinierten Speicherort eingeben, wählen Sie **Andere...** und geben Sie die Koordinaten Ihres benutzerdefinierten Speicherorts ein.  Wenn Sie Ihre Seite in einem Fehlerzustand testen möchten, wenn Standortinformationen nicht verfügbar sind, wählen Sie **Location unavailable aus.**  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png" alt-text="Die Gerätesymbolleiste" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png":::
-    Bereich " **Sensoren** " mit ausgewählter Vorwahl Position.  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png" alt-text="Sensorbereich mit ausgewählter voreingestellter Position" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png":::
+    **Sensorbereich** mit ausgewählter voreingestellter Position.  
 :::image-end:::
 
-## Ausrichtung einstellen  
+## <a name="set-orientation"></a>Festlegen der Ausrichtung  
 
 :::row:::
    :::column span="":::
-      Wenn Ihre Seite von den Orientierungs Informationen eines mobilen Geräts abhängt, um Sie ordnungsgemäß zu rendern, öffnen Sie die Benutzeroberfläche für die Ausrichtung.  
+      Wenn Ihre Seite von Ausrichtungsinformationen eines mobilen Geräts abhängt, um ordnungsgemäß gerendert zu werden, öffnen Sie die Ausrichtungsbenutzeroberfläche.  
 
-      1.  Wählen Sie **anpassen und Steuern devtools** \ ( `...` \) > **Weitere Tools**-  >  **Sensoren**aus.  
+      1.  Wählen **Sie Anpassen und Steuern devTools** \( `...` \) > Weitere Tools **Sensoren**  >  **aus.**  
       
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="Die Gerätesymbolleiste" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
-         **Sensoren** zur Ausrichtung  
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="Sensoren für die Ausrichtung" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
+         **Sensoren für** die Ausrichtung  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      1.  Öffnen des Befehlsmenüs  
-          *   Wählen Sie `Control` + `Shift` + `P` \ (Windows, Linux \) oder `Command` + `Shift` + `P` \ (macOS \) aus.  
-      1. Geben `Sensors` Sie ein, und wählen Sie **Sensoren anzeigen**aus.  
+      1.  Öffnen Sie das Befehlsmenü.  
+          *   Wählen `Control` + `Shift` + `P` Sie \(Windows, Linux\) oder `Command` + `Shift` + `P` \(macOS\) aus.  
+      1. Geben `Sensors` Sie ein, und wählen **Sie Sensoren anzeigen aus.**  
       
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Die Gerätesymbolleiste" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
-         **Anzeigen von Sensoren** zur Ausrichtung  
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Anzeigen von Sensoren für die Ausrichtung" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
+         **Anzeigen von Sensoren** für die Ausrichtung  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-Im **Sensor** Panel können Sie eine voreingestellte Ausrichtung aus dem Dropdownmenü **Ausrichtung** auswählen.  Wenn Sie eine eigene Ausrichtung eingeben möchten, wählen Sie **benutzerdefinierte Ausrichtung**aus, und geben Sie Ihre eigenen [Alpha][MDNDeviceOrientaitonAlpha]-, [Beta][MDNDeviceOrientaitonBeta]-und [Gammawerte][MDNDeviceOrientaitonGamma] ein.  
+Im **Bereich Sensoren** können Sie im Dropdownmenü Ausrichtung eine voreingestellte Ausrichtung auswählen. ****  Wenn Sie Ihre eigene Ausrichtung eingeben, wählen Sie **Benutzerdefinierte**Ausrichtung aus, und geben Sie Ihre eigenen [Alpha-,][MDNDeviceOrientaitonAlpha] [Beta-][MDNDeviceOrientaitonBeta]und [Gammawerte][MDNDeviceOrientaitonGamma] ein.  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png" alt-text="Die Gerätesymbolleiste" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png":::
-    **Ausrichtungs** Optionen im **Sensor** Panel  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png" alt-text="Ausrichtungsoptionen im Bereich Sensoren" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png":::
+    **Ausrichtungsoptionen** im **Bereich Sensoren**  
 :::image-end:::  
 
-## Benutzer-Agent-Zeichenfolge einrichten  
+## <a name="set-user-agent-string"></a>Festlegen der Zeichenfolge des Benutzer-Agents  
 
 :::row:::
    :::column span="":::
-      Wenn Ihre Seite davon abhängt, ob die Benutzer-Agent-Zeichenfolge von einem mobilen Gerät ordnungsgemäß gerendert wird, verwenden Sie den Panel **Netzwerkbedingungen** , um unterschiedliche Benutzer-Agent-Zeichenfolgen bereitzustellen  
+      Wenn Ihre Seite von der Benutzer-Agent-Zeichenfolge eines mobilen Geräts abhängt, um ordnungsgemäß gerendert zu werden, verwenden Sie den Bereich Netzwerkbedingungen, um unterschiedliche Zeichenfolgen für den Benutzer-Agent zur Verfügung zu stellen. ****  
       
-      1.  Wählen Sie **anpassen und Steuern devtools** \ ( `...` \) > **Weitere Tools**  >  **Netzwerkbedingungen**aus.  
+      1.  Wählen **Sie Anpassen und Steuern devTools** \( `...` \) > Weitere **Tools**  >  **Netzwerkbedingungen aus.**  
       
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png" alt-text="Die Gerätesymbolleiste" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png":::
-         Eintrag " **Netzwerkbedingungen** " im Menü " **Weitere Tools** "  
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png" alt-text="Eintrag "Netzwerkbedingungen" im Menü Weitere Tools" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png":::
+         **Eintrag "Netzwerkbedingungen"** im Menü **Weitere** Tools  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      1.  Öffnen des Befehlsmenüs  
-          *   Wählen Sie `Control` + `Shift` + `P` \ (Windows, Linux \) oder `Command` + `Shift` + `P` \ (macOS \) aus.  
-      1. Geben `Network conditions` Sie ein, und wählen Sie **Netzwerkbedingungen anzeigen**aus.  
+      1.  Öffnen Sie das Befehlsmenü.  
+          *   Wählen `Control` + `Shift` + `P` Sie \(Windows, Linux\) oder `Command` + `Shift` + `P` \(macOS\) aus.  
+      1. Geben `Network conditions` Sie ein, und wählen **Sie Netzwerkbedingungen anzeigen aus.**  
       
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png" alt-text="Die Gerätesymbolleiste" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png":::
-         **Netzwerkbedingungen anzeigen**  
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png" alt-text="Anzeigen von Netzwerkbedingungen" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png":::
+         **Anzeigen von Netzwerkbedingungen**  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-Deaktivieren Sie neben **Benutzer-Agent**das Kontrollkästchen **automatisch auswählen** .  Wählen Sie dann **Benutzerdefiniert** aus, um aus einer Liste vordefinierter Benutzer-Agent-Zeichenfolgen auszuwählen.  Wenn Sie eine eigene Benutzer-Agent-Zeichenfolge eingeben möchten, geben Sie die Zeichenfolge in **Geben Sie einen benutzerdefinierten Benutzer-Agent ein**.  
+Aktivieren Sie **neben Benutzer-Agent**das **Kontrollkästchen** Automatisch auswählen.  Wählen Sie dann **Custom...** aus, um aus einer Liste vordefinierter Benutzer-Agent-Zeichenfolgen auszuwählen.  Geben Sie die Zeichenfolge in Enter a custom user agent ein, um Eine eigene Zeichenfolge für den **Benutzer-Agent ein eingeben.**  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png" alt-text="Die Gerätesymbolleiste" lightbox="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png":::
-    Einrichten der Benutzer-Agent-Zeichenfolge auf Microsoft Edge unter macOS  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png" alt-text="Festlegen der Benutzer-Agent-Zeichenfolge auf Microsoft Edge unter macOS" lightbox="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png":::
+    Festlegen der Benutzer-Agent-Zeichenfolge auf Microsoft Edge unter macOS  
 :::image-end:::  
 
-## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -348,21 +348,21 @@ Deaktivieren Sie neben **Benutzer-Agent**das Kontrollkästchen **automatisch aus
 <!-- links -->  
 
 <!--[DevToolsCommunity]: ../index.md#community "Join the DevTools community | Microsoft Docs"  -->
-[DevToolsRemoteDebugging]: .. /Remote-Debugging/Index.MD "erste Schritte mit dem Remotedebuggen von Android-Geräten | Microsoft docs "  
+[DevToolsRemoteDebugging]: .. /remote-debugging/index.md "Erste Schritte mit remote debuggen von Android-Geräten | Microsoft Docs"  
 
-[MDNWindowDevicePixelRatio]: https://developer.mozilla.org/docs/Web/API/Window/devicePixelRatio "Window. devicePixelRatio | MDN"  
-[MDNUserAgent]: https://developer.mozilla.org/docs/Glossary/User_agent "Benutzer-Agent | MDN"  
-[MDNDeviceOrientaitonAlpha]: https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/alpha "DeviceOrientationEvent. Alpha | MDN"  
-[MDNDeviceOrientaitonBeta]: https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/beta "DeviceOrientationEvent. Beta | MDN"  
-[MDNDeviceOrientaitonGamma]: https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/gamma "DeviceOrientationEvent. Gamma | MDN"  
+[MDNWindowDevicePixelRatio]: https://developer.mozilla.org/docs/Web/API/Window/devicePixelRatio "Window.devicePixelRatio | MDN"  
+[MDNUserAgent]: https://developer.mozilla.org/docs/Glossary/User_agent "Benutzer-Agent-| MDN"  
+[MDNDeviceOrientaitonAlpha]: https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/alpha "DeviceOrientationEvent.alpha | MDN"  
+[MDNDeviceOrientaitonBeta]: https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/beta "DeviceOrientationEvent.beta | MDN"  
+[MDNDeviceOrientaitonGamma]: https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/gamma "DeviceOrientationEvent.gamma | MDN"  
 
-[WikiApproximation]: https://en.wikipedia.org/wiki/Order_of_approximation#First-order "Reihenfolge der Näherung – First-Order – Wikipedia"  
+[WikiApproximation]: https://en.wikipedia.org/wiki/Order_of_approximation#First-order "Reihenfolge der Näherung – Erste Reihenfolge – Wikipedia"  
 
 > [!NOTE]
-> Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.  
-> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/device-mode/index) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
+> Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
+> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/device-mode/index) und wird von [Kayce Basken][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) verfasst.  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
