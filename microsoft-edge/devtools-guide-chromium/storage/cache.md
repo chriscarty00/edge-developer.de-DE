@@ -1,18 +1,18 @@
 ---
-description: Informationen zum Anzeigen von Cache Daten aus dem Anwendungs Panel von Microsoft Edge devtools
-title: Anzeigen von Cache Daten mit Microsoft Edge devtools
+description: Anzeigen von Cachedaten aus dem Anwendungsbereich von Microsoft Edge DevTools.
+title: Anzeigen von Cachedaten mit Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 770001beb9b7eebd4dae76355a1f3e41a8021ecb
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 7e0523e3293bbdafa9c3575344714da708fffe62
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230803"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397538"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,91 +28,91 @@ ms.locfileid: "11230803"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# <span data-ttu-id="7d370-104">Anzeigen von Cachedaten mit Microsoft Edge devtools</span><span class="sxs-lookup"><span data-stu-id="7d370-104">View cache data with Microsoft Edge DevTools</span></span>  
+# <a name="view-cache-data-with-microsoft-edge-devtools"></a><span data-ttu-id="664ce-104">Anzeigen von Cachedaten mit Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="664ce-104">View cache data with Microsoft Edge DevTools</span></span>  
 
-<span data-ttu-id="7d370-105">Dieser Leitfaden zeigt, wie Sie [Microsoft Edge devtools][MicrosoftEdgeDevTools] verwenden, um [Cache][MDNCache] Daten zu überprüfen.</span><span class="sxs-lookup"><span data-stu-id="7d370-105">This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to inspect [Cache][MDNCache] data.</span></span>  
+<span data-ttu-id="664ce-105">In diesem Handbuch wird gezeigt, wie [Sie Microsoft Edge DevTools zum Überprüfen][MicrosoftEdgeDevTools] von [Cachedaten][MDNCache] verwenden.</span><span class="sxs-lookup"><span data-stu-id="664ce-105">This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to inspect [Cache][MDNCache] data.</span></span>  
 
-<span data-ttu-id="7d370-106">Wenn Sie versuchen, http- [Cache][MDNHTTPCaching] -Daten zu überprüfen, ist dies nicht die gewünschte Richtlinie.</span><span class="sxs-lookup"><span data-stu-id="7d370-106">If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the guide you want.</span></span>  <span data-ttu-id="7d370-107">Suchen Sie in der Spalte **Größe** des **Netzwerkprotokolls**nach den Informationen.</span><span class="sxs-lookup"><span data-stu-id="7d370-107">Look for the information in the **Size** column of the **Network Log**.</span></span>  <span data-ttu-id="7d370-108">Navigieren Sie zur [Protokoll Netzwerkaktivität][DevtoolsNetworkLogActivity].</span><span class="sxs-lookup"><span data-stu-id="7d370-108">Navigate to [Log network activity][DevtoolsNetworkLogActivity].</span></span>  
+<span data-ttu-id="664ce-106">Wenn Sie versuchen, HTTP-Cachedaten [zu][MDNHTTPCaching] überprüfen, ist dies nicht die von Ihnen personenbezogene Anleitung.</span><span class="sxs-lookup"><span data-stu-id="664ce-106">If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the guide you want.</span></span>  <span data-ttu-id="664ce-107">Suchen Sie in der Spalte **Größe** des Netzwerkprotokolls **nach den Informationen.**</span><span class="sxs-lookup"><span data-stu-id="664ce-107">Look for the information in the **Size** column of the **Network Log**.</span></span>  <span data-ttu-id="664ce-108">Navigieren Sie zu [Netzwerkaktivität protokollieren.][DevtoolsNetworkLogActivity]</span><span class="sxs-lookup"><span data-stu-id="664ce-108">Navigate to [Log network activity][DevtoolsNetworkLogActivity].</span></span>  
 
-## <span data-ttu-id="7d370-109">Anzeigen von Cachedaten</span><span class="sxs-lookup"><span data-stu-id="7d370-109">View cache data</span></span>  
+## <a name="view-cache-data"></a><span data-ttu-id="664ce-109">Anzeigen von Cachedaten</span><span class="sxs-lookup"><span data-stu-id="664ce-109">View cache data</span></span>  
 
-1.  <span data-ttu-id="7d370-110">Wählen Sie die Registerkarte **Anwendung** aus, um den **Anwendungs** Panel zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="7d370-110">Select the **Application** tab to open the **Application** panel.</span></span>  <span data-ttu-id="7d370-111">Der Bereich **Manifest** wird normalerweise standardmäßig geöffnet.</span><span class="sxs-lookup"><span data-stu-id="7d370-111">The **Manifest** pane usually opens by default.</span></span>  
+1.  <span data-ttu-id="664ce-110">Wählen Sie die **Registerkarte Anwendung** aus, um den Bereich **Anwendung zu** öffnen.</span><span class="sxs-lookup"><span data-stu-id="664ce-110">Choose the **Application** tab to open the **Application** panel.</span></span>  <span data-ttu-id="664ce-111">Der **Manifestbereich** wird in der Regel standardmäßig geöffnet.</span><span class="sxs-lookup"><span data-stu-id="664ce-111">The **Manifest** pane usually opens by default.</span></span>  
     
-    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="Bereich ' Manifest '" lightbox="../media/storage-application-manifest.msft.png":::
-       <span data-ttu-id="7d370-113">Bereich ' **Manifest** '</span><span class="sxs-lookup"><span data-stu-id="7d370-113">The **Manifest** pane</span></span>  
+    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="Der Manifestbereich" lightbox="../media/storage-application-manifest.msft.png":::
+       <span data-ttu-id="664ce-113">Der **Manifestbereich**</span><span class="sxs-lookup"><span data-stu-id="664ce-113">The **Manifest** pane</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="7d370-114">Erweitern Sie den Abschnitt **Cache Speicher** , um verfügbare Caches anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="7d370-114">Expand the **Cache Storage** section to view available caches.</span></span>  
+1.  <span data-ttu-id="664ce-114">Erweitern Sie den **Abschnitt Cachespeicher,** um verfügbare Caches anzeigen zu können.</span><span class="sxs-lookup"><span data-stu-id="664ce-114">Expand the **Cache Storage** section to view available caches.</span></span>  
     
     :::image type="complex" source="../media/storage-application-cache-storage.msft.png" alt-text="Verfügbare Caches" lightbox="../media/storage-application-cache-storage.msft.png":::
-       <span data-ttu-id="7d370-116">Verfügbare Caches</span><span class="sxs-lookup"><span data-stu-id="7d370-116">Available caches</span></span>  
+       <span data-ttu-id="664ce-116">Verfügbare Caches</span><span class="sxs-lookup"><span data-stu-id="664ce-116">Available caches</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="7d370-117">Wählen Sie einen Cache aus, um den Inhalt anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="7d370-117">Select a cache to view the contents.</span></span>  
+1.  <span data-ttu-id="664ce-117">Wählen Sie einen Cache aus, um den Inhalt anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="664ce-117">Choose a cache to view the contents.</span></span>  
     
     :::image type="complex" source="../media/storage-application-cache-storage-domain-root-headers.msft.png" alt-text="Anzeigen des Inhalts eines Caches" lightbox="../media/storage-application-cache-storage-domain-root-headers.msft.png":::
-       <span data-ttu-id="7d370-119">Anzeigen des Inhalts eines Caches</span><span class="sxs-lookup"><span data-stu-id="7d370-119">View the contents of a cache</span></span>  
+       <span data-ttu-id="664ce-119">Anzeigen des Inhalts eines Caches</span><span class="sxs-lookup"><span data-stu-id="664ce-119">View the contents of a cache</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="7d370-120">Wählen Sie eine Ressource aus, um die HTTP-Header im Abschnitt unterhalb der Tabelle anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="7d370-120">Select a resource to view the HTTP headers in the section below the table.</span></span>  
+1.  <span data-ttu-id="664ce-120">Wählen Sie eine Ressource aus, um die HTTP-Header im Abschnitt unterhalb der Tabelle anzeigen zu können.</span><span class="sxs-lookup"><span data-stu-id="664ce-120">Choose a resource to view the HTTP headers in the section below the table.</span></span>  
     
     :::image type="complex" source="../media/storage-application-cache-storage-index-headers.msft.png" alt-text="Anzeigen der HTTP-Header einer Ressource" lightbox="../media/storage-application-cache-storage-index-headers.msft.png":::
-       <span data-ttu-id="7d370-122">Anzeigen der HTTP-Header einer Ressource</span><span class="sxs-lookup"><span data-stu-id="7d370-122">View the HTTP headers of a resource</span></span>  
+       <span data-ttu-id="664ce-122">Anzeigen der HTTP-Header einer Ressource</span><span class="sxs-lookup"><span data-stu-id="664ce-122">View the HTTP headers of a resource</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="7d370-123">Wählen Sie **Vorschau** aus, um den Inhalt einer Ressource anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="7d370-123">Choose **Preview** to view the content of a resource.</span></span>  
+1.  <span data-ttu-id="664ce-123">Wählen **Sie Vorschau** aus, um den Inhalt einer Ressource anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="664ce-123">Choose **Preview** to view the content of a resource.</span></span>  
     
     :::image type="complex" source="../media/storage-application-cache-storage-domain-js-preview.msft.png" alt-text="Anzeigen des Inhalts einer Ressource" lightbox="../media/storage-application-cache-storage-domain-js-preview.msft.png":::
-       <span data-ttu-id="7d370-125">Anzeigen des Inhalts einer Ressource</span><span class="sxs-lookup"><span data-stu-id="7d370-125">View the content of a resource</span></span>  
+       <span data-ttu-id="664ce-125">Anzeigen des Inhalts einer Ressource</span><span class="sxs-lookup"><span data-stu-id="664ce-125">View the content of a resource</span></span>  
     :::image-end:::  
     
-## <span data-ttu-id="7d370-126">Aktualisieren einer Ressource</span><span class="sxs-lookup"><span data-stu-id="7d370-126">Refresh a resource</span></span>  
+## <a name="refresh-a-resource"></a><span data-ttu-id="664ce-126">Aktualisieren einer Ressource</span><span class="sxs-lookup"><span data-stu-id="664ce-126">Refresh a resource</span></span>  
 
-1.  <span data-ttu-id="7d370-127">[Anzeigen der Daten für einen Cache](#view-cache-data)</span><span class="sxs-lookup"><span data-stu-id="7d370-127">[View the data for a cache](#view-cache-data).</span></span>  
-1.  <span data-ttu-id="7d370-128">Wählen Sie die Ressource aus, die Sie aktualisieren möchten.</span><span class="sxs-lookup"><span data-stu-id="7d370-128">Select the resource that you want to refresh.</span></span>  <span data-ttu-id="7d370-129">DevTools hebt die Markierung hervor, um anzugeben, dass Sie markiert ist.</span><span class="sxs-lookup"><span data-stu-id="7d370-129">DevTools highlights it to indicate that it is selected.</span></span>  
+1.  <span data-ttu-id="664ce-127">[Anzeigen der Daten für einen Cache](#view-cache-data).</span><span class="sxs-lookup"><span data-stu-id="664ce-127">[View the data for a cache](#view-cache-data).</span></span>  
+1.  <span data-ttu-id="664ce-128">Wählen Sie die Ressource aus, die Sie aktualisieren möchten.</span><span class="sxs-lookup"><span data-stu-id="664ce-128">Choose the resource that you want to refresh.</span></span>  <span data-ttu-id="664ce-129">DevTools hebt es hervor, um anzugeben, dass es ausgewählt ist.</span><span class="sxs-lookup"><span data-stu-id="664ce-129">DevTools highlights it to indicate that it is selected.</span></span>  
     
-    :::image type="complex" source="../media/storage-application-cache-storage-domain-refresh.msft.png" alt-text="Auswählen einer zu aktualisierden Ressource" lightbox="../media/storage-application-cache-storage-domain-refresh.msft.png":::
-       <span data-ttu-id="7d370-131">Auswählen einer zu aktualisierden Ressource</span><span class="sxs-lookup"><span data-stu-id="7d370-131">Select a resource to refresh</span></span>  
+    :::image type="complex" source="../media/storage-application-cache-storage-domain-refresh.msft.png" alt-text="Auswählen einer ressource, die aktualisiert werden soll" lightbox="../media/storage-application-cache-storage-domain-refresh.msft.png":::
+       <span data-ttu-id="664ce-131">Auswählen einer ressource, die aktualisiert werden soll</span><span class="sxs-lookup"><span data-stu-id="664ce-131">Choose a resource to refresh</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="7d370-132">Wählen Sie **Aktualisieren** \ ( ![ aktualisieren ][ImageRefreshIcon] \) aus.</span><span class="sxs-lookup"><span data-stu-id="7d370-132">Choose **Refresh** \(![Refresh][ImageRefreshIcon]\).</span></span>  
+1.  <span data-ttu-id="664ce-132">Wählen **Sie Aktualisieren** \( Aktualisieren ![ ][ImageRefreshIcon] \).</span><span class="sxs-lookup"><span data-stu-id="664ce-132">Choose **Refresh** \(![Refresh][ImageRefreshIcon]\).</span></span>  
     
-## <span data-ttu-id="7d370-133">Filtern von Ressourcen</span><span class="sxs-lookup"><span data-stu-id="7d370-133">Filter resources</span></span>  
+## <a name="filter-resources"></a><span data-ttu-id="664ce-133">Filtern von Ressourcen</span><span class="sxs-lookup"><span data-stu-id="664ce-133">Filter resources</span></span>  
 
-1.  <span data-ttu-id="7d370-134">[Anzeigen der Daten für einen Cache](#view-cache-data)</span><span class="sxs-lookup"><span data-stu-id="7d370-134">[View the data for a cache](#view-cache-data).</span></span>  
-1.  <span data-ttu-id="7d370-135">Verwenden Sie das Textfeld nach **Pfad filtern** , um alle Ressourcen zu filtern, die nicht dem von Ihnen bereitgestellten Pfad entsprechen.</span><span class="sxs-lookup"><span data-stu-id="7d370-135">Use the **Filter by Path** text box to filter out any resources that do not match the path that you provide.</span></span>  
+1.  <span data-ttu-id="664ce-134">[Anzeigen der Daten für einen Cache](#view-cache-data).</span><span class="sxs-lookup"><span data-stu-id="664ce-134">[View the data for a cache](#view-cache-data).</span></span>  
+1.  <span data-ttu-id="664ce-135">Verwenden Sie **das Textfeld Nach Pfad** filtern, um Ressourcen herausfiltern, die nicht mit dem von Ihnen zur Verfügung stellten Pfad übereinstimmen.</span><span class="sxs-lookup"><span data-stu-id="664ce-135">Use the **Filter by Path** text box to filter out any resources that do not match the path that you provide.</span></span>  
     
     :::image type="complex" source="../media/storage-application-cache-storage-filter.msft.png" alt-text="Filtern von Ressourcen, die nicht mit dem angegebenen Pfad übereinstimmen" lightbox="../media/storage-application-cache-storage-filter.msft.png":::
-       <span data-ttu-id="7d370-137">Filtern von Ressourcen, die nicht mit dem angegebenen Pfad übereinstimmen</span><span class="sxs-lookup"><span data-stu-id="7d370-137">Filter out resources that do not match the specified path</span></span>  
+       <span data-ttu-id="664ce-137">Filtern von Ressourcen, die nicht mit dem angegebenen Pfad übereinstimmen</span><span class="sxs-lookup"><span data-stu-id="664ce-137">Filter out resources that do not match the specified path</span></span>  
     :::image-end:::  
     
-## <span data-ttu-id="7d370-138">Löschen einer Ressource</span><span class="sxs-lookup"><span data-stu-id="7d370-138">Delete a resource</span></span>  
+## <a name="delete-a-resource"></a><span data-ttu-id="664ce-138">Löschen einer Ressource</span><span class="sxs-lookup"><span data-stu-id="664ce-138">Delete a resource</span></span>  
 
-1.  <span data-ttu-id="7d370-139">[Anzeigen der Daten für einen Cache](#view-cache-data)</span><span class="sxs-lookup"><span data-stu-id="7d370-139">[View the data for a cache](#view-cache-data).</span></span>  
-1.  <span data-ttu-id="7d370-140">Wählen Sie die Ressource aus, die Sie löschen möchten.</span><span class="sxs-lookup"><span data-stu-id="7d370-140">Select the resource that you want to delete.</span></span>  <span data-ttu-id="7d370-141">DevTools hebt die Markierung hervor, um anzugeben, dass Sie markiert ist.</span><span class="sxs-lookup"><span data-stu-id="7d370-141">DevTools highlights it to indicate that it is selected.</span></span>  
+1.  <span data-ttu-id="664ce-139">[Anzeigen der Daten für einen Cache](#view-cache-data).</span><span class="sxs-lookup"><span data-stu-id="664ce-139">[View the data for a cache](#view-cache-data).</span></span>  
+1.  <span data-ttu-id="664ce-140">Wählen Sie die Ressource aus, die Sie löschen möchten.</span><span class="sxs-lookup"><span data-stu-id="664ce-140">Choose the resource that you want to delete.</span></span>  <span data-ttu-id="664ce-141">DevTools hebt es hervor, um anzugeben, dass es ausgewählt ist.</span><span class="sxs-lookup"><span data-stu-id="664ce-141">DevTools highlights it to indicate that it is selected.</span></span>  
     
-    :::image type="complex" source="../media/storage-application-cache-storage-delete-selected.msft.png" alt-text="Auswählen einer zu löschenden Ressource" lightbox="../media/storage-application-cache-storage-delete-selected.msft.png":::
-       <span data-ttu-id="7d370-143">Auswählen einer zu löschenden Ressource</span><span class="sxs-lookup"><span data-stu-id="7d370-143">Select a resource to delete</span></span>  
+    :::image type="complex" source="../media/storage-application-cache-storage-delete-selected.msft.png" alt-text="Auswählen einer zu löschende Ressource" lightbox="../media/storage-application-cache-storage-delete-selected.msft.png":::
+       <span data-ttu-id="664ce-143">Auswählen einer zu löschende Ressource</span><span class="sxs-lookup"><span data-stu-id="664ce-143">Choose a resource to delete</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="7d370-144">Wählen Sie " **Ausgewählte löschen** " aus ![ ][ImageDeleteIcon] .</span><span class="sxs-lookup"><span data-stu-id="7d370-144">Choose **Delete Selected** \(![Delete Selected][ImageDeleteIcon]\).</span></span>  
+1.  <span data-ttu-id="664ce-144">Wählen **Sie Ausgewählte \(** ![ Ausgewähltes Löschen ][ImageDeleteIcon] \) löschen aus.</span><span class="sxs-lookup"><span data-stu-id="664ce-144">Choose **Delete Selected** \(![Delete Selected][ImageDeleteIcon]\).</span></span>  
     
-## <span data-ttu-id="7d370-145">Löschen aller Cachedaten</span><span class="sxs-lookup"><span data-stu-id="7d370-145">Delete all cache data</span></span>  
+## <a name="delete-all-cache-data"></a><span data-ttu-id="664ce-145">Löschen aller Cachedaten</span><span class="sxs-lookup"><span data-stu-id="664ce-145">Delete all cache data</span></span>  
 
-1.  <span data-ttu-id="7d370-146">Öffnen Sie die **Anwendung**  >  **Clear Storage**.</span><span class="sxs-lookup"><span data-stu-id="7d370-146">Open **Application** > **Clear Storage**.</span></span>  
-1.  <span data-ttu-id="7d370-147">Stellen Sie sicher, dass das Kontrollkästchen **Cache Speicher** aktiviert ist.</span><span class="sxs-lookup"><span data-stu-id="7d370-147">Make sure that the **Cache Storage** checkbox is enabled.</span></span>  
+1.  <span data-ttu-id="664ce-146">Öffnen **Sie Application**Clear  >  **Storage**.</span><span class="sxs-lookup"><span data-stu-id="664ce-146">Open **Application** > **Clear Storage**.</span></span>  
+1.  <span data-ttu-id="664ce-147">Stellen Sie sicher, dass **das Kontrollkästchen Cachespeicher** aktiviert ist.</span><span class="sxs-lookup"><span data-stu-id="664ce-147">Make sure that the **Cache Storage** checkbox is enabled.</span></span>  
     
-    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png" alt-text="Das Kontrollkästchen "Cache Speicher"" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png":::
-       <span data-ttu-id="7d370-149">Das Kontrollkästchen " **Cache Speicher** "</span><span class="sxs-lookup"><span data-stu-id="7d370-149">The **Cache Storage** checkbox</span></span>  
+    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png" alt-text="Das Kontrollkästchen Speicher zwischenspeichern" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png":::
+       <span data-ttu-id="664ce-149">Das **Kontrollkästchen Speicher zwischenspeichern**</span><span class="sxs-lookup"><span data-stu-id="664ce-149">The **Cache Storage** checkbox</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="7d370-150">Wählen Sie **Website Daten löschen**aus.</span><span class="sxs-lookup"><span data-stu-id="7d370-150">Choose **Clear site data**.</span></span>  
+1.  <span data-ttu-id="664ce-150">Wählen **Sie Websitedaten löschen aus.**</span><span class="sxs-lookup"><span data-stu-id="664ce-150">Choose **Clear site data**.</span></span>  
     
-    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png" alt-text="Schaltfläche "Website Daten löschen"" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png":::
-       <span data-ttu-id="7d370-152">Schaltfläche " **Website Daten löschen** "</span><span class="sxs-lookup"><span data-stu-id="7d370-152">The **Clear Site Data** button</span></span>  
+    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png" alt-text="Die Schaltfläche Websitedaten löschen" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png":::
+       <span data-ttu-id="664ce-152">Die **Schaltfläche Websitedaten** löschen</span><span class="sxs-lookup"><span data-stu-id="664ce-152">The **Clear Site Data** button</span></span>  
     :::image-end:::  
     
-## <span data-ttu-id="7d370-153">Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen</span><span class="sxs-lookup"><span data-stu-id="7d370-153">Getting in touch with the Microsoft Edge DevTools team</span></span>  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a><span data-ttu-id="664ce-153">Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen</span><span class="sxs-lookup"><span data-stu-id="664ce-153">Getting in touch with the Microsoft Edge DevTools team</span></span>  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -123,18 +123,18 @@ ms.locfileid: "11230803"
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chrom)-Entwicklertools | Microsoft docs"  
-[DevtoolsNetworkLogActivity]: ../network/index.md#log-network-activity  "Protokoll Netzwerkaktivität | Microsoft docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Entwicklertools | Microsoft Docs"  
+[DevtoolsNetworkLogActivity]: ../network/index.md#log-network-activity  "Protokollieren von Netzwerkaktivitäts| Microsoft Docs"  
 
 [MDNCache]: https://developer.mozilla.org/docs/Web/API/Cache "Cache | MDN"  
-[MDNHTTPCaching]: https://developer.mozilla.org/docs/Web/HTTP/Caching "HTTP-Caching | MDN"  
+[MDNHTTPCaching]: https://developer.mozilla.org/docs/Web/HTTP/Caching "HTTP-Zwischenspeicherung | MDN"  
 
 > [!NOTE]
-> <span data-ttu-id="7d370-158">Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="7d370-158">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="7d370-159">Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/storage/cache) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.</span><span class="sxs-lookup"><span data-stu-id="7d370-159">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/storage/cache) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
+> <span data-ttu-id="664ce-158">Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="664ce-158">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="664ce-159">Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/storage/cache) und wird von [Kayce Basken][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) verfasst.</span><span class="sxs-lookup"><span data-stu-id="664ce-159">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/storage/cache) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-<span data-ttu-id="7d370-161">Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="7d370-161">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+<span data-ttu-id="664ce-161">Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="664ce-161">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

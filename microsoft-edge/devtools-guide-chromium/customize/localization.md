@@ -1,69 +1,70 @@
 ---
-title: Ändern der devtools-Spracheinstellungen
+description: Ändern der DevTools-Spracheinstellungen.
+title: Ändern der DevTools-Spracheinstellungen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Web-Entwicklung, F12-Tools, devtools, Lokalisierung, Loc, Sprache
-ms.openlocfilehash: 83b536c1699b4052857d206456895ac568cf4faa
-ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
+keywords: microsoft edge, web development, f12 tools, devtools, localization, loc, language
+ms.openlocfilehash: 14975c8b1807565eb45c38cbc9e6a6049171bb95
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "10882723"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398990"
 ---
-# <span data-ttu-id="5072d-103">Ändern der devtools-Spracheinstellungen</span><span class="sxs-lookup"><span data-stu-id="5072d-103">Change DevTools language settings</span></span>  
+# <a name="change-devtools-language-settings"></a><span data-ttu-id="bd8fb-104">Ändern der DevTools-Spracheinstellungen</span><span class="sxs-lookup"><span data-stu-id="bd8fb-104">Change DevTools language settings</span></span>  
 
-<span data-ttu-id="5072d-104">Ihre Entwickler Tools entsprechen standardmäßig ihrer Browsersprache, wenn es sich um eine der zehn derzeit unterstützten Sprachen handelt (zusätzlich zu Englisch \).</span><span class="sxs-lookup"><span data-stu-id="5072d-104">Your Developer Tools matches your browser language by default, if it is one of the ten languages currently supported \(in addition to English\).</span></span>  
+<span data-ttu-id="bd8fb-105">Ihre Entwicklertools entspricht standardmäßig Ihrer Browsersprache, wenn es sich um eine der derzeit unterstützten zehn Sprachen handelt \(zusätzlich zu Englisch\).</span><span class="sxs-lookup"><span data-stu-id="bd8fb-105">Your Developer Tools matches your browser language by default, if it is one of the ten languages currently supported \(in addition to English\).</span></span>  
 
 :::row:::
    :::column span="":::
-      <span data-ttu-id="5072d-105">Chinesisch (vereinfacht \) –  &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;</span><span class="sxs-lookup"><span data-stu-id="5072d-105">Chinese \(Simplified\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;</span></span>  
+      <span data-ttu-id="bd8fb-106">Chinesisch \(Vereinfacht\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;</span><span class="sxs-lookup"><span data-stu-id="bd8fb-106">Chinese \(Simplified\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;</span></span>  
    :::column-end:::
    :::column span="":::
-      <span data-ttu-id="5072d-106">Chinesisch (traditionell \) –  &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;</span><span class="sxs-lookup"><span data-stu-id="5072d-106">Chinese \(Traditional\) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;</span></span>  
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      <span data-ttu-id="5072d-107">Französisch – Fran&#231;AIS</span><span class="sxs-lookup"><span data-stu-id="5072d-107">French – fran&#231;ais</span></span>  
-   :::column-end:::
-   :::column span="":::
-      <span data-ttu-id="5072d-108">Deutsch-Deutsch</span><span class="sxs-lookup"><span data-stu-id="5072d-108">German - deutsch</span></span>  
+      <span data-ttu-id="bd8fb-107">Chinesisch \(Traditionell\) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;</span><span class="sxs-lookup"><span data-stu-id="bd8fb-107">Chinese \(Traditional\) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;</span></span>  
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      <span data-ttu-id="5072d-109">Italienisch-Italiano</span><span class="sxs-lookup"><span data-stu-id="5072d-109">Italian - italiano</span></span>  
+      <span data-ttu-id="bd8fb-108">Französisch – fran&#231;ais</span><span class="sxs-lookup"><span data-stu-id="bd8fb-108">French – fran&#231;ais</span></span>  
    :::column-end:::
    :::column span="":::
-      <span data-ttu-id="5072d-110">Japanisch –  &#26085;&#26412;&#35486;</span><span class="sxs-lookup"><span data-stu-id="5072d-110">Japanese - &#26085;&#26412;&#35486;</span></span>  
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      <span data-ttu-id="5072d-111">Koreanisch –  &#54620;&#44397;&#50612;</span><span class="sxs-lookup"><span data-stu-id="5072d-111">Korean - &#54620;&#44397;&#50612;</span></span>  
-   :::column-end:::
-   :::column span="":::
-      <span data-ttu-id="5072d-112">Portugiesisch-Portugu&#234;s</span><span class="sxs-lookup"><span data-stu-id="5072d-112">Portuguese - portugu&#234;s</span></span>  
+      <span data-ttu-id="bd8fb-109">Deutsch – deutsch</span><span class="sxs-lookup"><span data-stu-id="bd8fb-109">German - deutsch</span></span>  
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      <span data-ttu-id="5072d-113">Russisch –  &#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</span><span class="sxs-lookup"><span data-stu-id="5072d-113">Russian – &#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</span></span>  
+      <span data-ttu-id="bd8fb-110">Italienisch - italiano</span><span class="sxs-lookup"><span data-stu-id="bd8fb-110">Italian - italiano</span></span>  
    :::column-end:::
    :::column span="":::
-      <span data-ttu-id="5072d-114">Spanisch-ESPA&#241;OL</span><span class="sxs-lookup"><span data-stu-id="5072d-114">Spanish - espa&#241;ol</span></span>  
+      <span data-ttu-id="bd8fb-111">Japanisch - &#26085;&#26412;&#35486;</span><span class="sxs-lookup"><span data-stu-id="bd8fb-111">Japanese - &#26085;&#26412;&#35486;</span></span>  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      <span data-ttu-id="bd8fb-112">Koreanisch - &#54620;&#44397;&#50612;</span><span class="sxs-lookup"><span data-stu-id="bd8fb-112">Korean - &#54620;&#44397;&#50612;</span></span>  
+   :::column-end:::
+   :::column span="":::
+      <span data-ttu-id="bd8fb-113">Portugiesisch – portugu&#234;s</span><span class="sxs-lookup"><span data-stu-id="bd8fb-113">Portuguese - portugu&#234;s</span></span>  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      <span data-ttu-id="bd8fb-114">Russisch – &#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</span><span class="sxs-lookup"><span data-stu-id="bd8fb-114">Russian – &#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</span></span>  
+   :::column-end:::
+   :::column span="":::
+      <span data-ttu-id="bd8fb-115">Spanisch – espa&#241;ol</span><span class="sxs-lookup"><span data-stu-id="bd8fb-115">Spanish - espa&#241;ol</span></span>  
    :::column-end:::
 :::row-end:::  
 
-:::image type="complex" source="./media/localization-jp.png" alt-text="DevTools in Japanisch" lightbox="./media/localization-jp.png":::
-   <span data-ttu-id="5072d-116">DevTools in Japanisch</span><span class="sxs-lookup"><span data-stu-id="5072d-116">DevTools in Japanese</span></span>  
+:::image type="complex" source="../media/localization-jp.msft.png" alt-text="DevTools auf Japanisch" lightbox="../media/localization-jp.msft.png":::
+   <span data-ttu-id="bd8fb-117">DevTools auf Japanisch</span><span class="sxs-lookup"><span data-stu-id="bd8fb-117">DevTools in Japanese</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="5072d-117">Wenn Sie devtools auf Englisch zurücksetzen möchten, wechseln Sie zu [devtools-Einstellungen][DevtoolschromiumCustomizeIndexSettings] , oder drücken Sie `F1`  >  **Einstellungen** , und deaktivieren Sie das Kontrollkästchen **Browsersprache vergleichen** .</span><span class="sxs-lookup"><span data-stu-id="5072d-117">If you want to revert DevTools to English, go to [DevTools Settings][DevtoolschromiumCustomizeIndexSettings] or press `F1` > **Preferences** and deselect the **Match browser language** checkbox.</span></span>  
+<span data-ttu-id="bd8fb-118">Wenn Sie DevTools auf Englisch zurücksetzen möchten, navigieren Sie zu [DevTools-Einstellungen,][DevtoolsCustomizeIndexSettings] oder wählen Sie Einstellungen aus, und deaktivieren Sie das Kontrollkästchen `F1` \*\*\*\* **Browsersprache** übereinstimmen.</span><span class="sxs-lookup"><span data-stu-id="bd8fb-118">If you want to revert DevTools to English, navigate to [DevTools Settings][DevtoolsCustomizeIndexSettings] or select `F1`, choose **Preferences**, and turn off the **Match browser language** checkbox.</span></span>  
 
 <!-- links -->  
 
-[DevtoolschromiumCustomizeIndexSettings]: ./index.md#settings "Einstellungen – anpassen von Microsoft Edge devtools | Microsoft docs"  
+[DevtoolsCustomizeIndexSettings]: ./index.md#settings "Einstellungen – Anpassen von Microsoft Edge DevTools | Microsoft Docs"  

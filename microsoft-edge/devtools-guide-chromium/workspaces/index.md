@@ -1,18 +1,18 @@
 ---
-description: Erfahren Sie, wie Sie Änderungen speichern können, die in devtools auf dem Datenträger vorgenommen wurden.
+description: Erfahren Sie, wie Sie In DevTools vorgenommene Änderungen auf dem Datenträger speichern.
 title: Bearbeiten von Dateien mit Arbeitsbereichen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 496bbbb34cdf900d36aa7ebfbf79ad63cdf3e6e7
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
+ms.openlocfilehash: 17f9ced15dbacd62c9ffe40e4af889925a8155fb
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125349"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399246"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,62 +28,62 @@ ms.locfileid: "11125349"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# <span data-ttu-id="034fd-104">Bearbeiten von Dateien mit Arbeitsbereichen</span><span class="sxs-lookup"><span data-stu-id="034fd-104">Edit files with Workspaces</span></span>  
+# <a name="edit-files-with-workspaces"></a><span data-ttu-id="5272b-104">Bearbeiten von Dateien mit Arbeitsbereichen</span><span class="sxs-lookup"><span data-stu-id="5272b-104">Edit files with Workspaces</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="034fd-105">Das Ziel dieses Lernprogramms ist es, praktische Übungen beim Einrichten und Verwenden von Arbeitsbereichen bereitzustellen, damit Sie Arbeitsbereiche in ihren eigenen Projekten verwenden können.</span><span class="sxs-lookup"><span data-stu-id="034fd-105">The goal of this tutorial is to provide hands-on practice in setting up and using Workspaces, so that you are able to use Workspaces in your own projects.</span></span>  <span data-ttu-id="034fd-106">Sie können die Änderungen am Quellcode auf dem lokalen Computer, den Sie in devtools vorgenommen haben, nach dem Aktivieren von Arbeitsbereichen speichern.</span><span class="sxs-lookup"><span data-stu-id="034fd-106">You are able to save the changes to the source code, on your local computer, that you made within DevTools after you enable Workspaces.</span></span>  
+> <span data-ttu-id="5272b-105">Ziel dieses Lernprogramms ist es, praktische Übungen zum Einrichten und Verwenden von Arbeitsbereichen zu bieten, damit Sie Arbeitsbereiche in Ihren eigenen Projekten verwenden können.</span><span class="sxs-lookup"><span data-stu-id="5272b-105">The goal of this tutorial is to provide hands-on practice in setting up and using Workspaces, so that you are able to use Workspaces in your own projects.</span></span>  <span data-ttu-id="5272b-106">Sie können die Änderungen am Quellcode auf Ihrem lokalen Computer speichern, die Sie in DevTools vorgenommen haben, nachdem Sie Arbeitsbereiche aktiviert haben.</span><span class="sxs-lookup"><span data-stu-id="5272b-106">You are able to save the changes to the source code, on your local computer, that you made within DevTools after you enable Workspaces.</span></span>  
 
 > [!IMPORTANT]
-> <span data-ttu-id="034fd-107">**Voraussetzungen**: bevor Sie dieses Lernprogramm starten, sollten Sie wissen, wie die folgenden Aktionen ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="034fd-107">**Prerequisites**: Before beginning this tutorial, you should know how to perform the following actions.</span></span>  
+> <span data-ttu-id="5272b-107">**Voraussetzungen**: Bevor Sie mit diesem Lernprogramm beginnen, sollten Sie wissen, wie Sie die folgenden Aktionen ausführen.</span><span class="sxs-lookup"><span data-stu-id="5272b-107">**Prerequisites**: Before beginning this tutorial, you should know how to perform the following actions.</span></span>  
 > 
-> *   [<span data-ttu-id="034fd-108">Verwenden von HTML, CSS und JavaScript zum Erstellen einer Webseite</span><span class="sxs-lookup"><span data-stu-id="034fd-108">Use html, CSS, and JavaScript to build a web page</span></span>][MDNWebGettingStarted]  
-> *   [<span data-ttu-id="034fd-109">Verwenden von devtools zum vornehmen grundlegender Änderungen an CSS</span><span class="sxs-lookup"><span data-stu-id="034fd-109">Use DevTools to make basic changes to CSS</span></span>][DevToolsCssIndex]  
-> *   [<span data-ttu-id="034fd-110">Ausführen eines lokalen http-Webservers</span><span class="sxs-lookup"><span data-stu-id="034fd-110">Run a local HTTP web server</span></span>][MDNSimpleLocalHTTPServer]  
+> *   [<span data-ttu-id="5272b-108">Erstellen einer Webseite mithilfe von HTML, CSS und JavaScript</span><span class="sxs-lookup"><span data-stu-id="5272b-108">Use html, CSS, and JavaScript to build a web page</span></span>][MDNWebGettingStarted]  
+> *   [<span data-ttu-id="5272b-109">Verwenden von DevTools zum Vornehmen grundlegender Änderungen an CSS</span><span class="sxs-lookup"><span data-stu-id="5272b-109">Use DevTools to make basic changes to CSS</span></span>][DevToolsCssIndex]  
+> *   [<span data-ttu-id="5272b-110">Ausführen eines lokalen HTTP-Webservers</span><span class="sxs-lookup"><span data-stu-id="5272b-110">Run a local HTTP web server</span></span>][MDNSimpleLocalHTTPServer]  
 
-## <span data-ttu-id="034fd-111">Übersicht</span><span class="sxs-lookup"><span data-stu-id="034fd-111">Overview</span></span>  
+## <a name="overview"></a><span data-ttu-id="5272b-111">Übersicht</span><span class="sxs-lookup"><span data-stu-id="5272b-111">Overview</span></span>  
 
-<span data-ttu-id="034fd-112">Mit Arbeitsbereichen können Sie eine in devtools vorgenommene Änderung auf eine lokale Kopie der gleichen Datei auf Ihrem Computer speichern.</span><span class="sxs-lookup"><span data-stu-id="034fd-112">Workspaces enable you to save a change that you make in Devtools to a local copy of the same file on your computer.</span></span>  <span data-ttu-id="034fd-113">In diesem Lernprogramm sollten Sie über die folgenden Einstellungen auf Ihrem Computer verfügen.</span><span class="sxs-lookup"><span data-stu-id="034fd-113">For this tutorial, you should have the following settings on your machine.</span></span>  
+<span data-ttu-id="5272b-112">Mit Arbeitsbereichen können Sie eine Änderung, die Sie in Devtools in einer lokalen Kopie derselben Datei auf Ihrem Computer erstellen, speichern.</span><span class="sxs-lookup"><span data-stu-id="5272b-112">Workspaces enable you to save a change that you make in Devtools to a local copy of the same file on your computer.</span></span>  <span data-ttu-id="5272b-113">Für dieses Lernprogramm sollten Sie die folgenden Einstellungen auf Ihrem Computer haben.</span><span class="sxs-lookup"><span data-stu-id="5272b-113">For this tutorial, you should have the following settings on your machine.</span></span>  
 
-*   <span data-ttu-id="034fd-114">Sie haben den Quellcode für Ihre Website auf dem Desktop.</span><span class="sxs-lookup"><span data-stu-id="034fd-114">You have the source code for your site on your desktop.</span></span>  
-*   <span data-ttu-id="034fd-115">Sie führen einen lokalen Webserver aus dem Quellcodeverzeichnis aus, damit auf die Website zugegriffen werden kann `localhost:8080` .</span><span class="sxs-lookup"><span data-stu-id="034fd-115">You are running a local web server from the source code directory, so that the site is accessible at `localhost:8080`.</span></span>  
-*   <span data-ttu-id="034fd-116">Sie `localhost:8080` haben in Microsoft Edge geöffnet, und Sie verwenden devtools, um das CSS der Website zu ändern.</span><span class="sxs-lookup"><span data-stu-id="034fd-116">You opened `localhost:8080` in Microsoft Edge, and you are using DevTools to change the CSS of the site.</span></span>  
+*   <span data-ttu-id="5272b-114">Sie haben den Quellcode für Ihre Website auf Ihrem Desktop.</span><span class="sxs-lookup"><span data-stu-id="5272b-114">You have the source code for your site on your desktop.</span></span>  
+*   <span data-ttu-id="5272b-115">Sie ausführen einen lokalen Webserver aus dem Quellcodeverzeichnis, sodass auf die Website unter zugegriffen werden `localhost:8080` kann.</span><span class="sxs-lookup"><span data-stu-id="5272b-115">You are running a local web server from the source code directory, so that the site is accessible at `localhost:8080`.</span></span>  
+*   <span data-ttu-id="5272b-116">Sie haben in Microsoft Edge geöffnet und verwenden `localhost:8080` DevTools, um die CSS der Website zu ändern.</span><span class="sxs-lookup"><span data-stu-id="5272b-116">You opened `localhost:8080` in Microsoft Edge, and you are using DevTools to change the CSS of the site.</span></span>  
 
-<span data-ttu-id="034fd-117">Wenn Arbeitsbereiche aktiviert sind, werden die CSS-Änderungen, die Sie in devtools vornehmen, im Quellcode auf dem Desktop gespeichert.</span><span class="sxs-lookup"><span data-stu-id="034fd-117">With Workspaces enabled, the CSS changes that you make within DevTools are saved to the source code on your desktop.</span></span>  
+<span data-ttu-id="5272b-117">Wenn Arbeitsbereiche aktiviert sind, werden die CSS-Änderungen, die Sie in DevTools vornehmen, im Quellcode auf Ihrem Desktop gespeichert.</span><span class="sxs-lookup"><span data-stu-id="5272b-117">With Workspaces enabled, the CSS changes that you make within DevTools are saved to the source code on your desktop.</span></span>  
 
-## <span data-ttu-id="034fd-118">Einschränkungen</span><span class="sxs-lookup"><span data-stu-id="034fd-118">Limitations</span></span>  
+## <a name="limitations"></a><span data-ttu-id="5272b-118">Einschränkungen</span><span class="sxs-lookup"><span data-stu-id="5272b-118">Limitations</span></span>  
 
-<span data-ttu-id="034fd-119">Wenn Sie ein modernes Framework verwenden, wird der Quellcode wahrscheinlich aus einem Format umgewandelt, das in einem für die Ausführung so schnell wie möglich optimierten Format verwaltet werden kann.</span><span class="sxs-lookup"><span data-stu-id="034fd-119">If you are using a modern framework, it probably transforms your source code from a format that is easy to maintain into a format that is optimized to run as quickly as possible.</span></span>  
+<span data-ttu-id="5272b-119">Wenn Sie ein modernes Framework verwenden, wird der Quellcode wahrscheinlich von einem Format transformiert, das einfach zu verwalten ist, in ein Format, das so optimiert ist, dass er so schnell wie möglich ausgeführt werden kann.</span><span class="sxs-lookup"><span data-stu-id="5272b-119">If you are using a modern framework, it probably transforms your source code from a format that is easy to maintain into a format that is optimized to run as quickly as possible.</span></span>  
 
-<span data-ttu-id="034fd-120">Arbeitsbereiche können den optimierten Code normalerweise mit Hilfe von [Quell Karten][TreehouseBlogSourceMaps]Ihrem ursprünglichen Quellcode wieder zuordnen.</span><span class="sxs-lookup"><span data-stu-id="034fd-120">Workspaces is usually able to map the optimized code back to your original source code with the help of [source maps][TreehouseBlogSourceMaps].</span></span>  <span data-ttu-id="034fd-121">Es gibt jedoch viele Unterschiede zwischen Frameworks darüber, wie die einzelnen Quell Karten verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="034fd-121">But there is a lot of variation between frameworks over how each uses source maps.</span></span>  <span data-ttu-id="034fd-122">Devtools unterstützt einfach alle Variationen.</span><span class="sxs-lookup"><span data-stu-id="034fd-122">Devtools simply does support all of the variations.</span></span>  
+<span data-ttu-id="5272b-120">Workspaces ist in der Regel in der Lage, den optimierten Code mithilfe von Quellzuordnungen wieder dem ursprünglichen [Quellcode zu zuordnungen.][TreehouseBlogSourceMaps]</span><span class="sxs-lookup"><span data-stu-id="5272b-120">Workspaces is usually able to map the optimized code back to your original source code with the help of [source maps][TreehouseBlogSourceMaps].</span></span>  <span data-ttu-id="5272b-121">Es gibt jedoch viele Unterschiede zwischen Frameworks darüber, wie die einzelnen Quellzuordnungen verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="5272b-121">But there is a lot of variation between frameworks over how each uses source maps.</span></span>  <span data-ttu-id="5272b-122">Devtools unterstützt einfach alle Variationen.</span><span class="sxs-lookup"><span data-stu-id="5272b-122">Devtools simply does support all of the variations.</span></span>  
 
-<span data-ttu-id="034fd-123">Arbeitsbereiche funktionieren bekanntermaßen nicht mit dem folgenden Framework.</span><span class="sxs-lookup"><span data-stu-id="034fd-123">Workspaces is known to not work with the following framework.</span></span>  
+<span data-ttu-id="5272b-123">Arbeitsbereiche funktionieren mit dem folgenden Framework nicht.</span><span class="sxs-lookup"><span data-stu-id="5272b-123">Workspaces is known to not work with the following framework.</span></span>  
 
-*   <span data-ttu-id="034fd-124">Erstellen einer Reaktions-App</span><span class="sxs-lookup"><span data-stu-id="034fd-124">Create React App</span></span>  
+*   <span data-ttu-id="5272b-124">Erstellen von React App</span><span class="sxs-lookup"><span data-stu-id="5272b-124">Create React App</span></span>  
 
     <!-- If you run into issues while using Workspaces with your framework of choice, or you get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->  
     
-## <span data-ttu-id="034fd-125">Verwandtes Feature: lokale Überschreibungen</span><span class="sxs-lookup"><span data-stu-id="034fd-125">Related feature: Local overrides</span></span>  
+## <a name="related-feature-local-overrides"></a><span data-ttu-id="5272b-125">Verwandtes Feature: Lokale Außerkraftsetzungen</span><span class="sxs-lookup"><span data-stu-id="5272b-125">Related feature: Local overrides</span></span>  
 
-<span data-ttu-id="034fd-126">**Lokale Außerkraftsetzungen** ist ein weiteres devtools-Feature, das mit Arbeitsbereichen vergleichbar ist.</span><span class="sxs-lookup"><span data-stu-id="034fd-126">**Local Overrides** is another DevTools feature that is similar to Workspaces.</span></span>  <span data-ttu-id="034fd-127">Verwenden Sie lokale Außerkraftsetzungen, wenn Sie mit Änderungen an einer Seite experimentieren möchten, und Sie müssen die Änderungen über die Seitenlasten hinweg anzeigen, aber es ist Ihnen nicht wichtig, Ihre Änderungen dem Quellcode der Seite zuzuordnen.</span><span class="sxs-lookup"><span data-stu-id="034fd-127">Use Local Overrides when you want to experiment with changes to a page, and you need to see the changes across page loads, but you do not care about mapping your changes to the source code of the page.</span></span>  
+<span data-ttu-id="5272b-126">**Lokale Außerkraftsetzungen** ist ein weiteres DevTools-Feature, das Arbeitsbereichen ähnelt.</span><span class="sxs-lookup"><span data-stu-id="5272b-126">**Local Overrides** is another DevTools feature that is similar to Workspaces.</span></span>  <span data-ttu-id="5272b-127">Verwenden Sie lokale Außerkraftsetzungen, wenn Sie mit Änderungen an einer Webseite experimentieren möchten, und Sie müssen die Änderungen über alle Webseitenlasten hinweg anzeigen. Es ist ihnen jedoch nicht egal, ob Sie Ihre Änderungen dem Quellcode der Webseite zuordnen möchten.</span><span class="sxs-lookup"><span data-stu-id="5272b-127">Use Local Overrides when you want to experiment with changes to a webpage, and you need to display the changes across webpage loads, but you do not care about mapping your changes to the source code of the webpage.</span></span>  
 
 <!--Todo: add section when content is ready  -->  
 
-## <span data-ttu-id="034fd-128">Schritt 1: Einrichten</span><span class="sxs-lookup"><span data-stu-id="034fd-128">Step 1: Set up</span></span>  
+## <a name="step-1-set-up"></a><span data-ttu-id="5272b-128">Schritt 1: Einrichten</span><span class="sxs-lookup"><span data-stu-id="5272b-128">Step 1: Set up</span></span>  
 
-<span data-ttu-id="034fd-129">Führen Sie die folgenden Aktionen aus, um praktische Erfahrungen mit Arbeitsbereichen zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="034fd-129">Complete the following actions, to get hands-on experience with Workspaces.</span></span>  
+<span data-ttu-id="5272b-129">Führen Sie die folgenden Aktionen aus, um praktische Erfahrungen mit Arbeitsbereichen zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="5272b-129">Complete the following actions, to get hands-on experience with Workspaces.</span></span>  
 
-### <span data-ttu-id="034fd-130">Einrichten der Demo</span><span class="sxs-lookup"><span data-stu-id="034fd-130">Set up the demo</span></span>  
+### <a name="set-up-the-demo"></a><span data-ttu-id="5272b-130">Einrichten der Demo</span><span class="sxs-lookup"><span data-stu-id="5272b-130">Set up the demo</span></span>  
 
-1.  <span data-ttu-id="034fd-131">[Öffnen Sie die Demo][GlitchWorkspacesDemo].</span><span class="sxs-lookup"><span data-stu-id="034fd-131">[Open the demo][GlitchWorkspacesDemo].</span></span>  <!--In the top-left of the editor, a randomly-generated project name is displayed.  -->  
+1.  <span data-ttu-id="5272b-131">[Öffnen Sie die Demo][GlitchWorkspacesDemo].</span><span class="sxs-lookup"><span data-stu-id="5272b-131">[Open the demo][GlitchWorkspacesDemo].</span></span>  <!--In the top-left of the editor, a randomly-generated project name is displayed.  -->  
     
-    :::image type="complex" source="../media/workspaces-glitch-workspaces-demo-source.msft.png" alt-text="Ein glitch-Projekt" lightbox="../media/workspaces-glitch-workspaces-demo-source.msft.png":::
-       <span data-ttu-id="034fd-133">Ein glitch-Projekt</span><span class="sxs-lookup"><span data-stu-id="034fd-133">A Glitch project</span></span>  
+    :::image type="complex" source="../media/workspaces-glitch-workspaces-demo-source.msft.png" alt-text="Ein Glitch-Projekt" lightbox="../media/workspaces-glitch-workspaces-demo-source.msft.png":::
+       <span data-ttu-id="5272b-133">Ein Glitch-Projekt</span><span class="sxs-lookup"><span data-stu-id="5272b-133">A Glitch project</span></span>  
     :::image-end:::  
     
     <!--1.  Choose the project name.  -->  
     <!--1.  Choose **Advanced Options** > **Download Project**.  
     
-    :::image type="complex" source="../media/workspaces-glitch-advanced-options-download-project.msft.png" alt-text="Ein glitch-Projekt" lightbox="../media/workspaces-glitch-advanced-options-download-project.msft.png":::
+    :::image type="complex" source="../media/workspaces-glitch-advanced-options-download-project.msft.png" alt-text="The Download Project button" lightbox="../media/workspaces-glitch-advanced-options-download-project.msft.png":::
        The Download Project button  
     :::image-end:::  
 
@@ -91,8 +91,8 @@ ms.locfileid: "11125349"
     <!--1.  Close the tab.  -->  
     <!--1.  Unzip the source code and move the unzipped `app` directory to your desktop.  For the rest of this tutorial the unzipped directory is referred to as `~/Desktop/app`.  -->  
     
-1.  <span data-ttu-id="034fd-134">Erstellen `app` Sie ein Verzeichnis auf dem Desktop.</span><span class="sxs-lookup"><span data-stu-id="034fd-134">Create an `app` directory on your desktop.</span></span>  <span data-ttu-id="034fd-135">Speichern Sie Kopien der Dateien aus dem `workspaces-demo` Verzeichnis im `app` Verzeichnis.</span><span class="sxs-lookup"><span data-stu-id="034fd-135">Save copies of the files from the `workspaces-demo` directory to the `app` directory.</span></span>  <span data-ttu-id="034fd-136">Für den restlichen Teil des Lernprogramms wird das Verzeichnis als bezeichnet `~/Desktop/app` .</span><span class="sxs-lookup"><span data-stu-id="034fd-136">For the rest of the tutorial, the directory is referred to as `~/Desktop/app`.</span></span>  
-1.  <span data-ttu-id="034fd-137">Starten Sie einen lokalen Webserver in `~/Desktop/app` .</span><span class="sxs-lookup"><span data-stu-id="034fd-137">Start a local web server in `~/Desktop/app`.</span></span>  <span data-ttu-id="034fd-138">Nachfolgend finden Sie einige Beispielcodes zum Starten `SimpleHTTPServer` , aber Sie können den von Ihnen bevorzugten Server verwenden.</span><span class="sxs-lookup"><span data-stu-id="034fd-138">Below is some sample code for starting up `SimpleHTTPServer`, but you may use whatever server you prefer.</span></span>  
+1.  <span data-ttu-id="5272b-134">Erstellen Sie `app` ein Verzeichnis auf Ihrem Desktop.</span><span class="sxs-lookup"><span data-stu-id="5272b-134">Create an `app` directory on your desktop.</span></span>  <span data-ttu-id="5272b-135">Speichern Sie Kopien der Dateien aus dem `workspaces-demo` Verzeichnis in das `app` Verzeichnis.</span><span class="sxs-lookup"><span data-stu-id="5272b-135">Save copies of the files from the `workspaces-demo` directory to the `app` directory.</span></span>  <span data-ttu-id="5272b-136">Für den Rest des Lernprogramms wird das Verzeichnis als `~/Desktop/app` bezeichnet.</span><span class="sxs-lookup"><span data-stu-id="5272b-136">For the rest of the tutorial, the directory is referred to as `~/Desktop/app`.</span></span>  
+1.  <span data-ttu-id="5272b-137">Starten Eines lokalen Webservers in `~/Desktop/app` .</span><span class="sxs-lookup"><span data-stu-id="5272b-137">Start a local web server in `~/Desktop/app`.</span></span>  <span data-ttu-id="5272b-138">Im Folgenden finden Sie einige Beispielcode zum Starten, aber Sie können den von Ihnen `SimpleHTTPServer` bevorzugten Server verwenden.</span><span class="sxs-lookup"><span data-stu-id="5272b-138">Below is some sample code for starting up `SimpleHTTPServer`, but you may use whatever server you prefer.</span></span>  
     
     :::row:::
        :::column span="":::
@@ -109,76 +109,76 @@ ms.locfileid: "11125349"
        :::column-end:::
     :::row-end:::  
     
-1.  <span data-ttu-id="034fd-139">Öffnen Sie eine Registerkarte in Microsoft Edge, und wechseln Sie zu der lokal gehosteten Version der Website.</span><span class="sxs-lookup"><span data-stu-id="034fd-139">Open a tab in Microsoft Edge and go to locally-hosted version of the site.</span></span>  <span data-ttu-id="034fd-140">Sie sollten in der Lage sein, auf Sie über eine URL wie oder zu zugreifen `localhost:8080` `http://0.0.0.0:8080` .</span><span class="sxs-lookup"><span data-stu-id="034fd-140">You should be able to access it using a URL like `localhost:8080` or `http://0.0.0.0:8080`.</span></span>  <span data-ttu-id="034fd-141">Die genaue [Portnummer][WikiPortURLs] kann unterschiedlich sein.</span><span class="sxs-lookup"><span data-stu-id="034fd-141">The exact [port number][WikiPortURLs] may be different.</span></span>  
+1.  <span data-ttu-id="5272b-139">Öffnen Sie eine Registerkarte in Microsoft Edge, und navigieren Sie zu lokal gehosteter Version der Website.</span><span class="sxs-lookup"><span data-stu-id="5272b-139">Open a tab in Microsoft Edge and navigate to locally-hosted version of the site.</span></span>  <span data-ttu-id="5272b-140">Sie sollten über eine URL wie oder darauf `localhost:8080` zugreifen `http://0.0.0.0:8080` können.</span><span class="sxs-lookup"><span data-stu-id="5272b-140">You should be able to access it using a URL like `localhost:8080` or `http://0.0.0.0:8080`.</span></span>  <span data-ttu-id="5272b-141">Die genaue [Portnummer][WikiPortURLs] kann unterschiedlich sein.</span><span class="sxs-lookup"><span data-stu-id="5272b-141">The exact [port number][WikiPortURLs] may be different.</span></span>  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo.msft.png" alt-text="Ein glitch-Projekt" lightbox="../media/workspaces-workspaces-demo.msft.png":::
-       <span data-ttu-id="034fd-143">Die Demo</span><span class="sxs-lookup"><span data-stu-id="034fd-143">The demo</span></span>  
+    :::image type="complex" source="../media/workspaces-workspaces-demo.msft.png" alt-text="Die Demo" lightbox="../media/workspaces-workspaces-demo.msft.png":::
+       <span data-ttu-id="5272b-143">Die Demo</span><span class="sxs-lookup"><span data-stu-id="5272b-143">The demo</span></span>  
     :::image-end:::  
     
-### <span data-ttu-id="034fd-144">Einrichten von devtools</span><span class="sxs-lookup"><span data-stu-id="034fd-144">Set up DevTools</span></span>  
+### <a name="set-up-devtools"></a><span data-ttu-id="5272b-144">Einrichten von DevTools</span><span class="sxs-lookup"><span data-stu-id="5272b-144">Set up DevTools</span></span>  
 
-1.  <span data-ttu-id="034fd-145">Wählen Sie `Control` + `Shift` + `J` \ (Windows, Linux \) oder `Command` + `Option` + `J` \ (macOS \) aus, um die **Konsolen** Leiste von devtools zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="034fd-145">Select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\) to open the **Console** panel of DevTools.</span></span>  
+1.  <span data-ttu-id="5272b-145">Wählen `Control` + `Shift` + `J` Sie \(Windows, Linux\) oder `Command` + `Option` + `J` \(macOS\) aus, um den **Konsolenbereich** von DevTools zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="5272b-145">Select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\) to open the **Console** panel of DevTools.</span></span>  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-console.msft.png" alt-text="Ein glitch-Projekt" lightbox="../media/workspaces-workspaces-demo-console.msft.png":::
-       <span data-ttu-id="034fd-147">Die **Konsolen** Leiste</span><span class="sxs-lookup"><span data-stu-id="034fd-147">The **Console** panel</span></span>  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-console.msft.png" alt-text="Konsolenbereich" lightbox="../media/workspaces-workspaces-demo-console.msft.png":::
+       <span data-ttu-id="5272b-147">**Konsolenbereich**</span><span class="sxs-lookup"><span data-stu-id="5272b-147">The **Console** panel</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="034fd-148">Wählen Sie die Registerkarte **Quellen** aus.</span><span class="sxs-lookup"><span data-stu-id="034fd-148">Choose the **Sources** tab.</span></span>  
-1.  <span data-ttu-id="034fd-149">Wählen Sie die Registerkarte **Dateisystem** aus.</span><span class="sxs-lookup"><span data-stu-id="034fd-149">Choose the **Filesystem** tab.</span></span>  
+1.  <span data-ttu-id="5272b-148">Wählen Sie das **Tool Quellen** aus.</span><span class="sxs-lookup"><span data-stu-id="5272b-148">Choose the **Sources** tool.</span></span>  
+1.  <span data-ttu-id="5272b-149">Wählen Sie **den Dateisystembereich** aus.</span><span class="sxs-lookup"><span data-stu-id="5272b-149">Choose the **Filesystem** panel.</span></span>  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text="Ein glitch-Projekt" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
-       <span data-ttu-id="034fd-151">Die Registerkarte " **Dateisystem** "</span><span class="sxs-lookup"><span data-stu-id="034fd-151">The **Filesystem** tab</span></span>  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text="Der Dateisystembereich" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
+       <span data-ttu-id="5272b-151">Der **Dateisystembereich**</span><span class="sxs-lookup"><span data-stu-id="5272b-151">The **Filesystem** panel</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="034fd-152">Wählen Sie **Ordner zum Arbeitsbereich hinzufügen**aus.</span><span class="sxs-lookup"><span data-stu-id="034fd-152">Choose **Add Folder To Workspace**.</span></span>  
-1.  <span data-ttu-id="034fd-153">Geben Sie `~/Desktop/app` ein.</span><span class="sxs-lookup"><span data-stu-id="034fd-153">Type `~/Desktop/app`.</span></span>  
-1.  <span data-ttu-id="034fd-154">Wählen Sie **zulassen** aus, um devtools die Berechtigung zum Lesen und Schreiben in das Verzeichnis zu erteilen.</span><span class="sxs-lookup"><span data-stu-id="034fd-154">Choose **Allow** to give DevTools permission to read and write to the directory.</span></span>  
-    <span data-ttu-id="034fd-155">Auf der Registerkarte **Dateisystem** befindet sich nun ein grüner Punkt neben `index.html` , `script.js` und `styles.css` .</span><span class="sxs-lookup"><span data-stu-id="034fd-155">In the **Filesystem** tab, there is now a green dot next to `index.html`, `script.js`, and `styles.css`.</span></span>  <span data-ttu-id="034fd-156">Diese grünen Punkte bedeuten, dass devtools eine Zuordnung zwischen den Netzwerkressourcen der Seite und den Dateien in erstellt hat `~/Desktop/app` .</span><span class="sxs-lookup"><span data-stu-id="034fd-156">These green dots mean that DevTools has established a mapping between the network resources of the page, and the files in `~/Desktop/app`.</span></span>  
+1.  <span data-ttu-id="5272b-152">Wählen **Sie Ordner zum Arbeitsbereich hinzufügen aus.**</span><span class="sxs-lookup"><span data-stu-id="5272b-152">Choose **Add Folder To Workspace**.</span></span>  
+1.  <span data-ttu-id="5272b-153">Geben Sie `~/Desktop/app` ein.</span><span class="sxs-lookup"><span data-stu-id="5272b-153">Type `~/Desktop/app`.</span></span>  
+1.  <span data-ttu-id="5272b-154">Wählen **Sie Zulassen** aus, um DevTools die Berechtigung zum Lesen und Schreiben in das Verzeichnis zu erteilen.</span><span class="sxs-lookup"><span data-stu-id="5272b-154">Choose **Allow** to give DevTools permission to read and write to the directory.</span></span>  
+    <span data-ttu-id="5272b-155">Im **Dateisystembereich** befindet sich nun ein grüner Punkt neben `index.html` , `script.js` und `styles.css` .</span><span class="sxs-lookup"><span data-stu-id="5272b-155">In the **Filesystem** panel, there is now a green dot next to `index.html`, `script.js`, and `styles.css`.</span></span>  <span data-ttu-id="5272b-156">Diese grünen Punkte bedeuten, dass DevTools eine Zuordnung zwischen den Netzwerkressourcen der Seite und den Dateien in eingerichtet `~/Desktop/app` hat.</span><span class="sxs-lookup"><span data-stu-id="5272b-156">These green dots mean that DevTools has established a mapping between the network resources of the page, and the files in `~/Desktop/app`.</span></span>  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png" alt-text="Ein glitch-Projekt" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png":::
-       <span data-ttu-id="034fd-158">Die Registerkarte " **Dateisystem** " zeigt nun eine Zuordnung zwischen den lokalen Dateien und den Netzwerk-Dateien an.</span><span class="sxs-lookup"><span data-stu-id="034fd-158">The **Filesystem** tab now shows a mapping between the local files and the network ones</span></span>  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png" alt-text="Der Dateisystembereich zeigt jetzt eine Zuordnung zwischen den lokalen Dateien und den Netzwerkdateien an." lightbox="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png":::
+       <span data-ttu-id="5272b-158">Der **Dateisystembereich** zeigt jetzt eine Zuordnung zwischen den lokalen Dateien und den Netzwerkdateien an.</span><span class="sxs-lookup"><span data-stu-id="5272b-158">The **Filesystem** panel now shows a mapping between the local files and the network ones</span></span>  
     :::image-end:::  
     
-## <span data-ttu-id="034fd-159">Schritt 2: Speichern einer CSS-Änderung auf einem Datenträger</span><span class="sxs-lookup"><span data-stu-id="034fd-159">Step 2: Save a CSS change to disk</span></span>  
+## <a name="step-2-save-a-css-change-to-disk"></a><span data-ttu-id="5272b-159">Schritt 2: Speichern einer CSS-Änderung auf dem Datenträger</span><span class="sxs-lookup"><span data-stu-id="5272b-159">Step 2: Save a CSS change to disk</span></span>  
 
-1.  <span data-ttu-id="034fd-160">Öffnen Sie `styles.css`.</span><span class="sxs-lookup"><span data-stu-id="034fd-160">Open `styles.css`.</span></span>  
+1.  <span data-ttu-id="5272b-160">Öffnen Sie `styles.css`.</span><span class="sxs-lookup"><span data-stu-id="5272b-160">Open `styles.css`.</span></span>  
     
     > [!NOTE]
-    > <span data-ttu-id="034fd-161">Die `color` Eigenschaft von `h1` Elements ist auf gesetzt `fuchsia` .</span><span class="sxs-lookup"><span data-stu-id="034fd-161">The `color` property of `h1` elements is set to `fuchsia`.</span></span>  
+    > <span data-ttu-id="5272b-161">Die `color` Eigenschaft von Elementen ist auf `h1` `fuchsia` festgelegt.</span><span class="sxs-lookup"><span data-stu-id="5272b-161">The `color` property of `h1` elements is set to `fuchsia`.</span></span>  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png" alt-text="Ein glitch-Projekt" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png":::
-       <span data-ttu-id="034fd-163">Anzeigen `styles.css` in einem Text-Editor</span><span class="sxs-lookup"><span data-stu-id="034fd-163">View `styles.css` in a text editor</span></span>  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png" alt-text="Styles.css in einem Texteditor anzeigen" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png":::
+       <span data-ttu-id="5272b-163">Anzeigen `styles.css` in einem Texteditor</span><span class="sxs-lookup"><span data-stu-id="5272b-163">View `styles.css` in a text editor</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="034fd-164">Wählen Sie die Registerkarte **Elemente** aus.</span><span class="sxs-lookup"><span data-stu-id="034fd-164">Choose the **Elements** tab.</span></span>  
-1.  <span data-ttu-id="034fd-165">Ändern Sie den Wert der `color` Eigenschaft des `<h1>` Elements in Ihre bevorzugte Farbe.</span><span class="sxs-lookup"><span data-stu-id="034fd-165">Change the value of the `color` property of the `<h1>` element to your favorite color.</span></span>  
-    <span data-ttu-id="034fd-166">Beachten Sie, dass Sie das `<h1>` Element in der **DOM-Struktur** auswählen müssen, um die darauf angewendeten CSS-Regeln im Bereich " **Formatvorlagen** " anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="034fd-166">Remember that you need to choose the `<h1>` element in the **DOM Tree** in order to see the CSS rules applied to it in the **Styles** pane.</span></span>  <span data-ttu-id="034fd-167">Der grüne Punkt neben `styles.css:1` bedeutet, dass alle von Ihnen vorgenommenen Änderungen zugeordnet werden `~/Desktop/app/styles.css` .</span><span class="sxs-lookup"><span data-stu-id="034fd-167">The green dot next to `styles.css:1` means that any change that you make are mapped to `~/Desktop/app/styles.css`.</span></span>  
+1.  <span data-ttu-id="5272b-164">Wählen Sie das **Elementtool** aus.</span><span class="sxs-lookup"><span data-stu-id="5272b-164">Choose the **Elements** tool.</span></span>  
+1.  <span data-ttu-id="5272b-165">Ändern Sie den Wert der `color` Eigenschaft des Elements in Ihre Bevorzugte `<h1>` Farbe.</span><span class="sxs-lookup"><span data-stu-id="5272b-165">Change the value of the `color` property of the `<h1>` element to your favorite color.</span></span>  
+    <span data-ttu-id="5272b-166">Denken Sie daran, dass Sie das Element in der DOM-Struktur auswählen müssen, um die darauf angewendeten CSS-Regeln im Bereich `<h1>` **Formatvorlagen anzuzeigen.** \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="5272b-166">Remember that you need to choose the `<h1>` element in the **DOM Tree** in order to display the CSS rules applied to it in the **Styles** pane.</span></span>  <span data-ttu-id="5272b-167">Der grüne Punkt neben `styles.css:1` bedeutet, dass alle änderungen, die Sie machen, zugeordnet `~/Desktop/app/styles.css` werden.</span><span class="sxs-lookup"><span data-stu-id="5272b-167">The green dot next to `styles.css:1` means that any change that you make are mapped to `~/Desktop/app/styles.css`.</span></span>  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-elements-styles-css.msft.png" alt-text="Ein glitch-Projekt" lightbox="../media/workspaces-workspaces-demo-elements-styles-css.msft.png":::
-       <span data-ttu-id="034fd-169">Der grüne Indikator, mit dem die Datei verknüpft ist</span><span class="sxs-lookup"><span data-stu-id="034fd-169">The green indicator that the file is linked</span></span>  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-elements-styles-css.msft.png" alt-text="Der grüne Indikator, dass die Datei verknüpft ist" lightbox="../media/workspaces-workspaces-demo-elements-styles-css.msft.png":::
+       <span data-ttu-id="5272b-169">Der grüne Indikator, dass die Datei verknüpft ist</span><span class="sxs-lookup"><span data-stu-id="5272b-169">The green indicator that the file is linked</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="034fd-170">`styles.css`In einem Text-Editor erneut öffnen.</span><span class="sxs-lookup"><span data-stu-id="034fd-170">Open `styles.css` in a text editor again.</span></span>  <span data-ttu-id="034fd-171">Die `color` Eigenschaft ist nun auf Ihre Lieblingsfarbe eingestellt.</span><span class="sxs-lookup"><span data-stu-id="034fd-171">The `color` property is now set to your favorite color.</span></span>  
-1.  <span data-ttu-id="034fd-172">Aktualisieren Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="034fd-172">Refresh the page.</span></span>  <span data-ttu-id="034fd-173">Die Farbe des `<h1>` Elements wird weiterhin auf Ihre bevorzugte Farbe festgelegt.</span><span class="sxs-lookup"><span data-stu-id="034fd-173">The color of the `<h1>` element is still set to your favorite color.</span></span>  <span data-ttu-id="034fd-174">Die Änderung bleibt über eine Aktualisierung bestehen, denn wenn Sie die Änderung vorgenommen haben, devtools die Änderung auf dem Datenträger gespeichert.</span><span class="sxs-lookup"><span data-stu-id="034fd-174">The change remains across a refresh, because when you made the change DevTools saved the change to disk.</span></span>  <span data-ttu-id="034fd-175">Und dann, wenn Sie die Seite aktualisiert haben, hat der lokale Server die geänderte Kopie der Datei vom Datenträger bereitgestellt.</span><span class="sxs-lookup"><span data-stu-id="034fd-175">And then, when you refreshed the page, your local server served the modified copy of the file from disk.</span></span>  
+1.  <span data-ttu-id="5272b-170">Öffnen `styles.css` Sie erneut in einem Text-Editor.</span><span class="sxs-lookup"><span data-stu-id="5272b-170">Open `styles.css` in a text editor again.</span></span>  <span data-ttu-id="5272b-171">Die `color` Eigenschaft wird nun auf Ihre bevorzugte Farbe festgelegt.</span><span class="sxs-lookup"><span data-stu-id="5272b-171">The `color` property is now set to your favorite color.</span></span>  
+1.  <span data-ttu-id="5272b-172">Aktualisieren Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="5272b-172">Refresh the page.</span></span>  <span data-ttu-id="5272b-173">Die Farbe des Elements `<h1>` ist weiterhin auf Ihre Bevorzugte Farbe festgelegt.</span><span class="sxs-lookup"><span data-stu-id="5272b-173">The color of the `<h1>` element is still set to your favorite color.</span></span>  <span data-ttu-id="5272b-174">Die Änderung bleibt bei einer Aktualisierung erhalten, da devTools die Änderung bei der Änderung auf dem Datenträger gespeichert hat.</span><span class="sxs-lookup"><span data-stu-id="5272b-174">The change remains across a refresh, because when you made the change DevTools saved the change to disk.</span></span>  <span data-ttu-id="5272b-175">Und dann, wenn Sie die Seite aktualisiert haben, hat Ihr lokaler Server die geänderte Kopie der Datei vom Datenträger aus bedient.</span><span class="sxs-lookup"><span data-stu-id="5272b-175">And then, when you refreshed the page, your local server served the modified copy of the file from disk.</span></span>  
     
-## <span data-ttu-id="034fd-176">Schritt 3: Speichern einer HTML-Änderung auf einem Datenträger</span><span class="sxs-lookup"><span data-stu-id="034fd-176">Step 3: Save an HTML change to disk</span></span>  
+## <a name="step-3-save-an-html-change-to-disk"></a><span data-ttu-id="5272b-176">Schritt 3: Speichern einer HTML-Änderung auf dem Datenträger</span><span class="sxs-lookup"><span data-stu-id="5272b-176">Step 3: Save an HTML change to disk</span></span>  
 
-### <span data-ttu-id="034fd-177">Ändern von HTML über das Panel "Elemente"</span><span class="sxs-lookup"><span data-stu-id="034fd-177">Change HTML from the Elements Panel</span></span>  
+### <a name="change-html-from-the-elements-panel"></a><span data-ttu-id="5272b-177">Ändern von HTML aus dem Elementbereich</span><span class="sxs-lookup"><span data-stu-id="5272b-177">Change HTML from the Elements Panel</span></span>  
 
-<span data-ttu-id="034fd-178">Sie können Änderungen am HTML-Code über das Element Panel vornehmen, Ihre Änderungen an der DOM-Struktur werden aber nicht auf dem Datenträger gespeichert und wirken sich nur auf die aktuelle Browsersitzung aus.</span><span class="sxs-lookup"><span data-stu-id="034fd-178">You may make changes to the html from the Element Panel, but your changes to the DOM tree are not saved to disk and only effect the current browser session.</span></span>  
+<span data-ttu-id="5272b-178">Sie können änderungen am HTML aus dem Elementbereich vornehmen, aber Ihre Änderungen an der DOM-Struktur werden nicht auf dem Datenträger gespeichert und wirken sich nur auf die aktuelle Browsersitzung aus.</span><span class="sxs-lookup"><span data-stu-id="5272b-178">You may make changes to the html from the Element Panel, but your changes to the DOM tree are not saved to disk and only effect the current browser session.</span></span>  
 
-<span data-ttu-id="034fd-179">Die DOM-Struktur ist kein HTML-Code.</span><span class="sxs-lookup"><span data-stu-id="034fd-179">The DOM tree is not html.</span></span>  
+<span data-ttu-id="5272b-179">Die DOM-Struktur ist nicht html.</span><span class="sxs-lookup"><span data-stu-id="5272b-179">The DOM tree is not html.</span></span>  
 
 <!--### Try changing HTML from the Elements panel  
 
 > [!WARNING]
 > The workflow that you are about to try does not work.  You are trying it now so that you do not waste time later trying to figure out why it is not working.  
 
-1.  Choose the **Elements** tab.  
+1.  Choose the **Elements** tool.  
 1.  Choose and edit the text content of the `h1` element, which says `Workspaces Demo`, and replace it with `I ❤️  Cake`.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-change-h1.msft.png" alt-text="Ein glitch-Projekt" lightbox="../media/workspaces-workspaces-demo-change-h1.msft.png":::
-       Attempt to change html from the DOM Tree of the **Elements** panel  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-change-h1.msft.png" alt-text="Attempt to change html from the DOM Tree of the Elements panel" lightbox="../media/workspaces-workspaces-demo-change-h1.msft.png":::
+       Attempt to change html from the DOM Tree of the **Elements** tool  
     :::image-end:::  
     
 1.  Open `~/Desktop/app/index.html` in a text editor.  The change that you just made does not appear.  
@@ -189,75 +189,75 @@ ms.locfileid: "11125349"
 > [!NOTE]
 > This section describes why the workflow from [Try changing html from the Elements panel](#try-changing-html-from-the-elements-panel) does not work.  You should skip this section if you do not care why.  
 
-*   The tree of nodes that you see on the **Elements** panel represents the [DOM][MDNWebAPIsDOM] of the page.  
+*   The tree of nodes that are displayed on the **Elements** tool represents the [DOM][MDNWebAPIsDOM] of the page.  
 *   To display a page, a browser fetches html over the network, parses the html, and then converts it into a tree of DOM nodes.  
 *   If the page has any JavaScript, that JavaScript may add, delete, or change DOM nodes.  CSS may change the DOM, too, using the [`content`][MDNCSSContent] property.  
 *   The browser eventually uses the DOM to determine what content it should present to browser users.  
-*   Therefore, the final state of the page that users see may be very different from the html that the browser fetched.  
-*   This makes it difficult for DevTools to resolve where a change made in the **Elements** panel should be saved, because the DOM is affected by HTML, JavaScript, and CSS.  
+*   Therefore, the final state of the webpage displayed for users may be very different from the html that the browser fetched.  
+*   This makes it difficult for DevTools to resolve where a change made in the **Elements** tool should be saved, because the DOM is affected by HTML, JavaScript, and CSS.  
 
 In short, the **DOM Tree** `!==` HTML.  
 -->  
 
-### <span data-ttu-id="034fd-180">Ändern von HTML aus dem Quellen Panel</span><span class="sxs-lookup"><span data-stu-id="034fd-180">Change HTML from the Sources panel</span></span>  
+### <a name="change-html-from-the-sources-panel"></a><span data-ttu-id="5272b-180">Ändern von HTML im Bereich Quellen</span><span class="sxs-lookup"><span data-stu-id="5272b-180">Change HTML from the Sources panel</span></span>  
 
-<span data-ttu-id="034fd-181">Wenn Sie eine Änderung am HTML-Code der Seite speichern möchten, verwenden Sie das **Quellen** Panel.</span><span class="sxs-lookup"><span data-stu-id="034fd-181">If you want to save a change to the html of the page, do it using the **Sources** panel.</span></span>  
+<span data-ttu-id="5272b-181">Wenn Sie eine Änderung am Html der Seite speichern möchten, verwenden Sie den **Bereich Quellen.**</span><span class="sxs-lookup"><span data-stu-id="5272b-181">If you want to save a change to the html of the page, do it using the **Sources** panel.</span></span>  
 
-1.  <span data-ttu-id="034fd-182">Wählen Sie die Registerkarte **Quellen** aus.</span><span class="sxs-lookup"><span data-stu-id="034fd-182">Choose the **Sources** tab.</span></span>  
-1.  <span data-ttu-id="034fd-183">Wählen Sie die Registerkarte **Seite** aus.</span><span class="sxs-lookup"><span data-stu-id="034fd-183">Choose the **Page** tab.</span></span>  
-1.  <span data-ttu-id="034fd-184">Wählen Sie **(Index)** aus.</span><span class="sxs-lookup"><span data-stu-id="034fd-184">Choose **(index)**.</span></span>  <span data-ttu-id="034fd-185">Der HTML-Code für die Seite wird geöffnet.</span><span class="sxs-lookup"><span data-stu-id="034fd-185">The HTML for the page opens.</span></span>  
-1.  <span data-ttu-id="034fd-186">Ersetzen Sie `<h1>Workspaces Demo</h1>` durch `<h1>I ❤️  Cake</h1>`.</span><span class="sxs-lookup"><span data-stu-id="034fd-186">Replace `<h1>Workspaces Demo</h1>` with `<h1>I ❤️  Cake</h1>`.</span></span>  <span data-ttu-id="034fd-187">Sehen Sie sich die folgende Abbildung an.</span><span class="sxs-lookup"><span data-stu-id="034fd-187">See the following figure.</span></span>  
-1.  <span data-ttu-id="034fd-188">Wählen Sie `Control` + `S` \ (Windows, Linux \) oder `Command` + `S` \ (macOS \) aus, um die Änderung zu speichern.</span><span class="sxs-lookup"><span data-stu-id="034fd-188">Select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\) to save the change.</span></span>  
-1.  <span data-ttu-id="034fd-189">Aktualisieren Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="034fd-189">Refresh the page.</span></span>  <span data-ttu-id="034fd-190">Das `<h1>` Element zeigt weiterhin den neuen Text an.</span><span class="sxs-lookup"><span data-stu-id="034fd-190">The `<h1>` element is still displaying the new text.</span></span>  
+1.  <span data-ttu-id="5272b-182">Wählen Sie das **Tool Quellen** aus.</span><span class="sxs-lookup"><span data-stu-id="5272b-182">Choose the **Sources** tool.</span></span>  
+1.  <span data-ttu-id="5272b-183">Wählen Sie den **Seitenbereich** aus.</span><span class="sxs-lookup"><span data-stu-id="5272b-183">Choose the **Page** panel.</span></span>  
+1.  <span data-ttu-id="5272b-184">Wählen **Sie (Index)** aus.</span><span class="sxs-lookup"><span data-stu-id="5272b-184">Choose **(index)**.</span></span>  <span data-ttu-id="5272b-185">Der HTML-Code für die Seite wird geöffnet.</span><span class="sxs-lookup"><span data-stu-id="5272b-185">The HTML for the page opens.</span></span>  
+1.  <span data-ttu-id="5272b-186">Ersetzen Sie `<h1>Workspaces Demo</h1>` durch `<h1>I ❤️  Cake</h1>`.</span><span class="sxs-lookup"><span data-stu-id="5272b-186">Replace `<h1>Workspaces Demo</h1>` with `<h1>I ❤️  Cake</h1>`.</span></span>  <span data-ttu-id="5272b-187">Überprüfen Sie die folgende Abbildung.</span><span class="sxs-lookup"><span data-stu-id="5272b-187">Review the following figure.</span></span>  
+1.  <span data-ttu-id="5272b-188">Wählen `Control` + `S` Sie \(Windows, Linux\) oder `Command` + `S` \(macOS\) aus, um die Änderung zu speichern.</span><span class="sxs-lookup"><span data-stu-id="5272b-188">Select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\) to save the change.</span></span>  
+1.  <span data-ttu-id="5272b-189">Aktualisieren Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="5272b-189">Refresh the page.</span></span>  <span data-ttu-id="5272b-190">Das `<h1>` Element zeigt weiterhin den neuen Text an.</span><span class="sxs-lookup"><span data-stu-id="5272b-190">The `<h1>` element is still displaying the new text.</span></span>  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Ein glitch-Projekt" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
-       <span data-ttu-id="034fd-192">Ändern von HTML aus dem **Quellen** Panel</span><span class="sxs-lookup"><span data-stu-id="034fd-192">Change HTML from the **Sources** panel</span></span>  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Ändern von HTML im Bereich Quellen" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
+       <span data-ttu-id="5272b-192">Ändern von HTML im **Bereich Quellen**</span><span class="sxs-lookup"><span data-stu-id="5272b-192">Change HTML from the **Sources** panel</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="034fd-193">Öffnen Sie `~/Desktop/app/index.html`.</span><span class="sxs-lookup"><span data-stu-id="034fd-193">Open `~/Desktop/app/index.html`.</span></span>  <span data-ttu-id="034fd-194">Das `<h1>` Element enthält den neuen Text.</span><span class="sxs-lookup"><span data-stu-id="034fd-194">The `<h1>` element contains the new text.</span></span>  
+1.  <span data-ttu-id="5272b-193">Öffnen Sie `~/Desktop/app/index.html`.</span><span class="sxs-lookup"><span data-stu-id="5272b-193">Open `~/Desktop/app/index.html`.</span></span>  <span data-ttu-id="5272b-194">Das `<h1>` Element enthält den neuen Text.</span><span class="sxs-lookup"><span data-stu-id="5272b-194">The `<h1>` element contains the new text.</span></span>  
     
-## <span data-ttu-id="034fd-195">Schritt 4: Speichern einer JavaScript-Änderung auf einem Datenträger</span><span class="sxs-lookup"><span data-stu-id="034fd-195">Step 4: Save a JavaScript change to disk</span></span>  
+## <a name="step-4-save-a-javascript-change-to-disk"></a><span data-ttu-id="5272b-195">Schritt 4: Speichern einer JavaScript-Änderung auf dem Datenträger</span><span class="sxs-lookup"><span data-stu-id="5272b-195">Step 4: Save a JavaScript change to disk</span></span>  
 
-<span data-ttu-id="034fd-196">Der Bereich " **Quellen** " ist auch der Ort, an dem Sie Änderungen an JavaScript vornehmen können.</span><span class="sxs-lookup"><span data-stu-id="034fd-196">The **Sources** panel is also the place to make changes to JavaScript.</span></span>  <span data-ttu-id="034fd-197">Manchmal müssen Sie aber auch auf andere Panels zugreifen, beispielsweise auf das Panel **Elemente** oder den **Konsolen** Panel, während Sie Änderungen an Ihrer Website vornehmen.</span><span class="sxs-lookup"><span data-stu-id="034fd-197">But sometimes you need to access other panels, such as the **Elements** panel or the **Console** panel, while making changes to your site.</span></span>  <span data-ttu-id="034fd-198">Es gibt eine Möglichkeit, das **Quellen** Panel parallel zu anderen Panels zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="034fd-198">There is a way to have the **Sources** panel open alongside other panels.</span></span>  
+<span data-ttu-id="5272b-196">Der **Bereich** Quellen ist auch der Ort, an dem Änderungen an JavaScript vorgenommen werden können.</span><span class="sxs-lookup"><span data-stu-id="5272b-196">The **Sources** panel is also the place to make changes to JavaScript.</span></span>  <span data-ttu-id="5272b-197">Manchmal müssen Sie jedoch auf andere Bereiche zugreifen, \*\*\*\* z. B. auf das **Tool Elemente** oder den Konsolenbereich, während Sie Änderungen an Ihrer Website vornehmen.</span><span class="sxs-lookup"><span data-stu-id="5272b-197">But sometimes you need to access other panels, such as the **Elements** tool or the **Console** panel, while making changes to your site.</span></span>  <span data-ttu-id="5272b-198">Es gibt eine Möglichkeit, den Bereich **Quellen** zusammen mit anderen Panels zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="5272b-198">There is a way to have the **Sources** panel open alongside other panels.</span></span>  
 
-1.  <span data-ttu-id="034fd-199">Wählen Sie die Registerkarte **Elemente** aus.</span><span class="sxs-lookup"><span data-stu-id="034fd-199">Choose the **Elements** tab.</span></span>  
-1.  <span data-ttu-id="034fd-200">Wählen Sie `Control` + `Shift` + `P` \ (Windows, Linux \) oder `Command` + `Shift` + `P` \ (macOS \) aus.</span><span class="sxs-lookup"><span data-stu-id="034fd-200">Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).</span></span>  <span data-ttu-id="034fd-201">Das **Befehlsmenü** wird geöffnet.</span><span class="sxs-lookup"><span data-stu-id="034fd-201">The **Command Menu** opens.</span></span>  
-1.  <span data-ttu-id="034fd-202">Geben `QS` Sie ein, und wählen Sie dann **schnell Quelle anzeigen**aus.</span><span class="sxs-lookup"><span data-stu-id="034fd-202">Type `QS`, then choose **Show Quick Source**.</span></span>  <span data-ttu-id="034fd-203">Am unteren Rand des devtools-Fensters befindet sich nun eine **schnell Ausgangs** Registerkarte.  Auf der Registerkarte wird der Inhalt von angezeigt `index.html` , die letzte Datei, die Sie im **Quellen** Panel bearbeitet haben.</span><span class="sxs-lookup"><span data-stu-id="034fd-203">At the bottom of your DevTools window there is now a **Quick Source** tab.  The tab is displaying the contents of `index.html`, which is the last file you edited in the **Sources** panel.</span></span>  <span data-ttu-id="034fd-204">Auf der Registerkarte " **schnell Quelle** " finden Sie den Editor im **Quellen** Panel, sodass Sie Dateien bearbeiten können, während andere Panels geöffnet sind.</span><span class="sxs-lookup"><span data-stu-id="034fd-204">The **Quick Source** tab gives you the editor from the **Sources** panel, so that you are able to edit files while having other panels open.</span></span>  
+1.  <span data-ttu-id="5272b-199">Wählen Sie das **Elementtool** aus.</span><span class="sxs-lookup"><span data-stu-id="5272b-199">Choose the **Elements** tool.</span></span>  
+1.  <span data-ttu-id="5272b-200">Wählen `Control` + `Shift` + `P` Sie \(Windows, Linux\) oder `Command` + `Shift` + `P` \(macOS\) aus.</span><span class="sxs-lookup"><span data-stu-id="5272b-200">Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).</span></span>  <span data-ttu-id="5272b-201">Das **Befehlsmenü** wird geöffnet.</span><span class="sxs-lookup"><span data-stu-id="5272b-201">The **Command Menu** opens.</span></span>  
+1.  <span data-ttu-id="5272b-202">Geben `QS` Sie ein, und wählen Sie **Dann Schnellquelle anzeigen aus.**</span><span class="sxs-lookup"><span data-stu-id="5272b-202">Type `QS`, then choose **Show Quick Source**.</span></span>  <span data-ttu-id="5272b-203">Am unteren Rand des DevTools-Fensters befindet sich nun ein **Schnellquellenbereich.**</span><span class="sxs-lookup"><span data-stu-id="5272b-203">At the bottom of your DevTools window there is now a **Quick Source** panel.</span></span>  <span data-ttu-id="5272b-204">Der Bereich zeigt den Inhalt von an, der die letzte Datei ist, die `index.html` Sie im Bereich Quellen **bearbeitet** haben.</span><span class="sxs-lookup"><span data-stu-id="5272b-204">The panel is displaying the contents of `index.html`, which is the last file you edited in the **Sources** panel.</span></span>  <span data-ttu-id="5272b-205">Im **Schnellquellenbereich** erhalten Sie \*\*\*\* den Editor aus dem Bereich Quellen, sodass Sie Dateien bearbeiten können, während andere Bereiche geöffnet sind.</span><span class="sxs-lookup"><span data-stu-id="5272b-205">The **Quick Source** panel gives you the editor from the **Sources** panel, so that you are able to edit files while having other panels open.</span></span>  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="Ein glitch-Projekt" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
-       <span data-ttu-id="034fd-206">Öffnen der Registerkarte " **schnell** Start" mithilfe des **Befehlsmenüs**</span><span class="sxs-lookup"><span data-stu-id="034fd-206">Open the **Quick Source** tab using **Command Menu**</span></span>  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="Öffnen des Schnellquellenbereichs mithilfe des Befehlsmenüs" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
+       <span data-ttu-id="5272b-207">Öffnen des **Schnellquellenbereichs** mithilfe **des Befehlsmenüs**</span><span class="sxs-lookup"><span data-stu-id="5272b-207">Open the **Quick Source** panel using **Command Menu**</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="034fd-207">Wählen Sie `Control` + `P` \ (Windows, Linux \) oder `Command` + `P` \ (macOS \) aus, um das Dialogfeld **Datei öffnen** zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="034fd-207">Select `Control`+`P` \(Windows, Linux\) or `Command`+`P` \(macOS\) to open the **Open File** dialog.</span></span>  <span data-ttu-id="034fd-208">Sehen Sie sich die folgende Abbildung an.</span><span class="sxs-lookup"><span data-stu-id="034fd-208">See the following figure.</span></span>  
-1.  <span data-ttu-id="034fd-209">Geben `script` Sie ein, und wählen Sie dann \*\*App/#b0 \*\*aus.</span><span class="sxs-lookup"><span data-stu-id="034fd-209">Type `script`, then choose **app/script.js**.</span></span>  
+1.  <span data-ttu-id="5272b-208">Wählen `Control` + `P` Sie \(Windows, Linux\) oder `Command` + `P` \(macOS\) aus, um das Dialogfeld **Datei öffnen zu** öffnen.</span><span class="sxs-lookup"><span data-stu-id="5272b-208">Select `Control`+`P` \(Windows, Linux\) or `Command`+`P` \(macOS\) to open the **Open File** dialog.</span></span>  <span data-ttu-id="5272b-209">Überprüfen Sie die folgende Abbildung.</span><span class="sxs-lookup"><span data-stu-id="5272b-209">Review the following figure.</span></span>  
+1.  <span data-ttu-id="5272b-210">Geben `script` Sie ein, und wählen Sie **dann app/script.js**.</span><span class="sxs-lookup"><span data-stu-id="5272b-210">Type `script`, then choose **app/script.js**.</span></span>  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="Ein glitch-Projekt" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
-       <span data-ttu-id="034fd-211">Öffnen `script.js` mithilfe des Dialogfelds " **Datei öffnen** "</span><span class="sxs-lookup"><span data-stu-id="034fd-211">Open `script.js` using the **Open File** dialog</span></span>  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="Öffnen script.js mithilfe des Dialogfelds Datei öffnen" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
+       <span data-ttu-id="5272b-212">Öffnen `script.js` mithilfe des **Dialogfelds Datei** öffnen</span><span class="sxs-lookup"><span data-stu-id="5272b-212">Open `script.js` using the **Open File** dialog</span></span>  
     :::image-end:::  
     
     > [!NOTE]
-    > <span data-ttu-id="034fd-212">Der `Save Changes To Disk With Workspaces` Link in der Demo wird regelmäßig gestaltet.</span><span class="sxs-lookup"><span data-stu-id="034fd-212">The `Save Changes To Disk With Workspaces` link in the demo is styled regularly.</span></span>  
+    > <span data-ttu-id="5272b-213">Der `Save Changes To Disk With Workspaces` Link in der Demo wird regelmäßig stylet.</span><span class="sxs-lookup"><span data-stu-id="5272b-213">The `Save Changes To Disk With Workspaces` link in the demo is styled regularly.</span></span>  
     
-1.  <span data-ttu-id="034fd-213">Fügen Sie den folgenden Code unten in **script.js** mithilfe der Registerkarte **schnell** Zugriff hinzu.</span><span class="sxs-lookup"><span data-stu-id="034fd-213">Add the following code to the bottom of **script.js** using the **Quick Source** tab.</span></span>  
+1.  <span data-ttu-id="5272b-214">Fügen Sie den folgenden Code am ende des **script.js** im **Schnellquellenbereich** hinzu.</span><span class="sxs-lookup"><span data-stu-id="5272b-214">Add the following code to the bottom of **script.js** using the **Quick Source** panel.</span></span>  
     
     ```javascript
     console.log('greetings from script.js');
     document.querySelector('a').style = 'font-style:italic';
     ```  
     
-1.  <span data-ttu-id="034fd-214">Wählen Sie `Control` + `S` \ (Windows, Linux \) oder `Command` + `S` \ (macOS \) aus, um die Änderung zu speichern.</span><span class="sxs-lookup"><span data-stu-id="034fd-214">Select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\) to save the change.</span></span>  
-1.  <span data-ttu-id="034fd-215">Aktualisieren Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="034fd-215">Refresh the page.</span></span>  
+1.  <span data-ttu-id="5272b-215">Wählen `Control` + `S` Sie \(Windows, Linux\) oder `Command` + `S` \(macOS\) aus, um die Änderung zu speichern.</span><span class="sxs-lookup"><span data-stu-id="5272b-215">Select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\) to save the change.</span></span>  
+1.  <span data-ttu-id="5272b-216">Aktualisieren Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="5272b-216">Refresh the page.</span></span>  
     
     > [!NOTE]
-    > <span data-ttu-id="034fd-216">Der Link auf der Seite ist jetzt kursiv formatiert.</span><span class="sxs-lookup"><span data-stu-id="034fd-216">The link on the page is now italicized.</span></span>  
+    > <span data-ttu-id="5272b-217">Der Link auf der Seite ist jetzt italisiert.</span><span class="sxs-lookup"><span data-stu-id="5272b-217">The link on the page is now italicized.</span></span>  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png" alt-text="Ein glitch-Projekt" lightbox="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png":::
-       <span data-ttu-id="034fd-218">Der Link auf der Seite ist jetzt kursiv formatiert</span><span class="sxs-lookup"><span data-stu-id="034fd-218">The link on the page is now italicized</span></span>  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png" alt-text="Der Link auf der Seite ist jetzt italisiert" lightbox="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png":::
+       <span data-ttu-id="5272b-219">Der Link auf der Seite ist jetzt italisiert</span><span class="sxs-lookup"><span data-stu-id="5272b-219">The link on the page is now italicized</span></span>  
     :::image-end:::  
     
-## <span data-ttu-id="034fd-219">Nächste Schritte</span><span class="sxs-lookup"><span data-stu-id="034fd-219">Next steps</span></span>  
+## <a name="next-steps"></a><span data-ttu-id="5272b-220">Nächste Schritte</span><span class="sxs-lookup"><span data-stu-id="5272b-220">Next steps</span></span>  
 
-<span data-ttu-id="034fd-220">Verwenden Sie das gelernte in diesem Lernprogramm, um Arbeitsbereiche in Ihrem eigenen Projekt einzurichten.</span><span class="sxs-lookup"><span data-stu-id="034fd-220">Use what you have learned in this tutorial to set up Workspaces in your own project.</span></span>  <!-- If you run into any issues or are able to get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->  
+<span data-ttu-id="5272b-221">Verwenden Sie das, was Sie in diesem Lernprogramm gelernt haben, um Arbeitsbereiche in Ihrem eigenen Projekt zu einrichten.</span><span class="sxs-lookup"><span data-stu-id="5272b-221">Use what you have learned in this tutorial to set up Workspaces in your own project.</span></span>  <!-- If you run into any issues or are able to get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->  
 
 <!--  
 If you have more feedback on the topics or anything else, please use any of the channels below:  
@@ -265,39 +265,39 @@ If you have more feedback on the topics or anything else, please use any of the 
 *   [Mailing List][AlphabetGroupsAlphabetBrowserDevTools]  
 *   [Twitter][TwitterAlphabetBrowserDevTools]  -->  
 
-## <span data-ttu-id="034fd-221">Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen</span><span class="sxs-lookup"><span data-stu-id="034fd-221">Getting in touch with the Microsoft Edge DevTools team</span></span>  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a><span data-ttu-id="5272b-222">Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen</span><span class="sxs-lookup"><span data-stu-id="5272b-222">Getting in touch with the Microsoft Edge DevTools team</span></span>  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevToolsCssIndex]: ../css/index.md "Erste Schritte mit dem anzeigen und Ändern von CSS | Microsoft docs"  
+[DevToolsCssIndex]: ../css/index.md "Erste Schritte mit dem Anzeigen und Ändern von CSS-| Microsoft Docs"  
 
 <!--[LocalOverrides]: ../whats-new/2018/01/devtools#overrides -->  
 
 <!--[AlphabetGroupsAlphabetBrowserDevTools]: https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools "Alphabet Browser DevTools - Alphabet Groups"  -->  
 
-[GlitchWorkspacesDemo]: https://glitch.com/edit/#!/microsoft-edge-chromium-devtools?path=workspaces-demo/index.html:1:0 "Demo Dateien für Arbeitsbereiche | Glitch"  
+[GlitchWorkspacesDemo]: https://glitch.com/edit/#!/microsoft-edge-chromium-devtools?path=workspaces-demo/index.html:1:0 "Arbeitsbereiche Demodateien | Glitch"  
 
-[MDNCSSContent]: https://developer.mozilla.org/docs/Web/CSS/content "Inhalt – CSS: Cascading Stylesheets | MDN"  
-[MDNWebGettingStarted]: https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web "Erste Schritte mit dem Web | MDN"  
-[MDNSimpleLocalHTTPServer]: https://developer.mozilla.org/docs/Learn/Common_questions/set_up_a_local_testing_server#Running_a_simple_local_HTTP_server "Ausführen eines einfachen lokalen HTTP-Servers | MDN"  
-[MDNWebAPIsDOM]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction "Einführung in DOM-Web-APIs | MDN"  
+[MDNCSSContent]: https://developer.mozilla.org/docs/Web/CSS/content "Content – CSS: Cascading StyleSheets | MDN"  
+[MDNWebGettingStarted]: https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web "Erste Schritte mit der | MDN"  
+[MDNSimpleLocalHTTPServer]: https://developer.mozilla.org/docs/Learn/Common_questions/set_up_a_local_testing_server#Running_a_simple_local_HTTP_server "Ausführen eines einfachen lokalen HTTP-| MDN"  
+[MDNWebAPIsDOM]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction "Einführung in DOM – Web-APIs | MDN"  
 
 <!--[StackOverflowAlphabetBrowserDevTools]: https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools "Alphabet Browser DevTools - Stack Overflow"  -->
 
-[TreehouseBlogSourceMaps]: https://blog.teamtreehouse.com/introduction-source-maps "Eine Einführung in Quell Karten | Baumhaus-Blog"  
+[TreehouseBlogSourceMaps]: https://blog.teamtreehouse.com/introduction-source-maps "Eine Einführung in Quellkarten | Treehouse-Blog"  
 
 <!-- [TwitterAlphabetBrowserDevTools]: https://twitter.com/alphabetbrowserdevtools "Alphabet Browser DevTools \(@AlphabetBrowserDevTools\) | Twitter"  -->
 
-[WikiPortURLs]: https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs "Port \ (Computer Networking \) – Wikipedia"  
+[WikiPortURLs]: https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs "Port \(Computernetzwerk\) – Wikipedia"  
 
 > [!NOTE]
-> <span data-ttu-id="034fd-230">Teile dieser Seite sind Änderungen, die auf der [von Google erstellten und freigegebenen][GoogleSitePolicies] Arbeit basieren und gemäß den in der [Creative Commons Attribution 4,0 International-Lizenz][CCA4IL]beschriebenen Begriffen verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="034fd-230">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="034fd-231">Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/workspaces/index) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.</span><span class="sxs-lookup"><span data-stu-id="034fd-231">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/workspaces/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
+> <span data-ttu-id="5272b-231">Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="5272b-231">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="5272b-232">Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/workspaces/index) und wird von [Kayce Basken][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) verfasst.</span><span class="sxs-lookup"><span data-stu-id="5272b-232">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/workspaces/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
 
-[![Creative Commons-Lizenz][CCby4Image]][CCA4IL]  
-<span data-ttu-id="034fd-233">Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="034fd-233">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
+<span data-ttu-id="5272b-234">Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="5272b-234">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
