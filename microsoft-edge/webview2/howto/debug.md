@@ -1,156 +1,159 @@
 ---
-description: Erfahren Sie, wie Sie WebView2-Steuerelemente Debuggen.
+description: Erfahren Sie, wie Sie WebView2-Steuerelemente debuggen.
 title: Erste Schritte beim Debuggen von WebView2-Anwendungen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/02/2020
+ms.date: 03/08/2021
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, WebView, Win32-apps, Win32, Edge, ICoreWebView2, ICoreWebView2Host, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: 4f94fe880f66f8aeb387d2db4a8bfaab20699466
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
+ms.openlocfilehash: f895634d5e005bb07579d9a5f41c6a988cd78a33
+ms.sourcegitcommit: 140e09e508fa97f2d124f264d7d2ff77d12d1ffb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230698"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "11399844"
 ---
-# <span data-ttu-id="c4be3-104">Erste Schritte beim Debuggen von WebView2-Anwendungen</span><span class="sxs-lookup"><span data-stu-id="c4be3-104">Get started debugging WebView2 applications</span></span>  
+# <a name="get-started-debugging-webview2-apps"></a><span data-ttu-id="660d4-104">Erste Schritte beim Debuggen von WebView2-Apps</span><span class="sxs-lookup"><span data-stu-id="660d4-104">Get started debugging WebView2 apps</span></span>  
 
-<span data-ttu-id="c4be3-105">Das Ziel des Microsoft Edge WebView2-Steuerelements besteht darin, die besten Features und Tools für die Entwicklung von Web-und systemeigenen Anwendungen zu kombinieren.</span><span class="sxs-lookup"><span data-stu-id="c4be3-105">The goal of the Microsoft Edge WebView2 control is to combine the best of both the web and native application development features and tools.</span></span>  <span data-ttu-id="c4be3-106">Wenn Sie Ihre WebView2-Anwendung entwickeln, sollten Sie Ihre Anwendung debuggen.</span><span class="sxs-lookup"><span data-stu-id="c4be3-106">When you develop your WebView2 application, you should debug your application.</span></span>  <span data-ttu-id="c4be3-107">In diesem Artikel werden die verschiedenen Tools erläutert, die Sie verwenden können, um Ihren Web-und systemeigenen Code in ihrer WebView2-Anwendung zu debuggen.</span><span class="sxs-lookup"><span data-stu-id="c4be3-107">This article outlines the different tools to use to debug both your web and native code in your WebView2 application.</span></span>  
+<span data-ttu-id="660d4-105">Das Ziel des Microsoft Edge WebView2-Steuerelements besteht in der Kombination der besten Features und Tools für die Web- und native App-Entwicklung.</span><span class="sxs-lookup"><span data-stu-id="660d4-105">The goal of the Microsoft Edge WebView2 control is to combine the best of both the web and native app development features and tools.</span></span>  <span data-ttu-id="660d4-106">Wenn Sie Ihre WebView2-App entwickeln, sollten Sie Ihre App debuggen.</span><span class="sxs-lookup"><span data-stu-id="660d4-106">When you develop your WebView2 app, you should debug your app.</span></span>  <span data-ttu-id="660d4-107">In diesem Artikel werden die verschiedenen Tools beschrieben, die zum Debuggen ihres Web- und systemeigenen Codes in Ihrer WebView2-App verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="660d4-107">This article outlines the different tools to use to debug both your web and native code in your WebView2 app.</span></span>  
 
-## [<span data-ttu-id="c4be3-108">Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="c4be3-108">Microsoft Edge DevTools</span></span>](#tab/devtools)  
+## [<a name="microsoft-edge-devtools"></a><span data-ttu-id="660d4-108">Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="660d4-108">Microsoft Edge DevTools</span></span>](#tab/devtools)  
 
-<span data-ttu-id="c4be3-109">Verwenden Sie die [Microsoft Edge (Chrom)-Entwickler Tools][DevtoolsGuideChromiumMain] zum Debuggen von Webinhalten, die in WebView2-Steuerelementen angezeigt werden, auf die gleiche Weise, wie Sie für eine andere in Microsoft Edge angezeigte Webseite debuggen können.</span><span class="sxs-lookup"><span data-stu-id="c4be3-109">Use [Microsoft Edge (Chromium) Developer Tools][DevtoolsGuideChromiumMain] to debug web content displayed in WebView2 controls, in the same way that you may debug for another webpage displayed in Microsoft Edge.</span></span>  <span data-ttu-id="c4be3-110">Um das devtools zu öffnen, setzen Sie den Fokus auf das WebView-Steuerelement, und verwenden Sie dann eine der folgenden Aktionen.</span><span class="sxs-lookup"><span data-stu-id="c4be3-110">To open the DevTools, set focus on the WebView control and then use one of the following actions.</span></span>  
+<span data-ttu-id="660d4-109">Verwenden [Sie Microsoft Edge (Chromium)-Entwicklertools][DevtoolsGuideChromiumMain] zum Debuggen von Webinhalten, die in WebView2-Steuerelementen angezeigt werden, auf die gleiche Weise wie für eine andere Webseite, die in Microsoft Edge angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="660d4-109">Use [Microsoft Edge (Chromium) Developer Tools][DevtoolsGuideChromiumMain] to debug web content displayed in WebView2 controls, in the same way that you may debug for another webpage displayed in Microsoft Edge.</span></span>  <span data-ttu-id="660d4-110">Zum Öffnen der DevTools legen Sie den Fokus auf das WebView-Steuerelement, und verwenden Sie dann eine der folgenden Aktionen.</span><span class="sxs-lookup"><span data-stu-id="660d4-110">To open the DevTools, set focus on the WebView control and then use one of the following actions.</span></span>  
 
-*   <span data-ttu-id="c4be3-111">Wählen Sie aus `F12` .</span><span class="sxs-lookup"><span data-stu-id="c4be3-111">Select `F12`.</span></span>  
-*   <span data-ttu-id="c4be3-112">Wählen Sie aus `Ctrl` + `Shift` + `I` .</span><span class="sxs-lookup"><span data-stu-id="c4be3-112">Select `Ctrl`+`Shift`+`I`.</span></span>  
-*   <span data-ttu-id="c4be3-113">Öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie aus `Inspect` .</span><span class="sxs-lookup"><span data-stu-id="c4be3-113">Open the context menu \(right-click\) and choose `Inspect`.</span></span>  
+*   <span data-ttu-id="660d4-111">Wählen Sie `F12` aus.</span><span class="sxs-lookup"><span data-stu-id="660d4-111">Select `F12`.</span></span>  
+*   <span data-ttu-id="660d4-112">Wählen Sie `Ctrl` + `Shift` + `I` aus.</span><span class="sxs-lookup"><span data-stu-id="660d4-112">Select `Ctrl`+`Shift`+`I`.</span></span>  
+*   <span data-ttu-id="660d4-113">Öffnen Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste\), und wählen Sie `Inspect` aus.</span><span class="sxs-lookup"><span data-stu-id="660d4-113">Open the context menu \(right-click\) and choose `Inspect`.</span></span>  
     
-<span data-ttu-id="c4be3-114">Weitere Informationen finden Sie unter [Übersicht über devtools][DevtoolsGuideChromiumMain].</span><span class="sxs-lookup"><span data-stu-id="c4be3-114">For more information, see [DevTools overview][DevtoolsGuideChromiumMain].</span></span>  
+<span data-ttu-id="660d4-114">Weitere Informationen finden Sie unter [DevTools overview][DevtoolsGuideChromiumMain].</span><span class="sxs-lookup"><span data-stu-id="660d4-114">For more information, navigate to [DevTools overview][DevtoolsGuideChromiumMain].</span></span>  
 
-:::image type="complex" source="./media/f12.png" alt-text="DevTools-Debuggen" lightbox="./media/f12.png":::
-   <span data-ttu-id="c4be3-116">DevTools-Debuggen</span><span class="sxs-lookup"><span data-stu-id="c4be3-116">DevTools debugging</span></span>  
+:::image type="complex" source="./media/f12.png" alt-text="DevTools-Debugging" lightbox="./media/f12.png":::
+   <span data-ttu-id="660d4-116">DevTools-Debugging</span><span class="sxs-lookup"><span data-stu-id="660d4-116">DevTools debugging</span></span>  
 :::image-end:::  
 
-## [<span data-ttu-id="c4be3-117">Visual Studio</span><span class="sxs-lookup"><span data-stu-id="c4be3-117">Visual Studio</span></span>](#tab/visualstudio)  
+## [<a name="visual-studio"></a><span data-ttu-id="660d4-117">Visual Studio</span><span class="sxs-lookup"><span data-stu-id="660d4-117">Visual Studio</span></span>](#tab/visualstudio)  
 
-<span data-ttu-id="c4be3-118">Visual Studio bietet verschiedene Debugging-Tools für Web-und systemeigenen Code in WebView2-Anwendungen.</span><span class="sxs-lookup"><span data-stu-id="c4be3-118">Visual Studio provides various debugging tools for web and native code in WebView2 applications.</span></span>  <span data-ttu-id="c4be3-119">Im Abschnitt Visual Studio liegt der Hauptfokus auf dem Debuggen von WebView-Steuerelementen, doch die anderen Methoden zum Debuggen in Visual Studio sind wie gewohnt verfügbar.</span><span class="sxs-lookup"><span data-stu-id="c4be3-119">In the Visual Studio section, the primary focus is debugging WebView controls, however the other methods of debugging in Visual Studio are available as usual.</span></span>  <span data-ttu-id="c4be3-120">Mit dem folgenden Verfahren können Sie Web-und systemeigenen Code nur in Win32-Anwendungen oder Office-Add-ins Debuggen.</span><span class="sxs-lookup"><span data-stu-id="c4be3-120">Use the following process to debug web and native code in Win32 applications or Office Add-ins only.</span></span>  
+<span data-ttu-id="660d4-118">Visual Studio bietet verschiedene Debuggingtools für Web- und systemeigenen Code in WebView2-Apps.</span><span class="sxs-lookup"><span data-stu-id="660d4-118">Visual Studio provides various debugging tools for web and native code in WebView2 apps.</span></span>  <span data-ttu-id="660d4-119">Im Abschnitt Visual Studio liegt der Hauptfokus auf dem Debuggen von WebView-Steuerelementen, die anderen Methoden des Debuggens in Visual Studio sind jedoch wie gewohnt verfügbar.</span><span class="sxs-lookup"><span data-stu-id="660d4-119">In the Visual Studio section, the primary focus is debugging WebView controls, however the other methods of debugging in Visual Studio are available as usual.</span></span>  <span data-ttu-id="660d4-120">Verwenden Sie den folgenden Prozess, um web- und systemeigenen Code nur in Win32-Apps oder Office-Add-Ins zu debuggen.</span><span class="sxs-lookup"><span data-stu-id="660d4-120">Use the following process to debug web and native code in Win32 apps or Office Add-ins only.</span></span>  
 
 > [!IMPORTANT]
-> <span data-ttu-id="c4be3-121">Wenn Sie die Anwendung in Visual Studio debuggen, wobei der systemeigene Debugger angefügt ist, `F12` kann die Auswahl den systemeigenen Debugger anstelle der Entwickler Tools auslösen.</span><span class="sxs-lookup"><span data-stu-id="c4be3-121">When you debug your application in Visual Studio with the native debugger attached, selecting `F12` may trigger the native debugger instead of Developer Tools.</span></span>  <span data-ttu-id="c4be3-122">Wählen Sie aus `Ctrl` + `Shift` + `I` , oder verwenden Sie das Kontextmenü \ (mit der rechten Maustaste auf \), um die Situation zu vermeiden.</span><span class="sxs-lookup"><span data-stu-id="c4be3-122">Select `Ctrl`+`Shift`+`I`, or use the context menu \(right-click\) to avoid the situation.</span></span>  
+> <span data-ttu-id="660d4-121">Wenn Sie Ihre App in Visual Studio mit dem systemeigenen Debugger debuggen, löst die Auswahl möglicherweise den systemeigenen Debugger anstelle von `F12` Entwicklertools aus.</span><span class="sxs-lookup"><span data-stu-id="660d4-121">When you debug your app in Visual Studio with the native debugger attached, selecting `F12` may trigger the native debugger instead of Developer Tools.</span></span>  <span data-ttu-id="660d4-122">Wählen `Ctrl` + `Shift` + `I` Sie aus, oder verwenden Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste\), um die Situation zu vermeiden.</span><span class="sxs-lookup"><span data-stu-id="660d4-122">Select `Ctrl`+`Shift`+`I`, or use the context menu \(right-click\) to avoid the situation.</span></span>  
 
-<span data-ttu-id="c4be3-123">Bevor Sie beginnen, stellen Sie sicher, dass die folgenden Anforderungen erfüllt sind.</span><span class="sxs-lookup"><span data-stu-id="c4be3-123">Before you begin, ensure the following requirements are met.</span></span>  
+<span data-ttu-id="660d4-123">Bevor Sie beginnen, stellen Sie sicher, dass die folgenden Anforderungen erfüllt sind.</span><span class="sxs-lookup"><span data-stu-id="660d4-123">Before you begin, ensure the following requirements are met.</span></span>  
 
-*   <span data-ttu-id="c4be3-124">Zum Debuggen von Skripts muss die app in Visual Studio gestartet werden.</span><span class="sxs-lookup"><span data-stu-id="c4be3-124">To debug scripts, the app must be launched from within Visual Studio.</span></span>  
-*   <span data-ttu-id="c4be3-125">Sie können keinen Debugger an einen ausgeführten WebView2-Prozess anfügen.</span><span class="sxs-lookup"><span data-stu-id="c4be3-125">You cannot attach a debugger to a running WebView2 process.</span></span>  
-*   <span data-ttu-id="c4be3-126">Installieren Sie Visual Studio 2019, Version 16,4 Preview 2 oder höher.</span><span class="sxs-lookup"><span data-stu-id="c4be3-126">Install Visual Studio 2019 version 16.4 Preview 2 or later.</span></span>  
+*   <span data-ttu-id="660d4-124">Zum Debuggen von Skripts muss die App innerhalb eines Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="660d4-124">To debug scripts, the app must be launched from within Visual Studio.</span></span>  
+*   <span data-ttu-id="660d4-125">Sie können keinen Debugger an einen ausgeführten WebView2-Prozess anfügen.</span><span class="sxs-lookup"><span data-stu-id="660d4-125">You cannot attach a debugger to a running WebView2 process.</span></span>  
+*   <span data-ttu-id="660d4-126">Installieren Visual Studio 2019, Version 16.4 Preview 2 oder höher.</span><span class="sxs-lookup"><span data-stu-id="660d4-126">Install Visual Studio 2019 version 16.4 Preview 2 or later.</span></span>  
     
-<span data-ttu-id="c4be3-127">Installieren und Einrichten der Skriptdebugger Tools in Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="c4be3-127">Install and set up the script debugger tools in Visual Studio.</span></span>  
+<span data-ttu-id="660d4-127">Installieren und Einrichten der Skriptdebuggertools in Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="660d4-127">Install and set up the script debugger tools in Visual Studio.</span></span>  
 
-1.  <span data-ttu-id="c4be3-128">Führen Sie die folgenden Aktionen aus, um die Komponente **JavaScript-Diagnose** in der **Desktop Entwicklung mit C++** zu installieren.</span><span class="sxs-lookup"><span data-stu-id="c4be3-128">Complete the following actions to install the **JavaScript diagnostics** component in **Desktop development with C++**.</span></span>  
+1.  <span data-ttu-id="660d4-128">Führen Sie die folgenden Aktionen aus, um die **#A0** in der **Desktopentwicklung mit C++ zu installieren.**</span><span class="sxs-lookup"><span data-stu-id="660d4-128">Complete the following actions to install the **JavaScript diagnostics** component in **Desktop development with C++**.</span></span>  
     
-    1.  <span data-ttu-id="c4be3-129">Geben Sie in der Windows-Explorer-Leiste ein `Visual Studio Installer` .</span><span class="sxs-lookup"><span data-stu-id="c4be3-129">In the Windows Explorer bar, type `Visual Studio Installer`.</span></span>  
-    1.  <span data-ttu-id="c4be3-130">Wählen Sie **Visual Studio-Installationsprogramm** aus, um es zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="c4be3-130">Choose **Visual Studio Installer** to open it.</span></span>  
-    1.  <span data-ttu-id="c4be3-131">Wählen Sie im Visual Studio-Installationsprogramm in der installierten Version die Schaltfläche **mehr** aus, und wählen Sie dann **ändern**aus.</span><span class="sxs-lookup"><span data-stu-id="c4be3-131">In the Visual Studio Installer, on the installed version, choose the **More** button, and then choose **Modify**.</span></span>  
-    1.  <span data-ttu-id="c4be3-132">Wählen Sie in Visual Studio unter **Arbeits auslasten**die Einstellung **Desktop Entwicklung in C++** aus.</span><span class="sxs-lookup"><span data-stu-id="c4be3-132">In Visual Studio, under **Workloads**, choose the **Desktop Development in C++** setting.</span></span>  
+    1.  <span data-ttu-id="660d4-129">Geben Sie in der Windows Explorer-Leiste `Visual Studio Installer` ein.</span><span class="sxs-lookup"><span data-stu-id="660d4-129">In the Windows Explorer bar, type `Visual Studio Installer`.</span></span>  
+    1.  <span data-ttu-id="660d4-130">Wählen **Visual Studio Installer aus,** um es zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="660d4-130">Choose **Visual Studio Installer** to open it.</span></span>  
+    1.  <span data-ttu-id="660d4-131">Wählen Sie Visual Studio Installationsprogramm auf der installierten Version die Schaltfläche **Mehr** aus, und wählen Sie dann **Ändern aus.**</span><span class="sxs-lookup"><span data-stu-id="660d4-131">In the Visual Studio Installer, on the installed version, choose the **More** button, and then choose **Modify**.</span></span>  
+    1.  <span data-ttu-id="660d4-132">Wählen Visual Studio unter **Arbeitsauslastungen**die Einstellung **Desktopentwicklung in C++** aus.</span><span class="sxs-lookup"><span data-stu-id="660d4-132">In Visual Studio, under **Workloads**, choose the **Desktop Development in C++** setting.</span></span>  
         
-        :::image type="complex" source="./media/workloads.png" alt-text="Bildschirm ' Ändern von Arbeitslasten ' in Visual Studio" lightbox="./media/workloads.png":::
-            <span data-ttu-id="c4be3-134">Bildschirm ' Ändern von Arbeitslasten ' in Visual Studio</span><span class="sxs-lookup"><span data-stu-id="c4be3-134">Visual Studio Modifying Workloads Screen</span></span>
+        :::image type="complex" source="./media/workloads.png" alt-text="Visual Studio Ändern des Workloads-Bildschirms" lightbox="./media/workloads.png":::
+            <span data-ttu-id="660d4-134">Visual Studio Ändern des Workloads-Bildschirms</span><span class="sxs-lookup"><span data-stu-id="660d4-134">Visual Studio Modifying Workloads Screen</span></span>
         :::image-end:::  
         
-    1.  <span data-ttu-id="c4be3-135">Wählen Sie **einzelne Komponenten**aus.</span><span class="sxs-lookup"><span data-stu-id="c4be3-135">Choose **Individual components**.</span></span>  
-    1.  <span data-ttu-id="c4be3-136">Geben Sie im Suchfeld ein `JavaScript diagnostics` .</span><span class="sxs-lookup"><span data-stu-id="c4be3-136">In the search box, enter `JavaScript diagnostics`.</span></span>  
-    1.  <span data-ttu-id="c4be3-137">Wählen Sie die **JavaScript-Diagnose** Einstellung aus.</span><span class="sxs-lookup"><span data-stu-id="c4be3-137">Choose the **JavaScript diagnostics** setting.</span></span>  
-    1.  <span data-ttu-id="c4be3-138">Wählen Sie **ändern**aus.</span><span class="sxs-lookup"><span data-stu-id="c4be3-138">Choose **Modify**.</span></span> 
+    1.  <span data-ttu-id="660d4-135">Wählen **Sie Einzelne Komponenten aus.**</span><span class="sxs-lookup"><span data-stu-id="660d4-135">Choose **Individual components**.</span></span>  
+    1.  <span data-ttu-id="660d4-136">Geben Sie im Suchfeld `JavaScript diagnostics` ein.</span><span class="sxs-lookup"><span data-stu-id="660d4-136">In the search box, enter `JavaScript diagnostics`.</span></span>  
+    1.  <span data-ttu-id="660d4-137">Wählen Sie die **JavaScript-Diagnoseeinstellung** aus.</span><span class="sxs-lookup"><span data-stu-id="660d4-137">Choose the **JavaScript diagnostics** setting.</span></span>  
+    1.  <span data-ttu-id="660d4-138">Wählen Sie **Ändern**aus.</span><span class="sxs-lookup"><span data-stu-id="660d4-138">Choose **Modify**.</span></span> 
         
-        :::image type="complex" source="./media/indivcomp.png" alt-text="Visual Studio-Registerkarte ' einzelne Komponenten ändern '" lightbox="./media/indivcomp.png":::
-           <span data-ttu-id="c4be3-140">Visual Studio-Registerkarte ' einzelne Komponenten ändern '</span><span class="sxs-lookup"><span data-stu-id="c4be3-140">Visual Studio Modifying Individual Components Tab</span></span>  
+        :::image type="complex" source="./media/indivcomp.png" alt-text="Visual Studio Ändern der Registerkarte einzelne Komponenten" lightbox="./media/indivcomp.png":::
+           <span data-ttu-id="660d4-140">Visual Studio Ändern der Registerkarte einzelne Komponenten</span><span class="sxs-lookup"><span data-stu-id="660d4-140">Visual Studio Modifying Individual Components Tab</span></span>  
         :::image-end:::  
         
-1.  <span data-ttu-id="c4be3-141">Aktivieren Sie das Skriptdebugging für WebView2-Anwendungen.</span><span class="sxs-lookup"><span data-stu-id="c4be3-141">Enable script debugging for WebView2 applications.</span></span>  
-    1.  <span data-ttu-id="c4be3-142">Öffnen Sie in Ihrem WebView2-Projekt das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie **Eigenschaften**aus.</span><span class="sxs-lookup"><span data-stu-id="c4be3-142">In your WebView2 project, open the context menu \(right-click\), and choose **Properties**.</span></span>  
-    1.  <span data-ttu-id="c4be3-143">Wählen Sie unter den **Konfigurationseigenschaften**die Option **Debuggen**aus.</span><span class="sxs-lookup"><span data-stu-id="c4be3-143">Under the **Configuration Properties**, choose **Debugging**.</span></span>  
-    1.  <span data-ttu-id="c4be3-144">Wählen Sie unter dem **Debuggertyp**die Option **JavaScript (WebView2)** aus.</span><span class="sxs-lookup"><span data-stu-id="c4be3-144">Under the **Debugger Type**, choose **JavaScript (WebView2)**.</span></span>  
+1.  <span data-ttu-id="660d4-141">Aktivieren sie das Skriptdebubuing für WebView2-Apps.</span><span class="sxs-lookup"><span data-stu-id="660d4-141">Enable script debugging for WebView2 apps.</span></span>  
+    1.  <span data-ttu-id="660d4-142">Öffnen Sie in Ihrem WebView2-Projekt das Kontextmenü \(klicken Sie mit der rechten Maustaste\), und wählen Sie **Eigenschaften aus.**</span><span class="sxs-lookup"><span data-stu-id="660d4-142">In your WebView2 project, open the context menu \(right-click\), and choose **Properties**.</span></span>  
+    1.  <span data-ttu-id="660d4-143">Wählen Sie **unter Konfigurationseigenschaften** **Debuggen aus.**</span><span class="sxs-lookup"><span data-stu-id="660d4-143">Under the **Configuration Properties**, choose **Debugging**.</span></span>  
+    1.  <span data-ttu-id="660d4-144">Wählen Sie **unter Debuggertyp** **JavaScript (WebView2)** aus.</span><span class="sxs-lookup"><span data-stu-id="660d4-144">Under the **Debugger Type**, choose **JavaScript (WebView2)**.</span></span>  
         
-        :::image type="complex" source="./media/enbjs.png" alt-text="Visual Studio-Konfigurationseigenschaft "Debuggen"" lightbox="./media/enbjs.png":::
-           <span data-ttu-id="c4be3-146">Visual Studio-Konfigurationseigenschaft " **Debuggen** "</span><span class="sxs-lookup"><span data-stu-id="c4be3-146">Visual Studio **Debugging** Configuration Property</span></span>  
+        :::image type="complex" source="./media/enbjs.png" alt-text="Visual Studio Debugkonfigurationseigenschaft" lightbox="./media/enbjs.png":::
+           <span data-ttu-id="660d4-146">Visual Studio **Debugkonfigurationseigenschaft**</span><span class="sxs-lookup"><span data-stu-id="660d4-146">Visual Studio **Debugging** Configuration Property</span></span>  
         :::image-end:::  
         
-<span data-ttu-id="c4be3-147">Führen Sie die folgenden Aktionen aus, um Ihre WebView2-Anwendung zu debuggen.</span><span class="sxs-lookup"><span data-stu-id="c4be3-147">Complete the following actions to debug your WebView2 application.</span></span>  
+<span data-ttu-id="660d4-147">Führen Sie die folgenden Aktionen aus, um Ihre WebView2-App zu debuggen.</span><span class="sxs-lookup"><span data-stu-id="660d4-147">Complete the following actions to debug your WebView2 app.</span></span>  
 
-1.  <span data-ttu-id="c4be3-148">Wenn Sie einen Haltepunkt im Quellcode festlegen möchten, zeigen Sie auf die linke Seite der Zeile, und wählen Sie einen Haltepunkt aus.</span><span class="sxs-lookup"><span data-stu-id="c4be3-148">To set a breakpoint in your source code, hover to the left of the line number, and choose to set a breakpoint.</span></span>  <span data-ttu-id="c4be3-149">Der JS/TS-Debug-Adapter führt keine Quell Pfadzuordnung aus.</span><span class="sxs-lookup"><span data-stu-id="c4be3-149">The JS/TS debug adapter does not perform source path mapping.</span></span>  <span data-ttu-id="c4be3-150">Sie müssen exakt denselben Pfad öffnen, der Ihrem WebView2 zugeordnet ist.</span><span class="sxs-lookup"><span data-stu-id="c4be3-150">You must open the exact same path associated with your WebView2.</span></span>  
+1.  <span data-ttu-id="660d4-148">Wenn Sie einen Haltepunkt im Quellcode festlegen, zeigen Sie links neben der Zeilennummer, und wählen Sie einen Haltepunkt aus.</span><span class="sxs-lookup"><span data-stu-id="660d4-148">To set a breakpoint in your source code, hover to the left of the line number, and choose to set a breakpoint.</span></span>  <span data-ttu-id="660d4-149">Der JS/TS-Debugadapter führt keine Quellpfadzuordnung durch.</span><span class="sxs-lookup"><span data-stu-id="660d4-149">The JS/TS debug adapter does not perform source path mapping.</span></span>  <span data-ttu-id="660d4-150">Sie müssen den exakt gleichen Pfad öffnen, der Mit WebView2 verknüpft ist.</span><span class="sxs-lookup"><span data-stu-id="660d4-150">You must open the exact same path associated with your WebView2.</span></span>  
     
-    :::image type="complex" source="./media/breakpoint.png" alt-text="Visual Studio-Haltepunkt hinzufügen" lightbox="./media/breakpoint.png"::: 
-       <span data-ttu-id="c4be3-152">Visual Studio-Haltepunkt hinzufügen</span><span class="sxs-lookup"><span data-stu-id="c4be3-152">Visual Studio add breakpoint</span></span>  
+    :::image type="complex" source="./media/breakpoint.png" alt-text="Visual Studio haltepunkt hinzufügen" lightbox="./media/breakpoint.png"::: 
+       <span data-ttu-id="660d4-152">Visual Studio haltepunkt hinzufügen</span><span class="sxs-lookup"><span data-stu-id="660d4-152">Visual Studio add breakpoint</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="c4be3-153">Zum Ausführen des Debuggers wählen Sie die Bit-Größe der Plattform aus, und wählen Sie dann die grüne Schaltfläche Wiedergabe neben dem **lokalen Windows-Debugger**aus.</span><span class="sxs-lookup"><span data-stu-id="c4be3-153">To run the debugger, choose the bit size of the platform, and then choose the green play button next to **Local Windows Debugger**.</span></span>  <span data-ttu-id="c4be3-154">Die Anwendung wird ausgeführt, und der Debugger stellt eine Verbindung mit dem ersten WebView2-Prozess her, der erstellt wird.</span><span class="sxs-lookup"><span data-stu-id="c4be3-154">The application runs and the debugger connects to the first WebView2 process that is created.</span></span>  
+1.  <span data-ttu-id="660d4-153">Wählen Sie zum Ausführen des Debuggers die Bitgröße der Plattform aus, und wählen Sie dann die grüne Wiedergabeschaltfläche neben **Local Windows Debugger aus.**</span><span class="sxs-lookup"><span data-stu-id="660d4-153">To run the debugger, choose the bit size of the platform, and then choose the green play button next to **Local Windows Debugger**.</span></span>  <span data-ttu-id="660d4-154">Die App wird ausgeführt, und der Debugger stellt eine Verbindung mit dem ersten erstellten WebView2-Prozess sicher.</span><span class="sxs-lookup"><span data-stu-id="660d4-154">The app runs and the debugger connects to the first WebView2 process that is created.</span></span>  
     
-    :::image type="complex" source="./media/run.png" alt-text=" Lokaler Windows-Debugger in Visual Studio" lightbox="./media/run.png"::: 
-       <span data-ttu-id="c4be3-156">**Lokaler Windows-Debugger** in Visual Studio</span><span class="sxs-lookup"><span data-stu-id="c4be3-156">Visual Studio **Local Windows Debugger**</span></span>  
+    :::image type="complex" source="./media/run.png" alt-text=" Visual Studio Lokaler Windows-Debugger" lightbox="./media/run.png"::: 
+       <span data-ttu-id="660d4-156">Visual Studio Lokaler **Windows-Debugger**</span><span class="sxs-lookup"><span data-stu-id="660d4-156">Visual Studio **Local Windows Debugger**</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="c4be3-157">Suchen Sie in der **Debug-Konsole**die Ausgabe des Debuggers.</span><span class="sxs-lookup"><span data-stu-id="c4be3-157">In the **Debug Console**, find the output from the debugger.</span></span>  
+1.  <span data-ttu-id="660d4-157">Suchen Sie **in der Debugkonsole**nach der Ausgabe des Debuggers.</span><span class="sxs-lookup"><span data-stu-id="660d4-157">In the **Debug Console**, find the output from the debugger.</span></span>  
     
-    :::image type="complex" source="./media/console.png" alt-text=" Visual Studio-Debug-Konsole" lightbox="./media/console.png"::: 
-       <span data-ttu-id="c4be3-159">Visual Studio- **Debug-Konsole**</span><span class="sxs-lookup"><span data-stu-id="c4be3-159">Visual Studio **Debug Console**</span></span>  
+    :::image type="complex" source="./media/console.png" alt-text=" Visual Studio Debug Console" lightbox="./media/console.png"::: 
+       <span data-ttu-id="660d4-159">Visual Studio Debug **console**</span><span class="sxs-lookup"><span data-stu-id="660d4-159">Visual Studio **Debug Console**</span></span>  
     :::image-end:::  
     
-## [<span data-ttu-id="c4be3-160">Visual Studio Code</span><span class="sxs-lookup"><span data-stu-id="c4be3-160">Visual Studio Code</span></span>](#tab/visualstudiocode)  
+## [<a name="visual-studio-code"></a><span data-ttu-id="660d4-160">Visual Studio Code</span><span class="sxs-lookup"><span data-stu-id="660d4-160">Visual Studio Code</span></span>](#tab/visualstudiocode)  
 
-<span data-ttu-id="c4be3-161">Verwenden Sie Microsoft Visual Studio-Code zum Debuggen von Skripts, die in WebView2-Steuerelementen ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="c4be3-161">Use Microsoft Visual Studio Code to debug scripts that run in WebView2 controls.</span></span>  <!--Ensure that you're using Visual Studio Code version [insert build here] or later.  -->  
+<span data-ttu-id="660d4-161">Verwenden Sie Microsoft Visual Studio Code, um Skripts zu debuggen, die in WebView2-Steuerelementen ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="660d4-161">Use Microsoft Visual Studio Code to debug scripts that run in WebView2 controls.</span></span>  <!--Ensure that you're using Visual Studio Code version [insert build here] or later.  -->  
 
-<span data-ttu-id="c4be3-162">Führen Sie in Visual Studio-Code die folgenden Aktionen aus, um den Code zu debuggen.</span><span class="sxs-lookup"><span data-stu-id="c4be3-162">In Visual Studio Code, complete the following actions to debug your code.</span></span> 
+<span data-ttu-id="660d4-162">Führen Visual Studio Code die folgenden Aktionen aus, um Den Code zu debuggen.</span><span class="sxs-lookup"><span data-stu-id="660d4-162">In Visual Studio Code, complete the following actions to debug your code.</span></span> 
 
-1.  <span data-ttu-id="c4be3-163">Für Ihr Projekt ist eine Datei erforderlich `launch.json` .</span><span class="sxs-lookup"><span data-stu-id="c4be3-163">Your project is required to have a `launch.json` file.</span></span>  <span data-ttu-id="c4be3-164">Wenn Ihr Projekt keine Datei enthält `launch.json` , kopieren Sie den folgenden Codeausschnitt, und erstellen Sie eine neue `launch.json` Datei.</span><span class="sxs-lookup"><span data-stu-id="c4be3-164">If your project doesn't have a `launch.json` file, copy the following code snippet and create a new `launch.json` file.</span></span>  
+1.  <span data-ttu-id="660d4-163">Ihr Projekt muss über eine Datei `launch.json` verfügen.</span><span class="sxs-lookup"><span data-stu-id="660d4-163">Your project is required to have a `launch.json` file.</span></span>  <span data-ttu-id="660d4-164">Wenn Ihr Projekt keine Datei enthält, kopieren Sie den `launch.json` folgenden Codeausschnitt, und erstellen Sie eine neue `launch.json` Datei.</span><span class="sxs-lookup"><span data-stu-id="660d4-164">If your project doesn't have a `launch.json` file, copy the following code snippet and create a new `launch.json` file.</span></span>  
     
     ```json
         "name": "Hello debug world",
         "type": "pwa-msedge",
         "port": 9222, // The port value is optional, and the default value is 9222.
         "request": "launch",
-        "runtimeExecutable": "C:/path/to/your/webview2/application.exe",
+        "runtimeExecutable": "C:/path/to/your/webview2/app.exe",
         "env": {
-            // Customize for your application location if needed
-            "Path": "%path%;e:/path/to/your/application/location; "
+            // Customize for your app location if needed
+            "Path": "%path%;e:/path/to/your/app/location; "
         },
         "useWebView": true,
+        // The following two lines setup source path mapping, where `url` is the start page of your app, and `webRoot` is the top level directory with all your code files.
+        "url": "file:///${workspaceFolder}/path/to/your/toplevel/foo.html",
+        "webRoot": "${workspaceFolder}/path/to/your/assets"
     ```  
     
-1.  <span data-ttu-id="c4be3-165">Wenn Sie einen Haltepunkt im Quellcode festlegen möchten, zeigen Sie auf die Zeile, und wählen Sie</span><span class="sxs-lookup"><span data-stu-id="c4be3-165">To set a breakpoint in your source code, hover on the line, and select</span></span> `F9`
+    > [!NOTE]
+    > <span data-ttu-id="660d4-165">Visual Studio code source path mapping erfordert jetzt die URL, sodass Ihre App jetzt einen Befehlszeilenparameter empfängt, wenn sie gestartet wird.</span><span class="sxs-lookup"><span data-stu-id="660d4-165">Visual Studio Code source path mapping now requires the URL, so your app now receives a command-line parameter when it starts.</span></span>  <span data-ttu-id="660d4-166">Sie können den Parameter bei Bedarf `url` sicher ignorieren.</span><span class="sxs-lookup"><span data-stu-id="660d4-166">You may safely ignore the `url` parameter if needed.</span></span>  
     
-    :::image type="complex" source="./media/breakpointvs.png" alt-text="Der Haltepunkt wird in Visual Studio-Code gesetzt" lightbox="./media/breakpointvs.png":::
-       <span data-ttu-id="c4be3-167">Der Haltepunkt wird in Visual Studio-Code gesetzt</span><span class="sxs-lookup"><span data-stu-id="c4be3-167">Breakpoint is set in Visual Studio Code</span></span>  
+1.  <span data-ttu-id="660d4-167">Zum Festlegen eines Haltepunkts im Quellcode zeigen Sie auf die Zeile, und wählen Sie</span><span class="sxs-lookup"><span data-stu-id="660d4-167">To set a breakpoint in your source code, hover on the line, and select</span></span> `F9`
+    
+    :::image type="complex" source="./media/breakpointvs.png" alt-text="Haltepunkt wird in Visual Studio Code festgelegt" lightbox="./media/breakpointvs.png":::
+       <span data-ttu-id="660d4-169">Haltepunkt wird in Visual Studio Code festgelegt</span><span class="sxs-lookup"><span data-stu-id="660d4-169">Breakpoint is set in Visual Studio Code</span></span>  
     :::image-end:::
     
-    > [!NOTE]
-    > <span data-ttu-id="c4be3-168">Da Visual Studio-Code keine Quell Zuordnung ausführt, stellen Sie sicher, dass Sie Haltepunkte in derselben Datei festlegen, die von WebView2 verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="c4be3-168">Because Visual Studio Code does not perform source mapping, ensure you set breakpoints in the same file that WebView2 uses.</span></span>  <span data-ttu-id="c4be3-169">Wenn die Pfade nicht übereinstimmen, wird der ausgeführte Code nicht vom Visual Studio-Code am Haltepunkt angehalten.</span><span class="sxs-lookup"><span data-stu-id="c4be3-169">If the paths do not match, Visual Studio Code does not pause the running code at the breakpoint.</span></span>  
-    
-1.  <span data-ttu-id="c4be3-170">Führen Sie den Code aus.</span><span class="sxs-lookup"><span data-stu-id="c4be3-170">Run the code.</span></span>  
-    1.  <span data-ttu-id="c4be3-171">Wählen Sie auf der Registerkarte **Ausführen** im Dropdownmenü die Option Startkonfiguration aus.</span><span class="sxs-lookup"><span data-stu-id="c4be3-171">On the **Run** tab, choose the launch configuration from the dropdown menu.</span></span>  
-    1.  <span data-ttu-id="c4be3-172">Wenn Sie mit dem Debuggen der Anwendung beginnen möchten, wählen Sie Debuggen starten (das grüne Dreieck neben der Dropdownliste Startkonfiguration) aus.</span><span class="sxs-lookup"><span data-stu-id="c4be3-172">To start debugging your application, choose Start Debugging, which is the green triangle next to the launch configuration drop down.</span></span>  
+1.  <span data-ttu-id="660d4-170">Führen Sie den Code aus.</span><span class="sxs-lookup"><span data-stu-id="660d4-170">Run the code.</span></span>  
+    1.  <span data-ttu-id="660d4-171">Wählen Sie **auf der** Registerkarte Ausführen im Dropdownmenü die Startkonfiguration aus.</span><span class="sxs-lookup"><span data-stu-id="660d4-171">On the **Run** tab, choose the launch configuration from the dropdown menu.</span></span>  
+    1.  <span data-ttu-id="660d4-172">Wenn Sie mit dem Debuggen Ihrer App beginnen möchten, wählen Sie Debuggen starten aus. Dabei handelt es sich um das grüne Dreieck neben der Startkonfiguration.</span><span class="sxs-lookup"><span data-stu-id="660d4-172">To start debugging your app, choose Start Debugging, which is the green triangle next to the launch configuration drop down.</span></span>  
         
-        :::image type="complex" source="./media/runvs.png" alt-text=" Visual Studio-Registerkarte "Code ausführen"" lightbox="./media/runvs.png":::
-           <span data-ttu-id="c4be3-174">Visual Studio-Registerkarte "Code ausführen"</span><span class="sxs-lookup"><span data-stu-id="c4be3-174">Visual Studio Code Run tab</span></span>  
+        :::image type="complex" source="./media/runvs.png" alt-text=" Visual Studio der Registerkarte Code ausführen" lightbox="./media/runvs.png":::
+           <span data-ttu-id="660d4-174">Visual Studio der Registerkarte Code ausführen</span><span class="sxs-lookup"><span data-stu-id="660d4-174">Visual Studio Code Run tab</span></span>  
         :::image-end:::  
         
-1.  <span data-ttu-id="c4be3-175">Öffnen Sie die **Debug-Konsole** , um die Debug-Ausgabe und die Fehler anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="c4be3-175">Open **Debug Console** to view the debug output and errors.</span></span>  
+1.  <span data-ttu-id="660d4-175">Öffnen **Sie die Debugkonsole,** um die Debugausgabe und Fehler anzeigen zu können.</span><span class="sxs-lookup"><span data-stu-id="660d4-175">Open **Debug Console** to view the debug output and errors.</span></span>  
     
-    :::image type="complex" source="./media/resultsvs.png" alt-text=" Visual Studio-Code Debug-Konsole" lightbox="./media/resultsvs.png":::
-       <span data-ttu-id="c4be3-177">Visual Studio-Code Debug-Konsole</span><span class="sxs-lookup"><span data-stu-id="c4be3-177">Visual Studio Code Debug Console</span></span>  
+    :::image type="complex" source="./media/resultsvs.png" alt-text=" Visual Studio Code Debug Console" lightbox="./media/resultsvs.png":::
+       <span data-ttu-id="660d4-177">Visual Studio Code Debug Console</span><span class="sxs-lookup"><span data-stu-id="660d4-177">Visual Studio Code Debug Console</span></span>  
     :::image-end:::  
     
-<span data-ttu-id="c4be3-178">**Erweiterte Einstellungen**:</span><span class="sxs-lookup"><span data-stu-id="c4be3-178">**Advanced Settings**:</span></span>  
+<span data-ttu-id="660d4-178">**Erweiterte Einstellungen**:</span><span class="sxs-lookup"><span data-stu-id="660d4-178">**Advanced Settings**:</span></span>  
 
-*   <span data-ttu-id="c4be3-179">Gezieltes WebView Debuggen</span><span class="sxs-lookup"><span data-stu-id="c4be3-179">Targeted Webview debugging.</span></span> 
+*   <span data-ttu-id="660d4-179">Gezieltes Webview-Debugging.</span><span class="sxs-lookup"><span data-stu-id="660d4-179">Targeted Webview debugging.</span></span> 
     
-    <span data-ttu-id="c4be3-180">In einigen WebView2-Anwendungen können Sie mehr als ein WebView2-Steuerelement verwenden.</span><span class="sxs-lookup"><span data-stu-id="c4be3-180">In some WebView2 applications, you may use more than one WebView2 control.</span></span> <span data-ttu-id="c4be3-181">So wählen Sie das WebView2-Steuerelement aus, das in dieser Situation gedebuggt werden soll Sie können das gezielte WebView2 Debuggen verwenden.</span><span class="sxs-lookup"><span data-stu-id="c4be3-181">To pick the WebView2 control to debug in this situation you can use targeted webview2 debugging</span></span> 
+    <span data-ttu-id="660d4-180">In einigen WebView2-Apps können Sie mehrere WebView2-Steuerelemente verwenden.</span><span class="sxs-lookup"><span data-stu-id="660d4-180">In some WebView2 apps, you may use more than one WebView2 control.</span></span> <span data-ttu-id="660d4-181">Zum Auswählen des zu debuggenden WebView2-Steuerelements in dieser Situation können Sie das gezielte Webview2-Debuggen verwenden.</span><span class="sxs-lookup"><span data-stu-id="660d4-181">To pick the WebView2 control to debug in this situation you can use targeted webview2 debugging</span></span> 
     
-    <span data-ttu-id="c4be3-182">Öffnen `launch.json` und führen Sie die folgenden Aktionen aus, um ein gezieltes WebView-Debugging zu verwenden.</span><span class="sxs-lookup"><span data-stu-id="c4be3-182">Open `launch.json` and complete the following actions to use targeted Webview debugging.</span></span>  
+    <span data-ttu-id="660d4-182">Öffnen `launch.json` Und führen Sie die folgenden Aktionen aus, um das gezielte Webview-Debugging zu verwenden.</span><span class="sxs-lookup"><span data-stu-id="660d4-182">Open `launch.json` and complete the following actions to use targeted Webview debugging.</span></span>  
     
-    1.  <span data-ttu-id="c4be3-183">Überprüfen Sie, ob der `useWebview` Parameter auf festgesetzt ist `true` .</span><span class="sxs-lookup"><span data-stu-id="c4be3-183">Confirm that the `useWebview` parameter is set to `true`.</span></span>  
-    1.  <span data-ttu-id="c4be3-184">Fügen Sie den `urlFilter` Parameter hinzu.</span><span class="sxs-lookup"><span data-stu-id="c4be3-184">Add the `urlFilter` parameter.</span></span>  <span data-ttu-id="c4be3-185">Wenn das WebView2-Steuerelement zu einer URL navigiert, `urlFilter` wird der Parameterwert verwendet, um Zeichenfolgen zu vergleichen, die in der URL angezeigt werden.</span><span class="sxs-lookup"><span data-stu-id="c4be3-185">When the WebView2 control navigates to a URL, the `urlFilter` parameter value is used to compare strings that appear in the URL.</span></span>  
+    1.  <span data-ttu-id="660d4-183">Vergewissern Sie `useWebview` sich, dass der Parameter auf festgelegt `true` ist.</span><span class="sxs-lookup"><span data-stu-id="660d4-183">Confirm that the `useWebview` parameter is set to `true`.</span></span>  
+    1.  <span data-ttu-id="660d4-184">Fügen Sie den Parameter `urlFilter` hinzu.</span><span class="sxs-lookup"><span data-stu-id="660d4-184">Add the `urlFilter` parameter.</span></span>  <span data-ttu-id="660d4-185">Wenn das WebView2-Steuerelement zu einer URL navigiert, wird der Parameterwert zum Vergleichen von Zeichenfolgen verwendet, `urlFilter` die in der URL angezeigt werden.</span><span class="sxs-lookup"><span data-stu-id="660d4-185">When the WebView2 control navigates to a URL, the `urlFilter` parameter value is used to compare strings that appear in the URL.</span></span>  
     
     ```json
     "useWebview": "true",
@@ -163,34 +166,34 @@ ms.locfileid: "11230698"
     urlFilter="file://C:/path/to/my/index.ts," // To match explicit file called index.ts.  
     ```  
     
-    <span data-ttu-id="c4be3-186">Wenn Sie Ihre Anwendung debuggen, müssen Sie möglicherweise den Code vom Anfang des Rendering Prozesses aus durchlaufen.</span><span class="sxs-lookup"><span data-stu-id="c4be3-186">When debugging your application, you may need to step through the code from the beginning of the rendering process.</span></span> <span data-ttu-id="c4be3-187">Wenn Sie Webseiten auf Websites Rendern und keinen Zugriff auf den Quellcode haben, können Sie die Option verwenden, da Webseiten nicht `?=value`  erkannte Parameter ignorieren.</span><span class="sxs-lookup"><span data-stu-id="c4be3-187">If you are rendering webpages on sites and you don't have access to the source code, you can use the `?=value` option, because webpages ignore unrecognized parameters.</span></span>   
+    <span data-ttu-id="660d4-186">Beim Debuggen Ihrer App müssen Sie den Code möglicherweise von Beginn des Renderingprozesses aus durchschritten.</span><span class="sxs-lookup"><span data-stu-id="660d4-186">When debugging your app, you may need to step through the code from the beginning of the rendering process.</span></span> <span data-ttu-id="660d4-187">Wenn Sie Webseiten auf Websites rendern und keinen Zugriff auf den Quellcode haben, können Sie die Option verwenden, da Webseiten unbekannte Parameter `?=value`  ignorieren.</span><span class="sxs-lookup"><span data-stu-id="660d4-187">If you are rendering webpages on sites and you don't have access to the source code, you can use the `?=value` option, because webpages ignore unrecognized parameters.</span></span>   
     
     > [!IMPORTANT]
-    > <span data-ttu-id="c4be3-188">Nachdem die erste Übereinstimmung in der URL gefunden wurde, wird der Debugger angehalten.</span><span class="sxs-lookup"><span data-stu-id="c4be3-188">After the first match is found in the URL, the debugger stops.</span></span>  <span data-ttu-id="c4be3-189">Zwei WebView2-Steuerelemente können nicht gleichzeitig gedebuggt werden, da der CDP-Port von allen WebView2-Steuerelementen freigegeben wird und eine einzelne Portnummer verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="c4be3-189">You cannot debug two WebView2 controls at the same time because the CDP port is shared by all WebView2 controls, and uses a single port number.</span></span>  
+    > <span data-ttu-id="660d4-188">Nachdem die erste Übereinstimmung in der URL gefunden wurde, wird der Debugger beendet.</span><span class="sxs-lookup"><span data-stu-id="660d4-188">After the first match is found in the URL, the debugger stops.</span></span>  <span data-ttu-id="660d4-189">Sie können zwei WebView2-Steuerelemente nicht gleichzeitig debuggen, da der CDP-Port von allen WebView2-Steuerelementen gemeinsam genutzt wird und eine einzelne Portnummer verwendet.</span><span class="sxs-lookup"><span data-stu-id="660d4-189">You cannot debug two WebView2 controls at the same time because the CDP port is shared by all WebView2 controls, and uses a single port number.</span></span>  
     
-*   <span data-ttu-id="c4be3-190">Debuggen von ausgeführten Prozessen</span><span class="sxs-lookup"><span data-stu-id="c4be3-190">Debug running processes</span></span>  
+*   <span data-ttu-id="660d4-190">Debuggen ausgeführter Prozesse</span><span class="sxs-lookup"><span data-stu-id="660d4-190">Debug running processes</span></span>  
     
-    <span data-ttu-id="c4be3-191">Möglicherweise müssen Sie den Debugger an die ausgeführten WebView2-Prozesse anfügen.</span><span class="sxs-lookup"><span data-stu-id="c4be3-191">You may need to attach the debugger to running WebView2 processes.</span></span> <span data-ttu-id="c4be3-192">Aktualisieren Sie dazu `launch.json` den `request` Parameter in `attach` .</span><span class="sxs-lookup"><span data-stu-id="c4be3-192">To do that, in `launch.json`, update the `request` parameter to `attach`.</span></span>
+    <span data-ttu-id="660d4-191">Möglicherweise müssen Sie den Debugger an die Ausführung von WebView2-Prozessen anfügen.</span><span class="sxs-lookup"><span data-stu-id="660d4-191">You may need to attach the debugger to running WebView2 processes.</span></span> <span data-ttu-id="660d4-192">Aktualisieren Sie dazu in `launch.json` den Parameter `request` auf `attach` .</span><span class="sxs-lookup"><span data-stu-id="660d4-192">To do that, in `launch.json`, update the `request` parameter to `attach`.</span></span>
     
     ```json
         "name": "Hello debugging world",
         "type": "pwa-msedge",
         "port": 9222, 
         "request": "attach",
-        "runtimeExecutable": "C:/path/to/your/webview2/application.exe",  
+        "runtimeExecutable": "C:/path/to/your/webview2/app.exe",  
         "env": {
             "Path": "%path%;e:/path/to/your/build/location; "  
         },
         "useWebView": true
     ```  
     
-    <span data-ttu-id="c4be3-193">Das WebView2-Steuerelement muss den CDP-Port öffnen, um das Debuggen des WebView2-Steuerelements zu ermöglichen.</span><span class="sxs-lookup"><span data-stu-id="c4be3-193">Your WebView2 control must open the CDP port to allow debugging of the WebView2 control.</span></span>  <span data-ttu-id="c4be3-194">Ihr Code muss erstellt werden, um sicherzustellen, dass nur ein WebView2-Steuerelement einen CDP-Port (Chrome Developer Protocol) geöffnet hat, bevor der Debugger gestartet wird.</span><span class="sxs-lookup"><span data-stu-id="c4be3-194">Your code must be built to ensure that only one WebView2 control has a Chrome Developer Protocol (CDP) port open, before starting the debugger.</span></span>  
+    <span data-ttu-id="660d4-193">Ihr WebView2-Steuerelement muss den CDP-Port öffnen, um das Debuggen des WebView2-Steuerelements zu ermöglichen.</span><span class="sxs-lookup"><span data-stu-id="660d4-193">Your WebView2 control must open the CDP port to allow debugging of the WebView2 control.</span></span>  <span data-ttu-id="660d4-194">Ihr Code muss so erstellt werden, dass nur ein WebView2-Steuerelement über einen geöffneten Chrome Developer Protocol (CDP)-Port verfügt, bevor der Debugger gestartet wird.</span><span class="sxs-lookup"><span data-stu-id="660d4-194">Your code must be built to ensure that only one WebView2 control has a Chrome Developer Protocol (CDP) port open, before starting the debugger.</span></span>  
     
-*   <span data-ttu-id="c4be3-195">Debug-Ablaufverfolgungsoptionen</span><span class="sxs-lookup"><span data-stu-id="c4be3-195">Debug tracing options</span></span>  
+*   <span data-ttu-id="660d4-195">Debuggen von Ablaufverfolgungsoptionen</span><span class="sxs-lookup"><span data-stu-id="660d4-195">Debug tracing options</span></span>  
     
-    <span data-ttu-id="c4be3-196">Fügen Sie den zu `trace` launch.jsden Parameter hinzu, um die Debug-Ablaufverfolgung zu aktivieren.</span><span class="sxs-lookup"><span data-stu-id="c4be3-196">Add the `trace` parameter to launch.json to enable debug tracing.</span></span>  
+    <span data-ttu-id="660d4-196">Fügen Sie den `trace` Parameter hinzu, launch.jsaktiviert werden soll, um die Debugablaufverfolgung zu aktivieren.</span><span class="sxs-lookup"><span data-stu-id="660d4-196">Add the `trace` parameter to launch.json to enable debug tracing.</span></span>  
     
-    1.  <span data-ttu-id="c4be3-197">Parameter hinzufügen `trace` .</span><span class="sxs-lookup"><span data-stu-id="c4be3-197">Add `trace` parameter.</span></span>  
+    1.  <span data-ttu-id="660d4-197">`trace`Add-Parameter.</span><span class="sxs-lookup"><span data-stu-id="660d4-197">Add `trace` parameter.</span></span>  
         
         :::row:::
            :::column span="":::
@@ -199,7 +202,7 @@ ms.locfileid: "11230698"
                 "type": "pwa-msedge",
                 "port": 9222, 
                 "request": "attach",
-                "runtimeExecutable": "C:/path/to/your/webview2/application.exe",  
+                "runtimeExecutable": "C:/path/to/your/webview2/app.exe",  
                 "env": {
                 "Path": "%path%;e:/path/to/your/build/location; "  
                 },
@@ -207,8 +210,8 @@ ms.locfileid: "11230698"
                 ,"trace": true  // Turn on  debug tracing, and save the output to a log file.
               ```  
               
-              :::image type="complex" source="./media/tracelog.png" alt-text=" Speichern Sie die Debug-Ausgabe in einer Protokolldatei." lightbox="./media/tracelog.png":::
-                 <span data-ttu-id="c4be3-199">Speichern der Debug-Ausgabe in einer Protokolldatei</span><span class="sxs-lookup"><span data-stu-id="c4be3-199">Save debug output to a log file</span></span>  
+              :::image type="complex" source="./media/tracelog.png" alt-text=" Speichern Sie die Debugausgabe in einer Protokolldatei." lightbox="./media/tracelog.png":::
+                 <span data-ttu-id="660d4-199">Speichern der Debugausgabe in einer Protokolldatei</span><span class="sxs-lookup"><span data-stu-id="660d4-199">Save debug output to a log file</span></span>  
               :::image-end:::  
            :::column-end:::
            :::column span="":::
@@ -217,52 +220,47 @@ ms.locfileid: "11230698"
               ```  
               
               :::image type="complex" source="./media/verbose.png" alt-text=" Ausführliche Ausgabe" lightbox="./media/verbose.png":::
-                 <span data-ttu-id="c4be3-201">Visual Studio-Code Debug-Ausgabe mit aktivierter ausführlicher Ablaufverfolgung</span><span class="sxs-lookup"><span data-stu-id="c4be3-201">Visual Studio Code Debug Output with verbose tracing turned on</span></span>  
+                 <span data-ttu-id="660d4-201">Visual Studio Codedebuggerausgabe mit aktivierter ausführlicher Ablaufverfolgung</span><span class="sxs-lookup"><span data-stu-id="660d4-201">Visual Studio Code Debug Output with verbose tracing turned on</span></span>  
               :::image-end:::  
            :::column-end:::
         :::row-end:::  
         
-*   <span data-ttu-id="c4be3-202">Debuggen von Office-Add-ins</span><span class="sxs-lookup"><span data-stu-id="c4be3-202">Debug Office Add-ins.</span></span>
+*   <span data-ttu-id="660d4-202">Debuggen von Office-Add-Ins.</span><span class="sxs-lookup"><span data-stu-id="660d4-202">Debug Office Add-ins.</span></span>  
     
-    <span data-ttu-id="c4be3-203">Wenn Sie Office-Add-ins Debuggen, öffnen Sie den Add-in-Quellcode in einer separaten Instanz von Visual Studio-Code.</span><span class="sxs-lookup"><span data-stu-id="c4be3-203">If you're debugging Office Add-ins, open the add-in source code in a separate instance of Visual Studio Code.</span></span>  <span data-ttu-id="c4be3-204">Öffnen Sie launch.jsin ihrer WebView2-Anwendung, und fügen Sie den folgenden Codeausschnitt hinzu, um den Debugger an das Office-Add-in anzufügen.</span><span class="sxs-lookup"><span data-stu-id="c4be3-204">Open launch.json in your WebView2 application and add the following code snippet to attach the debugger to the Office add-in.</span></span>
+    <span data-ttu-id="660d4-203">Wenn Sie Office-Add-Ins debuggen, öffnen Sie den Add-In-Quellcode in einer separaten Instanz von Visual Studio Code.</span><span class="sxs-lookup"><span data-stu-id="660d4-203">If you're debugging Office Add-ins, open the add-in source code in a separate instance of Visual Studio Code.</span></span>  <span data-ttu-id="660d4-204">Öffnen launch.jsin Ihrer WebView2-App, und fügen Sie den folgenden Codeausschnitt hinzu, um den Debugger an das Office-Add-In anfügen.</span><span class="sxs-lookup"><span data-stu-id="660d4-204">Open launch.json in your WebView2 app and add the following code snippet to attach the debugger to the Office add-in.</span></span>
     
     ```json
     ,"debugServer": 4711
     ```  
     
-*   <span data-ttu-id="c4be3-205">Problembehandlung des Debuggers</span><span class="sxs-lookup"><span data-stu-id="c4be3-205">Troubleshooting the debugger</span></span>  
+*   <span data-ttu-id="660d4-205">Problembehandlung beim Debugger</span><span class="sxs-lookup"><span data-stu-id="660d4-205">Troubleshooting the debugger</span></span>  
     
-    <span data-ttu-id="c4be3-206">Bei Verwendung des Debuggers können die folgenden Szenarien auftreten.</span><span class="sxs-lookup"><span data-stu-id="c4be3-206">You may encounter the following scenarios when using the debugger.</span></span>  
+    <span data-ttu-id="660d4-206">Bei Verwendung des Debuggers können die folgenden Szenarien auftreten.</span><span class="sxs-lookup"><span data-stu-id="660d4-206">You may encounter the following scenarios when using the debugger.</span></span>  
     
-    *   <span data-ttu-id="c4be3-207">Der Debugger wird nicht am Haltepunkt angehalten, und Sie haben die Debug-Ausgabe.</span><span class="sxs-lookup"><span data-stu-id="c4be3-207">The debugger doesn't stop at the breakpoint, and you have debug output.</span></span>  <span data-ttu-id="c4be3-208">Um das Problem zu beheben, stellen Sie sicher, dass die Datei mit dem Haltepunkt dieselbe Datei ist, die vom WebView2-Steuerelement verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="c4be3-208">To solve the issue, confirm that the file with the breakpoint is the same file that's used by the WebView2 control.</span></span>  <span data-ttu-id="c4be3-209">Der Debugger führt keine Quell Pfadzuordnung aus.</span><span class="sxs-lookup"><span data-stu-id="c4be3-209">The debugger doesn't perform source path mapping.</span></span>  
-    *   <span data-ttu-id="c4be3-210">Sie können nicht an einen ausgeführten Prozess anfügen, und Sie erhalten einen Timeoutfehler.</span><span class="sxs-lookup"><span data-stu-id="c4be3-210">You can't attach to a running process, and you get a timeout error.</span></span>  <span data-ttu-id="c4be3-211">Um das Problem zu beheben, stellen Sie sicher, dass das WebView2-Steuerelement den CDP-Port geöffnet hat.</span><span class="sxs-lookup"><span data-stu-id="c4be3-211">To solve the issue, confirm that the WebView2 control opened the CDP port.</span></span>  <span data-ttu-id="c4be3-212">Stellen Sie sicher, dass Ihr  `additionalBrowserArguments`  Wert in der Registrierung richtig ist, oder die Optionen richtig sind.</span><span class="sxs-lookup"><span data-stu-id="c4be3-212">Ensure your `additionalBrowserArguments` value in the registry is correct, or the options are correct.</span></span>  <span data-ttu-id="c4be3-213">Weitere Informationen finden Sie unter [additionalBrowserArguments für dotnet][Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments] und [additionalBrowserArguments für Win32][Webview2ReferenceWin32Webview2IdlParameters].</span><span class="sxs-lookup"><span data-stu-id="c4be3-213">For more information, see [additionalBrowserArguments for dotnet][Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments] and [additionalBrowserArguments for Win32][Webview2ReferenceWin32Webview2IdlParameters].</span></span>  
+    *   <span data-ttu-id="660d4-207">Der Debugger wird nicht am Haltepunkt beendet, und Sie haben eine Debugausgabe.</span><span class="sxs-lookup"><span data-stu-id="660d4-207">The debugger doesn't stop at the breakpoint, and you have debug output.</span></span>  <span data-ttu-id="660d4-208">Um das Problem zu beheben, vergewissern Sie sich, dass die Datei mit dem Haltepunkt dieselbe Datei ist, die vom WebView2-Steuerelement verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="660d4-208">To solve the issue, confirm that the file with the breakpoint is the same file that's used by the WebView2 control.</span></span>  <span data-ttu-id="660d4-209">Der Debugger führt keine Quellpfadzuordnung durch.</span><span class="sxs-lookup"><span data-stu-id="660d4-209">The debugger doesn't perform source path mapping.</span></span>  
+    *   <span data-ttu-id="660d4-210">Sie können keinen laufenden Prozess anfügen, und Es wird ein Timeoutfehler angezeigt.</span><span class="sxs-lookup"><span data-stu-id="660d4-210">You can't attach to a running process, and you get a timeout error.</span></span>  <span data-ttu-id="660d4-211">Um das Problem zu beheben, vergewissern Sie sich, dass das WebView2-Steuerelement den CDP-Port geöffnet hat.</span><span class="sxs-lookup"><span data-stu-id="660d4-211">To solve the issue, confirm that the WebView2 control opened the CDP port.</span></span>  <span data-ttu-id="660d4-212">Stellen Sie  `additionalBrowserArguments`  sicher, dass der Wert in der Registrierung korrekt ist oder die Optionen richtig sind.</span><span class="sxs-lookup"><span data-stu-id="660d4-212">Ensure your `additionalBrowserArguments` value in the registry is correct, or the options are correct.</span></span>  <span data-ttu-id="660d4-213">Weitere Informationen finden Sie unter [additionalBrowserArguments for dotnet][Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments] und [additionalBrowserArguments for Win32][Webview2ReferenceWin32Webview2IdlParameters].</span><span class="sxs-lookup"><span data-stu-id="660d4-213">For more information, navigate to [additionalBrowserArguments for dotnet][Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments] and [additionalBrowserArguments for Win32][Webview2ReferenceWin32Webview2IdlParameters].</span></span>  
     
 * * *  
 
-## <span data-ttu-id="c4be3-214">Weitere Informationen</span><span class="sxs-lookup"><span data-stu-id="c4be3-214">See also</span></span>  
+## <a name="see-also"></a><span data-ttu-id="660d4-214">Weitere Informationen</span><span class="sxs-lookup"><span data-stu-id="660d4-214">See also</span></span>  
 
-*   <span data-ttu-id="c4be3-215">Informationen zum Einstieg in die Verwendung von WebView2 finden Sie unter [WebView2 erste Schritte][Webview2MainGettingStarted].</span><span class="sxs-lookup"><span data-stu-id="c4be3-215">To get started using WebView2, see [WebView2 Getting Started Guides][Webview2MainGettingStarted].</span></span>  
-*   <span data-ttu-id="c4be3-216">Ein umfassendes Beispiel für WebView2-Funktionen finden Sie im [WebView2Samples][GithubMicrosoftedgeWebview2samples] -Repo auf GitHub.</span><span class="sxs-lookup"><span data-stu-id="c4be3-216">For a comprehensive example of WebView2 capabilities, see the [WebView2Samples][GithubMicrosoftedgeWebview2samples] repo on GitHub.</span></span>
-*   <span data-ttu-id="c4be3-217">Ausführlichere Informationen zu WebView2-APIs finden Sie unter [API-Referenz][Webview2ApiReference].</span><span class="sxs-lookup"><span data-stu-id="c4be3-217">For more detailed information about WebView2 APIs, see [API reference][Webview2ApiReference].</span></span>
-*   <span data-ttu-id="c4be3-218">Weitere Informationen zu WebView2 finden Sie unter [WebView2-Ressourcen][Webview2MainNextSteps].</span><span class="sxs-lookup"><span data-stu-id="c4be3-218">For more information about WebView2, see [WebView2 Resources][Webview2MainNextSteps].</span></span>
+*   <span data-ttu-id="660d4-215">Navigieren Sie zu [WebView2 Getting Started Guides,][Webview2MainGettingStarted]um mit WebView2 zu beginnen.</span><span class="sxs-lookup"><span data-stu-id="660d4-215">To get started using WebView2, navigate to [WebView2 Getting Started Guides][Webview2MainGettingStarted].</span></span>  
+*   <span data-ttu-id="660d4-216">Ein umfassendes Beispiel für WebView2-Funktionen finden Sie im [WebView2Samples-Repository][GithubMicrosoftedgeWebview2samples] auf GitHub.</span><span class="sxs-lookup"><span data-stu-id="660d4-216">For a comprehensive example of WebView2 capabilities, navigate to the [WebView2Samples][GithubMicrosoftedgeWebview2samples] repo on GitHub.</span></span>
+*   <span data-ttu-id="660d4-217">Weitere Informationen zu WebView2-APIs finden Sie unter [API-Referenz][Webview2ApiReference].</span><span class="sxs-lookup"><span data-stu-id="660d4-217">For more detailed information about WebView2 APIs, navigate to [API reference][Webview2ApiReference].</span></span>
+*   <span data-ttu-id="660d4-218">Weitere Informationen zu WebView2 finden Sie unter [WebView2 Resources][Webview2MainNextSteps].</span><span class="sxs-lookup"><span data-stu-id="660d4-218">For more information about WebView2, navigate to [WebView2 Resources][Webview2MainNextSteps].</span></span>
     
-## <span data-ttu-id="c4be3-219">Kontakt mit dem Microsoft Edge WebView-Team</span><span class="sxs-lookup"><span data-stu-id="c4be3-219">Getting in touch with the Microsoft Edge WebView team</span></span>  
+## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a><span data-ttu-id="660d4-219">Kontakt mit dem Microsoft Edge WebView-Team</span><span class="sxs-lookup"><span data-stu-id="660d4-219">Getting in touch with the Microsoft Edge WebView team</span></span>  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumMain]: ../index.md "Microsoft Edge (Chrom)-Entwickler Tools | Microsoft docs"  
+[DevtoolsGuideChromiumMain]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 
-[Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments]: /dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.additionalbrowserarguments "CoreWebView2EnvironmentOptions. AdditionalBrowserArguments-Eigenschaft (Microsoft. Web. WebView2. Core) | Microsoft docs"  
-[Webview2ReferenceWin32Webview2IdlParameters]: /microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions  "CreateCoreWebView2Environment-Globals | Microsoft docs"  
-[Webview2ApiReference]: ../webview2-api-reference.md "Microsoft Edge WebView2-API-Referenz | Microsoft docs"  
-[Webview2MainNextSteps]: ../index.md#next-steps "Nächste Schritte – Einführung in Microsoft Edge WebView2 (Preview) | Microsoft docs"  
-[Webview2MainGettingStarted]: ../index.md#getting-started "Erste Schritte – Einführung in Microsoft Edge WebView2 (Preview) | Microsoft docs"  
+[Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments]: /dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.additionalbrowserarguments "CoreWebView2EnvironmentOptions.AdditionalBrowserArguments Property (Microsoft.Web.WebView2.Core) | Microsoft Docs"  
+[Webview2ReferenceWin32Webview2IdlParameters]: /microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions  "CreateCoreWebView2Environment – Globale | Microsoft Docs"  
+[Webview2ApiReference]: ../webview2-api-reference.md "Microsoft Edge WebView2 API Reference | Microsoft Docs"  
+[Webview2MainNextSteps]: ../index.md#next-steps "Nächste Schritte – Einführung in Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
+[Webview2MainGettingStarted]: ../index.md#getting-started "Erste Schritte – Einführung in Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
 
-[GithubMicrosoftedgeWebviewfeedbackMain]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView-Feedback-MicrosoftEdge/WebViewFeedback | GitHub"  
-[GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2-Beispiele-MicrosoftEdge/WebView2Samples | GitHub"  
-
-[GithubMicrosoftVscodeJSDebugWhatsNew]: https://github.com/microsoft/vscode-js-debug#whats-new "Was ist neu? -JavaScript-Debugger für Visual Studio-Code – Microsoft/vscode-js – Debuggen | GitHub"  
-
-[GithubMicrosoftVscodeEdgeDebug2ReadmeChromiumWebviewApplications]: https://github.com/microsoft/vscode-edge-debug2/blob/master/README.md#microsoft-edge-chromium-webview-applications "Microsoft Edge (Chrom) WebView-Anwendungen – Visual Studio-Code – Debugger für Microsoft Edge – Microsoft/vscode-Edge-debug2 | GitHub"  
+[GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2-Beispiele – MicrosoftEdge/WebView2Samples | GitHub"  
