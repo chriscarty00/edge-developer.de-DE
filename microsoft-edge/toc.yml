@@ -403,8 +403,10 @@
               href: webview2/howto/static.md
             - name: Debug-WebView2
               href: webview2/howto/debug.md
-            - name: Automatisieren mit dem Edge-Treiber
+            - name: Automatisieren mit dem Microsoft Edge-Treiber
               href: webview2/howto/webdriver.md
+            - name: Verwenden des Chromium DevTools-Protokolls in WebView2
+              href: webview2/howto/chromium-devtools-protocol.md
         - name: Verweis
           href: webview2/webview2-api-reference.md
           items:
