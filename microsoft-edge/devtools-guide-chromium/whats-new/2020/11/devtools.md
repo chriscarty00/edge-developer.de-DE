@@ -3,16 +3,17 @@ description: Microsoft Edge unter Linux, verbesserte Webhint-Tipps im Probleme-T
 title: Neuerungen in DevTools (Microsoft Edge 88)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/12/2021
+ms.date: 03/15/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
-ms.openlocfilehash: 6a36029aa97604b6aea20f232d329ce3805a3144
-ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
-ms.translationtype: MT
+ms.localizationpriority: high
+ms.openlocfilehash: 7f4f9e2602d26b09a8b52a570c4caaaccc4f04f1
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "11408367"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439275"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -113,7 +114,7 @@ Im Bereich **Stile** werden die [CSS-Variablen][MdnUsingCssCustomProperties] nun
 
 Die folgenden neuen Features in den Tools [Netzwerk](#network-tool), [Anwendung](#application-tool) und [Quellen](#sources-tool) unterstützen Sie beim Erstellen Ihrer [PWA][ProgressiveWebAppsIndex].  Verwenden Sie die folgenden Features, wenn Probleme beim Debuggen Ihrer Service Worker auftreten.  
 
-Das Routing von Anforderungen zeigt die `startup`- und `fetch`-Ereignisse basierend auf den Netzwerkanforderungen an, die von Service Workern ausgeführt werden.  Der Zugriff auf die Zeitpläne erfolgt entweder über das **Application**- oder das **Network**-Tool.  Die Zeitachsen helfen, wenn Sie Probleme mit Servicemitarbeitern haben und anzeigen möchten, ob etwas mit dem `startup` or-Ereignis nicht `fetch` stimmt.  
+Das Routing von Anforderungen zeigt die `startup`- und `fetch`-Ereignisse basierend auf den Netzwerkanforderungen an, die von Service Workern ausgeführt werden.  Der Zugriff auf die Zeitpläne erfolgt entweder über das **Anwendung**- oder das **Netzwerk**-Tool.  Die Zeitpläne helfen, wenn Sie Probleme mit Service Workers haben und anzeigen möchten, ob etwas mit dem Ereignis `startup` oder `fetch` nicht stimmt.  
 
 ### <a name="application-tool"></a>Anwendung-Tool  
 
@@ -192,8 +193,8 @@ Zum Kopieren des Eigenschaftswerts in die Zwischenablage navigieren Sie zu [Form
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/11/paste-property-value.msft.png" alt-text="Wert der Paste-Eigenschaft in Microsoft Visual Studio Code" lightbox="../../media/2020/11/paste-property-value.msft.png":::
-         Wert der Paste-Eigenschaft in Microsoft Visual Studio Code  
+      :::image type="complex" source="../../media/2020/11/paste-property-value.msft.png" alt-text="Einfügen eines Eigenschaftswerts in Microsoft Visual Studio Code" lightbox="../../media/2020/11/paste-property-value.msft.png":::
+         Einfügen eines Eigenschaftswerts in Microsoft Visual Studio Code  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -373,7 +374,7 @@ Wenn Sie unter Windows, Linux oder macOS arbeiten, sollten Sie die [Microsoft Ed
 
 [MicrosoftinsiderDownloadPlatformLinux]: https://www.microsoftedgeinsider.com/download?platform=linux "Herunterladen von Microsoft Edge Insider Channels"  
 
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge Preview Channels"  
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge-Vorschaukanäle"  
 
 [VisualStudioCode]: https://code.visualstudio.com "Visual Studio Code"  
 
