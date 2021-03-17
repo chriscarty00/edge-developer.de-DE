@@ -3,16 +3,16 @@ description: Entdecken Sie neue Workflows zum Anzeigen und Ändern von CSS in Mi
 title: CSS-Referenz
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: a99cf46c4c0a6c6f14892268a30f8aab471e919d
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 84aacbb3961f6b8f6e9a0bda8823fecbbb26ec25
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399141"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439303"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,414 +28,414 @@ ms.locfileid: "11399141"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# <a name="css-reference"></a><span data-ttu-id="55894-104">CSS-Referenz</span><span class="sxs-lookup"><span data-stu-id="55894-104">CSS reference</span></span>  
+# <a name="css-reference"></a><span data-ttu-id="e4a25-104">CSS-Referenz</span><span class="sxs-lookup"><span data-stu-id="e4a25-104">CSS reference</span></span>  
 
-<span data-ttu-id="55894-105">Entdecken Sie neue Workflows in der folgenden umfassenden Referenz zu Microsoft Edge DevTools-Features im Zusammenhang mit dem Anzeigen und Ändern von CSS.</span><span class="sxs-lookup"><span data-stu-id="55894-105">Discover new workflows in the following comprehensive reference of Microsoft Edge DevTools features related to viewing and changing CSS.</span></span>  
+<span data-ttu-id="e4a25-105">Entdecken Sie neue Workflows in der folgenden umfassenden Referenz zu Microsoft Edge DevTools-Features im Zusammenhang mit dem Anzeigen und Ändern von CSS.</span><span class="sxs-lookup"><span data-stu-id="e4a25-105">Discover new workflows in the following comprehensive reference of Microsoft Edge DevTools features related to viewing and changing CSS.</span></span>  
 
-<span data-ttu-id="55894-106">Um die Grundlagen zu erlernen, navigieren Sie zu [Erste Schritte mit dem Anzeigen und Ändern von CSS][DevToolsCSSGetStarted].</span><span class="sxs-lookup"><span data-stu-id="55894-106">To learn the basics, navigate to [Get Started with Viewing and Changing CSS][DevToolsCSSGetStarted].</span></span>  
+<span data-ttu-id="e4a25-106">Um die Grundlagen zu erlernen, navigieren Sie zu [Erste Schritte mit dem Anzeigen und Ändern von CSS][DevToolsCSSGetStarted].</span><span class="sxs-lookup"><span data-stu-id="e4a25-106">To learn the basics, navigate to [Get Started with Viewing and Changing CSS][DevToolsCSSGetStarted].</span></span>  
 
-## <a name="choose-an-element"></a><span data-ttu-id="55894-107">Auswählen eines Elements</span><span class="sxs-lookup"><span data-stu-id="55894-107">Choose an element</span></span>  
+## <a name="choose-an-element"></a><span data-ttu-id="e4a25-107">Auswählen eines Elements</span><span class="sxs-lookup"><span data-stu-id="e4a25-107">Choose an element</span></span>  
 
-<span data-ttu-id="55894-108">Mit **dem Tool Elemente** von DevTools können Sie die CSS eines Elements gleichzeitig anzeigen oder ändern.</span><span class="sxs-lookup"><span data-stu-id="55894-108">The **Elements** tool of DevTools lets you view or change the CSS of one element at a time.</span></span>  <span data-ttu-id="55894-109">Das ausgewählte Element wird in der **DOM-Struktur hervorgehoben.**</span><span class="sxs-lookup"><span data-stu-id="55894-109">The selected element is highlighted in the **DOM Tree**.</span></span>  <span data-ttu-id="55894-110">Die Formatvorlagen des Elements werden im Bereich **Formatvorlagen** angezeigt.</span><span class="sxs-lookup"><span data-stu-id="55894-110">The styles of the element are shown in the **Styles** pane.</span></span>  <span data-ttu-id="55894-111">Navigieren Sie für ein Lernprogramm zu [Css für ein Element anzeigen.][DevToolsCSSGetStartedTutorial]</span><span class="sxs-lookup"><span data-stu-id="55894-111">For a tutorial, navigate to [View the CSS for an element][DevToolsCSSGetStartedTutorial].</span></span>  
+<span data-ttu-id="e4a25-108">Mit **dem Tool Elemente** von DevTools können Sie die CSS eines Elements gleichzeitig anzeigen oder ändern.</span><span class="sxs-lookup"><span data-stu-id="e4a25-108">The **Elements** tool of DevTools lets you view or change the CSS of one element at a time.</span></span>  <span data-ttu-id="e4a25-109">Das ausgewählte Element wird in der **DOM-Struktur hervorgehoben.**</span><span class="sxs-lookup"><span data-stu-id="e4a25-109">The selected element is highlighted in the **DOM Tree**.</span></span>  <span data-ttu-id="e4a25-110">Die Formatvorlagen des Elements werden im Bereich **Formatvorlagen** angezeigt.</span><span class="sxs-lookup"><span data-stu-id="e4a25-110">The styles of the element are shown in the **Styles** pane.</span></span>  <span data-ttu-id="e4a25-111">Navigieren Sie für ein Lernprogramm zu [Css für ein Element anzeigen.][DevToolsCSSGetStartedTutorial]</span><span class="sxs-lookup"><span data-stu-id="e4a25-111">For a tutorial, navigate to [View the CSS for an element][DevToolsCSSGetStartedTutorial].</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="55894-112">In der folgenden Abbildung ist das Element, das in der `h1` **DOM-Struktur** hervorgehoben ist, das ausgewählte Element.</span><span class="sxs-lookup"><span data-stu-id="55894-112">In the following figure, the `h1` element that is highlighted in the **DOM Tree** is the selected element.</span></span>  <span data-ttu-id="55894-113">Auf der rechten Seite werden die Formatvorlagen des Elements im Bereich **Formatvorlagen** angezeigt.</span><span class="sxs-lookup"><span data-stu-id="55894-113">On the right, the styles of the element are shown in the **Styles** pane.</span></span>  <span data-ttu-id="55894-114">Auf der linken Seite wird das Element im Viewport hervorgehoben, aber nur, weil die Maus derzeit in der **DOM-Struktur**auf das Element zeigt.</span><span class="sxs-lookup"><span data-stu-id="55894-114">On the left, the element is highlighted in the viewport, but only because the mouse is currently hovering over it in the **DOM Tree**.</span></span>  
+> <span data-ttu-id="e4a25-112">In der folgenden Abbildung ist das Element, das in der `h1` **DOM-Struktur** hervorgehoben ist, das ausgewählte Element.</span><span class="sxs-lookup"><span data-stu-id="e4a25-112">In the following figure, the `h1` element that is highlighted in the **DOM Tree** is the selected element.</span></span>  <span data-ttu-id="e4a25-113">Auf der rechten Seite werden die Formatvorlagen des Elements im Bereich **Formatvorlagen** angezeigt.</span><span class="sxs-lookup"><span data-stu-id="e4a25-113">On the right, the styles of the element are shown in the **Styles** pane.</span></span>  <span data-ttu-id="e4a25-114">Auf der linken Seite wird das Element im Viewport hervorgehoben, aber nur, weil die Maus derzeit in der **DOM-Struktur**auf das Element zeigt.</span><span class="sxs-lookup"><span data-stu-id="e4a25-114">On the left, the element is highlighted in the viewport, but only because the mouse is currently hovering over it in the **DOM Tree**.</span></span>  
 
 :::image type="complex" source="../media/css-elements-styles-h1.msft.png" alt-text="Ein Beispiel für ein ausgewähltes Element" lightbox="../media/css-elements-styles-h1.msft.png":::
-   <span data-ttu-id="55894-116">Ein Beispiel für ein ausgewähltes Element</span><span class="sxs-lookup"><span data-stu-id="55894-116">An example of a selected element</span></span>  
+   <span data-ttu-id="e4a25-116">Ein Beispiel für ein ausgewähltes Element</span><span class="sxs-lookup"><span data-stu-id="e4a25-116">An example of a selected element</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="55894-117">Verwenden Sie eine der folgenden Aktionen, um ein Element auszuwählen.</span><span class="sxs-lookup"><span data-stu-id="55894-117">Use one the following actions to select an element.</span></span>  
+<span data-ttu-id="e4a25-117">Verwenden Sie eine der folgenden Aktionen, um ein Element auszuwählen.</span><span class="sxs-lookup"><span data-stu-id="e4a25-117">Use one the following actions to select an element.</span></span>  
 
-*   <span data-ttu-id="55894-118">Zeigen Sie in Ihrem Viewport auf das Element, öffnen Sie das Kontextmenü \(mit der rechten Maustaste auf\), und wählen Sie **Überprüfen aus.**</span><span class="sxs-lookup"><span data-stu-id="55894-118">In your viewport, hover on the element, open the contextual menu \(right-click\), and choose **Inspect**.</span></span>  
-*   <span data-ttu-id="55894-119">Wählen Sie in DevTools **Ein** Element auswählen \( Element auswählen ![ ][ImageSelectAnElementIcon] \) oder `Control` + `Shift` + `C` \(Windows, Linux\) oder `Command` + `Shift` + `C` \(macOS\) aus, und wählen Sie dann das Element im Viewport aus.</span><span class="sxs-lookup"><span data-stu-id="55894-119">In DevTools, choose **Select an element** \(![Select an element][ImageSelectAnElementIcon]\) or select `Control`+`Shift`+`C` \(Windows, Linux\) or `Command`+`Shift`+`C` \(macOS\), and then choose the element in the viewport.</span></span>  
-*   <span data-ttu-id="55894-120">Wählen Sie in DevTools das Element in der **DOM-Struktur aus.**</span><span class="sxs-lookup"><span data-stu-id="55894-120">In DevTools, choose the element in the **DOM Tree**.</span></span>  
-*   <span data-ttu-id="55894-121">Führen Sie in DevTools eine Abfrage wie in der Konsole aus, zeigen Sie auf das Ergebnis, öffnen Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste auf\), und wählen Sie im Bereich Elemente anzeigen `document.querySelector('p')` **aus.** \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="55894-121">In DevTools, run a query like `document.querySelector('p')` in the **Console**, hover on the result, open the contextual menu \(right-click\), and choose **Reveal in Elements panel**.</span></span>  
+*   <span data-ttu-id="e4a25-118">Zeigen Sie in Ihrem Viewport auf das Element, öffnen Sie das Kontextmenü \(mit der rechten Maustaste auf\), und wählen Sie **Überprüfen aus.**</span><span class="sxs-lookup"><span data-stu-id="e4a25-118">In your viewport, hover on the element, open the contextual menu \(right-click\), and choose **Inspect**.</span></span>  
+*   <span data-ttu-id="e4a25-119">Wählen Sie in DevTools **Ein** Element auswählen \( Element auswählen ![ ](../media/select-an-element-icon.msft.png) \) oder `Control` + `Shift` + `C` \(Windows, Linux\) oder `Command` + `Shift` + `C` \(macOS\) aus, und wählen Sie dann das Element im Viewport aus.</span><span class="sxs-lookup"><span data-stu-id="e4a25-119">In DevTools, choose **Select an element** \(![Select an element](../media/select-an-element-icon.msft.png)\) or select `Control`+`Shift`+`C` \(Windows, Linux\) or `Command`+`Shift`+`C` \(macOS\), and then choose the element in the viewport.</span></span>  
+*   <span data-ttu-id="e4a25-120">Wählen Sie in DevTools das Element in der **DOM-Struktur aus.**</span><span class="sxs-lookup"><span data-stu-id="e4a25-120">In DevTools, choose the element in the **DOM Tree**.</span></span>  
+*   <span data-ttu-id="e4a25-121">Führen Sie in DevTools eine Abfrage wie in der Konsole aus, zeigen Sie auf das Ergebnis, öffnen Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste auf\), und wählen Sie im Bereich Elemente anzeigen `document.querySelector('p')` **aus.** \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="e4a25-121">In DevTools, run a query like `document.querySelector('p')` in the **Console**, hover on the result, open the contextual menu \(right-click\), and choose **Reveal in Elements panel**.</span></span>  
 
-## <a name="view-css"></a><span data-ttu-id="55894-122">Anzeigen von CSS</span><span class="sxs-lookup"><span data-stu-id="55894-122">View CSS</span></span>  
+## <a name="view-css"></a><span data-ttu-id="e4a25-122">Anzeigen von CSS</span><span class="sxs-lookup"><span data-stu-id="e4a25-122">View CSS</span></span>  
 
-### <a name="view-the-external-stylesheet-where-a-rule-is-defined"></a><span data-ttu-id="55894-123">Anzeigen des externen Stylesheets, in dem eine Regel definiert ist</span><span class="sxs-lookup"><span data-stu-id="55894-123">View the external stylesheet where a rule is defined</span></span>  
+### <a name="view-the-external-stylesheet-where-a-rule-is-defined"></a><span data-ttu-id="e4a25-123">Anzeigen des externen Stylesheets, in dem eine Regel definiert ist</span><span class="sxs-lookup"><span data-stu-id="e4a25-123">View the external stylesheet where a rule is defined</span></span>  
 
-<span data-ttu-id="55894-124">Wählen Sie **im Bereich** Formatvorlagen den Link neben einer CSS-Regel aus, um das externe Stylesheet zu öffnen, das die Regel definiert.</span><span class="sxs-lookup"><span data-stu-id="55894-124">In the **Styles** pane, choose the link next to a CSS rule to open the external stylesheet that defines the rule.</span></span>  
+<span data-ttu-id="e4a25-124">Wählen Sie **im Bereich** Formatvorlagen den Link neben einer CSS-Regel aus, um das externe Stylesheet zu öffnen, das die Regel definiert.</span><span class="sxs-lookup"><span data-stu-id="e4a25-124">In the **Styles** pane, choose the link next to a CSS rule to open the external stylesheet that defines the rule.</span></span>  
 
-<span data-ttu-id="55894-125">Wenn das Stylesheet vermint ist, navigieren Sie zu [Verminte Datei lesbar machen.][DevToolsJavascriptReferenceFormat]</span><span class="sxs-lookup"><span data-stu-id="55894-125">If the stylesheet is minified, navigate to [Make a minified file readable][DevToolsJavascriptReferenceFormat].</span></span>  
+<span data-ttu-id="e4a25-125">Wenn das Stylesheet vermint ist, navigieren Sie zu [Verminte Datei lesbar machen.][DevToolsJavascriptReferenceFormat]</span><span class="sxs-lookup"><span data-stu-id="e4a25-125">If the stylesheet is minified, navigate to [Make a minified file readable][DevToolsJavascriptReferenceFormat].</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="55894-126">In der folgenden Abbildung werden Sie nach der Auswahl zu Zeile 2 von `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2` `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css` übernommen, in der die `.content h1:first-of-type` CSS-Regel definiert ist.</span><span class="sxs-lookup"><span data-stu-id="55894-126">In the following figure, after you choose `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2` you are taken to line 2 of `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css`, where the `.content h1:first-of-type` CSS rule is defined.</span></span>  
+> <span data-ttu-id="e4a25-126">In der folgenden Abbildung werden Sie nach der Auswahl zu Zeile 2 von `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2` `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css` übernommen, in der die `.content h1:first-of-type` CSS-Regel definiert ist.</span><span class="sxs-lookup"><span data-stu-id="e4a25-126">In the following figure, after you choose `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2` you are taken to line 2 of `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css`, where the `.content h1:first-of-type` CSS rule is defined.</span></span>  
 
 <!--todo:  replace "Master" phrasing in code snippet, if possible.  -->  
 
 :::image type="complex" source="../media/css-elements-styles-h1-highlight.msft.png" alt-text="Anzeigen des Stylesheets, in dem eine Regel definiert ist" lightbox="../media/css-elements-styles-h1-highlight.msft.png":::
-  <span data-ttu-id="55894-128">Anzeigen des Stylesheets, in dem eine Regel definiert ist</span><span class="sxs-lookup"><span data-stu-id="55894-128">Viewing the stylesheet where a rule is defined</span></span>  
+  <span data-ttu-id="e4a25-128">Anzeigen des Stylesheets, in dem eine Regel definiert ist</span><span class="sxs-lookup"><span data-stu-id="e4a25-128">Viewing the stylesheet where a rule is defined</span></span>  
 :::image-end:::  
 
-### <a name="view-only-the-css-that-is-actually-applied-to-an-element"></a><span data-ttu-id="55894-129">Nur das CSS anzeigen, das tatsächlich auf ein Element angewendet wird</span><span class="sxs-lookup"><span data-stu-id="55894-129">View only the CSS that is actually applied to an element</span></span>  
+### <a name="view-only-the-css-that-is-actually-applied-to-an-element"></a><span data-ttu-id="e4a25-129">Nur das CSS anzeigen, das tatsächlich auf ein Element angewendet wird</span><span class="sxs-lookup"><span data-stu-id="e4a25-129">View only the CSS that is actually applied to an element</span></span>  
 
-<span data-ttu-id="55894-130">Im **Bereich** Formatvorlagen werden alle Regeln angezeigt, die für ein Element gelten, einschließlich überschriebener Deklarationen.</span><span class="sxs-lookup"><span data-stu-id="55894-130">The **Styles** panel shows you all of the rules that apply to an element, including declarations that have been overridden.</span></span>  <span data-ttu-id="55894-131">Wenn Sie nicht an überschriebenen Deklarationen interessiert sind, zeigen Sie im **Bereich Berechnet** nur das CSS an, das tatsächlich auf ein Element angewendet wird.</span><span class="sxs-lookup"><span data-stu-id="55894-131">When you are not interested in overridden declarations, use the **Computed** panel to view only the CSS that is actually being applied to an element.</span></span>  
+<span data-ttu-id="e4a25-130">Im **Bereich** Formatvorlagen werden alle Regeln angezeigt, die für ein Element gelten, einschließlich überschriebener Deklarationen.</span><span class="sxs-lookup"><span data-stu-id="e4a25-130">The **Styles** panel shows you all of the rules that apply to an element, including declarations that have been overridden.</span></span>  <span data-ttu-id="e4a25-131">Wenn Sie nicht an überschriebenen Deklarationen interessiert sind, zeigen Sie im **Bereich Berechnet** nur das CSS an, das tatsächlich auf ein Element angewendet wird.</span><span class="sxs-lookup"><span data-stu-id="e4a25-131">When you are not interested in overridden declarations, use the **Computed** panel to view only the CSS that is actually being applied to an element.</span></span>  
 
-1.  <span data-ttu-id="55894-132">[Wählen Sie ein Element aus.](#choose-an-element)</span><span class="sxs-lookup"><span data-stu-id="55894-132">[Select an element](#choose-an-element).</span></span>  
-1.  <span data-ttu-id="55894-133">Navigieren Sie im **Tool** Elemente zum **Berechneten** Bereich.</span><span class="sxs-lookup"><span data-stu-id="55894-133">Navigate to the **Computed** panel in the **Elements** tool.</span></span>  
-
-> [!NOTE]
-> <span data-ttu-id="55894-134">In einem breiten DevTools-Fenster ist der **Berechnete** Bereich nicht vorhanden.</span><span class="sxs-lookup"><span data-stu-id="55894-134">On a wide DevTools window, the **Computed** panel does not exist.</span></span>  <span data-ttu-id="55894-135">Der Inhalt des **Berechneten** Panels wird im **Formatvorlagenbereich** angezeigt.</span><span class="sxs-lookup"><span data-stu-id="55894-135">The contents of the **Computed** panel are shown on the **Styles** panel.</span></span>  
-
-<span data-ttu-id="55894-136">Geerbte Eigenschaften sind undurchsichtig.</span><span class="sxs-lookup"><span data-stu-id="55894-136">Inherited properties are opaque.</span></span>  <span data-ttu-id="55894-137">Aktivieren Sie zum Anzeigen aller geerbten Werte das **Kontrollkästchen Alle** anzeigen.</span><span class="sxs-lookup"><span data-stu-id="55894-137">To display all inherited values, select the **Show All** checkbox.</span></span>  
+1.  <span data-ttu-id="e4a25-132">[Wählen Sie ein Element aus.](#choose-an-element)</span><span class="sxs-lookup"><span data-stu-id="e4a25-132">[Select an element](#choose-an-element).</span></span>  
+1.  <span data-ttu-id="e4a25-133">Navigieren Sie im **Tool** Elemente zum **Berechneten** Bereich.</span><span class="sxs-lookup"><span data-stu-id="e4a25-133">Navigate to the **Computed** panel in the **Elements** tool.</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="55894-138">In der folgenden Abbildung zeigt der **Berechnete** Bereich die CSS-Eigenschaften, die auf das aktuell ausgewählte Element angewendet `h1` werden.</span><span class="sxs-lookup"><span data-stu-id="55894-138">In the following figure, the **Computed** panel shows the CSS properties being applied to the currently-selected `h1` element.</span></span>  
+> <span data-ttu-id="e4a25-134">In einem breiten DevTools-Fenster ist der **Berechnete** Bereich nicht vorhanden.</span><span class="sxs-lookup"><span data-stu-id="e4a25-134">On a wide DevTools window, the **Computed** panel does not exist.</span></span>  <span data-ttu-id="e4a25-135">Der Inhalt des **Berechneten** Panels wird im **Formatvorlagenbereich** angezeigt.</span><span class="sxs-lookup"><span data-stu-id="e4a25-135">The contents of the **Computed** panel are shown on the **Styles** panel.</span></span>  
+
+<span data-ttu-id="e4a25-136">Geerbte Eigenschaften sind undurchsichtig.</span><span class="sxs-lookup"><span data-stu-id="e4a25-136">Inherited properties are opaque.</span></span>  <span data-ttu-id="e4a25-137">Aktivieren Sie zum Anzeigen aller geerbten Werte das **Kontrollkästchen Alle** anzeigen.</span><span class="sxs-lookup"><span data-stu-id="e4a25-137">To display all inherited values, select the **Show All** checkbox.</span></span>  
+
+> [!NOTE]
+> <span data-ttu-id="e4a25-138">In der folgenden Abbildung zeigt der **Berechnete** Bereich die CSS-Eigenschaften, die auf das aktuell ausgewählte Element angewendet `h1` werden.</span><span class="sxs-lookup"><span data-stu-id="e4a25-138">In the following figure, the **Computed** panel shows the CSS properties being applied to the currently-selected `h1` element.</span></span>  
 
 :::image type="complex" source="../media/css-elements-computed-h1.msft.png" alt-text="Der Berechnete Bereich" lightbox="../media/css-elements-computed-h1.msft.png":::
-   <span data-ttu-id="55894-140">Der **Berechnete** Bereich</span><span class="sxs-lookup"><span data-stu-id="55894-140">The **Computed** panel</span></span>  
+   <span data-ttu-id="e4a25-140">Der **Berechnete** Bereich</span><span class="sxs-lookup"><span data-stu-id="e4a25-140">The **Computed** panel</span></span>  
 :::image-end:::  
 
-### <a name="view-css-properties-in-alphabetical-order"></a><span data-ttu-id="55894-141">Anzeigen von CSS-Eigenschaften in alphabetischer Reihenfolge</span><span class="sxs-lookup"><span data-stu-id="55894-141">View CSS properties in alphabetical order</span></span>  
+### <a name="view-css-properties-in-alphabetical-order"></a><span data-ttu-id="e4a25-141">Anzeigen von CSS-Eigenschaften in alphabetischer Reihenfolge</span><span class="sxs-lookup"><span data-stu-id="e4a25-141">View CSS properties in alphabetical order</span></span>  
 
-<span data-ttu-id="55894-142">Verwenden Sie den **Berechneten** Bereich.</span><span class="sxs-lookup"><span data-stu-id="55894-142">Use the **Computed** panel.</span></span>  <span data-ttu-id="55894-143">Navigieren Sie [zu Nur css anzeigen, das tatsächlich auf ein Element angewendet wird.](#view-only-the-css-that-is-actually-applied-to-an-element)</span><span class="sxs-lookup"><span data-stu-id="55894-143">Navigate to [View only the CSS that is actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element).</span></span>  
+<span data-ttu-id="e4a25-142">Verwenden Sie den **Berechneten** Bereich.</span><span class="sxs-lookup"><span data-stu-id="e4a25-142">Use the **Computed** panel.</span></span>  <span data-ttu-id="e4a25-143">Navigieren Sie [zu Nur css anzeigen, das tatsächlich auf ein Element angewendet wird.](#view-only-the-css-that-is-actually-applied-to-an-element)</span><span class="sxs-lookup"><span data-stu-id="e4a25-143">Navigate to [View only the CSS that is actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element).</span></span>  
 
-### <a name="view-inherited-css-properties"></a><span data-ttu-id="55894-144">Anzeigen geerbter CSS-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="55894-144">View inherited CSS properties</span></span>  
+### <a name="view-inherited-css-properties"></a><span data-ttu-id="e4a25-144">Anzeigen geerbter CSS-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="e4a25-144">View inherited CSS properties</span></span>  
 
-<span data-ttu-id="55894-145">Aktivieren Sie **das Kontrollkästchen Alle** anzeigen im **Bereich Berechnet.**</span><span class="sxs-lookup"><span data-stu-id="55894-145">Check the **Show All** checkbox in the **Computed** panel.</span></span>  <span data-ttu-id="55894-146">Navigieren Sie [zu Nur css anzeigen, das tatsächlich auf ein Element angewendet wird.](#view-only-the-css-that-is-actually-applied-to-an-element)</span><span class="sxs-lookup"><span data-stu-id="55894-146">Navigate to [View only the CSS that is actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element).</span></span>  
+<span data-ttu-id="e4a25-145">Aktivieren Sie **das Kontrollkästchen Alle** anzeigen im **Bereich Berechnet.**</span><span class="sxs-lookup"><span data-stu-id="e4a25-145">Check the **Show All** checkbox in the **Computed** panel.</span></span>  <span data-ttu-id="e4a25-146">Navigieren Sie [zu Nur css anzeigen, das tatsächlich auf ein Element angewendet wird.](#view-only-the-css-that-is-actually-applied-to-an-element)</span><span class="sxs-lookup"><span data-stu-id="e4a25-146">Navigate to [View only the CSS that is actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element).</span></span>  
 
-### <a name="view-the-box-model-for-an-element"></a><span data-ttu-id="55894-147">Anzeigen des Boxmodells für ein Element</span><span class="sxs-lookup"><span data-stu-id="55894-147">View the box model for an element</span></span>  
+### <a name="view-the-box-model-for-an-element"></a><span data-ttu-id="e4a25-147">Anzeigen des Boxmodells für ein Element</span><span class="sxs-lookup"><span data-stu-id="e4a25-147">View the box model for an element</span></span>  
 
-<span data-ttu-id="55894-148">Zum Anzeigen [des Feldmodells][MDNBoxModel] eines Elements navigieren Sie zum **Formatvorlagenbereich.**</span><span class="sxs-lookup"><span data-stu-id="55894-148">To view [the box model][MDNBoxModel] of an element, navigate to the **Styles** panel.</span></span>  <span data-ttu-id="55894-149">Wenn Ihr DevTools-Fenster schmal ist, befindet sich das **Box Model-Diagramm** am unteren Rand des Panels.</span><span class="sxs-lookup"><span data-stu-id="55894-149">If your DevTools window is narrow, the **Box Model** diagram is at the bottom of the panel.</span></span>  
+<span data-ttu-id="e4a25-148">Zum Anzeigen [des Feldmodells][MDNBoxModel] eines Elements navigieren Sie zum **Formatvorlagenbereich.**</span><span class="sxs-lookup"><span data-stu-id="e4a25-148">To view [the box model][MDNBoxModel] of an element, navigate to the **Styles** panel.</span></span>  <span data-ttu-id="e4a25-149">Wenn Ihr DevTools-Fenster schmal ist, befindet sich das **Box Model-Diagramm** am unteren Rand des Panels.</span><span class="sxs-lookup"><span data-stu-id="e4a25-149">If your DevTools window is narrow, the **Box Model** diagram is at the bottom of the panel.</span></span>  
 
-<span data-ttu-id="55894-150">Wählen Und bearbeiten Sie einen Wert, um einen Wert zu ändern.</span><span class="sxs-lookup"><span data-stu-id="55894-150">Choose and edit on a value to change a value.</span></span>  
+<span data-ttu-id="e4a25-150">Wählen Und bearbeiten Sie einen Wert, um einen Wert zu ändern.</span><span class="sxs-lookup"><span data-stu-id="e4a25-150">Choose and edit on a value to change a value.</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="55894-151">In der folgenden Abbildung zeigt das \*\*\*\* **Diagramm Feldmodell** im Bereich Formatvorlagen das Feldmodell für das aktuell ausgewählte `h1` Element.</span><span class="sxs-lookup"><span data-stu-id="55894-151">In the following figure, the **Box Model** diagram in the **Styles** panel shows the box model for the currently selected `h1` element.</span></span>  
+> <span data-ttu-id="e4a25-151">In der folgenden Abbildung zeigt das \*\*\*\* **Diagramm Feldmodell** im Bereich Formatvorlagen das Feldmodell für das aktuell ausgewählte `h1` Element.</span><span class="sxs-lookup"><span data-stu-id="e4a25-151">In the following figure, the **Box Model** diagram in the **Styles** panel shows the box model for the currently selected `h1` element.</span></span>  
 
 :::image type="complex" source="../media/css-elements-styles-h1-2.msft.png" alt-text="Das Diagramm "Boxmodell"" lightbox="../media/css-elements-styles-h1-2.msft.png":::
-   <span data-ttu-id="55894-153">Das **Diagramm "Boxmodell"**</span><span class="sxs-lookup"><span data-stu-id="55894-153">The **Box Model** diagram</span></span>  
+   <span data-ttu-id="e4a25-153">Das **Diagramm "Boxmodell"**</span><span class="sxs-lookup"><span data-stu-id="e4a25-153">The **Box Model** diagram</span></span>  
 :::image-end:::  
 
-### <a name="search-and-filter-the-css-of-an-element"></a><span data-ttu-id="55894-154">Suchen und Filtern der CSS eines Elements</span><span class="sxs-lookup"><span data-stu-id="55894-154">Search and filter the CSS of an element</span></span>  
+### <a name="search-and-filter-the-css-of-an-element"></a><span data-ttu-id="e4a25-154">Suchen und Filtern der CSS eines Elements</span><span class="sxs-lookup"><span data-stu-id="e4a25-154">Search and filter the CSS of an element</span></span>  
 
-<span data-ttu-id="55894-155">Verwenden Sie **das Textfeld Filter** in den **Feldern Formatvorlagen** und **Berechnet,** um nach bestimmten CSS-Eigenschaften oder -Werten zu suchen.</span><span class="sxs-lookup"><span data-stu-id="55894-155">Use the **Filter** text box on the **Styles** and **Computed** panels to search for specific CSS properties or values.</span></span>  
+<span data-ttu-id="e4a25-155">Verwenden Sie **das Textfeld Filter** in den **Feldern Formatvorlagen** und **Berechnet,** um nach bestimmten CSS-Eigenschaften oder -Werten zu suchen.</span><span class="sxs-lookup"><span data-stu-id="e4a25-155">Use the **Filter** text box on the **Styles** and **Computed** panels to search for specific CSS properties or values.</span></span>  
 
-<span data-ttu-id="55894-156">Aktivieren Sie das Kontrollkästchen Alle anzeigen, um auch geerbte Eigenschaften im **Berechneten** Bereich **zu** durchsuchen.</span><span class="sxs-lookup"><span data-stu-id="55894-156">To also search inherited properties in the **Computed** panel, check the **Show All** checkbox.</span></span>  
+<span data-ttu-id="e4a25-156">Aktivieren Sie das Kontrollkästchen Alle anzeigen, um auch geerbte Eigenschaften im **Berechneten** Bereich **zu** durchsuchen.</span><span class="sxs-lookup"><span data-stu-id="e4a25-156">To also search inherited properties in the **Computed** panel, check the **Show All** checkbox.</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="55894-157">In der folgenden Abbildung wird der **Formatvorlagenbereich** so gefiltert, dass nur Regeln angezeigt werden, die die Suchabfrage `color` enthalten.</span><span class="sxs-lookup"><span data-stu-id="55894-157">In the following figure, the **Styles** panel is filtered to only show rules that include the search query `color`.</span></span>  
+> <span data-ttu-id="e4a25-157">In der folgenden Abbildung wird der **Formatvorlagenbereich** so gefiltert, dass nur Regeln angezeigt werden, die die Suchabfrage `color` enthalten.</span><span class="sxs-lookup"><span data-stu-id="e4a25-157">In the following figure, the **Styles** panel is filtered to only show rules that include the search query `color`.</span></span>  
 
 :::image type="complex" source="../media/css-elements-styles-filter-color.msft.png" alt-text="Filtern des Formatvorlagenbereichs" lightbox="../media/css-elements-styles-filter-color.msft.png":::
-   <span data-ttu-id="55894-159">Filtern des **Formatvorlagenbereichs**</span><span class="sxs-lookup"><span data-stu-id="55894-159">Filter the **Styles** panel</span></span>  
+   <span data-ttu-id="e4a25-159">Filtern des **Formatvorlagenbereichs**</span><span class="sxs-lookup"><span data-stu-id="e4a25-159">Filter the **Styles** panel</span></span>  
 :::image-end:::  
 
 > [!NOTE]
-> <span data-ttu-id="55894-160">In der folgenden Abbildung wird der **Berechnete** Bereich so gefiltert, dass nur Deklarationen angezeigt werden, die die Suchabfrage `100%` enthalten.</span><span class="sxs-lookup"><span data-stu-id="55894-160">In the following figure, the **Computed** panel is filtered to only show declarations that include the search query `100%`.</span></span>  
+> <span data-ttu-id="e4a25-160">In der folgenden Abbildung wird der **Berechnete** Bereich so gefiltert, dass nur Deklarationen angezeigt werden, die die Suchabfrage `100%` enthalten.</span><span class="sxs-lookup"><span data-stu-id="e4a25-160">In the following figure, the **Computed** panel is filtered to only show declarations that include the search query `100%`.</span></span>  
 
 :::image type="complex" source="../media/css-elements-computed-filter-100.msft.png" alt-text="Filtern des berechneten Panels" lightbox="../media/css-elements-computed-filter-100.msft.png":::
-   <span data-ttu-id="55894-162">Filtern des **berechneten Panels**</span><span class="sxs-lookup"><span data-stu-id="55894-162">Filter the **Computed** panel</span></span>  
+   <span data-ttu-id="e4a25-162">Filtern des **berechneten Panels**</span><span class="sxs-lookup"><span data-stu-id="e4a25-162">Filter the **Computed** panel</span></span>  
 :::image-end:::  
 
-### <a name="toggle-a-pseudo-class"></a><span data-ttu-id="55894-163">Umschalten einer Pseudoklasse</span><span class="sxs-lookup"><span data-stu-id="55894-163">Toggle a pseudo-class</span></span>  
+### <a name="toggle-a-pseudo-class"></a><span data-ttu-id="e4a25-163">Umschalten einer Pseudoklasse</span><span class="sxs-lookup"><span data-stu-id="e4a25-163">Toggle a pseudo-class</span></span>  
 
-<span data-ttu-id="55894-164">Führen Sie die folgenden Aktionen aus, um eine Pseudoklasse wie `:active` , `:focus` , oder `:hover` umzuschalten. `:visited`</span><span class="sxs-lookup"><span data-stu-id="55894-164">Complete the following actions to toggle a pseudo-class like `:active`, `:focus`, `:hover`, or `:visited`.</span></span>  
+<span data-ttu-id="e4a25-164">Führen Sie die folgenden Aktionen aus, um eine Pseudoklasse wie `:active` , `:focus` , oder `:hover` umzuschalten. `:visited`</span><span class="sxs-lookup"><span data-stu-id="e4a25-164">Complete the following actions to toggle a pseudo-class like `:active`, `:focus`, `:hover`, or `:visited`.</span></span>  
 
-1.  <span data-ttu-id="55894-165">[Wählen Sie ein Element aus.](#choose-an-element)</span><span class="sxs-lookup"><span data-stu-id="55894-165">[Select an element](#choose-an-element).</span></span>  
-1.  <span data-ttu-id="55894-166">Navigieren Sie **im Tool** Elemente zum **Formatvorlagenbereich.**</span><span class="sxs-lookup"><span data-stu-id="55894-166">On the **Elements** tool, navigate to the **Styles** panel.</span></span>  
-1.  <span data-ttu-id="55894-167">Wählen **Sie :hov**aus.</span><span class="sxs-lookup"><span data-stu-id="55894-167">Choose **:hov**.</span></span>  
-1.  <span data-ttu-id="55894-168">Überprüfen Sie die Pseudoklasse, die Sie aktivieren möchten.</span><span class="sxs-lookup"><span data-stu-id="55894-168">Check the pseudo-class that you want to enable.</span></span>  
+1.  <span data-ttu-id="e4a25-165">[Wählen Sie ein Element aus.](#choose-an-element)</span><span class="sxs-lookup"><span data-stu-id="e4a25-165">[Select an element](#choose-an-element).</span></span>  
+1.  <span data-ttu-id="e4a25-166">Navigieren Sie **im Tool** Elemente zum **Formatvorlagenbereich.**</span><span class="sxs-lookup"><span data-stu-id="e4a25-166">On the **Elements** tool, navigate to the **Styles** panel.</span></span>  
+1.  <span data-ttu-id="e4a25-167">Wählen **Sie :hov**aus.</span><span class="sxs-lookup"><span data-stu-id="e4a25-167">Choose **:hov**.</span></span>  
+1.  <span data-ttu-id="e4a25-168">Überprüfen Sie die Pseudoklasse, die Sie aktivieren möchten.</span><span class="sxs-lookup"><span data-stu-id="e4a25-168">Check the pseudo-class that you want to enable.</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="55894-169">In der folgenden Abbildung umschalten Sie die `:hover` Pseudoklasse.</span><span class="sxs-lookup"><span data-stu-id="55894-169">In the following figure, toggle the `:hover` pseudo-class.</span></span>  <span data-ttu-id="55894-170">Vergewissern Sie sich im viewport, dass die Deklaration auf das Element angewendet wird, auch wenn das Element nicht tatsächlich über `background-color: cornflowerblue` das Element bewegt wird.</span><span class="sxs-lookup"><span data-stu-id="55894-170">In the viewport verify that the `background-color: cornflowerblue` declaration is being applied to the element, even though the element is not actually being hovered over.</span></span>  
+> <span data-ttu-id="e4a25-169">In der folgenden Abbildung umschalten Sie die `:hover` Pseudoklasse.</span><span class="sxs-lookup"><span data-stu-id="e4a25-169">In the following figure, toggle the `:hover` pseudo-class.</span></span>  <span data-ttu-id="e4a25-170">Vergewissern Sie sich im viewport, dass die Deklaration auf das Element angewendet wird, auch wenn das Element nicht tatsächlich über `background-color: cornflowerblue` das Element bewegt wird.</span><span class="sxs-lookup"><span data-stu-id="e4a25-170">In the viewport verify that the `background-color: cornflowerblue` declaration is being applied to the element, even though the element is not actually being hovered over.</span></span>  
 
 :::image type="complex" source="../media/css-elements-styles-hov-hover.msft.png" alt-text="Umschalten der Pseudoklasse :hover" lightbox="../media/css-elements-styles-hov-hover.msft.png":::
-   <span data-ttu-id="55894-172">Umschalten `:hover` der Pseudoklasse</span><span class="sxs-lookup"><span data-stu-id="55894-172">Toggle the `:hover` pseudo-class</span></span>  
+   <span data-ttu-id="e4a25-172">Umschalten `:hover` der Pseudoklasse</span><span class="sxs-lookup"><span data-stu-id="e4a25-172">Toggle the `:hover` pseudo-class</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="55894-173">Navigieren Sie für ein interaktives Lernprogramm zu [Hinzufügen eines Pseudozustands zu einer Klasse][DevToolsCSSGetStartedAddPseudoState].</span><span class="sxs-lookup"><span data-stu-id="55894-173">For an interactive tutorial, navigate to [Add a pseudostate to a class][DevToolsCSSGetStartedAddPseudoState].</span></span>  
+<span data-ttu-id="e4a25-173">Navigieren Sie für ein interaktives Lernprogramm zu [Hinzufügen eines Pseudozustands zu einer Klasse][DevToolsCSSGetStartedAddPseudoState].</span><span class="sxs-lookup"><span data-stu-id="e4a25-173">For an interactive tutorial, navigate to [Add a pseudostate to a class][DevToolsCSSGetStartedAddPseudoState].</span></span>  
 
-### <a name="view-a-page-in-print-mode"></a><span data-ttu-id="55894-174">Anzeigen einer Seite im Druckmodus</span><span class="sxs-lookup"><span data-stu-id="55894-174">View a page in print mode</span></span>  
+### <a name="view-a-page-in-print-mode"></a><span data-ttu-id="e4a25-174">Anzeigen einer Seite im Druckmodus</span><span class="sxs-lookup"><span data-stu-id="e4a25-174">View a page in print mode</span></span>  
 
-<span data-ttu-id="55894-175">Führen Sie die folgenden Aktionen aus, um eine Seite im Druckmodus zu sehen.</span><span class="sxs-lookup"><span data-stu-id="55894-175">Complete the following actions to view a page in print mode.</span></span>  
+<span data-ttu-id="e4a25-175">Führen Sie die folgenden Aktionen aus, um eine Seite im Druckmodus zu sehen.</span><span class="sxs-lookup"><span data-stu-id="e4a25-175">Complete the following actions to view a page in print mode.</span></span>  
 
-1.  <span data-ttu-id="55894-176">[Öffnen Sie das Befehlsmenü][DevToolsCommandMenu].</span><span class="sxs-lookup"><span data-stu-id="55894-176">[Open the Command Menu][DevToolsCommandMenu].</span></span>  
-1.  <span data-ttu-id="55894-177">Beginnen Sie mit der `Rendering` Eingabe und wählen Sie `Show Rendering` aus.</span><span class="sxs-lookup"><span data-stu-id="55894-177">Start typing `Rendering` and select `Show Rendering`.</span></span>  
-1.  <span data-ttu-id="55894-178">Wählen Sie **im Dropdownmenü Emulieren von CSS-Medien** die Option **Drucken aus.**</span><span class="sxs-lookup"><span data-stu-id="55894-178">For the **Emulate CSS Media** dropdown, choose **print**.</span></span>  
+1.  <span data-ttu-id="e4a25-176">[Öffnen Sie das Befehlsmenü][DevToolsCommandMenu].</span><span class="sxs-lookup"><span data-stu-id="e4a25-176">[Open the Command Menu][DevToolsCommandMenu].</span></span>  
+1.  <span data-ttu-id="e4a25-177">Beginnen Sie mit der `Rendering` Eingabe und wählen Sie `Show Rendering` aus.</span><span class="sxs-lookup"><span data-stu-id="e4a25-177">Start typing `Rendering` and select `Show Rendering`.</span></span>  
+1.  <span data-ttu-id="e4a25-178">Wählen Sie **im Dropdownmenü Emulieren von CSS-Medien** die Option **Drucken aus.**</span><span class="sxs-lookup"><span data-stu-id="e4a25-178">For the **Emulate CSS Media** dropdown, choose **print**.</span></span>  
 
-### <a name="view-used-and-unused-css-with-the-coverage-tool"></a><span data-ttu-id="55894-179">Anzeigen verwendeter und nicht verwendeter CSS mit dem Tool "Abdeckung"</span><span class="sxs-lookup"><span data-stu-id="55894-179">View used and unused CSS with the Coverage tool</span></span>  
+### <a name="view-used-and-unused-css-with-the-coverage-tool"></a><span data-ttu-id="e4a25-179">Anzeigen verwendeter und nicht verwendeter CSS mit dem Tool "Abdeckung"</span><span class="sxs-lookup"><span data-stu-id="e4a25-179">View used and unused CSS with the Coverage tool</span></span>  
 
-<span data-ttu-id="55894-180">Das **Coverage-Tool** zeigt, welche CSS eine Seite tatsächlich verwendet.</span><span class="sxs-lookup"><span data-stu-id="55894-180">The **Coverage** tool shows you what CSS a page actually uses.</span></span>  
+<span data-ttu-id="e4a25-180">Das **Coverage-Tool** zeigt, welche CSS eine Seite tatsächlich verwendet.</span><span class="sxs-lookup"><span data-stu-id="e4a25-180">The **Coverage** tool shows you what CSS a page actually uses.</span></span>  
 
-1.  <span data-ttu-id="55894-181">Wählen `Control` + `Shift` + `P` Sie \(Windows, Linux\) oder `Command` + `Shift` + `P` \(macOS\) aus, während DevTools [][DevToolsCommandMenu]im Fokus steht, um das Befehlsmenü zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="55894-181">Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) while DevTools is in focus to [open the Command Menu][DevToolsCommandMenu].</span></span>  
-1.  <span data-ttu-id="55894-182">Beginnen Sie mit der `coverage` Eingabe und wählen Sie Abdeckung anzeigen **aus.**</span><span class="sxs-lookup"><span data-stu-id="55894-182">Start typing `coverage` and choose **Show Coverage**.</span></span>  <span data-ttu-id="55894-183">Das **Abdeckungstool** wird angezeigt.</span><span class="sxs-lookup"><span data-stu-id="55894-183">The **Coverage** tool appears.</span></span>  
+1.  <span data-ttu-id="e4a25-181">Wählen `Control` + `Shift` + `P` Sie \(Windows, Linux\) oder `Command` + `Shift` + `P` \(macOS\) aus, während DevTools [][DevToolsCommandMenu]im Fokus steht, um das Befehlsmenü zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="e4a25-181">Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) while DevTools is in focus to [open the Command Menu][DevToolsCommandMenu].</span></span>  
+1.  <span data-ttu-id="e4a25-182">Beginnen Sie mit der `coverage` Eingabe und wählen Sie Abdeckung anzeigen **aus.**</span><span class="sxs-lookup"><span data-stu-id="e4a25-182">Start typing `coverage` and choose **Show Coverage**.</span></span>  <span data-ttu-id="e4a25-183">Das **Abdeckungstool** wird angezeigt.</span><span class="sxs-lookup"><span data-stu-id="e4a25-183">The **Coverage** tool appears.</span></span>  
     
     :::row:::
        :::column span="":::
           :::image type="complex" source="../media/css-console-command-menu-coverage.msft.png" alt-text="Öffnen des Coverage-Tools über das Befehlsmenü" lightbox="../media/css-console-command-menu-coverage.msft.png":::
-             <span data-ttu-id="55894-185">Öffnen Sie **das Tool** "Abdeckung" im **Befehlsmenü.**</span><span class="sxs-lookup"><span data-stu-id="55894-185">Open the **Coverage** tool from the **Command Menu**</span></span>  
+             <span data-ttu-id="e4a25-185">Öffnen Sie **das Tool** "Abdeckung" im **Befehlsmenü.**</span><span class="sxs-lookup"><span data-stu-id="e4a25-185">Open the **Coverage** tool from the **Command Menu**</span></span>  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
           :::image type="complex" source="../media/css-console-qs-coverage-empty.msft.png" alt-text="Das Tool "Abdeckung"" lightbox="../media/css-console-qs-coverage-empty.msft.png":::
-             <span data-ttu-id="55894-187">Das **Tool "Abdeckung"**</span><span class="sxs-lookup"><span data-stu-id="55894-187">The **Coverage** tool</span></span>  
+             <span data-ttu-id="e4a25-187">Das **Tool "Abdeckung"**</span><span class="sxs-lookup"><span data-stu-id="e4a25-187">The **Coverage** tool</span></span>  
           :::image-end:::  
        :::column-end:::
     :::row-end:::  
     
-1.  <span data-ttu-id="55894-188">Wählen **Sie Die Instrumentierungsabdeckung starten aus, und aktualisieren Sie die Seite** \( Starten Sie die ![ Instrumentierungsabdeckung, und aktualisieren Sie die Seite ][ImageRefreshIcon] \).</span><span class="sxs-lookup"><span data-stu-id="55894-188">Choose **Start instrumenting coverage and refresh the page** \(![Start instrumenting coverage and refresh the page][ImageRefreshIcon]\).</span></span>  <span data-ttu-id="55894-189">Die Seite wird aktualisiert, und das **Coverage-Tool** bietet eine Übersicht darüber, wie viel CSS \(und JavaScript\) aus jeder Datei verwendet wird, die der Browser lädt.</span><span class="sxs-lookup"><span data-stu-id="55894-189">The page refreshes and the **Coverage** tool provides an overview of how much CSS \(and JavaScript\) is used from each file that the browser loads.</span></span>  <span data-ttu-id="55894-190">Grün steht für verwendete CSS.</span><span class="sxs-lookup"><span data-stu-id="55894-190">Green represents used CSS.</span></span>  <span data-ttu-id="55894-191">Rot steht für nicht verwendete CSS.</span><span class="sxs-lookup"><span data-stu-id="55894-191">Red represents unused CSS.</span></span>  
+1.  <span data-ttu-id="e4a25-188">Wählen **Sie Die Instrumentierungsabdeckung starten aus, und aktualisieren Sie die Seite** \( Starten Sie die ![ Instrumentierungsabdeckung, und aktualisieren Sie die Seite ](../media/refresh-icon.msft.png) \).</span><span class="sxs-lookup"><span data-stu-id="e4a25-188">Choose **Start instrumenting coverage and refresh the page** \(![Start instrumenting coverage and refresh the page](../media/refresh-icon.msft.png)\).</span></span>  <span data-ttu-id="e4a25-189">Die Seite wird aktualisiert, und das **Coverage-Tool** bietet eine Übersicht darüber, wie viel CSS \(und JavaScript\) aus jeder Datei verwendet wird, die der Browser lädt.</span><span class="sxs-lookup"><span data-stu-id="e4a25-189">The page refreshes and the **Coverage** tool provides an overview of how much CSS \(and JavaScript\) is used from each file that the browser loads.</span></span>  <span data-ttu-id="e4a25-190">Grün steht für verwendete CSS.</span><span class="sxs-lookup"><span data-stu-id="e4a25-190">Green represents used CSS.</span></span>  <span data-ttu-id="e4a25-191">Rot steht für nicht verwendete CSS.</span><span class="sxs-lookup"><span data-stu-id="e4a25-191">Red represents unused CSS.</span></span>  
     
     :::image type="complex" source="../media/css-console-qs-coverage-run.msft.png" alt-text="Eine Übersicht darüber, wie viel CSS (und JavaScript) verwendet und nicht verwendet wird" lightbox="../media/css-console-qs-coverage-run.msft.png":::
-       <span data-ttu-id="55894-193">Eine Übersicht darüber, wie viel CSS \(und JavaScript\) verwendet und nicht verwendet wird</span><span class="sxs-lookup"><span data-stu-id="55894-193">An overview of how much CSS \(and JavaScript\) is used and unused</span></span>  
+       <span data-ttu-id="e4a25-193">Eine Übersicht darüber, wie viel CSS \(und JavaScript\) verwendet und nicht verwendet wird</span><span class="sxs-lookup"><span data-stu-id="e4a25-193">An overview of how much CSS \(and JavaScript\) is used and unused</span></span>  
     :::image-end:::  
 
-1.  <span data-ttu-id="55894-194">Wählen Sie eine CSS-Datei aus, um eine zeilenweise Aufschlüsselung der verwendeten CSS-Dateien anzeigen zu können.</span><span class="sxs-lookup"><span data-stu-id="55894-194">To display a line-by-line breakdown of what CSS is used, choose a CSS file.</span></span>  
+1.  <span data-ttu-id="e4a25-194">Wählen Sie eine CSS-Datei aus, um eine zeilenweise Aufschlüsselung der verwendeten CSS-Dateien anzeigen zu können.</span><span class="sxs-lookup"><span data-stu-id="e4a25-194">To display a line-by-line breakdown of what CSS is used, choose a CSS file.</span></span>  
     
     > [!NOTE]
-    > <span data-ttu-id="55894-195">In der folgenden Abbildung werden die Zeilen 145 bis 147 und 149 bis 151 nicht verwendet, während die Zeilen `b66bc881.site-ltr.css` 163 bis 166 verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="55894-195">In the following figure, lines 145 to 147 and 149 to 151 of `b66bc881.site-ltr.css` are unused, whereas lines 163 to 166 are used.</span></span>  
+    > <span data-ttu-id="e4a25-195">In der folgenden Abbildung werden die Zeilen 145 bis 147 und 149 bis 151 nicht verwendet, während die Zeilen `b66bc881.site-ltr.css` 163 bis 166 verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="e4a25-195">In the following figure, lines 145 to 147 and 149 to 151 of `b66bc881.site-ltr.css` are unused, whereas lines 163 to 166 are used.</span></span>  
     
     :::image type="complex" source="../media/css-sources-css-coverage.msft.png" alt-text="Eine zeilenweise Aufschlüsselung der verwendeten und nicht verwendeten CSS" lightbox="../media/css-sources-css-coverage.msft.png":::
-       <span data-ttu-id="55894-197">Eine zeilenweise Aufschlüsselung der verwendeten und nicht verwendeten CSS</span><span class="sxs-lookup"><span data-stu-id="55894-197">A line-by-line breakdown of used and unused CSS</span></span>  
+       <span data-ttu-id="e4a25-197">Eine zeilenweise Aufschlüsselung der verwendeten und nicht verwendeten CSS</span><span class="sxs-lookup"><span data-stu-id="e4a25-197">A line-by-line breakdown of used and unused CSS</span></span>  
     :::image-end:::  
     
-### <a name="force-print-preview-mode"></a><span data-ttu-id="55894-198">Erzwingen des Druckvorschaumodus</span><span class="sxs-lookup"><span data-stu-id="55894-198">Force print preview mode</span></span>  
+### <a name="force-print-preview-mode"></a><span data-ttu-id="e4a25-198">Erzwingen des Druckvorschaumodus</span><span class="sxs-lookup"><span data-stu-id="e4a25-198">Force print preview mode</span></span>  
 
-<span data-ttu-id="55894-199">Navigieren Sie [zu Erzwingen von DevTools in den Druckvorschaumodus.][DevToolsCssPrintPreview]</span><span class="sxs-lookup"><span data-stu-id="55894-199">Navigate to [Force DevTools into Print Preview mode][DevToolsCssPrintPreview].</span></span>  
+<span data-ttu-id="e4a25-199">Navigieren Sie [zu Erzwingen von DevTools in den Druckvorschaumodus.][DevToolsCssPrintPreview]</span><span class="sxs-lookup"><span data-stu-id="e4a25-199">Navigate to [Force DevTools into Print Preview mode][DevToolsCssPrintPreview].</span></span>  
 
-## <a name="change-css"></a><span data-ttu-id="55894-200">Ändern von CSS</span><span class="sxs-lookup"><span data-stu-id="55894-200">Change CSS</span></span>  
+## <a name="change-css"></a><span data-ttu-id="e4a25-200">Ändern von CSS</span><span class="sxs-lookup"><span data-stu-id="e4a25-200">Change CSS</span></span>  
 
 <!-- todo s/CSS declaration/declaration/ -->  
 
-### <a name="add-a-css-declaration-to-an-element"></a><span data-ttu-id="55894-201">Hinzufügen einer CSS-Deklaration zu einem Element</span><span class="sxs-lookup"><span data-stu-id="55894-201">Add a CSS declaration to an element</span></span>  
+### <a name="add-a-css-declaration-to-an-element"></a><span data-ttu-id="e4a25-201">Hinzufügen einer CSS-Deklaration zu einem Element</span><span class="sxs-lookup"><span data-stu-id="e4a25-201">Add a CSS declaration to an element</span></span>  
 
-<span data-ttu-id="55894-202">Die Reihenfolge der Deklarationen wirkt sich darauf aus, wie ein Element formatiert wird. Verwenden Sie die folgende Liste, um Deklarationen auf unterschiedliche Weise hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="55894-202">The order of declarations affects how an element is styled, use the following list to help you add declarations in different ways.</span></span>  
+<span data-ttu-id="e4a25-202">Die Reihenfolge der Deklarationen wirkt sich darauf aus, wie ein Element formatiert wird. Verwenden Sie die folgende Liste, um Deklarationen auf unterschiedliche Weise hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="e4a25-202">The order of declarations affects how an element is styled, use the following list to help you add declarations in different ways.</span></span>  
 
-*   <span data-ttu-id="55894-203">[Fügen Sie eine Inlinedeklaration hinzu.](#add-an-inline-declaration)</span><span class="sxs-lookup"><span data-stu-id="55894-203">[Add a inline declaration](#add-an-inline-declaration).</span></span>  <span data-ttu-id="55894-204">Entspricht dem Hinzufügen `style` eines Attributs zum HTML eines Elements.</span><span class="sxs-lookup"><span data-stu-id="55894-204">Equivalent to adding a `style` attribute to the HTML of an element.</span></span>  
-*   <span data-ttu-id="55894-205">[Fügen Sie einer Formatvorlageregel eine Deklaration hinzu.](#add-a-declaration-to-a-style-rule)</span><span class="sxs-lookup"><span data-stu-id="55894-205">[Add a declaration to a style rule](#add-a-declaration-to-a-style-rule).</span></span>  
+*   <span data-ttu-id="e4a25-203">[Fügen Sie eine Inlinedeklaration hinzu.](#add-an-inline-declaration)</span><span class="sxs-lookup"><span data-stu-id="e4a25-203">[Add a inline declaration](#add-an-inline-declaration).</span></span>  <span data-ttu-id="e4a25-204">Entspricht dem Hinzufügen `style` eines Attributs zum HTML eines Elements.</span><span class="sxs-lookup"><span data-stu-id="e4a25-204">Equivalent to adding a `style` attribute to the HTML of an element.</span></span>  
+*   <span data-ttu-id="e4a25-205">[Fügen Sie einer Formatvorlageregel eine Deklaration hinzu.](#add-a-declaration-to-a-style-rule)</span><span class="sxs-lookup"><span data-stu-id="e4a25-205">[Add a declaration to a style rule](#add-a-declaration-to-a-style-rule).</span></span>  
 
-**<span data-ttu-id="55894-206">Welchen Workflow sollten Sie verwenden?</span><span class="sxs-lookup"><span data-stu-id="55894-206">What workflow should you use?</span></span>** <span data-ttu-id="55894-207">In den meisten Szenarien möchten Sie wahrscheinlich den Inlinedeklarationsworkflow verwenden.</span><span class="sxs-lookup"><span data-stu-id="55894-207">For most scenarios, you probably want to use the inline declaration workflow.</span></span>  <span data-ttu-id="55894-208">Inlinedeklarationen haben eine höhere Spezifizität als externe, sodass der Inlineworkflow sicherstellt, dass die Änderungen in Ihrem erwarteten Element wirksam werden.</span><span class="sxs-lookup"><span data-stu-id="55894-208">Inline declarations have higher specificity than external ones, so the inline workflow ensures that the changes take effect in your expected element.</span></span>  <span data-ttu-id="55894-209">Weitere Informationen zur Spezifizität finden Sie unter [Selector Types][MDNSelectorTypes].</span><span class="sxs-lookup"><span data-stu-id="55894-209">For more information about specificity, navigate to [Selector Types][MDNSelectorTypes].</span></span>  
+**<span data-ttu-id="e4a25-206">Welchen Workflow sollten Sie verwenden?</span><span class="sxs-lookup"><span data-stu-id="e4a25-206">What workflow should you use?</span></span>** <span data-ttu-id="e4a25-207">In den meisten Szenarien möchten Sie wahrscheinlich den Inlinedeklarationsworkflow verwenden.</span><span class="sxs-lookup"><span data-stu-id="e4a25-207">For most scenarios, you probably want to use the inline declaration workflow.</span></span>  <span data-ttu-id="e4a25-208">Inlinedeklarationen haben eine höhere Spezifizität als externe, sodass der Inlineworkflow sicherstellt, dass die Änderungen in Ihrem erwarteten Element wirksam werden.</span><span class="sxs-lookup"><span data-stu-id="e4a25-208">Inline declarations have higher specificity than external ones, so the inline workflow ensures that the changes take effect in your expected element.</span></span>  <span data-ttu-id="e4a25-209">Weitere Informationen zur Spezifizität finden Sie unter [Selector Types][MDNSelectorTypes].</span><span class="sxs-lookup"><span data-stu-id="e4a25-209">For more information about specificity, navigate to [Selector Types][MDNSelectorTypes].</span></span>  
 
-<span data-ttu-id="55894-210">Wenn Sie Formatvorlagen des Elements debuggen und speziell testen müssen, was geschieht, wenn eine Deklaration an verschiedenen Stellen definiert ist, verwenden Sie den anderen Workflow.</span><span class="sxs-lookup"><span data-stu-id="55894-210">If you are debugging any styles of the element and you need to specifically test what happens when a declaration is defined in different places, use the other workflow.</span></span>  
+<span data-ttu-id="e4a25-210">Wenn Sie Formatvorlagen des Elements debuggen und speziell testen müssen, was geschieht, wenn eine Deklaration an verschiedenen Stellen definiert ist, verwenden Sie den anderen Workflow.</span><span class="sxs-lookup"><span data-stu-id="e4a25-210">If you are debugging any styles of the element and you need to specifically test what happens when a declaration is defined in different places, use the other workflow.</span></span>  
 
-#### <a name="add-an-inline-declaration"></a><span data-ttu-id="55894-211">Hinzufügen einer Inlinedeklaration</span><span class="sxs-lookup"><span data-stu-id="55894-211">Add an inline declaration</span></span>  
+#### <a name="add-an-inline-declaration"></a><span data-ttu-id="e4a25-211">Hinzufügen einer Inlinedeklaration</span><span class="sxs-lookup"><span data-stu-id="e4a25-211">Add an inline declaration</span></span>  
 
-<span data-ttu-id="55894-212">Führen Sie die folgenden Aktionen aus, um eine Inlinedeklaration hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="55894-212">Complete the following actions to add an inline declaration.</span></span>  
+<span data-ttu-id="e4a25-212">Führen Sie die folgenden Aktionen aus, um eine Inlinedeklaration hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="e4a25-212">Complete the following actions to add an inline declaration.</span></span>  
 
-1.  <span data-ttu-id="55894-213">[Wählen Sie ein Element aus.](#choose-an-element)</span><span class="sxs-lookup"><span data-stu-id="55894-213">[Select an element](#choose-an-element).</span></span>  
-1.  <span data-ttu-id="55894-214">Wählen Sie **im Bereich** Formatvorlagen zwischen den Klammern des **Abschnitts element.style** aus.</span><span class="sxs-lookup"><span data-stu-id="55894-214">In the **Styles** pane, choose between the brackets of the **element.style** section.</span></span>  <span data-ttu-id="55894-215">Der Cursor konzentriert sich, sodass Sie Text eingeben können.</span><span class="sxs-lookup"><span data-stu-id="55894-215">The cursor focuses, allowing you to enter text.</span></span>  
-1.  <span data-ttu-id="55894-216">Geben Sie einen Eigenschaftennamen ein, und wählen Sie `Enter` aus.</span><span class="sxs-lookup"><span data-stu-id="55894-216">Enter a property name and select `Enter`.</span></span>  
-1.  <span data-ttu-id="55894-217">Geben Sie einen gültigen Wert für diese Eigenschaft ein, und wählen Sie `Enter` aus.</span><span class="sxs-lookup"><span data-stu-id="55894-217">Enter a valid value for that property and select `Enter`.</span></span>  <span data-ttu-id="55894-218">Überprüfen Sie **in der DOM-Struktur,** ob dem Element ein `style` Attribut hinzugefügt wurde.</span><span class="sxs-lookup"><span data-stu-id="55894-218">In the **DOM Tree**, verify that a `style` attribute has been added to the element.</span></span>  
+1.  <span data-ttu-id="e4a25-213">[Wählen Sie ein Element aus.](#choose-an-element)</span><span class="sxs-lookup"><span data-stu-id="e4a25-213">[Select an element](#choose-an-element).</span></span>  
+1.  <span data-ttu-id="e4a25-214">Wählen Sie **im Bereich** Formatvorlagen zwischen den Klammern des **Abschnitts element.style** aus.</span><span class="sxs-lookup"><span data-stu-id="e4a25-214">In the **Styles** pane, choose between the brackets of the **element.style** section.</span></span>  <span data-ttu-id="e4a25-215">Der Cursor konzentriert sich, sodass Sie Text eingeben können.</span><span class="sxs-lookup"><span data-stu-id="e4a25-215">The cursor focuses, allowing you to enter text.</span></span>  
+1.  <span data-ttu-id="e4a25-216">Geben Sie einen Eigenschaftennamen ein, und wählen Sie `Enter` aus.</span><span class="sxs-lookup"><span data-stu-id="e4a25-216">Enter a property name and select `Enter`.</span></span>  
+1.  <span data-ttu-id="e4a25-217">Geben Sie einen gültigen Wert für diese Eigenschaft ein, und wählen Sie `Enter` aus.</span><span class="sxs-lookup"><span data-stu-id="e4a25-217">Enter a valid value for that property and select `Enter`.</span></span>  <span data-ttu-id="e4a25-218">Überprüfen Sie **in der DOM-Struktur,** ob dem Element ein `style` Attribut hinzugefügt wurde.</span><span class="sxs-lookup"><span data-stu-id="e4a25-218">In the **DOM Tree**, verify that a `style` attribute has been added to the element.</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="55894-219">In der folgenden Abbildung wurden `margin-top` die Eigenschaften und auf das ausgewählte Element `background-color` angewendet.</span><span class="sxs-lookup"><span data-stu-id="55894-219">In the following figure, the `margin-top` and `background-color` properties have been applied to the selected element.</span></span>  <span data-ttu-id="55894-220">Überprüfen Sie **in der DOM-Struktur,** ob die Deklarationen im `style` Attribut für ein Element enthalten sind.</span><span class="sxs-lookup"><span data-stu-id="55894-220">In the **DOM Tree** verify that the declarations are reflected in the `style` attribute for an element.</span></span>  
+> <span data-ttu-id="e4a25-219">In der folgenden Abbildung wurden `margin-top` die Eigenschaften und auf das ausgewählte Element `background-color` angewendet.</span><span class="sxs-lookup"><span data-stu-id="e4a25-219">In the following figure, the `margin-top` and `background-color` properties have been applied to the selected element.</span></span>  <span data-ttu-id="e4a25-220">Überprüfen Sie **in der DOM-Struktur,** ob die Deklarationen im `style` Attribut für ein Element enthalten sind.</span><span class="sxs-lookup"><span data-stu-id="e4a25-220">In the **DOM Tree** verify that the declarations are reflected in the `style` attribute for an element.</span></span>  
 
 :::image type="complex" source="../media/css-elements-styles-margin-top-background-color.msft.png" alt-text="Hinzufügen von Inlinedeklarationen" lightbox="../media/css-elements-styles-margin-top-background-color.msft.png":::
-   <span data-ttu-id="55894-222">Hinzufügen von Inlinedeklarationen</span><span class="sxs-lookup"><span data-stu-id="55894-222">Add inline declarations</span></span>  
+   <span data-ttu-id="e4a25-222">Hinzufügen von Inlinedeklarationen</span><span class="sxs-lookup"><span data-stu-id="e4a25-222">Add inline declarations</span></span>  
 :::image-end:::  
 
-#### <a name="add-a-declaration-to-a-style-rule"></a><span data-ttu-id="55894-223">Hinzufügen einer Deklaration zu einer Formatvorlageregel</span><span class="sxs-lookup"><span data-stu-id="55894-223">Add a declaration to a style rule</span></span>  
+#### <a name="add-a-declaration-to-a-style-rule"></a><span data-ttu-id="e4a25-223">Hinzufügen einer Deklaration zu einer Formatvorlageregel</span><span class="sxs-lookup"><span data-stu-id="e4a25-223">Add a declaration to a style rule</span></span>  
 
-<span data-ttu-id="55894-224">Führen Sie die folgenden Aktionen aus, um einer vorhandenen Formatvorlageregel eine Deklaration hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="55894-224">Complete the following actions to add a declaration to an existing style rule.</span></span>  
+<span data-ttu-id="e4a25-224">Führen Sie die folgenden Aktionen aus, um einer vorhandenen Formatvorlageregel eine Deklaration hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="e4a25-224">Complete the following actions to add a declaration to an existing style rule.</span></span>  
 
-1.  <span data-ttu-id="55894-225">[Wählen Sie ein Element aus.](#choose-an-element)</span><span class="sxs-lookup"><span data-stu-id="55894-225">[Select an element](#choose-an-element).</span></span>  
-1.  <span data-ttu-id="55894-226">Wählen Sie **im Bereich** Formatvorlagen zwischen den Klammern der Formatvorlagenregel aus, der Sie die Deklaration hinzufügen möchten.</span><span class="sxs-lookup"><span data-stu-id="55894-226">In the **Styles** pane, choose between the brackets of the style rule to which you want to add the declaration.</span></span>  <span data-ttu-id="55894-227">Der Cursor konzentriert sich, sodass Sie Text eingeben können.</span><span class="sxs-lookup"><span data-stu-id="55894-227">The cursor focuses, allowing you to enter text.</span></span>  
-1.  <span data-ttu-id="55894-228">Geben Sie einen Eigenschaftennamen ein, und wählen Sie `Enter` aus.</span><span class="sxs-lookup"><span data-stu-id="55894-228">Enter a property name and select `Enter`.</span></span>  
-1.  <span data-ttu-id="55894-229">Geben Sie einen gültigen Wert für diese Eigenschaft ein, und wählen Sie `Enter` aus.</span><span class="sxs-lookup"><span data-stu-id="55894-229">Enter a valid value for that property and select `Enter`.</span></span>  
+1.  <span data-ttu-id="e4a25-225">[Wählen Sie ein Element aus.](#choose-an-element)</span><span class="sxs-lookup"><span data-stu-id="e4a25-225">[Select an element](#choose-an-element).</span></span>  
+1.  <span data-ttu-id="e4a25-226">Wählen Sie **im Bereich** Formatvorlagen zwischen den Klammern der Formatvorlagenregel aus, der Sie die Deklaration hinzufügen möchten.</span><span class="sxs-lookup"><span data-stu-id="e4a25-226">In the **Styles** pane, choose between the brackets of the style rule to which you want to add the declaration.</span></span>  <span data-ttu-id="e4a25-227">Der Cursor konzentriert sich, sodass Sie Text eingeben können.</span><span class="sxs-lookup"><span data-stu-id="e4a25-227">The cursor focuses, allowing you to enter text.</span></span>  
+1.  <span data-ttu-id="e4a25-228">Geben Sie einen Eigenschaftennamen ein, und wählen Sie `Enter` aus.</span><span class="sxs-lookup"><span data-stu-id="e4a25-228">Enter a property name and select `Enter`.</span></span>  
+1.  <span data-ttu-id="e4a25-229">Geben Sie einen gültigen Wert für diese Eigenschaft ein, und wählen Sie `Enter` aus.</span><span class="sxs-lookup"><span data-stu-id="e4a25-229">Enter a valid value for that property and select `Enter`.</span></span>  
 
 :::image type="complex" source="../media/css-elements-styles-border-bottom-style.msft.png" alt-text="Hinzufügen einer Deklaration zu einer Formatvorlageregel" lightbox="../media/css-elements-styles-border-bottom-style.msft.png":::
-   <span data-ttu-id="55894-231">Hinzufügen der `border-bottom-style:groove` Deklaration zu einer Formatvorlageregel</span><span class="sxs-lookup"><span data-stu-id="55894-231">Add the `border-bottom-style:groove` declaration to a style rule</span></span>  
+   <span data-ttu-id="e4a25-231">Hinzufügen der `border-bottom-style:groove` Deklaration zu einer Formatvorlageregel</span><span class="sxs-lookup"><span data-stu-id="e4a25-231">Add the `border-bottom-style:groove` declaration to a style rule</span></span>  
 :::image-end:::  
 
-### <a name="change-a-declaration-name-or-value"></a><span data-ttu-id="55894-232">Ändern eines Deklarationsnamens oder -werts</span><span class="sxs-lookup"><span data-stu-id="55894-232">Change a declaration name or value</span></span>  
+### <a name="change-a-declaration-name-or-value"></a><span data-ttu-id="e4a25-232">Ändern eines Deklarationsnamens oder -werts</span><span class="sxs-lookup"><span data-stu-id="e4a25-232">Change a declaration name or value</span></span>  
 
-<span data-ttu-id="55894-233">Wählen Und bearbeiten Sie den Namen oder Wert einer Deklaration, um sie zu ändern.</span><span class="sxs-lookup"><span data-stu-id="55894-233">Choose and edit the name or value of a declaration to change it.</span></span>  <span data-ttu-id="55894-234">Für Verknüpfungen zum schnellen Inkrementieren oder Dekrementieren eines Werts durch , , oder Einheiten navigieren Sie zu Ändern von `0.1` `1` `10` `100` [Deklarationswerte mit Tastenkombinationen](#change-declaration-values-with-keyboard-shortcuts).</span><span class="sxs-lookup"><span data-stu-id="55894-234">For shortcuts for quickly incrementing or decrementing a value by `0.1`, `1`, `10`, or `100` units, navigate to [Change declaration values with keyboard shortcuts](#change-declaration-values-with-keyboard-shortcuts).</span></span>  
+<span data-ttu-id="e4a25-233">Wählen Und bearbeiten Sie den Namen oder Wert einer Deklaration, um sie zu ändern.</span><span class="sxs-lookup"><span data-stu-id="e4a25-233">Choose and edit the name or value of a declaration to change it.</span></span>  <span data-ttu-id="e4a25-234">Für Verknüpfungen zum schnellen Inkrementieren oder Dekrementieren eines Werts durch , , oder Einheiten navigieren Sie zu Ändern von `0.1` `1` `10` `100` [Deklarationswerte mit Tastenkombinationen](#change-declaration-values-with-keyboard-shortcuts).</span><span class="sxs-lookup"><span data-stu-id="e4a25-234">For shortcuts for quickly incrementing or decrementing a value by `0.1`, `1`, `10`, or `100` units, navigate to [Change declaration values with keyboard shortcuts](#change-declaration-values-with-keyboard-shortcuts).</span></span>  
 
 :::image type="complex" source="../media/css-elements-styles-border-bottom-style-dropdown.msft.png" alt-text="Ändern des Werts einer Deklaration" lightbox="../media/css-elements-styles-border-bottom-style-dropdown.msft.png":::
-   <span data-ttu-id="55894-236">Ändern des Werts der `border-bottom-style` Deklaration</span><span class="sxs-lookup"><span data-stu-id="55894-236">Change the value of the `border-bottom-style` declaration</span></span>  
+   <span data-ttu-id="e4a25-236">Ändern des Werts der `border-bottom-style` Deklaration</span><span class="sxs-lookup"><span data-stu-id="e4a25-236">Change the value of the `border-bottom-style` declaration</span></span>  
 :::image-end:::  
 
-### <a name="change-declaration-values-with-keyboard-shortcuts"></a><span data-ttu-id="55894-237">Ändern von Deklarationswerten mit Tastenkombinationen</span><span class="sxs-lookup"><span data-stu-id="55894-237">Change declaration values with keyboard shortcuts</span></span>  
+### <a name="change-declaration-values-with-keyboard-shortcuts"></a><span data-ttu-id="e4a25-237">Ändern von Deklarationswerten mit Tastenkombinationen</span><span class="sxs-lookup"><span data-stu-id="e4a25-237">Change declaration values with keyboard shortcuts</span></span>  
 
-<span data-ttu-id="55894-238">Beim Bearbeiten des Werts einer Deklaration können Sie die folgenden Tastenkombinationen verwenden, um den Wert um einen bestimmten Betrag zu erhöhen.</span><span class="sxs-lookup"><span data-stu-id="55894-238">While editing the value of a declaration, you may use the following keyboard shortcuts to increment the value by a specific amount.</span></span>  
+<span data-ttu-id="e4a25-238">Beim Bearbeiten des Werts einer Deklaration können Sie die folgenden Tastenkombinationen verwenden, um den Wert um einen bestimmten Betrag zu erhöhen.</span><span class="sxs-lookup"><span data-stu-id="e4a25-238">While editing the value of a declaration, you may use the following keyboard shortcuts to increment the value by a specific amount.</span></span>  
 
-*   <span data-ttu-id="55894-239">Wählen `Alt` + `Up` Sie \(Windows, Linux\) oder `Option` + `Up` \(macOS\) aus, um um zu `0.1` erhöhen.</span><span class="sxs-lookup"><span data-stu-id="55894-239">Select `Alt`+`Up` \(Windows, Linux\) or `Option`+`Up` \(macOS\) to increment by `0.1`.</span></span>  
-*   <span data-ttu-id="55894-240">Wählen `Up` Sie diese Option aus, um den Wert durch oder durch zu ändern, wenn sich der aktuelle Wert zwischen und `1` `0.1` `-1` `1` befindet.</span><span class="sxs-lookup"><span data-stu-id="55894-240">Select `Up` to change the value by `1`, or by `0.1` if the current value is between `-1` and `1`.</span></span>  
-*   <span data-ttu-id="55894-241">Wählen `Shift` + `Up` Sie aus, um um zu `10` erhöhen.</span><span class="sxs-lookup"><span data-stu-id="55894-241">Select `Shift`+`Up` to increment by `10`.</span></span>  
-*   <span data-ttu-id="55894-242">Wählen `Shift` + `Page Up` Sie \(Windows, Linux\) oder `Shift` + `Command` + `Up` \(macOS\) aus, um den Wert um zu `100` erhöhen.</span><span class="sxs-lookup"><span data-stu-id="55894-242">Select `Shift`+`Page Up` \(Windows, Linux\) or `Shift`+`Command`+`Up` \(macOS\) to increment the value by `100`.</span></span>  
+*   <span data-ttu-id="e4a25-239">Wählen `Alt` + `Up` Sie \(Windows, Linux\) oder `Option` + `Up` \(macOS\) aus, um um zu `0.1` erhöhen.</span><span class="sxs-lookup"><span data-stu-id="e4a25-239">Select `Alt`+`Up` \(Windows, Linux\) or `Option`+`Up` \(macOS\) to increment by `0.1`.</span></span>  
+*   <span data-ttu-id="e4a25-240">Wählen `Up` Sie diese Option aus, um den Wert durch oder durch zu ändern, wenn sich der aktuelle Wert zwischen und `1` `0.1` `-1` `1` befindet.</span><span class="sxs-lookup"><span data-stu-id="e4a25-240">Select `Up` to change the value by `1`, or by `0.1` if the current value is between `-1` and `1`.</span></span>  
+*   <span data-ttu-id="e4a25-241">Wählen `Shift` + `Up` Sie aus, um um zu `10` erhöhen.</span><span class="sxs-lookup"><span data-stu-id="e4a25-241">Select `Shift`+`Up` to increment by `10`.</span></span>  
+*   <span data-ttu-id="e4a25-242">Wählen `Shift` + `Page Up` Sie \(Windows, Linux\) oder `Shift` + `Command` + `Up` \(macOS\) aus, um den Wert um zu `100` erhöhen.</span><span class="sxs-lookup"><span data-stu-id="e4a25-242">Select `Shift`+`Page Up` \(Windows, Linux\) or `Shift`+`Command`+`Up` \(macOS\) to increment the value by `100`.</span></span>  
 
-<span data-ttu-id="55894-243">Die Dekrementierung funktioniert ebenfalls.</span><span class="sxs-lookup"><span data-stu-id="55894-243">Decrementing also works.</span></span>  <span data-ttu-id="55894-244">Ersetzen Sie einfach jede oben `Up` genannte Instanz durch `Down` .</span><span class="sxs-lookup"><span data-stu-id="55894-244">Just replace each instance of `Up` mentioned above with `Down`.</span></span>  
+<span data-ttu-id="e4a25-243">Die Dekrementierung funktioniert ebenfalls.</span><span class="sxs-lookup"><span data-stu-id="e4a25-243">Decrementing also works.</span></span>  <span data-ttu-id="e4a25-244">Ersetzen Sie einfach jede oben `Up` genannte Instanz durch `Down` .</span><span class="sxs-lookup"><span data-stu-id="e4a25-244">Just replace each instance of `Up` mentioned above with `Down`.</span></span>  
 
-### <a name="add-a-class-to-an-element"></a><span data-ttu-id="55894-245">Hinzufügen einer Klasse zu einem Element</span><span class="sxs-lookup"><span data-stu-id="55894-245">Add a class to an element</span></span>  
+### <a name="add-a-class-to-an-element"></a><span data-ttu-id="e4a25-245">Hinzufügen einer Klasse zu einem Element</span><span class="sxs-lookup"><span data-stu-id="e4a25-245">Add a class to an element</span></span>  
 
-<span data-ttu-id="55894-246">Führen Sie die folgenden Aktionen aus, um einem Element eine Klasse hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="55894-246">Complete the following actions to add a class to an element.</span></span>  
+<span data-ttu-id="e4a25-246">Führen Sie die folgenden Aktionen aus, um einem Element eine Klasse hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="e4a25-246">Complete the following actions to add a class to an element.</span></span>  
 
-1.  <span data-ttu-id="55894-247">[Wählen Sie das Element](#choose-an-element) in der **DOM-Struktur aus.**</span><span class="sxs-lookup"><span data-stu-id="55894-247">[Select the element](#choose-an-element) in the **DOM Tree**.</span></span>  
-1.  <span data-ttu-id="55894-248">Wählen **Sie .cls**aus.</span><span class="sxs-lookup"><span data-stu-id="55894-248">Choose **.cls**.</span></span>  
-1.  <span data-ttu-id="55894-249">Geben Sie den Namen der Klasse in das Textfeld **Neue Klasse** hinzufügen ein.</span><span class="sxs-lookup"><span data-stu-id="55894-249">Enter the name of the class in the **Add New Class** text box.</span></span>  
-1.  <span data-ttu-id="55894-250">Wählen Sie `Enter` aus.</span><span class="sxs-lookup"><span data-stu-id="55894-250">Select `Enter`.</span></span>  
+1.  <span data-ttu-id="e4a25-247">[Wählen Sie das Element](#choose-an-element) in der **DOM-Struktur aus.**</span><span class="sxs-lookup"><span data-stu-id="e4a25-247">[Select the element](#choose-an-element) in the **DOM Tree**.</span></span>  
+1.  <span data-ttu-id="e4a25-248">Wählen **Sie .cls**aus.</span><span class="sxs-lookup"><span data-stu-id="e4a25-248">Choose **.cls**.</span></span>  
+1.  <span data-ttu-id="e4a25-249">Geben Sie den Namen der Klasse in das Textfeld **Neue Klasse** hinzufügen ein.</span><span class="sxs-lookup"><span data-stu-id="e4a25-249">Enter the name of the class in the **Add New Class** text box.</span></span>  
+1.  <span data-ttu-id="e4a25-250">Wählen Sie `Enter` aus.</span><span class="sxs-lookup"><span data-stu-id="e4a25-250">Select `Enter`.</span></span>  
 
 :::image type="complex" source="../media/css-elements-styles-filter-classes.msft.png" alt-text="Der Bereich Elementklassen" lightbox="../media/css-elements-styles-filter-classes.msft.png":::
-   <span data-ttu-id="55894-252">Der **Bereich Elementklassen**</span><span class="sxs-lookup"><span data-stu-id="55894-252">The **Element Classes** pane</span></span>  
+   <span data-ttu-id="e4a25-252">Der **Bereich Elementklassen**</span><span class="sxs-lookup"><span data-stu-id="e4a25-252">The **Element Classes** pane</span></span>  
 :::image-end:::  
 
-### <a name="toggle-a-class"></a><span data-ttu-id="55894-253">Umschalten einer Klasse</span><span class="sxs-lookup"><span data-stu-id="55894-253">Toggle a class</span></span>  
+### <a name="toggle-a-class"></a><span data-ttu-id="e4a25-253">Umschalten einer Klasse</span><span class="sxs-lookup"><span data-stu-id="e4a25-253">Toggle a class</span></span>  
 
-<span data-ttu-id="55894-254">Führen Sie die folgenden Aktionen aus, um eine Klasse für ein Element zu aktivieren oder zu deaktivieren.</span><span class="sxs-lookup"><span data-stu-id="55894-254">Complete the following actions to enable or disable a class on an element.</span></span>  
+<span data-ttu-id="e4a25-254">Führen Sie die folgenden Aktionen aus, um eine Klasse für ein Element zu aktivieren oder zu deaktivieren.</span><span class="sxs-lookup"><span data-stu-id="e4a25-254">Complete the following actions to enable or disable a class on an element.</span></span>  
 
-1.  <span data-ttu-id="55894-255">[Wählen Sie das Element](#choose-an-element) in der **DOM-Struktur aus.**</span><span class="sxs-lookup"><span data-stu-id="55894-255">[Select the element](#choose-an-element) in the **DOM Tree**.</span></span>  
-1.  <span data-ttu-id="55894-256">Öffnen Sie den **Bereich Elementklassen.**</span><span class="sxs-lookup"><span data-stu-id="55894-256">Open the **Element Classes** pane.</span></span>  <span data-ttu-id="55894-257">Navigieren Sie [zu Hinzufügen einer Klasse zu einem Element](#add-a-class-to-an-element).</span><span class="sxs-lookup"><span data-stu-id="55894-257">Navigate to [Add a class to an element](#add-a-class-to-an-element).</span></span>  <span data-ttu-id="55894-258">Unterhalb des **Textfelds Neue Klasse** hinzufügen werden alle Klassen auf das spezifische Element angewendet.</span><span class="sxs-lookup"><span data-stu-id="55894-258">Below the **Add New Class** text box are all of the classes applied to the specific element.</span></span>  
-1.  <span data-ttu-id="55894-259">Aktivieren Sie das Kontrollkästchen neben der Klasse, die Sie aktivieren oder deaktivieren möchten.</span><span class="sxs-lookup"><span data-stu-id="55894-259">Toggle the checkbox next to the class that you want to turn on or off.</span></span>  
+1.  <span data-ttu-id="e4a25-255">[Wählen Sie das Element](#choose-an-element) in der **DOM-Struktur aus.**</span><span class="sxs-lookup"><span data-stu-id="e4a25-255">[Select the element](#choose-an-element) in the **DOM Tree**.</span></span>  
+1.  <span data-ttu-id="e4a25-256">Öffnen Sie den **Bereich Elementklassen.**</span><span class="sxs-lookup"><span data-stu-id="e4a25-256">Open the **Element Classes** pane.</span></span>  <span data-ttu-id="e4a25-257">Navigieren Sie [zu Hinzufügen einer Klasse zu einem Element](#add-a-class-to-an-element).</span><span class="sxs-lookup"><span data-stu-id="e4a25-257">Navigate to [Add a class to an element](#add-a-class-to-an-element).</span></span>  <span data-ttu-id="e4a25-258">Unterhalb des **Textfelds Neue Klasse** hinzufügen werden alle Klassen auf das spezifische Element angewendet.</span><span class="sxs-lookup"><span data-stu-id="e4a25-258">Below the **Add New Class** text box are all of the classes applied to the specific element.</span></span>  
+1.  <span data-ttu-id="e4a25-259">Aktivieren Sie das Kontrollkästchen neben der Klasse, die Sie aktivieren oder deaktivieren möchten.</span><span class="sxs-lookup"><span data-stu-id="e4a25-259">Toggle the checkbox next to the class that you want to turn on or off.</span></span>  
 
-### <a name="add-a-style-rule"></a><span data-ttu-id="55894-260">Hinzufügen einer Formatvorlageregel</span><span class="sxs-lookup"><span data-stu-id="55894-260">Add a style rule</span></span>  
+### <a name="add-a-style-rule"></a><span data-ttu-id="e4a25-260">Hinzufügen einer Formatvorlageregel</span><span class="sxs-lookup"><span data-stu-id="e4a25-260">Add a style rule</span></span>  
 
-<span data-ttu-id="55894-261">Führen Sie die folgenden Aktionen aus, um eine neue Formatvorlageregel hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="55894-261">Complete the following actions to add a new style rule.</span></span>  
+<span data-ttu-id="e4a25-261">Führen Sie die folgenden Aktionen aus, um eine neue Formatvorlageregel hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="e4a25-261">Complete the following actions to add a new style rule.</span></span>  
 
-1.  <span data-ttu-id="55894-262">[Wählen Sie ein Element aus.](#choose-an-element)</span><span class="sxs-lookup"><span data-stu-id="55894-262">[Select an element](#choose-an-element).</span></span>  
-1.  <span data-ttu-id="55894-263">Wählen **Sie Neue Formatvorlageregel** \( ![ Neue Formatvorlageregel ][ImageNewStyleRuleIcon] \).</span><span class="sxs-lookup"><span data-stu-id="55894-263">Choose **New Style Rule** \(![New Style Rule][ImageNewStyleRuleIcon]\).</span></span>  <span data-ttu-id="55894-264">DevTools fügt eine neue Regel unter der **element.style-Regel** ein.</span><span class="sxs-lookup"><span data-stu-id="55894-264">DevTools inserts a new rule beneath the **element.style** rule.</span></span>  
+1.  <span data-ttu-id="e4a25-262">[Wählen Sie ein Element aus.](#choose-an-element)</span><span class="sxs-lookup"><span data-stu-id="e4a25-262">[Select an element](#choose-an-element).</span></span>  
+1.  <span data-ttu-id="e4a25-263">Wählen **Sie Neue Formatvorlageregel** \( ![ Neue Formatvorlageregel ](../media/new-style-rule-icon.msft.png) \).</span><span class="sxs-lookup"><span data-stu-id="e4a25-263">Choose **New Style Rule** \(![New Style Rule](../media/new-style-rule-icon.msft.png)\).</span></span>  <span data-ttu-id="e4a25-264">DevTools fügt eine neue Regel unter der **element.style-Regel** ein.</span><span class="sxs-lookup"><span data-stu-id="e4a25-264">DevTools inserts a new rule beneath the **element.style** rule.</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="55894-265">In der folgenden Abbildung fügt DevTools die `h1.devsite-page-title` Formatvorlageregel hinzu, nachdem Sie **Neue Formatvorlageregel auswählen.**</span><span class="sxs-lookup"><span data-stu-id="55894-265">In the following figure, DevTools adds the `h1.devsite-page-title` style rule after you choose **New Style Rule**.</span></span>  
+> <span data-ttu-id="e4a25-265">In der folgenden Abbildung fügt DevTools die `h1.devsite-page-title` Formatvorlageregel hinzu, nachdem Sie **Neue Formatvorlageregel auswählen.**</span><span class="sxs-lookup"><span data-stu-id="e4a25-265">In the following figure, DevTools adds the `h1.devsite-page-title` style rule after you choose **New Style Rule**.</span></span>  
 
 :::image type="complex" source="../media/css-elements-styles-style-new.msft.png" alt-text="Hinzufügen einer neuen Formatvorlageregel" lightbox="../media/css-elements-styles-style-new.msft.png":::
-   <span data-ttu-id="55894-267">Hinzufügen einer neuen Formatvorlageregel</span><span class="sxs-lookup"><span data-stu-id="55894-267">Add a new style rule</span></span>  
+   <span data-ttu-id="e4a25-267">Hinzufügen einer neuen Formatvorlageregel</span><span class="sxs-lookup"><span data-stu-id="e4a25-267">Add a new style rule</span></span>  
 :::image-end:::  
 
-#### <a name="choose-which-stylesheet-to-add-a-rule-to"></a><span data-ttu-id="55894-268">Auswählen des Stylesheets, dem eine Regel hinzugefügt werden soll</span><span class="sxs-lookup"><span data-stu-id="55894-268">Choose which stylesheet to add a rule to</span></span>  
+#### <a name="choose-which-stylesheet-to-add-a-rule-to"></a><span data-ttu-id="e4a25-268">Auswählen des Stylesheets, dem eine Regel hinzugefügt werden soll</span><span class="sxs-lookup"><span data-stu-id="e4a25-268">Choose which stylesheet to add a rule to</span></span>  
 
-<span data-ttu-id="55894-269">Wenn [Sie eine neue Formatvorlageregel hinzufügen,](#add-a-style-rule)wählen Sie Neue Formatvorlageregel \( Neue Formatvorlageregel \) aus, und halten Sie diese fest, um zu wählen, zu welchem Stylesheet die \*\*\*\* ![ ][ImageNewStyleRuleIcon] Formatvorlageregel hinzugefügt werden soll.</span><span class="sxs-lookup"><span data-stu-id="55894-269">When [adding a new style rule](#add-a-style-rule), choose and hold **New Style Rule** \(![New Style Rule][ImageNewStyleRuleIcon]\) to choose which stylesheet to add the style rule to.</span></span>  
+<span data-ttu-id="e4a25-269">Wenn [Sie eine neue Formatvorlageregel hinzufügen,](#add-a-style-rule)wählen Sie Neue Formatvorlageregel \( Neue Formatvorlageregel \) aus, und halten Sie diese fest, um zu wählen, zu welchem Stylesheet die \*\*\*\* ![ ](../media/new-style-rule-icon.msft.png) Formatvorlageregel hinzugefügt werden soll.</span><span class="sxs-lookup"><span data-stu-id="e4a25-269">When [adding a new style rule](#add-a-style-rule), choose and hold **New Style Rule** \(![New Style Rule](../media/new-style-rule-icon.msft.png)\) to choose which stylesheet to add the style rule to.</span></span>  
 
 :::image type="complex" source="../media/css-elements-styles-style-new-select-existing.msft.png" alt-text="Auswählen eines Stylesheets" lightbox="../media/css-elements-styles-style-new-select-existing.msft.png":::
-   <span data-ttu-id="55894-271">Auswählen eines Stylesheets</span><span class="sxs-lookup"><span data-stu-id="55894-271">Choose a stylesheet</span></span>  
+   <span data-ttu-id="e4a25-271">Auswählen eines Stylesheets</span><span class="sxs-lookup"><span data-stu-id="e4a25-271">Choose a stylesheet</span></span>  
 :::image-end:::  
 
-#### <a name="add-a-style-rule-to-a-specific-location"></a><span data-ttu-id="55894-272">Hinzufügen einer Formatvorlageregel zu einem bestimmten Speicherort</span><span class="sxs-lookup"><span data-stu-id="55894-272">Add a style rule to a specific location</span></span>  
+#### <a name="add-a-style-rule-to-a-specific-location"></a><span data-ttu-id="e4a25-272">Hinzufügen einer Formatvorlageregel zu einem bestimmten Speicherort</span><span class="sxs-lookup"><span data-stu-id="e4a25-272">Add a style rule to a specific location</span></span>  
 
-<span data-ttu-id="55894-273">Führen Sie die folgenden Aktionen aus, um einer bestimmten Position im Formatvorlagenbereich eine **Formatregel hinzuzufügen.**</span><span class="sxs-lookup"><span data-stu-id="55894-273">Complete the following actions to add a style rule to a specific location in the **Styles** panel.</span></span>  
+<span data-ttu-id="e4a25-273">Führen Sie die folgenden Aktionen aus, um einer bestimmten Position im Formatvorlagenbereich eine **Formatregel hinzuzufügen.**</span><span class="sxs-lookup"><span data-stu-id="e4a25-273">Complete the following actions to add a style rule to a specific location in the **Styles** panel.</span></span>  
 
-1.  <span data-ttu-id="55894-274">Zeigen Sie auf die Formatvorlageregel, die sich direkt über der Stelle befindet, an der Sie die neue Formatvorlageregel hinzufügen möchten.</span><span class="sxs-lookup"><span data-stu-id="55894-274">Hover on the style rule that is directly above where you want to add your new style rule.</span></span>  
-1.  <span data-ttu-id="55894-275">[Zeigen Sie die **Symbolleiste Weitere Aktionen** an.](#reveal-the-more-actions-toolbar)</span><span class="sxs-lookup"><span data-stu-id="55894-275">[Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).</span></span>  
-1.  <span data-ttu-id="55894-276">Wählen **Sie Formatvorlageregel einfügen unten** \( ![ Formatvorlageregel einfügen unten symbol ][ImageNewStyleRuleIcon] \).</span><span class="sxs-lookup"><span data-stu-id="55894-276">Choose **Insert Style Rule Below** \(![Insert Style Rule Below icon][ImageNewStyleRuleIcon]\).</span></span>  
+1.  <span data-ttu-id="e4a25-274">Zeigen Sie auf die Formatvorlageregel, die sich direkt über der Stelle befindet, an der Sie die neue Formatvorlageregel hinzufügen möchten.</span><span class="sxs-lookup"><span data-stu-id="e4a25-274">Hover on the style rule that is directly above where you want to add your new style rule.</span></span>  
+1.  <span data-ttu-id="e4a25-275">[Zeigen Sie die **Symbolleiste Weitere Aktionen** an.](#reveal-the-more-actions-toolbar)</span><span class="sxs-lookup"><span data-stu-id="e4a25-275">[Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).</span></span>  
+1.  <span data-ttu-id="e4a25-276">Wählen **Sie Formatvorlageregel einfügen unten** \( ![ Formatvorlageregel einfügen unten symbol ](../media/new-style-rule-icon.msft.png) \).</span><span class="sxs-lookup"><span data-stu-id="e4a25-276">Choose **Insert Style Rule Below** \(![Insert Style Rule Below icon](../media/new-style-rule-icon.msft.png)\).</span></span>  
 
 :::image type="complex" source="../media/css-elements-styles-insert-style-rule-below.msft.png" alt-text="Einfügen von Formatvorlageregel unten" lightbox="../media/css-elements-styles-insert-style-rule-below.msft.png":::
-   **<span data-ttu-id="55894-278">Einfügen von Formatvorlageregel unten</span><span class="sxs-lookup"><span data-stu-id="55894-278">Insert Style Rule Below</span></span>**  
+   **<span data-ttu-id="e4a25-278">Einfügen von Formatvorlageregel unten</span><span class="sxs-lookup"><span data-stu-id="e4a25-278">Insert Style Rule Below</span></span>**  
 :::image-end:::  
 
-### <a name="reveal-the-more-actions-toolbar"></a><span data-ttu-id="55894-279">Anzeigen der Symbolleiste "Weitere Aktionen"</span><span class="sxs-lookup"><span data-stu-id="55894-279">Reveal the More Actions toolbar</span></span>  
+### <a name="reveal-the-more-actions-toolbar"></a><span data-ttu-id="e4a25-279">Anzeigen der Symbolleiste "Weitere Aktionen"</span><span class="sxs-lookup"><span data-stu-id="e4a25-279">Reveal the More Actions toolbar</span></span>  
 
-<span data-ttu-id="55894-280">Mit **der Symbolleiste** Weitere Aktionen können Sie die folgenden Aktionen ausführen.</span><span class="sxs-lookup"><span data-stu-id="55894-280">The **More Actions** toolbar lets you perform the following actions.</span></span>  
+<span data-ttu-id="e4a25-280">Mit **der Symbolleiste** Weitere Aktionen können Sie die folgenden Aktionen ausführen.</span><span class="sxs-lookup"><span data-stu-id="e4a25-280">The **More Actions** toolbar lets you perform the following actions.</span></span>  
 
-*   <span data-ttu-id="55894-281">Fügen Sie eine Formatvorlageregel direkt unterhalb der Formatvorlage ein, auf die Sie sich konzentrieren.</span><span class="sxs-lookup"><span data-stu-id="55894-281">Insert a style rule directly below the one you are focused on.</span></span>  
-*   <span data-ttu-id="55894-282">Fügen Sie der Formatregel, auf die Sie sich konzentrieren, eine , , oder `background-color` `color` `box-shadow` `text-shadow` -Deklaration hinzu.</span><span class="sxs-lookup"><span data-stu-id="55894-282">Add a `background-color`, `color`, `box-shadow`, or `text-shadow` declaration to the style rule you are focused on.</span></span>  
+*   <span data-ttu-id="e4a25-281">Fügen Sie eine Formatvorlageregel direkt unterhalb der Formatvorlage ein, auf die Sie sich konzentrieren.</span><span class="sxs-lookup"><span data-stu-id="e4a25-281">Insert a style rule directly below the one you are focused on.</span></span>  
+*   <span data-ttu-id="e4a25-282">Fügen Sie der Formatregel, auf die Sie sich konzentrieren, eine , , oder `background-color` `color` `box-shadow` `text-shadow` -Deklaration hinzu.</span><span class="sxs-lookup"><span data-stu-id="e4a25-282">Add a `background-color`, `color`, `box-shadow`, or `text-shadow` declaration to the style rule you are focused on.</span></span>  
 
-<span data-ttu-id="55894-283">Führen Sie die folgenden Aktionen aus, um die Symbolleiste **Weitere Aktionen anzuzeigen.**</span><span class="sxs-lookup"><span data-stu-id="55894-283">Complete the following actions to reveal the **More Actions** toolbar.</span></span>  
+<span data-ttu-id="e4a25-283">Führen Sie die folgenden Aktionen aus, um die Symbolleiste **Weitere Aktionen anzuzeigen.**</span><span class="sxs-lookup"><span data-stu-id="e4a25-283">Complete the following actions to reveal the **More Actions** toolbar.</span></span>  
 
-1.  <span data-ttu-id="55894-284">Zeigen Sie **im Bereich** Formatvorlagen auf eine Formatvorlageregel.</span><span class="sxs-lookup"><span data-stu-id="55894-284">In the **Styles** panel, hover on a style rule.</span></span>  <span data-ttu-id="55894-285">**Weitere Aktionen** \( \) werden unten rechts im Abschnitt `...` Formatregel angezeigt.</span><span class="sxs-lookup"><span data-stu-id="55894-285">**More Actions** \(`...`\) is revealed in the bottom-right of the style rule section.</span></span>  
+1.  <span data-ttu-id="e4a25-284">Zeigen Sie **im Bereich** Formatvorlagen auf eine Formatvorlageregel.</span><span class="sxs-lookup"><span data-stu-id="e4a25-284">In the **Styles** panel, hover on a style rule.</span></span>  <span data-ttu-id="e4a25-285">**Weitere Aktionen** \( \) werden unten rechts im Abschnitt `...` Formatregel angezeigt.</span><span class="sxs-lookup"><span data-stu-id="e4a25-285">**More Actions** \(`...`\) is revealed in the bottom-right of the style rule section.</span></span>  
     
     > [!NOTE]
-    > <span data-ttu-id="55894-286">Zeigen Sie in der folgenden Abbildung auf die Formatregel, und weitere Aktionen werden unten rechts im Abschnitt `.header-holder.has-default-focus` Formatregel angezeigt. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="55894-286">In the following figure, hover on the `.header-holder.has-default-focus` style rule and **More Actions** is revealed in the bottom-right of the style rule section.</span></span>  
+    > <span data-ttu-id="e4a25-286">Zeigen Sie in der folgenden Abbildung auf die Formatregel, und weitere Aktionen werden unten rechts im Abschnitt `.header-holder.has-default-focus` Formatregel angezeigt. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="e4a25-286">In the following figure, hover on the `.header-holder.has-default-focus` style rule and **More Actions** is revealed in the bottom-right of the style rule section.</span></span>  
     
     :::image type="complex" source="../media/css-elements-styles-new-rule-styles.msft.png" alt-text="Weitere Aktionen" lightbox="../media/css-elements-styles-new-rule-styles.msft.png":::
-       <span data-ttu-id="55894-288">Reveal **More Actions** \( `...` \)</span><span class="sxs-lookup"><span data-stu-id="55894-288">Reveal **More Actions** \(`...`\)</span></span>  
+       <span data-ttu-id="e4a25-288">Reveal **More Actions** \( `...` \)</span><span class="sxs-lookup"><span data-stu-id="e4a25-288">Reveal **More Actions** \(`...`\)</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="55894-289">Zeigen Sie auf **Weitere Aktionen** \( `...` \), um die oben genannten Aktionen zu zeigen.</span><span class="sxs-lookup"><span data-stu-id="55894-289">Hover on **More Actions** \(`...`\) to reveal the actions mentioned above.</span></span>  
+1.  <span data-ttu-id="e4a25-289">Zeigen Sie auf **Weitere Aktionen** \( `...` \), um die oben genannten Aktionen zu zeigen.</span><span class="sxs-lookup"><span data-stu-id="e4a25-289">Hover on **More Actions** \(`...`\) to reveal the actions mentioned above.</span></span>  
     
     > [!NOTE]
-    > <span data-ttu-id="55894-290">Die **Aktion Style Rule Below** einfügen wird nach dem Zeigen auf weitere Aktionen **angezeigt.**</span><span class="sxs-lookup"><span data-stu-id="55894-290">The **Insert Style Rule Below** action is revealed after hovering over **More Actions**.</span></span>  
+    > <span data-ttu-id="e4a25-290">Die **Aktion Style Rule Below** einfügen wird nach dem Zeigen auf weitere Aktionen **angezeigt.**</span><span class="sxs-lookup"><span data-stu-id="e4a25-290">The **Insert Style Rule Below** action is revealed after hovering over **More Actions**.</span></span>  
     
     :::image type="complex" source="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png" alt-text="Die Symbolleiste "Weitere Aktionen"" lightbox="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png":::
-       <span data-ttu-id="55894-292">Die **Symbolleiste "Weitere Aktionen"**</span><span class="sxs-lookup"><span data-stu-id="55894-292">The **More Actions** toolbar</span></span>  
+       <span data-ttu-id="e4a25-292">Die **Symbolleiste "Weitere Aktionen"**</span><span class="sxs-lookup"><span data-stu-id="e4a25-292">The **More Actions** toolbar</span></span>  
     :::image-end:::  
     
-### <a name="toggle-a-declaration"></a><span data-ttu-id="55894-293">Umschalten einer Deklaration</span><span class="sxs-lookup"><span data-stu-id="55894-293">Toggle a declaration</span></span>  
+### <a name="toggle-a-declaration"></a><span data-ttu-id="e4a25-293">Umschalten einer Deklaration</span><span class="sxs-lookup"><span data-stu-id="e4a25-293">Toggle a declaration</span></span>  
 
-<span data-ttu-id="55894-294">Führen Sie die folgenden Aktionen aus, um eine einzelne Deklaration auf \(oder off\) umzuschalten.</span><span class="sxs-lookup"><span data-stu-id="55894-294">Complete the folllwoing actions to toggle a single declaration on \(or off\).</span></span>  
+<span data-ttu-id="e4a25-294">Führen Sie die folgenden Aktionen aus, um eine einzelne Deklaration auf \(oder off\) umzuschalten.</span><span class="sxs-lookup"><span data-stu-id="e4a25-294">Complete the folllwoing actions to toggle a single declaration on \(or off\).</span></span>  
 
-1.  <span data-ttu-id="55894-295">[Wählen Sie ein Element aus.](#choose-an-element)</span><span class="sxs-lookup"><span data-stu-id="55894-295">[Select an element](#choose-an-element).</span></span>  
-1.  <span data-ttu-id="55894-296">Zeigen Sie **im Bereich** Formatvorlagen auf die Regel, die die Deklaration definiert.</span><span class="sxs-lookup"><span data-stu-id="55894-296">In the **Styles** pane, hover on the rule that defines the declaration.</span></span>  <span data-ttu-id="55894-297">Neben jeder Deklaration wird ein Kontrollkästchen angezeigt.</span><span class="sxs-lookup"><span data-stu-id="55894-297">A checkbox appears next to each declaration.</span></span>  
-1.  <span data-ttu-id="55894-298">Aktivieren Sie \(oder deaktivieren Sie\) das Kontrollkästchen neben der Deklaration.</span><span class="sxs-lookup"><span data-stu-id="55894-298">Check \(or uncheck\) the checkbox next to the declaration.</span></span>  <span data-ttu-id="55894-299">Wenn Sie eine Deklaration deaktivieren, durchkreuzt DevTools sie, um anzugeben, dass sie nicht mehr aktiv ist.</span><span class="sxs-lookup"><span data-stu-id="55894-299">When you uncheck a declaration, DevTools crosses it out to indicate that it is no longer active.</span></span>  
+1.  <span data-ttu-id="e4a25-295">[Wählen Sie ein Element aus.](#choose-an-element)</span><span class="sxs-lookup"><span data-stu-id="e4a25-295">[Select an element](#choose-an-element).</span></span>  
+1.  <span data-ttu-id="e4a25-296">Zeigen Sie **im Bereich** Formatvorlagen auf die Regel, die die Deklaration definiert.</span><span class="sxs-lookup"><span data-stu-id="e4a25-296">In the **Styles** pane, hover on the rule that defines the declaration.</span></span>  <span data-ttu-id="e4a25-297">Neben jeder Deklaration wird ein Kontrollkästchen angezeigt.</span><span class="sxs-lookup"><span data-stu-id="e4a25-297">A checkbox appears next to each declaration.</span></span>  
+1.  <span data-ttu-id="e4a25-298">Aktivieren Sie \(oder deaktivieren Sie\) das Kontrollkästchen neben der Deklaration.</span><span class="sxs-lookup"><span data-stu-id="e4a25-298">Check \(or uncheck\) the checkbox next to the declaration.</span></span>  <span data-ttu-id="e4a25-299">Wenn Sie eine Deklaration deaktivieren, durchkreuzt DevTools sie, um anzugeben, dass sie nicht mehr aktiv ist.</span><span class="sxs-lookup"><span data-stu-id="e4a25-299">When you uncheck a declaration, DevTools crosses it out to indicate that it is no longer active.</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="55894-300">In der folgenden Abbildung wurde die Eigenschaft für das aktuell ausgewählte Element `margin-top` deaktiviert.</span><span class="sxs-lookup"><span data-stu-id="55894-300">In the following figure, the `margin-top` property for the currently selected element has been toggled off.</span></span>  
+> <span data-ttu-id="e4a25-300">In der folgenden Abbildung wurde die Eigenschaft für das aktuell ausgewählte Element `margin-top` deaktiviert.</span><span class="sxs-lookup"><span data-stu-id="e4a25-300">In the following figure, the `margin-top` property for the currently selected element has been toggled off.</span></span>  
 
 :::image type="complex" source="../media/css-elements-styles-rule-deactivated.msft.png" alt-text="Umschalten einer Deklaration" lightbox="../media/css-elements-styles-rule-deactivated.msft.png":::
-   <span data-ttu-id="55894-302">Umschalten einer Deklaration</span><span class="sxs-lookup"><span data-stu-id="55894-302">Toggle a declaration</span></span>  
+   <span data-ttu-id="e4a25-302">Umschalten einer Deklaration</span><span class="sxs-lookup"><span data-stu-id="e4a25-302">Toggle a declaration</span></span>  
 :::image-end:::  
 
-### <a name="add-a-background-color-declaration"></a><span data-ttu-id="55894-303">Hinzufügen einer Hintergrundfarbdeklaration</span><span class="sxs-lookup"><span data-stu-id="55894-303">Add a background-color declaration</span></span>  
+### <a name="add-a-background-color-declaration"></a><span data-ttu-id="e4a25-303">Hinzufügen einer Hintergrundfarbdeklaration</span><span class="sxs-lookup"><span data-stu-id="e4a25-303">Add a background-color declaration</span></span>  
 
-<span data-ttu-id="55894-304">Führen Sie die folgenden Aktionen aus, um einem `background-color` Element eine Deklaration hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="55894-304">Complete the following actions to add a `background-color` declaration to an element.</span></span>  
+<span data-ttu-id="e4a25-304">Führen Sie die folgenden Aktionen aus, um einem `background-color` Element eine Deklaration hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="e4a25-304">Complete the following actions to add a `background-color` declaration to an element.</span></span>  
 
-1.  <span data-ttu-id="55894-305">Zeigen Sie auf die Formatvorlageregel, der Sie die `background-color` Deklaration hinzufügen möchten.</span><span class="sxs-lookup"><span data-stu-id="55894-305">Hover on the style rule that you want to add the `background-color` declaration to.</span></span>  
-1.  <span data-ttu-id="55894-306">[Zeigen Sie die **Symbolleiste Weitere Aktionen** an.](#reveal-the-more-actions-toolbar)</span><span class="sxs-lookup"><span data-stu-id="55894-306">[Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).</span></span>  
-1.  <span data-ttu-id="55894-307">Wählen **Sie Hintergrundfarbe hinzufügen** \( Symbol ![ Hintergrundfarbe hinzufügen ][ImageAddBackgroundColorIcon] \).</span><span class="sxs-lookup"><span data-stu-id="55894-307">Choose **Add Background Color** \(![Add Background Color icon][ImageAddBackgroundColorIcon]\).</span></span>  
+1.  <span data-ttu-id="e4a25-305">Zeigen Sie auf die Formatvorlageregel, der Sie die `background-color` Deklaration hinzufügen möchten.</span><span class="sxs-lookup"><span data-stu-id="e4a25-305">Hover on the style rule that you want to add the `background-color` declaration to.</span></span>  
+1.  <span data-ttu-id="e4a25-306">[Zeigen Sie die **Symbolleiste Weitere Aktionen** an.](#reveal-the-more-actions-toolbar)</span><span class="sxs-lookup"><span data-stu-id="e4a25-306">[Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).</span></span>  
+1.  <span data-ttu-id="e4a25-307">Wählen **Sie Hintergrundfarbe hinzufügen** \( Symbol ![ Hintergrundfarbe hinzufügen ](../media/add-background-color-icon.msft.png) \).</span><span class="sxs-lookup"><span data-stu-id="e4a25-307">Choose **Add Background Color** \(![Add Background Color icon](../media/add-background-color-icon.msft.png)\).</span></span>  
 
 :::image type="complex" source="../media/css-elements-styles-rule-add-background-color.msft.png" alt-text="Hinzufügen von Hintergrundfarbe" lightbox="../media/css-elements-styles-rule-add-background-color.msft.png":::
-   **<span data-ttu-id="55894-309">Hinzufügen von Hintergrundfarbe</span><span class="sxs-lookup"><span data-stu-id="55894-309">Add Background Color</span></span>**  
+   **<span data-ttu-id="e4a25-309">Hinzufügen von Hintergrundfarbe</span><span class="sxs-lookup"><span data-stu-id="e4a25-309">Add Background Color</span></span>**  
 :::image-end:::  
 
-### <a name="add-a-color-declaration"></a><span data-ttu-id="55894-310">Hinzufügen einer Farbdeklaration</span><span class="sxs-lookup"><span data-stu-id="55894-310">Add a color declaration</span></span>  
+### <a name="add-a-color-declaration"></a><span data-ttu-id="e4a25-310">Hinzufügen einer Farbdeklaration</span><span class="sxs-lookup"><span data-stu-id="e4a25-310">Add a color declaration</span></span>  
 
-<span data-ttu-id="55894-311">Führen Sie die folgenden Aktionen aus, um einem `color` Element eine Deklaration hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="55894-311">Complete the following actions to add a `color` declaration to an element.</span></span>  
+<span data-ttu-id="e4a25-311">Führen Sie die folgenden Aktionen aus, um einem `color` Element eine Deklaration hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="e4a25-311">Complete the following actions to add a `color` declaration to an element.</span></span>  
 
-1.  <span data-ttu-id="55894-312">Zeigen Sie auf die Formatvorlageregel, der Sie die `color` Deklaration hinzufügen möchten.</span><span class="sxs-lookup"><span data-stu-id="55894-312">Hover on the style rule that you want to add the `color` declaration to.</span></span>  
-1.  <span data-ttu-id="55894-313">[Zeigen Sie die **Symbolleiste Weitere Aktionen** an.](#reveal-the-more-actions-toolbar)</span><span class="sxs-lookup"><span data-stu-id="55894-313">[Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).</span></span>  
-1.  <span data-ttu-id="55894-314">Wählen **Sie Farbe hinzufügen** \( ![ Farbsymbol hinzufügen ][ImageAddColorIcon] \).</span><span class="sxs-lookup"><span data-stu-id="55894-314">Choose **Add Color** \(![Add Color icon][ImageAddColorIcon]\).</span></span>  
+1.  <span data-ttu-id="e4a25-312">Zeigen Sie auf die Formatvorlageregel, der Sie die `color` Deklaration hinzufügen möchten.</span><span class="sxs-lookup"><span data-stu-id="e4a25-312">Hover on the style rule that you want to add the `color` declaration to.</span></span>  
+1.  <span data-ttu-id="e4a25-313">[Zeigen Sie die **Symbolleiste Weitere Aktionen** an.](#reveal-the-more-actions-toolbar)</span><span class="sxs-lookup"><span data-stu-id="e4a25-313">[Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).</span></span>  
+1.  <span data-ttu-id="e4a25-314">Wählen **Sie Farbe hinzufügen** \( ![ Farbsymbol hinzufügen ](../media/add-color-icon.msft.png) \).</span><span class="sxs-lookup"><span data-stu-id="e4a25-314">Choose **Add Color** \(![Add Color icon](../media/add-color-icon.msft.png)\).</span></span>  
 
 :::image type="complex" source="../media/css-elements-styles-rule-add-color.msft.png" alt-text="Hinzufügen von Farbe" lightbox="../media/css-elements-styles-rule-add-color.msft.png":::
-   **<span data-ttu-id="55894-316">Hinzufügen von Farbe</span><span class="sxs-lookup"><span data-stu-id="55894-316">Add Color</span></span>**  
+   **<span data-ttu-id="e4a25-316">Hinzufügen von Farbe</span><span class="sxs-lookup"><span data-stu-id="e4a25-316">Add Color</span></span>**  
 :::image-end:::  
 
-### <a name="add-a-box-shadow-declaration"></a><span data-ttu-id="55894-317">Hinzufügen einer Box-Shadow-Deklaration</span><span class="sxs-lookup"><span data-stu-id="55894-317">Add a box-shadow declaration</span></span>  
+### <a name="add-a-box-shadow-declaration"></a><span data-ttu-id="e4a25-317">Hinzufügen einer Box-Shadow-Deklaration</span><span class="sxs-lookup"><span data-stu-id="e4a25-317">Add a box-shadow declaration</span></span>  
 
-<span data-ttu-id="55894-318">Führen Sie die folgenden Aktionen aus, um einem `box-shadow` Element eine Deklaration hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="55894-318">Complete the follwoing actions to add a `box-shadow` declaration to an element.</span></span>  
+<span data-ttu-id="e4a25-318">Führen Sie die folgenden Aktionen aus, um einem `box-shadow` Element eine Deklaration hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="e4a25-318">Complete the follwoing actions to add a `box-shadow` declaration to an element.</span></span>  
 
-1.  <span data-ttu-id="55894-319">Zeigen Sie auf die Formatvorlageregel, der Sie die `box-shadow` Deklaration hinzufügen möchten.</span><span class="sxs-lookup"><span data-stu-id="55894-319">Hover on the style rule that you want to add the `box-shadow` declaration to.</span></span>  
-1.  <span data-ttu-id="55894-320">[Zeigen Sie die **Symbolleiste Weitere Aktionen** an.](#reveal-the-more-actions-toolbar)</span><span class="sxs-lookup"><span data-stu-id="55894-320">[Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).</span></span>  
-1.  <span data-ttu-id="55894-321">Wählen **Sie Hinzufügen von Feldschatten** \( Hinzufügen des ![ Feldschattensymbols ][ImageAddBoxShadowIcon] \) aus.</span><span class="sxs-lookup"><span data-stu-id="55894-321">Choose **Add Box Shadow** \(![Add Box Shadow icon][ImageAddBoxShadowIcon]\).</span></span>  
+1.  <span data-ttu-id="e4a25-319">Zeigen Sie auf die Formatvorlageregel, der Sie die `box-shadow` Deklaration hinzufügen möchten.</span><span class="sxs-lookup"><span data-stu-id="e4a25-319">Hover on the style rule that you want to add the `box-shadow` declaration to.</span></span>  
+1.  <span data-ttu-id="e4a25-320">[Zeigen Sie die **Symbolleiste Weitere Aktionen** an.](#reveal-the-more-actions-toolbar)</span><span class="sxs-lookup"><span data-stu-id="e4a25-320">[Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).</span></span>  
+1.  <span data-ttu-id="e4a25-321">Wählen **Sie Hinzufügen von Feldschatten** \( Hinzufügen des ![ Feldschattensymbols ](../media/add-box-shadow-icon.msft.png) \) aus.</span><span class="sxs-lookup"><span data-stu-id="e4a25-321">Choose **Add Box Shadow** \(![Add Box Shadow icon](../media/add-box-shadow-icon.msft.png)\).</span></span>  
 
 :::image type="complex" source="../media/css-elements-styles-rule-add-box-shadow.msft.png" alt-text="Hinzufügen von Box Shadow" lightbox="../media/css-elements-styles-rule-add-box-shadow.msft.png":::
-   **<span data-ttu-id="55894-323">Hinzufügen von Box Shadow</span><span class="sxs-lookup"><span data-stu-id="55894-323">Add Box Shadow</span></span>**  
+   **<span data-ttu-id="e4a25-323">Hinzufügen von Box Shadow</span><span class="sxs-lookup"><span data-stu-id="e4a25-323">Add Box Shadow</span></span>**  
 :::image-end:::  
 
-### <a name="add-a-text-shadow-declaration"></a><span data-ttu-id="55894-324">Hinzufügen einer Text-Schatten-Deklaration</span><span class="sxs-lookup"><span data-stu-id="55894-324">Add a text-shadow declaration</span></span>  
+### <a name="add-a-text-shadow-declaration"></a><span data-ttu-id="e4a25-324">Hinzufügen einer Text-Schatten-Deklaration</span><span class="sxs-lookup"><span data-stu-id="e4a25-324">Add a text-shadow declaration</span></span>  
 
-<span data-ttu-id="55894-325">Führen Sie die folgenden Aktionen aus, um einem `text-shadow` Element eine Deklaration hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="55894-325">Complete the following actions to add a `text-shadow` declaration to an element.</span></span>  
+<span data-ttu-id="e4a25-325">Führen Sie die folgenden Aktionen aus, um einem `text-shadow` Element eine Deklaration hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="e4a25-325">Complete the following actions to add a `text-shadow` declaration to an element.</span></span>  
 
-1.  <span data-ttu-id="55894-326">Zeigen Sie auf die Formatvorlageregel, der Sie die `text-shadow` Deklaration hinzufügen möchten.</span><span class="sxs-lookup"><span data-stu-id="55894-326">Hover on the style rule that you want to add the `text-shadow` declaration to.</span></span>  
-1.  <span data-ttu-id="55894-327">[Zeigen Sie die **Symbolleiste Weitere Aktionen** an.](#reveal-the-more-actions-toolbar)</span><span class="sxs-lookup"><span data-stu-id="55894-327">[Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).</span></span>  
-1.  <span data-ttu-id="55894-328">Wählen **Sie Textschatten** hinzufügen \( ![ Textschattensymbol ][ImageAddTextShadowIcon] hinzufügen \).</span><span class="sxs-lookup"><span data-stu-id="55894-328">Choose **Add Text Shadow** \(![Add Text Shadow icon][ImageAddTextShadowIcon]\).</span></span>  
+1.  <span data-ttu-id="e4a25-326">Zeigen Sie auf die Formatvorlageregel, der Sie die `text-shadow` Deklaration hinzufügen möchten.</span><span class="sxs-lookup"><span data-stu-id="e4a25-326">Hover on the style rule that you want to add the `text-shadow` declaration to.</span></span>  
+1.  <span data-ttu-id="e4a25-327">[Zeigen Sie die **Symbolleiste Weitere Aktionen** an.](#reveal-the-more-actions-toolbar)</span><span class="sxs-lookup"><span data-stu-id="e4a25-327">[Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).</span></span>  
+1.  <span data-ttu-id="e4a25-328">Wählen **Sie Textschatten** hinzufügen \( ![ Textschattensymbol ](../media/add-text-shadow-icon.msft.png) hinzufügen \).</span><span class="sxs-lookup"><span data-stu-id="e4a25-328">Choose **Add Text Shadow** \(![Add Text Shadow icon](../media/add-text-shadow-icon.msft.png)\).</span></span>  
 
 :::image type="complex" source="../media/css-elements-styles-rule-add-text-shadow.msft.png" alt-text="Hinzufügen von Textschatten" lightbox="../media/css-elements-styles-rule-add-text-shadow.msft.png":::
-   **<span data-ttu-id="55894-330">Hinzufügen von Textschatten</span><span class="sxs-lookup"><span data-stu-id="55894-330">Add Text Shadow</span></span>**  
+   **<span data-ttu-id="e4a25-330">Hinzufügen von Textschatten</span><span class="sxs-lookup"><span data-stu-id="e4a25-330">Add Text Shadow</span></span>**  
 :::image-end:::  
 
-### <a name="change-colors-with-the-color-picker"></a><span data-ttu-id="55894-331">Ändern von Farben mit der Farbauswahl</span><span class="sxs-lookup"><span data-stu-id="55894-331">Change colors with the Color Picker</span></span>  
+### <a name="change-colors-with-the-color-picker"></a><span data-ttu-id="e4a25-331">Ändern von Farben mit der Farbauswahl</span><span class="sxs-lookup"><span data-stu-id="e4a25-331">Change colors with the Color Picker</span></span>  
 
-<span data-ttu-id="55894-332">Die **Farbauswahl bietet** eine GUI zum Ändern `color` und `background-color` Deklarationen.</span><span class="sxs-lookup"><span data-stu-id="55894-332">The **Color Picker** provides a GUI for changing `color` and `background-color` declarations.</span></span>  
+<span data-ttu-id="e4a25-332">Die **Farbauswahl bietet** eine GUI zum Ändern `color` und `background-color` Deklarationen.</span><span class="sxs-lookup"><span data-stu-id="e4a25-332">The **Color Picker** provides a GUI for changing `color` and `background-color` declarations.</span></span>  
 
-<span data-ttu-id="55894-333">Führen Sie die folgenden Aktionen aus, um die **Farbauswahl zu öffnen.**</span><span class="sxs-lookup"><span data-stu-id="55894-333">Complete the following actions to open the **Color Picker**.</span></span>  
+<span data-ttu-id="e4a25-333">Führen Sie die folgenden Aktionen aus, um die **Farbauswahl zu öffnen.**</span><span class="sxs-lookup"><span data-stu-id="e4a25-333">Complete the following actions to open the **Color Picker**.</span></span>  
 
-1.  <span data-ttu-id="55894-334">[Wählen Sie ein Element aus.](#choose-an-element)</span><span class="sxs-lookup"><span data-stu-id="55894-334">[Select an element](#choose-an-element).</span></span>  
-1.  <span data-ttu-id="55894-335">Suchen Sie **im Bereich** Formatvorlagen nach der , oder ähnlichen Deklaration, die Sie `color` ändern `background-color` möchten.</span><span class="sxs-lookup"><span data-stu-id="55894-335">In the **Styles** panel, find the `color`, `background-color`, or similar declaration that you want to change.</span></span>  <span data-ttu-id="55894-336">Links vom Wert , oder einem ähnlichen Wert befindet sich ein kleines Quadrat, das eine `color` `background-color` Vorschau der Farbe ist.</span><span class="sxs-lookup"><span data-stu-id="55894-336">To the left of the `color`, `background-color`, or similar value, there is a small square which is a preview of the color.</span></span>  
+1.  <span data-ttu-id="e4a25-334">[Wählen Sie ein Element aus.](#choose-an-element)</span><span class="sxs-lookup"><span data-stu-id="e4a25-334">[Select an element](#choose-an-element).</span></span>  
+1.  <span data-ttu-id="e4a25-335">Suchen Sie **im Bereich** Formatvorlagen nach der , oder ähnlichen Deklaration, die Sie `color` ändern `background-color` möchten.</span><span class="sxs-lookup"><span data-stu-id="e4a25-335">In the **Styles** panel, find the `color`, `background-color`, or similar declaration that you want to change.</span></span>  <span data-ttu-id="e4a25-336">Links vom Wert , oder einem ähnlichen Wert befindet sich ein kleines Quadrat, das eine `color` `background-color` Vorschau der Farbe ist.</span><span class="sxs-lookup"><span data-stu-id="e4a25-336">To the left of the `color`, `background-color`, or similar value, there is a small square which is a preview of the color.</span></span>  
     
     > [!NOTE]
-    > <span data-ttu-id="55894-337">In der folgenden Abbildung ist das kleine Quadrat links von eine `rgba(0, 0, 0, 0.7)` Vorschau dieser Farbe.</span><span class="sxs-lookup"><span data-stu-id="55894-337">In the following figure, the small square to the left of `rgba(0, 0, 0, 0.7)` is a preview of that color.</span></span>  
+    > <span data-ttu-id="e4a25-337">In der folgenden Abbildung ist das kleine Quadrat links von eine `rgba(0, 0, 0, 0.7)` Vorschau dieser Farbe.</span><span class="sxs-lookup"><span data-stu-id="e4a25-337">In the following figure, the small square to the left of `rgba(0, 0, 0, 0.7)` is a preview of that color.</span></span>  
     
     :::image type="complex" source="../media/css-elements-styles-rule-overlay-color-box.msft.png" alt-text="Farbvorschau" lightbox="../media/css-elements-styles-rule-overlay-color-box.msft.png":::
-       <span data-ttu-id="55894-339">Farbvorschau</span><span class="sxs-lookup"><span data-stu-id="55894-339">Color preview</span></span>  
+       <span data-ttu-id="e4a25-339">Farbvorschau</span><span class="sxs-lookup"><span data-stu-id="e4a25-339">Color preview</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="55894-340">Wählen Sie die Vorschau aus, um die **Farbauswahl zu öffnen.**</span><span class="sxs-lookup"><span data-stu-id="55894-340">Choose the preview to open the **Color Picker**.</span></span>  
+1.  <span data-ttu-id="e4a25-340">Wählen Sie die Vorschau aus, um die **Farbauswahl zu öffnen.**</span><span class="sxs-lookup"><span data-stu-id="e4a25-340">Choose the preview to open the **Color Picker**.</span></span>  
     
     :::image type="complex" source="../media/css-elements-styles-rule-color-picker.msft.png" alt-text="Die Farbauswahl" lightbox="../media/css-elements-styles-rule-color-picker.msft.png":::
-       <span data-ttu-id="55894-342">Die **Farbauswahl**</span><span class="sxs-lookup"><span data-stu-id="55894-342">The **Color Picker**</span></span>  
+       <span data-ttu-id="e4a25-342">Die **Farbauswahl**</span><span class="sxs-lookup"><span data-stu-id="e4a25-342">The **Color Picker**</span></span>  
     :::image-end:::  
     
-<span data-ttu-id="55894-343">In der folgenden Abbildung und Liste werden die einzelnen Benutzeroberflächenelemente der Farbauswahl **aufgeführt.**</span><span class="sxs-lookup"><span data-stu-id="55894-343">The following figure and list descries of each of the UI elements of the **Color Picker**.</span></span>  
+<span data-ttu-id="e4a25-343">In der folgenden Abbildung und Liste werden die einzelnen Benutzeroberflächenelemente der Farbauswahl **aufgeführt.**</span><span class="sxs-lookup"><span data-stu-id="e4a25-343">The following figure and list descries of each of the UI elements of the **Color Picker**.</span></span>  
 
 :::image type="complex" source="../media/css-elements-styles-rule-color-picker-annotated.msft.png" alt-text="Die Farbauswahl mit Anmerkungen" lightbox="../media/css-elements-styles-rule-color-picker-annotated.msft.png":::
-   <span data-ttu-id="55894-345">The **Color Picker**, annotated</span><span class="sxs-lookup"><span data-stu-id="55894-345">The **Color Picker**, annotated</span></span>  
+   <span data-ttu-id="e4a25-345">The **Color Picker**, annotated</span><span class="sxs-lookup"><span data-stu-id="e4a25-345">The **Color Picker**, annotated</span></span>  
 :::image-end:::  
 
 :::row:::
    :::column span="1":::
-      <span data-ttu-id="55894-346">1</span><span class="sxs-lookup"><span data-stu-id="55894-346">1</span></span>  
+      <span data-ttu-id="e4a25-346">1</span><span class="sxs-lookup"><span data-stu-id="e4a25-346">1</span></span>  
    :::column-end:::
    :::column span="1":::
-      **<span data-ttu-id="55894-347">Schattierungen</span><span class="sxs-lookup"><span data-stu-id="55894-347">Shades</span></span>**  
+      **<span data-ttu-id="e4a25-347">Schattierungen</span><span class="sxs-lookup"><span data-stu-id="e4a25-347">Shades</span></span>**  
    :::column-end:::
    :::column span="2":::
       &nbsp;  
@@ -443,54 +443,54 @@ ms.locfileid: "11399141"
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      <span data-ttu-id="55894-348">2</span><span class="sxs-lookup"><span data-stu-id="55894-348">2</span></span>  
+      <span data-ttu-id="e4a25-348">2</span><span class="sxs-lookup"><span data-stu-id="e4a25-348">2</span></span>  
    :::column-end:::
    :::column span="1":::
-      **<span data-ttu-id="55894-349">Eyedropper</span><span class="sxs-lookup"><span data-stu-id="55894-349">Eyedropper</span></span>**  
+      **<span data-ttu-id="e4a25-349">Eyedropper</span><span class="sxs-lookup"><span data-stu-id="e4a25-349">Eyedropper</span></span>**  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="55894-350">Weitere Informationen finden Sie unter [Sample a color off the page with the Eyedropper](#sample-a-color-off-the-page-with-the-eyedropper).</span><span class="sxs-lookup"><span data-stu-id="55894-350">For more information, navigate to [Sample a color off the page with the Eyedropper](#sample-a-color-off-the-page-with-the-eyedropper).</span></span>  
+      <span data-ttu-id="e4a25-350">Weitere Informationen finden Sie unter [Sample a color off the page with the Eyedropper](#sample-a-color-off-the-page-with-the-eyedropper).</span><span class="sxs-lookup"><span data-stu-id="e4a25-350">For more information, navigate to [Sample a color off the page with the Eyedropper](#sample-a-color-off-the-page-with-the-eyedropper).</span></span>  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      <span data-ttu-id="55894-351">3</span><span class="sxs-lookup"><span data-stu-id="55894-351">3</span></span>  
+      <span data-ttu-id="e4a25-351">3</span><span class="sxs-lookup"><span data-stu-id="e4a25-351">3</span></span>  
    :::column-end:::
    :::column span="1":::
-      **<span data-ttu-id="55894-352">In Zwischenablage kopieren</span><span class="sxs-lookup"><span data-stu-id="55894-352">Copy To Clipboard</span></span>**  
+      **<span data-ttu-id="e4a25-352">In Zwischenablage kopieren</span><span class="sxs-lookup"><span data-stu-id="e4a25-352">Copy To Clipboard</span></span>**  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="55894-353">Kopieren Sie **den Anzeigewert** in die Zwischenablage.</span><span class="sxs-lookup"><span data-stu-id="55894-353">Copy the **Display Value** to your clipboard.</span></span>  
+      <span data-ttu-id="e4a25-353">Kopieren Sie **den Anzeigewert** in die Zwischenablage.</span><span class="sxs-lookup"><span data-stu-id="e4a25-353">Copy the **Display Value** to your clipboard.</span></span>  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      <span data-ttu-id="55894-354">4</span><span class="sxs-lookup"><span data-stu-id="55894-354">4</span></span>  
+      <span data-ttu-id="e4a25-354">4</span><span class="sxs-lookup"><span data-stu-id="e4a25-354">4</span></span>  
    :::column-end:::
    :::column span="1":::
-      **<span data-ttu-id="55894-355">Anzeigewert</span><span class="sxs-lookup"><span data-stu-id="55894-355">Display Value</span></span>**  
+      **<span data-ttu-id="e4a25-355">Anzeigewert</span><span class="sxs-lookup"><span data-stu-id="e4a25-355">Display Value</span></span>**  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="55894-356">Die RGBA-, HSLA- oder Hexdarstellung der Farbe.</span><span class="sxs-lookup"><span data-stu-id="55894-356">The RGBA, HSLA, or Hex representation of the color.</span></span>  
+      <span data-ttu-id="e4a25-356">Die RGBA-, HSLA- oder Hexdarstellung der Farbe.</span><span class="sxs-lookup"><span data-stu-id="e4a25-356">The RGBA, HSLA, or Hex representation of the color.</span></span>  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      <span data-ttu-id="55894-357">5</span><span class="sxs-lookup"><span data-stu-id="55894-357">5</span></span>  
+      <span data-ttu-id="e4a25-357">5</span><span class="sxs-lookup"><span data-stu-id="e4a25-357">5</span></span>  
    :::column-end:::
    :::column span="1":::
-      **<span data-ttu-id="55894-358">Farbpalette</span><span class="sxs-lookup"><span data-stu-id="55894-358">Color Palette</span></span>**  
+      **<span data-ttu-id="e4a25-358">Farbpalette</span><span class="sxs-lookup"><span data-stu-id="e4a25-358">Color Palette</span></span>**  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="55894-359">Wählen Sie eines der Quadrate aus, um die Farbe in dieses Quadrat zu ändern.</span><span class="sxs-lookup"><span data-stu-id="55894-359">Choose one of the squares to change the color to that square.</span></span>  
+      <span data-ttu-id="e4a25-359">Wählen Sie eines der Quadrate aus, um die Farbe in dieses Quadrat zu ändern.</span><span class="sxs-lookup"><span data-stu-id="e4a25-359">Choose one of the squares to change the color to that square.</span></span>  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      <span data-ttu-id="55894-360">6</span><span class="sxs-lookup"><span data-stu-id="55894-360">6</span></span>  
+      <span data-ttu-id="e4a25-360">6</span><span class="sxs-lookup"><span data-stu-id="e4a25-360">6</span></span>  
    :::column-end:::
    :::column span="1":::
-      **<span data-ttu-id="55894-361">Hue</span><span class="sxs-lookup"><span data-stu-id="55894-361">Hue</span></span>**  
+      **<span data-ttu-id="e4a25-361">Hue</span><span class="sxs-lookup"><span data-stu-id="e4a25-361">Hue</span></span>**  
    :::column-end:::
    :::column span="2":::
       &nbsp;  
@@ -498,10 +498,10 @@ ms.locfileid: "11399141"
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      <span data-ttu-id="55894-362">7</span><span class="sxs-lookup"><span data-stu-id="55894-362">7</span></span>  
+      <span data-ttu-id="e4a25-362">7</span><span class="sxs-lookup"><span data-stu-id="e4a25-362">7</span></span>  
    :::column-end:::
    :::column span="1":::
-      **<span data-ttu-id="55894-363">Opacity</span><span class="sxs-lookup"><span data-stu-id="55894-363">Opacity</span></span>**  
+      **<span data-ttu-id="e4a25-363">Opacity</span><span class="sxs-lookup"><span data-stu-id="e4a25-363">Opacity</span></span>**  
    :::column-end:::
    :::column span="2":::
       &nbsp;  
@@ -509,57 +509,46 @@ ms.locfileid: "11399141"
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      <span data-ttu-id="55894-364">8</span><span class="sxs-lookup"><span data-stu-id="55894-364">8</span></span>  
+      <span data-ttu-id="e4a25-364">8</span><span class="sxs-lookup"><span data-stu-id="e4a25-364">8</span></span>  
    :::column-end:::
    :::column span="1":::
-      **<span data-ttu-id="55894-365">Display Value Switcher</span><span class="sxs-lookup"><span data-stu-id="55894-365">Display Value Switcher</span></span>**  
+      **<span data-ttu-id="e4a25-365">Display Value Switcher</span><span class="sxs-lookup"><span data-stu-id="e4a25-365">Display Value Switcher</span></span>**  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="55894-366">Umschalten zwischen den RGBA-, HSLA- und Hex-Darstellungen der aktuellen Farbe.</span><span class="sxs-lookup"><span data-stu-id="55894-366">Toggle between the RGBA, HSLA, and Hex representations of the current color.</span></span>  
+      <span data-ttu-id="e4a25-366">Umschalten zwischen den RGBA-, HSLA- und Hex-Darstellungen der aktuellen Farbe.</span><span class="sxs-lookup"><span data-stu-id="e4a25-366">Toggle between the RGBA, HSLA, and Hex representations of the current color.</span></span>  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      <span data-ttu-id="55894-367">9</span><span class="sxs-lookup"><span data-stu-id="55894-367">9</span></span>  
+      <span data-ttu-id="e4a25-367">9</span><span class="sxs-lookup"><span data-stu-id="e4a25-367">9</span></span>  
    :::column-end:::
    :::column span="1":::
-      **<span data-ttu-id="55894-368">Farbpaletten-Switcher</span><span class="sxs-lookup"><span data-stu-id="55894-368">Color Palette Switcher</span></span>**  
+      **<span data-ttu-id="e4a25-368">Farbpaletten-Switcher</span><span class="sxs-lookup"><span data-stu-id="e4a25-368">Color Palette Switcher</span></span>**  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="55894-369">Umschalten zwischen der [Palette Materialdesign,][MaterialDesignColorSystem]einer benutzerdefinierten Palette oder einer Seitenfarbenpalette.</span><span class="sxs-lookup"><span data-stu-id="55894-369">Toggle between the [Material Design palette][MaterialDesignColorSystem], a custom palette, or a page colors palette.</span></span>  <span data-ttu-id="55894-370">DevTools generiert die Seitenfarbpalette basierend auf den Farben, die sie in Ihren Stylesheets findet.</span><span class="sxs-lookup"><span data-stu-id="55894-370">DevTools generates the page color palette based on the colors that it finds in your stylesheets.</span></span>  
+      <span data-ttu-id="e4a25-369">Umschalten zwischen der [Palette Materialdesign,][MaterialDesignColorSystem]einer benutzerdefinierten Palette oder einer Seitenfarbenpalette.</span><span class="sxs-lookup"><span data-stu-id="e4a25-369">Toggle between the [Material Design palette][MaterialDesignColorSystem], a custom palette, or a page colors palette.</span></span>  <span data-ttu-id="e4a25-370">DevTools generiert die Seitenfarbpalette basierend auf den Farben, die sie in Ihren Stylesheets findet.</span><span class="sxs-lookup"><span data-stu-id="e4a25-370">DevTools generates the page color palette based on the colors that it finds in your stylesheets.</span></span>  
    :::column-end:::
 :::row-end:::  
 
-#### <a name="sample-a-color-off-the-page-with-the-eyedropper"></a><span data-ttu-id="55894-371">Beispiel für eine Farbe von der Seite mit der Eyedropper</span><span class="sxs-lookup"><span data-stu-id="55894-371">Sample a color off the page with the Eyedropper</span></span>  
+#### <a name="sample-a-color-off-the-page-with-the-eyedropper"></a><span data-ttu-id="e4a25-371">Beispiel für eine Farbe von der Seite mit der Eyedropper</span><span class="sxs-lookup"><span data-stu-id="e4a25-371">Sample a color off the page with the Eyedropper</span></span>  
 
-<span data-ttu-id="55894-372">Wenn Sie die **Farbauswahl öffnen,** ist **die Eyedropper** \( ![ Eyedropper ][ImageEyedropperIcon] \) standardmäßig aktiviert.</span><span class="sxs-lookup"><span data-stu-id="55894-372">When you open the **Color Picker**, the **Eyedropper** \(![Eyedropper][ImageEyedropperIcon]\) is on by default.</span></span>  <span data-ttu-id="55894-373">Führen Sie die folgenden Aktionen aus, um die ausgewählte Farbe in eine andere Farbe auf der Seite zu ändern.</span><span class="sxs-lookup"><span data-stu-id="55894-373">Complete the following actions to change the selected color to some other color on the page.</span></span>  
+<span data-ttu-id="e4a25-372">Wenn Sie die **Farbauswahl öffnen,** ist **die Eyedropper** \( ![ Eyedropper ](../media/eyedropper-icon.msft.png) \) standardmäßig aktiviert.</span><span class="sxs-lookup"><span data-stu-id="e4a25-372">When you open the **Color Picker**, the **Eyedropper** \(![Eyedropper](../media/eyedropper-icon.msft.png)\) is on by default.</span></span>  <span data-ttu-id="e4a25-373">Führen Sie die folgenden Aktionen aus, um die ausgewählte Farbe in eine andere Farbe auf der Seite zu ändern.</span><span class="sxs-lookup"><span data-stu-id="e4a25-373">Complete the following actions to change the selected color to some other color on the page.</span></span>  
 
-1.  <span data-ttu-id="55894-374">Zeigen Sie im Viewport auf die Zielfarbe.</span><span class="sxs-lookup"><span data-stu-id="55894-374">Hover on the target color in the viewport.</span></span>  
-1.  <span data-ttu-id="55894-375">Wählen Sie aus, um dies zu bestätigen.</span><span class="sxs-lookup"><span data-stu-id="55894-375">Choose to confirm.</span></span>  
+1.  <span data-ttu-id="e4a25-374">Zeigen Sie im Viewport auf die Zielfarbe.</span><span class="sxs-lookup"><span data-stu-id="e4a25-374">Hover on the target color in the viewport.</span></span>  
+1.  <span data-ttu-id="e4a25-375">Wählen Sie aus, um dies zu bestätigen.</span><span class="sxs-lookup"><span data-stu-id="e4a25-375">Choose to confirm.</span></span>  
     
     > [!NOTE]
-    > <span data-ttu-id="55894-376">In der folgenden Abbildung zeigt die **Farbauswahl** den aktuellen Farbwert von , der in der Nähe von `rgba(0,0,0,0.7)` Schwarz liegt.</span><span class="sxs-lookup"><span data-stu-id="55894-376">In the following figure, the **Color Picker** shows a current color value of `rgba(0,0,0,0.7)`, which is close to black.</span></span>  <span data-ttu-id="55894-377">Die spezifische Farbe sollte in die Version von Schwarz geändert werden, die derzeit im Ansichtsfenster hervorgehoben ist, nachdem Sie sie ausgewählt haben.</span><span class="sxs-lookup"><span data-stu-id="55894-377">The specific color should change to the version of black that is currently highlighted in the viewport after you chose it.</span></span>  
+    > <span data-ttu-id="e4a25-376">In der folgenden Abbildung zeigt die **Farbauswahl** den aktuellen Farbwert von , der in der Nähe von `rgba(0,0,0,0.7)` Schwarz liegt.</span><span class="sxs-lookup"><span data-stu-id="e4a25-376">In the following figure, the **Color Picker** shows a current color value of `rgba(0,0,0,0.7)`, which is close to black.</span></span>  <span data-ttu-id="e4a25-377">Die spezifische Farbe sollte in die Version von Schwarz geändert werden, die derzeit im Ansichtsfenster hervorgehoben ist, nachdem Sie sie ausgewählt haben.</span><span class="sxs-lookup"><span data-stu-id="e4a25-377">The specific color should change to the version of black that is currently highlighted in the viewport after you chose it.</span></span>  
     
     :::image type="complex" source="../media/css-color-picker-eye-dropper.msft.png" alt-text="Verwenden der Eyedropper" lightbox="../media/css-color-picker-eye-dropper.msft.png":::
-       <span data-ttu-id="55894-379">Verwenden der Eyedropper</span><span class="sxs-lookup"><span data-stu-id="55894-379">Using the Eyedropper</span></span>  
+       <span data-ttu-id="e4a25-379">Verwenden der Eyedropper</span><span class="sxs-lookup"><span data-stu-id="e4a25-379">Using the Eyedropper</span></span>  
     :::image-end:::  
     
 <!--todo:  add the section on the Angle clock section for What's New 88.  -->  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a><span data-ttu-id="55894-380">Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen</span><span class="sxs-lookup"><span data-stu-id="55894-380">Getting in touch with the Microsoft Edge DevTools team</span></span>  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a><span data-ttu-id="e4a25-380">Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen</span><span class="sxs-lookup"><span data-stu-id="e4a25-380">Getting in touch with the Microsoft Edge DevTools team</span></span>  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageAddBackgroundColorIcon]: ../media/add-background-color-icon.msft.png  
-[ImageAddBoxShadowIcon]: ../media/add-box-shadow-icon.msft.png  
-[ImageAddColorIcon]: ../media/add-color-icon.msft.png  
-[ImageAddTextShadowIcon]: ../media/add-text-shadow-icon.msft.png  
-[ImageEyedropperIcon]: ../media/eyedropper-icon.msft.png  
-[ImageNewStyleRuleIcon]: ../media/new-style-rule-icon.msft.png  
-[ImageRefreshIcon]: ../media/refresh-icon.msft.png  
-[ImageSelectAnElementIcon]: ../media/select-an-element-icon.msft.png  
 
 <!-- links -->  
 
@@ -575,11 +564,11 @@ ms.locfileid: "11399141"
 [MDNSelectorTypes]: https://developer.mozilla.org/docs/Web/CSS/Specificity#Selector_Types "Auswahltypen – Spezifizitätstypen | MDN"  
 
 > [!NOTE]
-> <span data-ttu-id="55894-390">Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="55894-390">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="55894-391">Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/css/reference) und wird von [Kayce Basken][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) verfasst.</span><span class="sxs-lookup"><span data-stu-id="55894-391">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/css/reference) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
+> <span data-ttu-id="e4a25-390">Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="e4a25-390">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="e4a25-391">Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/css/reference) und wird von [Kayce Basken][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) verfasst.</span><span class="sxs-lookup"><span data-stu-id="e4a25-391">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/css/reference) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-<span data-ttu-id="55894-393">Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="55894-393">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+<span data-ttu-id="e4a25-393">Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="e4a25-393">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
