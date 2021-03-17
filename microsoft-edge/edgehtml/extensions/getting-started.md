@@ -1,92 +1,92 @@
 ---
-description: Verschaffen Sie sich eine End-to-End-Übersicht über die Reise von der ersten Entwicklung bis zur Verpackung von Microsoft Edge-Erweiterungen.
-title: Erweiterungen – erste Schritte
+description: Erhalten Sie einen Ende-zu-Ende-Überblick über den Weg vom Beginn der Entwicklung bis hin zum Packen von Microsoft Edge-Erweiterungen.
+title: Erweiterungen – Erste Schritte
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge, Web-Entwicklung, HTML, CSS, JavaScript, Entwickler, Erweiterungen
-ms.date: 12/02/2020
+keywords: edge, web development, html, css, javascript, developer, extensions
+ms.date: 03/16/2021
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: f06762692c451ea89b74fdf6f9959172c69a32ca
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 52d0aa5c1968518194a4e3b90cb0cc876d0c7f86
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11234228"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439717"
 ---
-# Erste Schritte mit Erweiterungen  
+# <a name="getting-started-with-extensions"></a>Erste Schritte mit Erweiterungen  
 
 [!INCLUDE [deprecation-note](includes/deprecation-note.md)]  
 
-Ganz gleich, ob Sie ein neuer Entwickler sind und sich mit Erweiterungen oder einem erfahrenen Veteranen mit einer Chrome-Erweiterung vertraut machen möchten, die Sie portieren möchten, dieser Leitfaden enthält alle Informationen, die Sie zum entwickeln, testen, Verpacken und Veröffentlichen einer Erweiterung für Microsoft Edge benötigen. 
+Unabhängig davon, ob Sie ein neuer Entwickler sind, der sich mit Erweiterungen vertraut machen möchte oder ein erfahrener Veteran mit einer Chrome-Erweiterung, die Sie portieren möchten, enthält dieses Handbuch alle Informationen, die Sie zum Entwickeln, Testen, Packen und Veröffentlichen einer Erweiterung für Microsoft Edge benötigen. 
 
-## Entwickeln einer Erweiterung
+## <a name="developing-an-extension"></a>Entwickeln einer Erweiterung
 
-Der erste Schritt dieser Reise besteht darin, eine Microsoft Edge-Erweiterung zu erstellen: 
-- Neu bei Extensions? Schauen Sie sich unseren [Leitfaden zum Erstellen von Erweiterungen](./guides/creating-an-extension.md) an, um zu erfahren, wie Sie Ihre erste Browser-Erweiterung erstellen können. 
-- Sind Sie bereits mit Erweiterungs-APIs vertraut? Schauen Sie sich unsere [API-Support-Dokumentation](./api-support.md) an, um die neuesten Informationen darüber zu erhalten, welche APIs unterstützt werden/in der Entwicklung. 
-- Haben Sie eine Chrome-Erweiterung, die Sie an Microsoft Edge portieren möchten? Testen Sie das [Microsoft Edge Extension Toolkit](./guides/porting-chrome-extensions.md)!
+Der erste Schritt dieser Reise ist das Erstellen einer Microsoft Edge-Erweiterung: 
+- Neu bei Erweiterungen? In unserem Leitfaden [zum Erstellen](./guides/creating-an-extension.md) von Erweiterungen finden Sie Informationen zum Erstellen Ihrer ersten Browsererweiterung! 
+- Sie sind bereits mit Erweiterungs-APIs vertraut? In der [DOKUMENTATION zum API-Support](./api-support.md) finden Sie die neuesten Informationen dazu, welche APIs in der Entwicklung unterstützt werden. 
+- Sie haben eine Chrome-Erweiterung, die Sie zu Microsoft Edge portieren möchten? Testen Sie [das Microsoft Edge Extension Toolkit](./guides/porting-chrome-extensions.md)!
 
-## Laden und Debuggen
+## <a name="loading-and-debugging"></a>Laden und Debuggen
 
-Sobald Sie über eine Erweiterung verfügen, die in Microsoft Edge funktioniert, sollten Sie Sie auf der Seite laden, um Sie in Aktion zu sehen. Der erste Schritt besteht darin, sicherzustellen, dass die [Erweiterungsentwickler Features aktiviert](./guides/adding-and-removing-extensions.md)sind. Auf diese Weise können Sie Erweiterungsdateien in Microsoft Edge laden, damit Sie Ihre Erweiterung während der Entwicklung testen können. Wenn Sie Probleme haben, können Sie mit den F12-Entwicklertools [die verschiedenen Kontexte ihrer Erweiterung Debuggen](./guides/debugging-extensions.md) , um genau zu bestimmen, was vor sich geht. Gibt es immer noch Probleme? Unser [Leitfaden zur Problembehandlung](./troubleshooting.md) bietet Lösungen für verschiedene häufige Probleme. 
+Sobald Sie über eine Erweiterung verfügen, die in Microsoft Edge funktioniert, sollten Sie sie seitlich laden, um sie in Aktion zu sehen. Der erste Schritt zu diesem Schritt besteht in der Sicherstellung, dass [Erweiterungsentwicklerfeatures aktiviert sind.](./guides/adding-and-removing-extensions.md) Auf diese Weise können Sie die Ladeerweiterungsdateien in Microsoft Edge nebeneinander verwenden, sodass Sie Ihre Erweiterung während der Entwicklung testen können. Sollten Probleme auftreten, können Sie mit den F12-Entwicklertools die verschiedenen Kontexte Ihrer Erweiterung debuggen, um genau zu bestimmen, was vor sich geht. [](./guides/debugging-extensions.md) Gibt es immer noch Probleme? Unser [Problembehandlungshandbuch](./troubleshooting.md) bietet Lösungen für verschiedene gängige Gotchas. 
 
-## Melden von Fehlern und Anfordern von Hilfe
+## <a name="reporting-bugs-and-getting-help"></a>Melden von Fehlern und Abrufen von Hilfe
 
-Sie haben einen Fehler in unserer Erweiterungs Plattform gefunden? Wenn es sich um ein spezifisches Problem mit Microsoft Edge handelt, suchen Sie es in unserem [Microsoft Edge Issue Tracker](https://developer.microsoft.com/microsoft-edge/platform/issues/) , um festzustellen, ob es bereits gemeldet wurde. Wenn ja, großartig! Sie können die Schaltfläche "+ mich auch" drücken, um den Fehler zu überstimmen, und die Schaltfläche "dieses Problem für Updates überwachen", um auf etwaige Änderungen des Problems aufmerksam zu werden. Wenn Sie das Problem nicht finden können, in dem Sie gerade arbeiten, können Sie ein neues Problem öffnen und so viele Informationen wie möglich zur Verfügung stellen, damit sich unsere Entwickler damit vertraut machen können. 
+Denken Sie, Sie haben einen Fehler in unserer Erweiterungsplattform gefunden? Wenn das Problem spezifisch für Microsoft Edge ist, suchen Sie in unserem [Microsoft Edge Issue Tracker](https://developer.microsoft.com/microsoft-edge/platform/issues/) nach diesem Problem, um zu sehen, ob es bereits gemeldet wurde. Wenn ja, großartig! Sie können die Schaltfläche "+ Ich zu" drücken, um den Fehler zu aktualisieren, und die Schaltfläche "Dieses Problem auf Updates überprüfen", um auf änderungen an dem Problem aufmerksam gemacht zu werden. Wenn Sie das Problem nicht finden können, in das Sie gelaufen sind, können Sie ein neues Problem öffnen und so viele Informationen wie möglich bereitstellen, damit unsere Entwickler es sich anschauen können. 
 
-Fehlt eine API, die ihre Erweiterung ordnungsgemäß funktionieren muss? In diesem Fall [hören wir immer auf UserVoice](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/category/87962-extensions). Wenn Sie bereits vorhanden sind, können Sie Ihr API gerne upvoten oder ein neues feedbackelement erstellen, damit andere Entwickler es auch überstimmen können! 
+<!--Are we missing an API that your extension needs to work properly? If so, [we're always listening on UserVoice](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/category/87962-extensions). Feel free to upvote your API if it already exists, or to create a new feedback item so that other developers can upvote it too! -->  
 
-Haben Sie eine Frage, auf die Sie in der Dokumentation keine Antwort finden können? Wir empfehlen dringend, dass Sie sich der [Microsoft Edge Extensions-Community](https://stackoverflow.com/questions/tagged/microsoft-edge-extension) bei Stack Overflow anschließen und Sie dort Fragen.
+Haben Sie eine Frage, auf die Sie in der Dokumentation keine Antwort finden können? Es wird dringend empfohlen, dass Sie der [Microsoft Edge Extensions-Community](https://stackoverflow.com/questions/tagged/microsoft-edge-extension) auf Stack Overflow beitreten und sie dort fragen!
 
-## Testen der Erweiterung
+## <a name="testing-your-extension"></a>Testen Der Erweiterung
 
-Ab dem Windows Anniversary-Update unterstützt [Microsoft WebDriver](../webdriver/index.md) das automatisierte seitliche Laden von Erweiterungen in Microsoft Edge-Sitzungen. Auf diese Weise können Sie einfache Tests schreiben, um sicherzustellen, dass jede Erweiterung, die für die Änderung einer Seite vorgesehen ist, in der erwarteten Weise erfolgt. Weitere Informationen hierzu finden Sie in unserem [Testhandbuch](./guides/packaging/creating-and-testing-extension-packages.md#automated-testing-with-webdriver). Bleiben Sie auch für Updates auf dem laufenden, während wir in Zukunft weitere erweiterungsspezifische Features zu Microsoft WebDriver hinzufügen möchten.
+Ab dem Windows Anniversary Update unterstützt [Microsoft WebDriver](../webdriver/index.md) das automatische Seitenladen von Erweiterungen in Microsoft #A0. Auf diese Weise können Sie einfache Tests schreiben, um sicherzustellen, dass jede Erweiterung, die eine Seite ändern soll, dies in der erwarteten Weise tut. Weitere Informationen dazu finden Sie in unserem [Testhandbuch](./guides/packaging/creating-and-testing-extension-packages.md#automated-testing-with-webdriver). Bleiben Sie auch auf Updates eingestellt, da wir in Zukunft weitere erweiterungsspezifische Features zu Microsoft WebDriver hinzufügen möchten.
 
-## Hinzufügen des letzten Schliffs
+## <a name="adding-the-final-touches"></a>Hinzufügen der letzten Berührungen
 
-Ihre Erweiterung funktioniert also in Microsoft Edge. Was passiert als nächstes? Bevor Sie mit dem Verpacken der Erweiterung fortfahren, empfehlen wir Ihnen dringend, diese Leitfäden zu lesen, um sicherzustellen, dass Ihre Erweiterung unseren Best Practice-Richtlinien folgt: 
-- Stellen Sie sicher, dass die Erweiterungssymbole [richtig dimensioniert](./guides/design.md) und [barrierefrei](./guides/accessibility.md) sind (was bedeutet, dass Sie sowohl in hellen als auch in dunklen Designs von Microsoft Edge sowie im Modus für hohen Kontrast sichtbar sind). 
-- Wenn Ihre Erweiterung mehrere Sprachen unterstützen muss, stellen Sie bitte sicher, dass Sie einen Blick auf unseren [Leitfaden zur Internationalisierung](./guides/internationalization.md)genommen haben. 
+Ihre Erweiterung funktioniert also in Microsoft Edge. Wie geht es weiter? Bevor Sie mit dem Verpacken Ihrer Erweiterung fortfahren, empfehlen wir dringend, diese Anleitungen zu lesen, um sicherzustellen, dass Ihre Erweiterung unsere bewährten Richtlinien eingeht: 
+- Stellen Sie sicher, [](./guides/design.md) dass ihre Erweiterungssymbole richtig dimensioniert und zugänglich sind [(d.](./guides/accessibility.md) h. sie sind sowohl in hellen als auch dunklen Designs von Microsoft Edge sowie im Modus mit hohem Kontrast sichtbar). 
+- Wenn Ihre Erweiterung mehrere Sprachen unterstützen muss, stellen Sie sicher, dass Sie unseren [Internationalisierungsleitfaden durchschaut haben.](./guides/internationalization.md) 
 
-## Verpacken einer Erweiterung
+## <a name="packaging-an-extension"></a>Packen einer Erweiterung
 
-Nun wird Ihre Erweiterung endlich aufpoliert und kann verpackt werden. Ganz gleich, ob Sie es verpacken möchten, um die Übermittlung an den Microsoft Store vorzubereiten, oder um die Verteilung innerhalb Ihrer Entwicklungs-und Test Teams zu vereinfachen, es stehen Ihnen zahlreiche Ressourcen zur Verfügung, die Ihnen helfen können: 
+Jetzt ist Ihre Erweiterung endlich aufpoliert und kann verpackt werden. Unabhängig davon, ob Sie es packen möchten, um die Übermittlung an den Microsoft Store vorzubereiten oder die Verteilung innerhalb Ihrer Entwicklungs-/Testteams zu vereinfachen, stehen Ihnen zahlreiche Ressourcen zur Verfügung: 
 
-- Unsere empfohlene Lösung zum Erstellen eines Erweiterungspakets besteht darin, unserem [ManifoldJS-Leitfaden für Verpackungen](./guides/packaging/using-manifoldjs-to-package-extensions.md) zu folgen, der Sie durch die Schritte der Verwendung eines Node.js basierten Tools zum einfachen Verpacken Ihrer Erweiterung führt, unabhängig von der Plattform, auf der Sie sich entwickeln. Wenn Sie eine genauere Übersicht über unser Erweiterungs-Verpackungsformat wünschen, lesen Sie bitte unseren Leitfaden zur AppX- [Paketerstellung](./guides/packaging/creating-and-testing-extension-packages.md#preparing-the-submission-folder). 
-- Wenn Ihre Erweiterung mehrere Sprachen unterstützt, müssen Sie auch unserem Leitfaden zum [Lokalisieren von Erweiterungspaketen](./guides/packaging/localizing-extension-packages.md) folgen, damit die Sprachen, die Sie in ihrer Erweiterung haben, nach dem Verpacken richtig registriert sind. 
+- Unsere empfohlene Lösung für das Erstellen eines Erweiterungspakets besteht in der Befolgen der [ManifoldJS-Verpackungsanleitung,](./guides/packaging/using-manifoldjs-to-package-extensions.md) die Sie durch die Schritte der Verwendung eines Node.js-basierten Tools führt, um Ihre Erweiterung unabhängig von der Plattform, auf der Sie entwickeln, einfach zu verpacken. Wenn Sie einen genaueren und manuellen Einblick in unser Erweiterungspaketformat wünschen, lesen Sie bitte unseren Leitfaden zur Erstellung von [AppX-Paketen.](./guides/packaging/creating-and-testing-extension-packages.md#preparing-the-submission-folder) 
+- Wenn Ihre Erweiterung mehrere Sprachen unterstützt, müssen Sie auch unsere Anleitung zum Lokalisieren von [Erweiterungspaketen](./guides/packaging/localizing-extension-packages.md) befolgen, damit die Sprachen, die Sie in Ihrer Erweiterung haben, nach dem Verpacken ordnungsgemäß registriert sind. 
 
-Wenn Sie ein Enterprise-Kunde sind und ihre verpackten Erweiterungen über interne Kanäle verteilen möchten, lesen Sie unseren [Leitfaden für Erweiterungen für Unternehmen](./extensions-for-enterprise.md) , um zu erfahren, wie dies geht.  
+Wenn Sie ein Unternehmenskunde sind, der Ihre verpackten Erweiterungen über interne Kanäle verteilen möchte, lesen Sie bitte unseren [Leitfaden](./extensions-for-enterprise.md) für Erweiterungen für Unternehmen, um dies zu erfahren.  
 
-## Veröffentlichen im Microsoft Store
+## <a name="publishing-to-the-microsoft-store"></a>Veröffentlichen im Microsoft Store
 
-Da sich unsere Erweiterungs Plattform noch in den Kinderschuhen befindet, verwalten wir im Microsoft Store absichtlich Erweiterungsbeiträge, damit wir uns auf die Bereitstellung einer Qualitätserfahrung für unsere Benutzer und Entwickler konzentrieren können. Allerdings möchten wir Entwicklern die Veröffentlichung Ihrer Erweiterungen so einfach wie möglich machen. Aus diesem Grund haben wir vor kurzem ein neues [Formular](https://aka.ms/extension-request) für die Übermittlung von Erweiterungen gestartet, in dem Entwickler die Berechtigung zum Übermitteln Ihrer Erweiterungs-AppX an den Microsoft Store anfordern können.
+Da sich unsere Erweiterungsplattform noch in den Kinderschuhen befindet, verwalten wir erweiterungsübermittlungen an den Microsoft Store zwecks Zweck, damit wir uns auf die Bereitstellung einer Qualitätserfahrung für unsere Benutzer und Entwickler konzentrieren können. Darüber hinaus möchten wir es Entwicklern so einfach wie möglich machen, ihre Erweiterungen zu veröffentlichen. Daher haben wir kürzlich ein [](https://aka.ms/extension-request) neues Übermittlungsformular für Erweiterungserweiterungen gestartet, in dem Entwickler die Berechtigung zum Übermitteln ihrer Erweiterung AppX an den Microsoft Store anfordern können.
  
-Der erste Schritt des Veröffentlichungsprozesses besteht darin, sicherzustellen, dass Ihre Erweiterung den Richtlinien für **Browsererweiterungen** und dem [Abschnitt Microsoft-Edge-Erweiterungen in den Microsoft Store-Richtlinien](https://msdn.microsoft.com/library/windows/apps/dn764944.aspx#pol_10_12)entspricht.  
+Der erste Schritt des Veröffentlichungsprozesses besteht im Sicherstellen, dass Ihre Erweiterung unserer Browsererweiterungsrichtlinie sowie dem [Abschnitt Microsoft Edge-Erweiterungen der Microsoft Store-Richtlinien entspricht.](https://msdn.microsoft.com/library/windows/apps/dn764944.aspx#pol_10_12) ****  
 
 <!--  The first step of the publishing process is to make sure your extension conforms to our [browser extension policy](./microsoft-browser-extension-policy.md) as well as the [Microsoft Edge extensions section of the Microsoft Store Policies](https://msdn.microsoft.com/library/windows/apps/dn764944.aspx#pol_10_12).  -->  
 
-Nachdem Sie bestätigt haben, dass Ihre Erweiterung den Richtlinien folgt, müssen Sie sich für ein [Entwicklerkonto im Partner Center registrieren und den Namen Ihrer Durchwahl reservieren](./guides/packaging/extensions-in-the-windows-dev-center.md). Anschließend müssen Sie eine Anfrage über unser [Verlängerungsformular](https://aka.ms/extension-request) einreichen, um die Berechtigung zum Veröffentlichen im Microsoft Store zu beantragen. Wenn Sie versuchen, ihre Erweiterungs-AppX zu übermitteln, ohne zuerst die Berechtigung zu erhalten, erhalten Sie die folgende Fehlermeldung:
+Sobald Sie bestätigt haben, dass Ihre Erweiterung den Richtlinien folgt, müssen Sie sich für ein Entwicklerkonto im Partner Center registrieren und den Namen [Ihrer Erweiterung reservieren.](./guides/packaging/extensions-in-the-windows-dev-center.md) Anschließend müssen Sie eine Anforderung über unser [](https://aka.ms/extension-request) Erweiterungsübermittlungsformular übermitteln, um die Berechtigung zum Veröffentlichen im Microsoft Store an bitten zu können. Wenn Sie versuchen, Ihre Erweiterung AppX ohne vorheriges Abrufen der Berechtigung zu übermitteln, wird der folgende Fehler angezeigt:
 
 ```text
 Package acceptance validation error: com.microsoft.edge.extension is a reserved extension type. Your app does not have permission to use this extension type.
 ```  
 
-Nachdem Sie eine Anfrage eingereicht haben, erhalten Sie eine Benachrichtigung und werden versuchen, so schnell wie möglich zu ihrer Übermittlung zu gelangen. Dies kann aufgrund der großen Anzahl von Übermittlungen, die wir erhalten haben, etwas dauern, aber wir werden Sie per e-Mail benachrichtigen, sobald Sie genehmigt sind! Nachdem Sie die e-Mail erhalten haben, können Sie Ihre Durchwahl AppX über das Partner Center an den Microsoft Store übermitteln. Bitte beachten Sie, dass Sie Ihr AppX nicht unterschreiben müssen, bevor Sie es einreichen. der Microsoft Store-Aufnahmeprozess übernimmt das für Sie!
+Nachdem Sie eine Anforderung übermittelt haben, erhalten wir eine Benachrichtigung und versuchen, so schnell wie möglich zu Ihrer Übermittlung zu kommen. Dies kann aufgrund der hohen Anzahl von Übermittlungen, die wir erhalten haben, etwas dauern, aber wir benachrichtigen Sie per E-Mail, sobald Sie genehmigt sind! Sobald Sie die E-Mail erhalten haben, können Sie Ihre Erweiterung AppX über das Partner Center an den Microsoft Store übermitteln. Bitte beachten Sie, dass Sie Ihre AppX nicht signieren müssen, bevor Sie sie übermitteln. Der Microsoft Store-Ingestion-Prozess kümmert sich darum für Sie!
  
 > [!NOTE]
-> Das Verfahren zum Veröffentlichen einer Erweiterung für den Microsoft Store (unabhängig davon, ob es sich um eine brandneue Erweiterung oder um eine Aktualisierung auf eine vorhandene handelt) kann bis zu 72 Stunden dauern. Um diesen Vorgang zu beschleunigen, stellen Sie bitte sicher, dass Sie diese allgemeinen Probleme vor dem einreichen überprüft haben, um zu verhindern, dass Sie später erneut übermitteln müssen: 
-> - Ihre Screenshots sind ordnungsgemäß sortiert und werden von ihrer Erweiterung in Microsoft Edge ausgeführt. 
-> - Ihre Erweiterungsbeschreibung verweist auf "Microsoft Edge" anstelle von "Edge" (Dies ist eine rechtliche Anforderung). 
-> - Ihr 150x150-Symbol in Ihrem Erweiterungspaket hat [keinen transparenten Hintergrund](./guides/design.md#microsoft-store-icon) (der Microsoft Store-Client rendert Bilder mit transparenten Hintergründen nicht ordnungsgemäß) 
+> Der Prozess zum Veröffentlichen einer Erweiterung im Microsoft Store (unabhängig davon, ob es sich um eine völlig neue Erweiterung oder um ein Update für eine vorhandene Erweiterung oder ein Update in einer vorhandenen Erweiterung) geht, kann bis zu 72 Stunden dauern. Um diesen Prozess zu beschleunigen, stellen Sie sicher, dass Sie diese häufigen Gotchas vor der Übermittlung überprüft haben, um zu vermeiden, dass sie später erneut übermittelt werden müssen: 
+> - Ihre Screenshots sind korrekt dimensioniert und werden in Microsoft Edge ausgeführt. 
+> - Ihre Erweiterungsbeschreibung verweist auf "Microsoft Edge" anstelle von "Edge" (dies ist eine gesetzliche Anforderung) 
+> - Ihr 150 x 150-Symbol in Ihrem Erweiterungspaket hat keinen [transparenten](./guides/design.md#microsoft-store-icon) Hintergrund (Der Microsoft Store-Client rendert Bilder mit transparenten Hintergründen nicht ordnungsgemäß) 
 
-Darüber hinaus müssen Sie, falls zutreffend, sicherstellen, dass alle Informationen zur Plattformverfügbarkeit auf Ihrer Website die Verfügbarkeit ihrer Erweiterung auf Microsoft Edge richtig erwähnen. Während der Microsoft Store keine Installationen mit einem Klick auf Inline-Erweiterungen zulässt, können Sie [im Microsoft Store Deep-Link zu ihrer Erweiterung](./tips-and-tricks.md#get-a-direct-link-to-your-extension-in-the-microsoft-store) erstellen, damit die Benutzer Sie einfach abrufen können. 
+Stellen Sie zusätzlich zu den obigen Informationen und ggf. sicher, dass alle Informationen zur Plattformverfügbarkeit auf Ihrer Website die Verfügbarkeit Ihrer Erweiterung auf Microsoft Edge korrekt erwähnen. Während im Microsoft Store keine Installationen von Inlineerweiterungen mit einem Klick zulässig sind, können Sie eine Tiefe Verknüpfung zu Ihrer Erweiterung im [Microsoft Store](./tips-and-tricks.md#get-a-direct-link-to-your-extension-in-the-microsoft-store) erstellen, um benutzern den Erwerb zu ermöglichen. 
 
-Im Microsoft Store können Sie auch [die Sichtbarkeit ihrer Erweiterung](https://blogs.windows.com/buildingapps/2015/09/10/managing-hidden-apps-beta-apps-and-visibility-of-in-app-purchases-in-dev-center/) im Microsoft Store-Katalog steuern. Einige unserer Partner haben diese Funktionalität genutzt, um Folgendes zu erreichen: 
-- Veröffentlichen einer zweiten Beta Version ihrer Erweiterung als ausgeblendet im Microsoft Store.
-- Anfängliche Veröffentlichung der Erweiterung als "ausgeblendet", um die ursprüngliche Telemetrie zu überwachen, bevor Sie Ihren Status auf "sichtbar" ändert, sobald eine bestimmte Vertrauensstufe erreicht ist.
+Mit dem Microsoft Store können Sie auch [die](https://blogs.windows.com/buildingapps/2015/09/10/managing-hidden-apps-beta-apps-and-visibility-of-in-app-purchases-in-dev-center/) Sichtbarkeit Ihrer Erweiterung im Microsoft Store-Katalog steuern. Einige unserer Partner haben diese Funktionalität genutzt, um Folgendes zu erreichen: 
+- Veröffentlichen einer zweiten Betaversion ihrer Erweiterung, die im Microsoft Store ausgeblendet ist.
+- Veröffentlichen Sie zunächst ihre Erweiterung als ausgeblendet, um die anfängliche Telemetrie zu überwachen, bevor sie schließlich ihren Status in sichtbar ändert, sobald ein bestimmtes Maß an Vertrauen erreicht ist.
 
-## Das war's.
+## <a name="thats-it"></a>Das war's.
 
-Wenn Sie das Ende dieses Leitfadens erreicht haben, haben Sie den Prozess der Entwicklung einer Erweiterung für Microsoft Edge abgeschlossen! Schauen Sie sich unsere [Tipps und Kniffe](./tips-and-tricks.md) an, um zu erfahren, wie Sie Ihre Erweiterung vermarkten und mit ihren Nutzern interagieren können.
+Wenn Sie das Ende dieses Handbuchs erreicht haben, haben Sie den Prozess der Entwicklung einer Erweiterung für Microsoft Edge abgeschlossen! Achten Sie darauf, dass Sie auf unserer [Seite mit Tipps](./tips-and-tricks.md) und Tricks Ideen finden, wie Sie Ihre Erweiterung auf den Markt bringen und mit Ihren Benutzern interagieren können.

@@ -3,16 +3,16 @@ description: Anzeigen von SQL-Daten aus dem Anwendungsbereich von Microsoft Edge
 title: Anzeigen von SQL mit Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 326fe492a3436a40d81c8e31db99a26da4ea054f
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 9f684aabf3592220079e6a8595d91cfea6785769
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397552"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439598"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -73,7 +73,7 @@ Sie können Webdaten nicht SQL bearbeiten, wenn Sie eine SQL -Tabelle anzeigen, 
 DevTools aktualisiert Tabellen nicht in Echtzeit.  Führen Sie die folgenden Aktionen aus, um die Daten in einer Tabelle zu aktualisieren.  
 
 1.  [Anzeigen der Daten in einer SQL Tabelle](#view-web-sql-data).  
-1.  Wählen **Sie Aktualisieren** \( Aktualisieren ![ ][ImageRefreshIcon] \).  
+1.  Wählen **Sie Aktualisieren** \( Aktualisieren ![ ](../media/refresh-icon.msft.png) \).  
     
 ## <a name="filter-out-columns-in-a-web-sql-table"></a>Filtern von Spalten in einer SQL Tabelle  
 
@@ -103,13 +103,9 @@ DevTools aktualisiert Tabellen nicht in Echtzeit.  Führen Sie die folgenden Akt
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
-<!-- image links -->  
-
-[ImageRefreshIcon]: ../media/refresh-icon.msft.png  
-
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) -Entwicklertools | Microsoft Docs"  
 
 [W3CWebSQLStatus]: https://w3.org/TR/webdatabase/#status-of-this-document "Web SQL Datenbank | W3C"  
 

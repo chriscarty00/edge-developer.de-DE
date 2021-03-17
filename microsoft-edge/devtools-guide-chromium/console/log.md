@@ -3,16 +3,16 @@ description: Erfahren Sie, wie Sie Nachrichten an der Konsole protokollieren.
 title: Erste Schritte mit der Protokollierung von Nachrichten in der Konsole
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: e2ea1a8327dd2a591e067b69198c4509b2abcb2d
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: fb428154b00959db1627096819c565dd5dc11346
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399169"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439289"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -122,7 +122,7 @@ Die meisten Nachrichten, die in der Konsole angezeigt **werden,** stammen von de
     > [!TIP]
     > Wenn Sie den Code anzeigen möchten, der dazu führte, dass eine Nachricht auf eine bestimmte Weise protokolliert wurde, wählen Sie ein Skript \(z. B. \) aus, um den Code zu sehen, der dazu führte, dass die Nachricht `log.js:12` formatiert wurde.  
 
-1.  Wählen Sie **das Symbol Erweitern** \( Erweitern ![ ][ImageExpandIcon] \) vor `Abandon Hope All Ye Who Enter` aus.  DevTools zeigt die [Stapelverfolgung an,][WikiStackTrace] die zum Aufruf führt.  
+1.  Wählen Sie **das Symbol Erweitern** \( Erweitern ![ ](../media/expand-icon.msft.png) \) vor `Abandon Hope All Ye Who Enter` aus.  DevTools zeigt die [Stapelverfolgung an,][WikiStackTrace] die zum Aufruf führt.  
     
     :::image type="complex" source="../media/console-log-warning-expanded.msft.png" alt-text="Eine Stapelverfolgung" lightbox="../media/console-log-warning-expanded.msft.png":::
        Eine Stapelverfolgung  
@@ -236,13 +236,13 @@ Wenn Sie alle Nachrichten anzeigen möchten, die ein Textmuster anstelle einer b
 
 Wenn Sie nur die Nachrichten anzeigen möchten, die von einer bestimmten URL stammten, verwenden Sie die **Sidebar**.  
 
-1.  Wählen **Sie Konsolenseite anzeigen** \( ![ Konsolenseite anzeigen ][ImageShowConsoleSidebarIcon] \).  
+1.  Wählen **Sie Konsolenseite anzeigen** \( ![ Konsolenseite anzeigen ](../media/show-console-sidebar-icon.msft.png) \).  
     
     :::image type="complex" source="../media/console-sidebar-all-messages.msft.png" alt-text="Die Seitenleiste" lightbox="../media/console-sidebar-all-messages.msft.png":::
        Die Seitenleiste  
     :::image-end:::  
     
-1.  Wählen Sie **das Symbol Erweitern** \( Erweitern ![ ][ImageExpandIcon] \) neben der Anzahl der Nachrichten aus.  In der folgenden Abbildung wird die Anzahl der Nachrichten als **13 Nachrichten angegeben.**  Die **Seitenleiste** zeigt eine Liste der URLs an, die dazu führte, dass Nachrichten protokolliert wurden.  Beispielsweise wurden `log.js` 11 Nachrichten verursacht.  
+1.  Wählen Sie **das Symbol Erweitern** \( Erweitern ![ ](../media/expand-icon.msft.png) \) neben der Anzahl der Nachrichten aus.  In der folgenden Abbildung wird die Anzahl der Nachrichten als **13 Nachrichten angegeben.**  Die **Seitenleiste** zeigt eine Liste der URLs an, die dazu führte, dass Nachrichten protokolliert wurden.  Beispielsweise wurden `log.js` 11 Nachrichten verursacht.  
     
     :::image type="complex" source="../media/console-sidebar-expanded-all-messages.msft.png" alt-text="Anzeigen der Nachrichtenquelle in der Seitenleiste" lightbox="../media/console-sidebar-expanded-all-messages.msft.png":::
        Anzeigen der Nachrichtenquelle in der Seitenleiste  
@@ -280,11 +280,6 @@ Wenn Sie Formatvorlagen bearbeiten, aber schnell im Konsolenprotokoll nach etwas
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageExpandIcon]: ../media/expand-icon.msft.png  
-[ImageShowConsoleSidebarIcon]: ../media/show-console-sidebar-icon.msft.png  
 
 <!-- links -->  
 

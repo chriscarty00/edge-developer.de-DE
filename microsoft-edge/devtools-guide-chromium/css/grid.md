@@ -7,12 +7,12 @@ ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 5e4b20690eac3a692f6428f391def102a4f78ecb
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 034fbdf82ddba39fc0818bc6f3add8824c6bb3ac
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398770"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439261"
 ---
 # <a name="inspect-css-grid"></a>Überprüfen des CSS-Rasters  
 
@@ -176,7 +176,7 @@ Um die Farbauswahl zu öffnen und die Rasterüberlagerungsfarbe anzupassen, wäh
 
 ### <a name="highlight-the-grid"></a>Hervorheben des Rasters  
 
-Um das HTML-Element **** im Elementtool zu markieren und auf der Webseite zu diesem zu scrollen, wählen Sie das Element Anzeigen **im** Bereich Elemente \( Element anzeigen im Elementbereichssymbol ![ ][ImageShowElementInElementsPanelIcon] \) aus.  
+Um das HTML-Element **** im Elementtool zu markieren und auf der Webseite zu diesem zu scrollen, wählen Sie das Element Anzeigen **im** Bereich Elemente \( Element anzeigen im Elementbereichssymbol ![ ](../media/show-element-in-element-panel-icon.msft.png) \) aus.  
 
 :::image type="complex" source="../media/grid-grid-overlays-highlight.msft.png" alt-text="Hervorheben des Rasters" lightbox="../media/grid-grid-overlays-highlight.msft.png":::
    Hervorheben des Rasters  
@@ -185,10 +185,6 @@ Um das HTML-Element **** im Elementtool zu markieren und auf der Webseite zu die
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageShowElementInElementsPanelIcon]: ../media/show-element-in-element-panel-icon.msft.png  
 
 <!-- links -->  
 

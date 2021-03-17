@@ -3,16 +3,16 @@ description: Erfahren Sie, wie Sie Microsoft Edge DevTools verwenden, um Möglic
 title: Optimieren der Websitegeschwindigkeit mit Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 7de97ab27528e89e2373e0a0d1002e8c86e37613
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 75c9df5d86ce994cebfda882a0adfa2664b6ec30
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398112"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439444"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -94,7 +94,7 @@ Für die restlichen Screenshots in diesem Lernprogramm wird DevTools in einem se
 
 Die Basislinie ist eine Aufzeichnung der Leistung der Website, bevor Sie Leistungsverbesserungen vorgenommen haben.  
 
-1.  Wählen Sie das **Tool Überwachungen** aus.  Sie kann hinter der Schaltfläche **Weitere Bereiche** \( Weitere ![ Bereiche ][ImageMorePanelsIcon] \) ausgeblendet werden.  In diesem Panel befindet sich ein Leuchtturm, da das Projekt, das das Auditpanel unterstützt, den Namen **"Leuchtkraft" trägt.**  
+1.  Wählen Sie das **Tool Überwachungen** aus.  Sie kann hinter der Schaltfläche **Weitere Bereiche** \( Weitere ![ Bereiche ](../media/more-panels-icon.msft.png) \) ausgeblendet werden.  In diesem Panel befindet sich ein Leuchtturm, da das Projekt, das das Auditpanel unterstützt, den Namen **"Leuchtkraft" trägt.**  
     
     [!INCLUDE [audits-panel-note](../includes/audits-panel-note.md)]  
     
@@ -278,7 +278,7 @@ Verwenden Sie die Workflows, die Sie zuvor gelernt haben, um manuell zu überpr�
 Überwachen Sie die Seite erneut, um zu messen, welche Art von Auswirkung die Textkomprimierung auf die Ladeleistung der Seite hat:  
 
 1.  Wählen Sie das **Tool Überwachungen** aus.  
-1.  Wählen **Sie Ausführen einer Überwachung** \( Ausführen einer Überwachung ![ ][ImagePerformIcon] \).  
+1.  Wählen **Sie Ausführen einer Überwachung** \( Ausführen einer Überwachung ![ ](../media/perform-icon.msft.png) \).  
 1.  Lassen Sie die Einstellungen wie zuvor.  
 1.  Wählen **Sie Überwachung ausführen aus.**  
     
@@ -353,7 +353,7 @@ Die erste Aufgabe besteht also darin, Code zu finden, den Sie beim Laden der Sei
        Das **Tool "Abdeckung"**  
     :::image-end:::  
     
-1.  Wählen **Sie Aktualisieren** \( Aktualisieren ![ ][ImageRefreshIcon] \).  Das **Tool** Coverage bietet eine Übersicht darüber, wie viel Code in , und ausgeführt wird, während `bundle.js` die Seite geladen `jquery.js` `lodash.js` wird.  In der Abbildung nach der folgenden Abbildung werden ca. 76 % bzw. 30 % der jQuery- und Lodash-Dateien nicht verwendet.  
+1.  Wählen **Sie Aktualisieren** \( Aktualisieren ![ ](../media/reload-icon.msft.png) \).  Das **Tool** Coverage bietet eine Übersicht darüber, wie viel Code in , und ausgeführt wird, während `bundle.js` die Seite geladen `jquery.js` `lodash.js` wird.  In der Abbildung nach der folgenden Abbildung werden ca. 76 % bzw. 30 % der jQuery- und Lodash-Dateien nicht verwendet.  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage-reloaded.msft.png" alt-text="Der Bericht "Abdeckung"" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage-reloaded.msft.png":::
        Der Bericht "Abdeckung"  
@@ -379,7 +379,7 @@ Sind die `jquery.js` `lodash.js` Und-Dateien sogar zum Laden der Seite erforderl
        Das **Tool zum Blockieren von** Anfragen  
     :::image-end:::  
     
-1.  Wählen **Sie Muster hinzufügen** \( Muster hinzufügen \), geben Sie ![ ][ImageAddPatternIcon] `/libs/*` ein, und wählen Sie dann `Enter` aus, um dies zu bestätigen.  
+1.  Wählen **Sie Muster hinzufügen** \( Muster hinzufügen \), geben Sie ![ ](../media/add-pattern-icon.msft.png) `/libs/*` ein, und wählen Sie dann `Enter` aus, um dies zu bestätigen.  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-added.msft.png" alt-text="Hinzufügen eines Musters zum Blockieren jeder Anforderung zum libs-Verzeichnis" lightbox="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-added.msft.png":::
        Hinzufügen eines Musters zum Blockieren einer Anforderung zum `libs` Verzeichnis  
@@ -391,7 +391,7 @@ Sind die `jquery.js` `lodash.js` Und-Dateien sogar zum Laden der Seite erforderl
        Das **Netzwerktool** zeigt, dass die Anforderungen blockiert wurden  
     :::image-end:::  
     
-1.  Wählen **Sie Alle Muster entfernen** \( Alle Muster entfernen ![ ][ImageRemoveIcon] \), um das `/libs/*` Blockierungsmuster zu löschen.  
+1.  Wählen **Sie Alle Muster entfernen** \( Alle Muster entfernen ![ ](../media/remove-icon.msft.png) \), um das `/libs/*` Blockierungsmuster zu löschen.  
     
 Im Allgemeinen ist das **Tool zum** Blockieren von Anforderungen hilfreich, um das Verhalten Ihrer Seite zu simulieren, wenn keine bestimmte Ressource verfügbar ist.  
 
@@ -426,9 +426,9 @@ Der Hauptthread ist der Ort, an dem der Browser die meiste Arbeit zum Anzeigen e
 Das Ziel besteht in der Verwendung des Leistungsbereichs, um zu analysieren, welche Arbeit der Hauptthread während des Ladens der Seite macht, und Möglichkeiten zum Zurück- oder Entfernen unnötiger Arbeit zu finden.  
 
 1.  Wählen Sie das **Tool Leistung** aus.  
-1.  Wählen **Sie Aufnahmeeinstellungen** \( ![ Aufnahmeeinstellungen ][ImageCaptureIcon] \).  
+1.  Wählen **Sie Aufnahmeeinstellungen** \( ![ Aufnahmeeinstellungen ](../media/capture-icon.msft.png) \).  
 1.  Legen **Sie Netzwerk** auf **Langsame 3G** und CPU **auf** **6x Verlangsamung.**  Mobile Geräte haben in der Regel mehr Hardwareeinschränkungen als Laptops oder Desktops. Mit diesen Einstellungen können Sie die Seitenlast so erleben, als würden Sie ein weniger leistungsfähiges Gerät verwenden.  
-1.  Wählen **Sie Aktualisieren** \( Aktualisieren ![ ][ImageRefreshIcon] \).  DevTools aktualisiert die Seite und erstellt dann eine Visualisierung aller Ausgeführten, um die Seite zu laden.  Diese Visualisierung wird als Ablaufverfolgung **bezeichnet.**  
+1.  Wählen **Sie Aktualisieren** \( Aktualisieren ![ ](../media/reload-icon.msft.png) \).  DevTools aktualisiert die Seite und erstellt dann eine Visualisierung aller Ausgeführten, um die Seite zu laden.  Diese Visualisierung wird als Ablaufverfolgung **bezeichnet.**  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu.msft.png" alt-text="Die Ablaufverfolgung des Leistungstools für die Seitenlast" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu.msft.png":::
        Die **Ablaufverfolgung** des Leistungstools für die Seitenlast  
@@ -523,15 +523,6 @@ Wenn Sie einen Ansatz bevorzugen, der sich eher anfühlt, können Sie mit der `c
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
-<!-- image links -->  
-
-[ImageAddPatternIcon]: ../media/add-pattern-icon.msft.png  
-[ImageCaptureIcon]: ../media/capture-icon.msft.png  
-[ImageLargeResourceRowsButtonIcon]: ../media/large-resource-rows-button-icon.msft.png  
-[ImageMorePanelsIcon]: ../media/more-panels-icon.msft.png  
-[ImagePerformIcon]: ../media/perform-icon.msft.png  
-[ImageRefreshIcon]: ../media/reload-icon.msft.png  
-[ImageRemoveIcon]: ../media/remove-icon.msft.png  
 <!-- links -->  
 
 [DevtoolsEvaluatePerformanceReference]: ../evaluate-performance/reference.md "Leistungsanalysereferenz | Microsoft Docs"  

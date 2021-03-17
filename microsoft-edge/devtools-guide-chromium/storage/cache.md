@@ -3,16 +3,16 @@ description: Anzeigen von Cachedaten aus dem Anwendungsbereich von Microsoft Edg
 title: Anzeigen von Cachedaten mit Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 7e0523e3293bbdafa9c3575344714da708fffe62
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 0ce4dbbf2456579abe84fca48bca8106384995dd
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397538"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439317"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -75,7 +75,7 @@ Wenn Sie versuchen, HTTP-Cachedaten [zu][MDNHTTPCaching] überprüfen, ist dies 
        Auswählen einer ressource, die aktualisiert werden soll  
     :::image-end:::  
     
-1.  Wählen **Sie Aktualisieren** \( Aktualisieren ![ ][ImageRefreshIcon] \).  
+1.  Wählen **Sie Aktualisieren** \( Aktualisieren ![ ](../media/refresh-icon.msft.png) \).  
     
 ## <a name="filter-resources"></a>Filtern von Ressourcen  
 
@@ -95,7 +95,7 @@ Wenn Sie versuchen, HTTP-Cachedaten [zu][MDNHTTPCaching] überprüfen, ist dies 
        Auswählen einer zu löschende Ressource  
     :::image-end:::  
     
-1.  Wählen **Sie Ausgewählte \(** ![ Ausgewähltes Löschen ][ImageDeleteIcon] \) löschen aus.  
+1.  Wählen **Sie Ausgewählte \(** ![ Ausgewähltes Löschen ](../media/delete-icon.msft.png) \) löschen aus.  
     
 ## <a name="delete-all-cache-data"></a>Löschen aller Cachedaten  
 
@@ -115,11 +115,6 @@ Wenn Sie versuchen, HTTP-Cachedaten [zu][MDNHTTPCaching] überprüfen, ist dies 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageDeleteIcon]: ../media/delete-icon.msft.png  
-[ImageRefreshIcon]: ../media/refresh-icon.msft.png  
 
 <!-- links -->  
 

@@ -3,16 +3,16 @@ description: Erste Schritte mit Remote debugging Surface Duo-Emulatoren.
 title: Erste Schritte mit Remotedebu debugging Surface Duo-Emulatoren
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, remote debugging, android, surface duo
-ms.openlocfilehash: a9696e63528a674d349b78fbdec2a1b804f61c49
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 61f903a5b929b7ee7b924938cf6ddc21a9783ca7
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398014"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439328"
 ---
 # <a name="get-started-with-remote-debugging-surface-duo-emulators"></a>Erste Schritte mit Remotedebu debugging Surface Duo-Emulatoren  
 
@@ -62,7 +62,7 @@ Wechseln Sie zurück zur Desktopinstanz von [Microsoft Edge][MicrosoftEdge].  Au
 > [!NOTE]
 > Wenn **SurfaceDuoEmulator** nicht auf der Seite angezeigt wird, versuchen Sie, Registerkarten in der Microsoft Edge-App im `edge://inspect` Surface [Duo-Emulator][DualScreenAndroidUseEmulator]zu öffnen oder zu schließen. [][GooglePlayStoreAppsComMicrosoftEmmx]  Weitere Schritte zur Problembehandlung finden Sie im [Abschnitt Problembehandlung für Android-Geräte.][DevtoolsRemoteDebuggingIndexTroubleshootingDevtoolsIsNotDetectingAndroidDevice]  
 
-Wählen Sie in der Liste der geöffneten Registerkarten, die auf dem Emulator ausgeführt werden, auf der Registerkarte überprüfen aus, auf der die zu debuggenden Webinhalte enthalten sind. ****  Die [Microsoft Edge DevTools][DevtoolsIndex] werden in einem neuen Fenster geöffnet.  Wählen **Sie Screencast umschalten** \( Screencast umschalten \), um den Webinhalt aus dem Surface Duo-Emulator im ![ ][ImageToggleScreencastIcon] DevTools-Fenster anzuzeigen. [][DualScreenAndroidUseEmulator]  Sie können jetzt die Microsoft Edge DevTools verwenden, um Ihre Webinhalte im [Surface Duo-Emulator zu debuggen.][DualScreenAndroidUseEmulator]  
+Wählen Sie in der Liste der geöffneten Registerkarten, die auf dem Emulator ausgeführt werden, auf der Registerkarte überprüfen aus, auf der die zu debuggenden Webinhalte enthalten sind. ****  Die [Microsoft Edge DevTools][DevtoolsIndex] werden in einem neuen Fenster geöffnet.  Wählen **Sie Screencast umschalten** \( Screencast umschalten \), um den Webinhalt aus dem Surface Duo-Emulator im ![ ](../media/toggle-screencast-icon.msft.png) DevTools-Fenster anzuzeigen. [][DualScreenAndroidUseEmulator]  Sie können jetzt die Microsoft Edge DevTools verwenden, um Ihre Webinhalte im [Surface Duo-Emulator zu debuggen.][DualScreenAndroidUseEmulator]  
 
 :::image type="complex" source="../media/remote-debugging-surface-duo-devtools.msft.png" alt-text="Verwenden der Microsoft Edge DevTools zum Debuggen von Bing in der Microsoft Edge-App auf dem Surface Duo-Emulator" lightbox="../media/remote-debugging-surface-duo-devtools.msft.png":::
    Verwenden der Microsoft Edge DevTools zum Debuggen von Bing in der Microsoft Edge-App auf dem Surface Duo-Emulator  
@@ -79,13 +79,13 @@ Das Web ist eine großartige Plattform für die neue Klasse von zusammenklappbar
 *   [Der Microsoft Edge-Webplattform-Erklärer für neue APIs zum Erstellen von Weberfahrungen auf zusammenklappbaren Und Dual-Screen-Geräten][GithubMicrosoftedgeMsedgeexplainersFoldablesExplainer]  
 *   [Aufzeichnung der Microsoft 365 Developer Day-Sitzung: Erstellen von Dualscreen-Erfahrungen für Websites und Web-Apps][YoutubeDxrzwsqxpvc]  
 
-<!-- image links -->  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
-[ImageToggleScreencastIcon]: images/toggle-screencast-icon.msft.png  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsIndex]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
+[DevtoolsIndex]: ../index.md "Microsoft Edge (Chromium) -Entwicklertools | Microsoft Docs"  
 [ProgressiveWebAppsIndex]: ../../progressive-web-apps-chromium/index.md "Progressive Web Apps unter Windows | Microsoft Docs"  
 [DevtoolsRemoteDebuggingMain]: ./index.md "Erste Schritte mit remote debuggen von Android-Geräten | Microsoft Docs"  
 [DevtoolsRemoteDebuggingIndexTroubleshootingDevtoolsIsNotDetectingAndroidDevice]: ./index.md#troubleshooting-devtools-is-not-detecting-the-android-device "Problembehandlung: DevTools erkennt das Android-Gerät nicht – Erste Schritte mit dem Remotedebugieren von Android-Geräten | Microsoft Docs"  

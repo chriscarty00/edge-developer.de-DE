@@ -3,16 +3,16 @@ description: Erfahren Sie, wie Sie die Laufzeitleistung in Microsoft Edge DevToo
 title: Erste Schritte mit der Analyse der Laufzeitleistung
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 074c112b99abb4689cac2274338f2276bc46b4ae
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 439d6d4331550b7fc92bfc5fef4c3fc88df38872
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398721"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439612"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -65,8 +65,8 @@ Im folgenden Lernprogramm öffnen Sie DevTools auf **** einer Liveseite und verw
 Mobile Geräte haben viel weniger CPU-Leistung als Desktops und Laptops.  Verwenden Sie bei jedem Profil einer Seite die CPU-Einschränkung, um die Leistung Ihrer Seite auf mobilen Geräten zu simulieren.  
 
 1.  Wählen Sie in DevTools das **Tool Leistung** aus.  
-1.  Stellen Sie sicher, dass **das Kontrollkästchen Screenshots** aktiviert ist.  
-1.  Wählen **Sie Aufnahmeeinstellungen** \(![ Aufnahmeeinstellungen][ImageCaptureSettingsIcon]\).  DevTools zeigt Einstellungen im Zusammenhang mit der Erfassung von Leistungsmetriken an.  
+1.  Stellen Sie sicher, dass Sie das Kontrollkästchen neben **Screenshots auswählen.**  
+1.  Wählen **Sie Aufnahmeeinstellungen** \( ![ Aufnahmeeinstellungen ](../media/capture-settings-icon.msft.png) \).  DevTools zeigt Einstellungen im Zusammenhang mit der Erfassung von Leistungsmetriken an.  
 1.  Wählen **Sie für CPU**die Option **4x Verlangsamung aus.**  DevTools drosselt die CPU, sodass sie viermal langsamer ist als gewöhnlich.  
     
     :::image type="complex" source="../media/evaluate-performance-performance-capture-settings.msft.png" alt-text="CPU-Drosselung" lightbox="../media/evaluate-performance-performance-capture-settings.msft.png":::
@@ -93,7 +93,7 @@ Es ist schwierig, eine Laufzeitleistungsdemo zu erstellen, die für alle Leser d
 
 Wenn Sie die optimierte Version der Seite ausgeführt haben, bewegen sich die blauen Symbole schneller.  Weshalb?  Beide Versionen sollen die Symbole in der gleichen Zeit verschieben.  Nehmen Sie eine Aufzeichnung im Bereich Leistung vor, um zu erfahren, wie Sie den Leistungsengpässe in der nicht optimierten Version erkennen.  
 
-1.  Wählen Sie in DevTools **die Option Record** \(![ aus. Record][ImageRecordIcon]\).  DevTools erfasst Leistungsmetriken, während die Seite ausgeführt wird.  
+1.  Wählen Sie in DevTools **die Option Record** \( Record ![ ](../media/record-icon.msft.png) \).  DevTools erfasst Leistungsmetriken, während die Seite ausgeführt wird.  
     
     :::image type="complex" source="../media/evaluate-performance-performance-profiling.msft.png" alt-text="Profilieren der Seite" lightbox="../media/evaluate-performance-performance-profiling.msft.png":::
        Profilieren der Seite  
@@ -184,7 +184,7 @@ Nachdem Sie gemessen und überprüft haben, ob die Animation nicht gut funktioni
     1.  Konzentrieren Sie sich auf das rote Dreieck oben rechts des **Ereignisses Animation Frame Fired.**  Jedes Mal, wenn ein rotes Dreieck angezeigt wird, wird gewarnt, dass es zu einem Problem im Zusammenhang mit dem Ereignis kommt.  
     
     > [!NOTE]
-    > Das **Ereignis Animation Frame Fired** tritt auf, wenn ein [ `requestAnimationFrame()` Rückruf][MDNWebRequestAnimationFrame] ausgeführt wird.  
+    > Das **Ereignis Animation Frame Fired** tritt auf, wenn ein [requestAnimationFrame()-Rückruf][MDNWebRequestAnimationFrame] ausgeführt wird.  
     
 1.  Wählen Sie das **Ereignis Animation Frame Fired** aus.  Im **Zusammenfassungsbereich** werden nun Informationen zu diesem Ereignis angezeigt.  Notieren Sie sich **den Link Reveal.**  Nachdem Sie es markiert haben, hebt DevTools das Ereignis hervor, das das **Ereignis Animation Frame Fired initiiert** hat.  Konzentrieren Sie sich außerdem auf **den linkapp.js:95.**  Nachdem Sie sie auswählen, wird die entsprechende Zeile im Quellcode angezeigt.
     
@@ -213,7 +213,7 @@ Das war viel zu lernen.  Sie verfügen nun über eine solide Grundlage im grundl
 
 ### <a name="bonus-analyze-the-optimized-version"></a>Bonus: Analysieren der optimierten Version  
 
-Wählen Sie mithilfe der Workflows und Tools, die Sie gerade gelernt haben, **in** der Demo optimieren aus, um den optimierten Code zu aktivieren, eine weitere Leistungsaufzeichnung zu erstellen und die Ergebnisse zu analysieren.  Von der verbesserten Framerate bis zur Reduzierung der Ereignisse im Flammendiagramm im **Abschnitt Main** führt die optimierte Version der App wesentlich weniger Arbeit, was zu einer besseren Leistung führt.  
+Wählen Sie mithilfe der Workflows und Tools, die Sie gerade gelernt haben, **optimieren** in der Demo aus, um den optimierten Code zu aktivieren, eine weitere Leistungsaufzeichnung zu erstellen und die Ergebnisse zu analysieren.  Von der verbesserten Framerate bis zur Reduzierung der Ereignisse im Flammendiagramm im **Abschnitt Main** führt die optimierte Version der App wesentlich weniger Arbeit, was zu einer besseren Leistung führt.  
 
 > [!NOTE]
 > Auch die optimierte Version ist nicht großartig, da sie die `top` Eigenschaft jedes Symbols bearbeitet.  Ein besserer Ansatz ist, sich an Eigenschaften zu halten, die sich nur auf das Compositing auswirken.  <!--  > For more information, navigate to [Use transform and opacity changes for animations][RenderingCompositor].  -->  
@@ -228,7 +228,7 @@ To learn more, navigate to [Measure Performance With The RAIL Model][RAIL].  -->
 Damit Sie sich mit dem **Tool "Leistung"** bequemer machen können, ist die Übung perfekt.  Versuchen Sie, Ihre Seiten zu profilieren und die Ergebnisse zu analysieren.  Wenn Sie Fragen zu Ihren Ergebnissen **** haben, verwenden Sie das Symbol Feedback senden, wählen `Alt` + `Shift` + `I` Sie \(Windows, Linux\), wählen `Option` + `Shift` + `I` Sie \(macOS\) aus, [][TwitterEdgeDevtools]oder twittern Sie das DevTools-Team .  Fügen Sie nach Möglichkeit Screenshots oder Links zu reproduzierbaren Seiten hinzu.  
 
 :::image type="complex" source="../media/evaluate-performance-feedback-icon.msft.png" alt-text="Das Symbol **Feedback** in den Microsoft Edge DevTools" lightbox="../media/evaluate-performance-feedback-icon.msft.png":::
-   Das **Symbol Feedback senden** in den Microsoft Edge DevTools  
+   Das Symbol **Feedback senden** in den Microsoft Edge DevTools  
 :::image-end:::  
 
 <!-- To really become an expert in runtime performance, you must learn how the browser translates HTML, CSS, and JS into pixels on a screen.  The best place to start is the [Rendering Performance Overview][RenderingPerformance].  [The Anatomy Of A Frame][FrameAnatomy] dives into even more detail.  -->  

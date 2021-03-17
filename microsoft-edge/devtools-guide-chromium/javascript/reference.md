@@ -3,16 +3,16 @@ description: Entdecken Sie neue Debuggingworkflows in diesem umfassenden Verweis
 title: JavaScript-Debugging-Referenz
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 09a2d61269b2fe3a23a57ce58eb1c89b12a7639c
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 2944e054a08a901d2e1752fa7c4e48ae110f5787
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398476"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439458"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -46,7 +46,7 @@ Sobald Der Code angehalten wurde, durchschritten Sie ihn, eine Zeile nach der an
 
 ### <a name="step-over-line-of-code"></a>Schritt über Codezeile  
 
-Wenn sie in einer Codezeile angehalten wird, die eine Funktion enthält, die für das Problem, das Sie debuggen, nicht relevant ist, wählen Sie die Schaltfläche **Schritt** über \( Schritt über ![ \) aus, um die Funktion auszuführen, ohne sie ][ImageStepOverIcon] auszuführen.  
+Wenn sie in einer Codezeile angehalten wird, die eine Funktion enthält, die für das Problem, das Sie debuggen, nicht relevant ist, wählen Sie die Schaltfläche **Schritt** über \( Schritt über ![ \) aus, um die Funktion auszuführen, ohne sie ](../media/step-over-icon.msft.png) auszuführen.  
 
 :::image type="complex" source="../media/javascript-source-page-debugger-step-over-next-function-call.msft.png" alt-text="Wählen Sie Schritt über" lightbox="../media/javascript-source-page-debugger-step-over-next-function-call.msft.png":::
    Wählen Sie **Schritt über**  
@@ -70,7 +70,7 @@ Sie werden auf `A` angehalten.  Nachdem Sie **Schritt über**auswählen, führt 
 
 ### <a name="step-into-line-of-code"></a>Schritt in Codezeile  
 
-Wenn sie in einer Codezeile angehalten wird, die einen Funktionsaufruf enthält, der mit dem Problem im Zusammenhang steht, das Sie debuggen, wählen Sie die Schaltfläche **Schritt** in \( Schritt in ![ \) aus, um diese Funktion weiter ][ImageStepIntoIcon] zu untersuchen.  
+Wenn sie in einer Codezeile angehalten wird, die einen Funktionsaufruf enthält, der mit dem Problem im Zusammenhang steht, das Sie debuggen, wählen Sie die Schaltfläche **Schritt** in \( Schritt in ![ \) aus, um diese Funktion weiter ](../media/step-into-icon.msft.png) zu untersuchen.  
 
 :::image type="complex" source="../media/javascript-source-page-debugger-step-into-next-function-call.msft.png" alt-text="Wählen Sie Schritt in aus." lightbox="../media/javascript-source-page-debugger-step-into-next-function-call.msft.png":::
    Wählen Sie **Schritt in aus.**  
@@ -94,7 +94,7 @@ Sie werden auf `A` angehalten.  Nachdem Sie **Schritt in auswählen,** führt De
 
 ### <a name="step-out-of-line-of-code"></a>Schritt aus der Codezeile  
 
-Wenn Sie innerhalb einer Funktion angehalten werden, die nicht mit dem Debugproblem im Zusammenhang steht, wählen Sie die Schaltfläche Step **out** \( ![ Step out \) aus, um den Rest des Codes der Funktion ][ImageStepOutIcon] auszuführen.  
+Wenn Sie innerhalb einer Funktion angehalten werden, die nicht mit dem Debugproblem im Zusammenhang steht, wählen Sie die Schaltfläche Step **out** \( ![ Step out \) aus, um den Rest des Codes der Funktion ](../media/step-out-icon.msft.png) auszuführen.  
 
 :::image type="complex" source="../media/javascript-source-page-debugger-step-out-of-current-function.msft.png" alt-text="Auswählen von Step out" lightbox="../media/javascript-source-page-debugger-step-out-of-current-function.msft.png":::
    Auswählen **von Step out**  
@@ -120,7 +120,7 @@ Sie werden auf `A` angehalten.  Nachdem Sie **Step out**auswählen, führt DevTo
 
 Beim Debuggen einer langen Funktion gibt es möglicherweise eine Menge Code, der nicht mit dem Problem im Zusammenhang steht, das Sie debuggen.  
 
-Sie können alle Zeilen durchschritten, aber das ist mühsam.  Sie können einen Codepunkt in der Zeile festlegen, an der Sie interessiert sind, und dann die Schaltfläche Skriptausführung fortsetzen **\(** Skriptausführung fortsetzen \) auswählen, aber es gibt eine schnellere ![ ][ImageResumeScriptExecutionIcon] Möglichkeit.  
+Sie können alle Zeilen durchschritten, aber das ist mühsam.  Sie können einen Codepunkt in der Zeile festlegen, an der Sie interessiert sind, und dann die Schaltfläche Skriptausführung fortsetzen **\(** Skriptausführung fortsetzen \) auswählen, aber es gibt eine schnellere ![ ](../media/resume-script-run-icon.msft.png) Möglichkeit.  
 
 Zeigen Sie auf die Codezeile, an der Sie interessiert sind, öffnen Sie das Kontextmenü \(rechtsklicken\), und wählen Sie **Weiter zu hier aus.**  DevTools führt bis zu diesem Punkt den ganzen Code aus und hält dann in dieser Zeile an.  
 
@@ -152,7 +152,7 @@ Sie werden auf `A` angehalten.  Nachdem Sie **Frame neu starten**auswählen, sol
 
 ### <a name="resume-script-runtime"></a>Fortsetzen der Skriptlaufzeit  
 
-Wenn Sie die Laufzeit nach einer Pause ihres Skripts fortsetzen möchten, wählen Sie **die** Schaltfläche Skriptausführung fortsetzen \( ![ Skriptausführung fortsetzen ][ImageResumeScriptExecutionIcon] \) aus.  DevTools führt das Skript bis zum nächsten Haltepunkt aus, falls dies der Fall ist.  
+Wenn Sie die Laufzeit nach einer Pause ihres Skripts fortsetzen möchten, wählen Sie **die** Schaltfläche Skriptausführung fortsetzen \( ![ Skriptausführung fortsetzen ](../media/resume-script-run-icon.msft.png) \) aus.  DevTools führt das Skript bis zum nächsten Haltepunkt aus, falls dies der Fall ist.  
 
 :::image type="complex" source="../media/javascript-sources-get-started-js-resume-script-runtime.msft.png" alt-text="Wählen Sie Skriptausführung fortsetzen aus" lightbox="../media/javascript-sources-get-started-js-resume-script-runtime.msft.png":::
    Wählen Sie **Skriptausführung fortsetzen aus**  
@@ -160,7 +160,7 @@ Wenn Sie die Laufzeit nach einer Pause ihres Skripts fortsetzen möchten, wähle
 
 #### <a name="force-script-runtime"></a>Erzwingen der Skriptlaufzeit  
 
-Um alle Haltepunkte zu ignorieren und die Fortsetzung der Ausführung des Skripts zu erzwingen, wählen Sie die Schaltfläche Skriptausführung fortsetzen **\(** Skriptausführung fortsetzen \) aus, und wählen Sie dann die Schaltfläche Skriptausführung erzwingen \( Skriptausführung erzwingen ![ ][ImageResumeScriptExecutionIcon] **** ![ ][ImageForceScriptExecutionIcon] \) aus.  
+Um alle Haltepunkte zu ignorieren und die Fortsetzung der Ausführung des Skripts zu erzwingen, wählen Sie die Schaltfläche Skriptausführung fortsetzen **\(** Skriptausführung fortsetzen \) aus, und wählen Sie dann die Schaltfläche Skriptausführung erzwingen \( Skriptausführung erzwingen ![ ](../media/resume-script-run-icon.msft.png) **** ![ ](../media/force-script-run-icon.msft.png) \) aus.  
 
 :::image type="complex" source="../media/javascript-sources-get-started-js-force-script-runtime.msft.png" alt-text="Auswählen der Skriptausführung erzwingen" lightbox="../media/javascript-sources-get-started-js-force-script-runtime.msft.png":::
    Auswählen **der Skriptausführung erzwingen**  
@@ -289,13 +289,13 @@ Verwenden Sie den **Bereich "Watch",** um die Werte benutzerdefinierter Ausdrüc
    Der **Bereich "Watch"**  
 :::image-end:::  
 
-*   Wählen Sie **die Schaltfläche Ausdruck** hinzufügen \( Ausdruck hinzufügen ![ ][ImageAddExpressionIcon] \) aus, um einen neuen Watchausdruck zu erstellen.  
-*   Wählen Sie die **Schaltfläche Aktualisieren** \( ![ Aktualisieren ][ImageRefreshIcon] \) aus, um die Werte aller vorhandenen Ausdrücke zu aktualisieren.  Werte werden automatisch aktualisiert, während Code schrittweise durchschritten wird.  
-*   Zeigen Sie auf einen Ausdruck, und wählen Sie die Schaltfläche **Ausdruck** löschen \( ![ Ausdruck löschen ][ImageDeleteExpressionIcon] \) aus, um ihn zu löschen.  
+*   Wählen Sie **die Schaltfläche Ausdruck** hinzufügen \( Ausdruck hinzufügen ![ ](../media/add-expression-icon.msft.png) \) aus, um einen neuen Watchausdruck zu erstellen.  
+*   Wählen Sie die **Schaltfläche Aktualisieren** \( ![ Aktualisieren ](../media/refresh-icon.msft.png) \) aus, um die Werte aller vorhandenen Ausdrücke zu aktualisieren.  Werte werden automatisch aktualisiert, während Code schrittweise durchschritten wird.  
+*   Zeigen Sie auf einen Ausdruck, und wählen Sie die Schaltfläche **Ausdruck** löschen \( ![ Ausdruck löschen ](../media/delete-expression-icon.msft.png) \) aus, um ihn zu löschen.  
 
 ## <a name="make-a-minified-file-readable"></a>Lesen einer verminten Datei  
 
-Wählen Sie **die Schaltfläche Format** \( Format ![ \) aus, um eine verminte Datei lesbar ][ImageFormatIcon] zu machen.  
+Wählen Sie **die Schaltfläche Format** \( Format ![ \) aus, um eine verminte Datei lesbar ](../media/format-icon.msft.png) zu machen.  
 
 :::image type="complex" source="../media/javascript-sources-html-non-minified.msft.png" alt-text="Die Schaltfläche Format" lightbox="../media/javascript-sources-html-non-minified.msft.png":::
    Die **Schaltfläche Format**  
@@ -322,18 +322,6 @@ Navigieren Sie [zu Deaktivieren von JavaScript mit Microsoft Edge DevTools][DevT
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageStepOverIcon]: ../media/step-over-icon.msft.png  
-[ImageStepIntoIcon]: ../media/step-into-icon.msft.png  
-[ImageStepOutIcon]: ../media/step-out-icon.msft.png  
-[ImageResumeScriptExecutionIcon]: ../media/resume-script-run-icon.msft.png  
-[ImageForceScriptExecutionIcon]: ../media/force-script-run-icon.msft.png  
-[ImageAddExpressionIcon]: ../media/add-expression-icon.msft.png  
-[ImageRefreshIcon]: ../media/refresh-icon.msft.png  
-[ImageDeleteExpressionIcon]: ../media/delete-expression-icon.msft.png  
-[ImageFormatIcon]: ../media/format-icon.msft.png  
 
 <!-- links -->  
 

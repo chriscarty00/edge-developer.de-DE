@@ -1,77 +1,77 @@
 ---
-description: Verwenden Sie das Microsoft Edge devtools-Protokoll zum Überprüfen und Debuggen des Microsoft Edge (EdgeHTML)-Browsers.
-title: Microsoft Edge devtools-Protokoll
+description: Verwenden Sie das Microsoft Edge DevTools-Protokoll, um den Microsoft Edge (EdgeHTML)-Browser zu überprüfen und zu debuggen.
+title: Microsoft Edge DevTools-Protokoll
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: reference
 ms.prod: microsoft-edge
-ms.date: 12/02/2020
+ms.date: 03/16/2021
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 2ba81e51d3f9abd2aa2011993532566885ce553f
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: bc95f6c167479e958ffd16137176418aba872a43
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11234008"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439310"
 ---
-# Microsoft Edge (EdgeHTML) DevTools Protocol
+# <a name="microsoft-edge-edgehtml-devtools-protocol"></a>Microsoft Edge (EdgeHTML) DevTools Protocol
 
 > [!NOTE]
-> Das EdgeHTML-devtools-Protokoll (Microsoft Edge) funktioniert nur unter [Windows 10 April 2018-Update](https://blogs.windows.com/windowsexperience/2018/04/30/how-to-get-the-windows-10-april-2018-update/#5VXkQMU41CJzZPER.97) und neueren Versionen.
+> Das Microsoft Edge (EdgeHTML)-DevTools-Protokoll funktioniert nur unter [Windows 10 April 2018 Update](https://blogs.windows.com/windowsexperience/2018/04/30/how-to-get-the-windows-10-april-2018-update/#5VXkQMU41CJzZPER.97) und späteren Builds.
 
-Entwicklertools können das **Microsoft Edge (EdgeHTML)-devtools-Protokoll** zum Überprüfen und Debuggen des Microsoft Edge-Browsers (EdgeHTML) verwenden. Sie stellt eine Reihe von Methoden und Ereignissen bereit, die in verschiedenen [Domänen](0.2/domains/index.md) der EdgeHTML-Modul Instrumentation organisiert sind.
+Entwicklertools können das **Microsoft Edge (EdgeHTML)-DevTools-Protokoll** verwenden, um den Microsoft Edge (EdgeHTML)-Browser zu überprüfen und zu debuggen. Es bietet eine Reihe von Methoden und Ereignissen, die in verschiedene [Domänen der](0.2/domains/index.md) EdgeHTML-Modulinstrumentierung organisiert sind.
 
- Tooling-Clients können diese Methoden aufrufen und diese Ereignisse über JSON Web Socket-Nachrichten überwachen, die mit dem von Microsoft Edge (EdgeHTML) gehosteten *devtools-Server* oder dem Windows-Geräte Portal ausgetauscht werden. Microsoft Edge (EdgeHTML) devtools verwendet dieses Protokoll zum Aktivieren des [Remotedebuggens](0.2/clients.md#microsoft-edge-devtools-preview) eines Hostcomputers, auf dem Microsoft Edge (EdgeHTML) ausgeführt wird, vom eigenständigen devtools-Client, der im [Microsoft Store](https://www.microsoft.com/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj)verfügbar ist.
+ Toolclients können diese Methoden aufrufen und diese Ereignisse über JSON-Websocketnachrichten überwachen, die mit dem *devTools Server* ausgetauscht werden, der von Microsoft Edge (EdgeHTML) oder dem Windows Device Portal gehostet wird. Microsoft Edge (EdgeHTML) DevTools verwendet dieses Protokoll, um das [Remotedebuding](0.2/clients.md#microsoft-edge-devtools-preview) eines Hostcomputers zu ermöglichen, auf dem Microsoft Edge (EdgeHTML) vom eigenständigen DevTools-Client ausgeführt wird, der im [Microsoft Store verfügbar ist.](https://www.microsoft.com/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj)
 
-Das Microsoft Edge (EdgeHTML)-devtools-Protokoll ist so konzipiert, dass es eng mit dem Chrom-devtools-Protokoll ausgerichtet wird (siehe [W3C-WICG für devtools-Protokolle](https://github.com/WICG/devtools-protocol/)), obwohl es in dieser Version bekannte Interoperabilitäts Lücken gibt.
+Das Microsoft Edge (EdgeHTML)-DevTools-Protokoll ist so konzipiert, dass es eng mit dem Chrome DevTools-Protokoll (siehe [W3C WICG für DevTools-Protokolle)](https://github.com/WICG/devtools-protocol/)in Einklang steht, obwohl in dieser Version bekannte Interoperabilitätslücken bestehen.
 
-## Verwenden des Protokolls
+## <a name="using-the-protocol"></a>Verwenden des Protokolls
 
-Hier erfahren Sie, wie Sie einen benutzerdefinierten Tooling-Client an den devtools-Server in Microsoft Edge (EdgeHTML) anfügen. Lesen Sie die Anweisungen für das [Remotedebuggen](0.2/clients.md#microsoft-edge-devtools-preview) , wenn Sie Microsoft Edge devtools als Client verwenden.
+Hier erfahren Sie, wie Sie einen benutzerdefinierten Toolclient an den DevTools Server in Microsoft Edge (EdgeHTML) anfügen. Lesen Sie die Anweisungen zum Remotedebug, wenn Sie Microsoft Edge DevTools als Client verwenden. [](0.2/clients.md#microsoft-edge-devtools-preview)
 
-1. Starten Sie Microsoft Edge (EdgeHTML) mit geöffnetem Remote Debugging-Port, und geben Sie die URL an, die Sie öffnen möchten. Zum Beispiel:
+1. Starten Sie Microsoft Edge (EdgeHTML), wenn der Remotedebugport geöffnet ist, und geben Sie die URL an, die Sie öffnen möchten. Zum Beispiel:
 
     ```shell
     MicrosoftEdge.exe --devtools-server-port 9222 https://www.bing.com
     ```
 
-    Wenn Edge bereits gestartet wurde, ist der URL-Parameter optional. Neben der Adressleiste des Browsers wird eine Schaltfläche angezeigt, die angibt, dass der **Entwicklertools-Server** gestartet wurde:
+    Wenn Edge bereits gestartet wurde, ist der PARAMETER URL optional. Neben der Browseradressenleiste wird eine Schaltfläche angezeigt, die angibt, dass der **Entwicklertoolsserver** gestartet wurde:
 
-    ![Developer Tools-Server](media/developer-tools-server.png) 
+    ![Entwicklertoolsserver](media/developer-tools-server.png) 
 
-2. Verwenden Sie diesen [HTTP-Endpunkt](0.2/http.md) , um eine Liste von anfügbaren Seiten Zielen abzurufen:
+2. Verwenden Sie diesen [HTTP-Endpunkt,](0.2/http.md) um eine Liste der anfügenbaren Seitenziele zu erhalten:
 
     ```http
     http://localhost:9222/json/list
     ```
 
-3. Stellen Sie eine Verbindung mit der Liste der `webSocketDebuggerUrl` gewünschten Seite her, um weitere [Protokollbefehle](0.2/domains/index.md) auszugeben und Ereignismeldungen über den devtools-Socketserver zu empfangen.
+3. Stellen Sie eine Verbindung mit der Liste der gewünschten Seite zur Ausgabe weiterer Protokollbefehle und zum Empfangen von Ereignismeldungen über `webSocketDebuggerUrl` den devtools-Socketserver fest. [](0.2/domains/index.md)
 
-## Status und Feedback
+## <a name="status-and-feedback"></a>Status und Feedback
 
-[Version 0,2](0.2/index.md) des devtools-Protokolls bietet neue Domänen für Stil-und Layoutfunktionen (schreibgeschützt) sowie Debug-und Konsolen-APIs sowie die Kernskript Debugging-Funktionen, die in [Version 0,1](0.1/index.md)eingeführt wurden. In der Benutzeroberfläche von Microsoft Edge devtools wird dadurch die Funktionalität übersetzt, die in den Panels [**Elemente**](../devtools-guide/elements.md), [**Konsole**](../devtools-guide/console.md) und [**Debugger**](../devtools-guide/debugger.md) zur Verfügung steht.
+[Version 0.2](0.2/index.md) des DevTools-Protokolls stellt neben den in [Version 0.1](0.1/index.md)eingeführten grundlegenden Skriptdebudfunktionen neue Domänen für Das Debuggen von Formaten und Layouts (schreibgeschützt) und Konsolen-APIs bereit. In der Benutzeroberfläche von Microsoft Edge DevTools bedeutet dies, dass funktionen in den [**Panels Elemente,**](../devtools-guide/elements.md) [**Konsole**](../devtools-guide/console.md) und [**Debugger verfügbar**](../devtools-guide/debugger.md) sind.
 
-Vielen Dank, dass Sie das Edge devtools-Protokoll ausprobiert haben! Wir freuen uns über Ihr Feedback unter:
+Vielen Dank für das Ausprobieren des Edge DevTools-Protokolls! Wir freuen uns über Ihr Feedback unter:
 
- - [**Microsoft Edge Developer UserVoice**](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer?category_id=84475): devtools-Feature-Ideen und-Anforderungen
+<!-- - [**Microsoft Edge Developer UserVoice**](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer?category_id=84475): DevTools feature ideas and requests-->  
 
- - [**EdgeHTML Issue Tracker**](https://developer.microsoft.com/microsoft-edge/platform/issues/): Protokoll-, devtools-und EdgeHTML-Platt Formfehler und-Probleme
+ - [**EdgeHTML Issue Tracker**](https://developer.microsoft.com/microsoft-edge/platform/issues/): Protokoll-, DevTools- und EdgeHTML-Plattformfehler und -probleme
 
- - [**Microsoft Edge devtools-Feedback-Hub**](feedback-hub:?referrer=microsoftEdge&tabID=2&newFeedback=true&ContextId=344): Protokoll-und DevTools-Probleme und Vorschläge über die Feedback-Hub-App
+ - [**Microsoft Edge DevTools Feedback Hub**](feedback-hub:?referrer=microsoftEdge&tabID=2&newFeedback=true&ContextId=344): Protokoll- und DevTools-Probleme und Vorschläge über die FeedbackHub-App
 
-## FAQ
+## <a name="faq"></a>FAQ
 
-#### Können mehrere Clients eine Verbindung mit demselben devtools-Server herstellen?
-Nein, nicht gleichzeitig, wenn die Clients Debuggen. Der letzte zu verbindende Client startet den vorherigen. Wenn zusätzliche Tools unterstützt werden, werden in Zukunft wahrscheinlich gleichzeitige Clientverbindungen unterstützt.
+#### <a name="can-multiple-clients-connect-to-the-same-devtools-server"></a>Können mehrere Clients eine Verbindung mit demselben DevTools Server herstellen?
+Nein, nicht gleichzeitig, wenn die Clients debuggen. Der letzte Client, der eine Verbindung herstellen soll, startet den vorherigen Client. Wenn in Zukunft zusätzliche Tools unterstützt werden, werden diese wahrscheinlich gleichzeitige Clientverbindungen unterstützen.
 
-#### Muss ich 9222 als devtools-Server-Port verwenden?
-Nein. Sie können einen beliebigen Port angeben, aber sicher sein, dass Sie einen Port auswählen, der noch nicht verwendet wird. Port 9222 für das Remotedebuggen wird von der Konvention verwendet.
+#### <a name="do-i-have-to-use-9222-as-the-devtools-server-port"></a>Muss ich 9222 als DevTools Server-Port verwenden?
+Nein. Sie können einen beliebigen Port angeben, aber achten Sie darauf, einen Port zu wählen, der noch nicht verwendet wird. Port 9222 für Remotedebu debugging wird konventionskonvent verwendet.
 
-#### Wie verbinde ich meinen benutzerdefinierten Tooling-Client mit Microsoft Edge (EdgeHTML), auf dem der devtools-Server ausgeführt wird?
-Weitere Informationen finden Sie unter [*Verwenden der*](#using-the-protocol) oben aufgeführten Protokollanweisungen für das Anfügen an Microsoft Edge (EdgeHTML), das auf dem lokalen Computer ausgeführt wird. Wenn Sie das Remotedebuggen unterstützen möchten, müssen Sie einen Benutzer Workflow für die Installation des SSL-Zertifikats des Hostcomputers auf dem Client entwerfen, beispielsweise mit einem Installationsdialogfeld, in dem [Microsoft Edge devtools Preview](./0.2/clients.md#microsoft-edge-devtools-preview) verwendet wird.
+#### <a name="how-do-i-connect-my-custom-tooling-client-to-microsoft-edge-edgehtml-running-the-devtools-server"></a>Wie kann ich meinen benutzerdefinierten Toolclient mit Microsoft Edge (EdgeHTML) verbinden, auf dem devTools Server ausgeführt wird?
+Informationen [*zum Anfügen an*](#using-the-protocol) Microsoft Edge (EdgeHTML), das auf dem lokalen Computer ausgeführt wird, finden Sie unter Verwenden der obigen Protokollanweisungen. Wenn Sie remote debuggen möchten, müssen Sie einen Benutzerworkflow für die Installation des SSL-Zertifikats des Hostcomputers auf dem Client entwickeln, z. B. mit einem Installationsdialogfeld, wie [microsoft Edge DevTools Preview](./0.2/clients.md#microsoft-edge-devtools-preview) verwendet.
 
-#### Wenn ich mithilfe von Edge-devtools Remotedebuggen möchte, muss ich den Hostbrowser Prozess mit *--devtools-Server-Port* cmd-Zeilenschalter starten? 
-Nein. Wenn Sie das [Remotedebuggen mithilfe von Microsoft Edge devtools Preview](./0.2/clients.md#microsoft-edge-devtools-preview)einrichten, `--devtools-server-port` ist die Befehlszeilenoption für das Starten von Edge nicht erforderlich. In diesem Fall wird im Windows- *Geräte Portal* der devtools-Server im Auftrag des Browsers gehostet.
+#### <a name="if-im-remote-debugging-using-edge-devtools-do-i-need-to-start-the-host-browser-process-with---devtools-server-port-cmd-line-switch"></a>Wenn ich remote debugge mit Edge DevTools bin, muss ich den Hostbrowserprozess mit *--devtools-server-port* cmd line switch starten? 
+Nein. Wenn Sie das Remotedebuding mit [Microsoft Edge DevTools Preview](./0.2/clients.md#microsoft-edge-devtools-preview)einrichten, ist der Befehlszeilenschalter zum Starten von Edge nicht `--devtools-server-port` erforderlich. In diesem Fall *hosten* windows Device Portal den DevTools Server im Namen des Browsers.
 
-#### Kann ich das Edge devtools-Protokoll zum Remotedebuggen eines WWAHost.exe-oder WebView-Prozesses verwenden?
-Das Edge devtools-Protokoll unterstützt derzeit nur browserregisterkarten. WWAHost.exe-und WebView-Prozesse werden nicht unterstützt.
+#### <a name="can-i-use-the-edge-devtools-protocol-to-remotely-debug-a-wwahostexe-or-webview-process"></a>Kann ich das Edge DevTools-Protokoll zum Remotedebuggern eines WWAHost.exe webview-Prozesses verwenden?
+Das Edge DevTools-Protokoll unterstützt derzeit nur Browserregisterkarten. WWAHost.exe und Webviewprozesse werden nicht unterstützt.

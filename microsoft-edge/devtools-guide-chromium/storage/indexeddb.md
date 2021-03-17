@@ -3,16 +3,16 @@ description: Anzeigen und Ändern von IndexedDB-Daten mit dem Anwendungsbereich 
 title: Anzeigen und Ändern von IndexedDB-Daten mit Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 6062cb6b574b2295441bc98616f600cbf00cee8e
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 719348067b1343ca3d7781737fa6441f92ad7ba1
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398980"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439710"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -46,8 +46,8 @@ In diesem Handbuch erfahren Sie, wie [Sie Microsoft Edge DevTools zum Anzeigen][
        Das **Menü IndexedDB**  
     :::image-end:::  
     
-    *   \( ![ Database icon ][ImageDatabaseIcon] \) represents a `notes - https://mdn.github.io` database, where is the name of the `notes` database and is the origin that `https://mdn.github.io` accesses the database.  
-    *   \( ![ Objektspeichersymbol ][ImageObjectStoreIcon] \) `notes` ist ein Objektspeicher.  
+    *   \( ![ Database icon ](../media/database-icon.msft.png) \) represents a `notes - https://mdn.github.io` database, where is the name of the `notes` database and is the origin that `https://mdn.github.io` accesses the database.  
+    *   \( ![ Objektspeichersymbol ](../media/object-store-icon.msft.png) \) `notes` ist ein Objektspeicher.  
     *   **title** und **body** sind [Indizes][MDNUsingIndexedDBUsingIndex].  
     
     > [!NOTE]
@@ -85,7 +85,7 @@ In diesem Handbuch erfahren Sie, wie [Sie Microsoft Edge DevTools zum Anzeigen][
     
 ## <a name="refresh-indexeddb-data"></a>Aktualisieren von IndexedDB-Daten  
 
-IndexedDB-Werte im **Anwendungstool** werden nicht in Echtzeit aktualisiert.  Wählen **Sie Aktualisieren** \( Aktualisieren ![ \) aus, wenn Sie einen Objektspeicher anzeigen, um die Daten zu aktualisieren, oder zeigen Sie eine Datenbank an, und wählen Sie Datenbank aktualisieren aus, um ][ImageRefreshIcon] alle Daten zu aktualisieren. ****  
+IndexedDB-Werte im **Anwendungstool** werden nicht in Echtzeit aktualisiert.  Wählen **Sie Aktualisieren** \( Aktualisieren ![ \) aus, wenn Sie einen Objektspeicher anzeigen, um die Daten zu aktualisieren, oder zeigen Sie eine Datenbank an, und wählen Sie Datenbank aktualisieren aus, um ](../media/reload-icon.msft.png) alle Daten zu aktualisieren. ****  
 
 :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png" alt-text="Anzeigen einer Datenbank" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png":::
    Anzeigen einer Datenbank  
@@ -114,7 +114,7 @@ IndexedDB-Schlüssel und -Werte können nicht über das **Anwendungstool bearbei
        Wählen Sie ein Schlüssel-Wert-Paar aus, um es zu löschen  
     :::image-end:::  
     
-1.  Wählen Sie `Delete` den Schlüssel aus, oder wählen **Sie Ausgewählte \(** ![ Ausgewählte Option löschen ][ImageDeleteIcon] \) aus.  
+1.  Wählen Sie `Delete` den Schlüssel aus, oder wählen **Sie Ausgewählte \(** ![ Ausgewählte Option löschen ](../media/delete-icon.msft.png) \) aus.  
     
     :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png" alt-text="Aussehen des Objektspeichers nach dem Löschen des Schlüssel-Wert-Paars" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png":::
        Aussehen des Objektspeichers nach dem Löschen des Schlüssel-Wert-Paars  
@@ -128,7 +128,7 @@ IndexedDB-Schlüssel und -Werte können nicht über das **Anwendungstool bearbei
        Anzeigen eines Objektspeichers  
     :::image-end:::  
     
-1.  Wählen **Sie Clear object store** \( Clear object store ![ ][ImageClearIcon] \).  
+1.  Wählen **Sie Clear object store** \( Clear object store ![ ](../media/clear-icon.msft.png) \).  
     
 ### <a name="delete-an-indexeddb-database"></a>Löschen einer IndexedDB-Datenbank  
 
@@ -152,14 +152,6 @@ IndexedDB-Schlüssel und -Werte können nicht über das **Anwendungstool bearbei
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageClearIcon]: ../media/clear-icon.msft.png  
-[ImageDatabaseIcon]: ../media/database-icon.msft.png  
-[ImageDeleteIcon]: ../media/delete-icon.msft.png  
-[ImageObjectStoreIcon]: ../media/object-store-icon.msft.png  
-[ImageRefreshIcon]: ../media/reload-icon.msft.png  
 
 <!-- links -->  
 

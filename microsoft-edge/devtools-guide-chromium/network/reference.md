@@ -3,16 +3,16 @@ description: Eine umfassende Referenz zu Microsoft Edge DevTools Network Panel F
 title: Netzwerkanalysereferenz
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: e8e2259e0f95499519c954e2199e191382998649
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 94a7031763da1e540b4dab802358e5f200e0db4a
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398378"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439703"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -44,12 +44,12 @@ Standardmäßig zeichnen DevTools alle Netzwerkanforderungen im **Netzwerktool**
 
 Führen Sie die folgenden Schritte aus, um aufzeichnungsanforderungen zu beenden.  
 
-1.  Wählen Sie **im Tool** Netzwerk die Option **Aufzeichnungsnetzwerkprotokoll beenden** \( ![ Aufzeichnungsnetzwerkprotokoll beenden ][ImageRecordOnIcon] \).  Es wird grau, um anzugeben, dass DevTools keine Anforderungen mehr aufzeichnen.  
+1.  Wählen Sie **im Tool** Netzwerk die Option **Aufzeichnungsnetzwerkprotokoll beenden** \( ![ Aufzeichnungsnetzwerkprotokoll beenden ](../media/record-on-icon.msft.png) \).  Es wird grau, um anzugeben, dass DevTools keine Anforderungen mehr aufzeichnen.  
 1.  Wählen `Control` + `E` Sie \(Windows, Linux\) oder `Command` + `E` \(macOS\) aus, während sich das **Netzwerktool** im Fokus befindet.  
 
 ### <a name="clear-requests"></a>Löschen von Anforderungen  
 
-Klicken **Sie im** Netzwerktool auf Löschen \( Löschen \), um alle Anforderungen aus der Tabelle Anforderungen zu ![ ][ImageClearIcon] löschen. ****  
+Klicken **Sie im** Netzwerktool auf Löschen \( Löschen \), um alle Anforderungen aus der Tabelle Anforderungen zu ![ ](../media/clear-requests-icon.msft.png) löschen. ****  
 
 :::image type="complex" source="../media/network-network-clear-button.msft.png" alt-text="Die Schaltfläche Löschen" lightbox="../media/network-network-clear-button.msft.png":::
    Die **Schaltfläche Löschen**  
@@ -239,7 +239,7 @@ Um Anforderungen nach Anforderungstyp zu filtern, wählen Sie eine der folgenden
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Media**  
+      **Medien**  
    :::column-end:::
    :::column span="2":::
       &nbsp;  
@@ -929,7 +929,7 @@ Sie können Abschnitte der **** Benutzeroberfläche des Netzwerktools erweitern 
 ### <a name="hide-the-filters-pane"></a>Ausblenden des Bereichs Filter  
 
 In DevTools wird standardmäßig der Bereich **Filter** angezeigt.  
-Wählen **Sie Filter** \( Filter ![ ][ImageFilterIcon] \) aus, um ihn auszublenden.  
+Wählen **Sie Filter** \( Filter ![ ](../media/filter-icon.msft.png) \) aus, um ihn auszublenden.  
 
 :::image type="complex" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text="Schaltfläche Filter ausblenden" lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
    Schaltfläche Filter ausblenden  
@@ -960,15 +960,6 @@ Standardmäßig zeigt DevTools den Bereich **Übersicht** an.  Deaktivieren Sie 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageCaptureScreenshotsIcon]: ../media/capture-screenshots-icon.msft.png  
-[ImageClearIcon]: ../media/clear-requests-icon.msft.png  
-[ImageFilterIcon]: ../media/filter-icon.msft.png  
-[ImageHideIcon]: ../media/hide-overview-icon.msft.png  
-[ImageLargeResourceRowsIcon]: ../media/large-resource-rows-button-icon.msft.png  
-[ImageRecordOnIcon]: ../media/record-on-icon.msft.png  
 
 <!-- links -->  
 

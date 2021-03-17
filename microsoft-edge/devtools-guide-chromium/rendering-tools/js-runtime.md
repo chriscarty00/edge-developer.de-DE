@@ -3,16 +3,16 @@ description: Identifizieren Sie teure Funktionen mithilfe des Microsoft Edge Dev
 title: Beschleunigen der JavaScript-Laufzeit
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 682001ae8d265b342e5d6e0725f9f8ac4e298cf8
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 2151777c6a9f94408f48552839531c3534d3de36
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397601"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439738"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -30,7 +30,7 @@ ms.locfileid: "11397601"
 
 # <a name="speed-up-javascript-runtime"></a>Beschleunigen der JavaScript-Laufzeit  
 
-Identifizieren Sie teure Funktionen mithilfe des **Speicherbereichs.**  
+Identifizieren Sie teure Funktionen mithilfe des **Speichertools.**  
 
 :::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="Beispielprofile" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
    Beispielprofile  
@@ -38,14 +38,14 @@ Identifizieren Sie teure Funktionen mithilfe des **Speicherbereichs.**
 
 ### <a name="summary"></a>Zusammenfassung  
 
-*   Zeichnen Sie genau auf, welche Funktionen aufgerufen wurden und wie viel Arbeitsspeicher die einzelnen Funktionen mit Demokation Sampling im **Speicherbereich** benötigen.  
+*   Zeichnen Sie genau auf, welche Funktionen aufgerufen wurden und wie viel Arbeitsspeicher die einzelnen Funktionen mit DemOkation Sampling im **Speichertool** benötigen.  
 *   Visualisieren Sie Ihre Profile als Flammendiagramm.  
     
 ## <a name="record-a-sampling-profile"></a>Aufzeichnen eines Samplingprofils  
 
 Wenn Sie jank in Ihrem JavaScript bemerken, erfassen Sie ein Samplingprofil.  Samplingprofile zeigen an, wo die Laufzeit für Funktionen auf Ihrer Seite verwendet wird.  
 
-1.  Navigieren Sie zum **Speicherbereich** von DevTools.  
+1.  Navigieren Sie zum **Speichertool** von DevTools.  
 1.  Wählen Sie das **Optionsfeld Zuweisungsstichprobe** aus.  
 1.  Wählen Sie **Start**aus.  
 1.  Je nachdem, was Sie analysieren möchten, können Sie entweder die Seite aktualisieren, mit der Seite interagieren oder einfach die Seite ausführen lassen.  
@@ -62,7 +62,7 @@ Die Standardansicht ist **Heavy \(Bottom Up\)**.  In dieser Ansicht können Sie 
 
 ### <a name="change-sort-order"></a>Sortierreihenfolge ändern  
 
-Wenn Sie die Sortierreihenfolge ändern möchten, wählen Sie das Dropdownmenü neben dem Symbol für ausgewählte Fokusfunktion **\(** ausgewählte Funktion im Fokus \) aus, und wählen Sie dann eine der ![ ][ImageFocusIcon] folgenden Optionen aus.
+Wenn Sie die Sortierreihenfolge ändern möchten, wählen Sie das Dropdownmenü neben dem Symbol für ausgewählte Fokusfunktion **\(** ausgewählte Funktion im Fokus \) aus, und wählen Sie dann eine der ![ ](../media/focus-icon.msft.png) folgenden Optionen aus.
 
 **Diagramm**.  Zeigt ein chronologisches Diagramm der Aufzeichnung an.  
 
@@ -84,9 +84,9 @@ Wenn Sie die Sortierreihenfolge ändern möchten, wählen Sie das Dropdownmenü 
 
 ### <a name="exclude-functions"></a>Ausschließen von Funktionen  
 
-Um eine Funktion aus Dem Samplingprofil auszuschließen, wählen Sie sie aus, und wählen Sie dann die Schaltfläche ausgewählte Funktion **ausschließen** \( ausgewählte Funktion ![ ausschließen ][ImageExcludeIcon] \) aus.  Die anfordernde Funktion \(parent\) der ausgeschlossenen Funktion \(child\) wird mit dem zugewiesenen Arbeitsspeicher belastet, der der ausgeschlossenen Funktion \(child\) zugewiesen ist.  
+Um eine Funktion aus Dem Samplingprofil auszuschließen, wählen Sie sie aus, und wählen Sie dann die Schaltfläche ausgewählte Funktion **ausschließen** \( ausgewählte Funktion ![ ausschließen ](../media/exclude-icon.msft.png) \) aus.  Die anfordernde Funktion \(parent\) der ausgeschlossenen Funktion \(child\) wird mit dem zugewiesenen Arbeitsspeicher belastet, der der ausgeschlossenen Funktion \(child\) zugewiesen ist.  
 
-Wählen Sie **die Schaltfläche Alle Funktionen wiederherstellen** \( Alle Funktionen ![ wiederherstellen \) aus, um alle ausgeschlossenen Funktionen wieder in der ][ImageRestoreIcon] Aufzeichnung wiederherzustellen.  
+Wählen Sie **die Schaltfläche Alle Funktionen wiederherstellen** \( Alle Funktionen ![ wiederherstellen \) aus, um alle ausgeschlossenen Funktionen wieder in der ](../media/restore-icon.msft.png) Aufzeichnung wiederherzustellen.  
 
 ## <a name="view-sampling-profile-as-chart"></a>Anzeigen des Samplingprofils als Diagramm  
 
@@ -123,7 +123,7 @@ Wählen, halten und ziehen Sie die Maus nach links und rechts über die Übersic
 
 ### <a name="view-function-details"></a>Anzeigen von Funktionsdetails  
 
-Wählen Sie eine Funktion aus, um die Definition im Bereich **Quellen anzeigen** zu können.  
+Wählen Sie eine Funktion aus, um die Definition im Tool **Quellen anzeigen** zu können.  
 
 Zeigen Sie auf eine Funktion, um den Namen und die Zeitdaten anzeigen.  Die folgenden Informationen werden bereitgestellt.  
 
@@ -144,12 +144,6 @@ Zeigen Sie auf eine Funktion, um den Namen und die Zeitdaten anzeigen.  Die folg
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageExcludeIcon]: ../media/exclude-icon.msft.png  
-[ImageFocusIcon]: ../media/focus-icon.msft.png  
-[ImageRestoreIcon]: ../media/restore-icon.msft.png  
 
 <!-- links -->  
 

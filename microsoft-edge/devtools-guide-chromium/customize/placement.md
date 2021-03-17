@@ -3,16 +3,16 @@ description: So verschieben Sie Microsoft Edge DevTools an den unteren oder link
 title: Ändern der Microsoft Edge DevTools-Platzierung (Abdocken, Dock nach unten, Dock nach links)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: e3160999a1072afffdc5c5d44f8fc60fab65d264
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 8fabeaf6d972badd08ab85486913ef17f54bcf67
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399040"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439177"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -59,7 +59,7 @@ DevTools ist standardmäßig rechts neben dem Viewport angedockt.  Sie können a
 
 ## <a name="change-placement-from-the-main-menu"></a>Ändern der Platzierung aus dem Hauptmenü  
 
-1.  Wählen **Sie Anpassen und Steuern DevTools** \( \) aus, und wählen Sie Abdocken in separates Fenster `...` \( **** ![ Undock ][ImageUndockIcon] \), Dock to **bottom** \( Dock to ![ Bottom ][ImageBottomIcon] \) oder Dock to **Left** \( Dock To ![ Left ][ImageLeftIcon] \).  
+1.  Wählen **Sie Anpassen und Steuern DevTools** \( \) aus, und wählen Sie Abdocken in separates Fenster `...` \( **** ![ Undock ](../media/undock-icon.msft.png) \), Dock to **bottom** \( Dock to ![ Bottom ](../media/bottom-icon.msft.png) \) oder Dock to **Left** \( Dock To ![ Left ](../media/left-icon.msft.png) \).  
     
     :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="Wählen Sie In separates Fenster abdocken aus" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
        Wählen **Sie In separates Fenster abdocken aus**  
@@ -77,12 +77,6 @@ DevTools ist standardmäßig rechts neben dem Viewport angedockt.  Sie können a
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageUndockIcon]: ../media/undock-icon.msft.png  
-[ImageBottomIcon]: ../media/bottom-icon.msft.png  
-[ImageLeftIcon]: ../media/left-icon.msft.png  
 
 <!-- links -->  
 

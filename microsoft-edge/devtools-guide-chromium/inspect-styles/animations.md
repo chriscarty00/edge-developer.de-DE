@@ -3,16 +3,16 @@ description: Überprüfen und Ändern von Animationen mit dem Microsoft Edge Dev
 title: Überprüfen von Animationen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 742096f13179de2ad1a95dc9fa62d2bbf3d7c226
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: dba948087ca06015f686d17ba48584199373805a
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397734"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439542"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -103,7 +103,7 @@ Führen Sie zum Erfassen einer Animation einfach die Interaktion aus, die die An
 Nachdem Sie eine Animation erfasst haben, gibt es einige Möglichkeiten, sie wieder zu wiedergeben:  
 
 *   Zeigen Sie auf die Miniaturansicht **im** Bereich Übersicht, um eine Vorschau anzuzeigen.  
-*   Wählen Sie die **** Animationsgruppe im Bereich Übersicht \(so, dass sie im **Detailbereich** angezeigt wird\) aus, und wählen Sie das Wiedergabesymbol **\(** ![ Wiedergabesymbol ][ImageReplayButtonIcon] \) aus.  Die Animation wird im Viewport wiedergegeben.  Wählen Sie **die Symbole für animationsgeschwindigkeit** \( Animationsgeschwindigkeit \) aus, um die Vorschaugeschwindigkeit der aktuell ausgewählten ![ ][ImageAnimationSpeedButtonsIcon] Animationsgruppe zu ändern.  Sie können die rote vertikale Leiste verwenden, um Ihre aktuelle Position zu ändern.  
+*   Wählen Sie die **** Animationsgruppe im Bereich Übersicht \(so, dass sie im **Detailbereich** angezeigt wird\) aus, und wählen Sie das Wiedergabesymbol **\(** ![ Wiedergabesymbol ](../media/replay-button-icon.msft.png) \) aus.  Die Animation wird im Viewport wiedergegeben.  Wählen Sie **die Symbole für animationsgeschwindigkeit** \( Animationsgeschwindigkeit \) aus, um die Vorschaugeschwindigkeit der aktuell ausgewählten ![ ](../media/animation-speed-buttons-icon.msft.png) Animationsgruppe zu ändern.  Sie können die rote vertikale Leiste verwenden, um Ihre aktuelle Position zu ändern.  
 *   Wählen Sie die rote vertikale Leiste aus, und ziehen Sie sie, um die Viewportanimation zu bereinigungen.  
     
 ### <a name="view-animation-details"></a>Anzeigen von Animationsdetails  
@@ -170,8 +170,8 @@ Wenn Sie einer Animation eine Verzögerung hinzufügen möchten, wählen Sie sie
 
 <!-- image links -->  
 
-[ImageAnimationSpeedButtonsIcon]: ../media/animation-speed-buttons-icon.msft.png  
-[ImageReplayButtonIcon]: ../media/replay-button-icon.msft.png  
+(.. /media/animation-speed-buttons-icon.msft.png): .. /media/animation-speed-buttons-icon.msft.png  
+(.. /media/replay-button-icon.msft.png): .. /media/replay-button-icon.msft.png  
 
 <!-- links -->  
 

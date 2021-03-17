@@ -3,16 +3,16 @@ description: Anzeigen und Bearbeiten von sessionStorage mit dem Sitzungsspeicher
 title: Anzeigen und Bearbeiten des Sitzungsspeichers mit Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: cf00d71302e7a1f16ba1cceaa17c9380245d12f8
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 0168b01fd01071ebd19bd211c6d947ae006d778c
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398007"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439661"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -80,12 +80,12 @@ In diesem Handbuch erfahren Sie, wie [Sie Microsoft Edge DevTools][MicrosoftEdge
 
 1.  [Zeigen Sie `sessionStorage` die Schlüssel-Wert-Paare einer Domäne an.](#view-sessionstorage-keys-and-values)  
 1.  Wählen Sie das Schlüssel-Wert-Paar aus, das Sie löschen möchten.  DevTools hebt es blau hervor, um anzugeben, dass es ausgewählt ist.  
-1.  Wählen Sie `Delete` den Schlüssel aus, oder wählen **Sie Ausgewählte \(** ![ Ausgewählte Option löschen ][ImageDeleteIcon] \) aus.  
+1.  Wählen Sie `Delete` den Schlüssel aus, oder wählen **Sie Ausgewählte \(** ![ Ausgewählte Option löschen ](../media/delete-icon.msft.png) \) aus.  
     
 ## <a name="delete-all-sessionstorage-key-value-pairs-for-a-domain"></a>Löschen aller sessionStorage-Schlüssel-Wert-Paare für eine Domäne  
 
 1.  [Zeigen Sie `sessionStorage` die Schlüssel-Wert-Paare einer Domäne an.](#view-sessionstorage-keys-and-values)  
-1.  Wählen **Sie Alle löschen** \( Alle löschen ![ ][ImageClearIcon] \).  
+1.  Wählen **Sie Alle löschen** \( Alle löschen ![ ](../media/clear-icon.msft.png) \).  
     
 ## <a name="interact-with-sessionstorage-from-the-console"></a>Interagieren mit sessionStorage über die Konsole  
 
@@ -106,11 +106,6 @@ Da Sie JavaScript in der Konsole **** ausführen können **und**die Konsole Zugr
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageClearIcon]: ../media/clear-icon.msft.png  
-[ImageDeleteIcon]: ../media/delete-icon.msft.png  
 
 <!-- links -->  
 

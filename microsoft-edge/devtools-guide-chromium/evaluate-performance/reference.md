@@ -3,16 +3,16 @@ description: Ein Verweis auf alle Möglichkeiten zum Aufzeichnen und Analysieren
 title: Referenz zur Leistungsanalyse
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 181bc05fffbaef6a06bebcc5cb9ccfcc8e7de498
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: e7774dc0aab647b8cf2bf47699368fafe6c21d70
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398805"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439689"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -42,7 +42,7 @@ Zeichnen Sie die Laufzeitleistung auf, wenn Sie die Leistung einer Seite währen
 
 1.  Navigieren Sie zu der Seite, die Sie analysieren möchten.  
 1.  Öffnen Sie **das Tool Leistung** in DevTools.  
-1.  Wählen **Sie Datensatz** \( ![ Datensatzsymbol ][ImageRecordIcon] \).  
+1.  Wählen **Sie Datensatz** \( ![ Datensatzsymbol ](../media/record-icon.msft.png) \).  
     
     :::image type="complex" source="../media/evaluate-performance-performance-record-highlight.msft.png" alt-text="Record" lightbox="../media/evaluate-performance-performance-record-highlight.msft.png":::
        **Record**  
@@ -57,7 +57,7 @@ Zeichnen Sie die Lastleistung auf, wenn Sie die Leistung einer Seite beim Laden 
 
 1.  Navigieren Sie zu der Seite, die Sie analysieren möchten.  
 1.  Öffnen Sie **den Bereich** Leistung von DevTools.  
-1.  Wählen **Sie Seite aktualisieren** \( Seite aktualisieren ![ ][ImageRefreshPageIcon] \).  DevTools zeichnet Leistungsmetriken auf, während die Seite aktualisiert wird, und beendet dann die Aufzeichnung ein paar Sekunden nach Abschluss der Last automatisch.  
+1.  Wählen **Sie Seite aktualisieren** \( Seite aktualisieren ![ ](../media/refresh-page-icon.msft.png) \).  DevTools zeichnet Leistungsmetriken auf, während die Seite aktualisiert wird, und beendet dann die Aufzeichnung ein paar Sekunden nach Abschluss der Last automatisch.  
     
     :::image type="complex" source="../media/evaluate-performance-performance-refresh-button.msft.png" alt-text="Seite aktualisieren" lightbox="../media/evaluate-performance-performance-refresh-button.msft.png":::
        **Seite aktualisieren**  
@@ -81,7 +81,7 @@ Navigieren Sie zu [Screenshot anzeigen,](#view-a-screenshot) um zu erfahren, wie
 
 ### <a name="force-garbage-collection-while-recording"></a>Erzwingen der Garbage Collection während der Aufzeichnung  
 
-Wählen Sie beim Aufzeichnen einer Seite die Option Garbage **sammeln** \( Garbage Icon sammeln \) aus, ![ um die Garbage Collection zu ][ImageCollectGarbageIcon] erzwingen.  
+Wählen Sie beim Aufzeichnen einer Seite die Option Garbage **sammeln** \( Garbage Icon sammeln \) aus, ![ um die Garbage Collection zu ](../media/collect-garbage-icon.msft.png) erzwingen.  
 
 :::image type="complex" source="../media/evaluate-performance-performance-collect-garbage-button.msft.png" alt-text="Sammeln von Garbage" lightbox="../media/evaluate-performance-performance-collect-garbage-button.msft.png":::
    Sammeln von Garbage  
@@ -89,7 +89,7 @@ Wählen Sie beim Aufzeichnen einer Seite die Option Garbage **sammeln** \( Garba
 
 ### <a name="show-recording-settings"></a>Anzeigen von Aufzeichnungseinstellungen  
 
-Wählen **Sie Aufnahmeeinstellungen** \( Aufnahmeeinstellungen \) aus, um weitere Einstellungen im Zusammenhang mit der Erfassung von Leistungsaufzeichnungen durch ![ ][ImageCaptureSettingsIcon] DevTools verfügbar zu machen.  
+Wählen **Sie Aufnahmeeinstellungen** \( Aufnahmeeinstellungen \) aus, um weitere Einstellungen im Zusammenhang mit der Erfassung von Leistungsaufzeichnungen durch ![ ](../media/capture-settings-icon.msft.png) DevTools verfügbar zu machen.  
 
 :::image type="complex" source="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png" alt-text="Abschnitt "Aufnahmeeinstellungen"" lightbox="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png":::
    Abschnitt **"Aufnahmeeinstellungen"**  
@@ -161,7 +161,7 @@ Um zu erfahren, wie Sie mit den Farbinformationen interagieren, navigieren Sie z
 
 ## <a name="clear-the-previous-recording"></a>Löschen der vorherigen Aufzeichnung  
 
-Nachdem Sie eine Aufzeichnung gemacht haben, **wählen** Sie Aufzeichnung löschen \( Aufzeichnungssymbol löschen \) aus, um diese Aufzeichnung im ![ ][ImageClearRecordingIcon] Leistungsbereich **zu** löschen.  
+Nachdem Sie eine Aufzeichnung gemacht haben, **wählen** Sie Aufzeichnung löschen \( Aufzeichnungssymbol löschen \) aus, um diese Aufzeichnung im ![ ](../media/clear-recording-icon.msft.png) Leistungsbereich **zu** löschen.  
 
 :::image type="complex" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-clear-button.msft.png" alt-text="Löschen der Aufzeichnung" lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-clear-button.msft.png":::
    **Löschen der Aufzeichnung**  
@@ -201,13 +201,13 @@ Wählen `Control` + `F` Sie \(Windows, Linux\) oder `Command` + `F` \(macOS\) **
 
 So navigieren Sie zu Aktivitäten, die mit Ihrer Abfrage übereinstimmen:  
 
-*   Verwenden Sie **die Schaltflächen** Previous \( ![ Previous ][ImagePreviousIcon] \) und **Next** \( ![ Next ][ImageNextIcon] \).  
+*   Verwenden Sie **die Schaltflächen** Previous \( ![ Previous ](../media/previous-icon.msft.png) \) und **Next** \( ![ Next ](../media/next-icon.msft.png) \).  
 *   Wählen `Shift` + `Enter` Sie diese Option aus, um den `Enter` vorherigen oder den nächsten auszuwählen.  
 
 So ändern Sie Abfrageeinstellungen:  
 
-*   Wählen **Sie Zwischen- und** ![ Kleinschreibung \( Zwischenfall ][ImageSearchCaseIcon] und \) aus, um die Abfragefalle vertraulich zu machen.  
-*   Wählen **Sie Regex** \( ![ Regex ][ImageSearchRegexIcon] \) aus, um einen regulären Ausdruck in Ihrer Abfrage zu verwenden.  
+*   Wählen **Sie Zwischen- und** ![ Kleinschreibung \( Zwischenfall ](../media/search-case-icon.msft.png) und \) aus, um die Abfragefalle vertraulich zu machen.  
+*   Wählen **Sie Regex** \( ![ Regex ](../media/search-regex-icon.msft.png) \) aus, um einen regulären Ausdruck in Ihrer Abfrage zu verwenden.  
 
 Wählen Sie Abbrechen aus, um das Suchfeld **auszublenden.**  
 
@@ -278,7 +278,7 @@ Verwenden Sie das **Textfeld Filter,** um Ereignisse nach Aktivitätsnamen zu fi
 
 Standardmäßig ist **das Menü Gruppierung** auf Keine Gruppierung **festgelegt.**  Verwenden Sie **das Menü** Gruppierung, um die Aktivitätstabelle nach verschiedenen Kriterien zu sortieren.  
 
-Wählen **Sie Schwerer Stapel** anzeigen \( Schwerer Stapel anzeigen \) aus, um eine weitere Tabelle rechts neben der ![ ][ImageShowHeaviestStackIcon] **Aktivitätstabelle zu** zeigen.  Wählen Sie eine Aktivität aus, um die **Tabelle "Schwerster Stapel" auffüllen** zu können.  In **der Tabelle "Schwerster Stapel"** wird angezeigt, welche Kinder der ausgewählten Aktivität am längsten ausgeführt wurden.  
+Wählen **Sie Schwerer Stapel** anzeigen \( Schwerer Stapel anzeigen \) aus, um eine weitere Tabelle rechts neben der ![ ](../media/show-heaviest-stack-icon.msft.png) **Aktivitätstabelle zu** zeigen.  Wählen Sie eine Aktivität aus, um die **Tabelle "Schwerster Stapel" auffüllen** zu können.  In **der Tabelle "Schwerster Stapel"** wird angezeigt, welche Kinder der ausgewählten Aktivität am längsten ausgeführt wurden.  
 
 #### <a name="the-bottom-up-panel"></a>The Bottom-Up panel  
 
@@ -489,9 +489,9 @@ Zeigen Sie auf eine Ebene, um sie im Diagramm zu markieren.
 
 So verschieben Sie das Diagramm:  
 
-*   Wählen **Sie Schwenkmodus** \( ![ Schwenkmodus ][ImagePanModeIcon] \), um sich entlang der X- und Y-Achsen zu bewegen.  
-*   Wählen **Sie Drehmodus** \( ![ Drehmodus ][ImageRotateModeIcon] \) aus, um sich entlang der Z-Achse zu drehen.  
-*   Wählen **Sie Transform zurücksetzen** \( Transform zurücksetzen ![ ][ImageResetTransformIcon] \), um das Diagramm an die ursprüngliche Position zurückzusetzen.  
+*   Wählen **Sie Schwenkmodus** \( ![ Schwenkmodus ](../media/pan-mode-icon.msft.png) \), um sich entlang der X- und Y-Achsen zu bewegen.  
+*   Wählen **Sie Drehmodus** \( ![ Drehmodus ](../media/rotate-mode-icon.msft.png) \) aus, um sich entlang der Z-Achse zu drehen.  
+*   Wählen **Sie Transform zurücksetzen** \( Transform zurücksetzen ![ ](../media/reset-transform-icon.msft.png) \), um das Diagramm an die ursprüngliche Position zurückzusetzen.  
     
 ### <a name="view-paint-profiler"></a>Anzeigen von Farbprofiler  
 
@@ -573,22 +573,6 @@ Führen Sie die folgenden Aktionen aus, um Probleme mit der Bildlaufleistung zu 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageCaptureSettingsIcon]: ../media/capture-settings-icon.msft.png  
-[ImageClearRecordingIcon]: ../media/clear-recording-icon.msft.png  
-[ImageCollectGarbageIcon]: ../media/collect-garbage-icon.msft.png  
-[ImageNextIcon]: ../media/next-icon.msft.png  
-[ImagePanModeIcon]: ../media/pan-mode-icon.msft.png  
-[ImagePreviousIcon]: ../media/previous-icon.msft.png  
-[ImageRecordIcon]: ../media/record-icon.msft.png
-[ImageRefreshPageIcon]: ../media/refresh-page-icon.msft.png  
-[ImageResetTransformIcon]: ../media/reset-transform-icon.msft.png  
-[ImageRotateModeIcon]: ../media/rotate-mode-icon.msft.png  
-[ImageSearchCaseIcon]: ../media/search-case-icon.msft.png  
-[ImageSearchRegexIcon]: ../media/search-regex-icon.msft.png  
-[ImageShowHeaviestStackIcon]: ../media/show-heaviest-stack-icon.msft.png  
 
 <!-- links -->  
 

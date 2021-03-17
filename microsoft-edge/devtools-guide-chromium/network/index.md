@@ -3,16 +3,16 @@ description: Ein Lernprogramm zu den beliebtesten netzwerkbezogenen Features in 
 title: Überprüfen der Netzwerkaktivität in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 16b60716c91d2f4ce778f1fac37afc0e73e30ab6
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: a4a552fa9a45267a6ffa4a4e83e7ebc4e1817162
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398658"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439696"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -151,7 +151,7 @@ Die Netzwerkverbindung des Computers, den Sie zum Erstellen von Standorten verwe
        Wählen Sie Langsame 3G  
     :::image-end:::  
     
-1.  Lang drücken **Sie Reload** \( Reload ![ ][ImageRefreshIcon] \) und wählen Sie dann Leeren Cache und **Hard Reload aus.**  
+1.  Lang drücken **Sie Reload** \( Reload ![ ](../media/refresh-icon.msft.png) \) und wählen Sie dann Leeren Cache und **Hard Reload aus.**  
     
     :::image type="complex" source="../media/network-glitch-empty-cache-and-hard-reset.msft.png" alt-text="Leerer Cache und Hard Reload" lightbox="../media/network-glitch-empty-cache-and-hard-reset.msft.png":::
        **Leerer Cache und Hard Reload**  
@@ -166,7 +166,7 @@ Die Netzwerkverbindung des Computers, den Sie zum Erstellen von Standorten verwe
 
 Screenshots zeigen, wie eine Webseite im Laufe der Zeit aussieht, während sie geladen wird.  
 
-1.  Wählen Sie \( ![ Netzwerkeinstellungen ][ImageSettingsIcon] \) aus, und aktivieren Sie das Kontrollkästchen Screenshots **erfassen.**
+1.  Wählen Sie \( ![ Netzwerkeinstellungen ](../media/settings-icon.msft.png) \) aus, und aktivieren Sie das Kontrollkästchen Screenshots **erfassen.**
 1.  Aktualisieren Sie die Seite erneut mithilfe des **Workflows Leerer Cache und Hard Reload.**  Navigieren Sie [zu Simulieren einer langsameren Verbindung,](#simulate-a-slower-network-connection) wenn Sie eine Erinnerung dazu benötigen.  
     Der Bildschirmfotobereich enthält Miniaturansichten, wie die Seite während des Ladevorgangs an verschiedenen Punkten betrachtet wurde.  
     
@@ -180,7 +180,7 @@ Screenshots zeigen, wie eine Webseite im Laufe der Zeit aussieht, während sie g
        Die Netzwerkaktivität, die während des ersten Screenshots passierte  
     :::image-end:::  
     
-1.  Wählen Sie \( Netzwerkeinstellungen \) erneut aus, und deaktivieren Sie das Kontrollkästchen Screenshots ![ ][ImageSettingsIcon] erfassen, um den Bildschirmfotobereich zu schließen. ****
+1.  Wählen Sie \( Netzwerkeinstellungen \) erneut aus, und deaktivieren Sie das Kontrollkästchen Screenshots ![ ](../media/settings-icon.msft.png) erfassen, um den Bildschirmfotobereich zu schließen. ****
 1.  Aktualisieren Sie die Seite erneut.  
     
 ## <a name="inspect-the-details-of-the-resource"></a>Überprüfen der Details der Ressource  
@@ -208,7 +208,7 @@ Wählen Sie eine Ressource aus, um weitere Informationen dazu zu erhalten.  Prob
     :::image-end:::  
     
     > [!TIP]
-    > Wenn eine Datei vermint wird, wählen Sie die Schaltfläche **Format** \( Format \) am unteren Rand des Antwortbereichs aus, um den Inhalt der Datei zur Lesbarkeit neu zu ![ ][ImageFormatIcon] **** formatieren.  
+    > Wenn eine Datei vermint wird, wählen Sie die Schaltfläche **Format** \( Format \) am unteren Rand des Antwortbereichs aus, um den Inhalt der Datei zur Lesbarkeit neu zu ![ ](../media/format-icon.msft.png) **** formatieren.  
     
 1.  Wählen Sie den **Zeitsteuerungsbereich** aus.  Eine Aufschlüsselung der Netzwerkaktivität für die Ressource wird angezeigt.  
     
@@ -216,7 +216,7 @@ Wählen Sie eine Ressource aus, um weitere Informationen dazu zu erhalten.  Prob
        Der **Zeitsteuerungsbereich**  
     :::image-end:::  
     
-1.  Wählen **Sie Schließen** \( Schließen ![ ][ImageCloseIcon] \) aus, um das Netzwerkprotokoll erneut anzeigen zu können.  
+1.  Wählen **Sie Schließen** \( Schließen ![ ](../media/close-icon.msft.png) \) aus, um das Netzwerkprotokoll erneut anzeigen zu können.  
     
     :::image type="complex" source="../media/network-glitch-network-resources-close-tabs.msft.png" alt-text="Die Schaltfläche Schließen" lightbox="../media/network-glitch-network-resources-close-tabs.msft.png":::
        Die **Schaltfläche** Schließen  
@@ -230,7 +230,7 @@ Angenommen, Sie möchten überprüfen, ob Ihre Ressourcen angemessene **Cacheric
 
 <!--TODO: add cache policies section when available  -->
 
-1.  Wählen **Sie Suchen** \( Suche ![ ][ImageSearchIcon] \).  Der Suchbereich wird links vom Netzwerkprotokoll geöffnet.  
+1.  Wählen **Sie Suchen** \( Suche ![ ](../media/search-icon.msft.png) \).  Der Suchbereich wird links vom Netzwerkprotokoll geöffnet.  
     
     :::image type="complex" source="../media/network-glitch-network-search-empty.msft.png" alt-text="Der Suchbereich" lightbox="../media/network-glitch-network-search-empty.msft.png":::
        Der **Suchbereich**  
@@ -264,7 +264,7 @@ DevTools bietet zahlreiche Workflows zum Filtern von Ressourcen, die für den je
 
 Die **Symbolleiste** Filter sollte standardmäßig aktiviert sein.  Wenn nicht,:  
 
-1.  Wählen **Sie Filter** \( Filter ![ ][ImageFilterIcon] \) aus, um es zu zeigen.  
+1.  Wählen **Sie Filter** \( Filter ![ ](../media/filter-icon.msft.png) \) aus, um es zu zeigen.  
     
 ### <a name="filter-by-string-regular-expression-or-property"></a>Filtern nach Zeichenfolge, regulärem Ausdruck oder Eigenschaft  
 
@@ -334,7 +334,7 @@ Wie sieht eine Seite aus und verhält sich, wenn einige der Seitenressourcen nic
        **Anzeigen der Anforderungsblockierung**  
     :::image-end:::  
     
-1.  Wählen **Sie Muster hinzufügen** \( Muster hinzufügen ![ ][ImageAddIcon] \).  
+1.  Wählen **Sie Muster hinzufügen** \( Muster hinzufügen ![ ](../media/add-icon.msft.png) \).  
 1.  Geben Sie `main.css` ein.  
     
     :::image type="complex" source="../media/network-glitch-network-cli-block-add-pattern.msft.png" alt-text="Blockieren von main.css" lightbox="../media/network-glitch-network-cli-block-add-pattern.msft.png":::
@@ -362,17 +362,6 @@ Navigieren Sie zum [Netzwerkverweis,][DevtoolsNetworkReference] um weitere DevTo
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageAddIcon]: ../media/add-icon.msft.png  
-[ImageCloseIcon]: ../media/close-icon.msft.png  
-[ImageFilterIcon]: ../media/filter-icon.msft.png  
-[ImageFormatIcon]: ../media/format-icon.msft.png  
-[ImageRefreshIcon]: ../media/refresh-icon.msft.png  
-[ImageScreenshotsIcon]: ../media/screenshots-icon.msft.png  
-[ImageSearchIcon]: ../media/search-icon.msft.png  
-[ImageSettingsIcon]: ../media/settings-icon.msft.png
 
 <!-- links -->  
 

@@ -3,16 +3,16 @@ description: Anzeigen von Knoten, Suchen nach Knoten, Bearbeiten von Knoten, Ref
 title: Erste Schritte mit dem Anzeigen und Ändern des DOM
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: bb2b733cfa3597c47f0a20de00e9c8b506e7c41c
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: e4c08fb2fd5f360f037502c04edabaabb873ba16
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398329"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439240"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -61,7 +61,7 @@ Wenn Sie an einem bestimmten DOM-Knoten interessiert sind, ist **Inspect** eine 
            Hervorheben des `Michelangelo` Knotens  
         :::image-end:::  
         
-        1.  Wählen Sie in der oberen linken Ecke von DevTools das Symbol **Inspect** ![ \( Inspect ][ImageInspectIcon] \) aus.  
+        1.  Wählen Sie in der oberen linken Ecke von DevTools das Symbol **Inspect** ![ \( Inspect ](../media/inspect-icon.msft.png) \) aus.  
             
             :::image type="complex" source="../media/dom-elements-highlighted-select-element-page-inspect.msft.png" alt-text="Das Symbol "Überprüfen"" lightbox="../media/dom-elements-highlighted-select-element-page-inspect.msft.png":::
                Das **Symbol "Überprüfen"**  
@@ -285,14 +285,14 @@ Verwenden Sie Haltepunkte für Attributänderung, wenn Sie das JavaScript anhalt
            **Unterbrechung von Attributänderungen**  
         :::image-end:::  
         
-    1.  Im nächsten Schritt werden Sie angewiesen, eine Schaltfläche zu wählen, mit der der Code der Seite angehalten wird.  Nachdem die Seite angehalten wurde, können Sie keinen Bildlauf mehr auf der Seite durchführen.  Sie müssen Skript **fortsetzen** \( Skript fortsetzen \) auswählen, damit die Seite wieder ![ ][ImageResumeScriptIcon] scrollbar ist.
+    1.  Im nächsten Schritt werden Sie angewiesen, eine Schaltfläche zu wählen, mit der der Code der Seite angehalten wird.  Nachdem die Seite angehalten wurde, können Sie keinen Bildlauf mehr auf der Seite durchführen.  Sie müssen Skript **fortsetzen** \( Skript fortsetzen \) auswählen, damit die Seite wieder ![ ](../media/resume-script-icon.msft.png) scrollbar ist.
         
         :::image type="complex" source="../media/dom-break-attribute-modifications-sources-paused-on.msft.png" alt-text="Where to resume script running" lightbox="../media/dom-break-attribute-modifications-sources-paused-on.msft.png":::
            Where to resume script running  
         :::image-end:::  
         
     1.  Wählen Sie **oben die Schaltfläche Hintergrund** festlegen aus.  Dadurch wird das `style` Attribut des Knotens auf . `background-color:thistle`  DevTools hält die Seite an und hebt den Code hervor, der dazu führte, dass das Attribut geändert wurde.  
-    1.  Wählen **Sie Skript fortsetzen** \( Skript fortsetzen ![ ][ImageResumeScriptIcon] \), wie bereits erwähnt.  
+    1.  Wählen **Sie Skript fortsetzen** \( Skript fortsetzen ![ ](../media/resume-script-icon.msft.png) \), wie bereits erwähnt.  
     
 ### <a name="break-on-node-removal"></a>Unterbrechung beim Entfernen von Knoten  
 
@@ -302,7 +302,7 @@ Wenn Sie anhalten möchten, wenn ein bestimmter Knoten entfernt wird, verwenden 
 1.  Wählen **Sie unter Unterbrechung beim Entfernen**von Knoten mit der rechten Option **Neuromancer aus,** und wählen Sie **Inspect aus.**  
     1.  Zeigen Sie in der DOM-Struktur auf , öffnen Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste\), und wählen Sie Beim Knotenentfernung `<li id="target">Neuromancer</li>` ****  >  **pausenlos aus.**  Navigieren Sie [zu Anhang: Fehlende Optionen,](#appendix-missing-options) wenn die Option nicht angezeigt wird.  
     1.  Wählen Sie oben **die Schaltfläche** Löschen aus.  DevTools hält die Seite an und hebt den Code hervor, der dazu führte, dass der Knoten entfernt wurde.  
-    1.  Wählen **Sie Skript fortsetzen** \( Skript fortsetzen ![ ][ImageResumeScriptIcon] \).  
+    1.  Wählen **Sie Skript fortsetzen** \( Skript fortsetzen ![ ](../media/resume-script-icon.msft.png) \).  
     
 ### <a name="break-on-subtree-modifications"></a>Unterbrechung bei Änderungen der Unterstruktur  
 
@@ -312,7 +312,7 @@ Nachdem Sie einen Unterstrukturänderungs-Haltepunkt auf einem Knoten eingefügt
 1.  Wählen **Sie unter Break on Subtree Modifications**mit der rechten Option A Fire Upon The **Deep** aus, und wählen Sie **Inspect aus.**  
     1.  Zeigen Sie in der DOM-Struktur auf , der den obigen Knoten ist, öffnen Sie das Kontextmenü \(mit der rechten Maustaste auf\), und wählen Sie Bei Unterstrukturänderungen `<ul id="target">` `<li>A Fire Upon the Deep</li>` ****  >  **pausen aus.**  Wenn die Option nicht angezeigt wird, navigieren Sie zu [Anhang: Fehlende Optionen](#appendix-missing-options).  
     1.  Wählen **Sie Untergeordnetes Hinzufügen aus.**  Der Code wird angehalten, da `<li>` der Liste ein Knoten hinzugefügt wurde.  
-    1.  Wählen **Sie Skript fortsetzen** \( Skript fortsetzen ![ ][ImageResumeScriptIcon] \).  
+    1.  Wählen **Sie Skript fortsetzen** \( Skript fortsetzen ![ ](../media/resume-script-icon.msft.png) \).  
     
 ## <a name="next-steps"></a>Nächste Schritte  
 
@@ -416,11 +416,6 @@ In vielen Anweisungen in diesem Lernprogramm werden Sie angewiesen, den Mauszeig
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageInspectIcon]: ../media/inspect-icon.msft.png  
-[ImageResumeScriptIcon]: ../media/resume-script-icon.msft.png  
 
 <!-- links -->  
 

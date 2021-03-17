@@ -1,18 +1,18 @@
 ---
 description: Remotedebuggern von Liveinhalten auf einem Android-Gerät von einem Windows- oder macOS-Computer aus.
-title: Erste Schritte mit remote debuggen von Android-Geräten
+title: Erste Schritte mit Remotedebugging von Android-Geräten
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 61fad793ca03dbef68a5f769dbfd25e780fd9930
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 2beab5bf6d4b58dc93d883f5114e168213053e84
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398259"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439567"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,7 +28,7 @@ ms.locfileid: "11398259"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# <a name="get-started-with-remote-debugging-android-devices"></a>Erste Schritte mit remote debuggen von Android-Geräten  
+# <a name="get-started-with-remote-debugging-android-devices"></a>Erste Schritte mit Remotedebugging von Android-Geräten  
 
 Remotedebuggern von Liveinhalten auf einem Android-Gerät von Ihrem Windows- oder macOS-Computer.  Auf der folgenden Lernprogrammseite erfahren Sie, wie Sie die folgenden Aktionen ausführen.  
 
@@ -126,14 +126,14 @@ Wählen **Sie Fokusregisterkarte**aus, **laden**oder **schließen** Sie neben de
 
 Navigieren Sie zum **Elementtool** Ihrer DevTools-Instanz, und zeigen Sie auf ein Element, um es im Viewport Ihres Android-Geräts zu markieren.  
 
-Sie können auch ein Element auf dem Bildschirm Ihres Android-Geräts auswählen, um es im Tool **Elemente auszuwählen.**  Wählen **Sie Element** auswählen \( Element auswählen \) in Ihrer DevTools-Instanz aus, und wählen Sie dann das Element auf dem ![ ][ImageSelectElementIcon] Android-Gerätebildschirm aus.  
+Sie können auch ein Element auf dem Bildschirm Ihres Android-Geräts auswählen, um es im Tool **Elemente auszuwählen.**  Wählen **Sie Element** auswählen \( Element auswählen \) in Ihrer DevTools-Instanz aus, und wählen Sie dann das Element auf dem ![ ](../media/select-element-icon.msft.png) Android-Gerätebildschirm aus.  
 
 > [!NOTE]
 > **Select Element** ist nach der ersten Auswahl deaktiviert, daher müssen Sie es jedes Mal erneut aktivieren, wenn Sie das Feature verwenden möchten.  
 
 ### <a name="screencast-your-android-screen-to-your-development-machine"></a>Screencast your Android screen to your development machine  
 
-Wählen **Sie Screencast \( Screencast** \) umschalten aus, um den Inhalt Ihres Android-Geräts in Ihrer ![ ][ImageToggleScreencastIcon] DevTools-Instanz anzuzeigen.  
+Wählen **Sie Screencast \( Screencast** \) umschalten aus, um den Inhalt Ihres Android-Geräts in Ihrer ![ ](../media/toggle-screencast-icon.msft.png) DevTools-Instanz anzuzeigen.  
 
 Sie können auf folgende Weise mit dem Screencast interagieren.  
 
@@ -152,11 +152,6 @@ Sie können auf folgende Weise mit dem Screencast interagieren.
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageSelectElementIcon]: /microsoft-edge/devtools-guide-chromium/media/select-element-icon.msft.png  
-[ImageToggleScreencastIcon]: /microsoft-edge/devtools-guide-chromium/media/toggle-screencast-icon.msft.png  
 
 <!-- links -->  
 

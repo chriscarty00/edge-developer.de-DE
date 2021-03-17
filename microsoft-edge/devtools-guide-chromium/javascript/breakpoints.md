@@ -3,16 +3,16 @@ description: Erfahren Sie mehr über alle Möglichkeiten, wie Sie Ihren Code in 
 title: So halten Sie Ihren Code mit Haltepunkten in Microsoft Edge DevTools an
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 84077503d6c786244fc2ca4d54c349ae9f6d20d8
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 3d50b7b105aa9a9018ba61e44147f46f3d340079
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398595"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439514"
 ---
 <!-- Copyright Kayce Basques
 
@@ -36,7 +36,7 @@ Verwenden Sie Haltepunkte, um Ihren JavaScript-Code anzuhalten.  In diesem Handb
 
 Der bekannteste Haltepunkttyp ist die Codezeile.  Aber codebasierte Haltepunkte können ineffizient festgelegt werden, insbesondere wenn Sie nicht genau wissen, wo sie aussehen sollen, oder wenn Sie mit einer großen Codebasis arbeiten.  Sie können sich beim Debuggen Zeit sparen, indem Sie wissen, wie und wann die anderen Arten von Haltepunkten verwendet werden.  
 
-| Haltepunkttyp | Verwenden Sie dies, wenn Sie anhalten möchten...  |  
+| Haltepunkttyp | Verwenden Sie dies, wenn Sie anhalten möchten... |  
 |:--- |:--- |  
 | [Codezeile](#line-of-code-breakpoints) | Für einen genauen Codebereich.  |  
 | [Bedingte Codezeile](#conditional-line-of-code-breakpoints) | Für einen genauen Codebereich, jedoch nur, wenn eine andere Bedingung true ist.  |  
@@ -165,7 +165,7 @@ Verwenden Sie Ereignislistener-Haltepunkte, wenn Sie den Ereignislistenercode an
 Verwenden Sie Ausnahme-Haltepunkte, wenn Sie die Codezeile anhalten möchten, die eine Ausnahme beim Abfangen oder Nichtfangen auslöst.  
 
 1.  Wählen Sie das **Tool Quellen** aus.  
-1.  Wählen **Sie Pause für Ausnahmen** \( Pause für Ausnahmen ![ ][ImagePauseOnExceptionsIcon] \).  Das Symbol wird blau, wenn es aktiviert ist.  
+1.  Wählen **Sie Pause für Ausnahmen** \( Pause für Ausnahmen ![ ](../media/pause-on-exceptions-icon.msft.png) \).  Das Symbol wird blau, wenn es aktiviert ist.  
     
     :::image type="complex" source="../media/javascript-sources-page-js-pause-on-exceptions.msft.png" alt-text="Die Schaltfläche Für Ausnahmen anhalten" lightbox="../media/javascript-sources-page-js-pause-on-exceptions.msft.png":::
        Die **Schaltfläche Für Ausnahmen anhalten**  
@@ -217,10 +217,6 @@ Wenn Sie die Methode über die DevTools-Konsole ausführen, ist es schwierig sic
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImagePauseOnExceptionsIcon]: ../media/pause-on-exceptions-icon.msft.png  
 
 <!-- links -->  
 

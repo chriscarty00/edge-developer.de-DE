@@ -3,16 +3,16 @@ description: Eine umfassende Referenz zu allen Features und Verhaltensweisen im 
 title: Konsolenreferenz
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 1aed46486240dea19420e8b7cb52b6758f1f528b
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: d6fed1681e64f8f57c2e577017d623039a7b4152
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399162"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439367"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -74,7 +74,7 @@ Wenn Sie das **Konsolentool** über [das][DevToolsCommandMenu]Befehlsmenü öffn
 
 ### <a name="open-console-settings"></a>Öffnen von Konsoleneinstellungen  
 
-Wählen **Sie Konsoleneinstellungen** \( ![ Symbol für Konsoleneinstellungen ][ImageSettingsButtonIcon] \).  
+Wählen **Sie Konsoleneinstellungen** \( ![ Symbol für Konsoleneinstellungen ](../media/settings-button-icon.msft.png) \).  
 
 :::image type="complex" source="../media/console-settings-group-similar-empty.msft.png" alt-text="Konsoleneinstellungen" lightbox="../media/console-settings-group-similar-empty.msft.png":::
    **Konsoleneinstellungen**  
@@ -92,7 +92,7 @@ In den folgenden Links werden die einzelnen Einstellungen erläutert:
     
 ### <a name="open-the-console-sidebar"></a>Öffnen der Konsolenseite  
 
-Wählen **Sie Konsolenseite anzeigen** \( Konsolenseite anzeigen \) aus, um die Seitenleiste zu ![ ][ImageShowConsoleSidebarIcon] zeigen, die für die Filterung hilfreich ist.  
+Wählen **Sie Konsolenseite anzeigen** \( Konsolenseite anzeigen \) aus, um die Seitenleiste zu ![ ](../media/show-console-sidebar-icon.msft.png) zeigen, die für die Filterung hilfreich ist.  
 
 :::image type="complex" source="../media/console-sidebar-drawer-empty.msft.png" alt-text="Konsolen-Sidebar" lightbox="../media/console-sidebar-drawer-empty.msft.png":::
    **Konsole** Sidebar  
@@ -246,7 +246,7 @@ Angenommen, Sie haben eine Anzeige auf Ihrer Seite eingebettet in `<iframe>` .  
 
 Sie können einen der folgenden Workflows verwenden, um die Konsole zu löschen:  
 
-*   Wählen **Sie Clear Console** \( Clear Console ![ ][ImageClearConsoleIcon] \).  
+*   Wählen **Sie Clear Console** \( Clear Console ![ ](../media/clear-console-button-icon.msft.png) \).  
 *   Zeigen Sie auf eine Nachricht, öffnen Sie das Kontextmenü \(righ-click\), und wählen Sie **Konsole löschen aus.**  
 *   Geben `clear()` Sie in die Konsole **ein,** und wählen Sie `Enter` aus.  
 *   Führen `console.clear()` Sie das JavaScript für Ihre Webseite aus.  
@@ -255,12 +255,6 @@ Sie können einen der folgenden Workflows verwenden, um die Konsole zu löschen:
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageClearConsoleIcon]: ../media/clear-console-button-icon.msft.png  
-[ImageSettingsButtonIcon]: ../media/settings-button-icon.msft.png  
-[ImageShowConsoleSidebarIcon]: ../media/show-console-sidebar-icon.msft.png  
 
 <!-- links -->  
 

@@ -3,16 +3,16 @@ description: Erste Schritte mit CSS
 title: 'DevTools für Anfänger: Erste Schritte mit CSS'
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
-ms.openlocfilehash: 7aa33c339a7d130265660e4a4af6f50dde7e3e90
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 6a7135e144123917535e7c43e6a3cd608ec0c8a7
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398399"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439437"
 ---
 <!-- Copyright Katherine Jackson 
 
@@ -337,7 +337,7 @@ Führen Sie die folgenden Aktionen aus, um vorhandene Deklarationen in DevTools 
 
 Führen Sie die folgenden Aktionen aus, um neue Regelsätze in DevTools hinzuzufügen.  
 
-1.  Wählen **Sie Neue Formatvorlageregel** \( ![ Neue Formatregel ][ImageNewStyleRuleIcon] \) aus, die sich neben **CLS befindet.**  Als Auswahl wird ein leeres `a` Regelset angezeigt.  
+1.  Wählen **Sie Neue Formatvorlageregel** \( ![ Neue Formatregel ](../media/new-style-rule-icon.msft.png) \) aus, die sich neben **CLS befindet.**  Als Auswahl wird ein leeres `a` Regelset angezeigt.  
     
     :::image type="complex" source="../media/beginners-css-rule1.msft.png" alt-text="Hinzufügen einer neuen Regel" lightbox="../media/beginners-css-rule1.msft.png":::
        Hinzufügen einer neuen Regel  
@@ -605,10 +605,6 @@ Herzlichen Glückwunsch, Sie sind fertig.
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!--- image links --->  
-
-[ImageNewStyleRuleIcon]: ../media/new-style-rule-icon.msft.png  
 
 <!--- links  --->  
 

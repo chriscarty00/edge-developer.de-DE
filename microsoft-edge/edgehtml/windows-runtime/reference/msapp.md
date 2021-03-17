@@ -1,27 +1,27 @@
 ---
 title: MSApp-API-Referenz
-description: Stellt Hilfsfunktionen bereit, mit deren Hilfe Sie BLOB-und MSStream-Objekte erstellen können.  MSApp-Objekte und-Member werden für Windows-apps mit JavaScript unterstützt.
+description: Stellt Hilfsfunktionen zur Verfügung, mit denen Sie Blob- und MSStream-Objekte erstellen können.  MSApp-Objekte und -Member werden für Windows-Apps mithilfe von JavaScript unterstützt.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: reference
 ms.prod: microsoft-edge
-keywords: MSapp, PWA, Dateiupload, Blog, MSStream, Windows 10-apps, UWP, Edge
-ms.date: 12/02/2020
+keywords: MSapp, PWA, Dateiupload, Blog, MSStream, Windows 10-Apps, UWP, Edge
+ms.date: 03/16/2021
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 9a3ad670f61bfafa4480c538dd8f28c7013b7d7f
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 0607929971b1dd2956571304230f69f756497e32
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11233870"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439724"
 ---
-# MSApp  
+# <a name="msapp"></a>MSApp  
 
 [!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
-Das MSApp-Objekt und seine Member werden nur für Windows-Apps unterstützt, die JavaScript verwenden \ (einschließlich PWAs Zugriff auf die Windows-API-Funktionen).  Das MSApp-Objekt ist nur im lokalen Kontext eines HTML-Dokuments in einer Windows-app vorhanden, die über das URI-Schema "MS-AppX" geladen wird. Andernfalls ist das Objekt nicht vorhanden (und daher sind keine seiner Methoden und Eigenschaften verfügbar).  
+Das MSApp-Objekt und seine Member werden nur für Windows-Apps unterstützt, die JavaScript \(einschließlich PWAs, die auf Windows-API-Features zugreifen\).  Das #A0 ist nur im lokalen Kontext eines #A1 in einer #A1 vorhanden, die über das ms-appx-URI-Schema geladen wird. Andernfalls ist das Objekt nicht vorhanden (und folglich sind keine seiner Methoden und Eigenschaften verfügbar).  
 
-Sie stellt Hilfsfunktionen bereit, mit deren Hilfe Sie [BLOB](https://developer.mozilla.org/docs/Web/API/Blob) -und [MSStream](https://msdn.microsoft.com/library/hh772328(v=vs.85).aspx) -Objekte erstellen können.  
+Es bietet Hilfsfunktionen, mit denen Sie [Blob-](https://developer.mozilla.org/docs/Web/API/Blob) und [MSStream-Objekte erstellen](https://msdn.microsoft.com/library/hh772328(v=vs.85).aspx) können.  
 
 ```javascript
 var result = MSApp.method;
@@ -32,7 +32,7 @@ var result = MSApp.method;
       [Methoden](#msapp-methods)  
    :::column-end:::
    :::column span="2":::
-      [clearTemporaryWebDataAsync](#cleartemporarywebdataasync), [createBlobFromRandomAccessSream](#createblobfromrandomaccessstream), [createDataPackage](#createdatapackage), [createDataPackageFromSelection](#createdatapackagefromselection), [createFileFromStorageFile](#createfilefromstoragefile), [createStreamFromInputStream](#createstreamfrominputstream), [execAsyncAtPriority](#execasyncatpriority), [execAtPriority](#execatpriority), [getCurrentPriority](#getcurrentpriority), [getHtmlPrintDocumentSource](#gethtmlprintdocumentsource),[getHtmlPrintDocumentSourceAsynce](#gethtmlprintdocumentsourceasync), [getviewl](#getviewid), [isTaskScheduledAtPriorityOrHigher](#istaskscheduledatpriorityorhigher), [pageHandlesAllApplicationActivations](#pagehandlesallapplicationactivations), [suppressSubdownloadCredentialPrompts](#suppresssubdownloadcredentialprompts), [terminateApp](#terminateapp).  
+      [clearTemporaryWebDataAsync](#cleartemporarywebdataasync), [createBlobFromRandomAccessSream](#createblobfromrandomaccessstream), [createDataPackage](#createdatapackage), [createDataPackageFromSelection](#createdatapackagefromselection), [createFileFromStorageFile](#createfilefromstoragefile), [createStreamFromInputStream](#createstreamfrominputstream), [execAsyncAtPriority](#execasyncatpriority), [execAtPriority](#execatpriority), [getCurrentPriority](#getcurrentpriority), [getHtmlPrintDocumentSource](#gethtmlprintdocumentsource),[getHtmlPrintDocumentSourceAsynce](#gethtmlprintdocumentsourceasync), [getViewId](#getviewid), [isTaskScheduledAtPriorityOrHigher](#istaskscheduledatpriorityorhigher), [pageHandlesAllApplicationActivations](#pagehandlesallapplicationactivations), [suppressSubdownloadCredentialPrompts](#suppresssubdownloadcredentialprompts), [terminateApp](#terminateapp).  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -40,7 +40,7 @@ var result = MSApp.method;
       [Konstanten](#msapp-constants)  
    :::column-end:::
    :::column span="2":::
-      [aktuell](#current), [groß](#high), [inaktiv](#idle), [Normal](#normal).  
+      [current](#current), [high](#high), [idle](#idle), [normal](#normal).  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -52,13 +52,13 @@ var result = MSApp.method;
    :::column-end:::
 :::row-end:::  
 
-## MSApp-Methoden  
+## <a name="msapp-methods"></a>MSApp-Methoden  
 
-### clearTemporaryWebDataAsync  
+### <a name="cleartemporarywebdataasync"></a>clearTemporaryWebDataAsync  
 
 :::row:::
    :::column span="":::
-      Löscht Cache-und indexedDB-Daten für die APP oder [WebView](../../hosting/webview/index.md).  
+      Entfernt Cache- und indexierteDB-Daten für die App oder [WebView](../../hosting/webview/index.md).  
    :::column-end:::
    :::column span="":::
       ```javascript
@@ -70,12 +70,12 @@ var result = MSApp.method;
    :::column span="":::
       **Parameter**  
       
-      Diese Methode hat keine Parameter.  
+      Diese Methode verfügt über keine Parameter.  
    :::column-end:::
    :::column span="":::
       **Rückgabewert**  
       
-      Geben Sie Folgendes ein: [IAsyncAction](/uwp/api/windows.foundation.iasyncaction)  
+      Typ: [IAsyncAction](/uwp/api/windows.foundation.iasyncaction)  
       
       Stellt eine asynchrone Aktion dar.  
    :::column-end:::
@@ -104,11 +104,11 @@ var result = MSApp.method;
    :::column-end:::
 :::row-end:::  
 
-### createBlobFromRandomAccessStream  
+### <a name="createblobfromrandomaccessstream"></a>createBlobFromRandomAccessStream  
 
 :::row:::
    :::column span="":::
-      Erstellt ein [BLOB](https://developer.mozilla.org/docs/Web/API/Blob) aus einem [IRandomAccessStream](/uwp/api/Windows.Storage.Streams.IRandomAccessStream) -Objekt.  Diese Methode sollte beim Umgang mit `IRandomAccessStream` Objekten in Apps verwendet werden, um ein W3C-basiertes Objekt aus dem Datenstrom zu erstellen.  Nachdem das BLOB erstellt wurde, kann es mit [FileReader](https://developer.mozilla.org/docs/Web/API/FileReader), [URL-APIs](https://developer.mozilla.org/docs/Web/API/URL)und [XMLHttpRequest](https://developer.mozilla.org/docs/Web/API/XMLHttpRequest)verwendet werden.  
+      Erstellt ein [Blob](https://developer.mozilla.org/docs/Web/API/Blob) aus einem [IRandomAccessStream-Objekt.](/uwp/api/Windows.Storage.Streams.IRandomAccessStream)  Diese Methode sollte beim Umgang mit Objekten in Apps verwendet werden, um ein W3C-basiertes Objekt aus `IRandomAccessStream` dem Datenstrom zu erstellen.  Nachdem das Blob erstellt wurde, kann es mit [den FileReader-,](https://developer.mozilla.org/docs/Web/API/FileReader) [URL-APIs](https://developer.mozilla.org/docs/Web/API/URL)und [XMLHttpRequest verwendet werden.](https://developer.mozilla.org/docs/Web/API/XMLHttpRequest)  
    :::column-end:::
    :::column span="":::
       ```javascript
@@ -120,24 +120,24 @@ var result = MSApp.method;
    :::column span="":::
       **Parameter**  
       
-      `type` in  
+      `type` [in]  
       
       | Typ | Beschreibung |  
       |:---- |:--- |  
-      | Zeichenfolge | Inhaltstyp der Daten.  Diese Zeichenfolge sollte das Format aufweisen, das in dem in Abschnitt 3,7 von RFC 2616 definierten Media-Type-Token angegeben ist.  |  
+      | Zeichenfolge | Inhaltstyp der Daten.  Diese Zeichenfolge sollte das im Medientyptoken in Abschnitt 3.7 von RFC 2616 definierte Format haben.  |  
       
-      `stream` in  
+      `stream` [in]  
       
       | Typ | Beschreibung |  
       |:---- |:--- |  
-      | Any | [IRandomAccessStream](/uwp/api/Windows.Storage.Streams.IRandomAccessStream) , der im BLOB gespeichert werden soll.  |  
+      | Any | [IRandomAccessStream,](/uwp/api/Windows.Storage.Streams.IRandomAccessStream) das im Blob gespeichert werden soll.  |  
    :::column-end:::
    :::column span="":::
       **Rückgabewert**  
       
       | Typ | Beschreibung |  
       |:---- |:--- |  
-      | BLOB | Neues BLOB-Objekt, das den Datenstrom enthält.  |  
+      | Blob | Neues Blob-Objekt, das den Datenstrom enthält.  |  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -146,12 +146,12 @@ var result = MSApp.method;
       
       | Ausnahme | Bedingung |  
       |:---- |:--- |  
-      | TypeMismatchError | Der Knotentyp ist mit dem erwarteten Parametertyp nicht kompatibel.  Bei älteren Versionen als Internet Explorer 10 wird TYPE_MISMATCH_ERR zurückgegeben.  |  
+      | TypeMismatchError | Der Knotentyp ist mit dem erwarteten Parametertyp nicht kompatibel.  Für Versionen vor Internet Explorer 10 wird TYPE_MISMATCH_ERR zurückgegeben.  |  
    :::column-end:::
    :::column span="":::
       **Hinweise**  
       
-      Erstellt ein BLOB aus Windows-Runtime-Typen über den MSApp-Namespace für das Window-Objekt.  Diese Methode erstellt ein BLOB, das im Wesentlichen ein Licht Wrapper über dem [RandomAccessStream](/uwp/api/Windows.Storage.Streams.RandomAccessStreamReference) -Objekt ist, das ihm bereitgestellt wird.  Das BLOB besitzt die Lebensdauer dieses Streams, und der Datenstrom wird geschlossen, wenn das BLOB zerstört wird.  
+      Erstellt einen Blob aus Windows-Runtime-Typen über den MSApp-Namespace im Window-Objekt.  Mit dieser Methode wird ein Blob erstellt, das im Wesentlichen ein leichter Wrapper über das [bereitgestellte RandomAccessStream-Objekt](/uwp/api/Windows.Storage.Streams.RandomAccessStreamReference) ist.  Das Blob besitzt die Lebensdauer dieses Datenstroms, und der Datenstrom wird geschlossen, wenn das Blob zerstört wird.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -171,11 +171,11 @@ var result = MSApp.method;
    :::column-end:::
 :::row-end:::  
 
-### createDataPackage  
+### <a name="createdatapackage"></a>createDataPackage  
 
 :::row:::
    :::column span="":::
-      Wandelt den angegebenen Bereich des Benutzers oder der Anwendung in ein HTML-Fragment um, das freigegeben werden kann.  
+      Konvertiert den angegebenen Bereich des Benutzers oder der Anwendung in ein HTML-Fragment, das freigegeben werden kann.  
    :::column-end:::
    :::column span="":::
       ```javascript
@@ -187,11 +187,11 @@ var result = MSApp.method;
    :::column span="":::
       **Parameter**  
       
-      `object` in  
+      `object` [in]  
       
       | Typ | Beschreibung |  
       |:---- |:--- |  
-      | Any | Dieser Bereich kann entweder aus einem Selection-Objekt, beispielsweise: `window.selection.getRangeAt(0)` oder manuell, erstellt werden.  |  
+      | Any | Dieser Bereich kann entweder aus einem Auswahlobjekt erstellt werden, z. B.: `window.selection.getRangeAt(0)` oder manuell.  |  
    :::column-end:::
    :::column span="":::
       **Rückgabewert**  
@@ -210,9 +210,9 @@ var result = MSApp.method;
    :::column span="":::
       **Hinweise**  
       
-      Diese Methode unterstützt nur den [DOM-Bereich (Document Object Model)](https://developer.mozilla.org/docs/Web/API/Range), nicht [TextRange](/uwp/api/windows.ui.xaml.documents.textrange).  Das zurückgegebene Datenpaket für den angegebenen Bereich enthält HTML-Markup im Zwischenablageformat.  
+      Diese Methode unterstützt nur [Document Object Model (DOM) Range](https://developer.mozilla.org/docs/Web/API/Range), nicht [TextRange](/uwp/api/windows.ui.xaml.documents.textrange).  Das zurückgegebene Datenpaket für den angegebenen Bereich enthält HTML-Markup im Zwischenablageformat.  
       
-      Es gibt keine verfügbaren Eigenschaften für das zurückgegebene Datenpaket.  
+      Für das zurückgegebene Datenpaket sind keine Eigenschaften verfügbar.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -226,11 +226,11 @@ var result = MSApp.method;
    :::column-end:::
 :::row-end:::  
 
-### createDataPackageFromSelection  
+### <a name="createdatapackagefromselection"></a>createDataPackageFromSelection  
 
 :::row:::
    :::column span="":::
-      Wandelt die Auswahl des Benutzers oder der Anwendung in ein HTML-Fragment um, das freigegeben werden kann.  
+      Konvertiert die Auswahl des Benutzers oder der Anwendung in ein HTML-Fragment, das freigegeben werden kann.  
    :::column-end:::
    :::column span="":::
       ```javascript
@@ -242,7 +242,7 @@ var result = MSApp.method;
    :::column span="":::
       **Parameter**  
       
-      Diese Methode hat keine Parameter.  
+      Diese Methode verfügt über keine Parameter.  
    :::column-end:::
    :::column span="":::
       **Rückgabewert**  
@@ -261,9 +261,9 @@ var result = MSApp.method;
    :::column span="":::
       **Hinweise**  
       
-      Das zurückgegebene Datenpaket für die Auswahl enthält HTML-Markup im Zwischenablageformat.  Wenn keine Benutzerauswahl an einer beliebigen Stelle auf der Benutzeroberfläche der Anwendung vorhanden ist, wird der Wert `createDataPackageFromSelection` zurückgegeben `null` .  
+      Das zurückgegebene Datenpaket für die Auswahl enthält HTML-Markup im Zwischenablageformat.  Wenn innerhalb der Benutzeroberfläche der Anwendung keine Benutzerauswahl vorkommt, gibt der `createDataPackageFromSelection` `null` zurück.  
       
-      Es gibt keine verfügbaren Eigenschaften für das zurückgegebene Datenpaket.  
+      Für das zurückgegebene Datenpaket sind keine Eigenschaften verfügbar.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -278,11 +278,11 @@ var result = MSApp.method;
    :::column-end:::
 :::row-end:::  
  
-### createFileFromStorageFile  
+### <a name="createfilefromstoragefile"></a>createFileFromStorageFile  
 
 :::row:::
    :::column span="":::
-      Konvertiert eine [WinRT](/uwp/api/) - [Speicher](/uwp/api/windows.storage.storagefile) Datei in ein Standard-W3C- [Datei](https://developer.mozilla.org/docs/Web/API/File) Objekt.  
+      Konvertiert ein [WinRT](/uwp/api/) [StorageFile-Objekt](/uwp/api/windows.storage.storagefile) in ein standard W3C [File-Objekt.](https://developer.mozilla.org/docs/Web/API/File)  
    :::column-end:::
    :::column span="":::
       ```javascript
@@ -294,7 +294,7 @@ var result = MSApp.method;
    :::column span="":::
       **Parameter**  
       
-      `storageFile` in
+      `storageFile` [in]
       
       | Typ | Beschreibung |  
       |:---- |:--- |  
@@ -303,7 +303,7 @@ var result = MSApp.method;
    :::column span="":::
       **Rückgabewert**
       
-      Keine    
+      Keiner    
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -312,7 +312,7 @@ var result = MSApp.method;
       
       | Ausnahme | Bedingung |  
       |:---- |:--- |  
-      | TypeMismatchError | Der angegebene W3C-Dateiverweis ist ungültig.  Für Versionen, die älter als Internet Explorer 10 sind, `TYPE_MISMATCH_ERR` wird zurückgegeben.  |  
+      | TypeMismatchError | Der angegebene W3C-Dateiverweis ist ungültig.  Für Versionen vor Internet Explorer 10 wird `TYPE_MISMATCH_ERR` zurückgegeben.  |  
    :::column-end:::
    :::column span="":::
       **Hinweise**  
@@ -332,11 +332,11 @@ var result = MSApp.method;
    :::column-end:::
 :::row-end:::  
 
-### createStreamFromInputStream  
+### <a name="createstreamfrominputstream"></a>createStreamFromInputStream  
 
 :::row:::
    :::column span="":::
-      Erstellt eine [MSStream](https://msdn.microsoft.com/library/hh772328) aus einem [InputStream](https://msdn.microsoft.com/library/hh772327).  
+      Erstellt einen [MSStream aus](https://msdn.microsoft.com/library/hh772328) einem [InputStream -Objekt.](https://msdn.microsoft.com/library/hh772327)  
    :::column-end:::
    :::column span="":::
       ```javascript
@@ -348,17 +348,17 @@ var result = MSApp.method;
    :::column span="":::
       **Parameter**  
       
-      `type` in
+      `type` [in]
       
       | Typ | Beschreibung |  
       |:---- |:--- |  
-      | Dom | Inhaltstyp der Daten.  Diese Zeichenfolge sollte das Format aufweisen, das in dem in Abschnitt 3,7 von RFC 2616 definierten Media-Type-Token angegeben ist.  \ ([Siehe MIME-Typen] (wie,,,,,,,, usw https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/MIME_types\) `text/plain` `text/html` `image/jpeg` `image/png` `audio/mpeg` `audio/ogg` `audio/*` `video/mp4` . \).  
+      | DOMString | Inhaltstyp der Daten.  Diese Zeichenfolge sollte das im Medientyptoken in Abschnitt 3.7 von RFC 2616 definierte Format haben.  \([Siehe MIME-Typen,]( https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/MIME_types\) z. B. `text/plain` , , , , , , , , `text/html` und so `image/jpeg` `image/png` `audio/mpeg` `audio/ogg` `audio/*` `video/mp4` weiter\).  
       
-      `inputStream` in
+      `inputStream` [in]
       
       | Typ | Beschreibung |  
       |:---- |:--- |  
-      | Any | Die [IInputStream](/uwp/api/Windows.Storage.Streams.IInputStream) , die in der gespeichert werden soll `MSStream` .  |  
+      | Any | Der [IInputStream,](/uwp/api/Windows.Storage.Streams.IInputStream) der in gespeichert werden `MSStream` soll.  |  
    :::column-end:::
    :::column span="":::
       **Rückgabewert**
@@ -375,14 +375,14 @@ var result = MSApp.method;
    :::column span="":::
       **Hinweise**  
       
-      Diese Methode verwendet einen Inhaltstyp und den `IInputStream` Verweis.  Die Methode überprüft dann, ob es sich bei dem übergebenen Datenstrom Verweis um eine Instanz von Type handelt `IInputStream` , und wenn dies nicht der Fall ist, wird ausgelöst `DOMException TYPE_MISMATCH_ERR` .  Wenn kein Fehler auftritt, wird `createStreamFromInputStream` ein `MSStream` \ (aus seinen Eingaben \) erstellt.  
+      Diese Methode verwendet einen Inhaltstyp und den `IInputStream` Verweis.  Die Methode überprüft dann, ob der übergebene Streamverweis eine Instanz des Typs ist und, falls `IInputStream` nicht, ausgelöst `DOMException TYPE_MISMATCH_ERR` wird.  Wenn kein Fehler auftritt, `createStreamFromInputStream` wird `MSStream` ein \(aus den Eingaben\) erstellt.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="":::
       **Beispiel**  
       
-      Eine `IInputStream` kann verwendet werden, um eine zu erstellen `MSStream` .  Da `MSStreams` es sich um eigenständige Objekte mit einmaliger Verwendung handelt, werden alle von Ihnen erstellten URLs `URL.createObjectURL` beim erstmaligen lösen durch das Image-Element aufgehoben.  Darüber hinaus schlägt die Anforderung einer zweiten URL für dieses Objekt, nachdem der Datenstrom verwendet wurde, fehl.  
+      Ein `IInputStream` kann zum Erstellen eines verwendet `MSStream` werden.  Wie bei Objekten mit einmaler Verwendung werden alle von erstellten URLs beim ersten Auflösen durch das `MSStreams` `URL.createObjectURL` Image-Element widerrufen.  Darüber hinaus werden Anforderungen für eine zweite URL für dieses Objekt nach der Verwendung des Datenstroms fehlschlagen.  
       
       ```javascript
       var inputStream = myInputStream; //get InputStream from socket API, and so on
@@ -395,11 +395,11 @@ var result = MSApp.method;
    :::column-end:::
 :::row-end:::  
 
-### execAsyncAtPriority  
+### <a name="execasyncatpriority"></a>execAsyncAtPriority  
 
 :::row:::
    :::column span="":::
-      Plant einen Rückruf, der zu einem späteren Zeitpunkt entsprechend der angegebenen Priorität ausgeführt werden soll.  
+      Plant einen Rückruf, der zu einem späteren Zeitpunkt gemäß der angegebenen Priorität ausgeführt wird.  
    :::column-end:::
    :::column span="":::
       ```javascript
@@ -411,23 +411,23 @@ var result = MSApp.method;
    :::column span="":::
       **Parameter**  
       
-      `asynchronousCallback` in
+      `asynchronousCallback` [in]
       
       | Typ | Beschreibung |  
       |:---- |:--- |  
-      | Funktion | Die Rückruffunktion, die asynchron ausgeführt werden soll, wird mit der angegebenen Prioritäts Priorität verteilt.  |  
+      | Funktion | Die Rückruffunktion, die asynchron ausgeführt werden soll, wird mit der angegebenen Prioritätspriorität ausgelöst.  |  
       
-      `priority` in
+      `priority` [in]
       
       | Typ | Beschreibung |  
       |:---- |:--- |  
-      | Dom | Der kontextbezogene Prioritätswert, in dem der asynchronousCallback-Rückruf ausgeführt wird.  Siehe [MSApp-Konstanten](#msapp-constants).  |  
+      | DOMString | Der Kontextprioritätswert, mit dem der asynchroneCallback-Rückruf ausgeführt wird.  Weitere Informationen finden Sie unter [MSApp Constants](#msapp-constants).  |  
       
-      `args` in
+      `args` [in]
       
       | Typ | Beschreibung |  
       |:---- |:--- |   
-      | Any | Eine optionale Reihe von Argumenten, die an die synchronousCallback-Rückruffunktion \ (als Parameter 1 usw. \) übergeben werden.  |  
+      | Any | Eine optionale Reihe von Argumenten, die an die synchroneCallback-Rückruffunktion \(als Parameter 1 und so weiter\) übergeben werden.  |  
    :::column-end:::
    :::column span="":::
       **Rückgabewert**  
@@ -444,11 +444,11 @@ var result = MSApp.method;
    :::column span="":::
       **Hinweise**  
       
-      Die bereitgestellte `asynchronousCallback` Rückruffunktion wird später asynchron ausgeführt.  `asynchronousCallback` wird entsprechend der angegebenen Priorität versandt.  Die normale Priorität entspricht der vorhandenen [setimmediate](https://developer.mozilla.org/docs/Web/API/Window/setImmediate) -Methode.  Wenn der Rückruf ausgeführt wird, wird die aktuelle kontextbezogene Priorität für die Dauer der Ausführung des Rückrufs auf den angegebenen Prioritäts Parameterwert gesetzt.  
+      Die `asynchronousCallback` bereitgestellte Rückruffunktion wird später asynchron ausgeführt.  `asynchronousCallback` wird entsprechend der angegebenen Priorität versendet.  Die normale Priorität entspricht der vorhandenen [setImmediate-Methode.](https://developer.mozilla.org/docs/Web/API/Window/setImmediate)  Wenn der Rückruf ausgeführt wird, wird die aktuelle Kontextpriorität für die Dauer der Ausführung des Rückrufs auf den angegebenen Prioritätsparameterwert festgelegt.  
       
-      Der `asynchronousCallback` Rückrufparameter kann eine beliebige Funktion sein.  Wenn Argumente nach dem Parameter bereitgestellt werden `priority` , werden Sie alle an die Rückruffunktion übergeben.  
+      Der `asynchronousCallback` Callbackparameter kann eine beliebige Funktion sein.  Wenn Argumente nach dem Parameter angegeben werden, werden sie `priority` alle an die Rückruffunktion übergeben.  
       
-      Im Gegensatz dazu `execAtPriority` wird jedes von der Rückruffunktion zurückgegebene Objekt `asynchronousCallback` ignoriert \ (und nicht über `execAsyncAtPriority` \) zurückgegeben.  
+      Im Gegensatz zu wird jedes von der Rückruffunktion zurückgegebene Objekt `execAtPriority` `asynchronousCallback` ignoriert \(und nicht über `execAsyncAtPriority` \zurückgegeben).  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -463,11 +463,11 @@ var result = MSApp.method;
    :::column-end:::
 :::row-end:::  
 
-### execAtPriority  
+### <a name="execatpriority"></a>execAtPriority  
 
 :::row:::
    :::column span="":::
-      Führt die angegebene Rückruffunktion unter der angegebenen Kontext Priorität aus.  
+      Führt die angegebene Rückruffunktion mit der angegebenen Kontextpriorität aus.  
    :::column-end:::
    :::column span="":::
       ```javascript
@@ -479,30 +479,30 @@ var result = MSApp.method;
    :::column span="":::
       **Parameter**  
       
-      `synchronousCallback` in  
+      `synchronousCallback` [in]  
       
       | Typ | Beschreibung |  
       |:---- |:--- |  
-      | Funktion | Die Rückruffunktion, die mit der angegebenen Prioritäts Kontext Priorität synchron ausgeführt werden soll.  |  
+      | Funktion | Die Rückruffunktion, die synchron mit der angegebenen Kontextpriorität der Priorität ausgeführt werden soll.  |  
       
-      `priority` in  
-      
-      | Typ | Beschreibung |  
-      |:---- |:--- |  
-      | Dom | Der angegebene Prioritätswert, auf den der aktuelle kontextabhängige Prioritätswert festgelegt wird, wenn die `synchronousCallback` Rückruffunktion ausgeführt wird.  Siehe [MSApp-Konstanten](#msapp-constants).  |  
-      
-      `args` in  
+      `priority` [in]  
       
       | Typ | Beschreibung |  
       |:---- |:--- |  
-      | Any | Eine optionale Reihe von Argumenten, die an die `synchronousCallback` Rückruffunktion \ (als Parameter 1 usw. \) übergeben werden.  
+      | DOMString | Der angegebene Prioritätswert, auf den der aktuelle Kontextprioritätswert festgelegt wird, wenn die `synchronousCallback` Rückruffunktion ausgeführt wird.  Weitere Informationen finden Sie unter [MSApp Constants](#msapp-constants).  |  
+      
+      `args` [in]  
+      
+      | Typ | Beschreibung |  
+      |:---- |:--- |  
+      | Any | Eine optionale Reihe von Argumenten, die an die `synchronousCallback` Rückruffunktion \(als Parameter 1 und so weiter\) übergeben werden.  
    :::column-end:::
    :::column span="":::
       **Rückgabewert**  
       
       | Typ | Beschreibung |  
       |:---- |:--- |  
-      | Any | Gibt den Rückgabewert des `synchronousCallback` Rückrufs zurück \ (sofern zutreffend \).  |  
+      | Any | Gibt den Rückgabewert des `synchronousCallback` Rückrufs \(wie zutreffend\) zurück.  |  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -514,9 +514,9 @@ var result = MSApp.method;
    :::column span="":::
       **Hinweise**  
       
-      Die bereitgestellte `synchronousCallback` Rückrufmethode wird synchron ausgeführt.  Die aktuelle kontextbezogene Priorität wird für die Dauer der bereitgestellten Rückruffunktion in den angegebenen Prioritätswert (angegeben durch das Prioritäts Argument) geändert.  Sobald die Rückruffunktion die Ausführung beendet hat, wird die Priorität vor dem Aufruf an den vorherigen Wert zurückgegeben `execAtPriority` .  Der Rückgabewert von `execAtPriority` ist der Rückgabewert der Rückrufmethode \ (wie angegeben \).  
+      Die `synchronousCallback` bereitgestellte Rückrufmethode wird synchron ausgeführt.  Die aktuelle Kontextpriorität wird für die Dauer der bereitgestellten Rückruffunktion in den angegebenen Prioritätswert (angegeben durch das Prioritätsargument) geändert.  Sobald die Ausführung der Rückruffunktion abgeschlossen ist, wird die Priorität auf den vorherigen Wert vor dem Aufruf `execAtPriority` zurückgegeben.  Der Rückgabewert von `execAtPriority` ist der Rückgabewert der Rückrufmethode \(wie angegeben\).  
       
-      Der `synchronousCallback` Rückrufparameter kann eine beliebige Funktion sein.  Wenn nach dem Priority-Parameter Argumente bereitgestellt werden, werden Sie an die bereitgestellte Rückrufmethode übergeben.  Wenn der Rückrufparameter einen Wert zurückgibt, wird dieser Wert ebenfalls zum Rückgabewert `execAtPriority` .  
+      Der `synchronousCallback` Callbackparameter kann eine beliebige Funktion sein.  Wenn Argumente nach dem Priority-Parameter angegeben werden, werden sie an die bereitgestellte Rückrufmethode übergeben.  Wenn der Rückrufparameter einen Wert zurückgibt, wird dieser Wert auch zum `execAtPriority` Rückgabewert.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -540,11 +540,11 @@ var result = MSApp.method;
    :::column-end:::
 :::row-end:::  
 
-### getCurrentPriority  
+### <a name="getcurrentpriority"></a>getCurrentPriority  
 
 :::row:::
    :::column span="":::
-      Gibt die aktuelle kontextbezogene Priorität zurück.  
+      Gibt die aktuelle Kontextpriorität zurück.  
 
    :::column-end:::
    :::column span="":::
@@ -564,7 +564,7 @@ var result = MSApp.method;
       
       | Typ | Beschreibung |  
       |:---- |:--- |  
-      | Dom | Der Rückgabewert ist eine der Zeichenfolgen `MSApp.HIGH` , `MSApp.NORMAL` oder `MSApp.IDLE` .  |  
+      | DOMString | Der Rückgabewert ist eine der Zeichenfolgen `MSApp.HIGH` , `MSApp.NORMAL` oder `MSApp.IDLE` .  |  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -576,7 +576,7 @@ var result = MSApp.method;
    :::column span="":::
       **Hinweise**  
       
-      Diese Methode gibt die aktuelle kontextbezogene Priorität zurück (siehe [MSApp-Konstanten](#msapp-constants)\), die über und geändert werden kann `execAtPriority` `execAsyncAtPriority` .  
+      Diese Methode gibt die aktuelle Kontextpriorität \(siehe [MSApp-Konstanten](#msapp-constants)\) zurück, die über und geändert werden `execAtPriority` `execAsyncAtPriority` kann.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -594,11 +594,11 @@ var result = MSApp.method;
    :::column-end:::
 :::row-end:::  
 
-### getHtmlPrintDocumentSource  
+### <a name="gethtmlprintdocumentsource"></a>getHtmlPrintDocumentSource  
 
-Synchrone API, die als veraltet markiert wurde.  Informationen zu Windows 10 finden Sie unter `getHtmlPrintDocumentSourceAsync` .  Informationen zu Windows 8-und 8,1-apps finden Sie im MSDN-Eintrag für [getHtmlPrintDocumentSource](https://msdn.microsoft.com/library/hh772325).  
+Synchrone API, die veraltet ist.  Informationen zu Windows 10 finden Sie unter `getHtmlPrintDocumentSourceAsync` .  Informationen Windows 8 und 8.1-Apps finden Sie im MSDN-Eintrag für [getHtmlPrintDocumentSource](https://msdn.microsoft.com/library/hh772325).  
 
-### getHtmlPrintDocumentSourceAsync  
+### <a name="gethtmlprintdocumentsourceasync"></a>getHtmlPrintDocumentSourceAsync  
 
 :::row:::
    :::column span="":::
@@ -614,11 +614,11 @@ Synchrone API, die als veraltet markiert wurde.  Informationen zu Windows 10 fin
    :::column span="":::
       **Parameter**  
       
-      `htmlDoc` in  
+      `htmlDoc` [in]  
       
       | Typ | Beschreibung |  
       |:---- |:--- |  
-      | Dokument | Das HTML-Dokument, das gedruckt werden soll.  Dies kann das Stammdokument, das Dokument in einem IFRAME, ein Dokument Fragment oder ein SVG-Dokument sein.  Beachten Sie, dass htmlDoc ein Dokument und kein Element sein muss.  |  
+      | Dokument | Das zu druckde HTML-Dokument.  Dies kann das Stammdokument, das Dokument in einem iframe, ein Dokumentfragment oder ein SVG-Dokument sein.  Beachten Sie, dass htmlDoc ein Dokument und kein Element sein muss.  |  
    :::column-end:::
    :::column span="":::
       **Rückgabewert**
@@ -719,19 +719,19 @@ Synchrone API, die als veraltet markiert wurde.  Informationen zu Windows 10 fin
    :::column-end:::
 :::row-end:::  
 
-### GetView-Nr.  
+### <a name="getviewid"></a>getViewId  
 
 :::row:::
    :::column span="":::
       Unterstützung für mehrere Fenster.  
       
       > [!NOTE] 
-      > In Win 8.1 JavaScript UWP-apps wurden mehrere Fenster unterstützt, die MSApp-DOM-APIs verwenden, die jetzt depricated sind.  Verwenden Sie für Windows 10 `window.open` `window` und das neue `MSApp.getViewId` .  
+      > In Win8.1 unterstützten JavaScript-UWP-Apps mehrere Fenster mithilfe von MSApp-DOM-APIs, die nun enteignet sind.  Verwenden Sie für Windows 10 `window.open` , und das neue `window` `MSApp.getViewId` .  
       
       | Beschreibung |Windows 10 | Windows8.1 |  
       |:---- |:---- |:--- |  
-      | Neues Fenster erstellen | [Window. Open](https://developer.mozilla.org/docs/Web/API/Window/open) | [MSApp. createNewView](https://msdn.microsoft.com/library/dn254975(v=vs.85).aspx) |  
-      |Neues Fensterobjekt | [Fenster](https://developer.mozilla.org/docs/Web/API/Window) |[MSAppView](https://msdn.microsoft.com/library/dn268315(v=vs.85).aspx) |  
+      | Erstellen eines neuen Fensters | [window.open](https://developer.mozilla.org/docs/Web/API/Window/open) | [MSApp.createNewView](https://msdn.microsoft.com/library/dn254975(v=vs.85).aspx) |  
+      |Neues Window-Objekt | [Fenster](https://developer.mozilla.org/docs/Web/API/Window) |[MSAppView](https://msdn.microsoft.com/library/dn268315(v=vs.85).aspx) |  
    :::column-end:::
    :::column span="":::
       ```javascript
@@ -747,7 +747,7 @@ Synchrone API, die als veraltet markiert wurde.  Informationen zu Windows 10 fin
       
       | Typ | Beschreibung |  
       |:---- |:--- |  
-      | Dom | Ein Objekt, das ein Fenster darstellt, das ein DOM-Dokument enthält.  |  
+      | DOMString | Ein Objekt, das ein Fenster mit einem DOM-Dokument darstellt.  |  
    :::column-end:::
    :::column span="":::
       **Rückgabewert**  
@@ -756,7 +756,7 @@ Synchrone API, die als veraltet markiert wurde.  Informationen zu Windows 10 fin
       
       | Typ | Beschreibung |  
       |:---- |:--- |  
-      | Zahl | Kann mit den verschiedenen [Windows. UI. ViewManagement. ApplicationViewSwitcher-](/uwp/api/windows.ui.viewmanagement.applicationviewswitcher) APIs verwendet werden.  |  
+      | Zahl | Kann mit den verschiedenen [Windows.UI.ViewManagement.ApplicationViewSwitcher-APIs verwendet](/uwp/api/windows.ui.viewmanagement.applicationviewswitcher) werden.  |  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -768,31 +768,31 @@ Synchrone API, die als veraltet markiert wurde.  Informationen zu Windows 10 fin
    :::column span="":::
       **Hinweise**  
       
-      Verwenden Sie [Window. Open](https://developer.mozilla.org/docs/Web/API/Window/open) und [Window](https://developer.mozilla.org/docs/Web/API/Window) zum Erstellen neuer Fenster, aber um dann mit WinRT-APIs zu interagieren, fügen Sie die `MSApp.getViewId` API hinzu.  Sie nimmt ein `window` Objekt als Parameter an und gibt eine `viewId` Zahl zurück, die mit den verschiedenen [Windows. UI. ViewManagement. ApplicationViewSwitcher](/uwp/api/windows.ui.viewmanagement.applicationviewswitcher) -APIs verwendet werden kann.  
+      Verwenden [Sie window.open](https://developer.mozilla.org/docs/Web/API/Window/open) und [window](https://developer.mozilla.org/docs/Web/API/Window) zum Erstellen neuer Fenster, fügen Sie dann jedoch die API hinzu, um mit WinRT-APIs zu `MSApp.getViewId` interagieren.  Es verwendet ein Objekt als Parameter und gibt eine Zahl zurück, die mit den verschiedenen `window` `viewId` [Windows.UI.ViewManagement.ApplicationViewSwitcher-APIs verwendet werden](/uwp/api/windows.ui.viewmanagement.applicationviewswitcher) kann.  
       
       *   Verzögern der Sichtbarkeit  
           
-          Ansichten in WinRT werden normalerweise ausgeblendet, und der endentwickler verwendet so etwas wie `TryShowAsStandaloneAsync` , um die Ansicht anzuzeigen, sobald Sie vollständig vorbereitet ist.  In der Web-Welt wird `window.open` sofort ein Fenster angezeigt, und der Endbenutzer kann beobachten, wie Inhalte geladen und gerendert werden.  Damit Ihre neuen Windows-Ansichten in WinRT und nicht sofort angezeigt werden, haben wir eine Option hinzugefügt `window.open` .  Zum Beispiel:  
+          Ansichten in WinRT beginnen normalerweise ausgeblendet, und der Endentwickler verwendet so etwas wie zum Anzeigen der `TryShowAsStandaloneAsync` Ansicht, sobald sie vollständig vorbereitet ist.  Zeigt in der Webwelt sofort ein Fenster an, und der Endbenutzer kann beobachten, wie Inhalte `window.open` geladen und gerendert werden.  Damit Ihre neuen Fenster wie Ansichten in WinRT agieren und nicht sofort angezeigt werden, haben wir eine Option `window.open` hinzugefügt.  Zum Beispiel:  
           
           ```javascript
           let newWindow = window.open("https://example.com", null, "msHideView=yes");
           ```  
           
-      *   Unterschiede im primären Fenster  
+      *   Primäre Fensterunterschiede  
           
-          Das primäre Fenster, das zunächst vom Betriebssystem geöffnet wird, fungiert anders als das von ihm geöffnete sekundäre Fenster:  
+          Das primäre Fenster, das zunächst vom Betriebssystem geöffnet wird, verhält sich anders als die sekundären Fenster, die geöffnet werden:  
           
           | Beschreibung | Primär | Sekundärer |  
           |:---- |:--- |:--- |  
-          | Window. Open | Zugelassen | Disallowed |  
-          | Fenster. Schließen | APP schließen | Fenster schließen |  
-          | Navigations Einschränkungen | Nur ACUR | Keine Einschränkungen |  
+          | window.open | Zugelassen | Disallowed |  
+          | window.close | Schließen der App | Fenster schließen |  
+          | Navigationseinschränkungen | Nur ACUR | Keine Einschränkungen |  
           
-          Die Einschränkung, dass sekundäre Fenster nicht geöffnet werden können, kann sich in Zukunft je nach [Feedback](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer)ändern.  
+         <!-- The restriction to not allow secondary windows to open could change in the future depending on [feedback](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer).  -->  
       
-      *   Kommunikationseinschränkungen für denselben Ursprung  
+      *   Kommunikationseinschränkungen für den gleichen Ursprung  
           
-          Es gibt ein schwieriges technisches Problem, das die korrekte Unterstützung für synchrone, identische Ursprungs-, Fenster-und Skriptaufrufe verhindert.  Wenn Sie ein Fenster öffnen, das denselben Ursprung hat, kann das Skript in einem Fensterfunktionen direkt im anderen Fenster aufrufen, und einige dieser Aufrufe können nicht ausgeführt werden.  `postMessage` Anrufe funktionieren prima und sind die empfohlene Vorgehensweise, wenn es möglich ist.  Arbeiten zur Verbesserung dieses Problems sind in Bearbeitung.  
+          Es gibt ein schwieriges technisches Problem, das die ordnungsgemäße Unterstützung synchroner, identischer, fensterübergreifender Skriptaufrufe verhindert.  Wenn Sie ein Fenster mit demselben Ursprung öffnen, kann skript in einem Fenster direkt Funktionen im anderen Fenster aufrufen, und einige dieser Aufrufe werden fehlschlagen.  `postMessage` Anrufe funktionieren einfach gut, und es wird empfohlen, dies nach Möglichkeit zu tun.  Es werden Arbeiten zur Verbesserung dieses Problems ausgeführt.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -807,11 +807,11 @@ Synchrone API, die als veraltet markiert wurde.  Informationen zu Windows 10 fin
    :::column-end:::
 :::row-end:::  
     
-### isTaskScheduledAtPriorityOrHigher  
+### <a name="istaskscheduledatpriorityorhigher"></a>isTaskScheduledAtPriorityOrHigher  
 
 :::row:::
    :::column span="":::
-      Gibt einen booleschen Wert zurück, der angibt, ob die Arbeit auf der angegebenen Prioritätsstufe oder höher aussteht.  
+      Gibt einen booleschen Wert zurück, der angibt, ob ausstehende Arbeit auf der angegebenen Prioritätsebene oder höher ist.  
    :::column-end:::
    :::column span="":::
       ```javascript
@@ -823,18 +823,18 @@ Synchrone API, die als veraltet markiert wurde.  Informationen zu Windows 10 fin
    :::column span="":::
       **Parameter**  
       
-      `priority` in
+      `priority` [in]
       
       | Typ | Beschreibung |  
       |:---- |:--- |  
-      | Dom | Ein Prioritätswert \ (siehe [MSApp-Konstanten](#msapp-constants)\), der die Prioritätsstufe und höher angibt, um nach ausstehender in der Warteschlange befindlicher Arbeit zu Fragen.  |  
+      | DOMString | Ein Prioritätswert \(siehe [MSApp-Konstanten](#msapp-constants)\), der die Prioritätsstufe und höher an gibt, um nach ausstehenden Arbeiten in der Warteschlange zu fragen.  |  
    :::column-end:::
    :::column span="":::
       **Rückgabewert**  
       
       | Typ | Beschreibung |  
       |:---- |:--- |  
-      | Boolesch | Gibt zurück `true` , wenn Warteschlangen Arbeit auf der angegebenen Prioritätsstufe oder höher vorhanden ist, `false` andernfalls.  |  
+      | Boolesch | Gibt zurück, wenn Arbeit in der Warteschlange auf der angegebenen Prioritätsebene oder höher `true` liegt, `false` andernfalls.  |  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -846,7 +846,7 @@ Synchrone API, die als veraltet markiert wurde.  Informationen zu Windows 10 fin
    :::column span="":::
       **Hinweise**  
       
-      Die `isTaskScheduledAtPriorityOrHigher` Methode bietet eine Möglichkeit für JavaScript-Code, um festzustellen, ob die Arbeit auf den verschiedenen Prioritätsebenen \ (oder darüber \) aussteht, mit der Absicht, dass der aufrufende JavaScript-Code dann beschließen kann, der Arbeit mit höherer Priorität nachzugeben.  
+      Die -Methode bietet eine Möglichkeit für JavaScript-Code, um zu bestimmen, ob ausstehende Arbeit auf den verschiedenen Prioritätsebenen \(oder höher\) mit der Absicht, dass der aufrufende JavaScript-Code dann entscheiden kann, arbeit mit höherer Priorität zu `isTaskScheduledAtPriorityOrHigher` ergeben.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -878,11 +878,11 @@ Synchrone API, die als veraltet markiert wurde.  Informationen zu Windows 10 fin
    :::column-end:::
 :::row-end:::  
 
-### pageHandlesAllApplicationActivations  
+### <a name="pagehandlesallapplicationactivations"></a>pageHandlesAllApplicationActivations  
 
 :::row:::
    :::column span="":::
-      Wird verwendet, um eine Aktualisierung des Start Pfads (Seiten neu laden) vor jedem Activate-Ereignis zu vermeiden \ (wie klicken auf eine Benachrichtigung oder auf eine angeheftete Kachel).  
+      Wird verwendet, um eine Aktualisierung des Startpfads (Seitenladen) vor jedem Aktivierungsereignis \(z. B. klicken auf eine Benachrichtigung oder eine angeheftet Kachel\) zu vermeiden.  
    :::column-end:::
    :::column span="":::
       ```javascript
@@ -896,7 +896,7 @@ Synchrone API, die als veraltet markiert wurde.  Informationen zu Windows 10 fin
       
       | Typ | Beschreibung |  
       |:---- |:--- |  
-      | Boolesch | Verwenden Sie `MSApp.pageHandlesAllApplicationActivations(true)` diese Option, um die Aktualisierung des startpfads (Seite neu laden) immer zu überspringen und stattdessen direkt zum Auslösen des Activated-Ereignisses zu springen `WebUIApplication` .  Erfordert, dass alle Seiten Aktivierungsereignisse separat behandeln.  Wenn Sie diese Methode definieren `true` , wird beim Klicken auf ein aktiviertes Ereignis \ (wie eine Benachrichtigung \) das erneute Laden nicht ausgelöst, was ein wesentlicher Faktor für einzelne Seiten-Apps ist, die das erneute Laden von Seiten vermeiden möchten.  |  
+      | Boolesch | Verwenden Sie diese Option, um das Aktualisieren des Startpfads (Seitenladen) immer zu überspringen und stattdessen direkt zum Starten `MSApp.pageHandlesAllApplicationActivations(true)` des `WebUIApplication` aktivierten Ereignisses zu springen.  Erfordert, dass alle Seiten Aktivierungsereignisse separat behandeln.  Wenn Sie diese Methode als definieren, löst das Klicken auf ein aktiviertes Ereignis \(wie eine Benachrichtigung\) das Erneute laden nicht aus, was für Apps mit einer einzelnen Seite unerlässlich ist, die Seiten neu laden `true` möchten.  |  
    :::column-end:::
    :::column span="":::
       **Rückgabewert**
@@ -939,11 +939,11 @@ Synchrone API, die als veraltet markiert wurde.  Informationen zu Windows 10 fin
    :::column-end:::
 :::row-end:::  
 
-### suppressSubdownloadCredentialPrompts  
+### <a name="suppresssubdownloadcredentialprompts"></a>suppressSubdownloadCredentialPrompts  
 
 :::row:::
    :::column span="":::
-      Steuert, ob eine APP während des Downloads von Ressourcen mögliche Authentifizierungs Aufforderungen unterdrückt.  
+      Steuert, ob eine App mögliche Authentifizierungsaufforderungen während des Downloads von Ressourcen unterdrückt.  
    :::column-end:::
    :::column span="":::
       ```javascript
@@ -955,11 +955,11 @@ Synchrone API, die als veraltet markiert wurde.  Informationen zu Windows 10 fin
    :::column span="":::
       **Parameter**  
      
-      `suppress` in
+      `suppress` [in]
       
       | Typ | Beschreibung |  
       |:---- |:--- |  
-      | Boolesch | Der Wert true unterdrückt potenzielle Authentifizierungs Aufforderungen.  Der Wert false unterdrückt keine potenziellen Authentifizierungs Aufforderungen des Benutzers.  |  
+      | Boolesch | Der Wert true unterdrückt potenzielle Authentifizierungsaufforderungen.  Der Wert false unterdrückt keine potenziellen Authentifizierungsaufforderungen des Benutzers.  |  
    :::column-end:::
    :::column span="":::
       **Rückgabewert**  
@@ -976,16 +976,16 @@ Synchrone API, die als veraltet markiert wurde.  Informationen zu Windows 10 fin
    :::column span="":::
       **Hinweise**  
       
-      Die `suppressSubdownloadCredentialPrompts` Methode steuert, ob eine APP potenzielle Authentifizierungs Aufforderungen während des Downloads von Ressourcen unterdrückt.  Das Standardverhalten besteht darin, Anmeldeinformationen nicht zu unterdrücken.  
+      Die `suppressSubdownloadCredentialPrompts` Methode steuert, ob eine App potenzielle Authentifizierungsaufforderungen während des Downloads von Ressourcen unterdrückt.  Das Standardverhalten besteht im Nicht unterdrücken von Anmeldeinformationsaufforderungen.  
       
-      `suppressSubdownloadCredentialPrompts` ist für die Verwendung durch Apps vorgesehen, die möglicherweise eine übermäßige Anzahl von Ressourcen laden, die eine Authentifizierung erfordern, wie etwa eine e-Mail-App \ (die einen Newsletter mit einer Reihe von Bildern enthalten kann, in denen jedes Bild eine Authentifizierung erfordert \).  
+      `suppressSubdownloadCredentialPrompts` ist für die Verwendung durch Apps vorgesehen, die eine übermäßig große Anzahl von Ressourcen laden können, die eine Authentifizierung erfordern, z. B. eine E-Mail-App \(die einen Newsletter enthalten kann, der eine Reihe von Bildern enthält, für die für jedes Bild eine Authentifizierung erforderlich ist\).  
       
-      Wenn Sie Anmeldeinformationen unterdrücken, werden Dialogfelder für die Authentifizierung bei Servern beim Zugriff auf Ressourcen, die eine Authentifizierung erfordern, nicht angezeigt, und die Ressource wird nicht heruntergeladen.  Beachten Sie, dass dies `suppressSubdownloadCredentialPrompts` keine Auswirkungen auf andere mögliche Eingabeaufforderungen wie Proxyauthentifizierung oder Client Zertifizierungs Anforderungs Dialogfelder hat und sich auch nicht auf XMLHttpRequest auswirkt.  
+      Beim Unterdrücken von Anmeldeinformationen werden beim Zugriff auf Ressourcen, die eine Authentifizierung erfordern, keine Dialogfelder für die Authentifizierung auf Servern angezeigt, und die Ressource wird nicht heruntergeladen.  Beachten Sie, dass sich dies weder auf andere mögliche Aufforderungen wie Proxyauthentifizierung oder Clientzertifizierungsanforderungsdialogfelder noch auf `suppressSubdownloadCredentialPrompts` XHR auswirken kann.  
       
-      Beachten Sie, dass `suppressSubdownloadCredentialPrompts` alle Inhalte in der Anwendung, einschließlich der Inhalte, die im Element gehostet werden, beeinträchtigt werden `webview` .  
+      Beachten Sie, `suppressSubdownloadCredentialPrompts` dass sich dies auf alle Inhalte in der Anwendung aus wirkt, einschließlich der inhalte, die im Element gehostet `webview` werden.  
       
       > [!IMPORTANT]
-      > Entscheidungen für Anmeldeinformationen werden zwischengespeichert.  Daher wird die Unterdrückung von Anmeldeinformationen für Anmeldeinformationen sofort wirksam, sodass die Eingabeaufforderung für Anmeldeinformationen nach dem unterdrücken möglicherweise ein erneutes Laden des Dokuments benötigt, damit es wirksam wird.  
+      > Entscheidungen zur Eingabeaufforderung von Anmeldeinformationen werden zwischengespeichert.  Daher wird das Unterdrücken von Anmeldeinformationsaufforderungen sofort wirksam, wenn Anmeldeinformationsaufforderungen nach dem Unterdrücken der Eingabeaufforderungen jedoch möglicherweise ein erneutes Laden des Dokuments wirksam werden müssen.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -1003,7 +1003,7 @@ Synchrone API, die als veraltet markiert wurde.  Informationen zu Windows 10 fin
    :::column-end:::
 :::row-end:::  
 
-### terminateApp  
+### <a name="terminateapp"></a>terminateApp  
 
 
 :::row:::
@@ -1020,11 +1020,11 @@ Synchrone API, die als veraltet markiert wurde.  Informationen zu Windows 10 fin
    :::column span="":::
       **Parameter**  
       
-      `error` in
+      `error` [in]
       
       | Typ | Beschreibung |  
       |:---- |:--- |  
-      | Fehler | Ein `Error` Objekt, das Sie verwenden können, um den Fehler zu beschreiben, der die Kündigung ausgelöst hat.  Das `Error` Objekt muss die Eigenschaften Number, Description und Stack enthalten; es wird kein Fehlerbericht generiert, wenn das Objekt diese Eigenschaften nicht enthält.  |  
+      | Fehler | Ein Objekt, mit dem Sie den Fehler `Error` beschreiben können, der die Beendigung ausgelöst hat.  Das Objekt muss die Zahlen-, Beschreibungs- und Stapeleigenschaften enthalten. Ein Fehlerbericht wird nicht generiert, wenn das Objekt diese Eigenschaften `Error` nicht enthält.  |  
    :::column-end:::
    :::column span="":::
       **Rückgabewert**
@@ -1041,14 +1041,14 @@ Synchrone API, die als veraltet markiert wurde.  Informationen zu Windows 10 fin
    :::column span="":::
       **Hinweise**  
       
-      Wenn das gemeldete Problem zu `terminateApp` einem der 5 häufigsten Probleme Ihrer APP wird, wird es auf der Qualitätsseite der App angezeigt.  
+      Wenn das von gemeldete Problem zu einem der 5 obersten Probleme Ihrer App wird, wird es auf der Seite `terminateApp` Qualität der App angezeigt.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="":::
       **Beispiel**  
       
-      In diesem Beispiel `terminateApp` wird aufgerufen, wenn eine Ausnahme auftritt.  Sie verwendet das `Error` Objekt, das beim Abfangen einer Ausnahme bereitgestellt wird.  
+      Dieses Beispiel ruft `terminateApp` auf, wenn eine Ausnahme auftritt.  Es verwendet das `Error` bereitgestellte Objekt, wenn Sie eine Ausnahme abfangen.  
       
       ```javascript
       try {  
@@ -1065,51 +1065,51 @@ Synchrone API, die als veraltet markiert wurde.  Informationen zu Windows 10 fin
    :::column-end:::
 :::row-end:::  
 
-### MSApp-Konstanten  
+### <a name="msapp-constants"></a>MSApp-Konstanten  
 
 :::row:::
    :::column span="":::
-      Zulässige Prioritätswerte, die mit `execAsyncAtPriority` , `execAtPriority` , und verknüpft sind `getCurrentPriority` `isTaskScheduldAtPriorityOrHigher` .  
+      Zulässige Prioritätswerte, die `execAsyncAtPriority` mit , , und verknüpft `execAtPriority` `getCurrentPriority` `isTaskScheduldAtPriorityOrHigher` sind.  
    :::column-end:::
    :::column span="":::
-      #### Aktuell  
+      #### <a name="current"></a>Aktuell  
       
       `current`  
       
       | Typ | Beschreibung |  
       |:---- |:--- |  
-      | Dom | Bei `current` Verwendung mit der entsprechenden Methode \ (siehe auch Abschnitt \) verwendet die Methode die aktuelle kontextbezogene Priorität, wenn der angeforderte Vorgang ausgeführt wird.  |  
+      | DOMString | Wenn die Methode mit der entsprechenden Methode \(Siehe auch Abschnitt\) verwendet wird, verwendet die Methode beim Ausführen des angeforderten Vorgangs die aktuelle `current` Kontextpriorität.  |  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="":::
-      #### Hoch   
+      #### <a name="high"></a>Hoch   
       
       `high`  
       
       | Typ | Beschreibung |  
       |:---- |:--- |  
-      | Dom | Wenn `high` mit der entsprechenden Methode \ (siehe auch Abschnitt \) verwendet wird, verwendet die Methode beim Ausführen des angeforderten Vorgangs eine höhere Priorität als normal, und die Operation wird vor jeder vorhandenen normalen Priorität ausgeführt.  |  
+      | DOMString | Wenn die Methode mit der entsprechenden Methode \(Siehe auch Abschnitt\) verwendet wird, verwendet die Methode beim Ausführen des angeforderten Vorgangs eine höhere Priorität als die normale Priorität und löst den Vorgang vor jeder vorhandenen normalen `high` Prioritätsarbeit aus.  |  
    :::column-end:::
    :::column span="":::
-      #### Leerlauf  
+      #### <a name="idle"></a>Leerlauf  
       
       `idle`  
       
       | Typ | Beschreibung |  
       |:---- |:--- |  
-      | Dom | Wenn `ideal` mit der entsprechenden Methode \ (siehe auch Abschnitt \) verwendet wird, verwendet die Methode beim Ausführen des angeforderten Vorgangs eine niedrigere Priorität als normal, und die Operation wird nach jeder vorhandenen normalen Priorität ausgeführt.  |  
+      | DOMString | Wenn die Methode mit der entsprechenden Methode \(Siehe auch Abschnitt\) verwendet wird, verwendet die Methode beim Ausführen des angeforderten Vorgangs eine niedrigere Priorität als die normale Priorität, und der Vorgang wird nach jeder vorhandenen normalen `ideal` Prioritätsarbeit ausgelöst.  |  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="":::
-      #### Normal  
+      #### <a name="normal"></a>Normal  
       
       `normal`  
       
       | Typ | Beschreibung |  
       |:---- |:--- |  
-      | Dom | Wenn die `normal` Methode mit der entsprechenden Methode verwendet wird (siehe auch Abschnitt), verwendet die Methode beim Ausführen des angeforderten Vorgangs die normale vorhandene Priorität.  |  
+      | DOMString | Wenn die Methode mit der entsprechenden Methode verwendet wird (siehe auch Abschnitt), verwendet die Methode beim Ausführen des angeforderten Vorgangs die normale vorhandene `normal` Priorität.  |  
    :::column-end:::
    :::column span="":::
       **Beispiel**  
@@ -1127,14 +1127,14 @@ Synchrone API, die als veraltet markiert wurde.  Informationen zu Windows 10 fin
       
       | Typ | Beschreibung |  
       |:---- |:--- |  
-      | IDL | MSHTML. idl |  
+      | IDL | Mshtml.idl |  
    :::column-end:::
    :::column span="":::
       &nbsp;  
    :::column-end:::
 :::row-end:::  
 
-## MSAppAsyncOperation  
+## <a name="msappasyncoperation"></a>MSAppAsyncOperation  
 
 ```javascript
 var asyncOperation = MSApp.clearTemporaryWebDataAsync(); 
@@ -1143,11 +1143,11 @@ asyncOperation.onerror = function() { console.log("Failed to clear temporary web
 asyncOperation.start(); 
 ```  
 
-### start  
+### <a name="start"></a>start  
 
 :::row:::
    :::column span="":::
-      Startet das `MSAppAsyncOperation` .  
+      Startet die `MSAppAsyncOperation` .  
    :::column-end:::
    :::column span="":::
       ```javascript
@@ -1172,17 +1172,17 @@ asyncOperation.start();
       
       **Eigenschaften**  
       
-      `error` Eigenschaft  
+      `error` property  
       
       | Typ | Beschreibung |  
       |:---- |:--- |  
-      | DOMError | Stellt einen Fehler in dar `MSAppAsyncOperation` .  |  
+      | DOMError | Stellt einen Fehler in `MSAppAsyncOperation` dar.  |  
       
       ```javascript
       p = object.error
       ```  
       
-      `oncomplete` Eigenschaft  
+      `oncomplete` property  
       
       | Typ | Beschreibung |  
       |:---- |:--- |  
@@ -1192,31 +1192,31 @@ asyncOperation.start();
       p = object.oncomplete
       ```  
       
-      `onerror` Eigenschaft  
+      `onerror` property  
       
       | Typ | Beschreibung |  
       |:---- |:--- |  
-      | EventHandler | Eigenschaft zum Festlegen eines Ereignishandlers bei einem Fehler `MSAppAsyncOperation` .  |  
+      | EventHandler | Eigenschaft zum Festlegen eines Ereignishandlers auf einen Fehler während `MSAppAsyncOperation` .  |  
       
       ```javascript
       p = object.onerror
       ```  
       
-      `readyState` Eigenschaft  
+      `readyState` property  
       
       | Typ | Beschreibung |  
       |:---- |:--- |  
-      | Zahl | Stellt den Zustand des asynchronen Vorgangs in der Windows-App mit JavaScript dar.  Zu den Werten gehören: `Started[0]` , `Completed[1]` , `Error[2]` .  |  
+      | Zahl | Stellt den Status des asynchronen Vorgangs in der Windows-App mithilfe von JavaScript dar.  Werte sind: `Started[0]` , `Completed[1]` , `Error[2]` .  |  
       
       ```javascript
       p = object.readyState
       ```  
       
-      `result` Eigenschaft  
+      `result` property  
       
       | Typ | Beschreibung |  
       |:---- |:--- |  
-      | Any |Stellt das Ergebnis von dar `MSAppAsyncOperation` .  |  
+      | Any |Stellt das Ergebnis von `MSAppAsyncOperation` dar.  |  
       
       ```javascript
       p = object.result

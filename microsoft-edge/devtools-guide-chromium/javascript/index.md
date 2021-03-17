@@ -3,16 +3,16 @@ description: Erfahren Sie, wie Sie Microsoft Edge DevTools verwenden, um JavaScr
 title: Erste Schritte mit dem Debuggen von JavaScript in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: e146c6708f097b1ea8dc82f08be58f5aa5e52d1f
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: bbfb766bcc03e4c4fe0f975f1ecfccbef08084be
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398441"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439465"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -99,7 +99,7 @@ Kurz gesagt, haltepunkte können Ihnen helfen, Fehler schneller zu finden und zu
 Wenn Sie zurück treten und überlegen, wie die App funktioniert, können Sie eine gebildete Vermutung treffen, dass die falsche Summe \( \) im Ereignislistener berechnet wird, der der Schaltfläche Nummer 1 und Nummer 2 hinzufügen zugeordnet `5 + 1 = 51` `click` ist. ****  Daher möchten Sie den Code wahrscheinlich zu dem Zeitpunkt anhalten, zu dem der `click` Listener ausgeführt wird.  **Mit Ereignislistener-Haltepunkten** können Sie genau dies tun:  
 
 1.  Wählen Sie **im Bereich JavaScript-Debugging** die **Option Ereignislistener-Haltepunkte** aus, um den Abschnitt zu erweitern.  DevTools zeigt eine Liste erweiterbarer Ereigniskategorien an, z. B. **Animation** und **Zwischenablage.**  
-1.  Wählen Sie neben **der Kategorie Mouse-Ereignis** **die Option Erweitern** \( Symbol erweitern ![ ][ImageExpandIcon] \).  DevTools zeigt eine Liste von Mausereignissen an, z. B. **Klicken** **und Mousedown**.  Jedes Ereignis hat ein Kontrollkästchen daneben.  
+1.  Wählen Sie neben **der Kategorie Mouse-Ereignis** **die Option Erweitern** \( Symbol erweitern ![ ](../media/expand-icon.msft.png) \).  DevTools zeigt eine Liste von Mausereignissen an, z. B. **Klicken** **und Mousedown**.  Jedes Ereignis hat ein Kontrollkästchen daneben.  
 1.  Aktivieren Sie das Kontrollkästchen neben , um **auf zu klicken.**  DevTools ist jetzt so eingerichtet, dass es automatisch angehalten wird, wenn ein `click` Ereignislistener ausgeführt wird.  
     
     :::image type="complex" source="../media/javascript-sources-event-listener-breakpoint-mouse-click.msft.png" alt-text="Aktivieren Sie das Kontrollkästchen neben dem Klicken." lightbox="../media/javascript-sources-event-listener-breakpoint-mouse-click.msft.png":::
@@ -112,7 +112,7 @@ Wenn Sie zurück treten und überlegen, wie die App funktioniert, können Sie ei
     if (inputsAreEmpty()) {
     ```  
     
-    Wenn Sie in einer anderen Codezeile anhalten, wählen Sie **Skriptausführung** fortsetzen \( Skriptausführung fortsetzen \) aus, bis Sie in der richtigen ![ ][ImageResumeIcon] Zeile anhalten.  
+    Wenn Sie in einer anderen Codezeile anhalten, wählen Sie **Skriptausführung** fortsetzen \( Skriptausführung fortsetzen \) aus, bis Sie in der richtigen ![ ](../media/resume-script-run-icon.msft.png) Zeile anhalten.  
     
     > [!NOTE]
     > Wenn Sie in einer anderen Zeile angehalten haben, verfügen Sie über eine Browsererweiterung, die einen Ereignislistener auf jeder besuchten `click` Webseite registriert.  Sie werden im Listener der `click` Erweiterung angehalten.  Wenn Sie den InPrivate-Modus verwenden, um **im**privaten Modus zu navigieren, wodurch alle Erweiterungen deaktiviert werden, wird möglicherweise jedes Mal angezeigt, dass Sie in der gewünschten Codezeile anhalten.  
@@ -125,7 +125,7 @@ Wenn Sie zurück treten und überlegen, wie die App funktioniert, können Sie ei
 
 Eine häufige Ursache für Fehler ist, wenn ein Skript in der falschen Reihenfolge ausgeführt wird.  Wenn Sie den Code schrittweise durchschritten haben, können Sie die Laufzeit Ihres Codes durchfingen.  Sie gehen eine Zeile gleichzeitig durch, um herauszufinden, wo Ihr Code in einer anderen Reihenfolge ausgeführt wird als erwartet.  Probieren Sie es jetzt aus:  
 
-1.  Wählen **Sie Schritt über nächsten Funktionsaufruf** \( Schritt über nächsten ![ Funktionsaufruf ][ImageOverIcon] \).  DevTools führt den folgenden Code aus, ohne ihn zu verwenden.  
+1.  Wählen **Sie Schritt über nächsten Funktionsaufruf** \( Schritt über nächsten ![ Funktionsaufruf ](../media/step-over-icon.msft.png) \).  DevTools führt den folgenden Code aus, ohne ihn zu verwenden.  
     
     ```javascript
     if (inputsAreEmpty()) {
@@ -134,7 +134,7 @@ Eine häufige Ursache für Fehler ist, wenn ein Skript in der falschen Reihenfol
     > [!NOTE]
     > DevTools überspringt einige Codezeilen.  Dies liegt `inputsAreEmpty()` daran, dass false ausgewertet wird, sodass der Codeblock für die Anweisung `if` nicht ausgeführt wird.  
     
-1.  Wählen Sie **im Tool** Quellen von DevTools Schritt **in** nächsten Funktionsaufruf \( Schritt in nächsten Funktionsaufruf \) aus, um die Laufzeit der Funktion zu durchschritten, eine Zeile ![ ][ImageIntoIcon] nach der `updateLabel()` anderen.  
+1.  Wählen Sie **im Tool** Quellen von DevTools Schritt **in** nächsten Funktionsaufruf \( Schritt in nächsten Funktionsaufruf \) aus, um die Laufzeit der Funktion zu durchschritten, eine Zeile ![ ](../media/step-into-icon.msft.png) nach der `updateLabel()` anderen.  
     
 Das Überprüfen einer Zeile nach dem anderen ist die grundlegende Idee des Schrittweisen Durcharbeitens von Code.  Wenn Sie den Code in `get-started.js` überprüfen, befindet sich der Fehler wahrscheinlich irgendwo in der `updateLabel()` Funktion.  Anstatt jede Codezeile zu durchbrechen, können Sie eine andere Art von Haltepunkt verwenden, um den Code näher am wahrscheinlichen Speicherort des Fehlers anzuhalten.  
 
@@ -149,7 +149,7 @@ Codelinien-Haltepunkte sind die am häufigsten verwendeten Haltepunkte.  Wenn Si
     ```  
     
 1.  Auf der linken Seite wird die Nummer dieser bestimmten Codezeile als **34 angezeigt.**  Wählen Sie Zeile **34 aus.**  DevTools zeigt links von **34**ein rotes Symbol an.  Das rote Symbol gibt an, dass sich ein Codepunkt in dieser Zeile befindet.  DevTools hält immer an, bevor diese Codezeile ausgeführt wird.  
-1.  Wählen **Sie Skriptausführung fortsetzen** \( ![ Skriptausführung fortsetzen ][ImageResumeIcon] \).  Das Skript wird weiterhin ausgeführt, bis Zeile 33 erreicht ist.  In den Zeilen 31, 32 und 33 druckt DevTools die Werte von , und rechts neben dem `addend1` `addend2` `sum` Semikolon in jeder Zeile.  
+1.  Wählen **Sie Skriptausführung fortsetzen** \( ![ Skriptausführung fortsetzen ](../media/resume-script-run-icon.msft.png) \).  Das Skript wird weiterhin ausgeführt, bis Zeile 33 erreicht ist.  In den Zeilen 31, 32 und 33 druckt DevTools die Werte von , und rechts neben dem `addend1` `addend2` `sum` Semikolon in jeder Zeile.  
     
     :::image type="complex" source="../media/javascript-sources-breakpoint-paused.msft.png" alt-text="DevTools hält am Zeilen-of-Code-Haltepunkt in Zeile 34 an" lightbox="../media/javascript-sources-breakpoint-paused.msft.png":::
        DevTools hält am Zeilen-of-Code-Haltepunkt in Zeile 34 an  
@@ -172,7 +172,7 @@ Wenn Sie in einer Codezeile **** anhalten, werden im Bereich Bereich die lokalen
 Im **Bereich Überwachungsausdrücke** können Sie die Werte von Variablen im Laufe der Zeit überwachen.  Wie der Name schon sagt, **sind Watch Expressions** nicht auf Variablen beschränkt.  Sie können einen beliebigen gültigen JavaScript-Ausdruck in einem **Watch Expression speichern.**  Versuchen Sie es jetzt.  
 
 1.  Wählen Sie den **Bereich "Beobachten"** aus.  
-1.  Wählen **Sie Ausdruck hinzufügen** \( Ausdruck hinzufügen ![ ][ImageAddIcon] \).  
+1.  Wählen **Sie Ausdruck hinzufügen** \( Ausdruck hinzufügen ![ ](../media/add-expression-icon.msft.png) \).  
 1.  Geben Sie `typeof sum` ein.  
 1.  Wählen Sie `Enter` aus.  DevTools zeigt `typeof sum: "string"` .  Der Wert rechts neben dem Doppelpunkt ist das Ergebnis Ihres Watch Expression.  
     
@@ -201,10 +201,10 @@ Mit **der Konsole** können Sie Nachrichten anzeigen und sie auch verwenden, um 
 
 Wenn Sie eine Fehlerbehebung für den Fehler finden, versuchen Sie es, indem Sie den Code bearbeiten und die Demo erneut ausführen.  Sie können JavaScript-Code direkt in der DevTools-Benutzeroberfläche bearbeiten und die Korrektur anwenden.  Versuchen Sie es jetzt.  
 
-1.  Wählen **Sie Skriptausführung fortsetzen** \( ![ Skriptausführung fortsetzen ][ImageResumeIcon] \).  
+1.  Wählen **Sie Skriptausführung fortsetzen** \( ![ Skriptausführung fortsetzen ](../media/resume-script-run-icon.msft.png) \).  
 1.  Ersetzen Sie **im Code-Editor**Zeile 32 durch `var sum = addend1 + addend2` `var sum = parseInt(addend1) + parseInt(addend2)` .  
 1.  Wählen `Control` + `S` Sie \(Windows, Linux\) oder `Command` + `S` \(macOS\) aus, um Ihre Änderung zu speichern.  
-1.  Wählen **Sie Haltepunkte deaktivieren** \( ![ Haltepunkte deaktivieren ][ImageDeactivateIcon] \).  Es ändert sich blau, um anzugeben, dass die Option aktiv ist.  Während **Die Haltepunkte deaktivieren** festgelegt ist, ignoriert DevTools alle von Ihnen festgelegten Haltepunkte.  
+1.  Wählen **Sie Haltepunkte deaktivieren** \( ![ Haltepunkte deaktivieren ](../media/deactivate-breakpoints-button-icon.msft.png) \).  Es ändert sich blau, um anzugeben, dass die Option aktiv ist.  Während **Die Haltepunkte deaktivieren** festgelegt ist, ignoriert DevTools alle von Ihnen festgelegten Haltepunkte.  
 1.  Testen Sie die Demo mit unterschiedlichen Werten.  Die Demo wird nun korrekt berechnet.  
     
 > [!CAUTION]
@@ -227,15 +227,6 @@ Einige Codeschrittsteuerelemente werden in diesem Artikel nicht erläutert.  Wei
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageAddIcon]: ../media/add-expression-icon.msft.png  
-[ImageDeactivateIcon]: ../media/deactivate-breakpoints-button-icon.msft.png  
-[ImageExpandIcon]: ../media/expand-icon.msft.png  
-[ImageIntoIcon]: ../media/step-into-icon.msft.png  
-[ImageOverIcon]: ../media/step-over-icon.msft.png  
-[ImageResumeIcon]: ../media/resume-script-run-icon.msft.png  
 
 <!-- links -->  
 

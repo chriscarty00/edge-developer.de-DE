@@ -3,16 +3,16 @@ description: Öffnen Sie die Konsole, erstellen Sie einen Liveausdruck, und lege
 title: Nachverfolgen, welches Element den Fokus hat
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 3f3e59c4ee6f10b8e162f30efbff337ca2beec8d
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 2c2040c690441fb33c802cf454dc7a1e3f33c494
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398315"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439170"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -35,7 +35,7 @@ Angenommen, Sie testen die Barrierefreiheit der Tastaturnavigation einer Seite. 
 Führen Sie die folgenden Aktionen aus, um das fokussierte Element in DevTools nachverfolgt zu haben.  
 
 1.  Öffnen Sie die **Konsole**.  
-1.  Wählen **Sie Liveausdruck** erstellen \( ![ Liveausdruck ][ImageCreateIcon] erstellen \).  
+1.  Wählen **Sie Liveausdruck** erstellen \( ![ Liveausdruck ](../media/create-live-expression-icon.msft.png) erstellen \).  
     
     :::image type="complex" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="Erstellen eines Liveausdrucks" lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
        Erstellen eines Liveausdrucks  
@@ -55,10 +55,6 @@ Da dieser Ausdruck immer das fokussierte Element darstellt, haben Sie nun eine M
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageCreateIcon]: ../media/create-live-expression-icon.msft.png  
 
 <!-- links -->  
 

@@ -3,16 +3,16 @@ description: Erfahren Sie, wie Sie die HTTP-Cookies für eine Seite mit Microsof
 title: Anzeigen, Bearbeiten und Löschen von Cookies mit Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 9c040aaa30142c2759c67b2c034d3a9271ca0a64
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: c208ca628fe91ed5922bc36566be2b9bdd20ec0b
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397748"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439682"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -81,13 +81,13 @@ Doppelklicken Sie auf ein Feld, um es zu bearbeiten.
 
 ## <a name="delete-cookies"></a>Löschen von Cookies  
 
-Wählen Sie ein Cookie aus, und wählen Sie **Ausgewähltes** Löschen \( Ausgewähltes Löschen \) aus, ![ um das spezifische Cookie zu ][ImageDeleteIcon] löschen.  
+Wählen Sie ein Cookie aus, und wählen Sie **Ausgewähltes** Löschen \( Ausgewähltes Löschen \) aus, ![ um das spezifische Cookie zu ](../media/delete-icon.msft.png) löschen.  
 
 :::image type="complex" source="../media/storage-application-storage-cookies-delete-selected.msft.png" alt-text="Löschen eines bestimmten Cookies" lightbox="../media/storage-application-storage-cookies-delete-selected.msft.png":::
    Abbildung 5: Löschen eines bestimmten Cookies  
 :::image-end:::  
 
-Wählen **Sie Alle** löschen \( Alle löschen ![ ][ImageClearIcon] \), um alle Cookies zu löschen.  
+Wählen **Sie Alle** löschen \( Alle löschen ![ ](../media/clear-icon.msft.png) \), um alle Cookies zu löschen.  
 
 :::image type="complex" source="../media/storage-application-storage-cookies-clear-all.msft.png" alt-text="Löschen aller Cookies" lightbox="../media/storage-application-storage-cookies-clear-all.msft.png":::
    Abbildung 6: Löschen aller Cookies  
@@ -96,11 +96,6 @@ Wählen **Sie Alle** löschen \( Alle löschen ![ ][ImageClearIcon] \), um alle 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageClearIcon]: ../media/clear-icon.msft.png  
-[ImageDeleteIcon]: ../media/delete-icon.msft.png  
 
 <!-- links -->  
 

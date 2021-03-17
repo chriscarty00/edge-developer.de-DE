@@ -1,18 +1,18 @@
 ---
-description: Snippets sind kleine Skripts, die Sie im Quellen Tool von Microsoft Edge devtools erstellen und ausführen können.  Sie können auf jeder beliebigen Webseite auf Ressourcen zugreifen und diese ausführen.  Wenn Sie einen Ausschnitt ausführen, wird er im Kontext der aktuell geöffneten Webseite ausgeführt.
-title: Ausführen von JavaScript-Codeausschnitten auf einer beliebigen Seite mit Microsoft Edge devtools
+description: Codeausschnitte sind kleine Skripts, die Sie im Tool Sources von Microsoft Edge DevTools erstellen und ausführen können.  Sie können von jeder Webseite aus auf Ressourcen zugreifen und diese ausführen.  Wenn Sie einen Codeausschnitt ausführen, wird er aus dem Kontext der aktuell geöffneten Webseite ausgeführt.
+title: Ausführen von Codeausschnitten von JavaScript auf jeder Seite mit Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 89b028177016a9194a67bbbe44d08572e5755f95
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 779c3dcec66b6b5df3e38abe9ee458bca7dc0c45
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230957"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439423"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,24 +28,24 @@ ms.locfileid: "11230957"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Ausführen von JavaScript-Codeausschnitten auf einer beliebigen Webseite mit Microsoft Edge devtools  
+# <a name="run-snippets-of-javascript-on-any-webpage-with-microsoft-edge-devtools"></a>Ausführen von Codeausschnitten von JavaScript auf einer beliebigen Webseite mit Microsoft Edge DevTools  
 
-Wenn Sie denselben Code wiederholt in der [Konsole][DevtoolsConsoleIndex] ausführen, sollten Sie stattdessen den Code als Snippet speichern.  Ausschnitte sind Skripts, die Sie im [Quellen][DevToolsSourcesTool] Tool erstellen.  Snippets haben Zugriff auf den JavaScript-Kontext der Webseite, und Sie können Ausschnitte auf einer beliebigen Webseite ausführen.  Die Sicherheitseinstellungen der meisten Webseiten blockieren das Laden anderer Skripts in Ausschnitten.  Aus diesem Grund müssen Sie den gesamten Code in eine Datei aufnehmen.  
+Wenn Sie denselben Code [][DevtoolsConsoleIndex] wiederholt in der Konsole ausführen, sollten Sie stattdessen den Code als Codeausschnitt speichern.  Codeausschnitte sind Skripts, die Sie im Tool [Quellen][DevToolsSourcesTool] erstellen.  Codeausschnitte haben Zugriff auf den JavaScript-Kontext der Webseite, und Sie können Codeausschnitte auf jeder Beliebigen Webseite ausführen.  Die Sicherheitseinstellungen der meisten Webseiten blockieren das Laden anderer Skripts in Codeausschnitten.  Aus diesem Grund müssen Sie den ganzen Code in einer Datei enthalten.  
 
-Snippets sind eine Alternative zu [Bookmarklets][WikiBookmarklet] mit dem Unterschied, dass Ausschnitte nur in devtools ausgeführt werden und nicht auf die zulässige Länge einer URL begrenzt sind.  
+Codeausschnitte sind eine Alternative zu [Bookmarklets][WikiBookmarklet] mit dem Unterschied, dass Codeausschnitte nur in DevTools ausgeführt werden und nicht auf die zulässige Länge einer URL beschränkt sind.  
 
-Die Verwendung von Snippets ist eine hervorragende Möglichkeit, ein paar Dinge auf einer Drittanbieter-Webseite zu ändern.  Code Änderungen in Ausschnitten werden der aktuellen Webseite hinzugefügt und im gleichen Kontext ausgeführt.  Weitere Informationen zum Ändern des vorhandenen Codes einer Webseite finden Sie unter [Außerkraftsetzungen][DevtoolsJavascriptOverrides].  
+Die Verwendung von Codeausschnitten ist eine hervorragende Möglichkeit, einige Dinge auf einer Webseite eines Drittanbieters zu ändern.  Codeänderungen in Codeausschnitten werden der aktuellen Webseite hinzugefügt und im gleichen Kontext ausgeführt.  Weitere Informationen zum Ändern des vorhandenen Codes einer Webseite finden Sie unter [Overrides][DevtoolsJavascriptOverrides].  
 
 :::row:::
    :::column span="":::
-      In der folgenden Abbildung ist beispielsweise die devtools-Homepage auf der linken Seite und ein Codeausschnitt Quellcode auf der rechten Seite zu sehen.  
+      In der folgenden Abbildung sind beispielsweise die DevTools-Homepage auf der linken Seite und ein Codeausschnitt auf der rechten Seite dargestellt.  
       
-      :::image type="complex" source="../media/javascript-sources-snippets-split-screen.msft.png" alt-text="Die vor dem Ausführen des Snippets" lightbox="../media/javascript-sources-snippets-split-screen.msft.png":::
-         Die Webseite vor dem Ausführen des Snippets  
+      :::image type="complex" source="../media/javascript-sources-snippets-split-screen.msft.png" alt-text="Die vor dem Ausführen des Codeausschnitts" lightbox="../media/javascript-sources-snippets-split-screen.msft.png":::
+         Die Webseite vor dem Ausführen des Codeausschnitts  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      Der Snippet-Quellcode auf der Webseite, bevor der Codeausschnitt ausgeführt wird.  
+      Der Codeausschnitt von der Webseite vor dem Ausführen des Codeausschnitts.  
       
       ```javascript
       console.log('Hello, Snippets!');
@@ -57,131 +57,126 @@ Die Verwendung von Snippets ist eine hervorragende Möglichkeit, ein paar Dinge 
    :::column-end:::
 :::row-end:::  
 
-In der folgenden Abbildung wird die Webseite nach dem Ausführen des Snippets angezeigt.  Der **Konsolen Einzug** wird eingeblendet, um die Meldung anzuzeigen, die `Hello, Snippets!` vom Snippet protokolliert wird, und der Inhalt der Webseite ändert sich vollständig.  
+In der folgenden Abbildung wird die Webseite nach dem Ausführen des Codeausschnitts angezeigt.  Die **Konsolenschubschubte** wird angezeigt, um die Nachricht anzuzeigen, die der Codeausschnitt protokolliert, und der Inhalt der `Hello, Snippets!` Webseite ändert sich vollständig.  
 
-:::image type="complex" source="../media/javascript-sources-snippets-split-screen-after.msft.png" alt-text="Die Webseite nach dem Ausführen des Snippets" lightbox="../media/javascript-sources-snippets-split-screen-after.msft.png":::
-   Die Webseite nach dem Ausführen des Snippets  
+:::image type="complex" source="../media/javascript-sources-snippets-split-screen-after.msft.png" alt-text="Die Webseite nach dem Ausführen des Codeausschnitts" lightbox="../media/javascript-sources-snippets-split-screen-after.msft.png":::
+   Die Webseite nach dem Ausführen des Codeausschnitts  
 :::image-end:::  
 
-## Öffnen des Bereichs "Snippets"  
+## <a name="open-the-snippets-pane"></a>Öffnen des Codeausschnittbereichs  
 
-Im Bereich **Snippets** werden Ihre Snippets aufgelistet.  Wenn Sie einen Ausschnitt bearbeiten möchten, müssen Sie ihn im Bereich **Snippets** öffnen.  
+Im **Bereich Codeausschnitte** werden Ihre Codeausschnitte aufgelistet.  Wenn Sie einen Codeausschnitt bearbeiten möchten, müssen Sie ihn im Bereich **Codeausschnitte** öffnen.  
 
-:::image type="complex" source="../media/javascript-sources-snippets-pane.msft.png" alt-text="Der Bereich Ausschnitte" lightbox="../media/javascript-sources-snippets-pane.msft.png":::
-   Der Bereich " **Ausschnitte** "  
+:::image type="complex" source="../media/javascript-sources-snippets-pane.msft.png" alt-text="Der Bereich Codeausschnitte" lightbox="../media/javascript-sources-snippets-pane.msft.png":::
+   Der **Bereich Codeausschnitte**  
 :::image-end:::  
 
-### Öffnen des Bereichs "Ausschnitte" mit einer Maus  
+### <a name="open-the-snippets-pane-with-a-mouse"></a>Öffnen des Codeausschnittbereichs mit der Maus  
 
-1.  Wählen Sie die Registerkarte **Quellen** aus, um das **Quellen** Tool zu öffnen.  Der **Seiten** Bereich wird normalerweise standardmäßig geöffnet.  
+1.  Wählen Sie die **Registerkarte Quellen** aus, um das Tool **Quellen zu** öffnen.  Der **Seitenbereich** wird in der Regel standardmäßig geöffnet.  
     
-    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="Das Tool Quellen mit geöffnetem Seitenbereich auf der linken Seite" lightbox="../media/javascript-sources-page-pane.msft.png":::
-       Das Tool " **Quellen** " mit geöffnetem Seitenbereich auf der linken **Seite**  
+    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="Das Tool Quellen mit links geöffneten Seitenbereich" lightbox="../media/javascript-sources-page-pane.msft.png":::
+       Das **Tool Quellen** mit links geöffneten Seitenbereich ****  
     :::image-end:::  
     
-1.  Wählen Sie die Registerkarte **Snippets** aus, um den Bereich **Snippets** zu öffnen.  Möglicherweise müssen Sie **weitere Registerkarten** auswählen \ ( ![ weitere Registerkarten ][ImageMoreTabsIcon] \), um auf die Option **Snippets** zuzugreifen.  
+1.  Wählen Sie die **Registerkarte Codeausschnitte** aus, um den **Codeausschnittbereich zu** öffnen.  Möglicherweise müssen Sie weitere **Registerkarten** \( Weitere Registerkarten \) auswählen, um ![ auf die Option ](../media/more-tabs-icon.msft.png) **Codeausschnitte zu** zugreifen.  
     
-### Öffnen des Bereichs "Ausschnitte" mit dem Befehlsmenü  
+### <a name="open-the-snippets-pane-with-the-command-menu"></a>Öffnen Sie den Codeausschnittbereich mit dem Befehlsmenü.  
 
-1.  Setzen Sie den Cursor an eine beliebige Stelle in devtools.  
-1.  Wählen Sie `Control` + `Shift` + `P` \ (Windows, Linux \) oder `Command` + `Shift` + `P` \ (macOS \) aus, um das Befehlsmenü zu öffnen.  
-1.  Geben `Snippets` Sie **Snippets anzeigen**ein, und wählen Sie dann aus, `Enter` um den Befehl auszuführen.  
+1.  Fokussieren Sie den Cursor an einer stelle in DevTools.  
+1.  Wählen `Control` + `Shift` + `P` Sie \(Windows, Linux\) oder `Command` + `Shift` + `P` \(macOS\) aus, um das Befehlsmenü zu öffnen.  
+1.  Geben `Snippets` Sie ein, **wählen Sie Codeausschnitte**anzeigen aus, und wählen Sie dann aus, `Enter` um den Befehl auszuführen.  
     
-    :::image type="complex" source="../media/javascript-search-show-snippets.msft.png" alt-text="Der Befehl ' Snippets anzeigen '" lightbox="../media/javascript-search-show-snippets.msft.png":::
-       Der Befehl ' **Snippets anzeigen** '  
+    :::image type="complex" source="../media/javascript-search-show-snippets.msft.png" alt-text="Der Befehl Codeausschnitte anzeigen" lightbox="../media/javascript-search-show-snippets.msft.png":::
+       Der **Befehl Codeausschnitte** anzeigen  
     :::image-end:::  
     
-## Erstellen von Ausschnitten  
+## <a name="create-snippets"></a>Erstellen von Codeausschnitten  
 
-### Erstellen eines Snippets über das Quellen Panel  
+### <a name="create-a-snippet-through-the-sources-panel"></a>Erstellen eines Codeausschnitts über den Bereich Quellen  
 
-1.  [Öffnen Sie den Bereich **Snippets** ](#open-the-snippets-pane).  
-1.  Wählen Sie **Neues Snippet**aus.  
-1.  Geben Sie einen Namen für das Snippet ein, und wählen Sie dann `Enter` Speichern aus.  
+1.  [Öffnen Sie den **Bereich Codeausschnitte** ](#open-the-snippets-pane).  
+1.  Wählen **Sie Neuer Codeausschnitt aus.**  
+1.  Geben Sie einen Namen für Ihren Codeausschnitt ein, und wählen Sie dann `Enter` zum Speichern aus.  
     
-    :::image type="complex" source="../media/javascript-sources-snippets-naming.msft.png" alt-text="Benennen eines Snippets" lightbox="../media/javascript-sources-snippets-naming.msft.png":::
-       Benennen eines Snippets  
+    :::image type="complex" source="../media/javascript-sources-snippets-naming.msft.png" alt-text="Benennen eines Codeausschnitts" lightbox="../media/javascript-sources-snippets-naming.msft.png":::
+       Benennen eines Codeausschnitts  
     :::image-end:::  
     
-### Erstellen eines Snippets über das Befehlsmenü  
+### <a name="create-a-snippet-through-the-command-menu"></a>Erstellen eines Codeausschnitts über das Befehlsmenü  
 
-1.  Setzen Sie den Cursor an eine beliebige Stelle in devtools.  
-1.  Wählen Sie `Control` + `Shift` + `P` \ (Windows, Linux \) oder `Command` + `Shift` + `P` \ (macOS \) aus, um das Befehlsmenü zu öffnen.  
-1.  Geben `Snippet` Sie ein, wählen Sie **Neues Snippet erstellen**aus, und wählen Sie dann aus, `Enter` um den Befehl auszuführen.  
+1.  Fokussieren Sie den Cursor an einer stelle in DevTools.  
+1.  Wählen `Control` + `Shift` + `P` Sie \(Windows, Linux\) oder `Command` + `Shift` + `P` \(macOS\) aus, um das Befehlsmenü zu öffnen.  
+1.  Geben `Snippet` Sie ein, wählen **Sie Neuen Codeausschnitt erstellen**aus, und wählen Sie dann `Enter` aus, um den Befehl auszuführen.  
     
-    :::image type="complex" source="../media/javascript-search-create-new-snippet.msft.png" alt-text="Der Befehl zum Erstellen eines neuen Snippets" lightbox="../media/javascript-search-create-new-snippet.msft.png":::
-       Der Befehl zum Erstellen eines neuen Snippets  
+    :::image type="complex" source="../media/javascript-search-create-new-snippet.msft.png" alt-text="Der Befehl zum Erstellen eines neuen Codeausschnitts" lightbox="../media/javascript-search-create-new-snippet.msft.png":::
+       Der Befehl zum Erstellen eines neuen Codeausschnitts  
     :::image-end:::  
     
-Wenn Sie den neuen Ausschnitt mit einem benutzerdefinierten Namen umbenennen möchten, navigieren Sie zu [Snippets umbenennen](#rename-snippets).  
+Um Ihren neuen Codeausschnitt mit einem benutzerdefinierten Namen umzubenennen, navigieren Sie zu [Umbenennen von Codeausschnitten](#rename-snippets).  
 
-## Bearbeiten von Ausschnitten  
+## <a name="edit-snippets"></a>Bearbeiten von Codeausschnitten  
 
-1.  [Öffnen Sie den Bereich **Snippets** ](#open-the-snippets-pane).  
-1.  Wählen Sie im Bereich **Snippets** den Namen des Ausschnitts aus, den Sie bearbeiten möchten.  Sie wird im **Code-Editor**geöffnet.  
+1.  [Öffnen Sie den **Bereich Codeausschnitte** ](#open-the-snippets-pane).  
+1.  Wählen Sie im Bereich Codeausschnitte den Namen des **Codeausschnitts** aus, den Sie bearbeiten möchten.  Es wird im **Code-Editor geöffnet.**  
     
     :::image type="complex" source="../media/javascript-sources-snippets-editor-saved.msft.png" alt-text="Der Code-Editor" lightbox="../media/javascript-sources-snippets-editor-saved.msft.png":::
        Der **Code-Editor**  
     :::image-end:::  
     
-1.  Verwenden Sie den **Code-Editor** , um Ihrem Snippet JavaScript hinzuzufügen.  
-1.  Wenn neben dem Namen des Snippets ein Sternchen angezeigt wird, bedeutet dies, dass Sie nicht gespeicherten Code haben.  Wählen Sie `Control` + `S` \ (Windows, Linux \) oder `Command` + `S` \ (macOS \) aus, um Sie zu speichern.  
+1.  Verwenden Sie **den Code-Editor,** um Ihrem Codeausschnitt JavaScript hinzuzufügen.  
+1.  Wenn neben dem Namen Ihres Codeausschnitts ein Sternchen angezeigt wird, bedeutet dies, dass Sie nicht gespeicherten Code haben.  Wählen `Control` + `S` Sie \(Windows, Linux\) oder `Command` + `S` \(macOS\) aus, um zu speichern.  
     
-    :::image type="complex" source="../media/javascript-sources-snippets-editor-unsaved.msft.png" alt-text="Ein Sternchen neben dem Namen des Ausschnitts zeigt nicht gespeicherten Code an." lightbox="../media/javascript-sources-snippets-editor-unsaved.msft.png":::
-       Ein Sternchen neben dem Namen des Ausschnitts zeigt nicht gespeicherten Code an.  
+    :::image type="complex" source="../media/javascript-sources-snippets-editor-unsaved.msft.png" alt-text="Ein Sternchen neben dem Codeausschnittnamen gibt nicht gespeicherten Code an." lightbox="../media/javascript-sources-snippets-editor-unsaved.msft.png":::
+       Ein Sternchen neben dem Codeausschnittnamen gibt nicht gespeicherten Code an.  
     :::image-end:::  
     
-## Ausführen von Ausschnitten  
+## <a name="run-snippets"></a>Ausführen von Codeausschnitten  
 
-### Ausführen eines Snippets im Quellen Panel  
+### <a name="run-a-snippet-from-the-sources-panel"></a>Ausführen eines Codeausschnitts im Bereich Quellen  
 
-1.  [Öffnen Sie den Bereich **Snippets** ](#open-the-snippets-pane).  
-1.  Wählen Sie den Namen des Ausschnitts aus, den Sie ausführen möchten.  Das Snippet wird im **Code-Editor**geöffnet.  
-1.  Wählen Sie **Snippet ausführen** \ ( ![ Snippet ausführen ][ImageRunSnippetIcon] ) aus, oder wählen Sie `Control` + `Enter` \ (Windows, Linux \) oder `Command` + `Enter` \ (macOS \) aus.  
+1.  [Öffnen Sie den **Bereich Codeausschnitte** ](#open-the-snippets-pane).  
+1.  Wählen Sie den Namen des Codeausschnitts aus, den Sie ausführen möchten.  Der Codeausschnitt wird im **Code-Editor geöffnet.**  
+1.  Wählen **Sie Codeausschnitt** ausführen \( ![ Codeausschnitt ausführen ](../media/run-snippet-icon.msft.png) \) oder `Control` + `Enter` \(Windows, Linux\) oder `Command` + `Enter` \(macOS\).  
     
-### Ausführen eines Snippets mit dem Befehlsmenü  
+### <a name="run-a-snippet-with-the-command-menu"></a>Ausführen eines Codeausschnitts mit dem Befehlsmenü  
 
-1.  Setzen Sie den Cursor an eine beliebige Stelle in devtools.  
-1.  Wählen Sie `Control` + `Shift` + `P` \ (Windows, Linux \) oder `Command` + `Shift` + `P` \ (macOS \) aus, um das Befehlsmenü zu öffnen.  
-1.  Löschen `>` Sie das Zeichen, und geben `!` Sie das Zeichen gefolgt vom Namen des Ausschnitts ein, den Sie ausführen möchten.  
+1.  Fokussieren Sie den Cursor an einer stelle in DevTools.  
+1.  Wählen `Control` + `Shift` + `P` Sie \(Windows, Linux\) oder `Command` + `Shift` + `P` \(macOS\) aus, um das Befehlsmenü zu öffnen.  
+1.  Löschen Sie das Zeichen, und geben Sie das Zeichen gefolgt vom Namen des Codeausschnitts ein, `>` `!` den Sie ausführen möchten.  
     
-    :::image type="complex" source="../media/javascript-search-run-command.msft.png" alt-text="Ausführen eines Snippets über das Befehlsmenü" lightbox="../media/javascript-search-run-command.msft.png":::
-       Ausführen eines Snippets über das **Befehlsmenü**  
+    :::image type="complex" source="../media/javascript-search-run-command.msft.png" alt-text="Ausführen eines Codeausschnitts aus dem Befehlsmenü" lightbox="../media/javascript-search-run-command.msft.png":::
+       Ausführen eines Codeausschnitts aus dem **Befehlsmenü**  
     :::image-end:::  
     
-1.  Wählen Sie aus `Enter` , um den Ausschnitt auszuführen.  
+1.  Wählen `Enter` Sie diese Option aus, um den Codeausschnitt ausführen zu können.  
 
-## Umbenennen von Ausschnitten  
+## <a name="rename-snippets"></a>Umbenennen von Codeausschnitten  
 
-1.  [Öffnen Sie den Bereich **Snippets** ](#open-the-snippets-pane).  
-1.  Zeigen Sie auf den Namen des Snippets, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie **Umbenennen**aus.  
+1.  [Öffnen Sie den **Bereich Codeausschnitte** ](#open-the-snippets-pane).  
+1.  Zeigen Sie auf den Codeausschnittnamen, öffnen Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste\), und wählen Sie **Umbenennen aus.**  
     
-## Löschen von Ausschnitten  
+## <a name="delete-snippets"></a>Löschen von Codeausschnitten  
 
-1.  [Öffnen Sie den Bereich **Snippets** ](#open-the-snippets-pane).  
-1.  Zeigen Sie auf den Namen des Snippets, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie **Entfernen**aus.  
+1.  [Öffnen Sie den **Bereich Codeausschnitte** ](#open-the-snippets-pane).  
+1.  Zeigen Sie auf den Codeausschnittnamen, öffnen Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste\), und wählen Sie **Entfernen aus.**  
     
-## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
-<!-- image links -->  
-
-[ImageMoreTabsIcon]: ../media/more-tabs-icon.msft.png  
-[ImageRunSnippetIcon]: ../media/run-snippet-icon.msft.png  
-
 <!-- links -->  
 
-[DevtoolsConsoleIndex]: ../console/index.md "Übersicht über die Konsole | Microsoft docs"  
-[DevToolsSourcesTool]: ../sources/index.md "Übersicht über das Quellen Tool | Microsoft docs"  
-[DevtoolsJavascriptOverrides]: ./overrides.md "Außerkraftsetzungen | Microsoft docs"  
+[DevtoolsConsoleIndex]: ../console/index.md "Konsolenübersicht | Microsoft Docs"  
+[DevToolsSourcesTool]: ../sources/index.md "Übersicht über das | Microsoft Docs"  
+[DevtoolsJavascriptOverrides]: ./overrides.md "Außerkraftsetzungen | Microsoft Docs"  
 
-[MDNScratchpad]: https://developer.mozilla.org/docs/Tools/Scratchpad "Zwischenablage | MDN"  
-[WikiBookmarklet]: https://en.wikipedia.org/wiki/Bookmarklet "Bookmarklet | Wikipedia"  
+[MDNScratchpad]: https://developer.mozilla.org/docs/Tools/Scratchpad "Scratchpad-| MDN"  
+[WikiBookmarklet]: https://en.wikipedia.org/wiki/Bookmarklet "Bookmarklet-| Wikipedia"  
 
 > [!NOTE]
 > Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
-> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/javascript/snippets) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
+> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/javascript/snippets) und wird von [Kayce Basken][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) verfasst.  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  

@@ -3,16 +3,16 @@ description: Die kanonische Dokumentation für Microsoft Edge DevTools-Tastenkom
 title: Microsoft Edge DevTools-Tastenkombinationen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: c6d51d27ce41ed8192a867cf33555b3880dd3ef9
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 8197157c3024374e11db71f919cc937fed2e6b1b
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398350"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439591"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -152,15 +152,11 @@ Die folgenden Tastenkombinationen sind in den meisten, wenn nicht in allen DevTo
 | Löschen der **Konsole** | `Control`+`L` | `Command`+`K` oder `Option`+`L` |  
 | Erzwingen eines mehrzeilerigen Eintrags.  Diese Verknüpfung ist meist nicht erforderlich, da DevTools standardmäßig mehrzeige Szenarien erkennen sollte. | `Shift`+`Enter` | `Command`+`Return` |  
 | Ausführen | `Enter` | `Return` |  
-| Erweitern aller Untereigenschaften eines Objekts, die bei der Konsole protokolliert werden | Halten `Alt` Sie , und wählen Sie dann **Erweitern** \( ![ Erweitern ][ImageExpandIcon] \) aus. | Halten `Alt` Sie , und wählen Sie dann **Erweitern** \( ![ Erweitern ][ImageExpandIcon] \) aus. |  
+| Erweitern aller Untereigenschaften eines Objekts, die bei der Konsole protokolliert werden | Halten `Alt` Sie , und wählen Sie dann **Erweitern** \( ![ Erweitern ](../media/expand-icon.msft.png) \) aus. | Halten `Alt` Sie , und wählen Sie dann **Erweitern** \( ![ Erweitern ](../media/expand-icon.msft.png) \) aus. |  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageExpandIcon]: ../media/expand-icon.msft.png  
 
 <!-- links -->  
 

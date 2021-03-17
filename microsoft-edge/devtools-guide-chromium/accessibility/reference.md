@@ -1,18 +1,18 @@
 ---
 description: Eine umfassende Referenz zu Barrierefreiheitsfeatures in Microsoft Edge DevTools.
-title: Barrierefreiheitsreferenz
+title: Referenz zur Barrierefreiheit
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: e3fed1c4e53c69b7a6837f71c270c0bf2f65b7e2
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: fce6dec3883cbcc758780a9fedb4c0fb2a8d0a4c
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398336"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439254"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,7 +28,7 @@ ms.locfileid: "11398336"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# <a name="accessibility-reference"></a>Barrierefreiheitsreferenz  
+# <a name="accessibility-reference"></a>Referenz zur Barrierefreiheit  
 
 Diese Seite ist eine umfassende Referenz zu Barrierefreiheitsfeatures in Microsoft Edge DevTools.  Es richtet sich an Webentwickler, die:  
 
@@ -72,7 +72,7 @@ So überwachen Sie eine Seite:
     :::image-end:::  
     
     > [!NOTE]
-    > Die Screenshots in diesem Abschnitt wurden mit Version 79 von Microsoft Edge erstellt.  Sie können überprüfen, welche Version Sie unter `edge://version` ausführen.  Die **Benutzeroberfläche** des Überwachungsinstruments sieht in früheren Versionen von Microsoft Edge anders aus, der allgemeine Workflow ist jedoch identisch.  
+    > Die Screenshots in diesem Abschnitt wurden mit Microsoft Edge, Version 79, erstellt.  Sie können überprüfen, welche Version Sie unter `edge://version` ausführen.  Die **Benutzeroberfläche** des Überwachungsinstruments sieht in früheren Versionen von Microsoft Edge anders aus, der allgemeine Workflow ist jedoch identisch.  
     
 1.  Wählen **Sie für**Gerät Mobile **aus,** wenn Sie ein mobiles Gerät simulieren möchten.  Mit dieser Option wird die Zeichenfolge des Benutzer-Agents geändert und die Größe des Viewports geändert.  Wenn die mobile Version der Seite anders als die Desktopversion angezeigt wird, kann diese Option erhebliche Auswirkungen auf die Ergebnisse Ihrer Überwachung haben.  
 1.  Stellen Sie **im Abschnitt Überwachungen** sicher, dass **Barrierefreiheit** aktiviert ist.  Deaktivieren Sie die anderen Kategorien, wenn Sie sie aus Ihrem Bericht ausschließen möchten.  Lassen Sie sie aktiviert, wenn Sie andere Möglichkeiten zur Verbesserung der Qualität Ihrer Seite finden möchten.  
@@ -114,7 +114,7 @@ So öffnen Sie den **Bereich Barrierefreiheit:**
 
 1.  Wählen Sie das **Elementtool** aus.  
 1.  Wählen Sie **in der DOM-Struktur**das Element aus, das Sie überprüfen möchten.  
-1.  Wählen Sie den **Bereich Barrierefreiheit** aus.  Dieser Bereich wird möglicherweise hinter der Schaltfläche **Weitere Registerkarten** ![ \( Weitere ][ImageMoreTabsIcon] Registerkarten \) ausgeblendet.  
+1.  Wählen Sie den **Bereich Barrierefreiheit** aus.  Dieser Bereich wird möglicherweise hinter der Schaltfläche **Weitere Registerkarten** ![ \( Weitere ](../media/more-tabs-icon.msft.png) Registerkarten \) ausgeblendet.  
 
 :::image type="complex" source="../media/accessibility-elements-accessibility.msft.png" alt-text="Überprüfen des h1-Elements der DevTools-Homepage im Bereich Barrierefreiheit" lightbox="../media/accessibility-elements-accessibility.msft.png":::
    Überprüfen des `h1` Elements der DevTools-Homepage im **Bereich Barrierefreiheit**  
@@ -189,10 +189,6 @@ Mit der Farbauswahl können Sie überprüfen, ob Ihr Text die empfohlenen Kontra
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageMoreTabsIcon]: ../media/more-tabs-icon.msft.png  
 
 <!-- links -->  
 

@@ -7,12 +7,12 @@ ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 092788606347352876483b1a8282fbb75b2bff66
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 2a2d48bda34daa95b9f500c31a12859a1cb08625
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398763"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439198"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -72,9 +72,9 @@ Dieses Stylesheet enthält nicht nur den Code für die Schaltflächenkomponente.
 ## <a name="record-code-coverage"></a>Aufzeichnen der Codeabdeckung  
 
 1.  Wählen Sie eine der folgenden Schaltflächen im **Bereich Abdeckung** aus.  
-    *   Wählen **Sie Start Instrumenting Coverage and Reload Page** \( Start Instrumenting Coverage and Reload Page \) aus, wenn Sie überprüfen möchten, welcher Code zum Laden der ![ Seite erforderlich ][ImageReloadIcon] ist.  
-    *   Wählen **Sie Instrument Coverage** \( Instrument Coverage ![ \) aus, wenn Sie überprüfen möchten, welcher Code nach der Interaktion mit der ][ImageRecordIcon] Seite verwendet wird.  
-1.  Wählen **Sie Abdeckung beenden und Ergebnisse** anzeigen \( Die Instrumentierungsabdeckung beenden und Ergebnisse anzeigen \) aus, wenn Sie die Aufzeichnung der Codeabdeckung ![ beenden ][ImageStopIcon] möchten.  
+    *   Wählen **Sie Start Instrumenting Coverage and Reload Page** \( Start Instrumenting Coverage and Reload Page \) aus, wenn Sie überprüfen möchten, welcher Code zum Laden der ![ Seite erforderlich ](../media/reload-icon.msft.png) ist.  
+    *   Wählen **Sie Instrument Coverage** \( Instrument Coverage ![ \) aus, wenn Sie überprüfen möchten, welcher Code nach der Interaktion mit der ](../media/record-icon.msft.png) Seite verwendet wird.  
+1.  Wählen **Sie Abdeckung beenden und Ergebnisse** anzeigen \( Die Instrumentierungsabdeckung beenden und Ergebnisse anzeigen \) aus, wenn Sie die Aufzeichnung der Codeabdeckung ![ beenden ](../media/stop-icon.msft.png) möchten.  
     
 ## <a name="analyze-code-coverage"></a>Analysieren der Codeabdeckung  
 
@@ -93,12 +93,6 @@ In der Tabelle im **Bereich** "Abdeckung" werden die analysierten Ressourcen und
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageReloadIcon]: ../media/reload-icon.msft.png  
-[ImageRecordIcon]: ../media/record-icon.msft.png  
-[ImageStopIcon]: ../media/stop-icon.msft.png  
 
 <!-- links -->  
 

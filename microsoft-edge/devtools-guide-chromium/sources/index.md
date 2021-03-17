@@ -1,18 +1,18 @@
 ---
 description: Anzeigen und Bearbeiten von Dateien, Erstellen von Codeausschnitten, Debuggen von JavaScript und Einrichten von Arbeitsbereichen im Bereich Quellen von Microsoft Edge DevTools.
-title: Übersicht über das Quellenpanel
+title: Übersicht über den Quellenbereich
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 4677bf82d3506a4b8d6336ded7ab557b794fd3df
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 7ce7ae32b4bf91419512ec9e387cdf75549552a5
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397762"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439605"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,7 +28,7 @@ ms.locfileid: "11397762"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# <a name="sources-panel-overview"></a>Übersicht über das Quellenpanel  
+# <a name="sources-panel-overview"></a>Übersicht über den Quellenbereich  
 
 Verwenden Sie den **** Microsoft Edge DevTools Sources-Bereich, um die folgenden Aktionen durchzuführen.  
 
@@ -101,7 +101,7 @@ Stattdessen können Sie diesen Code in einem Codeausschnitt **speichern** und mi
 
 So führen Sie einen **Codeausschnitt aus:**
 
-*   Öffnen Sie die Datei mithilfe des **Codeausschnittbereichs,** und wählen Sie **Ausführen** \( ![ Die Schaltfläche Ausführen ][ImageRunIcon] \).  
+*   Öffnen Sie die Datei mithilfe des **Codeausschnittbereichs,** und wählen Sie **Ausführen** \( ![ Die Schaltfläche Ausführen ](../media/run-snippet-icon.msft.png) \).  
 *   Öffnen Sie [das Befehlsmenü,][DevtoolsGuideChromiumCommandMenuIndex]löschen Sie das Zeichen, geben Sie ein, geben Sie den Namen Ihres Codeausschnitts `>` `!` ein, und wählen Sie dann **** `Enter` aus.  
     
 Navigieren Sie [zu Codeausschnitte von beliebigen Seiten ausführen,][DevtoolsGuideChromiumJavascriptSnippets] um weitere Informationen zu erhalten.
@@ -125,10 +125,6 @@ Navigieren Sie [zu Bearbeiten von Dateien mit Arbeitsbereichen,][DevtoolsGuideCh
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageRunIcon]: ../media/run-snippet-icon.msft.png  
 
 <!-- links -->  
 

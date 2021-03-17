@@ -3,16 +3,16 @@ description: Debuggen von Hintergrund-Abruf, Hintergrundsynchronisierung, Benach
 title: Debuggen von Hintergrunddiensten mit Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: cf3459e7b5f80a695a855ffdd0c249c2bc223d31
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 15023098c547d31bf46bd387f849b365c13b38f6
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398637"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439528"
 ---
 <!-- Copyright Kayce Basques
 
@@ -60,7 +60,7 @@ Die **Background Fetch-API** ermöglicht es einem **Servicemitarbeiter,** große
        Der **Hintergrund-Abrufbereich**  
     :::image-end:::  
     
-1.  Wählen **Sie Record** \( Record ![ ][ImageRecordIcon] \).  
+1.  Wählen **Sie Record** \( Record ![ ](../media/record-icon.msft.png) \).  
    Nach dem Auslösen einiger Background Fetch-Aktivität protokolliert DevTools die Ereignisse in der Tabelle.  
     
     :::image type="complex" source="../media/javascript-application-background-services-background-fetch.msft.png" alt-text="Ein Protokoll mit Ereignissen im Hintergrund-Abrufbereich" lightbox="../media/javascript-application-background-services-background-fetch.msft.png":::
@@ -87,7 +87,7 @@ Die **Hintergrundsynchronisierungs-API** ermöglicht es einem **Offlinedienstmit
        Der **Bereich Hintergrundsynchronisierung**  
     :::image-end:::  
     
-1.  Wählen **Sie Record** \( Record ![ ][ImageRecordIcon] \).  
+1.  Wählen **Sie Record** \( Record ![ ](../media/record-icon.msft.png) \).  
    Nachdem einige Hintergrundsynchronisierungsaktivitäten ausgelöst wurden, protokolliert DevTools die Ereignisse in der Tabelle.  
     
     :::image type="complex" source="../media/javascript-application-background-services-background-sync.msft.png" alt-text="Ein Ereignisprotokoll im Bereich Hintergrundsynchronisierung" lightbox="../media/javascript-application-background-services-background-sync.msft.png":::
@@ -112,7 +112,7 @@ Nachdem ein **Dienstmitarbeiter** eine [Pushnachricht][MDNPush] von einem Server
        Der **Bereich "Benachrichtigungen"**  
     :::image-end:::  
     
-1.  Wählen **Sie Record** \( Record ![ ][ImageRecordIcon] \).  
+1.  Wählen **Sie Record** \( Record ![ ](../media/record-icon.msft.png) \).  
    Nachdem einige Benachrichtigungsaktivitäten ausgelöst wurden, protokolliert DevTools die Ereignisse in der Tabelle.  
     
     :::image type="complex" source="../media/javascript-application-background-services-notifications.msft.png" alt-text="Ein Ereignisprotokoll im Bereich "Benachrichtigungen"" lightbox="../media/javascript-application-background-services-notifications.msft.png":::
@@ -137,7 +137,7 @@ Um einem Benutzer eine Pushbenachrichtigung **** anzeigen zu können, muss ein D
        Öffnen des **Pushnachrichtenbereichs**  
     :::image-end:::  
     
-1.  Wählen **Sie Record** \( Record ![ ][ImageRecordIcon] \).  
+1.  Wählen **Sie Record** \( Record ![ ](../media/record-icon.msft.png) \).  
     Nachdem einige Pushnachrichtenaktivitäten ausgelöst wurden, protokolliert DevTools die Ereignisse in der Tabelle.  
     
     :::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="Ein Ereignisprotokoll im Pushnachrichtenbereich" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
@@ -153,10 +153,6 @@ Um einem Benutzer eine Pushbenachrichtigung **** anzeigen zu können, muss ein D
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageRecordIcon]: ../media/record-icon.msft.png  
 
 <!-- links -->  
 

@@ -3,16 +3,16 @@ description: Verwenden Sie virtuelle Geräte in Microsoft Edge, um Mobile-First-
 title: Emulieren mobiler Geräte in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, emulation, device, simulation, mobile
-ms.openlocfilehash: 1a83dece95acba386385bfea035a9e2c91639240
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: bb081ddd5f773e5e9ae6a1b83b5fcb13408df6cb
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398784"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439451"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -47,7 +47,7 @@ Einige Aspekte mobiler Geräte werden in DevTools nie emuliert.  Beispielsweise 
 
 ## <a name="simulate-a-mobile-viewport"></a>Simulieren eines mobilen Viewports  
 
-Wählen **Sie Geräteemulation** umschalten \( ![ Gerätesymbolleiste ][ImageDeviceToolbarIcon] umschalten \) oder **DevTools** anpassen und steuern \( `...` \) > Geräteemulation, **** um die Benutzeroberfläche zu öffnen, mit der Sie einen mobilen Ansichtsfenster simulieren können.  
+Wählen **Sie Geräteemulation** umschalten \( ![ Gerätesymbolleiste ](../media/toggle-device-toolbar-dark-icon.msft.png) umschalten \) oder **DevTools** anpassen und steuern \( `...` \) > Geräteemulation, **** um die Benutzeroberfläche zu öffnen, mit der Sie einen mobilen Ansichtsfenster simulieren können.  
 
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="Die Gerätesymbolleiste" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
     Die Gerätesymbolleiste  
@@ -109,7 +109,7 @@ Um die Abmessungen eines bestimmten mobilen Geräts zu simulieren, wählen Sie d
 
 Testen Sie Ihre Webseite im Querformat.  
 
-*   Um den Ansichtsfenster in die Querformatausrichtung zu drehen, wählen Sie **Drehen** \( ![ Drehen ][ImageRotateIcon] \).  
+*   Um den Ansichtsfenster in die Querformatausrichtung zu drehen, wählen Sie **Drehen** \( ![ Drehen ](../media/rotate-dark-icon.msft.png) \).  
     
     :::image type="complex" source="../media/device-mode-toggle-device-toolbar-landscape.msft.png" alt-text="Seite, die im Querformat angezeigt wird" lightbox="../media/device-mode-toggle-device-toolbar-landscape.msft.png":::
        Seite, die im Querformat angezeigt wird  
@@ -216,7 +216,7 @@ Die Drosselung basiert auf der normalen Funktion Ihres Laptops oder Desktops.
 
 Führen Sie die folgenden Schritte aus, um nur die CPU und nicht das Netzwerk zu drosseln.
 
-1.  Wählen Sie **den Bereich** Leistung aus, und wählen Sie **Aufnahmeeinstellungen** \( ![ Aufnahmeeinstellungen ][ImageCaptureIcon] \).
+1.  Wählen Sie **den Bereich** Leistung aus, und wählen Sie **Aufnahmeeinstellungen** \( ![ Aufnahmeeinstellungen ](../media/capture-settings-icon.msft.png) \).
 1.  Wählen **Sie CPU**  >  **4x Verlangsamung** oder **6x Verlangsamung aus.**
     
     :::image type="complex" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="Die CPU-Liste im Leistungsbereich" lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
@@ -242,7 +242,7 @@ Führen Sie die folgenden Schritte aus, um das Netzwerk zu drosseln.
     
 Sie können die Netzwerkeinschränkung auch im Bereich **Leistung** festlegen.  
 
-1.  Wählen **Sie Aufnahmeeinstellungen** \( ![ Aufnahmeeinstellungen ][ImageCaptureIcon] \) aus, **** **** und wählen Sie **** die Liste Netzwerk aus, und ändern Sie die Voreinstellung in Fast 3G oder Slow 3G .  
+1.  Wählen **Sie Aufnahmeeinstellungen** \( ![ Aufnahmeeinstellungen ](../media/capture-settings-icon.msft.png) \) aus, **** **** und wählen Sie **** die Liste Netzwerk aus, und ändern Sie die Voreinstellung in Fast 3G oder Slow 3G .  
     
     :::image type="complex" source="../media/device-mode-performance-network-throttle.msft.png" alt-text="Festlegen der Netzwerkeinschränkung aus dem Leistungsbereich" lightbox="../media/device-mode-performance-network-throttle.msft.png":::
        Festlegen der Netzwerkeinschränkung aus dem **Leistungsbereich**  
@@ -338,12 +338,6 @@ Aktivieren Sie **neben Benutzer-Agent**das **Kontrollkästchen** Automatisch aus
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageCaptureIcon]: ../media/capture-settings-icon.msft.png  
-[ImageDeviceToolbarIcon]: ../media/toggle-device-toolbar-dark-icon.msft.png  
-[ImageRotateIcon]: ../media/rotate-dark-icon.msft.png  
 
 <!-- links -->  
 

@@ -3,16 +3,16 @@ description: Entdecken Sie neue Workflows zum Anzeigen und Ändern von CSS in Mi
 title: CSS-Referenz
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: a99cf46c4c0a6c6f14892268a30f8aab471e919d
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 84aacbb3961f6b8f6e9a0bda8823fecbbb26ec25
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399141"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439303"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -48,7 +48,7 @@ Mit **dem Tool Elemente** von DevTools können Sie die CSS eines Elements gleich
 Verwenden Sie eine der folgenden Aktionen, um ein Element auszuwählen.  
 
 *   Zeigen Sie in Ihrem Viewport auf das Element, öffnen Sie das Kontextmenü \(mit der rechten Maustaste auf\), und wählen Sie **Überprüfen aus.**  
-*   Wählen Sie in DevTools **Ein** Element auswählen \( Element auswählen ![ ][ImageSelectAnElementIcon] \) oder `Control` + `Shift` + `C` \(Windows, Linux\) oder `Command` + `Shift` + `C` \(macOS\) aus, und wählen Sie dann das Element im Viewport aus.  
+*   Wählen Sie in DevTools **Ein** Element auswählen \( Element auswählen ![ ](../media/select-an-element-icon.msft.png) \) oder `Control` + `Shift` + `C` \(Windows, Linux\) oder `Command` + `Shift` + `C` \(macOS\) aus, und wählen Sie dann das Element im Viewport aus.  
 *   Wählen Sie in DevTools das Element in der **DOM-Struktur aus.**  
 *   Führen Sie in DevTools eine Abfrage wie in der Konsole aus, zeigen Sie auf das Ergebnis, öffnen Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste auf\), und wählen Sie im Bereich Elemente anzeigen `document.querySelector('p')` **aus.** ****  
 
@@ -175,7 +175,7 @@ Das **Coverage-Tool** zeigt, welche CSS eine Seite tatsächlich verwendet.
        :::column-end:::
     :::row-end:::  
     
-1.  Wählen **Sie Die Instrumentierungsabdeckung starten aus, und aktualisieren Sie die Seite** \( Starten Sie die ![ Instrumentierungsabdeckung, und aktualisieren Sie die Seite ][ImageRefreshIcon] \).  Die Seite wird aktualisiert, und das **Coverage-Tool** bietet eine Übersicht darüber, wie viel CSS \(und JavaScript\) aus jeder Datei verwendet wird, die der Browser lädt.  Grün steht für verwendete CSS.  Rot steht für nicht verwendete CSS.  
+1.  Wählen **Sie Die Instrumentierungsabdeckung starten aus, und aktualisieren Sie die Seite** \( Starten Sie die ![ Instrumentierungsabdeckung, und aktualisieren Sie die Seite ](../media/refresh-icon.msft.png) \).  Die Seite wird aktualisiert, und das **Coverage-Tool** bietet eine Übersicht darüber, wie viel CSS \(und JavaScript\) aus jeder Datei verwendet wird, die der Browser lädt.  Grün steht für verwendete CSS.  Rot steht für nicht verwendete CSS.  
     
     :::image type="complex" source="../media/css-console-qs-coverage-run.msft.png" alt-text="Eine Übersicht darüber, wie viel CSS (und JavaScript) verwendet und nicht verwendet wird" lightbox="../media/css-console-qs-coverage-run.msft.png":::
        Eine Übersicht darüber, wie viel CSS \(und JavaScript\) verwendet und nicht verwendet wird  
@@ -283,7 +283,7 @@ Führen Sie die folgenden Aktionen aus, um eine Klasse für ein Element zu aktiv
 Führen Sie die folgenden Aktionen aus, um eine neue Formatvorlageregel hinzuzufügen.  
 
 1.  [Wählen Sie ein Element aus.](#choose-an-element)  
-1.  Wählen **Sie Neue Formatvorlageregel** \( ![ Neue Formatvorlageregel ][ImageNewStyleRuleIcon] \).  DevTools fügt eine neue Regel unter der **element.style-Regel** ein.  
+1.  Wählen **Sie Neue Formatvorlageregel** \( ![ Neue Formatvorlageregel ](../media/new-style-rule-icon.msft.png) \).  DevTools fügt eine neue Regel unter der **element.style-Regel** ein.  
 
 > [!NOTE]
 > In der folgenden Abbildung fügt DevTools die `h1.devsite-page-title` Formatvorlageregel hinzu, nachdem Sie **Neue Formatvorlageregel auswählen.**  
@@ -294,7 +294,7 @@ Führen Sie die folgenden Aktionen aus, um eine neue Formatvorlageregel hinzuzuf
 
 #### <a name="choose-which-stylesheet-to-add-a-rule-to"></a>Auswählen des Stylesheets, dem eine Regel hinzugefügt werden soll  
 
-Wenn [Sie eine neue Formatvorlageregel hinzufügen,](#add-a-style-rule)wählen Sie Neue Formatvorlageregel \( Neue Formatvorlageregel \) aus, und halten Sie diese fest, um zu wählen, zu welchem Stylesheet die **** ![ ][ImageNewStyleRuleIcon] Formatvorlageregel hinzugefügt werden soll.  
+Wenn [Sie eine neue Formatvorlageregel hinzufügen,](#add-a-style-rule)wählen Sie Neue Formatvorlageregel \( Neue Formatvorlageregel \) aus, und halten Sie diese fest, um zu wählen, zu welchem Stylesheet die **** ![ ](../media/new-style-rule-icon.msft.png) Formatvorlageregel hinzugefügt werden soll.  
 
 :::image type="complex" source="../media/css-elements-styles-style-new-select-existing.msft.png" alt-text="Auswählen eines Stylesheets" lightbox="../media/css-elements-styles-style-new-select-existing.msft.png":::
    Auswählen eines Stylesheets  
@@ -306,7 +306,7 @@ Führen Sie die folgenden Aktionen aus, um einer bestimmten Position im Formatvo
 
 1.  Zeigen Sie auf die Formatvorlageregel, die sich direkt über der Stelle befindet, an der Sie die neue Formatvorlageregel hinzufügen möchten.  
 1.  [Zeigen Sie die **Symbolleiste Weitere Aktionen** an.](#reveal-the-more-actions-toolbar)  
-1.  Wählen **Sie Formatvorlageregel einfügen unten** \( ![ Formatvorlageregel einfügen unten symbol ][ImageNewStyleRuleIcon] \).  
+1.  Wählen **Sie Formatvorlageregel einfügen unten** \( ![ Formatvorlageregel einfügen unten symbol ](../media/new-style-rule-icon.msft.png) \).  
 
 :::image type="complex" source="../media/css-elements-styles-insert-style-rule-below.msft.png" alt-text="Einfügen von Formatvorlageregel unten" lightbox="../media/css-elements-styles-insert-style-rule-below.msft.png":::
    **Einfügen von Formatvorlageregel unten**  
@@ -360,7 +360,7 @@ Führen Sie die folgenden Aktionen aus, um einem `background-color` Element eine
 
 1.  Zeigen Sie auf die Formatvorlageregel, der Sie die `background-color` Deklaration hinzufügen möchten.  
 1.  [Zeigen Sie die **Symbolleiste Weitere Aktionen** an.](#reveal-the-more-actions-toolbar)  
-1.  Wählen **Sie Hintergrundfarbe hinzufügen** \( Symbol ![ Hintergrundfarbe hinzufügen ][ImageAddBackgroundColorIcon] \).  
+1.  Wählen **Sie Hintergrundfarbe hinzufügen** \( Symbol ![ Hintergrundfarbe hinzufügen ](../media/add-background-color-icon.msft.png) \).  
 
 :::image type="complex" source="../media/css-elements-styles-rule-add-background-color.msft.png" alt-text="Hinzufügen von Hintergrundfarbe" lightbox="../media/css-elements-styles-rule-add-background-color.msft.png":::
    **Hinzufügen von Hintergrundfarbe**  
@@ -372,7 +372,7 @@ Führen Sie die folgenden Aktionen aus, um einem `color` Element eine Deklaratio
 
 1.  Zeigen Sie auf die Formatvorlageregel, der Sie die `color` Deklaration hinzufügen möchten.  
 1.  [Zeigen Sie die **Symbolleiste Weitere Aktionen** an.](#reveal-the-more-actions-toolbar)  
-1.  Wählen **Sie Farbe hinzufügen** \( ![ Farbsymbol hinzufügen ][ImageAddColorIcon] \).  
+1.  Wählen **Sie Farbe hinzufügen** \( ![ Farbsymbol hinzufügen ](../media/add-color-icon.msft.png) \).  
 
 :::image type="complex" source="../media/css-elements-styles-rule-add-color.msft.png" alt-text="Hinzufügen von Farbe" lightbox="../media/css-elements-styles-rule-add-color.msft.png":::
    **Hinzufügen von Farbe**  
@@ -384,7 +384,7 @@ Führen Sie die folgenden Aktionen aus, um einem `box-shadow` Element eine Dekla
 
 1.  Zeigen Sie auf die Formatvorlageregel, der Sie die `box-shadow` Deklaration hinzufügen möchten.  
 1.  [Zeigen Sie die **Symbolleiste Weitere Aktionen** an.](#reveal-the-more-actions-toolbar)  
-1.  Wählen **Sie Hinzufügen von Feldschatten** \( Hinzufügen des ![ Feldschattensymbols ][ImageAddBoxShadowIcon] \) aus.  
+1.  Wählen **Sie Hinzufügen von Feldschatten** \( Hinzufügen des ![ Feldschattensymbols ](../media/add-box-shadow-icon.msft.png) \) aus.  
 
 :::image type="complex" source="../media/css-elements-styles-rule-add-box-shadow.msft.png" alt-text="Hinzufügen von Box Shadow" lightbox="../media/css-elements-styles-rule-add-box-shadow.msft.png":::
    **Hinzufügen von Box Shadow**  
@@ -396,7 +396,7 @@ Führen Sie die folgenden Aktionen aus, um einem `text-shadow` Element eine Dekl
 
 1.  Zeigen Sie auf die Formatvorlageregel, der Sie die `text-shadow` Deklaration hinzufügen möchten.  
 1.  [Zeigen Sie die **Symbolleiste Weitere Aktionen** an.](#reveal-the-more-actions-toolbar)  
-1.  Wählen **Sie Textschatten** hinzufügen \( ![ Textschattensymbol ][ImageAddTextShadowIcon] hinzufügen \).  
+1.  Wählen **Sie Textschatten** hinzufügen \( ![ Textschattensymbol ](../media/add-text-shadow-icon.msft.png) hinzufügen \).  
 
 :::image type="complex" source="../media/css-elements-styles-rule-add-text-shadow.msft.png" alt-text="Hinzufügen von Textschatten" lightbox="../media/css-elements-styles-rule-add-text-shadow.msft.png":::
    **Hinzufügen von Textschatten**  
@@ -532,7 +532,7 @@ In der folgenden Abbildung und Liste werden die einzelnen Benutzeroberflächenel
 
 #### <a name="sample-a-color-off-the-page-with-the-eyedropper"></a>Beispiel für eine Farbe von der Seite mit der Eyedropper  
 
-Wenn Sie die **Farbauswahl öffnen,** ist **die Eyedropper** \( ![ Eyedropper ][ImageEyedropperIcon] \) standardmäßig aktiviert.  Führen Sie die folgenden Aktionen aus, um die ausgewählte Farbe in eine andere Farbe auf der Seite zu ändern.  
+Wenn Sie die **Farbauswahl öffnen,** ist **die Eyedropper** \( ![ Eyedropper ](../media/eyedropper-icon.msft.png) \) standardmäßig aktiviert.  Führen Sie die folgenden Aktionen aus, um die ausgewählte Farbe in eine andere Farbe auf der Seite zu ändern.  
 
 1.  Zeigen Sie im Viewport auf die Zielfarbe.  
 1.  Wählen Sie aus, um dies zu bestätigen.  
@@ -549,17 +549,6 @@ Wenn Sie die **Farbauswahl öffnen,** ist **die Eyedropper** \( ![ Eyedropper ][
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageAddBackgroundColorIcon]: ../media/add-background-color-icon.msft.png  
-[ImageAddBoxShadowIcon]: ../media/add-box-shadow-icon.msft.png  
-[ImageAddColorIcon]: ../media/add-color-icon.msft.png  
-[ImageAddTextShadowIcon]: ../media/add-text-shadow-icon.msft.png  
-[ImageEyedropperIcon]: ../media/eyedropper-icon.msft.png  
-[ImageNewStyleRuleIcon]: ../media/new-style-rule-icon.msft.png  
-[ImageRefreshIcon]: ../media/refresh-icon.msft.png  
-[ImageSelectAnElementIcon]: ../media/select-an-element-icon.msft.png  
 
 <!-- links -->  
 
