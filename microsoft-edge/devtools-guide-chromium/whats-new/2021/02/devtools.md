@@ -1,18 +1,19 @@
 ---
-description: Debugunterstützung für CSS Flexbox, Leistungskopfanzeige auf der Webseite, Probleme mit Toolupdates und mehr
-title: Neues in DevTools (Microsoft Edge 90)
+description: Debugging-Unterstützung für CSS Flexbox, Anzeige zum Leistungs-Heads-up auf der Webseite, Problem von Tool-Updates und mehr
+title: Neuigkeiten in DevTools (Microsoft Edge 90)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/12/2021
+ms.date: 03/15/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 4222bcf7284b69269691ec9fb78094e5efb95793
-ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
-ms.translationtype: MT
+ms.localizationpriority: high
+ms.openlocfilehash: e220bbbe0a545b7cc539d0c77deb2ecb070decc0
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "11408509"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439745"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -27,7 +28,7 @@ ms.locfileid: "11408509"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-# <a name="whats-new-in-devtools-microsoft-edge-90"></a>Neues in DevTools (Microsoft Edge 90)  
+# <a name="whats-new-in-devtools-microsoft-edge-90"></a>Neuigkeiten in DevTools (Microsoft Edge 90)  
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]  
 
@@ -36,40 +37,40 @@ ms.locfileid: "11408509"
 <!-- Title: Grouping the tools in Focus Mode  -->  
 <!-- Subtitle: Organize your favorite tools into groups with the new Focus Mode UI.  -->  
 
-Der Fokusmodus ist eine experimentelle Schnittstelle, mit der Sie verschiedene Tools basierend auf Ihren eigenen Debuggingszenarien gruppieren können.  Die neue **Aktivitätsleiste,** die auf der linken Seite angezeigt wird, enthält vordefinierte Toolgruppen wie **Layout** und **Debugging.**  Schließen Sie zum Anpassen jeder Toolgruppe Tools mit dem Symbol Schließen **\(** \) oder fügen Sie mit dem Symbol Weitere Tools \( \) neue Tools `X` **** `+` hinzu.  
+Der Fokusmodus ist eine experimentelle Oberfläche, mit der Sie verschiedene Tools basierend auf Ihren eigenen Debugging-Szenarien gruppieren können.  Die neue **Aktivitätsleiste,** auf der linken Seite enthält vordefinierte Toolgruppen wie **Layout** und **Debugging.**  Um jede Toolgruppe anzupassen, schließen Sie Tools  mit dem Symbol **Schließen** \(`X`\) oder fügen Sie neue Tools mit dem Symbol **Weitere Tools** \(`+`\) hinzu.  
 
-Navigieren Sie zum Aktivieren [][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures] des Experiments zu Aktivieren experimenteller Features, und wählen Sie die Kontrollkästchen neben Fokusmodus und **DevTools-Toolinfos** und Registerkartenmenüs Aktivieren + aus, um weitere Tools **zu öffnen.**  Weitere Informationen zu diesem Feature oder zum Kommentieren mit Fragen und Ideen finden Sie unter [DevTools: Focus Mode UI][GithubMicrosoftedgeMsedgeexplainersBlobMainDevtoolsFocusmodeExplainer].  
+Um das Experiment einzuschalten, navigieren Sie zu [Experimentelle Features aktivieren][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures] und aktivieren Sie die Kontrollkästchen neben **Fokusmodus und DevTools-QuickInfos** sowie **Registerkartenmenüs Aktivieren + zum Öffnen weiterer Tools**.  Für weitere Informationen zu dieser Funktion oder um Kommentare mit Fragen und Ideen abzugeben, navigieren Sie zu [DevTools: UI-Fokusmodus][GithubMicrosoftedgeMsedgeexplainersBlobMainDevtoolsFocusmodeExplainer].  
 
 :::image type="complex" source="../../media/2021/02/focus-mode.msft.png" alt-text="Anzeigen der Aktivitätsleiste" lightbox="../../media/2021/02/focus-mode.msft.png":::
    Anzeigen der **Aktivitätsleiste**  
 :::image-end:::  
 
-## <a name="learn-about-devtools-with-informative-tooltips"></a>Informationen zu DevTools mit informativen QuickInfos  
+## <a name="learn-about-devtools-with-informative-tooltips"></a>Mehr über DevTools mit informativen QuickInfos erfahren  
 
 <!-- Title: DevTools Tooltips  -->  
 <!-- Subtitle: Learn more about how to use DevTools with informative DevTools tooltips.  -->  
 
-Das DevTools-Tooltips-Feature hilft Ihnen, mehr über alle verschiedenen Tools und Bereiche zu erfahren.  Wählen Sie das Symbol Hilfe \( \) am unteren Rand der Aktivitätsleiste aus, um `?` quickInfos **** in den DevTools umschalten zu können.  Wenn QuickInfos verfügbar sind, zeigen Sie auf jeden umrissenen Bereich von DevTools, um mehr über die Verwendung des Tools zu erfahren.  Navigieren Sie zum Aktivieren [][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures] des Experiments zu Aktivieren experimenteller Features, und wählen Sie die Kontrollkästchen neben Fokusmodus und **DevTools-Toolinfos** und Registerkartenmenüs Aktivieren + aus, um weitere Tools **zu öffnen.**  Weitere Informationen zu diesem Feature oder zum Kommentieren mit Fragen und Ideen finden Sie unter [DevTools: Focus Mode UI][GithubMicrosoftedgeMsedgeexplainersBlobMainDevtoolsFocusmodeExplainer].  
+Das DevTools-QuickInfos-Feature hilft Ihnen, mehr über alle verschiedenen Tools und Bereiche zu erfahren.  Wählen Sie das Symbol Hilfe \(`?`\) unten in der **Aktivitätsleiste**, um die QuickInfos in den DevTools umzuschalten.  Wenn die QuickInfos aktiviert sind, bewegen Sie den Mauszeiger über die einzelnen umrissenen Bereiche von DevTools, um weitere Informationen zur Verwendung des Tools zu erhalten.  Um das Experiment einzuschalten, navigieren Sie zu [Experimentelle Features aktivieren][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures] und aktivieren Sie die Kontrollkästchen neben **Fokusmodus und DevTools-QuickInfos** sowie **Registerkartenmenüs Aktivieren + zum Öffnen weiterer Tools**.  Für weitere Informationen zu dieser Funktion oder um Kommentare mit Fragen und Ideen einzureichen, navigieren Sie zu [DevTools: UI-Fokusmodus][GithubMicrosoftedgeMsedgeexplainersBlobMainDevtoolsFocusmodeExplainer].  
 
-:::image type="complex" source="../../media/2021/02/focus-mode-and-tooltips-help.msft.png" alt-text="Auswählen des Hilfesymbols (?) in der Aktivitätsleiste zum Anzeigen von QuickInfos" lightbox="../../media/2021/02/focus-mode-and-tooltips-help.msft.png":::
-   Wählen Sie das Symbol Hilfe \( `?` \) in der **Aktivitätsleiste aus,** um QuickInfos anzeigen zu können.  
+:::image type="complex" source="../../media/2021/02/focus-mode-and-tooltips-help.msft.png" alt-text="Auswählen des Hilfesymbols (?) In der Aktivitätsleiste, um QuickInfos anzuzeigen" lightbox="../../media/2021/02/focus-mode-and-tooltips-help.msft.png":::
+   Wählen Sie das Symbol Hilfe \(`?`\) in der **Aktivitätsleiste** aus, um QuickInfos anzeigen zu können.  
 :::image-end:::  
 
-## <a name="customize-keyboard-shortcuts-in-settings"></a>Anpassen von Tastenkombinationen in den Einstellungen  
+## <a name="customize-keyboard-shortcuts-in-settings"></a>Anpassen von Tastaturkürzeln in den Einstellungen  
 
 <!-- Title: Change keyboard shortcuts in Settings  -->  
 <!-- TODO:  Rachel's feedback is about the fact that this experimental feature is turned on by default, may have separate section in What's New for experimental features)  -->  
 <!-- Subtitle: Make DevTools work better for you by creating new keyboard shortcuts for any action in the DevTools.  -->  
 
-Sie können jetzt die Tastenkombination für jede Aktion in den DevTools anpassen.  Führen Sie die folgenden Aktionen aus, um eine Tastenkombination zu bearbeiten.  
+Sie können die Tastenkombination nun für jede Aktion in den DevTools anpassen.  Führen Sie die folgenden Aktionen aus, um eine Tastenkombination zu bearbeiten.  
 
-1.  Öffnen Sie die DevTools, und wählen Sie dann **Einstellungen**  >  **Verknüpfungen aus.**  
+1.  Öffnen Sie die DevTools, und wählen Sie dann **Einstellungen**  >  **Verknüpfungen** aus.  
 1.  Wählen Sie die Aktion aus, die Sie anpassen möchten.  
-1.  Wählen Sie bearbeiten \(![Bearbeiten des Tastenkombinationssymbols](../../media/2021/02/edit-keyboard-shortcut-icon.msft.png)\) symbol.  
+1.  Wählen Sie das Bearbeiten \(![Tastenkombinationssymbol "Bearbeiten"](../../media/2021/02/edit-keyboard-shortcut-icon.msft.png)\) -Symbol.  
 1.  Wählen Sie die Schlüssel aus, die Sie an die Aktion binden möchten.  
-1.  Aktivieren Sie das Häkchen \(![Symbol für die Tastenkombination "Häkchen".](../../media/2021/02/checkmark-keyboard-shortcut-icon.msft.png)\) symbol.  
+1.  Aktivieren Sie das Häkchen \(![Tastenkombinationssymbol "Häkchen"](../../media/2021/02/checkmark-keyboard-shortcut-icon.msft.png)\) -Symbol.  
     
-Weitere Informationen zum Anpassen und Bearbeiten von Verknüpfungen finden Sie unter Anpassen von Tastenkombinationen [in den Microsoft Edge DevTools][DevtoolsCustomizeShortcuts].  Um Echtzeitupdates für dieses Feature im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Issue [174309][CR174309].  
+Weitere Informationen zum Anpassen und Bearbeiten von Verknüpfungen finden Sie unter [Anpassen von Tastaturkürzeln in den Microsoft Edge DevTools][DevtoolsCustomizeShortcuts].  Um Echtzeitaktualisierungen dieses Features im Open Source-Projekt Chromium zu überprüfen, navigieren Sie zu Problem [174309][CR174309].  
 
 :::image type="complex" source="../../media/2021/02/custom-shortcut-pause-script-checkmark.msft.png" alt-text="Anpassen von Tastenkombinationen in den DevTools-Einstellungen für Verknüpfungen mit einer Verknüpfung im Bearbeitungsmodus" lightbox="../../media/2021/02/custom-shortcut-pause-script-checkmark.msft.png":::
    Anpassen von Tastenkombinationen in den [DevTools-Einstellungen][DevtoolsCustomizeIndexSettings] für Verknüpfungen mit einer Verknüpfung im Bearbeitungsmodus  
@@ -80,14 +81,14 @@ Weitere Informationen zum Anpassen und Bearbeiten von Verknüpfungen finden Sie 
 <!-- Title: Edge Devtools for Visual Studio code extension update 1.1.4  -->  
 <!-- Subtitle: Latest changes including a favicon is displayed next to each of the instances and console messages from the browser are displayed in the console of Visual Studio Code.  -->  
 
-Die [Microsoft Edge Developer Tools für Visual Studio Codeerweiterung][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools] Version 1.1.4 für Microsoft Visual Studio Code zeigt jetzt neben jeder DevTools-Instanz einen Favicon an.  Konsolennachrichten von Microsoft Edge werden jetzt in der **DevTools-Konsole** unter **Ausgabe** von Microsoft Visual Studio angezeigt.  Microsoft Visual Studio Code aktualisiert Erweiterungen automatisch.  Navigieren Sie zum manuellen Aktualisieren auf Version 1.1.4 zu [Manuelles Aktualisieren einer Erweiterung.][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually]  Sie können Probleme datein und zur Erweiterung im [vscode-edge-devtools-GitHub-Repository][GithubMicrosoftVscodeEdgeDevtools] beitragen.  
+Die [Microsoft Edge Developer Tools für Visual Studio Code][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools] -Erweiterung Version 1.1.4 für Microsoft Visual Studio Code zeigt jetzt neben jeder DevTools-Instanz ein Favicon an.  Konsolennachrichten von Microsoft Edge werden jetzt in der **DevTools-Konsole** unter **Problem** von Microsoft Visual Studio-Code angezeigt.  Microsoft Visual Studio Code aktualisiert Erweiterungen automatisch.  Navigieren Sie zum manuellen Aktualisieren auf Version 1.1.4 zu [Manuelles Aktualisieren einer Erweiterung][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually].  Sie können Probleme einreichen und zur Erweiterung des GitHub-Repos [vscode-edge-devtools][GithubMicrosoftVscodeEdgeDevtools] beitragen.  
 
 :::row:::
    :::column span="":::
-      In der folgenden Abbildung werden Nachrichten von einer Beispielwebseite angezeigt, die im **Konsolentool** in Microsoft Edge protokolliert wurde.  
+      In der folgenden Abbildung werden Nachrichten von einer Beispielwebseite angezeigt, die im **Konsole** -Tool in Microsoft Edge protokolliert wurde.  
    :::column-end:::
    :::column span="":::
-      In der folgenden Abbildung werden die gleichen Nachrichten von der Beispielwebseite angezeigt, die in der **DevTools-Konsole** unter **Ausgabe** von Microsoft Visual Studio ist.  
+      In der folgenden Abbildung werden dieselben Nachrichten von der Beispielwebseite angezeigt, die in der **DevTools-Konsole** unter **Problem** von Microsoft Visual Studio-Code protokolliert ist.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -97,25 +98,25 @@ Die [Microsoft Edge Developer Tools für Visual Studio Codeerweiterung][Visualst
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/visual-studio-code-extension-log-editor.msft.png" alt-text="Anzeigen derselben Meldung in der DevTools-Konsole unter Ausgabe von Microsoft Visual Studio Code" lightbox="../../media/2021/02/visual-studio-code-extension-log-editor.msft.png":::
-         Anzeigen derselben Meldung in der DevTools-Konsole unter Ausgabe von Microsoft Visual Studio Code  
+      :::image type="complex" source="../../media/2021/02/visual-studio-code-extension-log-editor.msft.png" alt-text="Anzeigen derselben Nachricht in der DevTools-Konsole unter Problem von Microsoft Visual Studio-Code" lightbox="../../media/2021/02/visual-studio-code-extension-log-editor.msft.png":::
+         Anzeigen derselben Nachricht in der DevTools-Konsole unter Problem von Microsoft Visual Studio-Code  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-## <a name="improved-css-flexbox-editing-with-visual-flexbox-editor-and-multiple-overlays"></a>Verbesserte CSS-Flexboxbearbeitung mit visuellem Flexbox-Editor und mehreren Überlagerungen  
+## <a name="improved-css-flexbox-editing-with-visual-flexbox-editor-and-multiple-overlays"></a>Verbesserte CSS-Flexbox-Bearbeitung mit visuellem Flexbox-Editor und mehreren Overlays  
 
 <!-- Title: Try different CSS flexbox layouts with the visual flexbox editor  -->  
 <!-- Subtitle: In the Styles pane, choose the icon that appears next to display: flex to try different layout properties for flex containers.  -->  
 
-DevTools verfügt jetzt über dedizierte CSS-Flexbox-Debuggingtools.  Wenn die `display: flex` Oder `display: inline-flex` -CSS-Formatvorlage auf ein HTML-Element angewendet wird, wird neben diesem Element im Tool Elemente ein `flex` **Symbol** angezeigt.  Zum Anzeigen \(oder Ausblenden\) einer Flexüberlagerung auf der Webseite wählen Sie das `flex` Symbol aus.  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Probleme [1166710][CR1166710] und [1175699][CR1175699].  
+DevTools verfügt jetzt über dedizierte CSS-Flexbox-Debuggingtools.  Wenn der `display: flex` oder `display: inline-flex` CSS-Stil auf ein HTML-Element angewendet wird, wird ein `flex` Symbol neben diesem Element im **Element**-Tool angezeigt.  Zum Anzeigen \(oder Ausblenden\) einer Flexüberlagerung auf der Webseite wählen Sie das `flex` Symbol aus.  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Probleme [1166710][CR1166710] und [1175699][CR1175699].  
 
 :::row:::
    :::column span="":::
-      Navigieren Sie zum Öffnen des **** **Flexbox-Editors** zum Bereich `display: flex` Formatvorlagen, und wählen Sie das neue Symbol neben dem Format oder `display: inline-flex` aus.  Der **Flexbox-Editor** bietet eine schnelle Möglichkeit zum Bearbeiten der flexbox-Eigenschaften.  
+      Navigieren Sie zum Öffnen des **Flexbox** -Editors zum Bereich**Stile**, und wählen Sie das neue Symbol neben dem Stil `display: flex` oder `display: inline-flex` aus.  Der **Flexbox** -Editor bietet eine schnelle Möglichkeit, die Flexbox-Eigenschaften zu bearbeiten.  
    :::column-end:::
    :::column span="":::
-      Darüber hinaus werden im **Abschnitt Flexbox** im **Layoutbereich** alle flexbox-Elemente auf der Webseite angezeigt.  Sie können die Überlagerung der einzelnen Elemente umschalten.  
+      Darüber hinaus werden im Abschnitt **Flexbox** im Bereich **Layout** alle Flexbox-Elemente auf der Webseite angezeigt.  Sie können die Überlagerung der einzelnen Elemente umschalten.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -126,49 +127,49 @@ DevTools verfügt jetzt über dedizierte CSS-Flexbox-Debuggingtools.  Wenn die `
    :::column-end:::
    :::column span="":::
       :::image type="complex" source="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png" alt-text="Abschnitt "Flexbox" im Layoutbereich" lightbox="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png":::
-         **Abschnitt "Flexbox"** im **Layoutbereich**  
+         Abschnitt **Flexbox** im Bereich **Layout**  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-## <a name="keyboard-navigation-improvements-for-network-requests"></a>Verbesserungen bei der Tastaturnavigation für Netzwerkanforderungen  
+## <a name="keyboard-navigation-improvements-for-network-requests"></a>Verbesserungen der Tastaturnavigation für Netzwerkanforderungen  
 
 <!-- Title: Navigate the request initiator chain in the Network tool with the keyboard  -->  
 <!-- Subtitle: The Initiator pane may now be expanded or collapsed with the arrow keys.  -->  
 
-Zuvor waren Sie nicht in der Lage, die Kette von Anforderungen mithilfe der Pfeiltasten auf der Tastatur im **Bereich Initiator** zu erweitern oder zu reduzieren, im Gegensatz zum DOM im **Elementtool.**  Wenn eine Netzwerkanforderung im **** Netzwerktool ausgewählt ist, zeigt der **Bereich Initiator** die Kette der Anforderungen an, die die aktuell ausgewählte Anforderung initiiert haben.  
+Bisher war es Ihnen nicht möglich, die Anforderungskette mithilfe der Pfeiltasten auf der Tastatur im Bereich **Initiator** zu erweitern oder zu reduzieren, im Gegensatz zum DOM im Tool **Elemente**.  Wenn im **Netzwerk** -Tool eine Netzwerkanforderung ausgewählt ist, wird im Bereich **Initiator** die Anforderungskette angezeigt, welche die aktuell ausgewählte Anforderung initiiert hat.  
 
-In Microsoft Edge, Version 90, können Sie die Kette von Anforderungen mithilfe der Pfeiltasten auf der Tastatur im Bereich **Initiator** erweitern oder reduzieren.  Die fokussierte Netzwerkanforderung in der Kette wird nun ebenfalls hervorgehoben.  Weitere Informationen zu Initiatoren im **Netzwerktool** finden Sie unter [Anzeigen von Initiatoren und Abhängigkeiten.][DevtoolsNetworkReferenceDisplayInitiatorsDependencies]  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Probleme [1158276][CR1158276] und [1160637][CR1160637].  
+In Microsoft Edge Version 90 können Sie die Anforderungskette mithilfe der Pfeiltasten auf der Tastatur im Bereich **Initiator** erweitern oder reduzieren.  Die fokussierte Netzwerkanforderung in der Kette wird jetzt ebenfalls hervorgehoben.  Weitere Informationen zu Initiatoren im **Netzwerk** -Tool finden Sie unter [Anzeigen von Initiatoren und Abhängigkeiten][DevtoolsNetworkReferenceDisplayInitiatorsDependencies].  Um den Verlauf dieses Features im Chromium-Open-Source-Projekt zu überprüfen, navigieren Sie zu den Problemen [1158276][CR1158276] und [1160637][CR1160637].  
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/network-request-initiator-chain.msft.png" alt-text="Wählen Sie eine Netzwerkanforderung aus, und wählen Sie den Bereich Initiator aus." lightbox="../../media/2021/02/network-request-initiator-chain.msft.png":::
-         Wählen Sie eine Netzwerkanforderung aus, und wählen Sie den **Bereich Initiator** aus.  
+      :::image type="complex" source="../../media/2021/02/network-request-initiator-chain.msft.png" alt-text="Wählen Sie eine Netzwerkanforderung und dann den Initiatorbereich." lightbox="../../media/2021/02/network-request-initiator-chain.msft.png":::
+         Wählen Sie eine Netzwerkanforderung und dann den Bereich **Initiator**  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/network-request-initiator-chain-right-arrow-down-twice-down-arrow-thrice.msft.png" alt-text="Erweitern oder Reduzieren der Anforderungsinitiatorkette und Folgen der hervorgehobenen Zeile" lightbox="../../media/2021/02/network-request-initiator-chain-right-arrow-down-twice-down-arrow-thrice.msft.png":::
-         Erweitern oder Reduzieren der Anforderungsinitiatorkette und Folgen der hervorgehobenen Zeile  
+      :::image type="complex" source="../../media/2021/02/network-request-initiator-chain-right-arrow-down-twice-down-arrow-thrice.msft.png" alt-text="Erweitern oder reduzieren Sie die Anforderungsinitiator-Kette und folgen Sie der markierten Zeile" lightbox="../../media/2021/02/network-request-initiator-chain-right-arrow-down-twice-down-arrow-thrice.msft.png":::
+         Erweitern oder reduzieren Sie die Anforderungsinitiator-Kette und folgen Sie der markierten Zeile  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-## <a name="filtering-in-the-console-is-more-consistent"></a>Filtern in der Konsole ist konsistenter  
+## <a name="filtering-in-the-console-is-more-consistent"></a>Das Filtern in der Konsole ist konsistenter  
 
 <!-- Title: Console improvements make filtering more consistent  -->  
 <!-- Subtitle: The Log Levels dropdown is more clearly disabled when using filters in the Console sidebar.  -->  
 
-Während Sie mit der [Konsolenseite filtern,][DevtoolsConsoleReferenceOpenConsoleSidebar]sind die Filter im Dropdownmenü [Protokollebenen][DevtoolsConsoleReferenceFilterByLogLevel] nicht verfügbar.  Zuvor wurde das **Dropdown "Protokollebenen"** hervorgehoben, wenn Sie mit dem Mauszeiger auf sie zeigen, auch wenn ein Filter aus der **Konsolen-Seitenleiste** ausgewählt wurde.  In Microsoft Edge, Version 90, wird das Dropdown **"Protokollebenen"** nicht mehr hervorgehoben, wenn Sie den Mauszeiger auf sie zeigen, während ein Filter aus der **Konsolenseite ausgewählt** wird.  Weitere Informationen zum Filtern in der **Konsole finden**Sie unter Filtern [von Nachrichten][DevtoolsConsoleReferenceFilterMessages].  
+Während Sie mit der [Konsolen-Randleiste][DevtoolsConsoleReferenceOpenConsoleSidebar] filtern, sind die Filter in der Dropdown-Liste [Protokollebenen][DevtoolsConsoleReferenceFilterByLogLevel] nicht verfügbar.  Zuvor wurde die Dropdown-Liste **Protokollebenen** hervorgehoben, wenn Sie mit der Maus darüber gefahren sind, obwohl ein Filter aus der **Konsolen-Randleiste** ausgewählt wurde.  In Microsoft Edge Version 90 wird die Dropdown-Liste **Protokollebenen** nicht mehr hervorgehoben, wenn Sie den Mauszeiger darüber halten, während ein Filter aus der **Konsolen-Randleiste** ausgewählt ist.  Weitere Informationen zum Filtern in der **Konsole** finden Sie unter [Nachrichten filtern][DevtoolsConsoleReferenceFilterMessages].  
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/console-sidebar-default-levels-old.msft.png" alt-text="Wenn Sie zuvor die Konsolen-Seitenleiste öffnen und auf Standardebenen zeigen, wurde sie hervorgehoben." lightbox="../../media/2021/02/console-sidebar-default-levels-old.msft.png":::
-         Wenn Sie zuvor die Konsolen-Seitenleiste öffnen und auf Standardebenen zeigen, **wurde** sie hervorgehoben. ****  
+      :::image type="complex" source="../../media/2021/02/console-sidebar-default-levels-old.msft.png" alt-text="Wenn Sie zuvor die Konsolen-Randleiste geöffnet haben und mit der Maus über die Standardebenen bewegen, wurde diese hervorgehoben." lightbox="../../media/2021/02/console-sidebar-default-levels-old.msft.png":::
+         Wenn Sie zuvor die **Konsolen-Randleiste** geöffnet haben und mit der Maus über die **Standardebenen** bewegen, wurde diese hervorgehoben.  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/console-sidebar-default-levels-new.msft.png" alt-text="Wenn Sie ab Microsoft Edge 90 die Konsolen-Seitenleiste auswählen und auf Standardebenen zeigen, wird dies nicht hervorgehoben." lightbox="../../media/2021/02/console-sidebar-default-levels-new.msft.png":::
-         Wenn Sie ab Microsoft Edge 90 die Konsolen-Seitenleiste auswählen und auf Standardebenen **zeigen,** wird dies nicht hervorgehoben. ****  
+      :::image type="complex" source="../../media/2021/02/console-sidebar-default-levels-new.msft.png" alt-text="Wenn Sie ab Microsoft Edge 90 die Konsolen-Randleiste auswählen und den Mauszeiger auf den Standardebenen bewegen, wird diese nicht hervorgehoben." lightbox="../../media/2021/02/console-sidebar-default-levels-new.msft.png":::
+         Wenn Sie ab Microsoft Edge 90 die **Konsolen-Randleiste** auswählen und den Mauszeiger auf den **Standardebenen** bewegen, wird diese nicht hervorgehoben.  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -177,109 +178,109 @@ Während Sie mit der [Konsolenseite filtern,][DevtoolsConsoleReferenceOpenConsol
 
 [!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]  
 
-### <a name="the-console-now-escapes-double-quote-characters"></a>Die Konsole entweicht jetzt doppelten Anführungszeichen  
+### <a name="the-console-now-escapes-double-quote-characters"></a>Die Konsole entkommt nun doppelten Anführungszeichen  
 
-Zuvor hat die **Konsole** keine gültigen doppelten Anführungszeichen \( `"` \) in JavaScript-Zeichenfolgen ausgegeben.  Ab Microsoft Edge, Version 90, gibt die **Konsole** JavaScript-Zeichenfolgen unter Verwendung von Escape-Doppelanführungszeichen \( `"` \) aus.  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Issue [1178530][CR1178530].  
+Zuvor hat die **Konsole** keine gültigen doppelten Anführungszeichen \(`"`\) in JavaScript-Zeichenfolgen ausgegeben.  Ab Microsoft Edge Version 90 gibt die **Konsole** JavaScript-Zeichenfolgen mit maskierten doppelten Anführungszeichen \(`"`\) aus.  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Problem [1178530][CR1178530].  
 
-:::image type="complex" source="../../media/2021/02/console-string-formatted-double-quotes.msft.png" alt-text="Die Konsole gibt JavaScript-Zeichenfolgen mithilfe von Escapezeichen für doppelte Anführungszeichen (&#0022;) aus." lightbox="../../media/2021/02/console-string-formatted-double-quotes.msft.png":::
-   Die **Konsole gibt** JavaScript-Zeichenfolgen unter Verwendung von Escape-Doppelanführungszeichen \( `"` \) aus.  
+:::image type="complex" source="../../media/2021/02/console-string-formatted-double-quotes.msft.png" alt-text="Die Konsole gibt JavaScript-Zeichenfolgen mit maskierten doppelten Anführungszeichen (& # 0022;) aus" lightbox="../../media/2021/02/console-string-formatted-double-quotes.msft.png":::
+   Die **Konsole** gibt JavaScript-Zeichenfolgen unter Verwendung von maskierten doppelten Anführungszeichen \(`"`\) aus.  
 :::image-end:::  
 
-### <a name="emulate-the-css-color-gamut-media-feature"></a>Emulieren des CSS-Farbskala-Medienfeatures  
+### <a name="emulate-the-css-color-gamut-media-feature"></a>Emulieren des CSS-Medienfeatures mit Farbskala  
 
-Die [Farbskala-Medienabfrage][ChromestatusFeature5354410980933632] emuliert den ungefähren Farbbereich, der vom Browser und dem getesteten Gerät unterstützt wird.  Das Dropdown unter **Emulieren der Farbskala** des CSS-Medienfeatures enthält Farbräume, die DevTools emulieren kann.  Um beispielsweise eine Medienabfrage auszulösen, wählen Sie im `color-gamut: p3` **Dropdownmenü Farbskala: p3** aus.  
+Die Medienabfrage mit [Farbskala][ChromestatusFeature5354410980933632] emuliert den ungefähren Farbbereich, der vom Browser und dem zu testenden Gerät unterstützt wird.  Das Dropdown-Menü unter **Emulieren der Farbskala für CSS-Medienfunktionen** enthält Farbräume, die DevTools möglicherweise emulieren.  Beispielsweise, zum Auslösen einer `color-gamut: p3` Medienabfrage, wählen Sie die **Farbskala: p3**in der Dropdown-Liste.  
 
-Führen Sie die folgenden Aktionen aus, um das CSS-Farb gamut-Medienfeature zu emulieren.  
+Zum Emulieren des CSS-Features für Farbskalenmedien, führen Sie die folgenden Aktionen aus.  
 
 1.  Öffnen Sie das [Befehlsmenü][DevtoolsCommandMenuIndex].  
 1.  Geben Sie `Rendering` ein.  
-1.  Führen Sie den **Befehl Rendering anzeigen** aus.  
-1.  Navigieren Sie **zu Css-Medienfeature-Farbskala emulieren,** und wählen Sie eine Option aus.  
+1.  Führen Sie den Befehl **Rendering anzeigen** aus.  
+1.  Navigieren Sie zu **Emulieren der Farbskala für CSS-Medienfunktionen** und wählen Sie eine Option aus.  
 
-Um mehr über das Feature zu `color-gamut` erfahren, navigieren Sie zu [Farbanzeigequalität: das Feature "Farbskala".][CsswgDraftsMediaqueries4ColorGamut]  Navigieren Sie zu Issue [1073887,][CR1073887]um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen.  
+Um mehr über das `color-gamut` Feature zu erfahren, navigieren Sie zu [Farbanzeigequalität: das Feature "Farbskala"][CsswgDraftsMediaqueries4ColorGamut].  Navigieren Sie zur Problem [1073887][CR1073887], um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen.  
 
-:::image type="complex" source="../../media/2021/02/rendering-css-color-gamut.msft.png" alt-text="Emulieren des CSS-Farbskala-Medienfeatures" lightbox="../../media/2021/02/rendering-css-color-gamut.msft.png":::
-   Emulieren des CSS-Farbskala-Medienfeatures  
+:::image type="complex" source="../../media/2021/02/rendering-css-color-gamut.msft.png" alt-text="Emulieren des CSS-Medienfeatures mit Farbskala" lightbox="../../media/2021/02/rendering-css-color-gamut.msft.png":::
+   Emulieren des CSS-Medienfeatures mit Farbskala  
 :::image-end:::  
 
 ### <a name="improved-progressive-web-apps-tooling"></a>Verbesserte Progressive Web Apps-Tools  
 
-#### <a name="pwa-installability-warning-in-the-console"></a>Warnung zur Installation von PWA in der Konsole  
+#### <a name="pwa-installability-warning-in-the-console"></a>PWA-Installationswarnung in der Konsole  
 
-Die **Konsole** zeigt nun eine ausführlichere Warnung zur Installation von [Progressive Web Apps (PWA)][ProgressiveWebAppsIndex] mit einem Link zur Verbesserung der [Progressive Web App-Offlineunterstützungserkennung an.][ChromeDeveloperBlogImprovedPwaOfflineDetection]  
+Die **Konsole** zeigt jetzt eine detailliertere Warnmeldung zur Installiationsfähigkeit von [Progressive Web Apps (PWA)][ProgressiveWebAppsIndex] mit einem Link zur [Verbesserung der Offline-Supporterkennung für Progressive Web Apps][ChromeDeveloperBlogImprovedPwaOfflineDetection] an.  
 
-:::image type="complex" source="../../media/2021/02/console-pwa-installability.msft.png" alt-text="Warnung zur Installation von PWA im Konsolentool" lightbox="../../media/2021/02/console-pwa-installability.msft.png":::
-   Warnung zur Installation von PWA im **Konsolentool**  
+:::image type="complex" source="../../media/2021/02/console-pwa-installability.msft.png" alt-text="Warnung zur Installiationsfähigkeit von PWA im Konsolentool" lightbox="../../media/2021/02/console-pwa-installability.msft.png":::
+   Warnung zur Installiationsfähigkeit von PWA im Tool **Konsole**  
 :::image-end:::  
 
 #### <a name="pwa-description-length-warning-in-the-manifest-pane"></a>Warnung zur Länge der PWA-Beschreibung im Manifestbereich
 
-Im **Manifestbereich** wird nun eine Warnmeldung angezeigt, wenn die Manifestbeschreibung 324 Zeichen überschreitet.  
+Im Bereich **Manifest** wird jetzt eine Warnmeldung angezeigt, wenn die Manifestbeschreibung mehr als 324 Zeichen enthält.  
 
 :::image type="complex" source="../../media/2021/02/application-manifest-errors-and-warnings-truncated.msft.png" alt-text="Warnung zum Kürzen der PWA-Beschreibung" lightbox="../../media/2021/02/application-manifest-errors-and-warnings-truncated.msft.png":::
    Warnung zum Kürzen der PWA-Beschreibung  
 :::image-end:::  
 
-Navigieren Sie zu Probleme [965802,][CR965802] [1146450][CR1146450]und [1169689,][CR1169689]um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen.  
+Navigieren Sie zu den Problemen [965802][CR965802], [1146450][CR1146450] und [1169689][CR1169689], um den Verlauf dieser Funktion im Chromium-Open-Source-Projekt zu überprüfen.  
 
-### <a name="new-remote-address-space-column-in-the-network-tool"></a>Neue Spalte "Remote address space" im Netzwerktool  
+### <a name="new-remote-address-space-column-in-the-network-tool"></a>Neue Remote-Adressraum-Spalte im Netzwerk-Tool  
 
 <!-- does not work in canary 90.0.813.0 -->  
-In der neuen **Spalte Remoteadressenraum** wird der Netzwerk-IP-Adressraum jeder Netzwerkressource angezeigt.  Führen Sie die folgenden Aktionen aus, um die neue Spalte Remoteadressenraum anzeigen zu können.  
+In der neuen Spalte **Remote-Adressraum** wird der Netzwerk-IP-Adressraum jeder Netzwerkressource angezeigt.  Führen Sie die folgenden Aktionen aus, um die neue Spalte "Remote-Adressraum" anzuzeigen.  
 
-1.  Navigieren Sie zum **Netzwerktool.**  
-1.  Zeigen Sie in der Tabelle Anforderungen auf die Kopfzeile, und öffnen Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste\).  Informationen zum Hinzufügen oder Entfernen von Spalten aus der Tabelle Anforderungen finden Sie unter [Hinzufügen oder Entfernen von Spalten.][DevtoolsNetworkReferenceAddRemoveColumns]  
-1.  Wählen **Sie Remoteadressenbereich aus.**  
+1.  Navigieren Sie zum **Netzwerk**-Tool.  
+1.  Bewegen Sie den Mauszeiger in der Tabelle "Anforderungen" über die Kopfzeile und öffnen Sie das Kontextmenü \(Rechtsklick\).  Navigieren Sie zu [Spalten hinzufügen oder entfernen][DevtoolsNetworkReferenceAddRemoveColumns], um zu erfahren, wie Sie Spalten zur Tabelle "Anforderungen" hinzufügen oder daraus entfernen.  
+1.  Wählen Sie **Remote-Adressraum** aus.  
     
-In der Tabelle Anforderungen wird nun eine neue Spalte mit der Kopfzeile **"Remote address Space" angezeigt.**  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Issue [1128885][CR1128885].  
+In der Tabelle "Anforderungen" wird jetzt eine neue Spalte mit der Kopfzeile **Remote-Adressraum** angezeigt.  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Problem [1128885][CR1128885].  
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/network-requests-contextual-menu-remote-address-space.msft.png" alt-text="Wählen Sie im Kontextmenü Remoteadressenbereich aus." lightbox="../../media/2021/02/network-requests-contextual-menu-remote-address-space.msft.png":::
-         Wählen Sie im Kontextmenü den **Remoteadressenbereich aus.**  
+      :::image type="complex" source="../../media/2021/02/network-requests-contextual-menu-remote-address-space.msft.png" alt-text="Wählen Sie im Kontextmenü Remote-Adressraum" lightbox="../../media/2021/02/network-requests-contextual-menu-remote-address-space.msft.png":::
+         Wählen Sie im Kontextmenü den **Remote-Adressraum**  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/network-requests-remote-address-space.msft.png" alt-text="In der Tabelle Anforderungen wird nun die Spalte Remoteadressenbereich angezeigt." lightbox="../../media/2021/02/network-requests-remote-address-space.msft.png":::
-         In der Tabelle Anforderungen wird nun die **Spalte Remoteadressenbereich** angezeigt. :::image-end:::  
+      :::image type="complex" source="../../media/2021/02/network-requests-remote-address-space.msft.png" alt-text="In der Tabelle "Anforderungen" wird jetzt die Spalte "Remote-Adressraum" angezeigt." lightbox="../../media/2021/02/network-requests-remote-address-space.msft.png":::
+         In der Tabelle "Anforderungen" wird jetzt die Spalte **Remote-Adressraum** angezeigt. :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
 ### <a name="display-allowed-and-disallowed-features-in-the-frame-details-view"></a>Anzeigen zulässiger und nicht zulässiger Features in der Frame-Detailansicht  
 
-Die Frame-Detailansicht zeigt nun eine Liste der zulässigen und nicht zulässigen Browserfeatures an, die durch die [Berechtigungsrichtlinie gesteuert werden.][GithubW3cWebappsecPermissionsPolicyBlobMainPermissionsPolicyExplainer]  Die Berechtigungsrichtlinie ist eine Webplattform-API, mit der eine Webseite die Verwendung von Browserfeatures in einem einzelnen Frame oder in iframes ermöglicht wird, die sie einbettet.  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Issue [1158827][CR1158827].  
+In der Frame-Detailansicht wird jetzt eine Liste der zulässigen und nicht zulässigen Browserfunktionen angezeigt, die von der [Berechtigungsrichtlinie][GithubW3cWebappsecPermissionsPolicyBlobMainPermissionsPolicyExplainer] gesteuert werden.  Die Berechtigungsrichtlinie ist eine Webplattform-API, die es einer Webseite ermöglicht (oder blockiert), Browserfeatures in einem einzelnen Frame oder in eingebetteten iframes zu verwenden.  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Problem [1158827][CR1158827].  
 
-:::image type="complex" source="../../media/2021/02/application-frames-permissions-policy.msft.png" alt-text="Zugelassene und nicht zulässige Features basierend auf der Berechtigungsrichtlinie" lightbox="../../media/2021/02/application-frames-permissions-policy.msft.png":::
-   Zugelassene und nicht zulässige Features basierend auf der Berechtigungsrichtlinie  
+:::image type="complex" source="../../media/2021/02/application-frames-permissions-policy.msft.png" alt-text="Zulässige und nicht zulässige Features basierend auf der Berechtigungsrichtlinie" lightbox="../../media/2021/02/application-frames-permissions-policy.msft.png":::
+   Zulässige und nicht zulässige Features basierend auf der Berechtigungsrichtlinie  
 :::image-end:::  
 
-### <a name="new-sameparty-column-in-the-cookies-pane"></a>Neue Spalte SameParty im Bereich Cookies  
+### <a name="new-sameparty-column-in-the-cookies-pane"></a>Neue SameParty-Spalte im Bereich "Cookies"  
 
-Im **Bereich Cookies** im **Anwendungstool** wird nun das `SameParty` Attribut für jedes Cookie angezeigt.  Das Attribut ist ein neues boolesches Attribut, das angibt, ob ein Cookie in Anforderungen an Ursprünge derselben `SameParty` [First-Party-Sets enthalten ist.][GithubPrivacycgFirstPartySets]  Navigieren Sie zu Issue [1161427,][CR1161427]um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen.  
+Im Bereich **Cookies** im Tool **Anwendung** wird jetzt das `SameParty` Attribut für jedes Cookie angezeigt.  Das `SameParty` Attribut ist ein neues boolesches Attribut, das angibt, ob ein Cookie in Anforderungen an Ursprünge derselben [First-Party-Sets][GithubPrivacycgFirstPartySets] enthalten ist.  Navigieren Sie zu Problem [1161427][CR1161427], um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen.  
 
-:::image type="complex" source="../../media/2021/02/application-storage-cookies-sameparty.msft.png" alt-text="Spalte SameParty im Bereich Cookies" lightbox="../../media/2021/02/application-storage-cookies-sameparty.msft.png":::
-   **Spalte SameParty** im **Bereich Cookies**  
+:::image type="complex" source="../../media/2021/02/application-storage-cookies-sameparty.msft.png" alt-text="SameParty-Spalte im Bereich "Cookies"" lightbox="../../media/2021/02/application-storage-cookies-sameparty.msft.png":::
+   **SameParty**-Spalte im Bereich **Cookies**  
 :::image-end:::  
 
-### <a name="fndisplayname-property-in-the-console-tool-is-now-deprecated"></a>Die fn.displayName-Eigenschaft im Konsolentool ist nun veraltet.  
+### <a name="fndisplayname-property-in-the-console-tool-is-now-deprecated"></a>Die Eigenschaft fn.displayName im Konsolentool ist jetzt veraltet.  
 
-Zuvor konnten Sie mit der Eigenschaft Debugnamen für Funktionen steuern, die in und `fn.displayName` `error.stack` in DevTools-Stapelverfolgungen angezeigt werden können.  Ab Microsoft Edge, Version 90, ist die Eigenschaft veraltet `fn.displayName` und wird durch die Eigenschaft `fn.name` ersetzt.  Verwenden Sie die `Object.defineProperty` Standardmethode, um die Eigenschaft `fn.name` zu definieren.  Um mehr über zu `fn.name` erfahren, navigieren Sie [zu Function.name][MdnJavascriptReferenceGlobalObjectsFunctionName].  Navigieren Sie zu Issue [1177685,][CR1177685]um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen.  
+Bisher konnten Sie mit der `fn.displayName` Eigenschaft Debug-Namen für Funktionen steuern, die in `error.stack` und in DevTools-Stapelüberwachung angezeigt werden sollen.  Ab Microsoft Edge Version 90 ist die `fn.displayName` Eigenschaft jetzt veraltet und wird durch die `fn.name` Eigenschaft ersetzt.  Verwenden Sie die `Object.defineProperty` Standardmethode, um die `fn.name` Eigenschaft zu definieren.  Um mehr über zu `fn.name` erfahren, navigieren Sie zu [Function.name][MdnJavascriptReferenceGlobalObjectsFunctionName].  Navigieren Sie zu Problem [1177685][CR1177685], um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen.  
 
-:::image type="complex" source="../../media/2021/02/console-display-name-name.msft.png" alt-text="Ein Beispiel für die fn.name-Eigenschaft zum Steuern von Debugnamen für Funktionen" lightbox="../../media/2021/02/console-display-name-name.msft.png":::
-   Ein Beispiel für die `fn.name` Eigenschaft zum Steuern von Debugnamen für Funktionen  
+:::image type="complex" source="../../media/2021/02/console-display-name-name.msft.png" alt-text="Ein Beispiel für die Eigenschaft fn.name zur Steuerung von Debug-Namen für Funktionen" lightbox="../../media/2021/02/console-display-name-name.msft.png":::
+   Ein Beispiel für die `fn.name` Eigenschaft zur Steuerung von Debug-Namen für Funktionen  
 :::image-end:::  
 
-### <a name="full-accessibility-tree-view-in-the-elements-tool"></a>Vollständige Barrierefreiheitsstrukturansicht im Elementtool  
+### <a name="full-accessibility-tree-view-in-the-elements-tool"></a>Vollständige Barrierefreiheitsstrukturansicht im Elements-Tool  
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
 
-Dieses Experiment bietet eine **vollständige Barrierefreiheitsstrukturansicht** im **Elementtool.**  Der [Bereich Barrierefreiheit][DevtoolsAccessibilityReferenceTheAccessibilityPane] bietet eine teilweise Barrierefreiheitsstrukturansicht, in der die direkte Vorgängerkette vom Stammknoten zum überprüften Knoten angezeigt wird.  
-Nachdem Sie dieses Experiment aktivieren und die DevTools neu laden, wählen Sie eine der folgenden Schaltflächen aus, um die Anzeige im Elementtool für alle Elemente auf der Webseite zu wechseln.  
+Dieses Experiment bietet eine **vollständige Barrierefreiheitsstrukturansicht** im **Elemente**-Tool.  Der Bereich [Barrierefreiheit][DevtoolsAccessibilityReferenceTheAccessibilityPane] bietet eine teilweise Barrierefreiheitsstrukturansicht, in der die direkte Ahnenkette vom Stammknoten zum inspizierten Knoten angezeigt wird.  
+Nachdem Sie dieses Experiment aktiviert und die DevTools neu geladen haben, wählen Sie eine der folgenden Schaltflächen, um die Anzeige im Elementwerkzeug für alle Elemente auf der Webseite zu wechseln.  
 
-*   Wählen Sie zum Anzeigen der vollständigen Barrierefreiheitsstrukturansicht die **Ansicht Barrierefreiheitsstruktur wechseln aus.**  
-*   Wählen Sie zum Anzeigen der DOM-Strukturansicht die **Ansicht Wechseln zu DOM-Struktur aus.**  
+*   Um die vollständige Barrierefreiheitsstrukturansicht anzuzeigen, wählen Sie **Zur Barrierefreiheitsstrukturansicht wechseln**.  
+*   Wählen Sie zum Anzeigen der DOM-Strukturansicht **Zur DOM-Strukturansicht wechseln** aus.  
     
-Um das Experiment zu aktivieren, navigieren Sie zu Experimentelle Features [aktivieren,][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures] und aktivieren Sie das Kontrollkästchen neben Vollständige Barrierefreiheitsstrukturansicht aktivieren **im Bereich Elemente.**  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Issue [887173][CR887173].  
+Um das Experiment zu aktivieren, navigieren Sie zu [Experimentelle Features aktivieren][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures] und aktivieren Sie das Kontrollkästchen neben **Aktivieren der vollständigen Barrierefreiheitsstruktur im Elementbereich**.  Um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen, navigieren Sie zu Problem [887173][CR887173].  
 
 :::row:::
    :::column span="":::
@@ -305,53 +306,53 @@ Wenn Sie unter Windows, Linux oder macOS arbeiten, sollten Sie die [Microsoft Ed
 <!-- links -->  
 
 [DevtoolsAccessibilityReferenceTheAccessibilityPane]: /microsoft-edge/devtools-guide-chromium/accessibility/reference#the-accessibility-pane "Der Bereich Barrierefreiheit – Barrierefreiheitsreferenz | Microsoft Docs"  
-[DevtoolsCommandMenuIndex]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Ausführen von Befehlen mit der Microsoft Edge DevTools-Befehlsmenüleiste | Microsoft Docs"  
+[DevtoolsCommandMenuIndex]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Ausführen von Befehlen mit dem Microsoft Edge DevTools-Befehlsmenü | Microsoft Docs"  
 [DevtoolsConsoleReferenceFilterByLogLevel]: /microsoft-edge/devtools-guide-chromium/console/reference#filter-by-log-level "Filtern nach Protokollebene – Konsolenreferenz | Microsoft Docs"  
 [DevtoolsConsoleReferenceFilterMessages]: /microsoft-edge/devtools-guide-chromium/console/reference#filter-messages "Filtern von Nachrichten – Konsolenreferenz | Microsoft Docs"  
-[DevtoolsConsoleReferenceOpenConsoleSidebar]: /microsoft-edge/devtools-guide-chromium/console/reference#open-the-console-sidebar "Öffnen Sie die Konsolenseite – Konsolenreferenz | Microsoft Docs"  
+[DevtoolsConsoleReferenceOpenConsoleSidebar]: /microsoft-edge/devtools-guide-chromium/console/reference#open-the-console-sidebar "Öffnen der Konsolen-Randleiste – Konsolenreferenz | Microsoft Docs"  
 [DevtoolsCustomizeIndexSettings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "Einstellungen – Anpassen von Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsCustomizeShortcuts]: /microsoft-edge/devtools-guide-chromium/customize/shortcuts "Anpassen von Tastenkombinationen in der Microsoft Edge DevTools-| Microsoft Docs"  
-[DevtoolsExperimentalFeaturesIndexEnablePlusButtonTabMenusToOpenMoreTools]: /microsoft-edge/devtools-guide-chromium/experimental-features/index#enable--button-tab-menus-to-open-more-tools "Aktivieren sie + Schaltflächenmenüs, um weitere Tools zu öffnen – Experimentelle Features | Microsoft Docs"  
+[DevtoolsCustomizeShortcuts]: /microsoft-edge/devtools-guide-chromium/customize/shortcuts "Anpassen von Tastenkombinationen in der Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesIndexEnablePlusButtonTabMenusToOpenMoreTools]: /microsoft-edge/devtools-guide-chromium/experimental-features/index#enable--button-tab-menus-to-open-more-tools "Aktivieren Sie die Registerkartenmenüs +, um weitere Werkzeuge zu öffnen – Experimentelle Features | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features/index#turn-on-experimental-features "Aktivieren experimenteller Features – Experimentelle Features | Microsoft Docs"  
 [DevtoolsNetworkReferenceAddRemoveColumns]: /microsoft-edge/devtools-guide-chromium/network/reference#add-or-remove-columns "Hinzufügen oder Entfernen von Spalten – Netzwerkanalysereferenz | Microsoft Docs"  
 [DevtoolsNetworkReferenceDisplayInitiatorsDependencies]: /microsoft-edge/devtools-guide-chromium/network/reference#display-initiators-and-dependencies "Anzeigen von Initiatoren und Abhängigkeiten – Netzwerkanalysereferenz | Microsoft Docs"  
 
 [ProgressiveWebAppsIndex]: /microsoft-edge/progressive-web-apps-chromium/index "Übersicht über progressive Web Apps unter Windows | Microsoft Docs"  
 
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge Preview Channels"  
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge-Vorschaukanäle"  
 
-[VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually]: https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually "Manuelles Aktualisieren einer Erweiterung – Erweiterung Marketplace | Visual Studio Code"  
+[VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually]: https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually "Manuelles Aktualisieren einer Erweiterung – Erweiterungs-Marketplace | Visual Studio Code"  
 
-[VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge Tools for Visual Studio Code | Visual Studio Marketplace"  
+[VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge Tools für Visual Studio Code | Visual Studio Marketplace"  
 
-[ChromeDeveloperBlogImprovedPwaOfflineDetection]: https://developer.chrome.com/blog/improved-pwa-offline-detection "Verbessern der Erkennung von Progressive Web App-Offlineunterstützung | Chrome Developers"  
+[ChromeDeveloperBlogImprovedPwaOfflineDetection]: https://developer.chrome.com/blog/improved-pwa-offline-detection "Verbessern der Erkennung der progressiven Web App-Offline-Unterstützung | Chrome-Entwickler"  
 
-[ChromestatusFeature5354410980933632]: https://www.chromestatus.com/feature/5354410980933632 "Farbskala-Medienabfragen | Status der Chrome-Plattform"  
+[ChromestatusFeature5354410980933632]: https://www.chromestatus.com/feature/5354410980933632 "Farbskala-Medienabfrage | Chrome-Plattformstatus"  
 
 [CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chromium-Fehler"  
 [CR174309]: https://crbug.com/174309 "Problem 174309: DevTools: Zulassen der Anpassung von Tastenkombinationen/Tastenbindungen | Chromium-Fehler"  
-[CR887173]: https://crbug.com/887173 "Issue 887173: DevTools: Full Accessibility Tree Inspection | Chromium-Fehler"  
-[CR965802]: https://crbug.com/965802 "Problem 965802: Implementieren einer genaueren Erkennung von Offlinefunktionen | Chromium-Fehler"  
-[CR1073887]: https://crbug.com/1073887 "Issue 1073887: DevTools: @media (color-gamut: ...) colorspace emulation | Chromium-Fehler"  
+[CR887173]: https://crbug.com/887173 "Problem 887173: DevTools: Vollständige Barrierefreiheitsstrukturüberprüfung | Chromium-Fehler"  
+[CR965802]: https://crbug.com/965802 "Problem 965802: Implementieren einer genaueren Offline-Fähigkeitserkennung für Servicemitarbeiter | Chromium-Fehler"  
+[CR1073887]: https://crbug.com/1073887 "Problem 1073887: DevTools: @media (Farbskala: ...) Farbraumemulation | Chromium-Fehler"  
 [CR1128885]: https://crbug.com/1128885 "Problem 1128885: DevTools-Unterstützung für CORS-RFC1918 | Chromium-Fehler"  
-[CR1146450]: https://crbug.com/1146450 "Issue 1146450: [Android] Implement bottom sheet installs | Chromium-Fehler"  
-[CR1158276]: https://crbug.com/1158276 "Problem 1158276: Bereich "Initiatorkette anfordern" kann nicht mithilfe von Pfeiltasten im Abschnitt "Netzwerk" von DevTools erweitert/| Chromium-Fehler"  
-[CR1158827]: https://crbug.com/1158827 "Issue 1158827: [Permissions Policy] Implement devtool support for permissions policy | Chromium-Fehler"  
-[CR1160637]: https://crbug.com/1160637 "Problem 1160637: Der Fokus auf "Anforderungsinitiatorkette" wird im Abschnitt "Netzwerk" des Fensters "Dev Tools" als unvollständig | Chromium-Bugs"  
-[CR1161427]: https://crbug.com/1161427 "Problem 1161427: &#9730; Support SameParty cookie attribute debugging in DevTools | Chromium-Fehler"  
-[CR1166710]: https://crbug.com/1166710 "Problem 1166710: Aktivieren des Flexboxtool-Experiments standardmäßig | Chromium-Fehler"  
-[CR1169689]: https://crbug.com/1169689 "Problem 1169689: Das untere Blatt für die PWA-Installation sollte keine Kategorien | Chromium-Fehler"  
+[CR1146450]: https://crbug.com/1146450 "Problem 1146450: [Android] Implementieren von Bottom Sheet-Installationen | Chromium-Fehler"  
+[CR1158276]: https://crbug.com/1158276 "Problem 1158276: Der Bereich "Initiator-Kette anfordern" kann nicht mithilfe der Pfeiltasten im Abschnitt "Netzwerk" von DevTools erweitert/verkleinert werden | Chromium-Fehler"  
+[CR1158827]: https://crbug.com/1158827 "Problem 1158827: [Berechtigungsrichtlinie] Implementieren der Devtool-Unterstützung für Berechtigungsrichtlinien | Chromium-Fehler"  
+[CR1160637]: https://crbug.com/1160637 "Problem 1160637: Der Fokus auf 'Initiierungskette anfordern' wird im Abschnitt 'Netzwerk' des Fensters 'Dev Tools' unvollständig angezeigt | Chromium-Fehler"  
+[CR1161427]: https://crbug.com/1161427 "Problem 1161427: &#9730; Unterstützt das Debuggen von SameParty-Cookie-Attributen in DevTools | Chromium-Fehler"  
+[CR1166710]: https://crbug.com/1166710 "Problem 1166710: Standardmäßiges Aktivieren des Flexbox-Tooling-Experiment | Chromium-Fehler"  
+[CR1169689]: https://crbug.com/1169689 "Problem 1169689: Das untere Blatt der PWA-Installation sollte keine Kategorien enthalten | Chromium-Fehler"  
 [CR1175699]: https://crbug.com/1175699 "Problem 1175699: Flexbox-Editor | Chromium-Fehler"  
-[CR1177685]: https://crbug.com/1177685 "Problem 1177685: Entfernen von nicht standardmäßigen fn.displayName-| Chromium-Fehler"  
-[CR1178530]: https://crbug.com/1178530 "Problem 1178530: Die Konsole entweicht keine Doppelquote beim Drucken von Zeichenfolgen | Chromium-Fehler"  
+[CR1177685]: https://crbug.com/1177685 "Problem 1177685: Entfernen von nicht standardmäßiger Unterstützung für fn.displayName | Chromium-Fehler"  
+[CR1178530]: https://crbug.com/1178530 "Problem 1178530: Die Konsole maskiert beim Drucken von Zeichenfolgen keine doppelten Anführungszeichen | Chromium-Fehler"  
 
 [CsswgDraftsMediaqueries4ColorGamut]: https://drafts.csswg.org/mediaqueries-4#color-gamut "Farbanzeigequalität: Das Feature "Farbskala" | Entwürfe des CSS-Arbeitsgruppen-Editors"  
 
-[GithubMicrosoftedgeMsedgeexplainersBlobMainDevtoolsFocusmodeExplainer]: https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/DevTools/FocusMode/explainer.md "DevTools: Fokusmodus-UI – MicrosoftEdge/MSEdgeExplainers | GitHub"  
+[GithubMicrosoftedgeMsedgeexplainersBlobMainDevtoolsFocusmodeExplainer]: https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/DevTools/FocusMode/explainer.md "DevTools: Benutzeroberfläche für den Fokusmodus – MicrosoftEdge/MSEdgeExplainers | GitHub"  
 
 [GithubMicrosoftVscodeEdgeDevtools]: https://github.com/microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"  
 
-[GithubPrivacycgFirstPartySets]: https://github.com/privacycg/first-party-sets "First-Party Sets | GitHub"  
+[GithubPrivacycgFirstPartySets]: https://github.com/privacycg/first-party-sets "First-Party-Sets | GitHub"  
 
 [GithubW3cWebappsecPermissionsPolicyBlobMainPermissionsPolicyExplainer]: https://github.com/w3c/webappsec-permissions-policy/blob/main/permissions-policy-explainer.md "Berechtigungsrichtlinienerklärer | GitHub"  
 
