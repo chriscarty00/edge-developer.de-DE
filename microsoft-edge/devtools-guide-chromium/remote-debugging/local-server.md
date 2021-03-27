@@ -3,16 +3,16 @@ description: Hosten Sie eine Website auf einem Webserver des Entwicklungscompute
 title: Zugreifen auf lokale Server
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/25/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 16c9927ce4548d71681d35e643aea0a6c44ec75a
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 51ef0d951d587d310b6474698924d9f87cf68607
+ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398210"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "11461262"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11398210"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="access-local-servers"></a><span data-ttu-id="5ac3f-104">Zugreifen auf lokale Server</span><span class="sxs-lookup"><span data-stu-id="5ac3f-104">Access local servers</span></span>  
 
 <span data-ttu-id="5ac3f-105">Hosten Sie eine Website auf einem Webserver des Entwicklungscomputers, und greifen Sie dann von einem Android-Gerät auf die Inhalte zu.</span><span class="sxs-lookup"><span data-stu-id="5ac3f-105">Host a site on a development machine web server, then access the content from an Android device.</span></span>  
