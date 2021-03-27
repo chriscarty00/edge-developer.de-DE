@@ -1,41 +1,41 @@
 ---
-description: Verschieben von Benutzern aus dem Internet Explorer nach Microsoft Edge
-title: Verschieben von Benutzern aus dem Internet Explorer nach Microsoft Edge
+description: Verschieben von Benutzern von Internet Explorer zu Microsoft Edge
+title: Verschieben von Benutzern von Internet Explorer zu Microsoft Edge
 author: MSEdgeTeam
 ms.date: 11/13/2020
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Kompatibilität, Web-Plattform, Internet Explorer
-ms.openlocfilehash: 872bd5ec52f471e4958ef7354c046ec30f1ba72e
-ms.sourcegitcommit: 62258ce0ef469948ca8af42141d02aa9719243f8
+keywords: microsoft edge, compatibility, web platform, internet explorer
+ms.openlocfilehash: c2106955ed79bd28dc1f847dee220944bb014689
+ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "11168365"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "11461136"
 ---
-# Verschieben von Benutzern aus dem Internet Explorer nach Microsoft Edge  
+# <a name="moving-users-to-microsoft-edge-from-internet-explorer"></a>Verschieben von Benutzern von Internet Explorer zu Microsoft Edge  
 
-Viele moderne Websites verfügen über Designs, die mit Internet Explorer \ (IE \) nicht kompatibel sind.  Wenn ein IE-Benutzer eine inkompatible öffentliche Website besucht, erhält der Benutzer möglicherweise eine Nachricht.  In der Meldung wird angegeben, dass die Website mit dem Browser nicht kompatibel ist.  Nachdem die Nachricht angezeigt wurde, wird erwartet, dass der Benutzer manuell zu einem modernen Browser wechselt.  Um Unterbrechungen zu minimieren, beginnend mit Version 84, unterstützt Microsoft Edge eine neue Funktion, die Benutzer automatisch umleitet.  Wenn ein IE-Benutzer zu einer Website navigiert, die mit IE nicht kompatibel ist, leitet Windows den Benutzer automatisch an Microsoft Edge um.  Wenn Sie die Websites in der Liste überprüfen möchten, navigieren Sie zu [benötigen Sie Microsoft Edge-Liste][MicrosoftEdgeNeededgeV1].
+Viele moderne Websites verfügen über Designs, die nicht mit Internet Explorer \(IE\) kompatibel sind.  Wenn ein IE-Benutzer eine inkompatible öffentliche Website besucht, wird dem Benutzer möglicherweise eine Nachricht angezeigt.  Die Meldung besagt, dass die Website nicht mit dem Browser kompatibel ist.  Nachdem die Nachricht angezeigt wurde, wird erwartet, dass der Benutzer manuell zu einem modernen Browser wechselt.  Um Unterbrechungen zu minimieren, unterstützt Microsoft Edge ab Version 84 eine neue Funktion, mit der Benutzer automatisch umgeleitet werden.  Wenn ein IE-Benutzer zu einer Website navigiert, die mit IE nicht kompatibel ist, leitet Windows den Benutzer automatisch zu Microsoft Edge um.  Um die Websites in der Liste zu überprüfen, navigieren Sie zu [Microsoft Edge-Liste benötigen.][MicrosoftEdgeNeededgeV1]
 
-In diesem Artikel werden die folgenden Konzepte beschrieben:  
+In diesem Artikel werden die folgenden Konzepte beschrieben.  
 
-*   Gründe für das Hinzufügen einer Website zur Liste  
+*   Warum eine Website zur Liste hinzugefügt wird  
 *   Die Benutzeroberfläche für die Umleitung  
 *   Anfordern eines Updates für die Liste  
     
-## Warum wird eine Website zur IE-Kompatibilitätsliste hinzugefügt?  
+## <a name="why-is-a-website-added-to-the-ie-compatibility-list"></a>Warum wird der IE-Kompatibilitätsliste eine Website hinzugefügt?  
 
-Die IE-Kompatibilitätsliste fügt nur dann eine Website hinzu, wenn die folgenden Aktionen ausgeführt werden.  
+Die IE-Kompatibilitätsliste fügt nur dann eine Website hinzu, wenn die folgenden Aktionen auftreten.  
 
-*   Zeigt einem IE-Benutzer eine Nachricht, die darauf hinweist, dass der Benutzer aus Kompatibilitätsgründen einen anderen Browser verwenden soll.  
-*   Besitzer Anforderungen zum Hinzufügen der Website zur IE-Kompatibilitätsliste.  
+*   Zeigt einem IE-Benutzer eine Meldung an, in der der Benutzer einen anderen Browser aus Kompatibilitätsgründen verwenden soll.  
+*   Besitzer fordert an, die Website der IE-Kompatibilitätsliste hinzuzufügen.  
 
-## Umleitungserfahrung
+## <a name="redirection-experience"></a>Umleitungserfahrung
 
-Bei der Umleitung zu Microsoft Edge wird dem Benutzer das einmalige Dialogfeld im nächsten Screenshot angezeigt.  Das Dialogfeld bietet dem Benutzer die folgenden Informationen.  
+Bei der Umleitung zu Microsoft Edge wird dem Benutzer das einmalige Dialogfeld im nächsten Screenshot angezeigt.  Das Dialogfeld stellt dem Benutzer die folgenden Informationen zur Verfügung.  
 
 *   Es wird erläutert, warum die Website umgeleitet wird.  
-*   Sie fordert den Benutzer zur Genehmigung auf, Daten und Einstellungen für das Browsen von IE zu Microsoft Edge zu kopieren.  
+*   Er fordert den Benutzer zur Zustimmung auf, Browserdaten und -einstellungen von IE in Microsoft Edge zu kopieren.  
 
 :::row:::
    :::column span="":::
@@ -48,59 +48,61 @@ Bei der Umleitung zu Microsoft Edge wird dem Benutzer das einmalige Dialogfeld i
       *   Verlauf  
       *   Einstellungen  
       *   Cookies  
-      *   Die Startseite  
+      *   Die Homepage  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/neededge-dialog1.msft.png" alt-text="Durchsuchen der Benachrichtigung und Aufforderung zum Importieren von Daten und Einstellungen" lightbox="../media/neededge-dialog1.msft.png":::
-         Durchsuchen der Benachrichtigung und Aufforderung zum Importieren von Daten und Einstellungen  
+      :::image type="complex" source="../media/neededge-dialog1.msft.png" alt-text="Browserbenachrichtigung und Eingabeaufforderung zum Importieren von Daten und Einstellungen" lightbox="../media/neededge-dialog1.msft.png":::
+         Browserbenachrichtigung und Eingabeaufforderung zum Importieren von Daten und Einstellungen  
       :::image-end:::  
    :::column-end:::
 :::row-end:::
 
-Wenn der Benutzer nicht einverstanden ist, indem er das Kontrollkästchen **immer über meine Browserdaten und-Einstellungen aus Internet Explorer über** tragen auswählt, kann der Benutzer " **Continue Browsing**" auswählen,   um die Browsersitzung fortzusetzen.  
+Wenn der Benutzer nicht zuwilligt, indem er das Kontrollkästchen Meine Browserdaten und ****-einstellungen immer über **Internet Explorer** übertragen aus aktivieren, kann der Benutzer Weiter browsen auswählen, um die   Browsersitzung fortzufahren.  
 
-Schließlich wird für jede Umleitung unter der Adressleiste eine Website-Inkompatibilitäts-Banner angezeigt.  Ein Beispiel für ein Website-Inkompatibilitäts-Banner wird in der folgenden Abbildung angezeigt.
+Schließlich wird unter der Adressleiste für jede Umleitung ein Inkompatibilitätsbanner der Website angezeigt.  Ein Beispiel für ein Website-Inkompatibilitätsbanner wird in der folgenden Abbildung angezeigt.
 
-:::image type="complex" source="../media/neededge-banner.msft.png" alt-text="Benachrichtigung über moderne Websites und Aufforderung zum Festlegen von Microsoft Edge als Standardbrowser oder erkunden von Microsoft Edge" lightbox="../media/neededge-banner.msft.png":::
-   Benachrichtigung über moderne Websites und Aufforderung zum Festlegen von Microsoft Edge als Standardbrowser oder erkunden von Microsoft Edge  
+:::image type="complex" source="../media/neededge-banner.msft.png" alt-text="Benachrichtigung über moderne Websites und Aufforderung zum Festlegen von Microsoft Edge als Standardbrowser oder Erkunden von Microsoft Edge" lightbox="../media/neededge-banner.msft.png":::
+   Benachrichtigung über moderne Websites und Aufforderung zum Festlegen von Microsoft Edge als Standardbrowser oder Erkunden von Microsoft Edge  
 :::image-end:::
 
-Das Banner "Website-Inkompatibilität" bietet dem Benutzer die folgenden Informationen.  
+Das Inkompatibilitätsbanner der Website enthält die folgenden Details für den Benutzer.  
 
 *   Empfiehlt dem Benutzer, zu Microsoft Edge zu wechseln.  
-*   Bietet an, Microsoft Edge als Standardbrowser einzurichten.  
-*   Bietet dem Benutzer die Möglichkeit, Microsoft Edge zu erkunden.    
+*   Bietet an, Microsoft Edge als Standardbrowser zu setzen.  
+*   Gibt dem Benutzer die Möglichkeit, Microsoft Edge zu erkunden.    
     
-Wenn eine Website von Internet Explorer zu Microsoft Edge umgeleitet wird, erfolgt eine der folgenden Aktionen.
+Wenn eine Website von Internet Explorer zu Microsoft Edge umgeleitet wird, tritt eine der folgenden Aktionen auf.
 
-*   Wenn die aktive IE-Registerkarte keinen vorherigen Inhalt aufweist, wird Sie geschlossen.  
-*   Wenn die aktive IE-Registerkarte vorherigen Inhalt aufweist, navigiert Sie zur [Microsoft-Support Seite, in der erläutert wird, warum die Website an Microsoft Edge umgeleitet wurde][MicrosoftSupportOfficeTheWebsiteYouWereTryingToReachDoesntWorkWithInternetExplorer].  
+*   Wenn die aktive IE-Registerkarte keinen vorherigen Inhalt hatte, wird sie geschlossen.  
+*   Wenn die aktive IE-Registerkarte zuvor Inhalte hatte, navigiert sie zur Microsoft-Supportseite, auf der erläutert wird, warum die Website zu [Microsoft Edge umgeleitet wurde.][MicrosoftSupportOfficeTheWebsiteYouWereTryingToReachDoesntWorkWithInternetExplorer]  
 
 > [!NOTE]
-> Nach einer Umleitung können Benutzer IE weiterhin für Websites verwenden, die nicht in der IE-Kompatibilitätsliste enthalten sind.  
+> Nach einer Umleitung können Benutzer IE für Websites verwenden, die nicht in der IE-Kompatibilitätsliste enthalten sind.  
 
-## Anfordern eines Updates für die IE-Kompatibilitätsliste  
+## <a name="request-an-update-to-the-ie-compatibility-list"></a>Anfordern eines Updates für die IE-Kompatibilitätsliste  
 
-Die IE-Kompatibilitätsliste ist eine XML-Datei auf [Microsoft.com][MicrosoftOfficialHome].  Die Liste wird regelmäßig als Antwort auf Benutzer-und Websiteentwickler Anforderungen aktualisiert, damit Websites hinzugefügt oder entfernt werden.  Aktualisierungen der Liste werden automatisch auf Benutzer Computer heruntergeladen.  
+Die IE-Kompatibilitätsliste ist eine XML-Datei auf [microsoft.com.][MicrosoftOfficialHome]  Die Liste wird regelmäßig als Reaktion auf Benutzer- und Websiteentwickleranforderungen aktualisiert, um Websites hinzufügen oder entfernen zu lassen.  Aktualisierungen der Liste werden automatisch auf Benutzerautomaten heruntergeladen.  
 
-Senden Sie die folgenden Informationen an [ietoedge@Microsoft.com][MailtoMicrosoftIetoedge] , damit Ihre Website aus der IE-Kompatibilitätsliste hinzugefügt oder entfernt wird.    
+Senden Sie die folgenden Informationen [ietoedge@microsoft.com,][MailtoMicrosoftIetoedge] damit Ihre Website hinzugefügt oder aus der IE-Kompatibilitätsliste entfernt wird.    
 
-*   Name des Besitzers  
-*   Unternehmens Titel  
+*   Besitzername  
+*   Unternehmenstitel  
 *   E-Mail-Adresse  
 *   Name des Unternehmens  
 *   Straße  
-*   Website Adresse  
+*   Websiteadresse  
     
+Die IE-Kompatibilitätsliste wird innerhalb einer Woche aktualisiert.
+
 > [!NOTE]
-> Die IE-Kompatibilitätsliste ist für die Zusammenarbeit mit öffentlichen Websites vorgesehen.  
+> Die IE-Kompatibilitätsliste ist nur für die Arbeit mit öffentlichen Websites konzipiert.  
 
 <!-- links -->  
 
-[MailtoMicrosoftIetoedge]: mailto:ietoedge@microsoft.com "Senden einer e-Mail an ietoedge@Microsoft.com"  
+[MailtoMicrosoftIetoedge]: mailto:ietoedge@microsoft.com "Senden einer E-Mail an ietoedge@microsoft.com"  
 
 [MicrosoftOfficialHome]: https://www.microsoft.com "Microsoft Official Home"  
 
-[MicrosoftEdgeNeededgeV1]:  https://edge.microsoft.com/neededge/v1 "Benötigen Sie Microsoft Edge List v1 XML | Microsoft Edge"  
+[MicrosoftEdgeNeededgeV1]:  https://edge.microsoft.com/neededge/v1 "Microsoft Edge List v1 xml | Microsoft Edge"  
 
-[MicrosoftSupportOfficeTheWebsiteYouWereTryingToReachDoesntWorkWithInternetExplorer]: https://support.microsoft.com/office/the-website-you-were-trying-to-reach-doesn-t-work-with-internet-explorer-8f5fc675-cd47-414c-9535-12821ddfc554 "Die Website, die Sie erreichen wollten, funktioniert nicht mit Internet Explorer | Microsoft Office-Support"  
+[MicrosoftSupportOfficeTheWebsiteYouWereTryingToReachDoesntWorkWithInternetExplorer]: https://support.microsoft.com/office/the-website-you-were-trying-to-reach-doesn-t-work-with-internet-explorer-8f5fc675-cd47-414c-9535-12821ddfc554 "Die Website, die Sie erreichen wollten, funktioniert nicht mit Internet Explorer | Microsoft Office Support"  
