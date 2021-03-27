@@ -3,22 +3,22 @@ description: Erste Schritte mit Remote debugging Surface Duo-Emulatoren.
 title: Erste Schritte mit Remotedebu debugging Surface Duo-Emulatoren
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 03/25/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, remote debugging, android, surface duo
-ms.openlocfilehash: 61f903a5b929b7ee7b924938cf6ddc21a9783ca7
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 49b16f3c920735b34d44455bae437442cac3bf6e
+ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439328"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "11461241"
 ---
-# <a name="get-started-with-remote-debugging-surface-duo-emulators"></a>Erste Schritte mit Remotedebu debugging Surface Duo-Emulatoren  
+# <a name="get-started-with-remote-debugging-surface-duo-emulators"></a>Erste Schritte mit remote debuggen von Surface Duo-Emulatoren  
 
 In diesem Artikel werden Sie durch den Prozess des Remotedebugierens Ihrer Webinhalte in der [Microsoft Edge-App][GooglePlayStoreAppsComMicrosoftEmmx] auf einem [Surface Duo-Emulator][MicrosoftSurfaceDevicesSurfaceDuo] von einer Desktopinstanz von Microsoft Edge [aus beschrieben.][MicrosoftEdge]  Informationen zum Debuggen auf einem Surface Duo-Gerät finden Sie in unserem Leitfaden zum [Remotedebugen von Android-Geräten.][DevtoolsRemoteDebuggingMain]  
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Vorbemerkungen
 
 Installieren Sie [das Surface Duo SDK,][MicrosoftDownload100847] bevor Sie den [Surface Duo-Emulator ausführen.][DualScreenAndroidUseEmulator]  Weitere Informationen finden Sie unter [Get the Surface Duo SDK][DualScreenAndroidGetDuoSdk].  
 

@@ -6,30 +6,33 @@ ms.author: msedgedevrel
 ms.date: 02/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge-Chromium, Erweiterungenentwicklung, Browsererweiterungen, Addons, Partner Center, Entwickler
-ms.openlocfilehash: 91fdd5c2f625890653085e8999da3e513b072348
-ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
+keywords: edge-chromium, Erweiterungenentwicklung, Browsererweiterungen, Addons, Partner Center, Entwickler
+ms.openlocfilehash: 2249462b0a2dac86efa4b775171e2a3229a34431
+ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "11327687"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "11461220"
 ---
-# Veröffentlichen und Aktualisieren von Erweiterungen im Microsoft Edge-Add-Ons-Store  
+# <a name="publish-and-update-extensions-in-the-microsoft-edge-add-ons-store"></a>Veröffentlichen und Aktualisieren von Erweiterungen im Microsoft Edge-Add-Ons-Store  
 
-Die meisten Erweiterungen werden im [Microsoft Edge-Add-Ons-Store][MicrosoftMicrosoftedgeInsiderAddonsEdgeextensions] veröffentlicht, um Benutzer vor bösartigen Erweiterungen zu schützen.  
+Die meisten Erweiterungen werden im [Microsoft Edge-Add-Ons-Speicher][MicrosoftMicrosoftedgeInsiderAddonsEdgeextensions] veröffentlicht, um Benutzer vor schädlichen Erweiterungen zu schützen.  
 
-## Veröffentlichungsoptionen für Erweiterungen  
+## <a name="publish-options-for-extensions"></a>Veröffentlichen von Optionen für Erweiterungen  
 
-Alle Erweiterungen werden als spezielle Archivdatei \( \) mit einem Suffix `.zip` an Die Benutzer `.crx` verteilt.  Im Microsoft Edge-Add-Ons-Speicher veröffentlichte Erweiterungen werden als Dateien `.zip` hochgeladen.  Beim Veröffentlichungsprozess wird die Datei `.zip` automatisch in eine Datei `.crx` konvertiert.  
+Alle Erweiterungen werden als spezielle Archivdatei \( \) mit `.zip` einem Suffix an Benutzer `.crx` verteilt.  Im Microsoft Edge-Add-Ons-Speicher veröffentlichte Erweiterungen werden als Dateien `.zip` hochgeladen.  Beim Veröffentlichungsprozess wird die Datei `.zip` automatisch in eine Datei `.crx` konvertiert.  
 
-In den folgenden beiden Szenarien müssen Sie Ihre Erweiterung nicht im Microsoft Edge-Add-Ons-Store veröffentlichen.  
+In den folgenden beiden Szenarien müssen Sie Ihre Erweiterung nicht im Microsoft Edge-Add-Ons-Speicher veröffentlichen.  
 
-*   Erweiterungen, die mithilfe der Unternehmensrichtlinie verteilt werden.  
-*   Verwenden von entpackten Erweiterungsverzeichnissen auf einem lokalen Computer, wenn sich Microsoft Edge im Entwicklermodus befindet.  
+*   Erweiterungen, die mithilfe der Enterprise-Richtlinie verteilt werden.  
+*   Verwenden von auspackten Erweiterungsverzeichnissen auf einem lokalen Computer, wenn sich Microsoft Edge im Entwicklermodus befindet.  
 
-## Updates für Erweiterungen
+## <a name="updates-to-extensions"></a>Updates für Erweiterungen
 
-Der Microsoft Edge Browser sucht regelmäßig nach neuen Versionen installierter Erweiterungen und aktualisiert diese ohne Benutzereingriff.  
+Der Microsoft Edge-Browser sucht automatisch nach neuen Versionen installierter Erweiterungen. Updates werden ohne Benutzereingriff installiert.  
+
+
+<!-- image links -->
 
 <!-- links -->  
 
@@ -37,7 +40,7 @@ Der Microsoft Edge Browser sucht regelmäßig nach neuen Versionen installierter
 
 > [!NOTE]
 > Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
-> Die ursprüngliche Seite finden Sie [hier.](https://developer.chrome.com/extensions/hosting)  
+> Die ursprüngliche Seite finden Sie [hier](https://developer.chrome.com/extensions/hosting).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
