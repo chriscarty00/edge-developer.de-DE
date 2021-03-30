@@ -1,38 +1,91 @@
 ---
 description: Threadingmodell
-title: Threadingmodell
+title: Threadmodell| WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/23/2020
+ms.date: 03/29/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, WebView, WPF-apps, WPF, Edge, ICoreWebView2, ICoreWebView2Host, Browser-Steuerelement, Edge-HTML
-ms.openlocfilehash: 61e3b7fc8d25e2a1ce9c60fb84f5f39ba43f281b
-ms.sourcegitcommit: efdc6369c48942bfa39e45c713300ed70f0e3655
+keywords: IWebView2, IWebView2WebView, Webview2, Webview, wpf-Apps, Wpf, Microsoft Edge, ICoreWebView2, ICoreWebView2Host, Browsersteuerung, Edge-HTML
+ms.openlocfilehash: 7b447f5cc5fcce3439166638d47a0b87e5536c0a
+ms.sourcegitcommit: 5e218b24fb21fcfa9c82b99f17373fed1ba5a21c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "11013737"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "11462043"
 ---
-# Threadingmodell 
+# <a name="threading-model"></a>Threadingmodell 
 
-Das WebView2-Steuerelement basiert auf dem [Component-Objektmodell (com)](https://docs.microsoft.com/windows/win32/com/the-component-object-model) und muss auf einem [Single Threaded Apartments (STA)](https://docs.microsoft.com/windows/win32/com/single-threaded-apartments) -Thread ausgeführt werden.
+:::row:::
+   :::column span="1":::
+      Unterstützte Plattformen:
+   :::column-end:::
+   :::column span="2":::
+      Win32, Windows Forms, WinUi, WPF
+   :::column-end:::
+:::row-end:::  
 
-## Thread Sicherheit  
+Das WebView2-Steuerelement basiert auf dem [Component Object Model (COM)][WindowsWin32ComTheComponentObjectModel] und muss in einem [Single Threaded Apartment (STA)-Thread ausgeführt][WindowsWin32ComSingleThreadedApartments] werden.  
 
-Der WebView2 muss in einem UI-Thread erstellt werden.  Insbesondere ein Thread mit einer Nachrichten Pumpe.  Alle Rückrufe treten für diesen Thread auf, und Anforderungen an die WebView2 müssen in diesem Thread ausgeführt werden.  Es ist nicht sicher, die WebView2 aus einem anderen Thread zu verwenden.  
+## <a name="thread-safety"></a>Threadsicherheit  
 
-Die einzige Ausnahme ist die `Content` Eigenschaft von `CoreWebView2WebResourceRequest` .  Der `Content` Eigenschaftendaten Strom wird aus einem Hintergrundthread gelesen.  Der Datenstrom sollte agil sein oder aus einem background-STA erstellt werden, um die Auswirkungen auf die Leistung des UI-Threads zu verhindern.  
+WebView2 muss in einem Benutzeroberflächenthread erstellt werden.  Insbesondere ein Thread mit einer Nachrichtenumpumpung.  Alle Rückrufe erfolgen in diesem Thread, und Anforderungen an WebView2 müssen in diesem Thread ausgeführt werden.  Es ist nicht sicher, WebView2 aus einem anderen Thread zu verwenden.  
 
-## Reentranz  
+Die einzige Ausnahme gilt für die `Content` Eigenschaft von `CoreWebView2WebResourceRequest` .  Der `Content` Eigenschaftendatenstrom wird aus einem Hintergrundthread gelesen.  Der Datenstrom sollte agil sein oder aus einem Hintergrund-STA erstellt werden, um leistungsbeeinträchtigungen für den Benutzeroberflächenthread zu verhindern.  
 
-Rückrufe, einschließlich Ereignishandlern und Vervollständigungs Handlern, werden seriell ausgeführt.  Wenn Sie einen Ereignishandler ausführen und eine Nachrichtenschleife beginnen, können keine anderen Ereignishandler oder Abschluss Rückrufe auf eine Art und Weise gestartet werden.  
+## <a name="re-entrancy"></a>Erneutes Entlocken  
 
-## Verzögerungen  
+Rückrufe, einschließlich Ereignishandlern und Abschlusshandlern, werden seriell ausgeführt.  
+Nachdem Sie einen Ereignishandler ausgeführt und eine Nachrichtenschleife begonnen haben, können Sie keinen Ereignishandler oder Abschlussrückruf erneut ausführen.  
 
-Einige WebView2-Ereignisse lesen Werte, die für Ihre Ereignisargumente festgesetzt sind, oder führen nach Abschluss des Ereignishandlers eine Aktion aus.  Wenn Sie auch einen asynchronen Vorgang wie einen Ereignishandler ausführen müssen, können Sie die `GetDeferral` Methode für die Ereignisargumente der zugeordneten Ereignisse verwenden.  Das zurückgegebene verzögerte Objekt stellt sicher, dass der Ereignishandler erst dann als abgeschlossen betrachtet wird, wenn die `Complete` Methode von `Deferral` angefordert wird.  
+## <a name="deferrals"></a>Verschiebungen  
 
-Beispielsweise können Sie das Ereignis verwenden `NewWindowRequested` , um eine `CoreWebView2` Verbindung als untergeordnetes Fenster bereitzustellen, wenn der Ereignishandler abgeschlossen ist.  Wenn Sie das jedoch asynchron erstellen müssen `CoreWebView2` , fordern Sie die `GetDeferral` Methode für die `NewWindowRequestedEventArgs` .  Nachdem Sie den asynchronen erstellt haben `CoreWebView2` und die `NewWindow` Eigenschaft für die-Eigenschaft festlegen `NewWindowRequestedEventArgs` , wird die Anforderung `Complete` für das `Deferral` Objekt mithilfe der Methode zurückgegeben `GetDeferral` .  
+Einige WebView2-Ereignisse lesen Werte, die für die zugehörigen Ereignisargumente festgelegt sind, oder starten eine Aktion, nachdem der Ereignishandler abgeschlossen wurde.  Wenn Sie auch einen asynchronen Vorgang wie einen Ereignishandler ausführen müssen, verwenden Sie die -Methode für die Ereignisargumente `GetDeferral` der zugeordneten Ereignisse.  Das zurückgegebene Objekt stellt sicher, dass der Ereignishandler erst als abgeschlossen betrachtet wird, wenn `Deferral` `Complete` die -Methode angefordert `Deferral` wird.  
+
+Sie können das Ereignis z. B. verwenden, um eine Verbindung als untergeordnetes Fenster herzustellen, wenn `NewWindowRequested` `CoreWebView2` der Ereignishandler abgeschlossen ist.  Wenn Sie jedoch asynchron das erstellen `CoreWebView2` müssen, fordern Sie die `GetDeferral` -Methode für `NewWindowRequestedEventArgs` an.  Nachdem Sie die -Eigenschaft asynchron erstellt und für die festgelegt haben, wird die Anforderung für das Objekt mithilfe `CoreWebView2` `NewWindow` der `NewWindowRequestedEventArgs` `Complete` `Deferral` -Methode `GetDeferral` zurückgegeben.  
+
+## <a name="block-the-ui-thread"></a>Blockieren des Benutzeroberflächenthreads  
+
+WebView2 verwendet die Nachrichtenumpumpung des Benutzeroberflächenthreads, um Ereignishandlerrückrufe und Async-Methodenabschlussrückrufe ausführen zu können.  Wenn Sie Methoden verwenden, die die Nachrichtenumpumpung blockieren, z. B. oder, werden die WebView2-Ereignishandler und `Task.Result` async-Methodenentvollständigungshandler `WaitForSingleObject` nicht ausgeführt.  Der folgende Code ist beispielsweise nicht vollständig, da die Nachrichtenumpumpung angehalten wird, während sie `Task.Result` wartet, `ExecuteScriptAsync` bis sie abgeschlossen ist.  Da die Nachrichtenumpumpung blockiert ist, kann der Vorgang `ExecuteScriptAsync` nicht abgeschlossen werden.   
+
+```csharp
+private void Button_Click(object sender, EventArgs e)
+{
+    string result = webView2Control.CoreWebView2.ExecuteScriptAsync("'test'").Result;
+    MessageBox.Show(this, result, "Script Result");
+}
+```  
+
+Verwenden Sie einen asynchronen Mechanismus wie and , der die Nachrichtenummpung oder den `await` `async` Benutzeroberflächenthread nicht `await` blockiert.  
+
+```csharp
+private async void Button_Click(object sender, EventArgs e)
+{
+    string result = await webView2Control.CoreWebView2.ExecuteScriptAsync("'test'");
+    MessageBox.Show(this, result, "Script Result");
+}
+```  
+
+## <a name="see-also"></a>Weitere Informationen  
+
+*   Um mit WebView2 zu beginnen, navigieren Sie zu [WebView2 Anleitungen für erste Schritte.][Webview2IndexGettingStarted]  
+*   Ein umfassendes Beispiel für WebView2-Funktionen finden Sie unter [WebView2Samples-Repository][GithubMicrosoftedgeWebview2samples] auf GitHub.  
+*   Weitere Informationen zu WebView2-APIs finden Sie unter [API-Referenz][DotnetApiMicrosoftWebWebview2WpfWebview2].  
+*   Weitere Informationen zu WebView2 finden Sie unter [WebView2 Resources][Webview2IndexNextSteps].  
+
+## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Kontakt mit dem Microsoft Edge WebView-Team  
+
+[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!-- links -->  
+
+[Webview2IndexGettingStarted]: ../index.md#getting-started "Erste Schritte – Einführung in Microsoft Edge WebView2 | Microsoft Docs"  
+[Webview2IndexNextSteps]: ../index.md#next-steps "Nächste Schritte – Einführung in Microsoft Edge WebView2 | Microsoft Docs"  
+
+[DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "WebView2-Klasse | Microsoft Docs"  
+
+[WindowsWin32ComSingleThreadedApartments]: /windows/win32/com/single-threaded-apartments "Single-Threaded-| Microsoft Docs"  
+[WindowsWin32ComTheComponentObjectModel]: /windows/win32/com/the-component-object-model "Das Component-Objektmodell | Microsoft Docs"  
+
+[GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2-Beispiele – MicrosoftEdge/WebView2Samples | GitHub"  
