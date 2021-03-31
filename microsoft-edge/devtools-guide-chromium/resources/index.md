@@ -36,7 +36,7 @@ ms.locfileid: "11398224"
 
 ## <a name="open-resources"></a><span data-ttu-id="25674-109">Öffnen von Ressourcen</span><span class="sxs-lookup"><span data-stu-id="25674-109">Open resources</span></span>  
 
-<span data-ttu-id="25674-110">Wenn Sie den Namen der Ressource kennen, die \*\*\*\* Sie überprüfen möchten, bietet das Befehlsmenü eine schnelle Möglichkeit zum Öffnen der Ressource.</span><span class="sxs-lookup"><span data-stu-id="25674-110">When you know the name of the resource that you want to inspect, the **Command Menu** provides a fast way of opening the resource.</span></span>  
+<span data-ttu-id="25674-110">Wenn Sie den Namen der Ressource kennen, die  Sie überprüfen möchten, bietet das Befehlsmenü eine schnelle Möglichkeit zum Öffnen der Ressource.</span><span class="sxs-lookup"><span data-stu-id="25674-110">When you know the name of the resource that you want to inspect, the **Command Menu** provides a fast way of opening the resource.</span></span>  
 
 1.  <span data-ttu-id="25674-111">Wählen `Control` + `P` Sie \(Windows, Linux\) oder `Command` + `P` \(macOS\) aus.</span><span class="sxs-lookup"><span data-stu-id="25674-111">Select `Control`+`P` \(Windows, Linux\) or `Command`+`P` \(macOS\).</span></span>  <span data-ttu-id="25674-112">Das **Dialogfeld Datei öffnen** wird geöffnet.</span><span class="sxs-lookup"><span data-stu-id="25674-112">The **Open File** dialog opens.</span></span>  
     
@@ -60,7 +60,7 @@ ms.locfileid: "11398224"
 
 ### <a name="reveal-resources-in-the-network-tool-from-other-panels"></a><span data-ttu-id="25674-122">Aufschluss über Ressourcen im Netzwerktool in anderen Panels</span><span class="sxs-lookup"><span data-stu-id="25674-122">Reveal resources in the Network tool from other panels</span></span>  
 
-<span data-ttu-id="25674-123">Im [Abschnitt Ressourcen durchsuchen](#browse-resources) unten erfahren Sie, wie Sie Ressourcen aus verschiedenen Teilen der DevTools-Benutzeroberfläche anzeigen.</span><span class="sxs-lookup"><span data-stu-id="25674-123">The [Browse resources](#browse-resources) section below shows you how to view resources from various parts of the DevTools UI.</span></span>  <span data-ttu-id="25674-124">Wenn Sie jemals eine Ressource \*\*\*\* im Netzwerktool überprüfen möchten, zeigen Sie auf die Ressource, öffnen Sie das Kontextmenü \(rechtsklicken\), und wählen Sie Im Netzwerkbereich einblenden **aus.**</span><span class="sxs-lookup"><span data-stu-id="25674-124">If you ever want to inspect a resource in the **Network** tool,  hover on the resource, open the contextual menu \(right-click\), and choose **Reveal in Network panel**.</span></span>  
+<span data-ttu-id="25674-123">Im [Abschnitt Ressourcen durchsuchen](#browse-resources) unten erfahren Sie, wie Sie Ressourcen aus verschiedenen Teilen der DevTools-Benutzeroberfläche anzeigen.</span><span class="sxs-lookup"><span data-stu-id="25674-123">The [Browse resources](#browse-resources) section below shows you how to view resources from various parts of the DevTools UI.</span></span>  <span data-ttu-id="25674-124">Wenn Sie jemals eine Ressource  im Netzwerktool überprüfen möchten, zeigen Sie auf die Ressource, öffnen Sie das Kontextmenü \(rechtsklicken\), und wählen Sie Im Netzwerkbereich einblenden **aus.**</span><span class="sxs-lookup"><span data-stu-id="25674-124">If you ever want to inspect a resource in the **Network** tool,  hover on the resource, open the contextual menu \(right-click\), and choose **Reveal in Network panel**.</span></span>  
 
 :::image type="complex" source="../media/resources-sources-page-reveal-in-network-panel.msft.png" alt-text="Anzeige im Netzwerkbereich" lightbox="../media/resources-sources-page-reveal-in-network-panel.msft.png":::
    **<span data-ttu-id="25674-126">Anzeige im Netzwerkbereich</span><span class="sxs-lookup"><span data-stu-id="25674-126">Reveal in Network panel</span></span>**  
@@ -110,13 +110,13 @@ ms.locfileid: "11398224"
 1.  <span data-ttu-id="25674-155">Öffnen Sie den **Seitenbereich.**</span><span class="sxs-lookup"><span data-stu-id="25674-155">Open the **Page** panel.</span></span>  <span data-ttu-id="25674-156">Navigieren Sie [zu Durchsuchen nach Verzeichnis](#browse-by-directory).</span><span class="sxs-lookup"><span data-stu-id="25674-156">Navigate to [Browse by directory](#browse-by-directory).</span></span>  
 1.  <span data-ttu-id="25674-157">Wählen **Sie Weitere Optionen aus,** und deaktivieren Sie `...` **"Nach Ordner" gruppieren.**</span><span class="sxs-lookup"><span data-stu-id="25674-157">Choose **More Options** `...` and disable **Group By Folder**.</span></span>  
     
-    :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text="Die Option "Gruppe nach Ordner"" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
+    :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text="Die Option Gruppe nach Ordner" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
        <span data-ttu-id="25674-159">Die **Option "Gruppe nach Ordner"**</span><span class="sxs-lookup"><span data-stu-id="25674-159">The **Group By Folder** option</span></span>  
     :::image-end:::  
     
     <span data-ttu-id="25674-160">Ressourcen sind nach Dateityp organisiert.</span><span class="sxs-lookup"><span data-stu-id="25674-160">Resources are organized by file type.</span></span>  <span data-ttu-id="25674-161">Innerhalb jedes Dateityps sind die Ressourcen alphabetisch angeordnet.</span><span class="sxs-lookup"><span data-stu-id="25674-161">Within each file type the resources are organized alphabetically.</span></span>  
     
-    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="Der Seitenbereich nach der Deaktivierung von "Gruppe nach Ordner"" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
+    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="Der Seitenbereich nach der Deaktivierung von Gruppe nach Ordner" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
        <span data-ttu-id="25674-163">Der **Seitenbereich** nach der Deaktivierung **von "Gruppe nach Ordner"**</span><span class="sxs-lookup"><span data-stu-id="25674-163">The **Page** panel after disabling **Group By Folder**</span></span>  
     :::image-end:::  
     
@@ -130,7 +130,7 @@ ms.locfileid: "11398224"
        <span data-ttu-id="25674-169">Das **Anwendungstool**</span><span class="sxs-lookup"><span data-stu-id="25674-169">The **Application** tool</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="25674-170">Scrollen Sie \*\*\*\* nach unten zum Frames-Bereich.</span><span class="sxs-lookup"><span data-stu-id="25674-170">Scroll down to the **Frames** pane.</span></span>  
+1.  <span data-ttu-id="25674-170">Scrollen Sie  nach unten zum Frames-Bereich.</span><span class="sxs-lookup"><span data-stu-id="25674-170">Scroll down to the **Frames** pane.</span></span>  
     
     :::image type="complex" source="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png" alt-text="Der Bereich Frames" lightbox="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png":::
        <span data-ttu-id="25674-172">Der **Bereich Frames**</span><span class="sxs-lookup"><span data-stu-id="25674-172">The **Frames** pane</span></span>  

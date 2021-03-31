@@ -48,7 +48,7 @@ ms.locfileid: "11397874"
     
 1.  <span data-ttu-id="6a64e-130">Wählen Sie eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="6a64e-130">Choose an option.</span></span>  
     
-    :::image type="complex" source="../media/accessibility-emulate-vision-menu-options.msft.png" alt-text="Menüoptionen "Visionsmangel emulieren"" lightbox="../media/accessibility-emulate-vision-menu-options.msft.png":::
+    :::image type="complex" source="../media/accessibility-emulate-vision-menu-options.msft.png" alt-text="Menüoptionen Visionsmangel emulieren" lightbox="../media/accessibility-emulate-vision-menu-options.msft.png":::
        <span data-ttu-id="6a64e-132">Menüoptionen **zum Emulieren von Sehschwächen**</span><span class="sxs-lookup"><span data-stu-id="6a64e-132">The **Emulate vision deficiencies** menu options</span></span>  
     :::image-end:::  
     

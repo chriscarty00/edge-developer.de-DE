@@ -58,7 +58,7 @@ ms.locfileid: "11408318"
    <span data-ttu-id="7252f-122">Experimentelles Feature</span><span class="sxs-lookup"><span data-stu-id="7252f-122">Experimental feature</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="7252f-123">Sie können jetzt \*\*\*\* Bearbeiten und Wiedergeben für Anforderungen im [Netzwerkprotokoll][DevtoolsNetworkIndexLogActivity] mithilfe der **Netzwerkkonsole verwenden.**</span><span class="sxs-lookup"><span data-stu-id="7252f-123">You are now able to use **Edit and Replay** on requests in the [Network Log][DevtoolsNetworkIndexLogActivity] using the **Network Console**.</span></span>  
+<span data-ttu-id="7252f-123">Sie können jetzt  Bearbeiten und Wiedergeben für Anforderungen im [Netzwerkprotokoll][DevtoolsNetworkIndexLogActivity] mithilfe der **Netzwerkkonsole verwenden.**</span><span class="sxs-lookup"><span data-stu-id="7252f-123">You are now able to use **Edit and Replay** on requests in the [Network Log][DevtoolsNetworkIndexLogActivity] using the **Network Console**.</span></span>  
 
 :::image type="complex" source="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png" alt-text="Bearbeiten und Wiedergeben einer Anforderung im NetworkLog mit der Netzwerkkonsole" lightbox="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png":::
    <span data-ttu-id="7252f-125">Bearbeiten und Wiedergeben einer Anforderung im [NetworkLog mit][DevtoolsNetworkIndexLogActivity] der **Netzwerkkonsole**</span><span class="sxs-lookup"><span data-stu-id="7252f-125">Edit and Replay a request in the [NetworkLog][DevtoolsNetworkIndexLogActivity] with the **Network Console**</span></span>  
@@ -123,7 +123,7 @@ ms.locfileid: "11408318"
    <span data-ttu-id="7252f-156">Experimentelles Feature</span><span class="sxs-lookup"><span data-stu-id="7252f-156">Experimental feature</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="7252f-157">Normalerweise können Tools wie **Elemente** und **Netzwerk** nur im Hauptbereich \(top\) von DevTools geöffnet werden.</span><span class="sxs-lookup"><span data-stu-id="7252f-157">Normally, tools such as **Elements** and **Network** may only be opened in the main \(top\) panel of DevTools.</span></span>  <span data-ttu-id="7252f-158">Ebenso können Tools wie **3D-Ansicht** und Probleme nur im Drawer \(bottom\)-Bereich von DevTools geöffnet werden. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="7252f-158">Similarly, tools such as **3D View** and **Issues** may only be opened in the drawer \(bottom\) panel of DevTools.</span></span>  <span data-ttu-id="7252f-159">Sie können nun Ihr DevTools-Layout anpassen, indem Sie Tools zwischen dem oberen und unteren Bereich verschieben.</span><span class="sxs-lookup"><span data-stu-id="7252f-159">You are now able to customize your DevTools layout by moving tools between the top and bottom panels.</span></span>  
+<span data-ttu-id="7252f-157">Normalerweise können Tools wie **Elemente** und **Netzwerk** nur im Hauptbereich \(top\) von DevTools geöffnet werden.</span><span class="sxs-lookup"><span data-stu-id="7252f-157">Normally, tools such as **Elements** and **Network** may only be opened in the main \(top\) panel of DevTools.</span></span>  <span data-ttu-id="7252f-158">Ebenso können Tools wie **3D-Ansicht** und Probleme nur im Drawer \(bottom\)-Bereich von DevTools geöffnet werden. </span><span class="sxs-lookup"><span data-stu-id="7252f-158">Similarly, tools such as **3D View** and **Issues** may only be opened in the drawer \(bottom\) panel of DevTools.</span></span>  <span data-ttu-id="7252f-159">Sie können nun Ihr DevTools-Layout anpassen, indem Sie Tools zwischen dem oberen und unteren Bereich verschieben.</span><span class="sxs-lookup"><span data-stu-id="7252f-159">You are now able to customize your DevTools layout by moving tools between the top and bottom panels.</span></span>  
 
 :::image type="complex" source="../../media/2020/06/experiments-move-panels.msft.png" alt-text="Verschieben von Tools zwischen Panels" lightbox="../../media/2020/06/experiments-move-panels.msft.png":::
    <span data-ttu-id="7252f-161">Verschieben von Tools zwischen Panels</span><span class="sxs-lookup"><span data-stu-id="7252f-161">Move tools between panels</span></span>  
@@ -138,13 +138,13 @@ ms.locfileid: "11408318"
 
 <span data-ttu-id="7252f-165">In Microsoft Edge 83 und 84 werden QuickInfos für die Spalte Initiator, die die Ursache der Ressourcenanforderung zeigt, im [Netzwerkprotokoll][DevtoolsNetworkIndexLogActivity] angezeigt, das mit einer horizontalen Bildlaufleiste angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="7252f-165">In Microsoft Edge 83 and 84, tooltips for the Initiator column, which shows the cause of the resource request, in the [Network Log][DevtoolsNetworkIndexLogActivity] displayed with a horizontal scrollbar.</span></span>  <span data-ttu-id="7252f-166">Sie konnten nur die Aufrufliste anzeigen, die die Anforderung initiiert hat, indem Sie einen horizontalen Bildlauf in der QuickInfo durchführen.</span><span class="sxs-lookup"><span data-stu-id="7252f-166">You were only able to display the call stack that initiated the request by scrolling horizontally in the tooltip.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/initiator-tooltip-84.msft.png" alt-text="Die QuickInfo "Initiator" in Microsoft Edge 84" lightbox="../../media/2020/06/initiator-tooltip-84.msft.png":::
+:::image type="complex" source="../../media/2020/06/initiator-tooltip-84.msft.png" alt-text="Die QuickInfo Initiator in Microsoft Edge 84" lightbox="../../media/2020/06/initiator-tooltip-84.msft.png":::
    <span data-ttu-id="7252f-168">Die QuickInfo "Initiator" in Microsoft Edge 84</span><span class="sxs-lookup"><span data-stu-id="7252f-168">The Initiator tooltip in Microsoft Edge 84</span></span>  
 :::image-end:::  
 
 <span data-ttu-id="7252f-169">Ab Microsoft Edge 85 können Sie nun die Aufrufliste des Initiators in der QuickInfo ohne horizontalen Bildlauf anzeigen.</span><span class="sxs-lookup"><span data-stu-id="7252f-169">Starting with Microsoft Edge 85, you are now able to display the Initiator call stack in the tooltip without scrolling horizontally.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/initiator-tooltip-85.msft.png" alt-text="Die QuickInfo "Initiator" in Microsoft Edge 85" lightbox="../../media/2020/06/initiator-tooltip-85.msft.png":::
+:::image type="complex" source="../../media/2020/06/initiator-tooltip-85.msft.png" alt-text="Die QuickInfo Initiator in Microsoft Edge 85" lightbox="../../media/2020/06/initiator-tooltip-85.msft.png":::
    <span data-ttu-id="7252f-171">Die QuickInfo "Initiator" in Microsoft Edge 85</span><span class="sxs-lookup"><span data-stu-id="7252f-171">The Initiator tooltip in Microsoft Edge 85</span></span>
 :::image-end:::  
 
@@ -259,7 +259,7 @@ ms.locfileid: "11408318"
 <span data-ttu-id="7252f-225">Bei der Ausführung von Kopieren oder Ausschneiden ohne Auswahl im [Editor][DevtoolsSourcesEditCssJavascript]des Quellenbereichs kopiert devTools die aktuelle Inhaltszeile oder schneidet sie aus.</span><span class="sxs-lookup"><span data-stu-id="7252f-225">When performing copy or cut with no selection in the [Sources panel editor][DevtoolsSourcesEditCssJavascript], DevTools copies or cuts the current line of content.</span></span>  
 
 :::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="Kopieren Sie mit dem Cursor am Ende von Zeile 5 die gesamte Zeile aus pen.js devTools und einfügen in Visual Studio Code" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
-   <span data-ttu-id="7252f-227">Kopieren Sie mit dem Cursor am Ende von Zeile 5 die gesamte Zeile auspen.js\*\* devTools \*\* und einfügen in [Visual Studio Code][VisualStudioCode].</span><span class="sxs-lookup"><span data-stu-id="7252f-227">With the cursor at the end of Line 5, copying the whole line from **pen.js** in the DevTools and pasting in [Visual Studio Code][VisualStudioCode].</span></span>
+   <span data-ttu-id="7252f-227">Kopieren Sie mit dem Cursor am Ende von Zeile 5 die gesamte Zeile auspen.js devTools  und einfügen in [Visual Studio Code][VisualStudioCode].</span><span class="sxs-lookup"><span data-stu-id="7252f-227">With the cursor at the end of Line 5, copying the whole line from **pen.js** in the DevTools and pasting in [Visual Studio Code][VisualStudioCode].</span></span>
 :::image-end:::  
 
 <span data-ttu-id="7252f-228">[Chromium-Problem #800028][CR800028]</span><span class="sxs-lookup"><span data-stu-id="7252f-228">Chromium issue [#800028][CR800028]</span></span>
@@ -272,7 +272,7 @@ ms.locfileid: "11408318"
 
 <span data-ttu-id="7252f-233">In früheren Beispielen hat DevTools die Gruppierung der Nachrichten nicht deaktiviert, obwohl die Gruppierung `hello` **ähnlich** deaktiviert ist.</span><span class="sxs-lookup"><span data-stu-id="7252f-233">For example, previously, DevTools did not ungroup the `hello` messages even though **Group similar** is unchecked.</span></span>  <span data-ttu-id="7252f-234">Jetzt werden `hello` die Nachrichten nicht mehr in die Gruppe eingruppiert.</span><span class="sxs-lookup"><span data-stu-id="7252f-234">Now, the `hello` messages are ungrouped.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/ungroup-similar.msft.png" alt-text="Wenn "Gruppe ähnlich" deaktiviert ist, werden die Hello-Nachrichten nicht in die Gruppe eingruppiert." lightbox="../../media/2020/06/ungroup-similar.msft.png":::
+:::image type="complex" source="../../media/2020/06/ungroup-similar.msft.png" alt-text="Wenn Gruppe ähnlich deaktiviert ist, werden die Hello-Nachrichten nicht in die Gruppe eingruppiert." lightbox="../../media/2020/06/ungroup-similar.msft.png":::
    <span data-ttu-id="7252f-236">Wenn **"Gruppe ähnlich"** deaktiviert ist, werden `hello` die Nachrichten ungruppiert.</span><span class="sxs-lookup"><span data-stu-id="7252f-236">When **Group similar** is unchecked, the `hello` messages are ungrouped</span></span>
 :::image-end:::  
 

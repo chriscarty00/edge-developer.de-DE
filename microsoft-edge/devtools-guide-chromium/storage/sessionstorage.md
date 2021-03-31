@@ -42,7 +42,7 @@ ms.locfileid: "11439661"
     
 1.  <span data-ttu-id="04216-111">Erweitern Sie **das Menü Sitzungsspeicher.**</span><span class="sxs-lookup"><span data-stu-id="04216-111">Expand the **Session Storage** menu.</span></span>  
     
-    :::image type="complex" source="../media/storage-application-storage-session-storage.msft.png" alt-text="Das Menü "Sitzungsspeicher"" lightbox="../media/storage-application-storage-session-storage.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-session-storage.msft.png" alt-text="Das Menü Sitzungsspeicher" lightbox="../media/storage-application-storage-session-storage.msft.png":::
        <span data-ttu-id="04216-113">Das **Menü "Sitzungsspeicher"**</span><span class="sxs-lookup"><span data-stu-id="04216-113">The **Session Storage** Menu</span></span>  
     :::image-end:::  
     
@@ -89,9 +89,9 @@ ms.locfileid: "11439661"
     
 ## <a name="interact-with-sessionstorage-from-the-console"></a><span data-ttu-id="04216-139">Interagieren mit sessionStorage über die Konsole</span><span class="sxs-lookup"><span data-stu-id="04216-139">Interact with sessionStorage from the Console</span></span>  
 
-<span data-ttu-id="04216-140">Da Sie JavaScript in der Konsole \*\*\*\* ausführen können **und**die Konsole Zugriff auf die JavaScript-Kontexte der Seite hat, ist es möglich, mit über die Konsole `sessionStorage` zu **interagieren.**</span><span class="sxs-lookup"><span data-stu-id="04216-140">Since you may run JavaScript in the **Console**, and since the **Console** has access to the JavaScript contexts of the page, it is possible to interact with `sessionStorage` from the **Console**.</span></span>  
+<span data-ttu-id="04216-140">Da Sie JavaScript in der Konsole  ausführen können **und**die Konsole Zugriff auf die JavaScript-Kontexte der Seite hat, ist es möglich, mit über die Konsole `sessionStorage` zu **interagieren.**</span><span class="sxs-lookup"><span data-stu-id="04216-140">Since you may run JavaScript in the **Console**, and since the **Console** has access to the JavaScript contexts of the page, it is possible to interact with `sessionStorage` from the **Console**.</span></span>  
 
-1.  <span data-ttu-id="04216-141">Verwenden Sie **das Menü JavaScript-Kontexte,** \*\*\*\* um den JavaScript-Kontext der Konsole zu ändern, wenn Sie auf die Schlüssel-Wert-Paare einer anderen Domäne als der Seite zugreifen möchten, auf der `sessionStorage` Sie sich befinden.</span><span class="sxs-lookup"><span data-stu-id="04216-141">Use the **JavaScript contexts** menu to change the JavaScript context of the **Console** if you want to access the `sessionStorage` key-value pairs of a domain other than the page you are on.</span></span>  
+1.  <span data-ttu-id="04216-141">Verwenden Sie **das Menü JavaScript-Kontexte,**  um den JavaScript-Kontext der Konsole zu ändern, wenn Sie auf die Schlüssel-Wert-Paare einer anderen Domäne als der Seite zugreifen möchten, auf der `sessionStorage` Sie sich befinden.</span><span class="sxs-lookup"><span data-stu-id="04216-141">Use the **JavaScript contexts** menu to change the JavaScript context of the **Console** if you want to access the `sessionStorage` key-value pairs of a domain other than the page you are on.</span></span>  
     
     :::image type="complex" source="../media/storage-console-domain-selection.msft.png" alt-text="Ändern des JavaScript-Kontexts der Konsole" lightbox="../media/storage-console-domain-selection.msft.png":::
        <span data-ttu-id="04216-143">Ändern des JavaScript-Kontexts der **Konsole**</span><span class="sxs-lookup"><span data-stu-id="04216-143">Change the JavaScript context of the **Console**</span></span>  

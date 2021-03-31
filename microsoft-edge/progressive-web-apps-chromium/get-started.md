@@ -157,7 +157,7 @@ npm start
        <span data-ttu-id="db4a7-177">Dienstarbeitscache in Microsoft Edge DevTools (F12)</span><span class="sxs-lookup"><span data-stu-id="db4a7-177">Service Worker cache in Microsoft Edge DevTools (F12)</span></span>
     :::image-end:::
     
-1.  <span data-ttu-id="db4a7-178">Testen Sie PWA als Offline-App.</span><span class="sxs-lookup"><span data-stu-id="db4a7-178">Try your PWA as an offline app.</span></span>  <span data-ttu-id="db4a7-179">Wählen Sie in Microsoft Edge DevTools \( \) Netzwerk aus, und ändern Sie dann `F12` den **Onlinestatus** in **Offline**. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="db4a7-179">In Microsoft Edge DevTools \(`F12`\), choose **Network** then change the **Online** status to **Offline**.</span></span>  
+1.  <span data-ttu-id="db4a7-178">Testen Sie PWA als Offline-App.</span><span class="sxs-lookup"><span data-stu-id="db4a7-178">Try your PWA as an offline app.</span></span>  <span data-ttu-id="db4a7-179">Wählen Sie in Microsoft Edge DevTools \( \) Netzwerk aus, und ändern Sie dann `F12` den **Onlinestatus** in **Offline**. </span><span class="sxs-lookup"><span data-stu-id="db4a7-179">In Microsoft Edge DevTools \(`F12`\), choose **Network** then change the **Online** status to **Offline**.</span></span>  
     
     :::image type="complex" source="./media/devtools-offline.png" alt-text="Festlegen des Offlinemodus der App in Microsoft Edge DevTools" lightbox="./media/devtools-offline.png":::
        <span data-ttu-id="db4a7-181">Festlegen des Offlinemodus der App in Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="db4a7-181">Setting app to offline mode in Microsoft Edge DevTools</span></span>

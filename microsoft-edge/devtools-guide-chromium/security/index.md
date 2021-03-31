@@ -51,7 +51,7 @@ ms.locfileid: "11397776"
 
 ### <a name="non-secure-main-origins"></a><span data-ttu-id="b3c93-112">Nicht sichere Hauptherkunft</span><span class="sxs-lookup"><span data-stu-id="b3c93-112">Non-secure main origins</span></span>  
 
-<span data-ttu-id="b3c93-113">Wenn der Hauptherkunft einer Seite \*\*\*\* nicht sicher ist, heißt es in der Sicherheitsübersicht, **dass diese Seite nicht sicher ist.**</span><span class="sxs-lookup"><span data-stu-id="b3c93-113">When the main origin of a page is not secure, the **Security Overview** says **This page is not secure**.</span></span>  
+<span data-ttu-id="b3c93-113">Wenn der Hauptherkunft einer Seite  nicht sicher ist, heißt es in der Sicherheitsübersicht, **dass diese Seite nicht sicher ist.**</span><span class="sxs-lookup"><span data-stu-id="b3c93-113">When the main origin of a page is not secure, the **Security Overview** says **This page is not secure**.</span></span>  
 
 :::image type="complex" source="../media/security-security-overview-non-secure.msft.png" alt-text="Eine nicht sichere Seite" lightbox="../media/security-security-overview-non-secure.msft.png":::
    <span data-ttu-id="b3c93-115">Eine nicht sichere Seite</span><span class="sxs-lookup"><span data-stu-id="b3c93-115">A non-secure page</span></span>  
@@ -74,7 +74,7 @@ ms.locfileid: "11397776"
    <span data-ttu-id="b3c93-129">Gemischte Inhalte</span><span class="sxs-lookup"><span data-stu-id="b3c93-129">Mixed content</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="b3c93-130">Wählen Sie in der vorherigen Abbildung die Option \*\*\*\* Anforderung **anzeigen im** Netzwerkbereich aus, um das Netzwerktool zu öffnen und den Filter anzuwenden, sodass im Netzwerkprotokoll nur nicht sichere Ressourcen `mixed-content:displayed` angezeigt werden. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="b3c93-130">In the previous figure, choose **View 1 request in Network panel** to open the **Network** tool and apply the `mixed-content:displayed` filter so that the **Network Log** only shows non-secure resources.</span></span>  
+<span data-ttu-id="b3c93-130">Wählen Sie in der vorherigen Abbildung die Option  Anforderung **anzeigen im** Netzwerkbereich aus, um das Netzwerktool zu öffnen und den Filter anzuwenden, sodass im Netzwerkprotokoll nur nicht sichere Ressourcen `mixed-content:displayed` angezeigt werden. </span><span class="sxs-lookup"><span data-stu-id="b3c93-130">In the previous figure, choose **View 1 request in Network panel** to open the **Network** tool and apply the `mixed-content:displayed` filter so that the **Network Log** only shows non-secure resources.</span></span>  
 
 :::image type="complex" source="../media/security-network-filter.msft.png" alt-text="Gemischte Ressourcen im Netzwerkprotokoll" lightbox="../media/security-network-filter.msft.png":::
    <span data-ttu-id="b3c93-132">Gemischte Ressourcen im **Netzwerkprotokoll**</span><span class="sxs-lookup"><span data-stu-id="b3c93-132">Mixed resources in the **Network Log**</span></span>  

@@ -202,13 +202,13 @@ ms.locfileid: "11408360"
 
 <span data-ttu-id="57cf2-190">Simulieren [Sie nach dem Aktivieren der Gerätesymbolleiste][DeviceToolbar]die Dimensionen eines G4-Ansichtsports von "Moto G4" aus der **Geräteliste.**</span><span class="sxs-lookup"><span data-stu-id="57cf2-190">After [enabling the Device Toolbar][DeviceToolbar], simulate the dimensions of a Moto G4 viewport from the **Device** list.</span></span>  
 
-:::image type="complex" source="../../images/2020/01/motog4.msft.png" alt-text="Simulieren eines G4-Ansichtsports von "Moto G4"" lightbox="../../images/2020/01/motog4.msft.png":::
+:::image type="complex" source="../../images/2020/01/motog4.msft.png" alt-text="Simulieren eines G4-Ansichtsports von Moto G4" lightbox="../../images/2020/01/motog4.msft.png":::
    <span data-ttu-id="57cf2-192">Simulieren eines G4-Ansichtsports von "Moto G4"</span><span class="sxs-lookup"><span data-stu-id="57cf2-192">Simulating a Moto G4 viewport</span></span>  
 :::image-end:::  
 
 <span data-ttu-id="57cf2-193">Wählen [Sie Geräterahmen anzeigen aus,][DeviceFrame] um die Hardware von "Moto G4" um den Viewport zu zeigen.</span><span class="sxs-lookup"><span data-stu-id="57cf2-193">Choose [Show Device Frame][DeviceFrame] to show the Moto G4 hardware around the viewport.</span></span>  
 
-:::image type="complex" source="../../images/2020/01/motog4frame.msft.png" alt-text="Anzeigen der Hardware von "Moto G4"" lightbox="../../images/2020/01/motog4frame.msft.png":::
+:::image type="complex" source="../../images/2020/01/motog4frame.msft.png" alt-text="Anzeigen der Hardware von Moto G4" lightbox="../../images/2020/01/motog4frame.msft.png":::
    <span data-ttu-id="57cf2-195">Anzeigen der Hardware von "Moto G4"</span><span class="sxs-lookup"><span data-stu-id="57cf2-195">Showing the Moto G4 hardware</span></span>  
 :::image-end:::  
 
@@ -250,7 +250,7 @@ ms.locfileid: "11408360"
 
 #### <a name="copy-as-nodejs-fetch-to-include-cookie-data"></a><span data-ttu-id="57cf2-215">Kopieren als Node.js abrufen, um Cookiedaten zu enthalten</span><span class="sxs-lookup"><span data-stu-id="57cf2-215">Copy as Node.js fetch to include cookie data</span></span>  
 
-<span data-ttu-id="57cf2-216">Wenn Sie einen Ausdruck abrufen möchten, der Cookiedaten enthält, zeigen Sie auf eine Netzwerkanforderung, öffnen Sie das Kontextmenü \(mit der rechten Maustaste\), und wählen Sie Kopieren als Node.js `fetch` \*\*\*\*  >  **aus.**</span><span class="sxs-lookup"><span data-stu-id="57cf2-216">To get a `fetch` expression that includes cookie data, hover on a network request, open the contextual menu \(right-click\), and choose **Copy** > **Copy as Node.js fetch**.</span></span>  
+<span data-ttu-id="57cf2-216">Wenn Sie einen Ausdruck abrufen möchten, der Cookiedaten enthält, zeigen Sie auf eine Netzwerkanforderung, öffnen Sie das Kontextmenü \(mit der rechten Maustaste\), und wählen Sie Kopieren als Node.js `fetch`   >  **aus.**</span><span class="sxs-lookup"><span data-stu-id="57cf2-216">To get a `fetch` expression that includes cookie data, hover on a network request, open the contextual menu \(right-click\), and choose **Copy** > **Copy as Node.js fetch**.</span></span>  
 
 :::image type="complex" source="../../images/2020/01/fetchcookies.msft.png" alt-text="Kopieren als Node.js Abrufen" lightbox="../../images/2020/01/fetchcookies.msft.png":::
    <span data-ttu-id="57cf2-218">Kopieren als Node.js Abrufen</span><span class="sxs-lookup"><span data-stu-id="57cf2-218">Copy as Node.js fetch</span></span>  
@@ -294,7 +294,7 @@ ms.locfileid: "11408360"
 
 ### <a name="setting-for-disabling-scrolling-past-the-end-of-a-file"></a><span data-ttu-id="57cf2-239">Einstellung zum Deaktivieren des Bildlaufs am Ende einer Datei</span><span class="sxs-lookup"><span data-stu-id="57cf2-239">Setting for disabling scrolling past the end of a file</span></span>  
 
-<span data-ttu-id="57cf2-240">Öffnen [Sie Einstellungen,][Settings] und deaktivieren Sie dann **Einstellungsquellen**Zulassen des Bildlaufs am Ende der Datei, um das Standardverhalten der Benutzeroberfläche zu deaktivieren, mit dem Sie einen Bildlauf weit über das Ende einer Datei im Bereich  >  \*\*\*\*  >  \*\*\*\* **Quellen** durchführen können.</span><span class="sxs-lookup"><span data-stu-id="57cf2-240">Open [Settings][Settings] and then disable **Preferences** > **Sources** > **Allow scrolling past end of file** to disable the default UI behavior that allows you to scroll well past the end of a file in the **Sources** panel.</span></span>  
+<span data-ttu-id="57cf2-240">Öffnen [Sie Einstellungen,][Settings] und deaktivieren Sie dann **Einstellungsquellen**Zulassen des Bildlaufs am Ende der Datei, um das Standardverhalten der Benutzeroberfläche zu deaktivieren, mit dem Sie einen Bildlauf weit über das Ende einer Datei im Bereich  >    >   **Quellen** durchführen können.</span><span class="sxs-lookup"><span data-stu-id="57cf2-240">Open [Settings][Settings] and then disable **Preferences** > **Sources** > **Allow scrolling past end of file** to disable the default UI behavior that allows you to scroll well past the end of a file in the **Sources** panel.</span></span>  
 
 :::image type="complex" source="../../images/2020/01/settings.msft.png" alt-text="Deaktivieren Zulassen des Bildlaufs am Ende der Datei" lightbox="../../images/2020/01/settings.msft.png":::
    <span data-ttu-id="57cf2-242">Deaktivieren Zulassen **des Bildlaufs über das Ende der Datei** in den Einstellungen</span><span class="sxs-lookup"><span data-stu-id="57cf2-242">Disabling **Allow scrolling past end of file** in Settings</span></span>  

@@ -91,7 +91,7 @@ ms.locfileid: "11439689"
 
 <span data-ttu-id="e7d95-139">Wählen **Sie Aufnahmeeinstellungen** \( Aufnahmeeinstellungen \) aus, um weitere Einstellungen im Zusammenhang mit der Erfassung von Leistungsaufzeichnungen durch ![ ](../media/capture-settings-icon.msft.png) DevTools verfügbar zu machen.</span><span class="sxs-lookup"><span data-stu-id="e7d95-139">Choose **Capture settings** \(![Capture settings](../media/capture-settings-icon.msft.png)\) to expose more settings related to how DevTools captures performance recordings.</span></span>  
 
-:::image type="complex" source="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png" alt-text="Abschnitt "Aufnahmeeinstellungen"" lightbox="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png" alt-text="Abschnitt Aufnahmeeinstellungen" lightbox="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png":::
    <span data-ttu-id="e7d95-141">Abschnitt **"Aufnahmeeinstellungen"**</span><span class="sxs-lookup"><span data-stu-id="e7d95-141">The **Capture Settings** section</span></span>  
 :::image-end:::  
 
@@ -169,7 +169,7 @@ ms.locfileid: "11439689"
 
 ## <a name="analyze-a-performance-recording"></a><span data-ttu-id="e7d95-186">Analysieren einer Leistungsaufzeichnung</span><span class="sxs-lookup"><span data-stu-id="e7d95-186">Analyze a performance recording</span></span>  
 
-<span data-ttu-id="e7d95-187">Nachdem Sie [die Laufzeitleistung oder](#record-runtime-performance) \*\*\*\* die Ladeleistung aufgezeichnet [haben,](#record-load-performance)stellt der Bereich Leistung eine Menge Daten für die Analyse der Leistung der gerade geschehenen Daten zur Wahl.</span><span class="sxs-lookup"><span data-stu-id="e7d95-187">After you [record runtime performance](#record-runtime-performance) or [record load performance](#record-load-performance), the **Performance** panel provides a lot of data for analyzing the performance of what just happened.</span></span>  
+<span data-ttu-id="e7d95-187">Nachdem Sie [die Laufzeitleistung oder](#record-runtime-performance)  die Ladeleistung aufgezeichnet [haben,](#record-load-performance)stellt der Bereich Leistung eine Menge Daten für die Analyse der Leistung der gerade geschehenen Daten zur Wahl.</span><span class="sxs-lookup"><span data-stu-id="e7d95-187">After you [record runtime performance](#record-runtime-performance) or [record load performance](#record-load-performance), the **Performance** panel provides a lot of data for analyzing the performance of what just happened.</span></span>  
 
 ### <a name="select-a-portion-of-a-recording"></a><span data-ttu-id="e7d95-188">Auswählen eines Teils einer Aufzeichnung</span><span class="sxs-lookup"><span data-stu-id="e7d95-188">Select a portion of a recording</span></span>  
 
@@ -193,7 +193,7 @@ ms.locfileid: "11439689"
 
 ### <a name="search-activities"></a><span data-ttu-id="e7d95-204">Suchaktivitäten</span><span class="sxs-lookup"><span data-stu-id="e7d95-204">Search activities</span></span>  
 
-<span data-ttu-id="e7d95-205">Wählen `Control` + `F` Sie \(Windows, Linux\) oder `Command` + `F` \(macOS\) \*\*\*\* aus, um das Suchfeld am unteren Rand des Leistungsbereichs zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="e7d95-205">Select `Control`+`F` \(Windows, Linux\) or `Command`+`F` \(macOS\) to open the search box at the bottom of the **Performance** panel.</span></span>  
+<span data-ttu-id="e7d95-205">Wählen `Control` + `F` Sie \(Windows, Linux\) oder `Command` + `F` \(macOS\)  aus, um das Suchfeld am unteren Rand des Leistungsbereichs zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="e7d95-205">Select `Control`+`F` \(Windows, Linux\) or `Command`+`F` \(macOS\) to open the search box at the bottom of the **Performance** panel.</span></span>  
 
 :::image type="complex" source="../media/evaluate-performance-performance-search-regex.msft.png" alt-text="Suchfeld" lightbox="../media/evaluate-performance-performance-search-regex.msft.png":::
    <span data-ttu-id="e7d95-207">Suchfeld</span><span class="sxs-lookup"><span data-stu-id="e7d95-207">The search box</span></span>  
@@ -215,7 +215,7 @@ ms.locfileid: "11439689"
 
 <span data-ttu-id="e7d95-216">Verwenden Sie **den Abschnitt Main,** um Aktivitäten im Hauptthread der Seite zu anzeigen.</span><span class="sxs-lookup"><span data-stu-id="e7d95-216">Use the **Main** section to view activity that occurred on the main thread of the page.</span></span>  
 
-:::image type="complex" source="../media/evaluate-performance-performance-main-zoomed.msft.png" alt-text="Der Abschnitt "Main"" lightbox="../media/evaluate-performance-performance-main-zoomed.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-main-zoomed.msft.png" alt-text="Der Abschnitt Main" lightbox="../media/evaluate-performance-performance-main-zoomed.msft.png":::
    <span data-ttu-id="e7d95-218">Der **Abschnitt "Main"**</span><span class="sxs-lookup"><span data-stu-id="e7d95-218">The **Main** section</span></span>  
 :::image-end:::  
 
@@ -250,7 +250,7 @@ ms.locfileid: "11439689"
 
 #### <a name="root-activities"></a><span data-ttu-id="e7d95-248">Stammaktivitäten</span><span class="sxs-lookup"><span data-stu-id="e7d95-248">Root activities</span></span>  
 
-<span data-ttu-id="e7d95-249">Hier finden Sie \*\*\*\* eine Erläuterung des Konzepts \*\*\*\* der Stammaktivitäten, das im Bereich Anrufstruktur, **Bottom-Up-Bereich** und **Ereignisprotokoll erwähnt** wird.</span><span class="sxs-lookup"><span data-stu-id="e7d95-249">Here is an explanation of the **root activities** concept that is mentioned in the **Call Tree** panel, **Bottom-Up** panel, and **Event Log** panel.</span></span>  
+<span data-ttu-id="e7d95-249">Hier finden Sie  eine Erläuterung des Konzepts  der Stammaktivitäten, das im Bereich Anrufstruktur, **Bottom-Up-Bereich** und **Ereignisprotokoll erwähnt** wird.</span><span class="sxs-lookup"><span data-stu-id="e7d95-249">Here is an explanation of the **root activities** concept that is mentioned in the **Call Tree** panel, **Bottom-Up** panel, and **Event Log** panel.</span></span>  
 
 <span data-ttu-id="e7d95-250">Stammaktivitäten sind diejenigen, die dazu führen, dass der Browser einige Arbeit macht.</span><span class="sxs-lookup"><span data-stu-id="e7d95-250">Root activities are those which cause the browser to do some work.</span></span>  <span data-ttu-id="e7d95-251">Wenn Sie beispielsweise eine Webseite auswählen, führt der Browser eine `Event` Aktivität als Stammaktivität aus.</span><span class="sxs-lookup"><span data-stu-id="e7d95-251">For example, when you choose a webpage, the browser runs an `Event` activity as the root activity.</span></span>  <span data-ttu-id="e7d95-252">Dies `Event` kann dazu führen, dass ein Handler ausgeführt wird, und so weiter.</span><span class="sxs-lookup"><span data-stu-id="e7d95-252">That `Event` may cause a handler to run, and so on.</span></span>  
 
@@ -264,7 +264,7 @@ ms.locfileid: "11439689"
 
 <span data-ttu-id="e7d95-258">Im **Bereich Anrufstruktur** werden nur Aktivitäten während des ausgewählten Abschnitts der Aufzeichnung angezeigt.</span><span class="sxs-lookup"><span data-stu-id="e7d95-258">The **Call Tree** panel only displays activities during the selected portion of the recording.</span></span>  <span data-ttu-id="e7d95-259">Navigieren Sie [zu Wählen Sie einen Teil einer Aufzeichnung aus,](#select-a-portion-of-a-recording) um zu erfahren, wie Sie Teile auswählen.</span><span class="sxs-lookup"><span data-stu-id="e7d95-259">Navigate to [Select a portion of a recording](#select-a-portion-of-a-recording) to learn how to select portions.</span></span>  
 
-:::image type="complex" source="../media/evaluate-performance-performance-call-tree.msft.png" alt-text="Der Bereich "Anrufstruktur"" lightbox="../media/evaluate-performance-performance-call-tree.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-call-tree.msft.png" alt-text="Der Bereich Anrufstruktur" lightbox="../media/evaluate-performance-performance-call-tree.msft.png":::
    <span data-ttu-id="e7d95-261">Der **Bereich "Anrufstruktur"**</span><span class="sxs-lookup"><span data-stu-id="e7d95-261">The **Call Tree** panel</span></span>  
 :::image-end:::  
 
@@ -318,13 +318,13 @@ ms.locfileid: "11439689"
 
 <span data-ttu-id="e7d95-297">Verwenden Sie **das Menü Dauer,** um aktivitäten herausfiltern, die weniger als 1 ms oder 15 ms dauerten.</span><span class="sxs-lookup"><span data-stu-id="e7d95-297">Use the **Duration** menu to filter out any activities that took less than 1 ms or 15 ms.</span></span>  <span data-ttu-id="e7d95-298">Standardmäßig ist das **Menü Dauer** auf **Alle festgelegt,** d. h. alle Aktivitäten werden angezeigt.</span><span class="sxs-lookup"><span data-stu-id="e7d95-298">By default the **Duration** menu is set to **All**, meaning all activities are shown.</span></span>  
 
-<span data-ttu-id="e7d95-299">Deaktivieren Sie **die Kontrollkästchen Laden,** \*\*\*\* **Skripten,** **Rendern**oder Malen, um alle Aktivitäten aus diesen Kategorien heraus zu filtern.</span><span class="sxs-lookup"><span data-stu-id="e7d95-299">Disable the **Loading**, **Scripting**, **Rendering**, or **Painting** checkboxes to filter out all activities from those categories.</span></span>  
+<span data-ttu-id="e7d95-299">Deaktivieren Sie **die Kontrollkästchen Laden,**  **Skripten,** **Rendern**oder Malen, um alle Aktivitäten aus diesen Kategorien heraus zu filtern.</span><span class="sxs-lookup"><span data-stu-id="e7d95-299">Disable the **Loading**, **Scripting**, **Rendering**, or **Painting** checkboxes to filter out all activities from those categories.</span></span>  
 
 ### <a name="view-gpu-activity"></a><span data-ttu-id="e7d95-300">Anzeigen der GPU-Aktivität</span><span class="sxs-lookup"><span data-stu-id="e7d95-300">View GPU activity</span></span>  
 
 <span data-ttu-id="e7d95-301">Anzeigen der GPU-Aktivität im **Abschnitt GPU.**</span><span class="sxs-lookup"><span data-stu-id="e7d95-301">View GPU activity in the **GPU** section.</span></span>  
 
-:::image type="complex" source="../media/evaluate-performance-performance-gpu-zoomed.msft.png" alt-text="Der Abschnitt "GPU"" lightbox="../media/evaluate-performance-performance-gpu-zoomed.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-gpu-zoomed.msft.png" alt-text="Der Abschnitt GPU" lightbox="../media/evaluate-performance-performance-gpu-zoomed.msft.png":::
    <span data-ttu-id="e7d95-303">Der **Abschnitt "GPU"**</span><span class="sxs-lookup"><span data-stu-id="e7d95-303">The **GPU** section</span></span>  
 :::image-end:::  
 
@@ -386,7 +386,7 @@ ms.locfileid: "11439689"
 
 <span data-ttu-id="e7d95-336">Erweitern Sie den **Abschnitt Netzwerk,** um einen Wasserfall mit Netzwerkanforderungen zu sehen, die während der Aufzeichnung aufgetreten sind.</span><span class="sxs-lookup"><span data-stu-id="e7d95-336">Expand the **Network** section to view a waterfall of network requests that occurred during the recording.</span></span>  
 
-:::image type="complex" source="../media/evaluate-performance-performance-network.msft.png" alt-text="Der Abschnitt "Netzwerk"" lightbox="../media/evaluate-performance-performance-network.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-network.msft.png" alt-text="Der Abschnitt Netzwerk" lightbox="../media/evaluate-performance-performance-network.msft.png":::
    <span data-ttu-id="e7d95-338">Der **Abschnitt "Netzwerk"**</span><span class="sxs-lookup"><span data-stu-id="e7d95-338">The **Network** section</span></span>  
 :::image-end:::  
 
@@ -397,7 +397,7 @@ ms.locfileid: "11439689"
 *   <span data-ttu-id="e7d95-342">JS: Gelb</span><span class="sxs-lookup"><span data-stu-id="e7d95-342">JS: Yellow</span></span>  
 *   <span data-ttu-id="e7d95-343">Bilder: Grün</span><span class="sxs-lookup"><span data-stu-id="e7d95-343">Images: Green</span></span>  
     
-<span data-ttu-id="e7d95-344">Wählen Sie eine Anforderung aus, um weitere Informationen dazu im **Zusammenfassungsfenster anzeigen** zu können.</span><span class="sxs-lookup"><span data-stu-id="e7d95-344">Choose a request to view more information about it in the **Summary** panel.</span></span>  <span data-ttu-id="e7d95-345">In der vorherigen Abbildung \*\*\*\* zeigt der Zusammenfassungsbereich beispielsweise weitere Informationen zur blauen Anforderung an, die im Abschnitt **Netzwerk ausgewählt** ist.</span><span class="sxs-lookup"><span data-stu-id="e7d95-345">For example, in the previous figure, the **Summary** panel is displaying more information about the blue request that is selected in the **Network** section.</span></span>  
+<span data-ttu-id="e7d95-344">Wählen Sie eine Anforderung aus, um weitere Informationen dazu im **Zusammenfassungsfenster anzeigen** zu können.</span><span class="sxs-lookup"><span data-stu-id="e7d95-344">Choose a request to view more information about it in the **Summary** panel.</span></span>  <span data-ttu-id="e7d95-345">In der vorherigen Abbildung  zeigt der Zusammenfassungsbereich beispielsweise weitere Informationen zur blauen Anforderung an, die im Abschnitt **Netzwerk ausgewählt** ist.</span><span class="sxs-lookup"><span data-stu-id="e7d95-345">For example, in the previous figure, the **Summary** panel is displaying more information about the blue request that is selected in the **Network** section.</span></span>  
 
 <span data-ttu-id="e7d95-346">Ein dunkelblaues Quadrat oben links einer Anforderung bedeutet, dass es sich um eine Anforderung mit höherer Priorität handelt.</span><span class="sxs-lookup"><span data-stu-id="e7d95-346">A darker-blue square in the top-left of a request means it is a higher-priority request.</span></span>  <span data-ttu-id="e7d95-347">Ein heller-blaues Quadrat bedeutet niedrigere Priorität.</span><span class="sxs-lookup"><span data-stu-id="e7d95-347">A lighter-blue square means lower-priority.</span></span>  <span data-ttu-id="e7d95-348">In der vorherigen Abbildung hat die blaue, ausgewählte Anforderung beispielsweise eine höhere Priorität, und die grüne Anforderung darunter hat eine niedrigere Priorität.</span><span class="sxs-lookup"><span data-stu-id="e7d95-348">For example, in the previous figure, the blue, selected request is higher-priority, and the green one below it is lower-priority.</span></span>  
 
@@ -438,7 +438,7 @@ ms.locfileid: "11439689"
 <span data-ttu-id="e7d95-372">Die farbigen Linien im Diagramm werden den farbigen Kontrollkästchen oberhalb des Diagramms angezeigt.</span><span class="sxs-lookup"><span data-stu-id="e7d95-372">The colored lines on the chart map to the colored checkboxes above the chart.</span></span>  
 <span data-ttu-id="e7d95-373">Deaktivieren Sie ein Kontrollkästchen, um diese Kategorie im Diagramm auszublenden.</span><span class="sxs-lookup"><span data-stu-id="e7d95-373">Disable a checkbox to hide that category from the chart.</span></span>  
 
-<span data-ttu-id="e7d95-374">Das Diagramm zeigt nur den Bereich der aktuell ausgewählten Aufzeichnung an.</span><span class="sxs-lookup"><span data-stu-id="e7d95-374">The chart only displays the region of the recording that is currently selected.</span></span>  <span data-ttu-id="e7d95-375">In der vorherigen Abbildung \*\*\*\* zeigt das Diagramm Arbeitsspeicher beispielsweise nur die Speicherauslastung zwischen 400 ms und 1750 ms an.</span><span class="sxs-lookup"><span data-stu-id="e7d95-375">For example, in the previous figure, the **Memory** chart is only showing memory usage from around the 400 ms mark to the 1750 ms mark.</span></span>  
+<span data-ttu-id="e7d95-374">Das Diagramm zeigt nur den Bereich der aktuell ausgewählten Aufzeichnung an.</span><span class="sxs-lookup"><span data-stu-id="e7d95-374">The chart only displays the region of the recording that is currently selected.</span></span>  <span data-ttu-id="e7d95-375">In der vorherigen Abbildung  zeigt das Diagramm Arbeitsspeicher beispielsweise nur die Speicherauslastung zwischen 400 ms und 1750 ms an.</span><span class="sxs-lookup"><span data-stu-id="e7d95-375">For example, in the previous figure, the **Memory** chart is only showing memory usage from around the 400 ms mark to the 1750 ms mark.</span></span>  
 
 ### <a name="view-the-duration-of-a-portion-of-a-recording"></a><span data-ttu-id="e7d95-376">Anzeigen der Dauer eines Teils einer Aufzeichnung</span><span class="sxs-lookup"><span data-stu-id="e7d95-376">View the duration of a portion of a recording</span></span>  
 
@@ -500,13 +500,13 @@ ms.locfileid: "11439689"
 1.  <span data-ttu-id="e7d95-411">[Aktivieren Sie](#turn-on-advanced-paint-instrumentation).</span><span class="sxs-lookup"><span data-stu-id="e7d95-411">[Turn on](#turn-on-advanced-paint-instrumentation).</span></span>  
 1.  <span data-ttu-id="e7d95-412">Wählen Sie im **Abschnitt** Main ein **Paint-Ereignis** aus.</span><span class="sxs-lookup"><span data-stu-id="e7d95-412">Choose a **Paint** event in the **Main** section.</span></span>  
     
-    :::image type="complex" source="../media/evaluate-performance-paint-profiler.msft.png" alt-text="Der Bereich "Paint Profiler"" lightbox="../media/evaluate-performance-paint-profiler.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-paint-profiler.msft.png" alt-text="Der Bereich Paint Profiler" lightbox="../media/evaluate-performance-paint-profiler.msft.png":::
        <span data-ttu-id="e7d95-414">Der **Bereich "Paint Profiler"**</span><span class="sxs-lookup"><span data-stu-id="e7d95-414">The **Paint Profiler** panel</span></span>  
     :::image-end:::  
     
 ## <a name="analyze-rendering-performance-with-the-rendering-tool"></a><span data-ttu-id="e7d95-415">Analysieren der Renderingleistung mit dem Renderingtool</span><span class="sxs-lookup"><span data-stu-id="e7d95-415">Analyze rendering performance with the Rendering tool</span></span>  
 
-<span data-ttu-id="e7d95-416">Verwenden Sie die \*\*\*\* Features des Renderingbereichs, um die Renderingleistung Ihrer Seite zu visualisieren.</span><span class="sxs-lookup"><span data-stu-id="e7d95-416">Use the features of the **Rendering** panel to help visualize the rendering performance of your page.</span></span>  
+<span data-ttu-id="e7d95-416">Verwenden Sie die  Features des Renderingbereichs, um die Renderingleistung Ihrer Seite zu visualisieren.</span><span class="sxs-lookup"><span data-stu-id="e7d95-416">Use the features of the **Rendering** panel to help visualize the rendering performance of your page.</span></span>  
 
 <span data-ttu-id="e7d95-417">So öffnen Sie das **Renderingtool:**</span><span class="sxs-lookup"><span data-stu-id="e7d95-417">To open the **Rendering** tool:</span></span>  
 

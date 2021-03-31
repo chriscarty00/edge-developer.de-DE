@@ -73,7 +73,7 @@ ms.locfileid: "11182367"
       <span data-ttu-id="8ffff-137">Verlassen Sie sich auf eine aktuelle Version von Chromium mit regulären Plattformupdates und Sicherheitspatches.</span><span class="sxs-lookup"><span data-stu-id="8ffff-137">Rely on an up-to-date version of Chromium with regular platform updates and security patches.</span></span>  
    :::column-end:::
    :::column span="1":::
-      <span data-ttu-id="8ffff-138">**Behoben** \ (in Kürze verfügbar)</span><span class="sxs-lookup"><span data-stu-id="8ffff-138">**Fixed** \(coming soon\)</span></span>  
+      <span data-ttu-id="8ffff-138">**Behoben** \(in Kürze verfügbar)</span><span class="sxs-lookup"><span data-stu-id="8ffff-138">**Fixed** \(coming soon\)</span></span>  
       <span data-ttu-id="8ffff-139">Wählen Sie aus, um die Chrom Bits in Ihrer Anwendung zu verpacken.</span><span class="sxs-lookup"><span data-stu-id="8ffff-139">Choose to package the Chromium bits in your application.</span></span>  
    :::column-end:::
    :::column span="1":::
@@ -95,27 +95,27 @@ ms.locfileid: "11182367"
 
 ## <span data-ttu-id="8ffff-151">Unterstützte Plattformen</span><span class="sxs-lookup"><span data-stu-id="8ffff-151">Supported platforms</span></span>  
 
-<span data-ttu-id="8ffff-152">Eine allgemeine Verfügbarkeit \ (GA \) oder Preview-Version steht in den folgenden Programmierumgebungen zur Verfügung.</span><span class="sxs-lookup"><span data-stu-id="8ffff-152">A General Availability \(GA\) or Preview version is available on the following programming environments.</span></span>  
+<span data-ttu-id="8ffff-152">Eine allgemeine Verfügbarkeit \(GA \) oder Preview-Version steht in den folgenden Programmierumgebungen zur Verfügung.</span><span class="sxs-lookup"><span data-stu-id="8ffff-152">A General Availability \(GA\) or Preview version is available on the following programming environments.</span></span>  
 
-*   <span data-ttu-id="8ffff-153">Win32 C/C++ \ (GA \)</span><span class="sxs-lookup"><span data-stu-id="8ffff-153">Win32 C/C++ \(GA\)</span></span>
+*   <span data-ttu-id="8ffff-153">Win32 C/C++ \(GA \)</span><span class="sxs-lookup"><span data-stu-id="8ffff-153">Win32 C/C++ \(GA\)</span></span>
 *   <span data-ttu-id="8ffff-154">.NET Framework 4.6.2 oder höher</span><span class="sxs-lookup"><span data-stu-id="8ffff-154">.NET Framework 4.6.2 or later</span></span>
 *   <span data-ttu-id="8ffff-155">.Net Core 3,1 oder höher</span><span class="sxs-lookup"><span data-stu-id="8ffff-155">.NET Core 3.1 or later</span></span>
 *   <span data-ttu-id="8ffff-156">.Net 5</span><span class="sxs-lookup"><span data-stu-id="8ffff-156">.NET 5</span></span>
-*   <span data-ttu-id="8ffff-157">[WinUI 3,0][UwpToolkitsWinui3] \ (Vorschau \)</span><span class="sxs-lookup"><span data-stu-id="8ffff-157">[WinUI 3.0][UwpToolkitsWinui3] \(Preview\)</span></span>
+*   <span data-ttu-id="8ffff-157">[WinUI 3,0][UwpToolkitsWinui3] \(Vorschau \)</span><span class="sxs-lookup"><span data-stu-id="8ffff-157">[WinUI 3.0][UwpToolkitsWinui3] \(Preview\)</span></span>
 
 <span data-ttu-id="8ffff-158">Sie können WebView2-Anwendungen unter den folgenden Windows-Versionen ausführen.</span><span class="sxs-lookup"><span data-stu-id="8ffff-158">You are able to run WebView2 applications on the following versions of Windows.</span></span>  
 
 *   <span data-ttu-id="8ffff-159">Windows 10</span><span class="sxs-lookup"><span data-stu-id="8ffff-159">Windows 10</span></span>  
 *   <span data-ttu-id="8ffff-160">Windows8.1</span><span class="sxs-lookup"><span data-stu-id="8ffff-160">Windows 8.1</span></span>  
-*   <span data-ttu-id="8ffff-161">Windows 7 \ \* \ \*</span><span class="sxs-lookup"><span data-stu-id="8ffff-161">Windows 7 \*\*</span></span>  
+*   <span data-ttu-id="8ffff-161">Windows 7 \ \* \ \*</span><span class="sxs-lookup"><span data-stu-id="8ffff-161">Windows 7 </span></span>  
 *   <span data-ttu-id="8ffff-162">Windows Server 2019</span><span class="sxs-lookup"><span data-stu-id="8ffff-162">Windows Server 2019</span></span>  
 *   <span data-ttu-id="8ffff-163">Windows Server 2016</span><span class="sxs-lookup"><span data-stu-id="8ffff-163">Windows Server 2016</span></span>  
 *   <span data-ttu-id="8ffff-164">Windows Server 2012</span><span class="sxs-lookup"><span data-stu-id="8ffff-164">Windows Server 2012</span></span>  
 *   <span data-ttu-id="8ffff-165">Windows Server 2012 R2</span><span class="sxs-lookup"><span data-stu-id="8ffff-165">Windows Server 2012 R2</span></span>  
-*   <span data-ttu-id="8ffff-166">Windows Server 2008 R2 \ \* \ \*</span><span class="sxs-lookup"><span data-stu-id="8ffff-166">Windows Server 2008 R2 \*\*</span></span>  
+*   <span data-ttu-id="8ffff-166">Windows Server 2008 R2 \ \* \ \*</span><span class="sxs-lookup"><span data-stu-id="8ffff-166">Windows Server 2008 R2 </span></span>  
 
 > [!IMPORTANT]
-> <span data-ttu-id="8ffff-167">\ \* \ \* WebView2-Unterstützung für Windows 7 und Windows Server 2008 R2 hat denselben Support Zyklus wie Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="8ffff-167">\*\* WebView2 support for Windows 7 and Windows Server 2008 R2 has the same support cycle as Microsoft Edge.</span></span>  <span data-ttu-id="8ffff-168">Weitere Informationen finden Sie [unter Unterstützte Microsoft Edge-Betriebssysteme][DeployedgeMicrosoftEdgeSupportedOS].</span><span class="sxs-lookup"><span data-stu-id="8ffff-168">For more information, navigate to [Microsoft Edge supported Operating Systems][DeployedgeMicrosoftEdgeSupportedOS].</span></span>  
+> <span data-ttu-id="8ffff-167">\ \* \ \* WebView2-Unterstützung für Windows 7 und Windows Server 2008 R2 hat denselben Support Zyklus wie Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="8ffff-167"> WebView2 support for Windows 7 and Windows Server 2008 R2 has the same support cycle as Microsoft Edge.</span></span>  <span data-ttu-id="8ffff-168">Weitere Informationen finden Sie [unter Unterstützte Microsoft Edge-Betriebssysteme][DeployedgeMicrosoftEdgeSupportedOS].</span><span class="sxs-lookup"><span data-stu-id="8ffff-168">For more information, navigate to [Microsoft Edge supported Operating Systems][DeployedgeMicrosoftEdgeSupportedOS].</span></span>  
 
 ## <span data-ttu-id="8ffff-169">Nächste Schritte</span><span class="sxs-lookup"><span data-stu-id="8ffff-169">Next steps</span></span>  
 

@@ -194,7 +194,7 @@ ms.locfileid: "11439289"
     
 ## <a name="filter-messages"></a><span data-ttu-id="1f25c-202">Filtern von Nachrichten</span><span class="sxs-lookup"><span data-stu-id="1f25c-202">Filter messages</span></span>  
 
-<span data-ttu-id="1f25c-203">Auf einigen Webseiten wird \*\*\*\* die Konsole mit Nachrichten überflutet.</span><span class="sxs-lookup"><span data-stu-id="1f25c-203">On some webpages you review the **Console** get flooded with messages.</span></span>  <span data-ttu-id="1f25c-204">DevTools bietet viele verschiedene Möglichkeiten zum Herausfiltern von Nachrichten, die für die jeweilige Aufgabe nicht relevant sind.</span><span class="sxs-lookup"><span data-stu-id="1f25c-204">DevTools provides many different ways to filter out messages that are not relevant to the task at hand.</span></span>  
+<span data-ttu-id="1f25c-203">Auf einigen Webseiten wird  die Konsole mit Nachrichten überflutet.</span><span class="sxs-lookup"><span data-stu-id="1f25c-203">On some webpages you review the **Console** get flooded with messages.</span></span>  <span data-ttu-id="1f25c-204">DevTools bietet viele verschiedene Möglichkeiten zum Herausfiltern von Nachrichten, die für die jeweilige Aufgabe nicht relevant sind.</span><span class="sxs-lookup"><span data-stu-id="1f25c-204">DevTools provides many different ways to filter out messages that are not relevant to the task at hand.</span></span>  
 
 ### <a name="filter-by-log-level"></a><span data-ttu-id="1f25c-205">Filtern nach Protokollebene</span><span class="sxs-lookup"><span data-stu-id="1f25c-205">Filter by log level</span></span>  
 
@@ -218,7 +218,7 @@ ms.locfileid: "11439289"
        <span data-ttu-id="1f25c-222">Filtern von Nachrichten, die nicht enthalten sind</span><span class="sxs-lookup"><span data-stu-id="1f25c-222">Filter out any message that does not include</span></span> `Dave`  
     :::image-end:::  
     
-1.  <span data-ttu-id="1f25c-223">Löschen `Dave` sie \*\*\*\* aus dem Textfeld Filter.</span><span class="sxs-lookup"><span data-stu-id="1f25c-223">Delete `Dave` from the **Filter** text box.</span></span>  <span data-ttu-id="1f25c-224">Alle Nachrichten werden erneut angezeigt.</span><span class="sxs-lookup"><span data-stu-id="1f25c-224">All the messages reappear.</span></span>  
+1.  <span data-ttu-id="1f25c-223">Löschen `Dave` sie  aus dem Textfeld Filter.</span><span class="sxs-lookup"><span data-stu-id="1f25c-223">Delete `Dave` from the **Filter** text box.</span></span>  <span data-ttu-id="1f25c-224">Alle Nachrichten werden erneut angezeigt.</span><span class="sxs-lookup"><span data-stu-id="1f25c-224">All the messages reappear.</span></span>  
 
 ### <a name="filter-by-regular-expression"></a><span data-ttu-id="1f25c-225">Filtern nach regulärem Ausdruck</span><span class="sxs-lookup"><span data-stu-id="1f25c-225">Filter by regular expression</span></span>  
 
@@ -230,7 +230,7 @@ ms.locfileid: "11439289"
        <span data-ttu-id="1f25c-230">Filtern von Nachrichten, die nicht mit dem Muster übereinstimmen</span><span class="sxs-lookup"><span data-stu-id="1f25c-230">Filtering out any message that does not match the pattern</span></span> `/^[AH]/`  
     :::image-end:::  
     
-1.  <span data-ttu-id="1f25c-231">Löschen `/^[AH]/` sie \*\*\*\* aus dem Textfeld Filter.</span><span class="sxs-lookup"><span data-stu-id="1f25c-231">Delete `/^[AH]/` from the **Filter** text box.</span></span>  <span data-ttu-id="1f25c-232">Alle Nachrichten sind wieder sichtbar.</span><span class="sxs-lookup"><span data-stu-id="1f25c-232">All messages are visible again.</span></span>  
+1.  <span data-ttu-id="1f25c-231">Löschen `/^[AH]/` sie  aus dem Textfeld Filter.</span><span class="sxs-lookup"><span data-stu-id="1f25c-231">Delete `/^[AH]/` from the **Filter** text box.</span></span>  <span data-ttu-id="1f25c-232">Alle Nachrichten sind wieder sichtbar.</span><span class="sxs-lookup"><span data-stu-id="1f25c-232">All messages are visible again.</span></span>  
 
 ### <a name="filter-by-message-source"></a><span data-ttu-id="1f25c-233">Filtern nach Nachrichtenquelle</span><span class="sxs-lookup"><span data-stu-id="1f25c-233">Filter by message source</span></span>  
 
@@ -273,7 +273,7 @@ ms.locfileid: "11439289"
     
 ## <a name="see-also"></a><span data-ttu-id="1f25c-263">Weitere Informationen</span><span class="sxs-lookup"><span data-stu-id="1f25c-263">See also</span></span>  
 
-*   <span data-ttu-id="1f25c-264">Weitere Features und Workflows im \*\*\*\* Zusammenhang mit der Konsolenbenutzeroberfläche finden Sie unter [Konsolenreferenz][DevToolsConsoleApi].</span><span class="sxs-lookup"><span data-stu-id="1f25c-264">To explore more features and workflows related to the **Console** UI,navigate to [Console Reference][DevToolsConsoleApi].</span></span>  
+*   <span data-ttu-id="1f25c-264">Weitere Features und Workflows im  Zusammenhang mit der Konsolenbenutzeroberfläche finden Sie unter [Konsolenreferenz][DevToolsConsoleApi].</span><span class="sxs-lookup"><span data-stu-id="1f25c-264">To explore more features and workflows related to the **Console** UI,navigate to [Console Reference][DevToolsConsoleApi].</span></span>  
 *   <span data-ttu-id="1f25c-265">Weitere Informationen zu allen methoden, die in View `console` messages logged from [JavaScript](#view-messages-logged-from-javascript) gezeigt werden, und die anderen Methoden, die in diesem Artikel nicht behandelt werden, finden Sie unter `console` Console API [Reference][DevToolsConsoleReference].</span><span class="sxs-lookup"><span data-stu-id="1f25c-265">To learn more about all of the `console` methods demonstrated in [View messages logged from JavaScript](#view-messages-logged-from-javascript) and explore the other `console` methods not covered in this article, navigate to [Console API Reference][DevToolsConsoleReference].</span></span>  
 <!--*   Navigate to [Get Started](/microsoft-edge/devtools-guide-chromium/#start) to explore what else you are able to do with DevTools.  -->  
      

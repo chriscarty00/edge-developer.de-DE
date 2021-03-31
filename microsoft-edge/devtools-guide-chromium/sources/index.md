@@ -30,7 +30,7 @@ ms.locfileid: "11439605"
 
 # <a name="sources-panel-overview"></a><span data-ttu-id="e5ba0-104">Übersicht über den Quellenbereich</span><span class="sxs-lookup"><span data-stu-id="e5ba0-104">Sources panel overview</span></span>  
 
-<span data-ttu-id="e5ba0-105">Verwenden Sie den \*\*\*\* Microsoft Edge DevTools Sources-Bereich, um die folgenden Aktionen durchzuführen.</span><span class="sxs-lookup"><span data-stu-id="e5ba0-105">Use the Microsoft Edge DevTools **Sources** panel to perform the following actions.</span></span>  
+<span data-ttu-id="e5ba0-105">Verwenden Sie den  Microsoft Edge DevTools Sources-Bereich, um die folgenden Aktionen durchzuführen.</span><span class="sxs-lookup"><span data-stu-id="e5ba0-105">Use the Microsoft Edge DevTools **Sources** panel to perform the following actions.</span></span>  
 
 *   <span data-ttu-id="e5ba0-106">[Anzeigen von Dateien](#display-files).</span><span class="sxs-lookup"><span data-stu-id="e5ba0-106">[Display files](#display-files).</span></span>  
 *   <span data-ttu-id="e5ba0-107">[Bearbeiten von CSS und JavaScript](#edit-css-and-javascript).</span><span class="sxs-lookup"><span data-stu-id="e5ba0-107">[Edit CSS and JavaScript](#edit-css-and-javascript).</span></span>  
@@ -40,7 +40,7 @@ ms.locfileid: "11439605"
     
 ## <a name="display-files"></a><span data-ttu-id="e5ba0-112">Anzeigen von Dateien</span><span class="sxs-lookup"><span data-stu-id="e5ba0-112">Display files</span></span>  
 
-<span data-ttu-id="e5ba0-113">Verwenden \*\*\*\* Des Seitenbereichs; , um alle Ressourcen, die die Seite geladen hat, anzeigen zu können.</span><span class="sxs-lookup"><span data-stu-id="e5ba0-113">Use the **Page** panel; to display all of the resources that the page has loaded.</span></span>
+<span data-ttu-id="e5ba0-113">Verwenden  Des Seitenbereichs; , um alle Ressourcen, die die Seite geladen hat, anzeigen zu können.</span><span class="sxs-lookup"><span data-stu-id="e5ba0-113">Use the **Page** panel; to display all of the resources that the page has loaded.</span></span>
 
 :::image type="complex" source="../media/sources-page-pane.msft.png" alt-text="Seitenbereich" lightbox="../media/sources-page-pane.msft.png":::
    <span data-ttu-id="e5ba0-115">**Seitenbereich**</span><span class="sxs-lookup"><span data-stu-id="e5ba0-115">The **Page** panel</span></span>  
@@ -102,7 +102,7 @@ document.head.appendChild(script);
 <span data-ttu-id="e5ba0-151">So führen Sie einen **Codeausschnitt aus:**</span><span class="sxs-lookup"><span data-stu-id="e5ba0-151">To run a **Snippet**:</span></span>
 
 *   <span data-ttu-id="e5ba0-152">Öffnen Sie die Datei mithilfe des **Codeausschnittbereichs,** und wählen Sie **Ausführen** \( ![ Die Schaltfläche Ausführen ](../media/run-snippet-icon.msft.png) \).</span><span class="sxs-lookup"><span data-stu-id="e5ba0-152">Open the file using the **Snippets** panel, and choose **Run** \(![The Run button](../media/run-snippet-icon.msft.png)\).</span></span>  
-*   <span data-ttu-id="e5ba0-153">Öffnen Sie [das Befehlsmenü,][DevtoolsGuideChromiumCommandMenuIndex]löschen Sie das Zeichen, geben Sie ein, geben Sie den Namen Ihres Codeausschnitts `>` `!` ein, und wählen Sie dann \*\*\*\* `Enter` aus.</span><span class="sxs-lookup"><span data-stu-id="e5ba0-153">Open the [Command Menu][DevtoolsGuideChromiumCommandMenuIndex], delete the `>` character, type `!`, type the name of your **Snippet**, and then select `Enter`.</span></span>  
+*   <span data-ttu-id="e5ba0-153">Öffnen Sie [das Befehlsmenü,][DevtoolsGuideChromiumCommandMenuIndex]löschen Sie das Zeichen, geben Sie ein, geben Sie den Namen Ihres Codeausschnitts `>` `!` ein, und wählen Sie dann  `Enter` aus.</span><span class="sxs-lookup"><span data-stu-id="e5ba0-153">Open the [Command Menu][DevtoolsGuideChromiumCommandMenuIndex], delete the `>` character, type `!`, type the name of your **Snippet**, and then select `Enter`.</span></span>  
     
 <span data-ttu-id="e5ba0-154">Navigieren Sie [zu Codeausschnitte von beliebigen Seiten ausführen,][DevtoolsGuideChromiumJavascriptSnippets] um weitere Informationen zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="e5ba0-154">Navigate to [Run Snippets Of Code From Any Page][DevtoolsGuideChromiumJavascriptSnippets] to learn more.</span></span>
 
@@ -118,7 +118,7 @@ document.head.appendChild(script);
 
 ## <a name="set-up-a-workspace"></a><span data-ttu-id="e5ba0-162">Einrichten eines Arbeitsbereichs</span><span class="sxs-lookup"><span data-stu-id="e5ba0-162">Set up a Workspace</span></span>  
 
-<span data-ttu-id="e5ba0-163">Wenn Sie eine Datei im \*\*\*\* Tool Quellen bearbeiten, gehen diese Änderungen beim Aktualisieren der Seite standardmäßig verloren.</span><span class="sxs-lookup"><span data-stu-id="e5ba0-163">By default, when you edit a file in the **Sources** tool, those changes are lost when you refresh the page.</span></span>  <span data-ttu-id="e5ba0-164">**Mit Arbeitsbereichen** können Sie die Änderungen, die Sie in DevTools vornehmen, in Ihrem Dateisystem speichern.</span><span class="sxs-lookup"><span data-stu-id="e5ba0-164">**Workspaces** enable you to save the changes that you make in DevTools to your file system.</span></span>  <span data-ttu-id="e5ba0-165">Im Wesentlichen kann DevTools als Code-Editor verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="e5ba0-165">Essentially, DevTools is able to be used as your code editor.</span></span>
+<span data-ttu-id="e5ba0-163">Wenn Sie eine Datei im  Tool Quellen bearbeiten, gehen diese Änderungen beim Aktualisieren der Seite standardmäßig verloren.</span><span class="sxs-lookup"><span data-stu-id="e5ba0-163">By default, when you edit a file in the **Sources** tool, those changes are lost when you refresh the page.</span></span>  <span data-ttu-id="e5ba0-164">**Mit Arbeitsbereichen** können Sie die Änderungen, die Sie in DevTools vornehmen, in Ihrem Dateisystem speichern.</span><span class="sxs-lookup"><span data-stu-id="e5ba0-164">**Workspaces** enable you to save the changes that you make in DevTools to your file system.</span></span>  <span data-ttu-id="e5ba0-165">Im Wesentlichen kann DevTools als Code-Editor verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="e5ba0-165">Essentially, DevTools is able to be used as your code editor.</span></span>
 
 <span data-ttu-id="e5ba0-166">Navigieren Sie [zu Bearbeiten von Dateien mit Arbeitsbereichen,][DevtoolsGuideChromiumWorkspacesIndex] um die ersten Schritte zu starten.</span><span class="sxs-lookup"><span data-stu-id="e5ba0-166">Navigate to [Edit Files With Workspaces][DevtoolsGuideChromiumWorkspacesIndex] to get started.</span></span>
 

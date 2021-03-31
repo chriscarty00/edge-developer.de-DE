@@ -50,7 +50,7 @@ ms.locfileid: "11439303"
 *   <span data-ttu-id="e4a25-118">Zeigen Sie in Ihrem Viewport auf das Element, öffnen Sie das Kontextmenü \(mit der rechten Maustaste auf\), und wählen Sie **Überprüfen aus.**</span><span class="sxs-lookup"><span data-stu-id="e4a25-118">In your viewport, hover on the element, open the contextual menu \(right-click\), and choose **Inspect**.</span></span>  
 *   <span data-ttu-id="e4a25-119">Wählen Sie in DevTools **Ein** Element auswählen \( Element auswählen ![ ](../media/select-an-element-icon.msft.png) \) oder `Control` + `Shift` + `C` \(Windows, Linux\) oder `Command` + `Shift` + `C` \(macOS\) aus, und wählen Sie dann das Element im Viewport aus.</span><span class="sxs-lookup"><span data-stu-id="e4a25-119">In DevTools, choose **Select an element** \(![Select an element](../media/select-an-element-icon.msft.png)\) or select `Control`+`Shift`+`C` \(Windows, Linux\) or `Command`+`Shift`+`C` \(macOS\), and then choose the element in the viewport.</span></span>  
 *   <span data-ttu-id="e4a25-120">Wählen Sie in DevTools das Element in der **DOM-Struktur aus.**</span><span class="sxs-lookup"><span data-stu-id="e4a25-120">In DevTools, choose the element in the **DOM Tree**.</span></span>  
-*   <span data-ttu-id="e4a25-121">Führen Sie in DevTools eine Abfrage wie in der Konsole aus, zeigen Sie auf das Ergebnis, öffnen Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste auf\), und wählen Sie im Bereich Elemente anzeigen `document.querySelector('p')` **aus.** \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="e4a25-121">In DevTools, run a query like `document.querySelector('p')` in the **Console**, hover on the result, open the contextual menu \(right-click\), and choose **Reveal in Elements panel**.</span></span>  
+*   <span data-ttu-id="e4a25-121">Führen Sie in DevTools eine Abfrage wie in der Konsole aus, zeigen Sie auf das Ergebnis, öffnen Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste auf\), und wählen Sie im Bereich Elemente anzeigen `document.querySelector('p')` **aus.** </span><span class="sxs-lookup"><span data-stu-id="e4a25-121">In DevTools, run a query like `document.querySelector('p')` in the **Console**, hover on the result, open the contextual menu \(right-click\), and choose **Reveal in Elements panel**.</span></span>  
 
 ## <a name="view-css"></a><span data-ttu-id="e4a25-122">Anzeigen von CSS</span><span class="sxs-lookup"><span data-stu-id="e4a25-122">View CSS</span></span>  
 
@@ -103,9 +103,9 @@ ms.locfileid: "11439303"
 <span data-ttu-id="e4a25-150">Wählen Und bearbeiten Sie einen Wert, um einen Wert zu ändern.</span><span class="sxs-lookup"><span data-stu-id="e4a25-150">Choose and edit on a value to change a value.</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="e4a25-151">In der folgenden Abbildung zeigt das \*\*\*\* **Diagramm Feldmodell** im Bereich Formatvorlagen das Feldmodell für das aktuell ausgewählte `h1` Element.</span><span class="sxs-lookup"><span data-stu-id="e4a25-151">In the following figure, the **Box Model** diagram in the **Styles** panel shows the box model for the currently selected `h1` element.</span></span>  
+> <span data-ttu-id="e4a25-151">In der folgenden Abbildung zeigt das  **Diagramm Feldmodell** im Bereich Formatvorlagen das Feldmodell für das aktuell ausgewählte `h1` Element.</span><span class="sxs-lookup"><span data-stu-id="e4a25-151">In the following figure, the **Box Model** diagram in the **Styles** panel shows the box model for the currently selected `h1` element.</span></span>  
 
-:::image type="complex" source="../media/css-elements-styles-h1-2.msft.png" alt-text="Das Diagramm "Boxmodell"" lightbox="../media/css-elements-styles-h1-2.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-h1-2.msft.png" alt-text="Das Diagramm Boxmodell" lightbox="../media/css-elements-styles-h1-2.msft.png":::
    <span data-ttu-id="e4a25-153">Das **Diagramm "Boxmodell"**</span><span class="sxs-lookup"><span data-stu-id="e4a25-153">The **Box Model** diagram</span></span>  
 :::image-end:::  
 
@@ -169,7 +169,7 @@ ms.locfileid: "11439303"
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/css-console-qs-coverage-empty.msft.png" alt-text="Das Tool "Abdeckung"" lightbox="../media/css-console-qs-coverage-empty.msft.png":::
+          :::image type="complex" source="../media/css-console-qs-coverage-empty.msft.png" alt-text="Das Tool Abdeckung" lightbox="../media/css-console-qs-coverage-empty.msft.png":::
              <span data-ttu-id="e4a25-187">Das **Tool "Abdeckung"**</span><span class="sxs-lookup"><span data-stu-id="e4a25-187">The **Coverage** tool</span></span>  
           :::image-end:::  
        :::column-end:::
@@ -294,7 +294,7 @@ ms.locfileid: "11439303"
 
 #### <a name="choose-which-stylesheet-to-add-a-rule-to"></a><span data-ttu-id="e4a25-268">Auswählen des Stylesheets, dem eine Regel hinzugefügt werden soll</span><span class="sxs-lookup"><span data-stu-id="e4a25-268">Choose which stylesheet to add a rule to</span></span>  
 
-<span data-ttu-id="e4a25-269">Wenn [Sie eine neue Formatvorlageregel hinzufügen,](#add-a-style-rule)wählen Sie Neue Formatvorlageregel \( Neue Formatvorlageregel \) aus, und halten Sie diese fest, um zu wählen, zu welchem Stylesheet die \*\*\*\* ![ ](../media/new-style-rule-icon.msft.png) Formatvorlageregel hinzugefügt werden soll.</span><span class="sxs-lookup"><span data-stu-id="e4a25-269">When [adding a new style rule](#add-a-style-rule), choose and hold **New Style Rule** \(![New Style Rule](../media/new-style-rule-icon.msft.png)\) to choose which stylesheet to add the style rule to.</span></span>  
+<span data-ttu-id="e4a25-269">Wenn [Sie eine neue Formatvorlageregel hinzufügen,](#add-a-style-rule)wählen Sie Neue Formatvorlageregel \( Neue Formatvorlageregel \) aus, und halten Sie diese fest, um zu wählen, zu welchem Stylesheet die  ![ ](../media/new-style-rule-icon.msft.png) Formatvorlageregel hinzugefügt werden soll.</span><span class="sxs-lookup"><span data-stu-id="e4a25-269">When [adding a new style rule](#add-a-style-rule), choose and hold **New Style Rule** \(![New Style Rule](../media/new-style-rule-icon.msft.png)\) to choose which stylesheet to add the style rule to.</span></span>  
 
 :::image type="complex" source="../media/css-elements-styles-style-new-select-existing.msft.png" alt-text="Auswählen eines Stylesheets" lightbox="../media/css-elements-styles-style-new-select-existing.msft.png":::
    <span data-ttu-id="e4a25-271">Auswählen eines Stylesheets</span><span class="sxs-lookup"><span data-stu-id="e4a25-271">Choose a stylesheet</span></span>  
@@ -324,7 +324,7 @@ ms.locfileid: "11439303"
 1.  <span data-ttu-id="e4a25-284">Zeigen Sie **im Bereich** Formatvorlagen auf eine Formatvorlageregel.</span><span class="sxs-lookup"><span data-stu-id="e4a25-284">In the **Styles** panel, hover on a style rule.</span></span>  <span data-ttu-id="e4a25-285">**Weitere Aktionen** \( \) werden unten rechts im Abschnitt `...` Formatregel angezeigt.</span><span class="sxs-lookup"><span data-stu-id="e4a25-285">**More Actions** \(`...`\) is revealed in the bottom-right of the style rule section.</span></span>  
     
     > [!NOTE]
-    > <span data-ttu-id="e4a25-286">Zeigen Sie in der folgenden Abbildung auf die Formatregel, und weitere Aktionen werden unten rechts im Abschnitt `.header-holder.has-default-focus` Formatregel angezeigt. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="e4a25-286">In the following figure, hover on the `.header-holder.has-default-focus` style rule and **More Actions** is revealed in the bottom-right of the style rule section.</span></span>  
+    > <span data-ttu-id="e4a25-286">Zeigen Sie in der folgenden Abbildung auf die Formatregel, und weitere Aktionen werden unten rechts im Abschnitt `.header-holder.has-default-focus` Formatregel angezeigt. </span><span class="sxs-lookup"><span data-stu-id="e4a25-286">In the following figure, hover on the `.header-holder.has-default-focus` style rule and **More Actions** is revealed in the bottom-right of the style rule section.</span></span>  
     
     :::image type="complex" source="../media/css-elements-styles-new-rule-styles.msft.png" alt-text="Weitere Aktionen" lightbox="../media/css-elements-styles-new-rule-styles.msft.png":::
        <span data-ttu-id="e4a25-288">Reveal **More Actions** \( `...` \)</span><span class="sxs-lookup"><span data-stu-id="e4a25-288">Reveal **More Actions** \(`...`\)</span></span>  
@@ -335,7 +335,7 @@ ms.locfileid: "11439303"
     > [!NOTE]
     > <span data-ttu-id="e4a25-290">Die **Aktion Style Rule Below** einfügen wird nach dem Zeigen auf weitere Aktionen **angezeigt.**</span><span class="sxs-lookup"><span data-stu-id="e4a25-290">The **Insert Style Rule Below** action is revealed after hovering over **More Actions**.</span></span>  
     
-    :::image type="complex" source="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png" alt-text="Die Symbolleiste "Weitere Aktionen"" lightbox="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png":::
+    :::image type="complex" source="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png" alt-text="Die Symbolleiste Weitere Aktionen" lightbox="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png":::
        <span data-ttu-id="e4a25-292">Die **Symbolleiste "Weitere Aktionen"**</span><span class="sxs-lookup"><span data-stu-id="e4a25-292">The **More Actions** toolbar</span></span>  
     :::image-end:::  
     

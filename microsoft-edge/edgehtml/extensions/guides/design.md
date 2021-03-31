@@ -114,8 +114,8 @@ ms.locfileid: "11234181"
 
 | <span data-ttu-id="54ad2-145">Size</span><span class="sxs-lookup"><span data-stu-id="54ad2-145">Size</span></span> | <span data-ttu-id="54ad2-146">Details</span><span class="sxs-lookup"><span data-stu-id="54ad2-146">Details</span></span> |  
 |:--- |:--- |  
-| <span data-ttu-id="54ad2-147">44px</span><span class="sxs-lookup"><span data-stu-id="54ad2-147">44px</span></span> | <span data-ttu-id="54ad2-148">Wird in der Windows-Benutzeroberfläche verwendet \ (**App-Liste**, **Einstellungen**  \>  **System**-  \>  **apps & Funktionen**\).</span><span class="sxs-lookup"><span data-stu-id="54ad2-148">Used in the Windows UI \(**App List**, **Settings** \> **System** \> **Apps & features**\).</span></span> |  
-| <span data-ttu-id="54ad2-149">50px</span><span class="sxs-lookup"><span data-stu-id="54ad2-149">50px</span></span> | <span data-ttu-id="54ad2-150">Verpackungsanforderung \ (nirgendwo sichtbar \).</span><span class="sxs-lookup"><span data-stu-id="54ad2-150">Packaging requirement \(not visible anywhere\).</span></span> |  
+| <span data-ttu-id="54ad2-147">44px</span><span class="sxs-lookup"><span data-stu-id="54ad2-147">44px</span></span> | <span data-ttu-id="54ad2-148">Wird in der Windows-Benutzeroberfläche verwendet \(**App-Liste**, **Einstellungen**  \>  **System**-  \>  **apps & Funktionen**\).</span><span class="sxs-lookup"><span data-stu-id="54ad2-148">Used in the Windows UI \(**App List**, **Settings** \> **System** \> **Apps & features**\).</span></span> |  
+| <span data-ttu-id="54ad2-149">50px</span><span class="sxs-lookup"><span data-stu-id="54ad2-149">50px</span></span> | <span data-ttu-id="54ad2-150">Verpackungsanforderung \(nirgendwo sichtbar \).</span><span class="sxs-lookup"><span data-stu-id="54ad2-150">Packaging requirement \(not visible anywhere\).</span></span> |  
 | <span data-ttu-id="54ad2-151">150px</span><span class="sxs-lookup"><span data-stu-id="54ad2-151">150px</span></span> | <span data-ttu-id="54ad2-152">Wird als Symbol für den Microsoft Store verwendet.</span><span class="sxs-lookup"><span data-stu-id="54ad2-152">Used as the icon for the Microsoft Store.</span></span> |  
 
 

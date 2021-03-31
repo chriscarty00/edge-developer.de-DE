@@ -35,7 +35,7 @@ ms.locfileid: "11439437"
 <span data-ttu-id="201fb-107">Der folgende Artikel ist das zweite Lernprogramm in einer Reihe von Lernprogrammen, in dem Sie die Grundlagen der Webentwicklung und Microsoft Edge DevTools lernen.</span><span class="sxs-lookup"><span data-stu-id="201fb-107">The following article is the second tutorial in a series of tutorials that teaches you the basics of web development and Microsoft Edge DevTools.</span></span>  <span data-ttu-id="201fb-108">Sie erhalten praktische Erfahrung, indem Sie ihre eigene Website erstellen.</span><span class="sxs-lookup"><span data-stu-id="201fb-108">You gain hands-on experience by actually building your own website.</span></span>  <span data-ttu-id="201fb-109">Sie müssen das erste Lernprogramm nicht abschließen, bevor Sie das zweite folgen.</span><span class="sxs-lookup"><span data-stu-id="201fb-109">You do not have to complete the first tutorial before following the second.</span></span>  <span data-ttu-id="201fb-110">[Das Einrichten des Codes zeigt,](#set-up-your-code) wie Sie eingerichtet werden.</span><span class="sxs-lookup"><span data-stu-id="201fb-110">[Set up your code](#set-up-your-code) shows you how to get set up.</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="201fb-111">Dieses Lernprogramm ist für absolute Anfänger \*\*\*\* konzipiert und konzentriert sich sowohl auf die Grundlagen der Webentwicklung als auch auf die Grundlagen der Verwendung von DevTools zum Experimentieren mit CSS.</span><span class="sxs-lookup"><span data-stu-id="201fb-111">This tutorial is designed for absolute beginners and focuses on both the **fundamentals of web development** and the basics of using DevTools to experiment with CSS.</span></span>  <span data-ttu-id="201fb-112">Wenn Sie ein Lernprogramm wünschen, das sich nur auf DevTools konzentriert, navigieren Sie zu Erste Schritte mit dem Anzeigen und Ändern [von CSS][DevtoolsCssIndex].</span><span class="sxs-lookup"><span data-stu-id="201fb-112">If you want a tutorial that only focuses on DevTools, navigate to [Get Started with Viewing and Changing CSS][DevtoolsCssIndex].</span></span>  
+> <span data-ttu-id="201fb-111">Dieses Lernprogramm ist für absolute Anfänger  konzipiert und konzentriert sich sowohl auf die Grundlagen der Webentwicklung als auch auf die Grundlagen der Verwendung von DevTools zum Experimentieren mit CSS.</span><span class="sxs-lookup"><span data-stu-id="201fb-111">This tutorial is designed for absolute beginners and focuses on both the **fundamentals of web development** and the basics of using DevTools to experiment with CSS.</span></span>  <span data-ttu-id="201fb-112">Wenn Sie ein Lernprogramm wünschen, das sich nur auf DevTools konzentriert, navigieren Sie zu Erste Schritte mit dem Anzeigen und Ändern [von CSS][DevtoolsCssIndex].</span><span class="sxs-lookup"><span data-stu-id="201fb-112">If you want a tutorial that only focuses on DevTools, navigate to [Get Started with Viewing and Changing CSS][DevtoolsCssIndex].</span></span>  
 
 <span data-ttu-id="201fb-113">Am Anfang des Lernprogramms sollte Ihre Website wie die folgende Abbildung aussehen.</span><span class="sxs-lookup"><span data-stu-id="201fb-113">At the beginning of the tutorial, your site should look like the following figure.</span></span>  
 
@@ -75,7 +75,7 @@ ms.locfileid: "11439437"
 
 1.  <span data-ttu-id="201fb-134">Öffnen Sie [den Quellcode][GlitchCookedAmphibianIndex].</span><span class="sxs-lookup"><span data-stu-id="201fb-134">Open the [source code][GlitchCookedAmphibianIndex].</span></span>  <span data-ttu-id="201fb-135">Auf die Fokusregisterkarte Ihres Browsers wird als **Bearbeitungsregisterkarte verwiesen.**</span><span class="sxs-lookup"><span data-stu-id="201fb-135">The in-focus tab of your browser is referenced as the **editing tab**.</span></span>  
     
-    :::image type="complex" source="../media/beginners-css-setup1.msft.png" alt-text="Registerkarte "Bearbeiten"" lightbox="../media/beginners-css-setup1.msft.png":::
+    :::image type="complex" source="../media/beginners-css-setup1.msft.png" alt-text="Registerkarte Bearbeiten" lightbox="../media/beginners-css-setup1.msft.png":::
        <span data-ttu-id="201fb-137">Registerkarte **"Bearbeiten"**</span><span class="sxs-lookup"><span data-stu-id="201fb-137">The **editing** tab</span></span>  
     :::image-end:::  
     
@@ -140,7 +140,7 @@ ms.locfileid: "11439437"
     
 1.  <span data-ttu-id="201fb-167">Navigieren Sie zur Registerkarte Live, um die **Änderungen anzeigen zu können.**  Der Hintergrund des `<nav>` Abschnitts ist jetzt blau.</span><span class="sxs-lookup"><span data-stu-id="201fb-167">To display the changes, navigate to the **live tab**.  The background of the `<nav>` section is now blue.</span></span>  
     
-    :::image type="complex" source="../media/beginners-css-inline2.msft.png" alt-text="Die Hintergrundfarbe hinter den Links "Start" und "Kontakt" ist jetzt blau." lightbox="../media/beginners-css-inline2.msft.png":::
+    :::image type="complex" source="../media/beginners-css-inline2.msft.png" alt-text="Die Hintergrundfarbe hinter den Links Start und Kontakt ist jetzt blau." lightbox="../media/beginners-css-inline2.msft.png":::
        <span data-ttu-id="201fb-169">Die Hintergrundfarbe hinter den **Links "Start"** **und** "Kontakt" ist jetzt blau.</span><span class="sxs-lookup"><span data-stu-id="201fb-169">The background color behind the **Home** and **Contact** links is now blue</span></span>  
     :::image-end:::  
     
@@ -158,7 +158,7 @@ ms.locfileid: "11439437"
 
 1.  <span data-ttu-id="201fb-177">Klicken Sie auf der Registerkarte Live auf **Kontakt,** um zur Kontaktseite zu navigieren.</span><span class="sxs-lookup"><span data-stu-id="201fb-177">In the live tab, choose **Contact** to navigate to the contact page.</span></span>  <span data-ttu-id="201fb-178">Beachten Sie die Schriftart **von Home** und **Contact**.</span><span class="sxs-lookup"><span data-stu-id="201fb-178">Notice the font of **Home** and **Contact**.</span></span>  
     
-    :::image type="complex" source="../media/beginners-css-internal1.msft.png" alt-text="Die Seite "Kontakt"" lightbox="../media/beginners-css-internal1.msft.png":::
+    :::image type="complex" source="../media/beginners-css-internal1.msft.png" alt-text="Die Seite Kontakt" lightbox="../media/beginners-css-internal1.msft.png":::
        <span data-ttu-id="201fb-180">Die Seite "Kontakt"</span><span class="sxs-lookup"><span data-stu-id="201fb-180">The Contact page</span></span>  
     :::image-end:::  
     
@@ -184,7 +184,7 @@ ms.locfileid: "11439437"
 1.  <span data-ttu-id="201fb-185">Wechseln Sie zurück zur **Registerkarte Live.**</span><span class="sxs-lookup"><span data-stu-id="201fb-185">Go back to the **live tab**.</span></span>  
 1.  <span data-ttu-id="201fb-186">Wählen **Sie Kontakt** aus, um zur Kontaktseite zurück zu wechseln.</span><span class="sxs-lookup"><span data-stu-id="201fb-186">Choose **Contact** to go back to the contact page.</span></span>  <span data-ttu-id="201fb-187">Die Schriftart von **Home** und **Contact** hat sich geändert.</span><span class="sxs-lookup"><span data-stu-id="201fb-187">The font of **Home** and **Contact** has changed.</span></span>  
     
-    :::image type="complex" source="../media/beginners-css-internal2.msft.png" alt-text="Die Schriftart der Links "Start" und "Kontakt" wurde geändert." lightbox="../media/beginners-css-internal2.msft.png":::
+    :::image type="complex" source="../media/beginners-css-internal2.msft.png" alt-text="Die Schriftart der Links Start und Kontakt wurde geändert." lightbox="../media/beginners-css-internal2.msft.png":::
        <span data-ttu-id="201fb-189">Die Schriftart der **Links "Start"** und **"Kontakt"** wurde geändert.</span><span class="sxs-lookup"><span data-stu-id="201fb-189">The font of the **Home** and **Contact** links has changed</span></span>  
     :::image-end:::  
     
@@ -262,7 +262,7 @@ li a {
 1.  <span data-ttu-id="201fb-211">Navigieren Sie zur **Registerkarte Live**.</span><span class="sxs-lookup"><span data-stu-id="201fb-211">Navigate to the **live tab**.</span></span>  
 1.  <span data-ttu-id="201fb-212">Wählen Sie den **Link Kontakt** aus, um zur Kontaktseite zurück zu wechseln.</span><span class="sxs-lookup"><span data-stu-id="201fb-212">Choose the **Contact** link to go back to the contact page.</span></span>  <span data-ttu-id="201fb-213">Wenden Sie sich **jetzt an mich!**</span><span class="sxs-lookup"><span data-stu-id="201fb-213">Now, **Contact Me!**</span></span> <span data-ttu-id="201fb-214">hat dieselbe Schriftart wie die Navigationslinks.</span><span class="sxs-lookup"><span data-stu-id="201fb-214">has the same font as the navigation links.</span></span>  
     
-    :::image type="complex" source="../media/beginners-css-multiple1.msft.png" alt-text="Der Text Contact Me!  hat jetzt die gleiche Schriftart wie die Links "Start" und "Kontakt"" lightbox="../media/beginners-css-multiple1.msft.png":::
+    :::image type="complex" source="../media/beginners-css-multiple1.msft.png" alt-text="Der Text Contact Me!  hat jetzt die gleiche Schriftart wie die Links Start und Kontakt" lightbox="../media/beginners-css-multiple1.msft.png":::
        <span data-ttu-id="201fb-217">Der Text **Contact Me!**</span><span class="sxs-lookup"><span data-stu-id="201fb-217">The text **Contact Me!**</span></span> <span data-ttu-id="201fb-218">hat jetzt die gleiche Schriftart wie die **Links "Start"** **und "Kontakt"**</span><span class="sxs-lookup"><span data-stu-id="201fb-218">now has the same font as the **Home** and **Contact** links</span></span>  
     :::image-end:::  
     
@@ -276,7 +276,7 @@ li a {
 
 1.  <span data-ttu-id="201fb-225">Zeigen Sie auf **den Startlink,** öffnen Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste\), und wählen Sie **Überprüfen aus.**</span><span class="sxs-lookup"><span data-stu-id="201fb-225">Hover on the **Home** link, open the contextual menu \(right-click\), and choose **Inspect**.</span></span>  
     
-    :::image type="complex" source="../media/beginners-css-add1.msft.png" alt-text="Überprüfen des Links "Start"" lightbox="../media/beginners-css-add1.msft.png":::
+    :::image type="complex" source="../media/beginners-css-add1.msft.png" alt-text="Überprüfen des Links Start" lightbox="../media/beginners-css-add1.msft.png":::
        <span data-ttu-id="201fb-227">Überprüfen des Links "Start"</span><span class="sxs-lookup"><span data-stu-id="201fb-227">Inspect the Home link</span></span>  
     :::image-end:::  
     

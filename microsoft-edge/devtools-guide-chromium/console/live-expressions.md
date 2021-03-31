@@ -41,7 +41,7 @@ ms.locfileid: "11439226"
        <span data-ttu-id="78a06-113">Eingeben `document.activeElement` in das Textfeld **Live Expression**</span><span class="sxs-lookup"><span data-stu-id="78a06-113">Typing `document.activeElement` into the **Live Expression** text box</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="78a06-114">Wählen `Control` + `Enter` Sie \(Windows, Linux\) oder `Command` + `Enter` \(macOS\) aus, \*\*\*\* um den Ausdruck zu speichern, oder wählen Sie außerhalb des Textfelds Live expression aus.</span><span class="sxs-lookup"><span data-stu-id="78a06-114">Select `Control`+`Enter` \(Windows, Linux\) or `Command`+`Enter` \(macOS\) to save the expression, or choose outside of the **Live Expression** textbox.</span></span>  
+1.  <span data-ttu-id="78a06-114">Wählen `Control` + `Enter` Sie \(Windows, Linux\) oder `Command` + `Enter` \(macOS\) aus,  um den Ausdruck zu speichern, oder wählen Sie außerhalb des Textfelds Live expression aus.</span><span class="sxs-lookup"><span data-stu-id="78a06-114">Select `Control`+`Enter` \(Windows, Linux\) or `Command`+`Enter` \(macOS\) to save the expression, or choose outside of the **Live Expression** textbox.</span></span>  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a><span data-ttu-id="78a06-115">Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen</span><span class="sxs-lookup"><span data-stu-id="78a06-115">Getting in touch with the Microsoft Edge DevTools team</span></span>  
 

@@ -126,7 +126,7 @@ ms.locfileid: "11439745"
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png" alt-text="Abschnitt "Flexbox" im Layoutbereich" lightbox="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png":::
+      :::image type="complex" source="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png" alt-text="Abschnitt Flexbox im Layoutbereich" lightbox="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png":::
          <span data-ttu-id="0b455-161">Abschnitt **Flexbox** im Bereich **Layout**</span><span class="sxs-lookup"><span data-stu-id="0b455-161">**Flexbox** section in the **Layout** pane</span></span>  
       :::image-end:::  
    :::column-end:::
@@ -241,7 +241,7 @@ ms.locfileid: "11439745"
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/network-requests-remote-address-space.msft.png" alt-text="In der Tabelle "Anforderungen" wird jetzt die Spalte "Remote-Adressraum" angezeigt." lightbox="../../media/2021/02/network-requests-remote-address-space.msft.png":::
+      :::image type="complex" source="../../media/2021/02/network-requests-remote-address-space.msft.png" alt-text="In der Tabelle Anforderungen wird jetzt die Spalte Remote-Adressraum angezeigt." lightbox="../../media/2021/02/network-requests-remote-address-space.msft.png":::
          <span data-ttu-id="0b455-224">In der Tabelle "Anforderungen" wird jetzt die Spalte **Remote-Adressraum** angezeigt.</span><span class="sxs-lookup"><span data-stu-id="0b455-224">The Requests table now displays the **Remote Address Space** column</span></span> :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -258,7 +258,7 @@ ms.locfileid: "11439745"
 
 <span data-ttu-id="0b455-232">Im Bereich **Cookies** im Tool **Anwendung** wird jetzt das `SameParty` Attribut für jedes Cookie angezeigt.</span><span class="sxs-lookup"><span data-stu-id="0b455-232">The **Cookies** pane in the **Application** tool now displays the `SameParty` attribute for each cookie.</span></span>  <span data-ttu-id="0b455-233">Das `SameParty` Attribut ist ein neues boolesches Attribut, das angibt, ob ein Cookie in Anforderungen an Ursprünge derselben [First-Party-Sets][GithubPrivacycgFirstPartySets] enthalten ist.</span><span class="sxs-lookup"><span data-stu-id="0b455-233">The `SameParty` attribute is a new boolean attribute to indicate whether a cookie is included in requests to origins of the same [First-Party Sets][GithubPrivacycgFirstPartySets].</span></span>  <span data-ttu-id="0b455-234">Navigieren Sie zu Problem [1161427][CR1161427], um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen.</span><span class="sxs-lookup"><span data-stu-id="0b455-234">To review the history of this feature in the Chromium open-source project, navigate to Issue [1161427][CR1161427].</span></span>  
 
-:::image type="complex" source="../../media/2021/02/application-storage-cookies-sameparty.msft.png" alt-text="SameParty-Spalte im Bereich "Cookies"" lightbox="../../media/2021/02/application-storage-cookies-sameparty.msft.png":::
+:::image type="complex" source="../../media/2021/02/application-storage-cookies-sameparty.msft.png" alt-text="SameParty-Spalte im Bereich Cookies" lightbox="../../media/2021/02/application-storage-cookies-sameparty.msft.png":::
    <span data-ttu-id="0b455-236">**SameParty**-Spalte im Bereich **Cookies**</span><span class="sxs-lookup"><span data-stu-id="0b455-236">**SameParty** column in the **Cookies** pane</span></span>  
 :::image-end:::  
 

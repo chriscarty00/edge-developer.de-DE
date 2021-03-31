@@ -27,7 +27,7 @@ ms.locfileid: "11343066"
 
 ## <span data-ttu-id="68d76-114">Schritt 1: Hinzufügen von Berechtigungen zum Erweiterungsmanifest</span><span class="sxs-lookup"><span data-stu-id="68d76-114">Step 1 - Add permissions to the extension manifest</span></span>  
 
-<span data-ttu-id="68d76-115">Fügen Sie `nativeMessaging` die Berechtigung zummanifest.js\*\* datei\*\* der Erweiterung hinzu.</span><span class="sxs-lookup"><span data-stu-id="68d76-115">Add the `nativeMessaging` permission to the **manifest.json** file of the extension.</span></span>  <span data-ttu-id="68d76-116">Der folgende Codeausschnitt ist ein Beispiel für **manifest.jsauf**.</span><span class="sxs-lookup"><span data-stu-id="68d76-116">The following code snippet is an example of **manifest.json**.</span></span>  
+<span data-ttu-id="68d76-115">Fügen Sie `nativeMessaging` die Berechtigung zummanifest.js datei der Erweiterung hinzu.</span><span class="sxs-lookup"><span data-stu-id="68d76-115">Add the `nativeMessaging` permission to the **manifest.json** file of the extension.</span></span>  <span data-ttu-id="68d76-116">Der folgende Codeausschnitt ist ein Beispiel für **manifest.jsauf**.</span><span class="sxs-lookup"><span data-stu-id="68d76-116">The following code snippet is an example of **manifest.json**.</span></span>  
 
 ```json
     {

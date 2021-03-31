@@ -105,7 +105,7 @@ ms.locfileid: "11439647"
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
 
-<span data-ttu-id="469bf-142">Wenn Sie CSS für Ihr Flexbox-Layout bearbeiten, werden bei automatischen CSS-Vervollständigungen im Bereich **Formatvorlagen** nun hilfreiche Symbole neben relevanten Flexbox-Eigenschaften angezeigt.</span><span class="sxs-lookup"><span data-stu-id="469bf-142">When you edit CSS for your Flexbox layout, CSS autocompletes in the **Styles** pane now displays helpful icons next to relevant Flexbox properties.</span></span>  <span data-ttu-id="469bf-143">Öffnen Sie zum Testen dieses neuen Features das Tool \*\* Elemente\*\*, und wählen Sie einen Flexcontainer aus.</span><span class="sxs-lookup"><span data-stu-id="469bf-143">To try this new feature, open the **Elements** tool and select a flex container.</span></span>  <span data-ttu-id="469bf-144">Fügen Sie dann eine Eigenschaft für den Container im Bereich **Formatvorlagen** hinzu oder ändern Sie sie.</span><span class="sxs-lookup"><span data-stu-id="469bf-144">Then add or change a property on that container in the **Styles** pane.</span></span>  
+<span data-ttu-id="469bf-142">Wenn Sie CSS für Ihr Flexbox-Layout bearbeiten, werden bei automatischen CSS-Vervollständigungen im Bereich **Formatvorlagen** nun hilfreiche Symbole neben relevanten Flexbox-Eigenschaften angezeigt.</span><span class="sxs-lookup"><span data-stu-id="469bf-142">When you edit CSS for your Flexbox layout, CSS autocompletes in the **Styles** pane now displays helpful icons next to relevant Flexbox properties.</span></span>  <span data-ttu-id="469bf-143">Öffnen Sie zum Testen dieses neuen Features das Tool  Elemente, und wählen Sie einen Flexcontainer aus.</span><span class="sxs-lookup"><span data-stu-id="469bf-143">To try this new feature, open the **Elements** tool and select a flex container.</span></span>  <span data-ttu-id="469bf-144">Fügen Sie dann eine Eigenschaft für den Container im Bereich **Formatvorlagen** hinzu oder ändern Sie sie.</span><span class="sxs-lookup"><span data-stu-id="469bf-144">Then add or change a property on that container in the **Styles** pane.</span></span>  
 
 :::row:::
    :::column span="":::
@@ -117,7 +117,7 @@ ms.locfileid: "11439647"
 :::row-end:::  
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/01/elements-flex-container-align.msft.png" alt-text="Das Menü "AutoVervollständigung" wird für CSS-Eigenschaften hervorgehoben, die mit ausrichten- beginnen" lightbox="../../media/2021/01/elements-flex-container-align.msft.png":::
+      :::image type="complex" source="../../media/2021/01/elements-flex-container-align.msft.png" alt-text="Das Menü AutoVervollständigung wird für CSS-Eigenschaften hervorgehoben, die mit ausrichten- beginnen" lightbox="../../media/2021/01/elements-flex-container-align.msft.png":::
          <span data-ttu-id="469bf-150">Das Menü "AutoVervollständigung" wird für CSS-Eigenschaften hervorgehoben, die beginnen mit</span><span class="sxs-lookup"><span data-stu-id="469bf-150">Autocomplete menu highlighted for CSS properties that start with</span></span> `align-`  
       :::image-end:::  
    :::column-end:::

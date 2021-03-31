@@ -63,7 +63,7 @@ $_
 $0
 ```  
 
-<span data-ttu-id="946be-120">Gibt das zuletzt ausgewählte Element oder JavaScript-Objekt zurück.</span><span class="sxs-lookup"><span data-stu-id="946be-120">Returns the most recently selected element or JavaScript object.</span></span>  `$1` <span data-ttu-id="946be-121">gibt den zweiten zuletzt ausgewählten zurück, und so weiter.</span><span class="sxs-lookup"><span data-stu-id="946be-121">returns the second most recently selected one, and so on.</span></span>  <span data-ttu-id="946be-122">Die Befehle , , , und funktionieren als verlaufshistorische Referenz zu den letzten fünf DOM-Elementen, die im Elementtool oder den letzten fünf im Speichertool ausgewählten `$0` `$1` `$2` `$3` `$4` JavaScript-Heapobjekten überprüft wurden. \*\*\*\* \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="946be-122">The `$0`, `$1`, `$2`, `$3`, and `$4` commands work as a historical reference to the last five DOM elements inspected within the **Elements** tool or the last five JavaScript heap objects selected in the **Memory** tool.</span></span>  
+<span data-ttu-id="946be-120">Gibt das zuletzt ausgewählte Element oder JavaScript-Objekt zurück.</span><span class="sxs-lookup"><span data-stu-id="946be-120">Returns the most recently selected element or JavaScript object.</span></span>  `$1` <span data-ttu-id="946be-121">gibt den zweiten zuletzt ausgewählten zurück, und so weiter.</span><span class="sxs-lookup"><span data-stu-id="946be-121">returns the second most recently selected one, and so on.</span></span>  <span data-ttu-id="946be-122">Die Befehle , , , und funktionieren als verlaufshistorische Referenz zu den letzten fünf DOM-Elementen, die im Elementtool oder den letzten fünf im Speichertool ausgewählten `$0` `$1` `$2` `$3` `$4` JavaScript-Heapobjekten überprüft wurden.  </span><span class="sxs-lookup"><span data-stu-id="946be-122">The `$0`, `$1`, `$2`, `$3`, and `$4` commands work as a historical reference to the last five DOM elements inspected within the **Elements** tool or the last five JavaScript heap objects selected in the **Memory** tool.</span></span>  
 
 :::row:::
    :::column span="1":::
@@ -123,7 +123,7 @@ $(selector, [startNode])
    <span data-ttu-id="946be-136">Abbildung 5: Die</span><span class="sxs-lookup"><span data-stu-id="946be-136">Figure 5:  The</span></span> `$('img')`  
 :::image-end:::  
 
-<span data-ttu-id="946be-137">Zeigen Sie auf das zurückgegebene Ergebnis, öffnen Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste\), und wählen Sie Im Elementbereich einblenden aus, um es im DOM zu finden, oder scrollen Sie **in** ansicht, um es auf der Seite anzuzeigen. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="946be-137">Hover on the returned result, open the contextual menu \(right-click\), and choose **Reveal in Elements Panel** to find it in the DOM or **Scroll in to View** to show it on the page.</span></span>  
+<span data-ttu-id="946be-137">Zeigen Sie auf das zurückgegebene Ergebnis, öffnen Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste\), und wählen Sie Im Elementbereich einblenden aus, um es im DOM zu finden, oder scrollen Sie **in** ansicht, um es auf der Seite anzuzeigen. </span><span class="sxs-lookup"><span data-stu-id="946be-137">Hover on the returned result, open the contextual menu \(right-click\), and choose **Reveal in Elements Panel** to find it in the DOM or **Scroll in to View** to show it on the page.</span></span>  
 
 <span data-ttu-id="946be-138">In der folgenden Abbildung wird ein Verweis auf das aktuell ausgewählte Element zurückgegeben, und die src-Eigenschaft wird angezeigt.</span><span class="sxs-lookup"><span data-stu-id="946be-138">In the following figure, a reference to the currently selected element is returned and the src property is displayed.</span></span>  
 
@@ -309,7 +309,7 @@ inspect(document.body);
    <span data-ttu-id="946be-197">Abbildung 15: Überprüfen eines Elements mit</span><span class="sxs-lookup"><span data-stu-id="946be-197">Figure 15:  Inspecting an element with</span></span> `inspect()`  
 :::image-end:::  
 
-<span data-ttu-id="946be-198">Beim Übergeben einer Zu überprüfenden Methode öffnet \*\*\*\* die Methode das Dokument im Sources-Tool, damit Sie es überprüfen können.</span><span class="sxs-lookup"><span data-stu-id="946be-198">When passing a method to inspect, the method opens the document in the **Sources** tool for you to inspect.</span></span>  
+<span data-ttu-id="946be-198">Beim Übergeben einer Zu überprüfenden Methode öffnet  die Methode das Dokument im Sources-Tool, damit Sie es überprüfen können.</span><span class="sxs-lookup"><span data-stu-id="946be-198">When passing a method to inspect, the method opens the document in the **Sources** tool for you to inspect.</span></span>  
 
 ## <a name="geteventlisteners"></a><span data-ttu-id="946be-199">getEventListeners</span><span class="sxs-lookup"><span data-stu-id="946be-199">getEventListeners</span></span>  
 

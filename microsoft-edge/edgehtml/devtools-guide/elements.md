@@ -41,7 +41,7 @@ ms.locfileid: "11233685"
 
 4. <span data-ttu-id="708ef-121">Die Schaltfläche **Barrierefreiheits Struktur** ( `Ctrl+Shift+A` ) öffnet den Bereich [Barrierefreiheit](./elements/accessibility.md) , in dem die Struktur der Seite angezeigt wird, wie dies bei einer Hilfstechnologie wie der [Windows-Sprachausgabe](https://support.microsoft.com/help/22798/windows-10-narrator-get-started) Screenreader der Fall wäre.</span><span class="sxs-lookup"><span data-stu-id="708ef-121">The **Accessibility tree** (`Ctrl+Shift+A`) button will open the [Accessibility tree](./elements/accessibility.md) pane showing the structure of your page as it would appear to an assistive technology, such as the [Windows Narrator](https://support.microsoft.com/help/22798/windows-10-narrator-get-started) screenreader.</span></span>
 
-5. <span data-ttu-id="708ef-122">Sie können auch \*\*\*\* `Ctrl+F` ein Element in der HTML-Strukturansicht suchen, indem Sie nach seinem Tagnamen, Attributen oder Textinhalt suchen.</span><span class="sxs-lookup"><span data-stu-id="708ef-122">You can also **Find** (`Ctrl+F`) an element in the HTML tree view by searching for its tag name, attributes, or text content.</span></span>
+5. <span data-ttu-id="708ef-122">Sie können auch  `Ctrl+F` ein Element in der HTML-Strukturansicht suchen, indem Sie nach seinem Tagnamen, Attributen oder Textinhalt suchen.</span><span class="sxs-lookup"><span data-stu-id="708ef-122">You can also **Find** (`Ctrl+F`) an element in the HTML tree view by searching for its tag name, attributes, or text content.</span></span>
 
 ### <span data-ttu-id="708ef-123">Bearbeiten von Elementen</span><span class="sxs-lookup"><span data-stu-id="708ef-123">Editing elements</span></span>
 
