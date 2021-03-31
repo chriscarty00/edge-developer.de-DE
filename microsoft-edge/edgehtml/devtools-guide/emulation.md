@@ -21,7 +21,7 @@ ms.locfileid: "11233811"
 > [!NOTE]
 > Der neue Microsoft Edge basiert auf Chromium, und beginnt mit Version 75.  Wenn Sie weitere Informationen wünschen, [Laden Sie den neuen Microsoft Edge herunter][MicrosoftNewEdge], und probieren Sie die neuen [Microsoft Edge (Chrom)-Entwickler Tools][DevtoolsGuideChromium]aus.  
 > 
-> Wenn Sie unterschiedliche Geräte, Browser, Bildschirmgrößen und Auflösungen im neuen devtools emulieren möchten, navigieren Sie zum [emulieren mobiler Geräte in Microsoft Edge \ (Chrom \) devtools][DevtoolsGuideChromiumDeviceMode].  
+> Wenn Sie unterschiedliche Geräte, Browser, Bildschirmgrößen und Auflösungen im neuen devtools emulieren möchten, navigieren Sie zum [emulieren mobiler Geräte in Microsoft Edge \(Chrom \) devtools][DevtoolsGuideChromiumDeviceMode].  
 
 Das **Emulations** Panel hilft bei den folgenden Aktivitäten.    
 

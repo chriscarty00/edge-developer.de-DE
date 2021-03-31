@@ -42,7 +42,7 @@ In diesem Handbuch erfahren Sie, wie [Sie Microsoft Edge DevTools][MicrosoftEdge
     
 1.  Erweitern Sie **das Menü Lokaler Speicher.**  
     
-    :::image type="complex" source="../media/storage-application-local-storage.msft.png" alt-text="Menü "Lokaler Speicher"" lightbox="../media/storage-application-local-storage.msft.png":::
+    :::image type="complex" source="../media/storage-application-local-storage.msft.png" alt-text="Menü Lokaler Speicher" lightbox="../media/storage-application-local-storage.msft.png":::
        Menü **"Lokaler Speicher"**  
     :::image-end:::  
     

@@ -17,7 +17,7 @@ ms.locfileid: "11231216"
 ---
 # Übersicht über Progressive Web-Apps unter Windows  
 
-[Progressive Web-Apps][MDNApps] \ (PWAs \) bieten Zugriff auf Open Web-Technologien für die plattformübergreifende Interoperabilität und bieten ihren Benutzern eine systemeigene, App-ähnliche Benutzeroberfläche, die auf Ihre Geräte zugeschnitten ist.  PWAs sind Websites, die [schrittweise verbessert][AListApartUnderstandingProgressiveEnhancement] werden, um wie Native apps auf unterstützenden Plattformen zu funktionieren.  Die Eigenschaften einer PWA vereinen das Beste aus Web- und nativen Apps.  
+[Progressive Web-Apps][MDNApps] \(PWAs \) bieten Zugriff auf Open Web-Technologien für die plattformübergreifende Interoperabilität und bieten ihren Benutzern eine systemeigene, App-ähnliche Benutzeroberfläche, die auf Ihre Geräte zugeschnitten ist.  PWAs sind Websites, die [schrittweise verbessert][AListApartUnderstandingProgressiveEnhancement] werden, um wie Native apps auf unterstützenden Plattformen zu funktionieren.  Die Eigenschaften einer PWA vereinen das Beste aus Web- und nativen Apps.  
 
 :::row:::
     :::column:::
@@ -74,13 +74,13 @@ Erstellen Sie Ihre vorhandene Website in eine PWA, um die Interaktion mit ihren 
 
 ## PWAs auf Microsoft Edge (Chrom)  
 
-Wenn Sie eine progressive Web App für Webstandard-APIs erstellen, kann Ihre Anwendung plattformübergreifend und auf Geräten bereitgestellt werden und die gerätespezifischen Funktionen wie verfügbar nutzen.  PWAs in Microsoft Edge \ (Chrom \) fügen Sie Ihrer Website die folgenden Vorteile hinzu.  
+Wenn Sie eine progressive Web App für Webstandard-APIs erstellen, kann Ihre Anwendung plattformübergreifend und auf Geräten bereitgestellt werden und die gerätespezifischen Funktionen wie verfügbar nutzen.  PWAs in Microsoft Edge \(Chrom \) fügen Sie Ihrer Website die folgenden Vorteile hinzu.  
 
 *   Ihre APP ist auf einer auf Standards basierenden Web-Plattform aufgebaut.  
 *   Ermöglicht es Ihren Benutzern, Ihre APP direkt aus dem Browser zu installieren.  
 *   Ermöglicht es Ihren Benutzern, Ihre APP ohne Store-basierte Bereitstellung oder Registrierung zu installieren.  
     
-Desktop-PWAs werden auf allen Plattformen unterstützt, die Microsoft Edge \ (Chrom \) verfügbar ist. Microsoft Edge \ (Chrom \) steht unter Windows 7, Windows 10 und macOS zur Verfügung.  Die folgenden Vorteile sind im Lieferumfang enthalten.  
+Desktop-PWAs werden auf allen Plattformen unterstützt, die Microsoft Edge \(Chrom \) verfügbar ist. Microsoft Edge \(Chrom \) steht unter Windows 7, Windows 10 und macOS zur Verfügung.  Die folgenden Vorteile sind im Lieferumfang enthalten.  
 
 *   Anwendungen können über das Symbol " **Installieren** " in der Navigationsleiste direkt im Browser installiert werden.  
     
@@ -96,7 +96,7 @@ Desktop-PWAs werden auf allen Plattformen unterstützt, die Microsoft Edge \ (Ch
     
 *   Web-Benachrichtigungen sind in das Windows-Benachrichtigungssystem integriert.  
 *   Shared Cookie Store mit dem Browserprofil, das die APP installiert hat  
-*   Zugriff auf andere Browser Features über das Menü " **Einstellungen" und "mehr** \ ( `...` \)", einschließlich Zertifikatüberprüfung, Websiteberechtigungen, nach Verfolgungs Schutz und Browsererweiterungen  
+*   Zugriff auf andere Browser Features über das Menü " **Einstellungen" und "mehr** \( `...` \)", einschließlich Zertifikatüberprüfung, Websiteberechtigungen, nach Verfolgungs Schutz und Browsererweiterungen  
 *   Vollzugriff auf [Microsoft Edge devtools][DevtoolsProgressiveWebApps] zum Debuggen Ihrer APP  
     
 > [!IMPORTANT]
@@ -114,7 +114,7 @@ Damit Sie als PWA ausgeführt werden kann, sollte Ihre vom Server gehostete Web-
       [HTTPS][WikiHttps]  
    :::column-end:::
    :::column span="2":::
-      Schützt Ihre Benutzer, indem eine sichere Verbindung für die Server-oder App-Kommunikation bereitgestellt wird.  Dienstmitarbeiter und andere PWA-Technologien funktionieren nur mit Webressourcen, die über eine sichere Verbindung bereitgestellt werden \ (oder `localhost` zu Debugging-Zwecken \).  
+      Schützt Ihre Benutzer, indem eine sichere Verbindung für die Server-oder App-Kommunikation bereitgestellt wird.  Dienstmitarbeiter und andere PWA-Technologien funktionieren nur mit Webressourcen, die über eine sichere Verbindung bereitgestellt werden \(oder `localhost` zu Debugging-Zwecken \).  
    :::column-end:::
 :::row-end:::  
 :::row:::

@@ -17,7 +17,7 @@ ms.locfileid: "11191617"
 ---
 # Automatisieren und Testen von WebView2 mit Microsoft Edge Driver  
 
-Da WebView2 die Microsoft Edge \ (Chromium \)-Webplattform verwendet, können WebView2-Entwickler \ (You \) standardmäßige Webtools für Debuggen und Automatisierung nutzen.  Selen ist ein solches Tool.  Sie implementiert die W3C- [WebDriver][W3cWebdriver2] -API.  Sie können Selen verwenden, um automatisierte Tests zum Simulieren von Benutzerinteraktionen zu erstellen.  
+Da WebView2 die Microsoft Edge \(Chromium \)-Webplattform verwendet, können WebView2-Entwickler \(You \) standardmäßige Webtools für Debuggen und Automatisierung nutzen.  Selen ist ein solches Tool.  Sie implementiert die W3C- [WebDriver][W3cWebdriver2] -API.  Sie können Selen verwenden, um automatisierte Tests zum Simulieren von Benutzerinteraktionen zu erstellen.  
 
 Beginnen Sie mit den folgenden Schritten.  
 
@@ -148,9 +148,9 @@ Herzlichen Glückwunsch.  Sie haben erfolgreich ein WebView2-Projekt und gesteue
 
 ## Weitere Informationen  
 
-*   Einen umfassenden Überblick darüber, wie die APIs Selenium WebView2 oder Microsoft Edge \ (Chrom \) steuert, navigieren Sie zu [WebDriver auf der Selenium-Dokumentation][SeleniumWebdriver] .   
+*   Einen umfassenden Überblick darüber, wie die APIs Selenium WebView2 oder Microsoft Edge \(Chrom \) steuert, navigieren Sie zu [WebDriver auf der Selenium-Dokumentation][SeleniumWebdriver] .   
 *   Wenn Sie mehr über das WebView2-Steuerelement und seine Verwendung beim Einbetten von Webinhalten in Ihre systemeigene App erfahren möchten, navigieren Sie zu [Introduction to Microsoft Edge WebView2][WebViewIndex].  
-*   Weitere Informationen zum Automatisieren von Microsoft Edge \ (Chrom \) finden Sie unter [Verwenden von WebDriver (Chrom) für die Testautomatisierung][WebdriverChromium] .   
+*   Weitere Informationen zum Automatisieren von Microsoft Edge \(Chrom \) finden Sie unter [Verwenden von WebDriver (Chrom) für die Testautomatisierung][WebdriverChromium] .   
     
 ## Kontakt mit dem Microsoft Edge WebView-Team  
 

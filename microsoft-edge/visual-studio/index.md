@@ -52,7 +52,7 @@ Geben Sie **einen Projektnamen** für Ihr neues Projekt an, und wählen Sie **Er
 
 Öffnen Sie nach dem Erstellen Des Projekts `ClientApp/src/components/Counter.js` .  Wenn Sie nun javaScript Visual Studio, wählen Sie das Dropdown neben der grünen Schaltfläche **Play** und **IIS Express aus.**  
 
-:::image type="complex" source="./media/vs-dropdown.png" alt-text="Das Dropdown neben der grünen Schaltfläche "Play" und "IIS Express"" lightbox="./media/vs-dropdown.png":::
+:::image type="complex" source="./media/vs-dropdown.png" alt-text="Das Dropdown neben der grünen Schaltfläche Play und IIS Express" lightbox="./media/vs-dropdown.png":::
    Das Dropdown neben der grünen **Schaltfläche "Play"** und **"IIS Express"**  
 :::image-end:::  
 

@@ -159,7 +159,7 @@ DevTools weist jeder `console.*` Methode einen Schweregrad zu.  Es gibt 4 Ebenen
 
 Wählen Sie **das Dropdownmenü Protokollebenen** aus, um Nachrichten zu aktivieren `Verbose` oder zu `Info` `Warning` `Error` deaktivieren.  
 
-:::image type="complex" source="../media/console-log-level-default-levels.msft.png" alt-text="Dropdownliste "Protokollebenen"" lightbox="../media/console-log-level-default-levels.msft.png":::
+:::image type="complex" source="../media/console-log-level-default-levels.msft.png" alt-text="Dropdownliste Protokollebenen" lightbox="../media/console-log-level-default-levels.msft.png":::
    Dropdownliste **"Protokollebenen"**  
 :::image-end:::  
 
@@ -232,7 +232,7 @@ Beim Eingeben eines Ausdrucks zeigt das Popupfenster für die automatische Vervo
 
 Standardmäßig ist das **JavaScript-Kontextdropdown** auf **top**festgelegt, das den [Browserkontext][MDNBrowsingContext] des Hauptdokuments darstellt.  
 
-:::image type="complex" source="../media/console-dom-level-top.msft.png" alt-text="Das Dropdownmenü "JavaScript-Kontext"" lightbox="../media/console-dom-level-top.msft.png":::
+:::image type="complex" source="../media/console-dom-level-top.msft.png" alt-text="Das Dropdownmenü JavaScript-Kontext" lightbox="../media/console-dom-level-top.msft.png":::
    Das **Dropdownmenü "JavaScript-Kontext"**  
 :::image-end:::  
 

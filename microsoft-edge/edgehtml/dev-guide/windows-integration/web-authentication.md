@@ -250,7 +250,7 @@ Nachdem Sie die Assertion auf dem Server erhalten haben, müssen Sie die Signatu
 
 ### Unterstützte Plattformen  
 
-*   Die Version der Kandidaten Empfehlung der Webauthentifizierungs-API kann von Microsoft Edge beginnend mit EdgeHTML 18 \ (Windows Insider Preview-Version 17713 oder höher) verwendet werden.  
+*   Die Version der Kandidaten Empfehlung der Webauthentifizierungs-API kann von Microsoft Edge beginnend mit EdgeHTML 18 \(Windows Insider Preview-Version 17713 oder höher) verwendet werden.  
 *   Die vorangestellte [Preview-Version](https://blogs.windows.com/msedgedev/2016/04/12) der Webauthentifizierungs-API wurde entfernt und steht nicht mehr zur Verfügung.  
 *   Die Webauthentifizierungs-API steht für UWP-apps und-PWAs noch nicht zur Verfügung.  
 *   Internet Explorer unterstützt die Webauthentifizierungs-API nicht.  
@@ -269,13 +269,13 @@ Einige Dinge, die Sie bei der Verwendung des Windows Hello-Authentifikators beac
 
 *   Sie können feststellen, ob Windows Hello auf einem PC verfügbar ist, indem Sie die `isUserVerifyingPlatformAuthenticatorAvailable` API aufrufen.  Weitere Informationen zu dieser API [finden Sie hier](https://www.w3.org/TR/webauthn#isUserVerifyingPlatformAuthenticatorAvailable).  
 *   Wenn Sie eine Anmeldeinformationen für Windows Hello erstellen, sollten `authenticatorAttachment` Sie `platform` für eine optimale Benutzererfahrung festzulegen.
-*   Windows Hello unterstützt nur RS256 \ (AIG-257 \) als öffentlichen Schlüsselalgorithmus.  Stellen Sie sicher, dass Sie bei der Erstellung von Anmeldeinformationen diesen Algorithmus angeben.  
+*   Windows Hello unterstützt nur RS256 \(AIG-257 \) als öffentlichen Schlüsselalgorithmus.  Stellen Sie sicher, dass Sie bei der Erstellung von Anmeldeinformationen diesen Algorithmus angeben.  
 *   Um eine [TPM-Bestätigungsanweisung](https://w3c.github.io/webauthn#tpm-attestation)zu erhalten, legen Sie die Bescheinigung beim Aufrufen der API auf "Direct" fest `create` .  Die TPM-Bescheinigung ist ein optimaler Aufwand.  Nur PCs mit TPM 2,0 geben eine TPM-Bestätigungsanweisung zurück, und der Bestätigungsprozess kann aus verschiedenen Gründen fehlschlagen.  
 *   Windows Hello verwendet verschiedene Möglichkeiten, um Benutzeranmeldeinformationen zu schützen.  Sie können überprüfen, welche Methode zum Schützen von Anmeldeinformationen verwendet wurde, indem Sie das [AAGUID](https://w3c.github.io/webauthn#sec-attested-credential-data) -Feld im Bestätigungs Objekt verwenden, das bei der Erstellung von Anmeldeinformationen zurückgegeben wird.  Die folgende Liste enthält die AAGUIDs, die von Windows Hello zurückgegeben werden können:   
     *   Software-gesicherte Authentifikatoren  
         *   Windows Hello-Software-Authentifikator:  `6028B017-B1D4-4C02-B4B3-AFCDAFC96BB2`  
         *   Windows Hello VBS-Software-Authentifikator:  `6E96969E-A5CF-4AAD-9B56-305FE6C82795`  
-    *   Vertrauenswürdiges Plattformmodul \ (TPM \) gesicherte Authentifikatoren  
+    *   Vertrauenswürdiges Plattformmodul \(TPM \) gesicherte Authentifikatoren  
         *   Windows Hello-Hardware-Authentifikator:  `08987058-CADC-4B81-B6E1-30DE50DCBE96`  
         *   Windows Hello VBS-Hardware-Authentifikator:  `9DDD1817-AF5A-4672-A2B9-3E3DD95000A9`  
 

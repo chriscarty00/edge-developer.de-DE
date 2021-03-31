@@ -16,7 +16,7 @@ ms.locfileid: "11104773"
 ---
 # Querladen einer Erweiterung
 
-Während der Entwicklung können Sie den Microsoft Edge \ (Chrom \)-Browser verwenden, um Ihre Erweiterung sicher auszuführen und zu debuggen. Indem Sie Ihre Erweiterung lokal in Ihrem Browser Sideloading, können Sie Ihre Erweiterung ausführen und testen. In diesem Artikel wird erläutert, wie Sie Erweiterungen in Microsoft Edge querladen.
+Während der Entwicklung können Sie den Microsoft Edge \(Chrom \)-Browser verwenden, um Ihre Erweiterung sicher auszuführen und zu debuggen. Indem Sie Ihre Erweiterung lokal in Ihrem Browser Sideloading, können Sie Ihre Erweiterung ausführen und testen. In diesem Artikel wird erläutert, wie Sie Erweiterungen in Microsoft Edge querladen.
 
 Führen Sie die folgenden Schritte aus, um die Erweiterung zu querladen.
 

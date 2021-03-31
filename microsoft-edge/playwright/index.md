@@ -19,9 +19,9 @@ ms.locfileid: "11231083"
 
 [Dramatiker][|::ref1::|Main] ist eine [Node.js][NodejsMain] Bibliothek zum Automatisieren von [Chrom][ChromiumHome], [Firefox][FirefoxMain]und [WebKit][|::ref2::|Main] mit einer einzigen API.  Dramatiker wurde entwickelt, um browserübergreifende webautomatisierungen zu ermöglichen, die immer grün, fähig, zuverlässig und schnell sind.  Da [Microsoft Edge auf der Open-Source-Chrom-Webplattform][MicrosoftBlogsWindowsExperience20181206]basiert, ist Dramatiker auch in der Lage, Microsoft Edge zu automatisieren.  
 
-Writer startet standardmäßig [headless-Browser][WikiHeadlessBrowser] .  Headless-Browser zeigen keine Benutzeroberfläche an, daher müssen Sie stattdessen die Befehlszeile verwenden.  Sie können auch Writer so konfigurieren, dass der vollständige \ (nicht-headless \) Microsoft Edge ausgeführt wird.  
+Writer startet standardmäßig [headless-Browser][WikiHeadlessBrowser] .  Headless-Browser zeigen keine Benutzeroberfläche an, daher müssen Sie stattdessen die Befehlszeile verwenden.  Sie können auch Writer so konfigurieren, dass der vollständige \(nicht-headless \) Microsoft Edge ausgeführt wird.  
 
-Wenn Sie Writer installieren, downloadet das Installationsprogramm standardmäßig [Chrom][ChromiumHome], [Firefox][FirefoxMain]und [WebKit][|::ref3::|Main].  Wenn Sie Microsoft Edge \ (Chrom \) ebenfalls installiert haben, benötigt Dramatiker nur eine einzeilige Codeänderung, um Ihre Website oder app in Microsoft Edge zu testen.  Zum Herunterladen von Microsoft Edge \ (Chrom \) navigieren Sie zu [Microsoft Edge herunterladen][MicrosoftEdgeDownload].  
+Wenn Sie Writer installieren, downloadet das Installationsprogramm standardmäßig [Chrom][ChromiumHome], [Firefox][FirefoxMain]und [WebKit][|::ref3::|Main].  Wenn Sie Microsoft Edge \(Chrom \) ebenfalls installiert haben, benötigt Dramatiker nur eine einzeilige Codeänderung, um Ihre Website oder app in Microsoft Edge zu testen.  Zum Herunterladen von Microsoft Edge \(Chrom \) navigieren Sie zu [Microsoft Edge herunterladen][MicrosoftEdgeDownload].  
 
 ## Installieren des Dramatikers  
 
@@ -36,7 +36,7 @@ npm i playwright
 > [!NOTE]
 > Für [Dramatiker][|::ref5::|Main] ist Node.js Version 10,17 oder höher erforderlich. Führen `node -v` Sie über die Befehlszeile aus, um sicherzustellen, dass Sie über eine kompatible Version von Node.js verfügen.  Die Browser-Binaries für Chrom, Firefox und WebKit funktionieren über Windows, macOS und Linux. Weitere Informationen finden Sie unter [System Anforderungen für Dramatiker][PlaywrightSystemRequirements].  
 
-Dramatiker sollten Benutzern anderer Browsertest-Frameworks wie [WebDriver][WebDriverChromiumMain] oder [Puppenspieler][PuppeteerMain]vertraut sein.  Erstellen Sie eine Instanz des Browsers, öffnen Sie eine Seite, und bearbeiten Sie Sie dann mit der [Dramatiker-API][PlaywrightAPIReference].  Im folgenden Codeausschnitt startet Dramatiker Microsoft Edge \ (Chrom \), navigiert zu `https://www.microsoft.com/edge` und speichert einen Screenshot als `example.png` .  
+Dramatiker sollten Benutzern anderer Browsertest-Frameworks wie [WebDriver][WebDriverChromiumMain] oder [Puppenspieler][PuppeteerMain]vertraut sein.  Erstellen Sie eine Instanz des Browsers, öffnen Sie eine Seite, und bearbeiten Sie Sie dann mit der [Dramatiker-API][PlaywrightAPIReference].  Im folgenden Codeausschnitt startet Dramatiker Microsoft Edge \(Chrom \), navigiert zu `https://www.microsoft.com/edge` und speichert einen Screenshot als `example.png` .  
 
 Kopieren Sie den folgenden Codeausschnitt, und speichern Sie ihn als `example.js` .  
 
@@ -61,7 +61,7 @@ const { chromium } = require('playwright');
 npm i edge-paths
 ```  
 
-Der folgende Codeausschnitt verwendet das [Edge-Paths-][npmEdgePaths] Paket zum programmgesteuerten Auffinden des Pfads zu Ihrer Installation von Microsoft Edge \ (Chrom \) auf Ihrem Betriebssystem.  
+Der folgende Codeausschnitt verwendet das [Edge-Paths-][npmEdgePaths] Paket zum programmgesteuerten Auffinden des Pfads zu Ihrer Installation von Microsoft Edge \(Chrom \) auf Ihrem Betriebssystem.  
 
 ```javascript
 const edgePaths = require("edge-paths");
@@ -72,7 +72,7 @@ const EDGE_PATH = edgePaths.getEdgePath();
 Setzen Sie abschließend `executablePath: EDGE_PATH` ein `example.js` .  Speichern Sie Ihre Änderungen.  
 
 > [!NOTE]
-> Microsoft Edge \ (EdgeHTML \) funktioniert nicht mit Dramatiker.  Sie müssen [Microsoft Edge \ (Chrom \)][MicrosoftEdgeDownload] installieren, um weiterhin diesem Beispiel folgen zu können.  
+> Microsoft Edge \(EdgeHTML \) funktioniert nicht mit Dramatiker.  Sie müssen [Microsoft Edge \(Chrom \)][MicrosoftEdgeDownload] installieren, um weiterhin diesem Beispiel folgen zu können.  
 
 Nun `example.js` über die Befehlszeile ausgeführt werden.  
 

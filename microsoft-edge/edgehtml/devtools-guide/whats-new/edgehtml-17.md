@@ -28,7 +28,7 @@ Hier sind die neuesten Microsoft Edge devtools-Features, die im [Windows 10 Apri
 
 ![Microsoft Edge devtools-App](../../devtools-protocol/media/microsoft-edge-devtools.png) 
 
-Die [Microsoft Edge-devtools](https://www.microsoft.com/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj) sind jetzt für die Vorschau als eigenständige Windows 10-App aus dem Microsoft Store verfügbar. Die Store-Version enthält einen Bereich *Auswahl* zum Anfügen an geöffnete lokale und remote Seitenziele und ein Layout im Registerkartenformat für den einfachen Wechsel zwischen DevTools-Instanzen. Ebenfalls exklusiv für die devtools-APP ist die Möglichkeit zum Debuggen von Webinhalten in apps \ (wie Add-Ins für Office, Cortana, EdgeHTML [WebView](../../hosting/webview/index.md)und [Windows-installierte PWAs](../../progressive-web-apps/windows-features.md)\).
+Die [Microsoft Edge-devtools](https://www.microsoft.com/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj) sind jetzt für die Vorschau als eigenständige Windows 10-App aus dem Microsoft Store verfügbar. Die Store-Version enthält einen Bereich *Auswahl* zum Anfügen an geöffnete lokale und remote Seitenziele und ein Layout im Registerkartenformat für den einfachen Wechsel zwischen DevTools-Instanzen. Ebenfalls exklusiv für die devtools-APP ist die Möglichkeit zum Debuggen von Webinhalten in apps \(wie Add-Ins für Office, Cortana, EdgeHTML [WebView](../../hosting/webview/index.md)und [Windows-installierte PWAs](../../progressive-web-apps/windows-features.md)\).
 
 Die Edge-devtools sind auch weiterhin ( `F12` ) im Browser verfügbar (ohne den Auswahlbereich).
 

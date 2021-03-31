@@ -26,7 +26,7 @@ Das [WebView2-Steuerelement][Webview2Main] ermöglicht Entwicklern das Hosten vo
 1.  Setzen Sie die folgenden Optionen, um die Webinhalts Funktionalität durch Ändern von [ICoreWebView2Settings (Win32)][Webview2ReferenceWin32Icorewebview2settings] oder [CoreWebView2Settings (.net)][Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2settings]zu beschränken.  
     *   `AreHostObjectsAllowed`Auf `false` , wenn Sie nicht erwarten, dass die Webinhalte auf Hostobjekte zugreifen.  
     *   `IsWebMessageEnabled`Auf `false` , wenn Sie nicht erwarten, dass die Webinhalte Webnachrichten in ihrer systemeigenen Anwendung bereitstellen.  
-    *   Legen `IsScriptEnabled` `false` Sie auf, wenn Sie nicht erwarten, dass die Webinhalte Skripts ausführen \ (beispielsweise, wenn statischer HTML-Inhalt angezeigt wird).  
+    *   Legen `IsScriptEnabled` `false` Sie auf, wenn Sie nicht erwarten, dass die Webinhalte Skripts ausführen \(beispielsweise, wenn statischer HTML-Inhalt angezeigt wird).  
     *   `AreDefaultScriptDialogsEnabled`Auf `false` , wenn Sie nicht erwarten, dass die Webinhalte angezeigt werden `alert` oder `prompt` Dialogfelder angezeigt werden.  
 1.  Verwenden Sie in den folgenden Schritten die `NavigationStarting` Ereignisse und, `FrameNavigationStarting` um die Einstellungen basierend auf dem Ursprung der neuen Seite zu aktualisieren.  
     1.  Um zu verhindern, dass Ihre Anwendung zu bestimmten Seiten navigiert, verwenden Sie die Ereignisse, um die Seiten-oder Frame Navigation zu überprüfen und dann zu blockieren.  

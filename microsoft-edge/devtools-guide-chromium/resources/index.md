@@ -110,13 +110,13 @@ Standardmäßig werden im **Seitenbereich** Ressourcen nach Verzeichnis gruppen.
 1.  Öffnen Sie den **Seitenbereich.**  Navigieren Sie [zu Durchsuchen nach Verzeichnis](#browse-by-directory).  
 1.  Wählen **Sie Weitere Optionen aus,** und deaktivieren Sie `...` **"Nach Ordner" gruppieren.**  
     
-    :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text="Die Option "Gruppe nach Ordner"" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
+    :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text="Die Option Gruppe nach Ordner" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
        Die **Option "Gruppe nach Ordner"**  
     :::image-end:::  
     
     Ressourcen sind nach Dateityp organisiert.  Innerhalb jedes Dateityps sind die Ressourcen alphabetisch angeordnet.  
     
-    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="Der Seitenbereich nach der Deaktivierung von "Gruppe nach Ordner"" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
+    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="Der Seitenbereich nach der Deaktivierung von Gruppe nach Ordner" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
        Der **Seitenbereich** nach der Deaktivierung **von "Gruppe nach Ordner"**  
     :::image-end:::  
     

@@ -30,7 +30,7 @@ Verwenden Sie die folgenden Funktionen, um mit der Einbettung von JavaScript in 
 | API  | Beschreibung  |
 |:--- |:--- |  
 | [ExecuteScriptAsync][Webview2ReferenceWpfMicrosoftWebExecutescriptasync] | Führen Sie JavaScript in einem WebView-Steuerelement aus. Wenn Sie weitere Informationen erhalten möchten, navigieren Sie zum Lernprogramm "erste Schritte". |
-| [OnDocumentCreatedAsync][Webview2ReferenceWin32Icorewebview2Addscripttoexecuteondocumentcreated] | Wird ausgeführt, wenn das Dokumentobjektmodell \ (DOM \) erstellt wird. |
+| [OnDocumentCreatedAsync][Webview2ReferenceWin32Icorewebview2Addscripttoexecuteondocumentcreated] | Wird ausgeführt, wenn das Dokumentobjektmodell \(DOM \) erstellt wird. |
       
 ## Szenario: Ausführen einer dedizierten Skriptdatei  
 
@@ -94,7 +94,7 @@ Entfernen Sie in diesem Abschnitt das Standardkontextmenü aus Ihrem WebView2-St
 Erkunden Sie zunächst die aktuelle Kontextmenü Funktionalität.  
 
 1.  Führen Sie das Projekt aus.  
-1.  Zeigen Sie auf das WebView2-Steuerelement, und öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \).  Das Kontextmenü zeigt die Standardauswahl an.  
+1.  Zeigen Sie auf das WebView2-Steuerelement, und öffnen Sie das Kontextmenü \(Klicken Sie mit der rechten Maustaste auf \).  Das Kontextmenü zeigt die Standardauswahl an.  
     
     :::image type="complex" source="./media/contextmenu.png" alt-text="Das Kontextmenü mit den Standardoptionen" lightbox="./media/contextmenu.png":::
        Das Kontextmenü mit den Standardoptionen  
@@ -108,7 +108,7 @@ Fügen Sie nun Code hinzu, um die Kontextmenü Funktionalität des WebView2-Steu
     await webView.CoreWebView2.ExecuteScriptAsync("window.addEventListener('contextmenu', window => {window.preventDefault();});");
     ```  
 
-1.  Führen Sie den Code erneut aus.  Vergewissern Sie sich, dass Sie nicht in der Lage sind, ein Kontextmenü zu öffnen \ (Klicken Sie mit der rechten Maustaste auf \).  
+1.  Führen Sie den Code erneut aus.  Vergewissern Sie sich, dass Sie nicht in der Lage sind, ein Kontextmenü zu öffnen \(Klicken Sie mit der rechten Maustaste auf \).  
    
 ## Weitere Informationen  
 

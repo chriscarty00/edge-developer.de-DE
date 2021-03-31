@@ -22,7 +22,7 @@ ms.locfileid: "11230691"
 
 <!--todo: We want to put something like the tiles for extensions Visual Studio Code uses on this page https://code.visualstudio.com/Docs#top-extensions but I don't think this is a markdown page.  I think it's a web page.  I couldn't find anything in https://github.com/Microsoft/vscode-docs that looks like this page. In the meantime, here's what I've come up with: -->  
 
-Wenn Sie eine der unten hervorgehobenen Erweiterungen erwerben möchten, navigieren Sie in Visual Studio-Code zu Erweiterungen \ (Wählen Sie `Ctrl` + `Shift` + `X` unter Windows/Linux oder `Command` + `Shift` + `X` unter macOS \) aus.  
+Wenn Sie eine der unten hervorgehobenen Erweiterungen erwerben möchten, navigieren Sie in Visual Studio-Code zu Erweiterungen \(Wählen Sie `Ctrl` + `Shift` + `X` unter Windows/Linux oder `Command` + `Shift` + `X` unter macOS \) aus.  
 
 Durchsuchen Sie den Marktplatz nach der jeweiligen Erweiterung, und wählen Sie **Installieren**aus.  
 
@@ -55,7 +55,7 @@ Durchsuchen Sie den Marktplatz nach der jeweiligen Erweiterung, und wählen Sie 
 
 Mit der [Debugger für Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftEdge] Visual Studio-Code Erweiterung können Sie den Front-End-JavaScript-Code Zeile für Zeile Debuggen und `console.log()` Anweisungen direkt aus [Visual Studio-Code][VisualstudioCode]anzeigen.  
       
-Mit dem Debugger-Tool können Sie sowohl Microsoft Edge \ (EdgeHTML \) als auch Microsoft Edge \ (Chrom \) starten oder anfügen.  Eine exemplarische Vorgehensweise zum Debuggen von Microsoft Edge in Visual Studio-Code und Beispiel `launch.json` Konfigurationen finden Sie unter [Debugger für Microsoft Edge Visual Studio-Code Erweiterung][VisualStudioCodeDebuggerEdge].  Wählen Sie die folgende Abbildung aus, um die Erweiterung in Aktion anzuzeigen.  
+Mit dem Debugger-Tool können Sie sowohl Microsoft Edge \(EdgeHTML \) als auch Microsoft Edge \(Chrom \) starten oder anfügen.  Eine exemplarische Vorgehensweise zum Debuggen von Microsoft Edge in Visual Studio-Code und Beispiel `launch.json` Konfigurationen finden Sie unter [Debugger für Microsoft Edge Visual Studio-Code Erweiterung][VisualStudioCodeDebuggerEdge].  Wählen Sie die folgende Abbildung aus, um die Erweiterung in Aktion anzuzeigen.  
 
 :::image type="complex" source="./media/debugger-for-edge.png" alt-text="Debugger für Edge Visual Studio-Code Erweiterung in Aktion" lightbox="./media/debugger-for-edge.gif":::
    **Debugger für Microsoft Edge** Visual Studio-Code Erweiterung in Aktion  

@@ -35,7 +35,7 @@ EdgeHTML 13 unterstützt neue CSS-Features, einschließlich:
 
 ### Verschlüsselte Medienerweiterungen  
 
-Microsoft Edge unterstützt jetzt die neuen APIs für [verschlüsselte Medienerweiterungen](https://w3.org/TR/encrypted-media) mit unpräfixen.  Verschlüsselte Medienerweiterungen \ (EME \) erweitert die Video-und Audioelemente, um DRM-geschützte Inhalte (Digital Rights Management) zu aktivieren, ohne Plug-ins zu verwenden.  Weitere Informationen finden Sie unter eme:  [verschlüsselte Medienerweiterungen](https://developer.mozilla.org/docs/Web/API/Encrypted_Media_Extensions_API).  
+Microsoft Edge unterstützt jetzt die neuen APIs für [verschlüsselte Medienerweiterungen](https://w3.org/TR/encrypted-media) mit unpräfixen.  Verschlüsselte Medienerweiterungen \(EME \) erweitert die Video-und Audioelemente, um DRM-geschützte Inhalte (Digital Rights Management) zu aktivieren, ohne Plug-ins zu verwenden.  Weitere Informationen finden Sie unter eme:  [verschlüsselte Medienerweiterungen](https://developer.mozilla.org/docs/Web/API/Encrypted_Media_Extensions_API).  
 
 ### Grafiken  
 
@@ -54,16 +54,16 @@ EdgeHTML 13 umfasst [wichtige Verbesserungen und die Unterstützung neuer Featur
 
 Standardmäßig aktiviert  
 
-*   Standardmäßig aktiviert [asm.js](https://developer.microsoft.com/microsoft-edge/platform/status/asmjs/?q=asm.js) \ ([Blogbeitrag](https://blogs.windows.com/msedgedev/2015/11/10), [Demo](https://dev.windows.com/microsoft-edge/testdrive/demos/chess)\)  
-*   [Classes](https://developer.microsoft.com/microsoft-edge/platform/status/asmjs/?q=classes) \ (ES2015 \)  
+*   Standardmäßig aktiviert [asm.js](https://developer.microsoft.com/microsoft-edge/platform/status/asmjs/?q=asm.js) \([Blogbeitrag](https://blogs.windows.com/msedgedev/2015/11/10), [Demo](https://dev.windows.com/microsoft-edge/testdrive/demos/chess)\)  
+*   [Classes](https://developer.microsoft.com/microsoft-edge/platform/status/asmjs/?q=classes) \(ES2015 \)  
 
 #### Experimentelle JavaScript-Features  
 
 Aktiviert mit `about:flags`  
 
-*   [Asynchrone Funktionen](https://developer.microsoft.com/microsoft-edge/platform/status/asyncfunctions/?q=async%20functions) \ (ES2016 \)  
-*   [Potenz Operator](https://developer.microsoft.com/microsoft-edge/platform/status/exponentiationoperatores2016/?q=exponentiation%20operator) \ (ES2016 \)  
-*   [Destrukturierung](https://developer.microsoft.com/microsoft-edge/platform/status/destructuringES2015/?q=destructuring) \ (ES2015 \)  
+*   [Asynchrone Funktionen](https://developer.microsoft.com/microsoft-edge/platform/status/asyncfunctions/?q=async%20functions) \(ES2016 \)  
+*   [Potenz Operator](https://developer.microsoft.com/microsoft-edge/platform/status/exponentiationoperatores2016/?q=exponentiation%20operator) \(ES2016 \)  
+*   [Destrukturierung](https://developer.microsoft.com/microsoft-edge/platform/status/destructuringES2015/?q=destructuring) \(ES2015 \)  
 
 ### Benutzereingabe  
 
@@ -74,7 +74,7 @@ Die folgenden in EdgeHTML 13 eingeführten Features verbessern die Benutzereinga
 
 ### Zeiger Sperre  
 
-Microsoft Edge unterstützt jetzt die Pointer Lock-API \ (zuvor als "Maus Sperre" bezeichnet) für den Zugriff auf rohe Mausbewegungen, das Ziel von Mausereignissen auf ein einzelnes Element sperren, wodurch Grenzwerte für die Mausbewegung in einer einzelnen Richtung beseitigt werden und der Cursor aus der Ansicht entfernt werden kann.  
+Microsoft Edge unterstützt jetzt die Pointer Lock-API \(zuvor als "Maus Sperre" bezeichnet) für den Zugriff auf rohe Mausbewegungen, das Ziel von Mausereignissen auf ein einzelnes Element sperren, wodurch Grenzwerte für die Mausbewegung in einer einzelnen Richtung beseitigt werden und der Cursor aus der Ansicht entfernt werden kann.  
 
 ## Neue APIs in EdgeHTML 13  
 

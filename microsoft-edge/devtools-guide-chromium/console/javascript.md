@@ -49,7 +49,7 @@ Dieses Lernprogramm ist so konzipiert, dass Sie die Demo öffnen und alle Workfl
     
     *   [Beispiel für JavaScript für konsolen][GlitchConsoleJavascriptExample]  
     
-    :::image type="complex" source="../media/console-javascript-example-console-empty.msft.png" alt-text="Die Seite "Konsolen-JavaScript-Beispiel" links und DevTools auf der rechten Seite" lightbox="../media/console-javascript-example-console-empty.msft.png":::
+    :::image type="complex" source="../media/console-javascript-example-console-empty.msft.png" alt-text="Die Seite Konsolen-JavaScript-Beispiel links und DevTools auf der rechten Seite" lightbox="../media/console-javascript-example-console-empty.msft.png":::
        Die Seite "Konsolen-JavaScript-Beispiel" links und DevTools auf der rechten Seite  
     :::image-end:::  
     

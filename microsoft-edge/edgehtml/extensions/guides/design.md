@@ -114,8 +114,8 @@ Sobald Ihre Erweiterung für die Verpackung bereit ist, müssen Sie drei weitere
 
 | Size | Details |  
 |:--- |:--- |  
-| 44px | Wird in der Windows-Benutzeroberfläche verwendet \ (**App-Liste**, **Einstellungen**  \>  **System**-  \>  **apps & Funktionen**\). |  
-| 50px | Verpackungsanforderung \ (nirgendwo sichtbar \). |  
+| 44px | Wird in der Windows-Benutzeroberfläche verwendet \(**App-Liste**, **Einstellungen**  \>  **System**-  \>  **apps & Funktionen**\). |  
+| 50px | Verpackungsanforderung \(nirgendwo sichtbar \). |  
 | 150px | Wird als Symbol für den Microsoft Store verwendet. |  
 
 

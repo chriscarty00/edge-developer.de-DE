@@ -19,7 +19,7 @@ ms.locfileid: "11233721"
 
 [!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
-Nachfolgend finden Sie eine Liste der neuen und aktualisierten Features, die in [EdgeHTML 17](https://blogs.windows.com/msedgedev/2018/04/30) Web Platform als Teil des [Windows 10 April 2018 Update](https://blogs.windows.com/windowsexperience/2018/04/27) \ (04/2018, Build 17134 \) geliefert wurden.  Änderungen an bestimmten [Windows Insider](https://insider.windows.com) Preview-Builds finden Sie im [Microsoft Edge-Changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog) und [Neuerungen in EdgeHTML](../whats-new.md).  
+Nachfolgend finden Sie eine Liste der neuen und aktualisierten Features, die in [EdgeHTML 17](https://blogs.windows.com/msedgedev/2018/04/30) Web Platform als Teil des [Windows 10 April 2018 Update](https://blogs.windows.com/windowsexperience/2018/04/27) \(04/2018, Build 17134 \) geliefert wurden.  Änderungen an bestimmten [Windows Insider](https://insider.windows.com) Preview-Builds finden Sie im [Microsoft Edge-Changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog) und [Neuerungen in EdgeHTML](../whats-new.md).  
 
 Hier ist der Permalink für die folgende Liste der [https://aka.ms/devguide_edgehtml_17](./edgehtml-17.md) Änderungen:  
 
@@ -53,7 +53,7 @@ Diese Version von devtools wird auf zwei Arten ausgeliefert: als herkömmliche i
    Microsoft Edge devtools-App  
 :::image-end:::  
 
-Die Tools wurden auch mit einer Reihe wichtiger Features aktualisiert, einschließlich der grundlegenden Unterstützung für das [Remotedebuggen](../../devtools-guide/whats-new/edgehtml-17.md#devtools-protocol) \ (über unser neues [devtools-Protokoll](../../devtools-guide/whats-new/edgehtml-17.md#devtools-protocol)\), [PWA-Debugfunktionen](../../devtools-guide/whats-new/edgehtml-17.md#pwa-debugging), IndexedDB- [Cacheverwaltung](../../devtools-guide/whats-new/edgehtml-17.md#indexeddb-inspection), [vertikales Andocken](../../devtools-guide/whats-new/edgehtml-17.md#docking-to-the-right-in-microsoft-edge) und vieles mehr! Darüber hinaus haben wir den Gesamtaufwand für die [Umgestaltung](./edgehtml-16.md) der letzten Version im Rahmen der laufenden Investitionen in Leistung und Zuverlässigkeit fortgesetzt.  
+Die Tools wurden auch mit einer Reihe wichtiger Features aktualisiert, einschließlich der grundlegenden Unterstützung für das [Remotedebuggen](../../devtools-guide/whats-new/edgehtml-17.md#devtools-protocol) \(über unser neues [devtools-Protokoll](../../devtools-guide/whats-new/edgehtml-17.md#devtools-protocol)\), [PWA-Debugfunktionen](../../devtools-guide/whats-new/edgehtml-17.md#pwa-debugging), IndexedDB- [Cacheverwaltung](../../devtools-guide/whats-new/edgehtml-17.md#indexeddb-inspection), [vertikales Andocken](../../devtools-guide/whats-new/edgehtml-17.md#docking-to-the-right-in-microsoft-edge) und vieles mehr! Darüber hinaus haben wir den Gesamtaufwand für die [Umgestaltung](./edgehtml-16.md) der letzten Version im Rahmen der laufenden Investitionen in Leistung und Zuverlässigkeit fortgesetzt.  
 
 Weitere Informationen finden Sie [unter devtools im neuesten Windows 10-Update (EdgeHTML 17)](../../devtools-guide/whats-new/edgehtml-17.md) .  
 
@@ -66,7 +66,7 @@ Mit EdgeHTML 17 führt das Chakra JavaScript-Modul Leistungsverbesserungen in ei
       **Schlankerer Speicherbedarf**  
    :::column-end:::
    :::column span="2":::
-      *   \ (Re-\) verzögern der Analyse für [Pfeil Funktionen](https://github.com/Microsoft/ChakraCore/pull/4105) und [Methoden für Objekt Literale](https://github.com/Microsoft/ChakraCore/pull/4136)  
+      *   \(Re-\) verzögern der Analyse für [Pfeil Funktionen](https://github.com/Microsoft/ChakraCore/pull/4105) und [Methoden für Objekt Literale](https://github.com/Microsoft/ChakraCore/pull/4136)  
       *   [RegExp-Bytecode-Refactoring](https://github.com/Microsoft/ChakraCore/pull/3915)  
    :::column-end:::
 :::row-end:::  
@@ -108,9 +108,9 @@ Microsoft Edge unterstützt jetzt die Bildschirmaufnahme in RTC über die [Media
 
 ### Progressive Web Apps  
 
-Ab EdgeHTML 17 sind Dienstmitarbeiter und Push-Benachrichtigungen standardmäßig aktiviert \ (Weitere Informationen zu diesen Features finden Sie im Blogbeitrags [Mitarbeiter: gehen Sie über die Seite hinaus](https://blogs.windows.com/msedgedev/2017/12/19)).  Damit ist die Suite der Technologien (einschließlich des FETCH-Netzwerks und der Push-und Cache-APIs \) abgeschlossen, die die technische Grundlage für Progressive Web-Apps \ (PWAs \) unter Windows 10 bildet.  
+Ab EdgeHTML 17 sind Dienstmitarbeiter und Push-Benachrichtigungen standardmäßig aktiviert \(Weitere Informationen zu diesen Features finden Sie im Blogbeitrags [Mitarbeiter: gehen Sie über die Seite hinaus](https://blogs.windows.com/msedgedev/2017/12/19)).  Damit ist die Suite der Technologien (einschließlich des FETCH-Netzwerks und der Push-und Cache-APIs \) abgeschlossen, die die technische Grundlage für Progressive Web-Apps \(PWAs \) unter Windows 10 bildet.  
 
-PWAs sind einfach Web-Apps, die mit systemeigenen App-ähnlichen Features auf unterstützenden Plattformen und Browser Modulen wie Installation/Startbildschirm, Offline-Support und Push-Benachrichtigungen [schrittweise verbessert](https://en.wikipedia.org/wiki/Progressive_enhancement) werden.  Unter Windows 10 mit dem Microsoft Edge \ (EdgeHTML \)-Modul genießen PWAs den zusätzlichen Vorteil, dass Sie unabhängig vom Browserfenster als [universelle Windows-Plattform](/windows/uwp/get-started/whats-a-uwp) -apps ausgeführt werden.  
+PWAs sind einfach Web-Apps, die mit systemeigenen App-ähnlichen Features auf unterstützenden Plattformen und Browser Modulen wie Installation/Startbildschirm, Offline-Support und Push-Benachrichtigungen [schrittweise verbessert](https://en.wikipedia.org/wiki/Progressive_enhancement) werden.  Unter Windows 10 mit dem Microsoft Edge \(EdgeHTML \)-Modul genießen PWAs den zusätzlichen Vorteil, dass Sie unabhängig vom Browserfenster als [universelle Windows-Plattform](/windows/uwp/get-started/whats-a-uwp) -apps ausgeführt werden.  
 
 Jenseits von PWAs können Service Mitarbeiter und die Cache-API Entwicklern die Möglichkeit geben, Netzwerkanforderungen abzufangen und aus dem Cache zu antworten.  Eine Website muss nicht einmal eine vollständige Web-App sein, um die Vorteile des Service Worker-Caches für die Leistung und Zuverlässigkeit von feinem seitenladevorgang zu nutzen, sowie die Möglichkeit, eine Offline-Erfahrung in Zeiten ohne Internetverbindung oder schlechter Qualität bereitzustellen.  
 
@@ -118,7 +118,7 @@ Besuchen Sie unsere [fortschrittlichen Web-Apps unter Windows](../../progressive
 
 ### Web-Sicherheit  
 
-EdgeHTML 17 stellt Unterstützung für die Integrität von subressourcen vor \ (Sri \).  Die unter [Ressourcen Integrität](https://developer.mozilla.org/docs/Web/Security/Subresource_Integrity) ist ein Sicherheitsfeature, mit dem Browser überprüfen können, ob abgerufene Ressourcen (wie Bilder, Skripts, Schriftarten usw.) ohne unerwartete Manipulation zugestellt werden.  
+EdgeHTML 17 stellt Unterstützung für die Integrität von subressourcen vor \(Sri \).  Die unter [Ressourcen Integrität](https://developer.mozilla.org/docs/Web/Security/Subresource_Integrity) ist ein Sicherheitsfeature, mit dem Browser überprüfen können, ob abgerufene Ressourcen (wie Bilder, Skripts, Schriftarten usw.) ohne unerwartete Manipulation zugestellt werden.  
 
 Fügen Sie ein `integrity` Attribut, das eine kryptografische Hash Darstellung der Ressource enthält, die Sie auf Ihrer Webseite zu laden erwarten, in ein `<script>` oder `<link>` -Element ein, wie im folgenden Beispiel gezeigt.  Anschließend vergleicht Microsoft Edge die angeforderte Ressource mit dem im Attribut definierten Hash `integrity` .  Wenn Sie nicht übereinstimmen, führt Microsoft Edge die Ressource nicht aus und gibt einen Fehler an das Netzwerk zurück.  
 
@@ -131,7 +131,7 @@ Fügen Sie ein `integrity` Attribut, das eine kryptografische Hash Darstellung d
 Auch neu in EdgeHTML 17: der Anforderungsheader " [Upgrade-unsecure-](https://developer.mozilla.org/docs/Web/HTTP/Headers/Upgrade-Insecure-Requests) Request" ermöglicht Browsern die Anforderung eines sicheren Browsing-Erlebnisses.  Dieser Header teilt dem Server mit, dass der Browser das Upgrade unsicherer Anforderungen unterstützt, und der Benutzer sollte, falls verfügbar, zu einer sicheren Version der Website umgeleitet werden.  
 
 ### Variable Schriftarten
-Die vollständige Unterstützung für Variable Schriftarten \ (einschließlich CSS- [Variationseinstellungen](https://developer.mozilla.org/docs/Web/CSS/font-variation-settings) und [Schriftart-optischer Größe](https://developer.mozilla.org/docs/Web/CSS/font-variation-settings)\) steht in EdgeHTML 17 zur Verfügung.  Mit Variablen Schriftarten können Entwickler das Aussehen von scheinbar unterschiedlichen Schriftarten mit einer einzelnen Schriftart durch Anpassen verschiedener Achsen erreichen, wodurch die Notwendigkeit für mehrere Schriftartdateien und eine bessere Leistung verringert wird.  
+Die vollständige Unterstützung für Variable Schriftarten \(einschließlich CSS- [Variationseinstellungen](https://developer.mozilla.org/docs/Web/CSS/font-variation-settings) und [Schriftart-optischer Größe](https://developer.mozilla.org/docs/Web/CSS/font-variation-settings)\) steht in EdgeHTML 17 zur Verfügung.  Mit Variablen Schriftarten können Entwickler das Aussehen von scheinbar unterschiedlichen Schriftarten mit einer einzelnen Schriftart durch Anpassen verschiedener Achsen erreichen, wodurch die Notwendigkeit für mehrere Schriftartdateien und eine bessere Leistung verringert wird.  
 
 Nehmen Sie an [einer Expedition Teil, um zu erfahren, welche Variablen Schriftarten Web-Entwickler und-Designer bereitstellen](https://developer.microsoft.com/microsoft-edge/testdrive/demos/variable-fonts)und wie Sie Sie auf Ihrer Website verwenden.  Und erfahren Sie mehr über Variable Schriftarten im Blogbeitrag, [indem Sie mit Variablen Schriftarten ausdrucksstarke, ausdrucksstarke Typografie zu Microsoft Edge bringen](https://blogs.windows.com/msedgedev/2018/03/13).  
 

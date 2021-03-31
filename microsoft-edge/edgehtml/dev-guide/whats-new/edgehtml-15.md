@@ -20,7 +20,7 @@ ms.locfileid: "11234231"
 
 [!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
-Hier sind die Änderungen, die mit der aktuellen Version der Microsoft Edge-Plattform ausgeliefert wurden, wie beim [Windows 10 Creators-Update](https://blogs.windows.com/buildingapps/2017/04/05/windows-10-creators-update-creators-update-sdk-released/#MMhK2OdcrR12Vi6u.97) \ (04/2017, Build 15063 \).  Eine Übersicht über Änderungen am gesamten Microsoft Edge-Browser finden Sie unter [Neuerungen in Microsoft Edge im Windows 10 Creators-Update](https://blogs.windows.com/msedgedev/2017/04/11).  
+Hier sind die Änderungen, die mit der aktuellen Version der Microsoft Edge-Plattform ausgeliefert wurden, wie beim [Windows 10 Creators-Update](https://blogs.windows.com/buildingapps/2017/04/05/windows-10-creators-update-creators-update-sdk-released/#MMhK2OdcrR12Vi6u.97) \(04/2017, Build 15063 \).  Eine Übersicht über Änderungen am gesamten Microsoft Edge-Browser finden Sie unter [Neuerungen in Microsoft Edge im Windows 10 Creators-Update](https://blogs.windows.com/msedgedev/2017/04/11).  
 
 Informationen zu Änderungen in nachfolgenden Windows Insider Preview-Builds finden Sie unter [Neuerungen in EdgeHTML](../whats-new.md).  
 
@@ -58,7 +58,7 @@ Darüber hinaus werden in EdgeHTML 15 die folgenden Vorschaufunktionen vorgestel
 
 Aktiviert mit `about:flags`  
 
-*   [Webassembly](https://developer.microsoft.com/microsoft-edge/platform/status/webassemblymvp/?q=WebAssembly) \ ([Demo](https://webassembly.org/demo))  
+*   [Webassembly](https://developer.microsoft.com/microsoft-edge/platform/status/webassemblymvp/?q=WebAssembly) \([Demo](https://webassembly.org/demo))  
 *   [Shared Memory und Atomics](https://developer.microsoft.com/microsoft-edge/platform/status/sharedmemoryandatomics/?q=Atomics)  
 
 Weitere Informationen finden Sie unter [Verbesserte JavaScript-Leistung, Webassembly und freigegebenen Arbeitsspeicher in Microsoft Edge](https://blogs.windows.com/msedgedev/2017/04/20) .  
@@ -97,7 +97,7 @@ Weitere Informationen finden Sie unter [WebVR-API-Referenz](/previous-versions/m
 
 ### Inhalts Sicherheitsrichtlinie (Ebene 2)  
 
-Websites, die bereits CSP 1 verwenden, sollten weiterhin mit der Microsoft Edge-Unterstützung für CSP 2 funktionieren, doch empfiehlt es sich, alle `frame-src` Direktiven zu wechseln, die Worker-Skripts in die neue Direktive laden, `child-src` um Ihre Website zukunftssicher zu machen.  \ (In CSP 3 `frame-src` wird nicht mehr auf Worker angewendet. \) CSP 2 fügt auch Folgendes hinzu:  
+Websites, die bereits CSP 1 verwenden, sollten weiterhin mit der Microsoft Edge-Unterstützung für CSP 2 funktionieren, doch empfiehlt es sich, alle `frame-src` Direktiven zu wechseln, die Worker-Skripts in die neue Direktive laden, `child-src` um Ihre Website zukunftssicher zu machen.  \(In CSP 3 `frame-src` wird nicht mehr auf Worker angewendet. \) CSP 2 fügt auch Folgendes hinzu:  
 
 :::row:::
    :::column span="1":::
@@ -120,7 +120,7 @@ Websites, die bereits CSP 1 verwenden, sollten weiterhin mit der Microsoft Edge-
       Inline Skripts und-Formatvorlagen  
    :::column-end:::
    :::column span="2":::
-      CSP 2 ermöglicht die Ausführung von Inlineskripts und Formatvorlagen Blöcken, indem Sie als Allow-Listing-Mechanismus für die Bereitstellung von Textern und Hashes sorgt.  Bei den Stichen handelt es sich um zufällige Base-64-Werte, die bei jeder Seitenauslastung generiert werden, die sowohl in der CSP-Richtlinie als auch in den Skripttags auf der Seite angezeigt wird.  Wenn die Seite dynamisch beim Laden generiert wird, generiert der Server einen Kurzwert, fügt ihn in das NonceToken auf der Seite ein und deklariert ihn auch im HTTP-Header der Inhalts Sicherheitsrichtlinie.  Hashes sind statische Werte, die mit SHA256-, SHA384-oder SHA512-Algorithmen aus dem Inhalt eines oder-Elements generiert werden `<script>` , die `<style>` dann `script-src` `style-src` in der CSP-Richtlinie \ (using oder Directives \) angegeben werden.  
+      CSP 2 ermöglicht die Ausführung von Inlineskripts und Formatvorlagen Blöcken, indem Sie als Allow-Listing-Mechanismus für die Bereitstellung von Textern und Hashes sorgt.  Bei den Stichen handelt es sich um zufällige Base-64-Werte, die bei jeder Seitenauslastung generiert werden, die sowohl in der CSP-Richtlinie als auch in den Skripttags auf der Seite angezeigt wird.  Wenn die Seite dynamisch beim Laden generiert wird, generiert der Server einen Kurzwert, fügt ihn in das NonceToken auf der Seite ein und deklariert ihn auch im HTTP-Header der Inhalts Sicherheitsrichtlinie.  Hashes sind statische Werte, die mit SHA256-, SHA384-oder SHA512-Algorithmen aus dem Inhalt eines oder-Elements generiert werden `<script>` , die `<style>` dann `script-src` `style-src` in der CSP-Richtlinie \(using oder Directives \) angegeben werden.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -128,7 +128,7 @@ Websites, die bereits CSP 1 verwenden, sollten weiterhin mit der Microsoft Edge-
       Berichterstattung bei CSP-Verstößen  
    :::column-end:::
    :::column span="2":::
-      Ein neues Ereignis `SecurityPolicyViolationEvent` wird jetzt bei CSP-Verstößen ausgelöst.  Der frühere Mechanismus für die CSP-Berichterstellung wird `report-uri` weiterhin unterstützt.  Einige neue Felder wurden zu den allgemeinen Verletzungs Berichten hinzugefügt, einschließlich `effectiveDirective` \ (die Richtlinie, die verletzt wurde \), `statusCode` \ (der HTTP-Antwortcode \), `sourceFile` \ (die URL der problematischen Ressource \), `lineNumber` und `columnNumber` .  
+      Ein neues Ereignis `SecurityPolicyViolationEvent` wird jetzt bei CSP-Verstößen ausgelöst.  Der frühere Mechanismus für die CSP-Berichterstellung wird `report-uri` weiterhin unterstützt.  Einige neue Felder wurden zu den allgemeinen Verletzungs Berichten hinzugefügt, einschließlich `effectiveDirective` \(die Richtlinie, die verletzt wurde \), `statusCode` \(der HTTP-Antwortcode \), `sourceFile` \(die URL der problematischen Ressource \), `lineNumber` und `columnNumber` .  
    :::column-end:::
 :::row-end:::  
 
@@ -138,15 +138,15 @@ Die Microsoft Edge-Unterstützung für die neue **Webauthentifizierungs-API** mi
 
 <!--  Microsoft Edge support for the emerging [Web Authentication API](../device/web-authentication.md) using [Windows Hello](https://www.microsoft.com/windows/comprehensive-security) biometrics has been updated with the following changes:  -->  
 
-*   Die anfängliche Implementierung der experimentellen Webauthentifizierungs-API, die in [EdgeHTML 14](https://blogs.windows.com/msedgedev/2016/08/04) \ (Windows 10 Anniversary Update, Build 10240, 7/2016 \) eingeführt wurde, wurde über MS-Präfix-APIs \ (die [MSCredentials](/previous-versions/mt697639(v=vs.85)) -Schnittstelle \) verfügbar gemacht.  Obwohl diese APIs in EdgeHTML 15 weiterhin verfügbar sind, sind Sie nun zu Gunsten der nicht vordefinierten, auf Standards basierenden APIs und Verhaltensweisen veraltet, die in einer [neueren Momentaufnahme](https://w3.org/TR/2016/WD-webauthn-20160928) der Spezifikation definiert sind, und werden wahrscheinlich weiterhin geändert, wenn die Spezifikation zur Standardisierung heranreift.  
+*   Die anfängliche Implementierung der experimentellen Webauthentifizierungs-API, die in [EdgeHTML 14](https://blogs.windows.com/msedgedev/2016/08/04) \(Windows 10 Anniversary Update, Build 10240, 7/2016 \) eingeführt wurde, wurde über MS-Präfix-APIs \(die [MSCredentials](/previous-versions/mt697639(v=vs.85)) -Schnittstelle \) verfügbar gemacht.  Obwohl diese APIs in EdgeHTML 15 weiterhin verfügbar sind, sind Sie nun zu Gunsten der nicht vordefinierten, auf Standards basierenden APIs und Verhaltensweisen veraltet, die in einer [neueren Momentaufnahme](https://w3.org/TR/2016/WD-webauthn-20160928) der Spezifikation definiert sind, und werden wahrscheinlich weiterhin geändert, wenn die Spezifikation zur Standardisierung heranreift.  
 
-*   Die neueste Microsoft Edge-Implementierung ist standardmäßig deaktiviert und wird hinter einem Flag \ (geben `about:flags` Sie Ihre Adressleiste ein, um das Feature zu aktivieren \).  
+*   Die neueste Microsoft Edge-Implementierung ist standardmäßig deaktiviert und wird hinter einem Flag \(geben `about:flags` Sie Ihre Adressleiste ein, um das Feature zu aktivieren \).  
 
 *   Microsoft Edge unterstützt noch keine externen Anmeldeinformationen wie USB-Schlüssel oder Bluetooth-Geräte.  Die aktuelle API ist auf eingebettete im TPM gespeicherte Anmeldeinformationen limitiert.  Ein Software-Fallback wird verwendet, wenn TPM auf dem Gerät nicht verfügbar ist.  
 
 *   Das aktuell angemeldete Windows-Benutzerkonto muss so konfiguriert sein, dass es mindestens eine PIN und vorzugsweise eine Fingerabdruck-oder Fingerabdruckbiometrie unterstützt.  Dadurch wird sichergestellt, dass Windows den Zugriff auf das TPM authentifizieren kann.  
 
-*   Von den [vordefinierten Erweiterungen](https://w3.org/TR/webauthn/#extension-predef) , die in der Spezifikation beschrieben sind, unterstützt Microsoft Edge zurzeit nur die [Fido](https://w3.org/TR/webauthn/#extension-appid) -Kennung \ ( `webauthn_txAuthSimple` \).  
+*   Von den [vordefinierten Erweiterungen](https://w3.org/TR/webauthn/#extension-predef) , die in der Spezifikation beschrieben sind, unterstützt Microsoft Edge zurzeit nur die [Fido](https://w3.org/TR/webauthn/#extension-appid) -Kennung \( `webauthn_txAuthSimple` \).  
 
 *  Die `timeoutSeconds` Option wird derzeit nicht ausgewertet  
 

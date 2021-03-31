@@ -65,7 +65,7 @@ Zum Hinzufügen von Dateien zu Ihrem Überschreibungen-Ordner öffnen Sie das **
    Auswählen einer Datei im **Formatvorlagen** -Inspektor  
 :::image-end:::  
 
-Zeigen Sie im **Quellen** -Editor auf den Dateinamen der ausgewählten Datei, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie **für Außerkraftsetzungen speichern**aus.  
+Zeigen Sie im **Quellen** -Editor auf den Dateinamen der ausgewählten Datei, öffnen Sie das Kontextmenü \(Klicken Sie mit der rechten Maustaste auf \), und wählen Sie **für Außerkraftsetzungen speichern**aus.  
 
 :::image type="complex" source="../media/javascript-overrides-file-name.msft.png" alt-text="Fügen Sie im Quellen-Editor den Namen der Datei hinzu, die überschrieben werden soll." lightbox="../media/javascript-overrides-file-name.msft.png":::
    Fügen Sie im **Quellen** -Editor den Namen der Datei hinzu, die überschrieben werden soll.  
@@ -100,14 +100,14 @@ Die Datei wird im Ordner Overrides gespeichert.  Überprüfen Sie, ob devtools e
 
 :::row:::
    :::column span="":::
-      Zeigen Sie im Bereich " **Quellen** " im Abschnitt " **Seite** " auf eine beliebige Datei, öffnen Sie das Kontextmenü \ (Klicken Sie mit der rechten Maustaste auf \), und fügen Sie es zu Außerkraftsetzungen hinzu.  Auch die Dateien, die sich bereits im Ordner "Außerkraftsetzungen" befinden, haben einen lila Punkt auf dem Symbol.  
+      Zeigen Sie im Bereich " **Quellen** " im Abschnitt " **Seite** " auf eine beliebige Datei, öffnen Sie das Kontextmenü \(Klicken Sie mit der rechten Maustaste auf \), und fügen Sie es zu Außerkraftsetzungen hinzu.  Auch die Dateien, die sich bereits im Ordner "Außerkraftsetzungen" befinden, haben einen lila Punkt auf dem Symbol.  
       
       :::image type="complex" source="../media/javascript-overrides-safe-from-sources.msft.png" alt-text="Auswählen einer Datei aus dem Quellen Tool für Außerkraftsetzungen" lightbox="../media/javascript-overrides-safe-from-sources.msft.png":::
          Auswählen einer Datei aus dem **Quellen** Tool für Außerkraftsetzungen  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      Sie können aber auch im **Netzwerk** Tool auf eine beliebige Datei zeigen, das Kontextmenü öffnen \ (mit der rechten Maustaste auf \) klicken und es zu Außerkraftsetzungen hinzufügen.  Wenn Außerkraftsetzungen aktiviert sind, finden Sie Dateien, die sich auf Ihrem Computer und nicht auf der Live-Webseite befinden.  Wenn Außerkraftsetzungen aktiviert sind, suchen Sie im Tool **Netzwerk** nach einem Warnungssymbol neben dem Dateinamen.  
+      Sie können aber auch im **Netzwerk** Tool auf eine beliebige Datei zeigen, das Kontextmenü öffnen \(mit der rechten Maustaste auf \) klicken und es zu Außerkraftsetzungen hinzufügen.  Wenn Außerkraftsetzungen aktiviert sind, finden Sie Dateien, die sich auf Ihrem Computer und nicht auf der Live-Webseite befinden.  Wenn Außerkraftsetzungen aktiviert sind, suchen Sie im Tool **Netzwerk** nach einem Warnungssymbol neben dem Dateinamen.  
       
       :::image type="complex" source="../media/javascript-overrides-network.msft.png" alt-text="Auswählen einer Datei aus dem Netzwerktool für Außerkraftsetzungen" lightbox="../media/javascript-overrides-network.msft.png":::
          Auswählen einer Datei aus dem **Netzwerk** Tool für Außerkraftsetzungen  

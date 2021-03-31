@@ -20,14 +20,14 @@ ms.locfileid: "11234124"
 
 [!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
-Microsoft Edge bietet eine Leseansicht für eine optimierte, Buch ähnliche Leseerfahrung von Webseiten ohne Ablenkung von nicht miteinander verknüpften oder anderen sekundären Inhalten auf der Seite.  Die Leseansicht kann über die Schaltfläche " **Leseansicht** \ (Buchsymbol \)" auf der Adressleiste oder mit aktiviert oder deaktiviert werden `Ctrl` + `Shift` + `R` .  In der Leseansicht werden die folgenden Metadaten von einer Seite extrahiert:  
+Microsoft Edge bietet eine Leseansicht für eine optimierte, Buch ähnliche Leseerfahrung von Webseiten ohne Ablenkung von nicht miteinander verknüpften oder anderen sekundären Inhalten auf der Seite.  Die Leseansicht kann über die Schaltfläche " **Leseansicht** \(Buchsymbol \)" auf der Adressleiste oder mit aktiviert oder deaktiviert werden `Ctrl` + `Shift` + `R` .  In der Leseansicht werden die folgenden Metadaten von einer Seite extrahiert:  
 
 *   Title
 *   Autor
 *   Date
 *   Herausgeber
-*   Dominantes Bild \ (s \)
-*   Beschriftungen des dominanten Bilds \ (s \)
+*   Dominantes Bild \(s \)
+*   Beschriftungen des dominanten Bilds \(s \)
 *   Sekundäre Bilder
 *   Haupt Textinhalt der Seite
 *   Copyright
@@ -44,7 +44,7 @@ So stellen Sie sicher, dass die Leseansicht den Titel Ihres Artikels rendert:
 
 *   Einfügen eines `title` Elements in die Kopfzeile  
 *   Einfügen eines Meta-Tags `name="title"`  
-*   Vergleichen Sie den Titeltext in Ihrem Artikel Text mit der Inhaltszeichenfolge Ihres Meta-Tags.  Pipes \ ( `|` \) in der Inhaltszeichenfolge verhindern, dass die Leseransicht aktiv wird, versuchen Sie stattdessen, Bindestriche zu verwenden `-` .  
+*   Vergleichen Sie den Titeltext in Ihrem Artikel Text mit der Inhaltszeichenfolge Ihres Meta-Tags.  Pipes \( `|` \) in der Inhaltszeichenfolge verhindern, dass die Leseransicht aktiv wird, versuchen Sie stattdessen, Bindestriche zu verwenden `-` .  
 
 ### Autor  
 
@@ -92,7 +92,7 @@ Um sicherzustellen, dass der gesamte Textkörper Ihrer Seite in der Leseansicht 
 
 ### Copyright  
 
-Leseansicht extrahiert und zeigt Copyright Informationen an, die durch Metatags gekennzeichnet `name = "copyright"` sind, oder wenn keine Meta-Tag-Informationen vorhanden sind, ein Textknoten, der das Copyright-Symbol "\ ( `©` \)" enthält.  In der Leseansicht werden die Copyright Informationen am Ende des Haupttexts des Artikels angezeigt, wobei ein kleinerer Schriftgrad als der Hauptteil des Texts formatiert ist.  
+Leseansicht extrahiert und zeigt Copyright Informationen an, die durch Metatags gekennzeichnet `name = "copyright"` sind, oder wenn keine Meta-Tag-Informationen vorhanden sind, ein Textknoten, der das Copyright-Symbol "\( `©` \)" enthält.  In der Leseansicht werden die Copyright Informationen am Ende des Haupttexts des Artikels angezeigt, wobei ein kleinerer Schriftgrad als der Hauptteil des Texts formatiert ist.  
 
 ```html
 <meta name="copyright" content="Your copyright information">

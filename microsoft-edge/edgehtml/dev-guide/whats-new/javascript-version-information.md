@@ -20,12 +20,12 @@ ms.locfileid: "11233918"
 
 [!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
-Die JavaScript-Unterstützung variiert in Microsoft Edge, Microsoft Store-Apps und unterschiedlichen Dokumentmodi von Internet Explorer \ (IE \). Weitere Informationen zur Versionsverwaltung von IE-Dokumenten Codes finden Sie unter [Definieren der Kompatibilität von Dokumenten](/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85)).  
+Die JavaScript-Unterstützung variiert in Microsoft Edge, Microsoft Store-Apps und unterschiedlichen Dokumentmodi von Internet Explorer \(IE \). Weitere Informationen zur Versionsverwaltung von IE-Dokumenten Codes finden Sie unter [Definieren der Kompatibilität von Dokumenten](/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85)).  
 
 Die folgende Tabelle enthält eine Zusammenfassung der JavaScript-Unterstützung für Internet Explorer, Microsoft Edge und Microsoft Store-Apps.  
   
 > [!IMPORTANT]
-> Experimentelle Features \ (aktiviert von `about:flags` \) werden durch angezeigt `Exp` . In einigen Fällen variiert die Unterstützung von Store-Apps zwischen Windows 8 \ (V8 \) und Windows 10 \ (v10 \)-apps und Windows-Desktop \ (Win \) und Windows Phone \ (Telefon \), wie angegeben.  
+> Experimentelle Features \(aktiviert von `about:flags` \) werden durch angezeigt `Exp` . In einigen Fällen variiert die Unterstützung von Store-Apps zwischen Windows 8 \(V8 \) und Windows 10 \(v10 \)-apps und Windows-Desktop \(Win \) und Windows Phone \(Telefon \), wie angegeben.  
   
  | Language-Element | Macken, IE 6-Standards, IE 7-Standards | IE 8-Standards | IE 9-Standards | IE 10-Standards | IE 11-Standards | Microsoft Edge | Store-Apps |  
  |:--- |:--- |:--- |:--- |:--- |:--- |:--- |:--- |  

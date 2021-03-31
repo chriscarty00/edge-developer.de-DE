@@ -18,7 +18,7 @@ ms.locfileid: "11233944"
 ---
 # Progressive Web Apps (EdgeHTML) unter Windows  
 
-Mit [Progressive Web-Apps][MDNApps] \ (oder einfach PWAs \) müssen Sie nicht zwischen der Verwendung offener Webtechnologien für die plattformübergreifende Interoperabilität und dem Bereitstelleneiner systemeigenen App-ähnlichen Benutzeroberfläche für Ihr Gerät entscheiden.  Das liegt daran, dass PWAs nur Websites sind, die [schrittweise verbessert][AListApartUnderstandingProgressiveEnhancement] werden, um wie Native apps auf unterstützenden Plattformen zu funktionieren.  Die Eigenschaften einer PWA vereinen das Beste aus Web- und nativen Apps.  
+Mit [Progressive Web-Apps][MDNApps] \(oder einfach PWAs \) müssen Sie nicht zwischen der Verwendung offener Webtechnologien für die plattformübergreifende Interoperabilität und dem Bereitstelleneiner systemeigenen App-ähnlichen Benutzeroberfläche für Ihr Gerät entscheiden.  Das liegt daran, dass PWAs nur Websites sind, die [schrittweise verbessert][AListApartUnderstandingProgressiveEnhancement] werden, um wie Native apps auf unterstützenden Plattformen zu funktionieren.  Die Eigenschaften einer PWA vereinen das Beste aus Web- und nativen Apps.  
 
 :::row:::
     :::column:::
@@ -46,7 +46,7 @@ Mit [Progressive Web-Apps][MDNApps] \ (oder einfach PWAs \) müssen Sie nicht zw
     :::column:::
         ![Progressives Symbol][ImageIProgressive]
         ### [Progressive][MDNPwaAdvantagesProgressive]
-        Erfahrungs Skalen \ (nach oben oder unten \) mit Gerätefunktionen  
+        Erfahrungs Skalen \(nach oben oder unten \) mit Gerätefunktionen  
     :::column-end:::
     :::column:::
         ![Sicheres Symbol][ImageISecurity]
@@ -72,25 +72,25 @@ Durch das Erstellen oder Konvertieren Ihrer vorhandenen Website in eine PWA sind
 > [!NOTE]
 > Mit dem Wechsel zu Microsoft Edge (Chrom) von EdgeHTML sind die zugrunde liegenden Webplattformen, die von PWAs verwendet werden, nicht identisch.  Edge (Chrom)-PWAs werden im Browser installiert und ausgeführt.  Edge (EdgeHTML) PWAs ausführen als universelle Windows-Plattform (UWP)-Anwendungen und verwenden die ältere EdgeHTML-Webplattform.  Wenn Sie Windows 10-API-Zugriff für Ihre PWA benötigen, ist diese EdgeHTML-Dokumentation für Sie.  Wenn Sie über plattformübergreifende Unterstützung ohne Windows-spezifischen API-Zugriff verfügen, wenden Sie sich bitte an die [Microsoft Edge (Chrom) PWA-Dokumentation][PwaChromiumIndex].  
 
-Wenn Sie eine progressive Web-App erstellen, um Windows 10 zu nutzen, können Sie Ihre PWA über den [Microsoft Store][MicrosoftDeveloperStore]verteilen, die gesamte Windows 10-Installationsbasis mit 600 Millionen aktiven monatlichen Benutzern ist Ihre potenzielle App-Zielgruppe!  Anwendungen, die auf diese Weise entwickelt wurden, werden als [universelle Windows-Plattform][WindowsUWPGetStartedGuide] -apps ausgeführt und verfügen über Native wie Zugriff auf die WinRT-APIs.  Beachten Sie, dass die Webplattform, die Ihren Code wiedergibt, bei der Verwendung der WinRT-APIs EdgeHTML ist, damit Sie die Funktionserkennung verwenden können, bevor Sie Windows-spezifische APIs aufrufen, um sicherzustellen, dass Ihre PWA weiterhin plattformübergreifend ausgeführt werden kann, auf denen Microsoft Edge \ (Chromium \) PWAs verfügbar sind.  
+Wenn Sie eine progressive Web-App erstellen, um Windows 10 zu nutzen, können Sie Ihre PWA über den [Microsoft Store][MicrosoftDeveloperStore]verteilen, die gesamte Windows 10-Installationsbasis mit 600 Millionen aktiven monatlichen Benutzern ist Ihre potenzielle App-Zielgruppe!  Anwendungen, die auf diese Weise entwickelt wurden, werden als [universelle Windows-Plattform][WindowsUWPGetStartedGuide] -apps ausgeführt und verfügen über Native wie Zugriff auf die WinRT-APIs.  Beachten Sie, dass die Webplattform, die Ihren Code wiedergibt, bei der Verwendung der WinRT-APIs EdgeHTML ist, damit Sie die Funktionserkennung verwenden können, bevor Sie Windows-spezifische APIs aufrufen, um sicherzustellen, dass Ihre PWA weiterhin plattformübergreifend ausgeführt werden kann, auf denen Microsoft Edge \(Chromium \) PWAs verfügbar sind.  
 
-[Hier][PwaEdgehtmlGetStarted] erfahren Sie, wie Sie Ihre Web-App in eine PWA \ (EdgeHTML \) konvertieren, Sie unter Windows 10 testen und im Microsoft Store verteilen.  
+[Hier][PwaEdgehtmlGetStarted] erfahren Sie, wie Sie Ihre Web-App in eine PWA \(EdgeHTML \) konvertieren, Sie unter Windows 10 testen und im Microsoft Store verteilen.  
 
 ## Anforderungen  
 
 Damit Sie als PWA ausgeführt werden kann, erfordert ihre vom Server gehostete Web-App mindestens Folgendes:  
 
-*   [Https][WikiHttps].  Schützen Sie Ihre Benutzer, indem Sie eine sichere Verbindung für die Kommunikation zwischen Servern und apps bereitstellen.  Dienstmitarbeiter und andere PWA-Technologien funktionieren nur mit Webressourcen, die über eine sichere Verbindung bereitgestellt werden \ (oder `localhost` zu Debugging-Zwecken \).  
+*   [Https][WikiHttps].  Schützen Sie Ihre Benutzer, indem Sie eine sichere Verbindung für die Kommunikation zwischen Servern und apps bereitstellen.  Dienstmitarbeiter und andere PWA-Technologien funktionieren nur mit Webressourcen, die über eine sichere Verbindung bereitgestellt werden \(oder `localhost` zu Debugging-Zwecken \).  
   
 *   [Dienstmitarbeiter][MDNServiceWorkerApi].  Verwenden Sie Dienst Arbeitsthreads, um als Netzwerk Proxys zwischen Ihrem Server und der Client-App zu fungieren, um Offline-Unterstützung, Zwischenspeicherung von Ressourcen, Push-Benachrichtigungen, Synchronisierung von Hintergrunddaten und Optimierungen beim Laden von Seiten zu ermöglichen.  
 
-*   [Web App-Manifest][MDNWebAppManifest].  Stellen Sie eine JSON-basierte Metadatendatei bereit, die wichtige Informationen zu Ihrer Web-App beschreibt \ (wie Symbole, Sprache und URL-Einstiegspunkt \), damit Windows 10 und andere Hostplattformen ihren PWA-Benutzern eine installierbare, systemeigene App-ähnliche Benutzeroberfläche bereitstellen können.  Wenn Sie Ihre Website mit einem Web App-Manifest verknüpfen, kann Sie über den Bing-Indizierungsdienst [automatisch in den Microsoft Store aufgenommen][PwaEdgehtmlMicrosoftStoreImportingBing] werden.  
+*   [Web App-Manifest][MDNWebAppManifest].  Stellen Sie eine JSON-basierte Metadatendatei bereit, die wichtige Informationen zu Ihrer Web-App beschreibt \(wie Symbole, Sprache und URL-Einstiegspunkt \), damit Windows 10 und andere Hostplattformen ihren PWA-Benutzern eine installierbare, systemeigene App-ähnliche Benutzeroberfläche bereitstellen können.  Wenn Sie Ihre Website mit einem Web App-Manifest verknüpfen, kann Sie über den Bing-Indizierungsdienst [automatisch in den Microsoft Store aufgenommen][PwaEdgehtmlMicrosoftStoreImportingBing] werden.  
 
 Um eine tolle PWA zu sein, benötigt Ihre APP auch:  
 
-*   [Browserübergreifende Kompatibilität][MDNCrossBrowserTesting]  Stellen Sie sicher, dass Ihre PWA-Funktion in verschiedenen Browsern und Umgebungen [getestet][MicrosoftDeveloperEdgeToolsRemote] wird.  Unter Windows 10 sollten Sie sicherstellen, dass Sie Ihre APP sowohl im Microsoft Edge-Browser als auch in der vollständigen PWA-Umgebung testen: als installierte eigenständige Windows 10-App \ (powered by the EdgeHTML Engine \).  
+*   [Browserübergreifende Kompatibilität][MDNCrossBrowserTesting]  Stellen Sie sicher, dass Ihre PWA-Funktion in verschiedenen Browsern und Umgebungen [getestet][MicrosoftDeveloperEdgeToolsRemote] wird.  Unter Windows 10 sollten Sie sicherstellen, dass Sie Ihre APP sowohl im Microsoft Edge-Browser als auch in der vollständigen PWA-Umgebung testen: als installierte eigenständige Windows 10-App \(powered by the EdgeHTML Engine \).  
   
-*   [Ansprechenden Entwurf][WikiResponsiveWebDesign].  Verwenden Sie flüssige Layouts und flexible Bilder mit CSS- [Raster][MDNCssGridLayout] und/oder [Flexbox][MDNCssFlexibleBoxLayout], [medienabfragen][MDNMediaQueries]und [responsive Images[MDNResponsiveImages] , um Ihre UX an das Gerät Ihres Benutzers anzupassen.  Verwenden Sie die Geräte- [Emulations Tools][DevToolsGuideEmulation] Ihres Browsers, um lokal zu testen, oder richten Sie eine [Remote Debugsitzung][DevToolsProtocolClientsEdgeDevToolsPreview] ein, um direkt auf einem Zielgerät zu testen.  Unter Windows 10 können PWAs \ (EdgeHTML \) auch auf die [Formfaktoren zugeschnitten][WindowsUWPDesignDevicesIndex] werden, die über den Desktop, das Smartphone und das Tablet hinausgehen, einschließlich: [Xbox und TV][WindowsUWPDesignDevicesDesigningTv], [Surface Hub][MicrosoftDeveloperWindowsSurfaceHub]und [Windows Mixed Reality][MicrosoftDeveloperWindowsMixedReality] -Geräte.  
+*   [Ansprechenden Entwurf][WikiResponsiveWebDesign].  Verwenden Sie flüssige Layouts und flexible Bilder mit CSS- [Raster][MDNCssGridLayout] und/oder [Flexbox][MDNCssFlexibleBoxLayout], [medienabfragen][MDNMediaQueries]und [responsive Images[MDNResponsiveImages] , um Ihre UX an das Gerät Ihres Benutzers anzupassen.  Verwenden Sie die Geräte- [Emulations Tools][DevToolsGuideEmulation] Ihres Browsers, um lokal zu testen, oder richten Sie eine [Remote Debugsitzung][DevToolsProtocolClientsEdgeDevToolsPreview] ein, um direkt auf einem Zielgerät zu testen.  Unter Windows 10 können PWAs \(EdgeHTML \) auch auf die [Formfaktoren zugeschnitten][WindowsUWPDesignDevicesIndex] werden, die über den Desktop, das Smartphone und das Tablet hinausgehen, einschließlich: [Xbox und TV][WindowsUWPDesignDevicesDesigningTv], [Surface Hub][MicrosoftDeveloperWindowsSurfaceHub]und [Windows Mixed Reality][MicrosoftDeveloperWindowsMixedReality] -Geräte.  
   
 *   [Deep-Linking][WikiDeepLinking].  Leiten Sie jede Seite Ihrer Website an eine eindeutige URL weiter, damit vorhandene Benutzer Ihnen helfen können, ein noch größeres Publikum durch Social Media Sharing zu engagieren.  
 
@@ -101,7 +101,7 @@ Um Ihre Progressive Web-App an den [Microsoft Store][MicrosoftDeveloperStore]zu 
 *   Ein [Microsoft-Entwicklerkonto][WindowsUWPPublishDeveloperAccount]  
 *   Abgeschlossene [Schritte zum Veröffentlichen einer Windows-App][WindowsUWPPublishIndex]  
 
-In den nächsten Monaten werden vorhandene PWAs im Web, die [bestimmte Kriterien][PwaEdgehtmlMicrosoftStoreCriteriaAutomaticSubmission] erfüllen, automatisch von der Bing-Suchmaschine in den Microsoft Store indiziert \ (wo Entwickler diese direkt für Ihre Windows 10-Zielgruppe verwalten können).  
+In den nächsten Monaten werden vorhandene PWAs im Web, die [bestimmte Kriterien][PwaEdgehtmlMicrosoftStoreCriteriaAutomaticSubmission] erfüllen, automatisch von der Bing-Suchmaschine in den Microsoft Store indiziert \(wo Entwickler diese direkt für Ihre Windows 10-Zielgruppe verwalten können).  
 
 Weitere Informationen finden Sie [im Microsoft Store unter PWAs (EdgeHTML)][PwaEdgehtmlMicrosoftStore] .  
 
@@ -115,11 +115,11 @@ In EdgeHTML und Windows ist der aktuelle Status der auf Standards basierenden PW
 
 | Technologie | Zweck | Verfügbarkeit | Verwendungshinweise |  
 |:--- |:--- |:--- |:--- |  
-| [Webanwendungs Manifest][MDNWebAppManifest] | Stellt App-Metadaten für das Hostbetriebssystem bereit, um die Installation und die App Store-Heraufstufung zu ermöglichen.  Für PWAs im Microsoft Store erforderlich.  | [In der Entwicklung][MicrosoftDeveloperEdgePlatformStatusWebApplicationManifest] | Im Moment können Sie den [PWA-Generator][|::ref1::|] verwenden, um ein W3C-kompatibles JSON-Manifest zu generieren und Ihre APP für verschiedene Betriebssystemplattformen zu verpacken.  Für Windows übersetzt PWA Builder Ihr JSON-Manifest in das `.appxmanifest` von Windows 10-apps benötigte Format \ (XML \).  |  
-| [FETCH-API][MDNFetchApi] | Bietet asynchrone Netzwerke \ (Anforderungen, Antworten \) für Seitenressourcen |[EdgeHTML 14 +][DevGuideWhatsNewEdgeHtml14] /Build 14393 + | Die Syntax der [Service Worker-API][MDNServiceWorkerApi] basiert auf FETCH-basierten Netzwerk-APIs.  Sie können die [Fetch-API][MDNFetchApi] auch allgemeiner als eine moderne Alternative zu verwenden `XMLHttpRequest` .  |  
-| [Service Worker-API][MDNServiceWorkerApi] | Bietet ein offline fähiges Web-App-Modell/Netzwerkproxy, in dem ereignisgesteuerte Skripts unabhängig von Webseiten ausgeführt werden.  | [EdgeHTML17][DevGuideWhatsNewEdgeHtml17] /Build 17133 + | Experimentelle Unterstützung \ (hinter `Enable Service Workers` Flag \) ausgeliefert in EdgeHTML 16.  Standardmäßig aktiviert in EdgeHTML 17 + Builds.  |  
+| [Webanwendungs Manifest][MDNWebAppManifest] | Stellt App-Metadaten für das Hostbetriebssystem bereit, um die Installation und die App Store-Heraufstufung zu ermöglichen.  Für PWAs im Microsoft Store erforderlich.  | [In der Entwicklung][MicrosoftDeveloperEdgePlatformStatusWebApplicationManifest] | Im Moment können Sie den [PWA-Generator][|::ref1::|] verwenden, um ein W3C-kompatibles JSON-Manifest zu generieren und Ihre APP für verschiedene Betriebssystemplattformen zu verpacken.  Für Windows übersetzt PWA Builder Ihr JSON-Manifest in das `.appxmanifest` von Windows 10-apps benötigte Format \(XML \).  |  
+| [FETCH-API][MDNFetchApi] | Bietet asynchrone Netzwerke \(Anforderungen, Antworten \) für Seitenressourcen |[EdgeHTML 14 +][DevGuideWhatsNewEdgeHtml14] /Build 14393 + | Die Syntax der [Service Worker-API][MDNServiceWorkerApi] basiert auf FETCH-basierten Netzwerk-APIs.  Sie können die [Fetch-API][MDNFetchApi] auch allgemeiner als eine moderne Alternative zu verwenden `XMLHttpRequest` .  |  
+| [Service Worker-API][MDNServiceWorkerApi] | Bietet ein offline fähiges Web-App-Modell/Netzwerkproxy, in dem ereignisgesteuerte Skripts unabhängig von Webseiten ausgeführt werden.  | [EdgeHTML17][DevGuideWhatsNewEdgeHtml17] /Build 17133 + | Experimentelle Unterstützung \(hinter `Enable Service Workers` Flag \) ausgeliefert in EdgeHTML 16.  Standardmäßig aktiviert in EdgeHTML 17 + Builds.  |  
 | [Cache-API][MDNCache] | Bietet einen Speichermechanismus für Netzwerkanforderung/-Antwort-Paare | [EdgeHTML17][DevGuideWhatsNewEdgeHtml17] /Build 17133 + | Siehe oben in der [Service Worker-API-][MDNServiceWorkerApi] Hinweis.  |  
-| [Push-API][MDNPushApi] | Ermöglicht einem Dienstmitarbeiter das Abonnieren von Push-Benachrichtigungen |[EdgeHTML17][DevGuideWhatsNewEdgeHtml17] /Build 17133 +| Siehe oben in der [Service Worker-API-][MDNServiceWorkerApi] Hinweis.  Für Windows 10-apps \ (einschließlich PWAs \) ist der [Windows-Push-Benachrichtigungsdienst \ (WNS \)][WindowsUWPControlsPatternTilesNotificationsWns] erforderlich, um Push-Benachrichtigungen zu senden, die die W3C [-Push-API][MDNPushApi]unterstützen.  |  
+| [Push-API][MDNPushApi] | Ermöglicht einem Dienstmitarbeiter das Abonnieren von Push-Benachrichtigungen |[EdgeHTML17][DevGuideWhatsNewEdgeHtml17] /Build 17133 +| Siehe oben in der [Service Worker-API-][MDNServiceWorkerApi] Hinweis.  Für Windows 10-apps \(einschließlich PWAs \) ist der [Windows-Push-Benachrichtigungsdienst \(WNS \)][WindowsUWPControlsPatternTilesNotificationsWns] erforderlich, um Push-Benachrichtigungen zu senden, die die W3C [-Push-API][MDNPushApi]unterstützen.  |  
 | [Benachrichtigungs-API][MDNNotificationsApi] | Ermöglicht einem Dienstmitarbeiter, dem Benutzer eine Systembenachrichtigung bei der Push-Nachricht anzuzeigen | [EdgeHTML 14 +][DevGuideWhatsNewEdgeHtml14] /Build 14393 + | Web-Benachrichtigungen in EdgeHTML sind vollständig in das Windows 10- [Wartungs Center][MicrosoftSupportWindowsNotificationSettings]integriert, in dem Benutzer App-Benachrichtigungen verwalten und [ruhige Stunden][MicrosoftSupportWindowsFocusAssist]einstellen können.  |  
 | [Hintergrund-Synchronisierungs-API][MDNSyncManager] | Stellt eine API bereit, mit der ein Dienstmitarbeiter benachrichtigt wird, dass der Benutzer wieder online ist, und regelmäßige Ereignisse zum Synchronisieren von lokalen Daten mit dem Server plant | [In der Entwicklung][MicrosoftDeveloperEdgePlatformStatusBackgroundSync] | Im Moment können Sie die systemeigene [WinRT-BackgroundTask-API][WindowsUWPLaunchResumeBackgroundTasks] verwenden, um Hintergrundaufgaben für Ihre PWA zu implementieren, wenn Sie als Windows 10-app ausgeführt wird.  |  
 
@@ -127,8 +127,8 @@ Hier ist der aktuelle Status des Microsoft Store-Supports für PWAs unter Window
 
 | Store-Übermittlungsmethode | Status | Details |  
 |:--- |:--- |:--- |  
-| Handbuch \ (Entwickler initiiert \) | Verfügbar | Schauen Sie sich [PWAs (EdgeHTML) im Microsoft Store][PwaEdgehtmlMicrosoftStore] an, um zu beginnen.  |  
-| Automatisch \ (automatisch indiziert mit Bing \) | Bald verfügbar | Wir untersuchen [derzeit][WindowsBlogsWelcomingPWAsEdgeWindows] den PWA-Onboarding-Prozess mit einer begrenzten Teilmenge von App-Partnern.  In den nächsten Monaten begrüßt Microsoft PWAs über das Mainstream-Web zum Microsoft Store.  Lesen Sie den [automatischen PWA-Import mit Bing][PwaEdgehtmlMicrosoftStoreCriteriaAutomaticSubmission] , um mehr über die Microsoft Store-Anforderungen für automatisch generierte PWA-Auflistungen zu erfahren.  |  
+| Handbuch \(Entwickler initiiert \) | Verfügbar | Schauen Sie sich [PWAs (EdgeHTML) im Microsoft Store][PwaEdgehtmlMicrosoftStore] an, um zu beginnen.  |  
+| Automatisch \(automatisch indiziert mit Bing \) | Bald verfügbar | Wir untersuchen [derzeit][WindowsBlogsWelcomingPWAsEdgeWindows] den PWA-Onboarding-Prozess mit einer begrenzten Teilmenge von App-Partnern.  In den nächsten Monaten begrüßt Microsoft PWAs über das Mainstream-Web zum Microsoft Store.  Lesen Sie den [automatischen PWA-Import mit Bing][PwaEdgehtmlMicrosoftStoreCriteriaAutomaticSubmission] , um mehr über die Microsoft Store-Anforderungen für automatisch generierte PWA-Auflistungen zu erfahren.  |  
 
 <!-- image links -->  
 
@@ -154,7 +154,7 @@ Hier ist der aktuelle Status des Microsoft Store-Supports für PWAs unter Window
 [PwaEdgehtmlMicrosoftStoreImportingBing]: ./microsoft-store.md#automatic-pwa-importing-with-bing "Automatischer PWA-Import mit Bing-Progressive Web Apps (EdgeHTML) im Microsoft Store | Microsoft docs"  
 
 
-[WindowsUWPControlsPatternTilesNotificationsWns]: /windows/uwp/controls-and-patterns/tiles-and-notifications-windows-push-notification-services--wns--overview.md "Windows-Push-Benachrichtigungsdienste \ (WNS \) – Übersicht"  
+[WindowsUWPControlsPatternTilesNotificationsWns]: /windows/uwp/controls-and-patterns/tiles-and-notifications-windows-push-notification-services--wns--overview.md "Windows-Push-Benachrichtigungsdienste \(WNS \) – Übersicht"  
 [WindowsUWPDesignDevicesDesigningTv]: /windows/uwp/design/devices/designing-for-tv.md "Entwerfen für Xbox und Fernsehgeräte"  
 [WindowsUWPDesignDevicesIndex]: /windows/uwp/design/devices/index.md "Überlegungen zur Benutzeroberfläche für UWP-Geräte"  
 [WindowsUWPGetStartedGuide]: /windows/uwp/get-started/universal-application-platform-guide.md "Was ist eine APP für die universelle Windows-Plattform (UWP)?"  

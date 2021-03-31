@@ -52,7 +52,7 @@ Einstellungen pro Website überschreiben die globale Einstellung.  Wenn ein Benu
 
 Hier erfahren Sie, wie Sie eine gute Benutzerfreundlichkeit mit auf Ihrer Website gehosteten Medien gewährleisten:  
 
-*   Davon ausgehen, dass für jede Verwendung eines Medienelements Wil eine Benutzergeste erforderlich ist, um die Wiedergabe zu starten \ (da Benutzer die automatische Wiedergabe zu einem beliebigen Zeitpunkt blockieren können \) und entsprechend planen.  Global-und pro-Site-AutoPlay-Richtlinien gelten für alle `<audio>` und `<video>` Elemente, unabhängig davon, wie Sie auf Ihrer Website verwendet werden.  
+*   Davon ausgehen, dass für jede Verwendung eines Medienelements Wil eine Benutzergeste erforderlich ist, um die Wiedergabe zu starten \(da Benutzer die automatische Wiedergabe zu einem beliebigen Zeitpunkt blockieren können \) und entsprechend planen.  Global-und pro-Site-AutoPlay-Richtlinien gelten für alle `<audio>` und `<video>` Elemente, unabhängig davon, wie Sie auf Ihrer Website verwendet werden.  
 
 *   Stellen Sie sicher, dass mediensteuerelemente immer auf dem Website Medium und dem Anzeigeninhalt vorhanden sind.  Dadurch können Benutzer die Wiedergabe neu starten, wenn die automatische Wiedergabe auf der Seite blockiert ist.  
 

@@ -30,7 +30,7 @@ Die [Webauthentifizierungs-API-Spezifikation][GithubW3cWebauthn]eignet sich herv
     
 1.  Registrieren Sie sich bei der Website.  
 1.  [Öffnen Sie devtools][DevtoolsGuideChromiumOpen].  
-1.  Um das **webauthn** -Tool zu öffnen, wählen Sie das Symbol **anpassen und Steuern devtools** \ ( `...` \) > **Weitere Tools**  >  **webauthn**aus.  
+1.  Um das **webauthn** -Tool zu öffnen, wählen Sie das Symbol **anpassen und Steuern devtools** \( `...` \) > **Weitere Tools**  >  **webauthn**aus.  
     
     :::image type="complex" source="../media/webauthn-webauthn-tab.msft.png" alt-text="Webauthn-Tool" lightbox="../media/webauthn-webauthn-tab.msft.png":::
        **Webauthn** -Tool  
@@ -49,8 +49,8 @@ Die [Webauthentifizierungs-API-Spezifikation][GithubW3cWebauthn]eignet sich herv
     |:--- |:--- |:--- |  
     | `Protocol` | [ctap2][FidoallianceSpecsV20Id20180227ClientToAuthenticatorProtocolHtml] oder [u2f][FidoallianceSpecsU2fV12Ps20170411OverviewHtml] | Das Protokoll, das der virtuelle Authentifikator für die Codierung und Decodierung verwendet |  
     | `Transport` |   `usb`, `nfc` , `ble` oder `internal` | Der virtuelle Authentifikator simuliert den ausgewählten Transport für die Kommunikation mit Clients, um eine Assertion für bestimmte Anmeldeinformationen zu erhalten.  Weitere Informationen finden Sie unter [Authentifikator-Transport-Enumeration][GithubW3cWebauthnEnumTransport] . |  
-    |  `Supports resident keys` | Aktivieren von \ (oder Off \) mithilfe des Kontrollkästchens | Aktivieren Sie diese Option, wenn Ihre Web-App auf Resident Keys (auch als "clientseitig erkennbare Anmeldeinformationen" bezeichnet) basiert.  Wenn Sie weitere Informationen erhalten möchten, navigieren Sie zur [Anforderungs Enumeration für residente Schlüssel][GithubW3cWebauthnEnumResidentkeyrequirement]. |  
-    | `Supports user verification` | Aktivieren von \ (oder Off \) mithilfe des Kontrollkästchens | Aktivieren Sie diese Option, wenn Ihre Web-App die lokale Autorisierung mithilfe von Gesten Modalitäten wie Touch plus PIN-Code, Kennworteingabe oder biometrische Erkennung anvertraut.  Weitere Informationen finden Sie unter [Benutzerüberprüfung][GithubW3cWebauthnEnumUserverification] . |  
+    |  `Supports resident keys` | Aktivieren von \(oder Off \) mithilfe des Kontrollkästchens | Aktivieren Sie diese Option, wenn Ihre Web-App auf Resident Keys (auch als "clientseitig erkennbare Anmeldeinformationen" bezeichnet) basiert.  Wenn Sie weitere Informationen erhalten möchten, navigieren Sie zur [Anforderungs Enumeration für residente Schlüssel][GithubW3cWebauthnEnumResidentkeyrequirement]. |  
+    | `Supports user verification` | Aktivieren von \(oder Off \) mithilfe des Kontrollkästchens | Aktivieren Sie diese Option, wenn Ihre Web-App die lokale Autorisierung mithilfe von Gesten Modalitäten wie Touch plus PIN-Code, Kennworteingabe oder biometrische Erkennung anvertraut.  Weitere Informationen finden Sie unter [Benutzerüberprüfung][GithubW3cWebauthnEnumUserverification] . |  
     
 1.  Klicken Sie auf die Schaltfläche **Hinzufügen**.  
 1.  Ein neuer Abschnitt Ihres neu erstellten Authentifikators wird angezeigt.  

@@ -109,7 +109,7 @@ Servicemitarbeiter sind eine grundlegende Technologie in der zukünftigen Webpla
 
 Der **Bereich "Service Workers"** im **Bereich "Anwendung"** ist der wichtigste Ort in DevTools zum Überprüfen und Debuggen von Servicemitarbeitern.  
 
-:::image type="complex" source="../media/service-workers-pane.msft.png" alt-text="Der Bereich "Service Workers"" lightbox="../media/service-workers-pane.msft.png":::
+:::image type="complex" source="../media/service-workers-pane.msft.png" alt-text="Der Bereich Service Workers" lightbox="../media/service-workers-pane.msft.png":::
    Der **Bereich "Service Workers"**  
 :::image-end:::  
 

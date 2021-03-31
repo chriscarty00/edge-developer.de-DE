@@ -195,7 +195,7 @@ Während Sie in einer Codezeile **** angehalten werden, verwenden Sie den Bereic
 
 Wählen Sie einen Eintrag aus, um zur Codezeile zu springen, in der diese Funktion aufgerufen wurde.  Das blaue Pfeilsymbol stellt dar, welche Funktion DevTools derzeit hervorhebt.  
 
-:::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty.msft.png" alt-text="Der Bereich "Anrufliste"" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty.msft.png":::
+:::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty.msft.png" alt-text="Der Bereich Anrufliste" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty.msft.png":::
    Der **Bereich "Anrufliste"**  
 :::image-end:::  
 
@@ -257,7 +257,7 @@ Führen Sie die folgenden Aktionen aus, um ein Skript **im** Bereich Aufrufliste
 1.  Zeigen Sie auf eine Funktion aus dem Skript, und öffnen Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste\).  
 1.  Wählen **Sie Als Bibliothekscode markieren aus.**  
     
-    :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png" alt-text="Markieren eines Skripts als Bibliothekscode aus dem Bereich "Aufrufliste"" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png":::
+    :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png" alt-text="Markieren eines Skripts als Bibliothekscode aus dem Bereich Aufrufliste" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png":::
        Markieren eines Skripts **als Bibliothekscode** aus dem **Bereich "Aufrufliste"**  
     :::image-end:::  
     
@@ -285,7 +285,7 @@ Weitere Informationen finden Sie unter [Ausführen von Codeausschnitten von beli
 
 Verwenden Sie den **Bereich "Watch",** um die Werte benutzerdefinierter Ausdrücke zu beobachten.  Sie können einen beliebigen gültigen JavaScript-Ausdruck ansehen.  
 
-:::image type="complex" source="../media/javascript-sources-get-started-js-watch.msft.png" alt-text="Der Bereich "Watch"" lightbox="../media/javascript-sources-get-started-js-watch.msft.png":::
+:::image type="complex" source="../media/javascript-sources-get-started-js-watch.msft.png" alt-text="Der Bereich Watch" lightbox="../media/javascript-sources-get-started-js-watch.msft.png":::
    Der **Bereich "Watch"**  
 :::image-end:::  
 

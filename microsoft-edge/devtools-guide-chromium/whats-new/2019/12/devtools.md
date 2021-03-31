@@ -308,7 +308,7 @@ Das [Coverage-Tool][DevToolsCoverageIndex] verfügt über ein neues Dropdownmen�
 > [!CAUTION]
 > Je nachdem, ob Sie pro Funktion oder **** pro Blockmodus verwenden, können Sie große Unterschiede bei der Codeabdeckung in **HTML-Dateien** feststellen.  Bei Verwendung **pro Funktionsmodus** werden Inlineskripts in HTML-Dateien als Funktionen behandelt.  Wenn das Skript überhaupt ausgeführt wird, markiert DevTools das gesamte Skript als verwendeten Code.  Nur wenn das Skript überhaupt nicht ausgeführt wird, markieren DevTools das Skript als nicht verwendeten Code.  
 
-:::image type="complex" source="../../images/2019/12/modes.msft.png" alt-text="Dropdownmenü "Abdeckungsmodus"" lightbox="../../images/2019/12/modes.msft.png":::
+:::image type="complex" source="../../images/2019/12/modes.msft.png" alt-text="Dropdownmenü Abdeckungsmodus" lightbox="../../images/2019/12/modes.msft.png":::
    Dropdownmenü "Abdeckungsmodus"  
 :::image-end:::  
 

@@ -72,7 +72,7 @@ Erstellen Sie innerhalb des `color-changer` Ordners eine Datei mit dem Namen `ma
 | [Autor][MDNManifestjsonAuthor] | Der Autor der Erweiterung.  |  
 | [version][MDNManifestjsonVersion] | Die Versionsnummer der Erweiterung.  |  
 | [description][MDNManifestjsonDescription] | Die Beschreibung der Erweiterung, die im Abschnitt "Info" des Menüs "Erweiterung" in Microsoft Edge angezeigt wird.  |  
-| [Berechtigungen][MDNManifestjsonPermissions] | Ein Array von Zeichenfolgen, die Berechtigungen für die Erweiterung anfordern.  Für Ihre Erweiterung fordern Sie Berechtigungen an, um die besuchten Websites anzuzeigen \ ("Registerkarten" \), und um den Inhalt der URLs zu aktualisieren, die " `*://docs.microsoft.com/*` " entsprechen.  |  
+| [Berechtigungen][MDNManifestjsonPermissions] | Ein Array von Zeichenfolgen, die Berechtigungen für die Erweiterung anfordern.  Für Ihre Erweiterung fordern Sie Berechtigungen an, um die besuchten Websites anzuzeigen \("Registerkarten" \), und um den Inhalt der URLs zu aktualisieren, die " `*://docs.microsoft.com/*` " entsprechen.  |  
 | [browser_action][MDNManifestjsonBrowserAction] | Enthält die Informationen für ein Symbol. Das Symbol befindet sich auf der Microsoft Edge-Symbolleiste rechts neben der Adressleiste.  |  
 
 #### browser_action Schlüsseldefinitionen  
@@ -239,7 +239,7 @@ if (url.indexOf("//docs.microsoft.com") === -1) {
 }
 ```  
 
-Dieses Skript ruft die URL der aktuellen Seite ab `document.location.href` und überprüft, ob sich die aktuelle Seite in der [docs.Microsoft.com][MicrosoftDocs] -Domäne befindet.  Wenn sich die Seite nicht in der [docs.Microsoft.com][MicrosoftDocs] -Domäne befindet \ (beispielsweise  [https://www.bing.com/][|::ref1::|] \), werden die Pfade zu den inaktiven Symbolen \ (abgeblendete Symbole \) mithilfe von [Runtime. SendMessage ()][MDNApiRuntimeSendmessage]an das Hintergrundskript gesendet.  
+Dieses Skript ruft die URL der aktuellen Seite ab `document.location.href` und überprüft, ob sich die aktuelle Seite in der [docs.Microsoft.com][MicrosoftDocs] -Domäne befindet.  Wenn sich die Seite nicht in der [docs.Microsoft.com][MicrosoftDocs] -Domäne befindet \(beispielsweise  [https://www.bing.com/][|::ref1::|] \), werden die Pfade zu den inaktiven Symbolen \(abgeblendete Symbole \) mithilfe von [Runtime. SendMessage ()][MDNApiRuntimeSendmessage]an das Hintergrundskript gesendet.  
 
 Sie müssen die [manifest.jsauf][GithubMicrosoftEdgeExtensionsDemosColorChangerManifestjson] Datei aktualisieren, um den folgenden `content_scripts` Schlüssel einzubeziehen.  
 
@@ -263,7 +263,7 @@ Sie müssen die [manifest.jsauf][GithubMicrosoftEdgeExtensionsDemosColorChangerM
 
 | Schlüssel | Details |  
 |:--- |:---- |  
-| `matches` \ (erforderlich \) | Das URL-Muster, das vor dem Laden des Inhalts Skripts übereinstimmen soll. |  
+| `matches` \(erforderlich \) | Das URL-Muster, das vor dem Laden des Inhalts Skripts übereinstimmen soll. |  
 | `js` | Das Skript, das auf übereinstimmende URLs geladen werden soll. |  
 | `run_at` | Gibt an, wo die JavaScript-Dateien aus dem `js` Schlüssel eingefügt werden. |  
 
@@ -290,7 +290,7 @@ browser.runtime.onMessage.addListener(
 
 Die [Runtime. onMessage][MDNApiRuntimeOnmessage] -Methode wartet auf [Runtime. SendMessage ()][MDNApiRuntimeSendmessage] aus dem Inhalts Skript.  Wenn die Domäne der Seite nicht [docs.Microsoft.com][MicrosoftDocs]ist, legt die [Browser-Methode. SetIcon ()][MDNApiBrowseractionSeticon] -Methode die Symbolpfade auf die inaktiven Bilder fest.  
 
-Das Skript deaktiviert auch die Browser Aktion \ (BrowserAction[. Disable][MDApiBrowseractionDisable]\), damit Benutzer nicht in der Lage sind, auf die Browser Aktion außerhalb einer [docs.Microsoft.com][MicrosoftDocs] -Seite zu klicken.  
+Das Skript deaktiviert auch die Browser Aktion \(BrowserAction[. Disable][MDApiBrowseractionDisable]\), damit Benutzer nicht in der Lage sind, auf die Browser Aktion außerhalb einer [docs.Microsoft.com][MicrosoftDocs] -Seite zu klicken.  
 
 Sie müssen das Hintergrundskript zur Datei [manifest.js][GithubMicrosoftEdgeExtensionsDemosColorChangerManifestjson] hinzufügen.  Fügen Sie dem `background` Manifest den folgenden Schlüssel hinzu.  
 
@@ -314,7 +314,7 @@ Sie müssen das Hintergrundskript zur Datei [manifest.js][GithubMicrosoftEdgeExt
 | `scripts` | Der Pfad zu einer JavaScript-Datei. |  
 | `persistent` (erforderlich) | Dieser muss auf oder eingestellt `true` sein `false` .  Wenn Sie auf gesetzt `true` ist, wird das Hintergrundskript geladen und für den gesamten Browsing-Abschnitt beibehalten.  Wenn Sie auf gesetzt `false` ist, wird das Hintergrundskript mit einer Verzögerung geladen und für die Browsersitzung beibehalten. |  
 
-Laden Sie Ihre Erweiterung erneut, und testen Sie Sie erneut.  So laden Sie Ihre Erweiterung erneut: Klicken Sie auf die **Optionen für Einstellungen** und mehr in Microsoft Edge, klicken Sie auf **Erweiterungen**, klicken Sie auf Ihre Durchwahl \ (**Farbwechsler**\), und klicken Sie auf **Erweiterung erneut laden**.  
+Laden Sie Ihre Erweiterung erneut, und testen Sie Sie erneut.  So laden Sie Ihre Erweiterung erneut: Klicken Sie auf die **Optionen für Einstellungen** und mehr in Microsoft Edge, klicken Sie auf **Erweiterungen**, klicken Sie auf Ihre Durchwahl \(**Farbwechsler**\), und klicken Sie auf **Erweiterung erneut laden**.  
 
 Öffnen Sie nun eine neue Registerkarte, oder aktualisieren Sie eine vorhandene Registerkarte, bei der es sich nicht um eine [docs.Microsoft.com][MicrosoftDocs] -Seite handelt.  Sie sollten das Symbol inaktiv sehen und nicht auf die Browser Aktion klicken können.  
 

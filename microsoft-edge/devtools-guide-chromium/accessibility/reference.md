@@ -126,7 +126,7 @@ Die [Barrierefreiheitsstruktur][MDNAccessibilityTree] ist eine Teilmenge der DOM
 
 Überprüfen Sie die Position eines Elements in der Barrierefreiheitsstruktur im [Bereich Barrierefreiheit.](#the-accessibility-panel)  
 
-:::image type="complex" source="../media/accessibility-elements-accessibility-tree.msft.png" alt-text="Abschnitt "Barrierefreiheitsstruktur"" lightbox="../media/accessibility-elements-accessibility-tree.msft.png":::
+:::image type="complex" source="../media/accessibility-elements-accessibility-tree.msft.png" alt-text="Abschnitt Barrierefreiheitsstruktur" lightbox="../media/accessibility-elements-accessibility-tree.msft.png":::
    Abschnitt **"Barrierefreiheitsstruktur"**  
 :::image-end:::  
 
@@ -136,7 +136,7 @@ ARIA-Attribute stellen sicher, dass die Bildschirmlesegeräte über alle Informa
 
 Zeigen Sie die ARIA-Attribute eines Elements im Bereich [Barrierefreiheit](#the-accessibility-panel) an.  
 
-:::image type="complex" source="../media/accessibility-elements-accessibility-aria-attributes.msft.png" alt-text="Der Abschnitt "ARIA Attributes"" lightbox="../media/accessibility-elements-accessibility-aria-attributes.msft.png":::
+:::image type="complex" source="../media/accessibility-elements-accessibility-aria-attributes.msft.png" alt-text="Der Abschnitt ARIA Attributes" lightbox="../media/accessibility-elements-accessibility-aria-attributes.msft.png":::
    Der **Abschnitt "ARIA Attributes"**  
 :::image-end:::  
 

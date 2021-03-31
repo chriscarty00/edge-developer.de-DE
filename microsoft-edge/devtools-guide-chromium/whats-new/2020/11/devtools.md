@@ -126,7 +126,7 @@ Zeigen Sie mit dem neuen Link **Netzwerkanforderungen** alle Routinginformatione
 1.  Navigieren Sie zu **Anwendung** > **Service Workers**.  
 1.  Wählen Sie **Netzwerkanforderungen** aus.  
     
-    :::image type="complex" source="../../media/2020/11/service-worker-application-network-requests.msft.png" alt-text="Öffnen des Netzwerk-Tools im Bereich "Service Workers"" lightbox="../../media/2020/11/service-worker-application-network-requests.msft.png":::
+    :::image type="complex" source="../../media/2020/11/service-worker-application-network-requests.msft.png" alt-text="Öffnen des Netzwerk-Tools im Bereich Service Workers" lightbox="../../media/2020/11/service-worker-application-network-requests.msft.png":::
        Öffnen des **Netzwerk**-Tools im Bereich **Service Workers**
     :::image-end:::  
     
@@ -151,7 +151,7 @@ Debuggen Sie Netzwerkanforderungen, die über Service Worker ausgeführt werden.
 *   Die Laufzeit eines `fetch`-Ereignishandlers.  
 *   Die Laufzeit aller `fetch`-Ereignisse zum Laden eines Clients.  
     
-:::image type="complex" source="../../media/2020/11/network-timing-service-worker.msft.png" alt-text="Bereich "Timing"" lightbox="../../media/2020/11/network-timing-service-worker.msft.png":::
+:::image type="complex" source="../../media/2020/11/network-timing-service-worker.msft.png" alt-text="Bereich Timing" lightbox="../../media/2020/11/network-timing-service-worker.msft.png":::
    Bereich **Timing**  
 :::image-end:::  
 

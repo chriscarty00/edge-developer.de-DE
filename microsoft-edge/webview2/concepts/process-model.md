@@ -39,7 +39,7 @@ Sie können in diesen Browser-und Renderer-Prozessen mit dem `ProcessFailed` Ere
 
 Sie können zugeordnete Browser-und Renderer-Prozesse mithilfe der `Close` Methode von sicher Herunterfahren `CoreWebView2Controller` .  
 
-Um das Fenster des Task-Managers des Browsers über das **devtools** -Fenster einer WebView2-Instanz zu öffnen, können Sie `Shift` + `Escape` auf der Titelleiste des devtools-Fensters auswählen oder darauf zeigen, das Kontextmenü öffnen \ (Klicken Sie mit der rechten Maustaste auf \), und wählen Sie aus `Browser task manager` .  Alle Prozesse, die dem Browserprozess ihrer WebView2 zugeordnet sind, werden einschließlich der zugehörigen Zwecke angezeigt.  
+Um das Fenster des Task-Managers des Browsers über das **devtools** -Fenster einer WebView2-Instanz zu öffnen, können Sie `Shift` + `Escape` auf der Titelleiste des devtools-Fensters auswählen oder darauf zeigen, das Kontextmenü öffnen \(Klicken Sie mit der rechten Maustaste auf \), und wählen Sie aus `Browser task manager` .  Alle Prozesse, die dem Browserprozess ihrer WebView2 zugeordnet sind, werden einschließlich der zugehörigen Zwecke angezeigt.  
 
 <!-- links -->  
 

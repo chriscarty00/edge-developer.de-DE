@@ -268,7 +268,7 @@ Microsoft Edge bietet eine ansprechende und anwenderorientierte "Neuer Tab"-Seit
 
 Um die Ladezeiten der "Neuer Tab"-Seite zu verbessern, kann die Microsoft "Neuer Tab"-Seite im Hintergrund geladen werden, um sie zu beschleunigen. Die geladenen Inhalte können Cookies enthalten, falls Sie Cookies zulassen. Um das Laden der Microsoft "Neuer Tab"-Seite im Hintergrund zu deaktivieren, navigieren Sie zu `edge://settings/newTabPage` und deaktivieren Sie die Einstellung ** für das Vorladen der "Neuer Tab"-Seite, um die Erfahrung zu beschleunigen**. 
 
-:::image type="complex" source="./media/n-t-p1.png" alt-text=""Neuer Tab"-Seite" lightbox="./media/n-t-p1.png":::
+:::image type="complex" source="./media/n-t-p1.png" alt-text="Neuer Tab-Seite" lightbox="./media/n-t-p1.png":::
    "Neuer Tab"-Seite  
 :::image-end:::  
 
@@ -449,7 +449,7 @@ Um Tippfehler in der URL in der Adressleiste zu beheben, die zu einem Websitefeh
 
 Wenn Sie sich mit einem Microsoft-Konto bei Microsoft Edge anmelden, können Sie die Browserdaten über alle Ihre angemeldeten Versionen von Microsoft Edge hinweg synchronisieren.  Sie können Ihren Browserverlauf, Favoriten, Einstellungen, Formular Füll Daten \(Adressen und mehr\), Kennwörter, Erweiterungen geöffnete Registerkarten und Sammlungen synchronisieren.  Sie müssen das Aktivieren der Synchronisierung in Microsoft Edge zulassen, und die zu synchronisierenden Datentypen können einzeln aktiviert oder deaktiviert werden.  Zu den "Favoriten" zählen alle Tabs, die Sie in der älteren Version von Microsoft Edge für später gespeichert haben. Diese werden zusammen mit den restlichen Favoriten synchronisiert.  Gelöschte oder geänderte Favoriten oder andere Daten aus einer Microsoft Edge-Version, bei der Sie angemeldet sind, werden mit allen anderen Versionen von Microsoft Edge synchronisiert, in denen die Synchronisierung aktiviert ist und bei denen Sie angemeldet sind.  Um die Konfigurationen für die Synchronisierung zu verwalten, wechseln Sie zu `edge://settings/profiles/sync`.  Ihre Synchronisierungseinstellungen werden u. U. von Ihrer Organisation verwaltet.
 
-:::image type="complex" source="./media/sync.png" alt-text="Bild der Synchronisierungseinstellung auf "aktiviert" festgelegt" lightbox="./media/sync.png":::
+:::image type="complex" source="./media/sync.png" alt-text="Bild der Synchronisierungseinstellung auf aktiviert festgelegt" lightbox="./media/sync.png":::
    Synchronisierungseinstellung ist aktiviert
 :::image-end:::  
 

@@ -23,7 +23,7 @@ Durch die Erstellung eines integrativen Designs ist Technologie für alle Mensch
 *   Barrierefreiheit in der Tastatur – viele Benutzer von Barrierefreiheit Vertrauen auf die Tastatur, um die Benutzeroberfläche zu navigieren und zu verwenden:
     *   Bewegen des Fokus zwischen Elementen mithilfe der TAB-TASTE.
     *   Navigieren in Containerelementen wie Listen, Rastern und Strukturansichten mithilfe der Pfeiltasten
-    *   Aktivieren der Funktion \ (Aufrufen von Aktionen \) mithilfe der EINGABETASTE oder LEERTASTE.
+    *   Aktivieren der Funktion \(Aufrufen von Aktionen \) mithilfe der EINGABETASTE oder LEERTASTE.
     *   Verwenden von Tastenkombinationen zum effektiven Zugreifen auf andere App-Funktionen
 *   Barrierefreie visuelle Ober Leistung: Benutzer, die sehbehindert sind, benötigen ein ausreichendes Textkontrast Verhältnis für Textinhalte und eine gute visuelle Darstellung mit Designs mit hohem Kontrast insgesamt.  Für farbenblinde Benutzer müssen Informationen auf andere Art als über Farbe vermittelt werden.
 

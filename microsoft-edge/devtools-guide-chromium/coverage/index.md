@@ -65,7 +65,7 @@ Dieses Stylesheet enthält nicht nur den Code für die Schaltflächenkomponente.
 1.  [Öffnen Sie das Befehlsmenü][DevToolsCommandMenu].  
 1.  Beginnen Sie mit der `coverage` Eingabe, wählen Sie den **Befehl Abdeckung** anzeigen aus, und wählen Sie dann aus, `Enter` um den Befehl auszuführen.  Der **Bereich** Abdeckung wird in der **Schublade geöffnet.**  
 
-    :::image type="complex" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="Der Bereich "Abdeckung"" lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
+    :::image type="complex" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="Der Bereich Abdeckung" lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
        Der **Bereich "Abdeckung"**  
     :::image-end:::  
     

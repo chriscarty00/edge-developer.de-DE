@@ -70,7 +70,7 @@ DevTools ist standardmäßig rechts neben dem Viewport angedockt.  Sie können a
 1.  [Öffnen Sie das Befehlsmenü][DevtoolsCommandMenu].  
 1.  Führen Sie einen der folgenden Befehle aus: `Dock To Bottom` , `Undock Into Separate Window` .  Derzeit gibt es keinen Befehl zum Andocken nach links, aber Sie können über das [Hauptmenü darauf zugreifen.](#change-placement-from-the-main-menu)  
     
-    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="Der Befehl "Rückgängig machen"" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
+    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="Der Befehl Rückgängig machen" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
        Der Befehl "Rückgängig machen"  
     :::image-end:::  
     

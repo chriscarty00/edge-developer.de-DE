@@ -55,7 +55,7 @@ Sie können das dunkle Design unter [Einstellungen oder](#set-up-dark-theme-from
 1.  [Öffnen Sie das Befehlsmenü][DevtoolsCommandMenu].  
 1.  Geben `dark` Sie ein, wählen **Sie den Befehl Zum dunklen Design wechseln** aus, und wählen Sie dann aus, um den Befehl `Enter` auszuführen.  
     
-    :::image type="complex" source="../media/customize-command-menu-dark.msft.png" alt-text="Der Befehl "Dunkles Design"" lightbox="../media/customize-command-menu-dark.msft.png":::
+    :::image type="complex" source="../media/customize-command-menu-dark.msft.png" alt-text="Der Befehl Dunkles Design" lightbox="../media/customize-command-menu-dark.msft.png":::
        Der Befehl "Dunkles Design"  
     :::image-end:::  
     

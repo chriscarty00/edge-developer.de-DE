@@ -73,7 +73,7 @@ Hybrid Anwendungen ermöglichen Entwicklern, das Beste aus beiden Welten zu geni
       Verlassen Sie sich auf eine aktuelle Version von Chromium mit regulären Plattformupdates und Sicherheitspatches.  
    :::column-end:::
    :::column span="1":::
-      **Behoben** \ (in Kürze verfügbar)  
+      **Behoben** \(in Kürze verfügbar)  
       Wählen Sie aus, um die Chrom Bits in Ihrer Anwendung zu verpacken.  
    :::column-end:::
    :::column span="1":::
@@ -95,13 +95,13 @@ Das [WebView2-Beispiel][GithubMicrosoftedgeWebview2samples] -Repository enthält
 
 ## Unterstützte Plattformen  
 
-Eine allgemeine Verfügbarkeit \ (GA \) oder Preview-Version steht in den folgenden Programmierumgebungen zur Verfügung.  
+Eine allgemeine Verfügbarkeit \(GA \) oder Preview-Version steht in den folgenden Programmierumgebungen zur Verfügung.  
 
-*   Win32 C/C++ \ (GA \)
+*   Win32 C/C++ \(GA \)
 *   .NET Framework 4.6.2 oder höher
 *   .Net Core 3,1 oder höher
 *   .Net 5
-*   [WinUI 3,0][UwpToolkitsWinui3] \ (Vorschau \)
+*   [WinUI 3,0][UwpToolkitsWinui3] \(Vorschau \)
 
 Sie können WebView2-Anwendungen unter den folgenden Windows-Versionen ausführen.  
 

@@ -109,7 +109,7 @@ Um das Tool **Änderungen zu öffnen,** wählen Sie `Ctrl` + `Shift` + `P` in de
 
 Wenn Sie eine Änderung an einer minifizierten Datei vorgenommen haben, können Sie mit dem Tool Änderungen horizontal scrollen, um den ganzen verminten Code anzeigen zu können. ****  Ab Microsoft Edge 83 können Sie nun mit den Pfeiltasten auf der Tastatur horizontal scrollen.  
 
-:::image type="complex" source="../../media/2020/03/changes.msft.png" alt-text="In Microsoft Edge 83 können Sie einen horizontalen Bildlauf mit den Pfeiltasten durchführen, um ihren verminten Code im Tool "Änderungen" anzeigen zu können." lightbox="../../media/2020/03/changes.msft.png":::
+:::image type="complex" source="../../media/2020/03/changes.msft.png" alt-text="In Microsoft Edge 83 können Sie einen horizontalen Bildlauf mit den Pfeiltasten durchführen, um ihren verminten Code im Tool Änderungen anzeigen zu können." lightbox="../../media/2020/03/changes.msft.png":::
    In Microsoft Edge 83 können Sie einen horizontalen Bildlauf mit den Pfeiltasten durchführen, um die Änderungen, die Sie am verminten Code vorgenommen haben, im Tool **"Änderungen" anzeigen** zu können.  
 :::image-end:::  
 

@@ -59,7 +59,7 @@ DevTools bietet viele verschiedene Tools für verschiedene Aufgaben.  Zu den ver
     
 1.  Wählen Sie das **Tool Quellen** aus.  
     
-    :::image type="complex" source="../media/javascript-sources-sections.msft.png" alt-text="Das Tool "Quellen"" lightbox="../media/javascript-sources-sections.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-sections.msft.png" alt-text="Das Tool Quellen" lightbox="../media/javascript-sources-sections.msft.png":::
        Das **Tool "Quellen"**  
     :::image-end:::  
     
@@ -179,7 +179,7 @@ Im **Bereich Überwachungsausdrücke** können Sie die Werte von Variablen im La
 > [!NOTE]
 > Im Bereich **"Uhrausdruck"** \(unten rechts\) in der folgenden Abbildung wird der `typeof sum` Watch Expression angezeigt.  Wenn Ihr DevTools-Fenster groß ist, befindet sich der Bereich **"Watch Expression"** rechts über dem **Bereich Ereignislistener-Haltepunkte.**  
 
-:::image type="complex" source="../media/javascript-sources-breakpoint-paused-watch.msft.png" alt-text="Der Bereich "Watch Expression"" lightbox="../media/javascript-sources-breakpoint-paused-watch.msft.png":::
+:::image type="complex" source="../media/javascript-sources-breakpoint-paused-watch.msft.png" alt-text="Der Bereich Watch Expression" lightbox="../media/javascript-sources-breakpoint-paused-watch.msft.png":::
    Der **Bereich "Watch Expression"**  
 :::image-end:::  
 

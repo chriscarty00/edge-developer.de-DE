@@ -473,7 +473,7 @@ Anforderungen, die weiter links liegen, wurden also früher gestartet als die An
 
 Um die verschiedenen Methoden zum Sortieren des Wasserfalls zu überprüfen, navigieren Sie zu [Sortieren nach Aktivitätsphase](#sort-by-activity-phase).  
 
-:::image type="complex" source="../media/network-network-requests-waterfall.msft.png" alt-text="Die Spalte "Wasserfall" im Bereich Anforderungen" lightbox="../media/network-network-requests-waterfall.msft.png":::
+:::image type="complex" source="../media/network-network-requests-waterfall.msft.png" alt-text="Die Spalte Wasserfall im Bereich Anforderungen" lightbox="../media/network-network-requests-waterfall.msft.png":::
    Die Spalte "Wasserfall" im **Bereich Anforderungen**  
 :::image-end:::  
 
@@ -584,7 +584,7 @@ Verwenden Sie die folgenden Schritte, um die im HTTP-Header einer Anforderung ge
 <!--[ManageDataCookiesFields]: manage-data/cookies#fields  -->  
 <!--TODO: add link when section is available -->  
 
-:::image type="complex" source="../media/network-network-resources-cookies.msft.png" alt-text="Der Bereich "Cookies"" lightbox="../media/network-network-resources-cookies.msft.png":::
+:::image type="complex" source="../media/network-network-resources-cookies.msft.png" alt-text="Der Bereich Cookies" lightbox="../media/network-network-resources-cookies.msft.png":::
    Der Bereich "Cookies"  
 :::image-end:::  
 

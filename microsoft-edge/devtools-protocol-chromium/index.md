@@ -15,19 +15,19 @@ ms.locfileid: "11234056"
 ---
 # Übersicht über das devtools-Protokoll für Microsoft Edge (Chrom)  
 
-Mit der Verlagerung der zugrunde liegenden Webplattform von Microsoft Edge auf Chrom erhält das [Microsoft Edge-Protokoll (EdgeHTML) devtools](../edgehtml/devtools-protocol/index.md) keine weiteren Updates.  Das Microsoft Edge \ (Chromium \) devtools-Protokoll entspricht den APIs des Chrome devtools-Protokolls, das weitergeleitet wird.  
+Mit der Verlagerung der zugrunde liegenden Webplattform von Microsoft Edge auf Chrom erhält das [Microsoft Edge-Protokoll (EdgeHTML) devtools](../edgehtml/devtools-protocol/index.md) keine weiteren Updates.  Das Microsoft Edge \(Chromium \) devtools-Protokoll entspricht den APIs des Chrome devtools-Protokolls, das weitergeleitet wird.  
 
 Sie finden die Dokumentation zu diesen Domänen und Methoden, indem Sie auf den [Chrome devtools-Protokoll-Viewer](https://chromedevtools.github.io/devtools-protocol/tot/)verweisen.  
 
 > [!NOTE]
-> Alle Methoden, die `ms` im [Microsoft Edge (EdgeHTML)-devtools-Protokoll](../edgehtml/devtools-protocol/index.md) vorangestellt wurden, werden im Microsoft Edge \ (Chromium \) devtools-Protokoll nicht mehr unterstützt.  
+> Alle Methoden, die `ms` im [Microsoft Edge (EdgeHTML)-devtools-Protokoll](../edgehtml/devtools-protocol/index.md) vorangestellt wurden, werden im Microsoft Edge \(Chromium \) devtools-Protokoll nicht mehr unterstützt.  
 
 ## Verwenden des devtools-Protokolls  
 
 Hier erfahren Sie, wie Sie einen benutzerdefinierten Tooling-Client an den devtools-Server in Microsoft Edge (Chrom \) anfügen.  
 
-1.  Stellen Sie sicher, dass alle Instanzen von Microsoft Edge \ (Chrom \) geschlossen sind.  
-1.  Starten Sie Microsoft Edge \ (Chrom \) mit dem Remote Debugging-Port:. 
+1.  Stellen Sie sicher, dass alle Instanzen von Microsoft Edge \(Chrom \) geschlossen sind.  
+1.  Starten Sie Microsoft Edge \(Chrom \) mit dem Remote Debugging-Port:. 
     
     ```shell
     msedge.exe --remote-debugging-port=9222
@@ -49,7 +49,7 @@ Hier erfahren Sie, wie Sie einen benutzerdefinierten Tooling-Client an den devto
 
 ## HTTP-Endpunkte des devtools-Protokolls  
 
-Das Microsoft Edge \ (Chromium \) devtools-Protokoll unterstützt die folgenden HTTP-Endpunkte.  
+Das Microsoft Edge \(Chromium \) devtools-Protokoll unterstützt die folgenden HTTP-Endpunkte.  
 
 ## /json/version  
 
@@ -108,7 +108,7 @@ Stellt eine Kandidatenliste mit Seiten Zielen für das Debuggen bereit.
 
 ## /json/close  
 
-Schließt den Zielprozess ab \ (beispielsweise wird in Microsoft Edge \ (Chrom \) die Registerkarte "Seite" geschlossen \).  
+Schließt den Zielprozess ab \(beispielsweise wird in Microsoft Edge \(Chrom \) die Registerkarte "Seite" geschlossen \).  
 
 **Parameter**  
 
@@ -130,7 +130,7 @@ Die [Remote Tools für Microsoft Edge (Beta)](https://www.microsoft.com/store/ap
 
 ### /msedge/json/list  
 
-Enthält eine Kandidatenliste aller `msedge.exe` Prozesse \ (einschließlich [PWAs](../progressive-web-apps-chromium/index.md) und alle Registerkarten in allen Instanzen von Microsoft Edge \) auf dem Windows 10-Gerät zum Debuggen.  
+Enthält eine Kandidatenliste aller `msedge.exe` Prozesse \(einschließlich [PWAs](../progressive-web-apps-chromium/index.md) und alle Registerkarten in allen Instanzen von Microsoft Edge \) auf dem Windows 10-Gerät zum Debuggen.  
 
 **Parameter**  
 
