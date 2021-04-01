@@ -90,7 +90,7 @@ ms.locfileid: "11231216"
     
 *   <span data-ttu-id="46535-141">Anwendungen können auch über das Menü **Einstellungen**-  >  **apps** installiert, ausgeführt und verwaltet werden.</span><span class="sxs-lookup"><span data-stu-id="46535-141">Applications may also be installed, run, and managed from the **Settings** > **Apps** menu</span></span>  
     
-    :::image type="complex" source="./media/app_menus.png" alt-text="Menüelemente des Programms unter "Einstellungen"" lightbox="./media/app_menus.png":::
+    :::image type="complex" source="./media/app_menus.png" alt-text="Menüelemente des Programms unter Einstellungen" lightbox="./media/app_menus.png":::
        <span data-ttu-id="46535-143">Menüelemente des Programms unter "Einstellungen"</span><span class="sxs-lookup"><span data-stu-id="46535-143">Application menu items under settings</span></span>  
     :::image-end:::  
     

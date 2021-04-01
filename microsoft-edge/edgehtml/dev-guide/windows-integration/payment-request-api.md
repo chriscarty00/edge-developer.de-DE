@@ -35,7 +35,7 @@ ms.locfileid: "11233841"
 
 <span data-ttu-id="e11af-122">Der Browser authentifiziert den Benutzer, ermöglicht es dem Benutzer, eine unterstützte Zahlungsmethode für die Datei auszuwählen und die Zahlungsdetails zu verarbeiten.</span><span class="sxs-lookup"><span data-stu-id="e11af-122">The browser authenticates the user, enables the user to select a supported payment method on file, and processes the payment details.</span></span>  <span data-ttu-id="e11af-123">Der Browser sendet dann die Informationen zur Zahlungsinformation zurück an die Händler-Website, damit der Händler die Zahlung abschließen kann.</span><span class="sxs-lookup"><span data-stu-id="e11af-123">The browser then sends the payment information details back to the merchant website, so that the merchant can complete the payment.</span></span>  <span data-ttu-id="e11af-124">Zusätzlich zum Empfang von Zahlungsinformationen kann der Händler auch beschließen, Versandinformationen im Rahmen der **Zahlungsaufforderung**zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="e11af-124">In addition to receiving payment information, the merchant can also elect to receive shipping information as part of the **Payment Request**.</span></span>  
 
-:::image type="complex" source="../media/payment_response_construct.png" alt-text="Konstrukt "Zahlungsantwort"" lightbox="../media/payment_response_construct.png":::
+:::image type="complex" source="../media/payment_response_construct.png" alt-text="Konstrukt Zahlungsantwort" lightbox="../media/payment_response_construct.png":::
    <span data-ttu-id="e11af-126">Konstrukt "Zahlungsantwort"</span><span class="sxs-lookup"><span data-stu-id="e11af-126">Payment response construct</span></span>  
 :::image-end:::  
 
@@ -62,7 +62,7 @@ var payment = new PaymentRequest (
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/pay_with.png" alt-text="Die Liste "bezahlen mit" in der Microsoft Wallet-Benutzeroberfläche" lightbox="../media/pay_with.png":::
+      :::image type="complex" source="../media/pay_with.png" alt-text="Die Liste bezahlen mit in der Microsoft Wallet-Benutzeroberfläche" lightbox="../media/pay_with.png":::
          <span data-ttu-id="e11af-135">Die Liste " **bezahlen mit** " in der Microsoft Wallet-Benutzeroberfläche</span><span class="sxs-lookup"><span data-stu-id="e11af-135">The **pay with** list in the Microsoft Wallet user experience</span></span>  
       :::image-end:::  
    :::column-end:::
@@ -121,7 +121,7 @@ var payment = new PaymentRequest (
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/email_snippet.png" alt-text="Dropdownliste "e-Mail-Adresse"" lightbox="../media/email_snippet.png":::
+      :::image type="complex" source="../media/email_snippet.png" alt-text="Dropdownliste e-Mail-Adresse" lightbox="../media/email_snippet.png":::
          <span data-ttu-id="e11af-152">Dropdownliste "e-Mail-Adresse"</span><span class="sxs-lookup"><span data-stu-id="e11af-152">Email address dropdown</span></span>  
       :::image-end:::  
    :::column-end:::

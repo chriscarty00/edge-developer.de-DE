@@ -118,7 +118,8 @@ ms.locfileid: "11439584"
 1.  <span data-ttu-id="073bc-166">Aktivieren Sie **Source Order Viewer** im Abschnitt das Kontrollkästchen **Quellreihenfolge** anzeigen.</span><span class="sxs-lookup"><span data-stu-id="073bc-166">Under the **Source Order Viewer** section, choose the **Show Source Order** checkbox.</span></span>  
 1.  <span data-ttu-id="073bc-167">Markieren Sie jedes HTML-Element, um eine Überlagerung anzuzeigen, die die Reihenfolge in der Webseitenquelle enthält.</span><span class="sxs-lookup"><span data-stu-id="073bc-167">Highlight any HTML element to display an overlay that the order in the webpage source.</span></span>  
     
-:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text=":::<span data-ttu-id="073bc-168">no-loc(Source Order Viewer)::: im Bereich Barrierefreiheit" lightbox=".. /media/experiments-source-order-viewer.msft.png"::: im **Source Order Viewer** Bereich **Barrierefreiheit**</span><span class="sxs-lookup"><span data-stu-id="073bc-168">no-loc(Source Order Viewer)::: in the Accessibility pane" lightbox="../media/experiments-source-order-viewer.msft.png"::: **Source Order Viewer** in the **Accessibility** pane</span></span>  
+:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="**Source Order Viewer** in the **Accessibility** pane" lightbox="../media/experiments-source-order-viewer.msft.png":::
+   <span data-ttu-id="073bc-168">no-loc(Source Order Viewer)::: im Bereich Barrierefreiheit" lightbox=".. /media/experiments-source-order-viewer.msft.png"::: im **Source Order Viewer** Bereich **Barrierefreiheit**</span><span class="sxs-lookup"><span data-stu-id="073bc-168">no-loc(Source Order Viewer)::: in the Accessibility pane" lightbox="../media/experiments-source-order-viewer.msft.png"::: **Source Order Viewer** in the **Accessibility** pane</span></span>  
 :::image-end:::  
 
 <!--Available in Microsoft Edge version 86 and later.  -->  

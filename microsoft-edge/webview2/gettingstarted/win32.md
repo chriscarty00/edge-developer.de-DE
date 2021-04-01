@@ -165,7 +165,7 @@ CreateCoreWebView2EnvironmentWithOptions(nullptr, nullptr, nullptr,
 
 <span data-ttu-id="d486a-159">Wählen Sie zum Erstellen und Ausführen der App die Option `F5` aus.</span><span class="sxs-lookup"><span data-stu-id="d486a-159">To build and run the app, select `F5`.</span></span>  <span data-ttu-id="d486a-160">Jetzt haben Sie ein WebView-Fenster, in dem die Seite Bing angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="d486a-160">Now you have a WebView window displaying the Bing page.</span></span>  
 
-:::image type="complex" source="../media/bing-window.png" alt-text="Fenster "Bing"" lightbox="../media/bing-window.png":::
+:::image type="complex" source="../media/bing-window.png" alt-text="Fenster Bing" lightbox="../media/bing-window.png":::
    <span data-ttu-id="d486a-162">Fenster "Bing"</span><span class="sxs-lookup"><span data-stu-id="d486a-162">Bing window</span></span>  
 :::image-end:::  
 

@@ -28,12 +28,12 @@ ms.locfileid: "11230964"
     
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/javascript-overrides-overflow-menu.msft.png" alt-text="Quellen Tool mit nicht genügend Speicherplatz, um die Option "Außerkraftsetzungen" anzuzeigen" lightbox="../media/javascript-overrides-overflow-menu.msft.png":::
+          :::image type="complex" source="../media/javascript-overrides-overflow-menu.msft.png" alt-text="Quellen Tool mit nicht genügend Speicherplatz, um die Option Außerkraftsetzungen anzuzeigen" lightbox="../media/javascript-overrides-overflow-menu.msft.png":::
              <span data-ttu-id="83ab4-119">**Quellen** Tool mit nicht genügend Speicherplatz, um die Option "Außerkraftsetzungen" anzuzeigen</span><span class="sxs-lookup"><span data-stu-id="83ab4-119">**Sources** tool with not enough space to show the overrides option</span></span>  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/javascript-overrides-menu.msft.png" alt-text="Auswählen der Option "Außerkraftsetzungen"" lightbox="../media/javascript-overrides-menu.msft.png":::
+          :::image type="complex" source="../media/javascript-overrides-menu.msft.png" alt-text="Auswählen der Option Außerkraftsetzungen" lightbox="../media/javascript-overrides-menu.msft.png":::
              <span data-ttu-id="83ab4-121">Auswählen der Option "Außerkraftsetzungen"</span><span class="sxs-lookup"><span data-stu-id="83ab4-121">Choose the overrides option</span></span>  
           :::image-end:::  
        :::column-end:::
@@ -77,7 +77,7 @@ ms.locfileid: "11230964"
 
 <span data-ttu-id="83ab4-145">Die Datei wird im Ordner Overrides gespeichert.</span><span class="sxs-lookup"><span data-stu-id="83ab4-145">The file is stored in your overrides folder.</span></span>  <span data-ttu-id="83ab4-146">Überprüfen Sie, ob devtools einen Ordner mit dem Namen der URL der Datei mit der richtigen Verzeichnisstruktur erstellt.</span><span class="sxs-lookup"><span data-stu-id="83ab4-146">Verify that DevTools create a folder that is named using the URL of the file with the correct directory structure.</span></span>  <span data-ttu-id="83ab4-147">Die Datei wird in gespeichert.</span><span class="sxs-lookup"><span data-stu-id="83ab4-147">The file is stored inside.</span></span>  <span data-ttu-id="83ab4-148">Der Dateiname im Editor zeigt nun auch einen lila Punkt an, der angibt, dass die Datei lokal und nicht Live ist.</span><span class="sxs-lookup"><span data-stu-id="83ab4-148">The file name in the editor now also shows a purple dot that indicates that the file is local and not a live one.</span></span>  
 
-:::image type="complex" source="../media/javascript-overrides-file-stored.msft.png" alt-text="Die Datei wurde erfolgreich im Ordner "Overrides" gespeichert" lightbox="../media/javascript-overrides-file-stored.msft.png":::
+:::image type="complex" source="../media/javascript-overrides-file-stored.msft.png" alt-text="Die Datei wurde erfolgreich im Ordner Overrides gespeichert" lightbox="../media/javascript-overrides-file-stored.msft.png":::
    <span data-ttu-id="83ab4-150">Die Datei wurde erfolgreich im Ordner "Overrides" gespeichert</span><span class="sxs-lookup"><span data-stu-id="83ab4-150">Successfully stored the file in your overrides folder</span></span>  
 :::image-end:::  
 
@@ -92,7 +92,7 @@ ms.locfileid: "11230964"
    :::column span="":::
       <span data-ttu-id="83ab4-153">Die Datei wird automatisch auf Ihrem Computer gespeichert.</span><span class="sxs-lookup"><span data-stu-id="83ab4-153">The file is automatically saved on your computer.</span></span>  <span data-ttu-id="83ab4-154">Wenn Sie die Datei aktualisieren, wird der Rahmen angezeigt, und keine ihrer Arbeit geht verloren.</span><span class="sxs-lookup"><span data-stu-id="83ab4-154">If you refresh the file, the border is displayed and none of your work is lost.</span></span>  
       
-      :::image type="complex" source="../media/javascript-overrides-changing-styles.msft.png" alt-text="Dauerhaftes ändern von Webseitenformat Vorlagen durch Bearbeiten einer Datei im Ordner "Außerkraftsetzungen"" lightbox="../media/javascript-overrides-changing-styles.msft.png":::
+      :::image type="complex" source="../media/javascript-overrides-changing-styles.msft.png" alt-text="Dauerhaftes ändern von Webseitenformat Vorlagen durch Bearbeiten einer Datei im Ordner Außerkraftsetzungen" lightbox="../media/javascript-overrides-changing-styles.msft.png":::
          <span data-ttu-id="83ab4-156">Dauerhaftes ändern von Webseitenformat Vorlagen durch Bearbeiten einer Datei im Ordner "Außerkraftsetzungen"</span><span class="sxs-lookup"><span data-stu-id="83ab4-156">Change webpage styles persistently by editing a file in your overrides folder</span></span>  
       :::image-end:::  
    :::column-end:::

@@ -97,7 +97,7 @@ ms.locfileid: "11306166"
 
 1.  <span data-ttu-id="c981a-148">Die `Source` Eigenschaft legt den anfänglichen URI fest, der im WebView2-Steuerelement angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="c981a-148">The `Source` property sets the initial URI displayed in the WebView2 control.</span></span>  <span data-ttu-id="c981a-149">Legen Sie die `Source`-Eigenschaft auf `https://www.microsoft.com` fest.</span><span class="sxs-lookup"><span data-stu-id="c981a-149">Set the `Source` property to `https://www.microsoft.com`.</span></span>  
     
-    :::image type="complex" source="./media/winforms-source.png" alt-text="Die Eigenschaft "Source" des WebView2-Steuerelements":::
+    :::image type="complex" source="./media/winforms-source.png" alt-text="Die Eigenschaft Source des WebView2-Steuerelements":::
        <span data-ttu-id="c981a-151">Die **Eigenschaft "Source"** des WebView2-Steuerelements</span><span class="sxs-lookup"><span data-stu-id="c981a-151">The **Source** property of the WebView2 control</span></span>
     :::image-end:::  
 
