@@ -329,6 +329,8 @@
           href: progressive-web-apps-chromium/serviceworker.md
         - name: Web-App-Manifeste
           href: progressive-web-apps-chromium/webappmanifests.md
+        - name: Experimentelle Features
+          href: progressive-web-apps-chromium/experimental-features/index.md
         - name: Veröffentlichen Ihrer PWA im Microsoft Store
           href: progressive-web-apps-chromium/microsoft-store.md
     - name: Playwright – Übersicht
