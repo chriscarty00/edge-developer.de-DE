@@ -3,16 +3,16 @@ description: In diesem Handbuch erhalten Sie eine Übersicht über die Grundlage
 title: Erste Schritte mit Progressive Web Apps (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
+ms.date: 03/16/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: progressive Web-Apps, PWA, Edge, Windows, PWABuilder, Webmanifest, Service worker, Push
-ms.openlocfilehash: 6ff24b2e9219b2f3755bb2e8f6db137dc7a721ec
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 6a40742c1065dbc3b8aaeeeb469ab9154629a47a
+ms.sourcegitcommit: f605e4e27fed88aca286f2ae236e27f9a396b517
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398133"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "11474914"
 ---
 # <a name="get-started-with-progressive-web-apps-chromium"></a>Erste Schritte mit Progressive Web Apps (Chromium)  
 
@@ -52,9 +52,9 @@ npm start
 
 Navigieren Sie nun, `http://localhost:3000` um Ihre neue Web-App zu sehen.  
 
-:::image type="complex" source="./media/vs-nodejs-express-index.png" alt-text="Ausführen des neuen PWA auf localhost" lightbox="./media/vs-nodejs-express-index.png":::
-   Ausführen des neuen PWA auf localhost
-:::image-end:::
+:::image type="complex" source="./media/visual-studio-nodejs-express-index.png" alt-text="Ausführen des neuen PWA auf localhost" lightbox="./media/visual-studio-nodejs-express-index.png":::
+   Ausführen des neuen PWA auf localhost  
+:::image-end:::  
 
 ## <a name="get-started-building-a-pwa"></a>Erste Schritte beim Erstellen einer PWA  
 
@@ -100,7 +100,7 @@ So fügen Sie der Web-App ein App-Manifest hinzu:
     ```  
     
 1.  Speichern Sie die Datei unter `/MySamplePwa/public/manifest.json` .  
-1.  Fügen Sie ein 512x512-App-Symbolbild mit dem Namen `icon512.png` zu `/MySamplePwa/public/images` hinzu.  Sie können das [Beispielbild zu][ImagePwa] Testzwecken verwenden.  
+1.  Fügen Sie ein 512x512-App-Symbolbild mit dem Namen `icon512.png` zu `/MySamplePwa/public/images` hinzu.  Sie können das [Beispielbild zu](./media/progressive-web-app.png) Testzwecken verwenden.  
 1.  Öffnen Visual Studio `/public/index.html` Code, und fügen Sie den folgenden Codeausschnitt innerhalb des Tags `<head>` hinzu.  
     
     ```html
@@ -148,26 +148,26 @@ Verwenden Sie die folgenden Schritte, um zu bestätigen, dass Ihr Dienstmitarbei
 1.  Wählen Sie in Microsoft Edge aus, `F12` um die Microsoft Edge DevTools zu öffnen.  Wählen **Sie Anwendung**und dann Service Workers **aus,** um die Servicemitarbeiter anzeigen zu können.  Wenn der Dienstmitarbeiter nicht angezeigt wird, aktualisieren Sie die Seite.  
     
     :::image type="complex" source="./media/devtools-sw-overview.png" alt-text="Übersicht über Microsoft Edge DevTools Service Worker" lightbox="./media/devtools-sw-overview.png":::
-       Übersicht über Microsoft Edge DevTools Service Worker
-    :::image-end:::
+       Übersicht über Microsoft Edge DevTools Service Worker  
+    :::image-end:::  
     
 1.  Zeigen Sie den Dienstarbeitscache an, indem Sie **Cachespeicher erweitern,** und wählen Sie **pwabuilder-precache aus.**  Alle vom Dienstmitarbeiter zwischengespeicherten Ressourcen sollten angezeigt werden.  Zu den ressourcen, die vom Dienstmitarbeiter zwischengespeichert werden, gehören das App-Symbol, das App-Manifest, css und die JavaScript-Dateien.  
     
     :::image type="complex" source="./media/devtools-cache.png" alt-text="Dienstarbeitscache in Microsoft Edge DevTools" lightbox="./media/devtools-cache.png":::
-       Dienstarbeitscache in Microsoft Edge DevTools (F12)
-    :::image-end:::
+       Dienstarbeitscache in Microsoft Edge DevTools \(F12\)  
+    :::image-end:::  
     
 1.  Testen Sie PWA als Offline-App.  Wählen Sie in Microsoft Edge DevTools \( \) Netzwerk aus, und ändern Sie dann `F12` den **Onlinestatus** in **Offline**. ****  
     
     :::image type="complex" source="./media/devtools-offline.png" alt-text="Festlegen des Offlinemodus der App in Microsoft Edge DevTools" lightbox="./media/devtools-offline.png":::
-       Festlegen des Offlinemodus der App in Microsoft Edge DevTools
-    :::image-end:::
+       Festlegen des Offlinemodus der App in Microsoft Edge DevTools  
+    :::image-end:::  
     
 1.  Aktualisieren Sie Ihre App, und sie sollte den Offlinemechanismus für die Verwendung der Ressourcen Ihrer App aus dem Cache anzeigen.  
     
-    :::image type="complex" source="./media/vs-nodejs-express-index.png" alt-text="Offline ausgeführter PWA" lightbox="./media/vs-nodejs-express-index.png":::
-       Offline ausgeführter PWA
-    :::image-end:::
+    :::image type="complex" source="./media/visual-studio-nodejs-express-index.png" alt-text="Offline ausgeführter PWA" lightbox="./media/visual-studio-nodejs-express-index.png":::
+       Offline ausgeführter PWA  
+    :::image-end:::  
     
 ## <a name="add-push-notifications-to-your-pwa"></a>Hinzufügen von Pushbenachrichtigungen zu Ihrem PWA  
 
@@ -285,8 +285,8 @@ Führen Sie die folgenden Schritte aus, um Pushbenachrichtigungen für Ihre PWA 
 1.  Navigieren Sie zu Ihrem PWA unter `http://localhost:3000` .  Wenn Ihr Servicemitarbeiter aktiviert wird und versucht, Ihre PWA für Pushbenachrichtigungen zu abonnieren, fordert Microsoft Edge Sie auf, Ihrem PWA das Anzeigen von Benachrichtigungen zu erlauben.  Wählen Sie **Zulassen**aus.  
     
     :::image type="complex" source="./media/notification-permission.png" alt-text="Berechtigungsdialogfeld zum Aktivieren von Benachrichtigungen" lightbox="./media/notification-permission.png":::
-       Berechtigungsdialogfeld zum Aktivieren von Benachrichtigungen
-    :::image-end:::
+       Berechtigungsdialogfeld zum Aktivieren von Benachrichtigungen  
+    :::image-end:::  
     
 1.  Simulieren sie eine serverseitige Pushbenachrichtigung.  Wenn Ihr PWA `http://localhost:3000` in Ihrem Browser geöffnet ist, wählen Sie `F12` aus, um die DevTools zu öffnen.  Wählen **Sie Application**Service  >  **Worker**Push  >  **aus,** um eine Test-Pushbenachrichtigung an Ihre PWA zu senden.  
     
@@ -302,7 +302,8 @@ Führen Sie die folgenden Schritte aus, um Pushbenachrichtigungen für Ihre PWA 
           Wenn Sie keine Popupbenachrichtigung \(oder aktivieren\) auswählen, wird sie nach einigen Sekunden automatisch vom System geschlossen und im Windows Action Center in eine Warteschlange eingereiht.  
           
           :::image type="complex" source="./media/windows-action-center.png" alt-text="Benachrichtigungen im Windows Action Center" lightbox="./media/windows-action-center.png":::
-             Benachrichtigungen im Windows Action Center :::image-end:::
+             Benachrichtigungen im Windows Action Center  
+          :::image-end:::  
        :::column-end:::
     :::row-end:::  
     
@@ -331,10 +332,6 @@ Die folgenden Schritte umfassen zusätzliche Aufgaben, mit deren Hilfe Sie das E
 *   [Entwerfen und Erstellen einer progressiven Webanwendung ohne Framework (Teil 1)][Smashingmagazine201907ProgressiveWebApplicationFrameworkPart1]  
 *   [Entwerfen und Erstellen einer progressiven Webanwendung ohne Framework (Teil 2)][Smashingmagazine201907ProgressiveWebApplicationFrameworkPart2]  
 *   [Entwerfen und Erstellen einer progressiven Webanwendung ohne Framework (Teil 3)][Smashingmagazine201907ProgressiveWebApplicationFrameworkPart3]  
-    
-<!-- image links -->  
-
-[ImagePwa]: ./media/pwa.png  
 
 <!-- links -->  
 
