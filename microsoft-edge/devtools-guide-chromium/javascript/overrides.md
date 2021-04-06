@@ -28,7 +28,7 @@ ms.locfileid: "11230964"
     
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/javascript-overrides-overflow-menu.msft.png" alt-text="Quellentool mit nicht genügend Platz zum Anzeigen der Option "Außerkraftsetzungen"" lightbox="../media/javascript-overrides-overflow-menu.msft.png":::
+          :::image type="complex" source="../media/javascript-overrides-overflow-menu.msft.png" alt-text="Quellentool mit nicht genügend Platz zum Anzeigen der Option Außerkraftsetzungen" lightbox="../media/javascript-overrides-overflow-menu.msft.png":::
              <span data-ttu-id="f43d2-119">**Quellentool** mit nicht genügend Platz zum Anzeigen der Option "Außerkraftsetzungen"</span><span class="sxs-lookup"><span data-stu-id="f43d2-119">**Sources** tool with not enough space to show the overrides option</span></span>  
           :::image-end:::  
        :::column-end:::
@@ -59,7 +59,7 @@ ms.locfileid: "11230964"
     
 ## <a name="adding-files-to-your-overrides-folder"></a><span data-ttu-id="f43d2-135">Hinzufügen von Dateien zum Ordner Außerkraftsetzungen</span><span class="sxs-lookup"><span data-stu-id="f43d2-135">Adding files to your Overrides folder</span></span>  
   
-<span data-ttu-id="f43d2-136">Öffnen Sie das Elementtool, und \*\*\*\* überprüfen Sie die Webseite, um Dem Ordner "Außerkraftsetzungen" Dateien hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="f43d2-136">To add files to your overrides folder, open the **Elements** tool and inspect the webpage.</span></span>  <span data-ttu-id="f43d2-137">Wählen Sie zum Bearbeiten den Namen der CSS-Datei im **Formatvorlageninspektor** aus.</span><span class="sxs-lookup"><span data-stu-id="f43d2-137">To edit, choose the name of the CSS file in the **Styles** inspector.</span></span>  
+<span data-ttu-id="f43d2-136">Öffnen Sie das Elementtool, und überprüfen Sie die Webseite, um Dem Ordner "Außerkraftsetzungen" Dateien hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="f43d2-136">To add files to your overrides folder, open the **Elements** tool and inspect the webpage.</span></span>  <span data-ttu-id="f43d2-137">Wählen Sie zum Bearbeiten den Namen der CSS-Datei im **Formatvorlageninspektor** aus.</span><span class="sxs-lookup"><span data-stu-id="f43d2-137">To edit, choose the name of the CSS file in the **Styles** inspector.</span></span>  
 
 :::image type="complex" source="../media/javascript-overrides-select-css-file.msft.png" alt-text="Auswählen einer Datei im Formatvorlageninspektor" lightbox="../media/javascript-overrides-select-css-file.msft.png":::
    <span data-ttu-id="f43d2-139">Auswählen einer Datei im **Formatvorlageninspektor**</span><span class="sxs-lookup"><span data-stu-id="f43d2-139">Choose a file in the **Styles** inspector</span></span>  
@@ -77,13 +77,13 @@ ms.locfileid: "11230964"
 
 <span data-ttu-id="f43d2-145">Die Datei wird in Ihrem Überschreibungsordner gespeichert.</span><span class="sxs-lookup"><span data-stu-id="f43d2-145">The file is stored in your overrides folder.</span></span>  <span data-ttu-id="f43d2-146">Stellen Sie sicher, dass DevTools einen Ordner mit dem Namen mithilfe der URL der Datei mit der richtigen Verzeichnisstruktur erstellt.</span><span class="sxs-lookup"><span data-stu-id="f43d2-146">Verify that DevTools create a folder that is named using the URL of the file with the correct directory structure.</span></span>  <span data-ttu-id="f43d2-147">Die Datei wird darin gespeichert.</span><span class="sxs-lookup"><span data-stu-id="f43d2-147">The file is stored inside.</span></span>  <span data-ttu-id="f43d2-148">Der Dateiname im Editor zeigt nun auch einen lila Punkt an, der angibt, dass die Datei lokal und nicht live ist.</span><span class="sxs-lookup"><span data-stu-id="f43d2-148">The file name in the editor now also shows a purple dot that indicates that the file is local and not a live one.</span></span>  
 
-:::image type="complex" source="../media/javascript-overrides-file-stored.msft.png" alt-text="Die Datei wurde erfolgreich im Ordner "Außerkraftsetzungen" gespeichert." lightbox="../media/javascript-overrides-file-stored.msft.png":::
+:::image type="complex" source="../media/javascript-overrides-file-stored.msft.png" alt-text="Die Datei wurde erfolgreich im Ordner Außerkraftsetzungen gespeichert." lightbox="../media/javascript-overrides-file-stored.msft.png":::
    <span data-ttu-id="f43d2-150">Die Datei wurde erfolgreich im Ordner "Außerkraftsetzungen" gespeichert.</span><span class="sxs-lookup"><span data-stu-id="f43d2-150">Successfully stored the file in your overrides folder</span></span>  
 :::image-end:::  
 
 :::row:::
    :::column span="":::
-      <span data-ttu-id="f43d2-151">Im folgenden Beispiel können Sie nun die Formatvorlagen der Webseite ändern.</span><span class="sxs-lookup"><span data-stu-id="f43d2-151">In the following example, you may now change the styles of the webpage.</span></span>  <span data-ttu-id="f43d2-152">Wenn Sie einen roten Rahmen um \*\*\*\* die Datei hinzufügen möchten, kopieren Sie im Formatvorlagen-Editor die folgende Formatvorlage, und fügen Sie sie dem body-Element hinzu.</span><span class="sxs-lookup"><span data-stu-id="f43d2-152">To add a red border around the file, on the **Styles** editor, copy the following style, and add it to the body element.</span></span>  
+      <span data-ttu-id="f43d2-151">Im folgenden Beispiel können Sie nun die Formatvorlagen der Webseite ändern.</span><span class="sxs-lookup"><span data-stu-id="f43d2-151">In the following example, you may now change the styles of the webpage.</span></span>  <span data-ttu-id="f43d2-152">Wenn Sie einen roten Rahmen um die Datei hinzufügen möchten, kopieren Sie im Formatvorlagen-Editor die folgende Formatvorlage, und fügen Sie sie dem body-Element hinzu.</span><span class="sxs-lookup"><span data-stu-id="f43d2-152">To add a red border around the file, on the **Styles** editor, copy the following style, and add it to the body element.</span></span>  
       
       ```css
       border: 10px solid firebrick
@@ -92,7 +92,7 @@ ms.locfileid: "11230964"
    :::column span="":::
       <span data-ttu-id="f43d2-153">Die Datei wird automatisch auf Ihrem Computer gespeichert.</span><span class="sxs-lookup"><span data-stu-id="f43d2-153">The file is automatically saved on your computer.</span></span>  <span data-ttu-id="f43d2-154">Wenn Sie die Datei aktualisieren, wird der Rahmen angezeigt, und ihre Arbeit geht nicht verloren.</span><span class="sxs-lookup"><span data-stu-id="f43d2-154">If you refresh the file, the border is displayed and none of your work is lost.</span></span>  
       
-      :::image type="complex" source="../media/javascript-overrides-changing-styles.msft.png" alt-text="Webseitenformatvorlagen dauerhaft ändern, indem Sie eine Datei im Ordner "Außerkraftsetzungen" bearbeiten" lightbox="../media/javascript-overrides-changing-styles.msft.png":::
+      :::image type="complex" source="../media/javascript-overrides-changing-styles.msft.png" alt-text="Webseitenformatvorlagen dauerhaft ändern, indem Sie eine Datei im Ordner Außerkraftsetzungen bearbeiten" lightbox="../media/javascript-overrides-changing-styles.msft.png":::
          <span data-ttu-id="f43d2-156">Webseitenformatvorlagen dauerhaft ändern, indem Sie eine Datei im Ordner "Außerkraftsetzungen" bearbeiten</span><span class="sxs-lookup"><span data-stu-id="f43d2-156">Change webpage styles persistently by editing a file in your overrides folder</span></span>  
       :::image-end:::  
    :::column-end:::
@@ -102,7 +102,7 @@ ms.locfileid: "11230964"
    :::column span="":::
       <span data-ttu-id="f43d2-157">Zeigen Sie **im Tool** Quellen im Abschnitt **Seite** auf eine beliebige Datei, öffnen Sie das Kontextmenü \(mit der rechten Maustaste auf\), und fügen Sie es außer Kraft.</span><span class="sxs-lookup"><span data-stu-id="f43d2-157">On the **Sources** tool, in the **Page** section, hover on any file, open the contextual menu \(right-click\), and add it to overrides.</span></span>  <span data-ttu-id="f43d2-158">Auch hier haben Dateien, die sich bereits im Ordner "Außerkraftsetzungen" befinden, einen lila Punkt auf dem Symbol.</span><span class="sxs-lookup"><span data-stu-id="f43d2-158">Again, files that are already in your overrides folder have a purple dot on the icon.</span></span>  
       
-      :::image type="complex" source="../media/javascript-overrides-safe-from-sources.msft.png" alt-text="Auswählen einer Datei aus dem Tool "Quellen" für Außerkraftsetzungen" lightbox="../media/javascript-overrides-safe-from-sources.msft.png":::
+      :::image type="complex" source="../media/javascript-overrides-safe-from-sources.msft.png" alt-text="Auswählen einer Datei aus dem Tool Quellen für Außerkraftsetzungen" lightbox="../media/javascript-overrides-safe-from-sources.msft.png":::
          <span data-ttu-id="f43d2-160">Auswählen einer Datei aus dem **Tool "Quellen"** für Außerkraftsetzungen</span><span class="sxs-lookup"><span data-stu-id="f43d2-160">Choose a file from the **Sources** tool for overrides</span></span>  
       :::image-end:::  
    :::column-end:::
