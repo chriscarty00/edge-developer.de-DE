@@ -7,12 +7,12 @@ ms.date: 03/16/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: progressive Web-Apps, PWA, Edge, Windows, PWABuilder, Webmanifest, Service worker, Push
-ms.openlocfilehash: 6a40742c1065dbc3b8aaeeeb469ab9154629a47a
-ms.sourcegitcommit: f605e4e27fed88aca286f2ae236e27f9a396b517
+ms.openlocfilehash: 3023c38790185ca6989f4a487928abc79b1d5a2c
+ms.sourcegitcommit: 146072bf606b84e5145a48333abf9c6b892a12d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "11474914"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "11480195"
 ---
 # <a name="get-started-with-progressive-web-apps-chromium"></a>Erste Schritte mit Progressive Web Apps (Chromium)  
 
@@ -58,7 +58,7 @@ Navigieren Sie nun, `http://localhost:3000` um Ihre neue Web-App zu sehen.
 
 ## <a name="get-started-building-a-pwa"></a>Erste Schritte beim Erstellen einer PWA  
 
-Da Sie nun über eine einfache Web-App verfügen, erweitern Sie sie als PWA, indem Sie die drei Anforderungen für PWAs hinzufügen.<!--[3 requirements for PWAs][PwaEdgehtmlIndexRequirements]-->: [HTTPS](#step-1---use-https), [ein Web-App-Manifest](#step-2---create-a-web-app-manifest)und ein [Service Worker](#step-3---add-a-service-worker).  
+Da Sie nun über eine einfache Web-App verfügen, erweitern Sie sie als PWA, indem Sie die drei Anforderungen für PWAs hinzufügen.<!--[3 requirements for PWAs][ArchiveMicrosoftEdgeLegacyDeveloperPWAsIndexRequirements]-->: [HTTPS](#step-1---use-https), [ein Web-App-Manifest](#step-2---create-a-web-app-manifest)und ein [Service Worker](#step-3---add-a-service-worker).  
 
 ### <a name="step-1---use-https"></a>Schritt 1 : Verwenden von HTTPS  
 
@@ -335,7 +335,7 @@ Die folgenden Schritte umfassen zusätzliche Aufgaben, mit deren Hilfe Sie das E
 
 <!-- links -->  
 
-<!--[PwaEdgehtmlIndexRequirements]: ../progressive-web-apps/index.md#requirements "Requirements - Progressive Web Apps \(EdgeHTML\) on Windows | Microsoft Docs"  -->  
+<!--[ArchiveMicrosoftEdgeLegacyDeveloperPWAsIndexRequirements]: /archive/microsoft-edge/legacy/developer/progressive-web-apps/index#requirements "Requirements - Progressive Web Apps \(EdgeHTML\) on Windows | Microsoft Docs"  -->  
 
 [VisualStudioNodejsTutorialPublishAzureAppService]: /azure/javascript/tutorial-vscode-azure-app-service-node-03 "Bereitstellen einer Node.js in Azure mit Visual Studio Code | Microsoft Docs"  
 

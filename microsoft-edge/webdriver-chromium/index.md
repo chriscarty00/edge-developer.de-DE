@@ -3,17 +3,17 @@ description: Erfahren Sie, wie Sie Ihre Website oder App in Microsoft Edge teste
 title: Verwenden von WebDriver (Chromium) für die Testautomatisierung
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 04/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: Microsoft Edge, Webentwicklung, HTML, CSS, Javascript, Entwickler, WebDriver, Selenium, Tests, Tools, Automatisierung, Test
-ms.openlocfilehash: 87855fad02243a9d86053e43b5523013644f7e35
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
-ms.translationtype: HT
+ms.openlocfilehash: ad7a7f276dbf71d25be03d041161ead599b82f04
+ms.sourcegitcommit: 146072bf606b84e5145a48333abf9c6b892a12d8
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398833"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "11480181"
 ---
 # <a name="use-webdriver-chromium-for-test-automation"></a>Verwenden von WebDriver (Chromium) für die Testautomatisierung  
 
@@ -48,7 +48,7 @@ Führen Sie die folgenden Schritte aus, um die Automatisierung von Tests zu star
     
     <!--  
     > [!NOTE] 
-    > For more information about test automation using Microsoft Edge \(EdgeHTML\), navigate to [Microsoft Edge Driver for Microsoft Edge \(EdgeHTML\)][Webdriver].  
+    > For more information about test automation using Microsoft Edge \(EdgeHTML\), navigate to [Microsoft Edge Driver for Microsoft Edge (EdgeHTML)][Webdriver].  
     -->  
     
 ## <a name="choose-a-webdriver-language-binding"></a>Auswählen einer WebDriver-Sprachbindung  
@@ -372,7 +372,8 @@ Das Microsoft Edge-Team freut sich über Ihr Feedback zur Verwendung von WebDriv
 
 [DevtoolsIndex]: ../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) -Entwicklertools | Microsoft Docs"  
 [WebdriverCapabilitiesEdgeOptions]: ./capabilities-edge-options.md "Funktionen und EdgeOptions | Microsoft Docs"  
-<!--[Webdriver]: ../edgehtml/webdriver/index.md "WebDriver (EdgeHTML) | Microsoft Docs"  -->  
+
+<!--[Webdriver]: /archive/microsoft-edge/legacy/developer/webdriver/index "WebDriver (EdgeHTML) | Microsoft Docs"  -->  
 
 [DeployedgeMicrosoftEdgePoliciesDevelopertoolsavailability]: /deployedge/microsoft-edge-policies#developertoolsavailability "DeveloperToolsAvailability – Microsoft Edge – Richtlinien | Microsoft Docs"  
 

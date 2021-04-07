@@ -3,17 +3,17 @@ description: Progressive Web Apps (Chromium) werden nativ unter Windows 10 ausge
 title: Progressive Web Apps unter Windows
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/02/2021
+ms.date: 04/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: progressive Web-Apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft Store
-ms.openlocfilehash: 2850c983c1dae34362a43be9cd33abbfd0df77cf
-ms.sourcegitcommit: f605e4e27fed88aca286f2ae236e27f9a396b517
+ms.openlocfilehash: be832ee5c0ad395dae7b4946c41da157ab5cd9ba
+ms.sourcegitcommit: 146072bf606b84e5145a48333abf9c6b892a12d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "11474893"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "11480188"
 ---
 # <a name="progressive-web-apps-on-windows-overview"></a>Übersicht über progressive Web-Apps unter Windows  
 
@@ -183,7 +183,7 @@ Um ein großartiges PWA zu sein, muss Ihre App auch die folgenden Anforderungen 
 :::row-end:::  
 
 > [!NOTE]
-> Um Ihre PWA in eine [Microsoft #A0][MicrosoftDeveloperStore] zu verwandeln, navigieren Sie zu [Progressive Web Apps (EdgeHTML) im Microsoft Store][PwaEdgehtmlMicrosoftStore].  
+> Um Ihre PWA in eine [Microsoft Store-App zu][MicrosoftDeveloperStore] verwandeln, navigieren Sie zu [Progressive Web Apps im Microsoft Store][PwaChromiumMicrosoftStore].  
   
 ## <a name="see-also"></a>Weitere Informationen  
 
@@ -204,6 +204,8 @@ Um ein großartiges PWA zu sein, muss Ihre App auch die folgenden Anforderungen 
 [DevToolsGuideDeviceModeTestingOtherBrowsers]: ../devtools-guide-chromium/device-mode/testing-other-browsers.md "Emulieren und Testen anderer | Microsoft Docs"  
 [DevtoolsProgressiveWebApps]: ../devtools-guide-chromium/progressive-web-apps/index.md "Debuggen von Progressive Web Apps | Microsoft Docs"  
 [PwaChromiumMicrosoftStore]: ./microsoft-store.md "Veröffentlichen Sie Ihre Progressive Web App im Microsoft Store | Microsoft Docs"
+
+
 
 [WindowsUWPControlsPatternTilesNotificationsWns]: /windows/uwp/controls-and-patterns/tiles-and-notifications-windows-push-notification-services--wns--overview.md "Windows Push Notification Services (WNS) | Microsoft Docs"  
 [WindowsUWPDesignDevicesDesigningTv]: /windows/uwp/design/devices/designing-for-tv.md "Entwerfen für Xbox- und | Microsoft Docs"  
