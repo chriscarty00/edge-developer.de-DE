@@ -7,12 +7,12 @@ ms.date: 03/16/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: progressive Web-Apps, PWA, Edge, Windows, PWABuilder, Webmanifest, Service worker, Push
-ms.openlocfilehash: 6a40742c1065dbc3b8aaeeeb469ab9154629a47a
-ms.sourcegitcommit: f605e4e27fed88aca286f2ae236e27f9a396b517
+ms.openlocfilehash: 3023c38790185ca6989f4a487928abc79b1d5a2c
+ms.sourcegitcommit: 146072bf606b84e5145a48333abf9c6b892a12d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "11474914"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "11480195"
 ---
 # <a name="get-started-with-progressive-web-apps-chromium"></a><span data-ttu-id="37f73-104">Erste Schritte mit Progressive Web Apps (Chromium)</span><span class="sxs-lookup"><span data-stu-id="37f73-104">Get started with Progressive Web Apps (Chromium)</span></span>  
 
@@ -58,7 +58,7 @@ npm start
 
 ## <a name="get-started-building-a-pwa"></a><span data-ttu-id="37f73-125">Erste Schritte beim Erstellen einer PWA</span><span class="sxs-lookup"><span data-stu-id="37f73-125">Get started building a PWA</span></span>  
 
-<span data-ttu-id="37f73-126">Da Sie nun über eine einfache Web-App verfügen, erweitern Sie sie als PWA, indem Sie die drei Anforderungen für PWAs hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="37f73-126">Now that you have a simple web app, extend it as a PWA by adding the three requirements for PWAs</span></span><!--[3 requirements for PWAs][PwaEdgehtmlIndexRequirements]--><span data-ttu-id="37f73-127">: [HTTPS](#step-1---use-https), [ein Web-App-Manifest](#step-2---create-a-web-app-manifest)und ein [Service Worker](#step-3---add-a-service-worker).</span><span class="sxs-lookup"><span data-stu-id="37f73-127">: [HTTPS](#step-1---use-https), a [Web App Manifest](#step-2---create-a-web-app-manifest), and a [Service Worker](#step-3---add-a-service-worker).</span></span>  
+<span data-ttu-id="37f73-126">Da Sie nun über eine einfache Web-App verfügen, erweitern Sie sie als PWA, indem Sie die drei Anforderungen für PWAs hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="37f73-126">Now that you have a simple web app, extend it as a PWA by adding the three requirements for PWAs</span></span><!--[3 requirements for PWAs][ArchiveMicrosoftEdgeLegacyDeveloperPWAsIndexRequirements]--><span data-ttu-id="37f73-127">: [HTTPS](#step-1---use-https), [ein Web-App-Manifest](#step-2---create-a-web-app-manifest)und ein [Service Worker](#step-3---add-a-service-worker).</span><span class="sxs-lookup"><span data-stu-id="37f73-127">: [HTTPS](#step-1---use-https), a [Web App Manifest](#step-2---create-a-web-app-manifest), and a [Service Worker](#step-3---add-a-service-worker).</span></span>  
 
 ### <a name="step-1---use-https"></a><span data-ttu-id="37f73-128">Schritt 1 : Verwenden von HTTPS</span><span class="sxs-lookup"><span data-stu-id="37f73-128">Step 1 - Use HTTPS</span></span>  
 
@@ -335,7 +335,7 @@ self.addEventListener('notificationclick', function (event) {
 
 <!-- links -->  
 
-<!--[PwaEdgehtmlIndexRequirements]: ../progressive-web-apps/index.md#requirements "Requirements - Progressive Web Apps \(EdgeHTML\) on Windows | Microsoft Docs"  -->  
+<!--[ArchiveMicrosoftEdgeLegacyDeveloperPWAsIndexRequirements]: /archive/microsoft-edge/legacy/developer/progressive-web-apps/index#requirements "Requirements - Progressive Web Apps \(EdgeHTML\) on Windows | Microsoft Docs"  -->  
 
 [VisualStudioNodejsTutorialPublishAzureAppService]: /azure/javascript/tutorial-vscode-azure-app-service-node-03 "Bereitstellen einer Node.js in Azure mit Visual Studio Code | Microsoft Docs"  
 

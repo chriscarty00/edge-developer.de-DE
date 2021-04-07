@@ -4,17 +4,17 @@ description: Erfahren Sie, wie bewährte Methoden und ARIA (Accessible Rich Inte
 title: Erstellen | Barrierefreiheit
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
+ms.date: 04/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Barrierefreiheit, Barrierefreiheit für Entwickler, barrierefreie Websites, Edge, Webentwicklung, ARIA, Entwickler, UIA, Benutzeroberflächenautomatisierung
 ms.custom: seodec18
-ms.openlocfilehash: 69f0576b39815708d01477972abad1f8bdc9486e
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 3bc16450a3a64c06d290d1d3e112a9b2faecbe14
+ms.sourcegitcommit: 146072bf606b84e5145a48333abf9c6b892a12d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397888"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "11480153"
 ---
 # <a name="building-accessible-websites"></a><span data-ttu-id="947c6-104">Erstellen barrierefreier Websites</span><span class="sxs-lookup"><span data-stu-id="947c6-104">Building Accessible Websites</span></span>
 
@@ -144,7 +144,7 @@ ms.locfileid: "11397888"
 
 ### <a name="accessibility-techniques--tools"></a><span data-ttu-id="947c6-198">Barrierefreiheitstechniken & Tools</span><span class="sxs-lookup"><span data-stu-id="947c6-198">Accessibility Techniques & Tools</span></span>
 
-#### [<a name="accessibility-creating-accessible-extension-icons-for-microsoft-edge"></a><span data-ttu-id="947c6-199">Barrierefreiheit: Erstellen barrierefreier Erweiterungssymbole für Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="947c6-199">Accessibility: Creating accessible extension icons for Microsoft Edge</span></span>](../../edgehtml/extensions/guides/accessibility.md)
+#### [<a name="accessibility-creating-accessible-extension-icons-for-microsoft-edge"></a><span data-ttu-id="947c6-199">Barrierefreiheit: Erstellen barrierefreier Erweiterungssymbole für Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="947c6-199">Accessibility: Creating accessible extension icons for Microsoft Edge</span></span>](/archive/microsoft-edge/legacy/developer/extensions/guides/accessibility)
 
 <span data-ttu-id="947c6-200">Hier erhalten Sie Anleitungen zum Erstellen von Symbolen für barrierefreie Erweiterungen für Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="947c6-200">Get guidance on creating accessible extensions icons for Microsoft Edge.</span></span>
 
