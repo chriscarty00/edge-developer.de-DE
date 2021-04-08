@@ -3,16 +3,16 @@ description: Ihre Aufgabe endet nicht mit der Sicherstellung, dass Ihre Website 
 title: Emulieren und Testen anderer Browser
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 04/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 6b1239db373bd13d798ac90ac47a10878d07cdcb
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 22153a54df7c5b92236a745be8e3bbac9a52d247
+ms.sourcegitcommit: fa8bedfc83fbd1c4ce7bda8c69586c4f24007beb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398686"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "11481366"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -27,7 +27,6 @@ ms.locfileid: "11398686"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="emulate-and-test-other-browsers"></a>Emulieren und Testen anderer Browser  
 
 Ihre Aufgabe endet nicht mit der Sicherstellung, dass Ihre Website in Microsoft Edge und Android großartig ausgeführt wird.  Auch wenn der Gerätemodus in der Lage ist, eine Reihe anderer Geräte wie iPhones zu simulieren, empfehlen wir Ihnen, Lösungen für die Emulation von anderen Browsern zu prüfen.  
@@ -48,7 +47,7 @@ Firefox verfügt über eine [reaktionsfähige][MDNResponsiveDesignMode] Entwurfs
 
 ### <a name="edgehtml-emulation"></a>EdgeHTML-Emulation  
 
-Verwenden Sie zum Emulieren von Windows Phones [][DevToolsEdgeHtmlEmulation]die integrierte Microsoft Edge \(EdgeHTML\)-Emulation.  
+Verwenden Sie zum Emulieren von Windows Phones [][ArchiveMicrosoftEdgeDevtoolsEmulation]die integrierte Microsoft Edge \(EdgeHTML\)-Emulation.  
 
 Verwenden [Sie die IE 11-Emulation,][Ie11DevToolsEmulation] um zu simulieren, wie Ihre Seite in älteren Versionen von Internet Explorer aussehen kann.  
 
@@ -136,7 +135,7 @@ Wenn Sie die Emulatoren nicht verwenden können und keinen Zugriff auf echte Ger
 
 <!-- links -->  
 
-[DevToolsEdgeHtmlEmulation]: /microsoft-edge/devtools-guide/emulation "DevTools (EdgeHTML) – Emulations-| Microsoft Docs"  
+[ArchiveMicrosoftEdgeDevtoolsEmulation]: /archive/microsoft-edge/legacy/developer/devtools-guide/emulation "Emulations-| Microsoft Docs"  
 
 [Ie11DevToolsEmulation]: /previous-versions/windows/internet-explorer/ie-developer/samples/dn255001(v=vs.85) "Emulieren von Browsern, Bildschirmgrößen und GPS-| Microsoft Docs"  
 
