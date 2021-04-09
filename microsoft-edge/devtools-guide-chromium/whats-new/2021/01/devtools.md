@@ -3,17 +3,17 @@ description: Das Neuigkeiten-Tool ist jetzt Willkommen, visueller Schriftarten-E
 title: Neuigkeiten in DevTools (Microsoft Edge 89)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/15/2021
+ms.date: 03/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
 ms.localizationpriority: high
-ms.openlocfilehash: f04884c4022394ad96f1bd47236047d16ae5ccb9
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: d823408b40644585b885ad52201f7080bd542549
+ms.sourcegitcommit: fa8bedfc83fbd1c4ce7bda8c69586c4f24007beb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439647"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "11481359"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -98,9 +98,9 @@ Im **Element**-Tool hilft Ihnen das neue Flexbox(Flex)-Symbol, Flexbox-Container
    :::column-end:::
 :::row-end:::  
 
-### <a name="display-alignment-icons-and-gridlines-when-flexbox-layouts-change-using-css-properties"></a>Anzeigen von Ausrichtungssymbolen und Gitternetzlinien beim Ändern von Flexboxlayouts mithilfe von CSS-Eigenschaften  
+### <a name="display-alignment-icons-and-visual-guides-when-flexbox-layouts-change-using-css-properties"></a>Anzeigen von Ausrichtungssymbolen und visuellen Führungslinien, wenn das Layout von Flexboxlayouts mithilfe von CSS-Eigenschaften geändert wird  
 
-<!--  Title: Display alignment icons and gridlines for changes to Flexbox layouts from CSS properties  -->  
+<!--  Title: Display alignment icons and visual guides for changes to Flexbox layouts from CSS properties  -->  
 <!--  Subtitle:  CSS autocomplete in the Styles tool now displays icons next to Flexbox properties to help you review the effect a property has on your Flexbox layout -->  
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
@@ -117,7 +117,7 @@ Wenn Sie CSS für Ihr Flexbox-Layout bearbeiten, werden bei automatischen CSS-Ve
 :::row-end:::  
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/01/elements-flex-container-align.msft.png" alt-text="Das Menü AutoVervollständigung wird für CSS-Eigenschaften hervorgehoben, die mit ausrichten- beginnen" lightbox="../../media/2021/01/elements-flex-container-align.msft.png":::
+      :::image type="complex" source="../../media/2021/01/elements-flex-container-align.msft.png" alt-text="Das Menü "AutoVervollständigung" wird für CSS-Eigenschaften hervorgehoben, die mit ausrichten- beginnen" lightbox="../../media/2021/01/elements-flex-container-align.msft.png":::
          Das Menü "AutoVervollständigung" wird für CSS-Eigenschaften hervorgehoben, die beginnen mit `align-`  
       :::image-end:::  
    :::column-end:::
@@ -478,9 +478,9 @@ Wenn Sie unter Windows, Linux oder macOS arbeiten, sollten Sie die [Microsoft Ed
 [CR1148353]: https://crbug.com/1148353 "Problem 1148353: Featureanforderung: Objekt aus der DevTools-Konsole kopieren | Chromium-Fehler"  
 [CR1149859]: https://crbug.com/1149859 "Problem 1149859: [Featureanforderung][Konsole] Hinzufügen des Elements „Objekt in der Zwischenablage zum Kontextmenü kopieren“ | Chromium-Fehler"  
 [CR1150797]: https://crbug.com/1150797 "Problem 1150797: Hinzufügen des Kontextmenüs „Element duplizieren“ im Bereich „Element“ | Chromium-Fehler"  
-[CR1152391]: https://crbug.com/1152391 "Problem 1152391: Support für "CSS-Kontextmenü im Bereich "Formatvorlagen" kopieren" | Chromium-Fehler"  
+[CR1152391]: https://crbug.com/1152391 "Problem 1152391: Support für &quot;CSS-Kontextmenü im Bereich &quot;Formatvorlagen&quot; kopieren&quot; | Chromium-Fehler"  
 [CR1155120]: https://crbug.com/1155120 "Problem 1155120: [FR]Support für „Dateiname und Zeilennummer kopieren“ | Chromium-Fehler"  
-[CR1156628]: https://crbug.com/1156628 "Problem 1156628: DevTools: Support für das Feature ":target im erzwungenem Elementzustand" hinzufügen | Chromium-Fehler"  
+[CR1156628]: https://crbug.com/1156628 "Problem 1156628: DevTools: Support für das Feature &quot;:target im erzwungenem Elementzustand&quot; hinzufügen | Chromium-Fehler"  
 [CR1157329]: https://crbug.com/1157329 "Problem 1157329: Barrierefreiheit – Sprachausgabe: Die Sprachausgabe kündigt nicht die Anzahl und Position für Vorschläge an, die für Code auf der Registerkarte „Formatvorlagen“ verfügbar sind | Chromium-Fehler"  
 
 [MdnDocsWebCssTarget]: https://developer.mozilla.org/docs/web/css/:target ":target | MDN"  
