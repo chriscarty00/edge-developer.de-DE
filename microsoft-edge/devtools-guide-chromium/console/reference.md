@@ -168,7 +168,7 @@ ms.locfileid: "11483269"
 
 <span data-ttu-id="8df24-181">Wählen Sie zum Filtern der Nachrichten das **Dropdownmenü Protokollebenen** aus, und wählen Sie `Verbose` , , oder `Info` `Warning` `Error` aus.</span><span class="sxs-lookup"><span data-stu-id="8df24-181">To filter the messages, choose the **Log Levels** dropdown and choose `Verbose`, `Info`, `Warning`, or `Error`.</span></span>  
 
-:::image type="complex" source="../media/console-log-level-default-levels.msft.png" alt-text="Dropdownliste "Protokollebenen"" lightbox="../media/console-log-level-default-levels.msft.png":::
+:::image type="complex" source="../media/console-log-level-default-levels.msft.png" alt-text="Dropdownliste Protokollebenen" lightbox="../media/console-log-level-default-levels.msft.png":::
    <span data-ttu-id="8df24-183">Dropdownliste **"Protokollebenen"**</span><span class="sxs-lookup"><span data-stu-id="8df24-183">The **Log Levels** dropdown</span></span>  
 :::image-end:::  
 
@@ -248,7 +248,7 @@ ms.locfileid: "11483269"
 
 <span data-ttu-id="8df24-237">Die Standardoption für das **JavaScript-Kontextdropdown** ist **top**, das den [Browserkontext der][MdnDocsGlossaryBrowsingContext] Hauptwebseite darstellt.</span><span class="sxs-lookup"><span data-stu-id="8df24-237">The default option for the **JavaScript Context** dropdown is **top**, which represents the [browsing context][MdnDocsGlossaryBrowsingContext] of the main webpage.</span></span>  
 
-:::image type="complex" source="../media/console-dom-level-top.msft.png" alt-text="Das Dropdownmenü "JavaScript-Kontext"" lightbox="../media/console-dom-level-top.msft.png":::
+:::image type="complex" source="../media/console-dom-level-top.msft.png" alt-text="Das Dropdownmenü JavaScript-Kontext" lightbox="../media/console-dom-level-top.msft.png":::
    <span data-ttu-id="8df24-239">Das **Dropdownmenü "JavaScript-Kontext"**</span><span class="sxs-lookup"><span data-stu-id="8df24-239">The **JavaScript Context** dropdown</span></span>  
 :::image-end:::  
 
