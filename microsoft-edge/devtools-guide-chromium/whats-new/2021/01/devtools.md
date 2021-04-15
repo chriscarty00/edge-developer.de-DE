@@ -117,7 +117,7 @@ ms.locfileid: "11481359"
 :::row-end:::  
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/01/elements-flex-container-align.msft.png" alt-text="Das Menü "AutoVervollständigung" wird für CSS-Eigenschaften hervorgehoben, die mit ausrichten- beginnen" lightbox="../../media/2021/01/elements-flex-container-align.msft.png":::
+      :::image type="complex" source="../../media/2021/01/elements-flex-container-align.msft.png" alt-text="Das Menü AutoVervollständigung wird für CSS-Eigenschaften hervorgehoben, die mit ausrichten- beginnen" lightbox="../../media/2021/01/elements-flex-container-align.msft.png":::
          <span data-ttu-id="ddb48-150">Das Menü "AutoVervollständigung" wird für CSS-Eigenschaften hervorgehoben, die beginnen mit</span><span class="sxs-lookup"><span data-stu-id="ddb48-150">Autocomplete menu highlighted for CSS properties that start with</span></span> `align-`  
       :::image-end:::  
    :::column-end:::
