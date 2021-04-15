@@ -1,18 +1,18 @@
 ---
 description: Informationen zu automatischen Updates für Erweiterungen in Microsoft Edge
-title: Erweiterungen für automatische Updates in Microsoft Edge
+title: Automatisches Aktualisieren von Erweiterungen in Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/17/2021
+ms.date: 04/13/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, Erweiterungenentwicklung, Browsererweiterungen, Add-Ons, Partner Center, Entwickler
-ms.openlocfilehash: 0f3f140cd3a2a079cd09f4d61e46a420342e15e0
-ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
+ms.openlocfilehash: 74d7b61c8eca1155b545b7e81627a652bf336e66
+ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "11461528"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "11483072"
 ---
 <!-- Copyright A. W. Fuchs
 
@@ -27,22 +27,24 @@ ms.locfileid: "11461528"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-# <a name="auto-update-extensions-in-microsoft-edge"></a>Erweiterungen für automatische Updates in Microsoft Edge  
+# <a name="automatically-update-extensions-in-microsoft-edge"></a>Automatisches Aktualisieren von Erweiterungen in Microsoft Edge  
 
-Das automatische Aktualisieren von Erweiterungen bietet einige der gleichen Vorteile wie die automatische Aktualisierung von Microsoft Edge:   
+Wenn Sie festlegen, dass Ihre Erweiterung automatisch aktualisiert wird, teilt Ihre Erweiterung die folgenden Vorteile mit Microsoft Edge, wenn sie auf automatische Aktualisierung festgelegt ist.  
 
 *   Integrieren sie Fehler- und Sicherheitsbehebungen.  
 *   Fügen Sie neue Features oder Leistungsverbesserungen hinzu.  
 *   Verbessern Sie die Benutzeroberfläche.  
 
-Früher, als nicht speicherbasierte Erweiterungen unterstützt wurden, konnten die systemeigenen Binärdateien und die Erweiterung gleichzeitig aktualisiert werden.  Jetzt werden diese Erweiterungen im Microsoft Edge-Add-Ons-Speicher gehostet, und Updates werden mit demselben Mechanismus vorgenommen, den Microsoft Edge verwendet, den Sie nicht steuern können.  Beim Aktualisieren von Erweiterungen, die von systemeigenen Binärdateien abhängig sind, sollten Sie vorsichtig sein.  
+Zuvor wurden nicht speicherbasierte Erweiterungen unterstützt.  Außerdem haben Sie die systemeigenen Binärdateien und die Erweiterung gleichzeitig aktualisiert.  
+
+Jetzt hostet der Microsoft Edge-Add-Ons-Speicher Ihre Erweiterungen, und Sie aktualisieren Ihre Erweiterung mit demselben Mechanismus wie Microsoft Edge.  Sie steuern den Updatemechanismus nicht.  Seien Sie vorsichtig, wenn Sie Erweiterungen aktualisieren, die von systemeigenen Binärdateien abhängig sind.  
 
 > [!NOTE]
-> Dieses Thema gilt nicht für Erweiterungen, die über das [Partner Center-Dashboard veröffentlicht][MicrosoftPartnerCenter] wurden.  Sie können das Dashboard verwenden, um aktualisierte Versionen für Ihre Benutzer und für den Microsoft Edge-Add-Ons-Speicher zu veröffentlichen.
+> Dieser Artikel gilt nicht für Erweiterungen, die Sie mit dem [Partner Center-Dashboard][MicrosoftPartnerDashboardMicrosoftedgePublicLoginRefDd] veröffentlichen.  Sie können das Dashboard verwenden, um aktualisierte Versionen für Ihre Benutzer und für den Microsoft Edge-Add-Ons-Speicher zu veröffentlichen.  Weitere Informationen finden Sie unter [Aktualisieren oder Entfernen der Erweiterung.][ExtensionsPublishUpdateExtension]  
 
 ## <a name="overview"></a>Übersicht  
 
-Alle paar Stunden überprüft Microsoft Edge, ob jede installierte Erweiterung oder App über eine Update-URL verfügt.  Erweiterungen können mithilfe des Felds im Manifest eine Update-URL angeben, die auf einen Speicherort `update_url` verweist, um eine Aktualisierungsprüfung durchzuführen.  Für jeden `update_url` sendet er Anforderungen für aktualisierte Manifest-XML-Dateien.  Wenn in der Updatemanifest-XML-Datei eine neuere Version als die installierte aufgeführt ist, lädt Microsoft Edge die neuere Version herunter und installiert sie.  Der gleiche Prozess funktioniert für manuelle Updates, bei denen die neue Datei mit demselben privaten Schlüssel wie die aktuell installierte `.crx` Version signiert werden muss.  
+Alle paar Stunden überprüft Microsoft Edge, ob jede installierte Erweiterung oder App über eine Update-URL verfügt.  Verwenden Sie das Feld im Manifest, um eine Update-URL für Ihre `update_url` Erweiterung anzugeben.  Das `update_url` Feld im Manifest zeigt auf einen Speicherort, um eine Aktualisierungsprüfung zu vervollständigen.  Für jeden `update_url` sendet er Anforderungen für aktualisierte Manifest-XML-Dateien.  Wenn in der Updatemanifest-XML-Datei eine neuere Version als die installierte aufgeführt ist, lädt Microsoft Edge die neuere Version herunter und installiert sie.  Der gleiche Prozess funktioniert für manuelle Updates, bei denen die neue Datei mit demselben privaten Schlüssel wie die aktuell installierte `.crx` Version signiert werden muss.  
 
 > [!NOTE]
 > Um den Datenschutz der Benutzer zu gewährleisten, sendet Microsoft Edge keine Kopfzeilen mit Manifestanforderungen für automatische Updates und ignoriert alle Kopfzeilen in den Antworten `Cookie` `Set-Cookie` auf diese Anforderungen.  
@@ -89,18 +91,35 @@ Die Standardhäufigkeit der Aktualisierungsprüfung beträgt mehrere Stunden.  U
 
 ## <a name="advanced-usage-request-parameters"></a>Erweiterte Verwendung: Anforderungsparameter  
 
-Der grundlegende Mechanismus für die automatische Aktualisierung ist so einfach wie das Ablegen einer statischen XML-Datei auf einem Beliebigen Webserver wie Apache und das Aktualisieren der XML-Datei, wenn Sie neue Versionen Ihrer Erweiterungen veröffentlichen.  
+Der grundlegende Mechanismus ist einfach.  Führen Sie die folgenden Aktionen aus, um Die Erweiterung automatisch zu aktualisieren.  
 
-Sie können die Tatsache nutzen, dass der Updatemanifestanforderung Parameter hinzugefügt werden, die die Erweiterungs-ID und Version angeben. Sie können die gleiche Update-URL für alle Erweiterungen anstelle einer statischen XML-Datei verwenden.  Um dieselbe Update-URL für alle Erweiterungen zu verwenden, zeigen Sie auf eine URL, auf der dynamischer serverseitiger Code ausgeführt wird, um diese Parameter zu testen.  
+1.  Laden Sie Ihre statische XML-Datei auf Ihrem Webserver hoch, z. B. Apache.  
+1.  Aktualisieren Sie die XML-Datei, wenn Sie neue Versionen Ihrer Erweiterungen veröffentlichen.  
+    
+Nutzen Sie die Tatsache, dass einige Parameter, die der Updatemanifestanforderung hinzugefügt wurden, die Erweiterung und `ID` `version` angeben.  Sie können dasselbe für alle Erweiterungen anstelle einer `update URL` statischen XML-Datei verwenden.  Um dasselbe für alle Erweiterungen zu verwenden, zeigen Sie auf eine URL, auf der dynamischer serverseitiger Code ausgeführt wird, `update URL` um die Parameter zu testen.  
 
-Im folgenden Beispiel wird das Format der Anforderungsparameter der Update-URL veranschaulicht: `?x={extension_data}` .
+Im folgenden Beispiel wird das Format der Anforderungsparameter der Update-URL veranschaulicht.  
 
-In diesem Beispiel `{extension_data}` handelt es sich um eine URL-codierte Zeichenfolge, die das folgende Format verwendet: `id={id}&v={version}` .
+```url
+?x={extension_data}
+```  
+
+In diesem Beispiel `{extension_data}` handelt es sich um eine URL-codierte Zeichenfolge, die das folgende Format verwendet.  
+
+```url
+id={id}&v={version}
+```  
 
 Die folgenden beiden Erweiterungen verweisen beispielsweise beide auf die gleiche Update-URL `http://contoso.com/extension_updates.php` .  
 
-*  Erweiterung 1 - ID: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" Version: "1.1"
-*  Erweiterung 2 - ID: "bbbbbbbbbbbbbbbbbbbbbbbbbb" Version: "0,4"
+*   Erweiterung 1  
+    *   ID: `aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa`  
+    *   Update-URL: `http://contoso.com/extension_updates.php`
+    *   Version: `1.1`  
+*   Erweiterung 2  
+    *   ID: `bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb`  
+    *   Update-URL: `http://contoso.com/extension_updates.php`
+    *   Version: `0.4`  
 
 
 Im Folgenden sind die Anforderungen zum Aktualisieren jeder Erweiterung zu finden.  
@@ -139,11 +158,13 @@ Als neue APIs-Version für das Microsoft Edge-Erweiterungssystem können Sie ein
 
 <!-- links -->  
 
-[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "Partner Center"  
+[ExtensionsPublishUpdateExtension]: ../publish/update-extension.md "Aktualisieren oder Entfernen Der Erweiterungs-| Microsoft Docs"  
+
+[MicrosoftPartnerDashboardMicrosoftedgePublicLoginRefDd]: https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "Partner Center"  
 
 > [!NOTE]
 > Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
-> Die ursprüngliche Seite finden Sie [hier](https://developer.chrome.com/docs/apps/autoupdate/).  
+> Die ursprüngliche Seite finden Sie [hier](https://developer.chrome.com/docs/apps/autoupdate).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  

@@ -7,12 +7,12 @@ ms.date: 04/09/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, experiment, progressive web apps, web apps, PWAs, PWA
-ms.openlocfilehash: 5ab2ab0a727d1eb52f61a01ea64b52bc1c09abce
-ms.sourcegitcommit: f6a3ab7b13adf05dbe7a4bf65ee67c9b0f6fab95
+ms.openlocfilehash: 20bc4c90c1fe30be360b44294966415823f9b3a6
+ms.sourcegitcommit: 4c6b74b9cdfca73c410d9eba9b42d229b695ee4a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/13/2021
-ms.locfileid: "11482154"
+ms.locfileid: "11482443"
 ---
 # <a name="experimental-features-in-progressive-web-apps-pwas"></a>Experimentelle Features in Progressive Web Apps (PWAs)  
 
@@ -94,7 +94,7 @@ Aktualisieren Sie Ihr Manifest, um das Protokoll zu unterstützen, das Sie regis
     
 Wenn mehrere Apps ein Protokoll registrieren, wird dem Benutzer eine Eingabeaufforderung angezeigt.  Der Benutzer wählt die entsprechende App aus der Liste aus, die vom Betriebssystem oder Browser angezeigt wird.  
 
-Um eine Vorschau der Protokollverarbeitung in Microsoft Edge unter Windows anzuzeigen, navigieren Sie zu [Aktivieren](#turn-on-experimental-features) experimenteller Features, und aktivieren Sie **Desktop Web Apps unterstützen Protokollhandler**.  
+Navigieren Sie zur Vorschau der Protokollverarbeitung in Microsoft Edge unter Windows zu Aktivieren experimenteller [Features,](#turn-on-experimental-features) und aktivieren Sie **die Desktop-PWA-Protokollbehandlung**.  
 
 Weitere Informationen zur Ausführung der Ursprungsprozedur für Protokollhandler finden Sie unter Registrieren für die Registrierung von [Web App-Protokollhandlern.][MicrosoftDeveloperMicrosoftEdgeOriginTrialsWebAppProtocolHandlerRegistrationRegistration]  
 

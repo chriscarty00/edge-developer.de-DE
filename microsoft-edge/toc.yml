@@ -174,13 +174,19 @@
                 - name: Konsole – Übersicht
                   href: devtools-guide-chromium/console/index.md
                 - name: Protokollmeldungen
-                  href: devtools-guide-chromium/console/log.md
+                  href: devtools-guide-chromium/console/console-log.md
                 - name: Ausführen von JavaScript
-                  href: devtools-guide-chromium/console/javascript.md
+                  href: devtools-guide-chromium/console/console-javascript.md
                 - name: Verweis
                   href: devtools-guide-chromium/console/reference.md
                 - name: Verfolgen von JavaScript-Ausdrücken in Echtzeit
                   href: devtools-guide-chromium/console/live-expressions.md
+                - name: Debuggen von Konsolenfehlern
+                  href: devtools-guide-chromium/console/console-debug-javascript.md
+                - name: Interagieren mit dem DOM
+                  href: devtools-guide-chromium/console/console-dom-interaction.md
+                - name: Filtern von Konsolennachrichten
+                  href: devtools-guide-chromium/console/console-filters.md
             - name: Abdeckung
               href: devtools-guide-chromium/coverage/index.md
             - name: Elemente
