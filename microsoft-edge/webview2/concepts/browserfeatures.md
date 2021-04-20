@@ -1,5 +1,5 @@
 ---
-description: Feature differences between Microsoft Edge and WebView2 title: Feature differences between Microsoft Edge and WebView2 author: MSEdgeTeam ms.author: msedgedevrel ms.date: 31.03.2021 ms.topic: conceptual ms.prod: microsoft-edge ms.technology: webview keywords: IWebView2, IWebView2WebView, WebView2, Webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html no-loc:
+beschreibung: Featureunterschiede zwischen Microsoft Edge und WebView2-Titel: Featureunterschiede zwischen Microsoft Edge und WebView2-Autor: MSEdgeTeam ms.author: msedgedevrel ms.date: 19.04.2021 ms.topic: konzeptionell ms.prod: microsoft-edge ms.technology: webview keywords: IWebView2, IWebView2WebView, WebView2, Webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html no-loc:
 - "Autofill for Addresses"
 - "Autofill for Passwords"
 - "Autofill for Payments""
@@ -27,7 +27,7 @@ description: Feature differences between Microsoft Edge and WebView2 title: Feat
 ---
 # <a name="browser-feature-differences-between-microsoft-edge-and-webview2"></a>Unterschiede zwischen Microsoft Edge und WebView2 bei Browserfeatures  
 
-WebView2 basiert auf dem neuen Microsoft Edge-Browser.  Sie haben die Möglichkeit, Features vom Browser auf WebView2-basierte Apps zu erweitern, was nützlich ist.  Da Sich WebView2 jedoch nicht auf browser like apps beschränkt, müssen einige Browserfeatures geändert oder entfernt werden.   Dieser Artikel enthält die folgenden Informationen.  
+WebView2 basiert auf dem neuen Microsoft Edge-Browser.  Sie haben die Möglichkeit, Features vom Browser auf WebView2-basierte Apps zu erweitern, was nützlich ist.  Da Sich WebView2 jedoch nicht auf browser like apps beschränkt, müssen einige Browserfeatures geändert oder entfernt werden.  Dieser Artikel enthält die folgenden Informationen.  
 
 *   Die geänderten Browserfeatures und unterstützenden Informationen.   
 *   Die Möglichkeit, das Feature ein- oder auszuschalten.  
@@ -67,6 +67,7 @@ In der folgenden Tabelle werden die WebView2-Features angezeigt, die sich vom Mi
 | Immersive Reader | Deaktiviert | Nein | Dieses Feature hängt von der Browserbenutzeroberfläche für die Interaktion ab.  Dieses Feature ist deaktiviert.  |  
 | Intrusive Ads | Deaktiviert | Nein | Dieses Feature ist deaktiviert.  |  
 | Tastenkombinationen | Überprüfen von Details | Überprüfen von Details | Die tastenkombinationen, die standardmäßig deaktiviert sind, sind entweder nicht sinnvoll oder verursachen Probleme in WebView2.  Sie können diese Verknüpfungen möglicherweise nicht aktivieren oder deaktivieren.  Stattdessen können Sie mithilfe des Ereignisses auf eine Tastenkombination lauschen und bei Bedarf `AcceleratorKeyPressed` eine benutzerdefinierte Antwort erstellen.  Weitere Informationen finden Sie unter [Weitere Tastenkombinationen.](#additional-keyboard-shortcuts-information) |  
+| Pushbenachrichtigungen | Deaktiviert | Nein | Dieses Feature ist in WebView2 nicht implementiert.  Weitere Informationen finden Sie unter [Add support for HTML5 Notification API (#308).][GithubMicrosoftedgeWebview2feedbackIssues308] |  
 | Read Aloud | Deaktiviert | Nein | Dieses Feature ist deaktiviert.  |  
 | Smart Screen | Ein`*` | Nein | `*` Die Benutzeroberfläche für dieses Feature wurde entfernt, die zugrunde liegende Funktionalität ist jedoch weiterhin verfügbar.  Darüber hinaus können Sie die Option Smart Screen über eine Befehlszeile deaktivieren.  |  
 | Translate | Deaktiviert | Nein | Dieses Feature ist deaktiviert.  |  
@@ -178,8 +179,7 @@ Wenn Sie auf `AreBrowserAcceleratorKeysEnabled` `FALSE` festlegen, sind die folg
 
 > [!Note] 
 > Verwenden Sie das [AcceleratorKeyPressed-Ereignis,][DotnetApiMicrosoftWebWebview2CoreCorewebview2controllerAcceleratorkeypressedViewWebview2Dotnet1077444] um einen der Schlüssel einzeln anzupassen.  
-  
-  
+
 ## <a name="getting-in-touch-with-the-microsoft-edge-webview2-team"></a>Kontakt mit dem Microsoft Edge WebView2-Team  
 
 [!INCLUDE [contact WebView2 team note](../includes/contact-webview-team-note.md)]  
@@ -191,5 +191,7 @@ Wenn Sie auf `AreBrowserAcceleratorKeysEnabled` `FALSE` festlegen, sind die folg
 [DotnetApiMicrosoftWebWebview2CoreCorewebview2controllerAcceleratorkeypressedViewWebview2Dotnet1077444]: /dotnet/api/microsoft.web.webview2.core.corewebview2controller.acceleratorkeypressed?view=webview2-dotnet-1.0.774.44&preserve-view=true "CoreWebView2Controller.AcceleratorKeyPressed-Ereignis | Microsoft Docs"  
 
 [DevtoolsShortcutsIndex]: ../../devtools-guide-chromium/shortcuts/index.md "Microsoft Edge DevTools-Tastenkombinationen | Microsoft Docs"  
+
+[GithubMicrosoftedgeWebview2feedbackIssues308]: https://github.com/MicrosoftEdge/WebView2Feedback/issues/308 "Hinzufügen von Unterstützung für html5 Notification API (#308) | GitHub"  
 
 [PeterExperimentsChromiumCommandLineSwitches]: https://peter.sh/experiments/chromium-command-line-switches "Liste der Chromium-Befehlszeilenschalter | Peter Beverloo"  
