@@ -3,17 +3,17 @@ description: Microsoft Edge unter Linux, verbesserte Webhint-Tipps im Probleme-T
 title: Neuerungen in DevTools (Microsoft Edge 88)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/15/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
 ms.localizationpriority: high
-ms.openlocfilehash: 7f4f9e2602d26b09a8b52a570c4caaaccc4f04f1
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: a63515060d989a84838e4a9ba7f803184a3fc91f
+ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439275"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "11514375"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -126,7 +126,7 @@ Zeigen Sie mit dem neuen Link **Netzwerkanforderungen** alle Routinginformatione
 1.  Navigieren Sie zu **Anwendung** > **Service Workers**.  
 1.  Wählen Sie **Netzwerkanforderungen** aus.  
     
-    :::image type="complex" source="../../media/2020/11/service-worker-application-network-requests.msft.png" alt-text="Öffnen des Netzwerk-Tools im Bereich Service Workers" lightbox="../../media/2020/11/service-worker-application-network-requests.msft.png":::
+    :::image type="complex" source="../../media/2020/11/service-worker-application-network-requests.msft.png" alt-text="Öffnen des Netzwerk-Tools im Bereich "Service Workers"" lightbox="../../media/2020/11/service-worker-application-network-requests.msft.png":::
        Öffnen des **Netzwerk**-Tools im Bereich **Service Workers**
     :::image-end:::  
     
@@ -151,7 +151,7 @@ Debuggen Sie Netzwerkanforderungen, die über Service Worker ausgeführt werden.
 *   Die Laufzeit eines `fetch`-Ereignishandlers.  
 *   Die Laufzeit aller `fetch`-Ereignisse zum Laden eines Clients.  
     
-:::image type="complex" source="../../media/2020/11/network-timing-service-worker.msft.png" alt-text="Bereich Timing" lightbox="../../media/2020/11/network-timing-service-worker.msft.png":::
+:::image type="complex" source="../../media/2020/11/network-timing-service-worker.msft.png" alt-text="Bereich "Timing"" lightbox="../../media/2020/11/network-timing-service-worker.msft.png":::
    Bereich **Timing**  
 :::image-end:::  
 
@@ -396,10 +396,10 @@ Wenn Sie unter Windows, Linux oder macOS arbeiten, sollten Sie die [Microsoft Ed
 [CR1138633]: https://crbug.com/1138633 "Problem 1138633: DevTools: CSS <angle>-Komponente sollte das Erscheinungsbild ihrer Eigenschaft im Hintergrund der Uhr widerspiegeln | Chromium-Fehler"  
 [CR1139615]: https://crbug.com/1139615 "Problem 1139615: Netzwerkinitiator sollte die Möglichkeit bieten, die Stapelüberwachung zu kopieren | Chromium-Fehler"  
 [CR1139899]: https://crbug.com/1139899 "Problem 1139899: Verfügbarkeit der Gated-API in der Frame-Detailansicht melden | Chromium-Fehler"  
-[CR1139945]: https://crbug.com/1139945 "Problem 1139945: Symbole für Flexbox-CSS-Eigenschaften im Bereich "Stile" | Chromium-Fehler"  
+[CR1139945]: https://crbug.com/1139945 "Problem 1139945: Symbole für Flexbox-CSS-Eigenschaften im Bereich &quot;Stile&quot; | Chromium-Fehler"  
 [CR1141824]: https://crbug.com/1141824 "Problem 1141824: Verbessern der CORS-Fehlerberichterstattung in DevTools | Chromium-Fehler"  
 [CR1144090]: https://crbug.com/1144090 "Problem 1144090: Hinzufügen von Flex-Stil-Adornern zur Elemente-Struktur | Chromium-Fehler"  
-[CR1146985]: https://crbug.com/1146985 "Problem 1146985: Gelöschter Text wird weiterhin im Textfeld des Abschnitts "Speicher" des DevTools-Fensters angezeigt | Chromium-Fehler"  
+[CR1146985]: https://crbug.com/1146985 "Problem 1146985: Gelöschter Text wird weiterhin im Textfeld des Abschnitts &quot;Speicher&quot; des DevTools-Fensters angezeigt | Chromium-Fehler"  
 
 [GlitchCorsErrors]: https://cors-errors.glitch.me "CORS-Fehler | Glitch"  
 
@@ -419,7 +419,7 @@ Wenn Sie unter Windows, Linux oder macOS arbeiten, sollten Sie die [Microsoft Ed
 
 > [!NOTE]
 > Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
-> Die ursprüngliche Seite findet sich [hier](https://developers.google.com/web/updates/2020/11/devtools/index) und wurde von [Jecelyn Yeen][JecelynYeen] \(Developer Advocate, Chrome DevTools\) erstellt.  
+> Die ursprüngliche Seite findet sich [hier](https://developer.chrome.com/blog/new-in-devtools-88) und wurde von [Jecelyn Yeen][JecelynYeen] \(Developer Advocate, Chrome DevTools\) erstellt.  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  

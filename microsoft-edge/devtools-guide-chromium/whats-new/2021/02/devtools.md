@@ -3,17 +3,17 @@ description: Debugging-Unterstützung für CSS Flexbox, Anzeige zum Leistungs-He
 title: Neuigkeiten in DevTools (Microsoft Edge 90)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/15/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
 ms.localizationpriority: high
-ms.openlocfilehash: e220bbbe0a545b7cc539d0c77deb2ecb070decc0
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 3653bd2293f96a6ddfb84d8e1c7492bea78c15c1
+ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439745"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "11514403"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -126,7 +126,7 @@ DevTools verfügt jetzt über dedizierte CSS-Flexbox-Debuggingtools.  Wenn der `
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png" alt-text="Abschnitt Flexbox im Layoutbereich" lightbox="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png":::
+      :::image type="complex" source="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png" alt-text="Abschnitt "Flexbox" im Layoutbereich" lightbox="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png":::
          Abschnitt **Flexbox** im Bereich **Layout**  
       :::image-end:::  
    :::column-end:::
@@ -241,7 +241,7 @@ In der Tabelle "Anforderungen" wird jetzt eine neue Spalte mit der Kopfzeile **R
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/network-requests-remote-address-space.msft.png" alt-text="In der Tabelle Anforderungen wird jetzt die Spalte Remote-Adressraum angezeigt." lightbox="../../media/2021/02/network-requests-remote-address-space.msft.png":::
+      :::image type="complex" source="../../media/2021/02/network-requests-remote-address-space.msft.png" alt-text="In der Tabelle "Anforderungen" wird jetzt die Spalte "Remote-Adressraum" angezeigt." lightbox="../../media/2021/02/network-requests-remote-address-space.msft.png":::
          In der Tabelle "Anforderungen" wird jetzt die Spalte **Remote-Adressraum** angezeigt. :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -258,7 +258,7 @@ In der Frame-Detailansicht wird jetzt eine Liste der zulässigen und nicht zulä
 
 Im Bereich **Cookies** im Tool **Anwendung** wird jetzt das `SameParty` Attribut für jedes Cookie angezeigt.  Das `SameParty` Attribut ist ein neues boolesches Attribut, das angibt, ob ein Cookie in Anforderungen an Ursprünge derselben [First-Party-Sets][GithubPrivacycgFirstPartySets] enthalten ist.  Navigieren Sie zu Problem [1161427][CR1161427], um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen.  
 
-:::image type="complex" source="../../media/2021/02/application-storage-cookies-sameparty.msft.png" alt-text="SameParty-Spalte im Bereich Cookies" lightbox="../../media/2021/02/application-storage-cookies-sameparty.msft.png":::
+:::image type="complex" source="../../media/2021/02/application-storage-cookies-sameparty.msft.png" alt-text="SameParty-Spalte im Bereich "Cookies"" lightbox="../../media/2021/02/application-storage-cookies-sameparty.msft.png":::
    **SameParty**-Spalte im Bereich **Cookies**  
 :::image-end:::  
 
@@ -336,7 +336,7 @@ Wenn Sie unter Windows, Linux oder macOS arbeiten, sollten Sie die [Microsoft Ed
 [CR1073887]: https://crbug.com/1073887 "Problem 1073887: DevTools: @media (Farbskala: ...) Farbraumemulation | Chromium-Fehler"  
 [CR1128885]: https://crbug.com/1128885 "Problem 1128885: DevTools-Unterstützung für CORS-RFC1918 | Chromium-Fehler"  
 [CR1146450]: https://crbug.com/1146450 "Problem 1146450: [Android] Implementieren von Bottom Sheet-Installationen | Chromium-Fehler"  
-[CR1158276]: https://crbug.com/1158276 "Problem 1158276: Der Bereich "Initiator-Kette anfordern" kann nicht mithilfe der Pfeiltasten im Abschnitt "Netzwerk" von DevTools erweitert/verkleinert werden | Chromium-Fehler"  
+[CR1158276]: https://crbug.com/1158276 "Problem 1158276: Der Bereich &quot;Initiator-Kette anfordern&quot; kann nicht mithilfe der Pfeiltasten im Abschnitt &quot;Netzwerk&quot; von DevTools erweitert/verkleinert werden | Chromium-Fehler"  
 [CR1158827]: https://crbug.com/1158827 "Problem 1158827: [Berechtigungsrichtlinie] Implementieren der Devtool-Unterstützung für Berechtigungsrichtlinien | Chromium-Fehler"  
 [CR1160637]: https://crbug.com/1160637 "Problem 1160637: Der Fokus auf 'Initiierungskette anfordern' wird im Abschnitt 'Netzwerk' des Fensters 'Dev Tools' unvollständig angezeigt | Chromium-Fehler"  
 [CR1161427]: https://crbug.com/1161427 "Problem 1161427: &#9730; Unterstützt das Debuggen von SameParty-Cookie-Attributen in DevTools | Chromium-Fehler"  
@@ -346,7 +346,7 @@ Wenn Sie unter Windows, Linux oder macOS arbeiten, sollten Sie die [Microsoft Ed
 [CR1177685]: https://crbug.com/1177685 "Problem 1177685: Entfernen von nicht standardmäßiger Unterstützung für fn.displayName | Chromium-Fehler"  
 [CR1178530]: https://crbug.com/1178530 "Problem 1178530: Die Konsole maskiert beim Drucken von Zeichenfolgen keine doppelten Anführungszeichen | Chromium-Fehler"  
 
-[CsswgDraftsMediaqueries4ColorGamut]: https://drafts.csswg.org/mediaqueries-4#color-gamut "Farbanzeigequalität: Das Feature "Farbskala" | Entwürfe des CSS-Arbeitsgruppen-Editors"  
+[CsswgDraftsMediaqueries4ColorGamut]: https://drafts.csswg.org/mediaqueries-4#color-gamut "Farbanzeigequalität: Das Feature &quot;Farbskala&quot; | Entwürfe des CSS-Arbeitsgruppen-Editors"  
 
 [GithubMicrosoftedgeMsedgeexplainersBlobMainDevtoolsFocusmodeExplainer]: https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/DevTools/FocusMode/explainer.md "DevTools: Benutzeroberfläche für den Fokusmodus – MicrosoftEdge/MSEdgeExplainers | GitHub"  
 
@@ -360,7 +360,7 @@ Wenn Sie unter Windows, Linux oder macOS arbeiten, sollten Sie die [Microsoft Ed
 
 > [!NOTE]
 > Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
-> Die ursprüngliche Seite findet sich [hier](https://developers.google.com/web/updates/2021/02/devtools/index) und wurde von [Jecelyn Yeen][JecelynYeen] \(Developer Advocate, Chrome DevTools\) erstellt.  
+> Die ursprüngliche Seite findet sich [hier](https://developer.chrome.com/blog/new-in-devtools-90) und wurde von [Jecelyn Yeen][JecelynYeen] \(Developer Advocate, Chrome DevTools\) erstellt.  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  

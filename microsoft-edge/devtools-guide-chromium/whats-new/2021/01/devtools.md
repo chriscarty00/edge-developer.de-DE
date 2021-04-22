@@ -3,17 +3,17 @@ description: Das Neuigkeiten-Tool ist jetzt Willkommen, visueller Schriftarten-E
 title: Neuigkeiten in DevTools (Microsoft Edge 89)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/19/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
 ms.localizationpriority: high
-ms.openlocfilehash: d823408b40644585b885ad52201f7080bd542549
-ms.sourcegitcommit: fa8bedfc83fbd1c4ce7bda8c69586c4f24007beb
+ms.openlocfilehash: ec14d802af52c0bb2e658549f48764279c787f47
+ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "11481359"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "11514368"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -492,7 +492,7 @@ Wenn Sie unter Windows, Linux oder macOS arbeiten, sollten Sie die [Microsoft Ed
 
 > [!NOTE]
 > Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
-> Die ursprüngliche Seite findet sich [hier](https://developers.google.com/web/updates/2021/01/devtools/index) und wurde von [Jecelyn Yeen][JecelynYeen] \(Developer Advocate, Chrome DevTools\) erstellt.  
+> Die ursprüngliche Seite findet sich [hier](https://developer.chrome.com/blog/new-in-devtools-89) und wurde von [Jecelyn Yeen][JecelynYeen] \(Developer Advocate, Chrome DevTools\) erstellt.  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
