@@ -3,16 +3,16 @@ description: Neue CSS Grid-Debuggingtools, Webauthn-Tool, verschiebbare Tools un
 title: Neues in DevTools (Microsoft Edge 87)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/12/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 53aa8f20ba400c7ff95432b1e752f1f008dac919
-ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+ms.openlocfilehash: 0f4e0aaeba55f584697d1817f7ea54044dfdd380
+ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "11408332"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "11514354"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -112,7 +112,7 @@ Die Features sind standardmäßig aktiviert.  Weitere Informationen zu den Featu
    **Layouttool** mit Rastern  
 :::image-end:::  
 
-## <a name="customize-keyboard-shortcuts-in-settings"></a>Anpassen von Tastenkombinationen in den Einstellungen  
+## <a name="customize-keyboard-shortcuts-in-settings"></a>Anpassen von Tastaturkürzeln in den Einstellungen  
 
 :::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Experimentelles Feature":::
    Experimentelles Feature  
@@ -178,7 +178,7 @@ Sie können Authentatoren emulieren und die [Webauthentifizierungs-API][GithubW3
    :::column-end:::
 :::row-end:::  
 
-### <a name="elements-tool-updates"></a>Aktualisierungen des Elements-Tools  
+### <a name="elements-tool-updates"></a>Aktualisierungen des Tools „Elemente“  
 
 #### <a name="view-the-computed-sidebar-pane-in-the-styles-pane"></a>Anzeigen des Seitenleistenbereichs "Berechnet" im Bereich Formatvorlagen  
 
@@ -186,7 +186,7 @@ Schaltet den **Bereich Berechnet** im Bereich **Formatvorlagen** um.  Der **Bere
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="Öffnen des Seitenleistenbereichs Berechnet" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
+      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="Öffnen des Seitenleistenbereichs "Berechnet"" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
          Öffnen des **Seitenleistenbereichs "Berechnet"**  
       :::image-end:::  
    :::column-end:::  
@@ -287,7 +287,7 @@ Wenn Sie unter Windows oder macOS sind, sollten Sie die [Microsoft Edge-Vorschau
 
 [DevtoolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index "Emulieren von mobilen Geräten in Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsGuideChromiumConsoleUtilitiesRecentlySelectedElementJavascriptObject]:  https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/console/utilities#recently-selected-element-or-javascript-object "Zuletzt ausgewähltes Element oder JavaScript-Objekt – Api-Referenz für Konsolenprogramme | Microsoft Docs"  
-[DevtoolsCustomizeShortcuts]: /microsoft-edge/devtools-guide-chromium/customize/shortcuts "Anpassen von Tastenkombinationen in der Microsoft Edge DevTools-| Microsoft Docs"  
+[DevtoolsCustomizeShortcuts]: /microsoft-edge/devtools-guide-chromium/customize/shortcuts "Anpassen von Tastenkombinationen in der Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsGuideChromiumEvaluatePerformanceReference]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference "Leistungsanalysereferenz | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode]: /microsoft-edge/devtools-guide-chromium/experimental-features#emulation-support-dual-screen-mode "Emulation: Unterstützung des dualen Bildschirmmodus – Experimentelle Features | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesEnableExperimentalApis]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-experimental-apis "Aktivieren experimenteller APIs – Experimentelle | Microsoft Docs"  
@@ -307,7 +307,7 @@ Wenn Sie unter Windows oder macOS sind, sollten Sie die [Microsoft Edge-Vorschau
 [DevtoolsNetworkReferenceFilterRequestsProperties]: /microsoft-edge/devtools-guide-chromium/network/reference#filter-requests-by-properties  "Filtern von Anforderungen nach Eigenschaften – Netzwerkanalysereferenz | Microsoft Docs"  
 [DevtoolsWebauthnIndex]: /microsoft-edge/devtools-guide-chromium/webauthn/index "Emulieren von Authentifizierungsautoren und Debuggen von WebAuthn in Microsoft Edge DevTools | Microsoft Docs"  
 
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge Preview Channels"  
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge-Vorschaukanäle"  
 
 [VisualStudioCode]: https://code.visualstudio.com "Visual Studio Code"  
 
@@ -316,20 +316,20 @@ Wenn Sie unter Windows oder macOS sind, sollten Sie die [Microsoft Edge-Vorschau
 [CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chromium-Fehler"  
 
 [CR174309]: https://crbug.com/174309 "DevTools: Ermöglicht das Anpassen von Tastenkombinationen/Tastenkombinationen | Chromium-Fehler"
-[CR772558]: https://crbug.com/772558 "DevTools: Aktualisieren auf die neueste Version von "| Chromium-Fehler"  
+[CR772558]: https://crbug.com/772558 "DevTools: Aktualisieren auf die neueste Version von &quot;| Chromium-Fehler"  
 [CR1034663]: https://crbug.com/1034663 "Erstellen eines Front-Ends für die WebAuthn Testing-API | Chromium-Fehler"  
 [CR1047356]: https://crbug.com/1047356 "CSS Grid/Flexbox/Table tooling | Chromium-Fehler"  
 [CR1051466]: https://crbug.com/1051466 "Unterstützung des COOP/COEP-Debuggings in DevTools | Chromium-Fehler"  
-[CR1073899]: https://crbug.com/1073899 "Registerkarte "Berechnete Formatvorlage" wird im reaktionsschnellen Modus | Chromium-Fehler"  
+[CR1073899]: https://crbug.com/1073899 "Registerkarte &quot;Berechnete Formatvorlage&quot; wird im reaktionsschnellen Modus | Chromium-Fehler"  
 [CR1075732]: https://crbug.com/1075732 "DevTools-Personalisierung – Wechselregisterkarten | Chromium-Fehler"  
 [CR1084673]: https://crbug.com/1084673 "DevTools: Verbessern Sie die Art und Weise, wie wir benutzerdefinierte CSS-Eigenschaften ((auch bekannt) präsentieren. CSS-Variablen) und deren Werte | Chromium-Fehler"  
 [CR1093687]: https://crbug.com/1093687 "Erstellen eines Tools zum Erstellen und Wiedergeben synthetischer Netzwerkanforderungen | Chromium-Fehler"  
-[CR1096230]: https://crbug.com/1096230 "Gruppieren von CSS-Eigenschaften nach Kategorien im Bereich "Computed Styles" | Chromium-Fehler"  
+[CR1096230]: https://crbug.com/1096230 "Gruppieren von CSS-Eigenschaften nach Kategorien im Bereich &quot;Computed Styles&quot; | Chromium-Fehler"  
 [CR1104188]: https://crbug.com/1104188 "Bei der Suche nach vollständigen URL-Adressen findet die Netzwerktoolsuche keine | Chromium-Fehler"  
 [CR1106251]: https://crbug.com/1106251 "☂ DevTools: Verbessern der Registerkarten für berechnete Formatvorlagen | Chromium-Fehler"  
 [CR1120316]: https://crbug.com/1120316 "Hervorheben eines schlechten Kontrasts unter CSS Overview > Colors | Chromium-Bugs"  
 [CR1121141]: https://crbug.com/1121141 "Filtern nach Ressourcentyp in Netzwerkprotokollen | Chromium-Fehler"  
-[CR1121312]: https://crbug.com/1121312 "Einstellungen sollten aus dem Menü "Weitere Tools" entfernt | Chromium-Fehler"  
+[CR1121312]: https://crbug.com/1121312 "Einstellungen sollten aus dem Menü &quot;Weitere Tools&quot; entfernt | Chromium-Fehler"  
 [CR1136394]: https://crbug.com/1136394 "Flexbox-| Chromium-Bugs"  
 [CR1136655]: https://crbug.com/1136655 "Devtools: Lokalisierung V2 | Chromium-Fehler"  
 
@@ -351,7 +351,7 @@ Wenn Sie unter Windows oder macOS sind, sollten Sie die [Microsoft Edge-Vorschau
 
 > [!NOTE]
 > Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
-> Die ursprüngliche Seite findet sich [hier](https://developers.google.com/web/updates/2020/10/devtools/index) und wurde von [Jecelyn Yeen][JecelynYeen] \(Developer Advocate, Chrome DevTools\) erstellt.  
+> Die ursprüngliche Seite findet sich [hier](https://developer.chrome.com/blog/new-in-devtools-87) und wurde von [Jecelyn Yeen][JecelynYeen] \(Developer Advocate, Chrome DevTools\) erstellt.  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  

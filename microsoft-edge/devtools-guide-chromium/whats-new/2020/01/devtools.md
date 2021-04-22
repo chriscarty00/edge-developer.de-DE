@@ -3,16 +3,16 @@ description: 3D-Ansicht, Visual Studio Integration in Microsoft Edge und vieles 
 title: Neues in DevTools (Microsoft Edge 81)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/12/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 204a596e2497415eefeeb8aa819106635ff30caa
-ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+ms.openlocfilehash: ddd48b78c59e26edc9bca159f5ddf684015ae980
+ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "11408360"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "11514410"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -202,13 +202,13 @@ In den folgenden Abschnitten werden zusätzliche Features angekündigt, die in M
 
 Simulieren [Sie nach dem Aktivieren der Gerätesymbolleiste][DeviceToolbar]die Dimensionen eines G4-Ansichtsports von "Moto G4" aus der **Geräteliste.**  
 
-:::image type="complex" source="../../images/2020/01/motog4.msft.png" alt-text="Simulieren eines G4-Ansichtsports von Moto G4" lightbox="../../images/2020/01/motog4.msft.png":::
+:::image type="complex" source="../../images/2020/01/motog4.msft.png" alt-text="Simulieren eines G4-Ansichtsports von "Moto G4"" lightbox="../../images/2020/01/motog4.msft.png":::
    Simulieren eines G4-Ansichtsports von "Moto G4"  
 :::image-end:::  
 
 Wählen [Sie Geräterahmen anzeigen aus,][DeviceFrame] um die Hardware von "Moto G4" um den Viewport zu zeigen.  
 
-:::image type="complex" source="../../images/2020/01/motog4frame.msft.png" alt-text="Anzeigen der Hardware von Moto G4" lightbox="../../images/2020/01/motog4frame.msft.png":::
+:::image type="complex" source="../../images/2020/01/motog4frame.msft.png" alt-text="Anzeigen der Hardware von "Moto G4"" lightbox="../../images/2020/01/motog4frame.msft.png":::
    Anzeigen der Hardware von "Moto G4"  
 :::image-end:::  
 
@@ -316,7 +316,7 @@ Wenn Sie unter Windows oder macOS sind, sollten Sie die [Microsoft Edge-Vorschau
 
 [DeviceToolbar]: /microsoft-edge/devtools-guide-chromium/device-mode/index#simulate-a-mobile-viewport "Simulieren eines mobilen Viewports – Simulieren mobiler Geräte mit dem Gerätemodus in Microsoft Edge DevTools | Microsoft Docs"
 [DeviceFrame]: /microsoft-edge/devtools-guide-chromium/device-mode/index#show-device-frame "Geräterahmen anzeigen – Simulieren von mobilen Geräten mit dem Gerätemodus in Microsoft Edge DevTools | Microsoft Docs"
-[CommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Ausführen von Befehlen mit der Microsoft Edge DevTools-Befehlsmenüleiste | Microsoft Docs"  
+[CommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Ausführen von Befehlen mit dem Microsoft Edge DevTools-Befehlsmenü | Microsoft Docs"  
 [ThrottleNetworkAndCpu]: /microsoft-edge/devtools-guide-chromium/device-mode/index#throttle-the-network-and-cpu "Drosseln des Netzwerks und der CPU – Simulieren mobiler Geräte mit dem Gerätemodus in Microsoft Edge DevTools | Microsoft Docs"
 [Settings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "Einstellungen – Anpassen von Microsoft Edge DevTools | Microsoft Docs"
 [MicrosoftVisualStudio]: /microsoft-edge/visual-studio/index "Visual Studio | Microsoft Docs"  
@@ -325,7 +325,7 @@ Wenn Sie unter Windows oder macOS sind, sollten Sie die [Microsoft Edge-Vorschau
 [VisualStudioCodeDebuggerEdgeExtension]: /microsoft-edge/visual-studio-code/debugger-for-edge "Debugger für Microsoft Edge Visual Studio Codeerweiterung"  
 [VisualStudioCodeElementEdgeExtension]: /microsoft-edge/visual-studio-code/elements-for-edge "Elemente für Microsoft Edge Visual Studio Codeerweiterung"  
 
-[MicrosoftEdgePreviewChannels]: https://aka.ms/microsoftedge "Microsoft Edge Preview Channels"  
+[MicrosoftEdgePreviewChannels]: https://aka.ms/microsoftedge "Microsoft Edge-Vorschaukanäle"  
 
 [VisualStudioCode]: https://aka.ms/vscode "Visual Studio Code"  
 [VisualStudioMarketplaceDebuggerEdge]: https://aka.ms/debugger4code "Debugger für Microsoft Edge – Visual Studio Marketplace"  
@@ -339,7 +339,7 @@ Wenn Sie unter Windows oder macOS sind, sollten Sie die [Microsoft Edge-Vorschau
 
 [PostTweetEdgeDevTools]: https://aka.ms/tweet/edgedevtools "@EdgeDevTools | Tweet posten"  
 
-[CR924693]: https://crbug.com/924693 "Featureanforderung: Hinzufügen von "Moto G4" zur Gerätemodusliste | Chromium-Bugs"  
+[CR924693]: https://crbug.com/924693 "Featureanforderung: Hinzufügen von &quot;Moto G4&quot; zur Gerätemodusliste | Chromium-Bugs"  
 [CR1030258]: https://crbug.com/1030258 "CR 1030258 | Chromium-Bugs"  
 [CR1026879]: https://crbug.com/1026879 "Die Registerkarte Cookie in der Entwicklungskonsole zeigt keine Priorität mehr | Chromium-Bugs"  
 [CR1029826]: https://crbug.com/1029826 "Netzwerkregisterkarte – > die rechte Option zum Anfordern von -> Copy -> kopieren, da beim Abrufen keine Cookies | Chromium-Bugs"  
@@ -365,7 +365,7 @@ Wenn Sie unter Windows oder macOS sind, sollten Sie die [Microsoft Edge-Vorschau
 
 > [!NOTE]
 > Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
-> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/updates/2020/01/devtools/index) und wird von [Kayce Basken][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) verfasst.  
+> Die ursprüngliche Seite befindet sich [hier](https://developer.chrome.com/blog/new-in-devtools-81) und wird von [Kayce Basken][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) verfasst.  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  

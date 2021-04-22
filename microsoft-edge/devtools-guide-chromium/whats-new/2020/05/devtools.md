@@ -3,16 +3,16 @@ description: Verwenden Sie die DevTools im Windows-Modus mit hohem Kontrast, pas
 title: Neues in DevTools (Microsoft Edge 84)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/12/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 3264292721d5e4385b0e6d256d042c76182c21c7
-ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+ms.openlocfilehash: 01d41fe5400dde427a0ac73870ace0e1211f429a
+ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "11408325"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "11514389"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -313,17 +313,17 @@ Wenn Sie unter Windows oder macOS sind, sollten Sie die [Microsoft Edge-Vorschau
 [CR963183]: https://crbug.com/963183 "DevTools sind nicht WCAG-kompatible | Chromium-Fehler"  
 [CR1040019]: https://crbug.com/1040019 "DevTools: Einfache Vorschau von Bildern und Hintergrundbildern im Formatvorlagenbereich | Chromium-Fehler"  
 [CR1040025]: https://crbug.com/1040025 "DevTools: Zeigen Sie grundlegende a11y-Informationen in Elementpopover-| Chromium-Fehler"  
-[CR1048378]: https://crbug.com/1048378 "DevTools UI-Unterstützung für den Modus "Hoher Kontrast" | Chromium-Fehler"  
+[CR1048378]: https://crbug.com/1048378 "DevTools UI-Unterstützung für den Modus &quot;Hoher Kontrast&quot; | Chromium-Fehler"  
 [CR1054381]: https://crbug.com/1054381 "CR 1054381 | Chromium-Fehler"  
 [CR1068116]: https://crbug.com/1068116 "Problembereich für | Chromium-Fehler"  
 [CR1072952]: https://crbug.com/1072952 "DevTools: Die Farbauswahl sollte eine moderne CSS-Farbsyntax | Chromium-Fehler"  
 [CR1075437]: https://crbug.com/1075437 "DevTools: Fügen Sie Unterstützung für das Schlüsselwort/den Wert der CSS-| Chromium-Fehler"  
 [CR1076112]: https://crbug.com/1076112 "Devtools-Personalisierung – Größenanpassung der Schublade"  
 [CR1081486]: https://crbug.com/1081486 "Der Tastaturfokus ist für Navigationsschaltflächen im Screencastmodus nicht | Chromium-Fehler"  
-[CRV86751]: https://bugs.chromium.org/p/v8/issues/detail?id=6751 "PromiseStatus sollte "erfüllt" und nicht "aufgelöst" | V8-Fehler"  
+[CRV86751]: https://bugs.chromium.org/p/v8/issues/detail?id=6751 "PromiseStatus sollte &quot;erfüllt&quot; und nicht &quot;aufgelöst&quot; | V8-Fehler"  
 
 [CSSWGDraftsColor4Changes3]: https://drafts.csswg.org/css-color#changes-from-3 "Änderungen von Farben 3 – CSS Color Module Level 4 | W3C CSS Working Group Editor Drafts"  
-[CSSWGDraftsColor4Property]: https://drafts.csswg.org/css-color#the-color-property "3. Vordergrundfarbe: die "Farbe" - CSS Color Module Level 4 | W3C CSS Working Group Editor Drafts"  
+[CSSWGDraftsColor4Property]: https://drafts.csswg.org/css-color#the-color-property "3. Vordergrundfarbe: die &quot;Farbe&quot; - CSS Color Module Level 4 | W3C CSS Working Group Editor Drafts"  
 
 [DesktopEdge]: https://www.microsoft.com/edge/ "Einführung in das neue Microsoft Edge"  
 
@@ -356,7 +356,7 @@ Wenn Sie unter Windows oder macOS sind, sollten Sie die [Microsoft Edge-Vorschau
 
 > [!NOTE]
 > Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
-> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/updates/2020/05/devtools/index) und wird von [Kayce Basken][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) verfasst.  
+> Die ursprüngliche Seite befindet sich [hier](https://developer.chrome.com/blog/new-in-devtools-84) und wird von [Kayce Basken][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) verfasst.  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  

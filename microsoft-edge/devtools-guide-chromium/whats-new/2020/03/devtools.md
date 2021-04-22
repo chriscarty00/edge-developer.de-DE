@@ -3,16 +3,16 @@ description: Emulieren von Farbsichtschwächen, Dock To Left im Befehlsmenü und
 title: Neues in DevTools (Microsoft Edge 83)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/12/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: f97155b12a679f630ce80c007e7f0ca693e19876
-ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+ms.openlocfilehash: c329dfba980b882b6e538447e52902e4d0cc985b
+ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "11408353"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "11514417"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -101,7 +101,7 @@ In Microsoft Edge 83 können Sie nun die Eigenschaften des aktuell ausgewählten
 
 [Chromium-#1050999][CR1050999]  
 
-### <a name="use-the-arrow-keys-to-scroll-in-the-changes-tool"></a>Verwenden der Pfeiltasten zum Scrollen im Tool "Änderungen"  
+### <a name="use-the-arrow-keys-to-scroll-in-the-changes-tool&quot;></a>Verwenden der Pfeiltasten zum Scrollen im Tool &quot;Änderungen"  
 
 Das **Tool Änderungen verfolgt** alle Änderungen, die Sie an CSS oder JavaScript in devTools vorgenommen haben.  Sie können das Tool **"Änderungen"** verwenden, um alle Ihre Änderungen schnell anzeigen und diese zu Ihrem Editor/Ihrer IDE zurück zu bringen.  
 
@@ -109,7 +109,7 @@ Um das Tool **Änderungen zu öffnen,** wählen Sie `Ctrl` + `Shift` + `P` in de
 
 Wenn Sie eine Änderung an einer minifizierten Datei vorgenommen haben, können Sie mit dem Tool Änderungen horizontal scrollen, um den ganzen verminten Code anzeigen zu können. ****  Ab Microsoft Edge 83 können Sie nun mit den Pfeiltasten auf der Tastatur horizontal scrollen.  
 
-:::image type="complex" source="../../media/2020/03/changes.msft.png" alt-text="In Microsoft Edge 83 können Sie einen horizontalen Bildlauf mit den Pfeiltasten durchführen, um ihren verminten Code im Tool Änderungen anzeigen zu können." lightbox="../../media/2020/03/changes.msft.png":::
+:::image type="complex" source="../../media/2020/03/changes.msft.png" alt-text="In Microsoft Edge 83 können Sie einen horizontalen Bildlauf mit den Pfeiltasten durchführen, um ihren verminten Code im Tool "Änderungen" anzeigen zu können." lightbox="../../media/2020/03/changes.msft.png":::
    In Microsoft Edge 83 können Sie einen horizontalen Bildlauf mit den Pfeiltasten durchführen, um die Änderungen, die Sie am verminten Code vorgenommen haben, im Tool **"Änderungen" anzeigen** zu können.  
 :::image-end:::  
 
@@ -301,7 +301,7 @@ Wenn Sie unter Windows oder macOS sind, sollten Sie die [Microsoft Edge-Vorschau
 [RemoteTools]: https://www.microsoft.com/store/apps/9P6CMFV44ZLT "Remotetools für Microsoft Edge (Beta)"  
 [MicrosoftStore]: https://www.microsoft.com/store/apps/windows "Microsoft Store"  
 
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge Preview Channels"  
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge-Vorschaukanäle"  
 
 [WindowsBlogStableRelease]: https://blogs.windows.com/msedgedev/2020/03/20 "Update für Stable-Kanalversionen für Microsoft Edge"  
 
@@ -324,7 +324,7 @@ Wenn Sie unter Windows oder macOS sind, sollten Sie die [Microsoft Edge-Vorschau
 
 [CR963183]: https://crbug.com/963183 "Problem 963183: DevTools sind nicht WCAG-kompatibel"  
 [CR1003700]: https://crbug.com/1003700 "Issue 1003700: Add DevTools support for Color Vision Deficiency simulation"  
-[CR1011679]: https://crbug.com/1011679 "Problem 1011679: Einführung von "Dock nach links" mithilfe des Befehlsmenüs"  
+[CR1011679]: https://crbug.com/1011679 "Problem 1011679: Einführung von &quot;Dock nach links&quot; mithilfe des Befehlsmenüs"  
 [CR1016501]: https://crbug.com/1016501 "Problem 1016501: Featureanforderung: Schaltfläche zum Löschen aller lokalen Überschreibungen"  
 [CR1050999]: https://crbug.com/1050999 "Problem 1050999: Registerkarte Eigenschaften"  
 [CR1051466]: https://crbug.com/1051466 "Problem 1051466: Unterstützung des COOP/COEP-Debuggings in DevTools"  
@@ -335,13 +335,13 @@ Wenn Sie unter Windows oder macOS sind, sollten Sie die [Microsoft Edge-Vorschau
 [CR1056348]: https://crbug.com/1056348 "Problem 1056348: Aktualisierung der Infoleistenkomponente"
 
 [COOP]: https://docs.google.com/document/d/1zDlfvfTJ_9e8Jdc8ehuV4zMEu9ySMCiTGMS9y0GU92k/edit#bookmark=id.tu4hyy6v12wn "COOP und COEP erläutert – Cross-Origin Opener Policy"  
-[COEP]: https://docs.google.com/document/d/1zDlfvfTJ_9e8Jdc8ehuV4zMEu9ySMCiTGMS9y0GU92k/edit#bookmark=id.uo6kivyh0ge2 ""COOP" und "COEP" erläutert – Richtlinie für einbettende Herkunft"  
+[COEP]: https://docs.google.com/document/d/1zDlfvfTJ_9e8Jdc8ehuV4zMEu9ySMCiTGMS9y0GU92k/edit#bookmark=id.uo6kivyh0ge2 "&quot;COOP&quot; und &quot;COEP&quot; erläutert – Richtlinie für einbettende Herkunft"  
 
 [GithubGoogleChromeLighthouse]: https://github.com/GoogleChrome/lighthouse "Leuchttürme | GitHub"  
 
 > [!NOTE]
 > Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
-> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/updates/2020/03/devtools/index) und wird von [Kayce Basken][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) verfasst.  
+> Die ursprüngliche Seite befindet sich [hier](https://developer.chrome.com/blog/new-in-devtools-83) und wird von [Kayce Basken][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) verfasst.  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  

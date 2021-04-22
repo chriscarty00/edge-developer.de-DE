@@ -3,16 +3,16 @@ description: FEATURES für das Debuggen von CSS-Rastern, Bearbeiten und Wiederge
 title: Neues in DevTools (Microsoft Edge 85)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/12/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 9031f817a6079f64352c261a70eb9581213bf8c7
-ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+ms.openlocfilehash: 5bd013fae617e9759aa91949acccf936d85f7160
+ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "11408318"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "11514361"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -138,13 +138,13 @@ Normalerweise können Tools wie **Elemente** und **Netzwerk** nur im Hauptbereic
 
 In Microsoft Edge 83 und 84 werden QuickInfos für die Spalte Initiator, die die Ursache der Ressourcenanforderung zeigt, im [Netzwerkprotokoll][DevtoolsNetworkIndexLogActivity] angezeigt, das mit einer horizontalen Bildlaufleiste angezeigt wird.  Sie konnten nur die Aufrufliste anzeigen, die die Anforderung initiiert hat, indem Sie einen horizontalen Bildlauf in der QuickInfo durchführen.  
 
-:::image type="complex" source="../../media/2020/06/initiator-tooltip-84.msft.png" alt-text="Die QuickInfo Initiator in Microsoft Edge 84" lightbox="../../media/2020/06/initiator-tooltip-84.msft.png":::
+:::image type="complex" source="../../media/2020/06/initiator-tooltip-84.msft.png" alt-text="Die QuickInfo "Initiator" in Microsoft Edge 84" lightbox="../../media/2020/06/initiator-tooltip-84.msft.png":::
    Die QuickInfo "Initiator" in Microsoft Edge 84  
 :::image-end:::  
 
 Ab Microsoft Edge 85 können Sie nun die Aufrufliste des Initiators in der QuickInfo ohne horizontalen Bildlauf anzeigen.  
 
-:::image type="complex" source="../../media/2020/06/initiator-tooltip-85.msft.png" alt-text="Die QuickInfo Initiator in Microsoft Edge 85" lightbox="../../media/2020/06/initiator-tooltip-85.msft.png":::
+:::image type="complex" source="../../media/2020/06/initiator-tooltip-85.msft.png" alt-text="Die QuickInfo "Initiator" in Microsoft Edge 85" lightbox="../../media/2020/06/initiator-tooltip-85.msft.png":::
    Die QuickInfo "Initiator" in Microsoft Edge 85
 :::image-end:::  
 
@@ -272,7 +272,7 @@ Der **Umschalter Gruppe ähnlich** in konsoleneinstellungen gilt jetzt für dopp
 
 In früheren Beispielen hat DevTools die Gruppierung der Nachrichten nicht deaktiviert, obwohl die Gruppierung `hello` **ähnlich** deaktiviert ist.  Jetzt werden `hello` die Nachrichten nicht mehr in die Gruppe eingruppiert.  
 
-:::image type="complex" source="../../media/2020/06/ungroup-similar.msft.png" alt-text="Wenn Gruppe ähnlich deaktiviert ist, werden die Hello-Nachrichten nicht in die Gruppe eingruppiert." lightbox="../../media/2020/06/ungroup-similar.msft.png":::
+:::image type="complex" source="../../media/2020/06/ungroup-similar.msft.png" alt-text="Wenn "Gruppe ähnlich" deaktiviert ist, werden die Hello-Nachrichten nicht in die Gruppe eingruppiert." lightbox="../../media/2020/06/ungroup-similar.msft.png":::
    Wenn **"Gruppe ähnlich"** deaktiviert ist, werden `hello` die Nachrichten ungruppiert.
 :::image-end:::  
 
@@ -348,17 +348,17 @@ Wenn Sie unter Windows oder macOS sind, sollten Sie die [Microsoft Edge-Vorschau
 
 [CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chromium-Fehler"  
 
-[CR772558]: https://crbug.com/772558 "DevTools: Aktualisieren auf die neueste Version von "| Chromium-Fehler"  
+[CR772558]: https://crbug.com/772558 "DevTools: Aktualisieren auf die neueste Version von &quot;| Chromium-Fehler"  
 [CR800028]: https://crbug.com/800028 "Doppelte Zeilenverknüpfung im Entwicklertools-Editor funktioniert nach dem Chrome-Update nicht | Chromium-Fehler"  
 [CR912581]: https://crbug.com/912581 "Verfügbar machen, welche Skripts von V8 in DevTools/about:tracing zwischengespeichert | Chromium-Fehler"  
 [CR946975]: https://crbug.com/946975 "DevTools Styles Sidebar funktioniert nicht mit erstellten Stylesheets | Chromium-Fehler"  
-[CR955497]: https://crbug.com/955497 "Kontextmenü "App-Symbol" für PWAs | Chromium-Fehler"  
+[CR955497]: https://crbug.com/955497 "Kontextmenü &quot;App-Symbol&quot; für PWAs | Chromium-Fehler"  
 [CR974550]: https://crbug.com/974550 "Metrikkonflikt zwischen Perf-Bereich und performanceObserver-| Chromium-Fehler"  
 [CR1041830]: https://crbug.com/1041830 "Verbessern von Farben für Haltepunkte | Chromium-Fehler"  
 [CR1055875]: https://crbug.com/1055875 "Der Wert der Konsoleneinstellung Nur Ausgewählter Kontext bleibt nach dem Schließen und erneuten Öffnen von Entwicklertools nicht | Chromium-Fehler"  
 [CR1066579]: https://crbug.com/1066579 "DevTools: Show ServiceWorkers Fetch Timeline per request in Network panel | Chromium-Fehler"  
 [CR1071432]: https://crbug.com/1071432 "Wasm Basic Developer Experience | Chromium-Fehler"  
-[CR1073899]: https://crbug.com/1073899 "Registerkarte "Berechnete Formatvorlage" wird im reaktionsschnellen Modus | Chromium-Fehler"  
+[CR1073899]: https://crbug.com/1073899 "Registerkarte &quot;Berechnete Formatvorlage&quot; wird im reaktionsschnellen Modus | Chromium-Fehler"  
 [CR1073903]: https://crbug.com/1073903 "DevTools: Syntax highlighting doesn't work with private fields | Chromium-Fehler"  
 [CR1082963]: https://crbug.com/1082963 "Das Gruppenverhalten ähnlicher Nachrichten der Konsole kann nicht deaktiviert | Chromium-Fehler"  
 [CR1083214]: https://crbug.com/1083214 "acorn unterstützt keine optionale Verkettung | Chromium-Fehler"  
@@ -376,7 +376,7 @@ Wenn Sie unter Windows oder macOS sind, sollten Sie die [Microsoft Edge-Vorschau
 
 [MdnShadowDom]: https://developer.mozilla.org/docs/Web/Web_Components/Using_shadow_DOM "Verwenden von Schatten-DOM-| MDN"
 
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download/ "Microsoft Edge Preview Channels"  
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download/ "Microsoft Edge-Vorschaukanäle"  
 
 [VisualStudio]: https://visualstudio.microsoft.com/ "Visual Studio"
 [VisualStudioCode]: https://code.visualstudio.com/ "Visual Studio Code"  
@@ -412,7 +412,7 @@ Wenn Sie unter Windows oder macOS sind, sollten Sie die [Microsoft Edge-Vorschau
 
 > [!NOTE]
 > Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
-> Die ursprüngliche Seite findet sich [hier](https://developers.google.com/web/updates/2020/06/devtools/index) und wurde von [Jecelyn Yeen][JecelynYeen] \(Developer Advocate, Chrome DevTools\) erstellt.  
+> Die ursprüngliche Seite findet sich [hier](https://developer.chrome.com/blog/new-in-devtools-85) und wurde von [Jecelyn Yeen][JecelynYeen] \(Developer Advocate, Chrome DevTools\) erstellt.  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
