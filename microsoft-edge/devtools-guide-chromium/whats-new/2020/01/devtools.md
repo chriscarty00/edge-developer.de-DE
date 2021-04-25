@@ -202,13 +202,13 @@ ms.locfileid: "11514410"
 
 <span data-ttu-id="07a96-190">Simulieren [Sie nach dem Aktivieren der Gerätesymbolleiste][DeviceToolbar]die Dimensionen eines G4-Ansichtsports von "Moto G4" aus der **Geräteliste.**</span><span class="sxs-lookup"><span data-stu-id="07a96-190">After [enabling the Device Toolbar][DeviceToolbar], simulate the dimensions of a Moto G4 viewport from the **Device** list.</span></span>  
 
-:::image type="complex" source="../../images/2020/01/motog4.msft.png" alt-text="Simulieren eines G4-Ansichtsports von "Moto G4"" lightbox="../../images/2020/01/motog4.msft.png":::
+:::image type="complex" source="../../images/2020/01/motog4.msft.png" alt-text="Simulieren eines G4-Ansichtsports von Moto G4" lightbox="../../images/2020/01/motog4.msft.png":::
    <span data-ttu-id="07a96-192">Simulieren eines G4-Ansichtsports von "Moto G4"</span><span class="sxs-lookup"><span data-stu-id="07a96-192">Simulating a Moto G4 viewport</span></span>  
 :::image-end:::  
 
 <span data-ttu-id="07a96-193">Wählen [Sie Geräterahmen anzeigen aus,][DeviceFrame] um die Hardware von "Moto G4" um den Viewport zu zeigen.</span><span class="sxs-lookup"><span data-stu-id="07a96-193">Choose [Show Device Frame][DeviceFrame] to show the Moto G4 hardware around the viewport.</span></span>  
 
-:::image type="complex" source="../../images/2020/01/motog4frame.msft.png" alt-text="Anzeigen der Hardware von "Moto G4"" lightbox="../../images/2020/01/motog4frame.msft.png":::
+:::image type="complex" source="../../images/2020/01/motog4frame.msft.png" alt-text="Anzeigen der Hardware von Moto G4" lightbox="../../images/2020/01/motog4frame.msft.png":::
    <span data-ttu-id="07a96-195">Anzeigen der Hardware von "Moto G4"</span><span class="sxs-lookup"><span data-stu-id="07a96-195">Showing the Moto G4 hardware</span></span>  
 :::image-end:::  
 
