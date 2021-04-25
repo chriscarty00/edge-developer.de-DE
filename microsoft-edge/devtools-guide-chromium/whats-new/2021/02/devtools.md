@@ -241,7 +241,7 @@ ms.locfileid: "11514403"
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/network-requests-remote-address-space.msft.png" alt-text="In der Tabelle Anforderungen wird jetzt die Spalte "Remote-Adressraum" angezeigt." lightbox="../../media/2021/02/network-requests-remote-address-space.msft.png":::
+      :::image type="complex" source="../../media/2021/02/network-requests-remote-address-space.msft.png" alt-text="In der Tabelle Anforderungen wird jetzt die Spalte Remote-Adressraum angezeigt." lightbox="../../media/2021/02/network-requests-remote-address-space.msft.png":::
          <span data-ttu-id="acfd4-224">In der Tabelle "Anforderungen" wird jetzt die Spalte **Remote-Adressraum** angezeigt.</span><span class="sxs-lookup"><span data-stu-id="acfd4-224">The Requests table now displays the **Remote Address Space** column</span></span> :::image-end:::  
    :::column-end:::
 :::row-end:::  
