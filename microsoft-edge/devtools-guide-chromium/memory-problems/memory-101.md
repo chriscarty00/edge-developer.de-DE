@@ -1,18 +1,18 @@
 ---
 description: In diesem Abschnitt werden allgemeine Begriffe beschrieben, die in der Speicheranalyse verwendet werden und für eine Vielzahl von Speicherprofilerstellungstools für verschiedene Sprachen gelten.
-title: Speicherterminologie
+title: Arbeitsspeicherterminologie
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 1579374be29f0f419ded3bf88f5dea284f0bbb1a
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: c9659255e2bf0082cd1be3e6615c9d54c293b967
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397790"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519310"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -28,7 +28,7 @@ ms.locfileid: "11397790"
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-# <a name="memory-terminology"></a>Speicherterminologie  
+# <a name="memory-terminology"></a>Arbeitsspeicherterminologie  
 
 Dieser Artikel beschreibt allgemeine Begriffe, die in der Speicheranalyse verwendet werden, und gilt für verschiedene Speicherprofilerstellungstools für verschiedene Sprachen.  
 
@@ -67,16 +67,16 @@ Dies ist die Größe des Arbeitsspeichers, der freigegeben wird, nachdem das Obj
 
 **Garbage Collector-Ursprünge** werden **** aus Handles erstellt, die \(entweder lokal oder global\) erstellt werden, wenn ein Verweis aus systemeigenem Code auf ein JavaScript-Objekt außerhalb von V8 erfolgt.  Alle diese Handles finden Sie in einer Heapmomentaufnahme unter **GC roots**  >  **Handle scope** und GC **roots**  >  **Global handles**.  Die Beschreibung der Handles in dieser Dokumentation, ohne details zur Browserimplementierung zu machen, kann verwirrend sein.  Sowohl garbage collector roots als auch die Handles müssen Sie sich keine Sorgen machen.  
 
-Es gibt viele interne Garbage Collector-Ursprünge, von denen die meisten für die Benutzer nicht interessant sind.  Aus Der Sicht der Anwendungen gibt es folgende Arten von Ursprüngen.  
+Es gibt viele interne Garbage Collector-Ursprünge, von denen die meisten für die Benutzer nicht interessant sind.  Aus Der Sicht der Anwendungen gibt es die folgenden Arten von Ursprüngen.  
 
-*   Window global object \(in each iframe\).  In den Heapmomentaufnahmen ist ein Abstandsfeld enthalten, das die Anzahl der Eigenschaftsverweise auf dem kürzesten Aufbewahrungspfad vom Fenster aus ist.  
-*   Dokument-DOM-Struktur, die aus allen systemeigenen DOM-Knoten besteht, die durch Durchlaufen des Dokuments erreichbar sind.  Nicht alle Knoten verfügen möglicherweise über JS-Wrapper, aber wenn ein Knoten über einen Wrapper verfügt, ist er lebendig, während das Dokument noch am Leben ist.  
-*   Manchmal können Objekte im Debuggerkontext im Bereich **Quellen** und in der **Konsole** \(z. B. nach der Konsolenauswertung\) beibehalten werden.  Erstellen Sie Heapmomentaufnahmen mit einem geräumten **Konsolenbereich** und keine aktiven Haltepunkte im Debugger im **Bereich** Quellen.
+*   Window global object \(in each iframe\).  In den Heapmomentaufnahmen gibt das Feld die Anzahl der Eigenschaftsverweise auf dem kürzesten `distance` Aufbewahrungspfad aus dem Fenster an.  
+*   Die Dokument-DOM-Struktur, die aus allen systemeigenen DOM-Knoten besteht, die durch Durchlaufen des Dokuments erreichbar sind.  Nicht alle Knoten verfügen über JavaScript-Wrapper, aber wenn ein Knoten über einen Wrapper verfügt, ist der Knoten lebendig, während das Dokument lebendig ist.  
+*   Manchmal werden Objekte im Debugkontext im **Tool Sources** und in der **Konsole**beibehalten, z. B. nach der Konsolenauswertung.  Erstellen Sie Heapmomentaufnahmen mit einem geräumten **Konsolentool** und keine aktiven Haltepunkte im Debugger im **Sources-Tool.**
 
 >[!TIP]
-> Deaktivieren Sie **den Konsolenbereich,** indem Sie Haltepunkte im Bereich Quellen ausführen und deaktivieren, bevor Sie eine `clear()` **** Heapmomentaufnahme im [Speicherbereich erstellen.][DevtoolsMemoryProblemsHeapSnapshots]
+> Deaktivieren Sie vor dem Erstellen einer **** Heapmomentaufnahme im [Speichertool][DevtoolsMemoryProblemsHeapSnapshots] das Konsolentool, und deaktivieren Sie haltepunkte im **Tool Quellen.**  Führen Sie die Methode **aus,** um das Konsolentool zu `clear()` löschen.  
 
-Das Speicherdiagramm beginnt mit einem Stamm, der das Objekt des Browsers oder das Objekt eines Node.js `window` `Global` sein kann.  Sie können nicht steuern, wie dieses Stammobjekt im Garbage Collection-Objekt gesammelt wird.  
+Das Speicherdiagramm beginnt mit einem Stamm, der das Objekt des Browsers oder das Objekt eines Node.js `window` `Global` sein kann.  Sie können nicht steuern, wie das Stammobjekt gesammelt wird.  
 
 :::image type="complex" source="../media/memory-problems-dontcontrol.msft.png" alt-text="Sie können nicht steuern, wie das Stammobjekt als Garbage Collection erfasst wird." lightbox="../media/memory-problems-dontcontrol.msft.png":::
    Sie können nicht steuern, wie das Stammobjekt als Garbage Collection erfasst wird.  

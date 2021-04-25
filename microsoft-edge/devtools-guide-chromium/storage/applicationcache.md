@@ -1,18 +1,18 @@
 ---
-description: Informationen zum Anzeigen von Anwendungs Cache Daten aus dem Anwendungs Panel von Microsoft Edge devtools
-title: Anzeigen von Anwendungs Cache Daten mit Microsoft Edge devtools
+description: Anzeigen von Anwendungscachedaten aus dem Anwendungsbereich von Microsoft Edge DevTools.
+title: Anzeigen von Anwendungscachedaten mit Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 3d73047a8332e4d6cae5f7411f968a7dfe4c3738
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: cbe6623aa3132db4d01cd6b440702eb157525eed
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230782"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519142"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,62 +28,62 @@ ms.locfileid: "11230782"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Anzeigen von Anwendungs Cache Daten mit Microsoft Edge devtools  
+# <a name="view-application-cache-data-with-microsoft-edge-devtools"></a>Anzeigen von Anwendungscachedaten mit Microsoft Edge DevTools  
 
 > [!WARNING]
-> Die Anwendungs Cache-API wird [aus der Web-Plattform entfernt][HTMLStandardOfflineWebApplications].  
+> Die Anwendungscache-API [wird von der Webplattform entfernt.][HTMLStandardOfflineWebApplications]  
 
-Dieser Leitfaden zeigt Ihnen, wie Sie [Microsoft Edge devtools][MicrosoftEdgeDevTools] verwenden, um [Anwendungs Cache][MDNWebAPIsWindowApplicationCache] Ressourcen zu überprüfen.  
+In diesem Handbuch wird gezeigt, wie [Sie Microsoft Edge DevTools zum Überprüfen][MicrosoftEdgeDevTools] von [Anwendungscacheressourcen][MDNWebAPIsWindowApplicationCache] verwenden.  
 
-## Anzeigen von Anwendungs Cache Daten  
+## <a name="view-application-cache-data"></a>Anzeigen von Anwendungscachedaten  
 
-1.  Wählen Sie die Registerkarte **Quellen** aus, um das **Quellen** Panel zu öffnen.  Der Bereich **Manifest** wird normalerweise standardmäßig geöffnet.  
+1.  Wählen Sie oben in DevTools das **Tool Anwendung** aus.  
     
-    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="Bereich ' Manifest '" lightbox="../media/storage-application-manifest.msft.png":::
-       Bereich ' **Manifest** '  
+    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="Der Manifestbereich" lightbox="../media/storage-application-manifest.msft.png":::
+       Der **Manifestbereich**  
     :::image-end:::  
 
-1.  Erweitern Sie den Abschnitt **Anwendungscache** , und wählen Sie einen Cache aus, um die Ressourcen anzuzeigen.  
+1.  Erweitern Sie den **Abschnitt Anwendungscache,** und wählen Sie einen Cache aus, um die Ressourcen anzeigen zu können.  
     
-    :::image type="complex" source="../media/storage-cache-pane-cache-storage-resources.msft.png" alt-text="Der Anwendungs Cache Bereich" lightbox="../media/storage-cache-pane-cache-storage-resources.msft.png":::
-       Der **Anwendungs Cache** Bereich  
+    :::image type="complex" source="../media/storage-cache-pane-cache-storage-resources.msft.png" alt-text="Der Bereich Anwendungscache" lightbox="../media/storage-cache-pane-cache-storage-resources.msft.png":::
+       Der **Bereich Anwendungscache**  
     :::image-end:::  
 
 Jede Zeile der Tabelle stellt eine zwischengespeicherte Ressource dar.  
 
-Die Spalte **Typ** steht [für die Kategorie der Ressource][MDNHTMLResourcesInAnApplicationCache].  
+Die **Spalte Type** stellt die Kategorie der Ressource [dar.][MDNHTMLResourcesInAnApplicationCache]  
 
 | Kategorie | Details |  
 |:--- |:--- |  
 | `Explicit` | Diese Ressource wurde explizit im Manifest aufgeführt. |  
-| `Fallback` | Die URL ist ein Fallback für eine andere Ressource.  Die URL der anderen Ressource ist in devtools nicht aufgeführt. |  
-| `Master` | Das `manifest` Attribut der Ressource gibt an, dass der Cache das übergeordnete Element der Ressource ist. |  
+| `Fallback` | Die URL ist ein Fallback für eine andere Ressource.  Die URL der anderen Ressource ist in DevTools nicht aufgeführt. |  
+| `Master` | Das `manifest` Attribut für die Ressource gibt an, dass der Cache das übergeordnete Element der Ressource ist. |  
 | `Network` | Das Manifest hat angegeben, dass die Ressource aus dem Netzwerk stammen muss. |  
 
 <!--todo:  replace "Master" phrasing if possible.  -->  
 
-Am unteren Rand der Tabelle befinden sich Statussymbole, die Ihre Netzwerkverbindung und den Status des **Anwendungscaches**angeben.  Der **Anwendungs Cache** kann die folgenden Zustände aufweisen.  
+Am unteren Rand der Tabelle befinden sich Statussymbole, die Ihre Netzwerkverbindung und den Status des **Anwendungscaches angeben.**  Der **Anwendungscache** kann die folgenden Zustände haben.  
 
 | Status | Details |  
 |:--- |:--- |  
 | `CHECKING` | Das Manifest wird abgerufen und auf Updates überprüft. |  
-| `DOWNLOADING` | Ressourcen werden dem Cache hinzugefügt. |  
+| `DOWNLOADING` | Dem Cache werden Ressourcen hinzugefügt. |  
 | `IDLE` | Der Cache hat keine neuen Änderungen. |  
 | `OBSOLETE` | Der Cache wird gelöscht. |  
 | `UPDATEREADY` |  Eine neue Version des Caches ist verfügbar. |  
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chrom)-Entwickler Tools | Microsoft docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) -Entwicklertools | Microsoft Docs"  
 
-[HTMLStandardOfflineWebApplications]: https://html.spec.whatwg.org/multipage/offline.html#offline "Offline-Webanwendungen – HTML-Standard"  
+[HTMLStandardOfflineWebApplications]: https://html.spec.whatwg.org/multipage/offline.html#offline "Offlinewebanwendungen – HTML Standard"  
 
 [MDNHTMLResourcesInAnApplicationCache]: https://developer.mozilla.org/docs/Web/HTML/Using_the_application_cache#Resources_in_an_application_cache "Ressourcen in einem Anwendungscache | MDN"  
-[MDNWebAPIsWindowApplicationCache]: https://developer.mozilla.org/docs/Web/API/Window/applicationCache "Window. applicationCache-Web-APIs | MDN"  
+[MDNWebAPIsWindowApplicationCache]: https://developer.mozilla.org/docs/Web/API/Window/applicationCache "Window.applicationCache – Web-APIs | MDN"  
 
 > [!NOTE]
 > Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
-> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/storage/applicationcache) und wird von [Kayce Basken][KayceBasques] (Technical Writer, Chrome devtools \ & Lighthouse \) erstellt.  
+> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/storage/applicationcache) und wird von [Kayce Basken][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) verfasst.  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  

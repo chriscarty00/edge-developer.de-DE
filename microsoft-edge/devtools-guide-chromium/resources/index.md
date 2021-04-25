@@ -7,12 +7,12 @@ ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 75063b23f23c25ff4fe2e7f6e044a2de9a7b1ccd
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 818b93c1c07a93baa8972a530871d20446fd687f
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398224"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519443"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -78,13 +78,14 @@ Navigieren Sie zu [Netzwerkaktivität protokollieren.][DevtoolsNetworkLogActivit
 
 ### <a name="browse-by-directory"></a>Durchsuchen nach Verzeichnis  
 
-So zeigen Sie die Ressourcen einer nach Verzeichnis organisierten Seite an:  
+So zeigen Sie die Ressourcen einer nach Verzeichnis organisierten Webseite an:  
 
-1.  Wählen Sie das **Tool Quellen** aus, um den Bereich **Quellen zu** öffnen.  
-1.  Wählen Sie den **Bereich** Seite aus, um die Ressourcen der Seite anzeigen zu können.  Der **Bereich Seite** wird geöffnet.  
+1.  Öffnen Sie DevTools.
+1.  Wählen Sie **das Tool** Quellen aus, und wählen Sie dann im **Bereich Navigator** oben links die Registerkarte **Seite** aus.
+1.  Wählen Sie **die Schaltfläche Weitere Optionen** (...) rechts neben der Registerkarte Seite aus, und wählen Sie dann Gruppe nach Ordner **aus.** ****
     
-    :::image type="complex" source="../media/resources-sources-page-empty.msft.png" alt-text="Seitenbereich" lightbox="../media/resources-sources-page-empty.msft.png":::
-       **Seitenbereich**  
+    :::image type="complex" source="../media/resources-sources-page-empty.msft.png" alt-text="Die Registerkarte Seite im Navigatorbereich des Tools Quellen" lightbox="../media/resources-sources-page-empty.msft.png":::
+       Die **Registerkarte Seite** im **Navigatorbereich** des **Tools Quellen**  
     :::image-end:::  
     
     Hier ist eine Aufschlüsselung der nicht offensichtlichen Elemente in der vorherigen Abbildung.  
@@ -105,19 +106,20 @@ So zeigen Sie die Ressourcen einer nach Verzeichnis organisierten Seite an:
     
 ### <a name="browse-by-filename"></a>Durchsuchen nach Dateiname  
 
-Standardmäßig werden im **Seitenbereich** Ressourcen nach Verzeichnis gruppen.  So deaktivieren Sie diese Gruppierung, und zeigen Sie die Ressourcen für jede Domäne als flache Liste an:  
+Standardmäßig werden auf der **Registerkarte Seite** Ressourcen nach Verzeichnis unterteilt.  So zeigen Sie die Ressourcen für jede Domäne als flache Liste an, anstatt sie nach Verzeichnis zu gruppieren:
 
-1.  Öffnen Sie den **Seitenbereich.**  Navigieren Sie [zu Durchsuchen nach Verzeichnis](#browse-by-directory).  
-1.  Wählen **Sie Weitere Optionen aus,** und deaktivieren Sie `...` **"Nach Ordner" gruppieren.**  
+1.  Navigieren Sie zum **Tool Quellen.**  
+1.  Wählen Sie **im Bereich Navigator** (links) die Registerkarte **Seite** aus.  
+1.  Wählen **Sie Weitere Optionen** aus, und löschen Sie dann das `...` Häkchen neben **Gruppe nach Ordner**.  
     
     :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text="Die Option Gruppe nach Ordner" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
-       Die **Option "Gruppe nach Ordner"**  
+       Die **Option Gruppe nach** Ordner  
     :::image-end:::  
     
     Ressourcen sind nach Dateityp organisiert.  Innerhalb jedes Dateityps sind die Ressourcen alphabetisch angeordnet.  
-    
-    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="Der Seitenbereich nach der Deaktivierung von Gruppe nach Ordner" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
-       Der **Seitenbereich** nach der Deaktivierung **von "Gruppe nach Ordner"**  
+
+    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="Die Registerkarte Seite nach dem Löschen des Häkchens "Gruppe nach Ordner"" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
+       Die **Registerkarte Seite** nach dem Löschen des **Häkchens "Gruppe nach** Ordner"  
     :::image-end:::  
     
 ### <a name="browse-by-file-type"></a>Durchsuchen nach Dateityp  

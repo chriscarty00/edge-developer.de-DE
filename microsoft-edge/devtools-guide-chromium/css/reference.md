@@ -7,12 +7,12 @@ ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 84aacbb3961f6b8f6e9a0bda8823fecbbb26ec25
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: bddbf14e73f5c29bfd4757c9cd6d255f419c331f
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439303"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519331"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -56,9 +56,9 @@ Verwenden Sie eine der folgenden Aktionen, um ein Element auszuwählen.
 
 ### <a name="view-the-external-stylesheet-where-a-rule-is-defined"></a>Anzeigen des externen Stylesheets, in dem eine Regel definiert ist  
 
-Wählen Sie **im Bereich** Formatvorlagen den Link neben einer CSS-Regel aus, um das externe Stylesheet zu öffnen, das die Regel definiert.  
+Wählen Sie **im Bereich** Formatvorlagen den Link neben einer CSS-Regel aus, um das externe Stylesheet zu öffnen, das die Regel definiert.  Das Stylesheet wird im **Editorbereich** des Tools **Quellen** geöffnet.  
 
-Wenn das Stylesheet vermint ist, navigieren Sie zu [Verminte Datei lesbar machen.][DevToolsJavascriptReferenceFormat]  
+Wenn das Stylesheet minified ist, wählen Sie die Schaltfläche **Format** \( Format \) am unteren Rand ![ des ](../media/format-icon.msft.png) **Editorbereichs** aus.  Weitere Informationen finden Sie unter [Reformat a minified JavaScript file with pretty-print][DevToolsJavascriptReferenceFormat].  
 
 > [!NOTE]
 > In der folgenden Abbildung werden Sie nach der Auswahl zu Zeile 2 von `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2` `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css` übernommen, in der die `.content h1:first-of-type` CSS-Regel definiert ist.  
@@ -105,7 +105,7 @@ Wählen Und bearbeiten Sie einen Wert, um einen Wert zu ändern.
 > [!NOTE]
 > In der folgenden Abbildung zeigt das **** **Diagramm Feldmodell** im Bereich Formatvorlagen das Feldmodell für das aktuell ausgewählte `h1` Element.  
 
-:::image type="complex" source="../media/css-elements-styles-h1-2.msft.png" alt-text="Das Diagramm Boxmodell" lightbox="../media/css-elements-styles-h1-2.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-h1-2.msft.png" alt-text="Das Diagramm "Boxmodell"" lightbox="../media/css-elements-styles-h1-2.msft.png":::
    Das **Diagramm "Boxmodell"**  
 :::image-end:::  
 
@@ -169,7 +169,7 @@ Das **Coverage-Tool** zeigt, welche CSS eine Seite tatsächlich verwendet.
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/css-console-qs-coverage-empty.msft.png" alt-text="Das Tool Abdeckung" lightbox="../media/css-console-qs-coverage-empty.msft.png":::
+          :::image type="complex" source="../media/css-console-qs-coverage-empty.msft.png" alt-text="Das Tool "Abdeckung"" lightbox="../media/css-console-qs-coverage-empty.msft.png":::
              Das **Tool "Abdeckung"**  
           :::image-end:::  
        :::column-end:::
@@ -335,7 +335,7 @@ Führen Sie die folgenden Aktionen aus, um die Symbolleiste **Weitere Aktionen a
     > [!NOTE]
     > Die **Aktion Style Rule Below** einfügen wird nach dem Zeigen auf weitere Aktionen **angezeigt.**  
     
-    :::image type="complex" source="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png" alt-text="Die Symbolleiste Weitere Aktionen" lightbox="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png":::
+    :::image type="complex" source="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png" alt-text="Die Symbolleiste "Weitere Aktionen"" lightbox="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png":::
        Die **Symbolleiste "Weitere Aktionen"**  
     :::image-end:::  
     
@@ -557,7 +557,7 @@ Wenn Sie die **Farbauswahl öffnen,** ist **die Eyedropper** \( ![ Eyedropper ](
 [DevToolsCSSGetStartedAddPseudoState]: ../css/index.md#add-a-pseudostate-to-a-class "Hinzufügen eines Pseudozustands zu einer Klasse – Erste Schritte mit dem Anzeigen und Ändern von CSS-| Microsoft Docs"  
 [DevToolsCSSGetStartedTutorial]: ../css/index.md#view-the-css-for-an-element "Anzeigen der CSS für ein Element – Erste Schritte mit dem Anzeigen und Ändern von CSS-| Microsoft Docs"  
 [DevToolsCssPrintPreview]: ../css/print-preview.md "Erzwingen von Microsoft Edge DevTools in den Druckvorschaumodus (CSS Print Media Type) | Microsoft Docs"  
-[DevToolsJavascriptReferenceFormat]: ../javascript/reference.md#make-a-minified-file-readable "Eine minifizierte Datei lesbar machen – JavaScript Debugging Reference | Microsoft Docs"  
+[DevToolsJavascriptReferenceFormat]: ../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print "Neuschreiben einer minifizierten JavaScript-Datei mit &quot;Pretty-Print&quot; – Verwenden der Debugger-| Microsoft Docs"  
 
 [MaterialDesignColorSystem]: https://material.io/guidelines/style/color.html#color-color-palette "Das Farbsystem – Materialdesign"  
 [MDNBoxModel]: https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS/Box_model "Das Feldmodell | MDN"  

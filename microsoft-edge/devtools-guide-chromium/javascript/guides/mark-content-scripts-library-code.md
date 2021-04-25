@@ -7,12 +7,12 @@ ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: ffc27cdd04ce28df888507fb2e1dc460d5bb4f21
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: c1571ab909aac09e4593413e96f7d4b7723c7759
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398952"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519345"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -30,11 +30,10 @@ ms.locfileid: "11398952"
 
 # <a name="mark-content-scripts-as-library-code"></a>Markieren von Inhaltsskripts als Bibliothekscode  
 
-Wenn Sie den **Bereich Quellen** von Microsoft Edge DevTools [verwenden,][DevToolsJavascriptStepThroughCode]um Code zu durchschritten, unterbrechen Sie manchmal Code, den Sie nicht erkennen.  Wahrscheinlich haben Sie den Code für eine der installierten Microsoft Edge-Erweiterungen angehalten.  Führen Sie die folgenden Schritte aus, um den Erweiterungscode nicht anzuhalten.  
+Wenn Sie das Tool **Quellen** verwenden, um Code zu [durchschritten,][DevToolsJavascriptStepThroughCode]unterbrechen Sie manchmal code, den Sie nicht erkennen.  Wahrscheinlich haben Sie den Code für eine der installierten Microsoft Edge-Erweiterungen angehalten.  Führen Sie die folgenden Aktionen aus, um den Erweiterungscode nicht anzuhalten.  
 
-1.  Öffnen Sie DevTools, wählen **Sie Anpassen und Steuern von DevTools** \( `...` \) > Einstellungen **aus.**  Sie können einstellungen auch **öffnen,** indem Sie `F1` auswählen.  
-
-1.  Wählen Sie **den Codebereich Bibliothek** aus, der den **Abschnitt Frameworkbibliothekscode** unter **Einstellungen öffnet.**  
+1.  Wählen Sie in DevTools oben rechts das Zahnradsymbol ( Einstellungen )**aus.**  Die Seite **Einstellungen** wird angezeigt.  
+1.  Wählen **Sie unter Einstellungen**die Option Liste ignorieren **aus.**  Der **Abschnitt Framework Library Code** in **Einstellungen** wird angezeigt.  
 1.  Aktivieren Sie das **Kontrollkästchen Inhaltsskripts als Bibliothekscode** markieren.  
     
     :::image type="complex" source="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png" alt-text="Aktivieren des Kontrollkästchens Inhaltsskripts als Bibliothekscode markieren" lightbox="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png":::

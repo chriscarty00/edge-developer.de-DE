@@ -1,18 +1,18 @@
 ---
 description: Eine Anleitung zum Öffnen des Befehlsmenüs, Ausführen von Befehlen, Überprüfen anderer Aktionen und vieles mehr.
-title: Ausführen von Befehlen mit dem Microsoft Edge DevTools Command-Menü
+title: Ausführen von Befehlen mit dem Microsoft Edge DevTools-Befehlsmenü
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: a9e67815f69a44d3bd2a741738b04c7170f6ac15
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: b815934da73f9f023629564da7bea14da166ff9b
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398028"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519191"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,7 +28,7 @@ ms.locfileid: "11398028"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# <a name="run-commands-with-the-microsoft-edge-devtools-command-menu"></a>Ausführen von Befehlen mit dem Microsoft Edge DevTools Command-Menü  
+# <a name="run-commands-with-the-microsoft-edge-devtools-command-menu"></a>Ausführen von Befehlen mit dem Microsoft Edge DevTools-Befehlsmenü  
 
 Das Befehlsmenü bietet eine schnelle Möglichkeit, die Microsoft Edge DevTools-Benutzeroberfläche zu navigieren und allgemeine Aufgaben auszuführen, z. B. das Deaktivieren [von JavaScript][JavascriptDisable].  Möglicherweise kennen Sie ein ähnliches Feature in Microsoft Visual Studio Code, die [Befehlspalette][VisualStudioCodeUICommandPalette], die die ursprüngliche Inspiration für das Befehlsmenü war.  
 

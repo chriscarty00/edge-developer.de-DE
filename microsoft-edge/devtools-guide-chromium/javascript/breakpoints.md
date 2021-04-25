@@ -7,12 +7,12 @@ ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 3d50b7b105aa9a9018ba61e44147f46f3d340079
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: dd865f346046cb6706e71fdb3cc869950b2b4352
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439514"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519359"
 ---
 <!-- Copyright Kayce Basques
 
@@ -30,7 +30,9 @@ ms.locfileid: "11439514"
 
 # <a name="how-to-pause-your-code-with-breakpoints-in-microsoft-edge-devtools"></a>So halten Sie Ihren Code mit Haltepunkten in Microsoft Edge DevTools an  
 
-Verwenden Sie Haltepunkte, um Ihren JavaScript-Code anzuhalten.  In diesem Handbuch werden die einzelnen Typen von Haltepunkten erläutert, die in DevTools verfügbar sind, sowie die Verwendung und das Festlegen der einzelnen Typen.  Ein praktisches Lernprogramm des Debugprozesses finden Sie unter Erste Schritte mit dem Debuggen von [JavaScript in Microsoft Edge DevTools][DevtoolsJavascriptIndex].  
+Verwenden Sie Haltepunkte, um Ihren JavaScript-Code anzuhalten.  In diesem Artikel werden die in DevTools verfügbaren Haltepunkttypen sowie die Verwendung und das Festlegen der einzelnen Typen erläutert.
+
+Ein Einführungstutorial mit einer vorhandenen Webseite finden Sie unter Erste Schritte mit dem Debuggen von [JavaScript in Microsoft Edge DevTools][DevtoolsJavascriptIndex].
 
 ## <a name="overview-of-when-to-use-each-breakpoint-type"></a>Übersicht über die Verwendung der einzelnen Haltepunkttypen  
 
@@ -214,13 +216,23 @@ Wenn Sie die Methode über die DevTools-Konsole ausführen, ist es schwierig sic
 1.  Lösen Sie den Haltepunkt aus.  
 1.  Führen Sie die Methode in der DevTools-Konsole aus, während der Code weiterhin an Ihrem `debug()` Codezeile-Haltepunkt angehalten wird.  
     
+## <a name="related-articles"></a>Verwandte Artikel
+
+*   [Verwenden der Debuggerfeatures][DevtoolsJavascriptReference] – Verwenden der Benutzeroberfläche des Debuggers im **Tool Sources.**
+*   [Erste Schritte mit dem Debuggen von JavaScript in Microsoft Edge DevTools][DevtoolsJavascriptIndex] – Ein einführungstutorial mit einer vorhandenen Webseite.
+*   [Übersicht über das][DevtoolsSourcesIndex] Quellentool – Der Debugger ist Teil des **Sources-Tools,** das einen JavaScript-Editor enthält.
+
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
+[DevtoolsJavascriptReference]: ./reference.md "Verwenden der Debuggerfeatures | Microsoft Docs"  
+
 [DevtoolsJavascriptIndex]: index.md "Erste Schritte mit dem Debuggen von JavaScript in Microsoft Edge DevTools | Microsoft Docs"  
+
+[DevtoolsSourcesIndex]: ../sources/index.md "Übersicht über das | Microsoft Docs"  
 
 [MDNFetchApi]: https://developer.mozilla.org/docs/Web/API/Fetch_API "Abrufen von API-| MDN"  
 

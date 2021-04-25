@@ -1,18 +1,18 @@
 ---
 description: Codeausschnitte sind kleine Skripts, die Sie im Tool Sources von Microsoft Edge DevTools erstellen und ausführen können.  Sie können von jeder Webseite aus auf Ressourcen zugreifen und diese ausführen.  Wenn Sie einen Codeausschnitt ausführen, wird er aus dem Kontext der aktuell geöffneten Webseite ausgeführt.
-title: Ausführen von Codeausschnitten von JavaScript auf jeder Seite mit Microsoft Edge DevTools
+title: Ausführen von Codeausschnitten von JavaScript auf einer beliebigen Webseite mit Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 779c3dcec66b6b5df3e38abe9ee458bca7dc0c45
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 00c612a1573c7446711a2dc9d22985c83140eecd
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439423"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519429"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -63,27 +63,27 @@ In der folgenden Abbildung wird die Webseite nach dem Ausführen des Codeausschn
    Die Webseite nach dem Ausführen des Codeausschnitts  
 :::image-end:::  
 
-## <a name="open-the-snippets-pane"></a>Öffnen des Codeausschnittbereichs  
+## <a name="open-the-snippets-tab"></a>Öffnen der Registerkarte Codeausschnitte  
 
-Im **Bereich Codeausschnitte** werden Ihre Codeausschnitte aufgelistet.  Wenn Sie einen Codeausschnitt bearbeiten möchten, müssen Sie ihn im Bereich **Codeausschnitte** öffnen.  
+Auf **der Registerkarte Codeausschnitte** im **Bereich Navigator** auf der linken Seite werden Ihre Codeausschnitte aufgelistet.  Wenn Sie einen Codeausschnitt bearbeiten möchten, müssen Sie ihn auf der Registerkarte **Codeausschnitte** öffnen.  
 
-:::image type="complex" source="../media/javascript-sources-snippets-pane.msft.png" alt-text="Der Bereich Codeausschnitte" lightbox="../media/javascript-sources-snippets-pane.msft.png":::
-   Der **Bereich Codeausschnitte**  
+:::image type="complex" source="../media/javascript-sources-snippets-pane.msft.png" alt-text="Registerkarte Codeausschnitte" lightbox="../media/javascript-sources-snippets-pane.msft.png":::
+   Registerkarte **Codeausschnitte**  
 :::image-end:::  
 
-### <a name="open-the-snippets-pane-with-a-mouse"></a>Öffnen des Codeausschnittbereichs mit der Maus  
+### <a name="open-the-snippets-tab-with-a-mouse"></a>Öffnen der Registerkarte Codeausschnitte mit der Maus  
 
-1.  Wählen Sie die **Registerkarte Quellen** aus, um das Tool **Quellen zu** öffnen.  Der **Seitenbereich** wird in der Regel standardmäßig geöffnet.  
+1.  Wählen Sie die **Registerkarte Quellen** aus.  Das **Tool Quellen** wird angezeigt.  
     
-    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="Das Tool Quellen mit links geöffneten Seitenbereich" lightbox="../media/javascript-sources-page-pane.msft.png":::
-       Das **Tool Quellen** mit links geöffneten Seitenbereich ****  
+    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="Das Tool Quellen, auf dem die Registerkarte Seite links geöffnet ist" lightbox="../media/javascript-sources-page-pane.msft.png":::
+       Das **Tool Quellen,** auf dem die **Registerkarte Seite** links geöffnet ist  
     :::image-end:::  
     
-1.  Wählen Sie die **Registerkarte Codeausschnitte** aus, um den **Codeausschnittbereich zu** öffnen.  Möglicherweise müssen Sie weitere **Registerkarten** \( Weitere Registerkarten \) auswählen, um ![ auf die Option ](../media/more-tabs-icon.msft.png) **Codeausschnitte zu** zugreifen.  
+1.  Wählen Sie **im Bereich Navigator** (links) die Registerkarte **Codeausschnitte** aus.  Wenn Sie auf die **Option Codeausschnitte** zugreifen möchten, müssen Sie möglicherweise weitere **Registerkarten** \( ![ Weitere Registerkarten ](../media/more-tabs-icon.msft.png) \) auswählen.  
     
-### <a name="open-the-snippets-pane-with-the-command-menu"></a>Öffnen Sie den Codeausschnittbereich mit dem Befehlsmenü.  
+### <a name="open-the-snippets-tab-with-the-command-menu"></a>Öffnen Sie die Registerkarte Codeausschnitte mit dem Befehlsmenü.  
 
-1.  Fokussieren Sie den Cursor an einer stelle in DevTools.  
+1.  Wählen Sie in DevTools alles aus, damit DevTools den Fokus hat.  
 1.  Wählen `Control` + `Shift` + `P` Sie \(Windows, Linux\) oder `Command` + `Shift` + `P` \(macOS\) aus, um das Befehlsmenü zu öffnen.  
 1.  Geben `Snippets` Sie ein, **wählen Sie Codeausschnitte**anzeigen aus, und wählen Sie dann aus, `Enter` um den Befehl auszuführen.  
     
@@ -93,11 +93,11 @@ Im **Bereich Codeausschnitte** werden Ihre Codeausschnitte aufgelistet.  Wenn Si
     
 ## <a name="create-snippets"></a>Erstellen von Codeausschnitten  
 
-### <a name="create-a-snippet-through-the-sources-panel"></a>Erstellen eines Codeausschnitts über den Bereich Quellen  
+### <a name="create-a-snippet-through-the-sources-tool"></a>Erstellen eines Codeausschnitts über das Tool Quellen  
 
-1.  [Öffnen Sie den **Bereich Codeausschnitte** ](#open-the-snippets-pane).  
+1.  [Öffnen Sie die Registerkarte Codeausschnitte](#open-the-snippets-tab).  
 1.  Wählen **Sie Neuer Codeausschnitt aus.**  
-1.  Geben Sie einen Namen für Ihren Codeausschnitt ein, und wählen Sie dann `Enter` zum Speichern aus.  
+1.  Geben Sie einen Namen für Ihren Codeausschnitt ein, und wählen Sie dann `Enter` aus.  
     
     :::image type="complex" source="../media/javascript-sources-snippets-naming.msft.png" alt-text="Benennen eines Codeausschnitts" lightbox="../media/javascript-sources-snippets-naming.msft.png":::
        Benennen eines Codeausschnitts  
@@ -117,8 +117,8 @@ Um Ihren neuen Codeausschnitt mit einem benutzerdefinierten Namen umzubenennen, 
 
 ## <a name="edit-snippets"></a>Bearbeiten von Codeausschnitten  
 
-1.  [Öffnen Sie den **Bereich Codeausschnitte** ](#open-the-snippets-pane).  
-1.  Wählen Sie im Bereich Codeausschnitte den Namen des **Codeausschnitts** aus, den Sie bearbeiten möchten.  Es wird im **Code-Editor geöffnet.**  
+1.  [Öffnen Sie die Registerkarte Codeausschnitte](#open-the-snippets-tab).  
+1.  Wählen Sie auf der Registerkarte Codeausschnitte den Namen des **Codeausschnitts** aus, den Sie bearbeiten möchten.  Es wird im **Code-Editor geöffnet.**  
     
     :::image type="complex" source="../media/javascript-sources-snippets-editor-saved.msft.png" alt-text="Der Code-Editor" lightbox="../media/javascript-sources-snippets-editor-saved.msft.png":::
        Der **Code-Editor**  
@@ -133,11 +133,11 @@ Um Ihren neuen Codeausschnitt mit einem benutzerdefinierten Namen umzubenennen, 
     
 ## <a name="run-snippets"></a>Ausführen von Codeausschnitten  
 
-### <a name="run-a-snippet-from-the-sources-panel"></a>Ausführen eines Codeausschnitts im Bereich Quellen  
+### <a name="run-a-snippet-from-the-sources-tool"></a>Ausführen eines Codeausschnitts aus dem Tool "Quellen"  
 
-1.  [Öffnen Sie den **Bereich Codeausschnitte** ](#open-the-snippets-pane).  
+1.  [Öffnen Sie die Registerkarte Codeausschnitte](#open-the-snippets-tab).  
 1.  Wählen Sie den Namen des Codeausschnitts aus, den Sie ausführen möchten.  Der Codeausschnitt wird im **Code-Editor geöffnet.**  
-1.  Wählen **Sie Codeausschnitt** ausführen \( ![ Codeausschnitt ausführen ](../media/run-snippet-icon.msft.png) \) oder `Control` + `Enter` \(Windows, Linux\) oder `Command` + `Enter` \(macOS\).  
+1.  Wählen **Sie Codeausschnitt** ausführen \( ![ Codeausschnitt ausführen ](../media/run-snippet-icon.msft.png) \).
     
 ### <a name="run-a-snippet-with-the-command-menu"></a>Ausführen eines Codeausschnitts mit dem Befehlsmenü  
 
@@ -153,12 +153,12 @@ Um Ihren neuen Codeausschnitt mit einem benutzerdefinierten Namen umzubenennen, 
 
 ## <a name="rename-snippets"></a>Umbenennen von Codeausschnitten  
 
-1.  [Öffnen Sie den **Bereich Codeausschnitte** ](#open-the-snippets-pane).  
+1.  [Öffnen Sie die Registerkarte Codeausschnitte](#open-the-snippets-tab).  
 1.  Zeigen Sie auf den Codeausschnittnamen, öffnen Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste\), und wählen Sie **Umbenennen aus.**  
     
 ## <a name="delete-snippets"></a>Löschen von Codeausschnitten  
 
-1.  [Öffnen Sie den **Bereich Codeausschnitte** ](#open-the-snippets-pane).  
+1.  [Öffnen Sie die Registerkarte Codeausschnitte](#open-the-snippets-tab).  
 1.  Zeigen Sie auf den Codeausschnittnamen, öffnen Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste\), und wählen Sie **Entfernen aus.**  
     
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  

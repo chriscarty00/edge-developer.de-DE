@@ -7,12 +7,12 @@ ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 8197157c3024374e11db71f919cc937fed2e6b1b
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: c622d529a8008248d57a6b1b0656636a982054c1
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439591"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519408"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -62,7 +62,7 @@ Die folgenden Tastenkombinationen sind in den meisten, wenn nicht in allen DevTo
 | Harte Aktualisierung | `Control`+`F5` oder `Control`+`Shift`+`R` | `Command`+`Shift`+`R` |  
 | Im aktuellen Bereich nach Text suchen.  Nicht unterstützt in **den Überwachungs-,** **Anwendungs-** und **Sicherheitstools** | `Control`+`F` | `Command`+`F` |  
 | Öffnet die **Registerkarte Suchen** in der [Drawer][DevtoolsCustomizeIndexDrawer], mit der Sie nach Text in allen geladenen Ressourcen suchen können. | `Control`+`Shift`+`F` | `Command`+`Option`+`F` |  
-| Öffnen einer Datei im **Bereich Quellen** | `Control`+`O` oder `Control`+`P` | `Command`+`O` oder `Command`+`P` |  
+| Öffnen einer Datei im **Tool "Quellen"** | `Control`+`O` oder `Control`+`P` | `Command`+`O` oder `Command`+`P` |  
 | Vergrößern | `Control`+`Shift`+`+` | `Command`+`Shift`+`+` |  
 | Verkleinern | `Control`+`-` | `Command`+`-` |  
 | Standardzoom wiederherstellen | `Control`+`0` | `Command`+`0` |  
@@ -160,7 +160,7 @@ Die folgenden Tastenkombinationen sind in den meisten, wenn nicht in allen DevTo
 
 <!-- links -->  
 
-[DevtoolsCommandMenuIndex]: ../command-menu/index.md "Ausführen von Befehlen mit der Microsoft Edge DevTools-Befehlsmenüleiste | Microsoft Docs"  
+[DevtoolsCommandMenuIndex]: ../command-menu/index.md "Ausführen von Befehlen mit dem Microsoft Edge DevTools-Befehlsmenü | Microsoft Docs"  
 [DevtoolsCustomizeIndexDrawer]: ../customize/index.md#drawer "Drawer – Anpassen von Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCustomizeIndexPlacement]: ../customize/index.md#change-devtools-placement "DevTools-Platzierung ändern – Anpassen von Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsDeviceModeIndex]: ../device-mode/index.md "Emulieren von mobilen Geräten in Microsoft Edge DevTools | Microsoft Docs"  

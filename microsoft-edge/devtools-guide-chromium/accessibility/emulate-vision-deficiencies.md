@@ -7,12 +7,12 @@ ms.date: 02/09/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: eec3c95bac93e600acf1887c8d31cea2173c6aee
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 8c3f3a34c441692117906f51c3d8430e79fd72b1
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397874"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519170"
 ---
 # <a name="emulate-vision-deficiencies"></a>Emulieren von Sehstörungen
 
@@ -48,7 +48,7 @@ Das **Menü Rendering** wird in der Schublade angezeigt.
     
 1.  Wählen Sie eine Option aus.  
     
-    :::image type="complex" source="../media/accessibility-emulate-vision-menu-options.msft.png" alt-text="Menüoptionen Visionsmangel emulieren" lightbox="../media/accessibility-emulate-vision-menu-options.msft.png":::
+    :::image type="complex" source="../media/accessibility-emulate-vision-menu-options.msft.png" alt-text="Menüoptionen "Visionsmangel emulieren"" lightbox="../media/accessibility-emulate-vision-menu-options.msft.png":::
        Menüoptionen **zum Emulieren von Sehschwächen**  
     :::image-end:::  
     
@@ -70,7 +70,7 @@ Das **Menü Rendering** wird in der Schublade angezeigt.
 
 Sie können auch das **Befehlsmenü verwenden,** um auf die verschiedenen Simulationen zu zugreifen.  
 
-1.  Wählen `Control` + `Shift` + `P` Sie \(Windows/Linux\) oder `Command` + `Shift` + `P` \(macOS\) aus, um das **Befehlsmenü zu öffnen.**  
+1.  Wählen `Ctrl` + `Shift` + `P` Sie \(Windows/Linux\) oder `Command` + `Shift` + `P` \(macOS\) aus, um das **Befehlsmenü zu öffnen.**  
     
     :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="Das Befehlsmenü" lightbox="../media/css-console-command-menu-rendering.msft.png":::
        Das **Befehlsmenü**  
@@ -87,9 +87,9 @@ Sie können auch das **Befehlsmenü verwenden,** um auf die verschiedenen Simula
 
 <!-- links -->  
 
-[DevToolsIndex]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
+[DevToolsIndex]: ../index.md "Microsoft Edge (Chromium) -Entwicklertools | Microsoft Docs"  
 [DevtoolsRenderingToolsIndex]: ../rendering-tools/index.md "Analysieren der Laufzeitleistung | Microsoft Docs"  
 
-[ColorblindawarenessMain]: http://www.colourblindawareness.org "Die Organisation "Farbblindheit""  
+[ColorblindawarenessMain]: http://www.colourblindawareness.org "Die Organisation &quot;Farbblindheit&quot;"  
 
 [AmfcbMain]: https://www.amfcb.org "The American Foundation for the Color Blind (AFCB)"  

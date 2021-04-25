@@ -7,12 +7,12 @@ ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 2a2d48bda34daa95b9f500c31a12859a1cb08625
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: a8fccdcabf03f3894a9a11246b90db4686fd953e
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439198"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519317"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -65,7 +65,7 @@ Dieses Stylesheet enthält nicht nur den Code für die Schaltflächenkomponente.
 1.  [Öffnen Sie das Befehlsmenü][DevToolsCommandMenu].  
 1.  Beginnen Sie mit der `coverage` Eingabe, wählen Sie den **Befehl Abdeckung** anzeigen aus, und wählen Sie dann aus, `Enter` um den Befehl auszuführen.  Der **Bereich** Abdeckung wird in der **Schublade geöffnet.**  
 
-    :::image type="complex" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="Der Bereich Abdeckung" lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
+    :::image type="complex" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="Der Bereich "Abdeckung"" lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
        Der **Bereich "Abdeckung"**  
     :::image-end:::  
     
@@ -78,7 +78,7 @@ Dieses Stylesheet enthält nicht nur den Code für die Schaltflächenkomponente.
     
 ## <a name="analyze-code-coverage"></a>Analysieren der Codeabdeckung  
 
-In der Tabelle im **Bereich** "Abdeckung" werden die analysierten Ressourcen und der Code in den einzelnen Ressourcen angezeigt.  Wählen Sie eine Zeile aus, um diese Ressource im Bereich Quellen zu **öffnen,** und überprüfen Sie eine Zeilenaufschlüsselung des verwendeten Codes und des nicht verwendeten Codes.  
+In der Tabelle im **Bereich** "Abdeckung" werden die analysierten Ressourcen und der Code in den einzelnen Ressourcen angezeigt.  Wählen Sie eine Zeile aus, um diese Ressource im **Tool Quellen** zu öffnen, und überprüfen Sie eine Zeilenaufschlüsselung des verwendeten Codes und des nicht verwendeten Codes.  
 
 :::image type="complex" source="../media/coverage-sources-resource-drawer-coverage-selected.msft.png" alt-text="Ein Codeabdeckungsbericht" lightbox="../media/coverage-sources-resource-drawer-coverage-selected.msft.png":::
    Ein Codeabdeckungsbericht  

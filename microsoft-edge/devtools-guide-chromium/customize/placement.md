@@ -7,12 +7,12 @@ ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 8fabeaf6d972badd08ab85486913ef17f54bcf67
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: c4aca068c159f03b60bbf6d7643bb334a5b5a7f2
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439177"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519156"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -30,18 +30,37 @@ ms.locfileid: "11439177"
 
 # <a name="change-microsoft-edge-devtools-placement-undock-dock-to-bottom-dock-to-left"></a>Ändern der Microsoft Edge DevTools-Platzierung (Abdocken, Dock nach unten, Dock nach links)  
 
-DevTools ist standardmäßig rechts neben dem Viewport angedockt.  Sie können auch unten andocken, nach links andocken oder devTools an ein separates Fenster abdocken.  
+DevTools wird standardmäßig rechts neben dem Viewport (Fenster) angedockt.  Sie können DevTools auch am unteren oder linken Rand des Fensters andocken oder DevTools an ein separates Fenster andocken.
 
 :::row:::
    :::column span="":::
+      DevTools an der linken Seite des Fensters angedockt:
+   :::column-end:::
+   :::column span="":::
+      DevTools am unteren Rand des Fensters angedockt:
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::
       :::image type="complex" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="Wählen Sie Dock nach links aus." lightbox="../media/customize-elements-styles-right-docked.msft.png":::
-         Auswählen `Dock To Left`  
+         Wählen **Sie Dock nach links aus.**  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
       :::image type="complex" source="../media/customize-elements-styles-bottom-docked.msft.png" alt-text="Wählen Sie Dock to Bottom aus." lightbox="../media/customize-elements-styles-bottom-docked.msft.png":::
-         Auswählen `Dock To Bottom`  
+         Auswählen `Dock to bottom`  
       :::image-end:::  
+   :::column-end:::
+:::row-end:::  
+
+DevTools werden möglicherweise an ein separates Fenster entfernt, das Sie auf einen separaten Monitor verschieben können:
+
+:::row:::
+   :::column span="":::
+      Browserfenster:
+   :::column-end:::
+   :::column span="":::
+      DevTools in einem separaten Fenster entdockt:
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -59,19 +78,27 @@ DevTools ist standardmäßig rechts neben dem Viewport angedockt.  Sie können a
 
 ## <a name="change-placement-from-the-main-menu"></a>Ändern der Platzierung aus dem Hauptmenü  
 
-1.  Wählen **Sie Anpassen und Steuern DevTools** \( \) aus, und wählen Sie Abdocken in separates Fenster `...` \( **** ![ Undock ](../media/undock-icon.msft.png) \), Dock to **bottom** \( Dock to ![ Bottom ](../media/bottom-icon.msft.png) \) oder Dock to **Left** \( Dock To ![ Left ](../media/left-icon.msft.png) \).  
+1.  Wählen **Sie Anpassen und Steuern von DevTools** \( \) aus, und wählen Sie Abdocken in separates Fenster `...` \( **** ![ Undock ](../media/undock-icon.msft.png) \), Dock to **bottom** \( Dock to bottom \) oder Dock ![ to ](../media/bottom-icon.msft.png) **left** \( Dock to ![ left ](../media/left-icon.msft.png) \).  
     
     :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="Wählen Sie In separates Fenster abdocken aus" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
-       Wählen **Sie In separates Fenster abdocken aus**  
+       Wählen **Sie Abdocken in separates Fenster aus.**  
     :::image-end:::  
     
 ## <a name="change-placement-from-the-command-menu"></a>Ändern der Platzierung im Befehlsmenü  
 
-1.  [Öffnen Sie das Befehlsmenü][DevtoolsCommandMenu].  
-1.  Führen Sie einen der folgenden Befehle aus: `Dock To Bottom` , `Undock Into Separate Window` .  Derzeit gibt es keinen Befehl zum Andocken nach links, aber Sie können über das [Hauptmenü darauf zugreifen.](#change-placement-from-the-main-menu)  
+1.  [Öffnen Sie das Befehlsmenü][DevtoolsCommandMenu], indem Sie `Shift` + `Ctrl` + `P` unter Windows/Linux oder `Command` + `Shift` + `P` unter macOS auswählen.  
+1.  Geben Sie nach dem Zeichen ein, und wählen Sie dann `>` einen der folgenden Befehle `dock` aus:  
     
-    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="Der Befehl Rückgängig machen" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
-       Der Befehl "Rückgängig machen"  
+    *  **Dock to bottom**
+    *  **Dock nach links**
+    *  **Dock nach rechts**
+    *  **Wiederherstellen der letzten Dockposition**
+    *  **Abdocken in separates Fenster**
+    
+    Sie können auch über das Hauptmenü auf [die Befehle zugreifen.](#change-placement-from-the-main-menu) 
+    
+    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="Der Befehl "Abdocken"" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
+       Der Befehl "Abdocken"  
     :::image-end:::  
     
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  

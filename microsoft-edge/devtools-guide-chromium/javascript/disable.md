@@ -7,12 +7,12 @@ ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 2067944fa17c332dd15ffb3ef97afe02d35685ed
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 665181b14e6fa5e86950a27822d52395f49f5b92
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398560"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519352"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -30,7 +30,9 @@ ms.locfileid: "11398560"
 
 # <a name="disable-javascript-with-microsoft-edge-devtools"></a>Deaktivieren von JavaScript mit Microsoft Edge DevTools  
 
-Führen Sie die folgenden Aktionen aus, um anzuzeigen, wie eine Webseite aussieht und sich verhält, wenn JavaScript deaktiviert ist.  
+Um zu überprüfen, wie Ihre Webseite gerendert wird, wenn ein Browser keine JavaScript-Unterstützung hat, deaktivieren Sie javaScript vorübergehend.
+
+Führen Sie die folgenden Aktionen aus, um zu untersuchen, wie eine Webseite angezeigt wird und wie sie sich verhält, wenn Sie JavaScript deaktivieren.  
 
 1.  [Öffnen Sie Microsoft Edge DevTools][DevToolsOpen].  
 1.  Wählen `Control` + `Shift` + `P` Sie \(Windows, Linux\) oder `Command` + `Shift` + `P` \(macOS\) aus, um das **Befehlsmenü zu öffnen.**  

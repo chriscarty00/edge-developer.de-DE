@@ -7,12 +7,12 @@ ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 75c9df5d86ce994cebfda882a0adfa2664b6ec30
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: e3ddadcf37303a476f3a656696b00f121f079b69
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439444"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519611"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -98,7 +98,7 @@ Die Basislinie ist eine Aufzeichnung der Leistung der Website, bevor Sie Leistun
     
     [!INCLUDE [audits-panel-note](../includes/audits-panel-note.md)]  
     
-    :::image type="complex" source="../media/speed-audits-performance.msft.png" alt-text="Das Tool Überwachungen" lightbox="../media/speed-audits-performance.msft.png":::
+    :::image type="complex" source="../media/speed-audits-performance.msft.png" alt-text="Das Tool "Überwachungen"" lightbox="../media/speed-audits-performance.msft.png":::
        Das **Tool "Überwachungen"**  
     :::image-end:::  
     
@@ -139,7 +139,7 @@ Die Nummer oben in Ihrem Bericht ist die Gesamtleistungsnote für die Website.  
 
 Der **Abschnitt Metriken** enthält mengenmäßige Messungen der Leistung der Website.  Jede Metrik bietet Einblick in einen anderen Aspekt der Leistung.  Beispielsweise informiert **First Contentful Paint,** wann Inhalte zum ersten Mal auf den Bildschirm gefärbt werden. Dies ist ein wichtiger Meilenstein in der Wahrnehmung der Seitenlast durch den Benutzer, während **Time To Interactive** den Punkt markiert, an dem die Seite so bereit erscheint, dass Benutzerinteraktionen ausgeführt werden können.  
 
-:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed-highlighted.msft.png" alt-text="Abschnitt Metriken" lightbox="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed-highlighted.msft.png":::
+:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed-highlighted.msft.png" alt-text="Abschnitt "Metriken"" lightbox="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed-highlighted.msft.png":::
    Abschnitt **"Metriken"**  
 :::image-end:::  
 
@@ -175,13 +175,13 @@ Wählen **Sie Weitere Informationen** aus, um Dokumentation darüber zu erhalten
 
 Der **Abschnitt Diagnose** enthält weitere Informationen zu Faktoren, die zur Ladezeit der Seite beitragen.  
 
-:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-diagnostics.msft.png" alt-text="Der Abschnitt Diagnostics" lightbox="../media/speed-glitch-tony-remix-audits-performance-diagnostics.msft.png":::
+:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-diagnostics.msft.png" alt-text="Der Abschnitt "Diagnostics"" lightbox="../media/speed-glitch-tony-remix-audits-performance-diagnostics.msft.png":::
    Der **Abschnitt "Diagnostics"**  
 :::image-end:::  
 
 Der **Abschnitt "Bestandene Prüfungen"** zeigt Ihnen, was die Website ordnungsgemäß macht.  Wählen Sie aus, um den Abschnitt zu erweitern.  
 
-:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-passed-audits.msft.png" alt-text="Der Abschnitt Bestandene Überwachungen" lightbox="../media/speed-glitch-tony-remix-audits-performance-passed-audits.msft.png":::
+:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-passed-audits.msft.png" alt-text="Der Abschnitt "Bestandene Überwachungen"" lightbox="../media/speed-glitch-tony-remix-audits-performance-passed-audits.msft.png":::
    Der **Abschnitt "Bestandene Überwachungen"**  
 :::image-end:::  
 
@@ -206,7 +206,7 @@ Bevor Sie die Komprimierung aktivieren, finden Sie hier eine Reihe von Möglichk
 1.  Wählen Sie das **Symbol Netzwerkeinstellung** aus.  
 1.  Aktivieren Sie das **Kontrollkästchen Große Anforderungszeilen** verwenden.  Die Höhe der Zeilen in der Tabelle der Netzwerkanforderungen nimmt zu.  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-network-use-large-request-rows.msft.png" alt-text="Große Zeilen in der Tabelle Netzwerkanforderungen" lightbox="../media/speed-glitch-tony-remix-network-use-large-request-rows.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-network-use-large-request-rows.msft.png" alt-text="Große Zeilen in der Tabelle "Netzwerkanforderungen"" lightbox="../media/speed-glitch-tony-remix-network-use-large-request-rows.msft.png":::
        Große Zeilen in der Tabelle "Netzwerkanforderungen"  
     :::image-end:::  
     
@@ -349,23 +349,23 @@ Die erste Aufgabe besteht also darin, Code zu finden, den Sie beim Laden der Sei
        Öffnen des Befehlsmenüs im **Überwachungbereich**  
     :::image-end:::  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage.msft.png" alt-text="Das Tool Abdeckung" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage.msft.png" alt-text="Das Tool "Abdeckung"" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage.msft.png":::
        Das **Tool "Abdeckung"**  
     :::image-end:::  
     
 1.  Wählen **Sie Aktualisieren** \( Aktualisieren ![ ](../media/reload-icon.msft.png) \).  Das **Tool** Coverage bietet eine Übersicht darüber, wie viel Code in , und ausgeführt wird, während `bundle.js` die Seite geladen `jquery.js` `lodash.js` wird.  In der Abbildung nach der folgenden Abbildung werden ca. 76 % bzw. 30 % der jQuery- und Lodash-Dateien nicht verwendet.  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage-reloaded.msft.png" alt-text="Der Bericht Abdeckung" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage-reloaded.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage-reloaded.msft.png" alt-text="Der Bericht "Abdeckung"" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage-reloaded.msft.png":::
        Der Bericht "Abdeckung"  
     :::image-end:::  
     
-1.  Wählen Sie ** diejquery.js** aus.  DevTools öffnet die Datei im Bereich Quellen.  Eine Codezeile wurde angezeigt, wenn sie einen blauen Balken daneben hat.  Eine rote Leiste bedeutet, dass sie nicht ausgeführt wurde und bei der Seitenlast definitiv nicht benötigt wird.  
+1.  Wählen Sie die `jquery.js` Zeile aus.  DevTools öffnet die Datei im **Tool Quellen.**  Wenn eine Codezeile gelaufen ist, wird daneben ein blauer Balken angezeigt.  Ein roter Balken bedeutet, dass die Codezeile nicht ausgeführt wurde und bei der Auslastung der Webseite definitiv nicht benötigt wird.  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png" alt-text="Anzeigen der jQuery-Datei im Bereich Quellen" lightbox="../media/speed-glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png":::
-       Anzeigen der jQuery-Datei im **Bereich Quellen**  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png" alt-text="Anzeigen der jQuery-Datei im Tool Quellen" lightbox="../media/speed-glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png":::
+       Anzeigen der jQuery-Datei im **Tool Quellen**  
     :::image-end:::  
     
-1.  Scrollen Sie ein wenig durch den jQuery-Code.  Einige der Zeilen, die "ausführen" erhalten, sind eigentlich nur Kommentare.  Das Ausführen dieses Codes über ein Minifier, das Kommentare entfernt, ist eine weitere Möglichkeit, die Größe dieser Datei zu reduzieren.  
+1.  Scrollen Sie durch den jQuery-Code.  Einige der zeilen, die ausgeführt werden, sind eigentlich nur Kommentare.  Um Kommentare zu löschen und die Größe der Datei zu reduzieren, führen Sie den Code über eine Minifier-App oder ein Miniskript aus.  
 
 Kurz gesagt, wenn Sie mit Ihrem **** eigenen Code arbeiten, hilft Ihnen das Coverage-Tool dabei, Ihren Code zeiler zu analysieren und nur den Code zu versenden, der für das Laden von Seiten erforderlich ist.  
 
@@ -451,7 +451,7 @@ Untersuchen Sie die Ablaufverfolgung, um Möglichkeiten für weniger JavaScript-
 1.  Wählen **Sie Timings** erneut aus, um diesen Abschnitt zu reduzieren.  
 1.  Durchsuchen Sie **den Abschnitt Main.**  Dieser Abschnitt zeigt ein chronologisches Protokoll der Hauptthreadaktivität von links nach rechts.  Die y-Achse (oben nach unten) zeigt, warum Ereignisse aufgetreten sind.  Beispielsweise führte das Ereignis im Feigenblatt nach dem folgenden Ereignis dazu, dass die Funktion ausgeführt wurde, was zur Ausführung führte, was dazu führte, dass sie ausgeführt `Evaluate Script` `(anonymous)` `(anonymous)` `__webpack__require__` wurde, und so weiter.  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-main.msft.png" alt-text="Der Abschnitt Main" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-main.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-main.msft.png" alt-text="Der Abschnitt "Main"" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-main.msft.png":::
        Der **Abschnitt "Main"**  
     :::image-end:::  
     

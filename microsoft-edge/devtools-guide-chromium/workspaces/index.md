@@ -7,12 +7,12 @@ ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 17f9ced15dbacd62c9ffe40e4af889925a8155fb
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: f00e2e42f73f7d03c858deaf020db683391ff1f2
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399246"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519422"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -30,8 +30,7 @@ ms.locfileid: "11399246"
 
 # <a name="edit-files-with-workspaces"></a>Bearbeiten von Dateien mit Arbeitsbereichen  
 
-> [!NOTE]
-> Ziel dieses Lernprogramms ist es, praktische Übungen zum Einrichten und Verwenden von Arbeitsbereichen zu bieten, damit Sie Arbeitsbereiche in Ihren eigenen Projekten verwenden können.  Sie können die Änderungen am Quellcode auf Ihrem lokalen Computer speichern, die Sie in DevTools vorgenommen haben, nachdem Sie Arbeitsbereiche aktiviert haben.  
+Dieses Lernprogramm bietet praktische Übungen zum Einrichten und Verwenden eines Arbeitsbereichs.  Nachdem Sie einem Arbeitsbereich Dateien hinzugefügt haben, werden die Änderungen, die Sie in Ihrem Quellcode in DevTools vornehmen, auf Ihrem lokalen Computer gespeichert und nach dem Aktualisieren der Webseite beibehalten.  
 
 > [!IMPORTANT]
 > **Voraussetzungen**: Bevor Sie mit diesem Lernprogramm beginnen, sollten Sie wissen, wie Sie die folgenden Aktionen ausführen.  
@@ -54,7 +53,7 @@ Wenn Arbeitsbereiche aktiviert sind, werden die CSS-Änderungen, die Sie in DevT
 
 Wenn Sie ein modernes Framework verwenden, wird der Quellcode wahrscheinlich von einem Format transformiert, das einfach zu verwalten ist, in ein Format, das so optimiert ist, dass er so schnell wie möglich ausgeführt werden kann.  
 
-Workspaces ist in der Regel in der Lage, den optimierten Code mithilfe von Quellzuordnungen wieder dem ursprünglichen [Quellcode zu zuordnungen.][TreehouseBlogSourceMaps]  Es gibt jedoch viele Unterschiede zwischen Frameworks darüber, wie die einzelnen Quellzuordnungen verwendet werden.  Devtools unterstützt einfach alle Variationen.  
+Workspaces ist in der Regel in der Lage, den optimierten Code mithilfe von Quellzuordnungen wieder dem ursprünglichen [Quellcode zu zuordnungen.][TreehouseBlogSourceMaps]  Es gibt jedoch viele Unterschiede zwischen Frameworks darüber, wie jedes Framework Quellzuordnungen verwendet.  Devtools unterstützt nicht alle Variationen.  
 
 Arbeitsbereiche funktionieren mit dem folgenden Framework nicht.  
 
@@ -123,20 +122,20 @@ Führen Sie die folgenden Aktionen aus, um praktische Erfahrungen mit Arbeitsber
        **Konsolenbereich**  
     :::image-end:::  
     
-1.  Wählen Sie das **Tool Quellen** aus.  
-1.  Wählen Sie **den Dateisystembereich** aus.  
+1.  Navigieren Sie zum **Tool Quellen.**  
+1.  Wählen Sie **im Bereich Navigator** (links) die Registerkarte **Dateisystem** aus.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text="Der Dateisystembereich" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
-       Der **Dateisystembereich**  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text="Registerkarte Filesystem" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
+       Registerkarte **Filesystem**  
     :::image-end:::  
     
 1.  Wählen **Sie Ordner zum Arbeitsbereich hinzufügen aus.**  
 1.  Geben Sie `~/Desktop/app` ein.  
 1.  Wählen **Sie Zulassen** aus, um DevTools die Berechtigung zum Lesen und Schreiben in das Verzeichnis zu erteilen.  
-    Im **Dateisystembereich** befindet sich nun ein grüner Punkt neben `index.html` , `script.js` und `styles.css` .  Diese grünen Punkte bedeuten, dass DevTools eine Zuordnung zwischen den Netzwerkressourcen der Seite und den Dateien in eingerichtet `~/Desktop/app` hat.  
+    Auf der **Registerkarte Dateisystem** wird nun neben , und ein grüner `index.html` Punkt `script.js` `styles.css` angezeigt.  Ein grüner Punkt gibt an, dass DevTools eine Zuordnung zwischen einer Netzwerkressource der Seite und der Datei in eingerichtet `~/Desktop/app` hat.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png" alt-text="Der Dateisystembereich zeigt jetzt eine Zuordnung zwischen den lokalen Dateien und den Netzwerkdateien an." lightbox="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png":::
-       Der **Dateisystembereich** zeigt jetzt eine Zuordnung zwischen den lokalen Dateien und den Netzwerkdateien an.  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png" alt-text="Die Registerkarte Dateisystem zeigt jetzt eine Zuordnung zwischen den lokalen Dateien und den Netzwerkdateien an." lightbox="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png":::
+       Die **Registerkarte Dateisystem** zeigt jetzt eine Zuordnung zwischen den lokalen Dateien und den Netzwerkdateien an.  
     :::image-end:::  
     
 ## <a name="step-2-save-a-css-change-to-disk"></a>Schritt 2: Speichern einer CSS-Änderung auf dem Datenträger  
@@ -199,33 +198,35 @@ Die DOM-Struktur ist nicht html.
 In short, the **DOM Tree** `!==` HTML.  
 -->  
 
-### <a name="change-html-from-the-sources-panel"></a>Ändern von HTML im Bereich Quellen  
+### <a name="change-html-from-the-sources-tool"></a>Ändern von HTML aus dem Sources-Tool  
 
-Wenn Sie eine Änderung am Html der Seite speichern möchten, verwenden Sie den **Bereich Quellen.**  
+Wenn Sie eine Änderung am HTML der Webseite speichern möchten, verwenden Sie das **Tool Quellen.**  
 
-1.  Wählen Sie das **Tool Quellen** aus.  
-1.  Wählen Sie den **Seitenbereich** aus.  
+1.  Navigieren Sie zum **Tool Quellen.**  
+1.  Wählen Sie **im Bereich Navigator** (links) die Registerkarte **Seite** aus.  
 1.  Wählen **Sie (Index)** aus.  Der HTML-Code für die Seite wird geöffnet.  
 1.  Ersetzen Sie `<h1>Workspaces Demo</h1>` durch `<h1>I ❤️  Cake</h1>`.  Überprüfen Sie die folgende Abbildung.  
 1.  Wählen `Control` + `S` Sie \(Windows, Linux\) oder `Command` + `S` \(macOS\) aus, um die Änderung zu speichern.  
-1.  Aktualisieren Sie die Seite.  Das `<h1>` Element zeigt weiterhin den neuen Text an.  
+1.  Aktualisieren Sie die Seite.  Das `<h1>` Element zeigt den neuen Text weiterhin an, nachdem die Seite aktualisiert wurde.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Ändern von HTML im Bereich Quellen" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
-       Ändern von HTML im **Bereich Quellen**  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Ändern von HTML aus dem Sources-Tool" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
+       Ändern von HTML aus dem **Sources-Tool**  
     :::image-end:::  
     
 1.  Öffnen Sie `~/Desktop/app/index.html`.  Das `<h1>` Element enthält den neuen Text.  
     
 ## <a name="step-4-save-a-javascript-change-to-disk"></a>Schritt 4: Speichern einer JavaScript-Änderung auf dem Datenträger  
 
-Der **Bereich** Quellen ist auch der Ort, an dem Änderungen an JavaScript vorgenommen werden können.  Manchmal müssen Sie jedoch auf andere Bereiche zugreifen, **** z. B. auf das **Tool Elemente** oder den Konsolenbereich, während Sie Änderungen an Ihrer Website vornehmen.  Es gibt eine Möglichkeit, den Bereich **Quellen** zusammen mit anderen Panels zu öffnen.  
+Der Hauptort für die Verwendung des Code-Editors von DevTools ist das **Sources-Tool.**  Manchmal müssen Sie jedoch beim Bearbeiten von Dateien **** auf andere Tools zugreifen, z. B. auf das **Elementtool** oder den Konsolenbereich.  Mit **dem Tool Quick Source** erhalten Sie nur den Editor aus dem **Sources-Tool,** während jedes Tool geöffnet ist.  
 
-1.  Wählen Sie das **Elementtool** aus.  
+Gehen Sie wie folgt vor, um den DevTools-Code-Editor zusammen mit anderen Tools zu öffnen:  
+
+1.  Navigieren Sie zum **Elementtool.**  
 1.  Wählen `Control` + `Shift` + `P` Sie \(Windows, Linux\) oder `Command` + `Shift` + `P` \(macOS\) aus.  Das **Befehlsmenü** wird geöffnet.  
-1.  Geben `QS` Sie ein, und wählen Sie **Dann Schnellquelle anzeigen aus.**  Am unteren Rand des DevTools-Fensters befindet sich nun ein **Schnellquellenbereich.**  Der Bereich zeigt den Inhalt von an, der die letzte Datei ist, die `index.html` Sie im Bereich Quellen **bearbeitet** haben.  Im **Schnellquellenbereich** erhalten Sie **** den Editor aus dem Bereich Quellen, sodass Sie Dateien bearbeiten können, während andere Bereiche geöffnet sind.  
+1.  Geben `Quick Source` Sie ein, und wählen Sie **dann Schnellquelle anzeigen aus.**  Am unteren Rand des DevTools-Fensters wird das **Quick Source-Tool** angezeigt, das den Inhalt von angibt, der die letzte Datei ist, die Sie im Tool `index.html` Quellen **bearbeitet** haben.    
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="Öffnen des Schnellquellenbereichs mithilfe des Befehlsmenüs" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
-       Öffnen des **Schnellquellenbereichs** mithilfe **des Befehlsmenüs**  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="Öffnen Des Schnellquellentools mithilfe des Befehlsmenüs" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
+       Öffnen Des **Schnellquellentools** mithilfe des **Befehlsmenüs**  
     :::image-end:::  
     
 1.  Wählen `Control` + `P` Sie \(Windows, Linux\) oder `Command` + `P` \(macOS\) aus, um das Dialogfeld **Datei öffnen zu** öffnen.  Überprüfen Sie die folgende Abbildung.  
@@ -238,7 +239,7 @@ Der **Bereich** Quellen ist auch der Ort, an dem Änderungen an JavaScript vorge
     > [!NOTE]
     > Der `Save Changes To Disk With Workspaces` Link in der Demo wird regelmäßig stylet.  
     
-1.  Fügen Sie den folgenden Code am ende des **script.js** im **Schnellquellenbereich** hinzu.  
+1.  Fügen Sie den folgenden Code am Ende der **script.js** mithilfe des **Quick Source-Tools** hinzu.  
     
     ```javascript
     console.log('greetings from script.js');

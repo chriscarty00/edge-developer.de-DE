@@ -7,12 +7,12 @@ ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: debea327be41ab8aa2da19aa8cc128a1897e51e5
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: c04d1ec02b188cc7ec8ab2598b395dbeb4431c46
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398392"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519415"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -43,7 +43,7 @@ Halten Sie ihren clientseitigen Code auch nach dem Kombinieren, Minimieren oder 
 
 ## <a name="get-started-with-preprocessors"></a>Erste Schritte mit Präprozessoren  
 
-In diesem Artikel wird die Interaktion mit JavaScript-Quellkarten im DevTools-Quellenbereich erläutert.  <!--For a first overview of what preprocessors are, how each may help, and how Source Maps work; navigate to Set Up CSS & JS Preprocessors.  -->  
+In diesem Artikel wird die Interaktion mit JavaScript-Quellkarten im Tool DevTools Sources erläutert.  <!--For a first overview of what preprocessors are, how each may help, and how Source Maps work; navigate to Set Up CSS & JS Preprocessors.  -->  
 
 <!--todo: add link to Set Up CSS & JS Preprocessors when section is available -->  
 <!--[]: /web/tools/setup/setup-preprocessors#debugging-and-editing-preprocessed-content ""  -->  
@@ -61,7 +61,7 @@ Die folgenden Typen von Präprozessoren werden häufig in Kombination mit Quellk
 *   Compiler \([Closure Compiler][GitHubGoogleClosureCompiler], [TypeScript][|::ref1::|Main], [CoffeeScript][|::ref2::|Main], [Dart][DartMain]\)  
 *   Minifiers \([UglifyJS][GitHubMishooUglifyJS]\)  
     
-## <a name="source-maps-in-devtools-sources-panel"></a>Quellzuordnungen im DevTools-Quellenbereich  
+## <a name="source-maps-in-devtools-sources-tool"></a>Tool "Quellzuordnungen in DevTools-Quellen"  
 
 Quellzuordnungen von Präprozessoren führen dazu, dass DevTools ihre ursprünglichen Dateien zusätzlich zu den minifizierten Dateien geladen hat.  Anschließend verwenden Sie die Originale, um Haltepunkte zu setzen und Code zu durchbrechen.  In der Zwischenzeit wird in Microsoft Edge tatsächlich der minifizierte Code ausgeführt.  Die Ausführung des Codes gibt Ihnen die Illusion, eine Entwicklungswebsite in der Produktion zu verwenden.  
 
@@ -101,10 +101,10 @@ Navigieren Sie zur folgenden Seite.
 
 Führen Sie die folgenden Aktionen aus.  
 
-1.  Öffnen Sie devTools, und navigieren Sie zum **Bereich Quellen.**  
+1.  Öffnen Sie DevTools, und navigieren Sie zum **Tool Quellen.**  
 1.  Geben Sie einen Dateinamen in das Eingabefeld **Name your code:** ein.  
 1.  Wählen Sie **die Kompilierungsschaltfläche** aus.  
-1.  Eine Warnung wird mit der ausgewerteten Summe aus der CoffeeScript-Quelle angezeigt.  
+1.  Es wird eine Warnung mit der ausgewerteten Summe aus der CoffeeScript-Quelle angezeigt.  
     
 Wenn Sie den Unterbereich **Quellen** erweitern, wird nun eine neue Datei mit dem benutzerdefinierten Dateinamen angezeigt, den Sie zuvor eingegeben haben.  Wenn Sie doppelklicken, um diese Datei zu sehen, enthält sie das kompilierte JavaScript für die ursprüngliche Quelle.  In der letzten Zeile befindet sich jedoch ein Kommentar, der `// @sourceURL` die ursprüngliche Quelldatei angibt.  Dies kann Ihnen beim Debuggen beim Arbeiten mit Sprachabstraktionen helfen.  
 

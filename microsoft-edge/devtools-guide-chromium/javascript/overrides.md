@@ -7,24 +7,23 @@ ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 7f273f89708e0948e68cd2c7ba79cefb6d7e167c
-ms.sourcegitcommit: 2ddfd98d1e871be9c61380a8ca57da398d38bd54
+ms.openlocfilehash: 66c0686c166163f1640384d096288af0b530f135
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "11230964"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519436"
 ---
 # <a name="override-webpage-resources-with-local-copies-using-microsoft-edge-devtools"></a>Überschreiben von Webseitenressourcen mit lokalen Kopien mithilfe von Microsoft Edge DevTools  
 
-Manchmal müssen Sie ein Problem auf einer Webseite beheben, auf die Sie keinen Zugriff haben, oder Korrekturen beinhalten einen langsamen und komplexen Buildprozess.  Sie können alle Arten von Problemen in DevTools debuggen und beheben. Das Problem ist jedoch, dass die Änderungen nicht beibehalten werden.  Nachdem Sie die Datei aktualisiert haben, sind alle Ihre Arbeit weg.  
-
-Das Überschreibungsfeature im [Tool Quellen][DevToolsSourcesTool] hilft Ihnen bei der Lösung dieses Problems.  
+Manchmal müssen Sie einige mögliche Korrekturen für eine Webseite ausprobieren, aber Sie haben keinen Zugriff auf die Quelldateien, oder das Ändern der Seite erfordert einen langsamen und komplexen Buildprozess.  Sie können alle Arten von Problemen in DevTools debuggen und beheben.  Die Änderungen bleiben jedoch nicht erhalten. Nachdem Sie die lokale Datei aktualisiert haben, sind alle Ihre Arbeit weg.  Das Überschreibungsfeature im [Tool Quellen][DevToolsSourcesTool] hilft Ihnen bei der Lösung dieses Problems.  
 
 Sie können nun eine Ressource der aktuellen Webseite verwenden und lokal speichern.  Wenn Sie die Webseite aktualisieren, wird die Ressource vom Browser nicht vom Server geladen.  Stattdessen ersetzt der Browser sie durch Ihre lokale Kopie der Ressource.  
 
 ## <a name="setting-up-your-local-folder-to-store-overrides"></a>Einrichten des lokalen Ordners zum Speichern von Außerkraftsetzungen  
 
-1.  Suchen Sie **im Tool** Quellen auf der linken Seite nach mehreren Abschnitten.  Wenn die **Option Außerkraftsetzungen** nicht angezeigt wird, wählen Sie die Option <code>&#x0226B;</code><!--`≫`--> icon to get there.  
+1.  Navigieren Sie zum **Tool Quellen.**  
+1.  Wählen Sie **im Bereich Navigator** (links) die Registerkarte **Außerkraftsetzungen** aus.  Wenn die **Registerkarte** Außerkraftsetzungen nicht angezeigt wird, wählen Sie die Option <code>&#x0226B;</code><!--`≫`-->  aus.  
     
     :::row:::
        :::column span="":::
@@ -39,7 +38,8 @@ Sie können nun eine Ressource der aktuellen Webseite verwenden und lokal speich
        :::column-end:::
     :::row-end:::  
     
-1.  Nachdem Sie die **Option Außerkraftsetzungen** ausgewählt haben, müssen Sie einen Ordner auf dem lokalen Computer auswählen, um die Ressourcendateien zu speichern, die Sie ersetzen möchten.  Wählen Sie den **Ordner + Auswählen für Außerkraftsetzungen aus,** um nach einem Ordner zu suchen.  
+1.  Wählen Sie einen Ordner auf dem lokalen Computer aus, um die Ressourcendateien zu speichern, die Sie ersetzen möchten.  
+     *   Wenn Sie nach einem Ordner suchen möchten, wählen Sie **+ Ordner für Außerkraftsetzungen auswählen aus.**  
     
     :::image type="complex" source="../media/javascript-overrides-select-folder.msft.png" alt-text="Auswählen eines Ordners, der für Außerkraftsetzungen verwendet werden soll" lightbox="../media/javascript-overrides-select-folder.msft.png":::
        Auswählen eines Ordners, der für Außerkraftsetzungen verwendet werden soll  
@@ -51,7 +51,7 @@ Sie können nun eine Ressource der aktuellen Webseite verwenden und lokal speich
        Gewähren von DevTools-Zugriff auf Ordner  
     :::image-end:::  
     
-1.  Im **Bereich Außerkraftsetzungen** sollte neben dem Ordner "Außerkraftsetzungen" ein `Enable Local Overrides` Kontrollkästchen angezeigt werden.  Neben dem Symbol wird ein Symbol angezeigt, mit dem Sie Ihre lokalen Außerkraftsetzungseinstellungen löschen können.  Sie sind nun mit dem Einrichten Ihres Ordners fertig und können live-Ressourcen durch lokale ersetzen.
+1.  Auf der **Registerkarte Außerkraftsetzungen** wird neben Lokale Außerkraftsetzungen aktivieren ein **Kontrollkästchen angezeigt.**  Rechts neben **Lokale** Außerkraftsetzungen aktivieren befindet sich ein **Clear-Konfigurationssymbol,** mit dem Sie Ihre einstellungen für lokale Außerkraftsetzungen löschen können.  Sie sind nun mit dem Einrichten Ihres Ordners fertig und können Liveressourcen durch lokale ersetzen.
     
     :::image type="complex" source="../media/javascript-overrides-folder-setup-complete.msft.png" alt-text="Erfolgreiches Einrichten eines Außerkraftsetzungsordners" lightbox="../media/javascript-overrides-folder-setup-complete.msft.png":::
        Erfolgreiches Einrichten eines Außerkraftsetzungsordners  
