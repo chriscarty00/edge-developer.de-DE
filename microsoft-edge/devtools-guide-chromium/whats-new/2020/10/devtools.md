@@ -186,7 +186,7 @@ ms.locfileid: "11514354"
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="Öffnen des Seitenleistenbereichs "Berechnet"" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
+      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="Öffnen des Seitenleistenbereichs Berechnet" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
          <span data-ttu-id="3b520-205">Öffnen des **Seitenleistenbereichs "Berechnet"**</span><span class="sxs-lookup"><span data-stu-id="3b520-205">Open the **Computed sidebar** pane</span></span>  
       :::image-end:::  
    :::column-end:::  
