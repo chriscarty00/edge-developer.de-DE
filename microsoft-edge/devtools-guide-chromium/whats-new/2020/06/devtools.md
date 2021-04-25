@@ -138,13 +138,13 @@ ms.locfileid: "11514361"
 
 <span data-ttu-id="643fa-165">In Microsoft Edge 83 und 84 werden QuickInfos für die Spalte Initiator, die die Ursache der Ressourcenanforderung zeigt, im [Netzwerkprotokoll][DevtoolsNetworkIndexLogActivity] angezeigt, das mit einer horizontalen Bildlaufleiste angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="643fa-165">In Microsoft Edge 83 and 84, tooltips for the Initiator column, which shows the cause of the resource request, in the [Network Log][DevtoolsNetworkIndexLogActivity] displayed with a horizontal scrollbar.</span></span>  <span data-ttu-id="643fa-166">Sie konnten nur die Aufrufliste anzeigen, die die Anforderung initiiert hat, indem Sie einen horizontalen Bildlauf in der QuickInfo durchführen.</span><span class="sxs-lookup"><span data-stu-id="643fa-166">You were only able to display the call stack that initiated the request by scrolling horizontally in the tooltip.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/initiator-tooltip-84.msft.png" alt-text="Die QuickInfo "Initiator" in Microsoft Edge 84" lightbox="../../media/2020/06/initiator-tooltip-84.msft.png":::
+:::image type="complex" source="../../media/2020/06/initiator-tooltip-84.msft.png" alt-text="Die QuickInfo Initiator in Microsoft Edge 84" lightbox="../../media/2020/06/initiator-tooltip-84.msft.png":::
    <span data-ttu-id="643fa-168">Die QuickInfo "Initiator" in Microsoft Edge 84</span><span class="sxs-lookup"><span data-stu-id="643fa-168">The Initiator tooltip in Microsoft Edge 84</span></span>  
 :::image-end:::  
 
 <span data-ttu-id="643fa-169">Ab Microsoft Edge 85 können Sie nun die Aufrufliste des Initiators in der QuickInfo ohne horizontalen Bildlauf anzeigen.</span><span class="sxs-lookup"><span data-stu-id="643fa-169">Starting with Microsoft Edge 85, you are now able to display the Initiator call stack in the tooltip without scrolling horizontally.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/initiator-tooltip-85.msft.png" alt-text="Die QuickInfo "Initiator" in Microsoft Edge 85" lightbox="../../media/2020/06/initiator-tooltip-85.msft.png":::
+:::image type="complex" source="../../media/2020/06/initiator-tooltip-85.msft.png" alt-text="Die QuickInfo Initiator in Microsoft Edge 85" lightbox="../../media/2020/06/initiator-tooltip-85.msft.png":::
    <span data-ttu-id="643fa-171">Die QuickInfo "Initiator" in Microsoft Edge 85</span><span class="sxs-lookup"><span data-stu-id="643fa-171">The Initiator tooltip in Microsoft Edge 85</span></span>
 :::image-end:::  
 
@@ -272,7 +272,7 @@ ms.locfileid: "11514361"
 
 <span data-ttu-id="643fa-233">In früheren Beispielen hat DevTools die Gruppierung der Nachrichten nicht deaktiviert, obwohl die Gruppierung `hello` **ähnlich** deaktiviert ist.</span><span class="sxs-lookup"><span data-stu-id="643fa-233">For example, previously, DevTools did not ungroup the `hello` messages even though **Group similar** is unchecked.</span></span>  <span data-ttu-id="643fa-234">Jetzt werden `hello` die Nachrichten nicht mehr in die Gruppe eingruppiert.</span><span class="sxs-lookup"><span data-stu-id="643fa-234">Now, the `hello` messages are ungrouped.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/ungroup-similar.msft.png" alt-text="Wenn "Gruppe ähnlich" deaktiviert ist, werden die Hello-Nachrichten nicht in die Gruppe eingruppiert." lightbox="../../media/2020/06/ungroup-similar.msft.png":::
+:::image type="complex" source="../../media/2020/06/ungroup-similar.msft.png" alt-text="Wenn Gruppe ähnlich deaktiviert ist, werden die Hello-Nachrichten nicht in die Gruppe eingruppiert." lightbox="../../media/2020/06/ungroup-similar.msft.png":::
    <span data-ttu-id="643fa-236">Wenn **"Gruppe ähnlich"** deaktiviert ist, werden `hello` die Nachrichten ungruppiert.</span><span class="sxs-lookup"><span data-stu-id="643fa-236">When **Group similar** is unchecked, the `hello` messages are ungrouped</span></span>
 :::image-end:::  
 
