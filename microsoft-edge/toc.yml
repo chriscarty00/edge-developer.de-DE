@@ -409,6 +409,8 @@
               href: webview2/concepts/versioning.md
             - name: Threadingmodell
               href: webview2/concepts/threading-model.md
+            - name: Bewährte Methoden für die Entwicklung mit WebView2
+              href: webview2/concepts/developer-guide.md
             - name: Win32-API-Konventionen
               href: webview2/concepts/win32-api-conventions.md
         - name: Freigabehinweise
