@@ -59,7 +59,7 @@ ms.locfileid: "11519373"
     
 1.  <span data-ttu-id="61f1a-125">Wählen Sie das **Tool Quellen** aus.</span><span class="sxs-lookup"><span data-stu-id="61f1a-125">Choose the **Sources** tool.</span></span>  
     
-    :::image type="complex" source="../media/javascript-sources-sections.msft.png" alt-text="Das Tool "Quellen"" lightbox="../media/javascript-sources-sections.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-sections.msft.png" alt-text="Das Tool Quellen" lightbox="../media/javascript-sources-sections.msft.png":::
        <span data-ttu-id="61f1a-127">Das **Tool "Quellen"**</span><span class="sxs-lookup"><span data-stu-id="61f1a-127">The **Sources** tool</span></span>  
     :::image-end:::  
     
@@ -179,7 +179,7 @@ function updateLabel() {
 > [!NOTE]
 > <span data-ttu-id="61f1a-220">In der folgenden Abbildung wird der `typeof sum` Watch Expression im Bereich **"Watch"** angezeigt.</span><span class="sxs-lookup"><span data-stu-id="61f1a-220">In the following figure, the `typeof sum` Watch Expression is displayed in the **Watch** pane.</span></span>  <span data-ttu-id="61f1a-221">Wenn Ihr DevTools-Fenster breit ist, wird der Bereich **"Watch"** im **Debuggerbereich** angezeigt, der dann auf der rechten Seite angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="61f1a-221">If your DevTools window is wide, the **Watch** pane is displayed within the **Debugger** pane, which then appears on the right.</span></span>  
 
-:::image type="complex" source="../media/javascript-sources-breakpoint-paused-watch.msft.png" alt-text="Der Bereich "Watch"" lightbox="../media/javascript-sources-breakpoint-paused-watch.msft.png":::
+:::image type="complex" source="../media/javascript-sources-breakpoint-paused-watch.msft.png" alt-text="Der Bereich Watch" lightbox="../media/javascript-sources-breakpoint-paused-watch.msft.png":::
    <span data-ttu-id="61f1a-223">Der **Bereich "Watch"**</span><span class="sxs-lookup"><span data-stu-id="61f1a-223">The **Watch** pane</span></span>  
 :::image-end:::  
 

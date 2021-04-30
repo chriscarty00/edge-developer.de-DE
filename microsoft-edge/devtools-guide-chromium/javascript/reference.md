@@ -226,7 +226,7 @@ function factorial(n) {
 
 <span data-ttu-id="02563-205">Verwenden Sie den **Bereich "Watch",** um die Werte benutzerdefinierter Ausdrücke zu beobachten.</span><span class="sxs-lookup"><span data-stu-id="02563-205">Use the **Watch** pane to watch the values of custom expressions.</span></span>  <span data-ttu-id="02563-206">Sie können einen beliebigen gültigen JavaScript-Ausdruck ansehen.</span><span class="sxs-lookup"><span data-stu-id="02563-206">You can watch any valid JavaScript expression.</span></span>  
 
-:::image type="complex" source="../media/javascript-sources-get-started-js-watch.msft.png" alt-text="Der Bereich "Watch"" lightbox="../media/javascript-sources-get-started-js-watch.msft.png":::
+:::image type="complex" source="../media/javascript-sources-get-started-js-watch.msft.png" alt-text="Der Bereich Watch" lightbox="../media/javascript-sources-get-started-js-watch.msft.png":::
    <span data-ttu-id="02563-208">Der **Bereich "Watch"**</span><span class="sxs-lookup"><span data-stu-id="02563-208">The **Watch** pane</span></span>  
 :::image-end:::  
 
@@ -242,7 +242,7 @@ function factorial(n) {
 
 <span data-ttu-id="02563-215">Wählen Sie einen Eintrag aus, um zur Codezeile zu springen, in der diese Funktion aufgerufen wurde.</span><span class="sxs-lookup"><span data-stu-id="02563-215">Choose an entry to jump to the line of code where that function was called.</span></span>  <span data-ttu-id="02563-216">Das blaue Pfeilsymbol stellt dar, welche Funktion DevTools derzeit hervorhebt.</span><span class="sxs-lookup"><span data-stu-id="02563-216">The blue arrow icon represents which function DevTools is currently highlighting.</span></span>  
 
-:::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty.msft.png" alt-text="Der Bereich "Anrufliste"" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty.msft.png":::
+:::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty.msft.png" alt-text="Der Bereich Anrufliste" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty.msft.png":::
    <span data-ttu-id="02563-218">Der **Bereich "Anrufliste"**</span><span class="sxs-lookup"><span data-stu-id="02563-218">The **Call Stack** pane</span></span>  
 :::image-end:::  
 
@@ -302,7 +302,7 @@ function animate() {
 1.  <span data-ttu-id="02563-239">Zeigen Sie auf eine Funktion aus dem Skript, und öffnen Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste\).</span><span class="sxs-lookup"><span data-stu-id="02563-239">Hover on a function from the script and open the contextual menu \(right-click\).</span></span>  
 1.  <span data-ttu-id="02563-240">Wählen **Sie Skript hinzufügen aus, um die Liste** zu ignorieren **(zuvor als Als Bibliothekscode markieren angezeigt).**</span><span class="sxs-lookup"><span data-stu-id="02563-240">Choose **Add script to ignore list** (previously shown as **Mark as Library code**).</span></span>  
     
-    :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png" alt-text="Markieren eines Skripts als Bibliothekscode aus dem Bereich "Aufrufliste"" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png":::
+    :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png" alt-text="Markieren eines Skripts als Bibliothekscode aus dem Bereich Aufrufliste" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png":::
        <span data-ttu-id="02563-242">Markieren eines Skripts **als Bibliothekscode** aus dem **Bereich "Aufrufliste"**</span><span class="sxs-lookup"><span data-stu-id="02563-242">Mark a script as **Library code** from the **Call Stack** pane</span></span>  
     :::image-end:::  
     

@@ -26,7 +26,7 @@ ms.locfileid: "11519521"
 
 <span data-ttu-id="ae577-122">Die folgende Abbildung zeigt den **Navigatorbereich,** der mit einem roten Feld \*\*\*\* in der linken oberen Ecke von DevTools hervorgehoben ist, den Editorbereich oben rechts und den **Debuggerbereich** unten hervorgehoben.</span><span class="sxs-lookup"><span data-stu-id="ae577-122">The following figure shows the **Navigator** pane highlighted with a red box in the upper left corner of DevTools, the **Editor** pane highlighted in the upper right, and the **Debugger** pane highlighted on the bottom.</span></span>  <span data-ttu-id="ae577-123">Ganz links ist der Hauptteil des Browserfensters, in dem die gerenderte Webseite abgeblendet angezeigt wird, da der Debugger an einem Haltepunkt angehalten wird:</span><span class="sxs-lookup"><span data-stu-id="ae577-123">On the far left side is the main part of the browser window, showing the rendered webpage grayed-out because the debugger is paused on a breakpoint:</span></span>
 
-:::image type="complex" source="../media/sources-panes-narrow-layout.msft.png" alt-text="Die Bereiche des Tools "Quellen" im schmalen Layout" lightbox="../media/sources-panes-narrow-layout.msft.png":::
+:::image type="complex" source="../media/sources-panes-narrow-layout.msft.png" alt-text="Die Bereiche des Tools Quellen im schmalen Layout" lightbox="../media/sources-panes-narrow-layout.msft.png":::
    <span data-ttu-id="ae577-125">Die Bereiche des Tools "Quellen" im schmalen Layout</span><span class="sxs-lookup"><span data-stu-id="ae577-125">The panes of the Sources tool, in narrow layout</span></span>  
 :::image-end:::  
 
@@ -275,7 +275,7 @@ document.head.appendChild(script);
 
 <span data-ttu-id="ae577-287">Um eine Datei mit ziemlicher Grafik neu zu formatieren, um sie lesbar zu machen, wählen Sie am unteren Rand des Editorbereichs die Schaltfläche Ziemlich drucken \( Format \*\*\*\* ![ ](../media/format-icon.msft.png) \) aus, die als geschweifte Klammern angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="ae577-287">To use pretty-print to reformat a file to make it readable, select the **Pretty print** button \(![Format](../media/format-icon.msft.png)\), which is shown as braces, at the bottom of the Editor pane.</span></span>  <span data-ttu-id="ae577-288">Wenn oben im **Editorbereich** eine Schaltfläche "Ziemlich drucken" angezeigt wird, können Sie diese Schaltfläche auswählen.</span><span class="sxs-lookup"><span data-stu-id="ae577-288">Or, if a **Pretty-print** button appears at the top of the Editor pane, you can select that button.</span></span>
 
-:::image type="complex" source="../media/minified.msft.png" alt-text="Die Schaltfläche "Hübsch drucken"" lightbox="../media/minified.msft.png":::
+:::image type="complex" source="../media/minified.msft.png" alt-text="Die Schaltfläche Hübsch drucken" lightbox="../media/minified.msft.png":::
    <span data-ttu-id="ae577-290">Die **Schaltfläche "Hübsch drucken"**</span><span class="sxs-lookup"><span data-stu-id="ae577-290">The **Pretty print** button</span></span>  
 :::image-end:::  
 
@@ -389,7 +389,7 @@ h1 {
 
 <span data-ttu-id="ae577-376">Mit dem Debugger durchschritten Sie den Code, während Sie alle angegebenen JavaScript-Ausdrücke ansehen.</span><span class="sxs-lookup"><span data-stu-id="ae577-376">With the debugger, you step through the code, while watching any JavaScript expressions you specify.</span></span>  <span data-ttu-id="ae577-377">Beobachten und manuell ändern Sie Variablenwerte, und zeigen Sie automatisch an, welche Variablen sich im Bereich der aktuellen Anweisung befinden.</span><span class="sxs-lookup"><span data-stu-id="ae577-377">Watch and manually change variable values, and automatically show which variables are in-scope for the current statement.</span></span>
 
-:::image type="complex" source="../media/sources-paused-breakpoint-highlight-debug-pane.msft.png" alt-text="Der Debuggerbereich des Tools Quellen  " lightbox="../media/sources-paused-breakpoint-highlight-debug-pane.msft.png":::
+:::image type="complex" source="../media/sources-paused-breakpoint-highlight-debug-pane.msft.png" alt-text="Der Debuggerbereich des Tools Quellen" lightbox="../media/sources-paused-breakpoint-highlight-debug-pane.msft.png":::
    <span data-ttu-id="ae577-379">Der **Debuggerbereich** des **Tools Quellen**</span><span class="sxs-lookup"><span data-stu-id="ae577-379">The **Debugger** pane of the **Sources** tool</span></span>  
 :::image-end:::  
 
