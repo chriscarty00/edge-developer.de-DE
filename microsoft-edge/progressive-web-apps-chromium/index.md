@@ -15,54 +15,54 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/07/2021
 ms.locfileid: "11480188"
 ---
-# <a name="progressive-web-apps-on-windows-overview"></a><span data-ttu-id="7784c-105">Übersicht über progressive Web-Apps unter Windows</span><span class="sxs-lookup"><span data-stu-id="7784c-105">Progressive Web Apps on Windows overview</span></span>  
+# <a name="progressive-web-apps-on-windows-overview"></a><span data-ttu-id="7804e-105">Übersicht über progressive Web-Apps unter Windows</span><span class="sxs-lookup"><span data-stu-id="7804e-105">Progressive Web Apps on Windows overview</span></span>  
 
-<span data-ttu-id="7784c-106">[Progressive Web Apps][MDNApps] \(PWAs\) bieten Zugriff auf offene Webtechnologien für die plattformübergreifende Interoperabilität und bieten Ihren Benutzern eine systemeigene, app- like-Erfahrung, die für ihre Geräte angepasst ist.</span><span class="sxs-lookup"><span data-stu-id="7784c-106">[Progressive Web Apps][MDNApps] \(PWAs\) provide access to open web technologies for cross-platform interoperability and provide your users with a native, app-like experience customized for their devices.</span></span>  <span data-ttu-id="7784c-107">PWAs sind Websites, die [schrittweise erweitert][AListApartUnderstandingProgressiveEnhancement] werden, um wie systemeigene Apps auf unterstützenden Plattformen zu funktionieren.</span><span class="sxs-lookup"><span data-stu-id="7784c-107">PWAs are websites that are [progressively enhanced][AListApartUnderstandingProgressiveEnhancement] to function like native apps on supporting platforms.</span></span>  <span data-ttu-id="7784c-108">Die Eigenschaften einer PWA vereinen das Beste aus Web- und nativen Apps.</span><span class="sxs-lookup"><span data-stu-id="7784c-108">The qualities of a PWA combine the best of the web and native apps.</span></span>  
+<span data-ttu-id="7804e-106">[Progressive Web Apps][MDNApps] \(PWAs\) bieten Zugriff auf offene Webtechnologien für die plattformübergreifende Interoperabilität und bieten Ihren Benutzern eine systemeigene, app- like-Erfahrung, die für ihre Geräte angepasst ist.</span><span class="sxs-lookup"><span data-stu-id="7804e-106">[Progressive Web Apps][MDNApps] \(PWAs\) provide access to open web technologies for cross-platform interoperability and provide your users with a native, app-like experience customized for their devices.</span></span>  <span data-ttu-id="7804e-107">PWAs sind Websites, die [schrittweise erweitert][AListApartUnderstandingProgressiveEnhancement] werden, um wie systemeigene Apps auf unterstützenden Plattformen zu funktionieren.</span><span class="sxs-lookup"><span data-stu-id="7804e-107">PWAs are websites that are [progressively enhanced][AListApartUnderstandingProgressiveEnhancement] to function like native apps on supporting platforms.</span></span>  <span data-ttu-id="7804e-108">Die Eigenschaften einer PWA vereinen das Beste aus Web- und nativen Apps.</span><span class="sxs-lookup"><span data-stu-id="7804e-108">The qualities of a PWA combine the best of the web and native apps.</span></span>  
 
 :::row:::
     :::column:::
         :::image type="icon" source="./media/i_search-small.png":::
-        ### <a name="discoverablemdnpwaadvantagesdiscoverable"></a><span data-ttu-id="7784c-109">[Discoverable][MDNPwaAdvantagesDiscoverable]</span><span class="sxs-lookup"><span data-stu-id="7784c-109">[Discoverable][MDNPwaAdvantagesDiscoverable]</span></span>
-        <span data-ttu-id="7784c-110">Aus Websuchergebnissen und unterstützenden App-Stores</span><span class="sxs-lookup"><span data-stu-id="7784c-110">From web search results and supporting app stores</span></span>
+        ### <a name="discoverablemdnpwaadvantagesdiscoverable"></a><span data-ttu-id="7804e-109">[Discoverable][MDNPwaAdvantagesDiscoverable]</span><span class="sxs-lookup"><span data-stu-id="7804e-109">[Discoverable][MDNPwaAdvantagesDiscoverable]</span></span>
+        <span data-ttu-id="7804e-110">Aus Websuchergebnissen und unterstützenden App-Stores</span><span class="sxs-lookup"><span data-stu-id="7804e-110">From web search results and supporting app stores</span></span>
     :::column-end:::
     :::column:::
         :::image type="icon" source="./media/i_package-small.png":::
-        ### <a name="installablemdnpwaadvantagesinstallable"></a><span data-ttu-id="7784c-111">[Installierbar][MDNPwaAdvantagesInstallable]</span><span class="sxs-lookup"><span data-stu-id="7784c-111">[Installable][MDNPwaAdvantagesInstallable]</span></span>
-        <span data-ttu-id="7784c-112">Anheften und Starten vom Startbildschirm, Startmenü, Taskleiste und so weiter</span><span class="sxs-lookup"><span data-stu-id="7784c-112">Pin and launch from the home screen, Start Menu, Taskbar, and so on</span></span>
+        ### <a name="installablemdnpwaadvantagesinstallable"></a><span data-ttu-id="7804e-111">[Installierbar][MDNPwaAdvantagesInstallable]</span><span class="sxs-lookup"><span data-stu-id="7804e-111">[Installable][MDNPwaAdvantagesInstallable]</span></span>
+        <span data-ttu-id="7804e-112">Anheften und Starten vom Startbildschirm, Startmenü, Taskleiste und so weiter</span><span class="sxs-lookup"><span data-stu-id="7804e-112">Pin and launch from the home screen, Start Menu, Taskbar, and so on</span></span>
     :::column-end:::
     :::column:::
         :::image type="icon" source="./media/i_push-notification-small.png":::
-        ### <a name="re-engageablemdnpwaadvantagesreengageable"></a><span data-ttu-id="7784c-113">[Re-engageable][MDNPwaAdvantagesReEngageable]</span><span class="sxs-lookup"><span data-stu-id="7784c-113">[Re-engageable][MDNPwaAdvantagesReEngageable]</span></span>
-        <span data-ttu-id="7784c-114">Senden von Pushbenachrichtigungen, auch wenn die App nicht aktiv ist</span><span class="sxs-lookup"><span data-stu-id="7784c-114">Send push notifications, even when the app is not active</span></span>
+        ### <a name="re-engageablemdnpwaadvantagesreengageable"></a><span data-ttu-id="7804e-113">[Re-engageable][MDNPwaAdvantagesReEngageable]</span><span class="sxs-lookup"><span data-stu-id="7804e-113">[Re-engageable][MDNPwaAdvantagesReEngageable]</span></span>
+        <span data-ttu-id="7804e-114">Senden von Pushbenachrichtigungen, auch wenn die App nicht aktiv ist</span><span class="sxs-lookup"><span data-stu-id="7804e-114">Send push notifications, even when the app is not active</span></span>
     :::column-end:::
 :::row-end:::  
 :::row:::
     :::column:::
         :::image type="icon" source="./media/i_offline-small.png":::
-        ### <a name="network-independentmdnpwaadvantagesnetworkindependent"></a><span data-ttu-id="7784c-115">[Netzwerkunabhängig][MDNPwaAdvantagesNetworkIndependent]</span><span class="sxs-lookup"><span data-stu-id="7784c-115">[Network Independent][MDNPwaAdvantagesNetworkIndependent]</span></span>
-        <span data-ttu-id="7784c-116">Funktioniert offline und unter Bedingungen mit geringem Netzwerk</span><span class="sxs-lookup"><span data-stu-id="7784c-116">Works offline and in low-network conditions</span></span>
+        ### <a name="network-independentmdnpwaadvantagesnetworkindependent"></a><span data-ttu-id="7804e-115">[Netzwerkunabhängig][MDNPwaAdvantagesNetworkIndependent]</span><span class="sxs-lookup"><span data-stu-id="7804e-115">[Network Independent][MDNPwaAdvantagesNetworkIndependent]</span></span>
+        <span data-ttu-id="7804e-116">Funktioniert offline und unter Bedingungen mit geringem Netzwerk</span><span class="sxs-lookup"><span data-stu-id="7804e-116">Works offline and in low-network conditions</span></span>
     :::column-end:::
     :::column:::
         :::image type="icon" source="./media/i_progressive-small.png":::
-        ### <a name="progressivemdnpwaadvantagesprogressive"></a><span data-ttu-id="7784c-117">[Progressiv][MDNPwaAdvantagesProgressive]</span><span class="sxs-lookup"><span data-stu-id="7784c-117">[Progressive][MDNPwaAdvantagesProgressive]</span></span>
-        <span data-ttu-id="7784c-118">Die Benutzererfahrung wird mit den Gerätefunktionen nach oben (oder nach unten) skaliert.</span><span class="sxs-lookup"><span data-stu-id="7784c-118">Experience scales up (or down) with device capabilities</span></span>
+        ### <a name="progressivemdnpwaadvantagesprogressive"></a><span data-ttu-id="7804e-117">[Progressiv][MDNPwaAdvantagesProgressive]</span><span class="sxs-lookup"><span data-stu-id="7804e-117">[Progressive][MDNPwaAdvantagesProgressive]</span></span>
+        <span data-ttu-id="7804e-118">Die Benutzererfahrung wird mit den Gerätefunktionen nach oben (oder nach unten) skaliert.</span><span class="sxs-lookup"><span data-stu-id="7804e-118">Experience scales up (or down) with device capabilities</span></span>
     :::column-end:::
     :::column:::
         :::image type="icon" source="./media/i_security-small.png":::
-        ### <a name="safemdnpwaadvantagessafe"></a><span data-ttu-id="7784c-119">[Sicher][MDNPwaAdvantagesSafe]</span><span class="sxs-lookup"><span data-stu-id="7784c-119">[Safe][MDNPwaAdvantagesSafe]</span></span>
-        <span data-ttu-id="7784c-120">Bietet einen sicheren HTTPS-Endpunkt und andere Benutzerschutzmechanismen</span><span class="sxs-lookup"><span data-stu-id="7784c-120">Provides a secure HTTPS endpoint and other user safeguards</span></span>
+        ### <a name="safemdnpwaadvantagessafe"></a><span data-ttu-id="7804e-119">[Sicher][MDNPwaAdvantagesSafe]</span><span class="sxs-lookup"><span data-stu-id="7804e-119">[Safe][MDNPwaAdvantagesSafe]</span></span>
+        <span data-ttu-id="7804e-120">Bietet einen sicheren HTTPS-Endpunkt und andere Benutzerschutzmechanismen</span><span class="sxs-lookup"><span data-stu-id="7804e-120">Provides a secure HTTPS endpoint and other user safeguards</span></span>
     :::column-end:::
 :::row-end:::  
 :::row:::
     :::column:::
         :::image type="icon" source="./media/i_responsive-small.png":::
-        ### <a name="responsivemdnpwaadvantagesresponsive"></a><span data-ttu-id="7784c-121">[Dynamisch][MDNPwaAdvantagesResponsive]</span><span class="sxs-lookup"><span data-stu-id="7784c-121">[Responsive][MDNPwaAdvantagesResponsive]</span></span>
-        <span data-ttu-id="7784c-122">Passt sich an die Bildschirmgröße oder Ausrichtung und Eingabemethode des Benutzers an.</span><span class="sxs-lookup"><span data-stu-id="7784c-122">Adapts to the user's screen size or orientation and input method</span></span>
+        ### <a name="responsivemdnpwaadvantagesresponsive"></a><span data-ttu-id="7804e-121">[Dynamisch][MDNPwaAdvantagesResponsive]</span><span class="sxs-lookup"><span data-stu-id="7804e-121">[Responsive][MDNPwaAdvantagesResponsive]</span></span>
+        <span data-ttu-id="7804e-122">Passt sich an die Bildschirmgröße oder Ausrichtung und Eingabemethode des Benutzers an.</span><span class="sxs-lookup"><span data-stu-id="7804e-122">Adapts to the user's screen size or orientation and input method</span></span>
     :::column-end:::
     :::column:::
         :::image type="icon" source="./media/i_link-small.png":::
-        ### <a name="linkablemdnpwaadvantageslinkable"></a><span data-ttu-id="7784c-123">[Linkable][MDNPwaAdvantagesLinkable]</span><span class="sxs-lookup"><span data-stu-id="7784c-123">[Linkable][MDNPwaAdvantagesLinkable]</span></span>
-        <span data-ttu-id="7784c-124">Freigeben und Starten über einen Standardlink</span><span class="sxs-lookup"><span data-stu-id="7784c-124">Share and launch from a standard hyperlink</span></span>
+        ### <a name="linkablemdnpwaadvantageslinkable"></a><span data-ttu-id="7804e-123">[Linkable][MDNPwaAdvantagesLinkable]</span><span class="sxs-lookup"><span data-stu-id="7804e-123">[Linkable][MDNPwaAdvantagesLinkable]</span></span>
+        <span data-ttu-id="7804e-124">Freigeben und Starten über einen Standardlink</span><span class="sxs-lookup"><span data-stu-id="7804e-124">Share and launch from a standard hyperlink</span></span>
     :::column-end:::
     :::column:::
         &nbsp;  
@@ -70,132 +70,132 @@ ms.locfileid: "11480188"
 :::row-end:::  
 
 
-<span data-ttu-id="7784c-125">Erstellen Sie \(oder konvertieren\) Ihre vorhandene Website in eine PWA, um Ihr Engagement mit Ihren Benutzern zu verbessern.</span><span class="sxs-lookup"><span data-stu-id="7784c-125">Build \(or convert\) your existing website to a PWA to enhance your engagement with your users.</span></span>  <span data-ttu-id="7784c-126">Zu den Verbesserungen gehören Pushbenachrichtigungen, app-like integration und offline support.</span><span class="sxs-lookup"><span data-stu-id="7784c-126">Enhancements include push notifications, app-like integration, and offline support.</span></span>  <span data-ttu-id="7784c-127">Erstellen Sie weiterhin Ihre Zielgruppe im geöffneten Web, damit Benutzer Ihre PWA durch Suchen und Teilen von Links entdecken können.</span><span class="sxs-lookup"><span data-stu-id="7784c-127">Continue to build your audience on the open web for users to discover your PWA through search and link-sharing.</span></span>  <span data-ttu-id="7784c-128">Das Beste ist, dass Ihre App mithilfe des Webservercodes aktualisiert wird.</span><span class="sxs-lookup"><span data-stu-id="7784c-128">Best of all, your app is updated in using your web server code.</span></span>  
+<span data-ttu-id="7804e-125">Erstellen Sie \(oder konvertieren\) Ihre vorhandene Website in eine PWA, um Ihr Engagement mit Ihren Benutzern zu verbessern.</span><span class="sxs-lookup"><span data-stu-id="7804e-125">Build \(or convert\) your existing website to a PWA to enhance your engagement with your users.</span></span>  <span data-ttu-id="7804e-126">Zu den Verbesserungen gehören Pushbenachrichtigungen, app-like integration und offline support.</span><span class="sxs-lookup"><span data-stu-id="7804e-126">Enhancements include push notifications, app-like integration, and offline support.</span></span>  <span data-ttu-id="7804e-127">Erstellen Sie weiterhin Ihre Zielgruppe im geöffneten Web, damit Benutzer Ihre PWA durch Suchen und Teilen von Links entdecken können.</span><span class="sxs-lookup"><span data-stu-id="7804e-127">Continue to build your audience on the open web for users to discover your PWA through search and link-sharing.</span></span>  <span data-ttu-id="7804e-128">Das Beste ist, dass Ihre App mithilfe des Webservercodes aktualisiert wird.</span><span class="sxs-lookup"><span data-stu-id="7804e-128">Best of all, your app is updated in using your web server code.</span></span>  
 
-## <a name="pwas-on-microsoft-edge-chromium"></a><span data-ttu-id="7784c-129">PWAs auf Microsoft Edge (Chromium)</span><span class="sxs-lookup"><span data-stu-id="7784c-129">PWAs on Microsoft Edge (Chromium)</span></span>  
+## <a name="pwas-on-microsoft-edge-chromium"></a><span data-ttu-id="7804e-129">PWAs auf Microsoft Edge (Chromium)</span><span class="sxs-lookup"><span data-stu-id="7804e-129">PWAs on Microsoft Edge (Chromium)</span></span>  
 
-<span data-ttu-id="7784c-130">Wenn Sie eine Progressive Web App für Webstandard-APIs erstellen, kann Ihre App plattform- und geräteübergreifend bereitgestellt werden und die gerätespezifischen Funktionen nutzen.</span><span class="sxs-lookup"><span data-stu-id="7784c-130">When you build a Progressive Web App targeting web standard APIs, your app may be deployed across platforms and devices and take advantage of the device-specific capabilities as available.</span></span>  <span data-ttu-id="7784c-131">PWAs in Microsoft Edge \(Chromium\) fügen Ihrer Website die folgenden Vorteile hinzu.</span><span class="sxs-lookup"><span data-stu-id="7784c-131">PWAs in Microsoft Edge \(Chromium\) add the following advantages to your website.</span></span>  
+<span data-ttu-id="7804e-130">Wenn Sie eine Progressive Web App für Webstandard-APIs erstellen, kann Ihre App plattform- und geräteübergreifend bereitgestellt werden und die gerätespezifischen Funktionen nutzen.</span><span class="sxs-lookup"><span data-stu-id="7804e-130">When you build a Progressive Web App targeting web standard APIs, your app may be deployed across platforms and devices and take advantage of the device-specific capabilities as available.</span></span>  <span data-ttu-id="7804e-131">PWAs in Microsoft Edge \(Chromium\) fügen Ihrer Website die folgenden Vorteile hinzu.</span><span class="sxs-lookup"><span data-stu-id="7804e-131">PWAs in Microsoft Edge \(Chromium\) add the following advantages to your website.</span></span>  
 
-*   <span data-ttu-id="7784c-132">Ihre App basiert auf einer standardbasierten Webplattform.</span><span class="sxs-lookup"><span data-stu-id="7784c-132">Your app is built on a standards-based web platform.</span></span>  
-*   <span data-ttu-id="7784c-133">Ermöglicht Es Benutzern, Ihre App direkt über den Browser zu installieren.</span><span class="sxs-lookup"><span data-stu-id="7784c-133">Enables your users to install your app directly from the browser.</span></span>  
-*   <span data-ttu-id="7784c-134">Ermöglicht Benutzern die Installation Ihrer App ohne Store-basierte Bereitstellung oder Registrierung.</span><span class="sxs-lookup"><span data-stu-id="7784c-134">Enables your users to install your app without a Store-based deployment or registration.</span></span>  
+*   <span data-ttu-id="7804e-132">Ihre App basiert auf einer standardbasierten Webplattform.</span><span class="sxs-lookup"><span data-stu-id="7804e-132">Your app is built on a standards-based web platform.</span></span>  
+*   <span data-ttu-id="7804e-133">Ermöglicht Es Benutzern, Ihre App direkt über den Browser zu installieren.</span><span class="sxs-lookup"><span data-stu-id="7804e-133">Enables your users to install your app directly from the browser.</span></span>  
+*   <span data-ttu-id="7804e-134">Ermöglicht Benutzern die Installation Ihrer App ohne Store-basierte Bereitstellung oder Registrierung.</span><span class="sxs-lookup"><span data-stu-id="7804e-134">Enables your users to install your app without a Store-based deployment or registration.</span></span>  
     
-<span data-ttu-id="7784c-135">Desktop-PWAs werden auf allen Plattformen unterstützt, die Microsoft Edge \(Chromium\) verfügbar ist.</span><span class="sxs-lookup"><span data-stu-id="7784c-135">Desktop PWAs are supported on any of the platforms Microsoft Edge \(Chromium\) is available.</span></span> <span data-ttu-id="7784c-136">Microsoft Edge \(Chromium\) ist unter Windows 7, Windows 10 und macOS verfügbar.</span><span class="sxs-lookup"><span data-stu-id="7784c-136">Microsoft Edge \(Chromium\) is available on Windows 7, Windows 10, and macOS.</span></span>  <span data-ttu-id="7784c-137">Die folgenden Vorteile sind enthalten.</span><span class="sxs-lookup"><span data-stu-id="7784c-137">The following benefits are included.</span></span>  
+<span data-ttu-id="7804e-135">Desktop-PWAs werden auf allen Plattformen unterstützt, die Microsoft Edge \(Chromium\) verfügbar ist.</span><span class="sxs-lookup"><span data-stu-id="7804e-135">Desktop PWAs are supported on any of the platforms Microsoft Edge \(Chromium\) is available.</span></span> <span data-ttu-id="7804e-136">Microsoft Edge \(Chromium\) ist unter Windows 7, Windows 10 und macOS verfügbar.</span><span class="sxs-lookup"><span data-stu-id="7804e-136">Microsoft Edge \(Chromium\) is available on Windows 7, Windows 10, and macOS.</span></span>  <span data-ttu-id="7804e-137">Die folgenden Vorteile sind enthalten.</span><span class="sxs-lookup"><span data-stu-id="7804e-137">The following benefits are included.</span></span>  
 
-*   <span data-ttu-id="7784c-138">Apps können direkt im Browser mithilfe \*\*\*\* des Installationssymbols in der Navigationsleiste installiert werden.</span><span class="sxs-lookup"><span data-stu-id="7784c-138">Apps may be installed directly from within the browser using the **Install** icon in the navigation bar.</span></span>  
+*   <span data-ttu-id="7804e-138">Apps können direkt im Browser mithilfe \*\*\*\* des Installationssymbols in der Navigationsleiste installiert werden.</span><span class="sxs-lookup"><span data-stu-id="7804e-138">Apps may be installed directly from within the browser using the **Install** icon in the navigation bar.</span></span>  
     
     :::image type="complex" source="./media/install-progressive-web-app-icon.png" alt-text="Installieren von App-Flyout und Symbol" lightbox="./media/install-progressive-web-app-icon.png":::
-       <span data-ttu-id="7784c-140">Installieren von App-Flyout und Symbol</span><span class="sxs-lookup"><span data-stu-id="7784c-140">Install app flyout and icon</span></span>  
+       <span data-ttu-id="7804e-140">Installieren von App-Flyout und Symbol</span><span class="sxs-lookup"><span data-stu-id="7804e-140">Install app flyout and icon</span></span>  
     :::image-end:::  
     
-*   <span data-ttu-id="7784c-141">Apps können auch im Menü Einstellungen \*\*\*\* apps installiert, ausgeführt und  >  \*\*\*\* verwaltet werden.</span><span class="sxs-lookup"><span data-stu-id="7784c-141">Apps may also be installed, run, and managed from the **Settings** > **Apps** menu</span></span>  
+*   <span data-ttu-id="7804e-141">Apps können auch im Menü Einstellungen \*\*\*\* apps installiert, ausgeführt und  >  \*\*\*\* verwaltet werden.</span><span class="sxs-lookup"><span data-stu-id="7804e-141">Apps may also be installed, run, and managed from the **Settings** > **Apps** menu</span></span>  
     
     :::image type="complex" source="./media/app-menus.png" alt-text="App-Menüelemente unter Einstellungen" lightbox="./media/app-menus.png":::
-       <span data-ttu-id="7784c-143">App-Menüelemente unter Einstellungen</span><span class="sxs-lookup"><span data-stu-id="7784c-143">App menu items under settings</span></span>  
+       <span data-ttu-id="7804e-143">App-Menüelemente unter Einstellungen</span><span class="sxs-lookup"><span data-stu-id="7804e-143">App menu items under settings</span></span>  
     :::image-end:::  
     
-*   <span data-ttu-id="7784c-144">Webbenachrichtigungen sind in das Windows-Benachrichtigungssystem integriert</span><span class="sxs-lookup"><span data-stu-id="7784c-144">Web Notifications are integrated into the Windows notification system</span></span>  
-*   <span data-ttu-id="7784c-145">Freigegebener Cookiespeicher mit dem Browserprofil, das die App installiert hat</span><span class="sxs-lookup"><span data-stu-id="7784c-145">Shared cookie store with the browser profile that installed the app</span></span>  
-*   <span data-ttu-id="7784c-146">Zugriff auf andere Browserfeatures mithilfe des Menüs **Einstellung** und mehr \( \) einschließlich Zertifikatüberprüfung, Websiteberechtigungen, Nachverfolgungsschutz `...` und Browsererweiterungen</span><span class="sxs-lookup"><span data-stu-id="7784c-146">Access to other browser features using the **Setting and more** \(`...`\) menu including certificate validation, site permissions, tracking protection, and browser extensions</span></span>  
-*   <span data-ttu-id="7784c-147">Vollzugriff auf [Microsoft Edge DevTools][DevtoolsProgressiveWebApps] zum Debuggen Ihrer App</span><span class="sxs-lookup"><span data-stu-id="7784c-147">Full access to [Microsoft Edge DevTools][DevtoolsProgressiveWebApps] for debugging your app</span></span>  
+*   <span data-ttu-id="7804e-144">Webbenachrichtigungen sind in das Windows-Benachrichtigungssystem integriert</span><span class="sxs-lookup"><span data-stu-id="7804e-144">Web Notifications are integrated into the Windows notification system</span></span>  
+*   <span data-ttu-id="7804e-145">Freigegebener Cookiespeicher mit dem Browserprofil, das die App installiert hat</span><span class="sxs-lookup"><span data-stu-id="7804e-145">Shared cookie store with the browser profile that installed the app</span></span>  
+*   <span data-ttu-id="7804e-146">Zugriff auf andere Browserfeatures mithilfe des Menüs **Einstellung** und mehr \( \) einschließlich Zertifikatüberprüfung, Websiteberechtigungen, Nachverfolgungsschutz `...` und Browsererweiterungen</span><span class="sxs-lookup"><span data-stu-id="7804e-146">Access to other browser features using the **Setting and more** \(`...`\) menu including certificate validation, site permissions, tracking protection, and browser extensions</span></span>  
+*   <span data-ttu-id="7804e-147">Vollzugriff auf [Microsoft Edge DevTools][DevtoolsProgressiveWebApps] zum Debuggen Ihrer App</span><span class="sxs-lookup"><span data-stu-id="7804e-147">Full access to [Microsoft Edge DevTools][DevtoolsProgressiveWebApps] for debugging your app</span></span>  
     
 > [!NOTE]
-> <span data-ttu-id="7784c-148">Weitere Informationen zu PWA-Vorteilen, bevorstehenden Features und kurzen Demos finden Sie unter [Build 2020 PWA session][BuildVideo].</span><span class="sxs-lookup"><span data-stu-id="7784c-148">For more information about PWA benefits, upcoming features, and short demos, navigate to [Build 2020 PWA session][BuildVideo].</span></span> 
+> <span data-ttu-id="7804e-148">Weitere Informationen zu PWA-Vorteilen, bevorstehenden Features und kurzen Demos finden Sie unter [Build 2020 PWA session][BuildVideo].</span><span class="sxs-lookup"><span data-stu-id="7804e-148">For more information about PWA benefits, upcoming features, and short demos, navigate to [Build 2020 PWA session][BuildVideo].</span></span> 
 
-## <a name="requirements"></a><span data-ttu-id="7784c-149">Anforderungen</span><span class="sxs-lookup"><span data-stu-id="7784c-149">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="7804e-149">Anforderungen</span><span class="sxs-lookup"><span data-stu-id="7804e-149">Requirements</span></span>  
 
-<span data-ttu-id="7784c-150">Um als PWA ausgeführt zu werden, sollte Ihre vom Server gehostete Web-App die folgenden Mindestanforderungen enthalten.</span><span class="sxs-lookup"><span data-stu-id="7784c-150">To run as a PWA, your server-hosted web app should include following minimum requirements.</span></span>  
+<span data-ttu-id="7804e-150">Um als PWA ausgeführt zu werden, sollte Ihre vom Server gehostete Web-App die folgenden Mindestanforderungen enthalten.</span><span class="sxs-lookup"><span data-stu-id="7804e-150">To run as a PWA, your server-hosted web app should include following minimum requirements.</span></span>  
 
 :::row:::
    :::column span="1":::
-      [<span data-ttu-id="7784c-151">HTTPS</span><span class="sxs-lookup"><span data-stu-id="7784c-151">HTTPS</span></span>][WikiHttps]  
+      [<span data-ttu-id="7804e-151">HTTPS</span><span class="sxs-lookup"><span data-stu-id="7804e-151">HTTPS</span></span>][WikiHttps]  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="7784c-152">Schützt Ihre Benutzer, indem sie eine sichere Verbindung für die Server- oder App-Kommunikation bereitstellen.</span><span class="sxs-lookup"><span data-stu-id="7784c-152">Protects your users by providing a secure connection for server or app communication.</span></span>  <span data-ttu-id="7784c-153">Service Workers und andere PWA-Technologien funktionieren nur mit Webressourcen, die über eine sichere Verbindung \(oder aus `localhost` Debugzwecken) bedient werden\).</span><span class="sxs-lookup"><span data-stu-id="7784c-153">Service Workers and other PWA technologies only work with web resources served over a secure connection \(or from `localhost` for debugging purposes\).</span></span>  
+      <span data-ttu-id="7804e-152">Schützt Ihre Benutzer, indem sie eine sichere Verbindung für die Server- oder App-Kommunikation bereitstellen.</span><span class="sxs-lookup"><span data-stu-id="7804e-152">Protects your users by providing a secure connection for server or app communication.</span></span>  <span data-ttu-id="7804e-153">Service Workers und andere PWA-Technologien funktionieren nur mit Webressourcen, die über eine sichere Verbindung \(oder aus `localhost` Debugzwecken) bedient werden\).</span><span class="sxs-lookup"><span data-stu-id="7804e-153">Service Workers and other PWA technologies only work with web resources served over a secure connection \(or from `localhost` for debugging purposes\).</span></span>  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      [<span data-ttu-id="7784c-154">Service Workers</span><span class="sxs-lookup"><span data-stu-id="7784c-154">Service Workers</span></span>][MDNServiceWorkerApi]  
+      [<span data-ttu-id="7804e-154">Service Workers</span><span class="sxs-lookup"><span data-stu-id="7804e-154">Service Workers</span></span>][MDNServiceWorkerApi]  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="7784c-155">Verwendet Service Worker-Threads, um als Netzwerk-Proxys zwischen Ihrem Server und Ihrer Client-App zu fungieren.</span><span class="sxs-lookup"><span data-stu-id="7784c-155">Uses Service Worker threads to act as network proxies between your server and client app.</span></span>  <span data-ttu-id="7784c-156">Service Worker-Threads bieten Offlineunterstützung, Ressourcen zwischenspeichern, Pushbenachrichtigungen, Hintergrunddatensynchronisierung und Leistungsoptimierungen beim Seitenladen.</span><span class="sxs-lookup"><span data-stu-id="7784c-156">Service Worker threads provide offline support, resource caching, push notifications, background data sync, and  page-load performance optimizations.</span></span>    
+      <span data-ttu-id="7804e-155">Verwendet Service Worker-Threads, um als Netzwerk-Proxys zwischen Ihrem Server und Ihrer Client-App zu fungieren.</span><span class="sxs-lookup"><span data-stu-id="7804e-155">Uses Service Worker threads to act as network proxies between your server and client app.</span></span>  <span data-ttu-id="7804e-156">Service Worker-Threads bieten Offlineunterstützung, Ressourcen zwischenspeichern, Pushbenachrichtigungen, Hintergrunddatensynchronisierung und Leistungsoptimierungen beim Seitenladen.</span><span class="sxs-lookup"><span data-stu-id="7804e-156">Service Worker threads provide offline support, resource caching, push notifications, background data sync, and  page-load performance optimizations.</span></span>    
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      [<span data-ttu-id="7784c-157">Web-App-Manifest</span><span class="sxs-lookup"><span data-stu-id="7784c-157">Web App Manifest</span></span>][MDNWebAppManifest]  
+      [<span data-ttu-id="7804e-157">Web-App-Manifest</span><span class="sxs-lookup"><span data-stu-id="7804e-157">Web App Manifest</span></span>][MDNWebAppManifest]  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="7784c-158">Stellt eine JSON-basierte Metadatendatei bereit, in der wichtige Informationen zu Ihrer Web-App beschrieben werden, sodass Windows 10 und andere Hostplattformen ihren PWA-Benutzern eine installierbare, systemeigene app-bezogene Besensung bieten.</span><span class="sxs-lookup"><span data-stu-id="7784c-158">Provides a JSON-based metadata file that describes key information about your web app, so that Windows 10 and other host platforms provide your PWA users with an installable, native app-like experience.</span></span>  <span data-ttu-id="7784c-159">Wichtige Informationen umfassen Symbole, Sprache und URL-Einstiegspunkt.</span><span class="sxs-lookup"><span data-stu-id="7784c-159">Key information includes icons, language, and URL entry point.</span></span> 
+      <span data-ttu-id="7804e-158">Stellt eine JSON-basierte Metadatendatei bereit, in der wichtige Informationen zu Ihrer Web-App beschrieben werden, sodass Windows 10 und andere Hostplattformen ihren PWA-Benutzern eine installierbare, systemeigene app-bezogene Besensung bieten.</span><span class="sxs-lookup"><span data-stu-id="7804e-158">Provides a JSON-based metadata file that describes key information about your web app, so that Windows 10 and other host platforms provide your PWA users with an installable, native app-like experience.</span></span>  <span data-ttu-id="7804e-159">Wichtige Informationen umfassen Symbole, Sprache und URL-Einstiegspunkt.</span><span class="sxs-lookup"><span data-stu-id="7804e-159">Key information includes icons, language, and URL entry point.</span></span> 
    :::column-end:::
 :::row-end:::  
 
-<span data-ttu-id="7784c-160">Um ein großartiges PWA zu sein, muss Ihre App auch die folgenden Anforderungen erfüllen.</span><span class="sxs-lookup"><span data-stu-id="7784c-160">To be a great PWA, your app must also meet the following requirements.</span></span>  
+<span data-ttu-id="7804e-160">Um ein großartiges PWA zu sein, muss Ihre App auch die folgenden Anforderungen erfüllen.</span><span class="sxs-lookup"><span data-stu-id="7804e-160">To be a great PWA, your app must also meet the following requirements.</span></span>  
 
 :::row:::
    :::column span="1":::
-      [<span data-ttu-id="7784c-161">Browserübergreifende Kompatibilität</span><span class="sxs-lookup"><span data-stu-id="7784c-161">Cross-browser compatibility</span></span>][MDNCrossBrowserTesting]  
+      [<span data-ttu-id="7804e-161">Browserübergreifende Kompatibilität</span><span class="sxs-lookup"><span data-stu-id="7804e-161">Cross-browser compatibility</span></span>][MDNCrossBrowserTesting]  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="7784c-162">Stellen Sie sicher, dass Ihr PWA funktioniert, [indem Sie][MicrosoftDeveloperEdgeToolsRemote] tests in verschiedenen Browsern und Umgebungen durchführen.</span><span class="sxs-lookup"><span data-stu-id="7784c-162">Ensure your PWA works by [testing][MicrosoftDeveloperEdgeToolsRemote] in different browsers and environments.</span></span>  
+      <span data-ttu-id="7804e-162">Stellen Sie sicher, dass Ihr PWA funktioniert, [indem Sie][MicrosoftDeveloperEdgeToolsRemote] tests in verschiedenen Browsern und Umgebungen durchführen.</span><span class="sxs-lookup"><span data-stu-id="7804e-162">Ensure your PWA works by [testing][MicrosoftDeveloperEdgeToolsRemote] in different browsers and environments.</span></span>  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      [<span data-ttu-id="7784c-163">Dynamisches Design</span><span class="sxs-lookup"><span data-stu-id="7784c-163">Responsive design</span></span>][WikiResponsiveWebDesign]  
+      [<span data-ttu-id="7804e-163">Dynamisches Design</span><span class="sxs-lookup"><span data-stu-id="7804e-163">Responsive design</span></span>][WikiResponsiveWebDesign]  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="7784c-164">Verwendet flüssige Layouts und flexible Bilder.</span><span class="sxs-lookup"><span data-stu-id="7784c-164">Employs fluid layouts and flexible images.</span></span>  <span data-ttu-id="7784c-165">Das responsive Design umfasst die folgenden Elemente, die Ihre UX an das Gerät Ihres Benutzers anpassen.</span><span class="sxs-lookup"><span data-stu-id="7784c-165">Responsive design includes the following elements that adapt your UX to your user's device.</span></span>  
+      <span data-ttu-id="7804e-164">Verwendet flüssige Layouts und flexible Bilder.</span><span class="sxs-lookup"><span data-stu-id="7804e-164">Employs fluid layouts and flexible images.</span></span>  <span data-ttu-id="7804e-165">Das responsive Design umfasst die folgenden Elemente, die Ihre UX an das Gerät Ihres Benutzers anpassen.</span><span class="sxs-lookup"><span data-stu-id="7804e-165">Responsive design includes the following elements that adapt your UX to your user's device.</span></span>  
       
-      *   <span data-ttu-id="7784c-166">[CSS-Raster][MDNCssGridLayout]</span><span class="sxs-lookup"><span data-stu-id="7784c-166">CSS [grid][MDNCssGridLayout]</span></span>  
-      *   [<span data-ttu-id="7784c-167">flexbox</span><span class="sxs-lookup"><span data-stu-id="7784c-167">flexbox</span></span>][MDNCssFlexibleBoxLayout]  
-      *   <span data-ttu-id="7784c-168">[CSS-Raster][MDNCssGridLayout] und [Flexbox][MDNCssFlexibleBoxLayout]</span><span class="sxs-lookup"><span data-stu-id="7784c-168">CSS [grid][MDNCssGridLayout] and [flexbox][MDNCssFlexibleBoxLayout]</span></span>  
-      *   [<span data-ttu-id="7784c-169">Medienabfragen</span><span class="sxs-lookup"><span data-stu-id="7784c-169">media queries</span></span>][MDNMediaQueries]  
-      *   [<span data-ttu-id="7784c-170">Reaktionsschnelle Bilder</span><span class="sxs-lookup"><span data-stu-id="7784c-170">responsive images</span></span>][MDNResponsiveImages]  
+      *   <span data-ttu-id="7804e-166">[CSS-Raster][MDNCssGridLayout]</span><span class="sxs-lookup"><span data-stu-id="7804e-166">CSS [grid][MDNCssGridLayout]</span></span>  
+      *   [<span data-ttu-id="7804e-167">flexbox</span><span class="sxs-lookup"><span data-stu-id="7804e-167">flexbox</span></span>][MDNCssFlexibleBoxLayout]  
+      *   <span data-ttu-id="7804e-168">[CSS-Raster][MDNCssGridLayout] und [Flexbox][MDNCssFlexibleBoxLayout]</span><span class="sxs-lookup"><span data-stu-id="7804e-168">CSS [grid][MDNCssGridLayout] and [flexbox][MDNCssFlexibleBoxLayout]</span></span>  
+      *   [<span data-ttu-id="7804e-169">Medienabfragen</span><span class="sxs-lookup"><span data-stu-id="7804e-169">media queries</span></span>][MDNMediaQueries]  
+      *   [<span data-ttu-id="7804e-170">Reaktionsschnelle Bilder</span><span class="sxs-lookup"><span data-stu-id="7804e-170">responsive images</span></span>][MDNResponsiveImages]  
       
-      <span data-ttu-id="7784c-171">Verwendet [Geräteemulationstools][DevToolsGuideDeviceModeTestingOtherBrowsers] aus Ihrem Browser, um lokal zu testen oder eine Remotedebubuingsitzung unter [Windows][DevtoolsRemoteDebuggingWindows] oder [Android][DevtoolsRemoteDebuggingIndex] zu erstellen, um direkt auf einem Zielgerät zu testen.</span><span class="sxs-lookup"><span data-stu-id="7784c-171">Uses [device emulation tools][DevToolsGuideDeviceModeTestingOtherBrowsers] from your browser to locally test, or create a remote debugging session on [Windows][DevtoolsRemoteDebuggingWindows] or [Android][DevtoolsRemoteDebuggingIndex] to test directly on a target device.</span></span>
+      <span data-ttu-id="7804e-171">Verwendet [Geräteemulationstools][DevToolsGuideDeviceModeTestingOtherBrowsers] aus Ihrem Browser, um lokal zu testen oder eine Remotedebubuingsitzung unter [Windows][DevtoolsRemoteDebuggingWindows] oder [Android][DevtoolsRemoteDebuggingIndex] zu erstellen, um direkt auf einem Zielgerät zu testen.</span><span class="sxs-lookup"><span data-stu-id="7804e-171">Uses [device emulation tools][DevToolsGuideDeviceModeTestingOtherBrowsers] from your browser to locally test, or create a remote debugging session on [Windows][DevtoolsRemoteDebuggingWindows] or [Android][DevtoolsRemoteDebuggingIndex] to test directly on a target device.</span></span>
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      [<span data-ttu-id="7784c-172">Tiefe Verknüpfung</span><span class="sxs-lookup"><span data-stu-id="7784c-172">Deep linking</span></span>][WikiDeepLinking]  
+      [<span data-ttu-id="7804e-172">Tiefe Verknüpfung</span><span class="sxs-lookup"><span data-stu-id="7804e-172">Deep linking</span></span>][WikiDeepLinking]  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="7784c-173">Leitet jede Seite Ihrer Website an eine eindeutige URL weiter, sodass vorhandene Benutzer Ihnen helfen können, eine noch breitere Zielgruppe über die Freigabe sozialer Medien zu erreichen.</span><span class="sxs-lookup"><span data-stu-id="7784c-173">Routes each page of your site to a unique URL so existing users may help you engage an even broader audience through social media sharing.</span></span>  
+      <span data-ttu-id="7804e-173">Leitet jede Seite Ihrer Website an eine eindeutige URL weiter, sodass vorhandene Benutzer Ihnen helfen können, eine noch breitere Zielgruppe über die Freigabe sozialer Medien zu erreichen.</span><span class="sxs-lookup"><span data-stu-id="7804e-173">Routes each page of your site to a unique URL so existing users may help you engage an even broader audience through social media sharing.</span></span>  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      [<span data-ttu-id="7784c-174">Validierungs- und Testmethoden</span><span class="sxs-lookup"><span data-stu-id="7784c-174">Validation and testing practices</span></span>][Webhint]  
+      [<span data-ttu-id="7804e-174">Validierungs- und Testmethoden</span><span class="sxs-lookup"><span data-stu-id="7804e-174">Validation and testing practices</span></span>][Webhint]  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="7784c-175">Verwendet Codequalitätstools wie den [Webhint-Linter,][Webhint] um die Effizienz, Robustheit, Sicherheit und Barrierefreiheit Ihrer App zu optimieren.</span><span class="sxs-lookup"><span data-stu-id="7784c-175">Uses code quality tools like the [Webhint][Webhint] linter to optimize the efficiency, robustness, safety, and accessibility of your app.</span></span>  
+      <span data-ttu-id="7804e-175">Verwendet Codequalitätstools wie den [Webhint-Linter,][Webhint] um die Effizienz, Robustheit, Sicherheit und Barrierefreiheit Ihrer App zu optimieren.</span><span class="sxs-lookup"><span data-stu-id="7804e-175">Uses code quality tools like the [Webhint][Webhint] linter to optimize the efficiency, robustness, safety, and accessibility of your app.</span></span>  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      [<span data-ttu-id="7784c-176">Chromium-PWA-Prüfliste</span><span class="sxs-lookup"><span data-stu-id="7784c-176">Chromium PWA Checklist</span></span>][WebDevGoodPwaChecklist]  
+      [<span data-ttu-id="7804e-176">Chromium-PWA-Prüfliste</span><span class="sxs-lookup"><span data-stu-id="7804e-176">Chromium PWA Checklist</span></span>][WebDevGoodPwaChecklist]  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="7784c-177">Überprüft Ihre PWA anhand der Google-Basis-PWA-Prüfliste.</span><span class="sxs-lookup"><span data-stu-id="7784c-177">Verifies your PWA against the Google baseline PWA checklist.</span></span>  
+      <span data-ttu-id="7804e-177">Überprüft Ihre PWA anhand der Google-Basis-PWA-Prüfliste.</span><span class="sxs-lookup"><span data-stu-id="7804e-177">Verifies your PWA against the Google baseline PWA checklist.</span></span>  
    :::column-end:::
 :::row-end:::  
 
 > [!NOTE]
-> <span data-ttu-id="7784c-178">Um Ihre PWA in eine [Microsoft Store-App zu][MicrosoftDeveloperStore] verwandeln, navigieren Sie zu [Progressive Web Apps im Microsoft Store][PwaChromiumMicrosoftStore].</span><span class="sxs-lookup"><span data-stu-id="7784c-178">To turn your PWA into a [Microsoft Store][MicrosoftDeveloperStore] app, navigate to [Progressive Web Apps in the Microsoft Store][PwaChromiumMicrosoftStore].</span></span>  
+> <span data-ttu-id="7804e-178">Um Ihre PWA in eine [Microsoft Store-App zu][MicrosoftDeveloperStore] verwandeln, navigieren Sie zu [Progressive Web Apps im Microsoft Store][PwaChromiumMicrosoftStore].</span><span class="sxs-lookup"><span data-stu-id="7804e-178">To turn your PWA into a [Microsoft Store][MicrosoftDeveloperStore] app, navigate to [Progressive Web Apps in the Microsoft Store][PwaChromiumMicrosoftStore].</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="7784c-179">Weitere Informationen</span><span class="sxs-lookup"><span data-stu-id="7784c-179">See also</span></span>  
+## <a name="see-also"></a><span data-ttu-id="7804e-179">Weitere Informationen</span><span class="sxs-lookup"><span data-stu-id="7804e-179">See also</span></span>  
 
-*   [<span data-ttu-id="7784c-180">Legendenbusting PWAs</span><span class="sxs-lookup"><span data-stu-id="7784c-180">Myth Busting PWAs</span></span>][Davrous20191018MythBustingPwasNewEdgeEdition]  
-*   [<span data-ttu-id="7784c-181">Eine progressive Roadmap für Ihre Progressive Web App</span><span class="sxs-lookup"><span data-stu-id="7784c-181">A Progressive Roadmap for your Progressive Web App</span></span>][CloudfourThinksProgressiveRoadmapYourWebApp]  
-*   [<span data-ttu-id="7784c-182">Offline-POSTs mit progressiven Web-Apps</span><span class="sxs-lookup"><span data-stu-id="7784c-182">Offline POSTs with Progressive Web Apps</span></span>][MediumWebEdgeOfflinePostsProgressiveWebApps]  
-*   [<span data-ttu-id="7784c-183">PWA Q&A</span><span class="sxs-lookup"><span data-stu-id="7784c-183">PWA Q&A</span></span>][AaronGustafsonNotebookPwaQa]  
-*   [<span data-ttu-id="7784c-184">Wetten im Web</span><span class="sxs-lookup"><span data-stu-id="7784c-184">Betting on the Web</span></span>][JoretegBlogBettingWeb]  
-*   [<span data-ttu-id="7784c-185">Benennung progressiver Web-Apps</span><span class="sxs-lookup"><span data-stu-id="7784c-185">Naming Progressive Web Apps</span></span>][Fberriman20170626NamingProgressiveWebApps]  
-*   [<span data-ttu-id="7784c-186">Entwerfen und Erstellen einer progressiven Web-App ohne Framework (Teil 1)</span><span class="sxs-lookup"><span data-stu-id="7784c-186">Designing And Building A Progressive Web App Without A Framework (Part 1)</span></span>][Smashingmagazine201907ProgressiveWebAppFrameworkPart1]  
-*   [<span data-ttu-id="7784c-187">Entwerfen und Erstellen einer progressiven Web-App ohne Framework (Teil 2)</span><span class="sxs-lookup"><span data-stu-id="7784c-187">Designing And Building A Progressive Web App Without A Framework (Part 2)</span></span>][Smashingmagazine201907ProgressiveWebAppFrameworkPart2]  
-*   [<span data-ttu-id="7784c-188">Entwerfen und Erstellen einer progressiven Web-App ohne Framework (Teil 3)</span><span class="sxs-lookup"><span data-stu-id="7784c-188">Designing And Building A Progressive Web App Without A Framework (Part 3)</span></span>][Smashingmagazine201907ProgressiveWebAppFrameworkPart3]  
+*   [<span data-ttu-id="7804e-180">Legendenbusting PWAs</span><span class="sxs-lookup"><span data-stu-id="7804e-180">Myth Busting PWAs</span></span>][Davrous20191018MythBustingPwasNewEdgeEdition]  
+*   [<span data-ttu-id="7804e-181">Eine progressive Roadmap für Ihre Progressive Web App</span><span class="sxs-lookup"><span data-stu-id="7804e-181">A Progressive Roadmap for your Progressive Web App</span></span>][CloudfourThinksProgressiveRoadmapYourWebApp]  
+*   [<span data-ttu-id="7804e-182">Offline-POSTs mit progressiven Web-Apps</span><span class="sxs-lookup"><span data-stu-id="7804e-182">Offline POSTs with Progressive Web Apps</span></span>][MediumWebEdgeOfflinePostsProgressiveWebApps]  
+*   [<span data-ttu-id="7804e-183">PWA Q&A</span><span class="sxs-lookup"><span data-stu-id="7804e-183">PWA Q&A</span></span>][AaronGustafsonNotebookPwaQa]  
+*   [<span data-ttu-id="7804e-184">Wetten im Web</span><span class="sxs-lookup"><span data-stu-id="7804e-184">Betting on the Web</span></span>][JoretegBlogBettingWeb]  
+*   [<span data-ttu-id="7804e-185">Benennung progressiver Web-Apps</span><span class="sxs-lookup"><span data-stu-id="7804e-185">Naming Progressive Web Apps</span></span>][Fberriman20170626NamingProgressiveWebApps]  
+*   [<span data-ttu-id="7804e-186">Entwerfen und Erstellen einer progressiven Web-App ohne Framework (Teil 1)</span><span class="sxs-lookup"><span data-stu-id="7804e-186">Designing And Building A Progressive Web App Without A Framework (Part 1)</span></span>][Smashingmagazine201907ProgressiveWebAppFrameworkPart1]  
+*   [<span data-ttu-id="7804e-187">Entwerfen und Erstellen einer progressiven Web-App ohne Framework (Teil 2)</span><span class="sxs-lookup"><span data-stu-id="7804e-187">Designing And Building A Progressive Web App Without A Framework (Part 2)</span></span>][Smashingmagazine201907ProgressiveWebAppFrameworkPart2]  
+*   [<span data-ttu-id="7804e-188">Entwerfen und Erstellen einer progressiven Web-App ohne Framework (Teil 3)</span><span class="sxs-lookup"><span data-stu-id="7804e-188">Designing And Building A Progressive Web App Without A Framework (Part 3)</span></span>][Smashingmagazine201907ProgressiveWebAppFrameworkPart3]  
     
 <!-- links -->  
 
@@ -215,18 +215,18 @@ ms.locfileid: "11480188"
 [WindowsUWPPublishIndex]: /windows/uwp/publish/index.md "Veröffentlichen von Windows-Apps und | Microsoft Docs"  
 [WindowsUWPPublishDeveloperAccount]: /windows/uwp/publish/opening-a-developer-account.md "Öffnen eines Entwicklerkontos | Microsoft Docs"  
 
-[WindowsBlogsWelcomingPWAsEdgeWindows]: https://blogs.windows.com/msedgedev/2018/02/06/welcoming-progressive-web-apps-edge-windows-10/#56z7mJwKsykfbR4I.97 "Willkommen bei Progressive Web Apps für Microsoft Edge und Windows 10 – Windows Blogs"  
-[MicrosoftDeveloperEdgePlatformStatusBackgroundSync]: https://developer.microsoft.com/microsoft-edge/platform/status/backgroundsyncapi "Hintergrundsynchronisierungs-API – Microsoft Edge Platform Status"  
-[MicrosoftDeveloperEdgePlatformStatusWebAppManifest]: https://developer.microsoft.com/microsoft-edge/platform/status/webapplicationmanifest "Web-App-Manifest – Microsoft Edge-Plattformstatus"  
+[WindowsBlogsWelcomingPWAsEdgeWindows]: https://blogs.windows.com/msedgedev/2018/02/06/welcoming-progressive-web-apps-edge-windows-10/#56z7mJwKsykfbR4I.97 "Willkommen bei Progressive Web Apps zum Microsoft Edge und Windows 10 - Windows Blogs"  
+[MicrosoftDeveloperEdgePlatformStatusBackgroundSync]: https://developer.microsoft.com/microsoft-edge/platform/status/backgroundsyncapi "Hintergrundsynchronisierungs-API – Microsoft Edge Plattformstatus"  
+[MicrosoftDeveloperEdgePlatformStatusWebAppManifest]: https://developer.microsoft.com/microsoft-edge/platform/status/webapplicationmanifest "Web-App-Manifest – Microsoft Edge Plattformstatus"  
 [MicrosoftDeveloperEdgeToolsRemote]: https://developer.microsoft.com/microsoft-edge/tools/remote "Sofortige Tests"  
 [MicrosoftDeveloperWindowsMixedReality]: https://developer.microsoft.com/windows/mixed-reality "Mixed Reality für Entwickler"  
 [MicrosoftDeveloperWindowsSurfaceHub]: https://developer.microsoft.com/windows/surfacehub "Microsoft Surface Hub"  
 [MicrosoftDeveloperStore]: https://developer.microsoft.com/store "Microsoft Developer Store"  
-[MicrosoftEdge]: https://www.microsoft.com/edge "Herunterladen des neuen Microsoft Edge-Browsers"  
+[MicrosoftEdge]: https://www.microsoft.com/edge "Download New Microsoft Edge Browser"  
 [MicrosoftSupportWindowsFocusAssist]: https://support.microsoft.com/help/4026996/windows-10-turn-focus-assist-on-or-off "Aktivieren oder Deaktivieren der Fokushilfe in Windows 10"  
 [MicrosoftSupportWindowsNotificationSettings]: https://support.microsoft.com/help/4028678/windows-10-change-notification-settings "Ändern von Benachrichtigungseinstellungen in Windows 10"  
 
-[AaronGustafsonNotebookPwaQa]: https://www.aaron-gustafson.com/notebook/pwa-qa "PWA Q&A"  
+[AaronGustafsonNotebookPwaQa]: https://www.aaron-gustafson.com/notebook/pwa-qa "PWA F&A"  
 
 [AListApartUnderstandingProgressiveEnhancement]: https://alistapart.com/article/understandingprogressiveenhancement "Grundlegendes zur progressiven Verbesserung – Eine Liste getrennt"  
 
@@ -252,7 +252,7 @@ ms.locfileid: "11480188"
 [MDNSyncManager]: https://developer.mozilla.org/docs/Web/API/SyncManager "SyncManager-| MDN"  
 [MDNWebAppManifest]: https://developer.mozilla.org/docs/Web/Manifest "Web App Manifest | MDN"  
 
-[BuildVideo]: https://www.youtube.com/watch?v=y4p_QHZtMKM "PWA-Video"  
+[BuildVideo]: https://www.youtube.com/watch?v=y4p_QHZtMKM "PWA Video"  
 
 [CloudfourThinksProgressiveRoadmapYourWebApp]: https://cloudfour.com/thinks/a-progressive-roadmap-for-your-progressive-web-app "Eine progressive Roadmap für Ihre Progressive Web App"  
 

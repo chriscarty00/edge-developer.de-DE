@@ -97,7 +97,7 @@ ms.locfileid: "11519156"
     
     <span data-ttu-id="0b86d-132">Sie können auch über das Hauptmenü auf [die Befehle zugreifen.](#change-placement-from-the-main-menu)</span><span class="sxs-lookup"><span data-stu-id="0b86d-132">You may also access the commands from the [main menu](#change-placement-from-the-main-menu).</span></span> 
     
-    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="Der Befehl Abdocken" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
+    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="Der Befehl "Abdocken"" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
        <span data-ttu-id="0b86d-134">Der Befehl "Abdocken"</span><span class="sxs-lookup"><span data-stu-id="0b86d-134">The Undock command</span></span>  
     :::image-end:::  
     

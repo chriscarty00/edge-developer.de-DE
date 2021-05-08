@@ -56,7 +56,7 @@ ms.locfileid: "11439738"
 
 ## <a name="view-sampling-profile"></a><span data-ttu-id="072de-120">Anzeigen des Samplingprofils</span><span class="sxs-lookup"><span data-stu-id="072de-120">View Sampling Profile</span></span>  
 
-<span data-ttu-id="072de-121">Wenn Sie die Aufzeichnung abgeschlossen haben,  füllt DevTools automatisch den Speicherbereich unter **SAMPLING PROFILES** mit den Daten aus Ihrer Aufzeichnung auf.</span><span class="sxs-lookup"><span data-stu-id="072de-121">When you finish recording, DevTools automatically populates the **Memory** panel under **SAMPLING PROFILES** with the data from your recording.</span></span>  
+<span data-ttu-id="072de-121">Wenn Sie die Aufzeichnung abgeschlossen haben, \*\*\*\* füllt DevTools automatisch den Speicherbereich unter **SAMPLING PROFILES** mit den Daten aus Ihrer Aufzeichnung auf.</span><span class="sxs-lookup"><span data-stu-id="072de-121">When you finish recording, DevTools automatically populates the **Memory** panel under **SAMPLING PROFILES** with the data from your recording.</span></span>  
 
 <span data-ttu-id="072de-122">Die Standardansicht ist **Heavy \(Bottom Up\)**.</span><span class="sxs-lookup"><span data-stu-id="072de-122">The default view is **Heavy \(Bottom Up\)**.</span></span>  <span data-ttu-id="072de-123">In dieser Ansicht können Sie überprüfen, welche Funktionen die Leistung am stärksten beeinträchtigen, und den anfordernden Pfad für jede Funktion untersuchen.</span><span class="sxs-lookup"><span data-stu-id="072de-123">This view allows you to review which functions had the most impact on performance and examine the requesting path for each function.</span></span>  
 

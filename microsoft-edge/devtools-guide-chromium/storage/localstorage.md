@@ -42,7 +42,7 @@ ms.locfileid: "11439675"
     
 1.  <span data-ttu-id="143f4-111">Erweitern Sie **das Menü Lokaler Speicher.**</span><span class="sxs-lookup"><span data-stu-id="143f4-111">Expand the **Local Storage** menu.</span></span>  
     
-    :::image type="complex" source="../media/storage-application-local-storage.msft.png" alt-text="Menü Lokaler Speicher" lightbox="../media/storage-application-local-storage.msft.png":::
+    :::image type="complex" source="../media/storage-application-local-storage.msft.png" alt-text="Menü "Lokaler Speicher"" lightbox="../media/storage-application-local-storage.msft.png":::
        <span data-ttu-id="143f4-113">Menü **"Lokaler Speicher"**</span><span class="sxs-lookup"><span data-stu-id="143f4-113">The **Local Storage** menu</span></span>  
     :::image-end:::  
     
@@ -89,7 +89,7 @@ ms.locfileid: "11439675"
     
 ## <a name="interact-with-localstorage-from-the-console"></a><span data-ttu-id="143f4-139">Interagieren mit localStorage über die Konsole</span><span class="sxs-lookup"><span data-stu-id="143f4-139">Interact with localStorage from the Console</span></span>  
 
-<span data-ttu-id="143f4-140">Da Sie JavaScript in der Konsole ausführen  können **und**die Konsole Zugriff auf die JavaScript-Kontexte der Seite hat, ist es möglich, mit über die Konsole `localStorage` zu **interagieren.**</span><span class="sxs-lookup"><span data-stu-id="143f4-140">Since you are able to run JavaScript in the **Console**, and since the **Console** has access to the JavaScript contexts of the page, it is possible to interact with `localStorage` from the **Console**.</span></span>  
+<span data-ttu-id="143f4-140">Da Sie JavaScript in der Konsole ausführen \*\*\*\* können **und**die Konsole Zugriff auf die JavaScript-Kontexte der Seite hat, ist es möglich, mit über die Konsole `localStorage` zu **interagieren.**</span><span class="sxs-lookup"><span data-stu-id="143f4-140">Since you are able to run JavaScript in the **Console**, and since the **Console** has access to the JavaScript contexts of the page, it is possible to interact with `localStorage` from the **Console**.</span></span>  
 
 1.  <span data-ttu-id="143f4-141">Verwenden Sie **das Menü JavaScript-Kontexte,** um den JavaScript-Kontext der **Konsole** zu ändern, wenn Sie auf die Schlüssel-Wert-Paare einer anderen Domäne als der angezeigten Seite `localStorage` zugreifen möchten.</span><span class="sxs-lookup"><span data-stu-id="143f4-141">Use the **JavaScript contexts** menu to change the JavaScript context of the **Console** if you want to access the `localStorage` key-value pairs of a domain other than the page that is displayed.</span></span>  
     

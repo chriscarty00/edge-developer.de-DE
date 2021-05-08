@@ -118,8 +118,7 @@ ms.locfileid: "11439584"
 1.  <span data-ttu-id="93899-166">Aktivieren Sie **Source Order Viewer** im Abschnitt das Kontrollkästchen **Quellreihenfolge** anzeigen.</span><span class="sxs-lookup"><span data-stu-id="93899-166">Under the **Source Order Viewer** section, choose the **Show Source Order** checkbox.</span></span>  
 1.  <span data-ttu-id="93899-167">Markieren Sie jedes HTML-Element, um eine Überlagerung anzuzeigen, die die Reihenfolge in der Webseitenquelle enthält.</span><span class="sxs-lookup"><span data-stu-id="93899-167">Highlight any HTML element to display an overlay that the order in the webpage source.</span></span>  
     
-:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer in the Accessibility pane" lightbox="../media/experiments-source-order-viewer.msft.png":::
-   **Source Order Viewer** in the **Accessibility** pane  
+:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text=":::<span data-ttu-id="93899-168">no-loc(Source Order Viewer)::: im Bereich Barrierefreiheit" lightbox=".. /media/experiments-source-order-viewer.msft.png"::: im **Source Order Viewer** Bereich **Barrierefreiheit**</span><span class="sxs-lookup"><span data-stu-id="93899-168">no-loc(Source Order Viewer)::: in the Accessibility pane" lightbox="../media/experiments-source-order-viewer.msft.png"::: **Source Order Viewer** in the **Accessibility** pane</span></span>  
 :::image-end:::  
 
 <!--Available in Microsoft Edge version 86 and later.  -->  
@@ -134,7 +133,7 @@ ms.locfileid: "11439584"
 1.  <span data-ttu-id="93899-177">Öffnen Sie den **Bereich Zusammengesetzte Ebenen.**</span><span class="sxs-lookup"><span data-stu-id="93899-177">Open the **Composited Layers** pane.</span></span>  
 1.  <span data-ttu-id="93899-178">Alle dargestellten Ebenen der App werden angezeigt.</span><span class="sxs-lookup"><span data-stu-id="93899-178">All of the painted layers of the app are displayed.</span></span>  <span data-ttu-id="93899-179">Testen Sie dieses Feature mit Ihren eigenen Web-Apps.</span><span class="sxs-lookup"><span data-stu-id="93899-179">Try this feature with your own web apps.</span></span>  
     
-:::image type="complex" source="../media/experiments-layers.msft.png" alt-text="Bereich Zusammengesetzte Ebenen" lightbox="../media/experiments-layers.msft.png":::
+:::image type="complex" source="../media/experiments-layers.msft.png" alt-text="Bereich „Zusammengesetzte Ebenen“" lightbox="../media/experiments-layers.msft.png":::
    <span data-ttu-id="93899-181">Bereich **Zusammengesetzte Ebenen**</span><span class="sxs-lookup"><span data-stu-id="93899-181">**Composited Layers** pane</span></span>  
 :::image-end:::  
 
