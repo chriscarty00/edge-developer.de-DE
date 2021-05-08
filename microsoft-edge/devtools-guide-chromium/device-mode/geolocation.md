@@ -1,6 +1,6 @@
 ---
 description: Öffnen Sie das Tool Sensoren, und wählen Sie Koordinaten aus der Liste Geolocation aus.
-title: Überschreiben der Geolocation mit Microsoft Edge DevTools
+title: Überschreiben der Geolocation Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 02/12/2021
@@ -28,13 +28,13 @@ ms.locfileid: "11399001"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# <a name="override-geolocation-with-microsoft-edge-devtools"></a>Überschreiben der Geolocation mit Microsoft Edge DevTools  
+# <a name="override-geolocation-with-microsoft-edge-devtools"></a>Überschreiben der Geolocation Microsoft Edge DevTools  
 
 Viele Websites nutzen den Benutzerspeicherort, um den Benutzern eine relevantere Benutzererfahrung zu bieten.  Beispielsweise kann eine Wetterwebsite die lokale Wettervorhersage im Bereich eines Benutzers anzeigen, nachdem der Benutzer der Website die Berechtigung zum Zugriff auf den aktuellen Benutzerstandort erteilt hat.  
 
 <!--todo: add link to user location section when available -->  
 
-Wenn Sie eine Benutzeroberfläche erstellen, die sich je nach Standort des Benutzers ändert, möchten Sie wahrscheinlich sicherstellen, dass sich die Website an verschiedenen Orten auf der ganzen Welt korrekt verhält.  Führen Sie die folgenden Aktionen aus, um Ihre Geolocation in Microsoft Edge DevTools zu überschreiben.  
+Wenn Sie eine Benutzeroberfläche erstellen, die sich je nach Standort des Benutzers ändert, möchten Sie wahrscheinlich sicherstellen, dass sich die Website an verschiedenen Orten auf der ganzen Welt korrekt verhält.  Führen Sie die folgenden Aktionen aus, um Ihre Microsoft Edge in DevTools zu überschreiben.  
 
 1.  Wählen `Control` + `Shift` + `P` Sie \(Windows, Linux\) oder `Command` + `Shift` + `P` \(macOS\) aus, um das **Befehlsmenü zu öffnen.**  
     

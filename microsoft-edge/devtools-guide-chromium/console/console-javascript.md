@@ -1,5 +1,5 @@
 ---
-description: Eine Einführung in die Verwendung des Konsolentools innerhalb der Microsoft Edge Developer Tools als JavaScript-Umgebung.
+description: Eine Einführung in die Verwendung des Konsolentools innerhalb Microsoft Edge Entwicklertools als JavaScript-Umgebung.
 title: Die Konsole als JavaScript-Umgebung
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -21,7 +21,7 @@ Das **Konsolentool** im Browser DevTools ist eine [REPL-Umgebung.][WikiReadEvalP
 Führen Sie die folgenden Aktionen aus, um dies zu versuchen.  
 
 1.  Öffnen Sie die **Konsole**.  
-    *   Wählen `Control` + `Shift` + `J` Sie \(Windows, Linux\) oder `Command` + `Option` + `J` \(macOS\) aus.  
+    *   Wählen `Control` + `Shift` + `J` Sie \(Windows, Linux\) oder `Command` + `Option` + `J` \(macOS\).  
 1.  Geben Sie `2 + 2` ein.  Die **Konsole** zeigt das Ergebnis bereits `4` in der nächsten Zeile an, während Sie es eingeben.  Mit `Eager evaluation` dem Feature können Sie gültiges JavaScript schreiben.  Es zeigt das Ergebnis an, während Sie eingeben, ob es falsch ist oder ob ein gültiges Ergebnis vorhanden ist.  
 
 :::image type="complex" source="../media/console-javascript-eager-evaluation.msft.png" alt-text="Konsole zeigt das Ergebnis von 2 + 2 live an, während Sie es eingeben" lightbox="../media/console-javascript-eager-evaluation.msft.png":::
@@ -79,7 +79,7 @@ Wenn Sie eine mehrstufige Anweisung in der **Konsole starten,** wird sie automat
 
 Anders als in Ihren eigenen Skripts unterstützt **Konsole** die oberste Ebene [await,][GithubTc39ProposalTopLevelAwait] um beliebige asynchrones JavaScript auszuführen.  Verwenden Sie beispielsweise die `fetch` API, ohne die `await` Anweisung mit einer asynchronen Funktion umbrechen zu müssen.  
 
-Führen Sie die folgenden Aktionen aus, um die letzten 50 Probleme zu erhalten, die im [Microsoft Edge Developer Tools for Visual Studio Code][GithubMicrosoftVscodeEdgeDevtools] GitHub-Repository eingereicht wurden.  
+Führen Sie die folgenden Aktionen aus, um die letzten 50 Probleme zu erhalten, die im [Microsoft Edge Developer Tools for Visual Studio Code][GithubMicrosoftVscodeEdgeDevtools] GitHub repository eingereicht wurden.  
 
 1.  Öffnen Sie die **Konsole**.  
 1.  Kopieren Sie den folgenden Codeausschnitt, und fügen Sie ihn ein, um ein Objekt mit 10 Einträgen zu erhalten.  

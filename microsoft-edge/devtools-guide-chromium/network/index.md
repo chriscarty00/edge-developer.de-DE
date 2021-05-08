@@ -128,7 +128,7 @@ Es gibt auch viele Spalten, die standardmäßig ausgeblendet sind und möglicher
 
 1.  Zeigen Sie auf die Kopfzeile der Tabelle Netzwerkprotokoll, öffnen Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste\), und wählen Sie **Domäne aus.**  Die Domäne der einzelnen Ressourcen wird nun angezeigt.  
     
-    :::image type="complex" source="../media/network-glitch-network-edit-column.msft.png" alt-text="Aktivieren der Spalte Domäne" lightbox="../media/network-glitch-network-edit-column.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-edit-column.msft.png" alt-text="Aktivieren der Spalte "Domäne"" lightbox="../media/network-glitch-network-edit-column.msft.png":::
        Aktivieren der Spalte "Domäne"  
     :::image-end:::  
     
@@ -308,7 +308,7 @@ So konzentrieren Sie sich auf einen bestimmten Dateityp, z. B. Stylesheets:
        Nur CSS-Dateien anzeigen  
     :::image-end:::  
     
-1.  Um auch Skripts anzeigen zu können, wählen Sie `Control` \(Windows, Linux\) oder \(macOS\) aus, und wählen `Command` Sie **dann JS aus.**  
+1.  Um auch Skripts anzeigen zu können, wählen Sie `Control` \(Windows, Linux\) oder \(macOS\) aus, und wählen Sie `Command` **dann JS aus.**  
     
     :::image type="complex" source="../media/network-glitch-network-filter-file-type-css-js.msft.png" alt-text="Nur CSS- und JS-Dateien anzeigen" lightbox="../media/network-glitch-network-filter-file-type-css-js.msft.png":::
        Nur CSS- und JS-Dateien anzeigen  
@@ -355,7 +355,7 @@ Wie sieht eine Seite aus und verhält sich, wenn einige der Seitenressourcen nic
 
 ## <a name="conclusion"></a>Fazit  
 
-Herzlichen Glückwunsch, Sie haben das Lernprogramm abgeschlossen.  Sie wissen nun, wie Sie das **Netzwerktool** in den Microsoft Edge DevTools verwenden können.
+Herzlichen Glückwunsch, Sie haben das Lernprogramm abgeschlossen.  Sie wissen nun, wie Sie das **Netzwerktool** in den Microsoft Edge verwenden können.
 
 Navigieren Sie zum [Netzwerkverweis,][DevtoolsNetworkReference] um weitere DevTools-Features im Zusammenhang mit der Überprüfung der Netzwerkaktivität zu ermitteln.  
 
@@ -367,12 +367,12 @@ Navigieren Sie zum [Netzwerkverweis,][DevtoolsNetworkReference] um weitere DevTo
 
 <!--[CachePolicies]: ../../../web/tools/lighthouse/audits/cache-policy ""  -->  
 
-[DevToolsCustomizePlacement]: ../customize/placement.md "Ändern der Platzierung von Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsCustomizePlacement]: ../customize/placement.md "Ändern Microsoft Edge DevTools-Platzierungs-| Microsoft Docs"  
 [DevtoolsNetworkReference]: ./reference.md "Netzwerkanalysereferenz | Microsoft Docs"
 [DevtoolsNetworkReferenceFilter]: ./reference.md#filter-requests "Filteranforderungen – Netzwerkanalysereferenz | Microsoft Docs"  
 [DevtoolsReferenceHideOverview]: ./reference.md#hide-the-overview-pane "Ausblenden des Bereichs Übersicht – Netzwerkanalysereferenz | Microsoft Docs"
 [DevtoolsReferenceProperty]: ./reference.md#filter-requests-by-properties "Filteranforderungen nach Eigenschaften – Netzwerkanalysereferenz | Microsoft Docs"
-[DevToolsOpen]: ../open/index.md "Öffnen Sie Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsOpen]: ../open/index.md "Öffnen Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsSpeedGetStarted]: ../speed/get-started.md "Optimieren der Websitegeschwindigkeit mit Microsoft Edge DevTools | Microsoft Docs"  
 
 [GlitchNetworkGetStarted]: https://microsoft-edge-chromium-devtools.glitch.me/static/network/getstarted.html "Inspect Network Activity Demo | Glitch"  

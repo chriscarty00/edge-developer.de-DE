@@ -62,7 +62,7 @@ Das WebView2-Team plant die folgenden großen Anstrengungen für zukünftige Upd
 
 ## <a name="fixed-version"></a>Feste Version  
 
-[Mit dem Verteilungsmodell mit fester][ConceptsDistributionFixedVersionModel] Version können Sie die Microsoft Edge-Binärdateien in Ihrer systemeigenen Anwendung packen.  Die feste Version hat die allgemeine Verfügbarkeit \(GA\) erreicht.  
+[Mit dem Verteilungsmodell mit fester][ConceptsDistributionFixedVersionModel] Version können Sie die Microsoft Edge in Ihrer systemeigenen Anwendung packen.  Die feste Version hat die allgemeine Verfügbarkeit \(GA\) erreicht.  
 
 ## <a name="general-availability"></a>Allgemeine Verfügbarkeit  
 
@@ -76,15 +76,15 @@ Das .NET SDK hat ga erreicht.
 
 ### <a name="winui-30"></a>WinUI 3.0  
 
-Sie können auf WebView2 in Ihren UWP-Anwendungen mithilfe der [Win UI 3.0][UwpToolkitsWinui3Index]zugreifen, die sich derzeit in Alpha befindet.  Weitere Informationen zum Auf dem neuesten Stand finden Sie unter [Windows UI Library Roadmap][GithubMicrosoftUiXamlRoadmap].  
+Sie können auf WebView2 in Ihren UWP-Anwendungen mithilfe der [Win UI 3.0][UwpToolkitsWinui3Index]zugreifen, die sich derzeit in Alpha befindet.  Weitere Informationen zum Auf dem neuesten Stand finden Sie unter [Windows Ui Library Roadmap][GithubMicrosoftUiXamlRoadmap].  
 
 <!-- links -->  
 
 [ConceptDistributionEvergreenModel]: ./concepts/distribution.md#evergreen-distribution-mode "Immergrünes Verteilungsmodell – Verteilung von Anwendungen mithilfe von WebView2 | Microsoft Docs"  
 [ConceptsDistributionFixedVersionModel]: ./concepts/distribution.md#fixed-version-distribution-mode "Verteilungsmodell mit fester Version – Verteilung von Anwendungen mithilfe von WebView2 | Microsoft Docs"  
 
-[UwpToolkitsWinui3Index]: /uwp/toolkits/winui3/index "Windows UI Library 3.0 Preview 1 (Mai 2020) | Microsoft Docs"  
+[UwpToolkitsWinui3Index]: /uwp/toolkits/winui3/index "Windows Ui Library 3.0 Preview 1 (May 2020) | Microsoft Docs"  
 
 [GithubMicrosoftedgeWebviewfeedbackMain]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView Feedback – MicrosoftEdge/WebViewFeedback | GitHub"  
 
-[GithubMicrosoftUiXamlRoadmap]: https://github.com/microsoft/microsoft-ui-xaml/blob/master/docs/roadmap.md "Windows UI Library Roadmap – microsoft/microsoft-ui-xaml | GitHub"  
+[GithubMicrosoftUiXamlRoadmap]: https://github.com/microsoft/microsoft-ui-xaml/blob/master/docs/roadmap.md "Windows Roadmap für die Benutzeroberflächenbibliothek – microsoft/microsoft-ui-xaml | GitHub"  

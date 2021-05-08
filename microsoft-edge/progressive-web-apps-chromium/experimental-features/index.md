@@ -18,18 +18,18 @@ ms.locfileid: "11496756"
 
 Microsoft Edge bietet Zugriff auf experimentelle Features, die sich noch in der Entwicklung befinden.  Testen Und geben Sie Feedback, um zu ermitteln, ob die einzelnen Features bereit sind und wann sie [veröffentlicht werden.](#providing-feedback-on-experimental-features)  
 
-Experimentelle Features sind in allen Kanälen von Microsoft Edge verfügbar, aber die neuesten experimentellen Features sind nur im Microsoft Edge Canary-Kanal verfügbar.  
+Experimentelle Features sind in allen Kanälen der Microsoft Edge verfügbar, aber die neuesten experimentellen Features sind nur in der Microsoft Edge Canary Channel.  
 
 ## <a name="turn-on-experimental-features"></a>Aktivieren experimenteller Features  
 
-Führen Sie die folgenden Schritte aus, um \(oder off\) experimentelle Features in Microsoft Edge zu aktivieren.  
+Führen Sie die folgenden Schritte aus, um die experimentellen Features in Microsoft Edge aktivieren.  
   
 1.  Öffnen Sie Microsoft Edge.   
     
     > [!NOTE]
-    > Stellen Sie sicher, dass Sie eine Microsoft Edge-Version verwenden, für die das Experiment in diesem Artikel aufgeführt ist.  Navigieren Sie zu [Experimentelle Features](#features-that-are-available-to-test).  
+    > Stellen Sie sicher, dass Sie Microsoft Edge version verwenden, in der das Experiment in diesem Artikel aufgeführt ist.  Navigieren Sie zu [Experimentelle Features](#features-that-are-available-to-test).  
     
-1.  Navigieren Sie zu `edge://flags` .  
+1.  Navigieren Sie zu `edge://flags`.  
 1.  Navigieren Sie zum entsprechenden Experiment.  
 1.  Wählen Sie das Dropdownmenü neben der Experimentbeschreibung aus, und wählen Sie `Enabled` aus.  
     
@@ -38,7 +38,7 @@ Führen Sie die folgenden Schritte aus, um \(oder off\) experimentelle Features 
     :::image-end:::  
     
     > [!NOTE]
-    > Jedes Experiment verfügt in der Regel über ein Dropdownmenü, um die folgenden Werte zu wählen.  Wenn ein experimentelles Feature keinen Eintrag zu **Experimenten**enthält, werden Anweisungen zum Starten von Microsoft Edge mit diesem Feature über die Befehlszeile bereitgestellt.
+    > Jedes Experiment verfügt in der Regel über ein Dropdownmenü, um die folgenden Werte zu wählen.  Wenn ein experimentelles Feature keinen Eintrag zu **Experimenten**enthält, werden Anweisungen bereitgestellt, um Microsoft Edge über die Befehlszeile zu starten.
     > 
     > *   `Default`  
     > *   `Disabled`  
@@ -48,7 +48,7 @@ Führen Sie die folgenden Schritte aus, um \(oder off\) experimentelle Features 
     
 ### <a name="origin-trials"></a>Herkunfts Versuche  
 
-Microsoft Edge verwendet manchmal Ursprungstests, um Features für bestimmte Domänen oder Websites zu testen.  Möglicherweise möchten Sie eine Origin-Testversion für Ihre Website verwenden, um ein bestimmtes Feature anzuwenden.  Wenn Sie Websitebesitzer sind, können Sie sich an einer Ursprungsprobe registrieren.  Eine Origin-Testversion stellt Features für einen Prozentsatz der Microsoft Edge-Benutzer bereit, die Ihre Website besuchen.
+Microsoft Edge verwendet manchmal Ursprungstests, um Features für bestimmte Domänen oder Websites zu testen.  Möglicherweise möchten Sie eine Origin-Testversion für Ihre Website verwenden, um ein bestimmtes Feature anzuwenden.  Wenn Sie Websitebesitzer sind, können Sie sich an einer Ursprungsprobe registrieren.  Eine Origin-Testversion bietet Features für einen Prozentsatz der Microsoft Edge, die Ihre Website besuchen.
 
 Weitere Informationen zu Origin Trials finden Sie unter [Microsoft Edge Origin Trials Developer Console][MicrosoftDeveloperMicrosoftEdgeOriginTrials].  
     
@@ -57,9 +57,9 @@ Weitere Informationen zu Origin Trials finden Sie unter [Microsoft Edge Origin T
 
 ## <a name="features-that-are-available-to-test"></a>Features, die zum Testen verfügbar sind  
 
-In der folgenden Liste werden die neuen experimentellen Web-App-Features beschrieben, die in Microsoft Edge zum Testen und Überprüfen verfügbar sind.  
+In der folgenden Liste werden die neuen experimentellen Web-App-Features beschrieben, die zum Testen und Überprüfen auf Microsoft Edge.  
 
-| Feature | Microsoft Edge-Version | Plattform |  
+| Feature | Microsoft Edge Version | Plattform |  
 |:--- |:--- |:--- |  
 | [URI-Protokollbehandlung](#uri-protocol-handling) | 91 oder höher | Windows und Linux |    
 | [URL Link Handling](#url-link-handling) | 91 oder höher | Windows|
@@ -77,24 +77,24 @@ Weitere Informationen zur vorhandenen browserbasierten Unterstützung finden Sie
 
 Mit diesem Feature können Sie die folgenden Aktionen ausführen.  
 
-*   Registrieren Ihres PWA beim Hostbetriebssystem mithilfe des Manifests Ihrer Web-App
-*   Deklarieren, dass ein PWA ein bestimmtes URI-Protokoll verarbeitet  
+*   Registrieren Der PWA mit dem Hostbetriebssystem mithilfe des Manifests Ihrer Web-App
+*   Deklarieren, dass PWA ein bestimmtes URI-Protokoll verarbeitet  
      
-Nachdem Sie einen PWA als Protokollhandler registriert haben, wird der registrierte PWA vom Betriebssystem aktiviert und empfängt den URI, wenn ein Benutzer einen Hyperlink mit einem bestimmten Schema wie oder aus einem Browser oder einer systemeigenen App `mailto://` `web+music://` wählt.  
+Nachdem Sie einen PWA als Protokollhandler registriert haben, wird der registrierte PWA vom Betriebssystem aktiviert und empfängt den URI, wenn ein Benutzer einen Hyperlink mit einem bestimmten Schema wie oder aus einem Browser oder einer systemeigenen App aus `mailto://` `web+music://` wählt.  
 
 Dieses Feature erfordert, dass Sie das Web-App-Manifest so aktualisieren, dass es ein Array enthält, in das Array müssen `protocol_handlers` Sie zwei Felder angeben:  
 
 *   `protocol`: Das Protokoll zur Verarbeitung der Anforderung, z. B. `mailto` oder `web+jngl` .  
 *   `url`: Der HTTPS-URI im App-Bereich, der das Protokoll behandelt.  In Zukunft soll der URI, der mit dem Protokollhandlerschema beginnt, das Token `%s` ersetzen.  
     
-Aktualisieren Sie Ihr Manifest, um das Protokoll zu unterstützen, das Sie registrieren möchten.  Nachdem Sie dieses Feature aktivieren, werden die folgenden Aktionen von Microsoft Edge abgeschlossen.  
+Aktualisieren Sie Ihr Manifest, um das Protokoll zu unterstützen, das Sie registrieren möchten.  Nachdem Sie dieses Feature aktivieren, Microsoft Edge die folgenden Aktionen abgeschlossen.  
 
 1.  Erkennt Änderungen im Manifest  
 1.  Registriert die App für das Protokoll  
     
 Wenn mehrere Apps ein Protokoll registrieren, wird dem Benutzer eine Eingabeaufforderung angezeigt.  Der Benutzer wählt die entsprechende App aus der Liste aus, die vom Betriebssystem oder Browser angezeigt wird.  
 
-Navigieren Sie zur Vorschau der Protokollverarbeitung in Microsoft Edge unter Windows zu Aktivieren experimenteller [Features,](#turn-on-experimental-features) und aktivieren Sie **die Desktop-PWA-Protokollbehandlung**.  
+Wenn Sie eine Vorschau der Protokollverarbeitung in Microsoft Edge Windows anzeigen möchten, navigieren Sie zu [Aktivieren](#turn-on-experimental-features) von experimentellen Features, und aktivieren Sie desktop **PWA Protocol handling**.  
 
 Weitere Informationen zur Ausführung der Ursprungsprozedur für Protokollhandler finden Sie unter Registrieren für die Registrierung von [Web App-Protokollhandlern.][MicrosoftDeveloperMicrosoftEdgeOriginTrialsWebAppProtocolHandlerRegistrationRegistration]  
 
@@ -134,11 +134,11 @@ In diesem Beispiel deklariert ein Web-App-Manifest, dass die App für die Verarb
 
 Ein uniform resource locator \(URL\) ist ein URI-Typ.  Erstellen Sie eine ansprechendere Umgebung, wenn Progressive Web Apps \(PWAs\) sich als Handler für https-URIs registrieren.  PWAs können anfordern, dass sie gestartet werden, wenn zugeordnete URIs aktiviert werden.  Wenn ein Benutzer beispielsweise einen Link zu einem Nachrichtentext aus einer E-Mail-Nachricht wählt.  Eine zugeordnete PWA zum Anzeigen von Nachrichten wird automatisch gestartet, um die Aktivierung des Links zu verarbeiten.  
 
-Mit diesem Feature können Sie eine PWA mithilfe des Web-App-Manifests beim Browser registrieren und deklarieren, dass der Browser bestimmte Links verarbeitet.  Um einen PWA beim Browser zu registrieren, fügen Sie der Manifestdatei das optionale `url_handlers` Element hinzu.  Das `url_handlers` Mitglied ist ein Element, das die Ursprünge von URIs, die die `object[]` App verarbeiten möchte, gruppen.  
+Mit diesem Feature können Sie eine PWA mit dem Browser mithilfe des Web-App-Manifests registrieren und deklarieren, dass der Browser bestimmte Links verarbeitet.  Um eine PWA beim Browser zu registrieren, fügen Sie der Manifestdatei das optionale `url_handlers` Element hinzu.  Das `url_handlers` Mitglied ist ein Element, das die Ursprünge von URIs, die die `object[]` App verarbeiten möchte, gruppen.  
 
 Die Linkbehandlung wird vom Browser mithilfe einer JSON-Datei überprüft, die `web-app-origin-association` sich am Ursprung befindet.  Die Ursprungsdatei stimmt die eingeschlossenen oder ausgeschlossenen Pfade am Ursprung weiter ab.  Ausführliche Anweisungen zum Testen des URL-Handlers finden Sie unter [PWAs as URL Handlers][GithubWicgPwaUrlHandlerBlobMainExplainerMd].  
 
-Navigieren Sie zum Anzeigen einer Vorschau der URL-Linkbehandlung in Microsoft Edge unter Windows zu [Aktivieren](#turn-on-experimental-features) experimenteller Features und Aktivieren der **Desktop-PWA-URL-Behandlung**.  
+Navigieren Sie zum Anzeigen der URL-Linkbehandlung in Microsoft Edge Windows zu [Aktivieren](#turn-on-experimental-features) experimenteller Features, und aktivieren Sie **desktop PWA URL Handling**.  
 
 ### <a name="example-of-the-url_handlers-in-the-manifest"></a>Beispiel für url_handlers im Manifest  
 
@@ -170,9 +170,9 @@ Der folgende Codeausschnitt ist ein Beispiel-Web-App-Manifest mit dem `url_handl
 }
 ```  
 
-Ein PWA stimmt mit einem URI für die URL-Behandlung überein, wenn der URI einer der Ursprungszeichenfolgen in entspricht und der Browser überprüft, ob der Ursprung zustimmt, dass diese App einen solchen `url_handlers` URI verarbeiten kann.  
+Ein PWA stimmt mit einem URI für die URL-Behandlung überein, wenn der URI mit einer der Ursprungszeichenfolgen in übereinstimmen und der Browser überprüft, ob der Ursprung zustimmt, dass diese App einen solchen `url_handlers` URI verarbeiten kann.  
 
-Das Element enthält einen Ursprung, der den Bereich und andere nicht verwandte Ursprünge des anfordernden `url_handlers` PWA umfasst.  Wenn Sie URIs nicht auf denselben Bereich oder dieselbe Domäne wie die anfordernde PWA beschränken, können Sie unterschiedliche Domänennamen für denselben Inhalt verwenden, sie jedoch mit demselben PWA behandeln.  
+Das Element enthält einen Ursprung, der den Bereich und andere nicht verwandte Ursprünge der anfordernden `url_handlers` PWA.  Wenn Sie URIs nicht auf denselben Bereich oder dieselbe Domäne beschränken wie die anfordernde PWA können Sie unterschiedliche Domänennamen für denselben Inhalt verwenden, sie jedoch mit demselben PWA.  
 
 #### <a name="wildcard-matching"></a>Platzhalterabgleich  
 
@@ -191,17 +191,17 @@ Um eine immersive Titelleiste wie eine systemeigene App für Ihre installierte D
     
 Nachdem eine Überlagerung zur Verfügung steht, steht Ihnen der gesamte Webclientbereich zur Verfügung.  Dieses Feature enthält eine Manifestaktualisierung.  Es bietet Ihnen Möglichkeiten, die Größe und Position der Überlagerung zu bestimmen, um Ihnen bei der Organisation von Inhalten zu helfen.  
 
-Navigieren Sie zum Anzeigen einer Vorschau der Fenstersteuerelementüberlagerungen in Microsoft Edge für Windows 10 zu [Aktivieren](#turn-on-experimental-features) experimenteller Features, und navigieren Sie zu **Desktop PWA Window Controls Overlay**.   
+Navigieren Sie zum Anzeigen einer Vorschau der Fenstersteuerelementüberlagerungen in Microsoft Edge für Windows 10 zu [Aktivieren](#turn-on-experimental-features) von experimentellen Features und navigieren Sie zu **Desktop-PWA-Fenstersteuerelemente-Überlagerung**.   
 
 ### <a name="examples-of-title-bar-area-customization"></a>Beispiele für die Anpassung des Titelleistenbereichs  
 
-Dieses Feature basiert auf der Möglichkeit in nativen Apps, die Titelleiste anzupassen.  Sie können eine Titelleiste für wichtige App-Aktionen oder -Benachrichtigungen anpassen.  Sehen Sie sich die folgenden Beispiele für Microsoft Visual Studio Code und Microsoft Teams an.  
+Dieses Feature basiert auf der Möglichkeit in nativen Apps, die Titelleiste anzupassen.  Sie können eine Titelleiste für wichtige App-Aktionen oder -Benachrichtigungen anpassen.  Lesen Sie die folgenden Beispiele für Microsoft Visual Studio Code und Microsoft Teams.  
 
 #### <a name="visual-studio-code"></a>Visual Studio Code  
 
-Microsoft Visual Studio Code ist ein beliebter Editor, der auf Electron baut, der auf mehreren Desktopplattformen enthalten ist.  
+Microsoft Visual Studio Code ist ein beliebter Editor, der auf Electron baut und auf mehreren Desktopplattformen enthalten ist.  
 
-Das folgende Beispiel zeigt, wie Visual Studio Code die Titelleiste verwendet, um die verfügbare Bildschirm-Immobilie zu maximieren, um den aktuellen Dateinamen und die Menüstruktur der obersten Ebene in die Titelleiste zu enthalten.  
+Im folgenden Beispiel wird Visual Studio Code die Titelleiste verwendet, um die verfügbare Bildschirmimmobilie zu maximieren, um den aktuellen Dateinamen und die Menüstruktur auf oberster Ebene in die Titelleiste zu verwenden.  
 
 :::image type="complex" source="../media/visual-studio-code-title-customization.png" alt-text="Ein Beispiel für die Titelleiste in Visual Studio Code" lightbox="../media/visual-studio-code-title-customization.png":::
    Ein Beispiel für die Titelleiste in Visual Studio Code  
@@ -209,7 +209,7 @@ Das folgende Beispiel zeigt, wie Visual Studio Code die Titelleiste verwendet, u
 
 #### <a name="microsoft-teams"></a>Microsoft Teams  
 
-Microsoft Teams für die Zusammenarbeit und Kommunikation am Arbeitsplatz ist auch mit Electron erstellt und auf mehreren Desktopplattformen verfügbar.  Im folgenden Beispiel zeigt Microsoft Teams Schaltflächen und `back` `forward` Navigationsschaltflächen, ein Suchfeld und Benutzerprofilsteuerelemente an.  
+Die Tools für die Zusammenarbeit und Kommunikation am Arbeitsplatz Microsoft Teams auch mit Electron erstellt und auf mehreren Desktopplattformen verfügbar.  Im folgenden Beispiel werden Microsoft Teams und `back` `forward` Navigationsschaltflächen, ein Suchfeld und Benutzerprofilsteuerelemente angezeigt.  
 
 :::image type="complex" source="../media/teams-title-customization.png" alt-text="Ein Beispiel für die Titelleiste in Microsoft Teams" lightbox="../media/teams-title-customization.png":::
    Ein Beispiel für die Titelleiste in Microsoft Teams  
@@ -217,16 +217,16 @@ Microsoft Teams für die Zusammenarbeit und Kommunikation am Arbeitsplatz ist au
 
 ### <a name="overlay-window-controls-on-a-frameless-window"></a>Überlagerungsfenstersteuerelemente in einem framelosen Fenster  
 
-Um den adressierbaren Bereich für Webinhalte zu maximieren, erstellt der Browser ein frameloses Fenster.  Ein rahmenloses Fenster entfernt alle Browserbenutzeroberflächen, mit Ausnahme der als Überlagerung bereitgestellten Fenstersteuerelemente.  Mit der Überlagerung von Fenstersteuerelementen können Benutzer die App weiterhin minimieren, maximieren, wiederherstellen und schließen.  Darüber hinaus bietet es über das Web-App-Menü Zugriff auf relevante Browsersteuerelemente.  Für Chromium-basierte Browser enthält die Überlagerung die folgenden Steuerelemente.  
+Um den adressierbaren Bereich für Webinhalte zu maximieren, erstellt der Browser ein frameloses Fenster.  Ein rahmenloses Fenster entfernt alle Browserbenutzeroberflächen, mit Ausnahme der als Überlagerung bereitgestellten Fenstersteuerelemente.  Mit der Überlagerung von Fenstersteuerelementen können Benutzer die App weiterhin minimieren, maximieren, wiederherstellen und schließen.  Darüber hinaus bietet es über das Web-App-Menü Zugriff auf relevante Browsersteuerelemente.  Für Chromium browser enthält die Überlagerung die folgenden Steuerelemente.  
 
 *   Ein ziehbarer Bereich mit der gleichen Breite und Höhe der einzelnen Fenstersteuerelementschaltflächen  
-*   Die **Schaltfläche Einstellungen und mehr** \(...\)  
+*   Die **Einstellungen und mehr** \(...\)-Schaltfläche  
 *   Die Schaltflächen des Fenstersteuerelements minimieren, maximieren, wiederherstellen und schließen  
     
 Neben den zuvor aufgeführten Steuerelementen wird die in der Überlagerung angezeigte Benutzeroberfläche in den folgenden Szenarien dynamisch angepasst.  
 
-*   Wenn eine installierte Web-App gestartet wird, wird der **** Ursprung der Webseite links vom Menü Einstellungen und mehr \(...\) für einige Sekunden angezeigt und dann ausgeblendet.  
-*   Wenn ein Benutzer über das **** Menü Einstellungen und mehr \(...\) mit einer Erweiterung interagiert, wird das Symbol der Erweiterung in der Überlagerung links neben dem Menü mit drei Punkten angezeigt.  Nachdem Sie ein Erweiterungsdialogfeld beendet haben, wird das Symbol aus der Überlagerung entfernt.  
+*   Wenn eine installierte Web-App gestartet wird, wird der Ursprung der Webseite links vom Menü **Einstellungen** und mehr \(...\) für einige Sekunden angezeigt und wird dann ausgeblendet.  
+*   Wenn ein Benutzer mithilfe des Menüs **Einstellungen** und mehr \(...\) mit einer Erweiterung interagiert, wird das Symbol der Erweiterung in der Überlagerung links neben dem Menü mit drei Punkten angezeigt.  Nachdem Sie ein Erweiterungsdialogfeld beendet haben, wird das Symbol aus der Überlagerung entfernt.  
     
 | Sprachrichtung | Überlagerungsspeicherort | Details |  
 |:--- |:--- |:--- |  
@@ -487,14 +487,14 @@ body {
 
 ## <a name="run-on-os-login"></a>Ausführen unter Betriebssystemanmeldung  
 
-Mit diesem Feature können Sie Ihre App so konfigurieren, dass sie automatisch gestartet wird, wenn sich der Benutzer bei Microsoft Windows anmeldet.  Mehrere Klassen von Apps nutzen die Funktion.  Zu den Klassen von Apps gehören E-Mails, Chats, Überwachungsdashboards und Echtzeit-Datenanzeige-Apps.  Die Funktion ermöglicht es einem Benutzer, sich mit den Apps zu beschäftigen, sobald sich der Benutzer beim Betriebssystem anmeldet.  Mit diesem Feature wird die PWA automatisch auf die gleiche Weise wie manuell gestartet.  
+Mit diesem Feature können Sie Ihre App so konfigurieren, dass sie automatisch gestartet wird, wenn sich der Benutzer bei Microsoft Windows.  Mehrere Klassen von Apps nutzen die Funktion.  Zu den Klassen von Apps gehören E-Mails, Chats, Überwachungsdashboards und Echtzeit-Datenanzeige-Apps.  Die Funktion ermöglicht es einem Benutzer, sich mit den Apps zu beschäftigen, sobald sich der Benutzer beim Betriebssystem anmeldet.  Dieses Feature startet die PWA automatisch auf die gleiche Weise, wie sie manuell gestartet wird.  
 
 > [!IMPORTANT]
 > **Ausführen unter Betriebssystemanmeldung** ist ein [leistungsstarkes Feature.][GithubW3cPermissionsPowerfulFeature]  Benutzer sollten entscheiden, ob sie die Funktion für die installierte Web-App aktivieren möchten.  
 
 ### <a name="turn-on-run-on-os-login"></a>Aktivieren der Anmeldung unter Betriebssystem ausführen  
 
-Um eine Vorschau der **Anmeldefunktionen** für das Betriebssystem ausführen für Ihre PWA anzuzeigen, navigieren Sie zu [Aktivieren](#turn-on-experimental-features) experimenteller Features, und aktivieren Sie **Desktop-PWAs,** die unter Betriebssystemanmeldung ausgeführt werden.  
+Navigieren Sie zum Anzeigen einer Vorschau der Run **On Os Login-Funktionen** für PWA zu [Aktivieren](#turn-on-experimental-features) von experimentellen Features und Aktivieren von **Desktop-PWAs,** die unter Betriebssystemanmeldung ausgeführt werden.  
 
 :::image type="complex" source="../media/desktop-pwas-run-on-os-login-flag.png" alt-text="Aktivieren des Desktop-PWAs, das beim Betriebssystemanmeldungsexperiment ausgeführt wird" lightbox="../media/desktop-pwas-run-on-os-login-flag.png":::
    Aktivieren des **Desktop-PWAs, das beim Betriebssystemanmeldungsexperiment ausgeführt** wird  
@@ -502,15 +502,15 @@ Um eine Vorschau der **Anmeldefunktionen** für das Betriebssystem ausführen f�
 
 ### <a name="turn-on-the-feature-for-the-installed-web-app"></a>Aktivieren des Features für die installierte Web-App  
 
-Um das Feature `Start app when you sign in` für eine installierte PWA zu aktivieren, 
+Um das Feature `Start app when you sign in` für eine installierte PWA 
 
 1.  Öffnen Sie Microsoft Edge.   
-1.  Navigieren Sie zu `edge://apps` .  
+1.  Navigieren Sie zu `edge://apps`.  
 1.  Zeigen Sie auf Ihre App.  
 1.  Öffnen Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste\), und wählen Sie dann App starten **aus, wenn Sie sich anmelden.**  
     
-    :::image type="complex" source="../media/turn-on-run-on-os-login-flag.png" alt-text="Verwenden des Kontextmenüs zum Aktivieren der Start-App bei der Anmeldung in Microsoft Edge" lightbox="../media/turn-on-run-on-os-login-flag.png":::
-       Verwenden des Kontextmenüs zum Aktivieren der **Start-App bei der** Anmeldung in Microsoft Edge  
+    :::image type="complex" source="../media/turn-on-run-on-os-login-flag.png" alt-text="Verwenden Sie das Kontextmenü, um die Start-App zu aktivieren, wenn Sie sich in der App Microsoft Edge" lightbox="../media/turn-on-run-on-os-login-flag.png":::
+       Verwenden Sie das Kontextmenü, um die **Start-App** zu aktivieren, wenn Sie sich in der App Microsoft Edge  
     :::image-end:::  
     
 ## <a name="shortcuts"></a>Tastenkombinationen  
@@ -522,8 +522,8 @@ Um das Feature `Start app when you sign in` für eine installierte PWA zu aktivi
     
 Wenn ein Benutzer eine Verknüpfung aufruft, navigiert der Benutzer zu der vom Element der `url` Verknüpfung angegebenen Adresse.  
   
-:::image type="complex" source="../media/jumplists-on-windows-10.png" alt-text="Beispiel für Jumplists unter Windows 10" lightbox="../media/jumplists-on-windows-10.png":::
-   Beispiel für **Jumplists** unter Windows 10  
+:::image type="complex" source="../media/jumplists-on-windows-10.png" alt-text="Ein Beispiel für Jumplists auf Windows 10" lightbox="../media/jumplists-on-windows-10.png":::
+   Ein Beispiel für **Jumplists** auf Windows 10  
 :::image-end:::  
 
 ### <a name="shortcuts-in-the-manifest-file"></a>Verknüpfungen in der Manifestdatei  
@@ -562,26 +562,26 @@ Die folgenden Eigenschaften definieren jede Verknüpfung.
 
 Die Möglichkeit, sich als Dateityphandler zu registrieren, befindet sich in der Experimentierphase.  Sie können die Dateitypen angeben, die Ihre App in einem Manifesteintrag verarbeitet.  Während der Installation registriert das Hostbetriebssystem des Benutzers Ihre App als Dateihandler für die aufgeführten Dateitypen.  Stellen Sie sicher, dass das Feature im Startcode Ihrer Apps enthalten ist und `launchQueue` die Datei verarbeitet wird.  
 
-Chrombasierte Browser testen und gestalten dieses Feature.  Weitere Informationen einschließlich Codebeispielen finden Sie unter [Let web applications be file handlers][WebDevFileHandling].  
+Chromium Browser testen und gestalten dieses Feature.  Weitere Informationen einschließlich Codebeispielen finden Sie unter [Let web applications be file handlers][WebDevFileHandling].  
 
-Navigieren Sie zum Anzeigen einer Vorschau der Dateiverarbeitung in Microsoft Edge für Windows 10 zu Aktivieren experimenteller [Features,](#turn-on-experimental-features) und aktivieren Sie **die Dateibehandlungs-API**.  
+Wenn Sie eine Vorschau der Dateiverarbeitung in Microsoft Edge für Windows 10 anzeigen möchten, navigieren Sie zu Aktivieren experimenteller [Features](#turn-on-experimental-features) und Aktivieren der **Dateibehandlungs-API**.  
     
 ## <a name="providing-feedback-on-experimental-features"></a>Bereitstellen von Feedback zu experimentellen Features  
 
-So geben Sie Feedback zu Microsoft Edge-Web-App-Experimenten.  
+So geben Sie Feedback zu Microsoft Edge Web-App-Experimenten.  
 
-*   Senden Sie Ihr Feedback mithilfe **von Einstellungen und mehr** \( `...` \) > Feedback an Microsoft **senden.**  
+*   Senden Sie Ihr Feedback **Einstellungen und mehr** \( `...` \) > Feedback an Microsoft **senden.**  
 *   Wählen Sie `Alt` + `Shift` + `I` aus.  
     
-:::image type="complex" source="../media/send-feedback-from-progressive-web-app.png" alt-text="Senden von Feedback von Ihrem PWA" lightbox="../media/send-feedback-from-progressive-web-app.png":::
-   Senden von Feedback von Ihrem PWA  
+:::image type="complex" source="../media/send-feedback-from-progressive-web-app.png" alt-text="Senden von Feedback von PWA" lightbox="../media/send-feedback-from-progressive-web-app.png":::
+   Senden von Feedback von PWA  
 :::image-end:::  
 
 <!-- links -->  
 
 [MicrosoftEdgeMain]: https://www.microsoft.com/edge "Microsoft Edge"  
 
-[MicrosoftDeveloperMicrosoftEdgeOriginTrials]: https://developer.microsoft.com/microsoft-edge/origin-trials "Origin Trials | Microsoft Edge Developer"  
+[MicrosoftDeveloperMicrosoftEdgeOriginTrials]: https://developer.microsoft.com/microsoft-edge/origin-trials "Origin Trials | Microsoft Edge Entwickler"  
 [MicrosoftDeveloperMicrosoftEdgeOriginTrialsWebAppProtocolHandlerRegistrationRegistration]: https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-protocol-handler-registration/registration "Registrieren für die Registrierung von Web App-Protokollhandlern | Microsoft Developer"  
 
 [MdnDocsWebApiNavigatorRegisterprotocolhandlerWebBasedProtocolHandlers]: https://developer.mozilla.org/docs/Web/API/Navigator/registerProtocolHandler/Web-based_protocol_handlers "Webbasierte Protokollhandler | MDN"  

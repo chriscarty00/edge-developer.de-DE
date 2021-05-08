@@ -1,5 +1,5 @@
 ---
-description: Remotedebuggern von Liveinhalten auf einem Android-Gerät von einem Windows- oder macOS-Computer aus.
+description: Remotedebuggern von Liveinhalten auf einem Android-Gerät von einem Windows oder macOS-Computer.
 title: Erste Schritte mit Remotedebugging von Android-Geräten
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -29,7 +29,7 @@ ms.locfileid: "11461213"
    limitations under the License.  -->  
 # <a name="get-started-with-remote-debugging-android-devices"></a>Erste Schritte mit Remotedebugging von Android-Geräten  
 
-Remotedebuggern von Liveinhalten auf einem Android-Gerät von Ihrem Windows- oder macOS-Computer.  Auf der folgenden Lernprogrammseite erfahren Sie, wie Sie die folgenden Aktionen ausführen.  
+Remotedebuggern von Liveinhalten auf einem Android-Gerät von Ihrem Windows oder macOS-Computer.  Auf der folgenden Lernprogrammseite erfahren Sie, wie Sie die folgenden Aktionen ausführen.  
 
 *   Richten Sie Ihr Android-Gerät für das Remotedebubugen ein, und ermitteln Sie es auf Ihrem Entwicklungscomputer.  
 *   Überprüfen und Debuggen von Liveinhalten auf Ihrem Android-Gerät auf Ihrem Entwicklungscomputer.  
@@ -42,8 +42,8 @@ Remotedebuggern von Liveinhalten auf einem Android-Gerät von Ihrem Windows- ode
 -->  
 
 > [!NOTE]
-> Das Remotedebuding der Microsoft Edge-App auf iOS-Geräten wird derzeit nicht unterstützt.  Die folgende Anleitung konzentriert sich speziell auf das Remotedebugen von Microsoft Edge auf Android-Geräten.
-> Wenn Sie über ein macOS-Gerät verfügen, befolgen Sie die [Anleitung zum Debuggen von Brightcove,][BrightcoveSupportDebuggingMobileDevices] um Microsoft Edge mithilfe von Safari remote auf einem iOS-Gerät zu debuggen.  Weitere Informationen zum Web Inspector-Tool in Safari finden Sie unter [Safari Web Development Tools][AppleDeveloperSafariTools].  
+> Remotedebuding Microsoft Edge App auf iOS-Geräten wird derzeit nicht unterstützt.  Das folgende Handbuch konzentriert sich speziell auf Remotedebug-Microsoft Edge auf Android-Geräten.
+> Wenn Sie über ein macOS-Gerät verfügen, befolgen Sie die Anleitung zum Debuggen von [Brightcove,][BrightcoveSupportDebuggingMobileDevices] um die Microsoft Edge auf einem iOS-Gerät mithilfe von Safari remote zu debuggen.  Weitere Informationen zum Web Inspector-Tool in Safari finden Sie unter [Safari Web Development Tools][AppleDeveloperSafariTools].  
 
 ## <a name="step-1-discover-your-android-device"></a>Schritt 1: Ermitteln Ihres Android-Geräts  
 
@@ -51,20 +51,20 @@ Der folgende Workflow funktioniert für die meisten Benutzer.  Weitere Hilfe fin
 
 1.  Öffnen Sie **den Bildschirm Entwickleroptionen** auf Ihrem Android.  Weitere Informationen finden Sie unter [Configure On-Device Developer Options][AndroidDeveloperStudioDevOptions].  
 1.  Wählen **Sie USB-Debugging aktivieren aus.**  
-1.  Öffnen Sie auf Ihrem Entwicklungscomputer Microsoft Edge.  
+1.  Öffnen Sie auf dem Entwicklungscomputer Microsoft Edge.  
 1.  Navigieren Sie zur `edge://inspect` Seite in Microsoft Edge.  
     
     :::image type="complex" source="../media/remote-debugging-edge-inspect-no-targets.msft.png" alt-text="Die edge://inspect in Microsoft Edge" lightbox="../media/remote-debugging-edge-inspect-no-targets.msft.png":::
        Abbildung1.  Die `edge://inspect` Seite in Microsoft Edge  
     :::image-end:::  
     
-1.  Verbinden Sie Ihr Android-Gerät über ein USB-Kabel direkt mit Ihrem Entwicklungscomputer.  Wenn Sie zum ersten Mal versuchen, eine Verbindung herzustellen, sollte eine Eingabeaufforderung zum Erkennen eines unbekannten Geräts durch DevTools angezeigt werden.  Akzeptieren Sie **die Berechtigungsaufforderung USB-Debugging** zulassen auf Ihrem Android-Gerät.  
+1.  Verbinden Ihr Android-Gerät über ein USB-Kabel direkt an Ihren Entwicklungscomputer senden.  Wenn Sie zum ersten Mal versuchen, eine Verbindung herzustellen, sollte eine Eingabeaufforderung zum Erkennen eines unbekannten Geräts durch DevTools angezeigt werden.  Akzeptieren Sie **die Berechtigungsaufforderung USB-Debugging** zulassen auf Ihrem Android-Gerät.  
     
     :::image type="complex" source="../media/remote-debugging-android-permissions-prompt.msft.png" alt-text="Die Berechtigungsaufforderung USB-Debugging zulassen auf einem Android-Gerät" lightbox="../media/remote-debugging-android-permissions-prompt.msft.png":::
        Abbildung2.  Die **Berechtigungsaufforderung USB-Debugging** zulassen auf einem Android-Gerät  
     :::image-end:::  
     
-1.  Wenn der Modellname Ihres Android-Geräts angezeigt wird, hat Microsoft Edge die Verbindung zu Ihrem Gerät erfolgreich hergestellt.  Fahren Sie mit [dem Abschnitt Schritt 2](#step-2-debug-content-on-your-android-device-from-your-development-machine) fort.  
+1.  Wenn der Modellname Ihres Android-Geräts angezeigt wird, Microsoft Edge die Verbindung zu Ihrem Gerät erfolgreich hergestellt.  Fahren Sie mit [dem Abschnitt Schritt 2](#step-2-debug-content-on-your-android-device-from-your-development-machine) fort.  
     
     <!--  
     :::image type="complex" source="../media/remote-debugging--unknown-device.msft.png" alt-text="The Remote Devices tab has successfully detected an unknown device that is pending authorization" lightbox="../media/remote-debugging--unknown-device.msft.png":::
@@ -82,8 +82,8 @@ Verwenden Sie die folgenden Tipps, um Ihnen bei der Problembehandlung der richti
 
 Verwenden Sie die folgenden Tipps, um zu überprüfen, ob Ihre Software ordnungsgemäß eingerichtet ist.  
 
-*   Wenn auf ihrem Entwicklungscomputer Windows ausgeführt wird, versuchen Sie, die USB-Treiber für Ihr Android-Gerät manuell zu installieren.  Weitere Informationen finden Sie unter [Installieren von OEM-USB-Treibern.][AndroidDeveloperToolsOemUsb]  
-*   Einige Kombinationen von Windows- und Android-Geräten \(insbesondere Samsung\) erfordern zusätzliche Einstellungen.  Weitere Informationen finden Sie unter [DevTools Devices does not detect device when plugged in][Stackoverflow21925992].  
+*   Wenn ihr Entwicklungscomputer ausgeführt Windows, versuchen Sie, die USB-Treiber für Ihr Android-Gerät manuell zu installieren.  Weitere Informationen finden Sie unter [Installieren von OEM-USB-Treibern.][AndroidDeveloperToolsOemUsb]  
+*   Einige Kombinationen von Windows und Android-Geräten \(insbesondere Samsung\) erfordern zusätzliche Einstellungen.  Weitere Informationen finden Sie unter [DevTools Devices does not detect device when plugged in][Stackoverflow21925992].  
 
 Verwenden Sie die folgenden Tipps, um Probleme zu beheben, wenn die Eingabeaufforderung **USB-Debugging** zulassen nicht auf Ihrem Android-Gerät angezeigt wird.  
 
@@ -100,8 +100,8 @@ Wenn Sie eine Lösung finden, die auf dieser Seite oder in [DevTools Devices][St
 
 ## <a name="step-2-debug-content-on-your-android-device-from-your-development-machine"></a>Schritt 2: Debuggen von Inhalten auf Ihrem Android-Gerät auf Ihrem Entwicklungscomputer  
 
-1.  Öffnen Sie Microsoft Edge auf Ihrem Android-Gerät.  
-1.  Navigieren Sie `edge://inspect` zu , der Modellname Ihres Android-Geräts wird angezeigt, gefolgt von der Seriennummer des Geräts.  Unten sollte die auf dem Gerät ausgeführte Version von Microsoft Edge mit der Versionsnummer in Klammern angezeigt werden.  Jede geöffnete Microsoft Edge-Registerkarte erhält einen eindeutigen Abschnitt.  Sie können über einen Abschnitt mit dieser Registerkarte interagieren.  <!--If there are any apps using WebView, a section for each of those apps should be displayed, too.  --><!--In [**Figure 5**](#figure-5) there are no tabs or WebViews open.  -->  
+1.  Öffnen Microsoft Edge auf Ihrem Android-Gerät.  
+1.  Navigieren Sie `edge://inspect` zu , der Modellname Ihres Android-Geräts wird angezeigt, gefolgt von der Seriennummer des Geräts.  Unten sollte die Version von Microsoft Edge auf dem Gerät ausgeführt werden, mit der Versionsnummer in Klammern angezeigt werden.  Jede geöffnete Microsoft Edge erhält einen eindeutigen Abschnitt.  Sie können über einen Abschnitt mit dieser Registerkarte interagieren.  <!--If there are any apps using WebView, a section for each of those apps should be displayed, too.  --><!--In [**Figure 5**](#figure-5) there are no tabs or WebViews open.  -->  
     
     :::image type="complex" source="../media/remote-debugging-edge-inspect-with-targets.msft.png" alt-text="Ein verbundenes Remotegerät" lightbox="../media/remote-debugging-edge-inspect-with-targets.msft.png":::
        Abbildung3.  Ein verbundenes Remotegerät  
@@ -144,7 +144,7 @@ Sie können auf folgende Weise mit dem Screencast interagieren.
 > [!NOTE]
 > Verwenden Sie die folgenden Tipps, um Ihnen beim Screencast zu helfen.  
 > 
-> *   Screencasts zeigen nur Seiteninhalte an.  Transparente Teile des Screencasts stellen Geräteschnittstellen dar, z. B. die Microsoft Edge-Adressleiste, die Android-Statusleiste oder die Android-Tastatur.  
+> *   Screencasts zeigen nur Seiteninhalte an.  Transparente Teile des Screencasts stellen Geräteschnittstellen dar, z. B. die Microsoft Edge Adressleiste, die Android-Statusleiste oder die Android-Tastatur.  
 > *   Screencasts wirken sich negativ auf die Frameraten aus.  Deaktivieren Sie das Screencasting, während Sie Bildlauf oder Animationen messen, um ein genaueres Bild der Leistung Ihrer Seite zu erhalten.  
 > *   Wenn der Bildschirm Ihres Android-Geräts gesperrt wird, wird der Inhalt des Screencasts ausgeblendet.  Entsperren Sie den Bildschirm Ihres Android-Geräts, um den Screencast automatisch fortsetzen zu können.  
 

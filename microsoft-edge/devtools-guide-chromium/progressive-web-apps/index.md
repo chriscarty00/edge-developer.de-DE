@@ -109,7 +109,7 @@ Servicemitarbeiter sind eine grundlegende Technologie in der zukünftigen Webpla
 
 Der **Bereich "Service Workers"** im **Bereich "Anwendung"** ist der wichtigste Ort in DevTools zum Überprüfen und Debuggen von Servicemitarbeitern.  
 
-:::image type="complex" source="../media/service-workers-pane.msft.png" alt-text="Der Bereich Service Workers" lightbox="../media/service-workers-pane.msft.png":::
+:::image type="complex" source="../media/service-workers-pane.msft.png" alt-text="Der Bereich "Service Workers"" lightbox="../media/service-workers-pane.msft.png":::
    Der **Bereich "Service Workers"**  
 :::image-end:::  
 
@@ -198,7 +198,7 @@ Related Guides:
 
 <!-- links -->  
 
-[DevtoolsCommandMenuIndex]: ../command-menu/index.md "Ausführen von Befehlen mit der Microsoft Edge DevTools-Befehlsmenüleiste | Microsoft Docs"  
+[DevtoolsCommandMenuIndex]: ../command-menu/index.md "Ausführen von Befehlen mit dem Microsoft Edge DevTools-Befehlsmenü | Microsoft Docs"  
 
 [ChromiumIssues796060#c17]: https://bugs.chromium.org/p/chromium/issues/detail?id=796060#c17 "Chromium Issue 796060: Cache Storage value rises on each refresh when Analytics code is in the html"  
 

@@ -3,23 +3,23 @@ description: Verteilungsoptionen beim Freigeben einer App mit Microsoft Edge Web
 title: Verteilung von Microsoft Edge WebView2-Apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/23/2020
+ms.date: 05/06/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, Webview2, Webview, wpf-Apps, Wpf, Microsoft Edge, ICoreWebView2, ICoreWebView2Host, Browsersteuerung, Edge-HTML
-ms.openlocfilehash: 14f252b0155beb6bfce0b01dc080900f2d3e57ee
-ms.sourcegitcommit: e79503c6c53ea9b7de58f8cf1532b5c82116a6eb
-ms.translationtype: HT
+ms.openlocfilehash: 97ede968e066c572bb1b22e10ed7e758e38e3ca4
+ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "11195166"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "11535699"
 ---
-# Verteilung von Apps mit WebView2  
+# <a name="distribution-of-apps-using-webview2"></a>Verteilung von Apps mit WebView2  
 
 Stellen Sie beim Verteilen Ihrer WebView2-App sicher, dass die unterstützende Webplattform, die [WebView2 Runtime][Webview2Installer], vorhanden ist, bevor die App gestartet wird.  In diesem Artikel wird beschrieben, wie Sie (der Entwickler) die WebView2 Runtime installieren und die beiden Verteilungsmodi für Ihre WebView2-App verwenden: [Evergreen](#evergreen-distribution-mode) und [Fixed Version](#fixed-version-distribution-mode).  
 
-## Evergreen Verteilungsmodus  
+## <a name="evergreen-distribution-mode"></a>Evergreen Verteilungsmodus  
 
 > [!NOTE]
 > Der Evergreen-Verteilungsmodus wird für die meisten Entwickler empfohlen.  
@@ -29,7 +29,7 @@ Der Evergreen-Verteilungsmodus stellt sicher, dass Ihre App die neuesten Funktio
 *   Die zugrunde liegende Webplattform \(WebView2 Runtime\) wird ohne zusätzlichen Aufwand automatisch aktualisiert.  
 *   Alle Apps, die den Evergreen-Verteilungsmodus verwenden, verwenden eine gemeinsam genutzte Kopie der Evergreen WebView2-Runtime, wodurch Speicherplatz gespart wird.  
     
-### Grundlegendes zur WebView2 Runtime  
+### <a name="understanding-the-webview2-runtime"></a>Grundlegendes zur WebView2 Runtime  
 
 Die WebView2-Runtime ist eine weiterverteilbare Runtime und dient als unterstützende Webplattform für WebView2-Apps.  Das Konzept ähnelt Visual C++ oder der .NET Runtime für C++/.NET-Apps.  Die Runtime enthält modifizierte Microsoft Edge \(Chromium\)-Binärdateien, die optimiert und für Apps getestet wurden.  Die Runtime wird bei der Installation nicht als vom Benutzer sichtbarer Browser angezeigt.  Beispielsweise verfügt ein Benutzer nicht über eine Browser-Desktop-Verknüpfung oder einen Startmenüeintrag.  
 
@@ -48,7 +48,7 @@ Nehmen Sie keine Abhängigkeit vom Browser an, weil:
     
 In Zukunft plant Evergreen WebView2 Runtime die Auslieferung zukünftiger Windows-Versionen.  Stellen Sie die Runtime mit Ihrer Produktions-App bereit, bis die Runtime universeller verfügbar ist.  
 
-### Bereitstellen der Evergreen WebView2 Runtime  
+### <a name="deploying-the-evergreen-webview2-runtime"></a>Bereitstellen der Evergreen WebView2 Runtime  
 
 Für alle Evergreen-Apps auf dem Gerät ist nur eine Installation der Evergreen WebView2 Runtime erforderlich.  Auf der [Download-Seite von WebView2 Runtime][Webview2Installer] stehen eine Reihe von Tools zur Verfügung.  Mit den folgenden Tools können Sie die Evergreen Runtime bereitstellen.  
 
@@ -60,7 +60,7 @@ Derzeit unterstützen sowohl der Bootstrapper als auch das Standalone-Installati
 
 Verwenden Sie die folgenden Workflows, um sicherzustellen, dass die Runtime bereits vor dem Start Ihrer App installiert ist.  Sie können Ihren Workflow je nach Szenario anpassen.  Der Beispielcode ist im [Beispiel-Repository][GitHubMicrosoftedgeWebView2samplesWebview2Deployment] verfügbar.  
 
-#### Nur Onlinebereitstellung  
+#### <a name="online-only-deployment"></a>Nur Onlinebereitstellung  
 
 Wenn Sie ein reines Online-Bereitstellungsszenario haben, bei dem davon ausgegangen wird, dass Benutzer über einen Internetzugang verfügen, führen Sie die folgenden Schritte aus.  
 
@@ -91,7 +91,7 @@ Der vorherige Workflow bietet die folgenden Vorteile.
     
 Sie können den Bootstrapper auch mit Ihrer App packen, anstatt ihn bei Bedarf programmgesteuert herunterzuladen.  
 
-#### Offlinebereitstellung  
+#### <a name="offline-deployment"></a>Offlinebereitstellung  
 
 Wenn Sie ein Offline-Bereitstellungsszenario haben, in dem die App-Bereitstellung vollständig offline funktionieren muss, führen Sie die folgenden Schritte aus.  
 
@@ -119,13 +119,13 @@ Wenn Sie ein Offline-Bereitstellungsszenario haben, in dem die App-Bereitstellun
     MicrosoftEdgeWebView2RuntimeInstaller{X64/X86/ARM64}.exe /silent /install
     ```  
     
-### Im Evergreen-Modus kompatibel bleiben  
+### <a name="stay-compatible-in-evergreen-mode"></a>Im Evergreen-Modus kompatibel bleiben  
 
 Das Web entwickelt sich ständig weiter.  Die Evergreen WebView2 Runtime wird auf dem neuesten Stand gehalten, um Ihnen die neuesten Funktionen und Sicherheitskorrekturen bereitzustellen.  Um sicherzustellen, dass Ihre App mit dem Web kompatibel bleibt, sollten Sie eine Testinfrastruktur einrichten.  
 
-Nicht stabile Microsoft Edge-Kanäle \(Beta/Dev/Canary\) bieten einen kleinen Einblick in die nächsten Schritte in WebView2 Runtime.  Genau wie beim Entwickeln von Websites für Microsoft Edge sollten Sie Ihre WebView2-App regelmäßig testen.  Testen Sie Ihre WebView2-App anhand eines der nicht stabilen Kanäle und aktualisieren Sie Ihre App oder [melden Sie Probleme][GithubMicrosoftedgeWebviewfeedback], wenn Probleme auftreten. Normalerweise sind Dev und Beta die empfohlenen Kanäle.  Navigieren Sie zur [Übersicht über die Microsoft Edge-Kanäle][DeployEdgeMicrosoftEdgeChannels], um zu entscheiden, welcher Kanal richtig ist.  Sie können den [nicht stabilen Microsoft Edge-Kanal][DownloadNonstableEdge] in Ihre Testumgebung herunterladen und `regkey` oder Umgebungsvariablen verwenden, um die Kanalpräferenz für Ihre Test-App anzugeben.  Weitere Informationen finden Sie unter [CreateCoreWebView2EnvironmentWithOptions][ReferenceWin32Webview2IdlCreatecorewebview2environmentwithoptions].  Sie können [WebDriver][HowtoWebdriver] auch verwenden, um WebView2-Tests zu automatisieren.
+Nicht stabile Microsoft Edge-Kanäle \(Beta/Dev/Canary\) bieten einen kleinen Einblick in die nächsten Schritte in WebView2 Runtime.  Genau wie beim Entwickeln von Websites für Microsoft Edge sollten Sie Ihre WebView2-App regelmäßig testen.  Testen Sie Ihre WebView2-App anhand eines der nicht stabilen Kanäle und aktualisieren Sie Ihre App oder [melden Sie Probleme][GithubMicrosoftedgeWebviewfeedback], wenn Probleme auftreten. Normalerweise sind Dev und Beta die empfohlenen Kanäle.  Navigieren Sie zur [Übersicht über die Microsoft Edge-Kanäle][DeployEdgeMicrosoftEdgeChannels], um zu entscheiden, welcher Kanal richtig ist.  Sie können den [nicht stabilen Microsoft Edge-Kanal][DownloadNonstableEdge] in Ihre Testumgebung herunterladen und `regkey` oder Umgebungsvariablen verwenden, um die Kanalpräferenz für Ihre Test-App anzugeben.  Weitere Informationen finden Sie unter [CreateCoreWebView2EnvironmentWithOptions][ReferenceWin32Webview2IdlCreatecorewebview2environmentwithoptions].  Sie können [WebDriver][HowToWebdriver] auch verwenden, um WebView2-Tests zu automatisieren.
 
-## Verteilungsmodus "Fixierte Version"   
+## <a name="fixed-version-distribution-mode"></a>Verteilungsmodus "Fixierte Version"   
 
 In eingeschränkten Umgebungen mit strengen Kompatibilitätsanforderungen sollten Sie den Verteilungsmodus "Fixierte Version" verwenden.  Wählen Sie eine bestimmte Version von WebView2 Runtime aus und packen Sie sie im Verteilungsmodus "Fixierte Version".  Sie können den Zeitpunkt der Runtime-Aktualisierungen für Ihre App festlegen.  Der Verteilungsmodus für Fixierte Versionen erhält keine automatischen Updates. Planen Sie, Ihre App und die Runtime zu aktualisieren.  
 
@@ -148,7 +148,7 @@ Führen Sie die folgenden Aktionen aus, um den Modus "Fixierte Version" zu verwe
         *   Verwenden `EnsureCoreWebView2Async` Sie \([WPF][ReferenceWpfMicrosoftWebWebview2WpfWebview2Ensurecorewebview2async] / [WinForms][ReferenceWinformsMicrosoftWebWebview2WinformsWebview2Ensurecorewebview2async]\), um die Umgebung anzugeben.  Verwenden Sie `browserExecutableFolder` den Parameter in [CoreWebView2Environment.CreateAsync,][ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentCreateasync] um den Pfad zu den Binärdateien für die Fixierte Version anzugeben.  
 1.  Packen und versenden Sie die Binärdateien der Fixierten Version mit Ihrer App.  Aktualisieren Sie die Binärdateien entsprechend.  
     
-### Bekannte Probleme für die Fixierte Version  
+### <a name="known-issues-for-fixed-version"></a>Bekannte Probleme für die Fixierte Version  
 
 Im Vergleich zur Evergreen Runtime verfügt die Fixierte Version über keinen Installationsprozess, sodass [Microsoft PlayReady][MicrosoftPlayReady] nicht ohne Änderungen funktioniert.  Sie können das Problem beheben, indem Sie die folgenden Aktionen ausführen.  
 
@@ -174,7 +174,7 @@ Im Vergleich zur Evergreen Runtime verfügt die Fixierte Version über keinen In
 <!-- links -->  
 
 [ConceptsVersioning]: ./versioning.md "Grundlegendes zu Browserversionen und WebView2 | Microsoft-Dokumentation"  
-[HowtoWebdriver]: ../howto/webdriver.md "Automatisieren und Testen von WebView2 mit Microsoft Edge Driver | Microsoft-Dokumentation"  
+[HowToWebdriver]: ../how-to/webdriver.md "Automatisieren und Testen von WebView2 mit Microsoft Edge Driver | Microsoft-Dokumentation"  
 
 [ReferenceWin32Webview2IdlCreatecorewebview2environmentwithoptions]: /microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions "CreateCoreWebView2EnvironmentWithOptions – Globals | Microsoft-Dokumentation"  
 [ReferenceWin32Webview2IdlGetavailablecorewebview2browserversionstring]: /microsoft-edge/webview2/reference/win32/webview2-idl#getavailablecorewebview2browserversionstring "GetAvailableCoreWebView2BrowserVersionString – Globale | Microsoft-Dokumentation"  

@@ -142,7 +142,7 @@ Sie können aus verschiedenen Voreinstellungen auswählen, z. B. Slow 3G oder Fa
 
 DevTools zeigt ein Warnsymbol neben dem **Netzwerktool** an, um Sie daran zu erinnern, dass die Drosselung aktiviert ist.  
 
-#### <a name="emulate-slow-network-connections-from-the-network-conditions-drawer"></a>Emulieren langsamer Netzwerkverbindungen aus der Schublade "Netzwerkbedingungen"  
+#### <a name="emulate-slow-network-connections-from-the-network-conditions-drawer&quot;></a>Emulieren langsamer Netzwerkverbindungen aus der Schublade &quot;Netzwerkbedingungen"  
 
 Wenn Sie die Netzwerkverbindung drosseln möchten, während Sie in anderen DevTools-Panels arbeiten, verwenden Sie die Schublade Netzwerkbedingungen.  
 
@@ -289,7 +289,7 @@ Um Anforderungen nach Anforderungstyp zu filtern, wählen Sie eine der folgenden
 Wenn die Schaltflächen nicht angezeigt werden, **wird** der Filterbereich möglicherweise ausgeblendet.  
 Weitere Informationen finden Sie unter [Ausblenden des Filterbereichs.](#hide-the-filters-pane)  
 
-Um mehrere Filter gleichzeitig zu aktivieren, halten Sie `Control` \(Windows, Linux\) oder `Command` \(macOS\) fest, und wählen Sie dann aus.  
+Um mehrere Filter gleichzeitig zu aktivieren, halten Sie `Control` \(Windows, Linux\) oder \(macOS\) fest, und wählen `Command` Sie dann aus.  
 
 :::image type="complex" source="../media/network-network-type-filters.msft.png" alt-text="Verwenden der Typfilter zum Anzeigen von JS-, CSS- und Dokumentressourcen" lightbox="../media/network-network-type-filters.msft.png":::
    Verwenden der Typfilter zum Anzeigen von JS-, CSS- und Dokumentressourcen  
@@ -473,7 +473,7 @@ Anforderungen, die weiter links liegen, wurden also früher gestartet als die An
 
 Um die verschiedenen Methoden zum Sortieren des Wasserfalls zu überprüfen, navigieren Sie zu [Sortieren nach Aktivitätsphase](#sort-by-activity-phase).  
 
-:::image type="complex" source="../media/network-network-requests-waterfall.msft.png" alt-text="Die Spalte Wasserfall im Bereich Anforderungen" lightbox="../media/network-network-requests-waterfall.msft.png":::
+:::image type="complex" source="../media/network-network-requests-waterfall.msft.png" alt-text="Die Spalte "Wasserfall" im Bereich Anforderungen" lightbox="../media/network-network-requests-waterfall.msft.png":::
    Die Spalte "Wasserfall" im **Bereich Anforderungen**  
 :::image-end:::  
 
@@ -584,7 +584,7 @@ Verwenden Sie die folgenden Schritte, um die im HTTP-Header einer Anforderung ge
 <!--[ManageDataCookiesFields]: manage-data/cookies#fields  -->  
 <!--TODO: add link when section is available -->  
 
-:::image type="complex" source="../media/network-network-resources-cookies.msft.png" alt-text="Der Bereich Cookies" lightbox="../media/network-network-resources-cookies.msft.png":::
+:::image type="complex" source="../media/network-network-resources-cookies.msft.png" alt-text="Der Bereich "Cookies"" lightbox="../media/network-network-resources-cookies.msft.png":::
    Der Bereich "Cookies"  
 :::image-end:::  
 

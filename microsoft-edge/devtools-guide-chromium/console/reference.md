@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
 ms.openlocfilehash: adc3f6c33d6e1a2f6c7db8336c5ab803e76c3307
 ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
 ms.translationtype: MT
@@ -29,7 +29,7 @@ ms.locfileid: "11483269"
    limitations under the License.  -->
 # <a name="console-reference"></a>Konsolenreferenz  
 
-Dieser Artikel ist eine Referenz zu Features im Zusammenhang mit der Microsoft Edge DevTools-Konsole.  Es wird davon ausgegangen, dass Sie bereits mit der Verwendung der Konsole vertraut sind, um protokollierte Nachrichten anzeigen und JavaScript ausführen zu können.  Wenn nicht, navigieren Sie zu [Erste Schritte mit der Ausführung von JavaScript in][DevtoolsConsoleConsoleJavascript] der Konsole und Erste Schritte mit der [Protokollierung von Nachrichten in der Konsole][DevtoolsConsoleConsoleLog].  
+Dieser Artikel ist eine Referenz zu Features im Zusammenhang mit der Microsoft Edge DevTools Console.  Es wird davon ausgegangen, dass Sie bereits mit der Verwendung der Konsole vertraut sind, um protokollierte Nachrichten anzeigen und JavaScript ausführen zu können.  Wenn nicht, navigieren Sie zu [Erste Schritte mit der Ausführung von JavaScript in][DevtoolsConsoleConsoleJavascript] der Konsole und Erste Schritte mit der [Protokollierung von Nachrichten in der Konsole][DevtoolsConsoleConsoleLog].  
 
 Wenn Sie nach der API-Referenz für Funktionen wie `console.log()` suchen, navigieren Sie zu [Konsolen-API-Referenz][DevToolsConsoleApi].  Für den Verweis auf Funktionen wie `monitorEvents()` navigieren Sie zu Console [Utilities API Reference][DevToolsConsoleUtilities].  
 
@@ -39,7 +39,7 @@ Sie können die **Konsole** als Tool [im](#open-the-console-tool) oberen Bereich
 
 ### <a name="open-the-console-tool"></a>Öffnen des Konsolentools  
 
-Wählen `Control` + `Shift` + `J` Sie \(Windows, Linux\) oder `Command` + `Option` + `J` \(macOS\) aus.  
+Wählen `Control` + `Shift` + `J` Sie \(Windows, Linux\) oder `Command` + `Option` + `J` \(macOS\).  
 
 :::image type="complex" source="../media/console-hello-console.msft.png" alt-text="Das Konsolentool" lightbox="../media/console-hello-console.msft.png":::
    Das **Konsolentool**  
@@ -71,12 +71,12 @@ Um das **Konsolentool** im Befehlsmenü zu [öffnen,][DevtoolsCommandMenuIndex]g
    Ausführen des Befehls zum Anzeigen des **Konsolentools** in der **Schublade**  
 :::image-end:::  
 
-### <a name="open-console-settings"></a>Öffnen von Konsoleneinstellungen  
+### <a name="open-console-settings"></a>Öffnen sie konsolen Einstellungen  
 
-Wählen Sie **die Schaltfläche Konsoleneinstellungen** \( ![ Symbol für ](../media/settings-button-icon.msft.png) Konsoleneinstellungen \) aus.  
+Wählen Sie **die Schaltfläche Konsole Einstellungen** \( Konsole Einstellungen Symbol ![ ](../media/settings-button-icon.msft.png) \) aus.  
 
-:::image type="complex" source="../media/console-settings-group-similar-empty.msft.png" alt-text="Konsoleneinstellungen" lightbox="../media/console-settings-group-similar-empty.msft.png":::
-   **Konsoleneinstellungen**  
+:::image type="complex" source="../media/console-settings-group-similar-empty.msft.png" alt-text="Konsolen Einstellungen" lightbox="../media/console-settings-group-similar-empty.msft.png":::
+   **Konsolen Einstellungen**  
 :::image-end:::  
 
 In den folgenden Links werden die einzelnen Einstellungen erläutert.  
@@ -104,11 +104,11 @@ Dieser Abschnitt enthält Features, die die Art und Weise ändern, wie Nachricht
 
 ### <a name="turn-off-message-grouping"></a>Deaktivieren der Nachrichtengruppe  
 
-Wenn Sie das Standardmäßige Nachrichtengruppenverhalten der Konsole deaktivieren **möchten,** öffnen Sie [Konsoleneinstellungen,](#open-console-settings) und aktivieren Sie das Kontrollkästchen neben Ähnlich **gruppieren.**  Navigieren Sie beispielsweise zu [Log XHR und Fetch requests](#log-xhr-and-fetch-requests).  
+Um das Standardmäßige Nachrichtengruppenverhalten der Konsole zu **deaktivieren,** öffnen Sie [Console Einstellungen,](#open-console-settings) und aktivieren Sie das Kontrollkästchen neben **Ähnlich gruppieren.**  Navigieren Sie beispielsweise zu [Log XHR und Fetch requests](#log-xhr-and-fetch-requests).  
 
 ### <a name="log-xhr-and-fetch-requests"></a>Protokollierung von XHR- und Fetch-Anforderungen  
 
-Öffnen Sie konsoleneinstellungen, und wählen Sie das Kontrollkästchen neben `XMLHttpRequest` `Fetch` Log **XMLHttpRequests**aus, **** [](#open-console-settings) um alle Und Anforderungen an die Konsole zu protokollieren.  
+Wenn Sie alle Und Anforderungen an die Konsole protokollieren möchten, öffnen Sie console Einstellungen, und aktivieren Sie das Kontrollkästchen neben `XMLHttpRequest` `Fetch` Log **XMLHttpRequests**. **** [](#open-console-settings)  
 
 :::image type="complex" source="../media/console-xhr-fetch.msft.png" alt-text="Protokollieren von XMLHttpRequest- und Fetch-Anforderungen" lightbox="../media/console-xhr-fetch.msft.png":::
    Protokoll `XMLHttpRequest` und `Fetch` Anforderungen  
@@ -128,11 +128,11 @@ In der oberen Meldung in der vorherigen Abbildung wird das Standardgruppenverhal
 
 ### <a name="persist-messages-across-page-loads"></a>Beibehalten von Nachrichten über Seitenlasten hinweg  
 
-Wenn Sie eine neue Webseite laden, wird die Konsole mit der Standardaktion **deaktiviert.**  Um Nachrichten über Seitenlasten hinweg zu speichern, [öffnen Sie Konsoleneinstellungen,](#open-console-settings) und aktivieren Sie das Kontrollkästchen neben **Protokoll beibehalten**.  
+Wenn Sie eine neue Webseite laden, wird die Konsole mit der Standardaktion **deaktiviert.**  Wenn Sie Nachrichten über Seitenlasten hinweg beibehalten möchten, öffnen Sie [console Einstellungen,](#open-console-settings) und aktivieren Sie das Kontrollkästchen neben **Protokoll beibehalten.**  
 
 ### <a name="hide-network-messages"></a>Ausblenden von Netzwerknachrichten  
 
-Die Standardaktion für Microsoft Edge besteht im Protokollieren von Netzwerknachrichten an der **Konsole.**  In der folgenden Abbildung stellt die ausgewählte Nachricht den HTTP-Statuscode von `429` dar.  
+Die Standardaktion für Microsoft Edge ist das Protokollieren von Netzwerknachrichten an die **Konsole**.  In der folgenden Abbildung stellt die ausgewählte Nachricht den HTTP-Statuscode von `429` dar.  
 
 :::image type="complex" source="../media/console-show-network.msft.png" alt-text="Eine 429-Nachricht in der Konsole" lightbox="../media/console-show-network.msft.png":::
    Eine `429` Nachricht in der **Konsole**  
@@ -140,7 +140,7 @@ Die Standardaktion für Microsoft Edge besteht im Protokollieren von Netzwerknac
 
 Führen Sie die folgenden Aktionen aus, um Netzwerknachrichten auszublenden.  
 
-1.  [Öffnen Sie Konsoleneinstellungen](#open-console-settings).  
+1.  [Öffnen Sie Console Einstellungen](#open-console-settings).  
 1.  Aktivieren Sie das Kontrollkästchen neben **Netzwerk ausblenden**.  
     
 ## <a name="filter-messages"></a>Filtern von Nachrichten  
@@ -204,7 +204,7 @@ Führen Sie zum Anzeigen von Nachrichten von einer einzelnen URL die folgenden A
 
 ### <a name="filter-out-messages-from-different-contexts"></a>Filtern von Nachrichten aus unterschiedlichen Kontexten  
 
-Angenommen, Sie haben eine Ankündigung \(ad\) auf Ihrer Webseite.  Die Anzeige ist in eine eingebettet `<iframe>` und generiert viele Nachrichten in Ihrer **Konsole.**  Da die Anzeige in einem anderen [JavaScript-Kontext](#choose-javascript-context)ausgeführt wird, besteht eine Möglichkeit zum Ausblenden der Nachrichten in dem Öffnen von Konsoleneinstellungen und dem Aktivieren des Kontrollkästchens neben Nur ausgewählter **Kontext**. [](#open-console-settings)  
+Angenommen, Sie haben eine Ankündigung \(ad\) auf Ihrer Webseite.  Die Anzeige ist in eine eingebettet `<iframe>` und generiert viele Nachrichten in Ihrer **Konsole.**  Da die Anzeige in einem anderen [JavaScript-Kontext](#choose-javascript-context)ausgeführt wird, besteht eine Möglichkeit zum Ausblenden der Nachrichten im Öffnen von [Console Einstellungen](#open-console-settings) und aktivieren Sie das Kontrollkästchen neben Nur ausgewählter **Kontext**.  
 
 ### <a name="filter-out-messages-that-dont-match-a-regular-expression-pattern"></a>Filtern von Nachrichten, die keinem Muster für reguläre Ausdrücke entsprechen  
 
@@ -230,12 +230,12 @@ Wenn Sie denselben JavaScript-Ausdruck wiederholt **** in der Konsole eingeben, 
 
 **Bei der** Begierdeauswertung wird eine Vorschau des Rückgabewerts angezeigt, während Sie In-JavaScript-Ausdrücke in der **Konsole eingeben.**  Führen Sie die folgenden Aktionen aus, um die Vorschau des Rückgabewerts zu deaktivieren.  
 
-1.  [Öffnen Sie Konsoleneinstellungen](#open-console-settings).  
+1.  [Öffnen Sie Console Einstellungen](#open-console-settings).  
 1.  Entfernen Sie das Kontrollkästchen neben **Bewertung mit Begierde**.  
     
 ### <a name="turn-off-autocomplete-from-history"></a>Deaktivieren des automatischen Kompletierens aus dem Verlauf  
 
-Beim Eingeben eines Ausdrucks zeigt das Popupfenster für die automatische Vervollständigung für die **Konsole** Ausdrücke an, die Sie zuvor durchgeführt haben.  Die Ausdrücke werden mit dem Zeichen `>` vorkonfiguriert.  Um die Anzeige von Ausdrücken [](#open-console-settings) aus Ihrem Verlauf zu beenden, öffnen Sie Konsoleneinstellungen, und entfernen Sie das Kontrollkästchen neben **AutoComplete From History.**  
+Beim Eingeben eines Ausdrucks zeigt das Popupfenster für die automatische Vervollständigung für die **Konsole** Ausdrücke an, die Sie zuvor durchgeführt haben.  Die Ausdrücke werden mit dem Zeichen `>` vorkonfiguriert.  Um die Anzeige von Ausdrücken aus Dem Verlauf zu beenden, öffnen Sie console [Einstellungen,](#open-console-settings) und entfernen Sie das Kontrollkästchen neben **autocomplete From History.**  
 
 > [!NOTE]
 > In der folgenden Abbildung `document.querySelector('a')` und `document.querySelector('img')` sind Ausdrücke, die zuvor ausgewertet wurden.  
@@ -282,7 +282,7 @@ Führen Sie **einen**der folgenden Workflows aus, um die Konsole zu löschen.
 [DevtoolsConsoleLiveExpressions]: ./live-expressions.md "Überwachen von Änderungen in JavaScript mithilfe von Live Expressions | Microsoft Docs"  
 [DevtoolsConsoleUtilities]: ./utilities.md "Console Utilities API reference | Microsoft Docs"  
 
-[DevtoolsCommandMenuIndex]: ../command-menu/index.md "Ausführen von Befehlen mit dem Microsoft Edge DevTools Command-Menü | Microsoft Docs"  
+[DevtoolsCommandMenuIndex]: ../command-menu/index.md "Ausführen von Befehlen mit Microsoft Edge DevTools Command | Microsoft Docs"  
 
 [MdnDocsGlossaryBrowsingContext]: https://developer.mozilla.org/docs/Glossary/Browsing_context "Browserkontext | MDN"  
 

@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
 ms.openlocfilehash: 3f2f8c01a9bc9c4f40158f0959ba5b60e03bfb80
 ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
 ms.translationtype: MT
@@ -43,7 +43,7 @@ Die schnellste Möglichkeit, die Konsole direkt zu **öffnen,** besteht in der A
 
 ## <a name="error-reports-and-console"></a>Fehlerberichte und Konsole  
 
-**Konsole** ist der Standardspeicherort, an dem JavaScript- und Konnektivitätsfehler gemeldet werden.  Wenn Fehler auftreten, wird neben **** dem Symbol Einstellungen in DevTools eine Schaltfläche angezeigt, die die Anzahl der Fehler und Warnungen anzeigt.  Wählen Sie es aus, um die **Konsole zu öffnen** und das Problem zu zeigen.  Weitere Informationen finden Sie unter [Debuggen von Fehlern, die in der Konsole gemeldet wurden.][DevtoolsConsoleConsoleDebugJavascript]  
+**Konsole** ist der Standardspeicherort, an dem JavaScript- und Konnektivitätsfehler gemeldet werden.  Wenn Fehler auftreten, wird neben dem Symbol **Einstellungen** in DevTools eine Schaltfläche angezeigt, die die Anzahl der Fehler und Warnungen anzeigt.  Wählen Sie es aus, um die **Konsole zu öffnen** und das Problem zu zeigen.  Weitere Informationen finden Sie unter [Debuggen von Fehlern, die in der Konsole gemeldet wurden.][DevtoolsConsoleConsoleDebugJavascript]  
 
 :::image type="complex" source="../media/console-debug-displays-error.msft.png" alt-text="DevTools enthält detaillierte Informationen zum Fehler in der Konsole" lightbox="../media/console-debug-displays-error.msft.png":::
    DevTools enthält detaillierte Informationen zum Fehler in der **Konsole**  
@@ -61,7 +61,7 @@ Wenn Sie devTools auf einer Webseite öffnen, wird wahrscheinlich eine Informati
 
 Der beliebteste Verwendungsfall für die **Konsole** ist die Protokollierung von Informationen aus Ihren Skripts mithilfe der `console.log()` -Methode oder anderer ähnlicher Methoden.  Führen Sie die folgenden Aktionen aus, um dies zu versuchen.  
 
-1.  Wählen Sie zum **Öffnen der** `Control` + `Shift` + `J` Konsole \(Windows, Linux\) oder `Command` + `Option` + `J` \(macOS\) aus.  
+1.  Wählen **Sie**zum Öffnen der Konsole `Control` + `Shift` + `J` \(Windows, Linux\) oder `Command` + `Option` + `J` \(macOS\) aus.  
 1.  Navigieren Sie [zu Konsolennachrichtenbeispiele: Protokoll, Info, Fehler][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingDemoHtml]und Warn , oder kopieren und führen Sie den folgenden Codeausschnitt in der Konsole **aus.**  
     
     ```javascript

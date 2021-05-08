@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
 ms.openlocfilehash: c329dfba980b882b6e538447e52902e4d0cc985b
 ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
 ms.translationtype: MT
@@ -29,68 +29,68 @@ ms.locfileid: "11514417"
    limitations under the License.  -->  
 # <a name="whats-new-in-devtools-microsoft-edge-83"></a>Neues in DevTools (Microsoft Edge 83)  
 
-Nach dem aktualisierten Chromium-Zeitplan passen wir unseren Zeitplan für anstehende Microsoft Edge-Versionen an und brechen die Microsoft Edge 82-Version ab. Weitere Informationen finden Sie [in unserem][WindowsBlogStableRelease] Blogbeitrag.  
+Nach dem aktualisierten Chromium werden wir unseren Zeitplan für bevorstehende Microsoft Edge Veröffentlichungen anpassen und die version 82 Microsoft Edge abbrechen. Weitere Informationen finden Sie [in unserem][WindowsBlogStableRelease] Blogbeitrag.  
 
-Hier sind die neuen Features, die in den DevTools in Microsoft Edge 83 verfügbar sind.  
+Hier sind die neuen Features, die in devTools in Microsoft Edge 83 verfügbar sind.  
 
 ## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>Ankündigungen des Microsoft Edge DevTools-Teams  
 
-Die folgenden Abschnitte sind eine Liste der Ankündigungen, die Sie möglicherweise vom Microsoft Edge DevTools-Team verpasst haben.  Sehen Sie sich die Ankündigungen an, um neue Features in devTools, Microsoft Visual Studio Codeerweiterungen zu testen und vieles mehr.  Laden Sie die Microsoft Edge-Vorschaukanäle herunter, und folgen [][MicrosoftEdgePreviewChannels] Sie uns [auf Twitter,][EdgeDevToolsTwitterAccount]um über die neuesten und besten Features in Ihren Entwicklertools auf dem neuesten Stand zu bleiben.  
+Die folgenden Abschnitte sind eine Liste der Ankündigungen, die Sie möglicherweise vom DevTools-Microsoft Edge verpasst haben.  Sehen Sie sich die Ankündigungen an, um neue Features in den DevTools zu testen, Microsoft Visual Studio Codeerweiterungen und vieles mehr zu testen.  Laden Sie die Microsoft Edge-Vorschaukanäle herunter und folgen Sie uns [auf Twitter,][EdgeDevToolsTwitterAccount] [um auf][MicrosoftEdgePreviewChannels] dem neuesten stand zu bleiben.  
 
-### <a name="remotely-debug-microsoft-edge-on-windows-10-devices"></a>Remotedebuggern von Microsoft Edge auf Windows 10-Geräten  
+### <a name="remotely-debug-microsoft-edge-on-windows-10-devices"></a>Remotedebuggern Microsoft Edge auf Windows 10 Geräten  
 
-Die [Remotetools für Microsoft Edge \(Beta\)-App][RemoteTools] ist jetzt im [Microsoft Store verfügbar.][MicrosoftStore]  Mit dieser App, die das [Windows-Geräteportal][WindowsUwpDebugTestPerfDevicePortal]erweitert, können Sie von der Instanz von Microsoft Edge, die auf Ihrem Entwicklungscomputer ausgeführt wird, eine Verbindung mit einem Windows 10-Remotegerät herstellen, eine Liste der Ziele \(alle Registerkarten in Microsoft Edge und [PWAs,][ProgressiveWebAppsChromiumIndex] die auf dem Windows 10-Gerät geöffnet sind) anzeigen und die DevTools auf Ihrem Entwicklungscomputer für ein Ziel verwenden, das auf dem Remotegerät windows 10 ausgeführt wird.  
+Die [Remotetools für Microsoft Edge \(Beta\)-App][RemoteTools] ist jetzt in der [Microsoft Store.][MicrosoftStore]  Mit dieser App, die das [Windows-Geräteportal][WindowsUwpDebugTestPerfDevicePortal]erweitert, können Sie eine Verbindung von der Instanz von Microsoft Edge herstellen, die auf Ihrem Entwicklungscomputer ausgeführt wird, zu einem Remote-Windows 10-Gerät, eine Liste der Ziele \(alle Registerkarten in Microsoft Edge und [PWAs,][ProgressiveWebAppsChromiumIndex] die auf dem Windows 10-Gerät geöffnet sind\) anzeigen und die DevTools auf Ihrem Entwicklungscomputer für ein Ziel verwenden, das auf dem Remote-Windows 10-Gerät ausgeführt wird.  
 
-:::image type="complex" source="../../media/2020/03/remote-tools.msft.png" alt-text="Die im Microsoft Store verfügbare Remotetools für Microsoft Edge (Beta)-App" lightbox="../../media/2020/03/remote-tools.msft.png":::
-   Die im Microsoft Store verfügbare Remotetools für [Microsoft Edge (Beta)-App][RemoteTools] [][MicrosoftStore]  
+:::image type="complex" source="../../media/2020/03/remote-tools.msft.png" alt-text="Die in der App Microsoft Edge (Beta) verfügbare Remotetools für Microsoft Store" lightbox="../../media/2020/03/remote-tools.msft.png":::
+   Die in der App [Microsoft Edge (Beta)][RemoteTools] verfügbare Remotetools [für Microsoft Store][MicrosoftStore]  
 :::image-end:::  
 
-[Lesen Sie unsere Anleitung zum Einrichten Ihres Windows 10-Geräts und Ihres Entwicklungscomputers für das Remotedebugen.][DevtoolsRemoteDebuggingWindows]  Teilen Sie uns Ihre Remotedebubuingerfahrung [mit,][PostTweetEdgeDevTools] indem Sie das Symbol Feedback senden [twittern](#getting-in-touch-with-microsoft-edge-devtools-team) oder aufrufen.  
+Lesen Sie unsere Anleitung zum Einrichten Ihres Windows 10 [und Ihres Entwicklungscomputers für das Remotedebubugen.][DevtoolsRemoteDebuggingWindows]  Teilen Sie uns Ihre Remotedebubuingerfahrung [mit,][PostTweetEdgeDevTools] indem Sie das Symbol Feedback senden [twittern](#getting-in-touch-with-microsoft-edge-devtools-team) oder aufrufen.  
 
 ### <a name="new-ways-to-access-settings"></a>Neue Möglichkeiten für den Zugriff auf Einstellungen  
 
-Es gibt eine Menge von Einstellungen für die DevTools, die Sie anpassen können, damit die DevTools so aussehen, fühlen und funktionieren, wie Sie es benötigen. In Microsoft Edge 83 ist der Zugriff [auf Einstellungen][DevtoolsCustomizeIndexSettings] in devTools jetzt viel einfacher.  Öffnen Sie Einstellungen mit dem Zahnradsymbol neben Konsolenwarnungen und dem Hauptmenü.  
+Es gibt eine Menge von Einstellungen für die DevTools, die Sie anpassen können, damit die DevTools so aussehen, fühlen und funktionieren, wie Sie es benötigen. In Microsoft Edge 83 ist der Zugriff [auf Einstellungen][DevtoolsCustomizeIndexSettings] devTools jetzt viel einfacher.  Öffnen Einstellungen mit dem Zahnradsymbol neben Konsolenwarnungen und dem Hauptmenü.  
 
-:::image type="complex" source="../../media/2020/03/settings.msft.png" alt-text="Das Zahnradsymbol öffnet Einstellungen in den DevTools" lightbox="../../media/2020/03/settings.msft.png":::
-   Das Zahnradsymbol öffnet **Einstellungen** in den DevTools  
+:::image type="complex" source="../../media/2020/03/settings.msft.png" alt-text="Das Zahnradsymbol wird Einstellungen devTools geöffnet." lightbox="../../media/2020/03/settings.msft.png":::
+   Das Zahnradsymbol wird **Einstellungen** devTools geöffnet.  
 :::image-end:::  
 
-Sie können Einstellungen auch [im][DevtoolsCustomizeIndexSettings] Hauptmenü unter **Weitere** Tools **öffnen.**
+Sie können auch die Einstellungen [im][DevtoolsCustomizeIndexSettings] **Hauptmenü** unter Weitere **Tools öffnen.**
 
 :::image type="complex" source="../../media/2020/03/settings2.msft.png" alt-text="Hauptmenü > Weitere Tools > Einstellungen" lightbox="../../media/2020/03/settings2.msft.png":::
    **Hauptmenü**  >  **Weitere Tools**  >  **Einstellungen**  
 :::image-end:::  
 
-[Chromium-Problem #1050855][CR1050855]
+Chromium Problem [#1050855][CR1050855]
 
 ### <a name="new-and-improved-infobars"></a>Neue und verbesserte Infoleisten
 
-Informationsbenachrichtigungsleisten \(infobars\) in DevTools haben jetzt ein verbessertes Aussehen und mehr Funktionalität. In Microsoft Edge 83 sind Infoleisten einfacher zu lesen und schaltflächen zur Verfügung zu stellen, damit Sie die entsprechende Aktion sofort ergreifen können.  
+Informationsbenachrichtigungsleisten \(infobars\) in DevTools haben jetzt ein verbessertes Aussehen und mehr Funktionalität. In Microsoft Edge 83 sind Infoleisten einfacher zu lesen und Schaltflächen zur Verfügung zu stellen, damit Sie die entsprechende Aktion sofort ergreifen können.  
 
 :::image type="complex" source="../../media/2020/03/infobar.msft.png" alt-text="Infoleiste zum drucken einer verminten Datei in Microsoft Edge 83" lightbox="../../media/2020/03/infobar.msft.png":::
    Infoleiste zum drucken einer verminten Datei in Microsoft Edge Version 83  
 :::image-end:::  
 
-[Chromium-#1056348][CR1056348]
+Chromium Problem [#1056348][CR1056348]
 
 ### <a name="navigate-the-color-picker-with-your-keyboard"></a>Navigieren in der Farbauswahl mit der Tastatur  
 
-Die [Farbauswahl ist][DevtoolsCssReferenceColorPicker] eine GUI im [Bereich Elemente][DevtoolsCssIndex] zum Ändern `color` und `background-color` Deklarationen.  In früheren Versionen von Microsoft Edge konnten **** Sie nicht mit der Tastatur im Abschnitt Schattierungen der [Farbauswahl][DevtoolsCssReferenceColorPicker] navigieren.  
+Die [Farbauswahl ist][DevtoolsCssReferenceColorPicker] eine GUI im [Bereich Elemente][DevtoolsCssIndex] zum Ändern `color` und `background-color` Deklarationen.  In früheren Versionen von Microsoft Edge konnten Sie nicht **** mit der [][DevtoolsCssReferenceColorPicker] Tastatur im Abschnitt Schattierungen der Farbauswahl navigieren.  
 
 :::image type="complex" source="../../media/2020/03/color-picker.msft.png" alt-text="Sie können nun ihre Tastatur verwenden, um die Auswahl im Abschnitt Schattierungen der Farbauswahl zu verschieben." lightbox="../../media/2020/03/color-picker.msft.png":::
    Sie können nun ihre Tastatur verwenden, um die Auswahl im Abschnitt **Schattierungen** der [Farbauswahl zu verschieben.][DevtoolsCssReferenceColorPicker]  
 :::image-end:::  
 
-In Microsoft Edge 83 können Sie nun die Tastatur verwenden, **** um die Auswahl im Abschnitt Schattierungen der Farbauswahl zu verschieben.  
+In Microsoft Edge 83 können Sie nun die Tastatur verwenden, um die **** Auswahl im Bereich Schattierungen der Farbauswahl zu verschieben.  
 
-[Chromium-#963183][CR963183]  
+Chromium Problem [#963183][CR963183]  
 
 ### <a name="properties-tab-now-populates-after-a-page-refresh"></a>Registerkarte "Eigenschaften" wird jetzt nach einer Seitenaktualisierung auffüllt  
 
-In Microsoft Edge 81 und früheren Versionen wurde die Registerkarte **Eigenschaften** im [Bereich Elemente][DevtoolsCssIndex] durch Seitenaktualisierungen unterbrochen.  Beim Aktualisieren der Seite wurden auf der Registerkarte **Eigenschaften** die Eigenschaften des aktuell ausgewählten Elements nicht auffüllt.  
+In Microsoft Edge 81 und früheren Versionen wurde die Registerkarte **Eigenschaften** im [Bereich][DevtoolsCssIndex] Elemente durch Seitenaktualisierungen unterbrochen.  Beim Aktualisieren der Seite wurden auf der Registerkarte **Eigenschaften** die Eigenschaften des aktuell ausgewählten Elements nicht auffüllt.  
 
-:::image type="complex" source="../../media/2020/03/properties-in-81.msft.png" alt-text="In Microsoft Edge 81 und früher war die Registerkarte Eigenschaften nach einer Seitenaktualisierung leer." lightbox="../../media/2020/03/properties-in-81.msft.png":::
-   In Microsoft Edge 81 und früher war die Registerkarte **Eigenschaften** nach einer Seitenaktualisierung leer.  
+:::image type="complex" source="../../media/2020/03/properties-in-81.msft.png" alt-text="In Microsoft Edge 81 und früheren Versionen war die Registerkarte Eigenschaften nach einer Seitenaktualisierung leer." lightbox="../../media/2020/03/properties-in-81.msft.png":::
+   In Microsoft Edge 81 und früheren Versionen war die Registerkarte **Eigenschaften** nach einer Seitenaktualisierung leer.  
 :::image-end:::  
 
 In Microsoft Edge 83 können Sie nun die Eigenschaften des aktuell ausgewählten Elements nach einer Seitenaktualisierung auf der Registerkarte **Eigenschaften anzeigen.**  
@@ -99,7 +99,7 @@ In Microsoft Edge 83 können Sie nun die Eigenschaften des aktuell ausgewählten
    In Microsoft Edge 83 zeigt die Registerkarte **Eigenschaften** die Eigenschaften des aktuell ausgewählten Elements nach einer Seitenaktualisierung an.  
 :::image-end:::  
 
-[Chromium-#1050999][CR1050999]  
+Chromium Problem [#1050999][CR1050999]  
 
 ### <a name="use-the-arrow-keys-to-scroll-in-the-changes-tool&quot;></a>Verwenden der Pfeiltasten zum Scrollen im Tool &quot;Änderungen"  
 
@@ -109,17 +109,17 @@ Um das Tool **Änderungen zu öffnen,** wählen Sie `Ctrl` + `Shift` + `P` in de
 
 Wenn Sie eine Änderung an einer minifizierten Datei vorgenommen haben, können Sie mit dem Tool Änderungen horizontal scrollen, um den ganzen verminten Code anzeigen zu können. ****  Ab Microsoft Edge 83 können Sie nun mit den Pfeiltasten auf der Tastatur horizontal scrollen.  
 
-:::image type="complex" source="../../media/2020/03/changes.msft.png" alt-text="In Microsoft Edge 83 können Sie einen horizontalen Bildlauf mit den Pfeiltasten durchführen, um ihren verminten Code im Tool "Änderungen" anzeigen zu können." lightbox="../../media/2020/03/changes.msft.png":::
-   In Microsoft Edge 83 können Sie einen horizontalen Bildlauf mit den Pfeiltasten durchführen, um die Änderungen, die Sie am verminten Code vorgenommen haben, im Tool **"Änderungen" anzeigen** zu können.  
+:::image type="complex" source="../../media/2020/03/changes.msft.png" alt-text="In Microsoft Edge 83 können Sie einen horizontalen Bildlauf mit den Pfeiltasten durchführen, um den verminten Code im Tool Änderungen anzeigen zu lassen." lightbox="../../media/2020/03/changes.msft.png":::
+   In Microsoft Edge 83 können Sie einen horizontalen Bildlauf mit den Pfeiltasten durchführen, um die Änderungen, die Sie am verminten Code vorgenommen haben, im Tool Änderungen anzeigen zu **lassen.**  
 :::image-end:::  
 
 Wenn Sie Bildschirmlesegeräte oder die Tastatur verwenden, um [][PostTweetEdgeDevTools] die DevTools zu navigieren, senden Sie uns Ihr Feedback, indem Sie an uns twittern oder das Symbol Feedback [senden](#getting-in-touch-with-microsoft-edge-devtools-team) drücken!  
 
-[Chromium-#963183][CR963183]  
+Chromium Problem [#963183][CR963183]  
 
 ## <a name="announcements-from-the-chromium-project"></a>Ankündigungen aus dem Chromium-Projekt  
 
-In den folgenden Abschnitten werden zusätzliche Features angekündigt, die in Microsoft Edge 83 verfügbar sind und zum Open Source Chromium-Projekt beigetragen haben.  
+In den folgenden Abschnitten werden zusätzliche features angekündigt, die in Microsoft Edge 83 verfügbar sind, die zum Open Source-Chromium wurden.  
 
 ### <a name="emulate-vision-deficiencies"></a>Emulieren von Sehstörungen  
 
@@ -145,7 +145,7 @@ Durch das Entwerfen für extremere Simulationen in DevTools sind Ihre Web-Apps g
 
 Senden Sie Ihr Feedback, [indem Sie][PostTweetEdgeDevTools] das Symbol Feedback senden twittern oderchoosing! [](#getting-in-touch-with-microsoft-edge-devtools-team)  
 
-[Chromium-#1003700][CR1003700]  
+Chromium Problem [#1003700][CR1003700]  
 
 ### <a name="emulate-locales"></a>Emulieren von Locales  
 
@@ -165,7 +165,7 @@ Emulieren von Locales durch Festlegen einer Position in **Sensors**  >  **Locati
 
 Navigieren Sie zum Beispiel [locale-dependent code,][MathiasByensLocaleDemo]um eine Demo zu testen.
 
-[Chromium-#1051822][CR1051822]
+Chromium Problem [#1051822][CR1051822]
 
 ### <a name="cross-origin-embedder-policy-coep-debugging"></a>Debuggen von Cross-Origin Embedder Policy (COEP)  
 

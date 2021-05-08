@@ -34,19 +34,19 @@ Stellen Sie sicher, dass Sie [Microsoft Edge (Chromium)][MicrosoftEdge].  Um zu 
 
 Führen Sie die folgenden Schritte aus, um die Automatisierung von Tests zu starten und sicherzustellen, dass die von Ihnen installierte WebDriver-Version mit Ihrer Browserversion übereinstimmt.  
 
-1.  Suchen Sie Nach Ihrer Version von Microsoft Edge.  
-    1.  Navigieren Sie zu `edge://settings/help` .  
+1.  Suchen Sie nach Ihrer Microsoft Edge.  
+    1.  Navigieren Sie zu `edge://settings/help`.  
         
-        :::image type="complex" source="./media/microsoft-edge-version.msft.png" alt-text="Die Buildnummer für Microsoft Edge am 15. April 2021" lightbox="./media/microsoft-edge-version.msft.png":::
-           Die Buildnummer für Microsoft Edge am 15. April 2021  
+        :::image type="complex" source="./media/microsoft-edge-version.msft.png" alt-text="Die Buildnummer für Microsoft Edge 15. April 2021" lightbox="./media/microsoft-edge-version.msft.png":::
+           Die Buildnummer für Microsoft Edge 15. April 2021  
         :::image-end:::  
         
-1.  Navigieren Sie zu [Microsoft Edge Driver][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver].  
+1.  Navigieren Sie zu [Microsoft Edge Treiber][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver].  
 1.  Navigieren Sie zu **Rufen Sie die neueste Version ab.**  
-1.  Wählen Sie den Build des Kanals aus, der Ihrer Versionsnummer von Microsoft Edge entspricht.  
+1.  Wählen Sie den Build des Kanals aus, der Ihrer Versionsnummer des Microsoft Edge.  
     
-    :::image type="complex" source="./media/microsoft-edge-driver-install.msft.png" alt-text="Der Abschnitt Aktuelle Version auf der Microsoft Edge Driver-Webseite" lightbox="./media/microsoft-edge-driver-install.msft.png":::
-       Der **Abschnitt Aktuelle Version auf der** Microsoft Edge [Driver-Webseite][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver]  
+    :::image type="complex" source="./media/microsoft-edge-driver-install.msft.png" alt-text="Der Abschnitt Aktuelle Version auf der Webseite Microsoft Edge Treibers" lightbox="./media/microsoft-edge-driver-install.msft.png":::
+       Der **Abschnitt Aktuelle Version auf der** Webseite Microsoft Edge [Treibers][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver]  
     :::image-end:::  
     
     <!--  
@@ -394,7 +394,7 @@ Das Microsoft Edge-Team freut sich über Ihr Feedback zur Verwendung von WebDriv
 [JavaScriptSeleniumTools]: https://www.npmjs.com/package/@microsoft/edge-selenium-tools "@microsoft/edge-selenium-tools | npm"  
 [JavaScriptSelenium]: https://www.npmjs.com/package/selenium-webdriver "selenium-webdriver | npm"  
 
-[MicrosoftDeveloperMicrosoftEdgeToolsWebdriver]: https://developer.microsoft.com/microsoft-edge/tools/webdriver "Microsoft Edge Driver | Microsoft Edge Developer"  
+[MicrosoftDeveloperMicrosoftEdgeToolsWebdriver]: https://developer.microsoft.com/microsoft-edge/tools/webdriver "Microsoft Edge Treiber | Microsoft Edge Entwickler"  
 
 [MicrosoftEdge]: https://www.microsoft.com/edge "Den neuen Microsoft Edge-Browser herunterladen"  
 

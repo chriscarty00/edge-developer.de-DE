@@ -37,7 +37,7 @@ Diese Seite ist eine umfassende Referenz zu Barrierefreiheitsfeatures in Microso
     
 Dieser Verweis soll Ihnen dabei helfen, alle in DevTools verfügbaren Tools zu entdecken, mit deren Hilfe Sie die Barrierefreiheit einer Seite untersuchen können.  
 
-Wenn Sie Hilfe zum Navigieren in DevTools mit einer Hilfstechnologie wie einer Bildschirmlesehilfe suchen, navigieren Sie zu [Navigieren in Microsoft Edge DevTools with Assistive Technology][DevtoolsAccessibilityNavigation].  
+Wenn Sie Hilfe zum Navigieren in DevTools mit einer Hilfstechnologie wie einer Bildschirmlesehilfe suchen, navigieren Sie zu [Navigieren Microsoft Edge DevTools with Assistive Technology][DevtoolsAccessibilityNavigation].  
 
 ## <a name="overview-of-accessibility-features-in-microsoft-edge-devtools"></a>Übersicht über Barrierefreiheitsfeatures in Microsoft Edge DevTools  
 
@@ -72,12 +72,12 @@ So überwachen Sie eine Seite:
     :::image-end:::  
     
     > [!NOTE]
-    > Die Screenshots in diesem Abschnitt wurden mit Microsoft Edge, Version 79, erstellt.  Sie können überprüfen, welche Version Sie unter `edge://version` ausführen.  Die **Benutzeroberfläche** des Überwachungsinstruments sieht in früheren Versionen von Microsoft Edge anders aus, der allgemeine Workflow ist jedoch identisch.  
+    > Die Screenshots in diesem Abschnitt wurden mit Microsoft Edge Version 79 erstellt.  Sie können überprüfen, welche Version Sie unter `edge://version` ausführen.  Die **Benutzeroberfläche** des Überwachungsinstruments sieht in früheren Versionen von Microsoft Edge anders aus, der allgemeine Workflow ist jedoch identisch.  
     
 1.  Wählen **Sie für**Gerät Mobile **aus,** wenn Sie ein mobiles Gerät simulieren möchten.  Mit dieser Option wird die Zeichenfolge des Benutzer-Agents geändert und die Größe des Viewports geändert.  Wenn die mobile Version der Seite anders als die Desktopversion angezeigt wird, kann diese Option erhebliche Auswirkungen auf die Ergebnisse Ihrer Überwachung haben.  
 1.  Stellen Sie **im Abschnitt Überwachungen** sicher, dass **Barrierefreiheit** aktiviert ist.  Deaktivieren Sie die anderen Kategorien, wenn Sie sie aus Ihrem Bericht ausschließen möchten.  Lassen Sie sie aktiviert, wenn Sie andere Möglichkeiten zur Verbesserung der Qualität Ihrer Seite finden möchten.  
 1.  Im **Abschnitt Einschränkung** können Sie das Netzwerk und die CPU drosseln, was bei der Analyse der Lastleistung hilfreich ist.  Diese Option sollte für Ihre Barrierefreiheitsnote irrelevant sein, sodass Sie die von Ihnen bevorzugten Optionen verwenden können.  
-1.  Mit **dem Kontrollkästchen Speicher** löschen können Sie den speicherplatz vor dem Laden der Seite löschen oder den Speicher zwischen Seitenlasten beibehalten.  Diese Option ist wahrscheinlich auch für die Barrierefreiheitsnote irrelevant, sodass Sie die von Ihnen bevorzugten Optionen verwenden können.  
+1.  Mit **dem Kontrollkästchen Storage** löschen können Sie den speicherplatz vor dem Laden der Seite löschen oder den Speicher zwischen Seitenlasten beibehalten.  Diese Option ist wahrscheinlich auch für die Barrierefreiheitsnote irrelevant, sodass Sie die von Ihnen bevorzugten Optionen verwenden können.  
 1.  Wählen **Sie Überwachungen ausführen aus.** Nach 10 bis 30 Sekunden stellt DevTools einen Bericht zur Verfügung.  Ihr Bericht enthält verschiedene Tipps, wie Sie die Barrierefreiheit der Seite verbessern können.  
     
     :::image type="complex" source="../media/accessibility-audits-run-audits-result.msft.png" alt-text="Ein Bericht" lightbox="../media/accessibility-audits-run-audits-result.msft.png":::
@@ -126,7 +126,7 @@ Die [Barrierefreiheitsstruktur][MDNAccessibilityTree] ist eine Teilmenge der DOM
 
 Überprüfen Sie die Position eines Elements in der Barrierefreiheitsstruktur im [Bereich Barrierefreiheit.](#the-accessibility-panel)  
 
-:::image type="complex" source="../media/accessibility-elements-accessibility-tree.msft.png" alt-text="Abschnitt Barrierefreiheitsstruktur" lightbox="../media/accessibility-elements-accessibility-tree.msft.png":::
+:::image type="complex" source="../media/accessibility-elements-accessibility-tree.msft.png" alt-text="Abschnitt "Barrierefreiheitsstruktur"" lightbox="../media/accessibility-elements-accessibility-tree.msft.png":::
    Abschnitt **"Barrierefreiheitsstruktur"**  
 :::image-end:::  
 
@@ -136,7 +136,7 @@ ARIA-Attribute stellen sicher, dass die Bildschirmlesegeräte über alle Informa
 
 Zeigen Sie die ARIA-Attribute eines Elements im Bereich [Barrierefreiheit](#the-accessibility-panel) an.  
 
-:::image type="complex" source="../media/accessibility-elements-accessibility-aria-attributes.msft.png" alt-text="Der Abschnitt ARIA Attributes" lightbox="../media/accessibility-elements-accessibility-aria-attributes.msft.png":::
+:::image type="complex" source="../media/accessibility-elements-accessibility-aria-attributes.msft.png" alt-text="Der Abschnitt "ARIA Attributes"" lightbox="../media/accessibility-elements-accessibility-aria-attributes.msft.png":::
    Der **Abschnitt "ARIA Attributes"**  
 :::image-end:::  
 
@@ -192,10 +192,10 @@ Mit der Farbauswahl können Sie überprüfen, ob Ihr Text die empfohlenen Kontra
 
 <!-- links -->  
 
-[DevtoolsAccessibilityNavigation]: ./navigation.md "Navigieren Sie zu Microsoft Edge DevTools mit Hilfstechnologie| Microsoft Docs"  
+[DevtoolsAccessibilityNavigation]: ./navigation.md "Navigieren Microsoft Edge DevTools mit Hilfstechnologie | Microsoft Docs"  
 [DevtoolsCssReferenceViewActuallyAppliedElements]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "Nur das CSS anzeigen, das tatsächlich auf ein Element angewendet wird – CSS Reference | Microsoft Docs"  
 
-[ChromeWebStoreAxe]: https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US "axe - Web Accessibility Testing - Chrome Web Store"  
+[ChromeWebStoreAxe]: https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US "axe – Web Accessibility Testing – Chrome Web Store"  
 
 [MDNAccessibilityTree]: https://developer.mozilla.org/docs/Glossary/AOM "Barrierefreiheitsstruktur (Accessibility Tree, AOM) | MDN"  
 [MDNAccessibility]: https://developer.mozilla.org/docs/Web/Accessibility "Barrierefreiheit | MDN"  

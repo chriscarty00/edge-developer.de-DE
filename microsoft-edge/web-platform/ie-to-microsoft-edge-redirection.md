@@ -1,6 +1,6 @@
 ---
-description: Verschieben von Benutzern von Internet Explorer zu Microsoft Edge
-title: Verschieben von Benutzern von Internet Explorer zu Microsoft Edge
+description: Verschieben von Benutzern zu Microsoft Edge aus Internet Explorer
+title: Verschieben von Benutzern zu Microsoft Edge aus Internet Explorer
 author: MSEdgeTeam
 ms.date: 11/13/2020
 ms.author: msedgedevrel
@@ -13,9 +13,9 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/26/2021
 ms.locfileid: "11461136"
 ---
-# <a name="moving-users-to-microsoft-edge-from-internet-explorer"></a>Verschieben von Benutzern von Internet Explorer zu Microsoft Edge  
+# <a name="moving-users-to-microsoft-edge-from-internet-explorer"></a>Verschieben von Benutzern zu Microsoft Edge aus Internet Explorer  
 
-Viele moderne Websites verfügen über Designs, die nicht mit Internet Explorer \(IE\) kompatibel sind.  Wenn ein IE-Benutzer eine inkompatible öffentliche Website besucht, wird dem Benutzer möglicherweise eine Nachricht angezeigt.  Die Meldung besagt, dass die Website nicht mit dem Browser kompatibel ist.  Nachdem die Nachricht angezeigt wurde, wird erwartet, dass der Benutzer manuell zu einem modernen Browser wechselt.  Um Unterbrechungen zu minimieren, unterstützt Microsoft Edge ab Version 84 eine neue Funktion, mit der Benutzer automatisch umgeleitet werden.  Wenn ein IE-Benutzer zu einer Website navigiert, die mit IE nicht kompatibel ist, leitet Windows den Benutzer automatisch zu Microsoft Edge um.  Um die Websites in der Liste zu überprüfen, navigieren Sie zu [Microsoft Edge-Liste benötigen.][MicrosoftEdgeNeededgeV1]
+Viele moderne Websites verfügen über Designs, die nicht mit Internet Explorer \(IE\) kompatibel sind.  Wenn ein IE-Benutzer eine inkompatible öffentliche Website besucht, wird dem Benutzer möglicherweise eine Nachricht angezeigt.  Die Meldung besagt, dass die Website nicht mit dem Browser kompatibel ist.  Nachdem die Nachricht angezeigt wurde, wird erwartet, dass der Benutzer manuell zu einem modernen Browser wechselt.  Um Unterbrechungen zu minimieren, unterstützt Microsoft Edge ab Version 84 eine neue Funktion, die Benutzer automatisch umleite.  Wenn ein IE-Benutzer zu einer Website navigiert, die mit IE nicht kompatibel ist, leitet Windows Benutzer automatisch an Microsoft Edge.  Navigieren Sie zum Überprüfen der Websites in der Liste zu [Microsoft Edge Liste .][MicrosoftEdgeNeededgeV1]
 
 In diesem Artikel werden die folgenden Konzepte beschrieben.  
 
@@ -32,10 +32,10 @@ Die IE-Kompatibilitätsliste fügt nur dann eine Website hinzu, wenn die folgend
 
 ## <a name="redirection-experience"></a>Umleitungserfahrung
 
-Bei der Umleitung zu Microsoft Edge wird dem Benutzer das einmalige Dialogfeld im nächsten Screenshot angezeigt.  Das Dialogfeld stellt dem Benutzer die folgenden Informationen zur Verfügung.  
+Bei der Umleitung Microsoft Edge wird dem Benutzer das Einmaldialogfeld im nächsten Screenshot angezeigt.  Das Dialogfeld stellt dem Benutzer die folgenden Informationen zur Verfügung.  
 
 *   Es wird erläutert, warum die Website umgeleitet wird.  
-*   Er fordert den Benutzer zur Zustimmung auf, Browserdaten und -einstellungen von IE in Microsoft Edge zu kopieren.  
+*   Der Benutzer wird aufgefordert, die Zustimmung zum Kopieren von Browserdaten und -einstellungen aus IE in Microsoft Edge.  
 
 :::row:::
    :::column span="":::
@@ -61,15 +61,15 @@ Wenn der Benutzer nicht zuwilligt, indem er das Kontrollkästchen Meine Browserd
 
 Schließlich wird unter der Adressleiste für jede Umleitung ein Inkompatibilitätsbanner der Website angezeigt.  Ein Beispiel für ein Website-Inkompatibilitätsbanner wird in der folgenden Abbildung angezeigt.
 
-:::image type="complex" source="../media/neededge-banner.msft.png" alt-text="Benachrichtigung über moderne Websites und Aufforderung zum Festlegen von Microsoft Edge als Standardbrowser oder Erkunden von Microsoft Edge" lightbox="../media/neededge-banner.msft.png":::
-   Benachrichtigung über moderne Websites und Aufforderung zum Festlegen von Microsoft Edge als Standardbrowser oder Erkunden von Microsoft Edge  
+:::image type="complex" source="../media/neededge-banner.msft.png" alt-text="Benachrichtigung über moderne Websites und Aufforderung zum Festlegen Microsoft Edge als Standardbrowser oder Erkunden Microsoft Edge" lightbox="../media/neededge-banner.msft.png":::
+   Benachrichtigung über moderne Websites und Aufforderung zum Festlegen Microsoft Edge als Standardbrowser oder Erkunden Microsoft Edge  
 :::image-end:::
 
 Das Inkompatibilitätsbanner der Website enthält die folgenden Details für den Benutzer.  
 
-*   Empfiehlt dem Benutzer, zu Microsoft Edge zu wechseln.  
-*   Bietet an, Microsoft Edge als Standardbrowser zu setzen.  
-*   Gibt dem Benutzer die Möglichkeit, Microsoft Edge zu erkunden.    
+*   Empfiehlt dem Benutzer, zu Microsoft Edge.  
+*   Bietet an, Microsoft Edge als Standardbrowser festlegen.  
+*   Gibt dem Benutzer die Möglichkeit, die Microsoft Edge.    
     
 Wenn eine Website von Internet Explorer zu Microsoft Edge umgeleitet wird, tritt eine der folgenden Aktionen auf.
 
@@ -103,6 +103,6 @@ Die IE-Kompatibilitätsliste wird innerhalb einer Woche aktualisiert.
 
 [MicrosoftOfficialHome]: https://www.microsoft.com "Microsoft Official Home"  
 
-[MicrosoftEdgeNeededgeV1]:  https://edge.microsoft.com/neededge/v1 "Microsoft Edge List v1 xml | Microsoft Edge"  
+[MicrosoftEdgeNeededgeV1]:  https://edge.microsoft.com/neededge/v1 "Benötigen Microsoft Edge v1-Xml-| Microsoft Edge"  
 
 [MicrosoftSupportOfficeTheWebsiteYouWereTryingToReachDoesntWorkWithInternetExplorer]: https://support.microsoft.com/office/the-website-you-were-trying-to-reach-doesn-t-work-with-internet-explorer-8f5fc675-cd47-414c-9535-12821ddfc554 "Die Website, die Sie erreichen wollten, funktioniert nicht mit Internet Explorer | Microsoft Office Support"  

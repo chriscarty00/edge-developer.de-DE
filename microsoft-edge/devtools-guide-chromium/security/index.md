@@ -61,7 +61,7 @@ Dieses Problem tritt auf, wenn die url, die Sie besucht haben, über HTTP angefo
 
 Wenn Sie HTTPS bereits auf Ihrem Server eingerichtet haben, müssen Sie nur den Server so konfigurieren, dass alle HTTP-Anforderungen an HTTPS umgeleitet werden.  
 
-Wenn Sie HTTPS nicht auf Ihrem Server eingerichtet haben, bietet [Let's Encrypt][LetsEncrypt] eine kostenlose und relativ einfache Möglichkeit, den Prozess zu starten.  Sie können auch erwägen, Ihre Website auf einem CDN zu hosten.  Die meisten wichtigen CDNs hosten jetzt standardmäßig Websites auf HTTPS.  
+Wenn Sie HTTPS nicht auf Ihrem Server eingerichtet haben, bietet [Let's Encrypt][LetsEncrypt] eine kostenlose und relativ einfache Möglichkeit, den Prozess zu starten.  Sie können auch erwägen, Ihre Website auf einem CDN.  Die meisten wichtigen CDNs hosten jetzt standardmäßig Websites auf HTTPS.  
 
 > [!TIP]
 > Der [Hinweis HTTPS][WebhintUseHttps] in [Webhint][Webhint] verwenden kann dazu beitragen, den Prozess zu automatisieren, um sicherzustellen, dass alle HTTP-Anforderungen an HTTPS geleitet werden.  
@@ -105,7 +105,7 @@ Wählen Sie einen der Einträge im linken Navigationsgerät aus, um die Details 
 <!-- links -->  
 
 [MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Entwicklertools | Microsoft Docs"  
-[DevToolsOpen]: ../open/index.md "Öffnen Sie Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsOpen]: ../open/index.md "Öffnen Microsoft Edge DevTools | Microsoft Docs"  
 
 [LetsEncrypt]: https://letsencrypt.org "Let's Encrypt – Kostenlose SSL/TLS-Zertifikate"  
 

@@ -32,13 +32,13 @@ ms.locfileid: "11519443"
 
 In diesem Handbuch erfahren Sie, wie Sie Microsoft Edge DevTools zum Anzeigen der Ressourcen einer Webseite verwenden.  Ressourcen sind die Dateien, die eine Seite benötigt, um ordnungsgemäß angezeigt zu werden.  Beispiele für Ressourcen sind CSS-, JavaScript- und HTML-Dateien sowie Bilder.  
 
-In diesem Handbuch wird davon ausgegangen, [][MDNLearnWebDevelopment] dass Sie mit den Grundlagen der Webentwicklung und [Microsoft Edge DevTools vertraut sind.][MicrosoftEdgeDevTools]  
+In diesem Handbuch wird davon ausgegangen, [][MDNLearnWebDevelopment] dass Sie mit den Grundlagen der Webentwicklung und Microsoft Edge [DevTools vertraut sind.][MicrosoftEdgeDevTools]  
 
 ## <a name="open-resources"></a>Öffnen von Ressourcen  
 
 Wenn Sie den Namen der Ressource kennen, die **** Sie überprüfen möchten, bietet das Befehlsmenü eine schnelle Möglichkeit zum Öffnen der Ressource.  
 
-1.  Wählen `Control` + `P` Sie \(Windows, Linux\) oder `Command` + `P` \(macOS\) aus.  Das **Dialogfeld Datei öffnen** wird geöffnet.  
+1.  Wählen `Control` + `P` Sie \(Windows, Linux\) oder `Command` + `P` \(macOS\).  Das **Dialogfeld Datei öffnen** wird geöffnet.  
     
     :::image type="complex" source="../media/resources-command-menu-empty.msft.png" alt-text="Dialogfeld Datei öffnen" lightbox="../media/resources-command-menu-empty.msft.png":::
        Dialogfeld **Datei** öffnen  

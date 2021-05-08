@@ -1,6 +1,6 @@
 ---
-description: Eine Anleitung zum Navigieren in Microsoft Edge DevTools mithilfe von Hilfstechnologien wie Bildschirmlesegeräten.
-title: Navigieren in Microsoft Edge DevTools mit Hilfstechnologie
+description: Eine Anleitung zum Navigieren Microsoft Edge DevTools mithilfe von Hilfstechnologien wie Bildschirmlesegeräten.
+title: Navigieren Microsoft Edge DevTools mit Hilfstechnologie
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 02/12/2021
@@ -28,9 +28,9 @@ ms.locfileid: "11398434"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# <a name="navigate-microsoft-edge-devtools-with-assistive-technology"></a>Navigieren in Microsoft Edge DevTools mit Hilfstechnologie  
+# <a name="navigate-microsoft-edge-devtools-with-assistive-technology"></a>Navigieren Microsoft Edge DevTools mit Hilfstechnologie  
 
-Der folgende Artikel soll Benutzern helfen, die sich hauptsächlich auf Hilfstechnologie wie Bildschirmlesegeräte verlassen, auf [Microsoft Edge DevTools zu zugreifen][MicrosoftEdgeDevtoolsMain]und diese zu verwenden.  [Microsoft Edge DevTools][MicrosoftEdgeDevtoolsMain] ist eine Suite von Webentwicklertools, die in den Microsoft Edge-Browser integrierte sind.  Wenn Sie nach DevTools-Features im Zusammenhang mit der Verbesserung der Barrierefreiheit einer Webseite suchen, navigieren Sie zu [Barrierefreiheitsreferenz][DevtoolsAccessibilityReference].  
+Der folgende Artikel soll Benutzern helfen, die sich hauptsächlich auf Hilfstechnologie wie Bildschirmlesegeräte verlassen, auf Microsoft Edge devTools zugreifen und [diese verwenden.][MicrosoftEdgeDevtoolsMain]  [Microsoft Edge DevTools][MicrosoftEdgeDevtoolsMain] ist eine Suite von Webentwicklertools, die in den Microsoft Edge sind.  Wenn Sie nach DevTools-Features im Zusammenhang mit der Verbesserung der Barrierefreiheit einer Webseite suchen, navigieren Sie zu [Barrierefreiheitsreferenz][DevtoolsAccessibilityReference].  
 
 Die Barrierefreiheit von DevTools ist in Bearbeitung.  Einige Panels und Registerkarten funktionieren mit Hilfstechnologie besser als andere.  Dieser Leitfaden führt Sie durch die Panels, die am zugänglichsten sind, und hebt spezifische Probleme hervor, die auf dem Weg auftreten können.  
 
@@ -38,7 +38,7 @@ Die Barrierefreiheit von DevTools ist in Bearbeitung.  Einige Panels und Registe
 
 Vor dem Start hilft es, ein mentales Modell der Struktur der DevTools-Benutzeroberfläche zu haben.  DevTools ist in eine Reihe von Panels unterteilt, die in eine [ARIA-Registerkartenliste unterteilt sind.][W3CWaiAriaTablist]  
 
-Zum Beispiel:  
+Beispiel:  
 
 *   Mit **dem Elementtool** können Sie [DOM-Knoten][DevtoolsDomIndexNavigateDomTreeKeyboard] oder CSS anzeigen und [ändern.][DevtoolsCssIndex]  
 *   Im [Konsolenbereich][DevtoolsConsoleIndex] können Sie JavaScript-Protokolle und Livebearbeitungsobjekte lesen.  
@@ -52,13 +52,13 @@ Das **Elementtool** enthält beispielsweise zusätzliche Registerkarten zum Übe
 
 ## <a name="open-devtools"></a>Öffnen von DevTools  
 
-Navigieren Sie zu [Öffnen Sie Microsoft Edge DevTools][DevtoolsOpen].  Es gibt eine Reihe von Möglichkeiten, DevTools zu öffnen, entweder über Tastenkombinationen oder Menüelemente.  
+Navigieren Sie zu [Öffnen sie Microsoft Edge DevTools][DevtoolsOpen].  Es gibt eine Reihe von Möglichkeiten, DevTools zu öffnen, entweder über Tastenkombinationen oder Menüelemente.  
 
 ## <a name="navigate-between-panels"></a>Navigieren zwischen Panels  
 
 ### <a name="navigate-by-keyboard"></a>Navigieren über die Tastatur  
 
-*   Wenn DevTools geöffnet ist, wählen Sie `Control` + `]` \(Windows, Linux\) oder `Command` + `]` \(macOS\) aus, um den Fokus auf den nächsten Bereich zu legen.  
+*   Wenn DevTools geöffnet ist, wählen `Control` + `]` Sie \(Windows, Linux\) oder `Command` + `]` \(macOS\) aus, um den fokus auf den nächsten Bereich zu legen.  
 *   Wählen `Control` + `[` Sie \(Windows, Linux\) oder `Command` + `[` \(macOS\) aus, um den vorherigen Bereich zu fokussieren.  
 *   Es ist auch möglich, den Fokus in die `Shift` + `Tab` [Registerkartenliste ARIA][W3CWaiAriaTablist] eines Panels zu verschieben und die Pfeiltasten zum Ändern von Panels zu verwenden, obwohl es möglicherweise schneller ist, die zuvor erwähnten Verknüpfungen zu verwenden.  
 
@@ -244,7 +244,7 @@ Verwenden Sie zum Ausführen einer neuen Überwachung, um den Bericht zu beenden
 
 [DevtoolsAccessibilityReference]: ./reference.md "Barrierefreiheitsreferenz | Microsoft Docs"  
 [DevtoolsAccessibilityReferencePane]: reference.md#the-accessibility-pane "Der Bereich Barrierefreiheit – Barrierefreiheitsreferenz | Microsoft Docs"  
-[MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
+[MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) -Entwicklertools | Microsoft Docs"  
 [DevtoolsCommandMenuIndex]: ../command-menu/index.md "Führen Sie Befehle mit dem Microsoft Edge DevTools-Befehlsmenü | Microsoft Docs"  
 [DevtoolsConsoleIndex]: ../console/index.md "Übersicht über die Konsole | Microsoft Docs"  
 [DevtoolsCssIndex]: ../css/index.md "Erste Schritte mit dem Anzeigen und Ändern von CSS-| Microsoft Docs"  

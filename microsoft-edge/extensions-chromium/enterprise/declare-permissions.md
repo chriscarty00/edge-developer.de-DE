@@ -31,7 +31,7 @@ ms.locfileid: "11461532"
 
 Um die meisten `chrome.*` APIs verwenden zu können, muss ihre Erweiterung die `permissions` im Manifest deklarieren.  Sie können Berechtigungen mithilfe einer Berechtigungszeichenfolge aus der folgenden Tabelle deklarieren oder ein Muster verwenden, um mit ähnlichen Zeichenfolgen zu übereinstimmen.  Berechtigungen helfen Ihnen, Ihre Erweiterung zu beschränken, wenn sie durch Schadsoftware gefährdet wird.  Einige Berechtigungen werden benutzern möglicherweise vor der Installation der Erweiterung mithilfe von Berechtigungswarnungen angezeigt.  
 
-Wenn eine API erfordert, dass Sie Berechtigungen im Manifest deklarieren, lesen Sie die Dokumentation für diese API, um die erforderlichen Berechtigungen zu verstehen.  Auf der Seite Speicher-API wird beispielsweise beschrieben, wie die Berechtigung deklariert `storage` wird.  
+Wenn eine API erfordert, dass Sie Berechtigungen im Manifest deklarieren, lesen Sie die Dokumentation für diese API, um die erforderlichen Berechtigungen zu verstehen.  Auf der Seite Storage-API wird beispielsweise beschrieben, wie die Berechtigung deklariert `storage` wird.  
 
 Im folgenden Codeausschnitt wird das Deklarieren von Berechtigungen in der Manifestdatei erläutert.  
 
@@ -51,7 +51,7 @@ In der folgenden Tabelle sind die derzeit verfügbaren Berechtigungszeichenfolge
 |:--- |:--- |  
 | `activeTab` | Fordert an, dass der Erweiterung Berechtigungen gemäß der Spezifikation `activeTab` erteilt werden. |  
 | `alarms` | Gewährt Ihrer Erweiterung Zugriff auf die `chrome.alarms` API. |  
-| `background` | Sorgt dafür, dass Microsoft Edge frühzeitig gestartet und zu spät heruntergefahren wird, sodass Erweiterungen möglicherweise eine längere Lebensdauer haben.  Wenn eine installierte Erweiterung über Berechtigungen verfügt, wird Microsoft Edge unsichtbar ausgeführt, sobald sich der Benutzer am Computer des Benutzers anmeldet und bevor der Benutzer `background` Microsoft Edge startet.  Die Berechtigung sorgt auch dafür, dass Microsoft Edge auch nach dem Schließen des letzten Fensters weiter ausgeführt wird, bis der Benutzer `background` Microsoft Edge explizit beendet.  Diese Berechtigung hat keine Auswirkungen auf Erweiterungen, die im Browser deaktiviert sind.  Die `background` Berechtigung wird normalerweise auf einer Hintergrundseite verwendet. |  
+| `background` | Ermöglicht Microsoft Edge, frühzeitig zu starten und zu spät heruntergefahren zu werden, sodass Erweiterungen möglicherweise eine längere Lebensdauer haben.  Wenn eine installierte Erweiterung über Berechtigungen verfügt, wird Microsoft Edge ausgeführt, sobald sich der Benutzer am Computer des Benutzers anmeldet und bevor der Benutzer `background` Microsoft Edge.  Mit der Berechtigung wird Microsoft Edge auch nach dem Schließen des letzten Fensters fortgesetzt, bis der Benutzer die Ausführung `background` Microsoft Edge.  Diese Berechtigung hat keine Auswirkungen auf Erweiterungen, die im Browser deaktiviert sind.  Die `background` Berechtigung wird normalerweise auf einer Hintergrundseite verwendet. |  
 | `bookmarks` | Gewährt Ihrer Erweiterung Zugriff auf die `chrome.bookmarks` API. |  
 | `browsingData` | Gewährt Ihrer Erweiterung Zugriff auf die `chrome.browsingData` API. |  
 | `certificateProvider` | Gewährt Ihrer Erweiterung Zugriff auf die `chrome.certificateProvider` API. |  

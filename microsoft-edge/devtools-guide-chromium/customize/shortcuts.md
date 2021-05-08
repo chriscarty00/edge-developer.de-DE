@@ -59,7 +59,7 @@ Führen Sie die folgenden Schritte aus, um die Tastenkombination für eine besti
        Auswählen der Schlüssel, die Sie der Aktion zuweisen möchten  
     :::image-end:::  
     
-1.  Zum Speichern der neuen Tastenkombination wählen Sie das Häkchen \(![CheckmarkKeyboardShortcut](../media/checkmark-keyboard-shortcut-icon.msft.png)\) symbol.
+1.  Zum Speichern der neuen Tastenkombination wählen Sie das Häkchen \(![CheckmarkKeyboardShortcut](../media/checkmark-keyboard-shortcut-icon.msft.png)\) -Symbol.
     
     :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-save-shortcut.msft.png" alt-text="Wählen Sie das Häkchensymbol aus, um die neue Tastenkombination zu speichern." lightbox="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
        Wählen Sie das Häkchensymbol aus, um die neue Tastenkombination zu speichern.  

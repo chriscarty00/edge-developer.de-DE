@@ -1,6 +1,6 @@
 ---
 description: Hosten und Veröffentlichen von Erweiterungen im Unternehmen für Microsoft Edge (Chromium).
-title: Veröffentlichen und Aktualisieren von Erweiterungen im Microsoft Edge-Add-Ons-Store
+title: Veröffentlichen und Aktualisieren von Erweiterungen im Microsoft Edge-Add-Ons-Speicher
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 02/10/2021
@@ -14,22 +14,22 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/26/2021
 ms.locfileid: "11461220"
 ---
-# <a name="publish-and-update-extensions-in-the-microsoft-edge-add-ons-store"></a>Veröffentlichen und Aktualisieren von Erweiterungen im Microsoft Edge-Add-Ons-Store  
+# <a name="publish-and-update-extensions-in-the-microsoft-edge-add-ons-store"></a>Veröffentlichen und Aktualisieren von Erweiterungen im Microsoft Edge-Add-Ons-Speicher  
 
 Die meisten Erweiterungen werden im [Microsoft Edge-Add-Ons-Speicher][MicrosoftMicrosoftedgeInsiderAddonsEdgeextensions] veröffentlicht, um Benutzer vor schädlichen Erweiterungen zu schützen.  
 
 ## <a name="publish-options-for-extensions"></a>Veröffentlichen von Optionen für Erweiterungen  
 
-Alle Erweiterungen werden als spezielle Archivdatei \( \) mit `.zip` einem Suffix an Benutzer `.crx` verteilt.  Im Microsoft Edge-Add-Ons-Speicher veröffentlichte Erweiterungen werden als Dateien `.zip` hochgeladen.  Beim Veröffentlichungsprozess wird die Datei `.zip` automatisch in eine Datei `.crx` konvertiert.  
+Alle Erweiterungen werden als spezielle Archivdatei \( \) mit `.zip` einem Suffix an Benutzer `.crx` verteilt.  Erweiterungen, die im Microsoft Edge-Add-Ons-Speicher veröffentlicht werden, werden als Dateien `.zip` hochgeladen.  Beim Veröffentlichungsprozess wird die Datei `.zip` automatisch in eine Datei `.crx` konvertiert.  
 
 In den folgenden beiden Szenarien müssen Sie Ihre Erweiterung nicht im Microsoft Edge-Add-Ons-Speicher veröffentlichen.  
 
-*   Erweiterungen, die mithilfe der Enterprise-Richtlinie verteilt werden.  
-*   Verwenden von auspackten Erweiterungsverzeichnissen auf einem lokalen Computer, wenn sich Microsoft Edge im Entwicklermodus befindet.  
+*   Erweiterungen, die mithilfe Enterprise werden.  
+*   Verwenden von auspackten Erweiterungsverzeichnissen auf einem lokalen Computer, Microsoft Edge sich im Entwicklermodus befindet.  
 
 ## <a name="updates-to-extensions"></a>Updates für Erweiterungen
 
-Der Microsoft Edge-Browser sucht automatisch nach neuen Versionen installierter Erweiterungen. Updates werden ohne Benutzereingriff installiert.  
+Der Microsoft Edge sucht automatisch nach neuen Versionen installierter Erweiterungen. Updates werden ohne Benutzereingriff installiert.  
 
 
 <!-- image links -->

@@ -1,5 +1,5 @@
 ---
-description: Verwenden von Dramatiker zum Automatisieren und testen in Microsoft Edge
+description: Verwenden von Playwright zum Automatisieren und Testen in Microsoft Edge
 title: Dramatiker
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,7 +7,7 @@ ms.date: 11/24/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
-keywords: Microsoft Edge, Web-Entwicklung, Entwickler, Tools, Automatisierung, Test, Dramatiker, Knoten, JavaScript, NPM
+keywords: microsoft edge, web development, developer, tools, automation, test, playwright, node, javascript, npm
 ms.openlocfilehash: 5ce51864177731dd1bafb845466abb00cce1e0aa
 ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
@@ -17,28 +17,28 @@ ms.locfileid: "11231083"
 ---
 # Dramatiker  
 
-[Dramatiker][|::ref1::|Main] ist eine [Node.js][NodejsMain] Bibliothek zum Automatisieren von [Chrom][ChromiumHome], [Firefox][FirefoxMain]und [WebKit][|::ref2::|Main] mit einer einzigen API.  Dramatiker wurde entwickelt, um browserübergreifende webautomatisierungen zu ermöglichen, die immer grün, fähig, zuverlässig und schnell sind.  Da [Microsoft Edge auf der Open-Source-Chrom-Webplattform][MicrosoftBlogsWindowsExperience20181206]basiert, ist Dramatiker auch in der Lage, Microsoft Edge zu automatisieren.  
+[Playwright][|::ref1::|Main] ist [eine][NodejsMain]Node.js, um Chromium [,][ChromiumHome] [Firefox][FirefoxMain]und [WebKit][|::ref2::|Main] mit einer einzigen API zu automatisieren.  Playwright wurde entwickelt, um browserübergreifende Webautomatisierung zu ermöglichen, die immer grün, fähig, zuverlässig und schnell ist.  Da [Microsoft Edge auf der Open-Source-Chromium-Webplattform][MicrosoftBlogsWindowsExperience20181206]aufgebaut ist, kann Playwright auch Microsoft Edge.  
 
-Writer startet standardmäßig [headless-Browser][WikiHeadlessBrowser] .  Headless-Browser zeigen keine Benutzeroberfläche an, daher müssen Sie stattdessen die Befehlszeile verwenden.  Sie können auch Writer so konfigurieren, dass der vollständige \(nicht-headless \) Microsoft Edge ausgeführt wird.  
+Playwright startet [standardmäßig browserlose][WikiHeadlessBrowser] Browser.  Headless-Browser zeigen keine Benutzeroberfläche an, daher müssen Sie stattdessen die Befehlszeile verwenden.  Sie können Playwright auch so konfigurieren, dass vollständige \(nicht kopflose\) Microsoft Edge ausgeführt werden.  
 
-Wenn Sie Writer installieren, downloadet das Installationsprogramm standardmäßig [Chrom][ChromiumHome], [Firefox][FirefoxMain]und [WebKit][|::ref3::|Main].  Wenn Sie Microsoft Edge \(Chrom \) ebenfalls installiert haben, benötigt Dramatiker nur eine einzeilige Codeänderung, um Ihre Website oder app in Microsoft Edge zu testen.  Zum Herunterladen von Microsoft Edge \(Chrom \) navigieren Sie zu [Microsoft Edge herunterladen][MicrosoftEdgeDownload].  
+Bei der Installation von Playwright lädt das Installationsprogramm standardmäßig [Chromium][ChromiumHome], [Firefox][FirefoxMain]und [WebKit herunter.][|::ref3::|Main]  Wenn Sie auch Microsoft Edge \(Chromium\) installiert haben, benötigt Playwright nur eine einz nen Codeänderung, um Ihre Website oder App in Microsoft Edge.  Um Microsoft Edge \(Chromium\) herunterzuladen, navigieren Sie zu [Download Microsoft Edge][MicrosoftEdgeDownload].  
 
-## Installieren des Dramatikers  
+## Installieren von Playwright  
 
-Installieren Sie [Dramatiker][|::ref4::|Main] , um Ihre Website oder App mit dem folgenden Befehl zu testen.  
+Installieren [Sie Playwright,][|::ref4::|Main] um Ihre Website oder App mit dem folgenden Befehl zu testen.  
 
 ```shell
 npm i playwright
 ```  
 
-## Starten von Microsoft Edge mit Dramatiker  
+## Starten Microsoft Edge mit Playwright  
 
 > [!NOTE]
-> Für [Dramatiker][|::ref5::|Main] ist Node.js Version 10,17 oder höher erforderlich. Führen `node -v` Sie über die Befehlszeile aus, um sicherzustellen, dass Sie über eine kompatible Version von Node.js verfügen.  Die Browser-Binaries für Chrom, Firefox und WebKit funktionieren über Windows, macOS und Linux. Weitere Informationen finden Sie unter [System Anforderungen für Dramatiker][PlaywrightSystemRequirements].  
+> [Playwright][|::ref5::|Main] erfordert Node.js Version 10.17 oder höher. Führen `node -v` Sie über die Befehlszeile aus, um sicherzustellen, dass Sie über eine kompatible Version von Node.js.  Die Browser-Binärdateien für Chromium, Firefox und WebKit funktionieren Windows, macOS und Linux. Weitere Informationen finden Sie unter [Playwright System Requirements][PlaywrightSystemRequirements].  
 
-Dramatiker sollten Benutzern anderer Browsertest-Frameworks wie [WebDriver][WebDriverChromiumMain] oder [Puppenspieler][PuppeteerMain]vertraut sein.  Erstellen Sie eine Instanz des Browsers, öffnen Sie eine Seite, und bearbeiten Sie Sie dann mit der [Dramatiker-API][PlaywrightAPIReference].  Im folgenden Codeausschnitt startet Dramatiker Microsoft Edge \(Chrom \), navigiert zu `https://www.microsoft.com/edge` und speichert einen Screenshot als `example.png` .  
+Playwright sollte Benutzern anderer Browsertestframeworks wie [WebDriver][WebDriverChromiumMain] oder [Puppeteer vertraut sein.][PuppeteerMain]  Sie erstellen eine Instanz des Browsers, öffnen eine Seite und bearbeiten sie dann mit der [Playwright-API.][PlaywrightAPIReference]  Im folgenden Codeausschnitt startet Playwright Microsoft Edge \(Chromium\), navigiert zu und speichert `https://www.microsoft.com/edge` einen Screenshot als `example.png` .  
 
-Kopieren Sie den folgenden Codeausschnitt, und speichern Sie ihn als `example.js` .  
+Kopieren Sie den folgenden Codeausschnitt, und speichern Sie ihn unter `example.js` .  
 
 ```javascript
 const { chromium } = require('playwright');
@@ -55,13 +55,13 @@ const { chromium } = require('playwright');
 })();
 ```  
 
-Ändern `executablePath` Sie, um auf Ihre Installation von Microsoft Edge (Chrom \) zu verweisen.  So sollte beispielsweise unter macOS `executablePath` für Microsoft Edge Canary auf festgesetzt werden `/Applications/Microsoft\ Edge\ Canary.app/` .  Um das zu finden `executablePath` , navigieren Sie zu dem `edge://version` **ausführbaren Pfad** auf dieser Seite, und kopieren Sie ihn, oder installieren Sie das [Edge-Paths-][npmEdgePaths] Paket mit dem folgenden Befehl.  
+Ändern `executablePath` Sie, um auf Ihre Installation von Microsoft Edge \(Chromium\) zu verweisen.  Unter macOS sollte beispielsweise der für `executablePath` Microsoft Edge Canary auf festgelegt `/Applications/Microsoft\ Edge\ Canary.app/` werden.  Navigieren Sie zu und kopieren Sie den ausführbaren Pfad auf dieser Seite, oder installieren Sie das `executablePath` `edge://version` [Edge-Paths-Paket][npmEdgePaths] mit dem folgenden Befehl. ****  
 
 ```shell
 npm i edge-paths
 ```  
 
-Der folgende Codeausschnitt verwendet das [Edge-Paths-][npmEdgePaths] Paket zum programmgesteuerten Auffinden des Pfads zu Ihrer Installation von Microsoft Edge \(Chrom \) auf Ihrem Betriebssystem.  
+Der folgende Codeausschnitt verwendet das [Edge-Paths-Paket,][npmEdgePaths] um programmgesteuert den Pfad zu Ihrer Installation von Microsoft Edge \(Chromium\) auf Ihrem Betriebssystem zu finden.  
 
 ```javascript
 const edgePaths = require("edge-paths");
@@ -69,30 +69,30 @@ const edgePaths = require("edge-paths");
 const EDGE_PATH = edgePaths.getEdgePath();
 ```  
 
-Setzen Sie abschließend `executablePath: EDGE_PATH` ein `example.js` .  Speichern Sie Ihre Änderungen.  
+Legen Sie schließlich `executablePath: EDGE_PATH` in . `example.js`  Speichern Sie Ihre Änderungen.  
 
 > [!NOTE]
-> Microsoft Edge \(EdgeHTML \) funktioniert nicht mit Dramatiker.  Sie müssen [Microsoft Edge \(Chrom \)][MicrosoftEdgeDownload] installieren, um weiterhin diesem Beispiel folgen zu können.  
+> Microsoft Edge \(EdgeHTML\) funktioniert nicht mit Playwright.  Sie müssen die [Microsoft Edge \(Chromium\)][MicrosoftEdgeDownload] installieren, um dieses Beispiel weiter zu verwenden.  
 
-Nun `example.js` über die Befehlszeile ausgeführt werden.  
+Führen Sie `example.js` jetzt über die Befehlszeile aus.  
 
 ```shell
 node example.js
 ```  
 
-Dramatiker startet Microsoft Edge, navigiert zu `https://www.microsoft.com/edge` und speichert einen Screenshot der Seite.  Sie können die Seitengröße mit [Page. setViewportSize ()][PlaywrightAPIPageSetViewport]anpassen.  
+Playwright startet Microsoft Edge, navigiert zu `https://www.microsoft.com/edge` und speichert einen Screenshot der Seite.  Sie können die Seitengröße mit [page.setViewportSize() anpassen.][PlaywrightAPIPageSetViewport]  
 
-:::image type="complex" source="../media/playwright-example.png" alt-text="Die von example.js erstellte example.png-Datei" lightbox="../media/playwright-example.png":::
-    Die `example.png` Datei, die von `example.js`  
+:::image type="complex" source="../media/playwright-example.png" alt-text="Die example.png datei, die von example.js" lightbox="../media/playwright-example.png":::
+    Die `example.png` datei, die von `example.js`  
 :::image-end:::  
 
-`example.js` ist nur eine einfache Demonstration der von Dramatiker ermöglichten Automatisierungs-und Testszenarien.  Wenn Sie Screenshots in mehreren Webbrowsern erstellen möchten, ändern Sie den folgenden Code.  
+`example.js` ist nur eine einfache Demonstration der von Playwright aktivierten Automatisierungs- und Testszenarien.  Um Screenshots in mehreren Webbrowsern zu erstellen, ändern Sie den folgenden Code.  
 
 *   Chromium  `await chromium.launch()`  
 *   Firefox  `await firefox.launch()`  
 *   WebKit  `await webkit.launch()`  
 
-Weitere Informationen zu Dramatiker finden Sie auf der [Dramatiker-Website][|::ref6::|Main].  Schauen Sie sich das  [Dramatiker-Repo][PlaywrightRepo] auf GitHub an.  Wenn Sie Ihr Feedback zum Automatisieren und Testen Ihrer Website oder App mit Dramatiker freigeben möchten, können Sie [ein Problem einreichen][PlaywrightRepoNewIssue].  
+Weitere Informationen zu Playwright finden Sie auf der [Playwright-Website.][|::ref6::|Main]  Sehen Sie sich [das Playwright-Repository auf GitHub.][PlaywrightRepo]  Um Ihr Feedback zum Automatisieren und Testen Ihrer Website oder App mit Playwright zu teilen, geben Sie [ein Problem ein.][PlaywrightRepoNewIssue]  
 
 ## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
@@ -100,29 +100,29 @@ Weitere Informationen zu Dramatiker finden Sie auf der [Dramatiker-Website][|::r
 
 <!-- links -->  
 
-[WebdriverChromiumMain]: ../webdriver-chromium/index.md "WebDriver (Chrom) | Microsoft docs"  
-[PuppeteerMain]: ../puppeteer/index.md "Puppenspieler | Microsoft docs"  
+[WebdriverChromiumMain]: ../webdriver-chromium/index.md "WebDriver (Chromium) | Microsoft Docs"  
+[PuppeteerMain]: ../puppeteer/index.md "| Microsoft Docs"  
 
-[MicrosoftBlogsWindowsExperience20181206]: https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration "Microsoft Edge: verbessern des Webs durch mehr Open-Source-Zusammenarbeit | Microsoft Experience-Blog"  
+[MicrosoftBlogsWindowsExperience20181206]: https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration "Microsoft Edge: Verbessern des Webs durch mehr Open-Source-Zusammenarbeit | Microsoft Experience Blog"  
 
-[MicrosoftEdgeDownload]: https://microsoft.com/edge "Herunterladen von Microsoft Edge"  
+[MicrosoftEdgeDownload]: https://microsoft.com/edge "Download Microsoft Edge"  
 
-[ChromiumHome]: https://www.chromium.org/Home "Chrom | Die Chrom-Projekte"  
+[ChromiumHome]: https://www.chromium.org/Home "Chromium | Die Chromium Projekte"  
 
 [FirefoxMain]: https://www.mozilla.org/firefox "Mozilla Firefox"  
 
 [NodejsMain]: https://nodejs.org "Node.js"  
 
-[npmEdgePaths]: https://www.npmjs.com/package/edge-paths "Edge-Pfade | NPM"  
+[npmEdgePaths]: https://www.npmjs.com/package/edge-paths "edge-paths | npm"  
 
-[PlaywrightMain]: https://playwright.dev "Dramatiker"  
-[PlaywrightAPIReference]: https://playwright.dev#?path=docs/api.md "Dramatiker-API-Referenz"  
-[PlaywrightAPIPageSetViewport]: https://playwright.dev#?path=docs%2Fapi.md&q=pagesetviewportsizeviewportsize "Page. setViewportSize (ViewportSize) | Dramatiker-API-Referenz"    
-[PlaywrightSystemRequirements]: https://playwright.dev#?path=docs/intro.md&q=system-requirements "System Anforderungen für Dramatiker"  
+[PlaywrightMain]: https://playwright.dev "Playwright"  
+[PlaywrightAPIReference]: https://playwright.dev#?path=docs/api.md "Playwright-API-Referenz"  
+[PlaywrightAPIPageSetViewport]: https://playwright.dev#?path=docs%2Fapi.md&q=pagesetviewportsizeviewportsize "page.setViewportSize(viewportSize) | Playwright-API-Referenz"    
+[PlaywrightSystemRequirements]: https://playwright.dev#?path=docs/intro.md&q=system-requirements "Playwright System Requirements"  
 
-[PlaywrightRepo]: https://github.com/microsoft/playwright "Dramatiker | GitHub"  
-[PlaywrightRepoNewIssue]: https://github.com/microsoft/playwright/issues/new/choose "Neues Problem in Dramatiker-Repo | GitHub"  
+[PlaywrightRepo]: https://github.com/microsoft/playwright "Playwright | GitHub"  
+[PlaywrightRepoNewIssue]: https://github.com/microsoft/playwright/issues/new/choose "Neues Problem im Playwright-Repository | GitHub"  
 
 [WebKitMain]: https://webkit.org "WebKit"  
 
-[WikiHeadlessBrowser]: https://en.wikipedia.org/wiki/Headless_browser "Headless-Browser | Wikipedia"  
+[WikiHeadlessBrowser]: https://en.wikipedia.org/wiki/Headless_browser "Monitorlose Browser-| Wikipedia"  

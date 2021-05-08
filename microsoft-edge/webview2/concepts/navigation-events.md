@@ -3,17 +3,17 @@ description: Navigation
 title: Navigations-| WebView 2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/24/2021
+ms.date: 05/06/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, Webview2, Webview, wpf-Apps, Wpf, Microsoft Edge, ICoreWebView2, ICoreWebView2Host, Browsersteuerung, Edge-HTML
-ms.openlocfilehash: e87994d6205f81e01385a131e17091d0c8b001d5
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: d133bfb99808d0e036c4b46be9ef82039aee49eb
+ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11470844"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "11535706"
 ---
 # <a name="navigation-events"></a>Navigationsereignisse  
 
@@ -26,9 +26,9 @@ ms.locfileid: "11470844"
    :::column-end:::
 :::row-end:::  
 
-Navigationsereignisse werden ausgeführt, wenn bestimmte asynchrone Aktionen für den inhalt auftreten, der in einer WebView2-Instanz angezeigt wird.  Wenn ein WebView2-Benutzer beispielsweise zu einer neuen Website navigiert, lauscht der systemeigene Inhalt auf die Änderung mithilfe des `NavigationStarting` Ereignisses.  Wenn die Navigationsaktion abgeschlossen ist, `NavigationCompleted` wird ausgeführt.  Ein gutes Beispiel für Navigationsereignisse finden Sie unter Erste Schritte in [WebView2.][Webview2IndexGettingStarted]  
+Navigationsereignisse werden ausgeführt, wenn bestimmte asynchrone Aktionen für den inhalt auftreten, der in einer WebView2-Instanz angezeigt wird.  Wenn ein WebView2-Benutzer beispielsweise zu einer neuen Website navigiert, lauscht der systemeigene Inhalt auf die Änderung mithilfe des `NavigationStarting` Ereignisses.  Wenn die Navigationsaktion abgeschlossen ist, `NavigationCompleted` wird ausgeführt.  Ein gutes Beispiel für Navigationsereignisse finden Sie unter [WebView2 Erste Schritte Guide][Webview2IndexGetStarted].  
 
-<!--todo:  Move the relevant information out of the getting started guide to better focus the content and leave the most concise elements in the getting started guide.  -->   
+<!--todo:  Move the relevant information out of the get started guide to better focus the content and leave the most concise elements in the get started guide.  -->   
 
 Die normale Sequenz von Navigationsereignissen ist `NavigationStarting` , , , und dann `SourceChanged` `ContentLoading` `HistoryChanged` `NavigationCompleted` .  Die folgenden Ereignisse beschreiben den Status von WebView2 während jeder Navigation.  
 
@@ -66,8 +66,8 @@ Verwenden Sie zum Überwachen oder Abbrechen von Navigationsereignissen innerhal
 
 ## <a name="see-also"></a>Weitere Informationen  
 
-*   Um mit WebView2 zu beginnen, navigieren Sie zu [WebView2 Anleitungen für erste Schritte.][Webview2IndexGettingStarted]  
-*   Ein umfassendes Beispiel für WebView2-Funktionen finden Sie unter [WebView2Samples-Repository][GithubMicrosoftedgeWebview2samples] auf GitHub.  
+*   Um mit WebView2 zu beginnen, navigieren Sie zu [WebView2 Erste Schritte Guides.][Webview2IndexGetStarted]  
+*   Ein umfassendes Beispiel für WebView2-Funktionen finden Sie unter [WebView2Samples-Repository][GithubMicrosoftedgeWebview2samples] GitHub.  
 *   Weitere Informationen zu WebView2-APIs finden Sie unter [API-Referenz][DotnetApiMicrosoftWebWebview2WpfWebview2].  
 *   Weitere Informationen zu WebView2 finden Sie unter [WebView2 Resources][Webview2IndexNextSteps].  
 
@@ -77,7 +77,7 @@ Verwenden Sie zum Überwachen oder Abbrechen von Navigationsereignissen innerhal
 
 <!-- links -->  
 
-[Webview2IndexGettingStarted]: ../index.md#getting-started "Erste Schritte – Einführung in Microsoft Edge WebView2 | Microsoft Docs"  
+[Webview2IndexGetStarted]: ../index.md#get-started "Erste Schritte – Einführung in Microsoft Edge WebView2 | Microsoft Docs"  
 [Webview2IndexNextSteps]: ../index.md#next-steps "Nächste Schritte – Einführung in Microsoft Edge WebView2 | Microsoft Docs"  
 
 [DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "WebView2-Klasse | Microsoft Docs"  

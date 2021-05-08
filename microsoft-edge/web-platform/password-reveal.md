@@ -34,7 +34,7 @@ Der `password` Eingabetyp in Microsoft Edge enthält ein **Kennwort-Einschlussst
    :::column-end:::
 :::row-end:::  
 
-Standardmäßig wird die Schaltfläche **für die** Kennwortentsprechung in das Schatten-DOM aller HTML-Elemente mit dem Set `input` auf `type` `"password"` eingefügt.  Ab Microsoft Edge Version 87 [][DeployedgeMicrosoftEdgePoliciesPasswordrevealenabled] können Benutzer oder Unternehmen dieses Feature global deaktivieren.  Sie, Webdesigner und Entwickler, sollten erwarten, dass die meisten Microsoft Edge-Benutzer die Standarderfahrung haben.  
+Standardmäßig wird die Schaltfläche **für die** Kennwortentsprechung in das Schatten-DOM aller HTML-Elemente mit dem Set `input` auf `type` `"password"` eingefügt.  Ab Microsoft Edge Version 87 können Benutzer [][DeployedgeMicrosoftEdgePoliciesPasswordrevealenabled] oder Unternehmen dieses Feature global deaktivieren.  Sie, Webdesigner und Entwickler, sollten erwarten, dass die Microsoft Edge Benutzer die Standarderfahrung haben.  
 
 ## <a name="remove-the-password-reveal-control"></a>Entfernen des Kennwort-Einschlusssteuerelements  
 
@@ -83,4 +83,4 @@ Die **Schaltfläche für** die Kennwortentsprechung ist nicht verfügbar, wenn d
 
 <!-- links -->  
 
-[DeployedgeMicrosoftEdgePoliciesPasswordrevealenabled]: /deployedge/microsoft-edge-policies#passwordrevealenabled "PasswordRevealEnabled – Microsoft Edge – Richtlinien | Microsoft Docs"  
+[DeployedgeMicrosoftEdgePoliciesPasswordrevealenabled]: /deployedge/microsoft-edge-policies#passwordrevealenabled "PasswordRevealEnabled - Microsoft Edge - Richtlinien | Microsoft Docs"  

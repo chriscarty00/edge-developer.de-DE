@@ -26,7 +26,7 @@ CSS bietet in den letzten Jahren eine bessere Unterstützung für die Typografie
 
 Um die Arbeit mit Typografie zu vereinfachen, befindet sich jetzt ein visueller **Schriftarten-Editor** im **Bereich Formatvorlagen.**  Sie können ihre Schriftarteinstellungen ändern, und die Änderungen werden sofort im Browser gerendert.  Alle ohne ausführliche Kenntnisse von CSS.  
 
-Derzeit ist das Feature experimentell, und Sie müssen es für **Enable new font editor tool within the Styles pane** Microsoft Edge Developer Tools [aktivieren.][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]  
+Derzeit ist das Feature experimentell, und Sie müssen es für Microsoft Edge **Enable new font editor tool within the Styles pane** [aktivieren.][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]  
 
 Alle CSS im **Bereich Formatvorlagen,** entweder Schriftartdefinitionen oder Inlineformatvorlagen, zeigt automatisch ein Symbol an, das den visuellen **Schriftarten-Editor öffnet.**  Um den visuellen **Schriftarten-Editor zu öffnen,** wählen Sie das **Symbol Schriftart-Editor** aus.  
 

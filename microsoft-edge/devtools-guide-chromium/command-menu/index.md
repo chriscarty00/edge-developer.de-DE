@@ -1,6 +1,6 @@
 ---
 description: Eine Anleitung zum Öffnen des Befehlsmenüs, Ausführen von Befehlen, Überprüfen anderer Aktionen und vieles mehr.
-title: Ausführen von Befehlen mit dem Microsoft Edge DevTools-Befehlsmenü
+title: Ausführen von Befehlen Microsoft Edge DevTools-Befehlsmenü
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 02/12/2021
@@ -28,9 +28,9 @@ ms.locfileid: "11519191"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# <a name="run-commands-with-the-microsoft-edge-devtools-command-menu"></a>Ausführen von Befehlen mit dem Microsoft Edge DevTools-Befehlsmenü  
+# <a name="run-commands-with-the-microsoft-edge-devtools-command-menu"></a>Ausführen von Befehlen Microsoft Edge DevTools-Befehlsmenü  
 
-Das Befehlsmenü bietet eine schnelle Möglichkeit, die Microsoft Edge DevTools-Benutzeroberfläche zu navigieren und allgemeine Aufgaben auszuführen, z. B. das Deaktivieren [von JavaScript][JavascriptDisable].  Möglicherweise kennen Sie ein ähnliches Feature in Microsoft Visual Studio Code, die [Befehlspalette][VisualStudioCodeUICommandPalette], die die ursprüngliche Inspiration für das Befehlsmenü war.  
+Das Befehlsmenü bietet eine schnelle Möglichkeit, Microsoft Edge DevTools-Benutzeroberfläche zu navigieren und allgemeine Aufgaben wie das Deaktivieren [von JavaScript auszuführen.][JavascriptDisable]  Möglicherweise kennen Sie ein ähnliches Feature in Microsoft Visual Studio Code, der [Befehlspalette,][VisualStudioCodeUICommandPalette]die die ursprüngliche Inspiration für das Befehlsmenü war.  
 
 :::image type="complex" source="../media/command-menu-run-command-java.msft.png" alt-text="Verwenden des Befehlsmenüs zum Deaktivieren von JavaScript" lightbox="../media/command-menu-run-command-java.msft.png":::
    Verwenden des Befehlsmenüs zum Deaktivieren von JavaScript  
@@ -38,7 +38,7 @@ Das Befehlsmenü bietet eine schnelle Möglichkeit, die Microsoft Edge DevTools-
 
 ## <a name="open-the-command-menu"></a>Öffnen des Befehlsmenüs  
 
-Wählen `Control` + `Shift` + `P` Sie \(Windows, Linux\) oder `Command` + `Shift` + `P` \(macOS\) aus. Oder wählen **Sie Customize and Control DevTools** \( `...` \) > Run Command **aus.**  
+Wählen `Control` + `Shift` + `P` Sie \(Windows, Linux\) oder `Command` + `Shift` + `P` \(macOS\). Oder wählen **Sie Customize and Control DevTools** \( `...` \) > Run Command **aus.**  
 
 :::image type="complex" source="../media/command-menu-options-run-command.msft.png" alt-text="Befehl ausführen" lightbox="../media/command-menu-options-run-command.msft.png":::
    Befehl ausführen  
@@ -66,7 +66,7 @@ Löschen Sie `>` das Zeichen und den `?` Typ, um andere Aktionen anzuzeigen, die
 
 [JavascriptDisable]: ../javascript/disable.md "Deaktivieren von JavaScript mit Microsoft Edge DevTools | Microsoft Docs"  
 
-[VisualStudioCodeUICommandPalette]: https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette "Befehlspalette – Visual Studio Codebenutzeroberfläche"  
+[VisualStudioCodeUICommandPalette]: https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette "Befehlspalette – Visual Studio Code Benutzeroberfläche"  
 
 > [!NOTE]
 > Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  

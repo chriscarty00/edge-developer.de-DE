@@ -54,7 +54,7 @@ In diesem Abschnitt werden Ereignisse aufgeführt, die zur Kategorie Laden und d
 
 | Ereignis | Beschreibung |  
 |:--- |:--- |  
-| Analysieren von HTML |  Microsoft Edge hat den HTML-Analysealgorithmus durchgeführt. |  
+| Analysieren von HTML |  Microsoft Edge den HTML-Analysealgorithmus. |  
 | Beenden des Ladens |  Eine Netzwerkanforderung wurde abgeschlossen. |  
 | Empfangsdaten |  Daten für eine Anforderung wurden empfangen.  Es gibt mindestens ein Receive Data-Ereignis. |  
 | Antwort empfangen |  Die anfängliche HTTP-Antwort einer Anforderung. |  
@@ -139,7 +139,7 @@ In diesem Abschnitt werden Ereignisse aufgeführt, die zur Kategorie "Malen" und
 
 | Eigenschaft | Beschreibung |  
 |:--- |:--- |  
-| Ort | Bei Paint-Ereignissen werden die x- und y-Koordinaten des Farbrechtecks angezeigt. |  
+| Pfad | Bei Paint-Ereignissen werden die x- und y-Koordinaten des Farbrechtecks angezeigt. |  
 | Dimensionen | Bei Paint-Ereignissen die Höhe und Breite des gefärbten Bereich. |  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  

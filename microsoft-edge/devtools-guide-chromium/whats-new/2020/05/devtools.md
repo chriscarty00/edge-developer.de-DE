@@ -1,12 +1,12 @@
 ---
-description: Verwenden Sie die DevTools im Windows-Modus mit hohem Kontrast, passen Sie Tastenkombinationen in den DevTools an, Visual Studio Code zu ändern, und vieles mehr.
+description: Verwenden Sie die DevTools Windows modus mit hohem Kontrast, und passen Sie Tastenkombinationen in den DevTools an Visual Studio Code und vieles mehr.
 title: Neues in DevTools (Microsoft Edge 84)
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
 ms.openlocfilehash: 01d41fe5400dde427a0ac73870ace0e1211f429a
 ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
 ms.translationtype: MT
@@ -31,62 +31,62 @@ ms.locfileid: "11514389"
 
 ## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>Ankündigungen des Microsoft Edge DevTools-Teams  
 
-Die folgenden Abschnitte sind eine Liste der Ankündigungen, die Sie möglicherweise vom Microsoft Edge DevTools-Team verpasst haben.  Sehen Sie sich die Ankündigungen an, um neue Features in devTools, Microsoft Visual Studio Codeerweiterungen zu testen und vieles mehr.  Laden Sie die Microsoft Edge-Vorschaukanäle herunter, und folgen [][MicrosoftEdgePreviewChannels] Sie uns [auf Twitter,][EdgeDevToolsTwitterAccount]um über die neuesten und besten Features in Ihren Entwicklertools auf dem neuesten Stand zu bleiben.  
+Die folgenden Abschnitte sind eine Liste der Ankündigungen, die Sie möglicherweise vom DevTools-Microsoft Edge verpasst haben.  Sehen Sie sich die Ankündigungen an, um neue Features in den DevTools zu testen, Microsoft Visual Studio Codeerweiterungen und vieles mehr zu testen.  Laden Sie die Microsoft Edge-Vorschaukanäle herunter und folgen Sie uns [auf Twitter,][EdgeDevToolsTwitterAccount] [um auf][MicrosoftEdgePreviewChannels] dem neuesten stand zu bleiben.  
 
-### <a name="use-the-devtools-in-windows-high-contrast-mode"></a>Verwenden der DevTools im Windows-Modus mit hohem Kontrast
+### <a name="use-the-devtools-in-windows-high-contrast-mode"></a>Verwenden der DevTools im Windows modus mit hohem Kontrast
 
-Die Microsoft Edge DevTools werden jetzt im Modus mit hohem Kontrast angezeigt, wenn sich Windows im Modus mit hohem Kontrast befindet.  
+Die Microsoft Edge DevTools werden jetzt im Modus mit hohem Kontrast angezeigt, Windows sich im Modus mit hohem Kontrast befindet.  
 
-:::image type="complex" source="../../media/2020/05/high-contrast.msft.png" alt-text="Microsoft Edge DevTools im Modus mit hohem Kontrast" lightbox="../../media/2020/05/high-contrast.msft.png":::
-   Microsoft Edge DevTools im Modus mit hohem Kontrast  
+:::image type="complex" source="../../media/2020/05/high-contrast.msft.png" alt-text="Die Microsoft Edge DevTools im Modus mit hohem Kontrast" lightbox="../../media/2020/05/high-contrast.msft.png":::
+   Die Microsoft Edge DevTools im Modus mit hohem Kontrast  
 :::image-end:::  
 
-[Befolgen Sie die Anweisungen, um den Modus mit hohem Kontrast in Windows zu aktivieren.][MicrosoftSupportWindows10HighContrastMode]  Wählen Sie oder aus, um die DevTools in Microsoft Edge `F12` zu `Ctrl` + `Shift` + `I` öffnen.  Die DevTools werden im Modus mit hohem Kontrast angezeigt.  
+[Befolgen Sie die Anweisungen, um den Modus mit hohem Kontrast in Windows.][MicrosoftSupportWindows10HighContrastMode]  Wählen Sie zum Öffnen der DevTools in Microsoft Edge oder `F12` `Ctrl` + `Shift` + `I` aus.  Die DevTools werden im Modus mit hohem Kontrast angezeigt.  
 
 > [!NOTE]
-> Die Microsoft Edge DevTools unterstützen derzeit den Modus mit hohem Kontrast unter Windows, jedoch nicht unter macOS.  
+> Die Microsoft Edge DevTools unterstützen derzeit den Modus mit hohem Kontrast Windows macOS jedoch nicht.  
 
-[Chromium-Problem #1048378][CR1048378]  
+Chromium Problem [#1048378][CR1048378]  
 
-### <a name="match-keyboard-shortcuts-in-the-devtools-to-visual-studio-code"></a>Übereinstimmung von Tastenkombinationen in devTools mit Visual Studio Code  
+### <a name="match-keyboard-shortcuts-in-the-devtools-to-visual-studio-code"></a>Übereinstimmung von Tastenkombinationen in devTools zu Visual Studio Code  
 
-Aus Ihrem [Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) und dem [Chromium-Problemverfolgungstool][CRIssuesList]für öffentliche Fragen hat das Microsoft Edge DevTools-Team erfahren, dass Sie die Möglichkeit haben wollten, Tastenkombinationen in den DevTools anzupassen.  In Microsoft Edge 84 können Sie nun Tastenkombinationen in den DevTools mit [Visual Studio Code][VisualStudioCode]übereinstimmen. Dies ist nur eines der Features, an denen das Team für die Anpassung von Verknüpfungen arbeitet.  
+Aus Ihrem [Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) und Chromium öffentlichen Problemverfolgung hat das Microsoft Edge DevTools-Team [erfahren,][CRIssuesList]dass Sie die Möglichkeit haben möchten, Tastenkombinationen in den DevTools anzupassen.  In Microsoft Edge 84 können Sie jetzt Tastenkombinationen in den DevTools mit [Visual Studio Code][VisualStudioCode]übereinstimmen. Dies ist nur eines der Features, an denen das Team für die Anpassung von Verknüpfungen arbeitet.  
 
-:::image type="complex" source="../../media/2020/05/keyboard-shortcut.msft.png" alt-text="Übereinstimmung von Tastenkombinationen in devTools mit Visual Studio Code" lightbox="../../media/2020/05/keyboard-shortcut.msft.png":::
-   Microsoft Edge DevTools im Modus mit hohem Kontrast  
+:::image type="complex" source="../../media/2020/05/keyboard-shortcut.msft.png" alt-text="Übereinstimmung von Tastenkombinationen in devTools zu Visual Studio Code" lightbox="../../media/2020/05/keyboard-shortcut.msft.png":::
+   Die Microsoft Edge DevTools im Modus mit hohem Kontrast  
 :::image-end:::  
 
-Um das Experiment zu testen, öffnen Sie devTools-Einstellungen, indem Sie in der oberen rechten Ecke der DevTools das Symbol `?` ![ DevTools-Einstellungen auswählen oder ][ImageSettingsIcon] auswählen.  Navigieren Sie zum Abschnitt **Experimente,** und aktivieren Sie die Registerkarte Einstellungen für benutzerdefinierte Tastenkombinationen **aktivieren (erfordert neu laden).**  Laden Sie jetzt die DevTools neu, öffnen Sie die Einstellungen erneut, und navigieren Sie zum **Abschnitt Verknüpfungen.**  
+Um das Experiment zu testen, öffnen Sie DevTools Einstellungen, indem Sie das Symbol DevTools Einstellungen in der oberen rechten Ecke der DevTools auswählen oder `?` ![ ][ImageSettingsIcon] auswählen.  Navigieren Sie zum Abschnitt **Experimente,** und aktivieren Sie die Registerkarte Einstellungen für benutzerdefinierte Tastenkombinationen **aktivieren (erfordert neu laden).**  Laden Sie jetzt die DevTools neu, öffnen Einstellungen erneut, und navigieren Sie zum **Abschnitt Verknüpfungen.**  
 
-Wählen **Sie DevTools (Standard)** in der Dropdownliste **Verknüpfungen** abwählen aus, und wählen Sie **Visual Studio Code aus.**  Die Tastenkombinationen in den DevTools entsprechen jetzt den Verknüpfungen für entsprechende Aktionen in Visual Studio Code.  
+Wählen **Sie devTools (Standard)** in der Dropdownliste **Verknüpfungen** abwählen aus, und wählen Sie **Visual Studio Code**.  Die Tastenkombinationen in devTools entsprechen jetzt den Verknüpfungen für entsprechende Aktionen in Visual Studio Code.  
 
-Beispielsweise ist die Tastenkombination zum Anhalten oder Fortsetzen des Ausführens eines Skripts in [Visual Studio Code][VisualStudioCodeShortcuts] `F5` .  Mit der **Voreinstellung DevTools (Default)** ist dieselbe Verknüpfung in devTools, aber mit der voreingestellten `F8` Visual Studio **Code,** ist diese Verknüpfung jetzt auch `F5` .  
+Beispielsweise ist die Tastenkombination zum Anhalten oder Fortsetzen des Ausführens eines Skripts in [Visual Studio Code][VisualStudioCodeShortcuts] `F5` .  Bei der **Voreinstellung DevTools (Default)** ist dieselbe Verknüpfung in devTools, aber mit der Visual Studio Code ist diese Verknüpfung `F8` jetzt auch **** `F5` .  
 
 Das Feature ist derzeit in Microsoft Edge 84 als Experiment verfügbar, teilen Sie ihr Feedback daher bitte [mit](#getting-in-touch-with-microsoft-edge-devtools-team) dem Team!  
 
-[Chromium-#174309][CR174309]  
+Chromium Problem [#174309][CR174309]  
 
 ### <a name="remote-debug-surface-duo-emulators"></a>Remotedebugger von Surface Duo-Emulatoren  
 
-Sie können nun Remotedebuggern Ihrer Webinhalte, die im [Surface Duo-Emulator][DualScreensAndroidEmulator] ausgeführt werden, mithilfe der vollen Leistung von [Microsoft Edge DevTools][DevToolsChromiumGuide].  
+Sie können nun Remotedebuggern Ihrer Webinhalte, die im [Surface Duo-Emulator][DualScreensAndroidEmulator] ausgeführt werden, mithilfe der vollen Leistung der [Microsoft Edge DevTools][DevToolsChromiumGuide].  
 
-Mit dem [Surface Duo-Emulator][DualScreensAndroidEmulator]können Sie testen, wie Ihre Webinhalte auf einer neuen Klasse von zusammenklappbaren Und Dual-Screen-Geräten gerendert werden.  Der Emulator führt das Betriebssystem Android aus und stellt die [Microsoft Edge Android-App bereit.][AndroidEdge]  Laden Sie Ihre Webinhalte in der [Microsoft Edge-App, und][AndroidEdge] debuggen Sie sie mit [den Microsoft Edge DevTools][DevToolsChromiumGuide].  
+Mit dem [Surface Duo-Emulator][DualScreensAndroidEmulator]können Sie testen, wie Ihre Webinhalte auf einer neuen Klasse von zusammenklappbaren Und Dual-Screen-Geräten gerendert werden.  Der Emulator führt das Betriebssystem Android aus und stellt die Microsoft Edge [Android-App bereit.][AndroidEdge]  Laden Sie Ihre Webinhalte in [Microsoft Edge App,][AndroidEdge] und debuggen Sie sie [mit dem Microsoft Edge DevTools][DevToolsChromiumGuide].  
 
-:::image type="complex" source="../../media/2020/05/surface-duo-emulator.msft.png" alt-text="Die Microsoft Edge-App, die auf dem Surface Duo-Emulator ausgeführt wird" lightbox="../../media/2020/05/surface-duo-emulator.msft.png":::
-   Die Microsoft Edge-App auf dem Surface Duo-Emulator  
+:::image type="complex" source="../../media/2020/05/surface-duo-emulator.msft.png" alt-text="Die Microsoft Edge App, die auf dem Surface Duo-Emulator ausgeführt wird" lightbox="../../media/2020/05/surface-duo-emulator.msft.png":::
+   Die Microsoft Edge-App im Surface Duo-Emulator  
 :::image-end:::  
 
-Die Seite in einer Desktopinstanz von Microsoft Edge zeigt `edge://inspect` **surfaceDuoEmulator** mit einer Liste der geöffneten Registerkarten oder [PWAs,][PwaIndex] die auf dem [Surface Duo-Emulator ausgeführt werden.][DualScreensAndroidEmulator] [][DesktopEdge]  
+Die Seite in einer Desktopinstanz von Microsoft Edge zeigt `edge://inspect` **surfaceDuoEmulator** mit einer Liste der geöffneten Registerkarten oder [PWAs][PwaIndex] an, die im [Surface Duo-Emulator ausgeführt werden.][DualScreensAndroidEmulator] [][DesktopEdge]  
 
-:::image type="complex" source="../../media/2020/05/edge-inspect.msft.png" alt-text="Auf edge://inspect wird eine Liste der geöffneten Registerkarten in der Microsoft Edge-App angezeigt, die auf dem Emulator ausgeführt wird." lightbox="../../media/2020/05/edge-inspect.msft.png":::
-   Auf `edge://inspect` der Seite wird eine Liste der geöffneten Registerkarten in der Microsoft Edge-App angezeigt, die auf dem Emulator ausgeführt wird.
+:::image type="complex" source="../../media/2020/05/edge-inspect.msft.png" alt-text="Auf edge://inspect seite wird eine Liste der geöffneten Registerkarten in der Microsoft Edge app angezeigt, die auf dem Emulator ausgeführt wird" lightbox="../../media/2020/05/edge-inspect.msft.png":::
+   Auf der Seite wird eine Liste der geöffneten Registerkarten in der Microsoft Edge `edge://inspect` angezeigt, die auf dem Emulator ausgeführt wird.
 :::image-end:::  
 
-Wählen **Sie Überprüfen** nach der Registerkarte oder dem PWA aus, die Sie debuggen möchten, um die Microsoft Edge [DevTools zu öffnen.][DevToolsChromiumGuide]  [Befolgen Sie die schrittweise Anleitung zum Remotedebuggern Ihrer Webinhalte im Surface Duo-Emulator.][DevToolsRemoteDebugDuoEmulator]  
+Wählen **Sie überprüfen** nach der Registerkarte oder PWA, die Sie debuggen möchten, um die Microsoft Edge [DevTools zu öffnen.][DevToolsChromiumGuide]  [Befolgen Sie die schrittweise Anleitung zum Remotedebuggern Ihrer Webinhalte im Surface Duo-Emulator.][DevToolsRemoteDebugDuoEmulator]  
 
 ### <a name="resize-the-devtools-drawer-more-easily"></a>Ändern der Größe der DevTools-Schublade einfacher  
 
-In Microsoft Edge 83 oder früher konnten Sie die Größe der [DevTools-Drawer][DevToolsDrawer] nur ändern, indem Sie auf die Symbolleiste der Drawer zeigen.  Die Drawer hat sich anders verhalten als die anderen Größenänderungssteuerelemente für Bereiche in den DevTools, in denen Sie auf den Rahmen des Bereichs zeigen, um die Größe zu ändern.  Wählen Sie die folgende Abbildung aus, um die Größe der Drawer in Version 83 oder früher von Microsoft Edge zu ändern.  
+In Microsoft Edge 83 oder früheren Versionen konnten Sie die Größe der [DevTools-Drawer][DevToolsDrawer] nur ändern, indem Sie auf die Symbolleiste der Drawer zeigen.  Die Drawer hat sich anders verhalten als die anderen Größenänderungssteuerelemente für Bereiche in den DevTools, in denen Sie auf den Rahmen des Bereichs zeigen, um die Größe zu ändern.  Wählen Sie die folgende Abbildung aus, um zu zeigen, wie die Größe der Drawer in Version 83 oder früher als Microsoft Edge.  
 
 :::image type="complex" source="../../media/2020/05/drawer-83.msft.png" alt-text="Ändern der Größe der DevTools-Schublade in Microsoft Edge 83" lightbox="../../media/2020/05/drawer-83.msft.gif":::
    Ändern der Größe der DevTools-Schublade in Microsoft Edge 83
@@ -94,7 +94,7 @@ In Microsoft Edge 83 oder früher konnten Sie die Größe der [DevTools-Drawer][
 
 <!--todo:  create png that represents the gif information  -->  
 
-Ab Microsoft Edge 84 können Sie nun die Größe der Drawer ändern, indem Sie auf den Rahmen der Drawer zeigen.  Diese Änderung richtet das Verhalten der Größenänderung der DevTools-Drawer an der Art und Weise aus, wie Sie die Größe anderer Bereiche in devTools ändern.  Wählen Sie das folgende Bild aus, um die Größe in Aktion in Microsoft Edge 84 zu ändern.  
+Ab Microsoft Edge 84 können Sie nun die Größe der Drawer ändern, indem Sie auf den Rahmen der Drawer zeigen.  Diese Änderung richtet das Verhalten der Größenänderung der DevTools-Drawer an der Art und Weise aus, wie Sie die Größe anderer Bereiche in devTools ändern.  Wählen Sie das folgende Bild aus, um die Größenänderung in Aktion in Microsoft Edge 84.  
 
 :::image type="complex" source="../../media/2020/05/drawer-84.msft.png" alt-text="Ändern der Größe der DevTools-Schublade in Microsoft Edge 84" lightbox="../../media/2020/05/drawer-84.msft.gif":::
    Ändern der Größe der DevTools-Schublade in Microsoft Edge 84
@@ -102,43 +102,43 @@ Ab Microsoft Edge 84 können Sie nun die Größe der Drawer ändern, indem Sie a
 
 <!--todo:  create png that represents the gif information  -->  
 
-[Chromium-#1076112][CR1076112]  
+Chromium Problem [#1076112][CR1076112]  
 
 ### <a name="screencasting-navigation-buttons-display-focus"></a>Bildschirmcastnavigationsschaltflächen zeigen den Fokus an  
 
-Beim Remotedebugieren eines [Android-Geräts,][DevToolsRemoteDebugAndroid]eines Windows [10-Geräts][DevToolsRemoteDebugWindows]oder eines Surface [Duo-Emulators][DevToolsRemoteDebugDuoEmulator]können Sie screencasting mit dem Symbol Umschaltbildschirm in der oberen linken Ecke der ![ ][ImageScreencastingIcon] DevTools umschalten.  Wenn die Screencasting aktiviert ist, können Sie über das DevTools-Fenster auf der Registerkarte in Microsoft Edge auf dem Remotegerät navigieren.  In Microsoft Edge 84 sind diese Navigationsschaltflächen jetzt auch über die Tastatur zugänglich.  
+Beim Remotedebugieren eines [Android-Geräts,][DevToolsRemoteDebugAndroid]eines [Windows 10-Geräts][DevToolsRemoteDebugWindows]oder eines Surface [Duo-Emulators][DevToolsRemoteDebugDuoEmulator]können Sie screencasting mit dem Symbol Umschaltbildschirm in der oberen linken Ecke der DevTools umschalten. ![ ][ImageScreencastingIcon]  Wenn die Screencasting aktiviert ist, können Sie über das DevTools-Fenster Microsoft Edge Registerkarte auf dem Remotegerät navigieren.  In Microsoft Edge 84 sind diese Navigationsschaltflächen jetzt auch über die Tastatur zugänglich.  
 
 :::image type="complex" source="../../media/2020/05/screencasting-nav.msft.png" alt-text="Wählen Sie Umschalt+Tab aus der bildschirmcastierten URL-Leiste zeigt den Fokus auf der Schaltfläche Aktualisieren an." lightbox="../../media/2020/05/screencasting-nav.msft.png":::
    Select `Shift` + `Tab` from the screencasted URL bar shows focus on the **Refresh** button
 :::image-end:::  
 
-[Chromium-#1081486][CR1081486]  
+Chromium Problem [#1081486][CR1081486]  
 
 ### <a name="network-panel-details-pane-is-now-accessible"></a>Zugriff auf den Detailbereich des Netzwerkbereichs  
 
-In Microsoft Edge 84 steht **** der [Detailbereich][DevToolsNetworkDetails] im Netzwerktool jetzt im Fokus, wenn Sie ihn für eine Ressource im [Netzwerkprotokoll öffnen.][DevToolsNetworkLog]  Mit dieser Änderung können Bildschirmlesegeräte den Inhalt des Detailbereichs **vorlesen und mit ihnen** interagieren.  
+In Microsoft Edge 84 wird [][DevToolsNetworkDetails] nun der **** Fokus auf den Detailbereich im Netzwerktool fokussieren, wenn Sie ihn für eine Ressource im [Netzwerkprotokoll öffnen.][DevToolsNetworkLog]  Mit dieser Änderung können Bildschirmlesegeräte den Inhalt des Detailbereichs **vorlesen und mit ihnen** interagieren.  
 
 :::image type="complex" source="../../media/2020/05/network-details.msft.png" alt-text="Der Detailbereich im Netzwerkbereich hat beim Öffnen den Fokus" lightbox="../../media/2020/05/network-details.msft.png":::
    Der **Detailbereich** im **Netzwerktool** hat beim Öffnen den Fokus
 :::image-end:::  
 
-[Chromium-#963183][CR963183]  
+Chromium Problem [#963183][CR963183]  
 
 ## <a name="announcements-from-the-chromium-project"></a>Ankündigungen aus dem Chromium-Projekt  
 
-In den folgenden Abschnitten werden zusätzliche Features angekündigt, die in Microsoft Edge 84 verfügbar sind und zum Open Source Chromium-Projekt beigetragen haben.  
+In den folgenden Abschnitten werden zusätzliche features angekündigt, die in Microsoft Edge 84 verfügbar sind, die zum Open Source-Chromium wurden.  
 
 ### <a name="fix-site-issues-with-the-new-issues-tool-in-the-devtools-drawer"></a>Beheben von Websiteproblemen mit dem neuen Problemtool in der DevTools-Schublade
 
-Das neue **Problemtool** in der DevTools-Schublade wurde erstellt, um die Benachrichtigungsmüdigkeit und unübersichtlich der Konsole **zu reduzieren.**  Derzeit ist **die Konsole** der zentrale Ort für Websiteentwickler, Bibliotheken, Frameworks und Microsoft Edge zum Protokollieren von Nachrichten, Warnungen und Fehlern.  Das **Problemtool** aggregiert Warnungen aus dem Browser auf strukturierte, aggregierte und aktionsfähige Weise, links zu betroffenen Ressourcen in Microsoft Edge DevTools und bietet Anleitungen zum Beheben der Probleme.  Im Laufe der Zeit werden immer mehr Warnungen in Microsoft Edge im Tool Probleme und nicht in der Konsole **angezeigt,** was dazu beitragen sollte, die Unübersichtlichkeit in der Konsole **zu reduzieren.** ****  
+Das neue **Problemtool** in der DevTools-Schublade wurde erstellt, um die Benachrichtigungsmüdigkeit und unübersichtlich der Konsole **zu reduzieren.**  Derzeit ist **die Konsole** der zentrale Ort für Websiteentwickler, Bibliotheken, Frameworks und Microsoft Edge zum Protokollieren von Nachrichten, Warnungen und Fehlern.  Das **Problemtool** aggregiert Warnungen aus dem Browser auf strukturierte, aggregierte und aktionsfähige Weise, Links zu betroffenen Ressourcen innerhalb von Microsoft Edge DevTools und bietet Anleitungen zum Beheben der Probleme.  Im Laufe der Zeit werden immer mehr Warnungen **** in Microsoft Edge im Problemtool und nicht in der Konsole **angezeigt,** was dazu beitragen sollte, die Unübersichtlichkeit in der Konsole **zu reduzieren.**  
 
-Navigieren Sie zu Suchen und Beheben von Problemen mit dem [Microsoft Edge DevTools-Tool,][DevtoolsIssuesIndex]um zu beginnen.  
+Navigieren Sie zu Suchen und Beheben von Problemen mit dem Tool [Microsoft Edge DevTools Issues][DevtoolsIssuesIndex].  
 
 :::image type="complex" source="../../media/2020/05/issues.msft.png" alt-text="Das Tool Probleme in der DevTools-Schublade" lightbox="../../media/2020/05/issues.msft.png":::
    Das **Tool Probleme** in der DevTools-Schublade  
 :::image-end:::  
 
-[Chromium-Problem #1068116][CR1068116]  
+Chromium Problem [#1068116][CR1068116]  
 
 ### <a name="view-accessibility-information-in-the-inspect-mode-tooltip"></a>Anzeigen von Barrierefreiheitsinformationen in der QuickInfo zum Überprüfungsmodus  
 
@@ -152,7 +152,7 @@ Die **QuickInfo zum Überprüfen des** Modus gibt [][WebhintHintsAxeNameRoleValu
   Die **QuickInfo zum Überprüfen des Modus** mit Barrierefreiheitsinformationen  
 :::image-end:::  
 
-[Chromium-#1040025][CR1040025]  
+Chromium Problem [#1040025][CR1040025]  
 
 ### <a name="performance-panel-updates"></a>Aktualisierungen des Leistungsbereichs  
 
@@ -168,13 +168,13 @@ Verwenden Sie nicht den Seitenaktualisierungssymbolworkflow aktualisieren, um In
 
 Wählen Sie stattdessen **Datensatzsymbol** aus, laden Sie die Seite manuell neu, warten Sie, bis die Seite geladen wird, und beenden ![ Sie dann die ][ImageRecordIcon] Aufzeichnung.  
 
-Wenn angezeigt wird, hat Microsoft Edge DevTools nicht die erforderlichen Informationen aus den internen `Total Blocking Time: Unavailable` Profilerstellungsdaten in Microsoft Edge erhalten.  
+Wenn angezeigt wird, Microsoft Edge DevTools nicht die erforderlichen Informationen aus den internen `Total Blocking Time: Unavailable` Profilerstellungsdaten in Microsoft Edge.  
 
 :::image type="complex" source="../../media/2020/05/tbt.msft.png" alt-text="Informationen zur Blockierungszeit insgesamt in der Fußzeile einer Aufzeichnung des Leistungsbereichs" lightbox="../../media/2020/05/tbt.msft.png":::
    Informationen zur Blockierungszeit insgesamt in der Fußzeile einer **Aufzeichnung des Leistungsbereichs**  
 :::image-end:::  
 
-[Chromium-#1054381][CR1054381]  
+Chromium Problem [#1054381][CR1054381]  
 
 #### <a name="layout-shift-events-in-the-new-experience-section"></a>Layout Shift-Ereignisse im Abschnitt neue Besen  
 
@@ -197,7 +197,7 @@ Bei der Protokollierung eines `Promise` hat **die Konsole** fälschlicherweise d
    Ein Beispiel für die **Konsole** mit der alten `resolved` Terminologie  
 :::image-end:::  
 
-Die **Konsole** verwendet nun den Begriff `fulfilled` , der an der Spezifikation ausgerichtet `Promise` ist.  Weitere Informationen zur Spezifikation `Promise` finden Sie unter States and [Fates auf GitHub](https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md).  
+Die **Konsole** verwendet nun den Begriff `fulfilled` , der an der Spezifikation ausgerichtet `Promise` ist.  Weitere Informationen zur Spezifikation `Promise` finden Sie unter States and [Fates on GitHub](https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md).  
 
 :::image type="complex" source="../../media/2020/05/fulfilled.msft.png" alt-text="Ein Beispiel für die Konsole mit der neuen erfüllten Terminologie" lightbox="../../media/2020/05/fulfilled.msft.png":::
   Ein Beispiel für die **Konsole** mit der neuen `fulfilled` Terminologie  
@@ -215,7 +215,7 @@ Die Benutzeroberfläche für die **** automatische Vervollständigung des Bereic
   Festlegen des Werts einer eigenschaft, die zurückgesetzt werden soll  
 :::image-end:::  
 
-[Chromium-#1075437][CR1075437]  
+Chromium Problem [#1075437][CR1075437]  
 
 #### <a name="image-previews"></a>Bildvorschau  
 
@@ -225,7 +225,7 @@ Zeigen Sie auf einen Wert im Bereich Formatvorlagen, um eine Vorschau des `backg
   Zeigen auf einen `background-image` Wert  
 :::image-end:::  
 
-[Chromium-#1040019][CR1040019]  
+Chromium Problem [#1040019][CR1040019]  
 
 #### <a name="color-picker-now-uses-space-separated-functional-color-notation"></a>Die Farbauswahl verwendet jetzt eine durch Leerzeichen getrennte funktionale Farbtonation.  
 
@@ -243,7 +243,7 @@ Microsoft Edge DevTools verwendet die neue Syntax, da bevorstehende #A0 wie [col
 
 Die Syntax des durch Leerzeichen getrennten Arguments wird in den meisten Browsern seit einer Weile unterstützt.  Weitere Informationen finden Sie unter [Can I use: Space-separated functional color notations?][CaniuseMDNSpaceSeparatedFunctionalColorNotations]  
 
-[Chromium-#1072952][CR1072952]  
+Chromium Problem [#1072952][CR1072952]  
 
 ### <a name="deprecation-of-the-properties-pane-in-the-elements-panel"></a>Veraltetes Anzeigen des Eigenschaftenbereichs im Elementbereich  
 
@@ -272,9 +272,9 @@ Mithilfe von App-Verknüpfungen können Benutzer häufige oder empfohlene Aufgab
 
 ## <a name="download-the-microsoft-edge-preview-channels"></a>Herunterladen der Microsoft Edge-Vorschaukanäle  
 
-Wenn Sie unter Windows oder macOS sind, sollten Sie die [Microsoft Edge-Vorschaukanäle][MicrosoftEdgePreviewChannels] als Standardentwicklungsbrowser verwenden.  Über die Vorschaukanäle erhalten Sie Zugriff auf die neuesten DevTools-Features.  
+Wenn Sie sich auf Windows oder macOS befinden, sollten Sie die Microsoft Edge Vorschaukanäle [als][MicrosoftEdgePreviewChannels] Standardentwicklungsbrowser verwenden.  Über die Vorschaukanäle erhalten Sie Zugriff auf die neuesten DevTools-Features.  
 
-## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Kontakt zum Microsoft Edge Devtools-Team  
+## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Kontakt mit Microsoft Edge Devtools-Team  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
@@ -294,38 +294,38 @@ Wenn Sie unter Windows oder macOS sind, sollten Sie die [Microsoft Edge-Vorschau
 [DevtoolsCssReferenceColorPicker]: /microsoft-edge/devtools-guide-chromium/css/reference#change-colors-with-the-color-picker "Ändern von Farben mit der Farbauswahl – CSS-Referenz | Microsoft Docs"  
 [DevToolsDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "Drawer – Customize Overview | Microsoft Docs"  
 [DevToolsChromiumGuide]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) -Entwicklertools | Microsoft Docs"  
-[DevtoolsIssuesIndex]: /microsoft-edge/devtools-guide-chromium/issues/index "Suchen und Beheben von Problemen mit der Registerkarte Microsoft Edge DevTools-Probleme | Microsoft Docs"  
-[DevToolsRemoteDebugAndroid]: /microsoft-edge/devtools-guide-chromium/remote-debugging/index "Erste Schritte mit remote debuggen von Android-Geräten | Microsoft Docs"  
-[DevToolsRemoteDebugDuoEmulator]: /microsoft-edge/devtools-guide-chromium/remote-debugging/surface-duo-emulator "Erste Schritte mit Remotedebugieren von Surface Duo-Emulatoren | Microsoft Docs"  
-[DevToolsRemoteDebugWindows]: /microsoft-edge/devtools-guide-chromium/remote-debugging/windows "Erste Schritte mit remote debugging Windows 10 Devices | Microsoft Docs"  
+[DevtoolsIssuesIndex]: /microsoft-edge/devtools-guide-chromium/issues/index "Suchen und Beheben von Problemen mit Microsoft Edge Der Registerkarte &quot;DevTools-Probleme&quot; | Microsoft Docs"  
+[DevToolsRemoteDebugAndroid]: /microsoft-edge/devtools-guide-chromium/remote-debugging/index "Erste Schritte remote debugging android devices | Microsoft Docs"  
+[DevToolsRemoteDebugDuoEmulator]: /microsoft-edge/devtools-guide-chromium/remote-debugging/surface-duo-emulator "Erste Schritte remote Debuggen von Surface Duo-Emulatoren | Microsoft Docs"  
+[DevToolsRemoteDebugWindows]: /microsoft-edge/devtools-guide-chromium/remote-debugging/windows "Erste Schritte remote debugging Windows 10 Devices | Microsoft Docs"  
 [DevToolsNetworkDetails]: /microsoft-edge/devtools-guide-chromium/network/index#inspect-the-details-of-the-resource "Überprüfen Sie die Details der | Microsoft Docs"  
 [DevToolsNetworkLog]: /microsoft-edge/devtools-guide-chromium/network/index#log-network-activity "Protokollieren von Netzwerkaktivitäts| Microsoft Docs"  
-[PwaIndex]: /microsoft-edge/progressive-web-apps-chromium/index "Progressive Web Apps unter Windows | Microsoft Docs"  
+[PwaIndex]: /microsoft-edge/progressive-web-apps-chromium/index "Progressive Web Apps auf Windows | Microsoft Docs"  
 <!--[DevtoolsWhatsNew201901Inspect]: /microsoft-edge/devtools-guide-chromium/whats-new/2019/01/devtools#inspect "Detailed tooltips in Inspect Mode - What's New In DevTools (Edge 73) | Microsoft Docs"  -->  
 
-[AndroidEdge]: https://play.google.com/store/apps/details?id=com.microsoft.emmx "Microsoft Edge Android App"
+[AndroidEdge]: https://play.google.com/store/apps/details?id=com.microsoft.emmx "Microsoft Edge Android-App"
 
 [CaniuseMDNSpaceSeparatedFunctionalColorNotations]: https://caniuse.com/#feat=mdn-css_types_color_space_separated_functional_notation "Durch Leerzeichen getrennte funktionale Farb notationen – MDN-| Kann ich verwenden"  
 
 [CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chromium-Fehler"
 
-[CR174309]: https://crbug.com/174309 "DevTools: Ermöglicht das Anpassen von Tastenkombinationen/Tastenkombinationen | Chromium-Fehler"  
-[CR963183]: https://crbug.com/963183 "DevTools sind nicht WCAG-kompatible | Chromium-Fehler"  
-[CR1040019]: https://crbug.com/1040019 "DevTools: Einfache Vorschau von Bildern und Hintergrundbildern im Formatvorlagenbereich | Chromium-Fehler"  
-[CR1040025]: https://crbug.com/1040025 "DevTools: Zeigen Sie grundlegende a11y-Informationen in Elementpopover-| Chromium-Fehler"  
-[CR1048378]: https://crbug.com/1048378 "DevTools UI-Unterstützung für den Modus &quot;Hoher Kontrast&quot; | Chromium-Fehler"  
-[CR1054381]: https://crbug.com/1054381 "CR 1054381 | Chromium-Fehler"  
-[CR1068116]: https://crbug.com/1068116 "Problembereich für | Chromium-Fehler"  
-[CR1072952]: https://crbug.com/1072952 "DevTools: Die Farbauswahl sollte eine moderne CSS-Farbsyntax | Chromium-Fehler"  
-[CR1075437]: https://crbug.com/1075437 "DevTools: Fügen Sie Unterstützung für das Schlüsselwort/den Wert der CSS-| Chromium-Fehler"  
+[CR174309]: https://crbug.com/174309 "DevTools: Ermöglicht das Anpassen von Tastenkombinationen/Tastenkombinationen | Chromium Fehler"  
+[CR963183]: https://crbug.com/963183 "DevTools sind nicht WCAG-kompatible | Chromium Fehler"  
+[CR1040019]: https://crbug.com/1040019 "DevTools: Einfache Vorschau von Bildern und Hintergrundbildern im Formatvorlagenbereich | Chromium Fehler"  
+[CR1040025]: https://crbug.com/1040025 "DevTools: Zeigen Sie grundlegende a11y-Informationen in Elementpopover-| Chromium Fehler"  
+[CR1048378]: https://crbug.com/1048378 "DevTools UI-Unterstützung für den Modus &quot;Hoher Kontrast&quot; | Chromium Fehler"  
+[CR1054381]: https://crbug.com/1054381 "CR 1054381 | Chromium Fehler"  
+[CR1068116]: https://crbug.com/1068116 "Problembereich für | Chromium Fehler"  
+[CR1072952]: https://crbug.com/1072952 "DevTools: Die Farbauswahl sollte eine moderne CSS-Farbsyntax | Chromium Fehler"  
+[CR1075437]: https://crbug.com/1075437 "DevTools: Fügen Sie Unterstützung für das Schlüsselwort/den Wert der CSS-| Chromium Fehler"  
 [CR1076112]: https://crbug.com/1076112 "Devtools-Personalisierung – Größenanpassung der Schublade"  
-[CR1081486]: https://crbug.com/1081486 "Der Tastaturfokus ist für Navigationsschaltflächen im Screencastmodus nicht | Chromium-Fehler"  
+[CR1081486]: https://crbug.com/1081486 "Der Tastaturfokus ist für Navigationsschaltflächen im Screencastmodus nicht | Chromium Fehler"  
 [CRV86751]: https://bugs.chromium.org/p/v8/issues/detail?id=6751 "PromiseStatus sollte &quot;erfüllt&quot; und nicht &quot;aufgelöst&quot; | V8-Fehler"  
 
 [CSSWGDraftsColor4Changes3]: https://drafts.csswg.org/css-color#changes-from-3 "Änderungen von Farben 3 – CSS Color Module Level 4 | W3C CSS Working Group Editor Drafts"  
 [CSSWGDraftsColor4Property]: https://drafts.csswg.org/css-color#the-color-property "3. Vordergrundfarbe: die &quot;Farbe&quot; - CSS Color Module Level 4 | W3C CSS Working Group Editor Drafts"  
 
-[DesktopEdge]: https://www.microsoft.com/edge/ "Einführung in das neue Microsoft Edge"  
+[DesktopEdge]: https://www.microsoft.com/edge/ "Einführung in die Microsoft Edge"  
 
 [GithubDomenicPromiseUnwrappingStatesFates]: https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md "States and Fates – domenic/promises-unwrapping | GitHub"  
 
@@ -333,7 +333,7 @@ Wenn Sie unter Windows oder macOS sind, sollten Sie die [Microsoft Edge-Vorschau
 [MDNRevertBrowserCompatibility]: https://developer.mozilla.org/docs/Web/CSS/revert#Browser_compatibility "Browserkompatibilität | MDN"  
 
 [VisualStudioCode]: https://code.visualstudio.com/ "Visual Studio Code"  
-[VisualStudioCodeShortcuts]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Visual Studio Tastenkombinationen für Windows"  
+[VisualStudioCodeShortcuts]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Visual Studio Code Tastenkombinationen für Windows"  
 
 [WebhintHintsAxeKeyboard]: https://webhint.io/docs/user-guide/hints/hint-axe/keyboard/ "Axe: Tastatur | WebHint"  
 [WebhintHintsAxeNameRoleValue]: https://webhint.io/docs/user-guide/hints/hint-axe/name-role-value/ "Axe: Name Role Value | WebHint"  
@@ -343,7 +343,7 @@ Wenn Sie unter Windows oder macOS sind, sollten Sie die [Microsoft Edge-Vorschau
 [PostTweetEdgeDevTools]: https://aka.ms/tweet/edgedevtools "@EdgeDevTools | Veröffentlichen eines Tweets"  
 [EdgeDevToolsTwitterAccount]: https://aka.ms/twitter/edgedevtools "@EdgeDevTools Twitter-Konto"  
 [GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://aka.ms/edgedevtoolsdocs/feedback "Neues Problem – MicrosoftDocs/edge-developer"  
-[MicrosoftEdgePreviewChannels]: https://aka.ms/microsoftedge "Microsoft Edge Preview Channels"  
+[MicrosoftEdgePreviewChannels]: https://aka.ms/microsoftedge "Microsoft Edge Vorschaukanäle"  
 [TheWebWeWant]: https://aka.ms/webwewant "The Web We Want"  
 
 <!--[WebdevAppShortcuts]: https://alphabet-dev/app-shortcuts "Get things done quickly with app shortcuts | alphabet-dev"  -->  

@@ -46,6 +46,6 @@ Mithilfe der [Microsoft Edge DevTools][DevtoolsIndex]können Sie diese Einstellu
     
 <!-- links -->  
 
-[DevtoolsIndex]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
+[DevtoolsIndex]: ../index.md "Microsoft Edge (Chromium) -Entwicklertools | Microsoft Docs"  
 
 [MDNPrefersReducedMotion]: https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion "bevorzugt eine reduzierte Bewegungserkennung | MDN"  

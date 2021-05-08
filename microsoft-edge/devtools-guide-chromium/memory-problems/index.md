@@ -1,6 +1,6 @@
 ---
-description: Erfahren Sie, wie Sie Microsoft Edge und DevTools verwenden, um Speicherprobleme zu finden, die sich auf die Seitenleistung auswirken, z. B. Speicherverluste, Speicherbloat und häufige Garbage Collections.
-title: Beheben von Speicherproblemen
+description: Erfahren Sie, wie Microsoft Edge und DevTools verwendet werden, um Speicherprobleme zu finden, die sich auf die Seitenleistung auswirken, z. B. Speicherverluste, Speicherbloat und häufige Garbage Collections.
+title: Beheben von Arbeitsspeicherproblemen
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 02/12/2021
@@ -28,13 +28,13 @@ ms.locfileid: "11397832"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# <a name="fix-memory-problems"></a>Beheben von Speicherproblemen  
+# <a name="fix-memory-problems"></a>Beheben von Arbeitsspeicherproblemen  
 
-Erfahren Sie, wie Sie Microsoft Edge und DevTools verwenden, um Speicherprobleme zu finden, die sich auf die Seitenleistung auswirken, z. B. Speicherverluste, Speicherbloat und häufige Garbage Collections.  
+Erfahren Sie, wie Microsoft Edge und DevTools verwendet werden, um Speicherprobleme zu finden, die sich auf die Seitenleistung auswirken, z. B. Speicherverluste, Speicherbloat und häufige Garbage Collections.  
 
 ### <a name="summary"></a>Zusammenfassung  
 
-*   Erfahren Sie, wie viel Arbeitsspeicher Ihre Seite derzeit mit dem Microsoft Edge Browser Task Manager verwendet.  
+*   Erfahren Sie, wie viel Arbeitsspeicher Ihre Seite derzeit mit dem Microsoft Edge-Task-Manager verwendet.  
 *   Visualisieren Sie die Speichernutzung im Laufe der Zeit mit **dem Speicherbereich.**  
 *   Identifizieren von getrennten DOM-Baumstrukturen \(eine häufige Ursache für Speicherverluste\) mit **Heap-Momentaufnahme**.  
 *   Erfahren Sie, wann neuer Arbeitsspeicher im JavaScript-Heap \(JS-Heap\) mit **Zuweisungsinstrumentation auf der Zeitachse zugewiesen wird.**  
@@ -59,17 +59,17 @@ Es gibt hier keine schwierigen Zahlen, da unterschiedliche Geräte und Browser u
 
 Der Schlüssel hier ist, das RAIL-Modell zu verwenden und sich auf Ihre Benutzer zu konzentrieren.  Erfahren Sie, welche Geräte bei Ihren Benutzern beliebt sind, und testen Sie dann Ihre Seite auf diesen Geräten.  Wenn die Erfahrung konsistent schlecht ist, übersteigt die Seite möglicherweise die Speicherfunktionen dieser Geräte.  
 
-## <a name="monitor-memory-use-in-realtime-with-the-microsoft-edge-browser-task-manager"></a>Überwachen der Arbeitsspeichernutzung in Echtzeit mit dem Microsoft Edge Browser Task Manager  
+## <a name="monitor-memory-use-in-realtime-with-the-microsoft-edge-browser-task-manager"></a>Überwachen der Speichernutzung in Echtzeit mit dem Microsoft Edge Browser Task Manager  
 
-Verwenden Sie den Microsoft Edge Browser Task Manager als Ausgangspunkt für ihre Speicherproblemuntersuchung.  Der Microsoft Edge Browser Task Manager ist ein Echtzeitmonitor, der Ihnen mitteilt, wie viel Arbeitsspeicher eine Seite derzeit verwendet.  
+Verwenden Sie Microsoft Edge Browser Task Manager als Ausgangspunkt für ihre Speicherproblemuntersuchung.  Der Microsoft Edge Browser Task Manager ist ein Echtzeitmonitor, der Ihnen mitteilt, wie viel Arbeitsspeicher eine Seite derzeit verwendet.  
 
-1.  Wählen `Shift` + `Esc` Oder navigieren Sie zum Hauptmenü von Microsoft Edge, und wählen Sie **Weitere Tools**Browser Task Manager aus, um  >  **** den Microsoft Edge Browser Task Manager zu öffnen.  
+1.  Wählen Oder navigieren Sie zum hauptmenü Microsoft Edge und wählen Sie Weitere Tools Browser Task Manager aus, um den `Shift` + `Esc` ****  >  **** Microsoft Edge-Task-Manager zu öffnen.  
     
-    :::image type="complex" source="../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png" alt-text="Öffnen des Microsoft Edge-Browser-Task-Managers" lightbox="../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png":::
-       Abbildung 1: Öffnen des Microsoft Edge-Browser-Task-Managers  
+    :::image type="complex" source="../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png" alt-text="Öffnen des Microsoft Edge Browser Task Manager" lightbox="../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png":::
+       Abbildung 1: Öffnen Microsoft Edge Browser Task Manager  
     :::image-end:::  
     
-1.  Zeigen Sie auf die Tabellenkopfzeile des Microsoft Edge-Browser-Task-Managers, öffnen Sie das Kontextmenü \(mit der rechten Maustaste\), und aktivieren Sie **den JavaScript-Speicher.**  
+1.  Zeigen Sie auf die Tabellenkopfzeile des Microsoft Edge-Browser-Task-Managers, öffnen Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste\), und aktivieren Sie **den JavaScript-Speicher**.  
     
     :::image type="complex" source="../media/memory-problems-bing-browser-task-manager-javascript-memory.msft.png" alt-text="Aktivieren des JavaScript-Speichers" lightbox="../media/memory-problems-bing-browser-task-manager-javascript-memory.msft.png":::
        Abbildung 2: Aktivieren des JavaScript-Speichers  

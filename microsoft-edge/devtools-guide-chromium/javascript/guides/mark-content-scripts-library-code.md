@@ -1,5 +1,5 @@
 ---
-description: Aktivieren Sie "Markieren von Inhaltsskripts als Bibliothekscode" unter Einstellungen > Framework Library Code.
+description: Aktivieren Sie "Markieren von Inhaltsskripts als Bibliothekscode" Einstellungen > Framework Library Code.
 title: Markieren von Inhaltsskripts als Bibliothekscode
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -30,10 +30,10 @@ ms.locfileid: "11519345"
 
 # <a name="mark-content-scripts-as-library-code"></a>Markieren von Inhaltsskripts als Bibliothekscode  
 
-Wenn Sie das Tool **Quellen** verwenden, um Code zu [durchschritten,][DevToolsJavascriptStepThroughCode]unterbrechen Sie manchmal code, den Sie nicht erkennen.  Wahrscheinlich haben Sie den Code für eine der installierten Microsoft Edge-Erweiterungen angehalten.  Führen Sie die folgenden Aktionen aus, um den Erweiterungscode nicht anzuhalten.  
+Wenn Sie das Tool **Quellen** verwenden, um Code zu [durchschritten,][DevToolsJavascriptStepThroughCode]unterbrechen Sie manchmal code, den Sie nicht erkennen.  Wahrscheinlich haben Sie den Code für eine der installierten Microsoft Edge angehalten.  Führen Sie die folgenden Aktionen aus, um den Erweiterungscode nicht anzuhalten.  
 
-1.  Wählen Sie in DevTools oben rechts das Zahnradsymbol ( Einstellungen )**aus.**  Die Seite **Einstellungen** wird angezeigt.  
-1.  Wählen **Sie unter Einstellungen**die Option Liste ignorieren **aus.**  Der **Abschnitt Framework Library Code** in **Einstellungen** wird angezeigt.  
+1.  Wählen Sie in DevTools oben rechts das Zahnradsymbol (**Einstellungen**).  Die Seite **Einstellungen** wird angezeigt.  
+1.  Wählen **Einstellungen**Sie Liste **ignorieren aus.**  Der **Abschnitt Framework Library Code** von **Einstellungen** angezeigt.  
 1.  Aktivieren Sie das **Kontrollkästchen Inhaltsskripts als Bibliothekscode** markieren.  
     
     :::image type="complex" source="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png" alt-text="Aktivieren des Kontrollkästchens Inhaltsskripts als Bibliothekscode markieren" lightbox="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png":::

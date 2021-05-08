@@ -33,7 +33,7 @@ ms.locfileid: "11519142"
 > [!WARNING]
 > Die Anwendungscache-API [wird von der Webplattform entfernt.][HTMLStandardOfflineWebApplications]  
 
-In diesem Handbuch wird gezeigt, wie [Sie Microsoft Edge DevTools zum Überprüfen][MicrosoftEdgeDevTools] von [Anwendungscacheressourcen][MDNWebAPIsWindowApplicationCache] verwenden.  
+In diesem Handbuch erfahren Sie, wie Sie [Microsoft Edge DevTools verwenden,][MicrosoftEdgeDevTools] um Anwendungscacheressourcen [zu][MDNWebAPIsWindowApplicationCache] überprüfen.  
 
 ## <a name="view-application-cache-data"></a>Anzeigen von Anwendungscachedaten  
 

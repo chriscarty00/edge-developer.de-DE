@@ -148,7 +148,7 @@ In der folgenden Tabelle werden einige häufige Layoutprobleme und mögliche Lö
 
 <!--todo: add Avoid CSS that triggers layouts (Avoid large, complex layouts and layout thrashing) section when available -->  
 
-## <a name="paint-and-composite"></a>Farbe und Zusammengesetzt  
+## <a name="paint-and-composite"></a>Paint und zusammengesetzt  
 
 Paint ist der Vorgang des Ausfüllens von Pixeln.  Dies ist häufig der kostspieligste Teil des Renderingprozesses.  Wenn Sie feststellen, dass Ihre Seite nicht so funktioniert, wie sie entworfen wurde, ist es wahrscheinlich, dass Sie Farbprobleme haben.  
 

@@ -3,17 +3,17 @@ description: Win32 C++ WebView2-API-Konventionen
 title: Win32 C++ WebView2-API-Konventionen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/24/2021
+ms.date: 05/06/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, Webview2, Webview, wpf-Apps, Wpf, Microsoft Edge, ICoreWebView2, ICoreWebView2Host, Browsersteuerung, Edge-HTML
-ms.openlocfilehash: b47e53a4846d4bb662ae108c6445a6c2a615722a
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: b5a86751bfe3386058812ca166fa7cf9e0e201dc
+ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11470858"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "11535643"
 ---
 # <a name="win32-c-webview2-api-conventions"></a>Win32 C++ WebView2-API-Konventionen  
 
@@ -141,7 +141,7 @@ Uri_CREATE_ALLOW_IMPLICIT_FILE_SCHEME | Uri_CREATE_NO_DECODE_EXTRA_INFO
 
 ## <a name="see-also"></a>Weitere Informationen  
 
-*   Um mit der Verwendung von WebView2 Win32 C/C++ zu beginnen, navigieren Sie zu [Erste Schritte mit WebView2][Webview2IndexGettingStarted]-Anleitungen.  
+*   Um mit der Verwendung von WebView2 Win32 C/C++ zu beginnen, navigieren Sie zu [Erste Schritte mit WebView2][Webview2IndexGetStarted]-Anleitungen.  
 *   Weitere Informationen zu WebView2-APIs finden Sie unter [API-Referenz][DotnetApiMicrosoftWebWebview2WpfWebview2].  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Kontakt mit dem Microsoft Edge WebView-Team  
@@ -150,7 +150,7 @@ Uri_CREATE_ALLOW_IMPLICIT_FILE_SCHEME | Uri_CREATE_NO_DECODE_EXTRA_INFO
 
 <!-- links -->  
 
-[Webview2GettingstartedWin32]: ../gettingstarted/win32.md "Erste Schritte mit WebView2 | Microsoft Docs"  
+[Webview2GetStartedWin32]: ../get-started/win32.md "Erste Schritte mit WebView2 | Microsoft Docs"  
 
 [Webview2ReferenceWin32Icorewebview2CapturePreview]: /microsoft-edge/webview2/reference/win32/icorewebview2#capturepreview "CapturePreview – Schnittstelle ICoreWebView2 | Microsoft Docs"  
 

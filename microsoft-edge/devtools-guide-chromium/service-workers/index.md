@@ -54,7 +54,7 @@ Um das Anforderungsrouting zu vereinfachen, werden auf Zeitachsen jetzt das Star
 
 Um mehr über die Abrufereignisse zu erfahren, wählen Sie den Dropdownpfeil links `respondWith` neben der `respondWith` aus.  Verwenden Sie die entsprechenden Dropdownpfeile, um weitere Details zu **der ursprünglichen** Anforderung und der empfangenen Antwort zu finden. ****  
 
-## <a name="application"></a>Application  
+## <a name="application"></a>Anwendung  
 
 :::image type="complex" source="../media/sw-application-timeline.msft.png" alt-text="Anwendungsansicht" lightbox="../media/sw-application-timeline.msft.png":::
    Anwendungsansicht  

@@ -57,13 +57,13 @@ Wenn Sie an einem bestimmten DOM-Knoten interessiert sind, ist **Inspect** eine 
     
     1.  Das **Elementtool** von DevTools wird geöffnet.  `<li>Michelangelo</li>` wird in der **DOM-Struktur hervorgehoben.**  
         
-        :::image type="complex" source="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png" alt-text="Hervorheben des Knotens Michelangelo" lightbox="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png":::
+        :::image type="complex" source="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png" alt-text="Hervorheben des Knotens "Michelangelo"" lightbox="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png":::
            Hervorheben des `Michelangelo` Knotens  
         :::image-end:::  
         
         1.  Wählen Sie in der oberen linken Ecke von DevTools das Symbol **Inspect** ![ \( Inspect ](../media/inspect-icon.msft.png) \) aus.  
             
-            :::image type="complex" source="../media/dom-elements-highlighted-select-element-page-inspect.msft.png" alt-text="Das Symbol Überprüfen" lightbox="../media/dom-elements-highlighted-select-element-page-inspect.msft.png":::
+            :::image type="complex" source="../media/dom-elements-highlighted-select-element-page-inspect.msft.png" alt-text="Das Symbol "Überprüfen"" lightbox="../media/dom-elements-highlighted-select-element-page-inspect.msft.png":::
                Das **Symbol "Überprüfen"**  
             :::image-end:::  
             
@@ -216,7 +216,7 @@ Wählen `Delete` Sie diese Option aus, um einen Knoten zu löschen.
 1.  [Öffnen Sie DOM-Beispiele](#open-dom-examples).  
 1.  Wählen **Sie unter Knoten löschen**mit der rechten Option Foundation **aus,** und wählen Sie **Inspect aus.**  
     1.  Wählen Sie den `Delete` Schlüssel aus.  Der Knoten wird gelöscht.  
-    1.  Wählen `Control` + `Z` Sie \(Windows, Linux\) oder `Command` + `Z` \(macOS\) aus.  Die letzte Aktion wird rückgängig gemacht, und der Knoten wird erneut angezeigt.  
+    1.  Wählen `Control` + `Z` Sie \(Windows, Linux\) oder `Command` + `Z` \(macOS\).  Die letzte Aktion wird rückgängig gemacht, und der Knoten wird erneut angezeigt.  
 
 ## <a name="access-nodes-in-the-console"></a>Zugriffsknoten in der Konsole  
 
@@ -242,13 +242,13 @@ Wenn Sie einen Knoten überprüfen, bedeutet der Text neben dem Knoten, dass Sie
            Das Ergebnis des zweiten `$0` Ausdrucks in der **Konsole**  
         :::image-end:::  
         
-### <a name="store-as-global-variable"></a>Speichern als globale Variable  
+### <a name="store-as-global-variable"></a>Store als globale Variable  
 
 Wenn Sie mehrmals auf einen Knoten verweisen müssen, speichern Sie ihn als globale Variable.  
 
 1.  [Öffnen Sie DOM-Beispiele](#open-dom-examples).  
-1.  Zeigen **Sie unter Store as global variable**auf The Big **Sleep**, öffnen Sie das Kontextmenü \(mit der rechten Maustaste auf\), und wählen Sie **Überprüfen**aus.  
-    1.  Zeigen Sie in der DOM-Struktur auf, öffnen Sie das Kontextmenü \(klicken Sie mit der rechten `<li>The Big Sleep</li>` Maustaste\), und wählen Sie Store als globale Variable **aus.**  Navigieren Sie [zu Anhang: Fehlende Optionen,](#appendix-missing-options) wenn die Option nicht angezeigt wird.  
+1.  Zeigen **Sie Store**als globale Variable auf The Big **Sleep,** öffnen Sie das Kontextmenü \(mit der rechten Maustaste auf\), und wählen Sie **Überprüfen aus.**  
+    1.  Zeigen Sie in der DOM-Struktur auf, öffnen Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste\), und wählen `<li>The Big Sleep</li>` Store als globale Variable **aus.**  Navigieren Sie [zu Anhang: Fehlende Optionen,](#appendix-missing-options) wenn die Option nicht angezeigt wird.  
     1.  Geben `temp1` Sie in die Konsole ein, und wählen Sie dann `Enter` aus.  Das Ergebnis des Ausdrucks zeigt, dass die Variable zum Knoten ausgewertet wird.  
         
         :::image type="complex" source="../media/dom-elements-highlighted-store-global-variable-console-temp1.msft.png" alt-text="Das Ergebnis des temp1-Ausdrucks" lightbox="../media/dom-elements-highlighted-store-global-variable-console-temp1.msft.png":::
@@ -318,7 +318,7 @@ Nachdem Sie einen Unterstrukturänderungs-Haltepunkt auf einem Knoten eingefügt
 
 Dies deckt die meisten DOM-bezogenen Features in DevTools ab.  Sie können die restlichen Features ermitteln, indem Sie auf Knoten in der DOM-Struktur zeigen, das Kontextmenü \(rechtsklicken\) öffnen und mit den anderen Optionen experimentieren, die in diesem Lernprogramm nicht behandelt wurden.  Navigieren Sie zu [Tastenkombinationen des Elements-Panels.][DevToolsShortcutsElements]  
 
-Sehen Sie sich die [Microsoft Edge DevTools-Homepage an,][MicrosoftEdgeDevTools] um alles andere zu entdecken, was Sie mit DevTools tun können.  
+Sehen Sie sich die [Microsoft Edge DevTools-Homepage an,][MicrosoftEdgeDevTools] um alles zu entdecken, was Sie mit DevTools tun können.  
 
 <!--Navigate to [Community](../index#community) if you want to contact the DevTools team or get help from the DevTools community.  -->  
 
@@ -420,7 +420,7 @@ In vielen Anweisungen in diesem Lernprogramm werden Sie angewiesen, den Mauszeig
 <!-- links -->  
 
 [MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge \(Chromium\) Developer Tools | Microsoft Docs"  
-[DevToolsCssGetStarted]: ../css/index.md "Erste Schritte mit dem Anzeigen und Ändern von CSS-| Microsoft Docs"  
+[DevToolsCssGetStarted]: ../css/index.md "Erste Schritte Mit dem Anzeigen und Ändern von CSS-| Microsoft Docs"  
 [DevToolsShortcutsElements]: ../shortcuts/index.md#elements-tool-keyboard-shortcuts "Tastenkombinationen des Elements-Tools – Microsoft Edge DevTools-Tastenkombinationen | Microsoft Docs"  
 
 [GlitchDomExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/dom "Microsoft Edge (Chromium) DevTools DOM Beispiel | Glitch"

@@ -1,6 +1,6 @@
 ---
-description: Beginnen Sie mit Remote debugging WebViews in Ihren nativen Android-Apps mithilfe von Microsoft Edge Developer Tools.
-title: Erste Schritte mit remote debuggen von Android WebViews
+description: Beginnen Sie mit Remote debugging WebViews in Ihren systemeigenen Android-Apps mithilfe Microsoft Edge Entwicklertools.
+title: Erste Schritte mit Remotedebugging von Android-WebViews
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/25/2021
@@ -27,9 +27,9 @@ ms.locfileid: "11461522"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-# <a name="get-started-with-remote-debugging-android-webviews"></a>Erste Schritte mit remote debuggen von Android WebViews  
+# <a name="get-started-with-remote-debugging-android-webviews"></a>Erste Schritte mit Remotedebugging von Android-WebViews  
 
-Debuggen Sie Android WebViews in Ihren systemeigenen Android-Apps mithilfe von Microsoft Edge Developer Tools.  
+Debuggen Sie Android WebViews in Ihren nativen Android-Apps mit Microsoft Edge Entwicklertools.  
 
 Verwenden Sie devTools unter Android 4.4 \(KitKat\) oder höher, um WebView-Inhalte in systemeigenen Android-Apps zu debuggen.  
 
@@ -88,7 +88,7 @@ Ihre Android WebViews werden nicht auf der Seite `edge://inspect` angezeigt?
 
 <!-- links -->  
 
-[RemoteDebuggingGettingStarted]: ./index.md "Erste Schritte mit remote debuggen von Android-Geräten | Microsoft Docs"  
+[RemoteDebuggingGettingStarted]: ./index.md "Erste Schritte remote debugging android devices | Microsoft Docs"  
 
 [AndroidDeveloperWebViewsSetWebContentsDebuggingEnabled]: https://developer.android.com/reference/android/webkit/WebView.html#setWebContentsDebuggingEnabled(boolean) "setWebContentsDebuggingEnabled – WebView | Android-Entwickler"  
 

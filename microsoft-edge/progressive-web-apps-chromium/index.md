@@ -215,18 +215,18 @@ Um ein großartiges PWA zu sein, muss Ihre App auch die folgenden Anforderungen 
 [WindowsUWPPublishIndex]: /windows/uwp/publish/index.md "Veröffentlichen von Windows-Apps und | Microsoft Docs"  
 [WindowsUWPPublishDeveloperAccount]: /windows/uwp/publish/opening-a-developer-account.md "Öffnen eines Entwicklerkontos | Microsoft Docs"  
 
-[WindowsBlogsWelcomingPWAsEdgeWindows]: https://blogs.windows.com/msedgedev/2018/02/06/welcoming-progressive-web-apps-edge-windows-10/#56z7mJwKsykfbR4I.97 "Willkommen bei Progressive Web Apps für Microsoft Edge und Windows 10 – Windows Blogs"  
-[MicrosoftDeveloperEdgePlatformStatusBackgroundSync]: https://developer.microsoft.com/microsoft-edge/platform/status/backgroundsyncapi "Hintergrundsynchronisierungs-API – Microsoft Edge Platform Status"  
-[MicrosoftDeveloperEdgePlatformStatusWebAppManifest]: https://developer.microsoft.com/microsoft-edge/platform/status/webapplicationmanifest "Web-App-Manifest – Microsoft Edge-Plattformstatus"  
+[WindowsBlogsWelcomingPWAsEdgeWindows]: https://blogs.windows.com/msedgedev/2018/02/06/welcoming-progressive-web-apps-edge-windows-10/#56z7mJwKsykfbR4I.97 "Willkommen bei Progressive Web Apps zum Microsoft Edge und Windows 10 - Windows Blogs"  
+[MicrosoftDeveloperEdgePlatformStatusBackgroundSync]: https://developer.microsoft.com/microsoft-edge/platform/status/backgroundsyncapi "Hintergrundsynchronisierungs-API – Microsoft Edge Plattformstatus"  
+[MicrosoftDeveloperEdgePlatformStatusWebAppManifest]: https://developer.microsoft.com/microsoft-edge/platform/status/webapplicationmanifest "Web-App-Manifest – Microsoft Edge Plattformstatus"  
 [MicrosoftDeveloperEdgeToolsRemote]: https://developer.microsoft.com/microsoft-edge/tools/remote "Sofortige Tests"  
 [MicrosoftDeveloperWindowsMixedReality]: https://developer.microsoft.com/windows/mixed-reality "Mixed Reality für Entwickler"  
 [MicrosoftDeveloperWindowsSurfaceHub]: https://developer.microsoft.com/windows/surfacehub "Microsoft Surface Hub"  
 [MicrosoftDeveloperStore]: https://developer.microsoft.com/store "Microsoft Developer Store"  
-[MicrosoftEdge]: https://www.microsoft.com/edge "Herunterladen des neuen Microsoft Edge-Browsers"  
+[MicrosoftEdge]: https://www.microsoft.com/edge "Download New Microsoft Edge Browser"  
 [MicrosoftSupportWindowsFocusAssist]: https://support.microsoft.com/help/4026996/windows-10-turn-focus-assist-on-or-off "Aktivieren oder Deaktivieren der Fokushilfe in Windows 10"  
 [MicrosoftSupportWindowsNotificationSettings]: https://support.microsoft.com/help/4028678/windows-10-change-notification-settings "Ändern von Benachrichtigungseinstellungen in Windows 10"  
 
-[AaronGustafsonNotebookPwaQa]: https://www.aaron-gustafson.com/notebook/pwa-qa "PWA Q&A"  
+[AaronGustafsonNotebookPwaQa]: https://www.aaron-gustafson.com/notebook/pwa-qa "PWA F&A"  
 
 [AListApartUnderstandingProgressiveEnhancement]: https://alistapart.com/article/understandingprogressiveenhancement "Grundlegendes zur progressiven Verbesserung – Eine Liste getrennt"  
 
@@ -252,7 +252,7 @@ Um ein großartiges PWA zu sein, muss Ihre App auch die folgenden Anforderungen 
 [MDNSyncManager]: https://developer.mozilla.org/docs/Web/API/SyncManager "SyncManager-| MDN"  
 [MDNWebAppManifest]: https://developer.mozilla.org/docs/Web/Manifest "Web App Manifest | MDN"  
 
-[BuildVideo]: https://www.youtube.com/watch?v=y4p_QHZtMKM "PWA-Video"  
+[BuildVideo]: https://www.youtube.com/watch?v=y4p_QHZtMKM "PWA Video"  
 
 [CloudfourThinksProgressiveRoadmapYourWebApp]: https://cloudfour.com/thinks/a-progressive-roadmap-for-your-progressive-web-app "Eine progressive Roadmap für Ihre Progressive Web App"  
 

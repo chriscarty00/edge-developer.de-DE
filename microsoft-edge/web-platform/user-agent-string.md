@@ -1,12 +1,12 @@
 ---
-description: Diese Seite enthält die Dokumentation zur Microsoft Edge-Benutzer-Agent-Zeichenfolge.
-title: Microsoft Edge-Benutzer-Agent-Zeichenfolge
+description: Diese Seite enthält Eine Dokumentation zur Microsoft Edge Benutzer-Agent-Zeichenfolge
+title: Microsoft Edge Zeichenfolge "User Agent"
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 12/16/2019
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Compatibility, Web Platform, Benutzer-Agent-Zeichenfolge, UA-Zeichenfolge, UA-Überschreibungen
+keywords: microsoft edge, compatibility, web platform, user agent string, ua string, ua overrides
 ms.openlocfilehash: 73401219b7708a739292a46b6131fe40765e9c8c
 ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
 ms.translationtype: MT
@@ -14,38 +14,38 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "10568733"
 ---
-# Microsoft Edge-Benutzer-Agent-Zeichenfolge (Desktop)  
+# Microsoft Edge User Agent String (Desktop)  
 
-Eine Benutzer-Agent-Zeichenfolge kann verwendet werden, um zu ermitteln, welche Version eines bestimmten Browsers für ein bestimmtes Betriebssystem verwendet wird.  Wie andere Browser enthält Microsoft Edge diese Informationen `User-Agent` immer dann im HTTP-Header, wenn eine Anforderung an eine Website gestellt wird.  Sie können auch über JavaScript aufgerufen werden, indem Sie den Wert von Abfragen `navigator.userAgent` .  
+Eine Zeichenfolge des Benutzer-Agents \(UA\) kann verwendet werden, um zu ermitteln, welche Version eines bestimmten Browsers unter einem bestimmten Betriebssystem verwendet wird.  Wie andere Browser enthält Microsoft Edge diese Informationen immer dann in den `User-Agent` HTTP-Header, wenn eine Anforderung an eine Website gesendet wird.  Auf sie kann auch über JavaScript zugegriffen werden, indem der Wert von abgefragt `navigator.userAgent` wird.  
 
-Microsoft empfiehlt Webentwicklern, nach Möglichkeit die [Funktionserkennung](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection) zu verwenden, um die Verwaltbarkeit von Code zu verbessern, die Anfälligkeit von Code zu verringern und das Risiko von Code Bruch bei zukünftigen UA-Zeichenfolgen Updates zu vermeiden.  
+Microsoft empfiehlt Webentwicklern, [](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection) die Featureerkennung nach Möglichkeit zu nutzen, um die Codeverfügbarkeit zu verbessern, die Anfälligkeit von Code zu verringern und das Risiko von Codebrüchen bei zukünftigen UA-Zeichenfolgenupdates zu vermeiden.  
 
-In Fällen, in denen die Funktionserkennung nicht anwendbar ist und die UA-Erkennung verwendet werden muss, sieht das Format von Microsoft Edge UA auf dem Desktop wie folgt aus:
+In Fällen, in denen die Featureerkennung nicht anwendbar ist und die UA-Erkennung verwendet werden muss, lautet das Format der Microsoft Edge UA auf dem Desktop wie folgt:
 
-Der `User-Agent` Anforderungsheader weist das folgende Format auf:
+Der `User-Agent` Anforderungsheader hat das folgende Format:
 
 ```http
 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.74 Safari/537.36 Edg/79.0.309.43
 ``` 
 
-Der Rückgabewert von `navigator.userAgent` ist im folgenden Format:
+Der Rückgabewert `navigator.userAgent` von hat das folgende Format:
 
 ```javascript
 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.74 Safari/537.36 Edg/79.0.309.43"
 ```  
 
-Plattformbezeichner werden basierend auf dem verwendeten Betriebssystem geändert, und Versionsnummern werden im Laufe der Zeit ebenfalls inkrementiert.  Dieses Format entspricht dem Chrom ua mit dem Hinzufügen eines neuen `Edg` Tokens am Ende.  Microsoft hat das `Edg` Token ausgewählt, um Kompatibilitätsprobleme zu vermeiden, die möglicherweise durch die Verwendung der Zeichenfolge verursacht werden `Edge` , die von der Version von Microsoft Edge auf Grundlage von EdgeHTML verwendet wird.  Das `Edg` Token ist auch mit [vorhandenen Tokens](https://blogs.windows.com/msedgedev/2017/10/05/microsoft-edge-ios-android-developer/) konsistent, die in IOS und Android verwendet werden.
+Plattformbezeichner ändern sich basierend auf dem verwendeten Betriebssystem, und die Versionsnummern werden ebenfalls im Zeitschritt erhöht.  Dieses Format ist identisch mit dem Chromium UA mit dem Zusatz eines neuen `Edg` Tokens am Ende.  Microsoft hat das Token ausgewählt, um Kompatibilitätsprobleme zu vermeiden, die durch die Zeichenfolge verursacht werden können, die von der Version von Microsoft Edge EdgeHTML verwendet `Edg` `Edge` wird.  Das `Edg` Token entspricht auch vorhandenen [Token,](https://blogs.windows.com/msedgedev/2017/10/05/microsoft-edge-ios-android-developer/) die unter iOS und Android verwendet werden.
 
-## Zuordnung der UA-Zeichenfolge zu Browser Name
-Das Zuordnen von UA-Zeichenfolgentoken zu einem besser lesbaren Browsernamen für die Verwendung in Code ist heute ein allgemeines Muster im Web. Bei der Zuordnung des neuen `Edg` Tokens zu einem Browsernamen empfiehlt Microsoft, einen anderen Namen als die Entwickler zu verwenden, die für die Legacy Version von Microsoft Edge verwendet werden, um versehentlich vorhandene Problemumgehungen zu vermeiden, die nicht auf Chrom basierte Browser zutreffen.
+## Zuordnen von UA-Zeichenfolge zu Browsername
+Das Zuordnen von UA-Zeichenfolgentoken zu einem besser lesbaren Browsernamen für die Verwendung im Code ist heute ein gängiges Muster im Web. Beim Zuordnen des neuen Tokens zu einem Browsernamen empfiehlt Microsoft, einen anderen Namen als den für die Ältere Version von Microsoft Edge verwendeten Namen zu verwenden, um zu vermeiden, dass versehentlich Legacyumgehungen angewendet werden, die nicht für `Edg` Chromium-basierte Browser gelten.
 
-## Benutzer-Agent-Überschreibungen  
+## Außerkraftsetzungen des Benutzer-Agents  
 
-Manchmal erkennt eine Website die aktualisierte Version von Microsoft Edge UA nicht.  Daher funktioniert eine Reihe der Features dieser Website möglicherweise nicht ordnungsgemäß.  Wenn Microsoft über diese Art von Problemen benachrichtigt wird, werden Websitebesitzer kontaktiert und über das aktualisierte UA informiert.  
+Manchmal erkennt eine Website die aktualisierte Version des Microsoft Edge UA.  Daher funktioniert eine Reihe von Features dieser Website möglicherweise nicht ordnungsgemäß.  Wenn Microsoft über diese Art von Problemen benachrichtigt wird, werden Websitebesitzer kontaktiert und über die aktualisierten UA informiert.  
 
-Die Websites benötigen häufig einige Zeit, um die UA-Erkennungslogik zu aktualisieren und zu testen, um die Probleme zu beheben, die Microsoft an Websitebesitzer meldet.  In diesen Fällen verwendet Microsoft eine Liste der UA-Außerkraftsetzungen in unseren Beta-und stable-Kanälen, um die Kompatibilität für Benutzer zu maximieren, die auf diese Websites zugreifen.  Die Außerkraftsetzungen geben neue UA-Werte an, die von Microsoft Edge anstelle des standardmäßigen ua für bestimmte Websites gesendet werden sollen.  Sie können die Liste der UA-Außerkraftsetzungen anzeigen, die derzeit angewendet werden, indem Sie `edge://compat/useragent` in den Beta-und stable-Kanälen von Microsoft Edge navigieren. 
+Die Websites benötigen häufig etwas Zeit, um die Erkennungslogik der UA zu aktualisieren und zu testen, um die Probleme zu beheben, die Microsoft den Websitebesitzern meldet.  In diesen Fällen verwendet Microsoft eine Liste der UA-Überschreibungen in unseren Beta- und Stable-Kanälen, um die Kompatibilität für Benutzer zu maximieren, die auf diese Websites zugreifen.  Die Außerkraftsetzungen geben neue UA-Werte an, Microsoft Edge anstatt der Standard-UA für bestimmte Websites gesendet werden sollen.  Sie können die Liste der ua-Überschreibungen anzeigen, die derzeit angewendet werden, indem Sie in den Beta- und Stable-Kanälen von `edge://compat/useragent` Microsoft Edge. 
 
-Unsere Kanaren-und dev-Kanäle erhalten derzeit keine UA-Überschreibungen, damit Webentwickler eine Umgebung haben, in der Sie auf einfache Weise Probleme auf ihren Websites reproduzieren können, die durch den standardmäßigen Microsoft Edge UA verursacht werden.  Wenn Sie aus irgendeinem Grund die Möglichkeit benötigen, UA-Außerkraftsetzungen in den Beta-oder stable-Kanälen von Microsoft Edge zu deaktivieren, können Sie die ausführbare Microsoft Edge-Datei mit dem folgenden Befehlszeilenargument ausführen:  
+Unsere Canary- und Dev-Kanäle erhalten derzeit keine UA-Überschreibungen, sodass Webentwickler über eine Umgebung verfügen, in der sie problemlos Probleme auf ihren Websites reproduzieren können, die durch die Standard-UA Microsoft Edge werden.  Wenn Sie aus einem bestimmten Grund die Möglichkeit zum Deaktivieren von UA-Überschreibungen in den Beta- oder Stable-Kanälen von Microsoft Edge benötigen, können Sie die ausführbare Datei Microsoft Edge mit dem folgenden Befehlszeilenargument ausführen:  
 
 ```shell
 --disable-domain-action-user-agent-override

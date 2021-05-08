@@ -1,6 +1,6 @@
 ---
-description: Das Außerkraftsetzungsfeature ist ein Feature innerhalb des Tools Sources von Microsoft Edge DevTools, mit dem Sie Webseitenressourcen auf Ihre Festplatte kopieren können.  Wenn Sie die Webseite aktualisieren, laden DevTools die Ressource nicht, sondern ersetzen sie durch Ihre lokale Kopie.
-title: Überschreiben von Webseitenressourcen mit lokalen Kopien mithilfe von Microsoft Edge DevTools
+description: Das Außerkraftsetzungsfeature ist ein Feature im Sources-Tool von Microsoft Edge DevTools, mit dem Sie Webseitenressourcen auf Ihre Festplatte kopieren können.  Wenn Sie die Webseite aktualisieren, laden DevTools die Ressource nicht, sondern ersetzen sie durch Ihre lokale Kopie.
+title: Überschreiben von Webseitenressourcen mit lokalen Kopien mithilfe Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 12/11/2020
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/25/2021
 ms.locfileid: "11519436"
 ---
-# <a name="override-webpage-resources-with-local-copies-using-microsoft-edge-devtools"></a>Überschreiben von Webseitenressourcen mit lokalen Kopien mithilfe von Microsoft Edge DevTools  
+# <a name="override-webpage-resources-with-local-copies-using-microsoft-edge-devtools"></a>Überschreiben von Webseitenressourcen mit lokalen Kopien mithilfe Microsoft Edge DevTools  
 
 Manchmal müssen Sie einige mögliche Korrekturen für eine Webseite ausprobieren, aber Sie haben keinen Zugriff auf die Quelldateien, oder das Ändern der Seite erfordert einen langsamen und komplexen Buildprozess.  Sie können alle Arten von Problemen in DevTools debuggen und beheben.  Die Änderungen bleiben jedoch nicht erhalten. Nachdem Sie die lokale Datei aktualisiert haben, sind alle Ihre Arbeit weg.  Das Überschreibungsfeature im [Tool Quellen][DevToolsSourcesTool] hilft Ihnen bei der Lösung dieses Problems.  
 

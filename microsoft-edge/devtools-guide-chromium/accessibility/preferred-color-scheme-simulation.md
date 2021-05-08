@@ -1,6 +1,6 @@
 ---
-description: Erzwingen Sie Microsoft Edge DevTools in den Farbschemavorschaumodus.
-title: Erzwingen von Microsoft Edge DevTools in den Farbschemavorschaumodus (CSS bevorzugt Farbschema)
+description: Erzwingen Microsoft Edge DevTools in den Vorschaumodus des Farbschemas.
+title: Erzwingen Microsoft Edge DevTools in den Farbschemavorschaumodus (CSS bevorzugt Farbschema)
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 02/12/2021
@@ -16,10 +16,10 @@ ms.locfileid: "11519149"
 ---
 # <a name="dark-or-light-color-scheme-simulation"></a>Simulation des dunklen oder hellen Farbschemas  
 
-Betriebssysteme können jede Anwendung in dunkleren oder helleren Farben anzeigen.  Ein Webprodukt mit einem hellen Design in einem Betriebssystem im dunklen Modus ist Gitter und kann für einige Benutzer ein Problem mit der Barrierefreiheit sein.  Im Web können Sie die CSS-Medienabfrage mit dem [Bevorzugt-Farbschema][MDNPrefersColorScheme] verwenden, um zu ermitteln, ob Benutzer Ihr Produkt lieber in einem dunkleren oder helleren Farbschema anzeigen möchten.  Verwenden [Sie Microsoft Edge DevTools,][DevtoolsIndex] um eine Änderung vom Dunklen in den Hellmodus zu simulieren, ohne das gesamte Betriebssystem ändern zu müssen.  
+Betriebssysteme können jede Anwendung in dunkleren oder helleren Farben anzeigen.  Ein Webprodukt mit einem hellen Design in einem Betriebssystem im dunklen Modus ist Gitter und kann für einige Benutzer ein Problem mit der Barrierefreiheit sein.  Im Web können Sie die CSS-Medienabfrage mit dem [Bevorzugt-Farbschema][MDNPrefersColorScheme] verwenden, um zu ermitteln, ob Benutzer Ihr Produkt lieber in einem dunkleren oder helleren Farbschema anzeigen möchten.  Verwenden [Microsoft Edge DevTools,][DevtoolsIndex] um eine Änderung vom Dunklen in den Hellmodus zu simulieren, ohne das gesamte Betriebssystem ändern zu müssen.  
 
 1.  Öffnen Sie das **Befehlsmenü**.  
-    1.  Wählen `Ctrl` + `Shift` + `P` Sie \(Windows/Linux\) oder `Command` + `Shift` + `P` \(macOS\) aus.  
+    1.  Wählen `Ctrl` + `Shift` + `P` Sie \(Windows/Linux\) oder `Command` + `Shift` + `P` \(macOS\).  
         
         :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="Das Befehlsmenü" lightbox="../media/css-console-command-menu-rendering.msft.png":::
            Das **Befehlsmenü**  
@@ -36,16 +36,16 @@ Betriebssysteme können jede Anwendung in dunkleren oder helleren Farben anzeige
 
 1.  Nachdem Sie ein Farbschema aktiviert haben, aktualisieren Sie das aktuelle Dokument, um den simulierten Modus anzeigen zu können.  
     
-    :::image type="complex" source="../media/css-elements-styles-qs-simulated-light-mode.msft.png" alt-text="Simulierter Lichtmodus in Microsoft Edge DevTools" lightbox="../media/css-elements-styles-qs-simulated-light-mode.msft.png":::
-       Simulierter Lichtmodus in Microsoft Edge DevTools  
+    :::image type="complex" source="../media/css-elements-styles-qs-simulated-light-mode.msft.png" alt-text="Simulierter Lichtmodus innerhalb Microsoft Edge DevTools" lightbox="../media/css-elements-styles-qs-simulated-light-mode.msft.png":::
+       Simulierter Lichtmodus innerhalb Microsoft Edge DevTools  
     :::image-end:::  
     
-    Zeigen Sie Ihre CSS wie jede andere Webseite an, und ändern Sie sie.  Weitere Informationen finden Sie unter [Erste Schritte mit dem Anzeigen und Ändern von CSS][DevtoolsCssIndex].  
+    Zeigen Sie Ihre CSS wie jede andere Webseite an, und ändern Sie sie.  Weitere Informationen finden Sie unter [Erste Schritte Mit Anzeigen und][DevtoolsCssIndex]Ändern von CSS .  
 
 <!-- links -->  
 
 [DevtoolsIndex]: ../index.md "Microsoft Edge (Chromium) -Entwicklertools | Microsoft Docs"  
 [DevtoolsCustomizeDarkTheme]: ../customize/dark-theme.md "Aktivieren des dunklen Designs in Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsCssIndex]: ../css/index.md "Erste Schritte mit dem Anzeigen und Ändern von CSS-| Microsoft Docs"  
+[DevtoolsCssIndex]: ../css/index.md "Erste Schritte Mit dem Anzeigen und Ändern von CSS-| Microsoft Docs"  
 
 [MDNPrefersColorScheme]: https://developer.mozilla.org/docs/Web/CSS/@media/prefers-color-scheme "prefers-color-scheme | MDN"  

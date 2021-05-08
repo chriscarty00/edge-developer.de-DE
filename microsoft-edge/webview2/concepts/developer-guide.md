@@ -1,21 +1,21 @@
 ---
 description: Erfahren Sie mehr über bewährte Methoden für die Entwicklung ihrer WebView2-Anwendung.
-title: Bewährte Methoden für die WebView2-Entwicklung
+title: Bewährte Methoden für die Entwicklung mit WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/04/2021
+ms.date: 05/06/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, webview2, WebView, Webview, Edge, bewährte Methoden
-ms.openlocfilehash: 5a09d48cc9972a310c865fcdd6c10e4ed96451fc
-ms.sourcegitcommit: b51df5036642060525e03cd744b7d35726326abe
+ms.openlocfilehash: 3982f47e0fe58287582915673d4ba0de0365a55d
+ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "11526097"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "11535657"
 ---
-# <a name="webview2-development-best-practices"></a>Bewährte Methoden für die WebView2-Entwicklung  
+# <a name="webview2-development-best-practices"></a>Bewährte Methoden für die Entwicklung mit WebView2  
 
 Jedes Entwicklungsteam folgt beim Erstellen seiner Anwendung unterschiedlichen Methoden. Wenn Sie WebView2-Anwendungen erstellen, empfehlen wir Ihnen, die folgenden Methoden zu befolgen. In diesem Artikel werden diese Empfehlungen und bewährten Methoden für Sie beim Erstellen produktionsbasierter WebView2-Anwendungen beschrieben.
 
@@ -53,7 +53,7 @@ Wenn eine neue Version der Evergreen WebView2 Runtime auf das Gerät heruntergel
 Wenn eine neue Version verfügbar ist, z. B. den Benutzer zum Neustart der Anwendung benachrichtigen, können Sie das [Ereignis add_NewBrowserVersionAvailable(Win32)][Webview2ReferenceaddNewBrowserVersionAvailable] oder [CoreWebView2Environment.NewBrowserVersionAvailable(.NET)][Webview2ReferenceNewBrowserVersionAvailable] in Ihrem Code verwenden. Wenn der Code den Neustart der Anwendung behandelt, sollten Sie den Benutzerstatus speichern, bevor die WebView2-Anwendung beendet wird.  
 
 ## <a name="manage-the-lifetime-of-the-user-data-folder"></a>Verwalten der Lebensdauer des Benutzerdatenordners 
-WebView2-Apps erstellen einen Benutzerdatenordner zum Speichern von Daten wie Cookies, Anmeldeinformationen, Berechtigungen und so weiter. Nach dem Erstellen des Ordners ist Ihre App für die Verwaltung der Lebensdauer des Benutzerdatenordners verantwortlich, einschließlich der Bereinigung, wenn die App deinstalliert wird.  Weitere Informationen finden Sie unter [Managing the User Data Folder][Webview2ConceptsUserdatafolder].  
+WebView2-Apps erstellen einen Benutzerdatenordner zum Speichern von Daten wie Cookies, Anmeldeinformationen, Berechtigungen und so weiter. Nach dem Erstellen des Ordners ist Ihre App für die Verwaltung der Lebensdauer des Benutzerdatenordners verantwortlich, einschließlich der Bereinigung, wenn die App deinstalliert wird.  Weitere Informationen finden Sie unter [Managing the User Data Folder][Webview2ConceptsUserDataFolder].  
 
 ## <a name="follow-recommended-webview2-security-best-practices"></a>Befolgen empfohlener bewährter WebView2-Sicherheitsmethoden 
 Stellen Sie sicher, dass Sie für jede WebView2-Anwendung die empfohlenen bewährten WebView2-Sicherheitsmethoden befolgen.  Weitere Informationen finden Sie unter [Best practices for developing secure WebView2 applications][Webview2ConceptsSecurity].  
@@ -65,11 +65,11 @@ Stellen Sie sicher, dass Sie für jede WebView2-Anwendung die empfohlenen bewäh
 [Webview2ConceptsDistributionFixedVersionDistributionMode]: ../concepts/distribution.md#fixed-version-distribution-mode "Verteilungsmodus mit fester Version – Verteilung von Apps mithilfe von WebView2 | Microsoft Docs"  
 [Webview2ConceptsDistributionStayCompatibleEvergreenMode]: ../concepts/distribution.md#stay-compatible-in-evergreen-mode "Im Immergrünmodus kompatibel bleiben – Verteilung von Apps mithilfe von WebView2 | Microsoft Docs"  
 [Webview2ConceptsSecurity]: ../concepts/security.md "Bewährte Methoden für die Entwicklung sicherer WebView2-| Microsoft Docs"  
-[Webview2ConceptsUserdatafolder]: ../concepts/userdatafolder.md "Verwalten des Benutzerdatenordners | Microsoft Docs"  
+[Webview2ConceptsUserDataFolder]: ../concepts/user-data-folder.md "Verwalten der Benutzerdatenordner-| Microsoft Docs"  
 [Webview2ConceptsVersioningDetermineWebview2RuntimeRequirement]: ../concepts/versioning.md#determine-webview2-runtime-requirement "Bestimmen der WebView2-Laufzeitanforderung – Verstehen der WebView2 SDK-| Microsoft Docs"  
-[Webview2GettingstartedWin32]: ../gettingstarted/win32.md "Erste Schritte mit WebView2 | Microsoft Docs"  
-[Webview2GettingstartedWinforms]: ../gettingstarted/winforms.md "Erste Schritte mit WebView2 in Windows Forms | Microsoft Docs"  
-[Webview2GettingstartedWinui]: ../gettingstarted/winui.md "Erste Schritte mit WebView2 in WinUI 3 (Vorschau) | Microsoft Docs"  
-[Webview2GettingstartedWpf]: ../gettingstarted/wpf.md "Erste Schritte mit WebView2 in WPF | Microsoft Docs"  
+[Webview2GetStartedWin32]: ../get-started/win32.md "Erste Schritte mit WebView2 | Microsoft Docs"  
+[Webview2GetStartedWinforms]: ../get-started/winforms.md "Erste Schritte mit WebView2 in Windows Forms | Microsoft Docs"  
+[Webview2GetStartedWinui]: ../get-started/winui.md "Erste Schritte mit WebView2 in WinUI 3 (Vorschau) | Microsoft Docs"  
+[Webview2GetStartedWpf]: ../get-started/wpf.md "Erste Schritte mit WebView2 in WPF | Microsoft Docs"  
 [Webview2ReferenceaddNewBrowserVersionAvailable]: https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable "add_NewBrowserVersionAvailable | Microsoft Docs"  
 [Webview2ReferenceNewBrowserVersionAvailable]: https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable "CoreWebView2Environment.NewBrowserVersionAvailable Event | Microsoft Docs"  

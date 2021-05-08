@@ -30,18 +30,18 @@ ms.locfileid: "11399022"
 
 # <a name="enable-dark-theme-in-microsoft-edge-devtools"></a>Aktivieren des dunklen Designs in Microsoft Edge DevTools  
 
-Sie können das dunkle Design unter [Einstellungen oder](#set-up-dark-theme-from-settings) im [Befehlsmenü aktivieren.](#set-up-dark-theme-from-the-command-menu)  
+Sie können dunkle Designs [in](#set-up-dark-theme-from-settings) Einstellungen oder im [Befehlsmenü aktivieren.](#set-up-dark-theme-from-the-command-menu)  
 
 :::image type="complex" source="../media/customize-elements-styles-console-dark-theme.msft.png" alt-text="Das dunkle Design" lightbox="../media/customize-elements-styles-console-dark-theme.msft.png":::
    Das dunkle Design  
 :::image-end:::  
 
-## <a name="set-up-dark-theme-from-settings"></a>Einrichten eines dunklen Designs in den Einstellungen  
+## <a name="set-up-dark-theme-from-settings"></a>Einrichten eines dunklen Designs Einstellungen  
 
-1.  Wählen **Sie Anpassen und Steuern von DevTools** \( `...` \) > Einstellungen **aus.**  Sie können einstellungen auch **öffnen,** indem Sie `F1` auswählen.  
+1.  Wählen **Sie Anpassen und Steuern devTools** \( `...` \) > **Einstellungen**.  Sie können auch **Einstellungen** öffnen, indem Sie `F1` auswählen.  
     
     :::image type="complex" source="../media/customize-options-settings.msft.png" alt-text="Einstellungen öffnen" lightbox="../media/customize-options-settings.msft.png":::
-       Öffnen **von Einstellungen**  
+       Öffnen **Einstellungen**  
     :::image-end:::  
 
 1.  Wählen Sie **im Bereich** Einstellungen unter **Darstellung**die Option **Design dunkel**  >  **aus.**  
@@ -55,7 +55,7 @@ Sie können das dunkle Design unter [Einstellungen oder](#set-up-dark-theme-from
 1.  [Öffnen Sie das Befehlsmenü][DevtoolsCommandMenu].  
 1.  Geben `dark` Sie ein, wählen **Sie den Befehl Zum dunklen Design wechseln** aus, und wählen Sie dann aus, um den Befehl `Enter` auszuführen.  
     
-    :::image type="complex" source="../media/customize-command-menu-dark.msft.png" alt-text="Der Befehl Dunkles Design" lightbox="../media/customize-command-menu-dark.msft.png":::
+    :::image type="complex" source="../media/customize-command-menu-dark.msft.png" alt-text="Der Befehl "Dunkles Design"" lightbox="../media/customize-command-menu-dark.msft.png":::
        Der Befehl "Dunkles Design"  
     :::image-end:::  
     

@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge-chromium, web development, html, css, javascript, developer, extensions
+keywords: Edge Chromium, Webentwicklung, html, css, javascript, Entwickler, Erweiterungen
 ms.openlocfilehash: dfbe7893ce576c223d2b1d39ec21b6c5f46d8356
 ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT

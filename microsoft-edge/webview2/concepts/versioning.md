@@ -1,19 +1,19 @@
 ---
-description: Für Microsoft Edge WebView2 verwendete Versionsmodelle
+description: Versionsmodelle, die für Microsoft Edge WebView2 verwendet werden
 title: Verstehen von WebView2 SDK-Versionen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/17/2021
+ms.date: 05/06/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, Webview2, Webview, wpf-Apps, Wpf, Microsoft Edge, ICoreWebView2, ICoreWebView2Host, Browsersteuerung, Edge-HTML
-ms.openlocfilehash: b292f59e264293a958eb619d04b751203cb517ac
-ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
+ms.openlocfilehash: 18ae2b8feb9310798f78e67cbb767d0642d83d24
+ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "11461178"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "11535713"
 ---
 # <a name="understand-webview2-sdk-versions"></a>Verstehen von WebView2 SDK-Versionen  
 
@@ -21,7 +21,7 @@ Neue Versionen des WebView2 SDK werden mit der gleichen allgemeinen Schrittfrequ
 
 ## <a name="release-and-prerelease-package"></a>Release- und Vorabversionspaket  
 
-Das WebView2-NuGet-Paket enthält sowohl ein Release- als auch ein Vorabversionspaket.  
+Das WebView2 NuGet-Paket enthält sowohl ein Release- als auch ein Vorabversionspaket.  
 
 Das **Releasepaket** ist vorwärtskompatibel und enthält die folgenden Komponenten.  
 
@@ -51,11 +51,11 @@ Für WebView2-Apps müssen Benutzer eine [WebView2-Runtime installieren.][Micros
 
 Wenn WebView2-Laufzeitupdates beendet werden, stellen Sie sicher, dass Sie die mindestversion der [WebView2-Runtime][MicrosoftDeveloperEdgeWebview2] kennen, die für Ihre App erforderlich ist.  Berücksichtigen Sie die folgenden beiden Elemente:  
 
-1.  Die mindestens erforderliche Version des SDK zum erfolgreichen Laden einer webview2-Instanz finden Sie in den [WebView2-Versionshinweisen][Webview2Releasenotes] unter Microsoft Edge-Mindestversion zum **Laden.**  Die vom SDK erforderliche Mindestversion zum Laden ändert sich nur, wenn eine änderungsbelastende Änderung auf der Webplattform auftritt.  Für SDK Version [1.0.622.22][Webview2Releasenotes1062222]müssen Sie beispielsweise entweder die [WebView2-Runtime][MicrosoftDeveloperEdgeWebview2] oder einen nicht stabilen [Microsoft Edge-Kanal][MicrosoftedgeinsiderDownload] mit einer Buildnummer oder neuer `86.0.616.0` installieren.   
-1.  Die mindestens erforderliche Version des NuGet-Pakets, die erforderlich ist, um die Schnittstellen und APIs in Ihrer App zu unterstützen, finden Sie in den [WebView2-Versionshinweisen][Webview2Releasenotes] unter **Vollständige API-Kompatibilität**.  Neue Schnittstellen und APIs werden regelmäßig zu WebView2 hinzugefügt.  APIs und Schnittstellen, die in einem SDK gebündelt sind, erfordern unterschiedliche Versionen der WebView2-Runtime, da APIs und Schnittstellen zu unterschiedlichen Zeiten dem SDK hinzugefügt werden.  Die erforderliche WebView2-Laufzeitversion entspricht der Buildnummer, der dritten Nummer, der SDK-Version, in der die API erstmals eingeführt wurde.  Beispielsweise erfordert eine neue API oder Schnittstelle, die in SDK Version [1.0.622.22][Webview2Releasenotes1062222] hinzugefügt wurde, die WebView2-Laufzeitversion oder `86.0.622.0` eine neuere Version.  Eine API oder Schnittstelle, die in einer späteren SDK-Version hinzugefügt wurde, erfordert eine WebView2-Runtime mit derselben Versionsnummer wie das SDK.  Wenn Sie feststellen möchten, ob die WebView2-Laufzeitversion eine Schnittstelle oder API unterstützt, navigieren Sie zu [Determine WebView2 Runtime requirement](#determine-webview2-runtime-requirement).  
+1.  Die mindestens erforderliche Version des SDK zum erfolgreichen Laden einer webview2-Instanz finden Sie in den WebView2-Versionshinweisen unter **Minimum Microsoft Edge version to load**. [][Webview2ReleaseNotes]  Die vom SDK erforderliche Mindestversion zum Laden ändert sich nur, wenn eine änderungsbelastende Änderung auf der Webplattform auftritt.  Für SDK Version [1.0.622.22][Webview2ReleaseNotes1062222]müssen Sie beispielsweise entweder die [WebView2-Runtime][MicrosoftDeveloperEdgeWebview2] oder einen nicht stabilen [Microsoft Edge-Kanal][MicrosoftedgeinsiderDownload] mit einer Buildnummer oder neuer `86.0.616.0` installieren.   
+1.  Die mindestens erforderliche Version des NuGet, die für die Unterstützung der Schnittstellen und APIs in Ihrer App erforderlich ist, finden Sie in den WebView2-Versionshinweisen unter **Full API Compatibility**. [][Webview2ReleaseNotes]  Neue Schnittstellen und APIs werden regelmäßig zu WebView2 hinzugefügt.  APIs und Schnittstellen, die in einem SDK gebündelt sind, erfordern unterschiedliche Versionen der WebView2-Runtime, da APIs und Schnittstellen zu unterschiedlichen Zeiten dem SDK hinzugefügt werden.  Die erforderliche WebView2-Laufzeitversion entspricht der Buildnummer, der dritten Nummer, der SDK-Version, in der die API erstmals eingeführt wurde.  Beispielsweise erfordert eine neue API oder Schnittstelle, die in SDK Version [1.0.622.22][Webview2ReleaseNotes1062222] hinzugefügt wurde, die WebView2-Laufzeitversion oder `86.0.622.0` eine neuere Version.  Eine API oder Schnittstelle, die in einer späteren SDK-Version hinzugefügt wurde, erfordert eine WebView2-Runtime mit derselben Versionsnummer wie das SDK.  Wenn Sie feststellen möchten, ob die WebView2-Laufzeitversion eine Schnittstelle oder API unterstützt, navigieren Sie zu [Determine WebView2 Runtime requirement](#determine-webview2-runtime-requirement).  
     
 > [!IMPORTANT]
-> Bei der [Entwicklung von Evergreen WebView2-Apps][Webview2ConceptsDistributionEvergreenDistributionMode]testen Sie Ihre App regelmäßig mit den neuesten Versionen der WebView2-Runtime und nicht stabilen Microsoft Edge-Kanälen.  Da sich die Webplattform ständig weiterentwickelt, sind regelmäßige Tests die beste Möglichkeit, um sicherzustellen, dass Ihre App wie beabsichtigt funktioniert.  
+> Bei der [Entwicklung von Evergreen WebView2-Apps][Webview2ConceptsDistributionEvergreenDistributionMode]testen Sie Ihre App regelmäßig mit den neuesten Versionen der WebView2-Laufzeit und nicht stabilen Microsoft Edge Kanälen.  Da sich die Webplattform ständig weiterentwickelt, sind regelmäßige Tests die beste Möglichkeit, um sicherzustellen, dass Ihre App wie beabsichtigt funktioniert.  
 
 ### <a name="determine-webview2-runtime-requirement"></a>Bestimmen der WebView2-Laufzeitanforderung  
 
@@ -79,8 +79,8 @@ After you have used a particular version of the SDK to build your app, your app 
 <!--links -->  
 
 [Webview2ConceptsDistributionEvergreenDistributionMode]: ./distribution.md#evergreen-distribution-mode "Immergrüner Verteilungsmodus – Verteilung von Apps mithilfe von WebView2 | Microsoft Docs"  
-[Webview2Releasenotes]: ../releasenotes.md "Versionshinweise für WebView2 SDK | Microsoft Docs"  
-[Webview2Releasenotes1062222]: ../releasenotes.md#1062222 "1.0.622.22 – Versionshinweise für WebView2 SDK | Microsoft Docs"   
+[Webview2ReleaseNotes]: ../release-notes.md "Versionshinweise für WebView2 SDK | Microsoft Docs"  
+[Webview2ReleaseNotes1062222]: ../release-notes.md#1062222 "1.0.622.22 – Versionshinweise für WebView2 SDK | Microsoft Docs"   
 
 [DeployedgeChannels]: /deployedge/microsoft-edge-channels "Übersicht über die Microsoft Edge-Kanäle | Microsoft-Dokumentation"  
 
@@ -89,7 +89,7 @@ After you have used a particular version of the SDK to build your app, your app 
 [DotnetMicrosoftWebWebview2WinformsNamespace]: /dotnet/api/microsoft.web.webview2.winforms "Microsoft.Web.WebView2.WinForms Namespace | Microsoft Docs"  
 [ReferenceWin32]: /microsoft-edge/webview2/reference/win32 "WebView2 Win32 C++-Referenz | Microsoft Docs"  
 
-[MicrosoftDeveloperEdgeWebview2]: https://developer.microsoft.com/microsoft-edge/webview2/ "Microsoft Edge WebView2 | Microsoft Developer"  
+[MicrosoftDeveloperEdgeWebview2]: https://developer.microsoft.com/microsoft-edge/webview2/ "Microsoft Edge WebView2-| Microsoft Developer"  
 
 [GithubMicrosoftedgeWebviewfeedback]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView Feedback – MicrosoftEdge/WebViewFeedback | GitHub"  
 [GithubMicrosoftedgeWebview2samplesSampleappsWebview2apisampleAppwindowCppL622]: https://github.com/MicrosoftEdge/WebView2Samples/blob/8ec7de9d3e80a942bc7025cffad98eee75e11e64/SampleApps/WebView2APISample/AppWindow.cpp#L622 "Zeile 622 - AppWindow.cpp - MicrosoftEdge/WebView2Samples | GitHub"  

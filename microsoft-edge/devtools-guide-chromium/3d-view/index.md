@@ -127,11 +127,11 @@ Die **Option Bildschirmtextur verwenden** fügt Ihrer Debugerfahrung Kontext hin
    Bereich **Zusammengesetzte Ebenen**
 :::image-end:::  
 
-Im **Bereich Zusammengesetzte Ebenen** werden die Elemente des **Layers-Tools** geöffnet, ohne Kontexte zu ändern.  Sie können weiterhin auf die Details der einzelnen Ebenen zugreifen und über die **Langsamen Bildlauf-Rects** und **Paint verfügen.**
+Im **Bereich Zusammengesetzte Ebenen** werden die Elemente des **Layers-Tools** geöffnet, ohne Kontexte zu ändern.  Möglicherweise greifen Sie weiterhin auf die Details der einzelnen Ebenen zu und verfügen über die **Langsamen** Bildlauf-Rects **und Paint**.
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
-Das Microsoft Edge Devtools-Team arbeitet an der Benutzeroberfläche und fügt der 3D-Ansicht basierend auf Ihrem Feedback weitere Funktionen hinzu.  Senden Sie Ihr Feedback, um die Microsoft Edge DevTools zu verbessern.  Wählen Sie **das Symbol Feedback** senden in den DevTools aus, oder wählen Sie unter Windows/Linux oder unter macOS aus, und geben Sie Feedback oder Featureanforderungen ein, die Sie für die `Alt` + `Shift` + `I` `Option` + `Shift` + `I` DevTools haben.  
+Das Microsoft Edge Devtools-Team arbeitet an der Benutzeroberfläche und fügt der 3D-Ansicht basierend auf Ihrem Feedback weitere Funktionen hinzu.  Senden Sie Ihr Feedback, um die Microsoft Edge DevTools zu verbessern.  Wählen Sie **das Symbol Feedback** senden in den DevTools aus, oder wählen Sie auf Windows/Linux oder unter macOS aus, und geben Sie Feedback oder Featureanforderungen ein, die Sie für die `Alt` + `Shift` + `I` `Option` + `Shift` + `I` DevTools haben.  
 
 <!-- links -->  
 

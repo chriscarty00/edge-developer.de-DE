@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
 ms.openlocfilehash: ddd48b78c59e26edc9bca159f5ddf684015ae980
 ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
 ms.translationtype: MT
@@ -31,25 +31,25 @@ ms.locfileid: "11514410"
 
 ## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>Ankündigungen des Microsoft Edge DevTools-Teams  
 
-Die folgenden Abschnitte sind eine Liste der Ankündigungen, die Sie möglicherweise vom Microsoft Edge DevTools-Team verpasst haben.  Sehen Sie sich die Ankündigungen an, um neue Features in devTools, Microsoft Visual Studio Codeerweiterungen zu testen und vieles mehr.  Laden Sie die Microsoft Edge-Vorschaukanäle herunter, und folgen [][MicrosoftEdgePreviewChannels] Sie uns [auf Twitter,][EdgeDevToolsTwitterAccount]um über die neuesten und besten Features in Ihren Entwicklertools auf dem neuesten Stand zu bleiben.  
+Die folgenden Abschnitte sind eine Liste der Ankündigungen, die Sie möglicherweise vom DevTools-Microsoft Edge verpasst haben.  Sehen Sie sich die Ankündigungen an, um neue Features in den DevTools zu testen, Microsoft Visual Studio Codeerweiterungen und vieles mehr zu testen.  Laden Sie die Microsoft Edge-Vorschaukanäle herunter und folgen Sie uns [auf Twitter,][EdgeDevToolsTwitterAccount] [um auf][MicrosoftEdgePreviewChannels] dem neuesten stand zu bleiben.  
 
 ### <a name="accessibility-improvements-to-the-devtools"></a>Verbesserungen bei der Barrierefreiheit der DevTools  
 
-Das DevTools-Team hat 170 Änderungen an Chromium vorgenommen, um probleme mit hohem Farbkontrast, Tastatur und Bildschirmleseprogramm in den DevTools zu beheben.  Jeder Entwickler, der das Web aufbaut, sollte die DevTools verwenden können.  
+Das DevTools-Team hat 170 Änderungen an Chromium, um probleme mit hohem Farbkontrast, Tastatur und Bildschirmleseprogramm in den DevTools zu beheben.  Jeder Entwickler, der das Web aufbaut, sollte die DevTools verwenden können.  
 
 :::image type="complex" source="../../images/2020/01/a11y-performance-tool.msft.gif" alt-text="Das Leistungstool in den DevTools mit verbesserungen bei der Tastaturnavigation und der Bildschirmleseausgabe" lightbox="../../images/2020/01/a11y-performance-tool.msft.gif":::
    Das **Leistungstool** in den DevTools mit verbesserungen bei der Tastaturnavigation und der Bildschirmleseausgabe  
 :::image-end:::  
 
-Möchten Sie erfahren, wie Sie ihre Webseite für alle Benutzer zugänglich machen?  Laden Sie [die Accessibility Insights-][AccessibilityInsights] und [Webhint-Erweiterungen][WebhintBrowserExtension] für Microsoft Edge herunter, um zu beginnen.  
+Möchten Sie erfahren, wie Sie ihre Webseite für alle Benutzer zugänglich machen?  Laden Sie [die Barrierefreiheits-Einblicke][AccessibilityInsights] und [Webhint-Erweiterungen][WebhintBrowserExtension] für Microsoft Edge, um zu beginnen.  
 
 Wenn Sie Bildschirmlesegeräte oder die Tastatur verwenden, um [][PostTweetEdgeDevTools] die DevTools zu navigieren, senden Sie uns Ihr Feedback, indem Sie an uns twittern oder das Symbol Feedback [senden](#getting-in-touch-with-microsoft-edge-devtools-team) drücken!  
 
-[Chromium-#963183][CR963183]  
+Chromium Problem [#963183][CR963183]  
 
 ### <a name="using-the-devtools-in-other-languages"></a>Verwenden der DevTools in anderen Sprachen  
 
-Viele Entwickler verwenden andere Entwicklertools, z. B. StackOverflow und Visual Studio Code, in ihrer Sprache, nicht nur in Englisch.  Wir freuen uns, die Lokalisierung für die DevTools ankündigen zu können, die Sie jetzt in einer von 10 Sprachen neben Englisch verwenden können:  
+Viele Entwickler verwenden andere Entwicklertools, wie StackOverflow und Visual Studio Code, in ihrer eigenen Sprache, nicht nur in Englisch.  Wir freuen uns, die Lokalisierung für die DevTools ankündigen zu können, die Sie jetzt in einer von 10 Sprachen neben Englisch verwenden können:  
 
 :::row:::
    :::column span="":::
@@ -102,23 +102,23 @@ Viele Entwickler verwenden andere Entwicklertools, z. B. StackOverflow und Visua
 | Russian – русский | Spanish - español |  
 -->  
 
-Die DevTools entsprechen automatisch der Sprache, die Sie für Microsoft Edge in `edge://settings/languages` verwenden.  
+Die DevTools entsprechen automatisch der Sprache, die Sie für Microsoft Edge `edge://settings/languages` verwenden.  
 
-Wenn Microsoft Edge in einer Sprache sein soll und Ihre DevTools auf Englisch bleiben sollen, wählen Sie in devTools aus, um Einstellungen zu öffnen und Die Browsersprache `F1` **übereinstimmen zu deaktivieren.** [][Settings]  
+Wenn Sie Microsoft Edge sprache verwenden möchten und Ihre DevTools auf Englisch bleiben sollen, wählen Sie in devTools aus, um Einstellungen zu öffnen und Browsersprache `F1` **matchen zu deaktivieren.** [][Settings]  
 
 :::image type="complex" source="../../images/2020/01/localized-devtools.msft.png" alt-text="Die DevTools auf Deutsch" lightbox="../../images/2020/01/localized-devtools.msft.png":::
    Die DevTools auf Deutsch  
 :::image-end:::  
 
-**Konsolennachrichten** werden nicht lokalisiert.  Nur die zeichenfolgen, die in der DevTools-Benutzeroberfläche verwendet werden, werden in der Sprache angezeigt, die Sie für Microsoft Edge verwenden.  
+**Konsolennachrichten** werden nicht lokalisiert.  Nur die zeichenfolgen, die in der DevTools-Benutzeroberfläche verwendet werden, werden in der Sprache angezeigt, die Sie für die Microsoft Edge.  
 
 Wenn Sie devTools in einer anderen Sprache als die verfügbaren verwenden [möchten,][PostTweetEdgeDevTools] twittern Sie bei uns, oder wählen Sie das Symbol Feedback [senden](#getting-in-touch-with-microsoft-edge-devtools-team) aus.  
 
-[Chromium-Problem #941561][CR941561]  
+Chromium Problem [#941561][CR941561]  
 
-### <a name="webhint-microsoft-edge-extension"></a>webhint Microsoft Edge-Erweiterung  
+### <a name="webhint-microsoft-edge-extension"></a>webhint Microsoft Edge Erweiterung  
 
-Mit der Webhint Microsoft Edge-Erweiterung können Sie Ihre Webseite ganz einfach überprüfen und Feedback zu Barrierefreiheit, Browserkompatibilität, Sicherheit, Leistung und mehr innerhalb der DevTools erhalten.  Weitere Informationen finden Sie unter [https://webhint.io][Webhint] .  
+Mit der erweiterung webhint Microsoft Edge Können Sie Ihre Webseite ganz einfach überprüfen und Feedback zu Barrierefreiheit, Browserkompatibilität, Sicherheit, Leistung und mehr innerhalb der DevTools erhalten.  Weitere Informationen finden Sie unter [https://webhint.io][Webhint] .  
 
 :::image type="complex" source="../../images/2020/01/webhint-browser-extension.msft.png" alt-text="Das Hints-Tool in devTools, wenn die Webhint-Browsererweiterung installiert ist" lightbox="../../images/2020/01/webhint-browser-extension.msft.png":::
    Das **Hints-Tool** in devTools, wenn die Webhint-Browsererweiterung installiert ist  
@@ -136,53 +136,53 @@ Verwenden Sie **die 3D-Ansicht,** um Ihre Webanwendung zu debuggen, indem Sie du
 
 Um auf die 3D-Ansicht zu zugreifen, wählen Sie , geben `Ctrl`  +  `Shift`  +  `P` Sie in **3D-Ansicht ein,** und wählen **Sie 3D-Ansicht anzeigen aus.**  
 
-Das Microsoft Edge-Team arbeitet mit dem Chromium-Team auf der Benutzeroberfläche zusammen und fügt der 3D-Ansicht weitere Funktionen hinzu. Senden Sie daher Ihr [Feedback.](#getting-in-touch-with-microsoft-edge-devtools-team)  
+Das Microsoft Edge arbeitet mit dem Chromium auf der Benutzeroberfläche zusammen und fügt der 3D-Ansicht weitere Funktionen [hinzu.](#getting-in-touch-with-microsoft-edge-devtools-team)Senden Sie daher Ihr Feedback .  
 
-[Chromium-#987787][CR987787]  
+Chromium Problem [#987787][CR987787]  
 
-### <a name="visual-studio-code-extensions"></a>Visual Studio Codeerweiterungen  
+### <a name="visual-studio-code-extensions"></a>Visual Studio Code-Erweiterungen  
 
-Das DevTools-Team hat auch einige Erweiterungen für Visual Studio [Code][VisualStudioCode] veröffentlicht, mit dem Sie die Leistung der DevTools direkt aus Ihrem Text-Editor nutzen können. Sehen Sie sich die folgenden Erweiterungen an:  
+Das DevTools-Team hat auch [][VisualStudioCode] einige Erweiterungen für Visual Studio Code veröffentlicht, mit deren Visual Studio Code Sie die Leistung der DevTools direkt aus Ihrem Text-Editor nutzen können! Sehen Sie sich die folgenden Erweiterungen an:  
 
 #### <a name="elements-for-microsoft-edge"></a>Elemente für Microsoft Edge  
 
-Verwenden Sie das Elementtool aus Visual Studio Code, indem Sie die Erweiterung Elemente für [Microsoft Edge \(Chromium\)][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] Visual Studio hinzufügen.  
+Verwenden Sie das Elementtool aus Visual Studio Code, indem Sie die [Erweiterung Elemente für Microsoft Edge \(Chromium\)][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] Visual Studio Code hinzufügen.  
 
-:::image type="complex" source="../../images/2020/01/elements-for-edge.msft.png" alt-text="Das Elementtool in Visual Studio Code mithilfe der Erweiterung Elemente für Microsoft Edge" lightbox="../../images/2020/01/elements-for-edge.msft.png":::
-   Das **Elementtool** in Visual Studio Code mithilfe der Erweiterung Elemente für Microsoft Edge  
+:::image type="complex" source="../../images/2020/01/elements-for-edge.msft.png" alt-text="Das Elementtool in Visual Studio Code unter Verwendung der Erweiterung Elemente Microsoft Edge Erweiterung" lightbox="../../images/2020/01/elements-for-edge.msft.png":::
+   Das **Elementtool** in Visual Studio Code die Erweiterung Elemente für Microsoft Edge verwenden  
 :::image-end:::  
 
-Weitere Informationen finden Sie unter [Elemente für Microsoft Edge Visual Studio Codeerweiterung][VisualStudioCodeElementEdgeExtension].  
+Weitere Informationen finden Sie unter [Elemente für Microsoft Edge Visual Studio Code Erweiterung][VisualStudioCodeElementEdgeExtension].  
 
 #### <a name="debugger-for-microsoft-edge"></a>Debugger für Microsoft Edge  
 
-Mit dem [Debugger für Microsoft Edge Visual Studio][VisualStudioMarketplaceDebuggerEdge] Codeerweiterung debuggen Sie JavaScript, das in Microsoft Edge ausgeführt wird, direkt aus Visual Studio Code.  
+Mit dem [Debugger für Microsoft Edge][VisualStudioMarketplaceDebuggerEdge] Visual Studio Code Sie JavaScript debuggen, das in Microsoft Edge direkt von Visual Studio Code.  
 
-:::image type="complex" source="../../images/2020/01/vscode-debugger.msft.png" alt-text="Debugger für Microsoft Edge Extension in Visual Studio Code" lightbox="../../images/2020/01/vscode-debugger.msft.png":::
-   Debugger für Microsoft Edge Extension in Visual Studio Code  
+:::image type="complex" source="../../images/2020/01/vscode-debugger.msft.png" alt-text="Der Debugger für Microsoft Edge Erweiterung in Visual Studio Code" lightbox="../../images/2020/01/vscode-debugger.msft.png":::
+   Der Debugger für Microsoft Edge Erweiterung in Visual Studio Code  
 :::image-end:::  
 
-Weitere Informationen finden Sie unter [Debuggen von Microsoft Edge aus Visual Studio Code][VisualStudioCodeDebuggerEdgeExtension].  
+Weitere Informationen finden Sie unter [Debuggen von Microsoft Edge von Visual Studio Code][VisualStudioCodeDebuggerEdgeExtension].  
 
 #### <a name="webhint"></a>Webhint  
 
-Die [Webhint Visual Studio][VisualStudioMarketplaceWebhintExtension] Codeerweiterung verwendet, um Ihre Webseite zu verbessern, während `webhint` Sie sie schreiben.  Diese Erweiterung wird ausgeführt und meldet Diagnosen für Ihre Arbeitsbereichsdateien basierend auf `webhint` der Analyse.  
+Die [Webhint Visual Studio Code-Erweiterung][VisualStudioMarketplaceWebhintExtension] verwendet, um Ihre Webseite zu verbessern, während `webhint` Sie sie schreiben.  Diese Erweiterung wird ausgeführt und meldet Diagnosen für Ihre Arbeitsbereichsdateien basierend auf `webhint` der Analyse.  
 
-:::image type="complex" source="../../images/2020/01/webhint-vscode-extension.msft.png" alt-text="Das webhint Visual Studio Codeerweiterung, die eine .tsx-Datei in Visual Studio Code analysiert" lightbox="../../images/2020/01/webhint-vscode-extension.msft.png":::
-   Das webhint Visual Studio Codeerweiterung, die eine Datei `.tsx` in Visual Studio Code analysiert  
+:::image type="complex" source="../../images/2020/01/webhint-vscode-extension.msft.png" alt-text="Das webhint-Visual Studio Code erweiterung, die eine TSX-Datei in einem Visual Studio Code" lightbox="../../images/2020/01/webhint-vscode-extension.msft.png":::
+   Das Webhint Visual Studio Code Erweiterung, die eine `.tsx` Datei in einem Visual Studio Code  
 :::image-end:::  
 
-[Erfahren Sie mehr über die Visual Studio Code-Webhint-Erweiterung][WebhintVisualStudioCodeExtension].  
+[Erfahren Sie mehr über die Visual Studio Code Webhint-Erweiterung][WebhintVisualStudioCodeExtension].  
 
 ### <a name="visual-studio-integration"></a>Visual Studio Integration  
 
-Verwenden Visual Studio 2019, Version 16.2 oder höher, den Visual Studio-Debugger, um JavaScript zu debuggen, das in Microsoft Edge ausgeführt wird.  [Laden Visual Studio 2019 herunter,][MicrosoftVisualStudioDownloads] um dieses Feature auszuprobieren!  
+Verwenden Visual Studio 2019, Version 16.2 oder höher, den Visual Studio-Debugger, um JavaScript zu debuggen, das in Microsoft Edge.  [Laden Visual Studio 2019 herunter,][MicrosoftVisualStudioDownloads] um dieses Feature auszuprobieren!  
 
 :::image type="complex" source="../../images/2020/01/vs.msft.png" alt-text="Visual Studio mit der Option zum Starten Ihrer Web-App in Microsoft Edge Canary, Dev oder Beta" lightbox="../../images/2020/01/vs.msft.png":::
    Visual Studio mit der Option zum Starten Ihrer Web-App in Microsoft Edge Canary, Dev oder Beta  
 :::image-end:::  
 
-[Erfahren Sie mehr über das Debuggen von Microsoft Edge von Visual Studio.][MicrosoftVisualStudio]  
+[Erfahren Sie mehr über das Debuggen Microsoft Edge von Visual Studio][MicrosoftVisualStudio].  
 
 ### <a name="tracking-prevention-console-messages"></a>Nachverfolgen von Nachrichten der Verhinderungskonsole  
 
@@ -196,7 +196,7 @@ Die Nachverfolgungsverhütung ist ein einzigartiges Feature in Microsoft Edge, d
 
 ## <a name="announcements-from-the-chromium-project"></a>Ankündigungen aus dem Chromium-Projekt  
 
-In den folgenden Abschnitten werden zusätzliche Features angekündigt, die in Microsoft Edge 81 verfügbar sind und zum Open Source Chromium-Projekt beigetragen haben.  
+In den folgenden Abschnitten werden zusätzliche features angekündigt, die in Microsoft Edge 81 verfügbar sind, die zum Open Source Chromium wurden.  
 
 ### <a name="moto-g4-support-in-device-mode"></a>Unterstützung von "Moto G4" im Gerätemodus  
 
@@ -217,7 +217,7 @@ Verwandte Features:
 *   Öffnen Sie [das Befehlsmenü,][CommandMenu] und führen Sie den Befehl aus, um einen Screenshot des Viewports zu erstellen, der die `Capture screenshot` Hardware von "Moto G4" enthält (nachdem Sie **Geräterahmen anzeigen aktiviert haben).**  
 *   [Drosseln Sie das Netzwerk und die CPU,][ThrottleNetworkAndCpu] um die Browserbedingungen eines mobilen Benutzers genauer zu simulieren.  
 
-[Chromium-#924693][CR924693]  
+Chromium Problem [#924693][CR924693]  
 
 ### <a name="cookie-related-updates"></a>Cookiebezogene Updates  
 
@@ -229,16 +229,16 @@ Im Bereich Cookies im Bereich Anwendung werden nun blockierte Cookies mit gelbem
    Blockierte Cookies im Bereich Cookies des Anwendungsbereichs  
 :::image-end:::  
 
-[Chromium-#1030258][CR1030258]  <!-- inaccessible  -->  
+Chromium Problem [#1030258][CR1030258]  <!-- inaccessible  -->  
 
 #### <a name="cookie-priority-in-the-cookie-pane"></a>Cookiepriorität im Cookiebereich  
 
 Die Cookies-Tabellen in den **Netzwerk-** und **Anwendungstools** enthalten jetzt eine **Spalte Priorität.**  
 
 > [!CAUTION]
-> Chrombasierte Browser wie Microsoft Edge sind die einzigen Browser, die die Cookiepriorität unterstützen.  
+> Chromium Browser, wie z. B. Microsoft Edge, sind die einzigen Browser, die die Cookiepriorität unterstützen.  
 
-[Chromium-Problem #1026879][CR1026879]  
+Chromium Problem [#1026879][CR1026879]  
 
 #### <a name="edit-all-cookie-values"></a>Bearbeiten aller Cookiewerte  
 
@@ -256,7 +256,7 @@ Wenn Sie einen Ausdruck abrufen möchten, der Cookiedaten enthält, zeigen Sie a
    Kopieren als Node.js Abrufen  
 :::image-end:::  
 
-[Chromium-#1029826][CR1029826]  
+Chromium Problem [#1029826][CR1029826]  
 
 ### <a name="more-accurate-web-app-manifest-icons"></a>Präzisere Web-App-Manifestsymbole  
 
@@ -266,7 +266,7 @@ Zuvor hat der Manifestbereich im Anwendungsbereich eigene Anforderungen gesendet
    Symbole im Manifestbereich  
 :::image-end:::  
 
-[Chromium-Problem #985402][CR985402]  
+Chromium Problem [#985402][CR985402]  
 
 ### <a name="hover-on-css-content-properties-to-display-unescaped-values"></a>Zeigen Sie auf CSS-Inhaltseigenschaften, um nicht dargestellte Werte anzuzeigen  
 
@@ -294,10 +294,10 @@ Die Konsole bietet nun ausführlichere Informationen dazu, warum eine Quellzuord
 
 ### <a name="setting-for-disabling-scrolling-past-the-end-of-a-file"></a>Einstellung zum Deaktivieren des Bildlaufs am Ende einer Datei  
 
-Öffnen [Sie Einstellungen,][Settings] und deaktivieren Sie dann **Einstellungsquellen**Zulassen des Bildlaufs am Ende der Datei, um das Standardverhalten der Benutzeroberfläche zu deaktivieren, mit dem Sie einen Bildlauf weit über das Ende einer Datei im Bereich  >  ****  >  **** **Quellen** durchführen können.  
+Öffnen [Einstellungen,][Settings] und deaktivieren Sie dann Einstellungen Quellen Zulassen des **Bildlaufs**am Ende der Datei, um das Standardverhalten der Benutzeroberfläche zu deaktivieren, mit dem Sie einen Bildlauf weit über das Ende einer Datei im Bereich  >  ****  >  **** **Quellen** durchführen können.  
 
 :::image type="complex" source="../../images/2020/01/settings.msft.png" alt-text="Deaktivieren Zulassen des Bildlaufs am Ende der Datei" lightbox="../../images/2020/01/settings.msft.png":::
-   Deaktivieren Zulassen **des Bildlaufs über das Ende der Datei** in den Einstellungen  
+   Deaktivieren Zulassen **des Bildlaufs am Ende der Datei** in Einstellungen  
 :::image-end:::  
 
 :::image type="complex" source="../../images/2020/01/scrollingsources.msft.png" alt-text="Der Bildlauf am Ende einer Datei ist jetzt im Bereich Quellen deaktiviert." lightbox="../../images/2020/01/scrollingsources.msft.png":::
@@ -306,7 +306,7 @@ Die Konsole bietet nun ausführlichere Informationen dazu, warum eine Quellzuord
 
 ## <a name="download-the-microsoft-edge-preview-channels"></a>Herunterladen der Microsoft Edge-Vorschaukanäle  
 
-Wenn Sie unter Windows oder macOS sind, sollten Sie die [Microsoft Edge-Vorschaukanäle][MicrosoftEdgePreviewChannels] als Standardentwicklungsbrowser verwenden.  Über die Vorschaukanäle erhalten Sie Zugriff auf die neuesten DevTools-Features.  
+Wenn Sie sich auf Windows oder macOS befinden, sollten Sie die Microsoft Edge Vorschaukanäle [als][MicrosoftEdgePreviewChannels] Standardentwicklungsbrowser verwenden.  Über die Vorschaukanäle erhalten Sie Zugriff auf die neuesten DevTools-Features.  
 
 ## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge DevTools-Team Kontakt aufnehmen  
 
@@ -314,39 +314,39 @@ Wenn Sie unter Windows oder macOS sind, sollten Sie die [Microsoft Edge-Vorschau
 
 <!-- links -->  
 
-[DeviceToolbar]: /microsoft-edge/devtools-guide-chromium/device-mode/index#simulate-a-mobile-viewport "Simulieren eines mobilen Viewports – Simulieren mobiler Geräte mit dem Gerätemodus in Microsoft Edge DevTools | Microsoft Docs"
+[DeviceToolbar]: /microsoft-edge/devtools-guide-chromium/device-mode/index#simulate-a-mobile-viewport "Simulieren eines mobilen Viewports – Simulieren von mobilen Geräten mit dem Gerätemodus in Microsoft Edge DevTools | Microsoft Docs"
 [DeviceFrame]: /microsoft-edge/devtools-guide-chromium/device-mode/index#show-device-frame "Geräterahmen anzeigen – Simulieren von mobilen Geräten mit dem Gerätemodus in Microsoft Edge DevTools | Microsoft Docs"
 [CommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Ausführen von Befehlen mit dem Microsoft Edge DevTools-Befehlsmenü | Microsoft Docs"  
-[ThrottleNetworkAndCpu]: /microsoft-edge/devtools-guide-chromium/device-mode/index#throttle-the-network-and-cpu "Drosseln des Netzwerks und der CPU – Simulieren mobiler Geräte mit dem Gerätemodus in Microsoft Edge DevTools | Microsoft Docs"
+[ThrottleNetworkAndCpu]: /microsoft-edge/devtools-guide-chromium/device-mode/index#throttle-the-network-and-cpu "Drosseln des Netzwerks und der CPU – Simulieren von mobilen Geräten mit dem Gerätemodus in Microsoft Edge DevTools | Microsoft Docs"
 [Settings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "Einstellungen – Anpassen von Microsoft Edge DevTools | Microsoft Docs"
 [MicrosoftVisualStudio]: /microsoft-edge/visual-studio/index "Visual Studio | Microsoft Docs"  
 [CookiesFields]: /microsoft-edge/devtools-guide-chromium/storage/cookies#fields "Felder – Anzeigen, Bearbeiten und Löschen von Cookies mit Microsoft Edge DevTools | Microsoft Docs"  
 
-[VisualStudioCodeDebuggerEdgeExtension]: /microsoft-edge/visual-studio-code/debugger-for-edge "Debugger für Microsoft Edge Visual Studio Codeerweiterung"  
-[VisualStudioCodeElementEdgeExtension]: /microsoft-edge/visual-studio-code/elements-for-edge "Elemente für Microsoft Edge Visual Studio Codeerweiterung"  
+[VisualStudioCodeDebuggerEdgeExtension]: /microsoft-edge/visual-studio-code/debugger-for-edge "Debugger für Microsoft Edge Visual Studio Code Erweiterung"  
+[VisualStudioCodeElementEdgeExtension]: /microsoft-edge/visual-studio-code/elements-for-edge "Elemente für Microsoft Edge Visual Studio Code Erweiterung"  
 
 [MicrosoftEdgePreviewChannels]: https://aka.ms/microsoftedge "Microsoft Edge-Vorschaukanäle"  
 
 [VisualStudioCode]: https://aka.ms/vscode "Visual Studio Code"  
-[VisualStudioMarketplaceDebuggerEdge]: https://aka.ms/debugger4code "Debugger für Microsoft Edge – Visual Studio Marketplace"  
-[VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension]: https://aka.ms/elements4code "Elemente für Microsoft Edge \(Chromium\) – Visual Studio Marketplace"  
+[VisualStudioMarketplaceDebuggerEdge]: https://aka.ms/debugger4code "Debugger für Microsoft Edge - Visual Studio Marketplace"  
+[VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension]: https://aka.ms/elements4code "Elemente für Microsoft Edge \(Chromium\) - Visual Studio Marketplace"  
 [VisualStudioMarketplaceWebhintExtension]: https://aka.ms/webhint4code "webhint – Visual Studio Marketplace"
 
-[TrackingPrevention]: https://aka.ms/microsoftedge/tracking-prevention-blog "Verbessern der Nachverfolgungsverhütung in Microsoft Edge-Blogbeitrag"
+[TrackingPrevention]: https://aka.ms/microsoftedge/tracking-prevention-blog "Verbessern der Nachverfolgungsverhütung in Microsoft Edge Blogbeitrag"
 
-[MicrosoftEdgeInsiderAddons]: https://aka.ms/webhint/edge-extension "Microsoft Edge Insider Addons"  
-[MicrosoftVisualStudioDownloads]: https://aka.ms/vs/download "Herunterladen Visual Studio 2019 für Windows & Mac"  
+[MicrosoftEdgeInsiderAddons]: https://aka.ms/webhint/edge-extension "Microsoft Edge Insider-Addons"  
+[MicrosoftVisualStudioDownloads]: https://aka.ms/vs/download "Download Visual Studio 2019 für Windows & Mac"  
 
 [PostTweetEdgeDevTools]: https://aka.ms/tweet/edgedevtools "@EdgeDevTools | Tweet posten"  
 
-[CR924693]: https://crbug.com/924693 "Featureanforderung: Hinzufügen von &quot;Moto G4&quot; zur Gerätemodusliste | Chromium-Bugs"  
-[CR1030258]: https://crbug.com/1030258 "CR 1030258 | Chromium-Bugs"  
-[CR1026879]: https://crbug.com/1026879 "Die Registerkarte Cookie in der Entwicklungskonsole zeigt keine Priorität mehr | Chromium-Bugs"  
-[CR1029826]: https://crbug.com/1029826 "Netzwerkregisterkarte – > die rechte Option zum Anfordern von -> Copy -> kopieren, da beim Abrufen keine Cookies | Chromium-Bugs"  
-[CR985402]: https://crbug.com/985402 "Fehlerzeichenfolgen des Web-App-Manifestsymbols sind verwirrend | Chromium-Bugs"  
-[CR963183]: https://crbug.com/963183 "DevTools sind nicht WCAG-kompatible | Chromium-Bugs"  
-[CR941561]: https://crbug.com/941561 "Lokalisierbarkeit der DevTools-| Chromium-Bugs"  
-[CR987787]: https://crbug.com/987787 "Dom 3D View | Chromium-Bugs"  
+[CR924693]: https://crbug.com/924693 "Featureanforderung: Hinzufügen von &quot;Moto G4&quot; zur Gerätemodusliste | Chromium Bugs"  
+[CR1030258]: https://crbug.com/1030258 "CR 1030258 | Chromium Bugs"  
+[CR1026879]: https://crbug.com/1026879 "Die Registerkarte Cookie in der Entwicklungskonsole zeigt keine Priorität mehr | Chromium Bugs"  
+[CR1029826]: https://crbug.com/1029826 "Netzwerkregisterkarte – > die rechte Option zum Anfordern von -> Copy -> kopieren, da beim Abrufen keine Cookies | Chromium Bugs"  
+[CR985402]: https://crbug.com/985402 "Fehlerzeichenfolgen des Web-App-Manifestsymbols sind verwirrend | Chromium Bugs"  
+[CR963183]: https://crbug.com/963183 "DevTools sind nicht WCAG-kompatible | Chromium Bugs"  
+[CR941561]: https://crbug.com/941561 "Lokalisierbarkeit der DevTools-| Chromium Bugs"  
+[CR987787]: https://crbug.com/987787 "Dom 3D View | Chromium Bugs"  
 
 [CSSContentDemo]: https://mathiasbynens.github.io/css-dbg-stories/css-escapes.html "Demo für nicht angezeigte CSS-Inhalte"  
 
@@ -361,7 +361,7 @@ Wenn Sie unter Windows oder macOS sind, sollten Sie die [Microsoft Edge-Vorschau
 [Webhint]: https://aka.ms/webhint "webhint"  
 
 [WebhintBrowserExtension]: https://aka.ms/webhint/browser-extension "Webhint Browser Extension | Webhintdokumentation"  
-[WebhintVisualStudioCodeExtension]: https://aka.ms/webhint/code-extension "Webhint Visual Studio Codeerweiterung | Webhintdokumentation"  
+[WebhintVisualStudioCodeExtension]: https://aka.ms/webhint/code-extension "Webhint Visual Studio Code Extension | Webhintdokumentation"  
 
 > [!NOTE]
 > Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  

@@ -42,7 +42,7 @@ In diesem Handbuch erfahren Sie, wie [Sie Microsoft Edge DevTools][MicrosoftEdge
     
 1.  Erweitern Sie **das Menü Sitzungsspeicher.**  
     
-    :::image type="complex" source="../media/storage-application-storage-session-storage.msft.png" alt-text="Das Menü Sitzungsspeicher" lightbox="../media/storage-application-storage-session-storage.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-session-storage.msft.png" alt-text="Das Menü "Sitzungsspeicher"" lightbox="../media/storage-application-storage-session-storage.msft.png":::
        Das **Menü "Sitzungsspeicher"**  
     :::image-end:::  
     

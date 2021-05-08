@@ -1,5 +1,5 @@
 ---
-description: Erfahren Sie, wie Sie die HTTP-Cookies für eine Seite mit Microsoft Edge DevTools anzeigen, bearbeiten und löschen.
+description: Erfahren Sie, wie Sie die HTTP-Cookies für eine Seite mithilfe von devTools Microsoft Edge anzeigen, bearbeiten und löschen.
 title: Anzeigen, Bearbeiten und Löschen von Cookies mit Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -30,7 +30,7 @@ ms.locfileid: "11439682"
 
 # <a name="view-edit-and-delete-cookies-with-microsoft-edge-devtools"></a>Anzeigen, Bearbeiten und Löschen von Cookies mit Microsoft Edge DevTools  
 
-[HTTP-Cookies][MDNHTTPCookies] werden hauptsächlich verwendet, um Benutzersitzungen zu verwalten, Benutzerpersonalisierungseinstellungen zu speichern und das Benutzerverhalten nachverfolgt zu werden.  Cookies sind auch die Ursache für alle lästigen, die diese **Seite verwendet** Cookies Zustimmungsformulare, die im Web gefunden werden.  Im folgenden Handbuch erfahren Sie, wie Sie die HTTP-Cookies für eine Webseite mit Microsoft Edge DevTools anzeigen, [bearbeiten und löschen.][MicrosoftEdgeDevTools]  
+[HTTP-Cookies][MDNHTTPCookies] werden hauptsächlich verwendet, um Benutzersitzungen zu verwalten, Benutzerpersonalisierungseinstellungen zu speichern und das Benutzerverhalten nachverfolgt zu werden.  Cookies sind auch die Ursache für alle lästigen, die diese **Seite verwendet** Cookies Zustimmungsformulare, die im Web gefunden werden.  Im folgenden Handbuch erfahren Sie, wie Sie die HTTP-Cookies für eine Webseite mit devTools Microsoft Edge [anzeigen, bearbeiten und löschen.][MicrosoftEdgeDevTools]  
 
 ## <a name="open-the-cookies-pane"></a>Öffnen des Bereichs "Cookies"  
 
@@ -41,7 +41,7 @@ ms.locfileid: "11439682"
        Abbildung 1: Der Manifestbereich  
     :::image-end:::  
 
-1.  Wählen **Sie unter Speicher** erweitern **Cookies**einen Ursprung aus.  
+1.  Wählen **Storage** **sie Cookies**aus, und wählen Sie dann einen Ursprung aus.  
     
     :::image type="complex" source="../media/storage-application-storage-cookies-selected.msft.png" alt-text="Der Bereich Cookies" lightbox="../media/storage-application-storage-cookies-selected.msft.png":::
        Abbildung 2: Der Bereich "Cookies"  
@@ -100,9 +100,9 @@ Wählen **Sie Alle** löschen \( Alle löschen ![ ](../media/clear-icon.msft.png
 <!-- links -->  
 
 [MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools"  
-[DevToolsOpen]: /microsoft-edge/devtools-guide-chromium/open "Öffnen von Microsoft Edge DevTools"  
+[DevToolsOpen]: /microsoft-edge/devtools-guide-chromium/open "Öffnen Microsoft Edge DevTools"  
 
-[ChromiumIssue232693]: https://bugs.chromium.org/p/chromium/issues/detail?id=232693 "Chromium Issue 232693: Implementing Priority Field for Cookies | Chromium-Bugs"  
+[ChromiumIssue232693]: https://bugs.chromium.org/p/chromium/issues/detail?id=232693 "Chromium Problem 232693: Implementieren des Prioritätsfelds für Cookies | Chromium Bugs"  
 
 [MDNHTTPCookies]: https://developer.mozilla.org/docs/Web/HTTP/Cookies "HTTP-Cookies | MDN"  
 [MDNHTTPCookiesPermanent]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Permanent_cookies "HTTP-Cookies – permanente | MDN"  

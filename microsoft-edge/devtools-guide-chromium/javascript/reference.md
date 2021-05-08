@@ -1,5 +1,5 @@
 ---
-description: Entdecken Sie neue Debuggingworkflows in diesem umfassenden Verweis auf Die Debugfeatures von Microsoft Edge DevTools.
+description: Entdecken Sie neue Debugworkflows in dieser umfassenden Referenz Microsoft Edge DevTools-Debuggingfeatures.
 title: Verwenden der Debuggerfeatures
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -30,7 +30,7 @@ ms.locfileid: "11519604"
 
 # <a name="use-the-debugger-features"></a>Verwenden der Debuggerfeatures
 
-In diesem Artikel wird die Verwendung des Debuggers in Microsoft Edge DevTools behandelt, einschließlich der Einrichtung eines Codezeile-Haltepunkts.  Weitere Arten von Haltepunkten finden Sie unter [Pause your code with breakpoints][DevToolsJavascriptBreakpoints].  
+Dieser Artikel behandelt die Verwendung des Debuggers in Microsoft Edge DevTools, einschließlich des Festlegens eines Codezeile-Haltepunkts.  Weitere Arten von Haltepunkten finden Sie unter [Pause your code with breakpoints][DevToolsJavascriptBreakpoints].  
 
 Um die Grundlagen des Debuggens zu erlernen, navigieren Sie zu Erste Schritte mit dem Debuggen von [JavaScript in Microsoft Edge DevTools][DevToolsJavascriptGetStarted], einem Lernprogramm, das eine vorhandene, formularbasierte Webseite verwendet.  Das Lernprogramm verfügt über Bildschirmaufzeichnungen, sodass Sie es überspringen können.  Sie können die Debuggerfeatures ganz einfach auf der Demowebseite ausprobieren.
 
@@ -43,7 +43,7 @@ So zeigen Sie eine JavaScript-Datei an und bearbeiten sie:
 1.  Navigieren Sie zum **Tool Quellen.**  
 1.  Wählen Sie **im Bereich Navigator** Ihre Datei aus, um sie im **Editorbereich zu** öffnen.
 1.  Bearbeiten Sie **ihre** Datei im Editorbereich.  
-1.  Wählen `Ctrl` + `S` Sie \(Windows, Linux\) oder `Command` + `S` \(macOS\) aus, um zu speichern.  DevTools lädt dann die JavaScript-Datei in das JavaScript-Modul von Microsoft Edge.  
+1.  Wählen `Ctrl` + `S` Sie \(Windows, Linux\) oder `Command` + `S` \(macOS\) aus, um zu speichern.  DevTools lädt dann die JavaScript-Datei in das JavaScript-Modul Microsoft Edge.  
     
     :::image type="complex" source="../media/javascript-sources-html-minified.msft.png" alt-text="Der Editorbereich" lightbox="../media/javascript-sources-html-minified.msft.png":::
        Der **Editorbereich**  
@@ -306,18 +306,18 @@ So markieren Sie ein Skript als **Bibliothekscode** aus dem **Bereich "Aufruflis
        Markieren eines Skripts **als Bibliothekscode** aus dem **Bereich "Aufrufliste"**  
     :::image-end:::  
     
-### <a name="mark-a-script-as-library-code-from-settings"></a>Markieren eines Skripts als Bibliothekscode in den Einstellungen  
+### <a name="mark-a-script-as-library-code-from-settings"></a>Markieren eines Skripts als Bibliothekscode aus Einstellungen  
 
-So markieren Sie ein einzelnes Skript oder Skriptmuster in **den Einstellungen:**  
+So markieren Sie ein einzelnes Skript oder Skriptmuster aus **Einstellungen:**  
 
-1.  Öffnen [Sie Einstellungen][DevToolsCustomize].  
+1.  Öffnen [Einstellungen][DevToolsCustomize].  
 1.  Navigieren Sie zur **Codeeinstellung Bibliothek.**  
 1.  Wählen **Sie Muster hinzufügen aus.**  
 1.  Geben Sie den Skriptnamen oder ein Regexmuster von Skriptnamen ein, die als **Bibliothekscode zu markieren sind.**  
 1.  Wählen Sie **Hinzufügen**.  
     
-    :::image type="complex" source="../media/javascript-framework-library-code.msft.png" alt-text="Markieren eines Skripts als Bibliothekscode in den Einstellungen" lightbox="../media/javascript-framework-library-code.msft.png":::
-       Markieren eines Skripts **als Bibliothekscode in** **den Einstellungen**  
+    :::image type="complex" source="../media/javascript-framework-library-code.msft.png" alt-text="Markieren eines Skripts als Bibliothekscode aus Einstellungen" lightbox="../media/javascript-framework-library-code.msft.png":::
+       Markieren eines Skripts **als Bibliothekscode aus** **Einstellungen**  
     :::image-end:::  
     
 ## <a name="run-snippets-of-debug-code-from-any-page"></a>Ausführen von Codeausschnitten für debuggen von einer beliebigen Seite  
@@ -328,9 +328,9 @@ Weitere [Informationen finden Sie unter Ausführen von Codeausschnitten von Java
 
 ## <a name="see-also"></a>Weitere Informationen  
 
-*   [Erste Schritte mit dem Debuggen von JavaScript in Microsoft Edge DevTools][DevToolsJavascriptGetStarted] – Ein einfaches, kurzes Lernprogramm mit vorhandenem Code mit Bildschirmaufzeichnungen.
+*   [Erste Schritte Mit Debuggen von JavaScript in Microsoft Edge DevTools][DevToolsJavascriptGetStarted] – Ein einfaches, kurzes Lernprogramm mit vorhandenem Code mit Bildschirmaufzeichnungen.
 *   [Übersicht über das Quellentool][DevToolsSourcesIndex] – Das **Tool Sources** enthält den JavaScript-Debugger und -Editor.
-*   [Deaktivieren Von JavaScript mit Microsoft Edge DevTools][DevToolsJavascriptDisable].
+*   [Deaktivieren Sie JavaScript mit Microsoft Edge DevTools][DevToolsJavascriptDisable].
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
@@ -341,9 +341,9 @@ Weitere [Informationen finden Sie unter Ausführen von Codeausschnitten von Java
 [DevToolsJavascriptBreakpoints]: ./breakpoints.md "So halten Sie Ihren Code mit Haltepunkten in Microsoft Edge DevTools | Microsoft Docs"  
 [DevToolsJavascriptDisable]: ./disable.md "Deaktivieren von JavaScript mit Microsoft Edge DevTools | Microsoft Docs"  
 [DevToolsJavascriptGetStarted]: ./index.md "Erste Schritte mit dem Debuggen von JavaScript in Microsoft Edge DevTools | Microsoft Docs"  
-[DevToolsJavascriptSnippets]: ./snippets.md "Ausführen von Codeausschnitten von JavaScript auf jeder Seite mit Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsJavascriptSnippets]: ./snippets.md "Führen Sie Codeausschnitte von JavaScript auf jeder Seite mit Microsoft Edge DevTools | Microsoft Docs"  
 [DevToolsSourcesIndex]: ../sources/index.md "Übersicht über das | Microsoft Docs"  
-[DevToolsCustomize]: ../customize/index.md "Anpassen von Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsCustomize]: ../customize/index.md "Anpassen Microsoft Edge DevTools | Microsoft Docs"  
 
 > [!NOTE]
 > Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  

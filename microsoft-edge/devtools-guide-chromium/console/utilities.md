@@ -1,12 +1,12 @@
 ---
-description: Ein Verweis auf Komfortbefehle, die in der Microsoft Edge DevTools-Konsole verfügbar sind.
+description: Ein Verweis auf Komfortbefehle, die in der Microsoft Edge DevTools Console verfügbar sind.
 title: API-Referenz zu Konsolen-Dienstprogrammen
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
 ms.openlocfilehash: c6a0356bd590809f9164aa62fd42156f901cef0f
 ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
 ms.translationtype: MT
@@ -37,7 +37,7 @@ Die Console Utilities-API enthält eine Auflistung von Komfortbefehlen, um die f
 *   Überwachen von DOM-Ereignissen  
     
 > [!WARNING]
-> Die folgenden Befehle funktionieren nur in der Microsoft Edge **DevTools-Konsole.**  Die Befehle funktionieren nicht, wenn sie aus Ihren Skripts ausgeführt werden.  
+> Die folgenden Befehle funktionieren nur in der Microsoft Edge DevTools **Console**.  Die Befehle funktionieren nicht, wenn sie aus Ihren Skripts ausgeführt werden.  
 
 Weitere Informationen zu den `console.log()` und-Methoden und den restlichen Methoden finden `console.error()` Sie unter Console API `console.*` [Reference][DevToolsConsoleApi].  
 
@@ -297,7 +297,7 @@ debug(method)
 ```  
 
 >[!NOTE]
-> Das [#A0 #1050237][CR1050237] verfolgt einen Fehler mit der `debug()` Funktion.  Wenn das Problem auftreten sollte, versuchen Sie stattdessen, [Haltepunkte zu][DevtoolsJavascriptBreakpoints] verwenden.  
+> Das [Chromium Problem #1050237][CR1050237] ist die Nachverfolgung eines Fehlers mit der `debug()` Funktion.  Wenn das Problem auftreten sollte, versuchen Sie stattdessen, [Haltepunkte zu][DevtoolsJavascriptBreakpoints] verwenden.  
 
 Wenn Sie die angegebene Methode anfordern, ruft der Debugger die Methode im Tool Sources auf und bricht **sie** auf.  Sie können den Code schrittweise ausführen und debuggen.  
 
@@ -773,7 +773,7 @@ values(object);
 
 [DevtoolsRenderingToolsJsRuntime]: ../rendering-tools/js-runtime.md "Beschleunigen sie die JavaScript-Laufzeit | Microsoft Docs"  
 
-[CR1050237]: https://crbug.com/1050237 "Problem 1050237: debug(function) funktioniert nicht | Chromium-Fehler"  
+[CR1050237]: https://crbug.com/1050237 "Problem 1050237: debug(function) funktioniert nicht | Chromium Fehler"  
 
 [MdnDocsWebApiConsoleDir]: https://developer.mozilla.org/docs/Web/API/Console/dir "Console.dir() | MDN"  
 [MdnDocsWebApiConsoleDirxml]: https://developer.mozilla.org/docs/Web/API/Console/dirxml "Console.dirxml() | MDN"  

@@ -45,7 +45,7 @@ Mit Arbeitsbereichen können Sie eine Änderung, die Sie in Devtools in einer lo
 
 *   Sie haben den Quellcode für Ihre Website auf Ihrem Desktop.  
 *   Sie ausführen einen lokalen Webserver aus dem Quellcodeverzeichnis, sodass auf die Website unter zugegriffen werden `localhost:8080` kann.  
-*   Sie haben in Microsoft Edge geöffnet und verwenden `localhost:8080` DevTools, um die CSS der Website zu ändern.  
+*   Sie haben in Microsoft Edge geöffnet, und Sie verwenden `localhost:8080` DevTools, um die CSS der Website zu ändern.  
 
 Wenn Arbeitsbereiche aktiviert sind, werden die CSS-Änderungen, die Sie in DevTools vornehmen, im Quellcode auf Ihrem Desktop gespeichert.  
 
@@ -57,7 +57,7 @@ Workspaces ist in der Regel in der Lage, den optimierten Code mithilfe von Quell
 
 Arbeitsbereiche funktionieren mit dem folgenden Framework nicht.  
 
-*   Erstellen von React App  
+*   Erstellen React App  
 
     <!-- If you run into issues while using Workspaces with your framework of choice, or you get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->  
     
@@ -108,7 +108,7 @@ Führen Sie die folgenden Aktionen aus, um praktische Erfahrungen mit Arbeitsber
        :::column-end:::
     :::row-end:::  
     
-1.  Öffnen Sie eine Registerkarte in Microsoft Edge, und navigieren Sie zu lokal gehosteter Version der Website.  Sie sollten über eine URL wie oder darauf `localhost:8080` zugreifen `http://0.0.0.0:8080` können.  Die genaue [Portnummer][WikiPortURLs] kann unterschiedlich sein.  
+1.  Öffnen Sie eine Registerkarte in Microsoft Edge, und navigieren Sie zur lokal gehosteten Version der Website.  Sie sollten über eine URL wie oder darauf `localhost:8080` zugreifen `http://0.0.0.0:8080` können.  Die genaue [Portnummer][WikiPortURLs] kann unterschiedlich sein.  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo.msft.png" alt-text="Die Demo" lightbox="../media/workspaces-workspaces-demo.msft.png":::
        Die Demo  
@@ -222,14 +222,14 @@ Der Hauptort für die Verwendung des Code-Editors von DevTools ist das **Sources
 Gehen Sie wie folgt vor, um den DevTools-Code-Editor zusammen mit anderen Tools zu öffnen:  
 
 1.  Navigieren Sie zum **Elementtool.**  
-1.  Wählen `Control` + `Shift` + `P` Sie \(Windows, Linux\) oder `Command` + `Shift` + `P` \(macOS\) aus.  Das **Befehlsmenü** wird geöffnet.  
+1.  Wählen `Control` + `Shift` + `P` Sie \(Windows, Linux\) oder `Command` + `Shift` + `P` \(macOS\).  Das **Befehlsmenü** wird geöffnet.  
 1.  Geben `Quick Source` Sie ein, und wählen Sie **dann Schnellquelle anzeigen aus.**  Am unteren Rand des DevTools-Fensters wird das **Quick Source-Tool** angezeigt, das den Inhalt von angibt, der die letzte Datei ist, die Sie im Tool `index.html` Quellen **bearbeitet** haben.    
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="Öffnen Des Schnellquellentools mithilfe des Befehlsmenüs" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
        Öffnen Des **Schnellquellentools** mithilfe des **Befehlsmenüs**  
     :::image-end:::  
     
-1.  Wählen `Control` + `P` Sie \(Windows, Linux\) oder `Command` + `P` \(macOS\) aus, um das Dialogfeld **Datei öffnen zu** öffnen.  Überprüfen Sie die folgende Abbildung.  
+1.  Wählen `Control` + `P` Sie \(Windows, Linux\) oder `Command` + `P` \(macOS\) **** aus, um das Dialogfeld Datei öffnen zu öffnen.  Überprüfen Sie die folgende Abbildung.  
 1.  Geben `script` Sie ein, und wählen Sie **dann app/script.js**.  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="Öffnen script.js mithilfe des Dialogfelds Datei öffnen" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
@@ -287,7 +287,7 @@ If you have more feedback on the topics or anything else, please use any of the 
 
 <!--[StackOverflowAlphabetBrowserDevTools]: https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools "Alphabet Browser DevTools - Stack Overflow"  -->
 
-[TreehouseBlogSourceMaps]: https://blog.teamtreehouse.com/introduction-source-maps "Eine Einführung in Quellkarten | Treehouse-Blog"  
+[TreehouseBlogSourceMaps]: https://blog.teamtreehouse.com/introduction-source-maps "Eine Einführung in Karten | Treehouse-Blog"  
 
 <!-- [TwitterAlphabetBrowserDevTools]: https://twitter.com/alphabetbrowserdevtools "Alphabet Browser DevTools \(@AlphabetBrowserDevTools\) | Twitter"  -->
 

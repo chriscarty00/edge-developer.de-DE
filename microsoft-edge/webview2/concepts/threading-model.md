@@ -3,17 +3,17 @@ description: Threadingmodell
 title: Threadmodell| WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/29/2021
+ms.date: 05/06/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, Webview2, Webview, wpf-Apps, Wpf, Microsoft Edge, ICoreWebView2, ICoreWebView2Host, Browsersteuerung, Edge-HTML
-ms.openlocfilehash: 7b447f5cc5fcce3439166638d47a0b87e5536c0a
-ms.sourcegitcommit: 5e218b24fb21fcfa9c82b99f17373fed1ba5a21c
+ms.openlocfilehash: 9a7ce3d66e53b832d4430afb153e6539d97e5db7
+ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "11462043"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "11535608"
 ---
 # <a name="threading-model"></a>Threadingmodell 
 
@@ -69,7 +69,7 @@ private async void Button_Click(object sender, EventArgs e)
 
 ## <a name="see-also"></a>Weitere Informationen  
 
-*   Um mit WebView2 zu beginnen, navigieren Sie zu [WebView2 Anleitungen für erste Schritte.][Webview2IndexGettingStarted]  
+*   Navigieren Sie zu [WebView2 Get Started Guides,][Webview2IndexGetStarted] um mit WebView2 zu beginnen.  
 *   Ein umfassendes Beispiel für WebView2-Funktionen finden Sie unter [WebView2Samples-Repository][GithubMicrosoftedgeWebview2samples] auf GitHub.  
 *   Weitere Informationen zu WebView2-APIs finden Sie unter [API-Referenz][DotnetApiMicrosoftWebWebview2WpfWebview2].  
 *   Weitere Informationen zu WebView2 finden Sie unter [WebView2 Resources][Webview2IndexNextSteps].  
@@ -80,7 +80,7 @@ private async void Button_Click(object sender, EventArgs e)
 
 <!-- links -->  
 
-[Webview2IndexGettingStarted]: ../index.md#getting-started "Erste Schritte – Einführung in Microsoft Edge WebView2 | Microsoft Docs"  
+[Webview2IndexGetStarted]: ../index.md#get-started "Erste Schritte – Einführung in Microsoft Edge WebView2 | Microsoft Docs"  
 [Webview2IndexNextSteps]: ../index.md#next-steps "Nächste Schritte – Einführung in Microsoft Edge WebView2 | Microsoft Docs"  
 
 [DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "WebView2-Klasse | Microsoft Docs"  

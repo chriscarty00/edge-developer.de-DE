@@ -1,6 +1,6 @@
 ---
 description: Eine browserübergreifende Initiative, die sich darauf konzentriert, fehlende Features und Funktionen in der Webplattform für die potenzielle Entwicklung als Webstandards oder Browserfeatures zu identifizieren.
-title: Web We Want overview
+title: Web We Want – Übersicht
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/15/2021

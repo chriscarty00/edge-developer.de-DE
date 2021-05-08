@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
 ms.openlocfilehash: 80b0e4368b1c8feaf28a58ac2e3bd9c1ea2f1f92
 ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
 ms.translationtype: MT
@@ -23,7 +23,7 @@ Das **Konsolentool** ist nicht nur zum Protokollieren von [Informationen][Devtoo
 Führen Sie die folgenden Aktionen aus, um auf die Kopfzeile der Webseite zu verweisen.  
 
 1.  Öffnen Sie die **Konsole**.
-    *   Wählen `Control` + `Shift` + `J` Sie \(Windows, Linux\) oder `Command` + `Option` + `J` \(macOS\) aus.  
+    *   Wählen `Control` + `Shift` + `J` Sie \(Windows, Linux\) oder `Command` + `Option` + `J` \(macOS\).  
 1.  Geben Sie den folgenden Codeausschnitt in der Konsole ein, oder kopieren Sie ihn, und fügen Sie ihn **ein.**  
     
     ```javascript
@@ -258,7 +258,7 @@ unmonitorEvents($0, 'key');
 
 Möglicherweise ist es hilfreich, das DOM über die Konsole zu **bearbeiten.**  Möglicherweise stoßen Sie bald auf die Einschränkungen der **Konsole** als Entwicklungsplattform.  Die gute Nachricht ist, dass [das Sources-Tool][DevtoolsSourcesIndex] in DevTools eine voll ausgestattete Entwicklungsumgebung bietet.  Im **Tool Quellen** können Sie die folgenden Aktionen ausführen.  
 
-*   Speichern Sie Ihre Skripts für **die Konsole** [als Codeausschnitte.][DevToolsJavascriptSnippets]  
+*   Store Skripts für die Konsole als [Codeausschnitte .][DevToolsJavascriptSnippets] ****  
 *   Führen Sie die Skripts auf einer Webseite mithilfe einer Tastenkombination oder des Editors aus.  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
@@ -271,5 +271,5 @@ Möglicherweise ist es hilfreich, das DOM über die Konsole zu **bearbeiten.**  
 [DevtoolsConsoleConsoleLog]: ./console-log.md "Protokolle im Konsolentool | Microsoft Docs"  
 [DevtoolsConsoleUtilities]: ./utilities.md "Console Utilities API reference | Microsoft Docs"  
 
-[DevToolsJavascriptSnippets]: ../javascript/snippets.md "Ausführen von Codeausschnitten von JavaScript auf jeder Seite mit Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsJavascriptSnippets]: ../javascript/snippets.md "Führen Sie Codeausschnitte von JavaScript auf jeder Seite mit Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsSourcesIndex]: ../sources/index.md "Übersicht über das | Microsoft Docs"  

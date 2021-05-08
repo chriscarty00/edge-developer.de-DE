@@ -1,5 +1,5 @@
 ---
-description: Unternehmensrichtliniendokumentation für Edgeerweiterungen (Chromium).
+description: Enterprise Richtliniendokumentation für Edgeerweiterungen (Chromium).
 title: Übereinstimmungsmuster
 author: MSEdgeTeam
 ms.author: msedgedevrel

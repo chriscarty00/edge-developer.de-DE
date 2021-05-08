@@ -30,7 +30,7 @@ ms.locfileid: "11398714"
 
 # <a name="simulate-device-orientation-with-microsoft-edge-devtools"></a>Simulieren der Geräteausrichtung mit Microsoft Edge DevTools  
 
-Führen Sie die folgenden Aktionen aus, um verschiedene Geräteausrichtungen von Microsoft Edge DevTools zu simulieren.  
+Führen Sie die folgenden Aktionen aus, um verschiedene Geräteausrichtungen von devTools Microsoft Edge zu simulieren.  
 
 <!--todo: update device orientation section when available -->  
 

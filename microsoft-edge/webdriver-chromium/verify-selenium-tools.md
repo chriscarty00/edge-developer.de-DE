@@ -1,13 +1,13 @@
 ---
 description: Informationen zum Überprüfen der GPG-Signatur für Selenium Tools für Microsoft Edge-Versionen.
-title: Überprüfen der Downloads von Selenium Tools für Microsoft Edge
+title: Überprüfen der Downloads der Selenium-Tools für Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 01/29/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
-keywords: Microsoft Edge, Webentwicklung, HTML, CSS, Javascript, Entwickler, Webdriver, Selenium, Testen, Tools, Automatisierung, Test
+keywords: Microsoft Edge, Webentwicklung, HTML, CSS, Javascript, Entwickler, WebDriver, Selenium, Tests, Tools, Automatisierung, Test
 ms.openlocfilehash: cf5889ab3c5f1ca89579a398a232716008144562
 ms.sourcegitcommit: 070a60f634908eea0e29e260331f9fc0aa85ee78
 ms.translationtype: MT
@@ -15,18 +15,18 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 01/30/2021
 ms.locfileid: "11306272"
 ---
-# Überprüfen der Downloads von Selenium Tools für Microsoft Edge  
+# Überprüfen von Downloads von Selenium Tools für Microsoft Edge  
 
 Dieser Artikel enthält den öffentlichen Schlüssel, der beim Überprüfen der Signatur von Versionen der [Selenium Tools für Microsoft Edge verwendet werden soll.][GithubMicrosoftEdgeSeleniumToolsReleases]  
 
-Die [Java von][MavernSearchArtifactComMicrosoftEdgeMsedgeSeleniumToolsJava] [Selenium Tools für Microsoft Edge][GithubMicrosoftEdgeSeleniumToolsReleases] werden mithilfe der [GPG signiert.][Gnupg]  
+Die [Java von][MavernSearchArtifactComMicrosoftEdgeMsedgeSeleniumToolsJava] [Selenium Tools für Microsoft Edge][GithubMicrosoftEdgeSeleniumToolsReleases] werden mit [GPG signiert.][Gnupg]  
 
 Verwenden Sie die folgenden Schlüssel, um die Signatur von Paketen zu überprüfen, die vom [Microsoft Edge Developer Tools-Team bereitgestellt werden.][TwitterEdgeDevTools]  
 
-## Öffentlicher Schlüssel für die Überprüfung der Selenium Tools für Microsoft Edge  
+## Öffentlicher Schlüssel zum Überprüfen von Selenium Tools für Microsoft Edge  
 
 *   **Öffentliche Schlüssel-ID:** Microsoft Edge Developer Tools Team [EdgeDevToolsOSS@microsoft.com](mailto:edgedevtoolsoss@microsoft.com)  
-*   **Öffentlicher Schlüsselfingerabdruck:** `46EE EB3F 4028 B5CE A4E8  E6F5 A6DC D211 6D3A 3A7A`  
+*   **Fingerabdruck des öffentlichen Schlüssels**: `46EE EB3F 4028 B5CE A4E8  E6F5 A6DC D211 6D3A 3A7A`  
 
 ```output
 -----BEGIN PGP PUBLIC KEY BLOCK-----
@@ -54,7 +54,7 @@ ptJfPKT84TtqmRoJApBgxAsnD4t4JiuvnHkYHgzAzwcXFiofj2cCeJZf1tzIk6+Z
 
 [GithubMicrosoftEdgeSeleniumToolsReleases]: https://github.com/microsoft/edge-selenium-tools/releases "microsoft/edge-selenium-tools | GitHub"  
 
-[Gnupg]: https://gnupg.org "The PRIVACY Privacy Guard | MailingPG"  
+[Gnupg]: https://gnupg.org "Der SCHUTZ von &quot;GNU Privacy Guard&quot; | GnuPG"  
 
 [MavernSearchArtifactComMicrosoftEdgeMsedgeSeleniumToolsJava]:https://search.maven.org/artifact/com.microsoft.edge/msedge-selenium-tools-java "com.microsoft.edge:msedge-selenium-tools-java | sonatype Maven Central Repository Search"  
 

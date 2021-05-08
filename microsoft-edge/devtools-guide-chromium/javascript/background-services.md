@@ -108,14 +108,14 @@ Nachdem ein **Dienstmitarbeiter** eine [Pushnachricht][MDNPush] von einem Server
 1.  Öffnen Sie das **Anwendungstool.**  
 1.  Öffnen Sie den **Bereich Benachrichtigungen.**  
     
-    :::image type="complex" source="../media/javascript-application-background-services-notifications-empty.msft.png" alt-text="Der Bereich Benachrichtigungen" lightbox="../media/javascript-application-background-services-notifications-empty.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-notifications-empty.msft.png" alt-text="Der Bereich "Benachrichtigungen"" lightbox="../media/javascript-application-background-services-notifications-empty.msft.png":::
        Der **Bereich "Benachrichtigungen"**  
     :::image-end:::  
     
 1.  Wählen **Sie Record** \( Record ![ ](../media/record-icon.msft.png) \).  
    Nachdem einige Benachrichtigungsaktivitäten ausgelöst wurden, protokolliert DevTools die Ereignisse in der Tabelle.  
     
-    :::image type="complex" source="../media/javascript-application-background-services-notifications.msft.png" alt-text="Ein Ereignisprotokoll im Bereich Benachrichtigungen" lightbox="../media/javascript-application-background-services-notifications.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-notifications.msft.png" alt-text="Ein Ereignisprotokoll im Bereich "Benachrichtigungen"" lightbox="../media/javascript-application-background-services-notifications.msft.png":::
        Ein Ereignisprotokoll im Bereich **"Benachrichtigungen"**  
     :::image-end:::  
     

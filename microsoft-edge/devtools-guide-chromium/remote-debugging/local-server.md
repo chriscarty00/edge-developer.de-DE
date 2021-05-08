@@ -31,7 +31,7 @@ ms.locfileid: "11461262"
 
 Hosten Sie eine Website auf einem Webserver des Entwicklungscomputers, und greifen Sie dann von einem Android-Gerät auf die Inhalte zu.  
 
-Führen Sie mit einem USB-Kabel und Microsoft Edge DevTools eine Website von einem Entwicklungscomputer aus aus, und zeigen Sie die Website dann auf einem Android-Gerät an.  
+Führen Sie mit einem MICROSOFT EDGE devTools eine Website von einem Entwicklungscomputer aus aus, und zeigen Sie die Website dann auf einem Android-Gerät an.  
 
 ### <a name="summary"></a>Zusammenfassung  
 
@@ -62,7 +62,7 @@ Die Port weiterleitung ist jetzt eingerichtet.  Überprüfen Sie die Statusanzei
    Status der Port weiterleitung  
 :::image-end:::  
 
-Um den Inhalt anzuzeigen, öffnen Sie Microsoft Edge auf Ihrem Android-Gerät, und wechseln Sie zu dem Port, den Sie `localhost` im Feld **Geräteport angegeben** haben.  Wenn Sie z. B. `5000` in das Feld eingegeben haben, besuchen Sie `localhost:5000` .  
+Öffnen Sie zum Anzeigen des Inhalts Microsoft Edge auf Ihrem Android-Gerät, und wechseln Sie zu dem Port, den Sie im Feld `localhost` **Geräteport angegeben** haben.  Wenn Sie z. B. `5000` in das Feld eingegeben haben, besuchen Sie `localhost:5000` .  
 
 ## <a name="map-to-custom-local-domains"></a>Zuordnung zu benutzerdefinierten lokalen Domänen  
 
@@ -87,7 +87,7 @@ So richten Sie die Port weiterleitung an einen Proxy ein:
 
 Als Nächstes müssen Sie Ihr Android-Gerät für die Kommunikation mit dem Proxyserver konfigurieren.  
 
-1.  Navigieren Sie auf Ihrem Android-Gerät zu **Einstellungen**  >  **WI-Fi**.  
+1.  Navigieren Sie auf Ihrem Android-Gerät zu **Einstellungen**  >  **WLAN.**  
 1.  Drücken Sie lange den Namen des Netzwerks, mit dem Sie derzeit verbunden sind.  
     
     > [!NOTE]

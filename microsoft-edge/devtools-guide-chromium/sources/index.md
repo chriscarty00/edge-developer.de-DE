@@ -1,6 +1,6 @@
 ---
 description: Verwenden Sie das Tool Sources, um JavaScript anzuzeigen, zu ändern und zu debuggen, das vom Server zurückgegeben wird, und um die Ressourcen zu überprüfen, aus der die aktuelle Webseite ist.  Um das Tool Sources als Entwicklungsumgebung zu verwenden, fügen Sie einem Arbeitsbereich Quelldateien hinzu.
-title: Übersicht über das Quellentool
+title: Übersicht über das Tool „Quellen“
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/20/2021
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/25/2021
 ms.locfileid: "11519521"
 ---
-# <a name="sources-tool-overview"></a>Übersicht über das Quellentool  
+# <a name="sources-tool-overview"></a>Übersicht über das Tool „Quellen“  
 
 Verwenden Sie **das Sources-Tool,** um Front-End-JavaScript-Code anzuzeigen, zu ändern und zu debuggen und die Ressourcen zu überprüfen, die die aktuelle Webseite enthalten.  Das **Tool Sources** verfügt über drei Bereiche:  
 
@@ -160,7 +160,7 @@ script.integrity = 'sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=';
 document.head.appendChild(script);
 ```  
 
-Stattdessen können Sie diesen Code in einem Codeausschnitt **speichern** und dann bei Bedarf problemlos ausführen.  Wenn Sie `Ctrl` + `S` \(Windows/Linux\) oder `Command` + `S` \(macOS\) auswählen, speichert DevTools den **Codeausschnitt** in Ihrem Dateisystem.  
+Stattdessen können Sie diesen Code in einem Codeausschnitt **speichern** und dann bei Bedarf problemlos ausführen.  Wenn Sie `Ctrl` + `S` \(Windows/Linux\) oder `Command` + `S` \(macOS\) auswählen, **** speichert DevTools den Codeausschnitt in Ihrem Dateisystem.  
 
 Es gibt mehrere Möglichkeiten zum Ausführen eines Codeausschnitts:
 *   Wählen Sie **im Bereich Navigator** die Registerkarte **Codeausschnitte** aus, und wählen Sie dann die Codeausschnittdatei aus, um sie zu öffnen.  Wählen Sie dann unten im Editorbereich **Ausführen** \( ![ Die Schaltfläche Ausführen ](../media/run-snippet-icon.msft.png) \).  
@@ -170,16 +170,16 @@ Codeausschnitte ähneln Bookmarklets.
 
 #### <a name="see-also"></a>Weitere Informationen
 
-*   [Ausführen von Codeausschnitten von JavaScript auf einer beliebigen Webseite mit Microsoft Edge DevTools][DevtoolsGuideChromiumJavascriptSnippets]
+*   [Ausführen von Codeausschnitten von JavaScript auf jeder Webseite mit Microsoft Edge DevTools][DevtoolsGuideChromiumJavascriptSnippets]
 
 ### <a name="using-the-command-menu-to-open-files"></a>Öffnen von Dateien mithilfe des Befehlsmenüs
 
 Zum Öffnen einer Datei können Sie neben **** der Verwendung des **Navigatorbereichs** im Tool Quellen das Befehlsmenü von überall in DevTools verwenden.
 
-*   Wählen Sie von überall in DevTools `Ctrl` + `P` unter Windows/Linux oder `Command` + `P` unter macOS aus.  Das Befehlsmenü wird angezeigt und listet alle Ressourcen auf, die sich auf den Registerkarten des **Navigatorbereichs** des **Tools Quellen** befinden.  
+*   Wählen Sie an beliebiger Stelle in DevTools `Ctrl` + `P` auf Windows/Linux oder `Command` + `P` auf macOS aus.  Das Befehlsmenü wird angezeigt und listet alle Ressourcen auf, die sich auf den Registerkarten des **Navigatorbereichs** des **Tools Quellen** befinden.  
 *   Oder wählen Sie neben den Registerkarten **** des **Navigatorbereichs** im Tool Quellen die **Schaltfläche ...** (**Weitere**Optionen ) aus, und wählen Sie dann Datei **öffnen aus.**  
 
-Geben Sie zum Anzeigen und Auswählen aus einer Liste aller JS-Dateien `.js` ein.
+Geben Sie zum Anzeigen und Auswählen aus einer Liste aller .js `.js` ein.
 
 :::image type="complex" source="../media/sources-command-menu-to-open-file.msft.png" alt-text="Öffnen einer Datei mithilfe des Befehlsmenüs" lightbox="../media/sources-command-menu-to-open-file.msft.png":::
    Öffnen einer Datei mithilfe des Befehlsmenüs
@@ -187,7 +187,7 @@ Geben Sie zum Anzeigen und Auswählen aus einer Liste aller JS-Dateien `.js` ein
 
 Wenn Sie `?` eingeben, werden im Befehlsmenü mehrere Befehle angezeigt, darunter **... Öffnen Sie die Datei**.  Wenn Sie das `Backspace` Befehlsmenü löschen möchten, wird eine Liste der Dateien angezeigt.
 
-Weitere Informationen finden Sie unter [Ausführen von Befehlen mit dem Microsoft Edge DevTools-Befehlsmenü][DevToolsCommandMenuIndex].
+Weitere Informationen finden Sie unter [Run commands with the Microsoft Edge DevTools Command Menu][DevToolsCommandMenuIndex].
 
 ## <a name="using-the-editor-pane-to-view-or-edit-files"></a>Verwenden des Editorbereichs zum Anzeigen oder Bearbeiten von Dateien
 
@@ -240,7 +240,7 @@ Standardmäßig werden Ihre Bearbeitungen verworfen, wenn Sie die Webseite aktua
 
 #### <a name="find-and-replace"></a>Suchen und Ersetzen
 
-Um Text in der aktuellen Datei zu finden, wählen Sie den **Editorbereich** aus, um ihm den Fokus zu geben, und wählen Sie dann unter `Ctrl` + `F` Windows/Linux oder `Command` + `F` unter macOS aus.  
+Um Text in der aktuellen **** Datei zu finden, wählen Sie den Editorbereich aus, um ihm den Fokus zu geben, und wählen Sie dann unter `Ctrl` + `F` Windows/Linux oder `Command` + `F` unter macOS aus.  
 
 :::image type="complex" source="../media/find-replace.msft.png" alt-text="Suchen und Ersetzen im Editorbereich des Tools Quellen" lightbox="../media/find-replace.msft.png":::
    **Suchen** und **Ersetzen**im **Editorbereich** des **Tools Quellen**
@@ -456,21 +456,21 @@ Haltepunkte und Watch-Ausdrücke werden beim Aktualisieren der Webseite beibehal
 
 ### <a name="debug-from-visual-studio-code-directly"></a>Debuggen von Visual Studio Code direkt
 
-Wenn Sie den vollständigeren Debugger von Visual Studio Code anstelle des DevTools-Debuggers verwenden möchten, verwenden Sie die **Microsoft Edge Tools for VS Code-Erweiterung** für Visual Studio Code.
+Verwenden Sie die **Microsoft Edge Tools for VS Code** extension for Visual Studio Code, um den vollständigeren Debugger von Visual Studio Code anstelle des DevTools-Debuggers zu Visual Studio Code.
 
-:::image type="complex" source="../media/microsoft-edge-tools-for-vs-code-extension.msft.png" alt-text="Die Microsoft Edge Tools for VS Code-Erweiterung für Visual Studio Code" lightbox="../media/microsoft-edge-tools-for-vs-code-extension.msft.png":::
-   Die **Microsoft Edge Tools for VS Code-Erweiterung** für Visual Studio Code  
+:::image type="complex" source="../media/microsoft-edge-tools-for-vs-code-extension.msft.png" alt-text="Die Microsoft Edge Tools for VS Code extension for Visual Studio Code" lightbox="../media/microsoft-edge-tools-for-vs-code-extension.msft.png":::
+   Die **Microsoft Edge Tools for VS Code** extension for Visual Studio Code  
 :::image-end:::  
 
-Diese Erweiterung bietet Zugriff auf die **Elemente** und **Netzwerktools** von Microsoft Edge DevTools innerhalb von Microsoft Visual Studio Code.  
+Diese Erweiterung bietet Zugriff auf die **Elemente** und **Netzwerktools** von Microsoft Edge DevTools innerhalb Microsoft Visual Studio Code.  
 
-Weitere Informationen finden Sie unter [Visual Studio Code overview][DevToolsVSCodeIndex] und der GitHub Readme-Seite Microsoft Edge Developer Tools for Visual Studio [Code][GithubMicrosoftVscodeEdgeDevtools].
+Weitere Informationen finden Sie [unter Visual Studio Code übersicht][DevToolsVSCodeIndex] und GitHub Readme-Seite, Microsoft Edge Developer Tools for [Visual Studio Code][GithubMicrosoftVscodeEdgeDevtools].
 
 ### <a name="articles-about-debugging"></a>Artikel zum Debuggen
 
 In den folgenden Artikeln werden der **Debuggerbereich** und die Haltepunkte aufgeführt:
 
-*   [Erste Schritte mit dem Debuggen von JavaScript in Microsoft Edge DevTools][DevtoolsGuideChromiumJavascriptIndex] – Ein Lernprogramm (mit Bildschirmaufzeichnungen) mithilfe eines vorhandenen, einfachen Projekts.
+*   [Erste Schritte mit dem Debuggen von JavaScript in Microsoft Edge DevTools][DevtoolsGuideChromiumJavascriptIndex] – Ein Lernprogramm (mit Bildschirmaufzeichnungen) mit einem vorhandenen, einfachen Projekt.
 
 *   [Verwenden der Debuggerfeatures][DevToolsJavaScriptReference] : Verwenden des Debuggers zum Festlegen von Haltepunkten, Schrittweises Durchbrechen von Code, Anzeigen und Ändern von Variablenwerten, Beobachten von JavaScript-Ausdrücken und Anzeigen der Aufrufliste.
 
@@ -485,25 +485,25 @@ In den folgenden Artikeln werden der **Debuggerbereich** und die Haltepunkte auf
 [DevToolsBeginnersCss]: ../beginners/css.md "DevTools für Anfänger: Erste Schritte mit CSS | Microsoft Docs"
 [DevToolsBeginnersHtml]: ../beginners/html.md "DevTools für Anfänger: Erste Schritte mit HTML und der DOM-| Microsoft Docs"
 [DevToolsCommandMenuIndex]: ../command-menu/index.md "Ausführen von Befehlen mit dem Microsoft Edge DevTools-Befehlsmenü | Microsoft Docs"  
-[DevtoolsCustomizeIndexDrawer]: ../customize/index.md#drawer "Drawer – Anpassen von Microsoft Edge DevTools | Microsoft Docs"  
-[DevToolsCustomizePlacement]: ../customize/placement.md "Ändern der Microsoft Edge DevTools-Platzierung (Abdocken, Dock nach unten, Dock nach links) | Microsoft Docs"
+[DevtoolsCustomizeIndexDrawer]: ../customize/index.md#drawer "Drawer – Anpassen Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsCustomizePlacement]: ../customize/placement.md "Ändern Microsoft Edge DevTools-Platzierung (Abdocken, Dock nach unten, Dock nach links) | Microsoft Docs"
 [DevtoolsGuideChromiumJavascriptIndex]: ../javascript/index.md "Erste Schritte mit dem Debuggen von JavaScript in Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsGuideChromiumJavascriptSnippets]: ../javascript/snippets.md "Ausführen von Codeausschnitten von JavaScript auf jeder Webseite mit Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsGuideChromiumJavascriptSnippets]: ../javascript/snippets.md "Führen Sie Codeausschnitte von JavaScript auf jeder Webseite mit Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsGuideChromiumWorkspacesIndex]: ../workspaces/index.md "Bearbeiten von Dateien mit Arbeitsbereichen | Microsoft Docs"  
 [DevToolsInspectStylesEditFonts]: ../inspect-styles/edit-fonts.md "Bearbeiten von CSS-Schriftartenstilen und -einstellungen im Formatvorlagenbereich | Microsoft Docs"
 [DevToolsJavaScriptBreakpoints]: ../javascript/breakpoints.md "Anhalten des Codes mit Haltepunkten | Microsoft Docs"
 [DevToolsJavaScriptGuidesMarkContentScriptsLibraryCode]: ../javascript/guides/mark-content-scripts-library-code.md "Markieren von Inhaltsskripts als Bibliothekscode | Microsoft Docs"
-[DevtoolsJavascriptOverrides]: ../javascript/overrides.md "Überschreiben von Webseitenressourcen mit lokalen Kopien mithilfe von Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsJavascriptOverrides]: ../javascript/overrides.md "Überschreiben von Webseitenressourcen mit lokalen Kopien mithilfe Microsoft Edge DevTools | Microsoft Docs"  
 [DevToolsJavaScriptReference]: ../javascript/reference.md "Verwenden der Debuggerfeatures | Microsoft Docs"
 [DevToolsJavaScriptReferenceReformat]: ../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print "Neuvergrößern einer minifizierten JavaScript-Datei mit Hübschdruck – Verwenden Sie die Debuggerfeatures | Microsoft Docs"
 [DevToolsJavaScriptSourceMaps]: ../javascript/source-maps.md "Map preprocessed code to source code | Microsoft Docs"
-[DevToolsVSCodeIndex]: ../../visual-studio-code/index.md "Visual Studio Codeübersicht | Microsoft Docs"
+[DevToolsVSCodeIndex]: ../../visual-studio-code/index.md "Visual Studio Code Übersicht | Microsoft Docs"
 [ExtensionsChromiumGetstartPart2ContentScripts]: ../../extensions-chromium/getting-started/part2-content-scripts.md "Erstellen eines Erweiterungs-Lernprogramms Teil 2 | Microsoft Docs"
 <!-- external: -->
 [CodeVisualStudioComDocsEditorDebugging]: https://code.visualstudio.com/docs/editor/debugging "Debuggen – Visual Studio Code | Microsoft Docs"
 [DMCVisualStudioDebuggerNavigatingThroughCodeWithTheDebugger]: https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger "Navigieren Sie durch Code mit Visual Studio Debugger| Microsoft Docs"
-[GithubMicrosoftVscodeEdgeDevtools]: https://github.com/microsoft/vscode-edge-devtools "Microsoft Edge Developer Tools für Visual Studio Code | GitHub"
-[DevtoolsGlitchMeDebugJsGetStarted]: https://microsoft-edge-chromium-devtools.glitch.me/debug-js/get-started.html "Demo: Erste Schritte beim Debuggen von JavaScript mit Microsoft Edge (Chromium) DevTools | Microsoft Docs"
+[GithubMicrosoftVscodeEdgeDevtools]: https://github.com/microsoft/vscode-edge-devtools "Microsoft Edge Entwicklertools für Visual Studio Code | GitHub"
+[DevtoolsGlitchMeDebugJsGetStarted]: https://microsoft-edge-chromium-devtools.glitch.me/debug-js/get-started.html "Demo: Erste Schritte Debuggen von JavaScript mit Microsoft Edge (Chromium) DevTools | Microsoft Docs"
 [HtmlstandardOrigin]: https://html.spec.whatwg.org/multipage/origin.html#origin "Ursprung | HTML-Standard"  
 [W3CHtml4Frames]: https://w3.org/TR/html401/present/frames.html "Frames | W3C"  
 [MDNContentScripts]: https://developer.mozilla.org/Add-ons/WebExtensions/Content_scripts "Inhaltsskripts | MDN"  

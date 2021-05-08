@@ -29,7 +29,7 @@ ms.locfileid: "11483072"
    limitations under the License.  -->  
 # <a name="automatically-update-extensions-in-microsoft-edge"></a>Automatisches Aktualisieren von Erweiterungen in Microsoft Edge  
 
-Wenn Sie festlegen, dass Ihre Erweiterung automatisch aktualisiert wird, teilt Ihre Erweiterung die folgenden Vorteile mit Microsoft Edge, wenn sie auf automatische Aktualisierung festgelegt ist.  
+Wenn Sie festlegen, dass Ihre Erweiterung automatisch aktualisiert wird, werden die folgenden Vorteile für Microsoft Edge, wenn sie auf automatische Aktualisierung festgelegt ist.  
 
 *   Integrieren sie Fehler- und Sicherheitsbehebungen.  
 *   Fügen Sie neue Features oder Leistungsverbesserungen hinzu.  
@@ -37,17 +37,17 @@ Wenn Sie festlegen, dass Ihre Erweiterung automatisch aktualisiert wird, teilt I
 
 Zuvor wurden nicht speicherbasierte Erweiterungen unterstützt.  Außerdem haben Sie die systemeigenen Binärdateien und die Erweiterung gleichzeitig aktualisiert.  
 
-Jetzt hostet der Microsoft Edge-Add-Ons-Speicher Ihre Erweiterungen, und Sie aktualisieren Ihre Erweiterung mit demselben Mechanismus wie Microsoft Edge.  Sie steuern den Updatemechanismus nicht.  Seien Sie vorsichtig, wenn Sie Erweiterungen aktualisieren, die von systemeigenen Binärdateien abhängig sind.  
+Jetzt hostet Microsoft Edge Add-Ons-Speicher Ihre Erweiterungen, und Sie aktualisieren Ihre Erweiterung mit demselben Mechanismus wie Microsoft Edge.  Sie steuern den Updatemechanismus nicht.  Seien Sie vorsichtig, wenn Sie Erweiterungen aktualisieren, die von systemeigenen Binärdateien abhängig sind.  
 
 > [!NOTE]
 > Dieser Artikel gilt nicht für Erweiterungen, die Sie mit dem [Partner Center-Dashboard][MicrosoftPartnerDashboardMicrosoftedgePublicLoginRefDd] veröffentlichen.  Sie können das Dashboard verwenden, um aktualisierte Versionen für Ihre Benutzer und für den Microsoft Edge-Add-Ons-Speicher zu veröffentlichen.  Weitere Informationen finden Sie unter [Aktualisieren oder Entfernen der Erweiterung.][ExtensionsPublishUpdateExtension]  
 
 ## <a name="overview"></a>Übersicht  
 
-Alle paar Stunden überprüft Microsoft Edge, ob jede installierte Erweiterung oder App über eine Update-URL verfügt.  Verwenden Sie das Feld im Manifest, um eine Update-URL für Ihre `update_url` Erweiterung anzugeben.  Das `update_url` Feld im Manifest zeigt auf einen Speicherort, um eine Aktualisierungsprüfung zu vervollständigen.  Für jeden `update_url` sendet er Anforderungen für aktualisierte Manifest-XML-Dateien.  Wenn in der Updatemanifest-XML-Datei eine neuere Version als die installierte aufgeführt ist, lädt Microsoft Edge die neuere Version herunter und installiert sie.  Der gleiche Prozess funktioniert für manuelle Updates, bei denen die neue Datei mit demselben privaten Schlüssel wie die aktuell installierte `.crx` Version signiert werden muss.  
+Alle paar Stunden überprüft Microsoft Edge, ob jede installierte Erweiterung oder App über eine Update-URL verfügt.  Verwenden Sie das Feld im Manifest, um eine Update-URL für Ihre `update_url` Erweiterung anzugeben.  Das `update_url` Feld im Manifest zeigt auf einen Speicherort, um eine Aktualisierungsprüfung zu vervollständigen.  Für jeden `update_url` sendet er Anforderungen für aktualisierte Manifest-XML-Dateien.  Wenn in der Updatemanifest-XML-Datei eine neuere Version als die installierte aufgeführt ist, Microsoft Edge die neuere Version heruntergeladen und installiert.  Der gleiche Prozess funktioniert für manuelle Updates, bei denen die neue Datei mit demselben privaten Schlüssel wie die aktuell installierte `.crx` Version signiert werden muss.  
 
 > [!NOTE]
-> Um den Datenschutz der Benutzer zu gewährleisten, sendet Microsoft Edge keine Kopfzeilen mit Manifestanforderungen für automatische Updates und ignoriert alle Kopfzeilen in den Antworten `Cookie` `Set-Cookie` auf diese Anforderungen.  
+> Um den Datenschutz der Benutzer zu gewährleisten, sendet Microsoft Edge keine Kopfzeilen mit Manifestanforderungen für automatische Updates und ignoriert alle Kopfzeilen in den Antworten auf `Cookie` `Set-Cookie` diese Anforderungen.  
 
 ## <a name="update-url"></a>Update-URL  
 
@@ -93,7 +93,7 @@ Die Standardhäufigkeit der Aktualisierungsprüfung beträgt mehrere Stunden.  U
 
 Der grundlegende Mechanismus ist einfach.  Führen Sie die folgenden Aktionen aus, um Die Erweiterung automatisch zu aktualisieren.  
 
-1.  Laden Sie Ihre statische XML-Datei auf Ihrem Webserver hoch, z. B. Apache.  
+1.  Hochladen Ihre statische XML-Datei auf Dem Webserver, z. B. Apache.  
 1.  Aktualisieren Sie die XML-Datei, wenn Sie neue Versionen Ihrer Erweiterungen veröffentlichen.  
     
 Nutzen Sie die Tatsache, dass einige Parameter, die der Updatemanifestanforderung hinzugefügt wurden, die Erweiterung und `ID` `version` angeben.  Sie können dasselbe für alle Erweiterungen anstelle einer `update URL` statischen XML-Datei verwenden.  Um dasselbe für alle Erweiterungen zu verwenden, zeigen Sie auf eine URL, auf der dynamischer serverseitiger Code ausgeführt wird, `update URL` um die Parameter zu testen.  
@@ -145,7 +145,7 @@ Wenn Sie eine einzelne Anforderung senden und die Anzahl der installierten Erwei
 
 ## <a name="advanced-usage-minimum-browser-version"></a>Erweiterte Verwendung: Minimale Browserversion  
 
-Als neue APIs-Version für das Microsoft Edge-Erweiterungssystem können Sie eine aktualisierte Version Ihrer Erweiterung oder App veröffentlichen, die nur mit neueren Microsoft Edge-Versionen funktioniert.  Wenn Microsoft Edge automatisch aktualisiert wird, kann es einige Tage dauern, bis die meisten Benutzer auf diese neue Version aktualisieren.  Um sicherzustellen, dass ein bestimmtes Update nur für Microsoft Edge-Versionen gilt, die aktuell oder neuer als eine bestimmte Version sind, fügen Sie das `prodversionmin` Attribut in Ihrem Updatemanifest hinzu.  Im folgenden Codeausschnitt gibt der Attributwert von an, dass Ihre App nur dann automatisch auf die Version aktualisiert wird, wenn der Benutzer Microsoft Edge oder neuer `prodversionmin` `3.0.193.0` ausgeführt `2.0` `3.0.193.0` hat.  
+Als neue APIs-Version für das Microsoft Edge können Sie eine aktualisierte Version Ihrer Erweiterung oder App veröffentlichen, die nur mit neueren versionen Microsoft Edge kann.  Wenn Microsoft Edge automatisch aktualisiert wird, kann es einige Tage dauern, bis die meisten Benutzer auf diese neue Version aktualisieren.  Um sicherzustellen, dass ein bestimmtes Update nur für Microsoft Edge versionen gilt, die aktuell oder neuer als eine bestimmte Version sind, fügen Sie das `prodversionmin` Attribut in Ihrem Updatemanifest hinzu.  Im folgenden Codeausschnitt gibt der Attributwert von an, dass Ihre App automatisch auf die Version aktualisiert wird, wenn der Benutzer Microsoft Edge `prodversionmin` `3.0.193.0` oder neuer ausgeführt `2.0` `3.0.193.0` wird.  
 
 ```xml
 <?xml version='1.0' encoding='UTF-8'?>

@@ -35,7 +35,7 @@ In diesem Lernprogramm erfahren Sie, wie Sie css zum Formatieren einer Webseite 
 Der folgende Artikel ist das zweite Lernprogramm in einer Reihe von Lernprogrammen, in dem Sie die Grundlagen der Webentwicklung und Microsoft Edge DevTools lernen.  Sie erhalten praktische Erfahrung, indem Sie ihre eigene Website erstellen.  Sie müssen das erste Lernprogramm nicht abschließen, bevor Sie das zweite folgen.  [Das Einrichten des Codes zeigt,](#set-up-your-code) wie Sie eingerichtet werden.  
 
 > [!NOTE]
-> Dieses Lernprogramm ist für absolute Anfänger **** konzipiert und konzentriert sich sowohl auf die Grundlagen der Webentwicklung als auch auf die Grundlagen der Verwendung von DevTools zum Experimentieren mit CSS.  Wenn Sie ein Lernprogramm wünschen, das sich nur auf DevTools konzentriert, navigieren Sie zu Erste Schritte mit dem Anzeigen und Ändern [von CSS][DevtoolsCssIndex].  
+> Dieses Lernprogramm ist für absolute Anfänger **** konzipiert und konzentriert sich sowohl auf die Grundlagen der Webentwicklung als auch auf die Grundlagen der Verwendung von DevTools zum Experimentieren mit CSS.  Wenn Sie ein Lernprogramm wünschen, das sich nur auf DevTools konzentriert, navigieren Sie zu Erste Schritte [Anzeigen und][DevtoolsCssIndex]Ändern von CSS .  
 
 Am Anfang des Lernprogramms sollte Ihre Website wie die folgende Abbildung aussehen.  
 
@@ -63,29 +63,29 @@ Sie erstellen eine echte Website.
 
 Bevor Sie dieses Lernprogramm versuchen, müssen Sie die folgenden Voraussetzungen erfüllen.  
 
-*   Führen [Sie Erste Schritte mit HTML und dem DOM][DevtoolsBeginnersHtml] aus, oder stellen Sie sicher, dass Sie ein Verständnis von HTML und dom haben, ähnlich dem, was in diesem Lernprogramm vermittelt wird.  
-*   Laden Sie den [Microsoft Edge-Webbrowser][MicrosoftEdgeInsider] herunter.  Im folgenden Lernprogramm wird eine Reihe von Webentwicklungstools verwendet, die als Microsoft Edge DevTools bezeichnet werden und in Microsoft Edge integrierte Sind.  
+*   Führen Erste Schritte html und das [DOM][DevtoolsBeginnersHtml] aus, oder stellen Sie sicher, dass Sie ein Verständnis von HTML und dom haben, ähnlich dem, was in diesem Lernprogramm vermittelt wird.  
+*   Laden Sie [den Microsoft Edge][MicrosoftEdgeInsider] herunter.  Im folgenden Lernprogramm wird eine Reihe von Webentwicklungstools verwendet, die als Microsoft Edge DevTools bezeichnet werden und in Microsoft Edge.  
 
 ## <a name="set-up-your-code"></a>Einrichten des Codes  
 
 Zum Erstellen Ihrer Website müssen Sie zunächst die folgenden Aktionen ausführen, um Ihren Code einrichten zu können.  
 
 > [!NOTE]
-> Wenn Sie das erste Lernprogramm in der Reihe bereits abgeschlossen haben, fahren Sie mit dem nächsten Abschnitt fort.  Verwenden Sie weiterhin Den Code aus dem letzten Lernprogramm, [Erste Schritte mit HTML und dem DOM][DevtoolsBeginnersHtml].  
+> Wenn Sie das erste Lernprogramm in der Reihe bereits abgeschlossen haben, fahren Sie mit dem nächsten Abschnitt fort.  Verwenden Sie weiterhin Ihren Code aus dem letzten Lernprogramm, [Erste Schritte HTML und dem DOM verwenden.][DevtoolsBeginnersHtml]  
 
 1.  Öffnen Sie [den Quellcode][GlitchCookedAmphibianIndex].  Auf die Fokusregisterkarte Ihres Browsers wird als **Bearbeitungsregisterkarte verwiesen.**  
     
-    :::image type="complex" source="../media/beginners-css-setup1.msft.png" alt-text="Registerkarte Bearbeiten" lightbox="../media/beginners-css-setup1.msft.png":::
+    :::image type="complex" source="../media/beginners-css-setup1.msft.png" alt-text="Registerkarte "Bearbeiten"" lightbox="../media/beginners-css-setup1.msft.png":::
        Registerkarte **"Bearbeiten"**  
     :::image-end:::  
     
 1.  Wählen **Sie 4-amphibisch aus.**  Ein Menü wird angezeigt.  
     
-    :::image type="complex" source="../media/beginners-css-setup2.msft.png" alt-text="Das Menü Projektoptionen" lightbox="../media/beginners-css-setup2.msft.png":::
-       Das Menü Projektoptionen  
+    :::image type="complex" source="../media/beginners-css-setup2.msft.png" alt-text="Menü Project Optionen" lightbox="../media/beginners-css-setup2.msft.png":::
+       Menü Project Optionen  
     :::image-end:::  
 
-1.  Wählen Sie **#A0 aus.**  Glitch erstellt eine Kopie des Projekts, das Sie bearbeiten können.  
+1.  Wählen **Sie #A0 Project**aus.  Glitch erstellt eine Kopie des Projekts, das Sie bearbeiten können.  
     
     > [!NOTE]
     > Glitch generiert einen zufälligen Namen für das neue Projekt.  
@@ -112,7 +112,7 @@ Der folgende Codeausschnitt ist der HTML- und CSS-Code, der zum Erstellen des Ab
 </p>
 ```  
 
-`style="border: 1px dashed red; padding: 5px;"` sieht wahrscheinlich neu für Sie aus.  Der Rest sollte vertraut aussehen.  Falls nicht, führen Sie [Erste Schritte mit HTML und dem DOM][DevtoolsBeginnersHtml] aus, bevor Sie die folgenden Abschnitte versuchen.  
+`style="border: 1px dashed red; padding: 5px;"` sieht wahrscheinlich neu für Sie aus.  Der Rest sollte vertraut aussehen.  Wenn dies [nicht der Erste Schritte, müssen][DevtoolsBeginnersHtml] Sie html und das DOM verwenden, bevor Sie die folgenden Abschnitte versuchen.  
 
 ## <a name="add-inline-styles"></a>Hinzufügen von Inlineformatvorlagen  
 
@@ -140,7 +140,7 @@ Führen Sie die folgenden Aktionen aus, um **Inlineformatvorlagen zum** Anwenden
     
 1.  Navigieren Sie zur Registerkarte Live, um die **Änderungen anzeigen zu können.**  Der Hintergrund des `<nav>` Abschnitts ist jetzt blau.  
     
-    :::image type="complex" source="../media/beginners-css-inline2.msft.png" alt-text="Die Hintergrundfarbe hinter den Links Start und Kontakt ist jetzt blau." lightbox="../media/beginners-css-inline2.msft.png":::
+    :::image type="complex" source="../media/beginners-css-inline2.msft.png" alt-text="Die Hintergrundfarbe hinter den Links "Start" und "Kontakt" ist jetzt blau." lightbox="../media/beginners-css-inline2.msft.png":::
        Die Hintergrundfarbe hinter den **Links "Start"** **und** "Kontakt" ist jetzt blau.  
     :::image-end:::  
     
@@ -158,7 +158,7 @@ Was passiert, wenn alle Elemente auf Ihrer Webseite auf die `<p>` gleiche Weise 
 
 1.  Klicken Sie auf der Registerkarte Live auf **Kontakt,** um zur Kontaktseite zu navigieren.  Beachten Sie die Schriftart **von Home** und **Contact**.  
     
-    :::image type="complex" source="../media/beginners-css-internal1.msft.png" alt-text="Die Seite Kontakt" lightbox="../media/beginners-css-internal1.msft.png":::
+    :::image type="complex" source="../media/beginners-css-internal1.msft.png" alt-text="Die Seite "Kontakt"" lightbox="../media/beginners-css-internal1.msft.png":::
        Die Seite "Kontakt"  
     :::image-end:::  
     
@@ -184,7 +184,7 @@ Was passiert, wenn alle Elemente auf Ihrer Webseite auf die `<p>` gleiche Weise 
 1.  Wechseln Sie zurück zur **Registerkarte Live.**  
 1.  Wählen **Sie Kontakt** aus, um zur Kontaktseite zurück zu wechseln.  Die Schriftart von **Home** und **Contact** hat sich geändert.  
     
-    :::image type="complex" source="../media/beginners-css-internal2.msft.png" alt-text="Die Schriftart der Links Start und Kontakt wurde geändert." lightbox="../media/beginners-css-internal2.msft.png":::
+    :::image type="complex" source="../media/beginners-css-internal2.msft.png" alt-text="Die Schriftart der Links "Start" und "Kontakt" wurde geändert." lightbox="../media/beginners-css-internal2.msft.png":::
        Die Schriftart der **Links "Start"** und **"Kontakt"** wurde geändert.  
     :::image-end:::  
     
@@ -262,7 +262,7 @@ Führen Sie die folgenden Aktionen aus, um Kommas zum Hinzufügen mehrerer Selek
 1.  Navigieren Sie zur **Registerkarte Live**.  
 1.  Wählen Sie den **Link Kontakt** aus, um zur Kontaktseite zurück zu wechseln.  Wenden Sie sich **jetzt an mich!** hat dieselbe Schriftart wie die Navigationslinks.  
     
-    :::image type="complex" source="../media/beginners-css-multiple1.msft.png" alt-text="Der Text Contact Me!  hat jetzt die gleiche Schriftart wie die Links Start und Kontakt" lightbox="../media/beginners-css-multiple1.msft.png":::
+    :::image type="complex" source="../media/beginners-css-multiple1.msft.png" alt-text="Der Text Contact Me!  hat jetzt die gleiche Schriftart wie die Links "Start" und "Kontakt"" lightbox="../media/beginners-css-multiple1.msft.png":::
        Der Text **Contact Me!** hat jetzt die gleiche Schriftart wie die **Links "Start"** **und "Kontakt"**  
     :::image-end:::  
     
@@ -276,7 +276,7 @@ Führen Sie die folgenden Aktionen aus, um die Formatvorlage eines vorhandenen E
 
 1.  Zeigen Sie auf **den Startlink,** öffnen Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste\), und wählen Sie **Überprüfen aus.**  
     
-    :::image type="complex" source="../media/beginners-css-add1.msft.png" alt-text="Überprüfen des Links Start" lightbox="../media/beginners-css-add1.msft.png":::
+    :::image type="complex" source="../media/beginners-css-add1.msft.png" alt-text="Überprüfen des Links "Start"" lightbox="../media/beginners-css-add1.msft.png":::
        Überprüfen des Links "Start"  
     :::image-end:::  
     

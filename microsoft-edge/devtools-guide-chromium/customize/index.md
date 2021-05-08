@@ -107,7 +107,7 @@ Navigieren Sie zu [Dunkles Design aktivieren.][DarkTheme]
 
 Führen Sie die folgenden Aktionen aus, um DevTools-Experimente zu aktivieren.  
 
-1.  Navigieren Sie zu `edge://flags/#enable-devtools-experiments` .  
+1.  Navigieren Sie zu `edge://flags/#enable-devtools-experiments`.  
 1.  Wählen Sie **Aktivieren aus.**  
 1.  Wählen **Sie Jetzt neu starten**, am unteren Rand der Seite aus.  
 

@@ -16,16 +16,16 @@ ms.locfileid: "11327526"
 ---
 # Übersicht über Microsoft Edge (Chromium)-Erweiterungen  
 
-Eine Erweiterung ist ein kleines Programm, das Sie \(ein Entwickler\) verwenden, um Features für Microsoft Edge \(Chromium\) hinzuzufügen oder zu ändern.  Eine Erweiterung dient zur Verbesserung der täglichen Browsererfahrung eines Benutzers.  Sie bietet Nischenfunktionen, die für eine Zielgruppe wichtig sind.  
+Eine Erweiterung ist ein kleines Programm, das Sie zum Hinzufügen oder Ändern von Features für Microsoft Edge \(Chromium\) verwenden.  Eine Erweiterung soll die täglichen Browsererfahrungen eines Benutzers verbessern.  Es bietet Nischenfunktionen, die für eine Zielgruppe wichtig sind.  
 
-Sie können eine Erweiterung erstellen, wenn Sie eine Idee oder ein Produkt haben, das auf einer der folgenden Bedingungen basiert.  
+Sie können eine Erweiterung erstellen, wenn Sie über eine Idee oder ein Produkt verfügen, die auf einer der folgenden Bedingungen basiert.  
 
 *   Ein bestimmter Webbrowser.  
-*   Verbesserungen an features of specific webpages.  
+*   Verbesserungen an features von bestimmten Webseiten.  
     
 Beispiele für Begleiterfahrungen sind Anzeigenblocker und Kennwortmanager.  
 
-Eine Erweiterung ist ähnlich wie eine normale Web-App strukturiert.  Es sollten mindestens die folgenden Features enthalten sein.
+Eine Erweiterung ist ähnlich wie eine normale Web-App strukturiert.  Sie sollte mindestens die folgenden Features enthalten.
 
 *   Eine App-Manifest-JSON-Datei, die grundlegende Plattforminformationen enthält.  
 *   Eine JavaScript-Datei, die Funktionalität definiert.  
@@ -39,9 +39,9 @@ Um direkt mit einem Teil des Browsers zu funktionieren, z. B. mit einem Fenster 
 
 ## Grundlegende Orientierungshilfe  
 
-Einige der beliebtesten Browser zum Erstellen von Erweiterungen sind Safari, Firefox, Chrome, Opera, Chrome, Chrome und Microsoft Edge.  Sehr gute Ausgangspunkte für die Suche nach Anleitungen für die Erweiterungsentwicklung und Dokumentationen sind von den Browser-Organisationen gehostete Websites.  Die folgende Tabelle ist nicht endgültig und kann als Ausgangspunkt verwendet werden.  
+Zu den beliebtesten Browsern zum Erstellen von Erweiterungen gehören Safari, Firefox, Chrome, Opera, Brave und Microsoft Edge.  Sehr gute Ausgangspunkte für die Suche nach Anleitungen für die Erweiterungsentwicklung und Dokumentationen sind von den Browser-Organisationen gehostete Websites.  Die folgende Tabelle ist nicht endgültig und kann als Ausgangspunkt verwendet werden.  
 
-| Webbrowser | Chromium-basiert? | Webseite für die Erweiterungsentwicklung |  
+| Webbrowser | Chromium-basiert? | Webseite zur Erweiterungsentwicklung |  
 |:--- |:--- |:--- |  
 | Safari | Nein | [developer.apple.com/documentation/safariservices/safari_app_extensions][AppleDeveloperSafariservicesAppExtensions] |  
 | Firefox | Nein | [developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions][MDNWebextensions] |  
@@ -51,27 +51,27 @@ Einige der beliebtesten Browser zum Erstellen von Erweiterungen sind Safari, Fir
 | neuer Microsoft Edge | Ja | [developer.microsoft.com/microsoft-edge/extensions][MicrosoftDeveloperEdgeExtensions] |  
 
 > [!IMPORTANT]
-> Viele der Lernprogramme der Websites verwenden browserspezifische APIs, die möglicherweise nicht mit dem Browser übereinstimmen, für den Sie entwickeln.  In den meisten Fällen funktioniert eine Chromium-Erweiterung in unterschiedlichen Chromium-Browsern auf die gleiche Weise, und die APIs funktionieren erwartungsgemäß.  Nur einige seltener verwendete APIs sind möglicherweise strikt browserspezifisch.  Links zu den Lernprogrammen finden Sie unter ["Siehe auch".](#see-also)  
+> Viele Lernprogramme der Websites verwenden browserspezifische APIs, die möglicherweise nicht mit dem Browser übereinstimmen, für den Sie entwickeln.  In den meisten Fällen funktioniert eine Chromium-Erweiterung in unterschiedlichen Chromium-Browsern auf die gleiche Weise, und die APIs funktionieren erwartungsgemäß.  Nur einige seltener verwendete APIs sind möglicherweise strikt browserspezifisch.  Links zu den Lernprogrammen finden Sie unter [Siehe auch](#see-also).  
 
 ## Warum Chromium?  
 
-Wenn Sie Ihre Erweiterung im Erweiterungsspeicher für jeden Browser veröffentlichen möchten, muss sie für jede Version so geändert werden, dass sie als Ziel verwendet und in jeder anderen Browserumgebung ausgeführt wird.  For example, [Safari extensions][AppleDeveloperSafariservicesAppExtensions] may use both web and native code to communicate with counterpart native applications.  Die letzten vier Browser in der vorherigen Tabelle verwenden dasselbe Codepaket und minimieren die Notwendigkeit, parallele Versionen zu verwalten.  Diese Browser basieren auf dem [Open-Source-Projekt Chromium.][|::ref1::|Home]  
+Wenn Sie Ihre Erweiterung im Erweiterungsspeicher für jeden Browser veröffentlichen möchten, muss sie für jede Version so geändert werden, dass sie in jeder unterschiedlichen Browserumgebung ziel- und ausgeführt wird.  Beispielsweise können [Safari-Erweiterungen][AppleDeveloperSafariservicesAppExtensions] sowohl Web- als auch systemeigenen Code verwenden, um mit entsprechenden systemeigenen Anwendungen zu kommunizieren.  Die letzten vier Browser in der vorherigen Tabelle verwenden dasselbe Codepaket und minimieren die Notwendigkeit, parallele Versionen zu verwalten.  Diese Browser basieren auf dem [Open-Source-Projekt Chromium.][|::ref1::|Home]  
 
-Erstellen Sie eine Chromium-Erweiterung, um die geringste Codemenge zu schreiben.  Außerdem wird die maximale Anzahl von Durchwahlspeichern und letztendlich die maximale Anzahl von Benutzern festgelegt, die ihre Durchwahl finden und erwerben.  
+Erstellen Sie eine Chromium-Erweiterung, um die geringste Menge an Code zu schreiben.  Es richtet sich auch an die maximale Anzahl von Erweiterungsspeichern und letztendlich an die maximale Anzahl von Benutzern, die Ihre Erweiterung finden und erwerben.  
 
 Im Folgenden geht es hauptsächlich um Chromium-Erweiterungen.  
 
 ## Browser-Kompatibilität und Erweiterungstests  
 
-Gelegentlich gibt es keine API-Parität zwischen Chromium-Browsern.  So gibt es beispielsweise Unterschiede zwischen den Identitäts- und Zahlungs-APIs.  Um sicherzustellen, dass Ihre Erweiterung die Erwartungen der Kunden erfüllt, überprüfen Sie den STATUS der API in den folgenden offiziellen Browser-Dokumenten.  
+Gelegentlich ist die API-Parität zwischen Chromium-Browsern nicht vorhanden.  So gibt es beispielsweise Unterschiede zwischen den Identitäts- und Zahlungs-APIs.  Um sicherzustellen, dass Ihre Erweiterung die Erwartungen der Kunden erfüllt, überprüfen Sie den API-Status in den folgenden offiziellen Browser-Dokumenten.  
 
 *   [Chrome-APIs][ChromeDeveloperExtensionsApiIndex]  
 *   [In Opera unterstützte Erweiterungs-APIs][OperaDevExtensionsApis]  
-*   [Portierung der Erweiterung Chrome zu Microsoft Edge (Chromium)][ExtensionsChromiumDeveloperGuidePortChrome]  
+*   [Port chrome extension to Microsoft Edge (Chromium)][ExtensionsChromiumDeveloperGuidePortChrome]  
     
-Die APIs, die Sie benötigen, definieren die Änderungen, die Sie vornehmen müssen, um die Unterschiede zwischen den einzelnen Browsern zu erkennen.  Dies kann bedeuten, dass Sie geringfügig unterschiedliche Codepakete mit kleinen Unterschieden für jeden Speicher erstellen müssen.  
+Die von Ihnen benötigten APIs definieren die Änderungen, die Sie vornehmen müssen, um die Unterschiede zwischen den einzelnen Browsern zu erkennen.  Dies kann bedeuten, dass Sie für jeden Speicher geringfügig unterschiedliche Codepakete mit kleinen Unterschieden erstellen müssen.  
 
-Um Ihre Erweiterung in verschiedenen Umgebungen zu testen, bevor Sie sie an einen Browserspeicher übermitteln, laden Sie sie während der Entwicklung in Ihren Browser quer.  
+Um Ihre Erweiterung in verschiedenen Umgebungen zu testen, bevor Sie sie an einen Browserspeicher übermitteln, laden Sie sie während der Entwicklung quer in Ihren Browser.  
 
 ## Veröffentlichen Ihrer Erweiterung in Browserstores  
 
@@ -84,29 +84,29 @@ Browsererweiterungen können bei den folgenden Browserstores eingereicht und dar
 
 Einige Stores ermöglichen es, gelistete Erweiterungen über andere Browser herunterzuladen.  Der browserübergreifende Zugriff ist jedoch nicht für jeden Store garantiert.  Um sicherzustellen, dass Ihre Benutzer Ihre Erweiterung in verschiedenen Browsern finden, sollten Sie einen Eintrag in jedem Browsererweiterungsspeicher verwalten.  
 
-Benutzer müssen Ihre Erweiterung möglicherweise in verschiedenen Browsern installieren. In diesem Szenario können Sie vorhandene Chromium-Erweiterungen von einem Browser zu einem anderen migrieren.  
+Benutzer müssen Ihre Erweiterung möglicherweise in verschiedenen Browsern installieren. In diesem Szenario können Sie vorhandene Chromium-Erweiterungen von einem Browser in einen anderen migrieren.  
 
 ### Migrieren einer bestehenden Erweiterung zu Microsoft Edge  
 
-Wenn Sie bereits eine Erweiterung für einen anderen Browser Chromium entwickelt haben, können Sie sie an den Microsoft Edge-Add-Ons-Store übermitteln. Sie müssen Ihre Erweiterung nicht umschreiben und sicherstellen, dass sie in Microsoft Edge funktioniert.  Wenn Sie eine vorhandene Chromium-Erweiterung zu anderen Chromium-Browsern migrieren, stellen Sie sicher, dass die gleichen APIs oder Alternativen für Ihren Zielbrowser verfügbar sind.  
+Wenn Sie bereits eine Erweiterung für einen anderen Chromium-Browser entwickelt haben, können Sie sie an den Microsoft Edge-Add-Ons-Speicher übermitteln. Sie müssen Ihre Erweiterung nicht umschreiben und überprüfen, ob sie in Microsoft Edge funktioniert.  Wenn Sie eine vorhandene Chromium-Erweiterung zu anderen Chromium-Browsern migrieren, stellen Sie sicher, dass für Ihren Zielbrowser dieselben APIs oder Alternativen verfügbar sind.  
 
-Weitere Informationen zum Portieren Ihrer Chrome-Erweiterung zu Microsoft Edge finden Sie unter Portieren von [Chrome-Erweiterungen zu Microsoft Edge (Chromium).][ExtensionsChromiumDeveloperGuidePortChrome] Nachdem Sie ihre Erweiterung zum Zielbrowser portierung haben, besteht der nächste Schritt in der Veröffentlichung.  
+Weitere Informationen zum Portieren Ihrer Chrome-Erweiterung zu Microsoft Edge finden Sie unter Portieren von [Chrome-Erweiterungen zu Microsoft Edge (Chromium).][ExtensionsChromiumDeveloperGuidePortChrome] Nachdem Sie Ihre Erweiterung auf den Zielbrowser portierst, besteht der nächste Schritt in der Veröffentlichung.  
 
 ### Veröffentlichen auf der Microsoft Edge-Add-Ons-Website  
 
-Um mit der Veröffentlichung Ihrer [][MicrosoftDeveloperRegistration] Erweiterung in Microsoft Edge zu beginnen, müssen Sie sich für ein Entwicklerkonto mit einem MSA-E-Mail-Konto registrieren, um Ihren Erweiterungseintrag an den Store zu übermitteln.  Ein MSA-E-Mail-Konto enthält `@outlook.com` `@live.com` , und so weiter.  Wenn Sie eine E-Mail-Adresse für die Registrierung auswählen, sollten Sie überlegen, ob Sie den Besitz der Erweiterung an andere Personen in Ihrer Organisation übertragen oder teilen müssen.  Nach Abschluss der Registrierung erstellen Sie eventuell eine neue Erweiterungseinreichung für den Store.  
+Um mit der Veröffentlichung Ihrer [][MicrosoftDeveloperRegistration] Erweiterung in Microsoft Edge zu beginnen, müssen Sie sich für ein Entwicklerkonto mit einem MSA-E-Mail-Konto registrieren, um Ihren Erweiterungseintrag an den Store zu übermitteln.  Ein MSA-E-Mail-Konto enthält `@outlook.com` `@live.com` , und so weiter.  Wenn Sie eine zu registrierende E-Mail-Adresse auswählen, sollten Sie überlegen, ob Sie den Besitz der Erweiterung an andere Personen in Ihrer Organisation übertragen oder teilen müssen.  Nach Abschluss der Registrierung erstellen Sie eventuell eine neue Erweiterungseinreichung für den Store.  
 
 Um Ihre Erweiterung an den Store zu übermitteln, stellen Sie sicher, dass Sie die folgenden Elemente bereitstellen.  
 
-*   Eine \( `.zip` \)-Archivdatei, die Ihre Codedateien enthält.  
-*   Alle erforderlichen visuellen Ressourcen, z. B. ein Logo und eine kleine Werbekachel.  
+*   Eine Archivdatei `.zip` \( \), die Ihre Codedateien enthält.  
+*   Alle erforderlichen visuellen Ressourcen, die ein Logo und eine kleine Werbekachel enthalten.  
 *   Optionale Werbemedien, z. B. Screenshots, Werbekacheln und eine Video-URL.  
-*   Informationen, die Ihre Erweiterung beschreiben, z. B. den Namen, eine kurze Beschreibung und einen Link zu den Datenschutzrichtlinien.  
+*   Informationen, die Ihre Erweiterung beschreiben, z. B. den Namen, eine kurze Beschreibung und einen Link zu Datenschutzrichtlinien.  
 
 > [!NOTE]
-> In den verschiedenen Stores gelten möglicherweise unterschiedliche Anforderungen für die Einreichung.  In der obigen Liste sind die [Anforderungen für die][ExtensionsChromiumPublish] Veröffentlichung einer Erweiterung für Microsoft Edge zusammengefasst.  
+> In den verschiedenen Stores gelten möglicherweise unterschiedliche Anforderungen für die Einreichung.  In der obigen Liste sind die [Anforderungen zum Veröffentlichen][ExtensionsChromiumPublish] einer Erweiterung für Microsoft Edge zusammengefasst.  
 
-Nachdem Sie die Erweiterung erfolgreich übermittelt haben, wird die Erweiterung einem Überprüfungsprozess unterzogen und besteht den Zertifizierungsprozess entweder oder besteht diesen nicht.  Die Besitzer werden über das Ergebnis und die nächsten Schritte benachrichtigt.  Wenn Sie ein Erweiterungsupdate an den Store übermitteln, wird ein neuer Überprüfungsprozess gestartet.  
+Nachdem Sie Ihre Erweiterung erfolgreich übermittelt haben, wird ihre Erweiterung einem Überprüfungsprozess unterzogen und besteht den Zertifizierungsprozess entweder durch oder schlägt diesen fehl.  Die Besitzer werden über das Ergebnis und die nächsten Schritte benachrichtigt.  Wenn Sie ein Erweiterungsupdate an den Speicher übermitteln, wird ein neuer Überprüfungsprozess gestartet.  
 
 ## Weitere Informationen  
 
@@ -119,7 +119,7 @@ Nachdem Sie die Erweiterung erfolgreich übermittelt haben, wird die Erweiterung
 
 <!-- links -->  
 
-[ExtensionsChromiumDeveloperGuidePortChrome]: ./developer-guide/port-chrome-extension.md "Portierung der Chrome-Erweiterung zu Microsoft Edge (Chromium) | Microsoft Docs"  
+[ExtensionsChromiumDeveloperGuidePortChrome]: ./developer-guide/port-chrome-extension.md "Port chrome extension to Microsoft Edge (Chromium) | Microsoft Docs"  
 [ExtensionsChromiumGettingStartedIndex]: ./getting-started/index.md "Erste Schritte mit Microsoft Edge-Erweiterungen (Chromium) | Microsoft Docs"  
 [ExtensionsChromiumPublish]: ./publish/publish-extension.md "Veröffentlichen einer Erweiterung | Microsoft Docs"  
 
@@ -149,5 +149,5 @@ Nachdem Sie die Erweiterung erfolgreich übermittelt haben, wird die Erweiterung
 [OperaAddonsExtensions]: https://addons.opera.com/extensions "Erweiterungen | Opera-Add-ons"  
 
 [OperaDevExtensions]: https://dev.opera.com/extensions "Erweiterungsdokumentation | Dev. Opera"  
-[OperaDevExtensionsApis]: https://dev.opera.com/extensions/apis "Erweiterungs-APIs, die in Opera | Dev. Opera"  
+[OperaDevExtensionsApis]: https://dev.opera.com/extensions/apis "In Opera unterstützten Erweiterungs-APIs | Dev. Opera"  
 [OperaDevExtensionsGettingStarted]: https://dev.opera.com/extensions/getting-started "Erste Schritte | Dev. Opera"  

@@ -30,9 +30,9 @@ ms.locfileid: "11519331"
 
 # <a name="css-reference"></a>CSS-Referenz  
 
-Entdecken Sie neue Workflows in der folgenden umfassenden Referenz zu Microsoft Edge DevTools-Features im Zusammenhang mit dem Anzeigen und Ändern von CSS.  
+Entdecken Sie neue Workflows in der folgenden umfassenden Referenz Microsoft Edge DevTools-Features im Zusammenhang mit dem Anzeigen und Ändern von CSS.  
 
-Um die Grundlagen zu erlernen, navigieren Sie zu [Erste Schritte mit dem Anzeigen und Ändern von CSS][DevToolsCSSGetStarted].  
+Um die Grundlagen zu erlernen, navigieren Sie [zu Erste Schritte Anzeigen und][DevToolsCSSGetStarted]Ändern von CSS .  
 
 ## <a name="choose-an-element"></a>Auswählen eines Elements  
 
@@ -48,7 +48,7 @@ Mit **dem Tool Elemente** von DevTools können Sie die CSS eines Elements gleich
 Verwenden Sie eine der folgenden Aktionen, um ein Element auszuwählen.  
 
 *   Zeigen Sie in Ihrem Viewport auf das Element, öffnen Sie das Kontextmenü \(mit der rechten Maustaste auf\), und wählen Sie **Überprüfen aus.**  
-*   Wählen Sie in DevTools **Ein** Element auswählen \( Element auswählen ![ ](../media/select-an-element-icon.msft.png) \) oder `Control` + `Shift` + `C` \(Windows, Linux\) oder `Command` + `Shift` + `C` \(macOS\) aus, und wählen Sie dann das Element im Viewport aus.  
+*   Wählen Sie in DevTools **Ein** Element auswählen \( Element auswählen \) oder ![ ](../media/select-an-element-icon.msft.png) `Control` + `Shift` + `C` \(Windows, Linux\) oder `Command` + `Shift` + `C` \(macOS\) aus, und wählen Sie dann das Element im Viewport aus.  
 *   Wählen Sie in DevTools das Element in der **DOM-Struktur aus.**  
 *   Führen Sie in DevTools eine Abfrage wie in der Konsole aus, zeigen Sie auf das Ergebnis, öffnen Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste auf\), und wählen Sie im Bereich Elemente anzeigen `document.querySelector('p')` **aus.** ****  
 
@@ -159,7 +159,7 @@ Führen Sie die folgenden Aktionen aus, um eine Seite im Druckmodus zu sehen.
 
 Das **Coverage-Tool** zeigt, welche CSS eine Seite tatsächlich verwendet.  
 
-1.  Wählen `Control` + `Shift` + `P` Sie \(Windows, Linux\) oder `Command` + `Shift` + `P` \(macOS\) aus, während DevTools [][DevToolsCommandMenu]im Fokus steht, um das Befehlsmenü zu öffnen.  
+1.  Wählen `Control` + `Shift` + `P` Sie \(Windows, Linux\) oder `Command` + `Shift` + `P` \(macOS\) [][DevToolsCommandMenu]aus, während DevTools im Fokus steht, um das Befehlsmenü zu öffnen.  
 1.  Beginnen Sie mit der `coverage` Eingabe und wählen Sie Abdeckung anzeigen **aus.**  Das **Abdeckungstool** wird angezeigt.  
     
     :::row:::
@@ -253,7 +253,7 @@ Beim Bearbeiten des Werts einer Deklaration können Sie die folgenden Tastenkomb
 *   Wählen `Alt` + `Up` Sie \(Windows, Linux\) oder `Option` + `Up` \(macOS\) aus, um um zu `0.1` erhöhen.  
 *   Wählen `Up` Sie diese Option aus, um den Wert durch oder durch zu ändern, wenn sich der aktuelle Wert zwischen und `1` `0.1` `-1` `1` befindet.  
 *   Wählen `Shift` + `Up` Sie aus, um um zu `10` erhöhen.  
-*   Wählen `Shift` + `Page Up` Sie \(Windows, Linux\) oder `Shift` + `Command` + `Up` \(macOS\) aus, um den Wert um zu `100` erhöhen.  
+*   Wählen `Shift` + `Page Up` Sie \(Windows, Linux\) oder `Shift` + `Command` + `Up` \(macOS\) `100` aus, um den Wert um zu erhöhen.  
 
 Die Dekrementierung funktioniert ebenfalls.  Ersetzen Sie einfach jede oben `Up` genannte Instanz durch `Down` .  
 
@@ -553,10 +553,10 @@ Wenn Sie die **Farbauswahl öffnen,** ist **die Eyedropper** \( ![ Eyedropper ](
 <!-- links -->  
 
 [DevToolsCommandMenu]: ../command-menu/index.md "Führen Sie Befehle mit dem Microsoft Edge DevTools-Befehlsmenü | Microsoft Docs"  
-[DevToolsCSSGetStarted]: ../css/index.md "Erste Schritte mit dem Anzeigen und Ändern von CSS-| Microsoft Docs"  
-[DevToolsCSSGetStartedAddPseudoState]: ../css/index.md#add-a-pseudostate-to-a-class "Hinzufügen eines Pseudozustands zu einer Klasse – Erste Schritte mit dem Anzeigen und Ändern von CSS-| Microsoft Docs"  
-[DevToolsCSSGetStartedTutorial]: ../css/index.md#view-the-css-for-an-element "Anzeigen der CSS für ein Element – Erste Schritte mit dem Anzeigen und Ändern von CSS-| Microsoft Docs"  
-[DevToolsCssPrintPreview]: ../css/print-preview.md "Erzwingen von Microsoft Edge DevTools in den Druckvorschaumodus (CSS Print Media Type) | Microsoft Docs"  
+[DevToolsCSSGetStarted]: ../css/index.md "Erste Schritte Mit dem Anzeigen und Ändern von CSS-| Microsoft Docs"  
+[DevToolsCSSGetStartedAddPseudoState]: ../css/index.md#add-a-pseudostate-to-a-class "Hinzufügen eines Pseudozustands zu einer Klasse – Erste Schritte Mit dem Anzeigen und Ändern von CSS-| Microsoft Docs"  
+[DevToolsCSSGetStartedTutorial]: ../css/index.md#view-the-css-for-an-element "Anzeigen der CSS für ein Element – Erste Schritte Anzeigen und Ändern von CSS-| Microsoft Docs"  
+[DevToolsCssPrintPreview]: ../css/print-preview.md "Erzwingen Microsoft Edge DevTools in den Druckvorschaumodus (CSS Print Media Type) | Microsoft Docs"  
 [DevToolsJavascriptReferenceFormat]: ../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print "Neuschreiben einer minifizierten JavaScript-Datei mit &quot;Pretty-Print&quot; – Verwenden der Debugger-| Microsoft Docs"  
 
 [MaterialDesignColorSystem]: https://material.io/guidelines/style/color.html#color-color-palette "Das Farbsystem – Materialdesign"  

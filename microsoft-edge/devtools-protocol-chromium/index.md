@@ -1,6 +1,6 @@
 ---
 description: Aktualisieren auf das Microsoft Edge DevTools-Protokoll
-title: Microsoft Edge DevTools Protocol Update
+title: Microsoft Edge DevTools-Protokollupdate
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/06/2021
@@ -13,9 +13,9 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/07/2021
 ms.locfileid: "11480160"
 ---
-# <a name="microsoft-edge-chromium-devtools-protocol-overview"></a>Übersicht über das Microsoft Edge (Chromium)-DevTools-Protokoll  
+# <a name="microsoft-edge-chromium-devtools-protocol-overview"></a>Microsoft Edge (Chromium) DevTools-Protokoll  
 
-Mit der Umstellung der zugrunde liegenden Webplattform von Microsoft Edge auf Chromium erhält das [Microsoft Edge (EdgeHTML)-DevTools-Protokoll](/archive/microsoft-edge/legacy/developer/devtools-protocol/index) keine weiteren Updates.  Das Microsoft Edge \(Chromium\) DevTools-Protokoll wird den APIs des Chrome DevTools-Protokolls in Zukunft entsprechen.  
+Mit der Umstellung der zugrunde liegenden Webplattform von Microsoft Edge auf Chromium erhält das [Microsoft Edge (EdgeHTML)-DevTools-Protokoll](/archive/microsoft-edge/legacy/developer/devtools-protocol/index) keine weiteren Updates.  Das Microsoft Edge \(Chromium\) DevTools-Protokoll wird den APIs des Chrome DevTools-Protokolls entsprechen.  
 
 Die Dokumentation zu diesen Domänen und Methoden finden Sie unter [Chrome DevTools Protocol Viewer](https://chromedevtools.github.io/devtools-protocol/tot).  
 
@@ -26,8 +26,8 @@ Die Dokumentation zu diesen Domänen und Methoden finden Sie unter [Chrome DevTo
 
 Hier erfahren Sie, wie Sie einen benutzerdefinierten Toolclient an den DevTools Server in Microsoft Edge \(Chromium\) anfügen.  
 
-1.  Stellen Sie sicher, dass alle Instanzen von Microsoft Edge \(Chromium\) geschlossen sind.  
-1.  Starten Sie Microsoft Edge \(Chromium\) mit dem Remotedebugport:. 
+1.  Stellen Sie sicher, dass Microsoft Edge \(Chromium\) geschlossen sind.  
+1.  Starten Microsoft Edge \(Chromium\) mit dem Remotedebugport:. 
     
     ```shell
     msedge.exe --remote-debugging-port=9222
@@ -122,15 +122,15 @@ String(“Target is closing”)
 
 ## <a name="remote-tools-for-microsoft-edge-beta"></a>Remotetools für Microsoft Edge (Beta)  
 
-Sie können nun die [Remotetools für Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) aus dem [Microsoft Store installieren.](https://www.microsoft.com/store/apps/windows)  Mit dieser App können Sie Microsoft Edge (Chromium), das auf einem Windows 10-Gerät ausgeführt wird, remote von Ihrem Entwicklungscomputer debuggen.  
+Sie können nun die Remotetools für [Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) aus dem [Microsoft Store.](https://www.microsoft.com/store/apps/windows)  Mit dieser App können Sie Remotedebugger Microsoft Edge (Chromium), die auf einem Windows 10 von Ihrem Entwicklungscomputer ausgeführt werden.  
 
-Um zu erfahren, wie Sie Ihr Windows 10-Gerät einrichten und von Ihrem Entwicklungscomputer aus eine Verbindung mit diesem Gerät herstellen, navigieren Sie zu Erste Schritte mit remote debuggen [von Windows 10-Geräten](../devtools-guide-chromium/remote-debugging/windows.md).  
+Um zu erfahren, wie Sie Ihr Windows 10 einrichten und von Ihrem Entwicklungscomputer aus eine Verbindung mit dem Gerät herstellen, navigieren Sie zu [Erste Schritte Remote debugging Windows 10 Devices](../devtools-guide-chromium/remote-debugging/windows.md).  
 
-Die [Remotetools für Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) verwenden dasselbe Microsoft Edge (Chromium)-DevTools-Protokoll wie [die DevTools,](../devtools-guide-chromium/index.md) um mit Microsoft Edge zu kommunizieren, das auf dem Windows 10-Gerät ausgeführt wird, das Sie debuggen möchten.  Diese App prepends `/msedge/` und eine Prozess-ID ( `pid` ) vor jedem Aufruf des Protokolls.  Es unterstützt die folgenden HTTP-Endpunkte.  
+Die [Remotetools für Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) verwenden dasselbe Microsoft Edge (Chromium) DevTools-Protokoll wie [die DevTools,](../devtools-guide-chromium/index.md) um mit Microsoft Edge zu kommunizieren, die auf dem zu debuggenden Windows 10-Gerät ausgeführt werden.  Diese App prepends `/msedge/` und eine Prozess-ID ( `pid` ) vor jedem Aufruf des Protokolls.  Es unterstützt die folgenden HTTP-Endpunkte.  
 
 ### <a name="msedgejsonlist"></a>/msedge/json/list  
 
-Stellt eine Kandidatenliste aller Prozesse \(einschließlich PWAs und aller Registerkarten in allen Instanzen von Microsoft Edge\) auf dem `msedge.exe` Windows 10-Gerät zum [](../progressive-web-apps-chromium/index.md) Debuggen zur Seite.  
+Stellt eine Kandidatenliste aller Prozesse `msedge.exe` \(einschließlich [PWAs](../progressive-web-apps-chromium/index.md) und aller Registerkarten in allen Instanzen von Microsoft Edge\) auf dem Windows 10 debuggen.  
 
 **Parameter**  
 
@@ -158,7 +158,7 @@ Funktionell äquivalent zu [/msedge/json/list](#msedgejsonlist).
 
 ### <a name="msedgepidjsonlist"></a>/msedge/[pid]/json/list  
 
-Stellt eine Kandidatenliste mit Seitenzielen für die Microsoft Edge-Instanz bereit, die mit dem für das `[pid]` Debuggen bereitgestellten entspricht.  
+Stellt eine Kandidatenliste mit Seitenzielen für die Microsoft Edge bereit, die mit dem für das `[pid]` Debuggen bereitgestellten entspricht.  
 
 **Parameter**  
 
@@ -181,7 +181,7 @@ Stellt eine Kandidatenliste mit Seitenzielen für die Microsoft Edge-Instanz ber
 
 ### <a name="msedgepidjsonversion"></a>/msedge/[pid]/json/version  
 
-Stellt Informationen zur Microsoft Edge-Instanz bereit, die mit der bereitgestellten und der version `[pid]` des unterstützten DevTools-Protokolls entspricht.  
+Enthält Informationen zur Microsoft Edge Instanz, die mit der bereitgestellten und der version `[pid]` des devTools-Protokolls, das sie unterstützt, entspricht.  
 
 **Parameter**  
 
@@ -202,7 +202,7 @@ Stellt Informationen zur Microsoft Edge-Instanz bereit, die mit der bereitgestel
 
 ### <a name="msedgepidjsonprotocol"></a>/msedge/[pid]/json/protocol/  
 
-Stellt die gesamte als JSON serialisierte Protokoll-API-Oberfläche für die Microsoft Edge-Instanz bereit, die dem bereitgestellten `[pid]` entspricht.  
+Stellt die gesamte als JSON serialisierte Protokoll-API-Oberfläche für die Microsoft Edge bereit, die dem bereitgestellten `[pid]` entspricht.  
 
 **Parameter**  
 
@@ -210,4 +210,4 @@ Stellt die gesamte als JSON serialisierte Protokoll-API-Oberfläche für die Mic
 
 **Return-Objekt**  
 
-JSON-Objekt, das die verfügbare API-Oberfläche für die Version des Protokolls darstellt, das von der Microsoft Edge-Instanz verwendet wird, die der bereitgestellten `[pid]` entspricht.  
+JSON-Objekt, das die verfügbare API-Oberfläche für die Version des Protokolls darstellt, die von der Microsoft Edge verwendet wird, die der bereitgestellten `[pid]` entspricht.  

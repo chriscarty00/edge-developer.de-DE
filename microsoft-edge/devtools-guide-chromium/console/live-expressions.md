@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
 ms.openlocfilehash: 51b7aa5119775f43861a84c1055ac9149a626d8a
 ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
 ms.translationtype: MT
@@ -31,7 +31,7 @@ Wählen Sie zu Beginn die Schaltfläche **Liveausdruck** erstellen \(Eye\) neben
 1.  Öffnen Sie das **Textfeld Live Expression.**  
 1.  Geben Sie `document.activeElement` ein.  
 1.  Führen Sie zum Speichern des Ausdrucks eine der folgenden Aktionen aus.  
-    *   Wählen `Control` + `Enter` Sie \(Windows, Linux\) oder `Command` + `Enter` \(macOS\) aus.  
+    *   Wählen `Control` + `Enter` Sie \(Windows, Linux\) oder `Command` + `Enter` \(macOS\).  
     *   Wählen Sie außerhalb des **Textfelds Live Expression** aus.  
         
 Der Ausdruck ist jetzt live und wird `body` als Ergebnis angezeigt.  

@@ -91,7 +91,7 @@ Wählen Sie beim Aufzeichnen einer Seite die Option Garbage **sammeln** \( Garba
 
 Wählen **Sie Aufnahmeeinstellungen** \( Aufnahmeeinstellungen \) aus, um weitere Einstellungen im Zusammenhang mit der Erfassung von Leistungsaufzeichnungen durch ![ ](../media/capture-settings-icon.msft.png) DevTools verfügbar zu machen.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png" alt-text="Abschnitt Aufnahmeeinstellungen" lightbox="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png" alt-text="Abschnitt "Aufnahmeeinstellungen"" lightbox="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png":::
    Abschnitt **"Aufnahmeeinstellungen"**  
 :::image-end:::  
 
@@ -215,7 +215,7 @@ Wählen Sie Abbrechen aus, um das Suchfeld **auszublenden.**
 
 Verwenden Sie **den Abschnitt Main,** um Aktivitäten im Hauptthread der Seite zu anzeigen.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-main-zoomed.msft.png" alt-text="Der Abschnitt Main" lightbox="../media/evaluate-performance-performance-main-zoomed.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-main-zoomed.msft.png" alt-text="Der Abschnitt "Main"" lightbox="../media/evaluate-performance-performance-main-zoomed.msft.png":::
    Der **Abschnitt "Main"**  
 :::image-end:::  
 
@@ -264,7 +264,7 @@ Verwenden Sie **den Anrufstrukturbereich,** um zu sehen, [welche Stammaktivität
 
 Im **Bereich Anrufstruktur** werden nur Aktivitäten während des ausgewählten Abschnitts der Aufzeichnung angezeigt.  Navigieren Sie [zu Wählen Sie einen Teil einer Aufzeichnung aus,](#select-a-portion-of-a-recording) um zu erfahren, wie Sie Teile auswählen.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-call-tree.msft.png" alt-text="Der Bereich Anrufstruktur" lightbox="../media/evaluate-performance-performance-call-tree.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-call-tree.msft.png" alt-text="Der Bereich "Anrufstruktur"" lightbox="../media/evaluate-performance-performance-call-tree.msft.png":::
    Der **Bereich "Anrufstruktur"**  
 :::image-end:::  
 
@@ -324,7 +324,7 @@ Deaktivieren Sie **die Kontrollkästchen Laden,** **** **Skripten,** **Rendern**
 
 Anzeigen der GPU-Aktivität im **Abschnitt GPU.**  
 
-:::image type="complex" source="../media/evaluate-performance-performance-gpu-zoomed.msft.png" alt-text="Der Abschnitt GPU" lightbox="../media/evaluate-performance-performance-gpu-zoomed.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-gpu-zoomed.msft.png" alt-text="Der Abschnitt "GPU"" lightbox="../media/evaluate-performance-performance-gpu-zoomed.msft.png":::
    Der **Abschnitt "GPU"**  
 :::image-end:::  
 
@@ -386,7 +386,7 @@ Wählen Sie einen Frame aus, um weitere Informationen zum Frame im **Zusammenfas
 
 Erweitern Sie den **Abschnitt Netzwerk,** um einen Wasserfall mit Netzwerkanforderungen zu sehen, die während der Aufzeichnung aufgetreten sind.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-network.msft.png" alt-text="Der Abschnitt Netzwerk" lightbox="../media/evaluate-performance-performance-network.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-network.msft.png" alt-text="Der Abschnitt "Netzwerk"" lightbox="../media/evaluate-performance-performance-network.msft.png":::
    Der **Abschnitt "Netzwerk"**  
 :::image-end:::  
 
@@ -500,7 +500,7 @@ So zeigen Sie erweiterte Informationen zu einem Paint-Ereignis an:
 1.  [Aktivieren Sie](#turn-on-advanced-paint-instrumentation).  
 1.  Wählen Sie im **Abschnitt** Main ein **Paint-Ereignis** aus.  
     
-    :::image type="complex" source="../media/evaluate-performance-paint-profiler.msft.png" alt-text="Der Bereich Paint Profiler" lightbox="../media/evaluate-performance-paint-profiler.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-paint-profiler.msft.png" alt-text="Der Bereich "Paint Profiler"" lightbox="../media/evaluate-performance-paint-profiler.msft.png":::
        Der **Bereich "Paint Profiler"**  
     :::image-end:::  
     

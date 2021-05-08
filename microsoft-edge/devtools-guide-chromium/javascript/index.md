@@ -75,7 +75,7 @@ Die **Benutzeroberfläche** des Quellentools hat drei Teile.
     
 ## <a name="step-3-pause-the-code-with-a-breakpoint"></a>Schritt 3: Anhalten des Codes mit einem Haltepunkt  
 
-Eine gängige Methode zum Debuggen dieser Art von Problem ist das Einfügen mehrerer Anweisungen in den Code und anschließend das Überprüfen von Werten während der Ausführung `console.log()` des Skripts.  Zum Beispiel:  
+Eine gängige Methode zum Debuggen dieser Art von Problem ist das Einfügen mehrerer Anweisungen in den Code und anschließend das Überprüfen von Werten während der Ausführung `console.log()` des Skripts.  Beispiel:  
 
 ```javascript
 function updateLabel() {
@@ -212,7 +212,7 @@ Wir haben eine mögliche Fehlerbehebung für den Fehler identifiziert.  Bearbeit
 
 ## <a name="next-steps"></a>Nächste Schritte  
 
-Herzlichen Glückwunsch!  Sie wissen nun, wie Sie Microsoft Edge DevTools beim Debuggen von JavaScript nutzen können.  Die Tools und Methoden, die Sie in diesem Artikel gelernt haben, können Ihnen unzählige Stunden sparen.  
+Herzlichen Glückwunsch!  Sie wissen nun, wie Sie devTools beim Debuggen von JavaScript Microsoft Edge nutzen können.  Die Tools und Methoden, die Sie in diesem Artikel gelernt haben, können Ihnen unzählige Stunden sparen.  
 
 In diesem Artikel wurden zwei Möglichkeiten zum Festlegen von Haltepunkten erläutert.  DevTools bietet auch Möglichkeiten zum Festlegen von Haltepunkten, um Ihren Code anzuhalten, wenn bestimmte Bedingungen erfüllt sind, z. B.:
 

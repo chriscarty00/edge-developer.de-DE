@@ -16,12 +16,12 @@ ms.locfileid: "11475211"
 ---
 # <a name="native-messaging"></a>Systemeigenes Messaging  
 
-Erweiterungen kommunizieren mit einer systemeigenen Win32-App, die auf dem Gerät eines Benutzers installiert ist, mithilfe von APIs, die Nachrichten übergeben.  Der systemeigene App-Host sendet und empfängt Nachrichten mit Erweiterungen mithilfe von Standardeingaben und Standardausgabe.  Erweiterungen mit systemeigenem Messaging werden in Microsoft Edge ähnlich wie jede andere Erweiterung installiert.  Native Apps werden jedoch nicht von Microsoft Edge installiert oder verwaltet.  
+Erweiterungen kommunizieren mit einer systemeigenen Win32-App, die auf dem Gerät eines Benutzers installiert ist, mithilfe von APIs, die Nachrichten übergeben.  Der systemeigene App-Host sendet und empfängt Nachrichten mit Erweiterungen mithilfe von Standardeingaben und Standardausgabe.  Erweiterungen mit systemeigenem Messaging werden in Microsoft Edge wie jede andere Erweiterung installiert.  Native Apps werden jedoch nicht von der Microsoft Edge.  
 
 Zum Erwerben der Erweiterung und des nativen App-Hosts verfügen Sie über zwei Verteilungsmodelle.  
 
 *   Packen Sie Ihre Erweiterung und den Host zusammen.  Wenn ein Benutzer das Paket installiert, werden sowohl die Erweiterung als auch der Host installiert.  
-*   Installieren Sie Ihre Erweiterung mithilfe des [Microsoft Edge-Add-Ons-Speichers,][MicrosoftMicrosoftedgeAddonsMicrosoftEdgeExtensionsHome]und Ihre Erweiterung fordert Benutzer auf, den Host zu installieren.  
+*   Installieren Sie Ihre Erweiterung [mithilfe Microsoft Edge Add-Ons-Speichers,][MicrosoftMicrosoftedgeAddonsMicrosoftEdgeExtensionsHome]und Ihre Erweiterung fordert Benutzer auf, den Host zu installieren.  
 
 Führen Sie die folgenden Schritte aus, um Ihre Erweiterung zum Senden und Empfangen von Nachrichten mit systemeigenen App-Hosts zu erstellen.  
 
@@ -116,10 +116,10 @@ Die Hostmanifestdatei muss eine gültige JSON-Datei sein, die die folgenden Schl
       
       Gibt den Pfad zur nativen Messaginghost-Binärdatei an.  
       
-      *   Auf Windows-Geräten können Sie relative Pfade zu dem Verzeichnis verwenden, das die Manifestdatei enthält.  
+      *   Auf Windows können Sie relative Pfade zu dem Verzeichnis verwenden, das die Manifestdatei enthält.  
       *   Unter macOS und Linux muss der Pfad absolut sein.  
           
-      Der Hostprozess beginnt mit dem aktuellen Verzeichnis, das auf das Verzeichnis festgelegt ist, das die Host binär enthält.  Wenn der Parameter beispielsweise auf \(Windows\) festgelegt ist, wird die Binärdatei mit dem aktuellen `C:\App\nm_host.exe` Verzeichnis \( `C:\App\` \) gestartet.  
+      Der Hostprozess beginnt mit dem aktuellen Verzeichnis, das auf das Verzeichnis festgelegt ist, das die Host binär enthält.  Beispiel: \(Windows\), wenn der Parameter auf festgelegt ist, wird die Binärdatei mit dem aktuellen Verzeichnis `C:\App\nm_host.exe` \( `C:\App\` \) gestartet.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -131,7 +131,7 @@ Die Hostmanifestdatei muss eine gültige JSON-Datei sein, die die folgenden Schl
    :::column span="3":::
       ---  
       
-      Gibt den Typ der Schnittstelle an, die für die Kommunikation mit dem systemeigenen Messaginghost verwendet wird.  Der Wert anweisen Microsoft Edge, den Host zu `stdin` verwenden und mit ihm zu `stdout` kommunizieren.  
+      Gibt den Typ der Schnittstelle an, die für die Kommunikation mit dem systemeigenen Messaginghost verwendet wird.  Der Wert gibt Microsoft Edge an, den Host zu `stdin` verwenden und mit ihm zu `stdout` kommunizieren.  
       Der einzige akzeptable Wert ist `stdio` .  
    :::column-end:::
 :::row-end:::  
@@ -161,7 +161,7 @@ Führen Sie die folgenden Aktionen aus, um die Erweiterung während der Entwickl
 1.  Navigieren Sie zu `edge://extensions` Seite, und überprüfen Sie, ob Ihre Erweiterung aufgeführt ist.  
 1.  Kopieren Sie den Schlüssel `microsoft_catalog_extension_id` aus \(ID\) aus dem Erweiterungseintrag auf der Seite.  
     
-Wenn Sie bereit sind, Ihre Erweiterung an Benutzer zu verteilen, veröffentlichen Sie Ihre Erweiterung im Microsoft Edge-Add-Ons-Speicher.  Die Erweiterungs-ID der veröffentlichten Erweiterung kann sich von der ID unterscheiden, die beim Querladen der Erweiterung verwendet wird.  Wenn die ID geändert wurde, aktualisieren Sie `allowed_origins` in der Hostmanifestdatei mit der ID Ihrer veröffentlichten Erweiterung.  
+Wenn Sie bereit sind, Ihre Erweiterung an Benutzer zu verteilen, veröffentlichen Sie Ihre Erweiterung im Microsoft Edge Add-Ons-Speicher.  Die Erweiterungs-ID der veröffentlichten Erweiterung kann sich von der ID unterscheiden, die beim Querladen der Erweiterung verwendet wird.  Wenn die ID geändert wurde, aktualisieren Sie `allowed_origins` in der Hostmanifestdatei mit der ID Ihrer veröffentlichten Erweiterung.  
 
 ## <a name="step-3---copy-the-native-messaging-host-manifest-file-to-your-system"></a>Schritt 3 : Kopieren der systemeigenen Messaginghostmanifestdatei in Ihr System  
 
@@ -225,7 +225,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Google\Chrome\NativeMessagingHosts\
 ```  
  
 > [!NOTE] 
-> Wenn Sie Erweiterungen für die Microsoft Edge-Add-Ons und den Chrome Webstore haben, müssen Sie die Erweiterungs-IDs hinzufügen, die den beiden Speichern in der Hostmanifestdatei entspricht, da nur das Hostmanifest gelesen wird, das dem ersten gefundenen Registrierungsspeicherort `allowed_origins` entspricht.  
+> Wenn Sie Erweiterungen für die Microsoft Edge-Add-Ons und den Chrome Webstore haben, müssen Sie die Erweiterungs-IDs hinzufügen, die beiden Speichern in der Hostmanifestdatei entspricht, da nur das Hostmanifest gelesen wird, das dem ersten gefundenen Registrierungsspeicherort `allowed_origins` entspricht.  
 
 ### [<a name="macos"></a>macOS](#tab/macos/)  
 

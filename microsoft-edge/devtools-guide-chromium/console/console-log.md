@@ -1,12 +1,12 @@
 ---
-description: Protokollieren von Nachrichten und Ausführen von JavaScript in der Microsoft Edge DevTools-Konsole.
+description: Protokollieren von Nachrichten und Ausführen von JavaScript in der Microsoft Edge DevTools Console.
 title: Protokollieren von Nachrichten im Konsolentool
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
 ms.openlocfilehash: d48a48de7b261a628ac99f58680deb119268a980
 ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
 ms.translationtype: MT

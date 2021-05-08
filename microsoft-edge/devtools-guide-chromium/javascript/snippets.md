@@ -1,6 +1,6 @@
 ---
 description: Codeausschnitte sind kleine Skripts, die Sie im Tool Sources von Microsoft Edge DevTools erstellen und ausführen können.  Sie können von jeder Webseite aus auf Ressourcen zugreifen und diese ausführen.  Wenn Sie einen Codeausschnitt ausführen, wird er aus dem Kontext der aktuell geöffneten Webseite ausgeführt.
-title: Ausführen von Codeausschnitten von JavaScript auf einer beliebigen Webseite mit Microsoft Edge DevTools
+title: Ausführen von Codeausschnitten von JavaScript auf jeder Webseite mit Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/08/2021
@@ -28,7 +28,7 @@ ms.locfileid: "11519429"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# <a name="run-snippets-of-javascript-on-any-webpage-with-microsoft-edge-devtools"></a>Ausführen von Codeausschnitten von JavaScript auf einer beliebigen Webseite mit Microsoft Edge DevTools  
+# <a name="run-snippets-of-javascript-on-any-webpage-with-microsoft-edge-devtools"></a>Ausführen von Codeausschnitten von JavaScript auf jeder Webseite mit Microsoft Edge DevTools  
 
 Wenn Sie denselben Code [][DevtoolsConsoleIndex] wiederholt in der Konsole ausführen, sollten Sie stattdessen den Code als Codeausschnitt speichern.  Codeausschnitte sind Skripts, die Sie im Tool [Quellen][DevToolsSourcesTool] erstellen.  Codeausschnitte haben Zugriff auf den JavaScript-Kontext der Webseite, und Sie können Codeausschnitte auf jeder Beliebigen Webseite ausführen.  Die Sicherheitseinstellungen der meisten Webseiten blockieren das Laden anderer Skripts in Codeausschnitten.  Aus diesem Grund müssen Sie den ganzen Code in einer Datei enthalten.  
 

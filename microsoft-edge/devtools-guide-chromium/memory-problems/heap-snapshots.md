@@ -1,5 +1,5 @@
 ---
-description: Erfahren Sie, wie Sie Heapmomentaufnahmen mit dem Microsoft Edge DevTools-Heap-Profiler aufzeichnen und Speicherverluste finden.
+description: Erfahren Sie, wie Sie Heapmomentaufnahmen mit dem Microsoft Edge DevTools-Heap-Profiler aufzeichnen und Speicherlecks finden.
 title: Aufzeichnen von Heapmomentaufnahmen
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -30,7 +30,7 @@ ms.locfileid: "11397804"
 
 # <a name="how-to-record-heap-snapshots"></a>Aufzeichnen von Heapmomentaufnahmen  
 
-Erfahren Sie, wie Sie Heapmomentaufnahmen mit dem Microsoft Edge DevTools-Heap-Profiler aufzeichnen und Speicherverluste finden.  
+Erfahren Sie, wie Sie Heapmomentaufnahmen mit dem Microsoft Edge DevTools-Heap-Profiler aufzeichnen und Speicherlecks finden.  
 
 Der Microsoft Edge DevTools-Heap-Profiler zeigt die Speicherverteilung durch die JavaScript-Objekte und zugehörigen DOM-Knoten Ihrer Seite an.  Verwenden Sie ihn, um JavaScript-Heap-\(JS-Heap\)-Momentaufnahmen zu erstellen, Speicherdiagramme zu analysieren, Momentaufnahmen zu vergleichen und Speicherverluste zu finden.  Navigieren Sie zu [Objekte Aufbewahrungsstruktur][DevtoolsMemoryProblems101ObjectsRetainingTree].  
 
@@ -242,7 +242,7 @@ Der behält einen Verweis auf das relevante übergeordnete Objekt \(parentNode\)
 > [!NOTE]
 > Beispiele: Probieren Sie dieses Beispiel für einen nicht mehr vorhandenen [DOM-Knoten][GlitchDevtoolsMemoryExample06] aus, um zu verstehen, wo und wie sie erkannt werden können.  Sie können sich auch dieses Beispiel dafür anschauen, dass [DOM-Lecks größer als erwartet sind.][GlitchDevtoolsMemoryExample09]  
 
-Weitere Informationen zu DOM-Lecks und Grundlagen der Speicheranalyse finden Sie unter Suchen und Debuggen von Speicherlecks mit den [Microsoft Edge DevTools][GonzaloRuizdeVillaMemory] von Gonzalo Ruiz de Villa.  
+Weitere Informationen zu DOM leaks and memory analysis fundamentals checkout [Finding and debugging memory leaks with the Microsoft Edge DevTools][GonzaloRuizdeVillaMemory] by Gonzalo Ruiz de Villa.  
 
 <!--  
 > [!NOTE]
@@ -266,12 +266,12 @@ Weitere Informationen zu DOM-Lecks und Grundlagen der Speicheranalyse finden Sie
 <!--[DevToolsHeapProfilingSummary]: https://developer.alphabet.com/devtools/docs/heap-profiling-summary ""  -->  
 <!--[DevtoolsProfileMemoryProblemsDiagnosisCausesMemoryLeaks]: ../profile/memory-problems/memory-diagnosis#narrow-down-causes-of-memory-leaks ""  -->  
 
-[GlitchDevtoolsMemoryExample03]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-03.html "example-03.html – Microsoft Edge (Chromium) DevTools | Glitch"  
-[GlitchDevtoolsMemoryExample06]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-06.html "example-06.html – Microsoft Edge (Chromium) DevTools | Glitch"  
-[GlitchDevtoolsMemoryExample07]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-07.html "example-07.html – Microsoft Edge (Chromium) DevTools | Glitch"  
-[GlitchDevtoolsMemoryExample08]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-08.html "example-08.html – Microsoft Edge (Chromium) DevTools | Glitch"  
-[GlitchDevtoolsMemoryExample09]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-09.html "example-09.html – Microsoft Edge (Chromium) DevTools | Glitch"  
-[GlitchDevtoolsMemoryExample10]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-10.html "example-10.html – Microsoft Edge (Chromium) DevTools | Glitch"  
+[GlitchDevtoolsMemoryExample03]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-03.html "example-03.html - Microsoft Edge (Chromium) DevTools | Glitch"  
+[GlitchDevtoolsMemoryExample06]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-06.html "example-06.html - Microsoft Edge (Chromium) DevTools | Glitch"  
+[GlitchDevtoolsMemoryExample07]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-07.html "example-07.html - Microsoft Edge (Chromium) DevTools | Glitch"  
+[GlitchDevtoolsMemoryExample08]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-08.html "example-08.html - Microsoft Edge (Chromium) DevTools | Glitch"  
+[GlitchDevtoolsMemoryExample09]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-09.html "example-09.html - Microsoft Edge (Chromium) DevTools | Glitch"  
+[GlitchDevtoolsMemoryExample10]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-10.html "example-10.html - Microsoft Edge (Chromium) DevTools | Glitch"  
 
 [GonzaloRuizdeVillaMemory]: https://slid.es/gruizdevilla/memory "Speicher | Folien"  
 
