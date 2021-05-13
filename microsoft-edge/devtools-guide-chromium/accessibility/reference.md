@@ -3,16 +3,16 @@ description: Eine umfassende Referenz zu Barrierefreiheitsfeatures in Microsoft 
 title: Referenz zur Barrierefreiheit
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: fce6dec3883cbcc758780a9fedb4c0fb2a8d0a4c
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: a82dec6ffd7e3fb44143ea103fc9756afcd1a161
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439254"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564574"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11439254"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="accessibility-reference"></a>Referenz zur Barrierefreiheit  
 
 Diese Seite ist eine umfassende Referenz zu Barrierefreiheitsfeatures in Microsoft Edge DevTools.  Es richtet sich an Webentwickler, die:  
@@ -214,4 +213,4 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

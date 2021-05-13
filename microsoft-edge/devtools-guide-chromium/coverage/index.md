@@ -1,18 +1,18 @@
 ---
 description: So finden und analysieren Sie nicht verwendeten JavaScript- und CSS-Code in Microsoft Edge DevTools.
-title: Suchen nicht verwendeten JavaScript- und CSS-Codes im Bereich "Abdeckung" in Microsoft Edge DevTools
+title: Suchen nicht verwendeter JavaScript- und CSS-Code im Bereich "Abdeckung" in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: a8fccdcabf03f3894a9a11246b90db4686fd953e
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: b31d14feac13a907ca0c5ce7ef702bcdef375ad5
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519317"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564462"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11519317"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="find-unused-javascript-and-css-code-with-the-coverage-panel-in-microsoft-edge-devtools"></a>Suchen von nicht verwendetem JavaScript- und CSS-Code im Bereich "Abdeckung" in Microsoft Edge DevTools  
 
-Der **Bereich Abdeckung** in Microsoft Edge DevTools hilft Ihnen, nicht verwendeten JavaScript- und CSS-Code zu finden.  Das Entfernen nicht verwendeten Codes kann das Laden der Seite beschleunigen und Mobilfunkdaten ihrer mobilen Benutzer speichern.  
+Der **Bereich** Abdeckung in Microsoft Edge DevTools hilft Ihnen, nicht verwendeten JavaScript- und CSS-Code zu finden.  Das Entfernen nicht verwendeten Codes kann das Laden der Seite beschleunigen und Mobilfunkdaten ihrer mobilen Benutzer speichern.  
 
 :::image type="complex" source="../media/coverage-sources-resource-drawer-coverage.msft.png" alt-text="Analysieren der Codeabdeckung" lightbox="../media/coverage-sources-resource-drawer-coverage.msft.png":::
    Analysieren der Codeabdeckung  
@@ -96,7 +95,7 @@ In der Tabelle im **Bereich** "Abdeckung" werden die analysierten Ressourcen und
 
 <!-- links -->  
 
-[DevToolsCommandMenu]: ../command-menu/index.md "Ausführen von Befehlen mit dem Microsoft Edge DevTools Command-Menü | Microsoft Docs"  
+[DevToolsCommandMenu]: ../command-menu/index.md "Ausführen von Befehlen mit Microsoft Edge DevTools Command | Microsoft Docs"  
 
 [BootstrapButtons]: https://getbootstrap.com/docs/4.3/components/buttons "Schaltflächen – Bootstrap"  
 
@@ -110,4 +109,4 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

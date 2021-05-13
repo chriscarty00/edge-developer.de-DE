@@ -3,16 +3,16 @@ description: Erfahren Sie, wie Sie Microsoft Edge DevTools verwenden, um JavaScr
 title: Erste Schritte mit dem Debuggen von JavaScript in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: a60bd0c734df18ba7424cde6a828abbd9e7135a9
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 90a979cebcb74a118cb1d8ce88d48c7ac64c7a6d
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519373"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564091"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -51,7 +51,7 @@ Das Suchen einer Reihe von Aktionen, die einen Fehler konsistent reproduzieren, 
 
 DevTools bietet viele verschiedene Tools für verschiedene Aufgaben.  Zu den verschiedenen Aufgaben gehören das Ändern von CSS, die Profilerstellung der Seitenladeleistung und die Überwachung von Netzwerkanforderungen.  Das **Tool Sources** ist der Ort, an dem Sie JavaScript debuggen.  
 
-1.  Um das **Konsolentool** in DevTools zu öffnen, wählen `Control` + `Shift` + `J` Sie \(Windows, Linux\) oder `Command` + `Option` + `J` \(macOS\).  
+1.  Um das **Konsolentool** in DevTools zu öffnen, wählen Sie `Control` + `Shift` + `J` \(Windows, Linux\) oder `Command` + `Option` + `J` \(macOS\).  
     
     :::image type="complex" source="../media/javascript-console-empty.msft.png" alt-text="Das Konsolentool" lightbox="../media/javascript-console-empty.msft.png":::
        Das **Konsolentool**  
@@ -254,4 +254,4 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

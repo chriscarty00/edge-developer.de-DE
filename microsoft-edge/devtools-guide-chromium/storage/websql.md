@@ -1,18 +1,18 @@
 ---
-description: Anzeigen von SQL-Daten aus dem Anwendungsbereich von Microsoft Edge DevTools.
-title: Anzeigen von SQL mit Microsoft Edge DevTools
+description: Anzeigen von Web SQL daten aus dem Anwendungsbereich von Microsoft Edge DevTools.
+title: Anzeigen von SQL-Daten mit Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 9f684aabf3592220079e6a8595d91cfea6785769
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: bc25f7422be19bec99bde1cd7764f08aad8e6668
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439598"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564700"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,13 +27,12 @@ ms.locfileid: "11439598"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
-# <a name="view-web-sql-data-with-microsoft-edge-devtools"></a>Anzeigen von SQL mit Microsoft Edge DevTools  
+# <a name="view-web-sql-data-with-microsoft-edge-devtools"></a>Anzeigen von SQL-Daten mit Microsoft Edge DevTools  
 
 > [!WARNING]
-> Die Web SQL wird [nicht beibehalten.][W3CWebSQLStatus]  
+> Die Web SQL-Spezifikation wird [nicht beibehalten.][W3CWebSQLStatus]  
 
-In diesem Handbuch erfahren Sie, wie [Sie Microsoft Edge DevTools][MicrosoftEdgeDevTools] verwenden, um Webdaten SQL untersuchen.  
+In diesem Handbuch erfahren Sie, wie Sie [Microsoft Edge DevTools][MicrosoftEdgeDevTools] verwenden, um Web-SQL zu überprüfen.  
 
 ## <a name="view-web-sql-data"></a>Anzeigen von SQL-Daten  
 
@@ -43,7 +42,7 @@ In diesem Handbuch erfahren Sie, wie [Sie Microsoft Edge DevTools][MicrosoftEdge
        Der **Manifestbereich**  
     :::image-end:::  
     
-1.  Erweitern Sie **den Abschnitt SQL,** um Datenbanken und Tabellen anzeigen zu können.  In der folgenden Abbildung ist **unter html5meetup** eine Datenbank und **Räume** eine Tabelle.  
+1.  Erweitern Sie **den Abschnitt Web SQL,** um Datenbanken und Tabellen anzeigen zu können.  In der folgenden Abbildung ist **unter html5meetup** eine Datenbank und **Räume** eine Tabelle.  
     
     :::image type="complex" source="../media/storage-application-storage-web-sql.msft.png" alt-text="Web SQL Bereich" lightbox="../media/storage-application-storage-web-sql.msft.png":::
        Der **Web SQL** Bereich  
@@ -57,15 +56,15 @@ In diesem Handbuch erfahren Sie, wie [Sie Microsoft Edge DevTools][MicrosoftEdge
     
 ## <a name="edit-web-sql-data"></a>Bearbeiten von SQL-Daten  
 
-Sie können Webdaten nicht SQL bearbeiten, wenn Sie eine SQL -Tabelle anzeigen, z. B. oben.  Sie können jedoch Anweisungen aus der Web-SQL ausführen, die Tabellen bearbeiten oder löschen.  Navigieren Sie [zu Web SQL ausführen](#run-web-sql-queries).  
+Sie können keine Webdaten SQL, wenn Sie eine Web-SQL anzeigen, z. B. oben.  Sie können jedoch Anweisungen aus der Web-SQL ausführen, die Tabellen bearbeiten oder löschen.  Navigieren Sie [zu Web SQL ausführen](#run-web-sql-queries).  
 
 ## <a name="run-web-sql-queries"></a>Ausführen von SQL-Abfragen  
 
 1.  Wählen Sie eine Datenbank aus, um eine Konsole für diese Datenbank zu öffnen.  
-1.  Geben Sie eine web SQL-Anweisung ein, und wählen Sie dann `Enter` aus, um sie zu ausführen.  
+1.  Geben Sie eine Web SQL-Anweisung ein, und wählen Sie dann `Enter` aus, um sie zu ausführen.  
     
-    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png" alt-text="Verwenden der Web SQL-Konsole zum Löschen einer Zeile aus einer Tabelle" lightbox="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png":::
-       Verwenden der Web SQL-Konsole zum Löschen einer Zeile aus einer Tabelle  
+    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png" alt-text="Löschen einer SQL aus einer Tabelle mithilfe der Web-SQL-Konsole" lightbox="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png":::
+       Löschen einer SQL aus einer Tabelle mithilfe der Web-SQL-Konsole  
     :::image-end:::  
     
 ## <a name="refresh-a-web-sql-table"></a>Aktualisieren einer SQL-Tabelle  
@@ -86,11 +85,11 @@ DevTools aktualisiert Tabellen nicht in Echtzeit.  Führen Sie die folgenden Akt
     
 ## <a name="delete-all-web-sql-data"></a>Löschen aller SQL-Daten  
 
-1.  Öffnen Sie den **Bereich Speicher** löschen.  
+1.  Öffnen Sie den **Bereich Storage** Löschen.  
 1.  Stellen Sie sicher, **dass das SQL** aktiviert ist.  
     
-    :::image type="complex" source="../media/storage-application-clear-storage-web-sql.msft.png" alt-text="Das Kontrollkästchen SQL Web" lightbox="../media/storage-application-clear-storage-web-sql.msft.png":::
-       Kontrollkästchen **SQL** Web  
+    :::image type="complex" source="../media/storage-application-clear-storage-web-sql.msft.png" alt-text="Kontrollkästchen SQL Web" lightbox="../media/storage-application-clear-storage-web-sql.msft.png":::
+       Das **Kontrollkästchen SQL** Web  
     :::image-end:::  
     
 1.  Wählen **Sie Websitedaten löschen aus.**  
@@ -107,7 +106,7 @@ DevTools aktualisiert Tabellen nicht in Echtzeit.  Führen Sie die folgenden Akt
 
 [MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) -Entwicklertools | Microsoft Docs"  
 
-[W3CWebSQLStatus]: https://w3.org/TR/webdatabase/#status-of-this-document "Web SQL Datenbank | W3C"  
+[W3CWebSQLStatus]: https://w3.org/TR/webdatabase/#status-of-this-document "Web SQL-| W3C"  
 
 > [!NOTE]
 > Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
@@ -119,4 +118,4 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

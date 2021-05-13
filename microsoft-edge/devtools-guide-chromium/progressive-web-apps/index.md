@@ -3,16 +3,16 @@ description: Verwenden Sie den Anwendungsbereich, um Web-App-Manifeste, Servicem
 title: Debuggen progressiver Web-Apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: aea01d25474a030e78ac0eaeaef3954ab7f4539f
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 3a0732327aac210e399c438b8d9c34c75a7c2910
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398539"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564728"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11398539"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="debug-progressive-web-apps"></a>Debuggen progressiver Web-Apps  
 
 Verwenden Sie **den Anwendungsbereich,** um Web-App-Manifeste, Servicemitarbeiter und Dienstmitarbeitercaches zu überprüfen, zu ändern und zu debuggen.  
@@ -46,7 +45,7 @@ In diesem Handbuch werden nur die Progressive Web App-Features des **Anwendungsb
 
 *   Verwenden Sie den **Manifestbereich,** um Ihr Web-App-Manifest zu überprüfen und Add to Homescreen-Ereignisse auszulösen.  
 *   Verwenden Sie **den Bereich Service Workers** für eine ganze Reihe von aufgabenbezogenen Aufgaben, z. B. aufheben der Registrierung oder Aktualisierung eines Diensts, Emulieren von Pushereignissen, Offlinemodus oder Beenden eines Dienstmitarbeiters.  
-*   Anzeigen des Dienstarbeitscaches im **Cachespeicherbereich.**  
+*   Zeigen Sie den Dienstarbeitscache im Bereich **Cache Storage** an.  
 *   Aufheben der Registrierung eines Dienstmitarbeiters und Löschen aller Speicher und Caches mit einer einzelnen Schaltfläche wählen Sie aus dem **Bereich Speicher löschen** aus.  
     
 ## <a name="web-app-manifest"></a>Web-App-Manifest  
@@ -123,7 +122,7 @@ Der **Bereich "Service Workers"** im **Bereich "Anwendung"** ist der wichtigste 
 *   Mit **der Schaltfläche** Aufheben der Registrierung wird die Registrierung des angegebenen Dienstmitarbeiters aufgehoben.  Weitere Informationen zum [Aufheben der](#clear-storage) Registrierung eines Dienstmitarbeiters und zum Löschen von Speicher und Zwischenspeichern mit einer einzelnen Schaltfläche finden Sie unter Löschen des Speichers.  
 *   Die **Zeile Source** informiert Sie, wann der derzeit ausgeführte Dienstmitarbeiter installiert wurde.  Der Link ist der Name der Quelldatei des Dienstmitarbeiters.  Wenn Sie den Link auswählen, werden Sie an die Quelle des Servicemitarbeiters übermittelt.  
 *   In **der Zeile Status** wird der Status des Servicemitarbeiters angezeigt.  Die ID-Nummer neben dem grünen Statusindikator \( in der vorherigen Abbildung\) ist für den `#36` derzeit aktiven Service Worker.  Neben dem Status **** wird eine Startschaltfläche \(wenn der **** Dienstmitarbeiter beendet wird\) oder eine Stoppschaltfläche \(wenn der Dienstmitarbeiter ausgeführt wird\) angezeigt.  Servicemitarbeiter sind so konzipiert, dass sie jederzeit vom Browser angehalten und gestartet werden.  Das explizite Beenden des Dienstmitarbeiters **mithilfe** der Stoppschaltfläche kann dies simulieren.  Das Beenden des Dienstmitarbeiters ist eine hervorragende Möglichkeit, um zu testen, wie sich Ihr Code verhält, wenn der Dienstmitarbeiter wieder hoch startet.  Aufgrund fehlerhafter Annahmen über den dauerhaften globalen Zustand werden häufig Fehler gemeldet.  
-*   Die **Zeile Clients** teilt Ihnen den Ursprung mit, auf den der Dienstmitarbeiter begrenzt ist.  Die **Fokusschaltfläche** ist hauptsächlich hilfreich, wenn Sie das Kontrollkästchen Alle **Anzeigen** aktiviert haben.  Wenn dieses Kontrollkästchen aktiviert ist, werden alle registrierten Servicemitarbeiter aufgelistet.  Wenn Sie die **Fokusschaltfläche** neben einem Servicemitarbeiter auswählen, der auf einer anderen Registerkarte ausgeführt wird, konzentriert sich Microsoft Edge auf diese Registerkarte.  
+*   Die **Zeile Clients** teilt Ihnen den Ursprung mit, auf den der Dienstmitarbeiter begrenzt ist.  Die **Fokusschaltfläche** ist hauptsächlich hilfreich, wenn Sie das Kontrollkästchen Alle **Anzeigen** aktiviert haben.  Wenn dieses Kontrollkästchen aktiviert ist, werden alle registrierten Servicemitarbeiter aufgelistet.  Wenn Sie die **Fokusschaltfläche** neben einem Servicemitarbeiter auswählen, der auf einer anderen Registerkarte ausgeführt wird, Microsoft Edge auf dieser Registerkarte.  
     
 Wenn der Dienstmitarbeiter Fehler verursacht, wird eine neue Bezeichnung **namens Errors** angezeigt.  
 
@@ -138,24 +137,24 @@ Wenn der Dienstmitarbeiter Fehler verursacht, wird eine neue Bezeichnung **namen
 
 ## <a name="service-worker-caches"></a>Dienstarbeitscaches  
 
-Der **Bereich Cachespeicher** enthält eine schreibgeschützte Liste der Ressourcen, die mithilfe der Cache-API \(Service Worker\) [zwischengespeichert wurden.][MDNWebCacheAPI]  
+Der **Bereich cache Storage** enthält eine schreibgeschützte Liste der Ressourcen, die mithilfe der Cache-API \(Service Worker\) [zwischengespeichert wurden.][MDNWebCacheAPI]  
 
-:::image type="complex" source="../media/cache-pane-cache-storage-resources.msft.png" alt-text="Cachespeicherbereich" lightbox="../media/cache-pane-cache-storage-resources.msft.png":::
-   **Cachespeicherbereich**  
+:::image type="complex" source="../media/cache-pane-cache-storage-resources.msft.png" alt-text="Der Cache-Storage-Bereich" lightbox="../media/cache-pane-cache-storage-resources.msft.png":::
+   Der **Cache-Storage-Bereich**  
 :::image-end:::  
 
 > [!NOTE]
 > Wenn Sie zum ersten Mal einen Cache öffnen und eine Ressource hinzufügen, erkennt DevTools die Änderung möglicherweise nicht.  Aktualisieren Sie die Seite, und zeigen Sie den Cache an.  
 
-Wenn sie zwei oder mehr Caches geöffnet haben, werden die Caches im folgenden **Dropdownmenü Cachespeicher** angezeigt.  
+Wenn Sie zwei oder mehr Caches geöffnet haben, werden die Caches unter dem folgenden **Cachemenü Storage** angezeigt.  
 
-:::image type="complex" source="../media/cache-pane-cache-storage.msft.png" alt-text="Dropdownliste Cachespeicher" lightbox="../media/cache-pane-cache-storage.msft.png":::
-   Dropdownliste **Cachespeicher**  
+:::image type="complex" source="../media/cache-pane-cache-storage.msft.png" alt-text="Das Dropdownmenü cache Storage" lightbox="../media/cache-pane-cache-storage.msft.png":::
+   Das **Dropdownmenü Storage** Cache  
 :::image-end:::  
 
 ## <a name="quota-usage"></a>Kontingentverwendung  
 
-Einige Antworten im **Bereich Cachespeicher** werden möglicherweise als "undurchsichtig" gekennzeichnet.  Dies bezieht sich auf eine Antwort, die von einem anderen Ursprung abgerufen wird, z. B. aus einem **CDN** oder einer Remote-API, wenn [CORS][FetchHttpCorsProtocol] nicht aktiviert ist.  
+Einige Antworten im **Cache-Storage** werden möglicherweise als "undurchsichtig" gekennzeichnet.  Dies bezieht sich auf eine Antwort, die **** von einem anderen Ursprung abgerufen wird, z. B. aus einer CDN oder Remote-API, wenn [CORS][FetchHttpCorsProtocol] nicht aktiviert ist.  
 
 <!--TODO:  Link Web "CDN" section when available. -->  
 <!--TODO:  Link Web "opaque" section when available. -->
@@ -164,7 +163,7 @@ Um ein Leck an domänenübergreifenden Informationen zu vermeiden, wird der Grö
 
 <!--TODO:  Link Estimating "`navigator.storage` API" sections when available. -->
 
-Die Details dieses Abstands variieren von Browser zu Browser, für **** Microsoft Edge bedeutet dies jedoch, dass die Mindestgröße, die eine einzelne zwischengespeicherte undurchsichtige Antwort zur Gesamtspeichernutzung beiträgt, ca. 7 MB [beträgt.][ChromiumIssues796060#c17]  Denken Sie an den Abstand, wenn Sie bestimmen, wie viele undurchsichtige Antworten Zwischenspeicherung erfordern, da Speicherkontingentbeschränkungen möglicherweise viel früher überschritten werden, als Sie es basierend auf der tatsächlichen Größe der undurchsichtigen Ressourcen sonst erwarten.  
+Die Details dieses Abstands variieren von Browser zu Browser, aber für **** Microsoft Edge bedeutet [dies,][ChromiumIssues796060#c17]dass die Mindestgröße, die eine einzelne zwischengespeicherte undurchsichtige Antwort zur Gesamtspeichernutzung beiträgt, ca. 7 MB beträgt.  Denken Sie an den Abstand, wenn Sie bestimmen, wie viele undurchsichtige Antworten Zwischenspeicherung erfordern, da Speicherkontingentbeschränkungen möglicherweise viel früher überschritten werden, als Sie es basierend auf der tatsächlichen Größe der undurchsichtigen Ressourcen sonst erwarten.  
 
 Verwandte Leitfäden:  
 
@@ -175,7 +174,7 @@ Verwandte Leitfäden:
 
 ## <a name="clear-storage"></a>Löschen des Speichers  
 
-Der **Bereich Speicher löschen** ist ein sehr nützliches Feature bei der Entwicklung progressiver Web-Apps.  In diesem Bereich können Sie die Registrierung von Servicemitarbeitern aufheben und alle Caches und Speicher mit einer einzigen Schaltfläche löschen.  <!--Check out the section below to learn more.  -->
+Der **Bereich Storage** ist ein sehr nützliches Feature beim Entwickeln progressiver Web-Apps.  In diesem Bereich können Sie die Registrierung von Servicemitarbeitern aufheben und alle Caches und Speicher mit einer einzigen Schaltfläche löschen.  <!--Check out the section below to learn more.  -->
 
 <!--Related Guides:  
 
@@ -200,7 +199,7 @@ Related Guides:
 
 [DevtoolsCommandMenuIndex]: ../command-menu/index.md "Ausführen von Befehlen mit dem Microsoft Edge DevTools-Befehlsmenü | Microsoft Docs"  
 
-[ChromiumIssues796060#c17]: https://bugs.chromium.org/p/chromium/issues/detail?id=796060#c17 "Chromium Issue 796060: Cache Storage value rises on each refresh when Analytics code is in the html"  
+[ChromiumIssues796060#c17]: https://bugs.chromium.org/p/chromium/issues/detail?id=796060#c17 "Chromium Problem 796060: Cache-Storage steigt bei jeder Aktualisierung, wenn sich Der Analysecode in der HTML befindet"  
 
 [FetchHttpCorsProtocol]: https://fetch.spec.whatwg.org/#http-cors-protocol  
 
@@ -225,4 +224,4 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

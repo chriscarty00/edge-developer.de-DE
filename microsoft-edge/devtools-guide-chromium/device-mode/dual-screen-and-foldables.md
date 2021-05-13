@@ -3,20 +3,20 @@ description: Verwenden Sie virtuelle Geräte in Microsoft Edge, um Ihre Website 
 title: Emulieren von Dualscreen- und faltbaren Geräten in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/02/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, emulation, device, simulation, mobile, dual-screen, foldable, Surface Duo, Samsung Galaxy Fold
-ms.openlocfilehash: bc91c0b7c917d82f169dc7d47e047a587d505353
-ms.sourcegitcommit: 12c30ad4ab2664d17c9b7e9d59d7a3cda60ff65c
+ms.openlocfilehash: c3bd3296afa86d9d2c90c164bc3e9088bc043c3c
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "11313239"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564343"
 ---
-# Emulieren von Dualscreen- und faltbaren Geräten in Microsoft Edge DevTools  
+# <a name="emulate-dual-screen-and-foldable-devices-in-microsoft-edge-devtools"></a>Emulieren von Dualscreen- und faltbaren Geräten in Microsoft Edge DevTools  
 
-In Microsoft Edge, Version 89 oder höher, können Sie die folgenden Dualscreen- und faltbaren Geräte emulieren.  
+In Microsoft Edge Version 89 oder höher können Sie die folgenden Dualscreen- und faltbaren Geräte emulieren.  
 
 *   [Surface Duo][SurfaceDevicesDuo]  
 *   [Samsung Galaxy Fold][SamsungMobileGalaxyFold]  
@@ -32,9 +32,9 @@ Aktivieren Sie [experimentelle Webplattform-APIs,](#turn-on-experimental-apis) u
    Emulieren von Surface Duo in Microsoft Edge  
 :::image-end:::  
 
-## Aktivieren von experimentellen APIs  
+## <a name="turn-on-experimental-apis"></a>Aktivieren von experimentellen APIs  
 
-Aktivieren Sie das Flag in Microsoft Edge, um das Feature für die Verwendung des [CSS-Medienbildschirms][DualScreenDocsCssMedia] und der [JavaScript getWindowSegments-API][DualScreenDocsJSAPI] `Experimental Web Platform features` zu verwenden.  Führen Sie die folgenden Schritte aus.  
+Aktivieren Sie [][DualScreenDocsCssMedia] das Flag in der Microsoft Edge, um das Feature für die Verwendung des CSS-Medienbildschirmbereichs und der [JavaScript getWindowSegments-API][DualScreenDocsJSAPI] `Experimental Web Platform features` zu Microsoft Edge.  Führen Sie die folgenden Schritte aus.  
 
 1.  Navigieren Sie zu `edge://flags`.  
 1.  Geben Sie **im Textfeld Suchkennzeichen** die Option Ein, wählen Sie das `Experimental Web Platform features` Kennzeichen Experimentelle **Webplattformfeatures** aus, und ändern Sie **Deaktiviert** in **Aktiviert**.  
@@ -45,15 +45,15 @@ Aktivieren Sie das Flag in Microsoft Edge, um das Feature für die Verwendung de
 :::image-end:::  
 
 > [!NOTE]
-> Wenn Sie CSS-Medienabfragen oder die [JavaScript-Windows-Segment-Enumerations-API][DualScreenDocsJSAPI] verwenden, um Ihre Website oder App für [Surface Duo][SurfaceDevicesDuo]zu verbessern, müssen Sie auch das Flag für experimentelle Webplattformfeatures in der [Android Microsoft Edge-App][GooglePlayMicrosoftEdge] auf Ihrem [Surface Duo-Gerät][SurfaceDevicesDuo] aktivieren. [][DualScreenDocsCssMedia] ****  
+> Wenn Sie CSS-Medienabfragen oder die [JavaScript Windows Segment Enumeration API][DualScreenDocsJSAPI] verwenden, um Ihre Website oder App für das Surface [Duo][SurfaceDevicesDuo]zu verbessern, müssen Sie auch das Flag experimentelle Webplattformfeatures in der [Android Microsoft Edge-App][GooglePlayMicrosoftEdge] auf Ihrem Surface [Duo-Gerät][SurfaceDevicesDuo] aktivieren. [][DualScreenDocsCssMedia] ****  
 > 
-> Wenn das **Flag** für experimentelle Webplattformfeatures im [Microsoft Edge-Desktop][MicrosoftEdge] aktiviert und in der Android [Microsoft Edge-App][GooglePlayMicrosoftEdge]deaktiviert ist, ist das Verhalten Ihrer Website oder App im Surface Duo-Emulator im Desktop von Microsoft Edge nicht mit der Android [Microsoft Edge-App][GooglePlayMicrosoftEdge] auf Surface [Duo kompatibel.][SurfaceDevicesDuo]  Stellen Sie sicher, dass die Flags für Android und Desktop Microsoft Edge übereinstimmen, um den Surface Duo-Emulator in Microsoft [Edge erfolgreich zu verwenden.][MicrosoftEdge]  
+> Wenn **** das Flag für experimentelle Webplattformfeatures in desktop [Microsoft Edge][MicrosoftEdge] aktiviert und in der [Android Microsoft Edge-App][GooglePlayMicrosoftEdge]deaktiviert ist, ist das Verhalten Ihrer Website oder App im Surface Duo-Emulator in Desktop Microsoft Edge nicht mit der [Android Microsoft Edge-App][GooglePlayMicrosoftEdge] auf [Surface Duo kompatibel.][SurfaceDevicesDuo]  Stellen Sie sicher, dass die Flags für Android und desktop-Microsoft Edge, um den Surface Duo-Emulator [in][MicrosoftEdge]Desktop-Microsoft Edge.  
 
-## Testen auf zusammenklappbaren Und Dualscreen-Geräten  
+## <a name="test-on-foldable-and-dual-screen-devices"></a>Testen auf zusammenklappbaren Und Dualscreen-Geräten  
 
 Wenn Sie das [Surface Duo][SurfaceDevicesDuo] in einer Dual-Screen-Haltung in Microsoft Edge emulieren, wird die Naht \(der Abstand zwischen den beiden Bildschirmen\) über Ihre Website oder App gezeichnet.  
 
-Die emulierte Anzeige entspricht der Art und Weise, wie Ihre Website \(oder App\) während der Ausführung auf Surface Duo in der [Microsoft Edge Android-App][GooglePlayMicrosoftEdge] [gerendert wird.][SurfaceDevicesDuo]  Möglicherweise müssen Sie Ihre Website \(oder App\) aktualisieren, um entlang der Naht besser angezeigt zu werden.  Weitere Informationen zum Anpassen Ihrer Website \(oder App\) an die Naht finden Sie unter [How to work with the seam][DualScreenIntroductionHowWorkSeam].  
+Die emulierte Anzeige entspricht der Art und [Weise,][GooglePlayMicrosoftEdge] wie Ihre Website \(oder App\) in der Microsoft Edge Android-App gerendert wird, während sie auf [Surface Duo ausgeführt wird.][SurfaceDevicesDuo]  Möglicherweise müssen Sie Ihre Website \(oder App\) aktualisieren, um entlang der Naht besser angezeigt zu werden.  Weitere Informationen zum Anpassen Ihrer Website \(oder App\) an die Naht finden Sie unter [How to work with the seam][DualScreenIntroductionHowWorkSeam].  
 
 Die [Gerätesymbolleiste][DevtoolsDeviceModeIndexSimulateMobileViewport] verfügt über zusätzliche Features, mit deren Hilfe Sie Ihre Website oder App in mehreren Haltungen und Ausrichtungen testen können.  Wählen **Sie Drehen** \( Drehen ![ ](../media/rotate-dark-icon.msft.png) \) aus, um den Ansichtsfenster in die Querformatausrichtung zu drehen. Kombinieren Sie das Feature mit **Span** \( Span \), um zwischen einem bildschirm- oder gefalteten und dualen Bildschirm oder aufgeklappten Haltungen ![ ](../media/span-dark-icon.msft.png) umschalten zu können.  Mit den Features können Sie Ihre Website oder App in allen vier möglichen Haltungen und Ausrichtungen testen.  
 
@@ -66,22 +66,22 @@ Das **Symbol Experimental Web Platform features** \( ExperimentalApis \) zeigt d
 > [!NOTE]
 > Im Folgenden finden Sie eine Liste der aktuellen bekannten Probleme.  
 > 
-> *   Wenn Sie einen [Microsoft Remote Desktop-Client][RemoteDesktopClientDocs] verwenden, um eine Verbindung mit einem Remote-PC herzustellen und das [Surface Duo][SurfaceDevicesDuo] oder das [Samsung -Galaxis-Fold-Gerät][SamsungMobileGalaxyFold]zu emulieren, kann der Zeiger wackeln oder stottern.  Wenn Sie das Problem haben, senden [Sie Feedback](#getting-in-touch-with-the-microsoft-edge-devtools-team).  
+> *   Wenn Sie einen [Microsoft-Remotedesktop verwenden,][RemoteDesktopClientDocs] um eine Verbindung mit einem Remote-PC herzustellen und das [Surface Duo][SurfaceDevicesDuo] oder das [Samsung -Galaxis-Fold-Gerät][SamsungMobileGalaxyFold]zu emulieren, kann der Zeiger wackeln oder stottern.  Wenn Sie das Problem haben, senden [Sie Feedback](#getting-in-touch-with-the-microsoft-edge-devtools-team).  
 
-## Weitere Ressourcen  
+## <a name="additional-resources"></a>Weitere Ressourcen  
 
 Hier finden Sie weitere Ressourcen, die Ihnen bei der Verbesserung Ihrer Website \(oder App\) für Dual-Screen-Geräte helfen können.  
 
 *   Weitere Informationen zur Webentwicklung auf Dual-Screen-Geräten finden Sie unter [Dual-screen web experiences][DualScreenWebIndex].  
 *   Installieren Sie den [Surface Duo-Emulator][DualScreenAndroidUseEmulator].  Der Surface Duo-Emulator ist anders als der Emulator in Microsoft Edge, führt Android aus und integriert sich in [Android Studio.][AndroidDeveloperStudio]  Weitere Informationen finden Sie unter [Get the Surface Duo SDK][DualScreenAndroidGetDuoSdk].  
 
-## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsDeviceModeIndexSimulateMobileViewport]: ../device-mode/index.md#simulate-a-mobile-viewport "Simulieren mobiler Geräte mit dem Gerätemodus in Microsoft Edge DevTools | Microsoft Edge"  
+[DevtoolsDeviceModeIndexSimulateMobileViewport]: ../device-mode/index.md#simulate-a-mobile-viewport "Simulieren mobiler Geräte mit gerätemodus in Microsoft Edge DevTools | Microsoft Edge"  
 
 [DualScreenWebIndex]: /dual-screen/web/index "Dualscreen-Weberfahrungen | Microsoft Docs"  
 [DualScreenAndroidGetDuoSdk]: /dual-screen/android/get-duo-sdk "Laden Sie den Surface Duo-Emulator | Microsoft Docs"  
@@ -100,4 +100,4 @@ Hier finden Sie weitere Ressourcen, die Ihnen bei der Verbesserung Ihrer Website
 
 [GooglePlayMicrosoftEdge]: https://play.google.com/store/apps/details?id=com.microsoft.emmx "Microsoft Edge | Google Play"  
 
-[SamsungMobileGalaxyFold]: https://www.samsung.com/mobile/galaxy-fold/ "Galaxis fold | Samsung"  
+[SamsungMobileGalaxyFold]: https://www.samsung.com/global/galaxy/galaxy-fold "Galaxis fold | Samsung"  

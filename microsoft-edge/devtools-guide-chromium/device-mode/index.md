@@ -3,16 +3,16 @@ description: Verwenden Sie virtuelle Geräte in Microsoft Edge, um Mobile-First-
 title: Emulieren mobiler Geräte in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, emulation, device, simulation, mobile
-ms.openlocfilehash: bb081ddd5f773e5e9ae6a1b83b5fcb13408df6cb
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: b62a1799b1707fc4c6890bb7ad9ad4aa9afab113
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439451"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564406"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11439451"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="emulate-mobile-devices-in-microsoft-edge-devtools"></a>Emulieren mobiler Geräte in Microsoft Edge DevTools  
 
-Verwenden **Sie die Geräteemulation,** um das Aussehen und Reagieren Ihrer Seite auf einem mobilen Gerät zu erahnen.  Die Microsoft Edge DevTools bieten eine Sammlung von Features, mit deren Hilfe Sie mobile Geräte emulieren können.  Die Auflistung enthält die folgenden Features.  
+Verwenden **Sie die Geräteemulation,** um das Aussehen und Reagieren Ihrer Seite auf einem mobilen Gerät zu erahnen.  Die Microsoft Edge DevTools bieten eine Sammlung von Funktionen, mit deren Hilfe Sie mobile Geräte emulieren können.  Die Auflistung enthält die folgenden Features.  
 
 *   [Simulieren eines mobilen Viewports](#simulate-a-mobile-viewport)  
 *   [Drosseln des Netzwerks](#throttle-the-network-only)  
@@ -85,7 +84,7 @@ Verwenden Sie die **Liste Gerätetyp,** um ein mobiles Gerät oder Desktopgerät
    Die **Liste "Gerätetyp"**  
 :::image-end:::  
 
-In der folgenden Tabelle werden die Unterschiede zwischen den verfügbaren Gerätetypoptionen beschrieben.  Die Spalte Rendering-Methode bezieht sich darauf, ob Microsoft Edge die Seite als Mobile- oder Desktop-Viewport rendert.  Die Spalte Cursorsymbol bezieht sich auf den Cursortyp, der angezeigt wird, wenn Sie auf die Seite zeigen.  Die Spalte Ereignisse, die ausgelöst wird, bezieht sich darauf, ob die Seite ausgelöst wird oder ob Ereignisse ausgelöst `touch` `click` werden, wenn Sie mit der Seite interagieren.  
+In der folgenden Tabelle werden die Unterschiede zwischen den verfügbaren Gerätetypoptionen beschrieben.  Die Spalte Rendering-Methode bezieht sich darauf, ob Microsoft Edge Seite als mobiler Oder Desktop-Viewport gerendert wird.  Die Spalte Cursorsymbol bezieht sich auf den Cursortyp, der angezeigt wird, wenn Sie auf die Seite zeigen.  Die Spalte Ereignisse, die ausgelöst wird, bezieht sich darauf, ob die Seite ausgelöst wird oder ob Ereignisse ausgelöst `touch` `click` werden, wenn Sie mit der Seite interagieren.  
 
 | Option | Renderingmethode | Cursorsymbol | Ausgelöste Ereignisse |  
 |:--- |:--- |:--- |:--- |  
@@ -126,7 +125,7 @@ Weitere Informationen finden Sie unter Festlegen [der Ausrichtung](#set-orientat
 
 #### <a name="show-device-frame"></a>Anzeigen des Geräteframes  
 
-Zeigen Sie den physischen Geräterahmen um den Viewport an, wenn Sie die Abmessungen eines bestimmten mobilen Geräts, z. B. eines iPhone 6, simulieren.  
+Zeigen Sie den physischen Geräterahmen um den Viewport an, wenn Sie die Abmessungen eines bestimmten mobilen Geräts simulieren, z. B. iPhone 6.  
 
 1.  Öffnen **Sie Weitere Optionen**.  
 1.  Wählen **Sie Geräterahmen anzeigen aus.**  
@@ -141,8 +140,8 @@ Zeigen Sie den physischen Geräterahmen um den Viewport an, wenn Sie die Abmessu
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png" alt-text="Der Geräterahmen für das iPhone 6" lightbox="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png":::
-         Der Geräterahmen für das iPhone 6  
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png" alt-text="Der Geräterahmen für iPhone 6" lightbox="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png":::
+         Der Geräterahmen für iPhone 6  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -216,7 +215,7 @@ Die Drosselung basiert auf der normalen Funktion Ihres Laptops oder Desktops.
 
 Führen Sie die folgenden Schritte aus, um nur die CPU und nicht das Netzwerk zu drosseln.
 
-1.  Wählen Sie **den Bereich** Leistung aus, und wählen Sie **Aufnahmeeinstellungen** \( ![ Aufnahmeeinstellungen ](../media/capture-settings-icon.msft.png) \).
+1.  Wählen Sie **den Bereich** Leistung aus, und wählen Sie **Capture Einstellungen** \( Capture ![ Einstellungen ](../media/capture-settings-icon.msft.png) \).
 1.  Wählen **Sie CPU**  >  **4x Verlangsamung** oder **6x Verlangsamung aus.**
     
     :::image type="complex" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="Die CPU-Liste im Leistungsbereich" lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
@@ -228,13 +227,13 @@ Führen Sie die folgenden Schritte aus, um nur die CPU und nicht das Netzwerk zu
 Führen Sie die folgenden Schritte aus, um das Netzwerk zu drosseln.
 
 1.  Wählen Sie das **Netzwerktool** aus.
-1.  Wählen **Sie Online**Fast  >  **3G** oder Slow **3G**aus.
+1.  Wählen **Sie Online**Fast  >  **3G** or Slow 3G **aus.**
     
     :::image type="complex" source="../media/device-mode-network-throttle.msft.png" alt-text="Die Einschränkungsliste im Netzwerkbereich" lightbox="../media/device-mode-network-throttle.msft.png":::
        Die **Einschränkungsliste** im Netzwerkbereich  
     :::image-end:::  
     
-    Oder wählen `Control` + `Shift` + `P` Sie \(Windows, Linux\) oder `Command` + `Shift` + `P` **** \(macOS\) `3G` **** **** aus, um das Befehlsmenü zu öffnen, geben Sie ein, und wählen Sie Schnelle 3G Drosselung aktivieren oder langsame 3G aktivieren aus.  
+    Oder wählen `Control` + `Shift` + `P` Sie \(Windows, Linux\) oder `Command` + `Shift` + `P` \(macOS\) **** `3G` **** **** aus, um das Befehlsmenü zu öffnen, geben Sie ein, und wählen Sie Schnelle 3G-Drosselung aktivieren oder langsame 3G aktivieren aus.  
     
     :::image type="complex" source="../media/device-mode-command-menu-throttle.msft.png" alt-text="Das Befehlsmenü" lightbox="../media/device-mode-command-menu-throttle.msft.png":::
        Das **Befehlsmenü**  
@@ -242,7 +241,7 @@ Führen Sie die folgenden Schritte aus, um das Netzwerk zu drosseln.
     
 Sie können die Netzwerkeinschränkung auch im Bereich **Leistung** festlegen.  
 
-1.  Wählen **Sie Aufnahmeeinstellungen** \( ![ Aufnahmeeinstellungen ](../media/capture-settings-icon.msft.png) \) aus, **** **** und wählen Sie **** die Liste Netzwerk aus, und ändern Sie die Voreinstellung in Fast 3G oder Slow 3G .  
+1.  Wählen **Sie Capture Einstellungen** \( Capture Einstellungen ![ \) aus, und wählen Sie die Liste Netzwerk aus, und ändern Sie die Voreinstellung in Fast ](../media/capture-settings-icon.msft.png) **3G** oder **Slow 3G**. ****  
     
     :::image type="complex" source="../media/device-mode-performance-network-throttle.msft.png" alt-text="Festlegen der Netzwerkeinschränkung aus dem Leistungsbereich" lightbox="../media/device-mode-performance-network-throttle.msft.png":::
        Festlegen der Netzwerkeinschränkung aus dem **Leistungsbereich**  
@@ -262,7 +261,7 @@ Sie können die Netzwerkeinschränkung auch im Bereich **Leistung** festlegen.
    :::column-end:::
    :::column span="":::
       1.  Öffnen Sie das Befehlsmenü.  
-          *   Wählen `Control` + `Shift` + `P` Sie \(Windows, Linux\) oder `Command` + `Shift` + `P` \(macOS\) aus.  
+          *   Wählen `Control` + `Shift` + `P` Sie \(Windows, Linux\) oder `Command` + `Shift` + `P` \(macOS\).  
       1. Geben `Sensors` Sie ein, und wählen **Sie Sensoren anzeigen aus.**  
       
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Anzeigen von Sensoren für geolocation" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
@@ -291,7 +290,7 @@ Im Bereich **Sensoren** können Sie einen der vordefinierten Speicherorte auswä
    :::column-end:::
    :::column span="":::
       1.  Öffnen Sie das Befehlsmenü.  
-          *   Wählen `Control` + `Shift` + `P` Sie \(Windows, Linux\) oder `Command` + `Shift` + `P` \(macOS\) aus.  
+          *   Wählen `Control` + `Shift` + `P` Sie \(Windows, Linux\) oder `Command` + `Shift` + `P` \(macOS\).  
       1. Geben `Sensors` Sie ein, und wählen **Sie Sensoren anzeigen aus.**  
       
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Anzeigen von Sensoren für die Ausrichtung" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
@@ -320,7 +319,7 @@ Im **Bereich Sensoren** können Sie im Dropdownmenü Ausrichtung eine voreingest
    :::column-end:::
    :::column span="":::
       1.  Öffnen Sie das Befehlsmenü.  
-          *   Wählen `Control` + `Shift` + `P` Sie \(Windows, Linux\) oder `Command` + `Shift` + `P` \(macOS\) aus.  
+          *   Wählen `Control` + `Shift` + `P` Sie \(Windows, Linux\) oder `Command` + `Shift` + `P` \(macOS\).  
       1. Geben `Network conditions` Sie ein, und wählen **Sie Netzwerkbedingungen anzeigen aus.**  
       
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png" alt-text="Anzeigen von Netzwerkbedingungen" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png":::
@@ -331,8 +330,8 @@ Im **Bereich Sensoren** können Sie im Dropdownmenü Ausrichtung eine voreingest
 
 Aktivieren Sie **neben Benutzer-Agent**das **Kontrollkästchen** Automatisch auswählen.  Wählen Sie dann **Custom...** aus, um aus einer Liste vordefinierter Benutzer-Agent-Zeichenfolgen auszuwählen.  Geben Sie die Zeichenfolge in Enter a custom user agent ein, um Eine eigene Zeichenfolge für den **Benutzer-Agent ein eingeben.**  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png" alt-text="Festlegen der Benutzer-Agent-Zeichenfolge auf Microsoft Edge unter macOS" lightbox="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png":::
-    Festlegen der Benutzer-Agent-Zeichenfolge auf Microsoft Edge unter macOS  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png" alt-text="Festlegen der Zeichenfolge für den Benutzer-Agent auf Microsoft Edge macOS" lightbox="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png":::
+    Festlegen der Zeichenfolge für den Benutzer-Agent auf Microsoft Edge macOS  
 :::image-end:::  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
@@ -362,4 +361,4 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

@@ -3,16 +3,16 @@ description: Halten Sie ihren clientseitigen Code auch nach dem Kombinieren, Min
 title: Zuordnung von vorverarbeiteten Code zu Quellcode
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: c04d1ec02b188cc7ec8ab2598b395dbeb4431c46
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 3240e437a917dd7074a0584b91dcc6c34576ca24
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519415"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564049"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -27,23 +27,22 @@ ms.locfileid: "11519415"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="map-preprocessed-code-to-source-code"></a>Zuordnung von vorverarbeiteten Code zu Quellcode  
 
 Halten Sie ihren clientseitigen Code auch nach dem Kombinieren, Minimieren oder Kompilieren lesbar und debuggbar.  Verwenden Sie Quellzuordnungen, um Den Quellcode dem kompilierten Code zu zuordnungen.  
 
 ### <a name="summary"></a>Zusammenfassung  
 
-*   Verwenden Sie Quellzuordnungen, um verminten Code dem Quellcode zu zuordnungen.  Anschließend können Sie kompilierten Code in der ursprünglichen Quelle lesen und debuggen.  
-*   Verwenden Sie nur Vorprozessoren, die Quellkarten erstellen können.  
-*   Stellen Sie sicher, dass Ihr Webserver Quellkarten bedienen kann.  
+*   Verwenden Sie source Karten, um dem Quellcode minifizierten Code zu zuordnungen.  Anschließend können Sie kompilierten Code in der ursprünglichen Quelle lesen und debuggen.  
+*   Verwenden Sie nur Vorverarbeiter, die Quellprozessoren Karten.  
+*   Stellen Sie sicher, dass Ihr Webserver Quellserver Karten.  
     
 <!--todo: add link to preprocessors capable of producing Source Maps when section is available -->  
 <!--[]: /web/tools/setup/setup-preprocessors?#supported_preprocessors ""  -->  
 
 ## <a name="get-started-with-preprocessors"></a>Erste Schritte mit Präprozessoren  
 
-In diesem Artikel wird die Interaktion mit JavaScript-Quellkarten im Tool DevTools Sources erläutert.  <!--For a first overview of what preprocessors are, how each may help, and how Source Maps work; navigate to Set Up CSS & JS Preprocessors.  -->  
+In diesem Artikel wird erläutert, wie Sie mit JavaScript Source Karten im Tool DevTools Sources interagieren.  <!--For a first overview of what preprocessors are, how each may help, and how Source Maps work; navigate to Set Up CSS & JS Preprocessors.  -->  
 
 <!--todo: add link to Set Up CSS & JS Preprocessors when section is available -->  
 <!--[]: /web/tools/setup/setup-preprocessors#debugging-and-editing-preprocessed-content ""  -->  
@@ -55,29 +54,29 @@ Verwenden Sie ein Minifier, mit dem Quellzuordnungen erstellt werden können.  <
 <!--todo: add link to display the preprocessor support section when section is available -->  
 <!--[]: /web/tools/setup/setup-preprocessors?#supported_preprocessors ""  -->  
 
-Die folgenden Typen von Präprozessoren werden häufig in Kombination mit Quellkarten verwendet:  
+Die folgenden Typen von Präprozessoren werden häufig in Kombination mit Source-Karten:  
 
 *   Transpilers \([Babel][BabelJS], [Traceur][GitHubWikiGoogleTraceurCompiler]\)  
 *   Compiler \([Closure Compiler][GitHubGoogleClosureCompiler], [TypeScript][|::ref1::|Main], [CoffeeScript][|::ref2::|Main], [Dart][DartMain]\)  
 *   Minifiers \([UglifyJS][GitHubMishooUglifyJS]\)  
     
-## <a name="source-maps-in-devtools-sources-tool"></a>Tool "Quellzuordnungen in DevTools-Quellen"  
+## <a name="source-maps-in-devtools-sources-tool"></a>Source Karten in DevTools Sources tool  
 
-Quellzuordnungen von Präprozessoren führen dazu, dass DevTools ihre ursprünglichen Dateien zusätzlich zu den minifizierten Dateien geladen hat.  Anschließend verwenden Sie die Originale, um Haltepunkte zu setzen und Code zu durchbrechen.  In der Zwischenzeit wird in Microsoft Edge tatsächlich der minifizierte Code ausgeführt.  Die Ausführung des Codes gibt Ihnen die Illusion, eine Entwicklungswebsite in der Produktion zu verwenden.  
+Quelldateien Karten von Präprozessoren führen dazu, dass DevTools ihre ursprünglichen Dateien zusätzlich zu den minifizierten Dateien geladen.  Anschließend verwenden Sie die Originale, um Haltepunkte zu setzen und Code zu durchbrechen.  In der zwischenzeit Microsoft Edge tatsächlich ihren minifizierten Code ausgeführt.  Die Ausführung des Codes gibt Ihnen die Illusion, eine Entwicklungswebsite in der Produktion zu verwenden.  
 
-Beim Ausführen von Quellzuordnungen in DevTools sollten Sie beachten, dass das JavaScript nicht kompiliert wird und alle einzelnen JavaScript-Dateien angezeigt werden, auf die es verweist.  Source Maps in DevTools verwendet die Quellzuordnung, aber die zugrunde liegende Funktionalität führt tatsächlich den kompilierten Code aus.  Alle Fehler, Protokolle und Haltepunkte werden dem Entwicklungscode für ein großartiges Debuggen hinzugefügt.  Es gibt Ihnen also die Illusion, dass Sie eine Entwicklungswebsite in der Produktion ausführen.  
+Wenn Sie source Karten in DevTools ausführen, sollten Sie feststellen, dass javaScript nicht kompiliert wird und alle einzelnen JavaScript-Dateien angezeigt werden, auf die es verweist.  Source Karten in DevTools verwendet die Quellzuordnung, aber die zugrunde liegende Funktionalität führt tatsächlich den kompilierten Code aus.  Alle Fehler, Protokolle und Haltepunkte werden dem Entwicklungscode für ein großartiges Debuggen hinzugefügt.  Es gibt Ihnen also die Illusion, dass Sie eine Entwicklungswebsite in der Produktion ausführen.  
 
-### <a name="enable-source-maps-in-settings"></a>Aktivieren von Quellzuordnungen in Einstellungen  
+### <a name="enable-source-maps-in-settings"></a>Aktivieren von Karten in Einstellungen  
 
-Quellzuordnungen sind standardmäßig aktiviert<!-- \(as of Microsoft Edge 39\)-->, wenn Sie sie jedoch überprüfen oder aktivieren möchten; Öffnen Sie zuerst DevTools, wählen **Sie Anpassen und Steuern von DevTools** \( `...` \) > Einstellungen **aus.**  Aktivieren Sie **im Bereich** Einstellungen unter **Quellen**die Option **JavaScript-Quellzuordnungen aktivieren.**  Sie können auch die Option **CSS-Quellzuordnungen aktivieren aktivieren aktivieren.**  
+Quelldateien Karten standardmäßig aktiviert<!-- \(as of Microsoft Edge 39\)-->, wenn Sie sie jedoch überprüfen oder aktivieren möchten; Öffnen Sie zunächst DevTools, wählen **Sie Anpassen und Steuern von DevTools** \( `...` \) > **Einstellungen**.  Aktivieren Sie **im Bereich** Einstellungen unter **Quellen**die Option **JavaScript Source Karten**.  Sie können auch die Option **CSS-Quelldatei aktivieren Karten.**  
 
-:::image type="complex" source="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png" alt-text="Aktivieren von Quellzuordnungen" lightbox="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png":::
-   **Aktivieren von JavaScript-Quellkarten**  
+:::image type="complex" source="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png" alt-text="Aktivieren von Karten" lightbox="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png":::
+   **Aktivieren von JavaScript Source Karten**  
 :::image-end:::  
 
-### <a name="debugging-with-source-maps"></a>Debuggen mit Quellzuordnungen  
+### <a name="debugging-with-source-maps"></a>Debuggen mit Karten  
 
-Beim Debuggen von Code und aktivierten Quellkarten werden Quellkarten an zwei Stellen angezeigt:  
+Beim Debuggen des Codes und Karten Source Karten source Karten an zwei Stellen:  
 
 1.  In der Konsole \(Der Link zur Quelle sollte die ursprüngliche Datei sein, nicht die generierte\)  
 1.  Beim Schrittweisen durch Code \(Die Links in der Aufrufliste sollten die ursprüngliche Quelldatei öffnen\)  
@@ -130,9 +129,9 @@ Wenn Sie den Unterbereich **Quellen** erweitern, wird nun eine neue Datei mit de
 
 [GitHubMishooUglifyJS]: https://github.com/mishoo/UglifyJS "mishoo/UglifyJS | GitHub"  
 
-[GitHubWikiSourceMapsLanguagesTools]: https://github.com/ryanseddon/source-map/wiki/Source-maps:-languages,-tools-and-other-info "Quellkarten: Sprachen, Tools und andere | GitHub wiki"  
+[GitHubWikiSourceMapsLanguagesTools]: https://github.com/ryanseddon/source-map/wiki/Source-maps:-languages,-tools-and-other-info "Quellkarten: Sprachen, Tools und andere | GitHub Wiki"  
 
-[GitHubWikiGoogleTraceurCompiler]: https://github.com/google/traceur-compiler/wiki/Getting-Started "Erste Schritte – google/traceur-compiler | GitHub wiki"  
+[GitHubWikiGoogleTraceurCompiler]: https://github.com/google/traceur-compiler/wiki/Getting-Started "Erste Schritte – google/traceur-compiler | GitHub Wiki"  
 
 [TypeScriptMain]: https://www.typescriptlang.org "TypeScript"  
 
@@ -146,6 +145,6 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[MegginKearney]: https://developers.google.com/web/resources/contributors/megginkearney  
-[PaulBakaus]: https://developers.google.com/web/resources/contributors/pbakaus  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney  
+[PaulBakaus]: https://developers.google.com/web/resources/contributors#paul-bakaus  

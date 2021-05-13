@@ -3,16 +3,16 @@ description: Erfahren Sie, wie Sie die Laufzeitleistung in Microsoft Edge DevToo
 title: Erste Schritte mit der Analyse der Laufzeitleistung
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 439d6d4331550b7fc92bfc5fef4c3fc88df38872
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: f40f23c4ac9fcc0bb0186ddb96956f691890c0c0
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439612"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564273"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,13 +27,12 @@ ms.locfileid: "11439612"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="get-started-with-analyzing-runtime-performance"></a>Erste Schritte mit der Analyse der Laufzeitleistung  
 
 > [!NOTE]
 > Um zu erfahren, wie Sie Ihre Seiten schneller laden können, navigieren Sie zu [Optimieren der Websitegeschwindigkeit][DevtoolsSpeedGetStarted].  
 
-Die Laufzeitleistung ist die Leistung Ihrer Seite, wenn sie ausgeführt wird, statt zu laden.  Im folgenden Lernprogrammartikel erfahren Sie, wie Sie die Laufzeitleistung mithilfe des Microsoft Edge DevTools-Leistungsbereichs analysieren.  Im Hinblick auf das **RAIL-Modell** sind die in diesem Lernprogramm gelernten Kenntnisse nützlich, um die Reaktions-, Animations- und Leerlaufphasen Ihrer Seite zu analysieren.  
+Die Laufzeitleistung ist die Leistung Ihrer Seite, wenn sie ausgeführt wird, statt zu laden.  Im folgenden Lernprogrammartikel erfahren Sie, wie Sie Microsoft Edge DevTools Performance Panel verwenden, um die Laufzeitleistung zu analysieren.  Im Hinblick auf das **RAIL-Modell** sind die in diesem Lernprogramm gelernten Kenntnisse nützlich, um die Reaktions-, Animations- und Leerlaufphasen Ihrer Seite zu analysieren.  
 
 <!--todo: add rail link when section is ready -->  
 
@@ -41,7 +40,7 @@ Die Laufzeitleistung ist die Leistung Ihrer Seite, wenn sie ausgeführt wird, st
 
 Im folgenden Lernprogramm öffnen Sie DevTools auf **** einer Liveseite und verwenden den Bereich Leistung, um einen Leistungsengpässe auf der Seite zu finden.  
 
-1.  Öffnen Sie Microsoft Edge im **InPrivate-Modus.**  Der InPrivate-Modus stellt sicher, dass Microsoft Edge in einem sauberen Zustand ausgeführt wird.  Wenn Sie z. B. viele Erweiterungen installiert haben, können die Erweiterungen zu Rauschen in Ihren Leistungsmessungen führen.  
+1.  Öffnen Microsoft Edge im **InPrivate-Modus**.  Der InPrivate-Modus stellt sicher, Microsoft Edge in einem sauberen Zustand ausgeführt wird.  Wenn Sie z. B. viele Erweiterungen installiert haben, können die Erweiterungen zu Rauschen in Ihren Leistungsmessungen führen.  
     
     <!--TODO: replace section when updated for new Edge  -->
     
@@ -66,7 +65,7 @@ Mobile Geräte haben viel weniger CPU-Leistung als Desktops und Laptops.  Verwen
 
 1.  Wählen Sie in DevTools das **Tool Leistung** aus.  
 1.  Stellen Sie sicher, dass Sie das Kontrollkästchen neben **Screenshots auswählen.**  
-1.  Wählen **Sie Aufnahmeeinstellungen** \( ![ Aufnahmeeinstellungen ](../media/capture-settings-icon.msft.png) \).  DevTools zeigt Einstellungen im Zusammenhang mit der Erfassung von Leistungsmetriken an.  
+1.  Wählen **Sie Capture Einstellungen** \( Capture Einstellungen ![ ](../media/capture-settings-icon.msft.png) \).  DevTools zeigt Einstellungen im Zusammenhang mit der Erfassung von Leistungsmetriken an.  
 1.  Wählen **Sie für CPU**die Option **4x Verlangsamung aus.**  DevTools drosselt die CPU, sodass sie viermal langsamer ist als gewöhnlich.  
     
     :::image type="complex" source="../media/evaluate-performance-performance-capture-settings.msft.png" alt-text="CPU-Drosselung" lightbox="../media/evaluate-performance-performance-capture-settings.msft.png":::
@@ -225,9 +224,9 @@ Wählen Sie mithilfe der Workflows und Tools, die Sie gerade gelernt haben, **op
 <!--The foundation for understanding performance is the RAIL model.  The RAIL model teaches you the performance metrics that are most important to your users.  
 To learn more, navigate to [Measure Performance With The RAIL Model][RAIL].  -->  
 
-Damit Sie sich mit dem **Tool "Leistung"** bequemer machen können, ist die Übung perfekt.  Versuchen Sie, Ihre Seiten zu profilieren und die Ergebnisse zu analysieren.  Wenn Sie Fragen zu Ihren Ergebnissen **** haben, verwenden Sie das Symbol Feedback senden, wählen `Alt` + `Shift` + `I` Sie \(Windows, Linux\), wählen `Option` + `Shift` + `I` Sie \(macOS\) aus, [][TwitterEdgeDevtools]oder twittern Sie das DevTools-Team .  Fügen Sie nach Möglichkeit Screenshots oder Links zu reproduzierbaren Seiten hinzu.  
+Damit Sie sich mit dem **Tool "Leistung"** bequemer machen können, ist die Übung perfekt.  Versuchen Sie, Ihre Seiten zu profilieren und die Ergebnisse zu analysieren.  Wenn Sie Fragen zu Ihren Ergebnissen **** haben, verwenden Sie das Symbol Feedback senden, wählen `Alt` + `Shift` + `I` Sie \(Windows, Linux\), `Option` + `Shift` + `I` \(macOS\) [][TwitterEdgeDevtools]aus, oder twittern Sie das DevTools-Team .  Fügen Sie nach Möglichkeit Screenshots oder Links zu reproduzierbaren Seiten hinzu.  
 
-:::image type="complex" source="../media/evaluate-performance-feedback-icon.msft.png" alt-text="Das Symbol **Feedback** in den Microsoft Edge DevTools" lightbox="../media/evaluate-performance-feedback-icon.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-feedback-icon.msft.png" alt-text="Das Symbol **Feedback** im Microsoft Edge DevTools" lightbox="../media/evaluate-performance-feedback-icon.msft.png":::
    Das Symbol **Feedback senden** in den Microsoft Edge DevTools  
 :::image-end:::  
 
@@ -250,7 +249,7 @@ Last, there are many ways to improve runtime performance.  Dieser Artikel konzen
 
 <!-- links -->
 
-[DevtoolsCustomizePlacement]: ../customize/placement.md "Ändern der Microsoft Edge DevTools-Platzierung (Abdocken, Dock nach unten, Dock nach links)"  
+[DevtoolsCustomizePlacement]: ../customize/placement.md "Ändern Microsoft Edge DevTools-Platzierung (Abdocken, Dock nach unten, Dock nach links)"  
 [DevtoolsSpeedGetStarted]: ../speed/get-started.md "Optimieren der Websitegeschwindigkeit mit Microsoft Edge DevTools"  
 
 [TwitterEdgeDevtools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "EdgeDevTools – Post a Tweet | Twitter"  
@@ -284,4 +283,4 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

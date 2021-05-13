@@ -3,16 +3,16 @@ description: Erfahren Sie, wie Sie Microsoft Edge DevTools zum Anzeigen und Änd
 title: Erste Schritte mit dem Anzeigen und Ändern von CSS
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: b3d19d34f329fec7a3903fb37e8be3558ba4d31d
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: bc629286530e709bef0e04a671f1a0e56eee48ea
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399092"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564448"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11399092"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="get-started-with-viewing-and-changing-css"></a>Erste Schritte mit dem Anzeigen und Ändern von CSS  
 
-Führen Sie diese interaktiven Lernprogramme aus, um die Grundlagen des Anzeigens und Änderns der CSS für eine Seite mithilfe von Microsoft Edge DevTools zu erlernen.  
+Führen Sie diese interaktiven Lernprogramme aus, um die Grundlagen des Anzeigens und Änderns der CSS für eine Seite mithilfe von devTools Microsoft Edge lernen.  
 
 ## <a name="open-css-examples"></a>Öffnen von CSS-Beispielen  
 
@@ -185,7 +184,7 @@ Wenn Sie die in Ihrer CSS definierten Medienabfragen debuggen oder testen möcht
 
 <!-- links -->  
 
-[DevToolsCustomizePlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement "Ändern der Microsoft Edge DevTools-Platzierung (Abdocken, Dock nach unten, Dock nach links)"  
+[DevToolsCustomizePlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement "Ändern Microsoft Edge DevTools-Platzierung (Abdocken, Dock nach unten, Dock nach links)"  
 
 [GlitchDevToolsCssExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/css/examples/ecma.html "CSS-Beispiele – Microsoft Edge (Chromium) DevTools | Glitch"  
 
@@ -201,4 +200,4 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

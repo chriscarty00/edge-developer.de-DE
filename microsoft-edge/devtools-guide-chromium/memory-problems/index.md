@@ -3,16 +3,16 @@ description: Erfahren Sie, wie Microsoft Edge und DevTools verwendet werden, um 
 title: Beheben von Arbeitsspeicherproblemen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: afaea8ca561bd975490d9153cda40877786a0f08
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 3b2405d23dd6ee349484c9ba66d195e3ed12144b
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397832"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565029"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11397832"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="fix-memory-problems"></a>Beheben von Arbeitsspeicherproblemen  
 
 Erfahren Sie, wie Microsoft Edge und DevTools verwendet werden, um Speicherprobleme zu finden, die sich auf die Seitenleistung auswirken, z. B. Speicherverluste, Speicherbloat und häufige Garbage Collections.  
@@ -231,7 +230,7 @@ DevTools zeigt eine Aufschlüsselung der Speicherzuweisung nach Funktion.  Die S
 
 Wenn Ihre Seite häufig angehalten wird, können Probleme mit der Garbage Collection auftreten.  
 
-Sie können entweder den Microsoft Edge Browser Task Manager oder Leistungsspeicheraufzeichnungen verwenden, um häufige Garbage Collection zu erkennen.  Im Microsoft Edge Browser Task Manager stellen häufig steigende und absteigende **Speicher-** oder **JavaScript-Speicherwerte** eine häufige Garbage Collection dar.  In Leistungsaufzeichnungen deuten häufige Änderungen \(aufsteigend und fallend\) an den JS-Heap- oder Knotenanzahldiagrammen auf häufige Garbage Collection hin.  
+Sie können entweder den Microsoft Edge-Task-Manager oder Leistungsspeicheraufzeichnungen verwenden, um häufige Garbage Collection zu erkennen.  Im Microsoft Edge Browser Task Manager stellen häufig steigende und absteigende **Speicher-** oder **JavaScript-Speicherwerte** eine häufige Garbage Collection dar.  In Leistungsaufzeichnungen deuten häufige Änderungen \(aufsteigend und fallend\) an den JS-Heap- oder Knotenanzahldiagrammen auf häufige Garbage Collection hin.  
 
 Nachdem Sie das Problem erkannt haben, **** können Sie eine Allocation-Instrumentierung für die Zeitachsenaufzeichnung verwenden, um herauszufinden, wo Speicher zugewiesen wird und welche Funktionen die Zuweisungen verursachen.  
 
@@ -263,4 +262,4 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

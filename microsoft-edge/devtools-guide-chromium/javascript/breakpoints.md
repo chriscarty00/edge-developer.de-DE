@@ -3,16 +3,16 @@ description: Erfahren Sie mehr über alle Möglichkeiten, wie Sie Ihren Code in 
 title: So unterbrechen Sie Ihren Code mit Haltepunkten in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: dd865f346046cb6706e71fdb3cc869950b2b4352
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: fda536deb7177b933013120fc11b0896acfbbe5c
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519359"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564175"
 ---
 <!-- Copyright Kayce Basques
 
@@ -27,7 +27,6 @@ ms.locfileid: "11519359"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="how-to-pause-your-code-with-breakpoints-in-microsoft-edge-devtools"></a>So unterbrechen Sie Ihren Code mit Haltepunkten in Microsoft Edge DevTools  
 
 Verwenden Sie Haltepunkte, um Ihren JavaScript-Code anzuhalten.  In diesem Artikel werden die in DevTools verfügbaren Haltepunkttypen sowie die Verwendung und das Festlegen der einzelnen Typen erläutert.
@@ -246,4 +245,4 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

@@ -1,18 +1,18 @@
 ---
 description: Verwenden Sie das Tool Probleme, um Probleme mit Ihrer Website zu finden und zu beheben.
-title: Suchen und Beheben von Problemen mit dem Microsoft Edge DevTools-Tool
+title: Suchen und Beheben von Problemen mit dem tool Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: e16bd926ea5bae35ad82f54ac5d1ae2028e3c59d
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 64954d632416f7d1353269d04c1550ca7a0652b7
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398974"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564182"
 ---
 <!-- Copyright Sam Dutton 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11398974"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
+# <a name="find-and-fix-problems-with-the-microsoft-edge-devtools-issues-tool"></a>Suchen und Beheben von Problemen mit dem tool Microsoft Edge DevTools  
 
-# <a name="find-and-fix-problems-with-the-microsoft-edge-devtools-issues-tool"></a>Suchen und Beheben von Problemen mit dem Microsoft Edge DevTools-Tool  
-
-Das **Tool Probleme** in Microsoft Edge DevTools reduziert die Benachrichtigungsermüdung und Unübersichtlichkeit der **Konsole.**  Verwenden Sie es, um Lösungen für probleme zu finden, die vom Browser erkannt werden, z. B. Cookieprobleme und gemischte Inhalte.  
+Das **Tool Probleme** in Microsoft Edge DevTools reduziert die Benachrichtigungsmüdigkeit und Unübersichtlichkeit der **Konsole.**  Verwenden Sie es, um Lösungen für probleme zu finden, die vom Browser erkannt werden, z. B. Cookieprobleme und gemischte Inhalte.  
 
 > [!NOTE]
 > In Microsoft Edge 84 unterstützt das **Problemtool** drei Arten von Problemen:  
@@ -38,7 +37,7 @@ Das **Tool Probleme** in Microsoft Edge DevTools reduziert die Benachrichtigungs
 > *   [Gemischte Inhalte][MDNMixedContent]  
 > *   [COEP-Probleme][W3CCOEPSpec]
 > 
-> Das Microsoft Edge DevTools-Team plant, weitere Problemtypen in zukünftigen Versionen von Microsoft Edge zu unterstützen.  
+> Das Microsoft Edge DevTools-Team plant, weitere Problemtypen in zukünftigen Versionen von Microsoft Edge.  
 
 ## <a name="open-the-issues-tool-in-the-devtools-drawer"></a>Öffnen Sie das Tool Probleme in der DevTools-Schublade.  
 
@@ -116,7 +115,7 @@ Das **Tool Probleme** in der DevTools-Drawer stellt Warnungen strukturiert, aggr
 
 <!-- links -->  
 
-[DevtoolsOpen]: ../open/index.md "Öffnen Sie Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsOpen]: ../open/index.md "Öffnen Microsoft Edge DevTools | Microsoft Docs"  
 
 [GlitchSamesiteSandbox]: https://samesite-sandbox.glitch.me "SameSite-Cookietests | Glitch"  
 
@@ -134,5 +133,5 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[SamDutton]: https://developers.google.com/web/resources/contributors/samdutton  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[SamDutton]: https://developers.google.com/web/resources/contributors#sam-dutton  

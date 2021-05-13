@@ -3,16 +3,16 @@ description: Debuggen von Hintergrund-Abruf, Hintergrundsynchronisierung, Benach
 title: Debuggen von Hintergrunddiensten mit Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 15023098c547d31bf46bd387f849b365c13b38f6
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 4f5f52bcde976cea8432e3160a792438e5603e21
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439528"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564196"
 ---
 <!-- Copyright Kayce Basques
 
@@ -27,10 +27,9 @@ ms.locfileid: "11439528"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="debug-background-services-with-microsoft-edge-devtools"></a>Debuggen von Hintergrunddiensten mit Microsoft Edge DevTools  
 
-Der **Abschnitt Hintergrunddienste** von Microsoft Edge DevTools ist eine Sammlung von Tools für die JavaScript-APIs, mit denen Ihre Website Updates senden und empfangen kann, auch wenn die Website für einen Benutzer nicht geöffnet ist.  
+Der **Abschnitt Hintergrunddienste** von Microsoft Edge DevTools ist eine Sammlung von Tools für die JavaScript-APIs, mit denen Ihre Website Updates senden und empfangen kann, auch wenn ein Benutzer Ihre Website nicht geöffnet hat.  
 Ein Hintergrunddienst ähnelt einem [Hintergrundprozess][WikiBackgroundProcess].  
 Microsoft Edge DevTools betrachtet jede der folgenden APIs als Hintergrunddienst:  
 
@@ -159,7 +158,7 @@ Um einem Benutzer eine Pushbenachrichtigung **** anzeigen zu können, muss ein D
 <!--[BackgroundFetchAPI]: ../../../microsoft-edge/devtools-guide-chromium/whats-new/2018/12/background-fetch.md "Background Fetch API"  -->  
 <!--[BackgroundSyncAPI]: ../../../microsoft-edge/devtools-guide-chromium/whats-new/2015/12/background-sync.md  "Background Sync API"  -->
 
-[OpenDevTools]: ../open/index.md "Öffnen Sie Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
+[OpenDevTools]: ../open/index.md "Öffnen Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 
 [MDNNotifications]: https://developer.mozilla.org/docs/Web/API/Notifications_API "Benachrichtigungs-API-| MDN"  
 [MDNPush]: https://developer.mozilla.org/docs/Web/API/Push_API "Push-API-| MDN"  
@@ -175,4 +174,4 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

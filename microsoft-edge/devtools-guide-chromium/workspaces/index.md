@@ -3,16 +3,16 @@ description: Erfahren Sie, wie Sie In DevTools vorgenommene Änderungen auf dem 
 title: Bearbeiten von Dateien mit Arbeitsbereichen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: f00e2e42f73f7d03c858deaf020db683391ff1f2
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 640bb80e01f776c763af053cf8354ce90cf52e93
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519422"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564665"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11519422"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="edit-files-with-workspaces"></a>Bearbeiten von Dateien mit Arbeitsbereichen  
 
 Dieses Lernprogramm bietet praktische Übungen zum Einrichten und Verwenden eines Arbeitsbereichs.  Nachdem Sie einem Arbeitsbereich Dateien hinzugefügt haben, werden die Änderungen, die Sie in Ihrem Quellcode in DevTools vornehmen, auf Ihrem lokalen Computer gespeichert und nach dem Aktualisieren der Webseite beibehalten.  
@@ -303,4 +302,4 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

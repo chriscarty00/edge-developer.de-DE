@@ -3,16 +3,16 @@ description: Emulieren von Farbsichtschwächen, Dock To Left im Befehlsmenü und
 title: Neues in DevTools (Microsoft Edge 83)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: c329dfba980b882b6e538447e52902e4d0cc985b
-ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
+ms.openlocfilehash: e5fa4b066e47b0779fcdf2b3e814c598e9615ccf
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "11514417"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564952"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -105,7 +105,7 @@ Chromium Problem [#1050999][CR1050999]
 
 Das **Tool Änderungen verfolgt** alle Änderungen, die Sie an CSS oder JavaScript in devTools vorgenommen haben.  Sie können das Tool **"Änderungen"** verwenden, um alle Ihre Änderungen schnell anzeigen und diese zu Ihrem Editor/Ihrer IDE zurück zu bringen.  
 
-Um das Tool **Änderungen zu öffnen,** wählen Sie `Ctrl` + `Shift` + `P` in devTools aus, um das [Befehlsmenü zu öffnen, und][DevToolsCommandMenuIndex] geben Sie `changes` ein.  Wählen Sie den Befehl **Änderungen anzeigen aus,** und führen Sie den Befehl Änderungen anzeigen aus, um das **Tool Änderungen** in der DevTools-Schublade zu öffnen.  
+Um das Tool **Änderungen zu öffnen,** wählen Sie `Ctrl` + `Shift` + `P` in devTools aus, um das [Befehlsmenü zu öffnen, und][DevtoolsCommandMenuIndex] geben Sie `changes` ein.  Wählen Sie den Befehl **Änderungen anzeigen aus,** und führen Sie den Befehl Änderungen anzeigen aus, um das **Tool Änderungen** in der DevTools-Schublade zu öffnen.  
 
 Wenn Sie eine Änderung an einer minifizierten Datei vorgenommen haben, können Sie mit dem Tool Änderungen horizontal scrollen, um den ganzen verminten Code anzeigen zu können. ****  Ab Microsoft Edge 83 können Sie nun mit den Pfeiltasten auf der Tastatur horizontal scrollen.  
 
@@ -123,7 +123,7 @@ In den folgenden Abschnitten werden zusätzliche features angekündigt, die in M
 
 ### <a name="emulate-vision-deficiencies"></a>Emulieren von Sehstörungen  
 
-Öffnen Sie [die Registerkarte Rendering,][DevtoolsEvaluatePreformanceReferenceAnalyzeRenderingTab] und verwenden Sie das neue **Feature "Visionsmangel** emulieren", um eine bessere Vorstellung davon zu erhalten, wie Personen mit unterschiedlichen Arten von Sehschwächen Ihre Website erleben.  
+Öffnen Sie [die Registerkarte Rendering,][DevtoolsEvaluatePreformanceReferenceAnalyzeRenderingTool] und verwenden Sie das neue **Feature "Visionsmangel** emulieren", um eine bessere Vorstellung davon zu erhalten, wie Personen mit unterschiedlichen Arten von Sehschwächen Ihre Website erleben.  
 
 :::image type="complex" source="../../media/2020/03/vision.msft.png" alt-text="Emulieren von verschwommenen Visionen" lightbox="../../media/2020/03/vision.msft.png":::
    Emulieren von verschwommenen Visionen  
@@ -149,7 +149,7 @@ Chromium Problem [#1003700][CR1003700]
 
 ### <a name="emulate-locales"></a>Emulieren von Locales  
 
-Emulieren von Locales durch Festlegen einer Position in **Sensors**  >  **Location**. [Öffnen Sie das **Befehlsmenü,** ][DevToolsCommandMenuIndex] und geben `Sensors` Sie ein, um auf die Registerkarte **Sensoren zu** zugreifen.  Nach dem Ausführen dieser Aktionen ändert DevTools das aktuelle Standard-Locale, was sich auf den folgenden Code ausdrückt.  
+Emulieren von Locales durch Festlegen einer Position in **Sensors**  >  **Location**. [Öffnen Sie das **Befehlsmenü,** ][DevtoolsCommandMenuIndex] und geben `Sensors` Sie ein, um auf die Registerkarte **Sensoren zu** zugreifen.  Nach dem Ausführen dieser Aktionen ändert DevTools das aktuelle Standard-Locale, was sich auf den folgenden Code ausdrückt.  
 
 *   `Intl.*` APIs, z. B.: `new Intl.NumberFormat().resolvedOptions().locale`  
 *   Andere locale- aware JavaScript-APIs wie `String.prototype.localeCompare` und `*.prototype.toLocaleString` , z. B.: `123_456..toLocaleString()`  
@@ -185,7 +185,7 @@ Der **Abschnitt Antwortkopfzeilen** auf der Registerkarte **Kopfzeilen** enthäl
 
 Senden Sie Ihr Feedback, [indem Sie][PostTweetEdgeDevTools] das Symbol Feedback senden twittern oderchoosing! [](#getting-in-touch-with-microsoft-edge-devtools-team)  
 
-[Chromium-#1051466][CR1051466]  
+Chromium Problem [#1051466][CR1051466]  
 
 ### <a name="new-icons-for-breakpoints-conditional-breakpoints-and-logpoints"></a>Neue Symbole für Haltepunkte, bedingte Haltepunkte und Protokollpunkte  
 
@@ -197,7 +197,7 @@ Der Bereich Quellen enthält neue Symbole für Haltepunkte, bedingte Haltepunkte
 
 Die Motivation für die neuen Symbole war, die Benutzeroberfläche mit anderen GUI-Debuggingtools \(die in der Regel rote Haltepunkte rot\) konsistenter zu machen und die Unterscheidung zwischen den drei Features auf einen Blick zu vereinfachen.  
 
-[Chromium-#1041830][CR1041830]  
+Chromium Problem [#1041830][CR1041830]  
 
 ### <a name="view-network-requests-that-set-a-specific-cookie-path"></a>Anzeigen von Netzwerkanforderungen, die einen bestimmten Cookiepfad festlegen  
 
@@ -207,18 +207,18 @@ Weitere Schlüsselwörter [wie "Filter requests by properties"][DevtoolsNetworkR
 
 ### <a name="dock-to-left-from-the-command-menu"></a>Vom Befehlsmenü nach links andocken  
 
-Öffnen Sie [das Befehlsmenü,][DevToolsCommandMenuIndex] und führen Sie den `Dock to left` Befehl aus, um DevTools links vom Viewport zu verschieben.  
+Öffnen Sie [das Befehlsmenü,][DevtoolsCommandMenuIndex] und führen Sie den `Dock to left` Befehl aus, um DevTools links vom Viewport zu verschieben.  
 
 :::image type="complex" source="../../media/2020/03/dock-to-left.msft.png" alt-text="DevTools, die links vom Viewport angedockt sind" lightbox="../../media/2020/03/dock-to-left.msft.png":::
    DevTools, die links vom Viewport angedockt sind  
 :::image-end:::  
 
 > [!NOTE]
-> Das **Dock to left-Feature** steht seit Microsoft Edge 75 zur Verfügung, war aber zuvor nur über das [Hauptmenü zugänglich.][DevtoolsCustomizePlacementsChangeMainMenu]  Das neue Feature in Microsoft Edge 83 ist, dass Sie nun über das Befehlsmenü auf dieses Feature zugreifen können.  
+> Das **Link-Dock-Feature** steht seit Microsoft Edge 75 zur Verfügung, war aber zuvor nur über das [Hauptmenü zugänglich.][DevtoolsCustomizePlacementsChangeMainMenu]  Das neue Feature in Microsoft Edge 83 ist, dass Sie nun über das Befehlsmenü auf dieses Feature zugreifen können.  
 
 Senden Sie Ihr Feedback, [indem Sie][PostTweetEdgeDevTools] das Symbol Feedback senden twittern oderchoosing! [](#getting-in-touch-with-microsoft-edge-devtools-team)  
 
-[Chromium-#1011679][CR1011679]  
+Chromium Problem [#1011679][CR1011679]  
 
 ### <a name="the-audits-panel-is-now-the-lighthouse-panel"></a>Der Prüfbereich ist jetzt das Bereich "Leuchttürme".  
 
@@ -241,7 +241,7 @@ Nachdem Sie **lokale** Außerkraftsetzungen eingerichtet haben, können Sie mit 
 
 Senden Sie Ihr Feedback, [indem Sie][PostTweetEdgeDevTools] das Symbol Feedback senden twittern oderchoosing! [](#getting-in-touch-with-microsoft-edge-devtools-team)  
 
-[Chromium-#1016501][CR1016501]  
+Chromium Problem [#1016501][CR1016501]  
 
 ### <a name="updated-long-tasks-ui"></a>Benutzeroberfläche für lange Aufgaben aktualisiert  
 
@@ -255,7 +255,7 @@ Sie können lange [][DevtoolsEvaluatePerformanceReferenceViewMainThreadActivity]
 
 Senden Sie Ihr Feedback, [indem Sie][PostTweetEdgeDevTools] das Symbol Feedback senden twittern oderchoosing! [](#getting-in-touch-with-microsoft-edge-devtools-team)  
 
-[Chromium-#1054447][CR1054447]  
+Chromium Problem [#1054447][CR1054447]  
 
 ### <a name="maskable-icon-support-in-the-manifest-pane"></a>Maskierbare Symbolunterstützung im Manifestbereich  
 
@@ -270,11 +270,11 @@ Aktivieren Sie das neue Kontrollkästchen Nur den minimalen sicheren Bereich fü
 :::image-end:::  
 
 > [!NOTE]
-> Dieses Feature wurde in Microsoft Edge 81 gestartet.  Die hier in Microsoft Edge 83 behandelten Updates wurden in [What's New In DevTools (Microsoft Edge 81) nicht behandelt.][WhatsNew81]  
+> Dieses Feature wurde in Microsoft Edge 81 gestartet.  Die hier in Microsoft Edge 83 behandelten Updates wurden in [What's New In DevTools (Microsoft Edge 81)][WhatsNew81]nicht behandelt.  
 
 ## <a name="download-the-microsoft-edge-preview-channels"></a>Herunterladen der Microsoft Edge-Vorschaukanäle  
 
-Wenn Sie unter Windows oder macOS sind, sollten Sie die [Microsoft Edge-Vorschaukanäle][MicrosoftEdgePreviewChannels] als Standardentwicklungsbrowser verwenden.  Über die Vorschaukanäle erhalten Sie Zugriff auf die neuesten DevTools-Features.  
+Wenn Sie sich auf Windows oder macOS befinden, sollten Sie die Microsoft Edge Vorschaukanäle [als][MicrosoftEdgePreviewChannels] Standardentwicklungsbrowser verwenden.  Über die Vorschaukanäle erhalten Sie Zugriff auf die neuesten DevTools-Features.  
 
 ## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge DevTools-Team Kontakt aufnehmen  
 
@@ -284,19 +284,20 @@ Wenn Sie unter Windows oder macOS sind, sollten Sie die [Microsoft Edge-Vorschau
 
 [WhatsNew81]: ../01/devtools.md "Neues in DevTools (Microsoft Edge 81) | Microsoft Docs"  
 
-[DevToolsCommandMenuIndex]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Führen Sie Befehle mit dem Microsoft Edge DevTools-Befehlsmenü | Microsoft Docs"  
-[DevtoolsCssReferenceColorPicker]: /microsoft-edge/devtools-guide-chromium/css/reference#change-colors-with-the-color-picker "Ändern von Farben mit dem Farbauswahl-| Microsoft Docs"  
-[DevtoolsCssIndex]: /microsoft-edge/devtools-guide-chromium/css/index "Erste Schritte mit dem Anzeigen und Ändern von CSS-| Microsoft Docs"  
-[DevtoolsCustomizePlacementsChangeMainMenu]: /microsoft-edge/devtools-guide-chromium/customize/placement#change-placement-from-the-main-menu "Ändern der Platzierung aus dem Hauptmenü | Microsoft Docs"  
-[DevtoolsEvaluatePerformanceReferenceViewMainThreadActivity]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#view-main-thread-activity "Anzeigen der Hauptthreadaktivität | Microsoft Docs"  
-[DevtoolsEvaluatePreformanceReferenceAnalyzeRenderingTab]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "Analysieren der Renderingleistung mit der Registerkarte Rendering | Microsoft Docs"  
-[ProgressiveWebAppsChromiumIndex]: /microsoft-edge/progressive-web-apps-chromium/index "Progressive Web Apps unter Windows | Microsoft Docs"  
-[DevtoolsRemoteDebuggingWindows]: /microsoft-edge/devtools-guide-chromium/remote-debugging/windows "Erste Schritte mit remote debugging Windows 10 Devices | Microsoft Docs"  
-[DevtoolsJavascriptBreakpointsLineCode]: /microsoft-edge/devtools-guide-chromium/javascript/breakpoints#line-of-code-breakpoints "Zeilen-von-Code-Haltepunkte – So unterbrechen Sie Ihren Code mit Haltepunkten in Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsNetworkReferenceFilterRequestsProperties]: /microsoft-edge/devtools-guide-chromium/network/reference#filter-requests-by-properties "Filteranforderungen nach Eigenschaften – Netzwerkanalysereferenz | Microsoft Docs"  
-[DevtoolsCustomizeIndexSettings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "Einstellungen – Anpassen von Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCommandMenuIndex]: ../../../command-menu/index.md "Führen Sie Befehle mit dem Microsoft Edge DevTools-Befehlsmenü | Microsoft Docs"  
+[DevtoolsCssIndex]: ../../../css/index.md "Erste Schritte Mit dem Anzeigen und Ändern von CSS-| Microsoft Docs"  
+[DevtoolsCssReferenceColorPicker]: ../../../css/reference.md#change-colors-with-the-color-picker "Ändern von Farben mit dem Farbauswahl-| Microsoft Docs"  
+[DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "Einstellungen – Anpassen Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizePlacementsChangeMainMenu]: ../../../customize/placement.md#change-placement-from-the-main-menu "Ändern der Platzierung aus dem Hauptmenü | Microsoft Docs"  
+[DevtoolsEvaluatePreformanceReferenceAnalyzeRenderingTool]: ../../../evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tool "Analysieren der Renderingleistung mit dem Renderingtool | Microsoft Docs"  
+[DevtoolsEvaluatePerformanceReferenceViewMainThreadActivity]: ../../../evaluate-performance/reference.md#view-main-thread-activity "Anzeigen der Hauptthreadaktivität | Microsoft Docs"  
+[DevtoolsJavascriptBreakpointsLineCode]: ../../../javascript/breakpoints.md#line-of-code-breakpoints "Zeilen-von-Code-Haltepunkte – So unterbrechen Sie Ihren Code mit Haltepunkten in Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsNetworkReferenceFilterRequestsProperties]: ../../../network/reference.md#filter-requests-by-properties "Filteranforderungen nach Eigenschaften – Netzwerkanalysereferenz | Microsoft Docs"  
+[DevtoolsRemoteDebuggingWindows]: ../../../remote-debugging/windows.md "Erste Schritte remote debugging Windows 10 Devices | Microsoft Docs"  
 
-[WindowsUwpDebugTestPerfDevicePortal]: /windows/uwp/debug-test-perf/device-portal "Übersicht über das Windows-Geräteportal"  
+[ProgressiveWebAppsChromiumIndex]: ../../../../progressive-web-apps-chromium/index.md "Progressive Web-Apps unter Windows | Microsoft Docs"  
+
+[WindowsUwpDebugTestPerfDevicePortal]: /windows/uwp/debug-test-perf/device-portal "Windows Übersicht über das Geräteportal"  
 
 [RemoteTools]: https://www.microsoft.com/store/apps/9P6CMFV44ZLT "Remotetools für Microsoft Edge (Beta)"  
 [MicrosoftStore]: https://www.microsoft.com/store/apps/windows "Microsoft Store"  
@@ -305,17 +306,18 @@ Wenn Sie unter Windows oder macOS sind, sollten Sie die [Microsoft Edge-Vorschau
 
 [WindowsBlogStableRelease]: https://blogs.windows.com/msedgedev/2020/03/20 "Update für Stable-Kanalversionen für Microsoft Edge"  
 
-[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback] "Neues Problem – MicrosoftDocs/Edge-Entwickler – GitHub"  
+[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[Devtools%20Docs%20Feedback] "Neues Problem – MicrosoftDocs/Edge-Entwickler – GitHub"  
 
-[MicrosoftVisualstudio]: https://visualstudio.microsoft.com "Visual Studio"  
+[MicrosoftVisualstudioMain]: https://visualstudio.microsoft.com "Visual Studio"  
 
-[VisualstudioCode]: https://code.visualstudio.com "Visual Studio Code"  
+[VisualstudioCodeMain]: https://code.visualstudio.com "Visual Studio Code"  
 
 [PostTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | Veröffentlichen eines Tweets"  
 [EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools Twitter-Konto"  
-[TheWebWeWant]: https://webwewant.fyi "The Web We Want"  
+[TheWebWeWantMain]: https://webwewant.fyi "The Web We Want"  
 
 [ColorBlindnessTypes]: http://www.colourblindawareness.org/colour-blindness/types-of-colour-blindness "Arten von Farbblindheit"  
+<!-- this link must be http, not https -->  
 
 [MDNAcceptLanguage]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Accept-Language "Accept-Language | MDN"  
 [MDNCookiePath]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie#Directives "Set-Cookie-| MDN"  
@@ -331,7 +333,7 @@ Wenn Sie unter Windows oder macOS sind, sollten Sie die [Microsoft Edge-Vorschau
 [CR1054447]: https://crbug.com/1054447 "Problem 1054447: Aktualisieren von Leistungsmetriken in der DevTools-Zeitachse"  
 [CR1051822]: https://crbug.com/1051822 "Problem 1051822: DevTools: Hinzufügen einer Benutzeroberfläche zum Emulieren des Locale"
 [CR1041830]: https://crbug.com/1041830 "Problem 1041830: Verbessern von Farben für Haltepunkte"
-[CR1050855]: https://crbug.com/1050855 "Problem 1050855: Einstellungsansicht ist schwer zu erkennen"
+[CR1050855]: https://crbug.com/1050855 "Problem 1050855: Einstellungen ist schwer zu erkennen"
 [CR1056348]: https://crbug.com/1056348 "Problem 1056348: Aktualisierung der Infoleistenkomponente"
 
 [COOP]: https://docs.google.com/document/d/1zDlfvfTJ_9e8Jdc8ehuV4zMEu9ySMCiTGMS9y0GU92k/edit#bookmark=id.tu4hyy6v12wn "COOP und COEP erläutert – Cross-Origin Opener Policy"  
@@ -349,4 +351,4 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

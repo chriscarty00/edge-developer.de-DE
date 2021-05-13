@@ -1,18 +1,18 @@
 ---
-description: Erfahren Sie, wie Sie Netzwerkprobleme im Netzwerkbereich von Microsoft Edge DevTools erkennen.
+description: Erfahren Sie, wie Sie Netzwerkprobleme im Netzwerkbereich von devTools Microsoft Edge erkennen.
 title: Leitfaden zu Netzwerkproblemen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 9b92ca7b759fab80d7d829b31f605ccb8062a816
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: c99f43872abe04800880c63ee4126bfcdd633edb
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439619"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564980"
 ---
 <!-- Copyright Kayce Basques and Jonathan Garbee
 
@@ -27,10 +27,9 @@ ms.locfileid: "11439619"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="network-issues-guide"></a>Leitfaden zu Netzwerkproblemen  
 
-In diesem Handbuch erfahren Sie, wie Sie Netzwerkprobleme oder Optimierungsmöglichkeiten im Netzwerkbereich von Microsoft Edge DevTools erkennen.  
+In diesem Handbuch erfahren Sie, wie Sie Netzwerkprobleme oder Optimierungsmöglichkeiten im Netzwerkbereich von devTools Microsoft Edge erkennen.  
 
 Um die Grundlagen des Netzwerktools **zu** erlernen, navigieren Sie zu [Erste Schritte][NetworkPerformance].  
 
@@ -75,7 +74,7 @@ In der folgenden Abbildung gibt die lange grüne Leiste im **Wasserfall** an, da
     
 **Fixes**  
 
-*   Wenn die Verbindung langsam ist, sollten Sie Ihre Inhalte auf einem CDN hosten oder Hostinganbieter ändern.  
+*   Wenn die Verbindung langsam ist, erwägen Sie, Ihre Inhalte auf einem CDN zu hosten oder Hostinganbieter zu ändern.  
 *   Wenn der Server langsam ist, sollten Sie datenbankabfragen optimieren, einen Cache implementieren oder Ihre Serverkonfiguration ändern.  
     
 ## <a name="slow-content-download"></a>Langsamer Inhaltsdownload  
@@ -97,7 +96,7 @@ In der folgenden Abbildung bedeutet die lange, blaue Leiste im **Wasserfall** ne
     
 **Fixes**  
 
-*   Erwägen Sie, Ihre Inhalte auf einem CDN zu hosten oder Hostinganbieter zu ändern.  
+*   Erwägen Sie, Ihre Inhalte auf einem CDN oder sich ändernden Hostinganbietern zu hosten.  
 *   Senden Sie weniger Bytes, indem Sie Ihre Anforderungen optimieren.  
     
 <!--   ## Contribute knowledge  
@@ -114,7 +113,7 @@ Do you have a network issue that should be added to this guide?
 
 <!-- links -->  
 
-[NetworkPerformance]: ./index.md "Überprüfen der Netzwerkaktivitäten in Microsoft Edge DevTools | Microsoft Docs"  
+[NetworkPerformance]: ./index.md "Überprüfen der Netzwerkaktivität in Microsoft Edge DevTools | Microsoft Docs"  
 
 [MicrosoftEdgeTweet]: https://twitter.com/intent/tweet?text=@EdgeDevTools%20[Network%20Issues%20Guide%20Suggestion]  
 
@@ -130,5 +129,5 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[JonathanGarbee]: https://developers.google.com/web/resources/contributors/jonathangarbee
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[JonathanGarbee]: https://developers.google.com/web/resources/contributors#jonathan-garbee

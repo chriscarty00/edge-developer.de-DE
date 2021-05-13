@@ -3,16 +3,16 @@ description: Erfahren Sie, wie Sie Microsoft Edge DevTools verwenden, um Möglic
 title: Optimieren der Websitegeschwindigkeit mit Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: e3ddadcf37303a476f3a656696b00f121f079b69
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 304cf9e36260b8637af38ed0dfe1ba91f3a56504
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519611"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564882"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11519611"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="optimize-website-speed-with-microsoft-edge-devtools"></a>Optimieren der Websitegeschwindigkeit mit Microsoft Edge DevTools  
 
 ## <a name="goal-of-tutorial"></a>Ziel des Lernprogramms  
@@ -71,20 +70,20 @@ Zunächst müssen Sie die Website so einrichten, dass Sie später Änderungen da
        Das Menü, das nach der Auswahl von **tony angezeigt wird**  
     :::image-end:::  
     
-1.  Wählen Sie **#A0 aus.**  Der Name des Projekts wird von **tony** in einen zufällig generierten Namen geändert.  Sie verfügen nun über eine eigene bearbeitbare Kopie des Codes.  Später können Sie Änderungen an diesem Code vornehmen.  
+1.  Wählen **Sie #A0 Project**aus.  Der Name des Projekts wird von **tony** in einen zufällig generierten Namen geändert.  Sie verfügen nun über eine eigene bearbeitbare Kopie des Codes.  Später können Sie Änderungen an diesem Code vornehmen.  
 1.  Wählen **Sie Anzeigen** aus, und wählen Sie In einem neuen Fenster **aus.**  Die Demo wird auf einer neuen Registerkarte geöffnet.  Diese Registerkarte wird als Demoregisterkarte **bezeichnet.**  Es kann eine Weile dauern, bis die Website geladen ist.  
     
     :::image type="complex" source="../media/speed-glitch-tony-show-live.msft.png" alt-text="Die Registerkarte Demo" lightbox="../media/speed-glitch-tony-show-live.msft.png":::
        Die Registerkarte Demo  
     :::image-end:::  
     
-1.  Wählen `Control` + `Shift` + `J` Sie \(Windows, Linux\) oder `Command` + `Option` + `J` \(macOS\) aus.  Microsoft Edge DevTools wird neben der Demo geöffnet.  
+1.  Wählen `Control` + `Shift` + `J` Sie \(Windows, Linux\) oder `Command` + `Option` + `J` \(macOS\).  Microsoft Edge DevTools wird neben der Demo geöffnet.  
     
     :::image type="complex" source="../media/speed-glitch-tony-show-live-console.msft.png" alt-text="DevTools und die Demo" lightbox="../media/speed-glitch-tony-show-live-console.msft.png":::
        DevTools und die Demo  
     :::image-end:::  
     
-Für die restlichen Screenshots in diesem Lernprogramm wird DevTools in einem separaten Fenster angezeigt.  Wählen `Control` + `Shift` + `P` Sie \(Windows, Linux\) oder `Command` + `Shift` + `P` \(macOS\) aus, `Undock` **** um das Befehlsmenü zu öffnen, und geben Sie ein, und wählen Sie dann Abdocken in ein separates Fenster aus.  
+Für die restlichen Screenshots in diesem Lernprogramm wird DevTools in einem separaten Fenster angezeigt.  Wählen `Control` + `Shift` + `P` Sie \(Windows, Linux\) oder `Command` + `Shift` + `P` \(macOS\) aus, `Undock` **** um das Befehlsmenü zu öffnen, und geben Sie ein, und wählen Sie dann Abdocken in separates Fenster aus.  
 
 :::image type="complex" source="../media/speed-console.msft.png" alt-text="Nicht gesockte DevTools" lightbox="../media/speed-console.msft.png":::
    Nicht gesockte DevTools  
@@ -110,7 +109,7 @@ Die Basislinie ist eine Aufzeichnung der Leistung der Website, bevor Sie Leistun
     *   **Gerät**.  Auf **Mobile festgelegt** ändert die Zeichenfolge des Benutzer-Agents und simuliert einen mobilen Viewport.  Wenn Sie **auf Desktop** festlegen, werden die Mobile-Änderungen **einfach** deaktiviert.  
     *   **Überwachungen**.  Deaktivieren Sie eine Kategorie, um zu verhindern, dass diese Überwachungen vom Überwachungsbericht ausgeführt werden, und schließen Sie diese Überwachungen aus Ihrem Bericht aus. ****  Lassen Sie die anderen Kategorien aktiviert, wenn Sie die typen von Empfehlungen anzeigen möchten, die bereitgestellt werden.  Deaktivieren Sie Kategorien, um den Überwachungsprozess geringfügig zu beschleunigen.  
     *   **Einschränkung**.  Auf **Simulierte langsame 4G festgelegt, simuliert die 4-fache CPU-Verlangsamung** die typischen Bedingungen des Browsens auf einem mobilen Gerät.  Er wird als "simuliert" bezeichnet, da der Überwachungsprozess während des Überwachungsprozesses nicht tatsächlich gedrosselt wird.  Stattdessen wird lediglich extrapoliert, wie lange die Seite unter mobilen Bedingungen geladen werden muss.  Die **Einstellung Applied...** hingegen drosselt ihre CPU und Ihr Netzwerk, was zu einem längeren Überwachungsprozess beit.  
-    *   **Speicher löschen**.  Aktivieren Sie das Kontrollkästchen, um den speicher, der der Seite zugeordnet ist, vor jeder Überwachung zu löschen.  Lassen Sie diese Einstellung bei, wenn Sie überwachen möchten, wie Besucher Ihre Website beim ersten Mal erleben.  Deaktivieren Sie diese Einstellung, wenn Sie die Wiederholungsbesuchserfahrung wünschen.  
+    *   **Löschen Storage**.  Aktivieren Sie das Kontrollkästchen, um den speicher, der der Seite zugeordnet ist, vor jeder Überwachung zu löschen.  Lassen Sie diese Einstellung bei, wenn Sie überwachen möchten, wie Besucher Ihre Website beim ersten Mal erleben.  Deaktivieren Sie diese Einstellung, wenn Sie die Wiederholungsbesuchserfahrung wünschen.  
     
 1.  Wählen **Sie Überwachungen ausführen aus.**  Nach 10 bis 30 **** Sekunden zeigt der Bereich Überwachungen einen Bericht über die Leistung der Website an.  
     
@@ -120,7 +119,7 @@ Die Basislinie ist eine Aufzeichnung der Leistung der Website, bevor Sie Leistun
     
 #### <a name="handling-report-errors"></a>Behandeln von Berichtsfehlern  
 
-Wenn Sie jemals einen Fehler in Ihrem Bericht zum Überwachungsbericht erhalten, versuchen Sie, die Demoregisterkarte aus einem **InPrivate-Fenster** zu führen, ohne dass andere Registerkarten geöffnet sind.  Dadurch wird sichergestellt, dass Microsoft Edge in einem sauberen Zustand ausgeführt wird.  Insbesondere Microsoft Edge Extensions stören häufig den Überwachungsprozess.  
+Wenn Sie jemals einen Fehler in Ihrem Bericht zum Überwachungsbericht erhalten, versuchen Sie, die Demoregisterkarte aus einem **InPrivate-Fenster** zu führen, ohne dass andere Registerkarten geöffnet sind.  Dadurch wird sichergestellt, dass Microsoft Edge zustandsbereinigt ausgeführt werden.  Microsoft Edge Insbesondere Erweiterungen stören häufig den Überwachungsprozess.  
 
 <!--todo: add screen capture for error in audit -->  
 <!--
@@ -137,7 +136,7 @@ Die Nummer oben in Ihrem Bericht ist die Gesamtleistungsnote für die Website.  
    Gesamtleistungsergebnis  
 :::image-end:::  
 
-Der **Abschnitt Metriken** enthält mengenmäßige Messungen der Leistung der Website.  Jede Metrik bietet Einblick in einen anderen Aspekt der Leistung.  Beispielsweise informiert **First Contentful Paint,** wann Inhalte zum ersten Mal auf den Bildschirm gefärbt werden. Dies ist ein wichtiger Meilenstein in der Wahrnehmung der Seitenlast durch den Benutzer, während **Time To Interactive** den Punkt markiert, an dem die Seite so bereit erscheint, dass Benutzerinteraktionen ausgeführt werden können.  
+Der **Abschnitt Metriken** enthält mengenmäßige Messungen der Leistung der Website.  Jede Metrik bietet Einblick in einen anderen Aspekt der Leistung.  Beispielsweise informiert **First Contentful Paint,** wann Inhalte zum ersten Mal auf den Bildschirm gefärbt werden. Dies ist ein wichtiger Meilenstein in der Wahrnehmung der Seitenlast des Benutzers, während **Time To Interactive** den Punkt markiert, an dem die Seite bereit genug für die Verarbeitung von Benutzerinteraktionen zu sein scheint.  
 
 :::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed-highlighted.msft.png" alt-text="Abschnitt "Metriken"" lightbox="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed-highlighted.msft.png":::
    Abschnitt **"Metriken"**  
@@ -324,7 +323,7 @@ Für eine kleine App ist eine einmal angepasste Größe wie dies möglicherweise
     
 <!--[relative]: /web/fundamentals/design-and-ux/responsive/images#relative_sized_images  -->  
 
-*   Verwenden Sie ein Image-CDN, mit dem Sie die Größe eines Bilds dynamisch ändern können, wenn Sie es anfordern.  
+*   Verwenden Sie eine CDN, mit der Sie die Größe eines Bilds dynamisch ändern können, wenn Sie es anfordern.  
 *   Optimieren Sie zumindest jedes Bild.  Dies kann zu enormen Einsparungen führen.  
   Optimierung ist, wenn Sie ein Bild über ein spezielles Programm ausführen, das die Größe der Bilddatei reduziert.  Weitere Tipps finden Sie unter [Essential Image Optimization][EssentialImageOptimization].  
     
@@ -426,7 +425,7 @@ Der Hauptthread ist der Ort, an dem der Browser die meiste Arbeit zum Anzeigen e
 Das Ziel besteht in der Verwendung des Leistungsbereichs, um zu analysieren, welche Arbeit der Hauptthread während des Ladens der Seite macht, und Möglichkeiten zum Zurück- oder Entfernen unnötiger Arbeit zu finden.  
 
 1.  Wählen Sie das **Tool Leistung** aus.  
-1.  Wählen **Sie Aufnahmeeinstellungen** \( ![ Aufnahmeeinstellungen ](../media/capture-icon.msft.png) \).  
+1.  Wählen **Sie Capture Einstellungen** \( Capture Einstellungen ![ ](../media/capture-icon.msft.png) \).  
 1.  Legen **Sie Netzwerk** auf **Langsame 3G** und CPU **auf** **6x Verlangsamung.**  Mobile Geräte haben in der Regel mehr Hardwareeinschränkungen als Laptops oder Desktops. Mit diesen Einstellungen können Sie die Seitenlast so erleben, als würden Sie ein weniger leistungsfähiges Gerät verwenden.  
 1.  Wählen **Sie Aktualisieren** \( Aktualisieren ![ ](../media/reload-icon.msft.png) \).  DevTools aktualisiert die Seite und erstellt dann eine Visualisierung aller Ausgeführten, um die Seite zu laden.  Diese Visualisierung wird als Ablaufverfolgung **bezeichnet.**  
     
@@ -442,7 +441,7 @@ Die Ablaufverfolgung zeigt die Aktivität chronologisch von links nach rechts an
 
 Untersuchen Sie die Ablaufverfolgung, um Möglichkeiten für weniger JavaScript-Arbeit zu finden:  
 
-1.  Wählen Sie den **Abschnitt Timings** aus, um ihn zu erweitern.  Basierend auf der Tatsache, dass es eine Reihe von [Timings-Maßnahmen][MDNUserTimingApi] von React gibt, scheint es, als würde Tonys App den Entwicklungsmodus von React verwenden.  Der Wechsel in den Produktionsmodus von React kann zu einfachen Leistungsgewinnen führen.  
+1.  Wählen Sie den **Abschnitt Timings** aus, um ihn zu erweitern.  Basierend auf der Tatsache, dass es eine Reihe von [Timings-Measures][MDNUserTimingApi] von React gibt, scheint es, als würde Tonys App den Entwicklungsmodus von React.  Der Wechsel zum Produktionsmodus von React kann zu einigen einfachen Leistungsgewinnen führen.  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings.msft.png" alt-text="Der Abschnitt Timings" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings.msft.png":::
        Der **Abschnitt Timings**  
@@ -546,4 +545,4 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

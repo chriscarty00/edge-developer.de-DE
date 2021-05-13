@@ -1,18 +1,18 @@
 ---
-description: So verschieben Sie Microsoft Edge DevTools an den unteren oder linken Rand Ihres Viewports oder in ein separates Fenster.
-title: Ändern der Microsoft Edge DevTools-Platzierung (Abdocken, Dock nach unten, Dock nach links)
+description: So verschieben Sie Microsoft Edge DevTools an den unteren oder linken Rand Des Viewports oder in ein separates Fenster.
+title: Ändern Microsoft Edge DevTools-Platzierung (Abdocken, Dock nach unten, Dock nach links)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: c4aca068c159f03b60bbf6d7643bb334a5b5a7f2
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 3c6dbf3e4a72b793997fcbe0970c88e4bee07caf
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519156"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564364"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,8 +27,7 @@ ms.locfileid: "11519156"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
-# <a name="change-microsoft-edge-devtools-placement-undock-dock-to-bottom-dock-to-left"></a>Ändern der Microsoft Edge DevTools-Platzierung (Abdocken, Dock nach unten, Dock nach links)  
+# <a name="change-microsoft-edge-devtools-placement-undock-dock-to-bottom-dock-to-left"></a>Ändern Microsoft Edge DevTools-Platzierung (Abdocken, Dock nach unten, Dock nach links)  
 
 DevTools wird standardmäßig rechts neben dem Viewport (Fenster) angedockt.  Sie können DevTools auch am unteren oder linken Rand des Fensters andocken oder DevTools an ein separates Fenster andocken.
 
@@ -86,7 +85,7 @@ DevTools werden möglicherweise an ein separates Fenster entfernt, das Sie auf e
     
 ## <a name="change-placement-from-the-command-menu"></a>Ändern der Platzierung im Befehlsmenü  
 
-1.  [Öffnen Sie das Befehlsmenü][DevtoolsCommandMenu], indem Sie `Shift` + `Ctrl` + `P` unter Windows/Linux oder `Command` + `Shift` + `P` unter macOS auswählen.  
+1.  [Öffnen Sie das Befehlsmenü][DevtoolsCommandMenu], indem `Shift` + `Ctrl` + `P` Sie Windows/Linux oder `Command` + `Shift` + `P` unter macOS auswählen.  
 1.  Geben Sie nach dem Zeichen ein, und wählen Sie dann `>` einen der folgenden Befehle `dock` aus:  
     
     *  **Dock to bottom**
@@ -107,7 +106,7 @@ DevTools werden möglicherweise an ein separates Fenster entfernt, das Sie auf e
 
 <!-- links -->  
 
-[DevtoolsCommandMenu]: ../command-menu/index.md "Ausführen von Befehlen mit dem Microsoft Edge DevTools Command-Menü | Microsoft Docs"  
+[DevtoolsCommandMenu]: ../command-menu/index.md "Ausführen von Befehlen mit Microsoft Edge DevTools Command | Microsoft Docs"  
 
 > [!NOTE]
 > Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
@@ -119,4 +118,4 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

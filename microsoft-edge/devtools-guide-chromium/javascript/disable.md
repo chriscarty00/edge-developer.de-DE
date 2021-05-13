@@ -3,16 +3,16 @@ description: Öffnen Sie das Befehlsmenü, und führen Sie den Befehl "JavaScrip
 title: Deaktivieren von JavaScript mit Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 665181b14e6fa5e86950a27822d52395f49f5b92
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: c9b5605aff5680ff0f44386c4a69e4c9f7c08cc8
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519352"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564161"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,14 +27,13 @@ ms.locfileid: "11519352"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="disable-javascript-with-microsoft-edge-devtools"></a>Deaktivieren von JavaScript mit Microsoft Edge DevTools  
 
 Um zu überprüfen, wie Ihre Webseite gerendert wird, wenn ein Browser keine JavaScript-Unterstützung hat, deaktivieren Sie javaScript vorübergehend.
 
 Führen Sie die folgenden Aktionen aus, um zu untersuchen, wie eine Webseite angezeigt wird und wie sie sich verhält, wenn Sie JavaScript deaktivieren.  
 
-1.  [Öffnen Sie Microsoft Edge DevTools][DevToolsOpen].  
+1.  [Öffnen Microsoft Edge DevTools][DevToolsOpen].  
 1.  Wählen `Control` + `Shift` + `P` Sie \(Windows, Linux\) oder `Command` + `Shift` + `P` \(macOS\) aus, um das **Befehlsmenü zu öffnen.**  
     
     :::image type="complex" source="../media/javascript-console-command.msft.png" alt-text="Das Befehlsmenü" lightbox="../media/javascript-console-command.msft.png":::
@@ -68,7 +67,7 @@ Führen Sie die folgenden Aktionen aus, um JavaScript erneut zu aktivieren.
 
 <!-- links -->  
 
-[DevToolsOpen]: ../open/index.md "Öffnen Sie Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsOpen]: ../open/index.md "Öffnen Microsoft Edge DevTools | Microsoft Docs"  
 
 > [!NOTE]
 > Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
@@ -80,4 +79,4 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

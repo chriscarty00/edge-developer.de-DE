@@ -3,16 +3,16 @@ description: Wavy unterstreicht Codeprobleme im Elementtool, in der Zeitachse f�
 title: Neues in DevTools (Microsoft Edge 91)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/21/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 3a2be4d309432de4421af73ca7b4d21734ad5221
-ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
+ms.openlocfilehash: 473b2537b631a77a182c04b6986051a4ce7aae03
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "11514456"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564819"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -196,17 +196,17 @@ Wenn Sie unter Windows, Linux oder macOS arbeiten, sollten Sie die [Microsoft Ed
 
 [DevtoolsWhatsNew202001DevtoolsUsingDevtoolsInOtherLanguages]: ../../2020/01/devtools.md#using-the-devtools-in-other-languages "Verwenden der DevTools in anderen Sprachen – Neues in DevTools (Microsoft Edge 81) | Microsoft Docs"  
 [DevtoolsWhatsNew202011Devtools]: ../../2020/11/devtools.md "Neues in DevTools (Microsoft Edge 88) | Microsoft Docs"  
-[DevtoolsWhatsNew202011DevtoolsCssVariableDefinitionsInStylesPane]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/11/devtools#css-variable-definitions-in-styles-pane "CSS-Variablendefinitionen im Formatvorlagenbereich – Neues in DevTools (Microsoft Edge 88) | Microsoft Docs"  
+[DevtoolsWhatsNew202011DevtoolsCssVariableDefinitionsInStylesPane]: ../../../whats-new/2020/11/devtools.md#css-variable-definitions-in-styles-pane "CSS-Variablendefinitionen im Formatvorlagenbereich – Neues in DevTools (Microsoft Edge 88) | Microsoft Docs"  
 [DevtoolsWhatsNew202102Devtools]: ../02/devtools.md "Neues in DevTools (Microsoft Edge 90) | Microsoft Docs"  
 [DevtoolsWhatsNew202102DevtoolsGroupToolsTogetherInFocusMode]: ../02/devtools.md#group-tools-together-in-focus-mode "Gruppentools im Fokusmodus – Neues in DevTools (Microsoft Edge 90) | Microsoft Docs"  
 
-[DevtoolsCommandMenuIndexOpenCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index#open-the-command-menu "Öffnen Sie das Befehlsmenü - Befehle ausführen mit Microsoft Edge DevTools Command-Menü | Microsoft Docs"  
-[DevtoolsCustomizeLocalization]: /microsoft-edge/devtools-guide-chromium/customize/localization "Ändern der DevTools-Spracheinstellungen | Microsoft Docs"  
-[DevtoolsIssuesIndex]: /microsoft-edge/devtools-guide-chromium/issues/index "Erkennen und Beheben von Problemen mit dem Microsoft Edge DevTools-Tool „Probleme“ | Microsoft Docs"  
-[DevtoolsServiceWorkerIndex]: /microsoft-edge/devtools-guide-chromium/service-workers/index "Service Worker-Verbesserungen | Microsoft Docs"  
+[DevtoolsCommandMenuIndexOpenCommandMenu]: ../../../command-menu/index.md#open-the-command-menu "Öffnen Sie das Befehlsmenü - Befehle ausführen mit Microsoft Edge DevTools Command-Menü | Microsoft Docs"  
+[DevtoolsCustomizeLocalization]: ../../../customize/localization.md "Ändern der DevTools-Spracheinstellungen | Microsoft Docs"  
+[DevtoolsIssuesIndex]: ../../../issues/index.md "Erkennen und Beheben von Problemen mit dem Microsoft Edge DevTools-Tool „Probleme“ | Microsoft Docs"  
+[DevtoolsServiceWorkerIndex]: ../../../service-workers/index.md "Service Worker-Verbesserungen | Microsoft Docs"  
 
-[ProgressiveWebAppsServiceworkerServiceWorkerLifecycle]: /microsoft-edge/progressive-web-apps-chromium/serviceworker#the-service-worker-lifecycle "Service Worker-Lebenszyklus – Verwenden von Service Workers zum Verwalten von Netzwerkanforderungen und Pushbenachrichtigungen | Microsoft Docs"  
-[ProgressiveWebAppsWebappmanifests]: /microsoft-edge/progressive-web-apps-chromium/webappmanifests "Verwenden Sie das Web-App-Manifest, um Ihre Progressive Web App in das Betriebssystem zu | Microsoft Docs"  
+[ProgressiveWebAppsServiceworkerServiceWorkerLifecycle]: ../../../../progressive-web-apps-chromium/serviceworker.md#the-service-worker-lifecycle "Service Worker-Lebenszyklus – Verwenden von Service Workers zum Verwalten von Netzwerkanforderungen und Pushbenachrichtigungen | Microsoft Docs"  
+[ProgressiveWebAppsWebappmanifests]: ../../../../progressive-web-apps-chromium/webappmanifests.md "Verwenden Sie das Web-App-Manifest, um Ihre Progressive Web App in das Betriebssystem zu | Microsoft Docs"  
 
 [GithubMicrosoftVscodeEdgeDevtools]: https://github.com/microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"  
 <!--[GithubMicrosoftVscodeEdgeDevtoolsPullxxx]: https://github.com/microsoft/vscode-edge-devtools/pull/xxx "Pull xxx: Lorem al Ipsum | GitHub"  -->  
@@ -219,10 +219,10 @@ Wenn Sie unter Windows, Linux oder macOS arbeiten, sollten Sie die [Microsoft Ed
 [VisualstudioMarketplaceMsjsdiagDebuggerForEdge]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge "Debugger für Microsoft Edge | Visual Studio Marketplace"  
 
 [CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chromium-Fehler"  
-[CR1066604]: https://crbug.com/1066604 "Problem 1066604: DevTools: Weitere Informationen zur Installation und Aktivierung von Ereignissen durch ServiceWorker | Chromium-Fehler"  
-[CR1136655]: https://crbug.com/1136655 "Problem 1136655: Devtools: Lokalisierung V2 | Chromium-Fehler"  
-[CR1185945]: https://crbug.com/1185945 "Problem 1185945: Manifestwarnung impliziert, dass alle Symbole quadratisch sein | Chromium-Fehler"  
-[CR1187735]: https://crbug.com/1187735 "Problem 1187735: Barrierefreiheit: MAS2.1.1: Tastatur: Die Var(..)-Funktion kann nicht mithilfe von Tastatureingaben | Chromium-Fehler"  
+[CR1066604]: https://crbug.com/1066604 "Problem 1066604: DevTools: Weitere Informationen zur Installation und Aktivierung von Ereignissen durch ServiceWorker | Chromium Fehler"  
+[CR1136655]: https://crbug.com/1136655 "Problem 1136655: Devtools: Lokalisierung V2 | Chromium Fehler"  
+[CR1185945]: https://crbug.com/1185945 "Problem 1185945: Manifestwarnung impliziert, dass alle Symbole quadratisch sein | Chromium Fehler"  
+[CR1187735]: https://crbug.com/1187735 "Problem 1187735: Barrierefreiheit: MAS2.1.1: Tastatur: Die Var(..)-Funktion kann nicht mithilfe von Tastatureingaben | Chromium Fehler"  
 
 [MdnDocsWebCssUsingCssCustomProperties]: https://developer.mozilla.org/docs/Web/CSS/Using_CSS_custom_properties "Verwenden von benutzerdefinierten CSS-Eigenschaften (Variablen) | MDN"  
 
@@ -238,5 +238,5 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[JecelynYeen]: https://developers.google.com/web/resources/contributors/jecelynyeen
+[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen
 -->

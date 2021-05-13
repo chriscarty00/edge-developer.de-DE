@@ -3,16 +3,16 @@ description: Neue CSS Grid-Debuggingtools, Webauthn-Tool, verschiebbare Tools un
 title: Neues in DevTools (Microsoft Edge 87)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 0f4e0aaeba55f584697d1817f7ea54044dfdd380
-ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
+ms.openlocfilehash: c7859631327fc031909cd25736fddb8cff3cff45
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "11514354"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564896"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -38,9 +38,10 @@ Um Ihre Übersetzungsanforderungen zu erfüllen, konzentriert sich Microsoft Edg
 *   Die Zeichenfolgen im **Tool "Leuchttürme".**  
 *   Der Begriff `service worker` .  
 *   Einige der **Netzwerktoolfilter** wie `URL` , , und `XHR` `JS` `CSS` .  
-*   Die [$0][DevtoolsGuideChromiumConsoleUtilitiesRecentlySelectedElementJavascriptObject] Console Utilities-API.  
+*   Die [$0][DevtoolsConsoleUtilitiesRecentlyChosenElementJavascriptObject] Console Utilities-API.  
     
-[$0][DevtoolsGuideChromiumConsoleUtilitiesRecentlySelectedElementJavascriptObject] ist jetzt in der [Konsole](/microsoft-edge/devtools-guide-chromium/console/index.md) für Benutzer in lokalisierten Versionen der DevTools verfügbar.   Vielen Dank an die globale Entwickler-Community für die Verbesserung der Lokalisierung der Microsoft Edge DevTools.  Senden Sie [weiterhin Feedback zur Lokalisierungsqualität,](#getting-in-touch-with-microsoft-edge-devtools-team) um die Unterstützung für DevTools in allen Locales zu verbessern.  Navigieren Sie zum Überprüfen von Echtzeitupdates für dieses Feature im Chromium Open Source-Projekt zu Problem [#1136655][CR1136655].  
+[$0][DevtoolsConsoleUtilitiesRecentlyChosenElementJavascriptObject] ist jetzt in der [Konsole][DevtoolsConsoleIndex] für Benutzer in lokalisierten Versionen der DevTools verfügbar.   Vielen Dank an die globale Entwickler-Community für die Verbesserung der Lokalisierung der Microsoft Edge DevTools.  Senden Sie [weiterhin Feedback zur Lokalisierungsqualität,](#getting-in-touch-with-microsoft-edge-devtools-team) um die Unterstützung für DevTools in allen Locales zu verbessern.  Navigieren Sie zum Überprüfen von Echtzeitupdates für dieses Feature im Chromium Open Source-Projekt zu Problem [#1136655][CR1136655].  
+
 
 :::image type="complex" source="../../media/2020/10/bing-network-japanese.msft.png" alt-text="Netzwerktool mit nicht lokalisierten Filtern" lightbox="../../media/2020/10/bing-network-japanese.msft.png":::
    **Netzwerkbereich** mit nicht lokalisierten Filtern  
@@ -73,7 +74,7 @@ DevTools unterstützt jetzt das Verschieben von Tools zwischen dem oberen und un
    Experimentelles Feature  
 :::image-end:::  
 
-Das **Tool für die** Netzwerkkonsole hat nun die Kompatibilität mit den [Schemas Postman v2.1][PostmanSchemaJsonCollectionv210Index] und [OpenAPI v2][SwaggerSpecificationV2] verbessert.  Navigieren Sie zum Aktivieren des Experiments zu Aktivieren von [Experimentellen Features,][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] und aktivieren Sie das Kontrollkästchen neben **Netzwerkkonsole aktivieren.**  Weitere Informationen zur Netzwerkkonsole **finden**Sie unter [Enable Network Console Experimental feature][DevtoolsExperimentalFeaturesEnableNetworkConsole].  Dieses Experiment unterstützt nun die folgenden Aktionen.  
+Das **Tool für die** Netzwerkkonsole hat nun die Kompatibilität mit den [Schemas Postman v2.1][PostmanSchemaJsonCollectionv210Index] und [OpenAPI v2][SwaggerSpecificationV2] verbessert.  Navigieren Sie zum Aktivieren des Experiments zu [Aktivieren von Experimentellen Features][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] und aktivieren Sie das Kontrollkästchen neben **Netzwerkkonsole aktivieren.**  Weitere Informationen zur **** Netzwerkkonsole finden Sie unter [Feature NetzwerkkonsolenexperimentalFeaturesEnableNetworkConsole aktivieren][DevtoolsExperimentalFeaturesEnableNetworkConsole].  Dieses Experiment unterstützt nun die folgenden Aktionen.  
 
 *   Speichern und exportieren Sie Sammlungen und Umgebungen.  
 *   Bearbeiten und exportieren Sie Sätze von Umgebungsvariablen im **Netzwerkkonsolentool.**  
@@ -118,9 +119,9 @@ Die Features sind standardmäßig aktiviert.  Weitere Informationen zu den Featu
    Experimentelles Feature  
 :::image-end:::  
 
-Sie können nun die Tastenkombination für alle Aktionen in devTools anpassen.  Seit Microsoft Edge Version 84 können Sie zwischen **** Visual Studio Code und **DevTools (Standard)-Voreinstellungen** für Tastenkombinationen [wählen.][DevtoolsCustomizeShortcuts]  Ab Microsoft Edge Version 87 können Sie das **** Experiment Tastenkombinationen-Editor aktivieren, um Tastenkombinationen [weiter anzupassen.][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]  
+Sie können nun die Tastenkombination für alle Aktionen in devTools anpassen.  Seit Microsoft Edge Version 84 können Sie zwischen **** Visual Studio Code und **DevTools (Standard)-Voreinstellungen** für Tastenkombinationen [wählen.][DevtoolsCustomizeShortcuts]  Ab Microsoft Edge Version 87 können Sie das **** Experiment Tastenkombinationen-Editor aktivieren, um Tastenkombinationen [weiter anzupassen.][DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]  
 
-Navigieren Sie zum Aktivieren des Experiments zu Experimentelle Features [aktivieren,][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] und aktivieren Sie das Kontrollkästchen neben **Tastenkombinationen-Editor aktivieren.**  Weitere Informationen zum Anpassen und Bearbeiten von Tastenkombinationen finden Sie unter [Experimentelles Feature „Tastenkombinations-Editor aktivieren“][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor].  Navigieren Sie zum Überprüfen von Echtzeitupdates für dieses Feature im Chromium Open [Source-Projekt][CR174309]zu Problem #174309 .  
+Navigieren Sie zum Aktivieren des Experiments zu [Aktivieren von Experimentellen Features][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] und aktivieren Sie das Kontrollkästchen neben Tastenkombinationen-Editor **aktivieren.**  Weitere Informationen zum Anpassen und Bearbeiten von Verknüpfungen finden Sie unter Bearbeiten von Tastenkombinationen für alle Aktionen [in devTools][DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools].  Navigieren Sie zum Überprüfen von Echtzeitupdates für dieses Feature im Chromium Open [Source-Projekt][CR174309]zu Problem #174309 .  
 
 :::image type="complex" source="../../media/2020/10/custom-shortcut-pause-script.msft.png" alt-text="Benutzerdefinierte Verknüpfung zum Anhalten eines Skripts" lightbox="../../media/2020/10/custom-shortcut-pause-script.msft.png":::
    Benutzerdefinierte Verknüpfung zum Anhalten eines Skripts  
@@ -161,9 +162,9 @@ In früheren Versionen von Microsoft Edge gab es keine systemeigene WebAuthn-Deb
 *   Anpassen von Attributen von Authentatoren
 *   Überprüfen der Zustände von Authentatoren
     
-Weitere Informationen zum **WebAuthn-Feature** finden Sie unter Emulieren von Authentatoren und Debuggen von [WebAuthn in Microsoft Edge DevTools][DevtoolsWebauthnIndex].  
+Weitere Informationen zum **WebAuthn-Feature** finden Sie unter [Emulieren von Authentifizierungsautoren und Debuggen von WebAuthn in Microsoft Edge DevTools][DevtoolsWebauthnIndex].  
 
-Sie können Authentatoren emulieren und die [Webauthentifizierungs-API][GithubW3cWebauthn] mit dem neuen [WebAuthn-Tool][DevtoolsWebauthnIndex] debuggen.  Wählen Sie zum Öffnen des **WebAuthn-Tools** das Symbol **DevTools** anpassen \( \) > `...` Weitere **Tools**  >  **WebAuthn aus.**  Navigieren Sie zum Überprüfen von Echtzeitupdates für dieses Feature im Chromium Open Source-Projekt zu Problem [#1034663][CR1034663].  
+Sie können Authentisierungsgeräte emulieren und die [Webauthentifizierungs-API][GithubW3cWebauthn] mit dem neuen [WebAuthn][DevtoolsWebauthnIndex]-Tool debuggen.  Wählen Sie zum Öffnen des **WebAuthn-Tools** das Symbol **DevTools** anpassen \( \) > `...` Weitere **Tools**  >  **WebAuthn aus.**  Navigieren Sie zum Überprüfen von Echtzeitupdates für dieses Feature im Chromium Open Source-Projekt zu Problem [#1034663][CR1034663].  
 
 :::row:::
    :::column span="":::
@@ -211,7 +212,7 @@ Das **Tool "Leuchtturm"** wird jetzt mit "6.4" ausgeführt.  Eine vollständige 
 
 ### <a name="performancemark-events-in-the-timings-section"></a>performance.mark()-Ereignisse im Abschnitt Timings  
 
-Der **Abschnitt Timings einer** Aufzeichnung im Tool ["Leistung"][DevtoolsGuideChromiumEvaluatePerformanceReference] markiert nun `performance.mark()` Ereignisse.  Um dieses Feature auszuprobieren und die Leistung Ihres JavaScript-Codes zu messen, fügen Sie `performance.mark()` Dem Code Ereignisse hinzu.  Der folgende Codeausschnitt fügt z. B. Markierungen vor und nach einer Schleife hinzu, die mithilfe von Schritten von 7 von 0 auf `for` 1000 iteriert wird.  
+Der **Abschnitt Timings einer** Aufzeichnung im Tool ["Leistung"][DevtoolsEvaluatePerformanceReference] markiert nun `performance.mark()` Ereignisse.  Um dieses Feature auszuprobieren und die Leistung Ihres JavaScript-Codes zu messen, fügen Sie `performance.mark()` Dem Code Ereignisse hinzu.  Der folgende Codeausschnitt fügt z. B. Markierungen vor und nach einer Schleife hinzu, die mithilfe von Schritten von 7 von 0 auf `for` 1000 iteriert wird.  
 
 ```javascript
 performance.mark('start');
@@ -221,7 +222,7 @@ for (var i = 0; i < 1000; i+=7;){
 performance.mark('end');
 ```  
 
-Öffnen Sie dann das [Tool Leistung,][DevtoolsGuideChromiumEvaluatePerformanceReference] und navigieren Sie zum **Abschnitt Timings,** um Ihren JavaScript-Code zu aufzeichnen.  Die `performance.mark()` hinzugefügten Ereignisse werden nun in der Aufzeichnung angezeigt.  
+Öffnen Sie dann das [Tool Leistung,][DevtoolsEvaluatePerformanceReference] und navigieren Sie zum **Abschnitt Timings,** um Ihren JavaScript-Code zu aufzeichnen.  Die `performance.mark()` hinzugefügten Ereignisse werden nun in der Aufzeichnung angezeigt.  
 
 :::image type="complex" source="../../media/2020/10/perf-mark.msft.png" alt-text="Performance.mark-Ereignisse" lightbox="../../media/2020/10/perf-mark.msft.png":::
    `performance.mark` Ereignisse  
@@ -235,7 +236,7 @@ Verwenden Sie das neue `resource-type` und `url` Schlüsselwörter im **Netzwerk
    Ressourcentypfilter  
 :::image-end:::  
 
-Um speziellere Schlüsselwörter wie und zu `resource-type` `url` ermitteln, navigieren Sie zu [Filtern von Anforderungen nach Eigenschaften][DevtoolsNetworkReferenceFilterRequestsProperties].  Navigieren Sie zum Überprüfen von Echtzeitupdates für dieses Feature im Chromium Open Source-Projekt zu Probleme [#1121141][CR1121141] und [#1104188][CR1104188].  
+Navigieren Sie zu `resource-type` `url` [Filteranforderungen nach Eigenschaften][DevtoolsNetworkReferenceFilterRequestsProperties].  Navigieren Sie zum Überprüfen von Echtzeitupdates für dieses Feature im Chromium Open Source-Projekt zu Probleme [#1121141][CR1121141] und [#1104188][CR1104188].  
 
 ### <a name="frame-details-view-updates"></a>Updates der Frame-Detailansicht  
 
@@ -281,35 +282,36 @@ Wenn Sie sich auf Windows oder macOS befinden, sollten Sie die Microsoft Edge Vo
 
 <!-- links -->  
 
-[DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel]: ../05/devtools.md#deprecation-of-the-properties-pane-in-the-elements-tool "Veralteter Eigenschaftenbereich im Elementtool – Neues in DevTools (Microsoft Edge 84) | Microsoft Docs"  
+[DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsTool]: ../05/devtools.md#deprecation-of-the-properties-pane-in-the-elements-tool "Veralteter Eigenschaftenbereich im Elementtool – Neues in DevTools (Microsoft Edge 84) | Microsoft Docs"  
 [DevtoolsWhatsnew200206DevtoolsCssGridDebuggingFeatures]: ../06/devtools.md#css-grid-debugging-features "Features zum Debuggen von CSS-Rastern – Neues in DevTools (Microsoft Edge 85) | Microsoft Docs"  
 [DevtoolsWhatsnew200208DevtoolsAccessibleColorSuggestionStylesPane]: ../08/devtools.md#accessible-color-suggestion-in-the-styles-pane "Barrierefreier Farbvorschlag im Bereich Formatvorlagen – Neues in DevTools (Microsoft Edge 86) | Microsoft Docs"  
 
-[DevtoolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index "Emulieren von mobilen Geräten in Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsGuideChromiumConsoleUtilitiesRecentlySelectedElementJavascriptObject]:  https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/console/utilities#recently-selected-element-or-javascript-object "Zuletzt ausgewähltes Element oder JavaScript-Objekt – Api-Referenz für Konsolenprogramme | Microsoft Docs"  
-[DevtoolsCustomizeShortcuts]: /microsoft-edge/devtools-guide-chromium/customize/shortcuts "Anpassen von Tastenkombinationen in der Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsGuideChromiumEvaluatePerformanceReference]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference "Leistungsanalysereferenz | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode]: /microsoft-edge/devtools-guide-chromium/experimental-features#emulation-support-dual-screen-mode "Emulation: Unterstützung des dualen Bildschirmmodus – Experimentelle Features | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesEnableExperimentalApis]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-experimental-apis "Aktivieren experimenteller APIs – Experimentelle | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-keyboard-shortcut-editor "Aktivieren des Tastenkombinationen-Editors – Experimentelle | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-new-css-grid-debugging-features "Emulation: Unterstützung des dualen Bildschirmmodus – Experimentelle Features | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesEnableNetworkConsole]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-network-console "Aktivieren der Netzwerkkonsole – Experimentelle | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesEnableSourceOrderViewer]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-source-order-viewer "Aktivieren der Quellauftragsanzeige – Experimentelle | Microsoft Docs"
-[DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices]: /microsoft-edge/devtools-guide-chromium/experimental-features#testing-on-foldable-and-dual-screen-devices "Testen auf zusammenklappbaren geräten und dualen Bildschirmen – Experimentelle | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features#turn-on-experimental-features "Aktivieren von Experimentellen Features – Experimentelle Features | Microsoft Docs"  
-[DevtoolsConsoleApiTable]: /microsoft-edge/devtools-guide-chromium/console/api#table "Tabelle – Konsolen-API-| Microsoft Docs"  
-[DevtoolsCoverageIndex]: /microsoft-edge/devtools-guide-chromium/coverage/index "Suchen Sie nicht verwendeten JavaScript- und CSS-Code auf der Registerkarte Abdeckung in Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsCssGrid]:  /microsoft-edge/devtools-guide-chromium/css/grid "Überprüfen der CSS Grid-| Microsoft Docs"  
-[DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "Drawer – Anpassen Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsCustomizeIndexSettings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "Einstellungen – Anpassen von Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "Analysieren der Renderingleistung mit der Registerkarte Rendering – Leistungsanalysereferenz | Microsoft Docs"  
-[DevtoolsMediaIndex]: /microsoft-edge/devtools-guide-chromium/media/index "Anzeigen und Debuggen von Media Player-| Microsoft Docs"  
-[DevtoolsNetworkReferenceFilterRequestsProperties]: /microsoft-edge/devtools-guide-chromium/network/reference#filter-requests-by-properties  "Filtern von Anforderungen nach Eigenschaften – Netzwerkanalysereferenz | Microsoft Docs"  
-[DevtoolsWebauthnIndex]: /microsoft-edge/devtools-guide-chromium/webauthn/index "Emulieren von Authatoren und Debuggen von WebAuthn in Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsConsoleIndex]: ../../../console/index.md "Verwenden der Konsolenanwendung | Microsoft Docs"  
+[DevtoolsConsoleUtilitiesRecentlyChosenElementJavascriptObject]:  ../../../console/utilities.md#recently-chosen-element-or-javascript-object "Kürzlich ausgewähltes Element- oder JavaScript-Objekt – Apireferenz für Konsolenprogramme | Microsoft Docs"  
+[DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "Anpassen von Tastenkombinationen in der Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]: ../../../customize/shortcuts.md#edit-keyboard-shortcuts-for-any-action-in-the-devtools "Bearbeiten von Tastenkombinationen für alle Aktionen im DevTools-| Microsoft Docs"  
+[DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "Emulieren von mobilen Geräten in Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsEvaluatePerformanceReference]: ../../../evaluate-performance/reference.md "Leistungsanalysereferenz | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode]: ../../../experimental-features/index.md#emulation-support-dual-screen-mode "Emulation: Unterstützung des dualen Bildschirmmodus – Experimentelle Features | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesEnableExperimentalApis]: ../../../experimental-features.md#enable-experimental-apis "Aktivieren experimenteller APIs – Experimentelle | Microsoft Docs"  
+<!--  [DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]: ../../../experimental-features/index.md#enable-keyboard-shortcut-editor "Enable keyboard shortcut editor - Experimental features | Microsoft Docs"  -->  
+[DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures]: .. /.. /.. /experimental-features/index.md#enable-new-css-grid-debugging-features "Emulation: Support dual screen mode - Experimental features | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesEnableNetworkConsole]: .. /.. /.. /experimental-features/index.md#enable-network-console "Enable Network Console - Experimental features | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesEnableSourceOrderViewer]: .. /.. /.. /experimental-features/index.md#enable-source-order-viewer "Enable Source Order Viewer - Experimental features | Microsoft Docs&quot; [DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices]: .. /.. /.. /experimental-features/index.md#testing-on-foldable-and-dual-screen-devices &quot;Testing on foldable and dual-screen devices - Experimental features | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]: .. /.. /.. /experimental-features/index.md#turn-on-experimental-features "Aktivieren experimenteller Features – Experimentelle Features | Microsoft Docs"  
+[DevtoolsConsoleApiTable]: .. /.. /.. /console/api.md#table "table - Console API reference | Microsoft Docs"  
+[DevtoolsCoverageIndex]: .. /.. /.. /coverage/index.md "Suchen sie nicht verwendeten JavaScript- und CSS-Code mit der Registerkarte Abdeckung in Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCssGrid]: .. /.. /.. /css/grid.md "Überprüfen der CSS Grid-| Microsoft Docs"  
+[DevtoolsCustomizeIndexDrawer]: .. /.. /.. /customize/index.md#drawer "Drawer - Customize Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeIndexSettings]: .. /.. /.. /customize/index.md#settings "Einstellungen - Customize Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: .. /.. /.. /evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tab "Analysieren der Renderingleistung mit der Registerkarte Rendering – Leistungsanalysereferenz | Microsoft Docs"  
+[DevtoolsMediaIndex]: .. /.. /.. /media/index.md "Anzeigen und Debuggen von Media Player-| Microsoft Docs"  
+[DevtoolsNetworkReferenceFilterRequestsProperties]: .. /.. /.. /network/reference.md#filter-requests-by-properties "Filter requests by properties - Network Analysis reference | Microsoft Docs"  
+[DevtoolsWebauthnIndex]: .. /.. /.. /webauthn/index.md "Emulieren von Authentifizierungsautoren und Debuggen von WebAuthn in Microsoft Edge DevTools | Microsoft Docs"  
 
 [MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge-Vorschaukanäle"  
 
-[VisualStudioCode]: https://code.visualstudio.com "Visual Studio Code"  
+[VisualStudioCodeMain]: https://code.visualstudio.com "Visual Studio Code"  
 
 [VisualStudioCodeMarketplaceMsEdgedevtools]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge Tools für Visual Studio Code | Visual Studio Code"  
 
@@ -359,4 +361,4 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[JecelynYeen]: https://developers.google.com/web/resources/contributors/jecelynyeen  
+[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen  

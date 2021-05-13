@@ -3,16 +3,16 @@ description: Erste Schritte mit HTML und dem DOM
 title: 'DevTools für Anfänger: Erste Schritte mit HTML und dem DOM'
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
-ms.openlocfilehash: 6ca27b720a17928545712666e43495c4da2fb880
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: d2893021f5e19ffb714215b27edadba08c8d6f71
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397930"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564567"
 ---
 <!-- Copyright Katherine Jackson 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11397930"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="devtools-for-beginners-get-started-with-html-and-the-dom"></a>DevTools für Anfänger: Erste Schritte mit HTML und dem DOM  
 
 Dies ist das erste in einer Reihe von Lernprogrammen, die Ihnen die Grundlagen der Webentwicklung vermitteln.  Erfahren Sie mehr über eine Reihe von Webentwicklertools namens Microsoft Edge DevTools, die Ihre Produktivität erhöhen können.  
@@ -55,7 +54,7 @@ Sie haben auch eine echte Website.  Sie können die Website verwenden, um Ihren 
 Bevor Sie dieses Lernprogramm versuchen, müssen Sie die folgenden Voraussetzungen erfüllen:  
 
 *   Wenn Sie mit HTML nicht vertraut sind, lesen Sie [Erste Schritte mit HTML][MDNGettingStartedHtml].  
-*   Laden Sie den [Microsoft Edge-Webbrowser][MicrosoftEdgeInsider] herunter.  Dieses Lernprogramm verwendet eine Reihe von Webentwicklungstools, die als Microsoft Edge DevTools bezeichnet werden, die in Microsoft Edge integrierte sind.  
+*   Laden Sie [den Microsoft Edge][MicrosoftEdgeInsider] herunter.  Dieses Lernprogramm verwendet eine Reihe von Webentwicklungstools, die als Microsoft Edge DevTools bezeichnet werden, die in die Microsoft Edge.  
 
 ## <a name="set-up-your-code"></a>Einrichten des Codes  
 
@@ -67,19 +66,19 @@ Sie erstellen Ihre Website in einem Onlinecode-Editor namens Glitch.
        Die Registerkarte Editor  
     :::image-end:::  
     
-1.  Wählen **Sie alluring-shock**aus.  Das Menü Projektoptionen wird in der oberen linken Ecke geöffnet.  
+1.  Wählen **Sie alluring-shock**aus.  Das Project Optionen wird in der oberen linken Ecke geöffnet.  
     
-    :::image type="complex" source="../media/beginners-html-setup2.msft.png" alt-text="Das Menü Projektoptionen" lightbox="../media/beginners-html-setup2.msft.png":::
-       Das Menü Projektoptionen  
+    :::image type="complex" source="../media/beginners-html-setup2.msft.png" alt-text="Menü Project Optionen" lightbox="../media/beginners-html-setup2.msft.png":::
+       Menü Project Optionen  
     :::image-end:::  
     
-1.  Wählen Sie **#A0 aus.**  Glitch erstellt eine Kopie des Projekts, die Sie bearbeiten können, und generiert nach dem Zufallsprinzip einen neuen Namen für das Projekt.  Der Inhalt ist der gleiche wie zuvor.  
+1.  Wählen **Sie #A0 Project**aus.  Glitch erstellt eine Kopie des Projekts, die Sie bearbeiten können, und generiert nach dem Zufallsprinzip einen neuen Namen für das Projekt.  Der Inhalt ist der gleiche wie zuvor.  
     
     :::image type="complex" source="../media/beginners-html-setup3.msft.png" alt-text="Das gemixte Projekt" lightbox="../media/beginners-html-setup3.msft.png":::
        Das gemixte Projekt  
     :::image-end:::  
     
-1.  Wenn Sie planen, das nächste Lernprogramm in dieser Reihe zu beenden, wählen Sie **Anmelden** aus, und melden Sie sich mit Ihrem GitHub- oder Facebook-Konto bei Glitch an.  Wenn Sie sich nicht bei Ihrem Konto anmelden, verlieren Sie die Möglichkeit, das Projekt zu bearbeiten, nachdem Sie die Bearbeitungsregisterkarte geschlossen haben.  
+1.  Wenn Sie planen, das nächste Lernprogramm in dieser Reihe zu beenden, wählen Sie **Anmelden** aus, und melden Sie sich mit Ihrem GitHub oder Ihrem Facebook-Konto bei Glitch an.  Wenn Sie sich nicht bei Ihrem Konto anmelden, verlieren Sie die Möglichkeit, das Projekt zu bearbeiten, nachdem Sie die Bearbeitungsregisterkarte geschlossen haben.  
 1.  Wählen **Sie Anzeigen** aus, und wählen Sie In einem neuen Fenster **aus.**  Eine neue Registerkarte wird geöffnet, auf der die Liveseite angezeigt wird.  Diese Registerkarte wird in diesem **Lernprogramm als Liveregisterkarte** bezeichnet.  
     
     :::image type="complex" source="../media/beginners-html-setup4.msft.png" alt-text="Die Registerkarte Live" lightbox="../media/beginners-html-setup4.msft.png":::
@@ -185,7 +184,7 @@ Wenn Sie eine große Seite mit viel HTML entwickelt haben, ist es etwas mühsam,
 
 ### <a name="learn-the-difference-between-html-and-the-dom"></a>Erfahren Sie mehr über den Unterschied zwischen HTML und dem DOM  
 
-Bevor Sie mit der Bearbeitung Ihrer Inhalte von Microsoft Edge DevTools beginnen, sollten Sie den Unterschied zwischen HTML und dem DOM verstehen.  Die beste Methode, um zu lernen, ist ein Beispiel:  
+Bevor Sie mit der Bearbeitung Ihrer Inhalte Microsoft Edge DevTools beginnen, sollten Sie den Unterschied zwischen HTML und dem DOM verstehen.  Die beste Methode, um zu lernen, ist ein Beispiel:  
 
 1.  Navigieren Sie zur **Registerkarte Live**.  Am unteren Rand der Seite wird der `A new element!?!` Text angezeigt.  
     
@@ -269,18 +268,24 @@ Sie können auch die Reihenfolge der DOM-Knoten ändern.  Beispielsweise befinde
     
     :::row:::
        :::column span="":::
+          &nbsp;  
+       :::column-end:::
+       :::column span="":::
+          Der `<nav>` Knoten wird nun oben auf Der Seite angezeigt.  
+       :::column-end:::
+    :::row-end:::  
+    :::row:::
+       :::column span="":::
           :::image type="complex" source="../media/beginners-html-reorder2.msft.png" alt-text="Ziehen des Navigationsknotens nach oben" lightbox="../media/beginners-html-reorder2.msft.png":::
              Ziehen des Navigationsknotens nach oben  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          Der `<nav>` Knoten wird nun oben auf Der Seite angezeigt.  
-          
           :::image type="complex" source="../media/beginners-html-reorder3.msft.png" alt-text="Der Navigationsknoten befindet sich am oberen Rand der Seite." lightbox="../media/beginners-html-reorder3.msft.png":::
              Der Navigationsknoten befindet sich am oberen Rand der Seite.  
           :::image-end:::  
        :::column-end:::
-   :::row-end:::  
+    :::row-end:::  
     
 ### <a name="delete-a-node"></a>Löschen eines Knotens  
 
@@ -350,7 +355,7 @@ Sie sind fast fertig.  Sie haben einige Änderungen an Ihrer Seite in DevTools v
     
 ## <a name="next-steps"></a>Nächste Schritte  
 
-*   Führen Sie das nächste Lernprogramm in dieser Reihe, [Erste Schritte mit CSS,][DevToolsBeginnersCss]aus, um zu erfahren, wie Sie Ihre Seite formatieren und mit Formatänderungen in Microsoft Edge DevTools experimentieren.  
+*   Führen Sie das nächste Lernprogramm in dieser Reihe [Erste Schritte css][DevToolsBeginnersCss]aus, um zu erfahren, wie Sie Ihre Seite formatieren und mit Formatänderungen in devTools Microsoft Edge experimentieren.  
 *   Lesen [Sie Einführung in das DOM,][MDNIntroductionDom] um mehr über das DOM zu erfahren.  
 *   Sehen Sie sich einen Kurs wie [Einführung in die Webentwicklung an,][CourseraIntroductionToWebDevelopment] um mehr praktische Webentwicklungserfahrung zu erhalten.  
 
@@ -360,7 +365,7 @@ Sie sind fast fertig.  Sie haben einige Änderungen an Ihrer Seite in DevTools v
 
 <!--- links --->  
 
-[DevToolsBeginnersCss]: ./css.md "DevTools For Beginners: Erste Schritte mit CSS | Microsoft Docs"  
+[DevToolsBeginnersCss]: ./css.md "DevTools für Anfänger: Erste Schritte mit CSS-| Microsoft Docs"  
 
 [MicrosoftEdgeInsider]: https://www.microsoftedgeinsider.com "Microsoft Edge Insider"  
 
@@ -373,7 +378,7 @@ Sie sind fast fertig.  Sie haben einige Änderungen an Ihrer Seite in DevTools v
 
 > [!NOTE]
 > Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
-> Die ursprüngliche Seite befindet sich [hier und](https://developers.google.com/web/tools/chrome-devtools/beginners/html) wird von [Katherine Jackson][KatherineJackson] \(Technical Writer Intern, Chrome DevTools\) verfasst.  
+> Die ursprüngliche Seite wurde [hier gefunden](https://developers.google.com/web/tools/chrome-devtools/beginners/html) und von [Katherine Jackson][KatherineJackson] \(Technical Writer Intern, Chrome DevTools\) verfasst.  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
@@ -381,5 +386,5 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[KatherineJackson]: https://developers.google.com/web/resources/contributors/katjackson  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[KatherineJackson]: https://developers.google.com/web/resources/contributors  

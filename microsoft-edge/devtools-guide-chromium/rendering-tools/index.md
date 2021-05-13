@@ -3,16 +3,16 @@ description: Benutzer erwarten interaktive und flüssige Seiten.  Jede Phase in 
 title: Analysieren der Laufzeitleistung
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 646db5b2e88e33b109e5eb3ae01a296bf3a4fb46
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: d5c37c188ae9038a7baafc936d2a02299def6366
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398000"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564707"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -27,7 +27,6 @@ ms.locfileid: "11398000"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="analyze-runtime-performance"></a>Analysieren der Laufzeitleistung  
 
 Benutzer erwarten interaktive und flüssige Seiten.  Jede Phase in der Pixelpipeline stellt eine Möglichkeit dar, jank einzuführen.  Erfahren Sie mehr über Tools und Strategien zum Identifizieren und Beheben gängiger Probleme, die die Laufzeitleistung verlangsamen.  
@@ -156,7 +155,7 @@ Beim Compositing werden die dargestellten Teile der Seite für die Anzeige auf d
 
 <!--todo: add Stick to compositor-only properties and manage layer count section when available  -->  
 
-### <a name="paint-and-composite-tools"></a>Paint and composite: Tools  
+### <a name="paint-and-composite-tools"></a>Paint und zusammengesetzt: Tools  
 
 Möchten Sie wissen, wie lange das Malen dauert oder wie oft das Malen stattfindet?  Überprüfen Sie [die Einstellung Erweiterte Farbinstrumentierung aktivieren][DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation] im Bereich **Leistung,** und nehmen Sie dann eine Aufzeichnung vor.  Wenn die meiste Renderzeit mit dem Malen verbracht wird, haben Sie Farbprobleme.  
 
@@ -171,13 +170,13 @@ Check out the **Rendering** panel for further configurations that are able to he
 
 <!--todo: link Rendering panel in ../evaluate-performance/timeline-tool  sub-section when live  -->  
 
-### <a name="paint-and-composite-problems"></a>Farbe und Zusammengesetzt: Probleme  
+### <a name="paint-and-composite-problems"></a>Paint und zusammengesetzt: Probleme  
 
 In der folgenden Tabelle werden einige häufige Farb- und Verbundprobleme sowie mögliche Lösungen beschrieben.  
 
 | Problem | Beispiel | Lösung |  
 |:--- |:--- |:--- |  
-| Farbstürmchen, die sich auf die Reaktion oder Animation ausdingen.  | Große Farbbereiche oder teure Farben, die die Reaktion oder Animation beeinflussen.  | Vermeiden Sie Farbe, fördern Sie Elemente, die sich auf ihre eigene Ebene verschieben, verwenden Sie Transformationen und Deckkraft.  <!--Navigate to [Simplify paint complexity and reduce paint areas][WebFundamentalsPerformanceRenderingSimplifyPaintComplexity].  -->  |  
+| Paint, die sich auf die Reaktion oder Animation ausdingen.  | Große Farbbereiche oder teure Farben, die die Reaktion oder Animation beeinflussen.  | Vermeiden Sie Farbe, fördern Sie Elemente, die sich auf ihre eigene Ebene verschieben, verwenden Sie Transformationen und Deckkraft.  <!--Navigate to [Simplify paint complexity and reduce paint areas][WebFundamentalsPerformanceRenderingSimplifyPaintComplexity].  -->  |  
 | Ebenenexplosionen, die Animationen beeinflussen.  | Überpromotion von zu vielen Elementen mit `translateZ(0)` erheblichen Auswirkungen auf die Animationsleistung.  | Bewerben Sie sich sparsam auf Ebenen, und nur, wenn Sie wissen, dass es greifbare Verbesserungen bietet.  <!--Navigate to [Stick to composite-only properties and manage layer count][WebFundamentalsPerformanceRenderingCompositorOnlyProperties].  -->  |  
 
 <!--todo: add Simplify paint complexity and reduce paint areas section when available  -->  
@@ -224,5 +223,5 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[MegginKearney]: https://developers.google.com/web/resources/contributors/megginkearney  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney  

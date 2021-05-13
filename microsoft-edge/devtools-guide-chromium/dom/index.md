@@ -3,16 +3,16 @@ description: Anzeigen von Knoten, Suchen nach Knoten, Bearbeiten von Knoten, Ref
 title: Erste Schritte mit dem Anzeigen und Ändern des DOM
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: e4c08fb2fd5f360f037502c04edabaabb873ba16
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 66078844730ebb22664c9ce89517511d7eb99ee7
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439240"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564287"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,16 +27,15 @@ ms.locfileid: "11439240"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="get-started-with-viewing-and-changing-the-dom"></a>Erste Schritte mit dem Anzeigen und Ändern des DOM  
 
-Führen Sie diese interaktiven Lernprogramme aus, um die Grundlagen des Anzeigens und Änderns des DOM einer Seite mithilfe von Microsoft Edge DevTools zu erlernen.  
+Führen Sie diese interaktiven Lernprogramme aus, um die Grundlagen des Anzeigens und Änderns des DOM einer Seite mithilfe von devTools Microsoft Edge zu lernen.  
 
 In diesem Lernprogramm wird davon ausgegangen, dass Sie den Unterschied zwischen DOM und HTML kennen.  Navigieren Sie [zu Anhang: HTML im Vergleich zum DOM,](#appendix-html-versus-the-dom) um eine Erläuterung zu erhalten.  
 
 ## <a name="open-dom-examples"></a>Öffnen von DOM-Beispielen  
 
-1.  Halten `Control` Sie \(Windows, Linux\) oder \(macOS\) fest, und wählen Sie `Command` **DOM-Beispiele aus,** um sie auf einer neuen Registerkarte zu öffnen.  
+1.  Halten `Control` Sie \(Windows, Linux\) oder \(macOS\) fest, und wählen Sie `Command` **DOM-Beispiele** aus, um sie auf einer neuen Registerkarte zu öffnen.  
     
     [DOM-Beispiele][GlitchDomExamples]  
     
@@ -69,7 +68,7 @@ Wenn Sie an einem bestimmten DOM-Knoten interessiert sind, ist **Inspect** eine 
             
 1.  Wählen **Sie unter Überprüfen eines Knotens**den **Tokio-Text** aus.  Wird nun `<li>Tokyo</li>` in der DOM-Struktur hervorgehoben.  
 
-Das Überprüfen eines Knotens ist auch der erste Schritt zum Anzeigen und Ändern der Formatvorlagen eines Knotens.  Navigieren Sie zu [Erste Schritte mit dem Anzeigen und Ändern von CSS][DevToolsCssGetStarted].  
+Das Überprüfen eines Knotens ist auch der erste Schritt zum Anzeigen und Ändern der Formatvorlagen eines Knotens.  Navigieren Sie [zu Erste Schritte Anzeigen und Ändern von CSS][DevToolsCssGetStarted].  
 
 ### <a name="navigate-the-dom-tree-with-a-keyboard"></a>Navigieren in der DOM-Struktur mit einer Tastatur  
 
@@ -112,7 +111,7 @@ Wenn Sie die DOM-Struktur anzeigen, interessieren Sie sich möglicherweise für 
 Sie können die DOM-Struktur nach Zeichenfolge, CSS-Selektor oder XPath-Selektor durchsuchen.  
 
 1.  Fokussieren Sie den Cursor auf das **Elementtool.**  
-1.  Wählen `Control` + `F` Sie \(Windows, Linux\) oder `Command` + `F` \(macOS\) aus.  Die Suchleiste wird am unteren Rand der DOM-Struktur geöffnet.  
+1.  Wählen `Control` + `F` Sie \(Windows, Linux\) oder `Command` + `F` \(macOS\).  Die Suchleiste wird am unteren Rand der DOM-Struktur geöffnet.  
 1.  Geben Sie `The Moon is a Harsh Mistress` ein.  Der letzte Satz wird in der DOM-Struktur hervorgehoben.  
     
     :::image type="complex" source="../media/dom-elements-highlighted-search-nodes-highlight.msft.png" alt-text="Hervorheben der Abfrage in der Suchleiste" lightbox="../media/dom-elements-highlighted-search-nodes-highlight.msft.png":::
@@ -437,4 +436,4 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

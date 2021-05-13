@@ -1,18 +1,18 @@
 ---
 description: Öffnen Sie das Tool "Rendering", und wählen Sie Emulieren von CSS-Medien > aus.
-title: Erzwingen des Druckvorschaumodus von Microsoft Edge DevTools (CSS Print Media Type)
+title: Erzwingen Microsoft Edge DevTools in den Druckvorschaumodus (CSS Print Media Type)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 0123b7abf475212304f654c04bc232e3e96f0bda
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 6c49d956a9a7185b162ca8e2996e7b3e715b40ab
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399078"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564427"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,8 +27,7 @@ ms.locfileid: "11399078"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
-# <a name="force-microsoft-edge-devtools-into-print-preview-mode"></a>Erzwingen des Druckvorschaumodus von Microsoft Edge DevTools  
+# <a name="force-microsoft-edge-devtools-into-print-preview-mode"></a>Erzwingen Microsoft Edge DevTools in den Druckvorschaumodus  
 
 Die [Druckmedienabfrage steuert,][MDNUsingMediaQueries] wie Ihre Seite beim Drucken aussieht.  So erzwingen Sie, dass Ihre Seite in den Druckvorschaumodus wechselt:  
 
@@ -45,7 +44,7 @@ Die [Druckmedienabfrage steuert,][MDNUsingMediaQueries] wie Ihre Seite beim Druc
        Druckvorschaumodus  
     :::image-end:::  
     
-Von hier aus können Sie Ihre CSS wie jede andere Webseite anzeigen und ändern.  Navigieren Sie zu [Erste Schritte mit dem Anzeigen und Ändern von CSS][DevToolsCSSGetStarted].  
+Von hier aus können Sie Ihre CSS wie jede andere Webseite anzeigen und ändern.  Navigieren Sie [zu Erste Schritte Anzeigen und Ändern von CSS][DevToolsCSSGetStarted].  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
@@ -68,4 +67,4 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

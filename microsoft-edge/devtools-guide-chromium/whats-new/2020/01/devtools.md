@@ -3,16 +3,16 @@ description: 3D-Ansicht, Visual Studio Integration in Microsoft Edge und vieles 
 title: Neues in DevTools (Microsoft Edge 81)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: ddd48b78c59e26edc9bca159f5ddf684015ae980
-ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
+ms.openlocfilehash: 03b17f524e9be55e1ed37147ce46b7a15fc3a17d
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "11514410"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564959"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -104,7 +104,7 @@ Viele Entwickler verwenden andere Entwicklertools, wie StackOverflow und Visual 
 
 Die DevTools entsprechen automatisch der Sprache, die Sie für Microsoft Edge `edge://settings/languages` verwenden.  
 
-Wenn Sie Microsoft Edge sprache verwenden möchten und Ihre DevTools auf Englisch bleiben sollen, wählen Sie in devTools aus, um Einstellungen zu öffnen und Browsersprache `F1` **matchen zu deaktivieren.** [][Settings]  
+Wenn Sie Microsoft Edge sprache verwenden möchten und Ihre DevTools auf Englisch bleiben sollen, wählen Sie in devTools aus, um Einstellungen zu öffnen und Browsersprache `F1` **matchen zu deaktivieren.** [][DevtoolsCustomizeIndexSettings]  
 
 :::image type="complex" source="../../images/2020/01/localized-devtools.msft.png" alt-text="Die DevTools auf Deutsch" lightbox="../../images/2020/01/localized-devtools.msft.png":::
    Die DevTools auf Deutsch  
@@ -182,7 +182,7 @@ Verwenden Visual Studio 2019, Version 16.2 oder höher, den Visual Studio-Debugg
    Visual Studio mit der Option zum Starten Ihrer Web-App in Microsoft Edge Canary, Dev oder Beta  
 :::image-end:::  
 
-[Erfahren Sie mehr über das Debuggen Microsoft Edge von Visual Studio][MicrosoftVisualStudio].  
+[Erfahren Sie mehr über das Debuggen Microsoft Edge von Visual Studio][VisualStudioIndex].  
 
 ### <a name="tracking-prevention-console-messages"></a>Nachverfolgen von Nachrichten der Verhinderungskonsole  
 
@@ -200,13 +200,13 @@ In den folgenden Abschnitten werden zusätzliche features angekündigt, die in M
 
 ### <a name="moto-g4-support-in-device-mode"></a>Unterstützung von "Moto G4" im Gerätemodus  
 
-Simulieren [Sie nach dem Aktivieren der Gerätesymbolleiste][DeviceToolbar]die Dimensionen eines G4-Ansichtsports von "Moto G4" aus der **Geräteliste.**  
+Simulieren [Sie nach dem Aktivieren der Gerätesymbolleiste][DevtoolsDeviceModeIndexSimulateMobileViewport]die Dimensionen eines G4-Ansichtsports von "Moto G4" aus der **Geräteliste.**  
 
 :::image type="complex" source="../../images/2020/01/motog4.msft.png" alt-text="Simulieren eines G4-Ansichtsports von "Moto G4"" lightbox="../../images/2020/01/motog4.msft.png":::
    Simulieren eines G4-Ansichtsports von "Moto G4"  
 :::image-end:::  
 
-Wählen [Sie Geräterahmen anzeigen aus,][DeviceFrame] um die Hardware von "Moto G4" um den Viewport zu zeigen.  
+Wählen [Sie Geräterahmen anzeigen aus,][DevtoolsDeviceModeIndexShowDeviceFrame] um die Hardware von "Moto G4" um den Viewport zu zeigen.  
 
 :::image type="complex" source="../../images/2020/01/motog4frame.msft.png" alt-text="Anzeigen der Hardware von "Moto G4"" lightbox="../../images/2020/01/motog4frame.msft.png":::
    Anzeigen der Hardware von "Moto G4"  
@@ -214,8 +214,8 @@ Wählen [Sie Geräterahmen anzeigen aus,][DeviceFrame] um die Hardware von "Moto
 
 Verwandte Features:  
 
-*   Öffnen Sie [das Befehlsmenü,][CommandMenu] und führen Sie den Befehl aus, um einen Screenshot des Viewports zu erstellen, der die `Capture screenshot` Hardware von "Moto G4" enthält (nachdem Sie **Geräterahmen anzeigen aktiviert haben).**  
-*   [Drosseln Sie das Netzwerk und die CPU,][ThrottleNetworkAndCpu] um die Browserbedingungen eines mobilen Benutzers genauer zu simulieren.  
+*   Öffnen Sie [das Befehlsmenü,][DevtoolsCommandMenuIndex] und führen Sie den Befehl aus, um einen Screenshot des Viewports zu erstellen, der die `Capture screenshot` Hardware von "Moto G4" enthält (nachdem Sie **Geräterahmen anzeigen aktiviert haben).**  
+*   [Drosseln Sie das Netzwerk und die CPU,][DevtoolsDeviceModeIndexThrottleNetworkCpu] um die Browserbedingungen eines mobilen Benutzers genauer zu simulieren.  
 
 Chromium Problem [#924693][CR924693]  
 
@@ -242,7 +242,7 @@ Chromium Problem [#1026879][CR1026879]
 
 #### <a name="edit-all-cookie-values"></a>Bearbeiten aller Cookiewerte  
 
-Alle Zellen in den Cookietabellen können jetzt bearbeitet werden, mit Ausnahme von Zellen in der **Spalte Größe,** da diese Spalte die Netzwerkgröße des Cookies in Bytes darstellt.  Eine Erläuterung der einzelnen Spalten finden Sie unter [Fields][CookiesFields].  
+Alle Zellen in den Cookietabellen können jetzt bearbeitet werden, mit Ausnahme von Zellen in der **Spalte Größe,** da diese Spalte die Netzwerkgröße des Cookies in Bytes darstellt.  Eine Erläuterung der einzelnen Spalten finden Sie unter [Fields][DevtoolsStorageCookiesFields].  
 
 :::image type="complex" source="../../images/2020/01/editcookie.msft.png" alt-text="Bearbeiten eines Cookiewerts" lightbox="../../images/2020/01/editcookie.msft.png":::
    Bearbeiten eines Cookiewerts  
@@ -294,7 +294,7 @@ Die Konsole bietet nun ausführlichere Informationen dazu, warum eine Quellzuord
 
 ### <a name="setting-for-disabling-scrolling-past-the-end-of-a-file"></a>Einstellung zum Deaktivieren des Bildlaufs am Ende einer Datei  
 
-Öffnen [Einstellungen,][Settings] und deaktivieren Sie dann Einstellungen Quellen Zulassen des **Bildlaufs**am Ende der Datei, um das Standardverhalten der Benutzeroberfläche zu deaktivieren, mit dem Sie einen Bildlauf weit über das Ende einer Datei im Bereich  >  ****  >  **** **Quellen** durchführen können.  
+Öffnen [Einstellungen,][DevtoolsCustomizeIndexSettings] und deaktivieren Sie dann Einstellungen Quellen Zulassen des **Bildlaufs**am Ende der Datei, um das Standardverhalten der Benutzeroberfläche zu deaktivieren, mit dem Sie einen Bildlauf weit über das Ende einer Datei im Bereich  >  ****  >  **** **Quellen** durchführen können.  
 
 :::image type="complex" source="../../images/2020/01/settings.msft.png" alt-text="Deaktivieren Zulassen des Bildlaufs am Ende der Datei" lightbox="../../images/2020/01/settings.msft.png":::
    Deaktivieren Zulassen **des Bildlaufs am Ende der Datei** in Einstellungen  
@@ -314,30 +314,31 @@ Wenn Sie sich auf Windows oder macOS befinden, sollten Sie die Microsoft Edge Vo
 
 <!-- links -->  
 
-[DeviceToolbar]: /microsoft-edge/devtools-guide-chromium/device-mode/index#simulate-a-mobile-viewport "Simulieren eines mobilen Viewports – Simulieren von mobilen Geräten mit dem Gerätemodus in Microsoft Edge DevTools | Microsoft Docs"
-[DeviceFrame]: /microsoft-edge/devtools-guide-chromium/device-mode/index#show-device-frame "Geräterahmen anzeigen – Simulieren von mobilen Geräten mit dem Gerätemodus in Microsoft Edge DevTools | Microsoft Docs"
-[CommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Ausführen von Befehlen mit dem Microsoft Edge DevTools-Befehlsmenü | Microsoft Docs"  
-[ThrottleNetworkAndCpu]: /microsoft-edge/devtools-guide-chromium/device-mode/index#throttle-the-network-and-cpu "Drosseln des Netzwerks und der CPU – Simulieren von mobilen Geräten mit dem Gerätemodus in Microsoft Edge DevTools | Microsoft Docs"
-[Settings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "Einstellungen – Anpassen von Microsoft Edge DevTools | Microsoft Docs"
-[MicrosoftVisualStudio]: /microsoft-edge/visual-studio/index "Visual Studio | Microsoft Docs"  
-[CookiesFields]: /microsoft-edge/devtools-guide-chromium/storage/cookies#fields "Felder – Anzeigen, Bearbeiten und Löschen von Cookies mit Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsDeviceModeIndexSimulateMobileViewport]: ../../../device-mode/index.md#simulate-a-mobile-viewport "Simulieren eines mobilen Viewports – Simulieren von mobilen Geräten mit dem Gerätemodus in Microsoft Edge DevTools | Microsoft Docs"
+[DevtoolsDeviceModeIndexShowDeviceFrame]: ../../../device-mode/index.md#show-device-frame "Geräterahmen anzeigen – Simulieren von mobilen Geräten mit dem Gerätemodus in Microsoft Edge DevTools | Microsoft Docs"
+[DevtoolsCommandMenuIndex]: ../../../command-menu/index.md "Ausführen von Befehlen mit dem Microsoft Edge DevTools-Befehlsmenü | Microsoft Docs"  
+[DevtoolsDeviceModeIndexThrottleNetworkCpu]: ../../../device-mode/index.md#throttle-the-network-and-cpu "Drosseln des Netzwerks und der CPU – Simulieren von mobilen Geräten mit dem Gerätemodus in Microsoft Edge DevTools | Microsoft Docs"
+[DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "Einstellungen – Anpassen von Microsoft Edge DevTools | Microsoft Docs"
+[DevtoolsStorageCookiesFields]: ../../../storage/cookies.md#fields "Felder – Anzeigen, Bearbeiten und Löschen von Cookies mit Microsoft Edge DevTools | Microsoft Docs"  
 
-[VisualStudioCodeDebuggerEdgeExtension]: /microsoft-edge/visual-studio-code/debugger-for-edge "Debugger für Microsoft Edge Visual Studio Code Erweiterung"  
-[VisualStudioCodeElementEdgeExtension]: /microsoft-edge/visual-studio-code/elements-for-edge "Elemente für Microsoft Edge Visual Studio Code Erweiterung"  
+[VisualStudioIndex]: ../../../../visual-studio/index.md "Visual Studio | Microsoft Docs"  
 
-[MicrosoftEdgePreviewChannels]: https://aka.ms/microsoftedge "Microsoft Edge-Vorschaukanäle"  
+[VisualStudioCodeDebuggerEdgeExtension]: ../../../../visual-studio-code/debugger-for-edge.md "Debugger für Microsoft Edge Visual Studio Code Erweiterung | Microsoft Docs"  
+[VisualStudioCodeElementEdgeExtension]: ../../../../visual-studio-code/elements-for-edge.md "Elemente für Microsoft Edge Visual Studio Code Erweiterungserweiterungen | Microsoft Docs"  
 
-[VisualStudioCode]: https://aka.ms/vscode "Visual Studio Code"  
-[VisualStudioMarketplaceDebuggerEdge]: https://aka.ms/debugger4code "Debugger für Microsoft Edge - Visual Studio Marketplace"  
-[VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension]: https://aka.ms/elements4code "Elemente für Microsoft Edge \(Chromium\) - Visual Studio Marketplace"  
-[VisualStudioMarketplaceWebhintExtension]: https://aka.ms/webhint4code "webhint – Visual Studio Marketplace"
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge-Vorschaukanäle"  
 
-[TrackingPrevention]: https://aka.ms/microsoftedge/tracking-prevention-blog "Verbessern der Nachverfolgungsverhütung in Microsoft Edge Blogbeitrag"
+[VisualStudioCode]: https://code.visualstudio.com "Visual Studio Code"  
+[VisualStudioMarketplaceDebuggerEdge]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge "Debugger für Microsoft Edge | Visual Studio Marketplace"  
+[VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Elemente für Microsoft Edge \(Chromium\) | Visual Studio Marketplace"  
+[VisualStudioMarketplaceWebhintExtension]: https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint "webhint | Visual Studio Marketplace"
 
-[MicrosoftEdgeInsiderAddons]: https://aka.ms/webhint/edge-extension "Microsoft Edge Insider-Addons"  
-[MicrosoftVisualStudioDownloads]: https://aka.ms/vs/download "Download Visual Studio 2019 für Windows & Mac"  
+[TrackingPrevention]: https://blogs.windows.com/msedgedev/2019/12/03/improving-tracking-prevention-microsoft-edge-79 "Verbessern der Nachverfolgungsverhütung in Microsoft Edge Blogbeitrag"
 
-[PostTweetEdgeDevTools]: https://aka.ms/tweet/edgedevtools "@EdgeDevTools | Tweet posten"  
+[MicrosoftEdgeInsiderAddons]: https://microsoftedge.microsoft.com/addons/detail/webhint/mlgfbihcfnkaenjpdcngdnhcpkdmcdee "Microsoft Edge Insider-Addons"  
+[MicrosoftVisualStudioDownloads]: https://visualstudio.microsoft.com/downloads "Download Visual Studio 2019 für Windows & Mac"  
+
+[PostTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | Tweet posten"  
 
 [CR924693]: https://crbug.com/924693 "Featureanforderung: Hinzufügen von &quot;Moto G4&quot; zur Gerätemodusliste | Chromium Bugs"  
 [CR1030258]: https://crbug.com/1030258 "CR 1030258 | Chromium Bugs"  
@@ -350,18 +351,18 @@ Wenn Sie sich auf Windows oder macOS befinden, sollten Sie die Microsoft Edge Vo
 
 [CSSContentDemo]: https://mathiasbynens.github.io/css-dbg-stories/css-escapes.html "Demo für nicht angezeigte CSS-Inhalte"  
 
-[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://aka.ms/edgedevtoolsdocs/feedback "Neues Problem – MicrosoftDocs/edge-developer"  
+[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback] "Neues Problem – MicrosoftDocs/edge-developer"  
 
-[TheWebWeWant]: https://aka.ms/webwewant "The Web We Want"  
-[AccessibilityInsights]: https://aka.ms/a11yinsights "Einblicke in die Barrierefreiheit"  
+[TheWebWeWant]: https://webwewant.fyi "The Web We Want"  
+[AccessibilityInsights]: https://accessibilityinsights.io "Einblicke in die Barrierefreiheit"  
 [MDNDocumentObjectModel]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model "Document Object Model (DOM) | MDN"  
 [MDNZIndex]: https://developer.mozilla.org/docs/Web/CSS/z-index "z-index | MDN"  
-[EdgeDevToolsTwitterAccount]: https://aka.ms/twitter/edgedevtools "@EdgeDevTools, Twitter-Konto"  
+[EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools, Twitter-Konto"  
 
-[Webhint]: https://aka.ms/webhint "webhint"  
+[Webhint]: https://webhint.io "webhint"  
 
-[WebhintBrowserExtension]: https://aka.ms/webhint/browser-extension "Webhint Browser Extension | Webhintdokumentation"  
-[WebhintVisualStudioCodeExtension]: https://aka.ms/webhint/code-extension "Webhint Visual Studio Code Extension | Webhintdokumentation"  
+[WebhintBrowserExtension]: https://webhint.io/docs/user-guide/extensions/extension-browser "Webhint Browser Extension | Webhintdokumentation"  
+[WebhintVisualStudioCodeExtension]: https://webhint.io/docs/user-guide/extensions/vscode-webhint "Webhint Visual Studio Code Extension | Webhintdokumentation"  
 
 > [!NOTE]
 > Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
@@ -373,4 +374,4 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

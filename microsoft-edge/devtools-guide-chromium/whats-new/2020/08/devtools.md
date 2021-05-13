@@ -3,16 +3,16 @@ description: Anpassen von Tastenkombinationen Visual Studio Code, Emulieren von 
 title: Neues in DevTools (Microsoft Edge 86)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: f1227f0869aa753c2d05980c712ca3453adfd041
-ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
+ms.openlocfilehash: ec2219e9ebdd5d79c61bcaa813f7784246b1f5d0
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "11514382"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564945"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -35,7 +35,7 @@ ms.locfileid: "11514382"
 
 ### <a name="match-keyboard-shortcuts-in-devtools-to-visual-studio-code"></a>Übereinstimmung von Tastenkombinationen in DevTools mit Visual Studio Code  
 
-In Microsoft Edge 86 können Sie Tastenkombinationen in den DevTools mit Ihren Verknüpfungen in Microsoft Visual Studio [Code übereinstimmen.][VisualStudioCode]  
+In Microsoft Edge 86 können Sie Tastenkombinationen in den DevTools mit Ihren Verknüpfungen in Microsoft Visual Studio [Code übereinstimmen.][VisualStudioCodeMain]  
 
 :::image type="complex" source="../../media/2020/08/keyboard-shortcut.msft.png" alt-text="Übereinstimmung von Tastenkombinationen in devTools zu Visual Studio Code" lightbox="../../media/2020/08/keyboard-shortcut.msft.png":::
    Übereinstimmung von Tastenkombinationen in devTools zu Visual Studio Code  
@@ -57,17 +57,17 @@ Sie können nun das Aussehen ihrer Website oder App auf zwei neuen Geräten test
 
 Um Ihre Website oder App für die Geräte mit dualem Bildschirm oder für die faltbare Geräte zu verbessern, verwenden Sie die folgenden Features bei der [Emulation des Geräts][DevtoolsDeviceModeIndex].  
 
-*   [Aufteilung][DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices], das ist, wenn Ihre Website \(oder App\) auf beiden Bildschirmen angezeigt wird.
+*   [Aufteilung][DevtoolsDeviceModeDualScreenAndFoldables], das ist, wenn Ihre Website \(oder App\) auf beiden Bildschirmen angezeigt wird.
 *   [Rendering der Naht][DualScreenIntroductionHowWorkSeam], das ist der Abstand zwischen den beiden Bildschirmen.
-*   [Aktivieren experimenteller Webplattform-APIs][DevtoolsExperimentalFeaturesEnableExperimentalApis] für den Zugriff auf das neue Feature für die [Medienbildschirmübergreifende][DualScreenWebCssMediaSpanning] CSS und [die JavaScript getWindowSegments-API][DualScreenWebJavascriptGetwindowsegments].  
+*   Aktivieren experimenteller Webplattform-APIs für den Zugriff auf das neue Feature für die [Medienbildschirmübergreifende][DualScreenWebCssMediaSpanning] CSS und [die JavaScript getWindowSegments-API][DualScreenWebJavascriptGetwindowsegments].  
 
 :::image type="complex" source="../../media/2020/08/surface-duo-device-emulation.msft.png" alt-text="Geräteemulation für Surface Duo" lightbox="../../media/2020/08/surface-duo-device-emulation.msft.png":::
    Geräteemulation für Surface Duo  
 :::image-end:::  
 
-Navigieren Sie zum Aktivieren dieses experimentellen Features zu [Aktivieren][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] experimenteller Features, und wählen Sie das Kontrollkästchen neben **Emulation: Unterstützen des Dualbildschirmmodus aus.**  
+Navigieren Sie zum Aktivieren dieses experimentellen Features zu [Aktivieren experimenteller Features][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] und aktivieren Sie das Kontrollkästchen neben **Emulation: Support dual screen mode**.  
 
-Weitere Informationen zu diesem Experiment finden Sie unter [Emulation: Support dual screen mode][DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode].  
+Weitere Informationen zu diesem Feature finden Sie unter [Emulieren von Dualscreen-][DevtoolsDeviceModeDualScreenAndFoldables]und faltbaren Geräten in Microsoft Edge DevTools .  
 
 Chromium Problem: [#1054281][CR1054281]  
 
@@ -84,9 +84,9 @@ Vielen Dank für das positive Feedback zu den verbesserten CSS-Rasterüberlageru
 
 Das Microsoft Edge DevTools-Team und das Chrome DevTools-Team arbeiten an weiteren Features zusammen.  Die neuen Features umfassen mehrere Überlagerungen, die dauerhaft und aus einem neuen **Layoutbereich** im Elementtool **konfigurierbar** sind.  
 
-Navigieren Sie zum Aktivieren dieses [][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] experimentellen Features zu Aktivieren experimenteller Features, und aktivieren Sie das Kontrollkästchen neben Neue CSS-Raster-Debuggingfeatures aktivieren (Konfigurationsoptionen sind im Seitenleistenbereich Layout in Elemente nach dem Neustart **verfügbar)**.  
+Navigieren Sie zum Aktivieren dieses experimentellen Features zu [Aktivieren von experimentellen Features][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] und aktivieren Sie das Kontrollkästchen neben Neue CSS-Raster-Debuggingfeatures aktivieren (Konfigurationsoptionen sind im Seitenleistenbereich Layout in Elementen nach dem Neustart **verfügbar)**.  
 
-Weitere Informationen zu diesem Experiment finden Sie unter [Enable new CSS grid debugging features][DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures].  
+Weitere Informationen zu diesem Feature finden Sie unter [Inspect CSS Grid in Microsoft Edge DevTools][DevtoolsCssGrid].  
 
 Chromium Problem: [#1047356][CR1047356]  
 
@@ -138,9 +138,9 @@ Die neue Barrierefreiheitshilfe zeigt die Reihenfolge der Elemente in der Quelle
 
 Mit diesem Feature können Sie leichter testen, wie Bildschirmlese- und Tastaturbenutzer Ihre Website oder App nutzen.  Bildschirmlesegeräte und Tastaturnavigation hängen davon ab, dass Inhalte im Quellcode Ihrer Website oder App in einer bestimmten Reihenfolge platziert werden, sodass sie der gerenderten Seite entspricht.  Der Quellauftragsanzeige zeigt potenzielle Unterschiede in der Reihenfolge zwischen der gerenderten Seite und dem Quellcode an.  
 
-Navigieren Sie zum Aktivieren dieses experimentellen Features zu Aktivieren experimenteller [Features,][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] und aktivieren Sie das Kontrollkästchen neben **Source Order Viewer aktivieren.**  
+Navigieren Sie zum Aktivieren dieses experimentellen Features zu [Aktivieren experimenteller Features][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] und aktivieren Sie das Kontrollkästchen neben **Source Order Viewer**aktivieren.  
 
-Weitere Informationen zu diesem Experiment finden Sie unter [Enable Source Order Viewer][DevtoolsExperimentalFeaturesEnableSourceOrderViewer].  
+Weitere Informationen zu diesem Experiment finden Sie unter [Source Order Viewer][DevtoolsExperimentalFeaturesSourceOrderViewer].  
 
 Chromium Problem: [#1094406][CR1094406]  
 
@@ -187,7 +187,7 @@ Chromium Problem: [#1103316][CR1103316]
 
 ### <a name="new-media-tool"></a>Tool für neue Medien  
 
-DevTools zeigt jetzt Media Player-Informationen im [Medientool][DevtoolsMediaPanelIndex] an.  
+DevTools zeigt jetzt Media Player-Informationen im Tool [Media][DevtoolsMediaPanelIndex] an.  
 
 Führen Sie den folgenden Schritt aus, um das neue **Medientool** zu öffnen.  
 
@@ -460,28 +460,25 @@ Wenn Sie sich auf Windows oder macOS befinden, sollten Sie die Microsoft Edge Vo
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
-<!-- image links -->  
-
-[ImageSettingsIcon]: /microsoft-edge/devtools-guide-chromium/media/settings-icon.msft.png "DevTools Einstellungen Symbol"  
-
 <!-- links -->  
 
 [DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel]: ../05/devtools.md#deprecation-of-the-properties-pane-in-the-elements-panel "Veralteter Eigenschaftenbereich im Elementbereich – Neues in DevTools (Microsoft Edge 84) | Microsoft Docs"  
 [DevtoolsWhatsnew200206DevtoolsCssGridDebuggingFeatures]: ../06/devtools.md#css-grid-debugging-features "Features zum Debuggen von CSS-Rastern – Neues in DevTools (Microsoft Edge 85) | Microsoft Docs"  
 
-[DevtoolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index "Emulieren von mobilen Geräten in Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsCustomizeShortcuts]: /microsoft-edge/devtools-guide-chromium/customize/shortcuts "Anpassen von Tastenkombinationen in der Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesEnableExperimentalApis]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-experimental-apis "Aktivieren experimenteller APIs – Experimentelle | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-new-css-grid-debugging-features "Emulation: Unterstützung des dualen Bildschirmmodus – Experimentelle Features | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesEnableSourceOrderViewer]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-source-order-viewer "Aktivieren der Quellauftragsanzeige – Experimentelle | Microsoft Docs"
-[DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode]: https://review.docs.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features?branch=user/zoghadya/dual-screen-experiment#emulation-support-dual-screen-mode "Emulation: Unterstützung des dualen Bildschirmmodus – Experimentelle Features | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices]: /microsoft-edge/devtools-guide-chromium/experimental-features#testing-on-foldable-and-dual-screen-devices "Testen auf zusammenklappbaren geräten und dualen Bildschirmen – Experimentelle | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features#turn-on-experimental-features "Aktivieren experimenteller Features – Experimentelle Features | Microsoft Docs"  
-[DevtoolsConsoleApiTable]: /microsoft-edge/devtools-guide-chromium/console/api#table "Tabelle – Konsolen-API-| Microsoft Docs"  
-[DevtoolsCoverageIndex]: /microsoft-edge/devtools-guide-chromium/coverage/index "Suchen Sie nicht verwendeten JavaScript- und CSS-Code auf der Registerkarte Abdeckung in Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "Drawer – Anpassen Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "Analysieren der Renderingleistung mit der Registerkarte Rendering – Leistungsanalysereferenz | Microsoft Docs"  
-[DevtoolsMediaPanelIndex]: /microsoft-edge/devtools-guide-chromium/media-panel/index "Anzeigen und Debuggen von Media Player-| Microsoft Docs"  
+[DevtoolsConsoleApiTable]: ../../../console/api.md#table "Tabelle – Konsolen-API-| Microsoft Docs"  
+[DevtoolsCoverageIndex]: ../../../coverage/index.md "Suchen Sie nicht verwendeten JavaScript- und CSS-Code auf der Registerkarte Abdeckung in Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCssGrid]: ../../../css/grid.md "Inspect CSS Grid in Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeIndexDrawer]: ../../../customize/index.md#drawer "Drawer – Anpassen Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "Anpassen von Tastenkombinationen in der Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "Emulieren von mobilen Geräten in Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsDeviceModeDualScreenAndFoldables]: ../../../device-mode/dual-screen-and-foldables.md "Emulieren von Dualscreen- und faltbaren Geräten in Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: ../../../evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tool "Analysieren der Renderingleistung mit dem Renderingtool – Leistungsanalysereferenz | Microsoft Docs"  
+<!--  [DevtoolsExperimentalFeaturesEnableExperimentalApis]: ../../../experimental-features/index.md#enable-experimental-apis "Enable experimental APIs - Experimental features | Microsoft Docs"  -->  
+[DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode]: .. /.. /.. /experimental-features/index.md#emulation-support-dual-screen-mode "Emulation: Support dual screen mode - Experimental features | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesSourceOrderViewer]: .. /.. /.. /experimental-features/index.md#source-order-viewer "Source Order Viewer - Experimental features | Microsoft Docs"
+<!--  [DevtoolsExperimentalFeaturesTestOnFoldableDualScreenDevices]: ../../../experimental-features/index.md#test-on-foldable-and-dual-screen-devices "Test on foldable and dual-screen devices - Experimental features | Microsoft Docs"  -->  
+[DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]: .. /.. /.. /experimental-features/index.md#turn-on-experimental-features "Aktivieren experimenteller Features – Experimentelle Features | Microsoft Docs"  
+[DevtoolsMediaPanelIndex]: .. /.. /.. /media-panel/index.md "Anzeigen und Debuggen von Media Player-| Microsoft Docs"  
 
 [DualScreenIntroductionHowWorkSeam]:  /dual-screen/introduction#how-to-work-with-the-seam "Arbeiten mit der Naht – Einführung in Geräten mit dualem Bildschirm | Microsoft Docs"  
 [DualScreenWebCssMediaSpanning]: /dual-screen/web/css-media-spanning "Feature „CSS-Medienbildschirmaufteilung“ für die Erkennung von dualem Bildschirm | Microsoft Docs"  
@@ -489,7 +486,7 @@ Wenn Sie sich auf Windows oder macOS befinden, sollten Sie die Microsoft Edge Vo
 
 [MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge-Vorschaukanäle"  
 
-[VisualStudioCode]: https://code.visualstudio.com "Visual Studio Code"  
+[VisualStudioCodeMain]: https://code.visualstudio.com "Visual Studio Code"  
 [VisualStudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Visual Studio Code Tastenkombinationen für Windows"  
 
 [MicrosoftSurfaceDevicesDuo]: https://www.microsoft.com/surface/devices/surface-duo "Das neue Surface Duo"  
@@ -551,4 +548,4 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[JecelynYeen]: https://developers.google.com/web/resources/contributors/jecelynyeen  
+[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen  

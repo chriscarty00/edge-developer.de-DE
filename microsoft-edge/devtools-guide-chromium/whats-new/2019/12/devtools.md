@@ -3,16 +3,16 @@ description: Verbesserungen bei der Barrierefreiheit mithilfe der DevTools in an
 title: Neues in DevTools (Microsoft Edge 80)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/08/2021
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 1388cbf62bd341837d92c51ad137f3909e60e476
-ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
+ms.openlocfilehash: 58e5bf43720c7ba94a721804eb44d82ba657b599
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "11514396"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564994"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -217,7 +217,7 @@ Chromium Problem [#1004193][CR1004193]
 
 ### <a name="improved-webassembly-debugging"></a>Verbessertes WebAssembly-Debuggen  
 
-DevTools hat damit begonnen, den [STANDARD FÜR DAS DEBUGGEN ZU UNTERSTÜTZEN,][DwarfHome]was bedeutet, dass mehr Unterstützung für das Schrittweise Festlegen von Code, das Festlegen von Haltepunkten und das Auflösen von Stapelverfolgungen in Ihren Quellsprachen in DevTools zur Verfügung steht.  
+DevTools hat damit begonnen, den STANDARD FÜR DAS DEBUGGEN ZU UNTERSTÜTZEN, was bedeutet, dass die Unterstützung für das Schrittweise Festlegen von Code, das Festlegen von Haltepunkten und das Auflösen von Stapelverfolgungen in Ihren Quellsprachen in DevTools erhöht wird.  
 
 <!-- [TODO: Add this link back] -->  
 <!--Check out [Improved WebAssembly debugging in Microsoft Edge DevTools][201912Webassembly] for the full story.  -->  
@@ -246,7 +246,7 @@ Wählen [Sie nach der][DevToolsNetworkIndex]Protokollierung der Netzwerkaktivit�
 *   Die Ressourcen unterhalb der überprüften Ressource sind **die Abhängigkeiten**.  Im obigen Screenshot `https://dc.services.visualstudio.com/v2/track` ist eine Abhängigkeit von `ai.2.min.js` .  Mit anderen Worten, `ai.2.min.js` hat die Netzwerkanforderung für `https://dc.services.visualstudio.com/v2/track` verursacht.  
 
 > [!NOTE]
-> Der Zugriff auf Initiator- und Abhängigkeitsinformationen kann auch durch Halten und anschließendes Zeigen `Shift` auf Netzwerkressourcen möglich sein.  Navigieren Sie zu [Initiatoren und Abhängigkeiten anzeigen.][DevToolsNetworkReferenceViewInitiatorsDependencies]  
+> Der Zugriff auf Initiator- und Abhängigkeitsinformationen kann auch durch Halten und anschließendes Zeigen `Shift` auf Netzwerkressourcen möglich sein.  Navigieren Sie zu [Initiatoren und Abhängigkeiten anzeigen.][DevToolsNetworkReferenceDisplayInitiatorsDependencies]  
 
 Chromium Problem [#842488][CR842488]  
 
@@ -328,13 +328,13 @@ Wenn Sie sich auf Windows oder macOS befinden, sollten Sie die Microsoft Edge Vo
 
 <!-- links -->  
 
-[DevToolsCommandMenuIndex]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Ausführen von Befehlen mit dem Microsoft Edge DevTools-Befehlsmenü | Microsoft Docs"  
-[DevToolsCoverageIndex]: /microsoft-edge/devtools-guide-chromium/coverage/index "Suchen Sie nicht verwendeten JavaScript- und CSS-Code mit dem Coverage-Tool in Microsoft Edge DevTools | Microsoft Docs"  
-[DevToolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index#simulate-a-mobile-viewport "Simulieren eines mobilen Viewports – Simulieren von mobilen Geräten mit dem Gerätemodus in Microsoft Edge DevTools | Microsoft Docs"  
-[DevToolsNetworkIndex]: /microsoft-edge/devtools-guide-chromium/network/index "Überprüfen der Netzwerkaktivität in Microsoft Edge DevTools | Microsoft Docs"  
-[DevToolsNetworkReferenceViewInitiatorsDependencies]: /microsoft-edge/devtools-guide-chromium/network/reference#view-initiators-and-dependencies "Anzeigen von Initiatoren und Abhängigkeiten – Netzwerkanalysereferenz | Microsoft Docs"  
-[VisualStudioCodeDebuggerEdgeExtension]: /microsoft-edge/visual-studio-code/debugger-for-edge "Debugger für Microsoft Edge Visual Studio Code Erweiterung | Microsoft Docs"  
-[VisualStudioCodeElementEdgeExtension]: /microsoft-edge/visual-studio-code/elements-for-edge "Elemente für Microsoft Edge Visual Studio Code Erweiterungserweiterungen | Microsoft Docs"  
+[DevToolsCommandMenuIndex]: ../../../command-menu/index.md "Ausführen von Befehlen mit dem Microsoft Edge DevTools-Befehlsmenü | Microsoft Docs"  
+[DevToolsCoverageIndex]: ../../../coverage/index.md "Suchen Sie nicht verwendeten JavaScript- und CSS-Code mit dem Coverage-Tool in Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsDeviceModeIndex]: ../../../device-mode/index.md#simulate-a-mobile-viewport "Simulieren eines mobilen Viewports – Simulieren von mobilen Geräten mit dem Gerätemodus in Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsNetworkIndex]: ../../../network/index.md "Überprüfen der Netzwerkaktivität in Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsNetworkReferenceDisplayInitiatorsDependencies]: ../../../network/reference.md#display-initiators-and-dependencies "Anzeigen von Initiatoren und Abhängigkeiten – Netzwerkanalysereferenz | Microsoft Docs"  
+[VisualStudioCodeDebuggerEdgeExtension]: ../../../../visual-studio-code/debugger-for-edge.md "Debugger für Microsoft Edge Visual Studio Code Erweiterung | Microsoft Docs"  
+[VisualStudioCodeElementEdgeExtension]: ../../../../visual-studio-code/elements-for-edge.md "Elemente für Microsoft Edge Visual Studio Code Erweiterungserweiterungen | Microsoft Docs"  
 
 <!--  [201912Webassembly]: webassembly.md "Improved WebAssembly debugging in Microsoft Edge DevTools"  -->  
 
@@ -350,7 +350,6 @@ Wenn Sie sich auf Windows oder macOS befinden, sollten Sie die Microsoft Edge Vo
 
 [AccessibilityInsights]: https://aka.ms/a11yinsights "Einblicke in die Barrierefreiheit"  
 
-[DwarfHome]: https://dwarfstd.org "Heim der Zwerge"  
 [GitHubGoogleChromeDevToolsAuditsPanelThrottling]: https://github.com/GoogleChrome/lighthouse/blob/master/docs/throttling.md#devtools-audits-panel-throttling "DevTools' Audits Panel Throttling – GoogleChrome/| GitHub"  
 [GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://aka.ms/edgedevtoolsdocs/feedback "Neues Problem – MicrosoftDocs/edge-developer"  
 [MicrosoftEdgePreviewChannels]: https://aka.ms/microsoftedge "Microsoft Edge Vorschaukanäle"  
@@ -382,4 +381,4 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

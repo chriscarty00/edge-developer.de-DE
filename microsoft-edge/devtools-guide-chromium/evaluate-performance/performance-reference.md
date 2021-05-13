@@ -3,16 +3,16 @@ description: Im Zeitachsenereignissemodus werden alle Ereignisse angezeigt, die 
 title: Zeitachsenereignisreferenz
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 2a166c9eebc980682fa872e5ee8d213f2058b384
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: b8a15dd3503a891698d1f96bdc99946163d738ff
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398665"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564210"
 ---
 <!-- Copyright Meggin Kearney and Flavio Copes
 
@@ -27,7 +27,6 @@ ms.locfileid: "11398665"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="timeline-event-reference"></a>Zeitachsenereignisreferenz  
 
 Im Zeitachsenereignissemodus werden alle Ereignisse angezeigt, die während der Aufzeichnung ausgelöst werden.  Verwenden Sie den Zeitachsenereignisverweis, um mehr über jeden Zeitachsenereignistyp zu erfahren.  
@@ -110,7 +109,7 @@ In diesem Abschnitt werden Ereignisse aufgeführt, die zur Kategorie Rendering u
 |:--- |:--- |  
 | Ungültiges Layout | Das Seitenlayout wurde durch eine DOM-Änderung ungültig. |  
 | Layout | Ein Seitenlayout wurde abgeschlossen. |  
-| Formatvorlage neu berechnen | Microsoft Edge hat Elementformatvorlagen neu berechnet. |  
+| Formatvorlage neu berechnen | Microsoft Edge neu berechneten Elementformatvorlagen. |  
 | Scroll | Der Inhalt der geschachtelten Ansicht wurde geschachtelt. |  
 
 ### <a name="rendering-event-properties"></a>Renderingereigniseigenschaften  
@@ -119,7 +118,7 @@ In diesem Abschnitt werden Ereignisse aufgeführt, die zur Kategorie Rendering u
 |:--- |:--- |  
 | Layout ungültig | Bei Layoutdatensätzen die Stapelverfolgung des Codes, der dazu führte, dass das Layout ungültig wurde. |  
 | Knoten, die Layout benötigen | Für Layoutdatensätze die Anzahl der Knoten, die vor dem Neulayout als layout erforderlich gekennzeichnet wurden.  Dies sind normalerweise die Knoten, die durch Entwicklercode ungültig wurden, sowie ein Pfad nach oben zum Neulayout des Stamms. |  
-| Layoutstrukturgröße | Für Layoutdatensätze die Gesamtanzahl der Knoten unter dem Neulayoutstamm \(der Knoten, von dem Microsoft Edge das Neulayout startet\). |  
+| Layoutstrukturgröße | Für Layoutdatensätze die Gesamtanzahl der Knoten unter dem Neulayoutstamm \(der Knoten, der Microsoft Edge neulayout\ startet). |  
 | Layoutbereich | Mögliche Werte sind `Partial` \(die Neulayoutgrenze ist ein Teil des DOM\) oder `Whole document` . |  
 | Betroffene Elemente | Bei Neuberechnung von Formatvorlagedatensätzen die Anzahl der Elemente, die von einer Formatvorlage neu berechnet werden. |  
 | Formatvorlagen ungültig | Stellt für Die Neuberechnung von Formatvorlagedatensätzen die Stapelverfolgung des Codes zur Ursache der Format ungültigen Formatvorlage. |  
@@ -130,17 +129,17 @@ In diesem Abschnitt werden Ereignisse aufgeführt, die zur Kategorie "Malen" und
 
 | Ereignis | Beschreibung |  
 |:--- |:--- |  
-| Zusammengesetzte Ebenen | Die zusammengesetzten Bildebenen für das Microsoft Edge-Renderingmodul. |  
+| Zusammengesetzte Ebenen | Die zusammengesetzten Bildebenen für das Microsoft Edge Rendermodul. |  
 | Bilddecode | Eine Bildressource wurde decodiert. |  
 | Bildgröße | Die Größe eines Bilds wurde von den systemeigenen Dimensionen angepasst. |  
-| Paint | Zusammengesetzte Ebenen wurden in einen Bereich der Anzeige dargestellt.  Wenn Sie mit der Maus auf einen Paint-Datensatz zeigen, wird der Bereich der aktualisierten Anzeige hervorgehoben. |  
+| Paint | Zusammengesetzte Ebenen wurden in einen Bereich der Anzeige dargestellt.  Wenn Sie auf einen Paint zeigen, wird der Bereich der aktualisierten Anzeige hervorgehoben. |  
 
 ### <a name="painting-event-properties"></a>Eigenschaften des Painting-Ereignisses  
 
 | Eigenschaft | Beschreibung |  
 |:--- |:--- |  
-| Pfad | Bei Paint-Ereignissen werden die x- und y-Koordinaten des Farbrechtecks angezeigt. |  
-| Dimensionen | Bei Paint-Ereignissen die Höhe und Breite des gefärbten Bereich. |  
+| Pfad | Für Paint ereignisse die x- und y-Koordinaten des Farbrechtecks. |  
+| Dimensionen | Bei Paint die Höhe und Breite des gefärbten Bereich. |  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
@@ -166,6 +165,6 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[MegginKearney]: https://developers.google.com/web/resources/contributors/megginkearney  
-[FlavioCopes]: https://developers.google.com/web/resources/contributors/flaviocopes  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney  
+[FlavioCopes]: https://developers.google.com/web/resources/contributors#flavio-copes  

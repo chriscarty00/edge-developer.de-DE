@@ -3,16 +3,16 @@ description: FEATURES für das Debuggen von CSS-Rastern, Bearbeiten und Wiederge
 title: Neues in DevTools (Microsoft Edge 85)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 5bd013fae617e9759aa91949acccf936d85f7160
-ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
+ms.openlocfilehash: 75642a7f0fa8d6fae2f4daead84e2fc77df21e29
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "11514361"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564929"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -256,7 +256,7 @@ Chromium Problem [#1071432][CR1071432]
 
 ### <a name="line-wise-copy-and-cut-in-sources-panel"></a>Zeilenweises Kopieren und Ausschneiden im Quellenbereich  
 
-Bei der Ausführung von Kopieren oder Ausschneiden ohne Auswahl im [Editor][DevtoolsSourcesEditCssJavascript]des Quellenbereichs kopiert devTools die aktuelle Inhaltszeile oder schneidet sie aus.  
+Bei der Ausführung von Kopieren oder Ausschneiden ohne Auswahl im [Editor][DevtoolsSourcesIndexUsingEditorPaneToViewEditFiles]des Quellenbereichs kopiert devTools die aktuelle Inhaltszeile oder schneidet sie aus.  
 
 :::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="Kopieren Sie mit dem Cursor am Ende von Zeile 5 die gesamte Zeile aus pen.js devTools und einfügen Visual Studio Code" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
    Kopieren Sie mit dem Cursor am Ende von Zeile 5 die gesamte Zeile auspen.js**devTools** und einfügen in [Visual Studio Code][VisualStudioCode].
@@ -334,13 +334,13 @@ Wenn Sie sich auf Windows oder macOS befinden, sollten Sie die Microsoft Edge Vo
 
 <!-- links -->  
 
-[DevtoolsMain]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) -Entwicklertools | Microsoft Docs"  
-[DevtoolsCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu "Führen Sie Befehle mit dem Microsoft Edge DevTools-Befehlsmenü | Microsoft Docs"
-[DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "Drawer – Anpassen Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsExperimentalFeaturesTurnOn]: /microsoft-edge/devtools-guide-chromium/experimental-features#turn-on-experimental-features "Aktivieren experimenteller Features – Experimentelle Features | Microsoft Docs"  
-[DevtoolsIssues]: /microsoft-edge/devtools-guide-chromium/issues "Erkennen und Beheben von Problemen mit dem Microsoft Edge DevTools-Tool „Probleme“ | Microsoft Docs"
-[DevtoolsSourcesEditCssJavascript]: /microsoft-edge/devtools-guide-chromium/sources#edit-css-and-javascript "Bearbeiten von CSS und JavaScript – Übersicht über den Quellenbereich | Microsoft Docs"  
-[DevtoolsNetworkIndexLogActivity]: /microsoft-edge/devtools-guide-chromium/network/index#log-network-activity "Protokollnetzwerkaktivität – Überprüfen der Netzwerkaktivität in Microsoft Edge DevTools | Microsoft Docs"
+[DevtoolsIndex]: ../../../index.md "Microsoft Edge (Chromium) -Entwicklertools | Microsoft Docs"  
+[DevtoolsCommandMenu]: ../../../command-menu.md "Führen Sie Befehle mit dem Microsoft Edge DevTools-Befehlsmenü | Microsoft Docs"
+[DevtoolsCustomizeIndexDrawer]: ../../../customize/index.md#drawer "Drawer – Anpassen Microsoft Edge DevTools | Microsoft Docs"
+[DevtoolsExperimentalFeaturesTurnOn]: ../../../experimental-features/index.md#turn-on-experimental-features "Aktivieren experimenteller Features – Experimentelle Features | Microsoft Docs"  
+[DevtoolsIssues]: ../../../issues/index.md "Erkennen und Beheben von Problemen mit dem Microsoft Edge DevTools-Tool „Probleme“ | Microsoft Docs"
+[DevtoolsSourcesIndexUsingEditorPaneToViewEditFiles]: ../../../sources/index.md#using-the-editor-pane-to-view-or-edit-files "Verwenden des Editorbereichs zum Anzeigen oder Bearbeiten von Dateien – Übersicht über den Quellenbereich | Microsoft Docs"  
+[DevtoolsNetworkIndexLogActivity]: ../../../network/index.md#log-network-activity "Protokollnetzwerkaktivität – Überprüfen der Netzwerkaktivität in Microsoft Edge DevTools | Microsoft Docs"
 
 [CodepenZoherghadyaliAbdgrpz]: https://codepen.io/zoherghadyali/full/abdGrPZ "Formatbearbeitung für CSS-in-JS-Frameworks | CodePen"
 [CodepenZoherghadyaliZyrjgdJ]: https://codepen.io/zoherghadyali/full/zYrjgdJ "Senden doppelter Nachrichten an konsolen | CodePen"
@@ -420,5 +420,5 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[JecelynYeen]: https://developers.google.com/web/resources/contributors/jecelynyeen  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

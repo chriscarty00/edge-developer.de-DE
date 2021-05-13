@@ -3,18 +3,18 @@ description: Emulieren von Sehschwächen in Microsoft Edge DevTools.
 title: Emulieren von Sehschwächen in Microsoft Edge DevTools (Farbblindheit)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/09/2021
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 8c3f3a34c441692117906f51c3d8430e79fd72b1
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 1ab224f1dc70618dbef77ec6e6dbc22a0d1f47fb
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519170"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564602"
 ---
-# <a name="emulate-vision-deficiencies"></a>Emulieren von Sehstörungen
+# <a name="emulate-vision-deficiencies"></a>Emulieren von Sehstörungen  
 
 Um die Anforderungen Ihrer Benutzer [][ColorblindawarenessMain] mit Farbsichtschwäche \(Farbblindheit\) besser zu erfüllen, können Sie mit [Microsoft Edge DevTools][DevtoolsIndex] bestimmte Farbsichtschwächen simulieren.  Das **Tool Zum Emulieren von Sehschwächen** simuliert die folgenden Kategorien.  
 
@@ -37,7 +37,7 @@ Um einen Sehschwächenmangel zu simulieren, der für Ihr Webprodukt angewendet w
     :::image type="complex" source="../media/getting-to-the-rendering-tools.msft.png" alt-text="Öffnen der Renderingtools" lightbox="../media/getting-to-the-rendering-tools.msft.png":::
        Öffnen der **Renderingtools**  
     :::image-end:::  
-
+    
 Das **Menü Rendering** wird in der Schublade angezeigt.  
 
 1.  Scrollen Sie nach unten `Emulate vision deficiencies` zum Menüelement, und wählen Sie das Dropdownmenü aus, um die Optionen anzuzeigen.  
@@ -90,6 +90,6 @@ Sie können auch das **Befehlsmenü verwenden,** um auf die verschiedenen Simula
 [DevToolsIndex]: ../index.md "Microsoft Edge (Chromium) -Entwicklertools | Microsoft Docs"  
 [DevtoolsRenderingToolsIndex]: ../rendering-tools/index.md "Analysieren der Laufzeitleistung | Microsoft Docs"  
 
-[ColorblindawarenessMain]: http://www.colourblindawareness.org "Die Organisation &quot;Farbblindheit&quot;"  
+[ColorblindawarenessMain]: https://www.colourblindawareness.org "Die Organisation &quot;Farbblindheit&quot;"  
 
 [AmfcbMain]: https://www.amfcb.org "The American Foundation for the Color Blind (AFCB)"  

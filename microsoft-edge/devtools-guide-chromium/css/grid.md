@@ -1,18 +1,18 @@
 ---
-description: Erfahren Sie, wie Sie Microsoft Edge DevTools zum Anzeigen und Ändern der CSS einer Seiten-CSS verwenden.
+description: Erfahren Sie, wie Sie Microsoft Edge DevTools zum Anzeigen und Ändern der CSS einer Seite CSS verwenden.
 title: Überprüfen des CSS-Rasters in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 034fbdf82ddba39fc0818bc6f3add8824c6bb3ac
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 68493fae5e96ef1b2c7ed1205d67fd2b4cf67df5
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439261"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564455"
 ---
 # <a name="inspect-css-grid"></a>Überprüfen des CSS-Rasters  
 
@@ -188,7 +188,7 @@ Um das HTML-Element **** im Elementtool zu markieren und auf der Webseite zu die
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumOpen]: ../open/index.md "Öffnen Sie Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsGuideChromiumOpen]: ../open/index.md "Öffnen Microsoft Edge DevTools | Microsoft Docs"  
 
 [JecFyiDemoCssGridFruit]: https://jec.fyi/demo/css-grid-fruit "CSS-Raster | jec.fyi"  
 [JecFyiDemoCssGridSnack]: https://jec.fyi/demo/css-grid-snack "CSS-Raster | jec.fyi"  
@@ -207,4 +207,4 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[JecelynYeen]: https://developers.google.com/web/resources/contributors/jecelynyeen  
+[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen  

@@ -3,16 +3,16 @@ description: Erste Schritte mit CSS
 title: 'DevTools für Anfänger: Erste Schritte mit CSS'
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
-ms.openlocfilehash: 6a7135e144123917535e7c43e6a3cd608ec0c8a7
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 6f34cfa8610848505c8aa795c4fab16e5d2a98ed
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439437"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564644"
 ---
 <!-- Copyright Katherine Jackson 
 
@@ -280,7 +280,7 @@ Führen Sie die folgenden Aktionen aus, um die Formatvorlage eines vorhandenen E
        Überprüfen des Links "Start"  
     :::image-end:::  
     
-    DevTools wird neben Ihrer Seite geöffnet.  Der Code, der den Startlink darstellt, ist in der `<a href="/">Home</a>` DOM-Struktur blau hervorgehoben.  Der Codeausschnitt und die Vorschau sollten in Erste Schritte mit HTML und [dem DOM vertraut sein.][DevtoolsBeginnersHtml]  
+    DevTools wird neben Ihrer Seite geöffnet.  Der Code, der den Startlink darstellt, ist in der `<a href="/">Home</a>` DOM-Struktur blau hervorgehoben.  Der Codeausschnitt und die Vorschau sollten aus der Erste Schritte mit HTML und [dem DOM vertraut sein.][DevtoolsBeginnersHtml]  
     
     :::row:::
        :::column span="":::
@@ -600,7 +600,7 @@ Herzlichen Glückwunsch, Sie sind fertig.
 
 *   Die beste Möglichkeit, die Webentwicklung zu verbessern, ist das Erstellen von weiteren Websites.  Machen Sie sich keine Gedanken über das Brechen von Zeug.  Machen Sie einfach Spaß und lernen Sie so viel wie möglich auf dem Weg.  
 *   Weitere Informationen zum Formatieren von Webseiten finden Sie unter [Einführung in CSS][MDNCssFirstSteps].  
-*   Weitere Informationen zur Verwendung von DevTools zum Experimentieren mit dem CSS einer Seite finden Sie unter Erste Schritte mit dem Anzeigen und Ändern [von CSS][DevtoolsCssIndex].  
+*   Weitere Informationen zur Verwendung von DevTools zum Experimentieren mit dem CSS einer Seite finden Sie unter Erste Schritte Anzeigen und Ändern von [CSS][DevtoolsCssIndex].  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
@@ -609,7 +609,7 @@ Herzlichen Glückwunsch, Sie sind fertig.
 <!--- links  --->  
 
 [DevtoolsBeginnersHtml]: ./html.md "Entwicklungstools für Einsteiger: Erste Schritte mit HTML und dem DOM | Microsoft-Dokumentation"  
-[DevtoolsCssIndex]: ../css/index.md "Erste Schritte mit dem Anzeigen und Ändern von CSS-| Microsoft Docs"  
+[DevtoolsCssIndex]: ../css/index.md "Erste Schritte Mit dem Anzeigen und Ändern von CSS-| Microsoft Docs"  
 
 [MicrosoftEdgeInsider]: https://www.microsoftedgeinsider.com "Microsoft Edge Insider"  
 
@@ -619,7 +619,7 @@ Herzlichen Glückwunsch, Sie sind fertig.
 
 > [!NOTE]
 > Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
-> Die ursprüngliche Seite befindet sich [hier und](https://developers.google.com/web/tools/chrome-devtools/beginners/css) wird von [Katherine Jackson][KatherineJackson] \(Technical Writer Intern, Chrome DevTools\) verfasst.  
+> Die ursprüngliche Seite wurde [hier gefunden](https://developers.google.com/web/tools/chrome-devtools/beginners/css) und von [Katherine Jackson][KatherineJackson] \(Technical Writer Intern, Chrome DevTools\) verfasst.  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
@@ -627,5 +627,5 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[KatherineJackson]: https://developers.google.com/web/resources/contributors/katjackson  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[KatherineJackson]: https://developers.google.com/web/resources/contributors  

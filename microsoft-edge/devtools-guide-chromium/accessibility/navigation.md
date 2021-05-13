@@ -3,16 +3,16 @@ description: Eine Anleitung zum Navigieren Microsoft Edge DevTools mithilfe von 
 title: Navigieren Microsoft Edge DevTools mit Hilfstechnologie
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 343ce99188234b40dd8554e3db8bf303876e7b2f
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: cf2742dfb08ee482b26fe43417b7454e5b6ff809
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398434"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564581"
 ---
 <!-- Copyright Rob Dodson 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11398434"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="navigate-microsoft-edge-devtools-with-assistive-technology"></a>Navigieren Microsoft Edge DevTools mit Hilfstechnologie  
 
 Der folgende Artikel soll Benutzern helfen, die sich hauptsächlich auf Hilfstechnologie wie Bildschirmlesegeräte verlassen, auf Microsoft Edge devTools zugreifen und [diese verwenden.][MicrosoftEdgeDevtoolsMain]  [Microsoft Edge DevTools][MicrosoftEdgeDevtoolsMain] ist eine Suite von Webentwicklertools, die in den Microsoft Edge sind.  Wenn Sie nach DevTools-Features im Zusammenhang mit der Verbesserung der Barrierefreiheit einer Webseite suchen, navigieren Sie zu [Barrierefreiheitsreferenz][DevtoolsAccessibilityReference].  
@@ -211,7 +210,7 @@ Die **Barrierefreiheitsstruktur** wird als [ARIA-Struktur dargestellt,][W3CWaiAr
 
 **Bekannte Probleme**  
 
-*   Der Typ der [ARIA-Struktur,][W3CWaiAriaTree] die vom Barrierefreiheitsbereich verwendet wird, wird in Microsoft Edge möglicherweise nicht ordnungsgemäß für macOS-Sprachleser wie VoiceOver verfügbar gemacht. ****  Abonnieren Sie [das Chromium-#868480,][ChromiumIssues868480] um über den Fortschritt in diesem Problem informiert zu werden.  
+*   Der Typ der vom Barrierefreiheitsbereich verwendeten [ARIA-Struktur][W3CWaiAriaTree] wird möglicherweise in Microsoft Edge für macOS-Sprachleser wie VoiceOver nicht ordnungsgemäß verfügbar gemacht. ****  Abonnieren Sie [Chromium Problem #868480,][ChromiumIssues868480] um über den Fortschritt in diesem Problem informiert zu werden.  
 *   Jeder der Abschnitte **"ARIA Attributes"** und **"Computed Properties"** wird als [ARIA-Struktur][W3CWaiAriaTree]gekennzeichnet, verfügt aber zurzeit nicht über die Fokusverwaltung und kann nicht über die Tastatur ausgeführt werden.  
 
 ## <a name="audits-panel"></a>Überwachungspanel  
@@ -247,12 +246,12 @@ Verwenden Sie zum Ausführen einer neuen Überwachung, um den Bericht zu beenden
 [MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) -Entwicklertools | Microsoft Docs"  
 [DevtoolsCommandMenuIndex]: ../command-menu/index.md "Führen Sie Befehle mit dem Microsoft Edge DevTools-Befehlsmenü | Microsoft Docs"  
 [DevtoolsConsoleIndex]: ../console/index.md "Übersicht über die Konsole | Microsoft Docs"  
-[DevtoolsCssIndex]: ../css/index.md "Erste Schritte mit dem Anzeigen und Ändern von CSS-| Microsoft Docs"  
+[DevtoolsCssIndex]: ../css/index.md "Erste Schritte Mit dem Anzeigen und Ändern von CSS-| Microsoft Docs"  
 <!--[DevtoolsCssReferenceViewAppliedElement]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "CSS Reference - View only the CSS that is actually applied to an element | Microsoft Docs"  -->  
 <!--[DevtoolsDomIndex]: ../dom/index.md "Get started with viewing and changing the DOM | Microsoft Docs"  -->  
 [DevtoolsDomIndexViewDomNodes]: .. /dom/index.md#view-dom-nodes "DOM-Knoten anzeigen – Erste Schritte mit dem Anzeigen und Ändern der DOM-| Microsoft Docs"  
 [DevtoolsDomIndexNavigateDomTreeKeyboard]: .. /dom/index.md#navigate-the-dom-tree-with-a-keyboard "Navigate the DOM Tree with a keyboard - Get started with viewing and changing the DOM | Microsoft Docs"  
-[DevtoolsOpen]: .. /open/index.md "Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsOpen]: .. /open/index.md "Öffnen Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsShortcuts]: .. /shortcuts/index.md "Microsoft Edge DevTools Keyboard Shortcuts | Microsoft Docs"  
 [DevtoolsShortcutsStylesPaneKeyboard]: .. /shortcuts/index.md#styles-panel-keyboard-shortcuts "Stile panel keyboard shortcuts - Microsoft Edge DevTools Keyboard Shortcuts | Microsoft Docs"  
 
@@ -278,5 +277,5 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[RobDodson]: https://developers.google.com/web/resources/contributors/robdodson  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[RobDodson]: https://developers.google.com/web/resources/contributors#rob-dodson  

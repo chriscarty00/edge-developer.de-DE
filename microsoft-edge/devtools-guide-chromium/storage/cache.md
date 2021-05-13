@@ -3,16 +3,16 @@ description: Anzeigen von Cachedaten aus dem Anwendungsbereich von Microsoft Edg
 title: Anzeigen von Cachedaten mit Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 0ce4dbbf2456579abe84fca48bca8106384995dd
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 1f66419014682a316fa565c5ef2ab704f652637f
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439317"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564686"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11439317"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="view-cache-data-with-microsoft-edge-devtools"></a>Anzeigen von Cachedaten mit Microsoft Edge DevTools  
 
-In diesem Handbuch wird gezeigt, wie [Sie Microsoft Edge DevTools zum Überprüfen][MicrosoftEdgeDevTools] von [Cachedaten][MDNCache] verwenden.  
+In diesem Handbuch erfahren Sie, wie Sie [Microsoft Edge DevTools verwenden,][MicrosoftEdgeDevTools] um [Cachedaten zu][MDNCache] überprüfen.  
 
 Wenn Sie versuchen, HTTP-Cachedaten [zu][MDNHTTPCaching] überprüfen, ist dies nicht die von Ihnen personenbezogene Anleitung.  Suchen Sie in der Spalte **Größe** des Netzwerkprotokolls **nach den Informationen.**  Navigieren Sie zu [Netzwerkaktivität protokollieren.][DevtoolsNetworkLogActivity]  
 
@@ -42,7 +41,7 @@ Wenn Sie versuchen, HTTP-Cachedaten [zu][MDNHTTPCaching] überprüfen, ist dies 
        Der **Manifestbereich**  
     :::image-end:::  
     
-1.  Erweitern Sie den **Abschnitt Cachespeicher,** um verfügbare Caches anzeigen zu können.  
+1.  Erweitern Sie den **Abschnitt Cache Storage,** um verfügbare Caches anzeigen zu können.  
     
     :::image type="complex" source="../media/storage-application-cache-storage.msft.png" alt-text="Verfügbare Caches" lightbox="../media/storage-application-cache-storage.msft.png":::
        Verfügbare Caches  
@@ -100,10 +99,10 @@ Wenn Sie versuchen, HTTP-Cachedaten [zu][MDNHTTPCaching] überprüfen, ist dies 
 ## <a name="delete-all-cache-data"></a>Löschen aller Cachedaten  
 
 1.  Öffnen **Sie Application**Clear  >  **Storage**.  
-1.  Stellen Sie sicher, dass **das Kontrollkästchen Cachespeicher** aktiviert ist.  
+1.  Stellen Sie sicher, dass **Storage** Cache aktiviert ist.  
     
-    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png" alt-text="Das Kontrollkästchen Speicher zwischenspeichern" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png":::
-       Das **Kontrollkästchen Speicher zwischenspeichern**  
+    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png" alt-text="Das Kontrollkästchen Storage Cache" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png":::
+       Das **Kontrollkästchen Storage** Cache  
     :::image-end:::  
     
 1.  Wählen **Sie Websitedaten löschen aus.**  
@@ -134,4 +133,4 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

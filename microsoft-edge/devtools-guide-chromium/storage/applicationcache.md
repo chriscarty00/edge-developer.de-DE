@@ -3,16 +3,16 @@ description: Anzeigen von Anwendungscachedaten aus dem Anwendungsbereich von Mic
 title: Anzeigen von Anwendungscachedaten mit Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: cbe6623aa3132db4d01cd6b440702eb157525eed
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: ec0d1a003e621ecc2220c3eb0d03992bcd8fffa1
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519142"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565022"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,11 +27,12 @@ ms.locfileid: "11519142"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="view-application-cache-data-with-microsoft-edge-devtools"></a>Anzeigen von Anwendungscachedaten mit Microsoft Edge DevTools  
 
 > [!WARNING]
 > Die Anwendungscache-API [wird von der Webplattform entfernt.][HTMLStandardOfflineWebApplications]  
+
+<!--todo: Replace [HTMLStandardOfflineWebApplications] with [WebDevAppcacheRemoval].  -->  
 
 In diesem Handbuch erfahren Sie, wie Sie [Microsoft Edge DevTools verwenden,][MicrosoftEdgeDevTools] um Anwendungscacheressourcen [zu][MDNWebAPIsWindowApplicationCache] überprüfen.  
 
@@ -81,6 +82,8 @@ Am unteren Rand der Tabelle befinden sich Statussymbole, die Ihre Netzwerkverbin
 [MDNHTMLResourcesInAnApplicationCache]: https://developer.mozilla.org/docs/Web/HTML/Using_the_application_cache#Resources_in_an_application_cache "Ressourcen in einem Anwendungscache | MDN"  
 [MDNWebAPIsWindowApplicationCache]: https://developer.mozilla.org/docs/Web/API/Window/applicationCache "Window.applicationCache – Web-APIs | MDN"  
 
+[WebDevAppcacheRemoval]: https://web.dev/appcache-removal "Vorbereiten der AppCache-| web.dev"  
+
 > [!NOTE]
 > Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
 > Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/storage/applicationcache) und wird von [Kayce Basken][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) verfasst.  
@@ -91,4 +94,4 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

@@ -3,16 +3,16 @@ description: Öffnen Sie das Tool Sensoren, und wählen Sie Koordinaten aus der 
 title: Überschreiben der Geolocation Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 8f6ad09b2f8db110f6743aae32e16cc9b1185400
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 5e162d5591dec4013a899a16b0c56fd09d58610f
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399001"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564329"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11399001"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="override-geolocation-with-microsoft-edge-devtools"></a>Überschreiben der Geolocation Microsoft Edge DevTools  
 
 Viele Websites nutzen den Benutzerspeicherort, um den Benutzern eine relevantere Benutzererfahrung zu bieten.  Beispielsweise kann eine Wetterwebsite die lokale Wettervorhersage im Bereich eines Benutzers anzeigen, nachdem der Benutzer der Website die Berechtigung zum Zugriff auf den aktuellen Benutzerstandort erteilt hat.  
@@ -67,4 +66,4 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

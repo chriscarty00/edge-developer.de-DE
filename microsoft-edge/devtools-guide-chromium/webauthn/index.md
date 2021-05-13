@@ -3,26 +3,26 @@ description: Emulieren von Authenticators und Debuggen von WebAuthn in Microsoft
 title: Emulieren von Authatoren und Debuggen von WebAuthn in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 3200f22485bfd642a37a7d34ac727b8da4500d06
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: d5eeedfaa98e56bbba81634685a223844803a1ad
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11231181"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564035"
 ---
-# Emulieren von Authatoren und Debuggen von WebAuthn in Microsoft Edge DevTools  
+# <a name="emulate-authenticators-and-debug-webauthn-in-microsoft-edge-devtools"></a>Emulieren von Authatoren und Debuggen von WebAuthn in Microsoft Edge DevTools  
 
 Anstatt die Webauthentifizierung in Ihrer Website oder App mit physischen Authentatoren zu debuggen, verwenden Sie das **WebAuthn-Tool** in Microsoft Edge DevTools zum Erstellen und Interagieren mit softwarebasierten virtuellen Authentatoren.  
 
-## Vorbemerkungen  
+## <a name="before-you-begin"></a>Vorbemerkungen  
 
 Ein hervorragender Ort, um mit der Webauthentifizierung zu beginnen, ist die [Webauthentifizierungs-API-Spezifikation.][GithubW3cWebauthn]  
 
-## Einrichten des WebAuthn-Tools  
+## <a name="set-up-the-webauthn-tool"></a>Einrichten des WebAuthn-Tools  
 
 1.  Navigieren Sie zu einer Webseite, die WebAuthn verwendet, z. B. die folgende Demowebsite.  
     
@@ -65,7 +65,7 @@ Der **Authenticator** enthält eine **Credentials-Tabelle.**  Die Tabelle ist le
    Keine Anmeldeinformationen  
 :::image-end:::  
 
-## Registrieren neuer Anmeldeinformationen  
+## <a name="register-a-new-credential"></a>Registrieren neuer Anmeldeinformationen  
 
 Führen Sie die folgenden Schritte aus, um neue Anmeldeinformationen zu registrieren.  Weitere Informationen zur [Webauthentifizierungs-API][GithubW3cWebauthn] beim Registrieren neuer Anmeldeinformationen finden Sie unter [Create a New Credential][GithubW3cWebauthnSctnCreatecredential].  
 
@@ -78,7 +78,7 @@ Führen Sie die folgenden Schritte aus, um neue Anmeldeinformationen zu registri
     
 Wählen Sie auf der Demowebsite die Schaltfläche **Authentifizieren** aus.  Stellen Sie [sicher,][GithubW3cWebauthnSctnSignCounter] dass die Anzahl der Anmeldeinformationen in der **Tabelle** Anmeldeinformationen um 1 erhöht wurde, was einen erfolgreichen [AuthenticatorGetAssertion-Vorgang][GithubW3cWebauthnAuthenticatorgetassertion] kennzeichnet.  
 
-## Exportieren und Entfernen von Anmeldeinformationen  
+## <a name="export-and-remove-credentials"></a>Exportieren und Entfernen von Anmeldeinformationen  
 
 Zum Exportieren oder Entfernen von Anmeldeinformationen wählen Sie die Schaltfläche **Exportieren** **oder** Entfernen aus.  
 
@@ -86,7 +86,7 @@ Zum Exportieren oder Entfernen von Anmeldeinformationen wählen Sie die Schaltfl
    Exportieren oder Entfernen von Anmeldeinformationen  
 :::image-end:::  
 
-## Umbenennen eines Authentators  
+## <a name="rename-an-authenticator"></a>Umbenennen eines Authentators  
 
 Führen Sie die folgenden Schritte aus, um einen Authentator umzubenennen.  
 
@@ -97,7 +97,7 @@ Führen Sie die folgenden Schritte aus, um einen Authentator umzubenennen.
    Umbenennen eines Authentators  
 :::image-end:::  
 
-## Festlegen des aktiven Authentators  
+## <a name="set-the-active-authenticator"></a>Festlegen des aktiven Authentators  
 
 Ein neu erstellter Authentator wird automatisch aktiviert.  Um einen anderen virtuellen Authentator zu verwenden, wählen Sie das **Optionsfeld Aktiv** neben dem Authentator aus.  
 
@@ -108,7 +108,7 @@ Ein neu erstellter Authentator wird automatisch aktiviert.  Um einen anderen vir
    Festlegen des aktiven Authentator  
 :::image-end:::  
 
-## Entfernen eines virtuellen Authentators  
+## <a name="remove-a-virtual-authenticator"></a>Entfernen eines virtuellen Authentators  
 
 Um einen virtuellen Authentator zu entfernen, wählen Sie neben dem Authentator die Schaltfläche **Entfernen** aus.  
 
@@ -116,7 +116,7 @@ Um einen virtuellen Authentator zu entfernen, wählen Sie neben dem Authentator 
    Entfernen des Authentator  
 :::image-end:::  
 
-## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -147,4 +147,4 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[JecelynYeen]: https://developers.google.com/web/resources/contributors/jecelynyeen  
+[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen  

@@ -1,18 +1,18 @@
 ---
-description: Anzeigen und Bearbeiten von sessionStorage mit dem Sitzungsspeicherbereich und der Konsole.
-title: Anzeigen und Bearbeiten des Sitzungsspeichers mit Microsoft Edge DevTools
+description: Anzeigen und Bearbeiten von sessionStorage mit dem Sitzungs-Storage und der Konsole.
+title: Anzeigen und Bearbeiten von Sitzungs Storage mit Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 0168b01fd01071ebd19bd211c6d947ae006d778c
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 6d686a6eb7bc6fca46d65c46fa9c5aee044ec052
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439661"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565064"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11439661"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
+# <a name="view-and-edit-session-storage-with-microsoft-edge-devtools"></a>Anzeigen und Bearbeiten von Sitzungs Storage mit Microsoft Edge DevTools  
 
-# <a name="view-and-edit-session-storage-with-microsoft-edge-devtools"></a>Anzeigen und Bearbeiten des Sitzungsspeichers mit Microsoft Edge DevTools  
-
-In diesem Handbuch erfahren Sie, wie [Sie Microsoft Edge DevTools][MicrosoftEdgeDevTools] zum Anzeigen, Bearbeiten und Löschen von SessionStorage-Schlüssel-Wert-Paaren verwenden. [][MDNSessionStorage]  
+In diesem Handbuch erfahren Sie, wie Sie [Microsoft Edge DevTools][MicrosoftEdgeDevTools] zum Anzeigen, Bearbeiten und Löschen von sessionStorage-Schlüssel-Wert-Paaren verwenden. [][MDNSessionStorage]  
 
 ## <a name="view-sessionstorage-keys-and-values"></a>Anzeigen von sessionStorage-Schlüsseln und -Werten  
 
@@ -40,10 +39,10 @@ In diesem Handbuch erfahren Sie, wie [Sie Microsoft Edge DevTools][MicrosoftEdge
        Der **Manifestbereich**  
     :::image-end:::  
     
-1.  Erweitern Sie **das Menü Sitzungsspeicher.**  
+1.  Erweitern Sie **das Menü Storage** Sitzung.  
     
-    :::image type="complex" source="../media/storage-application-storage-session-storage.msft.png" alt-text="Das Menü "Sitzungsspeicher"" lightbox="../media/storage-application-storage-session-storage.msft.png":::
-       Das **Menü "Sitzungsspeicher"**  
+    :::image type="complex" source="../media/storage-application-storage-session-storage.msft.png" alt-text="Das Menü Storage Sitzung" lightbox="../media/storage-application-storage-session-storage.msft.png":::
+       Das **Menü Storage** Sitzung  
     :::image-end:::  
     
 1.  Wählen Sie eine Domäne aus, um die Schlüssel-Wert-Paare anzeigen zu können.  
@@ -123,4 +122,4 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

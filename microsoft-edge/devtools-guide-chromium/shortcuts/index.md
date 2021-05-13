@@ -3,16 +3,16 @@ description: Die kanonische Dokumentation für Microsoft Edge DevTools-Tastenkom
 title: Microsoft Edge DevTools-Tastenkombinationen
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: c622d529a8008248d57a6b1b0656636a982054c1
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: f2b10bc763073632975248cd5a9caa523702e869
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519408"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565099"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11519408"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="microsoft-edge-devtools-keyboard-shortcuts"></a>Microsoft Edge DevTools-Tastenkombinationen  
 
-Dieser Artikel ist eine Referenz zu Tastenkombinationen in Microsoft Edge DevTools.
+Dieser Artikel ist ein Verweis auf Tastenkombinationen in Microsoft Edge DevTools.
 
 Verknüpfungen finden Sie möglicherweise auch in QuickInfos.  Zeigen Sie auf ein Benutzeroberflächenelement von DevTools, um die QuickInfo angezeigt zu werden.  Wenn das Element über eine Verknüpfung verfügt, enthält die QuickInfo sie.
 
@@ -50,7 +49,7 @@ Die folgenden Tastenkombinationen sind in den meisten, wenn nicht in allen DevTo
 
 | Aktion | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
-| Anzeigen von **Einstellungen** | `?` or `F1` | `?` oder `Function`+`F1` |  
+| Anzeigen **Einstellungen** | `?` or `F1` | `?` oder `Function`+`F1` |  
 | Fokus auf den nächsten Bereich | `Control`+`]` | `Command`+`]` |  
 | Fokussieren des vorherigen Panels | `Control`+`[` | `Command`+`[` |  
 | Wechseln Sie zurück zu der [Dockingposition, die][DevtoolsCustomizeIndexPlacement] Sie zuletzt verwendet haben.  Wenn DevTools für die gesamte Sitzung an der Standardposition war, wird DevTools mit dieser Verknüpfung in einem separaten Fenster entfernt. | `Control`+`Shift`+`D` | `Command`+`Shift`+`D` |  
@@ -161,10 +160,10 @@ Die folgenden Tastenkombinationen sind in den meisten, wenn nicht in allen DevTo
 <!-- links -->  
 
 [DevtoolsCommandMenuIndex]: ../command-menu/index.md "Ausführen von Befehlen mit dem Microsoft Edge DevTools-Befehlsmenü | Microsoft Docs"  
-[DevtoolsCustomizeIndexDrawer]: ../customize/index.md#drawer "Drawer – Anpassen von Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsCustomizeIndexPlacement]: ../customize/index.md#change-devtools-placement "DevTools-Platzierung ändern – Anpassen von Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeIndexDrawer]: ../customize/index.md#drawer "Drawer – Anpassen Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeIndexPlacement]: ../customize/index.md#change-devtools-placement "DevTools-Platzierung ändern – Anpassen Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsDeviceModeIndex]: ../device-mode/index.md "Emulieren von mobilen Geräten in Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsJavascriptBreakpointsLOC]: ../javascript/breakpoints.md#line-of-code-breakpoints "Zeilen-von-Code-Haltepunkte – So halten Sie Ihren Code mit Haltepunkten in Microsoft Edge DevTools-| Microsoft Docs"  
+[DevtoolsJavascriptBreakpointsLOC]: ../javascript/breakpoints.md#line-of-code-breakpoints "Zeilen-von-Code-Haltepunkte : So halten Sie Ihren Code mit Haltepunkten in Microsoft Edge DevTools | Microsoft Docs"  
 
 <!--[201705ReleaseNotesContinue]: whats-new/2017/05/devtools-release-notes#continue  -->  
 
@@ -178,4 +177,4 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

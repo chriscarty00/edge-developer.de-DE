@@ -1,18 +1,18 @@
 ---
-description: Anzeigen und Bearbeiten von localStorage mit dem Bereich "Lokaler Speicher" und der Konsole.
-title: Anzeigen und Bearbeiten des lokalen Speichers mit Microsoft Edge DevTools
+description: Anzeigen und Bearbeiten von localStorage mit dem Bereich Lokale Storage und der Konsole.
+title: Anzeigen und Bearbeiten lokaler Storage mit Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 4eebf3108e7b1c6ecaecbfed445e8f3fe26215c4
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 5088a1b9d7ab2b92051d099e76b8b07bbd5db5f8
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439675"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565050"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11439675"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="view-and-edit-local-storage-with-microsoft-edge-devtools"></a>Anzeigen und Bearbeiten des lokalen Speichers mit Microsoft Edge DevTools  
 
-In diesem Handbuch erfahren Sie, wie [Sie Microsoft Edge DevTools][MicrosoftEdgeDevTools] zum Anzeigen, Bearbeiten und Löschen von localStorage-Schlüssel-Wert-Paaren verwenden. [][MDNWindowsLocalStorage]  
+In diesem Handbuch wird gezeigt, wie Sie [Microsoft Edge DevTools][MicrosoftEdgeDevTools] zum Anzeigen, Bearbeiten und Löschen von localStorage-Schlüssel-Wert-Paaren verwenden. [][MDNWindowsLocalStorage]  
 
 ## <a name="view-localstorage-keys-and-values"></a>Anzeigen von localStorage-Schlüsseln und -Werten  
 
@@ -40,10 +39,10 @@ In diesem Handbuch erfahren Sie, wie [Sie Microsoft Edge DevTools][MicrosoftEdge
        Der **Manifestbereich**  
     :::image-end:::  
     
-1.  Erweitern Sie **das Menü Lokaler Speicher.**  
+1.  Erweitern Sie **das Menü Lokale Storage.**  
     
-    :::image type="complex" source="../media/storage-application-local-storage.msft.png" alt-text="Menü "Lokaler Speicher"" lightbox="../media/storage-application-local-storage.msft.png":::
-       Menü **"Lokaler Speicher"**  
+    :::image type="complex" source="../media/storage-application-local-storage.msft.png" alt-text="Menü Lokale Storage" lightbox="../media/storage-application-local-storage.msft.png":::
+       Das **Menü Lokale Storage**  
     :::image-end:::  
     
 1.  Wählen Sie eine Domäne aus, um die Schlüssel-Wert-Paare anzeigen zu können.  
@@ -123,4 +122,4 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

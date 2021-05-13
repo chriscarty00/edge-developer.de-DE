@@ -3,16 +3,16 @@ description: Verwenden Sie die Zuordnungsinstrumentation auf der Zeitachse, um O
 title: Verwenden der Zuordnungsinstrumentation auf der Zeitachse
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 374b7f0ad80b8975319b2b0ec5cecf42ce4bde82
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: a02249840256b1e5a2469a253d765eb888527662
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397818"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564084"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11397818"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License. -->
-
 # <a name="how-to-use-allocation-instrumentation-on-timeline"></a>Verwenden der Zuordnungsinstrumentation auf der Zeitachse  
 
 Verwenden **Sie die Zuordnungsinstrumentation auf der** Zeitachse, um Objekte zu finden, die nicht ordnungsgemäß gesammelt werden, und behalten Sie weiterhin Arbeitsspeicher bei.  
@@ -91,13 +90,13 @@ Sie können die Speicherzuweisung über die JavaScript-Funktion anzeigen.  Weite
 
 <!-- links -->  
 
-[DevToolsOpenIndex]: ../open/index.md "Öffnen Sie Microsoft Edge (Chromium) DevTools | Microsoft Docs"
+[DevToolsOpenIndex]: ../open/index.md "Öffnen Microsoft Edge (Chromium) DevTools | Microsoft Docs"
 [DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: ./index.md#investigate-memory-allocation-by-function "Untersuchen der Speicherzuweisung nach Funktion – Beheben von Speicherproblemen | Microsoft Docs"  
 
 <!--[HeapProfiler]: ./heap-snapshots.md "How to Record Heap Snapshots"  -->  
 <!--[PerformancePanel]: ../profile/evaluate-performance/timeline-tool ""  -->  
 
-[MicrosoftEdgeChannel]: https://www.microsoftedgeinsider.com/download "Herunterladen eines Microsoft Edge-Kanals"  
+[MicrosoftEdgeChannel]: https://www.microsoftedgeinsider.com/download "Herunterladen eines Microsoft Edge Kanals"  
 
 > [!NOTE]
 > Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
@@ -109,5 +108,5 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[MegginKearney]: https://developers.google.com/web/resources/contributors/megginkearney  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney  

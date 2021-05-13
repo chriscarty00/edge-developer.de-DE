@@ -3,16 +3,16 @@ description: Hosten Sie eine Website auf einem Webserver des Entwicklungscompute
 title: Zugreifen auf lokale Server
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/25/2021
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 51ef0d951d587d310b6474698924d9f87cf68607
-ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
+ms.openlocfilehash: 2d721a0ccd27befc7a59726f4c5ef9227042b30b
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "11461262"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565092"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -72,7 +72,7 @@ Angenommen, Ihre Website verwendet eine JavaScript-Bibliothek eines Drittanbiete
 
 ### <a name="set-up-port-forwarding-to-proxy-server"></a>Einrichten der Port weiterleitung an den Proxyserver  
 
-Zum Zuordnung einer benutzerdefinierten Domäne müssen Sie einen Proxyserver auf dem Entwicklungscomputer ausführen.  Beispiele für Proxyserver sind [Charles][CharlesWebDebuggingProxy], [Squid][SquidOptimisingWebDelivery]und [Fiddler][FiddlerWebDebuggingProxy].  
+Zum Zuordnung einer benutzerdefinierten Domäne müssen Sie einen Proxyserver auf dem Entwicklungscomputer ausführen.  Beispiele für Proxyserver sind [Charles][CharlesWebDebuggingProxy], [Squid][SquidCacheWiki]und [Fiddler][TelerikFiddler].  
 
 So richten Sie die Port weiterleitung an einen Proxy ein:  
 
@@ -119,9 +119,9 @@ Wenn auf Ihrem Webserver ein nicht standardmäßiger Port ausgeführt wird, denk
 
 [CharlesWebDebuggingProxy]: https://www.charlesproxy.com "Charles Web Debugging Proxy"  
 
-[SquidOptimisingWebDelivery]: https://www.squid-cache.org "squid : Optimieren der Webzustellung"  
+[SquidCacheWiki]: https://wiki.squid-cache.org "Squid Wiki Proxy Wiki"  
 
-[FiddlerWebDebuggingProxy]: https://www.telerik.com/fiddler "Fiddler – Free Web Debugging Proxy"  
+[TelerikFiddler]: https://www.telerik.com/fiddler "Fiddler – Free Web Debugging Proxy"  
 
 > [!NOTE]
 > Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
@@ -133,5 +133,5 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[MegginKearney]: https://developers.google.com/web/resources/contributors/megginkearney  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney  

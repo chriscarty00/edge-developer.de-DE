@@ -3,7 +3,7 @@ description: Whitepaper zum Microsoft Edge-Datenschutz
 title: Whitepaper zum Microsoft Edge-Datenschutz
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/20/2021
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Datenschutz, Whitepaper, Vertrauen
@@ -11,12 +11,12 @@ ms.localizationpriority: high
 no-loc:
 - Cast
 - Google Cast
-ms.openlocfilehash: 52eb4e47ae70a222b24a70d5903f84e20058685b
-ms.sourcegitcommit: 1b1f099d9b0a8310784ccc8afd641e0708609602
+ms.openlocfilehash: ac07c968bbbf7f995018aa326a3f8781bda11e74
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "11496940"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564861"
 ---
 # <a name="microsoft-edge-privacy-whitepaper"></a>Whitepaper zum Microsoft Edge-Datenschutz  
 
@@ -104,7 +104,7 @@ Die Microsoft Edge-Entwicklungstools umfassen Tools für Website-Debugging und -
 
 Microsoft verwendet Diagnosedaten, um unsere Produkte und Dienste zu verbessern und unsere Produkte sicher, aktuell und erwartungsgemäß leistungsfähig zu halten. Wenn wir Daten sammeln, möchten wir sicherstellen, dass sie die richtige Wahl für Sie sind. Microsoft ist bestrebt, den Umfang der Datenerfassung möglichst gering zu halten. Wir sind daher bemüht, nur die benötigten Daten zu erfassen und diese nur so lange zu speichern, wie dies für die Verbesserung unserer Produkte und Dienste notwendig ist. 
 
-Microsoft Edge erfasst eine Reihe erforderlicher Diagnosedaten, die benötigt werden, um das Produkt sicher, auf dem neuesten Stand und leistungsfähig zu halten. Die erforderlichen Diagnosedaten umfassen Daten wie Gerätekonnektivität, Konfigurationsinformationen, Software-Setup und Inventurdaten. Microsoft verwendet diese erforderlichen Diagnosedaten, um Probleme zu beheben und die Microsoft-Produkte und -Dienste zuverlässig, sicher und ordnungsgemäß funktionsfähig zu halten. Für weitere Informationen zu Diagnosedaten auf verwalteten Geräten navigieren Sie zu [Konfigurieren von Windows-Diagnosedaten in Ihrer Organisation][WindowsPrivacyConfigureDiagnosticDataOrganization] und [Microsoft Edge-Gruppenrichtlinie über die Diagnosedaten](https://docs.microsoft.com/deployedge/microsoft-edge-enterprise-privacy-settings). 
+Microsoft Edge erfasst eine Reihe erforderlicher Diagnosedaten, die benötigt werden, um das Produkt sicher, auf dem neuesten Stand und leistungsfähig zu halten. Die erforderlichen Diagnosedaten umfassen Daten wie Gerätekonnektivität, Konfigurationsinformationen, Software-Setup und Inventurdaten. Microsoft verwendet diese erforderlichen Diagnosedaten, um Probleme zu beheben und die Microsoft-Produkte und -Dienste zuverlässig, sicher und ordnungsgemäß funktionsfähig zu halten. Für weitere Informationen zu Diagnosedaten auf verwalteten Geräten navigieren Sie zu [Konfigurieren von Windows-Diagnosedaten in Ihrer Organisation][WindowsPrivacyConfigureDiagnosticDataOrganization] und [Microsoft Edge-Gruppenrichtlinie über die Diagnosedaten](/deployedge/microsoft-edge-enterprise-privacy-settings).  
 
 :::image type="complex" source="./media/diagnostic-data2.png" alt-text="Diagnosedaten" lightbox="./media/diagnostic-data2.png":::
    Diagnosedaten  

@@ -3,16 +3,16 @@ description: Verwenden Sie das Medientool, um Informationen anzuzeigen und die M
 title: Anzeigen und Debuggen von Informationen zu Media Playern
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 7680faa13f65a2ea6f0a8b085316b5ed67bfdaba
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 0d2a60c31d5239a4b47102ae96a713b8bfcf46f3
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398406"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564063"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -27,10 +27,9 @@ ms.locfileid: "11398406"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="view-and-debug-media-players-information"></a>Anzeigen und Debuggen von Informationen zu Media Playern  
 
-Verwenden Sie **das Medientool** in Microsoft Edge DevTools, um Informationen anzuzeigen und die Media Player pro Browserregisterkarte zu debuggen.  
+Verwenden Sie **das Tool Media** in Microsoft Edge DevTools, um Informationen anzuzeigen und die Media Player pro Browserregisterkarte zu debuggen.  
 
 ## <a name="open-the-media-tool"></a>Öffnen des Medientools  
 
@@ -76,7 +75,7 @@ Das **Medientool** ist der wichtigste Ort in DevTools zum Überprüfen des Media
     
 ### <a name="remote-debugging"></a>Remotedebugging  
 
-Zeigen Sie die Media Player-Informationen auf einem Android-Gerät von Ihrem Windows- oder macOS-Computer an.  
+Zeigen Sie die Media Player-Informationen auf einem Android-Gerät von Ihrem Windows oder macOS-Computer an.  
 
 1.  Navigieren Sie zum Einrichten des Remotedebu debuggings zu [Erste Schritte mit Remotedebugen von Android-Geräten.][DevtoolsGuideChromiumRemoteDebuggingIndex]  
 1.  Zeigen Sie die Media Player-Informationen remote an.  
@@ -117,7 +116,7 @@ Sie können festlegen, dass \(oder show\) jeder Media Player ausgeblendet werden
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumOpen]: ../open/index.md "Öffnen Sie Microsoft Edge (Chromium) DevTools | Microsoft Docs"  
+[DevtoolsGuideChromiumOpen]: ../open/index.md "Öffnen Microsoft Edge (Chromium) DevTools | Microsoft Docs"  
 
 [DevtoolsGuideChromiumRemoteDebuggingIndex]: ../remote-debugging/index.md "Erste Schritte mit remote debuggen von Android-Geräten | Microsoft Docs"  
 
@@ -133,5 +132,5 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[JecelynYeen]: https://developers.google.com/web/resources/contributors/jecelynyeen  
+[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen  
 

@@ -3,16 +3,16 @@ description: Ein Verweis auf alle Möglichkeiten zum Aufzeichnen und Analysieren
 title: Referenz zur Leistungsanalyse
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: e7774dc0aab647b8cf2bf47699368fafe6c21d70
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 5cd7c4aee6eb5f0c48f783e250efa1ef69010fc4
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439689"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564350"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,12 +27,11 @@ ms.locfileid: "11439689"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="performance-analysis-reference"></a>Referenz zur Leistungsanalyse  
 
 Diese Seite ist eine umfassende Referenz zu Microsoft Edge DevTools-Features im Zusammenhang mit der Leistungsanalyse.  
 
-Navigieren Sie [zu Erste Schritte mit der Analyse der Laufzeitleistung][DevtoolsEvaluatePerformanceGettingStarted] für ein geführtes Lernprogramm zum Analysieren der Leistung einer Seite mithilfe von Microsoft Edge [DevTools][MicrosoftEdgeDevTools].  
+Navigieren Sie zu Erste Schritte Mit Analysieren der [Laufzeitleistung][DevtoolsEvaluatePerformanceGettingStarted] für ein geführtes Lernprogramm zum Analysieren der Leistung einer Seite mit [Microsoft Edge DevTools][MicrosoftEdgeDevTools].  
 
 ## <a name="record-performance"></a>Aufzeichnen der Leistung  
 
@@ -91,8 +90,8 @@ Wählen Sie beim Aufzeichnen einer Seite die Option Garbage **sammeln** \( Garba
 
 Wählen **Sie Aufnahmeeinstellungen** \( Aufnahmeeinstellungen \) aus, um weitere Einstellungen im Zusammenhang mit der Erfassung von Leistungsaufzeichnungen durch ![ ](../media/capture-settings-icon.msft.png) DevTools verfügbar zu machen.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png" alt-text="Abschnitt "Aufnahmeeinstellungen"" lightbox="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png":::
-   Abschnitt **"Aufnahmeeinstellungen"**  
+:::image type="complex" source="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png" alt-text="Der Abschnitt Capture Einstellungen" lightbox="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png":::
+   Der **Abschnitt "Capture Einstellungen"**  
 :::image-end:::  
 
 ### <a name="disable-javascript-samples"></a>Deaktivieren von JavaScript-Beispielen  
@@ -498,10 +497,10 @@ So verschieben Sie das Diagramm:
 So zeigen Sie erweiterte Informationen zu einem Paint-Ereignis an:  
 
 1.  [Aktivieren Sie](#turn-on-advanced-paint-instrumentation).  
-1.  Wählen Sie im **Abschnitt** Main ein **Paint-Ereignis** aus.  
+1.  Wählen Sie **ein Paint** im **Abschnitt Main** aus.  
     
-    :::image type="complex" source="../media/evaluate-performance-paint-profiler.msft.png" alt-text="Der Bereich "Paint Profiler"" lightbox="../media/evaluate-performance-paint-profiler.msft.png":::
-       Der **Bereich "Paint Profiler"**  
+    :::image type="complex" source="../media/evaluate-performance-paint-profiler.msft.png" alt-text="Der Paint Profilerbereich" lightbox="../media/evaluate-performance-paint-profiler.msft.png":::
+       Der **Paint Profilerbereich**  
     :::image-end:::  
     
 ## <a name="analyze-rendering-performance-with-the-rendering-tool"></a>Analysieren der Renderingleistung mit dem Renderingtool  
@@ -530,15 +529,15 @@ Die **#A0 ist** eine Überlagerung, die in der oberen rechten Ecke Des Viewports
     
 ### <a name="view-painting-events-in-realtime-with-paint-flashing"></a>Anzeigen von Malereignissen in Echtzeit mit Paint Flashing  
 
-Verwenden Sie Paint Flashing, um eine Echtzeitansicht aller Malereignisse auf der Seite zu erhalten.  Jedes Mal, wenn ein Teil der Seite neu angestrichen wird, umreißt DevTools diesen Abschnitt grün.  
+Verwenden Paint Flashing, um eine Echtzeitansicht aller Malereignisse auf der Seite zu erhalten.  Jedes Mal, wenn ein Teil der Seite neu angestrichen wird, umreißt DevTools diesen Abschnitt grün.  
 
-Führen Sie die folgenden Aktionen aus, um das Blinken von Farben zu aktivieren.  
+Führen Sie die folgenden Aktionen aus, um Paint flashing zu aktivieren.  
 
 1.  Öffnen Sie das **Renderingtool.**  Navigieren Sie zu [Renderleistung mit dem Renderingtool analysieren.](#analyze-rendering-performance-with-the-rendering-tool)  
-1.  Aktivieren Sie das **Kontrollkästchen Farbenblitzen.**  
+1.  Aktivieren Sie das **Kontrollkästchen Paint Blinken.**  
     
-    :::image type="complex" source="../media/evaluate-performance-jank-console-rendering-paint-flashing.msft.png" alt-text="Blinken von Farben" lightbox="../media/evaluate-performance-jank-console-rendering-paint-flashing.msft.png":::
-       **Blinken von Farben**  
+    :::image type="complex" source="../media/evaluate-performance-jank-console-rendering-paint-flashing.msft.png" alt-text="Paint Blinken" lightbox="../media/evaluate-performance-jank-console-rendering-paint-flashing.msft.png":::
+       **Paint Blinken**  
     :::image-end:::  
     
 ### <a name="view-an-overlay-of-layers-with-layer-borders"></a>Anzeigen einer Überlagerung von Ebenen mit Ebenenrändern  
@@ -577,7 +576,7 @@ Führen Sie die folgenden Aktionen aus, um Probleme mit der Bildlaufleistung zu 
 <!-- links -->  
 
 [MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Entwicklertools | Microsoft Docs"  
-[DevToolsCommandMenu]: ../command-menu/index.md#open-the-command-menu "Öffnen Sie das Befehlsmenü - Befehle ausführen mit dem Microsoft Edge DevTools-Befehlsmenü | Microsoft Docs"  
+[DevToolsCommandMenu]: ../command-menu/index.md#open-the-command-menu "Öffnen Sie das Befehlsmenü - Befehle ausführen mit Microsoft Edge DevTools Command Menu | Microsoft Docs"  
 [DevtoolsEvaluatePerformanceGettingStarted]: ./index.md "Erste Schritte mit der Analyse der Laufzeitleistung | Microsoft Docs"  
 
 [ActivityTabsDemo]: https://microsoft-edge-chromium-devtools.glitch.me/perf/activitytabs.html "Aktivitätsregisterkarten Demo | glitch"  
@@ -594,4 +593,4 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

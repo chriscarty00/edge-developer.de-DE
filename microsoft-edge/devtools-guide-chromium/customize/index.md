@@ -1,18 +1,18 @@
 ---
-description: Eine Liste der Möglichkeiten zum Anpassen von Microsoft Edge DevTools
-title: Anpassen von Microsoft Edge DevTools
+description: Eine Liste der Möglichkeiten zum Anpassen Microsoft Edge DevTools
+title: Anpassen Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 2b242fcb74b7c8cdbca2d523c55ab4e5eed56b45
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 0be3219579794dca28f71e336da1154f31f2d2be
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399039"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564385"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,19 +27,18 @@ ms.locfileid: "11399039"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
+# <a name="customize-microsoft-edge-devtools"></a>Anpassen Microsoft Edge DevTools  
 
-# <a name="customize-microsoft-edge-devtools"></a>Anpassen von Microsoft Edge DevTools  
-
-Auf dieser Seite werden die Möglichkeiten zum Anpassen von Microsoft Edge DevTools aufgeführt.  
+Auf dieser Seite werden die Möglichkeiten zum Anpassen Microsoft Edge DevTools aufgeführt.  
 
 ## <a name="settings"></a>Einstellungen  
 
 **Einstellungen**  >  **Einstellungen enthalten** viele Optionen zum Anpassen von DevTools.  
 
-Führen Sie zum Öffnen von Einstellungen eine der folgenden Aktionen aus.  
+Führen Sie zum Einstellungen eine der folgenden Aktionen aus.  
 
 *   Wählen `F1` Sie aus, während DevTools im Fokus steht.  
-*   Öffnen Sie **das Hauptmenü,** und wählen Sie dann **Einstellungen aus.**  
+*   Öffnen Sie **das Hauptmenü,** und wählen Sie **dann Einstellungen**.  
     
 :::image type="complex" source="../media/customize-settings-preferences.msft.png" alt-text="Einstellungen" lightbox="../media/customize-settings-preferences.msft.png":::
    **Einstellungen**  
@@ -111,7 +110,7 @@ Führen Sie die folgenden Aktionen aus, um DevTools-Experimente zu aktivieren.
 1.  Wählen Sie **Aktivieren aus.**  
 1.  Wählen **Sie Jetzt neu starten**, am unteren Rand der Seite aus.  
 
-Beim nächsten Öffnen von DevTools wird unter Einstellungen eine neue Seite namens **Experiments** [angezeigt.](#settings)  
+Wenn Sie DevTools das nächste Mal öffnen, wird eine neue Seite namens **Experiments** [in](#settings)Einstellungen.  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
@@ -123,7 +122,7 @@ Beim nächsten Öffnen von DevTools wird unter Einstellungen eine neue Seite nam
 
 <!-- links -->  
 
-[DevToolsPlacement]: ./placement.md "Ändern der Platzierung von Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsPlacement]: ./placement.md "Ändern Microsoft Edge DevTools-Platzierungs-| Microsoft Docs"  
 [DarkTheme]: ./dark-theme.md "Aktivieren des dunklen Designs in Microsoft Edge DevTools | Microsoft Docs"  
 
 > [!NOTE]
@@ -136,4 +135,4 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

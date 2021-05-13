@@ -3,16 +3,16 @@ description: Eine umfassende Referenz zu Microsoft Edge DevTools Network Panel F
 title: Netzwerkanalysereferenz
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 94a7031763da1e540b4dab802358e5f200e0db4a
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: bdb1145e7ee8ed7865b68f9fd632c4b1a30007e9
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439703"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564833"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11439703"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="network-analysis-reference"></a>Netzwerkanalysereferenz  
 
-Entdecken Sie in diesem umfassenden Verweis auf Microsoft Edge DevTools-Netzwerkanalysefeatures neue Möglichkeiten, wie Ihre Seite geladen wird.  
+Entdecken Sie neue Möglichkeiten, wie Ihre Seite geladen wird, in diesem umfassenden Verweis Microsoft Edge DevTools-Netzwerkanalysefeatures.  
 
 ## <a name="record-network-requests"></a>Aufzeichnen von Netzwerkanforderungen  
 
@@ -45,7 +44,7 @@ Standardmäßig zeichnen DevTools alle Netzwerkanforderungen im **Netzwerktool**
 Führen Sie die folgenden Schritte aus, um aufzeichnungsanforderungen zu beenden.  
 
 1.  Wählen Sie **im Tool** Netzwerk die Option **Aufzeichnungsnetzwerkprotokoll beenden** \( ![ Aufzeichnungsnetzwerkprotokoll beenden ](../media/record-on-icon.msft.png) \).  Es wird grau, um anzugeben, dass DevTools keine Anforderungen mehr aufzeichnen.  
-1.  Wählen `Control` + `E` Sie \(Windows, Linux\) oder `Command` + `E` \(macOS\) aus, während sich das **Netzwerktool** im Fokus befindet.  
+1.  Wählen `Control` + `E` Sie \(Windows, Linux\) oder `Command` + `E` \(macOS\) **** aus, während das Netzwerktool im Fokus steht.  
 
 ### <a name="clear-requests"></a>Löschen von Anforderungen  
 
@@ -981,4 +980,4 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

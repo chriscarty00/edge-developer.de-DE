@@ -3,16 +3,16 @@ description: Ein Lernprogramm zu den beliebtesten netzwerkbezogenen Features in 
 title: Überprüfen der Netzwerkaktivität in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: a4a552fa9a45267a6ffa4a4e83e7ebc4e1817162
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 63a0c8dc1d481ee3fba93146c2e2925bbdd07203
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439696"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565043"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11439696"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="inspect-network-activity-in-microsoft-edge-devtools"></a>Überprüfen der Netzwerkaktivität in Microsoft Edge DevTools  
 
 Dies ist ein praktisches Lernprogramm zu einigen der am häufigsten verwendeten DevTools-Features im Zusammenhang mit der Überprüfung der Netzwerkaktivität für eine Seite.  
@@ -389,4 +388,4 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

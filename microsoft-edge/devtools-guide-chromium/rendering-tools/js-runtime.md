@@ -1,18 +1,18 @@
 ---
-description: Identifizieren Sie teure Funktionen mithilfe des Microsoft Edge DevTools-Speicherbereichs.
+description: Identifizieren Sie teure Funktionen mithilfe Microsoft Edge DevTools-Speicherbereichs.
 title: Beschleunigen der JavaScript-Laufzeit
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 2151777c6a9f94408f48552839531c3534d3de36
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: bbac00ab46e205fb692cc3de3e5f08ba854b0911
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439738"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565085"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -27,7 +27,6 @@ ms.locfileid: "11439738"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License. -->
-
 # <a name="speed-up-javascript-runtime"></a>Beschleunigen der JavaScript-Laufzeit  
 
 Identifizieren Sie teure Funktionen mithilfe des **Speichertools.**  
@@ -161,5 +160,5 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[MegginKearney]: https://developers.google.com/web/resources/contributors/megginkearney  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney  
