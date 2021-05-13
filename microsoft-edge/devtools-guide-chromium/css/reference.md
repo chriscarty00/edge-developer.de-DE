@@ -3,16 +3,16 @@ description: Entdecken Sie neue Workflows zum Anzeigen und Ändern von CSS in Mi
 title: CSS-Referenz
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: bddbf14e73f5c29bfd4757c9cd6d255f419c331f
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 0680b08c9809698c1db6c186a7be76a93c31df4b
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519331"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564476"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11519331"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="css-reference"></a><span data-ttu-id="8ead6-104">CSS-Referenz</span><span class="sxs-lookup"><span data-stu-id="8ead6-104">CSS reference</span></span>  
 
 <span data-ttu-id="8ead6-105">Entdecken Sie neue Workflows in der folgenden umfassenden Referenz Microsoft Edge DevTools-Features im Zusammenhang mit dem Anzeigen und Ändern von CSS.</span><span class="sxs-lookup"><span data-stu-id="8ead6-105">Discover new workflows in the following comprehensive reference of Microsoft Edge DevTools features related to viewing and changing CSS.</span></span>  
@@ -573,4 +572,4 @@ ms.locfileid: "11519331"
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

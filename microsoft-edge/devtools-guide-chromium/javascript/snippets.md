@@ -3,16 +3,16 @@ description: Codeausschnitte sind kleine Skripts, die Sie im Tool Sources von Mi
 title: Ausführen von Codeausschnitten von JavaScript auf jeder Webseite mit Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 00c612a1573c7446711a2dc9d22985c83140eecd
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 4a84e959f652320f40a501a26e9ba763c7348b33
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519429"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564112"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11519429"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="run-snippets-of-javascript-on-any-webpage-with-microsoft-edge-devtools"></a><span data-ttu-id="f56bd-106">Ausführen von Codeausschnitten von JavaScript auf jeder Webseite mit Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="f56bd-106">Run snippets of JavaScript on any webpage with Microsoft Edge DevTools</span></span>  
 
 <span data-ttu-id="f56bd-107">Wenn Sie denselben Code [][DevtoolsConsoleIndex] wiederholt in der Konsole ausführen, sollten Sie stattdessen den Code als Codeausschnitt speichern.</span><span class="sxs-lookup"><span data-stu-id="f56bd-107">If you are running the same code in the [Console][DevtoolsConsoleIndex] repeatedly, consider saving the code as a Snippet instead.</span></span>  <span data-ttu-id="f56bd-108">Codeausschnitte sind Skripts, die Sie im Tool [Quellen][DevToolsSourcesTool] erstellen.</span><span class="sxs-lookup"><span data-stu-id="f56bd-108">Snippets are scripts that you author in the [Sources][DevToolsSourcesTool] tool.</span></span>  <span data-ttu-id="f56bd-109">Codeausschnitte haben Zugriff auf den JavaScript-Kontext der Webseite, und Sie können Codeausschnitte auf jeder Beliebigen Webseite ausführen.</span><span class="sxs-lookup"><span data-stu-id="f56bd-109">Snippets have access to the JavaScript context of the webpage, and you may run snippets on any webpage.</span></span>  <span data-ttu-id="f56bd-110">Die Sicherheitseinstellungen der meisten Webseiten blockieren das Laden anderer Skripts in Codeausschnitten.</span><span class="sxs-lookup"><span data-stu-id="f56bd-110">The security settings of most webpages block from loading other scripts in Snippets.</span></span>  <span data-ttu-id="f56bd-111">Aus diesem Grund müssen Sie den ganzen Code in einer Datei enthalten.</span><span class="sxs-lookup"><span data-stu-id="f56bd-111">For that reason, you must include all your code in one file.</span></span>  
@@ -184,4 +183,4 @@ ms.locfileid: "11519429"
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

@@ -3,16 +3,16 @@ description: Organisieren Sie Ressourcen nach Frame, Domäne, Typ oder anderen K
 title: Anzeigen von Seitenressourcen mit Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 818b93c1c07a93baa8972a530871d20446fd687f
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 415ed45bf650aa6800ab674cce74179f783a82c7
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519443"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565071"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11519443"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="view-page-resources-with-microsoft-edge-devtools"></a><span data-ttu-id="9c106-104">Anzeigen von Seitenressourcen mit Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="9c106-104">View page resources with Microsoft Edge DevTools</span></span>  
 
 <span data-ttu-id="9c106-105">In diesem Handbuch erfahren Sie, wie Sie Microsoft Edge DevTools zum Anzeigen der Ressourcen einer Webseite verwenden.</span><span class="sxs-lookup"><span data-stu-id="9c106-105">This guide teaches you how to use Microsoft Edge DevTools to view the resources of a web page.</span></span>  <span data-ttu-id="9c106-106">Ressourcen sind die Dateien, die eine Seite benötigt, um ordnungsgemäß angezeigt zu werden.</span><span class="sxs-lookup"><span data-stu-id="9c106-106">Resources are the files that a page needs in order to display correctly.</span></span>  <span data-ttu-id="9c106-107">Beispiele für Ressourcen sind CSS-, JavaScript- und HTML-Dateien sowie Bilder.</span><span class="sxs-lookup"><span data-stu-id="9c106-107">Examples of resources include CSS, JavaScript, and HTML files, as well as images.</span></span>  
@@ -177,4 +176,4 @@ ms.locfileid: "11519443"
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

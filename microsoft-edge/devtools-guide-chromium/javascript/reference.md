@@ -3,16 +3,16 @@ description: Entdecken Sie neue Debugworkflows in dieser umfassenden Referenz Mi
 title: Verwenden der Debuggerfeatures
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 6fb90a70e0aac9f556fa9f5f02afee1fd5b4962e
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 6b15d317d4c720ab5ad76b7047532df101f69376
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519604"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564126"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11519604"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="use-the-debugger-features"></a><span data-ttu-id="89352-104">Verwenden der Debuggerfeatures</span><span class="sxs-lookup"><span data-stu-id="89352-104">Use the debugger features</span></span>
 
 <span data-ttu-id="89352-105">Dieser Artikel behandelt die Verwendung des Debuggers in Microsoft Edge DevTools, einschließlich des Festlegens eines Codezeile-Haltepunkts.</span><span class="sxs-lookup"><span data-stu-id="89352-105">This article covers how to use the debugger in Microsoft Edge DevTools, including how to set a line-of-code breakpoint.</span></span>  <span data-ttu-id="89352-106">Weitere Arten von Haltepunkten finden Sie unter [Pause your code with breakpoints][DevToolsJavascriptBreakpoints].</span><span class="sxs-lookup"><span data-stu-id="89352-106">To set other types of breakpoints, see [Pause your code with breakpoints][DevToolsJavascriptBreakpoints].</span></span>  
@@ -355,4 +354,4 @@ function animate() {
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
