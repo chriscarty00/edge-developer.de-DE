@@ -3,17 +3,17 @@ description: Debugging-Unterstützung für CSS Flexbox, Anzeige zum Leistungs-He
 title: Neuigkeiten in DevTools (Microsoft Edge 90)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
 ms.localizationpriority: high
-ms.openlocfilehash: 3653bd2293f96a6ddfb84d8e1c7492bea78c15c1
-ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
+ms.openlocfilehash: a6682043166909bf75a875b72058cc9839c5b43b
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "11514403"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564847"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -274,7 +274,7 @@ Bisher konnten Sie mit der `fn.displayName` Eigenschaft Debug-Namen für Funktio
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
 
-Dieses Experiment bietet eine **vollständige Barrierefreiheitsstrukturansicht** im **Elemente**-Tool.  Der Bereich [Barrierefreiheit][DevtoolsAccessibilityReferenceTheAccessibilityPane] bietet eine teilweise Barrierefreiheitsstrukturansicht, in der die direkte Ahnenkette vom Stammknoten zum inspizierten Knoten angezeigt wird.  
+Dieses Experiment bietet eine **vollständige Barrierefreiheitsstrukturansicht** im **Elemente**-Tool.  Der Bereich [Barrierefreiheit][DevtoolsAccessibilityReferenceAccessibilityPanel] bietet eine teilweise Barrierefreiheitsstrukturansicht, in der die direkte Ahnenkette vom Stammknoten zum inspizierten Knoten angezeigt wird.  
 Nachdem Sie dieses Experiment aktiviert und die DevTools neu geladen haben, wählen Sie eine der folgenden Schaltflächen, um die Anzeige im Elementwerkzeug für alle Elemente auf der Webseite zu wechseln.  
 
 *   Um die vollständige Barrierefreiheitsstrukturansicht anzuzeigen, wählen Sie **Zur Barrierefreiheitsstrukturansicht wechseln**.  
@@ -305,19 +305,19 @@ Wenn Sie unter Windows, Linux oder macOS arbeiten, sollten Sie die [Microsoft Ed
 
 <!-- links -->  
 
-[DevtoolsAccessibilityReferenceTheAccessibilityPane]: /microsoft-edge/devtools-guide-chromium/accessibility/reference#the-accessibility-pane "Der Bereich Barrierefreiheit – Barrierefreiheitsreferenz | Microsoft Docs"  
-[DevtoolsCommandMenuIndex]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Ausführen von Befehlen mit dem Microsoft Edge DevTools-Befehlsmenü | Microsoft Docs"  
-[DevtoolsConsoleReferenceFilterByLogLevel]: /microsoft-edge/devtools-guide-chromium/console/reference#filter-by-log-level "Filtern nach Protokollebene – Konsolenreferenz | Microsoft Docs"  
-[DevtoolsConsoleReferenceFilterMessages]: /microsoft-edge/devtools-guide-chromium/console/reference#filter-messages "Filtern von Nachrichten – Konsolenreferenz | Microsoft Docs"  
-[DevtoolsConsoleReferenceOpenConsoleSidebar]: /microsoft-edge/devtools-guide-chromium/console/reference#open-the-console-sidebar "Öffnen der Konsolen-Randleiste – Konsolenreferenz | Microsoft Docs"  
-[DevtoolsCustomizeIndexSettings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "Einstellungen – Anpassen von Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsCustomizeShortcuts]: /microsoft-edge/devtools-guide-chromium/customize/shortcuts "Anpassen von Tastenkombinationen in der Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesIndexEnablePlusButtonTabMenusToOpenMoreTools]: /microsoft-edge/devtools-guide-chromium/experimental-features/index#enable--button-tab-menus-to-open-more-tools "Aktivieren Sie die Registerkartenmenüs +, um weitere Werkzeuge zu öffnen – Experimentelle Features | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features/index#turn-on-experimental-features "Aktivieren experimenteller Features – Experimentelle Features | Microsoft Docs"  
-[DevtoolsNetworkReferenceAddRemoveColumns]: /microsoft-edge/devtools-guide-chromium/network/reference#add-or-remove-columns "Hinzufügen oder Entfernen von Spalten – Netzwerkanalysereferenz | Microsoft Docs"  
-[DevtoolsNetworkReferenceDisplayInitiatorsDependencies]: /microsoft-edge/devtools-guide-chromium/network/reference#display-initiators-and-dependencies "Anzeigen von Initiatoren und Abhängigkeiten – Netzwerkanalysereferenz | Microsoft Docs"  
+[DevtoolsAccessibilityReferenceAccessibilityPanel]: ../../../accessibility/reference.md#the-accessibility-panel "Der Bereich Barrierefreiheit – Barrierefreiheitsreferenz | Microsoft Docs"  
+[DevtoolsCommandMenuIndex]: ../../../command-menu/index.md "Ausführen von Befehlen mit dem Microsoft Edge DevTools-Befehlsmenü | Microsoft Docs"  
+[DevtoolsConsoleReferenceFilterByLogLevel]: ../../../console/reference.md#filter-by-log-level "Filtern nach Protokollebene – Konsolenreferenz | Microsoft Docs"  
+[DevtoolsConsoleReferenceFilterMessages]: ../../../console/reference.md#filter-messages "Filtern von Nachrichten – Konsolenreferenz | Microsoft Docs"  
+[DevtoolsConsoleReferenceOpenConsoleSidebar]: ../../../console/reference.md#open-the-console-sidebar "Öffnen der Konsolen-Randleiste – Konsolenreferenz | Microsoft Docs"  
+[DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "Einstellungen – Anpassen von Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "Anpassen von Tastenkombinationen in der Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesIndexEnablePlusButtonTabMenusToOpenMoreTools]: ../../../experimental-features/index.md#enable--button-tab-menus-to-open-more-tools "Aktivieren Sie die Registerkartenmenüs +, um weitere Werkzeuge zu öffnen – Experimentelle Features | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]: ../../../experimental-features/index.md#turn-on-experimental-features "Aktivieren experimenteller Features – Experimentelle Features | Microsoft Docs"  
+[DevtoolsNetworkReferenceAddRemoveColumns]: ../../../network/reference.md#add-or-remove-columns "Hinzufügen oder Entfernen von Spalten – Netzwerkanalysereferenz | Microsoft Docs"  
+[DevtoolsNetworkReferenceDisplayInitiatorsDependencies]: ../../../network/reference.md#display-initiators-and-dependencies "Anzeigen von Initiatoren und Abhängigkeiten – Netzwerkanalysereferenz | Microsoft Docs"  
 
-[ProgressiveWebAppsIndex]: /microsoft-edge/progressive-web-apps-chromium/index "Übersicht über progressive Web Apps unter Windows | Microsoft Docs"  
+[ProgressiveWebAppsIndex]: ../../../../progressive-web-apps-chromium/index.md "Übersicht über progressive Web Apps unter Windows | Microsoft Docs"  
 
 [MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge-Vorschaukanäle"  
 
@@ -368,4 +368,4 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[JecelynYeen]: https://developers.google.com/web/resources/contributors/jecelynyeen  
+[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen  

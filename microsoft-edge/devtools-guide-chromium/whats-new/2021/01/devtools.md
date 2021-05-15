@@ -3,17 +3,17 @@ description: Das Neuigkeiten-Tool ist jetzt Willkommen, visueller Schriftarten-E
 title: Neuigkeiten in DevTools (Microsoft Edge 89)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
 ms.localizationpriority: high
-ms.openlocfilehash: ec14d802af52c0bb2e658549f48764279c787f47
-ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
+ms.openlocfilehash: 6d1952832c84dc159222a8aa16aa0ffe11edff34
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "11514368"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564925"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -166,7 +166,7 @@ Testen Sie die Darstellung Ihrer Website oder App auf den folgenden Geräten in 
     
 Aktivieren Sie die **Features der experimentellen Webplattform**, um auf das neue [Feature „CSS-Medienbildschirmbereich“][DualScreenWebCssMediaSpanning] und die [API „getWindowSegments JavaScript“][DualScreenWebJavascriptGetwindowsegments] zuzugreifen.  Navigieren Sie zu `edge://flags` und umschalten Sie das Kennzeichen neben **Features der experimentellen Webplattform**.  Um Ihre Website oder App für die Geräte mit dualem Bildschirm oder für die faltbare Geräte zu verbessern, verwenden Sie die folgenden Features bei der [Emulation des Geräts][DevtoolsDeviceModeIndex].  
 
-*   [Aufteilung][DevtoolsDeviceModeDualScreenFoldablesTestingFoldableDualScreenDevices], das ist, wenn Ihre Website \(oder App\) auf beiden Bildschirmen angezeigt wird.  
+*   [Aufteilung][DevtoolsDeviceModeDualScreenFoldablesTestFoldableDualScreenDevices], das ist, wenn Ihre Website \(oder App\) auf beiden Bildschirmen angezeigt wird.  
 *   [Rendering der Naht][DualScreenIntroductionHowToWorkWithSeam], das ist der Abstand zwischen den beiden Bildschirmen.  
     
 Navigieren Sie zu Problem [1054281][CR1054281], um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen.  
@@ -180,7 +180,7 @@ Navigieren Sie zu Problem [1054281][CR1054281], um den Verlauf dieses Features i
 Die Erweiterung [Microsoft Edge Developer Tools für Visual Studio Code][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools] (Version 1.1.2) für Microsoft Visual Studio Code hat die folgenden Änderungen seit der vorherigen Version.  Microsoft Visual Studio Code aktualisiert Erweiterungen automatisch.  Navigieren Sie zum manuellen Aktualisieren auf Version 1.1.2 zu [Erweiterung manuell aktualisieren][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually].  
 
 *   Jedem Element in der Zielliste wurde eine Schaltfläche **Instanz schließen** hinzugefügt \([#248][GithubMicrosoftVscodeEdgeDevtoolsPull248]\)  
-*   Die Version der [Microsoft Edge DevTools][DevtoolsMain] wurde von 84.0.522.63 auf [85.0.564.40][DevtoolsWhatsNew85] aktualisiert \([#235][GithubMicrosoftVscodeEdgeDevtoolsPull235]\)  
+*   Die Version der [Microsoft Edge DevTools][DevtoolsIndex] wurde von 84.0.522.63 auf [85.0.564.40][DevtoolsWhatsNew85] aktualisiert \([#235][GithubMicrosoftVscodeEdgeDevtoolsPull235]\)  
 *   Enthaltener [Debugger für Microsoft Edge][VisualstudioMarketplaceMsjsdiagDebuggerMicrosoftEdge] als Abhängigkeit \([#233][GithubMicrosoftVscodeEdgeDevtoolsPull233]\)  
 *   Implementierte Einstellungsoption zum Ändern von Erweiterungsthemen \([#229][GithubMicrosoftVscodeEdgeDevtoolsPull229]\)  
     
@@ -426,16 +426,16 @@ Wenn Sie unter Windows, Linux oder macOS arbeiten, sollten Sie die [Microsoft Ed
 
 [DevtoolsWhatsNew85]: ../../2020/06/devtools.md "Neuigkeiten in DevTools (Microsoft Edge 85) | Microsoft Docs"  
 
-[DevtoolsAccessibilityReferenceViewContrastRatioTextElementColorPicker]: /microsoft-edge/devtools-guide-chromium/accessibility/reference#view-the-contrast-ratio-of-a-text-element-in-the-color-picker "Anzeigen des Kontrastverhältnisses eines Textelements im Farbwähler – Barrierefreiheitsreferenz | Microsoft Docs"  
-[DevtoolsCssReferenceChangeCss]: /microsoft-edge/devtools-guide-chromium/css/reference#change-css "Ändern von CSS – CSS-Referenz | Microsoft Docs"  
-[DevtoolsCustomizeIndexSettings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "Einstellungen – Anpassen von Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsCustomizeShortcuts]: microsoft-edge/devtools-guide-chromium/customize/shortcuts "Anpassen von Tastenkombinationen in der Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsDeviceModeDualScreenFoldablesTestingFoldableDualScreenDevices]: /microsoft-edge/devtools-guide-chromium/device-mode/dual-screen-and-foldables#testing-on-foldable-and-dual-screen-devices "Testen auf faltbaren Geräten und Geräten mit dualem Bildschirm – Emulieren von Geräten mit dualem Bildschirm und faltbaren Geräten in Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index "Emulieren von mobilen Geräten in Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsDeviceModeIndexSimulateMobileViewport]: /microsoft-edge/devtools-guide-chromium/device-mode/index#simulate-a-mobile-viewport "Simulieren eines mobilen Ansichtsfensters – Emulieren mobiler Geräte in Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsEvaluatePerformanceReferenceRecordLoadPerformance]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#record-load-performance "Datensatzlastleistung – Leistungsanalysereferenz | Microsoft Docs"  
-[DevtoolsInspectStylesEditFonts]: /microsoft-edge/devtools-guide-chromium/inspect-styles/edit-fonts "Bearbeiten von CSS-Schriftartenstilen und -einstellungen im Bereich „Formatvorlagen“ in DevTools | Microsoft Docs"  
-[DevtoolsMain]: /microsoft-edge/devtools-guide-chromium/index "Microsoft Edge (Chromium) Developer Tools (Übersicht) | Microsoft Docs"  
+[DevtoolsAccessibilityReferenceViewContrastRatioTextElementColorPicker]: ../../../accessibility/reference.md#view-the-contrast-ratio-of-a-text-element-in-the-color-picker "Anzeigen des Kontrastverhältnisses eines Textelements im Farbwähler – Barrierefreiheitsreferenz | Microsoft Docs"  
+[DevtoolsCssReferenceChangeCss]: ../../../css/reference.md#change-css "Ändern von CSS – CSS-Referenz | Microsoft Docs"  
+[DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "Einstellungen – Anpassen von Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "Anpassen von Tastenkombinationen in der Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsDeviceModeDualScreenFoldablesTestFoldableDualScreenDevices]: ../../../device-mode/dual-screen-and-foldables.md#test-on-foldable-and-dual-screen-devices "Auf zusammenklappbaren und dualen Bildschirmgeräten testen – Emulieren Sie Geräte mit dualem Bildschirm und faltbaren Geräten in Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "Emulieren von mobilen Geräten in Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsDeviceModeIndexSimulateMobileViewport]: ../../../device-mode/index.md#simulate-a-mobile-viewport "Simulieren eines mobilen Ansichtsfensters – Emulieren mobiler Geräte in Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsEvaluatePerformanceReferenceRecordLoadPerformance]: ../../../evaluate-performance/reference.md#record-load-performance "Datensatzlastleistung – Leistungsanalysereferenz | Microsoft Docs"  
+[DevtoolsIndex]: ../../../index.md "Microsoft Edge (Chromium) Entwickler Tools Übersicht | Microsoft-Dokumentation"  
+[DevtoolsInspectStylesEditFonts]: ../../../inspect-styles/edit-fonts.md "Bearbeiten von CSS-Schriftstile und -Einstellungen im Bereich „Formatvorlagen“ in DevTools | Microsoft Docs"  
 
 [DualScreenIntroductionHowToWorkWithSeam]: /dual-screen/introduction#how-to-work-with-the-seam "Arbeiten mit der Naht – Einführung in Geräten mit dualem Bildschirm | Microsoft Docs"  
 [DualScreenWebCssMediaSpanning]: /dual-screen/web/css-media-spanning "Feature „CSS-Medienbildschirmaufteilung“ für die Erkennung von dualem Bildschirm | Microsoft Docs"  
@@ -500,6 +500,6 @@ Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[JecelynYeen]: https://developers.google.com/web/resources/contributors/jecelynyeen
+[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen
 
 [SpanningPlaceholder]: link-t-b-d "Übergreifender Platzhalter"  
