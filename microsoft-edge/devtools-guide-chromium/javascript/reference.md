@@ -301,7 +301,7 @@ function animate() {
 1.  <span data-ttu-id="89352-239">Zeigen Sie auf eine Funktion aus dem Skript, und öffnen Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste\).</span><span class="sxs-lookup"><span data-stu-id="89352-239">Hover on a function from the script and open the contextual menu \(right-click\).</span></span>  
 1.  <span data-ttu-id="89352-240">Wählen **Sie Skript hinzufügen aus, um die Liste** zu ignorieren **(zuvor als Als Bibliothekscode markieren angezeigt).**</span><span class="sxs-lookup"><span data-stu-id="89352-240">Choose **Add script to ignore list** (previously shown as **Mark as Library code**).</span></span>  
     
-    :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png" alt-text="Markieren eines Skripts als Bibliothekscode aus dem Bereich "Aufrufliste"" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png":::
+    :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png" alt-text="Markieren eines Skripts als Bibliothekscode aus dem Bereich Aufrufliste" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png":::
        <span data-ttu-id="89352-242">Markieren eines Skripts **als Bibliothekscode** aus dem **Bereich "Aufrufliste"**</span><span class="sxs-lookup"><span data-stu-id="89352-242">Mark a script as **Library code** from the **Call Stack** pane</span></span>  
     :::image-end:::  
     
