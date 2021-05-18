@@ -59,7 +59,7 @@ ms.locfileid: "11564091"
     
 1.  <span data-ttu-id="7fe09-125">Wählen Sie das **Tool Quellen** aus.</span><span class="sxs-lookup"><span data-stu-id="7fe09-125">Choose the **Sources** tool.</span></span>  
     
-    :::image type="complex" source="../media/javascript-sources-sections.msft.png" alt-text="Das Tool "Quellen"" lightbox="../media/javascript-sources-sections.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-sections.msft.png" alt-text="Das Tool Quellen" lightbox="../media/javascript-sources-sections.msft.png":::
        <span data-ttu-id="7fe09-127">Das **Tool "Quellen"**</span><span class="sxs-lookup"><span data-stu-id="7fe09-127">The **Sources** tool</span></span>  
     :::image-end:::  
     
@@ -161,7 +161,7 @@ function updateLabel() {
 
 ### <a name="method-1-the-scope-pane"></a><span data-ttu-id="7fe09-204">Methode 1: Bereich bereich</span><span class="sxs-lookup"><span data-stu-id="7fe09-204">Method 1: The Scope pane</span></span>  
 
-<span data-ttu-id="7fe09-205">Wenn Sie in einer Codezeile \*\*\*\* anhalten, werden im Bereich Bereich die lokalen und globalen Variablen angezeigt, die derzeit definiert sind, zusammen mit dem Wert der einzelnen Variablen.</span><span class="sxs-lookup"><span data-stu-id="7fe09-205">If you pause on a line of code, the **Scope** pane displays the local and global variables that are currently defined, along with the value of each variable.</span></span>  <span data-ttu-id="7fe09-206">Außerdem werden ggf. Schließvariablen angezeigt.</span><span class="sxs-lookup"><span data-stu-id="7fe09-206">It also displays closure variables, as applicable.</span></span>  <span data-ttu-id="7fe09-207">Doppelklicken Sie auf einen Variablenwert, um ihn zu bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="7fe09-207">Double-click a variable value to edit it.</span></span>  <span data-ttu-id="7fe09-208">Wenn Sie nicht in einer Codezeile anhalten, ist der **Bereich Bereich** leer.</span><span class="sxs-lookup"><span data-stu-id="7fe09-208">If you don't pause on a line of code, the **Scope** pane is empty.</span></span>  
+<span data-ttu-id="7fe09-205">Wenn Sie in einer Codezeileanhalten, werden im Bereich Bereich die lokalen und globalen Variablen angezeigt, die derzeit definiert sind, zusammen mit dem Wert der einzelnen Variablen.</span><span class="sxs-lookup"><span data-stu-id="7fe09-205">If you pause on a line of code, the **Scope** pane displays the local and global variables that are currently defined, along with the value of each variable.</span></span>  <span data-ttu-id="7fe09-206">Außerdem werden ggf. Schließvariablen angezeigt.</span><span class="sxs-lookup"><span data-stu-id="7fe09-206">It also displays closure variables, as applicable.</span></span>  <span data-ttu-id="7fe09-207">Doppelklicken Sie auf einen Variablenwert, um ihn zu bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="7fe09-207">Double-click a variable value to edit it.</span></span>  <span data-ttu-id="7fe09-208">Wenn Sie nicht in einer Codezeile anhalten, ist der **Bereich Bereich** leer.</span><span class="sxs-lookup"><span data-stu-id="7fe09-208">If you don't pause on a line of code, the **Scope** pane is empty.</span></span>  
 
 :::image type="complex" source="../media/javascript-sources-breakpoint-paused-scope.msft.png" alt-text="Der Bereich Bereich" lightbox="../media/javascript-sources-breakpoint-paused-scope.msft.png":::
    <span data-ttu-id="7fe09-210">Der **Bereich Bereich**</span><span class="sxs-lookup"><span data-stu-id="7fe09-210">The **Scope** pane</span></span>  
@@ -179,7 +179,7 @@ function updateLabel() {
 > [!NOTE]
 > <span data-ttu-id="7fe09-220">In der folgenden Abbildung wird der `typeof sum` Watch Expression im Bereich **"Watch"** angezeigt.</span><span class="sxs-lookup"><span data-stu-id="7fe09-220">In the following figure, the `typeof sum` Watch Expression is displayed in the **Watch** pane.</span></span>  <span data-ttu-id="7fe09-221">Wenn Ihr DevTools-Fenster breit ist, wird der Bereich **"Watch"** im **Debuggerbereich** angezeigt, der dann auf der rechten Seite angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="7fe09-221">If your DevTools window is wide, the **Watch** pane is displayed within the **Debugger** pane, which then appears on the right.</span></span>  
 
-:::image type="complex" source="../media/javascript-sources-breakpoint-paused-watch.msft.png" alt-text="Der Bereich "Watch"" lightbox="../media/javascript-sources-breakpoint-paused-watch.msft.png":::
+:::image type="complex" source="../media/javascript-sources-breakpoint-paused-watch.msft.png" alt-text="Der Bereich Watch" lightbox="../media/javascript-sources-breakpoint-paused-watch.msft.png":::
    <span data-ttu-id="7fe09-223">Der **Bereich "Watch"**</span><span class="sxs-lookup"><span data-stu-id="7fe09-223">The **Watch** pane</span></span>  
 :::image-end:::  
 

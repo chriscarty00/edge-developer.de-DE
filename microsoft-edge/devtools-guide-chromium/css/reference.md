@@ -102,9 +102,9 @@ ms.locfileid: "11564476"
 <span data-ttu-id="8ead6-152">Wählen Und bearbeiten Sie einen Wert, um einen Wert zu ändern.</span><span class="sxs-lookup"><span data-stu-id="8ead6-152">Choose and edit on a value to change a value.</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="8ead6-153">In der folgenden Abbildung zeigt das \*\*\*\* **Diagramm Feldmodell** im Bereich Formatvorlagen das Feldmodell für das aktuell ausgewählte `h1` Element.</span><span class="sxs-lookup"><span data-stu-id="8ead6-153">In the following figure, the **Box Model** diagram in the **Styles** panel shows the box model for the currently selected `h1` element.</span></span>  
+> <span data-ttu-id="8ead6-153">In der folgenden Abbildung zeigt das**Diagramm Feldmodell** im Bereich Formatvorlagen das Feldmodell für das aktuell ausgewählte `h1` Element.</span><span class="sxs-lookup"><span data-stu-id="8ead6-153">In the following figure, the **Box Model** diagram in the **Styles** panel shows the box model for the currently selected `h1` element.</span></span>  
 
-:::image type="complex" source="../media/css-elements-styles-h1-2.msft.png" alt-text="Das Diagramm "Boxmodell"" lightbox="../media/css-elements-styles-h1-2.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-h1-2.msft.png" alt-text="Das Diagramm Boxmodell" lightbox="../media/css-elements-styles-h1-2.msft.png":::
    <span data-ttu-id="8ead6-155">Das **Diagramm "Boxmodell"**</span><span class="sxs-lookup"><span data-stu-id="8ead6-155">The **Box Model** diagram</span></span>  
 :::image-end:::  
 
@@ -168,7 +168,7 @@ ms.locfileid: "11564476"
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/css-console-qs-coverage-empty.msft.png" alt-text="Das Tool "Abdeckung"" lightbox="../media/css-console-qs-coverage-empty.msft.png":::
+          :::image type="complex" source="../media/css-console-qs-coverage-empty.msft.png" alt-text="Das Tool Abdeckung" lightbox="../media/css-console-qs-coverage-empty.msft.png":::
              <span data-ttu-id="8ead6-189">Das **Tool "Abdeckung"**</span><span class="sxs-lookup"><span data-stu-id="8ead6-189">The **Coverage** tool</span></span>  
           :::image-end:::  
        :::column-end:::
@@ -293,7 +293,7 @@ ms.locfileid: "11564476"
 
 #### <a name="choose-which-stylesheet-to-add-a-rule-to"></a><span data-ttu-id="8ead6-270">Auswählen des Stylesheets, dem eine Regel hinzugefügt werden soll</span><span class="sxs-lookup"><span data-stu-id="8ead6-270">Choose which stylesheet to add a rule to</span></span>  
 
-<span data-ttu-id="8ead6-271">Wenn [Sie eine neue Formatvorlageregel hinzufügen,](#add-a-style-rule)wählen Sie Neue Formatvorlageregel \( Neue Formatvorlageregel \) aus, und halten Sie diese fest, um zu wählen, zu welchem Stylesheet die \*\*\*\* ![ ](../media/new-style-rule-icon.msft.png) Formatvorlageregel hinzugefügt werden soll.</span><span class="sxs-lookup"><span data-stu-id="8ead6-271">When [adding a new style rule](#add-a-style-rule), choose and hold **New Style Rule** \(![New Style Rule](../media/new-style-rule-icon.msft.png)\) to choose which stylesheet to add the style rule to.</span></span>  
+<span data-ttu-id="8ead6-271">Wenn [Sie eine neue Formatvorlageregel hinzufügen,](#add-a-style-rule)wählen Sie Neue Formatvorlageregel \( Neue Formatvorlageregel \) aus, und halten Sie diese fest, um zu wählen, zu welchem Stylesheet die![ ](../media/new-style-rule-icon.msft.png) Formatvorlageregel hinzugefügt werden soll.</span><span class="sxs-lookup"><span data-stu-id="8ead6-271">When [adding a new style rule](#add-a-style-rule), choose and hold **New Style Rule** \(![New Style Rule](../media/new-style-rule-icon.msft.png)\) to choose which stylesheet to add the style rule to.</span></span>  
 
 :::image type="complex" source="../media/css-elements-styles-style-new-select-existing.msft.png" alt-text="Auswählen eines Stylesheets" lightbox="../media/css-elements-styles-style-new-select-existing.msft.png":::
    <span data-ttu-id="8ead6-273">Auswählen eines Stylesheets</span><span class="sxs-lookup"><span data-stu-id="8ead6-273">Choose a stylesheet</span></span>  
@@ -334,7 +334,7 @@ ms.locfileid: "11564476"
     > [!NOTE]
     > <span data-ttu-id="8ead6-292">Die **Aktion Style Rule Below** einfügen wird nach dem Zeigen auf weitere Aktionen **angezeigt.**</span><span class="sxs-lookup"><span data-stu-id="8ead6-292">The **Insert Style Rule Below** action is revealed after hovering over **More Actions**.</span></span>  
     
-    :::image type="complex" source="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png" alt-text="Die Symbolleiste "Weitere Aktionen"" lightbox="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png":::
+    :::image type="complex" source="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png" alt-text="Die Symbolleiste Weitere Aktionen" lightbox="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png":::
        <span data-ttu-id="8ead6-294">Die **Symbolleiste "Weitere Aktionen"**</span><span class="sxs-lookup"><span data-stu-id="8ead6-294">The **More Actions** toolbar</span></span>  
     :::image-end:::  
     

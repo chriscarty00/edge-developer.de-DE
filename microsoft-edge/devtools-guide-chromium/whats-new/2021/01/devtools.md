@@ -61,7 +61,7 @@ ms.locfileid: "11564925"
     
 <span data-ttu-id="834de-122">Um dieses Experiment zu aktivieren, navigieren Sie zu [Einstellungen][DevtoolsCustomizeIndexSettings] > **Experimente**, und wählen Sie das Kontrollkästchen neben **Neue Schriftarten-Editor-Tools im Bereich „Formatvorlagen“ aktivieren** aus.</span><span class="sxs-lookup"><span data-stu-id="834de-122">To turn on this experiment, navigate to [Settings][DevtoolsCustomizeIndexSettings] > **Experiments** and choose the checkbox next to **Enable new Font Editor tools within Styles pane**.</span></span>  <span data-ttu-id="834de-123">Weitere Informationen finden Sie unter [Bearbeiten von CSS-Schriftartenstilen und -einstellungen im Bereich „Formatvorlagen“ in DevTools][DevtoolsInspectStylesEditFonts].</span><span class="sxs-lookup"><span data-stu-id="834de-123">For more information, navigate to [Edit CSS font styles and settings in the Styles pane in DevTools][DevtoolsInspectStylesEditFonts].</span></span>  <span data-ttu-id="834de-124">Navigieren Sie zu Problem [1093229][CR1093229], um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen.</span><span class="sxs-lookup"><span data-stu-id="834de-124">To review the history of this feature in the Chromium open-source project, navigate to Issue [1093229][CR1093229].</span></span>  
 
-:::image type="complex" source="../../media/2021/01/visual-font-editor.msft.png" alt-text="Der visuelle Schriftarten-Editor wird im Bereich „Formatvorlagen“ hervorgehoben." lightbox="../../media/2021/01/visual-font-editor.msft.png":::
+:::image type="complex" source="../../media/2021/01/visual-font-editor.msft.png" alt-text="Der visuelle Schriftarten-Editor wird im Bereich Formatvorlagen hervorgehoben." lightbox="../../media/2021/01/visual-font-editor.msft.png":::
    <span data-ttu-id="834de-126">Der visuelle **Schriftarten-Editor** wird im Bereich **Formatvorlagen** hervorgehoben.</span><span class="sxs-lookup"><span data-stu-id="834de-126">The visual **Font editor** is highlighted in the **Styles** pane</span></span>  
 :::image-end:::  
 
@@ -92,7 +92,7 @@ ms.locfileid: "11564925"
          <span data-ttu-id="834de-138">Das **Flexbox** \(`flex`\)-Symbol und die hervorgehobene Webseite</span><span class="sxs-lookup"><span data-stu-id="834de-138">The **Flexbox** \(`flex`\) icon and webpage highlighted</span></span> :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/01/elements-layout-flex-container.msft.png" alt-text="Die im Bereich „Layout“ hervorgehobenen Flexbox-Überlagerungen" lightbox="../../media/2021/01/elements-layout-flex-container.msft.png":::
+      :::image type="complex" source="../../media/2021/01/elements-layout-flex-container.msft.png" alt-text="Die im Bereich Layout hervorgehobenen Flexbox-Überlagerungen" lightbox="../../media/2021/01/elements-layout-flex-container.msft.png":::
          <span data-ttu-id="834de-140">Die im Bereich **Layout** hervorgehobenen **Flexbox-Überlagerungen**</span><span class="sxs-lookup"><span data-stu-id="834de-140">The **Flexbox overlays** highlighted in the **Layout** pane</span></span>  
       :::image-end:::  
    :::column-end:::
@@ -117,7 +117,7 @@ ms.locfileid: "11564925"
 :::row-end:::  
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/01/elements-flex-container-align.msft.png" alt-text="Das Menü "AutoVervollständigung" wird für CSS-Eigenschaften hervorgehoben, die mit ausrichten- beginnen" lightbox="../../media/2021/01/elements-flex-container-align.msft.png":::
+      :::image type="complex" source="../../media/2021/01/elements-flex-container-align.msft.png" alt-text="Das Menü AutoVervollständigung wird für CSS-Eigenschaften hervorgehoben, die mit ausrichten- beginnen" lightbox="../../media/2021/01/elements-flex-container-align.msft.png":::
          <span data-ttu-id="834de-150">Das Menü "AutoVervollständigung" wird für CSS-Eigenschaften hervorgehoben, die beginnen mit</span><span class="sxs-lookup"><span data-stu-id="834de-150">Autocomplete menu highlighted for CSS properties that start with</span></span> `align-`  
       :::image-end:::  
    :::column-end:::
@@ -150,7 +150,7 @@ ms.locfileid: "11564925"
 
 <span data-ttu-id="834de-169">Um ein Video anzuzeigen, das mehrere Vorschläge anzeigt und laut vorlesen kann, wenn dieses Experiment aktiviert ist, navigieren Sie zu [Voiceover kündigt DevTools-Optionen an](https://youtu.be/9TcUpleEwwA) auf YouTube.</span><span class="sxs-lookup"><span data-stu-id="834de-169">To view a video that displays and reads aloud several suggestions with this experiment turned on, navigate to [Voiceover announcing devtools options](https://youtu.be/9TcUpleEwwA) on YouTube.</span></span>  
 
-:::image type="complex" source="../../media/2021/01/announce-css-suggestion.msft.png" alt-text="Der im Bereich „Formatvorlagen“ hervorgehobene Vorschlag" lightbox="../../media/2021/01/announce-css-suggestion.msft.png":::
+:::image type="complex" source="../../media/2021/01/announce-css-suggestion.msft.png" alt-text="Der im Bereich Formatvorlagen hervorgehobene Vorschlag" lightbox="../../media/2021/01/announce-css-suggestion.msft.png":::
    <span data-ttu-id="834de-171">Die im Bereich **Formatvorlagen** hervorgehobene `suggestion`-Liste</span><span class="sxs-lookup"><span data-stu-id="834de-171">The `suggestion` list highlighted in the **Styles** pane</span></span>  
 :::image-end:::  
 
@@ -194,7 +194,7 @@ ms.locfileid: "11564925"
 
 <span data-ttu-id="834de-195">In Microsoft Edge (Version 89) sind Screenshots von Knoten genauer und erfassen den vollständigen Knoten, auch wenn der Inhalt des Knotens im Ansichtsfenster nicht sichtbar ist.</span><span class="sxs-lookup"><span data-stu-id="834de-195">In Microsoft Edge version 89, node screenshots are more accurate, capturing the full node even if content from the node is not visible in the viewport.</span></span>  <span data-ttu-id="834de-196">Zeigen Sie im Tool **Elemente** auf ein Element, öffnen Sie das Kontextmenü \(mit der rechten Maustaste klicken\), und wählen Sie **Screenshot des Knotens erfassen** aus.</span><span class="sxs-lookup"><span data-stu-id="834de-196">In the **Elements** tool, hover  on an element, open the contextual menu \(right-click\), and choose **Capture node screenshot**.</span></span>  <span data-ttu-id="834de-197">Navigieren Sie zu Problem [1003629][CR1003629], um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen.</span><span class="sxs-lookup"><span data-stu-id="834de-197">To review the history of this feature in the Chromium open-source project, navigate to Issue [1003629][CR1003629].</span></span>  
 
-:::image type="complex" source="../../media/2021/01/capture-node-screenshot.msft.png" alt-text="Screenshot des Knotens erfassen, der im Kontextmenü des Tools „Elemente“ hervorgehoben ist" lightbox="../../media/2021/01/capture-node-screenshot.msft.png":::
+:::image type="complex" source="../../media/2021/01/capture-node-screenshot.msft.png" alt-text="Screenshot des Knotens erfassen, der im Kontextmenü des Tools Elemente hervorgehoben ist" lightbox="../../media/2021/01/capture-node-screenshot.msft.png":::
    <span data-ttu-id="834de-199">**Screenshot des Knotens erfassen**, der im Kontextmenü des Tools **Elemente** hervorgehoben ist</span><span class="sxs-lookup"><span data-stu-id="834de-199">**Capture node screenshot** highlighted on the context menu in the **Elements** tool</span></span>  
 :::image-end:::  
 
@@ -221,7 +221,7 @@ ms.locfileid: "11564925"
 
 <span data-ttu-id="834de-212">Verwenden Sie die neue Tastenkombination **Element duplizieren**, um ein Element zu klonen.</span><span class="sxs-lookup"><span data-stu-id="834de-212">Use the new **Duplicate element** shortcut to clone an element.</span></span>  <span data-ttu-id="834de-213">Zeigen Sie im Tool **Elemente** auf ein Element, öffnen Sie das Kontextmenü \(mit der rechten Maustaste klicken\), wählen Sie **Element duplizieren** aus.</span><span class="sxs-lookup"><span data-stu-id="834de-213">In the **Elements** tool, hover on an element, open the contextual menu \(right-click\), choose **Duplicate element**.</span></span>  <span data-ttu-id="834de-214">Unter dem ausgewählten Element wird ein neues Element erstellt.</span><span class="sxs-lookup"><span data-stu-id="834de-214">A new element is created under the selected element.</span></span>  <span data-ttu-id="834de-215">Um das Element mit einer Tastenkombination zu duplizieren, wählen Sie `Shift`+`Alt`+`Down Arrow` \(Windows/Linux\) oder `Shift`+`Option`+`Down Arrow` \(macOS\) aus.</span><span class="sxs-lookup"><span data-stu-id="834de-215">To duplicate the element with a keyboard shortcut, select `Shift`+`Alt`+`Down Arrow` \(Windows/Linux\) or `Shift`+`Option`+`Down Arrow` \(macOS\).</span></span>  <span data-ttu-id="834de-216">Navigieren Sie zu Problem [1150797][CR1150797], um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen.</span><span class="sxs-lookup"><span data-stu-id="834de-216">To review the history of this feature in the Chromium open-source project, navigate to Issue [1150797][CR1150797].</span></span>  
 
-:::image type="complex" source="../../media/2021/01/elements-duplicate-element.msft.png" alt-text="Die Option „Element duplizieren“ wird im Kontextmenü eines Elements im Tool „Elemente“ hervorgehoben" lightbox="../../media/2021/01/elements-duplicate-element.msft.png":::
+:::image type="complex" source="../../media/2021/01/elements-duplicate-element.msft.png" alt-text="Die Option Element duplizieren wird im Kontextmenü eines Elements im Tool Elemente hervorgehoben" lightbox="../../media/2021/01/elements-duplicate-element.msft.png":::
    <span data-ttu-id="834de-218">Die Option **Element duplizieren** wird im Kontextmenü eines Elements im Tool **Elemente** hervorgehoben</span><span class="sxs-lookup"><span data-stu-id="834de-218">The **Duplicate element** is highlighted in the context menu on an element in the **Elements** tool</span></span>  
 :::image-end:::  
 

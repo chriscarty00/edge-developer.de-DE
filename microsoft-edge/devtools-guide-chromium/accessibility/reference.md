@@ -125,7 +125,7 @@ ms.locfileid: "11564574"
 
 <span data-ttu-id="41aff-175">Überprüfen Sie die Position eines Elements in der Barrierefreiheitsstruktur im [Bereich Barrierefreiheit.](#the-accessibility-panel)</span><span class="sxs-lookup"><span data-stu-id="41aff-175">Inspect the position of an element in the accessibility tree from the [Accessibility](#the-accessibility-panel) panel.</span></span>  
 
-:::image type="complex" source="../media/accessibility-elements-accessibility-tree.msft.png" alt-text="Abschnitt "Barrierefreiheitsstruktur"" lightbox="../media/accessibility-elements-accessibility-tree.msft.png":::
+:::image type="complex" source="../media/accessibility-elements-accessibility-tree.msft.png" alt-text="Abschnitt Barrierefreiheitsstruktur" lightbox="../media/accessibility-elements-accessibility-tree.msft.png":::
    <span data-ttu-id="41aff-177">Abschnitt **"Barrierefreiheitsstruktur"**</span><span class="sxs-lookup"><span data-stu-id="41aff-177">The **Accessibility Tree** section</span></span>  
 :::image-end:::  
 
@@ -135,7 +135,7 @@ ms.locfileid: "11564574"
 
 <span data-ttu-id="41aff-180">Zeigen Sie die ARIA-Attribute eines Elements im Bereich [Barrierefreiheit](#the-accessibility-panel) an.</span><span class="sxs-lookup"><span data-stu-id="41aff-180">View the ARIA attributes of an element in the [Accessibility](#the-accessibility-panel) panel.</span></span>  
 
-:::image type="complex" source="../media/accessibility-elements-accessibility-aria-attributes.msft.png" alt-text="Der Abschnitt "ARIA Attributes"" lightbox="../media/accessibility-elements-accessibility-aria-attributes.msft.png":::
+:::image type="complex" source="../media/accessibility-elements-accessibility-aria-attributes.msft.png" alt-text="Der Abschnitt ARIA Attributes" lightbox="../media/accessibility-elements-accessibility-aria-attributes.msft.png":::
    <span data-ttu-id="41aff-182">Der **Abschnitt "ARIA Attributes"**</span><span class="sxs-lookup"><span data-stu-id="41aff-182">The **ARIA Attributes** section</span></span>  
 :::image-end:::  
 

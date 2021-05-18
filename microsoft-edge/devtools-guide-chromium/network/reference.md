@@ -44,7 +44,7 @@ ms.locfileid: "11564833"
 <span data-ttu-id="51f5a-111">Führen Sie die folgenden Schritte aus, um aufzeichnungsanforderungen zu beenden.</span><span class="sxs-lookup"><span data-stu-id="51f5a-111">To stop recording requests, complete the following steps.</span></span>  
 
 1.  <span data-ttu-id="51f5a-112">Wählen Sie **im Tool** Netzwerk die Option **Aufzeichnungsnetzwerkprotokoll beenden** \( ![ Aufzeichnungsnetzwerkprotokoll beenden ](../media/record-on-icon.msft.png) \).</span><span class="sxs-lookup"><span data-stu-id="51f5a-112">On the **Network** tool, choose **Stop recording network log** \(![Stop recording network log](../media/record-on-icon.msft.png)\).</span></span>  <span data-ttu-id="51f5a-113">Es wird grau, um anzugeben, dass DevTools keine Anforderungen mehr aufzeichnen.</span><span class="sxs-lookup"><span data-stu-id="51f5a-113">It turns grey to indicate that DevTools is no longer recording requests.</span></span>  
-1.  <span data-ttu-id="51f5a-114">Wählen `Control` + `E` Sie \(Windows, Linux\) oder `Command` + `E` \(macOS\) \*\*\*\* aus, während das Netzwerktool im Fokus steht.</span><span class="sxs-lookup"><span data-stu-id="51f5a-114">Select `Control`+`E` \(Windows, Linux\) or `Command`+`E` \(macOS\) while the **Network** tool is in focus.</span></span>  
+1.  <span data-ttu-id="51f5a-114">Wählen `Control` + `E` Sie \(Windows, Linux\) oder `Command` + `E` \(macOS\)aus, während das Netzwerktool im Fokus steht.</span><span class="sxs-lookup"><span data-stu-id="51f5a-114">Select `Control`+`E` \(Windows, Linux\) or `Command`+`E` \(macOS\) while the **Network** tool is in focus.</span></span>  
 
 ### <a name="clear-requests"></a><span data-ttu-id="51f5a-115">Löschen von Anforderungen</span><span class="sxs-lookup"><span data-stu-id="51f5a-115">Clear requests</span></span>  
 
@@ -56,7 +56,7 @@ ms.locfileid: "11564833"
 
 ### <a name="save-requests-across-page-loads"></a><span data-ttu-id="51f5a-119">Speichern von Anforderungen über Seitenlasten hinweg</span><span class="sxs-lookup"><span data-stu-id="51f5a-119">Save requests across page loads</span></span>  
 
-<span data-ttu-id="51f5a-120">Aktivieren Sie zum Speichern von \*\*\*\* Anforderungen über Seitenlasten hinweg das Kontrollkästchen Protokoll **beibehalten** im Netzwerktool.</span><span class="sxs-lookup"><span data-stu-id="51f5a-120">To save requests across page loads, on the **Network** tool, turn on the **Preserve log** checkbox.</span></span>  <span data-ttu-id="51f5a-121">DevTools speichert alle Anforderungen, bis Sie **preserve log deaktivieren.**</span><span class="sxs-lookup"><span data-stu-id="51f5a-121">DevTools saves all requests until you disable **Preserve log**.</span></span>  
+<span data-ttu-id="51f5a-120">Aktivieren Sie zum Speichern vonAnforderungen über Seitenlasten hinweg das Kontrollkästchen Protokoll **beibehalten** im Netzwerktool.</span><span class="sxs-lookup"><span data-stu-id="51f5a-120">To save requests across page loads, on the **Network** tool, turn on the **Preserve log** checkbox.</span></span>  <span data-ttu-id="51f5a-121">DevTools speichert alle Anforderungen, bis Sie **preserve log deaktivieren.**</span><span class="sxs-lookup"><span data-stu-id="51f5a-121">DevTools saves all requests until you disable **Preserve log**.</span></span>  
 
 :::image type="complex" source="../media/network-network-preserve-log.msft.png" alt-text="Das Kontrollkästchen Protokoll beibehalten" lightbox="../media/network-network-preserve-log.msft.png":::
    <span data-ttu-id="51f5a-123">Das **Kontrollkästchen Protokoll** beibehalten</span><span class="sxs-lookup"><span data-stu-id="51f5a-123">The **Preserve Log** checkbox</span></span>  
@@ -94,7 +94,7 @@ ms.locfileid: "11564833"
 
 ### <a name="emulate-a-first-time-visitor-by-disabling-the-browser-cache"></a><span data-ttu-id="51f5a-136">Emulieren eines ersten Besuchers durch Deaktivieren des Browsercaches</span><span class="sxs-lookup"><span data-stu-id="51f5a-136">Emulate a first-time visitor by disabling the browser cache</span></span>  
 
-<span data-ttu-id="51f5a-137">Aktivieren Sie das Kontrollkästchen Cache deaktivieren, um \*\*\*\* zu emulieren, wie ein Benutzer ihre Website zum ersten Mal erlebt.</span><span class="sxs-lookup"><span data-stu-id="51f5a-137">To emulate how a first-time user experiences your site, turn on the **Disable cache** checkbox.</span></span>  <span data-ttu-id="51f5a-138">DevTools deaktiviert den Browsercache.</span><span class="sxs-lookup"><span data-stu-id="51f5a-138">DevTools disables the browser cache.</span></span>  <span data-ttu-id="51f5a-139">Dieses Feature emuliert die Benutzererfahrung eines Erstbenutzers genauer, da Anforderungen beim wiederholten Besuch aus dem Browsercache übermittelt werden.</span><span class="sxs-lookup"><span data-stu-id="51f5a-139">This feature more accurately emulates a first-time user's experience, because requests are served from the browser cache on repeat visits.</span></span>  
+<span data-ttu-id="51f5a-137">Aktivieren Sie das Kontrollkästchen Cache deaktivieren, umzu emulieren, wie ein Benutzer ihre Website zum ersten Mal erlebt.</span><span class="sxs-lookup"><span data-stu-id="51f5a-137">To emulate how a first-time user experiences your site, turn on the **Disable cache** checkbox.</span></span>  <span data-ttu-id="51f5a-138">DevTools deaktiviert den Browsercache.</span><span class="sxs-lookup"><span data-stu-id="51f5a-138">DevTools disables the browser cache.</span></span>  <span data-ttu-id="51f5a-139">Dieses Feature emuliert die Benutzererfahrung eines Erstbenutzers genauer, da Anforderungen beim wiederholten Besuch aus dem Browsercache übermittelt werden.</span><span class="sxs-lookup"><span data-stu-id="51f5a-139">This feature more accurately emulates a first-time user's experience, because requests are served from the browser cache on repeat visits.</span></span>  
 
 :::image type="complex" source="../media/network-network-disable-cache-checkbox.msft.png" alt-text="Das Kontrollkästchen Cache deaktivieren" lightbox="../media/network-network-disable-cache-checkbox.msft.png":::
    <span data-ttu-id="51f5a-141">Das **Kontrollkästchen Cache** deaktivieren</span><span class="sxs-lookup"><span data-stu-id="51f5a-141">The **Disable Cache** checkbox</span></span>  
@@ -296,7 +296,7 @@ ms.locfileid: "11564833"
 
 ### <a name="filter-requests-by-time"></a><span data-ttu-id="51f5a-232">Filtern von Anforderungen nach Zeit</span><span class="sxs-lookup"><span data-stu-id="51f5a-232">Filter requests by time</span></span>  
 
-<span data-ttu-id="51f5a-233">Klicken Sie im Bereich \*\*\*\* Übersicht nach links oder rechts, und ziehen Sie es, um nur Anforderungen anzuzeigen, die während dieses Zeitrahmens aktiv waren.</span><span class="sxs-lookup"><span data-stu-id="51f5a-233">Choose and drag left or right on the **Overview** pane to only display requests that were active during that time frame.</span></span>  <span data-ttu-id="51f5a-234">Der Filter ist inklusive.</span><span class="sxs-lookup"><span data-stu-id="51f5a-234">The filter is inclusive.</span></span>  <span data-ttu-id="51f5a-235">Jede Anforderung, die während der hervorgehobenen Zeit aktiv war, wird angezeigt.</span><span class="sxs-lookup"><span data-stu-id="51f5a-235">Any request that was active during the highlighted time is shown.</span></span>  
+<span data-ttu-id="51f5a-233">Klicken Sie im BereichÜbersicht nach links oder rechts, und ziehen Sie es, um nur Anforderungen anzuzeigen, die während dieses Zeitrahmens aktiv waren.</span><span class="sxs-lookup"><span data-stu-id="51f5a-233">Choose and drag left or right on the **Overview** pane to only display requests that were active during that time frame.</span></span>  <span data-ttu-id="51f5a-234">Der Filter ist inklusive.</span><span class="sxs-lookup"><span data-stu-id="51f5a-234">The filter is inclusive.</span></span>  <span data-ttu-id="51f5a-235">Jede Anforderung, die während der hervorgehobenen Zeit aktiv war, wird angezeigt.</span><span class="sxs-lookup"><span data-stu-id="51f5a-235">Any request that was active during the highlighted time is shown.</span></span>  
 
 :::image type="complex" source="../media/network-network-overview-filter.msft.png" alt-text="Filtern von Anforderungen, die etwa 300 ms inaktiv waren" lightbox="../media/network-network-overview-filter.msft.png":::
    <span data-ttu-id="51f5a-237">Filtern von Anforderungen, die etwa 300 ms inaktiv waren</span><span class="sxs-lookup"><span data-stu-id="51f5a-237">Filter out any requests that were inactive around 300 ms</span></span>  
@@ -472,7 +472,7 @@ ms.locfileid: "11564833"
 
 <span data-ttu-id="51f5a-304">Um die verschiedenen Methoden zum Sortieren des Wasserfalls zu überprüfen, navigieren Sie zu [Sortieren nach Aktivitätsphase](#sort-by-activity-phase).</span><span class="sxs-lookup"><span data-stu-id="51f5a-304">To review the different ways that you may sort the Waterfall, navigate to [Sort by activity phase](#sort-by-activity-phase).</span></span>  
 
-:::image type="complex" source="../media/network-network-requests-waterfall.msft.png" alt-text="Die Spalte "Wasserfall" im Bereich Anforderungen" lightbox="../media/network-network-requests-waterfall.msft.png":::
+:::image type="complex" source="../media/network-network-requests-waterfall.msft.png" alt-text="Die Spalte Wasserfall im Bereich Anforderungen" lightbox="../media/network-network-requests-waterfall.msft.png":::
    <span data-ttu-id="51f5a-306">Die Spalte "Wasserfall" im **Bereich Anforderungen**</span><span class="sxs-lookup"><span data-stu-id="51f5a-306">The Waterfall column of the **Requests** pane</span></span>  
 :::image-end:::  
 
@@ -583,7 +583,7 @@ To refresh the table, re-choose the name of the WebSocket connection under the *
 <!--[ManageDataCookiesFields]: manage-data/cookies#fields  -->  
 <!--TODO: add link when section is available -->  
 
-:::image type="complex" source="../media/network-network-resources-cookies.msft.png" alt-text="Der Bereich "Cookies"" lightbox="../media/network-network-resources-cookies.msft.png":::
+:::image type="complex" source="../media/network-network-resources-cookies.msft.png" alt-text="Der Bereich Cookies" lightbox="../media/network-network-resources-cookies.msft.png":::
    <span data-ttu-id="51f5a-354">Der Bereich "Cookies"</span><span class="sxs-lookup"><span data-stu-id="51f5a-354">The Cookies panel</span></span>  
 :::image-end:::  
 
@@ -596,7 +596,7 @@ To refresh the table, re-choose the name of the WebSocket connection under the *
 
 <span data-ttu-id="51f5a-359">Wenn Sie schneller auf die Daten zugreifen möchten, navigieren Sie zu [Vorschau einer Zeitplanungsaufschlüsselung.](#preview-a-timing-breakdown)</span><span class="sxs-lookup"><span data-stu-id="51f5a-359">For a faster way to access the data, navigate to [Preview a timing breakdown](#preview-a-timing-breakdown).</span></span>  
 
-<span data-ttu-id="51f5a-360">Weitere Informationen zu den einzelnen Phasen, die möglicherweise \*\*\*\* im Zeitsteuerungsfenster angezeigt werden, finden Sie unter [Timing breakdown phases explained](#timing-breakdown-phases-explained).</span><span class="sxs-lookup"><span data-stu-id="51f5a-360">For more information about each of the phases that may be displayed in the **Timing** panel, navigate to [Timing breakdown phases explained](#timing-breakdown-phases-explained).</span></span>  
+<span data-ttu-id="51f5a-360">Weitere Informationen zu den einzelnen Phasen, die möglicherweiseim Zeitsteuerungsfenster angezeigt werden, finden Sie unter [Timing breakdown phases explained](#timing-breakdown-phases-explained).</span><span class="sxs-lookup"><span data-stu-id="51f5a-360">For more information about each of the phases that may be displayed in the **Timing** panel, navigate to [Timing breakdown phases explained](#timing-breakdown-phases-explained).</span></span>  
 
 :::image type="complex" source="../media/network-network-resources-timing.msft.png" alt-text="Der Zeitsteuerungsbereich" lightbox="../media/network-network-resources-timing.msft.png":::
    <span data-ttu-id="51f5a-362">Der **Zeitsteuerungsbereich**</span><span class="sxs-lookup"><span data-stu-id="51f5a-362">The **Timing** panel</span></span>  
@@ -741,7 +741,7 @@ To refresh the table, re-choose the name of the WebSocket connection under the *
 
 ### <a name="display-the-total-number-of-requests"></a><span data-ttu-id="51f5a-416">Anzeigen der Gesamtzahl der Anforderungen</span><span class="sxs-lookup"><span data-stu-id="51f5a-416">Display the total number of requests</span></span>  
 
-<span data-ttu-id="51f5a-417">Die Gesamtanzahl der Anforderungen wird \*\*\*\* im Zusammenfassungsbereich unten im **Netzwerktool** aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="51f5a-417">The total number of requests is listed in the **Summary** pane, at the bottom of the **Network** tool.</span></span>  
+<span data-ttu-id="51f5a-417">Die Gesamtanzahl der Anforderungen wirdim Zusammenfassungsbereich unten im **Netzwerktool** aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="51f5a-417">The total number of requests is listed in the **Summary** pane, at the bottom of the **Network** tool.</span></span>  
 
 > [!CAUTION]
 > <span data-ttu-id="51f5a-418">Diese Zahl verfolgt nur Anforderungen, die seit dem Öffnen von DevTools protokolliert wurden.</span><span class="sxs-lookup"><span data-stu-id="51f5a-418">This number only tracks requests that have been logged since DevTools was opened.</span></span>  <span data-ttu-id="51f5a-419">Wenn vor dem Öffnen von DevTools andere Anforderungen aufgetreten sind, werden diese Anforderungen nicht gezählt.</span><span class="sxs-lookup"><span data-stu-id="51f5a-419">If other requests occurred before DevTools was opened, those requests are not counted.</span></span>  
@@ -752,7 +752,7 @@ To refresh the table, re-choose the name of the WebSocket connection under the *
 
 ### <a name="display-the-total-download-size"></a><span data-ttu-id="51f5a-422">Anzeigen der Downloadgröße insgesamt</span><span class="sxs-lookup"><span data-stu-id="51f5a-422">Display the total download size</span></span>  
 
-<span data-ttu-id="51f5a-423">Die Gesamtgröße der Downloads von \*\*\*\* Anforderungen wird im Zusammenfassungsbereich unten im **Netzwerktool** aufgeführt.</span><span class="sxs-lookup"><span data-stu-id="51f5a-423">The total download size of requests is listed in the **Summary** pane, at the bottom of the **Network** tool.</span></span>  
+<span data-ttu-id="51f5a-423">Die Gesamtgröße der Downloads vonAnforderungen wird im Zusammenfassungsbereich unten im **Netzwerktool** aufgeführt.</span><span class="sxs-lookup"><span data-stu-id="51f5a-423">The total download size of requests is listed in the **Summary** pane, at the bottom of the **Network** tool.</span></span>  
 
 > [!CAUTION]
 > <span data-ttu-id="51f5a-424">Diese Zahl verfolgt nur Anforderungen, die seit dem Öffnen von DevTools protokolliert wurden.</span><span class="sxs-lookup"><span data-stu-id="51f5a-424">This number only tracks requests that have been logged since DevTools was opened.</span></span>  <span data-ttu-id="51f5a-425">Wenn vor dem Öffnen von DevTools andere Anforderungen aufgetreten sind, werden die vorherigen Anforderungen nicht gezählt.</span><span class="sxs-lookup"><span data-stu-id="51f5a-425">If other requests occurred before DevTools was opened, the previous requests are not counted.</span></span>  
@@ -923,7 +923,7 @@ init();
     
 ## <a name="change-the-layout-of-the-network-panel"></a><span data-ttu-id="51f5a-485">Ändern des Layouts des Netzwerkbereichs</span><span class="sxs-lookup"><span data-stu-id="51f5a-485">Change the layout of the Network panel</span></span>  
 
-<span data-ttu-id="51f5a-486">Sie können Abschnitte der \*\*\*\* Benutzeroberfläche des Netzwerktools erweitern oder reduzieren, um wichtige Informationen zu fokussieren.</span><span class="sxs-lookup"><span data-stu-id="51f5a-486">You may expand or collapse sections of the **Network** tool UI to focus important information.</span></span>  
+<span data-ttu-id="51f5a-486">Sie können Abschnitte derBenutzeroberfläche des Netzwerktools erweitern oder reduzieren, um wichtige Informationen zu fokussieren.</span><span class="sxs-lookup"><span data-stu-id="51f5a-486">You may expand or collapse sections of the **Network** tool UI to focus important information.</span></span>  
 
 ### <a name="hide-the-filters-pane"></a><span data-ttu-id="51f5a-487">Ausblenden des Bereichs Filter</span><span class="sxs-lookup"><span data-stu-id="51f5a-487">Hide the Filters pane</span></span>  
 

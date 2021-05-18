@@ -52,7 +52,7 @@ ms.locfileid: "11387275"
 
 <span data-ttu-id="0189e-132">Öffnen Sie nach dem Erstellen Des Projekts `ClientApp/src/components/Counter.js` .</span><span class="sxs-lookup"><span data-stu-id="0189e-132">After you create your project, open `ClientApp/src/components/Counter.js`.</span></span>  <span data-ttu-id="0189e-133">Wenn Sie nun javaScript Visual Studio, wählen Sie das Dropdown neben der grünen Schaltfläche **Play** und **IIS Express aus.**</span><span class="sxs-lookup"><span data-stu-id="0189e-133">Now, to use Visual Studio to debug JavaScript, choose the dropdown next to the green **Play** button and **IIS Express**.</span></span>  
 
-:::image type="complex" source="./media/vs-dropdown.png" alt-text="Das Dropdown neben der grünen Schaltfläche "Play" und "IIS Express"" lightbox="./media/vs-dropdown.png":::
+:::image type="complex" source="./media/vs-dropdown.png" alt-text="Das Dropdown neben der grünen Schaltfläche Play und IIS Express" lightbox="./media/vs-dropdown.png":::
    <span data-ttu-id="0189e-135">Das Dropdown neben der grünen **Schaltfläche "Play"** und **"IIS Express"**</span><span class="sxs-lookup"><span data-stu-id="0189e-135">The dropdown next to the green **Play** button and **IIS Express**</span></span>  
 :::image-end:::  
 

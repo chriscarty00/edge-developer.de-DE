@@ -63,7 +63,7 @@ ms.locfileid: "11535964"
     1.  <span data-ttu-id="91687-137">Wählen Sie die **JavaScript-Diagnoseeinstellung** aus.</span><span class="sxs-lookup"><span data-stu-id="91687-137">Choose the **JavaScript diagnostics** setting.</span></span>  
     1.  <span data-ttu-id="91687-138">Wählen Sie **Ändern**aus.</span><span class="sxs-lookup"><span data-stu-id="91687-138">Choose **Modify**.</span></span> 
         
-        :::image type="complex" source="./media/indiv-comp.png" alt-text="Visual Studio Ändern der Registerkarte "Einzelne Komponenten"" lightbox="./media/indiv-comp.png":::
+        :::image type="complex" source="./media/indiv-comp.png" alt-text="Visual Studio Ändern der Registerkarte Einzelne Komponenten" lightbox="./media/indiv-comp.png":::
            <span data-ttu-id="91687-140">Visual Studio Ändern der Registerkarte "Einzelne Komponenten"</span><span class="sxs-lookup"><span data-stu-id="91687-140">Visual Studio Modifying Individual Components Tab</span></span>  
         :::image-end:::  
         
@@ -92,7 +92,7 @@ ms.locfileid: "11535964"
     
 1.  <span data-ttu-id="91687-157">Suchen Sie **in der Debugkonsole**nach der Ausgabe des Debuggers.</span><span class="sxs-lookup"><span data-stu-id="91687-157">In the **Debug Console**, find the output from the debugger.</span></span>  
     
-    :::image type="complex" source="./media/console.png" alt-text=" Visual Studio Debugkonsole" lightbox="./media/console.png"::: 
+    :::image type="complex" source="./media/console.png" alt-text="Visual Studio Debugkonsole" lightbox="./media/console.png"::: 
        <span data-ttu-id="91687-159">Visual Studio Debug **console**</span><span class="sxs-lookup"><span data-stu-id="91687-159">Visual Studio **Debug Console**</span></span>  
     :::image-end:::  
     
@@ -133,7 +133,7 @@ ms.locfileid: "11535964"
     1.  <span data-ttu-id="91687-171">Wählen Sie **auf der** Registerkarte Ausführen im Dropdownmenü die Startkonfiguration aus.</span><span class="sxs-lookup"><span data-stu-id="91687-171">On the **Run** tab, choose the launch configuration from the dropdown menu.</span></span>  
     1.  <span data-ttu-id="91687-172">Wenn Sie mit dem Debuggen Ihrer App beginnen möchten, wählen Sie Debuggen starten aus. Dabei handelt es sich um das grüne Dreieck neben der Startkonfiguration.</span><span class="sxs-lookup"><span data-stu-id="91687-172">To start debugging your app, choose Start Debugging, which is the green triangle next to the launch configuration drop down.</span></span>  
         
-        :::image type="complex" source="./media/run-vs.png" alt-text=" Visual Studio Code Registerkarte "Ausführen"" lightbox="./media/run-vs.png":::
+        :::image type="complex" source="./media/run-vs.png" alt-text="Visual Studio Code Registerkarte Ausführen" lightbox="./media/run-vs.png":::
            <span data-ttu-id="91687-174">Visual Studio Code Registerkarte "Ausführen"</span><span class="sxs-lookup"><span data-stu-id="91687-174">Visual Studio Code Run tab</span></span>  
         :::image-end:::  
         
@@ -209,7 +209,7 @@ ms.locfileid: "11535964"
                 ,"trace": true  // Turn on  debug tracing, and save the output to a log file.
               ```  
               
-              :::image type="complex" source="./media/trace-log.png" alt-text=" Speichern Sie die Debugausgabe in einer Protokolldatei." lightbox="./media/trace-log.png":::
+              :::image type="complex" source="./media/trace-log.png" alt-text="Speichern Sie die Debugausgabe in einer Protokolldatei." lightbox="./media/trace-log.png":::
                  <span data-ttu-id="91687-199">Speichern der Debugausgabe in einer Protokolldatei</span><span class="sxs-lookup"><span data-stu-id="91687-199">Save debug output to a log file</span></span>  
               :::image-end:::  
            :::column-end:::
@@ -218,7 +218,7 @@ ms.locfileid: "11535964"
               ,"trace": "verbose"  // Turn on verbose tracing in the Debug Output pane.
               ```  
               
-              :::image type="complex" source="./media/verbose.png" alt-text=" Ausführliche Ausgabe" lightbox="./media/verbose.png":::
+              :::image type="complex" source="./media/verbose.png" alt-text="Ausführliche Ausgabe" lightbox="./media/verbose.png":::
                  <span data-ttu-id="91687-201">Visual Studio Code Debuggen der Ausgabe mit aktivierter ausführlicher Ablaufverfolgung</span><span class="sxs-lookup"><span data-stu-id="91687-201">Visual Studio Code Debug Output with verbose tracing turned on</span></span>  
               :::image-end:::  
            :::column-end:::

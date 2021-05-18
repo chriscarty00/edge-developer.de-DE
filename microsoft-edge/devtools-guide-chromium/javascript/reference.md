@@ -164,7 +164,7 @@ function getName() {
 
 ### <a name="restart-the-top-function-of-the-call-stack"></a><span data-ttu-id="89352-173">Starten Sie die oberste Funktion der Aufrufliste neu.</span><span class="sxs-lookup"><span data-stu-id="89352-173">Restart the top function of the call stack</span></span>  
 
-<span data-ttu-id="89352-174">Wenn Sie in der ersten Zeile der top-Funktion in Ihrer Aufrufliste anhalten und \*\*\*\* in einer Codezeile angehalten werden, zeigen Sie auf eine beliebige Stelle im Bereich Anrufliste, öffnen Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste\), und wählen Sie Frame neu **starten**aus.</span><span class="sxs-lookup"><span data-stu-id="89352-174">To pause on the first line of the top function in your call stack, while paused on a line of code, hover anywhere in the **Call Stack** pane, open the contextual menu \(right-click\), and choose **Restart frame**.</span></span>  <span data-ttu-id="89352-175">Die top-Funktion ist die letzte ausgeführte Funktion.</span><span class="sxs-lookup"><span data-stu-id="89352-175">The top function is the last function that was run.</span></span>  
+<span data-ttu-id="89352-174">Wenn Sie in der ersten Zeile der top-Funktion in Ihrer Aufrufliste anhalten undin einer Codezeile angehalten werden, zeigen Sie auf eine beliebige Stelle im Bereich Anrufliste, öffnen Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste\), und wählen Sie Frame neu **starten**aus.</span><span class="sxs-lookup"><span data-stu-id="89352-174">To pause on the first line of the top function in your call stack, while paused on a line of code, hover anywhere in the **Call Stack** pane, open the contextual menu \(right-click\), and choose **Restart frame**.</span></span>  <span data-ttu-id="89352-175">Die top-Funktion ist die letzte ausgeführte Funktion.</span><span class="sxs-lookup"><span data-stu-id="89352-175">The top function is the last function that was run.</span></span>  
 
 <span data-ttu-id="89352-176">Der folgende Codeausschnitt ist ein Beispiel für einen schrittweisen Schritt.</span><span class="sxs-lookup"><span data-stu-id="89352-176">The following code snippet is an example for you to step-through.</span></span>  
 
@@ -194,7 +194,7 @@ function factorial(n) {
 
 #### <a name="force-script-runtime"></a><span data-ttu-id="89352-186">Erzwingen der Skriptlaufzeit</span><span class="sxs-lookup"><span data-stu-id="89352-186">Force script runtime</span></span>  
 
-<span data-ttu-id="89352-187">Um alle Haltepunkte zu ignorieren und die Ausführung des Skripts zu erzwingen, klicken Sie auf die Schaltfläche Skriptausführung fortsetzen **\(** Skriptausführung fortsetzen \) und wählen Sie dann die Schaltfläche Skriptausführung erzwingen \( Skriptausführung erzwingen ![ ](../media/resume-script-run-icon.msft.png) \*\*\*\* ![ ](../media/force-script-run-icon.msft.png) \) aus.</span><span class="sxs-lookup"><span data-stu-id="89352-187">To ignore all breakpoints and force your script to continue to run, choose and hold the **Resume script execution** \(![Resume script execution](../media/resume-script-run-icon.msft.png)\) button and then choose the **Force script execution** \(![Force script execution](../media/force-script-run-icon.msft.png)\) button.</span></span>  
+<span data-ttu-id="89352-187">Um alle Haltepunkte zu ignorieren und die Ausführung des Skripts zu erzwingen, klicken Sie auf die Schaltfläche Skriptausführung fortsetzen **\(** Skriptausführung fortsetzen \) und wählen Sie dann die Schaltfläche Skriptausführung erzwingen \( Skriptausführung erzwingen ![ ](../media/resume-script-run-icon.msft.png)![ ](../media/force-script-run-icon.msft.png) \) aus.</span><span class="sxs-lookup"><span data-stu-id="89352-187">To ignore all breakpoints and force your script to continue to run, choose and hold the **Resume script execution** \(![Resume script execution](../media/resume-script-run-icon.msft.png)\) button and then choose the **Force script execution** \(![Force script execution](../media/force-script-run-icon.msft.png)\) button.</span></span>  
 
 :::image type="complex" source="../media/javascript-sources-get-started-js-force-script-runtime.msft.png" alt-text="Auswählen der Skriptausführung erzwingen" lightbox="../media/javascript-sources-get-started-js-force-script-runtime.msft.png":::
    <span data-ttu-id="89352-189">Auswählen **der Skriptausführung erzwingen**</span><span class="sxs-lookup"><span data-stu-id="89352-189">Choose **Force script execution**</span></span>  
@@ -212,7 +212,7 @@ function factorial(n) {
 
 ## <a name="view-and-edit-properties-and-variables"></a><span data-ttu-id="89352-198">Anzeigen und Bearbeiten von Eigenschaften und Variablen</span><span class="sxs-lookup"><span data-stu-id="89352-198">View and edit properties and variables</span></span>
 
-<span data-ttu-id="89352-199">Verwenden Sie den Bereich Bereich, \*\*\*\* um die Werte von Eigenschaften und Variablen in den lokalen, Schließ- und globalen Bereich anzuzeigen und zu bearbeiten, während sie in einer Codezeile angehalten werden.</span><span class="sxs-lookup"><span data-stu-id="89352-199">While paused on a line of code, use the **Scope** pane to view and edit the values of properties and variables in the local, closure, and global scopes.</span></span>  
+<span data-ttu-id="89352-199">Verwenden Sie den Bereich Bereich,um die Werte von Eigenschaften und Variablen in den lokalen, Schließ- und globalen Bereich anzuzeigen und zu bearbeiten, während sie in einer Codezeile angehalten werden.</span><span class="sxs-lookup"><span data-stu-id="89352-199">While paused on a line of code, use the **Scope** pane to view and edit the values of properties and variables in the local, closure, and global scopes.</span></span>  
 
 *   <span data-ttu-id="89352-200">Doppelklicken Sie auf einen Eigenschaftswert, um ihn zu ändern.</span><span class="sxs-lookup"><span data-stu-id="89352-200">Double-click a property value to change it.</span></span>  
 *   <span data-ttu-id="89352-201">Nicht aufzählbare Eigenschaften sind ausgegraut.</span><span class="sxs-lookup"><span data-stu-id="89352-201">Non-enumerable properties are greyed out.</span></span>  
@@ -225,7 +225,7 @@ function factorial(n) {
 
 <span data-ttu-id="89352-205">Verwenden Sie den **Bereich "Watch",** um die Werte benutzerdefinierter Ausdrücke zu beobachten.</span><span class="sxs-lookup"><span data-stu-id="89352-205">Use the **Watch** pane to watch the values of custom expressions.</span></span>  <span data-ttu-id="89352-206">Sie können einen beliebigen gültigen JavaScript-Ausdruck ansehen.</span><span class="sxs-lookup"><span data-stu-id="89352-206">You can watch any valid JavaScript expression.</span></span>  
 
-:::image type="complex" source="../media/javascript-sources-get-started-js-watch.msft.png" alt-text="Der Bereich "Watch"" lightbox="../media/javascript-sources-get-started-js-watch.msft.png":::
+:::image type="complex" source="../media/javascript-sources-get-started-js-watch.msft.png" alt-text="Der Bereich Watch" lightbox="../media/javascript-sources-get-started-js-watch.msft.png":::
    <span data-ttu-id="89352-208">Der **Bereich "Watch"**</span><span class="sxs-lookup"><span data-stu-id="89352-208">The **Watch** pane</span></span>  
 :::image-end:::  
 
@@ -235,13 +235,13 @@ function factorial(n) {
 
 ## <a name="view-the-call-stack"></a><span data-ttu-id="89352-213">Anzeigen der Aufrufliste</span><span class="sxs-lookup"><span data-stu-id="89352-213">View the call stack</span></span>  
 
-<span data-ttu-id="89352-214">Während Sie in einer Codezeile \*\*\*\* angehalten werden, verwenden Sie den Bereich Anrufliste, um die Aufrufliste anzuzeigen, die Sie zu diesem Punkt enstanden hat.</span><span class="sxs-lookup"><span data-stu-id="89352-214">While paused on a line of code, use the **Call Stack** pane to view the call stack that got you to this point.</span></span>  
+<span data-ttu-id="89352-214">Während Sie in einer Codezeileangehalten werden, verwenden Sie den Bereich Anrufliste, um die Aufrufliste anzuzeigen, die Sie zu diesem Punkt enstanden hat.</span><span class="sxs-lookup"><span data-stu-id="89352-214">While paused on a line of code, use the **Call Stack** pane to view the call stack that got you to this point.</span></span>  
 
 <!--If you are working with async code, check the **Async** checkbox to enable async call stacks.  -->  
 
 <span data-ttu-id="89352-215">Wählen Sie einen Eintrag aus, um zur Codezeile zu springen, in der diese Funktion aufgerufen wurde.</span><span class="sxs-lookup"><span data-stu-id="89352-215">Choose an entry to jump to the line of code where that function was called.</span></span>  <span data-ttu-id="89352-216">Das blaue Pfeilsymbol stellt dar, welche Funktion DevTools derzeit hervorhebt.</span><span class="sxs-lookup"><span data-stu-id="89352-216">The blue arrow icon represents which function DevTools is currently highlighting.</span></span>  
 
-:::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty.msft.png" alt-text="Der Bereich "Anrufliste"" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty.msft.png":::
+:::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty.msft.png" alt-text="Der Bereich Anrufliste" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty.msft.png":::
    <span data-ttu-id="89352-218">Der **Bereich "Anrufliste"**</span><span class="sxs-lookup"><span data-stu-id="89352-218">The **Call Stack** pane</span></span>  
 :::image-end:::  
 
@@ -254,7 +254,7 @@ function factorial(n) {
 This should be moved to an "Export debug data" H2 section when there is enough content for that, but there is not right now, so it is here.
 -->
 
-<span data-ttu-id="89352-221">Wenn Sie den aktuellen Aufrufstapel in die \*\*\*\* Zwischenablage kopieren möchten, zeigen Sie auf eine beliebige Stelle im Bereich Anrufliste, öffnen Sie das Kontextmenü \(rechtsklicken\), und wählen Sie Stapelverfolgung kopieren **aus.**</span><span class="sxs-lookup"><span data-stu-id="89352-221">To copy the current call stack to the clipboard, hover anywhere in the **Call Stack** pane, open the contextual menu \(right-click\), and choose **Copy stack trace**.</span></span>  
+<span data-ttu-id="89352-221">Wenn Sie den aktuellen Aufrufstapel in dieZwischenablage kopieren möchten, zeigen Sie auf eine beliebige Stelle im Bereich Anrufliste, öffnen Sie das Kontextmenü \(rechtsklicken\), und wählen Sie Stapelverfolgung kopieren **aus.**</span><span class="sxs-lookup"><span data-stu-id="89352-221">To copy the current call stack to the clipboard, hover anywhere in the **Call Stack** pane, open the contextual menu \(right-click\), and choose **Copy stack trace**.</span></span>  
 
 :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-copy-stack-trace.msft.png" alt-text="Wählen Sie Stapelverfolgung kopieren aus" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-copy-stack-trace.msft.png":::
    <span data-ttu-id="89352-223">Wählen **Sie Stapelverfolgung kopieren aus**</span><span class="sxs-lookup"><span data-stu-id="89352-223">Choose **Copy Stack Trace**</span></span>  
@@ -270,7 +270,7 @@ onChoose (get-started.js:15)
 
 ## <a name="ignore-a-script-or-pattern-of-scripts"></a><span data-ttu-id="89352-225">Ignorieren eines Skripts oder Skriptmusters</span><span class="sxs-lookup"><span data-stu-id="89352-225">Ignore a script or pattern of scripts</span></span>  
 
-<span data-ttu-id="89352-226">Markieren Sie ein Skript als Bibliothekscode, wenn Sie dieses Skript beim Debuggen ignorieren möchten.</span><span class="sxs-lookup"><span data-stu-id="89352-226">Mark a script as Library code when you want to ignore that script while debugging.</span></span>  <span data-ttu-id="89352-227">Wenn sie als Bibliothekscode markiert sind, \*\*\*\* wird ein Skript im Bereich Aufrufliste verdeckt, und Sie treten niemals in die Funktionen des Skripts ein, wenn Sie den Code durchschritten.</span><span class="sxs-lookup"><span data-stu-id="89352-227">When marked as Library code, a script is obscured in the **Call Stack** pane, and you never step into the functions of the script when you step through your code.</span></span>  
+<span data-ttu-id="89352-226">Markieren Sie ein Skript als Bibliothekscode, wenn Sie dieses Skript beim Debuggen ignorieren möchten.</span><span class="sxs-lookup"><span data-stu-id="89352-226">Mark a script as Library code when you want to ignore that script while debugging.</span></span>  <span data-ttu-id="89352-227">Wenn sie als Bibliothekscode markiert sind,wird ein Skript im Bereich Aufrufliste verdeckt, und Sie treten niemals in die Funktionen des Skripts ein, wenn Sie den Code durchschritten.</span><span class="sxs-lookup"><span data-stu-id="89352-227">When marked as Library code, a script is obscured in the **Call Stack** pane, and you never step into the functions of the script when you step through your code.</span></span>  
 
 <span data-ttu-id="89352-228">Im folgenden Codeausschnitt wird in zeile beispielsweise verwendet , bei dem es sich um eine `A` `lib` Drittanbieterbibliothek handelt.</span><span class="sxs-lookup"><span data-stu-id="89352-228">For example, in the following code snippet, line `A` uses `lib`, which is a third-party library.</span></span>  <span data-ttu-id="89352-229">Wenn Sie sicher sind, dass das Problem, das Sie debuggen, nicht mit dieser Drittanbieterbibliothek in Zusammenhang steht, ist es sinnvoll, das Skript als **Bibliothekscode zu kennzeichnen.**</span><span class="sxs-lookup"><span data-stu-id="89352-229">If you are confident that the problem you are debugging is not related to that third-party library, then it makes sense to mark the script as **Library code**.</span></span>  
 

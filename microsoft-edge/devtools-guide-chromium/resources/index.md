@@ -35,7 +35,7 @@ ms.locfileid: "11565071"
 
 ## <a name="open-resources"></a><span data-ttu-id="9c106-109">Öffnen von Ressourcen</span><span class="sxs-lookup"><span data-stu-id="9c106-109">Open resources</span></span>  
 
-<span data-ttu-id="9c106-110">Wenn Sie den Namen der Ressource kennen, die \*\*\*\* Sie überprüfen möchten, bietet das Befehlsmenü eine schnelle Möglichkeit zum Öffnen der Ressource.</span><span class="sxs-lookup"><span data-stu-id="9c106-110">When you know the name of the resource that you want to inspect, the **Command Menu** provides a fast way of opening the resource.</span></span>  
+<span data-ttu-id="9c106-110">Wenn Sie den Namen der Ressource kennen, dieSie überprüfen möchten, bietet das Befehlsmenü eine schnelle Möglichkeit zum Öffnen der Ressource.</span><span class="sxs-lookup"><span data-stu-id="9c106-110">When you know the name of the resource that you want to inspect, the **Command Menu** provides a fast way of opening the resource.</span></span>  
 
 1.  <span data-ttu-id="9c106-111">Wählen `Control` + `P` Sie \(Windows, Linux\) oder `Command` + `P` \(macOS\).</span><span class="sxs-lookup"><span data-stu-id="9c106-111">Select `Control`+`P` \(Windows, Linux\) or `Command`+`P` \(macOS\).</span></span>  <span data-ttu-id="9c106-112">Das **Dialogfeld Datei öffnen** wird geöffnet.</span><span class="sxs-lookup"><span data-stu-id="9c106-112">The **Open File** dialog opens.</span></span>  
     
@@ -59,7 +59,7 @@ ms.locfileid: "11565071"
 
 ### <a name="reveal-resources-in-the-network-tool-from-other-panels"></a><span data-ttu-id="9c106-122">Aufschluss über Ressourcen im Netzwerktool in anderen Panels</span><span class="sxs-lookup"><span data-stu-id="9c106-122">Reveal resources in the Network tool from other panels</span></span>  
 
-<span data-ttu-id="9c106-123">Im [Abschnitt Ressourcen durchsuchen](#browse-resources) unten erfahren Sie, wie Sie Ressourcen aus verschiedenen Teilen der DevTools-Benutzeroberfläche anzeigen.</span><span class="sxs-lookup"><span data-stu-id="9c106-123">The [Browse resources](#browse-resources) section below shows you how to view resources from various parts of the DevTools UI.</span></span>  <span data-ttu-id="9c106-124">Wenn Sie jemals eine Ressource \*\*\*\* im Netzwerktool überprüfen möchten, zeigen Sie auf die Ressource, öffnen Sie das Kontextmenü \(rechtsklicken\), und wählen Sie Im Netzwerkbereich einblenden **aus.**</span><span class="sxs-lookup"><span data-stu-id="9c106-124">If you ever want to inspect a resource in the **Network** tool,  hover on the resource, open the contextual menu \(right-click\), and choose **Reveal in Network panel**.</span></span>  
+<span data-ttu-id="9c106-123">Im [Abschnitt Ressourcen durchsuchen](#browse-resources) unten erfahren Sie, wie Sie Ressourcen aus verschiedenen Teilen der DevTools-Benutzeroberfläche anzeigen.</span><span class="sxs-lookup"><span data-stu-id="9c106-123">The [Browse resources](#browse-resources) section below shows you how to view resources from various parts of the DevTools UI.</span></span>  <span data-ttu-id="9c106-124">Wenn Sie jemals eine Ressourceim Netzwerktool überprüfen möchten, zeigen Sie auf die Ressource, öffnen Sie das Kontextmenü \(rechtsklicken\), und wählen Sie Im Netzwerkbereich einblenden **aus.**</span><span class="sxs-lookup"><span data-stu-id="9c106-124">If you ever want to inspect a resource in the **Network** tool,  hover on the resource, open the contextual menu \(right-click\), and choose **Reveal in Network panel**.</span></span>  
 
 :::image type="complex" source="../media/resources-sources-page-reveal-in-network-panel.msft.png" alt-text="Anzeige im Netzwerkbereich" lightbox="../media/resources-sources-page-reveal-in-network-panel.msft.png":::
    **<span data-ttu-id="9c106-126">Anzeige im Netzwerkbereich</span><span class="sxs-lookup"><span data-stu-id="9c106-126">Reveal in Network panel</span></span>**  
@@ -117,7 +117,7 @@ ms.locfileid: "11565071"
     
     <span data-ttu-id="9c106-160">Ressourcen sind nach Dateityp organisiert.</span><span class="sxs-lookup"><span data-stu-id="9c106-160">Resources are organized by file type.</span></span>  <span data-ttu-id="9c106-161">Innerhalb jedes Dateityps sind die Ressourcen alphabetisch angeordnet.</span><span class="sxs-lookup"><span data-stu-id="9c106-161">Within each file type, the resources are organized alphabetically.</span></span>  
 
-    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="Die Registerkarte Seite nach dem Löschen des Häkchens "Gruppe nach Ordner"" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
+    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="Die Registerkarte Seite nach dem Löschen des Häkchens Gruppe nach Ordner" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
        <span data-ttu-id="9c106-163">Die **Registerkarte Seite** nach dem Löschen des **Häkchens "Gruppe nach** Ordner"</span><span class="sxs-lookup"><span data-stu-id="9c106-163">The **Page** tab after clearing the **Group by folder** check mark</span></span>  
     :::image-end:::  
     
@@ -131,7 +131,7 @@ ms.locfileid: "11565071"
        <span data-ttu-id="9c106-169">Das **Anwendungstool**</span><span class="sxs-lookup"><span data-stu-id="9c106-169">The **Application** tool</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="9c106-170">Scrollen Sie \*\*\*\* nach unten zum Frames-Bereich.</span><span class="sxs-lookup"><span data-stu-id="9c106-170">Scroll down to the **Frames** pane.</span></span>  
+1.  <span data-ttu-id="9c106-170">Scrollen Sienach unten zum Frames-Bereich.</span><span class="sxs-lookup"><span data-stu-id="9c106-170">Scroll down to the **Frames** pane.</span></span>  
     
     :::image type="complex" source="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png" alt-text="Der Bereich Frames" lightbox="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png":::
        <span data-ttu-id="9c106-172">Der **Bereich Frames**</span><span class="sxs-lookup"><span data-stu-id="9c106-172">The **Frames** pane</span></span>  

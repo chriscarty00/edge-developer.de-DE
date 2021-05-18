@@ -118,7 +118,8 @@ ms.locfileid: "11564238"
 1.  <span data-ttu-id="3e29e-166">Aktivieren Sie **Source Order Viewer** im Abschnitt das Kontrollkästchen **Quellreihenfolge** anzeigen.</span><span class="sxs-lookup"><span data-stu-id="3e29e-166">Under the **Source Order Viewer** section, choose the **Show Source Order** checkbox.</span></span>  
 1.  <span data-ttu-id="3e29e-167">Markieren Sie jedes HTML-Element, um eine Überlagerung anzuzeigen, die die Reihenfolge in der Webseitenquelle enthält.</span><span class="sxs-lookup"><span data-stu-id="3e29e-167">Highlight any HTML element to display an overlay that the order in the webpage source.</span></span>  
     
-:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text=":::<span data-ttu-id="3e29e-168">no-loc(Source Order Viewer)::: im Bereich Barrierefreiheit" lightbox=".. /media/experiments-source-order-viewer.msft.png"::: im **Source Order Viewer** Bereich **Barrierefreiheit**</span><span class="sxs-lookup"><span data-stu-id="3e29e-168">no-loc(Source Order Viewer)::: in the Accessibility pane" lightbox="../media/experiments-source-order-viewer.msft.png"::: **Source Order Viewer** in the **Accessibility** pane</span></span>  
+:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer in the Accessibility pane" lightbox="../media/experiments-source-order-viewer.msft.png":::
+   **Source Order Viewer** in the **Accessibility** pane  
 :::image-end:::  
 
 <!--Available in Microsoft Edge version 86 and later.  -->  
@@ -133,7 +134,7 @@ ms.locfileid: "11564238"
 1.  <span data-ttu-id="3e29e-177">Öffnen Sie den **Bereich Zusammengesetzte Ebenen.**</span><span class="sxs-lookup"><span data-stu-id="3e29e-177">Open the **Composited Layers** pane.</span></span>  
 1.  <span data-ttu-id="3e29e-178">Alle dargestellten Ebenen der App werden angezeigt.</span><span class="sxs-lookup"><span data-stu-id="3e29e-178">All of the painted layers of the app are displayed.</span></span>  <span data-ttu-id="3e29e-179">Testen Sie dieses Feature mit Ihren eigenen Web-Apps.</span><span class="sxs-lookup"><span data-stu-id="3e29e-179">Try this feature with your own web apps.</span></span>  
     
-:::image type="complex" source="../media/experiments-layers.msft.png" alt-text="Bereich „Zusammengesetzte Ebenen“" lightbox="../media/experiments-layers.msft.png":::
+:::image type="complex" source="../media/experiments-layers.msft.png" alt-text="Bereich Zusammengesetzte Ebenen" lightbox="../media/experiments-layers.msft.png":::
    <span data-ttu-id="3e29e-181">Bereich **Zusammengesetzte Ebenen**</span><span class="sxs-lookup"><span data-stu-id="3e29e-181">**Composited Layers** pane</span></span>  
 :::image-end:::  
 
@@ -220,7 +221,7 @@ ms.locfileid: "11564238"
 *   <span data-ttu-id="3e29e-230">Versionshinweise</span><span class="sxs-lookup"><span data-stu-id="3e29e-230">release notes</span></span>  
 *   <span data-ttu-id="3e29e-231">Option zum Kontaktieren des Microsoft Edge DevTools-Teams</span><span class="sxs-lookup"><span data-stu-id="3e29e-231">Option to contact the Microsoft Edge DevTools team</span></span>  
     
-<span data-ttu-id="3e29e-232">Das **Willkommenstool** wird automatisch nach jedem Update für Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="3e29e-232">The **Welcome** tool opens automatically after each update to Microsoft Edge.</span></span>  <span data-ttu-id="3e29e-233">Um die Anzeige \*\*\*\* des Willkommenstools nach jedem Update zu verhindern, aktivieren Sie das Kontrollkästchen neben Registerkarte Öffnen nach jedem Update **unter** dem **Titel Willkommenstool.**</span><span class="sxs-lookup"><span data-stu-id="3e29e-233">To prevent the display of the **Welcome** tool after each update, clear the checkbox next to **Open tab after each update** under the **Welcome** tool title.</span></span>  
+<span data-ttu-id="3e29e-232">Das **Willkommenstool** wird automatisch nach jedem Update für Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="3e29e-232">The **Welcome** tool opens automatically after each update to Microsoft Edge.</span></span>  <span data-ttu-id="3e29e-233">Um die Anzeigedes Willkommenstools nach jedem Update zu verhindern, aktivieren Sie das Kontrollkästchen neben Registerkarte Öffnen nach jedem Update **unter** dem **Titel Willkommenstool.**</span><span class="sxs-lookup"><span data-stu-id="3e29e-233">To prevent the display of the **Welcome** tool after each update, clear the checkbox next to **Open tab after each update** under the **Welcome** tool title.</span></span>  
 
 <span data-ttu-id="3e29e-234">Wenn Sie das ursprüngliche **Tool What's New** bevorzugen, navigieren Sie zu [Einstellungen][DevtoolsCustomizeIndexSettings]  >  **Experimente,** und entfernen Sie das Kontrollkästchen neben **Enable Welcome tab** .</span><span class="sxs-lookup"><span data-stu-id="3e29e-234">If you prefer the original **What's New** tool, navigate to [Settings][DevtoolsCustomizeIndexSettings] > **Experiments** and remove the checkbox next to **Enable Welcome tab**.</span></span>  
 

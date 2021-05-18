@@ -54,7 +54,7 @@ ms.locfileid: "11564378"
 1.  <span data-ttu-id="9bf54-117">[Öffnen Sie das Befehlsmenü][DevtoolsCommandMenu].</span><span class="sxs-lookup"><span data-stu-id="9bf54-117">[Open the Command Menu][DevtoolsCommandMenu].</span></span>  
 1.  <span data-ttu-id="9bf54-118">Geben `dark` Sie ein, wählen **Sie den Befehl Zum dunklen Design wechseln** aus, und wählen Sie dann aus, um den Befehl `Enter` auszuführen.</span><span class="sxs-lookup"><span data-stu-id="9bf54-118">Type `dark`, choose the **Switch To Dark Theme** command, and then select `Enter` to run the command.</span></span>  
     
-    :::image type="complex" source="../media/customize-command-menu-dark.msft.png" alt-text="Der Befehl "Dunkles Design"" lightbox="../media/customize-command-menu-dark.msft.png":::
+    :::image type="complex" source="../media/customize-command-menu-dark.msft.png" alt-text="Der Befehl Dunkles Design" lightbox="../media/customize-command-menu-dark.msft.png":::
        <span data-ttu-id="9bf54-120">Der Befehl "Dunkles Design"</span><span class="sxs-lookup"><span data-stu-id="9bf54-120">The dark theme command</span></span>  
     :::image-end:::  
     

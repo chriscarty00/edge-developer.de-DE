@@ -80,7 +80,7 @@ ms.locfileid: "11564119"
 
 <span data-ttu-id="941a8-132">Sie können nun Inhalte von **Ebenen** neben Z-Indexwerten und dem Dokumentobjektmodell \(DOM\) visualisieren.</span><span class="sxs-lookup"><span data-stu-id="941a8-132">You may now visualize **Layers** content alongside z-index values and the Document Object Model \(DOM\).</span></span>  <span data-ttu-id="941a8-133">Mit diesem Feature können Sie Debuggen, ohne zwischen den Tools [3D-Ansicht][Devtools3dViewIndex] und **Ebenen** umzuschalten.</span><span class="sxs-lookup"><span data-stu-id="941a8-133">This feature helps you debug without switching between the [3D view][Devtools3dViewIndex] and **Layers** tools as often.</span></span>  <span data-ttu-id="941a8-134">Für ein umfassendes visuelles Debugging werden jetzt [die 3D-Ansicht und die zusammengesetzten Ebenen kombiniert][Devtools3dViewIndex].</span><span class="sxs-lookup"><span data-stu-id="941a8-134">For a comprehensive visual debugging experience, the [3D View and Composited Layers are now combined][Devtools3dViewIndex].</span></span>  
 
-:::image type="complex" source="../../media/2020/11/experiments-layers.msft.png" alt-text="Bereich „Zusammengesetzte Ebenen“" lightbox="../../media/2020/11/experiments-layers.msft.png":::
+:::image type="complex" source="../../media/2020/11/experiments-layers.msft.png" alt-text="Bereich Zusammengesetzte Ebenen" lightbox="../../media/2020/11/experiments-layers.msft.png":::
    <span data-ttu-id="941a8-136">Bereich **Zusammengesetzte Ebenen**</span><span class="sxs-lookup"><span data-stu-id="941a8-136">**Composited Layers** pane</span></span>  
 :::image-end:::  
 
@@ -126,7 +126,7 @@ ms.locfileid: "11564119"
 1.  <span data-ttu-id="941a8-157">Navigieren Sie zu **Anwendung** > **Service Workers**.</span><span class="sxs-lookup"><span data-stu-id="941a8-157">Navigate to **Application** > **Service Workers**.</span></span>  
 1.  <span data-ttu-id="941a8-158">Wählen Sie **Netzwerkanforderungen** aus.</span><span class="sxs-lookup"><span data-stu-id="941a8-158">Choose **Network requests**.</span></span>  
     
-    :::image type="complex" source="../../media/2020/11/service-worker-application-network-requests.msft.png" alt-text="Öffnen des Netzwerk-Tools im Bereich "Service Workers"" lightbox="../../media/2020/11/service-worker-application-network-requests.msft.png":::
+    :::image type="complex" source="../../media/2020/11/service-worker-application-network-requests.msft.png" alt-text="Öffnen des Netzwerk-Tools im Bereich Service Workers" lightbox="../../media/2020/11/service-worker-application-network-requests.msft.png":::
        <span data-ttu-id="941a8-160">Öffnen des **Netzwerk**-Tools im Bereich **Service Workers**</span><span class="sxs-lookup"><span data-stu-id="941a8-160">Open **Network** tool from the **Service Workers** pane</span></span>
     :::image-end:::  
     
@@ -151,7 +151,7 @@ ms.locfileid: "11564119"
 *   <span data-ttu-id="941a8-174">Die Laufzeit eines `fetch`-Ereignishandlers.</span><span class="sxs-lookup"><span data-stu-id="941a8-174">The runtime of a `fetch` event handler.</span></span>  
 *   <span data-ttu-id="941a8-175">Die Laufzeit aller `fetch`-Ereignisse zum Laden eines Clients.</span><span class="sxs-lookup"><span data-stu-id="941a8-175">The runtime of all `fetch` events for loading a client.</span></span>  
     
-:::image type="complex" source="../../media/2020/11/network-timing-service-worker.msft.png" alt-text="Bereich "Timing"" lightbox="../../media/2020/11/network-timing-service-worker.msft.png":::
+:::image type="complex" source="../../media/2020/11/network-timing-service-worker.msft.png" alt-text="Bereich Timing" lightbox="../../media/2020/11/network-timing-service-worker.msft.png":::
    <span data-ttu-id="941a8-177">Bereich **Timing**</span><span class="sxs-lookup"><span data-stu-id="941a8-177">**Timing** pane</span></span>  
 :::image-end:::  
 

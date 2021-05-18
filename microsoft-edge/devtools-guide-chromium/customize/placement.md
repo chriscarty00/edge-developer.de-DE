@@ -77,7 +77,7 @@ ms.locfileid: "11564364"
 
 ## <a name="change-placement-from-the-main-menu"></a><span data-ttu-id="8a61d-120">Ändern der Platzierung aus dem Hauptmenü</span><span class="sxs-lookup"><span data-stu-id="8a61d-120">Change placement from the main menu</span></span>  
 
-1.  <span data-ttu-id="8a61d-121">Wählen **Sie Anpassen und Steuern von DevTools** \( \) aus, und wählen Sie Abdocken in separates Fenster `...` \( \*\*\*\* ![ Undock ](../media/undock-icon.msft.png) \), Dock to **bottom** \( Dock to bottom \) oder Dock ![ to ](../media/bottom-icon.msft.png) **left** \( Dock to ![ left ](../media/left-icon.msft.png) \).</span><span class="sxs-lookup"><span data-stu-id="8a61d-121">Choose **Customize and control DevTools** \(`...`\) and choose **Undock into separate window** \(![Undock](../media/undock-icon.msft.png)\), **Dock to bottom** \(![Dock to bottom](../media/bottom-icon.msft.png)\), or **Dock to left** \(![Dock to left](../media/left-icon.msft.png)\).</span></span>  
+1.  <span data-ttu-id="8a61d-121">Wählen **Sie Anpassen und Steuern von DevTools** \( \) aus, und wählen Sie Abdocken in separates Fenster `...` \(![ Undock ](../media/undock-icon.msft.png) \), Dock to **bottom** \( Dock to bottom \) oder Dock ![ to ](../media/bottom-icon.msft.png) **left** \( Dock to ![ left ](../media/left-icon.msft.png) \).</span><span class="sxs-lookup"><span data-stu-id="8a61d-121">Choose **Customize and control DevTools** \(`...`\) and choose **Undock into separate window** \(![Undock](../media/undock-icon.msft.png)\), **Dock to bottom** \(![Dock to bottom](../media/bottom-icon.msft.png)\), or **Dock to left** \(![Dock to left](../media/left-icon.msft.png)\).</span></span>  
     
     :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="Wählen Sie In separates Fenster abdocken aus" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
        <span data-ttu-id="8a61d-123">Wählen **Sie Abdocken in separates Fenster aus.**</span><span class="sxs-lookup"><span data-stu-id="8a61d-123">Choose **Undock into separate window**</span></span>  
@@ -96,7 +96,7 @@ ms.locfileid: "11564364"
     
     <span data-ttu-id="8a61d-132">Sie können auch über das Hauptmenü auf [die Befehle zugreifen.](#change-placement-from-the-main-menu)</span><span class="sxs-lookup"><span data-stu-id="8a61d-132">You may also access the commands from the [main menu](#change-placement-from-the-main-menu).</span></span> 
     
-    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="Der Befehl "Abdocken"" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
+    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="Der Befehl Abdocken" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
        <span data-ttu-id="8a61d-134">Der Befehl "Abdocken"</span><span class="sxs-lookup"><span data-stu-id="8a61d-134">The Undock command</span></span>  
     :::image-end:::  
     

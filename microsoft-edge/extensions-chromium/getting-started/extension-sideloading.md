@@ -32,7 +32,7 @@ ms.locfileid: "11104773"
 
 1.  <span data-ttu-id="11557-115">Wählen Sie bei der ersten Installation der Erweiterung die Option **Entpackt laden aus.**</span><span class="sxs-lookup"><span data-stu-id="11557-115">When installing your extension for the first time, choose **Load Unpacked**.</span></span>  <span data-ttu-id="11557-116">Sie werden zur Eingabe des Verzeichnisses mit ihren Erweiterungsquellendateien aufgefordert.</span><span class="sxs-lookup"><span data-stu-id="11557-116">You'll be prompted for the directory with your extension source files.</span></span>  <span data-ttu-id="11557-117">Ihre Erweiterung wird in Ihrem Browser installiert, ähnlich wie erweiterungen, die aus dem Store installiert wurden.</span><span class="sxs-lookup"><span data-stu-id="11557-117">Your extension is installed in your browser, similar to extensions installed from the store.</span></span>  
 
-       :::image type="complex" source="./media/part1-installed-extension.png" alt-text="Seite "Installierte Erweiterungen" mit einer seitengeladenen Erweiterung":::
+       :::image type="complex" source="./media/part1-installed-extension.png" alt-text="Seite Installierte Erweiterungen mit einer seitengeladenen Erweiterung":::
           <span data-ttu-id="11557-119">Seite "Installierte Erweiterungen" mit einer seitengeladenen Erweiterung</span><span class="sxs-lookup"><span data-stu-id="11557-119">Installed extensions page showing a sideloaded extension</span></span> :::image-end:::
 
 <span data-ttu-id="11557-120">Während der Entwicklung müssen Sie möglicherweise auch die folgenden Aufgaben ausführen.</span><span class="sxs-lookup"><span data-stu-id="11557-120">During development, you may also need to perform the following tasks.</span></span>

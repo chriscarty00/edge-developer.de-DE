@@ -108,7 +108,7 @@ ms.locfileid: "11564525"
 
 ### <a name="log-xhr-and-fetch-requests"></a><span data-ttu-id="33144-152">Protokollierung von XHR- und Fetch-Anforderungen</span><span class="sxs-lookup"><span data-stu-id="33144-152">Log XHR and Fetch requests</span></span>  
 
-<span data-ttu-id="33144-153">Wenn Sie alle Und Anforderungen an die Konsole protokollieren möchten, öffnen Sie console Einstellungen, und aktivieren Sie das Kontrollkästchen neben `XMLHttpRequest` `Fetch` Log **XMLHttpRequests**. \*\*\*\* [](#open-console-settings)</span><span class="sxs-lookup"><span data-stu-id="33144-153">To log all `XMLHttpRequest` and `Fetch` requests to the **Console** as each happens, [open Console Settings](#open-console-settings) and choose the checkbox next to **Log XMLHttpRequests**.</span></span>  
+<span data-ttu-id="33144-153">Wenn Sie alle Und Anforderungen an die Konsole protokollieren möchten, öffnen Sie console Einstellungen, und aktivieren Sie das Kontrollkästchen neben `XMLHttpRequest` `Fetch` Log **XMLHttpRequests**.[](#open-console-settings)</span><span class="sxs-lookup"><span data-stu-id="33144-153">To log all `XMLHttpRequest` and `Fetch` requests to the **Console** as each happens, [open Console Settings](#open-console-settings) and choose the checkbox next to **Log XMLHttpRequests**.</span></span>  
 
 :::image type="complex" source="../media/console-xhr-fetch.msft.png" alt-text="Protokollieren von XMLHttpRequest- und Fetch-Anforderungen" lightbox="../media/console-xhr-fetch.msft.png":::
    <span data-ttu-id="33144-155">Protokoll `XMLHttpRequest` und `Fetch` Anforderungen</span><span class="sxs-lookup"><span data-stu-id="33144-155">Log `XMLHttpRequest` and `Fetch` requests</span></span>  
@@ -168,7 +168,7 @@ ms.locfileid: "11564525"
 
 <span data-ttu-id="33144-181">Wählen Sie zum Filtern der Nachrichten das **Dropdownmenü Protokollebenen** aus, und wählen Sie `Verbose` , , oder `Info` `Warning` `Error` aus.</span><span class="sxs-lookup"><span data-stu-id="33144-181">To filter the messages, choose the **Log Levels** dropdown and choose `Verbose`, `Info`, `Warning`, or `Error`.</span></span>  
 
-:::image type="complex" source="../media/console-log-level-default-levels.msft.png" alt-text="Dropdownliste "Protokollebenen"" lightbox="../media/console-log-level-default-levels.msft.png":::
+:::image type="complex" source="../media/console-log-level-default-levels.msft.png" alt-text="Dropdownliste Protokollebenen" lightbox="../media/console-log-level-default-levels.msft.png":::
    <span data-ttu-id="33144-183">Dropdownliste **"Protokollebenen"**</span><span class="sxs-lookup"><span data-stu-id="33144-183">The **Log Levels** dropdown</span></span>  
 :::image-end:::  
 
@@ -224,7 +224,7 @@ ms.locfileid: "11564525"
 
 ### <a name="watch-the-value-of-an-expression-in-real-time-with-live-expressions"></a><span data-ttu-id="33144-219">Beobachten des Werts eines Ausdrucks in Echtzeit mit Live-Ausdrücken</span><span class="sxs-lookup"><span data-stu-id="33144-219">Watch the value of an expression in real time with Live Expressions</span></span>  
 
-<span data-ttu-id="33144-220">Wenn Sie denselben JavaScript-Ausdruck wiederholt \*\*\*\* in der Konsole eingeben, ist es möglicherweise einfacher, einen **Liveausdruck zu erstellen.**</span><span class="sxs-lookup"><span data-stu-id="33144-220">If you find yourself typing the same JavaScript expression in the **Console** repeatedly, you may find it easier to create a **Live Expression**.</span></span>  <span data-ttu-id="33144-221">Mit **Live-Ausdrücken**geben Sie einen Ausdruck einmal ein und an den oberen Rand der **Konsole an.**</span><span class="sxs-lookup"><span data-stu-id="33144-221">With **Live Expressions**, you type an expression once and then pin it to the top of your **Console**.</span></span>  <span data-ttu-id="33144-222">Der Wert des Ausdrucks wird in nahezu Echtzeit aktualisiert.</span><span class="sxs-lookup"><span data-stu-id="33144-222">The value of the expression updates in near real time.</span></span>  <span data-ttu-id="33144-223">Navigieren Sie [zu JavaScript Expression Values in Real-Time With Live Expressions][DevToolsConsoleLiveExpressions].</span><span class="sxs-lookup"><span data-stu-id="33144-223">Navigate to [Watch JavaScript Expression Values In Real-Time With Live Expressions][DevToolsConsoleLiveExpressions].</span></span>  
+<span data-ttu-id="33144-220">Wenn Sie denselben JavaScript-Ausdruck wiederholtin der Konsole eingeben, ist es möglicherweise einfacher, einen **Liveausdruck zu erstellen.**</span><span class="sxs-lookup"><span data-stu-id="33144-220">If you find yourself typing the same JavaScript expression in the **Console** repeatedly, you may find it easier to create a **Live Expression**.</span></span>  <span data-ttu-id="33144-221">Mit **Live-Ausdrücken**geben Sie einen Ausdruck einmal ein und an den oberen Rand der **Konsole an.**</span><span class="sxs-lookup"><span data-stu-id="33144-221">With **Live Expressions**, you type an expression once and then pin it to the top of your **Console**.</span></span>  <span data-ttu-id="33144-222">Der Wert des Ausdrucks wird in nahezu Echtzeit aktualisiert.</span><span class="sxs-lookup"><span data-stu-id="33144-222">The value of the expression updates in near real time.</span></span>  <span data-ttu-id="33144-223">Navigieren Sie [zu JavaScript Expression Values in Real-Time With Live Expressions][DevToolsConsoleLiveExpressions].</span><span class="sxs-lookup"><span data-stu-id="33144-223">Navigate to [Watch JavaScript Expression Values In Real-Time With Live Expressions][DevToolsConsoleLiveExpressions].</span></span>  
 
 ### <a name="turn-off-eager-evaluation"></a><span data-ttu-id="33144-224">Deaktivieren der Bewertung von "Begierig"</span><span class="sxs-lookup"><span data-stu-id="33144-224">Turn off Eager Evaluation</span></span>  
 
@@ -248,7 +248,7 @@ ms.locfileid: "11564525"
 
 <span data-ttu-id="33144-237">Die Standardoption für das **JavaScript-Kontextdropdown** ist **top**, das den [Browserkontext der][MdnDocsGlossaryBrowsingContext] Hauptwebseite darstellt.</span><span class="sxs-lookup"><span data-stu-id="33144-237">The default option for the **JavaScript Context** dropdown is **top**, which represents the [browsing context][MdnDocsGlossaryBrowsingContext] of the main webpage.</span></span>  
 
-:::image type="complex" source="../media/console-dom-level-top.msft.png" alt-text="Das Dropdownmenü "JavaScript-Kontext"" lightbox="../media/console-dom-level-top.msft.png":::
+:::image type="complex" source="../media/console-dom-level-top.msft.png" alt-text="Das Dropdownmenü JavaScript-Kontext" lightbox="../media/console-dom-level-top.msft.png":::
    <span data-ttu-id="33144-239">Das **Dropdownmenü "JavaScript-Kontext"**</span><span class="sxs-lookup"><span data-stu-id="33144-239">The **JavaScript Context** dropdown</span></span>  
 :::image-end:::  
 

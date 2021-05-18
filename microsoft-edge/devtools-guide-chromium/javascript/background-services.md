@@ -107,14 +107,14 @@ ms.locfileid: "11564196"
 1.  <span data-ttu-id="2aebd-151">Öffnen Sie das **Anwendungstool.**</span><span class="sxs-lookup"><span data-stu-id="2aebd-151">Open the **Application** tool.</span></span>  
 1.  <span data-ttu-id="2aebd-152">Öffnen Sie den **Bereich Benachrichtigungen.**</span><span class="sxs-lookup"><span data-stu-id="2aebd-152">Open the **Notifications** pane.</span></span>  
     
-    :::image type="complex" source="../media/javascript-application-background-services-notifications-empty.msft.png" alt-text="Der Bereich "Benachrichtigungen"" lightbox="../media/javascript-application-background-services-notifications-empty.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-notifications-empty.msft.png" alt-text="Der Bereich Benachrichtigungen" lightbox="../media/javascript-application-background-services-notifications-empty.msft.png":::
        <span data-ttu-id="2aebd-154">Der **Bereich "Benachrichtigungen"**</span><span class="sxs-lookup"><span data-stu-id="2aebd-154">The **Notifications** pane</span></span>  
     :::image-end:::  
     
 1.  <span data-ttu-id="2aebd-155">Wählen **Sie Record** \( Record ![ ](../media/record-icon.msft.png) \).</span><span class="sxs-lookup"><span data-stu-id="2aebd-155">Choose **Record** \(![Record](../media/record-icon.msft.png)\).</span></span>  
    <span data-ttu-id="2aebd-156">Nachdem einige Benachrichtigungsaktivitäten ausgelöst wurden, protokolliert DevTools die Ereignisse in der Tabelle.</span><span class="sxs-lookup"><span data-stu-id="2aebd-156">After triggering some Notifications activity, DevTools logs the events to the table.</span></span>  
     
-    :::image type="complex" source="../media/javascript-application-background-services-notifications.msft.png" alt-text="Ein Ereignisprotokoll im Bereich "Benachrichtigungen"" lightbox="../media/javascript-application-background-services-notifications.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-notifications.msft.png" alt-text="Ein Ereignisprotokoll im Bereich Benachrichtigungen" lightbox="../media/javascript-application-background-services-notifications.msft.png":::
        <span data-ttu-id="2aebd-158">Ein Ereignisprotokoll im Bereich **"Benachrichtigungen"**</span><span class="sxs-lookup"><span data-stu-id="2aebd-158">A log of events in the **Notifications** pane</span></span>  
     :::image-end:::  
     
@@ -126,7 +126,7 @@ ms.locfileid: "11564196"
     
 ## <a name="push-messages"></a><span data-ttu-id="2aebd-162">Pushnachrichten</span><span class="sxs-lookup"><span data-stu-id="2aebd-162">Push Messages</span></span>  
 
-<span data-ttu-id="2aebd-163">Um einem Benutzer eine Pushbenachrichtigung \*\*\*\* anzeigen zu können, muss ein Dienstmitarbeiter zunächst die [Pushnachrichten-API][MDNPush] verwenden, um Daten von einem Server zu empfangen.</span><span class="sxs-lookup"><span data-stu-id="2aebd-163">To display a push notification to a user, a **service worker** must first use the [Push Message API][MDNPush] to receive data from a server.</span></span>  <span data-ttu-id="2aebd-164">Wenn der Dienstmitarbeiter bereit ist, die Benachrichtigung anzuzeigen, verwendet er die [Benachrichtigungs-API][MDNNotifications].</span><span class="sxs-lookup"><span data-stu-id="2aebd-164">When the service worker is ready to display the notification, it uses the [Notifications API][MDNNotifications].</span></span>  <span data-ttu-id="2aebd-165">So protokollieren Sie Pushnachrichten für 3 Tage, auch wenn DevTools nicht geöffnet ist:</span><span class="sxs-lookup"><span data-stu-id="2aebd-165">To log Push Messages for 3 days, even when DevTools is not open:</span></span>  
+<span data-ttu-id="2aebd-163">Um einem Benutzer eine Pushbenachrichtigunganzeigen zu können, muss ein Dienstmitarbeiter zunächst die [Pushnachrichten-API][MDNPush] verwenden, um Daten von einem Server zu empfangen.</span><span class="sxs-lookup"><span data-stu-id="2aebd-163">To display a push notification to a user, a **service worker** must first use the [Push Message API][MDNPush] to receive data from a server.</span></span>  <span data-ttu-id="2aebd-164">Wenn der Dienstmitarbeiter bereit ist, die Benachrichtigung anzuzeigen, verwendet er die [Benachrichtigungs-API][MDNNotifications].</span><span class="sxs-lookup"><span data-stu-id="2aebd-164">When the service worker is ready to display the notification, it uses the [Notifications API][MDNNotifications].</span></span>  <span data-ttu-id="2aebd-165">So protokollieren Sie Pushnachrichten für 3 Tage, auch wenn DevTools nicht geöffnet ist:</span><span class="sxs-lookup"><span data-stu-id="2aebd-165">To log Push Messages for 3 days, even when DevTools is not open:</span></span>  
 
 1.  <span data-ttu-id="2aebd-166">[Öffnen Sie DevTools][OpenDevTools].</span><span class="sxs-lookup"><span data-stu-id="2aebd-166">[Open DevTools][OpenDevTools].</span></span>  
 1.  <span data-ttu-id="2aebd-167">Öffnen Sie das **Anwendungstool.**</span><span class="sxs-lookup"><span data-stu-id="2aebd-167">Open the **Application** tool.</span></span>  

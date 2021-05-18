@@ -46,7 +46,7 @@ ms.locfileid: "11564406"
 
 ## <a name="simulate-a-mobile-viewport"></a><span data-ttu-id="b1e19-124">Simulieren eines mobilen Viewports</span><span class="sxs-lookup"><span data-stu-id="b1e19-124">Simulate a mobile viewport</span></span>  
 
-<span data-ttu-id="b1e19-125">Wählen **Sie Geräteemulation** umschalten \( ![ Gerätesymbolleiste ](../media/toggle-device-toolbar-dark-icon.msft.png) umschalten \) oder **DevTools** anpassen und steuern \( `...` \) > Geräteemulation, \*\*\*\* um die Benutzeroberfläche zu öffnen, mit der Sie einen mobilen Ansichtsfenster simulieren können.</span><span class="sxs-lookup"><span data-stu-id="b1e19-125">Choose **Toggle device emulation**  \(![Toggle Device Toolbar](../media/toggle-device-toolbar-dark-icon.msft.png)\) or choose **Customize and control DevTools** \(`...`\) > **Device emulation** to open the UI that enables you to simulate a mobile viewport.</span></span>  
+<span data-ttu-id="b1e19-125">Wählen **Sie Geräteemulation** umschalten \( ![ Gerätesymbolleiste ](../media/toggle-device-toolbar-dark-icon.msft.png) umschalten \) oder **DevTools** anpassen und steuern \( `...` \) > Geräteemulation,um die Benutzeroberfläche zu öffnen, mit der Sie einen mobilen Ansichtsfenster simulieren können.</span><span class="sxs-lookup"><span data-stu-id="b1e19-125">Choose **Toggle device emulation**  \(![Toggle Device Toolbar](../media/toggle-device-toolbar-dark-icon.msft.png)\) or choose **Customize and control DevTools** \(`...`\) > **Device emulation** to open the UI that enables you to simulate a mobile viewport.</span></span>  
 
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="Die Gerätesymbolleiste" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
     <span data-ttu-id="b1e19-127">Die Gerätesymbolleiste</span><span class="sxs-lookup"><span data-stu-id="b1e19-127">The Device Toolbar</span></span>  
@@ -58,7 +58,7 @@ ms.locfileid: "11564406"
 
 <span data-ttu-id="b1e19-130">Ziehen Sie die Ziehpunkte, um das Aussehen und Aussehen Ihrer Seite in mehreren Bildschirmgrößen schnell zu testen, um die Größe des Ansichtsfensters auf die erforderlichen Dimensionen zu ändern.</span><span class="sxs-lookup"><span data-stu-id="b1e19-130">To quickly test the look and feel of your page across multiple screen sizes, drag the handles to resize the viewport to your required dimensions.</span></span>  <span data-ttu-id="b1e19-131">Sie können auch bestimmte Werte in die Felder Breite und Höhe eingeben.</span><span class="sxs-lookup"><span data-stu-id="b1e19-131">You may also enter specific values in the width and height boxes.</span></span>  <span data-ttu-id="b1e19-132">In der folgenden Abbildung wird die Breite auf und `626` die Höhe auf `516` festgelegt.</span><span class="sxs-lookup"><span data-stu-id="b1e19-132">In the following figure, the width is set to `626` and the height is set to `516`.</span></span>  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png" alt-text="Die Ziehpunkte zum Ändern der Dimensionen des Ansichtsfensters im Modus "Responsive Viewport"" lightbox="../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png":::
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png" alt-text="Die Ziehpunkte zum Ändern der Dimensionen des Ansichtsfensters im Modus Responsive Viewport" lightbox="../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png":::
     <span data-ttu-id="b1e19-134">Die Ziehpunkte zum Ändern der Dimensionen des Ansichtsfensters im Modus "Responsive Viewport"</span><span class="sxs-lookup"><span data-stu-id="b1e19-134">The handles for changing the dimensions of the viewport when in Responsive Viewport Mode</span></span>  
 :::image-end:::  
 
@@ -80,7 +80,7 @@ ms.locfileid: "11564406"
 
 <span data-ttu-id="b1e19-144">Verwenden Sie die **Liste Gerätetyp,** um ein mobiles Gerät oder Desktopgerät zu simulieren.</span><span class="sxs-lookup"><span data-stu-id="b1e19-144">Use the **Device Type** list to simulate a mobile device or desktop device.</span></span>  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png" alt-text="Die Liste "Gerätetyp"" lightbox="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png":::
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png" alt-text="Die Liste Gerätetyp" lightbox="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png":::
    <span data-ttu-id="b1e19-146">Die **Liste "Gerätetyp"**</span><span class="sxs-lookup"><span data-stu-id="b1e19-146">The **Device Type** list</span></span>  
 :::image-end:::  
 
@@ -233,7 +233,7 @@ ms.locfileid: "11564406"
        <span data-ttu-id="b1e19-244">Die **Einschränkungsliste** im Netzwerkbereich</span><span class="sxs-lookup"><span data-stu-id="b1e19-244">The **Throttle** list in the Network panel</span></span>  
     :::image-end:::  
     
-    <span data-ttu-id="b1e19-245">Oder wählen `Control` + `Shift` + `P` Sie \(Windows, Linux\) oder `Command` + `Shift` + `P` \(macOS\) \*\*\*\* `3G` \*\*\*\* \*\*\*\* aus, um das Befehlsmenü zu öffnen, geben Sie ein, und wählen Sie Schnelle 3G-Drosselung aktivieren oder langsame 3G aktivieren aus.</span><span class="sxs-lookup"><span data-stu-id="b1e19-245">Or select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**, type `3G`, and choose **Enable fast 3G throttling** or **Enable slow 3G throttling**.</span></span>  
+    <span data-ttu-id="b1e19-245">Oder wählen `Control` + `Shift` + `P` Sie \(Windows, Linux\) oder `Command` + `Shift` + `P` \(macOS\)`3G`\*\*\*\* aus, um das Befehlsmenü zu öffnen, geben Sie ein, und wählen Sie Schnelle 3G-Drosselung aktivieren oder langsame 3G aktivieren aus.</span><span class="sxs-lookup"><span data-stu-id="b1e19-245">Or select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**, type `3G`, and choose **Enable fast 3G throttling** or **Enable slow 3G throttling**.</span></span>  
     
     :::image type="complex" source="../media/device-mode-command-menu-throttle.msft.png" alt-text="Das Befehlsmenü" lightbox="../media/device-mode-command-menu-throttle.msft.png":::
        <span data-ttu-id="b1e19-247">Das **Befehlsmenü**</span><span class="sxs-lookup"><span data-stu-id="b1e19-247">The **Command Menu**</span></span>  
@@ -313,7 +313,7 @@ ms.locfileid: "11564406"
       
       1.  <span data-ttu-id="b1e19-284">Wählen **Sie Anpassen und Steuern devTools** \( `...` \) > Weitere **Tools**  >  **Netzwerkbedingungen aus.**</span><span class="sxs-lookup"><span data-stu-id="b1e19-284">Choose **Customize and control DevTools** \(`...`\) > **More tools** > **Network conditions**.</span></span>  
       
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png" alt-text="Eintrag "Netzwerkbedingungen" im Menü Weitere Tools" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png":::
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png" alt-text="Eintrag Netzwerkbedingungen im Menü Weitere Tools" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png":::
          <span data-ttu-id="b1e19-286">**Eintrag "Netzwerkbedingungen"** im Menü **Weitere** Tools</span><span class="sxs-lookup"><span data-stu-id="b1e19-286">**Network conditions** entry in the **More tools** menu</span></span>  
       :::image-end:::  
    :::column-end:::

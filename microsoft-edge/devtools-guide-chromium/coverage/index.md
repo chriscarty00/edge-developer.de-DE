@@ -64,7 +64,7 @@ ms.locfileid: "11564462"
 1.  <span data-ttu-id="701cd-124">[Öffnen Sie das Befehlsmenü][DevToolsCommandMenu].</span><span class="sxs-lookup"><span data-stu-id="701cd-124">[Open the Command Menu][DevToolsCommandMenu].</span></span>  
 1.  <span data-ttu-id="701cd-125">Beginnen Sie mit der `coverage` Eingabe, wählen Sie den **Befehl Abdeckung** anzeigen aus, und wählen Sie dann aus, `Enter` um den Befehl auszuführen.</span><span class="sxs-lookup"><span data-stu-id="701cd-125">Start typing `coverage`, select the **Show Coverage** command, and then select `Enter` to run the command.</span></span>  <span data-ttu-id="701cd-126">Der **Bereich** Abdeckung wird in der **Schublade geöffnet.**</span><span class="sxs-lookup"><span data-stu-id="701cd-126">The **Coverage** panel opens in the **Drawer**.</span></span>  
 
-    :::image type="complex" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="Der Bereich "Abdeckung"" lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
+    :::image type="complex" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="Der Bereich Abdeckung" lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
        <span data-ttu-id="701cd-128">Der **Bereich "Abdeckung"**</span><span class="sxs-lookup"><span data-stu-id="701cd-128">The **Coverage** panel</span></span>  
     :::image-end:::  
     
