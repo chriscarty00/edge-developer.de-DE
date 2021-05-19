@@ -3,17 +3,17 @@ description: Erste Schritte mit WebView2 für WPF-Apps
 title: Erste Schritte mit WebView2 für WPF-Apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/06/2021
+ms.date: 05/13/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, webview2, WebView, Webview, wpf apps, wpf, edge, CoreWebView2, browser control, edge html, get started, Erste Schritte, .NET
-ms.openlocfilehash: e7ddb3977d34e8150a10354e638226bcf96d610d
-ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
+ms.openlocfilehash: 9808c6f801e3f7a5052186bb3088621758c41762
+ms.sourcegitcommit: bbbf722067f1d255f59ab384e66798f8b77ef609
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "11535998"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "11574596"
 ---
 # <a name="get-started-with-webview2-in-wpf"></a>Erste Schritte mit WebView2 in WPF
 
@@ -62,7 +62,7 @@ Beginnen Sie mit einem einfachen Desktopprojekt, das ein einzelnes Hauptfenster 
 
 Verwenden NuGet, um dem Projekt das WebView2 SDK hinzuzufügen.  
 
-1.  Zeigen Sie auf das Projekt, öffnen Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste\), und wählen Sie **Verwalten NuGet Pakete... aus.**  
+1.  Zeigen Sie auf das Projekt, öffnen Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste\), und wählen Sie **Verwalten NuGet Pakete...** aus.  
     
     :::image type="complex" source="./media/wpf-getting-started-mng-nuget.png" alt-text="NuGet-Pakete verwalten" lightbox="./media/wpf-getting-started-mng-nuget.png":::
        NuGet-Pakete verwalten
@@ -336,7 +336,7 @@ Herzlichen Glückwunsch, Sie haben Ihre erste WebView2-App erstellt.
 Navigieren Sie zu den folgenden Ressourcen, um weitere Informationen zu WebView2 zu erhalten.  
 
 *   Weitere Informationen zum Erstellen von WebView2-Anwendungen finden Sie unter Bewährte Methoden für [die WebView2-Entwicklung.][WV2BestPractices]  
-*   Ein umfassendes Beispiel für WebView2-Funktionen finden Sie unter [WebView2Samples-Repository][GithubMicrosoftedgeWebview2samplesMain] auf GitHub.  
+*   Ein umfassendes Beispiel für WebView2-Funktionen finden Sie unter [WebView2Samples-Repository][GithubMicrosoftedgeWebview2samplesMain] GitHub.  
 *   Weitere Informationen zur WebView2-API finden Sie unter [API-Referenz](/dotnet/api/microsoft.web.webview2.wpf.webview2).  
 *   Weitere Informationen zu WebView2 finden Sie unter [WebView2 Resources](../index.md#next-steps).  
     
@@ -356,7 +356,7 @@ Navigieren Sie zu den folgenden Ressourcen, um weitere Informationen zu WebView2
 
 [GithubMicrosoftedgeWebview2samplesMain]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2-Beispiele – MicrosoftEdge/WebView2Samples | GitHub"  
 
-[MicrosoftDeveloperMicrosoftEdgeWebview2]: https://developer.microsoft.com/microsoft-edge/webview2 " WebView2-| Microsoft Edge Developer"  
+[MicrosoftDeveloperMicrosoftEdgeWebview2]: https://developer.microsoft.com/microsoft-edge/webview2 "WebView2-| Microsoft Edge Entwickler"  
 
 [MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Herunterladen von Microsoft Edge Insider Channels"  
 

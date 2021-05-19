@@ -3,17 +3,17 @@ description: Erste Schritte mit WebView2 für WinUI-Apps
 title: Erste Schritte mit WebView2 für WinUI-Apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/06/2021
+ms.date: 05/17/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, webview2, WebView, Webview, winui apps, winui, edge, CoreWebView2, browser control, edge html, get started, Erste Schritte, .NET
-ms.openlocfilehash: ad78c5e65af507031ddd510f4b21782fe00ae465
-ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
+ms.openlocfilehash: e334e8e7aec5fff4c57700a99de5cde906242e4f
+ms.sourcegitcommit: bbbf722067f1d255f59ab384e66798f8b77ef609
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "11535990"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "11574582"
 ---
 # <a name="get-started-with-webview2-in-winui-3-preview"></a>Erste Schritte mit WebView2 in WinUI 3 (Vorschau)  
 
@@ -39,7 +39,7 @@ Stellen Sie sicher, dass Sie die folgende Liste der Voraussetzungen installieren
 ## <a name="step-0---visual-studio-settings"></a>Schritt 0 – Visual Studio Einstellungen  
 
 1.  Stellen Sie sicher, dass auf Ihrem NuGet eine Paketquelle [für][NugetHome]die nuget.org.  Weitere Informationen finden Sie unter [Common NuGet configurations][NugetConsumePackagesConfiguringNugetBehavior] und [Windows Community Toolkit][WindowsCommunitytoolkit].  
-1.  Laden Sie das [WinUI 3 Preview 3 VSIX-Paket herunter, und installieren Sie es.][VisualstudioMarketplaceMicrosoftWinuiWinuiprojecttemplates]  Das Installationsprogramm fügt die WinUI 3-Projektvorlagen und das NuGet-Paket mit den WinUI 3-Bibliotheken zu Visual Studio 2019 hinzu.  
+1.  Laden Sie das Project [VsIX-Paket "Reunion" herunter,][VisualstudioMarketplaceProjectreunionMicrosoftprojectreunion]und installieren Sie es.  Das Installationsprogramm fügt die WinUI 3-Projektvorlagen und das NuGet-Paket mit den WinUI 3-Bibliotheken zu Visual Studio 2019 hinzu.  
     
     Anweisungen zum Hinzufügen des Pakets zu Visual Studio navigieren Sie zu Suchen und Verwenden `VSIX` [Visual Studio Erweiterungen][VisualstudioIdeFindingUsingVisualStudioExtensionsInstallWithoutUsing-ManageExtensionsDialogBox].
     
@@ -296,21 +296,21 @@ Um Ihre WinUI-spezifischen Featureanforderungen oder Fehler zu senden, navigiere
 
 <!-- links -->  
 [WV2BestPractices]: ../concepts/developer-guide.md "Bewährte Methoden für die WebView2-| Microsoft Docs"  
-
-[MicrosoftDeveloperMicrosoftEdgeWebview2]: ../index.md "Einführung in Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
-[Webview2IndexNextSteps]: ../index.md#next-steps "Nächste Schritte – Einführung in Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
 [Webviews2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Navigationsereignisse | Microsoft Docs"  
+[MicrosoftDeveloperMicrosoftEdgeWebview2]: ../index.md "Einführung in Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
+[Webview2IndexNextSteps]: ../index.md#next-steps "Nächste Schritte – Einführung in Microsoft Edge WebView2 (Vorschau) | Microsoft Docs"  
+
 [Webviews2ReferenceWpfMicrosoftWebExecutescriptasync]: /dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync "WebView2.ExecuteScriptAsync(String) Method (Microsoft.Web.WebView2.Wpf) | Microsoft Docs"  
 
-[NugetConsumePackagesConfiguringNugetBehavior]: /nuget/consume-packages/configuring-nuget-behavior "Allgemeine NuGet-Konfigurationen | Microsoft Docs"  
+[NugetConsumePackagesConfiguringNugetBehavior]: /nuget/consume-packages/configuring-nuget-behavior "Häufig NuGet Konfigurationen | Microsoft Docs"  
 
-[UwpSchemasAppxpackageUapmanifestRoot]: /uwp/schemas/appxpackage/uapmanifestschema/schema-root "Paketmanifestschemareferenz für Windows 10-| Microsoft Docs"  
+[UwpSchemasAppxpackageUapmanifestRoot]: /uwp/schemas/appxpackage/uapmanifestschema/schema-root "Paketmanifestschemareferenz für Windows 10 | Microsoft Docs"  
 
 [VisualstudioIdeFindingUsingVisualStudioExtensionsInstallWithoutUsing-ManageExtensionsDialogBox]: /visualstudio/ide/finding-and-using-visual-studio-extensions#install-without-using-the-manage-extensions-dialog-box "Installieren ohne Verwenden des Dialogfelds Erweiterungen verwalten – Verwalten von Erweiterungen für Visual Studio | Microsoft Docs"  
 
-[WindowsAppsWinui3ConfigureYourDevEnvironment]: /windows/apps/winui/winui3#configure-your-dev-environment "Konfigurieren Ihrer Entwicklungsumgebung – Windows UI Library 3.0 Preview 1 (Mai 2020) | Microsoft Docs"  
-[WindowsCommunitytoolkit]: /windows/communitytoolkit "Dokumentation zu Windows Community Toolkit | Microsoft Docs"  
-[WindowsMsixDesktopToUwpPackagingDotNet]: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net "Richten Sie Ihre Desktopanwendung für die MSIX-Verpackung in Visual Studio | Microsoft Docs"  
+[WindowsAppsWinui3ConfigureYourDevEnvironment]: /windows/apps/winui/winui3#configure-your-dev-environment "Konfigurieren Der Entwicklungsumgebung : Windows Ui Library 3.0 Preview 1 (Mai 2020) | Microsoft Docs"  
+[WindowsCommunitytoolkit]: /windows/communitytoolkit "Windows Community Toolkit Documentation | Microsoft Docs"  
+[WindowsMsixDesktopToUwpPackagingDotNet]: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net "Richten Sie Ihre Desktopanwendung für die MSIX-Verpackung in einem Visual Studio | Microsoft Docs"  
 [WindowsUwpGetStartedEnableYourDeviceForDevelopment]: /windows/uwp/get-started/enable-your-device-for-development "Aktivieren Sie Ihr Gerät für | Microsoft Docs"  
 
 [GithubMicrosoftMicrosoftUiXamlIssues]: https://github.com/microsoft/microsoft-ui-xaml/issues "Probleme – microsoft/microsoft-ui-xaml | GitHub"  
@@ -331,7 +331,7 @@ Um Ihre WinUI-spezifischen Featureanforderungen oder Fehler zu senden, navigiere
 
 [WindowsDotnetcliBlobCoreSdk50100Preview4202681X64]: https://dotnetcli.blob.core.windows.net/dotnet/Sdk/5.0.100-preview.4.20268.1/dotnet-sdk-5.0.100-preview.4.20268.1-win-x64.exe " dotnet-sdk-5.0.100-preview.4.20268.1-win-x64.exe"  
 
-[VisualstudioMarketplaceMicrosoftWinuiWinuiprojecttemplates]: https://marketplace.visualstudio.com/items?itemName=Microsoft-WinUI.WinUIProjectTemplates "WinUI 3 Project Templates | Visual Studio Marketplace"  
+[VisualstudioMarketplaceProjectreunionMicrosoftprojectreunion]: https://marketplace.visualstudio.com/items?itemName=ProjectReunion.MicrosoftProjectReunion "Project Reunion-| Visual Studio Marketplace"  
 
 [MicrosoftVisualstudioMain]: https://visualstudio.microsoft.com "Visual Studio"  
 

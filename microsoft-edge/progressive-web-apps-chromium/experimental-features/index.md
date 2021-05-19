@@ -3,16 +3,16 @@ description: Die neuesten experimentellen Features in Microsoft Edge für Web Ap
 title: Experimentelle Features | Progressive Web Apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/19/2021
+ms.date: 05/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, experiment, progressive web apps, web apps, PWAs, PWA
-ms.openlocfilehash: 641b6fd5185e7f96289c1de6482764979ee0981d
-ms.sourcegitcommit: 9cc54ba3e731ecc8b713c3cf215018848f7405b9
+ms.openlocfilehash: 4a50b925e002746357b2b770b199d84772b456f5
+ms.sourcegitcommit: bbbf722067f1d255f59ab384e66798f8b77ef609
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "11496756"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "11574589"
 ---
 # <a name="experimental-features-in-progressive-web-apps-pwas"></a>Experimentelle Features in Progressive Web Apps (PWAs)  
 
@@ -68,7 +68,6 @@ In der folgenden Liste werden die neuen experimentellen Web-App-Features beschri
 | [Tastenkombinationen](#shortcuts) | 87 oder höher | Alle |  
 | [Dateiverarbeitung](#file-handling) | 83 oder höher | All Desktop |  
 
-
 ## <a name="uri-protocol-handling"></a>URI-Protokollbehandlung  
 
 Ein einheitlicher Ressourcenbezeichner \(URI\) kann verwendet werden, um mehr als nur Links zu Webseiten und Webinhalten mithilfe des HTTP- oder FTP-Protokolls zu definieren.  URIs können verwendet werden, um Links zu allem zu beschreiben, was Sie in einem Schema codieren.  Beispielsweise wird das Protokoll verwendet, um einen E-Mail-Link zu beschreiben, und das Betriebssystem \(OS\) oder der Browser entscheidet, welche Webseite oder App dieses Protokoll `mailto://` verarbeiten soll.  
@@ -79,7 +78,7 @@ Mit diesem Feature können Sie die folgenden Aktionen ausführen.
 
 *   Registrieren Der PWA mit dem Hostbetriebssystem mithilfe des Manifests Ihrer Web-App
 *   Deklarieren, dass PWA ein bestimmtes URI-Protokoll verarbeitet  
-     
+    
 Nachdem Sie einen PWA als Protokollhandler registriert haben, wird der registrierte PWA vom Betriebssystem aktiviert und empfängt den URI, wenn ein Benutzer einen Hyperlink mit einem bestimmten Schema wie oder aus einem Browser oder einer systemeigenen App aus `mailto://` `web+music://` wählt.  
 
 Dieses Feature erfordert, dass Sie das Web-App-Manifest so aktualisieren, dass es ein Array enthält, in das Array müssen `protocol_handlers` Sie zwei Felder angeben:  
@@ -485,6 +484,8 @@ body {
 }
 ```  
 
+Chromium Browser testen und gestalten dieses Feature.  Weitere Informationen einschließlich Codebeispielen finden Sie unter Anpassen der Fenstersteuerelementüberlagerung ihrer [PWA titelleiste][WebDevWindowControlsOverlay].  
+
 ## <a name="run-on-os-login"></a>Ausführen unter Betriebssystemanmeldung  
 
 Mit diesem Feature können Sie Ihre App so konfigurieren, dass sie automatisch gestartet wird, wenn sich der Benutzer bei Microsoft Windows.  Mehrere Klassen von Apps nutzen die Funktion.  Zu den Klassen von Apps gehören E-Mails, Chats, Überwachungsdashboards und Echtzeit-Datenanzeige-Apps.  Die Funktion ermöglicht es einem Benutzer, sich mit den Apps zu beschäftigen, sobald sich der Benutzer beim Betriebssystem anmeldet.  Dieses Feature startet die PWA automatisch auf die gleiche Weise, wie sie manuell gestartet wird.  
@@ -591,3 +592,4 @@ So geben Sie Feedback zu Microsoft Edge Web-App-Experimenten.
 [GithubWicgPwaUrlHandlerBlobMainExplainerMd]: https://github.com/WICG/pwa-url-handler/blob/main/explainer.md "PWAs als URL Handlers | GitHub"  
 
 [WebDevFileHandling]: https://web.dev/file-handling "Webanwendungen als Dateihandler verwenden | web.dev"  
+[WebDevWindowControlsOverlay]: https://web.dev/window-controls-overlay "Passen Sie die Überlagerung der Fenstersteuerelemente PWA titelleistenleiste ihres | web.dev"  
