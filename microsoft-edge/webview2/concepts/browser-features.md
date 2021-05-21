@@ -1,30 +1,16 @@
 ---
-<span data-ttu-id="5bb76-101">beschreibung: Featureunterschiede zwischen Microsoft Edge und WebView2-Titel: Featureunterschiede zwischen Microsoft Edge und WebView2-Autor: MSEdgeTeam ms.author: msedgedevrel ms.date: 06.05.2021 ms.topic: konzeptionell ms.prod: microsoft-edge ms.technology: webview keywords: IWebView2, IWebView2WebView, WebView2, Webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html no-loc:</span><span class="sxs-lookup"><span data-stu-id="5bb76-101">description: Feature differences between Microsoft Edge and WebView2 title: Feature differences between Microsoft Edge and WebView2 author: MSEdgeTeam ms.author: msedgedevrel ms.date: 05/06/2021 ms.topic: conceptual ms.prod: microsoft-edge ms.technology: webview keywords: IWebView2, IWebView2WebView, WebView2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html no-loc:</span></span>
-- <span data-ttu-id="5bb76-102">"Autofill for Addresses"</span><span class="sxs-lookup"><span data-stu-id="5bb76-102">"Autofill for Addresses"</span></span>
-- <span data-ttu-id="5bb76-103">"Autofill for Passwords"</span><span class="sxs-lookup"><span data-stu-id="5bb76-103">"Autofill for Passwords"</span></span>
-- <span data-ttu-id="5bb76-104">"Autofill for Payments""</span><span class="sxs-lookup"><span data-stu-id="5bb76-104">"Autofill for Payments""</span></span>
-- <span data-ttu-id="5bb76-105">"Browser Extensions""</span><span class="sxs-lookup"><span data-stu-id="5bb76-105">"Browser Extensions""</span></span>
-- <span data-ttu-id="5bb76-106">"Browser Task Manager"</span><span class="sxs-lookup"><span data-stu-id="5bb76-106">"Browser Task Manager"</span></span>
-- <span data-ttu-id="5bb76-107">"Collections"</span><span class="sxs-lookup"><span data-stu-id="5bb76-107">"Collections"</span></span>
-- <span data-ttu-id="5bb76-108">"Continue-where-I-left-off prompt"</span><span class="sxs-lookup"><span data-stu-id="5bb76-108">"Continue-where-I-left-off prompt"</span></span>
-- <span data-ttu-id="5bb76-109">"Downloads"</span><span class="sxs-lookup"><span data-stu-id="5bb76-109">"Downloads"</span></span>
-- <span data-ttu-id="5bb76-110">"Edge Shopping"</span><span class="sxs-lookup"><span data-stu-id="5bb76-110">"Edge Shopping"</span></span>
-- <span data-ttu-id="5bb76-111">"Family Safety"</span><span class="sxs-lookup"><span data-stu-id="5bb76-111">"Family Safety"</span></span>
-- <span data-ttu-id="5bb76-112">"Favorites"</span><span class="sxs-lookup"><span data-stu-id="5bb76-112">"Favorites"</span></span>
-- <span data-ttu-id="5bb76-113">"Hotkeys"</span><span class="sxs-lookup"><span data-stu-id="5bb76-113">"Hotkeys"</span></span>
-- <span data-ttu-id="5bb76-114">"IE Mode"</span><span class="sxs-lookup"><span data-stu-id="5bb76-114">"IE Mode"</span></span>
-- <span data-ttu-id="5bb76-115">"Immersive Reader"</span><span class="sxs-lookup"><span data-stu-id="5bb76-115">"Immersive Reader"</span></span>
-- <span data-ttu-id="5bb76-116">"Intrusive Ads"</span><span class="sxs-lookup"><span data-stu-id="5bb76-116">"Intrusive Ads"</span></span>
-- <span data-ttu-id="5bb76-117">"Read Aloud"</span><span class="sxs-lookup"><span data-stu-id="5bb76-117">"Read Aloud"</span></span>
-- <span data-ttu-id="5bb76-118">"Smart Screen"</span><span class="sxs-lookup"><span data-stu-id="5bb76-118">"Smart Screen"</span></span>
-- <span data-ttu-id="5bb76-119">"Translate"</span><span class="sxs-lookup"><span data-stu-id="5bb76-119">"Translate"</span></span>
-- <span data-ttu-id="5bb76-120">"Tracking Prevention"</span><span class="sxs-lookup"><span data-stu-id="5bb76-120">"Tracking Prevention"</span></span>
-- <span data-ttu-id="5bb76-121">"Profile and Identity"</span><span class="sxs-lookup"><span data-stu-id="5bb76-121">"Profile and Identity"</span></span>
-- <span data-ttu-id="5bb76-122">"Web Payment API"</span><span class="sxs-lookup"><span data-stu-id="5bb76-122">"Web Payment API"</span></span>
-- <span data-ttu-id="5bb76-123">"Windows Defender Application Guard"</span><span class="sxs-lookup"><span data-stu-id="5bb76-123">"Windows Defender Application Guard"</span></span>
-- <span data-ttu-id="5bb76-124">"edge:// URLs"</span><span class="sxs-lookup"><span data-stu-id="5bb76-124">"edge:// URLs"</span></span>
-
+description: Featureunterschiede zwischen Microsoft Edge und WebView2
+title: Featureunterschiede zwischen Microsoft Edge und WebView2
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 05/06/2021
+ms.topic: conceptual
+ms.prod: microsoft-edge
+ms.technology: webview
+keywords: IWebView2, IWebView2WebView, WebView2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
+no-loc: ["Autofill for Addresses", "Autofill for Passwords", Autofill for Payments", Browser Extensions", "Browser Task Manager", "Collections", "Continue-where-I-left-off prompt", "Downloads", "Edge Shopping", "Family Safety", "Favorites", "Hotkeys", "IE Mode" ,"Immersive Reader", "Intrusive Ads", "Read Aloud", "Smart Screen", "Translate", "Tracking Prevention", "Profile and Identity", "Web Payment API", "Windows Defender Application Guard","edge:// URLs"]  
 ---
+
 # <a name="browser-feature-differences-between-microsoft-edge-and-webview2"></a><span data-ttu-id="5bb76-125">Unterschiede zwischen Browserfeatures Microsoft Edge WebView2</span><span class="sxs-lookup"><span data-stu-id="5bb76-125">Browser feature differences between Microsoft Edge and WebView2</span></span>  
 
 <span data-ttu-id="5bb76-126">WebView2 basiert auf dem neuen Microsoft Edge Browser.</span><span class="sxs-lookup"><span data-stu-id="5bb76-126">WebView2 is based on the new Microsoft Edge browser.</span></span>  <span data-ttu-id="5bb76-127">Sie haben die Möglichkeit, Features vom Browser auf WebView2-basierte Apps zu erweitern, was nützlich ist.</span><span class="sxs-lookup"><span data-stu-id="5bb76-127">You have the opportunity to extend features from the browser to WebView2-based apps, which is useful.</span></span>  <span data-ttu-id="5bb76-128">Da Sich WebView2 jedoch nicht auf browser like apps beschränkt, müssen einige Browserfeatures geändert oder entfernt werden.</span><span class="sxs-lookup"><span data-stu-id="5bb76-128">However, since WebView2 isn't limited to browser-like apps, there are some browser features that need to be modified or removed.</span></span>  <span data-ttu-id="5bb76-129">Dieser Artikel enthält die folgenden Informationen.</span><span class="sxs-lookup"><span data-stu-id="5bb76-129">This article provides the following information.</span></span>  
