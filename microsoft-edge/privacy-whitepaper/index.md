@@ -227,7 +227,7 @@ Navigieren Sie zu `edge://settings/importData`, um jederzeit Daten aus einem and
 
 Sie können Microsoft Edge auf Plattformen wie Windows und macOS herunterladen und installieren.  Microsoft Edge verwendet den Updatedienst, um Ihre Version von Microsoft Edge auf dem neuesten Stand und sicher zu halten.  
 
-Wenn Sie Microsoft Edge herunterladen und installieren oder aktualisieren, werden während des Installations- oder Aktualisierungsvorgangs Informationen zu Ihrem Gerät, z. B. der Release-Kanal, grundlegende Hardwareinformationen, Update-IDs, eine für Ihr Gerät einmalige ID sowie eine für Ihren Browser eindeutige zurücksetzbare ID, an Microsoft gesendet.  Die IP-Adresse des Geräts wird an den Updatedienst gesendet, für zusätzlichen Datenschutz wird die letzte Dezimalzahl jedoch entfernt.  Während jeder Browsersitzung wird ein neues, zufällig generiertes Token erstellt, um aktualisierte Versionen von Microsoft Edge zu installieren.  Das Token ist nicht mit persönlichen Informationen verknüpft und wird nur für den Installations- und Updatevorgang sowie zur Verbesserung des Updatediensts verwendet.  
+Wenn Sie Microsoft Edge herunterladen und installieren oder aktualisieren, werden während des Installations- oder Aktualisierungsvorgangs Informationen zu Ihrem Gerät, z.B. der Release-Kanal, grundlegende Hardwareinformationen, Update-IDs, eine für Ihr Gerät einmalige ID sowie eine für Ihren Browser eindeutige zurücksetzbare ID, an Microsoft gesendet.  Die IP-Adresse des Geräts wird an den Updatedienst gesendet, für zusätzlichen Datenschutz wird die letzte Dezimalzahl jedoch entfernt.  Während jeder Browsersitzung wird ein neues, zufällig generiertes Token erstellt, um aktualisierte Versionen von Microsoft Edge zu installieren.  Das Token ist nicht mit persönlichen Informationen verknüpft und wird nur für den Installations- und Updatevorgang sowie zur Verbesserung des Updatediensts verwendet.  
 
 Microsoft Edge sendet dem Microsoft Edge-Updatedienst Pingsignale zum Fortschritt von Installation und Aktualisierung.  Wenn eine Installation oder ein Update fehlschlägt und Absturzberichte aktiviert sind, wird ein entsprechendes Protokoll erstellt und an Microsoft gesendet.  Für weitere Informationen zum Senden von Absturzberichten an Microsoft navigieren Sie im Abschnitt [Abstürze](#crashes).  Microsoft sammelt Informationen darüber, wie Sie Microsoft Edge heruntergeladen haben, über den Erfolg der Installation und eventuelle Deinstallationen, um den Erfolg von Microsoft Edge-Downloads besser zu verstehen.  
 
@@ -279,14 +279,14 @@ Im Kindermodus werden keine Daten zur Personalisierung des Newsfeeds oder andere
 
 Microsoft Edge verwendet einen Microsoft-Netzwerkzeitdienst zum Nachverfolgen der Uhrzeit aus einer externen Quelle wie etwa einem Zeitserver.  Microsoft Edge sendet u. U. in zufälligen Intervallen oder wenn er auf ein abgelaufenes SSL-Zertifikat trifft, Anforderungen an Microsoft, um die Uhrzeit aus einer vertrauenswürdigen Quelle zu erhalten.  Die Anforderungen werden häufiger ausgeführt, wenn Microsoft Edge erkennt, dass die Zeitangabe der Systemuhr falsch ist.  Zu einer ungenauen Zeitangabe durch die Systemuhr kommt es, wenn der Benutzer die Zeit des Betriebssystems ändert, und diese mit der richtigen Zeitzone nicht übereinstimmt.  Der Microsoft-Netzwerkzeitdienst wird zum Abrufen der koordinierten Weltzeit (UTC) verwendet.  Die Anforderungen enthalten keine Cookies oder Benutzer-IDs, und es werden keine Daten protokolliert.  
 
-## <a name="new-tab-page"></a>"Neuer Tab"-Seite  
+## <a name="new-tab-page"></a>Neuer Tab-Seite  
 
 Microsoft Edge bietet eine ansprechende und anwenderorientierte "Neuer Tab"-Seite mit einem Suchfeld von [Bing][|::ref2::|Main], Direktlink-Kacheln für die von Ihnen am häufigsten besuchten Websites sowie relevanten Inhalten von Microsoft News oder Office 365.  Sie können das Erscheinungsbilds der "Neuer Tab"-Seite durch Auswählen der Schaltfläche "Anpassen" ändern.  Die Einstellungen für die "Neuer Tab"-Seite werden für jedes Profil festgelegt, lokal auf Ihrem Gerät gespeichert und nicht unter Geräten synchronisiert.
 
 Um die Ladezeiten der "Neuer Tab"-Seite zu verbessern, kann die Microsoft "Neuer Tab"-Seite im Hintergrund geladen werden, um sie zu beschleunigen. Die geladenen Inhalte können Cookies enthalten, falls Sie Cookies zulassen. Um das Laden der Microsoft "Neuer Tab"-Seite im Hintergrund zu deaktivieren, navigieren Sie zu `edge://settings/newTabPage` und deaktivieren Sie die Einstellung ** für das Vorladen der "Neuer Tab"-Seite, um die Erfahrung zu beschleunigen**. 
 
-:::image type="complex" source="./media/n-t-p1.png" alt-text=""Neuer Tab"-Seite" lightbox="./media/n-t-p1.png":::
-   "Neuer Tab"-Seite  
+:::image type="complex" source="./media/n-t-p1.png" alt-text="Neuer Tab-Seite" lightbox="./media/n-t-p1.png":::
+   Neuer Tab-Seite  
 :::image-end:::  
 
 ### <a name="microsoft-news"></a>Microsoft News  
@@ -384,7 +384,7 @@ Zum Zweck eines besseren Verständnisses, wie sich neue Funktionen auf Microsoft
 
 ## <a name="resolve-navigation-errors"></a>Navigationsfehler beheben  
 
-Wenn Microsoft Edge Zeitüberschreitungen bei SSL-Verbindungen, Zertifikatsfehler oder andere Netzwerkprobleme feststellt, die durch ein firmeneigenes Portal \(z. B. ein WLAN in einem Hotel oder auf einem Flughafen\) verursacht werden können, sendet Microsoft Edge eine Anforderung an `http://edge.microsoft.com/captiveportal/generate_204` und überprüft den Antwortcode.  Wenn die Anfrage an eine andere URL umgeleitet wird, öffnet Microsoft Edge die URL in einem neuen Tab, davon ausgehend, dass es sich um eine Anmeldeseite handelt.  Anfragen an die Erkennungsseite für Erfassungsportale sind ein statusfreier Dienst, die Anfragen werden nicht protokolliert, und Cookies werden nicht gesendet oder gespeichert.  Auf Windows-Plattformen verwendet Microsoft Edge einen Windows-Erfassungsportaldienst.  Andernfalls wird der Microsoft Edge Erfassungsportal-Dienst verwendet.  Um den Dienst zu deaktivieren, navigieren Sie zu `edge://settings/privacy` und deaktivieren Sie die Einstellung **Webdienst zur Klärung von Navigationsfehlern verwenden**.  
+Wenn Microsoft Edge Zeitüberschreitungen bei SSL-Verbindungen, Zertifikatsfehler oder andere Netzwerkprobleme feststellt, die durch ein firmeneigenes Portal \(z.B. ein WLAN in einem Hotel oder auf einem Flughafen\) verursacht werden können, sendet Microsoft Edge eine Anforderung an `http://edge.microsoft.com/captiveportal/generate_204` und überprüft den Antwortcode.  Wenn die Anfrage an eine andere URL umgeleitet wird, öffnet Microsoft Edge die URL in einem neuen Tab, davon ausgehend, dass es sich um eine Anmeldeseite handelt.  Anfragen an die Erkennungsseite für Erfassungsportale sind ein statusfreier Dienst, die Anfragen werden nicht protokolliert, und Cookies werden nicht gesendet oder gespeichert.  Auf Windows-Plattformen verwendet Microsoft Edge einen Windows-Erfassungsportaldienst.  Andernfalls wird der Microsoft Edge Erfassungsportal-Dienst verwendet.  Um den Dienst zu deaktivieren, navigieren Sie zu `edge://settings/privacy` und deaktivieren Sie die Einstellung **Webdienst zur Klärung von Navigationsfehlern verwenden**.  
 
 ## <a name="secure-dns"></a>Secure DNS
 
@@ -469,7 +469,7 @@ Um Tippfehler in der URL in der Adressleiste zu beheben, die zu einem Websitefeh
 
 Wenn Sie sich mit einem Microsoft-Konto bei Microsoft Edge anmelden, können Sie die Browserdaten über alle Ihre angemeldeten Versionen von Microsoft Edge hinweg synchronisieren.  Sie können Ihren Browserverlauf, Favoriten, Einstellungen, Formular Füll Daten \(Adressen und mehr\), Kennwörter, Erweiterungen geöffnete Registerkarten und Sammlungen synchronisieren.  Sie müssen das Aktivieren der Synchronisierung in Microsoft Edge zulassen, und die zu synchronisierenden Datentypen können einzeln aktiviert oder deaktiviert werden.  Zu den "Favoriten" zählen alle Tabs, die Sie in der älteren Version von Microsoft Edge für später gespeichert haben. Diese werden zusammen mit den restlichen Favoriten synchronisiert.  Gelöschte oder geänderte Favoriten oder andere Daten aus einer Microsoft Edge-Version, bei der Sie angemeldet sind, werden mit allen anderen Versionen von Microsoft Edge synchronisiert, in denen die Synchronisierung aktiviert ist und bei denen Sie angemeldet sind.  Um die Konfigurationen für die Synchronisierung zu verwalten, wechseln Sie zu `edge://settings/profiles/sync`.  Ihre Synchronisierungseinstellungen werden u. U. von Ihrer Organisation verwaltet.
 
-:::image type="complex" source="./media/sync.png" alt-text="Bild der Synchronisierungseinstellung auf "aktiviert" festgelegt" lightbox="./media/sync.png":::
+:::image type="complex" source="./media/sync.png" alt-text="Bild der Synchronisierungseinstellung auf aktiviert festgelegt" lightbox="./media/sync.png":::
    Synchronisierungseinstellung ist aktiviert
 :::image-end:::  
 
