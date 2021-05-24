@@ -361,11 +361,11 @@
           href: web-platform/site-impacting-changes.md
         - name: Benutzer von IE nach Microsoft Edge verschieben
           href: web-platform/ie-to-microsoft-edge-redirection.md
-        - name: Nachverfolgungsprävention in Microsoft Edge
+        - name: Nachverfolgungsverhinderung in Microsoft Edge
           href: web-platform/tracking-prevention.md
-        - name: Benutzer-Agent-Zeichenfolge für Microsoft Edge
-          href: web-platform/user-agent-string.md
-        - name: Schaltfläche zum Anzeigen des Passworts anpassen
+        - name: So erkennen Sie Microsoft Edge in Ihrer Website
+          href: web-platform/user-agent-guidance.md
+        - name: Schaltfläche zum Anzeigen des Kennworts anpassen
           href: web-platform/password-reveal.md
     - name: Web We Want – Übersicht
       href: web-we-want/index.md

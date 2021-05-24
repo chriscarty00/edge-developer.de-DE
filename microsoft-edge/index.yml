@@ -202,8 +202,8 @@ additionalContent:
       items:
         - title: Verweis
           links:
-            - text: Benutzer-Agent-Zeichenfolge für Microsoft Edge
-              url: /microsoft-edge/web-platform/user-agent-string
+            - text: Erkennen von Microsoft Edge in Ihrer Website
+              url: /microsoft-edge/web-platform/user-agent-guidance
             - text: Plattformstatus
               url: 'https://developer.microsoft.com/microsoft-edge/platform/status'
             - text: Visual Studio Code
