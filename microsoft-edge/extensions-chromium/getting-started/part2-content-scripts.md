@@ -7,12 +7,12 @@ ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Edge Chromium, Webentwicklung, html, css, javascript, Entwickler, Erweiterungen
-ms.openlocfilehash: 48af14c33a368a3449acb88b4dfb875ad5398e7a
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: c5a17cbc55c6ccb42e06369474cd274d70742494
+ms.sourcegitcommit: 31741a0c331816642ceafd20680bd3206c87c7bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397916"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "11579729"
 ---
 # <a name="create-an-extension-tutorial-part-2"></a>Erstellen eines Erweiterungslernprogramms Teil 2  
   
@@ -26,7 +26,7 @@ Dieses Lernprogramm behandelt die folgenden Erweiterungstechnologien.
 *   Hinzufügen von Inhaltsseiten in vorhandene Browserregisterkarten  
 *   So können Inhaltsseiten auf Nachrichten von Popups lauschen und antworten  
 
-Sie erfahren, wie Sie Ihr Popupmenü aktualisieren, um Ihr statisches Startbild durch einen Titel und eine standardmäßige HTML-Schaltfläche zu ersetzen.  Diese Schaltfläche übergibt bei Auswahl dieses Sternbilds, das in die Erweiterung eingebettet ist, an die Inhaltsseite.  Dieses Bild wird in die Aktive Browserregisterkarte eingefügt. Führen Sie die folgenden Schritte aus, um weitere Informationen zu erhalten.
+Sie lernen, Ihr Popupmenü zu aktualisieren, um Ihr statisches Sternbild durch einen Titel und eine Standard-HTML-Schaltfläche zu ersetzen.  Diese Schaltfläche übergibt bei Auswahl dieses Sternbilds, das in die Erweiterung eingebettet ist, an die Inhaltsseite.  Dieses Bild wird in die Aktive Browserregisterkarte eingefügt. Führen Sie die folgenden Schritte aus, um weitere Informationen zu erhalten.
 
 1.  Entfernen sie das Bild aus dem Popup, und ersetzen Sie es durch eine Schaltfläche.  
 
