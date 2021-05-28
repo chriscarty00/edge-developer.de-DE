@@ -3,16 +3,16 @@ description: Enthält eine Zusammenfassung von änderungen mit großen Auswirkun
 title: Websitekompatibilität – Auswirkungen von Änderungen an Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/13/2021
+ms.date: 05/27/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, compatibility, web platform
-ms.openlocfilehash: 810c4e0a3e4c719987fbc374330599a58f055166
-ms.sourcegitcommit: bbbf722067f1d255f59ab384e66798f8b77ef609
+ms.openlocfilehash: 7db00ced1db767d3ec092c33369cbed1845ac65e
+ms.sourcegitcommit: dfc6bc1bad5fc9d38b6eb3bcacf9ebb317b3bdf2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "11574575"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "11586204"
 ---
 # <a name="site-compatibility-impacting-changes-coming-to-microsoft-edge"></a>Websitekompatibilität – Auswirkungen von Änderungen an Microsoft Edge  
 
@@ -34,7 +34,8 @@ Lesen Sie diesen Artikel häufig.  Das Microsoft Edge aktualisiert diesen Artike
 | Entfernen von Adobe Flash | Edge v88  |  | Diese Änderung geschieht im Chromium Projekt, auf dem Microsoft Edge basiert.  Weitere Informationen finden Sie unter [Adobe Flash Chromium Roadmap][ChromiumFlashRoadmapSupportRemoved].  | 
 | Deaktivieren und Entfernen von FTP | Edge v88  | Edge Beta v87 | In Edge Beta v87 ist die #A0 standardmäßig deaktiviert. In Edge Stable v87 bleibt es aktiviert.  In Edge v88 wird die FTP-Unterstützung vollständig entfernt.  Diese Änderung geschieht im Chromium Projekt, auf dem Microsoft Edge basiert.  Weitere Informationen finden Sie unter [Chrome Platform Status Entry][ChromestatusFeature6246151319715840].  Unternehmen mit Websites, die weiterhin FTP-Unterstützung benötigen, können FTP weiterhin verwenden, indem sie die Website so konfigurieren, dass sie den [IE-Modus verwendet.][DeployedgeEdgeIeMode]  | 
 | AutomatischesUpgrade von Bildern mit gemischten Inhalten | Edge v88  |  | Nicht sichere \(HTTP\)-Verweise auf Bilder werden automatisch auf HTTPS aktualisiert. Wenn das Bild nicht über HTTPS verfügbar ist, schlägt der Bilddownload fehl. Es [steht eine Gruppenrichtlinie][DeployedgeMicrosoftEdgePoliciesInsecurecontentallowedforurls] zur Verfügung, um dieses Feature zu steuern. Diese Änderung geschieht im Chromium Projekt, auf dem Microsoft Edge basiert. Weitere Informationen finden Sie unter [Chrome Platform Status][ChromestatusFeature4926989725073408].  | 
-| HTTP-Authentifizierung nicht zulässig, wenn Drittanbietercookies blockiert werden  | Edge v87  |  | Ab Edge v87, wenn Cookies für Drittanbieteranforderungen blockiert werden, entweder mithilfe der [BlockThirdPartyCookies-Richtlinie][DeployedgeMicrosoftEdgePoliciesBlockthirdpartycookies] oder über die Edge-Einstellungen-Seite, ist die HTTP-Authentifizierung ebenfalls nicht zulässig. Diese Änderung kann sich Enterprise downloaden von Websitelisten für den [Internet Explorer-Modus][DeployedgeEdgeIeModePoliciesConfigureUsingUseEnterpriseModeIeWebsiteListPolicy] auswirken, wenn für den Endpunkt, der die Liste hostet, die Verwendung der HTTP-Authentifizierung erforderlich ist.  Fügen Sie der [CookieAllowedForURLs-Richtlinie][DeployedgeMicrosoftEdgePoliciesCookiesallowedforurls] ein übereinstimmendes URL-Muster hinzu, um die Verwendung von Cookies und der HTTP-Authentifizierung für Enterprise Mode Site List-Downloads zu ermöglichen.  |   
+| HTTP-Authentifizierung nicht zulässig, wenn Drittanbietercookies blockiert werden  | Edge v87  |  | Ab Edge v87 ist die HTTP-Authentifizierung auch nicht zulässig, wenn Cookies für Drittanbieteranforderungen blockiert werden, indem sie entweder die [BlockThirdPartyCookies-Richtlinie][DeployedgeMicrosoftEdgePoliciesBlockthirdpartycookies] oder den Umschalter in `edge://settings` verwenden. Diese Änderung kann sich Enterprise downloaden von Websitelisten für den [Internet Explorer-Modus][DeployedgeEdgeIeModePoliciesConfigureUsingUseEnterpriseModeIeWebsiteListPolicy] auswirken, wenn für den Endpunkt, der die Liste hostet, die Verwendung der HTTP-Authentifizierung erforderlich ist.  Fügen Sie der [CookieAllowedForURLs-Richtlinie][DeployedgeMicrosoftEdgePoliciesCookiesallowedforurls] ein übereinstimmendes URL-Muster hinzu, um die Verwendung von Cookies und der HTTP-Authentifizierung für Enterprise Mode Site List-Downloads zu ermöglichen.  |
+| Entfernen von 3DES in TLS  | Edge v93  |  | Ab Edge v93 wird die Unterstützung TLS_RSA_WITH_3DES_EDE_CBC_SHA Verschlüsselungssuite entfernt. Diese Änderung geschieht im Chromium Projekt, auf dem Microsoft Edge basiert. Weitere Informationen finden Sie unter [Chrome Platform Status][ChromestatusFeature6678134168485888]. Darüber hinaus steht in Edge v93 eine Kompatibilitätsrichtlinie zur Verfügung, um Szenarien zu unterstützen, die die Kompatibilität mit veralteten Servern beibehalten müssen. Diese Kompatibilitätsrichtlinie ist veraltet und funktioniert in Edge v95 nicht mehr. Stellen Sie sicher, dass Sie zuvor die Server mit Auswirkungen aktualisieren. |
 
 ##### <a name="release-comments"></a>Veröffentlichungskommentare  
 
@@ -70,6 +71,7 @@ Lesen Sie diesen Artikel häufig.  Das Microsoft Edge aktualisiert diesen Artike
 [ChromestatusFeature5088147346030592]: https://chromestatus.com/feature/5088147346030592 "Cookies standardmäßig auf SameSite=Lax | Status der Chrome-Plattform"  
 [ChromestatusFeature6246151319715840]: https://chromestatus.com/feature/6246151319715840 "Veraltete FTP-| Status der Chrome-Plattform"  
 [ChromestatusFeature6251880185331712]: https://chromestatus.com/feature/6251880185331712 "Referrer policy: Default to strict-origin-when-cross-cross-origin | Status der Chrome-Plattform"  
+[ChromestatusFeature6678134168485888]: https://chromestatus.com/feature/6678134168485888 "Entfernen von 3DES in TLS-| Status der Chrome-Plattform"
 
 [ChromiumFlashRoadmapSupportRemoved]: https://www.chromium.org/flash-roadmap#TOC-Flash-Support-Removed-from-Chromium-Target:-Chrome-88---Jan-2021- "Flashunterstützung aus Chromium entfernt (Ziel: Chrome 88+ - Jan 2021) – Flash Roadmap | Chromium Projekte"  
 
