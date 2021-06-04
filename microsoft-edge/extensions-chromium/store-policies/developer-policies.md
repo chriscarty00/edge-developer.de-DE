@@ -16,11 +16,11 @@ ms.locfileid: "11343080"
 ---
 # Microsoft Edge Add-Ons Store Entwicklerrichtlinien  
 
-## Einführung und Ziel dieses Dokuments  
+##  <a name="introduction-and-objective-of-this-document"></a>Einführung und Ziel dieses Dokuments  
 
 Vielen Dank für Ihr Interesse an der Entwicklung von Erweiterungen für den Microsoft Edge-Add-Ons-Store.  Die Microsoft Edge-Add-Ons-Speicherentwicklerrichtlinien \(Add-Ons store developer policies\) gelten für Ihre Erweiterungen, einschließlich der Übermittlung von Erweiterungen über [Partner Center][MicrosoftPartnerCenter] und der Bereitstellung solcher Erweiterungen über die Microsoft Edge-Add-Ons.  
 
-## Prinzipien  
+##  <a name="principles--"></a>Prinzipien  
 
 Zunächst einige wichtige Grundregeln:  
 
@@ -32,9 +32,9 @@ Die Einhaltung der Microsoft Edge-Add-Ons-Entwicklerrichtlinien sollte Ihnen dab
 
 Ihre Erweiterungen sind entscheidend für die Erfahrung von Hunderten von Millionen von Benutzern.  Wir freuen uns auf Ihre Erstellung und freuen uns auf Ihre Erweiterungen auf der Ganzen Welt.  
 
-## 1. Produktrichtlinien  
+##  <a name="1.-product-policies"></a>1. Produktrichtlinien  
 
-### 1.1 Distinct Function & Value; Genaue Darstellung  
+###  <a name="1.1-distinct-function-&-value;-accurate-representation"></a>1.1 Distinct Function & Value; Genaue Darstellung  
 
 Ihre Erweiterung und die zugehörigen Metadaten müssen die von Ihnen beschriebene Quelle, Funktionalität und Features genau und deutlich widerspiegeln.  
 
@@ -74,7 +74,7 @@ Jede Änderung der Browsereinstellungen sollte explizit in der Beschreibung Ihre
 
 Ihre Erweiterung kann nur die Schlüsseleinstellungen überarbeiten, um eine Microsoft-Webseite oder einen Dienst durch die eines Drittanbieters zu ersetzen \(z. B. die Verwendung einer Drittanbietersuchmaschine erfordern oder die Homepage auf eine Drittanbieterwebeigenschaft\) festlegen, wenn Sie von einem solchen Drittanbieter beschäftigt sind oder anderweitig diesem Drittanbieter zugeordnet sind.  
 
-### 1.2 Sicherheit  
+###  <a name="1.2-security"></a>1.2 Sicherheit  
 
 Ihre Erweiterung darf weder die Sicherheit des Benutzers noch die Sicherheit oder Funktionalität des Geräts, Systems oder verwandter Systeme gefährden oder gefährden.  
 
@@ -95,7 +95,7 @@ Ihre Erweiterung hängt möglicherweise von nicht integrierter Software \(z. B. 
 
 Sofern nicht anders von Microsoft zulässig, dürfen Ihre Erweiterungen nur über Microsoft Edge-Add-Ons aktualisiert werden.  
 
-### 1.3 Produkt ist testbar  
+###  <a name="1.3-product-is-testable"></a>1.3 Produkt ist testbar  
 
 Ihre Erweiterung muss testbar sein.  Wenn Es nicht möglich ist, Ihre Erweiterung aus irgendeinem Grund zu testen, einschließlich, aber nicht beschränkt auf die unten aufgeführten Elemente, kann ihre Erweiterung diese Anforderung nicht erfüllen.  
 
@@ -107,7 +107,7 @@ Wenn Ihre Erweiterung Anmeldeinformationen erfordert, geben Sie ein funktioniere
 
 Wenn Ihre Erweiterung Zugriff auf einen Server erfordert, muss der Server funktionsfähig sein, um zu überprüfen, ob er ordnungsgemäß funktioniert.  
 
-### 1.4 Verwendbarkeit  
+###  <a name="1.4-usability"></a>1.4 Verwendbarkeit  
 
 Ihre Erweiterung muss microsoft Edge-Add-Ons-Speicherstandards für die Benutzerfreundlichkeit erfüllen, einschließlich, aber nicht beschränkt auf die in den folgenden Unterabschnitten aufgeführten.  
 
@@ -119,7 +119,7 @@ Ihre Erweiterung sollte mit Microsoft Edge auf allen Geräten und Plattformen ko
 
 Ihre Erweiterung muss sofort gestartet werden und auf Benutzereingaben reagieren.  Ihre Erweiterung muss weiterhin ausgeführt werden und auf Benutzereingaben reagieren.  Ihre Erweiterung muss anmutig heruntergefahren werden und nicht unerwartet geschlossen werden.  Ihre Erweiterung sollte Ausnahmen behandeln und auf Benutzereingaben reagieren, nachdem die Ausnahme behandelt wurde.  
 
-### 1.5 Personenbezogene Informationen  
+###  <a name="1.5-personal-information"></a>1.5 Personenbezogene Informationen  
 
 Die folgenden Anforderungen gelten für Erweiterungen, die auf personenbezogene Informationen zugreifen.  Personenbezogene Informationen umfassen alle Informationen oder Daten, die eine Person identifizieren oder verwenden können oder die solchen Informationen oder Daten zugeordnet sind.  
 
@@ -158,16 +158,16 @@ Wenn Ihre Erweiterung personenbezogene Informationen erfasst, speichert oder üb
 
 Ihre Erweiterung darf keine hochsensiblen personenbezogenen Informationen, z. B. Gesundheits- oder Finanzdaten, sammeln, speichern oder übertragen, es sei denn, die Informationen stehen im Zusammenhang mit der Funktionalität Ihrer Erweiterung.  Ihre Erweiterung muss auch die ausdrückliche Zustimmung des Benutzers einholen, bevor diese Informationen gesammelt, gespeichert oder übertragen werden.  
 
-### 1.6 Berechtigungen  
+###  <a name="1.6-permissions"></a>1.6 Berechtigungen  
 
 Ihre Erweiterung darf nur die Berechtigungen anfordern, die für die Funktionsweise erforderlich sind.  Sie müssen eine Beschreibung der Funktionsweise Ihrer Erweiterung bereitstellen.  Ihre Erweiterung darf nur wie beschrieben ausführen.  Ihre Erweiterung erfordert möglicherweise keine Berechtigung für Funktionen, die über die funktionen hinausgehen, die zum Ausführen und Funktionieren wie deklariert erforderlich sind.  
 
-### 1.7 Lokalisierung  
+###  <a name="1.7-localization"></a>1.7 Lokalisierung  
 
 Sie sollten ihre Erweiterung für alle Sprachen lokalisieren, die von Ihrer Erweiterung unterstützt werden sollen.  Der Text der Beschreibung Ihrer Erweiterung sollte in jeder sprache lokalisiert werden, die Sie deklarieren.  
 Wenn Ihre Erweiterung so lokalisiert ist, dass einige Features in einer lokalisierten Version nicht verfügbar sind, müssen Sie die Grenzen der Lokalisierung deutlich in Ihrer Erweiterungsbeschreibung anzeigen. Die von einer Erweiterung bereitgestellte Erfahrung muss in allen unterstützten Sprachen relativ ähnlich sein.  
 
-### 1.8 Finanztransaktionen  
+###  <a name="1.8-financial-transactions"></a>1.8 Finanztransaktionen  
 
 Wenn Ihr Produkt Produktkäufe, Abonnements, virtuelle Währung, Abrechnungsfunktionen oder Finanzinformationen erfasst; Die Anforderungen in den folgenden Abschnitten gelten.  
 
@@ -191,7 +191,7 @@ Die folgenden Anforderungen gelten für die Verwendung einer sicheren Drittanbie
 
 Ihre Erweiterung und die zugehörigen Metadaten müssen Informationen zu den angebotenen Produktkäufen und dem Preisbereich enthalten.  Sie dürfen Die Benutzer nicht irreführen und müssen sich über die Art Ihrer Produktaktionen und -angebote, einschließlich des Umfangs und der Bedingungen von Testerfahrungen, im Klaren sein.  Wenn Ihre Erweiterung den Zugriff auf vom Benutzer erstellte Inhalte während oder nach einer Testversion einschränkt, müssen Sie die Benutzer vorab benachrichtigen.  Darüber hinaus muss Ihre Erweiterung benutzern klar machen, dass sie eine Kaufoption in Ihrer Erweiterung initiieren.  
 
-### 1.9 Benachrichtigungen  
+###  <a name="1.9-notifications"></a>1.9 Benachrichtigungen  
 
 Ihre Erweiterung muss systemeinstellungen für Benachrichtigungen respektieren.  Dies bedeutet, dass jede Präsentation von Anzeigen und Benachrichtigungen für Benutzer mit den Benutzereinstellungen konsistent sein muss, unabhängig davon, ob die Benachrichtigungen vom Microsoft Push Notification Service \(MPNS\), dem Windows Push Notification Service \(WNS\) oder einem anderen Dienst bereitgestellt werden.  Wenn der Benutzer Benachrichtigungen entweder produktspezifisch oder systemweit deaktiviert, muss Ihre Erweiterung funktionsfähig bleiben.  
 
@@ -213,7 +213,7 @@ Sie dürfen in einer Benachrichtigung keine Informationen enthalten, die Benutze
 
 Benachrichtigungen, die von Ihrer Erweiterung gesendet werden, müssen sich auf diese Erweiterung oder andere Erweiterungen beziehen, die Sie im Microsoft Edge-Add-Ons-Speicher veröffentlichen, und dürfen keine Werbenachrichten jeglicher Art enthalten, die nicht im Zusammenhang mit Ihren Erweiterungen stehen.  
 
-### 1.10 Verhalten und Inhalte von Werbung  
+###  <a name="1.10-advertising-conduct-and-content"></a>1.10 Verhalten und Inhalte von Werbung  
 
 Für alle Aktivitäten im Zusammenhang mit Werbung gelten die folgenden Anforderungen:  
 
@@ -243,20 +243,20 @@ Ihre Datenschutzbestimmungen oder Nutzungsbedingungen müssen Den Benutzern mitt
 
 Wenn Ihre Erweiterung sich an Kinder unter 13 Jahren richtet, wie im [Children's Online Privacy Protection Act definiert;][FTCChildrensPrivacy] Sie müssen Microsoft im [Partner Center][MicrosoftPartnerCenter] darüber informieren und sicherstellen, dass alle in Ihrer Erweiterung angezeigten Anzeigeninhalte für Kinder unter 13 Jahren geeignet sind.  
 
-## 2 Inhaltsrichtlinien  
+##  <a name="2-content-policies"></a>2 Inhaltsrichtlinien  
 
 Die folgenden Richtlinien gelten für Inhalte und Metadaten \(einschließlich Herausgebername, Erweiterungsname, Erweiterungssymbol, Erweiterungsbeschreibung, Erweiterungsfotos, Erweiterungstrailer und Trailerminiaturansichten sowie alle anderen Erweiterungsmetadaten\), die für die Verteilung in Microsoft Edge-Add-Ons angeboten werden.  Inhalt bedeutet die Bilder, Sounds, Videos und Text in Ihrer Erweiterung, die Kacheln, Benachrichtigungen, Fehlermeldungen oder Anzeigen, die über Ihre Erweiterung verfügbar gemacht werden, und alles, was von einem Server oder mit dem Ihre Erweiterung verbunden ist.  Da Erweiterungen und Microsoft Edge-Add-Ons weltweit verwendet werden, werden diese Anforderungen im Kontext von regionalen und kulturellen Normen interpretiert und angewendet.  
 
-### 2.1 Inhaltsanforderungen für Microsoft Edge Addon Catalog Listing  
+###  <a name="2.1-content-requirements-for-microsoft-edge-addon-catalog-listing"></a>2.1 Inhaltsanforderungen für Microsoft Edge Addon Catalog Listing  
 
 Metadaten und andere Inhalte, die Sie zur Begleitung Ihrer Erweiterung übermitteln, enthalten möglicherweise keine ausgereiften Inhalte.  
 Übermittlungen, die die Anforderungen an Microsoft Edge-Add-Ons-Speicherauflistungen nicht erfüllen, werden abgelehnt oder umgehend entfernt.  
 
-### 2.2 Inhalt einschließlich Namen, Logos, Original und Drittanbieter  
+###  <a name="2.2-content-including-names,-logos,-original,-and-third-party"></a>2.2 Inhalt einschließlich Namen, Logos, Original und Drittanbieter  
 
 Alle Inhalte in Ihrer Erweiterung und die zugehörigen Metadaten müssen entweder vom Sie erstellt oder von einem Rechteinhaber eines Drittanbieters entsprechend lizenziert werden und dürfen nur verwendet werden, wenn dies vom Rechteinhaber zulässig oder anderweitig gesetzlich zulässig ist.  
 
-### 2.3 Schadensrisiko  
+###  <a name="2.3-risk-of-harm"></a>2.3 Schadensrisiko  
 
 #### 2.3.1-Anforderungen  
 
@@ -266,23 +266,23 @@ Ihre Erweiterung darf keine Inhalte enthalten, die die folgenden aktivitäten in
 
 Ihre Erweiterung darf nicht: \(a\) ein Sicherheitsrisiko darstellen oder zu Unannehmlichkeiten, Verletzungen oder sonstigen Schäden für Endbenutzer oder andere Personen oder Tiere führen; oder \(b\) ein Risiko oder eine Beschädigung des tatsächlichen oder persönlichen Eigentums darstellen.  Sie sind allein für alle Erweiterungssicherheitstests, den Zertifikaterwerb und die Implementierung der entsprechenden Funktionsschutzmechanismen verantwortlich.  Sie dürfen keine Sicherheits- oder Komfortfeatures der Plattform deaktivieren, und Sie müssen alle anwendbaren gesetzlich vorgeschriebenen und branchenüblichen Warnungen, Hinweise und Haftungsausschlüsse in Ihre Erweiterung einschlussen.  
 
-### 2.4 Verleumdung, Verleumdung, Verleumdung, Verleumdung und Bedrohung  
+###  <a name="2.4-defamatory,-libelous,-slanderous,-and-threatening"></a>2.4 Verleumdung, Verleumdung, Verleumdung, Verleumdung und Bedrohung  
 
 Ihre Erweiterung darf keine Inhalte enthalten, die verleumderisch, verleumderisch, verleumderisch oder bedrohlich sind.  
 
-### 2.5 Anstößige Inhalte  
+###  <a name="2.5-offensive-content"></a>2.5 Anstößige Inhalte  
 
 Ihre Erweiterung und die zugehörigen Metadaten dürfen keine potenziell vertraulichen oder anstößigen Inhalte enthalten.  Inhalte können aufgrund von lokalen Gesetzen oder kulturellen Normen in bestimmten Ländern/Regionen als vertraulich oder anstößig betrachtet werden.  Darüber hinaus dürfen Ihre Erweiterung und die zugehörigen Metadaten keine Inhalte enthalten, die Sich für Diskriminierung, Hass oder Gewalt auf der Grundlage von Überlegungen zu Rasse, Ethnischer Herkunft, nationaler Herkunft, Sprache, Geschlecht, Alter, Behinderung, Religiöser, sexueller Ausrichtung, Status als Veteran oder Mitgliedschaft in einer anderen sozialen Gruppe aussprechen.  
 
-### 2.6 Alkohol, Tabak und Drogen  
+###  <a name="2.6-alcohol,-tobacco,-and-drugs"></a>2.6 Alkohol, Tabak und Drogen  
 
 Ihre Erweiterung darf keine Inhalte enthalten, die den übermäßigen oder unverantwortlichen Konsum von Alkohol oder Tabakprodukten oder -rauschmitteln erleichtern oder verfeinern.  
 
-### 2.7 Inhalte für Erwachsene  
+###  <a name="2.7-adult-content"></a>2.7 Inhalte für Erwachsene  
 
 Ihre Erweiterung darf keine Inhalte enthalten oder anzeigen, die eine angemessene Person als pornografische oder sexuell explizit betrachten würde.  
 
-### 2.8 Verbotene Inhalte, Dienste und Aktivitäten  
+###  <a name="2.8-prohibited-content,-services,-and-activity"></a>2.8 Verbotene Inhalte, Dienste und Aktivitäten  
 
 Ihre Erweiterung muss die folgenden Bedingungen erfüllen.  
 
@@ -291,16 +291,16 @@ Ihre Erweiterung muss die folgenden Bedingungen erfüllen.
 *   Ihre Erweiterung darf den nicht autorisierten Zugriff, das Herunterladen oder Streaming von urheberrechtlich geschützten Inhalten oder Medien nicht bereitstellen, fördern oder aktivieren.  
 *   Ihre Erweiterung darf keine Kryptokryptografie minen.  
     
-### 2.9 Unzulässige Aktivitäten  
+###  <a name="2.9-illegal-activity"></a>2.9 Unzulässige Aktivitäten  
 
 Ihre Erweiterung darf keine Inhalte oder Funktionen enthalten, die unrechtmäßige Aktivitäten in der realen Welt fördern, erleichtern oder verfechten.  
 
-### 2.10 Übermäßige Anstößigkeit und unangemessene Inhalte  
+###  <a name="2.10-excessive-profanity-and-inappropriate-content"></a>2.10 Übermäßige Anstößigkeit und unangemessene Inhalte  
 
 *   Ihre Erweiterung darf keine exzessive oder überflüssige Ansässigkeit enthalten.  
 *   Ihre Erweiterung darf keine Inhalte enthalten oder anzeigen, die eine angemessene Person als obszön betrachtet.  
     
-### 2.11 Länder-/Regionenspezifische Anforderungen  
+###  <a name="2.11-country/region-specific-requirements"></a>2.11 Länder-/Regionenspezifische Anforderungen  
 
 Inhalte, die in jedem Land/jeder Region, für das Ihre Erweiterung zielgerichtet ist, anstößig sind, sind nicht zulässig.  Inhalte können aufgrund lokaler Gesetze oder kultureller Normen in bestimmten Ländern/Regionen als beleidigend angesehen werden.  Beispiele für potenziell beleidigende Inhalte in bestimmten Ländern/Regionen:  
 
@@ -310,7 +310,7 @@ Inhalte, die in jedem Land/jeder Region, für das Ihre Erweiterung zielgerichtet
 *   Verweise auf umstrittene Gebiete oder Regionen  
 *   Bereitstellung oder Zugriff auf Inhalte oder Dienste, die unter dem jeweils anwendbaren Recht rechtswidrig sind.  
     
-### 2.12 Altersfreigaben  
+###  <a name="2.12-age-ratings"></a>2.12 Altersfreigaben  
 
 #### 2.12.1 Ausgereifte Inhalte  
 
@@ -320,7 +320,7 @@ Wenn Sie Ihre Erweiterung an [Partner Center][MicrosoftPartnerCenter]übermittel
 
 Wenn Ihre Erweiterung Inhalte \(z. B. vom Benutzer generierte, Einzelhandels- oder andere webbasierte Inhalte\) enthält, die möglicherweise für eine höhere Altersfreigabe als die zugewiesene Bewertung geeignet sind, müssen Sie von Benutzern verlangen, dass sie sich für den Erhalt solcher Inhalte entscheiden, indem Sie einen Inhaltsfilter verwenden oder sich mit einem bereits vorhandenen Konto anmelden.  
 
-### 2.13 Videos  
+###  <a name="2.13-videos"></a>2.13 Videos  
 
 Wenn Sie ein Werbevideo im Eintrag übermitteln, sollte es alle in dieser Richtlinie genannten Inhaltsrichtlinien befolgen.  Wenn Sie einen YouTube-Link bereitstellen möchten, müssen Sie sicherstellen, dass Werbung für die bestimmten Videos deaktiviert ist, die Sie einbetten möchten.  Weitere Informationen dazu, wie Anzeigen auf YouTube aktiviert und [deaktiviert][GoogleYoutubeAnswer132596]werden, finden Sie unter [support.google.com/youtube/answer/2531367?ref_topic=7072227][GoogleYoutubeAnswer2531367Topic7072227] und support.google.com/youtube/answer/132596 .  
 

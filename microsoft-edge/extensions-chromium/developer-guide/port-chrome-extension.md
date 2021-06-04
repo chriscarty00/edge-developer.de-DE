@@ -34,7 +34,7 @@ Führen Sie die folgenden Schritte aus, um Ihre Chrome-Erweiterung zu portierung
     > [!NOTE]
     > Wenn Ihre Erweiterung Nachrichten mit einer systemeigenen App mit austauscht, stellen Sie sicher, dass Sie in Ihrer nativen `chrome.runtime.connectNative` `allowed_origins` Messaginghostmanifestdatei `extension://[Microsoft-Catalog-extensionID]` festlegen.  Die Einstellung ermöglicht es der App, Ihre Erweiterung zu identifizieren.  
     
-## Nächste Schritte  
+##  <a name="next-steps"></a>Nächste Schritte  
 
 Nachdem Das Erweiterungspaket im Microsoft Edge veröffentlicht werden [kann,][ExtensionsPublishCreateDevAccount] erstellen Sie ein Entwicklerkonto, und veröffentlichen Sie [Ihre Erweiterung.][ExtensionsPublishPublishExtension]  
 

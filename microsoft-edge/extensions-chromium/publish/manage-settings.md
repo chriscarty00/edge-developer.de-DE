@@ -18,7 +18,7 @@ ms.locfileid: "11343115"
 
 Verwalten Sie Ihre Kontoeinstellungen und Profildetails für Ihr Microsoft Edge Developer-Konto im [Partner Center.][MicrosoftPartnerCenter]  
 
-## Kontoeinstellungen  
+##  <a name="account-settings"></a>Kontoeinstellungen  
 
 Wenn Sie Ihre Kontoeinstellungen anzeigen möchten, wählen Sie in der oberen rechten Ecke der [Partner Center][MicrosoftPartnerCenter]Developer-Einstellungen das Zahnradsymbol  >  **aus.**  Überprüfen und **aktualisieren Sie in**den Entwicklereinstellungen die folgenden Informationen.  
 
@@ -28,7 +28,7 @@ Wenn Sie Ihre Kontoeinstellungen anzeigen möchten, wählen Sie in der oberen re
     
 Überprüfen Sie **im Abschnitt** Kontodetails den Status und typ Ihres Kontos.  Ihre Verkäufer-ID und andere Informationen zur Herausgeber-ID werden auch im Abschnitt **Kontodetails** angezeigt.  Die Werte werden von Microsoft zugewiesen, um Ihr Entwicklerkonto eindeutig zu identifizieren und sind schreibgeschützt.  
 
-## Kontaktdetails  
+##  <a name="contact-details--"></a>Kontaktdetails  
 
 Im **Abschnitt Kontaktinformationen** werden die Details angezeigt, die Sie beim Erstellen Ihres Kontos angegeben haben.  Das Microsoft Edge-Erweiterungsteam verwendet die Kontaktdaten, um Sie zu Ihrem Konto zu kontaktieren.  Der Anzeigename des Herausgebers, der im Microsoft Edge-Add-Ons-Speicher angezeigt wird, wird auch im Abschnitt **Kontaktinformationen** angezeigt.  
   
@@ -36,7 +36,7 @@ Wenn Sich Ihre Kontaktinformationen ändern, bearbeiten Sie den **Abschnitt Kont
 
 Wenn Sie Ihre Kontaktdaten ändern müssen, überprüft das Microsoft Edge-Erweiterungsteam Ihr Konto möglicherweise erneut, insbesondere wenn Sie über ein Unternehmenskonto verfügen.  Ihr Überprüfungsstatus kehrt zu `Pending` zurück, während die Überprüfung in Der Prozess ist.  Der Überprüfungsprozess reicht von einigen Tagen bis zu ein paar Wochen, und Ihr Unternehmen kann einen Anruf von unserem Überprüfungspartner erhalten.  
 
-## Andere Einstellungen  
+##  <a name="other-settings"></a>Andere Einstellungen  
 
 Überprüfen Sie die folgenden Einstellungen im Abschnitt Kontoeinstellungen.  
 

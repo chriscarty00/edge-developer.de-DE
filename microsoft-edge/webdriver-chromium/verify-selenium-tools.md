@@ -23,7 +23,7 @@ Die [Java von][MavernSearchArtifactComMicrosoftEdgeMsedgeSeleniumToolsJava] [Sel
 
 Verwenden Sie die folgenden Schlüssel, um die Signatur von Paketen zu überprüfen, die vom [Microsoft Edge Developer Tools-Team bereitgestellt werden.][TwitterEdgeDevTools]  
 
-## Öffentlicher Schlüssel zum Überprüfen von Selenium Tools für Microsoft Edge  
+##  <a name="public-key-for-verifying-selenium-tools-for-microsoft-edge"></a>Öffentlicher Schlüssel zum Überprüfen von Selenium Tools für Microsoft Edge  
 
 *   **Öffentliche Schlüssel-ID:** Microsoft Edge Developer Tools Team [EdgeDevToolsOSS@microsoft.com](mailto:edgedevtoolsoss@microsoft.com)  
 *   **Fingerabdruck des öffentlichen Schlüssels**: `46EE EB3F 4028 B5CE A4E8  E6F5 A6DC D211 6D3A 3A7A`  

@@ -18,12 +18,12 @@ ms.locfileid: "11343166"
 
 Sie können eine übermittelte Erweiterung aktualisieren oder einen veröffentlichten Erweiterungseintrag jederzeit aus dem Microsoft Edge-Add-Ons-Speicher entfernen.  
 
-## Aktualisieren Ihrer Erweiterung im Microsoft Edge-Add-Ons-Speicher  
+##  <a name="update-your-extension-on-the-microsoft-edge-add-ons-store"></a>Aktualisieren Ihrer Erweiterung im Microsoft Edge-Add-Ons-Speicher  
 
 > [!NOTE]
 > Die Dauer des Zertifizierungsprozesses für ein Update einer Erweiterung kann einige Stunden bis einige Tage dauern.  
 
-### Aktualisieren einer vorhandenen Erweiterung im Microsoft Edge-Add-Ons-Speicher  
+###  <a name="update-an-existing-extension-in-the-microsoft-edge-add-ons-store"></a>Aktualisieren einer vorhandenen Erweiterung im Microsoft Edge-Add-Ons-Speicher  
 
 Führen Sie die folgenden Schritte aus, um Die Erweiterung im Store zu aktualisieren.  
 
@@ -32,7 +32,7 @@ Führen Sie die folgenden Schritte aus, um Die Erweiterung im Store zu aktualisi
 1.  Nachdem Sie die Änderungen vorgenommen haben, wählen Sie **Veröffentlichen**speichern aus,  >  **** um Den Erweiterungseintrag zu aktualisieren, und starten Sie den Zertifizierungsprozess.  
 1.  Nachdem die `Status` Spalte angezeigt `In the store` wurde, ist Ihr Erweiterungsupdate im Microsoft Edge-Add-Ons-Speicher verfügbar.  
     
-### Aktualisieren Der Erweiterung während des Zertifizierungsschritts  
+###  <a name="update-your-extension-during-the-certification-step"></a>Aktualisieren Der Erweiterung während des Zertifizierungsschritts  
 
 Während sich Ihre Erweiterung noch in der Zertifizierungsphase befindet und bevor sie im Microsoft Edge-Add-Ons-Speicher veröffentlicht wird, können Sie sie aktualisieren. Wenn bei der Erweiterung der Zertifizierungsprozess fehlschlägt, müssen Sie möglicherweise auch Ihre Erweiterung aktualisieren.    
 
@@ -48,7 +48,7 @@ Führen Sie die folgenden Schritte aus, um Ihre Übermittlung zu bearbeiten.
 > [!IMPORTANT]
 > Der Prozess beendet und entfernt Ihre aktuelle Übermittlung aus der Zertifizierungspipeline für Microsoft Edge-Erweiterungen, und eine neue Überprüfung beginnt mit der neuesten Übermittlung.  
 
-### Aktualisieren Der Erweiterung nach einem Fehler bei der Zertifizierung  
+###  <a name="update-your-extension-after-it-failed-the-certification"></a>Aktualisieren Der Erweiterung nach einem Fehler bei der Zertifizierung  
 
 Nachdem der Zertifizierungsprozess für Ihre Erweiterung fehlgeschlagen ist, müssen Sie Ihre Erweiterung aktualisieren und Ihre Erweiterung erneut übermitteln, die das Feedback enthält.  
 
@@ -58,7 +58,7 @@ Führen Sie die folgenden Schritte aus, um die Erweiterung zu bearbeiten.
 1.  Aktualisieren Sie entweder das Erweiterungspaket oder die Metadaten, die das feedback enthalten, das vom Zertifizierungsprozess empfangen wurde.  Wenn Sie das Erweiterungspaket aktualisieren, stellen Sie sicher, dass Sie die Version in der Manifestdatei erhöhen.  
 1.  Nachdem Sie Änderungen vorgenommen haben, wählen Sie **Veröffentlichen**  >  **speichern aus.**  
     
-## Entfernen von Erweiterungen aus dem Microsoft Edge-Add-Ons-Speicher  
+##  <a name="remove-extensions-from-the-microsoft-edge-add-ons-store"></a>Entfernen von Erweiterungen aus dem Microsoft Edge-Add-Ons-Speicher  
 
 Führen Sie die folgenden Schritte aus, um Ihre Erweiterung aus dem Microsoft Edge-Add-Ons-Speicher zu entfernen.  
 

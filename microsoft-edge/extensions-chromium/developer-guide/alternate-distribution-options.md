@@ -26,7 +26,7 @@ Erweiterungen, die nicht aus dem Edge-Add-Ons-Speicher geladen werden, werden al
 *   Verwenden Sie die Windows-Registrierung (nur Windows).  
 *   Verwenden Sie eine einstellungs-JSON-Datei (macOS und Linux).  
     
-## Vorbemerkungen  
+##  <a name="before-you-begin"></a>Vorbemerkungen  
 
 Stellen Sie sicher, dass Sie Ihre Erweiterung im Microsoft Edge-Add-Ons-Speicher veröffentlichen oder eine Datei packen und sicherstellen, dass sie erfolgreich auf Ihrem `.crx` Computer installiert wird.  Wenn Sie die Datei mithilfe von installieren, stellen Sie sicher, dass Sie unter dieser URL zu `.crx` `update_URL` Ihrer Erweiterung navigieren können.  
 
@@ -39,7 +39,7 @@ Stellen Sie außerdem sicher, dass Sie über die folgenden Informationen verfüg
 > [!NOTE] 
 > Die folgenden Beispiele werden `1.0` als Version und für die ID `aaaaaaaaaabbbbbbbbbbcccccccccc` verwendet.  
 
-## Verwenden der Windows-Registrierung (nur Windows)  
+##  <a name="use-the-windows-registry-(windows-only)"></a>Verwenden der Windows-Registrierung (nur Windows)  
 
 Führen Sie die folgenden Schritte aus, um Ihre Erweiterung mithilfe der Windows-Registrierung zu verteilen.
 
@@ -60,7 +60,7 @@ Führen Sie die folgenden Schritte aus, um Ihre Erweiterung mithilfe der Windows
   
 1.  Überprüfen Sie, ob Ihre Erweiterung in Microsoft Edge aufgeführt ist, indem Sie zu `edge://extensions` navigieren.  
 
-## Verwenden einer Einstellungs-JSON-Datei (macOS und Linux)  
+##  <a name="use-a-preferences-json-file-(macos-and-linux)"></a>Verwenden einer Einstellungs-JSON-Datei (macOS und Linux)  
 
 Führen Sie die folgenden Schritte aus, um Ihre Erweiterung mithilfe einer Einstellungs-JSON-Datei zu verteilen.
 
@@ -120,7 +120,7 @@ Führen Sie die folgenden Schritte aus, um Ihre Erweiterung mithilfe einer Einst
 
 1.  Überprüfen Sie, ob Ihre Erweiterung in Microsoft Edge installiert ist, indem Sie zu `edge://extensions` navigieren.  
 
-## Aktualisieren und Deinstallieren extern installierter Erweiterungen
+##  <a name="update-and-uninstall-externally-installed-extensions"></a>Aktualisieren und Deinstallieren extern installierter Erweiterungen
 
 Microsoft Edge überprüft die Metadateneinträge in der Registrierung jedes Mal, wenn der Browser gestartet wird, und nimmt änderungen an den extern installierten Erweiterungen vor.  
 

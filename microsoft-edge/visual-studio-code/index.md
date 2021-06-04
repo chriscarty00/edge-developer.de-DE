@@ -18,7 +18,7 @@ ms.locfileid: "11230691"
 
 [Visual Studio Code][VisualStudioCodeDocs] ist ein einfacher, aber leistungsstarker Quellcode-Editor.  [Visual Studio Code][VisualStudioCodeDocs] ist für Windows, Linux und macOS verfügbar.  Es umfasst integrierte Unterstützung für JavaScript, TypeScript und Node.js, daher ist es ein großartiges Tool für Webentwickler, bevor Sie es anpassen.  Wenn Sie es noch nicht verwenden, laden Sie [Visual Studio Code][VisualstudioCode].  
 
-## Erweiterungen  
+##  <a name="extensions"></a>Erweiterungen  
 
 <!--todo: We want to put something like the tiles for extensions Visual Studio Code uses on this page https://code.visualstudio.com/Docs#top-extensions but I don't think this is a markdown page.  I think it's a web page.  I couldn't find anything in https://github.com/Microsoft/vscode-docs that looks like this page. In the meantime, here's what I've come up with: -->  
 
@@ -76,7 +76,7 @@ Weitere Informationen finden Sie unter [Microsoft Edge Tools for Visual Studio C
    **Microsoft Edge tools for Visual Studio Code** Visual Studio Code extension in action  
 :::image-end:::  
 
-## Webhint  
+##  <a name="webhint--"></a>webhint  
       
 Verwenden [Sie webhint][WebhintMain], ein anpassbares Lintingtool, um die folgenden Funktionen Ihrer Website zu verbessern.  
 

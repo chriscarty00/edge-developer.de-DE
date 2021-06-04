@@ -21,7 +21,7 @@ Funktionen sind Optionen, die Sie zum Anpassen und Konfigurieren einer Sitzung `
 
 Funktionen werden als #A0 an eine WebDriver-Sitzung übergeben.  WebDriver-Sprachbindungen bieten in der Regel typsichere Komfortmethoden, sodass Sie die #A0 nicht selbst konfigurieren müssen.  Unterschiedliche WebDriver-Sprachbindungen verwenden unterschiedliche Mechanismen zum Konfigurieren von Funktionen.  Navigieren Sie zur Dokumentation für Ihre [bevorzugte Sprachbindung,][WebdriverIndexChooseWebdriverLanguageBinding] um mehr über das Konfigurieren von Funktionen zu erfahren.  [Selenium][SeleniumMain] konfiguriert Funktionen über die `EdgeOptions` Klasse.  
 
-## Verwenden der EdgeOptions-Klasse  
+##  <a name="using-the-edgeoptions-class"></a>Verwenden der EdgeOptions-Klasse  
 
 Erstellen Sie eine Instanz von `EdgeOptions` , die Convenience-Methoden zum Festlegen von Microsoft Edge-spezifischen Funktionen bietet.  Nachdem Sie das Objekt `EdgeOptions` konfiguriert haben, übergeben Sie `EdgeOptions` es an den `EdgeDriver` Konstruktor.  
 
@@ -38,7 +38,7 @@ Verwenden Sie die -Methode, um Funktionen zu verwenden, die keine zugehörige Ko
 options.AddAdditionalCapability("wdpAddress", "remotehost:50080");
 ```  
 
-## Erkannte Funktionen  
+##  <a name="recognized-capabilities"></a>Erkannte Funktionen  
 
 Standardfunktionen, die akzeptiert werden, finden Sie in der `EdgeDriver` [#A0][SharedCapabilitiesSeleniumDocumentation] und im [W3C WebDriver-Standard.][CapabilitiesW3cWebdriver]  In diesem Artikel werden nur funktionen aufgeführt, die für Microsoft Edge spezifisch sind.  
 
@@ -76,7 +76,7 @@ Das `perfLoggingPrefs` Wörterbuch hat das folgende Format \(alle Schlüssel sin
 | enablePage | boolean | true | So sammeln Sie \(oder nicht)-Ereignisse aus der Page-Domäne. |  
 | traceCategories | string | \(empty\) | Eine durch Kommas getrennte Zeichenfolge von Microsoft Edge-Ablaufverfolgungskategorien, für die Ablaufverfolgungsereignisse erfasst werden sollen.  Eine nicht bestimmte oder leere Zeichenfolge deaktiviert die Ablaufverfolgung. |  
 
-## Zurückgegebene Funktionen  
+##  <a name="returned-capabilities"></a>Zurückgegebene Funktionen  
 
 Die folgende Liste enthält alle Microsoft Edge-spezifischen Funktionen, die beim `EdgeDriver` Erstellen einer neuen Sitzung zurückgegeben werden.  
 

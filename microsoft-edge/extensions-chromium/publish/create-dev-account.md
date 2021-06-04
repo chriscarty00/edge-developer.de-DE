@@ -21,7 +21,7 @@ Um Ihre Erweiterung an den Microsoft Edge-Add-Ons-Store zu übermitteln, müssen
 > [!IMPORTANT]
 > Es ist keine Registrierungsgebühr für die Übermittlung von Erweiterungen an das Microsoft Edge-Programm erforderlich.  
 
-## Vorbemerkungen  
+##  <a name="before-you-begin"></a>Vorbemerkungen  
 
 Wenn Sie über kein Konto verfügen oder über ein vorhandenes kommerzielles Konto beim Partner Center verfügen, erstellen Sie ein neues [Microsoft-Konto (MSA),][WindowsCommunityEverythingAboutMicrosoftAccounts] um sich beim Microsoft Edge-Programm zu registrieren.  Führen Sie die folgenden Aktionen aus, um ein Microsoft-Konto \(Outlook/live/Hotmail\) zu erstellen.  
 
@@ -33,7 +33,7 @@ Wenn Sie ein Entwicklerkonto im Partner Center registriert haben, verwenden Sie 
 > [!NOTE]
 > Die Microsoft Edge-Erweiterungen unterstützen heute die Anmeldung mit einem Arbeits- oder Schulkonto nicht.  In Zukunft plant das Microsoft Edge-Erweiterungsteam, die Verknüpfung von Azure AD-Mandanten mit MSA-Konten für die Erweiterungsverwaltung zu unterstützen.  
 
-## Registrieren beim Microsoft Edge-Programm im Partner Center  
+##  <a name="enroll-in-the-microsoft-edge-program-on-partner-center"></a>Registrieren beim Microsoft Edge-Programm im Partner Center  
 
 1.  Navigieren Sie zur [Entwicklerseite,][MicrosoftPartnerCenter] und wählen **Sie GO TO DASHBOARD aus.**  
 1.  Wenn Sie über ein Microsoft-Konto verfügen, melden Sie sich jetzt an.  Wenn nicht, erstellen Sie ein neues Microsoft-Konto.  Verwenden Sie dasselbe Microsoft-Konto, mit dem Sie sich bei Ihrem Entwicklerkonto anmelden.  Nach der Anmeldung wird ein Registrierungsformular angezeigt. In der folgenden Tabelle werden die Felder im Registrierungsformular beschrieben.  
@@ -102,7 +102,7 @@ Wenn Sie ein Entwicklerkonto im Partner Center registriert haben, verwenden Sie 
 1.  Lesen und akzeptieren Sie vor dem Absenden Ihres Registrierungsformulars die Geschäftsbedingungen des [Microsoft Edge-Entwicklervertrags.][MicrosoftAppDeveloperAgreement]  
 1.  Wählen Sie Fertig stellen aus, um Die Registrierung **abzuschließen.**  
     
-## Nächste Schritte  
+##  <a name="next-steps"></a>Nächste Schritte  
 
 Navigieren Sie zum Anzeigen des Überprüfungsstatus zu Partner Center > **Kontoeinstellungen**.  Während Sie warten, bis der Überprüfungsprozess abgeschlossen ist, fahren Sie mit dem Erstellen, Testen und Vorbereiten Ihrer Übermittlungen fort.  
 

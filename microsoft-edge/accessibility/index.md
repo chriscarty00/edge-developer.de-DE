@@ -25,7 +25,7 @@ Das Entwerfen von Websites und anderen Technologien für die Inklusion sorgt fü
 
 Hier finden Sie einige bewährte Methoden, Codebeispiele und weitere Ressourcen, [][AccessibilityTest] um mehr über [das Entwerfen,][AccessibilityDesign]Erstellen [und][AccessibilityBuild]Testen barrierefreier Websites in Microsoft Edge.  
 
-## Barrierefreiheit in Microsoft Edge  
+##  <a name="accessibility-in-microsoft-edge"></a>Barrierefreiheit in Microsoft Edge  
 
 In Microsoft Edge haben wir die moderne [Benutzeroberflächenautomatisierungs-API][WindowsWin32AutoEntryui] \(UIA-API\) eingeführt.  Die Umstellung auf UIA war eine wichtige Investition in die Barrierefreiheit von Browsern und legt die Grundlage für eine inklusivere Weberfahrung für Benutzer, die auf Hilfstechnologie in Windows 10.  Benutzer profitieren auch vom immergrünen Charakter des Chromium Engine.  
 
@@ -39,7 +39,7 @@ Das Microsoft Edge arbeitet kontinuierlich mit dem W3C und anderen Browseranbiet
 
 Informationen dazu, welche neuen HTML5-Features von der Microsoft Edge unterstützt werden, finden Sie unter [HTML5Accessibility][HTML5Accessibility].  
 
-## Ressourcen  
+##  <a name="resources"></a>Ressourcen  
 
 #### Microsoft Windows Ui Automation Blog  
 

@@ -16,7 +16,7 @@ ms.locfileid: "11343087"
 ---
 # App Developer Agreement Addendum für Benutzer des Microsoft Edge-Programms  
 
-## Exponat G: Geschäftsbedingungen für Microsoft Edge-Erweiterungen  
+##  <a name="exhibit-g:-terms-and-conditions-for-microsoft-edge-extensions"></a>Exponat G: Geschäftsbedingungen für Microsoft Edge-Erweiterungen  
 
 Diese Nutzungsbedingungen für Microsoft Edge Extensions \(das "Extensions Addendum"\) ist eine Ergänzung zu den Geschäftsbedingungen des App-Entwicklervertrags, dessen aktuelle Version unter zu finden [https://go.microsoft.com/fwlink/p/?LinkID=221922][ExtensionsMicrosoftEdgeAddonsCatalogDeveloperPolicies] ist.  Dieses Addendum gilt, wenn Sie Microsoft Edge Extensions \(jede, eine "Erweiterung"\) über Microsoft Edge-Add-Ons übermittelt haben oder verfügbar machen.  Mit Ausnahme der ausdrücklichen Änderung durch dieses Extensions-Addendum gelten alle Bedingungen des App-Entwicklervertrags, der hierin durch Verweis integriert ist, für das Angebot und die Verteilung Ihrer Microsoft Edge-Erweiterungen.  Mit Ausnahme der ausdrücklichen Änderung durch dieses Addendum gelten die Allgemeinen Geschäftsbedingungen, die für eine "Anwendung" oder "App" im Rahmen des App-Entwicklervertrags gelten, für eine Erweiterung wie in diesem Addendum definiert, und alle Verweise auf "Store" oder "Microsoft Store" im Rahmen des App-Entwicklervertrags gelten für Microsoft Edge-Add-Ons, wie in diesem Addendum definiert.  
 

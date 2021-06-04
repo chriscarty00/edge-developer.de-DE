@@ -29,7 +29,7 @@ Das Erstellen eines inklusiven Designs macht Technologie für alle Personen nutz
 
 Viele häufige Probleme mit der Barrierefreiheit im Web können durch eine gute Codierungspraxis gelöst werden.  Die [Dokumentation zu Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/TR/WCAG20) bietet Techniken und bewährte Methoden, mit deren Hilfe Sie barrierefreiere dynamische Webanwendungen entwerfen können.  Weitere Informationen zum Erstellen barrierefreier Websites finden Sie unter [Building Accessible Websites](./build/index.md) .
 
-## Ressourcen  
+##  <a name="resources"></a>Ressourcen  
 
 #### [Entwerfen für Inklusion](https://w3.org/WAI/users/Overview.html)  
 

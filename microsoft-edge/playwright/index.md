@@ -23,7 +23,7 @@ Playwright startet [standardmäßig browserlose][WikiHeadlessBrowser] Browser.  
 
 Bei der Installation von Playwright lädt das Installationsprogramm standardmäßig [Chromium][ChromiumHome], [Firefox][FirefoxMain]und [WebKit herunter.][|::ref3::|Main]  Wenn Sie auch Microsoft Edge \(Chromium\) installiert haben, benötigt Playwright nur eine einz nen Codeänderung, um Ihre Website oder App in Microsoft Edge.  Um Microsoft Edge \(Chromium\) herunterzuladen, navigieren Sie zu [Download Microsoft Edge][MicrosoftEdgeDownload].  
 
-## Installieren von Playwright  
+##  <a name="installing-playwright--"></a>Installieren von Playwright  
 
 Installieren [Sie Playwright,][|::ref4::|Main] um Ihre Website oder App mit dem folgenden Befehl zu testen.  
 
@@ -31,7 +31,7 @@ Installieren [Sie Playwright,][|::ref4::|Main] um Ihre Website oder App mit dem 
 npm i playwright
 ```  
 
-## Starten Microsoft Edge mit Playwright  
+##  <a name="launch-microsoft-edge-with-playwright--"></a>Starten Microsoft Edge mit Playwright  
 
 > [!NOTE]
 > [Playwright][|::ref5::|Main] erfordert Node.js Version 10.17 oder höher. Führen `node -v` Sie über die Befehlszeile aus, um sicherzustellen, dass Sie über eine kompatible Version von Node.js.  Die Browser-Binärdateien für Chromium, Firefox und WebKit funktionieren Windows, macOS und Linux. Weitere Informationen finden Sie unter [Playwright System Requirements][PlaywrightSystemRequirements].  
@@ -94,7 +94,7 @@ Playwright startet Microsoft Edge, navigiert zu `https://www.microsoft.com/edge`
 
 Weitere Informationen zu Playwright finden Sie auf der [Playwright-Website.][|::ref6::|Main]  Sehen Sie sich [das Playwright-Repository auf GitHub.][PlaywrightRepo]  Um Ihr Feedback zum Automatisieren und Testen Ihrer Website oder App mit Playwright zu teilen, geben Sie [ein Problem ein.][PlaywrightRepoNewIssue]  
 
-## Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+##  <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
 [!INCLUDE [contact DevTools team note](../devtools-guide-chromium/includes/contact-devtools-team-note.md)]  
 

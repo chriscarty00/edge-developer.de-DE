@@ -16,14 +16,14 @@ ms.locfileid: "11343168"
 ---
 # Kontaktieren Microsoft Edge Erweiterungssupport  
 
-## Anfordern von Hilfe bei Problemen oder Senden von Feedback  
+##  <a name="request-help-for-any-issues-or-submit-feedback"></a>Anfordern von Hilfe bei Problemen oder Senden von Feedback  
 
 1.  Nachdem Sie Ihre Erweiterung mithilfe von Partner Center übermittelt haben und eine Frage zum Überprüfungs- oder Zertifizierungsstatus der Erweiterung haben, navigieren Sie zu [Neue Supportanfrage,][MicrosoftSupportSupportrequestformE7a381be9c9aFafbEd76262bc93fd9e4] und füllen Sie das Formular aus.  
 1.  Wenn Ihre Erweiterung nicht wie erwartet mit Microsoft Edge funktioniert oder Sie eine Frage zum Entwickeln einer Erweiterung haben, navigieren Sie zu Unterstützte [APIs][ExtensionsDeveloperGuideApiSupport] für Microsoft Edge-Erweiterungen und [Port Chromium-Erweiterungen zu Microsoft Edge][ExtensionsDeveloperGuidePortChromeExtension].  Für alle anderen Fragen senden Sie eine E-Mail an [ext_dev_support@microsoft.com][MailtoExtDevSupportMicrosoft].  
 1.  Wenn beim Übermitteln Ihrer Erweiterung an Partner Center Probleme auftreten, navigieren Sie zu [Veröffentlichen Ihrer Erweiterung][ExtensionsPublishPublishExtension].  Wenn Sie weitere Fragen haben oder Feedback zu Ihrer Veröffentlichungserfahrung senden möchten, senden Sie eine [E-Mail][MailtoExtDevSupportMicrosoft]an ext_dev_support@microsoft.com .  
 1.  Navigieren Sie zum Feature Ihrer Erweiterung in einer Auflistung im Microsoft Edge-Add-Ons-Speicher zu Senden einer Anforderung, um den Auflistungen auf der [Homepage von Microsoft Edge-Add-Ons][OfficeFormsPagesResponsepageAspxV4j5cvggr0grqy180bhbrw01uwybfaxnna1zkp3x2vun0ibsu1ymeu3vfy0vurrodewsjgwu00yry4u] eine Erweiterung hinzuzufügen, und füllen Sie das Formular aus.   
     
-## Melden von Urheberrechts- oder Markenverletzungen  
+##  <a name="report-copyright-or-trademark-infringement"></a>Melden von Urheberrechts- oder Markenverletzungen  
 
 Wenn Sie der Meinung sind, dass ein Element im Microsoft Edge Add-Ons-Speicher gegen ein Urheberrecht oder eine Marke verstößt, navigieren Sie zu [Hinweise][MicrosoftInfoMarketplaceHtml] zu Verstößen, und füllen Sie das Formular aus.  Das Microsoft Edge-Erweiterungsteam überprüft Ihren Bericht und führt dann die erforderlichen Maßnahmen aus.  
 
