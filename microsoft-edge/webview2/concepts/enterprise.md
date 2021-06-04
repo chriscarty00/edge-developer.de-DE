@@ -19,7 +19,7 @@ ms.locfileid: "11057862"
 
 [WebView2][WebView2Landing] ist eine Komponente, die Entwickler zum Erstellen ihrer Anwendungen verwenden, und die Entwickler können eine selbst aktualisierende [Evergreen WebView2-Runtime][Webview2ConceptsDistributionUnderstandRuntimeInstallerPreview] auf Benutzergerät bereitstellen, um ihre Anwendungen zu nutzen.  In diesem Dokument wird erläutert, wie IT-Administratoren WebView2-Anwendungen und Runtime verwalten können.  Feedback von IT-Administratoren und Entwicklern ist im [WebView2-Feedback-Repository willkommen.][GithubMicrosoftedgeWebviewfeddback]  
 
-## Gruppenrichtlinien für WebView2  
+## <a name="group-policies-for-webview2'"></a>Gruppenrichtlinien für WebView2  
 
 IT-Administratoren können Gruppenrichtlinienobjekte \(GPO\) verwenden, um Richtlinieneinstellungen für WebView2 zu konfigurieren.  Die folgenden Richtlinien gelten/gelten nicht für WebView2,  
 

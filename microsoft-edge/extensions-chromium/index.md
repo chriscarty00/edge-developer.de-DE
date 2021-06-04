@@ -108,7 +108,7 @@ Um Ihre Erweiterung an den Store zu übermitteln, stellen Sie sicher, dass Sie d
 
 Nachdem Sie Ihre Erweiterung erfolgreich übermittelt haben, wird ihre Erweiterung einem Überprüfungsprozess unterzogen und besteht den Zertifizierungsprozess entweder durch oder schlägt diesen fehl.  Die Besitzer werden über das Ergebnis und die nächsten Schritte benachrichtigt.  Wenn Sie ein Erweiterungsupdate an den Speicher übermitteln, wird ein neuer Überprüfungsprozess gestartet.  
 
-## Weitere Informationen  
+## <a name="see-also"></a>Weitere Informationen  
 
 *   [Portierung einer Google Chrome-Erweiterung][ExtensionworkshopPorting]  
 *   [Erstellen einer Safari-App-Erweiterung][AppleDeveloperSafariservicesAppExtensionsBuilding]  

@@ -51,7 +51,7 @@ Suchen Sie im Marketplace nach der spezifischen Erweiterung, und wählen Sie **I
    :::column-end:::
 :::row-end:::  
 
-## Debugger für Microsoft Edge  
+## <a name="debugger-for-microsoft-edge"></a>Debugger für Microsoft Edge  
 
 Debugger for [Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftEdge] Visual Studio Code extension, debuggen Sie Ihren Front-End-JavaScript-Code Zeile für Zeile, und sehen Sie anweisungen direkt aus `console.log()` [Visual Studio Code][VisualstudioCode].  
       
@@ -61,7 +61,7 @@ Mithilfe des Debuggertools können Sie sowohl Microsoft Edge \(EdgeHTML\) als au
    **Debugger für Microsoft Edge** Visual Studio Code erweiterung in Aktion  
 :::image-end:::  
 
-## Microsoft Edge Tools für Visual Studio Code
+## <a name="microsoft-edge-tools-for-visual-studio-code"></a>Microsoft Edge Tools für Visual Studio Code
 
 Verwenden Sie [Microsoft Edge Tools for Visual Studio Code][VisualstudioMarketplaceMicrosoftEdgeToolsVisualStudioCode] Visual Studio Code das **Element-Tool** des Microsoft Edge in Visual Studio Code.  Verwenden Sie es für die folgenden Aktionen.  
 

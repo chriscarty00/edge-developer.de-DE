@@ -118,7 +118,8 @@ Nachdem Sie das Experiment aktivieren, stellen Sie sicher, dass Sie die DevTools
 1.  Aktivieren Sie **Source Order Viewer** im Abschnitt das Kontrollkästchen **Quellreihenfolge** anzeigen.  
 1.  Markieren Sie jedes HTML-Element, um eine Überlagerung anzuzeigen, die die Reihenfolge in der Webseitenquelle enthält.  
     
-:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer im Bereich Barrierefreiheit" lightbox=".. /media/experiments-source-order-viewer.msft.png"::: im **Source Order Viewer** Bereich **Barrierefreiheit**  
+:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer im Bereich Barrierefreiheit" lightbox="../media/experiments-source-order-viewer.msft.png":::
+   im **Source Order Viewer** Bereich **Barrierefreiheit**  
 :::image-end:::  
 
 <!--Available in Microsoft Edge version 86 and later.  -->  
