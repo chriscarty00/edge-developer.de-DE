@@ -272,7 +272,7 @@ Der **Umschalter Gruppe ähnlich** in Konsolen Einstellungen gilt jetzt für dop
 
 In früheren Beispielen hat DevTools die Gruppierung der Nachrichten nicht deaktiviert, obwohl die Gruppierung `hello` **ähnlich** deaktiviert ist.  Jetzt werden `hello` die Nachrichten nicht mehr in die Gruppe eingruppiert.  
 
-:::image type="complex" source="../../media/2020/06/ungroup-similar.msft.png" alt-text="Wenn "Gruppe ähnlich" deaktiviert ist, werden die Hello-Nachrichten nicht in die Gruppe eingruppiert." lightbox="../../media/2020/06/ungroup-similar.msft.png":::
+:::image type="complex" source="../../media/2020/06/ungroup-similar.msft.png" alt-text="Wenn Gruppe ähnlich deaktiviert ist, werden die Hello-Nachrichten nicht in die Gruppe eingruppiert." lightbox="../../media/2020/06/ungroup-similar.msft.png":::
    Wenn **"Gruppe ähnlich"** deaktiviert ist, werden `hello` die Nachrichten ungruppiert.
 :::image-end:::  
 
