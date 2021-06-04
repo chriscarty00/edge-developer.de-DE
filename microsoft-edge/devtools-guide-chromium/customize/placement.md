@@ -96,7 +96,7 @@ DevTools werden möglicherweise an ein separates Fenster entfernt, das Sie auf e
     
     Sie können auch über das Hauptmenü auf [die Befehle zugreifen.](#change-placement-from-the-main-menu) 
     
-    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="Der Befehl "Abdocken"" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
+    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="Der Befehl Abdocken" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
        Der Befehl "Abdocken"  
     :::image-end:::  
     

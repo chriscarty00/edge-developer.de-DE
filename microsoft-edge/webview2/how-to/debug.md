@@ -63,7 +63,7 @@ Installieren und Einrichten der Skriptdebuggertools in Visual Studio.
     1.  Wählen Sie die **JavaScript-Diagnoseeinstellung** aus.  
     1.  Wählen Sie **Ändern**aus. 
         
-        :::image type="complex" source="./media/indiv-comp.png" alt-text="Visual Studio Ändern der Registerkarte "Einzelne Komponenten"" lightbox="./media/indiv-comp.png":::
+        :::image type="complex" source="./media/indiv-comp.png" alt-text="Visual Studio Ändern der Registerkarte Einzelne Komponenten" lightbox="./media/indiv-comp.png":::
            Visual Studio Ändern der Registerkarte "Einzelne Komponenten"  
         :::image-end:::  
         
@@ -133,7 +133,7 @@ Führen Visual Studio Code die folgenden Aktionen aus, um Den Code zu debuggen.
     1.  Wählen Sie **auf der** Registerkarte Ausführen im Dropdownmenü die Startkonfiguration aus.  
     1.  Wenn Sie mit dem Debuggen Ihrer App beginnen möchten, wählen Sie Debuggen starten aus. Dabei handelt es sich um das grüne Dreieck neben der Startkonfiguration.  
         
-        :::image type="complex" source="./media/run-vs.png" alt-text=" Visual Studio Code Registerkarte "Ausführen"" lightbox="./media/run-vs.png":::
+        :::image type="complex" source="./media/run-vs.png" alt-text="Visual Studio Code Registerkarte Ausführen" lightbox="./media/run-vs.png":::
            Visual Studio Code Registerkarte "Ausführen"  
         :::image-end:::  
         

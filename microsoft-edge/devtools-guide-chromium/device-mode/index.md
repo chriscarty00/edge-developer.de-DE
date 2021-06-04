@@ -58,7 +58,7 @@ Standardmäßig wird die Gerätesymbolleiste im Modus "Responsive Viewport" geö
 
 Ziehen Sie die Ziehpunkte, um das Aussehen und Aussehen Ihrer Seite in mehreren Bildschirmgrößen schnell zu testen, um die Größe des Ansichtsfensters auf die erforderlichen Dimensionen zu ändern.  Sie können auch bestimmte Werte in die Felder Breite und Höhe eingeben.  In der folgenden Abbildung wird die Breite auf und `626` die Höhe auf `516` festgelegt.  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png" alt-text="Die Ziehpunkte zum Ändern der Dimensionen des Ansichtsfensters im Modus "Responsive Viewport"" lightbox="../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png":::
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png" alt-text="Die Ziehpunkte zum Ändern der Dimensionen des Ansichtsfensters im Modus Responsive Viewport" lightbox="../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png":::
     Die Ziehpunkte zum Ändern der Dimensionen des Ansichtsfensters im Modus "Responsive Viewport"  
 :::image-end:::  
 
@@ -80,7 +80,7 @@ Wählen Sie einen Haltepunkt aus, um die Breite des Viewports so zu ändern, das
 
 Verwenden Sie die **Liste Gerätetyp,** um ein mobiles Gerät oder Desktopgerät zu simulieren.  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png" alt-text="Die Liste "Gerätetyp"" lightbox="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png":::
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png" alt-text="Die Liste Gerätetyp" lightbox="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png":::
    Die **Liste "Gerätetyp"**  
 :::image-end:::  
 

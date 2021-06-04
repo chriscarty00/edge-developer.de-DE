@@ -18,7 +18,7 @@ Verwenden Sie die folgenden Optionen, um die neuen Features und Änderungen im B
 *   Senden Sie einen Vorschlag an [The Web We Want][TheWebWeWant].  
 *   Verwenden Sie den folgenden **Feedback**-Abschnitt, um Fehler in diesem Artikel zu melden.  
 
-:::image type="complex" source="../media/bing-devtools-send-feedback.msft.png" alt-text="Das Symbol „Feedback senden“ in den Microsoft Edge-Entwicklungstools" lightbox="../media/bing-devtools-send-feedback.msft.png":::
+:::image type="complex" source="../media/bing-devtools-send-feedback.msft.png" alt-text="Das Symbol Feedback senden in den Microsoft Edge-Entwicklungstools" lightbox="../media/bing-devtools-send-feedback.msft.png":::
    Das Symbol **Feedback senden** in den Microsoft Edge-Entwicklungstools  
 :::image-end:::  
 

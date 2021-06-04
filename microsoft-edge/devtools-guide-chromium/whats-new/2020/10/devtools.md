@@ -187,7 +187,7 @@ Schaltet den **Bereich Berechnet** im Bereich **Formatvorlagen** um.  Der **Bere
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="Öffnen des Seitenleistenbereichs "Berechnet"" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
+      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="Öffnen des Seitenleistenbereichs Berechnet" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
          Öffnen des **Seitenleistenbereichs "Berechnet"**  
       :::image-end:::  
    :::column-end:::  

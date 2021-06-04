@@ -98,7 +98,7 @@ Dies ist nur ein einfaches Beispiel für die Automatisierungs- und Testszenarien
 
 Das Microsoft Edge Entwicklerteam ist gespannt auf Ihr Feedback zur Verwendung von Puppeteer und `puppeteer-core` Microsoft Edge.  Verwenden Sie **das Symbol Feedback** senden in [][TwitterIntentTweetEdgedevtools] der Microsoft Edge DevTools- oder Tweet-@EdgeDevTools, um das Microsoft Edge wissen zu lassen, was Sie denken.  
 
-:::image type="complex" source="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="Das Symbol „Feedback senden“ in den Microsoft Edge-Entwicklungstools" lightbox="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png":::
+:::image type="complex" source="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="Das Symbol Feedback senden in den Microsoft Edge-Entwicklungstools" lightbox="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png":::
    Das Symbol **Feedback senden** in den Microsoft Edge DevTools  
 :::image-end:::  
 

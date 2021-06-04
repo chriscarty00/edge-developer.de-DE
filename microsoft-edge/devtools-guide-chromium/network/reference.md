@@ -583,7 +583,7 @@ Verwenden Sie die folgenden Schritte, um die im HTTP-Header einer Anforderung ge
 <!--[ManageDataCookiesFields]: manage-data/cookies#fields  -->  
 <!--TODO: add link when section is available -->  
 
-:::image type="complex" source="../media/network-network-resources-cookies.msft.png" alt-text="Der Bereich "Cookies"" lightbox="../media/network-network-resources-cookies.msft.png":::
+:::image type="complex" source="../media/network-network-resources-cookies.msft.png" alt-text="Der Bereich Cookies" lightbox="../media/network-network-resources-cookies.msft.png":::
    Der Bereich "Cookies"  
 :::image-end:::  
 

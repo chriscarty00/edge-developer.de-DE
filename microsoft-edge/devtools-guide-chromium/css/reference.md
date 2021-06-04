@@ -104,7 +104,7 @@ Wählen Und bearbeiten Sie einen Wert, um einen Wert zu ändern.
 > [!NOTE]
 > In der folgenden Abbildung zeigt das **** **Diagramm Feldmodell** im Bereich Formatvorlagen das Feldmodell für das aktuell ausgewählte `h1` Element.  
 
-:::image type="complex" source="../media/css-elements-styles-h1-2.msft.png" alt-text="Das Diagramm "Boxmodell"" lightbox="../media/css-elements-styles-h1-2.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-h1-2.msft.png" alt-text="Das Diagramm Boxmodell" lightbox="../media/css-elements-styles-h1-2.msft.png":::
    Das **Diagramm "Boxmodell"**  
 :::image-end:::  
 
@@ -168,7 +168,7 @@ Das **Coverage-Tool** zeigt, welche CSS eine Seite tatsächlich verwendet.
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/css-console-qs-coverage-empty.msft.png" alt-text="Das Tool "Abdeckung"" lightbox="../media/css-console-qs-coverage-empty.msft.png":::
+          :::image type="complex" source="../media/css-console-qs-coverage-empty.msft.png" alt-text="Das Tool Abdeckung" lightbox="../media/css-console-qs-coverage-empty.msft.png":::
              Das **Tool "Abdeckung"**  
           :::image-end:::  
        :::column-end:::
@@ -334,7 +334,7 @@ Führen Sie die folgenden Aktionen aus, um die Symbolleiste **Weitere Aktionen a
     > [!NOTE]
     > Die **Aktion Style Rule Below** einfügen wird nach dem Zeigen auf weitere Aktionen **angezeigt.**  
     
-    :::image type="complex" source="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png" alt-text="Die Symbolleiste "Weitere Aktionen"" lightbox="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png":::
+    :::image type="complex" source="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png" alt-text="Die Symbolleiste Weitere Aktionen" lightbox="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png":::
        Die **Symbolleiste "Weitere Aktionen"**  
     :::image-end:::  
     

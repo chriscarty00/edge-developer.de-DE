@@ -127,7 +127,7 @@ Es gibt auch viele Spalten, die standardmäßig ausgeblendet sind und möglicher
 
 1.  Zeigen Sie auf die Kopfzeile der Tabelle Netzwerkprotokoll, öffnen Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste\), und wählen Sie **Domäne aus.**  Die Domäne der einzelnen Ressourcen wird nun angezeigt.  
     
-    :::image type="complex" source="../media/network-glitch-network-edit-column.msft.png" alt-text="Aktivieren der Spalte "Domäne"" lightbox="../media/network-glitch-network-edit-column.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-edit-column.msft.png" alt-text="Aktivieren der Spalte Domäne" lightbox="../media/network-glitch-network-edit-column.msft.png":::
        Aktivieren der Spalte "Domäne"  
     :::image-end:::  
     

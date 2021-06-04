@@ -117,7 +117,7 @@ Standardmäßig werden auf der **Registerkarte Seite** Ressourcen nach Verzeichn
     
     Ressourcen sind nach Dateityp organisiert.  Innerhalb jedes Dateityps sind die Ressourcen alphabetisch angeordnet.  
 
-    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="Die Registerkarte Seite nach dem Löschen des Häkchens "Gruppe nach Ordner"" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
+    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="Die Registerkarte Seite nach dem Löschen des Häkchens Gruppe nach Ordner" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
        Die **Registerkarte Seite** nach dem Löschen des **Häkchens "Gruppe nach** Ordner"  
     :::image-end:::  
     

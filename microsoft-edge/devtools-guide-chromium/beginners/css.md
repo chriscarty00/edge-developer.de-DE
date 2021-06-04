@@ -75,7 +75,7 @@ Zum Erstellen Ihrer Website müssen Sie zunächst die folgenden Aktionen ausfüh
 
 1.  Öffnen Sie [den Quellcode][GlitchCookedAmphibianIndex].  Auf die Fokusregisterkarte Ihres Browsers wird als **Bearbeitungsregisterkarte verwiesen.**  
     
-    :::image type="complex" source="../media/beginners-css-setup1.msft.png" alt-text="Registerkarte "Bearbeiten"" lightbox="../media/beginners-css-setup1.msft.png":::
+    :::image type="complex" source="../media/beginners-css-setup1.msft.png" alt-text="Registerkarte Bearbeiten" lightbox="../media/beginners-css-setup1.msft.png":::
        Registerkarte **"Bearbeiten"**  
     :::image-end:::  
     
@@ -158,7 +158,7 @@ Was passiert, wenn alle Elemente auf Ihrer Webseite auf die `<p>` gleiche Weise 
 
 1.  Klicken Sie auf der Registerkarte Live auf **Kontakt,** um zur Kontaktseite zu navigieren.  Beachten Sie die Schriftart **von Home** und **Contact**.  
     
-    :::image type="complex" source="../media/beginners-css-internal1.msft.png" alt-text="Die Seite "Kontakt"" lightbox="../media/beginners-css-internal1.msft.png":::
+    :::image type="complex" source="../media/beginners-css-internal1.msft.png" alt-text="Die Seite Kontakt" lightbox="../media/beginners-css-internal1.msft.png":::
        Die Seite "Kontakt"  
     :::image-end:::  
     
@@ -262,7 +262,7 @@ Führen Sie die folgenden Aktionen aus, um Kommas zum Hinzufügen mehrerer Selek
 1.  Navigieren Sie zur **Registerkarte Live**.  
 1.  Wählen Sie den **Link Kontakt** aus, um zur Kontaktseite zurück zu wechseln.  Wenden Sie sich **jetzt an mich!** hat dieselbe Schriftart wie die Navigationslinks.  
     
-    :::image type="complex" source="../media/beginners-css-multiple1.msft.png" alt-text="Der Text Contact Me!  hat jetzt die gleiche Schriftart wie die Links "Start" und "Kontakt"" lightbox="../media/beginners-css-multiple1.msft.png":::
+    :::image type="complex" source="../media/beginners-css-multiple1.msft.png" alt-text="Der Text Contact Me!  hat jetzt die gleiche Schriftart wie die Links Start und Kontakt" lightbox="../media/beginners-css-multiple1.msft.png":::
        Der Text **Contact Me!** hat jetzt die gleiche Schriftart wie die **Links "Start"** **und "Kontakt"**  
     :::image-end:::  
     
@@ -276,7 +276,7 @@ Führen Sie die folgenden Aktionen aus, um die Formatvorlage eines vorhandenen E
 
 1.  Zeigen Sie auf **den Startlink,** öffnen Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste\), und wählen Sie **Überprüfen aus.**  
     
-    :::image type="complex" source="../media/beginners-css-add1.msft.png" alt-text="Überprüfen des Links "Start"" lightbox="../media/beginners-css-add1.msft.png":::
+    :::image type="complex" source="../media/beginners-css-add1.msft.png" alt-text="Überprüfen des Links Start" lightbox="../media/beginners-css-add1.msft.png":::
        Überprüfen des Links "Start"  
     :::image-end:::  
     

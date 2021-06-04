@@ -190,7 +190,7 @@ Verwenden Sie das neue **Tool Memory Inspector,** um einen `ArrayBuffer` In-Java
 
 Weitere Informationen zum Debuggen im **Tool Sources** finden Sie unter Verwenden des [Debuggerbereichs zum Debuggen von JavaScript-Code][DevtoolsSourcesUsingDebuggerPaneToDebugJavascriptCode].  Navigieren Sie Chromium zu Issue [1166577][CR1166577].  
 
-:::image type="complex" source="../../media/2021/04/sources-memory-write-wasm-breakpoint-scope-reveal-in-memory-inspector-panel.msft.png" alt-text="Tool "Memory Inspector"" lightbox="../../media/2021/04/sources-memory-write-wasm-breakpoint-scope-reveal-in-memory-inspector-panel.msft.png":::
+:::image type="complex" source="../../media/2021/04/sources-memory-write-wasm-breakpoint-scope-reveal-in-memory-inspector-panel.msft.png" alt-text="Tool Memory Inspector" lightbox="../../media/2021/04/sources-memory-write-wasm-breakpoint-scope-reveal-in-memory-inspector-panel.msft.png":::
    **Speicherprüfungstool**  
 :::image-end:::  
 
@@ -206,7 +206,7 @@ Zum Anzeigen \(oder Ausblenden\) der Signalen wählen Sie \(oder entfernen\) das
 
 <!--  To review the history of this feature in the Chromium open-source project, navigate to Issue [1066772][CR1066772].  -->  
 
-:::image type="complex" source="../../media/2021/04/elements-contextual-menu-badge-settings.msft.png" alt-text="Bereich "Signaleinstellungen" im Elementtool" lightbox="../../media/2021/04/elements-contextual-menu-badge-settings.msft.png":::
+:::image type="complex" source="../../media/2021/04/elements-contextual-menu-badge-settings.msft.png" alt-text="Bereich Signaleinstellungen im Elementtool" lightbox="../../media/2021/04/elements-contextual-menu-badge-settings.msft.png":::
    **Bereich "Signaleinstellungen"** im **Elementtool**  
 :::image-end:::  
 
@@ -318,7 +318,7 @@ Suchen Sie mit dem neuen Experimentfilter schneller nach Experimenten.  Führen 
 
 Verwenden Sie die neue Spalte im Bereich `Vary Header` **Cache Storage,** um die [Werte der Http-Antwortheader][HttpwgSpecsRfc7231HtmlHeaderVary] variieren anzuzeigen.  Navigieren Sie Chromium zu Issue [1186049][CR1186049].  
 
-:::image type="complex" source="../../media/2021/04/application-cache-cache-storage-highlighted-vary-header.msft.png" alt-text="Spalte "Kopfzeile variieren"" lightbox="../../media/2021/04/application-cache-cache-storage-highlighted-vary-header.msft.png":::
+:::image type="complex" source="../../media/2021/04/application-cache-cache-storage-highlighted-vary-header.msft.png" alt-text="Spalte Kopfzeile variieren" lightbox="../../media/2021/04/application-cache-cache-storage-highlighted-vary-header.msft.png":::
    Spalte "Kopfzeile variieren"  
 :::image-end:::  
 

@@ -48,7 +48,7 @@ Das **Menü Rendering** wird in der Schublade angezeigt.
     
 1.  Wählen Sie eine Option aus.  
     
-    :::image type="complex" source="../media/accessibility-emulate-vision-menu-options.msft.png" alt-text="Menüoptionen "Visionsmangel emulieren"" lightbox="../media/accessibility-emulate-vision-menu-options.msft.png":::
+    :::image type="complex" source="../media/accessibility-emulate-vision-menu-options.msft.png" alt-text="Menüoptionen Visionsmangel emulieren" lightbox="../media/accessibility-emulate-vision-menu-options.msft.png":::
        Menüoptionen **zum Emulieren von Sehschwächen**  
     :::image-end:::  
     

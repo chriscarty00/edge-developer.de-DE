@@ -167,7 +167,7 @@ Nachdem Sie gemessen und überprüft haben, ob die Animation nicht gut funktioni
     
 1.  Erweitern Sie den **Abschnitt Main.**  DevTools zeigt Ein Flammendiagramm der Aktivität im Hauptthread im Laufe der Zeit.  Die x-Achse stellt die Aufzeichnung im Laufe der Zeit dar.  Jede Leiste stellt ein Ereignis dar.  Ein breiterer Balken bedeutet, dass das Ereignis länger dauerte.  Die y-Achse stellt die Aufrufliste dar.  Wenn Ereignisse übereinander gestapelt werden, bedeutet dies, dass die oberen Ereignisse die niedrigeren Ereignisse verursacht haben.  
     
-    :::image type="complex" source="../media/evaluate-performance-performance-main.msft.png" alt-text="Der Abschnitt "Main"" lightbox="../media/evaluate-performance-performance-main.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-performance-main.msft.png" alt-text="Der Abschnitt Main" lightbox="../media/evaluate-performance-performance-main.msft.png":::
        Der **Abschnitt "Main"**  
     :::image-end:::  
     

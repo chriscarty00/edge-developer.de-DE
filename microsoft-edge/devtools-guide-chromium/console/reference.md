@@ -168,7 +168,7 @@ Befindet sich `console.log()` z. B. in der `Info` Gruppe, befindet `console.erro
 
 Wählen Sie zum Filtern der Nachrichten das **Dropdownmenü Protokollebenen** aus, und wählen Sie `Verbose` , , oder `Info` `Warning` `Error` aus.  
 
-:::image type="complex" source="../media/console-log-level-default-levels.msft.png" alt-text="Dropdownliste "Protokollebenen"" lightbox="../media/console-log-level-default-levels.msft.png":::
+:::image type="complex" source="../media/console-log-level-default-levels.msft.png" alt-text="Dropdownliste Protokollebenen" lightbox="../media/console-log-level-default-levels.msft.png":::
    Dropdownliste **"Protokollebenen"**  
 :::image-end:::  
 
@@ -248,7 +248,7 @@ Beim Eingeben eines Ausdrucks zeigt das Popupfenster für die automatische Vervo
 
 Die Standardoption für das **JavaScript-Kontextdropdown** ist **top**, das den [Browserkontext der][MdnDocsGlossaryBrowsingContext] Hauptwebseite darstellt.  
 
-:::image type="complex" source="../media/console-dom-level-top.msft.png" alt-text="Das Dropdownmenü "JavaScript-Kontext"" lightbox="../media/console-dom-level-top.msft.png":::
+:::image type="complex" source="../media/console-dom-level-top.msft.png" alt-text="Das Dropdownmenü JavaScript-Kontext" lightbox="../media/console-dom-level-top.msft.png":::
    Das **Dropdownmenü "JavaScript-Kontext"**  
 :::image-end:::  
 

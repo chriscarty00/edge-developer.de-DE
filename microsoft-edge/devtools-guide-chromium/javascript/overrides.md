@@ -27,7 +27,7 @@ Sie können nun eine Ressource der aktuellen Webseite verwenden und lokal speich
     
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/javascript-overrides-overflow-menu.msft.png" alt-text="Quellentool mit nicht genügend Platz zum Anzeigen der Option "Außerkraftsetzungen"" lightbox="../media/javascript-overrides-overflow-menu.msft.png":::
+          :::image type="complex" source="../media/javascript-overrides-overflow-menu.msft.png" alt-text="Quellentool mit nicht genügend Platz zum Anzeigen der Option Außerkraftsetzungen" lightbox="../media/javascript-overrides-overflow-menu.msft.png":::
              **Quellentool** mit nicht genügend Platz zum Anzeigen der Option "Außerkraftsetzungen"  
           :::image-end:::  
        :::column-end:::

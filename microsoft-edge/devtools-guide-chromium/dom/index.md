@@ -56,13 +56,13 @@ Wenn Sie an einem bestimmten DOM-Knoten interessiert sind, ist **Inspect** eine 
     
     1.  Das **Elementtool** von DevTools wird geöffnet.  `<li>Michelangelo</li>` wird in der **DOM-Struktur hervorgehoben.**  
         
-        :::image type="complex" source="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png" alt-text="Hervorheben des Knotens "Michelangelo"" lightbox="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png":::
+        :::image type="complex" source="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png" alt-text="Hervorheben des Knotens Michelangelo" lightbox="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png":::
            Hervorheben des `Michelangelo` Knotens  
         :::image-end:::  
         
         1.  Wählen Sie in der oberen linken Ecke von DevTools das Symbol **Inspect** ![ \( Inspect ](../media/inspect-icon.msft.png) \) aus.  
             
-            :::image type="complex" source="../media/dom-elements-highlighted-select-element-page-inspect.msft.png" alt-text="Das Symbol "Überprüfen"" lightbox="../media/dom-elements-highlighted-select-element-page-inspect.msft.png":::
+            :::image type="complex" source="../media/dom-elements-highlighted-select-element-page-inspect.msft.png" alt-text="Das Symbol Überprüfen" lightbox="../media/dom-elements-highlighted-select-element-page-inspect.msft.png":::
                Das **Symbol "Überprüfen"**  
             :::image-end:::  
             

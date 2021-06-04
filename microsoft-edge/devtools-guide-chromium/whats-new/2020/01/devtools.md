@@ -202,13 +202,13 @@ In den folgenden Abschnitten werden zusätzliche features angekündigt, die in M
 
 Simulieren [Sie nach dem Aktivieren der Gerätesymbolleiste][DevtoolsDeviceModeIndexSimulateMobileViewport]die Dimensionen eines G4-Ansichtsports von "Moto G4" aus der **Geräteliste.**  
 
-:::image type="complex" source="../../images/2020/01/motog4.msft.png" alt-text="Simulieren eines G4-Ansichtsports von "Moto G4"" lightbox="../../images/2020/01/motog4.msft.png":::
+:::image type="complex" source="../../images/2020/01/motog4.msft.png" alt-text="Simulieren eines G4-Ansichtsports von Moto G4" lightbox="../../images/2020/01/motog4.msft.png":::
    Simulieren eines G4-Ansichtsports von "Moto G4"  
 :::image-end:::  
 
 Wählen [Sie Geräterahmen anzeigen aus,][DevtoolsDeviceModeIndexShowDeviceFrame] um die Hardware von "Moto G4" um den Viewport zu zeigen.  
 
-:::image type="complex" source="../../images/2020/01/motog4frame.msft.png" alt-text="Anzeigen der Hardware von "Moto G4"" lightbox="../../images/2020/01/motog4frame.msft.png":::
+:::image type="complex" source="../../images/2020/01/motog4frame.msft.png" alt-text="Anzeigen der Hardware von Moto G4" lightbox="../../images/2020/01/motog4frame.msft.png":::
    Anzeigen der Hardware von "Moto G4"  
 :::image-end:::  
 

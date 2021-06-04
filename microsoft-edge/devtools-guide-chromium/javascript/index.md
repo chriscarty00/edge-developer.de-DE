@@ -59,7 +59,7 @@ DevTools bietet viele verschiedene Tools für verschiedene Aufgaben.  Zu den ver
     
 1.  Wählen Sie das **Tool Quellen** aus.  
     
-    :::image type="complex" source="../media/javascript-sources-sections.msft.png" alt-text="Das Tool "Quellen"" lightbox="../media/javascript-sources-sections.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-sections.msft.png" alt-text="Das Tool Quellen" lightbox="../media/javascript-sources-sections.msft.png":::
        Das **Tool "Quellen"**  
     :::image-end:::  
     
@@ -179,7 +179,7 @@ Im **Überwachungsbereich** können Sie die Werte von Variablen (z. B. ) oder Au
 > [!NOTE]
 > In der folgenden Abbildung wird der `typeof sum` Watch Expression im Bereich **"Watch"** angezeigt.  Wenn Ihr DevTools-Fenster breit ist, wird der Bereich **"Watch"** im **Debuggerbereich** angezeigt, der dann auf der rechten Seite angezeigt wird.  
 
-:::image type="complex" source="../media/javascript-sources-breakpoint-paused-watch.msft.png" alt-text="Der Bereich "Watch"" lightbox="../media/javascript-sources-breakpoint-paused-watch.msft.png":::
+:::image type="complex" source="../media/javascript-sources-breakpoint-paused-watch.msft.png" alt-text="Der Bereich Watch" lightbox="../media/javascript-sources-breakpoint-paused-watch.msft.png":::
    Der **Bereich "Watch"**  
 :::image-end:::  
 

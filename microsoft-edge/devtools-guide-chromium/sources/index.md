@@ -288,7 +288,7 @@ Nach dem Absenden des Formulars wird , das sich auf globaler Ebene befindet, nic
 
 Um eine Datei mit ziemlicher Grafik neu zu formatieren, um sie lesbar zu machen, wählen Sie am unteren Rand des Editorbereichs die Schaltfläche Ziemlich drucken \( Format **** ![ ](../media/format-icon.msft.png) \) aus, die als geschweifte Klammern angezeigt wird.  Wenn oben im **Editorbereich** eine Schaltfläche "Ziemlich drucken" angezeigt wird, können Sie diese Schaltfläche auswählen.
 
-:::image type="complex" source="../media/minified.msft.png" alt-text="Die Schaltfläche "Hübsch drucken"" lightbox="../media/minified.msft.png":::
+:::image type="complex" source="../media/minified.msft.png" alt-text="Die Schaltfläche Hübsch drucken" lightbox="../media/minified.msft.png":::
    Die **Schaltfläche "Hübsch drucken"**  
 :::image-end:::  
 
