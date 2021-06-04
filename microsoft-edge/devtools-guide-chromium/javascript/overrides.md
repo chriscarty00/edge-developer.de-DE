@@ -77,7 +77,7 @@ Zeigen Sie **im Editor** Quellen auf den Dateinamen der ausgewählten Datei, öf
 
 Die Datei wird in Ihrem Überschreibungsordner gespeichert.  Stellen Sie sicher, dass DevTools einen Ordner mit dem Namen mithilfe der URL der Datei mit der richtigen Verzeichnisstruktur erstellt.  Die Datei wird darin gespeichert.  Der Dateiname im Editor zeigt nun auch einen lila Punkt an, der angibt, dass die Datei lokal und nicht live ist.  
 
-:::image type="complex" source="../media/javascript-overrides-file-stored.msft.png" alt-text="Die Datei wurde erfolgreich im Ordner "Außerkraftsetzungen" gespeichert." lightbox="../media/javascript-overrides-file-stored.msft.png":::
+:::image type="complex" source="../media/javascript-overrides-file-stored.msft.png" alt-text="Die Datei wurde erfolgreich im Ordner Außerkraftsetzungen gespeichert." lightbox="../media/javascript-overrides-file-stored.msft.png":::
    Die Datei wurde erfolgreich im Ordner "Außerkraftsetzungen" gespeichert.  
 :::image-end:::  
 
@@ -92,7 +92,7 @@ Die Datei wird in Ihrem Überschreibungsordner gespeichert.  Stellen Sie sicher,
    :::column span="":::
       Die Datei wird automatisch auf Ihrem Computer gespeichert.  Wenn Sie die Datei aktualisieren, wird der Rahmen angezeigt, und ihre Arbeit geht nicht verloren.  
       
-      :::image type="complex" source="../media/javascript-overrides-changing-styles.msft.png" alt-text="Webseitenformatvorlagen dauerhaft ändern, indem Sie eine Datei im Ordner "Außerkraftsetzungen" bearbeiten" lightbox="../media/javascript-overrides-changing-styles.msft.png":::
+      :::image type="complex" source="../media/javascript-overrides-changing-styles.msft.png" alt-text="Webseitenformatvorlagen dauerhaft ändern, indem Sie eine Datei im Ordner Außerkraftsetzungen bearbeiten" lightbox="../media/javascript-overrides-changing-styles.msft.png":::
          Webseitenformatvorlagen dauerhaft ändern, indem Sie eine Datei im Ordner "Außerkraftsetzungen" bearbeiten  
       :::image-end:::  
    :::column-end:::
@@ -102,7 +102,7 @@ Die Datei wird in Ihrem Überschreibungsordner gespeichert.  Stellen Sie sicher,
    :::column span="":::
       Zeigen Sie **im Tool** Quellen im Abschnitt **Seite** auf eine beliebige Datei, öffnen Sie das Kontextmenü \(mit der rechten Maustaste auf\), und fügen Sie es außer Kraft.  Auch hier haben Dateien, die sich bereits im Ordner "Außerkraftsetzungen" befinden, einen lila Punkt auf dem Symbol.  
       
-      :::image type="complex" source="../media/javascript-overrides-safe-from-sources.msft.png" alt-text="Auswählen einer Datei aus dem Tool "Quellen" für Außerkraftsetzungen" lightbox="../media/javascript-overrides-safe-from-sources.msft.png":::
+      :::image type="complex" source="../media/javascript-overrides-safe-from-sources.msft.png" alt-text="Auswählen einer Datei aus dem Tool Quellen für Außerkraftsetzungen" lightbox="../media/javascript-overrides-safe-from-sources.msft.png":::
          Auswählen einer Datei aus dem **Tool "Quellen"** für Außerkraftsetzungen  
       :::image-end:::  
    :::column-end:::

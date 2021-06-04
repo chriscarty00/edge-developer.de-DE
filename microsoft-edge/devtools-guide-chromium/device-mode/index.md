@@ -313,7 +313,7 @@ Im **Bereich Sensoren** können Sie im Dropdownmenü Ausrichtung eine voreingest
       
       1.  Wählen **Sie Anpassen und Steuern devTools** \( `...` \) > Weitere **Tools**  >  **Netzwerkbedingungen aus.**  
       
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png" alt-text="Eintrag "Netzwerkbedingungen" im Menü Weitere Tools" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png":::
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png" alt-text="Eintrag Netzwerkbedingungen im Menü Weitere Tools" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png":::
          **Eintrag "Netzwerkbedingungen"** im Menü **Weitere** Tools  
       :::image-end:::  
    :::column-end:::

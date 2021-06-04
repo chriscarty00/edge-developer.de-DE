@@ -32,7 +32,7 @@ Führen Sie die folgenden Schritte aus, um die Erweiterung quer zu laden.
 
 1.  Wählen Sie bei der ersten Installation der Erweiterung die Option **Entpackt laden aus.**  Sie werden zur Eingabe des Verzeichnisses mit ihren Erweiterungsquellendateien aufgefordert.  Ihre Erweiterung wird in Ihrem Browser installiert, ähnlich wie erweiterungen, die aus dem Store installiert wurden.  
 
-       :::image type="complex" source="./media/part1-installed-extension.png" alt-text="Seite "Installierte Erweiterungen" mit einer seitengeladenen Erweiterung":::
+       :::image type="complex" source="./media/part1-installed-extension.png" alt-text="Seite Installierte Erweiterungen mit einer seitengeladenen Erweiterung":::
           Seite "Installierte Erweiterungen" mit einer seitengeladenen Erweiterung :::image-end:::
 
 Während der Entwicklung müssen Sie möglicherweise auch die folgenden Aufgaben ausführen.

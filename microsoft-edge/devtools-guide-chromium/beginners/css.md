@@ -140,7 +140,7 @@ Führen Sie die folgenden Aktionen aus, um **Inlineformatvorlagen zum** Anwenden
     
 1.  Navigieren Sie zur Registerkarte Live, um die **Änderungen anzeigen zu können.**  Der Hintergrund des `<nav>` Abschnitts ist jetzt blau.  
     
-    :::image type="complex" source="../media/beginners-css-inline2.msft.png" alt-text="Die Hintergrundfarbe hinter den Links "Start" und "Kontakt" ist jetzt blau." lightbox="../media/beginners-css-inline2.msft.png":::
+    :::image type="complex" source="../media/beginners-css-inline2.msft.png" alt-text="Die Hintergrundfarbe hinter den Links Start und Kontakt ist jetzt blau." lightbox="../media/beginners-css-inline2.msft.png":::
        Die Hintergrundfarbe hinter den **Links "Start"** **und** "Kontakt" ist jetzt blau.  
     :::image-end:::  
     
@@ -184,7 +184,7 @@ Was passiert, wenn alle Elemente auf Ihrer Webseite auf die `<p>` gleiche Weise 
 1.  Wechseln Sie zurück zur **Registerkarte Live.**  
 1.  Wählen **Sie Kontakt** aus, um zur Kontaktseite zurück zu wechseln.  Die Schriftart von **Home** und **Contact** hat sich geändert.  
     
-    :::image type="complex" source="../media/beginners-css-internal2.msft.png" alt-text="Die Schriftart der Links "Start" und "Kontakt" wurde geändert." lightbox="../media/beginners-css-internal2.msft.png":::
+    :::image type="complex" source="../media/beginners-css-internal2.msft.png" alt-text="Die Schriftart der Links Start und Kontakt wurde geändert." lightbox="../media/beginners-css-internal2.msft.png":::
        Die Schriftart der **Links "Start"** und **"Kontakt"** wurde geändert.  
     :::image-end:::  
     

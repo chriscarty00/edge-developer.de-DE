@@ -39,7 +39,7 @@ Verwenden Sie **das Sources-Tool,** um Front-End-JavaScript-Code anzuzeigen, zu 
 
 Die folgende Abbildung zeigt den **Navigatorbereich,** der mit einem roten Feld **** in der linken oberen Ecke von DevTools hervorgehoben ist, den Editorbereich oben rechts und den **Debuggerbereich** unten hervorgehoben.  Ganz links ist der Hauptteil des Browserfensters, in dem die gerenderte Webseite abgeblendet angezeigt wird, da der Debugger an einem Haltepunkt angehalten wird:
 
-:::image type="complex" source="../media/sources-panes-narrow-layout.msft.png" alt-text="Die Bereiche des Tools "Quellen" im schmalen Layout" lightbox="../media/sources-panes-narrow-layout.msft.png":::
+:::image type="complex" source="../media/sources-panes-narrow-layout.msft.png" alt-text="Die Bereiche des Tools Quellen im schmalen Layout" lightbox="../media/sources-panes-narrow-layout.msft.png":::
    Die Bereiche des Tools "Quellen" im schmalen Layout  
 :::image-end:::  
 

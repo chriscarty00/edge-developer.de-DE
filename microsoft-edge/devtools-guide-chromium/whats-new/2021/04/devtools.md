@@ -255,7 +255,7 @@ Wählen Sie im **Tool** Netzwerk die neue Schaltfläche **** Weitere **Netzwerkb
     
 Navigieren Sie Chromium zu Issue [1162042][CR1162042].  
 
-:::image type="complex" source="../../media/2021/04/network-more-network-conditions-accepted-content-encodings.msft.png" alt-text="Neue Weitere Netzwerkbedingungen... -Schaltfläche öffnet das Tool "Netzwerkbedingungen", um die Inhaltscodierung zu konfigurieren." lightbox="../../media/2021/04/network-more-network-conditions-accepted-content-encodings.msft.png":::
+:::image type="complex" source="../../media/2021/04/network-more-network-conditions-accepted-content-encodings.msft.png" alt-text="Neue Weitere Netzwerkbedingungen... -Schaltfläche öffnet das Tool Netzwerkbedingungen, um die Inhaltscodierung zu konfigurieren." lightbox="../../media/2021/04/network-more-network-conditions-accepted-content-encodings.msft.png":::
    Neue **Schaltfläche Weitere Netzwerkbedingungen...** öffnet das **Tool "Netzwerkbedingungen"** zum Konfigurieren `Content-Encoding`  
 :::image-end:::  
 

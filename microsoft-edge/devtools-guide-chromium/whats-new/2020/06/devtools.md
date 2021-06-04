@@ -138,13 +138,13 @@ Chromium Problem [#897944][CR897944]
 
 In Microsoft Edge 83 und 84 werden QuickInfos für die Spalte Initiator, die die Ursache der Ressourcenanforderung zeigt, im [Netzwerkprotokoll][DevtoolsNetworkIndexLogActivity] angezeigt, das mit einer horizontalen Bildlaufleiste angezeigt wird.  Sie konnten nur die Aufrufliste anzeigen, die die Anforderung initiiert hat, indem Sie einen horizontalen Bildlauf in der QuickInfo durchführen.  
 
-:::image type="complex" source="../../media/2020/06/initiator-tooltip-84.msft.png" alt-text="Die QuickInfo "Initiator" in Microsoft Edge 84" lightbox="../../media/2020/06/initiator-tooltip-84.msft.png":::
+:::image type="complex" source="../../media/2020/06/initiator-tooltip-84.msft.png" alt-text="Die QuickInfo Initiator in Microsoft Edge 84" lightbox="../../media/2020/06/initiator-tooltip-84.msft.png":::
    Die QuickInfo "Initiator" in Microsoft Edge 84  
 :::image-end:::  
 
 Ab Microsoft Edge 85 können Sie nun die Aufrufliste des Initiators in der QuickInfo ohne horizontalen Bildlauf anzeigen.  
 
-:::image type="complex" source="../../media/2020/06/initiator-tooltip-85.msft.png" alt-text="Die QuickInfo "Initiator" in Microsoft Edge 85" lightbox="../../media/2020/06/initiator-tooltip-85.msft.png":::
+:::image type="complex" source="../../media/2020/06/initiator-tooltip-85.msft.png" alt-text="Die QuickInfo Initiator in Microsoft Edge 85" lightbox="../../media/2020/06/initiator-tooltip-85.msft.png":::
    Die QuickInfo "Initiator" in Microsoft Edge 85
 :::image-end:::  
 

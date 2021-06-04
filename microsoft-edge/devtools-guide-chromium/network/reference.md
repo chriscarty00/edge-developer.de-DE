@@ -472,7 +472,7 @@ Anforderungen, die weiter links liegen, wurden also früher gestartet als die An
 
 Um die verschiedenen Methoden zum Sortieren des Wasserfalls zu überprüfen, navigieren Sie zu [Sortieren nach Aktivitätsphase](#sort-by-activity-phase).  
 
-:::image type="complex" source="../media/network-network-requests-waterfall.msft.png" alt-text="Die Spalte "Wasserfall" im Bereich Anforderungen" lightbox="../media/network-network-requests-waterfall.msft.png":::
+:::image type="complex" source="../media/network-network-requests-waterfall.msft.png" alt-text="Die Spalte Wasserfall im Bereich Anforderungen" lightbox="../media/network-network-requests-waterfall.msft.png":::
    Die Spalte "Wasserfall" im **Bereich Anforderungen**  
 :::image-end:::  
 
