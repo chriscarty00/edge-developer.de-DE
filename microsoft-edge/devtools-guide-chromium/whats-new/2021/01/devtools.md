@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
 ms.localizationpriority: high
-ms.openlocfilehash: 6d1952832c84dc159222a8aa16aa0ffe11edff34
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: 9eb9f35427829dbe262b4c71d8ff5474b28eae77
+ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564925"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "11597157"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -117,7 +117,7 @@ Wenn Sie CSS für Ihr Flexbox-Layout bearbeiten, werden bei automatischen CSS-Ve
 :::row-end:::  
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/01/elements-flex-container-align.msft.png" alt-text="Das Menü AutoVervollständigung wird für CSS-Eigenschaften hervorgehoben, die mit ausrichten- beginnen" lightbox="../../media/2021/01/elements-flex-container-align.msft.png":::
+      :::image type="complex" source="../../media/2021/01/elements-flex-container-align.msft.png" alt-text="Das Menü "AutoVervollständigung" wird für CSS-Eigenschaften hervorgehoben, die mit ausrichten- beginnen" lightbox="../../media/2021/01/elements-flex-container-align.msft.png":::
          Das Menü "AutoVervollständigung" wird für CSS-Eigenschaften hervorgehoben, die beginnen mit `align-`  
       :::image-end:::  
    :::column-end:::
@@ -424,10 +424,10 @@ Wenn Sie unter Windows, Linux oder macOS arbeiten, sollten Sie die [Microsoft Ed
 
 <!-- links -->  
 
-[DevtoolsWhatsNew85]: ../../2020/06/devtools.md "Neuigkeiten in DevTools (Microsoft Edge 85) | Microsoft Docs"  
+[DevtoolsWhatsNew85]: ../../2020/06/devtools.md "Neuigkeiten in DevTools (Microsoft Edge 85) | Microsoft-Dokumentation"  
 
-[DevtoolsAccessibilityReferenceViewContrastRatioTextElementColorPicker]: ../../../accessibility/reference.md#view-the-contrast-ratio-of-a-text-element-in-the-color-picker "Anzeigen des Kontrastverhältnisses eines Textelements im Farbwähler – Barrierefreiheitsreferenz | Microsoft Docs"  
-[DevtoolsCssReferenceChangeCss]: ../../../css/reference.md#change-css "Ändern von CSS – CSS-Referenz | Microsoft Docs"  
+[DevtoolsAccessibilityReferenceViewContrastRatioTextElementColorPicker]: ../../../accessibility/color-picker.md "Testen des Kontrasts von Text und Farbe mithilfe der Farbauswahl | Microsoft-Dokumentation"  
+[DevtoolsCssReferenceChangeCss]: ../../../css/reference.md#change-css "Ändern von CSS – CSS-Referenz | Microsoft-Dokumentation"  
 [DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "Einstellungen – Anpassen von Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "Anpassen von Tastenkombinationen in der Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsDeviceModeDualScreenFoldablesTestFoldableDualScreenDevices]: ../../../device-mode/dual-screen-and-foldables.md#test-on-foldable-and-dual-screen-devices "Auf zusammenklappbaren und dualen Bildschirmgeräten testen – Emulieren Sie Geräte mit dualem Bildschirm und faltbaren Geräten in Microsoft Edge DevTools | Microsoft Docs"  

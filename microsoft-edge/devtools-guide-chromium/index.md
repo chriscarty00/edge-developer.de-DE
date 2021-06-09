@@ -7,155 +7,155 @@ ms.date: 04/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 3d91b0754f84579d770940503cf4a252e3926416
-ms.sourcegitcommit: fa8bedfc83fbd1c4ce7bda8c69586c4f24007beb
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+ms.openlocfilehash: 7f9a4288980dd938a43b229e1d5396adc7937c67
+ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "11481425"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "11597006"
 ---
 # <a name="microsoft-edge-chromium-developer-tools-overview"></a>Übersicht über Microsoft Edge (Chromium)-Entwicklertools  
 
-Wenn Sie Microsoft Edge installieren, erhalten Sie einen Browser. Außerdem erhalten Sie eine leistungsstarke Möglichkeit, Webprojekte zu überprüfen, zu debuggen und sogar zu erstellen.  Die im Browser ausgelieferten Entwicklertools basieren auf den Tools im Open-Source-Projekt Chromium, sodass Sie möglicherweise bereits mit den Tools vertraut sind.  Um Beschreibungen in diesem Artikel kürzer zu halten, werden die jetzt `Microsoft Edge Developer Tools` als `DevTools` bezeichnet.  
+Wenn Sie Microsoft Edge installieren, erhalten Sie einen Browser. Außerdem erhalten Sie eine leistungsstarke Möglichkeit, Webprojekte zu überprüfen, zu debuggen und sogar zu erstellen.  Die mit dem Browser ausgelieferten Entwicklertools basieren auf den Tools im Chromium Open Source-Projekt, sodass Sie möglicherweise bereits mit den Tools vertraut sind.  Um Beschreibungen in diesem Artikel kürzer zu halten, werden sie `Microsoft Edge Developer Tools` jetzt als `DevTools` .  
 
-Verwenden Sie DevTools, um die folgenden Entwicklungsaufgaben zu überprüfen und weitere Informationen zu erhalten.  
+Verwenden Sie DevTools, um die folgenden Entwicklungsaufgaben zu überprüfen und mehr darüber zu erfahren.  
 
 *   [Überprüfen und ändern Sie die aktuelle Webseite][DevtoolsGuideDomIndex] live im Browser.  
-*   [Emulieren Sie das Verhalten][DevtoolsGuideDeviceModeIndex] Ihres Produkts auf verschiedenen Geräten, und simulieren Sie eine mobile Umgebung mit unterschiedlichen Netzwerkbedingungen.  
-*   [Überprüfen, Optimieren und Ändern der Formatvorlagen][DevtoolsGuideInspectStylesEditFonts] von Elementen auf der Webseite mithilfe von Livetools mit einer visuellen Schnittstelle.  
-*   [Debuggen Sie Ihr JavaScript][DevtoolsGuideJavascriptIndex] mithilfe des Haltepunktdebuggers und mit der [Livekonsole.][DevtoolsGuideConsoleIndex]  
-*   Finden [Sie Barrierefreiheits-, Leistungs-, Kompatibilitäts-][DevtoolsGuideIssuesIndex] und Sicherheitsprobleme in Ihren Produkten, und erfahren Sie, wie Sie DevTools verwenden, um die einzelnen Probleme zu beheben.  
-*   [Überprüfen Sie den Netzwerkdatenverkehr,][DevtoolsGuideNetworkIndex] und überprüfen Sie den Speicherort der Probleme.  
+*   [Emulieren Sie, wie sich Ihr Produkt auf verschiedenen Geräten verhält,][DevtoolsGuideDeviceModeIndex] und simulieren Sie eine mobile Umgebung mit unterschiedlichen Netzwerkbedingungen.  
+*   [Überprüfen, optimieren und ändern Sie die Stile von Elementen][DevtoolsGuideInspectStylesEditFonts] auf der Webseite mithilfe von Livetools mit einer visuellen Benutzeroberfläche.  
+*   [Debuggen Sie Ihr JavaScript][DevtoolsGuideJavascriptIndex] mithilfe des Haltepunktdebuggings und mit der [Live-Konsole.][DevtoolsGuideConsoleIndex]  
+*   Finden Sie [Barrierefreiheits-, Leistungs-, Kompatibilitäts- und Sicherheitsprobleme][DevtoolsGuideIssuesIndex] in Ihren Produkten, und erfahren Sie, wie Sie DevTools verwenden, um die einzelnen Probleme zu beheben.  
+*   [Überprüfen Sie den Netzwerkdatenverkehr,][DevtoolsGuideNetworkIndex] und überprüfen Sie den Ort der Probleme.  
 *   [Überprüfen Sie, wo der Browser Inhalte][DevtoolsGuideStorageSessionstorage] in verschiedenen Formaten gespeichert hat.  
-*   [Bewerten Sie die Leistung][DevtoolsGuideEvaluatePerformanceIndex] Ihres Produkts, um [Speicherprobleme und][DevtoolsGuideMemoryProblemsIndex] [Renderingprobleme zu finden.][DevtoolsGuideRenderingToolsIndex]  
-*   [Verwenden Sie eine Entwicklungsumgebung,][DevtoolsGuideSourcesIndex] um Änderungen [in DevTools][DevtoolsGuideWorkspacesIndex] mit dem Dateisystem zu synchronisieren und [Dateien aus][DevtoolsGuideJavascriptOverrides] dem Web zu überschreiben.  
+*   [Bewerten Sie die Leistung][DevtoolsGuideEvaluatePerformanceIndex] Ihres Produkts, um [Speicherprobleme][DevtoolsGuideMemoryProblemsIndex] und [Renderingprobleme][DevtoolsGuideRenderingToolsIndex]zu finden.  
+*   [Verwenden Sie eine Entwicklungsumgebung,][DevtoolsGuideSourcesIndex] um [Änderungen in DevTools mit dem Dateisystem][DevtoolsGuideWorkspacesIndex] zu synchronisieren und Dateien aus dem Web außer Kraft zu [setzen.][DevtoolsGuideJavascriptOverrides]  
     
 <!-- Is the link meant to be local or session storage for "inspect where the browser stored content"? -->  
 
-Und vieles mehr.  Alles beginnt, wenn Sie DevTools öffnen und jedes Tool an Ihre Anforderungen anpassen.  
+Und noch viel mehr.  Alles beginnt, wenn Sie DevTools öffnen und jedes Tool an Ihre Anforderungen anpassen.  
 
 ## <a name="open-the-devtools"></a>Entwicklungstools öffnen  
 
-Verwenden Sie eine der folgenden Aktionen, um devTools zu öffnen und zu erkunden.  
+Verwenden Sie eine der folgenden Aktionen, um die DevTools zu öffnen und zu erkunden.  
 
-*   Zeigen Sie auf ein beliebiges Element auf der Webseite, öffnen Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste auf\), und wählen Sie **dann Überprüfen aus.**  Mit dieser Aktion wird das **Elementtool** geöffnet.  
-*   Wählen Sie `F12` aus.  
-*   Wählen `Ctrl` + `Shift` + `I` Sie unter Windows/Linux oder `Command` + `Option` + `I` unter macOS aus.  
+*   Zeigen Sie auf ein beliebiges Element auf der Webseite, öffnen Sie das Kontextmenü \(Rechtsklick\), und wählen Sie dann **"Überprüfen"** aus.  Mit dieser Aktion wird **das** Elementtool geöffnet.  
+*   Wählen Sie `F12` .  
+*   Wählen Sie `Ctrl` + `Shift` + `I` unter Windows/Linux oder `Command` + `Option` + `I` unter macOS aus.  
     
 :::row:::  
    :::column span="":::  
-      :::image type="complex" source="./media/devtools-intro-inspect.msft.png" alt-text="Wählen Sie Überprüfen im Kontextmenü eines beliebigen Elements aus." lightbox="./media/devtools-intro-inspect.msft.png":::  
-         Wählen **Sie Überprüfen** im Kontextmenü eines beliebigen Elements aus.  
+      :::image type="complex" source="./media/devtools-intro-inspect.msft.png" alt-text="Choose Inspect from the contextual menu on any element" lightbox="./media/devtools-intro-inspect.msft.png":::  
+         Choose **Inspect** from the contextual menu on any element  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::  
-      :::image type="complex" source="./media/devtools-intro-inspect-devtools-open.png" alt-text="Die DevTools werden geöffnet, wenn das ausgewählte Element hervorgehoben ist." lightbox="./media/devtools-intro-inspect-devtools-open.png":::  
-         Die DevTools werden geöffnet, wenn das ausgewählte Element hervorgehoben ist.  
+      :::image type="complex" source="./media/devtools-intro-inspect-devtools-open.png" alt-text="DevTools wird geöffnet, wobei das ausgewählte Element hervorgehoben ist" lightbox="./media/devtools-intro-inspect-devtools-open.png":::  
+         DevTools wird geöffnet, wobei das ausgewählte Element hervorgehoben ist  
       :::image-end:::  
    :::column-end:::  
 :::row-end:::  
 
-Es gibt zwei Möglichkeiten, mit devTools zu interagieren.
+Es gibt zwei Hauptmethoden für die Interaktion mit devTools.
 *   Verwenden der Maus  
-*   [Tastenkombinationen][DevtoolsGuideShortcutsIndex].  Tastenkombinationen bieten eine schnelle Möglichkeit zum Zugriff auf Funktionen und sind für die Barrierefreiheit erforderlich.  Das Microsoft Edge DevTools-Team arbeitet hart daran, alle Tools mithilfe der Tastatur und Hilfstechnologien wie Bildschirmleseprogramme verfügbar zu machen.  Weitere Informationen zum Öffnen der verschiedenen Features in den DevTools finden Sie unter [Microsoft Edge DevTools-Tastenkombinationen.][DevtoolsGuideOpenIndex]  
+*   [Tastenkombinationen][DevtoolsGuideShortcutsIndex].  Tastenkombinationen bieten eine schnelle Möglichkeit zum Zugriff auf Funktionen und sind für die Barrierefreiheit erforderlich.  Das Microsoft Edge DevTools-Team arbeitet hart daran, alle Tools mithilfe der Tastatur- und Hilfstechnologien wie Sprachausgabe zur Verfügung zu stellen.  For more information about how to open the different features in the DevTools, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevtoolsGuideOpenIndex].  
 
-## <a name="dock-the-devtools-in-your-browser"></a>Docken der DevTools in Ihrem Browser  
+## <a name="dock-the-devtools-in-your-browser"></a>Docken Sie die DevTools in Ihrem Browser an.  
 
-Wenn Sie devTools öffnen, dockt es links vom Browser an.  Führen Sie die folgenden Aktionen aus, um den angedockten Speicherort der DevTools zu ändern.  
+Wenn Sie die DevTools öffnen, wird sie links vom Browser angedockt.  Führen Sie die folgenden Aktionen aus, um den angedockten Speicherort der DevTools zu ändern.  
 
-1.  Klicken Sie **auf die Schaltfläche DevTools** \( \) anpassen und `...` steuern.  
-1.  Wählen Sie rechts neben **Platzierung der DevTools relativ** zur Seite \(**Dock-Seite**\) eine **Dock-Seite-Option** aus.  
+1.  Wählen Sie die Schaltfläche **"DevTools anpassen und steuern\(** `...` \) " aus.  
+1.  Wählen Sie rechts neben der **Platzierung der DevTools relativ zur Seite** \(**Dock-Seite**\) eine **Dock-Option** aus.  
     
-Weitere Informationen finden Sie unter Ändern der [Microsoft Edge DevTools-Platzierung (Abdocken, Dock nach unten, Dock nach links).][DevtoolsGuideCustomizePlacement]  
+Weitere Informationen erhalten Sie, wenn Sie zu ["Ändern Microsoft Edge DevTools"-Platzierung (Undock, Dock to Bottom, Dock to Left)][DevtoolsGuideCustomizePlacement]navigieren.  
 
-:::image type="complex" source="./media/devtools-intro-docking-menu.msft.png" alt-text="Screenshot des dockseitigen Menüs in DevTools" lightbox="./media/devtools-intro-docking-menu.msft.png":::  
-   Screenshot des dockseitigen Menüs in DevTools  
+:::image type="complex" source="./media/devtools-intro-docking-menu.msft.png" alt-text="Screenshot des Seitenmenüs "Dock" in DevTools" lightbox="./media/devtools-intro-docking-menu.msft.png":::  
+   Screenshot des Seitenmenüs "Dock" in DevTools  
 :::image-end:::  
 
-Wählen **Sie auf**Dockseite eine der folgenden Layoutoptionen aus.  
+Wählen Sie **auf der Dock-Seite**eine der folgenden Layoutoptionen aus.  
 
-*   **Abdocken in separates Fenster**.   Hilft Ihnen bei der Arbeit mit mehreren Monitoren oder bei der Arbeit an einer Vollbild-App.  
-*   **Dock nach links oder** **Dock nach rechts**.  Hilft Ihnen, die DevTools seite an Seite mit Ihrem Webprodukt zu halten, und ist hervorragend, wenn Sie mobile Geräte emulieren.  Die **Optionen Dock nach links und** Dock nach **rechts** funktionieren am besten mit hochauflösenden Displays.  Weitere Informationen zu Emulationsgeräten finden Sie unter [Emulieren mobiler Geräte in Microsoft Edge DevTools][DevtoolsGuideDeviceModeIndex].  
-*   **Dock nach unten**.  Hilft Ihnen, wenn Nicht genügend horizontaler Anzeigebereich verfügbar ist oder Sie langen Text im DOM oder in der Konsole **debuggen möchten.**  
+*   **In separates Fenster abdocken.**   Hilft Ihnen bei der Arbeit mit mehreren Monitoren oder wenn Sie an einer Vollbild-App arbeiten müssen.  
+*   **Dock to left** or **Dock to right**.  Hilft Ihnen, die DevTools nebeneinander mit Ihrem Webprodukt zu halten, und ist hervorragend geeignet, wenn Sie mobile Geräte emulieren.  Die Optionen **"Dock to left"** und **"Dock to right"** funktionieren am besten mit Displays mit hoher Auflösung.  For more information about emulation devices, navigate to [Emulate mobile devices in Microsoft Edge DevTools][DevtoolsGuideDeviceModeIndex].  
+*   **Dock to bottom**.  Hilft Ihnen, wenn Sie nicht über genügend horizontalen Anzeigebereich verfügen oder langen Text im DOM oder in der **Konsole**debuggen möchten.  
     
 :::row:::  
    :::column span="":::  
-      :::image type="complex" source="./media/devtools-intro-docking-left.msft.png" alt-text="Wählen Sie Dock nach links aus." lightbox="./media/devtools-intro-docking-left.msft.png":::  
-         Wählen **Sie Dock nach links aus.**  
+      :::image type="complex" source="./media/devtools-intro-docking-left.msft.png" alt-text="Klicken Sie auf "Andocken nach links"" lightbox="./media/devtools-intro-docking-left.msft.png":::  
+         Klicken Sie **auf "Andocken nach links"**  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::  
-      :::image type="complex" source="media/devtools-intro-docking-bottom.msft.png" alt-text="Wählen Sie Dock to Bottom aus." lightbox="media/devtools-intro-docking-bottom.msft.png":::  
-         Wählen **Sie Dock to Bottom aus.**  
+      :::image type="complex" source="media/devtools-intro-docking-bottom.msft.png" alt-text="Wählen Sie "Dock to Bottom" aus." lightbox="media/devtools-intro-docking-bottom.msft.png":::  
+         Wählen Sie **"Dock to Bottom" aus.**  
       :::image-end:::  
    :::column-end:::  
 :::row-end:::  
 :::row:::  
    :::column span="":::  
-      :::image type="complex" source="media/devtools-intro-docking-right.msft.png" alt-text="Wählen Sie Dock nach rechts aus." lightbox="media/devtools-intro-docking-right.msft.png":::  
-         Wählen **Sie Dock nach rechts aus.**  
+      :::image type="complex" source="media/devtools-intro-docking-right.msft.png" alt-text="Wählen Sie "Dock nach rechts" aus." lightbox="media/devtools-intro-docking-right.msft.png":::  
+         Wählen Sie **"Dock nach rechts" aus.**  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::  
-      :::image type="complex" source="media/devtools-intro-docking-own-window.msft.png" alt-text="Wählen Sie Abdocken in separates Fenster aus." lightbox="media/devtools-intro-docking-own-window.msft.png":::  
-         Wählen **Sie Abdocken in separates Fenster aus.**  
+      :::image type="complex" source="media/devtools-intro-docking-own-window.msft.png" alt-text="Wählen Sie "Abdocken" in einem separaten Fenster aus" lightbox="media/devtools-intro-docking-own-window.msft.png":::  
+         Wählen Sie **"Abdocken" in einem separaten Fenster** aus  
       :::image-end:::  
    :::column-end:::  
 :::row-end:::  
 
 ## <a name="learn-about-the-core-tools"></a>Erfahren Sie mehr über die wichtigsten Tools  
 
-DevTools bieten Ihnen eine verblüffende Leistung, um das derzeit im Browser angezeigte Webprodukt zu überprüfen, zu debuggen und zu ändern.  Die meisten Tools zeigen die Änderungen live an.  Liveupdates machen die Tools unglaublich nützlich, um die Darstellung und Navigation oder Funktionalität eines Webprojekts zu verfeinern, ohne es aktualisieren oder erstellen zu müssen.  Mit den DevTools können Sie auch webbasierte Drittanbieterprodukte auf Ihrem Computer ändern.  
+DevTools bieten Ihnen eine beeindruckende Menge an Power, um das derzeit im Browser angezeigte Webprodukt zu überprüfen, zu debuggen und zu ändern.  Die meisten Tools zeigen die Änderungen live an.  Liveupdates machen die Tools unglaublich nützlich, um das Aussehen und die Navigation oder Funktionalität eines Webprojekts zu verfeinern, ohne es aktualisieren oder erstellen zu müssen.  Mit devtools können Sie auch webbasierte Drittanbieterprodukte auf Ihrem Computer ändern.  
 
-DevTools ist über einen Zeitraum von mehreren Jahren gewachsen.  Sie können davon ausgehen, dass DevTools schwierig zu erlernen sind, wenn Sie eines der Tools zum ersten Mal öffnen.  Im folgenden Text werden schnell die verschiedenen Teile präsentiert.  Die Hauptsymbolleiste bietet ihnen einige Abschnitte, und die Abschnitte werden von links nach rechts geordnet.  
+DevTools wurde über einen Zeitraum von mehreren Jahren entwickelt.  Sie können davon ausgehen, dass DevTools schwierig zu erlernen ist, wenn Sie ein Tool zum ersten Mal öffnen.  Im folgenden Text werden die verschiedenen Teile schnell vorgestellt.  Die Hauptsymbolleiste bietet Ihnen einige Abschnitte, und die Abschnitte werden von links nach rechts sortiert.  
 
-:::image type="complex" source="./media/devtools-intro-menu-bar.msft.png" alt-text="Screenshot der Menüleiste der DevTools mit Bezeichnungen, die die verschiedenen Abschnitte erläutern.  In order: Inspect Tool, Device Emulation tool, Tools tab group, JavaScript errors, Issues, Settings, Feedback, Customize, and Close." lightbox="./media/devtools-intro-menu-bar.msft.png":::  
-   Screenshot der Menüleiste der DevTools mit Bezeichnungen, die die verschiedenen Abschnitte erläutern.  In order: Inspect Tool, Device Emulation tool, Tools tab group, JavaScript Errors, Issues, Settings, Feedback, Customize, and Close.  
+:::image type="complex" source="./media/devtools-intro-menu-bar.msft.png" alt-text="Screenshot der Menüleiste der DevTools mit Bezeichnungen, die die verschiedenen Abschnitte erläutern.  In order: Inspect tool, Device Emulation tool, Tools tab group, JavaScript errors, Issues, Einstellungen, Feedback, Customize, and Close." lightbox="./media/devtools-intro-menu-bar.msft.png":::  
+   Screenshot der Menüleiste der DevTools mit Bezeichnungen, die die verschiedenen Abschnitte erläutern.  In order: Inspect tool, Device Emulation tool, Tools tab group, JavaScript Errors, Issues, Einstellungen, Feedback, Customize, and Close.  
 :::image-end:::  
 
-*   Mit dem Inspect-Tool können Sie ein Element auf der aktuellen Webseite auswählen.  Nachdem Sie es aktiviert haben, können Sie die Maus über verschiedene Teile der Webseite bewegen, um detaillierte Informationen zum Element und eine Farbüberlagerung zu erhalten, um Dimensionen, Abstand und Rand anzuzeigen.  
+*   Mit dem Tool Inspect können Sie ein Element auf der aktuellen Webseite auswählen.  Nach der Aktivierung können Sie den Mauszeiger über verschiedene Teile der Webseite bewegen, um detaillierte Informationen zum Element und eine Farbüberlagerung zum Anzeigen von Dimensionen, Abstand und Rand zu erhalten.  
     
-    :::image type="complex" source="./media/devtools-intro-inspect-tool.msft.png" alt-text="Screenshot des Überprüfungstools mit der ersten Ausgewählten Überschrift dieses Artikels" lightbox="./media/devtools-intro-inspect-tool.msft.png":::  
-       Screenshot des Überprüfungstools mit der ersten Ausgewählten Überschrift dieses Artikels  
+    :::image type="complex" source="./media/devtools-intro-inspect-tool.msft.png" alt-text="Das Inspect-Tool, für das die erste Überschrift dieses Artikels ausgewählt wurde" lightbox="./media/devtools-intro-inspect-tool.msft.png":::  
+       Das Inspect-Tool, für das die erste Überschrift dieses Artikels ausgewählt wurde  
     :::image-end:::  
     
-*   Das [Tool Geräteemulation][DevtoolsGuideDeviceModeIndex] zeigt das aktuelle Webprodukt in einem emulierten Gerätemodus an.  Mit **dem Tool Geräteemulation** können Sie ausführen und testen, wie Ihr Produkt reagiert, wenn Sie die Größe des Browsers ändern.  Außerdem erhalten Sie eine Schätzung des Layouts und Verhaltens auf einem mobilen Gerät.  
+*   Das [Geräteemulationstool][DevtoolsGuideDeviceModeIndex] zeigt das aktuelle Webprodukt in einem emulierten Gerätemodus an.  Mit dem **Tool "Geräteemulation"** können Sie ausführen und testen, wie Ihr Produkt reagiert, wenn Sie die Größe des Browsers ändern.  Außerdem erhalten Sie eine Einschätzung des Layouts und Verhaltens auf einem mobilen Gerät.  
     
-    :::image type="complex" source="./media/devtools-intro-device-emulation.msft.png" alt-text="Screenshot der DevTools-Anzeige dieses Artikels in einem emulierten Mobiltelefon" lightbox="./media/devtools-intro-device-emulation.msft.png":::  
-       Screenshot der DevTools-Anzeige dieses Artikels in einem emulierten Mobiltelefon  
+    :::image type="complex" source="./media/devtools-intro-device-emulation.msft.png" alt-text="Screenshot der DevTools-Anzeige dieses Artikels auf einem emulierten Mobiltelefon" lightbox="./media/devtools-intro-device-emulation.msft.png":::  
+       Screenshot der DevTools-Anzeige dieses Artikels auf einem emulierten Mobiltelefon  
     :::image-end:::  
     
-*   Die Registerkartengruppe Extras ist eine Gruppe von Registerkarten, die unterschiedliche Tools darstellen, die in verschiedenen Szenarien verwendet werden.  Sie können jedes der Tools anpassen, und jedes Tool kann sich je nach Kontext ändern.  Um ein Dropdownmenü mit weiteren Tools zu öffnen, wählen Sie die Schaltfläche Weitere **Registerkarten** \( `>>` \) aus.  Jedes der Tools wird später im folgenden Abschnitt eingeführt.  
-*   Neben der Registerkartengruppe Extras befinden sich optionale Fehler- und Problemverknüpfungen.  Die Verknüpfungen werden angezeigt, wenn JavaScript-Fehler oder -Probleme auf der aktuellen Webseite auftreten.  Die Schaltfläche Konsole öffnen zum Anzeigen **von # Fehlern, #** Warnungen \(**JavaScript-Fehler**\) zeigt einen roten Kreis an, gefolgt von der Anzahl der `X` JavaScript-Fehler.  Um die Konsole [zu öffnen][DevtoolsGuideConsoleIndex] und mehr über den Fehler zu erfahren, wählen Sie die Schaltfläche **JavaScript-Fehler** aus.  Die **Schaltfläche Probleme öffnen zum Anzeigen # Probleme** \(**Probleme**\) ist ein blaues Meldungssymbol gefolgt von der Anzahl der Probleme.  Wählen Sie zum Öffnen des [Tools][DevtoolsGuideIssuesIndex] Probleme die **Schaltfläche Probleme** aus.  
-*   Auf **der** Schaltfläche Einstellungen wird ein Zahnradsymbol angezeigt.  Klicken Sie zum Öffnen der Webseite **DevTools-Einstellungen** auf die **Schaltfläche** Einstellungen.  Auf **der** Webseite Einstellungen wird ein Menü angezeigt, um **Einstellungen zu ändern,** **Experimente**und vieles mehr zu ändern.  
-*   Die **Schaltfläche Feedback senden** zeigt den Torso mit einer Chatblase daneben an.  Um das Dialogfeld Feedback **senden zu** öffnen, wählen **Sie** die Schaltfläche Feedback senden aus.  Im **Dialogfeld Feedback senden** können Sie Informationen eingeben, um zu beschreiben, was passiert ist, und enthält automatisch einen Screenshot.  Verwenden Sie es, um eine Verbindung mit dem DevTools-Team herzustellen, um Probleme, Probleme oder Vorschläge zu melden.  
-*   Die **Schaltfläche Devtools** \( \) anpassen und steuern `...` öffnet ein Dropdownmenü.  Sie können definieren, wo Sie devTools andocken, suchen, verschiedene Tools öffnen und vieles mehr.  
+*   Die Registerkartengruppe "Extras" ist eine Gruppe von Registerkarten, die unterschiedliche Tools darstellen, die in verschiedenen Szenarien verwendet werden.  Sie können jedes der Tools anpassen, und jedes Tool kann sich je nach Kontext ändern.  Um ein Dropdownmenü mit weiteren Tools zu öffnen, wählen Sie die Schaltfläche **"Weitere Registerkarten** \( `>>` \) " aus.  Jedes der Tools wird später im folgenden Abschnitt eingeführt.  
+*   Neben der Registerkartengruppe "Extras" befinden sich optionale Fehler, und Verknüpfungen werden ausgegeben.  Die Verknüpfungen werden angezeigt, wenn JavaScript-Fehler oder -Probleme auf der aktuellen Webseite auftreten.  Die Schaltfläche **"Konsole öffnen", um #Fehler, # Warnungen** \(**JavaScript-Fehler**\) anzuzeigen, zeigt einen roten Kreis mit `X` der Anzahl der JavaScript-Fehler an.  Um die [Konsole][DevtoolsGuideConsoleIndex] zu öffnen und mehr über den Fehler zu erfahren, wählen Sie die Schaltfläche **"JavaScript-Fehler"** aus.  The **Open Issues to view # issues** \(**Issues**\) button is a blue message icon followed by the number of issues.  Um das Tool ["Probleme"][DevtoolsGuideIssuesIndex] zu öffnen, wählen Sie die Schaltfläche **"Probleme"** aus.  
+*   Die **Einstellungen-Taste** zeigt ein Zahnradsymbol an.  Um DevTools **Einstellungen** Webseite zu öffnen, wählen Sie die **Schaltfläche Einstellungen** aus.  Auf **der Einstellungen** Webseite wird ein Menü zum Ändern der **Einstellungen,** zum Aktivieren von **Experimenten**und vieles mehr angezeigt.  
+*   Die Schaltfläche **"Feedback senden"** zeigt den Torso mit einer Chatblase daneben an.  Um das Dialogfeld **"Feedback senden"** zu öffnen, wählen Sie die Schaltfläche **"Feedback senden"** aus.  Im Dialogfeld **"Feedback senden"** können Sie Informationen eingeben, um zu beschreiben, was passiert ist, und automatisch einen Screenshot hinzufügen.  Verwenden Sie es, um eine Verbindung mit dem DevTools-Team herzustellen, um Probleme, Probleme zu melden oder Ideen vorzuschlagen.  
+*   Mit der Schaltfläche **"Devtools \(** \) anpassen und `...` steuern" wird ein Dropdownmenü geöffnet.  Sie können definieren, wo die DevTools angedockt, gesucht, verschiedene Tools geöffnet werden sollen und vieles mehr.  
     
-In der Registerkartengruppe Extras können Sie die verschiedenen Tools öffnen, die in devTools verfügbar sind.  In der folgenden Liste werden die am häufigsten verwendeten Tools in devTools beschrieben.  
+In der Registerkartengruppe "Extras" können Sie die verschiedenen Tools öffnen, die in den DevTools verfügbar sind.  In der folgenden Liste werden die am häufigsten verwendeten Tools in devTools beschrieben.  
 
-*   **Willkommen**.  Enthält Informationen zu den neuen Features von DevTools, zur Kontaktaufnahme mit dem Team und bietet Informationen zu bestimmten Features.  
-*   **Elemente**.  Ermöglicht das Bearbeiten oder Überprüfen von HTML und CSS.  Sie können sowohl im Tool bearbeiten als auch die Änderungen live im Browser anzeigen.  
-*   [Konsole][DevtoolsGuideConsoleIndex].  Ermöglicht das Anzeigen und Filtern von Protokollmeldungen.  Protokollmeldungen sind automatisierte Protokolle des Browsers wie Netzwerkanforderungen und vom Entwickler generierte Protokolle.  Sie können JavaScript auch direkt in der **Konsole** im Kontext des aktuellen Fensters oder Frames ausführen.  
-*   [Quellen][DevtoolsGuideSourcesIndex].  Ein Codeeditor und ein JavaScript-Debugger.  Sie können Projekte bearbeiten, Codeausschnitte verwalten und Ihr aktuelles Projekt debuggen.  
-*   [Netzwerk][DevtoolsGuideNetworkIndex].  Ermöglicht ihnen das Überwachen und Überprüfen von Anforderungen oder Antworten aus dem Netzwerk- und Browsercache.  Sie können Anforderungen und Antworten nach Ihren Anforderungen filtern und unterschiedliche Netzwerkbedingungen simulieren.  Weitere spezielle Tools sind ebenfalls verfügbar, z. B. **Performance**, **Memory**, **Application**, **Security**und **Audits**.  
+*   **Willkommen**.  Enthält Informationen zu den neuen Features von DevTools, zum Kontaktieren des Teams und zu bestimmten Features.  
+*   **Elemente**.  Ermöglicht es Ihnen, HTML und CSS zu bearbeiten oder zu überprüfen.  Sie können sowohl im Tool bearbeiten als auch die Änderungen live im Browser anzeigen.  
+*   [Konsole][DevtoolsGuideConsoleIndex].  Ermöglicht ihnen das Anzeigen und Filtern von Protokollmeldungen.  Protokollmeldungen sind automatisierte Protokolle des Browsers, z. B. Netzwerkanforderungen und vom Entwickler generierte Protokolle.  Sie können JavaScript auch direkt in der **Konsole** im Kontext des aktuellen Fensters oder Frames ausführen.  
+*   [Quellen][DevtoolsGuideSourcesIndex].  Ein Code-Editor und JavaScript-Debugger.  Sie können Projekte bearbeiten, Codeausschnitte verwalten und Ihr aktuelles Projekt debuggen.  
+*   [Netzwerk][DevtoolsGuideNetworkIndex].  Ermöglicht es Ihnen, Anforderungen oder Antworten aus dem Netzwerk- und Browsercache zu überwachen und zu überprüfen.  Sie können Anforderungen und Antworten nach Ihren Anforderungen filtern und unterschiedliche Netzwerkbedingungen simulieren.  Weitere spezielle Tools wie **Leistung,** **Arbeitsspeicher,** **Anwendung,** **Sicherheit**und **Überwachung**sind ebenfalls verfügbar.  
 
-## <a name="power-tip-use-the-command-menu"></a>Power tip: Verwenden des Befehlsmenüs  
+## <a name="power-tip-use-the-command-menu"></a>Power Tip: Verwenden des Befehlsmenüs  
 
-Die DevTools bieten zahlreiche Features und Funktionen, die Sie mit Ihrem Webprodukt verwenden können.  Der Zugriff auf die verschiedenen Teile der DevTools ist auf unterschiedliche Weise, aber die schnellste Möglichkeit, auf die benötigten Features zu zugreifen, ist die Verwendung des Befehlsmenüs.  Weitere Informationen finden Sie unter [Ausführen von Befehlen mit dem Menü Microsoft Edge DevTools Command][DevtoolsGuideCommandMenuIndex].  Führen Sie eine der folgenden Aktionen aus, um das Befehlsmenü zu öffnen.  
+DevTools bietet viele Features und Funktionen, die Sie mit Ihrem Webprodukt verwenden können.  Greifen Sie auf viele verschiedene Arten auf die verschiedenen Teile der DevTools zu, aber die schnellste Möglichkeit, auf die benötigten Features zuzugreifen, ist die Verwendung des Befehlsmenüs.  Navigieren Sie für weitere Informationen [mit dem Befehlsmenü Microsoft Edge DevTools zu Befehlen ausführen.][DevtoolsGuideCommandMenuIndex]  Führen Sie eine der folgenden Aktionen aus, um das Befehlsmenü zu öffnen.  
 
-*   Wählen `Control` + `Shift` + `P` Sie \(Windows, Linux\) oder `Command` + `Shift` + `P` \(macOS\) aus.  
-*   Wählen **Sie Anpassen und Steuern devTools** \( `...` \), und wählen Sie dann Ausführen Befehl **aus.**  
+*   Wählen Sie `Control` + `Shift` + `P` \(Windows, Linux\) oder `Command` + `Shift` + `P` \(macOS\) aus.  
+*   Wählen Sie **"DevTools anpassen und steuern"** \( `...` \), und klicken Sie dann auf **"Befehl ausführen".**  
 
 :::image type="complex" source="./media/devtools-intro-command-menu.msft.png" alt-text="Screenshot des Befehlsmenüs in DevTools" lightbox="./media/devtools-intro-command-menu.msft.png":::  
 Screenshot des Befehlsmenüs in DevTools  
 :::image-end:::  
 
-Im Befehlsmenü können Sie Befehle zum Anzeigen, Ausblenden oder Ausführen von Features in devTools eingeben.  Wenn das Befehlsmenü geöffnet ist, geben Sie das Wort **Änderungen ein,** und wählen Sie dann **Drawer Show Changes aus.**  Das **Tool** Änderungen wird geöffnet, das beim Bearbeiten von CSS hilfreich ist, aber in der DevTools-Benutzeroberfläche schwer zu finden ist.  
+Im Befehlsmenü können Sie Befehle eingeben, um Features in devTools anzuzeigen, auszublenden oder auszuführen.  Wenn das Befehlsmenü geöffnet ist, geben Sie das Wort **"Änderungen" ein,** und wählen Sie dann **"Schublade Änderungen anzeigen"** aus.  Das **Tool "Änderungen"** wird geöffnet, was nützlich ist, wenn Sie CSS bearbeiten, aber in der DevTools-Benutzeroberfläche schwer zu finden ist.  
 
 :::row:::  
    :::column span="":::  
-      :::image type="complex" source="./media/devtools-intro-command-menu-show-changes.msft.png" alt-text="Im Befehlsmenü werden die Optionen angezeigt, nachdem Sie Änderungen eingeben." lightbox="./media/devtools-intro-command-menu-show-changes.msft.png":::  
+      :::image type="complex" source="./media/devtools-intro-command-menu-show-changes.msft.png" alt-text="Im Befehlsmenü werden die Optionen angezeigt, nachdem Sie Änderungen eingegeben haben." lightbox="./media/devtools-intro-command-menu-show-changes.msft.png":::  
          Im Befehlsmenü werden die Optionen nach der Eingabe angezeigt. `changes`  
       :::image-end:::  
    :::column-end:::  
@@ -168,12 +168,12 @@ Im Befehlsmenü können Sie Befehle zum Anzeigen, Ausblenden oder Ausführen von
 
 ## <a name="customize-the-devtools"></a>Anpassen der DevTools  
 
-DevTools können an Ihre Anforderungen oder die Art und Weise angepasst werden, wie Sie arbeiten.  Führen Sie zum Ändern der Einstellungen eine der folgenden Aktionen aus.  
+DevTools können an Ihre Anforderungen oder ihre Arbeitsweise angepasst werden.  Führen Sie zum Ändern der Einstellungen eine der folgenden Aktionen aus.  
 
-*   Wählen **Sie Einstellungen** \(Das Zahnradsymbol oben rechts\)  
+*   Wählen Sie **Einstellungen** \(das Zahnradsymbol oben rechts\) aus.  
 *   Auswählen `F1` oder `?` .  
     
-Im Abschnitt **Einstellungen** können Sie mehrere Teile der DevTools ändern.  Sie können z. **** B. die Einstellung Browsersprache übereinstimmen verwenden, um dieselbe Sprache in den DevTools zu verwenden, die in Ihrem Browser verwendet wird.  Verwenden Sie in einem anderen Beispiel die **Einstellung Design,** um das Design der DevTools zu ändern.  
+Im Abschnitt **"Einstellungen"** können Sie mehrere Teile von DevTools ändern.  Sie können z. B. die Einstellung **"Mit der Browsersprache abgleichen"** verwenden, um dieselbe Sprache in den DevTools zu verwenden, die in Ihrem Browser verwendet wird.  Verwenden Sie beispielsweise die Einstellung **"Design",** um das Design der DevTools zu ändern.  
 
 :::image type="complex" source="media/devtools-intro-all-settings.msft.png" alt-text="Screenshot aller Einstellungen in DevTools" lightbox="./media/devtools-intro-all-settings.msft.png":::  
    Screenshot aller Einstellungen in DevTools  
@@ -182,21 +182,21 @@ Im Abschnitt **Einstellungen** können Sie mehrere Teile der DevTools ändern.  
 Sie können auch die Einstellungen erweiterter Features ändern, einschließlich der folgenden Features.    
 
 *   [Arbeitsbereiche][DevtoolsGuideWorkspacesIndex].  
-*   Filterbibliothekscode mit der **Ignorieren-Liste**.  
-*   Definieren Sie **die Geräte,** die Sie in den Gerätesimulations- und Testmodus verwenden möchten.  Weitere Informationen finden Sie unter [Emulieren mobiler Geräte in Microsoft Edge DevTools][DevtoolsGuideDeviceModeIndex].  
+*   Filtern des Bibliothekscodes mit der **Liste ignorieren**.  
+*   Definieren Sie die **Geräte,** die Sie in den Gerätesimulations- und Testmodus einbeziehen möchten.  Navigieren Sie für weitere Informationen zu [Emulieren mobiler Geräte in Microsoft Edge DevTools][DevtoolsGuideDeviceModeIndex].  
 *   Wählen Sie ein **Netzwerkeinschränkungsprofil** aus.  
-*   Definieren simulierter **Speicherorte**.  
-*   Anpassen von Tastenkombinationen  Führen Sie die folgenden Aktionen aus, um die gleichen Verknüpfungen in den DevTools wie Visual Studio Code zu verwenden.  
-    1.  Wählen **Sie Verknüpfungen von voreingestellten suchen aus.**  
-    1.  Wählen **Sie Visual Studio Code aus.**  
+*   Definieren simulierter **Speicherorte.**  
+*   Anpassen von Tastenkombinationen.  Führen Sie die folgenden Aktionen aus, um die gleichen Verknüpfungen in den DevTools wie Visual Studio Code zu verwenden.  
+    1.  Wählen Sie **Tastenkombinationen aus voreingestellten Tastenkombinationen aus.**  
+    1.  Wählen Sie **Visual Studio Code**aus.  
         
-    :::image type="complex" source="./media/devtools-intro-match-keys.msft.png" alt-text="Screenshot aller Tastenkombinationen und des Menüs, die mit den Tastenkombinationen in Visual Studio übereinstimmen" lightbox="./media/devtools-intro-match-keys.msft.png":::  
-       Screenshot aller Tastenkombinationen und des Menüs, die mit den Tastenkombinationen in Visual Studio übereinstimmen  
+    :::image type="complex" source="./media/devtools-intro-match-keys.msft.png" alt-text="Screenshot aller Tastenkombinationen und des Menüs, die jeweils mit den Tastenkombinationen in Visual Studio Code" lightbox="./media/devtools-intro-match-keys.msft.png":::  
+       Screenshot aller Tastenkombinationen und des Menüs, die jeweils mit den Tastenkombinationen in Visual Studio Code  
     :::image-end:::  
     
 ## <a name="try-experimental-features"></a>Testen experimenteller Features  
 
-Das DevTools-Team stellt neue Features als Experimente in den DevTools zur Verfügung.  Um die vollständige Liste der Experimente zu erhalten, navigieren Sie zu den **DevTools-Einstellungen,** und wählen Sie dann **Experimente aus.**  Sie können die einzelnen Experimente aktivieren oder deaktivieren.  Helfen Sie bei der Entscheidung, welches der Experimente für Sie wertvoll ist.  Weitere Informationen zu den Experimenten finden Sie unter [Experimental-Features][DevtoolsGuideExperimentalFeaturesIndex].  
+Das DevTools-Team bietet neue Features als Experimente in den DevTools.  Um die vollständige Liste der Experimente zu erhalten, navigieren Sie zum **DevTools-Einstellungen,** und wählen Sie dann **Experimente**aus.  Sie können jedes Experiment ein- oder ausschalten.  Helfen Sie bei der Entscheidung, welches der Experimente für Sie von Wert ist.  For more information on the experiments, navigate to [Experimental features][DevtoolsGuideExperimentalFeaturesIndex].  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
 
@@ -204,34 +204,34 @@ Das DevTools-Team stellt neue Features als Experimente in den DevTools zur Verf�
 
 Wenn Sie eine Vorschau der [neusten Features für die Entwicklungstools anzeigen möchten][DevtoolsGuideWhatsNew202102Devtools], laden Sie [Microsoft Edge Canary][MicrosoftedgeinsiderDownload] mit nächtlichen Builds herunter.  
 
-## <a name="see-also"></a>Weitere Informationen  
+## <a name="see-also"></a>Weitere Informationen:  
 
 *   [DevtoolsGuide für Anfänger: Erste Schritte mit HTML und dem DOM][DevtoolsGuideBeginnersHtml]  
 *   [Microsoft Edge (Chromium) DevTools Protocol][DevtoolsProtocolIndex]  
     
 <!-- links -->  
 
-[DevtoolsGuideBeginnersHtml]: ./beginners/html.md "DevTools für Anfänger: Erste Schritte mit HTML und der DOM-| Microsoft Docs"  
-[DevtoolsGuideCommandMenuIndex]: ./command-menu/index.md "Ausführen von Befehlen mit dem Microsoft Edge DevTools Command-Menü | Microsoft Docs"  
-[DevtoolsGuideConsoleIndex]: ./console/index.md "Konsolenübersicht | Microsoft Docs"  
-[DevtoolsGuideCustomizePlacement]: ./customize/placement.md "Ändern der Microsoft Edge DevTools-Platzierung (Abdocken, Dock nach unten, Dock nach links) | Microsoft Docs"  
+[DevtoolsGuideBeginnersHtml]: ./beginners/html.md "DevTools für Anfänger: Erste Schritte mit HTML und dem DOM-| Microsoft-Dokumente"  
+[DevtoolsGuideCommandMenuIndex]: ./command-menu/index.md "Ausführen von Befehlen mit dem Microsoft Edge DevTools-Befehlsmenü | Microsoft-Dokumente"  
+[DevtoolsGuideConsoleIndex]: ./console/index.md "Konsolenübersicht | Microsoft-Dokumente"  
+[DevtoolsGuideCustomizePlacement]: ./customize/placement.md "Ändern Microsoft Edge DevTools-Platzierung (Undock, Dock to Bottom, Dock to Left) | Microsoft-Dokumente"  
 [DevtoolsGuideDeviceModeIndex]: ./device-mode/index.md "Emulieren von mobilen Geräten in Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsGuideDomIndex]: ./dom/index.md "Erste Schritte mit dem Anzeigen und Ändern der DOM-| Microsoft Docs"  
-[DevtoolsGuideEvaluatePerformanceIndex]: ./evaluate-performance/index.md "Erste Schritte mit der Analyse der Laufzeitleistung | Microsoft Docs"  
-[DevtoolsGuideExperimentalFeaturesIndex]: ./experimental-features/index.md "Experimentelle Features | Microsoft Docs"  
-[DevtoolsGuideMemoryProblemsIndex]: ./memory-problems/index.md "Beheben von Speicherproblemen | Microsoft Docs"  
-[DevtoolsGuideInspectStylesEditFonts]: ./inspect-styles/edit-fonts.md "Bearbeiten von CSS-Schriftartenstilen und -einstellungen im Formatvorlagenbereich | Microsoft Docs"  
+[DevtoolsGuideDomIndex]: ./dom/index.md "Erste Schritte mit dem Anzeigen und Ändern des DOM-| Microsoft-Dokumente"  
+[DevtoolsGuideEvaluatePerformanceIndex]: ./evaluate-performance/index.md "Erste Schritte mit der Analyse der Laufzeitleistung | Microsoft-Dokumente"  
+[DevtoolsGuideExperimentalFeaturesIndex]: ./experimental-features/index.md "Experimentelle Features | Microsoft-Dokumente"  
+[DevtoolsGuideMemoryProblemsIndex]: ./memory-problems/index.md "Beheben von Speicherproblemen | Microsoft-Dokumente"  
+[DevtoolsGuideInspectStylesEditFonts]: ./inspect-styles/edit-fonts.md "Bearbeiten von CSS-Schriftartstilen und -einstellungen im Bereich &quot;Formatvorlagen&quot; | Microsoft-Dokumente"  
 [DevtoolsGuideIssuesIndex]: ./issues/index.md "Erkennen und Beheben von Problemen mit dem Microsoft Edge DevTools-Tool „Probleme“ | Microsoft Docs"  
-[DevtoolsGuideJavascriptIndex]: ./javascript/index.md "Erste Schritte mit dem Debuggen von JavaScript in Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsGuideJavascriptOverrides]: ./javascript/overrides.md "Überschreiben von Webseitenressourcen mit lokalen Kopien mithilfe von Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsGuideNetworkIndex]: ./network/index.md "Überprüfen der Netzwerkaktivitäten in Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsGuideOpenIndex]: ./open/index.md "Öffnen Sie Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsGuideRenderingToolsIndex]: ./rendering-tools/index.md "Analysieren der Laufzeitleistung | Microsoft Docs"  
-[DevtoolsGuideShortcutsIndex]: ./shortcuts/index.md "Microsoft Edge DevTools-Tastenkombinationen | Microsoft Docs"  
-[DevtoolsGuideSourcesIndex]: ./sources/index.md "Übersicht über das | Microsoft Docs"  
-[DevtoolsGuideStorageSessionstorage]: ./storage/sessionstorage.md "Anzeigen und Bearbeiten des Sitzungsspeichers mit Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsGuideWhatsNew202102Devtools]: ./whats-new/2021/02/devtools.md "Neues in DevTools (Microsoft Edge 90) | Microsoft Docs"  
-[DevtoolsGuideWorkspacesIndex]: ./workspaces/index.md "Bearbeiten von Dateien mit Arbeitsbereichen | Microsoft Docs"  
+[DevtoolsGuideJavascriptIndex]: ./javascript/index.md "Erste Schritte mit dem Debuggen von JavaScript in Microsoft Edge DevTools | Microsoft-Dokumente"  
+[DevtoolsGuideJavascriptOverrides]: ./javascript/overrides.md "Außerkraftsetzen von Webseitenressourcen mit lokalen Kopien mit Microsoft Edge DevTools | Microsoft-Dokumente"  
+[DevtoolsGuideNetworkIndex]: ./network/index.md "Überprüfen der Netzwerkaktivität in Microsoft Edge DevTools | Microsoft-Dokumente"  
+[DevtoolsGuideOpenIndex]: ./open/index.md "Öffnen sie Microsoft Edge DevTools-| Microsoft-Dokumente"  
+[DevtoolsGuideRenderingToolsIndex]: ./rendering-tools/index.md "Analysieren der Laufzeitleistung | Microsoft-Dokumente"  
+[DevtoolsGuideShortcutsIndex]: ./shortcuts/index.md "Microsoft Edge DevTools-Tastenkombinationen | Microsoft-Dokumente"  
+[DevtoolsGuideSourcesIndex]: ./sources/index.md "Übersicht über das Quellentool | Microsoft-Dokumente"  
+[DevtoolsGuideStorageSessionstorage]: ./storage/sessionstorage.md "Anzeigen und Bearbeiten des Sitzungsspeichers mit Microsoft Edge DevTools | Microsoft-Dokumente"  
+[DevtoolsGuideWhatsNew202102Devtools]: ./whats-new/2021/02/devtools.md "Neuigkeiten in DevTools (Microsoft Edge 90) | Microsoft-Dokumente"  
+[DevtoolsGuideWorkspacesIndex]: ./workspaces/index.md "Bearbeiten von Dateien mit Arbeitsbereichen | Microsoft-Dokumente"  
 [DevtoolsProtocolIndex]: ../devtools-protocol-chromium/index.md "Microsoft Edge (Chromium) DevTools Protocol Übersicht | Microsoft-Dokumentation"  
 
 [MicrosoftEdgeAddonsExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions "Microsoft Edge-Add-Ons"  

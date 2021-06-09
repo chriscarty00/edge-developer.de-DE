@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
 ms.localizationpriority: high
-ms.openlocfilehash: a6682043166909bf75a875b72058cc9839c5b43b
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: a13c344bb31cdfb7d0402132e3be82e4c330c612
+ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564847"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "11597166"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -126,7 +126,7 @@ DevTools verfügt jetzt über dedizierte CSS-Flexbox-Debuggingtools.  Wenn der `
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png" alt-text="Abschnitt Flexbox im Layoutbereich" lightbox="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png":::
+      :::image type="complex" source="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png" alt-text="Abschnitt "Flexbox" im Layoutbereich" lightbox="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png":::
          Abschnitt **Flexbox** im Bereich **Layout**  
       :::image-end:::  
    :::column-end:::
@@ -241,7 +241,7 @@ In der Tabelle "Anforderungen" wird jetzt eine neue Spalte mit der Kopfzeile **R
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/network-requests-remote-address-space.msft.png" alt-text="In der Tabelle Anforderungen wird jetzt die Spalte Remote-Adressraum angezeigt." lightbox="../../media/2021/02/network-requests-remote-address-space.msft.png":::
+      :::image type="complex" source="../../media/2021/02/network-requests-remote-address-space.msft.png" alt-text="In der Tabelle "Anforderungen" wird jetzt die Spalte "Remote-Adressraum" angezeigt." lightbox="../../media/2021/02/network-requests-remote-address-space.msft.png":::
          In der Tabelle "Anforderungen" wird jetzt die Spalte **Remote-Adressraum** angezeigt. :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -258,7 +258,7 @@ In der Frame-Detailansicht wird jetzt eine Liste der zulässigen und nicht zulä
 
 Im Bereich **Cookies** im Tool **Anwendung** wird jetzt das `SameParty` Attribut für jedes Cookie angezeigt.  Das `SameParty` Attribut ist ein neues boolesches Attribut, das angibt, ob ein Cookie in Anforderungen an Ursprünge derselben [First-Party-Sets][GithubPrivacycgFirstPartySets] enthalten ist.  Navigieren Sie zu Problem [1161427][CR1161427], um den Verlauf dieses Features im Open-Source-Projekt Chromium zu überprüfen.  
 
-:::image type="complex" source="../../media/2021/02/application-storage-cookies-sameparty.msft.png" alt-text="SameParty-Spalte im Bereich Cookies" lightbox="../../media/2021/02/application-storage-cookies-sameparty.msft.png":::
+:::image type="complex" source="../../media/2021/02/application-storage-cookies-sameparty.msft.png" alt-text="SameParty-Spalte im Bereich "Cookies"" lightbox="../../media/2021/02/application-storage-cookies-sameparty.msft.png":::
    **SameParty**-Spalte im Bereich **Cookies**  
 :::image-end:::  
 
@@ -274,7 +274,7 @@ Bisher konnten Sie mit der `fn.displayName` Eigenschaft Debug-Namen für Funktio
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
 
-Dieses Experiment bietet eine **vollständige Barrierefreiheitsstrukturansicht** im **Elemente**-Tool.  Der Bereich [Barrierefreiheit][DevtoolsAccessibilityReferenceAccessibilityPanel] bietet eine teilweise Barrierefreiheitsstrukturansicht, in der die direkte Ahnenkette vom Stammknoten zum inspizierten Knoten angezeigt wird.  
+Dieses Experiment bietet eine **vollständige Barrierefreiheitsstrukturansicht** im **Elemente**-Tool.  Der Bereich [Barrierefreiheit][DevtoolsAccessibilityTab] bietet eine teilweise Barrierefreiheitsstrukturansicht, in der die direkte Ahnenkette vom Stammknoten zum inspizierten Knoten angezeigt wird.  
 Nachdem Sie dieses Experiment aktiviert und die DevTools neu geladen haben, wählen Sie eine der folgenden Schaltflächen, um die Anzeige im Elementwerkzeug für alle Elemente auf der Webseite zu wechseln.  
 
 *   Um die vollständige Barrierefreiheitsstrukturansicht anzuzeigen, wählen Sie **Zur Barrierefreiheitsstrukturansicht wechseln**.  
@@ -285,11 +285,11 @@ Um das Experiment zu aktivieren, navigieren Sie zu [Experimentelle Features akti
 :::row:::
    :::column span="":::
       :::image type="complex" source="../../media/2021/02/elements-switch-to-accessibility-tree-view.msft.png" alt-text="Anzeigen der DOM-Strukturansicht" lightbox="../../media/2021/02/elements-switch-to-accessibility-tree-view.msft.png":::
-         Anzeigen der **DOM-Ansicht**  
+         Anzeigen der **DOM-Strukturansicht**  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/elements-switch-to-dom-tree-view.msft.png" alt-text="Anzeigen der vollständigen Barrierefreiheitsstrukturansicht" lightbox="../../media/2021/02/elements-switch-to-dom-tree-view.msft.png":::
+      :::image type="complex" source="../../media/2021/02/elements-switch-to-dom-tree-view.msft.png" alt-text="Anzeigen der Strukturansicht „Vollständige Barrierefreiheit“" lightbox="../../media/2021/02/elements-switch-to-dom-tree-view.msft.png":::
          Anzeigen der **Vollständigen Barrierefreiheitsstrukturansicht**  
       :::image-end:::  
    :::column-end:::
@@ -305,8 +305,8 @@ Wenn Sie unter Windows, Linux oder macOS arbeiten, sollten Sie die [Microsoft Ed
 
 <!-- links -->  
 
-[DevtoolsAccessibilityReferenceAccessibilityPanel]: ../../../accessibility/reference.md#the-accessibility-panel "Der Bereich Barrierefreiheit – Barrierefreiheitsreferenz | Microsoft Docs"  
-[DevtoolsCommandMenuIndex]: ../../../command-menu/index.md "Ausführen von Befehlen mit dem Microsoft Edge DevTools-Befehlsmenü | Microsoft Docs"  
+[DevtoolsAccessibilityTab]: ../../../accessibility/accessibility-tab.md "Testen Sie die Barrierefreiheit mithilfe der Registerkarte &quot;Barrierefreiheit&quot; | Microsoft-Dokumentation"  
+[DevtoolsCommandMenuIndex]: ../../../command-menu/index.md "Ausführen von Befehlen mit dem Microsoft Edge DevTools-Befehlsmenü | Microsoft-Dokumentation"  
 [DevtoolsConsoleReferenceFilterByLogLevel]: ../../../console/reference.md#filter-by-log-level "Filtern nach Protokollebene – Konsolenreferenz | Microsoft Docs"  
 [DevtoolsConsoleReferenceFilterMessages]: ../../../console/reference.md#filter-messages "Filtern von Nachrichten – Konsolenreferenz | Microsoft Docs"  
 [DevtoolsConsoleReferenceOpenConsoleSidebar]: ../../../console/reference.md#open-the-console-sidebar "Öffnen der Konsolen-Randleiste – Konsolenreferenz | Microsoft Docs"  

@@ -1,95 +1,102 @@
 ---
-description: Emulieren von Sehschwächen in Microsoft Edge DevTools.
-title: Emulieren von Sehschwächen in Microsoft Edge DevTools (Farbblindheit)
+description: Emulieren Sie Sehschwächen in Microsoft Edge DevTools.
+title: Emulieren von Sehschwächen in Microsoft Edge DevTools (Farbenblindheit)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/11/2021
+ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: 1ab224f1dc70618dbef77ec6e6dbc22a0d1f47fb
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+ms.openlocfilehash: 0a0ee09c2f739beb366b4c39d113b31fb719ec6a
+ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564602"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "11597120"
 ---
 # <a name="emulate-vision-deficiencies"></a>Emulieren von Sehstörungen  
 
-Um die Anforderungen Ihrer Benutzer [][ColorblindawarenessMain] mit Farbsichtschwäche \(Farbblindheit\) besser zu erfüllen, können Sie mit [Microsoft Edge DevTools][DevtoolsIndex] bestimmte Farbsichtschwächen simulieren.  Das **Tool Zum Emulieren von Sehschwächen** simuliert die folgenden Kategorien.  
+Um die Anforderungen Ihrer Benutzer mit [Farbsehenmangel][ColorblindawarenessMain] \(Farbblindheit\) oder verschwommener Sehvermögen besser zu erfüllen, können Sie [mit Microsoft Edge DevTools][DevtoolsIndex] verschwommenes Sehvermögen und bestimmte Farbsehenschwächen simulieren.  Das Tool **zum Emulieren von Sehschwächen** simuliert die folgenden Kategorien.  
 
-| Mangel an Farbsicht | Details |  
+| Farbsehenmangel | Details |  
 |:--- |:--- |  
-| Verschwommenes Sehen | Der Benutzer hat Schwierigkeiten, sich auf feine Details zu konzentrieren. |  
-| Protanopia | Der Benutzer kann kein rotes Licht wahrnehmen. |  
+| Verschwommene Vision | Der Benutzer hat Schwierigkeiten, sich auf details zu konzentrieren. |  
+| Protanopie | Der Benutzer kann kein rotes Licht wahrnehmen. |  
 | Deuteranopia | Der Benutzer kann kein grünes Licht wahrnehmen. |  
-| Tritanopie | Der Benutzer kann kein blaues Licht wahrnehmen. |  
-| Achromatopsie | Der Benutzer kann keine Farbe wahrnehmen, wodurch alle Farben auf einen Grauton reduziert werden. |  
+| Tritanopia | Der Benutzer kann kein blaues Licht wahrnehmen. |  
+| Aopsia | Der Benutzer kann keine Farbe wahrnehmen, wodurch die gesamte Farbe auf einen Grauton reduziert wird. |  
 
-## <a name="navigate-to-the-rendering-tools"></a>Navigieren zu den Renderingtools  
 
-Um einen Sehschwächenmangel zu simulieren, der für Ihr Webprodukt angewendet wird, öffnen Sie die [Renderingtools][DevtoolsRenderingToolsIndex].  
+## <a name="navigate-to-the-rendering-tool"></a>Navigieren Sie zum Renderingtool
 
-1.  Um die Renderingtools zu öffnen, wählen Sie das `...` Menüelement in der Symbolleiste aus.  
-1.  Weitere **Tools auswählen**  
-1.  Rendern **auswählen**  
+Öffnen Sie die [Renderingtools,][DevtoolsRenderingToolsIndex]um einen Sehfehler zu simulieren, der für Ihr Webprodukt angewendet wird.  
+
+1.  Um das Renderingtool zu öffnen, wählen Sie das `...` Menüelement in der Symbolleiste aus.  
+1.  Auswählen **weiterer Tools**  
+1.  **Rendern** auswählen  
     
-    :::image type="complex" source="../media/getting-to-the-rendering-tools.msft.png" alt-text="Öffnen der Renderingtools" lightbox="../media/getting-to-the-rendering-tools.msft.png":::
-       Öffnen der **Renderingtools**  
+    :::image type="complex" source="../media/getting-to-the-rendering-tools.msft.png" alt-text="Öffnen des Renderingtools" lightbox="../media/getting-to-the-rendering-tools.msft.png":::
+       Öffnen des **Renderingtools**
     :::image-end:::  
     
-Das **Menü Rendering** wird in der Schublade angezeigt.  
+Das **Menü "Rendern"** wird in der Schublade angezeigt.  
 
-1.  Scrollen Sie nach unten `Emulate vision deficiencies` zum Menüelement, und wählen Sie das Dropdownmenü aus, um die Optionen anzuzeigen.  
+1.  Scrollen Sie nach unten zum `Emulate vision deficiencies` Menüelement, und wählen Sie das Dropdownmenü aus, um die Optionen anzuzeigen.  
     
-    :::image type="complex" source="../media/accessibility-emulate-vision-menu.msft.png" alt-text="Das Menü Sehschwächen emulieren in der Renderschubschubleiste" lightbox="../media/accessibility-emulate-vision-menu.msft.png":::
-       Das **Menü Visionsmangel emulieren** in der **Renderschubleiste**  
+    :::image type="complex" source="../media/accessibility-emulate-vision-menu.msft.png" alt-text="Menü "Sehschwächen emulieren" im Renderingtool" lightbox="../media/accessibility-emulate-vision-menu.msft.png":::
+       Menü **"Sehschwächen emulieren"** im **Renderingtool**
     :::image-end:::  
     
 1.  Wählen Sie eine Option aus.  
     
-    :::image type="complex" source="../media/accessibility-emulate-vision-menu-options.msft.png" alt-text="Menüoptionen Visionsmangel emulieren" lightbox="../media/accessibility-emulate-vision-menu-options.msft.png":::
-       Menüoptionen **zum Emulieren von Sehschwächen**  
+    :::image type="complex" source="../media/accessibility-emulate-vision-menu-options.msft.png" alt-text="Die Menüoptionen "Sehschwächen emulieren"" lightbox="../media/accessibility-emulate-vision-menu-options.msft.png":::
+       Menüoptionen zum **Emulieren von Sehschwächen**  
     :::image-end:::  
     
-1.  In den Hauptfenstern wird die Simulation der ausgewählten Option angezeigt, die auf die aktuelle Seite angewendet wurde.  
+1.  In den Hauptfenstern wird die Simulation der ausgewählten Option angezeigt, die auf die aktuelle Seite angewendet wird.  
     
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/accessibility-blurred-vision-emulation.msft.png" alt-text="Anzeigen mithilfe der Simulation **Blurred Vision**" lightbox="../media/accessibility-blurred-vision-emulation.msft.png":::
-             Anzeigen mithilfe einer **Simulation mit verschwommener** Vision  
+          :::image type="complex" source="../media/accessibility-blurred-vision-emulation.msft.png" alt-text="Anzeigen mit der Simulation "Verschwommenes Sehen"" lightbox="../media/accessibility-blurred-vision-emulation.msft.png":::
+             Anzeigen mithilfe einer Simulation der **verschwommenen Sehkraft**  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/accessibility-achromatopsia-emulation.msft.png" alt-text="Anzeigen mithilfe der **Achromatopsia**-Simulation" lightbox="../media/accessibility-achromatopsia-emulation.msft.png":::
-             Anzeigen mithilfe **der Achromatopsia-Simulation** :::image-end:::  
+          :::image type="complex" source="../media/accessibility-achromatopsia-emulation.msft.png" alt-text="Anzeigen mithilfe einer Aopsia-Simulation" lightbox="../media/accessibility-achromatopsia-emulation.msft.png":::
+             Anzeigen mithilfe einer **Aopsia-Simulation** :::image-end:::  
        :::column-end:::
     :::row-end:::
     
+
 ## <a name="use-the-command-menu"></a>Verwenden des Befehlsmenüs  
 
-Sie können auch das **Befehlsmenü verwenden,** um auf die verschiedenen Simulationen zu zugreifen.  
+Sie können auch **das Befehlsmenü** verwenden, um auf die verschiedenen Simulationen zuzugreifen.  
 
-1.  Wählen `Ctrl` + `Shift` + `P` Sie \(Windows/Linux\) oder `Command` + `Shift` + `P` \(macOS\) aus, um das **Befehlsmenü zu öffnen.**  
+1.  Wählen Sie `Ctrl` + `Shift` + `P` \(Windows/Linux\) oder `Command` + `Shift` + `P` \(macOS\) aus, um das **Befehlsmenü**zu öffnen.  
     
     :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="Das Befehlsmenü" lightbox="../media/css-console-command-menu-rendering.msft.png":::
        Das **Befehlsmenü**  
     :::image-end:::  
     
-1.  Geben `emulate` Sie ein, wählen Sie aus, was Sie simulieren möchten, und wählen Sie `Enter` aus.  
+1.  Geben `emulate` Sie ein, wählen Sie, was Sie simulieren möchten, und wählen Sie `Enter` aus.  
     
     :::image type="complex" source="../media/accessibility-emulation-command-menu-results.msft.png" alt-text="Die verschiedenen Simulationsoptionen, die im Befehlsmenü verfügbar sind" lightbox="../media/accessibility-emulation-command-menu-results.msft.png":::
-       Die verschiedenen Simulationsoptionen, die im **Befehlsmenü verfügbar sind**  
+       Die verschiedenen Simulationsoptionen, die im **Befehlsmenü** verfügbar sind  
     :::image-end:::  
     
 > [!IMPORTANT]
-> Die **Tools zum Emulieren** von Sehschwächen simulieren Näherungen darüber, wie eine Person mit jedem Mangel Ihr Produkt sehen kann.  Jede Person ist unterschiedlich, daher variieren Sehschwächen im Schweregrad von Person zu Person.  Um die Anforderungen Ihrer Benutzer besser zu erfüllen, vermeiden Sie jede Farbkombination, die ein Problem sein kann.  Die **Emulate vision deficiencies tools** sind keine vollständige Barrierefreiheitsbewertung Ihres Produkts.  Stattdessen sollten Sie mit **den Tools zum** Emulieren von Sehschwächen einen guten ersten Schritt zur Vermeidung von Problemen finden.  
+> Die Tools zum **Emulieren von Sehschwächen** simulieren näherungsweise, wie eine Person mit jedem Mangel Ihr Produkt sehen kann.  Jede Person ist unterschiedlich, daher unterscheiden sich Sehschwächen je nach Schweregrad von Person zu Person.  Um die Anforderungen Ihrer Benutzer besser zu erfüllen, vermeiden Sie farbkombinationen, die möglicherweise ein Problem darstellen.  Die Tools zur **Emulieren von Sehschwächen** sind keine vollständige Bewertung der Barrierefreiheit Ihres Produkts.  Stattdessen sollten Ihnen die Tools zum **Emulieren von Sehschwächen** einen guten ersten Schritt bieten, um Probleme zu vermeiden.  
+
+
+## <a name="see-also"></a>Weitere Informationen:
+
+* [Überprüfen Sie, ob die Seite mit verschwommener Sicht verwendet werden kann](test-blurred-vision.md)
+
 
 <!-- links -->  
-
 [DevToolsIndex]: ../index.md "Microsoft Edge (Chromium) -Entwicklertools | Microsoft Docs"  
-[DevtoolsRenderingToolsIndex]: ../rendering-tools/index.md "Analysieren der Laufzeitleistung | Microsoft Docs"  
+[DevtoolsRenderingToolsIndex]: ../rendering-tools/index.md "Analysieren der Laufzeitleistung | Microsoft-Dokumente"  
 
-[ColorblindawarenessMain]: https://www.colourblindawareness.org "Die Organisation &quot;Farbblindheit&quot;"  
+[ColorblindawarenessMain]: https://www.colourblindawareness.org "Die Organisation für blinde Sensibilisierung"  
 
 [AmfcbMain]: https://www.amfcb.org "The American Foundation for the Color Blind (AFCB)"  

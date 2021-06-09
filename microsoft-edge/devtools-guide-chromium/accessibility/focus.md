@@ -1,18 +1,18 @@
 ---
-description: Öffnen Sie die Konsole, erstellen Sie einen Liveausdruck, und legen Sie den Ausdruck auf document.activeElement.
+description: Öffnen Sie die Konsole, erstellen Sie einen Live-Ausdruck, und legen Sie den Ausdruck auf document.activeElement fest.
 title: Nachverfolgen, welches Element den Fokus hat
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
+ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, Webentwicklung, F12-Tools, Entwicklungstools
-ms.openlocfilehash: e7d7bc9ebf8dd891bf7531d8dd283801a01fc3c1
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: Microsoft Edge, Webentwicklung, F12-Tools, DevTools
+ms.openlocfilehash: 2fd53caccefefb0b0bce4b5c82f30632e11a3cb6
+ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564595"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "11597108"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -29,37 +29,43 @@ ms.locfileid: "11564595"
    limitations under the License.  -->  
 # <a name="track-which-element-has-focus"></a>Nachverfolgen, welches Element den Fokus hat  
 
-Angenommen, Sie testen die Barrierefreiheit der Tastaturnavigation einer Seite.  Beim Navigieren auf der Seite mit der Taste wird der Fokusring manchmal ausgeblendet, da das Element mit dem Fokus `Tab` ausgeblendet ist.  
+Angenommen, Sie testen die Barrierefreiheit der Tastaturnavigation einer Seite.  Beim Navigieren auf der Seite mit der `Tab` Taste wird der Fokusring manchmal ausgeblendet, da das Element, das den Fokus hat, ausgeblendet ist.  
 
-Führen Sie die folgenden Aktionen aus, um das fokussierte Element in DevTools nachverfolgt zu haben.  
+So verfolgen Sie das fokussierte Element in DevTools:
 
 1.  Öffnen Sie die **Konsole**.  
-1.  Wählen **Sie Liveausdruck** erstellen \( ![ Liveausdruck ](../media/create-live-expression-icon.msft.png) erstellen \).  
+1.  Wählen **Sie "Liveausdruck erstellen"** \( ![ Liveausdruck erstellen ](../media/create-live-expression-icon.msft.png) \) aus.  
     
     :::image type="complex" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="Erstellen eines Liveausdrucks" lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
        Erstellen eines Liveausdrucks  
     :::image-end:::  
     
 1.  Geben Sie `document.activeElement` ein.  
-1.  Wählen Sie außerhalb der **zu speichernde Live** Expression-Benutzeroberfläche aus.  
+1.  Um den Ausdruck zu speichern, wählen Sie außerhalb des Liveausdrucks aus.
     
-Der unten angezeigte `document.activeElement` Wert ist das Ergebnis des Ausdrucks.  
+Der unten angezeigte Wert `document.activeElement` ist das Ergebnis des Ausdrucks.  
 
-Da dieser Ausdruck immer das fokussierte Element darstellt, haben Sie nun eine Möglichkeit, immer nachverfolgt zu werden, welches Element den Fokus hat.  
+Da dieser Ausdruck immer das fokussierte Element darstellt, haben Sie jetzt eine Möglichkeit, immer nachzuverfolgen, welches Element den Fokus hat.  
 
-*   Zeigen Sie auf das Ergebnis, um das fokussierte Element im Viewport zu markieren.  
-*   Zeigen Sie auf das Ergebnis, öffnen Sie das Kontextmenü **** \(klicken Sie mit der rechten Maustaste\), und wählen Sie im Bereich Elemente anzeigen aus, um das Element im DOM-Struktur im **Elementtool anzuzeigen.**  
-*   Zeigen Sie auf das Ergebnis, öffnen Sie das Kontextmenü \(klicken Sie mit der rechten Maustaste\), und wählen Sie **Store** als globale Variable aus, um einen Variablenverweis auf den Knoten zu erstellen, den Sie in der Konsole verwenden **können.**  
+*   Zeigen Sie auf das Ergebnis, um das fokussierte Element im Viewport hervorzuheben.  
+*   Zeigen Sie auf das Ergebnis, öffnen Sie das Kontextmenü \(rechtsklick\), und wählen Sie **"Einblenden" im Bereich "Elemente"** aus, um das Element in der DOM-Struktur im **Elementtool** anzuzeigen.  
+*   Zeigen Sie auf das Ergebnis, öffnen Sie das Kontextmenü \(Rechtsklick\), und wählen Sie **Store als globale Variable** aus, um einen Variablenverweis auf den Knoten zu erstellen, den Sie in der **Konsole**verwenden können.  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen  
+
+## <a name="see-also"></a>Weitere Informationen:
+
+*  [Analysieren Sie die fehlenden Anzeige des Tastaturfokus in einem Randleistenmenü](test-analyze-no-focus-indicator.md)
+
+
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Mit dem Microsoft Edge-Entwicklungstools-Team Kontakt aufnehmen
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
-<!-- links -->  
 
+<!-- links -->  
 > [!NOTE]
 > Teile dieser Seite sind Änderungen, die auf [von Google erstellten und freigegebenen][GoogleSitePolicies] Werken basieren und gemäß den in der [Creative Commons Attribution 4.0 International License][CCA4IL] beschriebenen Bestimmungen verwendet werden.  
-> Die ursprüngliche Seite befindet sich [hier](https://developers.google.com/web/tools/chrome-devtools/accessibility/focus) und wird von [Kayce Basken][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) verfasst.  
+> Die ursprüngliche Seite ist [hier](https://developers.google.com/web/tools/chrome-devtools/accessibility/focus) zu finden und wurde von [Baskisch (Technical][KayceBasques] Writer, Chrome DevTools \& Ausrufebereich\) erstellt.  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Diese Arbeit unterliegt einer [Creative Commons Attribution 4.0 International License][CCA4IL].  
